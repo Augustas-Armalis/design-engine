@@ -1,0 +1,75 @@
+{
+  "name": "flagship",
+  "type": "ai",
+  "seed": 8,
+  "dealt": "2026-10-08T15:59:59.710Z",
+  "avoided": {},
+  "candidates": [
+    {
+      "axes": {
+        "hero_class": "product-proof",
+        "structure": "asymmetric-crop",
+        "type_voice": "editorial-serif",
+        "palette_temperature": "material-monochrome",
+        "cta_grammar": "oversized-block",
+        "nav_grammar": "index-list-nav",
+        "motion_signature": "stagger-cascade",
+        "proof_artifact": "before-after-boundary"
+      },
+      "moves": [
+        {
+          "id": "M31",
+          "title": "Persistent canvas across routes (camera dive)"
+        },
+        {
+          "id": "M04",
+          "title": "Medium pastiche (terminal, comic, magazine, book, film, console)"
+        }
+      ]
+    },
+    {
+      "axes": {
+        "hero_class": "editorial-explanation",
+        "structure": "left-rail",
+        "type_voice": "condensed-poster",
+        "palette_temperature": "optical-black-white",
+        "cta_grammar": "text-action-underline",
+        "nav_grammar": "edge-dock-not-pill",
+        "motion_signature": "layout-morph",
+        "proof_artifact": "workflow-ui"
+      },
+      "moves": [
+        {
+          "id": "M08",
+          "title": "Physical-material world"
+        },
+        {
+          "id": "M03",
+          "title": "Recurring device (thread / timer / strip)"
+        }
+      ]
+    },
+    {
+      "axes": {
+        "hero_class": "editorial-explanation",
+        "structure": "product-window-as-canvas",
+        "type_voice": "variable-axis-display",
+        "palette_temperature": "paper-and-ink",
+        "cta_grammar": "solid-conventional",
+        "nav_grammar": "index-list-nav",
+        "motion_signature": "scroll-scrubbed-product",
+        "proof_artifact": "code-or-terminal"
+      },
+      "moves": [
+        {
+          "id": "M20",
+          "title": "Curated omission (three to four things only)"
+        },
+        {
+          "id": "M32",
+          "title": "Page transitions as continuity"
+        }
+      ]
+    }
+  ]
+}

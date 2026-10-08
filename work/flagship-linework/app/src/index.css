@@ -1,0 +1,20 @@
+@import "tailwindcss";
+@import "./linework-theme.css";
+
+/* Linework system: bound to system/systems/linework (compiled). Only role tokens below. */
+@theme inline {
+  --font-display: "Libre Caslon Display", "Big Caslon", Georgia, serif;
+  --font-sans: "Mona Sans", "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "Red Hat Mono", ui-monospace, monospace;
+}
+
+html { -webkit-text-size-adjust: 100%; }
+body {
+  background: var(--surface-canvas);
+  color: var(--text-body);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
+.num { font-variant-numeric: tabular-nums; font-feature-settings: "tnum"; }

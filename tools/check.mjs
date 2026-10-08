@@ -61,10 +61,11 @@ const measure = (cfg) => {
     fams.set(fam, (fams.get(fam) || 0) + 1); sizes.set(Math.round(px), (sizes.get(Math.round(px)) || 0) + 1);
     if (px < cfg.type.minAnyTextPx) small.push(`${label(el)} ${px}px`);
     const lh = s.lineHeight === 'normal' ? 1.2 : parseFloat(s.lineHeight) / px;
+    const inSvg = !!el.closest('svg'); // SVG <text> has no line-height; skip leading checks for drawings and charts
     const isHeading = /^H[1-6]$/.test(el.tagName) || px >= 28;
     const long = el.textContent.trim().length > 90;
-    if (isHeading && lh > cfg.type.headingLineHeightMax + 0.001) badLeading.push(`${label(el)} lh ${lh.toFixed(2)}`);
-    if (!isHeading && long && (lh < cfg.type.bodyLineHeight[0] - 0.001 || lh > cfg.type.bodyLineHeight[1] + 0.001)) badLeading.push(`${label(el)} lh ${lh.toFixed(2)}`);
+    if (!inSvg && isHeading && lh > cfg.type.headingLineHeightMax + 0.001) badLeading.push(`${label(el)} lh ${lh.toFixed(2)}`);
+    if (!inSvg && !isHeading && long && (lh < cfg.type.bodyLineHeight[0] - 0.001 || lh > cfg.type.bodyLineHeight[1] + 0.001)) badLeading.push(`${label(el)} lh ${lh.toFixed(2)}`);
     const bg = bgOf(el);
     if (!bg.unknown) {
       const fg = rgba(s.color); const c = ratio(over(fg, bg.rgb), bg.rgb);

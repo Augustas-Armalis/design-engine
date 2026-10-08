@@ -1,0 +1,18 @@
+{
+  "slug": "linework",
+  "name": "Linework",
+  "showcaseHeadline": "Your sketch, measured.",
+  "signature": "Architectural drawing-sheet system: graphite ink on drafting paper, hairline frames and ruled title-block cells, a single vermilion red-pencil accent, Caslon display for claims and mono for every measurement.",
+  "personality": { "brandHue": 32, "brandChroma": 0.19, "neutralHue": 95, "neutralChroma": 0.006, "neutralTemperature": "neutral", "radiusPreset": "sharp", "depthStyle": "border", "density": "comfortable", "motionPersonality": "calm", "typeVoice": "An engraved Caslon headline over a precise contemporary grotesque; numbers always in mono." },
+  "fonts": {
+    "display": "'Libre Caslon Display', 'Big Caslon', Georgia, serif",
+    "body": "'Mona Sans', 'Helvetica Neue', Arial, sans-serif",
+    "mono": "'Red Hat Mono', ui-monospace, monospace",
+    "href": "https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Mona+Sans:wght@400;500;600;700&family=Red+Hat+Mono:wght@400;500&display=swap"
+  },
+  "type": { "ratio": 1.25, "basePx": 16, "displayMaxPx": 92, "displayWeight": 400, "headingWeight": 400, "displayTracking": -0.012, "displayLeading": 0.98, "bodyLeading": 1.6 },
+  "bestFor": ["architecture and AEC software", "spatial and CAD tools", "precision AI products with physical output"],
+  "avoidFor": ["playful consumer apps", "dark-first devtools"],
+  "owned": ["Every surface is a drawing sheet: double hairline frame, grid reference marks, ruled title-block cells", "Vermilion is the red pencil: only for the boundary, corrections and the one action", "All measurements, scales and IDs in Red Hat Mono", "No rounded corners anywhere"],
+  "never": ["round a corner", "use drop shadows (hairlines only)", "use more than one vermilion element per region", "set Caslon below 32px"]
+}
