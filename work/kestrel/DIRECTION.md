@@ -50,3 +50,6 @@ Nav 44px track / 36px links / 40px buttons; chip removed, h1 at 150px; dot grid 
 
 ## Round 3 (founder: "fucking amazing, love it")
 Secondary CTA text-only. Dashboard radius ladder 4 / 6 / 10 / 14 / 20, every 32px control at 6, segmented control 32px with equal 40px slots, labels centred.
+
+## Round 4
+Radii softened back (founder: "too little rounding... I liked it previously"): badges/segments/sidebar 6, 32px header and panel controls 8, cards 12, app 16, frame 22. Centring and equal heights kept.
