@@ -53,3 +53,6 @@ Secondary CTA text-only. Dashboard radius ladder 4 / 6 / 10 / 14 / 20, every 32p
 
 ## Round 4
 Radii softened back (founder: "too little rounding... I liked it previously"): badges/segments/sidebar 6, 32px header and panel controls 8, cards 12, app 16, frame 22. Centring and equal heights kept.
+
+## Round 5
+Restored the round-2 rendered radii exactly (8 / 12 / 16 / 22); round 3 had swapped theme-aliased classes (rounded-md = 8 under the Kestrel theme) for default px and sharpened everything by ~4px. Verified element by element against a rebuild of commit 0d66ce2: all computed radii identical. Centring and equal-height controls kept.

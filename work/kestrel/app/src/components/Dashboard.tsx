@@ -33,21 +33,21 @@ const ease = [0.16, 1, 0.3, 1] as const
 
 function NavItem({ icon: Icon, label, active, badge }: { icon: typeof RiDashboardLine; label: string; active?: boolean; badge?: string }) {
   return (
-    <div className={`flex h-8 items-center gap-2 rounded-[6px] px-2 text-[13px] font-[500] leading-none tracking-[-0.006em] ${active ? 'bg-white text-ink shadow-[var(--shadow-ring)]' : 'text-sub'}`}>
+    <div className={`flex h-8 items-center gap-2 rounded-[8px] px-2 text-[13px] font-[500] leading-none tracking-[-0.006em] ${active ? 'bg-white text-ink shadow-[var(--shadow-ring)]' : 'text-sub'}`}>
       <Icon size={16} className={active ? 'text-blue' : 'text-soft'} />
       {label}
-      {badge && <span className="ml-auto flex h-[18px] items-center rounded-[6px] bg-blue-tint px-1.5 text-[11px] font-[550] leading-none text-blue">{badge}</span>}
+      {badge && <span className="ml-auto flex h-[18px] items-center rounded-full bg-blue-tint px-1.5 text-[11px] font-[550] leading-none text-blue">{badge}</span>}
     </div>
   )
 }
 
 function Kpi({ label, value, delta, up, good }: { label: string; value: string; delta: string; up: boolean; good: boolean }) {
   return (
-    <div className={`relative rounded-[12px] bg-white p-3.5 shadow-[var(--shadow-ring)]`}>
+    <div className={`relative rounded-[16px] bg-white p-3.5 shadow-[var(--shadow-ring)]`}>
       <div className="text-[12px] font-[500] text-sub">{label}</div>
       <div className="mt-1.5 flex items-baseline gap-2">
         <span className="tnum text-[22px] font-[550] leading-7 tracking-[-0.02em] text-ink">{value}</span>
-        <span className={`tnum inline-flex h-[18px] items-center gap-0.5 rounded-[6px] px-1.5 text-[11px] font-[550] leading-none ${good ? 'bg-green-tint text-green-text' : 'bg-red-tint text-red-text'}`}>
+        <span className={`tnum inline-flex h-[18px] items-center gap-0.5 rounded-[8px] px-1.5 text-[11px] font-[550] leading-none ${good ? 'bg-green-tint text-green-text' : 'bg-red-tint text-red-text'}`}>
           {up ? <RiArrowUpLine size={11} /> : <RiArrowDownLine size={11} />}{delta}
         </span>
       </div>
@@ -64,15 +64,15 @@ export default function Dashboard() {
       <div className="grid h-[600px] grid-cols-[208px_1fr_300px] overflow-hidden rounded-[16px] bg-white shadow-[0_0_0_1px_rgba(23,23,23,0.06)]">
         {/* sidebar */}
         <aside className="border-r border-line bg-[#fbfbfb] p-3" aria-label="Sample app navigation">
-          <div className="flex items-center gap-2.5 rounded-[6px] p-1.5">
-            <span className="grid size-7 place-items-center rounded-[6px] bg-[linear-gradient(180deg,#5a7bff,#2a4ef0)] text-[13px] font-[600] text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.25)]">N</span>
+          <div className="flex items-center gap-2.5 rounded-[8px] p-1.5">
+            <span className="grid size-7 place-items-center rounded-[8px] bg-[linear-gradient(180deg,#5a7bff,#2a4ef0)] text-[13px] font-[600] text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.25)]">N</span>
             <div className="leading-4">
               <div className="text-[13px] font-[550] text-ink">Northwind</div>
               <div className="text-[11px] text-soft">Sample workspace</div>
             </div>
             <RiExpandUpDownLine size={14} className="ml-auto text-soft" />
           </div>
-          <div className="mt-2.5 flex h-8 items-center gap-2 rounded-[6px] bg-white px-2 text-[13px] leading-none text-soft shadow-[var(--shadow-ring)]">
+          <div className="mt-2.5 flex h-8 items-center gap-2 rounded-[8px] bg-white px-2 text-[13px] leading-none text-soft shadow-[var(--shadow-ring)]">
             <RiSearchLine size={15} /> Search
             <kbd className="ml-auto flex h-[18px] items-center rounded-[4px] border border-line px-1 font-sans text-[10px] leading-none text-soft">⌘K</kbd>
           </div>
@@ -100,12 +100,12 @@ export default function Dashboard() {
               <div className="text-[17px] font-[550] tracking-[-0.015em] text-ink">Overview</div>
               <div className="text-[12px] text-soft">All trials · last 30 days</div>
             </div>
-            <div className="ml-auto flex h-8 items-center gap-0.5 rounded-[8px] bg-weak p-0.5 text-[12px] font-[500] leading-none text-sub">
+            <div className="ml-auto flex h-8 items-center gap-0.5 rounded-[12px] bg-weak p-0.5 text-[12px] font-[500] leading-none text-sub">
               {['7d', '30d', '90d'].map((d) => (
-                <span key={d} className={`flex h-7 w-10 items-center justify-center rounded-[6px] ${d === '30d' ? 'bg-white text-ink shadow-[var(--shadow-ring)]' : ''}`}>{d}</span>
+                <span key={d} className={`flex h-7 w-10 items-center justify-center rounded-[8px] ${d === '30d' ? 'bg-white text-ink shadow-[var(--shadow-ring)]' : ''}`}>{d}</span>
               ))}
             </div>
-            <span className="btn-white grid size-8 place-items-center rounded-[8px] text-sub"><RiShareLine size={15} /></span>
+            <span className="btn-white grid size-8 place-items-center rounded-[12px] text-sub"><RiShareLine size={15} /></span>
           </div>
 
           <div className="mt-4 grid grid-cols-3 gap-2.5">
@@ -114,7 +114,7 @@ export default function Dashboard() {
             <Kpi label="Trial to paid" value="9.6%" delta="0.8 pts" up good />
           </div>
 
-          <div className="mt-2.5 rounded-[12px] bg-white p-4 shadow-[var(--shadow-ring)]">
+          <div className="mt-2.5 rounded-[16px] bg-white p-4 shadow-[var(--shadow-ring)]">
             <div className="flex items-center gap-2 text-[13px]">
               <span className="font-[550] text-ink">Activation rate</span>
               <span className="ml-auto flex items-center gap-1.5 text-[11px] text-sub"><i className="h-0.5 w-3 rounded-full bg-blue" /> This period</span>
@@ -149,7 +149,7 @@ export default function Dashboard() {
                 ))}
               </svg>
               <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 2.0, duration: 0.5, ease }}
-                className="tnum absolute flex items-baseline gap-1.5 whitespace-nowrap rounded-[6px] bg-white px-2 py-1 text-[11px] shadow-[var(--shadow-tile)]" style={{ left: 32 + x(DIP), top: -2, transform: 'translateX(-50%)' }}>
+                className="tnum absolute flex items-baseline gap-1.5 whitespace-nowrap rounded-[8px] bg-white px-2 py-1 text-[11px] shadow-[var(--shadow-tile)]" style={{ left: 32 + x(DIP), top: -2, transform: 'translateX(-50%)' }}>
                 <span className="text-soft">Oct 1</span><span className="text-[12px] font-[550] text-ink">38.7%</span><span className="text-soft">vs 45.4%</span>
               </motion.div>
             </div>
@@ -159,12 +159,12 @@ export default function Dashboard() {
         {/* AI panel */}
         <section className="flex flex-col border-l border-line p-4" aria-label="Sample AI answer">
           <div className="flex items-center gap-2">
-            <span className="grid size-6 place-items-center rounded-[6px] bg-ink text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.2)]"><svg viewBox={MARK.viewBox} className="size-3.5" aria-hidden><path fill="currentColor" fillRule="evenodd" d={MARK.d} /></svg></span>
+            <span className="grid size-6 place-items-center rounded-[8px] bg-ink text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.2)]"><svg viewBox={MARK.viewBox} className="size-3.5" aria-hidden><path fill="currentColor" fillRule="evenodd" d={MARK.d} /></svg></span>
             <span className="text-[13px] font-[550] text-ink">Ask Kestrel</span>
             <RiMore2Line size={16} className="ml-auto text-soft" />
           </div>
           <motion.div initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.1, duration: 0.5, ease }}
-            className="mt-4 self-end rounded-[12px] rounded-br-[4px] bg-weak px-3 py-2 text-[13px] text-ink">
+            className="mt-4 self-end rounded-[16px] rounded-br-[6px] bg-weak px-3 py-2 text-[13px] text-ink">
             Why did activation drop last week?
           </motion.div>
           <div className="mt-3 text-[13px] leading-5 text-sub">
@@ -174,7 +174,7 @@ export default function Dashboard() {
             ))}
           </div>
           <motion.div initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 2.3, duration: 0.5, ease }}
-            className="mt-3 rounded-[12px] bg-white p-3 shadow-[var(--shadow-ring)]">
+            className="mt-3 rounded-[16px] bg-white p-3 shadow-[var(--shadow-ring)]">
             <div className="flex items-center gap-1.5 text-[11px] font-[500] text-soft"><RiPulseLine size={13} /> Change by segment</div>
             {[
               { l: 'Mobile, skipped step 2', v: '−7.4', w: 92, c: '#e5484d' },
@@ -188,10 +188,10 @@ export default function Dashboard() {
             ))}
           </motion.div>
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 2.7, duration: 0.4 }} className="mt-3 flex gap-2">
-            <span className="btn-blue inline-flex h-8 items-center gap-1.5 rounded-[8px] px-3 leading-none text-[12px] font-[550]"><RiUserAddLine size={14} /> Create cohort · 412</span>
-            <span className="btn-white inline-flex h-8 items-center rounded-[8px] px-3 leading-none text-[12px] font-[550]">Open funnel</span>
+            <span className="btn-blue inline-flex h-8 items-center gap-1.5 rounded-[12px] px-3 leading-none text-[12px] font-[550]"><RiUserAddLine size={14} /> Create cohort · 412</span>
+            <span className="btn-white inline-flex h-8 items-center rounded-[12px] px-3 leading-none text-[12px] font-[550]">Open funnel</span>
           </motion.div>
-          <div className="mt-auto flex h-8 items-center gap-2 rounded-[8px] bg-white px-3 text-[12px] text-soft shadow-[var(--shadow-ring)]">
+          <div className="mt-auto flex h-9 items-center gap-2 rounded-[12px] bg-white px-3 text-[12px] text-soft shadow-[var(--shadow-ring)]">
             Ask a follow-up <RiCornerDownLeftLine size={14} className="ml-auto" />
           </div>
         </section>

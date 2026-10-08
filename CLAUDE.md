@@ -56,6 +56,8 @@ What that bar looks like: polished modern SaaS. Big confident tightly tracked he
 
 ## Craft reminders
 
+- **Measure radii as rendered, never by class name.** A bound system's `theme.css` redefines `--radius-sm/md/lg/xl` (6/8/12/16), so Tailwind `rounded-md` renders 8px, not 6px. Before changing or "normalising" any radius, read `getComputedStyle(el).borderRadius` on the page; after the change, diff computed values against the last accepted build. (Kestrel round 3 silently sharpened the whole product by ~4px this way and the founder caught it.)
+
 - Decide the type system before the layout. Headline size follows the composition, not a default 72px.
 - Spacing comes from a scale, on a 4px base; related things sit closer together than unrelated things.
 - One dominant element per viewport. If everything is loud, nothing is.
