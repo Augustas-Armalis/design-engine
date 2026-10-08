@@ -1,0 +1,26 @@
+@import "tailwindcss";
+@import "@fontsource-variable/geist";
+@import "@fontsource-variable/geist-mono";
+@import "./vigil-theme.css";
+/* Vigil: bound to system/systems/vigil (compiled). Dark roles forced; lime is the signal. */
+:root { color-scheme: dark; }
+@theme {
+  --font-sans: "Geist Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Geist Mono Variable", ui-monospace, monospace;
+  --color-ink: #eef4fc;
+  --color-muted: #8d939a;
+  --color-line: #1d2228;
+  --color-night: #07090c;
+  --color-lime: #a3e635;
+}
+:root {
+  --shadow-ring: 0 0 0 1px rgba(238, 244, 252, 0.08);
+  --shadow-card: 0 0 0 1px rgba(238, 244, 252, 0.09), 0 1px 2px rgba(0, 0, 0, 0.4), 0 14px 32px -16px rgba(0, 0, 0, 0.7);
+}
+body { background: var(--color-night); color: var(--color-ink); font-family: var(--font-sans); -webkit-font-smoothing: antialiased; }
+:focus-visible { outline: 2px solid var(--color-lime); outline-offset: 2px; }
+.pulse { transform-box: fill-box; transform-origin: center; animation: pulse 2.4s cubic-bezier(.22,1,.36,1) infinite; }
+@keyframes pulse { 0% { transform: scale(.6); opacity: .9 } 100% { transform: scale(2.3); opacity: 0 } }
+.comet { stroke-dasharray: 9 91; stroke-dashoffset: 100; opacity: 0; filter: drop-shadow(0 0 4px rgba(163, 230, 53, 0.7)); animation-name: comet; animation-timing-function: cubic-bezier(.45,0,.25,1); animation-iteration-count: infinite; animation-fill-mode: both; }
+@keyframes comet { 0% { stroke-dashoffset: 100; opacity: 0 } 12% { opacity: 1 } 88% { opacity: 1 } 100% { stroke-dashoffset: 0; opacity: 0 } }
+@media (prefers-reduced-motion: reduce) { .pulse, .comet { animation: none; } .comet { display: none; } }

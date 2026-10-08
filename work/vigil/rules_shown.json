@@ -1,0 +1,368 @@
+{
+ "name": "vigil",
+ "brief": "AI security analyst that triages alerts for security teams at SaaS companies; one action: start a trial; proof: alert queue reduced to the few that matter",
+ "type": "hero",
+ "generated": "2026-10-08T20:57:14",
+ "rules": [
+  {
+   "id": "systems-research.tailwind-catalyst#4",
+   "slot": "core",
+   "score": 48.6,
+   "tier": "T1"
+  },
+  {
+   "id": "systems-research.supabase#5",
+   "slot": "core",
+   "score": 42.28,
+   "tier": "T1"
+  },
+  {
+   "id": "LDP-16",
+   "slot": "core",
+   "score": 40.15,
+   "tier": "T2"
+  },
+  {
+   "id": "ui-pedia.19-illustrations#14",
+   "slot": "core",
+   "score": 37.01,
+   "tier": "T2"
+  },
+  {
+   "id": "systems-research.magic-ui#5",
+   "slot": "core",
+   "score": 34.98,
+   "tier": "T1"
+  },
+  {
+   "id": "LBC-05",
+   "slot": "core",
+   "score": 33.75,
+   "tier": "T2"
+  },
+  {
+   "id": "web.courses-and-curricula#62",
+   "slot": "core",
+   "score": 30.33,
+   "tier": "T2"
+  },
+  {
+   "id": "AH-AX-30",
+   "slot": "core",
+   "score": 28.76,
+   "tier": "T1"
+  },
+  {
+   "id": "systems-research.cloudscape#4",
+   "slot": "core",
+   "score": 23.94,
+   "tier": "T1"
+  },
+  {
+   "id": "web-sources.a11y-project-checklist#27",
+   "slot": "core",
+   "score": 23.87,
+   "tier": "T1"
+  },
+  {
+   "id": "web-sources.a11y-project-checklist#54",
+   "slot": "core",
+   "score": 23.39,
+   "tier": "T1"
+  },
+  {
+   "id": "AH-TY-01",
+   "slot": "core",
+   "score": 19.87,
+   "tier": "T1"
+  },
+  {
+   "id": "PT-SZ-08",
+   "slot": "core",
+   "score": 19.81,
+   "tier": "T2"
+  },
+  {
+   "id": "WFRM-29",
+   "slot": "core",
+   "score": 18.84,
+   "tier": "T1"
+  },
+  {
+   "id": "WFRM-31",
+   "slot": "core",
+   "score": 18.73,
+   "tier": "T1"
+  },
+  {
+   "id": "LBC-20",
+   "slot": "core",
+   "score": 17.92,
+   "tier": "T2"
+  },
+  {
+   "id": "founder.founder-taste#1",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#2",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#3",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#4",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#5",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#6",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#7",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#8",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#9",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#10",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#11",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#12",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#13",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#14",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#15",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#16",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#17",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#18",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#19",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#20",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#21",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#22",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#23",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#24",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#25",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#26",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "LHS-20",
+   "slot": "founder",
+   "score": 36.74,
+   "tier": "L"
+  },
+  {
+   "id": "LHS-07",
+   "slot": "founder",
+   "score": 36.08,
+   "tier": "L"
+  },
+  {
+   "id": "LHS-13",
+   "slot": "founder",
+   "score": 32.89,
+   "tier": "L"
+  },
+  {
+   "id": "LHS-19",
+   "slot": "founder",
+   "score": 29.82,
+   "tier": "L"
+  },
+  {
+   "id": "LHS-04",
+   "slot": "founder",
+   "score": 28.71,
+   "tier": "L"
+  },
+  {
+   "id": "LHS-12",
+   "slot": "founder",
+   "score": 28.69,
+   "tier": "L"
+  },
+  {
+   "id": "LHS-16",
+   "slot": "founder",
+   "score": 28.24,
+   "tier": "L"
+  },
+  {
+   "id": "LHS-18",
+   "slot": "founder",
+   "score": 28.09,
+   "tier": "L"
+  },
+  {
+   "id": "AH-WR-30",
+   "slot": "copy",
+   "score": 39.66,
+   "tier": "T1"
+  },
+  {
+   "id": "LHS-11",
+   "slot": "hero",
+   "score": 40.13,
+   "tier": "L"
+  },
+  {
+   "id": "WFRM-13",
+   "slot": "mobile",
+   "score": 40.57,
+   "tier": "T1"
+  },
+  {
+   "id": "WFRM-07",
+   "slot": "mobile",
+   "score": 39.22,
+   "tier": "T1"
+  },
+  {
+   "id": "WFRM-30",
+   "slot": "mobile",
+   "score": 37.36,
+   "tier": "T1"
+  },
+  {
+   "id": "ui-pedia.12-typography#13",
+   "slot": "typography",
+   "score": 50.71,
+   "tier": "T2"
+  },
+  {
+   "id": "AH-TY-05",
+   "slot": "typography",
+   "score": 47.82,
+   "tier": "T1"
+  },
+  {
+   "id": "ui-pedia.12-typography#22",
+   "slot": "typography",
+   "score": 47.02,
+   "tier": "T2"
+  },
+  {
+   "id": "systems-research.linear#4",
+   "slot": "typography",
+   "score": 46.72,
+   "tier": "T1"
+  },
+  {
+   "id": "ui-pedia.12-typography#17",
+   "slot": "typography",
+   "score": 45.74,
+   "tier": "T2"
+  }
+ ]
+}

@@ -1,0 +1,77 @@
+{
+  "name": "vigil",
+  "type": "devtool",
+  "seed": 2611,
+  "dealt": "2026-10-08T17:57:14.633Z",
+  "avoided": {},
+  "candidates": [
+    {
+      "axes": {
+        "hero_class": "interactive-utility",
+        "structure": "poster",
+        "type_voice": "humanist-sans",
+        "palette_temperature": "paper-and-ink",
+        "cta_grammar": "oversized-block",
+        "nav_grammar": "left-rail-nav",
+        "motion_signature": "state-transition-demo",
+        "proof_artifact": "numeric-evidence-wall"
+      },
+      "moves": [
+        {
+          "id": "M41",
+          "title": "Playable world / game"
+        },
+        {
+          "id": "M40",
+          "title": "Hover reveal of masked media"
+        }
+      ]
+    },
+    {
+      "axes": {
+        "hero_class": "product-proof",
+        "structure": "centered-type-field",
+        "type_voice": "geometric-display",
+        "palette_temperature": "paper-and-ink",
+        "cta_grammar": "two-step-split",
+        "nav_grammar": "index-list-nav",
+        "motion_signature": "layout-morph",
+        "proof_artifact": "map-or-diagram"
+      },
+      "moves": [
+        {
+          "id": "M33",
+          "title": "Motion identity as one verb"
+        },
+        {
+          "id": "M47",
+          "title": "Interactive product viewer with CMS ingestion pipeline"
+        }
+      ]
+    },
+    {
+      "axes": {
+        "hero_class": "editorial-explanation",
+        "structure": "right-rail",
+        "type_voice": "editorial-serif",
+        "palette_temperature": "nocturnal-low-chroma",
+        "cta_grammar": "solid-conventional",
+        "nav_grammar": "edge-dock-not-pill",
+        "motion_signature": "cursor-reactive",
+        "proof_artifact": "artifact-document"
+      },
+      "moves": [
+        {
+          "id": "M56",
+          "title": "Quiet space makes motion loud"
+        },
+        {
+          "id": "M03",
+          "title": "Recurring device (thread / timer / strip)"
+        }
+      ]
+    }
+  ],
+  "chosen": 2,
+  "note": "#2 core + palette from #3 (nocturnal-low-chroma); nav/type overridden by founder rules"
+}

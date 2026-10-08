@@ -29,7 +29,9 @@ const axes = {
   'nav numbering': (a, b) => !!a.navNumbered && !!b.navNumbered,
   'accent hue': (a, b) => (a.accentHues || []).some((h) => (b.accentHues || []).some((k) => Math.min(Math.abs(h - k), 360 - Math.abs(h - k)) <= 30)),
 };
-const collapsed = (a, b) => Object.entries(axes).filter(([, f]) => f(a, b)).map(([k]) => k);
+// Axes the founder rules mandate across all work (Kaching nav spec, Geist-class type) are shared on purpose: not sameness.
+const LOCKED = new Set(['nav height', 'headline font', 'body font']);
+const collapsed = (a, b) => Object.entries(axes).filter(([k, f]) => !LOCKED.has(k) && f(a, b)).map(([k]) => k);
 
 if (cmd === 'add') {
   const r = load(target); const verdict = flag('verdict'); const why = flag('why', '');

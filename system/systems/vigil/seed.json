@@ -1,0 +1,13 @@
+{
+  "slug": "vigil",
+  "name": "Vigil",
+  "showcaseHeadline": "Only Real Threats Reach You",
+  "signature": "Night-shift security: near-black cool field, a single lime signal for anything that needs a human, Geist with tight tracking, dithered radar texture, hairline panels.",
+  "personality": { "brandHue": 128, "brandChroma": 0.2, "neutralTemperature": "cool", "radiusPreset": "default", "depthStyle": "border", "density": "default", "motionPersonality": "snappy", "typeVoice": "Calm, exact, unhurried; nothing shouts except the signal." },
+  "fonts": { "display": "'Geist Variable', ui-sans-serif, system-ui, sans-serif", "body": "'Geist Variable', ui-sans-serif, system-ui, sans-serif", "mono": "'Geist Mono Variable', ui-monospace, monospace" },
+  "type": { "ratio": 1.25, "basePx": 16, "displayMaxPx": 76, "displayWeight": 600, "displayTracking": -0.05, "displayLeading": 1.02, "bodyLeading": 1.5 },
+  "bestFor": ["security and SOC tools", "observability", "infra AI agents"],
+  "avoidFor": ["consumer wellness", "warm editorial brands"],
+  "owned": ["Lime is the signal: only for things that need a human and the one primary action", "Dark-first; hairline panels instead of shadows", "Radar and dither texture as the brand field"],
+  "never": ["use red for anything but true severity", "glow everything (one glow: the escalations)"]
+}
