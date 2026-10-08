@@ -59,15 +59,16 @@ void main(){
   float lv = clamp(D, 0., .999) * 3.; float base = floor(lv);
   float lvl = base + ((lv - base) > th ? 1. : 0.);
   vec3 col = lvl < .5 ? c0 : lvl < 1.5 ? c1 : lvl < 2.5 ? c2 : c3;
-  if (th > uDev) col = c0;
-  gl_FragColor = vec4(col, 1.);
+  float a = lvl < .5 ? 0. : 1.;          // empty cells are transparent so rails/page show through
+  if (th > uDev) a = 0.;
+  gl_FragColor = vec4(col * a, a);
 }`
 
 export function Globe({ width, height, cx, cy, r, palette, cell = 2 }: { width: number; height: number; cx: number; cy: number; r: number; palette: [string, string, string, string]; cell?: number }) {
   const ref = useRef<HTMLCanvasElement>(null)
   useEffect(() => {
     const canvas = ref.current!
-    const gl = canvas.getContext('webgl', { antialias: false })
+    const gl = canvas.getContext('webgl', { antialias: false, alpha: true, premultipliedAlpha: true })
     if (!gl) return
     const dpr = Math.min(2, devicePixelRatio || 1)
     canvas.width = Math.round(width * dpr); canvas.height = Math.round(height * dpr)

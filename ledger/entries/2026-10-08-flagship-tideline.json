@@ -2,11 +2,11 @@
   "name": "flagship-tideline",
   "date": "2026-10-08",
   "verdict": "accept",
-  "why": "Founder 2026-10-08 round 4 asks, now applied: bigger globe dissolving at frame edges, cleaner travelling points (3 routes, chips below on leaders), nav polish, quiet card shadow, full-height rails, bold sans amount. Encoded as founder rules.",
+  "why": "Founder 2026-10-08 round 5 asks applied: card to bottom, rail behind globe, Kaching nav spec restored, white New text, balanced subtitle, no title full stop, consistent depth/radius tokens.",
   "summary": {
-    "pass": 19,
+    "pass": 23,
     "warn": 2,
-    "fail": 4
+    "fail": 0
   },
   "fingerprint": {
     "h1": {
@@ -15,7 +15,7 @@
       "ls": "-3.85px",
       "weight": "600",
       "family": "Geist Variable",
-      "text": "Payroll For TeamsIn Every Timezone."
+      "text": "Payroll For TeamsIn Every Timezone"
     },
     "fonts": [
       "Geist Variable",
@@ -25,16 +25,14 @@
       15
     ],
     "radii": [
-      10,
       12,
-      15,
-      11,
-      "pill",
       14,
+      "pill",
+      10,
       18,
       2
     ],
-    "navHeight": 72,
+    "navHeight": 43,
     "contentWidth": "840",
     "sectionPad": 20,
     "sectionCount": 1,

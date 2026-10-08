@@ -71,9 +71,9 @@ Every rule here is a direct founder verdict on real output. It outranks books, w
   **Why** Founder: "why so massive shadow and unprofessional stuff"; Deel/Rippling references use whisper-level shadows.
   **Applies to** all cards, chips, popovers. **Check** box-shadow blur <= 24px and alpha <= 0.16 on cards. **Source** founder, Tideline round 4
 
-- **RULE** [founder] Side rails/dividers run the full height of the hero; never fade them out early. If artwork meets a rail, the rail stays on top and the artwork fades instead.
-  **Why** Founder: the right border "fading off too soon" looked broken.
-  **Applies to** marketing site. **Check** both rails span the full hero height. **Source** founder, Tideline round 4
+- **RULE** [founder] Side rails/dividers run the full height of the hero and pass BEHIND artwork (the artwork's empty space is transparent so the rail shows through between its marks); never fade a rail out early and never draw it on top of the visual.
+  **Why** Founder: the right border "fading off too soon" looked broken, then asked for the border "to be below the globe".
+  **Applies to** marketing site. **Check** both rails span the full hero height; the rail's z-index is below the hero visual. **Source** founder, Tideline rounds 4-5
 
 - **RULE** [founder] A large hero visual that touches the frame edge dissolves softly into the page (mask fade) instead of being hard-cropped mid-shape; make it big enough to feel intentional.
   **Why** Founder: the globe needed to be "bigger or blurred out at sides where it touches".
@@ -90,6 +90,30 @@ Every rule here is a direct founder verdict on real output. It outranks books, w
 - **RULE** [founder] Look at several strong real references for the same product category before redesigning a weak area (for payroll: Deel, Remote, Rippling in knowledge/references/payroll/).
   **Why** Founder: "search for more examples or what would look better and cleaner".
   **Applies to** every redesign round. **Check** DIRECTION.md cites the references opened. **Source** founder, Tideline round 4
+
+- **RULE** [founder] Nav uses Kaching's exact spec: one pill 43px tall (padding 5/5/5/16, radius 14, white 80% + 8px blur), 16px between brand and links, 2px between links, links 6/11 padding at 15px/21px and -0.45px, chevron 5px from its label with 14px left padding on that link, actions 9/16 at radius 12 on the right. Compact, never airy.
+  **Why** Founder: "the first original one was best", the respaced version was "too spaced out", with no gap after the Product chevron.
+  **Applies to** marketing site nav. **Check** nav pill height 43px; link padding 6px 11px; gap after chevron >= 5px. **Source** founder, Tideline round 5; knowledge/larpo-shipped Kaching hero.css
+
+- **RULE** [founder] Hero headlines have no full stop at the end.
+  **Why** Founder: "no dot at the end of title text please".
+  **Applies to** hero h1. **Check** h1 text does not end with ".". **Source** founder, Tideline round 5
+
+- **RULE** [founder] Break the two-line subtitle by hand so the lines are balanced (first line not much longer than the second); do not leave a long top line and a short bottom line.
+  **Why** Founder asked to cut the subtitle "after every" so the top line is not so long.
+  **Applies to** hero subtitle. **Check** visual: line lengths within ~20% of each other. **Source** founder, Tideline round 5
+
+- **RULE** [founder] The "New" announcement badge keeps white text; deepen the badge colour until white passes contrast instead of switching the text to black.
+  **Why** Founder: "why randomly the text there is black when it should have been white".
+  **Applies to** badges, pills. **Check** badge text is white and >= 4.5:1. **Source** founder, Tideline round 5
+
+- **RULE** [founder] The hero product card anchors to the bottom of the hero (bottom-left on the content edge), not floating mid-column under the buttons.
+  **Why** Founder: "the ticket box should be on the bottom".
+  **Applies to** landing page hero. **Check** card bottom within ~40px of the hero bottom. **Source** founder, Tideline round 5
+
+- **RULE** [founder] One depth and shape language across every floating surface: shared shadow tokens (ring for pills/secondary buttons, card shadow for cards and chips), radius 18 for cards, 14 for chips and hero buttons, 12 for nav controls and dark labels.
+  **Why** Founder: "match consistency everywhere".
+  **Applies to** all. **Check** floating surfaces use the shared shadow variables. **Source** founder, Tideline round 5
 
 ## 5. Exceptions & judgement calls
 
