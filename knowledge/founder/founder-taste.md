@@ -91,9 +91,9 @@ Every rule here is a direct founder verdict on real output. It outranks books, w
   **Why** Founder: "search for more examples or what would look better and cleaner".
   **Applies to** every redesign round. **Check** DIRECTION.md cites the references opened. **Source** founder, Tideline round 4
 
-- **RULE** [founder] Nav uses Kaching's exact spec: one pill 43px tall (padding 5/5/5/16, radius 14, white 80% + 8px blur), 16px between brand and links, 2px between links, links 6/11 padding at 15px/21px and -0.45px, chevron 5px from its label with 14px left padding on that link, actions 9/16 at radius 12 on the right. Compact, never airy.
+- **RULE** [founder] Default nav (when the brand has no nav system of its own) uses Kaching's exact spec: one pill 43px tall (padding 5/5/5/16, radius 14, white 80% + 8px blur), 16px between brand and links, 2px between links, links 6/11 padding at 15px/21px and -0.45px, chevron 5px from its label with 14px left padding on that link, actions 9/16 at radius 12 on the right. Compact, never airy.
   **Why** Founder: "the first original one was best", the respaced version was "too spaced out", with no gap after the Product chevron.
-  **Applies to** marketing site nav. **Check** nav pill height 43px; link padding 6px 11px; gap after chevron >= 5px. **Source** founder, Tideline round 5; knowledge/larpo-shipped Kaching hero.css
+  **Applies to** marketing site nav. **Check** nav pill height 43px; link padding 6px 11px; gap after chevron >= 5px. A new brand may define its own nav at the same polish (compact, aligned, no stray gaps) and should, so pages do not all look like one kit. **Source** founder, Tideline round 5 and Vigil round 1; knowledge/larpo-shipped Kaching hero.css
 
 - **RULE** [founder] Hero headlines have no full stop at the end.
   **Why** Founder: "no dot at the end of title text please".
@@ -122,6 +122,10 @@ Every rule here is a direct founder verdict on real output. It outranks books, w
 - **RULE** [founder] Give the hero copy block air at the top: roughly 80-90px between the nav and the announcement chip at 1440x900.
   **Why** Founder: the title "and everything should be a little bit more down".
   **Applies to** landing page hero. **Check** chip top - nav bottom ~= 80-90px. **Source** founder, Tideline round 6
+
+- **RULE** [founder] Founder rules set the polish floor, not the style. Each new brand must explore its own effects, button style, type voice and graphics from the engine library (art-direction moves, Heckel shader recipes, Comeau button/depth recipes, Rauno/Emil craft details) instead of reusing the last project's kit; the diversity gate checks the fingerprint, and the designer must also check the components (nav, buttons, chips, cards) for sameness.
+  **Why** Founder on Vigil v1: "too alike the project we just did, explore better effects, buttons, styles, shaders, graphics... use the engine".
+  **Applies to** every new brand. **Check** DIRECTION.md names the moves and recipes used, and at least nav, primary button and product card differ in construction from the previous accepted project. **Source** founder, Vigil round 1
 
 ## 5. Exceptions & judgement calls
 

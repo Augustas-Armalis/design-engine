@@ -24,3 +24,18 @@ body { background: var(--color-night); color: var(--color-ink); font-family: var
 .comet { stroke-dasharray: 9 91; stroke-dashoffset: 100; opacity: 0; filter: drop-shadow(0 0 4px rgba(163, 230, 53, 0.7)); animation-name: comet; animation-timing-function: cubic-bezier(.45,0,.25,1); animation-iteration-count: infinite; animation-fill-mode: both; }
 @keyframes comet { 0% { stroke-dashoffset: 100; opacity: 0 } 12% { opacity: 1 } 88% { opacity: 1 } 100% { stroke-dashoffset: 0; opacity: 0 } }
 @media (prefers-reduced-motion: reduce) { .pulse, .comet { animation: none; } .comet { display: none; } }
+
+/* Comeau 3D push button (JC-DM-09 layers, JC-DM-30 timings): shadow, edge, sliding front */
+.push { position: relative; display: inline-block; border-radius: 12px; text-decoration: none; outline-offset: 4px; transition: filter 250ms; user-select: none; -webkit-tap-highlight-color: transparent; }
+.push-shadow { position: absolute; inset: 0; border-radius: 12px; background: hsl(0 0% 0% / 0.45); will-change: transform; transform: translateY(2px); transition: transform 600ms cubic-bezier(.3,.7,.4,1); filter: blur(4px); }
+.push-edge { position: absolute; inset: 0; border-radius: 12px; background: linear-gradient(to left, hsl(84 70% 16%) 0%, hsl(84 70% 30%) 8%, hsl(84 70% 30%) 92%, hsl(84 70% 16%) 100%); }
+.push-front { position: relative; display: flex; align-items: center; gap: 10px; height: 46px; padding: 0 20px; border-radius: 12px; background: #a3e635; color: #0c1404; font-size: 17px; font-weight: 600; letter-spacing: -0.03em; will-change: transform; transform: translateY(-4px); transition: transform 600ms cubic-bezier(.3,.7,.4,1); box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.45); }
+@media (hover: hover) { .push:hover { filter: brightness(108%); } .push:hover .push-front { transform: translateY(-6px); transition: transform 250ms cubic-bezier(.3,.7,.4,1.5); } .push:hover .push-shadow { transform: translateY(4px); transition: transform 250ms cubic-bezier(.3,.7,.4,1.5); } }
+.push:active .push-front { transform: translateY(-2px); transition: transform 34ms; }
+.push:active .push-shadow { transform: translateY(1px); transition: transform 34ms; }
+@media (prefers-reduced-motion: reduce) { .push-front, .push-shadow { transition: none; } }
+
+/* link with a sliding underline (in from the left, out to the right) */
+.slide-link { position: relative; text-decoration: none; }
+.slide-link::after { content: ""; position: absolute; left: 0; right: 0; bottom: -3px; height: 1px; background: currentColor; transform: scaleX(0); transform-origin: right; transition: transform 300ms cubic-bezier(.33,1,.68,1); }
+@media (hover: hover) { .slide-link:hover::after { transform: scaleX(1); transform-origin: left; } }
