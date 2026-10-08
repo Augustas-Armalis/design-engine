@@ -28,7 +28,7 @@ void main(){
   float v = clamp((n - .3) * 2.15 * mask, 0., 1.);
   float th = b8(cell);
   float lv = v * 3.; float base = floor(lv);
-  float q = base + step(th, lv - base);
+  float q = base + ((lv - base) > th ? 1. : 0.);
   vec3 col = q < .5 ? c0 : q < 1.5 ? c1 : q < 2.5 ? c2 : c3;
   if (th > uDev) col = c0;
   gl_FragColor = vec4(col, 1.);
