@@ -1,0 +1,467 @@
+{
+  "name": "Shopify Polaris",
+  "slug": "shopify-polaris",
+  "vendor": "Shopify Inc.",
+  "url": "https://shopify.dev/docs/api/app-home/polaris-web-components (current); legacy docs: https://polaris.shopify.com (now 301 to shopify.dev); source https://github.com/Shopify/polaris (archived)",
+  "licence": "Modified MIT (LICENSE.md in @shopify/polaris 13.9.5 and @shopify/polaris-tokens 9.4.2): rights apply only to applications that integrate or interoperate with Shopify, and stand-alone external apps must be 'dissimilar and visually distinct' from Shopify products as determined by Shopify. GitHub reports licence 'other'. Study structure and values; do not reproduce the look for non-Shopify products.",
+  "studiedOn": "2026-10-08",
+  "personality": [
+    "pro-tool",
+    "efficient",
+    "familiar",
+    "dense",
+    "tactile",
+    "merchant-friendly"
+  ],
+  "bestFor": [
+    "merchant/back-office admin, index + detail pages, bulk actions, data tables",
+    "Shopify apps that must feel native inside the admin",
+    "products where task efficiency and scanning speed beat brand expression"
+  ],
+  "avoidFor": [
+    "non-Shopify products wanting a distinct identity (licence requires visual distinctness)",
+    "marketing sites, storefronts or editorial layouts",
+    "new greenfield React work: Polaris React is deprecated/archived and replaced by Polaris web components (s-* elements) on shopify.dev"
+  ],
+  "typography": {
+    "families": [
+      "sans: 'Inter', -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif (Inter variable; system font fallback for scripts Inter lacks)",
+      "mono: ui-monospace, SFMono-Regular, 'SF Mono', Consolas, 'Liberation Mono', Menlo, monospace"
+    ],
+    "scale": [
+      {
+        "role": "heading-3xl",
+        "sizePx": 36,
+        "lineHeightPx": 48,
+        "weight": 700,
+        "trackingEm": -0.015
+      },
+      {
+        "role": "heading-2xl",
+        "sizePx": 30,
+        "lineHeightPx": 40,
+        "weight": 700,
+        "trackingEm": -0.01
+      },
+      {
+        "role": "heading-xl",
+        "sizePx": 24,
+        "lineHeightPx": 32,
+        "weight": 700,
+        "trackingEm": -0.0083
+      },
+      {
+        "role": "heading-lg",
+        "sizePx": 20,
+        "lineHeightPx": 24,
+        "weight": 650,
+        "trackingEm": -0.01
+      },
+      {
+        "role": "heading-md",
+        "sizePx": 14,
+        "lineHeightPx": 20,
+        "weight": 650,
+        "trackingEm": 0
+      },
+      {
+        "role": "heading-sm",
+        "sizePx": 13,
+        "lineHeightPx": 20,
+        "weight": 650,
+        "trackingEm": 0
+      },
+      {
+        "role": "heading-xs",
+        "sizePx": 12,
+        "lineHeightPx": 16,
+        "weight": 650,
+        "trackingEm": 0
+      },
+      {
+        "role": "body-lg",
+        "sizePx": 14,
+        "lineHeightPx": 20,
+        "weight": 450,
+        "trackingEm": 0
+      },
+      {
+        "role": "body-md (default)",
+        "sizePx": 13,
+        "lineHeightPx": 20,
+        "weight": 450,
+        "trackingEm": 0
+      },
+      {
+        "role": "body-sm",
+        "sizePx": 12,
+        "lineHeightPx": 16,
+        "weight": 450,
+        "trackingEm": 0
+      },
+      {
+        "role": "body-xs",
+        "sizePx": 11,
+        "lineHeightPx": 12,
+        "weight": 450,
+        "trackingEm": 0
+      }
+    ],
+    "notes": "Desktop values (viewport >= ~490px). The light-mobile theme re-maps the scale up for touch: heading-2xl 32/40, xl 22/28, lg 18/24, md 16/20, sm 14/20; body-lg 18/28, md 16/24, sm 14/20, xs 12/16 (so default body goes 13px to 16px on phones). Weights 450/550/650/700 are variable-font stops (regular/medium/semibold/bold). Tracking tightens only on big headings (letter-spacing tokens densest -0.54px, denser -0.3px, dense -0.2px, normal 0). Two scales only: heading and body. All line-heights are multiples of 4px (12, 16, 20, 24, 28, 32, 40, 48). Type is 'aligned on the 4px grid' and vertical alignment is used to optically centre text in shaped elements. Tabular numerals are required for currency and numbers in tables; do not substitute a mono font. Underline conventions: solid underline + link colour = link; dotted underline = definition (tooltip/popover only)."
+  },
+  "color": {
+    "model": "hex",
+    "neutrals": {
+      "gray ramp 1-16 (rgba, equals these hex)": [
+        "#ffffff",
+        "#fdfdfd",
+        "#fafafa",
+        "#f7f7f7",
+        "#f3f3f3",
+        "#f1f1f1",
+        "#ebebeb",
+        "#e3e3e3",
+        "#d4d4d4",
+        "#cccccc",
+        "#b5b5b5",
+        "#8a8a8a",
+        "#616161",
+        "#4a4a4a",
+        "#303030",
+        "#1a1a1a"
+      ],
+      "light roles": {
+        "bg (app background)": "#f1f1f1",
+        "bg-surface": "#ffffff",
+        "bg-surface-secondary": "#f7f7f7",
+        "bg-surface-tertiary": "#f3f3f3",
+        "bg-surface-hover": "#f7f7f7",
+        "bg-surface-active": "#f3f3f3",
+        "bg-fill": "#ffffff",
+        "bg-fill-secondary": "#f1f1f1",
+        "bg-fill-tertiary": "#e3e3e3",
+        "bg-fill-brand": "#303030",
+        "bg-fill-brand-hover": "#1a1a1a",
+        "text": "#303030",
+        "text-secondary": "#616161",
+        "text-disabled": "#b5b5b5",
+        "border": "#e3e3e3",
+        "border-secondary": "#ebebeb",
+        "border-tertiary": "#cccccc",
+        "icon": "#4a4a4a",
+        "icon-secondary": "#8a8a8a",
+        "bg-inverse": "#1a1a1a",
+        "bg-surface-inverse": "#303030"
+      },
+      "dark (experimental) roles": {
+        "bg": "#1a1a1a",
+        "bg-surface": "#303030",
+        "bg-fill": "#303030",
+        "text": "#e3e3e3",
+        "text-secondary": "#b5b5b5",
+        "text-disabled": "#4a4a4a",
+        "bg-fill-brand": "#ffffff",
+        "text-brand-on-bg-fill": "#303030",
+        "bg-surface-hover": "#4a4a4a",
+        "bg-surface-selected": "#616161",
+        "border-secondary": "#4a4a4a",
+        "fills": "white at alpha, e.g. bg-fill-secondary rgba(255,255,255,0.08)"
+      }
+    },
+    "accents": {
+      "global palette (HSLuv-based lightness, 16 steps each, identical contrast per step across hues)": "gray, azure, blue, cyan, green, lime, magenta, orange, purple, red, rose, teal, yellow (13 ramps in polaris-tokens colors.ts; docs say 12) plus blackAlpha and whiteAlpha ramps",
+      "blue ramp": [
+        "#fcfdff",
+        "#f6f8ff",
+        "#f0f2ff",
+        "#eaedff",
+        "#e2e7ff",
+        "#dbe1ff",
+        "#d5dcff",
+        "#c5d0ff",
+        "#bac7ff",
+        "#97adff",
+        "#4188ff",
+        "#0071e9",
+        "#005bd3",
+        "#004299",
+        "#002e6a",
+        "#001633"
+      ],
+      "brand": "Polaris deliberately has NO colourful brand: role `brand` is near-black (#303030 fill, #1a1a1a hover), reserved for the single primary action",
+      "emphasis (interactive blue)": {
+        "bg-fill-emphasis": "#005bd3",
+        "hover": "#004299",
+        "active": "#002e6a",
+        "text-link": "#005bd3",
+        "border-focus": "#005bd3"
+      },
+      "magic (AI)": {
+        "bg-fill-magic": "#8051ff",
+        "text-magic": "#5700d1",
+        "bg-surface-magic": "#f8f7ff"
+      }
+    },
+    "semantic": {
+      "critical": {
+        "bg-fill": "#c70a24",
+        "hover": "#a30a24",
+        "bg-surface": "#fee8eb",
+        "text": "#8e0b21",
+        "border": "#fec1c7",
+        "icon": "#e22c38"
+      },
+      "warning": {
+        "bg-fill": "#ffb800",
+        "bg-surface": "#fff1e3",
+        "text": "#5e4200",
+        "border": "#ffc879",
+        "icon": "#b28400"
+      },
+      "caution": {
+        "bg-fill": "#ffe600",
+        "bg-surface": "#fff8db",
+        "text": "#4f4700"
+      },
+      "success": {
+        "bg-fill": "#047b5d",
+        "hover": "#035e4c",
+        "bg-surface": "#cdfed4",
+        "text": "#014b40",
+        "border": "#92fcac",
+        "icon": "#047b5d"
+      },
+      "info": {
+        "bg-fill": "#91d0ff",
+        "bg-surface": "#eaf4ff",
+        "text": "#003a5a",
+        "border": "#a8d8ff",
+        "icon": "#0094d5"
+      },
+      "role semantics": "critical = impossible/blocked/error only; warning = needs intervention, strongest non-blocking; caution = stalled/unstarted, never announcements; success = all OK, never promotions; info = tips/incentives, never urgent; brand = one main action; magic = AI"
+    },
+    "darkMode": "Shipped as an experimental theme (p-theme-dark-experimental, ~40 overrides) rather than a full second system: surfaces step up to #303030 on a #1a1a1a background, fills become white-alpha overlays (rgba(255,255,255,0.08/0.11/0.17)), brand fill inverts to white with #303030 label, bevel highlights become 8-16% white. Themes available in the tokens package: light (default), light-mobile, light-high-contrast-experimental (text #1a1a1a, border #8a8a8a), dark-experimental. Other themes exist for brand/AI variants through the same role mechanism.",
+    "contrastNotes": "Docs: Polaris targets WCAG 2.1 A and AA. Text colours are 'fully accessible on their corresponding backgrounds and surfaces'; on-fill text is strictly bound to its own fill (e.g. text-success-on-bg-fill #faffb on bg-fill-success). Icon colours are tuned for 3:1 non-text contrast. Because the palette uses perceptually uniform lightness steps, 'Red 12 and Blue 12 have identical contrast with Gray 1'. [computed] text #303030 on white 13.2:1; text-secondary #616161 on white 6.19:1 and on #f1f1f1 5.48:1; text-disabled #b5b5b5 on white 2.05:1 (disabled exempt); link #005bd3 6.11:1; icon-secondary #8a8a8a 3.45:1; hairline border #e3e3e3 on white only 1.28:1 (decorative; borders are used for tables not for control boundaries in v12, controls get an inset ring shadow); text-critical #8e0b21 on #fee8eb 8.09:1; dark text #e3e3e3 on #303030 10.28:1."
+  },
+  "spacing": {
+    "base": "4px (token name = percentage of base: space-100 = 4px, space-400 = 16px)",
+    "scale": [
+      "0",
+      "1 (space-025)",
+      "2 (050)",
+      "4 (100)",
+      "6 (150)",
+      "8 (200)",
+      "12 (300)",
+      "16 (400)",
+      "20 (500)",
+      "24 (600)",
+      "32 (800)",
+      "40 (1000)",
+      "48 (1200)",
+      "64 (1600)",
+      "80 (2000)",
+      "96 (2400)",
+      "112 (2800)",
+      "128 (3200)"
+    ],
+    "semantic": {
+      "space-button-group-gap": 8,
+      "space-card-gap": "16 (8 on small screens)",
+      "space-card-padding": 16,
+      "space-table-cell-padding": 6
+    },
+    "layout": {
+      "breakpointsPx": {
+        "xs": 0,
+        "sm": 490,
+        "md": 768,
+        "lg": 1040,
+        "xl": 1440
+      },
+      "zIndex": {
+        "1": 100,
+        "2": 400,
+        "3": 510,
+        "4": 512,
+        "5": 513,
+        "6": 514,
+        "7": 515,
+        "8": 516,
+        "9": 517,
+        "10": 518,
+        "11": 519,
+        "12": 520
+      },
+      "size tokens": "height-* and width-* use the same 4px multiplier ramp (0,1,2,4,6,8,12,16,20,24,28,32,36,40,48,64,80,96,112,128)"
+    }
+  },
+  "radius": {
+    "scale": [
+      0,
+      2,
+      4,
+      6,
+      8,
+      12,
+      16,
+      20,
+      30,
+      9999
+    ],
+    "rule": "Token names are 0/050/100/150/200/300/400/500/750/full. Buttons use 200 (8px); Card default 300 (12px); Banner 200/300; skeleton 100. Nesting rule (published): inset surfaces get a SMALLER radius than their parent to look purpose-built; never give a nested element the same or larger radius; never alter a button/badge radius just to nest it."
+  },
+  "depth": {
+    "shadows": [
+      "100: 0 1px 0 0 rgba(26,26,26,0.07)",
+      "200: 0 3px 1px -1px rgba(26,26,26,0.07)",
+      "300: 0 4px 6px -2px rgba(26,26,26,0.20)",
+      "400: 0 8px 16px -4px rgba(26,26,26,0.22)",
+      "500: 0 12px 20px -8px rgba(26,26,26,0.24)",
+      "600: 0 20px 20px -8px rgba(26,26,26,0.28)",
+      "bevel-100 (card/surface): 0 1px 0 rgba(26,26,26,0.07) + inset 0 1px 0 rgba(208,208,208,0.40) + inset 1px 0 0 #CCC + inset -1px 0 0 #CCC + inset 0 -1px 0 #999",
+      "button (secondary): inset 0 -1px 0 0 #b5b5b5, inset 0 0 0 1px rgba(0,0,0,0.1), inset 0 0.5px 0 1.5px #FFF",
+      "button-primary: inset 0 -1px 0 1px rgba(0,0,0,0.8), inset 0 0 0 1px #303030, inset 0 0.5px 0 1.5px rgba(255,255,255,0.25)",
+      "button-primary-inset (pressed): inset 0 3px 0 0 #000",
+      "button-primary-critical / -success: same recipe with rgba(142,31,11) / rgba(12,81,50) edges",
+      "inset-100: inset 0 1px 2px 0 rgba(26,26,26,0.15), inset 0 1px 1px 0 rgba(26,26,26,0.15)",
+      "border-inset: inset 0 0 0 1px rgba(0,0,0,0.08)"
+    ],
+    "borders": "Border widths: 0, 0.66px (0165), 1px (025), 2px (050), 4px (100). Dividers are reserved for data and index tables; elsewhere separate with nested surfaces (tinted #f7f7f7 / #f3f3f3 insets). Buttons and cards carry 'bevels' (multi-layer inset shadows that mimic lighting: bright top edge, dark bottom edge) so primary actions look physically pressable; pressed buttons darken and drop an inset shadow. On small screens bevels and shadows are replaced by 1px ring borders (mobile theme sets shadow-100 and bevel to none).",
+    "blur": "No backdrop blur in tokens. Layering is by surface tint and shadow; layers: -1 menu, 0 background, 1 card, 2 dropdown/popover, with an explicit warning against too many layers on one screen."
+  },
+  "motion": {
+    "durationsMs": [
+      0,
+      50,
+      100,
+      150,
+      200,
+      250,
+      300,
+      350,
+      400,
+      450,
+      500,
+      5000
+    ],
+    "easings": [
+      "ease: cubic-bezier(0.25, 0.1, 0.25, 1)",
+      "ease-in: cubic-bezier(0.42, 0, 1, 1)",
+      "ease-out: cubic-bezier(0.19, 0.91, 0.38, 1)",
+      "ease-in-out: cubic-bezier(0.42, 0, 0.58, 1)",
+      "linear: cubic-bezier(0, 0, 1, 1)"
+    ],
+    "notes": "Primitive tokens only (no semantic duration aliases); keyframes provided: bounce, fade-in, pulse, spin, appear-above, appear-below. Principles: purposeful (feedback, navigation, loading), simple, consistent, 'fast enough to not cause delay, slow enough to be understood'. Animate a single element rather than everything at once; navigation motion direction must match the path (right-to-left going deeper, left-to-right back); stagger-per-element transitions are an explicit don't; loading uses a spinner (3/4 circle), never a static hourglass. 'Craft juicy interactions': hover is smooth and unobtrusive, click feedback is more dramatic and visceral (button physically presses)."
+  },
+  "density": {
+    "modes": [
+      "high density (default admin: index/data pages, action lists, popovers, tables)",
+      "low density (focused editing pages such as product detail: larger targets, wordier buttons, card per context)",
+      "responsive: <768px uses larger control heights and body type (touch)"
+    ],
+    "controlHeightsPx": {
+      "button micro": "24 (28 below 768px)",
+      "button slim": "28 (32 below 768px)",
+      "button medium": "28 (32 below 768px)",
+      "button large": "32 (36 below 768px)",
+      "button padding-inline": "micro 8, medium/large 12",
+      "button padding-block": "micro 4, medium/large 6",
+      "button gap (icon-label)": 2,
+      "note": "the standard admin button is 28px tall on desktop (Primer default 32px, Carbon small 32px)"
+    }
+  },
+  "components": {
+    "count": 67,
+    "list": [
+      "AccountConnection",
+      "Button",
+      "ButtonGroup",
+      "Badge",
+      "Banner",
+      "ExceptionList",
+      "ProgressBar",
+      "SkeletonBodyText",
+      "SkeletonDisplayText",
+      "SkeletonPage",
+      "SkeletonTabs",
+      "SkeletonThumbnail",
+      "Spinner",
+      "Avatar",
+      "Icon",
+      "KeyboardKey",
+      "Thumbnail",
+      "VideoThumbnail",
+      "Bleed",
+      "BlockStack",
+      "Box",
+      "CalloutCard",
+      "Card",
+      "Divider",
+      "EmptyState",
+      "FormLayout",
+      "Grid",
+      "InlineGrid",
+      "InlineStack",
+      "Layout",
+      "MediaCard",
+      "Page",
+      "ActionList",
+      "DescriptionList",
+      "List",
+      "Listbox",
+      "OptionList",
+      "ResourceItem",
+      "ResourceList",
+      "FooterHelp",
+      "Link",
+      "Pagination",
+      "Tabs",
+      "Popover",
+      "Tooltip",
+      "Autocomplete",
+      "Checkbox",
+      "ChoiceList",
+      "ColorPicker",
+      "Combobox",
+      "DatePicker",
+      "DropZone",
+      "Filters",
+      "Form",
+      "IndexFilters",
+      "InlineError",
+      "RadioButton",
+      "RangeSlider",
+      "Select",
+      "Tag",
+      "TextField",
+      "DataTable",
+      "IndexTable",
+      "Text",
+      "AppProvider",
+      "Collapsible",
+      "Scrollable"
+    ],
+    "stateMatrixCompleteness": "Good at the code level, thinner in prose. Button CSS exposes a per-state custom-property matrix (--pc-button-bg / _hover / _active / _pressed / _disabled, same for color, icon-fill, box-shadow) across variants primary, secondary, tertiary, plain, monochromePlain; tones critical and success; sizes micro, slim, medium, large; flags disabled, loading, pressed, disclosure, iconOnly, fullWidth, textAlign. Focus-visible: 2px solid border-focus outline, 1px offset. Docs list 67 public components in 11 categories (plus ~8 internal-only and ~20 deprecated); each page has Examples, Props, best practices, content guidelines, accessibility. Interaction-states doc page is flagged 'being reworked for v12', so state guidance is partly stale. Current successor: Polaris web components (s-button, s-text-field etc.) listed on shopify.dev with a smaller, form-field-per-type component set."
+  },
+  "tokenArchitecture": "Single flat namespace `--p-{group}-{...}` generated from polaris-tokens (452 unique custom properties in styles.css). Layers: (1) global palette: 13 hue ramps x 16 steps in HSLuv lightness (plus black/white alpha ramps); (2) role tokens built from the palette: `color-{part}-{role}-{state}` where part = bg | bg-surface | bg-fill | text | icon | border and role = (default) | secondary | tertiary | brand | info | success | caution | warning | critical | emphasis | magic | inverse, state = hover | active | selected | disabled; text on a fill has a strict `-on-bg-fill` twin; (3) non-colour primitives: space, height, width, font-size/weight/line-height/letter-spacing, border-radius/width, shadow, motion, breakpoints, z-index; (4) semantic aliases: text-{heading|body}-{3xl..xs}-font-*, space-card-padding, space-button-group-gap. Themes override a handful of tokens (mobile ~51, dark ~40, high-contrast ~9) so a theme is a diff, not a copy. Rule: semantic tokens only for the exact CSS property named (space-card-padding is only for Card padding); prefer semantic over primitive; use token groups for the matching property (space tokens never for width/height).",
+  "distinctiveness": "Polaris is recognisable by (1) surface-on-grey layering: white cards on a #f1f1f1 app background with 12px radius, (2) tactile 'bevelled' buttons with multi-layer inset shadows and near-black primary (not a coloured brand), (3) 13px body in Inter at 20px leading with tightly negative-tracked bold headings, (4) role-coloured banners/badges with pale surface + strong fill + 'on-fill' text, (5) a content voice rule set (sentence case, no articles in buttons, 'Save' not 'Save product'). The near-black primary and absence of brand colour is the strongest generic-vs-Polaris tell.",
+  "weaknesses": [
+    "Licence forbids visually similar non-Shopify products; cannot be used as a base for a house system",
+    "Polaris React archived/deprecated (GitHub repo marked archived, description 'Deprecated'); docs site moved to shopify.dev and legacy guidance pages are partly stale",
+    "Dark mode is experimental, not a full second design; high-contrast is experimental with only 9 overrides",
+    "13px default body is below common 14-16px readability defaults on desktop (compensated only by the mobile theme)",
+    "Hairline decorative borders are 1.28:1; control boundaries rely on inset ring shadows that disappear under forced-colours unless handled",
+    "Token docs say 12 colours, source ships 13; interaction-states prose is explicitly under rework"
+  ],
+  "takeaways": [
+    "Write colour as relationships, not swatches: background (never stacked), surface (cards), fill (small, vibrant, with strict on-fill text), border (tables only), text, link, icon, each with allowed/forbidden adjacencies",
+    "Spell out when NOT to use each semantic role (info is not urgent, success is not a promotion, caution is not an announcement, critical only for blocked/error)",
+    "Define density as a per-task decision (high for data and action lists, low for focused editing) and forbid mixing densities inside one card or changing density suddenly inside an action list",
+    "Divider lines are an exception, not a default: divide surfaces with tinted nested surfaces and reserve lines for tables",
+    "Nested radius must shrink; never restyle a child's radius to make it fit",
+    "Name spacing tokens by multiplier of the base unit and add semantic tokens that name the CSS property they are for",
+    "Treat copy as design tokens: sentence case, verbs first, no articles on buttons, error messages that say what to do, and a measurable reading level",
+    "Ship a mobile theme as a diff on the same tokens that bumps type and control sizes for touch instead of designing a separate system"
+  ]
+}

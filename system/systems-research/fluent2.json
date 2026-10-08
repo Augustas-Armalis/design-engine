@@ -1,0 +1,459 @@
+{
+  "name": "Microsoft Fluent 2",
+  "slug": "fluent2",
+  "vendor": "Microsoft",
+  "url": "https://fluent2.microsoft.design",
+  "licence": "MIT for @fluentui/* code and tokens (github.com/microsoft/fluentui, LICENSE file; GitHub API reports NOASSERTION because of the file header only) and MIT for the system icon set. Segoe UI / Segoe UI Variable are Microsoft-licensed fonts, not redistributable: ship the system fallback stack instead. Brand/product-launch icons and Microsoft logos are not licensed.",
+  "studiedOn": "2026-10-08",
+  "personality": [
+    "utilitarian",
+    "calm",
+    "dense-but-airy",
+    "cross-platform-neutral",
+    "trustworthy",
+    "enterprise"
+  ],
+  "bestFor": [
+    "productivity and admin SaaS (Microsoft 365, Teams, Azure-portal-like consoles)",
+    "data-dense dashboards and forms with small 24/32/40 controls",
+    "products that must feel native on Windows and also work on web, iOS, Android",
+    "teams that need a complete light / dark / forced-colors theme from one brand ramp"
+  ],
+  "avoidFor": [
+    "expressive marketing or campaign sites (type ramp tops out at a 68px Display; no editorial voice)",
+    "consumer brands that need a strong own identity (the system is deliberately neutral and 'unmistakably Microsoft')",
+    "dark-first creative tools",
+    "anything where a licensed Segoe UI is not available and system-font fallbacks would change the metrics"
+  ],
+  "typography": {
+    "families": [
+      "Segoe UI (web default; fallback 'Segoe UI Web (West European)', -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', sans-serif)",
+      "Consolas, 'Courier New', Courier, monospace (fontFamilyMonospace)",
+      "Bahnschrift then the base stack (fontFamilyNumeric)",
+      "Segoe UI Variable (Windows), SF Pro (macOS, iOS), Roboto (Android) per platform"
+    ],
+    "scale": [
+      {
+        "role": "caption2",
+        "sizePx": 10,
+        "lineHeightPx": 14,
+        "weight": 400,
+        "trackingEm": 0
+      },
+      {
+        "role": "caption2Strong",
+        "sizePx": 10,
+        "lineHeightPx": 14,
+        "weight": 600,
+        "trackingEm": 0
+      },
+      {
+        "role": "caption1",
+        "sizePx": 12,
+        "lineHeightPx": 16,
+        "weight": 400,
+        "trackingEm": 0
+      },
+      {
+        "role": "caption1Strong",
+        "sizePx": 12,
+        "lineHeightPx": 16,
+        "weight": 600,
+        "trackingEm": 0
+      },
+      {
+        "role": "caption1Stronger",
+        "sizePx": 12,
+        "lineHeightPx": 16,
+        "weight": 700,
+        "trackingEm": 0
+      },
+      {
+        "role": "body1",
+        "sizePx": 14,
+        "lineHeightPx": 20,
+        "weight": 400,
+        "trackingEm": 0
+      },
+      {
+        "role": "body1Strong",
+        "sizePx": 14,
+        "lineHeightPx": 20,
+        "weight": 600,
+        "trackingEm": 0
+      },
+      {
+        "role": "body1Stronger",
+        "sizePx": 14,
+        "lineHeightPx": 20,
+        "weight": 700,
+        "trackingEm": 0
+      },
+      {
+        "role": "body2",
+        "sizePx": 16,
+        "lineHeightPx": 22,
+        "weight": 400,
+        "trackingEm": 0
+      },
+      {
+        "role": "subtitle2",
+        "sizePx": 16,
+        "lineHeightPx": 22,
+        "weight": 600,
+        "trackingEm": 0
+      },
+      {
+        "role": "subtitle2Stronger",
+        "sizePx": 16,
+        "lineHeightPx": 22,
+        "weight": 700,
+        "trackingEm": 0
+      },
+      {
+        "role": "subtitle1",
+        "sizePx": 20,
+        "lineHeightPx": 28,
+        "weight": 600,
+        "trackingEm": 0
+      },
+      {
+        "role": "title3",
+        "sizePx": 24,
+        "lineHeightPx": 32,
+        "weight": 600,
+        "trackingEm": 0
+      },
+      {
+        "role": "title2",
+        "sizePx": 28,
+        "lineHeightPx": 36,
+        "weight": 600,
+        "trackingEm": 0
+      },
+      {
+        "role": "title1",
+        "sizePx": 32,
+        "lineHeightPx": 40,
+        "weight": 600,
+        "trackingEm": 0
+      },
+      {
+        "role": "largeTitle",
+        "sizePx": 40,
+        "lineHeightPx": 52,
+        "weight": 600,
+        "trackingEm": 0
+      },
+      {
+        "role": "display",
+        "sizePx": 68,
+        "lineHeightPx": 92,
+        "weight": 600,
+        "trackingEm": 0
+      }
+    ],
+    "notes": "Source: packages/tokens/src/global/{fonts,typographyStyles}.ts (code is authoritative). Primitive sizes: fontSizeBase100..600 = 10,12,14,16,20,24 and fontSizeHero700..1000 = 28,32,40,68; lineHeights 14,16,20,22,28,32 and 36,40,52,92. Body default is 14/20 (small for a modern marketing site). Weights are 400/500/600/700; headings are semibold 600 not bold. No letter-spacing tokens exist, so trackingEm 0 means 'none specified', not a measured value. fluent2.microsoft.design/typography lists Subtitle 1 as 20/26 but code has lineHeightBase500 = 28px: flagged in the note. Sentence case only; docs forbid all caps for attention. Platform ramps differ (iOS/Android/macOS use pt/sp and different sizes); the web ramp above is the one to bind a web project to."
+  },
+  "color": {
+    "model": "hex",
+    "neutrals": {
+      "grey": {
+        "2": "#050505",
+        "4": "#0a0a0a",
+        "6": "#0f0f0f",
+        "8": "#141414",
+        "10": "#1a1a1a",
+        "12": "#1f1f1f",
+        "14": "#242424",
+        "16": "#292929",
+        "18": "#2e2e2e",
+        "20": "#333333",
+        "22": "#383838",
+        "24": "#3d3d3d",
+        "26": "#424242",
+        "28": "#474747",
+        "30": "#4d4d4d",
+        "32": "#525252",
+        "34": "#575757",
+        "36": "#5c5c5c",
+        "38": "#616161",
+        "40": "#666666",
+        "42": "#6b6b6b",
+        "44": "#707070",
+        "46": "#757575",
+        "48": "#7a7a7a",
+        "50": "#808080",
+        "52": "#858585",
+        "54": "#8a8a8a",
+        "56": "#8f8f8f",
+        "58": "#949494",
+        "60": "#999999",
+        "62": "#9e9e9e",
+        "64": "#a3a3a3",
+        "66": "#a8a8a8",
+        "68": "#adadad",
+        "70": "#b3b3b3",
+        "72": "#b8b8b8",
+        "74": "#bdbdbd",
+        "76": "#c2c2c2",
+        "78": "#c7c7c7",
+        "80": "#cccccc",
+        "82": "#d1d1d1",
+        "84": "#d6d6d6",
+        "86": "#dbdbdb",
+        "88": "#e0e0e0",
+        "90": "#e6e6e6",
+        "92": "#ebebeb",
+        "94": "#f0f0f0",
+        "96": "#f5f5f5",
+        "98": "#fafafa",
+        "99": "#fcfcfc"
+      },
+      "white": "#ffffff",
+      "black": "#000000",
+      "note": "Grey ramp steps 2..98 in steps of 2 plus 99; light theme uses grey 14 (#242424) as primary text, 98/96/94/92 as the four background layers, 82 as default stroke, 88 as subtle stroke. Alpha ramps whiteAlpha/blackAlpha 5,10,20..90 plus grey10/12/14Alpha."
+    },
+    "accents": {
+      "brandWebRamp_10_to_160": {
+        "10": "#061724",
+        "20": "#082338",
+        "30": "#0a2e4a",
+        "40": "#0c3b5e",
+        "50": "#0e4775",
+        "60": "#0f548c",
+        "70": "#115ea3",
+        "80": "#0f6cbd",
+        "90": "#2886de",
+        "100": "#479ef5",
+        "110": "#62abf5",
+        "120": "#77b7f7",
+        "130": "#96c6fa",
+        "140": "#b4d6fa",
+        "150": "#cfe4fa",
+        "160": "#ebf3fc"
+      },
+      "brandTeamsRamp_80": "#5b5fc7",
+      "brandOfficeRamp_80": "#d83b01",
+      "brandTeamsV21_80": "#654cf5",
+      "note": "A theme is built from ONE 16-step brand ramp (keys 10,20,...,160) via createLightTheme(brand) / createDarkTheme(brand). Light uses brand 80 as rest, 70 hover, 40 pressed (button), 60 selected; dark swaps to 70 rest, 80 hover, 40 pressed for filled brand backgrounds and 100/110 for brand text. Note: comments in generated alias files still show the legacy #0078d4 for brand 80; the current brandWeb ramp has brand 80 = #0f6cbd."
+    },
+    "semantic": {
+      "danger": {
+        "name": "cranberry",
+        "primary": "#c50f1f",
+        "bg1": "#fdf3f4",
+        "fg1": "#b10e1c"
+      },
+      "success": {
+        "name": "green",
+        "primary": "#107c10",
+        "bg1": "#f1faf1",
+        "fg1": "#0e700e"
+      },
+      "warning": {
+        "name": "orange",
+        "primary": "#f7630c",
+        "bg1": "#fff9f5",
+        "fg1": "#de590b"
+      },
+      "statusPaletteNames": [
+        "red",
+        "green",
+        "darkOrange",
+        "yellow",
+        "berry",
+        "lightGreen",
+        "marigold"
+      ],
+      "statusPaletteRedPrimary": "#d13438",
+      "statusPaletteYellowPrimary": "#fde300",
+      "personaPaletteCount": 28,
+      "personaPaletteNote": "28 persona colours (darkRed ... anchor) each ship Background2/Foreground2/BorderActive tokens; status colours ship Background1-3, Foreground1-3, Border1-2, BorderActive. Every colour ramp has 12 stops: shade50..shade10 (5), primary, tint10..tint60 (6)."
+    },
+    "darkMode": "Separate generated alias set (darkColor.ts), not an inversion of light: Background1 #292929 (grey16), Background2 #1f1f1f, Background3 #141414, Background4 #0a0a0a, Background5 #000, card #333333; Foreground1 #fff, Foreground2 grey84 #d6d6d6, Foreground3 grey68 #adadad; stroke1 grey40 #666666, stroke2 grey32 #525252; brand filled bg uses brand70 hover brand80; brand text/link uses brand100/110; shadows double in opacity (ambient 0.24, key 0.28 vs 0.12/0.14 light); scrim 0.5 vs 0.4. A third theme, high contrast, maps every token to CSS system colours (Canvas, ButtonText, Highlight, GrayText) and components add forced-colors rules. Shared (status/persona) colours shift saturation and brightness in dark.",
+    "contrastNotes": "Computed 2026-10-08: foreground1 #242424 on white 15.5:1; fg2 #424242 10.1:1; fg3 #616161 6.2:1; fg4 #707070 4.95:1 (smallest passing text step); brand80 #0f6cbd on white 5.38:1 and white on brand80 5.38:1; default stroke1 #d1d1d1 is only 1.53:1 against white so Fluent adds colorNeutralStrokeAccessible (#616161, 6.19:1) and uses it for the input bottom border and checkbox/radio outlines; disabled foreground #bdbdbd 1.88:1 (exempt). Docs: 4.5:1 text, 3:1 large text (>=18.5px bold or 24px) and non-text; focus indicator is a two-colour stroke (Focus1 white + Focus2 black) so it works on any surface."
+  },
+  "spacing": {
+    "base": "4px (design page: 'base unit is 4px'; 2, 6, 10 exist only to fit icon padding)",
+    "scale": [
+      0,
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      16,
+      20,
+      24,
+      32,
+      36,
+      40,
+      48,
+      52,
+      56
+    ]
+  },
+  "radius": {
+    "scale": [
+      0,
+      2,
+      4,
+      6,
+      8,
+      12,
+      16,
+      24,
+      32,
+      40,
+      10000
+    ],
+    "rule": "Code tokens: None 0, Small 2, Medium 4 (default for buttons, inputs, tooltips, menus), Large 6, XLarge 8 (dialogs), 2XL 12, 3XL 16, 4XL 24, 5XL 32, 6XL 40, Circular 10000. The design page lists Large=8 and X-Large=12 (differs from code by one step): code wins for implementation. Rule from docs: shapes under 32px use 2px; rectangles default 4px; no rounding on edge-to-edge surfaces (nav bars, tab bars) or between joined parts (split button); pills for slider tracks / toggles / tags; circle for people; beak for callouts. Card radius follows size: small 2, medium 4, large 6."
+  },
+  "depth": {
+    "shadows": [
+      "shadow2: 0 0 2px ambient, 0 1px 2px key",
+      "shadow4: 0 0 2px ambient, 0 2px 4px key",
+      "shadow8: 0 0 2px ambient, 0 4px 8px key",
+      "shadow16: 0 0 2px ambient, 0 8px 16px key",
+      "shadow28: 0 0 8px ambient, 0 14px 28px key",
+      "shadow64: 0 0 8px ambient, 0 32px 64px key",
+      "light ambient rgba(0,0,0,.12) key rgba(0,0,0,.14); Lighter .06/.07; Darker .20/.24",
+      "dark ambient .24 key .28; Lighter .12/.14; Darker .40/.48",
+      "brand shadows ambient .30 key .25 for coloured surfaces (never use the neutral ramp on colour)"
+    ],
+    "borders": "1px solid colorNeutralStroke1 (#d1d1d1 light) is the default control border; strokeWidthThin 1, Thick 2, Thicker 3, Thickest 4. Cards at rest use shadow2 plus a 1px stroke; hover lifts to shadow4/shadow8. Dialog surface radius 8px, shadow64, 24px padding, max-width 600px. Menu popover shadow16, radius 4, padding 4. Tooltip uses filter drop-shadow 0 0 2px ambient + 0 4px 8px key. Focus is drawn as a 2px stroke Focus2 (black) with a 1px inset ring, not as a glow.",
+    "blur": "Materials: Solid (default), Acrylic (semi-transparent frosted, only for transient light-dismiss surfaces such as menus and popovers), Mica (opaque, desktop-tinted, window base on Windows), Smoke (translucent black scrim behind modals; BlackAlpha 40% light, 50% dark). Numeric blur and tint values are not published on the design site (they defer to Windows material docs): unknown."
+  },
+  "motion": {
+    "durationsMs": [
+      50,
+      100,
+      150,
+      200,
+      250,
+      300,
+      400,
+      500
+    ],
+    "easings": [
+      "curveAccelerateMax cubic-bezier(0.9,0.1,1,0.2)",
+      "curveAccelerateMid cubic-bezier(1,0,1,1)",
+      "curveAccelerateMin cubic-bezier(0.8,0,0.78,1)",
+      "curveDecelerateMax cubic-bezier(0.1,0.9,0.2,1)",
+      "curveDecelerateMid cubic-bezier(0,0,0,1)",
+      "curveDecelerateMin cubic-bezier(0.33,0,0.1,1)",
+      "curveEasyEaseMax cubic-bezier(0.8,0,0.2,1)",
+      "curveEasyEase cubic-bezier(0.33,0,0.67,1)",
+      "curveLinear cubic-bezier(0,0,1,1)"
+    ],
+    "notes": "Duration tokens: UltraFast 50, Faster 100, Fast 150, Normal 200, Gentle 250, Slow 300, Slower 400, UltraSlow 500. Button colour/border transitions use Faster (100ms) + curveEasyEase; Switch uses Normal (200ms) + EasyEase; every transition drops to 0.01ms under prefers-reduced-motion. Enter = decelerate curves, exit = accelerate curves. Patterns on the design site: enter/exit, elevation, top-level (quick fade, do not slide big surfaces), container transform; staggering preferred over simultaneous. react-motion-components-preview ships Fade, Scale, Slide, Collapse, Blur, Rotate, Stagger each with Snappy/Relaxed variants."
+  },
+  "density": {
+    "modes": [
+      "small",
+      "medium (default)",
+      "large"
+    ],
+    "controlHeightsPx": {
+      "small": 24,
+      "medium": 32,
+      "large": 40,
+      "input.small": 24,
+      "input.medium": 32,
+      "input.large": 40,
+      "button.small": 24,
+      "button.medium": 32,
+      "button.large": 40,
+      "switch.track.small": "32x16",
+      "switch.track.medium": "40x20",
+      "checkbox.indicator.medium": 16,
+      "checkbox.indicator.large": 20,
+      "badge.tiny": 6,
+      "badge.extra-small": 10,
+      "badge.small": 16,
+      "badge.medium": 20,
+      "badge.large": 24,
+      "badge.extra-large": 32,
+      "card.padding.small": 8,
+      "card.padding.medium": 12,
+      "card.padding.large": 16,
+      "minTouchTargetWeb": 44,
+      "minTouchTargetAndroid": 48
+    }
+  },
+  "components": {
+    "count": 47,
+    "list": [
+      "accordion",
+      "avatar",
+      "badge",
+      "breadcrumb",
+      "button (secondary, primary, outline, subtle, transparent; rounded, circular, square; small, medium, large; icon-only)",
+      "card",
+      "carousel",
+      "checkbox",
+      "color-picker",
+      "combobox",
+      "dialog",
+      "divider",
+      "drawer",
+      "field",
+      "image",
+      "infolabel",
+      "input",
+      "label",
+      "link",
+      "list",
+      "menu",
+      "message-bar",
+      "nav",
+      "persona",
+      "popover",
+      "progress-bar",
+      "radio",
+      "rating",
+      "search-box",
+      "select",
+      "skeleton",
+      "slider",
+      "spin-button",
+      "spinner",
+      "swatch-picker",
+      "switch",
+      "table",
+      "tabs",
+      "tag-picker",
+      "tags",
+      "teaching-popover",
+      "text",
+      "textarea",
+      "toast",
+      "toolbar",
+      "tooltip",
+      "tree",
+      "(preview/compat) calendar, date-picker, time-picker, motion components"
+    ],
+    "stateMatrixCompleteness": "Very complete at token level: every interactive foreground/background/stroke has Rest, Hover, Pressed, Selected variants plus Disabled; brand-compound variants for checkable controls; Inverted and Static variants for use on colour; subtle (transparent) variant family for toolbar-like controls. Component code implements default, hover, active (hover:active), focus-visible (custom focus indicator via tabster), disabled and forced-colors for button, input, checkbox, switch, tabs, card (interactive card has hover/pressed/selected/disabled). Size matrix is 3 sizes x appearances. Error/validation lives in Field (validationState). Count is of stable packages in packages/react-components as of master (approximate: counted by package directory, previews excluded)."
+  },
+  "tokenArchitecture": "Three layers. (1) Global tokens: raw palette (grey 2..99, brand 10..160, 28 persona + 7 status ramps of 13 stops, alpha ramps) and primitive scales (fontSizeBase100.., spacing, borderRadius, strokeWidth, duration, curve). (2) Alias tokens: 184 semantic colour tokens (counted in lightColor.ts and darkColor.ts) named color{Neutral|Brand|CompoundBrand|Subtle|Transparent|Palette|Status}{Foreground|Background|Stroke}{n}{Hover|Pressed|Selected|Disabled} plus shadow2..64 and typography styles; generated by a token pipeline ('DO NOT EDIT' files lightColor.ts / darkColor.ts / highContrastColor.ts). (3) Component styles (Griffel makeStyles/makeResetStyles) consume only alias tokens as CSS variables on FluentProvider. A theme object = createLightTheme(brandRamp) / createDarkTheme(brandRamp); swapping the 16-hex brand ramp rebrands everything. Numbered suffixes (Foreground1/2/3, Background1..8, Stroke1..4) are ranked by prominence, not by lightness.",
+  "distinctiveness": "The numbered neutral ladders (Background1-8, Foreground1-4, Stroke1-4) with Hover/Pressed/Selected siblings; 14px/20px body with semibold (not bold) headings in Segoe UI; 4px default radius, 8px dialogs; hairline strokes plus two-layer ambient+key shadows with the blur number in the token name; Smoke/Acrylic/Mica material vocabulary; one 16-step brand ramp per product; strong forced-colors story. Reads as 'Office/Teams/Azure': flat, neutral, rectangular.",
+  "weaknesses": [
+    "Default stroke #d1d1d1 is 1.53:1; reliance on the Accessible stroke tokens must be enforced by hand",
+    "docs and code disagree (Subtitle1 line-height 26 vs 28; radius Large 8 vs 6) and generated files still comment old brand hex",
+    "body default 14px is below the 16px web norm and display tops at 68px: weak for marketing/editorial",
+    "Segoe UI cannot be shipped, so metrics drift on non-Windows systems",
+    "very large token surface (hundreds of colour aliases) for little visual variety; the system is not designed to carry a distinctive brand",
+    "design-site motion page gives no numbers; real values live only in code"
+  ],
+  "takeaways": [
+    "Name shadows by blur radius and build each from an ambient + key pair, with a documented darker/lighter pair for dark mode and a separate brand shadow for coloured surfaces",
+    "Ship Rest/Hover/Pressed/Selected/Disabled as a fixed state vector for every colour role, so no component invents a state colour",
+    "Provide an 'accessible stroke' token distinct from the decorative stroke; decorative borders may be low-contrast but control boundaries must be >=3:1",
+    "Derive a whole light/dark/high-contrast theme from one 16-step brand ramp; the ramp index (80 rest, 70 hover, 40 pressed) is the contract",
+    "Use a single 3-size control ladder (24/32/40) with one radius (4px) so mixed components always align on a baseline grid",
+    "Respect reduced motion at the token level (0.01ms) rather than per animation",
+    "Focus ring as two contrasting strokes (white + black) that works on any background"
+  ]
+}

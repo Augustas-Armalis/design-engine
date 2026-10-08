@@ -1,0 +1,161 @@
+{
+  "name": "HeroUI (formerly NextUI), v3 current + v2 legacy plugin",
+  "slug": "heroui",
+  "vendor": "HeroUI Inc. (formerly NextUI)",
+  "url": "https://www.heroui.com",
+  "licence": "Apache-2.0 (github.com/heroui-inc/heroui). Studied v3 @heroui/styles 3.2.6 at commit 83b92df (2026-10-08) and the v2 branch (@heroui/theme 2.4.9 tag line, plugin.ts, default-layout.ts, colors/*.ts).",
+  "studiedOn": "2026-10-08",
+  "personality": ["soft", "pill-rounded", "airy", "app-like", "modern-neutral"],
+  "bestFor": [
+    "consumer-facing SaaS dashboards, settings and onboarding flows where a soft, rounded, friendly look is wanted",
+    "projects already on Tailwind CSS v4 + React 19 + React Aria that want accessible components with CSS-variable theming",
+    "teams that want to retheme with 5-10 CSS variables (accent, radius, surface, background) via the Theme Builder"
+  ],
+  "avoidFor": [
+    "dense data-heavy admin UIs (large radii, 36-44px controls, generous padding)",
+    "editorial or high-contrast brutalist brands (default is soft pill radii and low-chroma greys)",
+    "non-React stacks, although the CSS layer is usable with plain HTML via BEM classes"
+  ],
+  "typography": {
+    "families": [
+      "v3: no font defined by the theme; inherits Tailwind v4 defaults (sans: ui-sans-serif, system-ui, sans-serif, emoji stack; mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace). Kbd sets font-sans explicitly.",
+      "v2: the plugin theme object defines fontSize and lineHeight layout tokens only; no font family is set (unknown which font the v2 docs use)"
+    ],
+    "scale": [
+      {"role": "caption / description / field-error / chip / kbd-xs", "sizePx": 12, "lineHeightPx": 16, "weight": 400, "trackingEm": 0},
+      {"role": "button / label / tab / select (default control text)", "sizePx": 14, "lineHeightPx": 20, "weight": 500, "trackingEm": 0},
+      {"role": "input (mobile) / button lg / body", "sizePx": 16, "lineHeightPx": 24, "weight": 400, "trackingEm": 0},
+      {"role": "prose p / li", "sizePx": 16, "lineHeightPx": 28, "weight": 400, "trackingEm": 0},
+      {"role": "prose h6", "sizePx": 16, "lineHeightPx": 24, "weight": 600, "trackingEm": -0.025},
+      {"role": "prose h5", "sizePx": 18, "lineHeightPx": 28, "weight": 600, "trackingEm": -0.025},
+      {"role": "prose h4", "sizePx": 20, "lineHeightPx": 28, "weight": 600, "trackingEm": -0.025},
+      {"role": "prose h3", "sizePx": 24, "lineHeightPx": 32, "weight": 600, "trackingEm": -0.025},
+      {"role": "prose h2", "sizePx": 30, "lineHeightPx": 36, "weight": 600, "trackingEm": -0.025},
+      {"role": "prose h1", "sizePx": 36, "lineHeightPx": 40, "weight": 600, "trackingEm": -0.025},
+      {"role": "card title", "sizePx": 14, "lineHeightPx": 24, "weight": 500, "trackingEm": 0},
+      {"role": "badge sm / md / lg", "sizePx": "10 / 12 / 14", "lineHeightPx": "13.4 / 16.1 / 20", "weight": 500, "trackingEm": 0}
+    ],
+    "notes": "v3 has no type scale of its own; sizes come from Tailwind v4 text-xs..text-4xl (line-heights 16/20/24/28/28/32/36/40 px). Component text is almost always text-sm font-medium (14px/500); inputs are text-base (16px) below the sm breakpoint and text-sm from sm up (prevents iOS zoom). Only the optional .typography-prose class defines headings: semibold with tracking-tight (-0.025em) at every level. v2 layout tokens: fontSize tiny 0.75rem, small 0.875rem, medium 1rem, large 1.125rem; lineHeight tiny 1rem, small 1.25rem, medium 1.5rem, large 1.75rem. No weight or tracking tokens in either version."
+  },
+  "color": {
+    "model": "oklch",
+    "neutrals": {
+      "note": "v3 neutrals are zinc-like: hue 286, chroma 0.001-0.015. Hex values below are this study's oklch->sRGB conversions (approximate, +/-1).",
+      "light": {
+        "background": "oklch(0.9702 0 0) ~#f5f5f5", "foreground / eclipse": "oklch(0.2103 0.0059 285.89) ~#18181b",
+        "surface": "oklch(100% 0 0) white", "surface-secondary": "oklch(0.9524 0.0013 286.37)", "surface-tertiary": "oklch(0.9373 0.0013 286.37)",
+        "overlay": "white", "field-background": "white", "default": "oklch(94% 0.001 286.375) ~#ebebec", "muted": "oklch(0.5517 0.0138 285.94) ~#71717a",
+        "border": "oklch(90% 0.004 286.32) ~#dedee0", "separator": "oklch(92% 0.004 286.32)", "snow": "oklch(0.9911 0 0) ~#fcfcfc", "backdrop": "rgba(0,0,0,0.5)"
+      },
+      "dark": {
+        "background": "oklch(12% 0.005 285.823) ~#060607", "foreground": "snow", "surface": "oklch(0.2103 0.0059 285.89) ~#18181b",
+        "surface-secondary": "oklch(0.257 0.0037 286.14)", "surface-tertiary": "oklch(0.2721 0.0024 247.91)", "overlay": "oklch(0.2103 0.0059 285.89)",
+        "default": "oklch(27.4% 0.006 286.033) ~#27272a", "muted": "oklch(70.5% 0.015 286.067) ~#9f9fa9", "border": "oklch(28% 0.006 286.033)",
+        "separator": "oklch(25% 0.006 286.033)", "segment": "oklch(0.3964 0.01 285.93)", "backdrop": "rgba(0,0,0,0.6)"
+      }
+    },
+    "accents": {
+      "note": "v3 has no numbered ramps: ONE value per role (accent, success, warning, danger) and everything else is derived with color-mix. v2 had 9-step ramps (below).",
+      "v3 accent": "oklch(0.6204 0.195 253.83) ~#0485f7 (foreground snow)",
+      "v3 success": "oklch(0.7329 0.1935 150.81) ~#17c964 (foreground eclipse)",
+      "v3 warning": "light oklch(0.7819 0.1585 72.33) ~#f5a524, dark oklch(0.8203 0.1388 76.34) (foreground eclipse)",
+      "v3 danger": "light oklch(0.6532 0.2328 25.74) ~#ff383c, dark oklch(0.594 0.1967 24.63) (foreground snow)",
+      "v2 blue (primary 500 = #006FEE)": ["#e6f1fe", "#cce3fd", "#99c7fb", "#66aaf9", "#338ef7", "#006FEE", "#005bc4", "#004493", "#002e62", "#001731"],
+      "v2 purple (secondary 500 = #7828c8)": ["#f2eafa", "#e4d4f4", "#c9a9e9", "#ae7ede", "#9353d3", "#7828c8", "#6020a0", "#481878", "#301050", "#180828"],
+      "v2 green (success 500 = #17c964)": ["#e8faf0", "#d1f4e0", "#a2e9c1", "#74dfa2", "#45d483", "#17c964", "#12a150", "#0e793c", "#095028", "#052814"],
+      "v2 yellow (warning 500 = #f5a524)": ["#fefce8", "#fdedd3", "#fbdba7", "#f9c97c", "#f7b750", "#f5a524", "#c4841d", "#936316", "#62420e", "#312107"],
+      "v2 red (danger 500 = #f31260)": ["#fee7ef", "#fdd0df", "#faa0bf", "#f871a0", "#f54180", "#f31260", "#c20e4d", "#920b3a", "#610726", "#310413"],
+      "v2 pink": ["#ffedfa", "#ffdcf5", "#ffb8eb", "#ff95e1", "#ff71d7", "#ff4ecd", "#cc3ea4", "#992f7b", "#661f52", "#331029"],
+      "v2 cyan": ["#F0FCFF", "#E6FAFE", "#D7F8FE", "#C3F4FD", "#A5EEFD", "#7EE7FC", "#06B7DB", "#09AACD", "#0E8AAA", "#053B48"],
+      "v2 zinc (default)": ["#fafafa", "#f4f4f5", "#e4e4e7", "#d4d4d8", "#a1a1aa", "#71717a", "#52525b", "#3f3f46", "#27272a", "#18181b"]
+    },
+    "semantic": {
+      "v3 role contract (each of accent, success, warning, danger, default)": {
+        "base": "--accent", "foreground": "--accent-foreground", "hover": "color-mix(in oklab, accent 90%, accent-foreground 10%)",
+        "soft": "color-mix(in oklab, accent 15% (dark 12%), transparent)", "soft-hover": "accent 20% (dark 16%) transparent",
+        "soft-foreground": "color-mix(in oklab, accent 70% (dark 80%), foreground 30%)"
+      },
+      "v3 field tokens": ["--field-background (white | surface dark)", "--field-foreground", "--field-placeholder (= muted)", "--field-border (transparent by default; --field-border-width 0)", "--field-hover (90% field-bg + 2% field-fg)", "--field-focus", "--field-border-hover (88/10 mix)", "--field-border-focus (74/22 mix)", "--field-radius = radius x 1.5"],
+      "v3 surfaces": ["background, background-secondary (96/4 mix), background-tertiary (92/8), background-inverse", "surface (cards, accordions), overlay (tooltips, popovers, modals, menus)", "separator, separator-secondary (85/15 of surface/fg), separator-tertiary (81/19), border-secondary (78/22), border-tertiary (66/34)", "focus = accent, link = foreground, segment (selected tab pill)"],
+      "v2": "background #FFFFFF | #000000; foreground #11181C | #ECEDEE; divider rgba(17,17,17,.15) | rgba(255,255,255,.15); focus #006FEE; overlay #000; content1-4 layers (light: #FFFFFF, zinc100, zinc200, zinc300; dark: zinc900, 800, 700, 600) each with a foreground"
+    },
+    "darkMode": "v3: class or data-theme (.dark / [data-theme=dark]) re-declares the same variable names; derived colours (hover, soft, borders) are color-mix expressions that recompute automatically. Surface logic differs per mode: light cards cast a 3-layer shadow and sit on a grey page (#f5f5f5) as white; dark cards get no shadow (0 0 0 0 transparent inset) and overlay shadow becomes a 1px inset light edge (rgba(255,255,255,.3)). Soft tint opacity drops from 15% to 12% and soft-foreground mixes shift for dark. Optional data-vibrant-palette=true raises soft-foreground saturation (92/8 mix). v2: separate light and dark colour objects; dark swaps each 50-900 ramp (swapColorValues reverses it) and picks foreground via readableColor from color2k; opacity-based hover (0.8 light / 0.9 dark).",
+    "contrastNotes": "Measured on this study's hex conversions (+/-0.05): v3 accent vs snow foreground 3.59:1 and danger vs snow 3.48:1 (both below 4.5:1 for 14px/500 labels), success vs eclipse 8.08:1 and warning vs eclipse 8.68:1 (dark foregrounds on the lighter fills), muted on page background 4.43:1 (just under 4.5) and on white 4.83:1, dark muted on dark background 7.72:1. v2: primary #006FEE vs white 4.66:1; success #17c964 vs black 9.58:1; warning #f5a524 vs black 10.29:1. Soft chips use accent-soft-foreground = accent mixed 70% with the foreground, which pushes contrast above the plain accent. Disabled is opacity 0.5 on everything (not a contrast-checked colour)."
+  },
+  "spacing": {
+    "base": "0.25rem (4px) via Tailwind v4 --spacing: 0.25rem; Tailwind numeric utilities (p-4 = 16px). v2 adds no spacing tokens.",
+    "scale": [
+      {"token": "0.5", "px": 2}, {"token": "1", "px": 4}, {"token": "2", "px": 8}, {"token": "3", "px": 12}, {"token": "4", "px": 16}, {"token": "5", "px": 20}, {"token": "6", "px": 24}, {"token": "8", "px": 32}, {"token": "10", "px": 40}, {"token": "12", "px": 48}
+    ]
+  },
+  "radius": {
+    "scale": [
+      {"token": "xs", "px": 2}, {"token": "sm", "px": 4}, {"token": "md", "px": 6}, {"token": "lg", "px": 8}, {"token": "xl", "px": 12}, {"token": "2xl", "px": 16}, {"token": "3xl", "px": 24}, {"token": "4xl", "px": 32},
+      {"token": "field", "px": 12}
+    ],
+    "rule": "v3: a single base --radius: 0.5rem (8px); every radius token is a multiple (xs 0.25x, sm 0.5x, md 0.75x, lg 1x, xl 1.5x, 2xl 2x, 3xl 3x, 4xl 4x) and --radius-field = 1.5x. Changing --radius rescales the whole system. Defaults are large: Button rounded-3xl (24px, full pill at 36-44px heights), Tabs and tab indicator rounded-3xl, Chip rounded-2xl (16px), Card min(32px, radius-3xl = 24px), Input/Select rounded-field (12px), Checkbox rounded-md (6px), Badge 24px (md), 16px (lg), 12px (sm). v2: radius small 8px, medium 12px, large 14px."
+  },
+  "depth": {
+    "shadows": [
+      "v3 surface (light): 0 2px 4px 0 rgba(0,0,0,.04), 0 1px 2px 0 rgba(0,0,0,.06), 0 0 1px 0 rgba(0,0,0,.06); dark: none",
+      "v3 overlay (light): 0 2px 8px 0 rgba(0,0,0,.06), 0 -6px 12px 0 rgba(0,0,0,.03), 0 14px 28px 0 rgba(0,0,0,.08); dark: 0 0 1px 0 rgba(255,255,255,.3) inset",
+      "v3 field (light): same as surface; dark: transparent inset (so ring utilities work)",
+      "v2 small: 0 0 5px 0 rgb(0 0 0/.02), 0 2px 10px 0 rgb(0 0 0/.06), 0 0 1px 0 rgb(0 0 0/.3)",
+      "v2 medium: 0 0 15px 0 rgb(0 0 0/.03), 0 2px 30px 0 rgb(0 0 0/.08), 0 0 1px 0 rgb(0 0 0/.3)",
+      "v2 large: 0 0 30px 0 rgb(0 0 0/.04), 0 30px 60px 0 rgb(0 0 0/.12), 0 0 1px 0 rgb(0 0 0/.3)",
+      "v2 dark: same recipes with inset 0 0 1px 0 rgb(255 255 255/.15) edge"
+    ],
+    "borders": "v3: --border-width 1px; --field-border-width 0px (form fields are borderless by default and rely on a tinted fill plus soft shadow; border appears on hover/focus via color-mix). Outline button 1px solid --border. v2: border widths small 1px, medium 2px, large 3px, divider weight 1px.",
+    "blur": "No blur tokens. Backdrops are flat rgba (0.5 light, 0.6 dark). Skeleton shimmer and Button loading are the only motion-blur-like effects."
+  },
+  "motion": {
+    "durationsMs": [50, 100, 150, 200, 250, 300, 350],
+    "easings": ["--ease-smooth: ease", "--ease-out: (Tailwind default cubic-bezier(0,0,0.2,1))", "--ease-out-quart: cubic-bezier(0.165,0.84,0.44,1)", "--ease-out-fluid: cubic-bezier(0.32,0.72,0,1)", "--ease-out-quint: cubic-bezier(0.23,1,0.32,1)", "full Penner-style set (in/out/in-out x quad, cubic, quart, quint, expo, circ)", "v2: soft-spring cubic-bezier(0.155,1.105,0.295,1.12)"],
+    "notes": "Frequency of literals across component CSS: 150ms x95, 100ms x33, 250ms x23, 200ms x21, 300ms x4, 350ms x3. Button: transform 250ms ease, background 100ms ease-out, box-shadow 100ms; pressed state scale(0.97) (md), 0.98 (sm), 0.96 (lg). Inputs: 150ms ease for background/border, 150ms ease-out for shadow. Tabs indicator slides translate/width/height over 250ms. Tooltip opens after 1500ms delay and closes after 500ms (variables --tooltip-delay, --tooltip-close-delay). Every transition is followed by motion-reduce:transition-none, and the custom motion-reduce variant honours data-reduce-motion=true before prefers-reduced-motion (reduced motion is built in). v3 replaced v2's Framer Motion with CSS + GPU transforms. :hover styles are wrapped in @media (hover:hover)."
+  },
+  "density": {
+    "modes": ["size prop sm | md | lg", "touch-vs-pointer responsive height (controls are 4px taller below the md breakpoint)"],
+    "controlHeightsPx": {
+      "Button sm (mobile / md+)": "36 / 32",
+      "Button md default (mobile / md+)": "40 / 36",
+      "Button lg (mobile / md+)": "44 / 40",
+      "Button icon-only widths": "same as heights",
+      "button padding-x": "px-4 (16px) md; px-3 (12px) sm; lg keeps md padding",
+      "Input / TextField height": "derived: py-2 (8+8) + line-height; 36 (text-sm 20px line) from sm breakpoint, 40 below (text-base 24px)",
+      "Select min-height": 36,
+      "Tab height": 32,
+      "Chip (sm, md, lg)": "py-0 / py-0.5 / py-1 around 16-20px line, text 12 / 12 / 14",
+      "Badge min size (sm, md, lg)": [16, 28, 32],
+      "Kbd height": 24,
+      "Card padding": 16,
+      "Switch width (sm, md, lg)": [32, 40, 48]
+    }
+  },
+  "components": {
+    "count": 85,
+    "list": ["Accordion", "Alert", "AlertDialog", "Autocomplete", "Avatar", "AvatarGroup", "Badge", "Breadcrumbs", "Button", "ButtonGroup", "Calendar", "CalendarYearPicker", "Card", "Checkbox", "CheckboxGroup", "Chip", "CloseButton", "ColorArea", "ColorField", "ColorInputGroup", "ColorPicker", "ColorSlider", "ColorSwatch", "ColorSwatchPicker", "ComboBox", "DateField", "DateInputGroup", "DatePicker", "DateRangePicker", "Description", "Disclosure", "DisclosureGroup", "Drawer", "Dropdown", "EmptyState", "ErrorMessage", "FieldError", "Fieldset", "Form", "Header", "Input", "InputGroup", "InputOTP", "Kbd", "Label", "Link", "ListBox", "Menu", "Meter", "Modal", "NumberField", "Pagination", "Popover", "ProgressBar", "ProgressCircle", "Radio", "RadioGroup", "RangeCalendar", "ScrollShadow", "SearchField", "Select", "Separator", "Skeleton", "Slider", "Spinner", "Surface", "Switch", "SwitchGroup", "Table", "Tabs", "Tag", "TagGroup", "Textarea", "TextField", "TimeField", "Toast", "ToggleButton", "ToggleButtonGroup", "Toolbar", "Tooltip", "Typography"],
+    "stateMatrixCompleteness": "Strong, uniform state model through Tailwind utilities + data attributes. Button variants (semantic hierarchy): primary, secondary, tertiary, ghost, outline, danger, danger-soft; sizes sm, md, lg (+ icon-only, full-width); states: hover (only @media hover:hover, via --button-bg-hover), pressed (scale .96-.98 plus --button-bg-pressed), focus-visible (ring 2px focus colour with 2px background-coloured offset), disabled (opacity .5, cursor not-allowed, pointer-events none), pending (pointer-events none). Chip: variants primary, secondary, tertiary x colours accent, success, warning, danger, default x soft modifier x sizes sm, md, lg. Inputs: variants primary, secondary; states hover, focus (ring 2px with 0 offset), invalid (1px danger outline then 2px ring on focus), disabled. All behaviour hooks are React Aria data attributes (data-hovered, data-pressed, data-focused, data-focus-visible, data-disabled, data-invalid, data-pending). Compound variants are written as joined class selectors (.chip--primary.chip--accent). Missing: no explicit loading-state spec for Input, no density modes."
+  },
+  "tokenArchitecture": "v3 (current): pure CSS on Tailwind v4. Cascade layers `theme, base, components, utilities`. Primitive colours (--white, --black, --snow, --eclipse) -> role colours (--background, --foreground, --surface, --overlay, --accent, --success, --warning, --danger, --default, --muted, --border, --separator, --focus, --link, --segment, --field-*) -> calculated colours via color-mix (hover, soft, secondary/tertiary levels) -> @theme inline mapping to Tailwind tokens (--color-accent etc., --radius-*, --shadow-surface/overlay/field, --ease-*). Naming rule: no suffix = background, -foreground = text on it, -hover, -soft, -soft-foreground, -soft-hover. Component styling uses BEM classes (.button, .button--primary, .card__header, .chip--primary.chip--accent) that only set component-scoped custom properties (--button-bg, --button-bg-hover, --button-fg, --chip-bg ...); utilities status-focused, status-disabled, status-invalid-field, touch-target provide shared state. Styles are separate from logic (@heroui/styles vs @heroui/react) so plain HTML can use the classes. Themes are CSS blocks keyed by [data-theme=name]; the Theme Builder exports CSS. v2 (legacy): a Tailwind plugin `heroui({themes:{light:{colors,layout},dark:{...}}, defaultTheme, defaultExtendTheme})` generating HSL-channel CSS variables `--heroui-{color}-{shade}` and layout variables `--heroui-radius-small`, `--heroui-box-shadow-medium`, `--heroui-hover-opacity`, `--heroui-disabled-opacity`, `--heroui-divider-weight`; colours are a semantic object (default, primary, secondary, success, warning, danger, each 50-900 + DEFAULT + foreground) with content1-4, background, foreground, divider, focus, overlay; variants via tailwind-variants (visual names such as solid, bordered, flat per the v3 migration comparison table; full list not re-verified in this pass).",
+  "distinctiveness": "Soft, rounded, 'app-store' look: pill buttons and tabs (24px radius), borderless filled form fields on a light-grey (#f5f5f5) page with white cards, very light diffused shadows, zinc greys, a single clear blue accent, and press-scale feedback on buttons. The recognisable system idea is semantic intent (primary / secondary / tertiary) replacing visual names, and a minimal colour model: one value per role with all hover/soft/border states derived by color-mix.",
+  "weaknesses": [
+    "Accent (3.59:1) and danger (3.48:1) with their snow foreground fall below 4.5:1 for 14px/500 labels; muted text is 4.43:1 on the default page background",
+    "No type scale, no font, no weight tokens: typography is inherited from Tailwind defaults",
+    "Pill radii and 36-44px controls reduce density; not suited to data-dense UIs",
+    "Tooltip delay of 1500ms feels slow for power users",
+    "Disabled via opacity 0.5 only (no separate disabled colours), hover only on hover-capable devices (good) but no pressed-state colour distinct from hover (pressed = hover colour + scale)",
+    "v3 is young and v2 (hex/HSL ramps, content1-4, plugin) is a different system; ecosystem docs and examples mix both",
+    "Tint ramps (50-900) were removed in v3, so arbitrary tinted surfaces must be built with color-mix"
+  ],
+  "takeaways": [
+    "Name variants by semantic intent and usage limits (primary: one per context; secondary: several; tertiary: dismissive; danger: destructive) instead of by visual style.",
+    "Define one value per colour role and DERIVE hover, soft backgrounds, soft foregrounds and border levels with color-mix in oklab; changing --accent re-themes everything.",
+    "Use a clear suffix grammar for colour tokens: base = background, -foreground = text on it, -hover, -soft, -soft-foreground.",
+    "Separate surface (in-flow containers) from overlay (floating layers) tokens, each with its own foreground and its own shadow; remove surface shadow in dark mode and use a 1px inset light edge on overlays.",
+    "Drive the entire radius scale from one base value with multipliers, plus a distinct field radius (1.5x) so inputs can differ from cards.",
+    "Make form fields borderless-by-default with a --field-border-width token and derive hover/focus border colours by mixing toward the field foreground (88/10 hover, 74/22 focus).",
+    "Make touch targets 4px taller under the md breakpoint (36/40/44 vs 32/36/40) and keep hover styles inside @media (hover:hover).",
+    "Treat reduced motion as a built-in variant (data-reduce-motion first, prefers-reduced-motion fallback), with motion-reduce placed after transition for specificity.",
+    "Press feedback scales with control size (0.98 / 0.97 / 0.96), a small rule that makes bigger buttons feel equally weighty."
+  ]
+}

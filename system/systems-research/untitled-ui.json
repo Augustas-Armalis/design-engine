@@ -1,0 +1,511 @@
+{
+ "name": "Untitled UI (React + Figma)",
+ "slug": "untitled-ui",
+ "vendor": "Untitled UI (Jordan Hughes)",
+ "url": "https://www.untitledui.com/react/docs/introduction",
+ "licence": "React base components: MIT (github.com/untitleduico/react LICENSE, Copyright 2025 Untitled UI); PRO components, Figma kit PRO and marketing/dashboard templates are paid, one-time licence with no redistribution or resale. This study uses only the public docs (llms.txt, AGENT.md, theming/dark-mode/typography .md), the MIT repo files theme.css/globals.css/typography.css/button.tsx/input.tsx and the Tailwind v4 default theme. No PRO content was read.",
+ "studiedOn": "2026-10-08",
+ "personality": [
+  "clean",
+  "friendly-corporate",
+  "soft-shadowed",
+  "purple-led",
+  "polished",
+  "Inter-driven"
+ ],
+ "bestFor": [
+  "B2B SaaS marketing sites and dashboards",
+  "teams who want Figma and React in lockstep with identical names",
+  "fast brand re-skin by swapping one 11-step brand ramp",
+  "AI-coding workflows (AGENT.md, per-page .md, MCP, CLI)"
+ ],
+ "avoidFor": [
+  "distinctive or editorial brands (the Untitled look is extremely common)",
+  "anything needing a non-Inter type voice without redoing the scale",
+  "projects that cannot pay for PRO sections (most marketing/app patterns are PRO)"
+ ],
+ "typography": {
+  "families": [
+   "Inter via --font-inter fallback -apple-system, 'Segoe UI', Roboto, Arial, sans-serif (both --font-body and --font-display)",
+   "mono: ui-monospace, 'Roboto Mono', SFMono-Regular, Menlo, Monaco, Consolas"
+  ],
+  "scale": [
+   {
+    "role": "text-xs",
+    "sizePx": 12,
+    "lineHeightPx": 18,
+    "weight": "400/500/600 by context",
+    "trackingEm": 0
+   },
+   {
+    "role": "text-sm (default UI and button size)",
+    "sizePx": 14,
+    "lineHeightPx": 20,
+    "weight": "400/500/600 (buttons 600)",
+    "trackingEm": 0
+   },
+   {
+    "role": "text-md (body, inputs md/lg)",
+    "sizePx": 16,
+    "lineHeightPx": 24,
+    "weight": 400,
+    "trackingEm": 0
+   },
+   {
+    "role": "text-lg",
+    "sizePx": 18,
+    "lineHeightPx": 28,
+    "weight": "400/600",
+    "trackingEm": 0
+   },
+   {
+    "role": "text-xl",
+    "sizePx": 20,
+    "lineHeightPx": 30,
+    "weight": "400/600",
+    "trackingEm": 0
+   },
+   {
+    "role": "display-xs",
+    "sizePx": 24,
+    "lineHeightPx": 32,
+    "weight": 600,
+    "trackingEm": 0
+   },
+   {
+    "role": "display-sm",
+    "sizePx": 30,
+    "lineHeightPx": 38,
+    "weight": 600,
+    "trackingEm": 0
+   },
+   {
+    "role": "display-md",
+    "sizePx": 36,
+    "lineHeightPx": 44,
+    "weight": 600,
+    "trackingEm": "-0.02em (-0.72px)"
+   },
+   {
+    "role": "display-lg",
+    "sizePx": 48,
+    "lineHeightPx": 60,
+    "weight": 600,
+    "trackingEm": "-0.02em (-0.96px)"
+   },
+   {
+    "role": "display-xl",
+    "sizePx": 60,
+    "lineHeightPx": 72,
+    "weight": 600,
+    "trackingEm": "-0.02em (-1.2px)"
+   },
+   {
+    "role": "display-2xl",
+    "sizePx": 72,
+    "lineHeightPx": 90,
+    "weight": 600,
+    "trackingEm": "-0.02em (-1.44px)"
+   }
+  ],
+  "notes": "Tokens defined as calc(var(--spacing) * n) so type sizes sit on the 4px grid (3, 3.5, 4, 4.5, 5, 6, 7.5, 9, 12, 15, 18 x 4px). Display sizes md and up get -0.02em tracking; below that none. Body smoothing: antialiased, contextual ligatures, kerning normal. Heading weights in typography.css prose: 600 for h1-h4, 500 for lead paragraph. Line-height ratios: 1.5 at xs-md (18/12, 20/14, 24/16), 1.556 at lg (28/18), 1.5 at xl (30/20), about 1.2-1.25 at display-md and up (44/36, 60/48, 72/60, 90/72)."
+ },
+ "color": {
+  "model": "rgb() in theme.css for brand; neutral/red/green/yellow/etc. reference Tailwind v4 default oklch palettes (Tailwind v4.2 palette per v8.0 release); semantic layer references them",
+  "neutrals": {
+   "palette": "Tailwind neutral (theme.css semantic tokens reference --color-neutral-*; the earlier gray-based palette is not read here)",
+   "neutral": {
+    "50": "oklch(98.5% 0 0)",
+    "100": "oklch(97% 0 0)",
+    "200": "oklch(92.2% 0 0)",
+    "300": "oklch(87% 0 0)",
+    "400": "oklch(70.8% 0 0)",
+    "500": "oklch(55.6% 0 0)",
+    "600": "oklch(43.9% 0 0)",
+    "700": "oklch(37.1% 0 0)",
+    "800": "oklch(26.9% 0 0)",
+    "900": "oklch(20.5% 0 0)",
+    "950": "oklch(14.5% 0 0)"
+   },
+   "note": "Neutrals are chroma 0. CLI init lets you pick any Tailwind palette (slate, gray, zinc, neutral, stone) as neutral/brand."
+  },
+  "accents": {
+   "brand": {
+    "25": "rgb(252 250 255) (AGENT.md only)",
+    "50": "rgb(249 245 255)",
+    "100": "rgb(244 235 255)",
+    "200": "rgb(233 215 254)",
+    "300": "rgb(214 187 251)",
+    "400": "rgb(182 146 246)",
+    "500": "rgb(158 119 237)",
+    "600": "rgb(127 86 217)",
+    "700": "rgb(105 65 198)",
+    "800": "rgb(83 56 158)",
+    "900": "rgb(66 48 125)",
+    "950": "rgb(44 28 95)"
+   },
+   "brandNote": "Default brand is a purple (600 = #7F56D9). Brand ramp has 11 steps 50-950 (AGENT.md also mentions 25). Primary interactive = 600, hover = 700, focus ring = 500. Status/utility ramps: error=red, warning=yellow, success=green; badge colours also gray, brand, error, warning, success, slate, sky, blue, indigo, purple, pink, rose, orange; utility ramps exist for amber, blue, brand, emerald, fuchsia, green, indigo, neutral, orange, pink, purple, red, sky, slate, yellow.",
+   "tailwindDefaults": {
+    "red-600": "oklch(57.7% 0.245 27.325)",
+    "red-500": "oklch(63.7% 0.237 25.331)",
+    "red-50": "oklch(97.1% 0.013 17.38)",
+    "green-600": "oklch(62.7% 0.194 149.214)",
+    "green-50": "oklch(98.2% 0.018 155.826)",
+    "yellow-600": "oklch(68.1% 0.162 75.834)",
+    "yellow-50": "oklch(98.7% 0.026 102.212)"
+   }
+  },
+  "semantic": {
+   "layers": "Semantic CSS vars exposed as Tailwind utilities with property-less names: text-primary/secondary/tertiary/quaternary/placeholder/brand-primary/brand-secondary/error-primary/success-primary/warning-primary, bg-primary/secondary/tertiary/quaternary/overlay/brand-solid/brand-primary/brand-secondary/error-solid/success-solid/warning-solid/primary-solid/brand-section, border-primary/secondary/tertiary/brand/error/error_subtle, fg-primary/secondary/tertiary/quaternary/brand-primary/brand-secondary/error-primary/success-primary/warning-primary, focus-ring (brand-500) and focus-ring-error (red-500). Suffix _hover, _alt, _on-brand add state/context variants.",
+   "lightMapping": {
+    "text-primary": "neutral-900",
+    "text-secondary": "neutral-700",
+    "text-tertiary": "neutral-600",
+    "text-quaternary/placeholder": "neutral-500",
+    "border-primary": "neutral-300",
+    "border-secondary": "neutral-200",
+    "border-tertiary": "neutral-100",
+    "bg-primary": "white",
+    "bg-secondary": "neutral-50",
+    "bg-tertiary": "neutral-100",
+    "bg-quaternary": "neutral-200",
+    "bg-brand-solid": "brand-600 (hover 700)",
+    "bg-overlay": "neutral-950",
+    "bg-primary-solid": "neutral-950",
+    "bg-error-solid": "red-600",
+    "text-primary_on-brand": "white",
+    "fg-quaternary": "neutral-400"
+   },
+   "darkMapping": {
+    "text-primary": "neutral-50",
+    "text-secondary": "neutral-300",
+    "text-tertiary": "neutral-400",
+    "border-primary": "neutral-700",
+    "border-secondary": "neutral-800",
+    "bg-primary": "neutral-950",
+    "bg-secondary": "neutral-900",
+    "bg-tertiary": "neutral-800",
+    "bg-quaternary": "neutral-700",
+    "bg-brand-solid": "brand-600 (hover brand-500)",
+    "bg-overlay": "neutral-800",
+    "text-brand-secondary": "neutral-300 (brand text becomes neutral in dark)",
+    "bg-brand-primary": "brand-500",
+    "error text": "red-400",
+    "success text": "green-400",
+    "warning text": "yellow-400"
+   }
+  },
+  "darkMode": "Class-based: add `dark-mode` to any element (custom variant dark = &:where(.dark-mode, .dark-mode *)); only dark-mode is defined (no light-mode), so nested light islands inside dark need overrides. Components never write dark: classes: they use semantic tokens (bg-primary, text-primary) that remap inside .dark-mode. alpha-white/alpha-black tokens invert (white -> rgb(12 14 18); black -> white). Brand text and several brand foregrounds deliberately fall back to neutral in dark mode.",
+  "contrastNotes": "No numeric contrast targets published in docs read. Primary button: white text on brand-600 (#7F56D9) with 60%-white icons. Disabled state is a flat opacity-50 across all components (v8) instead of per-token disabled colours."
+ },
+ "spacing": {
+  "base": "4px (Tailwind --spacing 0.25rem)",
+  "scale": [
+   2,
+   4,
+   6,
+   8,
+   10,
+   12,
+   14,
+   16,
+   18,
+   20,
+   24,
+   32,
+   40,
+   48,
+   64
+  ],
+  "notes": "Uses the full Tailwind spacing scale; component padding mostly 2/2.5/3/3.5/4/4.5 steps (8-18px). Container max-width 1280px (--max-width-container). Breakpoints: xxs 320px, xs 600px (matched to Sonner), then Tailwind sm 640 / md 768 / lg 1024 / xl 1280 / 2xl 1536."
+ },
+ "radius": {
+  "scale": [
+   {
+    "token": "rounded (4px) link-style buttons",
+    "px": 4
+   },
+   {
+    "token": "rounded-md",
+    "px": 6
+   },
+   {
+    "token": "rounded-lg (default for buttons, inputs, cards sm)",
+    "px": 8
+   },
+   {
+    "token": "rounded-xl",
+    "px": 12
+   },
+   {
+    "token": "rounded-2xl",
+    "px": 16
+   },
+   {
+    "token": "rounded-[20px] docs preview frames",
+    "px": 20
+   }
+  ],
+  "rule": "No custom radius tokens: Tailwind radius scale. Buttons and inputs rounded-lg (8px) at every size; buttons add an inner `before` highlight element with radius 7px (1px inside the 8px outer). Prose code blocks use --radius-xl, inline code --radius-sm / 6px."
+ },
+ "depth": {
+  "shadows": [
+   "--shadow-xs: 0px 1px 2px rgba(0,0,0,0.05)",
+   "--shadow-sm: 0px 1px 3px rgba(0,0,0,0.1), 0px 1px 2px -1px rgba(0,0,0,0.1)",
+   "--shadow-md: 0px 4px 6px -1px rgba(0,0,0,0.1), 0px 2px 4px -2px rgba(0,0,0,0.06)",
+   "--shadow-lg: 0px 12px 16px -4px rgba(0,0,0,0.08), 0px 4px 6px -2px rgba(0,0,0,0.03), 0px 2px 2px -1px rgba(0,0,0,0.04)",
+   "--shadow-xl: 0px 20px 24px -4px rgba(0,0,0,0.08), 0px 8px 8px -4px rgba(0,0,0,0.03), 0px 3px 3px -1.5px rgba(0,0,0,0.04)",
+   "--shadow-2xl: 0px 24px 48px -12px rgba(0,0,0,0.18), 0px 4px 4px -2px rgba(0,0,0,0.04)",
+   "--shadow-3xl: 0px 32px 64px -12px rgba(0,0,0,0.14), 0px 5px 5px -2.5px rgba(0,0,0,0.04)",
+   "--shadow-skeuomorphic: 0px 0px 0px 1px rgba(0,0,0,0.18) inset, 0px -2px 0px 0px rgba(0,0,0,0.05) inset",
+   "--shadow-xs-skeuomorphic = skeuomorphic + xs (used by primary/secondary buttons)",
+   "modern-mockup inner/outer shadow sets for device frames"
+  ],
+  "borders": "Inset ring-1 (ring-primary / ring-secondary) rather than border; primary buttons add an inner 1px white/12% gradient edge (before:border-white/12 masked to bottom). Inputs: ring-1 ring-primary shadow-xs, focus ring-2 ring-brand, invalid ring-error_subtle / ring-2 ring-error.",
+  "blur": "None as a token."
+ },
+ "motion": {
+  "durationsMs": [
+   100,
+   1000,
+   60000
+  ],
+  "easings": [
+   "ease-linear",
+   "caret-blink step (1s)",
+   "marquee linear 60s infinite"
+  ],
+  "notes": "Default micro transition is `transition duration-100 ease-linear` (100ms linear) for hover/colour changes. Inputs: transition-shadow duration-100 ease-linear. Libraries: motion (Framer Motion), tailwindcss-animate; @keyframes marquee, caret-blink. Overlay animation values live in component source (not read)."
+ },
+ "density": {
+  "modes": [
+   "sizes xs, sm, md, lg, xl for Button (default sm); sm, md, lg for Input/Select/Badge; sm, md for Checkbox"
+  ],
+  "controlHeightsPx": {
+   "button xs": 32,
+   "button sm": 36,
+   "button md": 40,
+   "button lg": 44,
+   "button xl": 48,
+   "input sm": 36,
+   "input md": 40,
+   "input lg": 44,
+   "note": "Derived from padding + line-height in button.tsx/input.tsx (e.g. sm = py-2 (16px) + text-sm line-height 20px)"
+  }
+ },
+ "components": {
+  "count": 85,
+  "base": {
+   "count": 30,
+   "freeCount": 27,
+   "list": [
+    "Avatars",
+    "Badge groups",
+    "Badges",
+    "Button groups",
+    "Buttons",
+    "Checkboxes",
+    "Context menus",
+    "Credit cards",
+    "Dropdowns",
+    "Featured icons",
+    "Illustrations",
+    "Inputs",
+    "Mobile app store buttons",
+    "Progress indicators",
+    "QR codes",
+    "Radio buttons",
+    "Radio groups [PRO]",
+    "Rating badge and stars",
+    "Select",
+    "Multi-select",
+    "Sliders",
+    "Social buttons",
+    "Tags",
+    "Text editors [PRO]",
+    "Textarea",
+    "Toggles",
+    "Tooltips",
+    "Utility buttons",
+    "Verification code inputs",
+    "Video players [PRO]"
+   ]
+  },
+  "application": {
+   "count": 37,
+   "freeCount": 13,
+   "list": [
+    "Activity feeds [PRO]",
+    "Activity gauges",
+    "Alerts [PRO]",
+    "Breadcrumbs [PRO]",
+    "Calendars [PRO]",
+    "Card headers [PRO]",
+    "Carousels",
+    "Code snippets [PRO]",
+    "Color pickers [PRO]",
+    "Command menus [PRO]",
+    "Content dividers [PRO]",
+    "Date pickers",
+    "Empty states [PRO]",
+    "File uploaders",
+    "Filter bars [PRO]",
+    "Gradient pickers [PRO]",
+    "Header navigations",
+    "Image pickers [PRO]",
+    "Inline CTAs [PRO]",
+    "Line & bar charts",
+    "Loading indicators",
+    "Messaging [PRO]",
+    "Metrics [PRO]",
+    "Modals [PRO]",
+    "Notifications [PRO]",
+    "Page headers [PRO]",
+    "Paginations",
+    "Pie charts",
+    "Progress steps [PRO]",
+    "Radar charts",
+    "Section footers [PRO]",
+    "Section headers [PRO]",
+    "Sidebar navigations",
+    "Drawers [PRO]",
+    "Tables",
+    "Tabs",
+    "Tree views [PRO]"
+   ]
+  },
+  "marketing": {
+   "count": 18,
+   "freeCount": 0,
+   "list": [
+    "Banners [PRO]",
+    "Blog sections [PRO]",
+    "Careers sections [PRO]",
+    "Contact sections [PRO]",
+    "Content & rich text sections [PRO]",
+    "CTA sections [PRO]",
+    "FAQ sections [PRO]",
+    "Features sections [PRO]",
+    "Footers [PRO]",
+    "Header navigations [PRO]",
+    "Hero header sections [PRO]",
+    "Header sections [PRO]",
+    "Metrics sections [PRO]",
+    "Newsletter CTA sections [PRO]",
+    "Pricing sections [PRO]",
+    "Social proof sections [PRO]",
+    "Team sections [PRO]",
+    "Testimonial sections [PRO]"
+   ]
+  },
+  "figma": "10,000+ components and variants (marketing figure from llms.txt; Figma file contents are PRO and not inspected)",
+  "list": [
+   "Avatars",
+   "Badge groups",
+   "Badges",
+   "Button groups",
+   "Buttons",
+   "Checkboxes",
+   "Context menus",
+   "Credit cards",
+   "Dropdowns",
+   "Featured icons",
+   "Illustrations",
+   "Inputs",
+   "Mobile app store buttons",
+   "Progress indicators",
+   "QR codes",
+   "Radio buttons",
+   "Radio groups [PRO]",
+   "Rating badge and stars",
+   "Select",
+   "Multi-select",
+   "Sliders",
+   "Social buttons",
+   "Tags",
+   "Text editors [PRO]",
+   "Textarea",
+   "Toggles",
+   "Tooltips",
+   "Utility buttons",
+   "Verification code inputs",
+   "Video players [PRO]",
+   "Activity feeds [PRO]",
+   "Activity gauges",
+   "Alerts [PRO]",
+   "Breadcrumbs [PRO]",
+   "Calendars [PRO]",
+   "Card headers [PRO]",
+   "Carousels",
+   "Code snippets [PRO]",
+   "Color pickers [PRO]",
+   "Command menus [PRO]",
+   "Content dividers [PRO]",
+   "Date pickers",
+   "Empty states [PRO]",
+   "File uploaders",
+   "Filter bars [PRO]",
+   "Gradient pickers [PRO]",
+   "Header navigations",
+   "Image pickers [PRO]",
+   "Inline CTAs [PRO]",
+   "Line & bar charts",
+   "Loading indicators",
+   "Messaging [PRO]",
+   "Metrics [PRO]",
+   "Modals [PRO]",
+   "Notifications [PRO]",
+   "Page headers [PRO]",
+   "Paginations",
+   "Pie charts",
+   "Progress steps [PRO]",
+   "Radar charts",
+   "Section footers [PRO]",
+   "Section headers [PRO]",
+   "Sidebar navigations",
+   "Drawers [PRO]",
+   "Tables",
+   "Tabs",
+   "Tree views [PRO]",
+   "Banners [PRO]",
+   "Blog sections [PRO]",
+   "Careers sections [PRO]",
+   "Contact sections [PRO]",
+   "Content & rich text sections [PRO]",
+   "CTA sections [PRO]",
+   "FAQ sections [PRO]",
+   "Features sections [PRO]",
+   "Footers [PRO]",
+   "Header navigations [PRO]",
+   "Hero header sections [PRO]",
+   "Header sections [PRO]",
+   "Metrics sections [PRO]",
+   "Newsletter CTA sections [PRO]",
+   "Pricing sections [PRO]",
+   "Social proof sections [PRO]",
+   "Team sections [PRO]",
+   "Testimonial sections [PRO]"
+  ],
+  "stateMatrixCompleteness": "Button: 5 sizes x 9 colours (primary, secondary, tertiary, link-gray, link-color, primary-destructive, secondary-destructive, tertiary-destructive, link-destructive) x states (hover, focus-visible outline-2 offset-2, loading with optional text, disabled opacity-50, icon-only via data-icon-only padding, leading/trailing icons, in-input-group joins). Input: 3 sizes x default/hover/focus-within/invalid/invalid+focus/disabled, with label, hint, tooltip, shortcut, leading/trailing icon. Badge: 3 sizes x 13 colours x 3 types (pill-color, color, modern) x with-dot/with-icon. Checkbox 2 sizes x selected/indeterminate/disabled/hint. Spec rigour: every base component is a React Aria component, so keyboard/ARIA states come from RAC."
+ },
+ "tokenArchitecture": "Three tiers in a Tailwind v4 @theme block. (1) Primitive ramps: --color-brand-50..950 (rgb) plus Tailwind palettes (neutral, red, green, yellow, etc.). (2) Utility ramps: --color-utility-{hue}-50..700 map light ramps to dark by reversing (e.g. utility-blue-50 = blue-950 in dark) for badges and tags. (3) Semantic: --color-{text|fg|bg|border}-{role}[_state]; role names are primary/secondary/tertiary/quaternary (hierarchy) and brand/error/warning/success (intent); suffix `_hover`, `_alt`, `_on-brand`. (4) Component colours (--color-slider-handle-bg, --color-toggle-border, --color-tooltip-supporting-text, --color-featured-icon-*). Property-prefixed aliases (--background-color-X, --text-color-X) let Tailwind bg-X/text-X work without the property word. Styles organised in components via sortCx({common,sizes,colors}) objects. Folders: components/base, application, foundations, marketing, shared-assets. Files kebab-case; react-aria-components imports aliased Aria*.",
+ "distinctiveness": "Precise skeuomorphic-lite buttons: inset 1px ring + inner gradient highlight + 2px bottom inner shade (shadow-xs-skeuomorphic); purple brand 600; semantic tokens named by hierarchy (primary/secondary/tertiary/quaternary) applied uniformly to text, fg (icons), bg and border; soft multi-layer drop shadows; Inter everywhere.",
+ "weaknesses": [
+  "Instantly recognisable and over-used; reads as 'default SaaS'",
+  "Large share of the useful library (marketing, app patterns, Figma depth) is paid",
+  "Single typeface (Inter) with no display voice",
+  "Semantic names mix hierarchy and intent (text-tertiary vs text-error-primary)",
+  "Dark mode brand colours collapse to neutrals, losing identity",
+  "Only a dark-mode class exists (no explicit light island)",
+  "Docs are Tailwind-coupled; tokens not exportable as W3C JSON"
+ ],
+ "takeaways": [
+  "Name semantic tokens by hierarchy (primary/secondary/tertiary/quaternary) and apply the same ladder to text, icons (fg), backgrounds and borders",
+  "Components never contain dark: classes; dark mode is a re-mapping of semantic tokens",
+  "Define one brand ramp (50-950) and let the CLI swap it for any Tailwind palette",
+  "Single disabled treatment (opacity 50, not-allowed) for every component",
+  "Button spec = size x colour matrix with icon-only, loading and joined-in-input-group modes, sizes tied to explicit padding + line-height so heights are derivable (32/36/40/44/48)",
+  "Encode the micro-transition default (100ms linear) once and reuse",
+  "Ship agent docs (AGENT.md, .md per page, llms.txt, MCP, CLI) next to the component code"
+ ]
+}

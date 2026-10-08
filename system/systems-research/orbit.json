@@ -1,0 +1,121 @@
+{
+  "name": "Orbit",
+  "slug": "orbit",
+  "vendor": "Kiwi.com",
+  "url": "https://orbit.kiwi (DNS did not resolve on 2026-10-08); source https://github.com/kiwicom/orbit (docs in docs/src/documentation)",
+  "licence": "MIT (@kiwicom/orbit-components 27.7.1-alpha.0 and @kiwicom/orbit-design-tokens 11.0.0 LICENSE)",
+  "studiedOn": "2026-10-08",
+  "personality": ["practical", "travel-native", "calm-teal", "trustworthy", "white-label-ready"],
+  "bestFor": [
+    "booking, checkout and multi-step transactional flows (Wizard, Stepper, Itinerary, Seat, Coupon, ChoiceGroup components)",
+    "white-label / partner products where one foundation object regenerates the whole theme",
+    "mobile-first consumer web with large touch targets (44px default form box)",
+    "products needing a disciplined status palette with Light/Dark pairing rules"
+  ],
+  "avoidFor": [
+    "dense analytics or admin UI (default control 44px, no compact mode)",
+    "dark-mode-first products (no dark theme in the token package)",
+    "expressive brand marketing (deliberately plain, Roboto by default)",
+    "teams needing an actively maintained public doc site (orbit.kiwi unreachable; Compose library archived July 2025)"
+  ],
+  "typography": {
+    "families": [
+      "base (open-source default): 'Roboto', -apple-system, '.SFNSText-Regular', 'San Francisco', 'Segoe UI', 'Helvetica Neue', 'Lucida Grande', sans-serif",
+      "Kiwi.com production: 'Circular Pro' (Lineto, licensed for kiwi.com domain only) swapped in via getTokens({base:{fontFamily}})",
+      "Lato for some eastern languages (docs)"
+    ],
+    "scale": [
+      {"role": "Display Title", "sizePx": 40, "lineHeightPx": 44, "weight": 700, "trackingEm": "unknown (none tokenised)"},
+      {"role": "Display Subtitle", "sizePx": 22, "lineHeightPx": 28, "weight": 400, "trackingEm": "unknown"},
+      {"role": "Title 0", "sizePx": 28, "lineHeightPx": 36, "weight": 700, "trackingEm": "unknown"},
+      {"role": "Title 1", "sizePx": 24, "lineHeightPx": 32, "weight": 700, "trackingEm": "unknown"},
+      {"role": "Title 2", "sizePx": 20, "lineHeightPx": 28, "weight": 700, "trackingEm": "unknown"},
+      {"role": "Title 3", "sizePx": 18, "lineHeightPx": 24, "weight": 700, "trackingEm": "unknown"},
+      {"role": "Title 4", "sizePx": 16, "lineHeightPx": 22, "weight": 700, "trackingEm": "unknown"},
+      {"role": "Title 5", "sizePx": 15, "lineHeightPx": 20, "weight": 700, "trackingEm": "unknown"},
+      {"role": "Title 6", "sizePx": 13, "lineHeightPx": 18, "weight": 700, "trackingEm": "unknown"},
+      {"role": "Text large", "sizePx": 16, "lineHeightPx": 24, "weight": 400, "trackingEm": "unknown"},
+      {"role": "Text normal", "sizePx": 15, "lineHeightPx": 20, "weight": 400, "trackingEm": "unknown"},
+      {"role": "Text small", "sizePx": 13, "lineHeightPx": 16, "weight": 400, "trackingEm": "unknown"}
+    ],
+    "notes": "Body default is 15px, an unusual odd size. Weights 400/500/700. Docs: build hierarchy with size first, use weight and colour only to emphasise; ink-dark is the ONLY heading colour; don't combine Display and Title 1 on one page (gap to body too large); use Display Subtitle for a short description under a display title; lineHeightText token 1.4 for paragraphs."
+  },
+  "color": {
+    "model": "hex",
+    "neutrals": {
+      "ink-dark": "#252A31", "ink-normal": "#4F5E71", "ink-light": "#657890",
+      "cloud-light": "#F5F7F9", "cloud-normal": "#E8EDF1", "cloud-dark": "#BAC7D5",
+      "white-normal": "#FFFFFF", "white-normalHover": "#F1F4F7", "white-normalActive": "#E7ECF1",
+      "elevation-base": "#292F37", "elevation-navbar": "#1B3249"
+    },
+    "accents": {
+      "product-light": "#E1F4F3", "product-normal": "#008F7B", "product-normalHover": "#007565", "product-normalActive": "#006153",
+      "product-dark": "#007061", "product-darker": "#003D35",
+      "bundle-basic": "#D7331C", "bundle-medium": "#3B1EB0",
+      "badge gradients": "basic #E13E3B->#E87E09, medium #3719AB->#8539DB, top #2D2D2E->#696E73"
+    },
+    "semantic": {
+      "red (critical)": "light #FAEAEA / normal #D21C1C / dark #970C0C / darker #630808",
+      "orange (warning)": "light #FEF2E6 / normal #B36200 / dark #8A4500 / darker #4D2600",
+      "green (success)": "light #EAF5EA / normal #048724 / dark #296B33 / darker #163B1C",
+      "blue (info)": "light #E8F4FD / normal #0070C8 / dark #005AA3 / darker #003866",
+      "every hue": "light, lightHover, lightActive, normal, normalHover, normalActive, dark, darkHover, darkActive, darker",
+      "interactive vs actionable": "interactive (hover/focus/select/drag states that don't advance the flow) uses blue; actionable (Button, ButtonLink, TextLink that move you forward) uses product teal"
+    },
+    "darkMode": "None in @kiwicom/orbit-design-tokens 11.0.0 (single light foundation). Theming is white-label via getTokens(foundation), not light/dark.",
+    "contrastNotes": "Docs: 4.5:1 text, 3:1 for text over 24px (18px bold) and for UI graphics; touch targets at least 44x44 CSS px; avoid pure black on pure white (dyslexia). Docs openly admit 'slight contrast issues in the product color': measured product-normal #008F7B vs white 4.03:1 (fails AA for normal text); product-dark #007061 vs white 6.02:1, ink-normal #4F5E71 6.62:1, ink-dark #252A31 14.44:1, orange-normal #B36200 4.50:1 (exactly AA)."
+  },
+  "spacing": {
+    "base": "4px grid",
+    "scale": [2, 4, 6, 8, 12, 16, 20, 24, 28, 32, 40, 48, 52, 64],
+    "notes": "Tokens space50..space1600. Docs table: 4 (connect error to field), 8 (header to description), 12, 16 (mobile inner padding), 24 (section side padding), 32, 40, 52 (illustration to header). 'Please use only these sizes.'"
+  },
+  "radius": {
+    "scale": [0, 2, 4, 6, 8, 12, 16, "full 9999px"],
+    "rule": "Buttons small/normal rounded-200 (8px), large rounded-300 (12px); badge 12px; modal 16px. Older docs page still states 3px desktop / 6px mobile ('smaller on desktop because tightly grouped fields look disconnected with larger radii') - superseded by the token scale but the reasoning stands."
+  },
+  "depth": {
+    "shadows": [
+      "level1 (actionable, e.g. Tile): 0 2px 6px ink-normal@8%, 0 0 2px ink-normal@12%, 0 0 1px base@30%",
+      "level2 (hovered actionable): 0 8px 24px -5px ink@10%, 0 5px 16px -3px ink@12%, 0 1px 4px ink@12%",
+      "level3 (Popover, Tooltip, Drawer): 0 2px 16px ink@4%, 0 34px 20px ink@5%, 0 15px 15px ink@10% (+ reverse variant with negative y for bottom-stuck mobile popovers)",
+      "level4 (Modal): 0 60px 40px ink@5%, 0 40px 30px ink@8%, 0 24px 24px ink@14%",
+      "fixed (sticky header): 0 0 2px ink-dark@16%, 0 2px 4px ink-dark@12%",
+      "navbar: 0 2px 12px navbar@8%"
+    ],
+    "borders": "Flat level = 1px cloud-normal #E8EDF1 border, no shadow, for non-actionable Cards. Suppressed level = cloud-light #F5F7F9 background, no shadow.",
+    "blur": "none"
+  },
+  "motion": {
+    "durationsMs": [150, 300, 400],
+    "easings": ["unknown (no easing tokens published)"],
+    "notes": "durationFast 0.15s, durationNormal 0.3s, durationSlow 0.4s. No published motion guidance found in fetched docs."
+  },
+  "density": {
+    "modes": ["single density; small/normal/large sizes"],
+    "controlHeightsPx": {"form-box small (button/input)": 32, "form-box normal": 44, "form-box large": 52, "icon small": 16, "icon medium": 24, "icon large": 32}
+  },
+  "components": {
+    "count": 76,
+    "list": ["Accordion", "AirportIllustration", "Alert", "Badge", "BadgeList", "Box", "Breadcrumbs", "Button", "ButtonGroup", "ButtonLink", "ButtonMobileStore", "CallOutBanner", "Card", "CarrierLogo", "Checkbox", "ChoiceGroup", "Collapse", "CountryFlag", "Coupon", "Dialog", "Drawer", "ErrorFormTooltip", "FeatureIcon", "FormLabel", "Heading", "Hide", "HorizontalScroll", "Icon", "Illustration", "Inline", "InputField", "InputFile", "InputGroup", "InputSelect", "Itinerary", "Layout", "LinkList", "List", "ListChoice", "Loading", "Modal", "NavigationBar", "NotificationBadge", "OrbitProvider", "Pagination", "Popover", "Portal", "Radio", "Seat", "SegmentedSwitch", "Select", "Separator", "ServiceLogo", "Skeleton", "SkipLink", "SkipNavigation", "Slider", "SmartPassIllustrations", "SocialButton", "Stack", "Stepper", "StopoverArrow", "Switch", "Table", "Tabs", "Tag", "Text", "TextLink", "Textarea", "Tile", "TileGroup", "Timeline", "Toast", "Tooltip", "Truncate", "Wizard"],
+    "stateMatrixCompleteness": "Strong for colour: every hue has hover and active for light, normal and dark shades; button tokens (91) cover each type x state. Disabled and focus states not separately tokenised in the token package (handled in components)."
+  },
+  "tokenArchitecture": "Foundation -> createTokens -> component tokens. A small typed 'foundation' object (palette of 10 hues x 10 shade/state keys, borderRadius, breakpoint, elevations, size, space, fontFamily/Size/Weight, lineHeight) is passed to getTokens(), which derives ~456 flat camelCase tokens grouped by component (button*, form*, heading*, badge*, alert*, elevation*, tab*, zIndex*). Shadows are built by a boxShadow() helper from foundation colours with transparentColor(). Since v27 components are styled with a Tailwind 3 preset generated from the same tokens (h-form-box-normal, rounded-200, px-button-padding-md).",
+  "distinctiveness": "Travel-domain vocabulary baked into components (Itinerary, Seat, StopoverArrow, CarrierLogo, Coupon), the teal 'product' colour with an explicit interactive-blue vs actionable-teal split, a Light/Normal/Dark + Hover/Active shade grammar shared by every hue, and seven named elevation levels including 'suppressed' and 'flat' (below shadow).",
+  "weaknesses": [
+    "Public docs site orbit.kiwi did not resolve (2026-10-08); docs only in the GitHub repo; Android Compose library archived 2025",
+    "Primary product colour #008F7B fails AA for small text on white (4.03:1), acknowledged in docs",
+    "No dark mode and no compact density",
+    "Production typeface (Circular Pro) is licence-restricted; open-source default is Roboto",
+    "Legacy radius doc (3px/6px) contradicts current tokens"
+  ],
+  "takeaways": [
+    "Expose a tiny 'foundation' object and derive every component token from it with a function; white-labelling becomes one object swap",
+    "Split 'interactive' colour (state feedback that does not advance the flow) from 'actionable' colour (moves the user forward) so the brand colour always means 'next step'",
+    "Pair rule: Dark shade text on Light shade background of the same hue is always safe; never use a Dark shade as a background",
+    "Elevation is semantic of actionability: non-clickable cards are flat (1px border), clickable tiles get Level 1, hover lifts to Level 2",
+    "Give icon-side button padding one step less than the text side (ps-button-padding-sm pe-button-padding-md) for optical balance",
+    "Reverse shadows (negative y) for bottom-anchored mobile popovers and fixed footers"
+  ],
+  "provenance": "public-spec (npm @kiwicom/orbit-design-tokens@11.0.0 dist, @kiwicom/orbit-components@27.7.1-alpha.0, docs mdx on GitHub master); contrast ratios measured by computation"
+}

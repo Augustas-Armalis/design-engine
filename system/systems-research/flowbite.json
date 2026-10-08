@@ -1,0 +1,330 @@
+{
+  "name": "Flowbite 4",
+  "slug": "flowbite",
+  "vendor": "Bergside Inc. (Flowbite)",
+  "url": "https://flowbite.com/docs/",
+  "licence": "Core library MIT (npm flowbite@4.0.2). Flowbite Pro blocks/Figma are commercial (not studied).",
+  "studiedOn": "2026-10-08",
+  "personality": [
+    "generic",
+    "approachable",
+    "bootstrap-like",
+    "complete",
+    "corporate-blue"
+  ],
+  "bestFor": [
+    "admin panels and CRUD back-offices on any server stack (vanilla JS data-attributes)",
+    "teams moving from Bootstrap who want named components",
+    "studying a five-theme switch (default/enterprise/minimal/mono/playful)"
+  ],
+  "avoidFor": [
+    "distinctive marketing pages (blue-700 + Inter + 12px radius is the stock AI look)",
+    "dense pro apps (42px default controls, ring-4 focus halos)"
+  ],
+  "typography": {
+    "families": [
+      "default: Inter + system stack (--font-sans and --font-body)",
+      "enterprise: 'STIX Two Text' (serif)",
+      "minimal: 'Open Sans'",
+      "mono: 'Google Sans Code'",
+      "playful: 'Shantell Sans'",
+      "mono: ui-monospace stack"
+    ],
+    "scale": [
+      {
+        "role": "button xs",
+        "sizePx": 12,
+        "lineHeightPx": 20,
+        "weight": 500,
+        "trackingEm": 0
+      },
+      {
+        "role": "button sm / base",
+        "sizePx": 14,
+        "lineHeightPx": 20,
+        "weight": 500,
+        "trackingEm": 0
+      },
+      {
+        "role": "button lg / xl",
+        "sizePx": 16,
+        "lineHeightPx": 20,
+        "weight": 500,
+        "trackingEm": 0
+      },
+      {
+        "role": "text-2xs (added)",
+        "sizePx": 10,
+        "lineHeightPx": "unknown",
+        "weight": "unknown",
+        "trackingEm": 0
+      },
+      {
+        "role": "heading leading token",
+        "sizePx": "unknown",
+        "lineHeightPx": 60,
+        "weight": "unknown",
+        "trackingEm": "unknown"
+      },
+      {
+        "role": "tw text-xs",
+        "sizePx": 12,
+        "lineHeightPx": 16,
+        "weight": "any",
+        "trackingEm": 0
+      },
+      {
+        "role": "tw text-sm",
+        "sizePx": 14,
+        "lineHeightPx": 20,
+        "weight": "any",
+        "trackingEm": 0
+      },
+      {
+        "role": "tw text-base",
+        "sizePx": 16,
+        "lineHeightPx": 24,
+        "weight": "any",
+        "trackingEm": 0
+      },
+      {
+        "role": "tw text-lg",
+        "sizePx": 18,
+        "lineHeightPx": 28,
+        "weight": "any",
+        "trackingEm": 0
+      },
+      {
+        "role": "tw text-xl",
+        "sizePx": 20,
+        "lineHeightPx": 28,
+        "weight": "any",
+        "trackingEm": 0
+      },
+      {
+        "role": "tw text-2xl",
+        "sizePx": 24,
+        "lineHeightPx": 32,
+        "weight": "any",
+        "trackingEm": 0
+      },
+      {
+        "role": "tw text-3xl",
+        "sizePx": 30,
+        "lineHeightPx": 36,
+        "weight": "any",
+        "trackingEm": 0
+      },
+      {
+        "role": "tw text-4xl",
+        "sizePx": 36,
+        "lineHeightPx": 40,
+        "weight": "any",
+        "trackingEm": 0
+      },
+      {
+        "role": "tw text-5xl",
+        "sizePx": 48,
+        "lineHeightPx": 48,
+        "weight": "any",
+        "trackingEm": 0
+      }
+    ],
+    "notes": "Overrides Tailwind leading tokens in px (leading-4 16, -5 20, -6 24, -7 28, -8 32, -9 36, heading-none 60) and tracking in px (tight -0.4px, tighter -0.8px; mono theme sets tracking-normal -0.4px). px tracking does not scale with size (a 48px heading at -0.8px is only -0.017em). Body colour gray-600, heading gray-900."
+  },
+  "color": {
+    "model": "oklch (role aliases over the Tailwind palette)",
+    "neutrals": {
+      "body": "gray-600 (dark gray-400)",
+      "body-subtle": "gray-500",
+      "heading": "gray-900 (dark white)",
+      "neutral-primary": "white (dark gray-950)",
+      "neutral-secondary": "gray-50",
+      "neutral-tertiary": "gray-100",
+      "neutral-quaternary": "gray-200",
+      "border default": "gray-200",
+      "dark-backdrop": "gray-950"
+    },
+    "accents": {
+      "default brand": "blue-700 (hover brand-strong blue-800; soft blue-100; softer blue-50; dark brand blue-600)",
+      "enterprise brand": "cyan-900 (dark cyan-600), zinc neutrals",
+      "minimal brand": "stone-900 (dark stone-600), stone neutrals",
+      "mono brand": "indigo-900 (dark indigo-600), neutral greys",
+      "playful brand": "pink-900 (dark pink-600), slate neutrals"
+    },
+    "semantic": {
+      "success": "emerald-700 (soft emerald-50, medium -100, strong -800)",
+      "danger": "rose-700 (soft rose-50)",
+      "warning": "orange-500 (strong orange-700)",
+      "fg-success": "emerald-700",
+      "fg-danger": "rose-700",
+      "fg-warning": "orange-900",
+      "extra hues": "purple, sky, teal, pink, cyan, fuchsia, indigo, orange"
+    },
+    "darkMode": ".dark class re-maps every alias (neutral-primary -> gray-950, brand -> blue-600, success-soft -> emerald-950).",
+    "contrastNotes": "gray-600 body on white passes AA; white text on blue-700 passes AA. Status 'soft' backgrounds (emerald-50, rose-50) carry -strong (900) text."
+  },
+  "spacing": {
+    "base": "Tailwind 4px",
+    "scale": "Tailwind default + --spacing-8xl 90rem (1440px container)"
+  },
+  "radius": {
+    "scale": [
+      {
+        "name": "radius-0",
+        "px": 0
+      },
+      {
+        "name": "xxs",
+        "px": 2
+      },
+      {
+        "name": "xs",
+        "px": 4
+      },
+      {
+        "name": "sm",
+        "px": 6
+      },
+      {
+        "name": "radius",
+        "px": 8
+      },
+      {
+        "name": "base",
+        "px": 12
+      },
+      {
+        "name": "lg",
+        "px": 16
+      }
+    ],
+    "rule": "Buttons and inputs use rounded-base (12px default). Themes change radius only: enterprise 1-4px, minimal 2-16px, mono 1px everywhere, playful 10-20px (base 20px)."
+  },
+  "depth": {
+    "shadows": [
+      "shadow-xs on buttons and inputs (Tailwind 0 1px 2px rgb(0 0 0/.05))",
+      "shadow-sm / shadow-lg on cards and modals"
+    ],
+    "borders": "1px (--default-border-width); outline buttons use border-brand",
+    "blur": "not used in core components"
+  },
+  "motion": {
+    "durationsMs": [
+      200,
+      300
+    ],
+    "easings": [
+      "Tailwind default ease-in-out"
+    ],
+    "notes": "duration-200/300 on accordions, drawers, modals (counted from docs markup). Focus = focus:ring-4 with a soft tint of the variant colour (brand-medium blue-200)."
+  },
+  "density": {
+    "modes": [
+      "xs",
+      "sm",
+      "base",
+      "lg",
+      "xl"
+    ],
+    "controlHeightsPx": {
+      "button xs": 34,
+      "button sm": 38,
+      "button base": 42,
+      "button lg": 46,
+      "button xl": 50,
+      "input base": 42,
+      "input sm": 38,
+      "input lg": 50,
+      "computation": "leading-5 (20px) + 2 x py + 2px border; computed from docs classes, not measured"
+    }
+  },
+  "components": {
+    "count": 68,
+    "list": [
+      "accordion",
+      "alerts",
+      "avatar",
+      "badge",
+      "banner",
+      "bottom-navigation",
+      "breadcrumb",
+      "button-group",
+      "buttons",
+      "card",
+      "carousel",
+      "chat-bubble",
+      "clipboard",
+      "datepicker",
+      "device-mockups",
+      "drawer",
+      "dropdowns",
+      "footer",
+      "forms",
+      "gallery",
+      "indicators",
+      "jumbotron",
+      "kbd",
+      "list-group",
+      "mega-menu",
+      "modal",
+      "navbar",
+      "pagination",
+      "popover",
+      "progress",
+      "qr-code",
+      "rating",
+      "sidebar",
+      "skeleton",
+      "speed-dial",
+      "spinner",
+      "stepper",
+      "tables",
+      "tabs",
+      "timeline",
+      "toast",
+      "tooltips",
+      "typography",
+      "video",
+      "checkbox",
+      "file-input",
+      "floating-label",
+      "input-field",
+      "number-input",
+      "phone-input",
+      "radio",
+      "range",
+      "search-input",
+      "select",
+      "textarea",
+      "timepicker",
+      "toggle",
+      "charts",
+      "datatables",
+      "wysiwyg",
+      "blockquote",
+      "headings",
+      "hr",
+      "images",
+      "links",
+      "lists",
+      "paragraphs",
+      "text"
+    ],
+    "stateMatrixCompleteness": "Medium: hover, focus (ring-4), disabled, success/error input states shown; pressed and loading states thin; keyboard behaviour via flowbite.js data attributes."
+  },
+  "tokenArchitecture": "Two layers: Tailwind palette primitives -> ~100 semantic aliases named by role and intensity (neutral-primary-soft/-medium/-strong, brand-softer/soft/medium/strong, fg-*, border default-subtle/default/strong). Five theme files swap the alias targets, fonts and radii.",
+  "distinctiveness": "Low. Its value is breadth and the alias naming grid (role x intensity); visually it is the canonical 'Tailwind admin template'.",
+  "weaknesses": [
+    "Default look (Inter, blue-700, 12px radius, ring-4 halo) is the most generic SaaS grammar",
+    "Many aliases map to the same value in light mode (neutral-primary-soft/primary/medium/strong all white): naming implies a range that does not exist",
+    "px tracking and px leading do not scale",
+    "Brand-hex buttons (social login) bypass tokens"
+  ],
+  "takeaways": [
+    "A whole theme can be fonts + radius + one brand hue + neutral family; Flowbite's five themes show how far that alone moves personality (serif enterprise vs Shantell playful).",
+    "Name aliases by role x intensity (soft/medium/strong) so dark mode can re-map each independently.",
+    "Avoid px tracking; use em."
+  ],
+  "provenance": "mixed (theme CSS from npm flowbite@4.0.2; control sizes computed from public docs markup)"
+}

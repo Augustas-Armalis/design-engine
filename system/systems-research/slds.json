@@ -1,0 +1,483 @@
+{
+  "name": "Salesforce Lightning Design System 2 (SLDS 2: Cosmos + Lightning Blue themes)",
+  "slug": "slds",
+  "vendor": "Salesforce",
+  "url": "https://www.lightningdesignsystem.com",
+  "licence": "Mixed. SLDS 1 package (@salesforce-ux/design-system 2.264.1): BSD-3-Clause source; icons and images Creative Commons Attribution-NoDerivatives 4.0. SLDS 2 packages (@salesforce-ux/design-system-2 2.264.2, @salesforce-ux/design-tokens 4.1.0): 'SEE LICENSE IN LICENSE.txt' = Salesforce Terms of Use: royalty-free licence to reproduce, prepare derivative works and distribute with the Terms included, but with an OFAC/export restriction, AS-IS, an indemnity clause and a Usage-Data collection clause. Study structure and values only; do not redistribute the package. Source repo is private (git@github.com:salesforce-ux/salesforce-design-system.git).",
+  "studiedOn": "2026-10-08",
+  "personality": [
+    "enterprise",
+    "systematic",
+    "friendly-rounded (Cosmos)",
+    "data-dense",
+    "themeable",
+    "accessible-by-pairing"
+  ],
+  "bestFor": [
+    "CRM-style record pages, forms, list views, data tables and page headers",
+    "multi-tenant products that must be re-themed by customers via CSS custom properties",
+    "apps that need a first-class compact/comfy density switch",
+    "teams that want contrast guaranteed by token pairing (on-surface with surface, on-accent with accent-container)"
+  ],
+  "avoidFor": [
+    "marketing or editorial sites (13px base text, system font, no display type voice)",
+    "brand-distinctive consumer products (look is purposely Salesforce)",
+    "anything needing a published public, open-source repo: licence and repo access are restrictive",
+    "sub-16px-radius brutalist or strongly geometric aesthetics (Cosmos is pill-and-20px-round)"
+  ],
+  "typography": {
+    "families": [
+      "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, 'Helvetica Neue', Arial, sans-serif, emoji faces (--slds-g-font-family-base)",
+      "Consolas, Menlo, Monaco, Courier, monospace (--slds-g-font-family-monospace)"
+    ],
+    "scale": [
+      {
+        "role": "font-scale-neg-2",
+        "sizePx": 10,
+        "lineHeightPx": 15,
+        "weight": 400,
+        "trackingEm": 0
+      },
+      {
+        "role": "font-scale-neg-1 (badge, captions)",
+        "sizePx": 12,
+        "lineHeightPx": 18,
+        "weight": 400,
+        "trackingEm": 0
+      },
+      {
+        "role": "font-size-base (body)",
+        "sizePx": 13,
+        "lineHeightPx": 19.5,
+        "weight": 400,
+        "trackingEm": 0
+      },
+      {
+        "role": "font-scale-1",
+        "sizePx": 14,
+        "lineHeightPx": 21,
+        "weight": 400,
+        "trackingEm": 0
+      },
+      {
+        "role": "font-scale-2 (input text)",
+        "sizePx": 16,
+        "lineHeightPx": 24,
+        "weight": 400,
+        "trackingEm": 0
+      },
+      {
+        "role": "font-scale-3 (container heading)",
+        "sizePx": 20,
+        "lineHeightPx": 30,
+        "weight": 400,
+        "trackingEm": 0
+      },
+      {
+        "role": "font-scale-4",
+        "sizePx": 24,
+        "lineHeightPx": 36,
+        "weight": 400,
+        "trackingEm": 0
+      },
+      {
+        "role": "font-scale-5",
+        "sizePx": 28,
+        "lineHeightPx": 42,
+        "weight": 400,
+        "trackingEm": 0
+      },
+      {
+        "role": "font-scale-6",
+        "sizePx": 32,
+        "lineHeightPx": 48,
+        "weight": 400,
+        "trackingEm": 0
+      },
+      {
+        "role": "font-scale-7",
+        "sizePx": 40,
+        "lineHeightPx": 60,
+        "weight": 400,
+        "trackingEm": 0
+      },
+      {
+        "role": "font-scale-8 (max; 9 and 10 alias 8)",
+        "sizePx": 48,
+        "lineHeightPx": 72,
+        "weight": 400,
+        "trackingEm": 0
+      }
+    ],
+    "notes": "Cosmos values (Lightning Blue differs: scale-3..8 = 18, 20, 24, 28, 32, 42px). Line heights shown are base 1.5 x size; unitless tokens: line-height-1..6 = 1, 1.25, 1.375, 1.5, 1.75, 2, base 1.5. Weights are tokens 100..700 plus bold; table headers use 600, alerts 600, container headings 400. Body base is 13px, a deliberately small enterprise size; inputs and buttons render at 14-16px. font-scale-ratio token = 1.15 but the published steps are hand-rounded rem values, not a pure 1.15 series. No letter-spacing tokens (0 = none specified). Compact density collapses the type scale: font-scale-var-2 16->14px, var-3 20->16, var-4 24->20; var-5 and up unchanged. Measure tokens: sizing-content-1..3 = 20/45/60ch; sizing-heading-1..3 = 20/25/35ch. Rule from guidance: lowest step number = smallest."
+  },
+  "color": {
+    "model": "hex",
+    "neutrals": {
+      "neutral-palette (light/dark pair per step; step 50 #757575 is the pivot)": {
+        "0": {
+          "light": "#000",
+          "dark": "#fff"
+        },
+        "10": {
+          "light": "#181818",
+          "dark": "#e5e5e5"
+        },
+        "15": {
+          "light": "#242424",
+          "dark": "#d7d7d7"
+        },
+        "20": {
+          "light": "#2e2e2e",
+          "dark": "#c9c9c9"
+        },
+        "30": {
+          "light": "#444",
+          "dark": "#aeaeae"
+        },
+        "40": {
+          "light": "#5c5c5c",
+          "dark": "#939393"
+        },
+        "50": {
+          "light": "#757575",
+          "dark": "#757575",
+          "note": "pivot step, identical in both modes"
+        },
+        "60": {
+          "light": "#939393",
+          "dark": "#5c5c5c"
+        },
+        "65": {
+          "light": "#a0a0a0",
+          "dark": "#515151"
+        },
+        "70": {
+          "light": "#aeaeae",
+          "dark": "#444"
+        },
+        "80": {
+          "light": "#c9c9c9",
+          "dark": "#2e2e2e"
+        },
+        "90": {
+          "light": "#e5e5e5",
+          "dark": "#181818"
+        },
+        "95": {
+          "light": "#f3f3f3",
+          "dark": "#020202"
+        },
+        "100": {
+          "light": "#fff",
+          "dark": "#000"
+        }
+      },
+      "surface": {
+        "surface-1": "light-dark(#fff, #242424) page",
+        "surface-2": "light-dark(#f3f3f3, #181818) darker page",
+        "surface-3": "light-dark(#f3f3f3, #2e2e2e)",
+        "container-1": "light-dark(#fff, #242424) default card/modal fill",
+        "container-2": "light-dark(#f3f3f3, #181818)",
+        "container-3": "light-dark(#e5e5e5, #2e2e2e)",
+        "inverse-1/2": "light-dark(#032d60/#03234d, #aacbff/#78b0fd)"
+      },
+      "onSurface": {
+        "on-surface-1": "light-dark(#5c5c5c, #aeaeae) body/labels/placeholder",
+        "on-surface-2": "light-dark(#2e2e2e, #e5e5e5) secondary headings, filled inputs",
+        "on-surface-3": "light-dark(#03234d, #d8e6fe) titles (navy, not black)"
+      },
+      "border": {
+        "border-1": "light-dark(#c9c9c9, #444) decorative/divider",
+        "border-2": "light-dark(#5c5c5c, #757575) interactive controls"
+      }
+    },
+    "accents": {
+      "brand-reference-ramp (Cosmos, --slds-r-color-brand-N)": {
+        "5": "#000314",
+        "10": "#001642",
+        "15": "#001e5b",
+        "20": "#002775",
+        "30": "#022ac0",
+        "35": "#003ecd",
+        "40": "#0250d9",
+        "45": "#045dec",
+        "50": "#066afe",
+        "55": "#287efe",
+        "60": "#4992fe",
+        "65": "#5f9ffe",
+        "70": "#7cb1fe",
+        "80": "#a8cbff",
+        "85": "#c2daff",
+        "90": "#d6e6ff",
+        "95": "#edf4ff"
+      },
+      "accent-1": "brand-50 #066afe (large text/icons)",
+      "accent-2": "light-dark(brand-40 #0250d9, brand-70 #7cb1fe) text, links, hover",
+      "accent-3": "light-dark(brand-30 #022ac0, brand-80 #a8cbff)",
+      "accent-container-1": "brand-50 #066afe, pair with on-accent-1 #fff",
+      "lightningBlueBrand50": "#0176d3",
+      "blue-palette": {
+        "10": {
+          "light": "#001639",
+          "dark": "#d8e6fe"
+        },
+        "15": {
+          "light": "#03234d",
+          "dark": "#c2d8ff"
+        },
+        "20": {
+          "light": "#032d60",
+          "dark": "#aacbff"
+        },
+        "30": {
+          "light": "#014486",
+          "dark": "#78b0fd"
+        },
+        "40": {
+          "light": "#0b5cab",
+          "dark": "#1b96ff"
+        },
+        "50": {
+          "light": "#0176d3",
+          "dark": "#0176d3",
+          "note": "pivot step, identical in both modes"
+        },
+        "60": {
+          "light": "#1b96ff",
+          "dark": "#0b5cab"
+        },
+        "65": {
+          "light": "#57a3fd",
+          "dark": "#044f98"
+        },
+        "70": {
+          "light": "#78b0fd",
+          "dark": "#014486"
+        },
+        "80": {
+          "light": "#aacbff",
+          "dark": "#032d60"
+        },
+        "90": {
+          "light": "#d8e6fe",
+          "dark": "#001639"
+        },
+        "95": {
+          "light": "#eef4ff",
+          "dark": "#000310"
+        }
+      },
+      "otherPalettes": "cloud-blue, electric-blue, green, hot-orange, indigo, orange, pink, purple, red, teal, violet, yellow: each 14 steps 10,15,20,30,40,50,60,65,70,80,90,95 plus neutral 0..100"
+    },
+    "semantic": {
+      "cosmos": {
+        "info": "blue family, 50 = #0176d3",
+        "success": "teal-green family, 50 = #0b827c (text 40 = #056764)",
+        "error": "pink-magenta family, 50 = #e3066a (text 40 = #b60554)",
+        "warning": "amber-brown family, 50 = #a96504 (text 40 = #8c4b02)"
+      },
+      "lightningBlue": {
+        "info": "neutral grey (#757575 at 50)",
+        "success": "#2e844a at 50",
+        "error": "#ea001e at 50",
+        "warning": "#a96404 at 50"
+      },
+      "containers": "{error|warning|success|info}-container-1 = light-dark(step 90, step 30), paired with on-{state}-1 = light-dark(step 40, step 90)",
+      "disabled": "disabled-1 #757575, disabled-container-1 light-dark(#e5e5e5, #2e2e2e)"
+    },
+    "darkMode": "Native CSS: every token is light-dark(lightValue, darkValue) driven by color-scheme; dark values are produced by MIRRORING the lightness ladder (palette step N dark = step (100-N) light, e.g. neutral-10 #181818 <-> neutral-90 #e5e5e5; blue-40 <-> blue-60), with step 50 as the fixed pivot that is identical in both modes (flagged 'static'). Components therefore reference semantic tokens and never branch. Surface-1 #fff -> #242424, not black; shadows double opacity in dark (e.g. #0000002e -> #0000005c); backdrop is color-mix(in oklab, neutral-20/95, transparent 20%). A 'Theme' is a class (.slds-theme_cosmos / lightning-blue) on :root; the source palette is authored in OKLCH and converted to hex at build.",
+    "contrastNotes": "Computed 2026-10-08: on-surface-1 #5c5c5c on white 6.69:1; neutral-50 #757575 4.61:1 (lowest step that passes small text, hence the pivot); border-1 #c9c9c9 only 1.66:1 (decorative dividers) while border-2 #5c5c5c is 6.69:1 (controls): the system forces the choice by role; white on Cosmos accent-container brand-50 #066afe 4.67:1; white on Lightning Blue #0176d3 4.63:1; accent-2 #0250d9 on white 6.66:1; Cosmos error text #b60554 6.69:1; dark on-surface-1 #aeaeae on #242424 7.0:1; dark border-2 #757575 on #242424 3.37:1. Rules in the docs: always pair on-surface with surface, on-accent with accent-container, on-{state} with {state}-container; border-2 for interactive, border-1 for presentational; the *-base-NN tokens carry comments such as 'if used as a background use Base 100-65 to meet accessibility', i.e. permitted foreground steps are listed per background step. WCAG 2.1 AA is the stated target."
+  },
+  "spacing": {
+    "base": "4px rem steps (0.25rem), 12-step scale; values in rem so they follow user font size",
+    "scale": [
+      4,
+      8,
+      12,
+      16,
+      24,
+      32,
+      40,
+      48,
+      56,
+      64,
+      72,
+      80
+    ],
+    "sizing": "separate sizing scale spacing != sizing: 2,4,8,12,16,20,24,28,32,48,64,80,160,240,320,480 (sizing-1..16) plus border widths 1,2,3,4 and ch measures"
+  },
+  "radius": {
+    "scale": [
+      4,
+      8,
+      12,
+      20,
+      15000
+    ],
+    "rule": "Cosmos: radius-border-1..4 = 4, 8, 12, 20px, pill 15rem, circle 100%. Buttons use pill; containers (cards, modals) use radius-4 = 20px (container-radius-border), inputs radius-2 = 8px, badges radius-1. Lightning Blue: 2, 4, 8, 16px; buttons/inputs use radius-2 = 4px. Radius is a theme-level decision exposed only through four steps plus pill/circle; components pick a step, never a pixel value."
+  },
+  "depth": {
+    "shadows": [
+      "shadow-1 (cosmos): 0 0 2px light-dark(#0000002e,#0000005c), 0 2px 2px light-dark(#0000002e,#0000005c), 0 -1px 2px light-dark(#0000001a,#00000033)",
+      "shadow-2: 0 0 5px #00000029|#00000052, 0 3px 3px same, 0 -1px 2px #00000017|#0000002e",
+      "shadow-3: 0 0 7px #00000024|#00000047, 0 5px 5px same, 0 -1px 2px #00000014|#00000029",
+      "shadow-4: 0 0 10px #0000001f|#0000003d, 0 7px 7px same, 0 -1px 3px #00000012|#00000024 (shadow-5 and 6 alias 4)",
+      "shadow-block-start-N / block-end / inline-start / inline-end variants (flip for docked panels, RTL-safe)",
+      "Lightning Blue shadows are single-layer: 0 2px 2px #0000001a, 0 2px 3px #00000027, 0 2px 4px #00000027, 0 2px 5px #00000027",
+      "focus: shadow-outset-focus-1 = 0 0 0 2px neutral-100(surface) + 0 0 0 4px brand-base-15 (dark navy #001e5b in light)"
+    ],
+    "borders": "Container default border 0 in Cosmos (separation by shadow/surface), border 1px in Lightning Blue cards. Footer rule 1px. Input border 1px solid border-2 with inset 3-layer shadow on focus; invalid inputs use error-container fill. Selected table row = brand-base-90 fill + 2px inset focus shadow.",
+    "blur": "Only the modal backdrop: color-mix(in oklab, palette neutral-20 (light) / neutral-95 (dark), transparent 20%), no backdrop-filter specified."
+  },
+  "motion": {
+    "durationsMs": [
+      0,
+      50,
+      100,
+      200,
+      400,
+      3200,
+      4800,
+      9600
+    ],
+    "easings": [
+      "ease-in-out (150ms transform + box-shadow on brand buttons)",
+      "linear (0.1s modal container, border/background)",
+      "cubic-bezier(0.55, 0.085, 0.68, 0.53)",
+      "cubic-bezier(0, 1.11, 0.7, 1.43) (overshoot, used 8x)",
+      "cubic-bezier(0.07, 0.49, 0.5, 1)",
+      "cubic-bezier(0.39, 0.575, 0.565, 1) (0.25s background)",
+      "cubic-bezier(0, 0.3, 0.15, 1) (250ms transform)"
+    ],
+    "notes": "Named duration tokens: instantly 0, immediately 0.05s (3 frames), quickly 0.1s (6 frames), promptly 0.2s (12 frames), slowly 0.4s (24 frames), paused 3.2s, toast-short 4.8s, toast-medium 9.6s. Tokens are annotated in frames at 60fps. No easing tokens exist: easings are hard-coded in component CSS, so motion is the least systematised layer. Cosmos brand buttons lift on hover: transform translateY(-2px) with a 0 2px 0 solid brand-20 shadow; bordered buttons lift 1.5px; active state is a triple inset shadow (pressed-in)."
+  },
+  "density": {
+    "modes": [
+      "comfy (default)",
+      "compact"
+    ],
+    "controlHeightsPx": {
+      "default input/button line-height": 30,
+      "default button/input box (30 + 2px border)": 32,
+      "small button (line-height sizing-8 28px, min-height sizing-9 32px)": "as authored in CSS; ambiguous, unknown which dominates",
+      "density mechanism": "--slds-g-spacing-var-N, -var-block-N, -var-inline-N and --slds-g-font-scale-var-N tokens whose value switches between comfy and compact; comfy spacing-var 1..12 = 4,8,12,16,24,32,40,48,56,64,72,80px; compact = 2,2,4,8,12,16,24,32,40,48,56,64px; block compact = 2,4,8,8,12,16,24,32,...; inline compact = 2,4,8,12,12,16,24,...",
+      "font-scale-var compact": "var-1 14, var-2 14 (from 16), var-3 16 (from 20), var-4 20 (from 24), 5-8 unchanged"
+    }
+  },
+  "components": {
+    "count": 89,
+    "list": [
+      "accordion",
+      "activityTimeline",
+      "alert",
+      "appLauncher",
+      "avatar",
+      "avatarGroup",
+      "badge",
+      "brandBand",
+      "breadcrumbs",
+      "builderHeader",
+      "button",
+      "buttonDualStateful",
+      "buttonGroup",
+      "buttonIcon",
+      "buttonStateful",
+      "card",
+      "carousel",
+      "chat",
+      "checkbox",
+      "checkboxButton",
+      "checkboxButtonGroup",
+      "checkboxToggle",
+      "colorPicker",
+      "combobox",
+      "counter",
+      "dataTable",
+      "datepicker",
+      "datetimePicker",
+      "dockedComposer",
+      "dockedFormFooter",
+      "dockedUtilityBar",
+      "dropZone",
+      "duelingPicklist",
+      "dynamicIcons",
+      "dynamicMenu",
+      "expandableSection",
+      "expression",
+      "feed",
+      "file",
+      "fileSelector",
+      "form-element",
+      "globalHeader",
+      "globalNavigation",
+      "icon",
+      "illustration",
+      "input",
+      "lookup",
+      "map",
+      "markdown",
+      "menu",
+      "modal",
+      "notifications",
+      "pageHeader",
+      "panel",
+      "path",
+      "pathSimple",
+      "picklist",
+      "pill",
+      "popover",
+      "progressBar",
+      "progressIndicator",
+      "progressRing",
+      "prompt",
+      "publisher",
+      "radioButtonGroup",
+      "radioGroup",
+      "regions",
+      "richTextEditor",
+      "scopedNotifications",
+      "select",
+      "setupAssistant",
+      "slider",
+      "spinner",
+      "splitView",
+      "summaryDetail",
+      "tabs",
+      "template",
+      "textarea",
+      "tile",
+      "toast",
+      "tooltip",
+      "treeGrid",
+      "trees",
+      "trialBar",
+      "utilities",
+      "verticalNavigation",
+      "visualPicker",
+      "welcomeMat",
+      "wizard"
+    ],
+    "stateMatrixCompleteness": "Component CSS exposes the most state hooks of the four systems: e.g. button has per-variant (brand, neutral, destructive, success, inverse, outline-brand, stateful) hooks for color-background, -hover, -active, color-border, -hover, -active, text-color, -hover, -active, shadow, shadow-focus, shadow-hover, radius, spacing inline/block; 275 distinct --slds-c-* component hooks and 113 --slds-s-* shared hooks are referenced by the stylesheet, resolved through a fallback chain var(--slds-c-X, var(--slds-s-Y, var(--slds-g-Z))). Variants: sizes (small/default/large via utility classes), states hover, focus(-visible), active, disabled, selected, invalid, plus 'stateful' toggles. Sizes are not expressed as a systematic XS-XL ladder. Count is the number of component folders in design-system-2/dist/components."
+  },
+  "tokenArchitecture": "Four scopes expressed in the custom-property name: --slds-r-* reference (raw theme palettes, e.g. --slds-r-color-brand-50), --slds-g-* GLOBAL (the public styling hooks: surface, on-surface, border, accent, accent-container, feedback, palette, spacing, sizing, font, radius, shadow, duration, density 'var' variants), --slds-s-* SHARED (cross-component roles: button, input, container, table, link, navigation, pageheader, label), --slds-c-* COMPONENT (per-component overrides). Every component declaration is the cascade var(--slds-c-comp-prop, var(--slds-s-role-prop, var(--slds-g-token))), so a brand can override at any scope. Source is W3C DTCG JSON built by Style Dictionary with transforms name/kebab, light-dark-css-var, oklch-to-hex; outputs CSS, JSON, Android Kotlin and iOS Swift. Themes (Cosmos, Lightning Blue) are classes on :root with identical token names (theme parity is validated). Officially only global hooks are a supported consumer API ('do not reassign globals'); shared/component hooks are described as unsupported in SLDS 2 by Salesforce developer docs (secondary source, not verified on the JS-rendered docs site) even though the shipped CSS still reads them.",
+  "distinctiveness": "Semantic colour roles that always come in pairs (surface / on-surface, accent-container / on-accent, error-container / on-error) with a numeric rank 1..3; navy-tinted titles (on-surface-3 #03234d) rather than black; Cosmos pill buttons that physically lift (translateY(-2px) + hard 2px under-shadow), 20px container radius and shadow-separated cards; a pink/magenta error and teal success in Cosmos; comfy/compact density as first-class tokens; default hue is a vivid electric blue (#066afe).",
+  "weaknesses": [
+    "13px base size and system-ui stack give no typographic personality",
+    "documentation site is JS-rendered and partly gated; the open source repo is private and the licence is custom",
+    "scope story is confusing: shipped CSS reads --slds-c and --slds-s hooks while docs say only --slds-g is supported",
+    "no easing tokens, no component-size ladder, density only through a few spacing/font vars",
+    "Cosmos feedback colours (pink error, teal success) break conventional red/green semantics and rely on icons/text",
+    "line-height for sizes is a single multiplier, not per-size optical values"
+  ],
+  "takeaways": [
+    "Pairing contract: every background role has a named foreground role (surface/on-surface, accent-container/on-accent); contrast is guaranteed by the pairing, so designers never pick text colours freehand",
+    "Mirror the lightness ladder for dark mode with a fixed pivot step that stays identical, and use CSS light-dark() so components never branch",
+    "Document the permitted foreground steps per background step in the token description (e.g. 'if used as background use Base 100-65')",
+    "Resolve every property through a three-tier var() fallback chain (component > shared > global) so brands override at the right altitude",
+    "Express density as paired comfy/compact token values (spacing-var, font-scale-var) switched in one place",
+    "Decorative border-1 vs interactive border-2: two border colours chosen by role, not by taste",
+    "Annotate duration tokens in frames (50ms = 3 frames) and keep a short named set (immediately, quickly, promptly, slowly)",
+    "Theme = class on :root with identical token names; validate parity between themes automatically"
+  ]
+}

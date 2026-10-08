@@ -1,0 +1,324 @@
+{
+  "name": "Preline UI 5",
+  "slug": "preline",
+  "vendor": "Preline Labs Ltd. (Htmlstream)",
+  "url": "https://preline.co/docs/",
+  "licence": "Dual: MIT + 'Preline UI Fair Use License' (no competing component library; attribution for sold derivative templates/themes). npm preline@5.0.0. Pro is commercial (not studied).",
+  "studiedOn": "2026-10-08",
+  "personality": [
+    "clean",
+    "component-rich",
+    "neutral",
+    "enterprise-friendly",
+    "themeable"
+  ],
+  "bestFor": [
+    "HTML-first or any-framework apps needing JS plugins (advanced select, datatables, tree view, stepper)",
+    "studying the most granular semantic token set in the Tailwind world (navbar-*, sidebar-*, dropdown-*, per-state)",
+    "warm or muted alternative themes (harvest, cashmere, olive)"
+  ],
+  "avoidFor": [
+    "brand-led marketing with a strong voice",
+    "React-API-first projects (behaviour is vanilla JS plugins via hs-* classes)"
+  ],
+  "typography": {
+    "families": [
+      "default: Tailwind --font-sans (Inter on preline.co docs; not set in theme.css)",
+      "--font-custom-serif: 'Domine'",
+      "--font-custom-mono: 'Kode Mono'"
+    ],
+    "scale": [
+      {
+        "role": "button / input (sm:)",
+        "sizePx": 14,
+        "lineHeightPx": 20,
+        "weight": 500,
+        "trackingEm": 0
+      },
+      {
+        "role": "input mobile",
+        "sizePx": 16,
+        "lineHeightPx": 24,
+        "weight": 400,
+        "trackingEm": 0
+      },
+      {
+        "role": "docs UI chips",
+        "sizePx": 13,
+        "lineHeightPx": "unknown",
+        "weight": 500,
+        "trackingEm": 0
+      },
+      {
+        "role": "tw text-xs",
+        "sizePx": 12,
+        "lineHeightPx": 16,
+        "weight": "any",
+        "trackingEm": 0
+      },
+      {
+        "role": "tw text-sm",
+        "sizePx": 14,
+        "lineHeightPx": 20,
+        "weight": "any",
+        "trackingEm": 0
+      },
+      {
+        "role": "tw text-base",
+        "sizePx": 16,
+        "lineHeightPx": 24,
+        "weight": "any",
+        "trackingEm": 0
+      },
+      {
+        "role": "tw text-lg",
+        "sizePx": 18,
+        "lineHeightPx": 28,
+        "weight": "any",
+        "trackingEm": 0
+      },
+      {
+        "role": "tw text-xl",
+        "sizePx": 20,
+        "lineHeightPx": 28,
+        "weight": "any",
+        "trackingEm": 0
+      },
+      {
+        "role": "tw text-2xl",
+        "sizePx": 24,
+        "lineHeightPx": 32,
+        "weight": "any",
+        "trackingEm": 0
+      },
+      {
+        "role": "tw text-3xl",
+        "sizePx": 30,
+        "lineHeightPx": 36,
+        "weight": "any",
+        "trackingEm": 0
+      },
+      {
+        "role": "tw text-4xl",
+        "sizePx": 36,
+        "lineHeightPx": 40,
+        "weight": "any",
+        "trackingEm": 0
+      },
+      {
+        "role": "tw text-5xl",
+        "sizePx": 48,
+        "lineHeightPx": 48,
+        "weight": "any",
+        "trackingEm": 0
+      }
+    ],
+    "notes": "No custom type scale; Tailwind defaults. Inputs step 16px -> 14px at sm like Catalyst."
+  },
+  "color": {
+    "model": "oklch (Tailwind palette + custom preline-khaki / preline-mauve / preline-avocado / avocado-soft ramps)",
+    "neutrals": {
+      "background": "white",
+      "background-1": "gray-50",
+      "background-2": "gray-100",
+      "foreground": "gray-800",
+      "border": "gray-200",
+      "border-line-1..8": "gray-100..gray-800",
+      "layer": "white (line gray-200, hover gray-50)",
+      "surface": "gray-100 (surface-1..5 = gray-200..600)",
+      "muted": "gray-50; muted-foreground gray-400, -1 gray-500, -2 gray-600"
+    },
+    "accents": {
+      "primary": "blue-600 (hover/focus/active blue-700), primary ramp 50-950 = blue",
+      "secondary": "gray-900 (hover gray-800)"
+    },
+    "semantic": {
+      "destructive": "red-500 (hover red-600), foreground white",
+      "chart": "chart-primary + chart-1..10"
+    },
+    "themes": {
+      "default": "blue-600 primary on gray neutrals; high contrast",
+      "harvest": "light: khaki neutrals (bg-1 khaki-50, fg khaki-800, border khaki-200), primary amber ramp at 700; dark: stone-800/900, primary 300. Vendor: warm, low-contrast, for long sessions",
+      "retro": "radius 0 everywhere (--radius-ui 0, all --radius-* 0), every border neutral-800, fuchsia-500 primary with neutral-800 primary-line. Vendor: bold, nostalgic, sharp",
+      "ocean": "cyan ramp primary at 600; dark gray-800/900",
+      "autumn": "stone neutrals, amber primary at 500; dark primary-200 on neutral-900",
+      "moon": "gray ramp as primary at 800 (dark: white primary); deep navy, low saturation, night-friendly",
+      "bubblegum": "mauve neutrals, pink-600 primary; playful",
+      "cashmere": "stone neutrals, preline-mauve primary at 600 (dark 400); dusty rose, quietly premium",
+      "olive": "avocado-soft neutrals, avocado primary at 600; muted green, grounded"
+    },
+    "darkMode": ".dark class re-maps the semantic set; themes are activated by data-theme='theme-<name>' on :root and each theme ships its own dark block.",
+    "contrastNotes": "Harvest, cashmere and olive deliberately lower contrast (vendor copy says 'low-contrast, eye-friendly'); verify muted-foreground (khaki/stone-400) against AA for body text."
+  },
+  "spacing": {
+    "base": "Tailwind 4px",
+    "scale": "Tailwind default"
+  },
+  "radius": {
+    "scale": [
+      {
+        "name": "xs",
+        "px": 2
+      },
+      {
+        "name": "sm",
+        "px": 4
+      },
+      {
+        "name": "md",
+        "px": 6
+      },
+      {
+        "name": "lg",
+        "px": 8
+      },
+      {
+        "name": "xl",
+        "px": 12
+      },
+      {
+        "name": "2xl",
+        "px": 16
+      },
+      {
+        "name": "3xl",
+        "px": 24
+      },
+      {
+        "name": "4xl",
+        "px": 32
+      },
+      {
+        "name": "full",
+        "px": "calc(infinity*1px)"
+      }
+    ],
+    "rule": "Buttons and inputs rounded-lg (8px); docs chips rounded-sm. Themes can zero all radii (retro) by overriding --radius-* and a --radius-ui utility hook."
+  },
+  "depth": {
+    "shadows": [
+      "Tailwind defaults; shadow-sm on active tab"
+    ],
+    "borders": "1px; border colour from a numbered 8-step line scale (line-1..8) so a component picks contrast by number",
+    "blur": "unknown (not in theme)"
+  },
+  "motion": {
+    "durationsMs": "unknown (component plugin CSS not studied in depth)",
+    "easings": "unknown",
+    "notes": "Behaviour in vanilla JS plugins (hs-dropdown, hs-overlay, hs-tab). v5 adds 'Animated Icons' in plain SVG + keyframes."
+  },
+  "density": {
+    "modes": [
+      "sm",
+      "default",
+      "lg"
+    ],
+    "controlHeightsPx": {
+      "button default": 46,
+      "button small (py-2 px-3)": 38,
+      "input default": 46,
+      "input small": "38 (sm:)",
+      "computation": "20px line + py-3 x2 + 2px border, computed from docs classes"
+    }
+  },
+  "components": {
+    "count": 80,
+    "list": [
+      "Accordion",
+      "Alerts",
+      "Avatar",
+      "Avatar Group",
+      "Badge",
+      "Blockquote",
+      "Buttons",
+      "Button Group",
+      "Cards",
+      "Chat Bubbles",
+      "Carousel",
+      "Collapse",
+      "Datepicker",
+      "Devices",
+      "Lists",
+      "List Group",
+      "Legend Indicator",
+      "Progress",
+      "File Uploading Progress",
+      "Ratings",
+      "Skeleton",
+      "Spinners",
+      "Styled Icons",
+      "Toasts",
+      "Timeline",
+      "Tree View",
+      "Marquee",
+      "Navbar",
+      "Mega Menu",
+      "Navs",
+      "Tabs",
+      "Sidebar",
+      "Scrollspy",
+      "Breadcrumb",
+      "Pagination",
+      "Stepper",
+      "Input",
+      "Input Group",
+      "Textarea",
+      "File Input",
+      "Checkbox",
+      "Radio",
+      "Switch",
+      "Select",
+      "Range Slider",
+      "Color Picker",
+      "TimePicker",
+      "Advanced Select",
+      "ComboBox",
+      "SearchBox",
+      "Input Number",
+      "Strong Password",
+      "Toggle Password",
+      "Toggle Count",
+      "Copy Markup",
+      "PIN Input",
+      "Dropdown",
+      "Context Menu",
+      "Modal",
+      "Offcanvas (Drawer)",
+      "Popover",
+      "Tooltip",
+      "Tables",
+      "Advanced Range Slider",
+      "Advanced Datepicker",
+      "Charts",
+      "Clipboard",
+      "Confetti Animation",
+      "Datamaps",
+      "Datatables",
+      "Drag and Drop",
+      "File Upload",
+      "Maps",
+      "Toast Notifications",
+      "WYSIWYG Editor",
+      "Container",
+      "Columns",
+      "Grid",
+      "Layout Splitter",
+      "Custom Scrollbar"
+    ],
+    "stateMatrixCompleteness": "High in tokens: every interactive role has -hover, -focus, -active (and primary -checked) tokens, so state colours are themeable. Disabled = opacity-50 + pointer-events-none."
+  },
+  "tokenArchitecture": "Three layers: Tailwind palette -> :root semantic vars (--primary, --layer, --surface, --navbar-nav-hover...) -> @theme inline maps to utilities (bg-primary, border-layer-line). ~170 semantic tokens including per-region sets (navbar, navbar-1, navbar-2, sidebar x3, card, dropdown, select, overlay, popover, tooltip, table, footer, scrollbar, chart x10).",
+  "distinctiveness": "Per-state and per-region tokens: a theme can recolour 'sidebar nav hover' without touching buttons. Themes also retune the neutral family (khaki, mauve, avocado-soft) rather than only the accent, which is what makes harvest/olive feel different.",
+  "weaknesses": [
+    "Token explosion (~170) is hard to author by hand",
+    "Default theme is generic blue-600 + gray",
+    "Fair-use clause restricts building a competing library",
+    "Motion and depth not tokenised"
+  ],
+  "takeaways": [
+    "Retint the neutrals, not just the accent: a khaki or avocado-soft neutral ramp changes temperature more than any brand colour.",
+    "Tokenise state per role (-hover/-focus/-active/-checked) so themes own interaction colour.",
+    "A 'retro' theme is mostly radius 0 + every border at the foreground colour: brutalism as two knobs."
+  ],
+  "provenance": "mixed (theme.css from npm preline@5.0.0 and css/themes/*.css from GitHub main; sizes computed from docs markup)"
+}

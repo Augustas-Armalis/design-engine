@@ -1,0 +1,117 @@
+{
+  "name": "PatternFly 6",
+  "slug": "patternfly",
+  "vendor": "Red Hat",
+  "url": "https://www.patternfly.org ; source https://github.com/patternfly/patternfly",
+  "licence": "MIT (@patternfly/patternfly 6.6.1, @patternfly/react-tokens 6.6.1)",
+  "studiedOn": "2026-10-08",
+  "personality": ["enterprise", "open", "rounded-modern", "accessible", "themeable"],
+  "bestFor": [
+    "enterprise and hybrid-cloud consoles, admin tools, open-source product UIs",
+    "products needing light, dark, high-contrast and brand ('felt') themes from one token set",
+    "teams that want framework-agnostic CSS (core) plus React components",
+    "complex navigation shells (Masthead, Nav, Page, Sidebar, NotificationDrawer, Wizard)"
+  ],
+  "avoidFor": [
+    "consumer or marketing pages needing a distinctive voice (reads as Red Hat console)",
+    "very small bundles (core CSS is large; tokens number in the thousands)",
+    "teams that dislike deep token indirection (5+ hops from component var to hex)"
+  ],
+  "typography": {
+    "families": [
+      "body (family-100): 'Red Hat Text', 'RedHatText', Noto Sans Arabic/Hebrew/JP/KR/Malayalam/SC/TC/Thai, Helvetica, Arial, sans-serif",
+      "heading (family-200): 'Red Hat Display', ... same Noto fallbacks",
+      "mono (family-300): 'Red Hat Mono', 'RedHatMono', 'Courier New', Courier, monospace"
+    ],
+    "scale": [
+      {"role": "4xl (display)", "sizePx": 36, "lineHeightPx": 46.8, "weight": "600 heading-default / 800 heading-bold", "trackingEm": "unknown (none tokenised)"},
+      {"role": "3xl", "sizePx": 28, "lineHeightPx": 36.4, "weight": 600, "trackingEm": "unknown"},
+      {"role": "h1 (2xl)", "sizePx": 24, "lineHeightPx": 31.2, "weight": 600, "trackingEm": "unknown"},
+      {"role": "h2 (xl)", "sizePx": 20, "lineHeightPx": 26, "weight": 600, "trackingEm": "unknown"},
+      {"role": "h3 (lg)", "sizePx": 18, "lineHeightPx": 23.4, "weight": 600, "trackingEm": "unknown"},
+      {"role": "h4-h6 (md)", "sizePx": 16, "lineHeightPx": 20.8, "weight": 600, "trackingEm": "unknown"},
+      {"role": "body-lg", "sizePx": 16, "lineHeightPx": 24, "weight": 400, "trackingEm": "unknown"},
+      {"role": "body-default", "sizePx": 14, "lineHeightPx": 21, "weight": "400 (bold 600)", "trackingEm": "unknown"},
+      {"role": "body-sm", "sizePx": 12, "lineHeightPx": 18, "weight": 400, "trackingEm": "unknown"}
+    ],
+    "notes": "Sizes in rem (0.75-2.25rem). Two line-heights only: heading 1.3, body 1.5 (px values above are derived). Display face for headings, Text face for body: a true optical pairing from one superfamily. Body default is 14px. Global Noto fallbacks give multi-script coverage in the stack itself."
+  },
+  "color": {
+    "model": "hex (palette), rgb() with alpha for overlays/glass",
+    "neutrals": {
+      "gray-10": "#f2f2f2", "gray-20": "#e0e0e0", "gray-30": "#c7c7c7", "gray-40": "#a3a3a3", "gray-50": "#707070",
+      "gray-60": "#4d4d4d", "gray-70": "#383838", "gray-80": "#292929", "gray-90": "#1f1f1f", "gray-95": "#151515", "white": "#ffffff"
+    },
+    "accents": {
+      "brand-default (blue-50)": "#0066cc", "brand-hover (blue-60)": "#004d99", "dark brand-default": "#92c5f9", "dark brand-hover": "#b9dafc",
+      "red-50 (Red Hat red)": "#ee0000", "teal-50": "#37a3a3", "purple-50": "#5e40be", "yellow-40": "#dca614"
+    },
+    "semantic": {
+      "background-primary-default": "#ffffff / dark #292929",
+      "background-secondary-default": "#f2f2f2 / dark #151515",
+      "background-floating-default": "#ffffff / dark #383838",
+      "text-regular": "#151515 / dark #ffffff", "text-subtle": "#4d4d4d / dark #c7c7c7", "text-link-default": "#0066cc / dark #b9dafc",
+      "border-default": "#e0e0e0 / dark #4d4d4d",
+      "status-danger": "#b1380b (red-orange-60) / dark #f0561d", "status-success": "#3d7317 / dark #87bb62",
+      "status-warning": "#ffcc17 (both)", "status-info": "#5e40be (purple) / dark #b6a6e9", "status-custom": "#147878 / dark #63bdbd",
+      "other families": "nonstatus (on-blue, on-teal...), severity, favorite, disabled, unread/read",
+      "focus-ring": "#0066cc / dark #92c5f9"
+    },
+    "darkMode": "Class switch .pf-v6-theme-dark on <html> remaps semantic tokens (tokens-dark.scss ~444 overrides). Dark uses #151515 as the page (secondary) and lighter #292929 for primary surfaces and #383838 for floating: surfaces get LIGHTER as they rise. Also .pf-v6-theme-high-contrast (+dark), .pf-v6-theme-felt (Red Hat brand: pill controls, brand accent) and .pf-v6-theme-glass (translucent surfaces, 16px backdrop blur, background image) compose with each other.",
+    "contrastNotes": "Measured: brand #0066cc vs white 5.57:1; text-subtle #4d4d4d vs white 8.45:1; danger #b1380b vs white 6.10:1; dark link #b9dafc / brand #92c5f9 vs #292929 8.02:1. Info is purple not blue, so info never collides with links/brand. Dedicated high-contrast themes exist rather than relying on one palette for all users."
+  },
+  "spacing": {
+    "base": "4px (0.25rem) then 8px steps doubling to 16px+",
+    "scale": [4, 8, 16, 24, 32, 48, 64, 80],
+    "notes": "spacer-100..800 = xs..4xl. Semantic spacers by relationship: control vertical compact/default/spacious 4/8/16; control horizontal 8/16/24; action (button) horizontal compact/default/spacious 16/24/32; gap text-to-element 4 (compact) / 8; control-to-control 4; action-to-action 16; group-to-group vertical 24 (compact 16), horizontal 48 (compact 8); gutter 16; page-chrome inset 24 (glass 16)."
+  },
+  "radius": {
+    "scale": [0, 4, 6, 16, 24, "pill 999px"],
+    "rule": "Named sharp/tiny/small/medium/large/pill. Actions (buttons) default to PILL; plain (icon) actions and form controls 6px (small); cards/glass panels 16px (medium). Felt theme makes controls pill too."
+  },
+  "depth": {
+    "shadows": [
+      "sm: 0 1px 6px 0 rgb(41,41,41,.15) (dark rgba(0,0,0,.5))",
+      "md: 0 4px 10px 0 rgb(41,41,41,.15)",
+      "lg: 0 10px 20px 0 rgb(41,41,41,.15)",
+      "directional variants (top/bottom/left/right) exist as separate X/Y tokens"
+    ],
+    "borders": "1px regular, 2px, 3px widths; border-default #e0e0e0; high-contrast themes turn on otherwise transparent borders (border-color-high-contrast).",
+    "blur": "glass theme only: backdrop blur(16px) on primary surfaces with 60% white"
+  },
+  "motion": {
+    "durationsMs": [50, 100, 200, 300, 400, 500, 600],
+    "easings": [
+      "accelerate cubic-bezier(.4,0,.7,.2)",
+      "default cubic-bezier(.4,0,.2,1)",
+      "decelerate cubic-bezier(0,0,.2,1)"
+    ],
+    "notes": "Purpose-named durations: icon short/default/long 50/100/200; fade 100/200/300; slide-in and slide-out 300/400/500. Delays none 0 / short 50 / default 100 / long 7000ms (toast auto-dismiss scale)."
+  },
+  "density": {
+    "modes": ["compact", "default", "spacious (per-component via spacer tokens and modifiers)"],
+    "controlHeightsPx": {"button default (derived: 21px line + 2x8px)": 37, "button compact (derived: 21 + 2x4)": 29, "button display-lg (derived: 21 + 2x16)": 53, "form control": "unknown exact (padding via __input tokens)"}
+  },
+  "components": {
+    "count": 79,
+    "list": ["AboutModalBox", "Accordion", "ActionList", "Alert", "Avatar", "BackToTop", "Backdrop", "BackgroundImage", "Badge", "Banner", "Brand", "Breadcrumb", "Button", "CalendarMonth", "Card", "Check", "ClipboardCopy", "CodeBlock", "CodeEditor", "Compass", "Content", "DataList", "DatePicker", "DescriptionList", "Divider", "DragDrop", "Drawer", "DualListSelector", "EmptyState", "ExpandableSection", "FileUpload", "Form", "FormControl", "HelperText", "Hero", "Hint", "Icon", "InlineEdit", "InputGroup", "JumpLinks", "Label", "List", "Login", "Masthead", "Menu", "MenuToggle", "ModalBox", "MultipleFileUpload", "Nav", "NotificationDrawer", "NumberInput", "OverflowMenu", "Page", "Pagination", "Panel", "Popover", "Progress", "ProgressStepper", "Radio", "Sidebar", "SimpleList", "Skeleton", "SkipToContent", "Slider", "Spinner", "Switch", "TabContent", "Table", "Tabs", "TextInputGroup", "Tile", "Timestamp", "Title", "ToggleGroup", "Toolbar", "Tooltip", "TreeView", "Truncate", "Wizard"],
+    "stateMatrixCompleteness": "Very high: semantic tokens enumerate default/hover/clicked/disabled per concept (background-color-action-plain-hover, border-color-brand-clicked), plus read/unread, favourite, severity, on-<colour> text. Count = core CSS component directories in @patternfly/patternfly 6.6.1 (React adds more compositions)."
+  },
+  "tokenArchitecture": "Three layers, generated from Figma variables: palette (--pf-t--color--blue--50, never used directly) -> base (--pf-t--global--spacer--300, --pf-t--global--background--color--100; numeric names, no duplicate values within a concept) -> semantic (--pf-t--global--background--color--primary--default; the layer apps should use). Name schema from docs: --pf-t--[scope]--[component]--[property]--[concept]--[variant]--[state], segments omitted when not applicable. Components then define their own --pf-v6-c-<component>--<Property> CSS vars that point at semantic tokens. Themes are class-scoped re-assignments of the same names (dark, high-contrast, felt, glass, and combinations).",
+  "distinctiveness": "Composable theme classes (dark x high-contrast x felt x glass) on one token vocabulary; pill-shaped primary buttons in an enterprise system; Red Hat Display/Text optical pairing; relationship-named spacing (gap text-to-element, group-to-group, page-chrome inset); info status in purple; a glass theme with 16px backdrop blur as a supported enterprise option.",
+  "weaknesses": [
+    "Very deep var() chains make debugging and overriding slow",
+    "Several doc URLs moved (old /tokens/* paths 404); naming in docs and older third-party write-ups disagree",
+    "Large CSS payload",
+    "Warning yellow #ffcc17 is a fill colour only; it cannot carry text on white"
+  ],
+  "takeaways": [
+    "Three token layers with a hard rule: palette is never referenced by components, base only as a fallback, semantic by default",
+    "Name spacing by relationship (text-to-element, control-to-control, action-to-action, group-to-group) with compact/default/spacious variants",
+    "Ship accessibility themes (high-contrast, high-contrast-dark) as first-class class switches, composable with brand themes",
+    "In dark mode make raised surfaces lighter (page #151515 < card #292929 < floating #383838) instead of relying on shadows",
+    "Name durations by purpose (icon/fade/slide-in/slide-out x short/default/long) so components pick intent, not milliseconds",
+    "Use a non-blue info colour when blue is the brand/link colour"
+  ],
+  "provenance": "public-spec (@patternfly/patternfly@6.6.1 base/patternfly-variables.css and tokens/*.scss resolved by script; component CSS; patternfly.org design-tokens overview); contrast ratios measured by computation"
+}

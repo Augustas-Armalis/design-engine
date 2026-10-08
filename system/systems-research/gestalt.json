@@ -1,0 +1,137 @@
+{
+  "name": "Gestalt",
+  "slug": "gestalt",
+  "vendor": "Pinterest",
+  "url": "https://gestalt.pinterest.systems/ (docs site now Okta-gated for foundations pages; source at https://github.com/pinterest/gestalt)",
+  "licence": "Apache-2.0 (gestalt and gestalt-design-tokens package.json + repo LICENSE)",
+  "studiedOn": "2026-10-08",
+  "personality": ["content-first", "warm-neutral", "friendly", "restrained", "rounded", "image-led"],
+  "bestFor": [
+    "image/content-heavy consumer products (feeds, masonry grids, boards) where UI chrome must recede",
+    "consumer apps that need one bold brand colour used sparingly against near-black and warm off-white",
+    "multi-script international products (separate line-height token sets for CJK, Japanese, Thai, Vietnamese, tall scripts)",
+    "products shipping web + iOS + Android from one token source"
+  ],
+  "avoidFor": [
+    "dense B2B data tools (no compact density mode; controls start at 32px and go to 48px)",
+    "brands needing a cool/blue corporate feel (neutrals are warm, primary is Pinterest red #e60023)",
+    "teams that need public, ungated design guidance (foundations docs moved behind Okta sign-in in 2026)"
+  ],
+  "typography": {
+    "families": [
+      "default-latin (VR theme): 'Pin Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, ... Helvetica, Arial, sans-serif (Pin Sans is proprietary)",
+      "default-latin (classic theme): -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, ... (pure system stack)",
+      "default-japanese: 'SF Pro JP', -apple-system, ... 'Hiragino Kaku Gothic Pro', Meiryo, ...",
+      "code: 'SF Mono', 'Segoe UI Mono', 'Roboto Mono', 'Ubuntu Mono', Menlo, Consolas, Courier, monospace"
+    ],
+    "scale": [
+      {"role": "heading-lg", "sizePx": 36, "lineHeightPx": 40, "weight": 700, "trackingEm": "-0.5px (~-0.014em)"},
+      {"role": "heading-md", "sizePx": 28, "lineHeightPx": 31, "weight": 700, "trackingEm": "-0.5px (~-0.018em)"},
+      {"role": "heading-sm", "sizePx": 20, "lineHeightPx": 24, "weight": 500, "trackingEm": "0"},
+      {"role": "heading-xs", "sizePx": 16, "lineHeightPx": 22, "weight": 500, "trackingEm": "0"},
+      {"role": "heading-xxs", "sizePx": 14, "lineHeightPx": 20, "weight": 500, "trackingEm": "0"},
+      {"role": "body-lg", "sizePx": 20, "lineHeightPx": 28, "weight": "400 (700 emphasis)", "trackingEm": "0"},
+      {"role": "body-md", "sizePx": 16, "lineHeightPx": 22, "weight": "400 (700 emphasis)", "trackingEm": "0"},
+      {"role": "body-sm", "sizePx": 14, "lineHeightPx": 20, "weight": "400 (700 emphasis)", "trackingEm": "0"},
+      {"role": "body-xs", "sizePx": 12, "lineHeightPx": 17, "weight": "400 (700 emphasis)", "trackingEm": "0"},
+      {"role": "ui-lg", "sizePx": 20, "lineHeightPx": 24, "weight": 500, "trackingEm": "0"},
+      {"role": "ui-md", "sizePx": 16, "lineHeightPx": 19, "weight": 500, "trackingEm": "0"},
+      {"role": "ui-sm", "sizePx": 14, "lineHeightPx": 17, "weight": 500, "trackingEm": "0"},
+      {"role": "ui-xs", "sizePx": 12, "lineHeightPx": 16, "weight": 500, "trackingEm": "0"},
+      {"role": "compact-xs", "sizePx": 12, "lineHeightPx": 14, "weight": "400 (700 emphasis)", "trackingEm": "0"}
+    ],
+    "notes": "Only six sizes exist (12/14/16/20/28/36) and three weights (400/500/700 in VR; 400/600/700 classic). Three parallel roles share sizes but differ in leading: body (reading, ~1.4), ui (labels/controls, ~1.2), heading. Line-height tokens are swapped per script via separate CSS files: font-lineheight-default/-ck/-ja/-th/-vi/-tall.css. Docs: 'limited number of weights and sizes to keep our interfaces focused on our customers' rich content'."
+  },
+  "color": {
+    "model": "hex",
+    "neutrals": {
+      "grayscale-0": "#ffffff", "grayscale-25": "#fffef7", "grayscale-50": "#f5f4ed", "grayscale-100": "#e8e7e1",
+      "grayscale-150": "#c7c6c1", "grayscale-200": "#969292", "grayscale-250": "#757570", "grayscale-300": "#636361",
+      "grayscale-350": "#4c4c4a", "grayscale-400": "#2e2e2d", "grayscale-450": "#1c1b1b", "grayscale-500": "#000000",
+      "note": "warm/yellowish greys (VR theme); every base colour also has explicit -hover and -pressed variants, e.g. hover-grayscale-100 #d6d4cd, pressed-grayscale-100 #c2c1bc"
+    },
+    "accents": {
+      "red-100": "#ffd3d1", "red-200": "#ff9494", "red-300 (Pinterest primary)": "#e60023", "red-400": "#b2001a", "red-500": "#8a0f0f",
+      "blue-100": "#c5eaf7", "blue-400": "#007db8", "blue-500": "#215d82",
+      "green-100": "#d0e2a8", "green-400": "#517d3b", "green-500": "#265926",
+      "orange-100": "#fde7c9", "orange-400": "#f06d22", "orange-500": "#9b4b1c",
+      "purple-100": "#fcd8fc", "purple-400": "#8f4696", "purple-500": "#6d4270"
+    },
+    "semantic": {
+      "background-default": "grayscale-0 #ffffff (dark: grayscale-500 #000000)",
+      "background-secondary": "grayscale-100 #e8e7e1 (dark: grayscale-250)",
+      "background-primary": "red-300 #e60023 (both modes)",
+      "background-selected": "grayscale-500 #000 (dark: grayscale-100) - selection is black, not brand",
+      "background-elevation": "#fff (dark: grayscale-400 #2e2e2d)",
+      "background-{error,success,info,warning,recommendation,neutral}-weak/default": "100-step tint / 400-500 step solid",
+      "text-default": "grayscale-500 #000", "text-subtle": "grayscale-300 #636361", "text-neutral": "grayscale-350",
+      "text-link/info": "blue-500 #215d82", "text-error": "red-500 #8a0f0f", "text-success": "green-500", "text-warning": "orange-500",
+      "text-recommendation": "purple-500 (AI/recommendation role)",
+      "border-decorative": "grayscale-150", "border-interactive": "grayscale-250", "border-selected": "grayscale-500",
+      "focus": "double ring: inner grayscale-0 / outer blue-400 #007db8",
+      "wash/scrim": "background-wash-dark rgba(0,0,0,.8), wash-light rgba(255,255,255,.9), image-tint rgba(0,0,0,.04)"
+    },
+    "darkMode": "First-class: separate variables-dark.css per theme (classic + vr-theme). Default bg becomes pure black #000, elevated surfaces grayscale-400 #2e2e2d; text/icon default flip to white; primary red unchanged; shadows replaced by heavier rgba(0,0,0,.3) stacks; docs say raised borders in dark pair with elevationRaised background.",
+    "contrastNotes": "Docs: never use colour as the only cue. No numeric target found in the fetched source. Status text uses the darkest 500 step on light (e.g. text-error #8a0f0f) which reads as an AA-driven choice; measured: primary red #e60023 vs white 4.78:1 (AA pass, thin margin), text-subtle #636361 vs white 6.02:1, focus/info blue-400 #007db8 vs white 4.54:1 (AA by 0.04)."
+  },
+  "spacing": {
+    "base": "4px (base-space-unit)",
+    "scale": [0, 1, 2, 4, 6, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48, 52, 56, 60, 64],
+    "notes": "sema-space-25..1600 (name = px*25), plus mirrored negative tokens -1..-64. 1/2/6px steps are VR-only additions."
+  },
+  "radius": {
+    "scale": [0, 4, 8, 12, 16, 20, 24, 28, 32, "pill 999px", "circle 50%"],
+    "rule": "Radius scales with control size: VR Button sm 8px, md 12px, lg 16px; classic Button 24px (fully pill at 48px). Datepicker container 16px, day cells circle. Generous rounding is part of the brand."
+  },
+  "depth": {
+    "shadows": [
+      "surface: 0 1px 2px rgba(0,0,0,.1), 0 0 1px rgba(0,0,0,.08)",
+      "raised-default: 0 0 0 .5px rgba(0,0,0,.06), 0 1px 6px rgba(0,0,0,.1), 0 1px 2px rgba(0,0,0,.06)",
+      "raised-top: 0 1px 0 .5px rgba(0,0,0,.06), 0 2px 8px rgba(0,0,0,.12), 0 -1px 2px rgba(0,0,0,.06)",
+      "raised-bottom: mirrored (negative y) for sticky footers",
+      "floating: 0 4px 16px rgba(0,0,0,.1), 0 1px 4px rgba(0,0,0,.08)",
+      "classic floating: 0 0 8px rgba(0,0,0,.1)"
+    ],
+    "borders": "Borders are an alternative to shadows ('not considered elevation' but usable when shadows/colour don't work): decorative grayscale-150, interactive grayscale-250.",
+    "blur": "none tokenised; washes are flat translucent fills"
+  },
+  "motion": {
+    "durationsMs": [0, 50, 100, 150, 200, 300, 400, 500, 600, 700, 900],
+    "easings": [
+      "enter cubic-bezier(0.05,0.7,0.1,1)",
+      "exit cubic-bezier(0.3,0,0.8,0.15)",
+      "bounce cubic-bezier(0,0.35,0,1.25)",
+      "lateral cubic-bezier(0.8,0,0.2,1)",
+      "expressive cubic-bezier(0.55,0,0,1)",
+      "linear"
+    ],
+    "notes": "Semantic motion tokens by property: opacity default 300ms linear; colorchange 300ms linear; scale-on 150ms linear; position-on 300ms bounce; position-off 200ms lateral; swipe 400ms lateral. Guidelines: pause control for anything moving >5s, no flashing >3/s, non-essential motion disabled under reduced-motion (useReducedMotion hook)."
+  },
+  "density": {
+    "modes": ["single density; three control sizes sm/md/lg"],
+    "controlHeightsPx": {"button-sm (VR)": 24, "button-md (VR)": 32, "button-lg (VR)": 44, "button-sm (classic)": 32, "button-md (classic)": 40, "button-lg (classic)": 48, "link-button lg (VR)": 48}
+  },
+  "components": {
+    "count": 91,
+    "list": ["Accordion", "ActivationCard", "Avatar", "AvatarGroup", "Badge", "BannerCallout", "BannerOverlay", "BannerSlim", "BannerUpsell", "Box", "Button", "ButtonGroup", "ButtonLink", "ButtonSocial", "ButtonToggle", "Checkbox", "Collage", "Column", "ComboBox", "Container", "Datapoint", "Divider", "Dropdown", "Fieldset", "Flex", "Heading", "HelpButton", "Icon", "IconButton", "IconButtonFloating", "IconCompact", "Image", "Indicator", "Label", "Layer", "Letterbox", "Link", "List", "Mask", "Masonry", "Modal", "ModalAlert", "NumberField", "OverlayPanel", "PageHeader", "Pog", "Popover", "PopoverMessage", "Pulsar", "RadioGroup", "SearchField", "SearchGuide", "SegmentedControl", "SelectList", "SheetMobile", "SideNavigation", "Spinner", "Status", "Sticky", "Switch", "Table", "TableOfContents", "Tabs", "Tag", "TagData", "TapArea", "Text", "TextArea", "TextCompact", "TextField", "TextUI", "TileData", "Toast", "Tooltip", "Video", "WashAnimated", "+ providers (ColorScheme, DesignTokens, DeviceType, DefaultLabel, Experiment, GlobalEventsHandler) and z-index helpers"],
+    "stateMatrixCompleteness": "High for colour: every base hue ships default/hover/pressed values and semantic tokens are generated for each state (sema-color-hover-*, sema-color-pressed-*). Focus is a defined double ring. Disabled has its own text/icon/background/border tokens. Count = 91 named exports in gestalt@177.0.12 index (incl. providers)."
+  },
+  "tokenArchitecture": "Three tiers, Style Dictionary, exported to CSS/JS/JSON/Android/iOS/Swift: base-* (raw: base-color-red-300, base-space-unit, base-motion-duration-300) -> sema-* (role: sema-color-text-subtle, sema-space-400, sema-font-size-body-md) -> comp-* (component: rounding-datepicker-container, font-size-datepicker-heading). Two themes ship side by side: 'classic' and 'vr-theme' (Visual Refresh), plus 'vr-theme-web-mapping' that maps old names onto VR values for migration. State is a token dimension (base-color-hover-*, base-color-pressed-*). Script-specific line-height files swap only leading.",
+  "distinctiveness": "Warm off-white/near-black neutrals with a single saturated red, selection shown in black not brand colour, generous radii that grow with control size, a 'recommendation' purple role for AI/personalised content, and pre-computed hover/pressed colour ramps instead of opacity overlays.",
+  "weaknesses": [
+    "Foundations documentation is now behind Okta sign-in; public guidance must be read from GitHub source",
+    "Two live themes (classic + VR) plus a mapping theme make token names ambiguous for adopters",
+    "Pin Sans is proprietary, so the VR look degrades to system fonts outside Pinterest",
+    "No compact density for data-heavy screens",
+    "Several key pairs pass AA by a hair (blue-400 on white 4.54:1, red-300 on white 4.78:1), leaving no headroom for tinted backgrounds"
+  ],
+  "takeaways": [
+    "Ship hover and pressed as their own pre-computed colour ramps per hue (base-color-hover-*, base-color-pressed-*) instead of runtime opacity overlays; states stay on-brand and testable",
+    "Separate 'ui' text roles (tight ~1.2 leading for labels/controls) from 'body' roles (~1.4) at the same sizes",
+    "Swap only line-height tokens per writing system (CJK, Thai, Vietnamese) via separate files",
+    "Use black/ink for selection state so the brand colour stays reserved for the single primary action",
+    "Scale radius with control height (8/12/16 for 24/32/44px)",
+    "Name motion tokens by property and direction (position-on, position-off, scale-on, colorchange) rather than by component"
+  ],
+  "provenance": "public-spec (gestalt-design-tokens@177.0.12 dist CSS + gestalt@177.0.12 src + docs/pages/foundations/*.tsx on GitHub master)"
+}

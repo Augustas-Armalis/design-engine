@@ -1,0 +1,118 @@
+{
+  "name": "Blueprint",
+  "slug": "blueprint",
+  "vendor": "Palantir",
+  "url": "https://blueprintjs.com/docs ; source https://github.com/palantir/blueprint",
+  "licence": "Apache-2.0 (@blueprintjs/core 6.21.0, @blueprintjs/colors 5.1.16)",
+  "studiedOn": "2026-10-08",
+  "personality": ["dense", "analytical", "desktop-first", "sober", "engineered"],
+  "bestFor": [
+    "complex data-dense desktop web apps: analyst tools, IDE-like workbenches, ops dashboards",
+    "keyboard-heavy power-user tools (Hotkeys, Omnibar/Select, Tree, EditableText, PanelStack, ContextMenu)",
+    "dark-first or dual-theme internal tools (every shadow and colour has a dark counterpart)",
+    "apps needing a broad 5-step categorical palette for data and tagging (15 hues x 5)"
+  ],
+  "avoidFor": [
+    "mobile-first or touch-first products (30px default controls, desktop focus)",
+    "marketing and consumer brand surfaces (system font, small 14px type, utilitarian look)",
+    "teams wanting a modern semantic token API today (DTCG tokens are marked EXPERIMENTAL; BP7 OKLCH palette is preview only)"
+  ],
+  "typography": {
+    "families": [
+      "-apple-system, 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Open Sans', 'Helvetica Neue', 'blueprint-icons-16', sans-serif",
+      "monospace: monospace"
+    ],
+    "scale": [
+      {"role": "display (token heading-display)", "sizePx": 46, "lineHeightPx": "unknown", "weight": 600, "trackingEm": "unknown"},
+      {"role": "h1", "sizePx": 36, "lineHeightPx": 40, "weight": 600, "trackingEm": "0"},
+      {"role": "h2", "sizePx": 28, "lineHeightPx": 32, "weight": 600, "trackingEm": "0"},
+      {"role": "h3", "sizePx": 22, "lineHeightPx": 25, "weight": 600, "trackingEm": "0"},
+      {"role": "h4", "sizePx": 18, "lineHeightPx": 21, "weight": 600, "trackingEm": "0"},
+      {"role": "h5", "sizePx": 16, "lineHeightPx": 19, "weight": 600, "trackingEm": "0"},
+      {"role": "h6", "sizePx": 14, "lineHeightPx": 16, "weight": 600, "trackingEm": "0"},
+      {"role": "body-large", "sizePx": 16, "lineHeightPx": 20.6, "weight": 400, "trackingEm": "0"},
+      {"role": "body (default UI text)", "sizePx": 14, "lineHeightPx": 18, "weight": 400, "trackingEm": "0"},
+      {"role": "running text", "sizePx": 14, "lineHeightPx": 21, "weight": 400, "trackingEm": "0"},
+      {"role": "body-small", "sizePx": 12, "lineHeightPx": 15.4, "weight": 400, "trackingEm": "0"},
+      {"role": "body-x-small", "sizePx": 10, "lineHeightPx": "unknown", "weight": 400, "trackingEm": "0"}
+    ],
+    "notes": "UI line-height 1.28581 (exactly 18px at 14px) so text centres in 30px controls with a centered-text() helper; 'running text' blocks switch to 1.5. Only two weights (400, 600). Headings h1-h6 hard-coded size/leading pairs. Icon font family sits inside the text stack so icons inherit text rendering."
+  },
+  "color": {
+    "model": "hex (BP6); BP7 preview palette in OKLCH with hex fallback, 100-1000 steps",
+    "neutrals": {
+      "black": "#111418", "dark-gray1": "#1c2127", "dark-gray2": "#252a31", "dark-gray3": "#2f343c", "dark-gray4": "#383e47", "dark-gray5": "#404854",
+      "gray1": "#5f6b7c", "gray2": "#738091", "gray3": "#8f99a8", "gray4": "#abb3bf", "gray5": "#c5cbd3",
+      "light-gray1": "#d3d8de", "light-gray2": "#dce0e5", "light-gray3": "#e5e8eb", "light-gray4": "#edeff2", "light-gray5": "#f6f7f9", "white": "#ffffff"
+    },
+    "accents": {
+      "blue1-5": "#184a90 #215db0 #2d72d2 #4c90f0 #8abbff",
+      "extended hues (5 steps each)": "vermilion, rose, violet, indigo, cerulean, turquoise, forest, lime, gold, sepia (e.g. cerulean3 #147eb3, turquoise3 #00a396, gold3 #d1980b)"
+    },
+    "semantic": {
+      "intent-primary": "blue3 #2d72d2 (hover blue2, active blue1, disabled blue4)",
+      "intent-success": "green3 #238551 (green1 #165a36 ... green5 #72ca9b)",
+      "intent-warning": "orange3 #c87619 (foreground black, not white)",
+      "intent-danger": "red3 #cd4246",
+      "app-background": "light-gray5 #f6f7f9 / dark dark-gray1 #1c2127",
+      "text": "dark-gray1 #1c2127 / dark light-gray5 #f6f7f9", "text-muted": "gray1 #5f6b7c / dark gray4 #abb3bf", "text-disabled": "gray1 @60% / gray4 @60%",
+      "link": "blue2 #215db0 / dark blue5 #8abbff",
+      "focus": "blue2 @75% (dark blue5 @75%), 2px width, 2px offset",
+      "dividers": "black @15% / white @20% in dark",
+      "text-selection": "rgba(125,188,255,.6)"
+    },
+    "darkMode": "Class .bp6-dark on any container (scoped, not global), so dark and light panels can coexist on one screen. Every surface, text, divider and elevation shadow has a $pt-dark-* twin; dark shadows add inset white hairlines (rgba(255,255,255,.2) 1px + .5px highlights) to read edges on dark. Dark drop-shadow opacity is doubled (0.2 -> 0.4).",
+    "contrastNotes": "Measured: primary blue3 #2d72d2 vs white 4.72:1; link blue2 #215db0 6.45:1; muted gray1 #5f6b7c 5.41:1; text #1c2127 on #f6f7f9 15.11:1; dark muted gray4 #abb3bf on dark-gray3 5.92:1. Warning intent uses black foreground because orange3 cannot carry white text. Forced-colours mode handled with system colour keywords (buttonborder)."
+  },
+  "spacing": {
+    "base": "4px ($pt-spacing; v6.3 migrated components to 4px multiples) with legacy $pt-grid-size 10px",
+    "scale": [2, 4, 8, 12, 16, 20, 24, 30, 40, 50],
+    "notes": "Scale values are multiples used in source (spacing*0.5 ... *12.5); not a closed named scale. Button padding 4px 8px (small 0 8px, large 4px 16px); icon gap 8px; navbar height 50px."
+  },
+  "radius": {
+    "scale": [2, 4],
+    "rule": "One radius: 4px everywhere (surface.border-radius); sharp, tool-like."
+  },
+  "depth": {
+    "shadows": [
+      "elevation-0: 0 0 0 1px rgba(17,20,24,.15), 0 0 5px rgba(0,0,0,.02)",
+      "elevation-1: 0 0 0 1px rgba(17,20,24,.1), 0 1px 3px rgba(0,0,0,.1), 0 1px 2px -1px rgba(0,0,0,.1)",
+      "elevation-2: 0 0 0 1px rgba(17,20,24,.1), 0 4px 6px -4px rgba(0,0,0,.1), 0 10px 15px -3px rgba(0,0,0,.1)",
+      "elevation-3 (dialog, popover, tooltip): 0 0 0 1px rgba(17,20,24,.1), 0 20px 25px -5px rgba(0,0,0,.1), 0 10px 15px -3px rgba(0,0,0,.1)",
+      "elevation-4: 0 0 0 1px rgba(17,20,24,.1), 0 25px 50px -12px rgba(0,0,0,.3)",
+      "input: inset 0 0 0 1px rgba(17,20,24,.2), inset 0 1px 1px rgba(17,20,24,.3)"
+    ],
+    "borders": "Borders are drawn as 0 0 0 1px box-shadows baked into every elevation, so edges and depth come from one token.",
+    "blur": "none"
+  },
+  "motion": {
+    "durationsMs": [100, 200],
+    "easings": ["ease cubic-bezier(0.4,1,0.75,0.9)", "bounce cubic-bezier(0.54,1.12,0.38,1.11)"],
+    "notes": "Single base duration 100ms; larger movements (drawer, tree caret, tab indicator) use 2x = 200ms. Token emphasis.motion-reduced exists in DTCG set."
+  },
+  "density": {
+    "modes": ["default", "compact prop on Card, CardList, Callout, Divider and others (v6)", "size small/medium/large"],
+    "controlHeightsPx": {"button smaller": 20, "button small": 24, "button default": 30, "button large": 40, "input small": 24, "input default": 30, "input large": 40, "navbar": 50}
+  },
+  "components": {
+    "count": 46,
+    "list": ["Alert", "Breadcrumbs", "Button/AnchorButton/ButtonGroup", "Callout", "Card", "CardList", "Collapse", "ContextMenu", "ControlCard (Checkbox/Radio/Switch cards)", "Dialog", "Divider", "Drawer", "EditableText", "EntityTitle", "Forms (InputGroup, NumericInput, TextArea, FileInput, Checkbox, Radio, Switch, ControlGroup, FormGroup)", "Hotkeys", "HTML elements", "HTMLSelect", "HTMLTable", "Icon", "Link", "Menu", "Navbar", "NonIdealState", "OverflowList", "Overlay/Overlay2", "PanelStack", "Popover", "Portal", "ProgressBar", "ResizeSensor", "Section", "SegmentedControl", "Skeleton", "Slider/RangeSlider", "Spinner", "Tabs", "Tag", "TagInput", "Text", "Toast", "Tooltip", "Tree", "+ separate packages: @blueprintjs/datetime, @blueprintjs/select (Select, Suggest, MultiSelect, Omnibar), @blueprintjs/table, @blueprintjs/icons"],
+    "stateMatrixCompleteness": "High: intent x state grid (rest/hover/active/disabled + foreground) for default/primary/success/warning/danger in both themes; minimal/outlined variants. Count = component directories in @blueprintjs/core 6.21.0 src/components (excludes datetime/select/table packages)."
+  },
+  "tokenArchitecture": "Primarily Sass variables ($pt-*, $pt-dark-* twins) with palette in @blueprintjs/colors. An EXPERIMENTAL Style Dictionary / DTCG layer (--bp-*) has six categories: palette, intent (default/primary/success/warning/danger x rest/hover/active/disabled/foreground), surface (bg, border, shadow 0-4, spacing 4px, z-index 0-40, layer opacity .05), typography, iconography, emphasis (focus, transitions). Dark theme lives in tokens/themes/dark. BP7 preview palette defined in OKLCH 100-1000.",
+  "distinctiveness": "Intent as the colour API (four intents applied uniformly to buttons, tags, callouts, inputs, text); scoped dark theme per container; elevation shadows that include the 1px edge; 15-hue x 5-step categorical palette; 30px desktop controls and 14/18 text tuned for density.",
+  "weaknesses": [
+    "Token layer is experimental; most theming still via Sass variables",
+    "Mixed legacy 10px grid and new 4px spacing",
+    "Single 4px radius and system font give little brand expression",
+    "No published motion guidance beyond two curves and 100ms"
+  ],
+  "takeaways": [
+    "Use 'intent' (primary/success/warning/danger) as the one colour API every component accepts, with rest/hover/active/disabled/foreground per intent",
+    "Pick body line-height so text is an integer height (14 x 1.28581 = 18px) and centre it in control heights with a helper",
+    "Bake the 1px edge into every elevation shadow (0 0 0 1px) so borders and depth never disagree; in dark mode use inset white hairlines instead",
+    "Scope dark mode to a container class, not just the root, so mixed-theme panels are possible",
+    "One short base duration (100ms) and multiply for distance (x2) keeps desktop tools snappy"
+  ],
+  "provenance": "public-spec (@blueprintjs/core@6.21.0 src: common/_variables.scss, _color-aliases.scss, _typography.scss, design-tokens/tokens/*.tokens.json; @blueprintjs/colors@5.1.16; GitHub 6.x changelog); contrast ratios measured by computation"
+}

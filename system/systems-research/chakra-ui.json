@@ -1,0 +1,162 @@
+{
+  "name": "Chakra UI v3",
+  "slug": "chakra-ui",
+  "vendor": "Chakra Systems Inc.",
+  "url": "https://chakra-ui.com",
+  "licence": "MIT (github.com/chakra-ui/chakra-ui, Copyright 2019 Chakra Systems Inc.). Studied @chakra-ui/react 3.37.0 at commit f799e4d (2026-10-06).",
+  "studiedOn": "2026-10-08",
+  "personality": ["neutral", "zinc-grey", "precise", "compact-radius", "systematic"],
+  "bestFor": [
+    "SaaS product UI and dashboards where semantic status colours and consistent variants matter more than brand drama",
+    "teams that want a token-first system they can retheme by overriding semantic tokens (bg, fg, border, colorPalette.*)",
+    "projects that benefit from a large, uniformly specced component set with the same variant x size grid"
+  ],
+  "avoidFor": [
+    "expressive brand or editorial sites (default is deliberately neutral zinc with a 4px radius)",
+    "teams unwilling to run a runtime emotion-free but token-codegen toolchain (CLI typegen, next-themes)",
+    "anything that needs a bundled typeface (Inter is named but not shipped)"
+  ],
+  "typography": {
+    "families": [
+      "heading: Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Helvetica, Arial, sans-serif, emoji stack",
+      "body: Inter, same fallback stack",
+      "mono: SFMono-Regular,Menlo,Monaco,Consolas,\"Liberation Mono\",\"Courier New\",monospace"
+    ],
+    "scale": [
+      {"role": "2xs", "sizePx": 10, "lineHeightPx": 12, "weight": 400, "trackingEm": 0},
+      {"role": "xs", "sizePx": 12, "lineHeightPx": 16, "weight": 400, "trackingEm": 0},
+      {"role": "sm", "sizePx": 14, "lineHeightPx": 20, "weight": 400, "trackingEm": 0},
+      {"role": "md", "sizePx": 16, "lineHeightPx": 24, "weight": 400, "trackingEm": 0},
+      {"role": "lg", "sizePx": 18, "lineHeightPx": 28, "weight": 400, "trackingEm": 0},
+      {"role": "xl", "sizePx": 20, "lineHeightPx": 30, "weight": 400, "trackingEm": 0},
+      {"role": "2xl", "sizePx": 24, "lineHeightPx": 32, "weight": 400, "trackingEm": 0},
+      {"role": "3xl", "sizePx": 30, "lineHeightPx": 38, "weight": 400, "trackingEm": 0},
+      {"role": "4xl", "sizePx": 36, "lineHeightPx": 44, "weight": 400, "trackingEm": -0.025},
+      {"role": "5xl", "sizePx": 48, "lineHeightPx": 60, "weight": 400, "trackingEm": -0.025},
+      {"role": "6xl", "sizePx": 60, "lineHeightPx": 72, "weight": 400, "trackingEm": -0.025},
+      {"role": "7xl", "sizePx": 72, "lineHeightPx": 92, "weight": 400, "trackingEm": -0.025},
+      {"role": "label (textStyle)", "sizePx": 14, "lineHeightPx": 20, "weight": 500, "trackingEm": 0},
+      {"role": "Heading recipe (any size)", "sizePx": "xs..7xl via textStyle; default xl = 20", "lineHeightPx": "from textStyle", "weight": 600, "trackingEm": "-0.025em from 4xl up"}
+    ],
+    "notes": "Font sizes are tokens (2xs 0.625rem ... 9xl 8rem; textStyles exist for 2xs-7xl). A textStyle bundles fontSize + lineHeight (+ letterSpacing -0.025em from 4xl up), so a size cannot be used without its leading. Line-height tokens: shorter 1.25, short 1.375, moderate 1.5, tall 1.625, taller 2; html default 1.5. Font weights thin 100 ... black 900; Heading is semibold 600, Button/Badge/Tabs/label medium 500, Card title semibold. global CSS enables fontFeatureSettings \"cv11\" (Inter single-storey a) on all elements. Badge uses fontVariantNumeric tabular-nums. Letter spacing tokens: tighter -0.05em, tight -0.025em, wide 0.025em, wider 0.05em, widest 0.1em. Inter is named in the stack but not bundled; the app must load it."
+  },
+  "color": {
+    "model": "hex",
+    "neutrals": {
+      "gray (zinc-based, 11 steps 50-950)": {"50": "#fafafa", "100": "#f4f4f5", "200": "#e4e4e7", "300": "#d4d4d8", "400": "#a1a1aa", "500": "#71717a", "600": "#52525b", "700": "#3f3f46", "800": "#27272a", "900": "#18181b", "950": "#111111"},
+      "black": "#09090B",
+      "white": "#FFFFFF",
+      "whiteAlpha / blackAlpha": "50 .04, 100 .06, 200 .08, 300 .16, 400 .24, 500 .36, 600 .48, 700 .64, 800 .80, 900 .92, 950 .95"
+    },
+    "accents": {
+      "note": "11 steps 50-950. Note 700-950 are hand-tuned deep, desaturated tones (not simple Tailwind values) for dark-mode surfaces.",
+      "red": {"50": "#fef2f2", "100": "#fee2e2", "200": "#fecaca", "300": "#fca5a5", "400": "#f87171", "500": "#ef4444", "600": "#dc2626", "700": "#991919", "800": "#511111", "900": "#300c0c", "950": "#1f0808"},
+      "orange": {"50": "#fff7ed", "100": "#ffedd5", "200": "#fed7aa", "300": "#fdba74", "400": "#fb923c", "500": "#f97316", "600": "#ea580c", "700": "#92310a", "800": "#6c2710", "900": "#3b1106", "950": "#220a04"},
+      "yellow": {"50": "#fefce8", "100": "#fef9c3", "200": "#fef08a", "300": "#fde047", "400": "#facc15", "500": "#eab308", "600": "#ca8a04", "700": "#845209", "800": "#713f12", "900": "#422006", "950": "#281304"},
+      "green": {"50": "#f0fdf4", "100": "#dcfce7", "200": "#bbf7d0", "300": "#86efac", "400": "#4ade80", "500": "#22c55e", "600": "#16a34a", "700": "#116932", "800": "#124a28", "900": "#042713", "950": "#03190c"},
+      "teal": {"50": "#f0fdfa", "100": "#ccfbf1", "200": "#99f6e4", "300": "#5eead4", "400": "#2dd4bf", "500": "#14b8a6", "600": "#0d9488", "700": "#0c5d56", "800": "#114240", "900": "#032726", "950": "#021716"},
+      "blue": {"50": "#eff6ff", "100": "#dbeafe", "200": "#bfdbfe", "300": "#a3cfff", "400": "#60a5fa", "500": "#3b82f6", "600": "#2563eb", "700": "#173da6", "800": "#1a3478", "900": "#14204a", "950": "#0c142e"},
+      "cyan": {"50": "#ecfeff", "100": "#cffafe", "200": "#a5f3fc", "300": "#67e8f9", "400": "#22d3ee", "500": "#06b6d4", "600": "#0891b2", "700": "#0c5c72", "800": "#134152", "900": "#072a38", "950": "#051b24"},
+      "purple": {"50": "#faf5ff", "100": "#f3e8ff", "200": "#e9d5ff", "300": "#d8b4fe", "400": "#c084fc", "500": "#a855f7", "600": "#9333ea", "700": "#641ba3", "800": "#4a1772", "900": "#2f0553", "950": "#1a032e"},
+      "pink": {"50": "#fdf2f8", "100": "#fce7f3", "200": "#fbcfe8", "300": "#f9a8d4", "400": "#f472b6", "500": "#ec4899", "600": "#db2777", "700": "#a41752", "800": "#6d0e34", "900": "#45061f", "950": "#2c0514"}
+    },
+    "semantic": {
+      "global (light | dark)": {
+        "bg": "white | black #09090B", "bg.subtle": "gray.50 | gray.950", "bg.muted": "gray.100 | gray.900", "bg.emphasized": "gray.200 | gray.800",
+        "bg.inverted": "black | white", "bg.panel": "white | gray.950",
+        "bg.error": "red.50 | red.950", "bg.warning": "orange.50 | orange.950", "bg.success": "green.50 | green.950", "bg.info": "blue.50 | blue.950",
+        "fg": "black | gray.50", "fg.muted": "gray.600 | gray.400", "fg.subtle": "gray.400 | gray.500", "fg.inverted": "gray.50 | black",
+        "fg.error": "red.500 | red.400", "fg.warning": "orange.600 | orange.300", "fg.success": "green.600 | green.300", "fg.info": "blue.600 | blue.300",
+        "border": "gray.200 | gray.800", "border.muted": "gray.100 | gray.900", "border.subtle": "gray.50 | gray.950", "border.emphasized": "gray.300 | gray.700", "border.inverted": "gray.800 | gray.200",
+        "border.error": "red.500 | red.400"
+      },
+      "per-palette 8-role contract (every colour incl. gray; light | dark, example = blue)": {
+        "contrast": "white | white", "fg": "blue.700 | blue.300", "subtle": "blue.100 | blue.900", "muted": "blue.200 | blue.800",
+        "emphasized": "blue.300 | blue.700", "solid": "blue.600 | blue.600", "focusRing": "blue.500 | blue.500", "border": "blue.500 | blue.400"
+      },
+      "palette exceptions": {
+        "yellow.contrast": "black in both modes; yellow.solid = yellow.300 in both modes",
+        "orange.contrast": "white | black; orange.solid = orange.600 | orange.500",
+        "gray.solid": "gray.900 | white; gray.contrast white | black",
+        "red/green/blue/teal/purple/pink/cyan.solid": "600 in both modes"
+      }
+    },
+    "darkMode": "Semantic tokens carry {_light, _dark} pairs (conditions are selector-based: .dark / .light class from next-themes). Components never reference raw scales; they reference colorPalette.{solid, contrast, fg, subtle, muted, emphasized, focusRing, border}, resolved per mode. Dark mode is a different mapping of the same 11-step ramps (subtle = 900, muted = 800, fg = 300) not an inversion function. Shadows get a dark counterpart (black/64 drop + 1px inset light edge gray.300/20-30). html default colour palette is gray.",
+    "contrastNotes": "Measured (this study): white on blue.600 solid = 5.17:1; white on red.600 = 4.83:1; yellow.300 solid with black = 15.09:1 (explicit black contrast token); blue.700 on blue.100 (fg on subtle) = 7.63:1; fg.muted gray.600 on white = 7.73:1; fg.muted dark (gray.400 on black) = 7.76:1; fg.subtle gray.400 on white = 2.56:1 (decorative or placeholder only; placeholder is fg.muted at 80% opacity). Solid 600 and a per-palette contrast token (white, black, or mode-dependent) is the contrast mechanism; no luminance formula is used."
+  },
+  "spacing": {
+    "base": "0.25rem (4px). Numeric keys = multiples of 4px with half steps 0.5, 1.5, 2.5, 3.5, 4.5.",
+    "scale": [
+      {"key": "0.5", "px": 2}, {"key": "1", "px": 4}, {"key": "1.5", "px": 6}, {"key": "2", "px": 8}, {"key": "2.5", "px": 10}, {"key": "3", "px": 12}, {"key": "3.5", "px": 14},
+      {"key": "4", "px": 16}, {"key": "4.5", "px": 18}, {"key": "5", "px": 20}, {"key": "6", "px": 24}, {"key": "7", "px": 28}, {"key": "8", "px": 32}, {"key": "9", "px": 36},
+      {"key": "10", "px": 40}, {"key": "11", "px": 44}, {"key": "12", "px": 48}, {"key": "14", "px": 56}, {"key": "16", "px": 64}, {"key": "20", "px": 80}, {"key": "24", "px": 96},
+      {"key": "28", "px": 112}, {"key": "32", "px": 128}, {"key": "36", "px": 144}, {"key": "40", "px": 160}, {"key": "44", "px": 176}, {"key": "48", "px": 192}, {"key": "52", "px": 208},
+      {"key": "56", "px": 224}, {"key": "60", "px": 240}, {"key": "64", "px": 256}, {"key": "72", "px": 288}, {"key": "80", "px": 320}, {"key": "96", "px": 384}
+    ]
+  },
+  "radius": {
+    "scale": [
+      {"token": "none", "px": 0}, {"token": "2xs", "px": 1}, {"token": "xs", "px": 2}, {"token": "sm", "px": 4}, {"token": "md", "px": 6}, {"token": "lg", "px": 8},
+      {"token": "xl", "px": 12}, {"token": "2xl", "px": 16}, {"token": "3xl", "px": 24}, {"token": "4xl", "px": 32}, {"token": "full", "px": 9999}
+    ],
+    "rule": "Semantic radius layers: l1 = radii.xs (2px), l2 = radii.sm (4px), l3 = radii.md (6px). Controls (Button, Input, Badge, Tabs trigger, Tag) use l2; containers (Card, Alert, Tabs enclosed list) use l3; l1 sits inside l2/l3 for nested elements. Retheming the character of the whole system = re-point three tokens."
+  },
+  "depth": {
+    "shadows": [
+      "xs: 0 1px 2px gray.900/10, 0 0 1px gray.900/20 (dark: 0 1px 1px black/64, 0 0 1px inset gray.300/20)",
+      "sm: 0 2px 4px gray.900/10, 0 0 1px gray.900/30",
+      "md: 0 4px 8px gray.900/10, 0 0 1px gray.900/30",
+      "lg: 0 8px 16px gray.900/10, 0 0 1px gray.900/30",
+      "xl: 0 16px 24px gray.900/10, 0 0 1px gray.900/30",
+      "2xl: 0 24px 40px gray.900/16, 0 0 1px gray.900/30",
+      "inner: inset 0 2px 4px 0 black/5; inset: inset 0 0 0 1px black/5"
+    ],
+    "borders": "Border width tokens: xs 0.5px, sm 1px, md 2px, lg 4px, xl 8px (solid). Default component border 1px solid semantic border (gray.200 | gray.800). 'surface' and 'outline' variants draw their border as inset box-shadow (0 0 0 1px) in colorPalette.muted/border rather than a CSS border, so layout does not shift.",
+    "blur": "blurs tokens: sm 4px, md 8px, lg 12px, xl 16px, 2xl 24px, 3xl 40px, 4xl 64px (used via backdropBlur on overlays/dialog backdrop)."
+  },
+  "motion": {
+    "durationsMs": [50, 100, 150, 200, 300, 400, 500],
+    "easings": ["ease-in cubic-bezier(0.42,0,1,1)", "ease-out cubic-bezier(0,0,0.58,1)", "ease-in-out cubic-bezier(0.42,0,0.58,1)", "ease-in-smooth cubic-bezier(0.32,0.72,0,1)"],
+    "notes": "Duration tokens: fastest 50, faster 100, fast 150, moderate 200, slow 300, slower 400, slowest 500. Interactive controls transition the 'common' property bundle (background-color, border-color, color, fill, stroke, opacity, box-shadow, translate, transform) at 'moderate' 200ms. Presence animations are animationStyles (slide-fade-in/out, scale-fade-in/out, fade, slide-from-*) with data-state selectors: dialog/accordion/collapsible/tree-view 'moderate', tooltip 'fast', popover 'fast' in / 'faster' out, menu 'fast' in / 'faster' out, select 'fast' in / 'fastest' out (exit is faster than enter). Spinner rotates at 'slowest'. Skeleton shimmer 1.2s. Reduced motion is not a built-in token concern."
+  },
+  "density": {
+    "modes": ["size prop per component (2xs..2xl)", "no global density switch"],
+    "controlHeightsPx": {
+      "Button / Input (2xs, xs, sm, md, lg, xl, 2xl)": [24, 32, 36, 40, 44, 48, 64],
+      "default": 40,
+      "button padding-x (2xs..2xl) in spacing keys": ["2", "2.5", "3.5", "4", "5", "5", "7"],
+      "button icon box (2xs..2xl)": [14, 16, 16, 20, 20, 20, 24],
+      "Badge min-height (xs, sm, md, lg)": [16, 20, 24, 28],
+      "Tabs height (sm, md, lg)": [36, 40, 44],
+      "Card padding (sm, md, lg)": [16, 24, 28],
+      "Input text style (2xs/xs, sm/md, lg/xl, 2xl)": ["xs 12", "sm 14", "md 16", "lg 18"]
+    }
+  },
+  "components": {
+    "count": 116,
+    "list": ["Accordion", "ActionBar", "Alert", "AspectRatio", "Avatar", "Badge", "Blockquote", "Breadcrumb", "Button", "Card", "Carousel", "Checkbox", "CheckboxCard", "Clipboard", "Code", "CodeBlock", "Collapsible", "ColorPicker", "ColorSwatch", "Combobox", "Container", "DataList", "DateInput", "DatePicker", "Dialog", "Drawer", "Editable", "EmptyState", "Field", "Fieldset", "FileUpload", "FloatingPanel", "Heading", "HoverCard", "Icon", "Input", "InputAddon", "InputGroup", "Kbd", "Link", "List", "Listbox", "Mark", "Marquee", "Menu", "NativeSelect", "NumberInput", "Pagination", "PinInput", "Popover", "Progress", "ProgressCircle", "QrCode", "RadioCard", "RadioGroup", "RatingGroup", "ScrollArea", "SegmentGroup", "Select", "Separator", "Skeleton", "SkipNav", "Slider", "Spinner", "Splitter", "Stat", "Status", "Steps", "Switch", "Table", "Tabs", "Tag", "TagsInput", "Textarea", "Timeline", "Toast", "Toggle", "Tooltip", "TreeView", "(+ layout primitives: Box, Flex, Grid, Stack, Wrap, Center, Float, Bleed, Group, Span, Square, Circle, Spacer, SimpleGrid, Sticky, VisuallyHidden)"],
+    "stateMatrixCompleteness": "Recipes encode a uniform grid: 76 recipe files = 19 single-part recipes (e.g. Button, Input, Badge, Textarea, Kbd, Link, Heading, Spinner, Skeleton) + 57 slot recipes (e.g. Card, Tabs, Alert, Checkbox, Dialog, Menu, Select). Axes: variant (typically solid, subtle, surface, outline, ghost, plain; Input: outline, subtle, flushed; Card: elevated, outline, subtle) x size (Button/Input 2xs..2xl; Badge xs..lg; Card/Tabs sm..lg) x colorPalette (any of the 10 palettes; status prop for Alert). States via conditions on the same recipe: _hover, _expanded, _selected, _checked, _invalid, _disabled (layerStyle disabled = opacity .5 + cursor disabled), focusVisibleRing (outside = 2px at 2px offset; inside = 1px at 0; mixed = 3px at 40% alpha). Hover is derived per variant (solid: solid/90; subtle/surface: muted; outline/ghost: subtle). No pressed/active state tokens; no compoundVariants used in the shipped recipes (colour comes from colorPalette instead of variant x color compounds). Defaults are declared (size md, variant solid)."
+  },
+  "tokenArchitecture": "Panda-derived styled-system. Layers: (1) tokens: raw scales (colors gray/red/.., fonts, fontSizes, fontWeights, letterSpacings, lineHeights, radii, spacing, sizes, durations, easings, blurs, borders, zIndex, cursor, animations, aspectRatios). (2) semanticTokens with {_light,_dark} conditions and DEFAULT-nesting: bg.*, fg.*, border.*, per-palette {contrast, fg, subtle, muted, emphasized, solid, focusRing, border}, shadows xs-2xl, radii l1/l2/l3. (3) styles: textStyles (size + leading + tracking), layerStyles (fill.muted, fill.subtle, fill.surface, fill.solid, outline.*, indicator.*, disabled), animationStyles. (4) recipes and slot recipes: base + variants (size, variant, ...) + defaultVariants + optional compoundVariants; slot recipes key styles by anatomy part (root, label, control...). (5) colorPalette: a virtual colour set on any element (colorPalette=\"blue\") that makes colorPalette.solid etc. resolve to that palette, so the same recipe serves every hue. Tokens referenced as {colors.blue.600} and opacity-modified as {colors.gray.900/10}. Conditions: _dark, _light, _hover, _focusVisible, _disabled, _expanded, _selected, _checked, _invalid, _horizontal, _vertical, _icon. Codegen CLI (typegen) types token names. Theme is built with createSystem(defaultConfig, defineConfig({theme: {tokens, semanticTokens, recipes}})). Layers named in CSS @layer: reset, base, tokens, recipes.",
+  "distinctiveness": "Not visually distinctive by itself: zinc greys, Inter, 4px control radius, 1px borders, 40px control. Its distinction is architectural: the colorPalette contract (8 semantic roles per palette) and recipes whose axes are variant x size with palette as a third independent axis. v3 (Panda-style tokens, Ark UI behaviour) reads as a flat, tight, neutral aesthetic; the v2 comparison is from memory and was not verified in this pass.",
+  "weaknesses": [
+    "Visually generic neutral: identity must come from fonts and palette overrides",
+    "Inter is referenced but not bundled; if missing the stack falls back to system fonts",
+    "No pressed/active tokens and no built-in reduced-motion policy",
+    "Letter-spacing and weight are not paired to size beyond 4xl+ tracking",
+    "Large size range (2xs-2xl) with several adjacent sizes sharing the same text style (sm and md both 14px), so the ladder is not strictly monotonic in type",
+    "fg.subtle (gray.400 on white) = 2.56:1 fails body-text contrast",
+    "Yellow, orange, and mode-dependent contrast tokens are exceptions that must be remembered per palette",
+    "Requires codegen (typegen) and a theming provider; recipes are CSS-in-JS-free but build-step dependent"
+  ],
+  "takeaways": [
+    "Give every colour the same 8-role contract (contrast, fg, subtle, muted, emphasized, solid, focusRing, border) so a recipe is written once and works for any hue.",
+    "Make colour a third axis (colorPalette) independent of variant and size, and avoid variant x colour compound explosions.",
+    "Use a semantic surface triad bg / fg / border with muted, subtle, emphasized steps plus status variants (error, warning, success, info) in both modes.",
+    "Couple font-size and line-height (and tracking for display sizes) in a text style so they can never be separated.",
+    "Define radius as three semantic layers (l1 inner, l2 control, l3 container) so nested radii are correct and a theme changes in three lines.",
+    "Draw outline/surface borders as inset box-shadow so adding or removing the border never shifts layout.",
+    "Treat focus as a recipe-level utility with three modes (outside, inside, mixed), using the palette's focusRing colour.",
+    "Make exit animations faster than enter animations (select fast in, fastest out; popover fast in, faster out)."
+  ]
+}

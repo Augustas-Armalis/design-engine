@@ -1,0 +1,124 @@
+{
+  "name": "Cloudscape Design System",
+  "slug": "cloudscape",
+  "vendor": "Amazon Web Services",
+  "url": "https://cloudscape.design ; source https://github.com/cloudscape-design/components",
+  "licence": "Apache-2.0 (@cloudscape-design/components 3.0.1394 and @cloudscape-design/design-tokens 3.0.114)",
+  "studiedOn": "2026-10-08",
+  "personality": ["utilitarian", "dense", "trustworthy", "systematic", "neutral-blue"],
+  "bestFor": [
+    "cloud consoles, admin and operations tools with tables, filters, wizards and resource detail pages",
+    "products that must offer user-switchable comfortable/compact density and light/dark modes",
+    "data visualisation dashboards (chart palettes indexed by contrast ratio, light/dark pairs)",
+    "teams wanting an opinionated app shell (AppLayout, SideNavigation, SplitPanel, HelpPanel, Flashbar)"
+  ],
+  "avoidFor": [
+    "marketing sites and brand-led consumer products (looks like the AWS console)",
+    "highly custom visual identities (raw palette not exposed; theming is limited to the documented theming API)",
+    "content/editorial reading experiences (14px body is tuned for scanning, not long-form)"
+  ],
+  "typography": {
+    "families": [
+      "base/heading/display: 'Open Sans', 'Helvetica Neue', Roboto, Arial, sans-serif",
+      "monospace: Monaco, Menlo, Consolas, 'Courier Prime', Courier, 'Courier New', monospace"
+    ],
+    "scale": [
+      {"role": "display-xl", "sizePx": 64, "lineHeightPx": 72, "weight": 400, "trackingEm": -0.03},
+      {"role": "display-l", "sizePx": 42, "lineHeightPx": 48, "weight": 700, "trackingEm": -0.03},
+      {"role": "heading-xl", "sizePx": 24, "lineHeightPx": 30, "weight": 700, "trackingEm": -0.02},
+      {"role": "heading-l", "sizePx": 20, "lineHeightPx": 24, "weight": 700, "trackingEm": -0.015},
+      {"role": "heading-m", "sizePx": 18, "lineHeightPx": 22, "weight": 700, "trackingEm": -0.01},
+      {"role": "heading-s", "sizePx": 16, "lineHeightPx": 20, "weight": 700, "trackingEm": -0.005},
+      {"role": "heading-xs", "sizePx": 14, "lineHeightPx": 18, "weight": 700, "trackingEm": 0},
+      {"role": "tabs", "sizePx": 16, "lineHeightPx": 20, "weight": 700, "trackingEm": 0},
+      {"role": "body-m", "sizePx": 14, "lineHeightPx": 20, "weight": 400, "trackingEm": 0},
+      {"role": "body-s", "sizePx": 12, "lineHeightPx": 16, "weight": 400, "trackingEm": 0}
+    ],
+    "notes": "Tracking tightens progressively with size (0 at 14px, -0.005em at 16, -0.01 at 18, -0.015 at 20, -0.02 at 24, -0.03 at display). Headings all 700; display-xl drops to 400 for a lighter large voice. Buttons and tabs are 700 weight."
+  },
+  "color": {
+    "model": "hex (light/dark pairs per token)",
+    "neutrals": {
+      "text-heading-default": "#0f141a / dark #ebebf0",
+      "text-body-default": "#0f141a / dark #c6c6cd",
+      "text-body-secondary": "#424650 / dark #c6c6cd",
+      "text-status-inactive": "#656871 / dark #a4a4ad",
+      "border-input-default": "#8c8c94 / dark #656871",
+      "border-divider-default": "#c6c6cd / dark #424650",
+      "background-layout-main": "#ffffff / dark #161d26",
+      "background-dropdown-item-hover": "#f3f3f7 / dark #131920",
+      "background-home-header": "#0f141a (both)"
+    },
+    "accents": {
+      "primary/accent/link/focus": "#006ce0 / dark #42b4ff",
+      "button-primary-hover/active": "#002b66 / dark hover #75cfff",
+      "border-button-normal": "#006ce0 (normal buttons are outlined in accent blue)"
+    },
+    "semantic": {
+      "text-status-error": "#db0000 / dark #ff7a7a",
+      "text-status-success": "#00802f / dark #2bb534",
+      "text-status-warning": "#855900 / dark #fbd332",
+      "text-status-info": "#006ce0 / dark #42b4ff",
+      "background-status-error": "#fff5f5 / dark #1f0000",
+      "background-status-success": "#effff1 / dark #001401",
+      "background-status-warning": "#fffef0 / dark #191100",
+      "background-status-info": "#f0fbff / dark #001129",
+      "charts": "color-charts-<hue>-<300..1200> where the step number is the contrast ratio against the background (300 = 3:1, 400 = 4:1 ... ), each with light and dark values"
+    },
+    "darkMode": "Every colour token carries {light, dark} values (visual modes); switched by class at runtime. Dark main surface #161d26, dropdown #1b232d. Accent lightens to #42b4ff in dark and primary button text flips to #0f141a. Additionally 'contexts' (top-navigation, header, alert-header) apply a dark token set locally inside light pages (~188 overrides).",
+    "contrastNotes": "Docs require sufficient contrast and never colour-alone (pair with icon/text); no numeric ratio on the colours page. Measured: accent #006ce0 vs white 4.97:1; dark accent #42b4ff vs #161d26 7.44:1; input border #8c8c94 vs white 3.34:1 (meets 3:1 non-text); divider #c6c6cd vs white 1.65:1 (decorative only). Chart tokens are named by contrast ratio, which is the most rigorous colour naming in the set."
+  },
+  "spacing": {
+    "base": "4px",
+    "scale": [2, 4, 8, 12, 16, 20, 24, 32, 40],
+    "notes": "Names xxxs..xxxl. Two families: space-static-* (never change) and space-scaled-* (shrink in compact: xxxs 2->0, xxs 4->2, xs 8->4, s 12->8, m 16->12, l 20->16, xl 24->20, xxl 32->24, xxxl 40->32). Docs: container horizontal padding 20px, card vertical 16px, label-to-control 4px, between fields 20px, checkbox-to-label 8px, grid gutter 20px fixed, page header to content 16px; soft grid (relative to line-height) not baseline grid."
+  },
+  "radius": {
+    "scale": [3, 4, 8, 12, 16, 20],
+    "rule": "Role-named radii: badge 4, input/dropdown/popover/item/token/tiles 8, alert/flashbar/dropzone 12, container/card 16, button 20 (pill at 32px height). Inline token 4, focus rings 4."
+  },
+  "depth": {
+    "shadows": [
+      "shadow-container-active: 0 1px 1px 1px #e9ebed, 0 6px 36px #0007161a (dark: 0 1px 1px 1px #192534, 0 6px 36px #00040c)",
+      "shadow-card: none",
+      "other shadow tokens (dropdown, modal, popover, sticky): not exposed in the public design-tokens package -> unknown"
+    ],
+    "borders": "Borders do most of the separation work: 2px for buttons, alerts, dropdowns, popovers, tokens, selected items; 1px for fields, cards, side navigation. Icon stroke widths are tokenised by icon size (x-small 1.5px ... large 4px).",
+    "blur": "none"
+  },
+  "motion": {
+    "durationsMs": [115, 165, 250],
+    "easings": [
+      "Curve A responsive cubic-bezier(0,0,0,1)",
+      "Curve B sticky cubic-bezier(1,0,0.83,1)",
+      "Curve C expressive cubic-bezier(0.84,0,0.16,1)"
+    ],
+    "notes": "Every motion token has a 'disabled' mode value of 0ms, so reduced motion and test runs (disableMotion()) are token-level switches. Recipes: dropdown/modal fade+scale A 115ms; side panels slide A 115ms; flashbar slide from top C 250ms; error shake 5px each side A 165ms; link hover C 165ms; popover hide-on-hover-out uses Curve B so it lingers. Long ambient tokens exist for gen-AI avatar gradient (3600ms) and loading dots (1200ms)."
+  },
+  "density": {
+    "modes": ["comfortable (default)", "compact"],
+    "controlHeightsPx": {"input comfortable": 32, "input compact": 28, "side-nav item comfortable": 28, "side-nav item compact": 24, "button padding-y comfortable": 4, "button padding-y compact": 2, "button padding-x comfortable": 20, "button padding-x compact": 16}
+  },
+  "components": {
+    "count": 104,
+    "list": ["action-card", "alert", "anchor-navigation", "annotation-context", "app-layout", "app-layout-toolbar", "area-chart", "attribute-editor", "autosuggest", "badge", "bar-chart", "box", "breadcrumb-group", "button", "button-dropdown", "button-group", "calendar", "cards", "checkbox", "code-editor", "collection-preferences", "column-layout", "container", "content-layout", "copy-to-clipboard", "date-input", "date-picker", "date-range-picker", "dialog", "divider", "drawer", "dropdown", "error-boundary", "expandable-section", "file-dropzone", "file-input", "file-token-group", "file-upload", "flashbar", "form", "form-field", "grid", "header", "help-panel", "hotspot", "icon", "icon-provider", "input", "item-card", "key-value-pairs", "line-chart", "link", "list", "live-region", "mixed-line-bar-chart", "modal", "multiselect", "navigable-group", "pagination", "panel-layout", "pie-chart", "popover", "progress-bar", "prompt-input", "property-filter", "radio-button", "radio-group", "s3-resource-selector", "segmented-control", "select", "side-navigation", "skeleton", "slider", "space-between", "spinner", "split-panel", "status-indicator", "steps", "table", "tabs", "tag-editor", "text-content", "text-filter", "textarea", "tiles", "time-input", "toggle", "toggle-button", "token", "token-group", "tooltip", "top-navigation", "tree-view", "truncated-text", "tutorial-panel", "wizard"],
+    "stateMatrixCompleteness": "Very high: 413 colour tokens, each light+dark, covering default/hover/active/disabled/selected/focused/read-only per control family; status icons have their own keyframes. Count = top-level component directories in @cloudscape-design/components 3.0.1394 (includes a few sub-parts such as table-row)."
+  },
+  "tokenArchitecture": "Single flat public layer of ~570 kebab-case semantic tokens (color-background-button-primary-default, space-scaled-m, border-radius-container, motion-duration-responsive) with DTCG-style $value objects keyed by MODE: colour by visual mode {light, dark}, spacing/sizing by density {comfortable, compact}, motion by {default, disabled}. Raw palette is private. Contexts (compact-table, top-navigation, header, flashbar, alert, app-layout-toolbar) are scoped override sets applied inside a region. Public theming API overrides tokens per mode/context.",
+  "distinctiveness": "Mode-keyed token values (light/dark, comfortable/compact, default/disabled motion) in one file; static vs scaled spacing; contextual token sets that make a dark header inside a light page; chart colours named by guaranteed contrast ratio; pill buttons with 2px accent outline for secondary actions.",
+  "weaknesses": [
+    "Raw colour palette and most shadow values are not in the public token package",
+    "Strong AWS console look; hard to make feel like a different brand",
+    "14px body and 32px controls are dense for consumer/mobile",
+    "Compact mode deliberately not applied to alerts, help panels, dropdown items and charts, so density is partial by design"
+  ],
+  "takeaways": [
+    "Key every token by its mode axis inside the token itself ({light,dark}, {comfortable,compact}, {default,disabled}) rather than separate theme files",
+    "Split spacing into 'scaled' (shrinks in compact) and 'static' (never changes) so density changes never break structural gutters",
+    "Name chart/data colours by the contrast ratio they guarantee against the surface (red-400 = 4:1)",
+    "Use token 'contexts' to restyle a region (dark top nav, coloured alert header) without new components",
+    "Make reduced motion a token mode (all durations to 0ms) so components need no per-component media queries",
+    "Tighten letter-spacing progressively with size (0 at 14px to -0.03em at display)"
+  ],
+  "provenance": "public-spec (@cloudscape-design/design-tokens@3.0.114 index-visual-refresh.json, components@3.0.1394 directory list, cloudscape.design foundation pages: content-density, motion, colors, spacing); contrast ratios measured by computation"
+}

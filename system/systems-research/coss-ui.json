@@ -1,0 +1,295 @@
+{
+  "name": "coss ui (incl. Origin UI)",
+  "slug": "coss-ui",
+  "vendor": "Cal.com / coss.com",
+  "url": "https://coss.com/ui/docs",
+  "licence": "MIT for apps/ui and apps/origin in github.com/cosscom/coss (rest of the repo AGPL-3.0, per README Licensing section).",
+  "studiedOn": "2026-10-08",
+  "personality": [
+    "dense",
+    "crisp",
+    "neutral",
+    "tactile",
+    "production-sober"
+  ],
+  "bestFor": [
+    "SaaS product UI (the founder's default stack: Next.js + Tailwind v4 + Base UI)",
+    "dense settings, scheduling, data screens",
+    "teams migrating from shadcn/ui who want Base UI primitives"
+  ],
+  "avoidFor": [
+    "expressive marketing heroes without added art direction (it is deliberately neutral-800 on white)",
+    "projects needing a coloured brand primary out of the box (primary is near-black)"
+  ],
+  "typography": {
+    "families": [
+      "--font-sans: Inter (via @coss/fonts)",
+      "--font-heading: aliases --font-sans by default (coss.com itself uses Cal Sans 2.0 for both)",
+      "--font-mono: Geist Mono"
+    ],
+    "scale": [
+      {
+        "role": "button/input/select label mobile",
+        "sizePx": 16,
+        "lineHeightPx": "fills control",
+        "weight": 500,
+        "trackingEm": 0
+      },
+      {
+        "role": "button/input label >=640px",
+        "sizePx": 14,
+        "lineHeightPx": "fills control",
+        "weight": 500,
+        "trackingEm": 0
+      },
+      {
+        "role": "button xs (>=640)",
+        "sizePx": 12,
+        "lineHeightPx": "unknown",
+        "weight": 500,
+        "trackingEm": 0
+      },
+      {
+        "role": "button xl",
+        "sizePx": "18 mobile / 16",
+        "lineHeightPx": "unknown",
+        "weight": 500,
+        "trackingEm": 0
+      },
+      {
+        "role": "DialogTitle",
+        "sizePx": 20,
+        "lineHeightPx": 28,
+        "weight": 600,
+        "trackingEm": 0
+      },
+      {
+        "role": "CardTitle",
+        "sizePx": 18,
+        "lineHeightPx": 28,
+        "weight": 600,
+        "trackingEm": 0
+      },
+      {
+        "role": "Description / small",
+        "sizePx": 14,
+        "lineHeightPx": 20,
+        "weight": 400,
+        "trackingEm": 0
+      },
+      {
+        "role": "Tooltip / badge sm",
+        "sizePx": 12,
+        "lineHeightPx": 16,
+        "weight": 500,
+        "trackingEm": 0
+      }
+    ],
+    "notes": "Titles use font-heading + font-semibold. Same 16 -> 14px step at sm as Catalyst. Placeholder at muted-foreground/72; icons 18px mobile, 16px desktop, opacity 80%."
+  },
+  "color": {
+    "model": "Tailwind oklch palette + --alpha() and color-mix(in srgb) recipes",
+    "neutrals": {
+      "background": "white (dark: neutral-950 95% + white)",
+      "foreground": "neutral-800 (dark neutral-100)",
+      "card/popover": "white (dark: background 98% + white)",
+      "muted/secondary/accent": "black 4% (dark white 4%)",
+      "muted-foreground": "neutral-500 90% + black (dark: + white)",
+      "border": "black 8% (dark white 6%)",
+      "input": "black 10% (dark white 8%)",
+      "ring": "neutral-400 (dark neutral-500)",
+      "sidebar": "neutral-50",
+      "radius var": "0.625rem (defined; see radius rule)"
+    },
+    "accents": {
+      "primary": "neutral-800 with neutral-50 text (dark: inverted neutral-100/neutral-800)",
+      "chart light": [
+        "orange-600",
+        "teal-600",
+        "cyan-900",
+        "amber-400",
+        "amber-500"
+      ],
+      "chart dark": [
+        "blue-700",
+        "emerald-500",
+        "amber-500",
+        "purple-500",
+        "rose-500"
+      ]
+    },
+    "semantic": {
+      "destructive": "red-500 / foreground red-700 (dark red-400)",
+      "info": "blue-500 / blue-700 (dark blue-400)",
+      "success": "emerald-500 / emerald-700 (dark emerald-400)",
+      "warning": "amber-500 / amber-700 (dark amber-400)"
+    },
+    "darkMode": ".dark class; surfaces are not separate greys but white mixed 2-5% into neutral-950, borders and fills are white alpha.",
+    "contrastNotes": "Status '-foreground' tokens are a 700 shade used as TEXT on light backgrounds (not text-on-fill), so badges/alerts stay AA. Borders are alpha so they stay visible on any card colour (vendor rationale: 'opaque borders ... crisp, contrasted borders even when backgrounds lack sufficient contrast')."
+  },
+  "spacing": {
+    "base": "Tailwind 4px; paddings written as calc(--spacing(n) - 1px) to absorb the 1px border so content sits on the 4px grid",
+    "scale": "Tailwind default; dialog/card padding 24px (p-6), menu p-1 (4px), menu items h-8/h-7"
+  },
+  "radius": {
+    "scale": [
+      {
+        "name": "rounded-md (button xs, tooltip)",
+        "px": 6
+      },
+      {
+        "name": "rounded-lg (button, input, select, menu)",
+        "px": 8
+      },
+      {
+        "name": "rounded-xl (card sections)",
+        "px": 12
+      },
+      {
+        "name": "rounded-2xl (card, dialog)",
+        "px": 16
+      },
+      {
+        "name": "rounded-sm (badge)",
+        "px": 4
+      },
+      {
+        "name": "--radius",
+        "px": 10
+      }
+    ],
+    "rule": "Controls 8px, containers 16px, inner layers calc(radius - 1px). --radius: 0.625rem is declared but the @theme inline block in the styling docs does not map --radius-* to it, so Tailwind default radii apply (inferred from registry source; verify in a build)."
+  },
+  "depth": {
+    "shadows": [
+      "primary button: shadow-xs tinted primary/24 + inset 0 1px white/16% (top highlight); pressed: inset 0 1px black/8%, outer shadow removed",
+      "outline button/input: shadow-xs/5 + before: 0 1px black/4% (bottom lip); dark: before 0 -1px white/6% (top lip)",
+      "popover/menu/dialog: shadow-lg/5; tooltip shadow-md/5",
+      "dialog backdrop: black/32 + backdrop-blur-sm"
+    ],
+    "borders": "1px always present (transparent on ghost/secondary) so all variants share a box; colour is alpha (black 8-10%).",
+    "blur": "backdrop-blur-sm (8px) on dialog backdrop only"
+  },
+  "motion": {
+    "durationsMs": [
+      0,
+      200
+    ],
+    "easings": [
+      "ease-in-out (dialog)",
+      "transition-shadow on controls"
+    ],
+    "notes": "Dialog: 200ms, enter from scale 0.98 + opacity; nested dialogs scale 1 - 0.1 x depth. Tooltip duration-0 (instant on subsequent hovers). Skeleton 2s linear shimmer. Autofill background transition hack 5000000s."
+  },
+  "density": {
+    "modes": [
+      "xs",
+      "sm",
+      "default",
+      "lg",
+      "xl",
+      "icon-xs..icon-xl",
+      "pointer-coarse min 44px hit area via ::after"
+    ],
+    "controlHeightsPx": {
+      "button xs": "28 / 24 (>=640)",
+      "button sm": "32 / 28",
+      "button default": "36 / 32",
+      "button lg": "40 / 36",
+      "button xl": "44 / 40",
+      "input sm": "32 / 28",
+      "input default": "36 / 32",
+      "input lg": "40 / 36",
+      "menu item": "32 / 28"
+    }
+  },
+  "components": {
+    "count": 56,
+    "list": [
+      "Accordion",
+      "Alert",
+      "Alert Dialog",
+      "Autocomplete",
+      "Avatar",
+      "Badge",
+      "Breadcrumb",
+      "Button",
+      "Calendar",
+      "Card",
+      "Checkbox",
+      "Checkbox Group",
+      "Collapsible",
+      "Combobox",
+      "Command",
+      "Context Menu",
+      "Date Picker",
+      "Dialog",
+      "Drawer",
+      "Empty",
+      "Field",
+      "Fieldset",
+      "Form",
+      "Frame",
+      "Group",
+      "Input",
+      "Input Group",
+      "Kbd",
+      "Label",
+      "Menu",
+      "Meter",
+      "Number Field",
+      "OTP Field",
+      "Pagination",
+      "Popover",
+      "Preview Card",
+      "Progress",
+      "Radio Group",
+      "Scroll Area",
+      "Select",
+      "Separator",
+      "Sheet",
+      "Sidebar",
+      "Skeleton",
+      "Slider",
+      "Spinner",
+      "Switch",
+      "Table",
+      "Tabs",
+      "Textarea",
+      "Toast",
+      "Toggle",
+      "Toggle Group",
+      "Toolbar",
+      "Tooltip",
+      "+ hooks useMediaQuery, useCopyToClipboard; plus 'particles' (pre-assembled patterns) and Cal.com 'atoms'"
+    ],
+    "stateMatrixCompleteness": "High: hover, focus-visible (ring-2 + offset-1, inputs ring-[3px] ring/24), active/data-pressed, disabled (opacity 64%), loading (data-loading, spinner, text transparent), aria-invalid (border destructive/36, ring destructive/16), autofill, pointer-coarse hit areas, dark variants."
+  },
+  "tokenArchitecture": "shadcn/ui variable names (background, foreground, primary, muted, accent, border, input, ring, card, popover, sidebar-*) + coss additions (destructive-foreground, info, success, warning with -foreground, code, code-highlight, chart-1..5). Values are recipes (alpha, color-mix) over Tailwind primitives. Fonts via --font-sans/--font-heading/--font-mono.",
+  "distinctiveness": "Physical micro-depth without gradients: alpha borders + 1px lips (bottom in light, top in dark) + inset highlights on solid buttons; dual density by pointer (touch sizes step down at 640px) and invisible 44px hit areas on coarse pointers.",
+  "weaknesses": [
+    "Neutral-800 primary means every product looks the same until a brand primary is set",
+    "--radius declared but unused by components (confusing)",
+    "Dark mode built from tiny white mixes needs a good display to read",
+    "Several docs pages (e.g. migration .md) 404 via the llms.txt path on 2026-10-08"
+  ],
+  "takeaways": [
+    "Write padding as calc(--spacing(n) - 1px) so bordered controls keep text on the 4px grid.",
+    "Use alpha borders and a 1px lip shadow (bottom in light, top in dark) for depth that survives any surface.",
+    "Give coarse pointers an invisible 44px ::after hit area instead of bigger visible controls.",
+    "Separate status 'fill' (500) from status 'text' (-foreground 700 / dark 400)."
+  ],
+  "provenance": "public-spec (registry JSON at coss.com/ui/r/*.json and docs .md files)",
+  "apiConventions": [
+    "render prop for polymorphism (render={<Link/>}), never asChild",
+    "menu/select items use onClick, not onSelect",
+    "Select items are objects: <Select items={items}> + <SelectItem value={item}>",
+    "toasts only via toastManager.add({title, description, data:{status}}) with ToastProvider + AnchoredToastProvider in layout",
+    "Dialog = DialogPopup > DialogHeader + DialogPanel + DialogFooter; forms wrap only Panel+Footer in <Form className='contents'>",
+    "Cancel buttons variant='ghost'",
+    "size prop for sizing, never custom padding classes",
+    "ToggleGroup multiple={false}; Slider value is scalar",
+    "DialogContent/SheetContent kept as compat aliases of DialogPopup/SheetPopup",
+    "Install: npx shadcn@latest add @coss/<name> or init @coss/style"
+  ]
+}

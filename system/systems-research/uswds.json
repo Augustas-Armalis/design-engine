@@ -1,0 +1,283 @@
+{
+  "name": "U.S. Web Design System (USWDS)",
+  "slug": "uswds",
+  "vendor": "U.S. General Services Administration (GSA), Technology Transformation Services",
+  "url": "https://designsystem.digital.gov ; source https://github.com/uswds/uswds",
+  "licence": "Public domain in the US + CC0 1.0 worldwide for GSA work; bundled third-party parts (e.g. Material Icons sprite, fonts) keep their own licences (Apache-2.0 / OFL) per LICENSE.md in @uswds/uswds 3.14.0",
+  "studiedOn": "2026-10-08",
+  "personality": [
+    "civic",
+    "plain",
+    "trustworthy",
+    "accessible-first",
+    "systematic",
+    "editorial-serif"
+  ],
+  "bestFor": [
+    "government, public-sector, healthcare, education and any service where trust and accessibility outrank flair",
+    "content-heavy informational sites and transactional forms (memorable date, input mask, step indicator, validation)",
+    "teams that want a token architecture with hard guardrails: themes can only pick from system tokens",
+    "projects that need contrast guaranteed by construction (grade 'magic numbers')"
+  ],
+  "avoidFor": [
+    "brand-expressive SaaS marketing (deliberately plain; looks governmental)",
+    "dark-mode-first products (no global dark theme; only a usa-dark-background helper)",
+    "motion-rich or highly interactive app UIs (single 0.15s ease-in-out transition token)",
+    "teams that cannot run Sass (theme tokens are Sass settings compiled at build)"
+  ],
+  "typography": {
+    "families": [
+      "sans (ui, body): Source Sans Pro Web (default $theme-font-type-sans), cap-height 340px; Public Sans Web available (cap 362px, the base)",
+      "serif (heading, alt): Merriweather Web, cap-height 371px",
+      "mono (code): Roboto Mono Web, cap-height 380px",
+      "roles: ui=sans, heading=serif, body=sans, code=mono, alt=serif"
+    ],
+    "scale": [
+      {
+        "role": "display (3xl, system 15 = 48px, serif normalized)",
+        "sizePx": 46.8,
+        "lineHeightPx": 56.2,
+        "weight": 700,
+        "trackingEm": "0"
+      },
+      {
+        "role": "h1 (2xl, system 14 = 40px, serif)",
+        "sizePx": 39.0,
+        "lineHeightPx": 46.8,
+        "weight": 700,
+        "trackingEm": "0"
+      },
+      {
+        "role": "h2 (xl, system 12 = 32px, serif)",
+        "sizePx": 31.2,
+        "lineHeightPx": 37.5,
+        "weight": 700,
+        "trackingEm": "0"
+      },
+      {
+        "role": "h3 (lg, system 9 = 22px, serif)",
+        "sizePx": 21.5,
+        "lineHeightPx": 25.8,
+        "weight": 700,
+        "trackingEm": "0"
+      },
+      {
+        "role": "h4 (sm, system 5 = 16px, serif)",
+        "sizePx": 15.6,
+        "lineHeightPx": 18.7,
+        "weight": 700,
+        "trackingEm": "0"
+      },
+      {
+        "role": "h5 (xs, system 4 = 15px, serif)",
+        "sizePx": 14.6,
+        "lineHeightPx": 17.6,
+        "weight": 700,
+        "trackingEm": "0"
+      },
+      {
+        "role": "h6 (3xs, system 2 = 13px, serif)",
+        "sizePx": 12.7,
+        "lineHeightPx": 15.2,
+        "weight": 700,
+        "trackingEm": "0"
+      },
+      {
+        "role": "body (sm, system 5 = 16px, sans)",
+        "sizePx": 17.0,
+        "lineHeightPx": 25.6,
+        "weight": 400,
+        "trackingEm": "0"
+      },
+      {
+        "role": "small (2xs, system 3 = 14px, sans)",
+        "sizePx": 14.9,
+        "lineHeightPx": 22.4,
+        "weight": 400,
+        "trackingEm": "0"
+      }
+    ],
+    "notes": "Px values are DERIVED from the default settings via the normalize-type-scale() formula: rendered size = 362px (system base cap height) / typeface cap height x system size. So 16px in Source Sans renders 17.04px and 40px Merriweather renders 39.0px: every face is optically matched to Public Sans. Line-heights are also normalized (token / (362/cap), rounded to 0.1): body token 5 (1.62) -> 1.5 for Source Sans; heading token 2 (1.2) stays 1.2 for Merriweather. System type scale: micro 10, 1:12, 2:13, 3:14, 4:15, 5:16, 6:17, 7:18, 8:20, 9:22, 10:24, 11:28, 12:32, 13:36, 14:40, 15:48, 16:56, 17:64, 18:80, 19:120, 20:140. Line-height tokens 1:1, 2:1.2, 3:1.35, 4:1.5, 5:1.62, 6:1.75. Measure tokens 1-6 = 44/60/64/68/72/88ex (default body measure 4 = 68ex, narrow 1 = 44ex). Weights limited to light 300 / normal 400 / bold 700 by default. Root font size respects user setting (theme-respect-user-font-size: true)."
+  },
+  "color": {
+    "model": "hex, organised as HSL-hue families x luminance grades 5-90 (plus vivid 'v' variants); grade = relative-luminance band",
+    "neutrals": {
+      "gray-cool-5": "#edeff0",
+      "gray-cool-10": "#dfe1e2",
+      "gray-cool-30": "#a9aeb1",
+      "gray-cool-50": "#71767a",
+      "gray-cool-60": "#565c65",
+      "gray-cool-70": "#3d4551",
+      "gray-5": "#f0f0f0",
+      "gray-90 (ink)": "#1b1b1b",
+      "white": "#ffffff",
+      "theme roles": "base-lightest gray-5, base-lighter gray-cool-10, base-light gray-cool-30, base gray-cool-50, base-dark gray-cool-60, base-darker gray-cool-70, base-darkest/ink gray-90",
+      "other neutral families": "gray (1-100), gray-warm, gray-cool, black-transparent, white-transparent"
+    },
+    "accents": {
+      "primary (blue-60v)": "#005ea2",
+      "primary-vivid (blue-warm-60v)": "#0050d8",
+      "primary-dark (blue-warm-70v)": "#1a4480",
+      "primary-darker (blue-warm-80v)": "#162e51",
+      "primary-lighter (blue-10)": "#d9e8f6",
+      "primary-light (blue-30)": "#73b3e7",
+      "secondary (red-50)": "#d83933",
+      "secondary-dark (red-60v)": "#b50909",
+      "accent-warm (orange-30v)": "#fa9441",
+      "accent-cool (cyan-30v)": "#00bde3",
+      "system families (24)": "red, red-warm, red-cool, orange, orange-warm, gold, yellow, green, green-warm, green-cool, mint, mint-cool, cyan, blue, blue-warm, blue-cool, indigo, indigo-warm, indigo-cool, violet, violet-warm, magenta, gray, gray-warm, gray-cool (+transparents)"
+    },
+    "semantic": {
+      "error (red-warm-50v)": "#d54309",
+      "error-dark (red-60v)": "#b50909",
+      "error-lighter (red-warm-10)": "#f4e3db",
+      "warning (gold-20v)": "#ffbe2e",
+      "warning-dark (gold-30v)": "#e5a000",
+      "warning-lighter (yellow-5)": "#faf3d1",
+      "success (green-cool-40v)": "#00a91c",
+      "success-dark (green-cool-50v)": "#008817",
+      "success-lighter (green-cool-5)": "#ecf3ec",
+      "info (cyan-30v)": "#00bde3",
+      "info-dark (cyan-40v)": "#009ec1",
+      "info-lighter (cyan-5)": "#e7f6f8",
+      "disabled (gray-50)": "#757575",
+      "emergency (red-warm-60v)": "#9c3d10",
+      "link": "primary #005ea2; visited violet-70v #54278f",
+      "focus": "blue-40v #2491ff, 4px (0.5 units) solid, offset 0"
+    },
+    "darkMode": "No global dark theme. Components can sit on dark via the usa-dark-background package and the reverse text colour token ($theme-text-reverse-color: white). Contrast on any background is computed from grades at build time, so 'dark mode' is achieved by choosing high-grade backgrounds, not by a token remap.",
+    "contrastNotes": "Contrast is built into token names. 'Magic number' = grade difference: 40+ = AA large text (3:1), 50+ = AA (4.5:1) / AAA large, 70+ = AAA (7:1); grade 50 passes AA against both white (0) and black (100). Grade bands by relative luminance: 5: .85-.93, 10: .75-.82, 20: .50-.65, 30: .35-.45, 40: .225-.30, 50: .175-.183, 60: .10-.125, 70: .05-.07, 80: .02-.04, 90: .005-.015. Encoded in Sass as $system-wcag-magic-numbers (AA 50, AAA 70, AA-large 40) and checked at compile time. Measured: primary #005ea2 vs white 6.72:1; ink #1b1b1b vs white 17.22:1; base gray-cool-50 #71767a vs white 4.59:1 (grade 50 rule holds); secondary red-50 #d83933 4.61:1."
+  },
+  "spacing": {
+    "base": "8px ($system-spacing-grid-base) with half steps; units(n) = n x 8px",
+    "scale": [
+      1,
+      2,
+      4,
+      8,
+      12,
+      16,
+      20,
+      24,
+      32,
+      40,
+      48,
+      56,
+      64,
+      72,
+      80,
+      120
+    ],
+    "notes": "Tokens: '1px','2px','05'=4,'1'=8,'105'=12,'2'=16,'205'=20,'3'=24,'4'=32,'5'=40,'6'=48,'7'=56,'8'=64,'9'=72,'10'=80,'15'=120, plus named large widths card 160, card-lg 240, mobile 320, mobile-lg 480, tablet 640, tablet-lg 880, desktop 1024, desktop-lg 1200, widescreen 1400 which double as breakpoints. Negative versions exist. Site margins 32px desktop / 16px mobile; column gaps 2px/16px/24px."
+  },
+  "radius": {
+    "scale": [
+      0,
+      2,
+      4,
+      8,
+      "pill 99rem",
+      "+ any spacing token"
+    ],
+    "rule": "theme radius sm 2px, md 0.5 unit = 4px, lg 1 unit = 8px. Buttons use md (4px); cards lg (8px) with 2px base-lighter border."
+  },
+  "depth": {
+    "shadows": [
+      "shadow-1: 0 1px 4px 0 rgba(0,0,0,.1)",
+      "shadow-2: 0 4px 8px 0 rgba(0,0,0,.1)",
+      "shadow-3: 0 8px 16px 0 rgba(0,0,0,.1)",
+      "shadow-4: 0 12px 24px 0 rgba(0,0,0,.1)",
+      "shadow-5: 0 16px 32px 0 rgba(0,0,0,.1)"
+    ],
+    "borders": "Borders and fills carry most structure: card 2px base-lighter, alert 8px left bar (bar width 1 unit), button stroke 2px for outline variant. High-contrast-mode border colours tokenised separately.",
+    "blur": "none"
+  },
+  "motion": {
+    "durationsMs": [
+      150
+    ],
+    "easings": [
+      "ease-in-out ($project-easing: 0.15s ease-in-out)"
+    ],
+    "notes": "u-transition(prop, easing, $essential) mixin removes the transition under prefers-reduced-motion unless the animation is flagged essential. No motion scale."
+  },
+  "density": {
+    "modes": [
+      "single density; 'big' button variant"
+    ],
+    "controlHeightsPx": {
+      "input": 40,
+      "touch target minimum": 48,
+      "button padding default": "12px x 20px (height depends on line-height; not tokenised)",
+      "button big padding": "16px x 24px"
+    }
+  },
+  "components": {
+    "count": 45,
+    "list": [
+      "accordion",
+      "alert",
+      "banner",
+      "breadcrumb",
+      "button",
+      "button-group",
+      "card",
+      "character-count",
+      "checkbox",
+      "checklist",
+      "collection",
+      "combo-box",
+      "date-picker",
+      "date-range-picker",
+      "file-input",
+      "footer",
+      "form",
+      "header",
+      "hero",
+      "icon",
+      "identifier",
+      "in-page-navigation",
+      "input",
+      "input-mask",
+      "input-prefix-suffix",
+      "language-selector",
+      "memorable-date",
+      "modal",
+      "nav",
+      "pagination",
+      "process-list",
+      "radio",
+      "range",
+      "search",
+      "select",
+      "sidenav",
+      "site-alert",
+      "step-indicator",
+      "summary-box",
+      "table",
+      "tag",
+      "textarea",
+      "time-picker",
+      "tooltip",
+      "validation"
+    ],
+    "stateMatrixCompleteness": "Medium-high for forms (error, success, disabled, focus, hint, validation states per input; aria-disabled styles) but low for colour states as tokens (hover/active are picked as darker grades per component in Sass, not tokenised). Count = usa-* packages in @uswds/uswds 3.14.0 that are components (74 usa-* packages minus 29 typography/layout/helper packages such as usa-prose, usa-layout-grid, usa-dark-background, usa-hint)."
+  },
+  "tokenArchitecture": "Two strict tiers plus settings. SYSTEM tokens: the complete closed vocabulary (24 colour families x grades 5-90 [+vivid], type scale 1-20, line-height 1-6, measure 1-6, spacing units, breakpoints, cap heights). THEME tokens: a small role-based subset set in Sass settings files that may ONLY reference system tokens ($theme-color-primary: 'blue-60v'; $theme-h1-font-size: '2xl'; $theme-border-radius-md: 0.5). Components consume theme tokens through functions/mixins (color(), units(), size(), radius()) and utility classes; raw values are rejected at compile time with an error. State tokens (error/warning/success/info/disabled/emergency) are themed families too. Theme token names are positional (lightest/lighter/light/base/vivid/dark/darker/darkest) so a project can swap 'blue' for 'green-cool' without touching components.",
+  "distinctiveness": "Contrast-by-arithmetic: colour grades are luminance bands, so subtracting grade numbers tells you the WCAG level without a checker. Optical normalization of every typeface to a common cap height so font swaps never break the rhythm. A serif (Merriweather) heading voice over a sans body, rare in UI systems. Theme layer that physically cannot introduce off-system values.",
+  "weaknesses": [
+    "Plain, recognisably governmental aesthetic",
+    "No dark theme, no density modes, one transition token",
+    "Sass build step required for theming; CSS custom properties are not the primary API",
+    "Normalized sizes produce fractional px (17.04px body) which surprises designers working in Figma"
+  ],
+  "takeaways": [
+    "Encode contrast in colour names: grade = luminance band, so 'grade difference >= 50' guarantees 4.5:1 and >= 70 guarantees 7:1",
+    "Two-tier tokens with a hard rule: theme tokens may only point at system tokens, enforced at build",
+    "Normalize type sizes by typeface cap height (target 362px cap at 1000 UPM-equivalent) so swapping fonts keeps optical size and leading",
+    "Positional theme names (lighter/light/base/dark/darker/vivid) let a project re-hue the whole product by changing the family",
+    "Measure (line length) is a first-class token in ex units (44-88ex)",
+    "Reduced motion via a transition mixin with an explicit 'essential' flag"
+  ],
+  "provenance": "public-spec (@uswds/uswds@3.14.0 packages/uswds-core/src/styles tokens, settings, variables, functions; dist/css/uswds.min.css for shadows; designsystem.digital.gov color overview and design-tokens pages); type px values derived from the source formula; contrast ratios measured by computation"
+}

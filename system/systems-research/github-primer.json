@@ -1,0 +1,544 @@
+{
+  "name": "GitHub Primer",
+  "slug": "github-primer",
+  "vendor": "GitHub, Inc.",
+  "url": "https://primer.style",
+  "licence": "MIT (@primer/primitives 11.10.0 and @primer/react 38.40.1, copyright GitHub Inc.). Octicons/Mona Sans/GitHub marks are separate assets with their own terms (not verified here).",
+  "studiedOn": "2026-10-08",
+  "personality": [
+    "utilitarian",
+    "dense",
+    "calm",
+    "developer-native",
+    "accessible",
+    "systematic"
+  ],
+  "bestFor": [
+    "dense product UI for developer, ops and admin tools",
+    "list/table/detail-heavy SaaS where a page is a stack of bordered rows and panes",
+    "products that must ship colour-blind, high-contrast and dark themes as first-class modes",
+    "teams that want machine-checkable token rules (the package ships an RFC 2119 guide for LLMs)"
+  ],
+  "avoidFor": [
+    "brand-led marketing or campaign pages (GitHub has a separate system, Primer Brand, for that)",
+    "expressive, high-emotion or editorial layouts; the system deliberately has almost no decorative vocabulary",
+    "touch-first consumer apps unless the coarse-pointer tokens are wired (fine-pointer default target is only 16px)"
+  ],
+  "typography": {
+    "families": [
+      "sans (body, title-small): 'Mona Sans VF', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans Backtick Fix', 'Noto Sans', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji'",
+      "sansDisplay (display, title-large/medium, subtitle): same stack as sans (semantic alias only)",
+      "mono: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace"
+    ],
+    "scale": [
+      {
+        "role": "display",
+        "sizePx": 40,
+        "lineHeightPx": 55,
+        "weight": 500,
+        "trackingEm": "none-defined"
+      },
+      {
+        "role": "title-large",
+        "sizePx": 32,
+        "lineHeightPx": 48,
+        "weight": 600,
+        "trackingEm": "none-defined"
+      },
+      {
+        "role": "title-medium (default page title)",
+        "sizePx": 20,
+        "lineHeightPx": 32.5,
+        "weight": 600,
+        "trackingEm": "none-defined"
+      },
+      {
+        "role": "title-small",
+        "sizePx": 16,
+        "lineHeightPx": 24,
+        "weight": 600,
+        "trackingEm": "none-defined"
+      },
+      {
+        "role": "subtitle",
+        "sizePx": 20,
+        "lineHeightPx": 32.5,
+        "weight": 400,
+        "trackingEm": "none-defined"
+      },
+      {
+        "role": "body-large (user content / markdown)",
+        "sizePx": 16,
+        "lineHeightPx": 24,
+        "weight": 400,
+        "trackingEm": "none-defined"
+      },
+      {
+        "role": "body-medium (default UI)",
+        "sizePx": 14,
+        "lineHeightPx": 21,
+        "weight": 400,
+        "trackingEm": "none-defined"
+      },
+      {
+        "role": "body-small (helper, footnote)",
+        "sizePx": 12,
+        "lineHeightPx": 19.5,
+        "weight": 400,
+        "trackingEm": "none-defined"
+      },
+      {
+        "role": "caption (single line only)",
+        "sizePx": 12,
+        "lineHeightPx": 15,
+        "weight": 400,
+        "trackingEm": "none-defined"
+      },
+      {
+        "role": "code-block",
+        "sizePx": 13,
+        "lineHeightPx": 19.5,
+        "weight": 400,
+        "trackingEm": "none-defined"
+      },
+      {
+        "role": "code-inline",
+        "sizePx": "0.9285em of parent",
+        "lineHeightPx": "inherit",
+        "weight": 400,
+        "trackingEm": "none-defined"
+      }
+    ],
+    "notes": "Base size scale (rem): 12, 14, 16, 20, 32, 40 px = xs, sm, md, lg, xl, 2xl. Weights: 300, 400, 500, 600 only (guide says never use arbitrary weights such as 700). Line-heights are unitless: tight 1.25, snug 1.375, normal 1.5, relaxed 1.625, loose 1.75. Every text style is shipped as a CSS `font` shorthand token (weight size/line-height family) so size, leading and weight cannot drift apart. Guide: downgrade one size level on mobile (title-large to title-medium); keep line length around 80 characters or fewer; left-aligned ragged right; do not use colour as the primary emphasis device. Docs claim line-heights align to a 4px grid but the computed values (21, 19.5, 32.5px) do not; treat the claim as aspirational. No letter-spacing tokens exist (trackingEm 'none-defined')."
+  },
+  "color": {
+    "model": "hex",
+    "neutrals": {
+      "light scale 0-13": [
+        "#ffffff",
+        "#f6f8fa",
+        "#eff2f5",
+        "#e6eaef",
+        "#e0e6eb",
+        "#dae0e7",
+        "#d1d9e0",
+        "#c8d1da",
+        "#818b98",
+        "#59636e",
+        "#454c54",
+        "#393f46",
+        "#25292e",
+        "#1f2328"
+      ],
+      "dark scale 0-13": [
+        "#010409",
+        "#0d1117",
+        "#151b23",
+        "#212830",
+        "#262c36",
+        "#2a313c",
+        "#2f3742",
+        "#3d444d",
+        "#656c76",
+        "#9198a1",
+        "#b7bdc8",
+        "#d1d7e0",
+        "#f0f6fc",
+        "#ffffff"
+      ],
+      "light roles": {
+        "bgColor-default": "#ffffff",
+        "bgColor-muted": "#f6f8fa",
+        "bgColor-inset": "#f6f8fa",
+        "bgColor-emphasis": "#25292e",
+        "bgColor-disabled": "#eff2f5",
+        "fgColor-default": "#1f2328",
+        "fgColor-muted": "#59636e",
+        "fgColor-disabled": "#818b98",
+        "borderColor-default": "#d1d9e0",
+        "borderColor-muted": "#d1d9e0b3",
+        "borderColor-emphasis": "#818b98",
+        "borderColor-translucent": "#1f232826",
+        "control-bgColor-rest": "#f6f8fa",
+        "control-bgColor-hover": "#eff2f5",
+        "control-bgColor-active": "#e6eaef"
+      },
+      "dark roles": {
+        "bgColor-default": "#0d1117",
+        "bgColor-muted": "#151b23",
+        "bgColor-inset": "#010409",
+        "bgColor-emphasis": "#3d444d",
+        "fgColor-default": "#f0f6fc",
+        "fgColor-muted": "#9198a1",
+        "borderColor-default": "#3d444d",
+        "borderColor-emphasis": "#656c76",
+        "control-bgColor-rest": "#212830"
+      },
+      "dark-dimmed roles": {
+        "bgColor-default": "#212830",
+        "bgColor-muted": "#262c36",
+        "bgColor-inset": "#151b23",
+        "fgColor-default": "#d1d7e0",
+        "fgColor-muted": "#9198a1",
+        "control-bgColor-rest": "#2a313c"
+      }
+    },
+    "accents": {
+      "accent (links, selected, focus; the brand-ish blue)": {
+        "light": {
+          "fg": "#0969da",
+          "bg-emphasis": "#0969da",
+          "bg-muted": "#ddf4ff",
+          "border-muted": "#54aeff66"
+        },
+        "dark": {
+          "fg": "#4493f8",
+          "bg-emphasis": "#1f6feb",
+          "bg-muted": "#388bfd1a"
+        }
+      },
+      "display palette (20 hues, each with bgColor-muted / bgColor-emphasis / fgColor), light examples": {
+        "blue": [
+          "#d1f0ff",
+          "#006edb",
+          "#005fcc"
+        ],
+        "green": [
+          "#caf7ca",
+          "#2c8141",
+          "#2b6e3f"
+        ],
+        "red": [
+          "#ffe2e0",
+          "#df0c24",
+          "#c50d28"
+        ],
+        "purple": [
+          "#f1e5ff",
+          "#894ceb",
+          "#783ae4"
+        ],
+        "orange": [
+          "#ffe7d1",
+          "#b8500f",
+          "#a24610"
+        ],
+        "pink": [
+          "#ffe5f1",
+          "#ce2c85",
+          "#b12f79"
+        ],
+        "gray": [
+          "#e8ecf2",
+          "#647182",
+          "#5c6570"
+        ]
+      }
+    },
+    "semantic": {
+      "success (primary buttons, positive, 'open')": {
+        "light fg": "#1a7f37",
+        "light bg-emphasis": "#1f883d",
+        "light bg-muted": "#dafbe1",
+        "dark fg": "#3fb950",
+        "dark bg-emphasis": "#238636"
+      },
+      "danger (destructive, errors, 'closed')": {
+        "light fg": "#d1242f",
+        "light bg-emphasis": "#cf222e",
+        "light bg-muted": "#ffebe9",
+        "dark fg": "#f85149",
+        "dark bg-emphasis": "#da3633"
+      },
+      "attention (warnings, in progress)": {
+        "light fg": "#9a6700",
+        "light bg-emphasis": "#9a6700",
+        "light bg-muted": "#fff8c5",
+        "dark bg-emphasis": "#9e6a03"
+      },
+      "severe": {
+        "light fg": "#bc4c00",
+        "light bg-muted": "#fff1e5"
+      },
+      "done / upsell": {
+        "light fg": "#8250df",
+        "light bg-muted": "#fbefff"
+      },
+      "sponsors": {
+        "light fg": "#bf3989",
+        "light bg-muted": "#ffeff7"
+      },
+      "neutral / draft": {
+        "light fg": "#59636e",
+        "light bg-muted": "#818b981f"
+      },
+      "focus": {
+        "focus-outlineColor": "= borderColor-accent-emphasis (#0969da light)"
+      },
+      "overlay backdrop": {
+        "light": "#c8d1da66"
+      }
+    },
+    "darkMode": "Not an inversion layer but 14 first-class theme files generated from the same token source: light, light-high-contrast, light-colorblind, light-colorblind-high-contrast, light-tritanopia, light-tritanopia-high-contrast, dark, dark-dimmed, dark-high-contrast, dark-colorblind, dark-colorblind-high-contrast, dark-tritanopia, dark-tritanopia-high-contrast, dark-dimmed-high-contrast. The base neutral scale 0-13 is deliberately inverted between light and dark so the same functional token (e.g. bgColor-muted = step 1 light / step 2 dark) works unchanged. Shadows change character: dark resting shadows are #010409 at 60% alpha and floating shadows gain a 1px #3d444d ring because shadows are hard to see on dark. Colour-blind themes remap semantic meaning (light-colorblind: success becomes blue #0969da, danger becomes orange #bc4c00).",
+    "contrastNotes": "Docs: neutral steps 0-5 are backgrounds, 7-8 borders/dividers, 9-10 text/icons; step 9 is the minimum for text on steps 0-4, step 10 on steps 5-6; step 8 is the minimum contrast for interactive-control borders against bgColor-muted. All text/border contrast is calculated against bgColor-muted. High contrast themes target 7:1 for most text and interactive elements (light-HC uses steps 2-7 for backgrounds, 10 for borders, 11-13 for text; borderColor-default becomes #454c54 = 8.7:1 on white). Pairing rules: emphasis bg MUST pair with fgColor-onEmphasis; muted bg takes the semantic fg; never fgColor-muted on bgColor-muted. [computed] fg-default on bg-default light 15.8:1; fg-muted on bg-default 6.11:1; neutral-8 (#818b98) border on bg-muted 3.24:1; white on bgColor-success-emphasis 4.52:1 (barely passes); fg-disabled 3.45:1 (disabled is exempt); dark fg-muted on dark bg 6.5:1. Disabled is expressed with dedicated disabled tokens, never opacity."
+  },
+  "spacing": {
+    "base": "4px (rem-based; 1rem = 16px)",
+    "scale": [
+      "2",
+      "4",
+      "6",
+      "8",
+      "12",
+      "16",
+      "20",
+      "24",
+      "28",
+      "32",
+      "36",
+      "40",
+      "44",
+      "48",
+      "64",
+      "80",
+      "96",
+      "112",
+      "128"
+    ],
+    "semantic": {
+      "space.xxs": 2,
+      "space.xs": 4,
+      "space.sm": 8,
+      "space.md": 12,
+      "space.lg": 16,
+      "space.xl": 24,
+      "stack.gap condensed/normal/spacious": [
+        8,
+        16,
+        24
+      ],
+      "stack.padding condensed/normal/spacious": [
+        8,
+        16,
+        24
+      ],
+      "controlStack gap (medium/large) condensed/auto(fine)/auto(coarse)/spacious": [
+        8,
+        8,
+        12,
+        12
+      ],
+      "controlStack gap (small) condensed/auto(fine)/auto(coarse)/spacious": [
+        8,
+        8,
+        16,
+        16
+      ]
+    },
+    "layout": {
+      "breakpointsPx": {
+        "xsmall": 320,
+        "small": 544,
+        "medium": 768,
+        "large": 1012,
+        "xlarge": 1280,
+        "xxlarge": 1400
+      },
+      "viewportRanges": {
+        "narrow": "<768",
+        "regular": ">=768 (up to 2 columns)",
+        "wide": ">=1400 (up to 3 columns)"
+      },
+      "contentPaddingPx": "16 up to large, 24 at xlarge and xxlarge; pane padding 16 always",
+      "maxWidthPx": "1280 for full pages (content incl. 24px padding = 1232 visible); 320 for interstitial pages",
+      "zIndex": {
+        "behind": -1,
+        "default": 0,
+        "sticky": 100,
+        "dropdown": 200,
+        "overlay": 300,
+        "modal": 400,
+        "popover": 500,
+        "skipLink": 600
+      }
+    }
+  },
+  "radius": {
+    "scale": [
+      3,
+      6,
+      12,
+      9999
+    ],
+    "rule": "Four steps only: small 3px (compact variants), medium 6px (the default alias borderRadius.default; controls, cards, overlays), large 12px (softer large surfaces), full (pills). Overlay radius is 6px. No nesting rule is published."
+  },
+  "depth": {
+    "shadows": [
+      "resting-xsmall (light): 0 1px 1px 0 #1f23280d",
+      "resting-small (light): 0 1px 1px 0 #1f23280a, 0 1px 2px 0 #1f232808",
+      "resting-medium (light): 0 1px 1px 0 #25292e1a, 0 3px 6px 0 #25292e1f",
+      "floating-small (light): 0 0 0 1px #d1d9e040, 0 6px 12px -3px #25292e0a, 0 6px 18px 0 #25292e1f",
+      "floating-medium (light): 0 0 0 1px #d1d9e000, 0 8px 16px -4px #25292e14, 0 4px 32px -4px #25292e14, 0 24px 48px -12px #25292e14, 0 48px 96px -24px #25292e14",
+      "floating-large (light): 0 0 0 1px #d1d9e000, 0 40px 80px 0 #25292e3d",
+      "floating-xlarge (light): 0 0 0 1px #d1d9e000, 0 56px 112px 0 #25292e52",
+      "inset (light): inset 0 1px 0 0 #1f23280a",
+      "dark floating-small: 0 0 0 1px #3d444d, 0 6px 12px -3px #01040966, 0 6px 18px 0 #01040966",
+      "button-default resting (light): 0 1px 0 0 #1f23280a",
+      "button-primary selected: inset 0 1px 0 0 #002d114d"
+    ],
+    "borders": "1px (borderWidth.thin, the default alias), 2px thick, 4px thicker. Thick/thicker are also provided as inset box-shadow rings (boxShadow.thick etc.) to emphasise without layout shift. Default separation is a 1px #d1d9e0 border (borderColor-default); borderColor-muted is the same colour at 70% alpha; borderColor-translucent (#1f232826) is used on filled buttons. GitHub is border-led: depth is mostly hairlines plus a pair of resting shadows, floating shadows only for overlays.",
+    "blur": "No backdrop-filter/blur tokens. Overlay backdrop is a flat tinted scrim (#c8d1da66 light). Shadow blur radii 1-6px resting, 12-112px floating."
+  },
+  "motion": {
+    "durationsMs": [
+      0,
+      50,
+      100,
+      200,
+      300,
+      400,
+      500,
+      600,
+      700,
+      800,
+      900,
+      1000
+    ],
+    "easings": [
+      "ease: cubic-bezier(0.25, 0.1, 0.25, 1) (hover)",
+      "easeIn: cubic-bezier(0.7, 0.1, 0.75, 0.9) (exit)",
+      "easeOut: cubic-bezier(0.3, 0.8, 0.6, 1) (enter)",
+      "easeInOut: cubic-bezier(0.6, 0, 0.2, 1) (move/morph)",
+      "linear (loaders)"
+    ],
+    "notes": "Semantic durations: micro 100 (hover, focus ring, colour shifts), short 200 (expand/collapse, toggles), medium 300 (modals, dropdowns entering), long 500 (rare). Composite transition tokens: hover = 100ms ease; enter = 300ms easeOut; exit = 200ms easeIn (exits are faster than entrances); stateChange = 200ms easeInOut. Rules (RFC 2119 in the shipped guide): MUST use motion.transition.* for interactive state changes; UI animation <= 300ms; NEVER exceed 500ms; MUST respect prefers-reduced-motion with an instant alternative; NEVER decorative; NEVER indefinite loops without user control; NEVER convey information by motion alone. Loading thresholds: <1s show nothing, 1-3s indeterminate, 3-10s determinate, >10s determinate plus background task."
+  },
+  "density": {
+    "modes": [
+      "condensed",
+      "normal",
+      "spacious (paddingInline per control size)",
+      "pointer: fine vs coarse (min target 16px fine, 44px coarse)"
+    ],
+    "controlHeightsPx": {
+      "xsmall": 24,
+      "small": 28,
+      "medium (default)": 32,
+      "large": 40,
+      "xlarge": 48,
+      "paddingInline condensed/normal/spacious (small to xlarge)": "8 / 12 / 16 (xsmall: 4 / 8 / 12)",
+      "paddingBlock": "xsmall 2, small 4, medium 6, large 10, xlarge 14",
+      "gap": "xsmall 4, small 4, medium 8, large 8, xlarge 8",
+      "overlay widths xsmall..xlarge": [
+        192,
+        320,
+        480,
+        640,
+        960
+      ],
+      "overlay heights small..xlarge": [
+        256,
+        320,
+        432,
+        600
+      ],
+      "overlay padding condensed/normal": [
+        8,
+        16
+      ],
+      "spinner size small/medium/large": [
+        16,
+        32,
+        64
+      ]
+    }
+  },
+  "components": {
+    "count": 62,
+    "list": [
+      "ActionBar",
+      "ActionList",
+      "ActionMenu",
+      "AnchoredOverlay",
+      "Autocomplete",
+      "Avatar",
+      "AvatarStack",
+      "Banner",
+      "Blankslate",
+      "BranchName",
+      "Breadcrumbs",
+      "Button",
+      "ButtonGroup",
+      "Card",
+      "Checkbox",
+      "CheckboxGroup",
+      "CircleBadge",
+      "ConfirmationDialog",
+      "CounterLabel",
+      "DataTable",
+      "Details",
+      "Dialog",
+      "FormControl",
+      "Heading",
+      "IconButton",
+      "InlineMessage",
+      "KeybindingHint",
+      "Label",
+      "LabelGroup",
+      "Link",
+      "NavList",
+      "Overlay",
+      "PageHeader",
+      "PageLayout",
+      "Pagination",
+      "Popover",
+      "ProgressBar",
+      "Radio",
+      "RadioGroup",
+      "RelativeTime",
+      "SegmentedControl",
+      "Select",
+      "SelectPanel",
+      "SkeletonAvatar",
+      "SkeletonBox",
+      "SkeletonText",
+      "Spinner",
+      "SplitPageLayout",
+      "Stack",
+      "StateLabel",
+      "Text",
+      "TextInput",
+      "TextInputWithTokens",
+      "Textarea",
+      "Timeline",
+      "ToggleSwitch",
+      "Token",
+      "Tooltip",
+      "TreeView",
+      "Truncate",
+      "UnderlineNav",
+      "UnderlinePanels"
+    ],
+    "stateMatrixCompleteness": "High and machine-enforced. Count 62 is the primer.style/product/components listing; @primer/react ships 80 generated entries including deprecated/legacy (status counts in components.json: alpha 56, deprecated 11, draft 7, beta 6; per-component a11yReviewed dates). Button: variants default (secondary), primary, invisible, danger, plus `inactive` (looks disabled, stays interactive and contrast-compliant) and `disabled`; sizes small/medium/large; leading/trailing visual, trailing action, counter, block, alignContent. Colour tokens exist per variant x property x state (button-primary-bgColor-rest/hover/active/disabled; control-*; button-outline, button-danger, button-invisible, button-inactive). The shipped DESIGN_TOKENS_GUIDE mandates all five interactive states on every element: rest, :hover, :focus-visible (never :focus alone), :active, :disabled/aria-disabled, and forbids opacity for disabled."
+  },
+  "tokenArchitecture": "Three tiers. (1) base: raw scales (base/size 2-128px, base/text size/lineHeight/weight, base/duration, base/easing, base/zIndex, base/color neutral 0-13 + hue scales) that 'respect no colour mode and are never used directly'. (2) functional: the default choice, themed per mode, categories bgColor / fgColor / borderColor / shadow / control / focus / overlay / text / space / size / borderRadius / motion / zIndex / fontStack. (3) component/pattern: button-*, control-*, avatar, label, treeView, diffBlob, codeMirror, contribution, etc. (use sparingly, only where functional tokens cannot express it). Naming: camelCase category + hyphenated modifiers, `--{category}-{role}-{property?}-{emphasis|size|state}`: bgColor-danger-emphasis, fgColor-onEmphasis, control-medium-paddingInline-normal, text-body-shorthand-medium, motion-transition-hover. Semantic role words: accent, success, attention, danger, severe, done, sponsors, neutral, open, closed, draft, upsell; two emphasis levels `muted` and `emphasis`; default/inset/disabled/inverse/transparent surfaces. Source is DTCG-style json5 compiled by Style Dictionary into CSS, Figma variables and fallbacks (959 unique custom properties in light.css; 1120 across functional css). Deprecated/removed tokens are tracked in deprecated.json and removed.json. Ships DESIGN_TOKENS_GUIDE.md and DESIGN_TOKENS_SPEC.md written for LLMs with an explicit 'Hallucination Guard': an invented token name must be suffixed with /* check-token */.",
+  "distinctiveness": "GitHub-ness is carried by (1) a cool blue-grey neutral ramp (#f6f8fa / #d1d9e0 / #1f2328) rather than pure grey, (2) green primary buttons (success colour as the primary action, with a translucent border and 1px inset highlight), (3) hairline-bordered panes with small 6px radii, (4) 14px default body with 32px controls, (5) semantic state labels with a distinctive hue per object state (open green, closed red, done purple, sponsors pink, draft grey). Without those it would look like any bordered SaaS admin; the system is intentionally low-ornament.",
+  "weaknesses": [
+    "Almost no expressive vocabulary: no editorial type, no brand motion, no illustration rules beyond Blankslate; marketing needs Primer Brand",
+    "Fine-pointer minimum target is 16px; below WCAG 2.2 AA 24px target size unless the control itself is larger (controls start at 24px high)",
+    "Docs pages for primitives list token values with almost no usage guidance; the real rules live in the package guide and Accessibility section",
+    "Component-status taxonomy is noisy (56 of 80 React entries alpha) which makes 'what is safe to use' unclear",
+    "Docs claim line heights sit on a 4px grid but several do not (21, 19.5, 32.5px)",
+    "Documentation said nine themes while the package ships 14; docs lag code"
+  ],
+  "takeaways": [
+    "Ship the system as a token spec an LLM can obey: RFC 2119 keywords, a pairing matrix (bg token -> required fg token), and a hallucination guard for unknown token names",
+    "Pair rules are the cheapest correctness check: emphasis bg + onEmphasis fg; muted bg + semantic fg; never muted-on-muted",
+    "Bundle size + line-height + weight into one shorthand token per text role so they cannot drift; give each role a documented job",
+    "Define the five interactive states (rest, hover, focus-visible, active, disabled) as a mandatory checklist and ban opacity for disabled",
+    "Make density a first-class axis (condensed/normal/spacious) plus pointer coarse/fine, not a global scale change",
+    "Express every theme (HC, colour-blind, dimmed) as generated output of one token source; semantic roles remap, components do not fork",
+    "Tie elevation to z-index and shadow level (resting -> default/sticky, floating small/medium -> dropdown/overlay, large/xlarge -> modal/popover) and add a 1px ring to floating shadows in dark mode",
+    "Pair motion tokens with exit-faster-than-enter and a hard 300ms/500ms cap"
+  ]
+}

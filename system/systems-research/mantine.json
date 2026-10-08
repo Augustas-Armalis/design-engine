@@ -1,0 +1,166 @@
+{
+  "name": "Mantine",
+  "slug": "mantine",
+  "vendor": "Vitaly Rtishchev / Mantine (community, open source)",
+  "url": "https://mantine.dev",
+  "licence": "MIT (github.com/mantinedev/mantine, Copyright 2021 Vitaly Rtishchev). Studied @mantine/core 9.7.1 at commit f7ab1ef (2026-10-08). Default palette derives from Open Color (MIT).",
+  "studiedOn": "2026-10-08",
+  "personality": ["pragmatic", "dense-friendly", "neutral-cool", "utilitarian", "friendly-rounded"],
+  "bestFor": [
+    "internal tools, admin panels, dashboards and data-heavy SaaS product UI",
+    "teams that want one 10-shade colour per hue and a predictable size ladder with minimal design work",
+    "apps needing many ready components (dates, charts, notifications, spotlight, rich text, dropzone, schedule)"
+  ],
+  "avoidFor": [
+    "brand-led marketing sites or campaign pages (default look is recognisably 'Mantine blue + system font')",
+    "products that need a distinctive type voice out of the box (ships with a system font stack only)",
+    "projects that cannot adopt its component API or CSS-modules/PostCSS-preset toolchain"
+  ],
+  "typography": {
+    "families": [
+      "sans: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji",
+      "mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace",
+      "headings: same stack as sans (separately overridable via theme.headings.fontFamily)"
+    ],
+    "scale": [
+      {"role": "h1", "sizePx": 34, "lineHeightPx": 44.2, "weight": 700, "trackingEm": 0},
+      {"role": "h2", "sizePx": 26, "lineHeightPx": 35.1, "weight": 700, "trackingEm": 0},
+      {"role": "h3", "sizePx": 22, "lineHeightPx": 30.8, "weight": 700, "trackingEm": 0},
+      {"role": "h4", "sizePx": 18, "lineHeightPx": 26.1, "weight": 700, "trackingEm": 0},
+      {"role": "h5", "sizePx": 16, "lineHeightPx": 24, "weight": 700, "trackingEm": 0},
+      {"role": "h6", "sizePx": 14, "lineHeightPx": 21, "weight": 700, "trackingEm": 0},
+      {"role": "text-xs", "sizePx": 12, "lineHeightPx": 16.8, "weight": 400, "trackingEm": 0},
+      {"role": "text-sm", "sizePx": 14, "lineHeightPx": 20.3, "weight": 400, "trackingEm": 0},
+      {"role": "text-md (body default)", "sizePx": 16, "lineHeightPx": 24.8, "weight": 400, "trackingEm": 0},
+      {"role": "text-lg", "sizePx": 18, "lineHeightPx": 28.8, "weight": 400, "trackingEm": 0},
+      {"role": "text-xl", "sizePx": 20, "lineHeightPx": 33, "weight": 400, "trackingEm": 0},
+      {"role": "button label (sm default)", "sizePx": 14, "lineHeightPx": 14, "weight": 600, "trackingEm": 0},
+      {"role": "badge (md default)", "sizePx": 11, "lineHeightPx": 18, "weight": 700, "trackingEm": 0.0227}
+    ],
+    "notes": "Two parallel scales: fontSizes xs-xl = 12/14/16/18/20px (rem 0.75/0.875/1/1.125/1.25) with lineHeights xs-xl = 1.4/1.45/1.55/1.6/1.65 (line-height grows with size, applied together by Text via --text-fz and --text-lh), and headings h1-h6 = 34/26/22/18/16/14px with line-height 1.3/1.35/1.4/1.45/1.5/1.5 (line-height shrinks as size grows). fontWeights regular 400, medium 600 (not 500), bold 700; headings default 700. Body is size md (16px) / 1.55. No letter-spacing tokens: tracking is 0 everywhere except Badge (uppercase, bold, 0.25px, shown as 0.25/11 = 0.0227em). Button uses text-box-trim (text-box-edge cap alphabetic) on label for optical centring. theme.scale (default 1) multiplies every rem-derived value via calc(x * var(--mantine-scale)). Button label size follows the control size (xs 12, sm 14, md 16, lg 18, xl 20)."
+  },
+  "color": {
+    "model": "hex",
+    "neutrals": {
+      "gray (light scheme, cool-neutral, 10 steps)": ["#f8f9fa", "#f1f3f5", "#e9ecef", "#dee2e6", "#ced4da", "#adb5bd", "#868e96", "#495057", "#343a40", "#212529"],
+      "dark (dark scheme surfaces, true neutral, 10 steps, step 0 is lightest = text)": ["#C9C9C9", "#b8b8b8", "#828282", "#696969", "#424242", "#3b3b3b", "#2e2e2e", "#242424", "#1f1f1f", "#141414"],
+      "white": "#fff",
+      "black": "#000"
+    },
+    "accents": {
+      "note": "13 hues x 10 shades, index 0 lightest to 9 darkest. Default primaryColor = blue.",
+      "red": ["#fff5f5", "#ffe3e3", "#ffc9c9", "#ffa8a8", "#ff8787", "#ff6b6b", "#fa5252", "#f03e3e", "#e03131", "#c92a2a"],
+      "pink": ["#fff0f6", "#ffdeeb", "#fcc2d7", "#faa2c1", "#f783ac", "#f06595", "#e64980", "#d6336c", "#c2255c", "#a61e4d"],
+      "grape": ["#f8f0fc", "#f3d9fa", "#eebefa", "#e599f7", "#da77f2", "#cc5de8", "#be4bdb", "#ae3ec9", "#9c36b5", "#862e9c"],
+      "violet": ["#f3f0ff", "#e5dbff", "#d0bfff", "#b197fc", "#9775fa", "#845ef7", "#7950f2", "#7048e8", "#6741d9", "#5f3dc4"],
+      "indigo": ["#edf2ff", "#dbe4ff", "#bac8ff", "#91a7ff", "#748ffc", "#5c7cfa", "#4c6ef5", "#4263eb", "#3b5bdb", "#364fc7"],
+      "blue": ["#e7f5ff", "#d0ebff", "#a5d8ff", "#74c0fc", "#4dabf7", "#339af0", "#228be6", "#1c7ed6", "#1971c2", "#1864ab"],
+      "cyan": ["#e3fafc", "#c5f6fa", "#99e9f2", "#66d9e8", "#3bc9db", "#22b8cf", "#15aabf", "#1098ad", "#0c8599", "#0b7285"],
+      "teal": ["#e6fcf5", "#c3fae8", "#96f2d7", "#63e6be", "#38d9a9", "#20c997", "#12b886", "#0ca678", "#099268", "#087f5b"],
+      "green": ["#ebfbee", "#d3f9d8", "#b2f2bb", "#8ce99a", "#69db7c", "#51cf66", "#40c057", "#37b24d", "#2f9e44", "#2b8a3e"],
+      "lime": ["#f4fce3", "#e9fac8", "#d8f5a2", "#c0eb75", "#a9e34b", "#94d82d", "#82c91e", "#74b816", "#66a80f", "#5c940d"],
+      "yellow": ["#fff9db", "#fff3bf", "#ffec99", "#ffe066", "#ffd43b", "#fcc419", "#fab005", "#f59f00", "#f08c00", "#e67700"],
+      "orange": ["#fff4e6", "#ffe8cc", "#ffd8a8", "#ffc078", "#ffa94d", "#ff922b", "#fd7e14", "#f76707", "#e8590c", "#d9480f"]
+    },
+    "semantic": {
+      "light": {
+        "body": "#fff", "text": "#000", "bright": "black", "dimmed": "gray-6 #868e96", "placeholder": "gray-5 #adb5bd",
+        "error": "red-6 #fa5252", "success": "teal-8 #099268", "anchor": "primary-6",
+        "default (bg/hover/color/border)": ["white", "gray-0 #f8f9fa", "black", "gray-4 #ced4da"],
+        "disabled (bg/color/border)": ["gray-2 #e9ecef", "gray-5 #adb5bd", "gray-3 #dee2e6"],
+        "input default": "bg white, border gray-4, focus border = primary filled",
+        "input filled": "bg gray-1, border transparent"
+      },
+      "dark": {
+        "body": "dark-7 #242424", "text": "dark-0 #C9C9C9", "bright": "white", "dimmed": "dark-2 #828282", "placeholder": "dark-3 #696969",
+        "error": "red-8 #e03131", "success": "teal-8 #099268", "anchor": "primary-4",
+        "default (bg/hover/color/border)": ["dark-6 #2e2e2e", "dark-5 #3b3b3b", "white", "dark-4 #424242"],
+        "disabled (bg/color/border)": ["dark-6 #2e2e2e", "dark-3 #696969", "dark-4 #424242"],
+        "input default": "bg dark-6, border dark-4",
+        "input filled": "bg dark-5, border transparent"
+      },
+      "role-to-shade-map (per colour, light scheme)": {
+        "filled": "primaryShade.light = 6", "filled-hover": "shade 7 (9 -> 8)", "light bg": "shade 1", "light hover": "shade 2",
+        "light text": "shade 9", "outline": "shade 6, hover bg = shade-6 at 5% alpha", "text": "= filled"
+      },
+      "role-to-shade-map (per colour, dark scheme)": {
+        "filled": "primaryShade.dark = 8", "filled-hover": "shade 9", "light bg": "shade 9 darkened 50% (hover: darkened 30%)",
+        "light text": "shade 0", "outline": "shade 4 (= primaryShade - 4)", "text": "shade 4"
+      }
+    },
+    "darkMode": "Attribute-driven (data-mantine-color-scheme = light | dark | auto, colour-scheme managers, ColorSchemeScript to avoid flash). Not an inversion: a separate neutral 'dark' ramp (#C9C9C9 text on #242424 body, never pure black) plus a separate primaryShade (light 6, dark 8). Every role (text, dimmed, placeholder, error, anchor, default, disabled) is re-pointed per scheme through CSS variables. Hue ramps themselves are shared; only the shade index and a few derived values (light-variant bg via darken, text at shade 4) change. 'Virtual colors' (virtualColor({name, light, dark})) let one colour name resolve to different ramps per scheme.",
+    "contrastNotes": "Measured (WCAG relative luminance, this study): white on blue-6 filled (#228be6) = 3.56:1, below 4.5:1 for 14px text; in dark scheme white on blue-8 (#1971c2) = 5.02:1. Light-variant text blue-9 on blue-1 = 4.93:1. dimmed text gray-6 on white = 3.32:1 and placeholder gray-5 on white = 2.07:1 (both fail AA for body text; placeholder is conventionally exempt, dimmed is not). Dark scheme: dark-0 on dark-7 = 9.37:1, dimmed dark-2 on dark-7 = 4.04:1. The default filled text is white regardless of fill; autoContrast (default false) flips to black when relative luminance of the fill >= luminanceThreshold 0.3 (the standalone isLightColor helper defaults to 0.179). Yellow, lime, cyan fills therefore need autoContrast or an explicit c prop."
+  },
+  "spacing": {
+    "base": "no fixed grid: named steps in rem multiplied by theme.scale. xs 10px, sm 12px, md 16px, lg 20px, xl 32px. Component internals use raw px (30/36/42/50/60 heights, 5/6/8/10/13 input padding-y).",
+    "scale": [
+      {"token": "xs", "px": 10}, {"token": "sm", "px": 12}, {"token": "md", "px": 16}, {"token": "lg", "px": 20}, {"token": "xl", "px": 32}
+    ]
+  },
+  "radius": {
+    "scale": [
+      {"token": "xs", "px": 2}, {"token": "sm", "px": 4}, {"token": "md", "px": 8}, {"token": "lg", "px": 16}, {"token": "xl", "px": 32}
+    ],
+    "rule": "One global knob: theme.defaultRadius (default 'md' = 8px) exposed as --mantine-radius-default; Button, Input, Paper, Card and Notification read it unless a radius prop overrides. Radius prop accepts a scale key or any CSS length. Badge is the exception: its radius is a hard-coded 1000px pill (--badge-radius). No nested-radius arithmetic (unlike Chakra/Park l1-l3)."
+  },
+  "depth": {
+    "shadows": [
+      "xs: 0 1px 3px rgba(0,0,0,.05), 0 1px 2px rgba(0,0,0,.1)",
+      "sm: 0 1px 3px rgba(0,0,0,.05), rgba(0,0,0,.05) 0 10px 15px -5px, rgba(0,0,0,.04) 0 7px 7px -5px",
+      "md: 0 1px 3px rgba(0,0,0,.05), rgba(0,0,0,.05) 0 20px 25px -5px, rgba(0,0,0,.04) 0 10px 10px -5px",
+      "lg: 0 1px 3px rgba(0,0,0,.05), rgba(0,0,0,.05) 0 28px 23px -7px, rgba(0,0,0,.04) 0 12px 12px -7px",
+      "xl: 0 1px 3px rgba(0,0,0,.05), rgba(0,0,0,.05) 0 36px 28px -7px, rgba(0,0,0,.04) 0 17px 17px -7px"
+    ],
+    "borders": "1px solid everywhere by default. Light: gray-3 (Paper, Tabs, Table) / gray-4 (inputs, default button). Dark: dark-4. Paper has withBorder prop; Card has none by default. Outline variants use 1px of the filled colour.",
+    "blur": "Not part of the theme. Overlay is a flat rgba scrim; Button loading state uses a 12px blur highlight sweep (::before filter blur(12px)). Z-index tokens: app 100, modal 200, popover 300, overlay 400, max 9999."
+  },
+  "motion": {
+    "durationsMs": [100, 150, 200, 250],
+    "easings": ["ease (default for component transitions)", "theme.transitionTimingFunction (Transition default)"],
+    "notes": "Not tokenised on the theme: durations are hard-coded per component. Button label/loader slide 150ms transform + 100ms opacity, Switch 150ms, Accordion chevron 200ms, Tooltip fade 100ms (10ms inside a tooltip group), Popover fade 150ms, Modal fade-down 200ms, generic Transition 250ms. Press feedback: .mantine-active translateY(1px) on :active (disabled inside disabled fieldset). theme.respectReducedMotion (default false) opts into prefers-reduced-motion via data-respect-reduced-motion + data-reduce-motion attributes: reduced-motion is OFF unless enabled by the developer."
+  },
+  "density": {
+    "modes": ["size ladder xs-xl per component", "compact buttons (compact-xs..compact-xl)", "global theme.scale multiplier (default 1)"],
+    "controlHeightsPx": {
+      "button/input/ActionIcon-input aligned (xs, sm, md, lg, xl)": [30, 36, 42, 50, 60],
+      "button default": 36,
+      "button compact (xs..xl)": [22, 26, 30, 34, 40],
+      "button padding-x (xs..xl)": [14, 18, 22, 26, 32],
+      "button compact padding-x (xs..xl)": [7, 8, 10, 12, 14],
+      "ActionIcon (xs..xl)": [18, 22, 28, 34, 44],
+      "ActionIcon default": 28,
+      "input padding-y (xs..xl)": [5, 6, 8, 10, 13],
+      "badge height (xs..xl)": [16, 18, 20, 26, 32],
+      "badge font-size (xs..xl)": [9, 10, 11, 13, 16],
+      "checkbox (xs..xl)": [16, 20, 24, 30, 36],
+      "switch height (xs..xl)": [16, 20, 24, 30, 36],
+      "modal width (xs, sm, md)": [320, 380, 440]
+    }
+  },
+  "components": {
+    "count": 119,
+    "list": ["Accordion", "ActionIcon", "Affix", "Alert", "Anchor", "AppShell", "AspectRatio", "Autocomplete", "Avatar", "Badge", "Blockquote", "Breadcrumbs", "Burger", "Button", "Card", "Checkbox", "Chip", "CloseButton", "Code", "Collapse", "ColorInput", "ColorPicker", "Combobox", "Container", "Dialog", "Divider", "Drawer", "Fieldset", "FileInput", "Grid", "Group", "HoverCard", "Image", "Indicator", "Input", "Kbd", "List", "Loader", "LoadingOverlay", "Mark", "Menu", "Modal", "MultiSelect", "NativeSelect", "NavLink", "Notification", "NumberInput", "Overlay", "Pagination", "Paper", "PasswordInput", "Pill", "PinInput", "Popover", "Progress", "Radio", "Rating", "RingProgress", "ScrollArea", "SegmentedControl", "Select", "SimpleGrid", "Skeleton", "Slider", "Stack", "Stepper", "Switch", "Table", "Tabs", "TagsInput", "Text", "TextInput", "Textarea", "ThemeIcon", "Timeline", "Title", "Tooltip", "Tree", "Typography", "(plus newer: ActionBar, Cascader, DataList, EmptyState, FloatingWindow, Marquee, MaskInput, Menubar, OverflowList, RollingNumber, Splitter, TableOfContents, Toolbar, Tour, TreeSelect)", "(satellite packages: dates, charts, notifications, spotlight, carousel, dropzone, code-highlight, tiptap, schedule, form, hooks, nprogress, modals)"],
+    "stateMatrixCompleteness": "Strong on size x variant x colour for Button/ActionIcon/Badge/Alert/Avatar/Chip/ThemeIcon (variants filled, light, outline, subtle, transparent, white, gradient, default; five sizes; any theme colour or CSS colour; all derived by variantColorResolver). Input family: variants default, filled, unstyled (custom variants addable via data-variant); states default, hover(filled bg), focus (border = primary), error (border + text + placeholder + section colour), success, disabled (3-token disabled set), loading (Button), pressed (translateY 1px). Focus ring documented (2px, offset 2px, :focus-visible only). Explicit pressed/hover tokens exist only for the derived variants, not as a standalone state table. Sizes are exposed as data-size attributes and per-component CSS variables so custom sizes are addable without forking."
+  },
+  "tokenArchitecture": "Three layers. (1) JS theme object (createTheme / MantineProvider): colors (10-tuple per hue), primaryColor, primaryShade {light,dark}, fontSizes, lineHeights, spacing, radius, shadows, breakpoints (36/48/62/75/88em), headings, scale, focusRing, autoContrast, luminanceThreshold, variantColorResolver, components (default props + Styles API overrides). (2) Generated CSS variables on :root and [data-mantine-color-scheme]: --mantine-color-{name}-{0..9}, derived role variables --mantine-color-{name}-filled / -filled-hover / -light / -light-hover / -light-color / -outline / -outline-hover / -text, plus --mantine-primary-color-*, --mantine-spacing-*, --mantine-font-size-*, --mantine-radius-*, --mantine-shadow-*. (3) Per-component CSS-module files that read component-scoped variables (--button-height, --button-bg, --input-bd...) which are set from size/variant/color props through a vars resolver; styling hooks are data-* attributes (data-variant, data-size, data-disabled, data-loading, data-error). Naming: --mantine-{category}-{key}; colours always {hue}-{index}.",
+  "distinctiveness": "Recognisable by: system-font stack, Open-Color-derived hues, 36px default control, 8px radius, 1px gray-4 borders, filled blue button with white 14px/600 label, label-above-input pattern with a small red asterisk, and its shadows with large negative spread. Its genuine systemic idea is the colour contract: any hue becomes a complete system (7 variants, light + dark) from only 10 hex values and two indices. Otherwise visually generic-clean (a neutral 'SaaS admin' look).",
+  "weaknesses": [
+    "Default type is a system font stack: no typographic identity without an override",
+    "Default white-on-blue-6 filled button is 3.56:1, below WCAG AA for 14px text; autoContrast is off by default",
+    "dimmed text (gray-6, 3.32:1) and placeholder (gray-5, 2.07:1) are weak on white",
+    "Spacing scale is irregular (10/12/16/20/32): not a 4px grid and no scale below 10px, so tight layouts rely on raw px",
+    "Motion is untokenised (per-component literals) and reduced-motion is opt-in (respectReducedMotion false)",
+    "Radius and shadow are scale keys only; no nested-radius rule",
+    "Component library is large and opinionated; look diverges from brand quickly when mixed with marketing pages"
+  ],
+  "takeaways": [
+    "Encode colour as a 10-step ramp plus ROLE -> INDEX maps (filled 6/8, hover +1, light bg 1, light text 9, dark text 4), not as raw hex per use. Any brand hue then yields every variant automatically.",
+    "Give light and dark mode their own primary-shade index instead of reusing one fill (light 6, dark 8) so contrast holds in both.",
+    "Bind all controls to one size ladder with matching heights (30/36/42/50/60) so a Button and an Input of the same size align on one baseline; expose compact variants separately.",
+    "Make the variant a pure function (color, variant, scheme) -> {background, hover, text, border}; add variants by adding branches, not by editing components.",
+    "Expose one global radius knob (defaultRadius) read by every component; change character in one line.",
+    "Treat disabled as a three-token set (bg, text, border) and error/success as border + text + placeholder + icon colour changes together.",
+    "Make auto-contrast an explicit luminance-threshold rule (0.3) rather than hoping every brand colour takes white text.",
+    "Pair font-size steps with their own line-height steps (1.4 at 12px up to 1.65 at 20px) while headings tighten as they grow (1.5 at 14px down to 1.3 at 34px)."
+  ]
+}

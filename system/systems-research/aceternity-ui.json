@@ -1,0 +1,215 @@
+{
+  "name": "Aceternity UI",
+  "slug": "aceternity-ui",
+  "vendor": "Aceternity (Manu Arora)",
+  "url": "https://ui.aceternity.com/components",
+  "licence": "Free components: free for unlimited personal and commercial projects; reselling/redistributing as a competing library not permitted (ui.aceternity.com/llms-full.txt header; full terms ui.aceternity.com/licence, not read). Pro blocks/templates commercial.",
+  "studiedOn": "2026-10-08",
+  "personality": [
+    "cinematic",
+    "dark",
+    "glowy",
+    "showy",
+    "trend-driven"
+  ],
+  "bestFor": [
+    "one-off concept heroes and portfolio pieces",
+    "learning scroll-linked 3D and parallax techniques (container scroll, macbook scroll, hero parallax)"
+  ],
+  "avoidFor": [
+    "trustworthy B2B SaaS marketing (lamp, spotlight, aurora, beams are the canonical AI-landing clichés)",
+    "product UI",
+    "accessibility-sensitive or low-power audiences"
+  ],
+  "typography": {
+    "families": [
+      "none: inherits project fonts"
+    ],
+    "scale": [],
+    "notes": "15 text effects (Flip Words, Typewriter, Text Generate, Encrypted Text, Colourful Text, Hero Highlight, Text Hover, Squiggly, Text Flipping Board...)."
+  },
+  "color": {
+    "model": "Tailwind palette classes hard-coded",
+    "neutrals": {
+      "typical": "black / slate / neutral-950 grounds"
+    },
+    "accents": {
+      "lamp": "cyan-400/500 conic gradients",
+      "aurora-background": "blue-300/400/500, indigo-300, violet-200 with blur 10px",
+      "spotlight": "white radial"
+    },
+    "semantic": {},
+    "darkMode": "Designed dark-first",
+    "contrastNotes": "Glow-on-black with gradient text; contrast not addressed."
+  },
+  "spacing": {
+    "base": "n/a",
+    "scale": []
+  },
+  "radius": {
+    "scale": [
+      {
+        "name": "moving-border default",
+        "px": 28
+      }
+    ],
+    "rule": "Pills and large radii on CTA effects."
+  },
+  "depth": {
+    "shadows": [
+      "glow via blur-xl / blur-2xl / blur-3xl gradient blobs"
+    ],
+    "borders": "animated gradient borders (moving-border, hover-border-gradient)",
+    "blur": "heavy: blur-md to blur-3xl on decorative layers"
+  },
+  "motion": {
+    "durationsMs": [
+      500,
+      800,
+      1000,
+      1500,
+      3000,
+      7000
+    ],
+    "easings": [
+      "easeInOut (lamp, spotlight)",
+      "linear (hover-border-gradient rotation)"
+    ],
+    "notes": "TextGenerateEffect duration 0.5s with blur filter; Lamp delay 0.3 duration 0.8 easeInOut, width 8rem->16rem / 15rem->30rem whileInView; MovingBorder 3000ms per lap; SpotlightNew 7s loop; HoverBorderGradient 1s per step. No reduced-motion handling in the 6 sampled registry sources."
+  },
+  "density": {
+    "modes": [],
+    "controlHeightsPx": {}
+  },
+  "components": {
+    "count": 112,
+    "list": [
+      "3d-card",
+      "3d-globe",
+      "3d-marquee",
+      "3d-pin",
+      "animated-modal",
+      "animated-testimonials",
+      "animated-tooltip",
+      "apple-cards-carousel",
+      "ascii-art",
+      "aurora-background",
+      "background-beams",
+      "background-beams-with-collision",
+      "background-boxes",
+      "background-gradient",
+      "background-gradient-animation",
+      "background-lines",
+      "background-ripple-effect",
+      "bento-grid",
+      "canvas-reveal-effect",
+      "canvas-text",
+      "card-hover-effect",
+      "card-spotlight",
+      "card-stack",
+      "carousel",
+      "chromatic-image",
+      "cloud-shader",
+      "code-block",
+      "colourful-text",
+      "comet-card",
+      "compare",
+      "container-scroll-animation",
+      "container-text-flip",
+      "cover",
+      "direction-aware-hover",
+      "dither-shader",
+      "dotted-glow-background",
+      "draggable-card",
+      "encrypted-text",
+      "evervault-card",
+      "file-upload",
+      "flip-words",
+      "floating-dock",
+      "floating-navbar",
+      "focus-cards",
+      "following-pointer",
+      "glare-card",
+      "globe",
+      "glowing-effect",
+      "glowing-stars",
+      "gooey-input",
+      "google-gemini-effect",
+      "grid",
+      "hero-highlight",
+      "hero-parallax",
+      "hover-border-gradient",
+      "image-generation-loader",
+      "images-badge",
+      "images-slider",
+      "infinite-moving-cards",
+      "input",
+      "keyboard",
+      "label",
+      "lamp",
+      "layout-grid",
+      "layout-text-flip",
+      "lens",
+      "link-preview",
+      "loader",
+      "macbook-scroll",
+      "magnetic-button",
+      "meteors",
+      "moving-border",
+      "moving-line",
+      "multi-step-loader",
+      "navbar-menu",
+      "noise-background",
+      "notch",
+      "parallax-hero-images",
+      "parallax-scroll",
+      "parallax-scroll-2",
+      "pixelated-canvas",
+      "placeholders-and-vanish-input",
+      "pointer-highlight",
+      "resizable-navbar",
+      "scales",
+      "shooting-stars",
+      "sidebar",
+      "sparkles",
+      "spotlight",
+      "spotlight-new",
+      "squiggly-text",
+      "stars-background",
+      "stateful-button",
+      "sticky-banner",
+      "sticky-scroll-reveal",
+      "svg-mask-effect",
+      "tabs",
+      "tailwindcss-buttons",
+      "terminal",
+      "text-flipping-board",
+      "text-generate-effect",
+      "text-hover-effect",
+      "text-reveal-card",
+      "timeline",
+      "tooltip-card",
+      "tracing-beam",
+      "typewriter-effect",
+      "vortex",
+      "wavy-background",
+      "webcam-pixel-grid",
+      "wobble-card",
+      "world-map"
+    ],
+    "stateMatrixCompleteness": "Low: decorative; hover and in-view are the states."
+  },
+  "tokenArchitecture": "None; Tailwind classes and motion props inline per component.",
+  "distinctiveness": "Very recognisable, therefore low as identity: the lamp, spotlight, background beams and aurora became shorthand for 'template AI startup'.",
+  "weaknesses": [
+    "Strongest AI-cliché association of any library studied",
+    "Heavy blur layers and canvases cost performance",
+    "No reduced-motion handling in sampled sources",
+    "Inline colours, no theming"
+  ],
+  "takeaways": [
+    "Scroll-linked 3D reveal (container-scroll-animation) is a valid product-proof device when the screen shown proves a workflow; strip the glow.",
+    "Treat lamp/spotlight/aurora/beams/meteors/sparkles as banned-by-default ambient effects."
+  ],
+  "provenance": "public-spec (ui.aceternity.com/llms.txt, llms-full.txt, registry JSON)"
+}

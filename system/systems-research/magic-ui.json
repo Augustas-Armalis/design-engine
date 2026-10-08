@@ -1,0 +1,185 @@
+{
+  "name": "Magic UI",
+  "slug": "magic-ui",
+  "vendor": "Magic UI (magicuidesign)",
+  "url": "https://magicui.design/docs",
+  "licence": "MIT (github.com/magicuidesign/magicui LICENSE.md). Magic UI Pro templates commercial (not studied).",
+  "studiedOn": "2026-10-08",
+  "personality": [
+    "flashy",
+    "animated",
+    "startup-launch",
+    "decorative",
+    "demo-friendly"
+  ],
+  "bestFor": [
+    "one deliberate motion moment on a launch page (number ticker for a real metric, marquee for real logos)",
+    "device mockups (Safari, iPhone, Android) to frame real product screenshots",
+    "learning effect vocabulary"
+  ],
+  "avoidFor": [
+    "product UI",
+    "any page wanting to avoid the 2023-25 'AI startup' look (border beams, shimmer buttons, aurora text, grid backgrounds)",
+    "stacking more than one ambient effect per viewport"
+  ],
+  "typography": {
+    "families": [
+      "none: inherits project fonts"
+    ],
+    "scale": [],
+    "notes": "Text effects animate the project's type (Text Animate by word/character/line, Hyper Text scramble, Word Rotate, Typing Animation, Aurora/Animated Gradient text, Sparkles, Morphing, Spinning, Kinetic weight, 3D flip). No scale of its own."
+  },
+  "color": {
+    "model": "hex constants in component defaults",
+    "neutrals": {},
+    "accents": {
+      "border-beam": "#ffaa40 -> #9c40ff",
+      "magic-card gradient": "#9E7AFF -> #FE8BBB, spotlight #262626 at 0.8",
+      "shimmer-button": "white shimmer on black",
+      "particles": "#ffffff"
+    },
+    "semantic": {},
+    "darkMode": "Mostly designed on black; colours hard-coded in props",
+    "contrastNotes": "Gradient and shimmer text often lowers contrast below AA mid-animation; not addressed in the sampled sources."
+  },
+  "spacing": {
+    "base": "n/a",
+    "scale": []
+  },
+  "radius": {
+    "scale": [
+      {
+        "name": "shimmer-button default",
+        "px": 100
+      },
+      {
+        "name": "moving borders follow parent",
+        "px": "inherit"
+      }
+    ],
+    "rule": "Pill CTAs by default."
+  },
+  "depth": {
+    "shadows": [
+      "glows and neon-gradient cards rather than shadows"
+    ],
+    "borders": "animated 1px beams (border-beam borderWidth 1)",
+    "blur": "blur-fade uses 6px blur on entry; progressive-blur; backlight glow"
+  },
+  "motion": {
+    "durationsMs": [
+      300,
+      400,
+      3000,
+      6000,
+      40000
+    ],
+    "easings": [
+      "springs: text-animate stiffness 300 damping 15; magic-card 250-300 / 30-35; number-ticker stiffness 100 damping 60",
+      "linear infinite loops (marquee 40s, border beam 6s, shimmer 3s alternate)"
+    ],
+    "notes": "Defaults: BlurFade duration 0.4s, offset 6px, blur 6px, direction down, inViewMargin -50px. TextAnimate duration 0.3s, by word, fadeIn, startOnView true. Marquee --duration 40s, --gap 1rem, repeat 4, pauseOnHover false. BorderBeam duration 6s, size 50. ShimmerButton shimmerDuration 3s, shimmerSize 0.05em. Particles quantity 100. No prefers-reduced-motion handling found in the 8 registry sources sampled."
+  },
+  "density": {
+    "modes": [],
+    "controlHeightsPx": {}
+  },
+  "components": {
+    "count": 79,
+    "list": [
+      "Android",
+      "Animated Beam",
+      "Animated Circular Progress Bar",
+      "Animated Gradient Text",
+      "Animated Grid Pattern",
+      "Animated List",
+      "Animated Shiny Text",
+      "Theme Toggler",
+      "Aurora Text",
+      "Avatar Circles",
+      "Backlight",
+      "Bento Grid",
+      "Blur Fade",
+      "Border Beam",
+      "Client Tweet Card",
+      "Code Comparison",
+      "Comic Text",
+      "Confetti",
+      "Cool Mode",
+      "Dia Text Reveal",
+      "Dock",
+      "Dot Pattern",
+      "Dotted Map",
+      "File Tree",
+      "Flickering Grid",
+      "Floating 3D Particles",
+      "Glare Hover",
+      "Globe",
+      "Glyph Matrix",
+      "Grid Pattern",
+      "Hero Video Dialog",
+      "Hexagon Pattern",
+      "Highlighter",
+      "Hyper Text",
+      "Icon Cloud",
+      "Interactive Grid Pattern",
+      "Interactive Hover Button",
+      "iPhone",
+      "Kinetic Text",
+      "Lens",
+      "Light Rays",
+      "Line Shadow Text",
+      "Magic Card",
+      "Marquee",
+      "Meteors",
+      "Morphing Text",
+      "Neon Gradient Card",
+      "Noise Texture",
+      "Number Ticker",
+      "Orbiting Circles",
+      "Particles",
+      "Pixel Image",
+      "Pointer",
+      "Progressive Blur",
+      "Pulsating Button",
+      "Rainbow Button",
+      "Retro Grid",
+      "Ripple",
+      "Ripple Button",
+      "Safari",
+      "Scroll Based Velocity",
+      "Scroll Progress",
+      "Shimmer Button",
+      "Shine Border",
+      "Shiny Button",
+      "Smooth Cursor",
+      "Sparkles Text",
+      "Spinning Text",
+      "Striped Pattern",
+      "Terminal",
+      "Text 3D Flip",
+      "Text Animate",
+      "Text Reveal",
+      "Tweet Card",
+      "Typing Animation",
+      "Video Text",
+      "Warp Background",
+      "Word Rotate"
+    ],
+    "stateMatrixCompleteness": "Low: effects, not controls. Hover is the main state; focus/disabled rarely styled; reduced motion not handled in sampled sources."
+  },
+  "tokenArchitecture": "None: props with hex defaults + a few Tailwind theme keyframes (animate-marquee, animate-shimmer-slide, animate-spin-around) added via registry cssVars.",
+  "distinctiveness": "Low now: these exact effects became the visual signature of 2023-25 AI/dev-tool launch pages.",
+  "weaknesses": [
+    "Effects read as AI cliché (see cliché list in the knowledge note)",
+    "No reduced-motion handling in sampled components",
+    "Infinite loops cost battery and distract",
+    "Hard-coded purple/orange gradients"
+  ],
+  "takeaways": [
+    "Standard entrance values worth keeping: 0.3-0.4s, 6px offset, 6px blur, spring 300/15 for text.",
+    "Marquee only with real logos, slow (40s), pause on hover, and a reduced-motion static fallback.",
+    "Number Ticker is honest motion only when the number is real and sourced."
+  ],
+  "provenance": "public-spec (magicui.design/llms.txt and registry JSON)"
+}

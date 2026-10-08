@@ -1,0 +1,497 @@
+{
+  "name": "Tailwind CSS v4 default theme + Catalyst UI kit (Tailwind Plus)",
+  "slug": "tailwind-catalyst",
+  "vendor": "Tailwind Labs",
+  "url": "https://catalyst.tailwindui.com/docs",
+  "licence": "Tailwind CSS framework and theme.css: MIT (npm tailwindcss@4.3.3). Catalyst and Tailwind Plus blocks: commercial, paid (Tailwind Plus $299 individual / $979 team one-time, Catalyst standalone $149 per checkout page seen in search). Full licence text sits behind the Tailwind Plus login and was NOT read; do not copy Catalyst source into the engine.",
+  "studiedOn": "2026-10-08",
+  "personality": [
+    "restrained",
+    "precise",
+    "neutral",
+    "app-native",
+    "quietly crafted"
+  ],
+  "bestFor": [
+    "SaaS application UI (dashboards, settings, tables, auth)",
+    "a neutral zinc base that any brand accent can sit on",
+    "teams that want Tailwind's default theme as the design system with no extra token layer"
+  ],
+  "avoidFor": [
+    "brand-led marketing heroes that need a voice (Catalyst ships no marketing components)",
+    "projects that heavily customise the Tailwind default theme (docs warn components assume the defaults)",
+    "anything that must be open-source redistributed (paid licence)"
+  ],
+  "typography": {
+    "families": [
+      "Tailwind v4.3.3 --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Noto Sans', Arial, sans-serif + emoji",
+      "--font-serif: ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif",
+      "--font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace",
+      "Catalyst: Inter (rsms.me/inter CDN) with font-feature-settings 'cv11'"
+    ],
+    "scale": [
+      {
+        "role": "tw text-xs",
+        "sizePx": 12,
+        "lineHeightPx": 16,
+        "weight": "any (100-900 tokens)",
+        "trackingEm": 0
+      },
+      {
+        "role": "tw text-sm",
+        "sizePx": 14,
+        "lineHeightPx": 20,
+        "weight": "any (100-900 tokens)",
+        "trackingEm": 0
+      },
+      {
+        "role": "tw text-base",
+        "sizePx": 16,
+        "lineHeightPx": 24,
+        "weight": "any (100-900 tokens)",
+        "trackingEm": 0
+      },
+      {
+        "role": "tw text-lg",
+        "sizePx": 18,
+        "lineHeightPx": 28,
+        "weight": "any (100-900 tokens)",
+        "trackingEm": 0
+      },
+      {
+        "role": "tw text-xl",
+        "sizePx": 20,
+        "lineHeightPx": 28,
+        "weight": "any (100-900 tokens)",
+        "trackingEm": 0
+      },
+      {
+        "role": "tw text-2xl",
+        "sizePx": 24,
+        "lineHeightPx": 32,
+        "weight": "any (100-900 tokens)",
+        "trackingEm": 0
+      },
+      {
+        "role": "tw text-3xl",
+        "sizePx": 30,
+        "lineHeightPx": 36,
+        "weight": "any (100-900 tokens)",
+        "trackingEm": 0
+      },
+      {
+        "role": "tw text-4xl",
+        "sizePx": 36,
+        "lineHeightPx": 40,
+        "weight": "any (100-900 tokens)",
+        "trackingEm": 0
+      },
+      {
+        "role": "tw text-5xl",
+        "sizePx": 48,
+        "lineHeightPx": 48,
+        "weight": "any (100-900 tokens)",
+        "trackingEm": 0
+      },
+      {
+        "role": "tw text-6xl",
+        "sizePx": 60,
+        "lineHeightPx": 60,
+        "weight": "any (100-900 tokens)",
+        "trackingEm": 0
+      },
+      {
+        "role": "tw text-7xl",
+        "sizePx": 72,
+        "lineHeightPx": 72,
+        "weight": "any (100-900 tokens)",
+        "trackingEm": 0
+      },
+      {
+        "role": "tw text-8xl",
+        "sizePx": 96,
+        "lineHeightPx": 96,
+        "weight": "any (100-900 tokens)",
+        "trackingEm": 0
+      },
+      {
+        "role": "tw text-9xl",
+        "sizePx": 128,
+        "lineHeightPx": 128,
+        "weight": "any (100-900 tokens)",
+        "trackingEm": 0
+      },
+      {
+        "role": "Catalyst Heading (h1) mobile",
+        "sizePx": 24,
+        "lineHeightPx": 32,
+        "weight": 600,
+        "trackingEm": 0
+      },
+      {
+        "role": "Catalyst Heading (h1) >=640px",
+        "sizePx": 20,
+        "lineHeightPx": 32,
+        "weight": 600,
+        "trackingEm": 0
+      },
+      {
+        "role": "Catalyst Subheading mobile",
+        "sizePx": 16,
+        "lineHeightPx": 28,
+        "weight": 600,
+        "trackingEm": 0
+      },
+      {
+        "role": "Catalyst Subheading >=640px",
+        "sizePx": 14,
+        "lineHeightPx": 24,
+        "weight": 600,
+        "trackingEm": 0
+      },
+      {
+        "role": "Catalyst Text / control text mobile",
+        "sizePx": 16,
+        "lineHeightPx": 24,
+        "weight": 400,
+        "trackingEm": 0
+      },
+      {
+        "role": "Catalyst Text / control text >=640px",
+        "sizePx": 14,
+        "lineHeightPx": 24,
+        "weight": 400,
+        "trackingEm": 0
+      },
+      {
+        "role": "Catalyst Button label",
+        "sizePx": "16 mobile / 14 >=640px",
+        "lineHeightPx": 24,
+        "weight": 600,
+        "trackingEm": 0
+      }
+    ],
+    "notes": "Tracking tokens: tighter -0.05em, tight -0.025em, normal 0, wide 0.025em, wider 0.05em, widest 0.1em. Leading tokens: tight 1.25, snug 1.375, normal 1.5, relaxed 1.625, loose 2. Sizes >=48px ship line-height 1. Catalyst's signature move: controls and text are 16px on touch and step DOWN to 14px at sm (640px), so mobile inputs never trigger iOS zoom and desktop stays dense; line-height stays 24px so rhythm holds. Page headings are deliberately small (20px desktop): app UI, not marketing."
+  },
+  "color": {
+    "model": "oklch",
+    "neutrals": {
+      "zinc (Catalyst default)": {
+        "50": "oklch(98.5% 0 none)",
+        "100": "oklch(96.7% 0.001 286.375)",
+        "200": "oklch(92% 0.004 286.32)",
+        "300": "oklch(87.1% 0.006 286.286)",
+        "400": "oklch(70.5% 0.015 286.067)",
+        "500": "oklch(55.2% 0.016 285.938)",
+        "600": "oklch(44.2% 0.017 285.786)",
+        "700": "oklch(37% 0.013 285.805)",
+        "800": "oklch(27.4% 0.006 286.033)",
+        "900": "oklch(21% 0.006 285.885)",
+        "950": "oklch(14.1% 0.005 285.823)"
+      },
+      "available families": [
+        "slate",
+        "gray",
+        "zinc",
+        "neutral",
+        "stone",
+        "taupe",
+        "mauve",
+        "mist",
+        "olive"
+      ],
+      "neutral": {
+        "50": "oklch(98.5% 0 none)",
+        "500": "oklch(55.6% 0 none)",
+        "950": "oklch(14.5% 0 none)"
+      },
+      "taupe/mauve/mist/olive (new in v4.x)": {
+        "taupe": {
+          "50": "oklch(98.6% 0.002 67.8)",
+          "500": "oklch(54.7% 0.021 43.1)",
+          "950": "oklch(14.7% 0.004 49.3)"
+        },
+        "mauve": {
+          "50": "oklch(98.5% 0 none)",
+          "500": "oklch(54.2% 0.034 322.5)",
+          "950": "oklch(14.5% 0.008 326)"
+        },
+        "mist": {
+          "50": "oklch(98.7% 0.002 197.1)",
+          "500": "oklch(56% 0.021 213.5)",
+          "950": "oklch(14.8% 0.004 228.8)"
+        },
+        "olive": {
+          "50": "oklch(98.8% 0.003 106.5)",
+          "500": "oklch(58% 0.031 107.3)",
+          "950": "oklch(15.3% 0.006 107.1)"
+        }
+      }
+    },
+    "accents": {
+      "tailwind families 500/600": {
+        "amber": {
+          "500": "oklch(76.9% 0.188 70.08)",
+          "600": "oklch(66.6% 0.179 58.318)"
+        },
+        "blue": {
+          "500": "oklch(62.3% 0.214 259.815)",
+          "600": "oklch(54.6% 0.245 262.881)"
+        },
+        "cyan": {
+          "500": "oklch(71.5% 0.143 215.221)",
+          "600": "oklch(60.9% 0.126 221.723)"
+        },
+        "emerald": {
+          "500": "oklch(69.6% 0.17 162.48)",
+          "600": "oklch(59.6% 0.145 163.225)"
+        },
+        "fuchsia": {
+          "500": "oklch(66.7% 0.295 322.15)",
+          "600": "oklch(59.1% 0.293 322.896)"
+        },
+        "green": {
+          "500": "oklch(72.3% 0.219 149.579)",
+          "600": "oklch(62.7% 0.194 149.214)"
+        },
+        "indigo": {
+          "500": "oklch(58.5% 0.233 277.117)",
+          "600": "oklch(51.1% 0.262 276.966)"
+        },
+        "lime": {
+          "500": "oklch(76.8% 0.233 130.85)",
+          "600": "oklch(64.8% 0.2 131.684)"
+        },
+        "orange": {
+          "500": "oklch(70.5% 0.213 47.604)",
+          "600": "oklch(64.6% 0.222 41.116)"
+        },
+        "pink": {
+          "500": "oklch(65.6% 0.241 354.308)",
+          "600": "oklch(59.2% 0.249 0.584)"
+        },
+        "purple": {
+          "500": "oklch(62.7% 0.265 303.9)",
+          "600": "oklch(55.8% 0.288 302.321)"
+        },
+        "red": {
+          "500": "oklch(63.7% 0.237 25.331)",
+          "600": "oklch(57.7% 0.245 27.325)"
+        },
+        "rose": {
+          "500": "oklch(64.5% 0.246 16.439)",
+          "600": "oklch(58.6% 0.253 17.585)"
+        },
+        "sky": {
+          "500": "oklch(68.5% 0.169 237.323)",
+          "600": "oklch(58.8% 0.158 241.966)"
+        },
+        "teal": {
+          "500": "oklch(70.4% 0.14 182.503)",
+          "600": "oklch(60% 0.118 184.704)"
+        },
+        "violet": {
+          "500": "oklch(60.6% 0.25 292.717)",
+          "600": "oklch(54.1% 0.281 293.009)"
+        },
+        "yellow": {
+          "500": "oklch(79.5% 0.184 86.047)",
+          "600": "oklch(68.1% 0.162 75.834)"
+        }
+      },
+      "Catalyst focus ring": "blue-500 (outline 2px, offset 2px)",
+      "Catalyst button colours": "dark/zinc (default), light, dark/white, white, zinc + 17 hues (indigo..rose)",
+      "Catalyst badge colours": 18
+    },
+    "semantic": {
+      "Catalyst invalid": "border red-500 (dark red-600)",
+      "Catalyst text": "zinc-950 / muted zinc-500 (dark: white / zinc-400)",
+      "Catalyst control border": "zinc-950/10, hover zinc-950/20 (dark white/10, hover white/20)",
+      "Catalyst disabled": "opacity 50%, bg zinc-950/5",
+      "note": "No success/warning/info tokens: Catalyst picks palette hues per component."
+    },
+    "darkMode": "Per-utility dark: variant (no semantic token layer). Catalyst dark surfaces use white at low alpha (bg white/5, border white/10, white/15) over zinc-900/950 rather than a separate dark palette.",
+    "contrastNotes": "zinc-500 on white is used for secondary text; Catalyst's adaptive button colours (dark/zinc, light, dark/white) flip per mode to keep contrast. Coloured buttons use dark text on light hues (amber-400 bg + amber-950 text; cyan-300 + cyan-950; lime-300 + lime-950), i.e. contrast is solved per hue, not by always using white text."
+  },
+  "spacing": {
+    "base": "4px (--spacing: 0.25rem; any integer or .5 multiple is a utility)",
+    "scale": [
+      0,
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      20,
+      24,
+      28,
+      32,
+      36,
+      40,
+      44,
+      48,
+      56,
+      64,
+      80,
+      96,
+      112,
+      128,
+      144,
+      160,
+      176,
+      192,
+      208,
+      224,
+      240,
+      256,
+      288,
+      320,
+      384
+    ]
+  },
+  "radius": {
+    "scale": [
+      {
+        "name": "xs",
+        "px": 2
+      },
+      {
+        "name": "sm",
+        "px": 4
+      },
+      {
+        "name": "md",
+        "px": 6
+      },
+      {
+        "name": "lg",
+        "px": 8
+      },
+      {
+        "name": "xl",
+        "px": 12
+      },
+      {
+        "name": "2xl",
+        "px": 16
+      },
+      {
+        "name": "3xl",
+        "px": 24
+      },
+      {
+        "name": "4xl",
+        "px": 32
+      },
+      {
+        "name": "full",
+        "px": "calc(infinity*1px)"
+      }
+    ],
+    "rule": "Catalyst uses radius-lg (8px) for buttons, inputs, selects; inner layers use calc(var(--radius-lg) - 1px) so nested shapes stay concentric; rounded-xl (12px) for dropdown items/menus, rounded-2xl for dialogs (from class conventions; dialog value inferred, not measured); rounded-full only for switch/avatar."
+  },
+  "depth": {
+    "shadows": [
+      "2xs: 0 1px rgb(0 0 0 / 0.05)",
+      "xs: 0 1px 2px 0 rgb(0 0 0 / 0.05)",
+      "sm: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)",
+      "md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)",
+      "lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)",
+      "xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)",
+      "2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25)",
+      "inset-2xs: inset 0 1px rgb(0 0 0 / 0.05)",
+      "inset-xs: inset 0 1px 1px rgb(0 0 0 / 0.05)",
+      "inset-sm: inset 0 2px 4px rgb(0 0 0 / 0.05)",
+      "Catalyst solid button: before:shadow-sm + after:shadow-[inset_0_1px_white/15%] (top highlight)",
+      "Catalyst input: before:bg-white before:shadow-sm, light mode only"
+    ],
+    "borders": "1px; colour as alpha of the text colour (zinc-950/10, white/10), never a fixed grey. Solid button border = a darker step of its own fill at 80-90% alpha.",
+    "blur": "blur-xs 4, sm 8, md 12, lg 16, xl 24, 2xl 40, 3xl 64 (px)"
+  },
+  "motion": {
+    "durationsMs": [
+      0,
+      150,
+      200
+    ],
+    "easings": [
+      "ease-in cubic-bezier(0.4,0,1,1)",
+      "ease-out cubic-bezier(0,0,0.2,1)",
+      "ease-in-out cubic-bezier(0.4,0,0.2,1)",
+      "default transition: 150ms cubic-bezier(0.4,0,0.2,1)",
+      "animate-spin 1s linear",
+      "animate-ping 1s cubic-bezier(0,0,0.2,1)",
+      "animate-pulse 2s cubic-bezier(0.4,0,0.6,1)",
+      "animate-bounce 1s"
+    ],
+    "notes": "Catalyst switch: transition duration-0, only data-changing:duration-200 (moves only when state changes, never on mount). Catalyst depends on the 'motion' package for layout transitions (navbar/sidebar indicator); exact values not public."
+  },
+  "density": {
+    "modes": [
+      "touch (<640px)",
+      "pointer (>=640px)",
+      "Table: default / dense / grid / striped / bleed props"
+    ],
+    "controlHeightsPx": {
+      "button <640px": 44,
+      "button >=640px": 36,
+      "input <640px": 44,
+      "input >=640px": 36,
+      "switch <640px": "24x40",
+      "switch >=640px": "20x32",
+      "computation": "line 24 + 2x(py-2.5 -1px)=18 + 2 border = 44; sm: 24 + 2x(py-1.5 -1px)=10 + 2 = 36"
+    }
+  },
+  "components": {
+    "count": 27,
+    "list": [
+      "Sidebar layout",
+      "Stacked layout",
+      "Auth layout",
+      "Alert",
+      "Avatar",
+      "Badge",
+      "Button",
+      "Checkbox",
+      "Combobox",
+      "Description list",
+      "Dialog",
+      "Divider",
+      "Dropdown",
+      "Fieldset",
+      "Heading",
+      "Input",
+      "Listbox",
+      "Navbar",
+      "Pagination",
+      "Radio button",
+      "Select",
+      "Sidebar",
+      "Switch",
+      "Table",
+      "Text",
+      "Textarea",
+      "Link"
+    ],
+    "stateMatrixCompleteness": "High for app controls: data-hover, data-focus (keyboard only, via Headless UI), data-active, data-disabled, data-invalid, data-checked, data-changing, forced-colors variants, dark variants on every control. No loading state on Button."
+  },
+  "tokenArchitecture": "Single layer: Tailwind @theme primitives (--color-zinc-500, --spacing, --radius-lg, --shadow-sm) used directly in utilities. Catalyst adds component-local CSS variables (--btn-bg, --btn-border, --btn-icon, --btn-hover-overlay, --switch-bg) set per colour variant, so one structural class string serves 20+ colours. No semantic (primary/background) layer.",
+  "distinctiveness": "Layered-pseudo-element controls: border as a darker fill underneath, before: for the fill + shadow, after: for the 1px white inner top highlight and the hover overlay. Gives a tactile, physical button with no gradients. Touch-first sizes that tighten at 640px.",
+  "weaknesses": [
+    "No semantic tokens: rebranding means editing component files",
+    "No marketing/brand components; Tailwind Plus blocks cover that but are generic and widely used, so they read as 'Tailwind template'",
+    "Paid licence, source not inspectable publicly",
+    "Default theme's system font stack + zinc is the most common SaaS look on the web; using it unmodified gives zero identity"
+  ],
+  "takeaways": [
+    "Size controls at 44px on touch and 36px at >=640px with the same 24px line-height; one class string, two densities.",
+    "Express borders as alpha of the foreground (zinc-950/10) so they work on any surface.",
+    "Give nested layers radius = outer - 1px to stay concentric.",
+    "Show focus only for keyboard (data-focus) with a 2px offset outline in one blue; hide on mouse.",
+    "Per-variant CSS variables (--btn-bg/--btn-border) let one component carry many colours without class explosion."
+  ],
+  "provenance": "mixed (theme.css from npm tailwindcss@4.3.3 = public-spec; Catalyst values measured from rendered class strings on public docs pages)"
+}

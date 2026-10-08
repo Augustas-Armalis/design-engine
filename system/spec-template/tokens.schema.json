@@ -1,0 +1,293 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "design-engine/system/spec-template/tokens.schema.json",
+  "title": "Per-project mini design-system spec: token layers and required keys",
+  "$comment": "TEMPLATE. Structure and required keys are the contract; every VALUE in tokens.example.json is an example only. Layers: meta (brief + personality knobs) -> primitive (raw ramps, no meaning) -> semantic (roles, light + dark, contrast contract) -> component (size ladders per control). Components read semantic tokens only; semantic reads primitive only. Derived from the method in knowledge/benchmarks/alignui-method.md. Alias syntax: \"{path.to.token}\" resolved from the file root.",
+  "type": "object",
+  "required": ["meta", "primitive", "semantic", "component", "naming"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": { "type": "string" },
+    "$comment": { "type": "string" },
+
+    "meta": {
+      "type": "object",
+      "description": "Layer 0. What this system is for and the few decisions that make it distinctive. Fill before any ramp.",
+      "required": ["name", "version", "status", "brief", "personality", "signature"],
+      "additionalProperties": false,
+      "properties": {
+        "name": { "type": "string", "minLength": 2 },
+        "version": { "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$" },
+        "status": { "enum": ["example", "draft", "approved"] },
+        "brief": {
+          "type": "object",
+          "required": ["product", "audience", "action", "proof"],
+          "properties": {
+            "product": { "type": "string" },
+            "audience": { "type": "string" },
+            "action": { "type": "string", "description": "The one primary action." },
+            "proof": { "type": "string", "description": "What the visitor needs to see to act. Never invented proof." }
+          }
+        },
+        "personality": {
+          "type": "object",
+          "description": "The knobs. Every other number should be derivable from these plus the grammar. Compare with system/tokens/theme-knobs.json.",
+          "required": ["brandHue", "neutralTemperature", "typeVoice", "radiusPreset", "depthStyle", "density", "motionPersonality"],
+          "properties": {
+            "brandHue": { "type": "number", "minimum": 0, "maximum": 360, "description": "OKLCH hue of the brand ramp." },
+            "neutralTemperature": { "enum": ["cool", "neutral", "warm"] },
+            "typeVoice": { "type": "string", "description": "One sentence: what the type sounds like." },
+            "radiusPreset": { "enum": ["sharp", "tight", "default", "soft", "pill"] },
+            "depthStyle": { "enum": ["flat", "border", "soft", "layered", "crisp"] },
+            "density": { "enum": ["compact", "default", "comfortable"] },
+            "motionPersonality": { "enum": ["calm", "snappy", "springy"] }
+          }
+        },
+        "signature": { "type": "string", "description": "The 1-3 owned moves that make this system not another kit (what a stranger would recognise)." },
+        "overrides": {
+          "type": "array",
+          "description": "Deliberate rule breaks, same format as DIRECTION.md: override: <rule-id> because <reason>.",
+          "items": { "type": "string", "pattern": "^override: .+ because .+$" }
+        }
+      }
+    },
+
+    "primitive": {
+      "type": "object",
+      "description": "Layer 1. Raw ramps. No semantics. Components and pages must never reference these directly (except listed one-offs).",
+      "required": ["color", "space", "size", "radius", "type", "shadow", "motion", "z", "breakpoint", "container"],
+      "additionalProperties": false,
+      "properties": {
+        "color": {
+          "type": "object",
+          "required": ["neutral", "brand", "states", "alphaSteps"],
+          "properties": {
+            "neutral": {
+              "type": "object",
+              "required": ["hue", "ramp"],
+              "properties": {
+                "hue": { "type": "number" },
+                "ramp": { "$ref": "#/$defs/ramp12", "description": "Steps 0, 50, 100 ... 950; 0 is the lightest paper/white." }
+              }
+            },
+            "brand": {
+              "type": "object",
+              "required": ["hue", "ramp"],
+              "properties": {
+                "hue": { "type": "number" },
+                "ramp": { "$ref": "#/$defs/ramp11" }
+              }
+            },
+            "states": {
+              "type": "object",
+              "description": "One ramp per status family. These four are required; add more only with a named job.",
+              "required": ["danger", "warning", "success", "info"],
+              "additionalProperties": { "type": "object", "required": ["hue", "ramp"], "properties": { "hue": { "type": "number" }, "ramp": { "$ref": "#/$defs/ramp11" } } }
+            },
+            "alphaSteps": {
+              "type": "array",
+              "description": "Percent alpha stops available as tints, hover washes and halos. No other opacity may appear in components.",
+              "minItems": 3,
+              "items": { "type": "integer", "minimum": 1, "maximum": 99 }
+            }
+          }
+        },
+        "space": {
+          "type": "object",
+          "required": ["unit", "subUnit", "scale"],
+          "properties": {
+            "unit": { "$ref": "#/$defs/dimension", "description": "Base grid unit; layout gaps and section padding are multiples." },
+            "subUnit": { "$ref": "#/$defs/dimension", "description": "Allowed only inside component internals (optical alignment). Name where it is used." },
+            "scale": { "type": "object", "minProperties": 8, "additionalProperties": { "$ref": "#/$defs/dimension" } }
+          }
+        },
+        "size": {
+          "type": "object",
+          "required": ["control", "icon", "hitTarget"],
+          "properties": {
+            "control": {
+              "type": "object",
+              "description": "The one height ladder every control uses.",
+              "required": ["sm", "md", "lg"],
+              "additionalProperties": { "$ref": "#/$defs/dimension" }
+            },
+            "icon": { "type": "object", "required": ["sm", "md", "lg"], "additionalProperties": { "$ref": "#/$defs/dimension" } },
+            "hitTarget": { "type": "object", "required": ["min", "touch"], "properties": { "min": { "$ref": "#/$defs/dimension" }, "touch": { "$ref": "#/$defs/dimension" } } }
+          }
+        },
+        "radius": {
+          "type": "object",
+          "required": ["ramp", "concentricRule"],
+          "properties": {
+            "ramp": { "type": "object", "minProperties": 4, "additionalProperties": { "$ref": "#/$defs/dimension" } },
+            "concentricRule": { "type": "string", "description": "How nested radii are derived (e.g. inner = outer - gap)." }
+          }
+        },
+        "type": {
+          "type": "object",
+          "required": ["families", "scale"],
+          "properties": {
+            "families": {
+              "type": "object",
+              "required": ["body", "mono"],
+              "properties": { "display": { "type": "string" }, "body": { "type": "string" }, "mono": { "type": "string" } }
+            },
+            "scale": {
+              "type": "object",
+              "description": "Closed list of named composites. Components may only use these names. Each bundles size + line-height + weight + tracking.",
+              "minProperties": 8,
+              "additionalProperties": { "$ref": "#/$defs/typeStyle" }
+            }
+          }
+        },
+        "shadow": {
+          "type": "object",
+          "description": "Named elevations as layered lists, plus the focus recipe.",
+          "minProperties": 3,
+          "additionalProperties": { "type": ["string", "array"], "items": { "type": "string" } }
+        },
+        "motion": {
+          "type": "object",
+          "required": ["duration", "easing", "reducedMotion"],
+          "properties": {
+            "duration": { "type": "object", "minProperties": 3, "additionalProperties": { "type": "string", "pattern": "^\\d+ms$" } },
+            "easing": { "type": "object", "minProperties": 2, "additionalProperties": { "type": "string" } },
+            "reducedMotion": { "enum": ["remove-transform", "crossfade-only", "none"] }
+          }
+        },
+        "z": { "type": "object", "minProperties": 4, "additionalProperties": { "type": "integer" } },
+        "breakpoint": { "type": "object", "minProperties": 2, "additionalProperties": { "$ref": "#/$defs/dimension" } },
+        "container": { "type": "object", "required": ["content", "text"], "additionalProperties": { "$ref": "#/$defs/dimension" } }
+      }
+    },
+
+    "semantic": {
+      "type": "object",
+      "description": "Layer 2. Roles. Same role names in light and dark; only the assignment changes. Components reference only these.",
+      "required": ["color", "focus", "contract"],
+      "additionalProperties": false,
+      "properties": {
+        "color": {
+          "type": "object",
+          "required": ["light", "dark"],
+          "properties": {
+            "light": { "$ref": "#/$defs/roleSet" },
+            "dark": { "$ref": "#/$defs/roleSet" }
+          }
+        },
+        "focus": {
+          "type": "object",
+          "required": ["width", "offset", "colorRole", "minContrast"],
+          "properties": {
+            "width": { "$ref": "#/$defs/dimension" },
+            "offset": { "$ref": "#/$defs/dimension" },
+            "colorRole": { "type": "string" },
+            "minContrast": { "type": "number", "minimum": 3 }
+          }
+        },
+        "contract": {
+          "type": "object",
+          "description": "Minimum contrast ratios the role pairs must meet in BOTH themes. Verified numbers go in contrastReport.",
+          "required": ["textStrong", "textBody", "textMuted", "textSubtle", "onSolid", "controlBorder", "focusRing"],
+          "additionalProperties": { "type": "number", "minimum": 1 }
+        },
+        "contrastReport": {
+          "type": "object",
+          "description": "Computed ratios for each contract pair per theme (generated, not hand-written).",
+          "additionalProperties": true
+        }
+      }
+    },
+
+    "component": {
+      "type": "object",
+      "description": "Layer 3. Size ladders per component, referencing primitive.size / primitive.type / primitive.radius names. Full variant x size x state matrices live in component-spec.template.md instances.",
+      "required": ["button", "input"],
+      "additionalProperties": { "$ref": "#/$defs/componentSizes" }
+    },
+
+    "naming": {
+      "type": "object",
+      "required": ["roleFormat", "sizeWords", "variantAxes", "cssVarPattern"],
+      "properties": {
+        "roleFormat": { "type": "string", "description": "e.g. {group}-{role}[-{modifier}]; state families use solid|solid-hover|on-solid|tint|text|border." },
+        "sizeWords": { "type": "array", "minItems": 3, "items": { "type": "string" }, "description": "The closed set of size words used everywhere, in order." },
+        "variantAxes": { "type": "array", "minItems": 2, "items": { "type": "string" }, "description": "Orthogonal axes, e.g. tone, emphasis, size." },
+        "cssVarPattern": { "type": "string" },
+        "forbidden": { "type": "array", "items": { "type": "string" }, "description": "Patterns that must not appear (raw hex in components, numeric colour names without a role...)." }
+      }
+    }
+  },
+
+  "$defs": {
+    "hex": { "type": "string", "pattern": "^#[0-9a-fA-F]{6}$" },
+    "dimension": { "type": "string", "pattern": "^-?\\d+(\\.\\d+)?(px|rem|em|%)$|^0$" },
+    "ramp11": {
+      "type": "object",
+      "required": ["50", "100", "200", "300", "400", "500", "600", "700", "800", "900", "950"],
+      "additionalProperties": false,
+      "patternProperties": { "^(50|100|200|300|400|500|600|700|800|900|950)$": { "$ref": "#/$defs/hex" } }
+    },
+    "ramp12": {
+      "type": "object",
+      "required": ["0", "50", "100", "200", "300", "400", "500", "600", "700", "800", "900", "950"],
+      "additionalProperties": false,
+      "patternProperties": { "^(0|50|100|200|300|400|500|600|700|800|900|950)$": { "$ref": "#/$defs/hex" } }
+    },
+    "typeStyle": {
+      "type": "object",
+      "required": ["size", "lineHeight", "weight", "tracking"],
+      "properties": {
+        "size": { "$ref": "#/$defs/dimension" },
+        "lineHeight": { "$ref": "#/$defs/dimension" },
+        "weight": { "type": "integer", "minimum": 100, "maximum": 900 },
+        "tracking": { "type": "string", "pattern": "^-?\\d+(\\.\\d+)?em$|^0$" },
+        "case": { "enum": ["none", "uppercase"] },
+        "mobile": {
+          "type": "object",
+          "required": ["size", "lineHeight"],
+          "properties": { "size": { "$ref": "#/$defs/dimension" }, "lineHeight": { "$ref": "#/$defs/dimension" } }
+        }
+      }
+    },
+    "roleSet": {
+      "type": "object",
+      "required": ["surface", "text", "border", "accent", "state", "overlay"],
+      "properties": {
+        "surface": { "type": "object", "required": ["canvas", "sunken", "raised", "inverse"] },
+        "text": { "type": "object", "required": ["strong", "body", "muted", "subtle", "disabled", "inverse", "link"] },
+        "border": { "type": "object", "required": ["hairline", "control", "strong"] },
+        "accent": { "type": "object", "required": ["solid", "solidHover", "solidActive", "onSolid", "tint", "text"] },
+        "state": {
+          "type": "object",
+          "required": ["danger", "warning", "success", "info"],
+          "additionalProperties": { "type": "object", "required": ["solid", "solidHover", "onSolid", "tint", "text", "border"] }
+        },
+        "overlay": { "type": "object", "required": ["scrim"] }
+      }
+    },
+    "componentSizes": {
+      "type": "object",
+      "required": ["sizes"],
+      "properties": {
+        "sizes": {
+          "type": "object",
+          "minProperties": 2,
+          "additionalProperties": {
+            "type": "object",
+            "required": ["height", "paddingX", "gap", "icon", "radius", "text"],
+            "properties": {
+              "height": { "type": "string" },
+              "paddingX": { "type": "string" },
+              "gap": { "type": "string" },
+              "icon": { "type": "string" },
+              "radius": { "type": "string" },
+              "text": { "type": "string", "description": "Name from primitive.type.scale." }
+            }
+          }
+        },
+        "notes": { "type": "string" }
+      }
+    }
+  }
+}

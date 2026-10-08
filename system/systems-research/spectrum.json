@@ -1,0 +1,601 @@
+{
+  "name": "Adobe Spectrum 2 (S2)",
+  "slug": "spectrum",
+  "vendor": "Adobe",
+  "url": "https://spectrum.adobe.com",
+  "licence": "Tokens and component API schemas: Apache-2.0 (github.com/adobe/spectrum-design-data, formerly spectrum-tokens; npm @adobe/spectrum-tokens 15.5.0). React Spectrum / Spectrum CSS: Apache-2.0. The Adobe Clean / Adobe Clean Spectrum VF typefaces are RESTRICTED: 'exclusive use of Adobe products and software', served only through Adobe Fonts, never self-hosted; they cannot be used in our own projects. Fallbacks and Source Code Pro (OFL) can.",
+  "studiedOn": "2026-10-08",
+  "personality": [
+    "rational",
+    "precise",
+    "modern-friendly",
+    "restrained",
+    "accessible",
+    "tool-grade"
+  ],
+  "bestFor": [
+    "creative-tool and editing UIs where the canvas is the hero and chrome must recede (Photoshop/Express/Firefly class)",
+    "content-browsing apps with cards, grids, side navigation and many component sizes",
+    "products that need an explicit size x density x platform matrix (XS-XL, compact/regular/spacious, desktop vs mobile scale)",
+    "teams that want a documented attention-hierarchy rule: one high-attention thing per view"
+  ],
+  "avoidFor": [
+    "brand-led marketing pages (the Adobe Clean face is not licensable and the palette is purposefully quiet)",
+    "playful or heavily illustrated consumer brands without adaptation",
+    "dense tabular back-office UIs needing sub-24px controls (smallest tier is 20px extra-small)",
+    "anything that must ship a self-hosted Adobe Clean"
+  ],
+  "typography": {
+    "families": [
+      "Adobe Clean Spectrum VF (primary, restricted)",
+      "Adobe Clean Spectrum Serif VF / Adobe Clean Serif (companion, restricted)",
+      "Adobe Clean Display (brand/marketing only, via Adobe Fonts)",
+      "Source Code Pro (code)",
+      "Web fallback order: Adobe Clean, Source Sans Pro, San Francisco, Roboto, Segoe UI, Trebuchet MS, Lucida Grande",
+      "Adobe Clean Han (CJK), Thai, Arabic, Hebrew, Devanagari"
+    ],
+    "scale": [
+      {
+        "role": "heading-xxxxl",
+        "sizePx": 73,
+        "lineHeightPx": 84,
+        "weight": 800,
+        "trackingEm": 0
+      },
+      {
+        "role": "heading-xxxl",
+        "sizePx": 58,
+        "lineHeightPx": 66,
+        "weight": 800,
+        "trackingEm": 0
+      },
+      {
+        "role": "heading-xxl",
+        "sizePx": 45,
+        "lineHeightPx": 52,
+        "weight": 800,
+        "trackingEm": 0
+      },
+      {
+        "role": "heading-xl",
+        "sizePx": 36,
+        "lineHeightPx": 42,
+        "weight": 800,
+        "trackingEm": 0
+      },
+      {
+        "role": "heading-l",
+        "sizePx": 28,
+        "lineHeightPx": 32,
+        "weight": 800,
+        "trackingEm": 0
+      },
+      {
+        "role": "heading-m",
+        "sizePx": 22,
+        "lineHeightPx": 26,
+        "weight": 800,
+        "trackingEm": 0
+      },
+      {
+        "role": "heading-s",
+        "sizePx": 20,
+        "lineHeightPx": 24,
+        "weight": 800,
+        "trackingEm": 0
+      },
+      {
+        "role": "heading-xs",
+        "sizePx": 18,
+        "lineHeightPx": 22,
+        "weight": 800,
+        "trackingEm": 0
+      },
+      {
+        "role": "heading-xxs",
+        "sizePx": 14,
+        "lineHeightPx": 18,
+        "weight": 800,
+        "trackingEm": 0
+      },
+      {
+        "role": "title-xxxl",
+        "sizePx": 25,
+        "lineHeightPx": 30,
+        "weight": 700,
+        "trackingEm": 0
+      },
+      {
+        "role": "title-xxl",
+        "sizePx": 22,
+        "lineHeightPx": 26,
+        "weight": 700,
+        "trackingEm": 0
+      },
+      {
+        "role": "title-xl",
+        "sizePx": 20,
+        "lineHeightPx": 24,
+        "weight": 700,
+        "trackingEm": 0
+      },
+      {
+        "role": "title-l",
+        "sizePx": 18,
+        "lineHeightPx": 22,
+        "weight": 700,
+        "trackingEm": 0
+      },
+      {
+        "role": "title-m",
+        "sizePx": 16,
+        "lineHeightPx": 20,
+        "weight": 700,
+        "trackingEm": 0
+      },
+      {
+        "role": "title-s",
+        "sizePx": 14,
+        "lineHeightPx": 18,
+        "weight": 700,
+        "trackingEm": 0
+      },
+      {
+        "role": "title-xs",
+        "sizePx": 12,
+        "lineHeightPx": 16,
+        "weight": 700,
+        "trackingEm": 0
+      },
+      {
+        "role": "body-xxxl",
+        "sizePx": 25,
+        "lineHeightPx": 37.5,
+        "weight": 400,
+        "trackingEm": 0
+      },
+      {
+        "role": "body-xxl",
+        "sizePx": 22,
+        "lineHeightPx": 33,
+        "weight": 400,
+        "trackingEm": 0
+      },
+      {
+        "role": "body-xl",
+        "sizePx": 20,
+        "lineHeightPx": 30,
+        "weight": 400,
+        "trackingEm": 0
+      },
+      {
+        "role": "body-l",
+        "sizePx": 18,
+        "lineHeightPx": 27,
+        "weight": 400,
+        "trackingEm": 0
+      },
+      {
+        "role": "body-m",
+        "sizePx": 16,
+        "lineHeightPx": 24,
+        "weight": 400,
+        "trackingEm": 0
+      },
+      {
+        "role": "body-s",
+        "sizePx": 14,
+        "lineHeightPx": 21,
+        "weight": 400,
+        "trackingEm": 0
+      },
+      {
+        "role": "body-xs",
+        "sizePx": 12,
+        "lineHeightPx": 18,
+        "weight": 400,
+        "trackingEm": 0
+      },
+      {
+        "role": "body-xxs",
+        "sizePx": 11,
+        "lineHeightPx": 16.5,
+        "weight": 400,
+        "trackingEm": 0
+      },
+      {
+        "role": "detail-xl",
+        "sizePx": 18,
+        "lineHeightPx": 22,
+        "weight": 500,
+        "trackingEm": 0.06
+      },
+      {
+        "role": "detail-l",
+        "sizePx": 16,
+        "lineHeightPx": 20,
+        "weight": 500,
+        "trackingEm": 0.06
+      },
+      {
+        "role": "detail-m",
+        "sizePx": 14,
+        "lineHeightPx": 18,
+        "weight": 500,
+        "trackingEm": 0.06
+      },
+      {
+        "role": "detail-s",
+        "sizePx": 12,
+        "lineHeightPx": 16,
+        "weight": 500,
+        "trackingEm": 0.06
+      },
+      {
+        "role": "detail-xs",
+        "sizePx": 11,
+        "lineHeightPx": 14,
+        "weight": 500,
+        "trackingEm": 0.06
+      },
+      {
+        "role": "code-m",
+        "sizePx": 16,
+        "lineHeightPx": 24,
+        "weight": 400,
+        "trackingEm": 0
+      }
+    ],
+    "notes": "Desktop scale from font-size-25..1500 = 10,11,12,14,16,18,20,22,25,28,32,36,40,45,51,58,65,73 px: a Major Second ratio (x1.125) from base font-size-100 = 14px, rounded to whole px. Mobile scale is a separate set (~x1.2: font-size-100 = 17px, 200 = 19, 300 = 22, 400 = 24, 500 = 27, 600 = 31, 700 = 34, 800 = 39, 900 = 44). Line heights: Heading/Title/Detail/Component use per-size tokens line-height-font-size-N (about 130% shrinking to 115%, even px only; e.g. 14px -> 18, 16 -> 20, 20 -> 24, 28 -> 32, 36 -> 42, 73 -> 84); Body and Code use 1.5x, CJK 1.7x. The Body rows above are 1.5x of size. Heading default weight is 800 (Black 900 allowed for brand headings >=18px; light variants 300). Title is 700, Detail is 500 uppercase with +0.06em tracking in gray-600, Component text (buttons 700, action buttons 500, fields 400). Letter-spacing is 0 for everything except Detail. All caps is allowed only for Detail and long-form marketing, never inside components. Tabular numerals required for numbers in components. Paragraph measure target ~70 characters (50-120 hard range); never justify."
+  },
+  "color": {
+    "model": "hex",
+    "neutrals": {
+      "gray": {
+        "25": {
+          "light": "#ffffff",
+          "dark": "#111111"
+        },
+        "50": {
+          "light": "#f8f8f8",
+          "dark": "#1b1b1b"
+        },
+        "75": {
+          "light": "#f3f3f3",
+          "dark": "#222222"
+        },
+        "100": {
+          "light": "#e9e9e9",
+          "dark": "#2c2c2c"
+        },
+        "200": {
+          "light": "#e1e1e1",
+          "dark": "#323232"
+        },
+        "300": {
+          "light": "#dadada",
+          "dark": "#393939"
+        },
+        "400": {
+          "light": "#c6c6c6",
+          "dark": "#444444"
+        },
+        "500": {
+          "light": "#8f8f8f",
+          "dark": "#6d6d6d"
+        },
+        "600": {
+          "light": "#717171",
+          "dark": "#8a8a8a"
+        },
+        "700": {
+          "light": "#505050",
+          "dark": "#afafaf"
+        },
+        "800": {
+          "light": "#292929",
+          "dark": "#dbdbdb"
+        },
+        "900": {
+          "light": "#131313",
+          "dark": "#f2f2f2"
+        },
+        "1000": {
+          "light": "#000000",
+          "dark": "#ffffff"
+        }
+      },
+      "note": "Tokens ship as rgb(); converted to hex here. Single dark theme (used both for 'dark theme' and dark device mode). A third 'wireframe' set exists in the palette file. Gray-25 is the default page background; 25/50/75 reserved for background layers; 100/200/300 for low-contrast fills and borders; 800/900 for high-contrast fills and text. Detail text colour gray-600, heading colour gray-900, code colour gray-800."
+    },
+    "accents": {
+      "accentColor": "blue (accent-color-100..1600 aliases blue-100..1600)",
+      "blue": {
+        "100": {
+          "light": "#f5f9ff",
+          "dark": "#0e173f"
+        },
+        "200": {
+          "light": "#e5f0fe",
+          "dark": "#0f1c52"
+        },
+        "300": {
+          "light": "#cbe2fe",
+          "dark": "#0c2175"
+        },
+        "400": {
+          "light": "#accffd",
+          "dark": "#122d9a"
+        },
+        "500": {
+          "light": "#8eb9fc",
+          "dark": "#1a3ac3"
+        },
+        "600": {
+          "light": "#729efd",
+          "dark": "#2549e5"
+        },
+        "700": {
+          "light": "#5d89ff",
+          "dark": "#345bf8"
+        },
+        "800": {
+          "light": "#4b75ff",
+          "dark": "#4069fd"
+        },
+        "900": {
+          "light": "#3b63fb",
+          "dark": "#5681ff"
+        },
+        "1000": {
+          "light": "#274dea",
+          "dark": "#6995fe"
+        },
+        "1100": {
+          "light": "#1d3ecf",
+          "dark": "#7ca9fc"
+        },
+        "1200": {
+          "light": "#1532ad",
+          "dark": "#98c0fc"
+        },
+        "1300": {
+          "light": "#10288c",
+          "dark": "#b5d5fd"
+        },
+        "1400": {
+          "light": "#0c1f69",
+          "dark": "#d5e7fe"
+        },
+        "1500": {
+          "light": "#0e1843",
+          "dark": "#eef5ff"
+        },
+        "1600": {
+          "light": "#070b1e",
+          "dark": "#ffffff"
+        }
+      },
+      "accentBackgroundDefault": {
+        "light": "accent-color-900 = #3b63fb",
+        "dark": "accent-color-800 = #4069fd"
+      },
+      "focusIndicatorColor": "blue-800 = #4b75ff light / #4069fd dark",
+      "note": "Every hue ships a 16-step scale 100..1600 in both light and dark (hues available: red, orange, yellow, brown, chartreuse, celery, green, seafoam, cyan, blue, indigo, purple, fuchsia, magenta, pink, turquoise, silver, cinnamon). Brand colours of Adobe apps (Ai orange, Ps blue, etc.) deliberately differ from system hues."
+    },
+    "semantic": {
+      "informative": "blue (900 light, 800 dark)",
+      "negative": {
+        "light": "#d73220",
+        "dark": "#fc432e"
+      },
+      "positive": {
+        "light": "#05834e",
+        "dark": "#099d59"
+      },
+      "notice": {
+        "light": "#c24e00",
+        "dark": "#e06400"
+      },
+      "neutral": "gray-800 (subdued gray-700 light / gray-500 dark)",
+      "disabled": {
+        "background": "gray-100",
+        "border": "gray-300",
+        "content": "gray-400"
+      },
+      "naming": "{meaning}-{background|content|visual|border}-color-{default|hover|down|key-focus|selected}, e.g. accent-background-color-hover, negative-content-color-default"
+    },
+    "darkMode": "One dark theme generated with the Leonardo contrast-based colour tool from key colours plus target contrast ratios, so each of the 16 steps has the same purpose in both themes (e.g. gray-800 is #292929 light / #dbdbdb dark; gray-25 #ffffff / #111111). The ladder is reversed in lightness, not recoloured: the same token name works in both. Background layers: base gray-25 in both; layer-1 gray-50 both; layer-2 gray-25 light / gray-75 dark; pasteboard gray-100 light / gray-25 dark; elevated gray-25 light / gray-75 dark with drop shadow. Drop-shadow opacity triples in dark (24/36/48% instead of 8/12/16%); popovers also get a border in dark. Accent step shifts: accent bg 900 light vs 800 dark, hover 1000 vs 700.",
+    "contrastNotes": "Computed 2026-10-08 against #ffffff: gray-800 #292929 14.55:1; gray-700 #505050 8.06:1; gray-600 #717171 4.88:1 (lowest gray that passes small text); gray-500 #8f8f8f 3.23:1 (non-text 3:1 only); gray-400 #c6c6c6 1.71:1; blue-900 #3b63fb 4.81:1 as text or as background under white text. Dark: gray-600 #8a8a8a on #111 5.47:1; blue-900 dark #5681ff on #111 5.38:1; white on dark accent bg (blue-800 dark #4069fd) 4.51:1 (just passing). Spectrum's own rule: all active states of components are >=3:1 against the background, text >=4.5:1; disabled and decorative are exempt. Never recolour or run color functions (lighten/darken) on tokens: tints are perceptually tuned. Hue-vibration warning: do not place high-chroma hues of equal lightness adjacent. Static black text (not white) must be used on yellow, orange, chartreuse and celery fills."
+  },
+  "spacing": {
+    "base": "no fixed base: a geometric/perceptual progression that rounds to familiar numbers; 8px = spacing-100",
+    "scale": [
+      1,
+      2,
+      4,
+      6,
+      8,
+      12,
+      16,
+      20,
+      24,
+      32,
+      40,
+      48,
+      56,
+      64,
+      80,
+      96
+    ]
+  },
+  "radius": {
+    "scale": [
+      0,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      16
+    ],
+    "rule": "S2 rounds everything ('no sharp corners'). Defaults: small 4px (checkbox, in-field button), medium 8px (most components, XS/S cards), large 10px (M/L cards, panels, select boxes, toolbars), extra-large 16px (dialogs), full = height/2 (buttons, avatars, FAB, search field). Per component size the medium family steps 6/7/8/9/10 for XS/S/M/L/XL and the small family 3/4/5/6 on a Major Second scale so radius grows with control size. Nested radii: outer - gap = inner for focus rings; for cards use optical balance, never force the formula. Desktop and mobile share base radius. iOS: use continuous (squircle) corners and concentric APIs."
+  },
+  "depth": {
+    "shadows": [
+      "drop-shadow-emphasized (default container emphasis): 0 2px 8px ambient, 0 1px 4px transition, 0 0 1px key; colours 8% / 4% / 8% black (light), x3 in dark",
+      "drop-shadow-emphasized-hover: 0 4px 12px, 0 2px 6px, 0 0 2px; key 12%, transition 4%, ambient 8%",
+      "drop-shadow-elevated (menus, tooltips, popovers, floating toolbars): 0 4px 12px, 0 2px 6px, 0 0 2px; key 12%",
+      "drop-shadow-dragged: 0 12px 16px, 0 6px 8px, 0 0 6px; key 16%, transition 4%, ambient 8%",
+      "every shadow is a three-layer composite (key = edge, transition, ambient = depth), black base; dark theme opacity = 3x light",
+      "no shadow on containers by default; overlay behind dialogs replaces the shadow"
+    ],
+    "borders": "Two widths only: 2px (default, focus rings, selected) and 1px (dense: accordions, tables); border-width-400 = 4px for large emphasis. 'Borders when necessary only': separate with spacing, section titles and background layers first. Divider end caps square when edge-to-edge, fully rounded when floating. Focus indicator: 2px thick, 2px gap, colour blue-800 (side focus indicator 4px).",
+    "blur": "No blur/glass material is specified. Overlay colour is black (overlay-color) with theme-dependent opacity; backdrop blur: unknown / not part of the system."
+  },
+  "motion": {
+    "durationsMs": [
+      0,
+      130,
+      160,
+      190,
+      220,
+      250,
+      300,
+      350,
+      400,
+      450,
+      500,
+      1000,
+      2000,
+      3000
+    ],
+    "easings": [
+      "ease-in-out cubic-bezier(0.45, 0, 0.4, 1)",
+      "ease-in cubic-bezier(0.5, 0, 1, 1)",
+      "ease-out cubic-bezier(0, 0, 0.4, 1)",
+      "linear cubic-bezier(0, 0, 1, 1)"
+    ],
+    "notes": "Numeric motion tokens come from @spectrum-css/tokens 16.0.2 (Spectrum 1 CSS, animation-duration-100..6000); the S2 tokens file and S2 motion docs publish NO numeric duration or easing tokens: treat these as the best public values. S2 motion model: directional (linear = forward/progress, diagonal = context switch, clockwise = indeterminate hold), interaction (microinteractions such as a 'down' state that shrinks the control: tokens component-size-difference-down -2px, width-ratio-down 0.3333, perspective clamp 24-96px), wayfinding (unfinished). Large-area motion must honour reduced-motion. Motion is allowed to carry brand personality but must add meaning."
+  },
+  "density": {
+    "modes": [
+      "compact",
+      "regular",
+      "spacious"
+    ],
+    "controlHeightsPx": {
+      "component-height-50 (XS)": 20,
+      "component-height-75 (S)": 24,
+      "component-height-100 (M, default)": 32,
+      "component-height-200 (L)": 40,
+      "component-height-300 (XL)": 48,
+      "component-height-400": 56,
+      "component-height-500": 64,
+      "mobile scale (x1.25)": "26 / 30 / 40 / 50 / 60 / 70 / 80",
+      "workflow-icon sizes (desktop)": "XS 14, S 16, M 18, L 20, XL 22, 2XL 24",
+      "switch control": "26x16 medium (22x14 S, 30x18 L, 34x20 XL)",
+      "checkbox control": "16 medium (14 S, 18 L, 20 XL)",
+      "buttons: min-width": "2.25x height; padding each side = half height",
+      "text-field min-width": "1.5x height",
+      "density scope": "only collections (lists, groups, tables) and containers (cards, toolbars) take density; basic controls do not. Compact = every spacing token one step down; spacious = one step up."
+    }
+  },
+  "components": {
+    "count": 70,
+    "list": [
+      "accordion",
+      "action-bar",
+      "action-button",
+      "action-group",
+      "alert-banner",
+      "alert-dialog",
+      "avatar",
+      "avatar-group",
+      "badge",
+      "breadcrumbs",
+      "button",
+      "button-group",
+      "calendar",
+      "cards",
+      "checkbox",
+      "checkbox-group",
+      "close-button",
+      "coach-indicator",
+      "coach-mark",
+      "color-area",
+      "color-handle",
+      "color-handle-and-loupe",
+      "color-loupe",
+      "color-slider",
+      "color-wheel",
+      "combo-box",
+      "contextual-help",
+      "date-picker",
+      "divider",
+      "drop-zone",
+      "field-label",
+      "help-text",
+      "illustrated-message",
+      "in-line-alert",
+      "link",
+      "list-view",
+      "menu",
+      "meter",
+      "number-field",
+      "picker",
+      "popover",
+      "progress-bar",
+      "progress-circle",
+      "radio-button",
+      "radio-group",
+      "rating",
+      "search-field",
+      "segmented-control",
+      "select-box",
+      "side-navigation",
+      "slider",
+      "standard-dialog",
+      "standard-panel",
+      "status-light",
+      "steplist",
+      "swatch",
+      "swatch-group",
+      "switch",
+      "table",
+      "tabs",
+      "tag",
+      "tag-field",
+      "tag-group",
+      "takeover-dialog",
+      "text-area",
+      "text-field",
+      "thumbnail",
+      "toast",
+      "tooltip",
+      "tree-view"
+    ],
+    "stateMatrixCompleteness": "Each component page carries an explicit States table with Supported / Not supported for Default, Hover, Down, Keyboard focus, Disabled, Selected, Dragged, Error (e.g. Button: Selected/Dragged/Error not supported; Text field: Down not supported, Focus-hover and Focus-not-hover separate, Error supported). Options listed per component: size (XS-XL, medium default), style (fill/outline), staticColor (black/white), isEmphasized, isQuiet, isPending, isDisabled, isRequired, labelPosition, necessityIndicator. Also Behaviors, Usage guidelines, Content standards, Internationalization/RTL and a WCAG 2.2 compliance table per component. 70 documented component pages; 91 token files / 2,500 tokens."
+  },
+  "tokenArchitecture": "Three tiers: primitive/global (blue-900, gray-100, spacing-100, corner-radius-75, font-size-100, component-height-100), semantic (accent-background-color-default, negative-content-color-default, container-padding-medium, group-gap-small, base-padding-vertical-large) and sparse component-specific (tooltip-maximum-width, button-minimum-width-multiplier). Names read broad-to-specific left to right: [what is communicated or where applied]-[what it affects]-[how]-[option]-[state]. Structural templates (base, accessory, group, list, container, banner) own the spacing semantics so a component is a composition of structures, not a list of bespoke numbers. Values can be a literal, an alias {token}, or a set keyed by theme (light/dark/wireframe) or scale (desktop/mobile). 2,500 tokens, DTCG-style JSON with UUIDs and JSON-schema per token type (color, color-set, dimension, drop-shadow composite, multiplier, font-weight...).",
+  "distinctiveness": "Gray-first UI where the accent blue is rationed ('one high-attention element per page'); pill buttons and 16px dialogs; heavy 800-weight headings against 400 body; spacing replaces dividers; down state shrinks controls; layers system (pasteboard / layer-1 / layer-2 / elevated) built for editing canvases; three-layer composite shadows; a full desktop-vs-mobile scale for every dimension.",
+  "weaknesses": [
+    "Adobe Clean is not licensable outside Adobe, so the typographic identity cannot be reproduced",
+    "motion is the thinnest part: no numeric S2 tokens",
+    "palette is deliberately quiet; hue-rich brand work needs adapting",
+    "documentation is spread across spectrum.adobe.com, a corporate mirror (s2.spectrum.corp.adobe.com, referenced but not public) and the open data repo, and the repo/package names changed (spectrum-tokens became spectrum-design-data)",
+    "many size/density options (XS-XL x compact/spacious x desktop/mobile) multiply spec surface"
+  ],
+  "takeaways": [
+    "Make attention a first-class rule: a page has ONE high-attention element; selected-state nav must not compete with the primary action",
+    "Spacing over borders: group with proximity tokens and section titles; borders only when spacing fails, and only one or two widths",
+    "Geometric (perceptually spaced) spacing and radius scales tied to component size, not a flat 8px multiple",
+    "Name tokens broad-to-specific and compose components from structural templates (base/accessory/group/list/container)",
+    "Per-component State support table (supported/not supported) so unsupported states are decisions, not omissions",
+    "Layered backgrounds (base, layer-1, layer-2, elevated, pasteboard) that map to different tokens in dark theme",
+    "Same-purpose colour steps in light and dark (step N does the same job), enabling a single semantic token set",
+    "Density is a spacing property of collections and containers only; do not density-scale basic controls"
+  ]
+}
