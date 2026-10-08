@@ -1,0 +1,86 @@
+{
+  "name": "hero-vellum",
+  "type": "ai",
+  "seed": 404,
+  "dealt": "2026-10-08T15:50:30.488Z",
+  "avoided": {},
+  "candidates": [
+    {
+      "axes": {
+        "hero_class": "brand-campaign",
+        "structure": "state-boundary",
+        "type_voice": "humanist-sans",
+        "palette_temperature": "botanical-muted",
+        "cta_grammar": "command-bar",
+        "nav_grammar": "inline-with-hero",
+        "motion_signature": "layout-morph",
+        "proof_artifact": "live-data-field"
+      },
+      "moves": [
+        {
+          "id": "M16",
+          "title": "Single continuous page with anchor rail"
+        },
+        {
+          "id": "M18",
+          "title": "Modular live-canvas tile grid"
+        }
+      ]
+    },
+    {
+      "axes": {
+        "hero_class": "interactive-utility",
+        "structure": "full-bleed-stage",
+        "type_voice": "geometric-display",
+        "palette_temperature": "optical-black-white",
+        "cta_grammar": "command-bar",
+        "nav_grammar": "command-palette-nav",
+        "motion_signature": "layout-morph",
+        "proof_artifact": "code-or-terminal"
+      },
+      "moves": [
+        {
+          "id": "M39",
+          "title": "Contained ripple / distortion on thumbnails"
+        },
+        {
+          "id": "M45",
+          "title": "Sound identity"
+        }
+      ]
+    },
+    {
+      "axes": {
+        "hero_class": "brand-campaign",
+        "structure": "product-window-as-canvas",
+        "type_voice": "condensed-poster",
+        "palette_temperature": "sun-faded-warm",
+        "cta_grammar": "inline-in-copy",
+        "nav_grammar": "index-list-nav",
+        "motion_signature": "state-transition-demo",
+        "proof_artifact": "annotated-photograph"
+      },
+      "moves": [
+        {
+          "id": "M07",
+          "title": "Per-product mini-worlds"
+        },
+        {
+          "id": "M49",
+          "title": "Cheap-illusion background"
+        }
+      ]
+    }
+  ],
+  "chosen": 3,
+  "combination": {
+    "hero_class": "product-proof (from #3 brand-campaign; the brief is the proof)",
+    "structure": "product-window-as-canvas (#3) as a marginalia page: cover note | brief | sources margin",
+    "type_voice": "Vellum-locked: Cormorant Garamond display + Manrope (overrides #3 condensed-poster)",
+    "palette_temperature": "sun-faded-warm (#3) = Vellum warm stone + muted gold",
+    "cta_grammar": "inline-in-copy (#3): one accent button closing the cover note",
+    "nav_grammar": "index-list-nav (#3): numbered index links",
+    "motion_signature": "state-transition-demo (#3): claims settle in with citations, calm 420ms",
+    "proof_artifact": "sourced document with citation chips (replaces annotated-photograph)"
+  }
+}

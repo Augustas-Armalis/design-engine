@@ -32,7 +32,7 @@ You are the front-end design brain for Larpo-style work: SaaS and AI-SaaS market
    - the concept in one sentence: what world is this product in?
    - reference triad: one structural, one type/identity, one proof/material/motion reference (from `system/directions/` or the web), and the single rule taken from each
    - divergence row: structure, type voice, palette temperature, CTA grammar, nav grammar, motion signature, and how each differs from the last 8 ledger entries
-   - tokens chosen from `system/` (font pair from the catalogue, palette recipe, scale, radius, spacing base)
+   - **bound system**: pick one house system from `system/systems/<slug>/GUIDE.md` that fits the brief (or write a new `seed.json` and run `node tools/compile_system.mjs <slug>`; it must report "contract met"). Link its `theme.css`, use only its role tokens, keep its owned decisions and never-rules. A client project stays bound to one system across every page.
    - overrides: any rule being broken and why
 4. **Build.** Default stack: Next.js + Tailwind v4 + coss ui (Base UI) per the global instructions; plain HTML/CSS for hero concepts and single sections. Use real structure (landmarks, one h1, semantic controls). Implement all states that apply.
 5. **Check.** `node tools/check.mjs work/<name>/index.html --name <name>`. Fix every FAIL. Treat every WARN as a question: fix it or justify it in DIRECTION.md. Then Read `reports/<name>/*-fold.png` and `*-full.png` and critique: focal point, rhythm, type, colour, "could another company reuse this skeleton by swapping the logo?", what looks assembled rather than designed.

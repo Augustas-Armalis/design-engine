@@ -1,0 +1,91 @@
+{
+  "name": "hero-polar",
+  "type": "b2b",
+  "seed": 505,
+  "dealt": "2026-10-08T15:50:31.579Z",
+  "avoided": {},
+  "candidates": [
+    {
+      "axes": {
+        "hero_class": "product-proof",
+        "structure": "state-boundary",
+        "type_voice": "condensed-poster",
+        "palette_temperature": "botanical-muted",
+        "cta_grammar": "product-native-control",
+        "nav_grammar": "wordmark-plus-menu",
+        "motion_signature": "ambient-loop",
+        "proof_artifact": "artifact-document"
+      },
+      "moves": [
+        {
+          "id": "M26",
+          "title": "Technical monospace voice"
+        },
+        {
+          "id": "M44",
+          "title": "Loader as concept statement"
+        }
+      ]
+    },
+    {
+      "axes": {
+        "hero_class": "product-proof",
+        "structure": "editorial-spread",
+        "type_voice": "variable-axis-display",
+        "palette_temperature": "cultural-pattern",
+        "cta_grammar": "text-action-underline",
+        "nav_grammar": "left-rail-nav",
+        "motion_signature": "ambient-loop",
+        "proof_artifact": "workflow-ui"
+      },
+      "moves": [
+        {
+          "id": "M54",
+          "title": "Product-adjacent object hero"
+        },
+        {
+          "id": "M12",
+          "title": "Overlap / layered stack"
+        }
+      ]
+    },
+    {
+      "axes": {
+        "hero_class": "product-proof",
+        "structure": "stacked-chapters",
+        "type_voice": "editorial-serif",
+        "palette_temperature": "sun-faded-warm",
+        "cta_grammar": "oversized-block",
+        "nav_grammar": "index-list-nav",
+        "motion_signature": "scroll-scrubbed-product",
+        "proof_artifact": "artifact-document"
+      },
+      "moves": [
+        {
+          "id": "M33",
+          "title": "Motion identity as one verb"
+        },
+        {
+          "id": "M45",
+          "title": "Sound identity"
+        }
+      ]
+    }
+  ],
+  "chosen": {
+    "candidate": 1,
+    "axes": {
+      "hero_class": "product-proof",
+      "structure": "state-boundary",
+      "type_voice": "polar-house (override of condensed-poster)",
+      "palette_temperature": "polar-cold (override of botanical-muted)",
+      "cta_grammar": "product-native-control",
+      "nav_grammar": "wordmark-plus-menu",
+      "motion_signature": "static still + one 300ms entrance (override of ambient-loop)",
+      "proof_artifact": "workflow-ui + artifact-document (combined from #2 and #1)"
+    },
+    "moves": [
+      "M26 Technical monospace voice"
+    ]
+  }
+}

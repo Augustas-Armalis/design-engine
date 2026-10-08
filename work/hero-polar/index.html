@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Delta: know why the number moved</title>
+<meta name="description" content="Delta watches your product events and explains, in plain language, why a metric dropped or spiked and which segment caused it. Concept hero with sample data.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Albert+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="../../system/systems/polar/theme.css">
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--surface-canvas);
+    color: var(--text-body);
+    font-family: var(--font-sans);
+    font-size: var(--text-body-md);
+    line-height: var(--text-body-md--line-height);
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: inherit; }
+  :focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
+
+  .skip {
+    position: absolute; left: var(--space-16); top: var(--space-8);
+    display: inline-flex; align-items: center; min-height: 44px; padding: 0 var(--space-16);
+    background: var(--surface-raised); color: var(--text-strong);
+    border-radius: var(--radius-sm); box-shadow: var(--shadow-float);
+    transform: translateY(-200%); z-index: 10;
+  }
+  .skip:focus-visible { transform: none; }
+
+  /* ---------- frame: canvas left, cold field right ---------- */
+  .frame {
+    position: relative;
+    background: var(--surface-canvas);
+    min-height: 100vh; isolation: isolate;
+    display: flex; flex-direction: column;
+  }
+  .frame::before {
+    content: ""; position: absolute; z-index: -1; top: 0; bottom: 0; right: 0;
+    left: calc(50% - 96px); background: var(--accent-tint);
+  }
+  .wrap { width: 100%; max-width: var(--content-max); margin: 0 auto; padding: 0 var(--space-32); }
+
+  /* ---------- nav: wordmark + menu ---------- */
+  header .wrap {
+    display: grid; grid-template-columns: 1fr auto; align-items: center;
+    height: var(--space-80);
+  }
+  .wordmark {
+    display: inline-flex; align-items: center; gap: var(--space-8);
+    text-decoration: none; color: var(--text-strong);
+    font-family: var(--font-display); font-weight: 600;
+    font-size: var(--text-heading-md); letter-spacing: var(--text-heading-md--letter-spacing);
+    min-height: var(--control-lg);
+  }
+  .glyph { width: 20px; height: 20px; flex: none; }
+  .navtools { display: flex; align-items: center; gap: var(--space-8); }
+  .navlink, .menu > summary {
+    display: inline-flex; align-items: center; gap: var(--space-8);
+    height: var(--control-md); padding: 0 var(--space-12);
+    border-radius: var(--radius-md);
+    font-size: var(--text-label-md); font-weight: 500; line-height: var(--text-label-md--line-height);
+    color: var(--text-strong); text-decoration: none; cursor: pointer;
+    transition: background-color var(--dur-fast) var(--ease-standard);
+  }
+  .navlink:hover, .menu > summary:hover { background: var(--surface-hover); }
+  .menu { position: relative; }
+  .menu > summary { list-style: none; border: 1px solid var(--border-control); background: var(--surface-raised); }
+  .menu > summary::-webkit-details-marker { display: none; }
+  .menu ul {
+    position: absolute; right: 0; top: calc(100% + var(--space-8)); z-index: 5;
+    margin: 0; padding: var(--space-4); list-style: none; min-width: 200px;
+    background: var(--surface-raised); border: 1px solid var(--border-hairline);
+    border-radius: var(--radius-lg); box-shadow: var(--shadow-float);
+  }
+  .menu li a {
+    display: flex; align-items: center; height: var(--control-md); padding: 0 var(--space-12);
+    border-radius: var(--radius-md); text-decoration: none; font-size: var(--text-label-md); font-weight: 500;
+  }
+  .menu li a:hover { background: var(--surface-hover); }
+
+  /* ---------- hero grid ---------- */
+  main { flex: 1; display: flex; align-items: center; }
+  .hero {
+    display: grid; grid-template-columns: minmax(0, 440px) minmax(0, 1fr);
+    column-gap: var(--space-64); align-items: center;
+    padding-top: var(--space-32); padding-bottom: var(--space-80);
+  }
+  .copy { max-width: 440px; }
+  h1 {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: var(--text-display-xl);
+    line-height: var(--text-display-xl--line-height);
+    letter-spacing: var(--text-display-xl--letter-spacing);
+    font-weight: var(--text-display-xl--font-weight);
+    color: var(--text-strong);
+    text-wrap: balance;
+  }
+  .lede {
+    margin: var(--space-24) 0 0;
+    font-size: var(--text-body-lg); line-height: var(--text-body-lg--line-height);
+    color: var(--text-body);
+  }
+  .act { margin-top: var(--space-32); display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-12) var(--space-16); }
+
+  /* CTA: carries the same delta pin the product uses to mark an explained change */
+  .cta {
+    display: inline-flex; align-items: center; gap: var(--space-8);
+    height: var(--control-lg); padding: 0 var(--space-20) 0 var(--space-16);
+    border-radius: var(--radius-md);
+    background: var(--accent-solid); color: var(--text-on-accent);
+    font-family: var(--font-sans); font-size: var(--text-label-md); font-weight: 600;
+    text-decoration: none; box-shadow: var(--shadow-raised);
+    transition: background-color var(--dur-fast) var(--ease-standard), transform var(--dur-instant) var(--ease-standard);
+  }
+  .cta:hover { background: var(--accent-solid-hover); }
+  .cta:active { transform: translateY(1px); }
+  .cta .pin {
+    display: inline-grid; place-items: center; width: 16px; height: 16px;
+  }
+  .cta .pin svg { width: 16px; height: 16px; }
+  .act small { font-size: var(--text-body-sm); line-height: var(--text-body-sm--line-height); color: var(--text-muted); }
+
+  /* ---------- product panel ---------- */
+  .panel {
+    background: var(--surface-raised);
+    border: 1px solid var(--border-hairline);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-float);
+    padding: var(--space-20) var(--space-20) var(--space-16);
+  }
+  .p-head { display: flex; justify-content: space-between; align-items: flex-start; gap: var(--space-16); }
+  .p-title { display: flex; align-items: center; gap: var(--space-8); flex-wrap: wrap; }
+  .p-title h2 {
+    margin: 0; font-family: var(--font-sans); font-size: var(--text-heading-sm); font-weight: 600;
+    line-height: var(--text-label-md--line-height); color: var(--text-strong);
+  }
+  .tag {
+    display: inline-flex; align-items: center; height: 20px; padding: 0 var(--space-8);
+    border-radius: var(--radius-xs); background: var(--surface-sunken); color: var(--text-muted);
+    font-size: var(--text-label-sm); font-weight: 500; line-height: 1;
+  }
+  .p-meta { margin: var(--space-4) 0 0; font-size: var(--text-body-sm); color: var(--text-muted); }
+  .figure { display: flex; align-items: baseline; gap: var(--space-8); margin-top: var(--space-12); }
+  .num {
+    font-family: var(--font-mono); font-variant-numeric: tabular-nums;
+    font-size: var(--text-heading-lg); line-height: 1; font-weight: 500; color: var(--text-strong);
+    letter-spacing: -0.02em;
+  }
+  .delta {
+    font-family: var(--font-mono); font-variant-numeric: tabular-nums;
+    font-size: var(--text-mono-sm); color: var(--danger-text); font-weight: 500;
+  }
+  .vs { font-size: var(--text-body-sm); color: var(--text-muted); }
+  .legend { display: flex; flex-direction: column; gap: var(--space-4); margin: 0; padding: 0; list-style: none; font-size: var(--text-label-sm); line-height: var(--text-label-sm--line-height); color: var(--text-muted); white-space: nowrap; }
+  .legend li { display: flex; align-items: center; gap: var(--space-8); }
+  .sw { width: 16px; height: 8px; border-radius: 2px; flex: none; }
+  .sw.line { height: 2px; background: var(--accent-solid); }
+  .sw.band { background: var(--accent-tint-hover); }
+  .sw.after { background: var(--surface-sunken); border: 1px solid var(--border-hairline); }
+
+  .chart { position: relative; margin-top: var(--space-16); }
+  .chart svg { display: block; width: 100%; height: auto; overflow: visible; }
+  .chart .grid { stroke: var(--border-hairline); stroke-width: 1; }
+  .chart .ax { font-family: var(--font-mono); font-size: 12px; fill: var(--text-muted); font-variant-numeric: tabular-nums; }
+  .chart .ax-strong { font-family: var(--font-sans); font-size: 12px; font-weight: 600; fill: var(--text-muted); }
+  .chart .after { fill: var(--surface-sunken); }
+  .chart .band { fill: var(--accent-tint-hover); opacity: 0.7; }
+  .chart .boundary { stroke: var(--border-strong); stroke-width: 1; stroke-dasharray: 3 3; }
+  .chart .actual { fill: none; stroke: var(--accent-solid); stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
+  .chart .pt { fill: var(--danger-solid); stroke: var(--surface-raised); stroke-width: 2; }
+  .chart .leader { stroke: var(--text-strong); stroke-width: 1; }
+  .chart .m-chart { display: none; }
+
+  /* explanation: layered over the empty space under the line, tied to the point */
+  .explain {
+    position: absolute; left: 8%; top: 19.5%; width: 56%;
+    background: var(--surface-raised);
+    border: 1px solid var(--border-hairline);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-float);
+    padding: var(--space-16);
+  }
+  .x-head { display: flex; align-items: center; justify-content: space-between; gap: var(--space-8); }
+  .x-who { display: inline-flex; align-items: center; gap: var(--space-8); font-size: var(--text-label-sm); font-weight: 600; line-height: var(--text-label-sm--line-height); color: var(--text-strong); }
+  .x-who .pin { display: inline-grid; place-items: center; width: 20px; height: 20px; border-radius: var(--radius-xs); background: var(--accent-tint); color: var(--accent-text); }
+  .x-who .pin svg { width: 12px; height: 12px; }
+  .x-when { font-family: var(--font-mono); font-size: var(--text-mono-sm); color: var(--text-muted); }
+  .explain p { margin: var(--space-8) 0 0; font-size: var(--text-body-sm); line-height: var(--text-body-sm--line-height); color: var(--text-body); }
+  .explain p strong { font-weight: 600; color: var(--text-strong); }
+  .contrib { margin: var(--space-12) 0 0; padding: var(--space-12) 0 0; border-top: 1px solid var(--border-hairline); }
+  .contrib h3 { margin: 0 0 var(--space-8); font-size: var(--text-label-sm); font-weight: 500; line-height: var(--text-label-sm--line-height); color: var(--text-muted); }
+  .bars { margin: 0; padding: 0; list-style: none; display: grid; gap: var(--space-4); }
+  .bars li { display: grid; grid-template-columns: 112px 1fr 64px; align-items: center; gap: var(--space-8); font-size: var(--text-label-sm); line-height: 20px; }
+  .bars .seg { color: var(--text-body); white-space: nowrap; }
+  .bars .track { height: 8px; background: var(--surface-sunken); border-radius: 2px; overflow: hidden; }
+  .bars .fill { display: block; height: 100%; background: var(--border-strong); border-radius: 2px; }
+  .bars li.cause .fill { background: var(--danger-solid); }
+  .bars li.cause .seg { font-weight: 600; color: var(--text-strong); }
+  .bars .val { font-family: var(--font-mono); font-variant-numeric: tabular-nums; text-align: right; color: var(--text-muted); }
+  .bars li.cause .val { color: var(--danger-text); }
+
+  .p-foot { display: flex; justify-content: space-between; align-items: center; gap: var(--space-12); margin-top: var(--space-12); padding-top: var(--space-12); border-top: 1px solid var(--border-hairline); font-size: var(--text-body-sm); color: var(--text-muted); }
+  .p-foot .btns { display: flex; gap: var(--space-8); }
+  .btn {
+    display: inline-flex; align-items: center; height: var(--control-sm); padding: 0 var(--space-12);
+    border-radius: var(--radius-md); border: 1px solid var(--border-control); background: var(--surface-raised);
+    color: var(--text-strong); font: inherit; font-size: var(--text-label-sm); font-weight: 500; cursor: pointer;
+    transition: background-color var(--dur-fast) var(--ease-standard);
+  }
+  .btn:hover { background: var(--surface-hover); }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .explain { animation: rise var(--dur-slow) var(--ease-enter) both; animation-delay: var(--dur-base); }
+    @keyframes rise { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+  }
+
+  /* ---------- tablet ---------- */
+  @media (max-width: 1100px) {
+    .frame::before { display: none; }
+    .hero { grid-template-columns: 1fr; row-gap: var(--space-48); }
+    .copy { max-width: 560px; }
+    .stage { background: var(--accent-tint); margin: 0 calc(var(--space-32) * -1); padding: var(--space-32); }
+  }
+
+  /* ---------- mobile composition ---------- */
+  @media (max-width: 640px) {
+    .wrap { padding: 0 var(--space-16); }
+    header .wrap { height: var(--space-64); }
+    .signin { display: none; }
+    .navlink, .menu > summary { height: 44px; }
+    main { display: block; }
+    .hero { padding-top: var(--space-16); padding-bottom: 0; row-gap: var(--space-32); }
+    .lede { margin-top: var(--space-16); }
+    .act { margin-top: var(--space-24); flex-direction: column; align-items: stretch; }
+    .cta { height: 48px; justify-content: center; }
+    .act small { text-align: center; }
+    .stage { margin: 0 calc(var(--space-16) * -1); padding: var(--space-24) var(--space-16) var(--space-32); }
+    .panel { padding: var(--space-16) var(--space-12) var(--space-12); }
+    .p-head { flex-direction: column; gap: var(--space-8); }
+    .legend { flex-direction: row; flex-wrap: wrap; gap: var(--space-4) var(--space-16); }
+    .chart .d-chart { display: none; }
+    .chart .m-chart { display: block; }
+    .chart { margin-top: var(--space-12); }
+    .explain { position: static; width: auto; margin-top: var(--space-12); box-shadow: var(--shadow-raised); padding: var(--space-12); }
+    .bars li { grid-template-columns: 104px 1fr 56px; }
+    .p-foot { flex-direction: column; align-items: stretch; }
+    .p-foot .btns > * { flex: 1; justify-content: center; height: 44px; }
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+<div class="frame">
+  <header>
+    <div class="wrap">
+      <a class="wordmark" href="#" aria-label="Delta home">
+        <svg class="glyph" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2.5 18 17.5H2Z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/></svg>
+        Delta
+      </a>
+      <nav class="navtools" aria-label="Primary">
+        <a class="navlink signin" href="#">Sign in</a>
+        <details class="menu">
+          <summary>Menu
+            <svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4.5 6 8.5l4-4" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+          </summary>
+          <ul>
+            <li><a href="#">How explanations work</a></li>
+            <li><a href="#">Connecting events</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Docs</a></li>
+            <li><a href="#">Sign in</a></li>
+          </ul>
+        </details>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="wrap hero">
+      <div class="copy">
+        <h1>Know why the number moved.</h1>
+        <p class="lede">Delta watches your product events. When a metric drops or spikes outside its expected range, it explains the change in plain language and names the segment behind it: the platform, plan, release or funnel step.</p>
+        <div class="act">
+          <a class="cta" href="#start">
+            <span class="pin" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M6 1.6 10.8 10.4H1.2Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></span>
+            Start free
+          </a>
+          <small>Free to start. Reads the events you already track.</small>
+        </div>
+      </div>
+
+      <div class="stage">
+        <section class="panel" aria-labelledby="metric-title">
+          <div class="p-head">
+            <div>
+              <div class="p-title">
+                <h2 id="metric-title">Trial → paid conversion</h2>
+                <span class="tag">Sample data</span>
+              </div>
+              <p class="p-meta">Daily, Aug 27 – Oct 7</p>
+              <div class="figure">
+                <span class="num">13.1%</span>
+                <span class="delta">−5.3 pts</span>
+                <span class="vs">vs. 18.4% before Sep 24</span>
+              </div>
+            </div>
+            <ul class="legend" aria-label="Chart legend">
+              <li><span class="sw line"></span>Conversion, daily</li>
+              <li><span class="sw band"></span>Expected range</li>
+              <li><span class="sw after"></span>Since the change</li>
+            </ul>
+          </div>
+
+          <div class="chart">
+            <svg class="d-chart" viewBox="0 0 590 360" role="img" aria-labelledby="dc-t">
+              <title id="dc-t">Sample data: daily trial-to-paid conversion held near 18.4% from Aug 27 to Sep 23, then fell to about 13.1% on Sep 24 and stayed there through Oct 7, below the expected range of 17.6% to 19.2%.</title>
+              <rect class="after" x="400.9" y="16" width="177.1" height="314"/>
+<line class="grid" x1="40" x2="578" y1="330.0" y2="330.0"/>
+<text class="ax" x="32" y="334.0" text-anchor="end">0%</text>
+<line class="grid" x1="40" x2="578" y1="251.5" y2="251.5"/>
+<text class="ax" x="32" y="255.5" text-anchor="end">5%</text>
+<line class="grid" x1="40" x2="578" y1="173.0" y2="173.0"/>
+<text class="ax" x="32" y="177.0" text-anchor="end">10%</text>
+<line class="grid" x1="40" x2="578" y1="94.5" y2="94.5"/>
+<text class="ax" x="32" y="98.5" text-anchor="end">15%</text>
+<line class="grid" x1="40" x2="578" y1="16.0" y2="16.0"/>
+<text class="ax" x="32" y="20.0" text-anchor="end">20%</text>
+<rect class="band" x="40" y="28.6" width="538" height="25.1"/>
+<line class="boundary" x1="400.9" x2="400.9" y1="16" y2="330"/>
+<polyline class="actual" points="40.0,39.6 53.1,41.1 66.2,36.4 79.4,49.0 92.5,44.3 105.6,39.6 118.7,42.7 131.9,38.0 145.0,42.7 158.1,38.0 171.2,49.0 184.3,49.0 197.5,38.0 210.6,34.8 223.7,41.1 236.8,41.1 250.0,36.4 263.1,41.1 276.2,44.3 289.3,39.6 302.4,33.3 315.6,42.7 328.7,34.8 341.8,39.6 354.9,49.0 368.0,49.0 381.2,39.6 394.3,34.8 407.4,124.3 420.5,121.2 433.7,119.6 446.8,129.0 459.9,127.5 473.0,125.9 486.1,125.9 499.3,124.3 512.4,119.6 525.5,121.2 538.6,130.6 551.8,127.5 564.9,121.2 578.0,122.8"/>
+<text class="ax" x="40.0" y="350" text-anchor="start">Aug 27</text>
+<text class="ax" x="131.9" y="350" text-anchor="middle">Sep 3</text>
+<text class="ax" x="223.7" y="350" text-anchor="middle">Sep 10</text>
+<text class="ax" x="315.6" y="350" text-anchor="middle">Sep 17</text>
+<text class="ax" x="407.4" y="350" text-anchor="middle">Sep 24</text>
+<text class="ax" x="499.3" y="350" text-anchor="middle">Oct 1</text>
+<text class="ax" x="578.0" y="350" text-anchor="end">Oct 7</text>
+<circle class="pt" cx="407.4" cy="124.3" r="5"/>
+              <text class="ax-strong" x="408.9" y="318">Since Sep 24</text>
+              <line class="leader" x1="377.6" y1="124.3" x2="401.4" y2="124.3"/>
+            </svg>
+            <svg class="m-chart" viewBox="0 0 332 236" role="img" aria-labelledby="mc-t">
+              <title id="mc-t">Sample data: daily trial-to-paid conversion near 18.4% until Sep 23, then about 13.1% from Sep 24 to Oct 7.</title>
+              <rect class="after" x="227.9" y="12" width="96.1" height="192"/>
+<line class="grid" x1="32" x2="324" y1="204.0" y2="204.0"/>
+<text class="ax" x="24" y="208.0" text-anchor="end">0%</text>
+<line class="grid" x1="32" x2="324" y1="156.0" y2="156.0"/>
+<text class="ax" x="24" y="160.0" text-anchor="end">5%</text>
+<line class="grid" x1="32" x2="324" y1="108.0" y2="108.0"/>
+<text class="ax" x="24" y="112.0" text-anchor="end">10%</text>
+<line class="grid" x1="32" x2="324" y1="60.0" y2="60.0"/>
+<text class="ax" x="24" y="64.0" text-anchor="end">15%</text>
+<line class="grid" x1="32" x2="324" y1="12.0" y2="12.0"/>
+<text class="ax" x="24" y="16.0" text-anchor="end">20%</text>
+<rect class="band" x="32" y="19.7" width="292" height="15.4"/>
+<line class="boundary" x1="227.9" x2="227.9" y1="12" y2="204"/>
+<polyline class="actual" points="32.0,26.4 39.1,27.4 46.2,24.5 53.4,32.2 60.5,29.3 67.6,26.4 74.7,28.3 81.9,25.4 89.0,28.3 96.1,25.4 103.2,32.2 110.3,32.2 117.5,25.4 124.6,23.5 131.7,27.4 138.8,27.4 146.0,24.5 153.1,27.4 160.2,29.3 167.3,26.4 174.4,22.6 181.6,28.3 188.7,23.5 195.8,26.4 202.9,32.2 210.0,32.2 217.2,26.4 224.3,23.5 231.4,78.2 238.5,76.3 245.7,75.4 252.8,81.1 259.9,80.2 267.0,79.2 274.1,79.2 281.3,78.2 288.4,75.4 295.5,76.3 302.6,82.1 309.8,80.2 316.9,76.3 324.0,77.3"/>
+<text class="ax" x="32.0" y="224" text-anchor="start">Aug 27</text>
+<text class="ax" x="231.4" y="224" text-anchor="middle">Sep 24</text>
+<text class="ax" x="324.0" y="224" text-anchor="end">Oct 7</text>
+<circle class="pt" cx="231.4" cy="78.2" r="5"/>
+              <text class="ax-strong" x="233.9" y="196">Since Sep 24</text>
+            </svg>
+
+            <article class="explain" aria-labelledby="x-title">
+              <div class="x-head">
+                <span class="x-who" id="x-title">
+                  <span class="pin" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M6 1.6 10.8 10.4H1.2Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></span>
+                  Why it dropped
+                </span>
+                <span class="x-when">Sep 24</span>
+              </div>
+              <p>Conversion fell from 18.4% to 13.1%. <strong>Android trials on app 4.2</strong> account for 4.3 of the 5.3 points lost: their Add payment step started failing the day 4.2 shipped.</p>
+              <div class="contrib">
+                <h3>Points lost, by segment</h3>
+                <ul class="bars">
+                  <li class="cause"><span class="seg">Android · app 4.2</span><span class="track"><span class="fill" style="width:100%"></span></span><span class="val">−4.3</span></li>
+                  <li><span class="seg">iOS</span><span class="track"><span class="fill" style="width:14%"></span></span><span class="val">−0.6</span></li>
+                  <li><span class="seg">Web</span><span class="track"><span class="fill" style="width:9.3%"></span></span><span class="val">−0.4</span></li>
+                </ul>
+              </div>
+            </article>
+          </div>
+
+          <div class="p-foot">
+            <span>Explained from 42 days of sample events</span>
+            <div class="btns">
+              <button class="btn" type="button">Show events</button>
+              <button class="btn" type="button">Open segment</button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+</div>
+</body>
+</html>

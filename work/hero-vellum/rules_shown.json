@@ -1,0 +1,368 @@
+{
+ "name": "hero-vellum",
+ "brief": "Marlowe: AI research analyst that writes a sourced client-meeting brief for independent wealth advisors; one action: request access; proof: sourced brief UI",
+ "type": "hero",
+ "generated": "2026-10-08T18:50:24",
+ "rules": [
+  {
+   "id": "systems-research.magic-ui#4",
+   "slot": "core",
+   "score": 44.06,
+   "tier": "T1"
+  },
+  {
+   "id": "LDP-16",
+   "slot": "core",
+   "score": 41.01,
+   "tier": "T2"
+  },
+  {
+   "id": "WCSS-39",
+   "slot": "core",
+   "score": 35.55,
+   "tier": "T1"
+  },
+  {
+   "id": "systems-research.magic-ui#5",
+   "slot": "core",
+   "score": 35.07,
+   "tier": "T1"
+  },
+  {
+   "id": "VWI-04",
+   "slot": "core",
+   "score": 32.97,
+   "tier": "T2"
+  },
+  {
+   "id": "web.courses-and-curricula#62",
+   "slot": "core",
+   "score": 26.37,
+   "tier": "T2"
+  },
+  {
+   "id": "LBC-23",
+   "slot": "core",
+   "score": 24.69,
+   "tier": "T2"
+  },
+  {
+   "id": "web-sources.a11y-project-checklist#54",
+   "slot": "core",
+   "score": 24.47,
+   "tier": "T1"
+  },
+  {
+   "id": "web.color-and-surfaces#53",
+   "slot": "core",
+   "score": 23.81,
+   "tier": "T2"
+  },
+  {
+   "id": "ui-pedia.02-color#10",
+   "slot": "core",
+   "score": 23.23,
+   "tier": "T2"
+  },
+  {
+   "id": "LBC-42",
+   "slot": "core",
+   "score": 20.35,
+   "tier": "L"
+  },
+  {
+   "id": "PT-SZ-11",
+   "slot": "core",
+   "score": 18.31,
+   "tier": "T2"
+  },
+  {
+   "id": "AH-TY-01",
+   "slot": "core",
+   "score": 17.97,
+   "tier": "T1"
+  },
+  {
+   "id": "ui-pedia.12-typography#18",
+   "slot": "core",
+   "score": 17.67,
+   "tier": "T2"
+  },
+  {
+   "id": "PT-SZ-08",
+   "slot": "core",
+   "score": 17.18,
+   "tier": "T2"
+  },
+  {
+   "id": "what-to-do-next.brief-scope-and-delivery-process#17",
+   "slot": "core",
+   "score": 16.32,
+   "tier": "T2"
+  },
+  {
+   "id": "LHS-13",
+   "slot": "founder",
+   "score": 40.69,
+   "tier": "L"
+  },
+  {
+   "id": "LHS-20",
+   "slot": "founder",
+   "score": 35.03,
+   "tier": "L"
+  },
+  {
+   "id": "LHS-19",
+   "slot": "founder",
+   "score": 29.83,
+   "tier": "L"
+  },
+  {
+   "id": "LHS-02",
+   "slot": "founder",
+   "score": 27.16,
+   "tier": "L"
+  },
+  {
+   "id": "LHS-12",
+   "slot": "founder",
+   "score": 26.95,
+   "tier": "L"
+  },
+  {
+   "id": "LHS-18",
+   "slot": "founder",
+   "score": 26.93,
+   "tier": "L"
+  },
+  {
+   "id": "LHS-06",
+   "slot": "founder",
+   "score": 26.9,
+   "tier": "L"
+  },
+  {
+   "id": "LHS-16",
+   "slot": "founder",
+   "score": 26.46,
+   "tier": "L"
+  },
+  {
+   "id": "LHS-10",
+   "slot": "founder",
+   "score": 26.35,
+   "tier": "L"
+  },
+  {
+   "id": "LHS-08",
+   "slot": "founder",
+   "score": 26.3,
+   "tier": "L"
+  },
+  {
+   "id": "LAI-65",
+   "slot": "color",
+   "score": 39.71,
+   "tier": "T2"
+  },
+  {
+   "id": "web.anti-ai-slop#3",
+   "slot": "color",
+   "score": 33.95,
+   "tier": "T2"
+  },
+  {
+   "id": "systems-research.blueprint#7",
+   "slot": "color",
+   "score": 31.89,
+   "tier": "T1"
+  },
+  {
+   "id": "web.color-and-surfaces#24",
+   "slot": "color",
+   "score": 31.71,
+   "tier": "T2"
+  },
+  {
+   "id": "web.color-and-surfaces#10",
+   "slot": "color",
+   "score": 30.78,
+   "tier": "T2"
+  },
+  {
+   "id": "AH-WR-17",
+   "slot": "copy",
+   "score": 27.33,
+   "tier": "T1"
+  },
+  {
+   "id": "web.anti-ai-slop#9",
+   "slot": "copy",
+   "score": 26.67,
+   "tier": "T2"
+  },
+  {
+   "id": "LAI-73",
+   "slot": "cta",
+   "score": 40.54,
+   "tier": "T2"
+  },
+  {
+   "id": "LAI-39",
+   "slot": "cta",
+   "score": 33.92,
+   "tier": "T2"
+  },
+  {
+   "id": "LAI-66",
+   "slot": "cta",
+   "score": 33.44,
+   "tier": "T2"
+  },
+  {
+   "id": "LAI-36",
+   "slot": "cta",
+   "score": 31.05,
+   "tier": "T2"
+  },
+  {
+   "id": "LAI-62",
+   "slot": "cta",
+   "score": 29.96,
+   "tier": "T2"
+  },
+  {
+   "id": "LW-13",
+   "slot": "hero",
+   "score": 34.03,
+   "tier": "T2"
+  },
+  {
+   "id": "LHS-11",
+   "slot": "hero",
+   "score": 33.34,
+   "tier": "L"
+  },
+  {
+   "id": "LHS-01",
+   "slot": "hero",
+   "score": 30.99,
+   "tier": "L"
+  },
+  {
+   "id": "LHS-52",
+   "slot": "hero",
+   "score": 28.73,
+   "tier": "T2"
+  },
+  {
+   "id": "LHS-07",
+   "slot": "hero",
+   "score": 27.77,
+   "tier": "L"
+  },
+  {
+   "id": "SYS-CARBON-15",
+   "slot": "motion",
+   "score": 33.66,
+   "tier": "T1"
+  },
+  {
+   "id": "LBC-15",
+   "slot": "motion",
+   "score": 29.68,
+   "tier": "T2"
+  },
+  {
+   "id": "AH-MO-03",
+   "slot": "motion",
+   "score": 29.12,
+   "tier": "T1"
+  },
+  {
+   "id": "web-sources.craft-emil-kowalski#17",
+   "slot": "motion",
+   "score": 25.89,
+   "tier": "T2"
+  },
+  {
+   "id": "LDP-13",
+   "slot": "motion",
+   "score": 25.83,
+   "tier": "T2"
+  },
+  {
+   "id": "GOV-26",
+   "slot": "navigation",
+   "score": 26.65,
+   "tier": "T1"
+  },
+  {
+   "id": "LDP-02",
+   "slot": "product",
+   "score": 39.23,
+   "tier": "T2"
+  },
+  {
+   "id": "LDP-14",
+   "slot": "product",
+   "score": 26.67,
+   "tier": "T2"
+  },
+  {
+   "id": "LDP-01",
+   "slot": "product",
+   "score": 26.47,
+   "tier": "T2"
+  },
+  {
+   "id": "ui-pedia.07-proximity#8",
+   "slot": "spacing",
+   "score": 29.16,
+   "tier": "T2"
+  },
+  {
+   "id": "ui-pedia.07-proximity#10",
+   "slot": "spacing",
+   "score": 28.75,
+   "tier": "T2"
+  },
+  {
+   "id": "ui-pedia.07-proximity#2",
+   "slot": "spacing",
+   "score": 26.84,
+   "tier": "T2"
+  },
+  {
+   "id": "AH-TY-05",
+   "slot": "typography",
+   "score": 48.98,
+   "tier": "T1"
+  },
+  {
+   "id": "ui-pedia.12-typography#13",
+   "slot": "typography",
+   "score": 47.26,
+   "tier": "T2"
+  },
+  {
+   "id": "ui-pedia.12-typography#17",
+   "slot": "typography",
+   "score": 47.06,
+   "tier": "T2"
+  },
+  {
+   "id": "AH-TY-10",
+   "slot": "typography",
+   "score": 46.68,
+   "tier": "T1"
+  },
+  {
+   "id": "ui-pedia.12-typography#34",
+   "slot": "typography",
+   "score": 45.0,
+   "tier": "T2"
+  }
+ ]
+}

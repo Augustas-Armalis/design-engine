@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Marlowe: a sourced brief before every client meeting</title>
+<meta name="description" content="Marlowe reads filings, earnings calls and your client's portfolio, then writes a sourced brief before every meeting. For independent advisors and RIAs.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Manrope:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="../../system/systems/vellum/theme.css">
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--surface-sunken);
+    color: var(--text-body);
+    font-family: var(--font-sans);
+    font-size: var(--text-body-md);
+    line-height: var(--text-body-md--line-height);
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: inherit; }
+  .vh { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+  :focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
+  .wrap { max-width: calc(var(--content-max) + var(--space-160)); margin: 0 auto; padding: 0 var(--space-40); }
+
+  /* ---------- nav: numbered index ---------- */
+  .site-head { border-bottom: 1px solid var(--border-hairline); }
+  .site-head .wrap { display: flex; align-items: center; justify-content: space-between; min-height: var(--space-80); }
+  .wordmark {
+    display: inline-flex; align-items: center; gap: var(--space-12);
+    font-size: var(--text-heading-sm); font-weight: 600; letter-spacing: var(--text-heading-sm--letter-spacing);
+    color: var(--text-strong); text-decoration: none; min-height: var(--control-md);
+  }
+  .wordmark-mark {
+    display: inline-grid; place-items: center; width: var(--space-32); height: var(--space-32);
+    background: var(--surface-inverse); color: var(--text-inverse); border-radius: var(--radius-xs);
+    font-family: var(--font-mono); font-size: var(--text-label-sm); font-weight: 500;
+  }
+  .index { display: flex; align-items: center; gap: var(--space-40); margin: 0; padding: 0; list-style: none; }
+  .index a {
+    display: inline-flex; align-items: baseline; gap: var(--space-8); min-height: var(--control-md); align-items: center;
+    font-size: var(--text-label-md); font-weight: 500; color: var(--text-body); text-decoration: none;
+    transition: color var(--dur-fast) var(--ease-standard);
+  }
+  .index a:hover { color: var(--accent-text); }
+  .index .num { font-family: var(--font-mono); font-size: var(--text-label-sm); color: var(--text-muted); }
+  .index .signin { padding-left: var(--space-40); border-left: 1px solid var(--border-hairline); }
+
+  /* ---------- hero: cover note | brief | sources margin ---------- */
+  .hero { padding: var(--space-48) 0 var(--space-128); }
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 4.2fr 5.6fr 2.5fr;
+    column-gap: var(--space-48);
+    align-items: start;
+  }
+
+  .cover { padding-top: var(--space-16); }
+  .cover-context { margin: 0 0 var(--space-24); font-size: var(--text-label-md); font-weight: 500; color: var(--text-muted); }
+  h1 {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: var(--text-display-lg);
+    line-height: var(--text-display-lg--line-height);
+    letter-spacing: var(--text-display-lg--letter-spacing);
+    font-weight: var(--text-display-lg--font-weight);
+    color: var(--text-strong);
+    text-wrap: pretty;
+  }
+  .cover-support {
+    margin: var(--space-24) 0 var(--space-32);
+    font-size: var(--text-body-lg); line-height: var(--text-body-lg--line-height); color: var(--text-body);
+  }
+  .cta {
+    display: inline-flex; align-items: center; justify-content: center; gap: var(--space-12);
+    height: var(--control-lg); padding: 0 var(--space-32);
+    background: var(--accent-solid); color: var(--text-on-accent);
+    border-radius: var(--radius-md); text-decoration: none;
+    font-size: var(--text-label-md); font-weight: 600;
+    transition: background-color var(--dur-fast) var(--ease-standard);
+  }
+  .cta:hover { background: var(--accent-solid-hover); }
+  .cta:active { background: var(--accent-solid-hover); }
+  .cta-arrow { font-family: var(--font-mono); font-weight: 400; }
+  .cta-note { margin: var(--space-16) 0 0; font-size: var(--text-body-sm); color: var(--text-muted); }
+
+  /* the brief (product proof) */
+  .brief {
+    background: var(--surface-raised);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-raised);
+    overflow: hidden;
+  }
+  .brief-band {
+    display: flex; align-items: center; justify-content: space-between; gap: var(--space-16);
+    padding: var(--space-12) var(--space-32);
+    background: var(--surface-inverse); color: var(--text-inverse);
+    font-size: var(--text-label-sm); font-weight: 500;
+  }
+  .brief-band .mono { font-family: var(--font-mono); }
+  .brief-body { padding: var(--space-32) var(--space-32) var(--space-24); }
+  .sample-tag {
+    display: inline-block; margin: 0 0 var(--space-16);
+    padding: var(--space-2) var(--space-8);
+    border: 1px solid var(--border-control); border-radius: var(--radius-xs);
+    font-size: var(--text-label-sm); font-weight: 500; color: var(--text-muted);
+  }
+  .brief h2 {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: var(--text-heading-lg); line-height: var(--text-heading-lg--line-height);
+    letter-spacing: var(--text-heading-lg--letter-spacing); font-weight: 500; color: var(--text-strong);
+  }
+  .brief-meta {
+    margin: var(--space-8) 0 0; padding-bottom: var(--space-24);
+    border-bottom: 1px solid var(--border-hairline);
+    font-size: var(--text-body-sm); color: var(--text-muted);
+  }
+  .brief h3 {
+    margin: var(--space-24) 0 var(--space-12);
+    font-size: var(--text-label-md); line-height: var(--text-label-md--line-height); font-weight: 600; color: var(--text-strong);
+  }
+  .brief h3 .mono { font-family: var(--font-mono); font-size: var(--text-label-sm); font-weight: 400; color: var(--text-muted); margin-left: var(--space-8); }
+  .claims { margin: 0; padding: 0; list-style: none; display: grid; gap: var(--space-8); }
+  .claims li {
+    position: relative; padding-left: var(--space-20);
+    font-size: var(--text-body-md); line-height: var(--text-body-md--line-height); color: var(--text-body);
+  }
+  .claims li::before {
+    content: ""; position: absolute; left: 0; top: 0.72em;
+    width: var(--space-8); height: 1px; background: var(--border-control);
+  }
+  .flag {
+    display: inline-block; margin-right: var(--space-4);
+    padding: 0 var(--space-8);
+    background: var(--warning-tint); color: var(--warning-text);
+    border: 1px solid var(--warning-border); border-radius: var(--radius-xs);
+    font-size: var(--text-label-sm); line-height: 1.5; font-weight: 600;
+  }
+  .cite {
+    display: inline; margin-left: var(--space-2);
+    padding: 0 var(--space-4);
+    font-family: var(--font-mono); font-size: var(--text-label-sm); font-weight: 500; line-height: 1;
+    color: var(--text-strong); text-decoration: none;
+    border: 1px solid var(--border-control); border-radius: var(--radius-xs);
+    background: var(--surface-raised);
+    transition: background-color var(--dur-fast) var(--ease-standard);
+    vertical-align: 0.08em;
+  }
+  .cite:hover { background: var(--surface-active); }
+  .brief-foot {
+    display: flex; justify-content: space-between; gap: var(--space-16);
+    margin-top: var(--space-24); padding-top: var(--space-16);
+    border-top: 1px solid var(--border-hairline);
+    font-size: var(--text-label-sm); color: var(--text-muted);
+  }
+
+  /* sources margin */
+  .sources { padding-top: calc(var(--space-160) + var(--space-96)); }
+  .sources h2 {
+    margin: 0 0 var(--space-20);
+    font-size: var(--text-label-md); line-height: var(--text-label-md--line-height); font-weight: 600; color: var(--text-strong);
+  }
+  .sources ol { margin: 0; padding: 0; list-style: none; display: grid; gap: var(--space-20); }
+  .src { display: grid; grid-template-columns: var(--space-24) 1fr; column-gap: var(--space-12); scroll-margin-top: var(--space-32); }
+  .src-n {
+    display: inline-grid; place-items: center; height: var(--space-24);
+    font-family: var(--font-mono); font-size: var(--text-label-sm); font-weight: 500; color: var(--text-strong);
+    border: 1px solid var(--border-control); border-radius: var(--radius-xs); background: var(--surface-raised);
+  }
+  .src-title { display: block; font-size: var(--text-label-sm); line-height: var(--text-label-sm--line-height); font-weight: 600; color: var(--text-strong); }
+  .src-loc { display: block; margin-top: var(--space-4); font-family: var(--font-mono); font-size: var(--text-label-sm); line-height: var(--text-label-sm--line-height); color: var(--text-muted); }
+  .src-quote {
+    display: block; margin-top: var(--space-8); padding-left: var(--space-12);
+    border-left: 1px solid var(--border-control);
+    font-size: var(--text-label-sm); line-height: 1.5; color: var(--text-body); font-style: italic;
+  }
+  .src:target .src-n { background: var(--surface-active); }
+
+  /* ---------- motion: claims settle in reading order ---------- */
+  @keyframes settle { from { opacity: 0; transform: translateY(var(--space-8)); } to { opacity: 1; transform: none; } }
+  @keyframes fade { from { opacity: 0; } to { opacity: 1; } }
+  .reveal { animation: settle var(--dur-slow) var(--ease-enter) both; }
+  .reveal-fade { animation: fade var(--dur-slow) var(--ease-enter) both; }
+  .d1 { animation-delay: 180ms; } .d2 { animation-delay: 280ms; } .d3 { animation-delay: 380ms; }
+  .d4 { animation-delay: 480ms; } .d5 { animation-delay: 580ms; } .d6 { animation-delay: 680ms; }
+  @media (prefers-reduced-motion: reduce) {
+    .reveal { animation-name: fade; animation-duration: 180ms; }
+  }
+
+  /* ---------- tablet ---------- */
+  @media (max-width: 1100px) {
+    .hero-grid { grid-template-columns: 1fr 1.3fr; row-gap: var(--space-48); }
+    .sources { grid-column: 2; padding-top: 0; }
+    .index { gap: var(--space-24); }
+  }
+
+  /* ---------- mobile: its own composition ---------- */
+  @media (max-width: 760px) {
+    .wrap { padding: 0 var(--space-16); }
+    .site-head .wrap { min-height: var(--space-64); }
+    .index li:not(:last-child) { display: none; }
+    .index .signin { padding-left: 0; border-left: 0; }
+    .index a { min-height: var(--control-md); padding: 0 var(--space-4); }
+    .hero { padding: var(--space-40) 0 var(--space-80); }
+    .hero-grid { display: block; }
+    .cover { position: static; padding-top: 0; }
+    .cover-context { margin-bottom: var(--space-16); font-size: var(--text-label-sm); }
+    h1 { font-size: var(--text-display-lg); }
+    .cover-support { margin: var(--space-20) 0 var(--space-32); font-size: var(--text-body-md); }
+    .cta { display: flex; width: 100%; }
+    .cta-note { margin-top: var(--space-12); }
+    .proof { margin-top: var(--space-48); }
+    .brief { border-radius: var(--radius-lg) var(--radius-lg) 0 0; }
+    .brief-band { padding: var(--space-12) var(--space-20); }
+    .brief-band .when { display: none; }
+    .brief-body { padding: var(--space-24) var(--space-20) var(--space-20); }
+    .brief h2 { font-size: var(--text-heading-lg); }
+    .brief-foot { flex-direction: column; gap: var(--space-4); }
+    .claims li { font-size: var(--text-body-md); }
+    /* sources become the brief's footnotes */
+    .sources {
+      padding: var(--space-24) var(--space-20) var(--space-32);
+      background: var(--surface-raised);
+      border-top: 1px dashed var(--border-control);
+      border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+      box-shadow: var(--shadow-raised);
+    }
+    .sources h2 { margin-bottom: var(--space-16); }
+    .sources ol { gap: var(--space-16); }
+  }
+</style>
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap">
+      <a class="wordmark" href="#top"><span class="wordmark-mark" aria-hidden="true">M</span>Marlowe</a>
+      <nav aria-label="Primary">
+        <ul class="index">
+          <li><a href="#method"><span class="num">01</span>Method</a></li>
+          <li><a href="#sources"><span class="num">02</span>Sources</a></li>
+          <li><a href="#practices"><span class="num">03</span>For practices</a></li>
+          <li><a class="signin" href="#signin">Sign in</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero-grid">
+
+        <div class="cover">
+          <p class="cover-context">A research analyst for independent advisors</p>
+          <h1 id="hero-title">Walk into every meeting already briefed.</h1>
+          <p class="cover-support">The night before you meet, Marlowe reads the filings, the earnings calls and your client's portfolio, then writes a one-page brief. Every claim names its source, so you can check it before you say it.</p>
+          <a class="cta" href="#request-access">Request access <span class="cta-arrow" aria-hidden="true">&rarr;</span></a>
+          <p class="cta-note">Opening to independent practices in small groups.</p>
+        </div>
+
+        <div class="proof">
+          <article class="brief" aria-labelledby="brief-title">
+            <div class="brief-band">
+              <span>Pre-meeting brief</span>
+              <span class="mono when">Prepared Wed 13 Nov, 06:40</span>
+            </div>
+            <div class="brief-body">
+              <p class="sample-tag">Sample brief: fictional client and issuer</p>
+              <h2 id="brief-title">Hallworth Family Trust</h2>
+              <p class="brief-meta">Annual review with David and Ruth Hallworth · Thu 14 Nov, 10:30</p>
+
+              <h3 class="reveal-fade d1">Since you last met <span class="mono">12 Aug</span></h3>
+              <ul class="claims">
+                <li class="reveal d1"><span class="flag">Outside policy</span> Equities are 68% of the trust against the 60% ceiling in its investment policy, after large-cap holdings rose through Q3. <a class="cite" href="#s1"><span class="vh">source </span>1</a><a class="cite" href="#s2"><span class="vh">source </span>2</a></li>
+                <li class="reveal d2">Corvane Health, the largest single position at 8.4%, lowered its full-year revenue guidance on the 6 Nov earnings call. <a class="cite" href="#s3"><span class="vh">source </span>3</a></li>
+                <li class="reveal d3">Ruth turns 73 in January. Her first required minimum distribution from the IRA is not yet scheduled. <a class="cite" href="#s4"><span class="vh">source </span>4</a></li>
+              </ul>
+
+              <h3 class="reveal-fade d4">Worth raising</h3>
+              <ul class="claims">
+                <li class="reveal d5">David asked in August whether to trim Corvane. Rebalancing to the policy ceiling would cover most of it before year-end. <a class="cite" href="#s5"><span class="vh">source </span>5</a><a class="cite" href="#s2"><span class="vh">source </span>2</a></li>
+                <li class="reveal d6">Set up the RMD schedule now so the January distribution is not a rush. <a class="cite" href="#s4"><span class="vh">source </span>4</a></li>
+              </ul>
+
+              <div class="brief-foot">
+                <span>Draft for your review. Not sent to the client.</span>
+                <span>5 sources, each tied to its line</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <aside class="sources" id="sources" aria-labelledby="sources-title">
+          <h2 id="sources-title">Sources</h2>
+          <ol>
+            <li class="src" id="s1"><span class="src-n" aria-hidden="true">1</span><span><span class="src-title">Custodian holdings export</span><span class="src-loc">13 Nov, 22:10</span></span></li>
+            <li class="src" id="s2"><span class="src-n" aria-hidden="true">2</span><span><span class="src-title">Investment policy statement</span><span class="src-loc">rev. 2023, §4.2</span></span></li>
+            <li class="src" id="s3"><span class="src-n" aria-hidden="true">3</span><span><span class="src-title">Corvane Health Q3 call transcript</span><span class="src-loc">6 Nov, 00:14:22</span><span class="src-quote">“…the lower half of our range.”</span></span></li>
+            <li class="src" id="s4"><span class="src-n" aria-hidden="true">4</span><span><span class="src-title">Client profile, CRM</span><span class="src-loc">DOB field, IRA account</span></span></li>
+            <li class="src" id="s5"><span class="src-n" aria-hidden="true">5</span><span><span class="src-title">Your meeting notes</span><span class="src-loc">12 Aug, 00:31:05</span></span></li>
+          </ol>
+        </aside>
+
+      </div>
+    </section>
+  </main>
+</body>
+</html>

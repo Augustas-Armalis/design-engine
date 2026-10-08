@@ -39,7 +39,12 @@ node tools/ledger.mjs similar reports/acme-hero           # too close to recent 
 node tools/ledger.mjs add reports/acme-hero --verdict reject --why "same nav as last one"
 node tools/ledger.mjs list
 .venv/bin/python tools/build_index.py query hero headline  # find rules by keyword
+.venv/bin/python tools/select_rules.py --name acme-hero --type hero --brief "..."   # 50-rule slate for this brief
+node tools/compile_system.mjs --all                         # seeds -> tokens.json, theme.css, GUIDE.md, showcase.html
 ```
+
+### House design systems
+`system/systems/<slug>/` holds 12 compiled house systems (Ledger, Signal, Halftone, Meridian, Paperclip, Monolith, Vellum, Press, Clinic, Kiln, Polar, Bloom). Each is a small `seed.json` (the owned decisions) compiled into a full token set that meets a light+dark contrast contract by construction. Open any `showcase.html` to see one. To add a system: copy a seed, change the owned decisions, compile, check the showcase (`check.mjs` must be 0 fail), and keep it pairwise distinct from the others. `system/systems-research/` holds 37 studied real-world systems as standard JSON profiles.
 Reports land in `reports/<name>/` (`report.md`, `report.json`, desktop and mobile screenshots). `reports/` is not committed.
 
 ## 3. Updating the brain

@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reshoot: studio ad creatives from one phone photo</title>
+<meta name="description" content="Reshoot turns a rough phone photo of your product into studio-lit ads in every format. Try it free with your own photo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="../../system/systems/halftone/theme.css">
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--surface-canvas);
+    color: var(--text-body);
+    font-family: var(--font-sans);
+    font-size: var(--text-body-md);
+    line-height: var(--text-body-md--line-height);
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: inherit; }
+  :focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
+  .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+  .skip { position: absolute; min-height: var(--control-md); display: inline-flex; align-items: center; left: var(--space-16); top: var(--space-8); padding: var(--space-8) var(--space-12); background: var(--surface-inverse); color: var(--text-inverse); border-radius: var(--radius-sm); font-size: var(--text-label-sm); transform: translateY(-200%); }
+  .skip:focus { transform: none; }
+
+  /* ---------- nav: docked to the top edge ---------- */
+  .site-head { border-bottom: 1px solid var(--border-hairline); }
+  .nav {
+    display: flex; align-items: center; gap: var(--space-40);
+    height: 72px; padding: 0 var(--space-48);
+  }
+  .wordmark {
+    display: inline-flex; align-items: center; gap: var(--space-8);
+    font-family: var(--font-display); font-weight: 800; font-size: var(--text-heading-sm);
+    letter-spacing: -0.02em; text-decoration: none; color: var(--text-strong);
+    font-variation-settings: "opsz" 48; min-height: var(--control-md);
+  }
+  .wordmark svg { width: 24px; height: 24px; }
+  .nav ul { display: flex; gap: var(--space-32); list-style: none; margin: 0; padding: 0; }
+  .nav ul a, .signin {
+    font-size: var(--text-label-md); font-weight: 500; text-decoration: none; color: var(--text-body);
+    display: inline-flex; align-items: center; min-height: var(--control-sm);
+  }
+  .nav ul a:hover, .signin:hover { text-decoration: underline; text-underline-offset: 4px; }
+  .signin { margin-left: auto; }
+  .menu-btn { display: none; }
+
+  /* ---------- the stage: one Reshoot project canvas ---------- */
+  main { padding: var(--space-24) var(--space-48) var(--space-48); }
+  .stage {
+    background: var(--surface-sunken);
+    border: 1px solid var(--border-hairline);
+    border-radius: var(--radius-xl);
+    padding: var(--space-40) var(--space-48) var(--space-48);
+    display: grid;
+    grid-template-columns: 272px minmax(0, 1fr) 464px;
+    grid-template-areas:
+      "meta  meta  meta"
+      "input copy  output";
+    column-gap: var(--space-64);
+    row-gap: var(--space-40);
+    align-items: start;
+  }
+  .stage-meta {
+    grid-area: meta; display: flex; justify-content: space-between; gap: var(--space-16);
+    font-family: var(--font-mono); font-size: var(--text-mono-sm); color: var(--text-muted);
+    padding-bottom: var(--space-16); border-bottom: 1px solid var(--border-hairline);
+  }
+  .stage-meta b { font-weight: 500; color: var(--text-strong); }
+
+  /* ---------- copy: the bridge between before and after ---------- */
+  .copy { grid-area: copy; padding-top: var(--space-32); }
+  .print { margin-top: var(--space-16); }
+  h1 {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: var(--text-display-lg);
+    line-height: var(--text-display-lg--line-height);
+    letter-spacing: var(--text-display-lg--letter-spacing);
+    font-weight: 800;
+    color: var(--text-strong);
+    text-wrap: balance;
+  }
+  .lede {
+    margin: var(--space-24) 0 0; max-width: 30em;
+    font-size: var(--text-body-lg); line-height: var(--text-body-lg--line-height); color: var(--text-body);
+  }
+
+  /* CTA: a photo drop slot with crop marks */
+  .slot {
+    --mark: var(--text-strong);
+    position: relative; margin-top: var(--space-32);
+    padding: var(--space-20);
+    display: flex; flex-direction: column; align-items: flex-start; gap: var(--space-12);
+    background:
+      linear-gradient(var(--mark), var(--mark)) top left / 20px 2px no-repeat,
+      linear-gradient(var(--mark), var(--mark)) top left / 2px 20px no-repeat,
+      linear-gradient(var(--mark), var(--mark)) top right / 20px 2px no-repeat,
+      linear-gradient(var(--mark), var(--mark)) top right / 2px 20px no-repeat,
+      linear-gradient(var(--mark), var(--mark)) bottom left / 20px 2px no-repeat,
+      linear-gradient(var(--mark), var(--mark)) bottom left / 2px 20px no-repeat,
+      linear-gradient(var(--mark), var(--mark)) bottom right / 20px 2px no-repeat,
+      linear-gradient(var(--mark), var(--mark)) bottom right / 2px 20px no-repeat,
+      var(--surface-raised);
+    border-radius: var(--radius-xs);
+    width: fit-content; max-width: 100%;
+  }
+  .slot input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+  .cta {
+    display: inline-flex; align-items: center; gap: var(--space-12);
+    height: var(--control-lg); padding: 0 var(--space-24) 0 var(--space-16);
+    background: var(--accent-solid); color: var(--text-on-accent);
+    border-radius: var(--radius-sm);
+    font-family: var(--font-sans); font-size: var(--text-label-md); font-weight: 600;
+    cursor: pointer; box-shadow: var(--shadow-raised);
+    transition: background-color var(--dur-fast) var(--ease-standard);
+  }
+  .cta:hover { background: var(--accent-solid-hover); }
+  .slot input:focus-visible + .cta { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
+  .cta svg { width: 24px; height: 24px; flex: none; }
+  .slot-note { margin: 0; font-size: var(--text-body-sm); color: var(--text-muted); }
+  .slot-note .drag { color: var(--text-body); }
+
+  /* ---------- input: the rough phone photo ---------- */
+  .input { grid-area: input; margin: 0; }
+  .tag {
+    display: inline-flex; align-items: center; gap: var(--space-8);
+    font-family: var(--font-mono); font-size: var(--text-mono-sm); color: var(--text-body);
+    margin-bottom: var(--space-16);
+  }
+  .tag i { width: 8px; height: 8px; background: var(--text-muted); }
+  .print {
+    position: relative; aspect-ratio: 3 / 4;
+    padding: var(--space-8); background: var(--surface-raised);
+    border-radius: var(--radius-lg); box-shadow: var(--shadow-float);
+    transform: rotate(-3deg);
+  }
+  .snap {
+    position: relative; height: 100%; overflow: hidden; border-radius: var(--radius-sm);
+    /* tiled backsplash, flat flash hotspot, laminate counter */
+    background:
+      radial-gradient(circle at 48% 38%, color-mix(in oklch, var(--surface-raised) 90%, transparent) 0, transparent 34%),
+      repeating-linear-gradient(90deg, transparent 0 39px, var(--border-control) 39px 40px),
+      repeating-linear-gradient(0deg, transparent 0 27px, var(--border-control) 27px 28px),
+      var(--surface-active);
+  }
+  .snap::after { /* tungsten cast + soft focus: what a 9pm kitchen photo looks like */
+    content: ""; position: absolute; inset: 0;
+    background: color-mix(in oklch, var(--warning-solid) 26%, transparent);
+    mix-blend-mode: multiply;
+  }
+  .snap > * { filter: blur(0.6px); }
+  .counter {
+    position: absolute; left: -10%; right: -10%; bottom: -4%; height: 42%;
+    background: linear-gradient(var(--warning-border), var(--warning-tint) 30%);
+    transform: rotate(4deg); transform-origin: left top;
+  }
+  .mug {
+    position: absolute; right: -8%; top: 40%; width: 34%; height: 30%;
+    border-radius: 0 0 var(--radius-sm) var(--radius-sm); background: var(--info-tint);
+    box-shadow: inset 0 6px 0 var(--info-border);
+  }
+  .mug::before { content: ""; position: absolute; left: -26%; top: 22%; width: 30%; height: 40%; border: 5px solid var(--info-tint); border-right: 0; border-radius: var(--radius-sm) 0 0 var(--radius-sm); }
+  .cable { position: absolute; left: -6%; bottom: 14%; width: 70%; height: 4px; background: var(--text-strong); transform: rotate(-14deg); }
+  .snap .bottle { position: absolute; left: 28%; bottom: 12%; --w: 84px; transform: rotate(9deg); }
+  .snap .bottle .body { box-shadow: 18px 12px 0 color-mix(in oklch, var(--text-strong) 30%, transparent); }
+  .snap .bottle .glare { opacity: 1; }
+  .exif {
+    margin-top: var(--space-20);
+    font-family: var(--font-mono); font-size: var(--text-mono-sm); color: var(--text-muted);
+    transform: rotate(-3deg);
+  }
+
+  /* ---------- the product: illustrated sample bottle ---------- */
+  .bottle { --w: 72px; width: var(--w); display: flex; flex-direction: column; align-items: center; }
+  .bottle .cap { width: 36%; height: calc(var(--w) * 0.34); background: var(--text-strong); border-radius: var(--radius-xs) var(--radius-xs) 0 0; }
+  .bottle .neck { width: 30%; height: calc(var(--w) * 0.42); background: var(--danger-text); }
+  .bottle .body {
+    position: relative; width: 100%; height: calc(var(--w) * 1.5);
+    background: linear-gradient(90deg, var(--danger-text), var(--danger-solid) 45%, var(--danger-text));
+    border-radius: var(--radius-lg) var(--radius-lg) var(--radius-xs) var(--radius-xs);
+  }
+  .bottle .label {
+    position: absolute; left: 8%; right: 8%; top: 30%; height: 44%;
+    background: var(--surface-canvas);
+    display: grid; place-items: center;
+  }
+  .bottle .label::before { content: ""; width: 56%; height: 22%; background: var(--text-strong); }
+  .bottle .label::after { content: ""; position: absolute; left: 22%; right: 22%; bottom: 18%; height: 8%; background: var(--danger-solid); }
+  .bottle .glare { position: absolute; left: 14%; top: 6%; width: 12%; height: 84%; background: var(--surface-raised); opacity: 0.35; }
+
+  /* ---------- output: the ad set ---------- */
+  .output { grid-area: output; margin: 0; }
+  .board {
+    display: grid; grid-template-columns: 1fr 176px; gap: var(--space-16);
+  }
+  .ad {
+    position: relative; overflow: hidden; border-radius: var(--radius-md);
+    box-shadow: var(--shadow-float);
+    display: flex; flex-direction: column; justify-content: space-between;
+    padding: var(--space-16);
+    animation: rise var(--dur-slow) var(--ease-enter) both;
+  }
+  .ad .set { position: absolute; inset: 0; }
+  .ad .set::after { /* floor sweep */
+    content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 34%;
+    background: color-mix(in oklch, var(--text-strong) 6%, transparent);
+  }
+  .ad .stand { position: relative; display: grid; place-items: end center; flex: 1; }
+  .ad .stand::after { /* contact shadow */
+    content: ""; position: absolute; bottom: -6px; width: 70%; height: 12px;
+    background: radial-gradient(closest-side, color-mix(in oklch, var(--text-strong) 30%, transparent), transparent);
+  }
+  .ad .stand .bottle { position: relative; z-index: 1; }
+  .ad .fmt {
+    position: relative; z-index: 1; align-self: flex-start;
+    font-family: var(--font-mono); font-size: var(--text-mono-sm); line-height: 1.3;
+    background: var(--surface-raised); color: var(--text-strong);
+    padding: var(--space-4) var(--space-8); border-radius: var(--radius-xs); box-shadow: var(--shadow-raised);
+  }
+  .ad .line {
+    position: relative; z-index: 1; margin: var(--space-12) 0 0;
+    font-family: var(--font-display); font-weight: 800; letter-spacing: -0.02em;
+    font-variation-settings: "opsz" 48; color: var(--text-strong);
+  }
+  .feed { aspect-ratio: 4 / 5; }
+  .feed .set { background: radial-gradient(ellipse at 50% 30%, var(--surface-raised), var(--warning-tint) 70%); }
+  .feed .line { font-size: var(--text-heading-md); line-height: 1; }
+  .feed .bottle { --w: 88px; }
+  .story { aspect-ratio: 9 / 16; animation-delay: 90ms; background-color: var(--surface-inverse); }
+  .story .set { background: linear-gradient(var(--surface-inverse), color-mix(in oklch, var(--surface-inverse) 82%, var(--danger-text))); }
+  .story .set::after { background: color-mix(in oklch, var(--text-inverse) 6%, transparent); }
+  .story .line { color: var(--text-inverse); font-size: var(--text-heading-sm); line-height: 1.05; margin: 0 0 var(--space-12); }
+  .story .bottle { --w: 64px; }
+  .story .bottle .label { background: var(--surface-raised); }
+  .story .stand::after { background: radial-gradient(closest-side, color-mix(in oklch, var(--text-strong) 70%, transparent), transparent); }
+  .story .glare { opacity: 0.5; }
+  .banner {
+    grid-column: 1 / -1; aspect-ratio: 1.91 / 1;
+    flex-direction: row; align-items: stretch; gap: var(--space-16);
+    animation-delay: 180ms;
+  }
+  .banner .set { background: linear-gradient(90deg, var(--success-tint), var(--surface-raised)); }
+  .banner .set::after { height: 30%; }
+  .banner .side { position: relative; z-index: 1; display: flex; flex-direction: column; justify-content: space-between; flex: 1; }
+  .banner .line { font-size: var(--text-heading-md); line-height: 1; margin: 0; max-width: 8em; }
+  .banner .shop {
+    align-self: flex-start; font-size: var(--text-label-sm); font-weight: 600; color: var(--text-inverse);
+    background: var(--surface-inverse); padding: var(--space-8) var(--space-12); border-radius: var(--radius-xs);
+  }
+  .banner .stand { flex: 0 0 40%; }
+  .banner .bottle { --w: 72px; }
+  .board-note {
+    margin-top: var(--space-16); display: flex; justify-content: space-between;
+    font-family: var(--font-mono); font-size: var(--text-mono-sm); color: var(--text-muted);
+  }
+
+  @keyframes rise { from { opacity: 0; transform: translateY(16px) scale(0.97); } to { opacity: 1; transform: none; } }
+  @media (prefers-reduced-motion: reduce) {
+    @keyframes rise { from { opacity: 0; } to { opacity: 1; } }
+    .ad { animation-duration: 160ms; }
+  }
+
+  /* ---------- tablet ---------- */
+  @media (max-width: 1180px) {
+    .stage { grid-template-columns: 220px minmax(0, 1fr) 380px; column-gap: var(--space-40); padding: var(--space-32); }
+    .board { grid-template-columns: 1fr 140px; }
+  }
+
+  /* ---------- mobile: its own composition ---------- */
+  @media (max-width: 860px) {
+    .nav { padding: 0 var(--space-16); height: 64px; gap: var(--space-16); }
+    .nav ul { display: none; }
+    .signin { margin-left: auto; }
+    .menu-btn {
+      display: inline-grid; place-items: center; width: var(--control-md); height: var(--control-md);
+      border: 1px solid var(--border-control); border-radius: var(--radius-sm); background: var(--surface-raised); color: var(--text-strong);
+    }
+    .menu-btn svg { width: 20px; height: 20px; }
+    main { padding: var(--space-8) var(--space-16) var(--space-32); }
+    .stage {
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+        "copy   copy"
+        "input  output"
+        "meta   meta";
+      padding: var(--space-24) var(--space-16) var(--space-20);
+      border-radius: var(--radius-lg);
+      column-gap: var(--space-12); row-gap: var(--space-32);
+      align-items: start;
+    }
+    .stage-meta { flex-direction: column; gap: var(--space-4); padding: var(--space-16) 0 0; border-bottom: 0; border-top: 1px solid var(--border-hairline); }
+    .lede { font-size: var(--text-body-md); line-height: var(--text-body-md--line-height); margin-top: var(--space-16); }
+    .slot { margin-top: var(--space-24); padding: var(--space-16); align-items: stretch; width: auto; }
+    .copy { padding-top: 0; }
+    .print { margin-top: 0; }
+    .cta { justify-content: center; }
+    .slot-note .drag { display: none; }
+    .tag { margin-bottom: var(--space-12); }
+    .print { transform: rotate(-2deg); padding: var(--space-4); border-radius: var(--radius-md); }
+    .snap { border-radius: var(--radius-sm); }
+    .snap .bottle { --w: 48px; }
+    .snap { background:
+      radial-gradient(circle at 48% 38%, color-mix(in oklch, var(--surface-raised) 90%, transparent) 0, transparent 34%),
+      repeating-linear-gradient(90deg, transparent 0 23px, var(--border-control) 23px 24px),
+      repeating-linear-gradient(0deg, transparent 0 15px, var(--border-control) 15px 16px),
+      var(--surface-active); }
+    .mug::before { border-width: 3px; }
+    .exif { font-size: var(--text-label-sm); margin-top: var(--space-12); }
+    .exif .long, .tag .long { display: none; }
+    .board { grid-template-columns: 1fr; }
+    .board .feed, .board .banner { display: none; }
+    .story { aspect-ratio: 3 / 4; padding: var(--space-12); }
+    .story .bottle { --w: 44px; }
+    .story .line { font-size: var(--text-label-md); }
+    .board-note { margin-top: var(--space-12); }
+    .board-note .more { display: none; }
+    .print { aspect-ratio: 3 / 4; }
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+  <nav class="nav" aria-label="Primary">
+    <a class="wordmark" href="#" aria-label="Reshoot home">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 9V3h6M15 3h6v6M21 15v6h-6M9 21H3v-6" stroke="currentColor" stroke-width="2.5"/><rect x="8" y="8" width="8" height="8" rx="2" fill="currentColor"/></svg>
+      Reshoot
+    </a>
+    <ul>
+      <li><a href="#">How it works</a></li>
+      <li><a href="#">Formats</a></li>
+      <li><a href="#">Examples</a></li>
+      <li><a href="#">Pricing</a></li>
+    </ul>
+    <a class="signin" href="#">Sign in</a>
+    <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false">
+      <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 6h14M3 14h14" stroke="currentColor" stroke-width="2"/></svg>
+    </button>
+  </nav>
+</header>
+
+<main id="main" tabindex="-1">
+  <section class="stage" aria-labelledby="h">
+    <p class="stage-meta"><span><b>Sample project</b> · Hollis Hot Sauce (fictional brand)</span><span>1 phone photo → 12 ad sizes</span></p>
+
+    <figure class="input" aria-label="Before: the original phone photo (illustrated sample)">
+      <span class="tag"><i aria-hidden="true"></i>Before<span class="long"> · your photo</span></span>
+      <div class="print">
+        <div class="snap" role="img" aria-label="Illustration of a red hot-sauce bottle snapped at an angle on a kitchen counter with flash glare, a mug and a cable in frame">
+          <div class="counter"></div>
+          <div class="mug"></div>
+          <div class="cable"></div>
+          <div class="bottle"><div class="cap"></div><div class="neck"></div><div class="body"><div class="label"></div><div class="glare"></div></div></div>
+        </div>
+      </div>
+      <figcaption class="exif">IMG_4471.HEIC<span class="long"> · flash on</span></figcaption>
+    </figure>
+
+    <div class="copy">
+      <h1 id="h">Shot on the counter. Ready for every feed.</h1>
+      <p class="lede">Upload one rough phone photo of your product. Reshoot relights it, builds the set behind it and exports a matched ad in every size your channels ask for.</p>
+      <div class="slot">
+        <input id="photo" type="file" accept="image/jpeg,image/png,image/heic">
+        <label class="cta" for="photo">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="14" height="14" rx="2" stroke="currentColor" stroke-width="2"/><path d="M3 16l4-4 3 3 2-2 5 5" stroke="currentColor" stroke-width="2"/><path d="M20 2v6M17 5h6" stroke="currentColor" stroke-width="2"/></svg>
+          Try it free with your photo
+        </label>
+        <p class="slot-note"><span class="drag">Or drop a JPG, PNG or HEIC here. </span>First set free.</p>
+      </div>
+    </div>
+
+    <figure class="output" aria-label="After: the same bottle as studio ad creatives (illustrated sample)">
+      <span class="tag"><i aria-hidden="true"></i>After<span class="long"> · sample, 3 of 12 sizes</span></span>
+      <div class="board">
+        <div class="ad feed">
+          <div class="set" aria-hidden="true"></div>
+          <span class="fmt">4:5 feed</span>
+          <div class="stand" aria-hidden="true"><div class="bottle"><div class="cap"></div><div class="neck"></div><div class="body"><div class="label"></div><div class="glare"></div></div></div></div>
+          <p class="line">Pour it on everything.</p>
+        </div>
+        <div class="ad story">
+          <div class="set" aria-hidden="true"></div>
+          <span class="fmt">9:16 story</span>
+          <div class="stand" aria-hidden="true"><div class="bottle"><div class="cap"></div><div class="neck"></div><div class="body"><div class="label"></div><div class="glare"></div></div></div></div>
+          <p class="line">Slow burn, small batch.</p>
+        </div>
+        <div class="ad banner">
+          <div class="set" aria-hidden="true"></div>
+          <div class="side">
+            <span class="fmt">1.91:1 link ad</span>
+            <p class="line">Smoked habanero is back.</p>
+            <span class="shop">Shop now</span>
+          </div>
+          <div class="stand" aria-hidden="true"><div class="bottle"><div class="cap"></div><div class="neck"></div><div class="body"><div class="label"></div><div class="glare"></div></div></div></div>
+        </div>
+      </div>
+      <figcaption class="board-note"><span>Illustrated sample</span><span class="more">+ 9 more sizes</span></figcaption>
+    </figure>
+  </section>
+</main>
+</body>
+</html>

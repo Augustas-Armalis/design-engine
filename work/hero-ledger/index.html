@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tally: month-end, reduced to a signature</title>
+<meta name="description" content="Tally (fictional concept) issues cards, routes approvals by policy and reconciles every transaction as it lands, so month-end close is a review. Book a demo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="../../system/systems/ledger/theme.css">
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--surface-canvas);
+    color: var(--text-body);
+    font-family: var(--font-sans);
+    font-size: var(--text-body-md);
+    line-height: var(--text-body-md--line-height);
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: inherit; }
+  :focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
+  .num { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+  .vh { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+  .skip {
+    position: absolute; left: var(--space-16); top: var(--space-8); z-index: 10;
+    padding: var(--space-8) var(--space-12);
+    background: var(--surface-raised); color: var(--text-strong);
+    border-radius: var(--radius-md); box-shadow: var(--shadow-raised);
+    font-size: var(--text-label-sm); min-height: 44px; display: inline-flex; align-items: center; transform: translateY(-160%);
+  }
+  .skip:focus-visible { transform: none; }
+
+  .wrap { max-width: var(--content-max); margin: 0 auto; padding: 0 var(--space-32); }
+
+  /* ---------- nav: wordmark + numbered index ---------- */
+  .top { border-bottom: 1px solid var(--border-hairline); }
+  .top .wrap { display: flex; align-items: center; gap: var(--space-48); min-height: 64px; }
+  .mark {
+    font-family: var(--font-display); font-weight: 500;
+    font-size: var(--text-heading-md); line-height: 1; letter-spacing: var(--text-heading-md--letter-spacing);
+    color: var(--text-strong); text-decoration: none;
+    display: inline-flex; align-items: center; min-height: var(--control-md);
+  }
+  .index { display: flex; gap: var(--space-32); margin: 0; padding: 0; list-style: none; }
+  .index a, .aux a {
+    display: inline-flex; align-items: baseline; gap: var(--space-8);
+    min-height: var(--control-md); padding-top: var(--space-12);
+    font-size: var(--text-label-md); font-weight: 500; line-height: var(--text-label-md--line-height);
+    color: var(--text-body); text-decoration: none;
+  }
+  .index a .num { font-size: var(--text-mono-sm); color: var(--text-muted); }
+  .index a:hover, .aux a:hover { text-decoration: underline; text-underline-offset: 4px; text-decoration-thickness: 1px; }
+  .aux { margin-left: auto; display: flex; gap: var(--space-24); }
+  .aux .demo-link { color: var(--accent-text); text-decoration: underline; text-underline-offset: 4px; text-decoration-thickness: 1px; }
+  .menu { display: none; }
+
+  /* ---------- the statement ---------- */
+  main { padding: var(--space-24) 0 var(--space-32); }
+  .sheet {
+    background: var(--surface-raised);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-raised);
+  }
+  .strip {
+    display: flex; align-items: center; gap: var(--space-24);
+    min-height: 44px; padding: 0 var(--space-32);
+    border-bottom: 1px solid var(--border-hairline);
+    font-family: var(--font-mono); font-size: var(--text-mono-sm); color: var(--text-muted);
+  }
+  .strip .doc { color: var(--text-strong); font-weight: 500; }
+  .strip .state { margin-left: auto; position: relative; display: inline-grid; }
+  .strip .state > span { grid-area: 1 / 1; white-space: nowrap; }
+  .state .closing { color: var(--warning-text); opacity: 0; }
+  .state .ready { color: var(--accent-text); }
+  .replay {
+    font: inherit; color: var(--text-body);
+    background: none; border: 1px solid var(--border-control); border-radius: var(--radius-md);
+    min-height: var(--control-sm); padding: 0 var(--space-12); cursor: pointer;
+  }
+  .replay:hover { background: var(--surface-hover); }
+
+  .titleblock {
+    display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: end;
+    gap: var(--space-48); padding: var(--space-40) var(--space-32) var(--space-32);
+    border-bottom: 1px solid var(--border-hairline);
+  }
+  h1 {
+    margin: 0; max-width: 17ch;
+    font-family: var(--font-display); font-weight: 500;
+    font-size: var(--text-display-xl); line-height: var(--text-display-xl--line-height);
+    letter-spacing: var(--text-display-xl--letter-spacing); color: var(--text-strong);
+  }
+  .open { text-align: right; padding-bottom: var(--space-4); }
+  .open .label { display: block; font-size: var(--text-label-sm); font-weight: 500; color: var(--text-muted); }
+  .open .count {
+    display: inline-flex; align-items: baseline; gap: var(--space-12);
+    font-size: var(--text-display-lg); line-height: 1.1; color: var(--text-strong);
+  }
+  .roll { display: inline-block; height: 1.1em; overflow: hidden; vertical-align: bottom; }
+  .roll > span { display: flex; flex-direction: column; transform: translateY(-75%); }
+  .roll > span > span { height: 1.1em; }
+  .open .of { display: block; font-size: var(--text-body-sm); color: var(--text-muted); }
+
+  /* table */
+  table { width: 100%; border-collapse: collapse; }
+  caption { text-align: left; }
+  th, td { padding: 0 var(--space-16); height: 52px; text-align: left; vertical-align: middle; border-bottom: 1px solid var(--border-hairline); }
+  th:first-child, td:first-child { padding-left: var(--space-32); }
+  th:last-child, td:last-child { padding-right: var(--space-32); text-align: right; }
+  thead th { height: 40px; font-size: var(--text-label-sm); font-weight: 500; color: var(--text-muted); background: var(--surface-sunken); }
+  td { font-size: var(--text-body-sm); color: var(--text-body); }
+  td.date, td.amt, td.card, td.gl .num { font-family: var(--font-mono); font-size: var(--text-mono-sm); font-variant-numeric: tabular-nums; }
+  td.date, td.card { color: var(--text-muted); }
+  td.amt { color: var(--text-strong); white-space: nowrap; }
+  td.merchant { color: var(--text-strong); font-weight: 500; }
+  td.gl .num { color: var(--text-muted); margin-right: var(--space-4); }
+
+  .chips { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-8); }
+  .chip {
+    display: inline-flex; align-items: center; gap: var(--space-8);
+    min-height: 28px; padding: 0 var(--space-8);
+    border-radius: var(--radius-md); font-size: var(--text-label-sm); font-weight: 500; line-height: 1.3; white-space: nowrap;
+  }
+  .chip.ok { background: var(--accent-tint); color: var(--accent-text); }
+  .chip.ok svg { flex: none; }
+  .chip.was { position: relative; color: var(--text-muted); background: none; padding: 0; }
+  .chip.was::after {
+    content: ""; position: absolute; left: 0; right: 0; top: 50%; height: 1px;
+    background: currentColor; transform-origin: left center;
+  }
+  .chip.was::before { content: ""; width: 6px; height: 6px; border-radius: var(--radius-full); background: var(--border-control); }
+
+  .totals { margin: 0; display: flex; gap: var(--space-48); padding: var(--space-16) var(--space-32); border-bottom: 3px double var(--border-strong); }
+  .totals div { display: flex; gap: var(--space-12); align-items: baseline; }
+  .totals dt { font-size: var(--text-label-sm); font-weight: 500; color: var(--text-muted); }
+  .totals dd { margin: 0; font-size: var(--text-mono-sm); color: var(--text-strong); }
+  .totals div:last-child { margin-left: auto; }
+
+  .signoff {
+    display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: var(--space-64);
+    align-items: end; padding: var(--space-24) var(--space-32) var(--space-32);
+  }
+  .signoff p { margin: 0; max-width: 54ch; text-wrap: pretty; font-size: var(--text-body-md); line-height: 1.6; color: var(--text-body); }
+  .sign { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: end; gap: var(--space-16); }
+  .sign .who { font-size: var(--text-label-sm); font-weight: 500; color: var(--text-muted); padding-bottom: var(--space-12); }
+  .sign .line { border-bottom: 1px solid var(--border-control); height: var(--control-lg); }
+  .cta {
+    display: inline-flex; align-items: center; gap: var(--space-12);
+    min-height: var(--control-lg); padding: 0 var(--space-20) 0 var(--space-16);
+    background: var(--accent-solid); color: var(--text-on-accent);
+    border-radius: var(--radius-md); text-decoration: none;
+    font-size: var(--text-label-md); font-weight: 600; line-height: 1;
+    transition: background-color var(--dur-fast) var(--ease-standard);
+  }
+  .cta:hover { background: var(--accent-solid-hover); }
+  .tick { width: 20px; height: 20px; border: 1px solid currentColor; border-radius: var(--radius-xs); display: inline-grid; place-items: center; }
+  .tick path { stroke-dasharray: 16; stroke-dashoffset: 16; transition: stroke-dashoffset var(--dur-base) var(--ease-enter); }
+  .cta:hover .tick path, .cta:focus-visible .tick path { stroke-dashoffset: 0; }
+  .sign .help { grid-column: 2 / -1; margin: 0; font-size: var(--text-body-sm); color: var(--text-muted); text-align: right; }
+
+  .foot { margin: var(--space-16) 0 0; font-size: var(--text-body-sm); color: var(--text-muted); }
+
+  /* ---------- the close running (base styles are the final state; keyframes start "from" the open state) ---------- */
+  .run .r1 .was::after { animation: strike var(--dur-slow) var(--ease-enter) 0.9s backwards; }
+  .run .r2 .was::after { animation: strike var(--dur-slow) var(--ease-enter) 2.1s backwards; }
+  .run .r3 .was::after { animation: strike var(--dur-slow) var(--ease-enter) 3.3s backwards; }
+  .run .r1 .was { animation: was var(--dur-slow) var(--ease-standard) 0.9s backwards; }
+  .run .r2 .was { animation: was var(--dur-slow) var(--ease-standard) 2.1s backwards; }
+  .run .r3 .was { animation: was var(--dur-slow) var(--ease-standard) 3.3s backwards; }
+  .run .r1 .ok { animation: fix var(--dur-base) var(--ease-enter) 1.2s backwards; }
+  .run .r2 .ok { animation: fix var(--dur-base) var(--ease-enter) 2.4s backwards; }
+  .run .r3 .ok { animation: fix var(--dur-base) var(--ease-enter) 3.6s backwards; }
+  .run .roll > span { animation: roll 3.6s var(--ease-standard) 0.6s backwards; }
+  .run .state .closing { animation: out var(--dur-base) var(--ease-standard) 4s backwards; }
+  .run .state .ready { animation: in var(--dur-base) var(--ease-enter) 4s backwards; }
+
+  @keyframes strike { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+  @keyframes was {
+    from { background: var(--warning-tint); color: var(--warning-text); padding: 0 var(--space-8); }
+    to { background: none; color: var(--text-muted); padding: 0; }
+  }
+  @keyframes fix { from { opacity: 0; transform: translateX(-4px); } to { opacity: 1; transform: none; } }
+  @keyframes roll {
+    0%, 22% { transform: translateY(0); }
+    30%, 56% { transform: translateY(-25%); }
+    64%, 89% { transform: translateY(-50%); }
+    97%, 100% { transform: translateY(-75%); }
+  }
+  @keyframes out { from { opacity: 1; } to { opacity: 0; } }
+  @keyframes in { from { opacity: 0; } to { opacity: 1; } }
+
+  @media (prefers-reduced-motion: reduce) {
+    .run * , .run *::after { animation: none !important; }
+    .cta, .tick path { transition: none; }
+    .replay { display: none; }
+  }
+
+  /* ---------- tablet ---------- */
+  @media (max-width: 1080px) {
+    .index { gap: var(--space-24); }
+    .aux .signin { display: none; }
+    th.card, td.card { display: none; }
+    .signoff { grid-template-columns: 1fr; gap: var(--space-24); }
+  }
+
+  /* ---------- mobile: a statement slip, not a squeezed table ---------- */
+  @media (max-width: 720px) {
+    .wrap { padding: 0 var(--space-16); }
+    .top .wrap { gap: var(--space-16); min-height: 56px; }
+    .index, .aux { display: none; }
+    .menu { display: block; margin-left: auto; position: relative; }
+    .menu summary {
+      list-style: none; cursor: pointer; display: inline-flex; align-items: center;
+      min-height: 44px; padding: 0 var(--space-12);
+      border: 1px solid var(--border-control); border-radius: var(--radius-md);
+      font-size: var(--text-label-md); font-weight: 500;
+    }
+    .menu summary::-webkit-details-marker { display: none; }
+    .menu ul {
+      position: absolute; right: 0; top: calc(100% + var(--space-8)); z-index: 5; min-width: 220px;
+      margin: 0; padding: var(--space-8); list-style: none;
+      background: var(--surface-raised); border-radius: var(--radius-lg); box-shadow: var(--shadow-float);
+    }
+    .menu a { display: flex; gap: var(--space-8); align-items: center; min-height: 44px; padding: 0 var(--space-8); text-decoration: none; font-size: var(--text-label-md); font-weight: 500; }
+    .menu .demo-link { color: var(--accent-text); }
+    .menu a .num { font-size: var(--text-mono-sm); color: var(--text-muted); }
+
+    main { padding: var(--space-16) 0 var(--space-24); }
+    main .wrap { padding: 0 var(--space-8); }
+    .strip { flex-wrap: wrap; gap: var(--space-4) var(--space-12); padding: var(--space-12) var(--space-16); }
+    .strip .period, .replay { display: none; }
+    .strip .state { margin-left: 0; flex-basis: 100%; }
+    .titleblock { grid-template-columns: 1fr; gap: var(--space-24); padding: var(--space-32) var(--space-16) var(--space-24); }
+    h1 { max-width: 11ch; }
+    h1 .bd, h1 br { display: none; }
+    .open { text-align: left; display: grid; grid-template-columns: auto 1fr; column-gap: var(--space-16); align-items: center; padding: var(--space-16) 0 0; border-top: 1px solid var(--border-hairline); }
+    .open .label { grid-column: 2; grid-row: 1; }
+    .open .count { grid-column: 1; grid-row: 1 / span 2; }
+    .open .of { grid-column: 2; grid-row: 2; }
+
+    thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+    tr.settled { display: none; }
+    tbody tr {
+      display: grid; grid-template-columns: minmax(0, 1fr) auto;
+      grid-template-areas: "m a" "d c" "s s";
+      gap: var(--space-4) var(--space-12); padding: var(--space-16);
+      border-bottom: 1px solid var(--border-hairline);
+    }
+    td, td:first-child, td:last-child { display: block; height: auto; padding: 0; border: 0; text-align: left; }
+    td.merchant { grid-area: m; font-size: var(--text-body-md); }
+    td.amt { grid-area: a; text-align: right; }
+    td.date { grid-area: d; }
+    td.card { display: block; grid-area: c; text-align: right; }
+    td.gl { display: none; }
+    td.status { grid-area: s; padding-top: var(--space-8); }
+    .totals { flex-direction: column; gap: var(--space-8); padding: var(--space-16); }
+    .totals div:last-child { margin-left: 0; }
+    .totals div { justify-content: space-between; }
+    .signoff { padding: var(--space-24) var(--space-16); gap: var(--space-24); }
+    .sign { grid-template-columns: auto minmax(0, 1fr); row-gap: var(--space-16); }
+    .sign .line { height: var(--space-32); }
+    .cta { grid-column: 1 / -1; justify-content: center; }
+    .sign .help { grid-column: 1 / -1; text-align: left; margin-top: calc(-1 * var(--space-4)); }
+    .foot { padding: 0 var(--space-8); }
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="mark" href="#" aria-label="Tally, home">Tally</a>
+    <nav aria-label="Primary">
+      <ol class="index">
+        <li><a href="#cards"><span class="num">01</span>Cards</a></li>
+        <li><a href="#approvals"><span class="num">02</span>Approvals</a></li>
+        <li><a href="#close"><span class="num">03</span>Close</a></li>
+        <li><a href="#pricing"><span class="num">04</span>Pricing</a></li>
+      </ol>
+    </nav>
+    <div class="aux">
+      <a class="signin" href="#signin">Sign in</a>
+      <a class="demo-link" href="#demo">Book a demo</a>
+    </div>
+    <details class="menu">
+      <summary>Menu</summary>
+      <ul>
+        <li><a href="#cards"><span class="num">01</span>Cards</a></li>
+        <li><a href="#approvals"><span class="num">02</span>Approvals</a></li>
+        <li><a href="#close"><span class="num">03</span>Close</a></li>
+        <li><a href="#pricing"><span class="num">04</span>Pricing</a></li>
+        <li><a href="#signin">Sign in</a></li>
+        <li><a href="#demo" class="demo-link">Book a demo</a></li>
+      </ul>
+    </details>
+  </div>
+</header>
+
+<main id="main" tabindex="-1">
+  <div class="wrap">
+    <article class="sheet run" id="sheet" aria-labelledby="h">
+      <div class="strip">
+        <span class="doc">Close statement</span>
+        <span>Northwind Freight (sample)</span>
+        <span class="period">Period 01&ndash;30 Sep 2026</span>
+        <span class="state" role="status">
+          <span class="closing" aria-hidden="true">Closing: 3 open items</span>
+          <span class="ready">Ready to sign</span>
+        </span>
+        <button class="replay" type="button" id="replay">Replay</button>
+      </div>
+
+      <div class="titleblock">
+        <h1 id="h">Month-end, reduced<br class="bd"> to a signature.</h1>
+        <div class="open">
+          <span class="label">Open items</span>
+          <span class="count num"><span class="vh">0</span>
+            <span class="roll" aria-hidden="true"><span><span>3</span><span>2</span><span>1</span><span>0</span></span></span>
+          </span>
+          <span class="of">of 1,284 September transactions</span>
+        </div>
+      </div>
+
+      <table>
+        <caption class="vh">Sample September card transactions for a fictional company, with how each open item was resolved</caption>
+        <thead>
+          <tr>
+            <th scope="col">Date</th>
+            <th scope="col">Merchant</th>
+            <th scope="col" class="card">Cardholder</th>
+            <th scope="col">GL account</th>
+            <th scope="col">Resolution</th>
+            <th scope="col">Amount</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="r1">
+            <td class="date">30 Sep</td>
+            <td class="merchant">Corbel Office Supply</td>
+            <td class="card">D. Kim &middot;&middot;0381</td>
+            <td class="gl"><span class="num">6230</span>Office</td>
+            <td class="status"><span class="chips"><span class="chip was">No receipt</span><span class="chip ok"><svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M2.5 7.5l3 3 6-7" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>Receipt matched from email</span></span></td>
+            <td class="amt">$384.15</td>
+          </tr>
+          <tr class="r2">
+            <td class="date">29 Sep</td>
+            <td class="merchant">Fieldline Air</td>
+            <td class="card">R. Patel &middot;&middot;2290</td>
+            <td class="gl"><span class="num">6410</span>Travel</td>
+            <td class="status"><span class="chips"><span class="chip was">Over $1,000 policy</span><span class="chip ok"><svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M2.5 7.5l3 3 6-7" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>Approved by J. Moreau</span></span></td>
+            <td class="amt">$1,146.20</td>
+          </tr>
+          <tr class="r3">
+            <td class="date">28 Sep</td>
+            <td class="merchant">Halden Cloud Services</td>
+            <td class="card">E. Varga &middot;&middot;4417</td>
+            <td class="gl"><span class="num">6120</span>Cloud hosting</td>
+            <td class="status"><span class="chips"><span class="chip was">Uncoded</span><span class="chip ok"><svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M2.5 7.5l3 3 6-7" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>Coded by vendor rule</span></span></td>
+            <td class="amt">$12,480.00</td>
+          </tr>
+          <tr class="settled">
+            <td class="date">27 Sep</td>
+            <td class="merchant">Linea Software</td>
+            <td class="card">Finance &middot;&middot;1102</td>
+            <td class="gl"><span class="num">6150</span>Software</td>
+            <td class="status"><span class="chips"><span class="chip ok"><svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M2.5 7.5l3 3 6-7" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>Matched at swipe</span></span></td>
+            <td class="amt">$2,400.00</td>
+          </tr>
+          <tr class="settled">
+            <td class="date">26 Sep</td>
+            <td class="merchant">Sala Coffee Roasters</td>
+            <td class="card">Office &middot;&middot;0381</td>
+            <td class="gl"><span class="num">6240</span>Meals</td>
+            <td class="status"><span class="chips"><span class="chip ok"><svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M2.5 7.5l3 3 6-7" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>Matched at swipe</span></span></td>
+            <td class="amt">$212.40</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <dl class="totals">
+        <div><dt>Card spend, September</dt><dd class="num">$184,226.40</dd></div>
+        <div><dt>Transactions</dt><dd class="num">1,284</dd></div>
+        <div><dt>Unreconciled</dt><dd class="num">0</dd></div>
+      </dl>
+
+      <div class="signoff">
+        <p>Tally issues your team&rsquo;s cards, routes each charge to the right approver, and matches the receipt the moment it lands. By the last day of the month the ledger is already reconciled. Your controller reviews it and signs.</p>
+        <div class="sign">
+          <span class="who">Signed off by</span>
+          <span class="line" aria-hidden="true"></span>
+          <a class="cta" href="#demo"><span class="tick" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14"><path d="M2.5 7.5l3 3 6-7" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span>Book a demo</a>
+          <p class="help">30 minutes, using your own chart of accounts.</p>
+        </div>
+      </div>
+    </article>
+    <p class="foot">Sample data for a fictional company. Names, cards and amounts are illustrative, not customer results.</p>
+  </div>
+</main>
+
+<script>
+  document.getElementById('replay').addEventListener('click', function () {
+    var s = document.getElementById('sheet');
+    s.classList.remove('run'); void s.offsetWidth; s.classList.add('run');
+  });
+</script>
+</body>
+</html>

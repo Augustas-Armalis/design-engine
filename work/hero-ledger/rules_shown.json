@@ -1,0 +1,368 @@
+{
+ "name": "hero-ledger",
+ "brief": "Tally: B2B spend management for mid-size finance teams; cards, approvals, self-reconciling month-end close; one action book a demo; proof is a real reconciliation UI resolving, sample data",
+ "type": "hero",
+ "generated": "2026-10-08T18:50:22",
+ "rules": [
+  {
+   "id": "systems-research.tailwind-catalyst#4",
+   "slot": "core",
+   "score": 43.86,
+   "tier": "T1"
+  },
+  {
+   "id": "AH-MO-25",
+   "slot": "core",
+   "score": 34.95,
+   "tier": "T1"
+  },
+  {
+   "id": "WCSS-39",
+   "slot": "core",
+   "score": 34.54,
+   "tier": "T1"
+  },
+  {
+   "id": "systems-research.magic-ui#5",
+   "slot": "core",
+   "score": 30.96,
+   "tier": "T1"
+  },
+  {
+   "id": "LDP-16",
+   "slot": "core",
+   "score": 29.41,
+   "tier": "T2"
+  },
+  {
+   "id": "web-sources.a11y-project-checklist#54",
+   "slot": "core",
+   "score": 28.13,
+   "tier": "T1"
+  },
+  {
+   "id": "systems-research.magic-ui#1",
+   "slot": "core",
+   "score": 28.07,
+   "tier": "T1"
+  },
+  {
+   "id": "web.courses-and-curricula#62",
+   "slot": "core",
+   "score": 26.37,
+   "tier": "T2"
+  },
+  {
+   "id": "ui-pedia.20-cards#3",
+   "slot": "core",
+   "score": 25.98,
+   "tier": "T2"
+  },
+  {
+   "id": "systems-research.uswds#3",
+   "slot": "core",
+   "score": 25.6,
+   "tier": "T1"
+  },
+  {
+   "id": "ui-pedia.12-typography#29",
+   "slot": "core",
+   "score": 22.49,
+   "tier": "T2"
+  },
+  {
+   "id": "AH-TY-01",
+   "slot": "core",
+   "score": 20.06,
+   "tier": "T1"
+  },
+  {
+   "id": "PT-SZ-08",
+   "slot": "core",
+   "score": 19.7,
+   "tier": "T2"
+  },
+  {
+   "id": "web-sources.a11y-project-checklist#27",
+   "slot": "core",
+   "score": 19.02,
+   "tier": "T1"
+  },
+  {
+   "id": "PT-SZ-11",
+   "slot": "core",
+   "score": 17.71,
+   "tier": "T2"
+  },
+  {
+   "id": "web.color-and-surfaces#15",
+   "slot": "core",
+   "score": 17.43,
+   "tier": "T2"
+  },
+  {
+   "id": "LHS-20",
+   "slot": "founder",
+   "score": 34.26,
+   "tier": "L"
+  },
+  {
+   "id": "LHS-04",
+   "slot": "founder",
+   "score": 34.14,
+   "tier": "L"
+  },
+  {
+   "id": "LHS-19",
+   "slot": "founder",
+   "score": 30.42,
+   "tier": "L"
+  },
+  {
+   "id": "LHS-08",
+   "slot": "founder",
+   "score": 28.4,
+   "tier": "L"
+  },
+  {
+   "id": "LHS-10",
+   "slot": "founder",
+   "score": 27.09,
+   "tier": "L"
+  },
+  {
+   "id": "LHS-06",
+   "slot": "founder",
+   "score": 26.9,
+   "tier": "L"
+  },
+  {
+   "id": "LHS-09",
+   "slot": "founder",
+   "score": 26.51,
+   "tier": "L"
+  },
+  {
+   "id": "LHS-05",
+   "slot": "founder",
+   "score": 25.99,
+   "tier": "L"
+  },
+  {
+   "id": "LHS-15",
+   "slot": "founder",
+   "score": 25.48,
+   "tier": "L"
+  },
+  {
+   "id": "LHS-16",
+   "slot": "founder",
+   "score": 25.22,
+   "tier": "L"
+  },
+  {
+   "id": "AH-CO-19",
+   "slot": "color",
+   "score": 31.38,
+   "tier": "T1"
+  },
+  {
+   "id": "AH-CO-28",
+   "slot": "color",
+   "score": 29.71,
+   "tier": "T1"
+  },
+  {
+   "id": "AH-CO-02",
+   "slot": "color",
+   "score": 28.16,
+   "tier": "T1"
+  },
+  {
+   "id": "web.color-and-surfaces#12",
+   "slot": "color",
+   "score": 28.04,
+   "tier": "T2"
+  },
+  {
+   "id": "systems-research.stripe#6",
+   "slot": "color",
+   "score": 27.8,
+   "tier": "T1"
+  },
+  {
+   "id": "LW-15",
+   "slot": "copy",
+   "score": 24.89,
+   "tier": "T2"
+  },
+  {
+   "id": "web.landing-page-anatomy#7",
+   "slot": "cta",
+   "score": 31.18,
+   "tier": "T2"
+  },
+  {
+   "id": "ui-pedia.13-buttons#45",
+   "slot": "cta",
+   "score": 28.31,
+   "tier": "T2"
+  },
+  {
+   "id": "LAI-73",
+   "slot": "cta",
+   "score": 27.95,
+   "tier": "T2"
+  },
+  {
+   "id": "dos-and-donts.dos-and-donts#49",
+   "slot": "cta",
+   "score": 26.53,
+   "tier": "T2"
+  },
+  {
+   "id": "dos-and-donts.dos-and-donts#84",
+   "slot": "cta",
+   "score": 25.2,
+   "tier": "T2"
+  },
+  {
+   "id": "LHS-11",
+   "slot": "hero",
+   "score": 33.7,
+   "tier": "L"
+  },
+  {
+   "id": "ui-pedia.20-cards#21",
+   "slot": "hero",
+   "score": 26.6,
+   "tier": "T2"
+  },
+  {
+   "id": "LHS-07",
+   "slot": "hero",
+   "score": 26.38,
+   "tier": "L"
+  },
+  {
+   "id": "ui-pedia.20-cards#18",
+   "slot": "hero",
+   "score": 26.3,
+   "tier": "T2"
+  },
+  {
+   "id": "LHS-01",
+   "slot": "hero",
+   "score": 25.85,
+   "tier": "L"
+  },
+  {
+   "id": "ui-pedia.20-cards#25",
+   "slot": "mobile",
+   "score": 25.72,
+   "tier": "T2"
+  },
+  {
+   "id": "SYS-CARBON-15",
+   "slot": "motion",
+   "score": 29.95,
+   "tier": "T1"
+  },
+  {
+   "id": "web.motion-and-animation#23",
+   "slot": "motion",
+   "score": 28.89,
+   "tier": "T2"
+  },
+  {
+   "id": "web-sources.craft-emil-kowalski#5",
+   "slot": "motion",
+   "score": 28.02,
+   "tier": "T2"
+  },
+  {
+   "id": "AH-MO-03",
+   "slot": "motion",
+   "score": 27.8,
+   "tier": "T1"
+  },
+  {
+   "id": "web-sources.craft-emil-kowalski#6",
+   "slot": "motion",
+   "score": 25.54,
+   "tier": "T2"
+  },
+  {
+   "id": "NNG-23",
+   "slot": "navigation",
+   "score": 26.63,
+   "tier": "T1"
+  },
+  {
+   "id": "NNG-14",
+   "slot": "navigation",
+   "score": 26.62,
+   "tier": "T1"
+  },
+  {
+   "id": "AR-07",
+   "slot": "navigation",
+   "score": 24.61,
+   "tier": "T2"
+  },
+  {
+   "id": "LDP-02",
+   "slot": "product",
+   "score": 30.25,
+   "tier": "T2"
+  },
+  {
+   "id": "MCB-14",
+   "slot": "spacing",
+   "score": 28.11,
+   "tier": "T2"
+  },
+  {
+   "id": "ui-pedia.06-whitespace#11",
+   "slot": "spacing",
+   "score": 27.04,
+   "tier": "T2"
+  },
+  {
+   "id": "ui-pedia.07-proximity#2",
+   "slot": "spacing",
+   "score": 25.93,
+   "tier": "T2"
+  },
+  {
+   "id": "ui-pedia.12-typography#13",
+   "slot": "typography",
+   "score": 51.35,
+   "tier": "T2"
+  },
+  {
+   "id": "AH-TY-10",
+   "slot": "typography",
+   "score": 50.34,
+   "tier": "T1"
+  },
+  {
+   "id": "AH-TY-05",
+   "slot": "typography",
+   "score": 50.1,
+   "tier": "T1"
+  },
+  {
+   "id": "ui-pedia.12-typography#17",
+   "slot": "typography",
+   "score": 49.64,
+   "tier": "T2"
+  },
+  {
+   "id": "ui-pedia.12-typography#18",
+   "slot": "typography",
+   "score": 45.36,
+   "tier": "T2"
+  }
+ ]
+}

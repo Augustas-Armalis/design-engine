@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pager: incidents triaged before you open the laptop</title>
+<meta name="description" content="Pager is an AI on-call agent. It triages the incident, names the likely cause with evidence and drafts the fix PR for you to review.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="../../system/systems/signal/theme.css">
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--surface-canvas);
+    color: var(--text-body);
+    font-family: var(--font-sans);
+    font-size: var(--text-body-md);
+    line-height: var(--text-body-md--line-height);
+    -webkit-font-smoothing: antialiased;
+  }
+  :focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
+  .vh { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+  .mono { font-family: var(--font-mono); font-size: var(--text-mono-sm); line-height: var(--text-mono-sm--line-height); letter-spacing: var(--text-mono-sm--letter-spacing); }
+  .label-sm { font-size: var(--text-label-sm); line-height: var(--text-label-sm--line-height); letter-spacing: var(--text-label-sm--letter-spacing); font-weight: var(--text-label-sm--font-weight); }
+  .body-sm { font-size: var(--text-body-sm); line-height: var(--text-body-sm--line-height); letter-spacing: var(--text-body-sm--letter-spacing); }
+  .muted { color: var(--text-muted); }
+
+  .wrap { max-width: calc(var(--content-max) + var(--space-80)); margin-inline: auto; padding-inline: var(--space-40); }
+
+  /* nav */
+  .nav { border-bottom: 1px solid var(--border-hairline); }
+  .nav .wrap { display: flex; align-items: center; height: var(--space-64); gap: var(--space-40); }
+  .brand { display: inline-flex; align-items: center; gap: var(--space-8); color: var(--text-strong); text-decoration: none; font-family: var(--font-display); font-weight: 700; font-size: var(--text-heading-sm); letter-spacing: -0.008em; }
+  .brand-mark { display: inline-grid; place-items: center; width: var(--space-24); height: var(--space-24); background: var(--surface-inverse); color: var(--text-inverse); font-family: var(--font-mono); font-size: var(--text-mono-sm); font-weight: 500; }
+  .nav-links { display: flex; gap: var(--space-4); margin: 0; padding: 0; list-style: none; }
+  .nav a.link { display: inline-flex; align-items: center; min-height: var(--control-md); padding-inline: var(--space-8); color: var(--text-body); text-decoration: none; font-size: var(--text-label-md); font-weight: var(--text-label-md--font-weight); transition: background-color var(--dur-fast) var(--ease-standard); }
+  .nav a.link:hover { background: var(--surface-hover); }
+  .nav .signin { margin-left: auto; }
+  .menu-btn { display: none; }
+
+  /* head */
+  .head { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: var(--space-24); align-items: end; padding-block: var(--space-48) var(--space-48); }
+  h1 {
+    grid-column: 1 / span 8;
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: var(--text-display-xl);
+    line-height: var(--text-display-xl--line-height);
+    letter-spacing: var(--text-display-xl--letter-spacing);
+    font-weight: var(--text-display-xl--font-weight);
+    color: var(--text-strong);
+    text-wrap: balance;
+  }
+  .pitch { grid-column: 9 / span 4; display: grid; gap: var(--space-24); }
+  .lede { margin: 0; font-size: var(--text-body-lg); line-height: var(--text-body-lg--line-height); color: var(--text-body); }
+
+  /* command bar CTA */
+  .cmd { display: flex; box-shadow: var(--shadow-float); background: var(--surface-raised); }
+  .cmd input {
+    flex: 1 1 auto; min-width: 0; height: var(--control-lg); border: 0; border-radius: var(--radius-md);
+    padding-inline: var(--space-12); background: var(--surface-raised); color: var(--text-strong);
+    font: inherit; font-size: var(--text-label-md);
+  }
+  .cmd input::placeholder { color: var(--text-muted); }
+  .cmd input:focus-visible { outline-offset: -2px; }
+  .cmd button {
+    flex: none; height: var(--control-lg); padding-inline: var(--space-16); border: 0; border-radius: var(--radius-sm);
+    background: var(--accent-solid); color: var(--text-on-accent); cursor: pointer;
+    font-family: var(--font-sans); font-size: var(--text-label-md); font-weight: 600;
+    transition: background-color var(--dur-fast) var(--ease-standard);
+  }
+  .cmd button:hover { background: var(--accent-solid-hover); }
+  .cmd button:active { background: var(--accent-solid-hover); box-shadow: inset 0 0 0 1px var(--text-strong); }
+  .cta-note { margin: calc(-1 * var(--space-8)) 0 0; }
+
+  /* incident record */
+  .record { margin: 0 0 var(--space-96); background: var(--surface-raised); box-shadow: var(--shadow-modal); }
+  .rec-head { display: flex; align-items: center; gap: var(--space-12); padding: var(--space-16) var(--space-24); border-bottom: 1px solid var(--border-hairline); flex-wrap: wrap; }
+  .rec-title { margin: 0; font-size: var(--text-heading-sm); line-height: 1.3; font-weight: 600; color: var(--text-strong); }
+  .tag { display: inline-flex; align-items: center; gap: var(--space-4); height: var(--space-24); padding-inline: var(--space-8); border: 1px solid; font-size: var(--text-label-sm); font-weight: 500; white-space: nowrap; }
+  .tag-sev { background: var(--danger-tint); color: var(--danger-text); border-color: var(--danger-border); }
+  .tag-state { background: var(--accent-tint); color: var(--accent-text); border-color: var(--accent-border); }
+  .sample { margin-left: auto; display: inline-flex; align-items: center; height: var(--space-24); padding-inline: var(--space-8); border: 1px dashed var(--border-strong); color: var(--text-muted); }
+
+  .clock { list-style: none; margin: 0; padding: var(--space-20) var(--space-24) var(--space-20); display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); border-bottom: 1px solid var(--border-hairline); background: var(--surface-sunken); }
+  .clock li { position: relative; padding-top: var(--space-20); padding-right: var(--space-16); }
+  .clock li::before { content: ""; position: absolute; top: var(--space-4); left: 0; right: 0; height: 1px; background: var(--border-strong); }
+  .clock li::after { content: ""; position: absolute; top: 0; left: 0; width: var(--space-8); height: var(--space-8); background: var(--text-strong); }
+  .clock li:last-child::before { right: auto; width: 0; }
+  .clock li.on::before { height: var(--space-2); top: calc(var(--space-4) - 1px); background: var(--text-strong); }
+  .clock li.alert::after { background: var(--danger-solid); }
+  .clock li.you::after { background: var(--accent-solid); width: var(--space-12); height: var(--space-12); top: calc(-1 * var(--space-2)); }
+  .clock time { display: block; color: var(--text-strong); font-weight: 500; }
+  .clock span { display: block; color: var(--text-muted); }
+  .clock li.you time, .clock li.you span { color: var(--accent-text); }
+
+  .panes { display: grid; grid-template-columns: 1fr 1fr 1.15fr; }
+  .pane { padding: var(--space-24); min-width: 0; }
+  .pane + .pane { border-left: 1px solid var(--border-hairline); }
+  .pane h3 { margin: 0 0 var(--space-16); display: flex; align-items: baseline; justify-content: space-between; gap: var(--space-8); font-size: var(--text-label-md); line-height: var(--text-label-md--line-height); font-weight: 600; color: var(--text-strong); }
+  .pane h3 .mono { font-weight: 400; color: var(--text-muted); }
+  .pane p { margin: 0; }
+
+  .metric { display: grid; gap: var(--space-8); padding-bottom: var(--space-16); margin-bottom: var(--space-16); border-bottom: 1px solid var(--border-hairline); }
+  .metric-row { display: flex; justify-content: space-between; align-items: baseline; gap: var(--space-8); }
+  .metric-val { font-family: var(--font-mono); font-size: var(--text-label-md); color: var(--text-strong); white-space: nowrap; }
+  .metric-val b { color: var(--danger-text); font-weight: 500; }
+  .spark { display: block; width: 100%; height: var(--space-48); }
+  .spark .line { fill: none; stroke: var(--danger-text); stroke-width: 1.5; vector-effect: non-scaling-stroke; }
+  .spark .deploy { stroke: var(--text-strong); stroke-width: 1; stroke-dasharray: 2 2; vector-effect: non-scaling-stroke; }
+  .spark .base { stroke: var(--border-hairline); stroke-width: 1; vector-effect: non-scaling-stroke; }
+
+  .signals { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-12); }
+  .signals li { display: grid; grid-template-columns: var(--space-80) 1fr; gap: var(--space-8); align-items: baseline; }
+  .signals .k { color: var(--text-muted); }
+  .signals .ruled { color: var(--text-muted); }
+
+  .confidence { display: inline-flex; align-items: center; gap: var(--space-8); color: var(--text-strong); }
+  .pips { display: inline-flex; gap: var(--space-2); }
+  .pips i { width: var(--space-8); height: var(--space-8); background: var(--text-strong); }
+  .cause { font-size: var(--text-body-md); line-height: var(--text-body-md--line-height); color: var(--text-body); margin-bottom: var(--space-16) !important; }
+  .cause code, .inline-code { font-family: var(--font-mono); font-size: 1em; }
+  .evidence { list-style: none; margin: 0 0 var(--space-20); padding: 0; display: grid; gap: var(--space-8); }
+  .evidence li { display: grid; grid-template-columns: var(--space-16) 1fr; gap: var(--space-4); color: var(--text-body); }
+  .evidence li::before { content: "+"; font-family: var(--font-mono); color: var(--text-muted); }
+  .now { padding: var(--space-12); background: var(--surface-sunken); border-left: 2px solid var(--text-strong); }
+  .now strong { display: block; color: var(--text-strong); font-weight: 600; }
+
+  .pr-title { display: block; color: var(--text-strong); font-weight: 600; margin-bottom: var(--space-4); }
+  .diff { margin: var(--space-12) 0; border: 1px solid var(--border-hairline); background: var(--surface-canvas); }
+  .diff-file { padding: var(--space-4) var(--space-12); border-bottom: 1px solid var(--border-hairline); color: var(--text-muted); background: var(--surface-sunken); }
+  .diff pre { margin: 0; padding: var(--space-8) 0; font-family: var(--font-mono); font-size: var(--text-mono-sm); line-height: var(--text-mono-sm--line-height); overflow-x: auto; }
+  .diff .l { display: block; padding-inline: var(--space-12); white-space: pre; }
+  .diff .del { background: var(--danger-tint); color: var(--danger-text); }
+  .diff .add { background: var(--success-tint); color: var(--success-text); }
+  .checks { list-style: none; margin: 0 0 var(--space-16); padding: 0; display: grid; gap: var(--space-4); }
+  .checks li { display: flex; gap: var(--space-8); align-items: baseline; }
+  .checks .ok { color: var(--success-text); font-family: var(--font-mono); }
+  .actions { display: flex; align-items: center; gap: var(--space-8); flex-wrap: wrap; }
+  .fake-btn { display: inline-flex; align-items: center; height: var(--control-md); padding-inline: var(--space-12); font-size: var(--text-label-md); font-weight: 500; }
+  .fake-primary { box-shadow: 0 0 0 1px var(--text-strong); color: var(--text-strong); background: var(--surface-raised); }
+  .fake-ghost { color: var(--text-muted); }
+  .awaiting { margin-left: auto; color: var(--accent-text); }
+
+  .only-mobile { display: none; }
+
+  /* ---------- mobile composition ---------- */
+  @media (max-width: 760px) {
+    .wrap { padding-inline: var(--space-16); }
+    .nav .wrap { height: var(--space-64); gap: var(--space-8); }
+    .nav-links { display: none; }
+    .nav a.link { min-height: var(--space-48); }
+    .brand { min-height: var(--space-48); }
+    .menu-btn { display: inline-flex; align-items: center; justify-content: center; width: var(--space-48); height: var(--space-48); border: 0; background: transparent; color: var(--text-strong); cursor: pointer; }
+    .menu-btn svg { width: var(--space-20); height: var(--space-20); }
+
+    .head { display: block; padding-block: var(--space-32) var(--space-32); }
+    h1 { margin-bottom: var(--space-20); }
+    .pitch { gap: var(--space-20); }
+    .cmd { flex-direction: column; }
+    .cmd input, .cmd button { height: var(--space-48); }
+    .cmd input { border-bottom: 1px solid var(--border-hairline); border-radius: var(--radius-md) var(--radius-md) 0 0; }
+    .cta-note { margin-top: 0; }
+
+    .record { margin-bottom: var(--space-48); margin-right: var(--space-8); }
+    .rec-head { padding: var(--space-16); gap: var(--space-8); }
+    .rec-title { flex-basis: 100%; order: -1; }
+    .rec-id { order: -2; flex-basis: 100%; }
+    .sample { margin-left: 0; }
+    .clock { grid-template-columns: 1fr; padding: var(--space-16); row-gap: var(--space-0); }
+    .clock li { display: grid; grid-template-columns: var(--space-48) 1fr; column-gap: var(--space-12); padding: var(--space-4) 0 var(--space-4) var(--space-20); }
+    .clock li::before { top: 0; bottom: 0; left: var(--space-4); right: auto; width: 1px; height: auto; }
+    .clock li:first-child::before { top: var(--space-12); }
+    .clock li:last-child::before { bottom: auto; height: var(--space-12); width: 1px; }
+    .clock li::after { top: var(--space-8); }
+    .clock li.you::after { top: var(--space-4); left: calc(-1 * var(--space-2)); }
+    .clock li.hide-sm { display: none; }
+    .clock li.on::before { width: var(--space-2); height: auto; top: 0; bottom: 0; left: calc(var(--space-4) - 1px); }
+    .clock li.alert.on::before { top: var(--space-12); }
+    .panes { grid-template-columns: 1fr; }
+    .pane { padding: var(--space-16); }
+    .pane + .pane { border-left: 0; border-top: 1px solid var(--border-hairline); }
+    .pane-read { display: none; }
+    .only-mobile { display: block; }
+    .awaiting { margin-left: 0; flex-basis: 100%; }
+  }
+  @media (min-width: 761px) and (max-width: 1100px) {
+    h1 { grid-column: 1 / -1; margin-bottom: var(--space-32); }
+    .pitch { grid-column: 1 / span 8; }
+    .panes { grid-template-columns: 1fr 1fr; }
+    .pane-fix { grid-column: 1 / -1; border-left: 0 !important; border-top: 1px solid var(--border-hairline); }
+  }
+</style>
+</head>
+<body>
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#"><span class="brand-mark" aria-hidden="true">P</span>Pager</a>
+    <nav aria-label="Primary">
+      <ul class="nav-links">
+        <li><a class="link" href="#how">How it works</a></li>
+        <li><a class="link" href="#integrations">Integrations</a></li>
+        <li><a class="link" href="#docs">Docs</a></li>
+        <li><a class="link" href="#pricing">Pricing</a></li>
+      </ul>
+    </nav>
+    <a class="link signin" href="#signin">Sign in</a>
+    <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false">
+      <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M2 5h16M2 10h16M2 15h16" stroke="currentColor" stroke-width="1.5"/></svg>
+    </button>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <section class="head" aria-labelledby="hero-title">
+      <h1 id="hero-title">Triaged before you open the laptop.</h1>
+      <div class="pitch">
+        <p class="lede">Pager reads the alert, the last deploy, logs and traces, finds the likely cause and drafts the fix PR. You check the evidence and ship.</p>
+        <form class="cmd" action="#trial" method="post">
+          <label class="vh" for="email">Work email</label>
+          <input id="email" name="email" type="email" autocomplete="email" placeholder="you@company.com" required>
+          <button type="submit">Start 14-day trial</button>
+        </form>
+        <p class="cta-note body-sm muted">14 days, on your own alerts and repo.</p>
+      </div>
+    </section>
+
+    <figure class="record" aria-label="Sample incident in Pager: checkout-api errors triaged, cause found and fix PR drafted in 7 minutes">
+      <div class="rec-head">
+        <span class="rec-id mono muted">INC-2291</span>
+        <h2 class="rec-title">checkout-api: 5xx on POST /checkout</h2>
+        <span class="tag tag-sev">SEV-2</span>
+        <span class="tag tag-state">Fix PR ready for your review</span>
+        <span class="sample label-sm">Sample incident, fictional data</span>
+      </div>
+
+      <ol class="clock mono" aria-label="Incident timeline">
+        <li class="hide-sm"><time datetime="03:04">03:04</time><span>Deploy v2.41.0</span></li>
+        <li class="alert on"><time datetime="03:12">03:12</time><span>Alert, you're paged</span></li>
+        <li class="hide-sm on"><time datetime="03:13">03:13</time><span>Pager starts triage</span></li>
+        <li class="on"><time datetime="03:16">03:16</time><span>Likely cause found</span></li>
+        <li class="on"><time datetime="03:19">03:19</time><span>PR #4127 drafted</span></li>
+        <li class="you"><time datetime="03:21">03:21</time><span>You open the laptop</span></li>
+      </ol>
+
+      <div class="panes">
+        <section class="pane pane-read" aria-label="What Pager read">
+          <h3>What Pager read <span class="mono">4 sources</span></h3>
+          <div class="metric">
+            <div class="metric-row">
+              <span class="body-sm muted">5xx rate, POST /checkout</span>
+              <span class="metric-val">0.4% → <b>11.8%</b></span>
+            </div>
+            <svg class="spark" viewBox="0 0 240 48" preserveAspectRatio="none" role="img" aria-label="Error rate flat until 03:05, then climbs to 11.8% by 03:12">
+              <line class="base" x1="0" y1="46" x2="240" y2="46"/>
+              <line class="deploy" x1="60" y1="0" x2="60" y2="48"/>
+              <polyline class="line" points="0,45 10,44 20,45 30,44 40,45 50,44 60,45 70,40 80,33 90,27 100,19 110,13 120,9 130,7 140,6 150,5 160,6 170,5 180,4 190,5 200,5 210,4 220,5 230,4 240,5"/>
+            </svg>
+            <div class="metric-row mono muted"><span>02:58</span><span>deploy 03:04</span><span>03:21</span></div>
+          </div>
+          <ul class="signals body-sm">
+            <li><span class="k mono">deploy</span><span>v2.41.0 at 03:04:44; first error 68s later</span></li>
+            <li><span class="k mono">logs</span><span><span class="inline-code">PriceLookupTimeout</span> ×2,341 in cart/pricing.ts:88</span></li>
+            <li><span class="k mono">traces</span><span>pricing-svc answers 413 to batches over 100 SKUs</span></li>
+            <li><span class="k mono">ruled out</span><span class="ruled">payments-svc, inventory-svc, DB latency (normal)</span></li>
+          </ul>
+        </section>
+
+        <section class="pane pane-cause" aria-label="Likely cause">
+          <h3>Likely cause <span class="confidence label-sm"><span class="pips" aria-hidden="true"><i></i><i></i><i></i></span>3 of 3 signals agree</span></h3>
+          <p class="cause">Commit <code>3f9c2a1</code> groups price lookups from concurrent checkouts into one call. Under the 03:00 batch-order traffic the group passes pricing-svc's 100-SKU limit, and every call in it fails.</p>
+          <ul class="evidence body-sm">
+            <li class="only-mobile">Errors start 68s after deploy v2.41.0</li>
+            <li>Only carts priced through the new batch path fail</li>
+            <li>Replaying one failed request against v2.40.3 succeeds</li>
+          </ul>
+          <div class="now body-sm">
+            <strong>Fastest safe move</strong>
+            Roll back to <span class="inline-code">v2.40.3</span> (about 2 min), or merge the fix and keep the batching.
+          </div>
+        </section>
+
+        <section class="pane pane-fix" aria-label="Drafted fix">
+          <h3>Drafted fix <span class="mono">PR #4127</span></h3>
+          <span class="pr-title body-sm">fix(pricing): split batched lookups at 100 SKUs</span>
+          <span class="body-sm muted">pager-bot wants to merge 1 commit into main</span>
+          <div class="diff">
+            <div class="diff-file mono">cart/pricing.ts</div>
+<pre><span class="l del">- const prices = await lookup(batch)</span><span class="l add">+ const prices = (await Promise.all(</span><span class="l add">+   chunk(batch, MAX_SKUS).map(lookup)</span><span class="l add">+ )).flat()</span></pre>
+          </div>
+          <ul class="checks body-sm">
+            <li><span class="ok" aria-hidden="true">✓</span><span>214 unit tests passed</span></li>
+            <li><span class="ok" aria-hidden="true">✓</span><span>20 of 20 failed requests replay as 200 OK</span></li>
+          </ul>
+          <div class="actions" aria-hidden="true">
+            <span class="fake-btn fake-primary">Review PR</span>
+            <span class="fake-btn fake-ghost">Roll back instead</span>
+            <span class="awaiting body-sm">Waiting on you</span>
+          </div>
+        </section>
+      </div>
+    </figure>
+  </div>
+</main>
+</body>
+</html>

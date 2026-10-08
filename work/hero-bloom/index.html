@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Evening: say your day out loud</title>
+<meta name="description" content="Evening is an iPhone journal you talk to for two minutes before bed. It writes a short entry in your words and, once a week, one thing it noticed.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Nunito+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="../../system/systems/bloom/theme.css">
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body {
+    background: var(--surface-canvas);
+    color: var(--text-body);
+    font-family: var(--font-sans);
+    font-size: var(--text-body-md);
+    line-height: var(--text-body-md--line-height);
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: inherit; }
+  :focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
+  .skip { position: absolute; left: var(--space-16); top: var(--space-16); padding: var(--space-8) var(--space-16); background: var(--surface-raised); border-radius: var(--radius-md); transform: translateY(-200%); }
+  .skip:focus-visible { transform: none; }
+
+  /* ---------- the seam: paper (before) | evening paper (after) ---------- */
+  .hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .before { padding: var(--space-20) var(--space-16) var(--space-48); }
+  .after  { background: var(--surface-inverse); color: var(--text-inverse); padding: var(--space-40) var(--space-16) var(--space-64); }
+
+  /* nav: wordmark lives on the paper, links live on the evening side (desktop) */
+  .wordmark {
+    font-family: var(--font-display);
+    font-size: var(--text-heading-md);
+    line-height: var(--text-heading-md--line-height);
+    letter-spacing: var(--text-heading-md--letter-spacing);
+    color: var(--text-strong);
+    text-decoration: none;
+    display: inline-flex; align-items: center; min-height: var(--control-md);
+  }
+  .top { display: flex; align-items: center; justify-content: space-between; gap: var(--space-16); }
+  .links { display: flex; gap: var(--space-24); }
+  .links a {
+    font-size: var(--text-label-md); line-height: var(--text-label-md--line-height); font-weight: 600;
+    color: var(--text-inverse); text-decoration: none;
+    display: inline-flex; align-items: center; min-height: var(--control-md);
+    border-bottom: 1px solid transparent;
+    transition: border-color var(--dur-fast) var(--ease-standard);
+  }
+  .links a:hover { border-bottom-color: var(--text-inverse); }
+  .links-mobile { display: flex; }
+  .links-mobile a { font-size: var(--text-label-md); font-weight: 600; color: var(--text-strong); display: inline-flex; align-items: center; min-height: var(--control-md); text-underline-offset: var(--space-4); }
+  .links-desktop { display: none; }
+
+  h1 {
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-size: var(--text-display-lg);
+    line-height: var(--text-display-lg--line-height);
+    letter-spacing: var(--text-display-lg--letter-spacing);
+    color: var(--text-strong);
+    margin: var(--space-32) 0 0;
+    max-width: 14ch;
+    text-wrap: balance;
+  }
+  @media (min-width: 1024px) { .ln { display: block; white-space: nowrap; } }
+  .lede {
+    font-size: var(--text-body-lg); line-height: var(--text-body-lg--line-height);
+    color: var(--text-body);
+    margin: var(--space-20) 0 0;
+    max-width: 31em;
+  }
+  .act { margin-top: var(--space-32); display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-12) var(--space-20); }
+  .cta {
+    display: inline-flex; align-items: center; justify-content: center; gap: var(--space-12);
+    min-height: var(--control-lg);
+    padding: 0 var(--space-32) 0 var(--space-24);
+    border-radius: var(--radius-md);
+    background: var(--accent-solid); color: var(--text-on-accent);
+    font-size: var(--text-label-md); line-height: var(--text-label-md--line-height); font-weight: 700;
+    text-decoration: none;
+    box-shadow: var(--shadow-raised);
+    transition: background-color var(--dur-fast) var(--ease-standard), transform var(--dur-fast) var(--ease-standard);
+  }
+  .cta:hover { background: var(--accent-solid-hover); }
+  .cta:active { transform: translateY(1px); }
+  .cta svg { width: var(--space-16); height: var(--space-24); flex: none; }
+  .note { font-size: var(--text-label-sm); line-height: var(--text-label-sm--line-height); color: var(--text-muted); margin: 0; }
+
+  /* ---------- before: what you said (sample transcript) ---------- */
+  .said { margin-top: var(--space-48); padding-top: var(--space-24); border-top: 1px solid var(--border-hairline); max-width: 34em; }
+  .said-head { display: flex; align-items: baseline; flex-wrap: wrap; gap: var(--space-8) var(--space-12); margin: 0 0 var(--space-16); }
+  .said-head h2 { margin: 0; font-size: var(--text-label-md); line-height: var(--text-label-md--line-height); font-weight: 700; color: var(--text-strong); }
+  .mono { font-family: var(--font-mono); font-size: var(--text-mono-sm); line-height: var(--text-mono-sm--line-height); color: var(--text-muted); }
+  .tag {
+    font-size: var(--text-label-sm); line-height: var(--text-label-sm--line-height); font-weight: 600;
+    color: var(--accent-text); background: var(--accent-tint);
+    padding: var(--space-2) var(--space-8); border-radius: var(--radius-xs);
+  }
+  .said ol { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-12); }
+  .said li { display: grid; grid-template-columns: var(--space-48) minmax(0, 1fr); gap: var(--space-12); align-items: baseline; }
+  .said q { quotes: none; color: var(--text-muted); font-size: var(--text-body-md); line-height: var(--text-body-md--line-height); }
+  .said mark { background: var(--accent-tint); color: var(--accent-text); border-radius: var(--radius-xs); padding: 0 var(--space-2); box-decoration-break: clone; -webkit-box-decoration-break: clone; }
+  .said q, .said-foot, .lede, .entry p { text-wrap: pretty; }
+  .said-foot { margin: var(--space-16) 0 0; font-size: var(--text-label-sm); line-height: var(--text-label-sm--line-height); color: var(--text-muted); padding-left: calc(var(--space-48) + var(--space-12)); }
+
+  /* ---------- after: the phone ---------- */
+  .stage { display: grid; justify-items: center; }
+  .phone {
+    width: min(100%, calc(var(--space-160) * 2 + var(--space-32)));
+    background: var(--text-strong);
+    color: var(--text-body);
+    border-radius: calc(var(--radius-xl) * 2);
+    padding: var(--space-8);
+    box-shadow: 0 0 0 2px var(--border-strong), var(--shadow-modal);
+    aspect-ratio: 9 / 19;
+    display: flex;
+    margin: 0;
+    animation: settle var(--dur-slow) var(--ease-enter) both;
+  }
+  @keyframes settle { from { opacity: 0; transform: translateY(var(--space-16)); } to { opacity: 1; transform: none; } }
+  @media (prefers-reduced-motion: reduce) {
+    .phone { animation-name: fade; animation-duration: 160ms; }
+    @keyframes fade { from { opacity: 0; } to { opacity: 1; } }
+  }
+  .screen {
+    border-radius: calc(var(--radius-xl) * 2 - var(--space-8));
+    background: var(--surface-raised);
+    flex: 1; display: flex; flex-direction: column;
+    padding: var(--space-12) var(--space-20) var(--space-20);
+  }
+  .status { display: flex; justify-content: space-between; align-items: center; padding: 0 var(--space-12); font-size: var(--text-label-sm); line-height: var(--text-label-sm--line-height); font-weight: 700; }
+  .status svg { width: calc(var(--space-24) + var(--space-4)); height: var(--space-12); }
+  .app-bar { display: flex; justify-content: space-between; align-items: center; margin-top: var(--space-24); }
+  .app-bar p { margin: 0; font-size: var(--text-label-sm); line-height: var(--text-label-sm--line-height); font-weight: 600; }
+  .ph-tag { font-size: var(--text-label-sm); line-height: var(--text-label-sm--line-height); font-weight: 700; color: var(--accent-text); background: var(--accent-tint); padding: var(--space-2) var(--space-8); border-radius: var(--radius-xs); }
+  .entry h3 {
+    font-family: var(--font-display); font-weight: 400;
+    font-size: var(--text-heading-md); line-height: var(--text-heading-md--line-height); letter-spacing: var(--text-heading-md--letter-spacing);
+    margin: var(--space-12) 0 var(--space-8);
+  }
+  .entry p { margin: 0; font-size: var(--text-body-md); line-height: 1.5; }
+  .entry mark { background: var(--accent-tint); color: var(--accent-text); border-radius: var(--radius-xs); padding: 0 var(--space-2); box-decoration-break: clone; -webkit-box-decoration-break: clone; }
+  .noticed {
+    margin-top: var(--space-24);
+    background: var(--accent-solid); color: var(--text-on-accent);
+    border-radius: var(--radius-lg);
+    padding: var(--space-16) var(--space-20) var(--space-20);
+  }
+  .noticed h4 { margin: 0; font-size: var(--text-label-sm); line-height: var(--text-label-sm--line-height); font-weight: 700; }
+  .noticed p { margin: var(--space-8) 0 0; font-family: var(--font-display); font-size: var(--text-heading-sm); line-height: var(--text-heading-sm--line-height); }
+  .week { list-style: none; margin: var(--space-16) 0 0; padding: 0; display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: var(--space-4); text-align: center; }
+  .week li { display: grid; justify-items: center; gap: var(--space-4); font-size: var(--text-label-sm); line-height: var(--text-label-sm--line-height); font-weight: 600; }
+  .dot { width: var(--space-12); height: var(--space-12); border-radius: var(--radius-md); border: 2px solid var(--text-on-accent); }
+  .dot.walked { background: var(--text-on-accent); }
+  .dot.later { border-style: dotted; opacity: 0.6; }
+  .noticed .week-key { font-family: var(--font-sans); margin: var(--space-12) 0 0; font-size: var(--text-label-sm); line-height: var(--text-label-sm--line-height); }
+  .earlier { margin-top: var(--space-20); }
+  .earlier h4 { margin: 0 0 var(--space-4); font-size: var(--text-label-sm); line-height: var(--text-label-sm--line-height); font-weight: 700; color: var(--text-muted); }
+  .earlier ul { list-style: none; margin: 0; padding: 0; }
+  .earlier li { display: grid; grid-template-columns: var(--space-40) minmax(0, 1fr); gap: var(--space-8); padding: var(--space-8) 0; border-bottom: 1px solid var(--border-hairline); font-size: var(--text-label-md); line-height: var(--text-label-md--line-height); font-weight: 600; color: var(--text-strong); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .earlier li span { font-family: var(--font-mono); font-size: var(--text-mono-sm); font-weight: 400; color: var(--text-muted); }
+  .talk { margin-top: auto; padding-top: var(--space-20); display: flex; align-items: center; gap: var(--space-12); }
+  .mic { width: var(--control-lg); height: var(--control-lg); border-radius: var(--radius-md); display: grid; place-items: center; background: var(--accent-solid); color: var(--text-on-accent); flex: none; }
+  .mic svg { width: var(--space-20); height: var(--space-24); }
+  .talk p { margin: 0; font-size: var(--text-label-md); line-height: var(--text-label-md--line-height); font-weight: 600; }
+  .talk .mono-inv { font-family: var(--font-mono); font-size: var(--text-mono-sm); font-weight: 400; display: block; }
+
+  /* ---------- desktop composition ---------- */
+  @media (min-width: 1024px) {
+    .hero {
+      grid-template-columns: minmax(0, 1fr) minmax(0, 46%);
+      min-height: 100svh;
+    }
+    .before {
+      padding: var(--space-24) var(--space-64) var(--space-48) max(var(--space-48), calc((100vw - var(--content-max)) / 2));
+      display: flex; flex-direction: column;
+    }
+    .after {
+      padding: var(--space-24) max(var(--space-48), calc((100vw - var(--content-max)) / 2)) var(--space-40) var(--space-64);
+      display: flex; flex-direction: column;
+    }
+    .links-mobile { display: none; }
+    .links-desktop { display: flex; justify-content: flex-end; }
+    h1 { margin-top: var(--space-64); }
+    .said { margin-top: auto; }
+    .stage { flex: 1; align-content: center; padding-top: var(--space-16); }
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<main id="main" class="hero">
+
+  <div class="before">
+    <header class="top">
+      <a class="wordmark" href="#main" aria-label="Evening, home">Evening</a>
+      <nav class="links-mobile" aria-label="Primary (mobile)">
+        <a href="#sample-week">Sample week</a>
+      </nav>
+    </header>
+
+    <h1><span class="ln">Say your day out&nbsp;loud.</span> <span class="ln">Evening writes it down.</span></h1>
+    <p class="lede">For everyone who bought the nice notebook and stopped by February. Talk for two minutes before bed; Evening turns it into a short entry in your own words, and once a week tells you one thing it noticed.</p>
+    <div class="act">
+      <a class="cta" href="#download">
+        <svg viewBox="0 0 16 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="1" width="14" height="22" rx="3"/><path d="M6 19h4"/></svg>
+        Download for iPhone
+      </a>
+      <p class="note">Two minutes a night. Nothing to type.</p>
+    </div>
+
+    <section class="said" aria-labelledby="said-title">
+      <div class="said-head">
+        <h2 id="said-title">What you said</h2>
+        <span class="mono">Thu 22:47 · 2:04</span>
+        <span class="tag">Sample</span>
+      </div>
+      <ol>
+        <li><span class="mono">0:09</span><q>So work ran long again and I skipped lunch, which, fine. Whatever.</q></li>
+        <li><span class="mono">0:41</span><q>But I <mark>walked home instead of getting the bus</mark>, and the light on the canal was this orange thing. Best part of the day.</q></li>
+        <li><span class="mono">1:14</span><q>Mum called. Didn't pick up. I'll ring her tomorrow, I keep saying that.</q></li>
+        <li><span class="mono">1:52</span><q>Um. I think I'm <mark>tired, but not the bad kind</mark> of tired?</q></li>
+      </ol>
+      <p class="said-foot">Evening keeps the marked parts and leaves the rest.</p>
+    </section>
+  </div>
+
+  <div class="after">
+    <nav class="links-desktop" aria-label="Primary">
+      <div class="links">
+        <a href="#how">How it works</a>
+        <a href="#sample-week">A sample week</a>
+        <a href="#privacy">Privacy</a>
+      </div>
+    </nav>
+
+    <div class="stage">
+      <figure class="phone" aria-label="Sample Evening screen: Thursday's entry and this week's pattern">
+        <div class="screen">
+          <div class="status" aria-hidden="true">
+            <span>22:49</span>
+            <svg viewBox="0 0 28 12" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="1" width="22" height="10" rx="3"/><rect x="3" y="3" width="13" height="6" rx="1.5" fill="currentColor" stroke="none"/><path d="M26 4.5v3"/></svg>
+          </div>
+
+          <div class="app-bar">
+            <p>Thursday, 16 October</p>
+            <span class="ph-tag">Sample</span>
+          </div>
+
+          <article class="entry">
+            <h3>The long way home</h3>
+            <p>Work ran long and I skipped lunch again. I <mark>walked home instead of getting the bus</mark>, and the light on the canal was the best part of the day. <mark>Tired, but not the bad kind.</mark></p>
+          </article>
+
+          <section class="noticed" aria-labelledby="noticed-title">
+            <h4 id="noticed-title">Something I noticed this week</h4>
+            <p>You sounded lighter on the evenings you walked home.</p>
+            <ol class="week" aria-label="Evenings this week">
+              <li><span class="dot walked"></span>M</li>
+              <li><span class="dot"></span>T</li>
+              <li><span class="dot walked"></span>W</li>
+              <li><span class="dot walked"></span>T</li>
+              <li><span class="dot later"></span>F</li>
+              <li><span class="dot later"></span>S</li>
+              <li><span class="dot later"></span>S</li>
+            </ol>
+            <p class="week-key">3 of 4 evenings. A pattern, not advice.</p>
+          </section>
+
+          <section class="earlier" aria-labelledby="earlier-title">
+            <h4 id="earlier-title">Earlier this week</h4>
+            <ul>
+              <li><span>Wed</span>Bread, rain, an early night</li>
+              <li><span>Mon</span>Called Dad back</li>
+            </ul>
+          </section>
+
+          <div class="talk" aria-hidden="true">
+            <span class="mic"><svg viewBox="0 0 20 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="6" y="1" width="8" height="14" rx="4"/><path d="M2 11a8 8 0 0 0 16 0M10 19v4"/></svg></span>
+            <p>Talk about today<span class="mono-inv">2:00</span></p>
+          </div>
+        </div>
+      </figure>
+    </div>
+  </div>
+
+</main>
+</body>
+</html>

@@ -1,0 +1,368 @@
+{
+ "name": "hero-bloom",
+ "brief": "Evening: consumer AI journaling iPhone app; talk 2 minutes at night, get a short entry and one gentle weekly pattern; for busy adults who dropped journaling; one action download for iPhone; proof is a phone screen with sample entry + pattern",
+ "type": "hero",
+ "generated": "2026-10-08T18:50:29",
+ "rules": [
+  {
+   "id": "systems-research.tailwind-catalyst#4",
+   "slot": "core",
+   "score": 38.4,
+   "tier": "T1"
+  },
+  {
+   "id": "AH-MO-23",
+   "slot": "core",
+   "score": 35.18,
+   "tier": "T1"
+  },
+  {
+   "id": "systems-research.magic-ui#5",
+   "slot": "core",
+   "score": 34.08,
+   "tier": "T1"
+  },
+  {
+   "id": "LDP-16",
+   "slot": "core",
+   "score": 33.34,
+   "tier": "T2"
+  },
+  {
+   "id": "WCSS-39",
+   "slot": "core",
+   "score": 33.07,
+   "tier": "T1"
+  },
+  {
+   "id": "web.courses-and-curricula#62",
+   "slot": "core",
+   "score": 28.03,
+   "tier": "T2"
+  },
+  {
+   "id": "systems-research.gestalt#8",
+   "slot": "core",
+   "score": 27.99,
+   "tier": "T1"
+  },
+  {
+   "id": "web-sources.a11y-project-checklist#27",
+   "slot": "core",
+   "score": 24.77,
+   "tier": "T1"
+  },
+  {
+   "id": "web-sources.a11y-project-checklist#54",
+   "slot": "core",
+   "score": 22.4,
+   "tier": "T1"
+  },
+  {
+   "id": "AH-TY-01",
+   "slot": "core",
+   "score": 22.28,
+   "tier": "T1"
+  },
+  {
+   "id": "systems-research.gestalt#4",
+   "slot": "core",
+   "score": 21.99,
+   "tier": "T1"
+  },
+  {
+   "id": "web.color-and-surfaces#3",
+   "slot": "core",
+   "score": 20.56,
+   "tier": "T2"
+  },
+  {
+   "id": "ui-pedia.13-buttons#6",
+   "slot": "core",
+   "score": 20.37,
+   "tier": "T2"
+  },
+  {
+   "id": "PT-SZ-08",
+   "slot": "core",
+   "score": 20.28,
+   "tier": "T2"
+  },
+  {
+   "id": "ui-pedia.03-balance#17",
+   "slot": "core",
+   "score": 16.65,
+   "tier": "T2"
+  },
+  {
+   "id": "web.courses-and-curricula#9",
+   "slot": "core",
+   "score": 16.44,
+   "tier": "T2"
+  },
+  {
+   "id": "LHS-13",
+   "slot": "founder",
+   "score": 37.48,
+   "tier": "L"
+  },
+  {
+   "id": "LHS-20",
+   "slot": "founder",
+   "score": 37.14,
+   "tier": "L"
+  },
+  {
+   "id": "LHS-01",
+   "slot": "founder",
+   "score": 32.59,
+   "tier": "L"
+  },
+  {
+   "id": "LHS-19",
+   "slot": "founder",
+   "score": 32.43,
+   "tier": "L"
+  },
+  {
+   "id": "LHS-04",
+   "slot": "founder",
+   "score": 31.02,
+   "tier": "L"
+  },
+  {
+   "id": "LHS-09",
+   "slot": "founder",
+   "score": 30.89,
+   "tier": "L"
+  },
+  {
+   "id": "LHS-03",
+   "slot": "founder",
+   "score": 30.14,
+   "tier": "L"
+  },
+  {
+   "id": "LHS-02",
+   "slot": "founder",
+   "score": 30.12,
+   "tier": "L"
+  },
+  {
+   "id": "LHS-08",
+   "slot": "founder",
+   "score": 28.95,
+   "tier": "L"
+  },
+  {
+   "id": "LHS-18",
+   "slot": "founder",
+   "score": 28.64,
+   "tier": "L"
+  },
+  {
+   "id": "AH-CO-19",
+   "slot": "color",
+   "score": 30.34,
+   "tier": "T1"
+  },
+  {
+   "id": "AH-CO-02",
+   "slot": "color",
+   "score": 29.05,
+   "tier": "T1"
+  },
+  {
+   "id": "LAI-65",
+   "slot": "color",
+   "score": 28.53,
+   "tier": "T2"
+  },
+  {
+   "id": "web.color-and-surfaces#10",
+   "slot": "color",
+   "score": 28.48,
+   "tier": "T2"
+  },
+  {
+   "id": "web.color-and-surfaces#9",
+   "slot": "color",
+   "score": 26.71,
+   "tier": "T2"
+  },
+  {
+   "id": "AH-WR-07",
+   "slot": "copy",
+   "score": 27.05,
+   "tier": "T1"
+  },
+  {
+   "id": "LAI-74",
+   "slot": "cta",
+   "score": 32.65,
+   "tier": "T2"
+  },
+  {
+   "id": "LAI-73",
+   "slot": "cta",
+   "score": 30.8,
+   "tier": "T2"
+  },
+  {
+   "id": "ui-pedia.13-buttons#45",
+   "slot": "cta",
+   "score": 30.03,
+   "tier": "T2"
+  },
+  {
+   "id": "LAI-80",
+   "slot": "cta",
+   "score": 29.55,
+   "tier": "T2"
+  },
+  {
+   "id": "dos-and-donts.dos-and-donts#49",
+   "slot": "cta",
+   "score": 29.36,
+   "tier": "T2"
+  },
+  {
+   "id": "LHS-11",
+   "slot": "hero",
+   "score": 31.91,
+   "tier": "L"
+  },
+  {
+   "id": "LHS-45",
+   "slot": "hero",
+   "score": 29.43,
+   "tier": "T2"
+  },
+  {
+   "id": "web.teardown-synthesis#15",
+   "slot": "hero",
+   "score": 27.08,
+   "tier": "T1"
+  },
+  {
+   "id": "WDD-05",
+   "slot": "mobile",
+   "score": 30.08,
+   "tier": "T1"
+  },
+  {
+   "id": "ui-pedia.18-animation-and-microinteraction#12",
+   "slot": "motion",
+   "score": 29.82,
+   "tier": "T2"
+  },
+  {
+   "id": "AH-MO-03",
+   "slot": "motion",
+   "score": 28.75,
+   "tier": "T1"
+  },
+  {
+   "id": "systems-research.gestalt#9",
+   "slot": "motion",
+   "score": 27.51,
+   "tier": "T1"
+  },
+  {
+   "id": "SYS-CARBON-15",
+   "slot": "motion",
+   "score": 26.98,
+   "tier": "T1"
+  },
+  {
+   "id": "web-sources.craft-emil-kowalski#18",
+   "slot": "motion",
+   "score": 25.82,
+   "tier": "T2"
+  },
+  {
+   "id": "ui-pedia.21-screens#4",
+   "slot": "navigation",
+   "score": 29.93,
+   "tier": "T2"
+  },
+  {
+   "id": "GOV-01",
+   "slot": "navigation",
+   "score": 26.64,
+   "tier": "T1"
+  },
+  {
+   "id": "GOV-70",
+   "slot": "navigation",
+   "score": 25.33,
+   "tier": "T1"
+  },
+  {
+   "id": "LDP-02",
+   "slot": "product",
+   "score": 30.86,
+   "tier": "T2"
+  },
+  {
+   "id": "ui-pedia.06-whitespace#1",
+   "slot": "spacing",
+   "score": 26.61,
+   "tier": "T2"
+  },
+  {
+   "id": "ui-pedia.07-proximity#2",
+   "slot": "spacing",
+   "score": 26.59,
+   "tier": "T2"
+  },
+  {
+   "id": "systems-research.spectrum#2",
+   "slot": "spacing",
+   "score": 25.98,
+   "tier": "T1"
+  },
+  {
+   "id": "web.courses-and-curricula#5",
+   "slot": "spacing",
+   "score": 25.21,
+   "tier": "T2"
+  },
+  {
+   "id": "ui-pedia.07-proximity#5",
+   "slot": "spacing",
+   "score": 24.89,
+   "tier": "T2"
+  },
+  {
+   "id": "ui-pedia.12-typography#13",
+   "slot": "typography",
+   "score": 48.61,
+   "tier": "T2"
+  },
+  {
+   "id": "ui-pedia.12-typography#22",
+   "slot": "typography",
+   "score": 47.9,
+   "tier": "T2"
+  },
+  {
+   "id": "systems-research.gestalt#5",
+   "slot": "typography",
+   "score": 46.98,
+   "tier": "T1"
+  },
+  {
+   "id": "AH-TY-20",
+   "slot": "typography",
+   "score": 46.68,
+   "tier": "T1"
+  },
+  {
+   "id": "systems-research.gestalt#6",
+   "slot": "typography",
+   "score": 46.66,
+   "tier": "T1"
+  }
+ ]
+}

@@ -1,0 +1,368 @@
+{
+ "name": "hero-polar",
+ "brief": "Delta: product analytics that explains why a metric moved, with the responsible segment, for SaaS PMs and growth teams; one action: start free; proof is a real chart with an AI explanation tied to a point",
+ "type": "hero",
+ "generated": "2026-10-08T18:50:24",
+ "rules": [
+  {
+   "id": "WCSS-39",
+   "slot": "core",
+   "score": 37.81,
+   "tier": "T1"
+  },
+  {
+   "id": "WDA-14",
+   "slot": "core",
+   "score": 33.83,
+   "tier": "T1"
+  },
+  {
+   "id": "AH-MO-29",
+   "slot": "core",
+   "score": 31.8,
+   "tier": "T1"
+  },
+  {
+   "id": "LDP-16",
+   "slot": "core",
+   "score": 31.61,
+   "tier": "T2"
+  },
+  {
+   "id": "AH-MO-28",
+   "slot": "core",
+   "score": 31.27,
+   "tier": "T1"
+  },
+  {
+   "id": "systems-research.magic-ui#5",
+   "slot": "core",
+   "score": 29.9,
+   "tier": "T1"
+  },
+  {
+   "id": "WDA-01",
+   "slot": "core",
+   "score": 27.05,
+   "tier": "T1"
+  },
+  {
+   "id": "ui-pedia.12-typography#29",
+   "slot": "core",
+   "score": 26.26,
+   "tier": "T2"
+  },
+  {
+   "id": "web-sources.a11y-project-checklist#54",
+   "slot": "core",
+   "score": 25.61,
+   "tier": "T1"
+  },
+  {
+   "id": "ui-pedia.20-cards#3",
+   "slot": "core",
+   "score": 23.41,
+   "tier": "T2"
+  },
+  {
+   "id": "web.courses-and-curricula#62",
+   "slot": "core",
+   "score": 23.33,
+   "tier": "T2"
+  },
+  {
+   "id": "web-sources.a11y-project-checklist#30",
+   "slot": "core",
+   "score": 20.21,
+   "tier": "T1"
+  },
+  {
+   "id": "PT-SZ-08",
+   "slot": "core",
+   "score": 17.54,
+   "tier": "T2"
+  },
+  {
+   "id": "PT-SZ-11",
+   "slot": "core",
+   "score": 17.5,
+   "tier": "T2"
+  },
+  {
+   "id": "AH-TY-01",
+   "slot": "core",
+   "score": 17.43,
+   "tier": "T1"
+  },
+  {
+   "id": "SYS-PRIMER-14",
+   "slot": "core",
+   "score": 16.55,
+   "tier": "T1"
+  },
+  {
+   "id": "LHS-20",
+   "slot": "founder",
+   "score": 40.94,
+   "tier": "L"
+  },
+  {
+   "id": "LHS-13",
+   "slot": "founder",
+   "score": 37.16,
+   "tier": "L"
+  },
+  {
+   "id": "LHS-05",
+   "slot": "founder",
+   "score": 34.31,
+   "tier": "L"
+  },
+  {
+   "id": "LHS-02",
+   "slot": "founder",
+   "score": 33.49,
+   "tier": "L"
+  },
+  {
+   "id": "LHS-18",
+   "slot": "founder",
+   "score": 32.24,
+   "tier": "L"
+  },
+  {
+   "id": "LHS-08",
+   "slot": "founder",
+   "score": 32.16,
+   "tier": "L"
+  },
+  {
+   "id": "LHS-17",
+   "slot": "founder",
+   "score": 32.15,
+   "tier": "L"
+  },
+  {
+   "id": "LHS-10",
+   "slot": "founder",
+   "score": 31.99,
+   "tier": "L"
+  },
+  {
+   "id": "LHS-14",
+   "slot": "founder",
+   "score": 31.59,
+   "tier": "L"
+  },
+  {
+   "id": "LHS-12",
+   "slot": "founder",
+   "score": 31.02,
+   "tier": "L"
+  },
+  {
+   "id": "systems-research.antd#3",
+   "slot": "color",
+   "score": 31.25,
+   "tier": "T1"
+  },
+  {
+   "id": "AH-CO-39",
+   "slot": "color",
+   "score": 30.57,
+   "tier": "T1"
+  },
+  {
+   "id": "AH-CO-01",
+   "slot": "color",
+   "score": 30.26,
+   "tier": "T1"
+  },
+  {
+   "id": "AH-CO-40",
+   "slot": "color",
+   "score": 29.0,
+   "tier": "T1"
+  },
+  {
+   "id": "AH-CO-02",
+   "slot": "color",
+   "score": 28.91,
+   "tier": "T1"
+  },
+  {
+   "id": "LAI-08",
+   "slot": "cta",
+   "score": 30.28,
+   "tier": "T2"
+  },
+  {
+   "id": "ui-pedia.13-buttons#46",
+   "slot": "cta",
+   "score": 29.32,
+   "tier": "T2"
+  },
+  {
+   "id": "LAI-78",
+   "slot": "cta",
+   "score": 28.3,
+   "tier": "T2"
+  },
+  {
+   "id": "ui-pedia.13-buttons#45",
+   "slot": "cta",
+   "score": 27.99,
+   "tier": "T2"
+  },
+  {
+   "id": "LAI-73",
+   "slot": "cta",
+   "score": 27.4,
+   "tier": "T2"
+  },
+  {
+   "id": "LHS-01",
+   "slot": "hero",
+   "score": 39.8,
+   "tier": "L"
+  },
+  {
+   "id": "LHS-11",
+   "slot": "hero",
+   "score": 38.3,
+   "tier": "L"
+  },
+  {
+   "id": "LHS-07",
+   "slot": "hero",
+   "score": 36.32,
+   "tier": "L"
+  },
+  {
+   "id": "LHS-19",
+   "slot": "hero",
+   "score": 35.2,
+   "tier": "L"
+  },
+  {
+   "id": "LHS-58",
+   "slot": "hero",
+   "score": 32.83,
+   "tier": "T2"
+  },
+  {
+   "id": "AH-MO-03",
+   "slot": "motion",
+   "score": 34.5,
+   "tier": "T1"
+  },
+  {
+   "id": "web-sources.craft-emil-kowalski#42",
+   "slot": "motion",
+   "score": 32.39,
+   "tier": "T2"
+  },
+  {
+   "id": "SYS-CARBON-15",
+   "slot": "motion",
+   "score": 30.26,
+   "tier": "T1"
+  },
+  {
+   "id": "web-sources.craft-emil-kowalski#38",
+   "slot": "motion",
+   "score": 29.63,
+   "tier": "T2"
+  },
+  {
+   "id": "web-sources.craft-emil-kowalski#40",
+   "slot": "motion",
+   "score": 28.54,
+   "tier": "T2"
+  },
+  {
+   "id": "GOV-68",
+   "slot": "navigation",
+   "score": 37.08,
+   "tier": "T1"
+  },
+  {
+   "id": "GOV-67",
+   "slot": "navigation",
+   "score": 31.48,
+   "tier": "T1"
+  },
+  {
+   "id": "LHS-04",
+   "slot": "navigation",
+   "score": 30.42,
+   "tier": "L"
+  },
+  {
+   "id": "LDP-02",
+   "slot": "product",
+   "score": 42.34,
+   "tier": "T2"
+  },
+  {
+   "id": "ui-pedia.07-proximity#3",
+   "slot": "spacing",
+   "score": 31.1,
+   "tier": "T2"
+  },
+  {
+   "id": "ui-pedia.07-proximity#8",
+   "slot": "spacing",
+   "score": 30.02,
+   "tier": "T2"
+  },
+  {
+   "id": "ui-pedia.07-proximity#2",
+   "slot": "spacing",
+   "score": 29.92,
+   "tier": "T2"
+  },
+  {
+   "id": "MCB-14",
+   "slot": "spacing",
+   "score": 29.2,
+   "tier": "T2"
+  },
+  {
+   "id": "ui-pedia.07-proximity#10",
+   "slot": "spacing",
+   "score": 27.16,
+   "tier": "T2"
+  },
+  {
+   "id": "AH-TY-05",
+   "slot": "typography",
+   "score": 49.95,
+   "tier": "T1"
+  },
+  {
+   "id": "ui-pedia.12-typography#17",
+   "slot": "typography",
+   "score": 47.18,
+   "tier": "T2"
+  },
+  {
+   "id": "AH-TY-10",
+   "slot": "typography",
+   "score": 45.19,
+   "tier": "T1"
+  },
+  {
+   "id": "ui-pedia.12-typography#13",
+   "slot": "typography",
+   "score": 45.19,
+   "tier": "T2"
+  },
+  {
+   "id": "ui-pedia.12-typography#25",
+   "slot": "typography",
+   "score": 45.16,
+   "tier": "T2"
+  }
+ ]
+}

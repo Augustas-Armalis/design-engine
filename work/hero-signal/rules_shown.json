@@ -1,0 +1,368 @@
+{
+ "name": "hero-signal",
+ "brief": "Pager: AI on-call agent that triages production incidents and drafts the fix PR; for eng leads/SREs at 50-1000 person companies; one action: start 14-day trial; proof: real incident triage UI with labelled sample data",
+ "type": "hero",
+ "generated": "2026-10-08T18:50:25",
+ "rules": [
+  {
+   "id": "systems-research.magic-ui#5",
+   "slot": "core",
+   "score": 36.05,
+   "tier": "T1"
+  },
+  {
+   "id": "VWI-04",
+   "slot": "core",
+   "score": 35.88,
+   "tier": "T2"
+  },
+  {
+   "id": "WCSS-39",
+   "slot": "core",
+   "score": 33.87,
+   "tier": "T1"
+  },
+  {
+   "id": "LDP-16",
+   "slot": "core",
+   "score": 33.82,
+   "tier": "T2"
+  },
+  {
+   "id": "LBC-40",
+   "slot": "core",
+   "score": 33.15,
+   "tier": "L"
+  },
+  {
+   "id": "LBC-43",
+   "slot": "core",
+   "score": 31.8,
+   "tier": "L"
+  },
+  {
+   "id": "web.courses-and-curricula#62",
+   "slot": "core",
+   "score": 27.61,
+   "tier": "T2"
+  },
+  {
+   "id": "web.color-and-surfaces#13",
+   "slot": "core",
+   "score": 23.87,
+   "tier": "T2"
+  },
+  {
+   "id": "web-sources.a11y-project-checklist#54",
+   "slot": "core",
+   "score": 22.72,
+   "tier": "T1"
+  },
+  {
+   "id": "WDA-24",
+   "slot": "core",
+   "score": 21.54,
+   "tier": "T1"
+  },
+  {
+   "id": "web-sources.a11y-project-checklist#27",
+   "slot": "core",
+   "score": 20.08,
+   "tier": "T1"
+  },
+  {
+   "id": "web.courses-and-curricula#27",
+   "slot": "core",
+   "score": 19.98,
+   "tier": "T2"
+  },
+  {
+   "id": "AH-TY-01",
+   "slot": "core",
+   "score": 19.65,
+   "tier": "T1"
+  },
+  {
+   "id": "PT-SZ-08",
+   "slot": "core",
+   "score": 17.74,
+   "tier": "T2"
+  },
+  {
+   "id": "PT-SZ-11",
+   "slot": "core",
+   "score": 16.99,
+   "tier": "T2"
+  },
+  {
+   "id": "web.color-and-surfaces#15",
+   "slot": "core",
+   "score": 16.55,
+   "tier": "T2"
+  },
+  {
+   "id": "LHS-19",
+   "slot": "founder",
+   "score": 31.76,
+   "tier": "L"
+  },
+  {
+   "id": "LHS-04",
+   "slot": "founder",
+   "score": 28.84,
+   "tier": "L"
+  },
+  {
+   "id": "LHS-06",
+   "slot": "founder",
+   "score": 27.33,
+   "tier": "L"
+  },
+  {
+   "id": "LHS-08",
+   "slot": "founder",
+   "score": 27.08,
+   "tier": "L"
+  },
+  {
+   "id": "LHS-18",
+   "slot": "founder",
+   "score": 26.97,
+   "tier": "L"
+  },
+  {
+   "id": "LHS-12",
+   "slot": "founder",
+   "score": 26.95,
+   "tier": "L"
+  },
+  {
+   "id": "LHS-16",
+   "slot": "founder",
+   "score": 26.81,
+   "tier": "L"
+  },
+  {
+   "id": "LHS-02",
+   "slot": "founder",
+   "score": 26.73,
+   "tier": "L"
+  },
+  {
+   "id": "LHS-15",
+   "slot": "founder",
+   "score": 26.22,
+   "tier": "L"
+  },
+  {
+   "id": "LHS-14",
+   "slot": "founder",
+   "score": 25.9,
+   "tier": "L"
+  },
+  {
+   "id": "web.color-and-surfaces#10",
+   "slot": "color",
+   "score": 32.04,
+   "tier": "T2"
+  },
+  {
+   "id": "web.color-and-surfaces#25",
+   "slot": "color",
+   "score": 31.16,
+   "tier": "T2"
+  },
+  {
+   "id": "AH-CO-30",
+   "slot": "color",
+   "score": 29.75,
+   "tier": "T1"
+  },
+  {
+   "id": "AH-CO-02",
+   "slot": "color",
+   "score": 29.7,
+   "tier": "T1"
+  },
+  {
+   "id": "web.anti-ai-slop#3",
+   "slot": "color",
+   "score": 29.5,
+   "tier": "T2"
+  },
+  {
+   "id": "AH-WR-40",
+   "slot": "copy",
+   "score": 37.52,
+   "tier": "T1"
+  },
+  {
+   "id": "AH-WR-24",
+   "slot": "copy",
+   "score": 36.64,
+   "tier": "T1"
+  },
+  {
+   "id": "AH-WR-10",
+   "slot": "copy",
+   "score": 26.31,
+   "tier": "T1"
+  },
+  {
+   "id": "AH-WR-33",
+   "slot": "copy",
+   "score": 25.85,
+   "tier": "T1"
+  },
+  {
+   "id": "LAI-73",
+   "slot": "cta",
+   "score": 45.05,
+   "tier": "T2"
+  },
+  {
+   "id": "web.landing-page-anatomy#11",
+   "slot": "cta",
+   "score": 31.3,
+   "tier": "T2"
+  },
+  {
+   "id": "LAI-39",
+   "slot": "cta",
+   "score": 30.4,
+   "tier": "T2"
+  },
+  {
+   "id": "LAI-62",
+   "slot": "cta",
+   "score": 27.52,
+   "tier": "T2"
+  },
+  {
+   "id": "LAI-66",
+   "slot": "cta",
+   "score": 26.87,
+   "tier": "T2"
+  },
+  {
+   "id": "LHS-11",
+   "slot": "hero",
+   "score": 30.28,
+   "tier": "L"
+  },
+  {
+   "id": "LHS-01",
+   "slot": "hero",
+   "score": 30.21,
+   "tier": "L"
+  },
+  {
+   "id": "ui-pedia.13-buttons#45",
+   "slot": "hero",
+   "score": 27.19,
+   "tier": "T2"
+  },
+  {
+   "id": "web.implementation-craft#58",
+   "slot": "mobile",
+   "score": 24.7,
+   "tier": "T1"
+  },
+  {
+   "id": "web-sources.craft-emil-kowalski#5",
+   "slot": "motion",
+   "score": 36.12,
+   "tier": "T2"
+  },
+  {
+   "id": "web-sources.craft-emil-kowalski#17",
+   "slot": "motion",
+   "score": 34.14,
+   "tier": "T2"
+  },
+  {
+   "id": "web-sources.craft-emil-kowalski#21",
+   "slot": "motion",
+   "score": 33.73,
+   "tier": "T2"
+  },
+  {
+   "id": "SYS-CARBON-15",
+   "slot": "motion",
+   "score": 33.28,
+   "tier": "T1"
+  },
+  {
+   "id": "web-sources.craft-emil-kowalski#18",
+   "slot": "motion",
+   "score": 33.05,
+   "tier": "T2"
+  },
+  {
+   "id": "LDP-02",
+   "slot": "product",
+   "score": 34.61,
+   "tier": "T2"
+  },
+  {
+   "id": "ui-pedia.06-whitespace#1",
+   "slot": "spacing",
+   "score": 29.81,
+   "tier": "T2"
+  },
+  {
+   "id": "ui-pedia.07-proximity#2",
+   "slot": "spacing",
+   "score": 29.21,
+   "tier": "T2"
+  },
+  {
+   "id": "ui-pedia.07-proximity#8",
+   "slot": "spacing",
+   "score": 29.11,
+   "tier": "T2"
+  },
+  {
+   "id": "ui-pedia.07-proximity#12",
+   "slot": "spacing",
+   "score": 28.65,
+   "tier": "T2"
+  },
+  {
+   "id": "ui-pedia.07-proximity#10",
+   "slot": "spacing",
+   "score": 27.7,
+   "tier": "T2"
+  },
+  {
+   "id": "AH-TY-05",
+   "slot": "typography",
+   "score": 49.69,
+   "tier": "T1"
+  },
+  {
+   "id": "AH-TY-10",
+   "slot": "typography",
+   "score": 48.84,
+   "tier": "T1"
+  },
+  {
+   "id": "ui-pedia.12-typography#37",
+   "slot": "typography",
+   "score": 47.74,
+   "tier": "T2"
+  },
+  {
+   "id": "ui-pedia.12-typography#25",
+   "slot": "typography",
+   "score": 46.55,
+   "tier": "T2"
+  },
+  {
+   "id": "ui-pedia.12-typography#22",
+   "slot": "typography",
+   "score": 45.71,
+   "tier": "T2"
+  }
+ ]
+}

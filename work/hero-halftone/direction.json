@@ -1,0 +1,76 @@
+{
+  "name": "hero-halftone",
+  "type": "creative",
+  "seed": 303,
+  "dealt": "2026-10-08T15:50:28.736Z",
+  "avoided": {},
+  "candidates": [
+    {
+      "axes": {
+        "hero_class": "interactive-utility",
+        "structure": "spatial-canvas",
+        "type_voice": "editorial-serif",
+        "palette_temperature": "nocturnal-low-chroma",
+        "cta_grammar": "inline-in-copy",
+        "nav_grammar": "inline-with-hero",
+        "motion_signature": "scroll-scrubbed-product",
+        "proof_artifact": "live-data-field"
+      },
+      "moves": [
+        {
+          "id": "M11",
+          "title": "Index / catalogue with switchable views"
+        },
+        {
+          "id": "M29",
+          "title": "Scroll-scrubbed path drawing"
+        }
+      ]
+    },
+    {
+      "axes": {
+        "hero_class": "editorial-explanation",
+        "structure": "product-window-as-canvas",
+        "type_voice": "mono-plus-sans",
+        "palette_temperature": "high-chroma-signal",
+        "cta_grammar": "text-action-underline",
+        "nav_grammar": "edge-dock-not-pill",
+        "motion_signature": "still-with-craft",
+        "proof_artifact": "code-or-terminal"
+      },
+      "moves": [
+        {
+          "id": "M35",
+          "title": "State-machine illustration (Rive)"
+        },
+        {
+          "id": "M27",
+          "title": "Type as image (masks, fills, extreme crops)"
+        }
+      ]
+    },
+    {
+      "axes": {
+        "hero_class": "brand-campaign",
+        "structure": "stacked-chapters",
+        "type_voice": "slab-industrial",
+        "palette_temperature": "cultural-pattern",
+        "cta_grammar": "inline-in-copy",
+        "nav_grammar": "wordmark-plus-menu",
+        "motion_signature": "layout-morph",
+        "proof_artifact": "artifact-document"
+      },
+      "moves": [
+        {
+          "id": "M03",
+          "title": "Recurring device (thread / timer / strip)"
+        },
+        {
+          "id": "M04",
+          "title": "Medium pastiche (terminal, comic, magazine, book, film, console)"
+        }
+      ]
+    }
+  ],
+  "chosen": 2
+}

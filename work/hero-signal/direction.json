@@ -1,0 +1,93 @@
+{
+  "name": "hero-signal",
+  "type": "devtool",
+  "seed": 101,
+  "dealt": "2026-10-08T15:50:28.947Z",
+  "avoided": {},
+  "candidates": [
+    {
+      "axes": {
+        "hero_class": "product-proof",
+        "structure": "stacked-chapters",
+        "type_voice": "condensed-poster",
+        "palette_temperature": "material-monochrome",
+        "cta_grammar": "command-bar",
+        "nav_grammar": "inline-with-hero",
+        "motion_signature": "ambient-loop",
+        "proof_artifact": "numeric-evidence-wall"
+      },
+      "moves": [
+        {
+          "id": "M14",
+          "title": "Poster-scale single statement"
+        },
+        {
+          "id": "M05",
+          "title": "Grounded environment instead of abstract product study"
+        }
+      ]
+    },
+    {
+      "axes": {
+        "hero_class": "brand-campaign",
+        "structure": "spatial-canvas",
+        "type_voice": "editorial-serif",
+        "palette_temperature": "saturated-field",
+        "cta_grammar": "command-bar",
+        "nav_grammar": "top-bar-conventional",
+        "motion_signature": "still-with-craft",
+        "proof_artifact": "artifact-document"
+      },
+      "moves": [
+        {
+          "id": "M02",
+          "title": "First-person brand voice"
+        },
+        {
+          "id": "M13",
+          "title": "Diagonal / isometric break of the full-bleed"
+        }
+      ]
+    },
+    {
+      "axes": {
+        "hero_class": "interactive-utility",
+        "structure": "index-catalogue",
+        "type_voice": "utilitarian-grotesk",
+        "palette_temperature": "material-monochrome",
+        "cta_grammar": "solid-conventional",
+        "nav_grammar": "inline-with-hero",
+        "motion_signature": "still-with-craft",
+        "proof_artifact": "artifact-document"
+      },
+      "moves": [
+        {
+          "id": "M52",
+          "title": "Real-UI product hero with on-message data"
+        },
+        {
+          "id": "M26",
+          "title": "Technical monospace voice"
+        }
+      ]
+    }
+  ],
+  "chosen": 3,
+  "combined": {
+    "from": "candidate 3 base; hero_class from #1 (product-proof), cta_grammar from #1/#2 (command-bar), motion still-with-craft",
+    "axes": {
+      "hero_class": "product-proof",
+      "structure": "index-catalogue (incident record as page)",
+      "type_voice": "utilitarian-grotesk",
+      "palette_temperature": "material-monochrome",
+      "cta_grammar": "command-bar",
+      "nav_grammar": "inline-with-hero",
+      "motion_signature": "still-with-craft",
+      "proof_artifact": "artifact-document"
+    },
+    "moves": [
+      "M52",
+      "M26"
+    ]
+  }
+}

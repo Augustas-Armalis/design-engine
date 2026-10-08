@@ -1,0 +1,104 @@
+{
+  "name": "hero-bloom",
+  "type": "consumer",
+  "seed": 606,
+  "dealt": "2026-10-08T15:50:32.052Z",
+  "avoided": {},
+  "candidates": [
+    {
+      "axes": {
+        "hero_class": "interactive-utility",
+        "structure": "asymmetric-crop",
+        "type_voice": "geometric-display",
+        "palette_temperature": "mineral-cool",
+        "cta_grammar": "command-bar",
+        "nav_grammar": "left-rail-nav",
+        "motion_signature": "scroll-scrubbed-product",
+        "proof_artifact": "annotated-photograph"
+      },
+      "moves": [
+        {
+          "id": "M21",
+          "title": "Custom or modified typeface as identity seed"
+        },
+        {
+          "id": "M57",
+          "title": "Remove the menu (rhythm replaces navigation)"
+        }
+      ]
+    },
+    {
+      "axes": {
+        "hero_class": "product-proof",
+        "structure": "state-boundary",
+        "type_voice": "humanist-sans",
+        "palette_temperature": "paper-and-ink",
+        "cta_grammar": "inline-in-copy",
+        "nav_grammar": "inline-with-hero",
+        "motion_signature": "ambient-loop",
+        "proof_artifact": "artifact-document"
+      },
+      "moves": [
+        {
+          "id": "M09",
+          "title": "Film pacing (storyboard, three acts, scroll as cuts)"
+        },
+        {
+          "id": "M15",
+          "title": "Editorial figure framing (\"Fig 0.1\")"
+        }
+      ]
+    },
+    {
+      "axes": {
+        "hero_class": "interactive-utility",
+        "structure": "centered-type-field",
+        "type_voice": "mono-plus-sans",
+        "palette_temperature": "paper-and-ink",
+        "cta_grammar": "product-native-control",
+        "nav_grammar": "wordmark-plus-menu",
+        "motion_signature": "still-with-craft",
+        "proof_artifact": "numeric-evidence-wall"
+      },
+      "moves": [
+        {
+          "id": "M37",
+          "title": "Restrained depth (parallax grids)"
+        },
+        {
+          "id": "M43",
+          "title": "Playful CTA reaction (sleeping characters)"
+        }
+      ]
+    }
+  ],
+  "chosen": {
+    "axes": {
+      "hero_class": "product-proof",
+      "structure": "state-boundary",
+      "type_voice": "humanist-sans",
+      "palette_temperature": "paper-and-ink",
+      "cta_grammar": "inline-in-copy",
+      "nav_grammar": "inline-with-hero",
+      "motion_signature": "ambient-loop",
+      "proof_artifact": "artifact-document"
+    },
+    "moves": [
+      {
+        "id": "M09",
+        "title": "Film pacing (storyboard, three acts, scroll as cuts)"
+      },
+      {
+        "id": "M15",
+        "title": "Editorial figure framing (\"Fig 0.1\")"
+      }
+    ],
+    "index": 2,
+    "adapted": {
+      "type_voice": "bloom serif display + humanist sans (system-owned)",
+      "cta_grammar": "bloom owned pill (override LHS-04)",
+      "motion_signature": "still-with-craft (one small entrance)",
+      "moves": "none used"
+    }
+  }
+}
