@@ -1,0 +1,84 @@
+{
+  "$schema": "./_knobs.schema.json",
+  "name": "example-signal",
+  "brand": {
+    "hue": 262,
+    "chroma": 0.19,
+    "lightness-light": 0.52,
+    "lightness-dark": 0.72
+  },
+  "neutral": {
+    "tint-chroma": 0.012,
+    "tint-hue": "brand"
+  },
+  "contrast": 1.0,
+  "font": {
+    "display": "'Instrument Sans', var(--font-sans)",
+    "body": "'Inter Variable', var(--font-sans)",
+    "mono": "'Geist Mono', ui-monospace, monospace",
+    "display-weight": 500
+  },
+  "display": {
+    "tracking": "display",
+    "leading": "display",
+    "case": "sentence"
+  },
+  "radius": {
+    "base": "10px",
+    "preset": "default"
+  },
+  "depth": {
+    "style": "border",
+    "elevation": 1
+  },
+  "density": "default",
+  "scale": 1,
+  "motion": {
+    "personality": "snappy",
+    "duration-multiplier": 1
+  },
+  "signature": "hairline grid + mono eyebrow labels",
+  "$allowed": {
+    "contrast": [
+      0.9,
+      1.3
+    ],
+    "scale": [
+      0.9,
+      0.95,
+      1,
+      1.05,
+      1.1
+    ],
+    "radius.preset": [
+      "sharp",
+      "tight",
+      "default",
+      "soft",
+      "pill"
+    ],
+    "depth.style": [
+      "border",
+      "soft",
+      "flat",
+      "crisp"
+    ],
+    "density": [
+      "compact",
+      "default",
+      "comfortable"
+    ],
+    "motion.personality": [
+      "calm",
+      "snappy",
+      "springy"
+    ],
+    "font.display-weight": [
+      300,
+      400,
+      500,
+      600,
+      700
+    ]
+  }
+}

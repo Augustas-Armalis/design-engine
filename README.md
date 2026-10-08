@@ -19,6 +19,12 @@ It is not a model. It is the layers around one that stop it from guessing:
 
 brief -> direction (must diverge from recent work) -> assemble from system + knowledge -> render -> measure (type, spacing, contrast, overflow, similarity) -> critique against references -> deliver -> ledger.
 
+## Start here
+
+- `docs/HOWTO.md`: how to use, update and test the engine.
+- `CLAUDE.md`: the pipeline every session follows.
+- `.claude/skills/design-engine/SKILL.md`: the one-prompt entry point.
+
 ## Setup
 
 ```bash

@@ -1,0 +1,571 @@
+{
+  "$description": "Primitive ramps. No semantics. Feature code must not reference these.",
+  "space": {
+    "$type": "dimension",
+    "unit": {
+      "$value": "4px",
+      "$description": "--spacing. Tailwind v4 base; all multiples below are x this unit."
+    },
+    "0": {
+      "$value": "0px"
+    },
+    "px": {
+      "$value": "1px"
+    },
+    "0.5": {
+      "$value": "2px"
+    },
+    "1": {
+      "$value": "4px"
+    },
+    "1.5": {
+      "$value": "6px"
+    },
+    "2": {
+      "$value": "8px"
+    },
+    "3": {
+      "$value": "12px"
+    },
+    "4": {
+      "$value": "16px"
+    },
+    "5": {
+      "$value": "20px"
+    },
+    "6": {
+      "$value": "24px"
+    },
+    "8": {
+      "$value": "32px"
+    },
+    "10": {
+      "$value": "40px"
+    },
+    "12": {
+      "$value": "48px"
+    },
+    "16": {
+      "$value": "64px"
+    },
+    "20": {
+      "$value": "80px"
+    },
+    "24": {
+      "$value": "96px"
+    },
+    "32": {
+      "$value": "128px"
+    },
+    "40": {
+      "$value": "160px"
+    }
+  },
+  "size": {
+    "$type": "dimension",
+    "control": {
+      "$description": "Control heights. fine = pointer:fine or >=640px; coarse = touch / <640px (coss: +4px).",
+      "xs": {
+        "fine": {
+          "$value": "24px"
+        },
+        "coarse": {
+          "$value": "28px"
+        }
+      },
+      "sm": {
+        "fine": {
+          "$value": "28px"
+        },
+        "coarse": {
+          "$value": "32px"
+        }
+      },
+      "md": {
+        "fine": {
+          "$value": "32px"
+        },
+        "coarse": {
+          "$value": "36px"
+        }
+      },
+      "lg": {
+        "fine": {
+          "$value": "36px"
+        },
+        "coarse": {
+          "$value": "40px"
+        }
+      },
+      "xl": {
+        "fine": {
+          "$value": "40px"
+        },
+        "coarse": {
+          "$value": "44px"
+        }
+      },
+      "2xl": {
+        "fine": {
+          "$value": "44px"
+        },
+        "coarse": {
+          "$value": "44px"
+        }
+      },
+      "3xl": {
+        "fine": {
+          "$value": "48px"
+        },
+        "coarse": {
+          "$value": "48px"
+        }
+      },
+      "4xl": {
+        "fine": {
+          "$value": "56px"
+        },
+        "coarse": {
+          "$value": "56px"
+        }
+      }
+    },
+    "icon": {
+      "xs": {
+        "$value": "12px"
+      },
+      "sm": {
+        "$value": "14px"
+      },
+      "md": {
+        "$value": "16px"
+      },
+      "lg": {
+        "$value": "18px"
+      },
+      "xl": {
+        "$value": "20px"
+      },
+      "2xl": {
+        "$value": "24px"
+      },
+      "3xl": {
+        "$value": "32px"
+      }
+    },
+    "hit": {
+      "fine": {
+        "$value": "24px",
+        "$description": "WCAG 2.2 SC 2.5.8 AA"
+      },
+      "coarse": {
+        "$value": "44px",
+        "$description": "Apple HIG default / WCAG 2.5.5 AAA / Primer 2.75rem"
+      },
+      "gap": {
+        "$value": "8px",
+        "$description": "min distance between adjacent targets (12px coarse)"
+      }
+    },
+    "border": {
+      "hairline": {
+        "$value": "1px"
+      },
+      "thick": {
+        "$value": "2px"
+      },
+      "focus": {
+        "$value": "2px"
+      }
+    }
+  },
+  "radius": {
+    "$type": "dimension",
+    "$description": "Static ramp for Tailwind utilities. Roles in semantic tier are derived from radius.base.",
+    "none": {
+      "$value": "0px"
+    },
+    "xs": {
+      "$value": "2px"
+    },
+    "sm": {
+      "$value": "4px"
+    },
+    "md": {
+      "$value": "6px"
+    },
+    "lg": {
+      "$value": "8px"
+    },
+    "xl": {
+      "$value": "12px"
+    },
+    "2xl": {
+      "$value": "16px"
+    },
+    "3xl": {
+      "$value": "24px"
+    },
+    "4xl": {
+      "$value": "32px"
+    },
+    "full": {
+      "$value": "9999px"
+    }
+  },
+  "type": {
+    "size": {
+      "$type": "dimension",
+      "2xs": {
+        "$value": "11px"
+      },
+      "xs": {
+        "$value": "12px"
+      },
+      "sm": {
+        "$value": "14px"
+      },
+      "base": {
+        "$value": "16px"
+      },
+      "lg": {
+        "$value": "18px"
+      },
+      "xl": {
+        "$value": "20px"
+      },
+      "2xl": {
+        "$value": "24px"
+      },
+      "3xl": {
+        "$value": "30px"
+      },
+      "4xl": {
+        "$value": "36px"
+      },
+      "5xl": {
+        "$value": "48px"
+      },
+      "6xl": {
+        "$value": "60px"
+      },
+      "7xl": {
+        "$value": "72px"
+      },
+      "8xl": {
+        "$value": "96px"
+      }
+    },
+    "weight": {
+      "$type": "fontWeight",
+      "light": {
+        "$value": 300
+      },
+      "regular": {
+        "$value": 400
+      },
+      "medium": {
+        "$value": 500
+      },
+      "semibold": {
+        "$value": 600
+      },
+      "bold": {
+        "$value": 700
+      }
+    },
+    "leading": {
+      "$type": "number",
+      "none": {
+        "$value": 1
+      },
+      "display": {
+        "$value": 1.04
+      },
+      "snug": {
+        "$value": 1.12
+      },
+      "tight": {
+        "$value": 1.25
+      },
+      "heading": {
+        "$value": 1.3
+      },
+      "ui": {
+        "$value": 1.43
+      },
+      "normal": {
+        "$value": 1.5
+      },
+      "relaxed": {
+        "$value": 1.6
+      },
+      "loose": {
+        "$value": 1.75
+      }
+    },
+    "tracking": {
+      "$type": "dimension",
+      "$description": "em units. Build converts to px per role for strict DTCG.",
+      "display-xl": {
+        "$value": "-0.035em"
+      },
+      "display": {
+        "$value": "-0.03em"
+      },
+      "heading": {
+        "$value": "-0.02em"
+      },
+      "subheading": {
+        "$value": "-0.01em"
+      },
+      "normal": {
+        "$value": "0em"
+      },
+      "caps": {
+        "$value": "0.04em"
+      }
+    }
+  },
+  "breakpoint": {
+    "$type": "dimension",
+    "sm": {
+      "$value": "640px",
+      "$description": "coss density / dialog / text-size switch is keyed here. Do not change."
+    },
+    "md": {
+      "$value": "768px"
+    },
+    "lg": {
+      "$value": "1024px"
+    },
+    "xl": {
+      "$value": "1280px"
+    },
+    "2xl": {
+      "$value": "1536px"
+    }
+  },
+  "container": {
+    "$type": "dimension",
+    "narrow": {
+      "$value": "48rem"
+    },
+    "prose": {
+      "$value": "42rem",
+      "$description": "~65ch at 16px"
+    },
+    "page": {
+      "$value": "80rem"
+    },
+    "wide": {
+      "$value": "90rem"
+    },
+    "sidebar": {
+      "$value": "16rem"
+    },
+    "sidebar-icon": {
+      "$value": "3rem"
+    },
+    "sidebar-mobile": {
+      "$value": "18rem"
+    }
+  },
+  "motion": {
+    "duration": {
+      "$type": "duration",
+      "instant": {
+        "$value": "0ms"
+      },
+      "micro": {
+        "$value": "100ms"
+      },
+      "short": {
+        "$value": "150ms"
+      },
+      "base": {
+        "$value": "200ms"
+      },
+      "medium": {
+        "$value": "300ms"
+      },
+      "long": {
+        "$value": "500ms"
+      }
+    },
+    "easing": {
+      "$type": "cubicBezier",
+      "standard": {
+        "$value": [
+          0.2,
+          0,
+          0,
+          1
+        ],
+        "$description": "M3 standard: move/morph"
+      },
+      "enter": {
+        "$value": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "$description": "M3 standard-decelerate: appear"
+      },
+      "exit": {
+        "$value": [
+          0.3,
+          0,
+          1,
+          1
+        ],
+        "$description": "M3 standard-accelerate: disappear"
+      },
+      "linear": {
+        "$value": [
+          0,
+          0,
+          1,
+          1
+        ]
+      }
+    }
+  },
+  "z": {
+    "$type": "number",
+    "$description": "page.* live inside the isolation:isolate app root; portal.* match coss ui z-50/z-60.",
+    "page": {
+      "behind": {
+        "$value": -1
+      },
+      "base": {
+        "$value": 0
+      },
+      "raised": {
+        "$value": 10
+      },
+      "sticky": {
+        "$value": 40
+      }
+    },
+    "portal": {
+      "popup": {
+        "$value": 50
+      },
+      "toast": {
+        "$value": 60
+      },
+      "skip": {
+        "$value": 70
+      }
+    }
+  },
+  "state": {
+    "$type": "number",
+    "$description": "State-layer opacities (Material 3).",
+    "hover": {
+      "$value": 0.08
+    },
+    "focus": {
+      "$value": 0.12
+    },
+    "pressed": {
+      "$value": 0.12
+    },
+    "dragged": {
+      "$value": 0.16
+    }
+  },
+  "shadow": {
+    "$type": "shadow",
+    "xs": {
+      "$value": [
+        {
+          "color": "rgb(0 0 0 / 0.05)",
+          "offsetX": "0px",
+          "offsetY": "1px",
+          "blur": "2px",
+          "spread": "0px"
+        }
+      ]
+    },
+    "sm": {
+      "$value": [
+        {
+          "color": "rgb(0 0 0 / 0.10)",
+          "offsetX": "0px",
+          "offsetY": "1px",
+          "blur": "3px",
+          "spread": "0px"
+        },
+        {
+          "color": "rgb(0 0 0 / 0.10)",
+          "offsetX": "0px",
+          "offsetY": "1px",
+          "blur": "2px",
+          "spread": "-1px"
+        }
+      ]
+    },
+    "md": {
+      "$value": [
+        {
+          "color": "rgb(0 0 0 / 0.10)",
+          "offsetX": "0px",
+          "offsetY": "4px",
+          "blur": "6px",
+          "spread": "-1px"
+        },
+        {
+          "color": "rgb(0 0 0 / 0.10)",
+          "offsetX": "0px",
+          "offsetY": "2px",
+          "blur": "4px",
+          "spread": "-2px"
+        }
+      ]
+    },
+    "lg": {
+      "$value": [
+        {
+          "color": "rgb(0 0 0 / 0.10)",
+          "offsetX": "0px",
+          "offsetY": "10px",
+          "blur": "15px",
+          "spread": "-3px"
+        },
+        {
+          "color": "rgb(0 0 0 / 0.10)",
+          "offsetX": "0px",
+          "offsetY": "4px",
+          "blur": "6px",
+          "spread": "-4px"
+        }
+      ]
+    },
+    "highlight-light": {
+      "$value": [
+        {
+          "color": "rgb(0 0 0 / 0.04)",
+          "offsetX": "0px",
+          "offsetY": "1px",
+          "blur": "0px",
+          "spread": "0px"
+        }
+      ],
+      "$description": "coss inner top highlight (pseudo-element, radius-1px)"
+    },
+    "highlight-dark": {
+      "$value": [
+        {
+          "color": "rgb(255 255 255 / 0.06)",
+          "offsetX": "0px",
+          "offsetY": "-1px",
+          "blur": "0px",
+          "spread": "0px"
+        }
+      ]
+    }
+  }
+}

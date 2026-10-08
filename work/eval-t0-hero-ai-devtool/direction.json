@@ -1,0 +1,77 @@
+{
+  "name": "eval-t0-hero-ai-devtool",
+  "type": "devtool",
+  "seed": 20261008,
+  "dealt": "2026-10-08T14:48:23.751Z",
+  "avoided": {},
+  "candidates": [
+    {
+      "axes": {
+        "hero_class": "interactive-utility",
+        "structure": "product-window-as-canvas",
+        "type_voice": "utilitarian-grotesk",
+        "palette_temperature": "optical-black-white",
+        "cta_grammar": "two-step-split",
+        "nav_grammar": "top-bar-conventional",
+        "motion_signature": "scroll-scrubbed-product",
+        "proof_artifact": "live-data-field"
+      },
+      "moves": [
+        {
+          "id": "M55",
+          "title": "Outcome worlds (make the abstract tangible)"
+        },
+        {
+          "id": "M58",
+          "title": "Kill-your-darlings pass"
+        }
+      ]
+    },
+    {
+      "axes": {
+        "hero_class": "brand-campaign",
+        "structure": "centered-type-field",
+        "type_voice": "mono-plus-sans",
+        "palette_temperature": "paper-and-ink",
+        "cta_grammar": "text-action-underline",
+        "nav_grammar": "wordmark-plus-menu",
+        "motion_signature": "scroll-scrubbed-product",
+        "proof_artifact": "code-or-terminal"
+      },
+      "moves": [
+        {
+          "id": "M32",
+          "title": "Page transitions as continuity"
+        },
+        {
+          "id": "M46",
+          "title": "Gaussian-splat hybrid"
+        }
+      ]
+    },
+    {
+      "axes": {
+        "hero_class": "product-proof",
+        "structure": "right-rail",
+        "type_voice": "condensed-poster",
+        "palette_temperature": "paper-and-ink",
+        "cta_grammar": "two-step-split",
+        "nav_grammar": "wordmark-plus-menu",
+        "motion_signature": "stagger-cascade",
+        "proof_artifact": "live-data-field"
+      },
+      "moves": [
+        {
+          "id": "M22",
+          "title": "Mixed type voices"
+        },
+        {
+          "id": "M34",
+          "title": "Colour-state background"
+        }
+      ]
+    }
+  ],
+  "chosen": 2,
+  "note": "Chose #2 (mono-plus-sans, paper-and-ink, code proof) and pulled right-rail geometry + two-step CTA from #3 and stagger from #3."
+}

@@ -1,0 +1,489 @@
+{
+  "$description": "Semantic roles. Only these (and Tailwind utilities that resolve to them) are used by generated code.",
+  "space": {
+    "$type": "dimension",
+    "inset": {
+      "sm": {
+        "$value": "{space.3}"
+      },
+      "md": {
+        "$value": "{space.4}"
+      },
+      "lg": {
+        "$value": "{space.6}"
+      },
+      "xl": {
+        "$value": "{space.8}"
+      }
+    },
+    "inline": {
+      "xs": {
+        "$value": "{space.1}"
+      },
+      "sm": {
+        "$value": "{space.2}"
+      },
+      "md": {
+        "$value": "{space.3}"
+      },
+      "lg": {
+        "$value": "{space.4}"
+      }
+    },
+    "stack": {
+      "xs": {
+        "$value": "{space.1}"
+      },
+      "sm": {
+        "$value": "{space.2}"
+      },
+      "md": {
+        "$value": "{space.4}"
+      },
+      "lg": {
+        "$value": "{space.6}"
+      },
+      "xl": {
+        "$value": "{space.8}"
+      },
+      "2xl": {
+        "$value": "{space.12}"
+      }
+    },
+    "section": {
+      "sm": {
+        "$value": "{space.12}",
+        "$extensions": {
+          "engine": {
+            "fluid": {
+              "min": "40px",
+              "max": "80px",
+              "vmin": 360,
+              "vmax": 1280
+            }
+          }
+        }
+      },
+      "md": {
+        "$value": "{space.20}",
+        "$extensions": {
+          "engine": {
+            "fluid": {
+              "min": "56px",
+              "max": "104px",
+              "vmin": 360,
+              "vmax": 1280
+            }
+          }
+        }
+      },
+      "lg": {
+        "$value": "{space.32}",
+        "$extensions": {
+          "engine": {
+            "fluid": {
+              "min": "64px",
+              "max": "128px",
+              "vmin": 360,
+              "vmax": 1280
+            }
+          }
+        }
+      }
+    },
+    "gutter": {
+      "$value": "{space.4}",
+      "$extensions": {
+        "engine": {
+          "fluid": {
+            "min": "16px",
+            "max": "32px",
+            "vmin": 360,
+            "vmax": 1280
+          }
+        }
+      }
+    }
+  },
+  "radius": {
+    "$type": "dimension",
+    "base": {
+      "$value": "8px",
+      "$description": "THE knob. Presets: sharp 2px, tight 4px, default 8px, soft 12px, pill 9999px."
+    },
+    "control": {
+      "$value": "{radius.base}"
+    },
+    "chip": {
+      "$value": "{radius.base}",
+      "$extensions": {
+        "engine": {
+          "calc": "max(2px, calc(var(--radius-base) * 0.5))"
+        }
+      }
+    },
+    "surface": {
+      "$value": "{radius.base}",
+      "$extensions": {
+        "engine": {
+          "calc": "min(calc(var(--radius-base) * 1.5), 24px)"
+        }
+      }
+    },
+    "overlay": {
+      "$value": "{radius.base}",
+      "$extensions": {
+        "engine": {
+          "calc": "min(calc(var(--radius-base) * 2), 28px)"
+        }
+      }
+    },
+    "inner": {
+      "$value": "{radius.base}",
+      "$extensions": {
+        "engine": {
+          "calc": "max(0px, calc(var(--radius-outer) - var(--pad) - var(--bw, 1px)))",
+          "$description": "Set --radius-outer, --pad on the parent. Nested children use this."
+        }
+      }
+    }
+  },
+  "size": {
+    "$type": "dimension",
+    "control": {
+      "default": {
+        "$value": "{size.control.md.fine}"
+      },
+      "cta": {
+        "$value": "{size.control.3xl.fine}"
+      },
+      "nav": {
+        "$value": "{size.control.lg.fine}"
+      }
+    },
+    "hit-min": {
+      "$value": "{size.hit.coarse}"
+    }
+  },
+  "border": {
+    "width": {
+      "$type": "dimension",
+      "$value": "{size.border.hairline}"
+    },
+    "color": {
+      "$type": "color",
+      "$value": "{color.border}"
+    }
+  },
+  "type": {
+    "$type": "typography",
+    "$description": "Marketing roles are fluid (vmin 360 / vmax 1280). App roles are stepped. fontFamily aliases resolve from theme knobs.",
+    "display": {
+      "$value": {
+        "fontFamily": "{font.display}",
+        "fontSize": "{type.size.7xl}",
+        "fontWeight": "{font.display-weight}",
+        "letterSpacing": "{type.tracking.display-xl}",
+        "lineHeight": "{type.leading.display}"
+      },
+      "$extensions": {
+        "engine": {
+          "fluid": {
+            "min": "40px",
+            "max": "72px",
+            "vmin": 360,
+            "vmax": 1280
+          },
+          "context": "marketing"
+        }
+      }
+    },
+    "h1": {
+      "$value": {
+        "fontFamily": "{font.display}",
+        "fontSize": "{type.size.5xl}",
+        "fontWeight": "{font.display-weight}",
+        "letterSpacing": "{type.tracking.display}",
+        "lineHeight": "{type.leading.snug}"
+      },
+      "$extensions": {
+        "engine": {
+          "fluid": {
+            "min": "34px",
+            "max": "56px",
+            "vmin": 360,
+            "vmax": 1280
+          },
+          "context": "marketing"
+        }
+      }
+    },
+    "h2": {
+      "$value": {
+        "fontFamily": "{font.display}",
+        "fontSize": "{type.size.4xl}",
+        "fontWeight": "{font.display-weight}",
+        "letterSpacing": "{type.tracking.heading}",
+        "lineHeight": "{type.leading.snug}"
+      },
+      "$extensions": {
+        "engine": {
+          "fluid": {
+            "min": "28px",
+            "max": "44px",
+            "vmin": 360,
+            "vmax": 1280
+          },
+          "context": "marketing"
+        }
+      }
+    },
+    "h3": {
+      "$value": {
+        "fontFamily": "{font.body}",
+        "fontSize": "{type.size.2xl}",
+        "fontWeight": "{type.weight.semibold}",
+        "letterSpacing": "{type.tracking.subheading}",
+        "lineHeight": "{type.leading.tight}"
+      },
+      "$extensions": {
+        "engine": {
+          "fluid": {
+            "min": "22px",
+            "max": "28px",
+            "vmin": 360,
+            "vmax": 1280
+          }
+        }
+      }
+    },
+    "h4": {
+      "$value": {
+        "fontFamily": "{font.body}",
+        "fontSize": "{type.size.xl}",
+        "fontWeight": "{type.weight.semibold}",
+        "letterSpacing": "{type.tracking.subheading}",
+        "lineHeight": "{type.leading.heading}"
+      },
+      "$extensions": {
+        "engine": {
+          "fluid": {
+            "min": "18px",
+            "max": "20px",
+            "vmin": 360,
+            "vmax": 1280
+          }
+        }
+      }
+    },
+    "lead": {
+      "$value": {
+        "fontFamily": "{font.body}",
+        "fontSize": "{type.size.xl}",
+        "fontWeight": "{type.weight.regular}",
+        "letterSpacing": "{type.tracking.normal}",
+        "lineHeight": "{type.leading.normal}"
+      },
+      "$extensions": {
+        "engine": {
+          "fluid": {
+            "min": "18px",
+            "max": "22px",
+            "vmin": 360,
+            "vmax": 1280
+          },
+          "context": "marketing"
+        }
+      }
+    },
+    "body": {
+      "$value": {
+        "fontFamily": "{font.body}",
+        "fontSize": "{type.size.base}",
+        "fontWeight": "{type.weight.regular}",
+        "letterSpacing": "{type.tracking.normal}",
+        "lineHeight": "{type.leading.relaxed}"
+      }
+    },
+    "body-ui": {
+      "$value": {
+        "fontFamily": "{font.body}",
+        "fontSize": "{type.size.sm}",
+        "fontWeight": "{type.weight.regular}",
+        "letterSpacing": "{type.tracking.normal}",
+        "lineHeight": "{type.leading.ui}"
+      },
+      "$extensions": {
+        "engine": {
+          "context": "app",
+          "touch-size": "16px",
+          "$description": "App base. Inputs/controls become 16px below 640px (iOS zoom + coss text-base sm:text-sm)."
+        }
+      }
+    },
+    "label": {
+      "$value": {
+        "fontFamily": "{font.body}",
+        "fontSize": "{type.size.sm}",
+        "fontWeight": "{type.weight.medium}",
+        "letterSpacing": "{type.tracking.normal}",
+        "lineHeight": "{type.leading.ui}"
+      }
+    },
+    "caption": {
+      "$value": {
+        "fontFamily": "{font.body}",
+        "fontSize": "{type.size.xs}",
+        "fontWeight": "{type.weight.regular}",
+        "letterSpacing": "{type.tracking.normal}",
+        "lineHeight": "{type.leading.relaxed}"
+      }
+    },
+    "code": {
+      "$value": {
+        "fontFamily": "{font.mono}",
+        "fontSize": "{type.size.sm}",
+        "fontWeight": "{type.weight.regular}",
+        "letterSpacing": "{type.tracking.normal}",
+        "lineHeight": "{type.leading.normal}"
+      }
+    }
+  },
+  "color": {
+    "$description": "Structural slots only. Values come from the theme (OKLCH). Every surface has a -foreground partner. Names match shadcn/coss so components work unchanged. Base values below = shadcn neutral (T) as the generic baseline to deviate from.",
+    "background": {
+      "$type": "color",
+      "$value": "oklch(1 0 0)",
+      "dark": "oklch(0.145 0 0)"
+    },
+    "foreground": {
+      "$type": "color",
+      "$value": "oklch(0.145 0 0)",
+      "dark": "oklch(0.985 0 0)"
+    },
+    "card": {
+      "$type": "color",
+      "$value": "oklch(1 0 0)",
+      "dark": "oklch(0.205 0 0)"
+    },
+    "card-foreground": {
+      "$type": "color",
+      "$value": "oklch(0.145 0 0)",
+      "dark": "oklch(0.985 0 0)"
+    },
+    "popover": {
+      "$type": "color",
+      "$value": "oklch(1 0 0)",
+      "dark": "oklch(0.205 0 0)"
+    },
+    "popover-foreground": {
+      "$type": "color",
+      "$value": "oklch(0.145 0 0)",
+      "dark": "oklch(0.985 0 0)"
+    },
+    "primary": {
+      "$type": "color",
+      "$value": "oklch(0.205 0 0)",
+      "dark": "oklch(0.922 0 0)"
+    },
+    "primary-foreground": {
+      "$type": "color",
+      "$value": "oklch(0.985 0 0)",
+      "dark": "oklch(0.205 0 0)"
+    },
+    "secondary": {
+      "$type": "color",
+      "$value": "oklch(0.97 0 0)",
+      "dark": "oklch(0.269 0 0)"
+    },
+    "secondary-foreground": {
+      "$type": "color",
+      "$value": "oklch(0.205 0 0)",
+      "dark": "oklch(0.985 0 0)"
+    },
+    "muted": {
+      "$type": "color",
+      "$value": "oklch(0.97 0 0)",
+      "dark": "oklch(0.269 0 0)"
+    },
+    "muted-foreground": {
+      "$type": "color",
+      "$value": "oklch(0.556 0 0)",
+      "dark": "oklch(0.708 0 0)"
+    },
+    "accent": {
+      "$type": "color",
+      "$value": "oklch(0.97 0 0)",
+      "dark": "oklch(0.269 0 0)"
+    },
+    "accent-foreground": {
+      "$type": "color",
+      "$value": "oklch(0.205 0 0)",
+      "dark": "oklch(0.985 0 0)"
+    },
+    "destructive": {
+      "$type": "color",
+      "$value": "oklch(0.577 0.245 27.325)",
+      "dark": "oklch(0.704 0.191 22.216)"
+    },
+    "destructive-foreground": {
+      "$type": "color",
+      "$value": "oklch(0.505 0.213 27.518)",
+      "dark": "oklch(0.704 0.191 22.216)",
+      "$description": "coss addition: text/icon colour for destructive-outline/menu/field errors (red-700 / red-400)"
+    },
+    "info": {
+      "$type": "color",
+      "$value": "oklch(0.623 0.214 259.815)",
+      "dark": "oklch(0.623 0.214 259.815)",
+      "$description": "coss addition (blue-500); -foreground blue-700 / blue-400"
+    },
+    "success": {
+      "$type": "color",
+      "$value": "oklch(0.696 0.17 162.48)",
+      "dark": "oklch(0.696 0.17 162.48)",
+      "$description": "coss addition (emerald-500); -foreground emerald-700 / 400"
+    },
+    "warning": {
+      "$type": "color",
+      "$value": "oklch(0.769 0.188 70.08)",
+      "dark": "oklch(0.769 0.188 70.08)",
+      "$description": "coss addition (amber-500); -foreground amber-700 / 400"
+    },
+    "border": {
+      "$type": "color",
+      "$value": "oklch(0 0 0 / 8%)",
+      "dark": "oklch(1 0 0 / 6%)",
+      "$description": "coss: black 8% / white 6%. shadcn: oklch(0.922 0 0) / white 10%"
+    },
+    "input": {
+      "$type": "color",
+      "$value": "oklch(0 0 0 / 10%)",
+      "dark": "oklch(1 0 0 / 8%)"
+    },
+    "ring": {
+      "$type": "color",
+      "$value": "oklch(0.708 0 0)",
+      "dark": "oklch(0.556 0 0)"
+    }
+  },
+  "context": {
+    "$description": "Remaps for the two product surfaces; same names, different values. Applied via [data-context=marketing|app] on the root.",
+    "marketing": {
+      "type.body": "type.body",
+      "space.section": "space.section.lg",
+      "container": "container.page",
+      "size.control.default": "size.control.3xl.fine",
+      "radius.control": "radius.control",
+      "motion.reveal-max": "700ms"
+    },
+    "app": {
+      "type.body": "type.body-ui",
+      "space.section": "space.stack.xl",
+      "container": "container.wide",
+      "size.control.default": "size.control.md.fine",
+      "radius.control": "radius.control",
+      "motion.reveal-max": "200ms"
+    }
+  }
+}

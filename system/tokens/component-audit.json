@@ -1,0 +1,239 @@
+{
+  "$description": "Expected rendered boxes (fine = >=640px, coarse = <640px). Based on coss ui registry source, read 2026-10-08.",
+  "button": {
+    "xs": {
+      "height": [
+        24,
+        28
+      ],
+      "padding-x": 8,
+      "icon": [
+        14,
+        16
+      ],
+      "radius": "chip"
+    },
+    "sm": {
+      "height": [
+        28,
+        32
+      ],
+      "padding-x": 10,
+      "icon": [
+        16,
+        18
+      ],
+      "radius": "control",
+      "gap": 6
+    },
+    "default": {
+      "height": [
+        32,
+        36
+      ],
+      "padding-x": 12,
+      "icon": [
+        16,
+        18
+      ],
+      "radius": "control",
+      "gap": 8
+    },
+    "lg": {
+      "height": [
+        36,
+        40
+      ],
+      "padding-x": 14,
+      "icon": [
+        16,
+        18
+      ],
+      "radius": "control"
+    },
+    "xl": {
+      "height": [
+        40,
+        44
+      ],
+      "padding-x": 16,
+      "icon": [
+        18,
+        20
+      ],
+      "radius": "control",
+      "font": [
+        16,
+        18
+      ]
+    },
+    "icon": {
+      "box": [
+        32,
+        36
+      ]
+    },
+    "icon-sm": {
+      "box": [
+        28,
+        32
+      ]
+    },
+    "icon-lg": {
+      "box": [
+        36,
+        40
+      ]
+    },
+    "icon-xl": {
+      "box": [
+        40,
+        44
+      ]
+    },
+    "icon-xs": {
+      "box": [
+        24,
+        28
+      ]
+    }
+  },
+  "input": {
+    "sm": {
+      "height": [
+        28,
+        32
+      ]
+    },
+    "default": {
+      "height": [
+        32,
+        36
+      ]
+    },
+    "lg": {
+      "height": [
+        36,
+        40
+      ]
+    },
+    "padding-x": [
+      10,
+      12
+    ],
+    "font": [
+      14,
+      16
+    ],
+    "border": 1
+  },
+  "select": {
+    "sm": {
+      "min-height": [
+        28,
+        32
+      ]
+    },
+    "default": {
+      "min-height": [
+        32,
+        36
+      ]
+    },
+    "lg": {
+      "min-height": [
+        36,
+        40
+      ]
+    }
+  },
+  "badge": {
+    "sm": {
+      "height": [
+        16,
+        20
+      ]
+    },
+    "default": {
+      "height": [
+        18,
+        22
+      ]
+    },
+    "lg": {
+      "height": [
+        22,
+        26
+      ]
+    },
+    "font": {
+      "sm": [
+        10,
+        12
+      ],
+      "default": [
+        12,
+        14
+      ],
+      "lg": [
+        14,
+        16
+      ]
+    }
+  },
+  "card": {
+    "radius": "2xl (16px)",
+    "padding": 24,
+    "title": "18px / font-heading 600"
+  },
+  "dialog": {
+    "radius": "2xl (16px)",
+    "max-width": 512,
+    "padding": 24,
+    "mobile": "bottom sheet, no side radius"
+  },
+  "menu-item": {
+    "min-height": 32,
+    "padding": [
+      8,
+      4
+    ],
+    "radius": "sm (4px)"
+  },
+  "switch": {
+    "track": [
+      38,
+      22
+    ],
+    "thumb": 20
+  },
+  "checkbox": {
+    "box": 18,
+    "icon": [
+      14,
+      12
+    ],
+    "radius": 4
+  },
+  "tooltip": {
+    "font": 12,
+    "radius": "md (6px)",
+    "padding-y": 4
+  },
+  "alert": {
+    "radius": "xl (12px)",
+    "padding": [
+      14,
+      12
+    ]
+  },
+  "table-head": {
+    "height": 40,
+    "padding-x": 10
+  },
+  "z": {
+    "popup": 50,
+    "toast": 60
+  },
+  "tolerance": 0.5
+}

@@ -287,6 +287,25 @@ Tailwind v4 eases (D): in `(.4,0,1,1)`, out `(0,0,.2,1)`, in-out `(.4,0,.2,1)`. 
 | Apple (T) | Dynamic Type 7 sizes + 5 accessibility sizes; layouts reflow (stack vertically), do not shrink icons. |
 | Carbon (D) | size tokens sm 32 / md 40 / lg 48 are the density control. |
 
+### 3.11 Recommended defaults for a SaaS marketing site + app UI (summary; full token set in `tokens-spacing-radius-sizing.md`)
+
+| Property | Marketing site | App UI | Basis |
+|---|---|---|---|
+| Space unit / steps | 4 px; 4 8 12 16 24 32 48 64 80 96 128 | 4 px; 4 8 12 16 20 24 32 40 48 | all ramps (3.1) |
+| Gutter | 16 / 24 / 32 px (<640 / 640+ / 1024+) | 16 / 24 | (M) |
+| Page width | 1280 px (80rem), prose 65ch | fluid, content <= 1440 | (M) median 1264 |
+| Section padding-y | 64 -> 128 px fluid | 24-32 px between panels | (M) |
+| Breakpoints | 640 / 768 / 1024 / 1280 / 1536 | same (do not alter `sm`: coss keys on it) | Tailwind, coss |
+| Body | 16 / 1.6 | 14 / 1.43; 16 px on inputs < 640 | Primer, coss, HIG |
+| Display/H1 | 40-72 / 34-56 px, weight 500, lh 1.04-1.12, tracking -0.03 to -0.035em | 20-24 px, 600, lh 1.3 | (M) |
+| Control height | CTA 44-48, nav 36 | 32 (36 touch) | coss, Primer, HIG |
+| Hit region | >= 44 coarse / >= 24 fine | same | HIG, WCAG 2.2 |
+| Radius (base 8) | control 8, chip 4, card 12, overlay 16, nested = outer - pad - bw | same | shadcn/Radix/coss |
+| Borders | 1 px @ 8-10 % alpha; focus 2 px ring offset 1-2 | same | coss, Primer |
+| Shadows | <= 10 % alpha; card `shadow-xs/5` + inner 1 px highlight | same | coss |
+| Motion | 100 hover / 200 popup / 300 sheet / <= 700 reveal | 100-200 | M3, Primer, coss |
+| z-index | page 0/10/40, popup 50, toast 60, skip 70, `isolation: isolate` root | same | coss, Base UI |
+
 ## 4. Dos and Don'ts
 
 - **Do** `h-9 sm:h-8` style responsive density (36 -> 32) with `pointer-coarse:after:min-h-11 min-w-11` hit-area expander. **Don't** set a constant `h-8` button and call it mobile-ready: 32 px is below Apple's 44 pt default and Material's 48 dp.

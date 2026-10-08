@@ -215,6 +215,9 @@ for (const vp of T.viewports) {
     const h = document.documentElement.scrollHeight;
     for (let y = 0; y < h; y += innerHeight * 0.8) { scrollTo(0, y); await new Promise((r) => setTimeout(r, 120)); }
     scrollTo(0, 0); await new Promise((r) => setTimeout(r, 300));
+    // jump finite entrance animations to their end state so contrast/screenshots are not measured mid-fade
+    document.getAnimations().forEach((a) => { try { if (a.effect.getComputedTiming().iterations !== Infinity) a.finish(); } catch (e) {} });
+    await new Promise((r) => setTimeout(r, 100));
   });
   const m = await page.evaluate(measure, T);
   await page.addScriptTag({ content: axeSource });
