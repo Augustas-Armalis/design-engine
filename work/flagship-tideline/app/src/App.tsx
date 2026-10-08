@@ -1,11 +1,12 @@
-import { ArrowRight, CaretDown, CheckCircle, CircleNotch, Headset, Waves } from '@phosphor-icons/react'
+import { ArrowRight, CalendarCheck, CaretDown, CheckCircle, CircleNotch, Headset } from '@phosphor-icons/react'
+import { MARK_PATH, MARK_VIEWBOX } from './components/mark'
 import { motion, useReducedMotion } from 'motion/react'
 import { Globe } from './components/Globe'
 import { CITIES, HQ, project } from './components/geo'
 
 // Globe stage geometry (page px, desktop 1440x900).
-const STAGE = { left: 470, top: 330, w: 980, h: 570 }
-const G = { cx: 530, cy: 540, r: 440 }
+const STAGE = { left: 560, top: 150, w: 880, h: 750 }
+const G = { cx: 475, cy: 470, r: 390 }
 const pt = (lat: number, lon: number) => { const p = project(lat, lon); return { x: G.cx + G.r * p.x, y: G.cy - G.r * p.y } }
 const HQP = pt(HQ.lat, HQ.lon)
 
@@ -26,7 +27,7 @@ function arc(a: { x: number; y: number }, b: { x: number; y: number }) {
 function Logo() {
   return (
     <a href="#" aria-label="Tideline, home" className="inline-flex h-10 items-center gap-2 text-ink no-underline">
-      <span className="flex size-7 items-center justify-center rounded-[8px] bg-ink"><Waves size={17} weight="bold" color="#fff" /></span>
+      <svg viewBox={MARK_VIEWBOX} className="h-[26px] w-auto" aria-hidden="true"><path d={MARK_PATH} fill="currentColor" fillRule="evenodd" /></svg>
       <span className="text-[17px] font-semibold tracking-[-0.045em]">Tideline</span>
     </a>
   )
@@ -37,7 +38,8 @@ export default function App() {
   const fade = (d: number) => (reduce ? {} : { initial: { opacity: 0, y: 6 }, animate: { opacity: 1, y: 0 }, transition: { delay: d, duration: 0.6, ease: [0.16, 1, 0.3, 1] as const } })
   return (
     <div className="relative h-[900px] min-w-[1440px] overflow-hidden bg-paper">
-      <div aria-hidden="true" className="pointer-events-none absolute inset-y-0 left-1/2 w-[1200px] -translate-x-1/2 border-x border-line" />
+      <div aria-hidden="true" className="pointer-events-none absolute inset-y-0 left-[120px] z-0 w-px bg-line" />
+      <div aria-hidden="true" className="pointer-events-none absolute inset-y-0 left-[1319px] z-0 w-px bg-line [mask-image:linear-gradient(to_bottom,#000_0,#000_150px,transparent_215px)]" />
 
       {/* globe stage */}
       <div className="absolute" style={{ left: STAGE.left, top: STAGE.top, width: STAGE.w, height: STAGE.h }}>
@@ -81,7 +83,7 @@ export default function App() {
       </div>
 
       {/* header */}
-      <header className="relative z-20 mx-auto flex w-[1200px] items-center justify-between pt-4">
+      <header className="relative z-20 mx-auto flex w-[1128px] items-center justify-between pt-4">
         <nav aria-label="Primary" className="flex items-center rounded-[14px] bg-white py-1 pr-1.5 pl-3 shadow-[0_0_0_1px_var(--color-line)]">
           <Logo />
           <ul className="ml-5 flex items-center text-[15px] font-medium tracking-[-0.03em]">
@@ -97,7 +99,7 @@ export default function App() {
       </header>
 
       {/* copy column */}
-      <main className="relative z-10 mx-auto w-[1200px] px-9 pt-[60px]">
+      <main className="relative z-10 mx-auto w-[1128px] pt-[60px]">
         <motion.a {...fade(0)} href="#" className="inline-flex items-center gap-2 rounded-full bg-white py-1 pr-3 pl-1 text-[13.5px] font-medium tracking-[-0.03em] text-ink no-underline shadow-[0_0_0_1px_var(--color-line)]">
           <span className="rounded-full bg-[#ff5b1f] px-2 py-0.5 text-[11.5px] font-semibold text-white">New</span>
           Same-day payouts in 41 currencies
@@ -120,20 +122,33 @@ export default function App() {
         </motion.div>
 
         {/* product proof: the payroll run the arcs are paying out */}
-        <motion.section {...fade(0.3)} aria-label="Sample payroll run" className="mt-12 w-[408px] rounded-[18px] bg-white p-5 shadow-[0_0_0_1px_var(--color-line),0_18px_40px_-18px_rgba(28,27,24,0.22)]">
-          <div className="flex items-center justify-between">
-            <div className="text-[15px] font-semibold tracking-[-0.03em] text-ink">October payroll</div>
-            <span className="inline-flex items-center gap-1.5 rounded-full bg-[#fff1ea] px-2.5 py-1 text-[12px] font-semibold text-[#c2410c]"><span className="size-1.5 rounded-full bg-[#ff5b1f] pulse-dot" />Paying</span>
+        <motion.section {...fade(0.3)} aria-label="Sample payroll run" className="mt-12 w-[420px] rounded-[18px] bg-white p-5 shadow-[0_0_0_1px_var(--color-line),0_1px_2px_rgba(28,27,24,0.04),0_20px_44px_-22px_rgba(28,27,24,0.28)]">
+          <div className="flex items-center gap-3">
+            <span className="flex size-10 items-center justify-center rounded-[11px] bg-paper text-ink shadow-[inset_0_0_0_1px_var(--color-line)]"><CalendarCheck size={20} weight="duotone" /></span>
+            <div className="min-w-0 flex-1">
+              <div className="text-[15px] font-semibold tracking-[-0.03em] text-ink">October payroll</div>
+              <div className="text-[12.5px] font-medium tracking-[-0.02em] text-muted">Run 10 · Thu 30 Oct · sample</div>
+            </div>
+            <span className="inline-flex items-center gap-1.5 rounded-full bg-[#fff1ea] px-2.5 py-1 text-[12px] font-semibold tracking-[-0.02em] text-[#c2410c]"><span className="pulse-dot size-1.5 rounded-full bg-[#ff5b1f]" />Paying</span>
           </div>
-          <div className="mt-1 text-[13px] font-medium tracking-[-0.02em] text-muted">48 people · 11 currencies · sample</div>
-          <div className="mt-4 font-mono text-[30px] font-medium tracking-[-0.05em] text-ink tabular-nums">€184,320.00</div>
-          <div className="mt-3 flex h-2 gap-[3px]">
-            {Array.from({ length: 48 }, (_, i) => <span key={i} className={`flex-1 rounded-[2px] ${i < 41 ? 'bg-ink' : 'bg-[#e6e3dc]'}`} />)}
+          <div className="mt-5 flex items-end justify-between border-t border-line pt-4">
+            <div>
+              <div className="text-[12.5px] font-medium tracking-[-0.02em] text-muted">Total payout · 11 currencies</div>
+              <div className="mt-1 text-[34px] leading-none font-semibold tracking-[-0.05em] text-ink tabular-nums">€184,320<span className="text-[#a8a49b]">.00</span></div>
+            </div>
+            <div className="text-right text-[12.5px] font-medium tracking-[-0.02em] text-muted">41 of 48 paid</div>
           </div>
-          <div className="mt-3 grid grid-cols-3 text-[12.5px] font-medium tracking-[-0.02em]">
-            <div><div className="text-muted">Paid</div><div className="mt-0.5 font-mono text-[14px] text-ink">41</div></div>
-            <div><div className="text-muted">In flight</div><div className="mt-0.5 font-mono text-[14px] text-ink">7</div></div>
-            <div><div className="text-muted">All paid by</div><div className="mt-0.5 font-mono text-[14px] text-ink">14:20 CET</div></div>
+          <div className="mt-3 flex h-[7px] gap-[3px]">
+            {Array.from({ length: 48 }, (_, i) => <span key={i} className={`flex-1 rounded-[2px] ${i < 41 ? 'bg-ink' : i < 44 ? 'bg-[#ff5b1f]' : 'bg-[#e6e3dc]'}`} />)}
+          </div>
+          <div className="mt-4 flex items-center justify-between">
+            <div className="flex items-center">
+              {[['AK', '#e8e2f6', '#5b3d8a'], ['TO', '#dcefe6', '#1f6b4c'], ['RP', '#f6e6d6', '#8a4d1c'], ['LM', '#dbe8f7', '#24548f']].map(([t, bg, fg], i) => (
+                <span key={t} className="flex size-7 items-center justify-center rounded-full text-[10.5px] font-semibold ring-2 ring-white" style={{ background: bg, color: fg, marginLeft: i ? -6 : 0 }}>{t}</span>
+              ))}
+              <span className="ml-2 text-[12.5px] font-medium tracking-[-0.02em] text-muted">+44 people</span>
+            </div>
+            <div className="text-[12.5px] font-medium tracking-[-0.02em] text-muted">All paid by <span className="font-mono text-ink">14:20 CET</span></div>
           </div>
         </motion.section>
       </main>
