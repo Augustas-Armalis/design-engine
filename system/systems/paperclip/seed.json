@@ -1,0 +1,52 @@
+{
+  "slug": "paperclip",
+  "name": "Paperclip",
+  "showcaseHeadline": "Your shop, finally organised.",
+  "signature": "Friendly small-business software: rounded geometric sans, olive-lime accent on a neutral paper, layered depth, comfortable touch-sized controls.",
+  "personality": {
+    "brandHue": 118,
+    "brandChroma": 0.14,
+    "accentStep": 6,
+    "neutralTemperature": "warm",
+    "radiusPreset": "default",
+    "depthStyle": "layered",
+    "density": "comfortable",
+    "motionPersonality": "springy",
+    "typeVoice": "Warm, direct, a little playful.",
+    "onAccent": "ink"
+  },
+  "fonts": {
+    "display": "'Familjen Grotesk', system-ui, sans-serif",
+    "body": "'Figtree', system-ui, sans-serif",
+    "mono": "'DM Mono', ui-monospace, monospace",
+    "href": "https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;600;700&family=Figtree:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap"
+  },
+  "type": {
+    "ratio": 1.25,
+    "basePx": 17,
+    "displayMaxPx": 72,
+    "displayWeight": 700,
+    "displayTracking": -0.025,
+    "displayLeading": 1,
+    "bodyLeading": 1.6
+  },
+  "bestFor": [
+    "SMB tools",
+    "no-code builders",
+    "marketplaces",
+    "bookings"
+  ],
+  "avoidFor": [
+    "high-end luxury",
+    "dense pro tools"
+  ],
+  "owned": [
+    "Olive-lime accent with dark ink on solid fills",
+    "Comfortable 44px controls by default",
+    "Rounded 12-16px containers with layered depth"
+  ],
+  "never": [
+    "use dark mode as the default",
+    "use thin 300 weights"
+  ]
+}

@@ -34,21 +34,111 @@
    "Noto Sans Arabic / Hebrew (script fallbacks)"
   ],
   "scale": [
-   {"role": "font-size-1100 / hero h1 (home, 1440)", "sizePx": 96, "lineHeightPx": 100, "weight": 600, "trackingEm": "-0.048em (-4.6px)"},
-   {"role": "font-size-900 / pricing h1", "sizePx": 64, "lineHeightPx": 64, "weight": 700, "trackingEm": "-0.033em (-2.125px)"},
-   {"role": "font-size-800 / section h2", "sizePx": 54, "lineHeightPx": 56, "weight": 700, "trackingEm": "-0.035em (-1.875px)"},
-   {"role": "font-size-700", "sizePx": 42, "lineHeightPx": 48, "weight": 600, "trackingEm": "-0.036em (-1.5px bold; -2px regular)"},
-   {"role": "font-size-600 / sub-section h2", "sizePx": 32, "lineHeightPx": 40, "weight": 700, "trackingEm": "-0.023em (-0.75px)"},
-   {"role": "font-size-500", "sizePx": 26, "lineHeightPx": 32, "weight": 500, "trackingEm": "-0.024em (-0.625px)"},
-   {"role": "font-size-400 / card h2-h3", "sizePx": 22, "lineHeightPx": 28, "weight": 700, "trackingEm": "-0.011em (-0.25px)"},
-   {"role": "font-size-350 / lead", "sizePx": 20, "lineHeightPx": 28, "weight": 400, "trackingEm": "-0.006em (-0.125px)"},
-   {"role": "font-size-300", "sizePx": 18, "lineHeightPx": 28, "weight": 400, "trackingEm": "-0.007em (-0.125px)"},
-   {"role": "font-size-200 / body, button medium/large", "sizePx": 16, "lineHeightPx": 24, "weight": 400, "trackingEm": "0"},
-   {"role": "font-size-150", "sizePx": 15, "lineHeightPx": 20, "weight": 400, "trackingEm": "0"},
-   {"role": "font-size-100 / small, button small, menu button", "sizePx": 14, "lineHeightPx": 20, "weight": 400, "trackingEm": "0"},
-   {"role": "font-size-50 / label", "sizePx": 12, "lineHeightPx": 16, "weight": 500, "trackingEm": "+0.01em (+0.125px)"},
-   {"role": "mobile hero h1 (390)", "sizePx": 42, "lineHeightPx": 48, "weight": 600, "trackingEm": "-0.036em (-1.5px)"},
-   {"role": "mobile h2 (390)", "sizePx": 32, "lineHeightPx": 40, "weight": 700, "trackingEm": "-0.023em (-0.75px)"}
+   {
+    "role": "font-size-1100 / hero h1 (home, 1440)",
+    "sizePx": 96,
+    "lineHeightPx": 100,
+    "weight": 600,
+    "trackingEm": "-0.048em (-4.6px)"
+   },
+   {
+    "role": "font-size-900 / pricing h1",
+    "sizePx": 64,
+    "lineHeightPx": 64,
+    "weight": 700,
+    "trackingEm": "-0.033em (-2.125px)"
+   },
+   {
+    "role": "font-size-800 / section h2",
+    "sizePx": 54,
+    "lineHeightPx": 56,
+    "weight": 700,
+    "trackingEm": "-0.035em (-1.875px)"
+   },
+   {
+    "role": "font-size-700",
+    "sizePx": 42,
+    "lineHeightPx": 48,
+    "weight": 600,
+    "trackingEm": "-0.036em (-1.5px bold; -2px regular)"
+   },
+   {
+    "role": "font-size-600 / sub-section h2",
+    "sizePx": 32,
+    "lineHeightPx": 40,
+    "weight": 700,
+    "trackingEm": "-0.023em (-0.75px)"
+   },
+   {
+    "role": "font-size-500",
+    "sizePx": 26,
+    "lineHeightPx": 32,
+    "weight": 500,
+    "trackingEm": "-0.024em (-0.625px)"
+   },
+   {
+    "role": "font-size-400 / card h2-h3",
+    "sizePx": 22,
+    "lineHeightPx": 28,
+    "weight": 700,
+    "trackingEm": "-0.011em (-0.25px)"
+   },
+   {
+    "role": "font-size-350 / lead",
+    "sizePx": 20,
+    "lineHeightPx": 28,
+    "weight": 400,
+    "trackingEm": "-0.006em (-0.125px)"
+   },
+   {
+    "role": "font-size-300",
+    "sizePx": 18,
+    "lineHeightPx": 28,
+    "weight": 400,
+    "trackingEm": "-0.007em (-0.125px)"
+   },
+   {
+    "role": "font-size-200 / body, button medium/large",
+    "sizePx": 16,
+    "lineHeightPx": 24,
+    "weight": 400,
+    "trackingEm": "0"
+   },
+   {
+    "role": "font-size-150",
+    "sizePx": 15,
+    "lineHeightPx": 20,
+    "weight": 400,
+    "trackingEm": "0"
+   },
+   {
+    "role": "font-size-100 / small, button small, menu button",
+    "sizePx": 14,
+    "lineHeightPx": 20,
+    "weight": 400,
+    "trackingEm": "0"
+   },
+   {
+    "role": "font-size-50 / label",
+    "sizePx": 12,
+    "lineHeightPx": 16,
+    "weight": 500,
+    "trackingEm": "+0.01em (+0.125px)"
+   },
+   {
+    "role": "mobile hero h1 (390)",
+    "sizePx": 42,
+    "lineHeightPx": 48,
+    "weight": 600,
+    "trackingEm": "-0.036em (-1.5px)"
+   },
+   {
+    "role": "mobile h2 (390)",
+    "sizePx": 32,
+    "lineHeightPx": 40,
+    "weight": 700,
+    "trackingEm": "-0.023em (-0.75px)"
+   }
   ],
   "notes": "Tokens: --tatami-font-size-{50,100,150,200,300,350,400,500,600,700,800,900,1000,1100} = .75, .875, .9375, 1, 1.125, 1.25, 1.375, 1.625, 2, 2.625, 3.375, 4, 4.75, 6rem; line heights 1, 1.25, 1.25, 1.5, 1.75, 1.75, 1.75, 2, 2.5, 3, 3.5, 4, 5, 6.25rem. Letter-spacing is a token per size AND weight (e.g. 800 regular -0.21875rem, semibold/bold -0.117188rem; 1100 semibold -0.2875rem): regular weight tracks tighter than bold at the same size (700 regular -2px vs bold -1.5px). Typography tokens are complete font shorthands per size and weight (--tatami-typography-sans-200-medium-font: 500 1rem / 1.5rem NotionInter ...). Interaction styles: button-small 500 14/20, button-medium 500 16/24, button-large 600 16/24, menu-button 400 14/20, all 0 tracking. Hero h1 includes an inline pill ('Ship', green chip) inside the headline. Measured 2026-10-08 at 1440 and 390 on notion.com, /pricing, /help."
  },
@@ -78,12 +168,43 @@
   "contrastNotes": "Computed WCAG on white: white on #0075de 4.57:1 (just above AA); #005bab on #e6f3fe 6.04:1; gray-500 #78736f 4.69:1; gray-600 #615d59 6.53:1; rgba(0,0,0,0.54) renders about #757575 = 4.6:1. Primary body rgba(0,0,0,0.898) is about 15:1. Alpha-based text means contrast depends on the surface; tinted pastel chips need a re-check."
  },
  "spacing": {
-  "base": "4px (--tatami-dimension-spacing-N in px names, rem values)",
-  "scale": [0, 4, 8, 12, 16, 20, 24, 28, 30, 32, 40, 48, 56, 64, 72, 80, 96, 100, 128, 160],
-  "notes": "Named by pixel value (spacing-16 = 1rem). Sizes: --tatami-dimension-size-960 (60rem) and -1252 (78.25rem) for content widths; offsets 0/1/2px; thickness 1/2px. Breakpoints in media queries: 375, 600, 840, 1080, 1280, 1440px (min-width). Nav pad 5px 10px on 30px buttons. Hero frame inset about 240px at 1440 (product screenshot x=240)."
+  "base": "4px (--tatami-dimension-spacing-N in px names, rem values). Notes: Named by pixel value (spacing-16 = 1rem). Sizes: --tatami-dimension-size-960 (60rem) and -1252 (78.25rem) for content widths; offsets 0/1/2px; thickness 1/2px. Breakpoints in media queries: 375, 600, 840, 1080, 1280, 1440px (min-width). Nav pad 5px 10px on 30px buttons. Hero frame inset about 240px at 1440 (product screenshot x=240).",
+  "scale": [
+   0,
+   4,
+   8,
+   12,
+   16,
+   20,
+   24,
+   28,
+   30,
+   32,
+   40,
+   48,
+   56,
+   64,
+   72,
+   80,
+   96,
+   100,
+   128,
+   160
+  ]
  },
  "radius": {
-  "scale": [0, 4, 5, 6, 8, 10, 12, 14, 16, "round (624.938rem)"],
+  "scale": [
+   0,
+   4,
+   5,
+   6,
+   8,
+   10,
+   12,
+   14,
+   16,
+   "round (624.938rem)"
+  ],
   "rule": "Tokens --tatami-border-radius-0/200/300/400/500/600/700/800/900/round = 0, .25, .3125, .375, .5, .625, .75, .875, 1rem, pill. Components: button .5rem (large .625rem), icon-button .25rem, menu-button pill. Measured on home: 8px x67, 4px x22, 12px x17, pill x7, 16px x2; pricing table rows 5px x112."
  },
  "depth": {
@@ -97,7 +218,13 @@
   "blur": "unknown"
  },
  "motion": {
-  "durationsMs": [100, 150, 200, 250, 300],
+  "durationsMs": [
+   100,
+   150,
+   200,
+   250,
+   300
+  ],
   "easings": [
    "cubic-bezier(0.42, 0, 1, 1) ease-in (200ms background/colour/text-decoration/outline on links and buttons: x27, x23, x17)",
    "cubic-bezier(0, 0, 0.58, 1) ease-out",
@@ -109,7 +236,11 @@
   "notes": "Duration tokens 100/150/200/250/300ms; hover states on this site use ease-in (slow start) rather than ease-out, unusual; 11 prefers-reduced-motion media blocks exist in the stylesheets. z-index tokens: header 100, banner 90, mobile-nav 200, popup/lightbox/tooltip 500."
  },
  "density": {
-  "modes": ["marketing comfortable (36-38px CTAs, 16px body)", "pricing table compact (15px/20px rows)", "mobile (44px menu button)"],
+  "modes": [
+   "marketing comfortable (36-38px CTAs, 16px body)",
+   "pricing table compact (15px/20px rows)",
+   "mobile (44px menu button)"
+  ],
   "controlHeightsPx": {
    "nav text button": 30,
    "nav CTA (Get Notion free)": 36,
@@ -120,7 +251,19 @@
  },
  "components": {
   "count": "unknown",
-  "list": ["button (primary, secondary, tertiary, ghost)", "icon-button", "menu-button (pill, selectable)", "action-button (primary, alpha)", "inline headline chip (pill)", "nav with mega menus", "logo strip", "product screenshot frame", "pricing comparison table", "cookie dialog (Accept all, Reject all, More options)", "accordion"],
+  "list": [
+   "button (primary, secondary, tertiary, ghost)",
+   "icon-button",
+   "menu-button (pill, selectable)",
+   "action-button (primary, alpha)",
+   "inline headline chip (pill)",
+   "nav with mega menus",
+   "logo strip",
+   "product screenshot frame",
+   "pricing comparison table",
+   "cookie dialog (Accept all, Reject all, More options)",
+   "accordion"
+  ],
   "stateMatrixCompleteness": "Explicit and complete at token level for buttons: each variant has background, background-hover, background-focus, background-active, text, border (primary #0075de -> #005bab on hover, focus and active; secondary #e6f3fe -> #f2f9ff; tertiary #fff -> #f6f5f4 with #0000001a border; ghost transparent -> #f6f5f4 with #78736f indicator); icon-button #a39e98 -> #615d59 with 5% bg; menu-button rest #f9f9f8, hover/focus/active #f6f5f4, selected #f6f5f4 with border #0000001a / #0003. Disabled tokens exist for action-button icons (#0000004d). Hover, focus and active are separate tokens even when values are equal."
  },
  "tokenArchitecture": "Tatami, three tiers in CSS custom properties with the --tatami- prefix: (1) primitives named by scale step: --tatami-color-{hue}-{100..900}, --tatami-color-alpha-{black|white}-{100..900}, --tatami-dimension-spacing-{px}, --tatami-font-size-{50..1100}, --tatami-font-line-height-*, --tatami-font-letter-spacing-{sans|serif|mono}-{size}[-weight], --tatami-border-radius-{200..900|round}, --tatami-shadow-{0,100,200,300}, --tatami-motion-duration-*, --tatami-motion-timing-function-*; (2) semantic/component tokens that reference primitives and carry state in the name: --tatami-color-button-primary-background-hover, --tatami-color-menu-button-border-selected-active, --tatami-border-button-radius-lg, --tatami-typography-interaction-button-medium-font (a whole font shorthand), --tatami-typography-sans-{step}-{weight}-{font|letter-spacing|font-feature-settings}; (3) campaign namespaces (--tatami-color-campaigns-agents-launch-*, ...-dev-platform-dos-*) for time-boxed palettes. Component radius tokens appear twice in the stylesheet with different values (button radius 0 in one scope, .5rem in another; scope not identified), so radius is re-pointable per scope.",

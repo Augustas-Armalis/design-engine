@@ -1,0 +1,50 @@
+{
+  "slug": "meridian",
+  "name": "Meridian",
+  "showcaseHeadline": "Procurement-ready from day one.",
+  "signature": "Enterprise trust without the corporate stock look: transitional serif for headings, Plex Sans for UI, steel-teal accent, soft calm depth, generous structure.",
+  "personality": {
+    "brandHue": 218,
+    "brandChroma": 0.12,
+    "neutralTemperature": "cool",
+    "radiusPreset": "default",
+    "depthStyle": "soft",
+    "density": "default",
+    "motionPersonality": "calm",
+    "typeVoice": "Assured, plain, documentary."
+  },
+  "fonts": {
+    "display": "'Source Serif 4', Georgia, serif",
+    "body": "'IBM Plex Sans', system-ui, sans-serif",
+    "mono": "'IBM Plex Mono', ui-monospace, monospace",
+    "href": "https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+  },
+  "type": {
+    "ratio": 1.25,
+    "basePx": 16,
+    "displayMaxPx": 68,
+    "displayWeight": 600,
+    "displayTracking": -0.015,
+    "displayLeading": 1.05,
+    "bodyLeading": 1.6
+  },
+  "bestFor": [
+    "enterprise B2B SaaS",
+    "security and compliance",
+    "HR and legal tech"
+  ],
+  "avoidFor": [
+    "youth consumer",
+    "gaming"
+  ],
+  "owned": [
+    "Serif headings, sans everything else",
+    "Steel-teal accent paired with a slate neutral",
+    "Security and compliance facts shown as plain tables, never badges",
+    "Calm 280ms transitions"
+  ],
+  "never": [
+    "use playful illustration",
+    "use more than two font weights per element group"
+  ]
+}

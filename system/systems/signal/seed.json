@@ -1,0 +1,55 @@
+{
+  "slug": "signal",
+  "name": "Signal",
+  "showcaseHeadline": "Ship the fix before the page.",
+  "signature": "Developer-tool precision: compact grotesque, hard edges, offset block shadows, one amber signal colour for state, monospace as real data language.",
+  "personality": {
+    "brandHue": 62,
+    "brandChroma": 0.17,
+    "accentStep": 4,
+    "neutralTemperature": "cool",
+    "radiusPreset": "sharp",
+    "depthStyle": "crisp",
+    "density": "compact",
+    "motionPersonality": "snappy",
+    "typeVoice": "Terse, engineered, uppercase-free.",
+    "onAccent": "ink"
+  },
+  "fonts": {
+    "display": "'Schibsted Grotesk', 'Helvetica Neue', Arial, sans-serif",
+    "body": "'Schibsted Grotesk', 'Helvetica Neue', Arial, sans-serif",
+    "mono": "'JetBrains Mono', ui-monospace, monospace",
+    "href": "https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+  },
+  "type": {
+    "ratio": 1.2,
+    "basePx": 15,
+    "displayMaxPx": 88,
+    "displayWeight": 700,
+    "displayTracking": -0.035,
+    "displayLeading": 0.98,
+    "bodyLeading": 1.55
+  },
+  "bestFor": [
+    "devtools",
+    "CLIs and APIs",
+    "infra and observability",
+    "AI coding products"
+  ],
+  "avoidFor": [
+    "wellness",
+    "luxury",
+    "children"
+  ],
+  "owned": [
+    "Zero radius on containers; 2px only on inputs",
+    "Elevation is an offset solid block shadow, never blur",
+    "Amber is reserved for state and the one primary action",
+    "Code and IDs always in mono"
+  ],
+  "never": [
+    "use rounded pill buttons",
+    "use soft blurred shadows",
+    "animate longer than 300ms"
+  ]
+}

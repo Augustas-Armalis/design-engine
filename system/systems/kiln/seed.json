@@ -1,0 +1,49 @@
+{
+  "slug": "kiln",
+  "name": "Kiln",
+  "showcaseHeadline": "Made by hand, sold by software.",
+  "signature": "Craft and marketplace: Zilla Slab display, Work Sans body, brick-red accent on neutral (not cream), tight corners, crisp block depth.",
+  "personality": {
+    "brandHue": 28,
+    "brandChroma": 0.15,
+    "neutralTemperature": "neutral",
+    "radiusPreset": "tight",
+    "depthStyle": "crisp",
+    "density": "default",
+    "motionPersonality": "snappy",
+    "typeVoice": "Sturdy, tactile, honest."
+  },
+  "fonts": {
+    "display": "'Zilla Slab', Rockwell, serif",
+    "body": "'Work Sans', system-ui, sans-serif",
+    "mono": "'DM Mono', ui-monospace, monospace",
+    "href": "https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;600;700&family=Work+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap"
+  },
+  "type": {
+    "ratio": 1.25,
+    "basePx": 17,
+    "displayMaxPx": 84,
+    "displayWeight": 700,
+    "displayTracking": -0.02,
+    "displayLeading": 1,
+    "bodyLeading": 1.6
+  },
+  "bestFor": [
+    "marketplaces",
+    "maker and craft commerce",
+    "food and hospitality SaaS"
+  ],
+  "avoidFor": [
+    "AI infra",
+    "enterprise security"
+  ],
+  "owned": [
+    "Slab display",
+    "Brick accent on cool-neutral ground (explicitly not cream + coral)",
+    "Offset block depth on product cards"
+  ],
+  "never": [
+    "put a cream background behind the brick accent",
+    "use italic serif display"
+  ]
+}

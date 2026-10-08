@@ -1,0 +1,52 @@
+{
+  "slug": "ledger",
+  "name": "Ledger",
+  "showcaseHeadline": "Every number has a source.",
+  "signature": "Editorial finance: a quiet serif headline voice over a precise sans, deep evergreen accent, hairline rules instead of shadows, tabular figures everywhere money appears.",
+  "personality": {
+    "brandHue": 158,
+    "brandChroma": 0.11,
+    "neutralTemperature": "warm",
+    "radiusPreset": "tight",
+    "depthStyle": "border",
+    "density": "default",
+    "motionPersonality": "calm",
+    "typeVoice": "A measured book serif for claims; a plain grotesque for work."
+  },
+  "fonts": {
+    "display": "'Newsreader', Georgia, serif",
+    "body": "'Public Sans', system-ui, sans-serif",
+    "mono": "'IBM Plex Mono', ui-monospace, monospace",
+    "href": "https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+  },
+  "type": {
+    "ratio": 1.25,
+    "basePx": 17,
+    "displayMaxPx": 76,
+    "displayWeight": 500,
+    "displayTracking": -0.02,
+    "displayLeading": 1.02,
+    "bodyLeading": 1.6
+  },
+  "bestFor": [
+    "fintech",
+    "accounting",
+    "B2B finance ops",
+    "research and data publishers"
+  ],
+  "avoidFor": [
+    "playful consumer apps",
+    "gaming"
+  ],
+  "owned": [
+    "Serif display at weight 500, never bold",
+    "Hairline 1px rules separate sections; no drop shadows on cards",
+    "All currency and metrics in tabular mono figures",
+    "Evergreen accent used only on forward actions and positive deltas"
+  ],
+  "never": [
+    "use gradients or glow",
+    "set the serif below 24px",
+    "use a second accent colour"
+  ]
+}

@@ -156,6 +156,41 @@ The site itself says these are psychology heuristics, not engineering constraint
   **Why** Mental shortcuts speed decisions but produce systematic errors, in designers as well as in users.
   **Applies to** all. **Check** `visual` (process): decisions logged with evidence and a falsifier. **Source** https://lawsofux.com/cognitive-bias/
 
+### 2b. Mechanism and misuse, law by law
+
+| Law | Mechanism | Misuse to avoid |
+|---|---|---|
+| Aesthetic-Usability | pleasant look triggers a positive response that is read as ease | treating a polished mock as proof it works; skipping usability tests |
+| Choice Overload | each extra option adds evaluation cost and regret risk | hiding needed options, or cutting plans below what segments need |
+| Chunking | grouping turns many items into a few units that fit memory | one-item chunks, or grouping without labels so structure is unreadable |
+| Cognitive Bias | heuristics save effort but skew judgement | blaming users for biases, or exploiting them (dark patterns) |
+| Cognitive Load | working capacity is finite; interface effort competes with task effort | stripping so much that necessary context is lost |
+| Doherty Threshold | prompt responses keep attention and a sense of control | fake delays to simulate work; chasing 400 ms while ignoring correctness |
+| Fitts's Law | movement time grows with distance and shrinks with target size | oversized targets that crowd out content, or ignoring keyboard users |
+| Flow | challenge matched to skill plus fast feedback sustains focus | gamified streaks that lock users in; interruptions that break flow |
+| Goal-Gradient | motivation rises as the end nears | progress bars that lie or stall; endowed progress used to trap |
+| Hick's Law | decision time grows with the number and complexity of options | cutting options until the interface becomes vague; hiding choices instead of ordering them |
+| Jakob's Law | expectations are transferred from familiar products | freezing every pattern, or copying a competitor's dark pattern |
+| Common Region | an enclosed area reads as one group | boxing everything so nothing is grouped; boundary contradicting proximity |
+| Proximity | near items are read as related | uniform spacing that groups nothing; stray elements that sit near the wrong group |
+| Prägnanz | the eye picks the simplest organisation of a figure | over-simplifying until meaning or affordance is lost |
+| Similarity | alike items are read as related | styling unrelated items alike (all buttons, all cards), or non-links that look like links |
+| Uniform Connectedness | a physical connector outranks nearness and likeness | connectors that imply a sequence or hierarchy that does not exist |
+| Mental Model | people predict system behaviour from a stored model | designing from the team's own model and calling users wrong |
+| Miller's Law | short-term memory span is about seven items | citing seven as a hard limit for menus or navigation |
+| Occam's Razor | extra assumptions add risk and cost | deleting needed features or context to look minimal |
+| Paradox of the Active User | people act first and read later, even when reading would save time | burying help, or forcing a tutorial before the first action |
+| Pareto | a minority of inputs yields most results | ignoring the long tail that matters to key accounts or accessibility |
+| Parkinson's Law | work expands to the time or steps allowed | rushing users with artificial countdowns |
+| Peak-End | memory weights the most intense moment and the ending | polishing the finale while leaving a painful middle; manipulative emotional peaks |
+| Postel's Law | tolerate varied input, send clean output | accepting ambiguous input silently and storing it wrong |
+| Selective Attention | goal-irrelevant stimuli are filtered out | flooding the page with competing signals; ad-like styling on real content |
+| Serial Position | first and last items are remembered best | placing a critical item in the middle, or stuffing both ends with promos |
+| Tesler's Law | complexity cannot be removed, only moved | pushing complexity onto users, or removing it so far that power users lose control |
+| Von Restorff | the odd one out is noticed and remembered | highlighting everything; relying on colour alone; flashing emphasis |
+| Working Memory | a small buffer decays within seconds | requiring users to remember values across screens |
+| Zeigarnik | open loops hold attention | nagging badges and fake incompleteness to force engagement |
+
 ## 3. Numbers & scales
 
 The site gives very few numbers. All of them:

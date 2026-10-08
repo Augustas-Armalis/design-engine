@@ -1,0 +1,52 @@
+{
+  "slug": "halftone",
+  "name": "Halftone",
+  "showcaseHeadline": "Make the ad you meant to make.",
+  "signature": "Creative-tool energy: an expressive variable grotesque at poster scale, magenta accent, soft generous radii, layered depth and springy motion.",
+  "personality": {
+    "brandHue": 345,
+    "brandChroma": 0.2,
+    "neutralTemperature": "neutral",
+    "radiusPreset": "soft",
+    "depthStyle": "layered",
+    "density": "comfortable",
+    "motionPersonality": "springy",
+    "typeVoice": "Loud headline, friendly body."
+  },
+  "fonts": {
+    "display": "'Bricolage Grotesque', 'Helvetica Neue', sans-serif",
+    "body": "'Hanken Grotesk', system-ui, sans-serif",
+    "mono": "'DM Mono', ui-monospace, monospace",
+    "href": "https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap"
+  },
+  "type": {
+    "ratio": 1.333,
+    "basePx": 17,
+    "displayMaxPx": 104,
+    "displayWeight": 800,
+    "displayTracking": -0.04,
+    "displayLeading": 0.94,
+    "bodyLeading": 1.55
+  },
+  "bestFor": [
+    "AI creative tools",
+    "design and media apps",
+    "creator economy"
+  ],
+  "avoidFor": [
+    "regulated finance",
+    "healthcare",
+    "enterprise procurement"
+  ],
+  "owned": [
+    "Display at weight 800 with optical size, tight but never touching",
+    "Magenta only on the primary action and selection",
+    "Cards float on layered three-step shadows",
+    "Entrances spring with a single overshoot"
+  ],
+  "never": [
+    "use gradient text",
+    "add glow or aurora backgrounds",
+    "stack more than one magenta element per viewport"
+  ]
+}

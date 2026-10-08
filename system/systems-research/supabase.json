@@ -32,19 +32,97 @@
    "legacy studio stack: Circular, custom-font, Helvetica Neue, Helvetica, Arial"
   ],
   "scale": [
-   {"role": "text-xs (caption, badge-adjacent)", "sizePx": 12, "lineHeightPx": 16, "weight": 450, "trackingEm": "0"},
-   {"role": "text-sm (UI small, DS body copy, buttons small/medium)", "sizePx": 13, "lineHeightPx": 18.57, "weight": 450, "trackingEm": "0"},
-   {"role": "text-base (DS site body, marketing UI)", "sizePx": 15, "lineHeightPx": 22.5, "weight": 450, "trackingEm": "0"},
-   {"role": "text-lg / marketing body (token ratio gives 24.89px; measured 24px)", "sizePx": 16, "lineHeightPx": 24, "weight": 450, "trackingEm": "0"},
-   {"role": "text-xl", "sizePx": 18, "lineHeightPx": 25.2, "weight": 600, "trackingEm": "0"},
-   {"role": "text-2xl (card/section heading, mobile h3)", "sizePx": 22, "lineHeightPx": 29.33, "weight": 600, "trackingEm": "-0.025em on DS h1 mobile (-0.55px)"},
-   {"role": "text-3xl (token only, not observed in use)", "sizePx": 28, "lineHeightPx": 33.6, "weight": "unknown", "trackingEm": "unknown"},
-   {"role": "text-4xl (DS h1, marketing h3 desktop, marketing h1 mobile)", "sizePx": 34, "lineHeightPx": 37.78, "weight": 600, "trackingEm": "-0.025em (-0.85px) on DS h1"},
-   {"role": "text-5xl (marketing h1 desktop, Manrope)", "sizePx": 46, "lineHeightPx": 46, "weight": 500, "trackingEm": "normal"},
-   {"role": "text-7xl", "sizePx": 70, "lineHeightPx": 70, "weight": "unknown", "trackingEm": "unknown"},
-   {"role": "marketing nav link", "sizePx": 14, "lineHeightPx": 19.25, "weight": 500, "trackingEm": "0"},
-   {"role": "button tiny/xs", "sizePx": 12, "lineHeightPx": 16, "weight": 500, "trackingEm": "0"},
-   {"role": "badge (uppercase)", "sizePx": 9, "lineHeightPx": "1 (leading-none)", "weight": 500, "trackingEm": "+0.07em"}
+   {
+    "role": "text-xs (caption, badge-adjacent)",
+    "sizePx": 12,
+    "lineHeightPx": 16,
+    "weight": 450,
+    "trackingEm": "0"
+   },
+   {
+    "role": "text-sm (UI small, DS body copy, buttons small/medium)",
+    "sizePx": 13,
+    "lineHeightPx": 18.57,
+    "weight": 450,
+    "trackingEm": "0"
+   },
+   {
+    "role": "text-base (DS site body, marketing UI)",
+    "sizePx": 15,
+    "lineHeightPx": 22.5,
+    "weight": 450,
+    "trackingEm": "0"
+   },
+   {
+    "role": "text-lg / marketing body (token ratio gives 24.89px; measured 24px)",
+    "sizePx": 16,
+    "lineHeightPx": 24,
+    "weight": 450,
+    "trackingEm": "0"
+   },
+   {
+    "role": "text-xl",
+    "sizePx": 18,
+    "lineHeightPx": 25.2,
+    "weight": 600,
+    "trackingEm": "0"
+   },
+   {
+    "role": "text-2xl (card/section heading, mobile h3)",
+    "sizePx": 22,
+    "lineHeightPx": 29.33,
+    "weight": 600,
+    "trackingEm": "-0.025em on DS h1 mobile (-0.55px)"
+   },
+   {
+    "role": "text-3xl (token only, not observed in use)",
+    "sizePx": 28,
+    "lineHeightPx": 33.6,
+    "weight": "unknown",
+    "trackingEm": "unknown"
+   },
+   {
+    "role": "text-4xl (DS h1, marketing h3 desktop, marketing h1 mobile)",
+    "sizePx": 34,
+    "lineHeightPx": 37.78,
+    "weight": 600,
+    "trackingEm": "-0.025em (-0.85px) on DS h1"
+   },
+   {
+    "role": "text-5xl (marketing h1 desktop, Manrope)",
+    "sizePx": 46,
+    "lineHeightPx": 46,
+    "weight": 500,
+    "trackingEm": "normal"
+   },
+   {
+    "role": "text-7xl",
+    "sizePx": 70,
+    "lineHeightPx": 70,
+    "weight": "unknown",
+    "trackingEm": "unknown"
+   },
+   {
+    "role": "marketing nav link",
+    "sizePx": 14,
+    "lineHeightPx": 19.25,
+    "weight": 500,
+    "trackingEm": "0"
+   },
+   {
+    "role": "button tiny/xs",
+    "sizePx": 12,
+    "lineHeightPx": 16,
+    "weight": 500,
+    "trackingEm": "0"
+   },
+   {
+    "role": "badge (uppercase)",
+    "sizePx": 9,
+    "lineHeightPx": "1 (leading-none)",
+    "weight": 500,
+    "trackingEm": "+0.07em"
+   }
   ],
   "notes": "Line-heights are tokenised as ratios (calc(1.25 / .875), calc(1.5 / 1)...), producing the fractional px above. Base UI size is 13px (text-sm) in the dashboard, 15px on the DS site, 16px on marketing; the root --text-sm is .8125rem, so Tailwind's `text-sm` is 13px here, not 14. Body weight 450 is a custom variable-font step. Mobile: marketing h1 34/37.78 (from 46/46), h3 22/29.33 (from 34/37.78); inputs use text-base on mobile (md:text-sm) to avoid iOS zoom. Measured 2026-10-08 at 1440 and 390 on supabase.com, /design-system, /docs, /pricing; tokens read from packages/config/css/theme.css and apps/design-system root vars."
  },
@@ -83,12 +161,32 @@
   "contrastNotes": "Computed from the stated OKLCH values (sRGB conversion, WCAG ratio) 2026-10-08: light fg/bg 20.28:1; light muted-foreground (L .52065) on bg 5.40:1; light primary ink on bg 5.02:1; light primary-foreground on primary plate 4.96:1; dark fg/bg 15.99:1; dark primary ink on bg 9.14:1; dark primary-solid-foreground on plate 6.40:1. Docs claim text-primary meets WCAG AA for normal text on app surfaces in both modes; computed values agree. Contrast knob 0-1 re-scales foreground, muted fg and border alpha globally (floor 0.9 for text, 0.05 for borders)."
  },
  "spacing": {
-  "base": "4px (Tailwind v4 --spacing .25rem); legacy tokens --spacing-scale 2px and --sizing-scale 1.5px",
-  "scale": [2, 4, 6, 8, 10, 12, 16, 20, 24, 32, 48, 64, 128],
-  "notes": "Legacy tokens: xs 4, sm 8, md 16, lg 32, xl 64, xxl 128; card padding var(--card-padding-x) 1rem, md 1.5rem; --spacing-content 21px; --width-listbox 320px; --breakpoint-xs 480px; --content-width-screen-xl 1128px; --container-site 128rem. Marketing container measured 1088px (x=176..1264) at 1440. Data grid: row height 28px (--datatable-rowheight), header icon 16px. Sizing scale 1.5px: xs 4, sm 6, md 9, lg 13.5, xl 20.25."
+  "base": "4px (Tailwind v4 --spacing .25rem); legacy tokens --spacing-scale 2px and --sizing-scale 1.5px. Notes: Legacy tokens: xs 4, sm 8, md 16, lg 32, xl 64, xxl 128; card padding var(--card-padding-x) 1rem, md 1.5rem; --spacing-content 21px; --width-listbox 320px; --breakpoint-xs 480px; --content-width-screen-xl 1128px; --container-site 128rem. Marketing container measured 1088px (x=176..1264) at 1440. Data grid: row height 28px (--datatable-rowheight), header icon 16px. Sizing scale 1.5px: xs 4, sm 6, md 9, lg 13.5, xl 20.25.",
+  "scale": [
+   2,
+   4,
+   6,
+   8,
+   10,
+   12,
+   16,
+   20,
+   24,
+   32,
+   48,
+   64,
+   128
+  ]
  },
  "radius": {
-  "scale": [2, 4, 6, 8, 12, 16],
+  "scale": [
+   2,
+   4,
+   6,
+   8,
+   12,
+   16
+  ],
   "rule": "Tailwind-v4 theme: xs 2px, sm 4px, md 6px (default control radius), lg 8px, xl 12px, 2xl 16px; --radius-panel 6px; --radius-item = md - 2px (nested items concentric with their panel). Legacy --borderradius-xs/sm/lg/xl = 2/4/8/16, tableheader 4. Badges and chips are pills. Measured on marketing the radii are about 1.333x of this scale (5.33, 10.67, 21.33px; buttons 8.86-9.29px), cause inferred to be a marketing radius multiplier; DS site buttons measure 6px (md) and inputs 8px."
  },
  "depth": {
@@ -102,7 +200,12 @@
   "blur": "unknown (backdrop blur not measured on DS; marketing header blur not extracted)"
  },
  "motion": {
-  "durationsMs": [150, 200, 400, 600],
+  "durationsMs": [
+   150,
+   200,
+   400,
+   600
+  ],
   "easings": [
    "cubic-bezier(0.4, 0, 0.2, 1) --ease-in-out (default 150ms, inputs 200ms)",
    "cubic-bezier(0.22, 1, 0.36, 1) (buttons, 200ms: background-color, border-color, color, shadow)",
@@ -114,7 +217,11 @@
   "notes": "--default-transition-duration .15s. Marketing page applies a 400ms opacity fade to about 2800 elements (scroll/entrance reveal). Focus indicators are deliberately excluded from transition lists so they appear instantly (focus-inset). prefers-reduced-motion behaviour not verified."
  },
  "density": {
-  "modes": ["compact studio/dashboard (13px text, 26-34px controls, 28px grid rows)", "DS docs (15px text)", "marketing comfortable (15-16px text, 38px CTAs)"],
+  "modes": [
+   "compact studio/dashboard (13px text, 26-34px controls, 28px grid rows)",
+   "DS docs (15px text)",
+   "marketing comfortable (15-16px text, 38px CTAs)"
+  ],
   "controlHeightsPx": {
    "legacy button/input tiny": 26,
    "legacy small": 34,
@@ -132,7 +239,67 @@
  },
  "components": {
   "count": 58,
-  "list": ["accordion", "alert-dialog", "alert", "aspect-ratio", "avatar", "badge", "breadcrumb", "button", "calendar", "card", "carousel", "chart", "checkbox", "collapsible", "combobox", "command", "commandmenu", "context-menu", "date-picker", "dialog", "drawer", "dropdown-menu", "expanding-textarea", "field", "form", "hover-card", "input-otp", "input", "keyboard-shortcut", "label", "menubar", "mermaid", "nav-menu", "navigation-menu", "pagination", "popover", "progress", "radio-group-card", "radio-group-stacked", "radio-group", "resizable", "scroll-area", "select", "separator", "sheet", "sidebar", "skeleton", "slider", "sonner", "success-check", "switch", "table", "tabs", "textarea", "toggle-group", "toggle", "tooltip", "tree-view", "UI patterns (10): charts, connect-interstitials, empty-states, forms, introduction, layout, markdown, modality, navigation, tables"],
+  "list": [
+   "accordion",
+   "alert-dialog",
+   "alert",
+   "aspect-ratio",
+   "avatar",
+   "badge",
+   "breadcrumb",
+   "button",
+   "calendar",
+   "card",
+   "carousel",
+   "chart",
+   "checkbox",
+   "collapsible",
+   "combobox",
+   "command",
+   "commandmenu",
+   "context-menu",
+   "date-picker",
+   "dialog",
+   "drawer",
+   "dropdown-menu",
+   "expanding-textarea",
+   "field",
+   "form",
+   "hover-card",
+   "input-otp",
+   "input",
+   "keyboard-shortcut",
+   "label",
+   "menubar",
+   "mermaid",
+   "nav-menu",
+   "navigation-menu",
+   "pagination",
+   "popover",
+   "progress",
+   "radio-group-card",
+   "radio-group-stacked",
+   "radio-group",
+   "resizable",
+   "scroll-area",
+   "select",
+   "separator",
+   "sheet",
+   "sidebar",
+   "skeleton",
+   "slider",
+   "sonner",
+   "success-check",
+   "switch",
+   "table",
+   "tabs",
+   "textarea",
+   "toggle-group",
+   "toggle",
+   "tooltip",
+   "tree-view",
+   "UI patterns (10): charts, connect-interstitials, empty-states, forms, introduction, layout, markdown, modality, navigation, tables"
+  ],
   "stateMatrixCompleteness": "Documented and coded: button variants default, destructive, outline, secondary, ghost, link x sizes default/sm/lg/icon (shadcn layer) plus legacy tiny..xlarge with loading, icon, iconRight; hover tokens for primary, primary-solid, warning, destructive via --*-hover (lightness delta 0.04); focus-visible ring recipe (focus-ring and focus-inset) shared by all controls; disabled = opacity .5, pointer-events none, with focusableWhenDisabled for discoverable unavailable actions; input has hover border, focus border, read-only text colour, aria-invalid bg/border/hover/focus states, disabled text; badge variants default/warning/success/destructive/secondary. Per-component tests (vitest) exist for accordion, alert-dialog, sheet, tabs, toggle(-group)."
  },
  "tokenArchitecture": "Layered, all CSS custom properties, Tailwind v4 @theme-mapped: (0) primitives: Radix scales --colors-{hue}-{light|dark}-{100..1200} (+alpha), spacing, sizing, radius, icon sizes in global.css (exported from Figma through packages/ui/internals/tokens); (1) inputs per theme: --hue/--primary-hue, --surface-hue-offset, --chroma, --surface, --foreground-lightness, --contrast, --elevation-step, --field-alpha, stepped literals (brand/warning/destructive/secondary 200-600); (2) semantic derivation in semantic.css via OKLCH relative-colour syntax: --background, --foreground, --card, --popover, --primary(-solid/-bright/-foreground/-hover), --secondary, --tertiary, --muted, --accent, --field, --control, --warning, --destructive, --info, --border, --input, --ring; (3) compat.css maps legacy names (--foreground-light, --background-surface-100, --border-strong, --sidebar-*) onto (2) so un-migrated code keeps resolving; (4) Tailwind utilities (bg-surface-100, text-foreground-light, border-strong, focus-ring). Naming is by role not by value; shorthands (text-muted = text-foreground-muted) avoid double typing.",

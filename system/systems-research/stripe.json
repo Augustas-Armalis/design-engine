@@ -33,27 +33,153 @@
    "Elements default: Ideal Sans, system-ui, sans-serif"
   ],
   "scale": [
-   {"role": "hero h1 (home, 1440)", "sizePx": 48, "lineHeightPx": 55.2, "weight": 300, "trackingEm": "-0.02em (-0.96px)"},
-   {"role": "statement h2 (home, 1440)", "sizePx": 56, "lineHeightPx": 57.68, "weight": 300, "trackingEm": "-0.025em (-1.4px)"},
-   {"role": "section h2 / lead p (home)", "sizePx": 32, "lineHeightPx": 35.2, "weight": 300, "trackingEm": "-0.02em (-0.64px)"},
-   {"role": "card h3 (home)", "sizePx": 26, "lineHeightPx": 29.12, "weight": 300, "trackingEm": "-0.01em (-0.26px)"},
-   {"role": "stat number (home)", "sizePx": 48, "lineHeightPx": 48, "weight": 300, "trackingEm": "-0.02em (-0.96px)"},
-   {"role": "body (home)", "sizePx": 16, "lineHeightPx": 22.4, "weight": 300, "trackingEm": "0"},
-   {"role": "nav link", "sizePx": 14, "lineHeightPx": 14, "weight": 400, "trackingEm": "0"},
-   {"role": "button (home, 1440 nav 14px / mobile 16px)", "sizePx": 16, "lineHeightPx": 16, "weight": 400, "trackingEm": "0"},
-   {"role": "eyebrow / label (home)", "sizePx": 10, "lineHeightPx": 11.5, "weight": 400, "trackingEm": "unknown"},
-   {"role": "pricing body", "sizePx": 15, "lineHeightPx": 24, "weight": 300, "trackingEm": "0"},
-   {"role": "pricing emphasis / pill button", "sizePx": 15, "lineHeightPx": 24, "weight": 425, "trackingEm": "0"},
-   {"role": "pricing price h2", "sizePx": 26, "lineHeightPx": 36, "weight": 500, "trackingEm": "0"},
-   {"role": "pricing eyebrow h2 (purple)", "sizePx": 18, "lineHeightPx": 28, "weight": 500, "trackingEm": "+0.2px"},
-   {"role": "mobile h1 (390)", "sizePx": 34, "lineHeightPx": 35.02, "weight": 300, "trackingEm": "-0.01em (-0.34px)"},
-   {"role": "mobile h2 (390)", "sizePx": 22, "lineHeightPx": 26.4, "weight": 300, "trackingEm": "-0.01em (-0.22px)"},
-   {"role": "mobile h3 (390)", "sizePx": 20, "lineHeightPx": 24, "weight": 300, "trackingEm": "-0.01em (-0.2px)"},
-   {"role": "docs h1", "sizePx": 32, "lineHeightPx": 40, "weight": 700, "trackingEm": "0"},
-   {"role": "docs h2", "sizePx": 21, "lineHeightPx": "normal", "weight": 700, "trackingEm": "0"},
-   {"role": "docs body", "sizePx": 14, "lineHeightPx": 20, "weight": 400, "trackingEm": "0"},
-   {"role": "docs sidebar / dense", "sizePx": 13, "lineHeightPx": 19, "weight": 400, "trackingEm": "0"},
-   {"role": "docs nav tab", "sizePx": 14, "lineHeightPx": 20, "weight": 600, "trackingEm": "0"}
+   {
+    "role": "hero h1 (home, 1440)",
+    "sizePx": 48,
+    "lineHeightPx": 55.2,
+    "weight": 300,
+    "trackingEm": "-0.02em (-0.96px)"
+   },
+   {
+    "role": "statement h2 (home, 1440)",
+    "sizePx": 56,
+    "lineHeightPx": 57.68,
+    "weight": 300,
+    "trackingEm": "-0.025em (-1.4px)"
+   },
+   {
+    "role": "section h2 / lead p (home)",
+    "sizePx": 32,
+    "lineHeightPx": 35.2,
+    "weight": 300,
+    "trackingEm": "-0.02em (-0.64px)"
+   },
+   {
+    "role": "card h3 (home)",
+    "sizePx": 26,
+    "lineHeightPx": 29.12,
+    "weight": 300,
+    "trackingEm": "-0.01em (-0.26px)"
+   },
+   {
+    "role": "stat number (home)",
+    "sizePx": 48,
+    "lineHeightPx": 48,
+    "weight": 300,
+    "trackingEm": "-0.02em (-0.96px)"
+   },
+   {
+    "role": "body (home)",
+    "sizePx": 16,
+    "lineHeightPx": 22.4,
+    "weight": 300,
+    "trackingEm": "0"
+   },
+   {
+    "role": "nav link",
+    "sizePx": 14,
+    "lineHeightPx": 14,
+    "weight": 400,
+    "trackingEm": "0"
+   },
+   {
+    "role": "button (home, 1440 nav 14px / mobile 16px)",
+    "sizePx": 16,
+    "lineHeightPx": 16,
+    "weight": 400,
+    "trackingEm": "0"
+   },
+   {
+    "role": "eyebrow / label (home)",
+    "sizePx": 10,
+    "lineHeightPx": 11.5,
+    "weight": 400,
+    "trackingEm": "unknown"
+   },
+   {
+    "role": "pricing body",
+    "sizePx": 15,
+    "lineHeightPx": 24,
+    "weight": 300,
+    "trackingEm": "0"
+   },
+   {
+    "role": "pricing emphasis / pill button",
+    "sizePx": 15,
+    "lineHeightPx": 24,
+    "weight": 425,
+    "trackingEm": "0"
+   },
+   {
+    "role": "pricing price h2",
+    "sizePx": 26,
+    "lineHeightPx": 36,
+    "weight": 500,
+    "trackingEm": "0"
+   },
+   {
+    "role": "pricing eyebrow h2 (purple)",
+    "sizePx": 18,
+    "lineHeightPx": 28,
+    "weight": 500,
+    "trackingEm": "+0.2px"
+   },
+   {
+    "role": "mobile h1 (390)",
+    "sizePx": 34,
+    "lineHeightPx": 35.02,
+    "weight": 300,
+    "trackingEm": "-0.01em (-0.34px)"
+   },
+   {
+    "role": "mobile h2 (390)",
+    "sizePx": 22,
+    "lineHeightPx": 26.4,
+    "weight": 300,
+    "trackingEm": "-0.01em (-0.22px)"
+   },
+   {
+    "role": "mobile h3 (390)",
+    "sizePx": 20,
+    "lineHeightPx": 24,
+    "weight": 300,
+    "trackingEm": "-0.01em (-0.2px)"
+   },
+   {
+    "role": "docs h1",
+    "sizePx": 32,
+    "lineHeightPx": 40,
+    "weight": 700,
+    "trackingEm": "0"
+   },
+   {
+    "role": "docs h2",
+    "sizePx": 21,
+    "lineHeightPx": "normal",
+    "weight": 700,
+    "trackingEm": "0"
+   },
+   {
+    "role": "docs body",
+    "sizePx": 14,
+    "lineHeightPx": 20,
+    "weight": 400,
+    "trackingEm": "0"
+   },
+   {
+    "role": "docs sidebar / dense",
+    "sizePx": 13,
+    "lineHeightPx": 19,
+    "weight": 400,
+    "trackingEm": "0"
+   },
+   {
+    "role": "docs nav tab",
+    "sizePx": 14,
+    "lineHeightPx": 20,
+    "weight": 600,
+    "trackingEm": "0"
+   }
   ],
   "notes": "Marketing is a light-weight display system: weight 300 for headings, body and stats, weight 400 for nav/buttons, 425 and 500 appear on the pricing template (variable axis used at non-round values). Tracking -0.02em at 32-48px, -0.025em at 56px, -0.01em at 20-34px mobile. Marketing and docs are different typographic worlds: docs use the system font stack at 14px with bold headings. Hero headline is gradient-coloured text (two stacked h1 layers measured with colours rgb(129,184,26) and rgba(0,14,255,0.5) animating). Elements Appearance API scales font sizes from --fontSizeBase in rem (fontSizeXs..3Xs / Sm..2Xl) and requires >= 16px for mobile inputs. Measured 2026-10-08 at 1440 and 390 on stripe.com, /pricing, docs.stripe.com."
  },
@@ -86,12 +212,32 @@
   "contrastNotes": "Computed WCAG on white: ink #061b31 17.37:1, #0a2540 ~16:1 class, body #50617a 6.30:1, muted #64748d 4.75:1, primary #533afd 6.19:1, #635bff 4.70:1, docs #5469d4 4.83:1 (white text on it 4.83:1). Stripe's own method (public post): Lab-based ramps tuned so any two steps 5 apart pass 4.5:1 and 4 apart pass 3:1 on any hue, including on the lightest tint of each hue; audit found no default text colour other than black met 4.5:1 before the rebuild."
  },
  "spacing": {
-  "base": "unknown for marketing; Stripe Apps tokens 2/4/8 steps; Elements spacingUnit default 2px (everything derives from it)",
-  "scale": [0, 2, 4, 8, 16, 24, 32, 48],
-  "notes": "Stripe Apps spacing tokens: 0, xxsmall 2px, xsmall 4px, small 8px, medium 16px, large 24px, xlarge 32px, xxlarge 48px. Marketing layout measured at 1440: nav height 76px; page frame has 1px vertical grid lines at x=88 and x=1352 (1264px frame), hero content inset to x=208 (stat bar to the right), logo strip inside frame; sections 7-10 are 1232px wide. Section heights vary 560-4530px; vertical rhythm not tokenised in the stylesheet."
+  "base": "unknown for marketing; Stripe Apps tokens 2/4/8 steps; Elements spacingUnit default 2px (everything derives from it). Notes: Stripe Apps spacing tokens: 0, xxsmall 2px, xsmall 4px, small 8px, medium 16px, large 24px, xlarge 32px, xxlarge 48px. Marketing layout measured at 1440: nav height 76px; page frame has 1px vertical grid lines at x=88 and x=1352 (1264px frame), hero content inset to x=208 (stat bar to the right), logo strip inside frame; sections 7-10 are 1232px wide. Section heights vary 560-4530px; vertical rhythm not tokenised in the stylesheet.",
+  "scale": [
+   0,
+   2,
+   4,
+   8,
+   16,
+   24,
+   32,
+   48
+  ]
  },
  "radius": {
-  "scale": [2, 3, 4, 5, 6, 8, 12, 14, 16, 16.5, "100%"],
+  "scale": [
+   2,
+   3,
+   4,
+   5,
+   6,
+   8,
+   12,
+   14,
+   16,
+   16.5,
+   "100%"
+  ],
   "rule": "Marketing home buttons and chips are 4px (57 elements), cards 6px (38), small controls 5px; pricing template uses fully rounded 16.5px pills at 33px height; docs use 4px buttons, 6px inputs, 8px panels, 14px large cards. Elements default borderRadius 4px (buttonBorderRadius overrides). Two button grammars (square-ish 4px and pill) coexist on stripe.com templates."
  },
  "depth": {
@@ -107,7 +253,15 @@
   "blur": "nav bar background rgba(255,255,255,0.8) (backdrop blur not extracted, inferred); gradient hero uses large blurred radial gradients (blur radius not measured)."
  },
  "motion": {
-  "durationsMs": [100, 150, 240, 300, 600, 800, 1200],
+  "durationsMs": [
+   100,
+   150,
+   240,
+   300,
+   600,
+   800,
+   1200
+  ],
   "easings": [
    "cubic-bezier(0.25, 1, 0.5, 1) (300ms colour/fill/stroke/transform/opacity, about 400 elements)",
    "cubic-bezier(0.45, 0.05, 0.55, 0.95) (240ms nav colour/background)",
@@ -121,7 +275,12 @@
   "notes": "Hover feedback 100-300ms, reveal and emphasis 600-1200ms. Home page animates headline colour over 1.2s as scroll feedback and a live GDP counter (1.72881855%) as a motion element. Docs buttons: 240ms background-color/box-shadow. prefers-reduced-motion not verified."
  },
  "density": {
-  "modes": ["marketing comfortable (40-44px CTAs, 76px nav)", "docs dense (14px body, 36px nav buttons)", "pricing compact pill (32-33px)", "Elements spaced vs condensed inputs"],
+  "modes": [
+   "marketing comfortable (40-44px CTAs, 76px nav)",
+   "docs dense (14px body, 36px nav buttons)",
+   "pricing compact pill (32-33px)",
+   "Elements spaced vs condensed inputs"
+  ],
   "controlHeightsPx": {
    "marketing nav item": 38,
    "marketing CTA desktop": 40,
@@ -135,7 +294,11 @@
  },
  "components": {
   "count": 46,
-  "list": ["Stripe Apps UI (46): ContextView, FullPageView, OnboardingView, SettingsView, SignInView, Box, DetailPage, Divider, OverviewPage, Button, ButtonGroup, Link, Menu, Tabs, Accordion, Badge, Banner, Chip, Code, DataTable, FocusView, Icon, Img, Inline, List, PropertyList, Spinner, Table, TaskList, Toast, Tooltip, Checkbox, CurrencyField, DateField, DateRangePicker, FormFieldGroup, Radio, SearchField, Select, Switch, TextArea, TextField, BarChart, LineChart, Sparkline, MeterChart", "Elements: payment, address, link authentication, tabs, accordion items, inputs, labels, buttons", "Marketing: nav with mega-menus, pill/square CTA, logo strip, stat counter, gradient hero, bento product grid, pricing table"],
+  "list": [
+   "Stripe Apps UI (46): ContextView, FullPageView, OnboardingView, SettingsView, SignInView, Box, DetailPage, Divider, OverviewPage, Button, ButtonGroup, Link, Menu, Tabs, Accordion, Badge, Banner, Chip, Code, DataTable, FocusView, Icon, Img, Inline, List, PropertyList, Spinner, Table, TaskList, Toast, Tooltip, Checkbox, CurrencyField, DateField, DateRangePicker, FormFieldGroup, Radio, SearchField, Select, Switch, TextArea, TextField, BarChart, LineChart, Sparkline, MeterChart",
+   "Elements: payment, address, link authentication, tabs, accordion items, inputs, labels, buttons",
+   "Marketing: nav with mega-menus, pill/square CTA, logo strip, stat counter, gradient hero, bento product grid, pricing table"
+  ],
   "stateMatrixCompleteness": "Public for Elements: Appearance API exposes rules per component and state (e.g. .Input, .Input:focus, .Input--invalid, .Tab, .Tab--selected, .Label, .Block) over 3 themes (stripe, night, flat) and an `inputs` (spaced, condensed) x `labels` (auto, above, floating) matrix, ~60+ variables; for Stripe Apps components have fixed presets and limited CSS (Chips change by callbacks, not overridable). Marketing/docs component state matrices are not published."
  },
  "tokenArchitecture": "Sail (internal) exposes in the shipped docs CSS: ramp primitives --sail-color-{hue}-{50..900|950} each with a -rgb triplet twin for alpha compositing (e.g. --sail-color-blue-500-rgb: 84, 105, 212), semantic aliases (--sail-color-background, -background-canvas, -background-offset, -line-divider, -line-divider-medium, -line-divider-dark, -line-keyline), and hue aliasing so a theme re-points whole ramps (orange to yellow, purple to blue, blue to cyan). Components then read hashed utility vars (--s-xxxx). Public layers: Stripe Apps tokens as typed props (spacing xxsmall..xxlarge, keyline, backgroundColor, color/fill, font) so only token values are allowed; Elements three-tier theme > variables > rules with computed accessibleColorOn* variables that choose readable text for any brand colour.",

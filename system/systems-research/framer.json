@@ -1,0 +1,236 @@
+{
+ "name": "Framer (framer.com marketing site + Framer plugin UI stylesheet)",
+ "slug": "framer",
+ "vendor": "Framer B.V.",
+ "url": "https://www.framer.com",
+ "licence": "Proprietary. framer.com/brand lists four brand colours and logo rules only. The plugin UI stylesheet (npm framer-plugin 3.10.3, styles/framer.css) is published but the package declares no licence field (unknown). The marketing site is itself built in Framer, so its CSS is exported component styles, not a design-system token file. Study structure and values only.",
+ "studiedOn": "2026-10-08",
+ "personality": [
+  "dark",
+  "cinematic",
+  "compact",
+  "product-forward",
+  "tight",
+  "confident"
+ ],
+ "bestFor": [
+  "design/no-code/creative-tool brands that want a black canvas and the product as hero media",
+  "dark, high-contrast marketing with very tight display type",
+  "compact tool-panel UI (30px controls, 12px text) as in plugin windows",
+  "teams that want a tiny semantic colour contract (11 variables) for embedded UI"
+ ],
+ "avoidFor": [
+  "light, warm or editorial brands",
+  "accessibility-first projects without raising the dim greys (#666 on black is 3.66:1)",
+  "teams needing an auditable token system (page tokens are UUID-named)",
+  "dense data products (no table, chart or form spec exists publicly)"
+ ],
+ "typography": {
+  "families": [
+   "GT Walsheim Medium (h1 and h2, weight 500, font-feature-settings \"ss02\"; commercial)",
+   "Inter Variable (body, nav, h3, buttons; features \"cv01\",\"cv05\",\"cv09\",\"cv11\",\"ss03\"; fallback sans-serif)",
+   "Input Mono Regular / Bold (code and mono labels, 31 nodes)",
+   "plugin UI: Inter (Google Fonts 100-900), system-ui, Avenir, Helvetica, Arial",
+   "declared but not used on first view: EB Garamond, Geist, Inter Tight, Mona Sans, JetBrains Mono, VT323, Luxurious Script (template/demo fonts)"
+  ],
+  "scale": [
+   {
+    "role": "h1 hero (1440)",
+    "sizePx": 54,
+    "lineHeightPx": 54,
+    "weight": 500,
+    "trackingEm": "-0.04em (-2.16px)"
+   },
+   {
+    "role": "h2 section (1440)",
+    "sizePx": 44,
+    "lineHeightPx": 48.4,
+    "weight": 500,
+    "trackingEm": "-0.04em (-1.76px)"
+   },
+   {
+    "role": "price / large figure (pricing)",
+    "sizePx": 24,
+    "lineHeightPx": 31.2,
+    "weight": 400,
+    "trackingEm": "unknown"
+   },
+   {
+    "role": "h3 / card title (Inter Variable)",
+    "sizePx": 18,
+    "lineHeightPx": 24.3,
+    "weight": 400,
+    "trackingEm": "-0.011em (-0.2px)"
+   },
+   {
+    "role": "lead / mobile body",
+    "sizePx": 15,
+    "lineHeightPx": 20.25,
+    "weight": 400,
+    "trackingEm": "unknown"
+   },
+   {
+    "role": "body / nav",
+    "sizePx": 14,
+    "lineHeightPx": 19.6,
+    "weight": 400,
+    "trackingEm": "-0.007em (-0.1px)"
+   },
+   {
+    "role": "UI small (buttons, inputs)",
+    "sizePx": 13,
+    "lineHeightPx": 20.8,
+    "weight": 500,
+    "trackingEm": "0 to -0.02em (CTA -0.26px on 13px)"
+   },
+   {
+    "role": "UI label / plugin body",
+    "sizePx": 12,
+    "lineHeightPx": 14.4,
+    "weight": 500,
+    "trackingEm": "0"
+   },
+   {
+    "role": "tiny label",
+    "sizePx": 10,
+    "lineHeightPx": 12,
+    "weight": 500,
+    "trackingEm": "unknown"
+   },
+   {
+    "role": "mobile h1 (390)",
+    "sizePx": 36,
+    "lineHeightPx": 36,
+    "weight": 500,
+    "trackingEm": "-0.04em (-1.44px)"
+   },
+   {
+    "role": "mobile h2 (390)",
+    "sizePx": 28,
+    "lineHeightPx": 30.8,
+    "weight": 500,
+    "trackingEm": "-0.04em (-1.12px)"
+   }
+  ],
+  "notes": "One tracking value (-0.04em) is applied to both display sizes and scales with size; h1 line-height is 1.0, h2 1.1, h3 1.35, body 1.4. Body copy is small (14px) and mostly rgba(255,255,255,0.6). Plugin UI base is 12px/1.5 weight 500 (buttons 600), 30px controls. Measured 2026-10-08 at 1440 and 390 on framer.com, /pricing, /ai; plugin values read from framer-plugin/styles/framer.css."
+ },
+ "color": {
+  "model": "hex",
+  "neutrals": {
+   "page": "#000000 (body bg, 46 nodes)",
+   "surfaces": "#111111, #141414, #1a1a1a, #1e1e1e (x16), #242424 (rgb 36,36,36, x33 most common non-black fill), button plate #1f1f1f, #222 at 80% for floating chips; inverse surface #fff for primary CTA",
+   "hairlines": "rgba(255,255,255,0.10) 1px (x2 ring), rgba(255,255,255,0.08), #ffffff12, #ffffff1a",
+   "text": "#fff (148 nodes), rgba(255,255,255,0.8), rgba(255,255,255,0.6) (94+ nodes, body), rgba(255,255,255,0.4); solid #999999 (147 nodes), #666666 (20 nodes)",
+   "plugin UI variables": "--framer-color-bg, -bg-secondary, -bg-tertiary, -text, -text-secondary, -text-tertiary, -text-reversed, -divider, -tint, -tint-dark, -tint-extra-dark (fallback #0077ff); defaults light: text #333, bg #fff, tint #09f"
+  },
+  "accents": {
+   "Framer Blue": "#0099ff (links, small highlights, 7.0:1 on black)",
+   "Framer Deep Blue": "#0055ff (brand page)",
+   "CTA": "white fill, black text (primary), #1f1f1f fill with white text (secondary 'Download app')",
+   "page token palette (UUID-named, 477 vars)": "#09f, #05f, #60f, #90f, #f06, #f02, #fd7702, #fb0, #0cf, #2dd, #4cd963, #cbff00 (lime), #00bb88 (success tint chip bg rgba(0,187,136,0.1))"
+  },
+  "semantic": {
+   "success": "#00bb88 text on rgba(0,187,136,0.1)",
+   "info/link": "#0099ff",
+   "danger / warning": "unknown (no semantic names; palette has #f02 and #fb0)",
+   "note": "Framer colour styles export as --token-<uuid> with no semantic name; roles are encoded only by use."
+  },
+  "darkMode": "Marketing site is dark-only: black canvas under both prefers-color-scheme values (measured 2026-10-08). The plugin UI supports light and dark via data-framer-theme=\"light|dark\" plus color-scheme, with the 11 --framer-color-* variables supplied by the host; dark-specific overrides are hard-coded in the stylesheet (checkbox, select arrow, button :active #232323 vs #ddd, caret #fff).",
+  "contrastNotes": "Computed WCAG on black: #fff 21:1, #999 7.37:1, #0099ff 7.0:1, rgba(255,255,255,0.6) renders about #999 = 7.37:1, #666 3.66:1 (below AA for text). #0099ff on white 3.0:1 (plugin links and primary button text in light theme are below AA). White on #0099ff is 3.0:1."
+ },
+ "spacing": {
+  "base": "4px (inferred from control paddings 5px/8px/10px/12px and 30/34px heights); no spacing token set exposed. Notes: Measured at 1440: content column 1200px wide (x=120..1320), nav 64px high, hero frame 1200x673 at x=120, second frame 1200x1440. CTA paddings 8px 10px (nav), 8px 12px (hero), input padding 10px, plugin control padding 0 10px, textarea 8px 10px, checkbox 12px. Gap between hero buttons about 10px. Section rhythm not tokenised; values here are measured, scale entries inferred.",
+  "scale": [
+   4,
+   5,
+   8,
+   10,
+   12,
+   16,
+   20,
+   24
+  ]
+ },
+ "radius": {
+  "scale": [
+   3,
+   4,
+   6,
+   8,
+   10,
+   15,
+   18,
+   20,
+   25,
+   100
+  ],
+  "rule": "8px dominates (232 elements on home): nav sign-up, CTA buttons, chips, cookie buttons, plugin controls. Larger containers step up: hero frame 18px, demo cards 15 and 20px, feature frame 25px, mobile inputs 10px, pills 100px; checkbox 4px; tiny chips 3-6px. Radius grows with container size."
+ },
+ "depth": {
+  "shadows": [
+   "small: rgba(0,0,0,0.1) 0 1px 2px (x3)",
+   "chip: rgba(0,0,0,0.2) 0 2px 6px",
+   "floating card triple: rgba(0,0,0,0.2) 0 26px 41.6px, 0 35.9px 57.4px, 0 16.1px 25.8px (scaled series)",
+   "ring: rgba(255,255,255,0.10) 0 0 0 1px; inset rgba(255,255,255,0.08) 0 0 0 1px",
+   "button highlight: rgba(0,0,0,0.1) 0 10px 20px with inset rgba(255,255,255,0.1) 0 0 0 1px",
+   "plugin focus: inset 0 0 0 1px var(--framer-color-tint)"
+  ],
+  "borders": "On black, depth is hairlines at 8-12% white plus lighter surface steps (#111 to #242424); shadows are used on floating media.",
+  "blur": "Floating chip fill rgba(34,34,34,0.8) implies backdrop blur (radius not extracted); cookie card is opaque white."
+ },
+ "motion": {
+  "durationsMs": [
+   200
+  ],
+  "easings": [
+   "unknown for marketing (computed transition properties are empty: motion runs in JS, Framer's animation engine)",
+   "plugin: background-color 0.2s (default ease)",
+   "link colour transition cubic-bezier(0,0,1,1) (linear) on mobile 'Log in'"
+  ],
+  "notes": "Computed styles on the marketing page expose almost no CSS transitions, so durations and easings cannot be audited from CSS (inferred: JS-driven springs/tweens). Hero media is autoplaying product video/animation. prefers-reduced-motion behaviour not verified."
+ },
+ "density": {
+  "modes": [
+   "marketing comfortable (30-34px CTAs, 14px body)",
+   "plugin compact (30px controls, 12px text)"
+  ],
+  "controlHeightsPx": {
+   "nav sign-up button": 30,
+   "hero CTA": 34,
+   "mobile CTA": 29,
+   "mobile input": 34,
+   "plugin input/button/select": 30,
+   "plugin textarea": 50,
+   "plugin checkbox": 12
+  }
+ },
+ "components": {
+  "count": 9,
+  "list": [
+   "plugin UI primitives: button, button-primary (.framer-button-primary), input (text, email, number, tel, password), textarea, select, checkbox, range slider, color input, file input, divider (.framer-divider)",
+   "marketing observed: nav with dropdowns, white CTA, dark secondary CTA, announcement link ('New: Skills'), media frame, plan cards, credits select, cookie card"
+  ],
+  "stateMatrixCompleteness": "Plugin UI only: button hover/focus background steps to bg-secondary, :active #ddd light / #232323 dark, :disabled opacity .5; primary hover/focus -> tint-dark, active -> tint-extra-dark (#0077ff fallback), disabled opacity .5; input focus = inset 1px tint; checkbox checked = tint; select disabled arrow lighter. No sizes or variants beyond one 30px size. Marketing component states not specified."
+ },
+ "tokenArchitecture": "Two unrelated layers. (1) Marketing site: Framer colour styles exported as --token-<uuid> custom properties (477 on the home page, e.g. --token-bd71055c-...: #09f), no semantic names, one global dark theme, text styles baked per component. (2) Plugin UI contract: 11 semantic variables with host-supplied values (--framer-color-bg/-bg-secondary/-bg-tertiary/-text/-text-secondary/-text-tertiary/-text-reversed/-divider/-tint/-tint-dark/-tint-extra-dark) plus --framer-font-family, theme switch by data-framer-theme and color-scheme. Controls are styled at the element level (button, input, select) rather than via classes, with only .framer-button-primary and .framer-divider as classes.",
+ "distinctiveness": "Pure black page with white type and a single white pill-ish CTA (8px radius); display type in GT Walsheim Medium at -0.04em with line-height 1.0; body in 14px Inter at 60% white; blue held back for links; 8px everywhere with radius stepping to 18-25px on large media frames; the product (animated stills and UI) is the hero asset, not illustration; the 'agent' claim sits in a two-line headline with a small 'New: Skills' link opposite the CTAs. Generic dark sites copy the black but not the tracking, the line-height 1.0, or the 8px/25px radius step.",
+ "weaknesses": [
+  "UUID-named tokens carry no meaning; a system cannot be audited or re-themed from them",
+  "#666 text on black is 3.66:1 and #09f on white is 3.0:1 (plugin links and primary button text in light theme)",
+  "computed styles hold no transition values, so motion cannot be verified from CSS and may ignore prefers-reduced-motion",
+  "at least seven fonts are declared though unused on first view (load and licensing cost)",
+  "body copy is 14px at 60% white; small for long reading",
+  "no public component library beyond a 30px plugin control kit; nothing for tables, charts, menus or dialogs"
+ ],
+ "takeaways": [
+  "Compress display type with a single negative tracking (-0.04em) and line-height 1.0-1.1; show how it steps down on mobile (54 to 36px, 44 to 28px)",
+  "Keep UI controls on one compact size (30px, 12px text, 8px radius, 10px padding) for tool panels; grow radius with container size (8 to 18 to 25px)",
+  "A tiny semantic contract (bg x3, text x4, divider, tint x3) is enough for embedded UI if the host supplies the values per theme",
+  "On black, build depth from white-alpha hairlines (8-12%) and surface steps (#111, #1a1a1a, #242424), reserving shadows for floating media",
+  "Make the product the hero asset and keep accent colour out of the headline; use blue only for links and signals",
+  "Do not export colours as UUIDs; name by role so the system can be audited (negative example)",
+  "Use a white primary CTA and a dark-grey secondary on black; avoid saturated CTA fills on a black canvas",
+  "Check light-theme accent text: #0099ff on white is 3.0:1; give plugin-like UIs a darker tint for text"
+ ],
+ "provenance": "mixed"
+}

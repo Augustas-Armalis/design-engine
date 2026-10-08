@@ -1,0 +1,51 @@
+{
+  "slug": "vellum",
+  "name": "Vellum",
+  "showcaseHeadline": "Quietly better answers.",
+  "signature": "Premium, unhurried AI: high-contrast Garamond display, Manrope body, muted gold accent on warm stone, hairline borders, slow calm motion, lots of air.",
+  "personality": {
+    "brandHue": 72,
+    "brandChroma": 0.075,
+    "accentStep": 7,
+    "neutralTemperature": "warm",
+    "radiusPreset": "tight",
+    "depthStyle": "border",
+    "density": "comfortable",
+    "motionPersonality": "calm",
+    "typeVoice": "Literate, restrained, confident."
+  },
+  "fonts": {
+    "display": "'Cormorant Garamond', Garamond, serif",
+    "body": "'Manrope', system-ui, sans-serif",
+    "mono": "'IBM Plex Mono', ui-monospace, monospace",
+    "href": "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Manrope:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+  },
+  "type": {
+    "ratio": 1.333,
+    "basePx": 17,
+    "displayMaxPx": 92,
+    "displayWeight": 500,
+    "displayTracking": -0.01,
+    "displayLeading": 1,
+    "bodyLeading": 1.65
+  },
+  "bestFor": [
+    "premium AI assistants",
+    "wealth and advisory",
+    "hospitality tech"
+  ],
+  "avoidFor": [
+    "dense dashboards",
+    "devtools"
+  ],
+  "owned": [
+    "Garamond display only above 40px",
+    "Muted gold accent, never saturated",
+    "Section rhythm of 128px or more on desktop"
+  ],
+  "never": [
+    "set Cormorant for UI text",
+    "use more than one accent element per viewport",
+    "use springy motion"
+  ]
+}

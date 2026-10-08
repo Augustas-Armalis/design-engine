@@ -1,0 +1,51 @@
+{
+  "slug": "press",
+  "name": "Press",
+  "showcaseHeadline": "Research, read properly.",
+  "signature": "Editorial media and research: Instrument Serif headlines, Onest body, ultramarine ink accent, sharp corners, crisp offset depth, print-like rhythm.",
+  "personality": {
+    "brandHue": 268,
+    "brandChroma": 0.19,
+    "neutralTemperature": "neutral",
+    "radiusPreset": "sharp",
+    "depthStyle": "crisp",
+    "density": "default",
+    "motionPersonality": "calm",
+    "typeVoice": "Newspaper headline over modern text."
+  },
+  "fonts": {
+    "display": "'Instrument Serif', Georgia, serif",
+    "body": "'Onest', system-ui, sans-serif",
+    "mono": "'JetBrains Mono', ui-monospace, monospace",
+    "href": "https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Onest:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+  },
+  "type": {
+    "ratio": 1.333,
+    "basePx": 17,
+    "displayMaxPx": 112,
+    "displayWeight": 400,
+    "headingWeight": 400,
+    "displayTracking": -0.015,
+    "displayLeading": 0.98,
+    "bodyLeading": 1.62
+  },
+  "bestFor": [
+    "research tools",
+    "newsletters and media",
+    "knowledge products",
+    "AI search"
+  ],
+  "avoidFor": [
+    "fintech dashboards",
+    "children"
+  ],
+  "owned": [
+    "Instrument Serif at weight 400 only, italic for emphasis",
+    "Ultramarine ink used like a pen: links, rules, one action",
+    "Rules and columns borrowed from print"
+  ],
+  "never": [
+    "use gradients (ultramarine must stay flat ink)",
+    "use bold serif"
+  ]
+}

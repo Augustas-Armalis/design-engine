@@ -1,0 +1,50 @@
+{
+  "slug": "bloom",
+  "name": "Bloom",
+  "showcaseHeadline": "A calmer evening, on purpose.",
+  "signature": "Consumer AI wellness: Young Serif display, Nunito Sans body, rose accent, pill-shaped controls, soft depth, springy gentle motion.",
+  "personality": {
+    "brandHue": 8,
+    "brandChroma": 0.13,
+    "neutralTemperature": "warm",
+    "radiusPreset": "pill",
+    "depthStyle": "soft",
+    "density": "comfortable",
+    "motionPersonality": "springy",
+    "typeVoice": "Gentle, human, warm."
+  },
+  "fonts": {
+    "display": "'Young Serif', Georgia, serif",
+    "body": "'Nunito Sans', system-ui, sans-serif",
+    "mono": "'DM Mono', ui-monospace, monospace",
+    "href": "https://fonts.googleapis.com/css2?family=Young+Serif&family=Nunito+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap"
+  },
+  "type": {
+    "ratio": 1.25,
+    "basePx": 17,
+    "displayMaxPx": 80,
+    "displayWeight": 400,
+    "headingWeight": 400,
+    "displayTracking": -0.02,
+    "displayLeading": 1.02,
+    "bodyLeading": 1.65
+  },
+  "bestFor": [
+    "consumer wellness",
+    "journaling and habit apps",
+    "family and education consumer"
+  ],
+  "avoidFor": [
+    "devtools",
+    "enterprise"
+  ],
+  "owned": [
+    "Pill controls are the identity here (deliberate, not reflex)",
+    "Rose accent on warm neutral, never on cream with a serif italic",
+    "Springy but small motion"
+  ],
+  "never": [
+    "use dark neon",
+    "use dense tables in marketing"
+  ]
+}

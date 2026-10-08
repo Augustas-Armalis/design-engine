@@ -1,0 +1,49 @@
+{
+  "slug": "clinic",
+  "name": "Clinic",
+  "showcaseHeadline": "Care plans patients actually follow.",
+  "signature": "Health and regulated calm: Lexend headings and Atkinson Hyperlegible body for maximum readability, teal accent, soft depth, comfortable targets.",
+  "personality": {
+    "brandHue": 182,
+    "brandChroma": 0.1,
+    "neutralTemperature": "cool",
+    "radiusPreset": "soft",
+    "depthStyle": "flat",
+    "density": "comfortable",
+    "motionPersonality": "calm",
+    "typeVoice": "Clear, kind, unambiguous."
+  },
+  "fonts": {
+    "display": "'Lexend', system-ui, sans-serif",
+    "body": "'Atkinson Hyperlegible', system-ui, sans-serif",
+    "mono": "'IBM Plex Mono', ui-monospace, monospace",
+    "href": "https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&family=Atkinson+Hyperlegible:wght@400;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+  },
+  "type": {
+    "ratio": 1.2,
+    "basePx": 18,
+    "displayMaxPx": 64,
+    "displayWeight": 600,
+    "displayTracking": -0.015,
+    "displayLeading": 1.08,
+    "bodyLeading": 1.65
+  },
+  "bestFor": [
+    "healthtech",
+    "insurance",
+    "public services",
+    "accessibility-first products"
+  ],
+  "avoidFor": [
+    "edgy creative brands"
+  ],
+  "owned": [
+    "18px body minimum",
+    "Teal accent with AAA body contrast",
+    "Every state has text, never colour alone"
+  ],
+  "never": [
+    "use text below 14px",
+    "use motion longer than 300ms on functional UI"
+  ]
+}

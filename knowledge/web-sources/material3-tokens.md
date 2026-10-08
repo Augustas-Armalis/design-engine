@@ -300,7 +300,7 @@ Measured contrast (engine-computed from the hex): light on-surface/surface 16.23
 
 ## 7. Open questions
 
-- `m3.material.io` pages (motion overview, window size classes, layout columns/margins) are JS-rendered and not readable by plain fetch. The size-to-duration-bucket mapping (MDX-02) and per-class margins and column counts (compact 4 columns / 16 margin, medium 8 / 24, expanded 12 / 24 are my recollection) are therefore unverified and not stated as rules.
+- Update: `gaps-material3-color-and-breakpoints.md` (another pass, rendered with Playwright) now covers window size classes, margins (16/24), panes and HCT tone arithmetic and agrees with section 3.7 here; read it for layout. Still unread from m3.material.io: the motion guideline prose. Original note: `m3.material.io` pages (motion overview, window size classes, layout columns/margins) are JS-rendered and not readable by plain fetch. The size-to-duration-bucket mapping (MDX-02) and per-class margins and column counts (compact 4 columns / 16 margin, medium 8 / 24, expanded 12 / 24 are my recollection) are therefore unverified and not stated as rules.
 - The component token files for FAB and primary tab returned no size values; their dimensions are missing from section 3.9.
 - `md-sys-state` in the latest set lists no `disabled-container` value; the 0.12 figure comes from the filled-button component token.
 - Spring tables for the "expressive" scheme (damping 0.6 etc.) in `knowledge/web/motion-tokens.json` are not present in the web SCSS fetched here; the web file only has the standard-scheme springs shown in 3.3, which match the "standard" set in that JSON.

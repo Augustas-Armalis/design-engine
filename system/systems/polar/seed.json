@@ -1,0 +1,50 @@
+{
+  "slug": "polar",
+  "name": "Polar",
+  "showcaseHeadline": "See the metric move.",
+  "signature": "Data and analytics: Sora display, Albert Sans body, cold blue accent, compact layered panels, snappy motion, numbers first.",
+  "personality": {
+    "brandHue": 236,
+    "brandChroma": 0.15,
+    "neutralTemperature": "cool",
+    "radiusPreset": "default",
+    "depthStyle": "layered",
+    "density": "compact",
+    "motionPersonality": "snappy",
+    "typeVoice": "Crisp, numerate."
+  },
+  "fonts": {
+    "display": "'Sora', system-ui, sans-serif",
+    "body": "'Albert Sans', system-ui, sans-serif",
+    "mono": "'DM Mono', ui-monospace, monospace",
+    "href": "https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Albert+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap"
+  },
+  "type": {
+    "ratio": 1.2,
+    "basePx": 15,
+    "displayMaxPx": 72,
+    "displayWeight": 600,
+    "displayTracking": -0.03,
+    "displayLeading": 1,
+    "bodyLeading": 1.55
+  },
+  "bestFor": [
+    "analytics",
+    "BI dashboards",
+    "product metrics",
+    "usage billing"
+  ],
+  "avoidFor": [
+    "editorial",
+    "luxury"
+  ],
+  "owned": [
+    "Numbers set in DM Mono tabular",
+    "Compact 32px default controls",
+    "Layered panels for data cards"
+  ],
+  "never": [
+    "use decorative charts that do not encode data",
+    "use rainbow palettes in charts"
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "slug": "monolith",
+  "name": "Monolith",
+  "showcaseHeadline": "Infrastructure you stop thinking about.",
+  "signature": "Dark-first infrastructure: wide Archivo headlines, flat planes separated by lines, desaturated cyan, compact density and fast motion.",
+  "personality": {
+    "brandHue": 205,
+    "brandChroma": 0.1,
+    "neutralTemperature": "cool",
+    "radiusPreset": "sharp",
+    "depthStyle": "flat",
+    "density": "default",
+    "motionPersonality": "calm",
+    "typeVoice": "Industrial, wide, few words."
+  },
+  "fonts": {
+    "display": "'Archivo', 'Helvetica Neue', sans-serif",
+    "body": "'Archivo', 'Helvetica Neue', sans-serif",
+    "mono": "'Martian Mono', ui-monospace, monospace",
+    "href": "https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400;62..125,500;62..125,600;62..125,700;62..125,800&family=Martian+Mono:wght@400;500&display=swap"
+  },
+  "type": {
+    "ratio": 1.25,
+    "basePx": 15,
+    "displayMaxPx": 96,
+    "displayWeight": 700,
+    "displayTracking": -0.02,
+    "displayLeading": 0.98,
+    "bodyLeading": 1.55
+  },
+  "bestFor": [
+    "cloud infra",
+    "databases",
+    "networking",
+    "security operations"
+  ],
+  "avoidFor": [
+    "consumer lifestyle",
+    "education for children"
+  ],
+  "owned": [
+    "Flat planes and 1px lines; no shadows at all",
+    "Wide-width Archivo display (wdth 112+)",
+    "Cyan only for live status and primary action"
+  ],
+  "never": [
+    "use blur, glow or glass",
+    "round containers"
+  ]
+}
