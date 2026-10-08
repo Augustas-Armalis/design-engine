@@ -53,8 +53,8 @@ function Route({ s, still }: { s: Source; still: boolean }) {
         transition={{ delay: at - 0.08, duration: 0.6, ease: ease.outExpo }}>
         {!still && (
           <motion.circle cx={s.end} cy={TOP} r={6} fill="#335cff" style={fill}
-            initial={{ scale: 0.6, opacity: 0 }} animate={{ scale: [0.6, 2.6], opacity: [0.5, 0] }}
-            transition={{ delay: at + 0.15, duration: 2.4, ease: ease.outQuint, repeat: Infinity, repeatDelay: 0.8 + s.order * 0.15 }} />
+            initial={{ scale: 0.6, opacity: 0 }} animate={{ scale: [0.6, 0.6, 2.6], opacity: [0, 0.5, 0] }}
+            transition={{ delay: at + 0.15, duration: 2.5, times: [0, 0.05, 1], ease: ease.outQuint, repeat: Infinity, repeatDelay: 0.8 + s.order * 0.15 }} />
         )}
         <circle cx={s.end} cy={TOP} r={3} fill="#fff" stroke="#335cff" strokeWidth={1.5} />
       </motion.g>
