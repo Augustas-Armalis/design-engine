@@ -1,0 +1,7511 @@
+{
+ "meta": {
+  "capturedAt": "2026-10-08",
+  "viewport": "1440x900 dsf1 Playwright Chromium",
+  "notes": "sites = raw per-site DOM + pixel measurements (cookie/consent dialogs removed from DOM before measuring; screenshots are unmodified and show them). curated = hand-verified per-site record used for stats. height.app excluded: connection closed / blank page.",
+  "kestrelNote": "kestrel = work/kestrel/app/dist served locally, same script"
+ },
+ "sites": {
+  "linear": {
+   "nav": {
+    "outer": {
+     "x": 0,
+     "y": 0,
+     "w": 1440,
+     "h": 73,
+     "b": 73
+    },
+    "position": "fixed",
+    "bg": "rgba(0, 0, 0, 0)",
+    "backdrop": "blur(20px)",
+    "borderBottom": "1px rgba(255, 255, 255, 0.08)",
+    "shadow": null,
+    "nLinks": 8,
+    "linkTexts": [
+     "Product",
+     "Resources",
+     "Customers",
+     "Pricing",
+     "Now",
+     "Contact",
+     "Log in",
+     "Sign up"
+    ],
+    "links": [
+     {
+      "text": "Product",
+      "size": "13px",
+      "weight": "400",
+      "ls": "normal",
+      "h": 32,
+      "padX": "12px",
+      "color": "rgb(138, 143, 152)",
+      "font": "\"Inter Variable\""
+     },
+     {
+      "text": "Resources",
+      "size": "13px",
+      "weight": "400",
+      "ls": "normal",
+      "h": 32,
+      "padX": "12px",
+      "color": "rgb(138, 143, 152)",
+      "font": "\"Inter Variable\""
+     },
+     {
+      "text": "Customers",
+      "size": "13px",
+      "weight": "400",
+      "ls": "normal",
+      "h": 32,
+      "padX": "12px",
+      "color": "rgb(138, 143, 152)",
+      "font": "\"Inter Variable\""
+     }
+    ],
+    "buttons": [
+     {
+      "text": "Sign up",
+      "h": 32,
+      "w": 73,
+      "radius": "9999px",
+      "bg": "rgb(229, 229, 230)",
+      "color": "rgb(8, 9, 10)",
+      "border": "1px rgb(229, 229, 230)",
+      "size": "13px",
+      "weight": "510"
+     }
+    ],
+    "pill": null,
+    "logoLeft": 71
+   },
+   "navBottom": 73,
+   "navStrict": {
+    "rect": {
+     "x": 79,
+     "y": 0,
+     "w": 1282,
+     "h": 72,
+     "b": 72
+    },
+    "left": 71,
+    "right": 1361
+   },
+   "h1": {
+    "textW": 2283,
+    "text": "The product development system for teams and agents The product development system for teams and agents",
+    "chars": 103,
+    "words": 16,
+    "font": "\"Inter Variable\", \"SF Pro Display\"",
+    "size": 64,
+    "weight": "510",
+    "ls": "-1.408px",
+    "lsEm": -0.022,
+    "lh": "64px",
+    "lhRatio": 1,
+    "lines": 2,
+    "align": "start",
+    "color": "rgb(247, 248, 248)",
+    "wrap": "wrap",
+    "rect": {
+     "x": 78,
+     "y": 272,
+     "w": 1282,
+     "h": 128,
+     "b": 400
+    },
+    "centerX": 719,
+    "endsWithPeriod": false,
+    "titleCaseShare": 0,
+    "opsz": "normal",
+    "transform": "none",
+    "gradientText": false
+   },
+   "preH1": [],
+   "sub": {
+    "textW": 505,
+    "text": "Purpose-built for planning and building products. Designed for the AI era.",
+    "chars": 74,
+    "size": 15,
+    "weight": "400",
+    "lhRatio": 1.6,
+    "ls": "-0.165px",
+    "color": "rgb(138, 143, 152)",
+    "lines": 1,
+    "rect": {
+     "x": 80,
+     "y": 432,
+     "w": 505,
+     "h": 24,
+     "b": 456
+    },
+    "gapFromH1": 32,
+    "sizeRatioToH1": 0.234,
+    "align": "start"
+   },
+   "ctas": [
+    {
+     "text": "Linear",
+     "kind": "text",
+     "h": 28,
+     "w": 97,
+     "radius": "8px",
+     "bg": "rgba(0, 0, 0, 0)",
+     "color": "rgb(255, 255, 255)",
+     "border": null,
+     "size": "13.3333px",
+     "weight": "400",
+     "ls": "normal",
+     "padX": "4px",
+     "shadow": null,
+     "y": 543,
+     "x": 76
+    },
+    {
+     "text": "Pulse",
+     "kind": "text",
+     "h": 28,
+     "w": 208,
+     "radius": "8px",
+     "bg": "rgba(0, 0, 0, 0)",
+     "color": "rgb(208, 214, 224)",
+     "border": null,
+     "size": "13px",
+     "weight": "510",
+     "ls": "normal",
+     "padX": "7px",
+     "shadow": null,
+     "y": 587,
+     "x": 76
+    },
+    {
+     "text": "Inbox",
+     "kind": "text",
+     "h": 28,
+     "w": 208,
+     "radius": "8px",
+     "bg": "rgba(0, 0, 0, 0)",
+     "color": "rgb(208, 214, 224)",
+     "border": null,
+     "size": "13px",
+     "weight": "510",
+     "ls": "normal",
+     "padX": "7px",
+     "shadow": null,
+     "y": 617,
+     "x": 76
+    },
+    {
+     "text": "My issues",
+     "kind": "text",
+     "h": 28,
+     "w": 208,
+     "radius": "8px",
+     "bg": "rgba(0, 0, 0, 0)",
+     "color": "rgb(208, 214, 224)",
+     "border": null,
+     "size": "13px",
+     "weight": "510",
+     "ls": "normal",
+     "padX": "7px",
+     "shadow": null,
+     "y": 647,
+     "x": 76
+    },
+    {
+     "text": "Reviews",
+     "kind": "text",
+     "h": 28,
+     "w": 208,
+     "radius": "8px",
+     "bg": "rgba(0, 0, 0, 0)",
+     "color": "rgb(208, 214, 224)",
+     "border": null,
+     "size": "13px",
+     "weight": "510",
+     "ls": "normal",
+     "padX": "7px",
+     "shadow": null,
+     "y": 677,
+     "x": 76
+    }
+   ],
+   "bgChain": [
+    {
+     "tag": "div",
+     "bg": "rgb(8, 9, 10)",
+     "bgImage": null,
+     "size": "auto"
+    },
+    {
+     "tag": "body",
+     "bg": "rgb(8, 9, 10)",
+     "bgImage": null,
+     "size": "auto"
+    }
+   ],
+   "htmlBg": "rgb(8, 9, 10)",
+   "bodyBg": "rgb(8, 9, 10)",
+   "colorScheme": "dark",
+   "mediaTop": [
+    {
+     "tag": "img",
+     "rect": {
+      "x": 0,
+      "y": 491,
+      "w": 1440,
+      "h": 804,
+      "b": 1295
+     },
+     "foldShare": 0.454,
+     "alt": ""
+    }
+   ],
+   "frame": {
+    "outerRect": {
+     "x": 60,
+     "y": 527,
+     "w": 1320,
+     "h": 720,
+     "b": 1247
+    },
+    "foldShare": 0.38,
+    "bleedsOffFold": true,
+    "levels": [
+     {
+      "inset": null,
+      "w": 1320,
+      "radius": "12px",
+      "border": null,
+      "shadow": null,
+      "bg": "rgb(9, 10, 11)",
+      "padding": "8px 8px"
+     },
+     {
+      "inset": 0,
+      "w": 1320,
+      "radius": "12px",
+      "border": "1px rgba(255, 255, 255, 0.08)",
+      "shadow": null,
+      "bg": "rgb(16, 17, 18)",
+      "padding": "0px 0px"
+     }
+    ]
+   },
+   "pixels": {
+    "meanLum": 22,
+    "satShare": 0,
+    "hues": [],
+    "rails": []
+   },
+   "url": "linear.app"
+  },
+  "vercel": {
+   "nav": {
+    "outer": {
+     "x": 0,
+     "y": 0,
+     "w": 1440,
+     "h": 64,
+     "b": 64
+    },
+    "position": "sticky",
+    "bg": "rgba(0, 0, 0, 0)",
+    "backdrop": "none",
+    "borderBottom": "0px rgb(235, 235, 235)",
+    "shadow": null,
+    "nLinks": 7,
+    "linkTexts": [
+     "Products",
+     "Resources",
+     "Enterprise",
+     "Pricing",
+     "Get a Demo",
+     "Log In",
+     "Sign Up"
+    ],
+    "links": [
+     {
+      "text": "Products",
+      "size": "14px",
+      "weight": "400",
+      "ls": "normal",
+      "h": 32,
+      "padX": "0px",
+      "color": "rgb(77, 77, 77)",
+      "font": "GeistSans"
+     },
+     {
+      "text": "Resources",
+      "size": "14px",
+      "weight": "400",
+      "ls": "normal",
+      "h": 32,
+      "padX": "0px",
+      "color": "rgb(77, 77, 77)",
+      "font": "GeistSans"
+     },
+     {
+      "text": "Enterprise",
+      "size": "14px",
+      "weight": "400",
+      "ls": "normal",
+      "h": 32,
+      "padX": "0px",
+      "color": "rgb(77, 77, 77)",
+      "font": "GeistSans"
+     }
+    ],
+    "buttons": [
+     {
+      "text": "Get a Demo",
+      "h": 32,
+      "w": 101,
+      "radius": "6px",
+      "bg": "rgb(255, 255, 255)",
+      "color": "rgb(23, 23, 23)",
+      "border": null,
+      "size": "14px",
+      "weight": "500"
+     },
+     {
+      "text": "Log In",
+      "h": 32,
+      "w": 64,
+      "radius": "6px",
+      "bg": "rgb(255, 255, 255)",
+      "color": "rgb(23, 23, 23)",
+      "border": null,
+      "size": "14px",
+      "weight": "500"
+     },
+     {
+      "text": "Sign Up",
+      "h": 32,
+      "w": 75,
+      "radius": "6px",
+      "bg": "rgb(23, 23, 23)",
+      "color": "rgb(255, 255, 255)",
+      "border": null,
+      "size": "14px",
+      "weight": "500"
+     }
+    ],
+    "pill": null,
+    "logoLeft": 16
+   },
+   "navBottom": 64,
+   "navStrict": {
+    "rect": {
+     "x": 65,
+     "y": 0,
+     "w": 356,
+     "h": 64,
+     "b": 64
+    },
+    "left": 65,
+    "right": 421
+   },
+   "h1": {
+    "textW": 347,
+    "text": "Agentic Infrastructure",
+    "chars": 22,
+    "words": 2,
+    "font": "GeistSans, \"GeistSans Fallback\"",
+    "size": 64,
+    "weight": "400",
+    "ls": "-3.84px",
+    "lsEm": -0.06,
+    "lh": "64px",
+    "lhRatio": 1,
+    "lines": 2,
+    "align": "left",
+    "color": "rgb(23, 23, 23)",
+    "wrap": "balance",
+    "rect": {
+     "x": 24,
+     "y": 328,
+     "w": 444,
+     "h": 128,
+     "b": 456
+    },
+    "centerX": 246,
+    "endsWithPeriod": false,
+    "titleCaseShare": 1,
+    "opsz": "normal",
+    "transform": "none",
+    "gradientText": false
+   },
+   "preH1": [
+    {
+     "text": "Ship 26 is coming to SF",
+     "size": "14px",
+     "top": 86
+    },
+    {
+     "text": "Get your ticket",
+     "size": "14px",
+     "top": 86
+    }
+   ],
+   "ctas": [
+    {
+     "text": "Deploy now",
+     "kind": "filled",
+     "h": 40,
+     "w": 124,
+     "radius": "3.35544e+07px",
+     "bg": "rgb(23, 23, 23)",
+     "color": "rgb(255, 255, 255)",
+     "border": null,
+     "size": "16px",
+     "weight": "500",
+     "ls": "normal",
+     "padX": "12px",
+     "shadow": null,
+     "y": 488,
+     "x": 24
+    },
+    {
+     "text": "Talk to sales",
+     "kind": "filled",
+     "h": 40,
+     "w": 130,
+     "radius": "3.35544e+07px",
+     "bg": "rgb(255, 255, 255)",
+     "color": "rgb(23, 23, 23)",
+     "border": null,
+     "size": "16px",
+     "weight": "500",
+     "ls": "normal",
+     "padX": "12px",
+     "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(",
+     "y": 488,
+     "x": 160
+    }
+   ],
+   "bgChain": [
+    {
+     "tag": "body.root",
+     "bg": "rgb(250, 250, 250)",
+     "bgImage": null,
+     "size": "auto"
+    }
+   ],
+   "htmlBg": "rgb(250, 250, 250)",
+   "bodyBg": "rgb(250, 250, 250)",
+   "colorScheme": "light",
+   "mediaTop": [
+    {
+     "tag": "canvas",
+     "rect": {
+      "x": 180,
+      "y": 88,
+      "w": 1080,
+      "h": 720,
+      "b": 808
+     },
+     "foldShare": 0.6,
+     "alt": ""
+    },
+    {
+     "tag": "svg",
+     "rect": {
+      "x": 609,
+      "y": 337,
+      "w": 222,
+      "h": 222,
+      "b": 559
+     },
+     "foldShare": 0.038,
+     "alt": ""
+    }
+   ],
+   "pixels": {
+    "meanLum": 242,
+    "satShare": 0,
+    "hues": [],
+    "rails": []
+   },
+   "url": "vercel.com"
+  },
+  "stripe": {
+   "nav": {
+    "outer": {
+     "x": 0,
+     "y": 0,
+     "w": 1440,
+     "h": 76,
+     "b": 76
+    },
+    "position": "relative",
+    "bg": "rgba(0, 0, 0, 0)",
+    "backdrop": "none",
+    "borderBottom": "0px rgb(0, 0, 0)",
+    "shadow": null,
+    "nLinks": 7,
+    "linkTexts": [
+     "Products",
+     "Solutions",
+     "Developers",
+     "Resources",
+     "Pricing",
+     "Sign in Sign in",
+     "Contact sales"
+    ],
+    "links": [
+     {
+      "text": "Products",
+      "size": "14px",
+      "weight": "400",
+      "ls": "normal",
+      "h": 40,
+      "padX": "0px",
+      "color": "rgb(6, 27, 49)",
+      "font": "sohne-var"
+     },
+     {
+      "text": "Solutions",
+      "size": "14px",
+      "weight": "400",
+      "ls": "normal",
+      "h": 40,
+      "padX": "0px",
+      "color": "rgb(6, 27, 49)",
+      "font": "sohne-var"
+     },
+     {
+      "text": "Developers",
+      "size": "14px",
+      "weight": "400",
+      "ls": "normal",
+      "h": 40,
+      "padX": "0px",
+      "color": "rgb(6, 27, 49)",
+      "font": "sohne-var"
+     }
+    ],
+    "buttons": [
+     {
+      "text": "Sign in Sign in",
+      "h": 40,
+      "w": 84,
+      "radius": "4px",
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(83, 58, 253)",
+      "border": "1px rgb(255, 255, 255)",
+      "size": "14px",
+      "weight": "400"
+     },
+     {
+      "text": "Contact sales",
+      "h": 40,
+      "w": 137,
+      "radius": "4px",
+      "bg": "rgb(83, 58, 253)",
+      "color": "rgb(255, 255, 255)",
+      "border": null,
+      "size": "14px",
+      "weight": "400"
+     }
+    ],
+    "pill": null,
+    "logoLeft": 105
+   },
+   "navBottom": 76,
+   "navStrict": {
+    "rect": {
+     "x": 89,
+     "y": 6,
+     "w": 1262,
+     "h": 64,
+     "b": 70
+    },
+    "left": 105,
+    "right": 1335
+   },
+   "h1": {
+    "textW": 921,
+    "text": "Financial infrastructure to grow your revenue. Accept payments, offer financial services and implement custom revenue models – from your fir",
+    "chars": 173,
+    "words": 24,
+    "font": "sohne-var, \"SF Pro Display\"",
+    "size": 48,
+    "weight": "300",
+    "ls": "-0.96px",
+    "lsEm": -0.02,
+    "lh": "55.2px",
+    "lhRatio": 1.15,
+    "lines": 4,
+    "align": "start",
+    "color": "rgb(129, 184, 26)",
+    "wrap": "pretty",
+    "rect": {
+     "x": 208,
+     "y": 258,
+     "w": 959,
+     "h": 221,
+     "b": 479
+    },
+    "centerX": 687,
+    "endsWithPeriod": true,
+    "titleCaseShare": 0.1,
+    "opsz": "normal",
+    "transform": "none",
+    "gradientText": false
+   },
+   "preH1": [
+    {
+     "text": "Global GDP running on Stripe:",
+     "size": "14px",
+     "top": 199
+    }
+   ],
+   "ctas": [
+    {
+     "text": "Get started",
+     "kind": "filled",
+     "h": 48,
+     "w": 141,
+     "radius": "4px",
+     "bg": "rgb(83, 58, 253)",
+     "color": "rgb(255, 255, 255)",
+     "border": null,
+     "size": "16px",
+     "weight": "400",
+     "ls": "normal",
+     "padX": "24px",
+     "shadow": null,
+     "y": 519,
+     "x": 208
+    },
+    {
+     "text": "Sign up with Google",
+     "kind": "filled",
+     "h": 48,
+     "w": 212,
+     "radius": "4px",
+     "bg": "rgba(255, 255, 255, 0.65)",
+     "color": "rgb(83, 58, 253)",
+     "border": "1px rgb(185, 185, 249)",
+     "size": "16px",
+     "weight": "400",
+     "ls": "normal",
+     "padX": "24px",
+     "shadow": null,
+     "y": 519,
+     "x": 357
+    }
+   ],
+   "bgChain": [
+    {
+     "tag": "section.hds-color-mode",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": null,
+     "size": "auto"
+    }
+   ],
+   "htmlBg": "rgba(0, 0, 0, 0)",
+   "bodyBg": "rgba(0, 0, 0, 0)",
+   "colorScheme": "normal",
+   "mediaTop": [
+    {
+     "tag": "picture",
+     "rect": {
+      "x": 337,
+      "y": -107,
+      "w": 1392,
+      "h": 975,
+      "b": 868
+     },
+     "foldShare": 0.739,
+     "alt": ""
+    },
+    {
+     "tag": "img",
+     "rect": {
+      "x": 337,
+      "y": -107,
+      "w": 1392,
+      "h": 975,
+      "b": 868
+     },
+     "foldShare": 0.739,
+     "alt": ""
+    },
+    {
+     "tag": "canvas",
+     "rect": {
+      "x": 337,
+      "y": 0,
+      "w": 1393,
+      "h": 761,
+      "b": 761
+     },
+     "foldShare": 0.648,
+     "alt": ""
+    }
+   ],
+   "pixels": {
+    "meanLum": 225,
+    "satShare": 18.7,
+    "hues": [
+     {
+      "hue": 0,
+      "share": 6.76
+     },
+     {
+      "hue": 30,
+      "share": 4.41
+     },
+     {
+      "hue": 210,
+      "share": 1.6
+     },
+     {
+      "hue": 240,
+      "share": 1.76
+     },
+     {
+      "hue": 300,
+      "share": 1.63
+     },
+     {
+      "hue": 330,
+      "share": 1.75
+     }
+    ],
+    "rails": [
+     87
+    ]
+   },
+   "url": "stripe.com"
+  },
+  "raycast": {
+   "nav": {
+    "outer": {
+     "x": 0,
+     "y": 0,
+     "w": 1440,
+     "h": 92,
+     "b": 92
+    },
+    "position": "fixed",
+    "bg": "rgba(0, 0, 0, 0)",
+    "backdrop": "none",
+    "borderBottom": "0px rgb(255, 255, 255)",
+    "shadow": null,
+    "nLinks": 11,
+    "linkTexts": [
+     "Store",
+     "Pro",
+     "AI",
+     "iOS",
+     "Windows",
+     "Teams",
+     "Enterprise",
+     "Blog",
+     "Pricing",
+     "Log in",
+     "Download"
+    ],
+    "links": [
+     {
+      "text": "Store",
+      "size": "14px",
+      "weight": "500",
+      "ls": "0.2px",
+      "h": 41,
+      "padX": "8px",
+      "color": "rgb(156, 156, 157)",
+      "font": "Inter"
+     },
+     {
+      "text": "Pro",
+      "size": "14px",
+      "weight": "500",
+      "ls": "0.2px",
+      "h": 41,
+      "padX": "8px",
+      "color": "rgb(156, 156, 157)",
+      "font": "Inter"
+     },
+     {
+      "text": "AI",
+      "size": "14px",
+      "weight": "500",
+      "ls": "0.2px",
+      "h": 41,
+      "padX": "8px",
+      "color": "rgb(156, 156, 157)",
+      "font": "Inter"
+     }
+    ],
+    "buttons": [
+     {
+      "text": "Download",
+      "h": 36,
+      "w": 117,
+      "radius": "8px",
+      "bg": "rgb(230, 230, 230)",
+      "color": "rgb(47, 48, 49)",
+      "border": null,
+      "size": "14px",
+      "weight": "500"
+     }
+    ],
+    "pill": {
+     "rect": {
+      "x": 118,
+      "y": 16,
+      "w": 1204,
+      "h": 76,
+      "b": 92
+     },
+     "radius": "16px",
+     "bg": "rgba(0, 0, 0, 0)",
+     "border": "1px rgba(255, 255, 255, 0.06)",
+     "shadow": "rgba(255, 255, 255, 0.15) 0px 1px 1px 0px inset",
+     "backdrop": "blur(5px)"
+    },
+    "logoLeft": 406
+   },
+   "navBottom": 92,
+   "navStrict": {
+    "rect": {
+     "x": 406,
+     "y": 33,
+     "w": 628,
+     "h": 42,
+     "b": 75
+    },
+    "left": 406,
+    "right": 1034
+   },
+   "h1": {
+    "textW": 497,
+    "text": "Your shortcut to everything.",
+    "chars": 28,
+    "words": 4,
+    "font": "Inter, \"Inter Fallback\"",
+    "size": 64,
+    "weight": "600",
+    "ls": "normal",
+    "lsEm": 0,
+    "lh": "70.4px",
+    "lhRatio": 1.1,
+    "lines": 2,
+    "align": "center",
+    "color": "rgb(255, 255, 255)",
+    "wrap": "wrap",
+    "rect": {
+     "x": 450,
+     "y": 370,
+     "w": 540,
+     "h": 141,
+     "b": 511
+    },
+    "centerX": 720,
+    "endsWithPeriod": true,
+    "titleCaseShare": 0.33,
+    "opsz": "normal",
+    "transform": "none",
+    "gradientText": false
+   },
+   "preH1": [],
+   "sub": {
+    "textW": 464,
+    "text": "A collection of powerful productivity tools all within an extendable launcher. Fast, ergonomic and reliable.",
+    "chars": 108,
+    "size": 18,
+    "weight": "400",
+    "lhRatio": "normal",
+    "ls": "0.2px",
+    "color": "rgb(255, 255, 255)",
+    "lines": 2,
+    "rect": {
+     "x": 327,
+     "y": 543,
+     "w": 786,
+     "h": 42,
+     "b": 585
+    },
+    "gapFromH1": 32,
+    "sizeRatioToH1": 0.281,
+    "align": "center"
+   },
+   "ctas": [
+    {
+     "text": "Download for Mac",
+     "kind": "filled",
+     "h": 36,
+     "w": 173,
+     "radius": "8px",
+     "bg": "rgb(230, 230, 230)",
+     "color": "rgb(47, 48, 49)",
+     "border": null,
+     "size": "14px",
+     "weight": "500",
+     "ls": "0.2px",
+     "padX": "12px",
+     "shadow": "rgba(0, 0, 0, 0.5) 0px 0px 0px 2px, rgba(255, 255, 255, 0.19) 0px 0px 14px 0px, rgba(0, 0, 0, 0.2) 0px -1px 0.4px 0px inset, rgb(255, 255, 2",
+     "y": 797,
+     "x": 633
+    }
+   ],
+   "bgChain": [
+    {
+     "tag": "body",
+     "bg": "rgb(7, 8, 10)",
+     "bgImage": null,
+     "size": "auto"
+    }
+   ],
+   "htmlBg": "rgba(0, 0, 0, 0)",
+   "bodyBg": "rgb(7, 8, 10)",
+   "colorScheme": "dark",
+   "mediaTop": [
+    {
+     "tag": "canvas",
+     "rect": {
+      "x": 120,
+      "y": 0,
+      "w": 1200,
+      "h": 967,
+      "b": 967
+     },
+     "foldShare": 0.833,
+     "alt": ""
+    }
+   ],
+   "pixels": {
+    "meanLum": 24,
+    "satShare": 18.8,
+    "hues": [
+     {
+      "hue": 330,
+      "share": 18.33
+     }
+    ],
+    "rails": [
+     139,
+     144,
+     147,
+     155,
+     163,
+     1280,
+     1288,
+     1291,
+     1294,
+     1302
+    ]
+   },
+   "url": "raycast.com"
+  },
+  "resend": {
+   "nav": {
+    "outer": {
+     "x": 0,
+     "y": 0,
+     "w": 1440,
+     "h": 58,
+     "b": 58
+    },
+    "position": "sticky",
+    "bg": "rgba(0, 0, 0, 0)",
+    "backdrop": "none",
+    "borderBottom": "0px rgb(240, 240, 240)",
+    "shadow": null,
+    "nLinks": 9,
+    "linkTexts": [
+     "Features",
+     "Company",
+     "Enterprise",
+     "Help",
+     "Docs",
+     "AI",
+     "Pricing",
+     "Log in",
+     "Get started"
+    ],
+    "links": [
+     {
+      "text": "Features",
+      "size": "14px",
+      "weight": "500",
+      "ls": "normal",
+      "h": 58,
+      "padX": "12px",
+      "color": "rgb(161, 164, 165)",
+      "font": "inter"
+     },
+     {
+      "text": "Company",
+      "size": "14px",
+      "weight": "500",
+      "ls": "normal",
+      "h": 58,
+      "padX": "12px",
+      "color": "rgb(161, 164, 165)",
+      "font": "inter"
+     },
+     {
+      "text": "Enterprise",
+      "size": "14px",
+      "weight": "500",
+      "ls": "normal",
+      "h": 58,
+      "padX": "12px",
+      "color": "rgb(161, 164, 165)",
+      "font": "inter"
+     }
+    ],
+    "buttons": [
+     {
+      "text": "Log in",
+      "h": 40,
+      "w": 75,
+      "radius": "16px",
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(161, 164, 165)",
+      "border": "1px rgba(0, 0, 0, 0)",
+      "size": "14px",
+      "weight": "600"
+     },
+     {
+      "text": "Get started",
+      "h": 40,
+      "w": 112,
+      "radius": "16px",
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(255, 255, 255)",
+      "border": "2px oklab(0.999994 0.0000455678 0.0000200868 / 0.05)",
+      "size": "14px",
+      "weight": "600"
+     }
+    ],
+    "pill": null,
+    "logoLeft": 104
+   },
+   "navBottom": 58,
+   "navStrict": {
+    "rect": {
+     "x": 104,
+     "y": 0,
+     "w": 1232,
+     "h": 58,
+     "b": 58
+    },
+    "left": 104,
+    "right": 1336
+   },
+   "h1": {
+    "textW": 401,
+    "text": "Email for developers",
+    "chars": 20,
+    "words": 3,
+    "font": "domaine, ui-sans-serif",
+    "size": 96,
+    "weight": "400",
+    "ls": "-0.96px",
+    "lsEm": -0.01,
+    "lh": "96px",
+    "lhRatio": 1,
+    "lines": 2,
+    "align": "left",
+    "color": "rgb(240, 240, 240)",
+    "wrap": "wrap",
+    "rect": {
+     "x": 168,
+     "y": 327,
+     "w": 480,
+     "h": 204,
+     "b": 531
+    },
+    "centerX": 408,
+    "endsWithPeriod": false,
+    "titleCaseShare": 0.5,
+    "opsz": "normal",
+    "transform": "none",
+    "gradientText": true
+   },
+   "preH1": [
+    {
+     "text": "Join us at Resend Forward",
+     "size": "14px",
+     "top": 264
+    }
+   ],
+   "sub": {
+    "textW": 463,
+    "text": "The best way to reach humans instead of spam folders. Deliver transactional and marketing emails at scale.",
+    "chars": 106,
+    "size": 18,
+    "weight": "400",
+    "lhRatio": 1.5,
+    "ls": "normal",
+    "color": "rgb(161, 164, 165)",
+    "lines": 2,
+    "rect": {
+     "x": 168,
+     "y": 539,
+     "w": 480,
+     "h": 54,
+     "b": 593
+    },
+    "gapFromH1": 8,
+    "sizeRatioToH1": 0.188,
+    "align": "left"
+   },
+   "ctas": [
+    {
+     "text": "Get started",
+     "kind": "outline",
+     "h": 48,
+     "w": 130,
+     "radius": "16px",
+     "bg": "rgba(0, 0, 0, 0)",
+     "color": "rgb(255, 255, 255)",
+     "border": "2px oklab(0.999994 0.0000455678 0.0000200868 / 0.05)",
+     "size": "16px",
+     "weight": "600",
+     "ls": "normal",
+     "padX": "20px",
+     "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba",
+     "y": 625,
+     "x": 168
+    },
+    {
+     "text": "Documentation",
+     "kind": "outline",
+     "h": 48,
+     "w": 160,
+     "radius": "16px",
+     "bg": "rgba(0, 0, 0, 0)",
+     "color": "rgb(161, 164, 165)",
+     "border": "1px rgba(0, 0, 0, 0)",
+     "size": "16px",
+     "weight": "600",
+     "ls": "normal",
+     "padX": "20px",
+     "shadow": null,
+     "y": 625,
+     "x": 314
+    }
+   ],
+   "bgChain": [
+    {
+     "tag": "h1.effect-font-styling",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgImage": "linear-gradient(to right bottom, rgb(255, 255, 255) 30%, rgba(255, 255, 255, 0.5))",
+     "size": "auto"
+    },
+    {
+     "tag": "div.bg-black",
+     "bg": "rgb(0, 0, 0)",
+     "bgImage": null,
+     "size": "auto"
+    },
+    {
+     "tag": "body.bg-background",
+     "bg": "rgb(0, 0, 0)",
+     "bgImage": null,
+     "size": "auto"
+    }
+   ],
+   "htmlBg": "rgba(0, 0, 0, 0)",
+   "bodyBg": "rgb(0, 0, 0)",
+   "colorScheme": "dark",
+   "mediaTop": [
+    {
+     "tag": "img",
+     "rect": {
+      "x": 0,
+      "y": -22,
+      "w": 1440,
+      "h": 900,
+      "b": 878
+     },
+     "foldShare": 0.976,
+     "alt": "Light ray background"
+    },
+    {
+     "tag": "img",
+     "rect": {
+      "x": 0,
+      "y": 58,
+      "w": 1440,
+      "h": 900,
+      "b": 958
+     },
+     "foldShare": 0.936,
+     "alt": "Floor background"
+    }
+   ],
+   "pixels": {
+    "meanLum": 10,
+    "satShare": 0,
+    "hues": [],
+    "rails": []
+   },
+   "url": "resend.com"
+  },
+  "clerk": {
+   "nav": {
+    "outer": {
+     "x": 0,
+     "y": 48,
+     "w": 1440,
+     "h": 42,
+     "b": 90
+    },
+    "position": "sticky",
+    "bg": "rgba(0, 0, 0, 0)",
+    "backdrop": "none",
+    "borderBottom": "0px rgb(217, 217, 222)",
+    "shadow": null,
+    "nLinks": 8,
+    "linkTexts": [
+     "Products",
+     "Docs",
+     "Changelog",
+     "Company",
+     "AI",
+     "Pricing",
+     "Sign in",
+     "Sign up"
+    ],
+    "links": [
+     {
+      "text": "Products",
+      "size": "16px",
+      "weight": "400",
+      "ls": "normal",
+      "h": 20,
+      "padX": "0px",
+      "color": "rgb(19, 19, 22)",
+      "font": "geistNumbers"
+     },
+     {
+      "text": "Docs",
+      "size": "16px",
+      "weight": "400",
+      "ls": "normal",
+      "h": 20,
+      "padX": "8px",
+      "color": "rgb(19, 19, 22)",
+      "font": "geistNumbers"
+     },
+     {
+      "text": "Changelog",
+      "size": "16px",
+      "weight": "400",
+      "ls": "normal",
+      "h": 20,
+      "padX": "8px",
+      "color": "rgb(19, 19, 22)",
+      "font": "geistNumbers"
+     }
+    ],
+    "buttons": [],
+    "pill": {
+     "rect": {
+      "x": 106,
+      "y": 48,
+      "w": 1228,
+      "h": 42,
+      "b": 90
+     },
+     "radius": "12px",
+     "bg": "rgba(248, 248, 248, 0.9)",
+     "border": "0px rgb(217, 217, 222)",
+     "shadow": "rgba(255, 255, 255, 0.9) 0px 0px 0px 0.5px inset, rgba(19, 19, 22, 0.15) 0px 0px 0px 0.5px",
+     "backdrop": "none"
+    },
+    "logoLeft": 118
+   },
+   "navBottom": 90,
+   "h1": {
+    "textW": 529,
+    "text": "Everything you need for authentication",
+    "chars": 38,
+    "words": 5,
+    "font": "geistNumbers, suisse",
+    "size": 56,
+    "weight": "700",
+    "ls": "-1.96px",
+    "lsEm": -0.035,
+    "lh": "64px",
+    "lhRatio": 1.143,
+    "lines": 2,
+    "align": "left",
+    "color": "rgb(19, 19, 22)",
+    "wrap": "balance",
+    "rect": {
+     "x": 120,
+     "y": 190,
+     "w": 598,
+     "h": 128,
+     "b": 318
+    },
+    "centerX": 419,
+    "endsWithPeriod": false,
+    "titleCaseShare": 0.33,
+    "opsz": "normal",
+    "transform": "none",
+    "gradientText": false
+   },
+   "preH1": [
+    {
+     "text": "Tasty Steel Soap",
+     "size": "13px",
+     "top": 97
+    },
+    {
+     "text": "Fantastic Wooden Chips",
+     "size": "13px",
+     "top": 127
+    },
+    {
+     "text": "Current plan",
+     "size": "11px",
+     "top": 161
+    }
+   ],
+   "sub": {
+    "textW": 479,
+    "text": "More than APIs. The complete user layer for modern apps.",
+    "chars": 56,
+    "size": 18,
+    "weight": "400",
+    "lhRatio": 1.55,
+    "ls": "normal",
+    "color": "rgb(94, 95, 110)",
+    "lines": 1,
+    "rect": {
+     "x": 120,
+     "y": 334,
+     "w": 598,
+     "h": 28,
+     "b": 362
+    },
+    "gapFromH1": 16,
+    "sizeRatioToH1": 0.321,
+    "align": "left"
+   },
+   "ctas": [],
+   "bgChain": [
+    {
+     "tag": "section.relative",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": null,
+     "size": "auto"
+    },
+    {
+     "tag": "div.relative",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": null,
+     "size": "auto"
+    },
+    {
+     "tag": "div.isolate",
+     "bg": "rgb(247, 247, 248)",
+     "bgImage": null,
+     "size": "auto"
+    },
+    {
+     "tag": "body.flex",
+     "bg": "rgb(247, 247, 248)",
+     "bgImage": null,
+     "size": "auto"
+    }
+   ],
+   "htmlBg": "rgb(247, 247, 248)",
+   "bodyBg": "rgb(247, 247, 248)",
+   "colorScheme": "normal",
+   "mediaTop": [
+    {
+     "tag": "picture",
+     "rect": {
+      "x": 0,
+      "y": 709,
+      "w": 1440,
+      "h": 2640,
+      "b": 3349
+     },
+     "foldShare": 0.212,
+     "alt": ""
+    },
+    {
+     "tag": "img",
+     "rect": {
+      "x": -261,
+      "y": 709,
+      "w": 2640,
+      "h": 2640,
+      "b": 3349
+     },
+     "foldShare": 0.212,
+     "alt": ""
+    },
+    {
+     "tag": "img",
+     "rect": {
+      "x": -196,
+      "y": 346,
+      "w": 720,
+      "h": 506,
+      "b": 852
+     },
+     "foldShare": 0.205,
+     "alt": "Clerk user profile component with option"
+    }
+   ],
+   "frame": {
+    "outerRect": {
+     "x": 120,
+     "y": 418,
+     "w": 1200,
+     "h": 741,
+     "b": 1158
+    },
+    "foldShare": 0.446,
+    "bleedsOffFold": true,
+    "levels": [
+     {
+      "inset": null,
+      "w": 1200,
+      "radius": "16.5px",
+      "border": "1px rgba(0, 0, 0, 0)",
+      "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklab(0.188081 0.0016512 -0.00579907 / 0.06) 0px 0px 0px 1",
+      "bg": "rgba(0, 0, 0, 0)",
+      "padding": "0px 0px"
+     }
+    ]
+   },
+   "pixels": {
+    "meanLum": 236,
+    "satShare": 0.1,
+    "hues": [],
+    "rails": []
+   },
+   "url": "clerk.com"
+  },
+  "attio": {
+   "nav": {
+    "outer": {
+     "x": 0,
+     "y": 0,
+     "w": 1440,
+     "h": 116,
+     "b": 116
+    },
+    "position": "sticky",
+    "bg": "rgba(0, 0, 0, 0)",
+    "backdrop": "none",
+    "borderBottom": "0px lab(86.0989 -0.77799 -4.0961)",
+    "shadow": null,
+    "nLinks": 7,
+    "linkTexts": [
+     "Platform",
+     "Resources",
+     "Developers",
+     "Customers",
+     "Pricing",
+     "Sign in",
+     "Start for free"
+    ],
+    "links": [
+     {
+      "text": "Platform",
+      "size": "15px",
+      "weight": "500",
+      "ls": "-0.16px",
+      "h": 36,
+      "padX": "12px",
+      "color": "lab(20.5697 -0.638425 -4.44436)",
+      "font": "inter"
+     },
+     {
+      "text": "Resources",
+      "size": "15px",
+      "weight": "500",
+      "ls": "-0.16px",
+      "h": 36,
+      "padX": "12px",
+      "color": "lab(20.5697 -0.638425 -4.44436)",
+      "font": "inter"
+     },
+     {
+      "text": "Developers",
+      "size": "15px",
+      "weight": "500",
+      "ls": "-0.16px",
+      "h": 36,
+      "padX": "12px",
+      "color": "lab(20.5697 -0.638425 -4.44436)",
+      "font": "inter"
+     }
+    ],
+    "buttons": [
+     {
+      "text": "",
+      "h": 32,
+      "w": 32,
+      "radius": "10px",
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "lab(94.3726 -0.157326 -2.23036)",
+      "border": "1px rgba(0, 0, 0, 0)",
+      "size": "16px",
+      "weight": "500"
+     },
+     {
+      "text": "Sign in",
+      "h": 36,
+      "w": 71,
+      "radius": "10px",
+      "bg": "lab(99.9987 0.0337958 0.000309944)",
+      "color": "lab(20.5697 -0.638425 -4.44436)",
+      "border": "1px lab(83.208 -0.844151 -5.26234)",
+      "size": "14px",
+      "weight": "500"
+     },
+     {
+      "text": "Start for free",
+      "h": 36,
+      "w": 110,
+      "radius": "10px",
+      "bg": "lab(12.7212 0.103362 -2.22102)",
+      "color": "lab(96.1596 -0.0828803 -1.13571)",
+      "border": "1px lab(37.426 -1.09151 -9.33263)",
+      "size": "14px",
+      "weight": "500"
+     }
+    ],
+    "pill": null,
+    "logoLeft": 72
+   },
+   "navBottom": 116,
+   "navStrict": {
+    "rect": {
+     "x": 24,
+     "y": 48,
+     "w": 1392,
+     "h": 67,
+     "b": 115
+    },
+    "left": 20,
+    "right": 1416
+   },
+   "h1": {
+    "textW": 805,
+    "text": "Welcome to agentic revenue.",
+    "chars": 27,
+    "words": 4,
+    "font": "interDisplay, \"interDisplay Fallback\"",
+    "size": 64,
+    "weight": "600",
+    "ls": "-1.28px",
+    "lsEm": -0.02,
+    "lh": "60.8px",
+    "lhRatio": 0.95,
+    "lines": 1,
+    "align": "center",
+    "color": "lab(10.7201 -0.0959039 -1.54182)",
+    "wrap": "balance",
+    "rect": {
+     "x": 318,
+     "y": 278,
+     "w": 805,
+     "h": 61,
+     "b": 339
+    },
+    "centerX": 720,
+    "endsWithPeriod": true,
+    "titleCaseShare": 0.33,
+    "opsz": "normal",
+    "transform": "none",
+    "gradientText": false
+   },
+   "preH1": [
+    {
+     "text": "GTM lessons from Elena Verna and more",
+     "size": "13px",
+     "top": 218
+    }
+   ],
+   "sub": {
+    "textW": 389,
+    "text": "Attio is the CRM that builds pipeline, advances deals, and grows accounts around the clock.",
+    "chars": 91,
+    "size": 18,
+    "weight": "500",
+    "lhRatio": 1.3,
+    "ls": "-0.18px",
+    "color": "lab(50.3787 -1.31875 -9.56043)",
+    "lines": 2,
+    "rect": {
+     "x": 477,
+     "y": 375,
+     "w": 486,
+     "h": 47,
+     "b": 422
+    },
+    "gapFromH1": 36,
+    "sizeRatioToH1": 0.281,
+    "align": "center"
+   },
+   "ctas": [
+    {
+     "text": "Talk to sales",
+     "kind": "filled",
+     "h": 36,
+     "w": 108,
+     "radius": "10px",
+     "bg": "lab(99.9987 0.0337958 0.000309944)",
+     "color": "lab(20.5697 -0.638425 -4.44436)",
+     "border": "1px lab(83.208 -0.844151 -5.26234)",
+     "size": "14px",
+     "weight": "500",
+     "ls": "-0.07px",
+     "padX": "12px",
+     "shadow": null,
+     "y": 446,
+     "x": 606
+    },
+    {
+     "text": "Start for free",
+     "kind": "filled",
+     "h": 36,
+     "w": 110,
+     "radius": "10px",
+     "bg": "lab(12.7212 0.103362 -2.22102)",
+     "color": "lab(96.1596 -0.0828803 -1.13571)",
+     "border": "1px lab(37.426 -1.09151 -9.33263)",
+     "size": "14px",
+     "weight": "500",
+     "ls": "-0.07px",
+     "padX": "12px",
+     "shadow": null,
+     "y": 446,
+     "x": 724
+    }
+   ],
+   "bgChain": [
+    {
+     "tag": "section.border-subtle-stroke",
+     "bg": "lab(99.9987 0.0337958 0.000309944)",
+     "bgImage": null,
+     "size": "auto"
+    },
+    {
+     "tag": "body.bg-(--color-page-bac",
+     "bg": "lab(99.9987 0.0337958 0.000309944)",
+     "bgImage": null,
+     "size": "auto"
+    }
+   ],
+   "htmlBg": "lab(0 0 0)",
+   "bodyBg": "lab(99.9987 0.0337958 0.000309944)",
+   "colorScheme": "light",
+   "mediaTop": [],
+   "frame": {
+    "outerRect": {
+     "x": 180,
+     "y": 580,
+     "w": 1080,
+     "h": 619,
+     "b": 1199
+    },
+    "foldShare": 0.267,
+    "bleedsOffFold": true,
+    "levels": [
+     {
+      "inset": null,
+      "w": 1080,
+      "radius": "16px",
+      "border": null,
+      "shadow": "rgba(11, 13, 24, 0.06) 0px 0px 0px 1px, rgba(11, 13, 24, 0.024) 0px 1px 2px 0px, rgba(11, 13, 24, 0.03) 0px 3px 6px 0px, rgba(11, 13, 24, 0.035) 0px 8px 14px 0p",
+      "bg": "oklab(0.966998 -0.000296682 -0.00296348 / 0.8)",
+      "padding": "0px 6px"
+     }
+    ]
+   },
+   "pixels": {
+    "meanLum": 234,
+    "satShare": 0,
+    "hues": [],
+    "rails": []
+   },
+   "url": "attio.com"
+  },
+  "cal": {
+   "nav": {
+    "outer": {
+     "x": 144,
+     "y": 8,
+     "w": 1152,
+     "h": 57,
+     "b": 65
+    },
+    "position": "fixed",
+    "bg": "rgba(0, 0, 0, 0)",
+    "backdrop": "none",
+    "borderBottom": "0px rgb(0, 0, 0)",
+    "shadow": null,
+    "nLinks": 5,
+    "linkTexts": [
+     "Enterprise",
+     "Cal.ai",
+     "Pricing",
+     "Sign in",
+     "Get started"
+    ],
+    "links": [
+     {
+      "text": "Enterprise",
+      "size": "12px",
+      "weight": "400",
+      "ls": "normal",
+      "h": 60,
+      "padX": "20px",
+      "color": "rgb(0, 0, 238)",
+      "font": "sans-serif"
+     },
+     {
+      "text": "Cal.ai",
+      "size": "12px",
+      "weight": "400",
+      "ls": "normal",
+      "h": 60,
+      "padX": "20px",
+      "color": "rgb(0, 0, 238)",
+      "font": "sans-serif"
+     },
+     {
+      "text": "Pricing",
+      "size": "12px",
+      "weight": "400",
+      "ls": "normal",
+      "h": 60,
+      "padX": "20px",
+      "color": "rgb(0, 0, 238)",
+      "font": "sans-serif"
+     }
+    ],
+    "buttons": [],
+    "pill": null,
+    "logoLeft": 176
+   },
+   "navBottom": 65,
+   "navStrict": {
+    "rect": {
+     "x": 144,
+     "y": 8,
+     "w": 1152,
+     "h": 57,
+     "b": 65
+    },
+    "left": 176,
+    "right": 1264
+   },
+   "h1": {
+    "textW": 505,
+    "text": "The better way to schedule your meetings",
+    "chars": 40,
+    "words": 7,
+    "font": "\"Cal Sans\", \"Cal Sans Placeholder\"",
+    "size": 64,
+    "weight": "600",
+    "ls": "normal",
+    "lsEm": 0,
+    "lh": "70.4px",
+    "lhRatio": 1.1,
+    "lines": 3,
+    "align": "left",
+    "color": "rgb(36, 36, 36)",
+    "wrap": "wrap",
+    "rect": {
+     "x": 196,
+     "y": 253,
+     "w": 500,
+     "h": 211,
+     "b": 464
+    },
+    "centerX": 446,
+    "endsWithPeriod": false,
+    "titleCaseShare": 0,
+    "opsz": "normal",
+    "transform": "none",
+    "gradientText": false
+   },
+   "preH1": [
+    {
+     "text": "Cal.com launches v6.9",
+     "size": "12px",
+     "top": 219
+    },
+    {
+     "text": "May",
+     "size": "16px",
+     "top": 222
+    },
+    {
+     "text": "2025",
+     "size": "14px",
+     "top": 222
+    }
+   ],
+   "sub": {
+    "textW": 445,
+    "text": "A fully customizable scheduling software for individuals, businesses taking calls and developers building scheduling pla",
+    "chars": 150,
+    "size": 16,
+    "weight": "300",
+    "lhRatio": 1.5,
+    "ls": "normal",
+    "color": "rgb(137, 137, 137)",
+    "lines": 3,
+    "rect": {
+     "x": 196,
+     "y": 476,
+     "w": 500,
+     "h": 72,
+     "b": 548
+    },
+    "gapFromH1": 12,
+    "sizeRatioToH1": 0.25,
+    "align": "left"
+   },
+   "ctas": [
+    {
+     "text": "Sign up with Google",
+     "kind": "text",
+     "h": 36,
+     "w": 480,
+     "radius": "12px",
+     "bg": "rgba(0, 0, 0, 0)",
+     "color": "rgb(0, 0, 238)",
+     "border": null,
+     "size": "12px",
+     "weight": "400",
+     "ls": "normal",
+     "padX": "12px",
+     "shadow": "rgba(255, 255, 255, 0.15) 0px 2px 0px 0px inset",
+     "y": 564,
+     "x": 196
+    },
+    {
+     "text": "Sign up with email",
+     "kind": "text",
+     "h": 36,
+     "w": 480,
+     "radius": "12px",
+     "bg": "rgba(0, 0, 0, 0)",
+     "color": "rgb(0, 0, 238)",
+     "border": null,
+     "size": "12px",
+     "weight": "400",
+     "ls": "normal",
+     "padX": "12px",
+     "shadow": "rgb(255, 255, 255) 0px 2px 0px 0px inset",
+     "y": 612,
+     "x": 196
+    }
+   ],
+   "bgChain": [
+    {
+     "tag": "div.framer-eyoavh",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": null,
+     "size": "auto"
+    },
+    {
+     "tag": "div.framer-Dv3SB",
+     "bg": "rgb(244, 244, 244)",
+     "bgImage": null,
+     "size": "auto"
+    },
+    {
+     "tag": "body",
+     "bg": "rgb(244, 244, 244)",
+     "bgImage": null,
+     "size": "auto"
+    }
+   ],
+   "htmlBg": "rgba(0, 0, 0, 0)",
+   "bodyBg": "rgb(244, 244, 244)",
+   "colorScheme": "normal",
+   "mediaTop": [],
+   "frame": {
+    "outerRect": {
+     "x": 132,
+     "y": 96,
+     "w": 1176,
+     "h": 700,
+     "b": 796
+    },
+    "foldShare": 0.635,
+    "bleedsOffFold": false,
+    "levels": [
+     {
+      "inset": null,
+      "w": 1176,
+      "radius": "12px",
+      "border": null,
+      "shadow": "rgba(36, 36, 36, 0.7) 0px 1px 5px -4px, rgba(36, 36, 36, 0.05) 0px 4px 8px 0px",
+      "bg": "rgb(255, 255, 255)",
+      "padding": "0px 0px"
+     }
+    ]
+   },
+   "pixels": {
+    "meanLum": 239,
+    "satShare": 0.3,
+    "hues": [],
+    "rails": [
+     120,
+     1313,
+     1319
+    ]
+   },
+   "url": "cal.com"
+  },
+  "mercury": {
+   "nav": {
+    "outer": {
+     "x": 0,
+     "y": 49,
+     "w": 1440,
+     "h": 72,
+     "b": 121
+    },
+    "position": "sticky",
+    "bg": "rgba(0, 0, 0, 0)",
+    "backdrop": "none",
+    "borderBottom": "0px rgb(0, 0, 0)",
+    "shadow": null,
+    "nLinks": 7,
+    "linkTexts": [
+     "Products",
+     "Solutions",
+     "Resources",
+     "About",
+     "Pricing",
+     "Log in",
+     "Open account"
+    ],
+    "links": [
+     {
+      "text": "Products",
+      "size": "16px",
+      "weight": "420",
+      "ls": "normal",
+      "h": 40,
+      "padX": "20px",
+      "color": "rgb(237, 237, 243)",
+      "font": "arcadia"
+     },
+     {
+      "text": "Solutions",
+      "size": "16px",
+      "weight": "420",
+      "ls": "normal",
+      "h": 40,
+      "padX": "20px",
+      "color": "rgb(237, 237, 243)",
+      "font": "arcadia"
+     },
+     {
+      "text": "Resources",
+      "size": "16px",
+      "weight": "420",
+      "ls": "normal",
+      "h": 40,
+      "padX": "20px",
+      "color": "rgb(237, 237, 243)",
+      "font": "arcadia"
+     }
+    ],
+    "buttons": [
+     {
+      "text": "Open account",
+      "h": 40,
+      "w": 145,
+      "radius": "32px",
+      "bg": "rgb(82, 102, 235)",
+      "color": "rgb(255, 255, 255)",
+      "border": null,
+      "size": "16px",
+      "weight": "420"
+     }
+    ],
+    "pill": null,
+    "logoLeft": 32
+   },
+   "navBottom": 121,
+   "navStrict": {
+    "rect": {
+     "x": 0,
+     "y": 49,
+     "w": 1440,
+     "h": 72,
+     "b": 121
+    },
+    "left": 32,
+    "right": 1408
+   },
+   "h1": {
+    "textW": 672,
+    "text": "Radically different banking",
+    "chars": 27,
+    "words": 3,
+    "font": "arcadiaDisplay, \"arcadiaDisplay Fallback\"",
+    "size": 49.3472,
+    "weight": "480",
+    "ls": "normal",
+    "lsEm": 0,
+    "lh": "54.2819px",
+    "lhRatio": 1.1,
+    "lines": 1,
+    "align": "center",
+    "color": "rgb(237, 237, 243)",
+    "wrap": "balance",
+    "rect": {
+     "x": 384,
+     "y": 144,
+     "w": 672,
+     "h": 54,
+     "b": 199
+    },
+    "centerX": 720,
+    "endsWithPeriod": false,
+    "titleCaseShare": 0.33,
+    "opsz": "normal",
+    "transform": "none",
+    "gradientText": false
+   },
+   "preH1": [],
+   "sub": {
+    "textW": 619,
+    "text": "Apply online in 10 minutes to experience banking unlike anything that’s come before.",
+    "chars": 84,
+    "size": 21.008,
+    "weight": "360",
+    "lhRatio": 1.35,
+    "ls": "normal",
+    "color": "rgb(237, 237, 243)",
+    "lines": 2,
+    "rect": {
+     "x": 410,
+     "y": 212,
+     "w": 619,
+     "h": 53,
+     "b": 265
+    },
+    "gapFromH1": 13,
+    "sizeRatioToH1": 0.426,
+    "align": "center"
+   },
+   "ctas": [
+    {
+     "text": "Open account",
+     "kind": "filled",
+     "h": 40,
+     "w": 145,
+     "radius": "32px",
+     "bg": "rgb(82, 102, 235)",
+     "color": "rgb(255, 255, 255)",
+     "border": null,
+     "size": "16px",
+     "weight": "420",
+     "ls": "normal",
+     "padX": "20px",
+     "shadow": null,
+     "y": 311,
+     "x": 702
+    },
+    {
+     "text": "Launch demo",
+     "kind": "outline",
+     "h": 40,
+     "w": 141,
+     "radius": "40px",
+     "bg": "rgba(175, 178, 206, 0.2)",
+     "color": "rgb(237, 237, 243)",
+     "border": "1px rgba(175, 178, 206, 0.36)",
+     "size": "16px",
+     "weight": "420",
+     "ls": "normal",
+     "padX": "20px",
+     "shadow": null,
+     "y": 311,
+     "x": 859
+    }
+   ],
+   "bgChain": [
+    {
+     "tag": "div.dark-neutral-theme",
+     "bg": "rgb(23, 23, 33)",
+     "bgImage": null,
+     "size": "auto"
+    },
+    {
+     "tag": "div.bg-background-defaul",
+     "bg": "rgb(23, 23, 33)",
+     "bgImage": null,
+     "size": "auto"
+    }
+   ],
+   "htmlBg": "rgba(0, 0, 0, 0)",
+   "bodyBg": "rgba(0, 0, 0, 0)",
+   "colorScheme": "normal",
+   "mediaTop": [
+    {
+     "tag": "picture",
+     "rect": {
+      "x": 0,
+      "y": 0,
+      "w": 1440,
+      "h": 900,
+      "b": 900
+     },
+     "foldShare": 1,
+     "alt": ""
+    },
+    {
+     "tag": "img",
+     "rect": {
+      "x": 0,
+      "y": 0,
+      "w": 1440,
+      "h": 900,
+      "b": 900
+     },
+     "foldShare": 1,
+     "alt": ""
+    },
+    {
+     "tag": "video",
+     "rect": {
+      "x": 0,
+      "y": 0,
+      "w": 1440,
+      "h": 900,
+      "b": 900
+     },
+     "foldShare": 1,
+     "alt": ""
+    }
+   ],
+   "pixels": {
+    "meanLum": 99,
+    "satShare": 1.1,
+    "hues": [
+     {
+      "hue": 210,
+      "share": 1.05
+     }
+    ],
+    "rails": []
+   },
+   "url": "mercury.com"
+  },
+  "ramp": {
+   "nav": {
+    "outer": {
+     "x": 0,
+     "y": 0,
+     "w": 1440,
+     "h": 102,
+     "b": 102
+    },
+    "position": "static",
+    "bg": "rgba(0, 0, 0, 0)",
+    "backdrop": "none",
+    "borderBottom": "0px lab(2.83994 0.367254 0.969091)",
+    "shadow": null,
+    "nLinks": 11,
+    "linkTexts": [
+     "Learn more",
+     "Products",
+     "Partners",
+     "Solutions",
+     "Resources",
+     "Customers",
+     "Pricing",
+     "Sign in",
+     "Sign in",
+     "See a demo",
+     "Get started"
+    ],
+    "links": [
+     {
+      "text": "Learn more",
+      "size": "13px",
+      "weight": "400",
+      "ls": "normal",
+      "h": 19,
+      "padX": "0px",
+      "color": "lab(100 0 0)",
+      "font": "Lausanne"
+     },
+     {
+      "text": "Products",
+      "size": "14px",
+      "weight": "400",
+      "ls": "normal",
+      "h": 44,
+      "padX": "12px",
+      "color": "lab(2.83994 0.367254 0.969091)",
+      "font": "Lausanne"
+     },
+     {
+      "text": "Partners",
+      "size": "14px",
+      "weight": "400",
+      "ls": "normal",
+      "h": 44,
+      "padX": "12px",
+      "color": "lab(2.83994 0.367254 0.969091)",
+      "font": "Lausanne"
+     }
+    ],
+    "buttons": [
+     {
+      "text": "See a demo",
+      "h": 34,
+      "w": 107,
+      "radius": "6px",
+      "bg": "lab(92.1406 -20.4979 84.7726)",
+      "color": "lab(2.83994 0.367254 0.969091)",
+      "border": null,
+      "size": "14px",
+      "weight": "400"
+     },
+     {
+      "text": "Get started",
+      "h": 34,
+      "w": 103,
+      "radius": "6px",
+      "bg": "lab(8.86531 0.515342 0.18619)",
+      "color": "lab(100 0 0)",
+      "border": null,
+      "size": "14px",
+      "weight": "400"
+     }
+    ],
+    "pill": null,
+    "logoLeft": 1392
+   },
+   "navBottom": 102,
+   "navStrict": {
+    "rect": {
+     "x": 64,
+     "y": 49,
+     "w": 1312,
+     "h": 44,
+     "b": 93
+    },
+    "left": 64,
+    "right": 1376
+   },
+   "h1": {
+    "textW": 742,
+    "text": "Time is money. Save both.",
+    "chars": 25,
+    "words": 5,
+    "font": "Lausanne, Arial",
+    "size": 64,
+    "weight": "400",
+    "ls": "-0.01px",
+    "lsEm": -0.0002,
+    "lh": "64px",
+    "lhRatio": 1,
+    "lines": 1,
+    "align": "start",
+    "color": "lab(2.83994 0.367254 0.969091)",
+    "wrap": "balance",
+    "rect": {
+     "x": 64,
+     "y": 229,
+     "w": 1050,
+     "h": 46,
+     "b": 275
+    },
+    "centerX": 589,
+    "endsWithPeriod": true,
+    "titleCaseShare": 0.5,
+    "opsz": "normal",
+    "transform": "none",
+    "gradientText": false
+   },
+   "preH1": [
+    {
+     "text": "US CORPORATE PAYMENTS PROCESSED BY RAMP:",
+     "size": "10px",
+     "top": 184
+    }
+   ],
+   "sub": {
+    "textW": 521,
+    "text": "Cards, expenses, bill payments, and banking* – in the blink of AI.",
+    "chars": 66,
+    "size": 18,
+    "weight": "400",
+    "lhRatio": 1.33,
+    "ls": "normal",
+    "color": "lab(2.83994 0.367254 0.969091 / 0.6)",
+    "lines": 1,
+    "rect": {
+     "x": 64,
+     "y": 299,
+     "w": 531,
+     "h": 24,
+     "b": 323
+    },
+    "gapFromH1": 24,
+    "sizeRatioToH1": 0.281,
+    "align": "start"
+   },
+   "ctas": [
+    {
+     "text": "Get started for free",
+     "kind": "filled",
+     "h": 52,
+     "w": 176,
+     "radius": "8px",
+     "bg": "lab(92.1406 -20.4979 84.7726)",
+     "color": "lab(2.83994 0.367254 0.969091)",
+     "border": null,
+     "size": "16px",
+     "weight": "400",
+     "ls": "normal",
+     "padX": "20px",
+     "shadow": null,
+     "y": 360,
+     "x": 333
+    }
+   ],
+   "bgChain": [
+    {
+     "tag": "body.fides-overlay-modal-",
+     "bg": "lab(100 0 0)",
+     "bgImage": null,
+     "size": "auto"
+    }
+   ],
+   "htmlBg": "rgba(0, 0, 0, 0)",
+   "bodyBg": "lab(100 0 0)",
+   "colorScheme": "normal",
+   "mediaTop": [
+    {
+     "tag": "canvas",
+     "rect": {
+      "x": 0,
+      "y": 102,
+      "w": 1440,
+      "h": 1013,
+      "b": 1115
+     },
+     "foldShare": 0.887,
+     "alt": ""
+    },
+    {
+     "tag": "video",
+     "rect": {
+      "x": 65,
+      "y": 466,
+      "w": 1310,
+      "h": 584,
+      "b": 1050
+     },
+     "foldShare": 0.439,
+     "alt": ""
+    }
+   ],
+   "frame": {
+    "outerRect": {
+     "x": 64,
+     "y": 465,
+     "w": 1312,
+     "h": 586,
+     "b": 1051
+    },
+    "foldShare": 0.44,
+    "bleedsOffFold": true,
+    "levels": [
+     {
+      "inset": null,
+      "w": 1312,
+      "radius": "12px",
+      "border": "1px rgba(33, 33, 33, 0.1)",
+      "shadow": null,
+      "bg": "rgba(0, 0, 0, 0)",
+      "padding": "0px 0px"
+     }
+    ]
+   },
+   "pixels": {
+    "meanLum": 233,
+    "satShare": 1.2,
+    "hues": [
+     {
+      "hue": 60,
+      "share": 1.08
+     }
+    ],
+    "rails": []
+   },
+   "url": "ramp.com"
+  },
+  "posthog": {
+   "navBottom": 0,
+   "h1": {
+    "textW": 461,
+    "text": "Your product's context layer",
+    "chars": 28,
+    "words": 4,
+    "font": "RoundHog, sans-serif",
+    "size": 36,
+    "weight": "800",
+    "ls": "-0.9px",
+    "lsEm": -0.025,
+    "lh": "40px",
+    "lhRatio": 1.111,
+    "lines": 1,
+    "align": "left",
+    "color": "rgb(17, 24, 39)",
+    "wrap": "wrap",
+    "rect": {
+     "x": 230,
+     "y": 201,
+     "w": 474,
+     "h": 40,
+     "b": 241
+    },
+    "centerX": 467,
+    "endsWithPeriod": false,
+    "titleCaseShare": 0.25,
+    "opsz": "normal",
+    "transform": "none",
+    "gradientText": false
+   },
+   "preH1": [
+    {
+     "text": "Products",
+     "size": "13px",
+     "top": 14
+    },
+    {
+     "text": "Pricing",
+     "size": "13px",
+     "top": 14
+    },
+    {
+     "text": "Docs",
+     "size": "13px",
+     "top": 14
+    }
+   ],
+   "sub": {
+    "textW": 454,
+    "text": "analytics, errors, replays, and business data",
+    "chars": 45,
+    "size": 17,
+    "weight": "500",
+    "lhRatio": 1.5,
+    "ls": "normal",
+    "color": "rgb(55, 65, 81)",
+    "lines": 2,
+    "rect": {
+     "x": 230,
+     "y": 265,
+     "w": 454,
+     "h": 46,
+     "b": 311
+    },
+    "gapFromH1": 25,
+    "sizeRatioToH1": 0.472,
+    "align": "left"
+   },
+   "ctas": [
+    {
+     "text": "Ask PostHog anything",
+     "kind": "filled",
+     "h": 40,
+     "w": 326,
+     "radius": "6px",
+     "bg": "rgb(182, 42, 217)",
+     "color": "rgb(255, 255, 255)",
+     "border": null,
+     "size": "14px",
+     "weight": "600",
+     "ls": "normal",
+     "padX": "12px",
+     "shadow": null,
+     "y": 463,
+     "x": 230
+    },
+    {
+     "text": "Give agents product context",
+     "kind": "text",
+     "h": 40,
+     "w": 326,
+     "radius": "6px",
+     "bg": "rgba(0, 0, 0, 0)",
+     "color": "rgb(101, 103, 94)",
+     "border": null,
+     "size": "14px",
+     "weight": "600",
+     "ls": "normal",
+     "padX": "12px",
+     "shadow": null,
+     "y": 463,
+     "x": 557
+    }
+   ],
+   "bgChain": [
+    {
+     "tag": "div.@container",
+     "bg": "rgba(229, 231, 224, 0.75)",
+     "bgImage": null,
+     "size": "auto"
+    },
+    {
+     "tag": "body.light",
+     "bg": "rgb(238, 239, 233)",
+     "bgImage": null,
+     "size": "auto"
+    }
+   ],
+   "htmlBg": "rgba(0, 0, 0, 0)",
+   "bodyBg": "rgb(238, 239, 233)",
+   "colorScheme": "normal",
+   "mediaTop": [
+    {
+     "tag": "img",
+     "rect": {
+      "x": 663,
+      "y": 269,
+      "w": 777,
+      "h": 631,
+      "b": 900
+     },
+     "foldShare": 0.378,
+     "alt": ""
+    },
+    {
+     "tag": "img",
+     "rect": {
+      "x": 663,
+      "y": 269,
+      "w": 777,
+      "h": 631,
+      "b": 900
+     },
+     "foldShare": 0.378,
+     "alt": ""
+    }
+   ],
+   "frame": {
+    "outerRect": {
+     "x": 150,
+     "y": 69,
+     "w": 1139,
+     "h": 802,
+     "b": 871
+    },
+    "foldShare": 0.705,
+    "bleedsOffFold": false,
+    "levels": [
+     {
+      "inset": null,
+      "w": 1139,
+      "radius": "20px",
+      "border": null,
+      "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.1) 0px 2px 4px -2px",
+      "bg": "rgba(229, 231, 224, 0.75)",
+      "padding": "0px 0px"
+     }
+    ]
+   },
+   "pixels": {
+    "meanLum": 203,
+    "satShare": 4.6,
+    "hues": [
+     {
+      "hue": 30,
+      "share": 1.59
+     },
+     {
+      "hue": 270,
+      "share": 1.86
+     }
+    ],
+    "rails": []
+   },
+   "url": "posthog.com"
+  },
+  "supabase": {
+   "nav": {
+    "outer": {
+     "x": 0,
+     "y": 0,
+     "w": 1440,
+     "h": 65,
+     "b": 65
+    },
+    "position": "sticky",
+    "bg": "rgba(0, 0, 0, 0)",
+    "backdrop": "none",
+    "borderBottom": "0px oklch(0.1 0 337.5 / 0.0812725)",
+    "shadow": null,
+    "nLinks": 9,
+    "linkTexts": [
+     "Product",
+     "Developers",
+     "Solutions",
+     "Pricing",
+     "Docs",
+     "Blog",
+     "111.2K",
+     "Sign in",
+     "Start your project"
+    ],
+    "links": [
+     {
+      "text": "Product",
+      "size": "14px",
+      "weight": "500",
+      "ls": "normal",
+      "h": 64,
+      "padX": "10px",
+      "color": "oklch(0.1 0 337.5)",
+      "font": "Inter"
+     },
+     {
+      "text": "Developers",
+      "size": "14px",
+      "weight": "500",
+      "ls": "normal",
+      "h": 64,
+      "padX": "10px",
+      "color": "oklch(0.1 0 337.5)",
+      "font": "Inter"
+     },
+     {
+      "text": "Solutions",
+      "size": "14px",
+      "weight": "500",
+      "ls": "normal",
+      "h": 64,
+      "padX": "10px",
+      "color": "oklch(0.1 0 337.5)",
+      "font": "Inter"
+     }
+    ],
+    "buttons": [],
+    "pill": null,
+    "logoLeft": 176
+   },
+   "navBottom": 65,
+   "navStrict": {
+    "rect": {
+     "x": 176,
+     "y": 0,
+     "w": 631,
+     "h": 64,
+     "b": 64
+    },
+    "left": 176,
+    "right": 807
+   },
+   "h1": {
+    "textW": 536,
+    "text": "Build in a weekend Scale to millions",
+    "chars": 36,
+    "words": 7,
+    "font": "Manrope, \"Manrope Fallback\"",
+    "size": 46,
+    "weight": "500",
+    "ls": "normal",
+    "lsEm": 0,
+    "lh": "46px",
+    "lhRatio": 1,
+    "lines": 3,
+    "align": "start",
+    "color": "oklch(0.1 0 337.5)",
+    "wrap": "wrap",
+    "rect": {
+     "x": 176,
+     "y": 225,
+     "w": 536,
+     "h": 92,
+     "b": 317
+    },
+    "centerX": 444,
+    "endsWithPeriod": false,
+    "titleCaseShare": 0.5,
+    "opsz": "normal",
+    "transform": "none",
+    "gradientText": false
+   },
+   "preH1": [],
+   "ctas": [
+    {
+     "text": "Start your project",
+     "kind": "filled",
+     "h": 38,
+     "w": 149,
+     "radius": "9.29231px",
+     "bg": "oklch(0.525 0.12 157.5)",
+     "color": "oklch(0.99 0.00275 157.5)",
+     "border": null,
+     "size": "14px",
+     "weight": "500",
+     "ls": "normal",
+     "padX": "16px",
+     "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba",
+     "y": 349,
+     "x": 176
+    },
+    {
+     "text": "Request a demo",
+     "kind": "filled",
+     "h": 38,
+     "w": 140,
+     "radius": "9.29231px",
+     "bg": "oklch(1 0 337.5)",
+     "color": "oklch(0.1 0 337.5)",
+     "border": null,
+     "size": "14px",
+     "weight": "500",
+     "ls": "normal",
+     "padX": "16px",
+     "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba",
+     "y": 349,
+     "x": 333
+    }
+   ],
+   "bgChain": [
+    {
+     "tag": "body",
+     "bg": "oklch(0.995 0 337.5)",
+     "bgImage": null,
+     "size": "auto"
+    }
+   ],
+   "htmlBg": "rgba(0, 0, 0, 0)",
+   "bodyBg": "oklch(0.995 0 337.5)",
+   "colorScheme": "light",
+   "mediaTop": [
+    {
+     "tag": "img",
+     "rect": {
+      "x": 727,
+      "y": 452,
+      "w": 261,
+      "h": 398,
+      "b": 850
+     },
+     "foldShare": 0.08,
+     "alt": "Supabase Authentication user db rows"
+    },
+    {
+     "tag": "img",
+     "rect": {
+      "x": 1002,
+      "y": 452,
+      "w": 261,
+      "h": 398,
+      "b": 850
+     },
+     "foldShare": 0.08,
+     "alt": "Supabase Edge Functions globe"
+    },
+    {
+     "tag": "img",
+     "rect": {
+      "x": 457,
+      "y": 452,
+      "w": 256,
+      "h": 398,
+      "b": 850
+     },
+     "foldShare": 0.079,
+     "alt": "Supabase Postgres database"
+    }
+   ],
+   "frame": {
+    "outerRect": {
+     "x": 176,
+     "y": 451,
+     "w": 538,
+     "h": 400,
+     "b": 851
+    },
+    "foldShare": 0.166,
+    "bleedsOffFold": false,
+    "levels": [
+     {
+      "inset": null,
+      "w": 538,
+      "radius": "16px",
+      "border": null,
+      "shadow": null,
+      "bg": "oklch(1 0 337.5)",
+      "padding": "1px 1px"
+     },
+     {
+      "inset": 1,
+      "w": 536,
+      "radius": "15px",
+      "border": null,
+      "shadow": null,
+      "bg": "oklch(1 0 337.5)",
+      "padding": "24px 16px"
+     }
+    ]
+   },
+   "pixels": {
+    "meanLum": 248,
+    "satShare": 0.9,
+    "hues": [
+     {
+      "hue": 150,
+      "share": 0.91
+     }
+    ],
+    "rails": []
+   },
+   "url": "supabase.com"
+  },
+  "framer": {
+   "nav": {
+    "outer": {
+     "x": 0,
+     "y": 0,
+     "w": 1440,
+     "h": 64,
+     "b": 64
+    },
+    "position": "fixed",
+    "bg": "rgba(0, 0, 0, 0)",
+    "backdrop": "none",
+    "borderBottom": "0px rgb(0, 0, 0)",
+    "shadow": null,
+    "nLinks": 10,
+    "linkTexts": [
+     "Framer",
+     "Platform",
+     "Solutions",
+     "Resources",
+     "Enterprise",
+     "Pricing",
+     "Log in",
+     "Sign up",
+     "Copy logo SVG",
+     "Brand guidelines"
+    ],
+    "links": [
+     {
+      "text": "Framer",
+      "size": "12px",
+      "weight": "400",
+      "ls": "normal",
+      "h": 26,
+      "padX": "0px",
+      "color": "rgb(0, 0, 238)",
+      "font": "sans-serif"
+     },
+     {
+      "text": "Platform",
+      "size": "12px",
+      "weight": "400",
+      "ls": "normal",
+      "h": 40,
+      "padX": "0px",
+      "color": "rgb(0, 0, 0)",
+      "font": "sans-serif"
+     },
+     {
+      "text": "Solutions",
+      "size": "12px",
+      "weight": "400",
+      "ls": "normal",
+      "h": 40,
+      "padX": "0px",
+      "color": "rgb(0, 0, 0)",
+      "font": "sans-serif"
+     }
+    ],
+    "buttons": [
+     {
+      "text": "Sign up",
+      "h": 30,
+      "w": 66,
+      "radius": "8px",
+      "bg": "rgb(255, 255, 255)",
+      "color": "rgb(0, 0, 238)",
+      "border": null,
+      "size": "12px",
+      "weight": "400"
+     }
+    ],
+    "pill": null,
+    "logoLeft": 120
+   },
+   "navBottom": 64,
+   "navStrict": {
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 1440,
+     "h": 64,
+     "b": 64
+    },
+    "left": 120,
+    "right": 1320
+   },
+   "h1": {
+    "textW": 675,
+    "text": "Framer is the design agent for every step from idea to launch",
+    "chars": 61,
+    "words": 12,
+    "font": "\"GT Walsheim Medium\", \"GT Walsheim Medium Placeholder\"",
+    "size": 54,
+    "weight": "500",
+    "ls": "-2.16px",
+    "lsEm": -0.04,
+    "lh": "54px",
+    "lhRatio": 1,
+    "lines": 2,
+    "align": "start",
+    "color": "rgb(255, 255, 255)",
+    "wrap": "wrap",
+    "rect": {
+     "x": 120,
+     "y": 164,
+     "w": 721,
+     "h": 108,
+     "b": 272
+    },
+    "centerX": 481,
+    "endsWithPeriod": false,
+    "titleCaseShare": 0.13,
+    "opsz": "normal",
+    "transform": "none",
+    "gradientText": false
+   },
+   "preH1": [],
+   "ctas": [
+    {
+     "text": "Get started for free",
+     "kind": "filled",
+     "h": 34,
+     "w": 149,
+     "radius": "8px",
+     "bg": "rgb(255, 255, 255)",
+     "color": "rgb(0, 0, 238)",
+     "border": null,
+     "size": "12px",
+     "weight": "400",
+     "ls": "normal",
+     "padX": "14px",
+     "shadow": null,
+     "y": 298,
+     "x": 120
+    },
+    {
+     "text": "Download app",
+     "kind": "text",
+     "h": 35,
+     "w": 143,
+     "radius": "8px",
+     "bg": "rgba(255, 255, 255, 0.1)",
+     "color": "rgb(0, 0, 238)",
+     "border": null,
+     "size": "12px",
+     "weight": "400",
+     "ls": "normal",
+     "padX": "14px",
+     "shadow": null,
+     "y": 297,
+     "x": 279
+    }
+   ],
+   "bgChain": [
+    {
+     "tag": "section.framer-1yvisnx",
+     "bg": "rgb(0, 0, 0)",
+     "bgImage": null,
+     "size": "auto"
+    },
+    {
+     "tag": "div.framer-np6Tf",
+     "bg": "rgb(0, 0, 0)",
+     "bgImage": null,
+     "size": "auto"
+    },
+    {
+     "tag": "div.framer-7JImb",
+     "bg": "rgb(0, 0, 0)",
+     "bgImage": null,
+     "size": "auto"
+    },
+    {
+     "tag": "body",
+     "bg": "rgb(0, 0, 0)",
+     "bgImage": null,
+     "size": "auto"
+    }
+   ],
+   "htmlBg": "rgba(0, 0, 0, 0)",
+   "bodyBg": "rgb(0, 0, 0)",
+   "colorScheme": "normal",
+   "mediaTop": [
+    {
+     "tag": "video",
+     "rect": {
+      "x": 120,
+      "y": 372,
+      "w": 1200,
+      "h": 673,
+      "b": 1045
+     },
+     "foldShare": 0.489,
+     "alt": ""
+    }
+   ],
+   "frame": {
+    "outerRect": {
+     "x": 120,
+     "y": 372,
+     "w": 1200,
+     "h": 673,
+     "b": 1045
+    },
+    "foldShare": 0.489,
+    "bleedsOffFold": true,
+    "levels": [
+     {
+      "inset": null,
+      "w": 1200,
+      "radius": "18px",
+      "border": null,
+      "shadow": null,
+      "bg": "rgb(0, 0, 0)",
+      "padding": "0px 0px"
+     }
+    ]
+   },
+   "pixels": {
+    "meanLum": 18,
+    "satShare": 0.5,
+    "hues": [],
+    "rails": []
+   },
+   "url": "framer.com"
+  },
+  "dub": {
+   "nav": {
+    "outer": {
+     "x": 0,
+     "y": 0,
+     "w": 1440,
+     "h": 56,
+     "b": 56
+    },
+    "position": "sticky",
+    "bg": "rgba(0, 0, 0, 0)",
+    "backdrop": "none",
+    "borderBottom": "0px rgb(229, 229, 229)",
+    "shadow": null,
+    "nLinks": 7,
+    "linkTexts": [
+     "Product",
+     "Solutions",
+     "Resources",
+     "Customers",
+     "Pricing",
+     "Log in",
+     "Sign up"
+    ],
+    "links": [
+     {
+      "text": "Product",
+      "size": "14px",
+      "weight": "500",
+      "ls": "normal",
+      "h": 32,
+      "padX": "12px",
+      "color": "rgb(64, 64, 64)",
+      "font": "Inter"
+     },
+     {
+      "text": "Solutions",
+      "size": "14px",
+      "weight": "500",
+      "ls": "normal",
+      "h": 32,
+      "padX": "12px",
+      "color": "rgb(64, 64, 64)",
+      "font": "Inter"
+     },
+     {
+      "text": "Resources",
+      "size": "14px",
+      "weight": "500",
+      "ls": "normal",
+      "h": 32,
+      "padX": "12px",
+      "color": "rgb(64, 64, 64)",
+      "font": "Inter"
+     }
+    ],
+    "buttons": [
+     {
+      "text": "Log in",
+      "h": 32,
+      "w": 75,
+      "radius": "8px",
+      "bg": "rgb(255, 255, 255)",
+      "color": "rgb(23, 23, 23)",
+      "border": "1px rgb(229, 229, 229)",
+      "size": "14px",
+      "weight": "400"
+     },
+     {
+      "text": "Sign up",
+      "h": 32,
+      "w": 84,
+      "radius": "8px",
+      "bg": "rgb(0, 0, 0)",
+      "color": "rgb(255, 255, 255)",
+      "border": "1px rgb(0, 0, 0)",
+      "size": "14px",
+      "weight": "400"
+     }
+    ],
+    "pill": null,
+    "logoLeft": 208
+   },
+   "navBottom": 56,
+   "navStrict": {
+    "rect": {
+     "x": 208,
+     "y": 0,
+     "w": 1024,
+     "h": 56,
+     "b": 56
+    },
+    "left": 208,
+    "right": 1232
+   },
+   "h1": {
+    "textW": 509,
+    "text": "Turn clicks into revenue",
+    "chars": 24,
+    "words": 4,
+    "font": "satoshi, \"satoshi Fallback\"",
+    "size": 48,
+    "weight": "500",
+    "ls": "normal",
+    "lsEm": 0,
+    "lh": "55.2px",
+    "lhRatio": 1.15,
+    "lines": 1,
+    "align": "center",
+    "color": "rgb(23, 23, 23)",
+    "wrap": "pretty",
+    "rect": {
+     "x": 466,
+     "y": 170,
+     "w": 509,
+     "h": 55,
+     "b": 225
+    },
+    "centerX": 720,
+    "endsWithPeriod": false,
+    "titleCaseShare": 0.25,
+    "opsz": "normal",
+    "transform": "none",
+    "gradientText": false
+   },
+   "preH1": [
+    {
+     "text": "Introducing our Startup Program",
+     "size": "12px",
+     "top": 121
+    },
+    {
+     "text": "Learn more",
+     "size": "12px",
+     "top": 127
+    }
+   ],
+   "sub": {
+    "textW": 539,
+    "text": "Dub is the modern link attribution platform for short links, conversion tracking, and affiliate programs.",
+    "chars": 105,
+    "size": 20,
+    "weight": "400",
+    "lhRatio": 1.4,
+    "ls": "normal",
+    "color": "rgb(82, 82, 82)",
+    "lines": 2,
+    "rect": {
+     "x": 400,
+     "y": 245,
+     "w": 640,
+     "h": 56,
+     "b": 301
+    },
+    "gapFromH1": 20,
+    "sizeRatioToH1": 0.417,
+    "align": "center"
+   },
+   "ctas": [
+    {
+     "text": "Start for free",
+     "kind": "filled",
+     "h": 38,
+     "w": 127,
+     "radius": "8px",
+     "bg": "rgb(0, 0, 0)",
+     "color": "rgb(255, 255, 255)",
+     "border": "1px rgb(0, 0, 0)",
+     "size": "14px",
+     "weight": "500",
+     "ls": "normal",
+     "padX": "20px",
+     "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px",
+     "y": 341,
+     "x": 589
+    },
+    {
+     "text": "Get a demo",
+     "kind": "filled",
+     "h": 38,
+     "w": 119,
+     "radius": "8px",
+     "bg": "rgb(255, 255, 255)",
+     "color": "rgb(38, 38, 38)",
+     "border": "1px rgb(229, 229, 229)",
+     "size": "14px",
+     "weight": "500",
+     "ls": "normal",
+     "padX": "20px",
+     "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px",
+     "y": 341,
+     "x": 732
+    },
+    {
+     "text": "Affiliate Programs",
+     "kind": "filled",
+     "h": 34,
+     "w": 168,
+     "radius": "8px",
+     "bg": "rgb(255, 255, 255)",
+     "color": "rgb(38, 38, 38)",
+     "border": "1px rgb(229, 229, 229)",
+     "size": "16px",
+     "weight": "400",
+     "ls": "normal",
+     "padX": "12px",
+     "shadow": null,
+     "y": 474,
+     "x": 469
+    },
+    {
+     "text": "Conversion Analytics",
+     "kind": "filled",
+     "h": 34,
+     "w": 190,
+     "radius": "8px",
+     "bg": "rgb(245, 245, 245)",
+     "color": "rgb(82, 82, 82)",
+     "border": "1px rgba(0, 0, 0, 0)",
+     "size": "16px",
+     "weight": "400",
+     "ls": "normal",
+     "padX": "12px",
+     "shadow": null,
+     "y": 474,
+     "x": 647
+    },
+    {
+     "text": "Short Links",
+     "kind": "filled",
+     "h": 34,
+     "w": 123,
+     "radius": "8px",
+     "bg": "rgb(245, 245, 245)",
+     "color": "rgb(82, 82, 82)",
+     "border": "1px rgba(0, 0, 0, 0)",
+     "size": "16px",
+     "weight": "400",
+     "ls": "normal",
+     "padX": "12px",
+     "shadow": null,
+     "y": 474,
+     "x": 847
+    }
+   ],
+   "bgChain": [
+    {
+     "tag": "div.relative",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": null,
+     "size": "auto"
+    },
+    {
+     "tag": "body.!overflow-x-hidden",
+     "bg": "rgb(250, 250, 250)",
+     "bgImage": null,
+     "size": "auto"
+    }
+   ],
+   "htmlBg": "rgba(0, 0, 0, 0)",
+   "bodyBg": "rgb(250, 250, 250)",
+   "colorScheme": "normal",
+   "mediaTop": [
+    {
+     "tag": "svg",
+     "rect": {
+      "x": 180,
+      "y": -141,
+      "w": 1080,
+      "h": 600,
+      "b": 459
+     },
+     "foldShare": 0.383,
+     "alt": ""
+    },
+    {
+     "tag": "svg",
+     "rect": {
+      "x": 280,
+      "y": 561,
+      "w": 880,
+      "h": 611,
+      "b": 1172
+     },
+     "foldShare": 0.23,
+     "alt": ""
+    },
+    {
+     "tag": "svg",
+     "rect": {
+      "x": -180,
+      "y": -141,
+      "w": 360,
+      "h": 600,
+      "b": 459
+     },
+     "foldShare": 0.064,
+     "alt": ""
+    }
+   ],
+   "frame": {
+    "outerRect": {
+     "x": 266,
+     "y": 547,
+     "w": 908,
+     "h": 580,
+     "b": 1127
+    },
+    "foldShare": 0.247,
+    "bleedsOffFold": true,
+    "levels": [
+     {
+      "inset": null,
+      "w": 908,
+      "radius": "20px",
+      "border": "1px rgb(229, 229, 229)",
+      "shadow": null,
+      "bg": "rgba(0, 0, 0, 0)",
+      "padding": "12px 12px"
+     },
+     {
+      "inset": 13,
+      "w": 882,
+      "radius": "12px",
+      "border": "1px rgb(212, 212, 212)",
+      "shadow": null,
+      "bg": "rgb(255, 255, 255)",
+      "padding": "0px 0px"
+     }
+    ]
+   },
+   "pixels": {
+    "meanLum": 246,
+    "satShare": 0.1,
+    "hues": [],
+    "rails": [
+     180,
+     1259
+    ]
+   },
+   "url": "dub.co"
+  },
+  "neon": {
+   "nav": {
+    "outer": {
+     "x": 0,
+     "y": 36,
+     "w": 1440,
+     "h": 64,
+     "b": 100
+    },
+    "position": "sticky",
+    "bg": "rgb(0, 0, 0)",
+    "backdrop": "none",
+    "borderBottom": "0px rgb(255, 255, 255)",
+    "shadow": null,
+    "nLinks": 12,
+    "linkTexts": [
+     "Neon",
+     "Product",
+     "Solutions",
+     "Docs",
+     "Pricing",
+     "Resources",
+     "Careers Join the team",
+     "Status Service status",
+     "Discord",
+     "23.2k",
+     "Log in",
+     "Sign up"
+    ],
+    "links": [
+     {
+      "text": "Neon",
+      "size": "16px",
+      "weight": "400",
+      "ls": "normal",
+      "h": 28,
+      "padX": "0px",
+      "color": "rgb(255, 255, 255)",
+      "font": "Inter"
+     },
+     {
+      "text": "Product",
+      "size": "15px",
+      "weight": "400",
+      "ls": "-0.15px",
+      "h": 23,
+      "padX": "14px",
+      "color": "rgb(255, 255, 255)",
+      "font": "Inter"
+     },
+     {
+      "text": "Solutions",
+      "size": "15px",
+      "weight": "400",
+      "ls": "-0.15px",
+      "h": 23,
+      "padX": "14px",
+      "color": "rgb(255, 255, 255)",
+      "font": "Inter"
+     }
+    ],
+    "buttons": [
+     {
+      "text": "What is Neon Built around Lakebase Postgres, by Databricks",
+      "h": 340,
+      "w": 320,
+      "radius": "0px",
+      "bg": "rgb(0, 0, 0)",
+      "color": "rgb(255, 255, 255)",
+      "border": "1px rgb(24, 25, 27)",
+      "size": "16px",
+      "weight": "400"
+     },
+     {
+      "text": "Log in",
+      "h": 36,
+      "w": 77,
+      "radius": "3.35544e+07px",
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(255, 255, 255)",
+      "border": "1px rgb(97, 100, 107)",
+      "size": "14px",
+      "weight": "500"
+     },
+     {
+      "text": "Sign up",
+      "h": 36,
+      "w": 85,
+      "radius": "3.35544e+07px",
+      "bg": "rgb(255, 255, 255)",
+      "color": "rgb(0, 0, 0)",
+      "border": null,
+      "size": "14px",
+      "weight": "500"
+     }
+    ],
+    "pill": null,
+    "logoLeft": 32
+   },
+   "navBottom": 100,
+   "navStrict": {
+    "rect": {
+     "x": 0,
+     "y": 36,
+     "w": 1440,
+     "h": 64,
+     "b": 100
+    },
+    "left": 32,
+    "right": 1408
+   },
+   "h1": {
+    "textW": 873,
+    "text": "The backend for apps and agents, built to scale on Lakebase Postgres.",
+    "chars": 69,
+    "words": 12,
+    "font": "Inter, \"Inter Fallback\"",
+    "size": 56,
+    "weight": "400",
+    "ls": "-2.24px",
+    "lsEm": -0.04,
+    "lh": "63px",
+    "lhRatio": 1.125,
+    "lines": 2,
+    "align": "start",
+    "color": "rgb(255, 255, 255)",
+    "wrap": "balance",
+    "rect": {
+     "x": 32,
+     "y": 518,
+     "w": 1152,
+     "h": 126,
+     "b": 644
+    },
+    "centerX": 608,
+    "endsWithPeriod": true,
+    "titleCaseShare": 0.29,
+    "opsz": "normal",
+    "transform": "none",
+    "gradientText": false
+   },
+   "preH1": [
+    {
+     "text": "NEON IS PART OF THE DATABRICKS PLATFORM",
+     "size": "12px",
+     "top": 485
+    }
+   ],
+   "sub": {
+    "textW": 253,
+    "text": "We use cookies to improve our services. Learn more in our Cookie Policy.",
+    "chars": 72,
+    "size": 14,
+    "weight": "300",
+    "lhRatio": 1.38,
+    "ls": "-0.28px",
+    "color": "rgb(201, 203, 207)",
+    "lines": 2,
+    "rect": {
+     "x": 33,
+     "y": 829,
+     "w": 255,
+     "h": 39,
+     "b": 867
+    },
+    "gapFromH1": 185,
+    "sizeRatioToH1": 0.25,
+    "align": "start"
+   },
+   "ctas": [
+    {
+     "text": "Get started",
+     "kind": "filled",
+     "h": 44,
+     "w": 138,
+     "radius": "3.35544e+07px",
+     "bg": "rgb(255, 255, 255)",
+     "color": "rgb(26, 26, 26)",
+     "border": null,
+     "size": "16px",
+     "weight": "500",
+     "ls": "-0.32px",
+     "padX": "28px",
+     "shadow": null,
+     "y": 676,
+     "x": 32
+    },
+    {
+     "text": "Read the docs",
+     "kind": "outline",
+     "h": 44,
+     "w": 162,
+     "radius": "3.35544e+07px",
+     "bg": "rgba(0, 0, 0, 0)",
+     "color": "rgb(255, 255, 255)",
+     "border": "1px rgb(97, 100, 107)",
+     "size": "16px",
+     "weight": "400",
+     "ls": "-0.32px",
+     "padX": "28px",
+     "shadow": null,
+     "y": 676,
+     "x": 190
+    },
+    {
+     "text": "Opt out",
+     "kind": "outline",
+     "h": 32,
+     "w": 82,
+     "radius": "3.35544e+07px",
+     "bg": "rgba(0, 0, 0, 0)",
+     "color": "rgb(255, 255, 255)",
+     "border": "1px rgb(46, 48, 56)",
+     "size": "14px",
+     "weight": "500",
+     "ls": "-0.28px",
+     "padX": "16px",
+     "shadow": null,
+     "y": 832,
+     "x": 328
+    },
+    {
+     "text": "Accept",
+     "kind": "filled",
+     "h": 32,
+     "w": 78,
+     "radius": "3.35544e+07px",
+     "bg": "rgb(239, 239, 240)",
+     "color": "rgb(26, 26, 26)",
+     "border": null,
+     "size": "14px",
+     "weight": "500",
+     "ls": "-0.28px",
+     "padX": "16px",
+     "shadow": null,
+     "y": 832,
+     "x": 424
+    }
+   ],
+   "bgChain": [
+    {
+     "tag": "body",
+     "bg": "rgb(0, 0, 0)",
+     "bgImage": null,
+     "size": "auto"
+    }
+   ],
+   "htmlBg": "rgba(0, 0, 0, 0)",
+   "bodyBg": "rgb(0, 0, 0)",
+   "colorScheme": "dark",
+   "mediaTop": [
+    {
+     "tag": "img",
+     "rect": {
+      "x": -240,
+      "y": 36,
+      "w": 1920,
+      "h": 832,
+      "b": 868
+     },
+     "foldShare": 0.924,
+     "alt": ""
+    },
+    {
+     "tag": "video",
+     "rect": {
+      "x": -240,
+      "y": 36,
+      "w": 1920,
+      "h": 832,
+      "b": 868
+     },
+     "foldShare": 0.924,
+     "alt": ""
+    }
+   ],
+   "pixels": {
+    "meanLum": 22,
+    "satShare": 5.7,
+    "hues": [
+     {
+      "hue": 120,
+      "share": 1.05
+     },
+     {
+      "hue": 150,
+      "share": 2.89
+     },
+     {
+      "hue": 180,
+      "share": 1.15
+     }
+    ],
+    "rails": []
+   },
+   "url": "neon.tech"
+  },
+  "cursor": {
+   "nav": {
+    "outer": {
+     "x": 0,
+     "y": 0,
+     "w": 1440,
+     "h": 52,
+     "b": 52
+    },
+    "position": "fixed",
+    "bg": "rgb(247, 247, 244)",
+    "backdrop": "none",
+    "borderBottom": "0px rgb(38, 37, 30)",
+    "shadow": null,
+    "nLinks": 10,
+    "linkTexts": [
+     "Skip to content",
+     "Cursor",
+     "Models",
+     "Product",
+     "Enterprise",
+     "Pricing",
+     "Resources",
+     "Sign in",
+     "Contact sales",
+     "Download"
+    ],
+    "links": [
+     {
+      "text": "Skip to content",
+      "size": "14px",
+      "weight": "400",
+      "ls": "normal",
+      "h": 13,
+      "padX": "10.5px",
+      "color": "rgb(247, 247, 244)",
+      "font": "CursorGothic"
+     },
+     {
+      "text": "Cursor",
+      "size": "16px",
+      "weight": "400",
+      "ls": "normal",
+      "h": 24,
+      "padX": "0px",
+      "color": "rgb(38, 37, 30)",
+      "font": "CursorGothic"
+     },
+     {
+      "text": "Models",
+      "size": "14px",
+      "weight": "400",
+      "ls": "normal",
+      "h": 34,
+      "padX": "15px",
+      "color": "rgb(38, 37, 30)",
+      "font": "CursorGothic"
+     }
+    ],
+    "buttons": [
+     {
+      "text": "Pricing",
+      "h": 34,
+      "w": 77,
+      "radius": "0px",
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(38, 37, 30)",
+      "border": "1px rgba(0, 0, 0, 0)",
+      "size": "14px",
+      "weight": "400"
+     },
+     {
+      "text": "Resources",
+      "h": 34,
+      "w": 100,
+      "radius": "0px",
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(38, 37, 30)",
+      "border": "1px rgba(0, 0, 0, 0)",
+      "size": "14px",
+      "weight": "400"
+     },
+     {
+      "text": "Sign in",
+      "h": 31,
+      "w": 54,
+      "radius": "0px",
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(38, 37, 30)",
+      "border": "1px rgba(0, 0, 0, 0)",
+      "size": "14px",
+      "weight": "400"
+     }
+    ],
+    "pill": null,
+    "logoLeft": 67
+   },
+   "navBottom": 52,
+   "navStrict": {
+    "rect": {
+     "x": 70,
+     "y": 0,
+     "w": 1300,
+     "h": 52,
+     "b": 52
+    },
+    "left": 67,
+    "right": 1370
+   },
+   "h1": {
+    "textW": 354,
+    "text": "Cursor is your coding agent for building ambitious software.",
+    "chars": 60,
+    "words": 9,
+    "font": "CursorGothic, \"CursorGothic Fallback\"",
+    "size": 26,
+    "weight": "400",
+    "ls": "-0.325px",
+    "lsEm": -0.0125,
+    "lh": "32.5px",
+    "lhRatio": 1.25,
+    "lines": 2,
+    "align": "left",
+    "color": "rgb(38, 37, 30)",
+    "wrap": "balance",
+    "rect": {
+     "x": 70,
+     "y": 164,
+     "w": 658,
+     "h": 65,
+     "b": 229
+    },
+    "centerX": 399,
+    "endsWithPeriod": true,
+    "titleCaseShare": 0.14,
+    "opsz": "normal",
+    "transform": "none",
+    "gradientText": false
+   },
+   "preH1": [
+    {
+     "text": "Cursor Agent",
+     "size": "12px",
+     "top": 66
+    },
+    {
+     "text": "~/cursor/cursor-web",
+     "size": "12px",
+     "top": 86
+    },
+    {
+     "text": "Bioinformatics Tools",
+     "size": "12px",
+     "top": 114
+    }
+   ],
+   "sub": {
+    "textW": 1506,
+    "text": "This element contains an interactive demo for sighted users showing multiple Cursor interfaces: Cursor Desktop interface",
+    "chars": 209,
+    "size": 16,
+    "weight": "400",
+    "lhRatio": 1.5,
+    "ls": "normal",
+    "color": "rgb(38, 37, 30)",
+    "lines": 1,
+    "rect": {
+     "x": 69,
+     "y": 350,
+     "w": 1,
+     "h": 1,
+     "b": 351
+    },
+    "gapFromH1": 121,
+    "sizeRatioToH1": 0.615,
+    "align": "start"
+   },
+   "ctas": [
+    {
+     "text": "Download for macOS ⤓",
+     "kind": "filled",
+     "h": 43,
+     "w": 216,
+     "radius": "3.35544e+07px",
+     "bg": "rgb(38, 37, 30)",
+     "color": "rgb(247, 247, 244)",
+     "border": "1px rgb(38, 37, 30)",
+     "size": "16px",
+     "weight": "400",
+     "ls": "normal",
+     "padX": "21.6px",
+     "shadow": null,
+     "y": 251,
+     "x": 70
+    },
+    {
+     "text": "Request a demo →",
+     "kind": "filled",
+     "h": 43,
+     "w": 183,
+     "radius": "3.35544e+07px",
+     "bg": "rgb(230, 229, 224)",
+     "color": "rgb(38, 37, 30)",
+     "border": "1px oklab(0.263084 -0.00230259 0.0124794 / 0.025)",
+     "size": "16px",
+     "weight": "400",
+     "ls": "normal",
+     "padX": "21.6px",
+     "shadow": null,
+     "y": 251,
+     "x": 296
+    },
+    {
+     "text": "Plan Mission Control Generatin",
+     "kind": "text",
+     "h": 51,
+     "w": 219,
+     "radius": "0px",
+     "bg": "rgba(0, 0, 0, 0)",
+     "color": "rgb(38, 37, 30)",
+     "border": null,
+     "size": "12px",
+     "weight": "400",
+     "ls": "normal",
+     "padX": "14px",
+     "shadow": null,
+     "y": 456,
+     "x": 180
+    }
+   ],
+   "bgChain": [
+    {
+     "tag": "section.section",
+     "bg": "rgb(247, 247, 244)",
+     "bgImage": null,
+     "size": "auto"
+    },
+    {
+     "tag": "body.bg-theme-bg",
+     "bg": "rgb(247, 247, 244)",
+     "bgImage": null,
+     "size": "auto"
+    }
+   ],
+   "htmlBg": "rgba(0, 0, 0, 0)",
+   "bodyBg": "rgb(247, 247, 244)",
+   "colorScheme": "light",
+   "mediaTop": [
+    {
+     "tag": "img",
+     "rect": {
+      "x": 70,
+      "y": 351,
+      "w": 1300,
+      "h": 720,
+      "b": 1071
+     },
+     "foldShare": 0.551,
+     "alt": ""
+    }
+   ],
+   "frame": {
+    "outerRect": {
+     "x": 180,
+     "y": 401,
+     "w": 1080,
+     "h": 620,
+     "b": 1021
+    },
+    "foldShare": 0.416,
+    "bleedsOffFold": true,
+    "levels": [
+     {
+      "inset": null,
+      "w": 1080,
+      "radius": "10px",
+      "border": null,
+      "shadow": "rgba(0, 0, 0, 0.14) 0px 28px 70px 0px, rgba(0, 0, 0, 0.1) 0px 14px 32px 0px, oklab(0.263084 -0.00230259 0.0124794 / 0.1) 0px 0px 0px 1px",
+      "bg": "rgb(242, 241, 237)",
+      "padding": "0px 0px"
+     }
+    ]
+   },
+   "pixels": {
+    "meanLum": 230,
+    "satShare": 0.1,
+    "hues": [],
+    "rails": []
+   },
+   "url": "cursor.com"
+  },
+  "granola": {
+   "nav": {
+    "outer": {
+     "x": 0,
+     "y": 8,
+     "w": 1440,
+     "h": 56,
+     "b": 64
+    },
+    "position": "fixed",
+    "bg": "rgba(0, 0, 0, 0)",
+    "backdrop": "none",
+    "borderBottom": "0px rgb(227, 227, 227)",
+    "shadow": null,
+    "nLinks": 6,
+    "linkTexts": [
+     "Enterprise",
+     "Pricing",
+     "Blog",
+     "Careers",
+     "Talk to sales",
+     "Download"
+    ],
+    "links": [
+     {
+      "text": "Enterprise",
+      "size": "14px",
+      "weight": "400",
+      "ls": "0.14px",
+      "h": 38,
+      "padX": "12px",
+      "color": "rgb(41, 41, 41)",
+      "font": "melange"
+     },
+     {
+      "text": "Pricing",
+      "size": "14px",
+      "weight": "400",
+      "ls": "0.14px",
+      "h": 38,
+      "padX": "12px",
+      "color": "rgb(41, 41, 41)",
+      "font": "melange"
+     },
+     {
+      "text": "Blog",
+      "size": "14px",
+      "weight": "400",
+      "ls": "0.14px",
+      "h": 38,
+      "padX": "12px",
+      "color": "rgb(41, 41, 41)",
+      "font": "melange"
+     }
+    ],
+    "buttons": [
+     {
+      "text": "Blog",
+      "h": 38,
+      "w": 55,
+      "radius": "3.35544e+07px",
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(41, 41, 41)",
+      "border": "1px rgba(0, 0, 0, 0)",
+      "size": "14px",
+      "weight": "400"
+     },
+     {
+      "text": "Careers",
+      "h": 38,
+      "w": 76,
+      "radius": "3.35544e+07px",
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(41, 41, 41)",
+      "border": "1px rgba(0, 0, 0, 0)",
+      "size": "14px",
+      "weight": "400"
+     },
+     {
+      "text": "Talk to sales",
+      "h": 38,
+      "w": 104,
+      "radius": "3.35544e+07px",
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(41, 41, 41)",
+      "border": "1px rgba(71, 67, 42, 0.2)",
+      "size": "14px",
+      "weight": "400"
+     }
+    ],
+    "pill": {
+     "rect": {
+      "x": 112,
+      "y": 8,
+      "w": 1217,
+      "h": 56,
+      "b": 64
+     },
+     "radius": "9999px",
+     "bg": "rgba(0, 0, 0, 0)",
+     "border": "1px rgba(0, 0, 0, 0)",
+     "shadow": null,
+     "backdrop": "none"
+    },
+    "logoLeft": 121
+   },
+   "navBottom": 64,
+   "navStrict": {
+    "rect": {
+     "x": 121,
+     "y": 8,
+     "w": 1199,
+     "h": 56,
+     "b": 64
+    },
+    "left": 121,
+    "right": 1320
+   },
+   "h1": {
+    "textW": 518,
+    "text": "The AI notepad for back-to-back meetings",
+    "chars": 40,
+    "words": 6,
+    "font": "quadrant, \"quadrant Fallback\"",
+    "size": 86.4,
+    "weight": "400",
+    "ls": "-1.728px",
+    "lsEm": -0.02,
+    "lh": "80.352px",
+    "lhRatio": 0.93,
+    "lines": 4,
+    "align": "start",
+    "color": "rgb(41, 41, 41)",
+    "wrap": "balance",
+    "rect": {
+     "x": 120,
+     "y": 269,
+     "w": 562,
+     "h": 321,
+     "b": 591
+    },
+    "centerX": 401,
+    "endsWithPeriod": false,
+    "titleCaseShare": 0,
+    "opsz": "normal",
+    "transform": "none",
+    "gradientText": false
+   },
+   "preH1": [
+    {
+     "text": "New",
+     "size": "12px",
+     "top": 211
+    },
+    {
+     "text": "Granola for Apple Watch",
+     "size": "13px",
+     "top": 213
+    },
+    {
+     "text": "Q3 GTM sync",
+     "size": "20px",
+     "top": 172
+    }
+   ],
+   "sub": {
+    "textW": 248,
+    "text": "Notes, actions and memory.",
+    "chars": 26,
+    "size": 20,
+    "weight": "400",
+    "lhRatio": 1.4,
+    "ls": "normal",
+    "color": "rgb(14, 15, 12)",
+    "lines": 1,
+    "rect": {
+     "x": 120,
+     "y": 623,
+     "w": 248,
+     "h": 28,
+     "b": 651
+    },
+    "gapFromH1": 32,
+    "sizeRatioToH1": 0.231,
+    "align": "start"
+   },
+   "ctas": [
+    {
+     "text": "Download for free",
+     "kind": "filled",
+     "h": 56,
+     "w": 199,
+     "radius": "3.35544e+07px",
+     "bg": "rgb(91, 111, 0)",
+     "color": "rgb(252, 252, 248)",
+     "border": null,
+     "size": "16px",
+     "weight": "430",
+     "ls": "0.16px",
+     "padX": "24px",
+     "shadow": null,
+     "y": 711,
+     "x": 120
+    }
+   ],
+   "bgChain": [
+    {
+     "tag": "div.min-h-svh",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": null,
+     "size": "auto"
+    },
+    {
+     "tag": "body.antialiased",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": null,
+     "size": "auto"
+    }
+   ],
+   "htmlBg": "rgba(0, 0, 0, 0)",
+   "bodyBg": "rgb(255, 255, 255)",
+   "colorScheme": "normal",
+   "mediaTop": [
+    {
+     "tag": "img",
+     "rect": {
+      "x": 978,
+      "y": 92,
+      "w": 530,
+      "h": 662,
+      "b": 755
+     },
+     "foldShare": 0.236,
+     "alt": ""
+    },
+    {
+     "tag": "img",
+     "rect": {
+      "x": 992,
+      "y": 228,
+      "w": 461,
+      "h": 819,
+      "b": 1047
+     },
+     "foldShare": 0.232,
+     "alt": ""
+    },
+    {
+     "tag": "img",
+     "rect": {
+      "x": 795,
+      "y": 187,
+      "w": 378,
+      "h": 687,
+      "b": 874
+     },
+     "foldShare": 0.2,
+     "alt": ""
+    }
+   ],
+   "pixels": {
+    "meanLum": 134,
+    "satShare": 1.8,
+    "hues": [
+     {
+      "hue": 60,
+      "share": 0.86
+     }
+    ],
+    "rails": []
+   },
+   "url": "granola.ai"
+  },
+  "plain": {
+   "navBottom": 0,
+   "navStrict": {
+    "rect": {
+     "x": 442,
+     "y": 55,
+     "w": 449,
+     "h": 40,
+     "b": 95
+    },
+    "left": 442,
+    "right": 892
+   },
+   "h1": {
+    "textW": 485,
+    "text": "Build support your own way",
+    "chars": 26,
+    "words": 5,
+    "font": "\"ABC Favorit Regular\", \"ABC Favorit Regular Placeholder\"",
+    "size": 80,
+    "weight": "400",
+    "ls": "-1.6px",
+    "lsEm": -0.02,
+    "lh": "80px",
+    "lhRatio": 1,
+    "lines": 2,
+    "align": "center",
+    "color": "rgb(26, 211, 121)",
+    "wrap": "balance",
+    "rect": {
+     "x": 408,
+     "y": 250,
+     "w": 624,
+     "h": 160,
+     "b": 410
+    },
+    "centerX": 720,
+    "endsWithPeriod": false,
+    "titleCaseShare": 0.33,
+    "opsz": "normal",
+    "transform": "none",
+    "gradientText": false
+   },
+   "preH1": [
+    {
+     "text": "TRY ARI",
+     "size": "13px",
+     "top": 11
+    },
+    {
+     "text": "Autonomous support, where your customers already are",
+     "size": "15px",
+     "top": 10
+    },
+    {
+     "text": "Product",
+     "size": "15px",
+     "top": 65
+    }
+   ],
+   "sub": {
+    "textW": 529,
+    "text": "Plain is AI support infrastructure that enables B2B teams to build anything – no-code or all-code.",
+    "chars": 98,
+    "size": 24,
+    "weight": "400",
+    "lhRatio": 1.17,
+    "ls": "-0.48px",
+    "color": "rgb(0, 0, 0)",
+    "lines": 2,
+    "rect": {
+     "x": 370,
+     "y": 434,
+     "w": 700,
+     "h": 56,
+     "b": 490
+    },
+    "gapFromH1": 24,
+    "sizeRatioToH1": 0.3,
+    "align": "center"
+   },
+   "ctas": [
+    {
+     "text": "Schedule Demo",
+     "kind": "filled",
+     "h": 43,
+     "w": 154,
+     "radius": "6px",
+     "bg": "rgb(74, 222, 128)",
+     "color": "rgb(255, 255, 255)",
+     "border": null,
+     "size": "15px",
+     "weight": "600",
+     "ls": "normal",
+     "padX": "20px",
+     "shadow": null,
+     "y": 546,
+     "x": 765
+    }
+   ],
+   "bgChain": [
+    {
+     "tag": "div.framer-OIhfy",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": null,
+     "size": "auto"
+    },
+    {
+     "tag": "div.framer-67H9P",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": null,
+     "size": "auto"
+    },
+    {
+     "tag": "body",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": null,
+     "size": "auto"
+    }
+   ],
+   "htmlBg": "rgba(0, 0, 0, 0)",
+   "bodyBg": "rgb(255, 255, 255)",
+   "colorScheme": "normal",
+   "mediaTop": [
+    {
+     "tag": "img",
+     "rect": {
+      "x": 108,
+      "y": 647,
+      "w": 1224,
+      "h": 677,
+      "b": 1324
+     },
+     "foldShare": 0.239,
+     "alt": ""
+    },
+    {
+     "tag": "svg",
+     "rect": {
+      "x": 155,
+      "y": 693,
+      "w": 1130,
+      "h": 686,
+      "b": 1379
+     },
+     "foldShare": 0.18,
+     "alt": ""
+    },
+    {
+     "tag": "svg",
+     "rect": {
+      "x": -164,
+      "y": -160,
+      "w": 353,
+      "h": 486,
+      "b": 326
+     },
+     "foldShare": 0.047,
+     "alt": ""
+    }
+   ],
+   "frame": {
+    "outerRect": {
+     "x": 120,
+     "y": 660,
+     "w": 1200,
+     "h": 651,
+     "b": 1311
+    },
+    "foldShare": 0.222,
+    "bleedsOffFold": true,
+    "levels": [
+     {
+      "inset": null,
+      "w": 1200,
+      "radius": "12px",
+      "border": null,
+      "shadow": null,
+      "bg": "rgb(243, 251, 233)",
+      "padding": "0px 0px"
+     }
+    ]
+   },
+   "pixels": {
+    "meanLum": 237,
+    "satShare": 1.7,
+    "hues": [
+     {
+      "hue": 150,
+      "share": 1.16
+     }
+    ],
+    "rails": []
+   },
+   "url": "plain.com"
+  },
+  "commslayer": {
+   "nav": {
+    "outer": {
+     "x": 0,
+     "y": 0,
+     "w": 1440,
+     "h": 84,
+     "b": 84
+    },
+    "position": "fixed",
+    "bg": "rgba(0, 0, 0, 0)",
+    "backdrop": "none",
+    "borderBottom": "0px rgba(0, 0, 0, 0.075)",
+    "shadow": null,
+    "nLinks": 8,
+    "linkTexts": [
+     "Product",
+     "Compare",
+     "Pricing",
+     "Migration",
+     "Resources",
+     "Login",
+     "Book a demo",
+     "Start free"
+    ],
+    "links": [
+     {
+      "text": "Product",
+      "size": "14px",
+      "weight": "450",
+      "ls": "normal",
+      "h": 28,
+      "padX": "12px",
+      "color": "oklch(0.204627 0 0)",
+      "font": "\"Geist Sans\""
+     },
+     {
+      "text": "Compare",
+      "size": "14px",
+      "weight": "450",
+      "ls": "normal",
+      "h": 28,
+      "padX": "12px",
+      "color": "oklch(0.204627 0 0)",
+      "font": "\"Geist Sans\""
+     },
+     {
+      "text": "Pricing",
+      "size": "14px",
+      "weight": "450",
+      "ls": "normal",
+      "h": 28,
+      "padX": "12px",
+      "color": "oklch(0.204627 0 0)",
+      "font": "\"Geist Sans\""
+     }
+    ],
+    "buttons": [
+     {
+      "text": "Book a demo",
+      "h": 36,
+      "w": 136,
+      "radius": "3.35544e+07px",
+      "bg": "rgb(255, 255, 255)",
+      "color": "oklch(0.301184 0 0)",
+      "border": "1px rgba(0, 0, 0, 0.1)",
+      "size": "14px",
+      "weight": "400"
+     },
+     {
+      "text": "Start free",
+      "h": 36,
+      "w": 93,
+      "radius": "3.35544e+07px",
+      "bg": "oklch(0.204627 0 0)",
+      "color": "oklch(0.985104 0 0)",
+      "border": null,
+      "size": "14px",
+      "weight": "400"
+     }
+    ],
+    "pill": {
+     "rect": {
+      "x": 20,
+      "y": 20,
+      "w": 1400,
+      "h": 48,
+      "b": 68
+     },
+     "radius": "16px",
+     "bg": "rgb(255, 255, 255)",
+     "border": "0px rgba(0, 0, 0, 0.075)",
+     "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0",
+     "backdrop": "none"
+    },
+    "logoLeft": 36
+   },
+   "navBottom": 68,
+   "navStrict": {
+    "rect": {
+     "x": 20,
+     "y": 20,
+     "w": 1400,
+     "h": 48,
+     "b": 68
+    },
+    "left": 36,
+    "right": 1412
+   },
+   "h1": {
+    "textW": 496,
+    "text": "Cheaper than Gorgias. AI agent included.",
+    "chars": 40,
+    "words": 6,
+    "font": "\"Stack Sans Headline Variable\", \"Geist Sans\"",
+    "size": 48,
+    "weight": "400",
+    "ls": "normal",
+    "lsEm": 0,
+    "lh": "48px",
+    "lhRatio": 1,
+    "lines": 2,
+    "align": "center",
+    "color": "rgb(255, 255, 255)",
+    "wrap": "wrap",
+    "rect": {
+     "x": 472,
+     "y": 168,
+     "w": 496,
+     "h": 96,
+     "b": 264
+    },
+    "centerX": 720,
+    "endsWithPeriod": true,
+    "titleCaseShare": 0.4,
+    "opsz": "normal",
+    "transform": "none",
+    "gradientText": false
+   },
+   "preH1": [],
+   "sub": {
+    "textW": 725,
+    "text": "The helpdesk for Shopify brands. All the tools to automate your support, built in.",
+    "chars": 82,
+    "size": 20,
+    "weight": "400",
+    "lhRatio": 1.4,
+    "ls": "normal",
+    "color": "rgb(154, 161, 180)",
+    "lines": 1,
+    "rect": {
+     "x": 357,
+     "y": 296,
+     "w": 725,
+     "h": 28,
+     "b": 324
+    },
+    "gapFromH1": 32,
+    "sizeRatioToH1": 0.417,
+    "align": "center"
+   },
+   "ctas": [
+    {
+     "text": "Start free",
+     "kind": "filled",
+     "h": 44,
+     "w": 93,
+     "radius": "3.35544e+07px",
+     "bg": "rgb(255, 255, 255)",
+     "color": "oklch(0.204627 0 0)",
+     "border": null,
+     "size": "14px",
+     "weight": "400",
+     "ls": "normal",
+     "padX": "16px",
+     "shadow": null,
+     "y": 356,
+     "x": 553
+    },
+    {
+     "text": "Want to talk? Book a demo",
+     "kind": "outline",
+     "h": 44,
+     "w": 234,
+     "radius": "3.35544e+07px",
+     "bg": "rgba(0, 0, 0, 0)",
+     "color": "oklch(0.985104 0 0)",
+     "border": "1px rgb(30, 36, 48)",
+     "size": "14px",
+     "weight": "400",
+     "ls": "normal",
+     "padX": "4px",
+     "shadow": null,
+     "y": 356,
+     "x": 653
+    },
+    {
+     "text": "Helpdesk",
+     "kind": "filled",
+     "h": 32,
+     "w": 122,
+     "radius": "12px",
+     "bg": "rgb(255, 255, 255)",
+     "color": "oklch(0.204627 0 0)",
+     "border": null,
+     "size": "16px",
+     "weight": "400",
+     "ls": "normal",
+     "padX": "8px",
+     "shadow": null,
+     "y": 524,
+     "x": 351
+    },
+    {
+     "text": "AI agent",
+     "kind": "text",
+     "h": 32,
+     "w": 113,
+     "radius": "12px",
+     "bg": "rgba(255, 255, 255, 0.07)",
+     "color": "oklch(0.854514 0 0)",
+     "border": null,
+     "size": "16px",
+     "weight": "400",
+     "ls": "normal",
+     "padX": "8px",
+     "shadow": null,
+     "y": 524,
+     "x": 480
+    },
+    {
+     "text": "Voice",
+     "kind": "text",
+     "h": 32,
+     "w": 92,
+     "radius": "12px",
+     "bg": "rgba(255, 255, 255, 0.07)",
+     "color": "oklch(0.854514 0 0)",
+     "border": null,
+     "size": "16px",
+     "weight": "400",
+     "ls": "normal",
+     "padX": "8px",
+     "shadow": null,
+     "y": 524,
+     "x": 601
+    },
+    {
+     "text": "Customer portal",
+     "kind": "text",
+     "h": 32,
+     "w": 170,
+     "radius": "12px",
+     "bg": "rgba(255, 255, 255, 0.07)",
+     "color": "oklch(0.854514 0 0)",
+     "border": null,
+     "size": "16px",
+     "weight": "400",
+     "ls": "normal",
+     "padX": "8px",
+     "shadow": null,
+     "y": 524,
+     "x": 701
+    }
+   ],
+   "bgChain": [
+    {
+     "tag": "div.hero-card",
+     "bg": "rgb(8, 9, 12)",
+     "bgImage": "radial-gradient(180% 36% at 50% 2%, oklab(0.263032 -0.0017791 -0.0342032) 0%, rgb(14, 16, 23) 40%, rgb(8, 9, 12) 100%)",
+     "size": "auto"
+    },
+    {
+     "tag": "body.bg-surface-secondary",
+     "bg": "rgb(250, 250, 250)",
+     "bgImage": null,
+     "size": "auto"
+    }
+   ],
+   "htmlBg": "rgba(0, 0, 0, 0)",
+   "bodyBg": "rgb(250, 250, 250)",
+   "colorScheme": "light",
+   "mediaTop": [],
+   "frame": {
+    "outerRect": {
+     "x": 8,
+     "y": 8,
+     "w": 1424,
+     "h": 788,
+     "b": 796
+    },
+    "foldShare": 0.866,
+    "bleedsOffFold": false,
+    "levels": [
+     {
+      "inset": null,
+      "w": 1424,
+      "radius": "24px",
+      "border": null,
+      "shadow": null,
+      "bg": "rgb(8, 9, 12)",
+      "padding": "0px 0px"
+     }
+    ]
+   },
+   "pixels": {
+    "meanLum": 112,
+    "satShare": 1.2,
+    "hues": [],
+    "rails": []
+   },
+   "url": "commslayer.com"
+  },
+  "alignui": {
+   "nav": {
+    "outer": {
+     "x": 245,
+     "y": 72,
+     "w": 950,
+     "h": 72,
+     "b": 144
+    },
+    "position": "relative",
+    "bg": "rgb(255, 255, 255)",
+    "backdrop": "none",
+    "borderBottom": "0px rgb(235, 235, 235)",
+    "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(41, 41, 41, 0.04)",
+    "nLinks": 6,
+    "linkTexts": [
+     "v1.2",
+     "Products",
+     "Docs",
+     "Roadmap",
+     "Resources",
+     "Quick search..."
+    ],
+    "links": [
+     {
+      "text": "v1.2",
+      "size": "12px",
+      "weight": "500",
+      "ls": "normal",
+      "h": 24,
+      "padX": "8px",
+      "color": "rgb(112, 112, 112)",
+      "font": "__interVar_fb658c"
+     },
+     {
+      "text": "Products",
+      "size": "14px",
+      "weight": "500",
+      "ls": "-0.084px",
+      "h": 20,
+      "padX": "0px",
+      "color": "rgb(112, 112, 112)",
+      "font": "__interVar_fb658c"
+     },
+     {
+      "text": "Docs",
+      "size": "14px",
+      "weight": "500",
+      "ls": "-0.084px",
+      "h": 20,
+      "padX": "0px",
+      "color": "rgb(112, 112, 112)",
+      "font": "__interVar_fb658c"
+     }
+    ],
+    "buttons": [
+     {
+      "text": "Quick search...",
+      "h": 32,
+      "w": 290,
+      "radius": "9px",
+      "bg": "rgb(247, 247, 247)",
+      "color": "rgb(46, 46, 46)",
+      "border": null,
+      "size": "16px",
+      "weight": "400"
+     },
+     {
+      "text": "",
+      "h": 32,
+      "w": 32,
+      "radius": "9px",
+      "bg": "rgb(255, 255, 255)",
+      "color": "rgb(184, 184, 184)",
+      "border": null,
+      "size": "16px",
+      "weight": "400"
+     },
+     {
+      "text": "",
+      "h": 32,
+      "w": 32,
+      "radius": "9px",
+      "bg": "rgb(255, 255, 255)",
+      "color": "rgb(184, 184, 184)",
+      "border": null,
+      "size": "16px",
+      "weight": "400"
+     }
+    ],
+    "pill": null,
+    "logoLeft": 263
+   },
+   "navBottom": 144,
+   "navStrict": {
+    "rect": {
+     "x": 245,
+     "y": 72,
+     "w": 950,
+     "h": 72,
+     "b": 144
+    },
+    "left": 263,
+    "right": 1177
+   },
+   "h1": {
+    "textW": 634,
+    "text": "Founder & Startup| perfectly aligned",
+    "chars": 36,
+    "words": 5,
+    "font": "__interVar_fb658c, __interVar_Fallback_fb658c",
+    "size": 80,
+    "weight": "550",
+    "ls": "-2.8px",
+    "lsEm": -0.035,
+    "lh": "88px",
+    "lhRatio": 1.1,
+    "lines": 2,
+    "align": "center",
+    "color": "rgb(46, 46, 46)",
+    "wrap": "wrap",
+    "rect": {
+     "x": 403,
+     "y": 324,
+     "w": 634,
+     "h": 176,
+     "b": 500
+    },
+    "centerX": 720,
+    "endsWithPeriod": false,
+    "titleCaseShare": 0.5,
+    "opsz": "normal",
+    "transform": "none",
+    "gradientText": false
+   },
+   "preH1": [
+    {
+     "text": "100",
+     "size": "11px",
+     "top": 240
+    },
+    {
+     "text": "100",
+     "size": "11px",
+     "top": 240
+    },
+    {
+     "text": "Up-to-date Figma file synced with code library!",
+     "size": "14px",
+     "top": 156
+    }
+   ],
+   "sub": {
+    "textW": 589,
+    "text": "Flexible components, consistent UI, quick development, easy integration.",
+    "chars": 72,
+    "size": 18,
+    "weight": "400",
+    "lhRatio": 1.56,
+    "ls": "-0.27px",
+    "color": "rgb(82, 82, 82)",
+    "lines": 1,
+    "rect": {
+     "x": 426,
+     "y": 524,
+     "w": 589,
+     "h": 28,
+     "b": 552
+    },
+    "gapFromH1": 24,
+    "sizeRatioToH1": 0.225,
+    "align": "center"
+   },
+   "ctas": [
+    {
+     "text": "Get Started - It’s free",
+     "kind": "filled",
+     "h": 44,
+     "w": 196,
+     "radius": "13px",
+     "bg": "rgb(46, 46, 46)",
+     "color": "rgb(255, 255, 255)",
+     "border": null,
+     "size": "14px",
+     "weight": "500",
+     "ls": "-0.084px",
+     "padX": "18px",
+     "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(31, 31, 31, 0.01) 0px 16px 8px 0px, rgba(31, 31, 31, 0.04) 0px 12px",
+     "y": 636,
+     "x": 622
+    }
+   ],
+   "bgChain": [
+    {
+     "tag": "div.relative",
+     "bg": "rgb(247, 247, 247)",
+     "bgImage": null,
+     "size": "auto"
+    }
+   ],
+   "htmlBg": "rgba(0, 0, 0, 0)",
+   "bodyBg": "rgba(0, 0, 0, 0)",
+   "colorScheme": "light",
+   "mediaTop": [],
+   "pixels": {
+    "meanLum": 230,
+    "satShare": 0.3,
+    "hues": [],
+    "rails": [
+     112,
+     1328
+    ]
+   },
+   "url": "alignui.com"
+  },
+  "untitledui": {
+   "nav": {
+    "outer": {
+     "x": 0,
+     "y": 0,
+     "w": 1440,
+     "h": 56,
+     "b": 56
+    },
+    "position": "fixed",
+    "bg": "rgba(0, 0, 0, 0)",
+    "backdrop": "none",
+    "borderBottom": "0px rgb(82, 82, 82)",
+    "shadow": null,
+    "nLinks": 5,
+    "linkTexts": [
+     "Pricing",
+     "FAQs",
+     "Sign in",
+     "Preview in Figma",
+     "Buy now"
+    ],
+    "links": [
+     {
+      "text": "Pricing",
+      "size": "16px",
+      "weight": "600",
+      "ls": "normal",
+      "h": 56,
+      "padX": "8px",
+      "color": "rgb(23, 23, 23)",
+      "font": "Inter"
+     },
+     {
+      "text": "FAQs",
+      "size": "16px",
+      "weight": "600",
+      "ls": "normal",
+      "h": 56,
+      "padX": "8px",
+      "color": "rgb(23, 23, 23)",
+      "font": "Inter"
+     },
+     {
+      "text": "Sign in",
+      "size": "14px",
+      "weight": "600",
+      "ls": "normal",
+      "h": 39,
+      "padX": "14px",
+      "color": "rgb(64, 64, 64)",
+      "font": "Inter"
+     }
+    ],
+    "buttons": [
+     {
+      "text": "Sign in",
+      "h": 39,
+      "w": 76,
+      "radius": "8px",
+      "bg": "rgb(255, 255, 255)",
+      "color": "rgb(64, 64, 64)",
+      "border": "1px rgb(212, 212, 212)",
+      "size": "14px",
+      "weight": "600"
+     },
+     {
+      "text": "Preview in Figma",
+      "h": 39,
+      "w": 169,
+      "radius": "8px",
+      "bg": "rgb(255, 255, 255)",
+      "color": "rgb(64, 64, 64)",
+      "border": "1px rgb(212, 212, 212)",
+      "size": "14px",
+      "weight": "600"
+     },
+     {
+      "text": "Buy now",
+      "h": 39,
+      "w": 88,
+      "radius": "8px",
+      "bg": "rgb(127, 86, 217)",
+      "color": "rgb(255, 255, 255)",
+      "border": "1px rgb(127, 86, 217)",
+      "size": "14px",
+      "weight": "600"
+     }
+    ],
+    "pill": null,
+    "logoLeft": 36
+   },
+   "navBottom": 56,
+   "navStrict": {
+    "rect": {
+     "x": 36,
+     "y": 0,
+     "w": 445,
+     "h": 56,
+     "b": 56
+    },
+    "left": 36,
+    "right": 481
+   },
+   "h1": {
+    "textW": 589,
+    "text": "The ultimate Figma UI kit and React component library",
+    "chars": 53,
+    "words": 9,
+    "font": "Inter, sans-serif",
+    "size": 44,
+    "weight": "600",
+    "ls": "-0.88px",
+    "lsEm": -0.02,
+    "lh": "55px",
+    "lhRatio": 1.25,
+    "lines": 2,
+    "align": "start",
+    "color": "rgb(23, 23, 23)",
+    "wrap": "balance",
+    "rect": {
+     "x": 36,
+     "y": 452,
+     "w": 634,
+     "h": 110,
+     "b": 562
+    },
+    "centerX": 353,
+    "endsWithPeriod": false,
+    "titleCaseShare": 0.4,
+    "opsz": "normal",
+    "transform": "none",
+    "gradientText": false
+   },
+   "preH1": [],
+   "sub": {
+    "textW": 631,
+    "text": "Untitled UI is the world's largest Figma UI kit and React component library. Kickstart any project with everything you n",
+    "chars": 151,
+    "size": 18,
+    "weight": "400",
+    "lhRatio": 1.5,
+    "ls": "normal",
+    "color": "rgb(82, 82, 82)",
+    "lines": 3,
+    "rect": {
+     "x": 36,
+     "y": 578,
+     "w": 634,
+     "h": 81,
+     "b": 659
+    },
+    "gapFromH1": 16,
+    "sizeRatioToH1": 0.409,
+    "align": "start"
+   },
+   "ctas": [
+    {
+     "text": "Untitled UI React",
+     "kind": "filled",
+     "h": 46,
+     "w": 193,
+     "radius": "8px",
+     "bg": "rgb(255, 255, 255)",
+     "color": "rgb(64, 64, 64)",
+     "border": "1px rgb(212, 212, 212)",
+     "size": "16px",
+     "weight": "600",
+     "ls": "normal",
+     "padX": "16px",
+     "shadow": "rgba(0, 0, 0, 0.05) 0px -2px 0px 0px inset, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px",
+     "y": 765,
+     "x": 36
+    },
+    {
+     "text": "Untitled UI Figma",
+     "kind": "filled",
+     "h": 46,
+     "w": 190,
+     "radius": "8px",
+     "bg": "rgb(255, 255, 255)",
+     "color": "rgb(64, 64, 64)",
+     "border": "1px rgb(212, 212, 212)",
+     "size": "16px",
+     "weight": "600",
+     "ls": "normal",
+     "padX": "16px",
+     "shadow": "rgba(0, 0, 0, 0.05) 0px -2px 0px 0px inset, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px",
+     "y": 765,
+     "x": 241
+    },
+    {
+     "text": "Buy now",
+     "kind": "filled",
+     "h": 46,
+     "w": 101,
+     "radius": "8px",
+     "bg": "rgb(127, 86, 217)",
+     "color": "rgb(255, 255, 255)",
+     "border": "1px rgb(127, 86, 217)",
+     "size": "16px",
+     "weight": "600",
+     "ls": "normal",
+     "padX": "16px",
+     "shadow": "rgba(255, 255, 255, 0.12) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px",
+     "y": 765,
+     "x": 443
+    }
+   ],
+   "bgChain": [
+    {
+     "tag": "header.heroheader_content-w",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": null,
+     "size": "auto"
+    },
+    {
+     "tag": "body",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": null,
+     "size": "auto"
+    }
+   ],
+   "htmlBg": "rgba(0, 0, 0, 0)",
+   "bodyBg": "rgb(255, 255, 255)",
+   "colorScheme": "normal",
+   "mediaTop": [
+    {
+     "tag": "img",
+     "rect": {
+      "x": 914,
+      "y": 435,
+      "w": 390,
+      "h": 343,
+      "b": 778
+     },
+     "foldShare": 0.103,
+     "alt": "Figma UI mockup"
+    },
+    {
+     "tag": "img",
+     "rect": {
+      "x": 671,
+      "y": 320,
+      "w": 350,
+      "h": 295,
+      "b": 616
+     },
+     "foldShare": 0.08,
+     "alt": "Figma UI mockup"
+    },
+    {
+     "tag": "img",
+     "rect": {
+      "x": 408,
+      "y": 247,
+      "w": 341,
+      "h": 300,
+      "b": 547
+     },
+     "foldShare": 0.079,
+     "alt": "Figma UI mockup"
+    }
+   ],
+   "pixels": {
+    "meanLum": 236,
+    "satShare": 1.8,
+    "hues": [],
+    "rails": []
+   },
+   "url": "untitledui.com"
+  },
+  "mintlify": {
+   "nav": {
+    "outer": {
+     "x": 0,
+     "y": 0,
+     "w": 1425,
+     "h": 65,
+     "b": 65
+    },
+    "position": "sticky",
+    "bg": "lab(100 0 0)",
+    "backdrop": "none",
+    "borderBottom": "1px rgb(241, 240, 238)",
+    "shadow": null,
+    "nLinks": 6,
+    "linkTexts": [
+     "Products",
+     "Solutions",
+     "Resources",
+     "Pricing",
+     "Sign in",
+     "Contact sales"
+    ],
+    "links": [
+     {
+      "text": "Products",
+      "size": "14px",
+      "weight": "500",
+      "ls": "normal",
+      "h": 64,
+      "padX": "10px",
+      "color": "lab(2.42579 -0.165291 -0.470081)",
+      "font": "inter"
+     },
+     {
+      "text": "Solutions",
+      "size": "14px",
+      "weight": "500",
+      "ls": "normal",
+      "h": 64,
+      "padX": "10px",
+      "color": "lab(2.42579 -0.165291 -0.470081)",
+      "font": "inter"
+     },
+     {
+      "text": "Resources",
+      "size": "14px",
+      "weight": "500",
+      "ls": "normal",
+      "h": 64,
+      "padX": "10px",
+      "color": "lab(2.42579 -0.165291 -0.470081)",
+      "font": "inter"
+     }
+    ],
+    "buttons": [
+     {
+      "text": "Sign in",
+      "h": 34,
+      "w": 75,
+      "radius": "4px",
+      "bg": "lab(100 0 0)",
+      "color": "lab(2.42579 -0.165291 -0.470081)",
+      "border": "1px lab(2.42579 -0.165291 -0.470081 / 0.07)",
+      "size": "14px",
+      "weight": "500"
+     },
+     {
+      "text": "Contact sales",
+      "h": 34,
+      "w": 121,
+      "radius": "4px",
+      "bg": "lab(2.42579 -0.165291 -0.470081)",
+      "color": "lab(100 0 0)",
+      "border": "1px rgba(0, 0, 0, 0)",
+      "size": "14px",
+      "weight": "500"
+     }
+    ],
+    "pill": null,
+    "logoLeft": 169
+   },
+   "navBottom": 65,
+   "navStrict": {
+    "rect": {
+     "x": 169,
+     "y": 0,
+     "w": 1088,
+     "h": 64,
+     "b": 64
+    },
+    "left": 169,
+    "right": 1257
+   },
+   "h1": {
+    "textW": 303,
+    "text": "The intelligent documentation platform",
+    "chars": 38,
+    "words": 4,
+    "font": "arizonaFlare, \"arizonaFlare Fallback\"",
+    "size": 50,
+    "weight": "400",
+    "ls": "-2px",
+    "lsEm": -0.04,
+    "lh": "52px",
+    "lhRatio": 1.04,
+    "lines": 3,
+    "align": "start",
+    "color": "lab(2.42579 -0.165291 -0.470081)",
+    "wrap": "balance",
+    "rect": {
+     "x": 169,
+     "y": 195,
+     "w": 352,
+     "h": 156,
+     "b": 351
+    },
+    "centerX": 345,
+    "endsWithPeriod": false,
+    "titleCaseShare": 0,
+    "opsz": "normal",
+    "transform": "none",
+    "gradientText": false
+   },
+   "preH1": [
+    {
+     "text": "Agent traffic",
+     "size": "12px",
+     "top": 154
+    },
+    {
+     "text": "77.9674",
+     "size": "12px",
+     "top": 162
+    }
+   ],
+   "sub": {
+    "textW": 352,
+    "text": "Self-updating documentation for startups, enterprises, and agents.",
+    "chars": 66,
+    "size": 18,
+    "weight": "400",
+    "lhRatio": 1.33,
+    "ls": "normal",
+    "color": "lab(2.42579 -0.165291 -0.470081 / 0.6)",
+    "lines": 2,
+    "rect": {
+     "x": 169,
+     "y": 367,
+     "w": 352,
+     "h": 48,
+     "b": 415
+    },
+    "gapFromH1": 16,
+    "sizeRatioToH1": 0.36,
+    "align": "start"
+   },
+   "ctas": [
+    {
+     "text": "Get started",
+     "kind": "filled",
+     "h": 42,
+     "w": 125,
+     "radius": "4px",
+     "bg": "lab(2.42579 -0.165291 -0.470081)",
+     "color": "lab(100 0 0)",
+     "border": "1px rgba(0, 0, 0, 0)",
+     "size": "14px",
+     "weight": "500",
+     "ls": "normal",
+     "padX": "16px",
+     "shadow": null,
+     "y": 447,
+     "x": 169
+    },
+    {
+     "text": "Sign up with Google",
+     "kind": "filled",
+     "h": 42,
+     "w": 186,
+     "radius": "4px",
+     "bg": "lab(100 0 0)",
+     "color": "lab(2.42579 -0.165291 -0.470081)",
+     "border": "1px lab(2.42579 -0.165291 -0.470081 / 0.07)",
+     "size": "14px",
+     "weight": "500",
+     "ls": "normal",
+     "padX": "12px",
+     "shadow": null,
+     "y": 447,
+     "x": 301
+    }
+   ],
+   "bgChain": [
+    {
+     "tag": "section.relative",
+     "bg": "lab(100 0 0)",
+     "bgImage": null,
+     "size": "auto"
+    },
+    {
+     "tag": "body.geist_mono_1bf8cbf6-",
+     "bg": "lab(100 0 0)",
+     "bgImage": null,
+     "size": "auto"
+    }
+   ],
+   "htmlBg": "rgba(0, 0, 0, 0)",
+   "bodyBg": "lab(100 0 0)",
+   "colorScheme": "light",
+   "mediaTop": [
+    {
+     "tag": "canvas",
+     "rect": {
+      "x": 0,
+      "y": 65,
+      "w": 1425,
+      "h": 992,
+      "b": 1057
+     },
+     "foldShare": 0.918,
+     "alt": ""
+    },
+    {
+     "tag": "img",
+     "rect": {
+      "x": 584,
+      "y": 416,
+      "w": 1055,
+      "h": 641,
+      "b": 1057
+     },
+     "foldShare": 0.32,
+     "alt": ""
+    }
+   ],
+   "frame": {
+    "outerRect": {
+     "x": 583,
+     "y": 415,
+     "w": 1057,
+     "h": 642,
+     "b": 1057
+    },
+    "foldShare": 0.321,
+    "bleedsOffFold": true,
+    "levels": [
+     {
+      "inset": null,
+      "w": 1057,
+      "radius": "23.4654px",
+      "border": "1px rgba(31, 167, 122, 0.08)",
+      "shadow": null,
+      "bg": "rgba(0, 0, 0, 0)",
+      "padding": "0px 0px"
+     }
+    ]
+   },
+   "pixels": {
+    "meanLum": 246,
+    "satShare": 0.3,
+    "hues": [],
+    "rails": []
+   },
+   "url": "mintlify.com"
+  },
+  "browserbase": {
+   "h1Fallback": true,
+   "nav": {
+    "outer": {
+     "x": 0,
+     "y": 0,
+     "w": 1440,
+     "h": 52,
+     "b": 52
+    },
+    "position": "sticky",
+    "bg": "rgb(255, 255, 255)",
+    "backdrop": "none",
+    "borderBottom": "0px rgb(0, 0, 0)",
+    "shadow": "rgb(197, 211, 232) 0px -1px 0px 0px inset",
+    "nLinks": 10,
+    "linkTexts": [
+     "Skip to content",
+     "Browserbase",
+     "Platform",
+     "Solutions",
+     "Resources",
+     "Pricing",
+     "Docs",
+     "Log in",
+     "Sign up",
+     "Get a demo"
+    ],
+    "links": [
+     {
+      "text": "Skip to content",
+      "size": "16px",
+      "weight": "400",
+      "ls": "normal",
+      "h": 24,
+      "padX": "0px",
+      "color": "rgb(0, 0, 0)",
+      "font": "plain"
+     },
+     {
+      "text": "Browserbase",
+      "size": "16px",
+      "weight": "400",
+      "ls": "normal",
+      "h": 36,
+      "padX": "0px",
+      "color": "rgb(0, 0, 0)",
+      "font": "plain"
+     },
+     {
+      "text": "Platform",
+      "size": "16px",
+      "weight": "500",
+      "ls": "0.16px",
+      "h": 36,
+      "padX": "18px",
+      "color": "rgb(0, 0, 0)",
+      "font": "plain"
+     }
+    ],
+    "buttons": [
+     {
+      "text": "Get a demo",
+      "h": 39,
+      "w": 139,
+      "radius": "99px",
+      "bg": "rgb(0, 0, 0)",
+      "color": "rgb(255, 255, 255)",
+      "border": null,
+      "size": "16px",
+      "weight": "500"
+     }
+    ],
+    "pill": null,
+    "logoLeft": 24
+   },
+   "navBottom": 52,
+   "navStrict": {
+    "rect": {
+     "x": 80,
+     "y": 0,
+     "w": 1280,
+     "h": 52,
+     "b": 52
+    },
+    "left": 80,
+    "right": 1360
+   },
+   "h1": {
+    "textW": 513,
+    "text": "Infrastructure for your agents to act on the web.",
+    "chars": 49,
+    "words": 9,
+    "font": "gtPlanar, \"gtPlanar Fallback\"",
+    "size": 45,
+    "weight": "500",
+    "ls": "-0.9px",
+    "lsEm": -0.02,
+    "lh": "51.75px",
+    "lhRatio": 1.15,
+    "lines": 2,
+    "align": "center",
+    "color": "rgb(255, 255, 255)",
+    "wrap": "pretty",
+    "rect": {
+     "x": 456,
+     "y": 131,
+     "w": 529,
+     "h": 108,
+     "b": 239
+    },
+    "centerX": 720,
+    "endsWithPeriod": true,
+    "titleCaseShare": 0.33,
+    "opsz": "normal",
+    "transform": "none",
+    "gradientText": false
+   },
+   "preH1": [],
+   "sub": {
+    "textW": 429,
+    "text": "One API to search, fetch, and browse, with a verified identity that sites won’t block",
+    "chars": 85,
+    "size": 20,
+    "weight": "500",
+    "lhRatio": 1.16,
+    "ls": "0.4px",
+    "color": "rgb(0, 0, 0)",
+    "lines": 2,
+    "rect": {
+     "x": 499,
+     "y": 274,
+     "w": 441,
+     "h": 54,
+     "b": 328
+    },
+    "gapFromH1": 35,
+    "sizeRatioToH1": 0.444,
+    "align": "center"
+   },
+   "ctas": [
+    {
+     "text": "Get API key",
+     "kind": "filled",
+     "h": 39,
+     "w": 137,
+     "radius": "99px",
+     "bg": "rgb(0, 0, 0)",
+     "color": "rgb(255, 255, 255)",
+     "border": null,
+     "size": "16px",
+     "weight": "500",
+     "ls": "0.16px",
+     "padX": "18px",
+     "shadow": null,
+     "y": 356,
+     "x": 554
+    },
+    {
+     "text": "Setup for agents",
+     "kind": "filled",
+     "h": 39,
+     "w": 186,
+     "radius": "99px",
+     "bg": "rgb(225, 233, 242)",
+     "color": "rgb(0, 0, 0)",
+     "border": null,
+     "size": "16px",
+     "weight": "500",
+     "ls": "0.16px",
+     "padX": "18px",
+     "shadow": null,
+     "y": 356,
+     "x": 699
+    }
+   ],
+   "bgChain": [
+    {
+     "tag": "span.u-accent",
+     "bg": "rgb(255, 69, 0)",
+     "bgImage": null,
+     "size": "auto"
+    },
+    {
+     "tag": "section.section",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": null,
+     "size": "auto"
+    },
+    {
+     "tag": "div.body",
+     "bg": "rgb(255, 255, 255)",
+     "bgImage": null,
+     "size": "auto"
+    }
+   ],
+   "htmlBg": "rgb(255, 255, 255)",
+   "bodyBg": "rgba(0, 0, 0, 0)",
+   "colorScheme": "normal",
+   "mediaTop": [
+    {
+     "tag": "picture",
+     "rect": {
+      "x": 64,
+      "y": 52,
+      "w": 1312,
+      "h": 711,
+      "b": 763
+     },
+     "foldShare": 0.719,
+     "alt": ""
+    },
+    {
+     "tag": "img",
+     "rect": {
+      "x": 64,
+      "y": 52,
+      "w": 1312,
+      "h": 711,
+      "b": 763
+     },
+     "foldShare": 0.719,
+     "alt": ""
+    },
+    {
+     "tag": "video",
+     "rect": {
+      "x": 64,
+      "y": 52,
+      "w": 1312,
+      "h": 711,
+      "b": 763
+     },
+     "foldShare": 0.719,
+     "alt": ""
+    }
+   ],
+   "pixels": {
+    "meanLum": 193,
+    "satShare": 12.8,
+    "hues": [
+     {
+      "hue": 0,
+      "share": 7.54
+     },
+     {
+      "hue": 30,
+      "share": 2.21
+     },
+     {
+      "hue": 60,
+      "share": 2.92
+     }
+    ],
+    "rails": []
+   },
+   "url": "browserbase.com"
+  },
+  "kestrel": {
+   "nav": {
+    "outer": {
+     "x": 144,
+     "y": 22,
+     "w": 1152,
+     "h": 44,
+     "b": 66
+    },
+    "position": "absolute",
+    "bg": "rgba(0, 0, 0, 0)",
+    "backdrop": "none",
+    "borderBottom": "0px rgb(23, 23, 23)",
+    "shadow": null,
+    "nLinks": 8,
+    "linkTexts": [
+     "Kestrel",
+     "Product",
+     "Ask AI",
+     "Pricing",
+     "Docs",
+     "Changelog",
+     "Sign in",
+     "Start free"
+    ],
+    "links": [
+     {
+      "text": "Kestrel",
+      "size": "16px",
+      "weight": "400",
+      "ls": "normal",
+      "h": 32,
+      "padX": "0px",
+      "color": "rgb(23, 23, 23)",
+      "font": "\"Inter Variable\""
+     },
+     {
+      "text": "Product",
+      "size": "14px",
+      "weight": "500",
+      "ls": "-0.14px",
+      "h": 36,
+      "padX": "14px",
+      "color": "rgb(23, 23, 23)",
+      "font": "\"Inter Variable\""
+     },
+     {
+      "text": "Ask AI",
+      "size": "14px",
+      "weight": "500",
+      "ls": "-0.14px",
+      "h": 36,
+      "padX": "14px",
+      "color": "rgb(92, 92, 92)",
+      "font": "\"Inter Variable\""
+     }
+    ],
+    "buttons": [
+     {
+      "text": "Start free",
+      "h": 40,
+      "w": 95,
+      "radius": "12px",
+      "bg": "rgb(23, 23, 23)",
+      "color": "rgb(255, 255, 255)",
+      "border": null,
+      "size": "14px",
+      "weight": "550"
+     }
+    ],
+    "pill": null,
+    "logoLeft": 144
+   },
+   "navBottom": 66,
+   "navStrict": {
+    "rect": {
+     "x": 510,
+     "y": 22,
+     "w": 420,
+     "h": 44,
+     "b": 66
+    },
+    "left": 514,
+    "right": 926
+   },
+   "h1": {
+    "textW": 645,
+    "text": "Product Analytics That Answers Back",
+    "chars": 35,
+    "words": 5,
+    "font": "\"Inter Variable\", ui-sans-serif",
+    "size": 72,
+    "weight": "550",
+    "ls": "-3.24px",
+    "lsEm": -0.045,
+    "lh": "74.88px",
+    "lhRatio": 1.04,
+    "lines": 3,
+    "align": "center",
+    "color": "rgb(23, 23, 23)",
+    "wrap": "wrap",
+    "rect": {
+     "x": 398,
+     "y": 150,
+     "w": 645,
+     "h": 150,
+     "b": 300
+    },
+    "centerX": 720,
+    "endsWithPeriod": false,
+    "titleCaseShare": 1,
+    "opsz": "normal",
+    "transform": "none",
+    "gradientText": false
+   },
+   "preH1": [],
+   "sub": {
+    "textW": 617,
+    "text": "Ask a question in plain English and get the chart, the cohort and the reason.",
+    "chars": 77,
+    "size": 18,
+    "weight": "400",
+    "lhRatio": 1.56,
+    "ls": "-0.18px",
+    "color": "rgb(92, 92, 92)",
+    "lines": 1,
+    "rect": {
+     "x": 412,
+     "y": 318,
+     "w": 617,
+     "h": 28,
+     "b": 346
+    },
+    "gapFromH1": 18,
+    "sizeRatioToH1": 0.25,
+    "align": "center"
+   },
+   "ctas": [
+    {
+     "text": "Start for free · No card neede",
+     "kind": "filled",
+     "h": 44,
+     "w": 273,
+     "radius": "14px",
+     "bg": "rgb(23, 23, 23)",
+     "color": "rgb(255, 255, 255)",
+     "border": null,
+     "size": "15px",
+     "weight": "550",
+     "ls": "-0.15px",
+     "padX": "20px",
+     "shadow": "rgb(23, 23, 23) 0px 0px 0px 1px, rgba(255, 255, 255, 0.18) 0px 1px 0px 0px inset, rgba(10, 13, 20, 0.2) 0px 1px 2px 0px, rgba(23, 23, 23, 0.",
+     "y": 378,
+     "x": 510
+    },
+    {
+     "text": "See it answer",
+     "kind": "filled",
+     "h": 44,
+     "w": 135,
+     "radius": "14px",
+     "bg": "rgb(255, 255, 255)",
+     "color": "rgb(23, 23, 23)",
+     "border": null,
+     "size": "15px",
+     "weight": "550",
+     "ls": "-0.15px",
+     "padX": "20px",
+     "shadow": "rgba(23, 23, 23, 0.07) 0px 0px 0px 1px, rgba(10, 13, 20, 0.05) 0px 1px 2px 0px",
+     "y": 378,
+     "x": 795
+    },
+    {
+     "text": "7d",
+     "kind": "text",
+     "h": 28,
+     "w": 40,
+     "radius": "8px",
+     "bg": "rgba(0, 0, 0, 0)",
+     "color": "rgb(92, 92, 92)",
+     "border": null,
+     "size": "12px",
+     "weight": "500",
+     "ls": "normal",
+     "padX": "0px",
+     "shadow": null,
+     "y": 510,
+     "x": 792
+    },
+    {
+     "text": "30d",
+     "kind": "text",
+     "h": 28,
+     "w": 40,
+     "radius": "8px",
+     "bg": "rgba(0, 0, 0, 0)",
+     "color": "rgb(23, 23, 23)",
+     "border": null,
+     "size": "12px",
+     "weight": "500",
+     "ls": "normal",
+     "padX": "0px",
+     "shadow": null,
+     "y": 510,
+     "x": 834
+    },
+    {
+     "text": "90d",
+     "kind": "text",
+     "h": 28,
+     "w": 40,
+     "radius": "8px",
+     "bg": "rgba(0, 0, 0, 0)",
+     "color": "rgb(92, 92, 92)",
+     "border": null,
+     "size": "12px",
+     "weight": "500",
+     "ls": "normal",
+     "padX": "0px",
+     "shadow": null,
+     "y": 510,
+     "x": 876
+    }
+   ],
+   "bgChain": [
+    {
+     "tag": "body",
+     "bg": "rgb(247, 247, 247)",
+     "bgImage": null,
+     "size": "auto"
+    }
+   ],
+   "htmlBg": "rgba(0, 0, 0, 0)",
+   "bodyBg": "rgb(247, 247, 247)",
+   "colorScheme": "light",
+   "mediaTop": [
+    {
+     "tag": "svg",
+     "rect": {
+      "x": 0,
+      "y": 0,
+      "w": 1440,
+      "h": 900,
+      "b": 900
+     },
+     "foldShare": 1,
+     "alt": ""
+    },
+    {
+     "tag": "svg",
+     "rect": {
+      "x": 434,
+      "y": 699,
+      "w": 506,
+      "h": 152,
+      "b": 851
+     },
+     "foldShare": 0.059,
+     "alt": ""
+    }
+   ],
+   "frame": {
+    "outerRect": {
+     "x": 152,
+     "y": 476,
+     "w": 1136,
+     "h": 612,
+     "b": 1088
+    },
+    "foldShare": 0.372,
+    "bleedsOffFold": true,
+    "levels": [
+     {
+      "inset": null,
+      "w": 1136,
+      "radius": "22px",
+      "border": null,
+      "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(23, 23, 23, 0.06) 0",
+      "bg": "oklab(0.999994 0.0000455678 0.0000200868 / 0.55)",
+      "padding": "6px 6px"
+     },
+     {
+      "inset": 6,
+      "w": 1124,
+      "radius": "16px",
+      "border": null,
+      "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(23, 23, 23, 0.06) 0",
+      "bg": "rgb(255, 255, 255)",
+      "padding": "0px 0px"
+     }
+    ]
+   },
+   "pixels": {
+    "meanLum": 238,
+    "satShare": 0.9,
+    "hues": [
+     {
+      "hue": 210,
+      "share": 0.8
+     }
+    ],
+    "rails": [
+     120,
+     1320
+    ]
+   },
+   "url": "http://localhost:4799/"
+  }
+ },
+ "curated": {
+  "linear": {
+   "arch": "B",
+   "align": "left",
+   "h1": {
+    "size": 64,
+    "weight": 510,
+    "lsEm": -0.022,
+    "lhRatio": 1,
+    "lines": 2,
+    "textW": 782,
+    "family": "Inter Variable",
+    "chars": 103,
+    "endsWithPeriod": false,
+    "y": 272
+   },
+   "sub": {
+    "size": 15,
+    "lines": 1,
+    "chars": 74,
+    "textW": 505,
+    "gap": 32,
+    "ratio": 0.234
+   },
+   "cta": null,
+   "ctaCount": 0,
+   "navH": 72,
+   "navKind": "bar",
+   "navBottom": 72,
+   "gapNavToH1": 200,
+   "product": true,
+   "pTop": 527,
+   "pW": 1320,
+   "bleed": true,
+   "eyebrow": false,
+   "annBar": false,
+   "rails": false,
+   "logos": false,
+   "theme": "dark",
+   "accent": "none in chrome (white CTA in nav; one yellow star in product UI)",
+   "bg": "flat #08090a; subtle vertical lift behind product; 1px 8% white hairline under nav"
+  },
+  "vercel": {
+   "arch": "C",
+   "align": "left",
+   "h1": {
+    "size": 64,
+    "weight": 400,
+    "lsEm": -0.06,
+    "lhRatio": 1,
+    "lines": 2,
+    "textW": 347,
+    "family": "GeistSans",
+    "chars": 22,
+    "endsWithPeriod": false,
+    "y": 328
+   },
+   "sub": null,
+   "cta": {
+    "h": 40,
+    "w": 124,
+    "radius": "pill",
+    "size": 16,
+    "weight": 500,
+    "kind": "filled"
+   },
+   "navH": 64,
+   "navKind": "bar",
+   "navBottom": 64,
+   "gapNavToH1": 264,
+   "product": false,
+   "pTop": null,
+   "pW": null,
+   "bleed": false,
+   "eyebrow": true,
+   "annBar": false,
+   "rails": false,
+   "logos": true,
+   "theme": "light",
+   "accent": "none (black/white)",
+   "bg": "flat #fafafa with one soft halo around a black triangle canvas"
+  },
+  "stripe": {
+   "arch": "D",
+   "align": "left",
+   "h1": {
+    "size": 48,
+    "weight": 300,
+    "lsEm": -0.02,
+    "lhRatio": 1.15,
+    "lines": 4,
+    "textW": 921,
+    "family": "sohne-var",
+    "chars": 173,
+    "endsWithPeriod": true,
+    "y": 258
+   },
+   "sub": null,
+   "cta": {
+    "h": 48,
+    "w": 141,
+    "radius": 4,
+    "size": 16,
+    "weight": 400,
+    "kind": "filled"
+   },
+   "navH": 64,
+   "navKind": "bar",
+   "navBottom": 70,
+   "gapNavToH1": 188,
+   "product": false,
+   "pTop": null,
+   "pW": null,
+   "bleed": false,
+   "eyebrow": true,
+   "annBar": false,
+   "rails": true,
+   "logos": true,
+   "theme": "light",
+   "accent": "one indigo #533afd + multi-hue gradient ribbon",
+   "bg": "white; WebGL gradient ribbon top-right; page rails at x=87/1352; logo strip in fold"
+  },
+  "raycast": {
+   "arch": "D",
+   "align": "center",
+   "h1": {
+    "size": 64,
+    "weight": 600,
+    "lsEm": 0,
+    "lhRatio": 1.1,
+    "lines": 2,
+    "textW": 497,
+    "family": "Inter",
+    "chars": 28,
+    "endsWithPeriod": true,
+    "y": 370
+   },
+   "sub": {
+    "size": 18,
+    "lines": 2,
+    "chars": 108,
+    "textW": 464,
+    "gap": 32,
+    "ratio": 0.281
+   },
+   "cta": {
+    "h": 36,
+    "w": 173,
+    "radius": 8,
+    "size": 14,
+    "weight": 500,
+    "kind": "filled"
+   },
+   "navH": 42,
+   "navKind": "pill",
+   "navBottom": 75,
+   "gapNavToH1": 295,
+   "product": false,
+   "pTop": null,
+   "pW": null,
+   "bleed": false,
+   "eyebrow": false,
+   "annBar": false,
+   "rails": false,
+   "logos": false,
+   "theme": "dark",
+   "accent": "one red (art), white buttons",
+   "bg": "#07080a + red diagonal beam canvas with grain; nav is a 76px floating glass pill"
+  },
+  "resend": {
+   "arch": "C",
+   "align": "left",
+   "h1": {
+    "size": 96,
+    "weight": 400,
+    "lsEm": -0.01,
+    "lhRatio": 1,
+    "lines": 2,
+    "textW": 401,
+    "family": "domaine",
+    "chars": 20,
+    "endsWithPeriod": false,
+    "y": 327
+   },
+   "sub": {
+    "size": 18,
+    "lines": 2,
+    "chars": 106,
+    "textW": 463,
+    "gap": 8,
+    "ratio": 0.188
+   },
+   "cta": {
+    "h": 48,
+    "w": 130,
+    "radius": 16,
+    "size": 16,
+    "weight": 600,
+    "kind": "outline"
+   },
+   "navH": 58,
+   "navKind": "bar",
+   "navBottom": 58,
+   "gapNavToH1": 269,
+   "product": false,
+   "pTop": null,
+   "pW": null,
+   "bleed": false,
+   "eyebrow": true,
+   "annBar": false,
+   "rails": false,
+   "logos": false,
+   "theme": "dark",
+   "accent": "none (monochrome)",
+   "bg": "black; rendered 3D cube + light-ray images; serif display h1 with white-to-50% gradient fill"
+  },
+  "clerk": {
+   "arch": "B",
+   "align": "left",
+   "h1": {
+    "size": 56,
+    "weight": 700,
+    "lsEm": -0.035,
+    "lhRatio": 1.143,
+    "lines": 2,
+    "textW": 529,
+    "family": "geistNumbers",
+    "chars": 38,
+    "endsWithPeriod": false,
+    "y": 190
+   },
+   "sub": {
+    "size": 18,
+    "lines": 1,
+    "chars": 56,
+    "textW": 479,
+    "gap": 16,
+    "ratio": 0.321
+   },
+   "cta": null,
+   "ctaCount": 0,
+   "navH": null,
+   "navKind": "pill",
+   "navBottom": null,
+   "gapNavToH1": null,
+   "product": true,
+   "pTop": 418,
+   "pW": 1200,
+   "bleed": true,
+   "eyebrow": false,
+   "annBar": true,
+   "rails": false,
+   "logos": false,
+   "theme": "light",
+   "accent": "near-black + one violet dot",
+   "bg": "near-white #f7f7f8; 40px dark announcement bar; tabbed product frame, first tab active"
+  },
+  "attio": {
+   "arch": "A",
+   "align": "center",
+   "h1": {
+    "size": 64,
+    "weight": 600,
+    "lsEm": -0.02,
+    "lhRatio": 0.95,
+    "lines": 1,
+    "textW": 805,
+    "family": "interDisplay",
+    "chars": 27,
+    "endsWithPeriod": true,
+    "y": 278
+   },
+   "sub": {
+    "size": 18,
+    "lines": 2,
+    "chars": 91,
+    "textW": 389,
+    "gap": 36,
+    "ratio": 0.281
+   },
+   "cta": {
+    "h": 36,
+    "w": 110,
+    "radius": 10,
+    "size": 14,
+    "weight": 500,
+    "kind": "filled"
+   },
+   "navH": 67,
+   "navKind": "bar",
+   "navBottom": 115,
+   "gapNavToH1": 163,
+   "product": true,
+   "pTop": 580,
+   "pW": 1080,
+   "bleed": true,
+   "eyebrow": true,
+   "annBar": true,
+   "rails": false,
+   "logos": false,
+   "theme": "light",
+   "accent": "none in chrome (near-black CTA); pale lavender wash behind product",
+   "bg": "white fading to lavender; faint vertical line texture; product in 6px translucent bezel"
+  },
+  "cal": {
+   "arch": "C",
+   "align": "left",
+   "h1": {
+    "size": 64,
+    "weight": 600,
+    "lsEm": 0,
+    "lhRatio": 1.1,
+    "lines": 3,
+    "textW": 505,
+    "family": "Cal Sans",
+    "chars": 40,
+    "endsWithPeriod": false,
+    "y": 253
+   },
+   "sub": {
+    "size": 16,
+    "lines": 3,
+    "chars": 150,
+    "textW": 445,
+    "gap": 12,
+    "ratio": 0.25
+   },
+   "cta": {
+    "h": 36,
+    "w": 480,
+    "radius": 12,
+    "size": 12,
+    "weight": 400,
+    "kind": "text"
+   },
+   "navH": 57,
+   "navKind": "bar",
+   "navBottom": 65,
+   "gapNavToH1": 188,
+   "product": true,
+   "pTop": 192,
+   "pW": 1176,
+   "bleed": false,
+   "eyebrow": true,
+   "annBar": false,
+   "rails": true,
+   "logos": true,
+   "theme": "light",
+   "accent": "none (near-black)",
+   "bg": "grey page #f4f4f4 with one white r12 card holding the hero; rails x=120/1319 with + registration marks"
+  },
+  "mercury": {
+   "arch": "D",
+   "align": "center",
+   "h1": {
+    "size": 49.3472,
+    "weight": 480,
+    "lsEm": 0,
+    "lhRatio": 1.1,
+    "lines": 1,
+    "textW": 672,
+    "family": "arcadiaDisplay",
+    "chars": 27,
+    "endsWithPeriod": false,
+    "y": 144
+   },
+   "sub": {
+    "size": 21.008,
+    "lines": 2,
+    "chars": 84,
+    "textW": 619,
+    "gap": 13,
+    "ratio": 0.426
+   },
+   "cta": {
+    "h": 40,
+    "w": 145,
+    "radius": 32,
+    "size": 16,
+    "weight": 420,
+    "kind": "filled"
+   },
+   "navH": 72,
+   "navKind": "bar",
+   "navBottom": 121,
+   "gapNavToH1": 23,
+   "product": false,
+   "pTop": null,
+   "pW": null,
+   "bleed": false,
+   "eyebrow": false,
+   "annBar": true,
+   "rails": false,
+   "logos": false,
+   "theme": "photo",
+   "accent": "one periwinkle #5266eb",
+   "bg": "full-bleed generated landscape photo/video; nav overlays it"
+  },
+  "ramp": {
+   "arch": "B",
+   "align": "left",
+   "h1": {
+    "size": 64,
+    "weight": 400,
+    "lsEm": -0.0002,
+    "lhRatio": 1,
+    "lines": 1,
+    "textW": 742,
+    "family": "Lausanne",
+    "chars": 25,
+    "endsWithPeriod": true,
+    "y": 229
+   },
+   "sub": {
+    "size": 18,
+    "lines": 1,
+    "chars": 66,
+    "textW": 521,
+    "gap": 24,
+    "ratio": 0.281
+   },
+   "cta": {
+    "h": 52,
+    "w": 176,
+    "radius": 8,
+    "size": 16,
+    "weight": 400,
+    "kind": "filled"
+   },
+   "navH": 44,
+   "navKind": "bar",
+   "navBottom": 93,
+   "gapNavToH1": 136,
+   "product": true,
+   "pTop": 465,
+   "pW": 1312,
+   "bleed": true,
+   "eyebrow": true,
+   "annBar": true,
+   "rails": false,
+   "logos": false,
+   "theme": "light",
+   "accent": "one lime #e4f222 on black",
+   "bg": "white with page-wide dot grid; product in grey r12 1px frame; live metric ticker pinned to fold bottom"
+  },
+  "posthog": {
+   "arch": "E",
+   "align": "left",
+   "h1": {
+    "size": 36,
+    "weight": 800,
+    "lsEm": -0.025,
+    "lhRatio": 1.111,
+    "lines": 1,
+    "textW": 461,
+    "family": "RoundHog",
+    "chars": 28,
+    "endsWithPeriod": false,
+    "y": 201
+   },
+   "sub": {
+    "size": 17,
+    "lines": 3,
+    "chars": 127,
+    "textW": 454,
+    "gap": 25,
+    "ratio": 0.472
+   },
+   "cta": {
+    "h": 47,
+    "w": 203,
+    "radius": 8,
+    "size": 18,
+    "weight": 500
+   },
+   "navH": null,
+   "navKind": "os-menubar",
+   "navBottom": null,
+   "gapNavToH1": null,
+   "product": true,
+   "pTop": 463,
+   "pW": 980,
+   "bleed": true,
+   "eyebrow": false,
+   "annBar": false,
+   "rails": false,
+   "logos": false,
+   "theme": "light",
+   "accent": "multi-hue brand (orange CTA, purple tab, blue/red/yellow logo)",
+   "bg": "illustrated desktop-OS metaphor, window r20"
+  },
+  "supabase": {
+   "arch": "B",
+   "align": "left",
+   "h1": {
+    "size": 46,
+    "weight": 500,
+    "lsEm": 0,
+    "lhRatio": 1,
+    "lines": 2,
+    "textW": 536,
+    "family": "Manrope",
+    "chars": 36,
+    "endsWithPeriod": false,
+    "y": 225
+   },
+   "sub": {
+    "size": 16,
+    "lines": 3,
+    "chars": 138,
+    "textW": 536,
+    "gap": null,
+    "ratio": 0.348
+   },
+   "cta": {
+    "h": 38,
+    "w": 149,
+    "radius": 9.29231,
+    "size": 14,
+    "weight": 500,
+    "kind": "filled"
+   },
+   "navH": 64,
+   "navKind": "bar",
+   "navBottom": 64,
+   "gapNavToH1": 161,
+   "product": true,
+   "pTop": 451,
+   "pW": 1088,
+   "bleed": true,
+   "eyebrow": false,
+   "annBar": false,
+   "rails": false,
+   "logos": false,
+   "theme": "light",
+   "accent": "one green (oklch 0.525 0.12 157)",
+   "bg": "flat #fcfcfc; bento of r16 hairline cards starts at y=451"
+  },
+  "framer": {
+   "arch": "B",
+   "align": "left",
+   "h1": {
+    "size": 54,
+    "weight": 500,
+    "lsEm": -0.04,
+    "lhRatio": 1,
+    "lines": 2,
+    "textW": 675,
+    "family": "GT Walsheim Medium",
+    "chars": 61,
+    "endsWithPeriod": false,
+    "y": 164
+   },
+   "sub": null,
+   "cta": {
+    "h": 34,
+    "w": 149,
+    "radius": 8,
+    "size": 12,
+    "weight": 400,
+    "kind": "filled"
+   },
+   "navH": 64,
+   "navKind": "bar",
+   "navBottom": 64,
+   "gapNavToH1": 100,
+   "product": true,
+   "pTop": 372,
+   "pW": 1200,
+   "bleed": true,
+   "eyebrow": false,
+   "annBar": false,
+   "rails": false,
+   "logos": false,
+   "theme": "dark",
+   "accent": "one blue (Publish button inside product)",
+   "bg": "flat black; r18 1px-bordered frame holding an animated CMS demo video"
+  },
+  "dub": {
+   "arch": "A",
+   "align": "center",
+   "h1": {
+    "size": 48,
+    "weight": 500,
+    "lsEm": 0,
+    "lhRatio": 1.15,
+    "lines": 1,
+    "textW": 509,
+    "family": "satoshi",
+    "chars": 24,
+    "endsWithPeriod": false,
+    "y": 170
+   },
+   "sub": {
+    "size": 20,
+    "lines": 2,
+    "chars": 105,
+    "textW": 539,
+    "gap": 20,
+    "ratio": 0.417
+   },
+   "cta": {
+    "h": 38,
+    "w": 127,
+    "radius": 8,
+    "size": 14,
+    "weight": 500,
+    "kind": "filled"
+   },
+   "navH": 56,
+   "navKind": "bar",
+   "navBottom": 56,
+   "gapNavToH1": 114,
+   "product": true,
+   "pTop": 547,
+   "pW": 908,
+   "bleed": true,
+   "eyebrow": true,
+   "annBar": false,
+   "rails": true,
+   "logos": false,
+   "theme": "light",
+   "accent": "none (black CTA); 3 product-tab icons in purple/green/orange",
+   "bg": "white with faint square grid between rails x=180/1259, fading; tab bar cut into a tinted lower panel; double-bezel product frame"
+  },
+  "neon": {
+   "arch": "D",
+   "align": "left",
+   "h1": {
+    "size": 56,
+    "weight": 400,
+    "lsEm": -0.04,
+    "lhRatio": 1.125,
+    "lines": 2,
+    "textW": 873,
+    "family": "Inter",
+    "chars": 69,
+    "endsWithPeriod": true,
+    "y": 518
+   },
+   "sub": null,
+   "cta": {
+    "h": 44,
+    "w": 138,
+    "radius": "pill",
+    "size": 16,
+    "weight": 500,
+    "kind": "filled"
+   },
+   "navH": 64,
+   "navKind": "bar",
+   "navBottom": 100,
+   "gapNavToH1": 418,
+   "product": false,
+   "pTop": null,
+   "pW": null,
+   "bleed": false,
+   "eyebrow": true,
+   "annBar": true,
+   "rails": false,
+   "logos": true,
+   "theme": "dark",
+   "accent": "green/teal in art, white CTA",
+   "bg": "black halftone shader video fills fold; copy sits bottom-left; logo strip below hairline"
+  },
+  "cursor": {
+   "arch": "B",
+   "align": "left",
+   "h1": {
+    "size": 26,
+    "weight": 400,
+    "lsEm": -0.0125,
+    "lhRatio": 1.25,
+    "lines": 2,
+    "textW": 354,
+    "family": "CursorGothic",
+    "chars": 60,
+    "endsWithPeriod": true,
+    "y": 164
+   },
+   "sub": null,
+   "cta": {
+    "h": 43,
+    "w": 216,
+    "radius": "pill",
+    "size": 16,
+    "weight": 400,
+    "kind": "filled"
+   },
+   "navH": 52,
+   "navKind": "bar",
+   "navBottom": 52,
+   "gapNavToH1": 112,
+   "product": true,
+   "pTop": 351,
+   "pW": 1300,
+   "bleed": true,
+   "eyebrow": false,
+   "annBar": false,
+   "rails": false,
+   "logos": false,
+   "theme": "light",
+   "accent": "none (warm ink #26251e)",
+   "bg": "warm off-white #f7f7f4; window sits on a painted-art backdrop (img 1300 wide)"
+  },
+  "granola": {
+   "arch": "C",
+   "align": "left",
+   "h1": {
+    "size": 86.4,
+    "weight": 400,
+    "lsEm": -0.02,
+    "lhRatio": 0.93,
+    "lines": 4,
+    "textW": 518,
+    "family": "quadrant",
+    "chars": 40,
+    "endsWithPeriod": false,
+    "y": 269
+   },
+   "sub": {
+    "size": 20,
+    "lines": 1,
+    "chars": 26,
+    "textW": 248,
+    "gap": 32,
+    "ratio": 0.231
+   },
+   "cta": {
+    "h": 56,
+    "w": 199,
+    "radius": "pill",
+    "size": 16,
+    "weight": 430,
+    "kind": "filled"
+   },
+   "navH": 56,
+   "navKind": "pill",
+   "navBottom": 64,
+   "gapNavToH1": 205,
+   "product": true,
+   "pTop": 119,
+   "pW": 460,
+   "bleed": true,
+   "eyebrow": true,
+   "annBar": false,
+   "rails": false,
+   "logos": false,
+   "theme": "light",
+   "accent": "one olive #5b6f00",
+   "bg": "white; collage of app window, halftone art and video call tile bleeding off right edge"
+  },
+  "plain": {
+   "arch": "A",
+   "align": "center",
+   "h1": {
+    "size": 80,
+    "weight": 400,
+    "lsEm": -0.02,
+    "lhRatio": 1,
+    "lines": 2,
+    "textW": 485,
+    "family": "ABC Favorit Regular",
+    "chars": 26,
+    "endsWithPeriod": false,
+    "y": 250
+   },
+   "sub": {
+    "size": 24,
+    "lines": 2,
+    "chars": 98,
+    "textW": 529,
+    "gap": 24,
+    "ratio": 0.3
+   },
+   "cta": {
+    "h": 43,
+    "w": 154,
+    "radius": 6,
+    "size": 15,
+    "weight": 600,
+    "kind": "filled"
+   },
+   "navH": 40,
+   "navKind": "bar",
+   "navBottom": 95,
+   "gapNavToH1": 155,
+   "product": true,
+   "pTop": 660,
+   "pW": 1200,
+   "bleed": true,
+   "eyebrow": false,
+   "annBar": true,
+   "rails": false,
+   "logos": true,
+   "theme": "light",
+   "accent": "one green (headline line 1 + CTA)",
+   "bg": "white; pale-green frame with dashed route lines behind product; logo strip pinned to fold bottom"
+  },
+  "commslayer": {
+   "arch": "A",
+   "align": "center",
+   "h1": {
+    "size": 48,
+    "weight": 400,
+    "lsEm": 0,
+    "lhRatio": 1,
+    "lines": 2,
+    "textW": 496,
+    "family": "Stack Sans Headline Variable",
+    "chars": 40,
+    "endsWithPeriod": true,
+    "y": 168
+   },
+   "sub": {
+    "size": 20,
+    "lines": 1,
+    "chars": 82,
+    "textW": 725,
+    "gap": 32,
+    "ratio": 0.417
+   },
+   "cta": {
+    "h": 44,
+    "w": 93,
+    "radius": "pill",
+    "size": 14,
+    "weight": 400,
+    "kind": "filled"
+   },
+   "navH": 48,
+   "navKind": "pill",
+   "navBottom": 68,
+   "gapNavToH1": 100,
+   "product": true,
+   "pTop": 580,
+   "pW": 1368,
+   "bleed": true,
+   "eyebrow": false,
+   "annBar": false,
+   "rails": false,
+   "logos": false,
+   "theme": "dark-card",
+   "accent": "one violet",
+   "bg": "dark r24 hero card inset 8px with radial top glow; 6 floating channel tiles; 5-tab switcher above product"
+  },
+  "alignui": {
+   "arch": "A",
+   "align": "center",
+   "h1": {
+    "size": 80,
+    "weight": 550,
+    "lsEm": -0.035,
+    "lhRatio": 1.1,
+    "lines": 2,
+    "textW": 634,
+    "family": "__interVar_fb658c",
+    "chars": 36,
+    "endsWithPeriod": false,
+    "y": 324
+   },
+   "sub": {
+    "size": 18,
+    "lines": 1,
+    "chars": 72,
+    "textW": 589,
+    "gap": 24,
+    "ratio": 0.225
+   },
+   "cta": {
+    "h": 44,
+    "w": 196,
+    "radius": 13,
+    "size": 14,
+    "weight": 500,
+    "kind": "filled"
+   },
+   "navH": 72,
+   "navKind": "pill",
+   "navBottom": 144,
+   "gapNavToH1": 180,
+   "product": false,
+   "pTop": null,
+   "pW": null,
+   "bleed": false,
+   "eyebrow": true,
+   "annBar": true,
+   "rails": true,
+   "logos": false,
+   "theme": "light",
+   "accent": "one orange #fa7319",
+   "bg": "#f7f7f7 with ruler rails x=112/1328 and corner nodes; no product in this fold (feature tabs instead)"
+  },
+  "untitledui": {
+   "arch": "C",
+   "align": "left",
+   "h1": {
+    "size": 44,
+    "weight": 600,
+    "lsEm": -0.02,
+    "lhRatio": 1.25,
+    "lines": 2,
+    "textW": 589,
+    "family": "Inter",
+    "chars": 53,
+    "endsWithPeriod": false,
+    "y": 452
+   },
+   "sub": {
+    "size": 18,
+    "lines": 3,
+    "chars": 151,
+    "textW": 631,
+    "gap": 16,
+    "ratio": 0.409
+   },
+   "cta": {
+    "h": 46,
+    "w": 101,
+    "radius": 8,
+    "size": 16,
+    "weight": 600,
+    "kind": "filled"
+   },
+   "navH": 56,
+   "navKind": "bar",
+   "navBottom": 56,
+   "gapNavToH1": 396,
+   "product": true,
+   "pTop": 0,
+   "pW": 720,
+   "bleed": true,
+   "eyebrow": true,
+   "annBar": false,
+   "rails": false,
+   "logos": false,
+   "theme": "light",
+   "accent": "one violet #7f56d9",
+   "bg": "white; right 50% is an isometric collage of product screens bleeding off top, right and bottom"
+  },
+  "mintlify": {
+   "arch": "C",
+   "align": "left",
+   "h1": {
+    "size": 50,
+    "weight": 400,
+    "lsEm": -0.04,
+    "lhRatio": 1.04,
+    "lines": 3,
+    "textW": 303,
+    "family": "arizonaFlare",
+    "chars": 38,
+    "endsWithPeriod": false,
+    "y": 195
+   },
+   "sub": {
+    "size": 18,
+    "lines": 2,
+    "chars": 66,
+    "textW": 352,
+    "gap": 16,
+    "ratio": 0.36
+   },
+   "cta": {
+    "h": 42,
+    "w": 125,
+    "radius": 4,
+    "size": 14,
+    "weight": 500,
+    "kind": "filled"
+   },
+   "navH": 64,
+   "navKind": "bar",
+   "navBottom": 64,
+   "gapNavToH1": 131,
+   "product": true,
+   "pTop": 415,
+   "pW": 1057,
+   "bleed": true,
+   "eyebrow": true,
+   "annBar": false,
+   "rails": false,
+   "logos": false,
+   "theme": "light",
+   "accent": "one green",
+   "bg": "white; generative green wave-line canvas behind; product frame r23.5 with 1px 8% green ring bleeds off right and bottom"
+  },
+  "browserbase": {
+   "arch": "D",
+   "align": "center",
+   "h1": {
+    "size": 45,
+    "weight": 500,
+    "lsEm": -0.02,
+    "lhRatio": 1.15,
+    "lines": 2,
+    "textW": 513,
+    "family": "gtPlanar",
+    "chars": 49,
+    "endsWithPeriod": true,
+    "y": 131
+   },
+   "sub": {
+    "size": 20,
+    "lines": 2,
+    "chars": 85,
+    "textW": 429,
+    "gap": 35,
+    "ratio": 0.444
+   },
+   "cta": {
+    "h": 39,
+    "w": 137,
+    "radius": 99,
+    "size": 16,
+    "weight": 500,
+    "kind": "filled"
+   },
+   "navH": 52,
+   "navKind": "bar",
+   "navBottom": 52,
+   "gapNavToH1": 79,
+   "product": false,
+   "pTop": null,
+   "pW": null,
+   "bleed": false,
+   "eyebrow": false,
+   "annBar": false,
+   "rails": true,
+   "logos": true,
+   "theme": "art",
+   "accent": "one orange-red #ff4500 (headline highlight, logo)",
+   "bg": "pale-blue dither field with orange/black pixel mountains; framed between rails x=64/1376; headline in orange highlight blocks"
+  },
+  "kestrel": {
+   "arch": "A",
+   "align": "center",
+   "h1": {
+    "size": 72,
+    "weight": 550,
+    "lsEm": -0.045,
+    "lhRatio": 1.04,
+    "lines": 2,
+    "textW": 645,
+    "family": "Inter Variable",
+    "chars": 35,
+    "endsWithPeriod": false,
+    "y": 150
+   },
+   "sub": {
+    "size": 18,
+    "lines": 1,
+    "chars": 77,
+    "textW": 617,
+    "gap": 18,
+    "ratio": 0.25
+   },
+   "cta": {
+    "h": 44,
+    "w": 273,
+    "radius": 14,
+    "size": 15,
+    "weight": 550,
+    "kind": "filled"
+   },
+   "navH": 44,
+   "navKind": "bar+track",
+   "navBottom": 66,
+   "gapNavToH1": 84,
+   "product": true,
+   "pTop": 476,
+   "pW": 1136,
+   "bleed": true,
+   "eyebrow": false,
+   "annBar": false,
+   "rails": true,
+   "logos": false,
+   "theme": "light",
+   "accent": "one blue #335cff",
+   "bg": "#f7f7f7 with dot grid inside rails x=120/1320"
+  }
+ },
+ "stats": {
+  "n": 23,
+  "h1Size": {
+   "median": 56,
+   "range": [
+    26,
+    96
+   ]
+  },
+  "h1Weight": {
+   "median": 500,
+   "range": [
+    300,
+    800
+   ],
+   "le500": 15
+  },
+  "h1LsEm": {
+   "median": -0.02,
+   "range": [
+    -0.06,
+    0
+   ]
+  },
+  "h1Lh": {
+   "median": 1.1,
+   "range": [
+    0.93,
+    1.25
+   ]
+  },
+  "h1Lines": {
+   "median": 2,
+   "counts": {
+    "1": 5,
+    "2": 14,
+    "3": 2,
+    "4": 2
+   }
+  },
+  "h1TextW": {
+   "median": 518,
+   "range": [
+    303,
+    921
+   ]
+  },
+  "h1Y": {
+   "median": 250,
+   "range": [
+    131,
+    518
+   ]
+  },
+  "h1Chars": {
+   "median": 38,
+   "range": [
+    20,
+    173
+   ]
+  },
+  "subSize": {
+   "median": 18,
+   "range": [
+    15,
+    24
+   ],
+   "n": 18
+  },
+  "subRatio": {
+   "median": 0.31,
+   "range": [
+    0.188,
+    0.472
+   ]
+  },
+  "subLines": {
+   "counts": {
+    "1": 6,
+    "2": 8,
+    "3": 4
+   }
+  },
+  "subChars": {
+   "median": 88,
+   "range": [
+    26,
+    151
+   ]
+  },
+  "subTextW": {
+   "median": 492,
+   "range": [
+    248,
+    725
+   ]
+  },
+  "subCharsPerLine": {
+   "median": 50.167,
+   "range": [
+    26,
+    82
+   ]
+  },
+  "subGap": {
+   "median": 24,
+   "range": [
+    8,
+    36
+   ]
+  },
+  "ctaH": {
+   "median": 43,
+   "range": [
+    34,
+    56
+   ],
+   "n": 21
+  },
+  "ctaRadiusPx": {
+   "median": 8,
+   "range": [
+    4,
+    99
+   ],
+   "pill": 5
+  },
+  "ctaSize": {
+   "median": 16,
+   "range": [
+    12,
+    18
+   ]
+  },
+  "navH": {
+   "median": 58,
+   "range": [
+    40,
+    72
+   ]
+  },
+  "gapNavH1": {
+   "median": 163,
+   "range": [
+    23,
+    418
+   ]
+  },
+  "pTop": {
+   "median": 457,
+   "range": [
+    119,
+    660
+   ],
+   "n": 14
+  },
+  "pW": {
+   "median": 1200,
+   "range": [
+    908,
+    1368
+   ]
+  },
+  "counts": {
+   "arch": {
+    "B": 6,
+    "C": 6,
+    "D": 5,
+    "A": 5,
+    "E": 1
+   },
+   "align": {
+    "left": 15,
+    "center": 8
+   },
+   "productInFold": 15,
+   "bleed": 14,
+   "eyebrowAboveH1": 12,
+   "announcementBarAboveNav": 7,
+   "rails": 5,
+   "logoStripInFold": 6,
+   "theme": {
+    "dark": 5,
+    "light": 15,
+    "photo": 1,
+    "dark-card": 1,
+    "art": 1
+   },
+   "sentenceCaseH1": 22,
+   "titleCaseH1": 1,
+   "h1EndsWithPeriod": 8,
+   "navKind": {
+    "bar": 17,
+    "pill": 5,
+    "os-menubar": 1
+   }
+  },
+  "productLedGroup": {
+   "sites": [
+    "linear",
+    "clerk",
+    "attio",
+    "ramp",
+    "posthog",
+    "supabase",
+    "framer",
+    "dub",
+    "cursor",
+    "plain",
+    "commslayer",
+    "mintlify"
+   ],
+   "pTopMedian": 464,
+   "pTopFold": 0.516,
+   "pWMedian": 1200,
+   "visibleProductShare": 0.484
+  },
+  "copyBlock": {
+   "method": "h1 top to bottom of lowest of subtitle / primary CTA / email form; gap to the top of the product frame (or its tab row). Hand-corrected where the script picked product buttons as CTAs.",
+   "rows": {
+    "linear": {
+     "copyH": 184,
+     "gapToProduct": 71
+    },
+    "clerk": {
+     "copyH": 172,
+     "gapToProduct": 56
+    },
+    "attio": {
+     "copyH": 204,
+     "gapToProduct": 98
+    },
+    "ramp": {
+     "copyH": 183,
+     "gapToProduct": 53
+    },
+    "framer": {
+     "copyH": 168,
+     "gapToProduct": 40
+    },
+    "dub": {
+     "copyH": 209,
+     "gapToProduct": 96,
+     "note": "gap measured to the tab row at y=475"
+    },
+    "cursor": {
+     "copyH": 130,
+     "gapToProduct": 57,
+     "note": "gap to the art backdrop at y=351; window at y=401"
+    },
+    "plain": {
+     "copyH": 350,
+     "gapToProduct": 60,
+     "note": "includes email form to y=600"
+    },
+    "commslayer": {
+     "copyH": 232,
+     "gapToProduct": 123,
+     "note": "gap measured to the tab row at y=523; product y=580"
+    },
+    "kestrel": {
+     "copyH": 272,
+     "gapToProduct": 54
+    }
+   },
+   "medianCopyH": 184,
+   "medianGapToProduct": 60
+  },
+  "productFoldShare": {
+   "method": "visible area of the outermost product frame / (1440*900); commslayer and kestrel estimated from frame top and width",
+   "rows": {
+    "linear": 0.38,
+    "clerk": 0.446,
+    "attio": 0.267,
+    "ramp": 0.44,
+    "framer": 0.489,
+    "dub": 0.247,
+    "cursor": 0.416,
+    "plain": 0.222,
+    "commslayer": 0.34,
+    "mintlify": 0.32,
+    "kestrel": 0.372
+   },
+   "median": 0.36
+  }
+ }
+}

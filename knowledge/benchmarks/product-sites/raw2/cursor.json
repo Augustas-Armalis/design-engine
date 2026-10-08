@@ -1,0 +1,190 @@
+{
+ "vw": 1440,
+ "H": 8175,
+ "footTop": 7649,
+ "navH": 52,
+ "anchors": [
+  {
+   "i": 0,
+   "text": "Cursor is your coding agent for building ambitious software.",
+   "tag": "h1",
+   "chars": 60,
+   "words": 9,
+   "size": 26,
+   "weight": "400",
+   "lsEm": -0.013,
+   "lhRatio": 1.25,
+   "lines": 2,
+   "w": 658,
+   "x": 70,
+   "align": "left",
+   "fam": "CursorGothic",
+   "color": "rgb(38, 37, 30)",
+   "y": 164,
+   "groupTop": 164,
+   "gapAbove": 30,
+   "gapBelowLastContent": 119,
+   "sectionContentH": 4302,
+   "eyebrow": null,
+   "sub": {
+    "chars": 126,
+    "size": 12,
+    "lines": 3,
+    "w": 437,
+    "color": "rgb(38, 37, 30)"
+   },
+   "firstBlock": {
+    "dy": 122,
+    "w": 1300,
+    "h": 720,
+    "radius": "0px",
+    "tag": "img"
+   },
+   "bg": "rgb(247, 247, 244)",
+   "secTop": 52,
+   "secH": 1086,
+   "secTag": "section",
+   "secPadT": "112px",
+   "secPadB": "67.2px",
+   "secBgImg": false,
+   "secBorderT": "0px rgb(38, 37, 30)"
+  },
+  {
+   "i": 1,
+   "text": "The new way to build software.",
+   "tag": "h2",
+   "chars": 30,
+   "words": 6,
+   "size": 36,
+   "weight": "400",
+   "lsEm": -0.02,
+   "lhRatio": 1.2,
+   "lines": 1,
+   "w": 810,
+   "x": 315,
+   "align": "center",
+   "fam": "CursorGothic",
+   "color": "rgb(38, 37, 30)",
+   "y": 4585,
+   "groupTop": 4585,
+   "gapAbove": 119,
+   "gapBelowLastContent": 134,
+   "sectionContentH": 2650,
+   "eyebrow": null,
+   "sub": {
+    "chars": 166,
+    "size": 16,
+    "lines": 4,
+    "w": 392,
+    "color": "rgb(38, 37, 30)"
+   },
+   "firstBlock": null,
+   "bg": "rgb(247, 247, 244)",
+   "secTop": 4518,
+   "secH": 700,
+   "secTag": "section",
+   "secPadT": "67.2px",
+   "secPadB": "67.2px",
+   "secBgImg": false,
+   "secBorderT": "0px rgb(38, 37, 30)"
+  },
+  {
+   "i": 2,
+   "text": "Try Cursor now.",
+   "tag": "h2",
+   "chars": 15,
+   "words": 3,
+   "size": 72,
+   "weight": "400",
+   "lsEm": -0.03,
+   "lhRatio": 1.1,
+   "lines": 1,
+   "w": 810,
+   "x": 315,
+   "align": "center",
+   "fam": "CursorGothic",
+   "color": "rgb(38, 37, 30)",
+   "y": 7370,
+   "groupTop": 7370,
+   "gapAbove": 134,
+   "gapBelowLastContent": 134,
+   "sectionContentH": 145,
+   "eyebrow": null,
+   "sub": null,
+   "firstBlock": null,
+   "bg": "rgb(247, 247, 244)",
+   "secTop": 7303,
+   "secH": 346,
+   "secTag": "section",
+   "secPadT": "67.2px",
+   "secPadB": "134.4px",
+   "secBgImg": false,
+   "secBorderT": "0px rgb(38, 37, 30)"
+  }
+ ],
+ "cardClusters": [
+  {
+   "key": "10px | noborder | rgba(0, 0, 0, 0.14) 0px 28px 70px 0px, rgba(0, 0, 0, 0.1) 0px 14px 32px 0px, oklab(0.26308 | rgb(242, 241, 237)",
+   "n": 3,
+   "sizes": [
+    "540x340",
+    "580x420",
+    "780x500"
+   ],
+   "gapMode": null,
+   "padMode": [
+    "0px/0px",
+    3
+   ]
+  },
+  {
+   "key": "8px | 1px oklab(0.263084 -0.00230259 0.0124794 / 0.1) | noshadow | rgb(247, 247, 244)",
+   "n": 1,
+   "sizes": [
+    "315x170"
+   ],
+   "gapMode": null,
+   "padMode": [
+    "0px/0px",
+    1
+   ]
+  },
+  {
+   "key": "10px | noborder | rgba(0, 0, 0, 0.3) 0px 22px 70px 4px, rgba(0, 0, 0, 0.15) 0px 0px 0px 0.5px | rgba(0, 0, 0, 0)",
+   "n": 1,
+   "sizes": [
+    "740x584"
+   ],
+   "gapMode": null,
+   "padMode": [
+    "0px/0px",
+    1
+   ]
+  },
+  {
+   "key": "44px | noborder | noshadow | rgb(58, 58, 60)",
+   "n": 1,
+   "sizes": [
+    "300x650"
+   ],
+   "gapMode": null,
+   "padMode": [
+    "0px/0px",
+    1
+   ]
+  }
+ ],
+ "headingLeftMode": [
+  "70",
+  1
+ ],
+ "nav": {
+  "pos": "fixed",
+  "h": 52,
+  "bg": "rgb(247, 247, 244)",
+  "blur": "none",
+  "radius": "0px"
+ },
+ "slug": "cursor",
+ "url": "https://cursor.com"
+}

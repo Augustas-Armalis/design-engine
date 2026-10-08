@@ -27,6 +27,8 @@
    "contentL": 104,
    "contentR": 1336,
    "contentW": 1232,
+   "cssPadT": 0,
+   "cssPadB": 0,
    "cardCount": 0,
    "cardRadius": [],
    "cardShadow": [],
@@ -75,6 +77,8 @@
     "br": "0px",
     "padL": "24px"
    },
+   "cssPadT": 0,
+   "cssPadB": 0,
    "heading": {
     "text": "Email for developers",
     "tag": "h1",
@@ -92,6 +96,7 @@
     "y": 327,
     "lines": 2
    },
+   "headingOffset": 269,
    "sub": {
     "text": "The best way to reach humans instead of spam folders. Deliver transactional and marketing emails at scale.",
     "tag": "p",
@@ -181,6 +186,8 @@
     "br": "0px",
     "padL": "0px"
    },
+   "cssPadT": 96,
+   "cssPadB": 96,
    "cardCount": 0,
    "cardRadius": [],
    "cardShadow": [],
@@ -229,6 +236,8 @@
     "br": "0px",
     "padL": "0px"
    },
+   "cssPadT": 96,
+   "cssPadB": 96,
    "heading": {
     "text": "Integrate tonight",
     "tag": "h2",
@@ -246,6 +255,7 @@
     "y": 1887,
     "lines": 1
    },
+   "headingOffset": 282,
    "sub": {
     "text": "A simple, elegant interface so you can start sending emails in minutes. It fits right into your code with SDKs for your favorite programming",
     "tag": "p",
@@ -307,7 +317,7 @@
    "padT": "96px",
    "padB": "96px",
    "effPadT": 96,
-   "effPadB": -51,
+   "effPadB": 41,
    "contentL": 104,
    "contentR": 1336,
    "contentW": 1232,
@@ -318,6 +328,8 @@
     "br": "0px",
     "padL": "0px"
    },
+   "cssPadT": 96,
+   "cssPadB": 96,
    "heading": {
     "text": "First-class developer experience",
     "tag": "h2",
@@ -335,6 +347,7 @@
     "y": 2997,
     "lines": 2
    },
+   "headingOffset": 96,
    "sub": {
     "text": "We are a team of engineers who love building tools for other engineers. Our goal is to create the email platform we've always wished we had ",
     "tag": "p",
@@ -414,7 +427,7 @@
    "smallGlyphs": 6,
    "links": 2,
    "buttons": 2,
-   "words": 194,
+   "words": 195,
    "snippet": "First-class developer experience We are a team of engineers who love building tools for other engineers. Our goal is to create the email platform we've always wished we had — one that just works. Delivered delivered@rese",
    "sticky": false
   },
@@ -445,6 +458,8 @@
     "br": "0px",
     "padL": "0px"
    },
+   "cssPadT": 96,
+   "cssPadB": 96,
    "heading": {
     "text": "Write using a delightful editor",
     "tag": "h2",
@@ -462,6 +477,7 @@
     "y": 4149,
     "lines": 1
    },
+   "headingOffset": 282,
    "sub": {
     "text": "A modern editor that makes it easy for anyone to write, format, and send emails. Visually build your email and change the design by adding c",
     "tag": "p",
@@ -561,6 +577,8 @@
     "br": "0px",
     "padL": "0px"
    },
+   "cssPadT": 96,
+   "cssPadB": 96,
    "heading": {
     "text": "Go beyond editing",
     "tag": "h2",
@@ -578,6 +596,7 @@
     "y": 5321,
     "lines": 1
    },
+   "headingOffset": 96,
    "sub": {
     "text": "Group and control your contacts in a simple and intuitive way. Straightforward analytics and reporting tools that will help you send better ",
     "tag": "p",
@@ -677,7 +696,7 @@
    "padT": "96px",
    "padB": "96px",
    "effPadT": 96,
-   "effPadB": -325,
+   "effPadB": 11,
    "contentL": 104,
    "contentR": 1690,
    "contentW": 1586,
@@ -688,6 +707,8 @@
     "br": "0px",
     "padL": "0px"
    },
+   "cssPadT": 96,
+   "cssPadB": 96,
    "heading": {
     "text": "Develop emails using React",
     "tag": "h2",
@@ -705,6 +726,7 @@
     "y": 6407,
     "lines": 1
    },
+   "headingOffset": 282,
    "sub": {
     "text": "Create beautiful templates without having to deal with <table> layouts and HTML. Powered by react-email, our open source component library.",
     "tag": "p",
@@ -782,6 +804,8 @@
     "br": "0px",
     "padL": "0px"
    },
+   "cssPadT": 96,
+   "cssPadB": 96,
    "heading": {
     "text": "Reach humans, not spam folders",
     "tag": "h2",
@@ -799,6 +823,7 @@
     "y": 7589,
     "lines": 2
    },
+   "headingOffset": 97,
    "sub": {
     "text": "Proactive blocklist tracking",
     "tag": "h3",
@@ -916,6 +941,8 @@
     "br": "0px",
     "padL": "0px"
    },
+   "cssPadT": 96,
+   "cssPadB": 96,
    "heading": {
     "text": "Resend is transforming email for developers. Simple interface, easy integrations, handy templates. What else could we ask for.",
     "tag": "span",
@@ -933,6 +960,7 @@
     "y": 8680,
     "lines": 3
    },
+   "headingOffset": 247,
    "allHeadings": [],
    "cardCount": 0,
    "cardRadius": [],
@@ -982,6 +1010,8 @@
     "br": "0px",
     "padL": "0px"
    },
+   "cssPadT": 96,
+   "cssPadB": 96,
    "heading": {
     "text": "Everything in your control",
     "tag": "h2",
@@ -999,6 +1029,7 @@
     "y": 9346,
     "lines": 1
    },
+   "headingOffset": 282,
    "sub": {
     "text": "All the features you need to manage your email sending, troubleshoot with detailed logs, and protect your domain reputation – without the fr",
     "tag": "p",
@@ -1105,9 +1136,11 @@
    "padB": "96px",
    "effPadT": 96,
    "effPadB": 120,
-   "contentL": -3591,
-   "contentR": 10767,
+   "contentL": -2343,
+   "contentR": 12014,
    "contentW": 14357,
+   "cssPadT": 96,
+   "cssPadB": 96,
    "heading": {
     "text": "Beyond expectations",
     "tag": "h2",
@@ -1125,6 +1158,7 @@
     "y": 10512,
     "lines": 1
    },
+   "headingOffset": 96,
    "sub": {
     "text": "Resend is driving remarkable developer experiences that enable success stories, empower businesses, and fuel growth across industries and in",
     "tag": "p",
@@ -1231,6 +1265,8 @@
     "br": "0px",
     "padL": "0px"
    },
+   "cssPadT": 96,
+   "cssPadB": 0,
    "heading": {
     "text": "Email reimagined. Available today.",
     "tag": "h2",
@@ -1248,6 +1284,7 @@
     "y": 11198,
     "lines": 2
    },
+   "headingOffset": 96,
    "allHeadings": [
     {
      "t": "h2",
@@ -1303,6 +1340,8 @@
     "br": "0px",
     "padL": "24px"
    },
+   "cssPadT": 0,
+   "cssPadB": 0,
    "cardCount": 0,
    "cardRadius": [],
    "cardShadow": [],

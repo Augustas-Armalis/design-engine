@@ -22,10 +22,10 @@
    "borderBottom": "0px rgb(0, 0, 0)",
    "padT": "0px",
    "padB": "0px",
-   "effPadT": -183,
-   "effPadB": -107,
-   "contentL": 72,
-   "contentR": 6234,
+   "effPadT": 123,
+   "effPadB": 19,
+   "contentL": 59,
+   "contentR": 6221,
    "contentW": 6162,
    "container": {
     "w": 1266,
@@ -34,6 +34,8 @@
     "br": "1px",
     "padL": "16px"
    },
+   "cssPadT": 0,
+   "cssPadB": 0,
    "heading": {
     "text": "Financial infrastructure to grow your revenue. Accept payments, offer financial services and implement custom revenue models – from your fir",
     "tag": "h1",
@@ -51,6 +53,7 @@
     "y": 258,
     "lines": 4
    },
+   "headingOffset": 182,
    "eyebrow": {
     "text": "1",
     "tag": "span",
@@ -98,7 +101,7 @@
    "links": 34,
    "buttons": 0,
    "words": 61,
-   "snippet": "Global GDP running on Stripe: 1.72890812% 1.72890812% Financial infrastructure to grow your revenue. Accept payments, offer financial services and implement custom revenue models – from your first transaction to your bil",
+   "snippet": "Global GDP running on Stripe: 1.72891336% 1.72891345% Financial infrastructure to grow your revenue. Accept payments, offer financial services and implement custom revenue models – from your first transaction to your bil",
    "sticky": false
   },
   {
@@ -128,6 +131,8 @@
     "br": "1px",
     "padL": "16px"
    },
+   "cssPadT": 0,
+   "cssPadB": 0,
    "heading": {
     "text": "Flexible solutions for every business model.",
     "tag": "h2",
@@ -145,6 +150,7 @@
     "y": 854,
     "lines": 1
    },
+   "headingOffset": 93,
    "allHeadings": [
     {
      "t": "h2",
@@ -288,6 +294,8 @@
     "br": "1px",
     "padL": "16px"
    },
+   "cssPadT": 80,
+   "cssPadB": 80,
    "heading": {
     "text": "Building the economic infrastructure for AI",
     "tag": "span",
@@ -305,6 +313,7 @@
     "y": 3069,
     "lines": 2
    },
+   "headingOffset": 112,
    "allHeadings": [],
    "cardCount": 0,
    "cardRadius": [],
@@ -354,6 +363,8 @@
     "br": "1px",
     "padL": "16px"
    },
+   "cssPadT": 0,
+   "cssPadB": 0,
    "heading": {
     "text": "The backbone of global commerce",
     "tag": "h2",
@@ -371,6 +382,7 @@
     "y": 3597,
     "lines": 2
    },
+   "headingOffset": 80,
    "allHeadings": [
     {
      "t": "h2",
@@ -426,6 +438,8 @@
     "br": "1px",
     "padL": "16px"
    },
+   "cssPadT": 96,
+   "cssPadB": 48,
    "heading": {
     "text": "Powering businesses of all sizes.",
     "tag": "h2",
@@ -443,6 +457,7 @@
     "y": 4587,
     "lines": 1
    },
+   "headingOffset": 93,
    "allHeadings": [
     {
      "t": "h2",
@@ -579,6 +594,8 @@
     "br": "1px",
     "padL": "16px"
    },
+   "cssPadT": 96,
+   "cssPadB": 96,
    "heading": {
     "text": "Reliable, extensible infrastructure for every stack.",
     "tag": "h2",
@@ -596,6 +613,7 @@
     "y": 9117,
     "lines": 1
    },
+   "headingOffset": 93,
    "allHeadings": [
     {
      "t": "h2",
@@ -704,6 +722,8 @@
     "br": "1px",
     "padL": "16px"
    },
+   "cssPadT": 96,
+   "cssPadB": 96,
    "heading": {
     "text": "What's happening",
     "tag": "h2",
@@ -721,6 +741,7 @@
     "y": 11461,
     "lines": 1
    },
+   "headingOffset": 96,
    "sub": {
     "text": "See the latest from Stripe.",
     "tag": "p",
@@ -865,6 +886,8 @@
     "br": "1px",
     "padL": "16px"
    },
+   "cssPadT": 96,
+   "cssPadB": 96,
    "heading": {
     "text": "Ready to get started?",
     "tag": "span",
@@ -882,6 +905,7 @@
     "y": 13245,
     "lines": 1
    },
+   "headingOffset": 96,
    "sub": {
     "text": "Create an account instantly, or contact us to design a custom package for your business.",
     "tag": "p",

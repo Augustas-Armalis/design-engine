@@ -1,6 +1,6 @@
 {
  "vw": 1440,
- "pageHeight": 8377,
+ "pageHeight": 8473,
  "title": "Cal.com | Scheduling Software for Online Bookings",
  "containerPath": "div#main > div > div#main-1",
  "bodyBg": "rgb(244, 244, 244)",
@@ -34,6 +34,8 @@
     "br": "0px",
     "padL": "0px"
    },
+   "cssPadT": 96,
+   "cssPadB": 0,
    "heading": {
     "text": "The better way to schedule your meetings",
     "tag": "h1",
@@ -51,6 +53,7 @@
     "y": 253,
     "lines": 3
    },
+   "headingOffset": 253,
    "sub": {
     "text": "A fully customizable scheduling software for individuals, businesses taking calls and developers building scheduling platforms where users m",
     "tag": "p",
@@ -136,7 +139,7 @@
    "smallGlyphs": 1,
    "links": 3,
    "buttons": 1,
-   "words": 107,
+   "words": 110,
    "snippet": "Cal.com launches v6.9 The better way to schedule your meetings A fully customizable scheduling software for individuals, businesses taking calls and developers building scheduling platforms where users meet users. Sign u",
    "sticky": false
   },
@@ -167,6 +170,8 @@
     "br": "0px",
     "padL": "0px"
    },
+   "cssPadT": 0,
+   "cssPadB": 0,
    "heading": {
     "text": "With us, appointment scheduling is easy",
     "tag": "h2",
@@ -184,6 +189,7 @@
     "y": 1070,
     "lines": 1
    },
+   "headingOffset": 136,
    "sub": {
     "text": "Effortless scheduling for business and individuals, powerful solutions for fast-growing modern companies.",
     "tag": "p",
@@ -322,6 +328,8 @@
     "br": "0px",
     "padL": "0px"
    },
+   "cssPadT": 0,
+   "cssPadB": 0,
    "heading": {
     "text": "Your all-purpose scheduling app",
     "tag": "h2",
@@ -339,6 +347,7 @@
     "y": 1970,
     "lines": 1
    },
+   "headingOffset": 136,
    "sub": {
     "text": "Discover a variety of our advanced features. Unlimited and free for individuals.",
     "tag": "p",
@@ -493,6 +502,8 @@
     "br": "0px",
     "padL": "0px"
    },
+   "cssPadT": 0,
+   "cssPadB": 0,
    "heading": {
     "text": "…and so much more!",
     "tag": "h2",
@@ -510,6 +521,7 @@
     "y": 3072,
     "lines": 1
    },
+   "headingOffset": 0,
    "sub": {
     "text": "Built-in video conferencing",
     "tag": "p",
@@ -635,7 +647,7 @@
    "cls": "framer-17g5vjo",
    "id": "",
    "top": 4878,
-   "h": 1171,
+   "h": 1267,
    "w": 1200,
    "bg": "rgb(244, 244, 244)",
    "ownBg": "rgba(0, 0, 0, 0)",
@@ -645,7 +657,7 @@
    "padT": "0px",
    "padB": "0px",
    "effPadT": 101,
-   "effPadB": 902,
+   "effPadB": 998,
    "contentL": 240,
    "contentR": 1200,
    "contentW": 960,
@@ -656,6 +668,8 @@
     "br": "0px",
     "padL": "0px"
    },
+   "cssPadT": 0,
+   "cssPadB": 0,
    "heading": {
     "text": "See why our users love Cal.com",
     "tag": "h2",
@@ -673,6 +687,7 @@
     "y": 5014,
     "lines": 1
    },
+   "headingOffset": 136,
    "sub": {
     "text": "Read the impact we've had from those who matter most - our customers.",
     "tag": "p",
@@ -740,7 +755,7 @@
    "tag": "div",
    "cls": "framer-1o2z9n8",
    "id": "",
-   "top": 6080,
+   "top": 6176,
    "h": 913,
    "w": 1200,
    "bg": "rgb(244, 244, 244)",
@@ -751,7 +766,7 @@
    "padT": "0px",
    "padB": "0px",
    "effPadT": 101,
-   "effPadB": -22,
+   "effPadB": 55,
    "contentL": 196,
    "contentR": 1244,
    "contentW": 1048,
@@ -762,6 +777,8 @@
     "br": "0px",
     "padL": "0px"
    },
+   "cssPadT": 0,
+   "cssPadB": 0,
    "heading": {
     "text": "Frequently asked questions",
     "tag": "h2",
@@ -776,9 +793,10 @@
     "w": 1048,
     "h": 53,
     "x": 196,
-    "y": 6216,
+    "y": 6312,
     "lines": 1
    },
+   "headingOffset": 136,
    "sub": {
     "text": "These are some of our most frequently asked questions.",
     "tag": "p",
@@ -793,7 +811,7 @@
     "w": 640,
     "h": 24,
     "x": 400,
-    "y": 6281,
+    "y": 6377,
     "lines": 1
    },
    "eyebrow": {
@@ -810,7 +828,7 @@
     "w": 24,
     "h": 12,
     "x": 715,
-    "y": 6182,
+    "y": 6278,
     "lines": 1
    },
    "allHeadings": [
@@ -919,7 +937,7 @@
    "weight": "600",
    "ls": "normal",
    "lh": "52.8px",
-   "y": 6216,
+   "y": 6312,
    "w": 1048,
    "align": "center"
   },
@@ -929,7 +947,7 @@
    "weight": "600",
    "ls": "normal",
    "lh": "52.8px",
-   "y": 7227,
+   "y": 7323,
    "w": 800,
    "align": "center"
   }

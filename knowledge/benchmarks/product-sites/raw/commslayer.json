@@ -23,7 +23,7 @@
    "padT": "0px",
    "padB": "0px",
    "effPadT": 100,
-   "effPadB": -370,
+   "effPadB": 8,
    "contentL": 48,
    "contentR": 1404,
    "contentW": 1356,
@@ -34,6 +34,8 @@
     "br": "0px",
     "padL": "0px"
    },
+   "cssPadT": 8,
+   "cssPadB": 64,
    "heading": {
     "text": "Cheaper than Gorgias. AI agent included.",
     "tag": "h1",
@@ -51,6 +53,7 @@
     "y": 168,
     "lines": 2
    },
+   "headingOffset": 168,
    "sub": {
     "text": "The helpdesk for Shopify brands. All the tools to automate your support, built in.",
     "tag": "p",
@@ -155,6 +158,8 @@
     "br": "1px",
     "padL": "0px"
    },
+   "cssPadT": 0,
+   "cssPadB": 0,
    "heading": {
     "text": "3000+ Shopify brands run their support on Commslayer",
     "tag": "h2",
@@ -172,6 +177,7 @@
     "y": 1337,
     "lines": 1
    },
+   "headingOffset": 33,
    "allHeadings": [
     {
      "t": "h2",
@@ -227,6 +233,8 @@
     "br": "1px",
     "padL": "40px"
    },
+   "cssPadT": 80,
+   "cssPadB": 80,
    "heading": {
     "text": "We built a cheaper Gorgias alternative",
     "tag": "h2",
@@ -244,6 +252,7 @@
     "y": 1635,
     "lines": 1
    },
+   "headingOffset": 125,
    "sub": {
     "text": "We previously built Lifetimely , one of the most popular analytics apps for Shopify, trusted by thousands of merchants. After we exited, we ",
     "tag": "p",
@@ -316,6 +325,8 @@
     "br": "1px",
     "padL": "40px"
    },
+   "cssPadT": 0,
+   "cssPadB": 0,
    "heading": {
     "text": "An AI agent built for ecommerce support",
     "tag": "h2",
@@ -333,6 +344,7 @@
     "y": 2426,
     "lines": 1
    },
+   "headingOffset": 81,
    "sub": {
     "text": "It reads the ticket, checks the customer and order context, takes the same actions your team would, and handles the ticket end to end.",
     "tag": "p",
@@ -450,7 +462,7 @@
    "smallGlyphs": 2,
    "links": 1,
    "buttons": 5,
-   "words": 314,
+   "words": 325,
    "snippet": "An AI agent built for ecommerce support It reads the ticket, checks the customer and order context, takes the same actions your team would, and handles the ticket end to end. Meet the AI agent → Email The AI agent handle",
    "sticky": false
   },
@@ -481,6 +493,8 @@
     "br": "1px",
     "padL": "40px"
    },
+   "cssPadT": 48,
+   "cssPadB": 48,
    "heading": {
     "text": "56%",
     "tag": "span",
@@ -498,6 +512,7 @@
     "y": 3445,
     "lines": 1
    },
+   "headingOffset": 129,
    "sub": {
     "text": "Uses Appstle subscriptions",
     "tag": "p",
@@ -564,6 +579,8 @@
     "br": "1px",
     "padL": "40px"
    },
+   "cssPadT": 0,
+   "cssPadB": 0,
    "heading": {
     "text": "All your support channels in one place",
     "tag": "h2",
@@ -581,6 +598,7 @@
     "y": 3782,
     "lines": 1
    },
+   "headingOffset": 81,
    "sub": {
     "text": "Manage email, chat, social DMs, WhatsApp, and voice from one helpdesk, with customer and order details on every ticket.",
     "tag": "p",
@@ -713,6 +731,8 @@
     "br": "1px",
     "padL": "40px"
    },
+   "cssPadT": 48,
+   "cssPadB": 48,
    "heading": {
     "text": "49%",
     "tag": "span",
@@ -730,6 +750,7 @@
     "y": 5413,
     "lines": 1
    },
+   "headingOffset": 129,
    "sub": {
     "text": "How Rumi automated 49% of their tickets",
     "tag": "span",
@@ -785,7 +806,7 @@
    "padT": "0px",
    "padB": "0px",
    "effPadT": 81,
-   "effPadB": -796,
+   "effPadB": 21,
    "contentL": 121,
    "contentR": 1319,
    "contentW": 1198,
@@ -796,6 +817,8 @@
     "br": "1px",
     "padL": "40px"
    },
+   "cssPadT": 0,
+   "cssPadB": 0,
    "heading": {
     "text": "Customer portal for self-serve support",
     "tag": "h2",
@@ -813,6 +836,7 @@
     "y": 5750,
     "lines": 1
    },
+   "headingOffset": 81,
    "sub": {
     "text": "Add a branded, SEO-optimized customer portal directly inside your shop, so customers can manage their orders and find answers without contac",
     "tag": "p",
@@ -934,6 +958,8 @@
     "br": "1px",
     "padL": "40px"
    },
+   "cssPadT": 64,
+   "cssPadB": 64,
    "heading": {
     "text": "“Things are already tough and we dun need to keep switching out of apps cos someone got greedy. Trust me, go with Karri (commslayer) They ar",
     "tag": "blockquote",
@@ -951,6 +977,7 @@
     "y": 6703,
     "lines": 3
    },
+   "headingOffset": 65,
    "allHeadings": [],
    "cardCount": 0,
    "cardRadius": [],
@@ -989,7 +1016,7 @@
    "padT": "0px",
    "padB": "0px",
    "effPadT": 81,
-   "effPadB": -134,
+   "effPadB": 4,
    "contentL": 113,
    "contentR": 1678,
    "contentW": 1565,
@@ -1000,6 +1027,8 @@
     "br": "1px",
     "padL": "40px"
    },
+   "cssPadT": 0,
+   "cssPadB": 0,
    "heading": {
     "text": "More of your CX stack in one place",
     "tag": "h2",
@@ -1017,6 +1046,7 @@
     "y": 7007,
     "lines": 1
    },
+   "headingOffset": 81,
    "sub": {
     "text": "Comment moderation, returns, order editing, and other CX workflows are built natively into Commslayer, not just connected through integratio",
     "tag": "p",
@@ -1133,6 +1163,8 @@
     "br": "1px",
     "padL": "40px"
    },
+   "cssPadT": 64,
+   "cssPadB": 64,
    "heading": {
     "text": "“Been watching the roadmap for over a year whilst trying to take the leap of faith to switch and when I saw the speed of development vs Gorg",
     "tag": "blockquote",
@@ -1150,6 +1182,7 @@
     "y": 8027,
     "lines": 4
    },
+   "headingOffset": 65,
    "allHeadings": [],
    "cardCount": 0,
    "cardRadius": [],
@@ -1189,9 +1222,9 @@
    "padB": "0px",
    "effPadT": 139,
    "effPadB": 150,
-   "contentL": -924,
-   "contentR": 1878,
-   "contentW": 2802,
+   "contentL": -925,
+   "contentR": 1879,
+   "contentW": 2804,
    "container": {
     "w": 1280,
     "maxW": "1280px",
@@ -1199,6 +1232,8 @@
     "br": "1px",
     "padL": "40px"
    },
+   "cssPadT": 80,
+   "cssPadB": 80,
    "heading": {
     "text": "",
     "tag": "h2",
@@ -1216,6 +1251,7 @@
     "y": 8403,
     "lines": 2
    },
+   "headingOffset": 139,
    "allHeadings": [
     {
      "t": "h2",
@@ -1271,6 +1307,8 @@
     "br": "1px",
     "padL": "40px"
    },
+   "cssPadT": 80,
+   "cssPadB": 80,
    "heading": {
     "text": "",
     "tag": "h2",
@@ -1288,6 +1326,7 @@
     "y": 9044,
     "lines": 2
    },
+   "headingOffset": 81,
    "allHeadings": [
     {
      "t": "h2",
@@ -1377,6 +1416,8 @@
     "br": "1px",
     "padL": "40px"
    },
+   "cssPadT": 80,
+   "cssPadB": 80,
    "heading": {
     "text": "",
     "tag": "h2",
@@ -1394,6 +1435,7 @@
     "y": 10863,
     "lines": 2
    },
+   "headingOffset": 81,
    "allHeadings": [
     {
      "t": "h2",
@@ -1449,6 +1491,8 @@
     "br": "1px",
     "padL": "40px"
    },
+   "cssPadT": 64,
+   "cssPadB": 64,
    "heading": {
     "text": "“We've used most of the bigger CS platforms out there, from Zendesk to Gorgias, and while Commslayer may not have all of the features and in",
     "tag": "blockquote",
@@ -1466,6 +1510,7 @@
     "y": 11317,
     "lines": 3
    },
+   "headingOffset": 65,
    "allHeadings": [],
    "cardCount": 0,
    "cardRadius": [],
@@ -1515,6 +1560,8 @@
     "br": "1px",
     "padL": "40px"
    },
+   "cssPadT": 80,
+   "cssPadB": 80,
    "heading": {
     "text": "",
     "tag": "h2",
@@ -1532,6 +1579,7 @@
     "y": 11615,
     "lines": 1
    },
+   "headingOffset": 81,
    "allHeadings": [
     {
      "t": "h2",
@@ -1614,6 +1662,8 @@
     "br": "1px",
     "padL": "40px"
    },
+   "cssPadT": 80,
+   "cssPadB": 80,
    "heading": {
     "text": "",
     "tag": "h2",
@@ -1631,6 +1681,7 @@
     "y": 12226,
     "lines": 3
    },
+   "headingOffset": 81,
    "allHeadings": [
     {
      "t": "h2",
@@ -1719,6 +1770,8 @@
     "br": "1px",
     "padL": "40px"
    },
+   "cssPadT": 64,
+   "cssPadB": 64,
    "heading": {
     "text": "",
     "tag": "h2",
@@ -1736,6 +1789,7 @@
     "y": 12845,
     "lines": 1
    },
+   "headingOffset": 65,
    "allHeadings": [
     {
      "t": "h2",
@@ -1825,7 +1879,7 @@
    "padT": "0px",
    "padB": "0px",
    "effPadT": 37,
-   "effPadB": -32,
+   "effPadB": 36,
    "contentL": 121,
    "contentR": 1293,
    "contentW": 1172,
@@ -1836,6 +1890,8 @@
     "br": "1px",
     "padL": "0px"
    },
+   "cssPadT": 0,
+   "cssPadB": 0,
    "heading": {
     "text": "Frequently asked questions",
     "tag": "h2",
@@ -1853,6 +1909,7 @@
     "y": 15837,
     "lines": 2
    },
+   "headingOffset": 65,
    "sub": {
     "text": "How much work is it to switch from our current helpdesk?",
     "tag": "span",
@@ -1913,11 +1970,11 @@
    "borderBottom": "0px rgba(0, 0, 0, 0.075)",
    "padT": "0px",
    "padB": "0px",
-   "effPadT": 107,
-   "effPadB": -156,
+   "effPadT": 109,
+   "effPadB": 73,
    "contentL": 165,
-   "contentR": 1845,
-   "contentW": 1680,
+   "contentR": 854,
+   "contentW": 689,
    "container": {
     "w": 1280,
     "maxW": "1280px",
@@ -1925,6 +1982,8 @@
     "br": "1px",
     "padL": "40px"
    },
+   "cssPadT": 64,
+   "cssPadB": 64,
    "heading": {
     "text": "",
     "tag": "h2",
@@ -1942,6 +2001,7 @@
     "y": 16792,
     "lines": 1
    },
+   "headingOffset": 109,
    "allHeadings": [
     {
      "t": "h2",

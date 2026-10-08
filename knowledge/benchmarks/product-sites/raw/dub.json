@@ -27,6 +27,8 @@
    "contentL": 208,
    "contentR": 1232,
    "contentW": 1024,
+   "cssPadT": 0,
+   "cssPadB": 0,
    "cardCount": 0,
    "cardRadius": [],
    "cardShadow": [],
@@ -63,11 +65,11 @@
    "borderBottom": "0px rgb(229, 229, 229)",
    "padT": "0px",
    "padB": "0px",
-   "effPadT": -197,
-   "effPadB": 0,
-   "contentL": -180,
-   "contentR": 1620,
-   "contentW": 1800,
+   "effPadT": 65,
+   "effPadB": 80,
+   "contentL": 400,
+   "contentR": 1040,
+   "contentW": 640,
    "container": {
     "w": 1080,
     "maxW": "1080px",
@@ -75,6 +77,8 @@
     "br": "0px",
     "padL": "48px"
    },
+   "cssPadT": 64,
+   "cssPadB": 80,
    "heading": {
     "text": "Turn clicks into revenue",
     "tag": "h1",
@@ -92,6 +96,7 @@
     "y": 170,
     "lines": 1
    },
+   "headingOffset": 114,
    "sub": {
     "text": "Dub is the modern link attribution platform for short links, conversion tracking, and affiliate programs.",
     "tag": "p",
@@ -170,10 +175,10 @@
    "padT": "0px",
    "padB": "0px",
    "effPadT": 0,
-   "effPadB": -44,
-   "contentL": 280,
-   "contentR": 1160,
-   "contentW": 880,
+   "effPadB": 61,
+   "contentL": 348,
+   "contentR": 1100,
+   "contentW": 752,
    "container": {
     "w": 1080,
     "maxW": "1080px",
@@ -181,6 +186,8 @@
     "br": "1px",
     "padL": "0px"
    },
+   "cssPadT": 0,
+   "cssPadB": 0,
    "cardCount": 2,
    "cardRadius": [
     [
@@ -248,8 +255,8 @@
    "effPadT": 48,
    "effPadB": 21,
    "contentL": 262,
-   "contentR": 1178,
-   "contentW": 916,
+   "contentR": 1177,
+   "contentW": 915,
    "container": {
     "w": 1080,
     "maxW": "1080px",
@@ -257,6 +264,8 @@
     "br": "1px",
     "padL": "0px"
    },
+   "cssPadT": 20,
+   "cssPadB": 20,
    "cardCount": 8,
    "cardRadius": [
     [
@@ -339,6 +348,8 @@
     "br": "1px",
     "padL": "16px"
    },
+   "cssPadT": 160,
+   "cssPadB": 128,
    "heading": {
     "text": "Marketing isn't just about clicks. It's about outcomes.",
     "tag": "p",
@@ -356,6 +367,7 @@
     "y": 1501,
     "lines": 2
    },
+   "headingOffset": 160,
    "sub": {
     "text": "Dub is the modern link attribution platform that unifies short links real-time analytics and affiliate programs – all in one place.",
     "tag": "p",
@@ -468,6 +480,8 @@
     "br": "1px",
     "padL": "0px"
    },
+   "cssPadT": 80,
+   "cssPadB": 40,
    "heading": {
     "text": "It starts with a link",
     "tag": "h2",
@@ -485,6 +499,7 @@
     "y": 2247,
     "lines": 1
    },
+   "headingOffset": 108,
    "sub": {
     "text": "Create branded short links with superpowers: built-in QR codes, device/geo-targeting, A/B testing, deep links, and more.",
     "tag": "p",
@@ -629,6 +644,8 @@
     "br": "1px",
     "padL": "0px"
    },
+   "cssPadT": 80,
+   "cssPadB": 40,
    "heading": {
     "text": "Measure what matters",
     "tag": "h2",
@@ -646,6 +663,7 @@
     "y": 3561,
     "lines": 1
    },
+   "headingOffset": 108,
    "sub": {
     "text": "From first click to conversion, understand exactly how your marketing drives revenue with Dub's powerful attribution engine.",
     "tag": "p",
@@ -797,6 +815,8 @@
     "br": "1px",
     "padL": "0px"
    },
+   "cssPadT": 0,
+   "cssPadB": 0,
    "heading": {
     "text": "Connect with your favorite tools",
     "tag": "h2",
@@ -814,6 +834,7 @@
     "y": 4859,
     "lines": 2
    },
+   "headingOffset": 112,
    "sub": {
     "text": "Extend Dub, streamline workflows, and connect your favorite tools, with new integrations added constantly.",
     "tag": "p",
@@ -874,8 +895,8 @@
    "borderBottom": "1px rgb(229, 229, 229)",
    "padT": "0px",
    "padB": "0px",
-   "effPadT": -218,
-   "effPadB": -2076,
+   "effPadT": 50,
+   "effPadB": 45,
    "contentL": 197,
    "contentR": 1577,
    "contentW": 1380,
@@ -886,6 +907,8 @@
     "br": "1px",
     "padL": "0px"
    },
+   "cssPadT": 80,
+   "cssPadB": 40,
    "heading": {
     "text": "Grow with partnerships",
     "tag": "h2",
@@ -903,6 +926,7 @@
     "y": 5296,
     "lines": 1
    },
+   "headingOffset": 108,
    "sub": {
     "text": "Build powerful, embedded referral/affiliate programs to boost product-led growth and increase revenue.",
     "tag": "p",
@@ -921,20 +945,20 @@
     "lines": 2
    },
    "eyebrow": {
-    "text": "Dub Partners",
-    "tag": "span",
-    "size": 12,
-    "weight": "500",
-    "lh": "16px",
+    "text": "20%",
+    "tag": "strong",
+    "size": 10,
+    "weight": "600",
+    "lh": "15px",
     "ls": "normal",
     "fam": "Inter",
-    "color": "rgb(82, 82, 82)",
+    "color": "rgb(37, 99, 235)",
     "align": "start",
     "tt": "none",
-    "w": 75,
-    "h": 16,
-    "x": 245,
-    "y": 5268,
+    "w": 23,
+    "h": 12,
+    "x": 1079,
+    "y": 5283,
     "lines": 1
    },
    "allHeadings": [
@@ -1026,6 +1050,8 @@
     "br": "0px",
     "padL": "0px"
    },
+   "cssPadT": 96,
+   "cssPadB": 96,
    "heading": {
     "text": "Built to scale",
     "tag": "h2",
@@ -1043,6 +1069,7 @@
     "y": 6662,
     "lines": 1
    },
+   "headingOffset": 144,
    "sub": {
     "text": "Our powerful, battle-tested infrastructure handles hundreds of millions of links & events monthly and can scale infinitely with your busines",
     "tag": "p",
@@ -1085,7 +1112,7 @@
    "links": 0,
    "buttons": 0,
    "words": 33,
-   "snippet": "Built to scale Our powerful, battle-tested infrastructure handles hundreds of millions of links & events monthly and can scale infinitely with your business needs. LINKS CREATED 242,326,194 EVENTS TRACKED 4,138,080,618 R",
+   "snippet": "Built to scale Our powerful, battle-tested infrastructure handles hundreds of millions of links & events monthly and can scale infinitely with your business needs. LINKS CREATED 242,334,308 EVENTS TRACKED 4,138,145,726 R",
    "sticky": false
   },
   {
@@ -1115,6 +1142,8 @@
     "br": "1px",
     "padL": "0px"
    },
+   "cssPadT": 80,
+   "cssPadB": 40,
    "heading": {
     "text": "Enterprise-grade link infrastructure",
     "tag": "h2",
@@ -1132,6 +1161,7 @@
     "y": 7385,
     "lines": 2
    },
+   "headingOffset": 108,
    "sub": {
     "text": "Programmatically generate millions of short links, with deferred deep linking and real-time webhooks built in.",
     "tag": "p",
@@ -1235,7 +1265,7 @@
    "links": 9,
    "buttons": 6,
    "words": 255,
-   "snippet": "Dub API Enterprise-grade link infrastructure Programmatically generate millions of short links, with deferred deep linking and real-time webhooks built in. Explore API Request Response New Event Link clicked My Projects ",
+   "snippet": "Dub API Enterprise-grade link infrastructure Programmatically generate millions of short links, with deferred deep linking and real-time webhooks built in. Explore API Request Response New Event Sale created My Projects ",
    "sticky": false
   },
   {
@@ -1265,6 +1295,8 @@
     "br": "1px",
     "padL": "0px"
    },
+   "cssPadT": 80,
+   "cssPadB": 0,
    "heading": {
     "text": "Trusted by startups and enterprises",
     "tag": "h2",
@@ -1282,6 +1314,7 @@
     "y": 8719,
     "lines": 2
    },
+   "headingOffset": 80,
    "sub": {
     "text": "Join 100,000+ customers who use our link attribution platform to take their marketing efforts to the next level.",
     "tag": "p",
@@ -1354,6 +1387,8 @@
     "br": "1px",
     "padL": "0px"
    },
+   "cssPadT": 0,
+   "cssPadB": 0,
    "heading": {
     "text": "We ship fast",
     "tag": "h2",
@@ -1371,6 +1406,7 @@
     "y": 10354,
     "lines": 1
    },
+   "headingOffset": 56,
    "sub": {
     "text": "Always improving, adding features and functionality.",
     "tag": "p",
@@ -1431,6 +1467,8 @@
    "borderBottom": "0px rgb(229, 229, 229)",
    "padT": "0px",
    "padB": "0px",
+   "cssPadT": 0,
+   "cssPadB": 0,
    "cardCount": 0,
    "cardRadius": [],
    "cardShadow": [],
@@ -1479,6 +1517,8 @@
     "br": "0px",
     "padL": "0px"
    },
+   "cssPadT": 0,
+   "cssPadB": 0,
    "heading": {
     "text": "Supercharge your marketing efforts",
     "tag": "h2",
@@ -1496,6 +1536,7 @@
     "y": 11227,
     "lines": 2
    },
+   "headingOffset": 160,
    "sub": {
     "text": "See why Dub is the link attribution platform of choice for modern marketing teams.",
     "tag": "p",
@@ -1568,6 +1609,8 @@
     "br": "0px",
     "padL": "0px"
    },
+   "cssPadT": 64,
+   "cssPadB": 64,
    "heading": {
     "text": "Product",
     "tag": "h3",
@@ -1585,6 +1628,7 @@
     "y": 11739,
     "lines": 1
    },
+   "headingOffset": 64,
    "allHeadings": [
     {
      "t": "h3",

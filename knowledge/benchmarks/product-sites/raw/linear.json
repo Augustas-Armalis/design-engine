@@ -22,7 +22,7 @@
    "borderBottom": "0px rgb(247, 248, 248)",
    "padT": "0px",
    "padB": "0px",
-   "effPadT": -29,
+   "effPadT": 35,
    "effPadB": 0,
    "contentL": 0,
    "contentR": 1440,
@@ -34,6 +34,8 @@
     "br": "0px",
     "padL": "0px"
    },
+   "cssPadT": 0,
+   "cssPadB": 0,
    "heading": {
     "text": "The product development system for teams and agents The product development system for teams and agents",
     "tag": "h1",
@@ -51,6 +53,7 @@
     "y": 272,
     "lines": 2
    },
+   "headingOffset": 1,
    "sub": {
     "text": "Purpose-built for planning and building products. Designed for the AI era.",
     "tag": "span",
@@ -174,6 +177,8 @@
    "contentL": 80,
    "contentR": 1360,
    "contentW": 1280,
+   "cssPadT": 0,
+   "cssPadB": 0,
    "cardCount": 0,
    "cardRadius": [],
    "cardShadow": [],
@@ -210,29 +215,8 @@
    "borderBottom": "0px rgb(138, 143, 152)",
    "padT": "0px",
    "padB": "0px",
-   "effPadT": -6,
-   "effPadB": 91,
-   "contentL": 78,
-   "contentR": 689,
-   "contentW": 611,
-   "heading": {
-    "text": "A new species of product tool.",
-    "tag": "strong",
-    "size": 48,
-    "weight": "510",
-    "lh": "48px",
-    "ls": "-1.056px",
-    "fam": "Inter Variable",
-    "color": "rgb(247, 248, 248)",
-    "align": "start",
-    "tt": "none",
-    "w": 611,
-    "h": 59,
-    "x": 78,
-    "y": 1590,
-    "lines": 1
-   },
-   "allHeadings": [],
+   "cssPadT": 0,
+   "cssPadB": 0,
    "cardCount": 0,
    "cardRadius": [],
    "cardShadow": [],
@@ -274,6 +258,8 @@
    "contentL": 80,
    "contentR": 1360,
    "contentW": 1280,
+   "cssPadT": 0,
+   "cssPadB": 0,
    "cardCount": 0,
    "cardRadius": [],
    "cardShadow": [],
@@ -322,6 +308,8 @@
     "br": "0px",
     "padL": "0px"
    },
+   "cssPadT": 128,
+   "cssPadB": 128,
    "heading": {
     "text": "Intake and integrations",
     "tag": "h2",
@@ -339,6 +327,7 @@
     "y": 2674,
     "lines": 2
    },
+   "headingOffset": 128,
    "allHeadings": [
     {
      "t": "h2",
@@ -456,6 +445,8 @@
     "br": "0px",
     "padL": "0px"
    },
+   "cssPadT": 128,
+   "cssPadB": 128,
    "heading": {
     "text": "Planning and monitoring",
     "tag": "h2",
@@ -473,6 +464,7 @@
     "y": 3910,
     "lines": 2
    },
+   "headingOffset": 128,
    "allHeadings": [
     {
      "t": "h2",
@@ -555,6 +547,8 @@
     "br": "0px",
     "padL": "0px"
    },
+   "cssPadT": 128,
+   "cssPadB": 128,
    "heading": {
     "text": "AI and automations",
     "tag": "h2",
@@ -572,6 +566,7 @@
     "y": 5149,
     "lines": 2
    },
+   "headingOffset": 128,
    "allHeadings": [
     {
      "t": "h2",
@@ -671,6 +666,8 @@
     "br": "0px",
     "padL": "0px"
    },
+   "cssPadT": 128,
+   "cssPadB": 128,
    "heading": {
     "text": "Build, review, and ship",
     "tag": "h2",
@@ -688,6 +685,7 @@
     "y": 6391,
     "lines": 2
    },
+   "headingOffset": 128,
    "allHeadings": [
     {
      "t": "h2",
@@ -732,7 +730,7 @@
    "padT": "0px",
    "padB": "0px",
    "effPadT": 0,
-   "effPadB": -4,
+   "effPadB": 0,
    "contentL": 78,
    "contentR": 1360,
    "contentW": 1282,
@@ -743,6 +741,8 @@
     "br": "0px",
     "padL": "32px"
    },
+   "cssPadT": 0,
+   "cssPadB": 0,
    "heading": {
     "text": "Changelog",
     "tag": "h2",
@@ -760,6 +760,7 @@
     "y": 7644,
     "lines": 1
    },
+   "headingOffset": 0,
    "allHeadings": [
     {
      "t": "h2",
@@ -803,11 +804,11 @@
    "borderBottom": "0px rgb(247, 248, 248)",
    "padT": "0px",
    "padB": "0px",
-   "effPadT": -348,
-   "effPadB": -288,
+   "effPadT": 36,
+   "effPadB": 0,
    "contentL": 76,
-   "contentR": 1492,
-   "contentW": 1416,
+   "contentR": 1348,
+   "contentW": 1272,
    "container": {
     "w": 1344,
     "maxW": "none",
@@ -815,6 +816,8 @@
     "br": "0px",
     "padL": "12px"
    },
+   "cssPadT": 0,
+   "cssPadB": 0,
    "heading": {
     "text": "You’ll probably build a better product, just because of the craft that using Linear infuses on your brain.",
     "tag": "p",
@@ -832,6 +835,7 @@
     "y": 8262,
     "lines": 3
    },
+   "headingOffset": 36,
    "allHeadings": [],
    "cardCount": 1,
    "cardRadius": [
@@ -908,6 +912,8 @@
     "br": "0px",
     "padL": "0px"
    },
+   "cssPadT": 0,
+   "cssPadB": 0,
    "heading": {
     "text": "Built for the future. Available today.",
     "tag": "h2",
@@ -925,6 +931,7 @@
     "y": 9014,
     "lines": 2
    },
+   "headingOffset": 0,
    "allHeadings": [
     {
      "t": "h2",

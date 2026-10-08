@@ -1,0 +1,12 @@
+Reproduce (from /Users/augustas/dev/design-engine, Playwright 1.64.0, Chromium 156):
+1. node harness/run.cjs [site ...]        -> raw/<site>.json + <site>-<ms>.png   (sampler.js is injected into every page; ~50s per site)
+2. node harness/hover2.cjs [site ...]     -> raw/_hover2-<first-site>.json       (CTA press + card hover probes)
+3. node harness/offscreen.cjs             -> /tmp/mx_offscreen.json              (infinite animations offscreen)
+4. node harness/lcp.cjs                   -> /tmp/mx_lcp.json                    (opacity-start LCP experiment, local files)
+5. node harness/libs.cjs                  -> /tmp/mx_libs.json                   (library fingerprints)
+6. node harness/analyze.cjs               -> timings.json (derived per-site)
+7. node harness/extra.cjs                 -> /tmp/mx_extra.json                  (loops, marquees, tickers)
+8. node harness/finalize.cjs              -> timings.json (adds curated, stats, experiments)
+9. node harness/sheet.cjs <site ...>      -> <site>-sheet.png contact sheets
+Scripts hard-code /Users/augustas/dev/design-engine paths; steps 3-5 and 7 write to /tmp and finalize.cjs reads those files
+(copies of the last outputs are kept here as mx_*.json). recipes.tsx is the type-checked source of the note's section 8.

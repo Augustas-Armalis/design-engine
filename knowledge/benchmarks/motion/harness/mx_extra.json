@@ -1,0 +1,639 @@
+{
+ "alignui": {
+  "heroLoops": {
+   "totalInfinite": 4,
+   "inViewport": 1,
+   "kinds": {
+    "blink": 1
+   },
+   "durMedInView": 800,
+   "durRangeInView": [
+    800,
+    800
+   ]
+  },
+  "marquees": [],
+  "tickers": [],
+  "heroTickers": [],
+  "scrollDriven": 0,
+  "scrollDrivenKinds": []
+ },
+ "attio": {
+  "heroLoops": {
+   "totalInfinite": 10,
+   "inViewport": 0,
+   "kinds": {},
+   "durMedInView": null,
+   "durRangeInView": null
+  },
+  "marquees": [
+   {
+    "name": "signal-roller-roll",
+    "target": "div.signal-roller-track.flex",
+    "duration": 24000,
+    "easing": "linear",
+    "from": "translateY(0px)",
+    "to": "translateY(-50%)",
+    "width": 284,
+    "dir": "normal"
+   },
+   {
+    "name": "signal-roller-roll",
+    "target": "div.signal-roller-track.flex",
+    "duration": 24000,
+    "easing": "linear",
+    "from": "translateY(0px)",
+    "to": "translateY(-50%)",
+    "width": 284,
+    "dir": "normal"
+   }
+  ],
+  "tickers": [
+   {
+    "desc": "span.flex.h-[8px] \"2\"",
+    "from": "2",
+    "to": "1",
+    "steps": 2,
+    "dur": 0
+   },
+   {
+    "desc": "span.flex.h-[8px] \"2\"",
+    "from": "2",
+    "to": "3",
+    "steps": 2,
+    "dur": 0
+   },
+   {
+    "desc": "span \"0k\"",
+    "from": "0k",
+    "to": "76k",
+    "steps": 53,
+    "dur": 933
+   },
+   {
+    "desc": "span \"0M\"",
+    "from": "0M",
+    "to": "15M",
+    "steps": 16,
+    "dur": 833
+   }
+  ],
+  "heroTickers": [],
+  "scrollDriven": 0,
+  "scrollDrivenKinds": []
+ },
+ "clerk": {
+  "heroLoops": {
+   "totalInfinite": 2,
+   "inViewport": 0,
+   "kinds": {},
+   "durMedInView": null,
+   "durRangeInView": null
+  },
+  "marquees": [],
+  "tickers": [],
+  "heroTickers": [],
+  "scrollDriven": 4,
+  "scrollDrivenKinds": [
+   "ScrollTimeline:ScrollTabs-module__ynmefG__tabs-fade-start",
+   "ScrollTimeline:ScrollTabs-module__ynmefG__tabs-fade-end"
+  ]
+ },
+ "commslayer": {
+  "heroLoops": {
+   "totalInfinite": 33,
+   "inViewport": 3,
+   "kinds": {
+    "pulse/float": 3
+   },
+   "durMedInView": 10000,
+   "durRangeInView": [
+    10000,
+    10000
+   ]
+  },
+  "marquees": [
+   {
+    "name": "clients-slide",
+    "target": "ul.clients-track",
+    "duration": 74000,
+    "easing": "linear",
+    "from": "none",
+    "to": "translate(-50%)",
+    "width": 6332,
+    "dir": "normal"
+   },
+   {
+    "name": "integrations-slide",
+    "target": "ul.integrations-track",
+    "duration": 36000,
+    "easing": "linear",
+    "from": "none",
+    "to": "translate(-50%)",
+    "width": 1722,
+    "dir": "normal"
+   },
+   {
+    "name": "integrations-slide",
+    "target": "ul.integrations-track",
+    "duration": 54000,
+    "easing": "linear",
+    "from": "none",
+    "to": "translate(-50%)",
+    "width": 2328,
+    "dir": "reverse"
+   },
+   {
+    "name": "clients-slide",
+    "target": "ul.clients-track",
+    "duration": 74000,
+    "easing": "linear",
+    "from": "none",
+    "to": "translate(-50%)",
+    "width": 6332,
+    "dir": "normal"
+   },
+   {
+    "name": "integrations-slide",
+    "target": "ul.integrations-track",
+    "duration": 36000,
+    "easing": "linear",
+    "from": "none",
+    "to": "translate(-50%)",
+    "width": 1722,
+    "dir": "normal"
+   },
+   {
+    "name": "integrations-slide",
+    "target": "ul.integrations-track",
+    "duration": 54000,
+    "easing": "linear",
+    "from": "none",
+    "to": "translate(-50%)",
+    "width": 2328,
+    "dir": "reverse"
+   }
+  ],
+  "tickers": [],
+  "heroTickers": [],
+  "scrollDriven": 0,
+  "scrollDrivenKinds": []
+ },
+ "cursor": {
+  "heroLoops": {
+   "totalInfinite": 115,
+   "inViewport": 6,
+   "kinds": {
+    "shimmer": 6
+   },
+   "durMedInView": 2500,
+   "durRangeInView": [
+    2500,
+    2500
+   ]
+  },
+  "marquees": [],
+  "tickers": [],
+  "heroTickers": [],
+  "scrollDriven": 0,
+  "scrollDrivenKinds": []
+ },
+ "dub": {
+  "heroLoops": {
+   "totalInfinite": 17,
+   "inViewport": 12,
+   "kinds": {
+    "pulse/float": 12
+   },
+   "durMedInView": 1200,
+   "durRangeInView": [
+    1200,
+    1200
+   ]
+  },
+  "marquees": [
+   {
+    "name": "infinite-scroll-y",
+    "target": "div.flex.flex-col",
+    "duration": 50000,
+    "easing": "linear",
+    "from": "translateY(0px)",
+    "to": "translateY(-100%)",
+    "width": 248,
+    "dir": "normal"
+   },
+   {
+    "name": "infinite-scroll-y",
+    "target": "div.flex.flex-col",
+    "duration": 50000,
+    "easing": "linear",
+    "from": "translateY(0px)",
+    "to": "translateY(-100%)",
+    "width": 248,
+    "dir": "normal"
+   },
+   {
+    "name": "infinite-scroll-y",
+    "target": "div.flex.flex-col",
+    "duration": 50000,
+    "easing": "linear",
+    "from": "translateY(0px)",
+    "to": "translateY(-100%)",
+    "width": 248,
+    "dir": "reverse"
+   },
+   {
+    "name": "infinite-scroll-y",
+    "target": "div.flex.flex-col",
+    "duration": 50000,
+    "easing": "linear",
+    "from": "translateY(0px)",
+    "to": "translateY(-100%)",
+    "width": 248,
+    "dir": "reverse"
+   },
+   {
+    "name": "infinite-scroll-y",
+    "target": "div.flex.flex-col",
+    "duration": 50000,
+    "easing": "linear",
+    "from": "translateY(0px)",
+    "to": "translateY(-100%)",
+    "width": 248,
+    "dir": "normal"
+   },
+   {
+    "name": "infinite-scroll-y",
+    "target": "div.flex.flex-col",
+    "duration": 50000,
+    "easing": "linear",
+    "from": "translateY(0px)",
+    "to": "translateY(-100%)",
+    "width": 248,
+    "dir": "normal"
+   }
+  ],
+  "tickers": [
+   {
+    "desc": "p.font-mono.text-2xl \"0\"",
+    "from": "0",
+    "to": "242,327,635",
+    "steps": 67,
+    "dur": 2783
+   },
+   {
+    "desc": "p.font-mono.text-2xl \"0\"",
+    "from": "0",
+    "to": "4,138,092,064",
+    "steps": 68,
+    "dur": 2799
+   },
+   {
+    "desc": "p.font-mono.text-2xl \"$0.00\"",
+    "from": "$0.00",
+    "to": "$2,520,281,389.31",
+    "steps": 68,
+    "dur": 2799
+   }
+  ],
+  "heroTickers": [],
+  "scrollDriven": 0,
+  "scrollDrivenKinds": []
+ },
+ "framer": {
+  "heroLoops": {
+   "totalInfinite": 17,
+   "inViewport": 1,
+   "kinds": {
+    "shimmer": 1
+   },
+   "durMedInView": 750,
+   "durRangeInView": [
+    750,
+    750
+   ]
+  },
+  "marquees": [],
+  "tickers": [
+   {
+    "desc": "h6.framer-text \"400\"",
+    "from": "400",
+    "to": "413",
+    "steps": 2,
+    "dur": 0
+   },
+   {
+    "desc": "h6.framer-text \"400\"",
+    "from": "400",
+    "to": "413",
+    "steps": 2,
+    "dur": 0
+   }
+  ],
+  "heroTickers": [],
+  "scrollDriven": 0,
+  "scrollDrivenKinds": []
+ },
+ "granola": {
+  "heroLoops": {
+   "totalInfinite": 123,
+   "inViewport": 101,
+   "kinds": {
+    "spin": 1,
+    "pulse/float": 100
+   },
+   "durMedInView": 2000,
+   "durRangeInView": [
+    500,
+    2000
+   ]
+  },
+  "marquees": [],
+  "tickers": [],
+  "heroTickers": [],
+  "scrollDriven": 24,
+  "scrollDrivenKinds": [
+   "ScrollTimeline:shrink-to-sticky-lg",
+   "ScrollTimeline:float-grey-lg",
+   "ScrollTimeline:floating-fade-out",
+   "ScrollTimeline:float-explosion-lg",
+   "ScrollTimeline:float-green-lg",
+   "ScrollTimeline:video-call-parallax",
+   "ViewTimeline:doers-slide-under",
+   "ViewTimeline:how-it-works-progress-fill"
+  ]
+ },
+ "linear": {
+  "heroLoops": {
+   "totalInfinite": 83,
+   "inViewport": 1,
+   "kinds": {
+    "pulse/float": 1
+   },
+   "durMedInView": 2400,
+   "durRangeInView": [
+    2400,
+    2400
+   ]
+  },
+  "marquees": [],
+  "tickers": [],
+  "heroTickers": [],
+  "scrollDriven": 0,
+  "scrollDrivenKinds": []
+ },
+ "plain": {
+  "heroLoops": {
+   "totalInfinite": 0,
+   "inViewport": 0,
+   "kinds": {},
+   "durMedInView": null,
+   "durRangeInView": null
+  },
+  "marquees": [],
+  "tickers": [],
+  "heroTickers": [],
+  "scrollDriven": 0,
+  "scrollDrivenKinds": []
+ },
+ "posthog": {
+  "heroLoops": {
+   "totalInfinite": 15,
+   "inViewport": 12,
+   "kinds": {
+    "spin": 4,
+    "stroke-flow": 6,
+    "shimmer": 1,
+    "blink": 1
+   },
+   "durMedInView": 3300,
+   "durRangeInView": [
+    800,
+    3600
+   ]
+  },
+  "marquees": [
+   {
+    "name": "tools-ticker-marquee",
+    "target": "div.flex.w-max",
+    "duration": 45000,
+    "easing": "linear",
+    "from": "translateX(0px)",
+    "to": "translateX(-50%)",
+    "width": 4597,
+    "dir": "normal"
+   },
+   {
+    "name": "tools-ticker-marquee",
+    "target": "div.flex.w-max",
+    "duration": 45000,
+    "easing": "linear",
+    "from": "translateX(0px)",
+    "to": "translateX(-50%)",
+    "width": 4526,
+    "dir": "normal"
+   }
+  ],
+  "tickers": [],
+  "heroTickers": [],
+  "scrollDriven": 0,
+  "scrollDrivenKinds": []
+ },
+ "raycast": {
+  "heroLoops": {
+   "totalInfinite": 8,
+   "inViewport": 0,
+   "kinds": {},
+   "durMedInView": null,
+   "durRangeInView": null
+  },
+  "marquees": [],
+  "tickers": [
+   {
+    "desc": "span.styles-module__lSQKOG__count \"1\"",
+    "from": "1",
+    "to": "2",
+    "steps": 2,
+    "dur": 0
+   }
+  ],
+  "heroTickers": [],
+  "scrollDriven": 0,
+  "scrollDrivenKinds": []
+ },
+ "resend": {
+  "heroLoops": {
+   "totalInfinite": 7,
+   "inViewport": 2,
+   "kinds": {
+    "other": 2
+   },
+   "durMedInView": 30000,
+   "durRangeInView": [
+    30000,
+    30000
+   ]
+  },
+  "marquees": [
+   {
+    "name": "scroll-x",
+    "target": "ul.group-hover:animation-pause",
+    "duration": 180000,
+    "easing": "linear",
+    "from": "translate(0px)",
+    "to": "translate(calc(-100% - 32px))",
+    "width": 4788,
+    "dir": "normal"
+   },
+   {
+    "name": "scroll-x",
+    "target": "ul.group-hover:animation-pause",
+    "duration": 180000,
+    "easing": "linear",
+    "from": "translate(0px)",
+    "to": "translate(calc(-100% - 32px))",
+    "width": 4788,
+    "dir": "normal"
+   },
+   {
+    "name": "scroll-x",
+    "target": "ul.group-hover:animation-pause",
+    "duration": 180000,
+    "easing": "linear",
+    "from": "translate(0px)",
+    "to": "translate(calc(-100% - 32px))",
+    "width": 4788,
+    "dir": "normal"
+   },
+   {
+    "name": "scroll-x",
+    "target": "ul.group-hover:animation-pause",
+    "duration": 180000,
+    "easing": "linear",
+    "from": "translate(0px)",
+    "to": "translate(calc(-100% - 32px))",
+    "width": 4788,
+    "dir": "normal"
+   },
+   {
+    "name": "scroll-x",
+    "target": "ul.group-hover:animation-pause",
+    "duration": 180000,
+    "easing": "linear",
+    "from": "translate(0px)",
+    "to": "translate(calc(-100% - 32px))",
+    "width": 4788,
+    "dir": "normal"
+   },
+   {
+    "name": "scroll-x",
+    "target": "ul.group-hover:animation-pause",
+    "duration": 180000,
+    "easing": "linear",
+    "from": "translate(0px)",
+    "to": "translate(calc(-100% - 32px))",
+    "width": 4788,
+    "dir": "normal"
+   }
+  ],
+  "tickers": [],
+  "heroTickers": [],
+  "scrollDriven": 0,
+  "scrollDrivenKinds": []
+ },
+ "stripe": {
+  "heroLoops": {
+   "totalInfinite": 0,
+   "inViewport": 0,
+   "kinds": {},
+   "durMedInView": null,
+   "durRangeInView": null
+  },
+  "marquees": [],
+  "tickers": [
+   {
+    "desc": "span \"0\"",
+    "from": "0",
+    "to": "1",
+    "steps": 2,
+    "dur": 0
+   },
+   {
+    "desc": "span \"9\"",
+    "from": "9",
+    "to": "0",
+    "steps": 2,
+    "dur": 0
+   },
+   {
+    "desc": "span \"0\"",
+    "from": "0",
+    "to": "1",
+    "steps": 2,
+    "dur": 0
+   },
+   {
+    "desc": "span \"9\"",
+    "from": "9",
+    "to": "0",
+    "steps": 2,
+    "dur": 0
+   },
+   {
+    "desc": "div.billing-plan-graphic__chart-title.tabula \"1,500,000,000\"",
+    "from": "1,500,000,000",
+    "to": "2,010,569,010",
+    "steps": 4,
+    "dur": 2625
+   },
+   {
+    "desc": "div.connect-platform-graphic__dashboard-tabl \"€7,090.00\"",
+    "from": "€7,090.00",
+    "to": "€7,989.00",
+    "steps": 78,
+    "dur": 1569
+   },
+   {
+    "desc": "div.connect-platform-graphic__dashboard-tabl \"€1,411.98\"",
+    "from": "€1,411.98",
+    "to": "€1,436.98",
+    "steps": 97,
+    "dur": 1578
+   }
+  ],
+  "heroTickers": [
+   {
+    "desc": "span \"7\"",
+    "from": "7",
+    "to": "9",
+    "steps": 3,
+    "dur": 1202
+   },
+   {
+    "desc": "span \"7\"",
+    "from": "7",
+    "to": "9",
+    "steps": 3,
+    "dur": 1236
+   }
+  ],
+  "scrollDriven": 3,
+  "scrollDrivenKinds": [
+   "ScrollTimeline:detect-scroll"
+  ]
+ },
+ "vercel": {
+  "heroLoops": {
+   "totalInfinite": 0,
+   "inViewport": 0,
+   "kinds": {},
+   "durMedInView": null,
+   "durRangeInView": null
+  },
+  "marquees": [],
+  "tickers": [],
+  "heroTickers": [],
+  "scrollDriven": 0,
+  "scrollDrivenKinds": []
+ }
+}

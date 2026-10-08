@@ -14,7 +14,7 @@ export const spring = { type: 'spring', stiffness: 420, damping: 36 } as const
 
 // Kaching reveal: travel 1.2s on ease.reveal, fade 0.9s, optional 6px blur on text-sized blocks only.
 export const reveal = (delay: number, { y = 28, blur = false }: { y?: number; blur?: boolean } = {}) => ({
-  initial: { opacity: 0, y, ...(blur ? { filter: 'blur(6px)' } : {}) },
+  initial: { opacity: 0.01, y, ...(blur ? { filter: 'blur(6px)' } : {}) }, // 0.01 not 0: LCP lands at first paint (measured: 0 delays LCP to delay + duration)
   animate: { opacity: 1, y: 0, ...(blur ? { filter: 'blur(0px)' } : {}) },
   transition: {
     y: { delay, duration: dur.reveal, ease: ease.reveal },

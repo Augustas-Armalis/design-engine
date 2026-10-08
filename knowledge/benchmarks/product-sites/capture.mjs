@@ -55,6 +55,8 @@ function measure() {
       const hasText = [...e.childNodes].some(n => n.nodeType === 3 && n.textContent.trim().length > 0);
       if (!(isMedia || hasText || e.tagName === 'BUTTON')) return false;
       if (isMedia && r2.w >= vw - 4 && r2.h >= r.h * 0.8) return false; // full-bleed bg
+      if (r2.y < r.y - 2 || r2.b > r.y + r.h + 2) return false; // clip to section
+      const pos = cs(e).position; if (pos === 'fixed') return false;
       return true;
     });
     if (leaves.length) {
@@ -70,8 +72,12 @@ function measure() {
     const hs = [...el.querySelectorAll('h1,h2,h3')].filter(vis);
     let hd = hs[0];
     if (!hd) { let bigE = null; leaves.forEach(l => { if (['IMG', 'VIDEO', 'CANVAS', 'SVG', 'PICTURE', 'IFRAME'].includes(l.tagName.toUpperCase())) return; const f = parseFloat(cs(l).fontSize); if (!bigE || f > bigE.f) bigE = { f, e: l }; }); if (bigE && bigE.f >= 20) hd = bigE.e; }
+    { // css padding chain
+      let n = el, mx = { t: 0, b: 0 }; for (let i = 0; i < 4 && n; i++) { const st = cs(n); mx.t = Math.max(mx.t, parseFloat(st.paddingTop) || 0); mx.b = Math.max(mx.b, parseFloat(st.paddingBottom) || 0); const ks = kids(n); n = ks.length === 1 ? ks[0] : null; }
+      o.cssPadT = mx.t; o.cssPadB = mx.b;
+    }
     if (hd) {
-      o.heading = typo(hd);
+      o.heading = typo(hd); o.headingOffset = round(R(hd).y - r.y);
       // sub
       const hr = R(hd);
       const sub = leaves.filter(l => { const q = R(l); return q.y >= hr.b - 4 && q.y < hr.b + 120 && txt(l).length > 25 && !['A', 'BUTTON'].includes(l.tagName) && l !== hd; })[0];
@@ -137,10 +143,11 @@ function measure() {
 }
 
 const targets = process.argv.slice(2);
-const only = targets.filter((_, i) => i % 2 === 0);
+const measureOnly = targets.includes('--measure-only');
+const tl = targets.filter(t => t !== '--measure-only');
 const b = await chromium.launch();
-for (let i = 0; i < targets.length; i += 2) {
-  const slug = targets[i], url = targets[i + 1];
+for (let i = 0; i < tl.length; i += 2) {
+  const slug = tl[i], url = tl[i + 1];
   const ctx = await b.newContext({ viewport: { width: 1440, height: 900 }, deviceScaleFactor: 1, userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36', locale: 'en-US' });
   const p = await ctx.newPage();
   try {
@@ -148,7 +155,7 @@ for (let i = 0; i < targets.length; i += 2) {
     try { await p.waitForLoadState('networkidle', { timeout: 15000 }); } catch {}
     await p.waitForTimeout(3500);
     // try decline cookies (privacy-preserving)
-    for (const t of ['Reject all', 'Reject', 'Decline', 'Only necessary', 'Necessary only']) { try { const btn = p.getByRole('button', { name: new RegExp('^' + t, 'i') }).first(); if (await btn.isVisible({ timeout: 300 })) { await btn.click({ timeout: 800 }); break; } } catch {} }
+    for (const t of ['Reject all', 'Reject', 'Decline', 'Only necessary', 'Necessary only', 'Opt out of all', 'Opt out']) { try { const btn = p.getByRole('button', { name: new RegExp('^' + t, 'i') }).first(); if (await btn.isVisible({ timeout: 300 })) { await btn.click({ timeout: 800 }); break; } } catch {} }
     await p.addStyleTag({ content: 'html{scroll-behavior:auto!important}' });
     // progressive scroll
     let lastH = 0;
@@ -165,6 +172,7 @@ for (let i = 0; i < targets.length; i += 2) {
     data.url = url; data.slug = slug;
     fs.writeFileSync(path.join(dir, 'raw', slug + '.json'), JSON.stringify(data, null, 1));
     const H = data.pageHeight;
+    if (measureOnly) { console.log('measured', slug, 'H=', H, 'sections=', data.sections.length); await ctx.close(); continue; }
     try { await p.screenshot({ path: path.join(dir, slug + '-full.png'), fullPage: true }); } catch (e) { console.log('full fail', slug, e.message.slice(0, 80)); }
     const n = Math.ceil(H / 1800);
     for (let k = 0; k < Math.min(n, 14); k++) {

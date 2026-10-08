@@ -34,6 +34,8 @@
     "br": "0px",
     "padL": "0px"
    },
+   "cssPadT": 16,
+   "cssPadB": 16,
    "cardCount": 0,
    "cardRadius": [],
    "cardShadow": [],
@@ -82,6 +84,8 @@
     "br": "0px",
     "padL": "0px"
    },
+   "cssPadT": 0,
+   "cssPadB": 0,
    "heading": {
     "text": "Agentic Infrastructure",
     "tag": "h1",
@@ -99,6 +103,7 @@
     "y": 328,
     "lines": 2
    },
+   "headingOffset": 264,
    "allHeadings": [
     {
      "t": "h1",
@@ -143,7 +148,7 @@
    "padT": "0px",
    "padB": "0px",
    "effPadT": 0,
-   "effPadB": -56,
+   "effPadB": 100,
    "contentL": 24,
    "contentR": 1416,
    "contentW": 1392,
@@ -154,6 +159,8 @@
     "br": "0px",
     "padL": "0px"
    },
+   "cssPadT": 0,
+   "cssPadB": 0,
    "heading": {
     "text": "Build agents on infrastructure that thinks like them",
     "tag": "h2",
@@ -171,6 +178,7 @@
     "y": 1108,
     "lines": 2
    },
+   "headingOffset": 0,
    "allHeadings": [
     {
      "t": "h2",
@@ -236,6 +244,8 @@
     "br": "0px",
     "padL": "0px"
    },
+   "cssPadT": 0,
+   "cssPadB": 0,
    "heading": {
     "text": "",
     "tag": "h2",
@@ -253,6 +263,7 @@
     "y": 3678,
     "lines": 1
    },
+   "headingOffset": 208,
    "allHeadings": [
     {
      "t": "h2",
@@ -337,6 +348,8 @@
     "br": "0px",
     "padL": "0px"
    },
+   "cssPadT": 0,
+   "cssPadB": 0,
    "heading": {
     "text": "",
     "tag": "h2",
@@ -354,6 +367,7 @@
     "y": 4672,
     "lines": 1
    },
+   "headingOffset": 276,
    "allHeadings": [
     {
      "t": "h2",

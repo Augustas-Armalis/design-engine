@@ -34,6 +34,8 @@
     "br": "0px",
     "padL": "40px"
    },
+   "cssPadT": 0,
+   "cssPadB": 0,
    "heading": {
     "text": "The AI notepad for back-to-back meetings",
     "tag": "h1",
@@ -51,6 +53,7 @@
     "y": 269,
     "lines": 4
    },
+   "headingOffset": 269,
    "sub": {
     "text": "Notes, actions and memory.",
     "tag": "p",
@@ -141,7 +144,7 @@
    "smallGlyphs": 4,
    "links": 2,
    "buttons": 2,
-   "words": 190,
+   "words": 196,
    "snippet": "New Granola for Apple Watch The AI notepad for back-to-back meetings Notes, actions and memory. Without a meeting bot. Download for free Available for macOS, Windows, iOS, Android Effortless notes, enhanced instantly. Us",
    "sticky": true
   },
@@ -172,6 +175,8 @@
     "br": "0px",
     "padL": "0px"
    },
+   "cssPadT": 0,
+   "cssPadB": 0,
    "heading": {
     "text": "For the doers",
     "tag": "h2",
@@ -189,6 +194,7 @@
     "y": 1824,
     "lines": 1
    },
+   "headingOffset": 24,
    "sub": {
     "text": "Trusted by teams we admire",
     "tag": "p",
@@ -261,6 +267,8 @@
     "br": "0px",
     "padL": "0px"
    },
+   "cssPadT": 160,
+   "cssPadB": 160,
    "heading": {
     "text": "Granola helps you before, during and after your meetings.",
     "tag": "h2",
@@ -278,6 +286,7 @@
     "y": 2669,
     "lines": 3
    },
+   "headingOffset": 160,
    "allHeadings": [
     {
      "t": "h2",
@@ -322,10 +331,12 @@
    "padT": "0px",
    "padB": "0px",
    "effPadT": 48,
-   "effPadB": -127,
+   "effPadB": 8,
    "contentL": 120,
    "contentR": 1385,
    "contentW": 1265,
+   "cssPadT": 0,
+   "cssPadB": 0,
    "heading": {
     "text": "Start your meeting prepared",
     "tag": "h3",
@@ -343,6 +354,7 @@
     "y": 3021,
     "lines": 1
    },
+   "headingOffset": 48,
    "sub": {
     "text": "Granola syncs with your calendar and preps a Brief before every external meeting: who’s attending, what you discussed last time, and what ma",
     "tag": "p",
@@ -454,6 +466,8 @@
     "br": "0px",
     "padL": "40px"
    },
+   "cssPadT": 112,
+   "cssPadB": 112,
    "heading": {
     "text": "Perfect meeting memory",
     "tag": "h2",
@@ -471,6 +485,7 @@
     "y": 5581,
     "lines": 3
    },
+   "headingOffset": 156,
    "eyebrow": {
     "text": "Granola Chat",
     "tag": "p",
@@ -570,6 +585,8 @@
     "br": "0px",
     "padL": "40px"
    },
+   "cssPadT": 112,
+   "cssPadB": 112,
    "heading": {
     "text": "Helping busy people through busy days",
     "tag": "h2",
@@ -587,6 +604,7 @@
     "y": 6119,
     "lines": 2
    },
+   "headingOffset": 112,
    "sub": {
     "text": "“ Granola generates the best meeting notes of anything I’ve tried so far.”",
     "tag": "blockquote",
@@ -659,6 +677,8 @@
     "br": "0px",
     "padL": "0px"
    },
+   "cssPadT": 128,
+   "cssPadB": 128,
    "heading": {
     "text": "Works everywhere you do, how you do",
     "tag": "h2",
@@ -676,6 +696,7 @@
     "y": 7027,
     "lines": 2
    },
+   "headingOffset": 172,
    "eyebrow": {
     "text": "Features",
     "tag": "p",
@@ -792,8 +813,8 @@
    "padB": "128px",
    "effPadT": 128,
    "effPadB": 163,
-   "contentL": -82,
-   "contentR": 7541,
+   "contentL": -81,
+   "contentR": 7542,
    "contentW": 7623,
    "container": {
     "w": 1280,
@@ -802,6 +823,8 @@
     "br": "0px",
     "padL": "40px"
    },
+   "cssPadT": 128,
+   "cssPadB": 128,
    "heading": {
     "text": "Use your meeting notes anywhere",
     "tag": "h2",
@@ -819,6 +842,7 @@
     "y": 11690,
     "lines": 2
    },
+   "headingOffset": 172,
    "eyebrow": {
     "text": "Granola MCP Connector",
     "tag": "p",
@@ -896,6 +920,8 @@
     "br": "0px",
     "padL": "32px"
    },
+   "cssPadT": 0,
+   "cssPadB": 0,
    "heading": {
     "text": "Unlimited meeting notes for free",
     "tag": "h2",
@@ -913,6 +939,7 @@
     "y": 12863,
     "lines": 3
    },
+   "headingOffset": 194,
    "sub": {
     "text": "Take as many notes as you’d like. Upgrade to view and work with notes older than 30 days.",
     "tag": "p",

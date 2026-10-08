@@ -1,0 +1,254 @@
+{
+ "vw": 1440,
+ "H": 15983,
+ "footTop": 15983,
+ "navH": null,
+ "anchors": [
+  {
+   "i": 0,
+   "text": "Your shortcut to everything.",
+   "tag": "h1",
+   "chars": 28,
+   "words": 4,
+   "size": 64,
+   "weight": "600",
+   "lsEm": 0,
+   "lhRatio": 1.1,
+   "lines": 2,
+   "w": 540,
+   "x": 450,
+   "align": "center",
+   "fam": "Inter",
+   "color": "rgb(255, 255, 255)",
+   "y": 370,
+   "groupTop": 370,
+   "gapAbove": 370,
+   "gapBelowLastContent": 40,
+   "sectionContentH": 3697,
+   "eyebrow": null,
+   "sub": {
+    "chars": 108,
+    "size": 18,
+    "lines": 2,
+    "w": 786,
+    "color": "rgb(255, 255, 255)"
+   },
+   "firstBlock": null,
+   "bg": "rgb(7, 8, 10)",
+   "secTop": 0,
+   "secH": 967,
+   "secTag": "div",
+   "secPadT": "0px",
+   "secPadB": "0px",
+   "secBgImg": false,
+   "secBorderT": "0px rgb(255, 255, 255)"
+  },
+  {
+   "i": 1,
+   "text": "Plus thousands more...",
+   "tag": "h3",
+   "chars": 22,
+   "words": 3,
+   "size": 24,
+   "weight": "500",
+   "lsEm": 0.008,
+   "lhRatio": 1.2,
+   "lines": 1,
+   "w": 267,
+   "x": 7237,
+   "align": "start",
+   "fam": "Inter",
+   "color": "rgb(255, 255, 255)",
+   "y": 4107,
+   "groupTop": 4107,
+   "gapAbove": 40,
+   "gapBelowLastContent": 5,
+   "sectionContentH": 705,
+   "eyebrow": null,
+   "sub": null,
+   "firstBlock": null,
+   "bg": "rgb(17, 18, 20)",
+   "secTop": 3286,
+   "secH": 1257,
+   "secTag": "div",
+   "secPadT": "224px",
+   "secPadB": "224px",
+   "secBgImg": false,
+   "secBorderT": "0px rgb(255, 255, 255)"
+  },
+  {
+   "i": 2,
+   "text": "Meet your new virtual assistant",
+   "tag": "h2",
+   "chars": 31,
+   "words": 5,
+   "size": 32,
+   "weight": "500",
+   "lsEm": -0.025,
+   "lhRatio": 1.2,
+   "lines": 1,
+   "w": 453,
+   "x": 494,
+   "align": "center",
+   "fam": "Inter",
+   "color": "rgb(255, 255, 255)",
+   "y": 4817,
+   "groupTop": 4796,
+   "gapAbove": 493,
+   "gapBelowLastContent": 444,
+   "sectionContentH": 5500,
+   "eyebrow": {
+    "text": "AI AGENT",
+    "size": 12,
+    "upper": true,
+    "mono": true,
+    "pill": false
+   },
+   "sub": {
+    "chars": 63,
+    "size": 18,
+    "lines": 2,
+    "w": 500,
+    "color": "rgba(255, 255, 255, 0.5)"
+   },
+   "firstBlock": {
+    "dy": 125,
+    "w": 972,
+    "h": 595,
+    "radius": "26px",
+    "tag": "div"
+   },
+   "bg": "rgb(7, 8, 10)",
+   "secTop": 4724,
+   "secH": 1389,
+   "secTag": "div",
+   "secPadT": "0px",
+   "secPadB": "0px",
+   "secBgImg": false,
+   "secBorderT": "0px rgb(255, 255, 255)"
+  },
+  {
+   "i": 3,
+   "text": "Build the perfect tools.",
+   "tag": "h3",
+   "chars": 24,
+   "words": 4,
+   "size": 56,
+   "weight": "400",
+   "lsEm": 0.004,
+   "lhRatio": 1.17,
+   "lines": 3,
+   "w": 307,
+   "x": 211,
+   "align": "start",
+   "fam": "Inter",
+   "color": "rgb(255, 255, 255)",
+   "y": 10761,
+   "groupTop": 10761,
+   "gapAbove": 444,
+   "gapBelowLastContent": 88,
+   "sectionContentH": 5134,
+   "eyebrow": null,
+   "sub": {
+    "chars": 106,
+    "size": 14,
+    "lines": 4,
+    "w": 307,
+    "color": "rgb(106, 107, 108)"
+   },
+   "firstBlock": {
+    "dy": 364,
+    "w": 362,
+    "h": 356,
+    "radius": "0px",
+    "tag": "svg"
+   },
+   "bg": "rgb(7, 8, 10)",
+   "secTop": 10317,
+   "secH": 3182,
+   "secTag": "div",
+   "secPadT": "224px",
+   "secPadB": "224px",
+   "secBgImg": false,
+   "secBorderT": "0px rgb(255, 255, 255)"
+  }
+ ],
+ "cardClusters": [
+  {
+   "key": "20px | noborder | rgba(255, 255, 255, 0.1) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.4) 0px 30px 50px 0px, rgba | rgba(0, 0, 0, 0)",
+   "n": 8,
+   "sizes": [
+    "360x536",
+    "360x536",
+    "360x536",
+    "360x536",
+    "360x536",
+    "360x536"
+   ],
+   "gapMode": [
+    "56",
+    5
+   ],
+   "padMode": [
+    "0px/0px",
+    8
+   ]
+  },
+  {
+   "key": "20px | noborder | rgba(255, 255, 255, 0.1) 0px 1px 0px 0px inset, rgba(7, 13, 79, 0.1) 0px 0px 20px 3px, rgb | rgba(0, 0, 0, 0)",
+   "n": 4,
+   "sizes": [
+    "360x536",
+    "360x536",
+    "360x536",
+    "360x536"
+   ],
+   "gapMode": [
+    "56",
+    1
+   ],
+   "padMode": [
+    "0px/0px",
+    4
+   ]
+  },
+  {
+   "key": "20px | noborder | rgba(0, 0, 0, 0.5) 0px 30px 50px 0px, rgba(255, 255, 255, 0.1) 0px 1px 0px 0px inset, rgba | rgba(0, 0, 0, 0)",
+   "n": 2,
+   "sizes": [
+    "360x536",
+    "360x536"
+   ],
+   "gapMode": [
+    "56",
+    1
+   ],
+   "padMode": [
+    "0px/0px",
+    2
+   ]
+  },
+  {
+   "key": "30px | noborder | noshadow | rgba(255, 255, 255, 0.02)",
+   "n": 2,
+   "sizes": [
+    "495x513",
+    "495x513"
+   ],
+   "gapMode": [
+    "30",
+    1
+   ],
+   "padMode": [
+    "24px/24px",
+    2
+   ]
+  }
+ ],
+ "headingLeftMode": [
+  "211",
+  1
+ ],
+ "slug": "raycast",
+ "url": "https://www.raycast.com"
+}

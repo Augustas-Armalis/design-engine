@@ -22,11 +22,13 @@
    "borderBottom": "0px rgb(0, 0, 0)",
    "padT": "0px",
    "padB": "0px",
-   "effPadT": -17,
+   "effPadT": 0,
    "effPadB": 0,
    "contentL": 0,
    "contentR": 1639,
    "contentW": 1639,
+   "cssPadT": 0,
+   "cssPadB": 0,
    "heading": {
     "text": "The intelligent documentation platform",
     "tag": "h1",
@@ -44,6 +46,7 @@
     "y": 195,
     "lines": 3
    },
+   "headingOffset": 130,
    "sub": {
     "text": "Self-updating documentation for startups, enterprises, and agents.",
     "tag": "p",
@@ -103,7 +106,7 @@
    "links": 3,
    "buttons": 0,
    "words": 82,
-   "snippet": "Agent traffic 77.9649 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 . 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 % The intelligent documentation platform Self-updating documentation for sta",
+   "snippet": "Agent traffic 77.9682 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 . 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 % The intelligent documentation platform Self-updating documentation for sta",
    "sticky": false
   },
   {
@@ -123,9 +126,11 @@
    "padB": "0px",
    "effPadT": 28,
    "effPadB": 91,
-   "contentL": 197,
-   "contentR": 2285,
-   "contentW": 2089,
+   "contentL": -227,
+   "contentR": 1709,
+   "contentW": 1936,
+   "cssPadT": 0,
+   "cssPadB": 0,
    "heading": {
     "text": "Join 20,000+ of the world's most ambitious companies building for agents.",
     "tag": "h2",
@@ -143,6 +148,7 @@
     "y": 1086,
     "lines": 3
    },
+   "headingOffset": 29,
    "allHeadings": [
     {
      "t": "h2",
@@ -198,11 +204,11 @@
     "canvas": 0,
     "iframe": 0
    },
-   "smallGlyphs": 8,
-   "links": 3,
+   "smallGlyphs": 7,
+   "links": 4,
    "buttons": 0,
-   "words": 626,
-   "snippet": "Join 20,000+ of the world's most ambitious companies building for agents. Read customer stories Spotify Alibaba CoreWeave Notion Polymarket ClickHouse Agents at work today Pages read 10,759,934 0 1 2 3 4 5 6 7 8 9 0 1 2 ",
+   "words": 625,
+   "snippet": "Join 20,000+ of the world's most ambitious companies building for agents. Read customer stories 1Password Circle Cerebras Box Harvey Agents at work today Pages read 10,759,925 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 , 0 ",
    "sticky": false
   },
   {
@@ -225,6 +231,8 @@
    "contentL": 187,
    "contentR": 1239,
    "contentW": 1052,
+   "cssPadT": 0,
+   "cssPadB": 0,
    "heading": {
     "text": "One platform for your entire knowledge stack. Agents that keep work moving 24/7.",
     "tag": "h2",
@@ -242,6 +250,7 @@
     "y": 1705,
     "lines": 3
    },
+   "headingOffset": 40,
    "allHeadings": [
     {
      "t": "h2",
@@ -351,6 +360,8 @@
    "contentL": 0,
    "contentR": 3937,
    "contentW": 3937,
+   "cssPadT": 0,
+   "cssPadB": 0,
    "heading": {
     "text": "Powering businesses of all sizes. Run your business on a reliable platform that adapts to your needs.",
     "tag": "h2",
@@ -368,6 +379,7 @@
     "y": 3365,
     "lines": 3
    },
+   "headingOffset": 40,
    "allHeadings": [
     {
      "t": "h2",
@@ -436,6 +448,8 @@
    "contentL": 170,
    "contentR": 1256,
    "contentW": 1086,
+   "cssPadT": 0,
+   "cssPadB": 0,
    "heading": {
     "text": "Built to scale with the agent web. Built for scale with enterprise-grade reliability and performance.",
     "tag": "h2",
@@ -453,6 +467,7 @@
     "y": 4229,
     "lines": 3
    },
+   "headingOffset": 40,
    "allHeadings": [
     {
      "t": "h2",
@@ -501,6 +516,8 @@
    "contentL": 0,
    "contentR": 2670,
    "contentW": 2670,
+   "cssPadT": 0,
+   "cssPadB": 0,
    "heading": {
     "text": "Enabling the next generation of startups. Powering a quarter of the last YC batch to 40% of the Forbes AI 50.",
     "tag": "h2",
@@ -518,6 +535,7 @@
     "y": 5082,
     "lines": 3
    },
+   "headingOffset": 40,
    "allHeadings": [
     {
      "t": "h2",
@@ -562,10 +580,12 @@
    "padT": "0px",
    "padB": "0px",
    "effPadT": 40,
-   "effPadB": 207,
+   "effPadB": 255,
    "contentL": 203,
    "contentR": 1240,
    "contentW": 1037,
+   "cssPadT": 0,
+   "cssPadB": 0,
    "heading": {
     "text": "Trusted by teams building for agents.",
     "tag": "h2",
@@ -583,6 +603,7 @@
     "y": 5988,
     "lines": 1
    },
+   "headingOffset": 40,
    "allHeadings": [
     {
      "t": "h2",
@@ -636,11 +657,11 @@
     "canvas": 0,
     "iframe": 0
    },
-   "smallGlyphs": 4,
+   "smallGlyphs": 2,
    "links": 1,
    "buttons": 1,
-   "words": 187,
-   "snippet": "Trusted by teams building for agents. Read more Pause testimonials Matt Palmer Developer Relations, Replit Our docs got a makeover. We moved to Mintlify for a better navigation and user experience. Nicolas Machado Co-fou",
+   "words": 166,
+   "snippet": "Trusted by teams building for agents. Read more Pause testimonials Taylor Halliday CEO, Ravenna Documentation is usually an afterthought. We worked with our friends at Mintlify and Arcade to transform our docs from “func",
    "sticky": false
   },
   {
@@ -663,6 +684,8 @@
    "contentL": 186,
    "contentR": 1239,
    "contentW": 1054,
+   "cssPadT": 0,
+   "cssPadB": 0,
    "heading": {
     "text": "Latest updates",
     "tag": "h2",
@@ -680,6 +703,7 @@
     "y": 6871,
     "lines": 1
    },
+   "headingOffset": 40,
    "allHeadings": [
     {
      "t": "h2",
@@ -752,11 +776,13 @@
    "borderBottom": "0px rgb(241, 240, 238)",
    "padT": "0px",
    "padB": "0px",
-   "effPadT": -509,
-   "effPadB": -110,
+   "effPadT": 49,
+   "effPadB": 48,
    "contentL": 215,
-   "contentR": 1539,
-   "contentW": 1324,
+   "contentR": 1210,
+   "contentW": 994,
+   "cssPadT": 0,
+   "cssPadB": 0,
    "heading": {
     "text": "The knowledge platform built for agents",
     "tag": "h2",
@@ -774,6 +800,7 @@
     "y": 7647,
     "lines": 1
    },
+   "headingOffset": 50,
    "allHeadings": [
     {
      "t": "h2",

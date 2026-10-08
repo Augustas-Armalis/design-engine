@@ -1,0 +1,5205 @@
+{
+ "generatedAt": "2026-10-08",
+ "viewport": "1440x900",
+ "method": "capture.mjs (sections+footer), measure2.mjs (heading-anchored rhythm, card clusters), measure3-targeted.mjs (non-h* headings); sequences hand-read from slices/",
+ "sites": {
+  "linear": {
+   "url": "https://linear.app",
+   "pageHeight": 9960,
+   "nav": {
+    "pos": "fixed",
+    "h": 73,
+    "bg": "rgba(0, 0, 0, 0)",
+    "blur": "blur(20px)",
+    "radius": "0px"
+   },
+   "sequence": [
+    "hero(copy-left + full app window 1320x720 in frame)",
+    "logo-wall(7 mono-white logos, caption below in mono caps)",
+    "statement(48px two-tone paragraph)",
+    "feature-chapter x4 (left h2 + right body + media + \"Features +\" list)",
+    "changelog(4 entries on a dotted timeline, mono dates)",
+    "testimonials(2 colour-filled quote cards 880x480 + 432x480, stat line)",
+    "final-cta(72px centred, 2 buttons)"
+   ],
+   "theme": "dark",
+   "rails": "hairlines-horizontal-only",
+   "proof": "real logos (mono white); quotes with named people",
+   "contentWidth": 1280,
+   "sectionHeading": {
+    "n": 6,
+    "medianSizePx": 48,
+    "weight": 510,
+    "trackingEm": -0.022,
+    "lineHeight": 1,
+    "words": 3,
+    "chars": 23,
+    "lines": 2,
+    "sizes": [
+     48,
+     48,
+     48,
+     48,
+     48,
+     48
+    ]
+   },
+   "seamGapPx": {
+    "median": 270,
+    "samples": [
+     90,
+     330,
+     270,
+     270,
+     270,
+     294
+    ]
+   },
+   "cardClusters": [
+    {
+     "n": 4,
+     "style": "12px | 1px rgba(255, 255, 255, 0.12) | rgba(0, 0, 0, 0.25) 0px 2px 32px 0px | rgb(15, 16, 17)",
+     "gap": [
+      "12",
+      3
+     ],
+     "padding": [
+      "0px/0px",
+      4
+     ],
+     "sizes": [
+      "400x560",
+      "400x560",
+      "400x560",
+      "400x560"
+     ]
+    },
+    {
+     "n": 3,
+     "style": "12px | 1px rgba(255, 255, 255, 0.08) | noshadow | rgba(0, 0, 0, 0)",
+     "gap": [
+      "12",
+      1
+     ],
+     "padding": [
+      "0px/0px",
+      3
+     ],
+     "sizes": [
+      "672x632",
+      "400x560",
+      "400x560"
+     ]
+    },
+    {
+     "n": 1,
+     "style": "9px | 1px rgba(255, 255, 255, 0.08) | rgba(0, 0, 0, 0.2) 0px 0px 0px 1px | rgb(15, 16, 17)",
+     "gap": null,
+     "padding": [
+      "12px/16px",
+      1
+     ],
+     "sizes": [
+      "662x149"
+     ]
+    },
+    {
+     "n": 1,
+     "style": "12px | 1px rgba(255, 255, 255, 0.12) | rgba(0, 0, 0, 0.25) 0px 2px 32px 0px | rgb(22, 23, 24)",
+     "gap": null,
+     "padding": [
+      "0px/0px",
+      1
+     ],
+     "sizes": [
+      "400x520"
+     ]
+    }
+   ],
+   "anchors": [
+    {
+     "text": "The product development",
+     "size": 64,
+     "weight": "510",
+     "lsEm": -0.022,
+     "lh": 1,
+     "lines": 2,
+     "w": 763,
+     "align": "start",
+     "gapAbove": 242,
+     "eyebrow": null,
+     "subChars": 74,
+     "subSize": 15,
+     "subLines": 1,
+     "firstBlockDy": 161,
+     "firstBlockRadius": "12px"
+    },
+    {
+     "text": "A new species of product tool.",
+     "size": 48,
+     "weight": "510",
+     "lsEm": -0.022,
+     "lh": 1,
+     "lines": 1,
+     "w": 611,
+     "align": "start",
+     "gapAbove": 90,
+     "eyebrow": null,
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": 281,
+     "firstBlockRadius": "0px"
+    },
+    {
+     "text": "Intake and integrations",
+     "size": 48,
+     "weight": "510",
+     "lsEm": -0.022,
+     "lh": 1,
+     "lines": 2,
+     "w": 542,
+     "align": "start",
+     "gapAbove": 330,
+     "eyebrow": null,
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": 141,
+     "firstBlockRadius": "16px"
+    },
+    {
+     "text": "Planning and monitoring",
+     "size": 48,
+     "weight": "510",
+     "lsEm": -0.022,
+     "lh": 1,
+     "lines": 2,
+     "w": 542,
+     "align": "start",
+     "gapAbove": 270,
+     "eyebrow": null,
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": 137,
+     "firstBlockRadius": "12px"
+    },
+    {
+     "text": "AI and automations",
+     "size": 48,
+     "weight": "510",
+     "lsEm": -0.022,
+     "lh": 1,
+     "lines": 2,
+     "w": 542,
+     "align": "start",
+     "gapAbove": 270,
+     "eyebrow": null,
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": 241,
+     "firstBlockRadius": "12px"
+    },
+    {
+     "text": "Build, review, and ship",
+     "size": 48,
+     "weight": "510",
+     "lsEm": -0.022,
+     "lh": 1,
+     "lines": 2,
+     "w": 542,
+     "align": "start",
+     "gapAbove": 270,
+     "eyebrow": null,
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": 169,
+     "firstBlockRadius": "12px"
+    },
+    {
+     "text": "Changelog",
+     "size": 48,
+     "weight": "510",
+     "lsEm": -0.022,
+     "lh": 1,
+     "lines": 1,
+     "w": 224,
+     "align": "start",
+     "gapAbove": 294,
+     "eyebrow": null,
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": 186,
+     "firstBlockRadius": "0px"
+    },
+    {
+     "text": "Built for the future. Available today.",
+     "size": 72,
+     "weight": "510",
+     "lsEm": -0.022,
+     "lh": 1,
+     "lines": 2,
+     "w": 722,
+     "align": "center",
+     "gapAbove": 220,
+     "eyebrow": null,
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": null,
+     "firstBlockRadius": null
+    }
+   ],
+   "footer": {
+    "heightPx": 494,
+    "bg": "rgb(8, 9, 10)",
+    "linkCount": 38,
+    "linkFontPx": "13",
+    "effPadTop": 57,
+    "effPadBottom": 56,
+    "cols": 6
+   }
+  },
+  "vercel": {
+   "url": "https://vercel.com",
+   "pageHeight": 5930,
+   "nav": {
+    "pos": "sticky",
+    "h": 64,
+    "bg": "rgba(0, 0, 0, 0)",
+    "blur": "none",
+    "radius": "0px"
+   },
+   "sequence": [
+    "hero(split: H1 left, mark centre, 3-line list right)",
+    "logo-wall(7 mono logos edge-to-edge, 24px gutters)",
+    "case-feature x3 (56px h2 + customer-site screenshot 921x~500 with bottom fade + side two-tone line + feature list)",
+    "recently-shipped bento(3 cards: 686x580 + 2 stacked 685x280)",
+    "final-cta(56px + primary + copyable \"Onboard your agent\" chip)"
+   ],
+   "theme": "light",
+   "rails": "none",
+   "proof": "real logos mono; customer sites shown as screenshots",
+   "contentWidth": 1392,
+   "sectionHeading": {
+    "n": 1,
+    "medianSizePx": 56,
+    "weight": 450,
+    "trackingEm": -0.06,
+    "lineHeight": 1,
+    "words": 8,
+    "chars": 52,
+    "lines": 2,
+    "sizes": [
+     56
+    ]
+   },
+   "seamGapPx": {
+    "median": 248,
+    "samples": [
+     248
+    ]
+   },
+   "cardClusters": [
+    {
+     "n": 3,
+     "style": "6px | noborder | rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0 | rgb(250, 250, 250)",
+     "gap": [
+      "20",
+      1
+     ],
+     "padding": [
+      "20px/20px",
+      3
+     ],
+     "sizes": [
+      "685x580",
+      "685x280",
+      "685x280"
+     ]
+    }
+   ],
+   "anchors": [
+    {
+     "text": "Agentic Infrastructure",
+     "size": 64,
+     "weight": "400",
+     "lsEm": -0.06,
+     "lh": 1,
+     "lines": 2,
+     "w": 444,
+     "align": "left",
+     "gapAbove": 222,
+     "eyebrow": null,
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": null,
+     "firstBlockRadius": null
+    },
+    {
+     "text": "Build agents on infrastructure that thinks like them",
+     "size": 56,
+     "weight": "450",
+     "lsEm": -0.06,
+     "lh": 1,
+     "lines": 2,
+     "w": 673,
+     "align": "start",
+     "gapAbove": 248,
+     "eyebrow": null,
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": 44,
+     "firstBlockRadius": "0px"
+    },
+    {
+     "text": "Ship apps that scale from zero to millions instantly",
+     "size": 56,
+     "weight": "450",
+     "lsEm": -0.06,
+     "lh": 1,
+     "lines": 2,
+     "w": 921,
+     "align": "start",
+     "gapAbove": 231,
+     "eyebrow": null,
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": 44,
+     "firstBlockRadius": "0px"
+    }
+   ],
+   "footer": {
+    "heightPx": 846,
+    "bg": "rgb(250, 250, 250)",
+    "linkCount": 81,
+    "linkFontPx": "14",
+    "effPadTop": 52,
+    "effPadBottom": 47,
+    "cols": 12
+   }
+  },
+  "stripe": {
+   "url": "https://stripe.com",
+   "pageHeight": 14631,
+   "nav": {
+    "pos": "relative",
+    "h": 76,
+    "bg": "rgba(0, 0, 0, 0)",
+    "blur": "none",
+    "radius": "0px"
+   },
+   "sequence": [
+    "hero(gradient ribbon art, 4-line two-tone H1) + attached logo bar",
+    "solutions bento(13 tinted tiles, 828x686 + 409x690)",
+    "statement(48px/300, one link)",
+    "stats band on dark gradient + particle art(4 stats)",
+    "case rows x3 (enterprise / startup / platform, each 1232x~531 image)",
+    "dark dev section(heading, 2 buttons, integration diagram, 3 stats, 3 path rows)",
+    "news/events cards",
+    "cta-bar(380px)"
+   ],
+   "theme": "light + navy sections",
+   "rails": "vertical hairlines at x=88/1352 + dashed row dividers",
+   "proof": "real logos in colour; named case study (photo); platform stats",
+   "contentWidth": 1232,
+   "sectionHeading": {
+    "n": 6,
+    "medianSizePx": 32,
+    "weight": 300,
+    "trackingEm": -0.02,
+    "lineHeight": 1.1,
+    "words": 5.5,
+    "chars": 38,
+    "lines": 1,
+    "sizes": [
+     32,
+     48,
+     56,
+     32,
+     32,
+     32
+    ]
+   },
+   "seamGapPx": {
+    "median": 166.5,
+    "samples": [
+     93,
+     206,
+     160,
+     93,
+     173,
+     192
+    ]
+   },
+   "cardClusters": [
+    {
+     "n": 13,
+     "style": "6px | noborder | noshadow | rgb(229, 237, 245)",
+     "gap": [
+      "16",
+      7
+     ],
+     "padding": [
+      "0px/0px",
+      13
+     ],
+     "sizes": [
+      "828x686",
+      "409x690",
+      "409x690",
+      "409x690",
+      "409x690",
+      "332x448"
+     ]
+    },
+    {
+     "n": 3,
+     "style": "6px | noborder | rgba(23, 23, 23, 0.08) 0px 15px 35px 0px | rgba(248, 250, 253, 0.45)",
+     "gap": null,
+     "padding": [
+      "0px/0px",
+      3
+     ],
+     "sizes": [
+      "630x580",
+      "728x464",
+      "800x600"
+     ]
+    },
+    {
+     "n": 3,
+     "style": "6px | noborder | rgba(23, 23, 23, 0.06) 0px 3px 6px 0px | rgb(255, 255, 255)",
+     "gap": null,
+     "padding": [
+      "0px/0px",
+      3
+     ],
+     "sizes": [
+      "618x539",
+      "716x423",
+      "788x559"
+     ]
+    },
+    {
+     "n": 3,
+     "style": "6px | noborder | noshadow | rgb(18, 32, 84)",
+     "gap": [
+      "16",
+      2
+     ],
+     "padding": [
+      "0px/0px",
+      2
+     ],
+     "sizes": [
+      "400x294",
+      "400x294",
+      "400x294"
+     ]
+    }
+   ],
+   "anchors": [
+    {
+     "text": "Financial infrastructure to grow your revenue.",
+     "size": 48,
+     "weight": "300",
+     "lsEm": -0.02,
+     "lh": 1.15,
+     "lines": 1,
+     "w": 916,
+     "align": "start",
+     "gapAbove": 139,
+     "eyebrow": "1",
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": null,
+     "firstBlockRadius": null
+    },
+    {
+     "text": "Flexible solutions for every business model.",
+     "size": 32,
+     "weight": "300",
+     "lsEm": -0.02,
+     "lh": 1.1,
+     "lines": 1,
+     "w": 593,
+     "align": "start",
+     "gapAbove": 93,
+     "eyebrow": null,
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": 101,
+     "firstBlockRadius": "0px"
+    },
+    {
+     "text": "Accept and optimise payments globally – online and in person",
+     "size": 26,
+     "weight": "300",
+     "lsEm": -0.01,
+     "lh": 1.12,
+     "lines": 2,
+     "w": 628,
+     "align": "start",
+     "gapAbove": 86,
+     "eyebrow": null,
+     "subChars": 21,
+     "subSize": 9,
+     "subLines": 1,
+     "firstBlockDy": 584,
+     "firstBlockRadius": "0px"
+    },
+    {
+     "text": "Monetise through agentic commerce",
+     "size": 26,
+     "weight": "300",
+     "lsEm": -0.01,
+     "lh": 1.12,
+     "lines": 2,
+     "w": 284,
+     "align": "start",
+     "gapAbove": 2,
+     "eyebrow": "Continue",
+     "subChars": 86,
+     "subSize": 11,
+     "subLines": 4,
+     "firstBlockDy": 608,
+     "firstBlockRadius": "0px"
+    },
+    {
+     "text": "Embed payments in your platform",
+     "size": 26,
+     "weight": "300",
+     "lsEm": -0.01,
+     "lh": 1.12,
+     "lines": 2,
+     "w": 284,
+     "align": "start",
+     "gapAbove": 14,
+     "eyebrow": null,
+     "subChars": 21,
+     "subSize": 9,
+     "subLines": 1,
+     "firstBlockDy": 544,
+     "firstBlockRadius": "0px"
+    },
+    {
+     "text": "Building the economic infrastructure for AI",
+     "size": 48,
+     "weight": "300",
+     "lsEm": -0.02,
+     "lh": 1.03,
+     "lines": 2,
+     "w": 659,
+     "align": "start",
+     "gapAbove": 206,
+     "eyebrow": null,
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": null,
+     "firstBlockRadius": null
+    },
+    {
+     "text": "The backbone of global commerce",
+     "size": 56,
+     "weight": "300",
+     "lsEm": -0.025,
+     "lh": 1.03,
+     "lines": 2,
+     "w": 489,
+     "align": "center",
+     "gapAbove": 160,
+     "eyebrow": null,
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": 263,
+     "firstBlockRadius": "0px"
+    },
+    {
+     "text": "Powering businesses of all sizes.",
+     "size": 32,
+     "weight": "300",
+     "lsEm": -0.02,
+     "lh": 1.1,
+     "lines": 1,
+     "w": 444,
+     "align": "start",
+     "gapAbove": 93,
+     "eyebrow": null,
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": null,
+     "firstBlockRadius": null
+    },
+    {
+     "text": "Transform your enterprise with agile financial infrastructure",
+     "size": 26,
+     "weight": "300",
+     "lsEm": -0.01,
+     "lh": 1.12,
+     "lines": 2,
+     "w": 504,
+     "align": "start",
+     "gapAbove": 127,
+     "eyebrow": null,
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": 192,
+     "firstBlockRadius": "0px"
+    },
+    {
+     "text": "Build a foundation for your startup that enables faster growth",
+     "size": 26,
+     "weight": "300",
+     "lsEm": -0.01,
+     "lh": 1.12,
+     "lines": 2,
+     "w": 504,
+     "align": "start",
+     "gapAbove": 70,
+     "eyebrow": null,
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": 168,
+     "firstBlockRadius": "0px"
+    },
+    {
+     "text": "Make your SaaS platform a complete financial operating system",
+     "size": 26,
+     "weight": "300",
+     "lsEm": -0.01,
+     "lh": 1.12,
+     "lines": 2,
+     "w": 504,
+     "align": "start",
+     "gapAbove": 70,
+     "eyebrow": null,
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": 168,
+     "firstBlockRadius": "0px"
+    },
+    {
+     "text": "Reliable, extensible infrastructure for every stack.",
+     "size": 32,
+     "weight": "300",
+     "lsEm": -0.02,
+     "lh": 1.1,
+     "lines": 1,
+     "w": 670,
+     "align": "start",
+     "gapAbove": 173,
+     "eyebrow": null,
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": null,
+     "firstBlockRadius": null
+    },
+    {
+     "text": "Connect to existing systems.",
+     "size": 26,
+     "weight": "300",
+     "lsEm": -0.01,
+     "lh": 1.12,
+     "lines": 1,
+     "w": 328,
+     "align": "start",
+     "gapAbove": 127,
+     "eyebrow": null,
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": 120,
+     "firstBlockRadius": "0px"
+    },
+    {
+     "text": "Scale with confidence.",
+     "size": 26,
+     "weight": "300",
+     "lsEm": -0.01,
+     "lh": 1.12,
+     "lines": 1,
+     "w": 256,
+     "align": "start",
+     "gapAbove": 52,
+     "eyebrow": null,
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": null,
+     "firstBlockRadius": null
+    },
+    {
+     "text": "Choose an integration path.",
+     "size": 26,
+     "weight": "300",
+     "lsEm": -0.01,
+     "lh": 1.12,
+     "lines": 1,
+     "w": 316,
+     "align": "start",
+     "gapAbove": 52,
+     "eyebrow": null,
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": null,
+     "firstBlockRadius": null
+    },
+    {
+     "text": "What's happening",
+     "size": 32,
+     "weight": "300",
+     "lsEm": -0.02,
+     "lh": 1.1,
+     "lines": 1,
+     "w": 348,
+     "align": "start",
+     "gapAbove": 192,
+     "eyebrow": null,
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": 99,
+     "firstBlockRadius": "0px"
+    },
+    {
+     "text": "Book of the week",
+     "size": 32,
+     "weight": "300",
+     "lsEm": -0.02,
+     "lh": 1.1,
+     "lines": 1,
+     "w": 608,
+     "align": "start",
+     "gapAbove": 54,
+     "eyebrow": null,
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": null,
+     "firstBlockRadius": null
+    }
+   ],
+   "footer": {
+    "heightPx": 1102,
+    "bg": "rgb(248, 250, 253)",
+    "linkCount": 86,
+    "linkFontPx": "16",
+    "effPadTop": 64,
+    "effPadBottom": 16,
+    "cols": 6
+   }
+  },
+  "raycast": {
+   "url": "https://www.raycast.com",
+   "pageHeight": 15983,
+   "nav": null,
+   "sequence": [
+    "hero(centred, shader beams, download CTA)",
+    "macOS window screenshot (1200 wide) under a 20px two-tone line",
+    "extension card carousel (~360x540 gradient app cards, arrows)",
+    "AI agent: eyebrow + 32px h2 + chat window",
+    "professionals grid",
+    "snippets/quicklinks/hotkeys bento (3 cards)",
+    "scroll-lit paragraph \"What else can Raycast do?\"",
+    "changelog cards",
+    "developer section (3182px)",
+    "final-cta + beams"
+   ],
+   "theme": "dark",
+   "rails": "none",
+   "proof": "no logo wall on the page; product breadth shown as app cards",
+   "contentWidth": 1204,
+   "sectionHeading": {
+    "n": 9,
+    "medianSizePx": 20,
+    "weight": 500,
+    "trackingEm": 0.01,
+    "lineHeight": 1.2,
+    "words": 5,
+    "chars": 27,
+    "lines": 1,
+    "sizes": [
+     20,
+     20,
+     20,
+     32,
+     20,
+     20,
+     24,
+     20,
+     56
+    ]
+   },
+   "seamGapPx": {
+    "median": 446,
+    "samples": [
+     448,
+     239,
+     493,
+     404,
+     448,
+     477,
+     120,
+     444
+    ]
+   },
+   "cardClusters": [
+    {
+     "n": 8,
+     "style": "20px | noborder | rgba(255, 255, 255, 0.1) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.4) 0px 30px 50px 0px, rgba | rgba(0, 0, 0, 0)",
+     "gap": [
+      "56",
+      5
+     ],
+     "padding": [
+      "0px/0px",
+      8
+     ],
+     "sizes": [
+      "360x536",
+      "360x536",
+      "360x536",
+      "360x536",
+      "360x536",
+      "360x536"
+     ]
+    },
+    {
+     "n": 4,
+     "style": "20px | noborder | rgba(255, 255, 255, 0.1) 0px 1px 0px 0px inset, rgba(7, 13, 79, 0.1) 0px 0px 20px 3px, rgb | rgba(0, 0, 0, 0)",
+     "gap": [
+      "56",
+      1
+     ],
+     "padding": [
+      "0px/0px",
+      4
+     ],
+     "sizes": [
+      "360x536",
+      "360x536",
+      "360x536",
+      "360x536"
+     ]
+    },
+    {
+     "n": 2,
+     "style": "20px | noborder | rgba(0, 0, 0, 0.5) 0px 30px 50px 0px, rgba(255, 255, 255, 0.1) 0px 1px 0px 0px inset, rgba | rgba(0, 0, 0, 0)",
+     "gap": [
+      "56",
+      1
+     ],
+     "padding": [
+      "0px/0px",
+      2
+     ],
+     "sizes": [
+      "360x536",
+      "360x536"
+     ]
+    },
+    {
+     "n": 2,
+     "style": "30px | noborder | noshadow | rgba(255, 255, 255, 0.02)",
+     "gap": [
+      "30",
+      1
+     ],
+     "padding": [
+      "24px/24px",
+      2
+     ],
+     "sizes": [
+      "495x513",
+      "495x513"
+     ]
+    }
+   ],
+   "anchors": [
+    {
+     "text": "Your shortcut to everything.",
+     "size": 64,
+     "weight": "600",
+     "lsEm": 0,
+     "lh": 1.1,
+     "lines": 2,
+     "w": 540,
+     "align": "center",
+     "gapAbove": 370,
+     "eyebrow": null,
+     "subChars": 108,
+     "subSize": 18,
+     "subLines": 2,
+     "firstBlockDy": null,
+     "firstBlockRadius": null
+    },
+    {
+     "text": "Plus thousands more...",
+     "size": 24,
+     "weight": "500",
+     "lsEm": 0.008,
+     "lh": 1.2,
+     "lines": 1,
+     "w": 267,
+     "align": "start",
+     "gapAbove": 40,
+     "eyebrow": null,
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": null,
+     "firstBlockRadius": null
+    },
+    {
+     "text": "Meet your new virtual assistant",
+     "size": 32,
+     "weight": "500",
+     "lsEm": -0.025,
+     "lh": 1.2,
+     "lines": 1,
+     "w": 453,
+     "align": "center",
+     "gapAbove": 493,
+     "eyebrow": "AI AGENT",
+     "subChars": 63,
+     "subSize": 18,
+     "subLines": 2,
+     "firstBlockDy": 125,
+     "firstBlockRadius": "26px"
+    },
+    {
+     "text": "Build the perfect tools.",
+     "size": 56,
+     "weight": "400",
+     "lsEm": 0.004,
+     "lh": 1.17,
+     "lines": 3,
+     "w": 307,
+     "align": "start",
+     "gapAbove": 444,
+     "eyebrow": null,
+     "subChars": 106,
+     "subSize": 14,
+     "subLines": 4,
+     "firstBlockDy": 364,
+     "firstBlockRadius": "0px"
+    }
+   ],
+   "footer": null
+  },
+  "resend": {
+   "url": "https://resend.com",
+   "pageHeight": 12320,
+   "nav": {
+    "pos": "sticky",
+    "h": 58,
+    "bg": "rgba(0, 0, 0, 0)",
+    "blur": "none",
+    "radius": "0px"
+   },
+   "sequence": [
+    "hero(96px 2-line left + media 1280x567)",
+    "integrate: language icon row(12) + code window tabs(1024)",
+    "DX bento(2 cards 600x526)",
+    "editor screenshot 1109x600",
+    "beyond-editing(2 cards)",
+    "React email 1232x700",
+    "deliverability + stat",
+    "quote band",
+    "control bento(3 cards)",
+    "customer wall(30 cards)",
+    "final-cta 77px + button"
+   ],
+   "theme": "dark",
+   "rails": "none",
+   "proof": "customer wall (30 cards); code shown as real code",
+   "contentWidth": 1232,
+   "sectionHeading": {
+    "n": 8,
+    "medianSizePx": 56,
+    "weight": 400,
+    "trackingEm": -0.05,
+    "lineHeight": 1.2,
+    "words": 3.5,
+    "chars": 26,
+    "lines": 1,
+    "sizes": [
+     56,
+     56,
+     56,
+     56,
+     56,
+     56,
+     56,
+     56
+    ]
+   },
+   "seamGapPx": {
+    "median": 207,
+    "samples": [
+     207,
+     508,
+     192
+    ]
+   },
+   "cardClusters": [
+    {
+     "n": 30,
+     "style": "16px | 1px rgba(217, 237, 254, 0.145) | noshadow | rgba(0, 0, 0, 0)",
+     "gap": [
+      "32",
+      29
+     ],
+     "padding": [
+      "24px/32px",
+      30
+     ],
+     "sizes": [
+      "450x219",
+      "450x219",
+      "450x268",
+      "450x195",
+      "450x219",
+      "450x217"
+     ]
+    },
+    {
+     "n": 4,
+     "style": "24px | 1px rgba(214, 235, 253, 0.19) | noshadow | rgba(0, 0, 0, 0)",
+     "gap": [
+      "32",
+      2
+     ],
+     "padding": [
+      "0px/0px",
+      4
+     ],
+     "sizes": [
+      "600x526",
+      "600x526",
+      "600x526",
+      "600x526"
+     ]
+    },
+    {
+     "n": 1,
+     "style": "16px | 1px rgb(38, 42, 45) | noshadow | rgb(0, 0, 0)",
+     "gap": null,
+     "padding": [
+      "0px/0px",
+      1
+     ],
+     "sizes": [
+      "664x152"
+     ]
+    }
+   ],
+   "anchors": [
+    {
+     "text": "Email for developers",
+     "size": 96,
+     "weight": "400",
+     "lsEm": -0.01,
+     "lh": 1,
+     "lines": 2,
+     "w": 480,
+     "align": "left",
+     "gapAbove": 205,
+     "eyebrow": "Join us at Resend Forward",
+     "subChars": 106,
+     "subSize": 18,
+     "subLines": 2,
+     "firstBlockDy": 507,
+     "firstBlockRadius": "24px"
+    },
+    {
+     "text": "tonight",
+     "size": 56,
+     "weight": "400",
+     "lsEm": -0.05,
+     "lh": 1.2,
+     "lines": 1,
+     "w": 164,
+     "align": "center",
+     "gapAbove": 12,
+     "eyebrow": null,
+     "subChars": 151,
+     "subSize": 18,
+     "subLines": 2,
+     "firstBlockDy": 249,
+     "firstBlockRadius": "24px"
+    },
+    {
+     "text": "First-class developer experience",
+     "size": 56,
+     "weight": "400",
+     "lsEm": -0.05,
+     "lh": 1.2,
+     "lines": 2,
+     "w": 1232,
+     "align": "left",
+     "gapAbove": 207,
+     "eyebrow": null,
+     "subChars": 162,
+     "subSize": 18,
+     "subLines": 2,
+     "firstBlockDy": 114,
+     "firstBlockRadius": "24px"
+    },
+    {
+     "text": "Write using a delightful editor",
+     "size": 56,
+     "weight": "400",
+     "lsEm": -0.05,
+     "lh": 1.2,
+     "lines": 1,
+     "w": 1232,
+     "align": "center",
+     "gapAbove": 16,
+     "eyebrow": null,
+     "subChars": 153,
+     "subSize": 18,
+     "subLines": 2,
+     "firstBlockDy": 126,
+     "firstBlockRadius": "16px"
+    },
+    {
+     "text": "Go beyond editing",
+     "size": 56,
+     "weight": "400",
+     "lsEm": -0.05,
+     "lh": 1.2,
+     "lines": 1,
+     "w": 1232,
+     "align": "left",
+     "gapAbove": 508,
+     "eyebrow": null,
+     "subChars": 147,
+     "subSize": 18,
+     "subLines": 2,
+     "firstBlockDy": 114,
+     "firstBlockRadius": "24px"
+    },
+    {
+     "text": "Develop emails using React",
+     "size": 56,
+     "weight": "400",
+     "lsEm": -0.05,
+     "lh": 1.2,
+     "lines": 1,
+     "w": 1232,
+     "align": "center",
+     "gapAbove": 16,
+     "eyebrow": null,
+     "subChars": 139,
+     "subSize": 18,
+     "subLines": 2,
+     "firstBlockDy": 222,
+     "firstBlockRadius": "24px"
+    },
+    {
+     "text": "Welcome to ACME, user!",
+     "size": 24,
+     "weight": "400",
+     "lsEm": 0,
+     "lh": 1.4,
+     "lines": 1,
+     "w": 380,
+     "align": "center",
+     "gapAbove": -2,
+     "eyebrow": "10",
+     "subChars": 34,
+     "subSize": 12,
+     "subLines": 1,
+     "firstBlockDy": 537,
+     "firstBlockRadius": "24px"
+    },
+    {
+     "text": "Reach humans, not spam folders",
+     "size": 56,
+     "weight": "400",
+     "lsEm": -0.05,
+     "lh": 1.2,
+     "lines": 2,
+     "w": 448,
+     "align": "start",
+     "gapAbove": 0,
+     "eyebrow": "</",
+     "subChars": 28,
+     "subSize": 20,
+     "subLines": 1,
+     "firstBlockDy": null,
+     "firstBlockRadius": null
+    },
+    {
+     "text": "Everything in your control",
+     "size": 56,
+     "weight": "400",
+     "lsEm": -0.05,
+     "lh": 1.2,
+     "lines": 1,
+     "w": 1232,
+     "align": "center",
+     "gapAbove": 16,
+     "eyebrow": null,
+     "subChars": 147,
+     "subSize": 18,
+     "subLines": 2,
+     "firstBlockDy": 248,
+     "firstBlockRadius": "16px"
+    },
+    {
+     "text": "Beyond expectations",
+     "size": 56,
+     "weight": "400",
+     "lsEm": -0.05,
+     "lh": 1.2,
+     "lines": 1,
+     "w": 1440,
+     "align": "center",
+     "gapAbove": 192,
+     "eyebrow": null,
+     "subChars": 150,
+     "subSize": 18,
+     "subLines": 2,
+     "firstBlockDy": 158,
+     "firstBlockRadius": "16px"
+    },
+    {
+     "text": "Email reimagined. Available today.",
+     "size": 76.8,
+     "weight": "400",
+     "lsEm": -0.01,
+     "lh": 1,
+     "lines": 2,
+     "w": 1232,
+     "align": "center",
+     "gapAbove": 216,
+     "eyebrow": null,
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": 176,
+     "firstBlockRadius": "0px"
+    }
+   ],
+   "footer": {
+    "heightPx": 596,
+    "bg": "rgb(0, 0, 0)",
+    "linkCount": 35,
+    "linkFontPx": "14",
+    "effPadTop": 144,
+    "effPadBottom": 145,
+    "cols": 6
+   }
+  },
+  "clerk": {
+   "url": "https://clerk.com",
+   "pageHeight": 7187,
+   "nav": {
+    "pos": "sticky",
+    "h": 42,
+    "bg": "rgba(0, 0, 0, 0)",
+    "blur": "none",
+    "radius": "0px"
+   },
+   "sequence": [
+    "hero(56/700 left + 4-tab component showcase + sub-switcher)",
+    "logo strip(rotating, ink)",
+    "dark bento(11 cards 395px wide, 8px gaps)",
+    "chamfer transition",
+    "multi-tenancy(small coloured label + 32px h2 + link + cards)",
+    "billing",
+    "frameworks(SDK + integrations)",
+    "logo grid(12 cards)"
+   ],
+   "theme": "light hero, dark bento band entered via 45-degree chamfer, light again",
+   "rails": "none",
+   "proof": "logo grid at foot; component renders as product proof",
+   "contentWidth": 1200,
+   "sectionHeading": {
+    "n": 5,
+    "medianSizePx": 32,
+    "weight": 600,
+    "trackingEm": -0.015,
+    "lineHeight": 1.25,
+    "words": 5,
+    "chars": 33,
+    "lines": 2,
+    "sizes": [
+     32,
+     32,
+     32,
+     32,
+     32
+    ]
+   },
+   "seamGapPx": {
+    "median": 127,
+    "samples": [
+     127,
+     127
+    ]
+   },
+   "cardClusters": [
+    {
+     "n": 11,
+     "style": "16px | noborder | rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0 | rgb(33, 33, 38)",
+     "gap": [
+      "8",
+      5
+     ],
+     "padding": [
+      "0px/0px",
+      11
+     ],
+     "sizes": [
+      "395x260",
+      "395x528",
+      "395x260",
+      "395x528",
+      "395x260",
+      "395x260"
+     ]
+    },
+    {
+     "n": 7,
+     "style": "12px | noborder | rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0 | rgb(247, 247, 248)",
+     "gap": [
+      "16",
+      1
+     ],
+     "padding": [
+      "20px/20px",
+      7
+     ],
+     "sizes": [
+      "360x302",
+      "360x182",
+      "360x342",
+      "360x202",
+      "360x142",
+      "360x262"
+     ]
+    },
+    {
+     "n": 5,
+     "style": "8px | noborder | rgba(19, 19, 22, 0.05) 0px 0px 0px 1px, rgba(19, 19, 22, 0.05) 0px 1px 1px -0.5px, rgba(19 | rgb(247, 247, 248)",
+     "gap": null,
+     "padding": [
+      "0px/0px",
+      5
+     ],
+     "sizes": [
+      "352x377",
+      "720x506",
+      "720x506",
+      "360x394",
+      "352x428"
+     ]
+    },
+    {
+     "n": 4,
+     "style": "16px | noborder | rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0 | rgb(255, 255, 255)",
+     "gap": [
+      "8",
+      2
+     ],
+     "padding": [
+      "0px/0px",
+      4
+     ],
+     "sizes": [
+      "400x528",
+      "400x260",
+      "400x260",
+      "400x528"
+     ]
+    }
+   ],
+   "anchors": [
+    {
+     "text": "Everything you need for authentication",
+     "size": 56,
+     "weight": "700",
+     "lsEm": -0.035,
+     "lh": 1.14,
+     "lines": 2,
+     "w": 598,
+     "align": "left",
+     "gapAbove": 4,
+     "eyebrow": "Current plan",
+     "subChars": 44,
+     "subSize": 13,
+     "subLines": 1,
+     "firstBlockDy": 13,
+     "firstBlockRadius": "1.11111% 1.58103%"
+    },
+    {
+     "text": "Directory Sync (SCIM)",
+     "size": 24,
+     "weight": "500",
+     "lsEm": -0.01,
+     "lh": 1.33,
+     "lines": 1,
+     "w": 680,
+     "align": "start",
+     "gapAbove": 17,
+     "eyebrow": "Search users...",
+     "subChars": 33,
+     "subSize": 13,
+     "subLines": 2,
+     "firstBlockDy": 75,
+     "firstBlockRadius": "12px"
+    },
+    {
+     "text": "Roles & Permissions",
+     "size": 24,
+     "weight": "500",
+     "lsEm": -0.01,
+     "lh": 1.33,
+     "lines": 1,
+     "w": 680,
+     "align": "start",
+     "gapAbove": -1,
+     "eyebrow": "Clerk CLI",
+     "subChars": 24,
+     "subSize": 11,
+     "subLines": 1,
+     "firstBlockDy": 55,
+     "firstBlockRadius": "1.11111% 1.58103%"
+    }
+   ],
+   "footer": {
+    "heightPx": 413,
+    "bg": "rgb(247, 247, 248)",
+    "linkCount": 32,
+    "linkFontPx": "13",
+    "effPadTop": 0,
+    "effPadBottom": 80,
+    "cols": 6
+   }
+  },
+  "attio": {
+   "url": "https://attio.com",
+   "pageHeight": 17599,
+   "nav": {
+    "pos": "static",
+    "h": 116,
+    "bg": "oklab(0.999997 0.0000899732 0.000023365 / 0.95)",
+    "blur": "none",
+    "radius": "0px"
+   },
+   "sequence": [
+    "hero(centred 64/600 + 1080x619 product window)",
+    "logo wall(5x2 hairline cells, ink)",
+    "sticky-scroll platform story(left sticky 5-item nav, right panels; 6479px tall)",
+    "self-building(pill eyebrow, 1149x460 visual)",
+    "signals + counters",
+    "SDK/API/MCP dev block",
+    "scale",
+    "customer stories(695x429)",
+    "changelog",
+    "final-cta dark(417px)"
+   ],
+   "theme": "light + dark final",
+   "rails": "full-height rails at x=24/1416",
+   "proof": "customer stories; \"30,000+ customers\" claim (their data)",
+   "contentWidth": 1000,
+   "sectionHeading": {
+    "n": 9,
+    "medianSizePx": 40,
+    "weight": 500,
+    "trackingEm": -0.01,
+    "lineHeight": 1.1,
+    "words": 4,
+    "chars": 28,
+    "lines": 1,
+    "sizes": [
+     40,
+     40,
+     40,
+     40,
+     48,
+     40,
+     40,
+     40,
+     40
+    ]
+   },
+   "seamGapPx": {
+    "median": 233,
+    "samples": [
+     409,
+     184,
+     152,
+     1619,
+     153,
+     282
+    ]
+   },
+   "cardClusters": [
+    {
+     "n": 5,
+     "style": "12px | 1px rgba(56, 62, 71, 0.1) | noshadow | lab(99.9987 0.0337958 0.000309944)",
+     "gap": null,
+     "padding": [
+      "13px/13px",
+      3
+     ],
+     "sizes": [
+      "300x196",
+      "301x204",
+      "300x210",
+      "352x266",
+      "352x266"
+     ]
+    },
+    {
+     "n": 4,
+     "style": "12px | noborder | noshadow | rgba(255, 255, 255, 0.8)",
+     "gap": [
+      "16",
+      3
+     ],
+     "padding": [
+      "8px/8px",
+      4
+     ],
+     "sizes": [
+      "272x581",
+      "272x581",
+      "272x581",
+      "272x581"
+     ]
+    },
+    {
+     "n": 3,
+     "style": "12px | noborder | rgba(0, 22, 62, 0.01) 0px 0px 1px 1px, rgba(0, 22, 62, 0.04) 0px 4px 12px -1px, rgba(0, 22 | lab(99.9987 0.0337958 0.000309944)",
+     "gap": [
+      "24",
+      1
+     ],
+     "padding": [
+      "0px/0px",
+      2
+     ],
+     "sizes": [
+      "568x159",
+      "568x355",
+      "486x537"
+     ]
+    },
+    {
+     "n": 1,
+     "style": "14px | noborder | rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0 | lab(99.9987 0.0337958 0.000309944)",
+     "gap": null,
+     "padding": [
+      "2px/2px",
+      1
+     ],
+     "sizes": [
+      "622x174"
+     ]
+    }
+   ],
+   "anchors": [
+    {
+     "text": "Welcome to agentic revenue.",
+     "size": 64,
+     "weight": "600",
+     "lsEm": -0.02,
+     "lh": 0.95,
+     "lines": 1,
+     "w": 805,
+     "align": "center",
+     "gapAbove": 112,
+     "eyebrow": "GTM lessons from Elena Verna and more",
+     "subChars": 91,
+     "subSize": 18,
+     "subLines": 2,
+     "firstBlockDy": 241,
+     "firstBlockRadius": "16px"
+    },
+    {
+     "text": "The intelligent system that never sleeps.",
+     "size": 40,
+     "weight": "500",
+     "lsEm": -0.01,
+     "lh": 1.1,
+     "lines": 1,
+     "w": 694,
+     "align": "start",
+     "gapAbove": 409,
+     "eyebrow": "Platform",
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": null,
+     "firstBlockRadius": null
+    },
+    {
+     "text": "Your team, amplified. Agents prospect and reach out when buyers are looking, building a pipeline of deals read",
+     "size": 24,
+     "weight": "500",
+     "lsEm": -0.01,
+     "lh": 1.15,
+     "lines": 3,
+     "w": 560,
+     "align": "start",
+     "gapAbove": 191,
+     "eyebrow": null,
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": 154,
+     "firstBlockRadius": "12px"
+    },
+    {
+     "text": "Speed to lead, every time. New leads get enriched, scored, and routed to the right rep before they ever cool o",
+     "size": 24,
+     "weight": "500",
+     "lsEm": -0.01,
+     "lh": 1.15,
+     "lines": 3,
+     "w": 560,
+     "align": "start",
+     "gapAbove": 136,
+     "eyebrow": null,
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": 81,
+     "firstBlockRadius": "0px"
+    },
+    {
+     "text": "Run every motion, your way. Pipeline built for how you sell, while agents brief the meetings and keep deals mo",
+     "size": 24,
+     "weight": "500",
+     "lsEm": -0.01,
+     "lh": 1.15,
+     "lines": 3,
+     "w": 560,
+     "align": "start",
+     "gapAbove": 90,
+     "eyebrow": null,
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": null,
+     "firstBlockRadius": null
+    },
+    {
+     "text": "For the people who own the number. Ask any revenue question. From the weekly forecast to performance by rep, g",
+     "size": 24,
+     "weight": "500",
+     "lsEm": -0.01,
+     "lh": 1.15,
+     "lines": 3,
+     "w": 560,
+     "align": "start",
+     "gapAbove": 205,
+     "eyebrow": null,
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": 211,
+     "firstBlockRadius": "12px"
+    },
+    {
+     "text": "Keep more. Grow more. Agents track the whole book, so you save what's slipping and grow what's rising.",
+     "size": 24,
+     "weight": "500",
+     "lsEm": -0.01,
+     "lh": 1.15,
+     "lines": 2,
+     "w": 560,
+     "align": "start",
+     "gapAbove": 215,
+     "eyebrow": null,
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": 138,
+     "firstBlockRadius": "12px"
+    },
+    {
+     "text": "Live from day one.",
+     "size": 40,
+     "weight": "500",
+     "lsEm": -0.01,
+     "lh": 1.1,
+     "lines": 1,
+     "w": 326,
+     "align": "center",
+     "gapAbove": 7,
+     "eyebrow": "Self-building",
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": 262,
+     "firstBlockRadius": "13px"
+    },
+    {
+     "text": "All of the signals, none of the noise.",
+     "size": 40,
+     "weight": "500",
+     "lsEm": -0.01,
+     "lh": 1.1,
+     "lines": 2,
+     "w": 431,
+     "align": "start",
+     "gapAbove": 184,
+     "eyebrow": "Signals",
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": null,
+     "firstBlockRadius": null
+    },
+    {
+     "text": "Your whole stack, connected.",
+     "size": 40,
+     "weight": "500",
+     "lsEm": -0.01,
+     "lh": 1.1,
+     "lines": 1,
+     "w": 508,
+     "align": "center",
+     "gapAbove": 152,
+     "eyebrow": "Connectivity",
+     "subChars": 78,
+     "subSize": 16,
+     "subLines": 2,
+     "firstBlockDy": 117,
+     "firstBlockRadius": "0px"
+    },
+    {
+     "text": "opened",
+     "size": 48,
+     "weight": "400",
+     "lsEm": -0.015,
+     "lh": 1.08,
+     "lines": 1,
+     "w": 173,
+     "align": "center",
+     "gapAbove": 63,
+     "eyebrow": null,
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": null,
+     "firstBlockRadius": null
+    },
+    {
+     "text": "generation",
+     "size": 48,
+     "weight": "400",
+     "lsEm": -0.015,
+     "lh": 1.08,
+     "lines": 1,
+     "w": 247,
+     "align": "center",
+     "gapAbove": 41,
+     "eyebrow": null,
+     "subChars": 35,
+     "subSize": 14,
+     "subLines": 1,
+     "firstBlockDy": null,
+     "firstBlockRadius": null
+    },
+    {
+     "text": "SDK. API. MCP. Build anything on Attio.",
+     "size": 40,
+     "weight": "500",
+     "lsEm": -0.01,
+     "lh": 1.1,
+     "lines": 2,
+     "w": 397,
+     "align": "left",
+     "gapAbove": 39,
+     "eyebrow": null,
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": null,
+     "firstBlockRadius": null
+    },
+    {
+     "text": "Run at any scale.",
+     "size": 40,
+     "weight": "500",
+     "lsEm": -0.01,
+     "lh": 1.1,
+     "lines": 1,
+     "w": 292,
+     "align": "start",
+     "gapAbove": 1619,
+     "eyebrow": "Build to scale",
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": null,
+     "firstBlockRadius": null
+    },
+    {
+     "text": "Trusted by 30,000+ customers.",
+     "size": 40,
+     "weight": "500",
+     "lsEm": -0.01,
+     "lh": 1.1,
+     "lines": 1,
+     "w": 549,
+     "align": "start",
+     "gapAbove": 153,
+     "eyebrow": "Customer stories",
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": 260,
+     "firstBlockRadius": "0px"
+    },
+    {
+     "text": "Better as you grow.",
+     "size": 40,
+     "weight": "500",
+     "lsEm": -0.01,
+     "lh": 1.1,
+     "lines": 1,
+     "w": 338,
+     "align": "start",
+     "gapAbove": 282,
+     "eyebrow": "Changelog",
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": null,
+     "firstBlockRadius": null
+    },
+    {
+     "text": "Agentic revenue runs on Attio.",
+     "size": 56,
+     "weight": "500",
+     "lsEm": -0.015,
+     "lh": 1,
+     "lines": 2,
+     "w": 672,
+     "align": "center",
+     "gapAbove": 316,
+     "eyebrow": null,
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": null,
+     "firstBlockRadius": null
+    }
+   ],
+   "footer": {
+    "heightPx": 685,
+    "bg": "lab(4.67701 0 0)",
+    "linkCount": 44,
+    "linkFontPx": "14",
+    "effPadTop": 81,
+    "effPadBottom": 41,
+    "cols": 7
+   }
+  },
+  "cal": {
+   "url": "https://cal.com",
+   "pageHeight": 8473,
+   "nav": null,
+   "sequence": [
+    "hero(split copy/booking widget in white plate 1174 wide + 3 rating badges)",
+    "logo band(106px, marquee, between rails)",
+    "how-it-works(pill eyebrow, 48/600 centred, 2 buttons, 3 numbered cards 341x423, 12px gaps)",
+    "benefits 2x2 bento(516x450)",
+    "and-so-much-more 8 icon tiles(178x178)",
+    "testimonial carousel(476x250, centre card emphasised, edges fade)",
+    "app-store plate(8 app tiles)",
+    "wall of love(3-col post cards)",
+    "FAQ",
+    "final-cta plate + award laurels + review stars"
+   ],
+   "theme": "light grey #f4f4f4 + white plates",
+   "rails": "rails x=120/1320 with plus registration marks at corners",
+   "proof": "real logos + marquee; ratings with platform icons; post wall",
+   "contentWidth": 1048,
+   "sectionHeading": {
+    "n": 7,
+    "medianSizePx": 48,
+    "weight": 600,
+    "trackingEm": 0,
+    "lineHeight": 1.1,
+    "words": 6,
+    "chars": 31,
+    "lines": 1,
+    "sizes": [
+     48,
+     48,
+     48,
+     48,
+     48,
+     48,
+     48
+    ]
+   },
+   "seamGapPx": {
+    "median": 258,
+    "samples": [
+     144,
+     304,
+     76,
+     258,
+     272,
+     232,
+     1246
+    ]
+   },
+   "cardClusters": [
+    {
+     "n": 7,
+     "style": "16px | noborder | rgba(36, 36, 36, 0.7) 0px 1px 5px -4px, rgba(36, 36, 36, 0.05) 0px 4px 8px 0px | rgb(255, 255, 255)",
+     "gap": [
+      "12",
+      4
+     ],
+     "padding": [
+      "24px/24px",
+      7
+     ],
+     "sizes": [
+      "341x423",
+      "341x423",
+      "341x423",
+      "518x450",
+      "518x450",
+      "518x355"
+     ]
+    },
+    {
+     "n": 7,
+     "style": "16px | noborder | rgba(19, 19, 22, 0.7) 0px 1px 5px -4px, rgba(34, 42, 53, 0.08) 0px 0px 0px 1px, rgba(34, 4 | rgb(255, 255, 255)",
+     "gap": [
+      "48",
+      6
+     ],
+     "padding": [
+      "24px/24px",
+      7
+     ],
+     "sizes": [
+      "476x250",
+      "476x250",
+      "476x250",
+      "476x250",
+      "476x250",
+      "476x250"
+     ]
+    }
+   ],
+   "anchors": [
+    {
+     "text": "The better way to schedule your meetings",
+     "size": 64,
+     "weight": "600",
+     "lsEm": 0,
+     "lh": 1.1,
+     "lines": 3,
+     "w": 500,
+     "align": "left",
+     "gapAbove": 213,
+     "eyebrow": "Cal.com launches v6.9",
+     "subChars": 150,
+     "subSize": 16,
+     "subLines": 3,
+     "firstBlockDy": 450,
+     "firstBlockRadius": "0px"
+    },
+    {
+     "text": "With us, appointment scheduling is easy",
+     "size": 48,
+     "weight": "600",
+     "lsEm": 0,
+     "lh": 1.1,
+     "lines": 1,
+     "w": 960,
+     "align": "center",
+     "gapAbove": 144,
+     "eyebrow": "How it works",
+     "subChars": 105,
+     "subSize": 16,
+     "subLines": 2,
+     "firstBlockDy": 160,
+     "firstBlockRadius": "16px"
+    },
+    {
+     "text": "Your all-purpose scheduling app",
+     "size": 48,
+     "weight": "600",
+     "lsEm": 0,
+     "lh": 1.1,
+     "lines": 1,
+     "w": 960,
+     "align": "center",
+     "gapAbove": 304,
+     "eyebrow": "Benefits",
+     "subChars": 80,
+     "subSize": 16,
+     "subLines": 1,
+     "firstBlockDy": 136,
+     "firstBlockRadius": "16px"
+    },
+    {
+     "text": "…and so much more!",
+     "size": 48,
+     "weight": "600",
+     "lsEm": 0,
+     "lh": 1.1,
+     "lines": 1,
+     "w": 960,
+     "align": "center",
+     "gapAbove": 76,
+     "eyebrow": null,
+     "subChars": 27,
+     "subSize": 14,
+     "subLines": 2,
+     "firstBlockDy": null,
+     "firstBlockRadius": null
+    },
+    {
+     "text": "Don’t just take our word for it",
+     "size": 48,
+     "weight": "600",
+     "lsEm": 0,
+     "lh": 1.1,
+     "lines": 1,
+     "w": 1048,
+     "align": "center",
+     "gapAbove": 258,
+     "eyebrow": "Testimonials",
+     "subChars": 94,
+     "subSize": 16,
+     "subLines": 2,
+     "firstBlockDy": 132,
+     "firstBlockRadius": "16px"
+    },
+    {
+     "text": "All your key tools in sync with your meetings",
+     "size": 48,
+     "weight": "600",
+     "lsEm": 0,
+     "lh": 1.1,
+     "lines": 2,
+     "w": 600,
+     "align": "left",
+     "gapAbove": 272,
+     "eyebrow": "App store",
+     "subChars": 93,
+     "subSize": 16,
+     "subLines": 2,
+     "firstBlockDy": null,
+     "firstBlockRadius": null
+    },
+    {
+     "text": "See why our users love Cal.com",
+     "size": 48,
+     "weight": "600",
+     "lsEm": 0,
+     "lh": 1.1,
+     "lines": 1,
+     "w": 960,
+     "align": "center",
+     "gapAbove": 232,
+     "eyebrow": "Wall of love",
+     "subChars": 69,
+     "subSize": 16,
+     "subLines": 1,
+     "firstBlockDy": null,
+     "firstBlockRadius": null
+    },
+    {
+     "text": "Frequently asked questions",
+     "size": 48,
+     "weight": "600",
+     "lsEm": 0,
+     "lh": 1.1,
+     "lines": 1,
+     "w": 1048,
+     "align": "center",
+     "gapAbove": 1246,
+     "eyebrow": "FAQ",
+     "subChars": 54,
+     "subSize": 16,
+     "subLines": 1,
+     "firstBlockDy": null,
+     "firstBlockRadius": null
+    },
+    {
+     "text": "Smarter, simpler scheduling",
+     "size": 48,
+     "weight": "600",
+     "lsEm": 0,
+     "lh": 1.1,
+     "lines": 1,
+     "w": 800,
+     "align": "center",
+     "gapAbove": 144,
+     "eyebrow": null,
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": null,
+     "firstBlockRadius": null
+    }
+   ],
+   "footer": null
+  },
+  "mercury": {
+   "url": "https://mercury.com",
+   "pageHeight": 11661,
+   "nav": {
+    "pos": "relative",
+    "h": 72,
+    "bg": "rgba(0, 0, 0, 0)",
+    "blur": "none",
+    "radius": "0px"
+   },
+   "sequence": [
+    "hero(full-bleed photograph, email capture)",
+    "dark: accordion list left + product UI right (accounts card)",
+    "stat headline(42px, 3 lines)",
+    "cream: 2 media cards + centred quote(28px, no card)",
+    "accordion + art panel (pattern repeats 3x)",
+    "stat \"1 in 3\" + 3 dark cards 320x400",
+    "news cards(3)",
+    "final statement"
+   ],
+   "theme": "photo hero, dark panel, cream body",
+   "rails": "none",
+   "proof": "single named quote; stat claims; no logo wall",
+   "contentWidth": 1024,
+   "sectionHeading": {
+    "n": 2,
+    "medianSizePx": 42,
+    "weight": 480,
+    "trackingEm": 0.01,
+    "lineHeight": 1.15,
+    "words": 11.5,
+    "chars": 63.5,
+    "lines": 2.5,
+    "sizes": [
+     42,
+     42
+    ]
+   },
+   "seamGapPx": {
+    "median": 260.5,
+    "samples": [
+     367,
+     154
+    ]
+   },
+   "cardClusters": [
+    {
+     "n": 5,
+     "style": "12px | noborder | noshadow | rgb(30, 30, 42)",
+     "gap": [
+      "32",
+      3
+     ],
+     "padding": [
+      "32px/32px",
+      5
+     ],
+     "sizes": [
+      "320x447",
+      "320x447",
+      "320x447",
+      "496x258",
+      "496x258"
+     ]
+    }
+   ],
+   "anchors": [
+    {
+     "text": "Radically different banking",
+     "size": 49.3472,
+     "weight": "480",
+     "lsEm": 0,
+     "lh": 1.1,
+     "lines": 1,
+     "w": 672,
+     "align": "center",
+     "gapAbove": 31,
+     "eyebrow": "Products",
+     "subChars": 84,
+     "subSize": 21.008,
+     "subLines": 2,
+     "firstBlockDy": null,
+     "firstBlockRadius": null
+    },
+    {
+     "text": "Loved by 300K+ of the most ambitious entrepreneurs on the planet",
+     "size": 42,
+     "weight": "480",
+     "lsEm": 0.01,
+     "lh": 1.15,
+     "lines": 3,
+     "w": 672,
+     "align": "center",
+     "gapAbove": 367,
+     "eyebrow": null,
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": 168,
+     "firstBlockRadius": "0px"
+    },
+    {
+     "text": "You’re creating something to stand the test of time. So are we.",
+     "size": 42,
+     "weight": "480",
+     "lsEm": 0.01,
+     "lh": 1.15,
+     "lines": 2,
+     "w": 672,
+     "align": "center",
+     "gapAbove": 154,
+     "eyebrow": null,
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": null,
+     "firstBlockRadius": null
+    },
+    {
+     "text": "1 in 3",
+     "size": 65.344,
+     "weight": "480",
+     "lsEm": 0,
+     "lh": 1.1,
+     "lines": 1,
+     "w": 140,
+     "align": "center",
+     "gapAbove": 68,
+     "eyebrow": null,
+     "subChars": 21,
+     "subSize": 18,
+     "subLines": 1,
+     "firstBlockDy": 265,
+     "firstBlockRadius": "0px"
+    },
+    {
+     "text": "Mercury hits $5.2B valuation",
+     "size": 28,
+     "weight": "480",
+     "lsEm": 0.015,
+     "lh": 1.2,
+     "lines": 2,
+     "w": 256,
+     "align": "left",
+     "gapAbove": 32,
+     "eyebrow": null,
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": null,
+     "firstBlockRadius": null
+    },
+    {
+     "text": "Banking – redesigned from the ground up.",
+     "size": 42,
+     "weight": "480",
+     "lsEm": 0.01,
+     "lh": 1.15,
+     "lines": 2,
+     "w": 672,
+     "align": "center",
+     "gapAbove": 265,
+     "eyebrow": null,
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": 152,
+     "firstBlockRadius": "12px"
+    },
+    {
+     "text": "Mercury for business",
+     "size": 28,
+     "weight": "480",
+     "lsEm": 0.015,
+     "lh": 1.2,
+     "lines": 1,
+     "w": 264,
+     "align": "left",
+     "gapAbove": 104,
+     "eyebrow": null,
+     "subChars": 116,
+     "subSize": 18,
+     "subLines": 3,
+     "firstBlockDy": null,
+     "firstBlockRadius": null
+    }
+   ],
+   "footer": {
+    "heightPx": 701,
+    "bg": "rgb(23, 23, 33)",
+    "linkCount": 58,
+    "linkFontPx": "16",
+    "effPadTop": 0,
+    "effPadBottom": -1,
+    "cols": 8
+   }
+  },
+  "ramp": {
+   "url": "https://ramp.com",
+   "pageHeight": 13905,
+   "nav": {
+    "pos": "static",
+    "h": 102,
+    "bg": "rgba(0, 0, 0, 0)",
+    "blur": "none",
+    "radius": "0px"
+   },
+   "sequence": [
+    "hero(left 64/400, email capture, product plate + live counter ticker)",
+    "two-tone claim + logo/photo mosaic(6x2 tiles, one photo+stat tile)",
+    "product rows(3, h3 24px + 755x755 visuals)",
+    "interactive prompt",
+    "scroll story \"Systems that never spoke\"(2700px)",
+    "Stack feature rows(28px two-tone)",
+    "access/automation",
+    "receipts grid(22 cards)",
+    "final-cta repeats hero line"
+   ],
+   "theme": "light",
+   "rails": "none (dot grid in hero)",
+   "proof": "logo mosaic in grey; live counters; photo case tile",
+   "contentWidth": 1312,
+   "sectionHeading": {
+    "n": 5,
+    "medianSizePx": 48,
+    "weight": 400,
+    "trackingEm": 0,
+    "lineHeight": 1.04,
+    "words": 5,
+    "chars": 37,
+    "lines": 2,
+    "sizes": [
+     40,
+     40,
+     48,
+     48,
+     48
+    ]
+   },
+   "seamGapPx": {
+    "median": 229,
+    "samples": [
+     129,
+     297,
+     229,
+     2026,
+     189
+    ]
+   },
+   "cardClusters": [
+    {
+     "n": 22,
+     "style": "16px | 1px lab(91.6229 -0.159115 -2.26791) | noshadow | lab(100 0 0)",
+     "gap": [
+      "16",
+      19
+     ],
+     "padding": [
+      "20px/20px",
+      22
+     ],
+     "sizes": [
+      "320x192",
+      "320x192",
+      "320x192",
+      "320x192",
+      "320x192",
+      "320x192"
+     ]
+    },
+    {
+     "n": 5,
+     "style": "12px | 1px rgba(33, 33, 33, 0.1) | noshadow | lab(95.604 0.426412 1.20401)",
+     "gap": [
+      "24",
+      3
+     ],
+     "padding": [
+      "0px/0px",
+      5
+     ],
+     "sizes": [
+      "644x483",
+      "644x483",
+      "421x526",
+      "421x526",
+      "421x526"
+     ]
+    },
+    {
+     "n": 2,
+     "style": "12px | 1px oklab(0.2145 0.00152552 0.000480294 / 0.1) | noshadow | lab(100 0 0)",
+     "gap": null,
+     "padding": [
+      "0px/0px",
+      2
+     ],
+     "sizes": [
+      "755x755",
+      "755x755"
+     ]
+    },
+    {
+     "n": 1,
+     "style": "12px | noborder | noshadow | rgb(31, 31, 29)",
+     "gap": null,
+     "padding": [
+      "0px/0px",
+      1
+     ],
+     "sizes": [
+      "327x327"
+     ]
+    }
+   ],
+   "anchors": [
+    {
+     "text": "Time is money. Save both.",
+     "size": 64,
+     "weight": "400",
+     "lsEm": 0,
+     "lh": 1,
+     "lines": 1,
+     "w": 1050,
+     "align": "start",
+     "gapAbove": 178,
+     "eyebrow": "US CORPORATE PAYMENTS PROCESSED BY RAMP:",
+     "subChars": 66,
+     "subSize": 18,
+     "subLines": 1,
+     "firstBlockDy": 190,
+     "firstBlockRadius": "12px"
+    },
+    {
+     "text": "Join 70,000 of the world’s most ambitious companies growing 3.2x faster than the average American business.",
+     "size": 28,
+     "weight": "400",
+     "lsEm": 0,
+     "lh": 1.14,
+     "lines": 3,
+     "w": 656,
+     "align": "start",
+     "gapAbove": 183,
+     "eyebrow": null,
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": 104,
+     "firstBlockRadius": "12px"
+    },
+    {
+     "text": "One platform for all of finance. Agents for every workflow, working 24/7.",
+     "size": 40,
+     "weight": "400",
+     "lsEm": 0,
+     "lh": 1.05,
+     "lines": 2,
+     "w": 755,
+     "align": "start",
+     "gapAbove": 129,
+     "eyebrow": null,
+     "subChars": 26,
+     "subSize": 16,
+     "subLines": 1,
+     "firstBlockDy": 139,
+     "firstBlockRadius": "12px"
+    },
+    {
+     "text": "Cards & Expenses that handle themselves",
+     "size": 24,
+     "weight": "400",
+     "lsEm": 0,
+     "lh": 1.17,
+     "lines": 2,
+     "w": 300,
+     "align": "left",
+     "gapAbove": 113,
+     "eyebrow": null,
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": 429,
+     "firstBlockRadius": "12px"
+    },
+    {
+     "text": "Accounting automation eliminates month-end madness",
+     "size": 24,
+     "weight": "400",
+     "lsEm": 0,
+     "lh": 1.17,
+     "lines": 3,
+     "w": 300,
+     "align": "left",
+     "gapAbove": 58,
+     "eyebrow": null,
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": null,
+     "firstBlockRadius": null
+    },
+    {
+     "text": "See recommendations for your business",
+     "size": 40,
+     "weight": "400",
+     "lsEm": 0,
+     "lh": 1.05,
+     "lines": 2,
+     "w": 640,
+     "align": "center",
+     "gapAbove": 297,
+     "eyebrow": null,
+     "subChars": 98,
+     "subSize": 16,
+     "subLines": 2,
+     "firstBlockDy": null,
+     "firstBlockRadius": null
+    },
+    {
+     "text": "Systems that never spoke",
+     "size": 48,
+     "weight": "400",
+     "lsEm": 0,
+     "lh": 1.04,
+     "lines": 1,
+     "w": 551,
+     "align": "center",
+     "gapAbove": 229,
+     "eyebrow": null,
+     "subChars": 68,
+     "subSize": 16,
+     "subLines": 1,
+     "firstBlockDy": 46,
+     "firstBlockRadius": "0px"
+    },
+    {
+     "text": "Built on the intelligence of 70k+ finance teams. One platform for the agentic era.",
+     "size": 48,
+     "weight": "400",
+     "lsEm": 0,
+     "lh": 1.04,
+     "lines": 2,
+     "w": 1002,
+     "align": "center",
+     "gapAbove": 2026,
+     "eyebrow": null,
+     "subChars": 25,
+     "subSize": 16,
+     "subLines": 1,
+     "firstBlockDy": 203,
+     "firstBlockRadius": "12px"
+    },
+    {
+     "text": "Introducing Stack by Ramp. The AI operating system built for today’s top finance teams.",
+     "size": 28,
+     "weight": "400",
+     "lsEm": 0,
+     "lh": 1.14,
+     "lines": 3,
+     "w": 533,
+     "align": "start",
+     "gapAbove": 144,
+     "eyebrow": null,
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": null,
+     "firstBlockRadius": null
+    },
+    {
+     "text": "Keep your finance team focused on strategy. Let agents handle the busywork.",
+     "size": 28,
+     "weight": "400",
+     "lsEm": 0,
+     "lh": 1.14,
+     "lines": 2,
+     "w": 533,
+     "align": "start",
+     "gapAbove": 128,
+     "eyebrow": null,
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": null,
+     "firstBlockRadius": null
+    },
+    {
+     "text": "AI that learns from your team. And gets smarter with every team that joins.",
+     "size": 28,
+     "weight": "400",
+     "lsEm": 0,
+     "lh": 1.14,
+     "lines": 2,
+     "w": 533,
+     "align": "start",
+     "gapAbove": 128,
+     "eyebrow": null,
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": null,
+     "firstBlockRadius": null
+    },
+    {
+     "text": "Scale the team.",
+     "size": 48,
+     "weight": "400",
+     "lsEm": 0,
+     "lh": 1.04,
+     "lines": 1,
+     "w": 960,
+     "align": "center",
+     "gapAbove": 189,
+     "eyebrow": null,
+     "subChars": 53,
+     "subSize": 16,
+     "subLines": 1,
+     "firstBlockDy": 149,
+     "firstBlockRadius": "0px"
+    },
+    {
+     "text": "Set user access on autopilot.",
+     "size": 28,
+     "weight": "400",
+     "lsEm": 0,
+     "lh": 1.14,
+     "lines": 1,
+     "w": 533,
+     "align": "start",
+     "gapAbove": 40,
+     "eyebrow": null,
+     "subChars": 109,
+     "subSize": 16,
+     "subLines": 2,
+     "firstBlockDy": null,
+     "firstBlockRadius": null
+    },
+    {
+     "text": "We've got the receipts.",
+     "size": 48,
+     "weight": "400",
+     "lsEm": 0,
+     "lh": 1.04,
+     "lines": 1,
+     "w": 960,
+     "align": "center",
+     "gapAbove": 128,
+     "eyebrow": "70,000 teams and counting",
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": 143,
+     "firstBlockRadius": "16px"
+    },
+    {
+     "text": "Time is money. Save both.",
+     "size": 24,
+     "weight": "400",
+     "lsEm": 0,
+     "lh": 1.17,
+     "lines": 1,
+     "w": 278,
+     "align": "center",
+     "gapAbove": 191,
+     "eyebrow": null,
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": null,
+     "firstBlockRadius": null
+    }
+   ],
+   "footer": {
+    "heightPx": 1493,
+    "bg": "lab(100 0 0)",
+    "linkCount": 77,
+    "linkFontPx": "14",
+    "effPadTop": -24,
+    "effPadBottom": 154,
+    "cols": 8
+   }
+  },
+  "supabase": {
+   "url": "https://supabase.com",
+   "pageHeight": 7691,
+   "nav": {
+    "pos": "relative",
+    "h": 65,
+    "bg": "rgba(0, 0, 0, 0)",
+    "blur": "blur(4px)",
+    "radius": "0px"
+   },
+   "sequence": [
+    "hero(split: H1 left, body right)",
+    "product bento(7 cards: 538x400 + 3 + 4 x 263x400)",
+    "logo band(12 logos, 2 rows, rails)",
+    "dashboard screenshot 1088x644 r21",
+    "templates(4 cards + 2 previews)",
+    "customer stories accordion(1 expanded gradient + 4 narrow tiles)",
+    "community tweet marquee(14 cards 288w)",
+    "open source",
+    "final-cta repeats hero line"
+   ],
+   "theme": "light",
+   "rails": "horizontal hairlines + framed logo band",
+   "proof": "real logos mono; customer story cards; community posts",
+   "contentWidth": 1088,
+   "sectionHeading": {
+    "n": 6,
+    "medianSizePx": 34,
+    "weight": 600,
+    "trackingEm": 0,
+    "lineHeight": 1.11,
+    "words": 6,
+    "chars": 35.5,
+    "lines": 2,
+    "sizes": [
+     34,
+     34,
+     34,
+     34,
+     34,
+     34
+    ]
+   },
+   "seamGapPx": {
+    "median": 179,
+    "samples": [
+     125,
+     150,
+     234,
+     208
+    ]
+   },
+   "cardClusters": [
+    {
+     "n": 14,
+     "style": "21.3333px | 1px oklch(0.1 0 337.5 / 0.0812725) | noshadow | oklch(1 0 337.5)",
+     "gap": [
+      "8",
+      1
+     ],
+     "padding": [
+      "24px/24px",
+      14
+     ],
+     "sizes": [
+      "288x260",
+      "288x395",
+      "288x260",
+      "288x282",
+      "288x192",
+      "288x147"
+     ]
+    },
+    {
+     "n": 6,
+     "style": "10.6667px | 1px oklch(0.1 0 337.5 / 0.0812725) | noshadow | oklch(1 0 337.5)",
+     "gap": [
+      "12",
+      4
+     ],
+     "padding": [
+      "40px/24px",
+      4
+     ],
+     "sizes": [
+      "538x375",
+      "538x375",
+      "263x178",
+      "263x178",
+      "263x178",
+      "263x178"
+     ]
+    },
+    {
+     "n": 4,
+     "style": "16px | noborder | noshadow | oklch(1 0 337.5)",
+     "gap": [
+      "12",
+      3
+     ],
+     "padding": [
+      "1px/1px",
+      4
+     ],
+     "sizes": [
+      "263x400",
+      "263x400",
+      "263x400",
+      "263x400"
+     ]
+    },
+    {
+     "n": 1,
+     "style": "8px | 1px oklch(0.1 0 337.5 / 0.0812725) | noshadow | rgba(0, 0, 0, 0)",
+     "gap": null,
+     "padding": [
+      "0px/0px",
+      1
+     ],
+     "sizes": [
+      "544x503"
+     ]
+    }
+   ],
+   "anchors": [
+    {
+     "text": "Build in a weekend Scale to millions",
+     "size": 46,
+     "weight": "500",
+     "lsEm": 0,
+     "lh": 1,
+     "lines": 2,
+     "w": 536,
+     "align": "start",
+     "gapAbove": 161,
+     "eyebrow": null,
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": 134,
+     "firstBlockRadius": "16px"
+    },
+    {
+     "text": "Stay productive and manage your app without leaving the dashboard",
+     "size": 34,
+     "weight": "600",
+     "lsEm": 0,
+     "lh": 1.11,
+     "lines": 2,
+     "w": 1088,
+     "align": "start",
+     "gapAbove": 125,
+     "eyebrow": null,
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": 102,
+     "firstBlockRadius": "21.3333px"
+    },
+    {
+     "text": "Use Supabase with React",
+     "size": 34,
+     "weight": "600",
+     "lsEm": 0,
+     "lh": 1.11,
+     "lines": 2,
+     "w": 544,
+     "align": "start",
+     "gapAbove": 58,
+     "eyebrow": null,
+     "subChars": 21,
+     "subSize": 13,
+     "subLines": 1,
+     "firstBlockDy": null,
+     "firstBlockRadius": null
+    },
+    {
+     "text": "Kickstart your next project with production ready templates",
+     "size": 34,
+     "weight": "600",
+     "lsEm": 0,
+     "lh": 1.11,
+     "lines": 2,
+     "w": 527,
+     "align": "start",
+     "gapAbove": 150,
+     "eyebrow": null,
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": 64,
+     "firstBlockRadius": "10.6667px"
+    },
+    {
+     "text": "How industry leaders are building with Supabase",
+     "size": 34,
+     "weight": "600",
+     "lsEm": 0,
+     "lh": 1.11,
+     "lines": 2,
+     "w": 436,
+     "align": "start",
+     "gapAbove": 234,
+     "eyebrow": null,
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": 64,
+     "firstBlockRadius": "8px"
+    },
+    {
+     "text": "Join the community",
+     "size": 34,
+     "weight": "600",
+     "lsEm": 0,
+     "lh": 1.11,
+     "lines": 1,
+     "w": 319,
+     "align": "center",
+     "gapAbove": 208,
+     "eyebrow": null,
+     "subChars": 71,
+     "subSize": 16,
+     "subLines": 1,
+     "firstBlockDy": null,
+     "firstBlockRadius": null
+    },
+    {
+     "text": "Open source from day one",
+     "size": 34,
+     "weight": "600",
+     "lsEm": 0,
+     "lh": 1.11,
+     "lines": 1,
+     "w": 512,
+     "align": "left",
+     "gapAbove": 11,
+     "eyebrow": "@orlandopedro_",
+     "subChars": 210,
+     "subSize": 14,
+     "subLines": 3,
+     "firstBlockDy": null,
+     "firstBlockRadius": null
+    },
+    {
+     "text": "Build in a weekend, scale to millions",
+     "size": 34,
+     "weight": "600",
+     "lsEm": 0,
+     "lh": 1.2,
+     "lines": 1,
+     "w": 572,
+     "align": "center",
+     "gapAbove": 129,
+     "eyebrow": null,
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": null,
+     "firstBlockRadius": null
+    }
+   ],
+   "footer": {
+    "heightPx": 1097,
+    "bg": "oklch(0.995 0 337.5)",
+    "linkCount": 66,
+    "linkFontPx": "16",
+    "effPadTop": 40,
+    "effPadBottom": 96,
+    "cols": 7
+   }
+  },
+  "dub": {
+   "url": "https://dub.co",
+   "pageHeight": 12205,
+   "nav": {
+    "pos": "static",
+    "h": 32,
+    "bg": "rgba(0, 0, 0, 0)",
+    "blur": "none",
+    "radius": "0px"
+   },
+   "sequence": [
+    "hero(announcement chip, 48/500 one line, 2 buttons)",
+    "tabbed product showcase(3 tabs with colour icon tiles, app window 908x580, dark caption bar)",
+    "logo tiles(4x2, 251x80 grey tiles)",
+    "statement 30px with inline icon tiles + floating fragments",
+    "product chapter x3 (icon eyebrow + 48/500 + sub + button + visual + 3 feature columns)",
+    "integrations grid",
+    "partners",
+    "scale stats",
+    "enterprise API",
+    "customer tiles",
+    "changelog timeline",
+    "final-cta dark panel with concave notch + review badges"
+   ],
+   "theme": "light + dark inverted final",
+   "rails": "rails x=180/1260 + full-bleed horizontal hairlines + grid backdrop",
+   "proof": "real logos mono; named quote with logo; platform review badges",
+   "contentWidth": 998,
+   "sectionHeading": {
+    "n": 8,
+    "medianSizePx": 48,
+    "weight": 500,
+    "trackingEm": 0,
+    "lineHeight": 1,
+    "words": 3,
+    "chars": 21.5,
+    "lines": 1,
+    "sizes": [
+     48,
+     48,
+     40,
+     48,
+     36,
+     48,
+     48,
+     36
+    ]
+   },
+   "seamGapPx": {
+    "median": 138,
+    "samples": [
+     145,
+     138,
+     170,
+     138,
+     97
+    ]
+   },
+   "cardClusters": [
+    {
+     "n": 5,
+     "style": "16px | 1px rgba(0, 0, 0, 0.2) | rgb(255, 255, 255) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0 | rgb(255, 255, 255)",
+     "gap": null,
+     "padding": [
+      "0px/0px",
+      5
+     ],
+     "sizes": [
+      "544x324",
+      "544x324",
+      "544x324",
+      "544x324",
+      "544x324"
+     ]
+    },
+    {
+     "n": 2,
+     "style": "12px | 1px rgb(229, 229, 229) | noshadow | rgb(255, 255, 255)",
+     "gap": null,
+     "padding": [
+      "8px/8px",
+      1
+     ],
+     "sizes": [
+      "244x266",
+      "500x269"
+     ]
+    },
+    {
+     "n": 1,
+     "style": "8px | 1px rgb(229, 229, 229) | noshadow | rgba(0, 0, 0, 0)",
+     "gap": null,
+     "padding": [
+      "0px/0px",
+      1
+     ],
+     "sizes": [
+      "287x270"
+     ]
+    },
+    {
+     "n": 1,
+     "style": "8px | 1px rgb(229, 229, 229) | noshadow | rgb(255, 255, 255)",
+     "gap": null,
+     "padding": [
+      "0px/0px",
+      1
+     ],
+     "sizes": [
+      "231x349"
+     ]
+    }
+   ],
+   "anchors": [
+    {
+     "text": "Turn clicks into revenue",
+     "size": 48,
+     "weight": "500",
+     "lsEm": 0,
+     "lh": 1.15,
+     "lines": 1,
+     "w": 509,
+     "align": "center",
+     "gapAbove": 76,
+     "eyebrow": "Introducing our Startup Program",
+     "subChars": 105,
+     "subSize": 20,
+     "subLines": 2,
+     "firstBlockDy": 322,
+     "firstBlockRadius": "20px"
+    },
+    {
+     "text": "It starts with a link",
+     "size": 48,
+     "weight": "500",
+     "lsEm": 0,
+     "lh": 1,
+     "lines": 1,
+     "w": 512,
+     "align": "start",
+     "gapAbove": 145,
+     "eyebrow": "Dub Links",
+     "subChars": 120,
+     "subSize": 18,
+     "subLines": 2,
+     "firstBlockDy": 267,
+     "firstBlockRadius": "0px"
+    },
+    {
+     "text": "Measure what matters",
+     "size": 48,
+     "weight": "500",
+     "lsEm": 0,
+     "lh": 1,
+     "lines": 1,
+     "w": 512,
+     "align": "start",
+     "gapAbove": 138,
+     "eyebrow": "Dub Analytics",
+     "subChars": 124,
+     "subSize": 18,
+     "subLines": 2,
+     "firstBlockDy": 377,
+     "firstBlockRadius": "12px"
+    },
+    {
+     "text": "Connect with your favorite tools",
+     "size": 40,
+     "weight": "500",
+     "lsEm": 0,
+     "lh": 1,
+     "lines": 2,
+     "w": 384,
+     "align": "start",
+     "gapAbove": 170,
+     "eyebrow": null,
+     "subChars": 106,
+     "subSize": 18,
+     "subLines": 3,
+     "firstBlockDy": null,
+     "firstBlockRadius": null
+    },
+    {
+     "text": "Grow with partnerships",
+     "size": 48,
+     "weight": "500",
+     "lsEm": 0,
+     "lh": 1,
+     "lines": 1,
+     "w": 512,
+     "align": "start",
+     "gapAbove": 24,
+     "eyebrow": "Dub Partners",
+     "subChars": 102,
+     "subSize": 18,
+     "subLines": 2,
+     "firstBlockDy": 274,
+     "firstBlockRadius": "0px"
+    },
+    {
+     "text": "Built to scale",
+     "size": 36,
+     "weight": "500",
+     "lsEm": 0,
+     "lh": 1.11,
+     "lines": 1,
+     "w": 304,
+     "align": "left",
+     "gapAbove": 32,
+     "eyebrow": null,
+     "subChars": 25,
+     "subSize": 10,
+     "subLines": 1,
+     "firstBlockDy": null,
+     "firstBlockRadius": null
+    },
+    {
+     "text": "Enterprise-grade link infrastructure",
+     "size": 48,
+     "weight": "500",
+     "lsEm": 0,
+     "lh": 1,
+     "lines": 2,
+     "w": 512,
+     "align": "start",
+     "gapAbove": 35,
+     "eyebrow": "Dub API",
+     "subChars": 110,
+     "subSize": 18,
+     "subLines": 2,
+     "firstBlockDy": 219,
+     "firstBlockRadius": "0px"
+    },
+    {
+     "text": "Trusted by startups and enterprises",
+     "size": 48,
+     "weight": "500",
+     "lsEm": 0,
+     "lh": 1,
+     "lines": 2,
+     "w": 512,
+     "align": "center",
+     "gapAbove": 138,
+     "eyebrow": null,
+     "subChars": 112,
+     "subSize": 18,
+     "subLines": 2,
+     "firstBlockDy": null,
+     "firstBlockRadius": null
+    },
+    {
+     "text": "We ship fast",
+     "size": 36,
+     "weight": "500",
+     "lsEm": 0,
+     "lh": 1.11,
+     "lines": 1,
+     "w": 197,
+     "align": "left",
+     "gapAbove": 97,
+     "eyebrow": null,
+     "subChars": 52,
+     "subSize": 18,
+     "subLines": 1,
+     "firstBlockDy": 673,
+     "firstBlockRadius": "0px"
+    },
+    {
+     "text": "Supercharge your marketing efforts",
+     "size": 48,
+     "weight": "500",
+     "lsEm": 0,
+     "lh": 1,
+     "lines": 2,
+     "w": 512,
+     "align": "center",
+     "gapAbove": 96,
+     "eyebrow": null,
+     "subChars": 82,
+     "subSize": 20,
+     "subLines": 2,
+     "firstBlockDy": null,
+     "firstBlockRadius": null
+    }
+   ],
+   "footer": {
+    "heightPx": 402,
+    "bg": "rgb(255, 255, 255)",
+    "linkCount": 37,
+    "linkFontPx": "14",
+    "effPadTop": 0,
+    "effPadBottom": 0,
+    "cols": 6
+   }
+  },
+  "cursor": {
+   "url": "https://cursor.com",
+   "pageHeight": 8175,
+   "nav": {
+    "pos": "fixed",
+    "h": 52,
+    "bg": "rgb(247, 247, 244)",
+    "blur": "none",
+    "radius": "0px"
+   },
+   "sequence": [
+    "hero(left 26/400, 2 CTAs, painted plate 1300x720 with 2 overlapping windows)",
+    "logo tiles(8 x 154x100)",
+    "feature plates x3 (22px two-tone head + app window on painted backdrop)",
+    "small cards x3",
+    "statement 36px",
+    "frontier cards x3",
+    "changelog 4 tiles",
+    "research plate with photo",
+    "highlights 4 tiles",
+    "final-cta 72px + single button"
+   ],
+   "theme": "warm light #f7f7f4, plates #f2f1ed",
+   "rails": "none",
+   "proof": "real logos mono in tiles; photography",
+   "contentWidth": 1300,
+   "sectionHeading": {
+    "n": 8,
+    "medianSizePx": 22,
+    "weight": 400,
+    "trackingEm": -0.005,
+    "lineHeight": 1.3,
+    "words": 5,
+    "chars": 27.5,
+    "lines": 1,
+    "sizes": [
+     22,
+     22,
+     22,
+     36,
+     22,
+     22,
+     22,
+     22
+    ]
+   },
+   "seamGapPx": {
+    "median": 152,
+    "samples": [
+     119,
+     152,
+     352,
+     152
+    ]
+   },
+   "cardClusters": [
+    {
+     "n": 3,
+     "style": "10px | noborder | rgba(0, 0, 0, 0.14) 0px 28px 70px 0px, rgba(0, 0, 0, 0.1) 0px 14px 32px 0px, oklab(0.26308 | rgb(242, 241, 237)",
+     "gap": null,
+     "padding": [
+      "0px/0px",
+      3
+     ],
+     "sizes": [
+      "540x340",
+      "580x420",
+      "780x500"
+     ]
+    },
+    {
+     "n": 1,
+     "style": "8px | 1px oklab(0.263084 -0.00230259 0.0124794 / 0.1) | noshadow | rgb(247, 247, 244)",
+     "gap": null,
+     "padding": [
+      "0px/0px",
+      1
+     ],
+     "sizes": [
+      "315x170"
+     ]
+    },
+    {
+     "n": 1,
+     "style": "10px | noborder | rgba(0, 0, 0, 0.3) 0px 22px 70px 4px, rgba(0, 0, 0, 0.15) 0px 0px 0px 0.5px | rgba(0, 0, 0, 0)",
+     "gap": null,
+     "padding": [
+      "0px/0px",
+      1
+     ],
+     "sizes": [
+      "740x584"
+     ]
+    },
+    {
+     "n": 1,
+     "style": "44px | noborder | noshadow | rgb(58, 58, 60)",
+     "gap": null,
+     "padding": [
+      "0px/0px",
+      1
+     ],
+     "sizes": [
+      "300x650"
+     ]
+    }
+   ],
+   "anchors": [
+    {
+     "text": "Cursor is your coding agent for building ambitious software.",
+     "size": 26,
+     "weight": "400",
+     "lsEm": -0.013,
+     "lh": 1.25,
+     "lines": 2,
+     "w": 658,
+     "align": "left",
+     "gapAbove": 30,
+     "eyebrow": null,
+     "subChars": 126,
+     "subSize": 12,
+     "subLines": 3,
+     "firstBlockDy": 122,
+     "firstBlockRadius": "0px"
+    },
+    {
+     "text": "The new way to build software.",
+     "size": 36,
+     "weight": "400",
+     "lsEm": -0.02,
+     "lh": 1.2,
+     "lines": 1,
+     "w": 810,
+     "align": "center",
+     "gapAbove": 119,
+     "eyebrow": null,
+     "subChars": 166,
+     "subSize": 16,
+     "subLines": 4,
+     "firstBlockDy": null,
+     "firstBlockRadius": null
+    },
+    {
+     "text": "Try Cursor now.",
+     "size": 72,
+     "weight": "400",
+     "lsEm": -0.03,
+     "lh": 1.1,
+     "lines": 1,
+     "w": 810,
+     "align": "center",
+     "gapAbove": 134,
+     "eyebrow": null,
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": null,
+     "firstBlockRadius": null
+    }
+   ],
+   "footer": {
+    "heightPx": 526,
+    "bg": "rgb(242, 241, 237)",
+    "linkCount": 36,
+    "linkFontPx": "14",
+    "effPadTop": 67,
+    "effPadBottom": 31,
+    "cols": 5
+   }
+  },
+  "granola": {
+   "url": "https://www.granola.ai",
+   "pageHeight": 14310,
+   "nav": {
+    "pos": "fixed",
+    "h": 56,
+    "bg": "rgba(0, 0, 0, 0)",
+    "blur": "none",
+    "radius": "0px"
+   },
+   "sequence": [
+    "hero(framed card over halftone art)",
+    "giant word \"For the doers\"(160px)",
+    "before/during/after intro + 3 alternating features 600x600",
+    "green block: \"Perfect meeting memory\" 108px + chat card",
+    "dark: 2 outlined quote cards with halftone portraits",
+    "features x5 stacked(32px h3 + 1280x527 media)",
+    "MCP card 768x653",
+    "free-tier CTA 88px"
+   ],
+   "theme": "colour blocks (green / dark / white)",
+   "rails": "none",
+   "proof": "named quotes with portraits; no logo wall",
+   "contentWidth": 1280,
+   "sectionHeading": {
+    "n": 14,
+    "medianSizePx": 42,
+    "weight": 400,
+    "trackingEm": -0.01,
+    "lineHeight": 1.025,
+    "words": 5.5,
+    "chars": 32.5,
+    "lines": 3,
+    "sizes": [
+     48,
+     160,
+     48,
+     108,
+     60,
+     36,
+     108,
+     32,
+     32,
+     32,
+     32,
+     32,
+     108,
+     32
+    ]
+   },
+   "seamGapPx": {
+    "median": 145,
+    "samples": [
+     87,
+     273,
+     266,
+     224,
+     101,
+     277,
+     145,
+     141,
+     141,
+     141,
+     141,
+     256,
+     145
+    ]
+   },
+   "cardClusters": [
+    {
+     "n": 3,
+     "style": "16px | noborder | noshadow | rgb(178, 194, 72)",
+     "gap": null,
+     "padding": [
+      "0px/0px",
+      3
+     ],
+     "sizes": [
+      "600x600",
+      "600x600",
+      "600x600"
+     ]
+    },
+    {
+     "n": 1,
+     "style": "28px | noborder | rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0 | rgb(255, 255, 255)",
+     "gap": null,
+     "padding": [
+      "24px/20px",
+      1
+     ],
+     "sizes": [
+      "704x320"
+     ]
+    },
+    {
+     "n": 1,
+     "style": "28px | noborder | rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0 | rgb(247, 247, 242)",
+     "gap": null,
+     "padding": [
+      "28px/48px",
+      1
+     ],
+     "sizes": [
+      "768x653"
+     ]
+    }
+   ],
+   "anchors": [
+    {
+     "text": "The AI notepad for back-to-back meetings",
+     "size": 86.4,
+     "weight": "400",
+     "lsEm": -0.02,
+     "lh": 0.93,
+     "lines": 4,
+     "w": 562,
+     "align": "start",
+     "gapAbove": 205,
+     "eyebrow": "New",
+     "subChars": 46,
+     "subSize": 10,
+     "subLines": 1,
+     "firstBlockDy": null,
+     "firstBlockRadius": null
+    },
+    {
+     "text": "Effortless notes, enhanced instantly.",
+     "size": 48,
+     "weight": "400",
+     "lsEm": 0,
+     "lh": 1,
+     "lines": 2,
+     "w": 640,
+     "align": "start",
+     "gapAbove": 87,
+     "eyebrow": null,
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": null,
+     "firstBlockRadius": null
+    },
+    {
+     "text": "For the doers",
+     "size": 160,
+     "weight": "400",
+     "lsEm": -0.015,
+     "lh": 1,
+     "lines": 1,
+     "w": 995,
+     "align": "center",
+     "gapAbove": 273,
+     "eyebrow": null,
+     "subChars": 26,
+     "subSize": 20,
+     "subLines": 3,
+     "firstBlockDy": null,
+     "firstBlockRadius": null
+    },
+    {
+     "text": "Granola helps you before, during and after your meetings.",
+     "size": 48,
+     "weight": "400",
+     "lsEm": -0.015,
+     "lh": 1,
+     "lines": 3,
+     "w": 600,
+     "align": "start",
+     "gapAbove": 266,
+     "eyebrow": null,
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": null,
+     "firstBlockRadius": null
+    },
+    {
+     "text": "Start your meeting prepared",
+     "size": 24,
+     "weight": "400",
+     "lsEm": -0.01,
+     "lh": 1.05,
+     "lines": 1,
+     "w": 600,
+     "align": "start",
+     "gapAbove": 208,
+     "eyebrow": null,
+     "subChars": 150,
+     "subSize": 16,
+     "subLines": 3,
+     "firstBlockDy": 104,
+     "firstBlockRadius": "16px"
+    },
+    {
+     "text": "Give your full attention",
+     "size": 24,
+     "weight": "400",
+     "lsEm": -0.01,
+     "lh": 1.05,
+     "lines": 1,
+     "w": 600,
+     "align": "start",
+     "gapAbove": 18,
+     "eyebrow": null,
+     "subChars": 167,
+     "subSize": 16,
+     "subLines": 3,
+     "firstBlockDy": 104,
+     "firstBlockRadius": "16px"
+    },
+    {
+     "text": "Post-meeting admin, done",
+     "size": 24,
+     "weight": "400",
+     "lsEm": -0.01,
+     "lh": 1.05,
+     "lines": 1,
+     "w": 600,
+     "align": "start",
+     "gapAbove": 96,
+     "eyebrow": null,
+     "subChars": 106,
+     "subSize": 16,
+     "subLines": 2,
+     "firstBlockDy": 80,
+     "firstBlockRadius": "16px"
+    },
+    {
+     "text": "Perfect meeting memory",
+     "size": 108,
+     "weight": "400",
+     "lsEm": -0.02,
+     "lh": 0.97,
+     "lines": 3,
+     "w": 584,
+     "align": "start",
+     "gapAbove": 12,
+     "eyebrow": "Granola Chat",
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": null,
+     "firstBlockRadius": null
+    },
+    {
+     "text": "Helping busy people through busy days",
+     "size": 60,
+     "weight": "400",
+     "lsEm": -0.015,
+     "lh": 1,
+     "lines": 2,
+     "w": 936,
+     "align": "center",
+     "gapAbove": 224,
+     "eyebrow": null,
+     "subChars": 74,
+     "subSize": 36,
+     "subLines": 4,
+     "firstBlockDy": null,
+     "firstBlockRadius": null
+    },
+    {
+     "text": "“ Granola generates the best meeting notes of anything I’ve tried so far.”",
+     "size": 36,
+     "weight": "400",
+     "lsEm": 0,
+     "lh": 1.1,
+     "lines": 4,
+     "w": 383,
+     "align": "start",
+     "gapAbove": 101,
+     "eyebrow": null,
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": null,
+     "firstBlockRadius": null
+    },
+    {
+     "text": "Works everywhere you do, how you do",
+     "size": 108,
+     "weight": "400",
+     "lsEm": -0.02,
+     "lh": 0.97,
+     "lines": 2,
+     "w": 1053,
+     "align": "start",
+     "gapAbove": 277,
+     "eyebrow": "Features",
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": null,
+     "firstBlockRadius": null
+    },
+    {
+     "text": "Humans in the room, not bots",
+     "size": 32,
+     "weight": "400",
+     "lsEm": -0.01,
+     "lh": 1.05,
+     "lines": 3,
+     "w": 820,
+     "align": "start",
+     "gapAbove": 145,
+     "eyebrow": null,
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": 32,
+     "firstBlockRadius": "0px"
+    },
+    {
+     "text": "Works with all meeting apps",
+     "size": 32,
+     "weight": "400",
+     "lsEm": -0.01,
+     "lh": 1.05,
+     "lines": 3,
+     "w": 820,
+     "align": "start",
+     "gapAbove": 141,
+     "eyebrow": null,
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": 32,
+     "firstBlockRadius": "0px"
+    },
+    {
+     "text": "Private by default, ready to share",
+     "size": 32,
+     "weight": "400",
+     "lsEm": -0.01,
+     "lh": 1.05,
+     "lines": 3,
+     "w": 820,
+     "align": "start",
+     "gapAbove": 141,
+     "eyebrow": null,
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": 32,
+     "firstBlockRadius": "0px"
+    },
+    {
+     "text": "Made for in-person meetings too",
+     "size": 32,
+     "weight": "400",
+     "lsEm": -0.01,
+     "lh": 1.05,
+     "lines": 3,
+     "w": 820,
+     "align": "start",
+     "gapAbove": 141,
+     "eyebrow": null,
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": 112,
+     "firstBlockRadius": "0px"
+    },
+    {
+     "text": "Syncs with your calendar",
+     "size": 32,
+     "weight": "400",
+     "lsEm": -0.01,
+     "lh": 1.05,
+     "lines": 4,
+     "w": 820,
+     "align": "start",
+     "gapAbove": 141,
+     "eyebrow": null,
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": 32,
+     "firstBlockRadius": "0px"
+    },
+    {
+     "text": "Use your meeting notes anywhere",
+     "size": 108,
+     "weight": "400",
+     "lsEm": -0.02,
+     "lh": 0.97,
+     "lines": 2,
+     "w": 1193,
+     "align": "start",
+     "gapAbove": 256,
+     "eyebrow": "Granola MCP Connector",
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": null,
+     "firstBlockRadius": null
+    },
+    {
+     "text": "No more copy-pasting meeting transcripts into AI tools.",
+     "size": 32,
+     "weight": "400",
+     "lsEm": -0.01,
+     "lh": 1.05,
+     "lines": 4,
+     "w": 624,
+     "align": "start",
+     "gapAbove": 145,
+     "eyebrow": null,
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": 506,
+     "firstBlockRadius": "28px"
+    },
+    {
+     "text": "Unlimited meeting notes for free",
+     "size": 88,
+     "weight": "400",
+     "lsEm": -0.01,
+     "lh": 0.98,
+     "lines": 3,
+     "w": 672,
+     "align": "start",
+     "gapAbove": 357,
+     "eyebrow": null,
+     "subChars": 89,
+     "subSize": 24,
+     "subLines": 2,
+     "firstBlockDy": null,
+     "firstBlockRadius": null
+    }
+   ],
+   "footer": {
+    "heightPx": 828,
+    "bg": "rgb(255, 255, 255)",
+    "linkCount": 30,
+    "linkFontPx": "14",
+    "effPadTop": 0,
+    "effPadBottom": 48,
+    "cols": 4
+   }
+  },
+  "plain": {
+   "url": "https://www.plain.com",
+   "pageHeight": 13060,
+   "nav": null,
+   "sequence": [
+    "promo bar + hero(centred 80px two-tone, email CTA, app in pale-green frame 1224x677, logo marquee overlay)",
+    "mono caption + 6 logos",
+    "inline-icon headline",
+    "dark rounded section",
+    "feature x4 (mono-caps chip eyebrow + 48px + sub + mono link; plates #f9f6f1)",
+    "dark green comparison(3 hairline rows)",
+    "testimonials 1200x528",
+    "timeline cards",
+    "security band",
+    "final-cta"
+   ],
+   "theme": "light + deep green",
+   "rails": "dashed rails and grid cells",
+   "proof": "real logos mono; named customer quotes",
+   "contentWidth": 1200,
+   "sectionHeading": {
+    "n": 10,
+    "medianSizePx": 48,
+    "weight": 400,
+    "trackingEm": -0.02,
+    "lineHeight": 1.04,
+    "words": 3,
+    "chars": 19.5,
+    "lines": 1.5,
+    "sizes": [
+     48,
+     48,
+     48,
+     48,
+     48,
+     48,
+     48,
+     48,
+     48,
+     48
+    ]
+   },
+   "seamGapPx": {
+    "median": 329,
+    "samples": [
+     167,
+     478,
+     378,
+     328,
+     379,
+     329,
+     72,
+     392,
+     265
+    ]
+   },
+   "cardClusters": [
+    {
+     "n": 17,
+     "style": "9px | noborder | noshadow | rgb(249, 246, 241)",
+     "gap": [
+      "20",
+      10
+     ],
+     "padding": [
+      "0px/0px",
+      12
+     ],
+     "sizes": [
+      "387x220",
+      "387x220",
+      "387x220",
+      "792x479",
+      "387x221",
+      "387x221"
+     ]
+    },
+    {
+     "n": 1,
+     "style": "8px | noborder | noshadow | rgb(249, 246, 241)",
+     "gap": null,
+     "padding": [
+      "0px/0px",
+      1
+     ],
+     "sizes": [
+      "793x480"
+     ]
+    }
+   ],
+   "anchors": [
+    {
+     "text": "Build support",
+     "size": 80,
+     "weight": "400",
+     "lsEm": -0.02,
+     "lh": 1,
+     "lines": 1,
+     "w": 471,
+     "align": "center",
+     "gapAbove": 115,
+     "eyebrow": null,
+     "subChars": 98,
+     "subSize": 24,
+     "subLines": 2,
+     "firstBlockDy": 268,
+     "firstBlockRadius": "0px"
+    },
+    {
+     "text": "Tools add",
+     "size": 48,
+     "weight": "400",
+     "lsEm": -0.02,
+     "lh": 1.04,
+     "lines": 1,
+     "w": 203,
+     "align": "center",
+     "gapAbove": 167,
+     "eyebrow": null,
+     "subChars": 220,
+     "subSize": 18,
+     "subLines": 3,
+     "firstBlockDy": null,
+     "firstBlockRadius": null
+    },
+    {
+     "text": "Meet a new approach: Support Infrastructure",
+     "size": 48,
+     "weight": "400",
+     "lsEm": -0.02,
+     "lh": 1.04,
+     "lines": 2,
+     "w": 1400,
+     "align": "center",
+     "gapAbove": 478,
+     "eyebrow": null,
+     "subChars": 161,
+     "subSize": 24,
+     "subLines": 3,
+     "firstBlockDy": null,
+     "firstBlockRadius": null
+    },
+    {
+     "text": "10x with agents",
+     "size": 48,
+     "weight": "400",
+     "lsEm": -0.02,
+     "lh": 1.04,
+     "lines": 1,
+     "w": 387,
+     "align": "left",
+     "gapAbove": 378,
+     "eyebrow": "AGENTS",
+     "subChars": 90,
+     "subSize": 18,
+     "subLines": 2,
+     "firstBlockDy": 131,
+     "firstBlockRadius": "9px"
+    },
+    {
+     "text": "Automate everything",
+     "size": 48,
+     "weight": "400",
+     "lsEm": -0.02,
+     "lh": 1.04,
+     "lines": 2,
+     "w": 386,
+     "align": "left",
+     "gapAbove": 328,
+     "eyebrow": "WORKFLOWS",
+     "subChars": 158,
+     "subSize": 18,
+     "subLines": 4,
+     "firstBlockDy": 179,
+     "firstBlockRadius": "9px"
+    },
+    {
+     "text": "Save time",
+     "size": 48,
+     "weight": "400",
+     "lsEm": -0.02,
+     "lh": 1.04,
+     "lines": 1,
+     "w": 387,
+     "align": "left",
+     "gapAbove": 379,
+     "eyebrow": "SIDEKICK",
+     "subChars": 180,
+     "subSize": 18,
+     "subLines": 4,
+     "firstBlockDy": 179,
+     "firstBlockRadius": "9px"
+    },
+    {
+     "text": "Learn from customers",
+     "size": 48,
+     "weight": "400",
+     "lsEm": -0.02,
+     "lh": 1.04,
+     "lines": 2,
+     "w": 387,
+     "align": "left",
+     "gapAbove": 329,
+     "eyebrow": "INSIGHTS",
+     "subChars": 172,
+     "subSize": 18,
+     "subLines": 4,
+     "firstBlockDy": 179,
+     "firstBlockRadius": "9px"
+    },
+    {
+     "text": "Speed, meet power.",
+     "size": 48,
+     "weight": "400",
+     "lsEm": -0.02,
+     "lh": 1.04,
+     "lines": 1,
+     "w": 793,
+     "align": "center",
+     "gapAbove": 72,
+     "eyebrow": null,
+     "subChars": 125,
+     "subSize": 24,
+     "subLines": 2,
+     "firstBlockDy": null,
+     "firstBlockRadius": null
+    },
+    {
+     "text": "Start fast. Scale fearlessly.",
+     "size": 24,
+     "weight": "500",
+     "lsEm": -0.02,
+     "lh": 1.17,
+     "lines": 1,
+     "w": 793,
+     "align": "center",
+     "gapAbove": 128,
+     "eyebrow": null,
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": null,
+     "firstBlockRadius": null
+    },
+    {
+     "text": "Take their word for it",
+     "size": 48,
+     "weight": "400",
+     "lsEm": -0.02,
+     "lh": 1.04,
+     "lines": 1,
+     "w": 1200,
+     "align": "center",
+     "gapAbove": 392,
+     "eyebrow": "FAST GROWING COMPANIES LOVE PLAIN",
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": 40,
+     "firstBlockRadius": "9px"
+    },
+    {
+     "text": "Here’s what you can do in 29 mins and 59 secs",
+     "size": 48,
+     "weight": "400",
+     "lsEm": -0.02,
+     "lh": 1.04,
+     "lines": 2,
+     "w": 600,
+     "align": "center",
+     "gapAbove": 265,
+     "eyebrow": "TIME IS MONEY. MONEY IS PIZZA.",
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": null,
+     "firstBlockRadius": null
+    },
+    {
+     "text": "5 mins",
+     "size": 24,
+     "weight": "500",
+     "lsEm": -0.02,
+     "lh": 1.17,
+     "lines": 1,
+     "w": 71,
+     "align": "start",
+     "gapAbove": 40,
+     "eyebrow": null,
+     "subChars": 49,
+     "subSize": 15,
+     "subLines": 2,
+     "firstBlockDy": 40,
+     "firstBlockRadius": "9px"
+    },
+    {
+     "text": "Engineered with enterprise-level security. Built for everyone.",
+     "size": 48,
+     "weight": "400",
+     "lsEm": -0.02,
+     "lh": 1.04,
+     "lines": 2,
+     "w": 768,
+     "align": "center",
+     "gapAbove": 24,
+     "eyebrow": null,
+     "subChars": 142,
+     "subSize": 24,
+     "subLines": 3,
+     "firstBlockDy": 508,
+     "firstBlockRadius": "8px"
+    },
+    {
+     "text": "Join the teams who rely on Plain to provide world-class support",
+     "size": 48,
+     "weight": "400",
+     "lsEm": -0.02,
+     "lh": 1.04,
+     "lines": 2,
+     "w": 1016,
+     "align": "center",
+     "gapAbove": 498,
+     "eyebrow": null,
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": null,
+     "firstBlockRadius": null
+    }
+   ],
+   "footer": null
+  },
+  "commslayer": {
+   "url": "https://commslayer.com",
+   "pageHeight": 17977,
+   "nav": {
+    "pos": "fixed",
+    "h": 84,
+    "bg": "rgba(0, 0, 0, 0)",
+    "blur": "none",
+    "radius": "0px"
+   },
+   "sequence": [
+    "hero(dark, floating channel tiles, 5 product-tab pills, app plate 1368x660)",
+    "stat headline + logo marquee",
+    "founder letter card",
+    "AI agent: 48px h2 + hairline grid of 5 feature cells",
+    "quote+metric strip",
+    "channels: gradient-rimmed UI cards",
+    "quote+metric strip",
+    "portal",
+    "quote+metric strip",
+    "dark integrations ring + pill marquee",
+    "quote+metric strip",
+    "FAQ split(heading left, accordion right)",
+    "final-cta dark card with product fragment"
+   ],
+   "theme": "dark hero, light body, dark integrations",
+   "rails": "rails x=80/1360 + hairlines + dot-grid bands",
+   "proof": "quote+metric strips between sections; logo marquee",
+   "contentWidth": 1198,
+   "sectionHeading": {
+    "n": 5,
+    "medianSizePx": 48,
+    "weight": 400,
+    "trackingEm": 0,
+    "lineHeight": 1,
+    "words": 7,
+    "chars": 38,
+    "lines": 1,
+    "sizes": [
+     36,
+     48,
+     48,
+     48,
+     48
+    ]
+   },
+   "seamGapPx": {
+    "median": 141,
+    "samples": [
+     205,
+     141,
+     141
+    ]
+   },
+   "cardClusters": [
+    {
+     "n": 12,
+     "style": "16px | noborder | rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0 | rgb(255, 255, 255)",
+     "gap": [
+      "20",
+      2
+     ],
+     "padding": [
+      "16px/16px",
+      12
+     ],
+     "sizes": [
+      "386x575",
+      "386x240",
+      "386x519",
+      "386x216",
+      "386x492",
+      "386x401"
+     ]
+    },
+    {
+     "n": 8,
+     "style": "24px | noborder | rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0 | rgb(255, 255, 255)",
+     "gap": [
+      "24",
+      3
+     ],
+     "padding": [
+      "16px/16px",
+      6
+     ],
+     "sizes": [
+      "780x687",
+      "567x429",
+      "587x758",
+      "587x758",
+      "587x622",
+      "587x622"
+     ]
+    },
+    {
+     "n": 7,
+     "style": "24px | noborder | rgba(0, 0, 0, 0.55) 0px 24px 48px -24px, rgba(255, 255, 255, 0.09) 0px 0px 0px 1px inset | rgba(0, 0, 0, 0)",
+     "gap": [
+      "49",
+      2
+     ],
+     "padding": [
+      "0px/0px",
+      7
+     ],
+     "sizes": [
+      "590x500",
+      "378x432",
+      "377x432",
+      "377x432",
+      "362x470",
+      "361x470"
+     ]
+    },
+    {
+     "n": 4,
+     "style": "12px | 1px rgb(227, 227, 227) | noshadow | rgb(255, 255, 255)",
+     "gap": [
+      "12",
+      3
+     ],
+     "padding": [
+      "0px/0px",
+      4
+     ],
+     "sizes": [
+      "223x217",
+      "223x217",
+      "223x217",
+      "223x217"
+     ]
+    }
+   ],
+   "anchors": [
+    {
+     "text": "Cheaper than Gorgias. AI agent included.",
+     "size": 48,
+     "weight": "400",
+     "lsEm": 0,
+     "lh": 1,
+     "lines": 2,
+     "w": 496,
+     "align": "center",
+     "gapAbove": 19,
+     "eyebrow": null,
+     "subChars": 82,
+     "subSize": 20,
+     "subLines": 1,
+     "firstBlockDy": 316,
+     "firstBlockRadius": "16px"
+    },
+    {
+     "text": "3000+ Shopify brands run their support on Commslayer",
+     "size": 24,
+     "weight": "400",
+     "lsEm": 0,
+     "lh": 1.33,
+     "lines": 1,
+     "w": 651,
+     "align": "center",
+     "gapAbove": 3,
+     "eyebrow": "So glad you love it! 🙌",
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": 215,
+     "firstBlockRadius": "24px"
+    },
+    {
+     "text": "We built a cheaper Gorgias alternative",
+     "size": 36,
+     "weight": "400",
+     "lsEm": 0,
+     "lh": 1.11,
+     "lines": 1,
+     "w": 672,
+     "align": "start",
+     "gapAbove": 3,
+     "eyebrow": null,
+     "subChars": 242,
+     "subSize": 16,
+     "subLines": 3,
+     "firstBlockDy": null,
+     "firstBlockRadius": null
+    },
+    {
+     "text": "An AI agent built for ecommerce support",
+     "size": 48,
+     "weight": "400",
+     "lsEm": 0,
+     "lh": 1,
+     "lines": 1,
+     "w": 1198,
+     "align": "start",
+     "gapAbove": 205,
+     "eyebrow": null,
+     "subChars": 134,
+     "subSize": 18,
+     "subLines": 2,
+     "firstBlockDy": null,
+     "firstBlockRadius": null
+    },
+    {
+     "text": "Live chat",
+     "size": 24,
+     "weight": "400",
+     "lsEm": 0,
+     "lh": 1.33,
+     "lines": 1,
+     "w": 469,
+     "align": "start",
+     "gapAbove": 24,
+     "eyebrow": "→",
+     "subChars": 121,
+     "subSize": 14,
+     "subLines": 3,
+     "firstBlockDy": 126,
+     "firstBlockRadius": "16px"
+    },
+    {
+     "text": "All your support channels in one place",
+     "size": 48,
+     "weight": "400",
+     "lsEm": 0,
+     "lh": 1,
+     "lines": 1,
+     "w": 1198,
+     "align": "start",
+     "gapAbove": 141,
+     "eyebrow": null,
+     "subChars": 119,
+     "subSize": 18,
+     "subLines": 2,
+     "firstBlockDy": null,
+     "firstBlockRadius": null
+    },
+    {
+     "text": "All channels in one place — connect a channel and it joins the same queue.",
+     "size": 24,
+     "weight": "400",
+     "lsEm": 0,
+     "lh": 1.33,
+     "lines": 2,
+     "w": 448,
+     "align": "start",
+     "gapAbove": 117,
+     "eyebrow": null,
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": 32,
+     "firstBlockRadius": "24px"
+    },
+    {
+     "text": "AI drafts on every ticket, ready to review and send.",
+     "size": 24,
+     "weight": "400",
+     "lsEm": 0,
+     "lh": 1.33,
+     "lines": 2,
+     "w": 378,
+     "align": "start",
+     "gapAbove": 101,
+     "eyebrow": null,
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": 32,
+     "firstBlockRadius": "24px"
+    },
+    {
+     "text": "Customer portal for self-serve support",
+     "size": 48,
+     "weight": "400",
+     "lsEm": 0,
+     "lh": 1,
+     "lines": 1,
+     "w": 1198,
+     "align": "start",
+     "gapAbove": 141,
+     "eyebrow": null,
+     "subChars": 153,
+     "subSize": 18,
+     "subLines": 2,
+     "firstBlockDy": 188,
+     "firstBlockRadius": "8px"
+    },
+    {
+     "text": "More of your CX stack in one place",
+     "size": 48,
+     "weight": "400",
+     "lsEm": 0,
+     "lh": 1,
+     "lines": 1,
+     "w": 1198,
+     "align": "start",
+     "gapAbove": 10,
+     "eyebrow": null,
+     "subChars": 143,
+     "subSize": 18,
+     "subLines": 2,
+     "firstBlockDy": 226,
+     "firstBlockRadius": "12px"
+    },
+    {
+     "text": "Frequently asked questions",
+     "size": 36,
+     "weight": "400",
+     "lsEm": 0,
+     "lh": 1.11,
+     "lines": 2,
+     "w": 346,
+     "align": "start",
+     "gapAbove": 0,
+     "eyebrow": null,
+     "subChars": 56,
+     "subSize": 18,
+     "subLines": 1,
+     "firstBlockDy": null,
+     "firstBlockRadius": null
+    }
+   ],
+   "footer": {
+    "heightPx": 695,
+    "bg": "rgb(255, 255, 255)",
+    "linkCount": 27,
+    "linkFontPx": "16",
+    "effPadTop": 65,
+    "effPadBottom": 24,
+    "cols": 4
+   }
+  },
+  "alignui": {
+   "url": "https://alignui.com",
+   "pageHeight": 10728,
+   "nav": {
+    "pos": "relative",
+    "h": 72,
+    "bg": "rgb(255, 255, 255)",
+    "blur": "none",
+    "radius": "24px"
+   },
+   "sequence": [
+    "hero",
+    "section x5: pill eyebrow + 48/550 2-line centred + 18px sub with bold keywords + framed demo(code<->preview, r28 double-bezel)",
+    "dark rounded panel: 3x2 feature grid with ruler ticks",
+    "template tabs(pills with colour icons)",
+    "components 4 tiles 270x220",
+    "FAQ split",
+    "community 3 cards",
+    "newsletter",
+    "footer with outline wordmark"
+   ],
+   "theme": "light grey #f7f7f7",
+   "rails": "rails x=112/1328 with node dots",
+   "proof": "none claimed",
+   "contentWidth": 1004,
+   "sectionHeading": {
+    "n": 6,
+    "medianSizePx": 48,
+    "weight": 550,
+    "trackingEm": -0.028,
+    "lineHeight": 1.17,
+    "words": 6.5,
+    "chars": 42,
+    "lines": 2,
+    "sizes": [
+     48,
+     48,
+     48,
+     48,
+     48,
+     40
+    ]
+   },
+   "seamGapPx": {
+    "median": 99,
+    "samples": [
+     112,
+     99,
+     99
+    ]
+   },
+   "cardClusters": [
+    {
+     "n": 10,
+     "style": "16px | noborder | noshadow | rgb(235, 235, 235)",
+     "gap": [
+      "24",
+      7
+     ],
+     "padding": [
+      "0px/0px",
+      10
+     ],
+     "sizes": [
+      "270x220",
+      "270x220",
+      "270x220",
+      "270x220",
+      "270x220",
+      "270x220"
+     ]
+    },
+    {
+     "n": 3,
+     "style": "24px | noborder | rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(41, 41, 41, 0.04) | rgb(255, 255, 255)",
+     "gap": [
+      "24",
+      2
+     ],
+     "padding": [
+      "32px/32px",
+      3
+     ],
+     "sizes": [
+      "368x228",
+      "368x228",
+      "368x228"
+     ]
+    },
+    {
+     "n": 1,
+     "style": "24px | noborder | rgb(255, 255, 255) 0px 0px 0px 0px inset, rgb(224, 224, 224) 0px 0px 0px 1px inset, rgba(0 | rgb(247, 247, 247)",
+     "gap": null,
+     "padding": [
+      "0px/0px",
+      1
+     ],
+     "sizes": [
+      "864x525"
+     ]
+    }
+   ],
+   "anchors": [
+    {
+     "text": "Design & Development",
+     "size": 80,
+     "weight": "550",
+     "lsEm": -0.035,
+     "lh": 1.1,
+     "lines": 1,
+     "w": 759,
+     "align": "center",
+     "gapAbove": -2,
+     "eyebrow": "Sectoral Templates",
+     "subChars": 72,
+     "subSize": 18,
+     "subLines": 1,
+     "firstBlockDy": 524,
+     "firstBlockRadius": "28px"
+    },
+    {
+     "text": "Make your customer happy by building faster",
+     "size": 48,
+     "weight": "550",
+     "lsEm": -0.028,
+     "lh": 1.17,
+     "lines": 2,
+     "w": 553,
+     "align": "center",
+     "gapAbove": 0,
+     "eyebrow": "35",
+     "subChars": 66,
+     "subSize": 18,
+     "subLines": 1,
+     "firstBlockDy": 228,
+     "firstBlockRadius": "28px"
+    },
+    {
+     "text": "What's inside AlignUI?",
+     "size": 48,
+     "weight": "550",
+     "lsEm": -0.025,
+     "lh": 1.17,
+     "lines": 1,
+     "w": 455,
+     "align": "center",
+     "gapAbove": 0,
+     "eyebrow": "49",
+     "subChars": 95,
+     "subSize": 18,
+     "subLines": 2,
+     "firstBlockDy": null,
+     "firstBlockRadius": null
+    },
+    {
+     "text": "Unlimited customization options for your unique needs",
+     "size": 48,
+     "weight": "550",
+     "lsEm": -0.028,
+     "lh": 1.17,
+     "lines": 2,
+     "w": 650,
+     "align": "center",
+     "gapAbove": 112,
+     "eyebrow": "Customization & Flexibility",
+     "subChars": 64,
+     "subSize": 18,
+     "subLines": 1,
+     "firstBlockDy": 92,
+     "firstBlockRadius": "28px"
+    },
+    {
+     "text": "Ready-made multi-page user flows for apps",
+     "size": 48,
+     "weight": "550",
+     "lsEm": -0.028,
+     "lh": 1.17,
+     "lines": 2,
+     "w": 496,
+     "align": "center",
+     "gapAbove": 99,
+     "eyebrow": "Sector-specific Templates PRO",
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": 208,
+     "firstBlockRadius": "24px"
+    },
+    {
+     "text": "Elevate your design with premium components & blocks",
+     "size": 48,
+     "weight": "550",
+     "lsEm": -0.028,
+     "lh": 1.17,
+     "lines": 2,
+     "w": 768,
+     "align": "center",
+     "gapAbove": 99,
+     "eyebrow": "Components & Blocks PRO",
+     "subChars": 67,
+     "subSize": 18,
+     "subLines": 1,
+     "firstBlockDy": null,
+     "firstBlockRadius": null
+    },
+    {
+     "text": "Frequently Asked Questions.",
+     "size": 40,
+     "weight": "550",
+     "lsEm": -0.02,
+     "lh": 1.2,
+     "lines": 2,
+     "w": 368,
+     "align": "start",
+     "gapAbove": 20,
+     "eyebrow": "F.A.Q",
+     "subChars": 40,
+     "subSize": 16,
+     "subLines": 1,
+     "firstBlockDy": null,
+     "firstBlockRadius": null
+    },
+    {
+     "text": "Join our community",
+     "size": 48,
+     "weight": "550",
+     "lsEm": -0.028,
+     "lh": 1.17,
+     "lines": 1,
+     "w": 405,
+     "align": "center",
+     "gapAbove": 99,
+     "eyebrow": "Community",
+     "subChars": 62,
+     "subSize": 18,
+     "subLines": 1,
+     "firstBlockDy": 88,
+     "firstBlockRadius": "24px"
+    }
+   ],
+   "footer": {
+    "heightPx": 1074,
+    "bg": "rgb(247, 247, 247)",
+    "linkCount": 29,
+    "linkFontPx": "14",
+    "effPadTop": -5,
+    "effPadBottom": 0,
+    "cols": 5
+   }
+  },
+  "mintlify": {
+   "url": "https://mintlify.com",
+   "pageHeight": 8457,
+   "nav": {
+    "pos": "sticky",
+    "h": 65,
+    "bg": "lab(100 0 0)",
+    "blur": "none",
+    "radius": "0px"
+   },
+   "sequence": [
+    "hero(left 50/400 3 lines + UI window bleeding right + wave line art)",
+    "logo box(8 full-colour tiles + left claim) + live counter ticker",
+    "chapter x4 (green tick + 36/500 two-tone 3-line head + right button + card carousel / wave art)",
+    "stat row(3, icon + number)",
+    "latest updates(3 cards)",
+    "cta-bar(139px: headline left, buttons right)"
+   ],
+   "theme": "light",
+   "rails": "rails x=170/1256 + hairlines + tick marks",
+   "proof": "real logos in colour tiles; story cards with stat",
+   "contentWidth": 1010,
+   "sectionHeading": {
+    "n": 7,
+    "medianSizePx": 36,
+    "weight": 500,
+    "trackingEm": -0.02,
+    "lineHeight": 1.11,
+    "words": 13,
+    "chars": 80,
+    "lines": 3,
+    "sizes": [
+     36,
+     36,
+     35,
+     36,
+     36,
+     36,
+     36
+    ]
+   },
+   "seamGapPx": {
+    "median": 224.5,
+    "samples": [
+     131,
+     217,
+     216,
+     240,
+     232,
+     271
+    ]
+   },
+   "cardClusters": [
+    {
+     "n": 6,
+     "style": "6px | 1px rgba(0, 0, 0, 0.04) | noshadow | rgb(250, 248, 245)",
+     "gap": [
+      "16",
+      4
+     ],
+     "padding": [
+      "16px/16px",
+      6
+     ],
+     "sizes": [
+      "341x264",
+      "341x264",
+      "341x264",
+      "341x264",
+      "341x264",
+      "341x264"
+     ]
+    },
+    {
+     "n": 5,
+     "style": "12px | 1px lab(2.42579 -0.165291 -0.470081 / 0.07) | noshadow | rgb(249, 246, 243)",
+     "gap": [
+      "16",
+      3
+     ],
+     "padding": [
+      "32px/32px",
+      5
+     ],
+     "sizes": [
+      "697x412",
+      "341x412",
+      "341x412",
+      "341x412",
+      "341x412"
+     ]
+    },
+    {
+     "n": 3,
+     "style": "12px | noborder | rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0 | rgba(0, 0, 0, 0)",
+     "gap": [
+      "16",
+      2
+     ],
+     "padding": [
+      "0px/0px",
+      3
+     ],
+     "sizes": [
+      "341x324",
+      "341x324",
+      "341x324"
+     ]
+    }
+   ],
+   "anchors": [
+    {
+     "text": "The intelligent documentation platform",
+     "size": 50,
+     "weight": "400",
+     "lsEm": -0.04,
+     "lh": 1.04,
+     "lines": 3,
+     "w": 352,
+     "align": "start",
+     "gapAbove": 0,
+     "eyebrow": "9",
+     "subChars": 66,
+     "subSize": 18,
+     "subLines": 2,
+     "firstBlockDy": 64,
+     "firstBlockRadius": "23.4654px"
+    },
+    {
+     "text": "Join 20,000+ of the world's most ambitious companies building for agents.",
+     "size": 24,
+     "weight": "500",
+     "lsEm": -0.01,
+     "lh": 1.17,
+     "lines": 3,
+     "w": 306,
+     "align": "start",
+     "gapAbove": 29,
+     "eyebrow": null,
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": null,
+     "firstBlockRadius": null
+    },
+    {
+     "text": "One platform for your entire knowledge stack. Agents that keep work moving 24/7.",
+     "size": 36,
+     "weight": "500",
+     "lsEm": -0.02,
+     "lh": 1.11,
+     "lines": 3,
+     "w": 664,
+     "align": "start",
+     "gapAbove": 131,
+     "eyebrow": null,
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": 56,
+     "firstBlockRadius": "12px"
+    },
+    {
+     "text": "Powering businesses of all sizes. Run your business on a reliable platform that adapts to your needs.",
+     "size": 36,
+     "weight": "500",
+     "lsEm": -0.02,
+     "lh": 1.11,
+     "lines": 3,
+     "w": 664,
+     "align": "start",
+     "gapAbove": 217,
+     "eyebrow": null,
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": 56,
+     "firstBlockRadius": "0px"
+    },
+    {
+     "text": "See how Anthropic accelerates AI adoption with Mintlify",
+     "size": 35,
+     "weight": "500",
+     "lsEm": -0.01,
+     "lh": 1.14,
+     "lines": 3,
+     "w": 432,
+     "align": "start",
+     "gapAbove": 32,
+     "eyebrow": null,
+     "subChars": 22,
+     "subSize": 16,
+     "subLines": 1,
+     "firstBlockDy": null,
+     "firstBlockRadius": null
+    },
+    {
+     "text": "Built to scale with the agent web. Built for scale with enterprise-grade reliability and performance.",
+     "size": 36,
+     "weight": "500",
+     "lsEm": -0.02,
+     "lh": 1.11,
+     "lines": 3,
+     "w": 664,
+     "align": "start",
+     "gapAbove": 216,
+     "eyebrow": null,
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": null,
+     "firstBlockRadius": null
+    },
+    {
+     "text": "99.99%",
+     "size": 36,
+     "weight": "400",
+     "lsEm": -0.02,
+     "lh": 1.11,
+     "lines": 1,
+     "w": 303,
+     "align": "start",
+     "gapAbove": 125,
+     "eyebrow": null,
+     "subChars": 25,
+     "subSize": 16,
+     "subLines": 1,
+     "firstBlockDy": null,
+     "firstBlockRadius": null
+    },
+    {
+     "text": "Enabling the next generation of startups. Powering a quarter of the last YC batch to 40% of the Forbes AI 50.",
+     "size": 36,
+     "weight": "500",
+     "lsEm": -0.02,
+     "lh": 1.11,
+     "lines": 3,
+     "w": 664,
+     "align": "start",
+     "gapAbove": 240,
+     "eyebrow": null,
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": 56,
+     "firstBlockRadius": "0px"
+    },
+    {
+     "text": "Trusted by teams building for agents.",
+     "size": 36,
+     "weight": "500",
+     "lsEm": -0.02,
+     "lh": 1.11,
+     "lines": 1,
+     "w": 562,
+     "align": "start",
+     "gapAbove": 232,
+     "eyebrow": null,
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": null,
+     "firstBlockRadius": null
+    },
+    {
+     "text": "Latest updates",
+     "size": 36,
+     "weight": "500",
+     "lsEm": -0.02,
+     "lh": 1.11,
+     "lines": 1,
+     "w": 228,
+     "align": "start",
+     "gapAbove": 271,
+     "eyebrow": null,
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": 62,
+     "firstBlockRadius": "0px"
+    },
+    {
+     "text": "The knowledge platform built for agents",
+     "size": 36,
+     "weight": "500",
+     "lsEm": -0.02,
+     "lh": 1.11,
+     "lines": 1,
+     "w": 599,
+     "align": "left",
+     "gapAbove": 242,
+     "eyebrow": null,
+     "subChars": null,
+     "subSize": null,
+     "subLines": null,
+     "firstBlockDy": null,
+     "firstBlockRadius": null
+    }
+   ],
+   "footer": {
+    "heightPx": 721,
+    "bg": "lab(100 0 0)",
+    "linkCount": 34,
+    "linkFontPx": "14",
+    "effPadTop": 104,
+    "effPadBottom": 68,
+    "cols": 6
+   }
+  }
+ },
+ "summary": {
+  "pageHeight": {
+   "median": 11933,
+   "min": 5930,
+   "max": 17977
+  },
+  "sectionHeadingPx": {
+   "median": 45,
+   "sorted": [
+    20,
+    22,
+    32,
+    32,
+    34,
+    36,
+    40,
+    42,
+    42,
+    48,
+    48,
+    48,
+    48,
+    48,
+    48,
+    48,
+    56,
+    56
+   ]
+  },
+  "seamGapPx": {
+   "n": 90,
+   "median": 205.5,
+   "p25": 141,
+   "p75": 273,
+   "note": "distance from previous content bottom to the next heading group top (eyebrow included); values >700 dropped as sticky/scroll-story outliers"
+  },
+  "footerHeightPx": {
+   "median": 701,
+   "min": 402,
+   "max": 1493,
+   "n": 15
+  }
+ }
+}

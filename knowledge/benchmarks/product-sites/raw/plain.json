@@ -22,11 +22,13 @@
    "borderBottom": "0px rgb(0, 0, 0)",
    "padT": "0px",
    "padB": "0px",
-   "effPadT": -182,
-   "effPadB": -286,
-   "contentL": -164,
-   "contentR": 1585,
-   "contentW": 1749,
+   "effPadT": 10,
+   "effPadB": 10,
+   "contentL": 486,
+   "contentR": 959,
+   "contentW": 473,
+   "cssPadT": 0,
+   "cssPadB": 0,
    "cardCount": 0,
    "cardRadius": [],
    "cardShadow": [],
@@ -68,6 +70,8 @@
    "contentL": 120,
    "contentR": 1310,
    "contentW": 1190,
+   "cssPadT": 0,
+   "cssPadB": 0,
    "cardCount": 0,
    "cardRadius": [],
    "cardShadow": [],
@@ -116,6 +120,8 @@
     "br": "0px",
     "padL": "32px"
    },
+   "cssPadT": 0,
+   "cssPadB": 0,
    "heading": {
     "text": "Join the teams who rely on Plain to provide world-class support",
     "tag": "h2",
@@ -133,6 +139,7 @@
     "y": 12300,
     "lines": 2
    },
+   "headingOffset": 498,
    "allHeadings": [
     {
      "t": "h2",

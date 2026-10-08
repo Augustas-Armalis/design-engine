@@ -34,6 +34,8 @@
     "br": "0px",
     "padL": "96px"
    },
+   "cssPadT": 160,
+   "cssPadB": 64,
    "heading": {
     "text": "Build in a weekend Scale to millions",
     "tag": "h1",
@@ -51,6 +53,7 @@
     "y": 225,
     "lines": 2
    },
+   "headingOffset": 160,
    "allHeadings": [
     {
      "t": "h1",
@@ -95,7 +98,7 @@
    "padT": "0px",
    "padB": "0px",
    "effPadT": 1,
-   "effPadB": -225,
+   "effPadB": 96,
    "contentL": 176,
    "contentR": 1567,
    "contentW": 1391,
@@ -106,6 +109,8 @@
     "br": "0px",
     "padL": "96px"
    },
+   "cssPadT": 0,
+   "cssPadB": 96,
    "heading": {
     "text": "Postgres Database",
     "tag": "h2",
@@ -123,6 +128,7 @@
     "y": 484,
     "lines": 1
    },
+   "headingOffset": 33,
    "sub": {
     "text": "Every project is a full Postgres database, the world's most trusted relational database.",
     "tag": "p",
@@ -187,7 +193,11 @@
    "cardShadow": [
     [
      "none",
-     7
+     6
+    ],
+    [
+     "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, ",
+     1
     ]
    ],
    "cardBorder": [
@@ -258,6 +268,8 @@
     "br": "0px",
     "padL": "96px"
    },
+   "cssPadT": 0,
+   "cssPadB": 0,
    "cardCount": 0,
    "cardRadius": [],
    "cardShadow": [],
@@ -295,7 +307,7 @@
    "padT": "0px",
    "padB": "0px",
    "effPadT": 83,
-   "effPadB": -642,
+   "effPadB": 629,
    "contentL": 176,
    "contentR": 1264,
    "contentW": 1088,
@@ -306,6 +318,8 @@
     "br": "0px",
     "padL": "96px"
    },
+   "cssPadT": 40,
+   "cssPadB": 16,
    "heading": {
     "text": "Stay productive and manage your app without leaving the dashboard",
     "tag": "h3",
@@ -323,6 +337,7 @@
     "y": 1758,
     "lines": 2
    },
+   "headingOffset": 88,
    "allHeadings": [
     {
      "t": "h3",
@@ -378,6 +393,8 @@
     "br": "0px",
     "padL": "96px"
    },
+   "cssPadT": 96,
+   "cssPadB": 96,
    "heading": {
     "text": "Use Supabase with React",
     "tag": "h3",
@@ -395,6 +412,7 @@
     "y": 2629,
     "lines": 2
    },
+   "headingOffset": 96,
    "allHeadings": [
     {
      "t": "h3",
@@ -477,6 +495,8 @@
     "br": "0px",
     "padL": "96px"
    },
+   "cssPadT": 96,
+   "cssPadB": 96,
    "heading": {
     "text": "Kickstart your next project with production ready templates",
     "tag": "h3",
@@ -494,6 +514,7 @@
     "y": 3325,
     "lines": 2
    },
+   "headingOffset": 96,
    "sub": {
     "text": "Stripe Subscriptions Starter",
     "tag": "h4",
@@ -602,6 +623,8 @@
     "br": "0px",
     "padL": "96px"
    },
+   "cssPadT": 96,
+   "cssPadB": 96,
    "heading": {
     "text": "How industry leaders are building with Supabase",
     "tag": "h3",
@@ -619,6 +642,7 @@
     "y": 4222,
     "lines": 2
    },
+   "headingOffset": 96,
    "allHeadings": [
     {
      "t": "h3",
@@ -690,10 +714,12 @@
    "padT": "0px",
    "padB": "0px",
    "effPadT": 80,
-   "effPadB": -171,
+   "effPadB": -1,
    "contentL": 9,
    "contentR": 1431,
    "contentW": 1422,
+   "cssPadT": 0,
+   "cssPadB": 0,
    "heading": {
     "text": "Join the community",
     "tag": "h3",
@@ -711,6 +737,7 @@
     "y": 5018,
     "lines": 1
    },
+   "headingOffset": 80,
    "sub": {
     "text": "Discover what our community has to say about their Supabase experience.",
     "tag": "p",
@@ -817,6 +844,8 @@
     "br": "0px",
     "padL": "96px"
    },
+   "cssPadT": 0,
+   "cssPadB": 0,
    "heading": {
     "text": "Open source from day one",
     "tag": "h2",
@@ -834,6 +863,7 @@
     "y": 5943,
     "lines": 1
    },
+   "headingOffset": 96,
    "sub": {
     "text": "Supabase is built in the open because we believe great developer tools should be transparent, inspectable, and owned by the community. Read,",
     "tag": "p",
@@ -899,6 +929,8 @@
    "contentL": 434,
    "contentR": 1006,
    "contentW": 572,
+   "cssPadT": 128,
+   "cssPadB": 128,
    "heading": {
     "text": "Build in a weekend, scale to millions",
     "tag": "h2",
@@ -916,6 +948,7 @@
     "y": 6348,
     "lines": 1
    },
+   "headingOffset": 128,
    "allHeadings": [
     {
      "t": "h2",

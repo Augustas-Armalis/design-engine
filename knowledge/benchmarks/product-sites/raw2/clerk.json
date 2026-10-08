@@ -1,0 +1,250 @@
+{
+ "vw": 1440,
+ "H": 7187,
+ "footTop": 6774,
+ "navH": 42,
+ "anchors": [
+  {
+   "i": 0,
+   "text": "Everything you need for authentication",
+   "tag": "h1",
+   "chars": 38,
+   "words": 5,
+   "size": 56,
+   "weight": "700",
+   "lsEm": -0.035,
+   "lhRatio": 1.14,
+   "lines": 2,
+   "w": 598,
+   "x": 120,
+   "align": "left",
+   "fam": "geistNumbers",
+   "color": "rgb(19, 19, 22)",
+   "y": 190,
+   "groupTop": 161,
+   "gapAbove": 4,
+   "gapBelowLastContent": 2,
+   "sectionContentH": 1550,
+   "eyebrow": {
+    "text": "Current plan",
+    "size": 11,
+    "upper": false,
+    "mono": false,
+    "pill": false
+   },
+   "sub": {
+    "chars": 44,
+    "size": 13,
+    "lines": 1,
+    "w": 367,
+    "color": "rgb(19, 19, 22)"
+   },
+   "firstBlock": {
+    "dy": 13,
+    "w": 720,
+    "h": 506,
+    "radius": "1.11111% 1.58103%",
+    "tag": "img"
+   },
+   "bg": "rgb(255, 255, 255)",
+   "secTop": 190,
+   "secH": 172,
+   "secTag": "div",
+   "secPadT": "0px",
+   "secPadB": "0px",
+   "secBgImg": false,
+   "secBorderT": "0px rgb(217, 217, 222)"
+  },
+  {
+   "i": 1,
+   "text": "Directory Sync (SCIM)",
+   "tag": "h1",
+   "chars": 21,
+   "words": 3,
+   "size": 24,
+   "weight": "500",
+   "lsEm": -0.01,
+   "lhRatio": 1.33,
+   "lines": 1,
+   "w": 680,
+   "x": 1672,
+   "align": "start",
+   "fam": "geistNumbers",
+   "color": "rgb(43, 43, 52)",
+   "y": 1742,
+   "groupTop": 1724,
+   "gapAbove": 17,
+   "gapBelowLastContent": 15,
+   "sectionContentH": 1145,
+   "eyebrow": {
+    "text": "Search users...",
+    "size": 10.72,
+    "upper": false,
+    "mono": false,
+    "pill": false
+   },
+   "sub": {
+    "chars": 33,
+    "size": 13,
+    "lines": 2,
+    "w": 296,
+    "color": "rgb(33, 33, 38)"
+   },
+   "firstBlock": {
+    "dy": 75,
+    "w": 680,
+    "h": 293,
+    "radius": "12px",
+    "tag": "div"
+   },
+   "bg": "rgb(255, 255, 255)",
+   "secTop": 1722,
+   "secH": 506,
+   "secTag": "div",
+   "secPadT": "0px",
+   "secPadB": "0px",
+   "secBgImg": false,
+   "secBorderT": "0px rgb(217, 217, 222)"
+  },
+  {
+   "i": 2,
+   "text": "Roles & Permissions",
+   "tag": "h1",
+   "chars": 19,
+   "words": 3,
+   "size": 24,
+   "weight": "500",
+   "lsEm": -0.01,
+   "lhRatio": 1.33,
+   "lines": 1,
+   "w": 680,
+   "x": 936,
+   "align": "start",
+   "fam": "geistNumbers",
+   "color": "rgb(43, 43, 52)",
+   "y": 2902,
+   "groupTop": 2859,
+   "gapAbove": -1,
+   "gapBelowLastContent": 10,
+   "sectionContentH": 3863,
+   "eyebrow": {
+    "text": "Clerk CLI",
+    "size": 13,
+    "upper": false,
+    "mono": false,
+    "pill": false
+   },
+   "sub": {
+    "chars": 24,
+    "size": 11,
+    "lines": 1,
+    "w": 140,
+    "color": "rgb(116, 118, 134)"
+   },
+   "firstBlock": {
+    "dy": 55,
+    "w": 720,
+    "h": 506,
+    "radius": "1.11111% 1.58103%",
+    "tag": "img"
+   },
+   "bg": "rgb(255, 255, 255)",
+   "secTop": 2882,
+   "secH": 506,
+   "secTag": "div",
+   "secPadT": "0px",
+   "secPadB": "0px",
+   "secBgImg": false,
+   "secBorderT": "0px rgb(217, 217, 222)"
+  }
+ ],
+ "cardClusters": [
+  {
+   "key": "16px | noborder | rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0 | rgb(33, 33, 38)",
+   "n": 11,
+   "sizes": [
+    "395x260",
+    "395x528",
+    "395x260",
+    "395x528",
+    "395x260",
+    "395x260"
+   ],
+   "gapMode": [
+    "8",
+    5
+   ],
+   "padMode": [
+    "0px/0px",
+    11
+   ]
+  },
+  {
+   "key": "12px | noborder | rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0 | rgb(247, 247, 248)",
+   "n": 7,
+   "sizes": [
+    "360x302",
+    "360x182",
+    "360x342",
+    "360x202",
+    "360x142",
+    "360x262"
+   ],
+   "gapMode": [
+    "16",
+    1
+   ],
+   "padMode": [
+    "20px/20px",
+    7
+   ]
+  },
+  {
+   "key": "8px | noborder | rgba(19, 19, 22, 0.05) 0px 0px 0px 1px, rgba(19, 19, 22, 0.05) 0px 1px 1px -0.5px, rgba(19 | rgb(247, 247, 248)",
+   "n": 5,
+   "sizes": [
+    "352x377",
+    "720x506",
+    "720x506",
+    "360x394",
+    "352x428"
+   ],
+   "gapMode": null,
+   "padMode": [
+    "0px/0px",
+    5
+   ]
+  },
+  {
+   "key": "16px | noborder | rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0 | rgb(255, 255, 255)",
+   "n": 4,
+   "sizes": [
+    "400x528",
+    "400x260",
+    "400x260",
+    "400x528"
+   ],
+   "gapMode": [
+    "8",
+    2
+   ],
+   "padMode": [
+    "0px/0px",
+    4
+   ]
+  }
+ ],
+ "headingLeftMode": [
+  "120",
+  1
+ ],
+ "nav": {
+  "pos": "sticky",
+  "h": 42,
+  "bg": "rgba(0, 0, 0, 0)",
+  "blur": "none",
+  "radius": "0px"
+ },
+ "slug": "clerk",
+ "url": "https://clerk.com"
+}

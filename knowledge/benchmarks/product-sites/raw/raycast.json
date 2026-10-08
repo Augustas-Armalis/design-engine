@@ -34,6 +34,8 @@
     "br": "1px",
     "padL": "32px"
    },
+   "cssPadT": 16,
+   "cssPadB": 16,
    "cardCount": 0,
    "cardRadius": [],
    "cardShadow": [],
@@ -82,6 +84,8 @@
     "br": "0px",
     "padL": "0px"
    },
+   "cssPadT": 0,
+   "cssPadB": 0,
    "heading": {
     "text": "Your shortcut to everything.",
     "tag": "h1",
@@ -99,6 +103,7 @@
     "y": 370,
     "lines": 2
    },
+   "headingOffset": 370,
    "sub": {
     "text": "A collection of powerful productivity tools all within an extendable launcher. Fast, ergonomic and reliable.",
     "tag": "span",
@@ -160,7 +165,7 @@
    "padT": "224px",
    "padB": "224px",
    "effPadT": 224,
-   "effPadB": -575,
+   "effPadB": 55,
    "contentL": 70,
    "contentR": 5818,
    "contentW": 5748,
@@ -171,6 +176,8 @@
     "br": "0px",
     "padL": "0px"
    },
+   "cssPadT": 224,
+   "cssPadB": 224,
    "heading": {
     "text": "Take shortcuts, not detours.",
     "tag": "h2",
@@ -188,6 +195,7 @@
     "y": 1415,
     "lines": 1
    },
+   "headingOffset": 224,
    "sub": {
     "text": "One interface, everything you need.",
     "tag": "p",
@@ -212,8 +220,12 @@
      "text": "Take shortcuts, not detours."
     }
    ],
-   "cardCount": 2,
+   "cardCount": 3,
    "cardRadius": [
+    [
+     "8px",
+     1
+    ],
     [
      "12px",
      1
@@ -225,6 +237,10 @@
    ],
    "cardShadow": [
     [
+     "none",
+     1
+    ],
+    [
      "rgba(0, 0, 0, 0.4) 0px 4px 40px 8px, rgba(0, 0, 0, 0.8) 0px 0px 0px 0.5px, rgba(255, 255, 255, 0.3) 0px 0.5px ",
      1
     ],
@@ -234,6 +250,10 @@
     ]
    ],
    "cardBorder": [
+    [
+     "1px rgba(255, 255, 255, 0.2)",
+     1
+    ],
     [
      "1px rgba(142, 140, 144, 0.2)",
      1
@@ -246,7 +266,7 @@
    "cardPad": [
     [
      "0px/0px",
-     1
+     2
     ],
     [
      "8px/8px",
@@ -254,6 +274,10 @@
     ]
    ],
    "cardBg": [
+    [
+     "rgba(34, 34, 34, 0.85)",
+     1
+    ],
     [
      "rgba(0, 0, 0, 0.6)",
      1
@@ -264,6 +288,7 @@
     ]
    ],
    "cardSizes": [
+    "196x267",
     "750x475",
     "332x72"
    ],
@@ -277,8 +302,8 @@
    "smallGlyphs": 3,
    "links": 0,
    "buttons": 0,
-   "words": 320,
-   "snippet": "Take shortcuts, not detours. One interface, everything you need. Type to filter entries... All Types Today Image (1200 x 1000) #FF6363 #59D499 #56C2FF #FFC531 https://raycast.com https://github.com/raycast/extensions The",
+   "words": 333,
+   "snippet": "Take shortcuts, not detours. One interface, everything you need. Type to filter entries... All Types Search... All Types Text Only Images Only Files Only Links Only Colors Only Today Image (1200 x 1000) #FF6363 #59D499 #",
    "sticky": false
   },
   {
@@ -308,6 +333,8 @@
     "br": "0px",
     "padL": "0px"
    },
+   "cssPadT": 0,
+   "cssPadB": 0,
    "heading": {
     "text": "It’s not about saving time.",
     "tag": "h2",
@@ -325,6 +352,7 @@
     "y": 2848,
     "lines": 1
    },
+   "headingOffset": 282,
    "sub": {
     "text": "It’s about feeling like you’re never wasting it.",
     "tag": "p",
@@ -431,6 +459,8 @@
     "br": "0px",
     "padL": "0px"
    },
+   "cssPadT": 224,
+   "cssPadB": 224,
    "heading": {
     "text": "There’s an extension for that.",
     "tag": "h2",
@@ -448,6 +478,7 @@
     "y": 3510,
     "lines": 1
    },
+   "headingOffset": 224,
    "sub": {
     "text": "Use your favorite tools without even opening them.",
     "tag": "p",
@@ -579,6 +610,8 @@
     "br": "0px",
     "padL": "20px"
    },
+   "cssPadT": 0,
+   "cssPadB": 0,
    "heading": {
     "text": "Meet your new virtual assistant",
     "tag": "h2",
@@ -596,6 +629,7 @@
     "y": 4817,
     "lines": 1
    },
+   "headingOffset": 93,
    "sub": {
     "text": "Raycast AI uses the tools you already rely on to get work done.",
     "tag": "p",
@@ -728,6 +762,8 @@
     "br": "0px",
     "padL": "0px"
    },
+   "cssPadT": 224,
+   "cssPadB": 224,
    "heading": {
     "text": "Built for professionals like you.",
     "tag": "h2",
@@ -745,6 +781,7 @@
     "y": 6516,
     "lines": 1
    },
+   "headingOffset": 224,
    "sub": {
     "text": "Used by seriously productive people.",
     "tag": "p",
@@ -847,11 +884,11 @@
    "borderBottom": "0px rgb(255, 255, 255)",
    "padT": "224px",
    "padB": "224px",
-   "effPadT": -24,
+   "effPadT": 224,
    "effPadB": 249,
    "contentL": 119,
-   "contentR": 1381,
-   "contentW": 1262,
+   "contentR": 1297,
+   "contentW": 1178,
    "container": {
     "w": 1204,
     "maxW": "1204px",
@@ -859,6 +896,8 @@
     "br": "0px",
     "padL": "0px"
    },
+   "cssPadT": 224,
+   "cssPadB": 224,
    "heading": {
     "text": "Don't repeat yourself.",
     "tag": "h2",
@@ -876,6 +915,7 @@
     "y": 7616,
     "lines": 1
    },
+   "headingOffset": 224,
    "sub": {
     "text": "Automate the things you do all the time.",
     "tag": "p",
@@ -976,6 +1016,8 @@
     "br": "0px",
     "padL": "0px"
    },
+   "cssPadT": 224,
+   "cssPadB": 224,
    "heading": {
     "text": "What else can Raycast do?",
     "tag": "span",
@@ -993,6 +1035,7 @@
     "y": 8763,
     "lines": 1
    },
+   "headingOffset": 228,
    "allHeadings": [],
    "cardCount": 1,
    "cardRadius": [
@@ -1069,6 +1112,8 @@
     "br": "0px",
     "padL": "0px"
    },
+   "cssPadT": 0,
+   "cssPadB": 0,
    "heading": {
     "text": "Stay in the loop.",
     "tag": "h2",
@@ -1086,6 +1131,7 @@
     "y": 9521,
     "lines": 1
    },
+   "headingOffset": 0,
    "sub": {
     "text": "Join the community and learn how other people get the most out of Raycast.",
     "tag": "p",
@@ -1208,6 +1254,8 @@
     "br": "0px",
     "padL": "0px"
    },
+   "cssPadT": 224,
+   "cssPadB": 224,
    "heading": {
     "text": "Build the perfect tools.",
     "tag": "h3",
@@ -1225,6 +1273,7 @@
     "y": 10761,
     "lines": 3
    },
+   "headingOffset": 444,
    "sub": {
     "text": "Our extension API is designed to allow anyone with web development skills to unleash the power of Raycast.",
     "tag": "p",
@@ -1290,6 +1339,8 @@
    "contentL": -157,
    "contentR": 1719,
    "contentW": 1876,
+   "cssPadT": 0,
+   "cssPadB": 224,
    "heading": {
     "text": "Take the short way.",
     "tag": "h2",
@@ -1307,6 +1358,7 @@
     "y": 14293,
     "lines": 1
    },
+   "headingOffset": 794,
    "sub": {
     "text": "Download and use Raycast for free.",
     "tag": "p",
@@ -1404,7 +1456,7 @@
    "borderBottom": "0px rgb(255, 255, 255)",
    "padT": "200px",
    "padB": "0px",
-   "effPadT": -73,
+   "effPadT": 297,
    "effPadB": 88,
    "contentL": 212,
    "contentR": 1252,
@@ -1416,6 +1468,8 @@
     "br": "0px",
     "padL": "24px"
    },
+   "cssPadT": 200,
+   "cssPadB": 0,
    "cardCount": 0,
    "cardRadius": [],
    "cardShadow": [],
