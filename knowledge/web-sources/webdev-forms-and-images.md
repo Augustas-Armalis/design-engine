@@ -15,7 +15,7 @@ Images modules read (17): welcome, history, performance-issues, vector-images, r
 
 Related: `webdev-learn-css.md` (form control typography WCSS-55; custom validation CSS), `webdev-learn-accessibility.md` (the other agent's note on the Learn Accessibility forms module), `webdev-performance-for-marketing.md` (LCP/CLS mechanics), `../web/implementation-craft.md` sections 2.4, 2.7.
 
-Evidence: **[verified-C156]** = executed in Chromium 156.0.8078.4 with Playwright on 2026-10-08 (`corpus/web/webdev-css/_tests/verify.mjs`, 19/19 pass). **[source]** stated by the page. **[engine note]** mine.
+Evidence: **[verified-C156]** = executed in Chromium 156.0.8078.4 with Playwright on 2026-10-08 (`corpus/web/webdev-css/_tests/verify.mjs`, 25/25 pass). **[source]** stated by the page. **[engine note]** mine.
 
 ---
 

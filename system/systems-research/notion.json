@@ -1,0 +1,147 @@
+{
+ "name": "Notion (notion.com marketing system, token layer \"Tatami\")",
+ "slug": "notion",
+ "vendor": "Notion Labs, Inc.",
+ "url": "https://www.notion.com",
+ "licence": "Proprietary. No published tokens or component library; the Tatami token layer was read from the live public stylesheets (1758 custom properties, 1043 non-empty). Study structure and values only; NotionInter, Lyon Text and the illustration style are licensed/branded. Product app (logged-in UI) not measured.",
+ "studiedOn": "2026-10-08",
+ "personality": [
+  "friendly",
+  "tactile",
+  "warm-neutral",
+  "heavy-display",
+  "illustrated",
+  "approachable"
+ ],
+ "bestFor": [
+  "horizontal productivity, workspace and AI-assistant SaaS for broad audiences",
+  "marketing that mixes heavy grotesk headlines with hand-drawn illustration and pastel chips",
+  "token systems that need a full per-state component matrix",
+  "light, warm-neutral, high-text-contrast pages (alpha-black text on white)"
+ ],
+ "avoidFor": [
+  "dark-first or developer-tool brands (marketing is light only)",
+  "premium/luxury minimalism (heavy 600-700 headlines and cartoon art are the opposite)",
+  "teams that need precise cross-surface greys on tinted backgrounds (text is alpha black, not solid ramps)",
+  "dense enterprise dashboards (marketing density only was measured)"
+ ],
+ "typography": {
+  "families": [
+   "NotionInter (Notion's customised Inter; weights 400, 500, 600, 700 plus variable-weight tokens 420, 520, 620, 680; fallback Inter, -apple-system, Segoe UI, Helvetica; features \"lnum\" 1, \"locl\" 0)",
+   "Lyon Text (serif; 4 text nodes on home; serif tokens 200-900 with 0 tracking up to size 600)",
+   "iA Writer Mono (mono; fallback Nitti, Menlo, Courier)",
+   "Permanent Marker (handwriting accent)",
+   "Noto Sans Arabic / Hebrew (script fallbacks)"
+  ],
+  "scale": [
+   {"role": "font-size-1100 / hero h1 (home, 1440)", "sizePx": 96, "lineHeightPx": 100, "weight": 600, "trackingEm": "-0.048em (-4.6px)"},
+   {"role": "font-size-900 / pricing h1", "sizePx": 64, "lineHeightPx": 64, "weight": 700, "trackingEm": "-0.033em (-2.125px)"},
+   {"role": "font-size-800 / section h2", "sizePx": 54, "lineHeightPx": 56, "weight": 700, "trackingEm": "-0.035em (-1.875px)"},
+   {"role": "font-size-700", "sizePx": 42, "lineHeightPx": 48, "weight": 600, "trackingEm": "-0.036em (-1.5px bold; -2px regular)"},
+   {"role": "font-size-600 / sub-section h2", "sizePx": 32, "lineHeightPx": 40, "weight": 700, "trackingEm": "-0.023em (-0.75px)"},
+   {"role": "font-size-500", "sizePx": 26, "lineHeightPx": 32, "weight": 500, "trackingEm": "-0.024em (-0.625px)"},
+   {"role": "font-size-400 / card h2-h3", "sizePx": 22, "lineHeightPx": 28, "weight": 700, "trackingEm": "-0.011em (-0.25px)"},
+   {"role": "font-size-350 / lead", "sizePx": 20, "lineHeightPx": 28, "weight": 400, "trackingEm": "-0.006em (-0.125px)"},
+   {"role": "font-size-300", "sizePx": 18, "lineHeightPx": 28, "weight": 400, "trackingEm": "-0.007em (-0.125px)"},
+   {"role": "font-size-200 / body, button medium/large", "sizePx": 16, "lineHeightPx": 24, "weight": 400, "trackingEm": "0"},
+   {"role": "font-size-150", "sizePx": 15, "lineHeightPx": 20, "weight": 400, "trackingEm": "0"},
+   {"role": "font-size-100 / small, button small, menu button", "sizePx": 14, "lineHeightPx": 20, "weight": 400, "trackingEm": "0"},
+   {"role": "font-size-50 / label", "sizePx": 12, "lineHeightPx": 16, "weight": 500, "trackingEm": "+0.01em (+0.125px)"},
+   {"role": "mobile hero h1 (390)", "sizePx": 42, "lineHeightPx": 48, "weight": 600, "trackingEm": "-0.036em (-1.5px)"},
+   {"role": "mobile h2 (390)", "sizePx": 32, "lineHeightPx": 40, "weight": 700, "trackingEm": "-0.023em (-0.75px)"}
+  ],
+  "notes": "Tokens: --tatami-font-size-{50,100,150,200,300,350,400,500,600,700,800,900,1000,1100} = .75, .875, .9375, 1, 1.125, 1.25, 1.375, 1.625, 2, 2.625, 3.375, 4, 4.75, 6rem; line heights 1, 1.25, 1.25, 1.5, 1.75, 1.75, 1.75, 2, 2.5, 3, 3.5, 4, 5, 6.25rem. Letter-spacing is a token per size AND weight (e.g. 800 regular -0.21875rem, semibold/bold -0.117188rem; 1100 semibold -0.2875rem): regular weight tracks tighter than bold at the same size (700 regular -2px vs bold -1.5px). Typography tokens are complete font shorthands per size and weight (--tatami-typography-sans-200-medium-font: 500 1rem / 1.5rem NotionInter ...). Interaction styles: button-small 500 14/20, button-medium 500 16/24, button-large 600 16/24, menu-button 400 14/20, all 0 tracking. Hero h1 includes an inline pill ('Ship', green chip) inside the headline. Measured 2026-10-08 at 1440 and 390 on notion.com, /pricing, /help."
+ },
+ "color": {
+  "model": "hex",
+  "neutrals": {
+   "warm gray ramp (--tatami-color-gray-N)": "100 #f9f9f8, 200 #f6f5f4, 300 #dfdcd9, 400 #a39e98, 500 #78736f, 600 #615d59, 700 #494744, 800 #31302e, 900 #191918 (yellow-brown cast)",
+   "text (measured)": "primary rgba(0,0,0,0.95) / 0.898 (42 nodes) / secondary rgba(0,0,0,0.54) / 0.59; solid rgb(97,93,89) = gray-600 for captions; rgb(120,115,111) = gray-500",
+   "surfaces": "white #fff, #f9f9f8 (rgb 249,249,248) alt sections, #f6f5f4 (pricing rows)",
+   "alpha ramps": "alpha-black 100-900: #0000000d, #0000001a, #0003, #0000004d, #0000008a, #00000096, #000000bf, #000000e5, #000000f2; alpha-white 100-900: #ffffff0d ... #fffffff2 (for inverse surfaces)",
+   "borders": "1px (--tatami-border-width-1 .0625rem) at #0000001a (tertiary button, selected menu button #0003)"
+  },
+  "accents": {
+   "primary blue": "#0075de (blue-600; CTA bg, white text 4.57:1), hover/focus/active #005bab; blue-500 #097fe8, 300 #93cdfe, 200 #e6f3fe, 100 #f2f9ff, 800 #00396b, 900 #002a4f",
+   "secondary CTA": "bg #e6f3fe, text #005bab (6.04:1), hover #f2f9ff",
+   "campaign palettes": "agents launch blue 200 #2537b1 / 300 #607df6 / 400 #455dd3 / 500 #394ea3 / 600 #213183 / 900 #02093a, yellow #fefcd5; dev-platform 'dos' blue #1313ba, black #0a0a5d, neon #6666fd, slate #7171a8, lavender #cbcbef, gray #f6f6fc",
+   "multi-hue ramps (100-900 each)": "red 500 #f64932, orange 500 #ff6d00, yellow 500 #ffb110, teal 500 #27918d, purple 500 #9849e8, green 500 #1aae39, pink 500 #ff64c8, brown 500 #9c7054"
+  },
+  "semantic": {
+   "success": "green-500 #1aae39 (chips), green-200 #d0f4d8 bg",
+   "danger": "red-500 #f64932 / 600 #e32d14",
+   "warning": "yellow-500 #ffb110 / orange-500 #ff6d00",
+   "info": "blue-600 #0075de",
+   "note": "Semantic status tokens are expressed through the nine-step hue ramps; named semantic aliases beyond buttons were not enumerated."
+  },
+  "darkMode": "Marketing is light-only (body white under prefers-color-scheme: dark, measured 2026-10-08). The token set includes alpha-white 100-900 and per-button alpha variants (action-button-alpha) so inverse surfaces exist, but a dark theme was not observed. Product app dark mode: unknown (not accessible).",
+  "contrastNotes": "Computed WCAG on white: white on #0075de 4.57:1 (just above AA); #005bab on #e6f3fe 6.04:1; gray-500 #78736f 4.69:1; gray-600 #615d59 6.53:1; rgba(0,0,0,0.54) renders about #757575 = 4.6:1. Primary body rgba(0,0,0,0.898) is about 15:1. Alpha-based text means contrast depends on the surface; tinted pastel chips need a re-check."
+ },
+ "spacing": {
+  "base": "4px (--tatami-dimension-spacing-N in px names, rem values)",
+  "scale": [0, 4, 8, 12, 16, 20, 24, 28, 30, 32, 40, 48, 56, 64, 72, 80, 96, 100, 128, 160],
+  "notes": "Named by pixel value (spacing-16 = 1rem). Sizes: --tatami-dimension-size-960 (60rem) and -1252 (78.25rem) for content widths; offsets 0/1/2px; thickness 1/2px. Breakpoints in media queries: 375, 600, 840, 1080, 1280, 1440px (min-width). Nav pad 5px 10px on 30px buttons. Hero frame inset about 240px at 1440 (product screenshot x=240)."
+ },
+ "radius": {
+  "scale": [0, 4, 5, 6, 8, 10, 12, 14, 16, "round (624.938rem)"],
+  "rule": "Tokens --tatami-border-radius-0/200/300/400/500/600/700/800/900/round = 0, .25, .3125, .375, .5, .625, .75, .875, 1rem, pill. Components: button .5rem (large .625rem), icon-button .25rem, menu-button pill. Measured on home: 8px x67, 4px x22, 12px x17, pill x7, 16px x2; pricing table rows 5px x112."
+ },
+ "depth": {
+  "shadows": [
+   "--tatami-shadow-100: 0 .7px 1.462px #00000004, 0 3px 9px #00000008",
+   "--tatami-shadow-200: 0 .175px 1.041px #00000003, 0 .8px 2.925px #00000005, 0 2.025px 7.847px #00000007, 0 4px 18px #0000000a",
+   "--tatami-shadow-300: six layers from 0 .667px 3.502px #00000002 to 0 36px 89px #0000000a (opacity <= 4%)",
+   "measured pricing small: rgba(0,0,0,0.3) 0 1px 4px (x85 table marker/pill elements)"
+  ],
+  "borders": "Very low-contrast: 1px rgba(0,0,0,0.1). Shadows are multi-layer, near-zero opacity (2-10%) so cards float without visible edges. Tertiary buttons have a 1px #0000001a border; secondary and primary have transparent borders (primary also keeps a 1px white-alpha border so geometry matches).",
+  "blur": "unknown"
+ },
+ "motion": {
+  "durationsMs": [100, 150, 200, 250, 300],
+  "easings": [
+   "cubic-bezier(0.42, 0, 1, 1) ease-in (200ms background/colour/text-decoration/outline on links and buttons: x27, x23, x17)",
+   "cubic-bezier(0, 0, 0.58, 1) ease-out",
+   "cubic-bezier(0.645, 0.045, 0.355, 1) ease-in-out-cubic (200ms box-shadow)",
+   "cubic-bezier(0.86, 0, 0.07, 1) ease-in-out-quint (300ms rotate on accordions)",
+   "cubic-bezier(0.76, 0, 0.24, 1) quart; cubic-bezier(0.45, 0, 0.55, 1) quad; cubic-bezier(0.5, 0, 0.5, 1) linear-ish",
+   "ease / ease-in-out (150ms nav background, 100ms transform)"
+  ],
+  "notes": "Duration tokens 100/150/200/250/300ms; hover states on this site use ease-in (slow start) rather than ease-out, unusual; 11 prefers-reduced-motion media blocks exist in the stylesheets. z-index tokens: header 100, banner 90, mobile-nav 200, popup/lightbox/tooltip 500."
+ },
+ "density": {
+  "modes": ["marketing comfortable (36-38px CTAs, 16px body)", "pricing table compact (15px/20px rows)", "mobile (44px menu button)"],
+  "controlHeightsPx": {
+   "nav text button": 30,
+   "nav CTA (Get Notion free)": 36,
+   "hero CTA": 38,
+   "mobile menu button": 44,
+   "pricing row text": 20
+  }
+ },
+ "components": {
+  "count": "unknown",
+  "list": ["button (primary, secondary, tertiary, ghost)", "icon-button", "menu-button (pill, selectable)", "action-button (primary, alpha)", "inline headline chip (pill)", "nav with mega menus", "logo strip", "product screenshot frame", "pricing comparison table", "cookie dialog (Accept all, Reject all, More options)", "accordion"],
+  "stateMatrixCompleteness": "Explicit and complete at token level for buttons: each variant has background, background-hover, background-focus, background-active, text, border (primary #0075de -> #005bab on hover, focus and active; secondary #e6f3fe -> #f2f9ff; tertiary #fff -> #f6f5f4 with #0000001a border; ghost transparent -> #f6f5f4 with #78736f indicator); icon-button #a39e98 -> #615d59 with 5% bg; menu-button rest #f9f9f8, hover/focus/active #f6f5f4, selected #f6f5f4 with border #0000001a / #0003. Disabled tokens exist for action-button icons (#0000004d). Hover, focus and active are separate tokens even when values are equal."
+ },
+ "tokenArchitecture": "Tatami, three tiers in CSS custom properties with the --tatami- prefix: (1) primitives named by scale step: --tatami-color-{hue}-{100..900}, --tatami-color-alpha-{black|white}-{100..900}, --tatami-dimension-spacing-{px}, --tatami-font-size-{50..1100}, --tatami-font-line-height-*, --tatami-font-letter-spacing-{sans|serif|mono}-{size}[-weight], --tatami-border-radius-{200..900|round}, --tatami-shadow-{0,100,200,300}, --tatami-motion-duration-*, --tatami-motion-timing-function-*; (2) semantic/component tokens that reference primitives and carry state in the name: --tatami-color-button-primary-background-hover, --tatami-color-menu-button-border-selected-active, --tatami-border-button-radius-lg, --tatami-typography-interaction-button-medium-font (a whole font shorthand), --tatami-typography-sans-{step}-{weight}-{font|letter-spacing|font-feature-settings}; (3) campaign namespaces (--tatami-color-campaigns-agents-launch-*, ...-dev-platform-dos-*) for time-boxed palettes. Component radius tokens appear twice in the stylesheet with different values (button radius 0 in one scope, .5rem in another; scope not identified), so radius is re-pointable per scope.",
+ "distinctiveness": "Heavy (600-700) Inter-derived grotesk set huge (96px) with very tight tracking (-0.048em); alpha-black ink rather than a coloured ink; warm yellow-brown greys; hand-drawn black-outline illustrations and cartoon characters beside real product screenshots; inline pastel pill chips inside headlines ('Ship' in a green pill); nearly invisible layered shadows; a serif (Lyon) held in reserve. Generic SaaS copies the pill and the big heading but not the tracking-per-weight table, the warm greys or the illustration voice.",
+ "weaknesses": [
+  "text greys are alpha black, so contrast changes with the surface and pastel chips need individual checks",
+  "primary button contrast is 4.57:1, barely AA",
+  "hover transitions use ease-in (delayed start), which feels sluggish compared with ease-out",
+  "tokens for dark mode are not exposed on the marketing site; app UI not available for study",
+  "very large hero (96px, 2 lines plus chip) pushes proof below the fold at 900px height; cookie dialog (about 400px wide) overlaps the right of the fold at 1440",
+  "campaign palettes live in the same token namespace as the core, risking brand drift"
+ ],
+ "takeaways": [
+  "Make every type token a full shorthand (size, line-height, family, weight) with a sibling letter-spacing token per size and weight",
+  "Track regular weights tighter than bold at the same display size; encode that in tokens, do not apply one global value",
+  "Name state in tokens (-hover, -focus, -active, -selected, -disabled) even when values coincide, so the state matrix is complete and auditable",
+  "Keep time-boxed campaign palettes in their own namespace, never mutating core colours",
+  "Use alpha-black ink and alpha borders for warm light surfaces, but verify contrast on every tinted background",
+  "Layer 4-6 near-zero-opacity shadows so cards float without visible edges",
+  "Allow one playful device (inline pill chip in a headline, illustration) against a disciplined grotesk system",
+  "Name spacing tokens by their pixel value; name type tokens by an open-ended numeric scale (50...1100) so steps can be inserted"
+ ],
+ "provenance": "measured-live"
+}

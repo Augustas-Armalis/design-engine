@@ -363,7 +363,7 @@ Conflicts and updates versus `../web/implementation-craft.md`:
 7. **Cross-document view transitions.** Craft table: Chrome 126, Safari 18.2, Firefox no (limited). The Chrome pages' badge shows only Chrome/Edge 126; Safari's presence is from BCD. Keep enhancement-only; do not block rendering with `rel=expect` on a marketing site without measuring LCP.
 8. **Reduced motion for view transitions.** The docs' sample disables all transition animations with `animation: none !important`; the docs also say to prefer subtler alternatives. Our default: disable page-wide movement; allow a short cross-fade.
 9. **Case-study numbers** are vendor-selected; do not quote them to clients as outcomes.
-10. **Docs' own code issues:** `posotion-area` typo, `*/` stray comment terminator, `lastClick` variable misnamed (`lastClickX`) in the pagereveal sample, and `getComputedStyle`-free examples. Do not paste without running.
+10. **Docs' own code issues:** `posotion-area` typo, `*/` stray comment terminator, `lastClick` variable misnamed (`lastClickX`) in the pagereveal sample. Do not paste without running.
 
 Judgement calls: with so many Chromium-only features, keep a "tier" tag on every snippet (verified-C156 means Chromium only). Prefer the feature only when the fallback is acceptable to the brand; for hero art, an unsupported scroll animation should look like a finished design, not a degraded one.
 

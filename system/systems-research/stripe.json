@@ -1,0 +1,162 @@
+{
+ "name": "Stripe (stripe.com marketing, docs.stripe.com, Stripe Apps UI, Elements Appearance API; internal system Sail)",
+ "slug": "stripe",
+ "vendor": "Stripe, Inc.",
+ "url": "https://stripe.com",
+ "licence": "Proprietary. Sail (internal design system) is not published; token names and values here come from the live docs/marketing stylesheets and public docs (Stripe Apps style guide, Elements Appearance API, accessible-color-systems post). Study structure and values only; do not reuse Sohne or marks.",
+ "studiedOn": "2026-10-08",
+ "personality": [
+  "refined",
+  "technical-luxe",
+  "airy",
+  "light-weight",
+  "gradient-rich",
+  "trustworthy"
+ ],
+ "bestFor": [
+  "fintech, payments and infrastructure marketing with an editorial feel",
+  "developer docs that must pair with a polished marketing site",
+  "products where one saturated accent plus tinted blue-grey neutrals should signal trust",
+  "layered, coloured-shadow depth on light surfaces"
+ ],
+ "avoidFor": [
+  "dense dark dashboards (marketing is light-only, display weight 300)",
+  "teams without a licence for a Sohne-class grotesk (light weights depend on it)",
+  "brands needing a single consistent ink and accent across templates (stripe.com uses two inks and two purples)",
+  "small-text legibility-first contexts (body copy is weight 300 at 15-16px)"
+ ],
+ "typography": {
+  "families": [
+   "sohne-var (Klim Sohne variable, 1-1000; marketing, font-feature-settings \"ss01\"; fallback SF Pro Display / Helvetica Neue, Arial)",
+   "Source Code Pro (500, code on marketing)",
+   "docs.stripe.com: -apple-system, system-ui, Segoe UI, Roboto, Helvetica Neue, Ubuntu (system UI stack) and Menlo/Consolas for code",
+   "Elements default: Ideal Sans, system-ui, sans-serif"
+  ],
+  "scale": [
+   {"role": "hero h1 (home, 1440)", "sizePx": 48, "lineHeightPx": 55.2, "weight": 300, "trackingEm": "-0.02em (-0.96px)"},
+   {"role": "statement h2 (home, 1440)", "sizePx": 56, "lineHeightPx": 57.68, "weight": 300, "trackingEm": "-0.025em (-1.4px)"},
+   {"role": "section h2 / lead p (home)", "sizePx": 32, "lineHeightPx": 35.2, "weight": 300, "trackingEm": "-0.02em (-0.64px)"},
+   {"role": "card h3 (home)", "sizePx": 26, "lineHeightPx": 29.12, "weight": 300, "trackingEm": "-0.01em (-0.26px)"},
+   {"role": "stat number (home)", "sizePx": 48, "lineHeightPx": 48, "weight": 300, "trackingEm": "-0.02em (-0.96px)"},
+   {"role": "body (home)", "sizePx": 16, "lineHeightPx": 22.4, "weight": 300, "trackingEm": "0"},
+   {"role": "nav link", "sizePx": 14, "lineHeightPx": 14, "weight": 400, "trackingEm": "0"},
+   {"role": "button (home, 1440 nav 14px / mobile 16px)", "sizePx": 16, "lineHeightPx": 16, "weight": 400, "trackingEm": "0"},
+   {"role": "eyebrow / label (home)", "sizePx": 10, "lineHeightPx": 11.5, "weight": 400, "trackingEm": "unknown"},
+   {"role": "pricing body", "sizePx": 15, "lineHeightPx": 24, "weight": 300, "trackingEm": "0"},
+   {"role": "pricing emphasis / pill button", "sizePx": 15, "lineHeightPx": 24, "weight": 425, "trackingEm": "0"},
+   {"role": "pricing price h2", "sizePx": 26, "lineHeightPx": 36, "weight": 500, "trackingEm": "0"},
+   {"role": "pricing eyebrow h2 (purple)", "sizePx": 18, "lineHeightPx": 28, "weight": 500, "trackingEm": "+0.2px"},
+   {"role": "mobile h1 (390)", "sizePx": 34, "lineHeightPx": 35.02, "weight": 300, "trackingEm": "-0.01em (-0.34px)"},
+   {"role": "mobile h2 (390)", "sizePx": 22, "lineHeightPx": 26.4, "weight": 300, "trackingEm": "-0.01em (-0.22px)"},
+   {"role": "mobile h3 (390)", "sizePx": 20, "lineHeightPx": 24, "weight": 300, "trackingEm": "-0.01em (-0.2px)"},
+   {"role": "docs h1", "sizePx": 32, "lineHeightPx": 40, "weight": 700, "trackingEm": "0"},
+   {"role": "docs h2", "sizePx": 21, "lineHeightPx": "normal", "weight": 700, "trackingEm": "0"},
+   {"role": "docs body", "sizePx": 14, "lineHeightPx": 20, "weight": 400, "trackingEm": "0"},
+   {"role": "docs sidebar / dense", "sizePx": 13, "lineHeightPx": 19, "weight": 400, "trackingEm": "0"},
+   {"role": "docs nav tab", "sizePx": 14, "lineHeightPx": 20, "weight": 600, "trackingEm": "0"}
+  ],
+  "notes": "Marketing is a light-weight display system: weight 300 for headings, body and stats, weight 400 for nav/buttons, 425 and 500 appear on the pricing template (variable axis used at non-round values). Tracking -0.02em at 32-48px, -0.025em at 56px, -0.01em at 20-34px mobile. Marketing and docs are different typographic worlds: docs use the system font stack at 14px with bold headings. Hero headline is gradient-coloured text (two stacked h1 layers measured with colours rgb(129,184,26) and rgba(0,14,255,0.5) animating). Elements Appearance API scales font sizes from --fontSizeBase in rem (fontSizeXs..3Xs / Sm..2Xl) and requires >= 16px for mobile inputs. Measured 2026-10-08 at 1440 and 390 on stripe.com, /pricing, docs.stripe.com."
+ },
+ "color": {
+  "model": "hex",
+  "neutrals": {
+   "marketing ink": "#061b31 (rgb 6,27,49; headings, 115 nodes); older/pricing ink #0a2540 (rgb 10,37,64, 372 nodes)",
+   "marketing body": "#50617a (rgb 80,97,122, 161 nodes); pricing body #425466",
+   "marketing muted": "#64748d (rgb 100,116,141); stat grey #7d8ba4; dark-label #273951; #3c4f69; #1a2c44",
+   "border/surface blue-grey": "#e5edf5 (rgb 229,237,245, 16 bg uses and hairlines); surfaces #f8fafd, #fafbfd, #f6f9fc (pricing page canvas), #ffffff",
+   "dark band": "#0d1738 (rgb 13,23,56) full-width section background",
+   "docs": "text #3c4257 (gray-700), heading #414552, secondary #50617a, surface #f7fafc, hairline #d4dee9, code panel dark navy",
+   "docs Sail gray ramp set B (heading colour #414552 comes from this set; theme mapping unverified)": "50 #f7fafc, 100 #ebeef1, 200 #c1c9d2, 300 #a3acba, 400 #8792a2, 500 #697386, 600 #545969, 700 #414552, 800 #30313d, 900 #1a1f36 (rgb triplets in --sail-color-gray-N-rgb)",
+   "docs Sail gray ramp set A (body colour #3c4257 comes from this set; theme mapping unverified)": "50 #f6f8fa, 100 #e3e8ee, 150 #d5dbe1, 200 #c0c8d2, 300 #a3acb9, 400 #87909f, 500 #687385, 600 #4f566b, 700 #3c4257, 800 #2a2f45, 900 #1a1b25, 950 #10111a"
+  },
+  "accents": {
+   "marketing primary": "#533afd (rgb 83,58,253; CTA bg, links, 44 text nodes, 6.19:1 on white)",
+   "pricing/legacy blurple": "#635bff (rgb 99,91,255, 4.70:1 on white; pill CTA and eyebrow)",
+   "tints": "#e2e4ff, #e8e9ff (secondary button bg), #b9b9f9 (outlined button border), rgb(127,125,252) (gradient/mobile section bg)",
+   "docs accent": "#5469d4 (blue-500; button bg, links, 4.83:1 on white); blue 600 #3d4eac, 700 #2f3d89, 800 #212d63, 900 #131f41",
+   "gradient stops (home hero)": "radial-gradient #7f7dfc, #f44bcc 33%, #e5edf5 66%; #533afd at 80%; #f363f3; #ffcf5e (yellow); linear 90deg #7232f1 3%, #fb76fa 50%, #ffcf5e",
+   "Elements default": "colorPrimary #0570de"
+  },
+  "semantic": {
+   "Elements defaults": "colorDanger #df1b41, colorText #30313d, colorBackground #ffffff, colorSuccess/Warning variables supported; accessibleColorOn* tokens computed for text on primary/background/danger",
+   "Sail docs set B": "green-500 #09825d, red/attention/critical and info/success/attention/critical 50-900 scales; hue aliases (orange to yellow, purple to blue, blue to cyan) re-point whole ramps in one of the two sets",
+   "Sail docs set A": "green-500 #228403, orange-500 #c44c34, red ramps, cyan-500 #0570de, purple-500 #a450b5"
+  },
+  "darkMode": "stripe.com marketing is light-only (body background identical under prefers-color-scheme: dark, measured 2026-10-08) but uses full-width dark-navy bands (#0d1738) for inverse sections with white-alpha text. Docs ship a dark code panel and a separate Sail theme file; docs dark-mode behaviour was not verified. Elements ships a `night` theme next to `stripe` and `flat` themes.",
+  "contrastNotes": "Computed WCAG on white: ink #061b31 17.37:1, #0a2540 ~16:1 class, body #50617a 6.30:1, muted #64748d 4.75:1, primary #533afd 6.19:1, #635bff 4.70:1, docs #5469d4 4.83:1 (white text on it 4.83:1). Stripe's own method (public post): Lab-based ramps tuned so any two steps 5 apart pass 4.5:1 and 4 apart pass 3:1 on any hue, including on the lightest tint of each hue; audit found no default text colour other than black met 4.5:1 before the rebuild."
+ },
+ "spacing": {
+  "base": "unknown for marketing; Stripe Apps tokens 2/4/8 steps; Elements spacingUnit default 2px (everything derives from it)",
+  "scale": [0, 2, 4, 8, 16, 24, 32, 48],
+  "notes": "Stripe Apps spacing tokens: 0, xxsmall 2px, xsmall 4px, small 8px, medium 16px, large 24px, xlarge 32px, xxlarge 48px. Marketing layout measured at 1440: nav height 76px; page frame has 1px vertical grid lines at x=88 and x=1352 (1264px frame), hero content inset to x=208 (stat bar to the right), logo strip inside frame; sections 7-10 are 1232px wide. Section heights vary 560-4530px; vertical rhythm not tokenised in the stylesheet."
+ },
+ "radius": {
+  "scale": [2, 3, 4, 5, 6, 8, 12, 14, 16, 16.5, "100%"],
+  "rule": "Marketing home buttons and chips are 4px (57 elements), cards 6px (38), small controls 5px; pricing template uses fully rounded 16.5px pills at 33px height; docs use 4px buttons, 6px inputs, 8px panels, 14px large cards. Elements default borderRadius 4px (buttonBorderRadius overrides). Two button grammars (square-ish 4px and pill) coexist on stripe.com templates."
+ },
+ "depth": {
+  "shadows": [
+   "signature small: rgba(50,50,93,0.25) 0 2px 5px -1px, rgba(0,0,0,0.3) 0 1px 3px -1px (x20, pricing controls)",
+   "signature medium: rgba(50,50,93,0.25) 0 13px 27px -5px, rgba(0,0,0,0.3) 0 8px 16px -8px (x6, cards)",
+   "signature large: rgba(50,50,93,0.25) 0 50px 100px -20px, rgba(0,0,0,0.3) 0 30px 60px -30px",
+   "home soft: rgba(50,50,93,0.12) 0 16px 32px; rgba(23,23,23,0.08) 0 15px 35px; rgba(23,23,23,0.06) 0 3px 6px; rgba(0,0,0,0.06) 0 4px 24px + rgba(0,0,0,0.03) 0 1px 2px",
+   "docs button ring: rgb(212,222,233) 0 0 0 1px (box-shadow used as border)",
+   "Elements documented focus: 0 1px 1px rgba(0,0,0,0.03), 0 3px 6px rgba(18,42,66,0.02), 0 0 0 2px var(--colorPrimary); invalid: 0 1px 1px rgba(0,0,0,0.07), 0 0 0 2px var(--colorDanger)"
+  ],
+  "borders": "1px hairlines in #e5edf5 and 1px vertical frame lines; docs use box-shadow rings as borders. Shadows are tinted with the blue-violet #32325d (rgb 50,50,93) so they read as part of the palette rather than grey.",
+  "blur": "nav bar background rgba(255,255,255,0.8) (backdrop blur not extracted, inferred); gradient hero uses large blurred radial gradients (blur radius not measured)."
+ },
+ "motion": {
+  "durationsMs": [100, 150, 240, 300, 600, 800, 1200],
+  "easings": [
+   "cubic-bezier(0.25, 1, 0.5, 1) (300ms colour/fill/stroke/transform/opacity, about 400 elements)",
+   "cubic-bezier(0.45, 0.05, 0.55, 0.95) (240ms nav colour/background)",
+   "cubic-bezier(0.165, 0.84, 0.44, 1) (800ms card transform)",
+   "cubic-bezier(0.65, 0, 0.35, 1) (1200ms heading colour wipe)",
+   "cubic-bezier(0.215, 0.61, 0.355, 1) (150ms pricing hover)",
+   "cubic-bezier(0.7, 0, 0, 1) (600ms)",
+   "cubic-bezier(0, 0, 0.4, 1) (docs 100ms colour); cubic-bezier(0, 0.09, 0.4, 1) (docs 150ms bg/shadow)",
+   "linear (150ms opacity x36)"
+  ],
+  "notes": "Hover feedback 100-300ms, reveal and emphasis 600-1200ms. Home page animates headline colour over 1.2s as scroll feedback and a live GDP counter (1.72881855%) as a motion element. Docs buttons: 240ms background-color/box-shadow. prefers-reduced-motion not verified."
+ },
+ "density": {
+  "modes": ["marketing comfortable (40-44px CTAs, 76px nav)", "docs dense (14px body, 36px nav buttons)", "pricing compact pill (32-33px)", "Elements spaced vs condensed inputs"],
+  "controlHeightsPx": {
+   "marketing nav item": 38,
+   "marketing CTA desktop": 40,
+   "marketing CTA mobile": 44,
+   "pricing pill button": 33,
+   "pricing nav pill": 32,
+   "docs nav/sidebar button": 36,
+   "docs search/input": 28,
+   "docs hero CTA": 36
+  }
+ },
+ "components": {
+  "count": 46,
+  "list": ["Stripe Apps UI (46): ContextView, FullPageView, OnboardingView, SettingsView, SignInView, Box, DetailPage, Divider, OverviewPage, Button, ButtonGroup, Link, Menu, Tabs, Accordion, Badge, Banner, Chip, Code, DataTable, FocusView, Icon, Img, Inline, List, PropertyList, Spinner, Table, TaskList, Toast, Tooltip, Checkbox, CurrencyField, DateField, DateRangePicker, FormFieldGroup, Radio, SearchField, Select, Switch, TextArea, TextField, BarChart, LineChart, Sparkline, MeterChart", "Elements: payment, address, link authentication, tabs, accordion items, inputs, labels, buttons", "Marketing: nav with mega-menus, pill/square CTA, logo strip, stat counter, gradient hero, bento product grid, pricing table"],
+  "stateMatrixCompleteness": "Public for Elements: Appearance API exposes rules per component and state (e.g. .Input, .Input:focus, .Input--invalid, .Tab, .Tab--selected, .Label, .Block) over 3 themes (stripe, night, flat) and an `inputs` (spaced, condensed) x `labels` (auto, above, floating) matrix, ~60+ variables; for Stripe Apps components have fixed presets and limited CSS (Chips change by callbacks, not overridable). Marketing/docs component state matrices are not published."
+ },
+ "tokenArchitecture": "Sail (internal) exposes in the shipped docs CSS: ramp primitives --sail-color-{hue}-{50..900|950} each with a -rgb triplet twin for alpha compositing (e.g. --sail-color-blue-500-rgb: 84, 105, 212), semantic aliases (--sail-color-background, -background-canvas, -background-offset, -line-divider, -line-divider-medium, -line-divider-dark, -line-keyline), and hue aliasing so a theme re-points whole ramps (orange to yellow, purple to blue, blue to cyan). Components then read hashed utility vars (--s-xxxx). Public layers: Stripe Apps tokens as typed props (spacing xxsmall..xxlarge, keyline, backgroundColor, color/fill, font) so only token values are allowed; Elements three-tier theme > variables > rules with computed accessibleColorOn* variables that choose readable text for any brand colour.",
+ "distinctiveness": "Light-weight Sohne (300) at display sizes with negative tracking and gradient-filled headline words; navy ink (#061b31) instead of black; one saturated purple (#533afd) over blue-tinted greys; shadows tinted with #32325d and stacked in two layers with negative spread; 1px grid-line frame around the whole page; full-bleed gradient art (the wave) behind the hero; dark-navy inverse bands; live numbers as a motion device. Generic SaaS copies the purple and the gradient but not the 300 weight, ink hue or tinted layered shadow.",
+ "weaknesses": [
+  "stripe.com carries two inks (#061b31 vs #0a2540) and two purples (#533afd vs #635bff) across templates; button grammar differs (4px square vs 16.5px pill) between home and pricing",
+  "weight 300 body at 15-16px with #50617a text is thin and borderline for low-vision users",
+  "docs (system fonts, 14px, bold headings) and marketing (Sohne 300) share almost no typographic DNA",
+  "Sail is not public, so there is no component spec to copy; only values and token names are visible",
+  "hero gradient art and animated gradient text are heavy and decorative; a public secondary source reports the gradient wave was retired in a 2026 redesign, yet it was present on 2026-10-08 (variant or rollout difference not resolved)"
+ ],
+ "takeaways": [
+  "Build colour ramps in a perceptual space with equal lightness per step across hues, so 'N steps apart' guarantees contrast (5 apart for text, 4 apart for icons)",
+  "Keep an -rgb triplet twin of every ramp colour for alpha compositing",
+  "Tint shadows with the brand's blue-violet and stack two layers (large soft + small tight with negative spread) instead of grey single shadows",
+  "Compute accessibleColorOn* tokens (text on primary, on background, on danger) rather than asking designers to pick them",
+  "Expose theming as three tiers (theme, variables, rules) and restrict custom styling to token values to keep a high accessibility bar",
+  "Use ink and body colours with a blue-grey cast (navy ink, slate body) instead of pure black and neutral grey",
+  "Light display weight (300) works only with a high-quality grotesk and negative tracking scaled to size; do not apply 300 to body copy in a default font",
+  "Frame the page with 1px structural lines and let one art object (gradient) bleed through the frame",
+  "Re-point whole hue ramps by alias to re-theme (hue aliasing) instead of editing each token"
+ ],
+ "provenance": "mixed"
+}

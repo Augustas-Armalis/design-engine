@@ -1,0 +1,169 @@
+{
+  "name": "Park UI (on Ark UI + Panda CSS + Radix Colors)",
+  "slug": "park-ui",
+  "vendor": "Christian Schroeter / Brains & Pixels design; now under the Chakra UI organisation (Chakra Systems Inc.). Ark UI is by Chakra Systems Inc.",
+  "url": "https://park-ui.com",
+  "licence": "MIT (github.com/chakra-ui/park-ui, Copyright 2025 cschroeter, studied commit 102769c 2026-02-21; Ark UI github.com/chakra-ui/ark MIT, @ark-ui/react 5.39.3; Radix Colors MIT; Panda CSS MIT)",
+  "studiedOn": "2026-10-08",
+  "personality": ["minimal", "crisp", "quiet", "neutral-with-one-accent", "engineered"],
+  "bestFor": [
+    "teams that want to OWN the component source (copy-paste via CLI) and edit recipes directly",
+    "products where one accent colour plus one tuned gray is the whole brand (SaaS dashboards, tools, docs)",
+    "multi-framework codebases (React, Solid, Vue) sharing one visual spec via Ark UI behaviour",
+    "projects that care about perceptually-consistent light and dark palettes (Radix 12-step scales)"
+  ],
+  "avoidFor": [
+    "editorial or expressive brand sites (no type voice, 4px radii, flat, quiet)",
+    "teams without a Panda CSS build step (static extraction, codegen) or who want a prebuilt npm component package",
+    "very dense data tables (control heights start at 24px and default to 40px)"
+  ],
+  "typography": {
+    "families": [
+      "sans: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji (Panda preset; Park UI sets no font)",
+      "serif: ui-serif, Georgia, Cambria, Times New Roman, Times, serif",
+      "mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace",
+      "docs site only: Outfit (body), Roboto Mono (code)"
+    ],
+    "scale": [
+      {"role": "xs", "sizePx": 12, "lineHeightPx": 18, "weight": 400, "trackingEm": 0},
+      {"role": "sm", "sizePx": 14, "lineHeightPx": 20, "weight": 400, "trackingEm": 0},
+      {"role": "md", "sizePx": 16, "lineHeightPx": 24, "weight": 400, "trackingEm": 0},
+      {"role": "lg", "sizePx": 18, "lineHeightPx": 28, "weight": 400, "trackingEm": 0},
+      {"role": "xl", "sizePx": 20, "lineHeightPx": 30, "weight": 400, "trackingEm": 0},
+      {"role": "2xl", "sizePx": 24, "lineHeightPx": 32, "weight": 400, "trackingEm": 0},
+      {"role": "3xl", "sizePx": 30, "lineHeightPx": 38, "weight": 400, "trackingEm": 0},
+      {"role": "4xl", "sizePx": 36, "lineHeightPx": 44, "weight": 400, "trackingEm": -0.02},
+      {"role": "5xl", "sizePx": 48, "lineHeightPx": 60, "weight": 400, "trackingEm": -0.02},
+      {"role": "6xl", "sizePx": 60, "lineHeightPx": 72, "weight": 400, "trackingEm": -0.02},
+      {"role": "7xl", "sizePx": 72, "lineHeightPx": 92, "weight": 400, "trackingEm": -0.02},
+      {"role": "label", "sizePx": 14, "lineHeightPx": 20, "weight": 500, "trackingEm": 0},
+      {"role": "Heading recipe", "sizePx": "from textStyle", "lineHeightPx": "from textStyle", "weight": 600, "trackingEm": "-0.02em from 4xl"}
+    ],
+    "notes": "textStyles pair size, line-height and (4xl+) -0.02em tracking, same ladder as Chakra v3 except xs has 18px leading (Chakra 16px) and tracking is -0.02em (Chakra -0.025em). Font weights come from the Panda preset (thin 100 ... black 900). Buttons, tabs, headings are semibold 600; labels, badges, switch labels medium 500. fontSizes include 2xs 8px (Panda) but no Park UI style uses it. Park UI ships NO typeface: type voice is entirely the host project's choice. Tabular numerals are set on Badge."
+  },
+  "color": {
+    "model": "hex",
+    "neutrals": {
+      "note": "Radix Colors, 12 steps per mode PLUS 12 alpha steps (a1-a12) per mode, 31 scales (6 grays + 25 chromatic). Step semantics (Radix): 1 app background, 2 subtle background, 3 component bg, 4 component hover, 5 component pressed/selected, 6 subtle border (non-interactive), 7 interactive border, 8 stronger border/focus ring, 9 solid (highest chroma), 10 solid hover, 11 low-contrast text, 12 high-contrast text.",
+      "gray options (choose one)": ["neutral", "mauve", "olive", "sage", "sand", "slate"],
+      "neutral light": ["#fcfcfc", "#f9f9f9", "#f0f0f0", "#e8e8e8", "#e0e0e0", "#d9d9d9", "#cecece", "#bbbbbb", "#8d8d8d", "#838383", "#646464", "#202020"],
+      "neutral dark": ["#111111", "#191919", "#222222", "#2a2a2a", "#313131", "#3a3a3a", "#484848", "#606060", "#6e6e6e", "#7b7b7b", "#b4b4b4", "#eeeeee"],
+      "sand light": ["#fdfdfc", "#f9f9f8", "#f1f0ef", "#e9e8e6", "#e2e1de", "#dad9d6", "#cfceca", "#bcbbb5", "#8d8d86", "#82827c", "#63635e", "#21201c"],
+      "sand dark": ["#111110", "#191918", "#222221", "#2a2a28", "#31312e", "#3b3a37", "#494844", "#62605b", "#6f6d66", "#7c7b74", "#b5b3ad", "#eeeeec"],
+      "slate light": ["#fcfcfd", "#f9f9fb", "#f0f0f3", "#e8e8ec", "#e0e1e6", "#d9d9e0", "#cdced6", "#b9bbc6", "#8b8d98", "#80838d", "#60646c", "#1c2024"],
+      "slate dark": ["#111113", "#18191b", "#212225", "#272a2d", "#2e3135", "#363a3f", "#43484e", "#5a6169", "#696e77", "#777b84", "#b0b4ba", "#edeef0"],
+      "sage light": ["#fbfdfc", "#f7f9f8", "#eef1f0", "#e6e9e8", "#dfe2e0", "#d7dad9", "#cbcfcd", "#b8bcba", "#868e8b", "#7c8481", "#5f6563", "#1a211e"],
+      "mauve light": ["#fdfcfd", "#faf9fb", "#f2eff3", "#eae7ec", "#e3dfe6", "#dbd8e0", "#d0cdd7", "#bcbac7", "#8e8c99", "#84828e", "#65636d", "#211f26"],
+      "pairings (gray -> accents)": {
+        "mauve": ["tomato", "red", "ruby", "crimson", "pink", "plum", "purple", "violet"],
+        "slate": ["iris", "indigo", "blue", "sky", "cyan"],
+        "sage": ["mint", "teal", "jade", "green"],
+        "olive": ["grass", "lime"],
+        "sand": ["yellow", "amber", "orange", "brown"],
+        "neutral": "any accent (default safe choice)"
+      },
+      "black / white alpha": "black.a1-a12 = 5%, 10%, 15%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 95%; white same"
+    },
+    "accents": {
+      "note": "25 chromatic + neutral selectable as accent: tomato, red, ruby, crimson, pink, plum, purple, violet, iris, indigo, blue, cyan, teal, jade, green, grass, bronze, gold, brown, orange, amber, yellow, lime, mint, sky. Step 9 is the brand colour in both modes.",
+      "blue light": ["#fbfdff", "#f4faff", "#e6f4fe", "#d5efff", "#c2e5ff", "#acd8fc", "#8ec8f6", "#5eb1ef", "#0090ff", "#0588f0", "#0d74ce", "#113264"],
+      "blue dark": ["#0d1520", "#111927", "#0d2847", "#003362", "#004074", "#104d87", "#205d9e", "#2870bd", "#0090ff", "#3b9eff", "#70b8ff", "#c2e6ff"],
+      "red light": ["#fffcfc", "#fff7f7", "#feebec", "#ffdbdc", "#ffcdce", "#fdbdbe", "#f4a9aa", "#eb8e90", "#e5484d", "#dc3e42", "#ce2c31", "#641723"],
+      "red dark": ["#191111", "#201314", "#3b1219", "#500f1c", "#611623", "#72232d", "#8c333a", "#b54548", "#e5484d", "#ec5d5e", "#ff9592", "#ffd1d9"],
+      "green light": ["#fbfefc", "#f4fbf6", "#e6f6eb", "#d6f1df", "#c4e8d1", "#adddc0", "#8eceaa", "#5bb98b", "#30a46c", "#2b9a66", "#218358", "#193b2d"],
+      "green dark": ["#0e1512", "#121b17", "#132d21", "#113b29", "#174933", "#20573e", "#28684a", "#2f7c57", "#30a46c", "#33b074", "#3dd68c", "#b1f1cb"],
+      "amber light": ["#fefdfb", "#fefbe9", "#fff7c2", "#ffee9c", "#fbe577", "#f3d673", "#e9c162", "#e2a336", "#ffc53d", "#ffba18", "#ab6400", "#4f3422"],
+      "amber dark": ["#16120c", "#1d180f", "#302008", "#3f2700", "#4d3000", "#5c3d05", "#714f19", "#8f6424", "#ffc53d", "#ffd60a", "#ffca16", "#ffe7b3"]
+    },
+    "semantic": {
+      "global aliases": {
+        "canvas (page bg)": "gray.1", "fg.default": "gray.12", "fg.muted": "gray.11", "fg.subtle": "gray.10", "border": "gray.4", "error": "red.9",
+        "global CSS vars": "--global-color-border = border; --global-color-placeholder = fg.subtle; --global-color-selection = colorPalette.subtle.bg; --global-color-focus-ring = colorPalette.solid.bg"
+      },
+      "per-palette variant contract (every accent and gray; identical in light and dark except where noted)": {
+        "solid": "bg = step 9, bg.hover = step 10, fg = white (neutral: bg black/white inverted, hover gray.12)",
+        "subtle": "bg = alpha a3, bg.hover = a4, bg.active = a5, fg = a11",
+        "surface": "bg = a2, bg.active = a3, border = a6, border.hover = a7, fg = a11",
+        "outline": "border = a7, bg.hover = a2, bg.active = a3, fg = a11",
+        "plain": "bg.hover = a3, bg.active = a4, fg = a11 (neutral gray fg = gray.12)"
+      },
+      "bright-solid exception": "amber, yellow, lime, mint and sky use fg = gray.12 on solid in light mode and gray.1 in dark mode (dark text on bright fills); all other chromatic solids use white"
+    },
+    "darkMode": "Each Radix scale is hand-authored for both modes (not inverted by formula), so step N means the same role in light and dark. The theme stores {_light, _dark} on every step and switches by the `.dark` class condition (Panda `_dark`, plus a `light` condition ':root &, .light &'). Variant tokens use ALPHA steps (a3, a6, a11) over whatever surface they sit on, which keeps tints correct on any canvas. Shadows have a dark twin with black.a8 drop plus a 1px inset gray.a8 edge.",
+    "contrastNotes": "Radix guarantees steps 11 and 12 reach APCA Lc 60 and Lc 90 on a step 2 background of the same scale (Radix docs, checked). Measured WCAG 2 (this study): white on blue.9 = 3.26:1, white on red.9 = 3.91:1, white on green.9 = 3.16:1 (solid steps are mid-lightness and fail 4.5:1 for 14px labels; they pass only as large text or with APCA); amber.9 with gray.12 = 10.32:1; sky.9 with gray.12 = 10.99:1; blue.11 on blue.2 = 4.53:1; blue.12 on blue.2 = 12.00:1; red.11 on red.2 = 4.94:1; neutral fg.muted gray.11 on canvas = 5.77:1; fg.subtle gray.10 on canvas = 3.70:1 (placeholder, below 4.5:1); dark: gray.11 on gray.1 = 9.11:1, gray.10 on gray.1 = 4.46:1. Subtle/surface text uses alpha a11, so its effective contrast depends on the surface behind it (the numbers above use opaque step 11 as the proxy)."
+  },
+  "spacing": {
+    "base": "0.25rem (4px) with half-steps (Panda preset spacing, extra 5.5 = 22px): 0.5 2px, 1 4, 1.5 6, 2 8, 2.5 10, 3 12, 3.5 14, 4 16, 4.5 18, 5 20, 5.5 22, 6 24, 7 28, 8 32 ... 96 = 384px",
+    "scale": [
+      {"key": "0.5", "px": 2}, {"key": "1", "px": 4}, {"key": "1.5", "px": 6}, {"key": "2", "px": 8}, {"key": "2.5", "px": 10}, {"key": "3", "px": 12}, {"key": "3.5", "px": 14}, {"key": "4", "px": 16},
+      {"key": "4.5", "px": 18}, {"key": "5", "px": 20}, {"key": "5.5", "px": 22}, {"key": "6", "px": 24}, {"key": "7", "px": 28}, {"key": "8", "px": 32}, {"key": "9", "px": 36}, {"key": "10", "px": 40},
+      {"key": "11", "px": 44}, {"key": "12", "px": 48}, {"key": "14", "px": 56}, {"key": "16", "px": 64}, {"key": "20", "px": 80}, {"key": "24", "px": 96}
+    ]
+  },
+  "radius": {
+    "scale": [
+      {"token": "xs", "px": 2}, {"token": "sm", "px": 4}, {"token": "md", "px": 6}, {"token": "lg", "px": 8}, {"token": "xl", "px": 12}, {"token": "2xl", "px": 16}, {"token": "3xl", "px": 24}, {"token": "4xl", "px": 32}, {"token": "full", "px": 9999}
+    ],
+    "rule": "Three semantic layers: l1 = radii.xs (2px), l2 = radii.sm (4px), l3 = radii.md (6px) in the preset. l1 sits inside l2 which sits inside l3 (docs: 'makes it easy to nest border radii'; l1 smallest, used inside other elements; l2 medium, wraps l1; l3 largest, wraps l2). Controls (Button, Input, Badge) use l2; panels use l3; Switch uses full. The CLI prompt and website offer a border-radius scale (none, xs, sm default, md, lg, xl, 2xl), but in the studied CLI version (init.ts / prompt.ts) the value returned to the Panda config is fixed to xs/sm/md regardless of the answer, so in practice re-pointing the three tokens is a manual edit. Changing the character of the system = editing three token references."
+  },
+  "depth": {
+    "shadows": [
+      "xs: 0 1px 2px gray.a6, 0 0 1px gray.a7 (dark: 0 1px 1px black.a8, 0 0 1px inset gray.a8)",
+      "sm: 0 2px 4px gray.a4, 0 0 1px gray.a4",
+      "md: 0 4px 8px gray.a4, 0 0 1px gray.a4",
+      "lg: 0 8px 16px gray.a4, 0 0 1px gray.a4",
+      "xl: 0 16px 24px gray.a4, 0 0 1px gray.a4",
+      "2xl: 0 24px 40px gray.a4, 0 0 1px gray.a4",
+      "inset: inset 8px 0 12px -8px gray.a4 (dark black.a6)"
+    ],
+    "borders": "1px everywhere. Surface variants use a real 1px border at alpha a6 (hover a7); outline uses a7; default card/field/table border = gray.4. Flushed input uses a 1px bottom border.",
+    "blur": "No blur tokens in the preset. Dialog and drawer backdrops are flat scrims."
+  },
+  "motion": {
+    "durationsMs": [50, 100, 150, 200, 250, 300, 400],
+    "easings": ["default cubic-bezier(0.4, 0, 0.2, 1)", "in cubic-bezier(0.4, 0, 1, 1)", "out cubic-bezier(0, 0, 0.2, 1)", "in-out cubic-bezier(0.4, 0, 0.2, 1)", "linear"],
+    "notes": "Park UI overrides Panda's duration tokens: fastest 50, faster 100, fast 150, normal 200, slow 250, slower 300, slowest 400ms (Panda default has slow 300, slower 400, slowest 500). Open/closed pairs: menu, tooltip, popover = fast (150) in / faster (100) out; select = slow (250) in / fastest (50) out; dialog = normal (200) in / fast (150) out (backdrop slowest 400 in / normal out); accordion = normal both. Switch thumb moves in 0.12s ease. Keyframes: expand/collapse height and width, fade, slide, scale. Disabled: opacity 0.67 plus grayscale(100%) (layerStyle) with cursor not-allowed. No reduced-motion token. Transition shorthand: transition 'colors' with explicit property list (background-color, border-color, color, box-shadow)."
+  },
+  "density": {
+    "modes": ["size prop on every component (2xs..2xl where applicable)", "two component classes: primary (Button, Input, Select, Tabs triggers) and secondary (Badge, Checkbox, Switch, Radio)"],
+    "controlHeightsPx": {
+      "primary (xs, sm, md, lg, xl, 2xl)": [32, 36, 40, 44, 48, 64],
+      "primary 2xs": 24,
+      "default": 40,
+      "button padding-x (2xs..2xl) spacing keys": ["2", "2.5", "3", "3.5", "4", "4.5", "6"],
+      "icon box (2xs..2xl) spacing keys": ["3.5", "4", "4", "5", "5", "5.5", "6"],
+      "button text (2xs..2xl)": ["xs 12", "sm 14", "sm 14", "sm 14", "md 16", "md 16", "xl 20"],
+      "input text (2xs..2xl)": ["xs 12", "sm 14", "sm 14", "md 16", "md 16", "lg 18", "3xl 30"],
+      "badge height (sm, md, lg, xl, 2xl)": [18, 20, 22, 24, 28],
+      "switch (xs, sm, md, lg) width x height": ["32x16", "36x18", "40x20", "44x22"],
+      "checkbox (sm, md, lg)": [18, 20, "unknown (read: lg > md)"]
+    }
+  },
+  "components": {
+    "count": 59,
+    "list": ["Absolute Center", "Accordion", "Alert", "Avatar", "Badge", "Breadcrumb", "Button", "Card", "Carousel", "Checkbox", "Clipboard", "Close Button", "Code", "Collapsible", "Color Picker", "Combobox", "Date Picker", "Dialog", "Display Value", "Drawer", "Editable", "Field", "Fieldset", "File Upload", "Group", "Heading", "Hover Card", "Icon Button", "Icon", "Input Addon", "Input Group", "Input", "Kbd", "Link", "Menu", "Number Input", "Pagination", "Pin Input", "Popover", "Progress", "Radio Card Group", "Radio Group", "Rating Group", "Scroll Area", "Segment Group", "Select", "Skeleton", "Slider", "Spinner", "Splitter", "Switch", "Table", "Tabs", "Tags Input", "Text", "Textarea", "Toast", "Toggle Group", "Tooltip", "(recipe files also cover Angle Slider, Listbox, Password Input, QR Code, Signature Pad, Steps, Timer, Toggle, Tour, Tree View)"],
+    "stateMatrixCompleteness": "Five shared variants everywhere (solid, subtle, surface, outline, plain), with the usage guidance in the docs (solid = primary CTA; subtle = badges, tags, selected; surface = cards, menu items, selectable lists; outline = secondary, filters, cancel; plain = text buttons, links, tabs, ghost actions). Sizes 2xs-2xl; primary components share heights per size token (md Button = md Input = 40px). States: hover (variant-specific token), active (_active / _on for toggled state), focus-visible (outside ring 2px offset 2px, or inside ring 1px for inputs/tab panels), disabled (layerStyle: opacity .67 + grayscale), invalid (error colour on border and ring), checked/indeterminate. Colour axis is colorPalette (any of 31 palettes) so state x variant x palette is complete by construction. Missing: no loading state in the Button recipe (a Spinner is composed manually), no density/mode switch, reduced-motion not addressed."
+  },
+  "tokenArchitecture": "Layers: (1) Panda base presets (@pandacss/preset-base utilities + preset-panda scales for fonts, fontSizes, spacing, sizes, radii, durations, easings, shadows). (2) Park UI preset: tokens (black/white alpha colours, durations, zIndex), semanticTokens colors = 31 Radix scales each with steps 1-12, a1-a12 and variant tokens (solid, subtle, surface, outline, plain x bg/border/fg x default/hover/active), gray alias = chosen neutral, aliases fg.default/muted/subtle, canvas, border, error; semantic shadows xs-2xl, radii l1/l2/l3; textStyles; layerStyles (disabled); animationStyles; keyframes; conditions (light, invalid, hover = :not(:disabled):hover, active, checked, on, pinned); globalCss. (3) recipes/slotRecipes bound to Ark UI anatomy (e.g. tabsAnatomy.keys(), switchAnatomy.extendWith('indicator')), written once and copied into the app as source. (4) Ark UI: headless, state-machine (Zag.js) components with data-scope / data-part / data-state attributes that the recipes target via conditions (_open, _closed, _checked, _selected, _horizontal). Consumers choose framework (react or solid in the CLI prompt), accentColor and grayColor at `init` (borderRadius is prompted but not applied in the studied CLI); there is no runtime theme switching. Names: colorPalette.{variant}.{bg|border|fg}.{hover|active}; scale steps numeric 1-12 and a1-a12.",
+  "distinctiveness": "The product-level idea is one accent + one matched gray from Radix Colors, expressed as a fixed five-variant vocabulary on every component, with copy-paste owned recipes. Visually it is quiet: 4px radius, hairline borders, alpha-tinted fills, Radix 12-step colour. Recognisable by alpha-over-surface tints (subtle/surface), mauve/sage/sand/slate tinted grays, and primary controls that share one height ladder (24/32/36/40/44/48/64).",
+  "weaknesses": [
+    "No typeface or type voice shipped: identity must be added by the project",
+    "Solid step 9 fills measure 3.16-3.91:1 against white text (blue, green, red), so default solid buttons miss WCAG AA for small labels (except bright palettes that switch to dark text)",
+    "fg.subtle (gray.10) is 3.70:1 on canvas and is also used for placeholder",
+    "Disabled uses opacity 0.67 + grayscale, a heavy effect applied uniformly",
+    "No reduced-motion handling in the preset and no pressed state for solid buttons beyond hover colour",
+    "Requires Panda CSS static extraction and codegen; recipes are copied, so upgrades mean manual merges",
+    "Alpha-based tints make contrast depend on the surface behind them (hard to guarantee statically)"
+  ],
+  "takeaways": [
+    "Use a 12-step role scale (1 canvas, 2 subtle bg, 3-5 component bg rest/hover/pressed, 6-8 borders subtle/interactive/strong+focus, 9-10 solid/hover, 11-12 text low/high) for every hue and gray, hand-tuned per mode, so step numbers carry meaning.",
+    "Choose ONE accent and ONE gray whose hue matches the accent (pairings: mauve with pink/purple, slate with blue/indigo, sage with green/teal, olive with lime, sand with amber/orange); neutral is the safe default.",
+    "Fix a five-variant vocabulary shared by all components (solid, subtle, surface, outline, plain) and document each variant's use, so mixed components always match.",
+    "Define variant tokens once per palette as {variant}.{bg|border|fg}.{hover|active}, using ALPHA steps for tints so they sit correctly on any surface.",
+    "Align heights across component families: primary controls share one ladder (24/32/36/40/44/48/64) and secondary controls share another, so a Button and Input of the same size are the same height.",
+    "Provide three nested radius layers (l1 inside l2 inside l3) so the global character is a three-token edit.",
+    "Handle bright palettes explicitly: amber, yellow, lime, mint, sky take dark foreground on solid fills in both modes.",
+    "Pair open/close durations asymmetrically (150 in / 100 out; select 250 in / 50 out) and keep the duration tokens small (50-400).",
+    "Prefer copy-paste ownership of recipes with a tiny preset: components are data (recipes) the project edits, not a package API."
+  ]
+}

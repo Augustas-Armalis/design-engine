@@ -1,0 +1,158 @@
+{
+ "name": "Linear (marketing site + product chrome as shown on it)",
+ "slug": "linear",
+ "vendor": "Linear Orbit, Inc.",
+ "url": "https://linear.app",
+ "licence": "Proprietary. No public token files or component library. Brand guidelines (linear.app/brand) forbid altering marks or implying affiliation. Values here are measured from the live marketing CSS and DOM (study structure and values only); the app itself was not accessible (no login).",
+ "studiedOn": "2026-10-08",
+ "personality": [
+  "precise",
+  "quiet",
+  "dense",
+  "dark-native",
+  "engineered",
+  "restrained"
+ ],
+ "bestFor": [
+  "developer and product-team tools, issue trackers, AI agent products",
+  "dark-first B2B SaaS marketing where the product UI is the hero",
+  "dense list, board and command-driven app UI",
+  "brands whose accent colour should be rare and quiet"
+ ],
+ "avoidFor": [
+  "consumer, lifestyle or playful brands that need warmth and colour",
+  "editorial or content-heavy sites (small grey 13-15px text dominates)",
+  "low-vision-first audiences unless tertiary/quaternary text is raised (quaternary text is 3.45:1 on the dark canvas)",
+  "light-only brands (marketing site is dark-only)"
+ ],
+ "typography": {
+  "families": [
+   "Inter Variable (body and headings; font-feature-settings \"cv01\",\"ss03\"; font-variation-settings \"opsz\" auto)",
+   "SF Pro Display / system-ui (fallback stack)",
+   "Berkeley Mono (code, issue ids, 182 text nodes on the home page)",
+   "Tiempos Headline (serif display, declared as --font-serif-display; where it is used was not observed)"
+  ],
+  "scale": [
+   {"role": "hero h1 (home, 1440)", "sizePx": 64, "lineHeightPx": 64, "weight": 510, "trackingEm": "-0.022em (-1.408px)"},
+   {"role": "hero h1 (/ai) and pricing section h2 (1440)", "sizePx": 72, "lineHeightPx": 72, "weight": 510, "trackingEm": "-0.022em (-1.584px)"},
+   {"role": "section h2 (1440)", "sizePx": 48, "lineHeightPx": 48, "weight": 510, "trackingEm": "-0.022em (-1.056px)"},
+   {"role": "docs / page h1", "sizePx": 40, "lineHeightPx": 44, "weight": 590, "trackingEm": "-0.022em (-0.88px)"},
+   {"role": "lead paragraph (/ai)", "sizePx": 24, "lineHeightPx": 31.92, "weight": 400, "trackingEm": "-0.012em (-0.288px)"},
+   {"role": "h3 / card title", "sizePx": 20, "lineHeightPx": 26.6, "weight": 590, "trackingEm": "-0.012em (-0.24px)"},
+   {"role": "body regular", "sizePx": 15, "lineHeightPx": 24, "weight": 400, "trackingEm": "-0.011em (-0.165px)"},
+   {"role": "body small", "sizePx": 14, "lineHeightPx": 21, "weight": 400, "trackingEm": "-0.013em (-0.182px)"},
+   {"role": "nav / UI label (mini)", "sizePx": 13, "lineHeightPx": 19.5, "weight": 400, "trackingEm": "0 to -0.01em"},
+   {"role": "app sidebar row / button text", "sizePx": 13, "lineHeightPx": "normal", "weight": 510, "trackingEm": "0"},
+   {"role": "micro label / section label", "sizePx": 12, "lineHeightPx": 14, "weight": 510, "trackingEm": "0"},
+   {"role": "tiny", "sizePx": 10, "lineHeightPx": 14, "weight": 400, "trackingEm": "-0.015em"},
+   {"role": "mobile h1 (390)", "sizePx": 38, "lineHeightPx": 41.8, "weight": 510, "trackingEm": "-0.022em (-0.836px)"},
+   {"role": "mobile h2 (390)", "sizePx": 24, "lineHeightPx": 31.92, "weight": 510, "trackingEm": "-0.012em (-0.288px)"}
+  ],
+  "notes": "Signature is weight 510 (variable font; named weights light 300 / normal 400 / medium 510 / semibold 590 / bold 680). Tracking is a function of size: -0.011em to -0.013em at 14-15px, -0.012em at 17-24px, -0.022em at 32px and up. Line-height tightens as size rises (1.6 at 17px, 1.4 at 17px title, 1.33 at 20-24, 1.125 at 32, 1.1 at 40, 1.0 at 48+). Each text token is a single shorthand var (--text-regular: size/line-height family) with sibling -letter-spacing var. Published token ramp from stylesheet: tiny .625rem, micro .75rem, mini .8125rem, small .875rem, regular .9375rem, large 1.0625rem; titles 1.0625, 1.25, 1.5, 2, 2.5, 3rem. Measured 2026-10-08 at 1440 and 390 on linear.app, /pricing, /docs, /ai."
+ },
+ "color": {
+  "model": "hex",
+  "neutrals": {
+   "dark.bg.canvas": "#08090a (--color-bg-primary, measured body bg rgb(8,9,10)); marketing alt #010102",
+   "dark.bg.level1/panel": "#0f1011 (also #161718 panel); level2 #141516; level3 #191a1b",
+   "dark.bg.secondary/tertiary/quaternary": "#1c1c1f / #232326 / #28282c (quinary #282828)",
+   "dark.translucent.fills": "rgba(255,255,255,0.02) / 0.05 / 0.08 (measured: most common bg after canvas is rgba(255,255,255,0.08) x36)",
+   "dark.text": "primary #f7f8f8, secondary #d0d6e0, tertiary #8a8f98, quaternary #62666d",
+   "dark.border": "#23252a (primary), #34343a (secondary), #3e3e44 (tertiary); translucent #ffffff0d / #ffffff14 / #ffffff1f / #ffffff26",
+   "light.bg": "#fff, level1 #f8f8f8, level2 #f4f4f4, level3 #f0f0f0; secondary #f9f8f9, tertiary #f4f2f4, quaternary #eeedef",
+   "light.text": "primary #282a30, secondary #3c4149, tertiary #6f6e77, quaternary #86848d",
+   "light.border": "#e9e8ea, #e4e2e4, #dcdbdd; translucent #0000000d / #00000014"
+  },
+  "accents": {
+   "accent": "#7170ff (hover #828fff; tint #18182f dark / #f1f1ff light)",
+   "brand-bg": "#5e6ad2 (indigo mark colour; text on it #fff = 4.7:1)",
+   "link": "#7070ff / #828fff (dark hover #fff)",
+   "focus ring (measured)": "box-shadow rgba(94,106,210,0.4) 0 0 0 3px",
+   "note": "Two values exist per token in the stylesheet (e.g. #7170ff vs #8989f0); which belongs to dark vs light/legacy theme was not verified for every token."
+  },
+  "semantic": {
+   "green": "#27a644 (diff add, success)",
+   "red": "#eb5757",
+   "orange": "#fc7840",
+   "yellow": "#f0bf00",
+   "blue": "#4ea7fc (#5eb0ff; P3 variant color(display-p3 .431 .6816 .9988))",
+   "teal": "#00b8cc",
+   "product lines": "plan #68cc58, build #d4b144, security #7a7fad",
+   "translucent status fills (measured)": "rgba(39,166,68,0.07) green, rgba(243,78,82,0.1) red, rgba(0,255,5,0.1) lime; rgba(255,0,0,0.12)"
+  },
+  "darkMode": "Marketing site is dark-only: body stays rgb(8,9,10) with prefers-color-scheme light and dark (measured 2026-10-08). The app has light, dark and custom themes: public write-up says each theme went from 98 variables to 3 inputs (base colour, accent colour, contrast) generated in LCH; surfaces step in lightness, separated by 1px hairlines (rgba(255,255,255,0.05-0.08) inset rings) rather than by shadow. March 2026 refresh moved default greys from cool blue-leaning to warmer, less saturated; the stylesheet measured today still carries the cool values (#08090a).",
+  "contrastNotes": "Computed WCAG on #08090a: #f7f8f8 18.73:1, #d0d6e0 13.64:1, #8a8f98 6.13:1, #62666d 3.45:1 (below AA, used for placeholders and section labels), #7170ff accent 5.18:1. White on #5e6ad2 4.7:1. Light theme: #6f6e77 on white 5.03:1, #86848d 3.68:1 (below AA)."
+ },
+ "spacing": {
+  "base": "8px (--spacing: 8px token) with 4px sub-steps (inferred from 7px/4px/6px paddings measured on sidebar rows)",
+  "scale": [4, 8, 12, 16, 24, 32, 48, 64, 80],
+  "notes": "Tokens seen: --page-inset 32px, --grid-gap 32px, --page-padding-inline 24px, --page-padding-block 64px, --page-padding-y 48px, --page-max-width 1024px (prose pages), --header-height 64/72px (measured nav 72px at 1440). Hero content left edge x=80 at 1440 (container about 1280); product frame 1320x720 at x=60. Scale values other than 8/32/64 are inferred from measured paddings."
+ },
+ "radius": {
+  "scale": [2, 4, 6, 8, 9, 12, 16, 24, 32, "50%", 9999],
+  "rule": "Tokens --radius-4/6/8/12/16/24/32, --radius-circle 50%, --radius-rounded 9999px. Marketing nav buttons and CTAs are full pills (9999px; 72 elements), app rows and buttons are 8px, small chips 4-6px, product frame and big cards 12px (frame is 12px with a top-radius 12/12/0/0 variant), 16px for large media. Measured histogram: 9999px x72, 8px x29, 50% x28, 4px x22, 12px x19, 9px x18, 6px x10."
+ },
+ "depth": {
+  "shadows": [
+   "--shadow-tiny 0 1px 1px 0 #00000017",
+   "--shadow-low (light) 0 1px 4px -1px #00000017; (dark) 0 2px 4px #0000001a",
+   "--shadow-medium (light) 0 3px 12px #00000017; (dark) 0 4px 24px #0003",
+   "--shadow-high (light) 0 7px 24px #0000000f; (dark) 0 7px 32px #00000059",
+   "--shadow-stack-low 5-layer: 0 8px 2px #0000, 0 5px 2px #00000003, 0 3px 2px #0000000a, 0 1px 1px #00000012, 0 0 1px #00000014 (+ inset 0 -1px 1px #0000001c in light)",
+   "measured ring: rgba(0,0,0,0.2) 0 0 0 1px (x8)",
+   "measured inner glow: inset rgba(0,0,0,0.2) 0 0 12px (x7); inset rgba(255,255,255,0.08) 0 0 0 0.5px (x5); inset rgba(255,255,255,0.05) 0 0 0 1px (x4)",
+   "measured dialog: rgba(0,0,0,0.25) 0 2px 32px"
+  ],
+  "borders": "Hairlines carry elevation in dark: 1px (and 0.5px via --border-hairline) at rgba(255,255,255,0.05-0.15) or solid #23252a; product frame border 1px rgba(255,255,255,0.08). Dividers are numerous but low contrast; March 2026 refresh reduced divider count and rounded their ends.",
+  "blur": "Sticky header: --header-blur 20px over --header-bg #0b0b0bcc (80% opaque) in dark, #fffc in light; 1px bottom border rgba(255,255,255,0.08)."
+ },
+ "motion": {
+  "durationsMs": [100, 160, 180, 200, 400, 700],
+  "easings": [
+   "cubic-bezier(0.25, 0.46, 0.45, 0.94) ease-out-quad (default for hover color/background, 187 elements)",
+   "cubic-bezier(0.165, 0.84, 0.44, 1) ease-out-quart (filter 200ms)",
+   "cubic-bezier(0.32, 0.72, 0, 1) (large transform/stroke, 700ms)",
+   "ease / ease-out (400ms background on cards)",
+   "full named library as vars: ease-in/out/in-out x quad, cubic, quart, quint, expo, circ"
+  ],
+  "notes": "Interaction feedback is fast (100ms colour on nav links, 160ms border/filter/transform on buttons, --duration .18s token). Only large illustrative transforms use 700ms. Measured transition property lists are explicit (color, background, border, filter, transform), never `all`, except body default. prefers-reduced-motion handling not verified."
+ },
+ "density": {
+  "modes": ["app compact (28px rows, 13px text)", "marketing comfortable (40px CTAs, 15px body)"],
+  "controlHeightsPx": {
+   "app sidebar row": 28,
+   "app section label row": 24,
+   "marketing nav pill button": 32,
+   "marketing CTA pill (Get started)": 40,
+   "docs sidebar button": 36,
+   "docs pill button": 32,
+   "app icon button (hero mock)": 28
+  }
+ },
+ "components": {
+  "count": "unknown",
+  "list": ["nav pill button", "sign-up pill", "CTA pill (translucent white fill + 1px inset ring)", "sidebar row (icon + label, 28px, 8px radius)", "section label (12px, 510, quaternary)", "issue header bar", "activity row", "comment composer", "agent chat panel with model chip", "keycap / mono chip", "tab pill", "status icon set"],
+  "stateMatrixCompleteness": "Not publicly specified. Observed only: nav buttons transition color+background in 100ms; CTA transitions border in 160ms; selected sidebar row bg rgba(255,255,255,0.04); focus ring rgba(94,106,210,0.4) 3px. Hover/active/disabled for each component unknown."
+ },
+ "tokenArchitecture": "Three layers, all CSS custom properties: (1) generator inputs (base, accent, contrast; LCH) producing (2) ordinal semantic roles: --color-bg-primary..quinary, --color-text-primary..quaternary, --color-border-primary..tertiary, --color-line-primary..quaternary, --color-accent/-hover/-tint, --color-brand-bg, then (3) page and component tokens (--header-bg/-height/-blur, --text-regular shorthand, --title-1..7, --shadow-low/medium/high, --radius-N, --ease-*). Roles are named by rank, not by function (primary..quinary), and each text style is a size/line-height/family shorthand with a sibling letter-spacing var. Fonts and weights are tokens (--font-weight-medium 510).",
+ "distinctiveness": "Near-black #08090a canvas with luminous 1px hairlines instead of shadows; Inter at the odd weight 510 with -0.022em tracking at display sizes and cv01/ss03 alternates; grey text hierarchy of four steps with the brightest white reserved for headings; one muted indigo accent that appears on almost nothing; pill-shaped nav and CTAs against 8px-radius product UI; the hero is a live, readable product frame (1320x720, 12px radius) not an illustration. Generic dark SaaS sites copy the black but not the hairline system, the 510 weight or the restraint.",
+ "weaknesses": [
+  "no public token files, component library or state specs; everything here is reverse-measured",
+  "quaternary text (#62666d, 3.45:1) and light quaternary (#86848d, 3.68:1) fail AA but carry labels and placeholders",
+  "tiny 10-13px grey text throughout; poor for casual readers and small screens",
+  "marketing is dark-only; no light variant to learn from",
+  "ordinal role names (primary..quinary) tell you rank, not purpose, so misuse is easy",
+  "mobile hero frame collapses to a tall text stack (document 5876px at 390 vs 9960px at 1440)"
+ ],
+ "takeaways": [
+  "Generate every theme from three inputs (base, accent, contrast) in a perceptual space; never hand-author per-theme variable lists",
+  "Type tokens bundle size + line-height + tracking, and tracking is a function of size (about -0.011em small, -0.022em display)",
+  "Use a single odd variable weight (510) as the brand weight; named weights 400/510/590/680 form the whole ladder",
+  "Carry elevation in dark with lightness steps plus 1px translucent hairlines, not shadows; reserve real shadows for popovers and dialogs",
+  "Four-step text hierarchy (primary/secondary/tertiary/quaternary) with explicit contrast floors; ban quaternary for anything the user must read",
+  "Explicit transition property lists with 100-160ms for interaction and long durations only for decorative motion",
+  "Pill grammar for marketing chrome, 8px radius for dense app rows: two radius grammars with a clear boundary",
+  "Make the hero a real, readable product surface; show a workflow, not a mock-up of decoration"
+ ],
+ "provenance": "mixed"
+}

@@ -1,0 +1,523 @@
+{
+  "name": "IBM Carbon",
+  "slug": "ibm-carbon",
+  "vendor": "IBM Corp.",
+  "url": "https://carbondesignsystem.com",
+  "licence": "Apache-2.0 (code @carbon/themes 11.83.0, @carbon/type 11.69.0, @carbon/layout 11.61.0, @carbon/motion 11.54.0, @carbon/styles 1.117.0, and the carbon-website documentation repo). IBM Plex is SIL OFL 1.1 (separate licence, not re-verified here). IBM logos/brand marks not licensed.",
+  "studiedOn": "2026-10-08",
+  "personality": [
+    "rigorous",
+    "engineered",
+    "neutral",
+    "enterprise",
+    "modular",
+    "square-edged"
+  ],
+  "bestFor": [
+    "enterprise data and cloud consoles: tables, forms, dashboards, long multi-step workflows",
+    "products needing both a dense task mode (productive) and an editorial mode (expressive) from one token set",
+    "four ready colour themes (White, Gray 10, Gray 90, Gray 100) with a consistent layering model",
+    "teams that value documented grid, state-derivation and token-per-element specs"
+  ],
+  "avoidFor": [
+    "consumer or lifestyle brands wanting warmth or rounded friendliness (default radius is 0)",
+    "small-screen-first apps: component minimum heights start at 24px and many patterns assume 16-column desktop grids",
+    "marketing sites that need a distinctive identity; the look is intentionally impersonal and recognisably IBM"
+  ],
+  "typography": {
+    "families": [
+      "sans: 'IBM Plex Sans', system-ui, -apple-system, BlinkMacSystemFont, '.SFNSText-Regular', sans-serif",
+      "mono: 'IBM Plex Mono', system-ui, -apple-system, BlinkMacSystemFont, '.SFNSText-Regular', monospace",
+      "serif: 'IBM Plex Serif', system-ui, ..., serif (quotations only)",
+      "also Plex Sans Condensed, Arabic, Devanagari, Hebrew, JP, KR, Thai, Thai Looped"
+    ],
+    "scale": [
+      {
+        "role": "caption-01 / label-01 / helper-text-01 / legal-01",
+        "sizePx": 12,
+        "lineHeightPx": 16,
+        "weight": 400,
+        "trackingEm": 0.0267
+      },
+      {
+        "role": "label-02 / helper-text-02 / legal-02",
+        "sizePx": 14,
+        "lineHeightPx": 18,
+        "weight": 400,
+        "trackingEm": 0.0114
+      },
+      {
+        "role": "caption-02",
+        "sizePx": 14,
+        "lineHeightPx": 18,
+        "weight": 400,
+        "trackingEm": 0.0229
+      },
+      {
+        "role": "body-compact-01 (productive, single line)",
+        "sizePx": 14,
+        "lineHeightPx": 18,
+        "weight": 400,
+        "trackingEm": 0.0114
+      },
+      {
+        "role": "body-01 (productive paragraph)",
+        "sizePx": 14,
+        "lineHeightPx": 20,
+        "weight": 400,
+        "trackingEm": 0.0114
+      },
+      {
+        "role": "body-compact-02 (expressive single line)",
+        "sizePx": 16,
+        "lineHeightPx": 22,
+        "weight": 400,
+        "trackingEm": 0
+      },
+      {
+        "role": "body-02 (expressive paragraph)",
+        "sizePx": 16,
+        "lineHeightPx": 24,
+        "weight": 400,
+        "trackingEm": 0
+      },
+      {
+        "role": "code-01",
+        "sizePx": 12,
+        "lineHeightPx": 16,
+        "weight": 400,
+        "trackingEm": 0.0267
+      },
+      {
+        "role": "code-02",
+        "sizePx": 14,
+        "lineHeightPx": 20,
+        "weight": 400,
+        "trackingEm": 0.0229
+      },
+      {
+        "role": "heading-compact-01",
+        "sizePx": 14,
+        "lineHeightPx": 18,
+        "weight": 600,
+        "trackingEm": 0.0114
+      },
+      {
+        "role": "heading-01",
+        "sizePx": 14,
+        "lineHeightPx": 20,
+        "weight": 600,
+        "trackingEm": 0.0114
+      },
+      {
+        "role": "heading-compact-02",
+        "sizePx": 16,
+        "lineHeightPx": 22,
+        "weight": 600,
+        "trackingEm": 0
+      },
+      {
+        "role": "heading-02",
+        "sizePx": 16,
+        "lineHeightPx": 24,
+        "weight": 600,
+        "trackingEm": 0
+      },
+      {
+        "role": "heading-03 (productive)",
+        "sizePx": 20,
+        "lineHeightPx": 28,
+        "weight": 400,
+        "trackingEm": 0
+      },
+      {
+        "role": "heading-04 (productive)",
+        "sizePx": 28,
+        "lineHeightPx": 36,
+        "weight": 400,
+        "trackingEm": 0
+      },
+      {
+        "role": "heading-05 (productive)",
+        "sizePx": 32,
+        "lineHeightPx": 40,
+        "weight": 400,
+        "trackingEm": 0
+      },
+      {
+        "role": "heading-06 (productive)",
+        "sizePx": 42,
+        "lineHeightPx": 50,
+        "weight": 300,
+        "trackingEm": 0
+      },
+      {
+        "role": "heading-07 (productive)",
+        "sizePx": 54,
+        "lineHeightPx": 64,
+        "weight": 300,
+        "trackingEm": 0
+      },
+      {
+        "role": "expressive-heading-03 fluid",
+        "sizePx": "20 to 24 (max bp)",
+        "lineHeightPx": "28 to 32",
+        "weight": 400,
+        "trackingEm": 0
+      },
+      {
+        "role": "expressive-heading-04 fluid",
+        "sizePx": "28 to 32 (xlg)",
+        "lineHeightPx": "36 to 40",
+        "weight": 400,
+        "trackingEm": 0
+      },
+      {
+        "role": "expressive-heading-05 fluid",
+        "sizePx": "32, 36 (md), 42 (lg), 48 (xlg), 60 (max)",
+        "lineHeightPx": "40 to 70",
+        "weight": "400 then 300 from md",
+        "trackingEm": 0
+      },
+      {
+        "role": "expressive-paragraph-01 fluid",
+        "sizePx": "24, 28 (lg), 32 (max)",
+        "lineHeightPx": "32, 36, 40",
+        "weight": 300,
+        "trackingEm": 0
+      },
+      {
+        "role": "quotation-01 (serif) fluid",
+        "sizePx": "20, 24, 28, 32",
+        "lineHeightPx": "26 to 40",
+        "weight": 400,
+        "trackingEm": 0
+      },
+      {
+        "role": "display-01 fluid",
+        "sizePx": "42, 54 (lg), 60 (xlg), 76 (max)",
+        "lineHeightPx": "50, 64, 70, 86",
+        "weight": 300,
+        "trackingEm": 0
+      },
+      {
+        "role": "display-03 fluid",
+        "sizePx": "42 up to 84 (max)",
+        "lineHeightPx": "50 to 93",
+        "weight": 300,
+        "trackingEm": "-0.01 (-0.64px) from lg, -0.96px at max"
+      },
+      {
+        "role": "display-04 fluid",
+        "sizePx": "42 up to 156 (23rd step, max)",
+        "lineHeightPx": "50 to 164",
+        "weight": 300,
+        "trackingEm": "-0.64px from lg, -0.96px at max"
+      }
+    ],
+    "notes": "Type-scale formula: y0 = 12px, Yn = Yn-1 + (INT((n-2)/4) + 1) * 2, giving steps 12, 14, 16, 18, 20, 24, 28, 32, 36, 42, 48, 54, 60, 68, 76, 84, 92, 102, 112, 122, 132, 144, 156 px (23 steps). Weights only 300 (light), 400 (regular), 600 (semibold); semibold for section headers, never long text; a lighter weight can outrank a heavier one if much larger. Two sets: productive (suffix -01, 14px base, fixed headings, for task-focused product UI) and expressive (suffix -02, 16px base, fluid headings that step at breakpoints, for editorial/marketing). Pairings: body-compact-01 with heading-compact-01, body-01 with heading-01, body-compact-02 with heading-compact-02, body-02 with heading-02 (consistent line-heights). Fluid and display styles must not be used inside containers; expressive headings are the only responsive ones. Tracking is positive on small text (0.16px / 0.32px) for legibility and negative only on very large display sizes. Italic only for emphasis (titles, terms). Type colour stays neutral; colour in type is for code, warnings and alerts, never decoration."
+  },
+  "color": {
+    "model": "hex",
+    "neutrals": {
+      "themes": {
+        "White": "background #ffffff",
+        "Gray 10": "background #f4f4f4",
+        "Gray 90": "background #262626",
+        "Gray 100": "background #161616"
+      },
+      "White layers (01 / 02 / 03)": [
+        "#f4f4f4",
+        "#ffffff",
+        "#f4f4f4"
+      ],
+      "Gray 10 layers": [
+        "#ffffff",
+        "#f4f4f4",
+        "#ffffff"
+      ],
+      "Gray 90 layers": [
+        "#393939",
+        "#525252",
+        "#6f6f6f"
+      ],
+      "Gray 100 layers": [
+        "#262626",
+        "#393939",
+        "#525252"
+      ],
+      "borders (White)": {
+        "border-subtle-00": "#e0e0e0",
+        "border-subtle-01": "#c6c6c6",
+        "border-strong-01": "#8d8d8d"
+      },
+      "borders (Gray 100)": {
+        "border-subtle-00": "#393939",
+        "border-subtle-01": "#525252",
+        "border-strong-01": "#6f6f6f"
+      },
+      "text (White/Gray 10)": {
+        "text-primary": "#161616",
+        "text-secondary": "#525252",
+        "text-helper": "#6f6f6f",
+        "text-placeholder": "rgba(22,22,22,0.4)",
+        "text-disabled": "rgba(22,22,22,0.25)",
+        "text-on-color": "#ffffff",
+        "text-inverse": "#ffffff"
+      },
+      "text (Gray 90/100)": {
+        "text-primary": "#f4f4f4",
+        "text-secondary": "#c6c6c6",
+        "text-helper": "#c6c6c6 (g90) / #a8a8a8 (g100)",
+        "text-disabled": "rgba(244,244,244,0.25)"
+      },
+      "state overlays (White)": {
+        "layer-hover-01": "#e8e8e8",
+        "layer-active-01": "#c6c6c6",
+        "layer-selected-01": "#e0e0e0",
+        "background-hover": "rgba(141,141,141,0.12)",
+        "background-active": "rgba(141,141,141,0.5)",
+        "background-selected": "rgba(141,141,141,0.2)",
+        "skeleton-background": "#e8e8e8"
+      },
+      "overlay / shadow": {
+        "overlay": "rgba(0,0,0,0.6)",
+        "shadow White/Gray10/Gray90/Gray100": "rgba(0,0,0,0.3) / 0.3 / 0.8 / 0.8"
+      }
+    },
+    "accents": {
+      "interactive / primary blue (Blue 60)": "#0f62fe (light themes); #4589ff on dark themes",
+      "link-primary": "#0f62fe light / #78a9ff dark; link-secondary #0043ce / #a6c8ff",
+      "palette": "IBM Design Language: Black, White, and ten grades (10-100) for each hue; gray is the dominant neutral family (Gray 10..100), blue is the action hue; other hues used sparingly (tags, charts, status)",
+      "highlight": "#d0e2ff light / #002d9c Gray 90 / #001d6c Gray 100",
+      "button tokens": {
+        "button-primary": "Blue 60 #0f62fe",
+        "button-danger-primary": "#da1e28",
+        "button-danger-hover": "#b81921"
+      }
+    },
+    "semantic": {
+      "support-error": "#da1e28 light / #ff8389 Gray 90 / #fa4d56 Gray 100",
+      "support-success": "#24a148 light / #42be65 dark",
+      "support-warning": "#f1c21b (all themes)",
+      "support-info": "#0043ce light / #4589ff dark",
+      "focus": "#0f62fe light / #ffffff dark; focus-inset #ffffff light / #161616 dark; focus-inverse #ffffff light / #0f62fe dark",
+      "icon-primary": "#161616 light / #f4f4f4 dark; icon-secondary #525252 / #c6c6c6",
+      "toggle-off": "#8d8d8d (#6f6f6f Gray 100)"
+    },
+    "darkMode": "Two dark themes, Gray 90 and Gray 100, are full peers of the light ones (211 role tokens in White/Gray 10; 206 in each dark theme). Layering rule differs by mode: light themes alternate White and Gray 10 for successive layers; dark themes make each added layer one palette step LIGHTER (Gray 100: 90 then 80 then 70; Gray 90: 80, 70, 60). Do not place components darker than the background in dark themes unless using high-contrast mode. Token names are identical across themes; only values change; component tokens (button-primary, tag-*, notification-*) are per-component and never reused elsewhere. A theme is configured in Sass (@use '@carbon/react/scss/theme' with ($theme: themes.$g100)) and inline theming (Theme component) supports high-contrast moments inside a page.",
+    "contrastNotes": "Docs: WCAG AA across all four themes. Small text (<24px) 4.5:1, large text (24px regular/light or 19px semibold) 3:1, UI components and graphics 3:1, focus indicators 3:1 (2px focus border plus a focus-inset border to guarantee 3:1). Disabled elements are gray, get no hover/focus, and are exempt. State derivation rule: hover = half a palette step (lighter for Black..Gray 70, darker for Gray 60..White), active = two full steps (Blue 60 to Blue 80), selected = one step. Avoid midtones in light themes. Never use colour alone. [computed] text-primary #161616 on white 18.1:1; text-secondary #525252 7.81:1; text-helper #6f6f6f 5.02:1; white on Blue 60 #0f62fe 5.0:1; border-strong #8d8d8d on white 3.32:1; subtle border #e0e0e0 on #f4f4f4 only 1.2:1 (dividers are decorative); support-warning #f1c21b on white 1.68:1 (so warning icons need dark strokes/containers); Gray 100 text-secondary 10.59:1; Gray 100 text-helper #a8a8a8 7.61:1; Gray 100 link #78a9ff 7.68:1; Gray 100 border-strong #6f6f6f 3.6:1."
+  },
+  "spacing": {
+    "base": "8px 'mini unit' for the 2x grid; spacing scale built on multiples of 2, 4 and 8",
+    "scale": [
+      2,
+      4,
+      8,
+      12,
+      16,
+      24,
+      32,
+      40,
+      48,
+      64,
+      80,
+      96,
+      160
+    ],
+    "layout": {
+      "spacing tokens": "$spacing-01..13 = 2,4,8,12,16,24,32,40,48,64,80,96,160",
+      "layout tokens": "$layout-01..07 = 16,24,32,48,64,96,160",
+      "container tokens": "$container-01..05 = 24,32,40,48,64",
+      "fluid spacing": "$fluid-spacing-01..04 = 0, 2vw, 5vw, 10vw",
+      "icon sizes": "$icon-size-01 16px, -02 20px",
+      "gridBreakpointsPx": {
+        "sm": 320,
+        "md": 672,
+        "lg": 1056,
+        "xlg": 1312,
+        "max": 1584
+      },
+      "columns": {
+        "sm": 4,
+        "md": 8,
+        "lg": 16,
+        "xlg": 16,
+        "max": 16
+      },
+      "columnWidthAtBreakpoint": {
+        "sm": "25% / 80px",
+        "md": "12.5% / 80px",
+        "lg": "6.25% / 64px",
+        "xlg": "6.25% / 80px",
+        "max": "6.25% / 96px"
+      },
+      "marginPx": {
+        "sm": 0,
+        "md": 16,
+        "lg": 16,
+        "xlg": 16,
+        "max": 24
+      },
+      "gutterModes": {
+        "wide (default)": "32px",
+        "narrow (most common in product)": "16px",
+        "condensed": "1px"
+      },
+      "gridAspectRatios": [
+        "1:1",
+        "2:1",
+        "2:3",
+        "3:2",
+        "4:3",
+        "16:9"
+      ],
+      "fixedSizingPx": [
+        8,
+        16,
+        24,
+        32,
+        48,
+        64,
+        80
+      ],
+      "zIndex": {
+        "hidden": -1,
+        "footer": 5000,
+        "overlay": 6000,
+        "floating": 6000,
+        "header": 8000,
+        "modal": 9000,
+        "dropdown": 9100
+      }
+    }
+  },
+  "radius": {
+    "scale": [
+      0,
+      2,
+      4,
+      8,
+      16,
+      24,
+      999999
+    ],
+    "rule": "Default is square: buttons, modals, inputs, tiles and most containers use border-radius-00. Radius appears on small status elements only: tags use 16px pill (or 4px / 2px in compact variants), avatars/indicators 50%. Inputs have a 1px bottom border (border-strong) instead of a full outline, which is a signature of the system. Do not add radius to default components."
+  },
+  "depth": {
+    "shadows": [
+      "box-shadow mixin (menus, overlays): 0 2px 6px $shadow (rgba(0,0,0,0.3) light, 0.8 dark)",
+      "box-shadow-top: 0 -2px 6px $shadow",
+      "focus inset ring: inset 0 0 0 2px $focus plus 1px $focus-inset",
+      "AI (slug/decorator) modal: 0 24px 40px -24px AI drop shadow plus inset gradient (special-case)"
+    ],
+    "borders": "1px subtle (layer-relative: border-subtle-00/01/02/03 step with the layer), 1px strong for inputs and interactive edges, border-interactive Blue 60, 2px focus. Depth is mostly layering by tint (background, layer-01, layer-02, layer-03) with hairlines, not shadows; only floating UI (menus, popovers, tooltips, overflow menus) gets a single soft shadow.",
+    "blur": "No blur tokens; modal scrim is a flat rgba(0,0,0,0.6) overlay with a slow-02 700ms dim."
+  },
+  "motion": {
+    "durationsMs": [
+      70,
+      110,
+      150,
+      240,
+      400,
+      700
+    ],
+    "easings": [
+      "standard productive: cubic-bezier(0.2, 0, 0.38, 0.9)",
+      "standard expressive: cubic-bezier(0.4, 0.14, 0.3, 1)",
+      "entrance productive: cubic-bezier(0, 0, 0.38, 0.9)",
+      "entrance expressive: cubic-bezier(0, 0, 0.3, 1)",
+      "exit productive: cubic-bezier(0.2, 0, 1, 0.9)",
+      "exit expressive: cubic-bezier(0.4, 0.14, 1, 1)"
+    ],
+    "notes": "Duration tokens: fast-01 70 (button, toggle), fast-02 110 (fade), moderate-01 150 (small expansion, short moves), moderate-02 240 (expansion, system communication, toast), slow-01 400 (large expansion, important notifications), slow-02 700 (background dimming). Productive vs expressive: productive is efficient, subtle, for task completion (button states, dropdowns, table rendering); expressive is reserved for occasional significant moments (new page, primary action click, alerts) and runs slower. Standard easing when the element stays visible (expanding tiles, sorting rows); entrance when appearing; exit when removed (closing modal/toast); an element that leaves but stays nearby (side panel) uses standard. Principles: purposeful, responsive (micro-interactions ease-out in the 90-120ms range), meticulous, unobtrusive ('if average users notice it often, reduce it'). A motion surfaces table defines per-pattern kind/duration/enter-exit easing (e.g. disclosure: reveal, moderate-01, entrance/exit productive). No explicit prefers-reduced-motion statement on the overview page; it only says to provide static alternatives for state transitions."
+  },
+  "density": {
+    "modes": [
+      "productive vs expressive type/component sizing",
+      "layout density normal (padding-inline 16px) vs condensed (8px)",
+      "size tokens xs / sm / md / lg / xl / 2xl"
+    ],
+    "controlHeightsPx": {
+      "xs": 24,
+      "sm": 32,
+      "md": 40,
+      "lg (default productive)": 48,
+      "xl (full-bleed modal/side-panel buttons)": 64,
+      "2xl (full-bleed large tearsheet)": 80,
+      "layout.density padding-inline": "normal 16 ($spacing-05), condensed 8 ($spacing-03)",
+      "text input": "height from layout.size token, 1px bottom border, padding 0 16px",
+      "button geometry": "padding-left 16 / padding-right 64 (label leaves room for trailing icon); with icon: 16 both sides, label-icon gap >= 16; ghost icon gap 8; icon 16px (20px expressive)",
+      "pairing rule": "sm button (32) with sm input (32); md (40) with md input; lg (48) productive pairs with 14px body, lg expressive with 16px body"
+    }
+  },
+  "components": {
+    "count": 41,
+    "list": [
+      "Accordion",
+      "AI label",
+      "Breadcrumb",
+      "Button",
+      "Checkbox",
+      "Code snippet",
+      "Contained list",
+      "Content switcher",
+      "Data table",
+      "Date picker",
+      "Dropdown",
+      "File uploader",
+      "Form",
+      "Inline loading",
+      "Link",
+      "List",
+      "Loading",
+      "Menu",
+      "Menu buttons",
+      "Modal",
+      "Multiselect",
+      "Notification",
+      "Number input",
+      "Pagination",
+      "Popover",
+      "Progress bar",
+      "Progress indicator",
+      "Radio button",
+      "Search",
+      "Select",
+      "Slider",
+      "Structured list",
+      "Tabs",
+      "Tag",
+      "Text input",
+      "Tile",
+      "Toggle",
+      "Toggletip",
+      "Tooltip",
+      "Tree view",
+      "UI shell"
+    ],
+    "stateMatrixCompleteness": "The most explicit of the four. The Overview page counts 41 documented components (stable); @carbon/styles contains ~91 style modules including fluid-* form variants and IBM-Products-style pieces (page-header, tearsheet, side-panel, coachmark, guidebanner, interstitial-screen, etc.). Every component page has four tabs (Usage, Style, Code, Accessibility). The Style tab publishes element x property x colour-token tables PER STATE, e.g. primary button: Label text-color $text-on-color; Icon svg $icon-on-color; Container background $button-primary; Hover $button-primary-hover; Focus border $focus + inset $focus-inset; Active $button-primary-active; Disabled label $text-on-color-disabled, icon $icon-on-color-disabled, container $button-disabled; the same for secondary, tertiary (hover swaps to $text-inverse on $button-tertiary-hover), ghost ($link-primary, $background-hover), danger primary/tertiary/ghost, each with icon-only variants. Button: five kinds (primary, secondary, tertiary, ghost, danger primary/tertiary/ghost) x seven sizes (xs 24, sm 32, md 40, lg productive 48, lg expressive 48, xl 64, 2xl 80) x states (rest, hover, focus, active, disabled, inline loading) x with/without icon x icon-only. Structure tables give px and spacing token for every padding and gap."
+  },
+  "tokenArchitecture": "Sass-first role tokens with a CSS-custom-property output. Layers: (1) IBM Design Language palette (Black, White, 10 grades per hue, e.g. blue-60); (2) four theme maps (white, g10, g90, g100) assigning palette values to ~211 role tokens in groups: background, layer (layer-01/02/03, layer-hover/active/selected, layer-accent), field (field-01/02), border (border-subtle-00..03, border-strong-01..03, border-interactive, border-inverse, border-disabled), text (primary, secondary, placeholder, helper, error, on-color, inverse, disabled), link, icon, support (error/success/warning/info + inverse), focus (focus, focus-inset, focus-inverse), interactive, highlight, overlay, shadow, skeleton, toggle; (3) component tokens (button-*, tag-*, notification-*, content-switcher-*, status-*) that only their own component may consume; (4) non-colour tokens: spacing-01..13, layout-01..07, container-01..05, fluid-spacing-01..04, size tokens, type tokens (~60 named styles), motion duration/easing, z-index. Role tokens are constant across themes ('Tokens are universal and never change across themes; roles cannot be changed between themes'). Layer tokens are context-sensitive: the same `$layer` resolves to layer-01/02/03 by nesting depth via the Layer component. Sass modules (@carbon/themes, type, layout, motion, styles, grid) generate the CSS; `@use ... with ($theme: ...)` swaps themes. Naming: kebab-case role words with numeric suffix for ordered variants (layer-01, border-subtle-01, spacing-05, heading-03) and -hover/-active/-selected/-disabled suffix for state.",
+  "distinctiveness": "Carbon is recognisable by (1) square corners everywhere and inputs with a single bottom hairline, (2) IBM Plex Sans/Mono with light-weight large headings and tracked small text, (3) flat Gray-10-on-White layered panels (no shadows) with Blue 60 as the sole action colour, (4) 16-column 2x grid with 32px/16px/1px gutter modes and hanging containers, (5) asymmetrical buttons (16px left, 64px right padding, trailing icon) left-aligned label, tall 48px and edge-bleeding in modals, (6) productive vs expressive duality in type and motion, (7) rigorous token-per-state tables. It reads as engineered rather than friendly.",
+  "weaknesses": [
+    "Visually impersonal and hard to distinguish from other enterprise IBM products; low personality by design",
+    "Default 48px large buttons and 40px inputs are tall for dense data tools (xs/sm sizes exist but are second-class in docs)",
+    "Warning yellow (#f1c21b) fails contrast on white (1.68:1) and relies on dark glyph containers",
+    "Motion page does not explicitly mention prefers-reduced-motion",
+    "Layout density (normal/condensed) is only partly documented publicly (condensed padding-inline 8px was recovered from source, not docs)",
+    "Docs gate parts of the pattern asset library to IBM employees (PAL), so layout modules cannot be fully studied",
+    "Fluid display styles reach 156px and are only valid outside containers, a trap for product UI"
+  ],
+  "takeaways": [
+    "Document every component as element x property x token x state tables (rest/hover/focus/active/disabled) so state completeness is auditable",
+    "Offer two explicit modes (productive vs expressive) with rules for when each applies and how to blend them as full-width 'moments', instead of one compromise scale",
+    "Generate the type scale from a formula and name pairings (body-01 with heading-01) so line-heights stay consistent",
+    "Derive interaction colours by rule (hover half-step, active two steps, selected one step, focus 2px + inset for 3:1) rather than picking per component",
+    "Use a layering model where the same token resolves by nesting depth and dark mode lightens per layer",
+    "Specify gutter modes and the 'type never hangs into the gutter' rule so containers can align to text without breaking forms",
+    "Constrain button sets: one primary per page, no more than three buttons before a menu, equal widths in a group, order depends on context (full page vs dialog), icon-only needs a tooltip, danger never icon-only",
+    "Keep component tokens private to their component so theming changes cannot leak"
+  ]
+}

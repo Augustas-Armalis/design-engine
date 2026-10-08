@@ -48,7 +48,7 @@ Companion: `alignui-method.md` (why it is consistent, what it leaves out, the sp
   **Applies to** all. **Check** no `rgba(` or `/ 12%` inside components; only `*-alpha-{10,16,24}` tokens. **Source** [S] `--{hue}-alpha-24/16/10` for 11 hues + white + black.
 
 - **RULE [ALN-06]** Define typography as named composites that bundle size, line-height, weight and letter-spacing; ban raw `font-size`/`line-height` in components. Tighten tracking as size grows (about -1.5% at 18-24 px, -1.1% at 16, -0.6% at 14, 0 at 12 and below) and widen it for uppercase labels (+2% to +6%).
-  **Why** Optical size correction is baked in once; components cannot drift to arbitrary sizes.
+  **Why** Optical size correction is baked in once; components cannot drift to arbitrary sizes. The 1.0 changelog says tracking was re-derived from the Inter creator's geometric calculation; the values for 12/14/16/18 px (0, -0.6%, -1.1%, about -1.5%) match Inter's dynamic-metrics curve `tracking = -0.0223em + 0.185em * e^(-0.1745 * size_px)` (computes +0.05%, -0.62%, -1.10%, -1.43%) [E, computed], then clamp at about -1.5% and -1% for large titles. Derive tracking from a formula, not by eye.
   **Applies to** all. **Check** computed (font-size, line-height, weight, letter-spacing) tuples on the page map to <= the spec's named styles (AlignUI marketing home measures 23 distinct tuples on 12 font sizes at 1440, 16 tuples on 9 sizes at 390). **Source** [S] `tailwind.config.ts` texts; [D] typography page; [M].
 
 - **RULE [ALN-07]** Pair every size with a role in the type list (label = interactive text, medium weight; paragraph = reading text, regular weight; subheading = small uppercase caps with wide tracking; title = headings; doc = long-form).
@@ -290,7 +290,17 @@ filled = fill `{status}-base` + white text; light = `{status}-light`; lighter = 
 
 Counts [S]: 51 component files in the starter (49 documented component pages), 22 type styles, 17 shadows, 2 added radii, 177 raw colour variables, 73 role variables, 65 dark overrides.
 
-### 3.9 The marketing layer (`ln-` prefix) measured on alignui.com [S from compiled CSS, M from render]
+### 3.9 Release history (public Figma changelog, 3 entries) [D]
+
+| release | date | what changed (selected) |
+|---|---|---|
+| 1.0 | 2024-04-01 | Out of beta. Dark mode + Figma Variables. Neutral palette 9 -> 11 tones, vibrant colours 5 -> 11 tones (aligned to Tailwind steps), 3 alpha stops added to every colour incl. neutral. Letter-spacing re-derived from the Inter creator's geometric calculation. Motion and corner-radius guidelines added to the Figma file. About 400 icons added. |
+| 1.1 | 2025-03-24 | Figma and React library synchronised (40+ free components, 100+ blocks, light/dark). Neutral Gray added as primary neutral beside Slate. Tokens added: radii 0/2/28 px, spacing 24/32/40 px; variable collections reorganised and renamed. Component renames recorded (Toggle -> Switch, Switch Toggle -> Segmented Control, Quick Action -> Command Menu, Select Item -> Dropdown). Status badge gained an Information variant. |
+| 2.0 | 2025-11-24 | 150+ landing sections in 16 categories (headers 20, brand/social proof 18, features 24, stats 20, how-it-works 24, testimonials 20, pricing 20, integrations 24, careers 22, teams 32, contact 36, newsletter 36, CTA 46, FAQ 20, blog 24, footer 24), navigations 80 variants, announcements 36, desktop and mobile for each; AI and Crypto templates; new shadow presets and alpha variants; primary palette refreshed for dark-mode contrast; six new landing-page title styles; checkbox X-Small; a mono font added. |
+
+Reading [E]: the vendor itself added the page-section layer (and landing title styles) only in its fourth release, after components, tokens and templates: the page layer is a distinct spec layer, not a by-product of a component kit. The changelog also records token additions with values and every rename: governance is part of the system.
+
+### 3.10 The marketing layer (`ln-` prefix) measured on alignui.com [S from compiled CSS, M from render]
 
 Tokens: grey ramp `0 #ffffff, 25 #f7f7f7, 50 #f2f2f2, 100 #ebebeb, 200 #e0e0e0, 300 #cccccc, 400 #b8b8b8, 450 #a3a3a3, 500 #8f8f8f, 600 #707070, 700 #525252, 800 #3d3d3d, 900 #2e2e2e, 925 #262626, 950 #1c1c1c`; accent orange `#f05023`; type `ln-title-h4/h5/h6, ln-label-lg..xs, ln-paragraph-lg..xs, ln-subheading-xs (11/10, 550), ln-special-13-desc, ln-docs-sm` (weight 550 for titles, tracking -2%); shadows `ln-xs, ln-button-white, ln-button-gray, ln-button-orange, ln-badge-gray, ln-badge-orange, ln-branding-neutral, ln-subheading, ln-toggle-active, ln-customization-button` and 10 `ln-special-{light,dark}-{ai,crypto,finance,hr,marketing,default}` (sector colours: green `#10934e`, red `#e33145`, blue `#1444ff`, violet `#6836f2`, orange `#e6560f`).
 
@@ -351,6 +361,6 @@ Checker output: `reports/alignui-benchmark/` (gitignored).
 
 - PRO blocks and the Figma file are paywalled: their variable collections (the vendor claims 400+ styles/variables/tokens, 8000+ components and variants, 20+ text styles, 10+ shadow styles, 4 layout grid styles, 10 neutral + 8 vibrant colours) were not inspected; the 22 text styles and 17 shadows seen in code match the order of those claims.
 - Whether docs v1.2 component code differs from the Feb-2025 starter beyond the utils (Tailwind v4 `@theme` via the CLI): the button/typography/colour values compared equal.
-- `changelog` URL returned 404 on alignui.com (the changelog link in the footer targets the Figma product); no version history was read.
+- `alignui.com/changelog` is a 404; the changelog lives at `figma.alignui.com/changelog` (read, see 3.9). Overlay opacity: the 1.1 entry says overlay light `#333333` at 32% and dark at 56%, the starter has `#3333333d` (24%) light and `#3333338f` (56%) dark; light value differs between changelog and code.
 - Radix primitives are the behaviour layer (accessibility of menus/dialogs comes from there); AlignUI's own keyboard/ARIA test status is not published.
 - The `--font-sans` variable reads empty on the live page (fonts are injected as `--font-inter`/`--font-inter-var`); the documented starter uses `--font-sans`. Cosmetic.

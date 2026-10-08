@@ -1,0 +1,554 @@
+{
+  "name": "Ant Design 6 (token algorithm identical to v5)",
+  "slug": "antd",
+  "vendor": "Ant Group (Ant Financial / AntFin)",
+  "url": "https://ant.design",
+  "licence": "MIT (npm antd 6.6.5 'latest', 5.29.3 'latest-5'; github.com/ant-design/ant-design; @ant-design/colors 8.0.1, @ant-design/fast-color, @ant-design/cssinjs also MIT). Icons @ant-design/icons MIT. Design assets/Sketch kits per site terms: not checked.",
+  "studiedOn": "2026-10-08",
+  "personality": [
+    "enterprise",
+    "neutral-blue",
+    "compact",
+    "systematic",
+    "algorithmic",
+    "conservative"
+  ],
+  "bestFor": [
+    "admin consoles, B2B back offices, data tables, forms and workflow tools (68 public components incl. Table, Form, Tree, Transfer, Cascader, Steps)",
+    "teams that need a programmable theme: change 1-4 seeds and get a complete, consistent palette and size system",
+    "products that need dark and compact variants for free (composable algorithms)",
+    "Chinese-market and multi-locale enterprise apps"
+  ],
+  "avoidFor": [
+    "brand-led marketing, editorial or consumer sites (generic 'Ant blue' look, 14px base)",
+    "very high-contrast needs without overriding: default primary and semantic colours fail small-text AA as text on white",
+    "projects that cannot take the dependency weight or React 18+ requirement",
+    "strongly rounded or expressive aesthetics (radius ladder tops out at 8px)"
+  ],
+  "typography": {
+    "families": [
+      "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji' (fontFamily)",
+      "'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace (fontFamilyCode)"
+    ],
+    "scale": [
+      {
+        "role": "fontSizeSM",
+        "sizePx": 12,
+        "lineHeightPx": 20,
+        "weight": 400,
+        "trackingEm": 0
+      },
+      {
+        "role": "fontSize (body) / Heading5 is 16",
+        "sizePx": 14,
+        "lineHeightPx": 22,
+        "weight": 400,
+        "trackingEm": 0
+      },
+      {
+        "role": "fontSizeLG / Heading5",
+        "sizePx": 16,
+        "lineHeightPx": 24,
+        "weight": 400,
+        "trackingEm": 0
+      },
+      {
+        "role": "fontSizeXL / Heading4",
+        "sizePx": 20,
+        "lineHeightPx": 28,
+        "weight": 600,
+        "trackingEm": 0
+      },
+      {
+        "role": "Heading3",
+        "sizePx": 24,
+        "lineHeightPx": 32,
+        "weight": 600,
+        "trackingEm": 0
+      },
+      {
+        "role": "Heading2",
+        "sizePx": 30,
+        "lineHeightPx": 38,
+        "weight": 600,
+        "trackingEm": 0
+      },
+      {
+        "role": "Heading1",
+        "sizePx": 38,
+        "lineHeightPx": 46,
+        "weight": 600,
+        "trackingEm": 0
+      },
+      {
+        "role": "(derived, unnamed) step 7",
+        "sizePx": 46,
+        "lineHeightPx": 54,
+        "weight": 600,
+        "trackingEm": 0
+      },
+      {
+        "role": "(derived, unnamed) step 8",
+        "sizePx": 56,
+        "lineHeightPx": 64,
+        "weight": 600,
+        "trackingEm": 0
+      },
+      {
+        "role": "(derived, unnamed) step 9",
+        "sizePx": 68,
+        "lineHeightPx": 76,
+        "weight": 600,
+        "trackingEm": 0
+      }
+    ],
+    "notes": "Exact algorithm (themes/shared/genFontSizes.ts): for index 0..9, size = base * e^((index-1)/5); index>1 uses floor, index<=1 uses ceil; then snapped DOWN to an even integer; sizes[1] is forced to the base. With base 14 -> [12,14,16,20,24,30,38,46,56,68]. Line height = (size + 8) / size, i.e. line box = size + 8px (14 -> 22px = 1.5714). Tokens map: SM=sizes[0], MD=sizes[1], LG=sizes[2], XL=sizes[3], Heading5..1 = sizes[2..6]. fontWeightStrong = 600; docs recommend only 400 and 500 (600 for bold Latin). Compact algorithm re-runs this with base = fontSizeSM (12): [10,12,14,16,20,26,32,...], so compact body is 12px. Docs: keep 3-5 sizes per product, base 14 (was 12 pre-v4), body contrast AAA 7:1 is the stated text target but the default text alpha .88 on white = 16.5:1 and secondary .65 = 7:1. Use font-variant-numeric: tabular-nums for numbers. Tracking: none specified (0)."
+  },
+  "color": {
+    "model": "hex",
+    "neutrals": {
+      "light": {
+        "colorBgBase": "#ffffff",
+        "colorTextBase": "#000000",
+        "colorText": "rgba(0,0,0,0.88)",
+        "colorTextSecondary": "rgba(0,0,0,0.65)",
+        "colorTextTertiary": "rgba(0,0,0,0.45)",
+        "colorTextQuaternary": "rgba(0,0,0,0.25)",
+        "colorFill": "rgba(0,0,0,0.15)",
+        "colorFillSecondary": "rgba(0,0,0,0.06)",
+        "colorFillTertiary": "rgba(0,0,0,0.04)",
+        "colorFillQuaternary": "rgba(0,0,0,0.02)",
+        "colorBgLayout": "#f5f5f5",
+        "colorBgContainer": "#ffffff",
+        "colorBgElevated": "#ffffff",
+        "colorBgSpotlight": "rgba(0,0,0,0.85)",
+        "colorBgSolid": "#000000 (hover .75, active .95)",
+        "colorBorder": "#d9d9d9",
+        "colorBorderSecondary": "#f0f0f0",
+        "colorSplit": "rgba(5,5,5,0.06)",
+        "colorBgMask": "rgba(0,0,0,0.45)"
+      },
+      "dark": {
+        "colorBgBase": "#000000",
+        "colorTextBase": "#ffffff",
+        "colorText": "rgba(255,255,255,0.85)",
+        "colorTextSecondary": "rgba(255,255,255,0.65)",
+        "colorTextTertiary": "rgba(255,255,255,0.45)",
+        "colorTextQuaternary": "rgba(255,255,255,0.25)",
+        "colorFill": "rgba(255,255,255,0.18)",
+        "colorFillSecondary": "rgba(255,255,255,0.12)",
+        "colorFillTertiary": "rgba(255,255,255,0.08)",
+        "colorFillQuaternary": "rgba(255,255,255,0.04)",
+        "colorBgLayout": "#000000",
+        "colorBgContainer": "#141414",
+        "colorBgElevated": "#1f1f1f",
+        "colorBgSpotlight": "#424242",
+        "colorBorder": "#424242",
+        "colorBorderSecondary": "#303030",
+        "colorSplit": "rgba(253,253,253,0.12)"
+      },
+      "rule": "Neutrals are NOT a grey ramp: text and fills are the text-base colour at fixed alpha (88/65/45/25 % text, 15/6/4/2 % fill); surfaces are the background base darkened (light: layout -4 %, border -15 %, border-secondary -6 % of HSL lightness) or lightened (dark: container +8, elevated +12, spotlight +26, border +26, border-secondary +19)."
+    },
+    "accents": {
+      "colorPrimary": "#1677ff",
+      "presetSeeds": {
+        "blue": "#1677FF",
+        "purple": "#722ED1",
+        "cyan": "#13C2C2",
+        "green": "#52C41A",
+        "magenta": "#EB2F96",
+        "red": "#F5222D",
+        "orange": "#FA8C16",
+        "yellow": "#FADB14",
+        "volcano": "#FA541C",
+        "geekblue": "#2F54EB",
+        "gold": "#FAAD14",
+        "lime": "#A0D911"
+      },
+      "presetPalettesLight_1_to_10": {
+        "blue": [
+          "#e6f4ff",
+          "#bae0ff",
+          "#91caff",
+          "#69b1ff",
+          "#4096ff",
+          "#1677ff",
+          "#0958d9",
+          "#003eb3",
+          "#002c8c",
+          "#001d66"
+        ],
+        "purple": [
+          "#f9f0ff",
+          "#efdbff",
+          "#d3adf7",
+          "#b37feb",
+          "#9254de",
+          "#722ed1",
+          "#531dab",
+          "#391085",
+          "#22075e",
+          "#120338"
+        ],
+        "cyan": [
+          "#e6fffb",
+          "#b5f5ec",
+          "#87e8de",
+          "#5cdbd3",
+          "#36cfc9",
+          "#13c2c2",
+          "#08979c",
+          "#006d75",
+          "#00474f",
+          "#002329"
+        ],
+        "green": [
+          "#f6ffed",
+          "#d9f7be",
+          "#b7eb8f",
+          "#95de64",
+          "#73d13d",
+          "#52c41a",
+          "#389e0d",
+          "#237804",
+          "#135200",
+          "#092b00"
+        ],
+        "magenta": [
+          "#fff0f6",
+          "#ffd6e7",
+          "#ffadd2",
+          "#ff85c0",
+          "#f759ab",
+          "#eb2f96",
+          "#c41d7f",
+          "#9e1068",
+          "#780650",
+          "#520339"
+        ],
+        "red": [
+          "#fff1f0",
+          "#ffccc7",
+          "#ffa39e",
+          "#ff7875",
+          "#ff4d4f",
+          "#f5222d",
+          "#cf1322",
+          "#a8071a",
+          "#820014",
+          "#5c0011"
+        ],
+        "orange": [
+          "#fff7e6",
+          "#ffe7ba",
+          "#ffd591",
+          "#ffc069",
+          "#ffa940",
+          "#fa8c16",
+          "#d46b08",
+          "#ad4e00",
+          "#873800",
+          "#612500"
+        ],
+        "yellow": [
+          "#feffe6",
+          "#ffffb8",
+          "#fffb8f",
+          "#fff566",
+          "#ffec3d",
+          "#fadb14",
+          "#d4b106",
+          "#ad8b00",
+          "#876800",
+          "#614700"
+        ],
+        "volcano": [
+          "#fff2e8",
+          "#ffd8bf",
+          "#ffbb96",
+          "#ff9c6e",
+          "#ff7a45",
+          "#fa541c",
+          "#d4380d",
+          "#ad2102",
+          "#871400",
+          "#610b00"
+        ],
+        "geekblue": [
+          "#f0f5ff",
+          "#d6e4ff",
+          "#adc6ff",
+          "#85a5ff",
+          "#597ef7",
+          "#2f54eb",
+          "#1d39c4",
+          "#10239e",
+          "#061178",
+          "#030852"
+        ],
+        "gold": [
+          "#fffbe6",
+          "#fff1b8",
+          "#ffe58f",
+          "#ffd666",
+          "#ffc53d",
+          "#faad14",
+          "#d48806",
+          "#ad6800",
+          "#874d00",
+          "#613400"
+        ],
+        "lime": [
+          "#fcffe6",
+          "#f4ffb8",
+          "#eaff8f",
+          "#d3f261",
+          "#bae637",
+          "#a0d911",
+          "#7cb305",
+          "#5b8c00",
+          "#3f6600",
+          "#254000"
+        ]
+      },
+      "presetPalettesDark_1_to_10": {
+        "blue": [
+          "#111a2c",
+          "#112545",
+          "#15325b",
+          "#15417e",
+          "#1554ad",
+          "#1668dc",
+          "#3c89e8",
+          "#65a9f3",
+          "#8dc5f8",
+          "#b7dcfa"
+        ],
+        "red": [
+          "#2a1215",
+          "#431418",
+          "#58181c",
+          "#791a1f",
+          "#a61d24",
+          "#d32029",
+          "#e84749",
+          "#f37370",
+          "#f89f9a",
+          "#fac8c3"
+        ],
+        "green": [
+          "#162312",
+          "#1d3712",
+          "#274916",
+          "#306317",
+          "#3c8618",
+          "#49aa19",
+          "#6abe39",
+          "#8fd460",
+          "#b2e58b",
+          "#d5f2bb"
+        ],
+        "gold": [
+          "#2b2111",
+          "#443111",
+          "#594214",
+          "#7c5914",
+          "#aa7714",
+          "#d89614",
+          "#e8b339",
+          "#f3cc62",
+          "#f8df8b",
+          "#faedb5"
+        ]
+      },
+      "primaryDerivation": "10 map tokens from the palette of colorPrimary: Bg=1, BgHover=2, Border=3, BorderHover=4, Hover=5, base=6, Active=7, TextHover=8, Text=9, TextActive=10 (light). Dark: for primary only, Bg and BgHover are overridden to reuse Border/BorderHover (swatches 3,4 of the dark palette; dark/index.ts), Hover = dark swatch 7 (lighter), base = swatch 6, Active = swatch 5 (darker); TextHover 7, Text 6, TextActive 5 (1-based). Blue dark: hover #3c89e8, base #1668dc, active #1554ad."
+    },
+    "semantic": {
+      "colorSuccess": "#52c41a",
+      "colorWarning": "#faad14",
+      "colorError": "#ff4d4f",
+      "colorInfo": "#1677ff",
+      "colorLink": "= colorInfo unless set (#1677ff), hover palette 5, active 7",
+      "each": "every one of the five seeds produces the same 10-name family Bg / BgHover / Border / BorderHover / Hover / base / Active / TextHover / Text / TextActive (error also BgActive and BgFilledHover = mix(palette1, palette3, 50%))",
+      "darkValues": {
+        "colorPrimary": "#1668dc",
+        "colorSuccess": "#49aa19",
+        "colorWarning": "#d89614",
+        "colorError": "#dc4446"
+      }
+    },
+    "darkMode": "darkAlgorithm (themes/dark): a second derivation of the same seeds, not a CSS filter. (1) Palette: antd generate(color,{theme:'dark'}) first builds the 10 light swatches, then for each swatch i mixes it into background #141414 by a fixed percentage table [index7:15%, 6:25%, 5:30%, 5:45%, 5:65%, 5:85%, 4:90%, 3:95%, 2:97%, 1:98%] so low steps are dark muted tints and high steps approach the colour. (2) Semantic steps are re-mapped: 1-4 same, 5 uses index 6, 6 index 5, 7 index 4, 8 index 6, 9 index 5, 10 index 4 (hover lighter, active darker). (3) Neutrals invert: text base #fff at alpha .85/.65/.45/.25; bg base #000 with container = lighten 8 %, elevated lighten 12 %, spotlight 26 %. (4) colorPrimaryBg is overridden to colorPrimaryBorder (#15325b) so selected rows are visible on #141414. (5) Shadows become rgba(255,255,255,.2) base.",
+    "contrastNotes": "Computed 2026-10-08 on #ffffff: colorPrimary #1677ff 4.10:1 (white text on primary button FAILS 4.5:1 small text; ok for 18px+), primary-5 #4096ff 2.99:1, primary-7 #0958d9 6.16:1; colorSuccess #52c41a 2.27:1 and colorWarning #faad14 1.90:1 and colorError #ff4d4f 3.27:1 as text all fail, which is why the *Text tokens sit at palette step 9; default border #d9d9d9 only 1.41:1 (fails 3:1 non-text), borderSecondary #f0f0f0 ~1.2:1; text .88 -> 16.5:1, secondary .65 -> 7.0:1, tertiary .45 -> 3.36:1 (below AA for body), quaternary .25 -> 1.84:1 (placeholder/disabled). Dark: white on #1668dc 5.19:1; #1668dc on #141414 only 3.55:1. The docs claim AAA 7:1 for body text; true for text and secondary text only."
+  },
+  "spacing": {
+    "base": "4px sizeUnit x sizeStep 4 (docs say 8px grid unit for layout; component padding derives from size tokens)",
+    "scale": [
+      4,
+      8,
+      12,
+      16,
+      20,
+      24,
+      32,
+      48
+    ]
+  },
+  "radius": {
+    "scale": [
+      2,
+      4,
+      6,
+      8
+    ],
+    "rule": "Single seed borderRadius = 6 (v5/v6 default; v4 was 2). genRadius derives: LG = base+2 for 6<=base<16 (=8; +1 if 5<=base<6; 16 cap); SM = 4 for 5<=base<7, 5 for 7-8, 6 for 8-14, 7 for 14-16, 8 for >=16; XS = 1 if 2<=base<6 else 2 for base>=6; Outer = 4 for 4<base<8, 6 for >=8. Defaults: XS 2, SM 4, base 6, LG 8, Outer 4. Component usage: button/input/select base 6 (SM 4 for small, LG 8 for large), card LG 8, tag/small elements SM 4 or XS 2, checkbox SM 4."
+  },
+  "depth": {
+    "shadows": [
+      "boxShadow / boxShadowSecondary (popups, dropdowns, modals): 0 6px 16px 0 rgba(0,0,0,.08), 0 3px 6px -4px rgba(0,0,0,.12), 0 9px 28px 8px rgba(0,0,0,.05)",
+      "boxShadowTertiary (small raised: buttons groups, segmented, cards at rest): 0 1px 2px 0 .05, 0 1px 6px -1px .03, 0 2px 4px 0 .03 (v6; v5 was .03/.02/.02)",
+      "boxShadowCard (card hover): 0 1px 2px -2px .16, 0 3px 6px 0 .12, 0 5px 12px 4px .09",
+      "drawers: boxShadowDrawerRight/Left/Up/Down mirror the popup shadow along each axis",
+      "tabs overflow: inset 10px 0 8px -8px .08 (and 3 more directions)",
+      "popover arrow: 2px 2px 5px .05; popover filter drop-shadow triple",
+      "button 'drop line' shadows: defaultShadow 0 2px 0 controlTmpOutline (rgba .02), primaryShadow 0 2px 0 controlOutline (primary bg tint)",
+      "focus: 3px outline ring (lineWidthFocus = 3 x lineWidth) in a translucent primary (controlOutline = primaryBg over container)"
+    ],
+    "borders": "lineWidth 1px solid colorBorder (#d9d9d9); lineWidthBold 2; controlOutlineWidth 2 (focus ring offset); focus ring 3px. ConfigProvider/Input variants (verified in v6 types): outlined (default), borderless, filled, underlined; Button variants: outlined, dashed, solid, filled, text, link. 4 shadow layers from docs: Layer 0 none (inputs), 1 low (hover card), 2 medium (dropdowns), 3 high (dialogs); three stacked shadow layers since v4 to soften.",
+    "blur": "colorBgBlur token exists ('transparent' light, rgba(255,255,255,.04) dark) for optional backdrop blur; Modal/Drawer mask colorBgMask rgba(0,0,0,.45). No acrylic-style material."
+  },
+  "motion": {
+    "durationsMs": [
+      100,
+      200,
+      300
+    ],
+    "easings": [
+      "motionEaseOutCirc cubic-bezier(0.08, 0.82, 0.17, 1)",
+      "motionEaseInOutCirc cubic-bezier(0.78, 0.14, 0.15, 0.86)",
+      "motionEaseOut cubic-bezier(0.215, 0.61, 0.355, 1)",
+      "motionEaseInOut cubic-bezier(0.645, 0.045, 0.355, 1)",
+      "motionEaseOutBack cubic-bezier(0.12, 0.4, 0.29, 1.46)",
+      "motionEaseInBack cubic-bezier(0.71, -0.46, 0.88, 0.6)",
+      "motionEaseInQuint cubic-bezier(0.755, 0.05, 0.855, 0.06)",
+      "motionEaseOutQuint cubic-bezier(0.23, 1, 0.32, 1)"
+    ],
+    "notes": "Seeds motionUnit 0.1 and motionBase 0 give motionDurationFast = base+unit = 0.1s, Mid = base+2*unit = 0.2s, Slow = base+3*unit = 0.3s: one multiplier retimes every transition. seed motion:false sets all three to 0s (global disable; not tied to prefers-reduced-motion automatically). Docs principles: Natural, Performant (minimal transition time), Concise (justified; 'over fancy animation will frustrate'). Ant Motion is a separate library."
+  },
+  "density": {
+    "modes": [
+      "default",
+      "compact (theme.compactAlgorithm, composable with dark)",
+      "component size small / middle / large per control"
+    ],
+    "controlHeightsPx": {
+      "default controlHeight": 32,
+      "controlHeightSM": 24,
+      "controlHeightXS": 16,
+      "controlHeightLG": 40,
+      "compact controlHeight": 28,
+      "compact SM": 21,
+      "compact XS": 14,
+      "compact LG": 35,
+      "formula": "controlHeight seed; SM = x0.75; XS = x0.5; LG = x1.25; compact = seed - 4",
+      "controlInteractiveSize (checkbox/expand icon)": "controlHeight/2 = 16 (compact 14)",
+      "controlPaddingHorizontal": 12,
+      "controlPaddingHorizontalSM": 8,
+      "button paddingInline": "paddingContentHorizontal - lineWidth = 15 (SM 7)",
+      "compact spacing": "size tokens drop 2 steps: size 16 -> 8, sizeSM 12 -> 8, sizeMD 20 -> 16, sizeLG 24 -> 16, sizeXL 32, sizeXXL 48 unchanged; paddingContentHorizontal 16 -> 12; paddingContentVertical 12 -> 8; base font 14 -> 12 via fontSizeSM"
+    }
+  },
+  "components": {
+    "count": 68,
+    "list": [
+      "Affix",
+      "Alert",
+      "Anchor",
+      "App",
+      "AutoComplete",
+      "Avatar",
+      "Badge",
+      "BorderBeam (new in v6)",
+      "Breadcrumb",
+      "Button (solid, outlined, dashed, filled, text, link; primary/default/dashed/text/link types; danger, ghost, loading; sizes small/middle/large; shapes default/circle/round)",
+      "Calendar",
+      "Card",
+      "Carousel",
+      "Cascader",
+      "Checkbox",
+      "Collapse",
+      "ColorPicker",
+      "ConfigProvider",
+      "DatePicker",
+      "Descriptions",
+      "Divider",
+      "Drawer",
+      "Dropdown",
+      "Empty",
+      "Flex",
+      "FloatButton",
+      "Form",
+      "Grid (Row/Col, 24 columns)",
+      "Image",
+      "Input",
+      "InputNumber",
+      "Layout",
+      "List",
+      "Masonry (new in v6)",
+      "Mentions",
+      "Menu",
+      "Modal",
+      "Pagination",
+      "Popconfirm",
+      "Popover",
+      "Progress",
+      "QRCode",
+      "Radio",
+      "Rate",
+      "Result",
+      "Segmented",
+      "Select",
+      "Skeleton",
+      "Slider",
+      "Space",
+      "Spin",
+      "Splitter",
+      "Statistic",
+      "Steps",
+      "Switch",
+      "Table",
+      "Tabs",
+      "Tag",
+      "TimePicker",
+      "Timeline",
+      "Tooltip",
+      "Tour",
+      "Transfer",
+      "Tree",
+      "TreeSelect",
+      "Typography",
+      "Upload",
+      "Watermark"
+    ],
+    "stateMatrixCompleteness": "Very broad coverage (the widest of the four for data-entry and data-display components). Per component: hover, active, focus (3px ring via lineWidthFocus), disabled, loading (opacityLoading .65), error and warning status on form controls (colorErrorOutline/WarningOutline), sizes small/middle/large, variants outlined/filled/borderless/underlined on inputs, and per-component tokens (e.g. Button: 43 component tokens in ComponentToken such as defaultHoverBg, defaultActiveBorderColor, paddingBlockSM, onlyIconSizeLG). v6 adds semantic classNames/styles slots per component (header, body, popup.root...) and CSS-variable mode by default. Compact + dark compose. Gaps: no formal state table in the docs; sizes use 3 steps (not XS-XL)."
+  },
+  "tokenArchitecture": "Seed -> Map -> Alias (+ Component) with a real derivation algorithm. SEED (~35 inputs, themes/seed.ts): colorPrimary/Success/Warning/Error/Info/Link, colorTextBase, colorBgBase, 12 preset hues, fontFamily, fontSize 14, lineWidth 1, borderRadius 6, controlHeight 32, sizeUnit 4, sizeStep 4, sizePopupArrow 16, motionUnit 0.1, motionBase 0, zIndexBase 0, zIndexPopupBase 1000, opacityImage 1, wireframe false, motion true, focusOutline true. MAP TOKENS (outputs of an algorithm function derivative(seed) -> MapToken): default = genColorMapToken + genFontMapToken + genSizeMapToken + genControlHeight + genCommonMapToken (radius, motion durations, lineWidthBold). dark and compact are alternative or additive algorithm functions; theme.algorithm can be an array applied in order (e.g. [dark, compact]); compact receives the previous map and overrides size/font/height only. ALIAS (util/alias.ts formatToken): developer-facing, mostly renames or simple expressions of map tokens: colorFillContent = colorFillSecondary, colorTextHeading = colorText, controlItemBgHover = colorFillTertiary, controlItemBgActive = colorPrimaryBg, paddingXS..XL = sizeXS..XL, marginXS.. = size.., boxShadow family, screen breakpoints XS 480, SM 576, MD 768, LG 992, XL 1200, XXL 1600, XXXL 1920 (v6), fontWeightStrong 600, opacityLoading .65, controlOutlineWidth = 2 x lineWidth, lineWidthFocus = 3 x lineWidth. COMPONENT tokens: defaults come from the global token but are overridable per component and (>=5.8) may opt into algorithms. Merge precedence: seed (designer) > derivative (designer) > alias (developer). Hash-keyed CSS-in-JS (cssinjs) caches per token set; v6 adds CSS-variable output and zeroRuntime (static antd.css).",
+  "distinctiveness": "The generate() palette function (10 swatches per hue, hue-shifting 2 degrees per step, saturation up 5-16 % in dark steps and down 16 % in light steps) gives the characteristic Ant blue tints; alpha-based neutrals; 'drop line' button shadow 0 2px 0; 14px/22px density; compact algorithm; 24-column grid; flat 1px #d9d9d9 outlines on white; hues named after Chinese design vocabulary (volcano, geekblue, gold).",
+  "weaknesses": [
+    "default semantic hues fail contrast as text and #d9d9d9 border fails 3:1",
+    "palette generation is HSV-based with ad hoc hue steps: not perceptually uniform (OKLCH would be)",
+    "dark algorithm mixes into a fixed #141414 background, so custom dark backgrounds need the separate generator",
+    "three control sizes only; compact is a global switch, not per-component density",
+    "visual identity generic; heavy runtime CSS-in-JS before v6 zeroRuntime",
+    "docs repository is partly Chinese-first, spec pages are older (v4-era shadow/layout text)"
+  ],
+  "takeaways": [
+    "Make the theme a pure function: seed tokens in, map tokens out, so dark and compact are alternative functions that compose ([dark, compact]) rather than separate hand-made stylesheets",
+    "A single seed colour deterministically yields a 10-step ramp with named roles (Bg, BgHover, Border, BorderHover, Hover, base, Active, TextHover, Text, TextActive); roles are fixed by index, and the same role names exist for success/warning/error/info/link",
+    "Define neutrals as alpha of one text-base colour (88/65/45/25 %) and one fill-base (15/6/4/2 %): they adapt to any surface",
+    "Control height is one seed; SM/XS/LG are multipliers (0.75, 0.5, 1.25) and compact subtracts 4",
+    "Motion speed is one seed (motionUnit) multiplied for fast/mid/slow; one flag switches animation off",
+    "Radius is one seed with a small piecewise function that derives XS/SM/LG/Outer so related radii stay in proportion",
+    "Font scale from a formula (base x e^(i/5), even-snapped, line box = size + 8) gives a ten-step ladder with predictable line heights",
+    "Document the derivation order seed > map > alias > component and which layer a designer vs developer may touch"
+  ]
+}

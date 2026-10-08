@@ -14,7 +14,7 @@ Not read: `learn/css/quiz` (assessment only, no rule content) and the two `card`
 
 Companion notes: `../web/implementation-craft.md` (baseline support table and Tailwind v4 idioms), `chrome-css-ui-new-apis.md` (the newer APIs in depth), `webdev-forms-and-images.md`, `webdev-performance-for-marketing.md`.
 
-Evidence labels: **[verified-C156]** = I ran the snippet in Playwright Chromium 156.0.8078.4 on 2026-10-08 (harness `corpus/web/webdev-css/_tests/verify.mjs`, 16/16 pass). Firefox and WebKit builds were not installed, so cross-engine behaviour is **[untested]**. **[source]** = stated by the page. **[engine note]** = my own addition.
+Evidence labels: **[verified-C156]** = I ran the snippet in Playwright Chromium 156.0.8078.4 on 2026-10-08 (harness `corpus/web/webdev-css/_tests/verify.mjs`, 25/25 pass). Firefox and WebKit builds were not installed, so cross-engine behaviour is **[untested]**. **[source]** = stated by the page. **[engine note]** = my own addition.
 
 ---
 

@@ -1,0 +1,495 @@
+{
+  "name": "Atlassian Design System",
+  "slug": "atlassian-design-system",
+  "vendor": "Atlassian Pty Ltd",
+  "url": "https://atlassian.design",
+  "licence": "Apache-2.0 for the published npm packages (@atlaskit/tokens 20.4.0, @atlaskit/button 25.4.7, @atlaskit/textfield 10.2.6; LICENSE 'Copyright 2019 Atlassian Pty Ltd'). The atlassian.design website text/guidelines carry no explicit open licence in what was fetched (unknown). Atlassian Sans/Mono fonts are distributed only via Atlassian Mosaic (not open); Charlie Sans/Display/Text brand fonts need authentication. Atlassian marks and logos are not licensed.",
+  "studiedOn": "2026-10-08",
+  "personality": [
+    "friendly",
+    "pragmatic",
+    "collaborative",
+    "optimistic",
+    "structured",
+    "confident-calm"
+  ],
+  "bestFor": [
+    "collaboration and work-management SaaS (boards, issues, docs, tables, navigation systems)",
+    "products with many interacting surfaces that need a clear elevation + emphasis vocabulary",
+    "teams that need user-themable colour modes (light, dark, increased contrast) and custom brand themes via attributes",
+    "content-heavy enterprise UIs where copy tone is part of the product"
+  ],
+  "avoidFor": [
+    "marketing sites (Atlassian brand uses a separate type family, Charlie, and different expression)",
+    "highly branded or editorial consumer products; the look is deliberately neutral with a single blue",
+    "very dense data-grid tools unless using compact spacing (default controls are airier than Primer/Polaris)"
+  ],
+  "typography": {
+    "families": [
+      "\"Atlassian Sans\", ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Ubuntu, \"Helvetica Neue\", sans-serif (app UI: heading, body, metric)",
+      "\"Atlassian Mono\", ui-monospace, Menlo, \"Segoe UI Mono\", \"Ubuntu Mono\", monospace (code)",
+      "\"Charlie Display\" / \"Charlie Text\" (brand and marketing only; font-family-brand-heading / brand-body)"
+    ],
+    "scale": [
+      {
+        "role": "heading-xxlarge (brand/marketing)",
+        "sizePx": 32,
+        "lineHeightPx": 36,
+        "weight": 653,
+        "trackingEm": "none-defined"
+      },
+      {
+        "role": "heading-xlarge (page title)",
+        "sizePx": 28,
+        "lineHeightPx": 32,
+        "weight": 653,
+        "trackingEm": "none-defined"
+      },
+      {
+        "role": "heading-large",
+        "sizePx": 24,
+        "lineHeightPx": 28,
+        "weight": 653,
+        "trackingEm": "none-defined"
+      },
+      {
+        "role": "heading-medium (modals, large components)",
+        "sizePx": 20,
+        "lineHeightPx": 24,
+        "weight": 653,
+        "trackingEm": "none-defined"
+      },
+      {
+        "role": "heading-small",
+        "sizePx": 16,
+        "lineHeightPx": 20,
+        "weight": 653,
+        "trackingEm": "none-defined"
+      },
+      {
+        "role": "heading-xsmall",
+        "sizePx": 14,
+        "lineHeightPx": 20,
+        "weight": 653,
+        "trackingEm": "none-defined"
+      },
+      {
+        "role": "heading-xxsmall",
+        "sizePx": 12,
+        "lineHeightPx": 16,
+        "weight": 653,
+        "trackingEm": "none-defined"
+      },
+      {
+        "role": "body-large (long-form)",
+        "sizePx": 16,
+        "lineHeightPx": 24,
+        "weight": 400,
+        "trackingEm": "none-defined"
+      },
+      {
+        "role": "body (default)",
+        "sizePx": 14,
+        "lineHeightPx": 20,
+        "weight": 400,
+        "trackingEm": "none-defined"
+      },
+      {
+        "role": "body-small",
+        "sizePx": 12,
+        "lineHeightPx": 16,
+        "weight": 400,
+        "trackingEm": "none-defined"
+      },
+      {
+        "role": "metric-large",
+        "sizePx": 28,
+        "lineHeightPx": 32,
+        "weight": 653,
+        "trackingEm": "none-defined"
+      },
+      {
+        "role": "metric-medium",
+        "sizePx": 24,
+        "lineHeightPx": 28,
+        "weight": 653,
+        "trackingEm": "none-defined"
+      },
+      {
+        "role": "metric-small",
+        "sizePx": 16,
+        "lineHeightPx": 20,
+        "weight": 653,
+        "trackingEm": "none-defined"
+      },
+      {
+        "role": "code",
+        "sizePx": "0.875em (12px in a 14px container)",
+        "lineHeightPx": "1 (line-height equals font-size inline; 20px in code block)",
+        "weight": 400,
+        "trackingEm": "none-defined"
+      }
+    ],
+    "notes": "Weight tokens: regular 400, medium 500, semibold 600, bold 653 (variable-font stop used for all headings). 'Finesse' typography theme overrides headings medium..xxsmall to weight 500 (lighter, more refined headings). Body paragraph spacing (Figma only; manage with Stack in code): large 16, body 12, small 8. Rules: use heading styles, never bold/bigger body text, to structure; exactly one h1; do not skip levels; XXL/XL for brand and marketing, XL/L for app page titles, M for modals and large components, S/XS for small components such as flags, XXS sparingly with Body S; Body M is the component default, Body L only for long-form, Body S sparingly; bold body only rarely, medium for most components and text beside line icons. Metric style exists specifically for emphasising numbers. Code style is reserved for the code block component. An UNSAFE dynamic-typography theme scales fonts via --ds-dynamic-font-scale for user text-size preferences. No tracking tokens (trackingEm 'none-defined')."
+  },
+  "color": {
+    "model": "hex",
+    "neutrals": {
+      "light surfaces": {
+        "surface": "#FFFFFF",
+        "surface-raised": "#FFFFFF",
+        "surface-overlay": "#FFFFFF",
+        "surface-sunken": "#F8F8F8",
+        "surface-hovered": "#F0F1F2",
+        "surface-pressed": "#DDDEE1",
+        "surface-container": "#17171708"
+      },
+      "light text": {
+        "text": "#292A2E",
+        "text-subtle": "#505258",
+        "text-subtlest": "#6B6E76",
+        "text-disabled": "#080F214A",
+        "text-inverse": "#FFFFFF"
+      },
+      "light neutral backgrounds (alpha so they adapt to the surface beneath)": {
+        "background-neutral": "#0515240F",
+        "hovered": "#0B120E24",
+        "pressed": "#080F214A",
+        "neutral-bold": "#292A2E"
+      },
+      "light borders": {
+        "border": "#0B120E24",
+        "border-bold": "#7D818A",
+        "border-input": "#8C8F97",
+        "border-disabled": "#0515240F"
+      },
+      "dark surfaces": {
+        "surface": "#1F1F21",
+        "surface-raised": "#242528",
+        "surface-overlay": "#2B2C2F",
+        "surface-sunken": "#18191A",
+        "surface-hovered": "#242528",
+        "surface-pressed": "#2B2C2F"
+      },
+      "dark text": {
+        "text": "#CECFD2",
+        "text-subtle": "#A9ABAF",
+        "text-subtlest": "#96999E",
+        "text-disabled": "#E5E9F640",
+        "text-inverse": "#1F1F21"
+      },
+      "dark borders": {
+        "border": "#E3E4F21F",
+        "border-bold": "#7E8188",
+        "border-input": "#7E8188"
+      },
+      "gray values used across light tokens (accent gray, text, icon, border)": [
+        "#F0F1F2",
+        "#DDDEE1",
+        "#B7B9BE",
+        "#8C8F97",
+        "#6B6E76",
+        "#505258",
+        "#3B3D42",
+        "#292A2E",
+        "#1E1F21"
+      ]
+    },
+    "accents": {
+      "ten accent hues (decorative, interchangeable, no meaning): gray, red, orange, yellow, lime, green, teal, blue, purple, magenta": "each with background-accent-{hue}-subtlest/subtler/subtle/bolder (+hovered/pressed), text-accent-{hue} and -bolder, icon-accent-{hue}, border-accent-{hue} and -subtle",
+      "light accent bases (border/icon)": {
+        "red": "#E2483D",
+        "orange": "#E06C00",
+        "yellow": "#B38600",
+        "lime": "#6A9A23",
+        "green": "#22A06B",
+        "teal": "#2898BD",
+        "blue": "#357DE8",
+        "purple": "#AF59E1",
+        "magenta": "#CD519D",
+        "gray": "#7D818A"
+      },
+      "brand": {
+        "background-brand-bold": "#1868DB (light) / #669DF1 (dark)",
+        "hovered": "#1558BC / #8FB8F6",
+        "pressed": "#144794 / #ADCBFB",
+        "background-brand-subtlest": "#E9F2FE",
+        "background-brand-boldest": "#1C2B42",
+        "text-brand / link": "#1868DB (dark #669DF1)",
+        "link-pressed": "#1558BC",
+        "link-visited": "#803FA5 (dark #D8A0F7)"
+      }
+    },
+    "semantic": {
+      "danger": {
+        "bold bg light/dark": "#C9372C / #F87168",
+        "subtle bg": "#FFECEB",
+        "text": "#AE2E24 (dark #FD9891)",
+        "border": "#E2483D (dark #F15B50)",
+        "icon": "#C9372C"
+      },
+      "warning": {
+        "bold bg": "#FBC828 (hovered #FCA700, pressed #F68909)",
+        "subtle bg": "#FFF5DB",
+        "text": "#9E4C00",
+        "text on bold (warning.inverse)": "#292A2E",
+        "border": "#E06C00"
+      },
+      "success": {
+        "bold bg light/dark": "#5B7F24 / #94C748",
+        "subtle bg": "#EFFFD6",
+        "text": "#4C6B1F (dark #B3DF72)",
+        "border": "#6A9A23 (dark #82B536)"
+      },
+      "information": {
+        "bold bg": "#1868DB",
+        "subtle bg": "#E9F2FE",
+        "text": "#1558BC",
+        "border": "#357DE8"
+      },
+      "discovery (new features, onboarding)": {
+        "bold bg": "#964AC0",
+        "subtle bg": "#F8EEFE",
+        "text": "#803FA5",
+        "border": "#AF59E1"
+      },
+      "selected": {
+        "background-selected": "#E9F2FE",
+        "selected-bold": "#1868DB",
+        "border-selected": "#1868DB",
+        "text-selected": "#1868DB"
+      },
+      "focus": {
+        "border-focused": "#4688EC light / #8FB8F6 dark"
+      },
+      "blanket (scrim)": "#050C1F75 light",
+      "interaction overlays": {
+        "interaction-hovered": "#00000029",
+        "interaction-pressed": "#00000052"
+      }
+    },
+    "darkMode": "Two colour modes selected by `data-color-mode` on <html> (light, dark, or auto from prefers-color-scheme) and a `data-theme` attribute listing active theme layers (e.g. `light:light dark:dark spacing:spacing typography:typography shape:shape`). Every token has one value per mode (467 colour/elevation tokens each). Guidance: if you use tokens never invent your own dark mapping. Elevation changes character in dark: shadows become hard to see, so higher surfaces are LIGHTER (surface #1F1F21 < raised #242528 < overlay #2B2C2F) and overlay shadow adds a 1px ring `0 0 0 1px #BDBDBD1F`. Additional shipped theme layers: increased-contrast light/dark, 'finesse' (refined selected/neutral treatments and 500-weight headings), 'new-input-border', 'future', legacy light/dark, dynamic custom brand themes (UNSAFE-dynamic) and a theme-mutation-observer for runtime changes.",
+    "contrastNotes": "Docs: WCAG AA. 4.5:1 for text under 24px, 3:1 for text 24px+ and for UI essential to understanding. Emphasis ladder subtlest < subtler < subtle < default < bold < bolder < boldest is a relative contrast ladder against the surface; bold backgrounds have dedicated `-inverse` text/icon tokens (yellow warning bold uses warning.inverse #292A2E). Selected needs a second cue (check, underline, border, shape). [computed] text #292A2E on white 14.34:1; text-subtle 7.81:1; text-subtlest #6B6E76 5.1:1; white on brand-bold #1868DB 5.2:1; white on success-bold #5B7F24 4.66:1; #292A2E on warning bold #FBC828 9.14:1; border-input #8C8F97 on white 3.24:1 (meets 3:1 non-text for form fields); dark text #CECFD2 on #1F1F21 10.56:1, dark subtlest #96999E 5.76:1. Overlay surfaces in dark mode must be contrast-checked separately."
+  },
+  "spacing": {
+    "base": "8px (space.100 = 8px; token number = percentage of base, so space.200 = 16px). The scale also includes 2, 4, 6 half-steps for compact UI.",
+    "scale": [
+      "0",
+      "2 (025)",
+      "4 (050)",
+      "6 (075)",
+      "8 (100)",
+      "12 (150)",
+      "16 (200)",
+      "20 (250)",
+      "24 (300)",
+      "32 (400)",
+      "40 (500)",
+      "48 (600)",
+      "64 (800)",
+      "80 (1000)"
+    ],
+    "negative": [
+      "-2",
+      "-4",
+      "-6",
+      "-8",
+      "-12",
+      "-16",
+      "-20",
+      "-24",
+      "-32"
+    ],
+    "guidance": {
+      "small 0-8px": "compact UI: icon-text gaps, badge/icon-button/table-cell padding, button-group gaps, input padding",
+      "medium 12-24px": "button padding, avatar-to-content, card inner spacing",
+      "large 32-80px": "page sections and large layout alignment",
+      "composition": "group by similarity, group by proximity, create order via varied whitespace, visual rhythm, optical adjustment (do not apply scale blindly)",
+      "responsive": "none published; system is described as the foundation for future adjustable density"
+    },
+    "layout": {
+      "zIndex": {
+        "navigation": 200,
+        "inline-dialog": 300,
+        "popup": 400,
+        "blanket": 500,
+        "modal": 510,
+        "flag": 600,
+        "spotlight": 700,
+        "tooltip": 800
+      },
+      "breakpoints": "unknown (grid page returned empty; Layout grid component is deprecated in favour of Grid/Flex/Stack primitives)"
+    }
+  },
+  "radius": {
+    "scale": [
+      2,
+      4,
+      6,
+      8,
+      12,
+      16,
+      9999
+    ],
+    "rule": "Radius is assigned by element role: xsmall 2px badges/checkboxes/key hints; small 4px labels, lozenges, tags, tooltips, compact buttons; medium 6px buttons, inputs, selects, nav items; large 8px cards, in-page containers, dropdowns, floating UI; xlarge 12px full-page containers, modals, Kanban columns, tables; xxlarge 16px video containers; full for avatars/pills; tile = 25% for tile components only. Focus ring sits 2px outside the component and its radius = element radius + 2px (focus tokens: 4, 6, 8, 10, 14, 18px). Border width tokens: 1px default, 2px selected, 2px focused. Docs say values are indicative and may change."
+  },
+  "depth": {
+    "shadows": [
+      "raised (light): 0 1px 1px #1E1F2140, 0 0 1px #1E1F214F",
+      "overlay (light): 0 8px 12px #1E1F2126, 0 0 1px #1E1F214F",
+      "overflow (light): 0 0 8px #1E1F2129, 0 0 1px #1E1F211F (scrolled-out-of-view cue)",
+      "raised (dark): 0 0 0 1px #00000000, 0 1px 1px #01040480, 0 0 1px #01040480",
+      "overlay (dark): 0 0 0 1px #BDBDBD1F, 0 8px 12px #0104045C, 0 0 1px 1px #01040480",
+      "overflow (dark): 0 0 12px #0104048F, 0 0 1px #01040480"
+    ],
+    "borders": "1px hairline #0B120E24 (alpha-based so it adapts), bold border #7D818A, input border #8C8F97 (3:1). Default and sunken surfaces carry no shadow; separate flat areas with whitespace or a border. A flat card = default surface + border.",
+    "blur": "No blur tokens. Levels: sunken (backdrop for grouped content, e.g. Kanban columns), default (page), raised (movable cards, one focal point per screen), overlay (modals, dialogs, dropdowns, floating toolbars), plus overflow as a shadow cue not a level. Surface + shadow must be paired (raised surface with raised shadow; overlay with overlay shadow); never mixed."
+  },
+  "motion": {
+    "durationsMs": [
+      0,
+      50,
+      100,
+      150,
+      200,
+      250,
+      400,
+      600
+    ],
+    "easings": [
+      "out-practical: cubic-bezier(0.4, 1, 0.6, 1) (popups, hover fades, tabs)",
+      "in-practical: cubic-bezier(0.6, 0, 0.8, 0.6) (all exits)",
+      "out-bold: cubic-bezier(0, 0.4, 0, 1) (panels, flags, side navs entering)",
+      "inout-bold: cubic-bezier(0.4, 0, 0, 1) (scaling modals, repositioning)",
+      "spring: linear() 65-point curve overshooting to 1.024"
+    ],
+    "notes": "Duration tokens: instant 0, xxshort 50, xshort 100, short 150, medium 200, long 250, xlong 400, xxlong 600. Principles: human, clarity, accessible, performant. Interactions (hover/press) 50-150ms; transitions 150-400ms scaled to element size. Semantic composite tokens bundle duration + easing + keyframes: popup enter 150ms out-practical slide 8px + fade; popup exit 100ms in-practical slide 4px + fade; modal enter 250ms inout-bold scale 95%->100%; modal exit 200ms; panel enter 250ms out-bold slide 100%; panel exit 200ms; flag enter 250ms slide 50%+fade, exit 200ms; list item hover 50ms, pressed 100ms; button hovered/pressed 150ms; tab 150ms. Exits are always faster than entrances. Keep frequent interactions under 150ms; save expressive motion for rare moments (onboarding). Reduced motion = off and instant; avoid flashing and large sweeps. Currently early-access behind feature flag platform-dst-motion-uplift."
+  },
+  "density": {
+    "modes": [
+      "default",
+      "compact (button `spacing=\"compact\"`; spacing tokens planned as basis for future density modes)",
+      "dynamic font scale (UNSAFE typography theme)"
+    ],
+    "controlHeightsPx": {
+      "button default": 32,
+      "button compact": 24,
+      "button padding-inline": "space.150 (12px) default, space.075 (6px) next to an icon; column-gap 4px or 6px",
+      "button padding-block": "6 default / 2 compact",
+      "button radius": "docs: radius.medium 6px for buttons; compiled CSS also carries radius.small 4px and radius.full variants (mapping to variants not verified)",
+      "button font": "body 14/20 weight 500",
+      "textfield": "unknown height; padding-block variants space.025/050/075/100 + 1px border, radius medium 6px, padding-inline 6",
+      "icon button": "32 / 24 square (width and height 2rem / 1.5rem)"
+    }
+  },
+  "components": {
+    "count": 84,
+    "list": [
+      "Button",
+      "Calendar",
+      "Checkbox",
+      "Comment",
+      "Date time picker",
+      "Dropdown menu",
+      "Focus ring",
+      "Form",
+      "Radio",
+      "Range",
+      "Select",
+      "Text area",
+      "Text field",
+      "Toggle",
+      "Avatar",
+      "Avatar group",
+      "Icon",
+      "Image",
+      "Logo",
+      "Object",
+      "Tile",
+      "Badge",
+      "Date label",
+      "Lozenge",
+      "Tag",
+      "Tag group",
+      "Page",
+      "Page header",
+      "Panel",
+      "Progress bar",
+      "Skeleton",
+      "Spinner",
+      "Banner",
+      "Empty state",
+      "Flag",
+      "Inline message",
+      "Modal dialog",
+      "Spotlight",
+      "Section message",
+      "Breadcrumbs",
+      "Link",
+      "Menu",
+      "Navigation system",
+      "Pagination",
+      "Tabs",
+      "Blanket",
+      "Drawer",
+      "Inline dialog",
+      "Popup",
+      "Tooltip",
+      "Progress indicator",
+      "Progress tracker",
+      "Code",
+      "Dynamic table",
+      "Heading",
+      "Inline edit",
+      "Table",
+      "Table tree",
+      "Visually hidden",
+      "Box",
+      "Pressable",
+      "Anchor",
+      "Inline",
+      "Stack",
+      "Flex",
+      "Grid",
+      "Bleed",
+      "XCSS",
+      "Responsive",
+      "Text",
+      "MetricText",
+      "Focusable",
+      "CSS",
+      "CSS reset",
+      "Design tokens",
+      "Motion",
+      "Popper",
+      "Portal",
+      "Pragmatic drag and drop",
+      "App provider",
+      "ESLint plugin",
+      "Storybook addon",
+      "Stylelint plugin",
+      "UI Styling Standard"
+    ],
+    "stateMatrixCompleteness": "atlassian.design lists 89 entries in 14 categories; 5 are deprecated (Atlassian navigation, Layout grid, Onboarding spotlight, Page layout, Side navigation), leaving 84 of which about 59 are UI components, 13 layout/text primitives (Box, Stack, Inline, Flex, Grid, Bleed, Pressable, Anchor, Text, MetricText, Focusable, XCSS, Responsive), 7 libraries, 5 tooling. State coverage is encoded in tokens: nearly every background/surface token has -hovered and -pressed twins (e.g. background-brand-bold, -hovered, -pressed), plus selected(-hovered/-pressed), disabled, focused (border-focused), input(-hovered/-pressed). Button appearances: default, primary, subtle, warning, danger, discovery, link; sizes via `spacing` default/compact; isDisabled, isLoading, isSelected, shouldFitContainer, iconBefore/iconAfter. Component docs are split into usage, examples and code tabs; several usage pages here rendered images for do/don't, so visual rules were not extractable."
+  },
+  "tokenArchitecture": "One namespace `--ds-*` (CSS) / `token('color.background.brand.bold')` (JS) compiled from a Style-Dictionary-like codegen into theme CSS strings. Names are dotted paths: `{group}.{property}.{role}.{emphasis}.{state}`: color.background.danger.bold.hovered; color.text.accent.blue.bolder; color.border.focused; elevation.surface.raised.pressed; elevation.shadow.overlay; space.150; radius.medium; font.heading.large; motion tokens (duration.*, easing.*, popup.enter). Colour groups: background (208), border (40), text (49), icon (23), chart (100), surface/elevation (13), shadow (5), link (4), blanket (3), interaction (2), skeleton (2), opacity (2). Roles: neutral, brand, selected, information, success, warning, danger, discovery, accent-{10 hues}, input, inverse. Themes are separate layers keyed in `data-theme` so spacing, typography, shape, motion and colour can load independently; palettes are 'raw' primitives (palettes-raw) behind the semantic layer, but consumers only see semantic tokens, enforced by an ESLint plugin, a Stylelint plugin and a babel plugin that inlines fallback values (e.g. var(--ds-space-100, 8px)). Token metadata in the package includes descriptions, state, 'replacement-mapping' for renames and generated contrast pairs for automated checks.",
+  "distinctiveness": "Atlassian is recognisable by (1) a single saturated brand blue (#1868DB) used for primary, links, selected and focus, (2) alpha-based neutral backgrounds that darken/lighten with whatever is beneath, (3) an explicit surface-level vocabulary (sunken/default/raised/overlay) with flat default cards, (4) rounded 6px controls with 12px full-page containers and 8px cards, (5) lozenges and avatar-heavy collaboration chrome, (6) the purple 'discovery' role for new features, and (7) a copy voice described as bold, optimistic and practical-with-a-wink. Its 10-hue accent set is flagged as meaningless decoration that must be swappable, which is an unusual rigor rule.",
+  "weaknesses": [
+    "Atlassian Sans and Mono are not publicly downloadable, so exact typography cannot be reproduced",
+    "Documentation is image-heavy for do/don't and several foundation pages (grid, border, content sub-pages) returned empty or 404 to text fetches; links shift between releases",
+    "Many tokens are early access behind feature flags (motion uplift, finesse, typography uplift), so the public value set is moving",
+    "Layout grid and page-layout components are deprecated with primitives as the replacement, leaving layout rules thinly documented",
+    "No published tracking or optical-size rules; no density modes beyond compact buttons",
+    "Radius values are labelled 'indicative and subject to change'"
+  ],
+  "takeaways": [
+    "Name every token as property.role.emphasis.state so the name itself carries the usage contract, and keep ACCENT hues explicitly meaningless and swappable",
+    "Use an emphasis ladder (subtlest to boldest) plus hovered/pressed twins for every fill so state colours never need hand picking",
+    "Specify elevation as paired surface + shadow tokens, forbid mixing across levels, allow one focal 'raised' item per screen, and make dark mode lighten as it elevates",
+    "Make alpha-based neutral backgrounds the default so a component adapts to whichever surface it lands on",
+    "Define radius by role (badge 2, tag 4, control 6, card 8, container/modal 12) and derive the focus ring radius as element radius + 2",
+    "Bundle motion into semantic tokens (popup.enter, modal.exit) with exit faster than enter and frequent interactions under 150ms",
+    "Treat copy as a dial: tone adjusts to the user's emotional state, no wink in errors, error CTA is a specific one-to-two word verb",
+    "Enforce the system with lint (ESLint/Stylelint/babel plugins) rather than documentation alone"
+  ]
+}

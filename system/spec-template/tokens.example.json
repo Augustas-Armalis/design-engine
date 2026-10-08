@@ -1,0 +1,626 @@
+{
+  "$schema": "./tokens.schema.json",
+  "$comment": "EXAMPLE VALUES ONLY. A fresh, fictional system (\"Fieldnote\", a research-notes app) that shows how the template is filled. It is NOT AlignUI and not a recommendation: replace every value per brief. Colour ramps were generated in OKLCH (neutral hue 80, brand hue 325, states 27/78/150/238) and every contract pair in semantic.contrastReport was computed from the hex values below.",
+  "meta": {
+    "name": "Fieldnote (example)",
+    "version": "0.1.0",
+    "status": "example",
+    "brief": {
+      "product": "Fieldnote: a notes and citations app for independent researchers (fictional)",
+      "audience": "solo researchers and small labs",
+      "action": "Start a free notebook",
+      "proof": "A real notebook screen showing a note, its source and the citation it generated (sample data, labelled sample)"
+    },
+    "personality": {
+      "brandHue": 325,
+      "neutralTemperature": "warm",
+      "typeVoice": "A bookish serif for headlines against a plain humanist sans for work; mono only for citations and IDs.",
+      "radiusPreset": "tight",
+      "depthStyle": "border",
+      "density": "default",
+      "motionPersonality": "calm"
+    },
+    "signature": "Warm-paper canvas with ink text and plum accent; hairline borders instead of shadows; citation chips set in mono.",
+    "overrides": []
+  },
+  "primitive": {
+    "color": {
+      "neutral": {
+        "hue": 80,
+        "ramp": {
+          "0": "#fffdf8",
+          "50": "#f7f7f5",
+          "100": "#eeecea",
+          "200": "#dfdcd8",
+          "300": "#c9c5bf",
+          "400": "#aea8a0",
+          "500": "#938d83",
+          "600": "#726c63",
+          "700": "#615b53",
+          "800": "#4b4741",
+          "900": "#35322d",
+          "950": "#201e1a"
+        }
+      },
+      "brand": {
+        "hue": 325,
+        "ramp": {
+          "50": "#fef2ff",
+          "100": "#fae5fb",
+          "200": "#f4cef6",
+          "300": "#e9aeec",
+          "400": "#d687db",
+          "500": "#c064c6",
+          "600": "#9c42a2",
+          "700": "#85368a",
+          "800": "#68296d",
+          "900": "#4b1c4f",
+          "950": "#2f0e31"
+        }
+      },
+      "states": {
+        "danger": {
+          "hue": 27,
+          "ramp": {
+            "50": "#fff4f2",
+            "100": "#fee7e4",
+            "200": "#fed0c9",
+            "300": "#feaea4",
+            "400": "#ff7c70",
+            "500": "#ef4d45",
+            "600": "#c72122",
+            "700": "#ab171a",
+            "800": "#861213",
+            "900": "#620a0b",
+            "950": "#3f0304"
+          }
+        },
+        "warning": {
+          "hue": 78,
+          "ramp": {
+            "50": "#fef6ea",
+            "100": "#f9ebd5",
+            "200": "#f3d8b0",
+            "300": "#e7bf7f",
+            "400": "#d59e3f",
+            "500": "#ba8202",
+            "600": "#906405",
+            "700": "#7a5400",
+            "800": "#604102",
+            "900": "#452e01",
+            "950": "#2b1b00"
+          }
+        },
+        "success": {
+          "hue": 150,
+          "ramp": {
+            "50": "#effaf0",
+            "100": "#def4e1",
+            "200": "#c1e8c8",
+            "300": "#9ad7a6",
+            "400": "#69c07e",
+            "500": "#38a65a",
+            "600": "#04833b",
+            "700": "#056f31",
+            "800": "#035725",
+            "900": "#003f18",
+            "950": "#01260c"
+          }
+        },
+        "info": {
+          "hue": 238,
+          "ramp": {
+            "50": "#eff8ff",
+            "100": "#dcf0fe",
+            "200": "#bbe3fe",
+            "300": "#8fcef8",
+            "400": "#58b4eb",
+            "500": "#0f98d8",
+            "600": "#0275a9",
+            "700": "#04638f",
+            "800": "#034d71",
+            "900": "#013752",
+            "950": "#012133"
+          }
+        }
+      },
+      "alphaSteps": [
+        8,
+        16,
+        32
+      ]
+    },
+    "space": {
+      "unit": "4px",
+      "subUnit": "2px",
+      "scale": {
+        "0": "0px",
+        "px": "1px",
+        "0.5": "2px",
+        "1": "4px",
+        "2": "8px",
+        "3": "12px",
+        "4": "16px",
+        "5": "20px",
+        "6": "24px",
+        "8": "32px",
+        "10": "40px",
+        "12": "48px",
+        "16": "64px",
+        "20": "80px",
+        "24": "96px"
+      }
+    },
+    "size": {
+      "control": {
+        "sm": "32px",
+        "md": "40px",
+        "lg": "48px"
+      },
+      "icon": {
+        "sm": "16px",
+        "md": "20px",
+        "lg": "24px"
+      },
+      "hitTarget": {
+        "min": "24px",
+        "touch": "44px"
+      }
+    },
+    "radius": {
+      "ramp": {
+        "xs": "2px",
+        "sm": "4px",
+        "md": "6px",
+        "lg": "10px",
+        "xl": "16px",
+        "full": "9999px"
+      },
+      "concentricRule": "inner radius = outer radius - gap between them, never below 2px"
+    },
+    "type": {
+      "families": {
+        "display": "'Fraunces', Georgia, serif",
+        "body": "'Public Sans', system-ui, sans-serif",
+        "mono": "'JetBrains Mono', ui-monospace, monospace"
+      },
+      "scale": {
+        "display-xl": {
+          "size": "64px",
+          "lineHeight": "68px",
+          "weight": 500,
+          "tracking": "-0.025em",
+          "mobile": {
+            "size": "40px",
+            "lineHeight": "44px"
+          }
+        },
+        "display-lg": {
+          "size": "48px",
+          "lineHeight": "52px",
+          "weight": 500,
+          "tracking": "-0.02em",
+          "mobile": {
+            "size": "34px",
+            "lineHeight": "40px"
+          }
+        },
+        "heading-lg": {
+          "size": "32px",
+          "lineHeight": "40px",
+          "weight": 600,
+          "tracking": "-0.01em",
+          "mobile": {
+            "size": "28px",
+            "lineHeight": "36px"
+          }
+        },
+        "heading-md": {
+          "size": "24px",
+          "lineHeight": "32px",
+          "weight": 600,
+          "tracking": "-0.005em"
+        },
+        "heading-sm": {
+          "size": "20px",
+          "lineHeight": "28px",
+          "weight": 600,
+          "tracking": "0"
+        },
+        "body-lg": {
+          "size": "18px",
+          "lineHeight": "28px",
+          "weight": 400,
+          "tracking": "0"
+        },
+        "body-md": {
+          "size": "16px",
+          "lineHeight": "24px",
+          "weight": 400,
+          "tracking": "0"
+        },
+        "body-sm": {
+          "size": "14px",
+          "lineHeight": "20px",
+          "weight": 400,
+          "tracking": "0"
+        },
+        "label-md": {
+          "size": "14px",
+          "lineHeight": "20px",
+          "weight": 600,
+          "tracking": "0"
+        },
+        "label-sm": {
+          "size": "12px",
+          "lineHeight": "16px",
+          "weight": 600,
+          "tracking": "0.01em"
+        },
+        "eyebrow": {
+          "size": "12px",
+          "lineHeight": "16px",
+          "weight": 600,
+          "tracking": "0.08em",
+          "case": "uppercase"
+        },
+        "mono-sm": {
+          "size": "13px",
+          "lineHeight": "20px",
+          "weight": 500,
+          "tracking": "0"
+        }
+      }
+    },
+    "shadow": {
+      "none": "none",
+      "hairline": "0 1px 0 0 {semantic.color.light.border.hairline}",
+      "raised": [
+        "0 0 0 1px {semantic.color.light.border.hairline}",
+        "0 2px 0 0 {semantic.color.light.border.hairline}"
+      ],
+      "float": [
+        "0 0 0 1px {semantic.color.light.border.hairline}",
+        "0 12px 24px -12px rgba(32,30,26,0.24)"
+      ],
+      "modal": [
+        "0 0 0 1px {semantic.color.light.border.hairline}",
+        "0 32px 64px -24px rgba(32,30,26,0.40)"
+      ]
+    },
+    "motion": {
+      "duration": {
+        "instant": "80ms",
+        "fast": "140ms",
+        "base": "220ms",
+        "slow": "360ms"
+      },
+      "easing": {
+        "standard": "cubic-bezier(0.2, 0, 0, 1)",
+        "exit": "cubic-bezier(0.4, 0, 1, 1)"
+      },
+      "reducedMotion": "crossfade-only"
+    },
+    "z": {
+      "base": 0,
+      "raised": 10,
+      "sticky": 20,
+      "overlay": 40,
+      "modal": 50,
+      "toast": 60,
+      "tooltip": 70
+    },
+    "breakpoint": {
+      "sm": "640px",
+      "md": "900px",
+      "lg": "1200px"
+    },
+    "container": {
+      "content": "1120px",
+      "text": "64ch"
+    }
+  },
+  "semantic": {
+    "color": {
+      "light": {
+        "surface": {
+          "canvas": "{primitive.color.neutral.ramp.50}",
+          "sunken": "{primitive.color.neutral.ramp.100}",
+          "raised": "{primitive.color.neutral.ramp.0}",
+          "inverse": "{primitive.color.neutral.ramp.950}"
+        },
+        "text": {
+          "strong": "{primitive.color.neutral.ramp.950}",
+          "body": "{primitive.color.neutral.ramp.800}",
+          "muted": "{primitive.color.neutral.ramp.700}",
+          "subtle": "{primitive.color.neutral.ramp.600}",
+          "disabled": "{primitive.color.neutral.ramp.400}",
+          "inverse": "{primitive.color.neutral.ramp.0}",
+          "link": "{primitive.color.brand.ramp.700}"
+        },
+        "border": {
+          "hairline": "{primitive.color.neutral.ramp.200}",
+          "control": "{primitive.color.neutral.ramp.500}",
+          "strong": "{primitive.color.neutral.ramp.900}"
+        },
+        "accent": {
+          "solid": "{primitive.color.brand.ramp.600}",
+          "solidHover": "{primitive.color.brand.ramp.700}",
+          "solidActive": "{primitive.color.brand.ramp.800}",
+          "onSolid": "{primitive.color.neutral.ramp.0}",
+          "tint": "{primitive.color.brand.ramp.100}",
+          "text": "{primitive.color.brand.ramp.800}"
+        },
+        "state": {
+          "danger": {
+            "solid": "{primitive.color.states.danger.ramp.700}",
+            "solidHover": "{primitive.color.states.danger.ramp.800}",
+            "onSolid": "{primitive.color.neutral.ramp.0}",
+            "tint": "{primitive.color.states.danger.ramp.100}",
+            "text": "{primitive.color.states.danger.ramp.800}",
+            "border": "{primitive.color.states.danger.ramp.300}"
+          },
+          "warning": {
+            "solid": "{primitive.color.states.warning.ramp.700}",
+            "solidHover": "{primitive.color.states.warning.ramp.800}",
+            "onSolid": "{primitive.color.neutral.ramp.0}",
+            "tint": "{primitive.color.states.warning.ramp.100}",
+            "text": "{primitive.color.states.warning.ramp.800}",
+            "border": "{primitive.color.states.warning.ramp.300}"
+          },
+          "success": {
+            "solid": "{primitive.color.states.success.ramp.700}",
+            "solidHover": "{primitive.color.states.success.ramp.800}",
+            "onSolid": "{primitive.color.neutral.ramp.0}",
+            "tint": "{primitive.color.states.success.ramp.100}",
+            "text": "{primitive.color.states.success.ramp.800}",
+            "border": "{primitive.color.states.success.ramp.300}"
+          },
+          "info": {
+            "solid": "{primitive.color.states.info.ramp.700}",
+            "solidHover": "{primitive.color.states.info.ramp.800}",
+            "onSolid": "{primitive.color.neutral.ramp.0}",
+            "tint": "{primitive.color.states.info.ramp.100}",
+            "text": "{primitive.color.states.info.ramp.800}",
+            "border": "{primitive.color.states.info.ramp.300}"
+          }
+        },
+        "overlay": {
+          "scrim": "rgba(32, 30, 26, 0.48)"
+        }
+      },
+      "dark": {
+        "surface": {
+          "canvas": "{primitive.color.neutral.ramp.950}",
+          "sunken": "{primitive.color.neutral.ramp.950}",
+          "raised": "{primitive.color.neutral.ramp.900}",
+          "inverse": "{primitive.color.neutral.ramp.0}"
+        },
+        "text": {
+          "strong": "{primitive.color.neutral.ramp.0}",
+          "body": "{primitive.color.neutral.ramp.100}",
+          "muted": "{primitive.color.neutral.ramp.300}",
+          "subtle": "{primitive.color.neutral.ramp.400}",
+          "disabled": "{primitive.color.neutral.ramp.600}",
+          "inverse": "{primitive.color.neutral.ramp.950}",
+          "link": "{primitive.color.brand.ramp.300}"
+        },
+        "border": {
+          "hairline": "{primitive.color.neutral.ramp.800}",
+          "control": "{primitive.color.neutral.ramp.500}",
+          "strong": "{primitive.color.neutral.ramp.300}"
+        },
+        "accent": {
+          "solid": "{primitive.color.brand.ramp.400}",
+          "solidHover": "{primitive.color.brand.ramp.300}",
+          "solidActive": "{primitive.color.brand.ramp.200}",
+          "onSolid": "{primitive.color.neutral.ramp.950}",
+          "tint": "{primitive.color.brand.ramp.950}",
+          "text": "{primitive.color.brand.ramp.300}"
+        },
+        "state": {
+          "danger": {
+            "solid": "{primitive.color.states.danger.ramp.400}",
+            "solidHover": "{primitive.color.states.danger.ramp.300}",
+            "onSolid": "{primitive.color.neutral.ramp.950}",
+            "tint": "{primitive.color.states.danger.ramp.950}",
+            "text": "{primitive.color.states.danger.ramp.300}",
+            "border": "{primitive.color.states.danger.ramp.700}"
+          },
+          "warning": {
+            "solid": "{primitive.color.states.warning.ramp.400}",
+            "solidHover": "{primitive.color.states.warning.ramp.300}",
+            "onSolid": "{primitive.color.neutral.ramp.950}",
+            "tint": "{primitive.color.states.warning.ramp.950}",
+            "text": "{primitive.color.states.warning.ramp.300}",
+            "border": "{primitive.color.states.warning.ramp.700}"
+          },
+          "success": {
+            "solid": "{primitive.color.states.success.ramp.400}",
+            "solidHover": "{primitive.color.states.success.ramp.300}",
+            "onSolid": "{primitive.color.neutral.ramp.950}",
+            "tint": "{primitive.color.states.success.ramp.950}",
+            "text": "{primitive.color.states.success.ramp.300}",
+            "border": "{primitive.color.states.success.ramp.700}"
+          },
+          "info": {
+            "solid": "{primitive.color.states.info.ramp.400}",
+            "solidHover": "{primitive.color.states.info.ramp.300}",
+            "onSolid": "{primitive.color.neutral.ramp.950}",
+            "tint": "{primitive.color.states.info.ramp.950}",
+            "text": "{primitive.color.states.info.ramp.300}",
+            "border": "{primitive.color.states.info.ramp.700}"
+          }
+        },
+        "overlay": {
+          "scrim": "rgba(0, 0, 0, 0.64)"
+        }
+      }
+    },
+    "focus": {
+      "width": "2px",
+      "offset": "2px",
+      "colorRole": "accent.solid",
+      "minContrast": 3
+    },
+    "contract": {
+      "textStrong": 12,
+      "textBody": 7,
+      "textMuted": 4.5,
+      "textSubtle": 4.5,
+      "onSolid": 4.5,
+      "controlBorder": 3,
+      "focusRing": 3
+    },
+    "contrastReport": {
+      "method": "WCAG 2.x relative luminance ratio; worst case over surface.canvas and surface.raised; computed from the hex values in primitive.color",
+      "light": {
+        "textStrong": 15.51,
+        "textBody": 8.6,
+        "textMuted": 6.26,
+        "textSubtle": 4.85,
+        "onSolid": 5.56,
+        "controlBorder": 3.07,
+        "focusRing": 5.27,
+        "stateTextOnTint": 7.57,
+        "accentTextOnTint": 8.31,
+        "linkOnCanvas": 6.77
+      },
+      "dark": {
+        "textStrong": 12.55,
+        "textBody": 10.83,
+        "textMuted": 7.43,
+        "textSubtle": 5.41,
+        "onSolid": 6.61,
+        "controlBorder": 3.88,
+        "focusRing": 5.07,
+        "stateTextOnTint": 9.63,
+        "accentTextOnTint": 9.55,
+        "linkOnCanvas": 9.29
+      }
+    }
+  },
+  "component": {
+    "button": {
+      "sizes": {
+        "sm": {
+          "height": "{primitive.size.control.sm}",
+          "paddingX": "12px",
+          "gap": "6px",
+          "icon": "{primitive.size.icon.sm}",
+          "radius": "{primitive.radius.ramp.sm}",
+          "text": "label-sm"
+        },
+        "md": {
+          "height": "{primitive.size.control.md}",
+          "paddingX": "16px",
+          "gap": "8px",
+          "icon": "{primitive.size.icon.md}",
+          "radius": "{primitive.radius.ramp.md}",
+          "text": "label-md"
+        },
+        "lg": {
+          "height": "{primitive.size.control.lg}",
+          "paddingX": "20px",
+          "gap": "8px",
+          "icon": "{primitive.size.icon.md}",
+          "radius": "{primitive.radius.ramp.md}",
+          "text": "label-md"
+        }
+      },
+      "notes": "Icon box has -2px margin on the icon side (optical alignment). Three sizes only; no xs."
+    },
+    "input": {
+      "sizes": {
+        "sm": {
+          "height": "{primitive.size.control.sm}",
+          "paddingX": "10px",
+          "gap": "6px",
+          "icon": "{primitive.size.icon.sm}",
+          "radius": "{primitive.radius.ramp.sm}",
+          "text": "body-sm"
+        },
+        "md": {
+          "height": "{primitive.size.control.md}",
+          "paddingX": "12px",
+          "gap": "8px",
+          "icon": "{primitive.size.icon.md}",
+          "radius": "{primitive.radius.ramp.md}",
+          "text": "body-md"
+        },
+        "lg": {
+          "height": "{primitive.size.control.lg}",
+          "paddingX": "14px",
+          "gap": "8px",
+          "icon": "{primitive.size.icon.md}",
+          "radius": "{primitive.radius.ramp.md}",
+          "text": "body-md"
+        }
+      },
+      "notes": "Heights match button at each size so a button sits flush beside an input."
+    },
+    "badge": {
+      "sizes": {
+        "sm": {
+          "height": "20px",
+          "paddingX": "6px",
+          "gap": "4px",
+          "icon": "12px",
+          "radius": "{primitive.radius.ramp.xs}",
+          "text": "label-sm"
+        },
+        "md": {
+          "height": "24px",
+          "paddingX": "8px",
+          "gap": "6px",
+          "icon": "{primitive.size.icon.sm}",
+          "radius": "{primitive.radius.ramp.sm}",
+          "text": "label-sm"
+        }
+      },
+      "notes": "Citation chip uses mono-sm and radius xs."
+    },
+    "overlay": {
+      "sizes": {
+        "menu": {
+          "height": "auto",
+          "paddingX": "4px",
+          "gap": "2px",
+          "icon": "{primitive.size.icon.md}",
+          "radius": "{primitive.radius.ramp.lg}",
+          "text": "body-sm"
+        },
+        "modal": {
+          "height": "auto",
+          "paddingX": "24px",
+          "gap": "16px",
+          "icon": "{primitive.size.icon.md}",
+          "radius": "{primitive.radius.ramp.xl}",
+          "text": "body-md"
+        }
+      },
+      "notes": "Menu item radius = menu radius - menu padding (10 - 4 = 6px, matches radius.md)."
+    }
+  },
+  "naming": {
+    "roleFormat": "{group}-{role}[-{modifier}]; groups: surface, text, border, accent, state-{family}; state tokens end in solid | solid-hover | on-solid | tint | text | border",
+    "sizeWords": [
+      "sm",
+      "md",
+      "lg"
+    ],
+    "variantAxes": [
+      "tone",
+      "emphasis",
+      "size"
+    ],
+    "cssVarPattern": "--{group}-{role}[-{modifier}] (e.g. --surface-canvas, --text-muted, --state-danger-solid)",
+    "forbidden": [
+      "raw hex or rgb() in components",
+      "numeric colour names outside primitives (gray-3)",
+      "font-size or line-height set outside primitive.type.scale",
+      "box-shadow or border-radius literals outside the named ramps",
+      "opacity values not in primitive.color.alphaSteps"
+    ]
+  }
+}

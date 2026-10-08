@@ -1,0 +1,159 @@
+{
+ "name": "Supabase Design System (supabase/supabase packages/ui + apps/design-system)",
+ "slug": "supabase",
+ "vendor": "Supabase, Inc.",
+ "url": "https://supabase.com/design-system",
+ "licence": "Apache-2.0 (github.com/supabase/supabase, pushed 2026-10-08). Supabase name, logo and brand-green marks are trademarks, not covered. Copy-paste ownership model (shadcn/ui based).",
+ "studiedOn": "2026-10-08",
+ "personality": [
+  "technical",
+  "calm",
+  "green-ink",
+  "developer-first",
+  "systematic",
+  "understated"
+ ],
+ "bestFor": [
+  "developer platforms, dashboards and data-grid heavy admin UI",
+  "docs and marketing for technical products",
+  "teams that want a themeable system driven by one hue knob",
+  "products that need both a compact app density and a roomier marketing density"
+ ],
+ "avoidFor": [
+  "brands needing an expressive display typeface or illustration-led identity",
+  "teams that cannot absorb two coexisting token generations (legacy HSL aliases plus new OKLCH) during migration",
+  "very large-type editorial layouts (scale tops at 46px marketing, 70px token)"
+ ],
+ "typography": {
+  "families": [
+   "Inter (UI and body; variable 100-900; --font-weight-normal is 450)",
+   "Manrope (--font-heading; marketing h1/h3, 200-800)",
+   "Source Code Pro (--font-mono; code, 81 text nodes on home)",
+   "legacy studio stack: Circular, custom-font, Helvetica Neue, Helvetica, Arial"
+  ],
+  "scale": [
+   {"role": "text-xs (caption, badge-adjacent)", "sizePx": 12, "lineHeightPx": 16, "weight": 450, "trackingEm": "0"},
+   {"role": "text-sm (UI small, DS body copy, buttons small/medium)", "sizePx": 13, "lineHeightPx": 18.57, "weight": 450, "trackingEm": "0"},
+   {"role": "text-base (DS site body, marketing UI)", "sizePx": 15, "lineHeightPx": 22.5, "weight": 450, "trackingEm": "0"},
+   {"role": "text-lg / marketing body (token ratio gives 24.89px; measured 24px)", "sizePx": 16, "lineHeightPx": 24, "weight": 450, "trackingEm": "0"},
+   {"role": "text-xl", "sizePx": 18, "lineHeightPx": 25.2, "weight": 600, "trackingEm": "0"},
+   {"role": "text-2xl (card/section heading, mobile h3)", "sizePx": 22, "lineHeightPx": 29.33, "weight": 600, "trackingEm": "-0.025em on DS h1 mobile (-0.55px)"},
+   {"role": "text-3xl (token only, not observed in use)", "sizePx": 28, "lineHeightPx": 33.6, "weight": "unknown", "trackingEm": "unknown"},
+   {"role": "text-4xl (DS h1, marketing h3 desktop, marketing h1 mobile)", "sizePx": 34, "lineHeightPx": 37.78, "weight": 600, "trackingEm": "-0.025em (-0.85px) on DS h1"},
+   {"role": "text-5xl (marketing h1 desktop, Manrope)", "sizePx": 46, "lineHeightPx": 46, "weight": 500, "trackingEm": "normal"},
+   {"role": "text-7xl", "sizePx": 70, "lineHeightPx": 70, "weight": "unknown", "trackingEm": "unknown"},
+   {"role": "marketing nav link", "sizePx": 14, "lineHeightPx": 19.25, "weight": 500, "trackingEm": "0"},
+   {"role": "button tiny/xs", "sizePx": 12, "lineHeightPx": 16, "weight": 500, "trackingEm": "0"},
+   {"role": "badge (uppercase)", "sizePx": 9, "lineHeightPx": "1 (leading-none)", "weight": 500, "trackingEm": "+0.07em"}
+  ],
+  "notes": "Line-heights are tokenised as ratios (calc(1.25 / .875), calc(1.5 / 1)...), producing the fractional px above. Base UI size is 13px (text-sm) in the dashboard, 15px on the DS site, 16px on marketing; the root --text-sm is .8125rem, so Tailwind's `text-sm` is 13px here, not 14. Body weight 450 is a custom variable-font step. Mobile: marketing h1 34/37.78 (from 46/46), h3 22/29.33 (from 34/37.78); inputs use text-base on mobile (md:text-sm) to avoid iOS zoom. Measured 2026-10-08 at 1440 and 390 on supabase.com, /design-system, /docs, /pricing; tokens read from packages/config/css/theme.css and apps/design-system root vars."
+ },
+ "color": {
+  "model": "oklch",
+  "neutrals": {
+   "inputs": "--surface (canvas lightness), --chroma, --surface-hue, --foreground-lightness, --contrast (0-1), --elevation-step; every other neutral is an OKLCH expression of these",
+   "dark": "surface L 0.19, chroma 0.005 (background uses chroma*0.5 = 0.0025), hue 157.5 (same as spot), foreground L 0.95 (chroma 0.00275), elevation-step 0.025, contrast 0.5, muted-foreground level 0.8, tertiary-foreground level 0.65; measured body bg oklch(0.19 0.0025 157.5) = #131413, text #edefee",
+   "light": "surface L 0.995 (soft gray, headroom to brighten toward white), chroma 0, surface-hue-offset 180 (complementary tint, 337.5deg), foreground L 0.10, elevation-step 0.024 (higher = lighter, same direction as dark), contrast 0.53, muted level 0.65, tertiary level 0.5; measured body bg oklch(0.995 0 337.5) = #fdfdfd, text #030303",
+   "elevation ratios": "card = background + step*1, popover = +step*1.5, secondary = +step*2, tertiary/overlay = +step*3 (ratios 1, 1.5, 2, 3 shared by all themes)",
+   "muted/accent/tertiary fills": "foreground at alpha computed to match the same lightness delta (muted = e1, accent = e2, tertiary = e3), so they composite on any plate",
+   "borders": "--border = foreground at 2% + 20%*contrast-border alpha; --input 3% + 38%; --border-control-hover 12% + 58%; --border-overlay 4% + 34%; --border-stronger 5% + 45% (contrast-border = ((0.05 + 0.95*contrast)^2))",
+   "field fills": "--field = black at alpha 0.015 light / 0.12 dark (sunk text entry); --control-raised = white at muted-alpha*0.65 (raised chooser)",
+   "legacy scales": "Radix colors v0.1.9 as --colors-{name}-{light|dark}-{100..1200} and alpha twins in HSL channels (gray, slate plus tomato..gold etc.); surface-75/100/200/300 aliases remap onto card/muted/secondary"
+  },
+  "accents": {
+   "primary hue": "--hue 157.5 (green); --primary-hue drives everything accent-coloured",
+   "primary (ink)": "dark oklch(0.76 0.15 157.5) ~ #4acd8b; light oklch(0.525 0.12 157.5) ~ #0e7e4e; hover shifts lightness only (+0.04 * sign of tone-span)",
+   "primary-solid (button plate)": "dark oklch(0.43627 0.11 157.5) ~ #006338 with foreground oklch(0.95 0.00275 h); light = primary",
+   "primary-bright (rings, selected chrome)": "oklch(from primary max(l,0.7) max(c,0.15) h); ring = primary-bright at 55% alpha",
+   "brand-default (fixed identity green)": "hsl(153.1 60.2% 52.7%) dark, hsl(152.9 60% 52.9%) light; measured logo/code bg rgb(63,207,142) = #3fcf8e; does not follow primary hue",
+   "secondary (violet)": "hsl(247.8 100% 70%) default; 200/400 literals per theme",
+   "legacy stepped scales": "brand/warning/destructive/secondary 200,300,400,500,default,600 as per-theme literals (e.g. dark brand-600 hsl(154.9 59.5% 70%), light brand-600 hsl(156.5 86.5% 26.1%))"
+  },
+  "semantic": {
+   "warning": "oklch(L 0.14 hue) hue clamp(65, 75+pull, 95); L 0.80 dark / 0.55 light (light hue 58)",
+   "destructive": "hue clamp(12, 25+pull, 42); L 0.55 dark / 0.52 light",
+   "info": "violet hue clamp(272, 288+pull, 302); L 0.70 dark / 0.54 light",
+   "shared chroma": "--expressive-chroma 0.14 constant, deliberately not tied to the neutral chroma knob so status stays legible when brand is dialled to grayscale",
+   "hue pull": "--status-hue-pull 0.15 toward the brand hue, clamped to keep warning amber, destructive red, info violet",
+   "on-fill foreground": "oklch(from fill clamp(0.12, (0.62 - l)*100, 0.99) c*0.08 h): hard flip at L 0.62",
+   "border tints": "status colour at 30% alpha (--border-destructive, --border-warning, --border-info, --border-primary-bright)",
+   "approx hex": "dark warning #f2af48, destructive #b54a46, info #9b8ff0; light warning #ac5800, destructive #ab413e, info #6c5eba"
+  },
+  "darkMode": "Two real themes plus system. Dark and light are separate literal sets feeding one OKLCH derivation (semantic.css). Light surface hue is offset 180deg from the spot hue; dark uses the same hue as spot. Dark separates bright ink (--primary, L .76) from a deeper button plate (--primary-solid, L .436) so buttons do not read lime; light collapses ink and plate into one green. Elevation direction is unified (higher = lighter) in both modes. Light foreground is L .10, dark L .95 (both below pure black/white). Marketing site follows prefers-color-scheme (measured: dark bg oklch(0.19 0.0025 157.5), light bg oklch(0.995 0 337.5)).",
+  "contrastNotes": "Computed from the stated OKLCH values (sRGB conversion, WCAG ratio) 2026-10-08: light fg/bg 20.28:1; light muted-foreground (L .52065) on bg 5.40:1; light primary ink on bg 5.02:1; light primary-foreground on primary plate 4.96:1; dark fg/bg 15.99:1; dark primary ink on bg 9.14:1; dark primary-solid-foreground on plate 6.40:1. Docs claim text-primary meets WCAG AA for normal text on app surfaces in both modes; computed values agree. Contrast knob 0-1 re-scales foreground, muted fg and border alpha globally (floor 0.9 for text, 0.05 for borders)."
+ },
+ "spacing": {
+  "base": "4px (Tailwind v4 --spacing .25rem); legacy tokens --spacing-scale 2px and --sizing-scale 1.5px",
+  "scale": [2, 4, 6, 8, 10, 12, 16, 20, 24, 32, 48, 64, 128],
+  "notes": "Legacy tokens: xs 4, sm 8, md 16, lg 32, xl 64, xxl 128; card padding var(--card-padding-x) 1rem, md 1.5rem; --spacing-content 21px; --width-listbox 320px; --breakpoint-xs 480px; --content-width-screen-xl 1128px; --container-site 128rem. Marketing container measured 1088px (x=176..1264) at 1440. Data grid: row height 28px (--datatable-rowheight), header icon 16px. Sizing scale 1.5px: xs 4, sm 6, md 9, lg 13.5, xl 20.25."
+ },
+ "radius": {
+  "scale": [2, 4, 6, 8, 12, 16],
+  "rule": "Tailwind-v4 theme: xs 2px, sm 4px, md 6px (default control radius), lg 8px, xl 12px, 2xl 16px; --radius-panel 6px; --radius-item = md - 2px (nested items concentric with their panel). Legacy --borderradius-xs/sm/lg/xl = 2/4/8/16, tableheader 4. Badges and chips are pills. Measured on marketing the radii are about 1.333x of this scale (5.33, 10.67, 21.33px; buttons 8.86-9.29px), cause inferred to be a marketing radius multiplier; DS site buttons measure 6px (md) and inputs 8px."
+ },
+ "depth": {
+  "shadows": [
+   "none by default: --button-shadow-opacity/-drop/-raised/-default are all empty at rest (measured box-shadow all transparent)",
+   "--drop-shadow-xs 0 1px 1px #0000000d (only declared shadow in the DS theme)",
+   "focus: ring-2 ring-ring (primary-bright at 55%) with ring-offset-2 ring-offset-background; inset variant outline 2px offset -2px for table rows",
+   "inset highlight on dark marketing chips: inset rgba(255,255,255,0.12) 0 0 0 1px"
+  ],
+  "borders": "Depth is built from alpha borders and lightness steps (see elevation ratios), not shadows. Border opacity scales with the contrast knob. Overlay border stronger than control border; status borders at 30% alpha.",
+  "blur": "unknown (backdrop blur not measured on DS; marketing header blur not extracted)"
+ },
+ "motion": {
+  "durationsMs": [150, 200, 400, 600],
+  "easings": [
+   "cubic-bezier(0.4, 0, 0.2, 1) --ease-in-out (default 150ms, inputs 200ms)",
+   "cubic-bezier(0.22, 1, 0.36, 1) (buttons, 200ms: background-color, border-color, color, shadow)",
+   "cubic-bezier(0, 0, 0.2, 1) --ease-out (transform/translate/scale/rotate 200ms)",
+   "cubic-bezier(0.16, 1, 0.3, 1) --ease-enter",
+   "cubic-bezier(0.87, 0, 0.13, 1) --ease-move",
+   "ease (opacity 400ms x2821 reveal on marketing, 600ms x60)"
+  ],
+  "notes": "--default-transition-duration .15s. Marketing page applies a 400ms opacity fade to about 2800 elements (scroll/entrance reveal). Focus indicators are deliberately excluded from transition lists so they appear instantly (focus-inset). prefers-reduced-motion behaviour not verified."
+ },
+ "density": {
+  "modes": ["compact studio/dashboard (13px text, 26-34px controls, 28px grid rows)", "DS docs (15px text)", "marketing comfortable (15-16px text, 38px CTAs)"],
+  "controlHeightsPx": {
+   "legacy button/input tiny": 26,
+   "legacy small": 34,
+   "legacy medium": 38,
+   "legacy large": 42,
+   "legacy xlarge": 50,
+   "shadcn-layer button default/icon": 40,
+   "shadcn-layer button sm": 36,
+   "shadcn-layer button lg": 44,
+   "shadcn-layer input": 40,
+   "dashboard small input": 28,
+   "DS site search": 32,
+   "marketing CTA": 38
+  }
+ },
+ "components": {
+  "count": 58,
+  "list": ["accordion", "alert-dialog", "alert", "aspect-ratio", "avatar", "badge", "breadcrumb", "button", "calendar", "card", "carousel", "chart", "checkbox", "collapsible", "combobox", "command", "commandmenu", "context-menu", "date-picker", "dialog", "drawer", "dropdown-menu", "expanding-textarea", "field", "form", "hover-card", "input-otp", "input", "keyboard-shortcut", "label", "menubar", "mermaid", "nav-menu", "navigation-menu", "pagination", "popover", "progress", "radio-group-card", "radio-group-stacked", "radio-group", "resizable", "scroll-area", "select", "separator", "sheet", "sidebar", "skeleton", "slider", "sonner", "success-check", "switch", "table", "tabs", "textarea", "toggle-group", "toggle", "tooltip", "tree-view", "UI patterns (10): charts, connect-interstitials, empty-states, forms, introduction, layout, markdown, modality, navigation, tables"],
+  "stateMatrixCompleteness": "Documented and coded: button variants default, destructive, outline, secondary, ghost, link x sizes default/sm/lg/icon (shadcn layer) plus legacy tiny..xlarge with loading, icon, iconRight; hover tokens for primary, primary-solid, warning, destructive via --*-hover (lightness delta 0.04); focus-visible ring recipe (focus-ring and focus-inset) shared by all controls; disabled = opacity .5, pointer-events none, with focusableWhenDisabled for discoverable unavailable actions; input has hover border, focus border, read-only text colour, aria-invalid bg/border/hover/focus states, disabled text; badge variants default/warning/success/destructive/secondary. Per-component tests (vitest) exist for accordion, alert-dialog, sheet, tabs, toggle(-group)."
+ },
+ "tokenArchitecture": "Layered, all CSS custom properties, Tailwind v4 @theme-mapped: (0) primitives: Radix scales --colors-{hue}-{light|dark}-{100..1200} (+alpha), spacing, sizing, radius, icon sizes in global.css (exported from Figma through packages/ui/internals/tokens); (1) inputs per theme: --hue/--primary-hue, --surface-hue-offset, --chroma, --surface, --foreground-lightness, --contrast, --elevation-step, --field-alpha, stepped literals (brand/warning/destructive/secondary 200-600); (2) semantic derivation in semantic.css via OKLCH relative-colour syntax: --background, --foreground, --card, --popover, --primary(-solid/-bright/-foreground/-hover), --secondary, --tertiary, --muted, --accent, --field, --control, --warning, --destructive, --info, --border, --input, --ring; (3) compat.css maps legacy names (--foreground-light, --background-surface-100, --border-strong, --sidebar-*) onto (2) so un-migrated code keeps resolving; (4) Tailwind utilities (bg-surface-100, text-foreground-light, border-strong, focus-ring). Naming is by role not by value; shorthands (text-muted = text-foreground-muted) avoid double typing.",
+ "distinctiveness": "One hue knob (--primary-hue) re-colours ink, button plate, focus ring and selected controls while the fixed brand green stays separate; every semantic colour is derived in OKLCH from a handful of inputs including a global contrast knob; status colours share one chroma and clamp their hues so they stay recognisable under any brand hue; ink-vs-plate split (bright green text, deep green button) in dark; weight-450 Inter plus Manrope headings; documentation lives in the same repo as the components, with copywriting, accessibility and icon rules.",
+ "weaknesses": [
+  "two token generations coexist (HSL channel scales and OKLCH semantics) bridged by a compat file; their own doc says the Brand scale is not uniform and brand-200 in dark themes is bad",
+  "two sizing systems (shadcn 36/40/44px vs legacy 26/34/38/42/50px) and two radius multipliers (DS 6/8px vs marketing about 8.9-10.7px)",
+  "no shadow language (button shadow tokens are empty), so floating layers rely on borders and lightness only; elevation reads weak in light mode",
+  "base text is 13px in the dashboard; small for general consumer audiences",
+  "documentation mixes Tailwind class names with tokens; the docs say studio, www and docs use different background utilities"
+ ],
+ "takeaways": [
+  "Drive all semantic colour from 5-7 inputs (hue, chroma, surface lightness, foreground lightness, contrast, elevation step, field alpha) using OKLCH relative colour so a theme is a short file",
+  "Split accent into ink (small readable text), plate (button fill), bright (focus ring, selected) and a fixed brand colour; each has its own contrast job",
+  "Define one shared contrast knob (0-1) that scales foreground, muted foreground and border alpha together",
+  "Give status colours one shared chroma and clamp their hues to perceptual categories so they survive any brand hue; flip on-colour text at L 0.62",
+  "Use elevation ratios (1, 1.5, 2, 3) times a signed step so 'higher = lighter' holds in both modes",
+  "Write down the focus ring as two recipes (offset ring for controls, inset outline for dense rows) and exclude outline from transitions so focus appears instantly",
+  "Document 'focusable when disabled' for unavailable actions that need an explanation",
+  "Ship a compat alias file when migrating tokens and delete entries as consumers move; mark it as temporary",
+  "Treat copywriting (verbs not nouns, sentence case, no exclamation marks, no marketing words) as part of the design system"
+ ],
+ "provenance": "mixed"
+}
