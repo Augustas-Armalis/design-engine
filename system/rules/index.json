@@ -1264,6 +1264,34 @@
   "origin": "founder"
  },
  {
+  "id": "founder.founder-taste#39",
+  "text": "[founder] Every hero loads in as one orchestrated Framer Motion timeline on Kaching's motion tokens (`ease.reveal [.26,.32,.14,1]` 1.2s travel + 0.9s fade, 70ms stagger, 6px blur on text only, stage lifts from 97%, controls 220ms `outQuint`): frame lines draw, then nav (it animates too), then headline word by word, subtitle, CTAs, then the product stage, then its contents in reading order, then decorative tiles and routes. Nothing is visible before its moment: connection dots appear only when their route lands, and only then do pulses and comets start. Hover states slide (shared `layoutId` pills in nav, segmented controls, sidebars). Reduced motion shows everything in place.",
+  "why": "Founder on Kestrel round 5: \"the blue dots that connect, why are they always visible, no animation, plus nav bar too? make everything smooth using framer motion\", \"make the entire load-in smoother with stagger... check how we have Kaching\".",
+  "applies": "every hero build.",
+  "check": "a frame at ~0.4s shows only the frame; no element with a looping animation is visible before its entrance; all delays come from one timeline object; tokens live in one `motion.ts`. Also check the nav and tiles are clickable (no transparent layer above them).",
+  "checkable": true,
+  "source": "founder, Kestrel round 5; knowledge/larpo-shipped/kaching-DESIGN-SYSTEM.md \"Motion defaults\"",
+  "file": "founder/founder-taste.md",
+  "section": "2. Rules",
+  "tags": [
+   "founder",
+   "taste",
+   "hero",
+   "nav",
+   "typography",
+   "copy",
+   "icons",
+   "logo",
+   "layout",
+   "product-card",
+   "background",
+   "buttons",
+   "quality-bar"
+  ],
+  "kind": "source",
+  "origin": "founder"
+ },
+ {
   "id": "dos-and-donts.dos-and-donts#1",
   "text": "[T13] Use as few font sizes as possible in a form; differentiate size only between sections (labels/placeholders at one small size) and actions (the button label larger). The good mock uses 12 for both label and placeholder and 32 for the button label; the bad mock mixes 16 (label), 12 (placeholder), 32 (button).",
   "why": "Every extra size is another thing to decode, so the form takes longer to process.",

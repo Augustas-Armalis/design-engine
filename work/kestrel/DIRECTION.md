@@ -56,3 +56,6 @@ Radii softened back (founder: "too little rounding... I liked it previously"): b
 
 ## Round 5
 Restored the round-2 rendered radii exactly (8 / 12 / 16 / 22); round 3 had swapped theme-aliased classes (rounded-md = 8 under the Kestrel theme) for default px and sharpened everything by ~4px. Verified element by element against a rebuild of commit 0d66ce2: all computed radii identical. Centring and equal-height controls kept.
+
+## Round 6 (motion)
+One Framer Motion timeline on Kaching tokens (src/motion.ts): rails draw, nav staggers in, headline word by word with 6px blur, subtitle and CTAs at 70ms, stage lifts from 97%, dashboard contents in reading order (sidebar 40ms stagger, KPIs count up on ease.link, chart revealed by one sweeping clip, dip marker and tooltip land as the line passes), tiles rise, routes draw, each endpoint dot lands with its route and only then pulses; comets start after. Hover: sliding layoutId pills in nav, date range (clickable) and sidebar. Fixed a transparent <main> layer that blocked nav and tile hovers. Check 0 fail 0 warn.

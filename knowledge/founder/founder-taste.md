@@ -171,6 +171,10 @@ Every rule here is a direct founder verdict on real output. It outranks books, w
   **Why** Founder on Kestrel round 2: "except the see it answer icon, please remove that".
   **Applies to** hero CTAs. **Check** the secondary CTA has no leading icon. **Source** founder, Kestrel round 2
 
+- **RULE** [founder] Every hero loads in as one orchestrated Framer Motion timeline on Kaching's motion tokens (`ease.reveal [.26,.32,.14,1]` 1.2s travel + 0.9s fade, 70ms stagger, 6px blur on text only, stage lifts from 97%, controls 220ms `outQuint`): frame lines draw, then nav (it animates too), then headline word by word, subtitle, CTAs, then the product stage, then its contents in reading order, then decorative tiles and routes. Nothing is visible before its moment: connection dots appear only when their route lands, and only then do pulses and comets start. Hover states slide (shared `layoutId` pills in nav, segmented controls, sidebars). Reduced motion shows everything in place.
+  **Why** Founder on Kestrel round 5: "the blue dots that connect, why are they always visible, no animation, plus nav bar too? make everything smooth using framer motion", "make the entire load-in smoother with stagger... check how we have Kaching".
+  **Applies to** every hero build. **Check** a frame at ~0.4s shows only the frame; no element with a looping animation is visible before its entrance; all delays come from one timeline object; tokens live in one `motion.ts`. Also check the nav and tiles are clickable (no transparent layer above them). **Source** founder, Kestrel round 5; knowledge/larpo-shipped/kaching-DESIGN-SYSTEM.md "Motion defaults"
+
 ## 5. Exceptions & judgement calls
 
 - The split layout (copy left, visual right) was rejected by Larpo when the right side was a decorative dashboard. With a real product world on the right (the payout globe) the founder accepted it.
