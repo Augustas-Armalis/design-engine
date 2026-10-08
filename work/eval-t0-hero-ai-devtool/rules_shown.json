@@ -1,0 +1,368 @@
+{
+ "name": "eval-t0-hero-ai-devtool",
+ "brief": "AI code review tool catches bugs before merge, engineering leads, start free trial",
+ "type": "hero",
+ "generated": "2026-10-08T18:14:53",
+ "rules": [
+  {
+   "id": "LDP-16",
+   "slot": "core",
+   "score": 31.98,
+   "tier": "T2"
+  },
+  {
+   "id": "dos-and-donts.dos-and-donts#67",
+   "slot": "core",
+   "score": 25.94,
+   "tier": "T2"
+  },
+  {
+   "id": "web.anti-ai-slop-process#7",
+   "slot": "core",
+   "score": 23.77,
+   "tier": "T2"
+  },
+  {
+   "id": "web.courses-and-curricula#62",
+   "slot": "core",
+   "score": 22.3,
+   "tier": "T2"
+  },
+  {
+   "id": "ui-pedia.12-typography#32",
+   "slot": "core",
+   "score": 20.62,
+   "tier": "T2"
+  },
+  {
+   "id": "web.implementation-craft#34",
+   "slot": "core",
+   "score": 19.42,
+   "tier": "T1"
+  },
+  {
+   "id": "web.courses-and-curricula#61",
+   "slot": "core",
+   "score": 19.16,
+   "tier": "T2"
+  },
+  {
+   "id": "web.motion-library-react#12",
+   "slot": "core",
+   "score": 18.7,
+   "tier": "T2"
+  },
+  {
+   "id": "LDP-20",
+   "slot": "core",
+   "score": 17.94,
+   "tier": "T2"
+  },
+  {
+   "id": "AH-TY-01",
+   "slot": "core",
+   "score": 17.68,
+   "tier": "T1"
+  },
+  {
+   "id": "dos-and-donts.dos-and-donts#4",
+   "slot": "core",
+   "score": 15.79,
+   "tier": "T2"
+  },
+  {
+   "id": "ui-pedia.13-buttons#21",
+   "slot": "core",
+   "score": 15.26,
+   "tier": "T2"
+  },
+  {
+   "id": "web.color-and-surfaces#15",
+   "slot": "core",
+   "score": 15.24,
+   "tier": "T2"
+  },
+  {
+   "id": "web.courses-and-curricula#9",
+   "slot": "core",
+   "score": 15.05,
+   "tier": "T2"
+  },
+  {
+   "id": "web.funnels-and-conversion#10",
+   "slot": "core",
+   "score": 14.67,
+   "tier": "T2"
+  },
+  {
+   "id": "web.anti-ai-slop-process#9",
+   "slot": "core",
+   "score": 12.83,
+   "tier": "T2"
+  },
+  {
+   "id": "LHS-01",
+   "slot": "founder",
+   "score": 24.47,
+   "tier": "L"
+  },
+  {
+   "id": "LHS-13",
+   "slot": "founder",
+   "score": 23.19,
+   "tier": "L"
+  },
+  {
+   "id": "LHS-20",
+   "slot": "founder",
+   "score": 22.7,
+   "tier": "L"
+  },
+  {
+   "id": "LHS-19",
+   "slot": "founder",
+   "score": 22.1,
+   "tier": "L"
+  },
+  {
+   "id": "LHS-04",
+   "slot": "founder",
+   "score": 21.02,
+   "tier": "L"
+  },
+  {
+   "id": "LHS-02",
+   "slot": "founder",
+   "score": 19.99,
+   "tier": "L"
+  },
+  {
+   "id": "LHS-06",
+   "slot": "founder",
+   "score": 19.72,
+   "tier": "L"
+  },
+  {
+   "id": "LHS-18",
+   "slot": "founder",
+   "score": 19.53,
+   "tier": "L"
+  },
+  {
+   "id": "LHS-15",
+   "slot": "founder",
+   "score": 19.01,
+   "tier": "L"
+  },
+  {
+   "id": "LHS-10",
+   "slot": "founder",
+   "score": 18.22,
+   "tier": "L"
+  },
+  {
+   "id": "web.anti-ai-slop#3",
+   "slot": "color",
+   "score": 31.83,
+   "tier": "T2"
+  },
+  {
+   "id": "AH-CO-09",
+   "slot": "color",
+   "score": 30.03,
+   "tier": "T1"
+  },
+  {
+   "id": "AH-CO-24",
+   "slot": "color",
+   "score": 26.94,
+   "tier": "T1"
+  },
+  {
+   "id": "web.color-and-surfaces#10",
+   "slot": "color",
+   "score": 25.14,
+   "tier": "T2"
+  },
+  {
+   "id": "AH-CO-02",
+   "slot": "color",
+   "score": 24.99,
+   "tier": "T1"
+  },
+  {
+   "id": "ui-pedia.13-buttons#1",
+   "slot": "cta",
+   "score": 25.33,
+   "tier": "T2"
+  },
+  {
+   "id": "ui-pedia.13-buttons#11",
+   "slot": "cta",
+   "score": 21.64,
+   "tier": "T2"
+  },
+  {
+   "id": "ui-pedia.13-buttons#45",
+   "slot": "cta",
+   "score": 21.44,
+   "tier": "T2"
+  },
+  {
+   "id": "ui-pedia.13-buttons#8",
+   "slot": "cta",
+   "score": 20.51,
+   "tier": "T2"
+  },
+  {
+   "id": "LHS-73",
+   "slot": "hero",
+   "score": 22.57,
+   "tier": "T2"
+  },
+  {
+   "id": "LHS-11",
+   "slot": "hero",
+   "score": 21.86,
+   "tier": "L"
+  },
+  {
+   "id": "web.landing-page-anatomy#2",
+   "slot": "hero",
+   "score": 21.59,
+   "tier": "T2"
+  },
+  {
+   "id": "LHS-07",
+   "slot": "hero",
+   "score": 21.23,
+   "tier": "L"
+  },
+  {
+   "id": "web.landing-page-anatomy#8",
+   "slot": "hero",
+   "score": 20.99,
+   "tier": "T2"
+  },
+  {
+   "id": "ui-pedia.21-screens#1",
+   "slot": "mobile",
+   "score": 21.26,
+   "tier": "T2"
+  },
+  {
+   "id": "web.implementation-craft#4",
+   "slot": "mobile",
+   "score": 20.99,
+   "tier": "T1"
+  },
+  {
+   "id": "ui-pedia.18-animation-and-microinteraction#28",
+   "slot": "motion",
+   "score": 30.33,
+   "tier": "T2"
+  },
+  {
+   "id": "web.motion-and-animation#21",
+   "slot": "motion",
+   "score": 26.22,
+   "tier": "T2"
+  },
+  {
+   "id": "web.motion-and-animation#14",
+   "slot": "motion",
+   "score": 25.6,
+   "tier": "T2"
+  },
+  {
+   "id": "web.motion-library-react#16",
+   "slot": "motion",
+   "score": 25.16,
+   "tier": "T2"
+  },
+  {
+   "id": "web.motion-and-animation#2",
+   "slot": "motion",
+   "score": 24.4,
+   "tier": "T2"
+  },
+  {
+   "id": "ui-pedia.17-navigation#3",
+   "slot": "navigation",
+   "score": 25.04,
+   "tier": "T2"
+  },
+  {
+   "id": "ui-pedia.17-navigation#19",
+   "slot": "navigation",
+   "score": 23.96,
+   "tier": "T2"
+  },
+  {
+   "id": "ui-pedia.07-proximity#3",
+   "slot": "navigation",
+   "score": 20.9,
+   "tier": "T2"
+  },
+  {
+   "id": "LDP-02",
+   "slot": "product",
+   "score": 27.81,
+   "tier": "T2"
+  },
+  {
+   "id": "ui-pedia.06-whitespace#10",
+   "slot": "spacing",
+   "score": 26.51,
+   "tier": "T2"
+  },
+  {
+   "id": "ui-pedia.07-proximity#8",
+   "slot": "spacing",
+   "score": 26.36,
+   "tier": "T2"
+  },
+  {
+   "id": "ui-pedia.07-proximity#1",
+   "slot": "spacing",
+   "score": 23.05,
+   "tier": "T2"
+  },
+  {
+   "id": "ui-pedia.07-proximity#2",
+   "slot": "spacing",
+   "score": 21.62,
+   "tier": "T2"
+  },
+  {
+   "id": "ui-pedia.12-typography#15",
+   "slot": "typography",
+   "score": 48.69,
+   "tier": "T2"
+  },
+  {
+   "id": "ui-pedia.12-typography#13",
+   "slot": "typography",
+   "score": 47.6,
+   "tier": "T2"
+  },
+  {
+   "id": "ui-pedia.12-typography#17",
+   "slot": "typography",
+   "score": 46.95,
+   "tier": "T2"
+  },
+  {
+   "id": "ui-pedia.12-typography#37",
+   "slot": "typography",
+   "score": 45.57,
+   "tier": "T2"
+  },
+  {
+   "id": "ui-pedia.12-typography#8",
+   "slot": "typography",
+   "score": 41.45,
+   "tier": "T2"
+  }
+ ]
+}

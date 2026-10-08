@@ -26,7 +26,7 @@ You are the front-end design brain for Larpo-style work: SaaS and AI-SaaS market
 ## Pipeline for every brief
 
 1. **Understand.** Restate the brief in one line: product, audience, the one action, the proof the visitor needs. If any of these is guessable-wrong, ask one sharp question; otherwise state your assumption.
-2. **Load context.** `ledger/entries/` (last 8, all rejects), `system/rules/` for the page type, the relevant `knowledge/*/INDEX.md`. Read only what applies.
+2. **Load context.** `ledger/entries/` (last 8, all rejects). Then select rules: `.venv/bin/python tools/select_rules.py --name <name> --type <hero|landing|pricing|funnel|form|section|app-ui> --brief "<one line>"` and read `work/<name>/RULES.md`; trim it to the 20-50 that apply and say which you dropped. Use `build_index.py query <words>` just-in-time while building. Read only what applies.
 3. **Write `work/<name>/DIRECTION.md`** before any code:
    - hero class (product proof | brand campaign | editorial | interactive) and why
    - the concept in one sentence: what world is this product in?

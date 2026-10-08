@@ -1,6 +1,6 @@
 import json
 P=json.load(open('palettes_out.json')); DV=json.load(open('dv_out.json')); SPEC=json.load(open('pals.json'))
-OUT='/Users/augustas/dev/design-engine/knowledge/web/'
+OUT='knowledge/web/'
 import os; os.makedirs(OUT,exist_ok=True)
 # JSON
 json.dump({"schema":"design-engine/palette@1","contrast_gates":{"ink-1":"WCAG>=12 target (verified >=14)","ink-2":"WCAG>=7 and |APCA Lc|>=75","ink-3":"WCAG>=4.5 and |Lc|>=60","accent-text / state fg / accent2-text":"WCAG>=4.5 and |Lc|>=60 on page, card, sunken(where listed) and own soft bg","accent-on on accent":"WCAG>=4.5 and |Lc|>=60 (signal-orange: |Lc|>=50, large/bold labels only)","border-strong / ring":"WCAG>=3 and |Lc|>=30 on page and card"},

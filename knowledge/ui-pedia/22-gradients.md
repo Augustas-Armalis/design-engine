@@ -146,7 +146,7 @@ Figure colour observations (approximate, from the images, not stated in text):
 - p.548: dashboard and app tiles with gradient accents (UI usage in context).
 - p.552: colour wheel and subtractive-mix icon (colour theory reference).
 
-Copied to /Users/augustas/dev/design-engine/examples/ui-pedia/gradients/.
+Copied to examples/ui-pedia/gradients/.
 
 ## 7. Open questions
 

@@ -197,7 +197,7 @@ Other fixed items: 6 tips for stunning shadows (p.571-574); 2 blur types for UI 
 - p.573: shadow as style vs as layer, and tinted shadow values.
 - p.574: material gradient spec and neumorphic light/dark pair.
 
-Copied to /Users/augustas/dev/design-engine/examples/ui-pedia/shadows-and-blurs/.
+Copied to examples/ui-pedia/shadows-and-blurs/.
 
 ## 7. Open questions
 

@@ -97,7 +97,7 @@ The book's multiplication gives 25.88, but 16 x 1.618 = 25.888 (would round to 2
 - p.111: sidebar = narrow golden rectangle subdivided; main content = square.
 - p.112: four-step layout construction ending in a labelled wireframe (Logo / Global Navigation / Local Navigation / Main Content Area).
 
-Copied to /Users/augustas/dev/design-engine/examples/ui-pedia/proportion/.
+Copied to examples/ui-pedia/proportion/.
 
 ## 7. Open questions
 

@@ -153,5 +153,5 @@ Sequential recipe: one hue (`accent_hue` or neutral hue), L from 0.96 to 0.35 in
 - `signal-orange` and `chalk-chartreuse` intentionally sit at the lower end of APCA for the label on fill; see `color-and-surfaces.md` section 5.
 - Weak spots to review by eye: `mono-ultramarine` dark accent (white label at WCAG 4.51, Lc 74, just above the gate), warning/ochre colours on `-soft` backgrounds in dark mode, and whether `chalk-chartreuse` light needs a visible boundary on `surface-page` (accent fill is 1.2:1 against it).
 '''
-open('/Users/augustas/dev/design-engine/knowledge/web/palette-recipes.md','w').write(head+mins+head2+tables+'\n'+tail)
+open('knowledge/web/palette-recipes.md','w').write(head+mins+head2+tables+'\n'+tail)
 print('ok')

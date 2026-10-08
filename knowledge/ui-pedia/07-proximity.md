@@ -129,7 +129,7 @@ The chapter has no pixel values, line-heights or ratios. Only counts that matter
 - p.138: Hulu TV instruction hints far away over a photo.
 - p.139: Transport for London desktop vs mobile stacking.
 
-Copied to /Users/augustas/dev/design-engine/examples/ui-pedia/proximity/.
+Copied to examples/ui-pedia/proximity/.
 
 ## 7. Open questions
 

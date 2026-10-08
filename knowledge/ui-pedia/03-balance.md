@@ -146,7 +146,7 @@ The chapter contains no numeric thresholds (no px, ratios or percentages). Value
 
 ## 6. Figures worth keeping
 
-Copied to `/Users/augustas/dev/design-engine/examples/ui-pedia/balance/`:
+Copied to `examples/ui-pedia/balance/`:
 - p.71: unbalanced vs balanced shape rows (square, circle, triangle, diamond) between red dashed guides. Unbalanced row: all four shapes have the same nominal height (122-ish px in the page render), so the diamond and triangle look smaller/lighter than the square. Balanced row: circle, triangle and diamond are drawn larger than the square (overshooting the guides, diamond largest) so all four carry equal visual weight. This is the book's only picture of 'equal perceived weight needs unequal geometry' (interpretation read from the image; the page text only defines balance).
 - p.73: size lever, large vs small pink rounded squares.
 - p.74: color lever, hot pink vs lime-yellow squares on a pale ground.

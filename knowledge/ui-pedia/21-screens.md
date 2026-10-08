@@ -135,7 +135,7 @@ Thumb-reach colour key (p.533): purple-blue = requires both hands; light blue = 
 - p.533: one-handed thumb reach zones, left and right hand, with colour legend.
 - p.534: bottom-tab-bar phone figure and tablet reach (one-handed vs two-handed crescents).
 
-Copied to /Users/augustas/dev/design-engine/examples/ui-pedia/screens/.
+Copied to examples/ui-pedia/screens/.
 
 ## 7. Open questions
 

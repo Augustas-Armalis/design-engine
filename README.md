@@ -19,6 +19,8 @@ It is not a model. It is the layers around one that stop it from guessing:
 
 brief -> direction (must diverge from recent work) -> assemble from system + knowledge -> render -> measure (type, spacing, contrast, overflow, similarity) -> critique against references -> deliver -> ledger.
 
+Location: `~/Documents/Larpo front-end engine` (alias `~/dev/design-engine`, a symlink without spaces for shell commands).
+
 ## Start here
 
 - `docs/HOWTO.md`: how to use, update and test the engine.

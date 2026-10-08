@@ -194,7 +194,7 @@ Printed page = PDF page - 1. This chapter is mostly definitional and tool-orient
 
 ## 6. Figures worth keeping
 
-Copied to `/Users/augustas/dev/design-engine/examples/ui-pedia/layout-and-grids/`.
+Copied to `examples/ui-pedia/layout-and-grids/`.
 
 - p.215: four widths of one page with column overlays; column count and arrangement change per breakpoint (best single responsive figure).
 - p.217: pink column overlay on a simple landing page (nav, hero, image, bullets, footer banner): what "grid, real or imagined" looks like.

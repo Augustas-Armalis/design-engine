@@ -264,7 +264,7 @@ Pictographs/ideographs about 100,000 years ago; Chinese writing around 6000 B.C.
 
 ## 6. Figures worth keeping
 
-Copied to `/Users/augustas/dev/design-engine/examples/ui-pedia/icons/` (file name = PDF page).
+Copied to `examples/ui-pedia/icons/` (file name = PDF page).
 
 - p.178: glyph (solid) set vs coloured set, same 12 UI icons in two treatments (search, chat, mail/Gmail, card, play-arrow, add-file, bar chart, location, no-bell, apps grid, cup/trash, file).
 - p.179: duotone set (same 12 icons, two tones, low-contrast second tone).

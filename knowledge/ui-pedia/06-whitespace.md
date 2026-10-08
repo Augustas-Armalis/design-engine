@@ -123,7 +123,7 @@ The chapter gives no pixel values. The only numbers are:
 - p.122: macro (blue) and micro (pink) overlay on Twitter web.
 - p.123: three-column text comparison: none / passive / passive + active.
 
-Copied to /Users/augustas/dev/design-engine/examples/ui-pedia/whitespace/.
+Copied to examples/ui-pedia/whitespace/.
 
 ## 7. Open questions
 

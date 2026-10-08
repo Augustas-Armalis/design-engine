@@ -225,7 +225,7 @@ The chapter has no explicit good/bad pairs; the figures are paired comparisons t
 
 ## 6. Figures worth keeping
 
-All copied to `/Users/augustas/dev/design-engine/examples/ui-pedia/objects-and-shapes/`:
+All copied to `examples/ui-pedia/objects-and-shapes/`:
 - p.334: box model diagram (fill, border, inner margin = padding, outer margin = margin).
 - p.336: size W x H (120p x 80p) with measurement guides.
 - p.337: bounding box of a circle and a heart (80 x 80 each).

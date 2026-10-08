@@ -231,7 +231,7 @@ Colours seen in the book's mockups (approximate, from the images, not specified 
 
 ## 6. Figures worth keeping
 
-Copied to `/Users/augustas/dev/design-engine/examples/ui-pedia/forms/`:
+Copied to `examples/ui-pedia/forms/`:
 
 - p.393: Sign Up with 5 fields vs Create a New Account with 3 fields (cut contact number and company); arrow shows the reduction.
 - p.396: booking bar (Location, Arrival, Leave, Members + Book Now) in horizontal form docked under a hero, conversion context.

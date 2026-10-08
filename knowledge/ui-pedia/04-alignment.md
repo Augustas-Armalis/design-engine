@@ -174,7 +174,7 @@ No type sizes or spacing values are given in this chapter. Everything numeric is
 
 ## 6. Figures worth keeping
 
-Copied to `/Users/augustas/dev/design-engine/examples/ui-pedia/alignment/`:
+Copied to `examples/ui-pedia/alignment/`:
 - p.86: landing-page mock over a column-grid overlay (logo, nav, hero text left, image right, 3 cards, banner, 3-column footer) plus the Docs toolbar alignment icons.
 - p.88: same page with highlighted column bands: heading, buttons, cards, banner and footer columns all snapping to the same 3-4 columns.
 - p.89: three cards on shared top/mid/bottom guides.

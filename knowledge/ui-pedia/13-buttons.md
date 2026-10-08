@@ -236,7 +236,7 @@ The book gives no pixel values for radius or exact paddings; the radius figures 
 
 ## 6. Figures worth keeping
 
-Copied to /Users/augustas/dev/design-engine/examples/ui-pedia/buttons/:
+Copied to examples/ui-pedia/buttons/:
 - p.286: button anatomy (background, label, icon, border, four paddings, radius).
 - p.290: four states drawn (normal, hover darker, progressing, disabled pale).
 - p.292: nine button variants (icon+contained, contained, outlined, text, icon, FAB, toggle, multiselect, split).
