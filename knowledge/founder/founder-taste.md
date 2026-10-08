@@ -175,6 +175,10 @@ Every rule here is a direct founder verdict on real output. It outranks books, w
   **Why** Founder on Kestrel round 5: "the blue dots that connect, why are they always visible, no animation, plus nav bar too? make everything smooth using framer motion", "make the entire load-in smoother with stagger... check how we have Kaching".
   **Applies to** every hero build. **Check** a frame at ~0.4s shows only the frame; no element with a looping animation is visible before its entrance; all delays come from one timeline object; tokens live in one `motion.ts`. Also check the nav and tiles are clickable (no transparent layer above them). **Source** founder, Kestrel round 5; knowledge/larpo-shipped/kaching-DESIGN-SYSTEM.md "Motion defaults"
 
+- **RULE** [founder] Looping accents (pulse rings, pings, comets) must be invisible until their moment: start every looping keyframe array at opacity 0 (`opacity: [0, 0.4, 0]`, `times: [0, 0.05, 1]`) or wrap the loop in a group that enters at that moment. Framer Motion paints the first keyframe during the delay, so `opacity: [0.4, 0]` shows a static dot from page load. Order effects as cause then effect: the note lands, its connector draws, the target line lights up and the dot lands as the connector arrives, then the pulse starts.
+  **Why** Founder on Margin build 1: "the red bubble doesn't fade in, it just stays there when loading in, very distracting".
+  **Applies to** every looping animation. **Check** filmstrip at 300ms steps: no looping element visible before its entrance; grep `animate={{ .*opacity: \[0\.[1-9]` for loops starting visible. **Source** founder, Margin build 1
+
 ## 5. Exceptions & judgement calls
 
 - The split layout (copy left, visual right) was rejected by Larpo when the right side was a decorative dashboard. With a real product world on the right (the payout globe) the founder accepted it.

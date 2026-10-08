@@ -125,7 +125,7 @@ export default function Review({ start }: { start: number }) {
                   transition={{ delay: t(0.6 + i * 0.05), duration: 0.5, ease: ease.outQuint }}
                   className={`relative flex whitespace-pre ${l.kind === 'add' ? 'bg-[#eef8f1]' : l.kind === 'del' ? 'bg-[#fcf0ee]' : ''}`}>
                   {sev && <motion.span aria-hidden className="absolute inset-0" style={{ boxShadow: `inset 0 0 0 1.5px ${sev.stroke}`, background: `${sev.stroke}0d` }} initial={{ opacity: 0 }} animate={{ opacity: [0, 1, 0.75] }}
-                    transition={{ delay: NOTE_AT[l.note!] + 0.35, duration: 0.9, ease: ease.outQuint }} />}
+                    transition={{ delay: NOTE_AT[l.note!] + 0.9, duration: 0.9, ease: ease.outQuint }} />}
                   <span className={`relative w-1 shrink-0 ${l.kind === 'add' ? 'bg-green' : l.kind === 'del' ? 'bg-red' : ''}`} />
                   <span className="relative w-10 shrink-0 select-none pr-2 text-right text-[#706c65]">{l.n}</span>
                   <span className={`relative w-4 shrink-0 select-none ${l.kind === 'add' ? 'text-green-text' : l.kind === 'del' ? 'text-red-text' : 'text-transparent'}`}>{l.kind === 'add' ? '+' : l.kind === 'del' ? '−' : ' '}</span>
@@ -182,8 +182,8 @@ export default function Review({ start }: { start: number }) {
               initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ delay: NOTE_AT[i] + 0.9, duration: 0.5, ease: ease.outExpo }} />
             {!still && i === 0 && (
               <motion.circle cx={c.end[0]} cy={c.end[1]} r={6} fill={SEV[i].stroke} style={{ transformBox: 'fill-box', transformOrigin: 'center' }}
-                initial={{ scale: 0.6, opacity: 0 }} animate={{ scale: [0.6, 2.4], opacity: [0.4, 0] }}
-                transition={{ delay: NOTE_AT[i] + 1.1, duration: 2.2, ease: ease.outQuint, repeat: Infinity, repeatDelay: 0.8 }} />
+                initial={{ scale: 0.6, opacity: 0 }} animate={{ scale: [0.6, 0.6, 2.4], opacity: [0, 0.4, 0] }}
+                transition={{ delay: NOTE_AT[i] + 1.1, duration: 2.3, times: [0, 0.05, 1], ease: ease.outQuint, repeat: Infinity, repeatDelay: 0.8 }} />
             )}
           </g>
         ))}

@@ -25,7 +25,7 @@ Start a build: `node tools/new_build.mjs <name> --system <slug>` (copies `templa
 
 1. One `T` object holds every entrance time; every delay is derived from it.
 2. Order: frame lines, nav (logo, track, actions), headline words, subtitle, CTAs, stage, stage contents in reading order (sidebar, header, KPIs, chart, side panel), decorative tiles, routes, landing dots.
-3. Nothing is visible before its moment. Loops (pulses, comets, floats) start only after their element's entrance.
+3. Nothing is visible before its moment. Loops (pulses, comets, floats) start only after their element's entrance, and every looping keyframe array starts at opacity 0 (Framer Motion paints the first keyframe during the delay; Margin build 1 showed a static red dot from page load).
 4. Hovers slide (shared `layoutId`), presses scale to 0.98 in 220ms, no lift on primary buttons.
 5. `MotionConfig reducedMotion="user"` plus `useReducedMotion()` to drop loops.
 6. Nothing transparent sits above interactive elements: positioned headers get `z-40`; full-width text wrappers get `pointer-events-none` with `[&>*]:pointer-events-auto`. `check.mjs` fails `interaction.blocked-targets` otherwise.

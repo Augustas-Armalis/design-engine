@@ -99,8 +99,8 @@ export function Route({ d, end, at, order = 0, color = 'var(--accent,#335cff)', 
       )}
       <motion.g style={fillBox} initial={{ scale: 0, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} transition={{ delay: land - 0.08, duration: 0.6, ease: ease.outExpo }}>
         {!still && (
-          <motion.circle cx={end[0]} cy={end[1]} r={6} fill={color} style={fillBox} initial={{ scale: 0.6, opacity: 0 }} animate={{ scale: [0.6, 2.6], opacity: [0.5, 0] }}
-            transition={{ delay: land + 0.15, duration: 2.4, ease: ease.outQuint, repeat: Infinity, repeatDelay: 0.8 + order * 0.15 }} />
+          <motion.circle cx={end[0]} cy={end[1]} r={6} fill={color} style={fillBox} initial={{ scale: 0.6, opacity: 0 }} animate={{ scale: [0.6, 0.6, 2.6], opacity: [0, 0.5, 0] }}
+            transition={{ delay: land + 0.15, duration: 2.5, times: [0, 0.05, 1], ease: ease.outQuint, repeat: Infinity, repeatDelay: 0.8 + order * 0.15 }} />
         )}
         <circle cx={end[0]} cy={end[1]} r={3} fill="#fff" stroke={color} strokeWidth={1.5} />
       </motion.g>

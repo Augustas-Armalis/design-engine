@@ -200,8 +200,8 @@ export default function Dashboard({ start = 0.75 }: { start?: number }) {
                   initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: dipAt + 0.2, duration: 0.5 }} />
                 <g transform={`translate(${x(DIP)},${y(CUR[DIP])})`}>
                   {!still && (
-                    <motion.circle r={9} fill="#e5484d" initial={{ scale: 0.6, opacity: 0 }} animate={{ scale: [0.6, 2], opacity: [0.35, 0] }}
-                      transition={{ delay: dipAt + 0.5, duration: 2.2, repeat: Infinity, repeatDelay: 0.6, ease: ease.outQuint }} />
+                    <motion.circle r={9} fill="#e5484d" initial={{ scale: 0.6, opacity: 0 }} animate={{ scale: [0.6, 0.6, 2], opacity: [0, 0.35, 0] }}
+                      transition={{ delay: dipAt + 0.5, duration: 2.3, times: [0, 0.05, 1], repeat: Infinity, repeatDelay: 0.6, ease: ease.outQuint }} />
                   )}
                   <motion.circle r={4.5} fill="#fff" stroke="#e5484d" strokeWidth={2} initial={{ scale: 0 }} animate={{ scale: 1 }}
                     transition={{ delay: dipAt, duration: 0.6, ease: ease.outExpo }} />

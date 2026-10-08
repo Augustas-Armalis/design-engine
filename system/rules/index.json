@@ -1376,6 +1376,34 @@
   "origin": "founder"
  },
  {
+  "id": "founder.founder-taste#40",
+  "text": "[founder] Looping accents (pulse rings, pings, comets) must be invisible until their moment: start every looping keyframe array at opacity 0 (`opacity: [0, 0.4, 0]`, `times: [0, 0.05, 1]`) or wrap the loop in a group that enters at that moment. Framer Motion paints the first keyframe during the delay, so `opacity: [0.4, 0]` shows a static dot from page load. Order effects as cause then effect: the note lands, its connector draws, the target line lights up and the dot lands as the connector arrives, then the pulse starts.",
+  "why": "Founder on Margin build 1: \"the red bubble doesn't fade in, it just stays there when loading in, very distracting\".",
+  "applies": "every looping animation.",
+  "check": "filmstrip at 300ms steps: no looping element visible before its entrance; grep `animate={{ .*opacity: \\[0\\.[1-9]` for loops starting visible.",
+  "checkable": true,
+  "source": "founder, Margin build 1",
+  "file": "founder/founder-taste.md",
+  "section": "2. Rules",
+  "tags": [
+   "founder",
+   "taste",
+   "hero",
+   "nav",
+   "typography",
+   "copy",
+   "icons",
+   "logo",
+   "layout",
+   "product-card",
+   "background",
+   "buttons",
+   "quality-bar"
+  ],
+  "kind": "source",
+  "origin": "founder"
+ },
+ {
   "id": "dos-and-donts.dos-and-donts#1",
   "text": "[T13] Use as few font sizes as possible in a form; differentiate size only between sections (labels/placeholders at one small size) and actions (the button label larger). The good mock uses 12 for both label and placeholder and 32 for the button label; the bad mock mixes 16 (label), 12 (placeholder), 32 (button).",
   "why": "Every extra size is another thing to decode, so the form takes longer to process.",
