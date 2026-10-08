@@ -2,10 +2,10 @@
   "name": "flagship-tideline",
   "date": "2026-10-08",
   "verdict": "accept",
-  "why": "Founder 2026-10-08 round 3: globe right and down; divided nav spaced out; Title Case two-line headline; two-line subtitle; original simple payroll card preferred over richer one; wordmark bigger. Encoded in knowledge/founder/founder-taste.md.",
+  "why": "Founder 2026-10-08 round 4 asks, now applied: bigger globe dissolving at frame edges, cleaner travelling points (3 routes, chips below on leaders), nav polish, quiet card shadow, full-height rails, bold sans amount. Encoded as founder rules.",
   "summary": {
-    "pass": 17,
-    "warn": 4,
+    "pass": 19,
+    "warn": 2,
     "fail": 4
   },
   "fingerprint": {
@@ -27,14 +27,15 @@
     "radii": [
       10,
       12,
-      16,
+      15,
+      11,
       "pill",
       14,
       18,
       2
     ],
     "navHeight": 72,
-    "contentWidth": "1128",
+    "contentWidth": "840",
     "sectionPad": 20,
     "sectionCount": 1,
     "bodyPx": 18,

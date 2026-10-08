@@ -67,6 +67,30 @@ Every rule here is a direct founder verdict on real output. It outranks books, w
   **Why** Founder: "no mobile just desktop focus right now to get me an image".
   **Applies to** hero images, X posts. **Check** n/a. **Source** founder, Tideline round 1
 
+- **RULE** [founder] Floating cards use quiet depth: a 1px hairline ring plus a faint lift (about 0 8px 20px -12px at 12% ink). Never a large, blurry, high-opacity drop shadow.
+  **Why** Founder: "why so massive shadow and unprofessional stuff"; Deel/Rippling references use whisper-level shadows.
+  **Applies to** all cards, chips, popovers. **Check** box-shadow blur <= 24px and alpha <= 0.16 on cards. **Source** founder, Tideline round 4
+
+- **RULE** [founder] Side rails/dividers run the full height of the hero; never fade them out early. If artwork meets a rail, the rail stays on top and the artwork fades instead.
+  **Why** Founder: the right border "fading off too soon" looked broken.
+  **Applies to** marketing site. **Check** both rails span the full hero height. **Source** founder, Tideline round 4
+
+- **RULE** [founder] A large hero visual that touches the frame edge dissolves softly into the page (mask fade) instead of being hard-cropped mid-shape; make it big enough to feel intentional.
+  **Why** Founder: the globe needed to be "bigger or blurred out at sides where it touches".
+  **Applies to** hero visuals. **Check** visual: no hard crop line on the visual at the frame edge. **Source** founder, Tideline round 4
+
+- **RULE** [founder] Data callouts on a visual all follow one placement rule (same side of their point, short leader line), never cover their own line or another route, and are curated to the clearest three rather than five.
+  **Why** Founder: the travelling points "are a bit off and need to be placed better".
+  **Applies to** maps, charts, annotated visuals. **Check** visual: no callout overlaps any arc or another callout. **Source** founder, Tideline round 4
+
+- **RULE** [founder] Money amounts in hero product UI are bold sans (Geist semibold, tight tracking, tabular) with the decimals muted; mono is for meta (times, IDs), not headline figures.
+  **Why** Founder asked for the money card to be styled better; Deel's payroll card is the reference.
+  **Applies to** product proof. **Check** large currency figures use the sans family. **Source** founder, Tideline round 4
+
+- **RULE** [founder] Look at several strong real references for the same product category before redesigning a weak area (for payroll: Deel, Remote, Rippling in knowledge/references/payroll/).
+  **Why** Founder: "search for more examples or what would look better and cleaner".
+  **Applies to** every redesign round. **Check** DIRECTION.md cites the references opened. **Source** founder, Tideline round 4
+
 ## 5. Exceptions & judgement calls
 
 - The split layout (copy left, visual right) was rejected by Larpo when the right side was a decorative dashboard. With a real product world on the right (the payout globe) the founder accepted it.
