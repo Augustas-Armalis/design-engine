@@ -135,3 +135,14 @@ export function Rails({ xs = [120, 1320], hairline = 88 }: { xs?: number[]; hair
     </div>
   )
 }
+
+/** Scroll reveal (product-motion-patterns: ~0.7s, trigger when the block top reaches ~76% of the viewport, ~78ms stagger).
+ *  Starts at 0.01 opacity (LCP-safe). Use `i` to stagger siblings. */
+export function InView({ i = 0, y = 24, className, children }: { i?: number; y?: number; className?: string; children: ReactNode }) {
+  return (
+    <motion.div className={className} initial={{ opacity: 0.01, y }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '0px 0px -24% 0px' }}
+      transition={{ y: { delay: i * 0.078, duration: 0.9, ease: ease.reveal }, opacity: { delay: i * 0.078, duration: 0.6, ease: ease.outQuint } }}>
+      {children}
+    </motion.div>
+  )
+}

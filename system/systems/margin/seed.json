@@ -1,0 +1,13 @@
+{
+  "slug": "margin",
+  "name": "Margin",
+  "showcaseHeadline": "Code Review With Notes In The Margin",
+  "signature": "Warm paper-white canvas with faint ruled lines inside the rails, Instrument Sans at 560 with tight tracking, one signal green for approvals and the primary series, AI notes pinned to diff lines by drawn connectors.",
+  "personality": { "brandHue": 152, "brandChroma": 0.16, "neutralTemperature": "warm", "radiusPreset": "default", "depthStyle": "soft", "density": "default", "motionPersonality": "calm", "typeVoice": "Direct, technical, calm; talks like a senior reviewer." },
+  "fonts": { "display": "'Instrument Sans Variable', ui-sans-serif, system-ui, sans-serif", "body": "'Instrument Sans Variable', ui-sans-serif, system-ui, sans-serif", "mono": "'Geist Mono Variable', ui-monospace, monospace" },
+  "type": { "ratio": 1.25, "basePx": 16, "displayMaxPx": 72, "displayWeight": 560, "displayTracking": -0.04, "displayLeading": 1.04, "bodyLeading": 1.5 },
+  "bestFor": ["developer tools", "AI code review", "engineering workflow"],
+  "avoidFor": ["consumer lifestyle"],
+  "owned": ["Notes in the margin: AI comments pinned to code lines by drawn connectors", "Ruled-paper texture inside the rails only", "Green only for approve, the primary action and success"],
+  "never": ["dark hacker aesthetic for the marketing hero", "red except for real blocking issues"]
+}

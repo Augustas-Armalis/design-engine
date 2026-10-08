@@ -30,7 +30,8 @@ const axes = {
   'accent hue': (a, b) => (a.accentHues || []).some((h) => (b.accentHues || []).some((k) => Math.min(Math.abs(h - k), 360 - Math.abs(h - k)) <= 30)),
 };
 // Axes the founder rules mandate across all work (Kaching nav spec, Geist-class type) are shared on purpose: not sameness.
-const LOCKED = new Set(['nav height', 'headline font', 'body font']);
+// 'hero layout': founder rule (Vigil round 2) makes centred-copy-over-product the default SaaS hero, so sharing it is mandated, not sameness.
+const LOCKED = new Set(['nav height', 'headline font', 'body font', 'hero layout']);
 const collapsed = (a, b) => Object.entries(axes).filter(([k, f]) => !LOCKED.has(k) && f(a, b)).map(([k]) => k);
 
 if (cmd === 'add') {
