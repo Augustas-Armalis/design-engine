@@ -5,7 +5,7 @@ import { Globe } from './components/Globe'
 import { CITIES, HQ, project } from './components/geo'
 
 // Globe stage geometry (page px, desktop 1440x900).
-const STAGE = { left: 600, top: 150, w: 840, h: 750 }
+const STAGE = { left: 630, top: 150, w: 840, h: 750 }
 const G = { cx: 520, cy: 560, r: 470 }
 const pt = (lat: number, lon: number) => { const p = project(lat, lon); return { x: G.cx + G.r * p.x, y: G.cy - G.r * p.y } }
 const HQP = pt(HQ.lat, HQ.lon)
@@ -16,6 +16,7 @@ const PAYOUTS: Record<string, { amount: string; status: 'arrived' | 'flight'; ti
   nbo: { amount: 'KSh 1,240,000', status: 'flight', time: 'landing' },
 }
 
+const CHIP_SHIFT: Record<string, number> = { nbo: -64 } // keep chips inside the frame
 const LIFT: Record<string, number> = { nyc: 0.3, los: 0.16, nbo: 0.22 }
 function arc(a: { x: number; y: number }, b: { x: number; y: number }, k = 0.32) {
   const mx = (a.x + b.x) / 2, my = (a.y + b.y) / 2
@@ -47,14 +48,19 @@ export default function App() {
       </div>
       <div className="absolute z-[6]" style={{ left: STAGE.left, top: STAGE.top, width: STAGE.w, height: STAGE.h }}>
         <svg className="absolute inset-0 overflow-visible" width={STAGE.w} height={STAGE.h} aria-hidden="true">
+          <defs>
+            {CITIES.map((c) => { const p = pt(c.lat, c.lon); return (
+              <linearGradient key={c.id} id={`route-${c.id}`} gradientUnits="userSpaceOnUse" x1={HQP.x} y1={HQP.y} x2={p.x} y2={p.y}>
+                <stop offset="0" stopColor="#ff5b1f" stopOpacity="0.25" /><stop offset="0.55" stopColor="#ff5b1f" stopOpacity="0.75" /><stop offset="1" stopColor="#ff5b1f" />
+              </linearGradient>) })}
+          </defs>
           {CITIES.map((c, i) => {
             const d = arc(HQP, pt(c.lat, c.lon), LIFT[c.id])
             return (
               <g key={c.id}>
-                <path d={d} fill="none" stroke="#1c1b18" strokeOpacity={0.18} strokeWidth={1} />
-                <motion.path d={d} fill="none" stroke="#ff5b1f" strokeWidth={1.75} strokeLinecap="round"
-                  initial={reduce ? false : { pathLength: 0 }} animate={{ pathLength: 1 }} transition={{ delay: 0.9 + i * 0.18, duration: 1.1, ease: [0.65, 0, 0.35, 1] }} />
-                {!reduce && <circle r={3} fill="#ff5b1f"><animateMotion dur={`${2.6 + i * 0.35}s`} begin={`${2.2 + i * 0.2}s`} repeatCount="indefinite" path={d} keyPoints="0;1" keyTimes="0;1" calcMode="spline" keySplines="0.4 0 0.2 1" /></circle>}
+                <motion.path d={d} fill="none" stroke={`url(#route-${c.id})`} strokeWidth={1.6} strokeLinecap="round"
+                  initial={reduce ? false : { pathLength: 0 }} animate={{ pathLength: 1 }} transition={{ delay: 0.9 + i * 0.18, duration: 1.2, ease: [0.65, 0, 0.35, 1] }} />
+                {!reduce && <path d={d} pathLength={100} fill="none" stroke="#ff5b1f" strokeWidth={2.6} strokeLinecap="round" className="comet" style={{ animationDelay: `${2.1 + i * 0.55}s`, animationDuration: `${2.8 + i * 0.3}s` }} />}
               </g>
             )
           })}
@@ -73,7 +79,7 @@ export default function App() {
         {CITIES.map((c, i) => {
           const p = pt(c.lat, c.lon), o = PAYOUTS[c.id]
           return (
-            <motion.div key={c.id + 'chip'} {...fade(1.6 + i * 0.16)} className="absolute w-[172px] -translate-x-1/2 rounded-[14px] bg-white px-3 py-2.5 shadow-[var(--shadow-card)]" style={{ left: p.x, top: p.y + 18 }}>
+            <motion.div key={c.id + 'chip'} {...fade(1.6 + i * 0.16)} className="absolute w-[172px] -translate-x-1/2 rounded-[14px] bg-white px-3 py-2.5 shadow-[var(--shadow-card)]" style={{ left: p.x + (CHIP_SHIFT[c.id] ?? 0), top: p.y + 18 }}>
               <div className="flex items-center justify-between text-[12px] font-medium tracking-[-0.02em] text-muted">
                 <span>{c.name}</span>
                 {o.status === 'arrived'
@@ -103,9 +109,9 @@ export default function App() {
       </header>
 
       {/* copy column */}
-      <main className="relative z-10 mx-auto h-[841px] w-[1128px] pt-[56px]">
+      <main className="relative z-10 mx-auto h-[841px] w-[1128px] pt-[88px]">
         <motion.a {...fade(0)} href="#" className="inline-flex items-center gap-2 rounded-full bg-white/80 py-1 pr-3 pl-1 text-[13.5px] font-medium tracking-[-0.03em] text-ink no-underline shadow-[var(--shadow-ring)] backdrop-blur-[8px] transition-colors duration-150 hover:bg-white">
-          <span className="rounded-full bg-[#c2410c] px-2 py-0.5 text-[11.5px] font-semibold text-white">New</span>
+          <span className="rounded-full bg-[#ea580c] px-2 py-0.5 text-[11.5px] font-semibold text-white">New</span>
           Same-day payouts in 41 currencies
           <ArrowRight size={13} weight="bold" className="text-muted" />
         </motion.a>

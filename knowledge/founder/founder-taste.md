@@ -105,7 +105,7 @@ Every rule here is a direct founder verdict on real output. It outranks books, w
 
 - **RULE** [founder] The "New" announcement badge keeps white text; deepen the badge colour until white passes contrast instead of switching the text to black.
   **Why** Founder: "why randomly the text there is black when it should have been white".
-  **Applies to** badges, pills. **Check** badge text is white and >= 4.5:1. **Source** founder, Tideline round 5
+  **Applies to** badges, pills. **Check** badge text is white; colour bright, not burnt (Tideline uses #ea580c, ~3.6:1: the founder judged #c2410c 'a bit too dark', so brightness wins over AA on this decorative badge). **Source** founder, Tideline rounds 5-6
 
 - **RULE** [founder] The hero product card anchors to the bottom of the hero (bottom-left on the content edge), not floating mid-column under the buttons.
   **Why** Founder: "the ticket box should be on the bottom".
@@ -114,6 +114,14 @@ Every rule here is a direct founder verdict on real output. It outranks books, w
 - **RULE** [founder] One depth and shape language across every floating surface: shared shadow tokens (ring for pills/secondary buttons, card shadow for cards and chips), radius 18 for cards, 14 for chips and hero buttons, 12 for nav controls and dark labels.
   **Why** Founder: "match consistency everywhere".
   **Applies to** all. **Check** floating surfaces use the shared shadow variables. **Source** founder, Tideline round 5
+
+- **RULE** [founder] Data routes and connecting lines flow: a gradient stroke that fades in from the origin and a soft moving highlight (comet) along the line, rather than flat static strokes with a dot.
+  **Why** Founder asked for "nicer strokes flowing".
+  **Applies to** maps, flow diagrams, connection visuals. **Check** visual + motion: routes have a gradient and a looping highlight; reduced motion shows static gradients. **Source** founder, Tideline round 6
+
+- **RULE** [founder] Give the hero copy block air at the top: roughly 80-90px between the nav and the announcement chip at 1440x900.
+  **Why** Founder: the title "and everything should be a little bit more down".
+  **Applies to** landing page hero. **Check** chip top - nav bottom ~= 80-90px. **Source** founder, Tideline round 6
 
 ## 5. Exceptions & judgement calls
 
