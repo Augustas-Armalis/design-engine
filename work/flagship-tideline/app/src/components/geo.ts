@@ -6,7 +6,7 @@ export const CITIES: City[] = [
   { id: 'nyc', name: 'New York', lat: 40.71, lon: -74.0 },
   { id: 'los', name: 'Lagos', lat: 6.52, lon: 3.38 },
   { id: 'cai', name: 'Cairo', lat: 30.04, lon: 31.24 },
-  { id: 'blr', name: 'Bengaluru', lat: 12.97, lon: 77.59 },
+  { id: 'nbo', name: 'Nairobi', lat: -1.29, lon: 36.82 },
 ]
 const rad = (d: number) => (d * Math.PI) / 180
 export function project(lat: number, lon: number) {

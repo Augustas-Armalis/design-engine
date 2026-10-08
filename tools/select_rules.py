@@ -129,8 +129,11 @@ def main():
     # founder verdicts (L tier) are the cheapest proven value: include the best-matching ones, capped
     q_all = tok(" ".join(SLOTS[a.type])) + brief_terms
     founder = sorted(((bm.score(q_all, i), i) for i, r in enumerate(rules) if tier(r) == "L" and i not in picked), reverse=True)
+    for i, r in enumerate(rules):  # the founder's own taste file is always shown in full
+        if r['file'].startswith('founder/'):
+            picked[i] = ("founder", 100.0)
     for s, i in founder[:10]:
-        if s > 0:
+        if s > 0 and i not in picked:
             picked[i] = ("founder", s)
 
     order = {"core": 0, "founder": 1}
