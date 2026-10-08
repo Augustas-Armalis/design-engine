@@ -1,0 +1,51 @@
+{
+  "slug": "kestrel",
+  "name": "Kestrel",
+  "showcaseHeadline": "Ask Your Product Anything",
+  "signature": "AlignUI-clean product analytics: soft grey canvas, white surfaces on hairlines and layered soft shadows, Inter Display at 550 with tight tracking, one confident blue, the dashboard is the hero.",
+  "personality": {
+    "brandHue": 264,
+    "brandChroma": 0.21,
+    "neutralTemperature": "pure",
+    "radiusPreset": "default",
+    "depthStyle": "soft",
+    "density": "default",
+    "motionPersonality": "calm",
+    "typeVoice": "Plain, confident, specific; numbers over adjectives.",
+    "neutralHue": 0,
+    "neutralChroma": 0
+  },
+  "fonts": {
+    "display": "'Inter Variable', ui-sans-serif, system-ui, sans-serif",
+    "body": "'Inter Variable', ui-sans-serif, system-ui, sans-serif",
+    "mono": "'Geist Mono Variable', ui-monospace, monospace"
+  },
+  "type": {
+    "ratio": 1.25,
+    "basePx": 16,
+    "displayMaxPx": 72,
+    "displayWeight": 550,
+    "displayTracking": -0.045,
+    "displayLeading": 1.05,
+    "bodyLeading": 1.5
+  },
+  "bestFor": [
+    "product analytics",
+    "B2B SaaS dashboards",
+    "AI copilots for data"
+  ],
+  "avoidFor": [
+    "moody brand campaigns",
+    "editorial magazines"
+  ],
+  "owned": [
+    "The product dashboard is the hero visual, framed in a double-bezel window",
+    "Rulers and registration ticks frame the canvas, quiet grey",
+    "Blue only for the one action, active states and the primary series"
+  ],
+  "never": [
+    "dark moody canvases for the marketing hero",
+    "more than one effect layer",
+    "decorative charts that do not answer a question"
+  ]
+}

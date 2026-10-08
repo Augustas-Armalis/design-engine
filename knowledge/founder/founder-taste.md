@@ -127,6 +127,18 @@ Every rule here is a direct founder verdict on real output. It outranks books, w
   **Why** Founder on Vigil v1: "too alike the project we just did, explore better effects, buttons, styles, shaders, graphics... use the engine".
   **Applies to** every new brand. **Check** DIRECTION.md names the moves and recipes used, and at least nav, primary button and product card differ in construction from the previous accepted project. **Source** founder, Vigil round 1
 
+- **RULE** [founder] The default SaaS hero is centred and product-led: chip, a two-line headline, a one-line subtitle and the CTA centred at the top, then a full, rich product dashboard in a window frame filling the lower half of the fold and running off the bottom edge (AlignUI Pro, Commslayer). The dashboard is the visual.
+  **Why** Founder on Vigil v2 (dark mono split hero with a lens shader): "this looks ass... I need something clean centre layout and like SaaS with full dashboard visual, clean smooth and aesthetic with cool and clean visuals like Commslayer... the AlignUI aesthetic I love most".
+  **Applies to** SaaS and AI-SaaS landing heroes, unless the brief asks for something else. **Check** h1 centred; the dashboard frame is >= 1000px wide, starts in the top 65% of the fold and is cut by the bottom edge; the dashboard shows a believable workflow (sidebar, KPIs, chart, table or list, an AI panel). **Source** founder, Vigil round 2; knowledge/benchmarks/alignui-shots/pro-1440.png, commslayer-shots/home-1440.png
+
+- **RULE** [founder] The founder's favourite aesthetic is AlignUI: light, clean and smooth. Soft grey canvas, white surfaces, hairline strokes, soft layered shadows, Inter-class type at 500-550 weight with tight tracking, one confident accent, precise small UI. Effects (shaders, glows, beams, rulers) support the product and stay quiet; a dark, moody, conceptual or "techy poster" hero with an abstract effect as the main visual is a reject.
+  **Why** Founder rejected Vigil v2 (dark field, glass-lens shader, mono poster headline, 3D push button): "this looks ass", "clean smooth and aesthetic".
+  **Applies to** default visual direction for SaaS. **Check** light canvas by default; the largest visual element is product UI, not an effect; no more than one effect layer at low contrast. **Source** founder, Vigil round 2
+
+- **RULE** [founder] "Explore the engine" means fresh components and details inside the clean SaaS look (new nav construction, button grammar, frame, accents, icon set, motion), not a jump to an experimental art direction. Novelty lives in the details; the overall read stays clean, premium SaaS.
+  **Why** Vigil round 1 was "too alike"; Vigil round 2 overcorrected into an art-piece and was rejected as "ass".
+  **Applies to** every new brand. **Check** DIRECTION.md lists the component-level differences from the last accepted project and confirms the hero class is product proof. **Source** founder, Vigil rounds 1-2
+
 ## 5. Exceptions & judgement calls
 
 - The split layout (copy left, visual right) was rejected by Larpo when the right side was a decorative dashboard. With a real product world on the right (the payout globe) the founder accepted it.

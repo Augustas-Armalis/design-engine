@@ -1,0 +1,49 @@
+@import "tailwindcss";
+@import "@fontsource-variable/inter/opsz.css";
+@import "@fontsource-variable/geist-mono";
+@import "./kestrel-theme.css";
+/* Kestrel: bound to system/systems/kestrel. Brand layer (AlignUI-style ln- grammar): pure greys, one blue. */
+@theme {
+  --font-sans: "Inter Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Geist Mono Variable", ui-monospace, monospace;
+  --color-canvas: #f7f7f7;
+  --color-ink: #171717;
+  --color-sub: #5c5c5c;
+  --color-soft: #737373;
+  --color-line: #ebebeb;
+  --color-rail: #e4e4e4;
+  --color-weak: #f5f5f5;
+  --color-blue: #335cff;
+  --color-blue-tint: #ebf1ff;
+  --color-red: #e5484d;
+  --color-red-text: #c2262c;
+  --color-red-tint: #fff0f0;
+  --color-green-text: #18794e;
+  --color-green-tint: #e9f9ef;
+}
+:root {
+  --shadow-xs: 0 1px 2px 0 rgba(10, 13, 20, 0.04);
+  --shadow-ring: 0 0 0 1px rgba(23, 23, 23, 0.07), 0 1px 2px 0 rgba(10, 13, 20, 0.05);
+  --shadow-tile: 0 0 0 1px rgba(23, 23, 23, 0.06), 0 1px 2px rgba(10, 13, 20, 0.04), 0 6px 14px -6px rgba(23, 23, 23, 0.10);
+  --shadow-frame: 0 0 0 1px rgba(23, 23, 23, 0.06), 0 2px 4px rgba(10, 13, 20, 0.03), 0 24px 56px -20px rgba(23, 23, 23, 0.16);
+}
+body { background: var(--color-canvas); color: var(--color-ink); font-family: var(--font-sans); font-optical-sizing: auto; -webkit-font-smoothing: antialiased; font-feature-settings: "cv11", "ss01"; }
+:focus-visible { outline: 2px solid var(--color-blue); outline-offset: 2px; }
+.tnum { font-variant-numeric: tabular-nums; }
+
+/* Buttons: AlignUI "fancy" grammar. Ink: gradient sheen + inner top highlight + 1px ring; neutral: white on hairline. Hover changes fill only; press drops the highlight. */
+.btn-ink { background: linear-gradient(180deg, rgba(255,255,255,0.14) 0%, rgba(255,255,255,0) 100%), #171717; color: #fff; box-shadow: 0 0 0 1px #171717, inset 0 1px 0 rgba(255,255,255,0.18), 0 1px 2px rgba(10,13,20,0.2), 0 6px 12px -4px rgba(23,23,23,0.28); transition: background-color 180ms, box-shadow 180ms; }
+.btn-ink:hover { background-color: #2b2b2b; }
+.btn-ink:active { box-shadow: 0 0 0 1px #171717, inset 0 1px 2px rgba(0,0,0,0.4); }
+.btn-white { background: #fff; color: var(--color-ink); box-shadow: var(--shadow-ring); transition: background-color 180ms, box-shadow 180ms; }
+.btn-white:hover { background: var(--color-weak); box-shadow: 0 0 0 1px rgba(23,23,23,0.09); }
+.btn-blue { background: linear-gradient(180deg, rgba(255,255,255,0.16), rgba(255,255,255,0)), #335cff; color: #fff; box-shadow: 0 0 0 1px #2547d6, inset 0 1px 0 rgba(255,255,255,0.22), 0 1px 2px rgba(37,71,214,0.3); }
+
+/* flowing data routes (founder rule: gradient + comet) */
+.comet { filter: drop-shadow(0 0 3px rgba(51,92,255,0.8)); stroke-dasharray: 9 91; stroke-dashoffset: 100; opacity: 0; animation: comet 3.6s cubic-bezier(.45,0,.25,1) infinite both; }
+@keyframes comet { 0% { stroke-dashoffset: 100; opacity: 0 } 15% { opacity: 1 } 85% { opacity: 1 } 100% { stroke-dashoffset: 0; opacity: 0 } }
+.ping { transform-box: fill-box; transform-origin: center; animation: ping 2.4s cubic-bezier(.22,1,.36,1) infinite; }
+@keyframes ping { 0% { transform: scale(.6); opacity: .7 } 100% { transform: scale(2.6); opacity: 0 } }
+.bob { animation: bob 6s ease-in-out infinite; }
+@keyframes bob { 0%,100% { transform: translateY(0) } 50% { transform: translateY(-5px) } }
+@media (prefers-reduced-motion: reduce) { .comet, .ping, .bob { animation: none; } .comet { display: none; } }
