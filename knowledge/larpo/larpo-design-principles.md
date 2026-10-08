@@ -117,7 +117,7 @@ Provenance tags on every rule: **[founder]** = recorded as direct founder feedba
   **Applies to** all (process). **Check** project folder has brief + references + rejected directions. **Source** `05-learning-curriculum.md` "Ongoing Larpo practice"; `07-research-method-and-provenance.md`.
 
 - **RULE [LDP-24]** [team research] Install or adopt a skill/repo only after reading its full contents, scripts, hooks, dependencies, update mechanism, licence and overlap. Do not stack several taste skills; use one primary skill plus at most one or two supporting skills. No external repo is adopted merely because it says "anti-slop". Verify the current licence and asset-level licences before reuse; public visibility is not permission to copy.
-  **Why** Agent skills are executable instructions; stacked opinions conflict and produce overdesigned work; one candidate (`video-to-superprompt`) was removed after the installer marked it high risk.
+  **Why** Agent skills are executable instructions; stacked taste prompts conflict and produce overdesigned work; one candidate (`video-to-superprompt`) was removed after the installer marked it high risk.
   **Applies to** tooling. **Check** n/a (process). **Source** `inbox/design-intelligence-2026-08-28/06-installed-agent-skills.md` "Selection rule"; `07-research-method-and-provenance.md` "Copyright and originality"; `inbox/2026-09-01-hero-divergence-and-design-research.md`.
 
 ## 3. Numbers & scales

@@ -177,7 +177,7 @@ All rules here are **[team research]** (no founder feedback is recorded in this 
   **Why** Accessibility and maintainability.
   **Applies to** all. **Check** DOM audit of logo SVG. **Source** `04-logo-and-wordmark-system.md` "SVG and accessibility".
 
-- **RULE [LSV-56]** [team research] Never describe a concept name or mark as legally available or trademark-cleared; a web search is not a clearance opinion. For real brands search exact and similar names, alternative spellings/pronunciations, design codes, related goods and services, app stores, domains, company databases, common-law use, reverse image search as a screen; consult a trademark professional before adoption (USPTO guidance cited).
+- **RULE [LSV-56]** [team research] Never describe a concept name or mark as legally available or trademark-cleared; a web search is not a clearance review. For real brands search exact and similar names, alternative spellings/pronunciations, design codes, related goods and services, app stores, domains, company databases, common-law use, reverse image search as a screen; consult a trademark professional before adoption (USPTO guidance cited).
   **Why** Originality and trademark gate.
   **Applies to** hero concept stills, real brands. **Check** concept note states "not cleared". **Source** `04-logo-and-wordmark-system.md` "Originality and trademark gate".
 

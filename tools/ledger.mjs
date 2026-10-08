@@ -45,7 +45,7 @@ if (cmd === 'add') {
   console.log(`ledger: ${verdict} ${r.name} (${why || 'no reason given'})`);
 } else if (cmd === 'similar') {
   const r = load(target); const recent = +flag('recent', 8);
-  const prior = entries().filter((e) => e.name !== r.name).slice(-recent);
+  const prior = entries().filter((e) => e.name !== r.name && e.fingerprint).slice(-recent); // pattern-only verdicts have no fingerprint
   if (!prior.length) { console.log('ledger empty: nothing to compare against'); process.exit(0); }
   let worst = 0;
   for (const e of prior) {

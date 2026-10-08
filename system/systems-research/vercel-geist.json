@@ -1,0 +1,725 @@
+{
+ "name": "Vercel Geist (design system + Geist font family)",
+ "slug": "vercel-geist",
+ "vendor": "Vercel (font with Basement Studio, Andres Briganti)",
+ "url": "https://vercel.com/geist/introduction",
+ "licence": "Geist font: SIL OFL 1.1 (vercel/geist-font, npm geist 1.7.2). Design system docs/tokens: public documentation, no open-source licence declared; components (Vercel dashboard) are not published as a package. Study structure and values only.",
+ "studiedOn": "2026-10-08",
+ "personality": [
+  "high-contrast",
+  "monochrome",
+  "technical",
+  "precise",
+  "terse",
+  "developer-first"
+ ],
+ "bestFor": [
+  "developer tools, infra and AI dashboards",
+  "docs and marketing sites for technical products",
+  "dark-first, black-and-white brands with one signal colour",
+  "products with dense data tables, logs and code"
+ ],
+ "avoidFor": [
+  "warm, consumer or playful brands",
+  "products needing a rich multi-hue illustrative palette",
+  "teams needing an installable component package (Geist components are documented, not distributed)"
+ ],
+ "typography": {
+  "families": [
+   "Geist Sans (variable, 100-900 + italics; named weights Thin, UltraLight, Light, Regular, Medium, SemiBold, Bold, ExtraBold, Black, UltraBlack)",
+   "Geist Mono",
+   "Geist Pixel (display, five stylistic variants)",
+   "fallbacks via --font-geist-sans / --font-mono"
+  ],
+  "scale": [
+   {
+    "role": "text-heading-72",
+    "sizePx": 72,
+    "lineHeightPx": 72,
+    "weight": 600,
+    "trackingEm": "-0.06em (-4.32px)",
+    "family": "Geist Sans"
+   },
+   {
+    "role": "text-heading-64",
+    "sizePx": 64,
+    "lineHeightPx": 64,
+    "weight": 600,
+    "trackingEm": "-0.06em (-3.84px)",
+    "family": "Geist Sans"
+   },
+   {
+    "role": "text-heading-56",
+    "sizePx": 56,
+    "lineHeightPx": 56,
+    "weight": 600,
+    "trackingEm": "-0.06em (-3.36px)",
+    "family": "Geist Sans"
+   },
+   {
+    "role": "text-heading-48",
+    "sizePx": 48,
+    "lineHeightPx": 56,
+    "weight": 600,
+    "trackingEm": "-0.06em (-2.88px)",
+    "family": "Geist Sans"
+   },
+   {
+    "role": "text-heading-40",
+    "sizePx": 40,
+    "lineHeightPx": 48,
+    "weight": 600,
+    "trackingEm": "-0.06em (-2.4px)",
+    "family": "Geist Sans"
+   },
+   {
+    "role": "text-heading-32",
+    "sizePx": 32,
+    "lineHeightPx": 40,
+    "weight": 600,
+    "trackingEm": "-0.04em (-1.28px)",
+    "family": "Geist Sans"
+   },
+   {
+    "role": "text-heading-24",
+    "sizePx": 24,
+    "lineHeightPx": 32,
+    "weight": 600,
+    "trackingEm": "-0.04em (-.96px)",
+    "family": "Geist Sans"
+   },
+   {
+    "role": "text-heading-20",
+    "sizePx": 20,
+    "lineHeightPx": 26,
+    "weight": 600,
+    "trackingEm": "-0.02em (-.4px)",
+    "family": "Geist Sans"
+   },
+   {
+    "role": "text-heading-16",
+    "sizePx": 16,
+    "lineHeightPx": 24,
+    "weight": 600,
+    "trackingEm": "-0.02em (-.32px)",
+    "family": "Geist Sans"
+   },
+   {
+    "role": "text-heading-14",
+    "sizePx": 14,
+    "lineHeightPx": 20,
+    "weight": 600,
+    "trackingEm": "-0.02em (-.28px)",
+    "family": "Geist Sans"
+   },
+   {
+    "role": "text-copy-24",
+    "sizePx": 24,
+    "lineHeightPx": 36,
+    "weight": 400,
+    "trackingEm": "0",
+    "family": "Geist Sans"
+   },
+   {
+    "role": "text-copy-20",
+    "sizePx": 20,
+    "lineHeightPx": 36,
+    "weight": 400,
+    "trackingEm": "0",
+    "family": "Geist Sans"
+   },
+   {
+    "role": "text-copy-18",
+    "sizePx": 18,
+    "lineHeightPx": 28,
+    "weight": 400,
+    "trackingEm": "0",
+    "family": "Geist Sans"
+   },
+   {
+    "role": "text-copy-16",
+    "sizePx": 16,
+    "lineHeightPx": 24,
+    "weight": 400,
+    "trackingEm": "0",
+    "family": "Geist Sans"
+   },
+   {
+    "role": "text-copy-14",
+    "sizePx": 14,
+    "lineHeightPx": 20,
+    "weight": 400,
+    "trackingEm": "0",
+    "family": "Geist Sans"
+   },
+   {
+    "role": "text-copy-14-mono",
+    "sizePx": 14,
+    "lineHeightPx": 20,
+    "weight": 400,
+    "trackingEm": "0",
+    "family": "Geist Mono"
+   },
+   {
+    "role": "text-copy-13",
+    "sizePx": 13,
+    "lineHeightPx": 18,
+    "weight": 400,
+    "trackingEm": "0",
+    "family": "Geist Sans"
+   },
+   {
+    "role": "text-copy-13-mono",
+    "sizePx": 13,
+    "lineHeightPx": 18,
+    "weight": 400,
+    "trackingEm": "0",
+    "family": "Geist Mono"
+   },
+   {
+    "role": "text-label-20",
+    "sizePx": 20,
+    "lineHeightPx": 32,
+    "weight": 400,
+    "trackingEm": "0",
+    "family": "Geist Sans"
+   },
+   {
+    "role": "text-label-18",
+    "sizePx": 18,
+    "lineHeightPx": 20,
+    "weight": 400,
+    "trackingEm": "0",
+    "family": "Geist Sans"
+   },
+   {
+    "role": "text-label-16",
+    "sizePx": 16,
+    "lineHeightPx": 20,
+    "weight": 400,
+    "trackingEm": "0",
+    "family": "Geist Sans"
+   },
+   {
+    "role": "text-label-14",
+    "sizePx": 14,
+    "lineHeightPx": 20,
+    "weight": 400,
+    "trackingEm": "0",
+    "family": "Geist Sans"
+   },
+   {
+    "role": "text-label-14-mono",
+    "sizePx": 14,
+    "lineHeightPx": 20,
+    "weight": 400,
+    "trackingEm": "0",
+    "family": "Geist Mono"
+   },
+   {
+    "role": "text-label-13",
+    "sizePx": 13,
+    "lineHeightPx": 16,
+    "weight": 400,
+    "trackingEm": "0",
+    "family": "Geist Sans"
+   },
+   {
+    "role": "text-label-13-mono",
+    "sizePx": 13,
+    "lineHeightPx": 20,
+    "weight": 400,
+    "trackingEm": "0",
+    "family": "Geist Mono"
+   },
+   {
+    "role": "text-label-12",
+    "sizePx": 12,
+    "lineHeightPx": 16,
+    "weight": 400,
+    "trackingEm": "0",
+    "family": "Geist Sans"
+   },
+   {
+    "role": "text-label-12-mono",
+    "sizePx": 12,
+    "lineHeightPx": 16,
+    "weight": 400,
+    "trackingEm": "0",
+    "family": "Geist Mono"
+   },
+   {
+    "role": "text-button-16",
+    "sizePx": 16,
+    "lineHeightPx": 20,
+    "weight": 500,
+    "trackingEm": "0",
+    "family": "Geist Sans"
+   },
+   {
+    "role": "text-button-14",
+    "sizePx": 14,
+    "lineHeightPx": 20,
+    "weight": 500,
+    "trackingEm": "0",
+    "family": "Geist Sans"
+   },
+   {
+    "role": "text-button-12",
+    "sizePx": 12,
+    "lineHeightPx": 16,
+    "weight": 500,
+    "trackingEm": "0",
+    "family": "Geist Sans"
+   }
+  ],
+  "notes": "Consumed as Tailwind utility classes text-{heading|copy|label|button}-N that set size, line-height, letter-spacing and weight together (from Geist Core Figma). Headings are weight 600 with strongly negative tracking (-0.06em at 72px, -0.04em at 24-32px, -0.02em at 14-16px). A nested <strong> modifies weight: in headings it drops to 500 and colour to gray-900 ('Subtle'); in copy it goes to weight 550 and gray-1000 ('Strong'). Label 13 supports tabular numerals. Roles: Heading = page/section titles; Button = only inside button components (14 default, 16 largest, 12 only for tiny buttons inside inputs); Label = single-line with generous line-height for icon pairing (14 is the most common text style, used in menus); Copy = multi-line with higher line-height (14 is most common body; 13 for secondary/space-premium; 16 for modals; 18-24 marketing hero). Mono sizes are paired one step smaller than adjacent sans (Label 13 Mono pairs with Label 14). Source: https://vercel.com/geist/typography and site CSS."
+ },
+ "color": {
+  "model": "hex (sRGB) with lab()/display-p3 variants; scales are 10 steps (100-1000)",
+  "neutrals": {
+   "gray": {
+    "light": {
+     "100": "#f2f2f2",
+     "1000": "#171717",
+     "200": "#ebebeb",
+     "300": "#e6e6e6",
+     "400": "#eaeaea",
+     "500": "#c9c9c9",
+     "600": "#a8a8a8",
+     "700": "#8f8f8f",
+     "800": "#7d7d7d",
+     "900": "#4d4d4d"
+    },
+    "dark": {
+     "100": "#1a1a1a",
+     "1000": "#ededed",
+     "200": "#1f1f1f",
+     "300": "#292929",
+     "400": "#2e2e2e",
+     "500": "#454545",
+     "600": "#878787",
+     "700": "#8f8f8f",
+     "800": "#7d7d7d",
+     "900": "#a1a1a1"
+    }
+   },
+   "backgrounds": {
+    "light": {
+     "100": "#fff",
+     "200": "#fafafa"
+    },
+    "dark": {
+     "100": "#0a0a0a",
+     "200": "#000000"
+    }
+   },
+   "grayAlphaLight": {
+    "100": "#0000000d",
+    "200": "#00000015",
+    "300": "#0000001a",
+    "400": "#00000014",
+    "500": "#00000036",
+    "600": "#0000003d",
+    "700": "#00000070",
+    "800": "#00000082",
+    "900": "#000000b3",
+    "1000": "#000000e8"
+   },
+   "note": "Two page backgrounds: Background 1 (light #fff / dark #0a0a0a) default, Background 2 (light #fafafa / dark #000) used sparingly for subtle differentiation. Legacy tokens still present: --geist-foreground #000 / white, --geist-background #fff / #000, accents-1..8."
+  },
+  "accents": {
+   "blue": {
+    "light": {
+     "100": "#f0f7ff",
+     "1000": "#002453",
+     "200": "#eaf4ff",
+     "300": "#e0efff",
+     "400": "#cce7ff",
+     "500": "#97ccff",
+     "600": "#51aeff",
+     "700": "#0070f7",
+     "800": "#005edc",
+     "900": "#0064e2"
+    },
+    "dark": {
+     "100": "#0f1c2e",
+     "1000": "#ebf6ff",
+     "200": "#10233d",
+     "300": "#0f2f57",
+     "400": "#0d3868",
+     "500": "#0a4380",
+     "600": "#0090ff",
+     "700": "#0072f5",
+     "800": "#0062d1",
+     "900": "#52a8ff"
+    }
+   },
+   "red": {
+    "light": {
+     "100": "#ffeef0",
+     "1000": "#46000c",
+     "200": "#ffe9ea",
+     "300": "#ffe4e5",
+     "400": "#ffd8d7",
+     "500": "#ffb5b6",
+     "600": "#ff6a6e",
+     "700": "#fc0035",
+     "800": "#e70022",
+     "900": "#d60020"
+    },
+    "dark": {
+     "100": "#2a1314",
+     "1000": "#feecee",
+     "200": "#3c1618",
+     "300": "#561a1e",
+     "400": "#671e21",
+     "500": "#832126",
+     "600": "#e5484d",
+     "700": "#e5484d",
+     "800": "#d93036",
+     "900": "#ff6166"
+    }
+   },
+   "amber": {
+    "light": {
+     "100": "#fff6e1",
+     "1000": "#541c00",
+     "200": "#fff4d4",
+     "300": "#fff1c8",
+     "400": "#ffdd84",
+     "500": "#ffc85e",
+     "600": "#fa0",
+     "700": "#ffb200",
+     "800": "#f90",
+     "900": "#a64f00"
+    },
+    "dark": {
+     "100": "#291800",
+     "1000": "#fef3dc",
+     "200": "#331b00",
+     "300": "#4c2a00",
+     "400": "#573300",
+     "500": "#6b4105",
+     "600": "#e79d13",
+     "700": "#ffb224",
+     "800": "#ff990a",
+     "900": "#f2a20d"
+    }
+   },
+   "green": {
+    "light": {
+     "100": "#ecfdec",
+     "1000": "#00370d",
+     "200": "#e5fce7",
+     "300": "#d3fad1",
+     "400": "#b9f5bc",
+     "500": "#82eb8d",
+     "600": "#4ce15e",
+     "700": "#28a948",
+     "800": "#279141",
+     "900": "#107d32"
+    },
+    "dark": {
+     "100": "#0b2212",
+     "1000": "#e5fbea",
+     "200": "#0f2e18",
+     "300": "#12361b",
+     "400": "#0c451b",
+     "500": "#126426",
+     "600": "#1a9338",
+     "700": "#45a557",
+     "800": "#398e4a",
+     "900": "#62c073"
+    }
+   },
+   "teal": {
+    "light": {
+     "100": "#dffffb",
+     "1000": "#003d34",
+     "200": "#ddfef6",
+     "300": "#ccf9f1",
+     "400": "#b1f7ec",
+     "500": "#52f0db",
+     "600": "#00e2c4",
+     "700": "#00a694",
+     "800": "#008d7d",
+     "900": "#007a6e"
+    },
+    "dark": {
+     "100": "#04201b",
+     "1000": "#e0faf4",
+     "200": "#062822",
+     "300": "#083a33",
+     "400": "#053d35",
+     "500": "#085e53",
+     "600": "#0c9784",
+     "700": "#12a594",
+     "800": "#0d8c7d",
+     "900": "#0ac7b4"
+    }
+   },
+   "purple": {
+    "light": {
+     "100": "#f9f0ff",
+     "1000": "#2e004d",
+     "200": "#f9f1ff",
+     "300": "#f5e8ff",
+     "400": "#f1d9ff",
+     "500": "#dda9ff",
+     "600": "#c77dff",
+     "700": "#9f00f4",
+     "800": "#8400cd",
+     "900": "#7c00c9"
+    },
+    "dark": {
+     "100": "#231528",
+     "1000": "#f8edfc",
+     "200": "#2e1938",
+     "300": "#422154",
+     "400": "#4f2768",
+     "500": "#5f2e85",
+     "600": "#8e4ec6",
+     "700": "#8e4ec6",
+     "800": "#763da9",
+     "900": "#bf7af0"
+    }
+   },
+   "pink": {
+    "light": {
+     "100": "#ffeaf5",
+     "1000": "#460523",
+     "200": "#ffeaf2",
+     "300": "#ffe0eb",
+     "400": "#ffd5e1",
+     "500": "#fdb3cc",
+     "600": "#f97ea7",
+     "700": "#f22782",
+     "800": "#e4106e",
+     "900": "#c41562"
+    },
+    "dark": {
+     "100": "#28151d",
+     "1000": "#feecf4",
+     "200": "#3a1726",
+     "300": "#4f1c31",
+     "400": "#551b33",
+     "500": "#6c1e3e",
+     "600": "#b31957",
+     "700": "#ea3e83",
+     "800": "#df2670",
+     "900": "#f75f8f"
+    }
+   },
+   "note": "Dark hex values were converted from the published HSL (--ds-X-N-value) and may differ by 1 unit of rounding. Light values are published hex. Colour 700-800 are identical in both themes (the saturated signal steps)."
+  },
+  "semantic": {
+   "stepRoles": {
+    "100": "component background default",
+    "200": "component background hover",
+    "300": "component background active",
+    "400": "border default",
+    "500": "border hover",
+    "600": "border active",
+    "700": "high-contrast background",
+    "800": "high-contrast background hover",
+    "900": "secondary text and icons",
+    "1000": "primary text and icons"
+   },
+   "statusMapping": "error=red, warning=amber, success=green (legacy: --geist-success was blue #0070f3), info/link=blue-700; teal/purple/pink for tags and categories",
+   "focus": {
+    "--ds-focus-ring": "0 0 0 2px var(--ds-background-100), 0 0 0 4px var(--ds-focus-color)",
+    "--ds-focus-color": "blue-700 (light) / blue-900 (dark)",
+    "--ds-focus-ring-outline": "2px solid var(--ds-focus-color)"
+   },
+   "other": {
+    "--ds-contrast-fg": "#fff",
+    "--ds-overlay-backdrop-color": "gray-100 (light) / background-200 (dark)",
+    "--ds-overlay-backdrop-opacity": 0.8,
+    "--geist-link-color": "blue-700 light; foreground in dark"
+   }
+  },
+  "darkMode": "Same 10-step ramps flip meaning-preserving values: gray-100 #f2f2f2 -> #1a1a1a, gray-1000 #171717 -> #ededed. Backgrounds go #fff -> #0a0a0a and #fafafa -> #000. Signal colours (700, 800) are unchanged; 100-300 become deep desaturated tints; 900 lightens (e.g. blue-900 #0064e2 -> ~#52a8ff). Strokes use alpha in dark (--ds-shadow-border-base 0 0 0 1px #ffffff25 vs #00000014 light). Theme switcher component with system/light/dark.",
+  "contrastNotes": "System advertises 'a high contrast, accessible color system'. Text steps: 900 secondary, 1000 primary. Grid docs state custom borders can fall below the 3:1 minimum while default tokens are tuned. No published APCA/WCAG ratios per step in the pages fetched. Light gray-400 (#eaeaea) lies lighter than gray-300 (#e6e6e6) in the extracted CSS, probably a legacy/duplicate declaration: flag before using."
+ },
+ "spacing": {
+  "base": "4px (--geist-space)",
+  "scale": [
+   4,
+   8,
+   12,
+   16,
+   24,
+   32,
+   36,
+   40,
+   64,
+   96,
+   128,
+   192,
+   256
+  ],
+  "notes": "Tokens: --geist-space 4px; 2x 8; 3x 12; 4x 16; 6x 24; 8x 32; 10x 40; 16x 64; 24x 96; 32x 128; 48x 192; 64x 256. Named sizes: small 32, medium 36, large 40 (control heights). Gap 24, gap-half 12, gap-quarter 8, section gap 32. Page margin 24px; page width 1200px (legacy --geist-page-width) or 1400px (--ds-page-width). Form tokens: small 32 / medium 36 / large 40 height; form font 14px/20px (small line-height 14px), large 16px/24px."
+ },
+ "radius": {
+  "scale": [
+   {
+    "token": "--geist-radius / material-base,small,tooltip",
+    "px": 6
+   },
+   {
+    "token": "--geist-marketing-radius",
+    "px": 8
+   },
+   {
+    "token": "material-medium,large,menu,modal",
+    "px": 12
+   },
+   {
+    "token": "material-fullscreen",
+    "px": 16
+   },
+   {
+    "token": "--ds-popover-row-radius",
+    "px": 6
+   }
+  ],
+  "rule": "Radius is bound to elevation material, not chosen ad hoc: resting and small-raised surfaces and tooltips 6px; medium/large raised, menus and modals 12px; fullscreen 16px. Tooltip is the only floating element with a triangular stem. Buttons support shape rounded (pill) mainly for marketing."
+ },
+ "depth": {
+  "shadows": [
+   "--ds-shadow-border-base: 0 0 0 1px #00000014 (light) / #ffffff25 (dark)",
+   "--ds-shadow-border-small: border + 0px 2px 2px #0000000a",
+   "--ds-shadow-border-medium: border + 0px 2px 2px #0000000a, 0px 8px 8px -8px #0000000a",
+   "--ds-shadow-border-large: border + 0px 2px 2px #0000000a, 0px 8px 16px -4px #0000000a",
+   "--ds-shadow-tooltip: border + 0px 1px 1px #00000005, 0px 4px 8px #0000000a",
+   "--ds-shadow-menu: border + 0px 1px 1px #00000005, 0px 4px 8px -4px #0000000a, 0px 16px 24px -8px #0000000f",
+   "--ds-shadow-modal: border + 0px 1px 1px #00000005, 0px 8px 16px -4px #0000000a, 0px 24px 32px -8px #0000000f",
+   "--ds-shadow-fullscreen: modal stack at max",
+   "--ds-shadow-modal-elevated: 0px 0px 0px 1px #00000014, 0px 32px 72px -12px #0000000f, 0px 8px 32px -12px #00000014, 0px 8px 24px -12px #0000001f",
+   "t-shirt shadows xs/2xs/xl/2xl also defined; dark mode shadow-small 0px 1px 2px #00000029, medium uses #00000052"
+  ],
+  "borders": "Border is a 0 0 0 1px ring drawn with box-shadow (alpha black/white), plus a 1px background-200 'halo' ring (--ds-shadow-background-border) so surfaces separate cleanly on both backgrounds. Materials (base, small, medium, large, tooltip, menu, modal, fullscreen) bundle fill + stroke + shadow + radius into one class; do not stack two materials on one element.",
+  "blur": "Overlay backdrop is gray-100/background-200 at 0.8 opacity (not blur). Scroller/gradient fades used for overflow."
+ },
+ "motion": {
+  "durationsMs": [
+   200,
+   300
+  ],
+  "easings": [
+   "cubic-bezier(.175, .885, .32, 1.1) (--ds-motion-timing-swift, slight overshoot)"
+  ],
+  "notes": "Tokens: popover duration .2s swift; overlay (modal) duration .3s swift with scale .96 start. z-index bands as tokens: drawer 200, modal 300, toast 5000, menu 2001, tooltip 99999 (--ds-z-*). Loading Dots and Spinner components exist; other motion values unknown."
+ },
+ "density": {
+  "modes": [
+   "small / medium (default) / large control sizes"
+  ],
+  "controlHeightsPx": {
+   "small": 32,
+   "medium": 36,
+   "large": 40,
+   "button text": "button-12 inside input fields (tiny), button-14 default, button-16 largest",
+   "note": "Button heights beyond the --geist-form-* tokens not read; Button sizes in docs: tiny, small, medium (default), large; types: primary (default), secondary, tertiary, error, warning; shapes: square, rounded; svgOnly icon buttons; prefix/suffix; loading; ButtonLink; CustomButton; Split Button."
+  },
+  "notes": "Marketing vs product density differ via copy-18..24 and heading-40..72 vs label/copy 13-14."
+ },
+ "components": {
+  "count": 72,
+  "list": [
+   "Avatar",
+   "Badge",
+   "Banner",
+   "Book",
+   "Breadcrumbs",
+   "Browser",
+   "Button",
+   "Calendar",
+   "Checkbox",
+   "Choicebox",
+   "Clearable Input",
+   "Code",
+   "Code Block",
+   "Collapse",
+   "Combobox",
+   "Command Menu",
+   "Context Card",
+   "Context Menu",
+   "Copy Button",
+   "Description",
+   "Destructive Action Modal",
+   "Dots Menu",
+   "Drawer",
+   "Empty State",
+   "Entity",
+   "Error",
+   "Error Card",
+   "Feedback",
+   "Fieldset",
+   "File Tree",
+   "Gauge",
+   "Grid",
+   "Input",
+   "JSON View",
+   "Keyboard Input",
+   "Label",
+   "Load More Button",
+   "Loading Dots",
+   "Menu",
+   "MiddleTruncate",
+   "Modal",
+   "Multi Select",
+   "Note",
+   "Pagination",
+   "Phone",
+   "Pill",
+   "Progress",
+   "Project Banner",
+   "Radio",
+   "Relative Time Card",
+   "Scroller",
+   "Search Input",
+   "Select",
+   "Separator",
+   "Sheet",
+   "Show more",
+   "Skeleton",
+   "Slider",
+   "Snippet",
+   "Spinner",
+   "Split Button",
+   "Status Dot",
+   "Switch",
+   "Table",
+   "Tabs",
+   "Text With Copy Button",
+   "Textarea",
+   "Theme Switcher",
+   "Toast",
+   "Toggle",
+   "Tooltip",
+   "Video"
+  ],
+  "stateMatrixCompleteness": "Documented per component with live examples, 'Best Practices' (When to use / Behavior / Accessibility) per page. Button: sizes x types x shapes x loading x disabled variants (default, secondary, tertiary, error, warning). Icon-only requires svgOnly + aria-label (validator throws). Copy rules baked in (Title Case verb+noun, destructive pairs with toast). Hover/active states follow the 3-step component background/border pattern (colour 1/2/3, 4/5/6) so every component has the same state ladder. Dark mode checked per component."
+ },
+ "tokenArchitecture": "Two generations coexist. Legacy: --geist-* (space, radius, foreground/background, accents-N, success/error/warning). Current: --ds-* where colours are 10-step ramps (--ds-gray-100..1000, --ds-gray-alpha-*, --ds-{blue,red,amber,green,teal,purple,pink}-100..1000, --ds-background-100/200) each also published as H,S,L triplets (--ds-X-N-value) for compositing. Materials (--ds-shadow-*, .material-*) and motion (--ds-motion-*) and z-index (--ds-z-*) have their own tokens. Typography consumed through generated utility classes. Numeric 100-1000 ramp keyed to function (1-3 bg, 4-6 border, 7-8 solid, 9-10 text).",
+ "distinctiveness": "Black/white austerity with a visible grid (guide lines, crosses, dashed grid are a 'huge part of the new Vercel aesthetic'), hairline shadow-borders, tight-tracked semibold Geist headings, mono used as a first-class label voice, Title Case button copy. Elevation named by role, not number.",
+ "weaknesses": [
+  "Not distributed as a package; only documentation and tokens (components not open)",
+  "Signal-colour palette is narrow; little guidance for brand colour",
+  "Colour dark values only as HSL strings; docs pages are client-rendered (no raw token table)",
+  "Legacy and current tokens coexist with conflicting meanings (success=blue)",
+  "Weights 550 and negative px tracking tuned by hand per size, not formulaic",
+  "Button size heights not documented publicly"
+ ],
+ "takeaways": [
+  "Name elevation by role (base, small, medium, large, tooltip, menu, modal, fullscreen) and bundle fill + stroke + shadow + radius into one material so the choice is one decision",
+  "Use a 10-step ramp with fixed jobs: 1-3 component bg (default/hover/active), 4-6 border (default/hover/active), 7-8 solid bg, 9-10 text",
+  "Typography classes set size + line-height + tracking + weight atomically, split into four roles (heading, label, copy, button) with mono siblings; tracking scales with size (-0.02em to -0.06em)",
+  "Draw borders as 1px alpha ring shadows with a background halo, in both themes",
+  "Use a strong/subtle <strong> modifier rule so emphasis is a token, not an ad hoc weight",
+  "Put per-component Best Practices (when to use, behaviour, accessibility, copy conventions) beside the visual spec",
+  "Tokenise z-index bands and overlay motion (duration .3s, start scale .96, slight-overshoot easing)"
+ ]
+}
