@@ -44,3 +44,6 @@ Workspace "Northwind (sample)". All numbers are sample and internally consistent
 - Check: 0 fail, 0 warn (muted grey darkened #8f8f8f -> #737373 for 4.7:1).
 - Gate: max 3/10 (Tideline: headline size, section rhythm, hero layout; Vigil: headline size, content width, hero layout). Passes.
 - Engine pieces used: compiled system `kestrel` (contract met), rule slate (60, founder rules 28-30 lead), AlignUI method (brand layer of greys + one blue, fancy-button grammar), Commslayer inline headline tile, founder flowing routes as the data-source story, double-bezel frame.
+
+## Round 2 (founder: "fucking awesome" with fixes)
+Nav 44px track / 36px links / 40px buttons; chip removed, h1 at 150px; dot grid inside the rails only, faded behind the headline; founder flower mark traced (brand/kestrel-mark.svg) in the nav and the Ask Kestrel tile; CTAs 44px at 14px radius; sidebar radius 6; no accent ring on KPI cards. Check 0 fail 0 warn. Ledger: accept.

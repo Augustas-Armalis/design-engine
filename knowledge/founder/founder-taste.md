@@ -127,7 +127,7 @@ Every rule here is a direct founder verdict on real output. It outranks books, w
   **Why** Founder on Vigil v1: "too alike the project we just did, explore better effects, buttons, styles, shaders, graphics... use the engine".
   **Applies to** every new brand. **Check** DIRECTION.md names the moves and recipes used, and at least nav, primary button and product card differ in construction from the previous accepted project. **Source** founder, Vigil round 1
 
-- **RULE** [founder] The default SaaS hero is centred and product-led: chip, a two-line headline, a one-line subtitle and the CTA centred at the top, then a full, rich product dashboard in a window frame filling the lower half of the fold and running off the bottom edge (AlignUI Pro, Commslayer). The dashboard is the visual.
+- **RULE** [founder] The default SaaS hero is centred and product-led: a two-line headline (no chip above it), a one-line subtitle and the CTA centred at the top, then a full, rich product dashboard in a window frame filling the lower half of the fold and running off the bottom edge (AlignUI Pro, Commslayer). The dashboard is the visual.
   **Why** Founder on Vigil v2 (dark mono split hero with a lens shader): "this looks ass... I need something clean centre layout and like SaaS with full dashboard visual, clean smooth and aesthetic with cool and clean visuals like Commslayer... the AlignUI aesthetic I love most".
   **Applies to** SaaS and AI-SaaS landing heroes, unless the brief asks for something else. **Check** h1 centred; the dashboard frame is >= 1000px wide, starts in the top 65% of the fold and is cut by the bottom edge; the dashboard shows a believable workflow (sidebar, KPIs, chart, table or list, an AI panel). **Source** founder, Vigil round 2; knowledge/benchmarks/alignui-shots/pro-1440.png, commslayer-shots/home-1440.png
 
@@ -138,6 +138,30 @@ Every rule here is a direct founder verdict on real output. It outranks books, w
 - **RULE** [founder] "Explore the engine" means fresh components and details inside the clean SaaS look (new nav construction, button grammar, frame, accents, icon set, motion), not a jump to an experimental art direction. Novelty lives in the details; the overall read stays clean, premium SaaS.
   **Why** Vigil round 1 was "too alike"; Vigil round 2 overcorrected into an art-piece and was rejected as "ass".
   **Applies to** every new brand. **Check** DIRECTION.md lists the component-level differences from the last accepted project and confirms the hero class is product proof. **Source** founder, Vigil rounds 1-2
+
+- **RULE** [founder] No announcement chip or small text above the hero headline by default; the headline opens the hero and sits ~80-90px under the nav.
+  **Why** Founder on Kestrel round 1: "I'd put no little text above the title and move the title up".
+  **Applies to** landing heroes. **Check** nothing between the nav and the h1. **Source** founder, Kestrel round 1
+
+- **RULE** [founder] Nav controls are never cramped: link items at least 36px tall with ~14px side padding inside a 44px track, sign-in and primary buttons 40px tall with ~16px side padding.
+  **Why** Founder on Kestrel round 1: "the nav bar would be taller like buttons, they're a bit cramped now".
+  **Applies to** marketing nav. **Check** nav links >= 36px tall, nav buttons >= 40px. **Source** founder, Kestrel round 1
+
+- **RULE** [founder] Background texture (a fine dot grid, Commslayer-style) lives only inside the rails, behind the copy and the product; outside the rails the canvas stays plain. Fade it softly behind the headline so type stays clean.
+  **Why** Founder on Kestrel round 1: "dotted bg texture in the inner stuff, behind the product, but not outside the borders (same as Commslayer)".
+  **Applies to** heroes with rails. **Check** the texture element's box equals the rail-to-rail area. **Source** founder, Kestrel round 1
+
+- **RULE** [founder] Hero buttons share the product's roundness: when the product UI is soft (cards 12-16, frame 22), the CTAs are 44px tall at ~14px radius and nav buttons ~12px; never square-ish 10px buttons next to a soft product.
+  **Why** Founder on Kestrel round 1: "if the product is that rounded why the Start for free or other buttons are so stiff".
+  **Applies to** hero CTAs, nav buttons. **Check** CTA radius >= 0.3 x height; within ~4px of the product card radius. **Source** founder, Kestrel round 1
+
+- **RULE** [founder] Inside a hero dashboard, keep small controls tight (sidebar items, search and switcher at ~6px radius) and do not mark a "selected" card with an accent outline ring; selection is shown by the story (chart, AI panel), not a blue border.
+  **Why** Founder on Kestrel round 1: the sidebar was "a bit too rounded", and "the 3 cards, the blue outline I don't like".
+  **Applies to** product UI in heroes. **Check** no accent-coloured ring on KPI cards; sidebar item radius <= 6px. **Source** founder, Kestrel round 1
+
+- **RULE** [founder] When the founder supplies a logo image, trace it to SVG (node potrace from the root node_modules), crop to a square viewBox, fill with currentColor and use it unchanged, ink on light; reuse the mark inside the product (AI assistant tile) for brand continuity.
+  **Why** Founder on Kestrel round 1 supplied the flower mark: "the logo to be same as the Kestrel logo which I found online, you could recreate".
+  **Applies to** brand marks. **Check** the logo path comes from `work/<name>/brand/*-mark.svg`, not an icon-set glyph. **Source** founder, Tideline round 3, Kestrel round 1
 
 ## 5. Exceptions & judgement calls
 

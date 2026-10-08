@@ -1,4 +1,5 @@
 import { motion } from 'motion/react'
+import { MARK } from './mark'
 import {
   RiArrowDownLine, RiArrowUpLine, RiCornerDownLeftLine, RiDashboardLine, RiExpandUpDownLine, RiFilter3Line,
   RiFlaskLine, RiLightbulbFlashLine, RiLoopLeftLine, RiMore2Line, RiSearchLine, RiShareLine, RiSparkling2Fill,
@@ -32,7 +33,7 @@ const ease = [0.16, 1, 0.3, 1] as const
 
 function NavItem({ icon: Icon, label, active, badge }: { icon: typeof RiDashboardLine; label: string; active?: boolean; badge?: string }) {
   return (
-    <div className={`flex h-8 items-center gap-2 rounded-lg px-2 text-[13px] font-[500] tracking-[-0.006em] ${active ? 'bg-white text-ink shadow-[var(--shadow-ring)]' : 'text-sub'}`}>
+    <div className={`flex h-8 items-center gap-2 rounded-md px-2 text-[13px] font-[500] tracking-[-0.006em] ${active ? 'bg-white text-ink shadow-[var(--shadow-ring)]' : 'text-sub'}`}>
       <Icon size={16} className={active ? 'text-blue' : 'text-soft'} />
       {label}
       {badge && <span className="ml-auto rounded-full bg-blue-tint px-1.5 py-px text-[11px] font-[550] text-blue">{badge}</span>}
@@ -40,9 +41,9 @@ function NavItem({ icon: Icon, label, active, badge }: { icon: typeof RiDashboar
   )
 }
 
-function Kpi({ label, value, delta, up, good, selected }: { label: string; value: string; delta: string; up: boolean; good: boolean; selected?: boolean }) {
+function Kpi({ label, value, delta, up, good }: { label: string; value: string; delta: string; up: boolean; good: boolean }) {
   return (
-    <div className={`relative rounded-xl bg-white p-3.5 ${selected ? 'shadow-[0_0_0_1px_#335cff,0_0_0_4px_rgba(51,92,255,0.12)]' : 'shadow-[var(--shadow-ring)]'}`}>
+    <div className={`relative rounded-xl bg-white p-3.5 shadow-[var(--shadow-ring)]`}>
       <div className="text-[12px] font-[500] text-sub">{label}</div>
       <div className="mt-1.5 flex items-baseline gap-2">
         <span className="tnum text-[22px] font-[550] leading-7 tracking-[-0.02em] text-ink">{value}</span>
@@ -63,15 +64,15 @@ export default function Dashboard() {
       <div className="grid h-[600px] grid-cols-[208px_1fr_300px] overflow-hidden rounded-2xl bg-white shadow-[0_0_0_1px_rgba(23,23,23,0.06)]">
         {/* sidebar */}
         <aside className="border-r border-line bg-[#fbfbfb] p-3" aria-label="Sample app navigation">
-          <div className="flex items-center gap-2.5 rounded-lg p-1.5">
-            <span className="grid size-7 place-items-center rounded-lg bg-[linear-gradient(180deg,#5a7bff,#2a4ef0)] text-[13px] font-[600] text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.25)]">N</span>
+          <div className="flex items-center gap-2.5 rounded-md p-1.5">
+            <span className="grid size-7 place-items-center rounded-md bg-[linear-gradient(180deg,#5a7bff,#2a4ef0)] text-[13px] font-[600] text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.25)]">N</span>
             <div className="leading-4">
               <div className="text-[13px] font-[550] text-ink">Northwind</div>
               <div className="text-[11px] text-soft">Sample workspace</div>
             </div>
             <RiExpandUpDownLine size={14} className="ml-auto text-soft" />
           </div>
-          <div className="mt-2.5 flex h-8 items-center gap-2 rounded-lg bg-white px-2 text-[13px] text-soft shadow-[var(--shadow-ring)]">
+          <div className="mt-2.5 flex h-8 items-center gap-2 rounded-md bg-white px-2 text-[13px] text-soft shadow-[var(--shadow-ring)]">
             <RiSearchLine size={15} /> Search
             <kbd className="ml-auto rounded border border-line px-1 font-sans text-[10px] text-soft">⌘K</kbd>
           </div>
@@ -109,7 +110,7 @@ export default function Dashboard() {
 
           <div className="mt-4 grid grid-cols-3 gap-2.5">
             <Kpi label="Weekly active users" value="18,420" delta="6.2%" up good />
-            <Kpi label="Activation rate" value="41.8%" delta="3.1 pts" up={false} good={false} selected />
+            <Kpi label="Activation rate" value="41.8%" delta="3.1 pts" up={false} good={false} />
             <Kpi label="Trial to paid" value="9.6%" delta="0.8 pts" up good />
           </div>
 
@@ -158,7 +159,7 @@ export default function Dashboard() {
         {/* AI panel */}
         <section className="flex flex-col border-l border-line p-4" aria-label="Sample AI answer">
           <div className="flex items-center gap-2">
-            <span className="grid size-6 place-items-center rounded-md bg-blue text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.25)]"><RiSparkling2Fill size={13} /></span>
+            <span className="grid size-6 place-items-center rounded-md bg-ink text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.2)]"><svg viewBox={MARK.viewBox} className="size-3.5" aria-hidden><path fill="currentColor" fillRule="evenodd" d={MARK.d} /></svg></span>
             <span className="text-[13px] font-[550] text-ink">Ask Kestrel</span>
             <RiMore2Line size={16} className="ml-auto text-soft" />
           </div>
