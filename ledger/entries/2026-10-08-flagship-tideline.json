@@ -1,0 +1,47 @@
+{
+  "name": "flagship-tideline",
+  "date": "2026-10-08",
+  "verdict": "accept",
+  "why": "Founder 2026-10-08: 'not bad ... this is cool'. Worked: halftone globe with real coastlines as signature visual, payout arcs as product proof, Kaching button spec. Fixes asked: visual position, money card styling, nav aligned to content (one bar, not split to the sides), rails/dividers, real logo instead of icon-in-a-box.",
+  "summary": {
+    "pass": 19,
+    "warn": 2,
+    "fail": 4
+  },
+  "fingerprint": {
+    "h1": {
+      "px": 68,
+      "lh": "69.36px",
+      "ls": "-3.74px",
+      "weight": "600",
+      "family": "Geist Variable",
+      "text": "Payroll for a team that never shares a timezone."
+    },
+    "fonts": [
+      "Geist Variable",
+      "Geist Mono Variable"
+    ],
+    "accentHues": [
+      15
+    ],
+    "radii": [
+      10,
+      12,
+      16,
+      9,
+      11,
+      "pill",
+      14,
+      18,
+      2
+    ],
+    "navHeight": 56,
+    "contentWidth": "1128",
+    "sectionPad": 20,
+    "sectionCount": 1,
+    "bodyPx": 18,
+    "heroLayout": "split-left-copy",
+    "navNumbered": false
+  },
+  "screenshot": "ledger/shots/2026-10-08-flagship-tideline-fold.png"
+}
