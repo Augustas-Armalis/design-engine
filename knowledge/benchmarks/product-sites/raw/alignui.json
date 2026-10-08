@@ -1,0 +1,769 @@
+{
+ "vw": 1440,
+ "pageHeight": 10728,
+ "title": "AlignUI Design System - Design and development perfectly aligned",
+ "containerPath": "div",
+ "bodyBg": "rgba(0, 0, 0, 0)",
+ "htmlBg": "rgba(0, 0, 0, 0)",
+ "bodyFont": "__interVar_fb658c",
+ "sections": [
+  {
+   "idx": 0,
+   "tag": "div",
+   "cls": "container pointer-events-none absolute inset-0 -z-10 hidden select-non",
+   "id": "",
+   "top": 0,
+   "h": 10728,
+   "w": 1152,
+   "bg": "rgb(247, 247, 247)",
+   "ownBg": "rgba(0, 0, 0, 0)",
+   "bgImg": null,
+   "borderTop": "0px rgb(235, 235, 235)",
+   "borderBottom": "0px rgb(235, 235, 235)",
+   "padT": "0px",
+   "padB": "0px",
+   "effPadT": 128,
+   "effPadB": 9712,
+   "contentL": 88,
+   "contentR": 1352,
+   "contentW": 1264,
+   "container": {
+    "w": 1280,
+    "maxW": "none",
+    "bl": "0px",
+    "br": "0px",
+    "padL": "0px"
+   },
+   "cardCount": 0,
+   "cardRadius": [],
+   "cardShadow": [],
+   "cardBorder": [],
+   "cardPad": [],
+   "cardBg": [],
+   "cardSizes": [],
+   "media": {
+    "img": 0,
+    "svg": 0,
+    "video": 0,
+    "canvas": 0,
+    "iframe": 0
+   },
+   "smallGlyphs": 0,
+   "links": 0,
+   "buttons": 0,
+   "words": 32,
+   "snippet": "0 50 100 150 200 250 300 350 400 450 500 550 600 650 700 750 0 50 100 150 200 250 300 350 400 450 500 550 600 650 700 750",
+   "sticky": false
+  },
+  {
+   "idx": 1,
+   "tag": "div",
+   "cls": "lg:px-2 lg:pt-2",
+   "id": "",
+   "top": 0,
+   "h": 48,
+   "w": 1440,
+   "bg": "rgb(247, 247, 247)",
+   "ownBg": "rgba(0, 0, 0, 0)",
+   "bgImg": null,
+   "borderTop": "0px rgb(235, 235, 235)",
+   "borderBottom": "0px rgb(235, 235, 235)",
+   "padT": "8px",
+   "padB": "0px",
+   "effPadT": 18,
+   "effPadB": 10,
+   "contentL": 481,
+   "contentR": 959,
+   "contentW": 479,
+   "cardCount": 0,
+   "cardRadius": [],
+   "cardShadow": [],
+   "cardBorder": [],
+   "cardPad": [],
+   "cardBg": [],
+   "cardSizes": [],
+   "media": {
+    "img": 0,
+    "svg": 0,
+    "video": 0,
+    "canvas": 0,
+    "iframe": 0
+   },
+   "smallGlyphs": 0,
+   "links": 1,
+   "buttons": 1,
+   "words": 9,
+   "snippet": "Built faster websites with AlignUI PRO components! Learn more",
+   "sticky": false
+  },
+  {
+   "idx": 2,
+   "tag": "div",
+   "cls": "relative z-50 w-full flex-col items-center xl:container lg:flex xl:mx-",
+   "id": "",
+   "top": 72,
+   "h": 116,
+   "w": 1152,
+   "bg": "rgb(247, 247, 247)",
+   "ownBg": "rgba(0, 0, 0, 0)",
+   "bgImg": null,
+   "borderTop": "0px rgb(235, 235, 235)",
+   "borderBottom": "0px rgb(235, 235, 235)",
+   "padT": "0px",
+   "padB": "0px",
+   "effPadT": 16,
+   "effPadB": -216,
+   "contentL": 107,
+   "contentR": 1333,
+   "contentW": 1226,
+   "container": {
+    "w": 1152,
+    "maxW": "none",
+    "bl": "0px",
+    "br": "0px",
+    "padL": "0px"
+   },
+   "cardCount": 2,
+   "cardRadius": [
+    [
+     "20px",
+     2
+    ]
+   ],
+   "cardShadow": [
+    [
+     "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(41, 41, 41, 0.04) 0px 1px 1px 0.5px, ",
+     2
+    ]
+   ],
+   "cardBorder": [
+    [
+     "none",
+     2
+    ]
+   ],
+   "cardPad": [
+    [
+     "0px/0px",
+     2
+    ]
+   ],
+   "cardBg": [
+    [
+     "rgb(255, 255, 255)",
+     2
+    ]
+   ],
+   "cardSizes": [
+    "380x280",
+    "380x212"
+   ],
+   "media": {
+    "img": 0,
+    "svg": 0,
+    "video": 0,
+    "canvas": 0,
+    "iframe": 0
+   },
+   "smallGlyphs": 0,
+   "links": 14,
+   "buttons": 7,
+   "words": 67,
+   "snippet": "v1.2 Products Base Components 40+ open-source components available Components & Blocks 100+ ready-made components for speed Sectoral Templates Designs for various sectoral needs Aligned with Figma Always-updated Figma fi",
+   "sticky": false
+  },
+  {
+   "idx": 3,
+   "tag": "main",
+   "cls": "flex-1",
+   "id": "",
+   "top": 188,
+   "h": 8169,
+   "w": 1440,
+   "bg": "rgb(247, 247, 247)",
+   "ownBg": "rgba(0, 0, 0, 0)",
+   "bgImg": null,
+   "borderTop": "0px rgb(235, 235, 235)",
+   "borderBottom": "0px rgb(235, 235, 235)",
+   "padT": "0px",
+   "padB": "0px",
+   "effPadT": 86,
+   "effPadB": 0,
+   "contentL": 88,
+   "contentR": 1352,
+   "contentW": 1264,
+   "container": {
+    "w": 1420,
+    "maxW": "none",
+    "bl": "0px",
+    "br": "0px",
+    "padL": "0px"
+   },
+   "heading": {
+    "text": "Founder & Sta| perfectly aligned",
+    "tag": "h1",
+    "size": 80,
+    "weight": "550",
+    "lh": "88px",
+    "ls": "-2.8px",
+    "fam": "__interVar_fb658c",
+    "color": "rgb(46, 46, 46)",
+    "align": "center",
+    "tt": "none",
+    "w": 554,
+    "h": 176,
+    "x": 443,
+    "y": 324,
+    "lines": 2
+   },
+   "sub": {
+    "text": "Flexible components, consistent UI, quick development, easy integration.",
+    "tag": "p",
+    "size": 18,
+    "weight": "400",
+    "lh": "28px",
+    "ls": "-0.27px",
+    "fam": "__interVar_fb658c",
+    "color": "rgb(82, 82, 82)",
+    "align": "center",
+    "tt": "none",
+    "w": 589,
+    "h": 28,
+    "x": 426,
+    "y": 524,
+    "lines": 1
+   },
+   "eyebrow": {
+    "text": "2,000+",
+    "tag": "span",
+    "size": 14,
+    "weight": "500",
+    "lh": "20px",
+    "ls": "-0.084px",
+    "fam": "__interVar_fb658c",
+    "color": "rgb(46, 46, 46)",
+    "align": "start",
+    "tt": "none",
+    "w": 48,
+    "h": 17,
+    "x": 672,
+    "y": 277,
+    "lines": 1
+   },
+   "allHeadings": [
+    {
+     "t": "h1",
+     "s": 80,
+     "text": "Founder & Sta| perfectly aligned"
+    },
+    {
+     "t": "h2",
+     "s": 48,
+     "text": "Make your customer happy by building faster"
+    },
+    {
+     "t": "h2",
+     "s": 48,
+     "text": "What's inside AlignUI?"
+    },
+    {
+     "t": "h2",
+     "s": 48,
+     "text": "Unlimited customization options for your unique needs"
+    }
+   ],
+   "cardCount": 11,
+   "cardRadius": [
+    [
+     "16px",
+     11
+    ]
+   ],
+   "cardShadow": [
+    [
+     "none",
+     11
+    ]
+   ],
+   "cardBorder": [
+    [
+     "none",
+     11
+    ]
+   ],
+   "cardPad": [
+    [
+     "0px/0px",
+     10
+    ],
+    [
+     "0px/20px",
+     1
+    ]
+   ],
+   "cardBg": [
+    [
+     "rgb(235, 235, 235)",
+     10
+    ],
+    [
+     "rgb(255, 255, 255)",
+     1
+    ]
+   ],
+   "cardSizes": [
+    "359x508",
+    "270x220",
+    "270x220",
+    "270x220",
+    "270x220",
+    "270x220",
+    "270x220",
+    "270x220"
+   ],
+   "media": {
+    "img": 13,
+    "svg": 4,
+    "video": 0,
+    "canvas": 0,
+    "iframe": 1
+   },
+   "smallGlyphs": 44,
+   "links": 14,
+   "buttons": 60,
+   "words": 968,
+   "snippet": "Trusted by 2,000+ Figma users for seamless design! Founder & Sta| perfectly aligned Flexible components, consistent UI, quick development, easy integration. Built for React Styled with TailwindCSS Get Started - It’s free",
+   "sticky": true
+  },
+  {
+   "idx": 4,
+   "tag": "div",
+   "cls": "container",
+   "id": "",
+   "top": 8581,
+   "h": 606,
+   "w": 1152,
+   "bg": "rgb(247, 247, 247)",
+   "ownBg": "rgba(0, 0, 0, 0)",
+   "bgImg": null,
+   "borderTop": "0px rgb(235, 235, 235)",
+   "borderBottom": "0px rgb(235, 235, 235)",
+   "padT": "0px",
+   "padB": "0px",
+   "effPadT": 0,
+   "effPadB": 0,
+   "contentL": 176,
+   "contentR": 1264,
+   "contentW": 1088,
+   "container": {
+    "w": 1152,
+    "maxW": "none",
+    "bl": "0px",
+    "br": "0px",
+    "padL": "0px"
+   },
+   "heading": {
+    "text": "Join our community",
+    "tag": "h4",
+    "size": 48,
+    "weight": "550",
+    "lh": "56px",
+    "ls": "-1.344px",
+    "fam": "__interVar_fb658c",
+    "color": "rgb(46, 46, 46)",
+    "align": "center",
+    "tt": "none",
+    "w": 405,
+    "h": 56,
+    "x": 518,
+    "y": 8629,
+    "lines": 1
+   },
+   "sub": {
+    "text": "Connect, learn, and grow with fellow designers and developers.",
+    "tag": "p",
+    "size": 18,
+    "weight": "400",
+    "lh": "28px",
+    "ls": "-0.27px",
+    "fam": "__interVar_fb658c",
+    "color": "rgb(112, 112, 112)",
+    "align": "center",
+    "tt": "none",
+    "w": 515,
+    "h": 28,
+    "x": 462,
+    "y": 8697,
+    "lines": 1
+   },
+   "eyebrow": {
+    "text": "Community",
+    "tag": "div",
+    "size": 14,
+    "weight": "500",
+    "lh": "20px",
+    "ls": "-0.084px",
+    "fam": "__interVar_fb658c",
+    "color": "rgb(82, 82, 82)",
+    "align": "start",
+    "tt": "none",
+    "w": 120,
+    "h": 32,
+    "x": 660,
+    "y": 8581,
+    "lines": 2
+   },
+   "allHeadings": [],
+   "cardCount": 3,
+   "cardRadius": [
+    [
+     "24px",
+     3
+    ]
+   ],
+   "cardShadow": [
+    [
+     "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(41, 41, 41, 0.04) 0px 1px 1px 0.5px, ",
+     3
+    ]
+   ],
+   "cardBorder": [
+    [
+     "none",
+     3
+    ]
+   ],
+   "cardPad": [
+    [
+     "32px/32px",
+     3
+    ]
+   ],
+   "cardBg": [
+    [
+     "rgb(255, 255, 255)",
+     3
+    ]
+   ],
+   "cardSizes": [
+    "368x228",
+    "368x228",
+    "368x228"
+   ],
+   "media": {
+    "img": 1,
+    "svg": 0,
+    "video": 0,
+    "canvas": 0,
+    "iframe": 0
+   },
+   "smallGlyphs": 0,
+   "links": 3,
+   "buttons": 3,
+   "words": 52,
+   "snippet": "Community Join our community Connect, learn, and grow with fellow designers and developers. Twitter Stay updated with tips, announcements, and general info GitHub Report bugs, request features and contribute to the proje",
+   "sticky": false
+  },
+  {
+   "idx": 5,
+   "tag": "div",
+   "cls": "container pt-10 bleed-ln-gray-200 bleed-border-t md:pt-14 xl:pt-[70px]",
+   "id": "",
+   "top": 9187,
+   "h": 358,
+   "w": 1152,
+   "bg": "rgb(247, 247, 247)",
+   "ownBg": "rgba(0, 0, 0, 0)",
+   "bgImg": null,
+   "borderTop": "0px rgb(46, 46, 46)",
+   "borderBottom": "0px rgb(235, 235, 235)",
+   "padT": "70px",
+   "padB": "0px",
+   "effPadT": 70,
+   "effPadB": 0,
+   "contentL": 462,
+   "contentR": 978,
+   "contentW": 515,
+   "container": {
+    "w": 1152,
+    "maxW": "none",
+    "bl": "0px",
+    "br": "0px",
+    "padL": "0px"
+   },
+   "heading": {
+    "text": "Subscribe to our newsletter",
+    "tag": "h4",
+    "size": 32,
+    "weight": "550",
+    "lh": "40px",
+    "ls": "-0.896px",
+    "fam": "__interVar_fb658c",
+    "color": "rgb(46, 46, 46)",
+    "align": "center",
+    "tt": "none",
+    "w": 369,
+    "h": 40,
+    "x": 536,
+    "y": 9305,
+    "lines": 1
+   },
+   "sub": {
+    "text": "Get the latest updates, tips, and exclusive offers from AlignUI.",
+    "tag": "p",
+    "size": 18,
+    "weight": "400",
+    "lh": "28px",
+    "ls": "-0.27px",
+    "fam": "__interVar_fb658c",
+    "color": "rgb(112, 112, 112)",
+    "align": "center",
+    "tt": "none",
+    "w": 501,
+    "h": 28,
+    "x": 469,
+    "y": 9353,
+    "lines": 1
+   },
+   "eyebrow": {
+    "text": "Stay Informed",
+    "tag": "div",
+    "size": 14,
+    "weight": "500",
+    "lh": "20px",
+    "ls": "-0.084px",
+    "fam": "__interVar_fb658c",
+    "color": "rgb(82, 82, 82)",
+    "align": "start",
+    "tt": "none",
+    "w": 137,
+    "h": 32,
+    "x": 652,
+    "y": 9257,
+    "lines": 2
+   },
+   "allHeadings": [],
+   "cardCount": 0,
+   "cardRadius": [],
+   "cardShadow": [],
+   "cardBorder": [],
+   "cardPad": [],
+   "cardBg": [],
+   "cardSizes": [],
+   "media": {
+    "img": 0,
+    "svg": 0,
+    "video": 0,
+    "canvas": 0,
+    "iframe": 0
+   },
+   "smallGlyphs": 1,
+   "links": 0,
+   "buttons": 1,
+   "words": 28,
+   "snippet": "Stay Informed Subscribe to our newsletter Get the latest updates, tips, and exclusive offers from AlignUI. We respect your privacy Weekly updates Exclusive content Early access for features",
+   "sticky": false
+  },
+  {
+   "idx": 6,
+   "tag": "div",
+   "cls": "mt-10 border-t border-ln-gray-200 xl:mt-[108px]",
+   "id": "",
+   "top": 9653,
+   "h": 1075,
+   "w": 1440,
+   "bg": "rgb(247, 247, 247)",
+   "ownBg": "rgba(0, 0, 0, 0)",
+   "bgImg": null,
+   "borderTop": "1px rgb(224, 224, 224)",
+   "borderBottom": "0px rgb(224, 224, 224)",
+   "padT": "0px",
+   "padB": "0px",
+   "effPadT": -4,
+   "effPadB": 0,
+   "contentL": 108,
+   "contentR": 1332,
+   "contentW": 1224,
+   "container": {
+    "w": 1152,
+    "maxW": "1152px",
+    "bl": "0px",
+    "br": "0px",
+    "padL": "0px"
+   },
+   "heading": {
+    "text": "Products",
+    "tag": "h3",
+    "size": 14,
+    "weight": "500",
+    "lh": "20px",
+    "ls": "-0.084px",
+    "fam": "__interVar_fb658c",
+    "color": "rgb(46, 46, 46)",
+    "align": "start",
+    "tt": "none",
+    "w": 163,
+    "h": 20,
+    "x": 168,
+    "y": 9998,
+    "lines": 1
+   },
+   "allHeadings": [
+    {
+     "t": "h3",
+     "s": 14,
+     "text": "Products"
+    },
+    {
+     "t": "h3",
+     "s": 14,
+     "text": "Components"
+    },
+    {
+     "t": "h3",
+     "s": 14,
+     "text": "Pro"
+    },
+    {
+     "t": "h3",
+     "s": 14,
+     "text": "Figma"
+    },
+    {
+     "t": "h3",
+     "s": 14,
+     "text": "Company"
+    }
+   ],
+   "cardCount": 0,
+   "cardRadius": [],
+   "cardShadow": [],
+   "cardBorder": [],
+   "cardPad": [],
+   "cardBg": [],
+   "cardSizes": [],
+   "media": {
+    "img": 1,
+    "svg": 0,
+    "video": 0,
+    "canvas": 0,
+    "iframe": 0
+   },
+   "smallGlyphs": 0,
+   "links": 29,
+   "buttons": 3,
+   "words": 56,
+   "snippet": "Design & development perfectly aligned. Products AlignUI Components AlignUI Pro AlignUI Figma Components Roadmap Blog Introduction Installation Pro Blocks AI Template HR Management Finance & Banking Pricing FAQ License F",
+   "sticky": false
+  }
+ ],
+ "header": {
+  "h": 72,
+  "pos": "relative",
+  "bg": "rgb(255, 255, 255)",
+  "blur": "none",
+  "borderB": "0px rgb(235, 235, 235)",
+  "links": [
+   "Base Components 40+ open-source components available",
+   "Components & Blocks 100+ ready-made components for speed",
+   "Sectoral Templates Designs for various sectoral needs",
+   "Aligned with Figma Always-updated Figma file library",
+   "Docs",
+   "Roadmap",
+   "Blog Explore articles, insights, and updates.",
+   "About us Who we are? Learn more about us.",
+   "Contact We're here to help and connect with you."
+  ]
+ },
+ "h2": [
+  {
+   "text": "Make your customer happy by building faster",
+   "size": 48,
+   "weight": "550",
+   "ls": "-1.344px",
+   "lh": "56px",
+   "y": 1832,
+   "w": 553,
+   "align": "center"
+  },
+  {
+   "text": "What's inside AlignUI?",
+   "size": 48,
+   "weight": "550",
+   "ls": "-1.2px",
+   "lh": "56px",
+   "y": 3220,
+   "w": 455,
+   "align": "center"
+  },
+  {
+   "text": "Unlimited customization options for your unique needs",
+   "size": 48,
+   "weight": "550",
+   "ls": "-1.344px",
+   "lh": "56px",
+   "y": 4188,
+   "w": 650,
+   "align": "center"
+  }
+ ],
+ "h3sizes": [
+  [
+   "14",
+   5
+  ]
+ ],
+ "footer": {
+  "top": 9654,
+  "h": 1074,
+  "bg": "rgb(247, 247, 247)",
+  "borderTop": "0px rgb(235, 235, 235)",
+  "effPadT": -5,
+  "effPadB": 0,
+  "linkCount": 29,
+  "linkSize": [
+   [
+    "14",
+    25
+   ],
+   [
+    "16",
+    4
+   ]
+  ],
+  "linkColor": [
+   [
+    "rgb(112, 112, 112)",
+    25
+   ],
+   [
+    "rgb(184, 184, 184)",
+    3
+   ]
+  ],
+  "colCount": 5,
+  "colHeads": [
+   "",
+   "Products",
+   "Components",
+   "Pro",
+   "Figma"
+  ],
+  "colX": [
+   664,
+   168,
+   403,
+   638,
+   874
+  ],
+  "text": "Design & development perfectly aligned. Products AlignUI Components AlignUI Pro AlignUI Figma Components Roadmap Blog Introduction Installation Pro Blocks AI Template HR Management Finance & Banking Pricing FAQ License Figma Components HR Management Finance & Banking Marketing & Sales Pricing Updates Changelog FAQ License Company Contact us About © 2026 AlignUI Design System. All rights reserved.",
+  "svgCount": 3,
+  "bigWordmark": false
+ },
+ "rails": {
+  "thin": 0,
+  "borderRails": 0
+ },
+ "url": "https://alignui.com",
+ "slug": "alignui"
+}

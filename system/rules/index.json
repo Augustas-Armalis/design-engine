@@ -200,6 +200,90 @@
   "origin": "web:multi (GitHub REST API + repo READMEs + arXiv + vendor docs, fetched 2026-10-08)"
  },
  {
+  "id": "founder.feedback-playbook#1",
+  "text": "[founder-process] Before acting on feedback that includes a screenshot, crop the same region from your own render at 2x or more, state in one line what is actually wrong there (measured), then change only that.",
+  "why": "Kestrel round 3: the words said \"too rounded\", the crop showed misaligned heights; acting on the words broke the loved radii.",
+  "applies": "all.",
+  "check": "the reply names the measured cause (heights, radius, offset) before the fix.",
+  "checkable": true,
+  "source": "founder, Kestrel rounds 2-4",
+  "file": "founder/feedback-playbook.md",
+  "section": "2. Rules",
+  "tags": [
+   "founder",
+   "feedback",
+   "process",
+   "quality-bar",
+   "kestrel",
+   "iteration"
+  ],
+  "kind": "source",
+  "origin": "founder"
+ },
+ {
+  "id": "founder.feedback-playbook#2",
+  "text": "[founder-process] After any tweak to an accepted design, rebuild the accepted commit and diff computed styles (radius, size, colour, spacing) element by element against the new build; anything not asked for must be identical.",
+  "why": "Kestrel round 3 silently sharpened every radius by about 4px when classes were \"normalised\"; the founder caught it immediately.",
+  "applies": "all.",
+  "check": "a diff script output with only the requested properties changed.",
+  "checkable": true,
+  "source": "founder, Kestrel round 5",
+  "file": "founder/feedback-playbook.md",
+  "section": "2. Rules",
+  "tags": [
+   "founder",
+   "feedback",
+   "process",
+   "quality-bar",
+   "kestrel",
+   "iteration"
+  ],
+  "kind": "source",
+  "origin": "founder"
+ },
+ {
+  "id": "founder.feedback-playbook#3",
+  "text": "[founder-process] Record every founder message as rules in the same turn: one rule per point, verbatim quote in",
+  "why": "The engine only gets better from verdicts it keeps.",
+  "applies": "all.",
+  "check": "`git log` shows a founder-taste.md change in the commit that applies the feedback.",
+  "checkable": true,
+  "source": "CLAUDE.md, founder",
+  "file": "founder/feedback-playbook.md",
+  "section": "2. Rules",
+  "tags": [
+   "founder",
+   "feedback",
+   "process",
+   "quality-bar",
+   "kestrel",
+   "iteration"
+  ],
+  "kind": "source",
+  "origin": "founder"
+ },
+ {
+  "id": "founder.feedback-playbook#4",
+  "text": "[founder-process] Deliver each round as: the image (2x, plus 4K when asked), a live localhost URL, and a short list of what changed mapped to what the founder said; end with one question asking for the verdict.",
+  "why": "The founder reviews visually and on the live page; mapping changes to their words lets them verify fast.",
+  "applies": "all.",
+  "check": "reply contains image, URL, change list.",
+  "checkable": true,
+  "source": "founder, Kestrel rounds 1-6",
+  "file": "founder/feedback-playbook.md",
+  "section": "2. Rules",
+  "tags": [
+   "founder",
+   "feedback",
+   "process",
+   "quality-bar",
+   "kestrel",
+   "iteration"
+  ],
+  "kind": "source",
+  "origin": "founder"
+ },
+ {
   "id": "founder.founder-taste#1",
   "text": "[founder] Never hand-draw icons or logos in SVG paths; use a professional icon set (Phosphor or Lucide) or supplied/traced artwork.",
   "why": "Founder: hand-made icons look amateur (\"it's ass\").",

@@ -216,6 +216,9 @@ function evaluate(m, vp, axe) {
   c.push(mk('a11y.axe-serious', serious.length ? 'fail' : 'pass', serious.length, '0 serious/critical', fmt(serious)));
   c.push(mk('a11y.axe-minor', minor.length ? 'warn' : 'pass', minor.length, '0 moderate/minor', fmt(minor)));
   // AI tells
+  c.push(mk('interaction.blocked-targets', m.blockedTargets.length ? 'fail' : 'pass', m.blockedTargets.length, '0 controls covered by another layer', m.blockedTargets.slice(0, 6).join('; ')));
+  c.push(mk('shape.radius-ladder', 'info', m.radiusMixedBands.join(',') || 'consistent', '<= 2 radii per control-height band (21-48px)', m.radiusLadder.join(' | ')));
+  if (m.loadIn) c.push(mk('motion.load-in', m.loadIn.earlyH1Opacity == null ? 'info' : m.loadIn.lateH1Opacity < 0.99 ? 'fail' : 'info', m.loadIn.earlyH1Opacity < 0.99 ? 'animated' : 'static', 'h1 fully visible after load; founder wants an orchestrated load-in', `h1 opacity at 350ms ${m.loadIn.earlyH1Opacity}, at 4.3s ${m.loadIn.lateH1Opacity}`));
   c.push(mk('ai.banned-phrases', 'info', m.bannedHits.length, '0 cliché phrases', m.bannedHits.join(', ')));
   const onlyDefault = m.fontFamilies.length && m.fontFamilies.every(([f]) => t.ai_tells.defaultSansFamilies.some((d) => f.toLowerCase().includes(d)));
   c.push(mk('ai.default-font-only', 'info', m.fontFamilies.map(([f]) => f).join(', '), 'not only Inter/Geist/system'));
@@ -232,6 +235,17 @@ const report = { target: url, name, generated: new Date().toISOString(), viewpor
 for (const vp of T.viewports) {
   const ctx = await browser.newContext({ viewport: { width: vp.width, height: vp.height }, deviceScaleFactor: 1, isMobile: vp.width < 600, hasTouch: vp.width < 600 });
   const page = await ctx.newPage();
+  let loadIn = null;
+  if (vp.name === 'desktop') {
+    const probe = await ctx.newPage();
+    await probe.goto(url, { waitUntil: 'commit', timeout: 45000 }).catch(() => {});
+    await probe.waitForTimeout(350);
+    const early = await probe.evaluate(() => { const h = document.querySelector('h1'); return h ? Math.min(...[h, ...h.querySelectorAll('*')].map((e) => +getComputedStyle(e).opacity)) : null; }).catch(() => null);
+    await probe.waitForTimeout(4000);
+    const late = await probe.evaluate(() => { const h = document.querySelector('h1'); return h ? Math.min(...[h, ...h.querySelectorAll('*')].map((e) => +getComputedStyle(e).opacity)) : null; }).catch(() => null);
+    loadIn = { earlyH1Opacity: early, lateH1Opacity: late };
+    await probe.close();
+  }
   await page.goto(url, { waitUntil: 'networkidle', timeout: 45000 }).catch(() => {});
   await page.evaluate(async () => {
     await document.fonts.ready;
@@ -243,6 +257,28 @@ for (const vp of T.viewports) {
     await new Promise((r) => setTimeout(r, 100));
   });
   const m = await page.evaluate(measure, T);
+  // Interaction probes (Kestrel round 6: a transparent <main> layer silently covered the nav and tiles).
+  Object.assign(m, await page.evaluate(() => {
+    const label = (el) => (el.getAttribute('aria-label') || el.textContent || el.tagName).trim().replace(/\s+/g, ' ').slice(0, 28);
+    const blocked = [];
+    for (const el of document.querySelectorAll('a[href], button, [role=button], input, select, textarea, summary')) {
+      const r = el.getBoundingClientRect(); const cs = getComputedStyle(el);
+      if (r.width < 2 || r.height < 2 || r.bottom < 0 || r.top > innerHeight || r.right < 0 || r.left > innerWidth || cs.visibility === 'hidden' || cs.pointerEvents === 'none') continue;
+      const hit = document.elementFromPoint(Math.min(innerWidth - 1, Math.max(0, r.left + r.width / 2)), Math.min(innerHeight - 1, Math.max(0, r.top + r.height / 2)));
+      if (hit && hit !== el && !el.contains(hit) && !hit.contains(el)) blocked.push(`${label(el)} under <${hit.tagName.toLowerCase()}${hit.className && typeof hit.className === 'string' ? '.' + hit.className.split(' ')[0] : ''}>`);
+    }
+    // radius ladder: computed radius grouped by element height band (founder judges dashboards on this)
+    const bands = {};
+    for (const el of document.querySelectorAll('body *')) {
+      const rad = parseFloat(getComputedStyle(el).borderTopLeftRadius); const r = el.getBoundingClientRect();
+      if (!rad || rad > 200 || r.width < 8 || r.height < 8 || r.top > innerHeight) continue;
+      const band = r.height <= 20 ? '<=20' : r.height <= 30 ? '21-30' : r.height <= 36 ? '31-36' : r.height <= 48 ? '37-48' : r.height <= 120 ? '49-120' : '>120';
+      (bands[band] ||= new Set()).add(rad);
+    }
+    const ladder = Object.entries(bands).map(([k, v]) => `${k}px: ${[...v].sort((x, y) => x - y).join('/')}`);
+    const mixed = Object.entries(bands).filter(([k, v]) => ['21-30', '31-36', '37-48'].includes(k) && v.size > 2).map(([k]) => k);
+    return { blockedTargets: blocked, radiusLadder: ladder, radiusMixedBands: mixed };
+  }));
   await page.addScriptTag({ content: axeSource });
   const axe = await page.evaluate(async () => {
     const r = await window.axe.run();
@@ -251,6 +287,7 @@ for (const vp of T.viewports) {
   const full = path.join(outDir, `${vp.name}-full.png`); const fold = path.join(outDir, `${vp.name}-fold.png`);
   await page.screenshot({ path: fold });
   await page.screenshot({ path: full, fullPage: true });
+  m.loadIn = loadIn;
   const checks = evaluate(m, vp, axe);
   for (const k of checks) if (report.summary[k.status] !== undefined) report.summary[k.status]++;
   report.viewports.push({ name: vp.name, width: vp.width, height: vp.height, screenshots: { fold, full }, checks });
