@@ -1,0 +1,22 @@
+@import "tailwindcss";
+@import "@fontsource-variable/geist";
+@import "@fontsource-variable/geist-mono";
+
+@theme {
+  --font-sans: "Geist Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Geist Mono Variable", ui-monospace, monospace;
+  --color-ink: #0b0d0c;
+  --color-muted: #6b6b68;
+  --color-line: #e7e7e4;
+  --color-page: #f6f6f4;
+  --color-mint: #3ad18b;
+  --color-emerald: #14915a;
+}
+html { -webkit-text-size-adjust: 100%; }
+body { background: var(--color-page); color: var(--color-ink); font-family: var(--font-sans); -webkit-font-smoothing: antialiased; }
+:focus-visible { outline: 2px solid var(--color-ink); outline-offset: 2px; }
+@media (hover: hover) { .btn-dark:hover { background: #26302b; } .btn-light:hover { background: #f1f1ef; } .chip:hover { border-color: #d5d5d2; } }
+.btn-dark:active, .btn-light:active { transform: scale(0.98); }
+.rise { animation: rise 0.9s cubic-bezier(0.16, 1, 0.3, 1) both; }
+@keyframes rise { from { opacity: 0.01; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) { .rise { animation: none; } }

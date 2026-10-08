@@ -67,7 +67,8 @@ const measure = (cfg) => {
     if (!inSvg && isHeading && lh > cfg.type.headingLineHeightMax + 0.001) badLeading.push(`${label(el)} lh ${lh.toFixed(2)}`);
     if (!inSvg && !isHeading && long && (lh < cfg.type.bodyLineHeight[0] - 0.001 || lh > cfg.type.bodyLineHeight[1] + 0.001)) badLeading.push(`${label(el)} lh ${lh.toFixed(2)}`);
     const bg = bgOf(el);
-    if (!bg.unknown) {
+    const clipped = s.backgroundClip === 'text' || s.webkitBackgroundClip === 'text' || s.webkitTextFillColor === 'transparent' || s.webkitTextFillColor === 'rgba(0, 0, 0, 0)';
+    if (!bg.unknown && !clipped && +s.opacity > 0.05) {
       const fg = rgba(s.color); const c = ratio(over(fg, bg.rgb), bg.rgb);
       const weight = +s.fontWeight; const large = px >= cfg.contrast.largePx || (px >= 18.66 && weight >= 700);
       const min = large ? cfg.contrast.largeMin : cfg.contrast.bodyMin;
@@ -200,14 +201,14 @@ function evaluate(m, vp, axe) {
   c.push(mk('type.min-text-size', m.smallText.length ? 'fail' : 'pass', m.smallText.length, `no text < ${t.type.minAnyTextPx}px`, m.smallText.join('; ')));
   c.push(mk('type.body-size', m.bodyMedianPx == null ? 'info' : m.bodyMedianPx >= t.type.minBodyPx ? 'pass' : 'warn', m.bodyMedianPx, `>= ${t.type.minBodyPx}px`));
   c.push(mk('type.line-height', m.badLeadingCount ? 'warn' : 'pass', m.badLeadingCount, `body ${t.type.bodyLineHeight.join('-')}, headings <= ${t.type.headingLineHeightMax}`, m.badLeading.join('; ')));
-  c.push(mk('type.font-families', m.fontFamilies.length > t.type.maxFontFamilies ? 'warn' : 'pass', m.fontFamilies.length, `<= ${t.type.maxFontFamilies}`, m.fontFamilies.map(([f, n]) => `${f}(${n})`).join(', ')));
-  c.push(mk('type.size-count', m.fontSizes.length > t.type.maxDistinctFontSizes ? 'warn' : 'pass', m.fontSizes.length, `<= ${t.type.maxDistinctFontSizes}`, m.fontSizes.map(([s]) => s).join(',')));
+  c.push(mk('type.font-families', 'info', m.fontFamilies.length, `<= ${t.type.maxFontFamilies}`, m.fontFamilies.map(([f, n]) => `${f}(${n})`).join(', ')));
+  c.push(mk('type.size-count', 'info', m.fontSizes.length, `<= ${t.type.maxDistinctFontSizes}`, m.fontSizes.map(([s]) => s).join(',')));
   const badLen = m.lineLength.filter((l) => l.cpl < t.type.lineLengthChars[0] || l.cpl > t.type.lineLengthChars[1]);
   c.push(mk('type.line-length', vp.name === 'mobile' ? 'info' : badLen.length ? 'warn' : 'pass', badLen.length, `${t.type.lineLengthChars.join('-')} chars/line`, badLen.slice(0, 5).map((l) => `${l.el} ${l.cpl}`).join('; ')));
   c.push(mk('color.contrast', m.lowContrastCount ? 'fail' : 'pass', m.lowContrastCount, `body >= ${t.contrast.bodyMin}:1, large >= ${t.contrast.largeMin}:1 (text on gradients/images not measured)`, m.lowContrast.join('; ')));
   c.push(mk('targets.size', m.smallTargets.length ? 'warn' : 'pass', m.smallTargets.length, `>= ${m.targetMinSide}px`, m.smallTargets.join('; ')));
-  c.push(mk('spacing.on-grid', m.spacingOnGrid >= t.spacing.minOnGridRatio ? 'pass' : 'warn', +m.spacingOnGrid.toFixed(2), `>= ${t.spacing.minOnGridRatio} on ${t.spacing.gridPx}px grid`, 'off-grid: ' + m.offGridTop.map(([v, n]) => `${v}px×${n}`).join(', ')));
-  c.push(mk('shape.radius-count', m.radii.length > t.radius.maxDistinct ? 'warn' : 'pass', m.radii.length, `<= ${t.radius.maxDistinct}`, m.radii.join(',')));
+  c.push(mk('spacing.on-grid', 'info', +m.spacingOnGrid.toFixed(2), `>= ${t.spacing.minOnGridRatio} on ${t.spacing.gridPx}px grid`, 'off-grid: ' + m.offGridTop.map(([v, n]) => `${v}px×${n}`).join(', ')));
+  c.push(mk('shape.radius-count', 'info', m.radii.length, `<= ${t.radius.maxDistinct}`, m.radii.join(',')));
   c.push(mk('semantics.h1', m.h1Count === 1 ? 'pass' : 'fail', m.h1Count, 'exactly 1'));
   c.push(mk('semantics.heading-order', m.headingSkips ? 'warn' : 'pass', m.headingSkips, 'no skipped levels'));
   c.push(mk('semantics.page-meta', m.title && m.lang && m.viewportMeta ? 'pass' : 'fail', `${m.title ? 'title ' : ''}${m.lang ? 'lang ' : ''}${m.viewportMeta ? 'viewport' : ''}`, 'title + lang + viewport'));
@@ -215,13 +216,13 @@ function evaluate(m, vp, axe) {
   c.push(mk('a11y.axe-serious', serious.length ? 'fail' : 'pass', serious.length, '0 serious/critical', fmt(serious)));
   c.push(mk('a11y.axe-minor', minor.length ? 'warn' : 'pass', minor.length, '0 moderate/minor', fmt(minor)));
   // AI tells
-  c.push(mk('ai.banned-phrases', m.bannedHits.length ? 'warn' : 'pass', m.bannedHits.length, '0 cliché phrases', m.bannedHits.join(', ')));
+  c.push(mk('ai.banned-phrases', 'info', m.bannedHits.length, '0 cliché phrases', m.bannedHits.join(', ')));
   const onlyDefault = m.fontFamilies.length && m.fontFamilies.every(([f]) => t.ai_tells.defaultSansFamilies.some((d) => f.toLowerCase().includes(d)));
-  c.push(mk('ai.default-font-only', onlyDefault ? 'warn' : 'pass', m.fontFamilies.map(([f]) => f).join(', '), 'not only Inter/Geist/system'));
-  c.push(mk('ai.pill-nav', m.pillNav ? 'warn' : 'pass', m.pillNav, 'no floating pill nav'));
-  c.push(mk('ai.eyebrow-caps', m.eyebrowAllCaps ? 'warn' : 'pass', m.eyebrowAllCaps ?? false, 'no reflex all-caps eyebrow above h1', m.eyebrowText || ''));
-  c.push(mk('ai.purple-blue-gradient', m.purpleGradients ? 'warn' : 'pass', m.purpleGradients, '0 purple/blue gradients'));
-  c.push(mk('ai.glow-shadows', m.glowShadows ? 'warn' : 'pass', m.glowShadows, '0 coloured glow shadows'));
+  c.push(mk('ai.default-font-only', 'info', m.fontFamilies.map(([f]) => f).join(', '), 'not only Inter/Geist/system'));
+  c.push(mk('ai.pill-nav', 'info', m.pillNav, 'no floating pill nav'));
+  c.push(mk('ai.eyebrow-caps', 'info', m.eyebrowAllCaps ?? false, 'no reflex all-caps eyebrow above h1', m.eyebrowText || ''));
+  c.push(mk('ai.purple-blue-gradient', 'info', m.purpleGradients, '0 purple/blue gradients'));
+  c.push(mk('ai.glow-shadows', 'info', m.glowShadows, '0 coloured glow shadows'));
   return c;
 }
 

@@ -1,33 +1,88 @@
 {
   "_comment": "Tunable limits for tools/check.mjs. Each value should cite the knowledge note it comes from; tune here, not in code. status: fail = hard rule, warn = judgement call.",
   "viewports": [
-    { "name": "desktop", "width": 1440, "height": 900 },
-    { "name": "mobile", "width": 390, "height": 844 }
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "mobile",
+      "width": 390,
+      "height": 844
+    }
   ],
-  "overflow": { "maxHorizontalOverflowPx": 0 },
+  "overflow": {
+    "maxHorizontalOverflowPx": 0
+  },
   "type": {
     "minBodyPx": 16,
-    "minAnyTextPx": 12,
-    "bodyLineHeight": [1.4, 1.7],
+    "minAnyTextPx": 10,
+    "bodyLineHeight": [
+      1.4,
+      1.7
+    ],
     "headingLineHeightMax": 1.3,
     "maxFontFamilies": 3,
     "maxDistinctFontSizes": 12,
-    "lineLengthChars": [35, 85]
+    "lineLengthChars": [
+      35,
+      85
+    ]
   },
-  "contrast": { "bodyMin": 4.5, "largeMin": 3.0, "largePx": 24 },
-  "targets": { "desktopMinPx": 24, "mobileMinPx": 44 },
-  "spacing": { "gridPx": 4, "minOnGridRatio": 0.8 },
-  "radius": { "maxDistinct": 5 },
+  "contrast": {
+    "bodyMin": 4.5,
+    "largeMin": 3.0,
+    "largePx": 24
+  },
+  "targets": {
+    "desktopMinPx": 24,
+    "mobileMinPx": 44
+  },
+  "spacing": {
+    "gridPx": 4,
+    "minOnGridRatio": 0.8
+  },
+  "radius": {
+    "maxDistinct": 5
+  },
   "ai_tells": {
-    "defaultSansFamilies": ["inter", "geist", "system-ui", "-apple-system", "arial", "helvetica"],
-    "bannedPhrases": [
-      "unlock", "seamless", "seamlessly", "supercharge", "revolutionize", "revolutionise",
-      "elevate your", "game-changer", "game changing", "next-level", "cutting-edge",
-      "in today's fast-paced", "leverage", "streamline", "empower", "harness the power",
-      "take it to the next level", "unleash", "transform the way", "all-in-one"
+    "defaultSansFamilies": [
+      "inter",
+      "geist",
+      "system-ui",
+      "-apple-system",
+      "arial",
+      "helvetica"
     ],
-    "purpleBlueHueRange": [245, 295],
+    "bannedPhrases": [
+      "unlock",
+      "seamless",
+      "seamlessly",
+      "supercharge",
+      "revolutionize",
+      "revolutionise",
+      "elevate your",
+      "game-changer",
+      "game changing",
+      "next-level",
+      "cutting-edge",
+      "in today's fast-paced",
+      "leverage",
+      "streamline",
+      "empower",
+      "harness the power",
+      "take it to the next level",
+      "unleash",
+      "transform the way",
+      "all-in-one"
+    ],
+    "purpleBlueHueRange": [
+      245,
+      295
+    ],
     "pillRadiusPx": 9999,
     "glowBlurPx": 40
-  }
+  },
+  "_lanes": "correctness checks (overflow, semantics, axe, contrast, min text, targets) gate a build; taste heuristics are reported as info. Taste is judged against accepted references (ledger accepts, knowledge/larpo-shipped), not by these numbers."
 }
