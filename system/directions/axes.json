@@ -1,0 +1,88 @@
+{
+  "_comment": "Direction axes the dealer samples from. Derived from Larpo's divergence contract (larpo-knowledge-base/inbox/2026-09-01-hero-divergence-and-design-research.md), knowledge/web/teardown-synthesis.md and knowledge/web/creative-direction.md. Add options freely; never delete one just because it was dealt badly once.",
+  "hero_class": [
+    { "id": "product-proof", "note": "Visitor understands input, action, transformation or decision from believable interface evidence." },
+    { "id": "brand-campaign", "note": "Frame establishes desire, worldview or category position; must not masquerade as product proof." },
+    { "id": "editorial-explanation", "note": "Argument-led: a claim set like an article or manifesto, with one artifact as evidence." },
+    { "id": "interactive-utility", "note": "The hero is a small working tool or demo the visitor can use immediately." }
+  ],
+  "structure": [
+    { "id": "full-bleed-stage", "note": "One edge-to-edge scene; type lives inside it." },
+    { "id": "left-rail", "note": "Narrow fixed rail carries identity/nav/CTA; the wide field is the artifact." },
+    { "id": "right-rail", "note": "Mirror of left rail; copy sits at the field and the rail holds meta." },
+    { "id": "index-catalogue", "note": "Numbered list/table as the hero, switchable views." },
+    { "id": "centered-type-field", "note": "Type is the composition; one centred statement with disciplined negative space." },
+    { "id": "horizontal-band", "note": "A wide horizontal strip of content crosses the fold; stacked bands below." },
+    { "id": "product-window-as-canvas", "note": "The product UI is the page, cropped large, headline set inside or over it." },
+    { "id": "editorial-spread", "note": "Two asymmetric columns like a magazine spread, caption and pull-quote logic." },
+    { "id": "asymmetric-crop", "note": "Large subject cropped off-frame; copy sits in the remaining space." },
+    { "id": "poster", "note": "One typographic or illustrative poster with minimal chrome." },
+    { "id": "stacked-chapters", "note": "Hero is chapter one of several full-height chapters, each with its own composition." },
+    { "id": "spatial-canvas", "note": "Pannable or layered canvas; elements positioned in 2D space." },
+    { "id": "state-boundary", "note": "A literal before/after or state boundary divides the frame." },
+    { "id": "ticker-wall", "note": "Dense, live-feeling field of evidence (numbers, events, logs) with a clear focal point." }
+  ],
+  "type_voice": [
+    { "id": "utilitarian-grotesk", "note": "Plain, precise sans; hierarchy by size and weight only." },
+    { "id": "humanist-sans", "note": "Warm open sans with calligraphic cues." },
+    { "id": "neo-grotesque-large", "note": "Tight neo-grotesque used at unusually large or unusually small scale." },
+    { "id": "editorial-serif", "note": "High-contrast or old-style serif display with a quiet sans for UI." },
+    { "id": "slab-industrial", "note": "Slab or industrial display with a plain text face." },
+    { "id": "condensed-poster", "note": "Condensed display, uppercase or sentence case, poster-scale." },
+    { "id": "mono-plus-sans", "note": "Monospace as real data language beside a sans for prose." },
+    { "id": "variable-axis-display", "note": "Variable font with width/weight/optical axes doing expressive work." },
+    { "id": "geometric-display", "note": "Geometric display face with character; humanist text face." },
+    { "id": "transitional-text-serif", "note": "Serif for body copy as well, sans reserved for controls." }
+  ],
+  "palette_temperature": [
+    { "id": "mineral-cool", "note": "Slate, glacier, steel; cool neutrals, restrained accent." },
+    { "id": "botanical-muted", "note": "Moss, sage, clay; low chroma, organic." },
+    { "id": "optical-black-white", "note": "Pure contrast, one hairline colour." },
+    { "id": "sun-faded-warm", "note": "Bleached warm neutrals, terracotta or ochre accent." },
+    { "id": "high-chroma-signal", "note": "One loud signal colour on disciplined neutrals." },
+    { "id": "nocturnal-low-chroma", "note": "Deep desaturated darks with a single luminous point." },
+    { "id": "material-monochrome", "note": "One hue family, tonal depth carries hierarchy." },
+    { "id": "paper-and-ink", "note": "Paper ground, ink text, one spot colour; print logic." },
+    { "id": "saturated-field", "note": "A full saturated colour field as the ground." },
+    { "id": "cultural-pattern", "note": "Palette and pattern drawn from a specific cultural or material reference." }
+  ],
+  "cta_grammar": [
+    { "id": "solid-conventional", "note": "Solid button, clear label; fine when everything else is distinctive." },
+    { "id": "text-action-underline", "note": "Typographic link-style action with strong underline/arrow behaviour." },
+    { "id": "inline-in-copy", "note": "Action embedded in the sentence." },
+    { "id": "command-bar", "note": "Input or command-palette style entry point." },
+    { "id": "oversized-block", "note": "Very large block action that is a section of its own." },
+    { "id": "two-step-split", "note": "Choose-your-path pair that resolves a real question." },
+    { "id": "sticky-edge", "note": "Action pinned to a viewport edge." },
+    { "id": "product-native-control", "note": "Control whose shape or behaviour comes from the product (dial, toggle, stamp, key)." }
+  ],
+  "nav_grammar": [
+    { "id": "top-bar-conventional", "note": "Logo, links, action; keep it if proportions and type are authored." },
+    { "id": "left-rail-nav", "note": "Vertical navigation in the rail." },
+    { "id": "wordmark-plus-menu", "note": "Wordmark and a single menu trigger." },
+    { "id": "index-list-nav", "note": "Nav is a visible numbered index." },
+    { "id": "inline-with-hero", "note": "Links sit inside the hero composition instead of a bar." },
+    { "id": "command-palette-nav", "note": "Keyboard-first command palette with a visible hint." },
+    { "id": "edge-dock-not-pill", "note": "Docked to an edge with square or product-native geometry; never a floating pill." }
+  ],
+  "motion_signature": [
+    { "id": "still-with-craft", "note": "No motion; craft in type, crop and detail." },
+    { "id": "type-reveal", "note": "Typographic entrance with deliberate timing." },
+    { "id": "scroll-scrubbed-product", "note": "Product state advances with scroll." },
+    { "id": "cursor-reactive", "note": "Pointer-driven response with a still fallback." },
+    { "id": "ambient-loop", "note": "Slow loop that expresses product behaviour." },
+    { "id": "layout-morph", "note": "Shared-layout transitions between states." },
+    { "id": "stagger-cascade", "note": "Ordered entrance of related items." },
+    { "id": "state-transition-demo", "note": "A real decision or state change plays out in the hero." }
+  ],
+  "proof_artifact": [
+    { "id": "workflow-ui", "note": "Input to action to outcome shown as real interface." },
+    { "id": "before-after-boundary", "note": "Real before/after with the boundary as the hero." },
+    { "id": "live-data-field", "note": "Believable live data with a focal readout." },
+    { "id": "artifact-document", "note": "The product's output as a document, report or message." },
+    { "id": "code-or-terminal", "note": "Code, diff, CLI or API response." },
+    { "id": "map-or-diagram", "note": "System, route or architecture drawn precisely." },
+    { "id": "annotated-photograph", "note": "Real photographic subject with callouts." },
+    { "id": "numeric-evidence-wall", "note": "Specific numbers set large with their source." }
+  ]
+}

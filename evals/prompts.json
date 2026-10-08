@@ -1,0 +1,19 @@
+{
+  "_comment": "Fixed eval briefs. Re-run the whole set after any meaningful change to knowledge/, system/ or skills/, then compare with tools/score.mjs. Never edit a brief to make a run look better; add new ones instead.",
+  "briefs": [
+    { "id": "hero-ai-devtool", "kind": "hero", "brief": "Hero section for an AI code-review tool that catches bugs before merge. Audience: engineering leads at 50-500 person startups. One action: start a free trial." },
+    { "id": "hero-fintech-b2b", "kind": "hero", "brief": "Hero for a B2B spend-management platform for finance teams at mid-size companies. Must feel trustworthy and precise, not corporate-stock. One action: book a demo." },
+    { "id": "hero-ai-creative", "kind": "hero", "brief": "Hero for an AI tool that turns rough product photos into studio-quality ad creatives. Audience: ecommerce marketers. Should feel creative and confident." },
+    { "id": "landing-saas-full", "kind": "landing", "brief": "Full landing page (hero, logos, problem, product proof, 3 features, testimonial slot, pricing with 3 tiers, FAQ, final CTA) for a customer-support automation SaaS." },
+    { "id": "landing-ai-agent", "kind": "landing", "brief": "Landing page for an AI agent platform where non-technical teams build workflow agents. Include an interactive-feeling product demo section and an integrations section." },
+    { "id": "pricing-page", "kind": "section", "brief": "Pricing page for a product-analytics SaaS: three tiers plus enterprise, monthly/annual toggle, comparison table, FAQ." },
+    { "id": "funnel-webinar", "kind": "funnel", "brief": "Webinar registration page and thank-you page for 'How we cut churn 30% with onboarding changes', speaker bio, agenda, countdown, form." },
+    { "id": "funnel-waitlist", "kind": "funnel", "brief": "Waitlist page for a pre-launch AI note-taking app with referral mechanic and position-in-line confirmation state." },
+    { "id": "app-dashboard", "kind": "app-ui", "brief": "Dashboard screen for a usage-based billing product: key metrics, a revenue chart, a customers table with filters, empty and loading states." },
+    { "id": "app-settings-forms", "kind": "app-ui", "brief": "Account settings area with profile form, team members table, API keys, and a destructive-action confirmation dialog, including all form states." }
+  ],
+  "rubric": {
+    "_comment": "Human + agent review after the automated checks. Score 1-5 each; record in evals/results.",
+    "axes": ["hierarchy and focal point", "type craft", "spacing and rhythm", "colour and surface", "distinctiveness (could another company use this skeleton unchanged?)", "product proof and believability", "copy specificity", "states and responsiveness"]
+  }
+}

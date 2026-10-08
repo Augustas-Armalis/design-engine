@@ -1,0 +1,7061 @@
+{
+ "schema": "design-engine/palette@1",
+ "contrast_gates": {
+  "ink-1": "WCAG>=12 target (verified >=14)",
+  "ink-2": "WCAG>=7 and |APCA Lc|>=75",
+  "ink-3": "WCAG>=4.5 and |Lc|>=60",
+  "accent-text / state fg / accent2-text": "WCAG>=4.5 and |Lc|>=60 on page, card, sunken(where listed) and own soft bg",
+  "accent-on on accent": "WCAG>=4.5 and |Lc|>=60 (signal-orange: |Lc|>=50, large/bold labels only)",
+  "border-strong / ring": "WCAG>=3 and |Lc|>=30 on page and card"
+ },
+ "palettes": [
+  {
+   "id": "mineral-cool",
+   "name": "Basalt & Glacier",
+   "archetype": "mineral cool",
+   "suits": "devtools, infra/security, B2B SaaS, climate-data, architecture studios",
+   "avoid": "food, kids, luxury warmth",
+   "mood": "calm, precise, cold-clean",
+   "accent_hue": 205,
+   "light": {
+    "surface-page": {
+     "oklch": "oklch(0.975 0.010 235)",
+     "hex": "#f1f8fd"
+    },
+    "surface-card": {
+     "oklch": "oklch(0.995 0.003 235)",
+     "hex": "#fcfeff"
+    },
+    "surface-sunken": {
+     "oklch": "oklch(0.945 0.010 235)",
+     "hex": "#e7eef3"
+    },
+    "surface-raised": {
+     "oklch": "oklch(0.990 0.006 235)",
+     "hex": "#f8fcff"
+    },
+    "surface-inverse": {
+     "oklch": "oklch(0.250 0.006 235)",
+     "hex": "#1f2224"
+    },
+    "ink-1": {
+     "oklch": "oklch(0.220 0.008 235)",
+     "hex": "#171b1e"
+    },
+    "ink-2": {
+     "oklch": "oklch(0.424 0.010 235)",
+     "hex": "#494f53"
+    },
+    "ink-3": {
+     "oklch": "oklch(0.528 0.010 235)",
+     "hex": "#666c70"
+    },
+    "ink-inverse": {
+     "oklch": "oklch(0.970 0.008 235)",
+     "hex": "#f0f6fa"
+    },
+    "border-subtle": {
+     "oklch": "oklch(0.900 0.012 235)",
+     "hex": "#d7dfe5"
+    },
+    "border-strong": {
+     "oklch": "oklch(0.648 0.013 235)",
+     "hex": "#879095"
+    },
+    "accent": {
+     "oklch": "oklch(0.520 0.089 205)",
+     "hex": "#007781"
+    },
+    "accent-on": {
+     "oklch": "oklch(0.985 0.005 235)",
+     "hex": "#f7fbfd"
+    },
+    "accent-hover": {
+     "oklch": "oklch(0.475 0.081 205)",
+     "hex": "#006972"
+    },
+    "accent-soft": {
+     "oklch": "oklch(0.955 0.045 205)",
+     "hex": "#cefaff"
+    },
+    "accent-text": {
+     "oklch": "oklch(0.520 0.089 205)",
+     "hex": "#007781"
+    },
+    "ring": {
+     "oklch": "oklch(0.520 0.089 205)",
+     "hex": "#007781"
+    },
+    "success": {
+     "oklch": "oklch(0.514 0.130 150)",
+     "hex": "#1a7b3c"
+    },
+    "success-soft": {
+     "oklch": "oklch(0.955 0.040 150)",
+     "hex": "#def8e2"
+    },
+    "warning": {
+     "oklch": "oklch(0.534 0.110 82)",
+     "hex": "#8c6500"
+    },
+    "warning-soft": {
+     "oklch": "oklch(0.955 0.040 82)",
+     "hex": "#feeed3"
+    },
+    "danger": {
+     "oklch": "oklch(0.546 0.130 27)",
+     "hex": "#af4d45"
+    },
+    "danger-soft": {
+     "oklch": "oklch(0.955 0.022 27)",
+     "hex": "#ffebe8"
+    },
+    "info": {
+     "oklch": "oklch(0.528 0.121 240)",
+     "hex": "#0072a9"
+    },
+    "info-soft": {
+     "oklch": "oklch(0.955 0.024 240)",
+     "hex": "#e2f3ff"
+    }
+   },
+   "light_p3_accent": "oklch(0.520 0.112 205)",
+   "light_contrast": [
+    {
+     "fg": "ink-1",
+     "bg": "surface-page",
+     "wcag": 16.16,
+     "apca": 99.4
+    },
+    {
+     "fg": "ink-1",
+     "bg": "surface-card",
+     "wcag": 17.13,
+     "apca": 103.4
+    },
+    {
+     "fg": "ink-2",
+     "bg": "surface-sunken",
+     "wcag": 7.09,
+     "apca": 78.0
+    },
+    {
+     "fg": "ink-3",
+     "bg": "surface-sunken",
+     "wcag": 4.54,
+     "apca": 65.8
+    },
+    {
+     "fg": "accent-on",
+     "bg": "accent",
+     "wcag": 5.1,
+     "apca": -78.1
+    },
+    {
+     "fg": "accent-on",
+     "bg": "accent-hover",
+     "wcag": 6.18,
+     "apca": -83.4
+    },
+    {
+     "fg": "accent-text",
+     "bg": "surface-page",
+     "wcag": 4.95,
+     "apca": 71.0
+    },
+    {
+     "fg": "accent-text",
+     "bg": "accent-soft",
+     "wcag": 4.74,
+     "apca": 68.1
+    },
+    {
+     "fg": "border-strong",
+     "bg": "surface-page",
+     "wcag": 3.03,
+     "apca": 55.0
+    },
+    {
+     "fg": "border-strong",
+     "bg": "surface-card",
+     "wcag": 3.22,
+     "apca": 59.0
+    },
+    {
+     "fg": "ring",
+     "bg": "surface-page",
+     "wcag": 4.95,
+     "apca": 71.0
+    },
+    {
+     "fg": "accent",
+     "bg": "surface-page",
+     "wcag": 4.95,
+     "apca": 71.0
+    },
+    {
+     "fg": "ink-inverse",
+     "bg": "surface-inverse",
+     "wcag": 14.68,
+     "apca": -99.0
+    },
+    {
+     "fg": "success",
+     "bg": "surface-page",
+     "wcag": 4.97,
+     "apca": 71.2
+    },
+    {
+     "fg": "success",
+     "bg": "success-soft",
+     "wcag": 4.73,
+     "apca": 67.9
+    },
+    {
+     "fg": "warning",
+     "bg": "surface-page",
+     "wcag": 4.93,
+     "apca": 71.2
+    },
+    {
+     "fg": "warning",
+     "bg": "warning-soft",
+     "wcag": 4.62,
+     "apca": 66.9
+    },
+    {
+     "fg": "danger",
+     "bg": "surface-page",
+     "wcag": 4.93,
+     "apca": 70.9
+    },
+    {
+     "fg": "danger",
+     "bg": "danger-soft",
+     "wcag": 4.61,
+     "apca": 66.3
+    },
+    {
+     "fg": "info",
+     "bg": "surface-page",
+     "wcag": 4.92,
+     "apca": 70.8
+    },
+    {
+     "fg": "info",
+     "bg": "info-soft",
+     "wcag": 4.65,
+     "apca": 66.9
+    }
+   ],
+   "light_ramps": {
+    "neutral": [
+     {
+      "oklch": "oklch(0.991 0.005 235)",
+      "hex": "#f9fdff"
+     },
+     {
+      "oklch": "oklch(0.982 0.006 235)",
+      "hex": "#f6fafc"
+     },
+     {
+      "oklch": "oklch(0.955 0.006 235)",
+      "hex": "#ecf1f4"
+     },
+     {
+      "oklch": "oklch(0.931 0.007 235)",
+      "hex": "#e4e9ec"
+     },
+     {
+      "oklch": "oklch(0.907 0.007 235)",
+      "hex": "#dce1e5"
+     },
+     {
+      "oklch": "oklch(0.885 0.008 235)",
+      "hex": "#d4dade"
+     },
+     {
+      "oklch": "oklch(0.851 0.009 235)",
+      "hex": "#c9cfd3"
+     },
+     {
+      "oklch": "oklch(0.792 0.009 235)",
+      "hex": "#b6bcc0"
+     },
+     {
+      "oklch": "oklch(0.643 0.010 235)",
+      "hex": "#878e92"
+     },
+     {
+      "oklch": "oklch(0.610 0.010 235)",
+      "hex": "#7e8488"
+     },
+     {
+      "oklch": "oklch(0.503 0.010 235)",
+      "hex": "#5f6569"
+     },
+     {
+      "oklch": "oklch(0.244 0.010 235)",
+      "hex": "#1c2124"
+     }
+    ],
+    "accent": [
+     {
+      "oklch": "oklch(0.993 0.002 205)",
+      "hex": "#fcfdfd"
+     },
+     {
+      "oklch": "oklch(0.982 0.005 205)",
+      "hex": "#f6fafb"
+     },
+     {
+      "oklch": "oklch(0.960 0.010 205)",
+      "hex": "#eaf4f5"
+     },
+     {
+      "oklch": "oklch(0.938 0.018 205)",
+      "hex": "#ddeef0"
+     },
+     {
+      "oklch": "oklch(0.905 0.026 205)",
+      "hex": "#cce5e8"
+     },
+     {
+      "oklch": "oklch(0.863 0.035 205)",
+      "hex": "#b8d9dd"
+     },
+     {
+      "oklch": "oklch(0.810 0.046 205)",
+      "hex": "#9fcacf"
+     },
+     {
+      "oklch": "oklch(0.734 0.063 205)",
+      "hex": "#79b5bc"
+     },
+     {
+      "oklch": "oklch(0.520 0.089 205)",
+      "hex": "#007781"
+     },
+     {
+      "oklch": "oklch(0.493 0.084 205)",
+      "hex": "#006f78"
+     },
+     {
+      "oklch": "oklch(0.520 0.084 205)",
+      "hex": "#147780"
+     },
+     {
+      "oklch": "oklch(0.290 0.050 205)",
+      "hex": "#003237"
+     }
+    ]
+   },
+   "dark": {
+    "surface-page": {
+     "oklch": "oklch(0.175 0.014 240)",
+     "hex": "#0b1116"
+    },
+    "surface-card": {
+     "oklch": "oklch(0.210 0.014 240)",
+     "hex": "#13191e"
+    },
+    "surface-sunken": {
+     "oklch": "oklch(0.145 0.014 240)",
+     "hex": "#050b0f"
+    },
+    "surface-raised": {
+     "oklch": "oklch(0.245 0.014 240)",
+     "hex": "#1b2127"
+    },
+    "surface-inverse": {
+     "oklch": "oklch(0.940 0.014 240)",
+     "hex": "#e3edf4"
+    },
+    "ink-1": {
+     "oklch": "oklch(0.950 0.011 240)",
+     "hex": "#e8f0f5"
+    },
+    "ink-2": {
+     "oklch": "oklch(0.848 0.014 240)",
+     "hex": "#c5cfd5"
+    },
+    "ink-3": {
+     "oklch": "oklch(0.768 0.014 240)",
+     "hex": "#acb5bc"
+    },
+    "ink-inverse": {
+     "oklch": "oklch(0.220 0.011 240)",
+     "hex": "#161b1f"
+    },
+    "border-subtle": {
+     "oklch": "oklch(0.260 0.017 240)",
+     "hex": "#1d252b"
+    },
+    "border-strong": {
+     "oklch": "oklch(0.572 0.018 240)",
+     "hex": "#6f7a82"
+    },
+    "accent": {
+     "oklch": "oklch(0.760 0.100 205)",
+     "hex": "#57c3cf"
+    },
+    "accent-on": {
+     "oklch": "oklch(0.190 0.011 240)",
+     "hex": "#0f1518"
+    },
+    "accent-hover": {
+     "oklch": "oklch(0.800 0.100 205)",
+     "hex": "#65d0dc"
+    },
+    "accent-soft": {
+     "oklch": "oklch(0.235 0.040 205)",
+     "hex": "#002327"
+    },
+    "accent-text": {
+     "oklch": "oklch(0.762 0.100 205)",
+     "hex": "#58c4d0"
+    },
+    "ring": {
+     "oklch": "oklch(0.760 0.100 205)",
+     "hex": "#57c3cf"
+    },
+    "success": {
+     "oklch": "oklch(0.756 0.130 150)",
+     "hex": "#6ec783"
+    },
+    "success-soft": {
+     "oklch": "oklch(0.235 0.040 150)",
+     "hex": "#0f2314"
+    },
+    "warning": {
+     "oklch": "oklch(0.772 0.120 82)",
+     "hex": "#dbad53"
+    },
+    "warning-soft": {
+     "oklch": "oklch(0.235 0.040 82)",
+     "hex": "#271c06"
+    },
+    "danger": {
+     "oklch": "oklch(0.784 0.126 27)",
+     "hex": "#ff988d"
+    },
+    "danger-soft": {
+     "oklch": "oklch(0.235 0.040 27)",
+     "hex": "#2e1614"
+    },
+    "info": {
+     "oklch": "oklch(0.764 0.130 240)",
+     "hex": "#5abdfc"
+    },
+    "info-soft": {
+     "oklch": "oklch(0.235 0.040 240)",
+     "hex": "#0a202f"
+    }
+   },
+   "dark_p3_accent": "oklch(0.760 0.112 205)",
+   "dark_contrast": [
+    {
+     "fg": "ink-1",
+     "bg": "surface-page",
+     "wcag": 16.47,
+     "apca": -96.7
+    },
+    {
+     "fg": "ink-1",
+     "bg": "surface-card",
+     "wcag": 15.36,
+     "apca": -96.1
+    },
+    {
+     "fg": "ink-2",
+     "bg": "surface-sunken",
+     "wcag": 12.5,
+     "apca": -76.3
+    },
+    {
+     "fg": "ink-3",
+     "bg": "surface-sunken",
+     "wcag": 9.51,
+     "apca": -61.4
+    },
+    {
+     "fg": "accent-on",
+     "bg": "accent",
+     "wcag": 8.86,
+     "apca": 62.6
+    },
+    {
+     "fg": "accent-on",
+     "bg": "accent-hover",
+     "wcag": 10.18,
+     "apca": 69.4
+    },
+    {
+     "fg": "accent-text",
+     "bg": "surface-page",
+     "wcag": 9.24,
+     "apca": -62.0
+    },
+    {
+     "fg": "accent-text",
+     "bg": "accent-soft",
+     "wcag": 8.05,
+     "apca": -60.4
+    },
+    {
+     "fg": "border-strong",
+     "bg": "surface-page",
+     "wcag": 4.32,
+     "apca": -30.7
+    },
+    {
+     "fg": "border-strong",
+     "bg": "surface-card",
+     "wcag": 4.03,
+     "apca": -30.1
+    },
+    {
+     "fg": "ring",
+     "bg": "surface-page",
+     "wcag": 9.14,
+     "apca": -61.5
+    },
+    {
+     "fg": "accent",
+     "bg": "surface-page",
+     "wcag": 9.14,
+     "apca": -61.5
+    },
+    {
+     "fg": "ink-inverse",
+     "bg": "surface-inverse",
+     "wcag": 14.61,
+     "apca": 92.6
+    },
+    {
+     "fg": "success",
+     "bg": "surface-page",
+     "wcag": 9.19,
+     "apca": -61.7
+    },
+    {
+     "fg": "success",
+     "bg": "success-soft",
+     "wcag": 7.99,
+     "apca": -60.1
+    },
+    {
+     "fg": "warning",
+     "bg": "surface-page",
+     "wcag": 9.15,
+     "apca": -61.4
+    },
+    {
+     "fg": "warning",
+     "bg": "warning-soft",
+     "wcag": 8.06,
+     "apca": -60.0
+    },
+    {
+     "fg": "danger",
+     "bg": "surface-page",
+     "wcag": 9.16,
+     "apca": -61.6
+    },
+    {
+     "fg": "danger",
+     "bg": "danger-soft",
+     "wcag": 8.16,
+     "apca": -60.3
+    },
+    {
+     "fg": "info",
+     "bg": "surface-page",
+     "wcag": 9.15,
+     "apca": -61.6
+    },
+    {
+     "fg": "info",
+     "bg": "info-soft",
+     "wcag": 8.03,
+     "apca": -60.1
+    }
+   ],
+   "dark_ramps": {
+    "neutral": [
+     {
+      "oklch": "oklch(0.178 0.007 240)",
+      "hex": "#0e1214"
+     },
+     {
+      "oklch": "oklch(0.213 0.008 240)",
+      "hex": "#161a1c"
+     },
+     {
+      "oklch": "oklch(0.252 0.009 240)",
+      "hex": "#1e2326"
+     },
+     {
+      "oklch": "oklch(0.285 0.010 240)",
+      "hex": "#262b2e"
+     },
+     {
+      "oklch": "oklch(0.313 0.011 240)",
+      "hex": "#2c3236"
+     },
+     {
+      "oklch": "oklch(0.348 0.011 240)",
+      "hex": "#353b3f"
+     },
+     {
+      "oklch": "oklch(0.402 0.012 240)",
+      "hex": "#42494e"
+     },
+     {
+      "oklch": "oklch(0.489 0.013 240)",
+      "hex": "#5a6167"
+     },
+     {
+      "oklch": "oklch(0.538 0.014 240)",
+      "hex": "#676f76"
+     },
+     {
+      "oklch": "oklch(0.583 0.014 240)",
+      "hex": "#747c83"
+     },
+     {
+      "oklch": "oklch(0.770 0.014 240)",
+      "hex": "#adb6bc"
+     },
+     {
+      "oklch": "oklch(0.949 0.014 240)",
+      "hex": "#e6f0f7"
+     }
+    ],
+    "accent": [
+     {
+      "oklch": "oklch(0.194 0.013 205)",
+      "hex": "#0e1617"
+     },
+     {
+      "oklch": "oklch(0.213 0.015 205)",
+      "hex": "#101b1c"
+     },
+     {
+      "oklch": "oklch(0.274 0.034 205)",
+      "hex": "#102c2f"
+     },
+     {
+      "oklch": "oklch(0.320 0.050 205)",
+      "hex": "#083a3f"
+     },
+     {
+      "oklch": "oklch(0.367 0.055 205)",
+      "hex": "#11474d"
+     },
+     {
+      "oklch": "oklch(0.416 0.058 205)",
+      "hex": "#1c555b"
+     },
+     {
+      "oklch": "oklch(0.474 0.063 205)",
+      "hex": "#29666d"
+     },
+     {
+      "oklch": "oklch(0.541 0.072 205)",
+      "hex": "#327b83"
+     },
+     {
+      "oklch": "oklch(0.760 0.100 205)",
+      "hex": "#57c3cf"
+     },
+     {
+      "oklch": "oklch(0.800 0.088 205)",
+      "hex": "#74ced9"
+     },
+     {
+      "oklch": "oklch(0.762 0.065 205)",
+      "hex": "#7fbec5"
+     },
+     {
+      "oklch": "oklch(0.912 0.026 205)",
+      "hex": "#cfe7ea"
+     }
+    ]
+   }
+  },
+  {
+   "id": "botanical-muted",
+   "name": "Fern & Bark",
+   "archetype": "botanical muted",
+   "suits": "wellness, food and drink, sustainability, outdoor, supplements, slow-living",
+   "avoid": "fintech urgency, nightlife",
+   "mood": "organic, grounded, quiet",
+   "accent_hue": 150,
+   "light": {
+    "surface-page": {
+     "oklch": "oklch(0.965 0.012 135)",
+     "hex": "#f0f5ed"
+    },
+    "surface-card": {
+     "oklch": "oklch(0.985 0.012 135)",
+     "hex": "#f7fcf4"
+    },
+    "surface-sunken": {
+     "oklch": "oklch(0.930 0.012 135)",
+     "hex": "#e4eae2"
+    },
+    "surface-raised": {
+     "oklch": "oklch(0.990 0.012 135)",
+     "hex": "#f8fef6"
+    },
+    "surface-inverse": {
+     "oklch": "oklch(0.240 0.007 135)",
+     "hex": "#1e201d"
+    },
+    "ink-1": {
+     "oklch": "oklch(0.230 0.010 135)",
+     "hex": "#1b1e19"
+    },
+    "ink-2": {
+     "oklch": "oklch(0.414 0.012 135)",
+     "hex": "#494d46"
+    },
+    "ink-3": {
+     "oklch": "oklch(0.518 0.012 135)",
+     "hex": "#656a63"
+    },
+    "ink-inverse": {
+     "oklch": "oklch(0.970 0.010 135)",
+     "hex": "#f2f7f0"
+    },
+    "border-subtle": {
+     "oklch": "oklch(0.890 0.014 135)",
+     "hex": "#d7ddd4"
+    },
+    "border-strong": {
+     "oklch": "oklch(0.640 0.016 135)",
+     "hex": "#888e85"
+    },
+    "accent": {
+     "oklch": "oklch(0.460 0.090 150)",
+     "hex": "#2e663c"
+    },
+    "accent-on": {
+     "oklch": "oklch(0.985 0.006 135)",
+     "hex": "#f8fbf7"
+    },
+    "accent-hover": {
+     "oklch": "oklch(0.415 0.090 150)",
+     "hex": "#205930"
+    },
+    "accent-soft": {
+     "oklch": "oklch(0.945 0.045 150)",
+     "hex": "#d9f6dd"
+    },
+    "accent-text": {
+     "oklch": "oklch(0.510 0.090 150)",
+     "hex": "#3c744a"
+    },
+    "ring": {
+     "oklch": "oklch(0.460 0.090 150)",
+     "hex": "#2e663c"
+    },
+    "success": {
+     "oklch": "oklch(0.510 0.090 185)",
+     "hex": "#00766d"
+    },
+    "success-soft": {
+     "oklch": "oklch(0.955 0.040 185)",
+     "hex": "#d3f9f4"
+    },
+    "warning": {
+     "oklch": "oklch(0.522 0.108 80)",
+     "hex": "#8a6100"
+    },
+    "warning-soft": {
+     "oklch": "oklch(0.955 0.040 80)",
+     "hex": "#ffeed3"
+    },
+    "danger": {
+     "oklch": "oklch(0.534 0.130 28)",
+     "hex": "#ab4a40"
+    },
+    "danger-soft": {
+     "oklch": "oklch(0.955 0.022 28)",
+     "hex": "#ffebe8"
+    },
+    "info": {
+     "oklch": "oklch(0.518 0.130 245)",
+     "hex": "#016dad"
+    },
+    "info-soft": {
+     "oklch": "oklch(0.955 0.023 245)",
+     "hex": "#e4f2ff"
+    }
+   },
+   "light_p3_accent": null,
+   "light_contrast": [
+    {
+     "fg": "ink-1",
+     "bg": "surface-page",
+     "wcag": 15.24,
+     "apca": 96.9
+    },
+    {
+     "fg": "ink-1",
+     "bg": "surface-card",
+     "wcag": 16.2,
+     "apca": 101.0
+    },
+    {
+     "fg": "ink-2",
+     "bg": "surface-sunken",
+     "wcag": 7.05,
+     "apca": 76.2
+    },
+    {
+     "fg": "ink-3",
+     "bg": "surface-sunken",
+     "wcag": 4.52,
+     "apca": 64.2
+    },
+    {
+     "fg": "accent-on",
+     "bg": "accent",
+     "wcag": 6.53,
+     "apca": -85.1
+    },
+    {
+     "fg": "accent-on",
+     "bg": "accent-hover",
+     "wcag": 7.95,
+     "apca": -89.7
+    },
+    {
+     "fg": "accent-text",
+     "bg": "surface-page",
+     "wcag": 5.01,
+     "apca": 70.6
+    },
+    {
+     "fg": "accent-text",
+     "bg": "accent-soft",
+     "wcag": 4.8,
+     "apca": 67.7
+    },
+    {
+     "fg": "border-strong",
+     "bg": "surface-page",
+     "wcag": 3.04,
+     "apca": 54.1
+    },
+    {
+     "fg": "border-strong",
+     "bg": "surface-card",
+     "wcag": 3.23,
+     "apca": 58.3
+    },
+    {
+     "fg": "ring",
+     "bg": "surface-page",
+     "wcag": 6.16,
+     "apca": 76.4
+    },
+    {
+     "fg": "accent",
+     "bg": "surface-page",
+     "wcag": 6.16,
+     "apca": 76.4
+    },
+    {
+     "fg": "ink-inverse",
+     "bg": "surface-inverse",
+     "wcag": 15.11,
+     "apca": -99.6
+    },
+    {
+     "fg": "success",
+     "bg": "surface-page",
+     "wcag": 4.98,
+     "apca": 70.0
+    },
+    {
+     "fg": "success",
+     "bg": "success-soft",
+     "wcag": 4.89,
+     "apca": 68.8
+    },
+    {
+     "fg": "warning",
+     "bg": "surface-page",
+     "wcag": 5.01,
+     "apca": 70.5
+    },
+    {
+     "fg": "warning",
+     "bg": "warning-soft",
+     "wcag": 4.86,
+     "apca": 68.5
+    },
+    {
+     "fg": "danger",
+     "bg": "surface-page",
+     "wcag": 5.02,
+     "apca": 70.2
+    },
+    {
+     "fg": "danger",
+     "bg": "danger-soft",
+     "wcag": 4.83,
+     "apca": 67.8
+    },
+    {
+     "fg": "info",
+     "bg": "surface-page",
+     "wcag": 5.01,
+     "apca": 70.1
+    },
+    {
+     "fg": "info",
+     "bg": "info-soft",
+     "wcag": 4.86,
+     "apca": 68.2
+    }
+   ],
+   "light_ramps": {
+    "neutral": [
+     {
+      "oklch": "oklch(0.991 0.006 135)",
+      "hex": "#fafdf9"
+     },
+     {
+      "oklch": "oklch(0.982 0.007 135)",
+      "hex": "#f7faf6"
+     },
+     {
+      "oklch": "oklch(0.955 0.007 135)",
+      "hex": "#eef1ec"
+     },
+     {
+      "oklch": "oklch(0.931 0.008 135)",
+      "hex": "#e6e9e4"
+     },
+     {
+      "oklch": "oklch(0.907 0.009 135)",
+      "hex": "#dee2dc"
+     },
+     {
+      "oklch": "oklch(0.885 0.010 135)",
+      "hex": "#d6dbd4"
+     },
+     {
+      "oklch": "oklch(0.851 0.011 135)",
+      "hex": "#cbd0c9"
+     },
+     {
+      "oklch": "oklch(0.792 0.011 135)",
+      "hex": "#b8bdb6"
+     },
+     {
+      "oklch": "oklch(0.643 0.012 135)",
+      "hex": "#8a8f88"
+     },
+     {
+      "oklch": "oklch(0.610 0.012 135)",
+      "hex": "#80857e"
+     },
+     {
+      "oklch": "oklch(0.503 0.012 135)",
+      "hex": "#61665f"
+     },
+     {
+      "oklch": "oklch(0.244 0.012 135)",
+      "hex": "#1e221c"
+     }
+    ],
+    "accent": [
+     {
+      "oklch": "oklch(0.993 0.001 150)",
+      "hex": "#fcfdfc"
+     },
+     {
+      "oklch": "oklch(0.982 0.004 150)",
+      "hex": "#f7faf8"
+     },
+     {
+      "oklch": "oklch(0.960 0.009 150)",
+      "hex": "#eef4ee"
+     },
+     {
+      "oklch": "oklch(0.938 0.016 150)",
+      "hex": "#e3eee5"
+     },
+     {
+      "oklch": "oklch(0.905 0.024 150)",
+      "hex": "#d5e4d7"
+     },
+     {
+      "oklch": "oklch(0.863 0.032 150)",
+      "hex": "#c4d8c7"
+     },
+     {
+      "oklch": "oklch(0.810 0.041 150)",
+      "hex": "#afc9b3"
+     },
+     {
+      "oklch": "oklch(0.734 0.056 150)",
+      "hex": "#90b396"
+     },
+     {
+      "oklch": "oklch(0.460 0.090 150)",
+      "hex": "#2e663c"
+     },
+     {
+      "oklch": "oklch(0.433 0.085 150)",
+      "hex": "#295e37"
+     },
+     {
+      "oklch": "oklch(0.510 0.076 150)",
+      "hex": "#45724f"
+     },
+     {
+      "oklch": "oklch(0.280 0.045 150)",
+      "hex": "#182f1d"
+     }
+    ]
+   },
+   "dark": {
+    "surface-page": {
+     "oklch": "oklch(0.170 0.014 150)",
+     "hex": "#0b110c"
+    },
+    "surface-card": {
+     "oklch": "oklch(0.205 0.014 150)",
+     "hex": "#131914"
+    },
+    "surface-sunken": {
+     "oklch": "oklch(0.140 0.014 150)",
+     "hex": "#060b06"
+    },
+    "surface-raised": {
+     "oklch": "oklch(0.240 0.014 150)",
+     "hex": "#1b211c"
+    },
+    "surface-inverse": {
+     "oklch": "oklch(0.940 0.014 150)",
+     "hex": "#e5eee6"
+    },
+    "ink-1": {
+     "oklch": "oklch(0.945 0.011 150)",
+     "hex": "#e8efe9"
+    },
+    "ink-2": {
+     "oklch": "oklch(0.848 0.014 150)",
+     "hex": "#c7d0c8"
+    },
+    "ink-3": {
+     "oklch": "oklch(0.766 0.014 150)",
+     "hex": "#adb6ae"
+    },
+    "ink-inverse": {
+     "oklch": "oklch(0.220 0.011 150)",
+     "hex": "#171c18"
+    },
+    "border-subtle": {
+     "oklch": "oklch(0.255 0.017 150)",
+     "hex": "#1d251f"
+    },
+    "border-strong": {
+     "oklch": "oklch(0.570 0.018 150)",
+     "hex": "#707b72"
+    },
+    "accent": {
+     "oklch": "oklch(0.744 0.100 150)",
+     "hex": "#7dbe8a"
+    },
+    "accent-on": {
+     "oklch": "oklch(0.190 0.011 150)",
+     "hex": "#101511"
+    },
+    "accent-hover": {
+     "oklch": "oklch(0.784 0.100 150)",
+     "hex": "#89cb97"
+    },
+    "accent-soft": {
+     "oklch": "oklch(0.230 0.045 150)",
+     "hex": "#0b2311"
+    },
+    "accent-text": {
+     "oklch": "oklch(0.760 0.100 150)",
+     "hex": "#82c38f"
+    },
+    "ring": {
+     "oklch": "oklch(0.744 0.100 150)",
+     "hex": "#7dbe8a"
+    },
+    "success": {
+     "oklch": "oklch(0.752 0.130 185)",
+     "hex": "#15c9b9"
+    },
+    "success-soft": {
+     "oklch": "oklch(0.230 0.040 185)",
+     "hex": "#00231f"
+    },
+    "warning": {
+     "oklch": "oklch(0.772 0.120 80)",
+     "hex": "#ddac54"
+    },
+    "warning-soft": {
+     "oklch": "oklch(0.230 0.040 80)",
+     "hex": "#271b05"
+    },
+    "danger": {
+     "oklch": "oklch(0.782 0.127 28)",
+     "hex": "#ff978a"
+    },
+    "danger-soft": {
+     "oklch": "oklch(0.230 0.040 28)",
+     "hex": "#2d1512"
+    },
+    "info": {
+     "oklch": "oklch(0.766 0.128 245)",
+     "hex": "#66bbff"
+    },
+    "info-soft": {
+     "oklch": "oklch(0.230 0.040 245)",
+     "hex": "#0b1f2e"
+    }
+   },
+   "dark_p3_accent": "oklch(0.744 0.112 150)",
+   "dark_contrast": [
+    {
+     "fg": "ink-1",
+     "bg": "surface-page",
+     "wcag": 16.33,
+     "apca": -95.8
+    },
+    {
+     "fg": "ink-1",
+     "bg": "surface-card",
+     "wcag": 15.26,
+     "apca": -95.1
+    },
+    {
+     "fg": "ink-2",
+     "bg": "surface-sunken",
+     "wcag": 12.55,
+     "apca": -76.5
+    },
+    {
+     "fg": "ink-3",
+     "bg": "surface-sunken",
+     "wcag": 9.52,
+     "apca": -61.4
+    },
+    {
+     "fg": "accent-on",
+     "bg": "accent",
+     "wcag": 8.44,
+     "apca": 60.1
+    },
+    {
+     "fg": "accent-on",
+     "bg": "accent-hover",
+     "wcag": 9.72,
+     "apca": 66.8
+    },
+    {
+     "fg": "accent-text",
+     "bg": "surface-page",
+     "wcag": 9.23,
+     "apca": -61.6
+    },
+    {
+     "fg": "accent-text",
+     "bg": "accent-soft",
+     "wcag": 8.04,
+     "apca": -60.0
+    },
+    {
+     "fg": "border-strong",
+     "bg": "surface-page",
+     "wcag": 4.33,
+     "apca": -30.7
+    },
+    {
+     "fg": "border-strong",
+     "bg": "surface-card",
+     "wcag": 4.05,
+     "apca": -30.0
+    },
+    {
+     "fg": "ring",
+     "bg": "surface-page",
+     "wcag": 8.73,
+     "apca": -58.8
+    },
+    {
+     "fg": "accent",
+     "bg": "surface-page",
+     "wcag": 8.73,
+     "apca": -58.8
+    },
+    {
+     "fg": "ink-inverse",
+     "bg": "surface-inverse",
+     "wcag": 14.56,
+     "apca": 92.6
+    },
+    {
+     "fg": "success",
+     "bg": "surface-page",
+     "wcag": 9.17,
+     "apca": -61.8
+    },
+    {
+     "fg": "success",
+     "bg": "success-soft",
+     "wcag": 8.0,
+     "apca": -60.2
+    },
+    {
+     "fg": "warning",
+     "bg": "surface-page",
+     "wcag": 9.19,
+     "apca": -61.4
+    },
+    {
+     "fg": "warning",
+     "bg": "warning-soft",
+     "wcag": 8.11,
+     "apca": -60.0
+    },
+    {
+     "fg": "danger",
+     "bg": "surface-page",
+     "wcag": 9.13,
+     "apca": -61.3
+    },
+    {
+     "fg": "danger",
+     "bg": "danger-soft",
+     "wcag": 8.18,
+     "apca": -60.0
+    },
+    {
+     "fg": "info",
+     "bg": "surface-page",
+     "wcag": 9.2,
+     "apca": -61.6
+    },
+    {
+     "fg": "info",
+     "bg": "info-soft",
+     "wcag": 8.1,
+     "apca": -60.1
+    }
+   ],
+   "dark_ramps": {
+    "neutral": [
+     {
+      "oklch": "oklch(0.178 0.007 150)",
+      "hex": "#0f1210"
+     },
+     {
+      "oklch": "oklch(0.213 0.008 150)",
+      "hex": "#171a17"
+     },
+     {
+      "oklch": "oklch(0.252 0.009 150)",
+      "hex": "#1f2320"
+     },
+     {
+      "oklch": "oklch(0.285 0.010 150)",
+      "hex": "#272b28"
+     },
+     {
+      "oklch": "oklch(0.313 0.011 150)",
+      "hex": "#2d332e"
+     },
+     {
+      "oklch": "oklch(0.348 0.011 150)",
+      "hex": "#363c37"
+     },
+     {
+      "oklch": "oklch(0.402 0.012 150)",
+      "hex": "#444a45"
+     },
+     {
+      "oklch": "oklch(0.489 0.013 150)",
+      "hex": "#5b625c"
+     },
+     {
+      "oklch": "oklch(0.538 0.014 150)",
+      "hex": "#69706a"
+     },
+     {
+      "oklch": "oklch(0.583 0.014 150)",
+      "hex": "#767e77"
+     },
+     {
+      "oklch": "oklch(0.770 0.014 150)",
+      "hex": "#aeb7b0"
+     },
+     {
+      "oklch": "oklch(0.949 0.014 150)",
+      "hex": "#e8f1e9"
+     }
+    ],
+    "accent": [
+     {
+      "oklch": "oklch(0.194 0.013 150)",
+      "hex": "#111612"
+     },
+     {
+      "oklch": "oklch(0.213 0.015 150)",
+      "hex": "#141b15"
+     },
+     {
+      "oklch": "oklch(0.274 0.034 150)",
+      "hex": "#1b2c1e"
+     },
+     {
+      "oklch": "oklch(0.320 0.050 150)",
+      "hex": "#1f3a25"
+     },
+     {
+      "oklch": "oklch(0.367 0.055 150)",
+      "hex": "#29472f"
+     },
+     {
+      "oklch": "oklch(0.416 0.058 150)",
+      "hex": "#34553b"
+     },
+     {
+      "oklch": "oklch(0.474 0.063 150)",
+      "hex": "#416649"
+     },
+     {
+      "oklch": "oklch(0.541 0.072 150)",
+      "hex": "#4f7b58"
+     },
+     {
+      "oklch": "oklch(0.744 0.100 150)",
+      "hex": "#7dbe8a"
+     },
+     {
+      "oklch": "oklch(0.784 0.088 150)",
+      "hex": "#90c99b"
+     },
+     {
+      "oklch": "oklch(0.760 0.065 150)",
+      "hex": "#94bd9b"
+     },
+     {
+      "oklch": "oklch(0.910 0.026 150)",
+      "hex": "#d6e7d8"
+     }
+    ]
+   }
+  },
+  {
+   "id": "warm-paper",
+   "name": "Ink & Oxblood",
+   "archetype": "warm paper",
+   "suits": "editorial, publishing, bookshops, journals, law and consulting, cultural institutions",
+   "avoid": "high-energy consumer, dashboards with many red states",
+   "mood": "considered, literate, tactile",
+   "accent_hue": 25,
+   "light": {
+    "surface-page": {
+     "oklch": "oklch(0.965 0.016 85)",
+     "hex": "#f8f3e8"
+    },
+    "surface-card": {
+     "oklch": "oklch(0.985 0.016 85)",
+     "hex": "#fffaee"
+    },
+    "surface-sunken": {
+     "oklch": "oklch(0.935 0.016 85)",
+     "hex": "#eee9de"
+    },
+    "surface-raised": {
+     "oklch": "oklch(0.990 0.010 85)",
+     "hex": "#fffbf4"
+    },
+    "surface-inverse": {
+     "oklch": "oklch(0.250 0.010 85)",
+     "hex": "#24211c"
+    },
+    "ink-1": {
+     "oklch": "oklch(0.220 0.013 85)",
+     "hex": "#1d1a14"
+    },
+    "ink-2": {
+     "oklch": "oklch(0.418 0.016 85)",
+     "hex": "#514c43"
+    },
+    "ink-3": {
+     "oklch": "oklch(0.522 0.016 85)",
+     "hex": "#6e695f"
+    },
+    "ink-inverse": {
+     "oklch": "oklch(0.965 0.013 85)",
+     "hex": "#f7f3ea"
+    },
+    "border-subtle": {
+     "oklch": "oklch(0.890 0.019 85)",
+     "hex": "#e1dacd"
+    },
+    "border-strong": {
+     "oklch": "oklch(0.642 0.021 85)",
+     "hex": "#938c7f"
+    },
+    "accent": {
+     "oklch": "oklch(0.420 0.130 25)",
+     "hex": "#862726"
+    },
+    "accent-on": {
+     "oklch": "oklch(0.985 0.008 85)",
+     "hex": "#fdfaf4"
+    },
+    "accent-hover": {
+     "oklch": "oklch(0.375 0.130 25)",
+     "hex": "#77171a"
+    },
+    "accent-soft": {
+     "oklch": "oklch(0.945 0.027 25)",
+     "hex": "#ffe6e4"
+    },
+    "accent-text": {
+     "oklch": "oklch(0.536 0.130 25)",
+     "hex": "#ac4a46"
+    },
+    "ring": {
+     "oklch": "oklch(0.420 0.130 25)",
+     "hex": "#862726"
+    },
+    "success": {
+     "oklch": "oklch(0.508 0.130 150)",
+     "hex": "#17793a"
+    },
+    "success-soft": {
+     "oklch": "oklch(0.955 0.040 150)",
+     "hex": "#def8e2"
+    },
+    "warning": {
+     "oklch": "oklch(0.526 0.111 75)",
+     "hex": "#8f6000"
+    },
+    "warning-soft": {
+     "oklch": "oklch(0.955 0.036 75)",
+     "hex": "#ffedd6"
+    },
+    "danger": {
+     "oklch": "oklch(0.538 0.130 10)",
+     "hex": "#ab495d"
+    },
+    "danger-soft": {
+     "oklch": "oklch(0.955 0.023 10)",
+     "hex": "#ffeaed"
+    },
+    "info": {
+     "oklch": "oklch(0.518 0.119 240)",
+     "hex": "#006fa5"
+    },
+    "info-soft": {
+     "oklch": "oklch(0.955 0.024 240)",
+     "hex": "#e2f3ff"
+    }
+   },
+   "light_p3_accent": "oklch(0.420 0.146 25)",
+   "light_contrast": [
+    {
+     "fg": "ink-1",
+     "bg": "surface-page",
+     "wcag": 15.68,
+     "apca": 97.3
+    },
+    {
+     "fg": "ink-1",
+     "bg": "surface-card",
+     "wcag": 16.66,
+     "apca": 101.4
+    },
+    {
+     "fg": "ink-2",
+     "bg": "surface-sunken",
+     "wcag": 7.04,
+     "apca": 76.5
+    },
+    {
+     "fg": "ink-3",
+     "bg": "surface-sunken",
+     "wcag": 4.51,
+     "apca": 64.4
+    },
+    {
+     "fg": "accent-on",
+     "bg": "accent",
+     "wcag": 8.64,
+     "apca": -91.0
+    },
+    {
+     "fg": "accent-on",
+     "bg": "accent-hover",
+     "wcag": 10.49,
+     "apca": -94.8
+    },
+    {
+     "fg": "accent-text",
+     "bg": "surface-page",
+     "wcag": 4.97,
+     "apca": 69.9
+    },
+    {
+     "fg": "accent-text",
+     "bg": "accent-soft",
+     "wcag": 4.63,
+     "apca": 65.3
+    },
+    {
+     "fg": "border-strong",
+     "bg": "surface-page",
+     "wcag": 3.01,
+     "apca": 53.8
+    },
+    {
+     "fg": "border-strong",
+     "bg": "surface-card",
+     "wcag": 3.2,
+     "apca": 57.9
+    },
+    {
+     "fg": "ring",
+     "bg": "surface-page",
+     "wcag": 8.14,
+     "apca": 82.7
+    },
+    {
+     "fg": "accent",
+     "bg": "surface-page",
+     "wcag": 8.14,
+     "apca": 82.7
+    },
+    {
+     "fg": "ink-inverse",
+     "bg": "surface-inverse",
+     "wcag": 14.48,
+     "apca": -97.8
+    },
+    {
+     "fg": "success",
+     "bg": "surface-page",
+     "wcag": 4.95,
+     "apca": 69.9
+    },
+    {
+     "fg": "success",
+     "bg": "success-soft",
+     "wcag": 4.86,
+     "apca": 68.7
+    },
+    {
+     "fg": "warning",
+     "bg": "surface-page",
+     "wcag": 4.94,
+     "apca": 70.0
+    },
+    {
+     "fg": "warning",
+     "bg": "warning-soft",
+     "wcag": 4.77,
+     "apca": 67.8
+    },
+    {
+     "fg": "danger",
+     "bg": "surface-page",
+     "wcag": 4.94,
+     "apca": 69.7
+    },
+    {
+     "fg": "danger",
+     "bg": "danger-soft",
+     "wcag": 4.75,
+     "apca": 67.1
+    },
+    {
+     "fg": "info",
+     "bg": "surface-page",
+     "wcag": 4.97,
+     "apca": 69.9
+    },
+    {
+     "fg": "info",
+     "bg": "info-soft",
+     "wcag": 4.85,
+     "apca": 68.2
+    }
+   ],
+   "light_ramps": {
+    "neutral": [
+     {
+      "oklch": "oklch(0.991 0.008 85)",
+      "hex": "#fffcf6"
+     },
+     {
+      "oklch": "oklch(0.982 0.009 85)",
+      "hex": "#fcf9f2"
+     },
+     {
+      "oklch": "oklch(0.955 0.010 85)",
+      "hex": "#f3f0e9"
+     },
+     {
+      "oklch": "oklch(0.931 0.011 85)",
+      "hex": "#ebe8e0"
+     },
+     {
+      "oklch": "oklch(0.907 0.012 85)",
+      "hex": "#e4e0d8"
+     },
+     {
+      "oklch": "oklch(0.885 0.013 85)",
+      "hex": "#ddd9d0"
+     },
+     {
+      "oklch": "oklch(0.851 0.014 85)",
+      "hex": "#d2cec4"
+     },
+     {
+      "oklch": "oklch(0.792 0.015 85)",
+      "hex": "#c0bbb1"
+     },
+     {
+      "oklch": "oklch(0.643 0.016 85)",
+      "hex": "#918c82"
+     },
+     {
+      "oklch": "oklch(0.610 0.016 85)",
+      "hex": "#888379"
+     },
+     {
+      "oklch": "oklch(0.503 0.016 85)",
+      "hex": "#68645a"
+     },
+     {
+      "oklch": "oklch(0.244 0.016 85)",
+      "hex": "#242018"
+     }
+    ],
+    "accent": [
+     {
+      "oklch": "oklch(0.993 0.002 25)",
+      "hex": "#fefcfc"
+     },
+     {
+      "oklch": "oklch(0.982 0.006 25)",
+      "hex": "#fdf8f7"
+     },
+     {
+      "oklch": "oklch(0.960 0.014 25)",
+      "hex": "#fbefed"
+     },
+     {
+      "oklch": "oklch(0.938 0.024 25)",
+      "hex": "#fae5e3"
+     },
+     {
+      "oklch": "oklch(0.905 0.034 25)",
+      "hex": "#f6d7d4"
+     },
+     {
+      "oklch": "oklch(0.863 0.046 25)",
+      "hex": "#efc7c3"
+     },
+     {
+      "oklch": "oklch(0.810 0.060 25)",
+      "hex": "#e5b3ae"
+     },
+     {
+      "oklch": "oklch(0.734 0.082 25)",
+      "hex": "#d8958f"
+     },
+     {
+      "oklch": "oklch(0.420 0.130 25)",
+      "hex": "#862726"
+     },
+     {
+      "oklch": "oklch(0.393 0.123 25)",
+      "hex": "#7b2221"
+     },
+     {
+      "oklch": "oklch(0.536 0.109 25)",
+      "hex": "#a3524d"
+     },
+     {
+      "oklch": "oklch(0.306 0.065 25)",
+      "hex": "#4b211e"
+     }
+    ]
+   },
+   "dark": {
+    "surface-page": {
+     "oklch": "oklch(0.190 0.012 70)",
+     "hex": "#17130e"
+    },
+    "surface-card": {
+     "oklch": "oklch(0.225 0.012 70)",
+     "hex": "#1f1b16"
+    },
+    "surface-sunken": {
+     "oklch": "oklch(0.160 0.012 70)",
+     "hex": "#110c08"
+    },
+    "surface-raised": {
+     "oklch": "oklch(0.260 0.012 70)",
+     "hex": "#28231e"
+    },
+    "surface-inverse": {
+     "oklch": "oklch(0.940 0.012 70)",
+     "hex": "#f1eae3"
+    },
+    "ink-1": {
+     "oklch": "oklch(0.940 0.010 70)",
+     "hex": "#efeae4"
+    },
+    "ink-2": {
+     "oklch": "oklch(0.850 0.012 70)",
+     "hex": "#d3cdc6"
+    },
+    "ink-3": {
+     "oklch": "oklch(0.770 0.012 70)",
+     "hex": "#b9b3ac"
+    },
+    "ink-inverse": {
+     "oklch": "oklch(0.220 0.010 70)",
+     "hex": "#1e1a16"
+    },
+    "border-subtle": {
+     "oklch": "oklch(0.275 0.014 70)",
+     "hex": "#2c2720"
+    },
+    "border-strong": {
+     "oklch": "oklch(0.578 0.016 70)",
+     "hex": "#807870"
+    },
+    "accent": {
+     "oklch": "oklch(0.768 0.130 25)",
+     "hex": "#fc9189"
+    },
+    "accent-on": {
+     "oklch": "oklch(0.190 0.010 70)",
+     "hex": "#17130f"
+    },
+    "accent-hover": {
+     "oklch": "oklch(0.808 0.109 25)",
+     "hex": "#ffa49d"
+    },
+    "accent-soft": {
+     "oklch": "oklch(0.250 0.045 25)",
+     "hex": "#341816"
+    },
+    "accent-text": {
+     "oklch": "oklch(0.786 0.124 25)",
+     "hex": "#ff9991"
+    },
+    "ring": {
+     "oklch": "oklch(0.768 0.130 25)",
+     "hex": "#fc9189"
+    },
+    "success": {
+     "oklch": "oklch(0.760 0.130 150)",
+     "hex": "#6fc884"
+    },
+    "success-soft": {
+     "oklch": "oklch(0.250 0.040 150)",
+     "hex": "#132717"
+    },
+    "warning": {
+     "oklch": "oklch(0.776 0.120 75)",
+     "hex": "#e3ab57"
+    },
+    "warning-soft": {
+     "oklch": "oklch(0.250 0.040 75)",
+     "hex": "#2d1f0a"
+    },
+    "danger": {
+     "oklch": "oklch(0.788 0.126 10)",
+     "hex": "#ff96a7"
+    },
+    "danger-soft": {
+     "oklch": "oklch(0.250 0.040 10)",
+     "hex": "#32191d"
+    },
+    "info": {
+     "oklch": "oklch(0.768 0.130 240)",
+     "hex": "#5cbefe"
+    },
+    "info-soft": {
+     "oklch": "oklch(0.250 0.040 240)",
+     "hex": "#0e2433"
+    }
+   },
+   "dark_p3_accent": "oklch(0.768 0.146 25)",
+   "dark_contrast": [
+    {
+     "fg": "ink-1",
+     "bg": "surface-page",
+     "wcag": 15.46,
+     "apca": -93.9
+    },
+    {
+     "fg": "ink-1",
+     "bg": "surface-card",
+     "wcag": 14.32,
+     "apca": -93.1
+    },
+    {
+     "fg": "ink-2",
+     "bg": "surface-sunken",
+     "wcag": 12.33,
+     "apca": -76.5
+    },
+    {
+     "fg": "ink-3",
+     "bg": "surface-sunken",
+     "wcag": 9.36,
+     "apca": -61.4
+    },
+    {
+     "fg": "accent-on",
+     "bg": "accent",
+     "wcag": 8.4,
+     "apca": 60.0
+    },
+    {
+     "fg": "accent-on",
+     "bg": "accent-hover",
+     "wcag": 9.72,
+     "apca": 66.9
+    },
+    {
+     "fg": "accent-text",
+     "bg": "surface-page",
+     "wcag": 8.99,
+     "apca": -61.8
+    },
+    {
+     "fg": "accent-text",
+     "bg": "accent-soft",
+     "wcag": 7.93,
+     "apca": -60.3
+    },
+    {
+     "fg": "border-strong",
+     "bg": "surface-page",
+     "wcag": 4.26,
+     "apca": -30.9
+    },
+    {
+     "fg": "border-strong",
+     "bg": "surface-card",
+     "wcag": 3.94,
+     "apca": -30.1
+    },
+    {
+     "fg": "ring",
+     "bg": "surface-page",
+     "wcag": 8.41,
+     "apca": -58.5
+    },
+    {
+     "fg": "accent",
+     "bg": "surface-page",
+     "wcag": 8.41,
+     "apca": -58.5
+    },
+    {
+     "fg": "ink-inverse",
+     "bg": "surface-inverse",
+     "wcag": 14.51,
+     "apca": 92.3
+    },
+    {
+     "fg": "success",
+     "bg": "surface-page",
+     "wcag": 9.04,
+     "apca": -62.0
+    },
+    {
+     "fg": "success",
+     "bg": "success-soft",
+     "wcag": 7.72,
+     "apca": -60.1
+    },
+    {
+     "fg": "warning",
+     "bg": "surface-page",
+     "wcag": 9.0,
+     "apca": -61.7
+    },
+    {
+     "fg": "warning",
+     "bg": "warning-soft",
+     "wcag": 7.8,
+     "apca": -60.0
+    },
+    {
+     "fg": "danger",
+     "bg": "surface-page",
+     "wcag": 8.96,
+     "apca": -61.6
+    },
+    {
+     "fg": "danger",
+     "bg": "danger-soft",
+     "wcag": 7.87,
+     "apca": -60.0
+    },
+    {
+     "fg": "info",
+     "bg": "surface-page",
+     "wcag": 9.02,
+     "apca": -62.0
+    },
+    {
+     "fg": "info",
+     "bg": "info-soft",
+     "wcag": 7.77,
+     "apca": -60.2
+    }
+   ],
+   "dark_ramps": {
+    "neutral": [
+     {
+      "oklch": "oklch(0.178 0.006 70)",
+      "hex": "#13110e"
+     },
+     {
+      "oklch": "oklch(0.213 0.007 70)",
+      "hex": "#1b1816"
+     },
+     {
+      "oklch": "oklch(0.252 0.007 70)",
+      "hex": "#24221e"
+     },
+     {
+      "oklch": "oklch(0.285 0.008 70)",
+      "hex": "#2d2926"
+     },
+     {
+      "oklch": "oklch(0.313 0.009 70)",
+      "hex": "#34302c"
+     },
+     {
+      "oklch": "oklch(0.348 0.010 70)",
+      "hex": "#3d3935"
+     },
+     {
+      "oklch": "oklch(0.402 0.011 70)",
+      "hex": "#4c4742"
+     },
+     {
+      "oklch": "oklch(0.489 0.011 70)",
+      "hex": "#645f59"
+     },
+     {
+      "oklch": "oklch(0.538 0.012 70)",
+      "hex": "#736d67"
+     },
+     {
+      "oklch": "oklch(0.583 0.012 70)",
+      "hex": "#807a74"
+     },
+     {
+      "oklch": "oklch(0.770 0.012 70)",
+      "hex": "#b9b3ac"
+     },
+     {
+      "oklch": "oklch(0.949 0.012 70)",
+      "hex": "#f4ede6"
+     }
+    ],
+    "accent": [
+     {
+      "oklch": "oklch(0.194 0.017 25)",
+      "hex": "#1c1211"
+     },
+     {
+      "oklch": "oklch(0.213 0.020 25)",
+      "hex": "#221514"
+     },
+     {
+      "oklch": "oklch(0.274 0.044 25)",
+      "hex": "#3a1e1c"
+     },
+     {
+      "oklch": "oklch(0.320 0.065 25)",
+      "hex": "#4f2421"
+     },
+     {
+      "oklch": "oklch(0.367 0.071 25)",
+      "hex": "#5f2f2b"
+     },
+     {
+      "oklch": "oklch(0.416 0.076 25)",
+      "hex": "#703a37"
+     },
+     {
+      "oklch": "oklch(0.474 0.082 25)",
+      "hex": "#844844"
+     },
+     {
+      "oklch": "oklch(0.541 0.094 25)",
+      "hex": "#9f5853"
+     },
+     {
+      "oklch": "oklch(0.768 0.130 25)",
+      "hex": "#fc9189"
+     },
+     {
+      "oklch": "oklch(0.808 0.109 25)",
+      "hex": "#ffa49d"
+     },
+     {
+      "oklch": "oklch(0.786 0.085 25)",
+      "hex": "#eba49e"
+     },
+     {
+      "oklch": "oklch(0.936 0.032 25)",
+      "hex": "#ffe2df"
+     }
+    ]
+   }
+  },
+  {
+   "id": "signal-orange",
+   "name": "Safety Orange",
+   "archetype": "high-chroma signal",
+   "suits": "consumer apps, logistics, sport, creator tools, launches, anything needing one unmissable action",
+   "avoid": "healthcare, legal, calm/premium positioning",
+   "mood": "loud, kinetic, utilitarian",
+   "accent_hue": 48,
+   "light": {
+    "surface-page": {
+     "oklch": "oklch(0.985 0.004 60)",
+     "hex": "#fcf9f7"
+    },
+    "surface-card": {
+     "oklch": "oklch(1.000 0.000 60)",
+     "hex": "#ffffff"
+    },
+    "surface-sunken": {
+     "oklch": "oklch(0.955 0.004 60)",
+     "hex": "#f2efed"
+    },
+    "surface-raised": {
+     "oklch": "oklch(1.000 0.000 60)",
+     "hex": "#ffffff"
+    },
+    "surface-inverse": {
+     "oklch": "oklch(0.220 0.002 60)",
+     "hex": "#1b1a19"
+    },
+    "ink-1": {
+     "oklch": "oklch(0.200 0.003 60)",
+     "hex": "#171615"
+    },
+    "ink-2": {
+     "oklch": "oklch(0.432 0.004 60)",
+     "hex": "#52504e"
+    },
+    "ink-3": {
+     "oklch": "oklch(0.536 0.004 60)",
+     "hex": "#6f6d6b"
+    },
+    "ink-inverse": {
+     "oklch": "oklch(0.970 0.003 60)",
+     "hex": "#f7f5f3"
+    },
+    "border-subtle": {
+     "oklch": "oklch(0.910 0.005 60)",
+     "hex": "#e4e0de"
+    },
+    "border-strong": {
+     "oklch": "oklch(0.656 0.005 60)",
+     "hex": "#93908e"
+    },
+    "accent": {
+     "oklch": "oklch(0.706 0.190 48)",
+     "hex": "#fb7209"
+    },
+    "accent-on": {
+     "oklch": "oklch(0.190 0.003 60)",
+     "hex": "#151312"
+    },
+    "accent-hover": {
+     "oklch": "oklch(0.746 0.167 48)",
+     "hex": "#ff8742"
+    },
+    "accent-soft": {
+     "oklch": "oklch(0.955 0.025 48)",
+     "hex": "#ffece2"
+    },
+    "accent-text": {
+     "oklch": "oklch(0.550 0.150 48)",
+     "hex": "#b44f00"
+    },
+    "ring": {
+     "oklch": "oklch(0.670 0.160 48)",
+     "hex": "#e1712d"
+    },
+    "success": {
+     "oklch": "oklch(0.522 0.130 150)",
+     "hex": "#1e7d3e"
+    },
+    "success-soft": {
+     "oklch": "oklch(0.955 0.040 150)",
+     "hex": "#def8e2"
+    },
+    "warning": {
+     "oklch": "oklch(0.538 0.111 82)",
+     "hex": "#8e6600"
+    },
+    "warning-soft": {
+     "oklch": "oklch(0.955 0.040 82)",
+     "hex": "#feeed3"
+    },
+    "danger": {
+     "oklch": "oklch(0.548 0.130 27)",
+     "hex": "#b04e46"
+    },
+    "danger-soft": {
+     "oklch": "oklch(0.955 0.022 27)",
+     "hex": "#ffebe8"
+    },
+    "info": {
+     "oklch": "oklch(0.530 0.121 240)",
+     "hex": "#0073aa"
+    },
+    "info-soft": {
+     "oklch": "oklch(0.955 0.024 240)",
+     "hex": "#e2f3ff"
+    }
+   },
+   "light_p3_accent": "oklch(0.706 0.213 48)",
+   "light_contrast": [
+    {
+     "fg": "ink-1",
+     "bg": "surface-page",
+     "wcag": 17.24,
+     "apca": 101.5
+    },
+    {
+     "fg": "ink-1",
+     "bg": "surface-card",
+     "wcag": 18.07,
+     "apca": 104.8
+    },
+    {
+     "fg": "ink-2",
+     "bg": "surface-sunken",
+     "wcag": 7.01,
+     "apca": 78.6
+    },
+    {
+     "fg": "ink-3",
+     "bg": "surface-sunken",
+     "wcag": 4.5,
+     "apca": 66.3
+    },
+    {
+     "fg": "accent-on",
+     "bg": "accent",
+     "wcag": 6.63,
+     "apca": 50.1
+    },
+    {
+     "fg": "accent-on",
+     "bg": "accent-hover",
+     "wcag": 7.76,
+     "apca": 56.5
+    },
+    {
+     "fg": "accent-text",
+     "bg": "surface-page",
+     "wcag": 4.94,
+     "apca": 71.6
+    },
+    {
+     "fg": "accent-text",
+     "bg": "accent-soft",
+     "wcag": 4.52,
+     "apca": 65.7
+    },
+    {
+     "fg": "border-strong",
+     "bg": "surface-page",
+     "wcag": 3.03,
+     "apca": 55.6
+    },
+    {
+     "fg": "border-strong",
+     "bg": "surface-card",
+     "wcag": 3.17,
+     "apca": 58.9
+    },
+    {
+     "fg": "ring",
+     "bg": "surface-page",
+     "wcag": 3.03,
+     "apca": 55.1
+    },
+    {
+     "fg": "accent",
+     "bg": "surface-page",
+     "wcag": 2.67,
+     "apca": 49.7
+    },
+    {
+     "fg": "ink-inverse",
+     "bg": "surface-inverse",
+     "wcag": 15.98,
+     "apca": -100.1
+    },
+    {
+     "fg": "success",
+     "bg": "surface-page",
+     "wcag": 4.94,
+     "apca": 71.9
+    },
+    {
+     "fg": "success",
+     "bg": "success-soft",
+     "wcag": 4.59,
+     "apca": 67.0
+    },
+    {
+     "fg": "warning",
+     "bg": "surface-page",
+     "wcag": 4.95,
+     "apca": 72.1
+    },
+    {
+     "fg": "warning",
+     "bg": "warning-soft",
+     "wcag": 4.54,
+     "apca": 66.4
+    },
+    {
+     "fg": "danger",
+     "bg": "surface-page",
+     "wcag": 4.98,
+     "apca": 72.0
+    },
+    {
+     "fg": "danger",
+     "bg": "danger-soft",
+     "wcag": 4.55,
+     "apca": 66.0
+    },
+    {
+     "fg": "info",
+     "bg": "surface-page",
+     "wcag": 4.97,
+     "apca": 71.9
+    },
+    {
+     "fg": "info",
+     "bg": "info-soft",
+     "wcag": 4.59,
+     "apca": 66.5
+    }
+   ],
+   "light_ramps": {
+    "neutral": [
+     {
+      "oklch": "oklch(0.991 0.002 60)",
+      "hex": "#fdfcfb"
+     },
+     {
+      "oklch": "oklch(0.982 0.002 60)",
+      "hex": "#faf9f8"
+     },
+     {
+      "oklch": "oklch(0.955 0.003 60)",
+      "hex": "#f1f0ee"
+     },
+     {
+      "oklch": "oklch(0.931 0.003 60)",
+      "hex": "#eae8e6"
+     },
+     {
+      "oklch": "oklch(0.907 0.003 60)",
+      "hex": "#e2e0de"
+     },
+     {
+      "oklch": "oklch(0.885 0.003 60)",
+      "hex": "#dbd9d7"
+     },
+     {
+      "oklch": "oklch(0.851 0.004 60)",
+      "hex": "#d0cdcc"
+     },
+     {
+      "oklch": "oklch(0.792 0.004 60)",
+      "hex": "#bdbbb9"
+     },
+     {
+      "oklch": "oklch(0.643 0.004 60)",
+      "hex": "#8f8c8b"
+     },
+     {
+      "oklch": "oklch(0.610 0.004 60)",
+      "hex": "#858381"
+     },
+     {
+      "oklch": "oklch(0.503 0.004 60)",
+      "hex": "#666462"
+     },
+     {
+      "oklch": "oklch(0.244 0.004 60)",
+      "hex": "#22201e"
+     }
+    ],
+    "accent": [
+     {
+      "oklch": "oklch(0.993 0.003 48)",
+      "hex": "#fffcfb"
+     },
+     {
+      "oklch": "oklch(0.982 0.009 48)",
+      "hex": "#fff7f4"
+     },
+     {
+      "oklch": "oklch(0.960 0.020 48)",
+      "hex": "#feeee7"
+     },
+     {
+      "oklch": "oklch(0.938 0.034 48)",
+      "hex": "#ffe4d7"
+     },
+     {
+      "oklch": "oklch(0.905 0.050 48)",
+      "hex": "#fdd6c3"
+     },
+     {
+      "oklch": "oklch(0.863 0.067 48)",
+      "hex": "#f8c6ac"
+     },
+     {
+      "oklch": "oklch(0.810 0.088 48)",
+      "hex": "#f0b090"
+     },
+     {
+      "oklch": "oklch(0.734 0.119 48)",
+      "hex": "#e69164"
+     },
+     {
+      "oklch": "oklch(0.706 0.190 48)",
+      "hex": "#fb7209"
+     },
+     {
+      "oklch": "oklch(0.679 0.180 48)",
+      "hex": "#ed6d11"
+     },
+     {
+      "oklch": "oklch(0.550 0.150 48)",
+      "hex": "#b44f00"
+     },
+     {
+      "oklch": "oklch(0.320 0.088 48)",
+      "hex": "#552100"
+     }
+    ]
+   },
+   "dark": {
+    "surface-page": {
+     "oklch": "oklch(0.160 0.004 60)",
+     "hex": "#0f0d0c"
+    },
+    "surface-card": {
+     "oklch": "oklch(0.200 0.004 60)",
+     "hex": "#171614"
+    },
+    "surface-sunken": {
+     "oklch": "oklch(0.130 0.004 60)",
+     "hex": "#080706"
+    },
+    "surface-raised": {
+     "oklch": "oklch(0.235 0.004 60)",
+     "hex": "#201e1c"
+    },
+    "surface-inverse": {
+     "oklch": "oklch(0.950 0.004 60)",
+     "hex": "#f0eeec"
+    },
+    "ink-1": {
+     "oklch": "oklch(0.960 0.003 60)",
+     "hex": "#f3f1f0"
+    },
+    "ink-2": {
+     "oklch": "oklch(0.848 0.004 60)",
+     "hex": "#cfccca"
+    },
+    "ink-3": {
+     "oklch": "oklch(0.766 0.004 60)",
+     "hex": "#b5b2b0"
+    },
+    "ink-inverse": {
+     "oklch": "oklch(0.200 0.003 60)",
+     "hex": "#171615"
+    },
+    "border-subtle": {
+     "oklch": "oklch(0.245 0.005 60)",
+     "hex": "#22201e"
+    },
+    "border-strong": {
+     "oklch": "oklch(0.574 0.005 60)",
+     "hex": "#7b7875"
+    },
+    "accent": {
+     "oklch": "oklch(0.740 0.172 48)",
+     "hex": "#ff843b"
+    },
+    "accent-on": {
+     "oklch": "oklch(0.190 0.003 60)",
+     "hex": "#151312"
+    },
+    "accent-hover": {
+     "oklch": "oklch(0.780 0.140 48)",
+     "hex": "#ff9a64"
+    },
+    "accent-soft": {
+     "oklch": "oklch(0.240 0.045 48)",
+     "hex": "#30180b"
+    },
+    "accent-text": {
+     "oklch": "oklch(0.782 0.138 48)",
+     "hex": "#ff9b65"
+    },
+    "ring": {
+     "oklch": "oklch(0.740 0.172 48)",
+     "hex": "#ff843b"
+    },
+    "success": {
+     "oklch": "oklch(0.756 0.130 150)",
+     "hex": "#6ec783"
+    },
+    "success-soft": {
+     "oklch": "oklch(0.220 0.040 150)",
+     "hex": "#0b2010"
+    },
+    "warning": {
+     "oklch": "oklch(0.772 0.120 82)",
+     "hex": "#dbad53"
+    },
+    "warning-soft": {
+     "oklch": "oklch(0.220 0.040 82)",
+     "hex": "#241803"
+    },
+    "danger": {
+     "oklch": "oklch(0.782 0.127 27)",
+     "hex": "#ff978b"
+    },
+    "danger-soft": {
+     "oklch": "oklch(0.220 0.040 27)",
+     "hex": "#2b1310"
+    },
+    "info": {
+     "oklch": "oklch(0.762 0.130 240)",
+     "hex": "#59bcfc"
+    },
+    "info-soft": {
+     "oklch": "oklch(0.220 0.040 240)",
+     "hex": "#061d2b"
+    }
+   },
+   "dark_p3_accent": "oklch(0.740 0.202 48)",
+   "dark_contrast": [
+    {
+     "fg": "ink-1",
+     "bg": "surface-page",
+     "wcag": 17.22,
+     "apca": -98.6
+    },
+    {
+     "fg": "ink-1",
+     "bg": "surface-card",
+     "wcag": 16.06,
+     "apca": -98.0
+    },
+    {
+     "fg": "ink-2",
+     "bg": "surface-sunken",
+     "wcag": 12.6,
+     "apca": -75.9
+    },
+    {
+     "fg": "ink-3",
+     "bg": "surface-sunken",
+     "wcag": 9.55,
+     "apca": -60.9
+    },
+    {
+     "fg": "accent-on",
+     "bg": "accent",
+     "wcag": 7.6,
+     "apca": 55.7
+    },
+    {
+     "fg": "accent-on",
+     "bg": "accent-hover",
+     "wcag": 8.87,
+     "apca": 62.5
+    },
+    {
+     "fg": "accent-text",
+     "bg": "surface-page",
+     "wcag": 9.35,
+     "apca": -61.8
+    },
+    {
+     "fg": "accent-text",
+     "bg": "accent-soft",
+     "wcag": 8.03,
+     "apca": -60.1
+    },
+    {
+     "fg": "border-strong",
+     "bg": "surface-page",
+     "wcag": 4.42,
+     "apca": -30.9
+    },
+    {
+     "fg": "border-strong",
+     "bg": "surface-card",
+     "wcag": 4.12,
+     "apca": -30.3
+    },
+    {
+     "fg": "ring",
+     "bg": "surface-page",
+     "wcag": 7.95,
+     "apca": -54.3
+    },
+    {
+     "fg": "accent",
+     "bg": "surface-page",
+     "wcag": 7.95,
+     "apca": -54.3
+    },
+    {
+     "fg": "ink-inverse",
+     "bg": "surface-inverse",
+     "wcag": 15.62,
+     "apca": 94.9
+    },
+    {
+     "fg": "success",
+     "bg": "surface-page",
+     "wcag": 9.38,
+     "apca": -61.9
+    },
+    {
+     "fg": "success",
+     "bg": "success-soft",
+     "wcag": 8.27,
+     "apca": -60.5
+    },
+    {
+     "fg": "warning",
+     "bg": "surface-page",
+     "wcag": 9.34,
+     "apca": -61.6
+    },
+    {
+     "fg": "warning",
+     "bg": "warning-soft",
+     "wcag": 8.38,
+     "apca": -60.5
+    },
+    {
+     "fg": "danger",
+     "bg": "surface-page",
+     "wcag": 9.28,
+     "apca": -61.4
+    },
+    {
+     "fg": "danger",
+     "bg": "danger-soft",
+     "wcag": 8.35,
+     "apca": -60.3
+    },
+    {
+     "fg": "info",
+     "bg": "surface-page",
+     "wcag": 9.25,
+     "apca": -61.3
+    },
+    {
+     "fg": "info",
+     "bg": "info-soft",
+     "wcag": 8.23,
+     "apca": -60.0
+    }
+   ],
+   "dark_ramps": {
+    "neutral": [
+     {
+      "oklch": "oklch(0.178 0.002 60)",
+      "hex": "#121110"
+     },
+     {
+      "oklch": "oklch(0.213 0.002 60)",
+      "hex": "#1a1918"
+     },
+     {
+      "oklch": "oklch(0.252 0.003 60)",
+      "hex": "#232221"
+     },
+     {
+      "oklch": "oklch(0.285 0.003 60)",
+      "hex": "#2b2a29"
+     },
+     {
+      "oklch": "oklch(0.313 0.003 60)",
+      "hex": "#323130"
+     },
+     {
+      "oklch": "oklch(0.348 0.003 60)",
+      "hex": "#3b3a38"
+     },
+     {
+      "oklch": "oklch(0.402 0.004 60)",
+      "hex": "#4a4846"
+     },
+     {
+      "oklch": "oklch(0.489 0.004 60)",
+      "hex": "#62605e"
+     },
+     {
+      "oklch": "oklch(0.538 0.004 60)",
+      "hex": "#706d6c"
+     },
+     {
+      "oklch": "oklch(0.583 0.004 60)",
+      "hex": "#7d7b79"
+     },
+     {
+      "oklch": "oklch(0.770 0.004 60)",
+      "hex": "#b6b4b2"
+     },
+     {
+      "oklch": "oklch(0.949 0.004 60)",
+      "hex": "#f0edeb"
+     }
+    ],
+    "accent": [
+     {
+      "oklch": "oklch(0.194 0.023 48)",
+      "hex": "#1d110b"
+     },
+     {
+      "oklch": "oklch(0.213 0.028 48)",
+      "hex": "#24150d"
+     },
+     {
+      "oklch": "oklch(0.274 0.062 48)",
+      "hex": "#3f1d09"
+     },
+     {
+      "oklch": "oklch(0.320 0.088 48)",
+      "hex": "#552100"
+     },
+     {
+      "oklch": "oklch(0.367 0.099 48)",
+      "hex": "#672b01"
+     },
+     {
+      "oklch": "oklch(0.416 0.105 48)",
+      "hex": "#78360c"
+     },
+     {
+      "oklch": "oklch(0.474 0.114 48)",
+      "hex": "#8e4418"
+     },
+     {
+      "oklch": "oklch(0.541 0.131 48)",
+      "hex": "#aa531e"
+     },
+     {
+      "oklch": "oklch(0.740 0.172 48)",
+      "hex": "#ff843b"
+     },
+     {
+      "oklch": "oklch(0.780 0.140 48)",
+      "hex": "#ff9a64"
+     },
+     {
+      "oklch": "oklch(0.782 0.118 48)",
+      "hex": "#f5a074"
+     },
+     {
+      "oklch": "oklch(0.932 0.038 48)",
+      "hex": "#ffe2d3"
+     }
+    ]
+   }
+  },
+  {
+   "id": "nocturnal-low-chroma",
+   "name": "Ledger Night",
+   "archetype": "nocturnal low-chroma (dark-first)",
+   "suits": "trading/finance terminals, audio and film tools, photo apps, luxury, observability",
+   "avoid": "children, healthcare, daytime-reading content",
+   "mood": "hushed, instrument-panel, expensive",
+   "accent_hue": 80,
+   "light": {
+    "surface-page": {
+     "oklch": "oklch(0.965 0.010 265)",
+     "hex": "#f0f3fa"
+    },
+    "surface-card": {
+     "oklch": "oklch(0.990 0.005 265)",
+     "hex": "#fafcff"
+    },
+    "surface-sunken": {
+     "oklch": "oklch(0.930 0.010 265)",
+     "hex": "#e4e8ef"
+    },
+    "surface-raised": {
+     "oklch": "oklch(0.995 0.002 265)",
+     "hex": "#fdfdff"
+    },
+    "surface-inverse": {
+     "oklch": "oklch(0.220 0.006 265)",
+     "hex": "#191b1d"
+    },
+    "ink-1": {
+     "oklch": "oklch(0.200 0.008 265)",
+     "hex": "#14161a"
+    },
+    "ink-2": {
+     "oklch": "oklch(0.416 0.010 265)",
+     "hex": "#494c52"
+    },
+    "ink-3": {
+     "oklch": "oklch(0.518 0.010 265)",
+     "hex": "#65686e"
+    },
+    "ink-inverse": {
+     "oklch": "oklch(0.960 0.008 265)",
+     "hex": "#eff2f7"
+    },
+    "border-subtle": {
+     "oklch": "oklch(0.890 0.012 265)",
+     "hex": "#d7dbe3"
+    },
+    "border-strong": {
+     "oklch": "oklch(0.640 0.013 265)",
+     "hex": "#888c94"
+    },
+    "accent": {
+     "oklch": "oklch(0.760 0.130 80)",
+     "hex": "#dca744"
+    },
+    "accent-on": {
+     "oklch": "oklch(0.190 0.008 265)",
+     "hex": "#121417"
+    },
+    "accent-hover": {
+     "oklch": "oklch(0.800 0.130 80)",
+     "hex": "#e9b452"
+    },
+    "accent-soft": {
+     "oklch": "oklch(0.945 0.045 80)",
+     "hex": "#fdeacc"
+    },
+    "accent-text": {
+     "oklch": "oklch(0.522 0.108 80)",
+     "hex": "#8a6100"
+    },
+    "ring": {
+     "oklch": "oklch(0.646 0.130 80)",
+     "hex": "#b78311"
+    },
+    "success": {
+     "oklch": "oklch(0.504 0.130 150)",
+     "hex": "#157839"
+    },
+    "success-soft": {
+     "oklch": "oklch(0.955 0.040 150)",
+     "hex": "#def8e2"
+    },
+    "warning": {
+     "oklch": "oklch(0.522 0.108 82)",
+     "hex": "#886200"
+    },
+    "warning-soft": {
+     "oklch": "oklch(0.955 0.040 82)",
+     "hex": "#feeed3"
+    },
+    "danger": {
+     "oklch": "oklch(0.534 0.130 27)",
+     "hex": "#ab4a42"
+    },
+    "danger-soft": {
+     "oklch": "oklch(0.955 0.022 27)",
+     "hex": "#ffebe8"
+    },
+    "info": {
+     "oklch": "oklch(0.514 0.118 240)",
+     "hex": "#006ea3"
+    },
+    "info-soft": {
+     "oklch": "oklch(0.955 0.024 240)",
+     "hex": "#e2f3ff"
+    }
+   },
+   "light_p3_accent": "oklch(0.760 0.146 80)",
+   "light_contrast": [
+    {
+     "fg": "ink-1",
+     "bg": "surface-page",
+     "wcag": 16.31,
+     "apca": 97.6
+    },
+    {
+     "fg": "ink-1",
+     "bg": "surface-card",
+     "wcag": 17.62,
+     "apca": 102.9
+    },
+    {
+     "fg": "ink-2",
+     "bg": "surface-sunken",
+     "wcag": 7.01,
+     "apca": 75.8
+    },
+    {
+     "fg": "ink-3",
+     "bg": "surface-sunken",
+     "wcag": 4.55,
+     "apca": 64.2
+    },
+    {
+     "fg": "accent-on",
+     "bg": "accent",
+     "wcag": 8.48,
+     "apca": 60.4
+    },
+    {
+     "fg": "accent-on",
+     "bg": "accent-hover",
+     "wcag": 9.77,
+     "apca": 67.2
+    },
+    {
+     "fg": "accent-text",
+     "bg": "surface-page",
+     "wcag": 4.99,
+     "apca": 70.2
+    },
+    {
+     "fg": "accent-text",
+     "bg": "accent-soft",
+     "wcag": 4.7,
+     "apca": 66.3
+    },
+    {
+     "fg": "border-strong",
+     "bg": "surface-page",
+     "wcag": 3.04,
+     "apca": 54.0
+    },
+    {
+     "fg": "border-strong",
+     "bg": "surface-card",
+     "wcag": 3.28,
+     "apca": 59.3
+    },
+    {
+     "fg": "ring",
+     "bg": "surface-page",
+     "wcag": 3.02,
+     "apca": 53.5
+    },
+    {
+     "fg": "accent",
+     "bg": "surface-page",
+     "wcag": 1.96,
+     "apca": 35.4
+    },
+    {
+     "fg": "ink-inverse",
+     "bg": "surface-inverse",
+     "wcag": 15.39,
+     "apca": -97.7
+    },
+    {
+     "fg": "success",
+     "bg": "surface-page",
+     "wcag": 5.0,
+     "apca": 70.1
+    },
+    {
+     "fg": "success",
+     "bg": "success-soft",
+     "wcag": 4.93,
+     "apca": 69.1
+    },
+    {
+     "fg": "warning",
+     "bg": "surface-page",
+     "wcag": 4.98,
+     "apca": 70.2
+    },
+    {
+     "fg": "warning",
+     "bg": "warning-soft",
+     "wcag": 4.85,
+     "apca": 68.3
+    },
+    {
+     "fg": "danger",
+     "bg": "surface-page",
+     "wcag": 4.99,
+     "apca": 69.9
+    },
+    {
+     "fg": "danger",
+     "bg": "danger-soft",
+     "wcag": 4.83,
+     "apca": 67.7
+    },
+    {
+     "fg": "info",
+     "bg": "surface-page",
+     "wcag": 5.03,
+     "apca": 70.1
+    },
+    {
+     "fg": "info",
+     "bg": "info-soft",
+     "wcag": 4.92,
+     "apca": 68.6
+    }
+   ],
+   "light_ramps": {
+    "neutral": [
+     {
+      "oklch": "oklch(0.991 0.004 265)",
+      "hex": "#fbfcff"
+     },
+     {
+      "oklch": "oklch(0.982 0.006 265)",
+      "hex": "#f7f9fd"
+     },
+     {
+      "oklch": "oklch(0.955 0.006 265)",
+      "hex": "#eef0f4"
+     },
+     {
+      "oklch": "oklch(0.931 0.007 265)",
+      "hex": "#e6e8ed"
+     },
+     {
+      "oklch": "oklch(0.907 0.007 265)",
+      "hex": "#dee0e5"
+     },
+     {
+      "oklch": "oklch(0.885 0.008 265)",
+      "hex": "#d6d9df"
+     },
+     {
+      "oklch": "oklch(0.851 0.009 265)",
+      "hex": "#cbced4"
+     },
+     {
+      "oklch": "oklch(0.792 0.009 265)",
+      "hex": "#b8bbc1"
+     },
+     {
+      "oklch": "oklch(0.643 0.010 265)",
+      "hex": "#8a8d93"
+     },
+     {
+      "oklch": "oklch(0.610 0.010 265)",
+      "hex": "#808389"
+     },
+     {
+      "oklch": "oklch(0.503 0.010 265)",
+      "hex": "#61646a"
+     },
+     {
+      "oklch": "oklch(0.244 0.010 265)",
+      "hex": "#1e2025"
+     }
+    ],
+    "accent": [
+     {
+      "oklch": "oklch(0.993 0.002 80)",
+      "hex": "#fdfdfb"
+     },
+     {
+      "oklch": "oklch(0.982 0.006 80)",
+      "hex": "#fbf9f5"
+     },
+     {
+      "oklch": "oklch(0.960 0.014 80)",
+      "hex": "#f7f1e8"
+     },
+     {
+      "oklch": "oklch(0.938 0.024 80)",
+      "hex": "#f3e9d9"
+     },
+     {
+      "oklch": "oklch(0.905 0.034 80)",
+      "hex": "#ecdec7"
+     },
+     {
+      "oklch": "oklch(0.863 0.046 80)",
+      "hex": "#e2cfb1"
+     },
+     {
+      "oklch": "oklch(0.810 0.060 80)",
+      "hex": "#d6bd95"
+     },
+     {
+      "oklch": "oklch(0.734 0.082 80)",
+      "hex": "#c4a46d"
+     },
+     {
+      "oklch": "oklch(0.760 0.130 80)",
+      "hex": "#dca744"
+     },
+     {
+      "oklch": "oklch(0.733 0.123 80)",
+      "hex": "#d19f43"
+     },
+     {
+      "oklch": "oklch(0.522 0.108 80)",
+      "hex": "#8a6100"
+     },
+     {
+      "oklch": "oklch(0.292 0.061 80)",
+      "hex": "#3b2800"
+     }
+    ]
+   },
+   "dark": {
+    "surface-page": {
+     "oklch": "oklch(0.155 0.020 265)",
+     "hex": "#080c15"
+    },
+    "surface-card": {
+     "oklch": "oklch(0.190 0.020 265)",
+     "hex": "#0f141d"
+    },
+    "surface-sunken": {
+     "oklch": "oklch(0.125 0.020 265)",
+     "hex": "#04060e"
+    },
+    "surface-raised": {
+     "oklch": "oklch(0.225 0.020 265)",
+     "hex": "#171c25"
+    },
+    "surface-inverse": {
+     "oklch": "oklch(0.930 0.020 265)",
+     "hex": "#e1e8f6"
+    },
+    "ink-1": {
+     "oklch": "oklch(0.940 0.016 265)",
+     "hex": "#e6ebf6"
+    },
+    "ink-2": {
+     "oklch": "oklch(0.846 0.020 265)",
+     "hex": "#c6cdda"
+    },
+    "ink-3": {
+     "oklch": "oklch(0.766 0.020 265)",
+     "hex": "#adb3c0"
+    },
+    "ink-inverse": {
+     "oklch": "oklch(0.200 0.016 265)",
+     "hex": "#12161d"
+    },
+    "border-subtle": {
+     "oklch": "oklch(0.240 0.024 265)",
+     "hex": "#1a1f2b"
+    },
+    "border-strong": {
+     "oklch": "oklch(0.572 0.026 265)",
+     "hex": "#707888"
+    },
+    "accent": {
+     "oklch": "oklch(0.800 0.120 80)",
+     "hex": "#e6b55d"
+    },
+    "accent-on": {
+     "oklch": "oklch(0.190 0.016 265)",
+     "hex": "#10141b"
+    },
+    "accent-hover": {
+     "oklch": "oklch(0.840 0.120 80)",
+     "hex": "#f4c26a"
+    },
+    "accent-soft": {
+     "oklch": "oklch(0.225 0.045 80)",
+     "hex": "#271901"
+    },
+    "accent-text": {
+     "oklch": "oklch(0.772 0.120 80)",
+     "hex": "#ddac54"
+    },
+    "ring": {
+     "oklch": "oklch(0.800 0.120 80)",
+     "hex": "#e6b55d"
+    },
+    "success": {
+     "oklch": "oklch(0.752 0.130 150)",
+     "hex": "#6dc682"
+    },
+    "success-soft": {
+     "oklch": "oklch(0.215 0.040 150)",
+     "hex": "#0a1f0f"
+    },
+    "warning": {
+     "oklch": "oklch(0.768 0.120 82)",
+     "hex": "#daac52"
+    },
+    "warning-soft": {
+     "oklch": "oklch(0.215 0.040 82)",
+     "hex": "#231702"
+    },
+    "danger": {
+     "oklch": "oklch(0.780 0.129 27)",
+     "hex": "#ff968a"
+    },
+    "danger-soft": {
+     "oklch": "oklch(0.215 0.040 27)",
+     "hex": "#29120f"
+    },
+    "info": {
+     "oklch": "oklch(0.762 0.130 240)",
+     "hex": "#59bcfc"
+    },
+    "info-soft": {
+     "oklch": "oklch(0.215 0.040 240)",
+     "hex": "#051c2a"
+    }
+   },
+   "dark_p3_accent": "oklch(0.800 0.134 80)",
+   "dark_contrast": [
+    {
+     "fg": "ink-1",
+     "bg": "surface-page",
+     "wcag": 16.37,
+     "apca": -94.5
+    },
+    {
+     "fg": "ink-1",
+     "bg": "surface-card",
+     "wcag": 15.45,
+     "apca": -94.0
+    },
+    {
+     "fg": "ink-2",
+     "bg": "surface-sunken",
+     "wcag": 12.67,
+     "apca": -75.9
+    },
+    {
+     "fg": "ink-3",
+     "bg": "surface-sunken",
+     "wcag": 9.62,
+     "apca": -61.0
+    },
+    {
+     "fg": "accent-on",
+     "bg": "accent",
+     "wcag": 9.78,
+     "apca": 67.2
+    },
+    {
+     "fg": "accent-on",
+     "bg": "accent-hover",
+     "wcag": 11.22,
+     "apca": 74.4
+    },
+    {
+     "fg": "accent-text",
+     "bg": "surface-page",
+     "wcag": 9.41,
+     "apca": -61.6
+    },
+    {
+     "fg": "accent-text",
+     "bg": "accent-soft",
+     "wcag": 8.24,
+     "apca": -60.2
+    },
+    {
+     "fg": "border-strong",
+     "bg": "surface-page",
+     "wcag": 4.41,
+     "apca": -30.6
+    },
+    {
+     "fg": "border-strong",
+     "bg": "surface-card",
+     "wcag": 4.16,
+     "apca": -30.1
+    },
+    {
+     "fg": "ring",
+     "bg": "surface-page",
+     "wcag": 10.37,
+     "apca": -66.6
+    },
+    {
+     "fg": "accent",
+     "bg": "surface-page",
+     "wcag": 10.37,
+     "apca": -66.6
+    },
+    {
+     "fg": "ink-inverse",
+     "bg": "surface-inverse",
+     "wcag": 14.74,
+     "apca": 91.0
+    },
+    {
+     "fg": "success",
+     "bg": "surface-page",
+     "wcag": 9.36,
+     "apca": -61.4
+    },
+    {
+     "fg": "success",
+     "bg": "success-soft",
+     "wcag": 8.27,
+     "apca": -60.1
+    },
+    {
+     "fg": "warning",
+     "bg": "surface-page",
+     "wcag": 9.32,
+     "apca": -61.1
+    },
+    {
+     "fg": "warning",
+     "bg": "warning-soft",
+     "wcag": 8.37,
+     "apca": -60.0
+    },
+    {
+     "fg": "danger",
+     "bg": "surface-page",
+     "wcag": 9.3,
+     "apca": -61.1
+    },
+    {
+     "fg": "danger",
+     "bg": "danger-soft",
+     "wcag": 8.4,
+     "apca": -60.1
+    },
+    {
+     "fg": "info",
+     "bg": "surface-page",
+     "wcag": 9.34,
+     "apca": -61.3
+    },
+    {
+     "fg": "info",
+     "bg": "info-soft",
+     "wcag": 8.31,
+     "apca": -60.1
+    }
+   ],
+   "dark_ramps": {
+    "neutral": [
+     {
+      "oklch": "oklch(0.178 0.010 265)",
+      "hex": "#0f1116"
+     },
+     {
+      "oklch": "oklch(0.213 0.011 265)",
+      "hex": "#16191e"
+     },
+     {
+      "oklch": "oklch(0.252 0.013 265)",
+      "hex": "#1f2228"
+     },
+     {
+      "oklch": "oklch(0.285 0.014 265)",
+      "hex": "#272a31"
+     },
+     {
+      "oklch": "oklch(0.313 0.015 265)",
+      "hex": "#2d3139"
+     },
+     {
+      "oklch": "oklch(0.348 0.016 265)",
+      "hex": "#363a43"
+     },
+     {
+      "oklch": "oklch(0.402 0.018 265)",
+      "hex": "#444852"
+     },
+     {
+      "oklch": "oklch(0.489 0.019 265)",
+      "hex": "#5b606b"
+     },
+     {
+      "oklch": "oklch(0.538 0.020 265)",
+      "hex": "#686e7a"
+     },
+     {
+      "oklch": "oklch(0.583 0.020 265)",
+      "hex": "#757b87"
+     },
+     {
+      "oklch": "oklch(0.770 0.020 265)",
+      "hex": "#aeb4c1"
+     },
+     {
+      "oklch": "oklch(0.949 0.020 265)",
+      "hex": "#e8eefc"
+     }
+    ],
+    "accent": [
+     {
+      "oklch": "oklch(0.194 0.016 80)",
+      "hex": "#18140d"
+     },
+     {
+      "oklch": "oklch(0.213 0.019 80)",
+      "hex": "#1e180f"
+     },
+     {
+      "oklch": "oklch(0.274 0.041 80)",
+      "hex": "#32250e"
+     },
+     {
+      "oklch": "oklch(0.320 0.060 80)",
+      "hex": "#432f07"
+     },
+     {
+      "oklch": "oklch(0.367 0.066 80)",
+      "hex": "#513b0f"
+     },
+     {
+      "oklch": "oklch(0.416 0.070 80)",
+      "hex": "#60471a"
+     },
+     {
+      "oklch": "oklch(0.474 0.076 80)",
+      "hex": "#725725"
+     },
+     {
+      "oklch": "oklch(0.541 0.087 80)",
+      "hex": "#89692e"
+     },
+     {
+      "oklch": "oklch(0.800 0.120 80)",
+      "hex": "#e6b55d"
+     },
+     {
+      "oklch": "oklch(0.840 0.105 80)",
+      "hex": "#efc379"
+     },
+     {
+      "oklch": "oklch(0.772 0.078 80)",
+      "hex": "#cfb07b"
+     },
+     {
+      "oklch": "oklch(0.922 0.032 80)",
+      "hex": "#f1e3ce"
+     }
+    ]
+   }
+  },
+  {
+   "id": "mono-ultramarine",
+   "name": "Swiss Ultramarine",
+   "archetype": "monochrome + one accent",
+   "suits": "portfolios, studios, software with strong typography, documentation, fashion-adjacent product",
+   "avoid": "playful or warm hospitality",
+   "mood": "rational, exact, poster-like",
+   "accent_hue": 265,
+   "light": {
+    "surface-page": {
+     "oklch": "oklch(0.985 0.002 90)",
+     "hex": "#fafaf9"
+    },
+    "surface-card": {
+     "oklch": "oklch(1.000 0.000 90)",
+     "hex": "#ffffff"
+    },
+    "surface-sunken": {
+     "oklch": "oklch(0.960 0.002 90)",
+     "hex": "#f2f2f0"
+    },
+    "surface-raised": {
+     "oklch": "oklch(1.000 0.000 90)",
+     "hex": "#ffffff"
+    },
+    "surface-inverse": {
+     "oklch": "oklch(0.200 0.001 90)",
+     "hex": "#161615"
+    },
+    "ink-1": {
+     "oklch": "oklch(0.180 0.002 90)",
+     "hex": "#121211"
+    },
+    "ink-2": {
+     "oklch": "oklch(0.436 0.002 90)",
+     "hex": "#525150"
+    },
+    "ink-3": {
+     "oklch": "oklch(0.538 0.002 90)",
+     "hex": "#6e6e6d"
+    },
+    "ink-inverse": {
+     "oklch": "oklch(0.980 0.002 90)",
+     "hex": "#f9f8f7"
+    },
+    "border-subtle": {
+     "oklch": "oklch(0.910 0.002 90)",
+     "hex": "#e2e1df"
+    },
+    "border-strong": {
+     "oklch": "oklch(0.658 0.003 90)",
+     "hex": "#929190"
+    },
+    "accent": {
+     "oklch": "oklch(0.500 0.240 265)",
+     "hex": "#1d4ce9"
+    },
+    "accent-on": {
+     "oklch": "oklch(0.985 0.001 90)",
+     "hex": "#fafaf9"
+    },
+    "accent-hover": {
+     "oklch": "oklch(0.455 0.240 265)",
+     "hex": "#123bd9"
+    },
+    "accent-soft": {
+     "oklch": "oklch(0.955 0.021 265)",
+     "hex": "#e9f0ff"
+    },
+    "accent-text": {
+     "oklch": "oklch(0.542 0.160 265)",
+     "hex": "#4068cb"
+    },
+    "ring": {
+     "oklch": "oklch(0.500 0.240 265)",
+     "hex": "#1d4ce9"
+    },
+    "success": {
+     "oklch": "oklch(0.524 0.130 150)",
+     "hex": "#1f7e3f"
+    },
+    "success-soft": {
+     "oklch": "oklch(0.955 0.040 150)",
+     "hex": "#def8e2"
+    },
+    "warning": {
+     "oklch": "oklch(0.538 0.111 82)",
+     "hex": "#8e6600"
+    },
+    "warning-soft": {
+     "oklch": "oklch(0.955 0.040 82)",
+     "hex": "#feeed3"
+    },
+    "danger": {
+     "oklch": "oklch(0.548 0.130 27)",
+     "hex": "#b04e46"
+    },
+    "danger-soft": {
+     "oklch": "oklch(0.955 0.022 27)",
+     "hex": "#ffebe8"
+    },
+    "info": {
+     "oklch": "oklch(0.534 0.122 240)",
+     "hex": "#0074ac"
+    },
+    "info-soft": {
+     "oklch": "oklch(0.955 0.024 240)",
+     "hex": "#e2f3ff"
+    }
+   },
+   "light_p3_accent": "oklch(0.500 0.269 265)",
+   "light_contrast": [
+    {
+     "fg": "ink-1",
+     "bg": "surface-page",
+     "wcag": 17.95,
+     "apca": 102.2
+    },
+    {
+     "fg": "ink-1",
+     "bg": "surface-card",
+     "wcag": 18.74,
+     "apca": 105.3
+    },
+    {
+     "fg": "ink-2",
+     "bg": "surface-sunken",
+     "wcag": 7.07,
+     "apca": 79.7
+    },
+    {
+     "fg": "ink-3",
+     "bg": "surface-sunken",
+     "wcag": 4.55,
+     "apca": 67.4
+    },
+    {
+     "fg": "accent-on",
+     "bg": "accent",
+     "wcag": 6.16,
+     "apca": -82.7
+    },
+    {
+     "fg": "accent-on",
+     "bg": "accent-hover",
+     "wcag": 7.58,
+     "apca": -87.6
+    },
+    {
+     "fg": "accent-text",
+     "bg": "surface-page",
+     "wcag": 4.95,
+     "apca": 72.2
+    },
+    {
+     "fg": "accent-text",
+     "bg": "accent-soft",
+     "wcag": 4.52,
+     "apca": 66.2
+    },
+    {
+     "fg": "border-strong",
+     "bg": "surface-page",
+     "wcag": 3.01,
+     "apca": 55.5
+    },
+    {
+     "fg": "border-strong",
+     "bg": "surface-card",
+     "wcag": 3.15,
+     "apca": 58.6
+    },
+    {
+     "fg": "ring",
+     "bg": "surface-page",
+     "wcag": 6.16,
+     "apca": 77.9
+    },
+    {
+     "fg": "accent",
+     "bg": "surface-page",
+     "wcag": 6.16,
+     "apca": 77.9
+    },
+    {
+     "fg": "ink-inverse",
+     "bg": "surface-inverse",
+     "wcag": 17.07,
+     "apca": -102.4
+    },
+    {
+     "fg": "success",
+     "bg": "surface-page",
+     "wcag": 4.89,
+     "apca": 71.8
+    },
+    {
+     "fg": "success",
+     "bg": "success-soft",
+     "wcag": 4.53,
+     "apca": 66.6
+    },
+    {
+     "fg": "warning",
+     "bg": "surface-page",
+     "wcag": 4.96,
+     "apca": 72.4
+    },
+    {
+     "fg": "warning",
+     "bg": "warning-soft",
+     "wcag": 4.54,
+     "apca": 66.4
+    },
+    {
+     "fg": "danger",
+     "bg": "surface-page",
+     "wcag": 5.0,
+     "apca": 72.3
+    },
+    {
+     "fg": "danger",
+     "bg": "danger-soft",
+     "wcag": 4.55,
+     "apca": 66.0
+    },
+    {
+     "fg": "info",
+     "bg": "surface-page",
+     "wcag": 4.91,
+     "apca": 71.7
+    },
+    {
+     "fg": "info",
+     "bg": "info-soft",
+     "wcag": 4.52,
+     "apca": 66.1
+    }
+   ],
+   "light_ramps": {
+    "neutral": [
+     {
+      "oklch": "oklch(0.991 0.001 90)",
+      "hex": "#fcfcfb"
+     },
+     {
+      "oklch": "oklch(0.982 0.001 90)",
+      "hex": "#f9f9f8"
+     },
+     {
+      "oklch": "oklch(0.955 0.001 90)",
+      "hex": "#f0f0ef"
+     },
+     {
+      "oklch": "oklch(0.931 0.001 90)",
+      "hex": "#e8e8e7"
+     },
+     {
+      "oklch": "oklch(0.907 0.002 90)",
+      "hex": "#e0e0df"
+     },
+     {
+      "oklch": "oklch(0.885 0.002 90)",
+      "hex": "#d9d9d8"
+     },
+     {
+      "oklch": "oklch(0.851 0.002 90)",
+      "hex": "#cececd"
+     },
+     {
+      "oklch": "oklch(0.792 0.002 90)",
+      "hex": "#bbbbba"
+     },
+     {
+      "oklch": "oklch(0.643 0.002 90)",
+      "hex": "#8d8d8c"
+     },
+     {
+      "oklch": "oklch(0.610 0.002 90)",
+      "hex": "#838382"
+     },
+     {
+      "oklch": "oklch(0.503 0.002 90)",
+      "hex": "#646463"
+     },
+     {
+      "oklch": "oklch(0.244 0.002 90)",
+      "hex": "#20201f"
+     }
+    ],
+    "accent": [
+     {
+      "oklch": "oklch(0.993 0.003 265)",
+      "hex": "#fcfdff"
+     },
+     {
+      "oklch": "oklch(0.982 0.008 265)",
+      "hex": "#f6f9ff"
+     },
+     {
+      "oklch": "oklch(0.960 0.019 265)",
+      "hex": "#ecf2ff"
+     },
+     {
+      "oklch": "oklch(0.938 0.029 265)",
+      "hex": "#e1ebff"
+     },
+     {
+      "oklch": "oklch(0.905 0.046 265)",
+      "hex": "#d1e0ff"
+     },
+     {
+      "oklch": "oklch(0.863 0.067 265)",
+      "hex": "#bdd2ff"
+     },
+     {
+      "oklch": "oklch(0.810 0.095 265)",
+      "hex": "#a3c0ff"
+     },
+     {
+      "oklch": "oklch(0.734 0.137 265)",
+      "hex": "#7ea6ff"
+     },
+     {
+      "oklch": "oklch(0.500 0.240 265)",
+      "hex": "#1d4ce9"
+     },
+     {
+      "oklch": "oklch(0.473 0.228 265)",
+      "hex": "#1a46d8"
+     },
+     {
+      "oklch": "oklch(0.542 0.201 265)",
+      "hex": "#3362e2"
+     },
+     {
+      "oklch": "oklch(0.312 0.119 265)",
+      "hex": "#122a6c"
+     }
+    ]
+   },
+   "dark": {
+    "surface-page": {
+     "oklch": "oklch(0.145 0.002 90)",
+     "hex": "#0a0a09"
+    },
+    "surface-card": {
+     "oklch": "oklch(0.180 0.002 90)",
+     "hex": "#121211"
+    },
+    "surface-sunken": {
+     "oklch": "oklch(0.120 0.002 90)",
+     "hex": "#060605"
+    },
+    "surface-raised": {
+     "oklch": "oklch(0.215 0.002 90)",
+     "hex": "#1a1918"
+    },
+    "surface-inverse": {
+     "oklch": "oklch(0.960 0.002 90)",
+     "hex": "#f2f2f0"
+    },
+    "ink-1": {
+     "oklch": "oklch(0.960 0.002 90)",
+     "hex": "#f2f2f0"
+    },
+    "ink-2": {
+     "oklch": "oklch(0.844 0.002 90)",
+     "hex": "#ccccca"
+    },
+    "ink-3": {
+     "oklch": "oklch(0.762 0.002 90)",
+     "hex": "#b2b2b0"
+    },
+    "ink-inverse": {
+     "oklch": "oklch(0.180 0.002 90)",
+     "hex": "#121211"
+    },
+    "border-subtle": {
+     "oklch": "oklch(0.230 0.002 90)",
+     "hex": "#1d1d1c"
+    },
+    "border-strong": {
+     "oklch": "oklch(0.570 0.003 90)",
+     "hex": "#787776"
+    },
+    "accent": {
+     "oklch": "oklch(0.570 0.220 265)",
+     "hex": "#3568f6"
+    },
+    "accent-on": {
+     "oklch": "oklch(0.985 0.001 90)",
+     "hex": "#fafaf9"
+    },
+    "accent-hover": {
+     "oklch": "oklch(0.525 0.220 265)",
+     "hex": "#2959e6"
+    },
+    "accent-soft": {
+     "oklch": "oklch(0.235 0.045 265)",
+     "hex": "#141d33"
+    },
+    "accent-text": {
+     "oklch": "oklch(0.774 0.114 265)",
+     "hex": "#92b4ff"
+    },
+    "ring": {
+     "oklch": "oklch(0.574 0.160 265)",
+     "hex": "#4972d6"
+    },
+    "success": {
+     "oklch": "oklch(0.752 0.130 150)",
+     "hex": "#6dc682"
+    },
+    "success-soft": {
+     "oklch": "oklch(0.205 0.040 150)",
+     "hex": "#081c0d"
+    },
+    "warning": {
+     "oklch": "oklch(0.768 0.120 82)",
+     "hex": "#daac52"
+    },
+    "warning-soft": {
+     "oklch": "oklch(0.205 0.040 82)",
+     "hex": "#201501"
+    },
+    "danger": {
+     "oklch": "oklch(0.780 0.129 27)",
+     "hex": "#ff968a"
+    },
+    "danger-soft": {
+     "oklch": "oklch(0.205 0.040 27)",
+     "hex": "#270f0d"
+    },
+    "info": {
+     "oklch": "oklch(0.762 0.130 240)",
+     "hex": "#59bcfc"
+    },
+    "info-soft": {
+     "oklch": "oklch(0.205 0.040 240)",
+     "hex": "#041927"
+    }
+   },
+   "dark_p3_accent": "oklch(0.570 0.246 265)",
+   "dark_contrast": [
+    {
+     "fg": "ink-1",
+     "bg": "surface-page",
+     "wcag": 17.67,
+     "apca": -99.1
+    },
+    {
+     "fg": "ink-1",
+     "bg": "surface-card",
+     "wcag": 16.72,
+     "apca": -98.7
+    },
+    {
+     "fg": "ink-2",
+     "bg": "surface-sunken",
+     "wcag": 12.6,
+     "apca": -75.5
+    },
+    {
+     "fg": "ink-3",
+     "bg": "surface-sunken",
+     "wcag": 9.54,
+     "apca": -60.5
+    },
+    {
+     "fg": "accent-on",
+     "bg": "accent",
+     "wcag": 4.51,
+     "apca": -74.1
+    },
+    {
+     "fg": "accent-on",
+     "bg": "accent-hover",
+     "wcag": 5.48,
+     "apca": -79.8
+    },
+    {
+     "fg": "accent-text",
+     "bg": "surface-page",
+     "wcag": 9.62,
+     "apca": -62.1
+    },
+    {
+     "fg": "accent-text",
+     "bg": "accent-soft",
+     "wcag": 8.13,
+     "apca": -60.4
+    },
+    {
+     "fg": "border-strong",
+     "bg": "surface-page",
+     "wcag": 4.43,
+     "apca": -30.5
+    },
+    {
+     "fg": "border-strong",
+     "bg": "surface-card",
+     "wcag": 4.19,
+     "apca": -30.1
+    },
+    {
+     "fg": "ring",
+     "bg": "surface-page",
+     "wcag": 4.4,
+     "apca": -30.6
+    },
+    {
+     "fg": "accent",
+     "bg": "surface-page",
+     "wcag": 4.21,
+     "apca": -29.5
+    },
+    {
+     "fg": "ink-inverse",
+     "bg": "surface-inverse",
+     "wcag": 16.72,
+     "apca": 97.4
+    },
+    {
+     "fg": "success",
+     "bg": "surface-page",
+     "wcag": 9.48,
+     "apca": -61.5
+    },
+    {
+     "fg": "success",
+     "bg": "success-soft",
+     "wcag": 8.5,
+     "apca": -60.4
+    },
+    {
+     "fg": "warning",
+     "bg": "surface-page",
+     "wcag": 9.44,
+     "apca": -61.2
+    },
+    {
+     "fg": "warning",
+     "bg": "warning-soft",
+     "wcag": 8.56,
+     "apca": -60.3
+    },
+    {
+     "fg": "danger",
+     "bg": "surface-page",
+     "wcag": 9.41,
+     "apca": -61.2
+    },
+    {
+     "fg": "danger",
+     "bg": "danger-soft",
+     "wcag": 8.6,
+     "apca": -60.3
+    },
+    {
+     "fg": "info",
+     "bg": "surface-page",
+     "wcag": 9.45,
+     "apca": -61.4
+    },
+    {
+     "fg": "info",
+     "bg": "info-soft",
+     "wcag": 8.54,
+     "apca": -60.4
+    }
+   ],
+   "dark_ramps": {
+    "neutral": [
+     {
+      "oklch": "oklch(0.178 0.001 90)",
+      "hex": "#111111"
+     },
+     {
+      "oklch": "oklch(0.213 0.001 90)",
+      "hex": "#191918"
+     },
+     {
+      "oklch": "oklch(0.252 0.001 90)",
+      "hex": "#222221"
+     },
+     {
+      "oklch": "oklch(0.285 0.001 90)",
+      "hex": "#2a2a29"
+     },
+     {
+      "oklch": "oklch(0.313 0.002 90)",
+      "hex": "#313130"
+     },
+     {
+      "oklch": "oklch(0.348 0.002 90)",
+      "hex": "#3a3a39"
+     },
+     {
+      "oklch": "oklch(0.402 0.002 90)",
+      "hex": "#484847"
+     },
+     {
+      "oklch": "oklch(0.489 0.002 90)",
+      "hex": "#60605f"
+     },
+     {
+      "oklch": "oklch(0.538 0.002 90)",
+      "hex": "#6e6e6d"
+     },
+     {
+      "oklch": "oklch(0.583 0.002 90)",
+      "hex": "#7b7b7a"
+     },
+     {
+      "oklch": "oklch(0.770 0.002 90)",
+      "hex": "#b5b4b3"
+     },
+     {
+      "oklch": "oklch(0.949 0.002 90)",
+      "hex": "#eeeeed"
+     }
+    ],
+    "accent": [
+     {
+      "oklch": "oklch(0.194 0.029 265)",
+      "hex": "#0e1422"
+     },
+     {
+      "oklch": "oklch(0.213 0.034 265)",
+      "hex": "#111929"
+     },
+     {
+      "oklch": "oklch(0.274 0.075 265)",
+      "hex": "#15254c"
+     },
+     {
+      "oklch": "oklch(0.320 0.111 265)",
+      "hex": "#162d6a"
+     },
+     {
+      "oklch": "oklch(0.367 0.121 265)",
+      "hex": "#1f397e"
+     },
+     {
+      "oklch": "oklch(0.416 0.129 265)",
+      "hex": "#294691"
+     },
+     {
+      "oklch": "oklch(0.474 0.139 265)",
+      "hex": "#3456a9"
+     },
+     {
+      "oklch": "oklch(0.541 0.160 265)",
+      "hex": "#4068ca"
+     },
+     {
+      "oklch": "oklch(0.570 0.220 265)",
+      "hex": "#3568f6"
+     },
+     {
+      "oklch": "oklch(0.610 0.193 265)",
+      "hex": "#4979f5"
+     },
+     {
+      "oklch": "oklch(0.774 0.114 265)",
+      "hex": "#92b4ff"
+     },
+     {
+      "oklch": "oklch(0.924 0.036 265)",
+      "hex": "#dae6ff"
+     }
+    ]
+   }
+  },
+  {
+   "id": "mulberry-blush",
+   "name": "Mulberry & Blush",
+   "archetype": "warm romantic muted",
+   "suits": "beauty, fashion, cultural venues, weddings/events, boutique hospitality",
+   "avoid": "industrial, infra, developer tools",
+   "mood": "soft, intimate, editorial",
+   "accent_hue": 352,
+   "light": {
+    "surface-page": {
+     "oklch": "oklch(0.972 0.011 15)",
+     "hex": "#fdf3f3"
+    },
+    "surface-card": {
+     "oklch": "oklch(0.992 0.004 15)",
+     "hex": "#fffbfb"
+    },
+    "surface-sunken": {
+     "oklch": "oklch(0.940 0.011 15)",
+     "hex": "#f2e8e9"
+    },
+    "surface-raised": {
+     "oklch": "oklch(0.995 0.002 15)",
+     "hex": "#fffdfd"
+    },
+    "surface-inverse": {
+     "oklch": "oklch(0.250 0.007 15)",
+     "hex": "#252021"
+    },
+    "ink-1": {
+     "oklch": "oklch(0.230 0.009 15)",
+     "hex": "#211b1c"
+    },
+    "ink-2": {
+     "oklch": "oklch(0.422 0.011 15)",
+     "hex": "#534b4c"
+    },
+    "ink-3": {
+     "oklch": "oklch(0.526 0.011 15)",
+     "hex": "#716868"
+    },
+    "ink-inverse": {
+     "oklch": "oklch(0.970 0.009 15)",
+     "hex": "#fbf3f3"
+    },
+    "border-subtle": {
+     "oklch": "oklch(0.897 0.013 15)",
+     "hex": "#e6dada"
+    },
+    "border-strong": {
+     "oklch": "oklch(0.648 0.014 15)",
+     "hex": "#978b8c"
+    },
+    "accent": {
+     "oklch": "oklch(0.450 0.140 352)",
+     "hex": "#8b2b5d"
+    },
+    "accent-on": {
+     "oklch": "oklch(0.985 0.005 15)",
+     "hex": "#fef9f9"
+    },
+    "accent-hover": {
+     "oklch": "oklch(0.405 0.140 352)",
+     "hex": "#7d1c51"
+    },
+    "accent-soft": {
+     "oklch": "oklch(0.950 0.029 352)",
+     "hex": "#ffe7f0"
+    },
+    "accent-text": {
+     "oklch": "oklch(0.542 0.140 352)",
+     "hex": "#aa4778"
+    },
+    "ring": {
+     "oklch": "oklch(0.450 0.140 352)",
+     "hex": "#8b2b5d"
+    },
+    "success": {
+     "oklch": "oklch(0.510 0.130 150)",
+     "hex": "#187a3b"
+    },
+    "success-soft": {
+     "oklch": "oklch(0.955 0.040 150)",
+     "hex": "#def8e2"
+    },
+    "warning": {
+     "oklch": "oklch(0.526 0.108 82)",
+     "hex": "#8a6300"
+    },
+    "warning-soft": {
+     "oklch": "oklch(0.955 0.040 82)",
+     "hex": "#feeed3"
+    },
+    "danger": {
+     "oklch": "oklch(0.540 0.130 30)",
+     "hex": "#ad4c3f"
+    },
+    "danger-soft": {
+     "oklch": "oklch(0.955 0.022 30)",
+     "hex": "#ffebe7"
+    },
+    "info": {
+     "oklch": "oklch(0.520 0.119 240)",
+     "hex": "#0070a6"
+    },
+    "info-soft": {
+     "oklch": "oklch(0.955 0.024 240)",
+     "hex": "#e2f3ff"
+    }
+   },
+   "light_p3_accent": "oklch(0.450 0.157 352)",
+   "light_contrast": [
+    {
+     "fg": "ink-1",
+     "bg": "surface-page",
+     "wcag": 15.58,
+     "apca": 98.0
+    },
+    {
+     "fg": "ink-1",
+     "bg": "surface-card",
+     "wcag": 16.51,
+     "apca": 102.0
+    },
+    {
+     "fg": "ink-2",
+     "bg": "surface-sunken",
+     "wcag": 7.06,
+     "apca": 76.9
+    },
+    {
+     "fg": "ink-3",
+     "bg": "surface-sunken",
+     "wcag": 4.51,
+     "apca": 64.7
+    },
+    {
+     "fg": "accent-on",
+     "bg": "accent",
+     "wcag": 7.74,
+     "apca": -88.6
+    },
+    {
+     "fg": "accent-on",
+     "bg": "accent-hover",
+     "wcag": 9.33,
+     "apca": -92.5
+    },
+    {
+     "fg": "accent-text",
+     "bg": "surface-page",
+     "wcag": 4.97,
+     "apca": 70.5
+    },
+    {
+     "fg": "accent-text",
+     "bg": "accent-soft",
+     "wcag": 4.62,
+     "apca": 65.7
+    },
+    {
+     "fg": "border-strong",
+     "bg": "surface-page",
+     "wcag": 3.02,
+     "apca": 54.4
+    },
+    {
+     "fg": "border-strong",
+     "bg": "surface-card",
+     "wcag": 3.2,
+     "apca": 58.4
+    },
+    {
+     "fg": "ring",
+     "bg": "surface-page",
+     "wcag": 7.42,
+     "apca": 81.2
+    },
+    {
+     "fg": "accent",
+     "bg": "surface-page",
+     "wcag": 7.42,
+     "apca": 81.2
+    },
+    {
+     "fg": "ink-inverse",
+     "bg": "surface-inverse",
+     "wcag": 14.7,
+     "apca": -98.8
+    },
+    {
+     "fg": "success",
+     "bg": "surface-page",
+     "wcag": 4.96,
+     "apca": 70.6
+    },
+    {
+     "fg": "success",
+     "bg": "success-soft",
+     "wcag": 4.79,
+     "apca": 68.3
+    },
+    {
+     "fg": "warning",
+     "bg": "surface-page",
+     "wcag": 4.99,
+     "apca": 71.0
+    },
+    {
+     "fg": "warning",
+     "bg": "warning-soft",
+     "wcag": 4.76,
+     "apca": 67.8
+    },
+    {
+     "fg": "danger",
+     "bg": "surface-page",
+     "wcag": 4.97,
+     "apca": 70.5
+    },
+    {
+     "fg": "danger",
+     "bg": "danger-soft",
+     "wcag": 4.71,
+     "apca": 67.0
+    },
+    {
+     "fg": "info",
+     "bg": "surface-page",
+     "wcag": 4.99,
+     "apca": 70.6
+    },
+    {
+     "fg": "info",
+     "bg": "info-soft",
+     "wcag": 4.78,
+     "apca": 67.8
+    }
+   ],
+   "light_ramps": {
+    "neutral": [
+     {
+      "oklch": "oklch(0.991 0.004 15)",
+      "hex": "#fffbfb"
+     },
+     {
+      "oklch": "oklch(0.982 0.006 15)",
+      "hex": "#fdf7f8"
+     },
+     {
+      "oklch": "oklch(0.955 0.007 15)",
+      "hex": "#f5eeee"
+     },
+     {
+      "oklch": "oklch(0.931 0.008 15)",
+      "hex": "#ede6e6"
+     },
+     {
+      "oklch": "oklch(0.907 0.008 15)",
+      "hex": "#e6dede"
+     },
+     {
+      "oklch": "oklch(0.885 0.009 15)",
+      "hex": "#dfd7d7"
+     },
+     {
+      "oklch": "oklch(0.851 0.010 15)",
+      "hex": "#d4cccc"
+     },
+     {
+      "oklch": "oklch(0.792 0.010 15)",
+      "hex": "#c2b9b9"
+     },
+     {
+      "oklch": "oklch(0.643 0.011 15)",
+      "hex": "#948a8b"
+     },
+     {
+      "oklch": "oklch(0.610 0.011 15)",
+      "hex": "#8a8181"
+     },
+     {
+      "oklch": "oklch(0.503 0.011 15)",
+      "hex": "#6a6262"
+     },
+     {
+      "oklch": "oklch(0.244 0.011 15)",
+      "hex": "#251e1e"
+     }
+    ],
+    "accent": [
+     {
+      "oklch": "oklch(0.993 0.002 352)",
+      "hex": "#fefcfd"
+     },
+     {
+      "oklch": "oklch(0.982 0.007 352)",
+      "hex": "#fdf7f9"
+     },
+     {
+      "oklch": "oklch(0.960 0.015 352)",
+      "hex": "#faeef3"
+     },
+     {
+      "oklch": "oklch(0.938 0.025 352)",
+      "hex": "#f9e4ec"
+     },
+     {
+      "oklch": "oklch(0.905 0.037 352)",
+      "hex": "#f4d6e2"
+     },
+     {
+      "oklch": "oklch(0.863 0.049 352)",
+      "hex": "#edc5d5"
+     },
+     {
+      "oklch": "oklch(0.810 0.065 352)",
+      "hex": "#e3b0c5"
+     },
+     {
+      "oklch": "oklch(0.734 0.088 352)",
+      "hex": "#d492af"
+     },
+     {
+      "oklch": "oklch(0.450 0.140 352)",
+      "hex": "#8b2b5d"
+     },
+     {
+      "oklch": "oklch(0.423 0.133 352)",
+      "hex": "#802655"
+     },
+     {
+      "oklch": "oklch(0.542 0.117 352)",
+      "hex": "#a15076"
+     },
+     {
+      "oklch": "oklch(0.312 0.070 352)",
+      "hex": "#4b2034"
+     }
+    ]
+   },
+   "dark": {
+    "surface-page": {
+     "oklch": "oklch(0.180 0.014 10)",
+     "hex": "#170f10"
+    },
+    "surface-card": {
+     "oklch": "oklch(0.215 0.014 10)",
+     "hex": "#1f1718"
+    },
+    "surface-sunken": {
+     "oklch": "oklch(0.150 0.014 10)",
+     "hex": "#10090a"
+    },
+    "surface-raised": {
+     "oklch": "oklch(0.250 0.014 10)",
+     "hex": "#281f20"
+    },
+    "surface-inverse": {
+     "oklch": "oklch(0.940 0.014 10)",
+     "hex": "#f4e8e9"
+    },
+    "ink-1": {
+     "oklch": "oklch(0.945 0.011 10)",
+     "hex": "#f4eaeb"
+    },
+    "ink-2": {
+     "oklch": "oklch(0.852 0.014 10)",
+     "hex": "#d7cbcc"
+    },
+    "ink-3": {
+     "oklch": "oklch(0.770 0.014 10)",
+     "hex": "#bdb1b2"
+    },
+    "ink-inverse": {
+     "oklch": "oklch(0.220 0.011 10)",
+     "hex": "#1f1919"
+    },
+    "border-subtle": {
+     "oklch": "oklch(0.265 0.017 10)",
+     "hex": "#2d2223"
+    },
+    "border-strong": {
+     "oklch": "oklch(0.578 0.018 10)",
+     "hex": "#847677"
+    },
+    "accent": {
+     "oklch": "oklch(0.770 0.120 352)",
+     "hex": "#ef93bc"
+    },
+    "accent-on": {
+     "oklch": "oklch(0.190 0.011 10)",
+     "hex": "#181213"
+    },
+    "accent-hover": {
+     "oklch": "oklch(0.810 0.120 352)",
+     "hex": "#fda0c9"
+    },
+    "accent-soft": {
+     "oklch": "oklch(0.245 0.045 352)",
+     "hex": "#311723"
+    },
+    "accent-text": {
+     "oklch": "oklch(0.788 0.120 352)",
+     "hex": "#f599c2"
+    },
+    "ring": {
+     "oklch": "oklch(0.770 0.120 352)",
+     "hex": "#ef93bc"
+    },
+    "success": {
+     "oklch": "oklch(0.760 0.130 150)",
+     "hex": "#6fc884"
+    },
+    "success-soft": {
+     "oklch": "oklch(0.240 0.040 150)",
+     "hex": "#102515"
+    },
+    "warning": {
+     "oklch": "oklch(0.774 0.120 82)",
+     "hex": "#dcae54"
+    },
+    "warning-soft": {
+     "oklch": "oklch(0.240 0.040 82)",
+     "hex": "#291d07"
+    },
+    "danger": {
+     "oklch": "oklch(0.784 0.126 30)",
+     "hex": "#ff9988"
+    },
+    "danger-soft": {
+     "oklch": "oklch(0.240 0.040 30)",
+     "hex": "#301814"
+    },
+    "info": {
+     "oklch": "oklch(0.768 0.130 240)",
+     "hex": "#5cbefe"
+    },
+    "info-soft": {
+     "oklch": "oklch(0.240 0.040 240)",
+     "hex": "#0b2230"
+    }
+   },
+   "dark_p3_accent": "oklch(0.770 0.134 352)",
+   "dark_contrast": [
+    {
+     "fg": "ink-1",
+     "bg": "surface-page",
+     "wcag": 16.02,
+     "apca": -95.1
+    },
+    {
+     "fg": "ink-1",
+     "bg": "surface-card",
+     "wcag": 14.92,
+     "apca": -94.4
+    },
+    {
+     "fg": "ink-2",
+     "bg": "surface-sunken",
+     "wcag": 12.49,
+     "apca": -76.5
+    },
+    {
+     "fg": "ink-3",
+     "bg": "surface-sunken",
+     "wcag": 9.47,
+     "apca": -61.4
+    },
+    {
+     "fg": "accent-on",
+     "bg": "accent",
+     "wcag": 8.43,
+     "apca": 60.1
+    },
+    {
+     "fg": "accent-on",
+     "bg": "accent-hover",
+     "wcag": 9.74,
+     "apca": 67.0
+    },
+    {
+     "fg": "accent-text",
+     "bg": "surface-page",
+     "wcag": 9.19,
+     "apca": -61.9
+    },
+    {
+     "fg": "accent-text",
+     "bg": "accent-soft",
+     "wcag": 8.0,
+     "apca": -60.3
+    },
+    {
+     "fg": "border-strong",
+     "bg": "surface-page",
+     "wcag": 4.35,
+     "apca": -31.1
+    },
+    {
+     "fg": "border-strong",
+     "bg": "surface-card",
+     "wcag": 4.05,
+     "apca": -30.4
+    },
+    {
+     "fg": "ring",
+     "bg": "surface-page",
+     "wcag": 8.6,
+     "apca": -58.7
+    },
+    {
+     "fg": "accent",
+     "bg": "surface-page",
+     "wcag": 8.6,
+     "apca": -58.7
+    },
+    {
+     "fg": "ink-inverse",
+     "bg": "surface-inverse",
+     "wcag": 14.5,
+     "apca": 92.2
+    },
+    {
+     "fg": "success",
+     "bg": "surface-page",
+     "wcag": 9.23,
+     "apca": -62.2
+    },
+    {
+     "fg": "success",
+     "bg": "success-soft",
+     "wcag": 7.92,
+     "apca": -60.4
+    },
+    {
+     "fg": "warning",
+     "bg": "surface-page",
+     "wcag": 9.19,
+     "apca": -61.9
+    },
+    {
+     "fg": "warning",
+     "bg": "warning-soft",
+     "wcag": 8.03,
+     "apca": -60.4
+    },
+    {
+     "fg": "danger",
+     "bg": "surface-page",
+     "wcag": 9.14,
+     "apca": -61.7
+    },
+    {
+     "fg": "danger",
+     "bg": "danger-soft",
+     "wcag": 8.03,
+     "apca": -60.2
+    },
+    {
+     "fg": "info",
+     "bg": "surface-page",
+     "wcag": 9.22,
+     "apca": -62.2
+    },
+    {
+     "fg": "info",
+     "bg": "info-soft",
+     "wcag": 7.97,
+     "apca": -60.5
+    }
+   ],
+   "dark_ramps": {
+    "neutral": [
+     {
+      "oklch": "oklch(0.178 0.007 10)",
+      "hex": "#141010"
+     },
+     {
+      "oklch": "oklch(0.213 0.008 10)",
+      "hex": "#1c1818"
+     },
+     {
+      "oklch": "oklch(0.252 0.009 10)",
+      "hex": "#262021"
+     },
+     {
+      "oklch": "oklch(0.285 0.010 10)",
+      "hex": "#2f2829"
+     },
+     {
+      "oklch": "oklch(0.313 0.011 10)",
+      "hex": "#362f30"
+     },
+     {
+      "oklch": "oklch(0.348 0.011 10)",
+      "hex": "#403839"
+     },
+     {
+      "oklch": "oklch(0.402 0.012 10)",
+      "hex": "#4f4647"
+     },
+     {
+      "oklch": "oklch(0.489 0.013 10)",
+      "hex": "#675d5e"
+     },
+     {
+      "oklch": "oklch(0.538 0.014 10)",
+      "hex": "#766b6c"
+     },
+     {
+      "oklch": "oklch(0.583 0.014 10)",
+      "hex": "#837879"
+     },
+     {
+      "oklch": "oklch(0.770 0.014 10)",
+      "hex": "#bdb1b2"
+     },
+     {
+      "oklch": "oklch(0.949 0.014 10)",
+      "hex": "#f7eaec"
+     }
+    ],
+    "accent": [
+     {
+      "oklch": "oklch(0.194 0.016 352)",
+      "hex": "#1a1215"
+     },
+     {
+      "oklch": "oklch(0.213 0.019 352)",
+      "hex": "#20151a"
+     },
+     {
+      "oklch": "oklch(0.274 0.041 352)",
+      "hex": "#371f29"
+     },
+     {
+      "oklch": "oklch(0.320 0.060 352)",
+      "hex": "#4a2536"
+     },
+     {
+      "oklch": "oklch(0.367 0.066 352)",
+      "hex": "#593043"
+     },
+     {
+      "oklch": "oklch(0.416 0.070 352)",
+      "hex": "#693b50"
+     },
+     {
+      "oklch": "oklch(0.474 0.076 352)",
+      "hex": "#7d4960"
+     },
+     {
+      "oklch": "oklch(0.541 0.087 352)",
+      "hex": "#965974"
+     },
+     {
+      "oklch": "oklch(0.770 0.120 352)",
+      "hex": "#ef93bc"
+     },
+     {
+      "oklch": "oklch(0.810 0.105 352)",
+      "hex": "#f6a5c8"
+     },
+     {
+      "oklch": "oklch(0.788 0.078 352)",
+      "hex": "#e2a6bf"
+     },
+     {
+      "oklch": "oklch(0.938 0.032 352)",
+      "hex": "#fde2ed"
+     }
+    ]
+   }
+  },
+  {
+   "id": "chalk-chartreuse",
+   "name": "Chalk & Chartreuse",
+   "archetype": "high-chroma signal (acid on neutral)",
+   "suits": "AI/dev tools wanting non-blue identity, climate-tech, music, design tooling, hackathon/community brands",
+   "avoid": "conservative finance, healthcare",
+   "mood": "fresh, technical, slightly irreverent",
+   "accent_hue": 125,
+   "light": {
+    "surface-page": {
+     "oklch": "oklch(0.985 0.006 110)",
+     "hex": "#fafaf6"
+    },
+    "surface-card": {
+     "oklch": "oklch(1.000 0.000 110)",
+     "hex": "#ffffff"
+    },
+    "surface-sunken": {
+     "oklch": "oklch(0.955 0.006 110)",
+     "hex": "#f0f0ec"
+    },
+    "surface-raised": {
+     "oklch": "oklch(1.000 0.000 110)",
+     "hex": "#ffffff"
+    },
+    "surface-inverse": {
+     "oklch": "oklch(0.220 0.004 110)",
+     "hex": "#1b1b19"
+    },
+    "ink-1": {
+     "oklch": "oklch(0.200 0.005 110)",
+     "hex": "#161614"
+    },
+    "ink-2": {
+     "oklch": "oklch(0.432 0.006 110)",
+     "hex": "#50514d"
+    },
+    "ink-3": {
+     "oklch": "oklch(0.534 0.006 110)",
+     "hex": "#6d6d69"
+    },
+    "ink-inverse": {
+     "oklch": "oklch(0.970 0.005 110)",
+     "hex": "#f5f5f2"
+    },
+    "border-subtle": {
+     "oklch": "oklch(0.910 0.007 110)",
+     "hex": "#e1e2dc"
+    },
+    "border-strong": {
+     "oklch": "oklch(0.656 0.008 110)",
+     "hex": "#91918c"
+    },
+    "accent": {
+     "oklch": "oklch(0.900 0.200 125)",
+     "hex": "#c0f447"
+    },
+    "accent-on": {
+     "oklch": "oklch(0.190 0.005 110)",
+     "hex": "#141412"
+    },
+    "accent-hover": {
+     "oklch": "oklch(0.940 0.173 125)",
+     "hex": "#d1ff74"
+    },
+    "accent-soft": {
+     "oklch": "oklch(0.950 0.045 125)",
+     "hex": "#e7f4d4"
+    },
+    "accent-text": {
+     "oklch": "oklch(0.526 0.132 125)",
+     "hex": "#597700"
+    },
+    "ring": {
+     "oklch": "oklch(0.644 0.160 125)",
+     "hex": "#779d07"
+    },
+    "success": {
+     "oklch": "oklch(0.522 0.130 150)",
+     "hex": "#1e7d3e"
+    },
+    "success-soft": {
+     "oklch": "oklch(0.955 0.040 150)",
+     "hex": "#def8e2"
+    },
+    "warning": {
+     "oklch": "oklch(0.538 0.111 82)",
+     "hex": "#8e6600"
+    },
+    "warning-soft": {
+     "oklch": "oklch(0.955 0.040 82)",
+     "hex": "#feeed3"
+    },
+    "danger": {
+     "oklch": "oklch(0.548 0.130 27)",
+     "hex": "#b04e46"
+    },
+    "danger-soft": {
+     "oklch": "oklch(0.955 0.022 27)",
+     "hex": "#ffebe8"
+    },
+    "info": {
+     "oklch": "oklch(0.530 0.121 240)",
+     "hex": "#0073aa"
+    },
+    "info-soft": {
+     "oklch": "oklch(0.955 0.024 240)",
+     "hex": "#e2f3ff"
+    }
+   },
+   "light_p3_accent": "oklch(0.900 0.224 125)",
+   "light_contrast": [
+    {
+     "fg": "ink-1",
+     "bg": "surface-page",
+     "wcag": 17.32,
+     "apca": 101.7
+    },
+    {
+     "fg": "ink-1",
+     "bg": "surface-card",
+     "wcag": 18.12,
+     "apca": 104.8
+    },
+    {
+     "fg": "ink-2",
+     "bg": "surface-sunken",
+     "wcag": 7.0,
+     "apca": 78.7
+    },
+    {
+     "fg": "ink-3",
+     "bg": "surface-sunken",
+     "wcag": 4.55,
+     "apca": 66.7
+    },
+    {
+     "fg": "accent-on",
+     "bg": "accent",
+     "wcag": 14.29,
+     "apca": 88.4
+    },
+    {
+     "fg": "accent-on",
+     "bg": "accent-hover",
+     "wcag": 16.04,
+     "apca": 95.7
+    },
+    {
+     "fg": "accent-text",
+     "bg": "surface-page",
+     "wcag": 4.94,
+     "apca": 72.2
+    },
+    {
+     "fg": "accent-text",
+     "bg": "accent-soft",
+     "wcag": 4.5,
+     "apca": 66.0
+    },
+    {
+     "fg": "border-strong",
+     "bg": "surface-page",
+     "wcag": 3.03,
+     "apca": 55.6
+    },
+    {
+     "fg": "border-strong",
+     "bg": "surface-card",
+     "wcag": 3.17,
+     "apca": 58.8
+    },
+    {
+     "fg": "ring",
+     "bg": "surface-page",
+     "wcag": 3.04,
+     "apca": 55.5
+    },
+    {
+     "fg": "accent",
+     "bg": "surface-page",
+     "wcag": 1.23,
+     "apca": 11.1
+    },
+    {
+     "fg": "ink-inverse",
+     "bg": "surface-inverse",
+     "wcag": 15.79,
+     "apca": -99.7
+    },
+    {
+     "fg": "success",
+     "bg": "surface-page",
+     "wcag": 4.95,
+     "apca": 72.1
+    },
+    {
+     "fg": "success",
+     "bg": "success-soft",
+     "wcag": 4.59,
+     "apca": 67.0
+    },
+    {
+     "fg": "warning",
+     "bg": "surface-page",
+     "wcag": 4.95,
+     "apca": 72.3
+    },
+    {
+     "fg": "warning",
+     "bg": "warning-soft",
+     "wcag": 4.54,
+     "apca": 66.4
+    },
+    {
+     "fg": "danger",
+     "bg": "surface-page",
+     "wcag": 4.99,
+     "apca": 72.2
+    },
+    {
+     "fg": "danger",
+     "bg": "danger-soft",
+     "wcag": 4.55,
+     "apca": 66.0
+    },
+    {
+     "fg": "info",
+     "bg": "surface-page",
+     "wcag": 4.98,
+     "apca": 72.0
+    },
+    {
+     "fg": "info",
+     "bg": "info-soft",
+     "wcag": 4.59,
+     "apca": 66.5
+    }
+   ],
+   "light_ramps": {
+    "neutral": [
+     {
+      "oklch": "oklch(0.991 0.003 110)",
+      "hex": "#fcfcfa"
+     },
+     {
+      "oklch": "oklch(0.982 0.003 110)",
+      "hex": "#f9f9f7"
+     },
+     {
+      "oklch": "oklch(0.955 0.004 110)",
+      "hex": "#f0f0ed"
+     },
+     {
+      "oklch": "oklch(0.931 0.004 110)",
+      "hex": "#e8e8e5"
+     },
+     {
+      "oklch": "oklch(0.907 0.005 110)",
+      "hex": "#e0e0dd"
+     },
+     {
+      "oklch": "oklch(0.885 0.005 110)",
+      "hex": "#d9d9d6"
+     },
+     {
+      "oklch": "oklch(0.851 0.005 110)",
+      "hex": "#cececa"
+     },
+     {
+      "oklch": "oklch(0.792 0.006 110)",
+      "hex": "#bbbbb7"
+     },
+     {
+      "oklch": "oklch(0.643 0.006 110)",
+      "hex": "#8d8d89"
+     },
+     {
+      "oklch": "oklch(0.610 0.006 110)",
+      "hex": "#83837f"
+     },
+     {
+      "oklch": "oklch(0.503 0.006 110)",
+      "hex": "#646461"
+     },
+     {
+      "oklch": "oklch(0.244 0.006 110)",
+      "hex": "#20201d"
+     }
+    ],
+    "accent": [
+     {
+      "oklch": "oklch(0.993 0.003 125)",
+      "hex": "#fcfdfb"
+     },
+     {
+      "oklch": "oklch(0.982 0.009 125)",
+      "hex": "#f7faf4"
+     },
+     {
+      "oklch": "oklch(0.960 0.021 125)",
+      "hex": "#eef5e6"
+     },
+     {
+      "oklch": "oklch(0.938 0.036 125)",
+      "hex": "#e5efd5"
+     },
+     {
+      "oklch": "oklch(0.905 0.053 125)",
+      "hex": "#d7e6c1"
+     },
+     {
+      "oklch": "oklch(0.863 0.070 125)",
+      "hex": "#c7dba8"
+     },
+     {
+      "oklch": "oklch(0.810 0.092 125)",
+      "hex": "#b3cc8a"
+     },
+     {
+      "oklch": "oklch(0.734 0.125 125)",
+      "hex": "#97b75a"
+     },
+     {
+      "oklch": "oklch(0.900 0.200 125)",
+      "hex": "#c0f447"
+     },
+     {
+      "oklch": "oklch(0.873 0.190 125)",
+      "hex": "#b9ea4a"
+     },
+     {
+      "oklch": "oklch(0.526 0.132 125)",
+      "hex": "#597700"
+     },
+     {
+      "oklch": "oklch(0.296 0.075 125)",
+      "hex": "#243300"
+     }
+    ]
+   },
+   "dark": {
+    "surface-page": {
+     "oklch": "oklch(0.165 0.008 120)",
+     "hex": "#0e0f0b"
+    },
+    "surface-card": {
+     "oklch": "oklch(0.200 0.008 120)",
+     "hex": "#151713"
+    },
+    "surface-sunken": {
+     "oklch": "oklch(0.135 0.008 120)",
+     "hex": "#080906"
+    },
+    "surface-raised": {
+     "oklch": "oklch(0.235 0.008 120)",
+     "hex": "#1d1f1a"
+    },
+    "surface-inverse": {
+     "oklch": "oklch(0.950 0.008 120)",
+     "hex": "#eeefe9"
+    },
+    "ink-1": {
+     "oklch": "oklch(0.950 0.006 120)",
+     "hex": "#eeefea"
+    },
+    "ink-2": {
+     "oklch": "oklch(0.848 0.008 120)",
+     "hex": "#cccec8"
+    },
+    "ink-3": {
+     "oklch": "oklch(0.766 0.008 120)",
+     "hex": "#b2b4ae"
+    },
+    "ink-inverse": {
+     "oklch": "oklch(0.200 0.006 120)",
+     "hex": "#161613"
+    },
+    "border-subtle": {
+     "oklch": "oklch(0.250 0.010 120)",
+     "hex": "#21221d"
+    },
+    "border-strong": {
+     "oklch": "oklch(0.572 0.010 120)",
+     "hex": "#777972"
+    },
+    "accent": {
+     "oklch": "oklch(0.880 0.190 125)",
+     "hex": "#bbec4c"
+    },
+    "accent-on": {
+     "oklch": "oklch(0.190 0.006 120)",
+     "hex": "#131411"
+    },
+    "accent-hover": {
+     "oklch": "oklch(0.920 0.190 125)",
+     "hex": "#c8fa5c"
+    },
+    "accent-soft": {
+     "oklch": "oklch(0.235 0.045 125)",
+     "hex": "#192208"
+    },
+    "accent-text": {
+     "oklch": "oklch(0.760 0.160 125)",
+     "hex": "#9ac242"
+    },
+    "ring": {
+     "oklch": "oklch(0.880 0.190 125)",
+     "hex": "#bbec4c"
+    },
+    "success": {
+     "oklch": "oklch(0.756 0.130 150)",
+     "hex": "#6ec783"
+    },
+    "success-soft": {
+     "oklch": "oklch(0.225 0.040 150)",
+     "hex": "#0d2111"
+    },
+    "warning": {
+     "oklch": "oklch(0.772 0.120 82)",
+     "hex": "#dbad53"
+    },
+    "warning-soft": {
+     "oklch": "oklch(0.225 0.040 82)",
+     "hex": "#251a04"
+    },
+    "danger": {
+     "oklch": "oklch(0.782 0.127 27)",
+     "hex": "#ff978b"
+    },
+    "danger-soft": {
+     "oklch": "oklch(0.225 0.040 27)",
+     "hex": "#2c1411"
+    },
+    "info": {
+     "oklch": "oklch(0.764 0.130 240)",
+     "hex": "#5abdfc"
+    },
+    "info-soft": {
+     "oklch": "oklch(0.225 0.040 240)",
+     "hex": "#071e2c"
+    }
+   },
+   "dark_p3_accent": "oklch(0.880 0.213 125)",
+   "dark_contrast": [
+    {
+     "fg": "ink-1",
+     "bg": "surface-page",
+     "wcag": 16.64,
+     "apca": -96.7
+    },
+    {
+     "fg": "ink-1",
+     "bg": "surface-card",
+     "wcag": 15.61,
+     "apca": -96.1
+    },
+    {
+     "fg": "ink-2",
+     "bg": "surface-sunken",
+     "wcag": 12.58,
+     "apca": -76.3
+    },
+    {
+     "fg": "ink-3",
+     "bg": "surface-sunken",
+     "wcag": 9.54,
+     "apca": -61.2
+    },
+    {
+     "fg": "accent-on",
+     "bg": "accent",
+     "wcag": 13.4,
+     "apca": 84.4
+    },
+    {
+     "fg": "accent-on",
+     "bg": "accent-hover",
+     "wcag": 15.22,
+     "apca": 92.2
+    },
+    {
+     "fg": "accent-text",
+     "bg": "surface-page",
+     "wcag": 9.31,
+     "apca": -61.8
+    },
+    {
+     "fg": "accent-text",
+     "bg": "accent-soft",
+     "wcag": 7.98,
+     "apca": -60.1
+    },
+    {
+     "fg": "border-strong",
+     "bg": "surface-page",
+     "wcag": 4.36,
+     "apca": -30.7
+    },
+    {
+     "fg": "border-strong",
+     "bg": "surface-card",
+     "wcag": 4.09,
+     "apca": -30.1
+    },
+    {
+     "fg": "ring",
+     "bg": "surface-page",
+     "wcag": 13.94,
+     "apca": -84.8
+    },
+    {
+     "fg": "accent",
+     "bg": "surface-page",
+     "wcag": 13.94,
+     "apca": -84.8
+    },
+    {
+     "fg": "ink-inverse",
+     "bg": "surface-inverse",
+     "wcag": 15.68,
+     "apca": 95.0
+    },
+    {
+     "fg": "success",
+     "bg": "surface-page",
+     "wcag": 9.31,
+     "apca": -61.8
+    },
+    {
+     "fg": "success",
+     "bg": "success-soft",
+     "wcag": 8.18,
+     "apca": -60.4
+    },
+    {
+     "fg": "warning",
+     "bg": "surface-page",
+     "wcag": 9.26,
+     "apca": -61.5
+    },
+    {
+     "fg": "warning",
+     "bg": "warning-soft",
+     "wcag": 8.24,
+     "apca": -60.3
+    },
+    {
+     "fg": "danger",
+     "bg": "surface-page",
+     "wcag": 9.21,
+     "apca": -61.4
+    },
+    {
+     "fg": "danger",
+     "bg": "danger-soft",
+     "wcag": 8.27,
+     "apca": -60.2
+    },
+    {
+     "fg": "info",
+     "bg": "surface-page",
+     "wcag": 9.27,
+     "apca": -61.7
+    },
+    {
+     "fg": "info",
+     "bg": "info-soft",
+     "wcag": 8.22,
+     "apca": -60.4
+    }
+   ],
+   "dark_ramps": {
+    "neutral": [
+     {
+      "oklch": "oklch(0.178 0.004 120)",
+      "hex": "#11110f"
+     },
+     {
+      "oklch": "oklch(0.213 0.005 120)",
+      "hex": "#191917"
+     },
+     {
+      "oklch": "oklch(0.252 0.005 120)",
+      "hex": "#222220"
+     },
+     {
+      "oklch": "oklch(0.285 0.005 120)",
+      "hex": "#2a2a27"
+     },
+     {
+      "oklch": "oklch(0.313 0.006 120)",
+      "hex": "#31322e"
+     },
+     {
+      "oklch": "oklch(0.348 0.007 120)",
+      "hex": "#393a37"
+     },
+     {
+      "oklch": "oklch(0.402 0.007 120)",
+      "hex": "#484945"
+     },
+     {
+      "oklch": "oklch(0.489 0.007 120)",
+      "hex": "#5f615c"
+     },
+     {
+      "oklch": "oklch(0.538 0.008 120)",
+      "hex": "#6d6f6a"
+     },
+     {
+      "oklch": "oklch(0.583 0.008 120)",
+      "hex": "#7a7c77"
+     },
+     {
+      "oklch": "oklch(0.770 0.008 120)",
+      "hex": "#b3b5af"
+     },
+     {
+      "oklch": "oklch(0.949 0.008 120)",
+      "hex": "#edefe9"
+     }
+    ],
+    "accent": [
+     {
+      "oklch": "oklch(0.194 0.025 125)",
+      "hex": "#12170a"
+     },
+     {
+      "oklch": "oklch(0.213 0.029 125)",
+      "hex": "#161b0c"
+     },
+     {
+      "oklch": "oklch(0.274 0.065 125)",
+      "hex": "#202d03"
+     },
+     {
+      "oklch": "oklch(0.320 0.081 125)",
+      "hex": "#293900"
+     },
+     {
+      "oklch": "oklch(0.367 0.092 125)",
+      "hex": "#344700"
+     },
+     {
+      "oklch": "oklch(0.416 0.105 125)",
+      "hex": "#3f5500"
+     },
+     {
+      "oklch": "oklch(0.474 0.119 125)",
+      "hex": "#4d6700"
+     },
+     {
+      "oklch": "oklch(0.541 0.136 125)",
+      "hex": "#5d7c00"
+     },
+     {
+      "oklch": "oklch(0.880 0.190 125)",
+      "hex": "#bbec4c"
+     },
+     {
+      "oklch": "oklch(0.920 0.166 125)",
+      "hex": "#cbf874"
+     },
+     {
+      "oklch": "oklch(0.760 0.124 125)",
+      "hex": "#9fbf63"
+     },
+     {
+      "oklch": "oklch(0.910 0.050 125)",
+      "hex": "#d9e8c4"
+     }
+    ]
+   }
+  },
+  {
+   "id": "adobe-dual",
+   "name": "Adobe & Olive",
+   "archetype": "warm earth with two accents",
+   "suits": "restaurants, ceramics/home goods DTC, hospitality, craft food, architecture-for-homes",
+   "avoid": "cold technical products",
+   "mood": "sun-baked, handmade, hospitable",
+   "accent_hue": 42,
+   "light": {
+    "surface-page": {
+     "oklch": "oklch(0.955 0.016 60)",
+     "hex": "#f9eee6"
+    },
+    "surface-card": {
+     "oklch": "oklch(0.980 0.012 60)",
+     "hex": "#fff7f0"
+    },
+    "surface-sunken": {
+     "oklch": "oklch(0.925 0.016 60)",
+     "hex": "#efe4dc"
+    },
+    "surface-raised": {
+     "oklch": "oklch(0.985 0.009 60)",
+     "hex": "#fff9f4"
+    },
+    "surface-inverse": {
+     "oklch": "oklch(0.250 0.010 60)",
+     "hex": "#25211d"
+    },
+    "ink-1": {
+     "oklch": "oklch(0.240 0.013 60)",
+     "hex": "#241e19"
+    },
+    "ink-2": {
+     "oklch": "oklch(0.412 0.016 60)",
+     "hex": "#524942"
+    },
+    "ink-3": {
+     "oklch": "oklch(0.514 0.016 60)",
+     "hex": "#6e655e"
+    },
+    "ink-inverse": {
+     "oklch": "oklch(0.960 0.013 60)",
+     "hex": "#f9f0e9"
+    },
+    "border-subtle": {
+     "oklch": "oklch(0.880 0.019 60)",
+     "hex": "#e1d5cb"
+    },
+    "border-strong": {
+     "oklch": "oklch(0.636 0.021 60)",
+     "hex": "#95887f"
+    },
+    "accent": {
+     "oklch": "oklch(0.520 0.130 42)",
+     "hex": "#a54a24"
+    },
+    "accent-on": {
+     "oklch": "oklch(0.985 0.008 60)",
+     "hex": "#fef9f5"
+    },
+    "accent-hover": {
+     "oklch": "oklch(0.475 0.130 42)",
+     "hex": "#963d14"
+    },
+    "accent-soft": {
+     "oklch": "oklch(0.940 0.032 42)",
+     "hex": "#ffe5db"
+    },
+    "accent-text": {
+     "oklch": "oklch(0.528 0.130 42)",
+     "hex": "#a74d26"
+    },
+    "ring": {
+     "oklch": "oklch(0.520 0.130 42)",
+     "hex": "#a54a24"
+    },
+    "accent2": {
+     "oklch": "oklch(0.480 0.070 112)",
+     "hex": "#5e6231"
+    },
+    "accent2-on": {
+     "oklch": "oklch(0.985 0.008 60)",
+     "hex": "#fef9f5"
+    },
+    "accent2-soft": {
+     "oklch": "oklch(0.940 0.040 112)",
+     "hex": "#ebeed0"
+    },
+    "accent2-text": {
+     "oklch": "oklch(0.510 0.070 112)",
+     "hex": "#676a39"
+    },
+    "success": {
+     "oklch": "oklch(0.500 0.124 155)",
+     "hex": "#007742"
+    },
+    "success-soft": {
+     "oklch": "oklch(0.955 0.040 155)",
+     "hex": "#dcf9e5"
+    },
+    "warning": {
+     "oklch": "oklch(0.516 0.106 88)",
+     "hex": "#816300"
+    },
+    "warning-soft": {
+     "oklch": "oklch(0.955 0.040 88)",
+     "hex": "#fbefd2"
+    },
+    "danger": {
+     "oklch": "oklch(0.530 0.130 20)",
+     "hex": "#aa474c"
+    },
+    "danger-soft": {
+     "oklch": "oklch(0.955 0.022 20)",
+     "hex": "#ffebea"
+    },
+    "info": {
+     "oklch": "oklch(0.508 0.108 235)",
+     "hex": "#006e9a"
+    },
+    "info-soft": {
+     "oklch": "oklch(0.955 0.025 235)",
+     "hex": "#e1f3ff"
+    }
+   },
+   "light_p3_accent": "oklch(0.520 0.146 42)",
+   "light_contrast": [
+    {
+     "fg": "ink-1",
+     "bg": "surface-page",
+     "wcag": 14.43,
+     "apca": 94.4
+    },
+    {
+     "fg": "ink-1",
+     "bg": "surface-card",
+     "wcag": 15.54,
+     "apca": 99.4
+    },
+    {
+     "fg": "ink-2",
+     "bg": "surface-sunken",
+     "wcag": 7.03,
+     "apca": 75.2
+    },
+    {
+     "fg": "ink-3",
+     "bg": "surface-sunken",
+     "wcag": 4.56,
+     "apca": 63.7
+    },
+    {
+     "fg": "accent-on",
+     "bg": "accent",
+     "wcag": 5.57,
+     "apca": -80.4
+    },
+    {
+     "fg": "accent-on",
+     "bg": "accent-hover",
+     "wcag": 6.75,
+     "apca": -85.3
+    },
+    {
+     "fg": "accent-text",
+     "bg": "surface-page",
+     "wcag": 4.93,
+     "apca": 68.5
+    },
+    {
+     "fg": "accent-text",
+     "bg": "accent-soft",
+     "wcag": 4.68,
+     "apca": 65.2
+    },
+    {
+     "fg": "border-strong",
+     "bg": "surface-page",
+     "wcag": 3.01,
+     "apca": 52.9
+    },
+    {
+     "fg": "border-strong",
+     "bg": "surface-card",
+     "wcag": 3.25,
+     "apca": 57.9
+    },
+    {
+     "fg": "ring",
+     "bg": "surface-page",
+     "wcag": 5.1,
+     "apca": 69.5
+    },
+    {
+     "fg": "accent",
+     "bg": "surface-page",
+     "wcag": 5.1,
+     "apca": 69.5
+    },
+    {
+     "fg": "ink-inverse",
+     "bg": "surface-inverse",
+     "wcag": 14.21,
+     "apca": -96.6
+    },
+    {
+     "fg": "success",
+     "bg": "surface-page",
+     "wcag": 4.95,
+     "apca": 68.6
+    },
+    {
+     "fg": "success",
+     "bg": "success-soft",
+     "wcag": 5.04,
+     "apca": 69.8
+    },
+    {
+     "fg": "warning",
+     "bg": "surface-page",
+     "wcag": 4.95,
+     "apca": 69.0
+    },
+    {
+     "fg": "warning",
+     "bg": "warning-soft",
+     "wcag": 4.94,
+     "apca": 68.9
+    },
+    {
+     "fg": "danger",
+     "bg": "surface-page",
+     "wcag": 4.95,
+     "apca": 68.6
+    },
+    {
+     "fg": "danger",
+     "bg": "danger-soft",
+     "wcag": 4.93,
+     "apca": 68.4
+    },
+    {
+     "fg": "info",
+     "bg": "surface-page",
+     "wcag": 4.98,
+     "apca": 68.8
+    },
+    {
+     "fg": "info",
+     "bg": "info-soft",
+     "wcag": 4.99,
+     "apca": 69.0
+    },
+    {
+     "fg": "accent2-on",
+     "bg": "accent2",
+     "wcag": 6.15,
+     "apca": -83.5
+    },
+    {
+     "fg": "accent2-text",
+     "bg": "surface-page",
+     "wcag": 4.98,
+     "apca": 69.4
+    },
+    {
+     "fg": "accent2-text",
+     "bg": "accent2-soft",
+     "wcag": 4.78,
+     "apca": 66.7
+    }
+   ],
+   "light_ramps": {
+    "neutral": [
+     {
+      "oklch": "oklch(0.991 0.005 60)",
+      "hex": "#fffbf8"
+     },
+     {
+      "oklch": "oklch(0.982 0.009 60)",
+      "hex": "#fef8f3"
+     },
+     {
+      "oklch": "oklch(0.955 0.010 60)",
+      "hex": "#f5efea"
+     },
+     {
+      "oklch": "oklch(0.931 0.011 60)",
+      "hex": "#eee7e1"
+     },
+     {
+      "oklch": "oklch(0.907 0.012 60)",
+      "hex": "#e7dfd9"
+     },
+     {
+      "oklch": "oklch(0.885 0.013 60)",
+      "hex": "#e0d7d1"
+     },
+     {
+      "oklch": "oklch(0.851 0.014 60)",
+      "hex": "#d5ccc5"
+     },
+     {
+      "oklch": "oklch(0.792 0.015 60)",
+      "hex": "#c3b9b2"
+     },
+     {
+      "oklch": "oklch(0.643 0.016 60)",
+      "hex": "#958b84"
+     },
+     {
+      "oklch": "oklch(0.610 0.016 60)",
+      "hex": "#8b817a"
+     },
+     {
+      "oklch": "oklch(0.503 0.016 60)",
+      "hex": "#6b625b"
+     },
+     {
+      "oklch": "oklch(0.244 0.016 60)",
+      "hex": "#261f19"
+     }
+    ],
+    "accent": [
+     {
+      "oklch": "oklch(0.993 0.002 42)",
+      "hex": "#fefcfc"
+     },
+     {
+      "oklch": "oklch(0.982 0.006 42)",
+      "hex": "#fdf8f6"
+     },
+     {
+      "oklch": "oklch(0.960 0.014 42)",
+      "hex": "#faefeb"
+     },
+     {
+      "oklch": "oklch(0.938 0.024 42)",
+      "hex": "#f9e6de"
+     },
+     {
+      "oklch": "oklch(0.905 0.034 42)",
+      "hex": "#f5d9ce"
+     },
+     {
+      "oklch": "oklch(0.863 0.046 42)",
+      "hex": "#edc9bb"
+     },
+     {
+      "oklch": "oklch(0.810 0.060 42)",
+      "hex": "#e4b5a3"
+     },
+     {
+      "oklch": "oklch(0.734 0.082 42)",
+      "hex": "#d69881"
+     },
+     {
+      "oklch": "oklch(0.520 0.130 42)",
+      "hex": "#a54a24"
+     },
+     {
+      "oklch": "oklch(0.493 0.123 42)",
+      "hex": "#994521"
+     },
+     {
+      "oklch": "oklch(0.528 0.109 42)",
+      "hex": "#9f5335"
+     },
+     {
+      "oklch": "oklch(0.298 0.065 42)",
+      "hex": "#482111"
+     }
+    ]
+   },
+   "dark": {
+    "surface-page": {
+     "oklch": "oklch(0.185 0.014 50)",
+     "hex": "#18110d"
+    },
+    "surface-card": {
+     "oklch": "oklch(0.220 0.014 50)",
+     "hex": "#201915"
+    },
+    "surface-sunken": {
+     "oklch": "oklch(0.155 0.014 50)",
+     "hex": "#110b07"
+    },
+    "surface-raised": {
+     "oklch": "oklch(0.255 0.014 50)",
+     "hex": "#29211d"
+    },
+    "surface-inverse": {
+     "oklch": "oklch(0.940 0.014 50)",
+     "hex": "#f3e9e3"
+    },
+    "ink-1": {
+     "oklch": "oklch(0.940 0.011 50)",
+     "hex": "#f2e9e5"
+    },
+    "ink-2": {
+     "oklch": "oklch(0.852 0.014 50)",
+     "hex": "#d6ccc6"
+    },
+    "ink-3": {
+     "oklch": "oklch(0.770 0.014 50)",
+     "hex": "#bcb2ac"
+    },
+    "ink-inverse": {
+     "oklch": "oklch(0.220 0.011 50)",
+     "hex": "#1f1916"
+    },
+    "border-subtle": {
+     "oklch": "oklch(0.270 0.017 50)",
+     "hex": "#2d241f"
+    },
+    "border-strong": {
+     "oklch": "oklch(0.578 0.018 50)",
+     "hex": "#837770"
+    },
+    "accent": {
+     "oklch": "oklch(0.766 0.130 42)",
+     "hex": "#f8966f"
+    },
+    "accent-on": {
+     "oklch": "oklch(0.190 0.011 50)",
+     "hex": "#18120f"
+    },
+    "accent-hover": {
+     "oklch": "oklch(0.806 0.116 42)",
+     "hex": "#ffa684"
+    },
+    "accent-soft": {
+     "oklch": "oklch(0.250 0.045 42)",
+     "hex": "#341a10"
+    },
+    "accent-text": {
+     "oklch": "oklch(0.786 0.130 42)",
+     "hex": "#ff9c75"
+    },
+    "ring": {
+     "oklch": "oklch(0.766 0.130 42)",
+     "hex": "#f8966f"
+    },
+    "accent2": {
+     "oklch": "oklch(0.752 0.080 112)",
+     "hex": "#afb478"
+    },
+    "accent2-on": {
+     "oklch": "oklch(0.190 0.011 50)",
+     "hex": "#18120f"
+    },
+    "accent2-soft": {
+     "oklch": "oklch(0.250 0.040 112)",
+     "hex": "#22230b"
+    },
+    "accent2-text": {
+     "oklch": "oklch(0.770 0.080 112)",
+     "hex": "#b5ba7e"
+    },
+    "success": {
+     "oklch": "oklch(0.758 0.130 155)",
+     "hex": "#64c98c"
+    },
+    "success-soft": {
+     "oklch": "oklch(0.245 0.040 155)",
+     "hex": "#0f2618"
+    },
+    "warning": {
+     "oklch": "oklch(0.774 0.120 88)",
+     "hex": "#d5b153"
+    },
+    "warning-soft": {
+     "oklch": "oklch(0.245 0.040 88)",
+     "hex": "#281f07"
+    },
+    "danger": {
+     "oklch": "oklch(0.786 0.124 20)",
+     "hex": "#ff9898"
+    },
+    "danger-soft": {
+     "oklch": "oklch(0.245 0.040 20)",
+     "hex": "#311818"
+    },
+    "info": {
+     "oklch": "oklch(0.768 0.130 235)",
+     "hex": "#51c0fa"
+    },
+    "info-soft": {
+     "oklch": "oklch(0.245 0.040 235)",
+     "hex": "#0a2331"
+    }
+   },
+   "dark_p3_accent": "oklch(0.766 0.146 42)",
+   "dark_contrast": [
+    {
+     "fg": "ink-1",
+     "bg": "surface-page",
+     "wcag": 15.61,
+     "apca": -94.0
+    },
+    {
+     "fg": "ink-1",
+     "bg": "surface-card",
+     "wcag": 14.5,
+     "apca": -93.2
+    },
+    {
+     "fg": "ink-2",
+     "bg": "surface-sunken",
+     "wcag": 12.39,
+     "apca": -76.5
+    },
+    {
+     "fg": "ink-3",
+     "bg": "surface-sunken",
+     "wcag": 9.4,
+     "apca": -61.4
+    },
+    {
+     "fg": "accent-on",
+     "bg": "accent",
+     "wcag": 8.46,
+     "apca": 60.2
+    },
+    {
+     "fg": "accent-on",
+     "bg": "accent-hover",
+     "wcag": 9.75,
+     "apca": 67.0
+    },
+    {
+     "fg": "accent-text",
+     "bg": "surface-page",
+     "wcag": 9.13,
+     "apca": -62.1
+    },
+    {
+     "fg": "accent-text",
+     "bg": "accent-soft",
+     "wcag": 7.89,
+     "apca": -60.4
+    },
+    {
+     "fg": "border-strong",
+     "bg": "surface-page",
+     "wcag": 4.3,
+     "apca": -31.0
+    },
+    {
+     "fg": "border-strong",
+     "bg": "surface-card",
+     "wcag": 3.99,
+     "apca": -30.2
+    },
+    {
+     "fg": "ring",
+     "bg": "surface-page",
+     "wcag": 8.52,
+     "apca": -58.7
+    },
+    {
+     "fg": "accent",
+     "bg": "surface-page",
+     "wcag": 8.52,
+     "apca": -58.7
+    },
+    {
+     "fg": "ink-inverse",
+     "bg": "surface-inverse",
+     "wcag": 14.54,
+     "apca": 92.2
+    },
+    {
+     "fg": "success",
+     "bg": "surface-page",
+     "wcag": 9.13,
+     "apca": -62.1
+    },
+    {
+     "fg": "success",
+     "bg": "success-soft",
+     "wcag": 7.84,
+     "apca": -60.3
+    },
+    {
+     "fg": "warning",
+     "bg": "surface-page",
+     "wcag": 9.11,
+     "apca": -61.9
+    },
+    {
+     "fg": "warning",
+     "bg": "warning-soft",
+     "wcag": 7.94,
+     "apca": -60.3
+    },
+    {
+     "fg": "danger",
+     "bg": "surface-page",
+     "wcag": 9.07,
+     "apca": -61.8
+    },
+    {
+     "fg": "danger",
+     "bg": "danger-soft",
+     "wcag": 8.0,
+     "apca": -60.3
+    },
+    {
+     "fg": "info",
+     "bg": "surface-page",
+     "wcag": 9.13,
+     "apca": -62.2
+    },
+    {
+     "fg": "info",
+     "bg": "info-soft",
+     "wcag": 7.91,
+     "apca": -60.5
+    },
+    {
+     "fg": "accent2-on",
+     "bg": "accent2",
+     "wcag": 8.5,
+     "apca": 60.1
+    },
+    {
+     "fg": "accent2-text",
+     "bg": "surface-page",
+     "wcag": 9.15,
+     "apca": -62.0
+    },
+    {
+     "fg": "accent2-text",
+     "bg": "accent2-soft",
+     "wcag": 7.84,
+     "apca": -60.2
+    }
+   ],
+   "dark_ramps": {
+    "neutral": [
+     {
+      "oklch": "oklch(0.178 0.007 50)",
+      "hex": "#14100e"
+     },
+     {
+      "oklch": "oklch(0.213 0.008 50)",
+      "hex": "#1c1816"
+     },
+     {
+      "oklch": "oklch(0.252 0.009 50)",
+      "hex": "#26211e"
+     },
+     {
+      "oklch": "oklch(0.285 0.010 50)",
+      "hex": "#2e2926"
+     },
+     {
+      "oklch": "oklch(0.313 0.011 50)",
+      "hex": "#36302c"
+     },
+     {
+      "oklch": "oklch(0.348 0.011 50)",
+      "hex": "#3f3835"
+     },
+     {
+      "oklch": "oklch(0.402 0.012 50)",
+      "hex": "#4e4642"
+     },
+     {
+      "oklch": "oklch(0.489 0.013 50)",
+      "hex": "#675e5a"
+     },
+     {
+      "oklch": "oklch(0.538 0.014 50)",
+      "hex": "#756c67"
+     },
+     {
+      "oklch": "oklch(0.583 0.014 50)",
+      "hex": "#827974"
+     },
+     {
+      "oklch": "oklch(0.770 0.014 50)",
+      "hex": "#bcb2ac"
+     },
+     {
+      "oklch": "oklch(0.949 0.014 50)",
+      "hex": "#f6ece6"
+     }
+    ],
+    "accent": [
+     {
+      "oklch": "oklch(0.194 0.017 42)",
+      "hex": "#1b120f"
+     },
+     {
+      "oklch": "oklch(0.213 0.020 42)",
+      "hex": "#211612"
+     },
+     {
+      "oklch": "oklch(0.274 0.044 42)",
+      "hex": "#3a2015"
+     },
+     {
+      "oklch": "oklch(0.320 0.065 42)",
+      "hex": "#4e2616"
+     },
+     {
+      "oklch": "oklch(0.367 0.071 42)",
+      "hex": "#5e311f"
+     },
+     {
+      "oklch": "oklch(0.416 0.076 42)",
+      "hex": "#6e3d29"
+     },
+     {
+      "oklch": "oklch(0.474 0.082 42)",
+      "hex": "#824b36"
+     },
+     {
+      "oklch": "oklch(0.541 0.094 42)",
+      "hex": "#9d5b42"
+     },
+     {
+      "oklch": "oklch(0.766 0.130 42)",
+      "hex": "#f8966f"
+     },
+     {
+      "oklch": "oklch(0.806 0.114 42)",
+      "hex": "#fea785"
+     },
+     {
+      "oklch": "oklch(0.786 0.085 42)",
+      "hex": "#e9a88f"
+     },
+     {
+      "oklch": "oklch(0.936 0.034 42)",
+      "hex": "#ffe3d8"
+     }
+    ]
+   }
+  },
+  {
+   "id": "grape-jewel",
+   "name": "Grape & Ochre",
+   "archetype": "credible purple (jewel tone, flat)",
+   "suits": "creative software, arts, education with personality, community platforms, premium consumer",
+   "avoid": "any brief where purple-to-blue gradient is the only idea",
+   "mood": "deep, inky, a little theatrical",
+   "accent_hue": 305,
+   "light": {
+    "surface-page": {
+     "oklch": "oklch(0.975 0.010 310)",
+     "hex": "#f9f5fc"
+    },
+    "surface-card": {
+     "oklch": "oklch(0.995 0.003 310)",
+     "hex": "#fefdff"
+    },
+    "surface-sunken": {
+     "oklch": "oklch(0.945 0.010 310)",
+     "hex": "#efebf2"
+    },
+    "surface-raised": {
+     "oklch": "oklch(0.995 0.003 310)",
+     "hex": "#fefdff"
+    },
+    "surface-inverse": {
+     "oklch": "oklch(0.240 0.006 310)",
+     "hex": "#201e21"
+    },
+    "ink-1": {
+     "oklch": "oklch(0.220 0.008 310)",
+     "hex": "#1c1a1d"
+    },
+    "ink-2": {
+     "oklch": "oklch(0.426 0.010 310)",
+     "hex": "#504d53"
+    },
+    "ink-3": {
+     "oklch": "oklch(0.530 0.010 310)",
+     "hex": "#6d6a70"
+    },
+    "ink-inverse": {
+     "oklch": "oklch(0.970 0.008 310)",
+     "hex": "#f7f4f9"
+    },
+    "border-subtle": {
+     "oklch": "oklch(0.900 0.012 310)",
+     "hex": "#e0dce4"
+    },
+    "border-strong": {
+     "oklch": "oklch(0.650 0.013 310)",
+     "hex": "#918d95"
+    },
+    "accent": {
+     "oklch": "oklch(0.420 0.150 305)",
+     "hex": "#612f8d"
+    },
+    "accent-on": {
+     "oklch": "oklch(0.985 0.005 310)",
+     "hex": "#fbf9fd"
+    },
+    "accent-hover": {
+     "oklch": "oklch(0.375 0.150 305)",
+     "hex": "#54217f"
+    },
+    "accent-soft": {
+     "oklch": "oklch(0.950 0.030 305)",
+     "hex": "#f3eaff"
+    },
+    "accent-text": {
+     "oklch": "oklch(0.542 0.150 305)",
+     "hex": "#8454b4"
+    },
+    "ring": {
+     "oklch": "oklch(0.420 0.150 305)",
+     "hex": "#612f8d"
+    },
+    "accent2": {
+     "oklch": "oklch(0.780 0.130 85)",
+     "hex": "#ddb049"
+    },
+    "accent2-on": {
+     "oklch": "oklch(0.190 0.008 310)",
+     "hex": "#151317"
+    },
+    "accent2-soft": {
+     "oklch": "oklch(0.950 0.040 85)",
+     "hex": "#fbedd1"
+    },
+    "accent2-text": {
+     "oklch": "oklch(0.530 0.109 85)",
+     "hex": "#886600"
+    },
+    "success": {
+     "oklch": "oklch(0.512 0.127 155)",
+     "hex": "#007b45"
+    },
+    "success-soft": {
+     "oklch": "oklch(0.955 0.040 155)",
+     "hex": "#dcf9e5"
+    },
+    "warning": {
+     "oklch": "oklch(0.534 0.116 70)",
+     "hex": "#975f00"
+    },
+    "warning-soft": {
+     "oklch": "oklch(0.955 0.033 70)",
+     "hex": "#ffedd9"
+    },
+    "danger": {
+     "oklch": "oklch(0.544 0.130 25)",
+     "hex": "#af4c48"
+    },
+    "danger-soft": {
+     "oklch": "oklch(0.955 0.022 25)",
+     "hex": "#ffebe9"
+    },
+    "info": {
+     "oklch": "oklch(0.522 0.111 235)",
+     "hex": "#0072a0"
+    },
+    "info-soft": {
+     "oklch": "oklch(0.955 0.025 235)",
+     "hex": "#e1f3ff"
+    }
+   },
+   "light_p3_accent": "oklch(0.420 0.168 305)",
+   "light_contrast": [
+    {
+     "fg": "ink-1",
+     "bg": "surface-page",
+     "wcag": 16.05,
+     "apca": 99.0
+    },
+    {
+     "fg": "ink-1",
+     "bg": "surface-card",
+     "wcag": 17.05,
+     "apca": 103.2
+    },
+    {
+     "fg": "ink-2",
+     "bg": "surface-sunken",
+     "wcag": 7.06,
+     "apca": 77.7
+    },
+    {
+     "fg": "ink-3",
+     "bg": "surface-sunken",
+     "wcag": 4.52,
+     "apca": 65.5
+    },
+    {
+     "fg": "accent-on",
+     "bg": "accent",
+     "wcag": 8.73,
+     "apca": -91.4
+    },
+    {
+     "fg": "accent-on",
+     "bg": "accent-hover",
+     "wcag": 10.56,
+     "apca": -95.2
+    },
+    {
+     "fg": "accent-text",
+     "bg": "surface-page",
+     "wcag": 4.99,
+     "apca": 71.3
+    },
+    {
+     "fg": "accent-text",
+     "bg": "accent-soft",
+     "wcag": 4.61,
+     "apca": 66.1
+    },
+    {
+     "fg": "border-strong",
+     "bg": "surface-page",
+     "wcag": 3.02,
+     "apca": 54.7
+    },
+    {
+     "fg": "border-strong",
+     "bg": "surface-card",
+     "wcag": 3.21,
+     "apca": 58.9
+    },
+    {
+     "fg": "ring",
+     "bg": "surface-page",
+     "wcag": 8.48,
+     "apca": 85.3
+    },
+    {
+     "fg": "accent",
+     "bg": "surface-page",
+     "wcag": 8.48,
+     "apca": 85.3
+    },
+    {
+     "fg": "ink-inverse",
+     "bg": "surface-inverse",
+     "wcag": 15.18,
+     "apca": -99.4
+    },
+    {
+     "fg": "success",
+     "bg": "surface-page",
+     "wcag": 4.97,
+     "apca": 70.9
+    },
+    {
+     "fg": "success",
+     "bg": "success-soft",
+     "wcag": 4.78,
+     "apca": 68.2
+    },
+    {
+     "fg": "warning",
+     "bg": "surface-page",
+     "wcag": 4.93,
+     "apca": 70.9
+    },
+    {
+     "fg": "warning",
+     "bg": "warning-soft",
+     "wcag": 4.65,
+     "apca": 67.0
+    },
+    {
+     "fg": "danger",
+     "bg": "surface-page",
+     "wcag": 4.94,
+     "apca": 70.7
+    },
+    {
+     "fg": "danger",
+     "bg": "danger-soft",
+     "wcag": 4.64,
+     "apca": 66.5
+    },
+    {
+     "fg": "info",
+     "bg": "surface-page",
+     "wcag": 4.98,
+     "apca": 71.0
+    },
+    {
+     "fg": "info",
+     "bg": "info-soft",
+     "wcag": 4.72,
+     "apca": 67.3
+    },
+    {
+     "fg": "accent2-on",
+     "bg": "accent2",
+     "wcag": 9.13,
+     "apca": 63.8
+    },
+    {
+     "fg": "accent2-text",
+     "bg": "surface-page",
+     "wcag": 4.94,
+     "apca": 71.1
+    },
+    {
+     "fg": "accent2-text",
+     "bg": "accent2-soft",
+     "wcag": 4.59,
+     "apca": 66.3
+    }
+   ],
+   "light_ramps": {
+    "neutral": [
+     {
+      "oklch": "oklch(0.991 0.005 310)",
+      "hex": "#fdfbff"
+     },
+     {
+      "oklch": "oklch(0.982 0.006 310)",
+      "hex": "#faf8fc"
+     },
+     {
+      "oklch": "oklch(0.955 0.006 310)",
+      "hex": "#f1eff3"
+     },
+     {
+      "oklch": "oklch(0.931 0.007 310)",
+      "hex": "#e9e7ec"
+     },
+     {
+      "oklch": "oklch(0.907 0.007 310)",
+      "hex": "#e2dfe4"
+     },
+     {
+      "oklch": "oklch(0.885 0.008 310)",
+      "hex": "#dbd8dd"
+     },
+     {
+      "oklch": "oklch(0.851 0.009 310)",
+      "hex": "#d0ccd2"
+     },
+     {
+      "oklch": "oklch(0.792 0.009 310)",
+      "hex": "#bdbac0"
+     },
+     {
+      "oklch": "oklch(0.643 0.010 310)",
+      "hex": "#8f8b92"
+     },
+     {
+      "oklch": "oklch(0.610 0.010 310)",
+      "hex": "#858288"
+     },
+     {
+      "oklch": "oklch(0.503 0.010 310)",
+      "hex": "#666368"
+     },
+     {
+      "oklch": "oklch(0.244 0.010 310)",
+      "hex": "#221f24"
+     }
+    ],
+    "accent": [
+     {
+      "oklch": "oklch(0.993 0.002 305)",
+      "hex": "#fdfcfe"
+     },
+     {
+      "oklch": "oklch(0.982 0.007 305)",
+      "hex": "#faf8fd"
+     },
+     {
+      "oklch": "oklch(0.960 0.016 305)",
+      "hex": "#f4effb"
+     },
+     {
+      "oklch": "oklch(0.938 0.027 305)",
+      "hex": "#efe6fa"
+     },
+     {
+      "oklch": "oklch(0.905 0.040 305)",
+      "hex": "#e6daf5"
+     },
+     {
+      "oklch": "oklch(0.863 0.053 305)",
+      "hex": "#dacaee"
+     },
+     {
+      "oklch": "oklch(0.810 0.069 305)",
+      "hex": "#cbb6e5"
+     },
+     {
+      "oklch": "oklch(0.734 0.094 305)",
+      "hex": "#b79ad9"
+     },
+     {
+      "oklch": "oklch(0.420 0.150 305)",
+      "hex": "#612f8d"
+     },
+     {
+      "oklch": "oklch(0.393 0.142 305)",
+      "hex": "#582a81"
+     },
+     {
+      "oklch": "oklch(0.542 0.126 305)",
+      "hex": "#805aa9"
+     },
+     {
+      "oklch": "oklch(0.312 0.075 305)",
+      "hex": "#3a264f"
+     }
+    ]
+   },
+   "dark": {
+    "surface-page": {
+     "oklch": "oklch(0.170 0.016 305)",
+     "hex": "#110e15"
+    },
+    "surface-card": {
+     "oklch": "oklch(0.205 0.016 305)",
+     "hex": "#19151d"
+    },
+    "surface-sunken": {
+     "oklch": "oklch(0.140 0.016 305)",
+     "hex": "#0b080e"
+    },
+    "surface-raised": {
+     "oklch": "oklch(0.240 0.016 305)",
+     "hex": "#211d25"
+    },
+    "surface-inverse": {
+     "oklch": "oklch(0.940 0.016 305)",
+     "hex": "#ede9f4"
+    },
+    "ink-1": {
+     "oklch": "oklch(0.945 0.013 305)",
+     "hex": "#efebf4"
+    },
+    "ink-2": {
+     "oklch": "oklch(0.848 0.016 305)",
+     "hex": "#cfcbd6"
+    },
+    "ink-3": {
+     "oklch": "oklch(0.766 0.016 305)",
+     "hex": "#b5b1bb"
+    },
+    "ink-inverse": {
+     "oklch": "oklch(0.220 0.013 305)",
+     "hex": "#1c191f"
+    },
+    "border-subtle": {
+     "oklch": "oklch(0.255 0.019 305)",
+     "hex": "#25212a"
+    },
+    "border-strong": {
+     "oklch": "oklch(0.574 0.021 305)",
+     "hex": "#7b7683"
+    },
+    "accent": {
+     "oklch": "oklch(0.766 0.120 305)",
+     "hex": "#c59ff0"
+    },
+    "accent-on": {
+     "oklch": "oklch(0.190 0.013 305)",
+     "hex": "#151218"
+    },
+    "accent-hover": {
+     "oklch": "oklch(0.806 0.120 305)",
+     "hex": "#d2acfe"
+    },
+    "accent-soft": {
+     "oklch": "oklch(0.235 0.045 305)",
+     "hex": "#23182f"
+    },
+    "accent-text": {
+     "oklch": "oklch(0.782 0.120 305)",
+     "hex": "#caa4f6"
+    },
+    "ring": {
+     "oklch": "oklch(0.766 0.120 305)",
+     "hex": "#c59ff0"
+    },
+    "accent2": {
+     "oklch": "oklch(0.820 0.130 85)",
+     "hex": "#ebbd57"
+    },
+    "accent2-on": {
+     "oklch": "oklch(0.190 0.013 305)",
+     "hex": "#151218"
+    },
+    "accent2-soft": {
+     "oklch": "oklch(0.235 0.040 85)",
+     "hex": "#271c05"
+    },
+    "accent2-text": {
+     "oklch": "oklch(0.772 0.130 85)",
+     "hex": "#dbae46"
+    },
+    "success": {
+     "oklch": "oklch(0.756 0.130 155)",
+     "hex": "#64c88b"
+    },
+    "success-soft": {
+     "oklch": "oklch(0.230 0.040 155)",
+     "hex": "#0b2214"
+    },
+    "warning": {
+     "oklch": "oklch(0.776 0.120 70)",
+     "hex": "#e7a85b"
+    },
+    "warning-soft": {
+     "oklch": "oklch(0.230 0.040 70)",
+     "hex": "#291906"
+    },
+    "danger": {
+     "oklch": "oklch(0.784 0.126 25)",
+     "hex": "#ff9890"
+    },
+    "danger-soft": {
+     "oklch": "oklch(0.230 0.040 25)",
+     "hex": "#2d1513"
+    },
+    "info": {
+     "oklch": "oklch(0.764 0.130 235)",
+     "hex": "#50bff9"
+    },
+    "info-soft": {
+     "oklch": "oklch(0.230 0.040 235)",
+     "hex": "#06202d"
+    }
+   },
+   "dark_p3_accent": "oklch(0.766 0.134 305)",
+   "dark_contrast": [
+    {
+     "fg": "ink-1",
+     "bg": "surface-page",
+     "wcag": 16.27,
+     "apca": -95.4
+    },
+    {
+     "fg": "ink-1",
+     "bg": "surface-card",
+     "wcag": 15.31,
+     "apca": -94.8
+    },
+    {
+     "fg": "ink-2",
+     "bg": "surface-sunken",
+     "wcag": 12.48,
+     "apca": -76.0
+    },
+    {
+     "fg": "ink-3",
+     "bg": "surface-sunken",
+     "wcag": 9.45,
+     "apca": -60.9
+    },
+    {
+     "fg": "accent-on",
+     "bg": "accent",
+     "wcag": 8.48,
+     "apca": 60.1
+    },
+    {
+     "fg": "accent-on",
+     "bg": "accent-hover",
+     "wcag": 9.78,
+     "apca": 67.0
+    },
+    {
+     "fg": "accent-text",
+     "bg": "surface-page",
+     "wcag": 9.25,
+     "apca": -61.6
+    },
+    {
+     "fg": "accent-text",
+     "bg": "accent-soft",
+     "wcag": 8.17,
+     "apca": -60.3
+    },
+    {
+     "fg": "border-strong",
+     "bg": "surface-page",
+     "wcag": 4.34,
+     "apca": -30.7
+    },
+    {
+     "fg": "border-strong",
+     "bg": "surface-card",
+     "wcag": 4.08,
+     "apca": -30.1
+    },
+    {
+     "fg": "ring",
+     "bg": "surface-page",
+     "wcag": 8.74,
+     "apca": -58.8
+    },
+    {
+     "fg": "accent",
+     "bg": "surface-page",
+     "wcag": 8.74,
+     "apca": -58.8
+    },
+    {
+     "fg": "ink-inverse",
+     "bg": "surface-inverse",
+     "wcag": 14.54,
+     "apca": 92.2
+    },
+    {
+     "fg": "success",
+     "bg": "surface-page",
+     "wcag": 9.27,
+     "apca": -61.9
+    },
+    {
+     "fg": "success",
+     "bg": "success-soft",
+     "wcag": 8.12,
+     "apca": -60.4
+    },
+    {
+     "fg": "warning",
+     "bg": "surface-page",
+     "wcag": 9.25,
+     "apca": -61.7
+    },
+    {
+     "fg": "warning",
+     "bg": "warning-soft",
+     "wcag": 8.21,
+     "apca": -60.4
+    },
+    {
+     "fg": "danger",
+     "bg": "surface-page",
+     "wcag": 9.24,
+     "apca": -61.8
+    },
+    {
+     "fg": "danger",
+     "bg": "danger-soft",
+     "wcag": 8.26,
+     "apca": -60.5
+    },
+    {
+     "fg": "info",
+     "bg": "surface-page",
+     "wcag": 9.26,
+     "apca": -61.9
+    },
+    {
+     "fg": "info",
+     "bg": "info-soft",
+     "wcag": 8.11,
+     "apca": -60.4
+    },
+    {
+     "fg": "accent2-on",
+     "bg": "accent2",
+     "wcag": 10.56,
+     "apca": 70.9
+    },
+    {
+     "fg": "accent2-text",
+     "bg": "surface-page",
+     "wcag": 9.25,
+     "apca": -61.7
+    },
+    {
+     "fg": "accent2-text",
+     "bg": "accent2-soft",
+     "wcag": 8.09,
+     "apca": -60.2
+    }
+   ],
+   "dark_ramps": {
+    "neutral": [
+     {
+      "oklch": "oklch(0.178 0.008 305)",
+      "hex": "#121014"
+     },
+     {
+      "oklch": "oklch(0.213 0.009 305)",
+      "hex": "#1a181c"
+     },
+     {
+      "oklch": "oklch(0.252 0.010 305)",
+      "hex": "#232126"
+     },
+     {
+      "oklch": "oklch(0.285 0.011 305)",
+      "hex": "#2b292f"
+     },
+     {
+      "oklch": "oklch(0.313 0.012 305)",
+      "hex": "#323036"
+     },
+     {
+      "oklch": "oklch(0.348 0.013 305)",
+      "hex": "#3b3840"
+     },
+     {
+      "oklch": "oklch(0.402 0.014 305)",
+      "hex": "#4a464e"
+     },
+     {
+      "oklch": "oklch(0.489 0.015 305)",
+      "hex": "#625e67"
+     },
+     {
+      "oklch": "oklch(0.538 0.016 305)",
+      "hex": "#706c76"
+     },
+     {
+      "oklch": "oklch(0.583 0.016 305)",
+      "hex": "#7d7983"
+     },
+     {
+      "oklch": "oklch(0.770 0.016 305)",
+      "hex": "#b6b2bd"
+     },
+     {
+      "oklch": "oklch(0.949 0.016 305)",
+      "hex": "#f0ecf7"
+     }
+    ],
+    "accent": [
+     {
+      "oklch": "oklch(0.194 0.016 305)",
+      "hex": "#16131a"
+     },
+     {
+      "oklch": "oklch(0.213 0.019 305)",
+      "hex": "#1b1720"
+     },
+     {
+      "oklch": "oklch(0.274 0.041 305)",
+      "hex": "#2c2238"
+     },
+     {
+      "oklch": "oklch(0.320 0.060 305)",
+      "hex": "#3a2a4b"
+     },
+     {
+      "oklch": "oklch(0.367 0.066 305)",
+      "hex": "#47355b"
+     },
+     {
+      "oklch": "oklch(0.416 0.070 305)",
+      "hex": "#55426b"
+     },
+     {
+      "oklch": "oklch(0.474 0.076 305)",
+      "hex": "#66517e"
+     },
+     {
+      "oklch": "oklch(0.541 0.087 305)",
+      "hex": "#7b6298"
+     },
+     {
+      "oklch": "oklch(0.766 0.120 305)",
+      "hex": "#c59ff0"
+     },
+     {
+      "oklch": "oklch(0.806 0.105 305)",
+      "hex": "#cfaef6"
+     },
+     {
+      "oklch": "oklch(0.782 0.078 305)",
+      "hex": "#c3ace1"
+     },
+     {
+      "oklch": "oklch(0.932 0.032 305)",
+      "hex": "#ede4fa"
+     }
+    ]
+   }
+  }
+ ],
+ "dataviz": {
+  "light-6": {
+   "score": 14.6,
+   "colors": [
+    {
+     "oklch": "oklch(0.507 0.104 95)",
+     "hex": "#786400",
+     "wcag_vs_bg": 5.8
+    },
+    {
+     "oklch": "oklch(0.651 0.140 112)",
+     "hex": "#929712",
+     "wcag_vs_bg": 3.15
+    },
+    {
+     "oklch": "oklch(0.639 0.140 263)",
+     "hex": "#5e89e0",
+     "wcag_vs_bg": 3.43
+    },
+    {
+     "oklch": "oklch(0.486 0.140 274)",
+     "hex": "#4855ad",
+     "wcag_vs_bg": 6.61
+    },
+    {
+     "oklch": "oklch(0.450 0.140 356)",
+     "hex": "#8d2a58",
+     "wcag_vs_bg": 8.06
+    },
+    {
+     "oklch": "oklch(0.625 0.140 360)",
+     "hex": "#c95f84",
+     "wcag_vs_bg": 3.85
+    }
+   ]
+  },
+  "light-8": {
+   "score": 11.1,
+   "colors": [
+    {
+     "oklch": "oklch(0.648 0.140 26)",
+     "hex": "#d66861",
+     "wcag_vs_bg": 3.49
+    },
+    {
+     "oklch": "oklch(0.461 0.128 47)",
+     "hex": "#8f3c00",
+     "wcag_vs_bg": 7.46
+    },
+    {
+     "oklch": "oklch(0.569 0.131 62)",
+     "hex": "#ac6200",
+     "wcag_vs_bg": 4.67
+    },
+    {
+     "oklch": "oklch(0.450 0.080 184)",
+     "hex": "#00635a",
+     "wcag_vs_bg": 7.16
+    },
+    {
+     "oklch": "oklch(0.613 0.104 196)",
+     "hex": "#009799",
+     "wcag_vs_bg": 3.57
+    },
+    {
+     "oklch": "oklch(0.562 0.140 295)",
+     "hex": "#7c61bd",
+     "wcag_vs_bg": 4.88
+    },
+    {
+     "oklch": "oklch(0.450 0.140 301)",
+     "hex": "#633d95",
+     "wcag_vs_bg": 7.98
+    },
+    {
+     "oklch": "oklch(0.680 0.140 306)",
+     "hex": "#ad80dc",
+     "wcag_vs_bg": 3.04
+    }
+   ]
+  },
+  "dark-6": {
+   "score": 15.3,
+   "colors": [
+    {
+     "oklch": "oklch(0.782 0.130 7)",
+     "hex": "#fe93a9",
+     "wcag_vs_bg": 8.74
+    },
+    {
+     "oklch": "oklch(0.850 0.130 97)",
+     "hex": "#e6ce62",
+     "wcag_vs_bg": 11.73
+    },
+    {
+     "oklch": "oklch(0.672 0.130 110)",
+     "hex": "#9b9c2c",
+     "wcag_vs_bg": 6.3
+    },
+    {
+     "oklch": "oklch(0.802 0.130 223)",
+     "hex": "#46d0fb",
+     "wcag_vs_bg": 10.24
+    },
+    {
+     "oklch": "oklch(0.627 0.130 251)",
+     "hex": "#458cd4",
+     "wcag_vs_bg": 5.22
+    },
+    {
+     "oklch": "oklch(0.620 0.130 360)",
+     "hex": "#c36183",
+     "wcag_vs_bg": 4.7
+    }
+   ]
+  },
+  "dark-8": {
+   "score": 11.2,
+   "colors": [
+    {
+     "oklch": "oklch(0.620 0.130 2)",
+     "hex": "#c46180",
+     "wcag_vs_bg": 4.71
+    },
+    {
+     "oklch": "oklch(0.850 0.130 90)",
+     "hex": "#eeca61",
+     "wcag_vs_bg": 11.63
+    },
+    {
+     "oklch": "oklch(0.712 0.130 95)",
+     "hex": "#bca130",
+     "wcag_vs_bg": 7.26
+    },
+    {
+     "oklch": "oklch(0.850 0.130 165)",
+     "hex": "#70e9b8",
+     "wcag_vs_bg": 12.31
+    },
+    {
+     "oklch": "oklch(0.640 0.130 274)",
+     "hex": "#7485db",
+     "wcag_vs_bg": 5.37
+    },
+    {
+     "oklch": "oklch(0.850 0.078 287)",
+     "hex": "#c9c7ff",
+     "wcag_vs_bg": 11.49
+    },
+    {
+     "oklch": "oklch(0.753 0.130 291)",
+     "hex": "#af9ffb",
+     "wcag_vs_bg": 8.05
+    },
+    {
+     "oklch": "oklch(0.757 0.130 355)",
+     "hex": "#f08cb4",
+     "wcag_vs_bg": 8.0
+    }
+   ]
+  }
+ }
+}

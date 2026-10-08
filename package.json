@@ -1,0 +1,14 @@
+{
+  "name": "design-engine",
+  "private": true,
+  "type": "module",
+  "description": "Front-end design brain: knowledge, system, render-and-check tooling",
+  "scripts": {
+    "check": "node tools/check.mjs",
+    "gallery": "node tools/gallery.mjs"
+  },
+  "dependencies": {
+    "axe-core": "^4.14.0",
+    "playwright": "^1.64.0"
+  }
+}

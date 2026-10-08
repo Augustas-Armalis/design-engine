@@ -1,0 +1,227 @@
+{
+  "$meta": {
+    "name": "motion-tokens",
+    "status": "proposal",
+    "version": "0.1.0",
+    "generated": "2026-10-08",
+    "verifiedAgainst": ["motion@14.0.0", "framer-motion@14.0.0", "gsap@3.15.0", "@gsap/react@2.1.2", "Material 3 tokens (material-web v0_192, androidx.compose.material3 v0_14_0)"],
+    "units": { "duration": "ms", "distance": "px", "spring.visualDuration": "s (Motion convention)", "delay": "ms" },
+    "provenanceKey": {
+      "verified": "read in primary docs/source",
+      "blog": "named expert source (Emil Kowalski, Josh Comeau, NN/g, Apple WWDC)",
+      "engine": "design-engine synthesis, tune with ledger feedback"
+    },
+    "notes": [
+      "Durations/easings/springs are semantic; components reference roles, never literals.",
+      "Personality multiplies durations and sets bounce ceilings; see personality.",
+      "Everything under 'reducedMotion' is applied automatically when prefers-reduced-motion: reduce."
+    ]
+  },
+
+  "duration": {
+    "instant": { "value": 0,   "use": "keyboard-initiated, high-frequency, data-instant tooltips", "src": "blog" },
+    "micro":   { "value": 100, "use": "toggle/checkbox, exit of small popups, press down", "src": "blog" },
+    "fast":    { "value": 150, "use": "hover color, press release, tooltip/popover exit", "src": "blog" },
+    "base":    { "value": 200, "use": "popover/menu/select enter, tab indicator, accordion", "src": "blog" },
+    "moderate":{ "value": 300, "use": "modal enter, route change, large panels (UI ceiling)", "src": "blog" },
+    "slow":    { "value": 400, "use": "toast enter (Sonner), big-distance movement", "src": "blog" },
+    "drawer":  { "value": 500, "use": "gesture sheets with iOS curve", "src": "blog" },
+    "reveal":  { "value": 600, "use": "scroll reveal, hero element", "src": "engine" },
+    "hero":    { "value": 800, "use": "landing hero element, max for entrances", "src": "engine" },
+    "loopShimmer": { "value": 1600, "use": "skeleton shimmer cycle", "src": "engine" },
+    "loopSpinner": { "value": 900, "use": "spinner rotation", "src": "blog" }
+  },
+
+  "durationScaleByDistance": {
+    "note": "heuristic; pick duration by distance travelled or area changed",
+    "src": "engine",
+    "tiers": [
+      { "maxDistancePx": 48,   "duration": [120, 150] },
+      { "maxDistancePx": 200,  "duration": [180, 250] },
+      { "maxDistancePx": 500,  "duration": [250, 350] },
+      { "maxDistancePx": 9999, "duration": [300, 400] }
+    ],
+    "hardCapMs": 500
+  },
+
+  "easing": {
+    "out":            { "css": "cubic-bezier(0.23, 1, 0.32, 1)",   "bezier": [0.23, 1, 0.32, 1],    "use": "default enter/UI (ease-out-quint)", "src": "verified" },
+    "outExpo":        { "css": "cubic-bezier(0.19, 1, 0.22, 1)",   "bezier": [0.19, 1, 0.22, 1],    "use": "hero, reveals", "src": "verified" },
+    "outCubic":       { "css": "cubic-bezier(0.215, 0.61, 0.355, 1)", "bezier": [0.215, 0.61, 0.355, 1], "use": "gentle ease-out", "src": "verified" },
+    "inOut":          { "css": "cubic-bezier(0.77, 0, 0.175, 1)",  "bezier": [0.77, 0, 0.175, 1],   "use": "on-screen movement/morph (ease-in-out-quart)", "src": "blog" },
+    "inOutSoft":      { "css": "cubic-bezier(0.645, 0.045, 0.355, 1)", "bezier": [0.645, 0.045, 0.355, 1], "use": "softer morph", "src": "verified" },
+    "inExit":         { "css": "cubic-bezier(0.55, 0.055, 0.675, 0.19)", "bezier": [0.55, 0.055, 0.675, 0.19], "use": "ONLY when element leaves viewport / ends invisible", "src": "verified" },
+    "drawer":         { "css": "cubic-bezier(0.32, 0.72, 0, 1)",   "bezier": [0.32, 0.72, 0, 1],    "use": "sheets/drawers (iOS-like, Ionic via Vaul)", "src": "verified" },
+    "ease":           { "css": "ease", "bezier": [0.25, 0.1, 0.25, 1], "use": "hover color, Sonner toast", "src": "verified" },
+    "linear":         { "css": "linear", "use": "spinner, scrub, hold-to-confirm, progress", "src": "verified" },
+    "m3Standard":           { "css": "cubic-bezier(0.2, 0, 0, 1)",   "bezier": [0.2, 0, 0, 1],    "use": "utility motion on screen", "src": "verified" },
+    "m3StandardDecelerate": { "css": "cubic-bezier(0, 0, 0, 1)",     "bezier": [0, 0, 0, 1],      "use": "enter", "src": "verified" },
+    "m3StandardAccelerate": { "css": "cubic-bezier(0.3, 0, 1, 1)",   "bezier": [0.3, 0, 1, 1],    "use": "exit off screen", "src": "verified" },
+    "m3EmphasizedDecelerate": { "css": "cubic-bezier(0.05, 0.7, 0.1, 1)", "bezier": [0.05, 0.7, 0.1, 1], "use": "expressive enter", "src": "verified" },
+    "m3EmphasizedAccelerate": { "css": "cubic-bezier(0.3, 0, 0.8, 0.15)", "bezier": [0.3, 0, 0.8, 0.15], "use": "expressive exit", "src": "verified" }
+  },
+
+  "spring": {
+    "note": "Motion duration-style params. damping ratio zeta = 1 - bounce. stiffness = (2*pi/(visualDuration*1.2))^2, damping = 2*zeta*sqrt(stiffness) (mass 1). settleMs = time to stay within 1%.",
+    "bounceCeiling": { "product": 0.2, "playful": 0.3, "absolute": 0.3 },
+    "presets": {
+      "press":    { "type": "spring", "visualDuration": 0.15, "bounce": 0,   "stiffness": 1218, "damping": 70,   "settleMs": 190, "src": "engine" },
+      "small":    { "type": "spring", "visualDuration": 0.2,  "bounce": 0,   "stiffness": 685,  "damping": 52,   "settleMs": 255, "src": "engine" },
+      "medium":   { "type": "spring", "visualDuration": 0.25, "bounce": 0,   "stiffness": 439,  "damping": 42,   "settleMs": 320, "src": "engine" },
+      "layout":   { "type": "spring", "visualDuration": 0.3,  "bounce": 0,   "stiffness": 305,  "damping": 35,   "settleMs": 380, "src": "engine" },
+      "panel":    { "type": "spring", "visualDuration": 0.4,  "bounce": 0,   "stiffness": 171,  "damping": 26,   "settleMs": 510, "src": "engine" },
+      "release":  { "type": "spring", "visualDuration": 0.3,  "bounce": 0.2, "stiffness": 305,  "damping": 27.9, "settleMs": 360, "overshootPct": 1.5, "src": "blog (Apple ~80% damping for momentum)" },
+      "playful":  { "type": "spring", "visualDuration": 0.3,  "bounce": 0.3, "stiffness": 305,  "damping": 24.4, "settleMs": 375, "overshootPct": 4.5, "src": "engine" }
+    },
+    "avoid": [
+      { "name": "motion-implicit-xy", "stiffness": 500, "damping": 25, "zeta": 0.56, "why": "Motion's implicit transform spring, ~12% overshoot, looks templated", "src": "verified" },
+      { "name": "motion-spring-default", "stiffness": 100, "damping": 10, "zeta": 0.5, "why": "slow (~880ms) and ~16% overshoot", "src": "verified" }
+    ],
+    "material3": {
+      "standard": {
+        "fastSpatial":    { "dampingRatio": 0.9, "stiffness": 1400 },
+        "defaultSpatial": { "dampingRatio": 0.9, "stiffness": 700 },
+        "slowSpatial":    { "dampingRatio": 0.9, "stiffness": 300 },
+        "fastEffects":    { "dampingRatio": 1.0, "stiffness": 3800 },
+        "defaultEffects": { "dampingRatio": 1.0, "stiffness": 1600 },
+        "slowEffects":    { "dampingRatio": 1.0, "stiffness": 800 }
+      },
+      "expressive": {
+        "fastSpatial":    { "dampingRatio": 0.6, "stiffness": 800 },
+        "defaultSpatial": { "dampingRatio": 0.8, "stiffness": 380 },
+        "slowSpatial":    { "dampingRatio": 0.8, "stiffness": 200 },
+        "fastEffects":    { "dampingRatio": 1.0, "stiffness": 3800 },
+        "defaultEffects": { "dampingRatio": 1.0, "stiffness": 1600 },
+        "slowEffects":    { "dampingRatio": 1.0, "stiffness": 800 }
+      },
+      "src": "verified"
+    },
+    "cssLinear": {
+      "note": "sampled from the same model; fixed duration, no velocity inheritance; use for hover/enter only",
+      "snappy": { "duration": 210, "linear": "linear(0, 0.034, 0.114, 0.216, 0.325, 0.432, 0.531, 0.619, 0.696, 0.76, 0.814, 0.856, 0.891, 0.919, 0.941, 0.957, 0.97, 0.98, 0.987, 0.992, 1)" },
+      "bouncy": { "duration": 400, "linear": "linear(0, 0.053, 0.176, 0.331, 0.489, 0.636, 0.76, 0.859, 0.933, 0.985, 1.018, 1.036, 1.044, 1.045, 1.041, 1.035, 1.028, 1.021, 1.014, 1.009, 1)" },
+      "gentle": { "duration": 570, "linear": "linear(0, 0.057, 0.176, 0.312, 0.443, 0.559, 0.657, 0.736, 0.8, 0.849, 0.887, 0.916, 0.938, 0.954, 0.966, 0.975, 0.982, 0.987, 0.99, 0.993, 1)" }
+    }
+  },
+
+  "m3Duration": {
+    "short1": 50, "short2": 100, "short3": 150, "short4": 200,
+    "medium1": 250, "medium2": 300, "medium3": 350, "medium4": 400,
+    "long1": 450, "long2": 500, "long3": 550, "long4": 600,
+    "extraLong1": 700, "extraLong2": 800, "extraLong3": 900, "extraLong4": 1000,
+    "src": "verified"
+  },
+
+  "stagger": {
+    "list":      { "step": 50,  "maxItems": 8,  "maxTotal": 400,  "src": "blog (30-80ms)" },
+    "chunks":    { "step": 100, "maxItems": 6,  "maxTotal": 600,  "src": "blog (~100ms)" },
+    "hero":      { "step": 80,  "startDelay": 50, "maxTotal": 1200, "src": "engine" },
+    "grid":      { "step": 40,  "from": "first", "maxTotal": 500, "src": "engine" },
+    "forbiddenFor": ["keyboard-initiated", "filter/sort updates", "tab switches", "high-frequency UI"],
+    "motion": "delayChildren: stagger(<seconds>, { startDelay, from })",
+    "css": "animation-delay: calc(var(--i) * <step>ms) with --i clamped"
+  },
+
+  "transform": {
+    "pressScale": { "value": 0.97, "min": 0.95, "max": 0.98, "src": "blog" },
+    "enterFromScale": { "tooltip": 0.97, "popover": 0.95, "modal": 0.96, "toast": 0.95, "never": 0, "src": "blog" },
+    "enterOffset": { "micro": 4, "small": 8, "medium": 16, "large": 24, "src": "engine" },
+    "exitOffset": { "factorOfEnter": 0.5, "src": "blog" },
+    "hoverLift": { "px": 2, "scale": 1.02, "max": 1.05, "gate": "(hover: hover) and (pointer: fine)", "src": "blog/engine" },
+    "blurMask": { "px": 2, "max": 20, "src": "blog" }
+  },
+
+  "role": {
+    "hover":      { "enter": 120, "exit": 120, "easing": "ease", "props": ["color", "background-color", "border-color", "box-shadow"], "motionAllowed": "low-frequency only", "src": "blog/engine" },
+    "hoverLiftLanding": { "enter": 150, "exit": 350, "easing": "out", "props": ["transform"], "gate": "hover:hover", "src": "blog" },
+    "press":      { "enter": 100, "exit": 160, "easing": "out", "spring": "press", "transform": { "scale": 0.97 }, "src": "blog" },
+    "toggle":     { "enter": 120, "exit": 120, "easing": "out", "spring": "press", "src": "blog" },
+    "tooltip":    { "enter": 125, "exit": 100, "easing": "out", "transform": { "scale": 0.97, "opacity": [0, 1] }, "origin": "trigger", "openDelay": 500, "subsequentDelay": 0, "subsequentAnimation": false, "src": "blog/engine" },
+    "popover":    { "enter": 180, "exit": 120, "easing": "out", "spring": "small", "transform": { "scale": 0.95, "opacity": [0, 1] }, "origin": "trigger", "src": "blog" },
+    "menu":       { "enter": 150, "exit": 100, "easing": "out", "transform": { "scale": 0.95, "opacity": [0, 1] }, "origin": "trigger", "src": "blog" },
+    "select":     { "enter": 180, "exit": 120, "easing": "out", "transform": { "scale": 0.95, "opacity": [0, 1] }, "origin": "trigger", "src": "blog" },
+    "modal":      { "enter": 250, "exit": 170, "easing": "out", "transform": { "scale": 0.96, "translateY": 8, "opacity": [0, 1] }, "origin": "center", "backdrop": { "enter": 200, "exit": 150, "easing": "linear" }, "src": "blog/engine" },
+    "drawer":     { "enter": 500, "exit": 350, "easing": "drawer", "spring": "panel", "transform": { "translateY": "100%" }, "gestureTracked": true, "src": "blog" },
+    "sidePanel":  { "enter": 280, "exit": 200, "easing": "m3Standard", "transform": { "translateX": "100%" }, "src": "engine" },
+    "toast":      { "enter": 400, "exit": 250, "easing": "ease", "transform": { "translateY": "100%" }, "stack": { "offsetPx": 14, "scaleStep": 0.05 }, "display": 4000, "pauseOnHover": true, "pauseOnHidden": true, "swipeVelocity": 0.11, "src": "blog" },
+    "accordion":  { "enter": 220, "exit": 180, "easing": "out", "src": "engine" },
+    "tabIndicator": { "enter": 220, "easing": "inOut", "spring": "layout", "shared": "layoutId", "src": "engine" },
+    "listReorder": { "spring": "layout", "exit": 150, "src": "engine" },
+    "listItem":   { "enter": 200, "exit": 150, "easing": "out", "transform": { "translateY": 8, "opacity": [0, 1] }, "src": "engine" },
+    "pageTransitionApp": { "enter": 250, "exit": 150, "easing": "m3Standard", "transform": { "translateY": 8, "opacity": [0, 1] }, "viewTransition": 280, "src": "engine" },
+    "pageTransitionMarketing": { "enter": 400, "exit": 250, "easing": "m3EmphasizedDecelerate", "src": "engine" },
+    "heroEntrance": { "enter": 700, "easing": "outExpo", "transform": { "translateY": 20, "opacity": [0, 1] }, "stagger": "hero", "implementation": "CSS keyframes, fill-mode both, visible without JS", "lcpRule": "do not hide the LCP element with opacity 0 for more than 150ms", "src": "engine" },
+    "scrollReveal": { "enter": 600, "easing": "out", "transform": { "translateY": 20, "opacity": [0, 1] }, "trigger": { "amount": 0.25, "once": true, "rootMargin": "0px 0px -10% 0px" }, "exit": "none", "src": "engine" },
+    "scrollScrub": { "easing": "linear", "props": ["transform", "opacity"], "smoothing": { "gsapScrub": 1, "motionSpring": { "stiffness": 300, "damping": 40, "mass": 0.5 } }, "css": "animation-timeline: scroll()/view(); animation-range: entry 0% cover 35%", "src": "engine" },
+    "viewTransition": { "duration": 280, "easing": "m3Standard", "src": "engine" },
+    "skeleton":   { "shimmer": 1600, "easing": "linear", "showAfter": 250, "minVisible": 400, "swapFade": 180, "src": "engine" },
+    "spinner":    { "rotate": 900, "easing": "linear", "src": "blog" },
+    "success":    { "duration": 450, "spring": "playful", "frequency": "rare only", "src": "engine" }
+  },
+
+  "frequencyPolicy": {
+    "src": "blog (Emil Kowalski)",
+    "rules": [
+      { "frequency": "100+/day or keyboard-initiated", "motion": "none" },
+      { "frequency": "tens/day (hover, list navigation)", "motion": "remove or opacity/color <= 100ms" },
+      { "frequency": "occasional (modal, drawer, toast)", "motion": "standard role tokens" },
+      { "frequency": "rare (onboarding, celebration)", "motion": "may add delight; spring bounce <= 0.3" }
+    ]
+  },
+
+  "personality": {
+    "note": "engine selects one per brief; multiplies durations and caps bounce",
+    "crisp":      { "durationScale": 0.8,  "bounceMax": 0,    "ease": "out", "for": "dense B2B, dashboards, dev tools" },
+    "balanced":   { "durationScale": 1.0,  "bounceMax": 0.1,  "ease": "out", "for": "default SaaS, content sites" },
+    "expressive": { "durationScale": 1.25, "bounceMax": 0.25, "ease": "outExpo", "for": "consumer, playful, creative landing pages" },
+    "src": "engine"
+  },
+
+  "reducedMotion": {
+    "src": "verified/engine",
+    "strategy": "no-preference approach: decorative motion lives inside (prefers-reduced-motion: no-preference); JS libs read the preference",
+    "transform": { "slide": "fade 200ms", "scale": "none", "parallax": "static", "stagger": "none", "bounce": "none" },
+    "keep": ["opacity", "color", "background-color", "progress indicators"],
+    "autoplayMedia": "poster only, user-initiated play",
+    "loops": "stop (static frame) except essential loading indicators",
+    "smoothScroll": "auto",
+    "libraries": {
+      "motion": "<MotionConfig reducedMotion=\"user\"> (disables transform + layout animations, keeps opacity/color); useReducedMotion() for swaps",
+      "gsap": "gsap.matchMedia() with (prefers-reduced-motion: reduce) condition; static fallback layout",
+      "css": "@media (prefers-reduced-motion: no-preference) { ... }; --travel: 0 under reduce"
+    }
+  },
+
+  "performance": {
+    "src": "verified/engine",
+    "compositorOnly": ["transform", "opacity", "translate", "scale", "rotate"],
+    "useSparingly": ["filter", "clip-path", "backdrop-filter", "box-shadow", "background-color"],
+    "neverAnimate": ["width", "height", "top", "left", "right", "bottom", "margin", "padding", "font-size", "border-width"],
+    "frameBudgetMs": 16.6,
+    "inp": { "good": 200, "poor": 500 },
+    "willChange": { "allowed": ["transform", "opacity", "filter"], "never": ["all"], "when": "only after observed first-frame stutter" },
+    "blurMaxPx": 20,
+    "maxConcurrentAnimatedLayers": 12
+  },
+
+  "lint": {
+    "src": "engine",
+    "regex": [
+      { "id": "transition-all", "pattern": "transition(-property)?\\s*:\\s*all", "severity": "error" },
+      { "id": "scale-zero", "pattern": "scale\\(0\\)|scale:\\s*0\\b|initial=\\{\\{[^}]*scale:\\s*0\\b", "severity": "error" },
+      { "id": "ease-in-enter", "pattern": "ease-in(?!-out)", "severity": "warn", "note": "allowed only for elements leaving the viewport" },
+      { "id": "layout-prop-animated", "pattern": "(transition|animate)[^;]*\\b(width|height|top|left|margin|padding)\\b", "severity": "warn" },
+      { "id": "will-change-all", "pattern": "will-change\\s*:\\s*all", "severity": "error" },
+      { "id": "bounce-high", "pattern": "bounce:\\s*(0\\.[4-9]|1)", "severity": "warn" },
+      { "id": "global-kill-switch", "pattern": "transition-duration:\\s*0?\\.01ms", "severity": "warn" },
+      { "id": "infinite-no-guard", "pattern": "animation[^;]*infinite", "severity": "info", "note": "needs reduced-motion guard and pause control if > 5s next to content" }
+    ],
+    "computed": [
+      { "id": "ui-duration-ceiling", "rule": "transition/animation duration <= 300ms unless role in {drawer, hero, scrollReveal, pageTransitionMarketing, toast}" },
+      { "id": "exit-not-longer-than-enter", "rule": "exit <= enter for paired overlays" },
+      { "id": "distinct-timing-pairs", "rule": "<= 6 distinct (duration, easing) pairs per page" },
+      { "id": "origin-aware", "rule": "anchored popups have transform-origin != center" },
+      { "id": "press-state", "rule": ":active scale in [0.95, 0.98] for pressables" }
+    ]
+  }
+}

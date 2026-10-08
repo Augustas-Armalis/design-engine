@@ -1,0 +1,57 @@
+Pixsel Academy
+The horizontal axis is represented by the letter X, while the
+vertical axis is represented by the letter Y.
+1 0 10 20 30 40 50
+60
+70 80 90
+100
+110
+120
+130 140 150
+160
+170
+-----
+--------
+10
+20
+A Rectangle of 80 x 80p
+30
+Positioned at X = 0, Y = 0
+( 0,0 }
+40
+50
+60
+A Rect1ngle of 80 x 80p
+Positioned at X = 70, Y = 160
+70
+{70,160 }
+80
+Thot's simple enough for a square. However, what about a
+circle? Or some hophazard blob? The position of irregulor
+objects is thot of their bounding box, which contains the
+actual shape within.
+10
+20
+30
+40
+50
+60 70
+80 90
+100
+110
+120
+130
+140
+150
+160
+170
+10
+20
+A Ellipes of 80 x 80p
+Positioned at X = 0, Y = 0
+30
+(0,0 )
+40
+50
+337
+Ul Pedia - A Complete Ul Guide

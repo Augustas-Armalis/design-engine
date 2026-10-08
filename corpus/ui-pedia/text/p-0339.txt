@@ -1,0 +1,24 @@
+Pixsel Academy
+Angle
+Angle determines the clockwise rottion of our object, with
+0° being the default. Rotation can be a negative number as
+well. It's worth noting that a -15° rotation is equivalent to
+360° - 15° = 345°.
+15°
+-15°
+0° Rotation
+15° Rotation
+-15° Rotation
+-45° Rotation
+(Or -345° Roatation)
+(Or 345° Roatation)
+{ 315° Roatation}
+It's odvisable not to rotate things by hand in order to
+maintain a consistent interface; instead, enter the proper
+angle from the keyboard, which is far more precise than
+manually turning the item point by point.
+If we Flatten the object (there's a button for that), the ongle
+is reset to 0, but the object is still rotated - just the new
+perspective becomes the new rotation base.
+338
+Ul Pedia - A Complete UI Guide

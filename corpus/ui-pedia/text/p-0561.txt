@@ -1,0 +1,22 @@
+Pixsel Academy
+X-Axis =0, Y-Axis = 2, Blur = 0
+X-Axis = 2, Y-Axis = 0, Blur = 0
+X-Axis = 2, Y-Axis = 2, Blur = 0
+X-Axis =0, Y-Axis = -2, Blur = 0
+X-Axis = -2, Y-Axis = 0, Blur = 0
+X-Axis = -2, Y-Axis = -2, Blur = 0
+Additionally, for some very intriguing effects, you may stack
+shadows by adding more than one to the same object. The
+example below features three shadows that are each 3
+points down in three different drker tones.
+X-Axis = 0, Y-Axis = 8, Blur = 0
+X-Axis = 0, Y-Axis = 4, Blur = 0
+X-Axis = 0, Y-Axis = 12, Blur = 0
+Inner Shadows
+In Ul, inner shadows are not commonly found. Although it
+appears inside the object, it has the same specifications as
+a drop shadow.
+Because most interfaces consist of multiple loyers piled on
+top of one another, they ore not as common. An outside
+560
+Ul Pedia - A Complete UI Guide
