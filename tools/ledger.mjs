@@ -25,6 +25,8 @@ const axes = {
   'content width': (a, b) => a.contentWidth && b.contentWidth && Math.abs(a.contentWidth - b.contentWidth) <= 40,
   'section rhythm': (a, b) => a.sectionPad != null && b.sectionPad != null && Math.abs(a.sectionPad - b.sectionPad) <= 12,
   'radius system': (a, b) => JSON.stringify([...(a.radii || [])].sort()) === JSON.stringify([...(b.radii || [])].sort()),
+  'hero layout': (a, b) => a.heroLayout && a.heroLayout !== 'unknown' && a.heroLayout === b.heroLayout,
+  'nav numbering': (a, b) => !!a.navNumbered && !!b.navNumbered,
   'accent hue': (a, b) => (a.accentHues || []).some((h) => (b.accentHues || []).some((k) => Math.min(Math.abs(h - k), 360 - Math.abs(h - k)) <= 30)),
 };
 const collapsed = (a, b) => Object.entries(axes).filter(([, f]) => f(a, b)).map(([k]) => k);
@@ -53,6 +55,10 @@ if (cmd === 'add') {
     console.log(`${hit.length >= 4 ? 'TOO SIMILAR' : 'ok'.padEnd(11)} vs ${e.name} [${e.verdict}] shares ${hit.length}/${Object.keys(axes).length}: ${hit.join(', ') || '-'}`);
   }
   // divergence contract: no two outputs may match on more than 3 axes
+  // founders' rejected patterns (pattern entries carry patternMatch instead of a fingerprint)
+  for (const e of entries().filter((x) => x.verdict === 'reject' && x.patternMatch)) {
+    if (Object.entries(e.patternMatch).every(([k, v]) => r.fingerprint[k] === v)) { console.log(`MATCHES REJECTED PATTERN: ${e.name} (${e.why.slice(0, 90)})`); worst = Math.max(worst, 99); }
+  }
   if (worst >= 4) { console.log('\nDiverge before delivering: change structure/type/palette/rhythm, not just copy.'); process.exit(1); }
 } else if (cmd === 'list' || !cmd) {
   for (const e of entries()) console.log(`${e.date} ${e.verdict.padEnd(6)} ${e.name} — ${e.why}`);

@@ -156,6 +156,27 @@ const measure = (cfg) => {
   }
   out.purpleGradients = purpleGrad; out.glowShadows = glow; out.accentHues = [...palette].sort((a, b) => a - b);
 
+  // hero layout: where is the h1 relative to the biggest visual in the first viewport?
+  out.heroLayout = 'unknown';
+  if (h1) {
+    const vw = innerWidth, vh = innerHeight, hr = h1.getBoundingClientRect(), hc = hr.left + hr.width / 2;
+    const vis = all.filter((e) => !e.contains(h1) && !h1.contains(e) && !['MAIN', 'SECTION', 'HEADER', 'BODY', 'HTML', 'NAV'].includes(e.tagName.toUpperCase()))
+      .map((e) => e.getBoundingClientRect()).filter((r) => r.top < vh * 1.05 && r.width > vw * 0.12 && r.height > vh * 0.25);
+    const big = vis.filter((r) => r.width > vw * 0.25);
+    big.sort((a, b) => b.width * b.height - a.width * a.height);
+    const v = big[0];
+    if (!v) out.heroLayout = hc > vw * 0.4 && hc < vw * 0.6 ? 'centered-type' : 'type-only';
+    else {
+      const vc = v.left + v.width / 2;
+      const visLeft = vis.some((r) => r.right <= hr.left + 8 && r.width > vw * 0.12), visRight = vis.some((r) => r.left >= hr.right - 8);
+      if (visLeft && visRight) out.heroLayout = 'integrated';
+      else if (v.top >= hr.bottom - 10 && v.width > vw * 0.5) out.heroLayout = 'copy-above-visual';
+      else if (hc < vw * 0.45 && vc > vw * 0.55 && v.left > hr.left + hr.width * 0.5) out.heroLayout = 'split-left-copy';
+      else if (hc > vw * 0.55 && vc < vw * 0.45) out.heroLayout = 'split-right-copy';
+      else out.heroLayout = 'integrated';
+    }
+  }
+  out.navNumbered = [...document.querySelectorAll('header a, nav a')].some((a) => /^\s*0\d/.test(a.textContent));
   // fingerprint pieces for the diversity check
   const hdr = document.querySelector('header, nav');
   out.navHeight = hdr ? Math.round(hdr.getBoundingClientRect().height) : null;
@@ -231,7 +252,7 @@ for (const vp of T.viewports) {
   const checks = evaluate(m, vp, axe);
   for (const k of checks) if (report.summary[k.status] !== undefined) report.summary[k.status]++;
   report.viewports.push({ name: vp.name, width: vp.width, height: vp.height, screenshots: { fold, full }, checks });
-  if (vp.name === 'desktop') report.fingerprint = { h1: m.h1, fonts: m.fontFamilies.map(([f]) => f), accentHues: m.accentHues, radii: m.radii, navHeight: m.navHeight, contentWidth: m.contentWidthMode, sectionPad: m.sectionPadMedian, sectionCount: m.sectionCount, bodyPx: m.bodyMedianPx };
+  if (vp.name === 'desktop') report.fingerprint = { h1: m.h1, fonts: m.fontFamilies.map(([f]) => f), accentHues: m.accentHues, radii: m.radii, navHeight: m.navHeight, contentWidth: m.contentWidthMode, sectionPad: m.sectionPadMedian, sectionCount: m.sectionCount, bodyPx: m.bodyMedianPx, heroLayout: m.heroLayout, navNumbered: m.navNumbered };
   await ctx.close();
 }
 await browser.close();
