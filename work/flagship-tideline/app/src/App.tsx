@@ -106,7 +106,7 @@ export default function App() {
       {/* copy column */}
       <main className="relative z-10 mx-auto w-[1128px] pt-[60px]">
         <motion.a {...fade(0)} href="#" className="inline-flex items-center gap-2 rounded-full bg-white py-1 pr-3 pl-1 text-[13.5px] font-medium tracking-[-0.03em] text-ink no-underline shadow-[0_0_0_1px_var(--color-line)]">
-          <span className="rounded-full bg-[#ff5b1f] px-2 py-0.5 text-[11.5px] font-semibold text-white">New</span>
+          <span className="rounded-full bg-[#ff5b1f] px-2 py-0.5 text-[11.5px] font-semibold text-ink">New</span>
           Same-day payouts in 41 currencies
           <ArrowRight size={13} weight="bold" className="text-muted" />
         </motion.a>
@@ -133,7 +133,7 @@ export default function App() {
             <span className="inline-flex items-center gap-1.5 rounded-full bg-[#fff1ea] px-2.5 py-1 text-[12px] font-semibold tracking-[-0.02em] text-[#c2410c]"><span className="pulse-dot size-1.5 rounded-full bg-[#ff5b1f]" />Paying</span>
           </div>
           <div className="mt-1 text-[13px] font-medium tracking-[-0.02em] text-muted">48 people · 11 currencies · sample</div>
-          <div className="mt-4 text-[34px] leading-none font-semibold tracking-[-0.045em] text-ink tabular-nums">€184,320<span className="text-[#a8a49b]">.00</span></div>
+          <div className="mt-4 text-[34px] leading-none font-semibold tracking-[-0.045em] text-ink tabular-nums">€184,320<span className="text-[#8a867d]">.00</span></div>
           <div className="mt-3 flex h-2 gap-[3px]">
             {Array.from({ length: 48 }, (_, i) => <span key={i} className={`flex-1 rounded-[2px] ${i < 41 ? 'bg-ink' : 'bg-[#e6e3dc]'}`} />)}
           </div>
