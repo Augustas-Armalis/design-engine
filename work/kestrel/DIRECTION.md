@@ -47,3 +47,6 @@ Workspace "Northwind (sample)". All numbers are sample and internally consistent
 
 ## Round 2 (founder: "fucking awesome" with fixes)
 Nav 44px track / 36px links / 40px buttons; chip removed, h1 at 150px; dot grid inside the rails only, faded behind the headline; founder flower mark traced (brand/kestrel-mark.svg) in the nav and the Ask Kestrel tile; CTAs 44px at 14px radius; sidebar radius 6; no accent ring on KPI cards. Check 0 fail 0 warn. Ledger: accept.
+
+## Round 3 (founder: "fucking amazing, love it")
+Secondary CTA text-only. Dashboard radius ladder 4 / 6 / 10 / 14 / 20, every 32px control at 6, segmented control 32px with equal 40px slots, labels centred.

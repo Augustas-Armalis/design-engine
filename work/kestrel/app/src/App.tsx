@@ -1,7 +1,7 @@
 import { motion, MotionConfig } from 'motion/react'
 import {
   RiArrowDownSLine, RiArrowRightSLine, RiBankCardLine, RiCodeSSlashLine, RiDatabase2Line,
-  RiGlobalLine, RiMailLine, RiPlayCircleLine, RiSmartphoneLine, RiSparkling2Fill,
+  RiGlobalLine, RiMailLine, RiSmartphoneLine, RiSparkling2Fill,
 } from '@remixicon/react'
 import Dashboard from './components/Dashboard'
 import { MARK } from './components/mark'
@@ -115,8 +115,8 @@ export default function App() {
             <a href="#" className="btn-ink flex h-11 items-center gap-1.5 rounded-[14px] pl-5 pr-3.5 text-[15px] font-[550] tracking-[-0.01em]">
               Start for free <span className="font-[450] text-white/50">· No card needed</span><RiArrowRightSLine size={18} className="text-white/60" />
             </a>
-            <a href="#" className="btn-white flex h-11 items-center gap-1.5 rounded-[14px] pl-4 pr-5 text-[15px] font-[550] tracking-[-0.01em]">
-              <RiPlayCircleLine size={18} className="text-soft" /> See it answer
+            <a href="#" className="btn-white flex h-11 items-center rounded-[14px] px-5 text-[15px] font-[550] tracking-[-0.01em]">
+              See it answer
             </a>
           </motion.div>
         </main>

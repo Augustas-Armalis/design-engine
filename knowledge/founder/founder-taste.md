@@ -163,6 +163,14 @@ Every rule here is a direct founder verdict on real output. It outranks books, w
   **Why** Founder on Kestrel round 1 supplied the flower mark: "the logo to be same as the Kestrel logo which I found online, you could recreate".
   **Applies to** brand marks. **Check** the logo path comes from `work/<name>/brand/*-mark.svg`, not an icon-set glyph. **Source** founder, Tideline round 3, Kestrel round 1
 
+- **RULE** [founder] Product UI inside a hero uses one tight, concentric radius ladder: badges and inner segments 4, every 32px control (sidebar items, inputs, segmented track, icon buttons, small buttons) 6, cards 10, app surface 14, outer frame 20 (14 + 6 padding). Controls that sit in one row share one height (segmented control = icon button = 32px), and segment labels sit in equal-width slots, centred both ways (leading-none, flex centring).
+  **Why** Founder on Kestrel round 2: "the dashboard has components too rounded, not consistent and not spaced centre" (the 7d/30d/90d control vs the share button).
+  **Applies to** dashboards and product UI. **Check** distinct radii inside the product <= 5 and each maps to the ladder; adjacent controls have equal heights; segment widths equal. **Source** founder, Kestrel round 2
+
+- **RULE** [founder] Secondary hero buttons are text-only; no decorative play or arrow icon in front of the label.
+  **Why** Founder on Kestrel round 2: "except the see it answer icon, please remove that".
+  **Applies to** hero CTAs. **Check** the secondary CTA has no leading icon. **Source** founder, Kestrel round 2
+
 ## 5. Exceptions & judgement calls
 
 - The split layout (copy left, visual right) was rejected by Larpo when the right side was a decorative dashboard. With a real product world on the right (the payout globe) the founder accepted it.
