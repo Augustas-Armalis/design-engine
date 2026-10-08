@@ -82,19 +82,19 @@ export default function App() {
         })}
       </div>
 
-      {/* header */}
-      <header className="relative z-20 mx-auto flex w-[1128px] items-center justify-between pt-4">
-        <nav aria-label="Primary" className="flex items-center rounded-[14px] bg-white py-1 pr-1.5 pl-3 shadow-[0_0_0_1px_var(--color-line)]">
-          <Logo />
-          <ul className="ml-5 flex items-center text-[15px] font-medium tracking-[-0.03em]">
+      {/* header: one bar on the content width; logo left, links centred, actions right */}
+      <header className="relative z-20 mx-auto mt-4 grid h-14 w-[1128px] grid-cols-[1fr_auto_1fr] items-center rounded-[16px] bg-white/85 pr-2 pl-4 shadow-[0_0_0_1px_var(--color-line)] backdrop-blur-md">
+        <Logo />
+        <nav aria-label="Primary">
+          <ul className="flex items-center text-[15px] font-medium tracking-[-0.03em]">
             {['Product', 'Countries', 'Pricing', 'Customers'].map((l, i) => (
-              <li key={l}><a href="#" className="inline-flex h-9 items-center gap-1 rounded-[9px] px-3 text-ink no-underline transition-colors hover:bg-paper">{l}{i === 0 && <CaretDown size={13} weight="bold" className="text-muted" />}</a></li>
+              <li key={l}><a href="#" className="inline-flex h-9 items-center gap-1 rounded-[9px] px-3.5 text-ink no-underline transition-colors hover:bg-paper">{l}{i === 0 && <CaretDown size={13} weight="bold" className="text-muted" />}</a></li>
             ))}
           </ul>
         </nav>
-        <div className="flex items-center gap-1">
+        <div className="flex items-center justify-end gap-1">
           <a href="#" className="inline-flex h-10 items-center px-3.5 text-[15px] font-medium tracking-[-0.03em] text-ink no-underline">Log in</a>
-          <a href="#" className="inline-flex h-10 items-center rounded-[12px] bg-ink px-4 text-[15px] font-medium tracking-[-0.03em] text-white no-underline transition-colors hover:bg-[#303030]">Run payroll</a>
+          <a href="#" className="inline-flex h-10 items-center rounded-[11px] bg-ink px-4 text-[15px] font-medium tracking-[-0.03em] text-white no-underline transition-colors hover:bg-[#303030]">Run payroll</a>
         </div>
       </header>
 
