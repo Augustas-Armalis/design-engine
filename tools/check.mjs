@@ -265,6 +265,12 @@ for (const vp of T.viewports) {
     for (const el of document.querySelectorAll('a[href], button, [role=button], input, select, textarea, summary')) {
       const r = el.getBoundingClientRect(); const cs = getComputedStyle(el);
       if (r.width < 2 || r.height < 2 || r.bottom < 0 || r.top > innerHeight || r.right < 0 || r.left > innerWidth || cs.visibility === 'hidden' || cs.pointerEvents === 'none') continue;
+      let clipped = false;
+      for (let a = el.parentElement; a && a !== document.body; a = a.parentElement) {
+        const o = getComputedStyle(a); if (!/(auto|scroll|hidden|clip)/.test(o.overflow + o.overflowY + o.overflowX)) continue;
+        const ar = a.getBoundingClientRect(); if (r.top + r.height / 2 > ar.bottom || r.top + r.height / 2 < ar.top || r.left + r.width / 2 > ar.right || r.left + r.width / 2 < ar.left) { clipped = true; break; }
+      }
+      if (clipped) continue;
       const hit = document.elementFromPoint(Math.min(innerWidth - 1, Math.max(0, r.left + r.width / 2)), Math.min(innerHeight - 1, Math.max(0, r.top + r.height / 2)));
       if (hit && hit !== el && !el.contains(hit) && !hit.contains(el)) blocked.push(`${label(el)} under <${hit.tagName.toLowerCase()}${hit.className && typeof hit.className === 'string' ? '.' + hit.className.split(' ')[0] : ''}>`);
     }
