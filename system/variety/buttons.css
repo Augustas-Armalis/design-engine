@@ -1,0 +1,583 @@
+/* =====================================================================
+   Button grammars: 16 measured CTA constructions (shape + material + depth + motion)
+   Source notes: knowledge/web/button-grammars.md  (numbers measured Oct 2026)
+   Specimen:     system/variety/buttons.html
+
+   Usage: <a class="btn-g-<slug>">Label</a> + <a class="btn-g-<slug>-2nd">Label</a>
+   Colour comes only from seven tokens. Pure black/white appear only as
+   alpha shadow/highlight constants (light physics, not brand colour).
+     --accent      brand fill            --accent-ink  label on the accent
+     --ink         strongest text/fill   --canvas      page background
+     --surface     raised surface        --line        hairline ring
+     --sub         secondary text tone
+   Dark mode: put [data-theme="dark"] or .dark on any ancestor and redefine the
+   tokens there; grammars whose material changes in the dark have a dark block.
+   Motion: only transform, opacity and box-shadow are transitioned; fill steps
+   are an overlay (::before) fading in; hover lives in @media (hover:hover).
+   ===================================================================== */
+
+/* Bridge to compiled house systems (system/systems/<slug>/theme.css). Zero
+   specificity, so a page that sets the seven tokens directly wins. Custom
+   properties resolve where declared: if the system flips theme on a nested
+   element, repeat these seven lines inside that element's dark block. */
+:where(:root) {
+  --accent: var(--accent-solid, oklch(53% 0.207 264));
+  --accent-ink: var(--text-on-accent, #fff);
+  --ink: var(--text-strong, oklch(21% 0.004 0));
+  --canvas: var(--surface-canvas, oklch(99.3% 0.004 0));
+  --surface: var(--surface-raised, #fff);
+  --line: var(--border-hairline, oklch(91.5% 0.004 0));
+  --sub: var(--text-muted, oklch(50% 0.004 0));
+}
+
+/* ---------------------------------------------------------------------
+   Base anatomy (shared): fixed height, centred content, overlay hover,
+   ::after carries inner bevels so the hover overlay never hides them.
+   --------------------------------------------------------------------- */
+[class*="btn-g-"] {
+  --h: 44px; --px: 20px; --r: 12px;
+  --fs: 16px; --fw: 500; --ls: -0.011em;
+  --e: cubic-bezier(.25, .46, .45, .94);       /* Linear 160ms ease */
+  --e-out: cubic-bezier(.23, 1, .32, 1);       /* quint out for travel */
+  --t-in: 90ms; --t-out: 200ms;                /* hover in fast, out slower */
+  --_hover: transparent; --_bevel: none;
+  position: relative; isolation: isolate; box-sizing: border-box;
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  height: var(--h); padding: 0 var(--px); margin: 0;
+  border: 0; border-radius: var(--r);
+  font-family: inherit; font-size: var(--fs); font-weight: var(--fw);
+  line-height: 1; letter-spacing: var(--ls);
+  color: var(--ink); background: none;
+  text-decoration: none; white-space: nowrap; vertical-align: middle;
+  cursor: pointer; user-select: none; -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent; touch-action: manipulation;
+  outline: 1px solid transparent; outline-offset: 2px;   /* survives forced-colors */
+  transition:
+    transform var(--t-out) var(--e-out),
+    box-shadow var(--t-out) var(--e),
+    opacity var(--t-out) var(--e);
+}
+[class*="btn-g-"]::before,
+[class*="btn-g-"]::after {
+  content: ""; position: absolute; inset: 0; z-index: -1;
+  border-radius: inherit; pointer-events: none;
+}
+[class*="btn-g-"]::before {            /* hover fill step */
+  background: var(--_hover); opacity: 0;
+  transition: opacity var(--t-out) var(--e);
+}
+[class*="btn-g-"]::after {             /* inner bevel / rim, above the overlay */
+  box-shadow: var(--_bevel);
+}
+@media (hover: hover) {
+  [class*="btn-g-"]:hover::before { opacity: 1; transition-duration: var(--t-in); }
+}
+[class*="btn-g-"]:active { transform: scale(.97); transition-duration: 60ms; }
+[class*="btn-g-"]:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+[class*="btn-g-"]:is(:disabled, [aria-disabled="true"]) { opacity: .5; pointer-events: none; box-shadow: none; }
+[class*="btn-g-"] > svg { width: 18px; height: 18px; flex: none; }
+
+/* Shared arrow: <svg class="bgx-arrow" viewBox="0 0 16 16"><path class="l" d="M2.75 8h8.5"/><path class="h" d="M7.75 4.25 11.5 8l-3.75 3.75"/></svg> */
+[class*="btn-g-"] .bgx-arrow, .bgx-arrow { width: 16px; height: 16px; flex: none; fill: none; stroke: currentColor;
+  stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; overflow: visible;
+  transition: transform 220ms var(--e-out, ease-out); }
+.bgx-arrow .l, .bgx-arrow .h { transition: transform 220ms var(--e-out, ease-out), opacity 160ms ease; transform-box: fill-box; }
+.bgx-arrow .l { transform-origin: left center; }
+
+/* =====================================================================
+   01  FLAT PILL + RING TWIN        Vercel, Cursor, Family
+   Zero depth; the pill and the fill step do all the work.
+   ===================================================================== */
+.btn-g-flat, .btn-g-flat-2nd { --r: 999px; --px: 22px; --ls: -0.01em; }
+.btn-g-flat {
+  background: var(--ink); color: var(--canvas);
+  --_hover: color-mix(in oklab, var(--ink) 86%, var(--canvas));     /* Vercel #171717 -> #383838 */
+}
+.btn-g-flat-2nd {
+  background: var(--surface); color: var(--ink);
+  box-shadow: 0 0 0 1px var(--line);                                /* Vercel 0 0 0 1px #ebebeb */
+  --_hover: color-mix(in oklab, var(--ink) 5%, var(--surface));     /* #fff -> #f2f2f2 */
+}
+:is([data-theme="dark"], .dark) .btn-g-flat {
+  --_hover: color-mix(in oklab, var(--ink), #fff 70%);              /* Linear #e5e5e6 -> #fff */
+  box-shadow: 0 1px 1px rgb(0 0 0 / .07), 0 3px 2px rgb(0 0 0 / .04); /* Linear contact ladder */
+}
+:is([data-theme="dark"], .dark) .btn-g-flat-2nd {
+  --_hover: color-mix(in oklab, var(--ink) 8%, var(--surface));
+  --_bevel: inset 0 1px 0 rgb(255 255 255 / .04);
+}
+
+/* =====================================================================
+   02  FROSTED GLASS PILL (over imagery)   Mercury, Convex, Evervault
+   Solid accent pill + translucent rimmed glass twin. Needs a photo,
+   gradient or video behind it; on a flat canvas use another grammar.
+   ===================================================================== */
+.btn-g-glass, .btn-g-glass-2nd { --r: 999px; --px: 22px; --fw: 460; --ls: 0; --t-out: 300ms; --e: cubic-bezier(0, 0, .2, 1); }
+.btn-g-glass {
+  background: var(--accent); color: var(--accent-ink);
+  --_hover: color-mix(in oklab, var(--accent) 93%, #000);           /* Mercury #5266eb -> #4d60df */
+  --_bevel: inset 0 1px 0 rgb(255 255 255 / .18);
+}
+.btn-g-glass-2nd {
+  color: var(--surface);                                            /* white label over imagery */
+  background: rgb(255 255 255 / .16);                               /* Mercury rgba(175 178 206/.2) */
+  -webkit-backdrop-filter: blur(20px) saturate(1.4); backdrop-filter: blur(20px) saturate(1.4);
+  --_bevel: inset 0 0 0 1px rgb(255 255 255 / .34), inset 0 1px 0 rgb(255 255 255 / .28);
+  --_hover: rgb(255 255 255 / .10);                                 /* .2 -> .28 */
+  text-shadow: 0 1px 2px rgb(0 0 0 / .12);
+}
+:is([data-theme="dark"], .dark) .btn-g-glass-2nd {
+  color: var(--ink); background: rgb(255 255 255 / .08);
+  --_bevel: inset 0 0 0 1px rgb(255 255 255 / .16), inset 0 1px 0 rgb(255 255 255 / .14);
+  --_hover: rgb(255 255 255 / .07);
+}
+
+/* =====================================================================
+   03  METAL KEYCAP                  Raycast
+   A key that sits proud of the page: dark rim, soft halo, bevel top/bottom.
+   ===================================================================== */
+.btn-g-key, .btn-g-key-2nd { --r: 10px; --px: 18px; --fs: 15px; --ls: .005em; --t-out: 200ms; --e: ease-in-out; }
+.btn-g-key {
+  background: color-mix(in oklab, var(--surface) 95%, var(--ink)); color: var(--ink);
+  box-shadow:
+    0 0 0 1px color-mix(in oklab, var(--ink) 22%, transparent),
+    0 1px 1px color-mix(in oklab, var(--ink) 10%, transparent),
+    0 3px 6px -2px color-mix(in oklab, var(--ink) 16%, transparent);
+  --_bevel: inset 0 -1.5px .4px color-mix(in oklab, var(--ink) 10%, transparent), inset 0 1px .4px #fff;
+  --_hover: var(--surface);                                         /* Raycast #e6e6e6 -> #fff */
+}
+.btn-g-key-2nd {
+  background: color-mix(in oklab, var(--ink) 4%, var(--surface)); color: var(--ink);
+  box-shadow: 0 0 0 1px color-mix(in oklab, var(--ink) 12%, transparent), 0 1px 1px color-mix(in oklab, var(--ink) 6%, transparent);
+  --_bevel: inset 0 -1px 0 color-mix(in oklab, var(--ink) 6%, transparent), inset 0 1px 0 rgb(255 255 255 / .9);
+  --_hover: color-mix(in oklab, var(--ink) 2%, var(--surface));
+}
+.btn-g-key:active, .btn-g-key-2nd:active { transform: translateY(1px) scale(.98); transition-duration: 60ms; }
+:is([data-theme="dark"], .dark) .btn-g-key {
+  background: color-mix(in oklab, var(--ink) 92%, var(--canvas)); color: var(--canvas);
+  box-shadow: 0 0 0 2px rgb(0 0 0 / .5), 0 0 14px color-mix(in oklab, var(--ink) 19%, transparent);   /* Raycast exact */
+  --_bevel: inset 0 -1px .4px rgb(0 0 0 / .2), inset 0 1px .4px #fff;
+  --_hover: #fff;
+}
+:is([data-theme="dark"], .dark) .btn-g-key-2nd {
+  background: color-mix(in oklab, var(--ink) 6%, var(--canvas)); color: var(--ink);
+  box-shadow: 0 0 0 1px rgb(0 0 0 / .6), 0 4px 4px rgb(0 0 0 / .1);                                    /* Linear secondary */
+  --_bevel: inset 0 0 0 1px rgb(255 255 255 / .04), inset 0 1px 0 rgb(255 255 255 / .06);
+  --_hover: color-mix(in oklab, var(--ink) 10%, var(--canvas));
+}
+
+/* =====================================================================
+   04  OFFSET PUSH (slab + face)     PostHog
+   Markup: <button class="btn-g-push"><span class="bgx-face">Get started</span></button>
+   The 4px slab is part of the box (height 48 = 44 face + 4 edge) so focus
+   and layout stay honest. No lift on hover (founder); press sinks 3px.
+   ===================================================================== */
+.btn-g-push, .btn-g-push-2nd {
+  --h: 48px; --r: 10px; --edge: 4px; --fs: 16px; --fw: 600; --ls: -0.01em;
+  padding: 0 0 var(--edge); align-items: stretch; flex-direction: column;
+}
+.btn-g-push .bgx-face, .btn-g-push-2nd .bgx-face {
+  position: relative; isolation: isolate;
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  height: 100%; padding: 0 22px; border-radius: inherit;
+  transition: transform 250ms cubic-bezier(.3, .7, .4, 1);
+}
+.btn-g-push .bgx-face::before, .btn-g-push-2nd .bgx-face::before {
+  content: ""; position: absolute; inset: 0; z-index: -1; border-radius: inherit;
+  background: rgb(255 255 255 / .16); opacity: 0; transition: opacity 120ms ease;
+}
+.btn-g-push {
+  background: color-mix(in oklab, var(--accent) 70%, #000);       /* PostHog base #cd8407 under face #eb9d2a */
+  color: var(--accent-ink);
+}
+.btn-g-push .bgx-face {
+  background: var(--accent);
+  box-shadow: inset 0 0 0 1px color-mix(in oklab, var(--accent) 66%, #000), inset 0 1px 0 rgb(255 255 255 / .28);
+}
+.btn-g-push-2nd { background: color-mix(in oklab, var(--ink) 26%, var(--surface)); color: var(--ink); }
+.btn-g-push-2nd .bgx-face {
+  background: var(--surface);
+  box-shadow: inset 0 0 0 1px color-mix(in oklab, var(--ink) 26%, var(--surface));
+}
+@media (hover: hover) {
+  .btn-g-push:hover .bgx-face::before, .btn-g-push-2nd:hover .bgx-face::before { opacity: 1; }
+  .btn-g-push-2nd:hover .bgx-face::before { background: color-mix(in oklab, var(--ink) 3%, transparent); }
+}
+.btn-g-push:active, .btn-g-push-2nd:active { transform: none; }
+.btn-g-push:active .bgx-face, .btn-g-push-2nd:active .bgx-face { transform: translateY(3px); transition-duration: 34ms; }  /* Comeau: 34ms in, 250ms out */
+:is([data-theme="dark"], .dark) .btn-g-push { background: color-mix(in oklab, var(--accent) 52%, #000); box-shadow: 0 8px 20px -10px rgb(0 0 0 / .7); }
+:is([data-theme="dark"], .dark) .btn-g-push-2nd { background: color-mix(in oklab, var(--canvas) 60%, #000); box-shadow: 0 8px 20px -10px rgb(0 0 0 / .7); }
+:is([data-theme="dark"], .dark) .btn-g-push-2nd .bgx-face {
+  background: color-mix(in oklab, var(--ink) 9%, var(--canvas));
+  box-shadow: inset 0 0 0 1px rgb(255 255 255 / .1), inset 0 1px 0 rgb(255 255 255 / .08);
+}
+
+/* =====================================================================
+   05  INNER-GLOW TINT               Reflect (dark), Aceternity (inset rim)
+   Light: soft accent tint with a lit inner edge. Dark: the button glows
+   from inside. Hover cross-fades to a brighter glow layer (200ms).
+   ===================================================================== */
+.btn-g-glow, .btn-g-glow-2nd { --r: 10px; --px: 18px; --fs: 15px; --t-out: 200ms; --e: cubic-bezier(.6, .6, 0, 1);
+  -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px); }
+.btn-g-glow {
+  color: color-mix(in oklab, var(--accent) 78%, var(--ink));
+  background:
+    linear-gradient(color-mix(in oklab, var(--accent) 0%, transparent), color-mix(in oklab, var(--accent) 16%, transparent)),
+    color-mix(in oklab, var(--accent) 9%, var(--surface));
+  --_bevel: inset 0 0 0 1px color-mix(in oklab, var(--accent) 26%, transparent), inset 0 0 12px color-mix(in oklab, var(--accent) 16%, transparent);
+  --_hover: linear-gradient(transparent, color-mix(in oklab, var(--accent) 14%, transparent)), color-mix(in oklab, var(--accent) 6%, transparent);
+}
+.btn-g-glow-2nd {
+  color: var(--ink);
+  background: color-mix(in oklab, var(--ink) 2%, var(--surface));
+  --_bevel: inset 0 0 0 1px color-mix(in oklab, var(--ink) 10%, transparent), inset 0 0 12px color-mix(in oklab, var(--ink) 5%, transparent);
+  --_hover: color-mix(in oklab, var(--ink) 3%, transparent);
+}
+:is([data-theme="dark"], .dark) .btn-g-glow {
+  color: var(--ink);
+  background:
+    linear-gradient(color-mix(in oklab, var(--accent) 0%, transparent), color-mix(in oklab, var(--accent) 32%, transparent)),
+    color-mix(in oklab, var(--accent) 12%, transparent);                                   /* Reflect .12 / .32 */
+  --_bevel: inset 0 0 0 1px color-mix(in oklab, var(--accent), #fff 35%), inset 0 0 12px color-mix(in oklab, color-mix(in oklab, var(--accent), #fff 45%) 30%, transparent);
+  --_hover: linear-gradient(transparent, color-mix(in oklab, var(--accent) 22%, transparent)), color-mix(in oklab, var(--accent) 14%, transparent);  /* .24 / .42 */
+}
+:is([data-theme="dark"], .dark) .btn-g-glow-2nd {
+  background: rgb(255 255 255 / .02);
+  --_bevel: inset 0 0 0 1px rgb(255 255 255 / .08), inset 0 0 12px rgb(255 255 255 / .08);  /* Reflect secondary exact */
+  --_hover: rgb(255 255 255 / .04);
+}
+
+/* =====================================================================
+   06  SPECTRUM EDGE + UNDER-GLOW    Magic UI
+   1px gradient border via background-clip layers that fades out toward the
+   top, and a blurred spectrum strip clipped to glow only below the button.
+   ===================================================================== */
+[class*="btn-g-edge"] {
+  --c1: var(--accent); --c2: var(--accent); --c3: var(--accent); --c4: var(--accent); --c5: var(--accent);
+}
+@supports (color: oklch(from red l c h)) {
+  [class*="btn-g-edge"] {
+    --c1: oklch(from var(--accent) .66 .22 calc(h - 120));
+    --c2: oklch(from var(--accent) .86 .2 calc(h - 60));
+    --c3: oklch(from var(--accent) .7 .17 h);
+    --c4: oklch(from var(--accent) .8 .13 calc(h + 40));
+    --c5: oklch(from var(--accent) .62 .25 calc(h + 80));
+  }
+}
+.btn-g-edge, .btn-g-edge-2nd { --r: 10px; --px: 20px; --fs: 15px; border: 1px solid transparent; --t-out: 240ms; }
+.btn-g-edge {
+  color: var(--canvas);
+  background:
+    linear-gradient(var(--ink), var(--ink)) padding-box,
+    linear-gradient(var(--ink) 45%, color-mix(in oklab, var(--ink) 60%, transparent) 75%, transparent) border-box,
+    linear-gradient(90deg, var(--c1), var(--c2), var(--c3), var(--c4), var(--c5)) border-box;
+  --_hover: color-mix(in oklab, var(--ink) 88%, var(--canvas));
+}
+.btn-g-edge-2nd {
+  color: var(--ink);
+  background:
+    linear-gradient(var(--surface), var(--surface)) padding-box,
+    linear-gradient(var(--surface) 45%, color-mix(in oklab, var(--surface) 60%, transparent) 75%, transparent) border-box,
+    linear-gradient(90deg, var(--c1), var(--c2), var(--c3), var(--c4), var(--c5)) border-box;
+  --_hover: color-mix(in oklab, var(--ink) 3%, var(--surface));
+}
+.btn-g-edge::after, .btn-g-edge-2nd::after {           /* under-glow, clipped to below the bottom edge */
+  inset: auto 12% -7px 12%; height: 14px; border-radius: 999px; z-index: -2;
+  background: linear-gradient(90deg, var(--c1), var(--c2), var(--c3), var(--c4), var(--c5));
+  filter: blur(12px); clip-path: inset(7px -60px -60px -60px);
+  opacity: .55; transform: scaleX(.86);
+  transition: opacity 300ms var(--e-out), transform 400ms var(--e-out);
+}
+.btn-g-edge-2nd::after { opacity: .35; }
+@media (hover: hover) {
+  .btn-g-edge:hover::after, .btn-g-edge-2nd:hover::after { opacity: .95; transform: scaleX(1.04); }
+}
+
+/* =====================================================================
+   07  LAMP-LIT INK + EMBOSSED RISE  Attio (primary), Sonner (secondary)
+   Primary: ink with a lighter 1px rim; on hover a light pools from the top
+   edge (in 50ms, out 300ms). Secondary: embossed neutral whose hover fill
+   rises from the bottom edge.
+   ===================================================================== */
+.btn-g-lamp, .btn-g-lamp-2nd { --r: 12px; --px: 20px; --fs: 15px; --ls: -0.005em; --t-in: 50ms; --t-out: 300ms; --e: cubic-bezier(.2, 0, 0, 1); }
+.btn-g-lamp {
+  background: var(--ink); color: var(--canvas);
+  box-shadow: 0 1px 2px color-mix(in oklab, var(--ink) 18%, transparent), 0 3px 8px -4px color-mix(in oklab, var(--ink) 30%, transparent);
+  --_bevel: inset 0 0 0 1px color-mix(in oklab, var(--ink) 76%, var(--canvas)), inset 0 1px 0 rgb(255 255 255 / .08);  /* Attio rim lab37 on lab12 */
+  --_hover: radial-gradient(130% 110% at 50% -10%, color-mix(in oklab, var(--ink) 70%, var(--canvas)), var(--ink) 72%);
+}
+.btn-g-lamp-2nd {
+  overflow: hidden; color: var(--ink);
+  background: linear-gradient(156deg, var(--surface), color-mix(in oklab, var(--surface) 94%, var(--ink)));          /* Sonner #fff -> #f0f0f0 */
+  box-shadow:
+    0 0 0 1px color-mix(in oklab, var(--ink) 7%, transparent),
+    0 1px 0 color-mix(in oklab, var(--ink) 8%, transparent),
+    0 2px 2px color-mix(in oklab, var(--ink) 4%, transparent),
+    0 3px 3px color-mix(in oklab, var(--ink) 2%, transparent),
+    0 4px 4px color-mix(in oklab, var(--ink) 1%, transparent);                                   /* Sonner exact ladder */
+  --_hover: linear-gradient(0deg, color-mix(in oklab, var(--ink) 7%, var(--surface)) 0%, color-mix(in oklab, var(--ink) 3%, var(--surface)) 55%, transparent 100%);
+}
+.btn-g-lamp-2nd::before { opacity: 1; transform: translateY(101%); transition: transform 360ms var(--e-out); }
+@media (hover: hover) { .btn-g-lamp-2nd:hover::before { transform: translateY(0); transition-duration: 360ms; } }
+:is([data-theme="dark"], .dark) .btn-g-lamp {
+  box-shadow: 0 0 0 1px rgb(0 0 0 / .4), 0 4px 12px -4px rgb(0 0 0 / .5);
+  --_bevel: inset 0 0 0 1px rgb(255 255 255 / .5), inset 0 1px 0 #fff;
+  --_hover: radial-gradient(130% 110% at 50% -10%, #fff, var(--ink) 72%);
+}
+:is([data-theme="dark"], .dark) .btn-g-lamp-2nd {
+  background: linear-gradient(156deg, color-mix(in oklab, var(--surface) 90%, var(--ink)), var(--surface));
+  box-shadow: 0 0 0 1px rgb(255 255 255 / .09), 0 2px 4px rgb(0 0 0 / .35);
+  --_bevel: inset 0 1px 0 rgb(255 255 255 / .06);
+  --_hover: linear-gradient(0deg, color-mix(in oklab, var(--ink) 9%, var(--surface)), transparent);
+}
+
+/* =====================================================================
+   08  FULL-WIDTH AUTH STACK         Cal.com
+   Column-wide buttons stacked 12px apart, leading provider glyph, skeuo
+   vertical gradient + 2px top highlight. Wrap in .bgx-stack.
+   ===================================================================== */
+.bgx-stack { display: flex; flex-direction: column; gap: 12px; width: 100%; max-width: 420px; }
+.btn-g-stack, .btn-g-stack-2nd { --h: 44px; --r: 12px; --fs: 15px; --ls: -0.006em; display: flex; width: 100%; gap: 10px; }
+.btn-g-stack {
+  color: var(--canvas);
+  background: linear-gradient(color-mix(in oklab, var(--ink) 92%, var(--canvas)), var(--ink));      /* Cal #292929 -> #242424 */
+  box-shadow: 0 0 0 1px var(--ink), 0 1px 2px color-mix(in oklab, var(--ink) 16%, transparent);
+  --_bevel: inset 0 1.5px 0 rgb(255 255 255 / .15);                                                  /* Cal inset 0 2px 0 .15 */
+  --_hover: linear-gradient(color-mix(in oklab, var(--ink) 84%, var(--canvas)), color-mix(in oklab, var(--ink) 94%, var(--canvas)));
+}
+.btn-g-stack-2nd {
+  color: var(--ink);
+  background: linear-gradient(color-mix(in oklab, var(--surface) 97%, var(--ink)), color-mix(in oklab, var(--surface) 92%, var(--ink)));  /* #f7f7f8 -> #eaeaeb */
+  box-shadow: 0 0 0 1px color-mix(in oklab, var(--ink) 11%, transparent), 0 1px 2px color-mix(in oklab, var(--ink) 5%, transparent);
+  --_bevel: inset 0 1.5px 0 #fff;
+  --_hover: color-mix(in oklab, var(--surface) 55%, transparent);
+}
+.btn-g-stack-2nd .bgx-arrow { transform: translateX(-2px); }
+@media (hover: hover) { .btn-g-stack-2nd:hover .bgx-arrow { transform: translateX(1px); } }
+.btn-g-stack:active, .btn-g-stack-2nd:active { transform: scale(.985); }   /* wide buttons: smaller scale reads the same */
+:is([data-theme="dark"], .dark) .btn-g-stack { --_bevel: inset 0 1px 0 #fff; box-shadow: 0 0 0 1px rgb(0 0 0 / .5); }
+:is([data-theme="dark"], .dark) .btn-g-stack-2nd {
+  background: linear-gradient(color-mix(in oklab, var(--surface) 88%, var(--ink)), var(--surface));
+  box-shadow: 0 0 0 1px rgb(255 255 255 / .09), 0 1px 2px rgb(0 0 0 / .4);
+  --_bevel: inset 0 1px 0 rgb(255 255 255 / .07);
+  --_hover: rgb(255 255 255 / .03);
+}
+
+/* =====================================================================
+   09  COMPACT EDITORIAL RECT        Lightfield
+   Small, square-ish, no shadow, 50ms response; tinted (not outlined) twin.
+   For split/editorial heroes where the type is the hero. 36px hero size.
+   ===================================================================== */
+.btn-g-compact, .btn-g-compact-2nd { --h: 36px; --px: 13px; --r: 7px; --fs: 14px; --fw: 450; --ls: 0; --t-in: 50ms; --t-out: 120ms; --e: cubic-bezier(0, 0, .2, 1); gap: 6px; }
+.btn-g-compact { background: var(--ink); color: var(--canvas); --_hover: color-mix(in oklab, var(--ink) 80%, var(--canvas)); }   /* lab 3.6 -> 27 */
+.btn-g-compact-2nd { background: color-mix(in oklab, var(--ink) 5%, transparent); color: color-mix(in oklab, var(--ink) 88%, transparent); --_hover: color-mix(in oklab, var(--ink) 3%, transparent); }  /* .04 -> .06 */
+.btn-g-compact:active, .btn-g-compact-2nd:active { transform: scale(.98); }
+.bgx-kbd { font: 500 11px/1 var(--font-mono, ui-monospace, monospace); padding: 3px 4px; border-radius: 4px; opacity: .6;
+  box-shadow: inset 0 0 0 1px currentColor; margin-left: 2px; }
+:is([data-theme="dark"], .dark) .btn-g-compact { --_hover: color-mix(in oklab, var(--ink), #fff 60%); }
+
+/* =====================================================================
+   10  MONO CAPS SQUARE              Warp
+   Mono uppercase label at +0.05em, radius 4, hover swaps the fill to the
+   accent (outline twin: ring + label go accent). -3rd: [ bracketed ] text.
+   ===================================================================== */
+.btn-g-mono, .btn-g-mono-2nd, .btn-g-mono-3rd {
+  --h: 36px; --px: 16px; --r: 4px; --fs: 12px; --fw: 500; --ls: .05em; --t-in: 150ms; --t-out: 150ms; --e: ease;
+  font-family: var(--font-mono, "Geist Mono", ui-monospace, "SFMono-Regular", monospace); text-transform: uppercase;
+}
+.btn-g-mono { background: var(--ink); color: var(--canvas); box-shadow: 0 0 0 1px var(--ink); --_hover: var(--accent); }
+.btn-g-mono-2nd { background: var(--surface); color: var(--ink); box-shadow: 0 0 0 1px color-mix(in oklab, var(--ink) 16%, transparent); }
+@media (hover: hover) {
+  .btn-g-mono:hover { color: var(--accent-ink); box-shadow: 0 0 0 1px var(--accent); }
+  .btn-g-mono-2nd:hover { color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
+}
+.btn-g-mono:active, .btn-g-mono-2nd:active, .btn-g-mono-3rd:active { transform: scale(.98); }
+.btn-g-mono-3rd { --px: 6px; gap: 0; color: var(--ink); }
+.btn-g-mono-3rd::before, .btn-g-mono-3rd::after {
+  position: static; z-index: auto; opacity: 1; background: none; box-shadow: none; color: var(--sub);
+  transition: transform 220ms var(--e-out);
+}
+.btn-g-mono-3rd::before { content: "["; margin-right: .6em; }
+.btn-g-mono-3rd::after { content: "]"; margin-left: .6em; }
+@media (hover: hover) {
+  .btn-g-mono-3rd:hover::before { transform: translateX(-3px); color: var(--accent); }
+  .btn-g-mono-3rd:hover::after { transform: translateX(3px); color: var(--accent); }
+}
+:is([data-theme="dark"], .dark) .btn-g-mono-2nd { background: transparent; box-shadow: 0 0 0 1px rgb(255 255 255 / .18); }
+
+/* =====================================================================
+   11  ACCENT BLOCK + ARROW MORPH    Trigger.dev, Stripe, Ramp
+   Accent rectangle; trailing chevron grows a shaft on hover. Bright
+   accents (lime, yellow) LIGHTEN on hover: add .is-bright.
+   ===================================================================== */
+.btn-g-arrow, .btn-g-arrow-2nd { --r: 6px; --px: 20px; --fs: 16px; --fw: 500; --ls: -0.01em; gap: 6px; padding-right: 16px; --t-out: 240ms; }
+.btn-g-arrow { background: var(--accent); color: var(--accent-ink); --_hover: color-mix(in oklab, var(--accent) 82%, #000); }  /* Stripe #533afd -> #4032c8 */
+.btn-g-arrow.is-bright, .is-bright .btn-g-arrow { --_hover: color-mix(in oklab, var(--accent) 55%, #fff); }                     /* Trigger #a8ff53 -> #cfffa0 */
+.btn-g-arrow-2nd {
+  color: var(--ink); background: color-mix(in oklab, var(--surface) 70%, transparent);
+  box-shadow: 0 0 0 1px color-mix(in oklab, var(--accent) 34%, var(--surface));                  /* Stripe ring #b9b9f9 */
+  --_hover: color-mix(in oklab, var(--accent) 5%, var(--surface));
+}
+.btn-g-arrow .bgx-arrow .h, .btn-g-arrow-2nd .bgx-arrow .h { transform: translateX(-3.5px); }
+.btn-g-arrow .bgx-arrow .l, .btn-g-arrow-2nd .bgx-arrow .l { transform: scaleX(0); opacity: 0; }
+@media (hover: hover) {
+  .btn-g-arrow:hover .bgx-arrow .h, .btn-g-arrow-2nd:hover .bgx-arrow .h { transform: translateX(0); }
+  .btn-g-arrow:hover .bgx-arrow .l, .btn-g-arrow-2nd:hover .bgx-arrow .l { transform: scaleX(1); opacity: 1; }
+  .btn-g-arrow-2nd:hover { box-shadow: 0 0 0 1px var(--accent); }
+}
+:is([data-theme="dark"], .dark) .btn-g-arrow-2nd {
+  background: var(--canvas); color: var(--ink);
+  box-shadow: 0 0 0 1px color-mix(in oklab, var(--ink) 20%, var(--canvas));                      /* Trigger #3b3e45 on #121317 */
+  --_hover: color-mix(in oklab, var(--ink) 5%, var(--canvas));
+}
+
+/* =====================================================================
+   12  ICON-TILE STATEMENT           Arc (primary), Kaching (secondary tile)
+   Tall translucent ink button with a concentric app-icon tile inset 8px:
+   tile radius = outer radius - inset. One per page.
+   ===================================================================== */
+.btn-g-tile, .btn-g-tile-2nd {
+  --h: 64px; --r: 20px; --inset: 8px; --fs: 20px; --fw: 500; --ls: -0.015em;
+  padding: 0 20px 0 var(--inset); gap: 14px; --t-out: 220ms; --e: ease-in-out;
+}
+.btn-g-tile .bgx-tile, .btn-g-tile-2nd .bgx-tile {
+  width: calc(var(--h) - 2 * var(--inset)); height: calc(var(--h) - 2 * var(--inset));
+  border-radius: calc(var(--r) - var(--inset)); flex: none; overflow: hidden;
+  display: grid; place-items: center;
+}
+.btn-g-tile {
+  color: var(--canvas); background: color-mix(in oklab, var(--ink) 90%, transparent);
+  -webkit-backdrop-filter: blur(4px); backdrop-filter: blur(4px);
+  box-shadow: 0 2px 8px color-mix(in oklab, var(--ink) 25%, transparent);                       /* Arc 0 2px 8px .25 */
+  --_hover: color-mix(in oklab, var(--canvas) 18%, transparent);                                  /* .85 -> .65 alpha */
+}
+.btn-g-tile .bgx-tile { background: var(--surface); box-shadow: inset 0 0 0 1px rgb(0 0 0 / .06); }
+.btn-g-tile-2nd { color: var(--ink); background: var(--surface); box-shadow: 0 0 0 1px var(--line), 0 1px 2px color-mix(in oklab, var(--ink) 5%, transparent); --_hover: color-mix(in oklab, var(--ink) 3%, var(--surface)); }
+.btn-g-tile-2nd .bgx-tile { background: color-mix(in oklab, var(--ink) 5%, var(--surface)); }
+@media (hover: hover) { .btn-g-tile:hover .bgx-arrow, .btn-g-tile-2nd:hover .bgx-arrow { transform: translateX(3px); } }
+.btn-g-tile:active, .btn-g-tile-2nd:active { transform: scale(.98); }
+:is([data-theme="dark"], .dark) .btn-g-tile { box-shadow: 0 2px 10px rgb(0 0 0 / .5), 0 0 0 1px rgb(255 255 255 / .1); }
+:is([data-theme="dark"], .dark) .btn-g-tile-2nd { box-shadow: 0 0 0 1px rgb(255 255 255 / .1); --_bevel: inset 0 1px 0 rgb(255 255 255 / .05); }
+
+/* =====================================================================
+   13  CHIP ROW                      Dub (tiled chip), v0 (pill chip)
+   A row of choices under a prompt/hero: the click is the CTA. Primary chip
+   carries a 18px colour tile that scales 1.1 on hover; the pill chip lifts
+   its label from --sub to --ink.
+   ===================================================================== */
+.bgx-chips { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
+.btn-g-chip, .btn-g-chip-2nd { --fw: 450; --ls: -0.006em; --t-out: 150ms; --e: cubic-bezier(.4, 0, .2, 1); }
+.btn-g-chip {
+  --h: 36px; --r: 9px; --fs: 15px; padding: 0 13px 0 9px; gap: 8px;
+  background: var(--surface); color: var(--ink);
+  box-shadow: 0 0 0 1px var(--line), 0 1px 1px color-mix(in oklab, var(--ink) 5%, transparent);   /* Dub 1px #e5e5e5 + drop 0 1px 1px .05 */
+  --_hover: color-mix(in oklab, var(--ink) 3%, var(--surface));
+}
+.btn-g-chip .bgx-tile {
+  width: 18px; height: 18px; border-radius: 5px; flex: none; display: grid; place-items: center;
+  background: var(--tile, var(--accent)); color: var(--accent-ink);
+  box-shadow: inset 0 0 0 1px rgb(0 0 0 / .06);
+  transition: transform 150ms cubic-bezier(.4, 0, .2, 1);
+}
+.btn-g-chip .bgx-tile svg { width: 11px; height: 11px; }
+.btn-g-chip-2nd {
+  --h: 32px; --r: 999px; --px: 13px; --fs: 14px; gap: 6px; padding-left: 11px;
+  background: var(--surface); color: var(--sub);
+  box-shadow: 0 0 0 1px color-mix(in oklab, var(--ink) 9%, transparent);                          /* v0 alpha .078 */
+  --_hover: color-mix(in oklab, var(--ink) 4%, var(--surface));
+}
+.btn-g-chip-2nd > svg { width: 16px; height: 16px; }
+@media (hover: hover) {
+  .btn-g-chip:hover .bgx-tile { transform: scale(1.1); }
+  .btn-g-chip-2nd:hover { color: var(--ink); box-shadow: 0 0 0 1px color-mix(in oklab, var(--ink) 16%, transparent); }
+}
+.btn-g-chip:active, .btn-g-chip-2nd:active { transform: scale(.97); }
+:is([data-theme="dark"], .dark) .btn-g-chip { box-shadow: 0 0 0 1px var(--line), 0 1px 2px rgb(0 0 0 / .4); --_bevel: inset 0 1px 0 rgb(255 255 255 / .04); }
+:is([data-theme="dark"], .dark) .btn-g-chip-2nd { background: transparent; box-shadow: 0 0 0 1px rgb(255 255 255 / .1); }
+
+/* =====================================================================
+   14  ARROW LINK-LED                Linear, Vaul, Cursor
+   No box: label + arrow. The arrow travels 3px and a hairline draws in from
+   the left. Twin: muted "New · Label" with a ghost hover pill (Vaul).
+   ===================================================================== */
+.btn-g-link, .btn-g-link-2nd { --px: 2px; --r: 8px; --fs: 16px; gap: 6px; --t-out: 240ms; }
+.btn-g-link { color: var(--ink); }
+.btn-g-link::after {
+  inset: auto calc(var(--px) + 22px) 11px var(--px); height: 1px; border-radius: 1px; z-index: 0;
+  background: currentColor; opacity: .35; transform: scaleX(0); transform-origin: left center;
+  box-shadow: none; transition: transform 300ms var(--e-out);
+}
+.btn-g-link-2nd { --px: 14px; --r: 999px; color: var(--sub); --_hover: color-mix(in oklab, var(--ink) 5%, transparent); }
+.btn-g-link-2nd .bgx-tag { color: var(--ink); font-weight: 550; margin-right: 4px; }
+@media (hover: hover) {
+  .btn-g-link:hover::after { transform: scaleX(1); }
+  .btn-g-link:hover .bgx-arrow, .btn-g-link-2nd:hover .bgx-arrow { transform: translateX(3px); }
+  .btn-g-link-2nd:hover { color: var(--ink); }
+}
+.btn-g-link:active, .btn-g-link-2nd:active { transform: scale(.98); }
+
+/* =====================================================================
+   15  SLIDE-SWAP PILL               Lusion
+   Uppercase pill with a status dot. Hover: fill swaps to the accent, the
+   dot collapses, the label slides right and an arrow slides in from the
+   left (300-400ms quint). Twin: tinted pill whose two dots turn 90deg.
+   Markup: <a class="btn-g-slide"><svg class="bgx-arrow bgx-in">..</svg><span class="bgx-label">Let's talk</span><span class="bgx-dot"></span></a>
+   ===================================================================== */
+.btn-g-slide, .btn-g-slide-2nd {
+  --r: 999px; --fs: 14px; --fw: 500; --ls: .03em; --t-in: 300ms; --t-out: 400ms; --e: cubic-bezier(.23, 1, .32, 1);
+  text-transform: uppercase; overflow: hidden; gap: 0; padding: 0 20px 0 22px;
+}
+.btn-g-slide { background: var(--ink); color: var(--canvas); --_hover: var(--accent); }
+.btn-g-slide-2nd { background: color-mix(in oklab, var(--ink) 7%, var(--surface)); color: var(--ink); --_hover: var(--surface); }
+.btn-g-slide .bgx-label, .btn-g-slide-2nd .bgx-label { display: inline-block; transition: transform 400ms var(--e); }
+.btn-g-slide .bgx-dot { width: 5px; height: 5px; border-radius: 50%; background: currentColor; margin-left: 12px; flex: none; transition: transform 300ms var(--e); }
+.btn-g-slide .bgx-in { position: absolute; left: 15px; top: calc(50% - 8px); transform: translateX(-30px); opacity: 0; transition: transform 400ms var(--e), opacity 200ms ease; }
+.btn-g-slide-2nd .bgx-dots { display: inline-flex; gap: 3px; margin-left: 12px; transition: transform 400ms var(--e); }
+.btn-g-slide-2nd .bgx-dots i { width: 4px; height: 4px; border-radius: 50%; background: currentColor; }
+@media (hover: hover) {
+  .btn-g-slide:hover { color: var(--accent-ink); }
+  .btn-g-slide:hover .bgx-label { transform: translateX(12px); }
+  .btn-g-slide:hover .bgx-dot { transform: scale(0); }
+  .btn-g-slide:hover .bgx-in { transform: translateX(0); opacity: 1; }
+  .btn-g-slide-2nd:hover .bgx-dots { transform: rotate(90deg); }
+}
+:is([data-theme="dark"], .dark) .btn-g-slide-2nd { background: color-mix(in oklab, var(--ink) 10%, var(--canvas)); --_hover: color-mix(in oklab, var(--ink) 16%, var(--canvas)); }
+
+/* =====================================================================
+   16  POINTER SPOTLIGHT             Liveblocks
+   A 100px radial light follows the pointer inside the button. Needs 1 line
+   of JS to set --mx/--my (see button-grammars.md); falls back to centre.
+   ===================================================================== */
+.btn-g-spot, .btn-g-spot-2nd { --r: 8px; --px: 18px; --t-in: 200ms; --t-out: 300ms; overflow: hidden; }
+.btn-g-spot {
+  background: var(--ink); color: var(--canvas);
+  --_hover: radial-gradient(100px circle at var(--mx, 50%) var(--my, 50%), color-mix(in oklab, var(--canvas) 26%, transparent), transparent);
+}
+.btn-g-spot-2nd {
+  color: var(--ink); box-shadow: 0 0 0 1px color-mix(in oklab, var(--ink) 10%, transparent);
+  --_hover: radial-gradient(100px circle at var(--mx, 50%) var(--my, 50%), color-mix(in oklab, var(--ink) 10%, transparent), transparent);
+}
+:is([data-theme="dark"], .dark) .btn-g-spot {
+  --_hover: radial-gradient(100px circle at var(--mx, 50%) var(--my, 50%), color-mix(in oklab, var(--canvas) 12%, transparent), transparent);   /* Liveblocks #f7f7f8 on #fff */
+}
+:is([data-theme="dark"], .dark) .btn-g-spot-2nd {
+  box-shadow: none;
+  --_hover: radial-gradient(100px circle at var(--mx, 50%) var(--my, 50%), rgb(255 255 255 / .14), transparent);                              /* Liveblocks white .12 */
+}
+
+/* ---------------------------------------------------------------------
+   Reduced motion: state changes stay (instant fills, rings), travel goes.
+   --------------------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  [class*="btn-g-"], [class*="btn-g-"]::before, [class*="btn-g-"]::after, [class*="btn-g-"] * {
+    transition-duration: .01ms !important; animation: none !important;
+  }
+  [class*="btn-g-"]:active, [class*="btn-g-"]:active .bgx-face { transform: none !important; }
+  .btn-g-slide .bgx-label, .btn-g-slide .bgx-dot, .btn-g-slide-2nd .bgx-dots,
+  [class*="btn-g-"] .bgx-arrow, .btn-g-mono-3rd::before, .btn-g-mono-3rd::after { transform: none !important; }
+  .btn-g-slide .bgx-in { display: none; }
+  [class*="btn-g-"] .bgx-arrow .l { transform: none !important; opacity: 1 !important; }
+  [class*="btn-g-"] .bgx-arrow .h { transform: none !important; }
+  .btn-g-lamp-2nd::before { transform: none !important; opacity: 0; }
+  @media (hover: hover) { .btn-g-lamp-2nd:hover::before { opacity: 1; } }
+}

@@ -152,7 +152,7 @@ export function InView({ i = 0, y = 24, className, children }: { i?: number; y?:
 /** Rolling number (NumberFlow-style): every digit sits in its own masked slot and rolls up to its value; symbols ($ , . % s)
  *  stay still. On mount it rolls up from 0 at `at` seconds with a small left-to-right stagger; later changes roll only the
  *  digits that changed. Digits align from the right so 720 -> 721 moves one slot. Screen readers get the plain value.
- *  Slots are 1.1em tall: give static siblings (other stats in a row) line-height 1.1 too, or the rows sit 0.1em apart. */
+ *  Slots are 1.2em tall: give static siblings (other stats in a row) line-height 1.2 too, or the rows sit apart. */
 export function RollingNumber({ value, at = 0, stagger = 0.045, className = '' }: { value: string; at?: number; stagger?: number; className?: string }) {
   const still = useReducedMotion()
   const [born] = useState(() => performance.now())
@@ -166,14 +166,14 @@ export function RollingNumber({ value, at = 0, stagger = 0.045, className = '' }
       <span aria-hidden className="inline-flex">
         {chars.map((c, i) => {
           const key = chars.length - i // keyed from the right so slots stay put when the value changes
-          if (!/\d/.test(c)) return <span key={`s${key}${c}`} className="inline-block h-[1.1em] leading-[1.1em]">{c}</span> // same box as a digit slot, so symbols share the baseline
+          if (!/\d/.test(c)) return <span key={`s${key}${c}`} className="inline-block h-[1.2em] leading-[1.2em]">{c === ' ' ? '\u00a0' : c}</span> // same box as a digit slot; spaces kept (inline-block would collapse them)
           const d = Number(c)
           return (
-            <span key={`d${key}`} className="relative inline-block h-[1.1em] overflow-hidden leading-[1.1em] [mask-image:linear-gradient(to_bottom,transparent,#000_18%,#000_82%,transparent)]">
+            <span key={`d${key}`} className="relative inline-block h-[1.2em] overflow-hidden leading-[1.2em] [mask-image:linear-gradient(to_bottom,transparent,#000_9%,#000_91%,transparent)]">
               <span className="invisible">0</span>
               <motion.span className="absolute inset-x-0 top-0 flex flex-col" initial={{ y: '0%' }} animate={{ y: `${-d * 10}%` }}
                 transition={{ delay: (first ? wait : 0) + i * stagger, duration: first ? 1.1 : 0.6, ease: ease.outExpo }}>
-                {'0123456789'.split('').map((n) => <span key={n} className="h-[1.1em]">{n}</span>)}
+                {'0123456789'.split('').map((n) => <span key={n} className="h-[1.2em]">{n}</span>)}
               </motion.span>
             </span>
           )

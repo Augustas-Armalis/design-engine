@@ -90,7 +90,7 @@ export default function App() {
               ].map((x, i) => (
                 <div key={i} className={`${i ? 'border-l border-[#e3e5e9] pl-5' : 'pr-5'} ${i === 1 ? 'pr-5' : ''}`}>
                   <dt className="sr-only">{x.l}</dt>
-                  <dd className="tnum font-[family-name:var(--font-display)] text-[30px] font-[600] leading-[1.1] tracking-[-0.045em] text-[var(--ink)]">{x.v}</dd>
+                  <dd className="tnum font-[family-name:var(--font-display)] text-[30px] font-[600] leading-[1.2] tracking-[-0.045em] text-[var(--ink)]">{x.v}</dd>
                   <dd className="mt-2 whitespace-nowrap text-[14px] leading-[20px] tracking-[-0.01em] text-[var(--soft)]">{x.l}</dd>
                 </div>
               ))}

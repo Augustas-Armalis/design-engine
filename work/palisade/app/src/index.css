@@ -1,0 +1,40 @@
+@import "tailwindcss";
+@import "@fontsource-variable/source-serif-4";
+@import "@fontsource/ibm-plex-sans/400.css";
+@import "@fontsource/ibm-plex-sans/500.css";
+@import "@fontsource/ibm-plex-sans/600.css";
+@import "@fontsource/ibm-plex-mono/400.css";
+@import "./theme.css";
+@theme {
+  --font-sans: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Source Serif 4 Variable", Georgia, serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+/* Palisade: Meridian system, dark recipe "Phosphor forest" (measured from Modal / Supabase). Light comes from below the
+   product (Modal's floor glow), never behind the headline. Mint = success state and the readiness ring only. */
+:root {
+  color-scheme: dark;
+  --canvas: #090f0b; --s1: #111612; --s2: #181e19; --s3: #202622;
+  --line: rgb(242 246 243 / 0.08); --line-2: rgb(242 246 243 / 0.14);
+  --ink: #ebf1ec; --sub: #a3aca5; --soft: #85908a;
+  --mint: #56dc85; --deep: #046339; --warn: oklch(0.80 0.13 80); --danger: oklch(0.76 0.14 25);
+  --accent: var(--mint); --weak: var(--s2); --track: var(--s2);
+  --shadow-ring: 0 0 0 1px var(--line);
+}
+html, body { background: var(--canvas); }
+body { color: var(--ink); font-family: var(--font-sans); -webkit-font-smoothing: antialiased; }
+:focus-visible { outline: 2px solid var(--mint); outline-offset: 2px; }
+
+/* Button grammar: deep chromatic fill (squared-soft r10) + underline text link with travelling arrow. */
+.btn-forest { background: var(--deep); color: #f3f6f3; box-shadow: inset 0 0 0 1px rgb(242 246 243 / 0.15), inset 0 1px 0 rgb(255 255 255 / 0.08), 0 1px 3px rgb(0 0 0 / 0.25); transition: background-color 160ms cubic-bezier(.22,1,.36,1); }
+@media (hover: hover) { .btn-forest:hover { background: #0d7146; } }
+.btn-underline { color: var(--ink); text-decoration: underline; text-decoration-color: rgb(242 246 243 / 0.28); text-underline-offset: 6px; text-decoration-thickness: 1px; transition: text-decoration-color 180ms; }
+.btn-underline .arr { display: inline-block; transition: transform 200ms cubic-bezier(.22,1,.36,1); }
+@media (hover: hover) { .btn-underline:hover { text-decoration-color: var(--mint); } .btn-underline:hover .arr { transform: translateX(3px); } }
+
+.press { transition: transform 160ms cubic-bezier(.22,1,.36,1); }
+.press:active { transform: scale(0.97); }
+@media (prefers-reduced-motion: reduce) { .press:active { transform: none; } }
+h1, h2, h3 { text-wrap: balance; }
+p { text-wrap: pretty; }
+.tnum { font-variant-numeric: tabular-nums; }

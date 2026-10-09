@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Button grammars: specimen</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&family=Geist+Mono:wght@400..600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="buttons.css">
+<style>
+  :root {
+    --accent: #5b4cf5; --accent-ink: #ffffff; --ink: #18181b; --canvas: #f6f6f7;
+    --surface: #ffffff; --line: #e4e4e7; --sub: #6b6b73;
+    --font-mono: "Geist Mono", ui-monospace, monospace;
+    color-scheme: light;
+  }
+  [data-theme="dark"] {
+    --accent: #7366ff; --accent-ink: #ffffff; --ink: #ededef; --canvas: #0c0c0e;
+    --surface: #18181b; --line: #2c2c31; --sub: #8e8e97;
+    color-scheme: dark;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body { font-family: Inter, ui-sans-serif, system-ui, sans-serif; font-feature-settings: "cv11", "ss03";
+    background: #e9e9ec; color: var(--ink); -webkit-font-smoothing: antialiased; }
+  .page { max-width: 1440px; margin: 0 auto; padding: 56px 48px 72px; }
+  header { display: grid; grid-template-columns: 1fr auto; align-items: end; gap: 24px; margin-bottom: 32px; }
+  h1 { font-size: 40px; line-height: 1.05; letter-spacing: -0.03em; font-weight: 600; margin: 0 0 10px; }
+  header p { margin: 0; font-size: 15px; line-height: 1.5; color: var(--sub); max-width: 70ch; }
+  .legend { font: 12px/1.6 var(--font-mono); color: var(--sub); text-align: right; }
+  .grid { display: grid; grid-template-columns: 270px 1fr 1fr; border-radius: 16px; overflow: hidden;
+    box-shadow: 0 0 0 1px rgb(0 0 0 / .08), 0 12px 32px -16px rgb(0 0 0 / .18); background: var(--line); gap: 1px; }
+  .colhead { background: var(--surface); padding: 12px 20px; font: 500 11px/1 var(--font-mono); letter-spacing: .06em; text-transform: uppercase; color: var(--sub); }
+  .colhead[data-theme="dark"] { background: #141416; }
+  .meta { background: var(--surface); padding: 22px 20px; display: flex; flex-direction: column; gap: 6px; }
+  .meta .n { font: 500 11px/1 var(--font-mono); color: var(--sub); letter-spacing: .04em; }
+  .meta h2 { margin: 0; font-size: 16px; line-height: 1.25; letter-spacing: -0.01em; font-weight: 600; }
+  .meta .src { font-size: 12.5px; line-height: 1.45; color: var(--sub); }
+  .meta .use { font-size: 12.5px; line-height: 1.45; color: var(--ink); opacity: .8; }
+  .cell { background: var(--canvas); color: var(--ink); padding: 34px 28px 18px; display: flex; flex-direction: column;
+    align-items: center; justify-content: center; gap: 18px; min-height: 150px; position: relative; }
+  .row { display: flex; gap: 12px; align-items: center; justify-content: center; flex-wrap: wrap; }
+  .spec { font: 11px/1.4 var(--font-mono); color: var(--sub); text-align: center; letter-spacing: .01em; }
+  /* imagery for the glass grammar */
+  .cell.photo { background:
+      radial-gradient(60% 80% at 20% 110%, #3f5b3a 0%, transparent 60%),
+      radial-gradient(70% 90% at 85% 100%, #2d4a3e 0%, transparent 60%),
+      radial-gradient(90% 70% at 50% 0%, #f2b8a0 0%, transparent 60%),
+      linear-gradient(180deg, #c9a9b6 0%, #8fa0b8 45%, #56707a 100%); }
+  .cell.photo .spec { color: rgb(255 255 255 / .8); }
+  .cell.photo[data-theme="dark"] { background:
+      radial-gradient(60% 70% at 70% 0%, #3a3f8f 0%, transparent 65%),
+      radial-gradient(50% 60% at 15% 100%, #4a1f4f 0%, transparent 60%),
+      linear-gradient(180deg, #16182b 0%, #0b0c16 100%); }
+  .cell.photo[data-theme="dark"] .spec { color: rgb(255 255 255 / .6); }
+  .appicon { width: 100%; height: 100%; background:
+      radial-gradient(120% 90% at 50% 120%, #ff6a3d 0%, #ffb547 35%, transparent 60%),
+      radial-gradient(100% 100% at 50% 0%, #7aa8ff 0%, #a98bff 55%, #ffd2e1 100%); }
+  .bgx-tile svg { width: 22px; height: 22px; }
+  .stackwrap { width: 100%; max-width: 360px; }
+  .stackwrap .bgx-stack { max-width: none; }
+  footer { margin-top: 20px; font: 12px/1.6 var(--font-mono); color: var(--sub); }
+</style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <div>
+      <h1>Button grammars</h1>
+      <p>Sixteen CTA constructions measured from shipped sites, each a primary with its paired secondary, driven only by seven tokens (<code>--accent --accent-ink --ink --canvas --surface --line --sub</code>). Left cell: light canvas. Right cell: <code>[data-theme="dark"]</code>. Hover any button; press it; tab to it.</p>
+    </div>
+    <div class="legend">system/variety/buttons.css<br>knowledge/web/button-grammars.md</div>
+  </header>
+
+  <div class="grid">
+    <div class="colhead">Grammar</div><div class="colhead">Light canvas</div><div class="colhead" data-theme="dark">Dark canvas</div>
+
+    <!-- 01 -->
+    <div class="meta"><span class="n">01 / flat</span><h2>Flat pill + ring twin</h2><span class="src">Vercel 40 pill #171717→#383838, ring 0 0 0 1px #ebebeb · Cursor 43 pill · Family 48 pill</span><span class="use">Default for clean product heroes; zero depth.</span></div>
+    <div class="cell"><div class="row"><a href="#" class="btn-g-flat">Start for free</a><a href="#" class="btn-g-flat-2nd">Talk to sales</a></div><div class="spec">44 · pill · 16/500 · hover fill +14% · no shadow</div></div>
+    <div class="cell" data-theme="dark"><div class="row"><a href="#" class="btn-g-flat">Start for free</a><a href="#" class="btn-g-flat-2nd">Talk to sales</a></div><div class="spec">light pill + contact ladder (Linear) · hover → white</div></div>
+
+    <!-- 02 -->
+    <div class="meta"><span class="n">02 / glass</span><h2>Frosted glass pill</h2><span class="src">Mercury accent pill r32 + glass .2 / rim .36 / blur 20 · Convex black .2 + blur 6 · Evervault white .06</span><span class="use">Only over photography, film or gradient fields.</span></div>
+    <div class="cell photo"><div class="row"><a href="#" class="btn-g-glass">Open account</a><a href="#" class="btn-g-glass-2nd">Launch demo</a></div><div class="spec">44 · pill · solid accent + glass twin · blur 20 saturate 1.4</div></div>
+    <div class="cell photo" data-theme="dark"><div class="row"><a href="#" class="btn-g-glass">Open account</a><a href="#" class="btn-g-glass-2nd">Launch demo</a></div><div class="spec">glass .08 · rim .16 · top light .14</div></div>
+
+    <!-- 03 -->
+    <div class="meta"><span class="n">03 / key</span><h2>Metal keycap</h2><span class="src">Raycast 36 r8: ring 2px black .5, halo 14px white .19, bevel inset −1px / +1px white</span><span class="use">Dev tools, launchers, keyboard-first products.</span></div>
+    <div class="cell"><div class="row"><a href="#" class="btn-g-key"><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 1.5a.75.75 0 0 1 .75.75v6.69l2.22-2.22a.75.75 0 1 1 1.06 1.06l-3.5 3.5a.75.75 0 0 1-1.06 0l-3.5-3.5a.75.75 0 1 1 1.06-1.06l2.22 2.22V2.25A.75.75 0 0 1 8 1.5ZM2.75 12.5a.75.75 0 0 0 0 1.5h10.5a.75.75 0 0 0 0-1.5H2.75Z"/></svg>Download for Mac</a><a href="#" class="btn-g-key-2nd">View changelog</a></div><div class="spec">44 · r10 · 15/500 · press: 1px down + .98</div></div>
+    <div class="cell" data-theme="dark"><div class="row"><a href="#" class="btn-g-key"><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 1.5a.75.75 0 0 1 .75.75v6.69l2.22-2.22a.75.75 0 1 1 1.06 1.06l-3.5 3.5a.75.75 0 0 1-1.06 0l-3.5-3.5a.75.75 0 1 1 1.06-1.06l2.22 2.22V2.25A.75.75 0 0 1 8 1.5ZM2.75 12.5a.75.75 0 0 0 0 1.5h10.5a.75.75 0 0 0 0-1.5H2.75Z"/></svg>Download for Mac</a><a href="#" class="btn-g-key-2nd">View changelog</a></div><div class="spec">Raycast exact stack · hover #e6e6e6 → #fff</div></div>
+
+    <!-- 04 -->
+    <div class="meta"><span class="n">04 / push</span><h2>Offset push (slab + face)</h2><span class="src">PostHog 47 r8: face #eb9d2a over base #cd8407, 1px #b17816, face −3px</span><span class="use">Playful brands only; one per viewport.</span></div>
+    <div class="cell" style="--accent:#eb9d2a;--accent-ink:#17130b"><div class="row"><button class="btn-g-push"><span class="bgx-face">Get started</span></button><button class="btn-g-push-2nd"><span class="bgx-face">Install with AI</span></button></div><div class="spec">44 face + 4 slab · r10 · press sinks 3px in 34ms</div></div>
+    <div class="cell" data-theme="dark" style="--accent:#f0a83a;--accent-ink:#17130b"><div class="row"><button class="btn-g-push"><span class="bgx-face">Get started</span></button><button class="btn-g-push-2nd"><span class="bgx-face">Install with AI</span></button></div><div class="spec">deeper slab + 0 8px 20px −10px drop</div></div>
+
+    <!-- 05 -->
+    <div class="meta"><span class="n">05 / glow</span><h2>Inner-glow tint</h2><span class="src">Reflect 36 r8: accent .12 + gradient .32, inset 0 0 12px .24; hover cross-fade to .24/.42/.44 · Aceternity inset rim</span><span class="use">AI and notes products; dark-first brands.</span></div>
+    <div class="cell"><div class="row"><a href="#" class="btn-g-glow">Download for Mac</a><a href="#" class="btn-g-glow-2nd">Get the iPhone app</a></div><div class="spec">44 · r10 · soft accent tint, lit inner edge</div></div>
+    <div class="cell" data-theme="dark"><div class="row"><a href="#" class="btn-g-glow">Download for Mac</a><a href="#" class="btn-g-glow-2nd">Get the iPhone app</a></div><div class="spec">glows from inside · 200ms cubic-bezier(.6,.6,0,1)</div></div>
+
+    <!-- 06 -->
+    <div class="meta"><span class="n">06 / edge</span><h2>Spectrum edge + under-glow</h2><span class="src">Magic UI 40 r10: 3 background-clip layers, 1px border, blurred 12.8px spectrum strip under the edge</span><span class="use">Launches, AI features, component libraries.</span></div>
+    <div class="cell"><div class="row"><a href="#" class="btn-g-edge">Browse components<svg class="bgx-arrow" viewBox="0 0 16 16" aria-hidden="true"><path class="l" d="M2.75 8h8.5"/><path class="h" d="M7.75 4.25 11.5 8l-3.75 3.75"/></svg></a><a href="#" class="btn-g-edge-2nd">Browse templates</a></div><div class="spec">44 · r10 · hues = accent ±120° (relative oklch)</div></div>
+    <div class="cell" data-theme="dark"><div class="row"><a href="#" class="btn-g-edge">Browse components<svg class="bgx-arrow" viewBox="0 0 16 16" aria-hidden="true"><path class="l" d="M2.75 8h8.5"/><path class="h" d="M7.75 4.25 11.5 8l-3.75 3.75"/></svg></a><a href="#" class="btn-g-edge-2nd">Browse templates</a></div><div class="spec">hover: glow .55 → .95, strip widens</div></div>
+
+    <!-- 07 -->
+    <div class="meta"><span class="n">07 / lamp</span><h2>Lamp-lit ink + embossed rise</h2><span class="src">Attio 36 r10: rim lab37 on lab12, radial at 50% −10%, hover in 50ms / out 300ms · Sonner emboss ladder + rising fill</span><span class="use">CRM and data products; quiet premium.</span></div>
+    <div class="cell"><div class="row"><a href="#" class="btn-g-lamp">Start for free</a><a href="#" class="btn-g-lamp-2nd">Talk to sales</a></div><div class="spec">44 · r12 · 15/500 · light pools from the top edge</div></div>
+    <div class="cell" data-theme="dark"><div class="row"><a href="#" class="btn-g-lamp">Start for free</a><a href="#" class="btn-g-lamp-2nd">Talk to sales</a></div><div class="spec">white rim .5 · secondary fill rises from below</div></div>
+
+    <!-- 08 -->
+    <div class="meta"><span class="n">08 / stack</span><h2>Full-width auth stack</h2><span class="src">Cal.com 36 r12, 480 wide: #292929→#242424 + inset 0 2px 0 white .15; twin #f7f7f8→#eaeaeb + inset white</span><span class="use">Sign-up-first heroes in a left column.</span></div>
+    <div class="cell"><div class="stackwrap"><div class="bgx-stack"><a href="#" class="btn-g-stack"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="8" cy="8" r="6.25"/><path d="M1.75 8h12.5M8 1.75c1.8 1.9 2.6 4 2.6 6.25S9.8 12.35 8 14.25C6.2 12.35 5.4 10.25 5.4 8S6.2 3.65 8 1.75Z"/></svg>Continue with SSO</a><a href="#" class="btn-g-stack-2nd">Sign up with email<svg class="bgx-arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M6.5 4.25 10.25 8 6.5 11.75"/></svg></a></div></div><div class="spec">44 · r12 · column width · 12 apart</div></div>
+    <div class="cell" data-theme="dark"><div class="stackwrap"><div class="bgx-stack"><a href="#" class="btn-g-stack"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="8" cy="8" r="6.25"/><path d="M1.75 8h12.5M8 1.75c1.8 1.9 2.6 4 2.6 6.25S9.8 12.35 8 14.25C6.2 12.35 5.4 10.25 5.4 8S6.2 3.65 8 1.75Z"/></svg>Continue with SSO</a><a href="#" class="btn-g-stack-2nd">Sign up with email<svg class="bgx-arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M6.5 4.25 10.25 8 6.5 11.75"/></svg></a></div></div><div class="spec">light gradient key + dark embossed twin</div></div>
+
+    <!-- 09 -->
+    <div class="meta"><span class="n">09 / compact</span><h2>Compact editorial rectangle</h2><span class="src">Lightfield 32 r6, 12/400 Untitled Sans, ink → lab27 in 50ms; twin black .04 → .06, no border</span><span class="use">Split heroes where type and product carry it.</span></div>
+    <div class="cell"><div class="row"><a href="#" class="btn-g-compact">Request demo</a><a href="#" class="btn-g-compact-2nd">Try for free</a></div><div class="spec">36 · r7 · 14/450 · 50ms in · tinted twin</div></div>
+    <div class="cell" data-theme="dark"><div class="row"><a href="#" class="btn-g-compact">Request demo</a><a href="#" class="btn-g-compact-2nd">Try for free</a></div><div class="spec">override: 36 hero (founder default 44)</div></div>
+
+    <!-- 10 -->
+    <div class="meta"><span class="n">10 / mono</span><h2>Mono caps square</h2><span class="src">Warp 34 r4, Azeret Semi Mono 12/500 +0.6px caps; hover fill → accent #2a1eff; outline twin ink .16</span><span class="use">Infra, terminals, technical brands.</span></div>
+    <div class="cell"><div class="row"><a href="#" class="btn-g-mono">Get started</a><a href="#" class="btn-g-mono-2nd">Download terminal</a><a href="#" class="btn-g-mono-3rd">Docs</a></div><div class="spec">36 · r4 · 12/500 +.05em · 150ms colour swap</div></div>
+    <div class="cell" data-theme="dark"><div class="row"><a href="#" class="btn-g-mono">Get started</a><a href="#" class="btn-g-mono-2nd">Download terminal</a><a href="#" class="btn-g-mono-3rd">Docs</a></div><div class="spec">-3rd: [ bracketed ] text, brackets part 3px</div></div>
+
+    <!-- 11 -->
+    <div class="meta"><span class="n">11 / arrow</span><h2>Accent block + arrow morph</h2><span class="src">Stripe 48 r4 #533afd→#4032c8 · Trigger 40 r4 lime #a8ff53→#cfffa0 · Ramp 52 r8 lime → lighter</span><span class="use">Developer and finance brands with a strong accent.</span></div>
+    <div class="cell"><div class="row"><a href="#" class="btn-g-arrow">Start building<svg class="bgx-arrow" viewBox="0 0 16 16" aria-hidden="true"><path class="l" d="M2.75 8h8.5"/><path class="h" d="M7.75 4.25 11.5 8l-3.75 3.75"/></svg></a><a href="#" class="btn-g-arrow-2nd">Contact sales<svg class="bgx-arrow" viewBox="0 0 16 16" aria-hidden="true"><path class="l" d="M2.75 8h8.5"/><path class="h" d="M7.75 4.25 11.5 8l-3.75 3.75"/></svg></a></div><div class="spec">44 · r6 · dark accent darkens on hover</div></div>
+    <div class="cell is-bright" data-theme="dark" style="--accent:#a8ff53;--accent-ink:#111214"><div class="row"><a href="#" class="btn-g-arrow">Start building<svg class="bgx-arrow" viewBox="0 0 16 16" aria-hidden="true"><path class="l" d="M2.75 8h8.5"/><path class="h" d="M7.75 4.25 11.5 8l-3.75 3.75"/></svg></a><a href="#" class="btn-g-arrow-2nd">Copy setup prompt</a></div><div class="spec">.is-bright: lime lightens on hover (Trigger)</div></div>
+
+    <!-- 12 -->
+    <div class="meta"><span class="n">12 / tile</span><h2>Icon-tile statement</h2><span class="src">Arc 76 r22: 60px icon inset 8, black .85 + blur 3, 0 2px 8px .25, 24px label, arrow +2px · Kaching 5px-inset tile</span><span class="use">App downloads, one hero CTA, nothing else in the row.</span></div>
+    <div class="cell"><div class="row"><a href="#" class="btn-g-tile"><span class="bgx-tile"><span class="appicon"></span></span>Try Dia<svg class="bgx-arrow" viewBox="0 0 16 16" aria-hidden="true"><path class="l" d="M2.75 8h8.5"/><path class="h" d="M7.75 4.25 11.5 8l-3.75 3.75"/></svg></a><a href="#" class="btn-g-tile-2nd"><span class="bgx-tile"><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M5 3.6v8.8c0 .5.55.8.97.53l6.6-4.4a.64.64 0 0 0 0-1.06l-6.6-4.4A.64.64 0 0 0 5 3.6Z"/></svg></span>Watch film</a></div><div class="spec">64 · r20 · tile 48 r12 (concentric) · 20/500</div></div>
+    <div class="cell" data-theme="dark"><div class="row"><a href="#" class="btn-g-tile"><span class="bgx-tile"><span class="appicon"></span></span>Try Dia<svg class="bgx-arrow" viewBox="0 0 16 16" aria-hidden="true"><path class="l" d="M2.75 8h8.5"/><path class="h" d="M7.75 4.25 11.5 8l-3.75 3.75"/></svg></a><a href="#" class="btn-g-tile-2nd"><span class="bgx-tile"><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M5 3.6v8.8c0 .5.55.8.97.53l6.6-4.4a.64.64 0 0 0 0-1.06l-6.6-4.4A.64.64 0 0 0 5 3.6Z"/></svg></span>Watch film</a></div><div class="spec">override: 64 statement CTA</div></div>
+
+    <!-- 13 -->
+    <div class="meta"><span class="n">13 / chip</span><h2>Chip row</h2><span class="src">Dub 34 r8 + 16px tile r4 (hover scale 1.1), drop 0 1px 1px .05 · v0 32 pill, ring .078, label grey → ink</span><span class="use">Under a prompt box or as "pick your use case".</span></div>
+    <div class="cell"><div class="bgx-chips"><a href="#" class="btn-g-chip"><span class="bgx-tile"><svg viewBox="0 0 12 12" fill="currentColor"><path d="M6.6 1 2.5 6.6h3L5.4 11l4.1-5.6h-3Z"/></svg></span>Affiliates</a><a href="#" class="btn-g-chip" style="--tile:#22c55e"><span class="bgx-tile"><svg viewBox="0 0 12 12" fill="currentColor"><path d="M2 10V6h2v4Zm3 0V2h2v8Zm3 0V5h2v5Z"/></svg></span>Analytics</a></div><div class="bgx-chips"><a href="#" class="btn-g-chip-2nd"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="2" y="3.5" width="12" height="9" rx="1.5"/><path d="m2.5 4.5 5.5 4 5.5-4"/></svg>Contact form</a><a href="#" class="btn-g-chip-2nd"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="2" y="2.5" width="12" height="11" rx="1.5"/><path d="M2 10.5 6 7l3 3 2-2 3 3"/></svg>Image editor</a><a href="#" class="btn-g-chip-2nd"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M2.5 12.5 6 8l3 2.5 4.5-6"/></svg>Finance</a></div></div>
+    <div class="cell" data-theme="dark"><div class="bgx-chips"><a href="#" class="btn-g-chip"><span class="bgx-tile"><svg viewBox="0 0 12 12" fill="currentColor"><path d="M6.6 1 2.5 6.6h3L5.4 11l4.1-5.6h-3Z"/></svg></span>Affiliates</a><a href="#" class="btn-g-chip" style="--tile:#22c55e"><span class="bgx-tile"><svg viewBox="0 0 12 12" fill="currentColor"><path d="M2 10V6h2v4Zm3 0V2h2v8Zm3 0V5h2v5Z"/></svg></span>Analytics</a></div><div class="bgx-chips"><a href="#" class="btn-g-chip-2nd"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="2" y="3.5" width="12" height="9" rx="1.5"/><path d="m2.5 4.5 5.5 4 5.5-4"/></svg>Contact form</a><a href="#" class="btn-g-chip-2nd"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="2" y="2.5" width="12" height="11" rx="1.5"/><path d="M2 10.5 6 7l3 3 2-2 3 3"/></svg>Image editor</a><a href="#" class="btn-g-chip-2nd"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M2.5 12.5 6 8l3 2.5 4.5-6"/></svg>Finance</a></div></div>
+
+    <!-- 14 -->
+    <div class="meta"><span class="n">14 / link</span><h2>Arrow link-led</h2><span class="src">Linear "New Loops →" 16/400, hover brightness 1.3 · Vaul "GitHub →" pill hover #f4f4f5 · Cursor "Request a demo →"</span><span class="use">When the product visual is the real CTA.</span></div>
+    <div class="cell"><div class="row"><a href="#" class="btn-g-link">See how it works<svg class="bgx-arrow" viewBox="0 0 16 16" aria-hidden="true"><path class="l" d="M2.75 8h8.5"/><path class="h" d="M7.75 4.25 11.5 8l-3.75 3.75"/></svg></a><a href="#" class="btn-g-link-2nd"><span class="bgx-tag">New</span>Agents in Slack<svg class="bgx-arrow" viewBox="0 0 16 16" aria-hidden="true"><path class="l" d="M2.75 8h8.5"/><path class="h" d="M7.75 4.25 11.5 8l-3.75 3.75"/></svg></a></div><div class="spec">no box · arrow +3px · hairline draws in 300ms</div></div>
+    <div class="cell" data-theme="dark"><div class="row"><a href="#" class="btn-g-link">See how it works<svg class="bgx-arrow" viewBox="0 0 16 16" aria-hidden="true"><path class="l" d="M2.75 8h8.5"/><path class="h" d="M7.75 4.25 11.5 8l-3.75 3.75"/></svg></a><a href="#" class="btn-g-link-2nd"><span class="bgx-tag">New</span>Agents in Slack<svg class="bgx-arrow" viewBox="0 0 16 16" aria-hidden="true"><path class="l" d="M2.75 8h8.5"/><path class="h" d="M7.75 4.25 11.5 8l-3.75 3.75"/></svg></a></div><div class="spec">twin: muted label, ghost pill on hover</div></div>
+
+    <!-- 15 -->
+    <div class="meta"><span class="n">15 / slide</span><h2>Slide-swap pill</h2><span class="src">Lusion 45 pill, Aeonik 14/500 caps: hover fill → #0016ec, dot scale 0, label +1.5em, arrow slides in; 0.4s</span><span class="use">Studios, agencies, campaign pages.</span></div>
+    <div class="cell"><div class="row"><a href="#" class="btn-g-slide"><svg class="bgx-arrow bgx-in" viewBox="0 0 16 16" aria-hidden="true"><path class="l" d="M2.75 8h8.5"/><path class="h" d="M7.75 4.25 11.5 8l-3.75 3.75"/></svg><span class="bgx-label">Let's talk</span><span class="bgx-dot"></span></a><a href="#" class="btn-g-slide-2nd"><span class="bgx-label">Menu</span><span class="bgx-dots"><i></i><i></i></span></a></div><div class="spec">44 · pill · 14/500 caps +.03em · 400ms quint</div></div>
+    <div class="cell" data-theme="dark"><div class="row"><a href="#" class="btn-g-slide"><svg class="bgx-arrow bgx-in" viewBox="0 0 16 16" aria-hidden="true"><path class="l" d="M2.75 8h8.5"/><path class="h" d="M7.75 4.25 11.5 8l-3.75 3.75"/></svg><span class="bgx-label">Let's talk</span><span class="bgx-dot"></span></a><a href="#" class="btn-g-slide-2nd"><span class="bgx-label">Menu</span><span class="bgx-dots"><i></i><i></i></span></a></div><div class="spec">twin dots turn 90° on hover</div></div>
+
+    <!-- 16 -->
+    <div class="meta"><span class="n">16 / spot</span><h2>Pointer spotlight</h2><span class="src">Liveblocks 44 r8, suisse 16/500: 200px radial (100px) follows the cursor; twin transparent with white .12 light</span><span class="use">Collaboration and realtime products.</span></div>
+    <div class="cell"><div class="row"><a href="#" class="btn-g-spot">Get started for free</a><a href="#" class="btn-g-spot-2nd">Install with AI<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px" aria-hidden="true"><path d="m4.5 6.25 3.5 3.5 3.5-3.5"/></svg></a></div><div class="spec">44 · r8 · --mx/--my from pointermove</div></div>
+    <div class="cell" data-theme="dark"><div class="row"><a href="#" class="btn-g-spot">Get started for free</a><a href="#" class="btn-g-spot-2nd">Install with AI<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px" aria-hidden="true"><path d="m4.5 6.25 3.5 3.5 3.5-3.5"/></svg></a></div><div class="spec">light on light: spot = canvas 12%</div></div>
+  </div>
+  <footer>Measured at 1440×900 with Playwright, Oct 2026. Crops: knowledge/benchmarks/variety/buttons/&lt;site&gt;.png (+ -hover.png).</footer>
+</div>
+<script>
+  // pointer spotlight (grammar 16)
+  document.addEventListener('pointermove', (e) => {
+    const b = e.target.closest && e.target.closest('.btn-g-spot, .btn-g-spot-2nd');
+    if (!b) return;
+    const r = b.getBoundingClientRect();
+    b.style.setProperty('--mx', (e.clientX - r.left) + 'px');
+    b.style.setProperty('--my', (e.clientY - r.top) + 'px');
+  }, { passive: true });
+  document.addEventListener('click', (e) => { if (e.target.closest('a[href="#"]')) e.preventDefault(); });
+</script>
+</body>
+</html>
