@@ -1,4 +1,1086 @@
 {
+ "alignui-home": {
+  "url": "https://alignui.com",
+  "fonts": [
+   "__interVar_fb658c"
+  ],
+  "svgs": 157,
+  "iconOnly": {
+   "n": 23,
+   "centred_le_0.25": 1.0,
+   "centred_le_0.5": 1.0,
+   "worst": [
+    [
+     0,
+     48,
+     24,
+     "div",
+     "jsx-1805934788 relative z-10 f"
+    ],
+    [
+     0,
+     36,
+     20,
+     "div",
+     "flex size-9 shrink-0 items-cen"
+    ],
+    [
+     0,
+     36,
+     20,
+     "div",
+     "flex size-9 shrink-0 items-cen"
+    ],
+    [
+     0,
+     36,
+     20,
+     "div",
+     "flex size-9 shrink-0 items-cen"
+    ]
+   ],
+   "halfPx": 0,
+   "sizePairs": [
+    [
+     "32/18",
+     11
+    ],
+    [
+     "36/20",
+     7
+    ],
+    [
+     "24/16",
+     3
+    ],
+    [
+     "20/20",
+     1
+    ],
+    [
+     "48/24",
+     1
+    ]
+   ]
+  },
+  "iconText": {
+   "n": 58,
+   "boxDy_le_0.5": 1.0,
+   "lineDy_med": 0.5,
+   "capDy_med": 0.09,
+   "capDy_p10": 0.09,
+   "capDy_p90": 10.09,
+   "xDy_med": -1.18,
+   "iconToFont_med": 1.43,
+   "gap_mode": [
+    [
+     6,
+     23
+    ],
+    [
+     4,
+     7
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     0,
+     2
+    ]
+   ],
+   "iconSizes": [
+    [
+     "20h/20i",
+     21
+    ],
+    [
+     "32h/18i",
+     8
+    ],
+    [
+     "28h/20i",
+     8
+    ],
+    [
+     "60h/20i",
+     7
+    ],
+    [
+     "44h/20i",
+     6
+    ],
+    [
+     "20h/16i",
+     3
+    ],
+    [
+     "44h/16i",
+     2
+    ],
+    [
+     "24h/16i",
+     1
+    ]
+   ]
+  },
+  "ink": {
+   "n": 89,
+   "offcentre_gt_0.5px": 1,
+   "maxAbs": 0.53
+  },
+  "heights": [
+   [
+    32,
+    17
+   ],
+   [
+    40,
+    6
+   ],
+   [
+    44,
+    6
+   ],
+   [
+    48,
+    5
+   ],
+   [
+    28,
+    3
+   ],
+   [
+    24,
+    2
+   ],
+   [
+    20,
+    1
+   ]
+  ],
+  "radiusByHeight": {
+   "24": {
+    "n": 2,
+    "radius": [
+     [
+      7,
+      1
+     ],
+     [
+      0,
+      1
+     ]
+    ],
+    "ratio_med": 0.15,
+    "type": [
+     "12px",
+     "16px",
+     "500",
+     "normal"
+    ],
+    "pad": [
+     "4px",
+     "6px"
+    ]
+   },
+   "28": {
+    "n": 3,
+    "radius": [
+     [
+      14,
+      2
+     ],
+     [
+      7,
+      1
+     ]
+    ],
+    "ratio_med": 0.5,
+    "type": [
+     "14px",
+     "20px",
+     "500",
+     "-0.084px"
+    ],
+    "pad": [
+     "0px",
+     "12px"
+    ]
+   },
+   "32": {
+    "n": 17,
+    "radius": [
+     [
+      9,
+      17
+     ]
+    ],
+    "ratio_med": 0.28,
+    "type": [
+     "16px",
+     "24px",
+     "400",
+     "normal"
+    ],
+    "pad": [
+     "0px",
+     "0px"
+    ]
+   },
+   "40": {
+    "n": 6,
+    "radius": [
+     [
+      0,
+      3
+     ],
+     [
+      10,
+      2
+     ],
+     [
+      9,
+      1
+     ]
+    ],
+    "ratio_med": 0.11,
+    "type": [
+     "14px",
+     "20px",
+     "400",
+     "-0.084px"
+    ],
+    "pad": [
+     "0px",
+     "0px"
+    ]
+   },
+   "44": {
+    "n": 6,
+    "radius": [
+     [
+      13,
+      3
+     ],
+     [
+      22,
+      3
+     ]
+    ],
+    "ratio_med": 0.4,
+    "type": [
+     "14px",
+     "20px",
+     "500",
+     "-0.084px"
+    ],
+    "pad": [
+     "0px",
+     "18px"
+    ]
+   },
+   "48": {
+    "n": 5,
+    "radius": [
+     [
+      15,
+      5
+     ]
+    ],
+    "ratio_med": 0.31,
+    "type": [
+     "16px",
+     "24px",
+     "400",
+     "normal"
+    ],
+    "pad": [
+     "0px",
+     "12px"
+    ]
+   }
+  },
+  "textCentre": {
+   "n": 7,
+   "capDy_med": 0.18,
+   "capDy_p10": -0.09,
+   "capDy_p90": 0.18,
+   "lineDy_med": 0,
+   "gt_1px": 0
+  },
+  "radiusVocab": {
+   "interactive_distinct": 7,
+   "all_distinct": 12,
+   "pill_share_interactive": 0.13,
+   "top": [
+    [
+     9,
+     29
+    ],
+    [
+     7,
+     10
+    ],
+    [
+     5,
+     10
+    ],
+    [
+     16,
+     10
+    ],
+    [
+     11,
+     8
+    ],
+    [
+     10,
+     5
+    ],
+    [
+     15,
+     5
+    ],
+    [
+     24,
+     4
+    ]
+   ]
+  },
+  "nests": {
+   "n": 18,
+   "within_1px": 0.056,
+   "median_abs_err": 7.0
+  }
+ },
+ "atlassian-button": {
+  "url": "https://atlassian.design/components/button/examples",
+  "fonts": [
+   "\"Atlassian Sans\""
+  ],
+  "svgs": 143,
+  "iconOnly": {
+   "n": 49,
+   "centred_le_0.25": 1.0,
+   "centred_le_0.5": 1.0,
+   "worst": [
+    [
+     0,
+     24,
+     24,
+     "button",
+     "css-15g9orb"
+    ],
+    [
+     0,
+     24,
+     24,
+     "button",
+     "css-15g9orb"
+    ],
+    [
+     0,
+     24,
+     24,
+     "button",
+     "css-15g9orb"
+    ],
+    [
+     0,
+     24,
+     24,
+     "button",
+     "css-15g9orb"
+    ]
+   ],
+   "halfPx": 0,
+   "sizePairs": [
+    [
+     "24/12",
+     29
+    ],
+    [
+     "24/24",
+     20
+    ]
+   ]
+  },
+  "iconText": {
+   "n": 79,
+   "boxDy_le_0.5": 0.886,
+   "lineDy_med": 0.5,
+   "capDy_med": 0.09,
+   "capDy_p10": 0.09,
+   "capDy_p90": 0.33,
+   "xDy_med": -1.18,
+   "iconToFont_med": 1.14,
+   "gap_mode": [
+    [
+     6,
+     69
+    ],
+    [
+     4,
+     9
+    ],
+    [
+     -35,
+     1
+    ]
+   ],
+   "iconSizes": [
+    [
+     "32h/16i",
+     52
+    ],
+    [
+     "32h/12i",
+     17
+    ],
+    [
+     "17h/12.59i",
+     9
+    ],
+    [
+     "32h/25.7i",
+     1
+    ]
+   ]
+  },
+  "ink": {
+   "n": 130,
+   "offcentre_gt_0.5px": 0,
+   "maxAbs": 0.5
+  },
+  "heights": [
+   [
+    32,
+    20
+   ],
+   [
+    24,
+    1
+   ]
+  ],
+  "radiusByHeight": {
+   "32": {
+    "n": 20,
+    "radius": [
+     [
+      6,
+      12
+     ],
+     [
+      0,
+      8
+     ]
+    ],
+    "ratio_med": 0.19,
+    "type": [
+     "14px",
+     "20px",
+     "500",
+     "normal"
+    ],
+    "pad": [
+     "6px",
+     "12px"
+    ]
+   }
+  },
+  "textCentre": {
+   "n": 10,
+   "capDy_med": -0.09,
+   "capDy_p10": -0.09,
+   "capDy_p90": -0.09,
+   "lineDy_med": -0.5,
+   "gt_1px": 0
+  },
+  "radiusVocab": {
+   "interactive_distinct": 3,
+   "all_distinct": 4,
+   "pill_share_interactive": 0.05,
+   "top": [
+    [
+     4,
+     40
+    ],
+    [
+     0,
+     24
+    ],
+    [
+     6,
+     13
+    ],
+    [
+     8,
+     2
+    ]
+   ]
+  }
+ },
+ "carbon-button": {
+  "url": "https://carbondesignsystem.com/components/button/usage",
+  "fonts": [
+   "\"IBM Plex Sans\"",
+   "\"IBM Plex Serif\""
+  ],
+  "svgs": 144,
+  "iconOnly": {
+   "n": 70,
+   "centred_le_0.25": 1.0,
+   "centred_le_0.5": 1.0,
+   "worst": [
+    [
+     0,
+     48,
+     20,
+     "button",
+     "cxp--header__search-btn cds--h"
+    ],
+    [
+     0,
+     48,
+     20,
+     "button",
+     "cxp--ecosystem-switcher__trigg"
+    ],
+    [
+     0,
+     24,
+     24,
+     "button",
+     "carbon-mdx-components--control"
+    ],
+    [
+     0,
+     20,
+     20,
+     "a",
+     "cxp--anchor cxp--left-anchor"
+    ]
+   ],
+   "halfPx": 0,
+   "sizePairs": [
+    [
+     "20/20",
+     67
+    ],
+    [
+     "48/20",
+     2
+    ],
+    [
+     "24/24",
+     1
+    ]
+   ]
+  },
+  "iconText": {
+   "n": 15,
+   "boxDy_le_0.5": 0.867,
+   "lineDy_med": 0,
+   "capDy_med": -0.11,
+   "capDy_p10": -0.11,
+   "capDy_p90": -0.11,
+   "xDy_med": -1.39,
+   "iconToFont_med": 1.14,
+   "gap_mode": [
+    [
+     8,
+     2
+    ],
+    [
+     93,
+     1
+    ],
+    [
+     91,
+     1
+    ],
+    [
+     105,
+     1
+    ]
+   ],
+   "iconSizes": [
+    [
+     "32h/16i",
+     10
+    ],
+    [
+     "24h/16i",
+     2
+    ],
+    [
+     "64h/16i",
+     2
+    ],
+    [
+     "48h/16i",
+     1
+    ]
+   ]
+  },
+  "ink": {
+   "n": 89,
+   "offcentre_gt_0.5px": 0,
+   "maxAbs": 0.5
+  },
+  "heights": [
+   [
+    48,
+    5
+   ],
+   [
+    40,
+    4
+   ],
+   [
+    32,
+    1
+   ]
+  ],
+  "radiusByHeight": {
+   "40": {
+    "n": 4,
+    "radius": [
+     [
+      0,
+      4
+     ]
+    ],
+    "ratio_med": 0.0,
+    "type": [
+     "14px",
+     "18.0001px",
+     "400",
+     "0.16px"
+    ],
+    "pad": [
+     "0px",
+     "16px"
+    ]
+   },
+   "48": {
+    "n": 5,
+    "radius": [
+     [
+      0,
+      5
+     ]
+    ],
+    "ratio_med": 0.0,
+    "type": [
+     "14px",
+     "16px",
+     "400",
+     "0.16px"
+    ],
+    "pad": [
+     "0px",
+     "0px"
+    ]
+   }
+  },
+  "textCentre": {
+   "n": 6,
+   "capDy_med": 0.11,
+   "capDy_p10": 0.11,
+   "capDy_p90": 0.11,
+   "lineDy_med": 0.0,
+   "gt_1px": 0
+  },
+  "radiusVocab": {
+   "interactive_distinct": 0,
+   "all_distinct": 1,
+   "pill_share_interactive": null,
+   "top": [
+    [
+     4,
+     5
+    ]
+   ]
+  }
+ },
+ "catalyst-docs": {
+  "url": "https://catalyst.tailwindui.com/docs/button",
+  "fonts": [
+   "Inter"
+  ],
+  "svgs": 4,
+  "iconOnly": {
+   "n": 0,
+   "centred_le_0.25": null,
+   "centred_le_0.5": null,
+   "worst": [],
+   "halfPx": 0,
+   "sizePairs": []
+  },
+  "iconText": {
+   "n": 2,
+   "boxDy_le_0.5": 1.0,
+   "lineDy_med": 0.5,
+   "capDy_med": 0.09,
+   "capDy_p10": 0.09,
+   "capDy_p90": 0.09,
+   "xDy_med": -1.18,
+   "iconToFont_med": 1.28,
+   "gap_mode": [
+    [
+     12,
+     1
+    ],
+    [
+     6,
+     1
+    ]
+   ],
+   "iconSizes": [
+    [
+     "36h/20i",
+     1
+    ],
+    [
+     "36h/16i",
+     1
+    ]
+   ]
+  },
+  "ink": {
+   "n": 3,
+   "offcentre_gt_0.5px": 0,
+   "maxAbs": 0.38
+  },
+  "heights": [
+   [
+    36,
+    30
+   ]
+  ],
+  "radiusByHeight": {
+   "36": {
+    "n": 30,
+    "radius": [
+     [
+      8,
+      30
+     ]
+    ],
+    "ratio_med": 0.22,
+    "type": [
+     "14px",
+     "24px",
+     "600",
+     "normal"
+    ],
+    "pad": [
+     "5px",
+     "11px"
+    ]
+   }
+  },
+  "textCentre": {
+   "n": 29,
+   "capDy_med": -0.09,
+   "capDy_p10": -0.09,
+   "capDy_p90": -0.09,
+   "lineDy_med": -0.5,
+   "gt_1px": 0
+  },
+  "radiusVocab": {
+   "interactive_distinct": 1,
+   "all_distinct": 2,
+   "pill_share_interactive": 0.0,
+   "top": [
+    [
+     8,
+     39
+    ],
+    [
+     12,
+     7
+    ]
+   ]
+  }
+ },
+ "coss-button": {
+  "url": "https://coss.com/ui/docs/components/button",
+  "fonts": [
+   "fontSans",
+   "fontMono"
+  ],
+  "svgs": 14,
+  "iconOnly": {
+   "n": 3,
+   "centred_le_0.25": 1.0,
+   "centred_le_0.5": 1.0,
+   "worst": [
+    [
+     0,
+     36,
+     16,
+     "button",
+     "relative inline-flex shrink-0 "
+    ],
+    [
+     0,
+     32,
+     16,
+     "button",
+     "relative inline-flex shrink-0 "
+    ],
+    [
+     0,
+     28,
+     16,
+     "button",
+     "relative inline-flex shrink-0 "
+    ]
+   ],
+   "halfPx": 0,
+   "sizePairs": [
+    [
+     "32/16",
+     1
+    ],
+    [
+     "28/16",
+     1
+    ],
+    [
+     "36/16",
+     1
+    ]
+   ]
+  },
+  "iconText": {
+   "n": 10,
+   "boxDy_le_0.5": 1.0,
+   "lineDy_med": -5.0,
+   "capDy_med": -5.0,
+   "capDy_p10": -9.32,
+   "capDy_p90": 0.32,
+   "xDy_med": -6.34,
+   "iconToFont_med": 1.14,
+   "gap_mode": [
+    [
+     -42,
+     4
+    ],
+    [
+     6,
+     2
+    ],
+    [
+     10,
+     1
+    ],
+    [
+     4,
+     1
+    ]
+   ],
+   "iconSizes": [
+    [
+     "32h/16i",
+     6
+    ],
+    [
+     "28h/16i",
+     1
+    ],
+    [
+     "32h/22.63i",
+     1
+    ],
+    [
+     "24h/14i",
+     1
+    ],
+    [
+     "32h/16.03i",
+     1
+    ]
+   ]
+  },
+  "ink": {
+   "n": 13,
+   "offcentre_gt_0.5px": 0,
+   "maxAbs": 0
+  },
+  "heights": [
+   [
+    30,
+    46
+   ],
+   [
+    32,
+    23
+   ],
+   [
+    28,
+    3
+   ],
+   [
+    24,
+    2
+   ],
+   [
+    36,
+    2
+   ],
+   [
+    40,
+    1
+   ]
+  ],
+  "radiusByHeight": {
+   "24": {
+    "n": 2,
+    "radius": [
+     [
+      8,
+      2
+     ]
+    ],
+    "ratio_med": 0.33,
+    "type": [
+     "12px",
+     "16px",
+     "500",
+     "normal"
+    ],
+    "pad": [
+     "0px",
+     "7px"
+    ]
+   },
+   "28": {
+    "n": 3,
+    "radius": [
+     [
+      10,
+      3
+     ]
+    ],
+    "ratio_med": 0.36,
+    "type": [
+     "14px",
+     "20px",
+     "500",
+     "normal"
+    ],
+    "pad": [
+     "0px",
+     "9px"
+    ]
+   },
+   "30": {
+    "n": 46,
+    "radius": [
+     [
+      10,
+      46
+     ]
+    ],
+    "ratio_med": 0.33,
+    "type": [
+     "14px",
+     "20px",
+     "500",
+     "normal"
+    ],
+    "pad": [
+     "0px",
+     "9px"
+    ]
+   },
+   "32": {
+    "n": 23,
+    "radius": [
+     [
+      10,
+      23
+     ]
+    ],
+    "ratio_med": 0.31,
+    "type": [
+     "14px",
+     "20px",
+     "500",
+     "normal"
+    ],
+    "pad": [
+     "0px",
+     "11px"
+    ]
+   },
+   "36": {
+    "n": 2,
+    "radius": [
+     [
+      10,
+      2
+     ]
+    ],
+    "ratio_med": 0.28,
+    "type": [
+     "14px",
+     "20px",
+     "500",
+     "normal"
+    ],
+    "pad": [
+     "0px",
+     "13px"
+    ]
+   }
+  },
+  "textCentre": {
+   "n": 64,
+   "capDy_med": -0.04,
+   "capDy_p10": -0.04,
+   "capDy_p90": -0.04,
+   "lineDy_med": 0.0,
+   "gt_1px": 0
+  },
+  "radiusVocab": {
+   "interactive_distinct": 2,
+   "all_distinct": 5,
+   "pill_share_interactive": 0.0,
+   "top": [
+    [
+     10,
+     97
+    ],
+    [
+     8,
+     21
+    ],
+    [
+     14,
+     4
+    ],
+    [
+     4,
+     2
+    ],
+    [
+     6,
+     1
+    ]
+   ]
+  },
+  "nests": {
+   "n": 4,
+   "within_1px": 0.0,
+   "median_abs_err": 2.0
+  }
+ },
  "github-home": {
   "url": "https://github.com",
   "fonts": [
@@ -427,6 +1509,680 @@
     [
      12,
      10
+    ]
+   ]
+  }
+ },
+ "linear-features": {
+  "url": "https://linear.app/features",
+  "fonts": [
+   "\"Inter Variable\""
+  ],
+  "svgs": 12,
+  "iconOnly": {
+   "n": 9,
+   "centred_le_0.25": 1.0,
+   "centred_le_0.5": 1.0,
+   "worst": [
+    [
+     0,
+     40,
+     18,
+     "div",
+     "uDqFfq_iconButton hbnAuG_root "
+    ],
+    [
+     0,
+     40,
+     18,
+     "div",
+     "uDqFfq_iconButton hbnAuG_root "
+    ],
+    [
+     0,
+     40,
+     18,
+     "div",
+     "uDqFfq_iconButton hbnAuG_root "
+    ],
+    [
+     0,
+     40,
+     18,
+     "div",
+     "uDqFfq_iconButton hbnAuG_root "
+    ]
+   ],
+   "halfPx": 0,
+   "sizePairs": [
+    [
+     "40/18",
+     8
+    ],
+    [
+     "20/20",
+     1
+    ]
+   ]
+  },
+  "iconText": {
+   "n": 0,
+   "boxDy_le_0.5": null,
+   "lineDy_med": null,
+   "capDy_med": null,
+   "capDy_p10": null,
+   "capDy_p90": null,
+   "xDy_med": null,
+   "iconToFont_med": null,
+   "gap_mode": [],
+   "iconSizes": []
+  },
+  "ink": {
+   "n": 9,
+   "offcentre_gt_0.5px": 8,
+   "maxAbs": 1.11
+  },
+  "heights": [
+   [
+    40,
+    10
+   ]
+  ],
+  "radiusByHeight": {
+   "40": {
+    "n": 10,
+    "radius": [
+     [
+      20,
+      10
+     ]
+    ],
+    "ratio_med": 0.5,
+    "type": [
+     "15px",
+     "40px",
+     "510",
+     "normal"
+    ],
+    "pad": [
+     "0px",
+     "16px"
+    ]
+   }
+  },
+  "textCentre": {
+   "n": 2,
+   "capDy_med": -0.46,
+   "capDy_p10": -0.46,
+   "capDy_p90": -0.46,
+   "lineDy_med": -0.5,
+   "gt_1px": 0
+  },
+  "radiusVocab": {
+   "interactive_distinct": 1,
+   "all_distinct": 2,
+   "pill_share_interactive": 0.58,
+   "top": [
+    [
+     24,
+     124
+    ],
+    [
+     16,
+     8
+    ]
+   ]
+  }
+ },
+ "linear-home": {
+  "url": "https://linear.app",
+  "fonts": [
+   "\"Inter Variable\""
+  ],
+  "svgs": 203,
+  "iconOnly": {
+   "n": 34,
+   "centred_le_0.25": 1.0,
+   "centred_le_0.5": 1.0,
+   "worst": [
+    [
+     0,
+     32,
+     20,
+     "button",
+     "qM9FAa_attachmentButton"
+    ],
+    [
+     0,
+     28,
+     20,
+     "button",
+     "qM9FAa_iconButton hide-mobile"
+    ],
+    [
+     0,
+     28,
+     20,
+     "button",
+     "qM9FAa_iconButton"
+    ],
+    [
+     0,
+     28,
+     20,
+     "button",
+     "qM9FAa_iconButton"
+    ]
+   ],
+   "halfPx": 2,
+   "sizePairs": [
+    [
+     "24/12",
+     16
+    ],
+    [
+     "28/20",
+     6
+    ],
+    [
+     "28/14",
+     5
+    ],
+    [
+     "20/13",
+     1
+    ],
+    [
+     "28/16",
+     1
+    ],
+    [
+     "28/15",
+     1
+    ],
+    [
+     "26/14",
+     1
+    ],
+    [
+     "32/20",
+     1
+    ]
+   ]
+  },
+  "iconText": {
+   "n": 27,
+   "boxDy_le_0.5": 1.0,
+   "lineDy_med": 0,
+   "capDy_med": -0.27,
+   "capDy_p10": -0.27,
+   "capDy_p90": 0.37,
+   "xDy_med": -1.45,
+   "iconToFont_med": 1.08,
+   "gap_mode": [
+    [
+     8,
+     12
+    ],
+    [
+     4,
+     7
+    ],
+    [
+     6,
+     3
+    ],
+    [
+     0,
+     2
+    ]
+   ],
+   "iconSizes": [
+    [
+     "28h/14i",
+     11
+    ],
+    [
+     "24h/12i",
+     6
+    ],
+    [
+     "24h/16i",
+     2
+    ],
+    [
+     "43.5h/16i",
+     2
+    ],
+    [
+     "28h/16i",
+     1
+    ],
+    [
+     "24h/14i",
+     1
+    ],
+    [
+     "61h/18i",
+     1
+    ],
+    [
+     "61h/16i",
+     1
+    ]
+   ]
+  },
+  "ink": {
+   "n": 96,
+   "offcentre_gt_0.5px": 6,
+   "maxAbs": 2
+  },
+  "heights": [
+   [
+    28,
+    5
+   ],
+   [
+    24,
+    2
+   ],
+   [
+    44,
+    2
+   ],
+   [
+    32,
+    1
+   ]
+  ],
+  "radiusByHeight": {
+   "24": {
+    "n": 2,
+    "radius": [
+     [
+      12,
+      2
+     ]
+    ],
+    "ratio_med": 0.5,
+    "type": [
+     "12px",
+     "14px",
+     "400",
+     "normal"
+    ],
+    "pad": [
+     "0px",
+     "11px"
+    ]
+   },
+   "28": {
+    "n": 5,
+    "radius": [
+     [
+      14,
+      4
+     ],
+     [
+      8,
+      1
+     ]
+    ],
+    "ratio_med": 0.5,
+    "type": [
+     "13.3333px",
+     "normal",
+     "400",
+     "normal"
+    ],
+    "pad": [
+     "0px",
+     "7px"
+    ]
+   },
+   "44": {
+    "n": 2,
+    "radius": [
+     [
+      22,
+      2
+     ]
+    ],
+    "ratio_med": 0.5,
+    "type": [
+     "16px",
+     "44px",
+     "510",
+     "normal"
+    ],
+    "pad": [
+     "0px",
+     "20px"
+    ]
+   }
+  },
+  "textCentre": {
+   "n": 4,
+   "capDy_med": -0.1,
+   "capDy_p10": -0.37,
+   "capDy_p90": 0.18,
+   "lineDy_med": -0.25,
+   "gt_1px": 0
+  },
+  "radiusVocab": {
+   "interactive_distinct": 1,
+   "all_distinct": 7,
+   "pill_share_interactive": 0.91,
+   "top": [
+    [
+     9,
+     18
+    ],
+    [
+     0,
+     12
+    ],
+    [
+     8,
+     8
+    ],
+    [
+     4,
+     6
+    ],
+    [
+     6,
+     4
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     1
+    ]
+   ]
+  },
+  "nests": {
+   "n": 3,
+   "within_1px": 0.0,
+   "median_abs_err": 5
+  }
+ },
+ "m3-buttons": {
+  "url": "https://m3.material.io/components/buttons/overview",
+  "fonts": [
+   "\"Google Sans\"",
+   "\"Google Sans Text\""
+  ],
+  "svgs": 4,
+  "iconOnly": {
+   "n": 0,
+   "centred_le_0.25": null,
+   "centred_le_0.5": null,
+   "worst": [],
+   "halfPx": 0,
+   "sizePairs": []
+  },
+  "iconText": {
+   "n": 2,
+   "boxDy_le_0.5": 1.0,
+   "lineDy_med": 0.0,
+   "capDy_med": 0.01,
+   "capDy_p10": 0.01,
+   "capDy_p90": 0.01,
+   "xDy_med": -1.32,
+   "iconToFont_med": 1.14,
+   "gap_mode": [
+    [
+     8,
+     2
+    ]
+   ],
+   "iconSizes": [
+    [
+     "26h/16i",
+     2
+    ]
+   ]
+  },
+  "ink": {
+   "n": 2,
+   "offcentre_gt_0.5px": 0,
+   "maxAbs": 0.13
+  },
+  "heights": [
+   [
+    36,
+    1
+   ]
+  ],
+  "radiusByHeight": {},
+  "textCentre": {
+   "n": 0,
+   "capDy_med": null,
+   "capDy_p10": null,
+   "capDy_p90": null,
+   "lineDy_med": null,
+   "gt_1px": 0
+  },
+  "radiusVocab": {
+   "interactive_distinct": 2,
+   "all_distinct": 4,
+   "pill_share_interactive": 0.62,
+   "top": [
+    [
+     8,
+     9
+    ],
+    [
+     24,
+     2
+    ],
+    [
+     16,
+     1
+    ],
+    [
+     0,
+     1
+    ]
+   ]
+  }
+ },
+ "polaris-button": {
+  "url": "https://polaris-react.shopify.com/components/actions/button",
+  "fonts": [
+   "Inter"
+  ],
+  "svgs": 46,
+  "iconOnly": {
+   "n": 3,
+   "centred_le_0.25": 1.0,
+   "centred_le_0.5": 1.0,
+   "worst": [
+    [
+     0,
+     34,
+     20,
+     "button",
+     "_SearchButtonCompact_15xxe_1 T"
+    ],
+    [
+     0,
+     32,
+     32,
+     "button",
+     ""
+    ],
+    [
+     0,
+     32,
+     28,
+     "button",
+     ""
+    ]
+   ],
+   "halfPx": 0,
+   "sizePairs": [
+    [
+     "34/20",
+     1
+    ],
+    [
+     "32/32",
+     1
+    ],
+    [
+     "32/28",
+     1
+    ]
+   ]
+  },
+  "iconText": {
+   "n": 40,
+   "boxDy_le_0.5": 0.25,
+   "lineDy_med": 1.67,
+   "capDy_med": 1.26,
+   "capDy_p10": 0.09,
+   "capDy_p90": 1.26,
+   "xDy_med": -0.01,
+   "iconToFont_med": 1.14,
+   "gap_mode": [
+    [
+     4,
+     25
+    ],
+    [
+     8,
+     5
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     -94,
+     2
+    ]
+   ],
+   "iconSizes": [
+    [
+     "28h/16i",
+     30
+    ],
+    [
+     "32h/16i",
+     5
+    ],
+    [
+     "20h/20i",
+     2
+    ],
+    [
+     "48h/16i",
+     1
+    ],
+    [
+     "34h/20i",
+     1
+    ],
+    [
+     "32h/20i",
+     1
+    ]
+   ]
+  },
+  "ink": {
+   "n": 3,
+   "offcentre_gt_0.5px": 0,
+   "maxAbs": 0.05
+  },
+  "heights": [
+   [
+    32,
+    4
+   ],
+   [
+    34,
+    2
+   ],
+   [
+    28,
+    1
+   ]
+  ],
+  "radiusByHeight": {
+   "32": {
+    "n": 4,
+    "radius": [
+     [
+      16,
+      3
+     ],
+     [
+      8,
+      1
+     ]
+    ],
+    "ratio_med": 0.5,
+    "type": [
+     "14px",
+     "24px",
+     "700",
+     "-0.32px"
+    ],
+    "pad": [
+     "2px",
+     "16px"
+    ]
+   },
+   "34": {
+    "n": 2,
+    "radius": [
+     [
+      8,
+      2
+     ]
+    ],
+    "ratio_med": 0.24,
+    "type": [
+     "14px",
+     "20px",
+     "400",
+     "normal"
+    ],
+    "pad": [
+     "6px",
+     "8px"
+    ]
+   }
+  },
+  "textCentre": {
+   "n": 2,
+   "capDy_med": -0.09,
+   "capDy_p10": -0.09,
+   "capDy_p90": -0.09,
+   "lineDy_med": -0.5,
+   "gt_1px": 0
+  },
+  "radiusVocab": {
+   "interactive_distinct": 1,
+   "all_distinct": 3,
+   "pill_share_interactive": 0.43,
+   "top": [
+    [
+     8,
+     12
+    ],
+    [
+     3,
+     1
+    ],
+    [
+     10,
+     1
     ]
    ]
   }
@@ -935,6 +2691,250 @@
    ]
   }
  },
+ "shadcn-home": {
+  "url": "https://ui.shadcn.com",
+  "fonts": [
+   "Geist"
+  ],
+  "svgs": 48,
+  "iconOnly": {
+   "n": 7,
+   "centred_le_0.25": 0.857,
+   "centred_le_0.5": 1.0,
+   "worst": [
+    [
+     0.5,
+     32,
+     16,
+     "button",
+     "group/button inline-flex shrin"
+    ],
+    [
+     0,
+     40,
+     20,
+     "div",
+     "mb-2 [&_svg]:pointer-events-no"
+    ],
+    [
+     0,
+     32,
+     16,
+     "button",
+     "group/button shrink-0 justify-"
+    ],
+    [
+     0,
+     32,
+     16,
+     "button",
+     "group/button inline-flex shrin"
+    ]
+   ],
+   "halfPx": 1,
+   "sizePairs": [
+    [
+     "32/16",
+     3
+    ],
+    [
+     "28/16",
+     2
+    ],
+    [
+     "16/14",
+     1
+    ],
+    [
+     "40/20",
+     1
+    ]
+   ]
+  },
+  "iconText": {
+   "n": 31,
+   "boxDy_le_0.5": 0.968,
+   "lineDy_med": 0,
+   "capDy_med": -0.03,
+   "capDy_p10": -0.03,
+   "capDy_p90": 0.26,
+   "xDy_med": -1.29,
+   "iconToFont_med": 1.14,
+   "gap_mode": [
+    [
+     8,
+     20
+    ],
+    [
+     6,
+     3
+    ],
+    [
+     4,
+     2
+    ],
+    [
+     -97,
+     1
+    ]
+   ],
+   "iconSizes": [
+    [
+     "32h/16i",
+     25
+    ],
+    [
+     "73.25h/16i",
+     2
+    ],
+    [
+     "32h/18i",
+     1
+    ],
+    [
+     "31h/14i",
+     1
+    ],
+    [
+     "22h/12i",
+     1
+    ],
+    [
+     "28h/16i",
+     1
+    ]
+   ]
+  },
+  "ink": {
+   "n": 45,
+   "offcentre_gt_0.5px": 0,
+   "maxAbs": 0.42
+  },
+  "heights": [
+   [
+    32,
+    24
+   ],
+   [
+    28,
+    3
+   ],
+   [
+    31,
+    1
+   ],
+   [
+    35,
+    1
+   ],
+   [
+    36,
+    1
+   ]
+  ],
+  "radiusByHeight": {
+   "28": {
+    "n": 3,
+    "radius": [
+     [
+      14,
+      3
+     ]
+    ],
+    "ratio_med": 0.5,
+    "type": [
+     "14px",
+     "20px",
+     "500",
+     "normal"
+    ],
+    "pad": [
+     "0px",
+     "0px"
+    ]
+   },
+   "32": {
+    "n": 24,
+    "radius": [
+     [
+      16,
+      21
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      10,
+      1
+     ]
+    ],
+    "ratio_med": 0.5,
+    "type": [
+     "14px",
+     "20px",
+     "500",
+     "normal"
+    ],
+    "pad": [
+     "0px",
+     "12px"
+    ]
+   }
+  },
+  "textCentre": {
+   "n": 11,
+   "capDy_med": 0.03,
+   "capDy_p10": 0.03,
+   "capDy_p90": 0.03,
+   "lineDy_med": 0,
+   "gt_1px": 0
+  },
+  "radiusVocab": {
+   "interactive_distinct": 3,
+   "all_distinct": 8,
+   "pill_share_interactive": 0.8,
+   "top": [
+    [
+     0,
+     17
+    ],
+    [
+     18,
+     16
+    ],
+    [
+     10,
+     7
+    ],
+    [
+     24,
+     5
+    ],
+    [
+     22,
+     4
+    ],
+    [
+     14,
+     2
+    ],
+    [
+     8,
+     1
+    ],
+    [
+     5,
+     1
+    ]
+   ]
+  },
+  "nests": {
+   "n": 12,
+   "within_1px": 0.0,
+   "median_abs_err": 12.0
+  }
+ },
  "shadcn": {
   "url": "https://ui.shadcn.com/docs/components/button",
   "fonts": [
@@ -1261,6 +3261,781 @@
      1
     ]
    ]
+  }
+ },
+ "stripe-home": {
+  "url": "https://stripe.com",
+  "fonts": [
+   "sohne-var"
+  ],
+  "svgs": 227,
+  "iconOnly": {
+   "n": 17,
+   "centred_le_0.25": 1.0,
+   "centred_le_0.5": 1.0,
+   "worst": [
+    [
+     0,
+     40,
+     40,
+     "div",
+     "developer-systems-animation__a"
+    ],
+    [
+     0,
+     40,
+     40,
+     "div",
+     "developer-systems-animation__a"
+    ],
+    [
+     0,
+     40,
+     24,
+     "div",
+     "charm-icon"
+    ],
+    [
+     0,
+     40,
+     24,
+     "div",
+     "charm-icon"
+    ]
+   ],
+   "halfPx": 1,
+   "sizePairs": [
+    [
+     "40/24",
+     8
+    ],
+    [
+     "40/16",
+     4
+    ],
+    [
+     "40/40",
+     2
+    ],
+    [
+     "40/19",
+     1
+    ],
+    [
+     "32/20",
+     1
+    ],
+    [
+     "40/12",
+     1
+    ]
+   ]
+  },
+  "iconText": {
+   "n": 47,
+   "boxDy_le_0.5": 0.766,
+   "lineDy_med": 0.91,
+   "capDy_med": 0.24,
+   "capDy_p10": -0.26,
+   "capDy_p90": 0.92,
+   "xDy_med": -0.9,
+   "iconToFont_med": 1.1,
+   "gap_mode": [
+    [
+     5,
+     8
+    ],
+    [
+     8,
+     7
+    ],
+    [
+     24,
+     5
+    ],
+    [
+     4,
+     4
+    ]
+   ],
+   "iconSizes": [
+    [
+     "34h/14i",
+     6
+    ],
+    [
+     "34h/9i",
+     5
+    ],
+    [
+     "34h/11i",
+     5
+    ],
+    [
+     "40h/16i",
+     4
+    ],
+    [
+     "40h/12i",
+     4
+    ],
+    [
+     "65.38h/9i",
+     3
+    ],
+    [
+     "42h/15i",
+     3
+    ],
+    [
+     "65.38h/11i",
+     2
+    ]
+   ]
+  },
+  "ink": {
+   "n": 63,
+   "offcentre_gt_0.5px": 7,
+   "maxAbs": 3.48
+  },
+  "heights": [
+   [
+    48,
+    18
+   ],
+   [
+    40,
+    9
+   ],
+   [
+    38,
+    4
+   ],
+   [
+    32,
+    2
+   ]
+  ],
+  "radiusByHeight": {
+   "32": {
+    "n": 2,
+    "radius": [
+     [
+      4,
+      2
+     ]
+    ],
+    "ratio_med": 0.12,
+    "type": [
+     "16px",
+     "normal",
+     "400",
+     "normal"
+    ],
+    "pad": [
+     "0px",
+     "0px"
+    ]
+   },
+   "38": {
+    "n": 4,
+    "radius": [
+     [
+      4,
+      4
+     ]
+    ],
+    "ratio_med": 0.11,
+    "type": [
+     "16px",
+     "normal",
+     "400",
+     "normal"
+    ],
+    "pad": [
+     "2px",
+     "2px"
+    ]
+   },
+   "40": {
+    "n": 9,
+    "radius": [
+     [
+      4,
+      9
+     ]
+    ],
+    "ratio_med": 0.1,
+    "type": [
+     "16px",
+     "16px",
+     "400",
+     "normal"
+    ],
+    "pad": [
+     "0px",
+     "0px"
+    ]
+   },
+   "48": {
+    "n": 18,
+    "radius": [
+     [
+      4,
+      18
+     ]
+    ],
+    "ratio_med": 0.08,
+    "type": [
+     "16px",
+     "16px",
+     "400",
+     "normal"
+    ],
+    "pad": [
+     "14.5px",
+     "24px"
+    ]
+   }
+  },
+  "textCentre": {
+   "n": 5,
+   "capDy_med": 0.47,
+   "capDy_p10": -0.24,
+   "capDy_p90": 0.57,
+   "lineDy_med": -0.5,
+   "gt_1px": 0
+  },
+  "radiusVocab": {
+   "interactive_distinct": 1,
+   "all_distinct": 5,
+   "pill_share_interactive": 0.0,
+   "top": [
+    [
+     4,
+     90
+    ],
+    [
+     6,
+     31
+    ],
+    [
+     0,
+     6
+    ],
+    [
+     5,
+     2
+    ],
+    [
+     10,
+     1
+    ]
+   ]
+  }
+ },
+ "untitledui-home": {
+  "url": "https://www.untitledui.com",
+  "fonts": [
+   "Inter"
+  ],
+  "svgs": 23,
+  "iconOnly": {
+   "n": 13,
+   "centred_le_0.25": 1.0,
+   "centred_le_0.5": 1.0,
+   "worst": [
+    [
+     0,
+     34,
+     20,
+     "a",
+     "llm_button w-inline-block"
+    ],
+    [
+     0,
+     34,
+     20,
+     "a",
+     "llm_button w-inline-block"
+    ],
+    [
+     0,
+     34,
+     20,
+     "a",
+     "llm_button w-inline-block"
+    ],
+    [
+     0,
+     34,
+     20,
+     "a",
+     "llm_button w-inline-block"
+    ]
+   ],
+   "halfPx": 0,
+   "sizePairs": [
+    [
+     "32/20",
+     8
+    ],
+    [
+     "34/20",
+     5
+    ]
+   ]
+  },
+  "iconText": {
+   "n": 4,
+   "boxDy_le_0.5": 1.0,
+   "lineDy_med": 0.0,
+   "capDy_med": -0.18,
+   "capDy_p10": -0.41,
+   "capDy_p90": -0.18,
+   "xDy_med": -1.63,
+   "iconToFont_med": 1.25,
+   "gap_mode": [
+    [
+     6,
+     4
+    ]
+   ],
+   "iconSizes": [
+    [
+     "46h/20i",
+     3
+    ],
+    [
+     "21h/20i",
+     1
+    ]
+   ]
+  },
+  "ink": {
+   "n": 17,
+   "offcentre_gt_0.5px": 0,
+   "maxAbs": 0.46
+  },
+  "heights": [
+   [
+    46,
+    30
+   ],
+   [
+    34,
+    5
+   ],
+   [
+    39,
+    3
+   ]
+  ],
+  "radiusByHeight": {
+   "34": {
+    "n": 5,
+    "radius": [
+     [
+      8,
+      5
+     ]
+    ],
+    "ratio_med": 0.24,
+    "type": [
+     "16px",
+     "24px",
+     "400",
+     "normal"
+    ],
+    "pad": [
+     "6px",
+     "6px"
+    ]
+   },
+   "39": {
+    "n": 3,
+    "radius": [
+     [
+      8,
+      3
+     ]
+    ],
+    "ratio_med": 0.21,
+    "type": [
+     "14px",
+     "21px",
+     "600",
+     "normal"
+    ],
+    "pad": [
+     "8px",
+     "14px"
+    ]
+   },
+   "46": {
+    "n": 30,
+    "radius": [
+     [
+      8,
+      30
+     ]
+    ],
+    "ratio_med": 0.17,
+    "type": [
+     "16px",
+     "24px",
+     "600",
+     "normal"
+    ],
+    "pad": [
+     "10px",
+     "16px"
+    ]
+   }
+  },
+  "textCentre": {
+   "n": 30,
+   "capDy_med": 0.18,
+   "capDy_p10": 0.18,
+   "capDy_p90": 0.18,
+   "lineDy_med": 0.0,
+   "gt_1px": 0
+  },
+  "radiusVocab": {
+   "interactive_distinct": 3,
+   "all_distinct": 6,
+   "pill_share_interactive": 0.0,
+   "top": [
+    [
+     16,
+     47
+    ],
+    [
+     8,
+     45
+    ],
+    [
+     6,
+     33
+    ],
+    [
+     12,
+     23
+    ],
+    [
+     4,
+     15
+    ],
+    [
+     13,
+     3
+    ]
+   ]
+  },
+  "nests": {
+   "n": 29,
+   "within_1px": 0.897,
+   "median_abs_err": 0
+  }
+ },
+ "untitledui-react": {
+  "url": "https://www.untitledui.com/react/components/buttons",
+  "fonts": [
+   "Inter"
+  ],
+  "svgs": 161,
+  "iconOnly": {
+   "n": 50,
+   "centred_le_0.25": 1.0,
+   "centred_le_0.5": 1.0,
+   "worst": [
+    [
+     0,
+     48,
+     20,
+     "button",
+     "group relative inline-flex h-m"
+    ],
+    [
+     0,
+     48,
+     20,
+     "button",
+     "group relative inline-flex h-m"
+    ],
+    [
+     0,
+     48,
+     20,
+     "button",
+     "group relative inline-flex h-m"
+    ],
+    [
+     0,
+     44,
+     20,
+     "button",
+     "group relative inline-flex h-m"
+    ]
+   ],
+   "halfPx": 0,
+   "sizePairs": [
+    [
+     "28/16",
+     35
+    ],
+    [
+     "32/16",
+     3
+    ],
+    [
+     "36/20",
+     3
+    ],
+    [
+     "40/20",
+     3
+    ],
+    [
+     "44/20",
+     3
+    ],
+    [
+     "48/20",
+     3
+    ]
+   ]
+  },
+  "iconText": {
+   "n": 88,
+   "boxDy_le_0.5": 0.909,
+   "lineDy_med": 0.5,
+   "capDy_med": 0.09,
+   "capDy_p10": -0.18,
+   "capDy_p90": 0.37,
+   "xDy_med": -1.18,
+   "iconToFont_med": 1.25,
+   "gap_mode": [
+    [
+     6,
+     46
+    ],
+    [
+     8,
+     18
+    ],
+    [
+     3,
+     6
+    ],
+    [
+     82,
+     1
+    ]
+   ],
+   "iconSizes": [
+    [
+     "32h/16i",
+     25
+    ],
+    [
+     "40h/20i",
+     12
+    ],
+    [
+     "36h/20i",
+     9
+    ],
+    [
+     "44h/20i",
+     9
+    ],
+    [
+     "48h/20i",
+     9
+    ],
+    [
+     "30h/12i",
+     8
+    ],
+    [
+     "32h/27.17i",
+     3
+    ],
+    [
+     "22h/14i",
+     3
+    ]
+   ]
+  },
+  "ink": {
+   "n": 139,
+   "offcentre_gt_0.5px": 5,
+   "maxAbs": 0.76
+  },
+  "heights": [
+   [
+    40,
+    18
+   ],
+   [
+    32,
+    16
+   ],
+   [
+    36,
+    15
+   ],
+   [
+    44,
+    15
+   ],
+   [
+    48,
+    15
+   ]
+  ],
+  "radiusByHeight": {
+   "32": {
+    "n": 16,
+    "radius": [
+     [
+      8,
+      15
+     ],
+     [
+      6,
+      1
+     ]
+    ],
+    "ratio_med": 0.25,
+    "type": [
+     "14px",
+     "20px",
+     "600",
+     "normal"
+    ],
+    "pad": [
+     "6px",
+     "10px"
+    ]
+   },
+   "36": {
+    "n": 15,
+    "radius": [
+     [
+      8,
+      15
+     ]
+    ],
+    "ratio_med": 0.22,
+    "type": [
+     "14px",
+     "20px",
+     "600",
+     "normal"
+    ],
+    "pad": [
+     "8px",
+     "12px"
+    ]
+   },
+   "40": {
+    "n": 18,
+    "radius": [
+     [
+      8,
+      18
+     ]
+    ],
+    "ratio_med": 0.2,
+    "type": [
+     "14px",
+     "20px",
+     "600",
+     "normal"
+    ],
+    "pad": [
+     "10px",
+     "14px"
+    ]
+   },
+   "44": {
+    "n": 15,
+    "radius": [
+     [
+      8,
+      15
+     ]
+    ],
+    "ratio_med": 0.18,
+    "type": [
+     "16px",
+     "24px",
+     "600",
+     "normal"
+    ],
+    "pad": [
+     "10px",
+     "16px"
+    ]
+   },
+   "48": {
+    "n": 15,
+    "radius": [
+     [
+      8,
+      15
+     ]
+    ],
+    "ratio_med": 0.17,
+    "type": [
+     "16px",
+     "24px",
+     "600",
+     "normal"
+    ],
+    "pad": [
+     "12px",
+     "18px"
+    ]
+   }
+  },
+  "textCentre": {
+   "n": 32,
+   "capDy_med": -0.09,
+   "capDy_p10": -0.09,
+   "capDy_p90": 0.18,
+   "lineDy_med": -0.5,
+   "gt_1px": 0
+  },
+  "radiusVocab": {
+   "interactive_distinct": 2,
+   "all_distinct": 4,
+   "pill_share_interactive": 0.0,
+   "top": [
+    [
+     6,
+     198
+    ],
+    [
+     8,
+     110
+    ],
+    [
+     20,
+     10
+    ],
+    [
+     12,
+     1
+    ]
+   ]
+  },
+  "nests": {
+   "n": 1,
+   "within_1px": 1.0,
+   "median_abs_err": 0
   }
  },
  "vercel-geist-docs": {
