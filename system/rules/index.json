@@ -43913,7 +43913,7 @@
  {
   "id": "web.type-hierarchy-buttons-shadows#2",
   "text": "Desktop H1:lede size ratio 3.0-5.3 (modal 3.6-4.4); never below 2.4.",
-  "why": "Measured: Linear 4.3, Raycast 3.6, Resend 5.3, Attio 3.6, AlignUI 4.4, Kargul 3.25, Stripe 3.0, Untitled UI 2.4 (the floor, rescued by weight 600 vs 400).",
+  "why": "Measured: Linear 4.3, Raycast 3.6, Resend 5.3, Attio 3.6, AlignUI 4.4, Kargul 3.25, Stripe 3.0 (against its 16px sub text), Untitled UI 2.4 (the floor, rescued by weight 600 vs 400).",
   "applies": "landing page.",
   "check": "h1 font-size / hero lede font-size at 1440.",
   "checkable": true,
@@ -44092,7 +44092,7 @@
  },
  {
   "id": "web.type-hierarchy-buttons-shadows#7",
-  "text": "Eyebrow/label type is either mono 12-14px at tracking 0 (Linear Berkeley Mono 12, Vercel Geist Mono 14, Stripe Source Code Pro 12) or sans caps 11-12px at +0.06 to +0.12em (Raycast 12px/600/+0.12em), in the secondary tone, 6-16px above the heading.",
+  "text": "Eyebrow/label type is either mono 12-14px at tracking 0 (Linear Berkeley Mono 12, Vercel Geist Mono 14, Stripe Source Code Pro 12) or sans caps 11-12px at +0.06 to +0.12em (Raycast 12px/500/+0.12em), in the secondary tone, 6-16px above the heading.",
   "why": "Measured eyebrow gaps are 5-24px (Raycast 5, Untitled UI 6, AlignUI 6-16, Attio 5-24); mono needs no tracking, caps do (Butterick: 5-12%).",
   "applies": "landing page.",
   "check": "eyebrow font-size 11-14, caps letter-spacing 0.05-0.12em, gap to heading 6-24px.",
@@ -44164,7 +44164,7 @@
  },
  {
   "id": "web.type-hierarchy-buttons-shadows#9",
-  "text": "Set heading tracking from the fitted curve `tracking_em = -0.0173 * ln(size_px / 15.3)`, clamped to [-0.06, 0]: 20px -0.005, 24px -0.008, 32px -0.013, 40px -0.017, 48px -0.020, 56px -0.023, 64px -0.025, 72px -0.027, 80px -0.029, 96px -0.032. In CSS: `letter-spacing: calc(-0.0173 * log(var(--fs) / 15.3) * 1em)` with `--fs` a unitless px number.",
+  "text": "Set heading tracking from the fitted curve `tracking_em = -0.0173 * ln(size_px / 15.3)`, clamped to [-0.06, 0]: 20px -0.005, 24px -0.008, 32px -0.013, 40px -0.017, 48px -0.020, 56px -0.023, 64px -0.025, 72px -0.027, 80px -0.029, 96px -0.032. In CSS: `letter-spacing: calc(-0.0173 * log(var(--fs) / 15.3) * 1em)` with `--fs` a unitless px number (CSS `log()` is an exponential function; verify support on caniuse, or paste the table values).",
   "why": "The fit (n=42 headings 18-96px, 11 sites) reproduces Linear (-0.022 at 64), Stripe (-0.02 at 48), Attio (-0.02 at 64) and Apple (-0.015 at 80) within 0.01em; tracking that jumps by role (0, -0.02, -0.04) visibly steps between adjacent sizes.",
   "applies": "all.",
   "check": "per heading `letterSpacing / fontSize` within +-0.008em of the curve (or of the chosen dial below).",
@@ -44380,12 +44380,12 @@
  },
  {
   "id": "web.type-hierarchy-buttons-shadows#15",
-  "text": "Give the face an identity with 1-3 OpenType alternates set on headings, not just the family: Linear `cv01, ss03`; Vercel `ss11` with `calt 0`; Stripe `ss01`; Raycast `ss02, ss08`; Resend `ss01, ss04, ss05, ss11`; Kargul `salt`.",
-  "why": "6 of 11 measured H1s set `font-feature-settings`; it makes the same font read as authored. Check the face actually has the feature before shipping.",
+  "text": "Give the face an identity with 1-3 OpenType alternates set on headings, not just the family: Linear `cv01, ss03`; Vercel `ss11` with `calt 0`; Stripe `ss01`; Raycast `ss02, ss08`; Resend `ss01, ss04, ss05, ss11`; Attio `ss03`; Kargul `salt`.",
+  "why": "7 of 11 measured H1s set a stylistic set or alternate (AlignUI sets only `calt`; Clerk, Untitled UI and Apple set none); it makes the same font read as authored. Check the face actually has the feature before shipping.",
   "applies": "landing page.",
   "check": "h1 computed `font-feature-settings` != normal and each tag exists in the loaded font (no-op otherwise).",
   "checkable": true,
-  "source": "six sites [M]",
+  "source": "seven sites [M]",
   "file": "web/type-hierarchy-buttons-shadows.md",
   "section": "2.2 Tracking and leading as functions of size",
   "tags": [
@@ -45064,10 +45064,10 @@
  },
  {
   "id": "web.type-hierarchy-buttons-shadows#34",
-  "text": "Use mono as a label texture at 0.85-0.9x the sans size (12px beside 14-15px, 14px beside 16px), tracking 0, regular weight, optional caps; never in the headline.",
-  "why": "Berkeley Mono 12 (Linear), Geist Mono 14 (Vercel), Source Code Pro 12 (Stripe) all sit at that ratio; mono at the same size looks one step too big.",
+  "text": "Use mono as a label texture at 0.75-0.93x the sans size (12px beside 14-16px, 14px beside 16px, Geist 13 beside 14), tracking 0, regular weight, optional caps; never in the headline.",
+  "why": "Berkeley Mono 12 (Linear), Geist Mono 14 (Vercel), Source Code Pro 12 (Stripe) sit in that range (0.75-0.88); mono at the same size looks one step too big.",
   "applies": "landing page.",
-  "check": "mono font-size / adjacent sans font-size in [0.8, 0.95].",
+  "check": "mono font-size / adjacent sans font-size in [0.75, 0.93].",
   "checkable": true,
   "source": "Linear, Vercel, Stripe [M]",
   "file": "web/type-hierarchy-buttons-shadows.md",
@@ -45136,7 +45136,7 @@
  },
  {
   "id": "web.type-hierarchy-buttons-shadows#36",
-  "text": "Hero CTA height 44-54px (median ~46), nav button 32-40px, in-product button 24-32px; nav and hero buttons on one page differ by at least one ladder step.",
+  "text": "Hero CTA height 44-54px (median ~45), nav button 32-40px, in-product button 24-32px; nav and hero buttons on one page differ by at least one ladder step.",
   "why": "The hero action needs its own larger grammar so the eye knows it is the real one (product-ui-in-marketing 28/8 stays inside the frame).",
   "applies": "landing page.",
   "check": "hero CTA height >= nav button height + 4.",
@@ -45244,10 +45244,10 @@
  },
  {
   "id": "web.type-hierarchy-buttons-shadows#39",
-  "text": "Radius is 0.19-0.33x the height or a full pill: Geist 6/32 and 8/40 (0.19-0.20), Untitled UI 8/46, Raycast 8/36 (0.22), coss 10/32 (0.31), Attio 10/36 (0.28), AlignUI 13/44 (0.30), Resend 16/48 (0.33), pill at Linear, Vercel hero, Kargul, Apple (980px); 4px only for the Stripe utility register. Match the product card radius (founder).",
+  "text": "Radius is 0.17-0.33x the height or a full pill: Geist 6/32 and 8/40 (0.19-0.20), Untitled UI 8/46 (0.17), Raycast 8/36 (0.22), coss 10/32 (0.31), Attio 10/36 (0.28), AlignUI 13/44 (0.30), Resend 16/48 (0.33), pill at Linear, Vercel hero, Kargul, Apple (980px); 4px only for the Stripe utility register. Match the product card radius (founder).",
   "why": "Mixed radii across nav, hero and cards read as unplanned; Stripe's 4px belongs to a flat finance voice. Inner highlights use `radius - 1px` (coss `before:rounded-[calc(var(--radius-lg)-1px)]`).",
   "applies": "all.",
-  "check": "radius / height in [0.19, 0.5] or >= 999px; same radius family across nav, hero, form controls.",
+  "check": "radius / height in [0.17, 0.5] or >= 999px; same radius family across nav, hero, form controls.",
   "checkable": true,
   "source": "twelve sites [M]; coss [P]",
   "file": "web/type-hierarchy-buttons-shadows.md",
@@ -45280,7 +45280,7 @@
  },
  {
   "id": "web.type-hierarchy-buttons-shadows#40",
-  "text": "Icons: 16px in 32-40px buttons (14 in 24-28), 18-20px in 44-54px, gap 6-8px, trailing chevron/arrow for navigation actions (Stripe 5x8 chevron, 8px gap), icon side 1-2px less padding than the text side, icon opacity 0.8 (coss).",
+  "text": "Icons: 16px in 32-40px buttons (14 in 24-28), 18-20px in 44-54px, gap 6-8px, trailing chevron/arrow for navigation actions and no decorative leading icon on hero secondary buttons (founder) (Stripe 5x8 chevron, 8px gap), icon side 1-2px less padding than the text side, icon opacity 0.8 (coss).",
   "why": "Icon:label is 1.0-1.25 (16/14); coss uses `[&_svg]:-mx-0.5` and opacity 80% so icons sit quieter than the label.",
   "applies": "all.",
   "check": "svg size in {14, 16, 18, 20}; icon width / label font-size in [1.0, 1.4].",
@@ -45388,7 +45388,7 @@
  },
  {
   "id": "web.type-hierarchy-buttons-shadows#43",
-  "text": "Secondary = surface fill with a 1px ring from the shadow stack (`0 0 0 1px rgb(ink / .08)` light, `rgb(255 255 255 / .14)` dark), not a border: Vercel/Geist `box-shadow: 0 0 0 1px rgb(0 0 0/.08)` on white, `#0a0a0a` + `rgb(255 255 255/.145)` in dark; or a tinted fill of ink at 0.05 (Linear dark).",
+  "text": "Secondary = surface fill with a 1px ring from the shadow stack (`0 0 0 1px rgb(ink / .08)` light, `rgb(255 255 255 / .14)` dark), not a border: Vercel buttons `box-shadow: 0 0 0 1px #ebebeb` on white (dark: `#0a0a0a` fill + `0 0 0 1px #2e2e2e`), Geist material rings `rgb(0 0 0/.08)` light and `rgb(255 255 255/.145)` dark; or a tinted fill of ink at 0.05 (Linear dark).",
   "why": "A ring adds no layout size, follows radius, and animates; Geist, Linear, AlignUI, Untitled UI and Clerk all use ring-in-shadow on controls. Add `outline: 1px solid transparent` so it survives forced-colors (color-and-surfaces G).",
   "applies": "all.",
   "check": "secondary button `border-width: 0` with a 1px spread-0 layer in box-shadow, or border colour alpha <= 0.12.",
@@ -45497,7 +45497,7 @@
  {
   "id": "web.type-hierarchy-buttons-shadows#46",
   "text": "Hover is a fill step, never a lift: ink on light darkens toward the surface by 7-14% (Vercel #171717 -> #383838 = 14% toward white; AlignUI #2e2e2e -> #3d3d3d = 7%), light button on dark goes to full white (Linear #e5e5e6 -> #fff), brand fills go 15-22% darker (Stripe #533afd -> #4032c8, Untitled UI #7f56d9 -> #6941c6), Tailwind-style fills use `bg-primary/90` (coss).",
-  "why": "0 of 11 measured sites translate a button on hover; Kaching and the founder forbid lift. Fill steps are readable on touch emulation, lifts are not.",
+  "why": "0 of 68 measured hover states translate or scale a button; Kaching and the founder forbid lift. Fill steps are readable on touch emulation, lifts are not.",
   "applies": "all.",
   "check": "hover computed `transform` = none; hover background lightness delta 0.04-0.12 (OKLCH L).",
   "checkable": true,
@@ -45677,7 +45677,7 @@
  {
   "id": "web.type-hierarchy-buttons-shadows#51",
   "text": "Transition only the properties that change, 150-200ms ease-out for colour/shadow (Linear 160ms `cubic-bezier(.25,.46,.45,.94)`, Vercel 150ms `(.4,0,.2,1)`, AlignUI 200ms `(0,0,.2,1)`, Resend 200ms) and up to 300ms for brand-style fills (Stripe 300ms `(.25,1,.5,1)`, Attio 300ms `(.2,0,0,1)`, Kargul 300ms `(.76,0,.24,1)`); ban `transition: all` on controls.",
-  "why": "Vercel, Resend and Raycast ship `all` on primary CTAs and it animates layout-affecting properties by accident; Apple ships 0s on its pills, which is also valid. Emil Kowalski: UI animation under 300ms, ease-out.",
+  "why": "Vercel and Resend ship `all` on primary CTAs (and a Raycast pill does too), which animates properties by accident; Apple ships 0s on its pills, which is also valid. Emil Kowalski: UI animation under 300ms, ease-out.",
   "applies": "all.",
   "check": "computed `transition-property` not `all`; duration <= 300ms.",
   "checkable": true,

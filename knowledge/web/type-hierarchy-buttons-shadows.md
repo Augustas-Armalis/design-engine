@@ -21,8 +21,8 @@ Evidence tags: **[M]** measured by me with Playwright on the live page (computed
 4. **Leading falls with size in three bands**: 1.2-1.35 for 18-24px titles, 1.1-1.2 for 28-44px, 0.95-1.1 for 48px and up (modal 1.0 at 56-72px). Text and lede stay 1.5-1.6. [M]
 5. **Spacing is proximity ratio first, pixel value second.** Gap above a heading is 4x or more the gap below it at section level (Resend 96 above vs 8-12 below). h1->lede gap is 0.3-0.55x the H1 size; card title->description is 4-8px. Section padding median is 121px (IQR 96-153). [M]
 6. **Three text tones are a system.** Primary 15-20:1, secondary 6-9:1, tertiary 3.4-5:1. Apple does it with one ink at three alphas (0.88 / 0.72 / 0.56 = 15.4 / 8.9 / 4.8:1); Raycast does it with white at 1 / 0.6 / 0.4. [M]
-7. **Button anatomy is more regular than button style.** Padding-x is 0.35-0.5x the height, the label is 0.33-0.40x the height at weight 500-600, radius is 0.19-0.33x the height or a full pill. Style (fill, ring, gradient, depth) is where brands differ. [M]
-8. **State design is small and consistent.** 0 of 11 sites lift a button on hover. Hover is a fill step (7-14% toward the surface for ink, 15-22% darker for a brand fill, or alpha +3-5 points for ghost/secondary); press is scale 0.97-0.98 or the hover colour; focus is a 2-3px ring offset 1-3px. Durations are 150-300ms, ease-out family. Apple.com sets 0s on its pill buttons. [M]
+7. **Button anatomy is more regular than button style.** Padding-x is 0.35-0.5x the height, the label is 0.33-0.40x the height at weight 500-600, radius is 0.17-0.33x the height or a full pill. Style (fill, ring, gradient, depth) is where brands differ. [M]
+8. **State design is small and consistent.** 0 of 68 measured hover states (12 pages, light and dark) translate or scale a button. Hover is a fill step (7-14% toward the surface for ink, 15-22% darker for a brand fill, or alpha +3-5 points for ghost/secondary); press is scale 0.97-0.98 or the hover colour; focus is a 2-3px ring offset 1-3px. Durations are 150-300ms, ease-out family. Apple.com sets 0s on its pill buttons. [M]
 9. **Depth is built from a ring, an inner highlight and 1-3 soft layers, not one blurry shadow.** Measured card stacks run 1-8 layers; per-layer alpha is 0.01-0.08 on light surfaces. Dark mode swaps the shadow for a white ring (0.03-0.145) plus a 1px top highlight (0.04-0.10) and raises black alphas to 0.25-0.6. [M][P]
 10. **Two shipped voices use no shadow at all**: Apple.com and kargul.studio have 0 `box-shadow` on controls and cards. Flat is valid; it then needs fill steps and radius to do the work. [M]
 11. **Fonts are 30% of a type voice.** A voice is family + weight + tracking dial + leading band + case/mono labels + button label style. Switching only the family on the same settings is the "same grotesk everywhere" failure the founder called out. [E]
@@ -38,7 +38,7 @@ Format per `SCHEMA.md`. Numbers come from section 3 tables.
   **Applies to** all. **Check** for each adjacent pair compute font-size ratio, weight delta, contrast ratio of the two colours against their backgrounds; >= 2 levers pass. **Source** Linear, Apple, Resend, Attio [M]
 
 - **RULE** Desktop H1:lede size ratio 3.0-5.3 (modal 3.6-4.4); never below 2.4.
-  **Why** Measured: Linear 4.3, Raycast 3.6, Resend 5.3, Attio 3.6, AlignUI 4.4, Kargul 3.25, Stripe 3.0, Untitled UI 2.4 (the floor, rescued by weight 600 vs 400).
+  **Why** Measured: Linear 4.3, Raycast 3.6, Resend 5.3, Attio 3.6, AlignUI 4.4, Kargul 3.25, Stripe 3.0 (against its 16px sub text), Untitled UI 2.4 (the floor, rescued by weight 600 vs 400).
   **Applies to** landing page. **Check** h1 font-size / hero lede font-size at 1440. **Source** Linear, Raycast, Resend, Attio, AlignUI, Kargul, Stripe, Untitled UI [M]
 
 - **RULE** Desktop H1:H2 ratio 1.3-1.7 (median 1.5); a section H2 is 40-56px when the H1 is 64-80px.
@@ -57,7 +57,7 @@ Format per `SCHEMA.md`. Numbers come from section 3 tables.
   **Why** Alpha tones stay on-hue over tinted surfaces and cannot drift. Three shipped dark pages let tertiary fall to 2.9-3.75:1 (Linear 3.44, Raycast 3.75, Attio 2.88 at 10-15px), which fails AA; do not copy that.
   **Applies to** all. **Check** contrast of every text colour on its background: tier 1 >= 15, tier 2 6-9.5, tier 3 >= 4.5; <= 3 distinct tones for body copy. **Source** Apple.com, Raycast, Linear, Attio [M]; WCAG 1.4.3
 
-- **RULE** Eyebrow/label type is either mono 12-14px at tracking 0 (Linear Berkeley Mono 12, Vercel Geist Mono 14, Stripe Source Code Pro 12) or sans caps 11-12px at +0.06 to +0.12em (Raycast 12px/600/+0.12em), in the secondary tone, 6-16px above the heading.
+- **RULE** Eyebrow/label type is either mono 12-14px at tracking 0 (Linear Berkeley Mono 12, Vercel Geist Mono 14, Stripe Source Code Pro 12) or sans caps 11-12px at +0.06 to +0.12em (Raycast 12px/500/+0.12em), in the secondary tone, 6-16px above the heading.
   **Why** Measured eyebrow gaps are 5-24px (Raycast 5, Untitled UI 6, AlignUI 6-16, Attio 5-24); mono needs no tracking, caps do (Butterick: 5-12%).
   **Applies to** landing page. **Check** eyebrow font-size 11-14, caps letter-spacing 0.05-0.12em, gap to heading 6-24px. **Source** Linear, Vercel, Stripe, Raycast [M]; practicaltypography.com/letterspacing [P]
 
@@ -67,7 +67,7 @@ Format per `SCHEMA.md`. Numbers come from section 3 tables.
 
 ### 2.2 Tracking and leading as functions of size
 
-- **RULE** Set heading tracking from the fitted curve `tracking_em = -0.0173 * ln(size_px / 15.3)`, clamped to [-0.06, 0]: 20px -0.005, 24px -0.008, 32px -0.013, 40px -0.017, 48px -0.020, 56px -0.023, 64px -0.025, 72px -0.027, 80px -0.029, 96px -0.032. In CSS: `letter-spacing: calc(-0.0173 * log(var(--fs) / 15.3) * 1em)` with `--fs` a unitless px number.
+- **RULE** Set heading tracking from the fitted curve `tracking_em = -0.0173 * ln(size_px / 15.3)`, clamped to [-0.06, 0]: 20px -0.005, 24px -0.008, 32px -0.013, 40px -0.017, 48px -0.020, 56px -0.023, 64px -0.025, 72px -0.027, 80px -0.029, 96px -0.032. In CSS: `letter-spacing: calc(-0.0173 * log(var(--fs) / 15.3) * 1em)` with `--fs` a unitless px number (CSS `log()` is an exponential function; verify support on caniuse, or paste the table values).
   **Why** The fit (n=42 headings 18-96px, 11 sites) reproduces Linear (-0.022 at 64), Stripe (-0.02 at 48), Attio (-0.02 at 64) and Apple (-0.015 at 80) within 0.01em; tracking that jumps by role (0, -0.02, -0.04) visibly steps between adjacent sizes.
   **Applies to** all. **Check** per heading `letterSpacing / fontSize` within +-0.008em of the curve (or of the chosen dial below). **Source** fit on 11 sites [M]
 
@@ -91,9 +91,9 @@ Format per `SCHEMA.md`. Numbers come from section 3 tables.
   **Why** Attio (64px/0.95) and Linear/Vercel/Resend (1.0) get away with it because the box is unclipped; a word-by-word mask crops descenders at 1.0.
   **Applies to** landing page. **Check** h1/h2 with lineHeight/fontSize < 1.05 and an `overflow: hidden|clip` ancestor within 2 levels = fail. **Source** Attio, Linear [M]; [E]
 
-- **RULE** Give the face an identity with 1-3 OpenType alternates set on headings, not just the family: Linear `cv01, ss03`; Vercel `ss11` with `calt 0`; Stripe `ss01`; Raycast `ss02, ss08`; Resend `ss01, ss04, ss05, ss11`; Kargul `salt`.
-  **Why** 6 of 11 measured H1s set `font-feature-settings`; it makes the same font read as authored. Check the face actually has the feature before shipping.
-  **Applies to** landing page. **Check** h1 computed `font-feature-settings` != normal and each tag exists in the loaded font (no-op otherwise). **Source** six sites [M]
+- **RULE** Give the face an identity with 1-3 OpenType alternates set on headings, not just the family: Linear `cv01, ss03`; Vercel `ss11` with `calt 0`; Stripe `ss01`; Raycast `ss02, ss08`; Resend `ss01, ss04, ss05, ss11`; Attio `ss03`; Kargul `salt`.
+  **Why** 7 of 11 measured H1s set a stylistic set or alternate (AlignUI sets only `calt`; Clerk, Untitled UI and Apple set none); it makes the same font read as authored. Check the face actually has the feature before shipping.
+  **Applies to** landing page. **Check** h1 computed `font-feature-settings` != normal and each tag exists in the loaded font (no-op otherwise). **Source** seven sites [M]
 
 ### 2.3 Measure and line length
 
@@ -175,9 +175,9 @@ Format per `SCHEMA.md`. Numbers come from section 3 tables.
   **Why** The founder's favourite look is this register; the variation between the two sites is tracking dial and leading, not family.
   **Applies to** landing page | SaaS app UI. **Check** tuple within one dial of either exemplar. **Source** AlignUI, Untitled UI [M]; founder-taste
 
-- **RULE** Use mono as a label texture at 0.85-0.9x the sans size (12px beside 14-15px, 14px beside 16px), tracking 0, regular weight, optional caps; never in the headline.
-  **Why** Berkeley Mono 12 (Linear), Geist Mono 14 (Vercel), Source Code Pro 12 (Stripe) all sit at that ratio; mono at the same size looks one step too big.
-  **Applies to** landing page. **Check** mono font-size / adjacent sans font-size in [0.8, 0.95]. **Source** Linear, Vercel, Stripe [M]
+- **RULE** Use mono as a label texture at 0.75-0.93x the sans size (12px beside 14-16px, 14px beside 16px, Geist 13 beside 14), tracking 0, regular weight, optional caps; never in the headline.
+  **Why** Berkeley Mono 12 (Linear), Geist Mono 14 (Vercel), Source Code Pro 12 (Stripe) sit in that range (0.75-0.88); mono at the same size looks one step too big.
+  **Applies to** landing page. **Check** mono font-size / adjacent sans font-size in [0.75, 0.93]. **Source** Linear, Vercel, Stripe [M]
 
 ### 2.7 Button anatomy
 
@@ -185,7 +185,7 @@ Format per `SCHEMA.md`. Numbers come from section 3 tables.
   **Why** Measured heights: nav 32-40 (Linear 32, Vercel 32, Raycast 36, Attio 36, Stripe 40), hero 40-54 (Vercel 40, Linear 44, AlignUI 44, Apple 44, Untitled UI 46, Stripe 48, Resend 48, Kargul 54), in-app 24-32.
   **Applies to** all. **Check** button heights in the ladder +-0.5px; adjacent controls in a row equal height. **Source** twelve sites [M]; coss, Geist [P]
 
-- **RULE** Hero CTA height 44-54px (median ~46), nav button 32-40px, in-product button 24-32px; nav and hero buttons on one page differ by at least one ladder step.
+- **RULE** Hero CTA height 44-54px (median ~45), nav button 32-40px, in-product button 24-32px; nav and hero buttons on one page differ by at least one ladder step.
   **Why** The hero action needs its own larger grammar so the eye knows it is the real one (product-ui-in-marketing 28/8 stays inside the frame).
   **Applies to** landing page. **Check** hero CTA height >= nav button height + 4. **Source** Linear, Vercel, Stripe, Kargul [M]
 
@@ -197,11 +197,11 @@ Format per `SCHEMA.md`. Numbers come from section 3 tables.
   **Why** Buttons are read as shapes first; 500 is the floor for 14px on a filled ground. Geist's Title Case is Vercel's house style and the founder's is sentence case.
   **Applies to** all. **Check** label fontWeight >= 500 (except SF), word count <= 3. **Source** twelve sites [M]; Geist button best practices [P]
 
-- **RULE** Radius is 0.19-0.33x the height or a full pill: Geist 6/32 and 8/40 (0.19-0.20), Untitled UI 8/46, Raycast 8/36 (0.22), coss 10/32 (0.31), Attio 10/36 (0.28), AlignUI 13/44 (0.30), Resend 16/48 (0.33), pill at Linear, Vercel hero, Kargul, Apple (980px); 4px only for the Stripe utility register. Match the product card radius (founder).
+- **RULE** Radius is 0.17-0.33x the height or a full pill: Geist 6/32 and 8/40 (0.19-0.20), Untitled UI 8/46 (0.17), Raycast 8/36 (0.22), coss 10/32 (0.31), Attio 10/36 (0.28), AlignUI 13/44 (0.30), Resend 16/48 (0.33), pill at Linear, Vercel hero, Kargul, Apple (980px); 4px only for the Stripe utility register. Match the product card radius (founder).
   **Why** Mixed radii across nav, hero and cards read as unplanned; Stripe's 4px belongs to a flat finance voice. Inner highlights use `radius - 1px` (coss `before:rounded-[calc(var(--radius-lg)-1px)]`).
-  **Applies to** all. **Check** radius / height in [0.19, 0.5] or >= 999px; same radius family across nav, hero, form controls. **Source** twelve sites [M]; coss [P]
+  **Applies to** all. **Check** radius / height in [0.17, 0.5] or >= 999px; same radius family across nav, hero, form controls. **Source** twelve sites [M]; coss [P]
 
-- **RULE** Icons: 16px in 32-40px buttons (14 in 24-28), 18-20px in 44-54px, gap 6-8px, trailing chevron/arrow for navigation actions (Stripe 5x8 chevron, 8px gap), icon side 1-2px less padding than the text side, icon opacity 0.8 (coss).
+- **RULE** Icons: 16px in 32-40px buttons (14 in 24-28), 18-20px in 44-54px, gap 6-8px, trailing chevron/arrow for navigation actions and no decorative leading icon on hero secondary buttons (founder) (Stripe 5x8 chevron, 8px gap), icon side 1-2px less padding than the text side, icon opacity 0.8 (coss).
   **Why** Icon:label is 1.0-1.25 (16/14); coss uses `[&_svg]:-mx-0.5` and opacity 80% so icons sit quieter than the label.
   **Applies to** all. **Check** svg size in {14, 16, 18, 20}; icon width / label font-size in [1.0, 1.4]. **Source** coss [P]; Stripe, Raycast, AlignUI [M]
 
@@ -215,7 +215,7 @@ Format per `SCHEMA.md`. Numbers come from section 3 tables.
   **Why** Brand fills clustered near the 4.5 floor; one shade lighter fails. Deepen the fill, do not switch the label to dark (founder badge rule).
   **Applies to** all. **Check** contrast(label, fill) >= 4.5. **Source** Stripe, Untitled UI, Apple, Geist [M]
 
-- **RULE** Secondary = surface fill with a 1px ring from the shadow stack (`0 0 0 1px rgb(ink / .08)` light, `rgb(255 255 255 / .14)` dark), not a border: Vercel/Geist `box-shadow: 0 0 0 1px rgb(0 0 0/.08)` on white, `#0a0a0a` + `rgb(255 255 255/.145)` in dark; or a tinted fill of ink at 0.05 (Linear dark).
+- **RULE** Secondary = surface fill with a 1px ring from the shadow stack (`0 0 0 1px rgb(ink / .08)` light, `rgb(255 255 255 / .14)` dark), not a border: Vercel buttons `box-shadow: 0 0 0 1px #ebebeb` on white (dark: `#0a0a0a` fill + `0 0 0 1px #2e2e2e`), Geist material rings `rgb(0 0 0/.08)` light and `rgb(255 255 255/.145)` dark; or a tinted fill of ink at 0.05 (Linear dark).
   **Why** A ring adds no layout size, follows radius, and animates; Geist, Linear, AlignUI, Untitled UI and Clerk all use ring-in-shadow on controls. Add `outline: 1px solid transparent` so it survives forced-colors (color-and-surfaces G).
   **Applies to** all. **Check** secondary button `border-width: 0` with a 1px spread-0 layer in box-shadow, or border colour alpha <= 0.12. **Source** Vercel, Geist, Linear, AlignUI [M]
 
@@ -228,7 +228,7 @@ Format per `SCHEMA.md`. Numbers come from section 3 tables.
   **Applies to** SaaS app UI. **Check** destructive fill appears only inside dialogs/confirmations; label contrast >= 4.5. **Source** Geist, coss [P][M]
 
 - **RULE** Hover is a fill step, never a lift: ink on light darkens toward the surface by 7-14% (Vercel #171717 -> #383838 = 14% toward white; AlignUI #2e2e2e -> #3d3d3d = 7%), light button on dark goes to full white (Linear #e5e5e6 -> #fff), brand fills go 15-22% darker (Stripe #533afd -> #4032c8, Untitled UI #7f56d9 -> #6941c6), Tailwind-style fills use `bg-primary/90` (coss).
-  **Why** 0 of 11 measured sites translate a button on hover; Kaching and the founder forbid lift. Fill steps are readable on touch emulation, lifts are not.
+  **Why** 0 of 68 measured hover states translate or scale a button; Kaching and the founder forbid lift. Fill steps are readable on touch emulation, lifts are not.
   **Applies to** all. **Check** hover computed `transform` = none; hover background lightness delta 0.04-0.12 (OKLCH L). **Source** Vercel, AlignUI, Linear, Stripe, Untitled UI, coss [M]
 
 - **RULE** Active = hover colour plus `scale(0.97)` (Linear measured 0.97; Kargul 0.98; Apple icon buttons 0.95) and drop the outer shadow; coss flips the inner highlight to `black/8%` and sets `shadow-none` on `:active`.
@@ -248,7 +248,7 @@ Format per `SCHEMA.md`. Numbers come from section 3 tables.
   **Applies to** SaaS app UI | landing page. **Check** button width before and during loading identical +-1px. **Source** Geist button [P]; coss [P]
 
 - **RULE** Transition only the properties that change, 150-200ms ease-out for colour/shadow (Linear 160ms `cubic-bezier(.25,.46,.45,.94)`, Vercel 150ms `(.4,0,.2,1)`, AlignUI 200ms `(0,0,.2,1)`, Resend 200ms) and up to 300ms for brand-style fills (Stripe 300ms `(.25,1,.5,1)`, Attio 300ms `(.2,0,0,1)`, Kargul 300ms `(.76,0,.24,1)`); ban `transition: all` on controls.
-  **Why** Vercel, Resend and Raycast ship `all` on primary CTAs and it animates layout-affecting properties by accident; Apple ships 0s on its pills, which is also valid. Emil Kowalski: UI animation under 300ms, ease-out.
+  **Why** Vercel and Resend ship `all` on primary CTAs (and a Raycast pill does too), which animates properties by accident; Apple ships 0s on its pills, which is also valid. Emil Kowalski: UI animation under 300ms, ease-out.
   **Applies to** all. **Check** computed `transition-property` not `all`; duration <= 300ms. **Source** Linear, Vercel, AlignUI, Resend, Stripe, Attio, Kargul [M]; Emil Kowalski [P]
 
 - **RULE** Make press snappy and release slow when the brand is playful: Comeau's 3D button uses 34ms on press, 250ms spring-ish `cubic-bezier(.3,.7,.4,1.5)` on hover, 600ms `cubic-bezier(.3,.7,.4,1)` on release; for default SaaS keep both directions 100-160ms.
@@ -347,7 +347,7 @@ Format per `SCHEMA.md`. Numbers come from section 3 tables.
 
 ### 3.1 Dataset and method
 
-11 pages measured at 1440x900, DPR 2, headless Chromium 156, light and dark colour schemes (a scheme is skipped when body and html backgrounds are unchanged: Linear, Raycast, Resend, Kargul, Apple and most others are single-theme; Vercel and coss differ). Computed styles for every visible text node (tuple = family, size, weight, line-height ratio, tracking em), heading blocks (chain of line boxes above and below), page bands (effective padding), button candidates (all `a`, `button`, `[role=button]` between 22 and 80px tall with fill, ring or shadow), shadows (every non-`none` box-shadow, classified card / popover / input / chip / button), and four interaction states for the 7 most common button signatures per site. Plus Geist docs (typography, materials, button, input) and coss button/input pages measured live, coss/Tailwind source read, Apple HIG tables parsed.
+12 pages on 11 sites (plus Geist docs and coss docs) measured at 1440x900, DPR 2, headless Chromium 156, light and dark colour schemes (a scheme is skipped when body and html backgrounds are unchanged: Linear, Raycast, Resend, Kargul, Apple and most others are single-theme; Vercel and coss differ). Computed styles for every visible text node (tuple = family, size, weight, line-height ratio, tracking em), heading blocks (chain of line boxes above and below), page bands (effective padding), button candidates (all `a`, `button`, `[role=button]` between 22 and 80px tall with fill, ring or shadow), shadows (every non-`none` box-shadow, classified card / popover / input / chip / button), and four interaction states for the 7 most common button signatures per site. Plus Geist docs (typography, materials, button, input) and coss button/input pages measured live, coss/Tailwind source read, Apple HIG tables parsed.
 
 Caveats [M]: contrast values composite colours but ignore gradient and image backgrounds (Stripe hero reads 2.4:1 wrongly); AlignUI's H1 is a rotating word; `h1.lines` on Stripe counts spans; Clerk's hero column chain picks up its product card; Apple's MacBook page H1 detection is poor. Raw data: `knowledge/benchmarks/type-buttons/<site>.json` (type, buttons, shadows, states, signatures per scheme), `summary.json` (curated), `geist-docs.json`, `inputs.json`, `shots/*.png` (@2x).
 
@@ -364,7 +364,7 @@ Gaps are line box to line box (CSS spacing). `-` = not present/not measured.
 | Resend | 96/1.0/400/-0.01 Domaine | 480px, 2 lines | 18/1.5/400/0 Inter | 8 (looks ~24 optically) | 32 | 48/20/16 | 33 (chip) |
 | Attio | 64/0.95/600/-0.02 Inter Display, centred, balance | 805px | 18/1.3/500/-0.01 | 36 | 24 | 36/12/10 | 42 |
 | Kargul | 52/1.07/700/-0.03 Geist, centred | 626px, 3 lines | 16/1.5/500/0 | 18 | 54 | 54/24/pill | 16 |
-| AlignUI | 80/1.1/550/-0.035 Inter, centred | 639px, 2 lines | 18/1.556/400/-0.015 | 24 | 28 (then logos, CTA at 44) | 44/18/13 | 8 |
+| AlignUI | 80/1.1/550/-0.035 Inter, centred | 639px, 2 lines | 18/1.556/400/-0.015 | 24 | 28 (then logos, CTA at 44) | 44/18/13 | ~30 (pill chip, from the 2x shot) |
 | Untitled UI | 44/1.25/600/-0.02 Inter, balance | 634px, 2 lines | 18/1.5/400/0 | 16 | - | 46/16/8; pair gap 12 | 19 |
 | Apple (iPhone) | 80/1.05/600/-0.015 SF Pro Display | 1260px, 1 line | 17/1.235/400/-0.022 (SF Text) | - | - | 44/21/980px | 73 (promo line) |
 | Clerk | 56/1.143/700/-0.035 Geist-derived | 598px, 2 lines, balance | - | - | - | - | - |
@@ -525,7 +525,7 @@ Not read reliably (responsive class collisions): heading-24, heading-16, copy-16
 | Apple dark pill (nav) | 36 | 15 | 8 | 14/400/-0.016 | - | #1d1d1f -> #272729 | none | 0s |
 | Geist (docs) default | 32 / 36 / 40 | 6 / 10 / 14 (text) | 6 / 6 / 8 | 14/500, 14/500, 16/500 | 16 | ink #171717 -> #383838; error #da2f35; warning #ff990a | secondary ring | 150ms `.4,0,.2,1` all |
 | coss default | 32 (36 mobile) | 12 | 10 | 14/500/0, lh 20 | 16 (18 mobile) / 8 | primary -> primary/90 | `inset 0 1px rgb(255 255 255/.16), 0 1px 2px primary/24`; outline: `0 1px 2px black/5` + `::before 0 1px black/4%` | box-shadow 150ms |
-| Clerk nav (light UI chip) | 30 | 12 | 6 | 13/500 | - | #42434d | ring 0.5px + inset .07 + `0 1px 3px .2` + gradient pseudo overlays (white .2 -> 0 at 50% opacity; hard-stop gloss 46-54%) | 300ms `.4,.36,0,1` |
+| Clerk skip-link button (light UI) | 30 | 12 | 6 | 13/500 | - | #42434d | ring 0.5px + inset .07 + `0 1px 3px .2` + gradient pseudo overlays (white .2 -> 0 at 50% opacity; hard-stop gloss 46-54%) | 300ms `.4,.36,0,1` |
 
 ### 3.11 Button spec matrix (engine-adoptable)
 
@@ -647,13 +647,13 @@ Dark (`--sh: 0 0 0`; anchors in brackets are measured; numbers marked [E] are en
 .dark{
   --ring:        0 0 0 1px rgb(255 255 255 / .10);            /* Geist .145, Linear .03-.08, Clerk .025-.075 */
   --hl:          inset 0 1px 0 rgb(255 255 255 / .06);        /* Linear .04, Raycast .10, Clerk .025-.075 */
-  --e-input:     0 1px 2px 0 rgb(0 0 0 / .20);                [E]
+  --e-input:     0 1px 2px 0 rgb(0 0 0 / .20);                /* [E] */
   --e0-card:     var(--ring);
   --e1-card:     var(--ring), var(--hl), 0 1px 2px 0 rgb(0 0 0 / .16);                  /* Geist small dark */
   --e2-raised:   var(--ring), var(--hl), 0 2px 2px 0 rgb(0 0 0 / .32), 0 8px 8px -8px rgb(0 0 0 / .16);   /* Geist medium dark */
-  --e3-float:    var(--ring), var(--hl), 0 8px 24px -8px rgb(0 0 0 / .45);              [E between Linear .25@32px and Raycast .4@50px]
-  --e4-menu:     var(--ring), var(--hl), 0 2px 4px 0 rgb(0 0 0 / .30), 0 16px 32px -8px rgb(0 0 0 / .50);   [E]
-  --e5-modal:    var(--ring), var(--hl), 0 2px 4px 0 rgb(0 0 0 / .30), 0 24px 48px -12px rgb(0 0 0 / .60); [E, Clerk popover .6]
+  --e3-float:    var(--ring), var(--hl), 0 8px 24px -8px rgb(0 0 0 / .45);              /* [E] between Linear .25@32px and Raycast .4@50px */
+  --e4-menu:     var(--ring), var(--hl), 0 2px 4px 0 rgb(0 0 0 / .30), 0 16px 32px -8px rgb(0 0 0 / .50);   /* [E] */
+  --e5-modal:    var(--ring), var(--hl), 0 2px 4px 0 rgb(0 0 0 / .30), 0 24px 48px -12px rgb(0 0 0 / .60); /* [E], Clerk popover .6 */
 }
 ```
 
@@ -725,7 +725,7 @@ All values are measured unless marked; replace `all` with the explicit property 
 .btn-secondary:hover{ background:#191a1b; }
 /* light page (Vercel): ink primary + ring secondary, 40px, 16/500, hover #171717 -> #383838 */
 .light .btn-primary{ background:#171717; color:#fff; box-shadow:none; } .light .btn-primary:hover{ background:#383838; }
-.light .btn-secondary{ background:#fff; color:#171717; box-shadow:0 0 0 1px rgb(0 0 0/.08); } .light .btn-secondary:hover{ background:#f2f2f2; }
+.light .btn-secondary{ background:#fff; color:#171717; box-shadow:0 0 0 1px #ebebeb; } .light .btn-secondary:hover{ background:#f2f2f2; }
 ```
 
 **B2. Brand rectangle (Stripe), 48px r4**
@@ -780,17 +780,17 @@ All values are measured unless marked; replace `all` with the explicit property 
   transition: background-color .2s ease, box-shadow .2s ease-in-out, transform .1s ease-in-out; }
 ```
 
-**B7. coss primary and outline (Tailwind v4 + Base UI), source verbatim in spirit**
+**B7. coss primary and outline (Tailwind v4 + Base UI), class strings from the registry source, shown wrapped**
 
 ```tsx
 // default
-"relative inline-flex items-center justify-center gap-2 h-9 sm:h-8 px-[calc(--spacing(3)-1px)] rounded-lg border font-medium text-base sm:text-sm \
- border-primary bg-primary text-primary-foreground shadow-xs shadow-primary/24 not-disabled:inset-shadow-[0_1px_--theme(--color-white/16%)] \
- hover:bg-primary/90 [:active,[data-pressed]]:inset-shadow-[0_1px_--theme(--color-black/8%)] [:disabled,:active,[data-pressed]]:shadow-none \
+"relative inline-flex items-center justify-center gap-2 h-9 sm:h-8 px-[calc(--spacing(3)-1px)] rounded-lg border font-medium text-base sm:text-sm 
+ border-primary bg-primary text-primary-foreground shadow-xs shadow-primary/24 not-disabled:inset-shadow-[0_1px_--theme(--color-white/16%)] 
+ hover:bg-primary/90 [:active,[data-pressed]]:inset-shadow-[0_1px_--theme(--color-black/8%)] [:disabled,:active,[data-pressed]]:shadow-none 
  transition-shadow focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-1 focus-visible:ring-offset-background disabled:opacity-64 disabled:pointer-events-none"
 // outline
-"border-input bg-popover not-dark:bg-clip-padding text-foreground shadow-xs/5 hover:bg-accent/50 dark:bg-input/32 dark:hover:bg-input/64 \
- before:absolute before:inset-0 before:rounded-[calc(var(--radius-lg)-1px)] not-disabled:not-active:before:shadow-[0_1px_--theme(--color-black/4%)] \
+"border-input bg-popover not-dark:bg-clip-padding text-foreground shadow-xs/5 hover:bg-accent/50 dark:bg-input/32 dark:hover:bg-input/64 
+ before:absolute before:inset-0 before:rounded-[calc(var(--radius-lg)-1px)] not-disabled:not-active:before:shadow-[0_1px_--theme(--color-black/4%)] 
  dark:not-disabled:not-active:before:shadow-[0_-1px_--theme(--color-white/6%)]"
 ```
 Sizes in coss: xs `h-7 sm:h-6`, sm `h-8 sm:h-7`, default `h-9 sm:h-8`, lg `h-10 sm:h-9`, xl `h-11 sm:h-10`; icon variants `size-*`; mobile heights are 4px taller than desktop.
