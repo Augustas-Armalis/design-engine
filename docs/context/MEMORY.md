@@ -1,0 +1,3 @@
+- [design-engine project](design-engine-project.md) — Augustas's standalone front-end design brain at ~/dev/design-engine; how it works and where things live
+- [Kestrel is the bar](founder-kestrel-bar.md) — founder's top-tier reference build, what he loves, how he gives feedback
+- [Engine goal: design + review/fix](engine-goal-design-and-review.md) — two jobs: design client sites, review and fix existing work; later a product

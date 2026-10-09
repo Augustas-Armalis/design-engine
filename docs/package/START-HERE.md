@@ -63,6 +63,8 @@ To preview any past build: `cd engine/work/<name>/app && npm install && npm run 
 | Path | What |
 |---|---|
 | `CLAUDE.md` | The operating manual Claude follows. Start here if you want to know how it thinks. |
+| `docs/context/` | Context notes: what the engine is for, the quality bar, how the founder gives feedback. |
+| `docs/coss-ui.md` | Rules for product apps built with coss ui (Base UI + Tailwind v4). |
 | `knowledge/founder/` | Every founder verdict as a rule, plus how the founder gives feedback. Highest authority. |
 | `knowledge/web/` | Studied research: product heroes, Rico/Kargul/Attio product UI, dark mode, buttons, navs, type voices, motion, bento, CSS craft. |
 | `knowledge/benchmarks/` | Reference screenshots of the best sites, measured. |
