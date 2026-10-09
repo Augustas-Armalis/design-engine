@@ -1,0 +1,11 @@
+/* Acquisity v3: compact record-centric grammar measured from Attio / Rico / Kargul (knowledge/web/*-recreation*, attio-product-ui, kargul-source-study). */
+:root {
+  --ink: #232529; --sub: #5c5e63; --soft: #6b6e73; --line: #eeeff1; --grid: #e6e7ea; --side: #fbfbfb; --hover: #f4f5f6; --sel: #f5f8ff;
+  --blue: #266df0; --blue-ink: #183c81;
+  --btn: 0 0 2px rgba(28, 40, 64, 0.18), 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+.t14 { font-size: 14px; line-height: 20px; font-weight: 500; letter-spacing: -0.28px; }
+.t13 { font-size: 13px; line-height: 18px; font-weight: 500; letter-spacing: -0.15px; }
+.t12 { font-size: 12px; line-height: 16px; font-weight: 500; letter-spacing: -0.05px; }
+.t16 { font-size: 16px; line-height: 22px; font-weight: 600; letter-spacing: -0.3px; }
+.num { font-size: 20px; line-height: 26px; font-weight: 600; letter-spacing: -0.4px; font-variant-numeric: tabular-nums; }
