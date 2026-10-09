@@ -1,0 +1,1670 @@
+{
+ "github-home": {
+  "url": "https://github.com",
+  "fonts": [
+   "\"Mona Sans VF\"",
+   "\"Mona Sans\""
+  ],
+  "svgs": 74,
+  "iconOnly": {
+   "n": 6,
+   "centred_le_0.25": 1.0,
+   "centred_le_0.5": 1.0,
+   "worst": [
+    [
+     0,
+     44,
+     20,
+     "button",
+     "PlayButton "
+    ],
+    [
+     0,
+     44,
+     20,
+     "button",
+     "PlayButton "
+    ],
+    [
+     0,
+     36,
+     24,
+     "a",
+     ""
+    ],
+    [
+     0,
+     32,
+     32,
+     "a",
+     "Newsletter-module__logoLink__l"
+    ]
+   ],
+   "halfPx": 0,
+   "sizePairs": [
+    [
+     "32/32",
+     2
+    ],
+    [
+     "44/20",
+     2
+    ],
+    [
+     "32/16",
+     1
+    ],
+    [
+     "36/24",
+     1
+    ]
+   ]
+  },
+  "iconText": {
+   "n": 31,
+   "boxDy_le_0.5": 0.419,
+   "lineDy_med": 0.5,
+   "capDy_med": 0.06,
+   "capDy_p10": -10.4,
+   "capDy_p90": 0.06,
+   "xDy_med": -1.76,
+   "iconToFont_med": 1,
+   "gap_mode": [
+    [
+     4,
+     23
+    ],
+    [
+     -56,
+     4
+    ],
+    [
+     -58,
+     1
+    ],
+    [
+     -55,
+     1
+    ]
+   ],
+   "iconSizes": [
+    [
+     "29.09h/16i",
+     15
+    ],
+    [
+     "40h/16i",
+     5
+    ],
+    [
+     "24h/18i",
+     4
+    ],
+    [
+     "26.09h/16i",
+     3
+    ],
+    [
+     "24h/16i",
+     2
+    ],
+    [
+     "24h/20i",
+     1
+    ],
+    [
+     "32h/16i",
+     1
+    ]
+   ]
+  },
+  "ink": {
+   "n": 38,
+   "offcentre_gt_0.5px": 19,
+   "maxAbs": 1.25
+  },
+  "heights": [
+   [
+    40,
+    8
+   ],
+   [
+    32,
+    6
+   ],
+   [
+    38,
+    1
+   ],
+   [
+    45,
+    1
+   ],
+   [
+    52,
+    1
+   ],
+   [
+    41,
+    1
+   ],
+   [
+    48,
+    1
+   ],
+   [
+    56,
+    1
+   ]
+  ],
+  "radiusByHeight": {
+   "32": {
+    "n": 6,
+    "radius": [
+     [
+      6,
+      5
+     ],
+     [
+      16,
+      1
+     ]
+    ],
+    "ratio_med": 0.19,
+    "type": [
+     "16px",
+     "24px",
+     "400",
+     "normal"
+    ],
+    "pad": [
+     "0px",
+     "12px"
+    ]
+   },
+   "40": {
+    "n": 8,
+    "radius": [
+     [
+      20,
+      8
+     ]
+    ],
+    "ratio_med": 0.5,
+    "type": [
+     "14px",
+     "21px",
+     "400",
+     "normal"
+    ],
+    "pad": [
+     "8px",
+     "16px"
+    ]
+   }
+  },
+  "textCentre": {
+   "n": 15,
+   "capDy_med": 1.17,
+   "capDy_p10": 0.17,
+   "capDy_p90": 1.17,
+   "lineDy_med": 1,
+   "gt_1px": 8
+  },
+  "radiusVocab": {
+   "interactive_distinct": 1,
+   "all_distinct": 5,
+   "pill_share_interactive": 0.53,
+   "top": [
+    [
+     6,
+     11
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     8,
+     2
+    ],
+    [
+     4,
+     1
+    ],
+    [
+     24,
+     1
+    ]
+   ]
+  },
+  "nests": {
+   "n": 6,
+   "within_1px": 1.0,
+   "median_abs_err": 1.0
+  }
+ },
+ "github-primer-docs": {
+  "url": "https://primer.style/product/components/button/",
+  "fonts": [
+   "\"Mona Sans\"",
+   "\"Mona Sans VF\""
+  ],
+  "svgs": 72,
+  "iconOnly": {
+   "n": 1,
+   "centred_le_0.25": 1.0,
+   "centred_le_0.5": 1.0,
+   "worst": [
+    [
+     0,
+     32,
+     16,
+     "button",
+     "prc-Button-ButtonBase-9n-Xk pr"
+    ]
+   ],
+   "halfPx": 0,
+   "sizePairs": [
+    [
+     "32/16",
+     1
+    ]
+   ]
+  },
+  "iconText": {
+   "n": 54,
+   "boxDy_le_0.5": 0.981,
+   "lineDy_med": 0.25,
+   "capDy_med": -0.02,
+   "capDy_p10": -0.57,
+   "capDy_p90": -0.02,
+   "xDy_med": -1.07,
+   "iconToFont_med": 1.33,
+   "gap_mode": [
+    [
+     4,
+     39
+    ],
+    [
+     8,
+     7
+    ],
+    [
+     -53,
+     2
+    ],
+    [
+     7,
+     2
+    ]
+   ],
+   "iconSizes": [
+    [
+     "28h/16i",
+     39
+    ],
+    [
+     "32h/16i",
+     6
+    ],
+    [
+     "36h/16i",
+     3
+    ],
+    [
+     "32h/24i",
+     1
+    ],
+    [
+     "32h/10i",
+     1
+    ],
+    [
+     "32h/17.98i",
+     1
+    ],
+    [
+     "32h/17.87i",
+     1
+    ],
+    [
+     "32h/17.79i",
+     1
+    ]
+   ]
+  },
+  "ink": {
+   "n": 56,
+   "offcentre_gt_0.5px": 2,
+   "maxAbs": 0.95
+  },
+  "heights": [
+   [
+    28,
+    53
+   ],
+   [
+    32,
+    22
+   ],
+   [
+    30,
+    1
+   ],
+   [
+    40,
+    1
+   ]
+  ],
+  "radiusByHeight": {
+   "28": {
+    "n": 53,
+    "radius": [
+     [
+      6,
+      53
+     ]
+    ],
+    "ratio_med": 0.21,
+    "type": [
+     "12px",
+     "normal",
+     "500",
+     "normal"
+    ],
+    "pad": [
+     "0px",
+     "8px"
+    ]
+   },
+   "32": {
+    "n": 22,
+    "radius": [
+     [
+      6,
+      22
+     ]
+    ],
+    "ratio_med": 0.19,
+    "type": [
+     "14px",
+     "normal",
+     "500",
+     "normal"
+    ],
+    "pad": [
+     "0px",
+     "12px"
+    ]
+   }
+  },
+  "textCentre": {
+   "n": 13,
+   "capDy_med": 0.57,
+   "capDy_p10": 0.57,
+   "capDy_p90": 0.57,
+   "lineDy_med": 0,
+   "gt_1px": 0
+  },
+  "radiusVocab": {
+   "interactive_distinct": 1,
+   "all_distinct": 4,
+   "pill_share_interactive": 0.0,
+   "top": [
+    [
+     6,
+     85
+    ],
+    [
+     8,
+     32
+    ],
+    [
+     0,
+     15
+    ],
+    [
+     12,
+     10
+    ]
+   ]
+  }
+ },
+ "radix-themes-button": {
+  "url": "https://www.radix-ui.com/themes/docs/components/button",
+  "fonts": [
+   "untitledSans",
+   "-apple-system"
+  ],
+  "svgs": 33,
+  "iconOnly": {
+   "n": 11,
+   "centred_le_0.25": 1.0,
+   "centred_le_0.5": 1.0,
+   "worst": [
+    [
+     0,
+     32,
+     16,
+     "a",
+     "rt-reset rt-BaseButton rt-r-si"
+    ],
+    [
+     0,
+     32,
+     15,
+     "button",
+     "rt-reset rt-BaseButton rt-r-si"
+    ],
+    [
+     0,
+     32,
+     15,
+     "button",
+     "rt-reset rt-BaseButton rt-r-si"
+    ],
+    [
+     0,
+     32,
+     15,
+     "button",
+     "rt-reset rt-BaseButton rt-r-si"
+    ]
+   ],
+   "halfPx": 10,
+   "sizePairs": [
+    [
+     "32/15",
+     10
+    ],
+    [
+     "32/16",
+     1
+    ]
+   ]
+  },
+  "iconText": {
+   "n": 19,
+   "boxDy_le_0.5": 0.789,
+   "lineDy_med": -9,
+   "capDy_med": -9.4,
+   "capDy_p10": -16.4,
+   "capDy_p90": -0.07,
+   "xDy_med": -10.91,
+   "iconToFont_med": 1.07,
+   "gap_mode": [
+    [
+     8,
+     8
+    ],
+    [
+     -115,
+     5
+    ],
+    [
+     -104,
+     4
+    ],
+    [
+     -87,
+     2
+    ]
+   ],
+   "iconSizes": [
+    [
+     "23h/15i",
+     7
+    ],
+    [
+     "32h/15i",
+     6
+    ],
+    [
+     "44h/15i",
+     4
+    ],
+    [
+     "24h/15i",
+     2
+    ]
+   ]
+  },
+  "ink": {
+   "n": 31,
+   "offcentre_gt_0.5px": 0,
+   "maxAbs": 0.5
+  },
+  "heights": [
+   [
+    32,
+    39
+   ],
+   [
+    24,
+    1
+   ],
+   [
+    40,
+    1
+   ]
+  ],
+  "radiusByHeight": {
+   "32": {
+    "n": 39,
+    "radius": [
+     [
+      4,
+      36
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      6,
+      1
+     ]
+    ],
+    "ratio_med": 0.12,
+    "type": [
+     "14px",
+     "20px",
+     "500",
+     "normal"
+    ],
+    "pad": [
+     "0px",
+     "12px"
+    ]
+   }
+  },
+  "textCentre": {
+   "n": 30,
+   "capDy_med": 0.07,
+   "capDy_p10": 0.07,
+   "capDy_p90": 0.07,
+   "lineDy_med": -0.5,
+   "gt_1px": 0
+  },
+  "radiusVocab": {
+   "interactive_distinct": 3,
+   "all_distinct": 5,
+   "pill_share_interactive": 0.05,
+   "top": [
+    [
+     4,
+     36
+    ],
+    [
+     3,
+     27
+    ],
+    [
+     0,
+     10
+    ],
+    [
+     8,
+     7
+    ],
+    [
+     6,
+     2
+    ]
+   ]
+  }
+ },
+ "radix-themes-playground": {
+  "url": "https://www.radix-ui.com/themes/playground",
+  "fonts": [
+   "untitledSans",
+   "-apple-system"
+  ],
+  "svgs": 197,
+  "iconOnly": {
+   "n": 66,
+   "centred_le_0.25": 1.0,
+   "centred_le_0.5": 1.0,
+   "worst": [
+    [
+     0,
+     40,
+     24,
+     "span",
+     "rt-AvatarFallback"
+    ],
+    [
+     0,
+     40,
+     24,
+     "span",
+     "rt-AvatarFallback"
+    ],
+    [
+     0,
+     40,
+     24,
+     "span",
+     "rt-AvatarFallback"
+    ],
+    [
+     0,
+     40,
+     24,
+     "span",
+     "rt-AvatarFallback"
+    ]
+   ],
+   "halfPx": 0,
+   "sizePairs": [
+    [
+     "32/16",
+     26
+    ],
+    [
+     "16/10",
+     15
+    ],
+    [
+     "23/15",
+     12
+    ],
+    [
+     "40/24",
+     8
+    ],
+    [
+     "28/16",
+     5
+    ]
+   ]
+  },
+  "iconText": {
+   "n": 97,
+   "boxDy_le_0.5": 0.938,
+   "lineDy_med": 0.5,
+   "capDy_med": -0.07,
+   "capDy_p10": -0.07,
+   "capDy_p90": 0.23,
+   "xDy_med": -1.32,
+   "iconToFont_med": 1.14,
+   "gap_mode": [
+    [
+     8,
+     50
+    ],
+    [
+     6,
+     18
+    ],
+    [
+     12,
+     14
+    ],
+    [
+     4,
+     6
+    ]
+   ],
+   "iconSizes": [
+    [
+     "32h/16i",
+     39
+    ],
+    [
+     "48h/15i",
+     16
+    ],
+    [
+     "52h/16i",
+     12
+    ],
+    [
+     "32h/9i",
+     12
+    ],
+    [
+     "28h/16i",
+     6
+    ],
+    [
+     "32h/15i",
+     4
+    ],
+    [
+     "28h/9i",
+     4
+    ],
+    [
+     "23h/15i",
+     1
+    ]
+   ]
+  },
+  "ink": {
+   "n": 193,
+   "offcentre_gt_0.5px": 64,
+   "maxAbs": 1.2
+  },
+  "heights": [
+   [
+    32,
+    96
+   ],
+   [
+    30,
+    12
+   ],
+   [
+    48,
+    11
+   ],
+   [
+    24,
+    4
+   ],
+   [
+    40,
+    4
+   ],
+   [
+    22,
+    1
+   ]
+  ],
+  "radiusByHeight": {
+   "24": {
+    "n": 4,
+    "radius": [
+     [
+      3,
+      4
+     ]
+    ],
+    "ratio_med": 0.12,
+    "type": [
+     "12px",
+     "16px",
+     "500",
+     "0.03px"
+    ],
+    "pad": [
+     "0px",
+     "8px"
+    ]
+   },
+   "30": {
+    "n": 12,
+    "radius": [
+     [
+      0,
+      8
+     ],
+     [
+      3,
+      4
+     ]
+    ],
+    "ratio_med": 0.0,
+    "type": [
+     "14px",
+     "0px",
+     "400",
+     "normal"
+    ],
+    "pad": [
+     "0px",
+     "0px"
+    ]
+   },
+   "32": {
+    "n": 96,
+    "radius": [
+     [
+      4,
+      92
+     ],
+     [
+      0,
+      4
+     ]
+    ],
+    "ratio_med": 0.12,
+    "type": [
+     "14px",
+     "20px",
+     "500",
+     "normal"
+    ],
+    "pad": [
+     "0px",
+     "12px"
+    ]
+   },
+   "40": {
+    "n": 4,
+    "radius": [
+     [
+      6,
+      4
+     ]
+    ],
+    "ratio_med": 0.15,
+    "type": [
+     "16px",
+     "24px",
+     "500",
+     "normal"
+    ],
+    "pad": [
+     "0px",
+     "16px"
+    ]
+   },
+   "48": {
+    "n": 11,
+    "radius": [
+     [
+      6,
+      8
+     ],
+     [
+      8,
+      3
+     ]
+    ],
+    "ratio_med": 0.12,
+    "type": [
+     "14px",
+     "20px",
+     "400",
+     "normal"
+    ],
+    "pad": [
+     "14px",
+     "16px"
+    ]
+   }
+  },
+  "textCentre": {
+   "n": 20,
+   "capDy_med": 0.07,
+   "capDy_p10": -0.34,
+   "capDy_p90": 0.36,
+   "lineDy_med": -0.5,
+   "gt_1px": 0
+  },
+  "radiusVocab": {
+   "interactive_distinct": 5,
+   "all_distinct": 8,
+   "pill_share_interactive": 0.19,
+   "top": [
+    [
+     4,
+     133
+    ],
+    [
+     3,
+     54
+    ],
+    [
+     6,
+     52
+    ],
+    [
+     8,
+     20
+    ],
+    [
+     5,
+     4
+    ],
+    [
+     12,
+     3
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     9,
+     2
+    ]
+   ]
+  }
+ },
+ "shadcn": {
+  "url": "https://ui.shadcn.com/docs/components/button",
+  "fonts": [
+   "Geist",
+   "\"Geist Mono\""
+  ],
+  "svgs": 34,
+  "iconOnly": {
+   "n": 12,
+   "centred_le_0.25": 0.917,
+   "centred_le_0.5": 1.0,
+   "worst": [
+    [
+     0.5,
+     32,
+     16,
+     "button",
+     "group/button inline-flex shrin"
+    ],
+    [
+     0,
+     36,
+     16,
+     "button",
+     "group/button inline-flex shrin"
+    ],
+    [
+     0,
+     32,
+     16,
+     "button",
+     "group/button inline-flex shrin"
+    ],
+    [
+     0,
+     32,
+     16,
+     "button",
+     "group/button inline-flex shrin"
+    ]
+   ],
+   "halfPx": 1,
+   "sizePairs": [
+    [
+     "32/16",
+     7
+    ],
+    [
+     "28/16",
+     2
+    ],
+    [
+     "16/12",
+     1
+    ],
+    [
+     "24/12",
+     1
+    ],
+    [
+     "36/16",
+     1
+    ]
+   ]
+  },
+  "iconText": {
+   "n": 20,
+   "boxDy_le_0.5": 1.0,
+   "lineDy_med": 0.0,
+   "capDy_med": -0.03,
+   "capDy_p10": -9.53,
+   "capDy_p90": 0.68,
+   "xDy_med": -1.28,
+   "iconToFont_med": 1.14,
+   "gap_mode": [
+    [
+     6,
+     7
+    ],
+    [
+     -41,
+     4
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     -97,
+     1
+    ]
+   ],
+   "iconSizes": [
+    [
+     "28h/16i",
+     9
+    ],
+    [
+     "32h/16i",
+     6
+    ],
+    [
+     "32h/21.89i",
+     2
+    ],
+    [
+     "32h/18i",
+     1
+    ],
+    [
+     "31h/14i",
+     1
+    ],
+    [
+     "32h/21.88i",
+     1
+    ]
+   ]
+  },
+  "ink": {
+   "n": 32,
+   "offcentre_gt_0.5px": 0,
+   "maxAbs": 0.5
+  },
+  "heights": [
+   [
+    30,
+    109
+   ],
+   [
+    32,
+    43
+   ],
+   [
+    28,
+    14
+   ],
+   [
+    29,
+    2
+   ],
+   [
+    24,
+    2
+   ],
+   [
+    36,
+    2
+   ],
+   [
+    31,
+    1
+   ]
+  ],
+  "radiusByHeight": {
+   "24": {
+    "n": 2,
+    "radius": [
+     [
+      8,
+      2
+     ]
+    ],
+    "ratio_med": 0.33,
+    "type": [
+     "12px",
+     "16px",
+     "500",
+     "normal"
+    ],
+    "pad": [
+     "0px",
+     "8px"
+    ]
+   },
+   "28": {
+    "n": 14,
+    "radius": [
+     [
+      8,
+      13
+     ],
+     [
+      10,
+      1
+     ]
+    ],
+    "ratio_med": 0.29,
+    "type": [
+     "14px",
+     "20px",
+     "500",
+     "normal"
+    ],
+    "pad": [
+     "0px",
+     "10px"
+    ]
+   },
+   "29": {
+    "n": 2,
+    "radius": [
+     [
+      0,
+      2
+     ]
+    ],
+    "ratio_med": 0.0,
+    "type": [
+     "16px",
+     "24px",
+     "500",
+     "normal"
+    ],
+    "pad": [
+     "4px",
+     "0px"
+    ]
+   },
+   "30": {
+    "n": 109,
+    "radius": [
+     [
+      8,
+      109
+     ]
+    ],
+    "ratio_med": 0.27,
+    "type": [
+     "12.8px",
+     "18.2857px",
+     "500",
+     "normal"
+    ],
+    "pad": [
+     "8px",
+     "8px"
+    ]
+   },
+   "32": {
+    "n": 43,
+    "radius": [
+     [
+      10,
+      39
+     ],
+     [
+      16,
+      2
+     ],
+     [
+      0,
+      2
+     ]
+    ],
+    "ratio_med": 0.31,
+    "type": [
+     "14px",
+     "20px",
+     "500",
+     "normal"
+    ],
+    "pad": [
+     "0px",
+     "10px"
+    ]
+   },
+   "36": {
+    "n": 2,
+    "radius": [
+     [
+      10,
+      2
+     ]
+    ],
+    "ratio_med": 0.28,
+    "type": [
+     "14px",
+     "20px",
+     "500",
+     "normal"
+    ],
+    "pad": [
+     "0px",
+     "10px"
+    ]
+   }
+  },
+  "textCentre": {
+   "n": 150,
+   "capDy_med": -0.68,
+   "capDy_p10": -0.68,
+   "capDy_p90": 0.03,
+   "lineDy_med": -0.64,
+   "gt_1px": 2
+  },
+  "radiusVocab": {
+   "interactive_distinct": 3,
+   "all_distinct": 6,
+   "pill_share_interactive": 0.01,
+   "top": [
+    [
+     8,
+     129
+    ],
+    [
+     10,
+     42
+    ],
+    [
+     4,
+     27
+    ],
+    [
+     18,
+     19
+    ],
+    [
+     0,
+     19
+    ],
+    [
+     1,
+     1
+    ]
+   ]
+  }
+ },
+ "vercel-geist-docs": {
+  "url": "https://vercel.com/geist/button",
+  "fonts": [
+   "GeistSans",
+   "Geist"
+  ],
+  "svgs": 45,
+  "iconOnly": {
+   "n": 12,
+   "centred_le_0.25": 1.0,
+   "centred_le_0.5": 1.0,
+   "worst": [
+    [
+     0,
+     40,
+     16,
+     "button",
+     "outline-none m-0 border-0 alig"
+    ],
+    [
+     0,
+     40,
+     16,
+     "button",
+     "outline-none m-0 border-0 alig"
+    ],
+    [
+     0,
+     36,
+     16,
+     "button",
+     "outline-none m-0 border-0 alig"
+    ],
+    [
+     0,
+     36,
+     16,
+     "button",
+     "outline-none m-0 border-0 alig"
+    ]
+   ],
+   "halfPx": 0,
+   "sizePairs": [
+    [
+     "32/16",
+     6
+    ],
+    [
+     "24/16",
+     2
+    ],
+    [
+     "36/16",
+     2
+    ],
+    [
+     "40/16",
+     2
+    ]
+   ]
+  },
+  "iconText": {
+   "n": 21,
+   "boxDy_le_0.5": 0.381,
+   "lineDy_med": -0.5,
+   "capDy_med": -0.48,
+   "capDy_p10": -11.86,
+   "capDy_p90": 0.68,
+   "xDy_med": -2.59,
+   "iconToFont_med": 0.58,
+   "gap_mode": [
+    [
+     6,
+     12
+    ],
+    [
+     12,
+     2
+    ],
+    [
+     10,
+     2
+    ],
+    [
+     16,
+     1
+    ]
+   ],
+   "iconSizes": [
+    [
+     "32h/14i",
+     11
+    ],
+    [
+     "36h/14i",
+     4
+    ],
+    [
+     "32h/16i",
+     3
+    ],
+    [
+     "56h/20i",
+     2
+    ],
+    [
+     "27h/27i",
+     1
+    ]
+   ]
+  },
+  "ink": {
+   "n": 34,
+   "offcentre_gt_0.5px": 1,
+   "maxAbs": 0.91
+  },
+  "heights": [
+   [
+    36,
+    19
+   ],
+   [
+    32,
+    12
+   ],
+   [
+    40,
+    10
+   ],
+   [
+    48,
+    10
+   ],
+   [
+    24,
+    2
+   ]
+  ],
+  "radiusByHeight": {
+   "24": {
+    "n": 2,
+    "radius": [
+     [
+      4,
+      1
+     ],
+     [
+      12,
+      1
+     ]
+    ],
+    "ratio_med": 0.33,
+    "type": [
+     "16px",
+     "24px",
+     "500",
+     "normal"
+    ],
+    "pad": [
+     "0px",
+     "0px"
+    ]
+   },
+   "32": {
+    "n": 12,
+    "radius": [
+     [
+      6,
+      9
+     ],
+     [
+      16,
+      2
+     ],
+     [
+      4,
+      1
+     ]
+    ],
+    "ratio_med": 0.19,
+    "type": [
+     "14px",
+     "21px",
+     "500",
+     "normal"
+    ],
+    "pad": [
+     "0px",
+     "6px"
+    ]
+   },
+   "36": {
+    "n": 19,
+    "radius": [
+     [
+      6,
+      17
+     ],
+     [
+      18,
+      2
+     ]
+    ],
+    "ratio_med": 0.17,
+    "type": [
+     "14px",
+     "21px",
+     "500",
+     "normal"
+    ],
+    "pad": [
+     "0px",
+     "10px"
+    ]
+   },
+   "40": {
+    "n": 10,
+    "radius": [
+     [
+      8,
+      8
+     ],
+     [
+      20,
+      2
+     ]
+    ],
+    "ratio_med": 0.2,
+    "type": [
+     "16px",
+     "24px",
+     "500",
+     "normal"
+    ],
+    "pad": [
+     "0px",
+     "14px"
+    ]
+   },
+   "48": {
+    "n": 10,
+    "radius": [
+     [
+      0,
+      10
+     ]
+    ],
+    "ratio_med": 0.0,
+    "type": [
+     "14px",
+     "20px",
+     "400",
+     "normal"
+    ],
+    "pad": [
+     "0px",
+     "16px"
+    ]
+   }
+  },
+  "textCentre": {
+   "n": 32,
+   "capDy_med": 0.57,
+   "capDy_p10": 0.36,
+   "capDy_p90": 0.57,
+   "lineDy_med": 0.0,
+   "gt_1px": 3
+  },
+  "radiusVocab": {
+   "interactive_distinct": 4,
+   "all_distinct": 4,
+   "pill_share_interactive": 0.13,
+   "top": [
+    [
+     6,
+     68
+    ],
+    [
+     0,
+     20
+    ],
+    [
+     8,
+     18
+    ],
+    [
+     4,
+     3
+    ]
+   ]
+  }
+ },
+ "vercel-home": {
+  "url": "https://vercel.com",
+  "fonts": [
+   "GeistSans",
+   "\"Geist Mono\""
+  ],
+  "svgs": 24,
+  "iconOnly": {
+   "n": 3,
+   "centred_le_0.25": 1.0,
+   "centred_le_0.5": 1.0,
+   "worst": [
+    [
+     0,
+     24,
+     14,
+     "span",
+     "flex size-6 items-center justi"
+    ],
+    [
+     0,
+     24,
+     14,
+     "span",
+     "flex size-6 items-center justi"
+    ],
+    [
+     0,
+     24,
+     14,
+     "span",
+     "flex size-6 items-center justi"
+    ]
+   ],
+   "halfPx": 0,
+   "sizePairs": [
+    [
+     "24/14",
+     3
+    ]
+   ]
+  },
+  "iconText": {
+   "n": 6,
+   "boxDy_le_0.5": 1.0,
+   "lineDy_med": -4.75,
+   "capDy_med": -4.78,
+   "capDy_p10": -9.53,
+   "capDy_p90": -0.03,
+   "xDy_med": -6.04,
+   "iconToFont_med": 1.07,
+   "gap_mode": [
+    [
+     3,
+     2
+    ],
+    [
+     -36,
+     2
+    ],
+    [
+     10,
+     1
+    ],
+    [
+     -54,
+     1
+    ]
+   ],
+   "iconSizes": [
+    [
+     "32h/14i",
+     3
+    ],
+    [
+     "24h/16i",
+     3
+    ]
+   ]
+  },
+  "ink": {
+   "n": 12,
+   "offcentre_gt_0.5px": 1,
+   "maxAbs": 0.91
+  },
+  "heights": [
+   [
+    40,
+    1
+   ]
+  ],
+  "radiusByHeight": {},
+  "textCentre": {
+   "n": 0,
+   "capDy_med": null,
+   "capDy_p10": null,
+   "capDy_p90": null,
+   "lineDy_med": null,
+   "gt_1px": 0
+  },
+  "radiusVocab": {
+   "interactive_distinct": 1,
+   "all_distinct": 1,
+   "pill_share_interactive": 0.44,
+   "top": [
+    [
+     6,
+     5
+    ]
+   ]
+  }
+ }
+}

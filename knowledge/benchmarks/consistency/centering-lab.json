@@ -1,0 +1,1082 @@
+[
+ {
+  "dpr": 1,
+  "icon": 16,
+  "box": 32,
+  "name": "inline-block box + inline svg (baseline trap)",
+  "dx": 0,
+  "dy": -8,
+  "inkW": 14,
+  "expectedInkW": 13.33
+ },
+ {
+  "dpr": 1,
+  "icon": 16,
+  "box": 32,
+  "name": "same, svg display:block + margin:auto",
+  "dx": 0,
+  "dy": 0,
+  "inkW": 14,
+  "expectedInkW": 13.33
+ },
+ {
+  "dpr": 1,
+  "icon": 16,
+  "box": 32,
+  "name": "inline-block box line-height:0 + svg",
+  "dx": 0,
+  "dy": -8,
+  "inkW": 14,
+  "expectedInkW": 13.33
+ },
+ {
+  "dpr": 1,
+  "icon": 16,
+  "box": 32,
+  "name": "inline-block + svg vertical-align:middle",
+  "dx": 0,
+  "dy": 1,
+  "inkW": 14,
+  "expectedInkW": 13.33
+ },
+ {
+  "dpr": 1,
+  "icon": 16,
+  "box": 32,
+  "name": "inline-flex center/center",
+  "dx": 0,
+  "dy": 0,
+  "inkW": 14,
+  "expectedInkW": 13.33
+ },
+ {
+  "dpr": 1,
+  "icon": 16,
+  "box": 32,
+  "name": "inline-grid place-items:center",
+  "dx": 0,
+  "dy": 0,
+  "inkW": 14,
+  "expectedInkW": 13.33
+ },
+ {
+  "dpr": 1,
+  "icon": 16,
+  "box": 32,
+  "name": "<button> UA defaults + inline svg",
+  "dx": 0,
+  "dy": -1,
+  "inkW": 14,
+  "expectedInkW": 13.33
+ },
+ {
+  "dpr": 1,
+  "icon": 16,
+  "box": 32,
+  "name": "inline-block box, text-align:center, line-height = box height, svg vertical-align:middle",
+  "dx": 0,
+  "dy": 1,
+  "inkW": 14,
+  "expectedInkW": 13.33
+ },
+ {
+  "dpr": 1,
+  "icon": 16,
+  "box": 32,
+  "name": "<button> inline-flex center/center, padding:0",
+  "dx": 0,
+  "dy": 0,
+  "inkW": 14,
+  "expectedInkW": 13.33
+ },
+ {
+  "dpr": 1,
+  "icon": 15,
+  "box": 32,
+  "name": "inline-block box + inline svg (baseline trap)",
+  "dx": 0.5,
+  "dy": -8.5,
+  "inkW": 13,
+  "expectedInkW": 12.5
+ },
+ {
+  "dpr": 1,
+  "icon": 15,
+  "box": 32,
+  "name": "same, svg display:block + margin:auto",
+  "dx": 0.5,
+  "dy": 0.5,
+  "inkW": 13,
+  "expectedInkW": 12.5
+ },
+ {
+  "dpr": 1,
+  "icon": 15,
+  "box": 32,
+  "name": "inline-block box line-height:0 + svg",
+  "dx": 0.5,
+  "dy": -8.5,
+  "inkW": 13,
+  "expectedInkW": 12.5
+ },
+ {
+  "dpr": 1,
+  "icon": 15,
+  "box": 32,
+  "name": "inline-block + svg vertical-align:middle",
+  "dx": 0.5,
+  "dy": 1.5,
+  "inkW": 13,
+  "expectedInkW": 12.5
+ },
+ {
+  "dpr": 1,
+  "icon": 15,
+  "box": 32,
+  "name": "inline-flex center/center",
+  "dx": 0.5,
+  "dy": 0.5,
+  "inkW": 13,
+  "expectedInkW": 12.5
+ },
+ {
+  "dpr": 1,
+  "icon": 15,
+  "box": 32,
+  "name": "inline-grid place-items:center",
+  "dx": 0.5,
+  "dy": 0.5,
+  "inkW": 13,
+  "expectedInkW": 12.5
+ },
+ {
+  "dpr": 1,
+  "icon": 15,
+  "box": 32,
+  "name": "<button> UA defaults + inline svg",
+  "dx": 0.5,
+  "dy": -1.5,
+  "inkW": 13,
+  "expectedInkW": 12.5
+ },
+ {
+  "dpr": 1,
+  "icon": 15,
+  "box": 32,
+  "name": "inline-block box, text-align:center, line-height = box height, svg vertical-align:middle",
+  "dx": 0.5,
+  "dy": 1.5,
+  "inkW": 13,
+  "expectedInkW": 12.5
+ },
+ {
+  "dpr": 1,
+  "icon": 15,
+  "box": 32,
+  "name": "<button> inline-flex center/center, padding:0",
+  "dx": 0.5,
+  "dy": 0.5,
+  "inkW": 13,
+  "expectedInkW": 12.5
+ },
+ {
+  "dpr": 1,
+  "icon": 16,
+  "box": 33,
+  "name": "inline-block box + inline svg (baseline trap)",
+  "dx": 0.5,
+  "dy": -8.5,
+  "inkW": 14,
+  "expectedInkW": 13.33
+ },
+ {
+  "dpr": 1,
+  "icon": 16,
+  "box": 33,
+  "name": "same, svg display:block + margin:auto",
+  "dx": 0.5,
+  "dy": 0.5,
+  "inkW": 14,
+  "expectedInkW": 13.33
+ },
+ {
+  "dpr": 1,
+  "icon": 16,
+  "box": 33,
+  "name": "inline-block box line-height:0 + svg",
+  "dx": 0.5,
+  "dy": -8.5,
+  "inkW": 14,
+  "expectedInkW": 13.33
+ },
+ {
+  "dpr": 1,
+  "icon": 16,
+  "box": 33,
+  "name": "inline-block + svg vertical-align:middle",
+  "dx": 0.5,
+  "dy": 0.5,
+  "inkW": 14,
+  "expectedInkW": 13.33
+ },
+ {
+  "dpr": 1,
+  "icon": 16,
+  "box": 33,
+  "name": "inline-flex center/center",
+  "dx": 0.5,
+  "dy": 0.5,
+  "inkW": 14,
+  "expectedInkW": 13.33
+ },
+ {
+  "dpr": 1,
+  "icon": 16,
+  "box": 33,
+  "name": "inline-grid place-items:center",
+  "dx": 0.5,
+  "dy": 0.5,
+  "inkW": 14,
+  "expectedInkW": 13.33
+ },
+ {
+  "dpr": 1,
+  "icon": 16,
+  "box": 33,
+  "name": "<button> UA defaults + inline svg",
+  "dx": 0.5,
+  "dy": -1.5,
+  "inkW": 14,
+  "expectedInkW": 13.33
+ },
+ {
+  "dpr": 1,
+  "icon": 16,
+  "box": 33,
+  "name": "inline-block box, text-align:center, line-height = box height, svg vertical-align:middle",
+  "dx": 0.5,
+  "dy": 0.5,
+  "inkW": 14,
+  "expectedInkW": 13.33
+ },
+ {
+  "dpr": 1,
+  "icon": 16,
+  "box": 33,
+  "name": "<button> inline-flex center/center, padding:0",
+  "dx": 0.5,
+  "dy": 0.5,
+  "inkW": 14,
+  "expectedInkW": 13.33
+ },
+ {
+  "dpr": 1,
+  "icon": 15,
+  "box": 33,
+  "name": "inline-block box + inline svg (baseline trap)",
+  "dx": 0,
+  "dy": -9,
+  "inkW": 13,
+  "expectedInkW": 12.5
+ },
+ {
+  "dpr": 1,
+  "icon": 15,
+  "box": 33,
+  "name": "same, svg display:block + margin:auto",
+  "dx": 0,
+  "dy": 0,
+  "inkW": 13,
+  "expectedInkW": 12.5
+ },
+ {
+  "dpr": 1,
+  "icon": 15,
+  "box": 33,
+  "name": "inline-block box line-height:0 + svg",
+  "dx": 0,
+  "dy": -9,
+  "inkW": 13,
+  "expectedInkW": 12.5
+ },
+ {
+  "dpr": 1,
+  "icon": 15,
+  "box": 33,
+  "name": "inline-block + svg vertical-align:middle",
+  "dx": 0,
+  "dy": 1,
+  "inkW": 13,
+  "expectedInkW": 12.5
+ },
+ {
+  "dpr": 1,
+  "icon": 15,
+  "box": 33,
+  "name": "inline-flex center/center",
+  "dx": 0,
+  "dy": 0,
+  "inkW": 13,
+  "expectedInkW": 12.5
+ },
+ {
+  "dpr": 1,
+  "icon": 15,
+  "box": 33,
+  "name": "inline-grid place-items:center",
+  "dx": 0,
+  "dy": 0,
+  "inkW": 13,
+  "expectedInkW": 12.5
+ },
+ {
+  "dpr": 1,
+  "icon": 15,
+  "box": 33,
+  "name": "<button> UA defaults + inline svg",
+  "dx": 0,
+  "dy": -1,
+  "inkW": 13,
+  "expectedInkW": 12.5
+ },
+ {
+  "dpr": 1,
+  "icon": 15,
+  "box": 33,
+  "name": "inline-block box, text-align:center, line-height = box height, svg vertical-align:middle",
+  "dx": 0,
+  "dy": 1,
+  "inkW": 13,
+  "expectedInkW": 12.5
+ },
+ {
+  "dpr": 1,
+  "icon": 15,
+  "box": 33,
+  "name": "<button> inline-flex center/center, padding:0",
+  "dx": 0,
+  "dy": 0,
+  "inkW": 13,
+  "expectedInkW": 12.5
+ },
+ {
+  "dpr": 1,
+  "icon": 20,
+  "box": 36,
+  "name": "inline-block box + inline svg (baseline trap)",
+  "dx": 0,
+  "dy": -8,
+  "inkW": 16,
+  "expectedInkW": 16.67
+ },
+ {
+  "dpr": 1,
+  "icon": 20,
+  "box": 36,
+  "name": "same, svg display:block + margin:auto",
+  "dx": 0,
+  "dy": 0,
+  "inkW": 16,
+  "expectedInkW": 16.67
+ },
+ {
+  "dpr": 1,
+  "icon": 20,
+  "box": 36,
+  "name": "inline-block box line-height:0 + svg",
+  "dx": 0,
+  "dy": -8,
+  "inkW": 16,
+  "expectedInkW": 16.67
+ },
+ {
+  "dpr": 1,
+  "icon": 20,
+  "box": 36,
+  "name": "inline-block + svg vertical-align:middle",
+  "dx": 0,
+  "dy": 1,
+  "inkW": 16,
+  "expectedInkW": 16.67
+ },
+ {
+  "dpr": 1,
+  "icon": 20,
+  "box": 36,
+  "name": "inline-flex center/center",
+  "dx": 0,
+  "dy": 0,
+  "inkW": 16,
+  "expectedInkW": 16.67
+ },
+ {
+  "dpr": 1,
+  "icon": 20,
+  "box": 36,
+  "name": "inline-grid place-items:center",
+  "dx": 0,
+  "dy": 0,
+  "inkW": 16,
+  "expectedInkW": 16.67
+ },
+ {
+  "dpr": 1,
+  "icon": 20,
+  "box": 36,
+  "name": "<button> UA defaults + inline svg",
+  "dx": 0,
+  "dy": -1,
+  "inkW": 16,
+  "expectedInkW": 16.67
+ },
+ {
+  "dpr": 1,
+  "icon": 20,
+  "box": 36,
+  "name": "inline-block box, text-align:center, line-height = box height, svg vertical-align:middle",
+  "dx": 0,
+  "dy": 1,
+  "inkW": 16,
+  "expectedInkW": 16.67
+ },
+ {
+  "dpr": 1,
+  "icon": 20,
+  "box": 36,
+  "name": "<button> inline-flex center/center, padding:0",
+  "dx": 0,
+  "dy": 0,
+  "inkW": 16,
+  "expectedInkW": 16.67
+ },
+ {
+  "dpr": 1,
+  "icon": 14,
+  "box": 28,
+  "name": "inline-block box + inline svg (baseline trap)",
+  "dx": 0,
+  "dy": -6,
+  "inkW": 12,
+  "expectedInkW": 11.67
+ },
+ {
+  "dpr": 1,
+  "icon": 14,
+  "box": 28,
+  "name": "same, svg display:block + margin:auto",
+  "dx": 0,
+  "dy": 0,
+  "inkW": 12,
+  "expectedInkW": 11.67
+ },
+ {
+  "dpr": 1,
+  "icon": 14,
+  "box": 28,
+  "name": "inline-block box line-height:0 + svg",
+  "dx": 0,
+  "dy": -7,
+  "inkW": 12,
+  "expectedInkW": 11.67
+ },
+ {
+  "dpr": 1,
+  "icon": 14,
+  "box": 28,
+  "name": "inline-block + svg vertical-align:middle",
+  "dx": 0,
+  "dy": 1,
+  "inkW": 12,
+  "expectedInkW": 11.67
+ },
+ {
+  "dpr": 1,
+  "icon": 14,
+  "box": 28,
+  "name": "inline-flex center/center",
+  "dx": 0,
+  "dy": 0,
+  "inkW": 12,
+  "expectedInkW": 11.67
+ },
+ {
+  "dpr": 1,
+  "icon": 14,
+  "box": 28,
+  "name": "inline-grid place-items:center",
+  "dx": 0,
+  "dy": 0,
+  "inkW": 12,
+  "expectedInkW": 11.67
+ },
+ {
+  "dpr": 1,
+  "icon": 14,
+  "box": 28,
+  "name": "<button> UA defaults + inline svg",
+  "dx": 0,
+  "dy": -1,
+  "inkW": 12,
+  "expectedInkW": 11.67
+ },
+ {
+  "dpr": 1,
+  "icon": 14,
+  "box": 28,
+  "name": "inline-block box, text-align:center, line-height = box height, svg vertical-align:middle",
+  "dx": 0,
+  "dy": 1,
+  "inkW": 12,
+  "expectedInkW": 11.67
+ },
+ {
+  "dpr": 1,
+  "icon": 14,
+  "box": 28,
+  "name": "<button> inline-flex center/center, padding:0",
+  "dx": 0,
+  "dy": 0,
+  "inkW": 12,
+  "expectedInkW": 11.67
+ },
+ {
+  "dpr": 2,
+  "icon": 16,
+  "box": 32,
+  "name": "inline-block box + inline svg (baseline trap)",
+  "dx": 0,
+  "dy": -8,
+  "inkW": 13,
+  "expectedInkW": 13.33
+ },
+ {
+  "dpr": 2,
+  "icon": 16,
+  "box": 32,
+  "name": "same, svg display:block + margin:auto",
+  "dx": 0,
+  "dy": 0,
+  "inkW": 13,
+  "expectedInkW": 13.33
+ },
+ {
+  "dpr": 2,
+  "icon": 16,
+  "box": 32,
+  "name": "inline-block box line-height:0 + svg",
+  "dx": 0,
+  "dy": -8,
+  "inkW": 13,
+  "expectedInkW": 13.33
+ },
+ {
+  "dpr": 2,
+  "icon": 16,
+  "box": 32,
+  "name": "inline-block + svg vertical-align:middle",
+  "dx": 0,
+  "dy": 1,
+  "inkW": 13,
+  "expectedInkW": 13.33
+ },
+ {
+  "dpr": 2,
+  "icon": 16,
+  "box": 32,
+  "name": "inline-flex center/center",
+  "dx": 0,
+  "dy": 0,
+  "inkW": 13,
+  "expectedInkW": 13.33
+ },
+ {
+  "dpr": 2,
+  "icon": 16,
+  "box": 32,
+  "name": "inline-grid place-items:center",
+  "dx": 0,
+  "dy": 0,
+  "inkW": 13,
+  "expectedInkW": 13.33
+ },
+ {
+  "dpr": 2,
+  "icon": 16,
+  "box": 32,
+  "name": "<button> UA defaults + inline svg",
+  "dx": 0,
+  "dy": -1,
+  "inkW": 13,
+  "expectedInkW": 13.33
+ },
+ {
+  "dpr": 2,
+  "icon": 16,
+  "box": 32,
+  "name": "inline-block box, text-align:center, line-height = box height, svg vertical-align:middle",
+  "dx": 0,
+  "dy": 1,
+  "inkW": 13,
+  "expectedInkW": 13.33
+ },
+ {
+  "dpr": 2,
+  "icon": 16,
+  "box": 32,
+  "name": "<button> inline-flex center/center, padding:0",
+  "dx": 0,
+  "dy": 0,
+  "inkW": 13,
+  "expectedInkW": 13.33
+ },
+ {
+  "dpr": 2,
+  "icon": 15,
+  "box": 32,
+  "name": "inline-block box + inline svg (baseline trap)",
+  "dx": 0.5,
+  "dy": -8.5,
+  "inkW": 13,
+  "expectedInkW": 12.5
+ },
+ {
+  "dpr": 2,
+  "icon": 15,
+  "box": 32,
+  "name": "same, svg display:block + margin:auto",
+  "dx": 0.5,
+  "dy": 0.5,
+  "inkW": 13,
+  "expectedInkW": 12.5
+ },
+ {
+  "dpr": 2,
+  "icon": 15,
+  "box": 32,
+  "name": "inline-block box line-height:0 + svg",
+  "dx": 0.5,
+  "dy": -8.5,
+  "inkW": 13,
+  "expectedInkW": 12.5
+ },
+ {
+  "dpr": 2,
+  "icon": 15,
+  "box": 32,
+  "name": "inline-block + svg vertical-align:middle",
+  "dx": 0.5,
+  "dy": 1.5,
+  "inkW": 13,
+  "expectedInkW": 12.5
+ },
+ {
+  "dpr": 2,
+  "icon": 15,
+  "box": 32,
+  "name": "inline-flex center/center",
+  "dx": 0.5,
+  "dy": 0.5,
+  "inkW": 13,
+  "expectedInkW": 12.5
+ },
+ {
+  "dpr": 2,
+  "icon": 15,
+  "box": 32,
+  "name": "inline-grid place-items:center",
+  "dx": 0.5,
+  "dy": 0.5,
+  "inkW": 13,
+  "expectedInkW": 12.5
+ },
+ {
+  "dpr": 2,
+  "icon": 15,
+  "box": 32,
+  "name": "<button> UA defaults + inline svg",
+  "dx": 0.5,
+  "dy": -1.5,
+  "inkW": 13,
+  "expectedInkW": 12.5
+ },
+ {
+  "dpr": 2,
+  "icon": 15,
+  "box": 32,
+  "name": "inline-block box, text-align:center, line-height = box height, svg vertical-align:middle",
+  "dx": 0.5,
+  "dy": 1.5,
+  "inkW": 13,
+  "expectedInkW": 12.5
+ },
+ {
+  "dpr": 2,
+  "icon": 15,
+  "box": 32,
+  "name": "<button> inline-flex center/center, padding:0",
+  "dx": 0.5,
+  "dy": 0.5,
+  "inkW": 13,
+  "expectedInkW": 12.5
+ },
+ {
+  "dpr": 2,
+  "icon": 16,
+  "box": 33,
+  "name": "inline-block box + inline svg (baseline trap)",
+  "dx": 0.5,
+  "dy": -8.5,
+  "inkW": 13,
+  "expectedInkW": 13.33
+ },
+ {
+  "dpr": 2,
+  "icon": 16,
+  "box": 33,
+  "name": "same, svg display:block + margin:auto",
+  "dx": 0.5,
+  "dy": 0.5,
+  "inkW": 13,
+  "expectedInkW": 13.33
+ },
+ {
+  "dpr": 2,
+  "icon": 16,
+  "box": 33,
+  "name": "inline-block box line-height:0 + svg",
+  "dx": 0.5,
+  "dy": -8.5,
+  "inkW": 13,
+  "expectedInkW": 13.33
+ },
+ {
+  "dpr": 2,
+  "icon": 16,
+  "box": 33,
+  "name": "inline-block + svg vertical-align:middle",
+  "dx": 0.5,
+  "dy": 0.5,
+  "inkW": 13,
+  "expectedInkW": 13.33
+ },
+ {
+  "dpr": 2,
+  "icon": 16,
+  "box": 33,
+  "name": "inline-flex center/center",
+  "dx": 0.5,
+  "dy": 0.5,
+  "inkW": 13,
+  "expectedInkW": 13.33
+ },
+ {
+  "dpr": 2,
+  "icon": 16,
+  "box": 33,
+  "name": "inline-grid place-items:center",
+  "dx": 0.5,
+  "dy": 0.5,
+  "inkW": 13,
+  "expectedInkW": 13.33
+ },
+ {
+  "dpr": 2,
+  "icon": 16,
+  "box": 33,
+  "name": "<button> UA defaults + inline svg",
+  "dx": 0.5,
+  "dy": -1.5,
+  "inkW": 13,
+  "expectedInkW": 13.33
+ },
+ {
+  "dpr": 2,
+  "icon": 16,
+  "box": 33,
+  "name": "inline-block box, text-align:center, line-height = box height, svg vertical-align:middle",
+  "dx": 0.5,
+  "dy": 0.5,
+  "inkW": 13,
+  "expectedInkW": 13.33
+ },
+ {
+  "dpr": 2,
+  "icon": 16,
+  "box": 33,
+  "name": "<button> inline-flex center/center, padding:0",
+  "dx": 0.5,
+  "dy": 0.5,
+  "inkW": 13,
+  "expectedInkW": 13.33
+ },
+ {
+  "dpr": 2,
+  "icon": 15,
+  "box": 33,
+  "name": "inline-block box + inline svg (baseline trap)",
+  "dx": 0,
+  "dy": -9,
+  "inkW": 13,
+  "expectedInkW": 12.5
+ },
+ {
+  "dpr": 2,
+  "icon": 15,
+  "box": 33,
+  "name": "same, svg display:block + margin:auto",
+  "dx": 0,
+  "dy": 0,
+  "inkW": 13,
+  "expectedInkW": 12.5
+ },
+ {
+  "dpr": 2,
+  "icon": 15,
+  "box": 33,
+  "name": "inline-block box line-height:0 + svg",
+  "dx": 0,
+  "dy": -9,
+  "inkW": 13,
+  "expectedInkW": 12.5
+ },
+ {
+  "dpr": 2,
+  "icon": 15,
+  "box": 33,
+  "name": "inline-block + svg vertical-align:middle",
+  "dx": 0,
+  "dy": 1,
+  "inkW": 13,
+  "expectedInkW": 12.5
+ },
+ {
+  "dpr": 2,
+  "icon": 15,
+  "box": 33,
+  "name": "inline-flex center/center",
+  "dx": 0,
+  "dy": 0,
+  "inkW": 13,
+  "expectedInkW": 12.5
+ },
+ {
+  "dpr": 2,
+  "icon": 15,
+  "box": 33,
+  "name": "inline-grid place-items:center",
+  "dx": 0,
+  "dy": 0,
+  "inkW": 13,
+  "expectedInkW": 12.5
+ },
+ {
+  "dpr": 2,
+  "icon": 15,
+  "box": 33,
+  "name": "<button> UA defaults + inline svg",
+  "dx": 0,
+  "dy": -1,
+  "inkW": 13,
+  "expectedInkW": 12.5
+ },
+ {
+  "dpr": 2,
+  "icon": 15,
+  "box": 33,
+  "name": "inline-block box, text-align:center, line-height = box height, svg vertical-align:middle",
+  "dx": 0,
+  "dy": 1,
+  "inkW": 13,
+  "expectedInkW": 12.5
+ },
+ {
+  "dpr": 2,
+  "icon": 15,
+  "box": 33,
+  "name": "<button> inline-flex center/center, padding:0",
+  "dx": 0,
+  "dy": 0,
+  "inkW": 13,
+  "expectedInkW": 12.5
+ },
+ {
+  "dpr": 2,
+  "icon": 20,
+  "box": 36,
+  "name": "inline-block box + inline svg (baseline trap)",
+  "dx": 0,
+  "dy": -8,
+  "inkW": 17,
+  "expectedInkW": 16.67
+ },
+ {
+  "dpr": 2,
+  "icon": 20,
+  "box": 36,
+  "name": "same, svg display:block + margin:auto",
+  "dx": 0,
+  "dy": 0,
+  "inkW": 17,
+  "expectedInkW": 16.67
+ },
+ {
+  "dpr": 2,
+  "icon": 20,
+  "box": 36,
+  "name": "inline-block box line-height:0 + svg",
+  "dx": 0,
+  "dy": -8,
+  "inkW": 17,
+  "expectedInkW": 16.67
+ },
+ {
+  "dpr": 2,
+  "icon": 20,
+  "box": 36,
+  "name": "inline-block + svg vertical-align:middle",
+  "dx": 0,
+  "dy": 1,
+  "inkW": 17,
+  "expectedInkW": 16.67
+ },
+ {
+  "dpr": 2,
+  "icon": 20,
+  "box": 36,
+  "name": "inline-flex center/center",
+  "dx": 0,
+  "dy": 0,
+  "inkW": 17,
+  "expectedInkW": 16.67
+ },
+ {
+  "dpr": 2,
+  "icon": 20,
+  "box": 36,
+  "name": "inline-grid place-items:center",
+  "dx": 0,
+  "dy": 0,
+  "inkW": 17,
+  "expectedInkW": 16.67
+ },
+ {
+  "dpr": 2,
+  "icon": 20,
+  "box": 36,
+  "name": "<button> UA defaults + inline svg",
+  "dx": 0,
+  "dy": -1,
+  "inkW": 17,
+  "expectedInkW": 16.67
+ },
+ {
+  "dpr": 2,
+  "icon": 20,
+  "box": 36,
+  "name": "inline-block box, text-align:center, line-height = box height, svg vertical-align:middle",
+  "dx": 0,
+  "dy": 1,
+  "inkW": 17,
+  "expectedInkW": 16.67
+ },
+ {
+  "dpr": 2,
+  "icon": 20,
+  "box": 36,
+  "name": "<button> inline-flex center/center, padding:0",
+  "dx": 0,
+  "dy": 0,
+  "inkW": 17,
+  "expectedInkW": 16.67
+ },
+ {
+  "dpr": 2,
+  "icon": 14,
+  "box": 28,
+  "name": "inline-block box + inline svg (baseline trap)",
+  "dx": 0,
+  "dy": -6,
+  "inkW": 12,
+  "expectedInkW": 11.67
+ },
+ {
+  "dpr": 2,
+  "icon": 14,
+  "box": 28,
+  "name": "same, svg display:block + margin:auto",
+  "dx": 0,
+  "dy": 0,
+  "inkW": 12,
+  "expectedInkW": 11.67
+ },
+ {
+  "dpr": 2,
+  "icon": 14,
+  "box": 28,
+  "name": "inline-block box line-height:0 + svg",
+  "dx": 0,
+  "dy": -7,
+  "inkW": 12,
+  "expectedInkW": 11.67
+ },
+ {
+  "dpr": 2,
+  "icon": 14,
+  "box": 28,
+  "name": "inline-block + svg vertical-align:middle",
+  "dx": 0,
+  "dy": 1,
+  "inkW": 12,
+  "expectedInkW": 11.67
+ },
+ {
+  "dpr": 2,
+  "icon": 14,
+  "box": 28,
+  "name": "inline-flex center/center",
+  "dx": 0,
+  "dy": 0,
+  "inkW": 12,
+  "expectedInkW": 11.67
+ },
+ {
+  "dpr": 2,
+  "icon": 14,
+  "box": 28,
+  "name": "inline-grid place-items:center",
+  "dx": 0,
+  "dy": 0,
+  "inkW": 12,
+  "expectedInkW": 11.67
+ },
+ {
+  "dpr": 2,
+  "icon": 14,
+  "box": 28,
+  "name": "<button> UA defaults + inline svg",
+  "dx": 0,
+  "dy": -1,
+  "inkW": 12,
+  "expectedInkW": 11.67
+ },
+ {
+  "dpr": 2,
+  "icon": 14,
+  "box": 28,
+  "name": "inline-block box, text-align:center, line-height = box height, svg vertical-align:middle",
+  "dx": 0,
+  "dy": 1,
+  "inkW": 12,
+  "expectedInkW": 11.67
+ },
+ {
+  "dpr": 2,
+  "icon": 14,
+  "box": 28,
+  "name": "<button> inline-flex center/center, padding:0",
+  "dx": 0,
+  "dy": 0,
+  "inkW": 12,
+  "expectedInkW": 11.67
+ }
+]

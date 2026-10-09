@@ -1,0 +1,1599 @@
+{
+ "url": "https://vercel.com",
+ "scheme": "light",
+ "pageHeight": 5333,
+ "fold": {
+  "title": "Agentic Infrastructure - Vercel",
+  "vw": 1440,
+  "pageHeight": 5333,
+  "colorScheme": {
+   "html": "light",
+   "body": "light",
+   "metaTheme": "#FAFAFA",
+   "htmlClass": "VEU71W_className M8bjnG_className VEU71W_variable M8bjnG_variable light-theme",
+   "dataTheme": null
+  },
+  "pageBg": "#fafafa",
+  "pageBgOklabL": 0.985,
+  "pageBgOklabC": 0,
+  "pageBgOklabH": 90,
+  "cssVarCount": 967,
+  "cssVars": [
+   [
+    ":root, :host --color-red-50",
+    "lab(96.5005% 4.18508 1.52328)"
+   ],
+   [
+    ":root, :host --color-amber-50",
+    "lab(98.6252% -.635922 8.42309)"
+   ],
+   [
+    ":root, :host --color-yellow-500",
+    "lab(76.3898% 14.5258 98.4589)"
+   ],
+   [
+    ":root, :host --color-indigo-600",
+    "lab(38.4009% 52.6132 -92.3857)"
+   ],
+   [
+    ":root, :host --color-slate-300",
+    "lab(84.7652% -1.94535 -7.93337)"
+   ],
+   [
+    ":root, :host --color-gray-50",
+    "lab(98.2596% -.247031 -.706708)"
+   ],
+   [
+    ":root, :host --color-gray-200",
+    "var(--ds-gray-200)"
+   ],
+   [
+    ":root, :host --color-gray-300",
+    "var(--ds-gray-300)"
+   ],
+   [
+    ":root, :host --color-gray-500",
+    "var(--ds-gray-500)"
+   ],
+   [
+    ":root, :host --color-gray-600",
+    "var(--ds-gray-600)"
+   ],
+   [
+    ":root, :host --color-gray-700",
+    "var(--ds-gray-700)"
+   ],
+   [
+    ":root, :host --color-gray-800",
+    "var(--ds-gray-800)"
+   ],
+   [
+    ":root, :host --color-gray-900",
+    "var(--ds-gray-900)"
+   ],
+   [
+    ":root, :host --color-gray-950",
+    "lab(1.90334% .278696 -5.48866)"
+   ],
+   [
+    ":root, :host --color-zinc-100",
+    "lab(96.1634% .0993311 -.364041)"
+   ],
+   [
+    ":root, :host --color-zinc-600",
+    "lab(35.1166% 1.78212 -6.1173)"
+   ],
+   [
+    ":root, :host --color-zinc-900",
+    "lab(8.30603% .618205 -2.16572)"
+   ],
+   [
+    ":root, :host --color-neutral-700",
+    "lab(27.036% 0 0)"
+   ],
+   [
+    ":root, :host --color-neutral-800",
+    "lab(15.204% 0 -.00000596046)"
+   ],
+   [
+    ":root, :host --drop-shadow-md",
+    "0 3px 3px #0000001f"
+   ],
+   [
+    ":root, :host --drop-shadow-lg",
+    "0 4px 4px #00000026"
+   ],
+   [
+    ":root, :host --color-background-100",
+    "var(--ds-background-100)"
+   ],
+   [
+    ":root, :host --color-gray-1000",
+    "var(--ds-gray-1000)"
+   ],
+   [
+    ":root, :host --color-gray-alpha-400",
+    "var(--ds-gray-alpha-400)"
+   ],
+   [
+    ".dark\\:from-gray-100:where(.dark-theme,  --tw-gradient-from",
+    "var(--ds-gray-100)"
+   ],
+   [
+    ".dark\\:from-gray-100:where(.dark-theme,  --tw-gradient-stops",
+    "var(--tw-gradient-via-stops,var(--tw-gradient-position), var(--tw-gradient-from)"
+   ],
+   [
+    ".dark\\:from-gray-200:where(.dark-theme,  --tw-gradient-from",
+    "var(--ds-gray-200)"
+   ],
+   [
+    ".dark\\:from-gray-200:where(.dark-theme,  --tw-gradient-stops",
+    "var(--tw-gradient-via-stops,var(--tw-gradient-position), var(--tw-gradient-from)"
+   ],
+   [
+    ".dark\\:to-background-100:where(.dark-the --tw-gradient-to",
+    "var(--ds-background-100)"
+   ],
+   [
+    ".dark\\:to-background-100:where(.dark-the --tw-gradient-stops",
+    "var(--tw-gradient-via-stops,var(--tw-gradient-position), var(--tw-gradient-from)"
+   ],
+   [
+    ".dark\\:to-background-200:where(.dark-the --tw-gradient-to",
+    "var(--ds-background-200)"
+   ],
+   [
+    ".dark\\:to-background-200:where(.dark-the --tw-gradient-stops",
+    "var(--tw-gradient-via-stops,var(--tw-gradient-position), var(--tw-gradient-from)"
+   ],
+   [
+    ".dark\\:shadow-\\[0_0\\.012em_0\\.025em_rgb\\ --tw-shadow",
+    "0 .012em .025em var(--tw-shadow-color,#00000029), 0 .035em .1em var(--tw-shadow-"
+   ],
+   [
+    ".dark\\:shadow-\\[0_0\\.025em_0\\.04em_rgb\\( --tw-shadow",
+    "0 .025em .04em var(--tw-shadow-color,#00000052), 0 .11em .3em var(--tw-shadow-co"
+   ],
+   [
+    ".dark\\:shadow-\\[0_0_0_1px_var\\(--ds-gray --tw-shadow",
+    "0 0 0 1px var(--tw-shadow-color,var(--ds-gray-600))"
+   ],
+   [
+    ".dark\\:shadow-\\[0_8px_30px_rgba\\(0\\,0\\,0 --tw-shadow",
+    "0 8px 30px var(--tw-shadow-color,#00000059)"
+   ],
+   [
+    ".dark\\:shadow-\\[0px_0px_0px_1px_\\#fff\\]: --tw-shadow",
+    "0px 0px 0px 1px var(--tw-shadow-color,#fff)"
+   ],
+   [
+    ".dark\\:shadow-\\[0px_0px_0px_1px_rgba\\(31 --tw-shadow",
+    "0px 0px 0px 1px var(--tw-shadow-color,#1f1f1f)"
+   ],
+   [
+    ".dark\\:shadow-\\[0px_0px_0px_1px_var\\(--d --tw-shadow",
+    "0px 0px 0px 1px var(--tw-shadow-color,var(--ds-gray-400))"
+   ],
+   [
+    ".dark\\:shadow-border:where(.dark-theme,  --tw-shadow",
+    "var(--ds-shadow-border)"
+   ],
+   [
+    ".dark\\:ring-gray-700:where(.dark-theme,  --tw-ring-color",
+    "var(--ds-gray-700)"
+   ],
+   [
+    ".dark\\:drop-shadow-\\[0_-3px_6px_rgb\\(0_0 --tw-drop-shadow-size",
+    "drop-shadow(0 -3px 6px var(--tw-drop-shadow-color,#00000080))"
+   ],
+   [
+    ".dark\\:drop-shadow-\\[0_-3px_6px_rgb\\(0_0 --tw-drop-shadow",
+    "var(--tw-drop-shadow-size)"
+   ],
+   [
+    ".dark\\:\\[--muted\\:\\#064b6b\\]:where(.dark --muted",
+    "#064b6b"
+   ],
+   [
+    ".dark\\:\\[--muted\\:\\#301a3a\\]:where(.dark --muted",
+    "#301a3a"
+   ],
+   [
+    ".dark\\:\\[--muted\\:\\#671e22\\]:where(.dark --muted",
+    "#671e22"
+   ],
+   [
+    ".dark\\:\\[--muted\\:\\#193921\\]:where(.dark --muted",
+    "#193921"
+   ],
+   [
+    ".dark\\:\\[--peel-crease\\:var\\(--ds-gray-1 --peel-crease",
+    "var(--ds-gray-100)"
+   ],
+   [
+    ".dark\\:\\[--peel-paper\\:var\\(--ds-gray-30 --peel-paper",
+    "var(--ds-gray-300)"
+   ],
+   [
+    ".dark\\:\\[--peel-shade\\:var\\(--ds-gray-20 --peel-shade",
+    "var(--ds-gray-200)"
+   ],
+   [
+    ".dark\\:\\[--tail-background\\:var\\(--ds-ba --tail-background",
+    "var(--ds-background-200)"
+   ],
+   [
+    ".dark\\:\\[--tail-border\\:var\\(--tail-bord --tail-border",
+    "var(--tail-border-dark)"
+   ],
+   [
+    ".dark\\:\\[--wallet-surface\\:var\\(--ds-blu --wallet-surface",
+    "var(--ds-blue-500)"
+   ],
+   [
+    ".dark\\:group-hover\\/slider\\:shadow-\\[0_0 --tw-shadow",
+    "0 0 0 1px var(--tw-shadow-color,var(--ds-gray-600))"
+   ],
+   [
+    ".dark\\:hover\\:shadow-\\[0px_0px_0px_1px_v --tw-shadow",
+    "0px 0px 0px 1px var(--tw-shadow-color,var(--ds-gray-400))"
+   ],
+   [
+    ".dark-theme\\:shadow-\\[0_0_0_1px_var\\(--d --tw-shadow",
+    "0 0 0 1px var(--tw-shadow-color,var(--ds-gray-alpha-600)), 0px 0px 0px 4px var(-"
+   ],
+   [
+    ".dark-theme\\:shadow-\\[var\\(--ds-shadow-b --tw-shadow",
+    "var(--ds-shadow-border)"
+   ],
+   [
+    ".dark-theme\\:ring-black:where(.dark-them --tw-ring-color",
+    "var(--ds-black)"
+   ],
+   [
+    ".dark-theme\\:\\[--context-card-tip-stroke --context-card-tip-stroke",
+    "#252525"
+   ],
+   [
+    ".dark-theme\\:focus\\:shadow-\\[0_0_0_1px_v --tw-shadow",
+    "0 0 0 1px var(--tw-shadow-color,var(--ds-gray-600)), 0px 0px 0px 4px var(--tw-sh"
+   ],
+   [
+    ".dark-theme\\:has-\\[\\:focus\\]\\:\\!shadow-\\ --tw-shadow",
+    "0 0 0 1px var(--tw-shadow-color,var(--ds-gray-alpha-600)), 0px 0px 0px 4px var(-"
+   ],
+   [
+    ".dark-theme\\:data-\\[focus\\]\\:\\!shadow-\\[ --tw-shadow",
+    "0 0 0 1px var(--tw-shadow-color,var(--ds-gray-600)), 0px 0px 0px 4px var(--tw-sh"
+   ],
+   [
+    ":root, .light-theme, .dark .invert-theme --ds-pink-100",
+    "lab(94.5133% 11.6709 -3.49871)"
+   ],
+   [
+    ":root, .light-theme, .dark .invert-theme --ds-pink-200",
+    "lab(94.6026% 10.7321 -1.35195)"
+   ],
+   [
+    ":root, .light-theme, .dark .invert-theme --ds-pink-300",
+    "lab(92.2617% 15.1106 -.957537)"
+   ],
+   [
+    ":root, .light-theme, .dark .invert-theme --ds-pink-400",
+    "lab(88.9731% 19.1876 -.249231)"
+   ],
+   [
+    ":root, .light-theme, .dark .invert-theme --ds-pink-500",
+    "lab(80.5902% 30.3695 -1.5003)"
+   ],
+   [
+    ":root, .light-theme, .dark .invert-theme --ds-pink-600",
+    "lab(68.2806% 50.7706 .897086)"
+   ],
+   [
+    ":root, .light-theme, .dark .invert-theme --ds-pink-700",
+    "lab(54.7091% 76.7064 2.85504)"
+   ],
+   [
+    ":root, .light-theme, .dark .invert-theme --ds-pink-800",
+    "lab(50.1788% 75.5319 8.12644)"
+   ],
+   [
+    ":root, .light-theme, .dark .invert-theme --ds-pink-900",
+    "lab(43.5237% 66.4129 5.12512)"
+   ],
+   [
+    ":root, .light-theme, .dark .invert-theme --ds-pink-1000",
+    "lab(12.9204% 31.3916 -.183001)"
+   ],
+   [
+    ".dark, .dark-theme, .invert-theme --ds-pink-100",
+    "oklch(22.67% .0628 354.73)"
+   ],
+   [
+    ".dark, .dark-theme, .invert-theme --ds-pink-200",
+    "oklch(26.2% .0859 356.68)"
+   ],
+   [
+    ".dark, .dark-theme, .invert-theme --ds-pink-300",
+    "oklch(31.15% .1067 355.93)"
+   ],
+   [
+    ".dark, .dark-theme, .invert-theme --ds-pink-400",
+    "oklch(32.13% .1174 356.71)"
+   ],
+   [
+    ".dark, .dark-theme, .invert-theme --ds-pink-500",
+    "oklch(37.01% .1453 358.39)"
+   ],
+   [
+    ".dark, .dark-theme, .invert-theme --ds-pink-600",
+    "oklch(50.33% .2089 4.33)"
+   ],
+   [
+    ".dark, .dark-theme, .invert-theme --ds-pink-700",
+    "oklch(63.52% .2346 1.01)"
+   ],
+   [
+    ".dark, .dark-theme, .invert-theme --ds-pink-800",
+    "oklch(59.51% .2429 4.21)"
+   ],
+   [
+    ".dark, .dark-theme, .invert-theme --ds-pink-900",
+    "oklch(69.36% .2223 3.91)"
+   ],
+   [
+    ".dark, .dark-theme, .invert-theme --ds-pink-1000",
+    "oklch(95.74% .0326 350.08)"
+   ],
+   [
+    ":root, :host --geist-text-gradient",
+    "linear-gradient(180deg, #000c 0%, #000 100%)"
+   ],
+   [
+    ":root, :host --header-border-bottom",
+    "0 1px 0 0 #0000001a"
+   ],
+   [
+    ":root, :host --header-import-flow-background",
+    "#fafafacc"
+   ],
+   [
+    ":root, :host --ds-shadow-background-border",
+    "0 0 0 1px var(--ds-background-200)"
+   ],
+   [
+    ":root, :host --ds-shadow-border-base",
+    "0 0 0 1px #00000014"
+   ],
+   [
+    ":root, :host --ds-shadow-border-inset",
+    "inset 0 0 0 1px #00000014"
+   ],
+   [
+    ":root, :host --ds-shadow-border",
+    "var(--ds-shadow-border-base), var(--ds-shadow-background-border)"
+   ],
+   [
+    ":root, :host --ds-shadow-2xs",
+    "0px 1px 1px #0000000a"
+   ],
+   [
+    ":root, :host --ds-shadow-xs",
+    "0px 1px 2px #0000000a"
+   ],
+   [
+    ":root, :host --ds-shadow-small",
+    "0px 2px 2px #0000000a"
+   ],
+   [
+    ":root, :host --ds-shadow-border-small",
+    "var(--ds-shadow-border-base), var(--ds-shadow-small), var(--ds-shadow-background"
+   ],
+   [
+    ":root, :host --ds-shadow-medium",
+    "0px 2px 2px #0000000a, 0px 8px 8px -8px #0000000a"
+   ],
+   [
+    ":root, :host --ds-shadow-border-medium",
+    "var(--ds-shadow-border-base), var(--ds-shadow-medium), var(--ds-shadow-backgroun"
+   ],
+   [
+    ":root, :host --ds-shadow-large",
+    "0px 2px 2px #0000000a, 0px 8px 16px -4px #0000000a"
+   ],
+   [
+    ":root, :host --ds-shadow-border-large",
+    "var(--ds-shadow-border-base), var(--ds-shadow-large), var(--ds-shadow-background"
+   ],
+   [
+    ":root, :host --ds-shadow-xl",
+    "0px 1px 1px #00000005, 0px 4px 8px -4px #0000000a, 0px 16px 24px -8px #0000000f"
+   ],
+   [
+    ":root, :host --ds-shadow-2xl",
+    "0px 1px 1px #00000005, 0px 8px 16px -4px #0000000a, 0px 24px 32px -8px #0000000f"
+   ],
+   [
+    ":root, :host --ds-shadow-tooltip",
+    "var(--ds-shadow-border-base), 0px 1px 1px #00000005, 0px 4px 8px #0000000a, var("
+   ],
+   [
+    ":root, :host --ds-shadow-menu",
+    "var(--ds-shadow-border-base), 0px 1px 1px #00000005, 0px 4px 8px -4px #0000000a,"
+   ],
+   [
+    ":root, :host --ds-shadow-modal",
+    "var(--ds-shadow-border-base), 0px 1px 1px #00000005, 0px 8px 16px -4px #0000000a"
+   ],
+   [
+    ":root, :host --ds-shadow-modal-elevated",
+    "0px 0px 0px 1px #00000014, 0px 32px 72px -12px #0000000f, 0px 8px 32px -12px #00"
+   ],
+   [
+    ":root, :host --ds-shadow-fullscreen",
+    "var(--ds-shadow-border-base), 0px 1px 1px #00000005, 0px 8px 16px -4px #0000000a"
+   ],
+   [
+    ":root, :host --ds-focus-ring-outline",
+    "2px solid var(--ds-focus-color)"
+   ],
+   [
+    ":root, :host --ds-overlay-backdrop-color",
+    "var(--ds-gray-100)"
+   ],
+   [
+    ":root, :host --ds-motion-overlay-timing",
+    "var(--ds-motion-timing-swift)"
+   ],
+   [
+    ":root, :host, .dark .invert-theme, .dark --geist-violet-background",
+    "#fff"
+   ],
+   [
+    ":root, :host, .dark .invert-theme, .dark --geist-violet-background-secondary",
+    "#291c3a"
+   ],
+   [
+    ":root, :host, .dark .invert-theme, .dark --geist-violet-background-tertiary",
+    "#eae5f4"
+   ],
+   [
+    ":root, :host, .dark .invert-theme, .dark --geist-console-text-color-default",
+    "var(--geist-foreground)"
+   ],
+   [
+    ":root, :host, .dark .invert-theme, .dark --geist-console-text-color-blue",
+    "#0070f3"
+   ],
+   [
+    ":root, :host, .dark .invert-theme, .dark --geist-console-text-color-pink",
+    "#eb367f"
+   ],
+   [
+    ":root, :host, .dark .invert-theme, .dark --geist-console-text-color-purple",
+    "#7928ca"
+   ],
+   [
+    ":root, :host, .dark .invert-theme, .dark --geist-highlight-pink",
+    "#ff0080"
+   ],
+   [
+    ":root, :host, .dark .invert-theme, .dark --geist-foreground",
+    "#000"
+   ],
+   [
+    ":root, :host, .dark .invert-theme, .dark --geist-background",
+    "#fff"
+   ],
+   [
+    ":root, :host, .dark .invert-theme, .dark --geist-selection-text-color",
+    "var(--ds-gray-100)"
+   ],
+   [
+    ":root, :host, .dark .invert-theme, .dark --accents-1",
+    "#fafafa"
+   ],
+   [
+    ":root, :host, .dark .invert-theme, .dark --accents-2",
+    "#eaeaea"
+   ]
+  ],
+  "surfaces": [
+   {
+    "hex": "#fafafa",
+    "L": 0.985,
+    "C": 0,
+    "H": 90,
+    "n": 3,
+    "area": 780900,
+    "ex": [
+     "a.cursor-pointer",
+     "a.cursor-pointer"
+    ]
+   },
+   {
+    "hex": "#ffffff",
+    "L": 1,
+    "C": 0,
+    "H": 90,
+    "n": 4,
+    "area": 187093,
+    "ex": [
+     "a.outline-none",
+     "a.outline-none"
+    ]
+   },
+   {
+    "hex": "#171717",
+    "L": 0.205,
+    "C": 0,
+    "H": 90,
+    "n": 3,
+    "area": 122334,
+    "ex": [
+     "a.outline-none",
+     "div.light-theme"
+    ]
+   }
+  ],
+  "overlays": [],
+  "borders": [],
+  "radii": [
+   [
+    "3.35544e+07px",
+    17
+   ],
+   [
+    "6px",
+    9
+   ],
+   [
+    "100%",
+    1
+   ],
+   [
+    "4px",
+    1
+   ]
+  ],
+  "shadows": [
+   {
+    "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px, rgb(250, 250, 250) 0px 0px 0px 1px",
+    "n": 5
+   },
+   {
+    "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(235, 235, 235) 0px 0px 0px 1px",
+    "n": 4
+   },
+   {
+    "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(235, 235, 235) 0px 0px 0px 1px inset",
+    "n": 3
+   }
+  ],
+  "nShadowEls": 12,
+  "textColors": [
+   {
+    "color": "rgb(23, 23, 23)",
+    "chars": 472,
+    "n": 54,
+    "fg": "#171717",
+    "alpha": 1,
+    "contrast": 17.93,
+    "L": 0.205,
+    "bg": "#ffffff",
+    "size": "14px",
+    "weight": "500",
+    "ex": "Get a Demo"
+   },
+   {
+    "color": "rgb(77, 77, 77)",
+    "chars": 176,
+    "n": 95,
+    "fg": "#4d4d4d",
+    "alpha": 1,
+    "contrast": 8.1,
+    "L": 0.42,
+    "bg": "#fafafa",
+    "size": "14px",
+    "weight": "400",
+    "ex": "Products"
+   },
+   {
+    "color": "rgb(255, 255, 255)",
+    "chars": 17,
+    "n": 3,
+    "fg": "#ffffff",
+    "alpha": 1,
+    "contrast": 17.93,
+    "L": 1,
+    "bg": "#171717",
+    "size": "14px",
+    "weight": "500",
+    "ex": "Sign Up"
+   },
+   {
+    "color": "rgb(201, 201, 201)",
+    "chars": 0,
+    "n": 6,
+    "fg": "#c9c9c9",
+    "alpha": 1,
+    "contrast": 10.83,
+    "L": 0.836,
+    "bg": "#171717",
+    "size": "14px",
+    "weight": "400",
+    "ex": ""
+   },
+   {
+    "color": "rgb(41, 122, 58)",
+    "chars": 0,
+    "n": 3,
+    "fg": "#297a3a",
+    "alpha": 1,
+    "contrast": 5.33,
+    "L": 0.515,
+    "bg": "#ffffff",
+    "size": "12px",
+    "weight": "400",
+    "ex": ""
+   },
+   {
+    "color": "rgb(102, 102, 102)",
+    "chars": 0,
+    "n": 1,
+    "fg": "#666666",
+    "alpha": 1,
+    "contrast": 5.5,
+    "L": 0.51,
+    "bg": "#fafafa",
+    "size": "12px",
+    "weight": "500",
+    "ex": ""
+   },
+   {
+    "color": "rgb(143, 143, 143)",
+    "chars": 0,
+    "n": 3,
+    "fg": "#8f8f8f",
+    "alpha": 1,
+    "contrast": 3.1,
+    "L": 0.65,
+    "bg": "#fafafa",
+    "size": "14px",
+    "weight": "400",
+    "ex": ""
+   }
+  ],
+  "h1": {
+   "text": "Agentic Infrastructure",
+   "family": "GeistSans, \"GeistSans Fallback\"",
+   "size": "64px",
+   "weight": "400",
+   "lh": "64px",
+   "ls": "-3.84px",
+   "color": "rgb(23, 23, 23)",
+   "smooth": "antialiased",
+   "bgClip": "border-box",
+   "bgImage": "none",
+   "textShadow": null
+  },
+  "body": {
+   "text": "Skip to content\nProducts\nResources\nEnterprise\nPricing\nGet a ",
+   "family": "GeistSans, \"GeistSans Fallback\"",
+   "size": "16px",
+   "weight": "400",
+   "lh": "24px",
+   "ls": "normal",
+   "color": "rgb(23, 23, 23)",
+   "smooth": "antialiased",
+   "bgClip": "border-box",
+   "bgImage": "none",
+   "textShadow": null
+  },
+  "bodySmoothing": "antialiased",
+  "textRendering": "optimizelegibility",
+  "heroP": null,
+  "ctas": [
+   {
+    "text": "Get a Demo",
+    "h": 32,
+    "kind": "filled",
+    "bg": "rgb(255, 255, 255)",
+    "color": "rgb(23, 23, 23)",
+    "border": null,
+    "radius": "6px",
+    "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(235, 235, 235) 0px 0px 0px 1px",
+    "bgImage": null,
+    "size": "14px",
+    "weight": "500"
+   },
+   {
+    "text": "Log In",
+    "h": 32,
+    "kind": "filled",
+    "bg": "rgb(255, 255, 255)",
+    "color": "rgb(23, 23, 23)",
+    "border": null,
+    "radius": "6px",
+    "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(235, 235, 235) 0px 0px 0px 1px",
+    "bgImage": null,
+    "size": "14px",
+    "weight": "500"
+   },
+   {
+    "text": "Sign Up",
+    "h": 32,
+    "kind": "filled",
+    "bg": "rgb(23, 23, 23)",
+    "color": "rgb(255, 255, 255)",
+    "border": null,
+    "radius": "6px",
+    "shadow": null,
+    "bgImage": null,
+    "size": "14px",
+    "weight": "500"
+   },
+   {
+    "text": "Deploy now",
+    "h": 40,
+    "kind": "filled",
+    "bg": "rgb(23, 23, 23)",
+    "color": "rgb(255, 255, 255)",
+    "border": null,
+    "radius": "3.35544e+07px",
+    "shadow": null,
+    "bgImage": null,
+    "size": "16px",
+    "weight": "500"
+   },
+   {
+    "text": "Talk to sales",
+    "h": 40,
+    "kind": "filled",
+    "bg": "rgb(255, 255, 255)",
+    "color": "rgb(23, 23, 23)",
+    "border": null,
+    "radius": "3.35544e+07px",
+    "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(235, 235, 235) 0px 0px 0px 1px",
+    "bgImage": null,
+    "size": "16px",
+    "weight": "500"
+   }
+  ],
+  "nav": {
+   "h": 64,
+   "bg": "rgba(0, 0, 0, 0)",
+   "backdrop": "none",
+   "bb": "0px solid rgb(235, 235, 235)",
+   "shadow": null,
+   "linkColor": "rgb(23, 23, 23)"
+  },
+  "effects": {
+   "radial": 1,
+   "conic": 0,
+   "linear": 6,
+   "urlbg": 0,
+   "blurEls": 3,
+   "backdropEls": 0,
+   "mixBlend": 1,
+   "maskEls": 2,
+   "gradEx": [
+    "radial-gradient(circle at 0% 0%, rgb(250, 250, 250) 0%, rgba(0, 0, 0, 0) 30%), radial-gradient(circle at 100% 0%, rgb(250, 250, 250) 0%, rgba(0, 0, 0, 0) 30%), radial-gradient(circle at 100% 100%, rgb(250, 250, 250) 0%, "
+   ],
+   "canvas": 1,
+   "video": 0,
+   "svg": 47,
+   "img": 19
+  },
+  "noise": true,
+  "gradientHeadings": 0,
+  "accents": [
+   {
+    "hex": "#297a3a",
+    "n": 3,
+    "L": 0.515,
+    "C": 0.125,
+    "H": 147
+   }
+  ]
+ },
+ "full": {
+  "title": "Agentic Infrastructure - Vercel",
+  "vw": 1440,
+  "pageHeight": 5930,
+  "colorScheme": {
+   "html": "light",
+   "body": "light",
+   "metaTheme": "#FAFAFA",
+   "htmlClass": "VEU71W_className M8bjnG_className VEU71W_variable M8bjnG_variable light-theme",
+   "dataTheme": null
+  },
+  "pageBg": "#fafafa",
+  "pageBgOklabL": 0.985,
+  "pageBgOklabC": 0,
+  "pageBgOklabH": 90,
+  "cssVarCount": 967,
+  "cssVars": [
+   [
+    ":root, :host --color-red-50",
+    "lab(96.5005% 4.18508 1.52328)"
+   ],
+   [
+    ":root, :host --color-amber-50",
+    "lab(98.6252% -.635922 8.42309)"
+   ],
+   [
+    ":root, :host --color-yellow-500",
+    "lab(76.3898% 14.5258 98.4589)"
+   ],
+   [
+    ":root, :host --color-indigo-600",
+    "lab(38.4009% 52.6132 -92.3857)"
+   ],
+   [
+    ":root, :host --color-slate-300",
+    "lab(84.7652% -1.94535 -7.93337)"
+   ],
+   [
+    ":root, :host --color-gray-50",
+    "lab(98.2596% -.247031 -.706708)"
+   ],
+   [
+    ":root, :host --color-gray-200",
+    "var(--ds-gray-200)"
+   ],
+   [
+    ":root, :host --color-gray-300",
+    "var(--ds-gray-300)"
+   ],
+   [
+    ":root, :host --color-gray-500",
+    "var(--ds-gray-500)"
+   ],
+   [
+    ":root, :host --color-gray-600",
+    "var(--ds-gray-600)"
+   ],
+   [
+    ":root, :host --color-gray-700",
+    "var(--ds-gray-700)"
+   ],
+   [
+    ":root, :host --color-gray-800",
+    "var(--ds-gray-800)"
+   ],
+   [
+    ":root, :host --color-gray-900",
+    "var(--ds-gray-900)"
+   ],
+   [
+    ":root, :host --color-gray-950",
+    "lab(1.90334% .278696 -5.48866)"
+   ],
+   [
+    ":root, :host --color-zinc-100",
+    "lab(96.1634% .0993311 -.364041)"
+   ],
+   [
+    ":root, :host --color-zinc-600",
+    "lab(35.1166% 1.78212 -6.1173)"
+   ],
+   [
+    ":root, :host --color-zinc-900",
+    "lab(8.30603% .618205 -2.16572)"
+   ],
+   [
+    ":root, :host --color-neutral-700",
+    "lab(27.036% 0 0)"
+   ],
+   [
+    ":root, :host --color-neutral-800",
+    "lab(15.204% 0 -.00000596046)"
+   ],
+   [
+    ":root, :host --drop-shadow-md",
+    "0 3px 3px #0000001f"
+   ],
+   [
+    ":root, :host --drop-shadow-lg",
+    "0 4px 4px #00000026"
+   ],
+   [
+    ":root, :host --color-background-100",
+    "var(--ds-background-100)"
+   ],
+   [
+    ":root, :host --color-gray-1000",
+    "var(--ds-gray-1000)"
+   ],
+   [
+    ":root, :host --color-gray-alpha-400",
+    "var(--ds-gray-alpha-400)"
+   ],
+   [
+    ".dark\\:from-gray-100:where(.dark-theme,  --tw-gradient-from",
+    "var(--ds-gray-100)"
+   ],
+   [
+    ".dark\\:from-gray-100:where(.dark-theme,  --tw-gradient-stops",
+    "var(--tw-gradient-via-stops,var(--tw-gradient-position), var(--tw-gradient-from)"
+   ],
+   [
+    ".dark\\:from-gray-200:where(.dark-theme,  --tw-gradient-from",
+    "var(--ds-gray-200)"
+   ],
+   [
+    ".dark\\:from-gray-200:where(.dark-theme,  --tw-gradient-stops",
+    "var(--tw-gradient-via-stops,var(--tw-gradient-position), var(--tw-gradient-from)"
+   ],
+   [
+    ".dark\\:to-background-100:where(.dark-the --tw-gradient-to",
+    "var(--ds-background-100)"
+   ],
+   [
+    ".dark\\:to-background-100:where(.dark-the --tw-gradient-stops",
+    "var(--tw-gradient-via-stops,var(--tw-gradient-position), var(--tw-gradient-from)"
+   ],
+   [
+    ".dark\\:to-background-200:where(.dark-the --tw-gradient-to",
+    "var(--ds-background-200)"
+   ],
+   [
+    ".dark\\:to-background-200:where(.dark-the --tw-gradient-stops",
+    "var(--tw-gradient-via-stops,var(--tw-gradient-position), var(--tw-gradient-from)"
+   ],
+   [
+    ".dark\\:shadow-\\[0_0\\.012em_0\\.025em_rgb\\ --tw-shadow",
+    "0 .012em .025em var(--tw-shadow-color,#00000029), 0 .035em .1em var(--tw-shadow-"
+   ],
+   [
+    ".dark\\:shadow-\\[0_0\\.025em_0\\.04em_rgb\\( --tw-shadow",
+    "0 .025em .04em var(--tw-shadow-color,#00000052), 0 .11em .3em var(--tw-shadow-co"
+   ],
+   [
+    ".dark\\:shadow-\\[0_0_0_1px_var\\(--ds-gray --tw-shadow",
+    "0 0 0 1px var(--tw-shadow-color,var(--ds-gray-600))"
+   ],
+   [
+    ".dark\\:shadow-\\[0_8px_30px_rgba\\(0\\,0\\,0 --tw-shadow",
+    "0 8px 30px var(--tw-shadow-color,#00000059)"
+   ],
+   [
+    ".dark\\:shadow-\\[0px_0px_0px_1px_\\#fff\\]: --tw-shadow",
+    "0px 0px 0px 1px var(--tw-shadow-color,#fff)"
+   ],
+   [
+    ".dark\\:shadow-\\[0px_0px_0px_1px_rgba\\(31 --tw-shadow",
+    "0px 0px 0px 1px var(--tw-shadow-color,#1f1f1f)"
+   ],
+   [
+    ".dark\\:shadow-\\[0px_0px_0px_1px_var\\(--d --tw-shadow",
+    "0px 0px 0px 1px var(--tw-shadow-color,var(--ds-gray-400))"
+   ],
+   [
+    ".dark\\:shadow-border:where(.dark-theme,  --tw-shadow",
+    "var(--ds-shadow-border)"
+   ],
+   [
+    ".dark\\:ring-gray-700:where(.dark-theme,  --tw-ring-color",
+    "var(--ds-gray-700)"
+   ],
+   [
+    ".dark\\:drop-shadow-\\[0_-3px_6px_rgb\\(0_0 --tw-drop-shadow-size",
+    "drop-shadow(0 -3px 6px var(--tw-drop-shadow-color,#00000080))"
+   ],
+   [
+    ".dark\\:drop-shadow-\\[0_-3px_6px_rgb\\(0_0 --tw-drop-shadow",
+    "var(--tw-drop-shadow-size)"
+   ],
+   [
+    ".dark\\:\\[--muted\\:\\#064b6b\\]:where(.dark --muted",
+    "#064b6b"
+   ],
+   [
+    ".dark\\:\\[--muted\\:\\#301a3a\\]:where(.dark --muted",
+    "#301a3a"
+   ],
+   [
+    ".dark\\:\\[--muted\\:\\#671e22\\]:where(.dark --muted",
+    "#671e22"
+   ],
+   [
+    ".dark\\:\\[--muted\\:\\#193921\\]:where(.dark --muted",
+    "#193921"
+   ],
+   [
+    ".dark\\:\\[--peel-crease\\:var\\(--ds-gray-1 --peel-crease",
+    "var(--ds-gray-100)"
+   ],
+   [
+    ".dark\\:\\[--peel-paper\\:var\\(--ds-gray-30 --peel-paper",
+    "var(--ds-gray-300)"
+   ],
+   [
+    ".dark\\:\\[--peel-shade\\:var\\(--ds-gray-20 --peel-shade",
+    "var(--ds-gray-200)"
+   ],
+   [
+    ".dark\\:\\[--tail-background\\:var\\(--ds-ba --tail-background",
+    "var(--ds-background-200)"
+   ],
+   [
+    ".dark\\:\\[--tail-border\\:var\\(--tail-bord --tail-border",
+    "var(--tail-border-dark)"
+   ],
+   [
+    ".dark\\:\\[--wallet-surface\\:var\\(--ds-blu --wallet-surface",
+    "var(--ds-blue-500)"
+   ],
+   [
+    ".dark\\:group-hover\\/slider\\:shadow-\\[0_0 --tw-shadow",
+    "0 0 0 1px var(--tw-shadow-color,var(--ds-gray-600))"
+   ],
+   [
+    ".dark\\:hover\\:shadow-\\[0px_0px_0px_1px_v --tw-shadow",
+    "0px 0px 0px 1px var(--tw-shadow-color,var(--ds-gray-400))"
+   ],
+   [
+    ".dark-theme\\:shadow-\\[0_0_0_1px_var\\(--d --tw-shadow",
+    "0 0 0 1px var(--tw-shadow-color,var(--ds-gray-alpha-600)), 0px 0px 0px 4px var(-"
+   ],
+   [
+    ".dark-theme\\:shadow-\\[var\\(--ds-shadow-b --tw-shadow",
+    "var(--ds-shadow-border)"
+   ],
+   [
+    ".dark-theme\\:ring-black:where(.dark-them --tw-ring-color",
+    "var(--ds-black)"
+   ],
+   [
+    ".dark-theme\\:\\[--context-card-tip-stroke --context-card-tip-stroke",
+    "#252525"
+   ],
+   [
+    ".dark-theme\\:focus\\:shadow-\\[0_0_0_1px_v --tw-shadow",
+    "0 0 0 1px var(--tw-shadow-color,var(--ds-gray-600)), 0px 0px 0px 4px var(--tw-sh"
+   ],
+   [
+    ".dark-theme\\:has-\\[\\:focus\\]\\:\\!shadow-\\ --tw-shadow",
+    "0 0 0 1px var(--tw-shadow-color,var(--ds-gray-alpha-600)), 0px 0px 0px 4px var(-"
+   ],
+   [
+    ".dark-theme\\:data-\\[focus\\]\\:\\!shadow-\\[ --tw-shadow",
+    "0 0 0 1px var(--tw-shadow-color,var(--ds-gray-600)), 0px 0px 0px 4px var(--tw-sh"
+   ],
+   [
+    ":root, .light-theme, .dark .invert-theme --ds-pink-100",
+    "lab(94.5133% 11.6709 -3.49871)"
+   ],
+   [
+    ":root, .light-theme, .dark .invert-theme --ds-pink-200",
+    "lab(94.6026% 10.7321 -1.35195)"
+   ],
+   [
+    ":root, .light-theme, .dark .invert-theme --ds-pink-300",
+    "lab(92.2617% 15.1106 -.957537)"
+   ],
+   [
+    ":root, .light-theme, .dark .invert-theme --ds-pink-400",
+    "lab(88.9731% 19.1876 -.249231)"
+   ],
+   [
+    ":root, .light-theme, .dark .invert-theme --ds-pink-500",
+    "lab(80.5902% 30.3695 -1.5003)"
+   ],
+   [
+    ":root, .light-theme, .dark .invert-theme --ds-pink-600",
+    "lab(68.2806% 50.7706 .897086)"
+   ],
+   [
+    ":root, .light-theme, .dark .invert-theme --ds-pink-700",
+    "lab(54.7091% 76.7064 2.85504)"
+   ],
+   [
+    ":root, .light-theme, .dark .invert-theme --ds-pink-800",
+    "lab(50.1788% 75.5319 8.12644)"
+   ],
+   [
+    ":root, .light-theme, .dark .invert-theme --ds-pink-900",
+    "lab(43.5237% 66.4129 5.12512)"
+   ],
+   [
+    ":root, .light-theme, .dark .invert-theme --ds-pink-1000",
+    "lab(12.9204% 31.3916 -.183001)"
+   ],
+   [
+    ".dark, .dark-theme, .invert-theme --ds-pink-100",
+    "oklch(22.67% .0628 354.73)"
+   ],
+   [
+    ".dark, .dark-theme, .invert-theme --ds-pink-200",
+    "oklch(26.2% .0859 356.68)"
+   ],
+   [
+    ".dark, .dark-theme, .invert-theme --ds-pink-300",
+    "oklch(31.15% .1067 355.93)"
+   ],
+   [
+    ".dark, .dark-theme, .invert-theme --ds-pink-400",
+    "oklch(32.13% .1174 356.71)"
+   ],
+   [
+    ".dark, .dark-theme, .invert-theme --ds-pink-500",
+    "oklch(37.01% .1453 358.39)"
+   ],
+   [
+    ".dark, .dark-theme, .invert-theme --ds-pink-600",
+    "oklch(50.33% .2089 4.33)"
+   ],
+   [
+    ".dark, .dark-theme, .invert-theme --ds-pink-700",
+    "oklch(63.52% .2346 1.01)"
+   ],
+   [
+    ".dark, .dark-theme, .invert-theme --ds-pink-800",
+    "oklch(59.51% .2429 4.21)"
+   ],
+   [
+    ".dark, .dark-theme, .invert-theme --ds-pink-900",
+    "oklch(69.36% .2223 3.91)"
+   ],
+   [
+    ".dark, .dark-theme, .invert-theme --ds-pink-1000",
+    "oklch(95.74% .0326 350.08)"
+   ],
+   [
+    ":root, :host --geist-text-gradient",
+    "linear-gradient(180deg, #000c 0%, #000 100%)"
+   ],
+   [
+    ":root, :host --header-border-bottom",
+    "0 1px 0 0 #0000001a"
+   ],
+   [
+    ":root, :host --header-import-flow-background",
+    "#fafafacc"
+   ],
+   [
+    ":root, :host --ds-shadow-background-border",
+    "0 0 0 1px var(--ds-background-200)"
+   ],
+   [
+    ":root, :host --ds-shadow-border-base",
+    "0 0 0 1px #00000014"
+   ],
+   [
+    ":root, :host --ds-shadow-border-inset",
+    "inset 0 0 0 1px #00000014"
+   ],
+   [
+    ":root, :host --ds-shadow-border",
+    "var(--ds-shadow-border-base), var(--ds-shadow-background-border)"
+   ],
+   [
+    ":root, :host --ds-shadow-2xs",
+    "0px 1px 1px #0000000a"
+   ],
+   [
+    ":root, :host --ds-shadow-xs",
+    "0px 1px 2px #0000000a"
+   ],
+   [
+    ":root, :host --ds-shadow-small",
+    "0px 2px 2px #0000000a"
+   ],
+   [
+    ":root, :host --ds-shadow-border-small",
+    "var(--ds-shadow-border-base), var(--ds-shadow-small), var(--ds-shadow-background"
+   ],
+   [
+    ":root, :host --ds-shadow-medium",
+    "0px 2px 2px #0000000a, 0px 8px 8px -8px #0000000a"
+   ],
+   [
+    ":root, :host --ds-shadow-border-medium",
+    "var(--ds-shadow-border-base), var(--ds-shadow-medium), var(--ds-shadow-backgroun"
+   ],
+   [
+    ":root, :host --ds-shadow-large",
+    "0px 2px 2px #0000000a, 0px 8px 16px -4px #0000000a"
+   ],
+   [
+    ":root, :host --ds-shadow-border-large",
+    "var(--ds-shadow-border-base), var(--ds-shadow-large), var(--ds-shadow-background"
+   ],
+   [
+    ":root, :host --ds-shadow-xl",
+    "0px 1px 1px #00000005, 0px 4px 8px -4px #0000000a, 0px 16px 24px -8px #0000000f"
+   ],
+   [
+    ":root, :host --ds-shadow-2xl",
+    "0px 1px 1px #00000005, 0px 8px 16px -4px #0000000a, 0px 24px 32px -8px #0000000f"
+   ],
+   [
+    ":root, :host --ds-shadow-tooltip",
+    "var(--ds-shadow-border-base), 0px 1px 1px #00000005, 0px 4px 8px #0000000a, var("
+   ],
+   [
+    ":root, :host --ds-shadow-menu",
+    "var(--ds-shadow-border-base), 0px 1px 1px #00000005, 0px 4px 8px -4px #0000000a,"
+   ],
+   [
+    ":root, :host --ds-shadow-modal",
+    "var(--ds-shadow-border-base), 0px 1px 1px #00000005, 0px 8px 16px -4px #0000000a"
+   ],
+   [
+    ":root, :host --ds-shadow-modal-elevated",
+    "0px 0px 0px 1px #00000014, 0px 32px 72px -12px #0000000f, 0px 8px 32px -12px #00"
+   ],
+   [
+    ":root, :host --ds-shadow-fullscreen",
+    "var(--ds-shadow-border-base), 0px 1px 1px #00000005, 0px 8px 16px -4px #0000000a"
+   ],
+   [
+    ":root, :host --ds-focus-ring-outline",
+    "2px solid var(--ds-focus-color)"
+   ],
+   [
+    ":root, :host --ds-overlay-backdrop-color",
+    "var(--ds-gray-100)"
+   ],
+   [
+    ":root, :host --ds-motion-overlay-timing",
+    "var(--ds-motion-timing-swift)"
+   ],
+   [
+    ":root, :host, .dark .invert-theme, .dark --geist-violet-background",
+    "#fff"
+   ],
+   [
+    ":root, :host, .dark .invert-theme, .dark --geist-violet-background-secondary",
+    "#291c3a"
+   ],
+   [
+    ":root, :host, .dark .invert-theme, .dark --geist-violet-background-tertiary",
+    "#eae5f4"
+   ],
+   [
+    ":root, :host, .dark .invert-theme, .dark --geist-console-text-color-default",
+    "var(--geist-foreground)"
+   ],
+   [
+    ":root, :host, .dark .invert-theme, .dark --geist-console-text-color-blue",
+    "#0070f3"
+   ],
+   [
+    ":root, :host, .dark .invert-theme, .dark --geist-console-text-color-pink",
+    "#eb367f"
+   ],
+   [
+    ":root, :host, .dark .invert-theme, .dark --geist-console-text-color-purple",
+    "#7928ca"
+   ],
+   [
+    ":root, :host, .dark .invert-theme, .dark --geist-highlight-pink",
+    "#ff0080"
+   ],
+   [
+    ":root, :host, .dark .invert-theme, .dark --geist-foreground",
+    "#000"
+   ],
+   [
+    ":root, :host, .dark .invert-theme, .dark --geist-background",
+    "#fff"
+   ],
+   [
+    ":root, :host, .dark .invert-theme, .dark --geist-selection-text-color",
+    "var(--ds-gray-100)"
+   ],
+   [
+    ":root, :host, .dark .invert-theme, .dark --accents-1",
+    "#fafafa"
+   ],
+   [
+    ":root, :host, .dark .invert-theme, .dark --accents-2",
+    "#eaeaea"
+   ]
+  ],
+  "surfaces": [
+   {
+    "hex": "#fafafa",
+    "L": 0.985,
+    "C": 0,
+    "H": 90,
+    "n": 3,
+    "area": 780900,
+    "ex": [
+     "a.cursor-pointer",
+     "a.cursor-pointer"
+    ]
+   },
+   {
+    "hex": "#ffffff",
+    "L": 1,
+    "C": 0,
+    "H": 90,
+    "n": 4,
+    "area": 187093,
+    "ex": [
+     "a.outline-none",
+     "a.outline-none"
+    ]
+   },
+   {
+    "hex": "#171717",
+    "L": 0.205,
+    "C": 0,
+    "H": 90,
+    "n": 3,
+    "area": 122334,
+    "ex": [
+     "a.outline-none",
+     "div.light-theme"
+    ]
+   }
+  ],
+  "overlays": [],
+  "borders": [],
+  "radii": [
+   [
+    "3.35544e+07px",
+    17
+   ],
+   [
+    "6px",
+    9
+   ],
+   [
+    "100%",
+    1
+   ],
+   [
+    "4px",
+    1
+   ]
+  ],
+  "shadows": [
+   {
+    "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px, rgb(250, 250, 250) 0px 0px 0px 1px",
+    "n": 5
+   },
+   {
+    "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(235, 235, 235) 0px 0px 0px 1px",
+    "n": 4
+   },
+   {
+    "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(235, 235, 235) 0px 0px 0px 1px inset",
+    "n": 3
+   }
+  ],
+  "nShadowEls": 12,
+  "textColors": [
+   {
+    "color": "rgb(23, 23, 23)",
+    "chars": 472,
+    "n": 55,
+    "fg": "#171717",
+    "alpha": 1,
+    "contrast": 17.93,
+    "L": 0.205,
+    "bg": "#ffffff",
+    "size": "14px",
+    "weight": "500",
+    "ex": "Get a Demo"
+   },
+   {
+    "color": "rgb(77, 77, 77)",
+    "chars": 176,
+    "n": 95,
+    "fg": "#4d4d4d",
+    "alpha": 1,
+    "contrast": 8.1,
+    "L": 0.42,
+    "bg": "#fafafa",
+    "size": "14px",
+    "weight": "400",
+    "ex": "Products"
+   },
+   {
+    "color": "rgb(255, 255, 255)",
+    "chars": 17,
+    "n": 3,
+    "fg": "#ffffff",
+    "alpha": 1,
+    "contrast": 17.93,
+    "L": 1,
+    "bg": "#171717",
+    "size": "14px",
+    "weight": "500",
+    "ex": "Sign Up"
+   },
+   {
+    "color": "rgb(201, 201, 201)",
+    "chars": 0,
+    "n": 6,
+    "fg": "#c9c9c9",
+    "alpha": 1,
+    "contrast": 10.83,
+    "L": 0.836,
+    "bg": "#171717",
+    "size": "14px",
+    "weight": "400",
+    "ex": ""
+   },
+   {
+    "color": "rgb(41, 122, 58)",
+    "chars": 0,
+    "n": 3,
+    "fg": "#297a3a",
+    "alpha": 1,
+    "contrast": 5.33,
+    "L": 0.515,
+    "bg": "#ffffff",
+    "size": "12px",
+    "weight": "400",
+    "ex": ""
+   },
+   {
+    "color": "rgb(102, 102, 102)",
+    "chars": 0,
+    "n": 1,
+    "fg": "#666666",
+    "alpha": 1,
+    "contrast": 5.5,
+    "L": 0.51,
+    "bg": "#fafafa",
+    "size": "12px",
+    "weight": "500",
+    "ex": ""
+   },
+   {
+    "color": "rgb(143, 143, 143)",
+    "chars": 0,
+    "n": 3,
+    "fg": "#8f8f8f",
+    "alpha": 1,
+    "contrast": 3.1,
+    "L": 0.65,
+    "bg": "#fafafa",
+    "size": "14px",
+    "weight": "400",
+    "ex": ""
+   }
+  ],
+  "h1": {
+   "text": "Agentic Infrastructure",
+   "family": "GeistSans, \"GeistSans Fallback\"",
+   "size": "64px",
+   "weight": "400",
+   "lh": "64px",
+   "ls": "-3.84px",
+   "color": "rgb(23, 23, 23)",
+   "smooth": "antialiased",
+   "bgClip": "border-box",
+   "bgImage": "none",
+   "textShadow": null
+  },
+  "body": {
+   "text": "Skip to content\nProducts\nResources\nEnterprise\nPricing\nGet a ",
+   "family": "GeistSans, \"GeistSans Fallback\"",
+   "size": "16px",
+   "weight": "400",
+   "lh": "24px",
+   "ls": "normal",
+   "color": "rgb(23, 23, 23)",
+   "smooth": "antialiased",
+   "bgClip": "border-box",
+   "bgImage": "none",
+   "textShadow": null
+  },
+  "bodySmoothing": "antialiased",
+  "textRendering": "optimizelegibility",
+  "heroP": null,
+  "ctas": [
+   {
+    "text": "Get a Demo",
+    "h": 32,
+    "kind": "filled",
+    "bg": "rgb(255, 255, 255)",
+    "color": "rgb(23, 23, 23)",
+    "border": null,
+    "radius": "6px",
+    "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(235, 235, 235) 0px 0px 0px 1px",
+    "bgImage": null,
+    "size": "14px",
+    "weight": "500"
+   },
+   {
+    "text": "Log In",
+    "h": 32,
+    "kind": "filled",
+    "bg": "rgb(255, 255, 255)",
+    "color": "rgb(23, 23, 23)",
+    "border": null,
+    "radius": "6px",
+    "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(235, 235, 235) 0px 0px 0px 1px",
+    "bgImage": null,
+    "size": "14px",
+    "weight": "500"
+   },
+   {
+    "text": "Sign Up",
+    "h": 32,
+    "kind": "filled",
+    "bg": "rgb(23, 23, 23)",
+    "color": "rgb(255, 255, 255)",
+    "border": null,
+    "radius": "6px",
+    "shadow": null,
+    "bgImage": null,
+    "size": "14px",
+    "weight": "500"
+   },
+   {
+    "text": "Deploy now",
+    "h": 40,
+    "kind": "filled",
+    "bg": "rgb(23, 23, 23)",
+    "color": "rgb(255, 255, 255)",
+    "border": null,
+    "radius": "3.35544e+07px",
+    "shadow": null,
+    "bgImage": null,
+    "size": "16px",
+    "weight": "500"
+   },
+   {
+    "text": "Talk to sales",
+    "h": 40,
+    "kind": "filled",
+    "bg": "rgb(255, 255, 255)",
+    "color": "rgb(23, 23, 23)",
+    "border": null,
+    "radius": "3.35544e+07px",
+    "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(235, 235, 235) 0px 0px 0px 1px",
+    "bgImage": null,
+    "size": "16px",
+    "weight": "500"
+   }
+  ],
+  "nav": {
+   "h": 64,
+   "bg": "rgba(0, 0, 0, 0)",
+   "backdrop": "none",
+   "bb": "0px solid rgb(235, 235, 235)",
+   "shadow": null,
+   "linkColor": "rgb(23, 23, 23)"
+  },
+  "effects": {
+   "radial": 1,
+   "conic": 0,
+   "linear": 6,
+   "urlbg": 0,
+   "blurEls": 3,
+   "backdropEls": 0,
+   "mixBlend": 1,
+   "maskEls": 2,
+   "gradEx": [
+    "radial-gradient(circle at 0% 0%, rgb(250, 250, 250) 0%, rgba(0, 0, 0, 0) 30%), radial-gradient(circle at 100% 0%, rgb(250, 250, 250) 0%, rgba(0, 0, 0, 0) 30%), radial-gradient(circle at 100% 100%, rgb(250, 250, 250) 0%, "
+   ],
+   "canvas": 1,
+   "video": 0,
+   "svg": 47,
+   "img": 19
+  },
+  "noise": true,
+  "gradientHeadings": 0,
+  "accents": [
+   {
+    "hex": "#297a3a",
+    "n": 3,
+    "L": 0.515,
+    "C": 0.125,
+    "H": 147
+   }
+  ]
+ }
+}

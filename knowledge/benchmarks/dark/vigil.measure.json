@@ -1,0 +1,1367 @@
+{
+ "url": "http://localhost:8802/",
+ "scheme": "dark",
+ "pageHeight": 900,
+ "fold": {
+  "title": "Vigil: every alert investigated",
+  "vw": 1440,
+  "pageHeight": 900,
+  "colorScheme": {
+   "html": "dark",
+   "body": "dark",
+   "metaTheme": null,
+   "htmlClass": "",
+   "dataTheme": null
+  },
+  "pageBg": "#07090c",
+  "pageBgOklabL": 0.139,
+  "pageBgOklabC": 0.008,
+  "pageBgOklabH": 256,
+  "cssVarCount": 232,
+  "cssVars": [
+   [
+    ":root, :host --color-white",
+    "#fff"
+   ],
+   [
+    ":root, :host --shadow-raised",
+    "var(--shadow-raised)"
+   ],
+   [
+    ":root, :host --shadow-float",
+    "var(--shadow-float)"
+   ],
+   [
+    ":root, :host --shadow-modal",
+    "var(--shadow-modal)"
+   ],
+   [
+    ":root, :host --color-ink",
+    "#eef4fc"
+   ],
+   [
+    ":root, :host --color-muted",
+    "#8d939a"
+   ],
+   [
+    ":root, :host --color-line",
+    "#1d2228"
+   ],
+   [
+    ":root, :host --color-night",
+    "#07090c"
+   ],
+   [
+    ":root, :host --color-lime",
+    "#a3e635"
+   ],
+   [
+    ":root --surface-canvas",
+    "oklch(99.3% .003 255)"
+   ],
+   [
+    ":root --surface-raised",
+    "oklch(100% 0 0)"
+   ],
+   [
+    ":root --surface-sunken",
+    "oklch(96.2% .012 255)"
+   ],
+   [
+    ":root --surface-inverse",
+    "oklch(21% .012 255)"
+   ],
+   [
+    ":root --surface-hover",
+    "oklch(96.2% .012 255)"
+   ],
+   [
+    ":root --surface-active",
+    "oklch(94% .012 255)"
+   ],
+   [
+    ":root --text-strong",
+    "oklch(21% .012 255)"
+   ],
+   [
+    ":root --text-body",
+    "oklch(21% .012 255)"
+   ],
+   [
+    ":root --text-muted",
+    "oklch(50% .012 255)"
+   ],
+   [
+    ":root --text-inverse",
+    "oklch(99.3% .003 255)"
+   ],
+   [
+    ":root --text-on-accent",
+    "oklch(100% 0 0)"
+   ],
+   [
+    ":root --border-hairline",
+    "oklch(91.5% .012 255)"
+   ],
+   [
+    ":root --border-control",
+    "oklch(62% .012 255)"
+   ],
+   [
+    ":root --border-strong",
+    "oklch(62% .012 255)"
+   ],
+   [
+    ":root --accent-solid",
+    "oklch(53% .139 128)"
+   ],
+   [
+    ":root --accent-solid-hover",
+    "oklch(45% .119 128)"
+   ],
+   [
+    ":root --accent-tint",
+    "oklch(94.5% .059 128)"
+   ],
+   [
+    ":root --accent-tint-hover",
+    "oklch(90% .108 128)"
+   ],
+   [
+    ":root --accent-text",
+    "oklch(45% .119 128)"
+   ],
+   [
+    ":root --accent-border",
+    "oklch(77% .175 128)"
+   ],
+   [
+    ":root --danger-text",
+    "oklch(45% .183 27)"
+   ],
+   [
+    ":root --danger-border",
+    "oklch(77% .136 27)"
+   ],
+   [
+    ":root --warning-text",
+    "oklch(45% .098 70)"
+   ],
+   [
+    ":root --warning-border",
+    "oklch(77% .131 70)"
+   ],
+   [
+    ":root --success-text",
+    "oklch(45% .125 150)"
+   ],
+   [
+    ":root --success-border",
+    "oklch(77% .131 150)"
+   ],
+   [
+    ":root --info-text",
+    "oklch(45% .114 245)"
+   ],
+   [
+    ":root --info-border",
+    "oklch(77% .122 245)"
+   ],
+   [
+    ":root --shadow-raised",
+    "0 0 0 1px var(--border-hairline)"
+   ],
+   [
+    ":root --shadow-float",
+    "0 0 0 1px var(--border-hairline), 0 12px 24px -12px #15191e24"
+   ],
+   [
+    ":root --shadow-modal",
+    "0 0 0 1px var(--border-hairline), 0 32px 64px -24px #15191e47"
+   ],
+   [
+    ":root:not([data-theme=\"light\"]) --surface-canvas",
+    "oklch(16% .013 255)"
+   ],
+   [
+    ":root:not([data-theme=\"light\"]) --surface-raised",
+    "oklch(19% .013 255)"
+   ],
+   [
+    ":root:not([data-theme=\"light\"]) --surface-sunken",
+    "oklch(16% .013 255)"
+   ],
+   [
+    ":root:not([data-theme=\"light\"]) --surface-inverse",
+    "oklch(96.5% .013 255)"
+   ],
+   [
+    ":root:not([data-theme=\"light\"]) --surface-hover",
+    "oklch(22.5% .013 255)"
+   ],
+   [
+    ":root:not([data-theme=\"light\"]) --surface-active",
+    "oklch(26% .013 255)"
+   ],
+   [
+    ":root:not([data-theme=\"light\"]) --text-strong",
+    "oklch(96.5% .013 255)"
+   ],
+   [
+    ":root:not([data-theme=\"light\"]) --text-body",
+    "oklch(96.5% .013 255)"
+   ],
+   [
+    ":root:not([data-theme=\"light\"]) --text-muted",
+    "oklch(66% .013 255)"
+   ],
+   [
+    ":root:not([data-theme=\"light\"]) --text-inverse",
+    "oklch(16% .013 255)"
+   ],
+   [
+    ":root:not([data-theme=\"light\"]) --text-on-accent",
+    "oklch(100% 0 0)"
+   ],
+   [
+    ":root:not([data-theme=\"light\"]) --border-hairline",
+    "oklch(26% .013 255)"
+   ],
+   [
+    ":root:not([data-theme=\"light\"]) --border-control",
+    "oklch(52% .013 255)"
+   ],
+   [
+    ":root:not([data-theme=\"light\"]) --border-strong",
+    "oklch(52% .013 255)"
+   ],
+   [
+    ":root:not([data-theme=\"light\"]) --accent-solid",
+    "oklch(50% .131 128)"
+   ],
+   [
+    ":root:not([data-theme=\"light\"]) --accent-solid-hover",
+    "oklch(58% .152 128)"
+   ],
+   [
+    ":root:not([data-theme=\"light\"]) --accent-tint",
+    "oklch(25% .053 128)"
+   ],
+   [
+    ":root:not([data-theme=\"light\"]) --accent-tint-hover",
+    "oklch(30% .08 128)"
+   ],
+   [
+    ":root:not([data-theme=\"light\"]) --accent-text",
+    "oklch(74% .165 128)"
+   ],
+   [
+    ":root:not([data-theme=\"light\"]) --accent-border",
+    "oklch(43% .113 128)"
+   ],
+   [
+    ":root:not([data-theme=\"light\"]) --danger-text",
+    "oklch(74% .159 27)"
+   ],
+   [
+    ":root:not([data-theme=\"light\"]) --danger-border",
+    "oklch(43% .175 27)"
+   ],
+   [
+    ":root:not([data-theme=\"light\"]) --warning-text",
+    "oklch(74% .137 70)"
+   ],
+   [
+    ":root:not([data-theme=\"light\"]) --warning-border",
+    "oklch(43% .094 70)"
+   ],
+   [
+    ":root:not([data-theme=\"light\"]) --success-text",
+    "oklch(74% .137 150)"
+   ],
+   [
+    ":root:not([data-theme=\"light\"]) --success-border",
+    "oklch(43% .119 150)"
+   ],
+   [
+    ":root:not([data-theme=\"light\"]) --info-text",
+    "oklch(74% .128 245)"
+   ],
+   [
+    ":root:not([data-theme=\"light\"]) --info-border",
+    "oklch(43% .109 245)"
+   ],
+   [
+    ":root[data-theme=\"dark\"] --surface-canvas",
+    "oklch(16% .013 255)"
+   ],
+   [
+    ":root[data-theme=\"dark\"] --surface-raised",
+    "oklch(19% .013 255)"
+   ],
+   [
+    ":root[data-theme=\"dark\"] --surface-sunken",
+    "oklch(16% .013 255)"
+   ],
+   [
+    ":root[data-theme=\"dark\"] --surface-inverse",
+    "oklch(96.5% .013 255)"
+   ],
+   [
+    ":root[data-theme=\"dark\"] --surface-hover",
+    "oklch(22.5% .013 255)"
+   ],
+   [
+    ":root[data-theme=\"dark\"] --surface-active",
+    "oklch(26% .013 255)"
+   ],
+   [
+    ":root[data-theme=\"dark\"] --text-strong",
+    "oklch(96.5% .013 255)"
+   ],
+   [
+    ":root[data-theme=\"dark\"] --text-body",
+    "oklch(96.5% .013 255)"
+   ],
+   [
+    ":root[data-theme=\"dark\"] --text-muted",
+    "oklch(66% .013 255)"
+   ],
+   [
+    ":root[data-theme=\"dark\"] --text-inverse",
+    "oklch(16% .013 255)"
+   ],
+   [
+    ":root[data-theme=\"dark\"] --text-on-accent",
+    "oklch(100% 0 0)"
+   ],
+   [
+    ":root[data-theme=\"dark\"] --border-hairline",
+    "oklch(26% .013 255)"
+   ],
+   [
+    ":root[data-theme=\"dark\"] --border-control",
+    "oklch(52% .013 255)"
+   ],
+   [
+    ":root[data-theme=\"dark\"] --border-strong",
+    "oklch(52% .013 255)"
+   ],
+   [
+    ":root[data-theme=\"dark\"] --accent-solid",
+    "oklch(50% .131 128)"
+   ],
+   [
+    ":root[data-theme=\"dark\"] --accent-solid-hover",
+    "oklch(58% .152 128)"
+   ],
+   [
+    ":root[data-theme=\"dark\"] --accent-tint",
+    "oklch(25% .053 128)"
+   ],
+   [
+    ":root[data-theme=\"dark\"] --accent-tint-hover",
+    "oklch(30% .08 128)"
+   ],
+   [
+    ":root[data-theme=\"dark\"] --accent-text",
+    "oklch(74% .165 128)"
+   ],
+   [
+    ":root[data-theme=\"dark\"] --accent-border",
+    "oklch(43% .113 128)"
+   ],
+   [
+    ":root[data-theme=\"dark\"] --danger-text",
+    "oklch(74% .159 27)"
+   ],
+   [
+    ":root[data-theme=\"dark\"] --danger-border",
+    "oklch(43% .175 27)"
+   ],
+   [
+    ":root[data-theme=\"dark\"] --warning-text",
+    "oklch(74% .137 70)"
+   ],
+   [
+    ":root[data-theme=\"dark\"] --warning-border",
+    "oklch(43% .094 70)"
+   ],
+   [
+    ":root[data-theme=\"dark\"] --success-text",
+    "oklch(74% .137 150)"
+   ],
+   [
+    ":root[data-theme=\"dark\"] --success-border",
+    "oklch(43% .119 150)"
+   ],
+   [
+    ":root[data-theme=\"dark\"] --info-text",
+    "oklch(74% .128 245)"
+   ],
+   [
+    ":root[data-theme=\"dark\"] --info-border",
+    "oklch(43% .109 245)"
+   ],
+   [
+    ":root --shadow-ring",
+    "0 0 0 1px #eef4fc14"
+   ],
+   [
+    ":root --shadow-card",
+    "0 0 0 1px #eef4fc17, 0 1px 2px #0006, 0 14px 32px -16px #000000b3"
+   ]
+  ],
+  "surfaces": [
+   {
+    "hex": "#07090c",
+    "L": 0.139,
+    "C": 0.008,
+    "H": 256,
+    "n": 1,
+    "area": 1296000,
+    "ex": [
+     "div.relative"
+    ]
+   },
+   {
+    "hex": "#a3e635",
+    "L": 0.849,
+    "C": 0.207,
+    "H": 129,
+    "n": 1,
+    "area": 8023,
+    "ex": [
+     "span.push-front"
+    ]
+   }
+  ],
+  "overlays": [
+   {
+    "bg": "oklab(0.166535 -0.00337279 -0.0118939 / 0.85) => #0a0e13",
+    "n": 1,
+    "area": 47280
+   },
+   {
+    "bg": "rgba(0, 0, 0, 0.45) => #040507",
+    "n": 1,
+    "area": 8023
+   }
+  ],
+  "borders": [
+   {
+    "border": "oklab(0.999994 0.0000455678 0.0000200868 / 0.09) @1px",
+    "n": 4,
+    "alpha": 0.09,
+    "flatOnPage": "#1d1f22",
+    "L": 0.239
+   },
+   {
+    "border": "oklab(0.849313 -0.130016 0.161481 / 0.4) @1px",
+    "n": 4,
+    "alpha": 0.4,
+    "flatOnPage": "#45611c",
+    "L": 0.456
+   },
+   {
+    "border": "oklab(0.999994 0.0000455678 0.0000200868 / 0.08) @1px",
+    "n": 2,
+    "alpha": 0.08,
+    "flatOnPage": "#1b1d1f",
+    "L": 0.229
+   }
+  ],
+  "radii": [
+   [
+    "12px",
+    4
+   ],
+   [
+    "14px",
+    1
+   ],
+   [
+    "10px",
+    1
+   ]
+  ],
+  "shadows": [
+   {
+    "shadow": "rgba(255, 255, 255, 0.45) 0px 1px 0px 0px inset",
+    "n": 1
+   }
+  ],
+  "nShadowEls": 1,
+  "textColors": [
+   {
+    "color": "rgb(141, 147, 154)",
+    "chars": 312,
+    "n": 9,
+    "fg": "#8d939a",
+    "alpha": 1,
+    "contrast": 6.24,
+    "L": 0.661,
+    "bg": "#0a0e13",
+    "size": "12px",
+    "weight": "400",
+    "ex": "09:42"
+   },
+   {
+    "color": "rgb(238, 244, 252)",
+    "chars": 154,
+    "n": 7,
+    "fg": "#eef4fc",
+    "alpha": 1,
+    "contrast": 17.48,
+    "L": 0.965,
+    "bg": "#0a0e13",
+    "size": "15px",
+    "weight": "600",
+    "ex": "admin@northwind.dev"
+   },
+   {
+    "color": "rgb(183, 190, 198)",
+    "chars": 43,
+    "n": 5,
+    "fg": "#b7bec6",
+    "alpha": 1,
+    "contrast": 10.63,
+    "L": 0.798,
+    "bg": "#07090c",
+    "size": "15px",
+    "weight": "500",
+    "ex": "Product"
+   },
+   {
+    "color": "rgb(255, 138, 128)",
+    "chars": 24,
+    "n": 1,
+    "fg": "#ff8a80",
+    "alpha": 1,
+    "contrast": 8.47,
+    "L": 0.759,
+    "bg": "#0a0e13",
+    "size": "12.5px",
+    "weight": "600",
+    "ex": "High · Impossible travel"
+   },
+   {
+    "color": "rgb(163, 230, 53)",
+    "chars": 21,
+    "n": 3,
+    "fg": "#a3e635",
+    "alpha": 1,
+    "contrast": 12.82,
+    "L": 0.849,
+    "bg": "#0a0e13",
+    "size": "12px",
+    "weight": "400",
+    "ex": "escalated"
+   },
+   {
+    "color": "rgb(12, 20, 4)",
+    "chars": 16,
+    "n": 1,
+    "fg": "#0c1404",
+    "alpha": 1,
+    "contrast": 12.46,
+    "L": 0.178,
+    "bg": "#a3e635",
+    "size": "17px",
+    "weight": "600",
+    "ex": "Start free trial"
+   },
+   {
+    "color": "rgb(111, 122, 133)",
+    "chars": 12,
+    "n": 1,
+    "fg": "#6f7a85",
+    "alpha": 1,
+    "contrast": 4.56,
+    "L": 0.574,
+    "bg": "#07090c",
+    "size": "74px",
+    "weight": "600",
+    "ex": "Six Need You"
+   }
+  ],
+  "h1": {
+   "text": "Every Alert Read\nSix Need You",
+   "family": "\"Geist Mono Variable\", ui-monospace, monospace",
+   "size": "74px",
+   "weight": "600",
+   "lh": "75.48px",
+   "ls": "-4.44px",
+   "color": "rgb(238, 244, 252)",
+   "smooth": "antialiased",
+   "bgClip": "border-box",
+   "bgImage": "none",
+   "textShadow": null
+  },
+  "body": {
+   "text": "High · Impossible travel\n09:42\nadmin@northwind.dev\nLisbon to",
+   "family": "\"Geist Variable\", ui-sans-serif, system-ui, sans-serif",
+   "size": "16px",
+   "weight": "400",
+   "lh": "24px",
+   "ls": "normal",
+   "color": "rgb(238, 244, 252)",
+   "smooth": "antialiased",
+   "bgClip": "border-box",
+   "bgImage": "none",
+   "textShadow": null
+  },
+  "bodySmoothing": "antialiased",
+  "textRendering": "auto",
+  "heroP": {
+   "text": "Vigil investigates every alert from your SIEM, cloud and ide",
+   "family": "\"Geist Variable\", ui-sans-serif, system-ui, sans-serif",
+   "size": "18px",
+   "weight": "500",
+   "lh": "27px",
+   "ls": "-0.54px",
+   "color": "rgb(141, 147, 154)",
+   "smooth": "antialiased",
+   "bgClip": "border-box",
+   "bgImage": "none",
+   "textShadow": null
+  },
+  "ctas": [
+   {
+    "text": "Start trial",
+    "h": 41,
+    "kind": "outline",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(163, 230, 53)",
+    "border": "1px oklab(0.849313 -0.130016 0.161481 / 0.4)",
+    "radius": "10px",
+    "shadow": null,
+    "bgImage": null,
+    "size": "15px",
+    "weight": "500"
+   }
+  ],
+  "nav": {
+   "h": 72,
+   "bg": "rgba(0, 0, 0, 0)",
+   "backdrop": "none",
+   "bb": "1px solid oklab(0.999994 0.0000455678 0.0000200868 / 0.08)",
+   "shadow": null,
+   "linkColor": "rgb(238, 244, 252)"
+  },
+  "effects": {
+   "radial": 0,
+   "conic": 0,
+   "linear": 1,
+   "urlbg": 0,
+   "blurEls": 1,
+   "backdropEls": 1,
+   "mixBlend": 0,
+   "maskEls": 1,
+   "gradEx": [],
+   "canvas": 1,
+   "video": 0,
+   "svg": 4,
+   "img": 0
+  },
+  "noise": false,
+  "gradientHeadings": 0,
+  "accents": [
+   {
+    "hex": "#a3e635",
+    "n": 11,
+    "L": 0.849,
+    "C": 0.207,
+    "H": 129
+   },
+   {
+    "hex": "#ff8a80",
+    "n": 6,
+    "L": 0.759,
+    "C": 0.144,
+    "H": 26
+   }
+  ]
+ },
+ "full": {
+  "title": "Vigil: every alert investigated",
+  "vw": 1440,
+  "pageHeight": 900,
+  "colorScheme": {
+   "html": "dark",
+   "body": "dark",
+   "metaTheme": null,
+   "htmlClass": "",
+   "dataTheme": null
+  },
+  "pageBg": "#07090c",
+  "pageBgOklabL": 0.139,
+  "pageBgOklabC": 0.008,
+  "pageBgOklabH": 256,
+  "cssVarCount": 232,
+  "cssVars": [
+   [
+    ":root, :host --color-white",
+    "#fff"
+   ],
+   [
+    ":root, :host --shadow-raised",
+    "var(--shadow-raised)"
+   ],
+   [
+    ":root, :host --shadow-float",
+    "var(--shadow-float)"
+   ],
+   [
+    ":root, :host --shadow-modal",
+    "var(--shadow-modal)"
+   ],
+   [
+    ":root, :host --color-ink",
+    "#eef4fc"
+   ],
+   [
+    ":root, :host --color-muted",
+    "#8d939a"
+   ],
+   [
+    ":root, :host --color-line",
+    "#1d2228"
+   ],
+   [
+    ":root, :host --color-night",
+    "#07090c"
+   ],
+   [
+    ":root, :host --color-lime",
+    "#a3e635"
+   ],
+   [
+    ":root --surface-canvas",
+    "oklch(99.3% .003 255)"
+   ],
+   [
+    ":root --surface-raised",
+    "oklch(100% 0 0)"
+   ],
+   [
+    ":root --surface-sunken",
+    "oklch(96.2% .012 255)"
+   ],
+   [
+    ":root --surface-inverse",
+    "oklch(21% .012 255)"
+   ],
+   [
+    ":root --surface-hover",
+    "oklch(96.2% .012 255)"
+   ],
+   [
+    ":root --surface-active",
+    "oklch(94% .012 255)"
+   ],
+   [
+    ":root --text-strong",
+    "oklch(21% .012 255)"
+   ],
+   [
+    ":root --text-body",
+    "oklch(21% .012 255)"
+   ],
+   [
+    ":root --text-muted",
+    "oklch(50% .012 255)"
+   ],
+   [
+    ":root --text-inverse",
+    "oklch(99.3% .003 255)"
+   ],
+   [
+    ":root --text-on-accent",
+    "oklch(100% 0 0)"
+   ],
+   [
+    ":root --border-hairline",
+    "oklch(91.5% .012 255)"
+   ],
+   [
+    ":root --border-control",
+    "oklch(62% .012 255)"
+   ],
+   [
+    ":root --border-strong",
+    "oklch(62% .012 255)"
+   ],
+   [
+    ":root --accent-solid",
+    "oklch(53% .139 128)"
+   ],
+   [
+    ":root --accent-solid-hover",
+    "oklch(45% .119 128)"
+   ],
+   [
+    ":root --accent-tint",
+    "oklch(94.5% .059 128)"
+   ],
+   [
+    ":root --accent-tint-hover",
+    "oklch(90% .108 128)"
+   ],
+   [
+    ":root --accent-text",
+    "oklch(45% .119 128)"
+   ],
+   [
+    ":root --accent-border",
+    "oklch(77% .175 128)"
+   ],
+   [
+    ":root --danger-text",
+    "oklch(45% .183 27)"
+   ],
+   [
+    ":root --danger-border",
+    "oklch(77% .136 27)"
+   ],
+   [
+    ":root --warning-text",
+    "oklch(45% .098 70)"
+   ],
+   [
+    ":root --warning-border",
+    "oklch(77% .131 70)"
+   ],
+   [
+    ":root --success-text",
+    "oklch(45% .125 150)"
+   ],
+   [
+    ":root --success-border",
+    "oklch(77% .131 150)"
+   ],
+   [
+    ":root --info-text",
+    "oklch(45% .114 245)"
+   ],
+   [
+    ":root --info-border",
+    "oklch(77% .122 245)"
+   ],
+   [
+    ":root --shadow-raised",
+    "0 0 0 1px var(--border-hairline)"
+   ],
+   [
+    ":root --shadow-float",
+    "0 0 0 1px var(--border-hairline), 0 12px 24px -12px #15191e24"
+   ],
+   [
+    ":root --shadow-modal",
+    "0 0 0 1px var(--border-hairline), 0 32px 64px -24px #15191e47"
+   ],
+   [
+    ":root:not([data-theme=\"light\"]) --surface-canvas",
+    "oklch(16% .013 255)"
+   ],
+   [
+    ":root:not([data-theme=\"light\"]) --surface-raised",
+    "oklch(19% .013 255)"
+   ],
+   [
+    ":root:not([data-theme=\"light\"]) --surface-sunken",
+    "oklch(16% .013 255)"
+   ],
+   [
+    ":root:not([data-theme=\"light\"]) --surface-inverse",
+    "oklch(96.5% .013 255)"
+   ],
+   [
+    ":root:not([data-theme=\"light\"]) --surface-hover",
+    "oklch(22.5% .013 255)"
+   ],
+   [
+    ":root:not([data-theme=\"light\"]) --surface-active",
+    "oklch(26% .013 255)"
+   ],
+   [
+    ":root:not([data-theme=\"light\"]) --text-strong",
+    "oklch(96.5% .013 255)"
+   ],
+   [
+    ":root:not([data-theme=\"light\"]) --text-body",
+    "oklch(96.5% .013 255)"
+   ],
+   [
+    ":root:not([data-theme=\"light\"]) --text-muted",
+    "oklch(66% .013 255)"
+   ],
+   [
+    ":root:not([data-theme=\"light\"]) --text-inverse",
+    "oklch(16% .013 255)"
+   ],
+   [
+    ":root:not([data-theme=\"light\"]) --text-on-accent",
+    "oklch(100% 0 0)"
+   ],
+   [
+    ":root:not([data-theme=\"light\"]) --border-hairline",
+    "oklch(26% .013 255)"
+   ],
+   [
+    ":root:not([data-theme=\"light\"]) --border-control",
+    "oklch(52% .013 255)"
+   ],
+   [
+    ":root:not([data-theme=\"light\"]) --border-strong",
+    "oklch(52% .013 255)"
+   ],
+   [
+    ":root:not([data-theme=\"light\"]) --accent-solid",
+    "oklch(50% .131 128)"
+   ],
+   [
+    ":root:not([data-theme=\"light\"]) --accent-solid-hover",
+    "oklch(58% .152 128)"
+   ],
+   [
+    ":root:not([data-theme=\"light\"]) --accent-tint",
+    "oklch(25% .053 128)"
+   ],
+   [
+    ":root:not([data-theme=\"light\"]) --accent-tint-hover",
+    "oklch(30% .08 128)"
+   ],
+   [
+    ":root:not([data-theme=\"light\"]) --accent-text",
+    "oklch(74% .165 128)"
+   ],
+   [
+    ":root:not([data-theme=\"light\"]) --accent-border",
+    "oklch(43% .113 128)"
+   ],
+   [
+    ":root:not([data-theme=\"light\"]) --danger-text",
+    "oklch(74% .159 27)"
+   ],
+   [
+    ":root:not([data-theme=\"light\"]) --danger-border",
+    "oklch(43% .175 27)"
+   ],
+   [
+    ":root:not([data-theme=\"light\"]) --warning-text",
+    "oklch(74% .137 70)"
+   ],
+   [
+    ":root:not([data-theme=\"light\"]) --warning-border",
+    "oklch(43% .094 70)"
+   ],
+   [
+    ":root:not([data-theme=\"light\"]) --success-text",
+    "oklch(74% .137 150)"
+   ],
+   [
+    ":root:not([data-theme=\"light\"]) --success-border",
+    "oklch(43% .119 150)"
+   ],
+   [
+    ":root:not([data-theme=\"light\"]) --info-text",
+    "oklch(74% .128 245)"
+   ],
+   [
+    ":root:not([data-theme=\"light\"]) --info-border",
+    "oklch(43% .109 245)"
+   ],
+   [
+    ":root[data-theme=\"dark\"] --surface-canvas",
+    "oklch(16% .013 255)"
+   ],
+   [
+    ":root[data-theme=\"dark\"] --surface-raised",
+    "oklch(19% .013 255)"
+   ],
+   [
+    ":root[data-theme=\"dark\"] --surface-sunken",
+    "oklch(16% .013 255)"
+   ],
+   [
+    ":root[data-theme=\"dark\"] --surface-inverse",
+    "oklch(96.5% .013 255)"
+   ],
+   [
+    ":root[data-theme=\"dark\"] --surface-hover",
+    "oklch(22.5% .013 255)"
+   ],
+   [
+    ":root[data-theme=\"dark\"] --surface-active",
+    "oklch(26% .013 255)"
+   ],
+   [
+    ":root[data-theme=\"dark\"] --text-strong",
+    "oklch(96.5% .013 255)"
+   ],
+   [
+    ":root[data-theme=\"dark\"] --text-body",
+    "oklch(96.5% .013 255)"
+   ],
+   [
+    ":root[data-theme=\"dark\"] --text-muted",
+    "oklch(66% .013 255)"
+   ],
+   [
+    ":root[data-theme=\"dark\"] --text-inverse",
+    "oklch(16% .013 255)"
+   ],
+   [
+    ":root[data-theme=\"dark\"] --text-on-accent",
+    "oklch(100% 0 0)"
+   ],
+   [
+    ":root[data-theme=\"dark\"] --border-hairline",
+    "oklch(26% .013 255)"
+   ],
+   [
+    ":root[data-theme=\"dark\"] --border-control",
+    "oklch(52% .013 255)"
+   ],
+   [
+    ":root[data-theme=\"dark\"] --border-strong",
+    "oklch(52% .013 255)"
+   ],
+   [
+    ":root[data-theme=\"dark\"] --accent-solid",
+    "oklch(50% .131 128)"
+   ],
+   [
+    ":root[data-theme=\"dark\"] --accent-solid-hover",
+    "oklch(58% .152 128)"
+   ],
+   [
+    ":root[data-theme=\"dark\"] --accent-tint",
+    "oklch(25% .053 128)"
+   ],
+   [
+    ":root[data-theme=\"dark\"] --accent-tint-hover",
+    "oklch(30% .08 128)"
+   ],
+   [
+    ":root[data-theme=\"dark\"] --accent-text",
+    "oklch(74% .165 128)"
+   ],
+   [
+    ":root[data-theme=\"dark\"] --accent-border",
+    "oklch(43% .113 128)"
+   ],
+   [
+    ":root[data-theme=\"dark\"] --danger-text",
+    "oklch(74% .159 27)"
+   ],
+   [
+    ":root[data-theme=\"dark\"] --danger-border",
+    "oklch(43% .175 27)"
+   ],
+   [
+    ":root[data-theme=\"dark\"] --warning-text",
+    "oklch(74% .137 70)"
+   ],
+   [
+    ":root[data-theme=\"dark\"] --warning-border",
+    "oklch(43% .094 70)"
+   ],
+   [
+    ":root[data-theme=\"dark\"] --success-text",
+    "oklch(74% .137 150)"
+   ],
+   [
+    ":root[data-theme=\"dark\"] --success-border",
+    "oklch(43% .119 150)"
+   ],
+   [
+    ":root[data-theme=\"dark\"] --info-text",
+    "oklch(74% .128 245)"
+   ],
+   [
+    ":root[data-theme=\"dark\"] --info-border",
+    "oklch(43% .109 245)"
+   ],
+   [
+    ":root --shadow-ring",
+    "0 0 0 1px #eef4fc14"
+   ],
+   [
+    ":root --shadow-card",
+    "0 0 0 1px #eef4fc17, 0 1px 2px #0006, 0 14px 32px -16px #000000b3"
+   ]
+  ],
+  "surfaces": [
+   {
+    "hex": "#07090c",
+    "L": 0.139,
+    "C": 0.008,
+    "H": 256,
+    "n": 1,
+    "area": 1296000,
+    "ex": [
+     "div.relative"
+    ]
+   },
+   {
+    "hex": "#a3e635",
+    "L": 0.849,
+    "C": 0.207,
+    "H": 129,
+    "n": 1,
+    "area": 8023,
+    "ex": [
+     "span.push-front"
+    ]
+   }
+  ],
+  "overlays": [
+   {
+    "bg": "oklab(0.166535 -0.00337279 -0.0118939 / 0.85) => #0a0e13",
+    "n": 1,
+    "area": 47280
+   },
+   {
+    "bg": "rgba(0, 0, 0, 0.45) => #040507",
+    "n": 1,
+    "area": 8023
+   }
+  ],
+  "borders": [
+   {
+    "border": "oklab(0.999994 0.0000455678 0.0000200868 / 0.09) @1px",
+    "n": 4,
+    "alpha": 0.09,
+    "flatOnPage": "#1d1f22",
+    "L": 0.239
+   },
+   {
+    "border": "oklab(0.849313 -0.130016 0.161481 / 0.4) @1px",
+    "n": 4,
+    "alpha": 0.4,
+    "flatOnPage": "#45611c",
+    "L": 0.456
+   },
+   {
+    "border": "oklab(0.999994 0.0000455678 0.0000200868 / 0.08) @1px",
+    "n": 2,
+    "alpha": 0.08,
+    "flatOnPage": "#1b1d1f",
+    "L": 0.229
+   }
+  ],
+  "radii": [
+   [
+    "12px",
+    4
+   ],
+   [
+    "14px",
+    1
+   ],
+   [
+    "10px",
+    1
+   ]
+  ],
+  "shadows": [
+   {
+    "shadow": "rgba(255, 255, 255, 0.45) 0px 1px 0px 0px inset",
+    "n": 1
+   }
+  ],
+  "nShadowEls": 1,
+  "textColors": [
+   {
+    "color": "rgb(141, 147, 154)",
+    "chars": 312,
+    "n": 9,
+    "fg": "#8d939a",
+    "alpha": 1,
+    "contrast": 6.24,
+    "L": 0.661,
+    "bg": "#0a0e13",
+    "size": "12px",
+    "weight": "400",
+    "ex": "09:42"
+   },
+   {
+    "color": "rgb(238, 244, 252)",
+    "chars": 154,
+    "n": 7,
+    "fg": "#eef4fc",
+    "alpha": 1,
+    "contrast": 17.48,
+    "L": 0.965,
+    "bg": "#0a0e13",
+    "size": "15px",
+    "weight": "600",
+    "ex": "admin@northwind.dev"
+   },
+   {
+    "color": "rgb(183, 190, 198)",
+    "chars": 43,
+    "n": 5,
+    "fg": "#b7bec6",
+    "alpha": 1,
+    "contrast": 10.63,
+    "L": 0.798,
+    "bg": "#07090c",
+    "size": "15px",
+    "weight": "500",
+    "ex": "Product"
+   },
+   {
+    "color": "rgb(255, 138, 128)",
+    "chars": 24,
+    "n": 1,
+    "fg": "#ff8a80",
+    "alpha": 1,
+    "contrast": 8.47,
+    "L": 0.759,
+    "bg": "#0a0e13",
+    "size": "12.5px",
+    "weight": "600",
+    "ex": "High · Impossible travel"
+   },
+   {
+    "color": "rgb(163, 230, 53)",
+    "chars": 21,
+    "n": 3,
+    "fg": "#a3e635",
+    "alpha": 1,
+    "contrast": 12.82,
+    "L": 0.849,
+    "bg": "#0a0e13",
+    "size": "12px",
+    "weight": "400",
+    "ex": "escalated"
+   },
+   {
+    "color": "rgb(12, 20, 4)",
+    "chars": 16,
+    "n": 1,
+    "fg": "#0c1404",
+    "alpha": 1,
+    "contrast": 12.46,
+    "L": 0.178,
+    "bg": "#a3e635",
+    "size": "17px",
+    "weight": "600",
+    "ex": "Start free trial"
+   },
+   {
+    "color": "rgb(111, 122, 133)",
+    "chars": 12,
+    "n": 1,
+    "fg": "#6f7a85",
+    "alpha": 1,
+    "contrast": 4.56,
+    "L": 0.574,
+    "bg": "#07090c",
+    "size": "74px",
+    "weight": "600",
+    "ex": "Six Need You"
+   }
+  ],
+  "h1": {
+   "text": "Every Alert Read\nSix Need You",
+   "family": "\"Geist Mono Variable\", ui-monospace, monospace",
+   "size": "74px",
+   "weight": "600",
+   "lh": "75.48px",
+   "ls": "-4.44px",
+   "color": "rgb(238, 244, 252)",
+   "smooth": "antialiased",
+   "bgClip": "border-box",
+   "bgImage": "none",
+   "textShadow": null
+  },
+  "body": {
+   "text": "High · Impossible travel\n09:42\nadmin@northwind.dev\nLisbon to",
+   "family": "\"Geist Variable\", ui-sans-serif, system-ui, sans-serif",
+   "size": "16px",
+   "weight": "400",
+   "lh": "24px",
+   "ls": "normal",
+   "color": "rgb(238, 244, 252)",
+   "smooth": "antialiased",
+   "bgClip": "border-box",
+   "bgImage": "none",
+   "textShadow": null
+  },
+  "bodySmoothing": "antialiased",
+  "textRendering": "auto",
+  "heroP": {
+   "text": "Vigil investigates every alert from your SIEM, cloud and ide",
+   "family": "\"Geist Variable\", ui-sans-serif, system-ui, sans-serif",
+   "size": "18px",
+   "weight": "500",
+   "lh": "27px",
+   "ls": "-0.54px",
+   "color": "rgb(141, 147, 154)",
+   "smooth": "antialiased",
+   "bgClip": "border-box",
+   "bgImage": "none",
+   "textShadow": null
+  },
+  "ctas": [
+   {
+    "text": "Start trial",
+    "h": 41,
+    "kind": "outline",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(163, 230, 53)",
+    "border": "1px oklab(0.849313 -0.130016 0.161481 / 0.4)",
+    "radius": "10px",
+    "shadow": null,
+    "bgImage": null,
+    "size": "15px",
+    "weight": "500"
+   }
+  ],
+  "nav": {
+   "h": 72,
+   "bg": "rgba(0, 0, 0, 0)",
+   "backdrop": "none",
+   "bb": "1px solid oklab(0.999994 0.0000455678 0.0000200868 / 0.08)",
+   "shadow": null,
+   "linkColor": "rgb(238, 244, 252)"
+  },
+  "effects": {
+   "radial": 0,
+   "conic": 0,
+   "linear": 1,
+   "urlbg": 0,
+   "blurEls": 1,
+   "backdropEls": 1,
+   "mixBlend": 0,
+   "maskEls": 1,
+   "gradEx": [],
+   "canvas": 1,
+   "video": 0,
+   "svg": 4,
+   "img": 0
+  },
+  "noise": false,
+  "gradientHeadings": 0,
+  "accents": [
+   {
+    "hex": "#a3e635",
+    "n": 11,
+    "L": 0.849,
+    "C": 0.207,
+    "H": 129
+   },
+   {
+    "hex": "#ff8a80",
+    "n": 6,
+    "L": 0.759,
+    "C": 0.144,
+    "H": 26
+   }
+  ]
+ }
+}

@@ -1,0 +1,1460 @@
+{
+ "geist-input-light": [
+  {
+   "rest": {
+    "self": {
+     "h": "32px",
+     "bg": "rgb(255, 255, 255)",
+     "border": "0px rgb(235, 235, 235)",
+     "radius": "0px",
+     "shadow": "none",
+     "outline": "none 3px rgb(0, 0, 0) off 0px",
+     "pad": "0px 12px",
+     "font": "14px/400/20px/normal",
+     "color": "rgb(0, 0, 0)",
+     "transition": "all 0s"
+    },
+    "parent": {
+     "h": "32px",
+     "bg": "rgba(0, 0, 0, 0)",
+     "border": "0px rgb(235, 235, 235)",
+     "radius": "6px",
+     "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px",
+     "outline": "none 3px rgb(23, 23, 23) off 0px",
+     "pad": "0px",
+     "font": "14px/400/20px/normal",
+     "color": "rgb(23, 23, 23)",
+     "transition": "all 0.15s"
+    },
+    "placeholder": "rgb(143, 143, 143)",
+    "ph": "Small"
+   },
+   "foc": {
+    "self": {
+     "h": "32px",
+     "bg": "rgb(255, 255, 255)",
+     "border": "0px rgb(235, 235, 235)",
+     "radius": "0px",
+     "shadow": "none",
+     "outline": "none 1px rgb(0, 95, 204) off 0px",
+     "pad": "0px 12px",
+     "font": "14px/400/20px/normal",
+     "color": "rgb(0, 0, 0)",
+     "transition": "all 0s"
+    },
+    "parent": {
+     "h": "32px",
+     "bg": "rgba(0, 0, 0, 0)",
+     "border": "0px rgb(235, 235, 235)",
+     "radius": "6px",
+     "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.34) 0px 0px 0px 1px, rgba(0, 0, 0, 0.16) 0px 0px 0px 4px",
+     "outline": "none 3px rgb(23, 23, 23) off 0px",
+     "pad": "0px",
+     "font": "14px/400/20px/normal",
+     "color": "rgb(23, 23, 23)",
+     "transition": "all 0.15s"
+    },
+    "placeholder": "rgb(143, 143, 143)",
+    "ph": "Small"
+   },
+   "w": 178,
+   "h": 32
+  },
+  {
+   "rest": {
+    "self": {
+     "h": "36px",
+     "bg": "rgb(255, 255, 255)",
+     "border": "0px rgb(235, 235, 235)",
+     "radius": "0px",
+     "shadow": "none",
+     "outline": "none 3px rgb(0, 0, 0) off 0px",
+     "pad": "0px 12px",
+     "font": "14px/400/20px/normal",
+     "color": "rgb(0, 0, 0)",
+     "transition": "all 0s"
+    },
+    "parent": {
+     "h": "36px",
+     "bg": "rgba(0, 0, 0, 0)",
+     "border": "0px rgb(235, 235, 235)",
+     "radius": "6px",
+     "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px",
+     "outline": "none 3px rgb(23, 23, 23) off 0px",
+     "pad": "0px",
+     "font": "14px/400/20px/normal",
+     "color": "rgb(23, 23, 23)",
+     "transition": "all 0.15s"
+    },
+    "placeholder": "rgb(143, 143, 143)",
+    "ph": "Default"
+   },
+   "foc": {
+    "self": {
+     "h": "36px",
+     "bg": "rgb(255, 255, 255)",
+     "border": "0px rgb(235, 235, 235)",
+     "radius": "0px",
+     "shadow": "none",
+     "outline": "none 1px rgb(0, 95, 204) off 0px",
+     "pad": "0px 12px",
+     "font": "14px/400/20px/normal",
+     "color": "rgb(0, 0, 0)",
+     "transition": "all 0s"
+    },
+    "parent": {
+     "h": "36px",
+     "bg": "rgba(0, 0, 0, 0)",
+     "border": "0px rgb(235, 235, 235)",
+     "radius": "6px",
+     "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.34) 0px 0px 0px 1px, rgba(0, 0, 0, 0.16) 0px 0px 0px 4px",
+     "outline": "none 3px rgb(23, 23, 23) off 0px",
+     "pad": "0px",
+     "font": "14px/400/20px/normal",
+     "color": "rgb(23, 23, 23)",
+     "transition": "all 0.15s"
+    },
+    "placeholder": "rgb(143, 143, 143)",
+    "ph": "Default"
+   },
+   "w": 178,
+   "h": 36
+  },
+  {
+   "rest": {
+    "self": {
+     "h": "40px",
+     "bg": "rgb(255, 255, 255)",
+     "border": "0px rgb(235, 235, 235)",
+     "radius": "0px",
+     "shadow": "none",
+     "outline": "none 3px rgb(0, 0, 0) off 0px",
+     "pad": "0px 12px",
+     "font": "16px/400/24px/normal",
+     "color": "rgb(0, 0, 0)",
+     "transition": "all 0s"
+    },
+    "parent": {
+     "h": "40px",
+     "bg": "rgba(0, 0, 0, 0)",
+     "border": "0px rgb(235, 235, 235)",
+     "radius": "8px",
+     "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px",
+     "outline": "none 3px rgb(23, 23, 23) off 0px",
+     "pad": "0px",
+     "font": "16px/400/24px/normal",
+     "color": "rgb(23, 23, 23)",
+     "transition": "all 0.15s"
+    },
+    "placeholder": "rgb(143, 143, 143)",
+    "ph": "Large"
+   },
+   "foc": {
+    "self": {
+     "h": "40px",
+     "bg": "rgb(255, 255, 255)",
+     "border": "0px rgb(235, 235, 235)",
+     "radius": "0px",
+     "shadow": "none",
+     "outline": "none 1px rgb(0, 95, 204) off 0px",
+     "pad": "0px 12px",
+     "font": "16px/400/24px/normal",
+     "color": "rgb(0, 0, 0)",
+     "transition": "all 0s"
+    },
+    "parent": {
+     "h": "40px",
+     "bg": "rgba(0, 0, 0, 0)",
+     "border": "0px rgb(235, 235, 235)",
+     "radius": "8px",
+     "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.34) 0px 0px 0px 1px, rgba(0, 0, 0, 0.16) 0px 0px 0px 4px",
+     "outline": "none 3px rgb(23, 23, 23) off 0px",
+     "pad": "0px",
+     "font": "16px/400/24px/normal",
+     "color": "rgb(23, 23, 23)",
+     "transition": "all 0.15s"
+    },
+    "placeholder": "rgb(143, 143, 143)",
+    "ph": "Large"
+   },
+   "w": 199,
+   "h": 40
+  }
+ ],
+ "geist-input-dark": [
+  {
+   "rest": {
+    "self": {
+     "h": "32px",
+     "bg": "rgb(10, 10, 10)",
+     "border": "0px rgb(31, 31, 31)",
+     "radius": "0px",
+     "shadow": "none",
+     "outline": "none 3px rgb(255, 255, 255) off 0px",
+     "pad": "0px 12px",
+     "font": "14px/400/20px/normal",
+     "color": "rgb(255, 255, 255)",
+     "transition": "all 0s"
+    },
+    "parent": {
+     "h": "32px",
+     "bg": "rgba(0, 0, 0, 0)",
+     "border": "0px rgb(31, 31, 31)",
+     "radius": "6px",
+     "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(255, 255, 255, 0.14) 0px 0px 0px 1px",
+     "outline": "none 3px rgb(237, 237, 237) off 0px",
+     "pad": "0px",
+     "font": "14px/400/20px/normal",
+     "color": "rgb(237, 237, 237)",
+     "transition": "all 0.15s"
+    },
+    "placeholder": "rgb(143, 143, 143)",
+    "ph": "Small"
+   },
+   "foc": {
+    "self": {
+     "h": "32px",
+     "bg": "rgb(10, 10, 10)",
+     "border": "0px rgb(31, 31, 31)",
+     "radius": "0px",
+     "shadow": "none",
+     "outline": "none 1px rgb(153, 200, 255) off 0px",
+     "pad": "0px 12px",
+     "font": "14px/400/20px/normal",
+     "color": "rgb(255, 255, 255)",
+     "transition": "all 0s"
+    },
+    "parent": {
+     "h": "32px",
+     "bg": "rgba(0, 0, 0, 0)",
+     "border": "0px rgb(31, 31, 31)",
+     "radius": "6px",
+     "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(255, 255, 255, 0.51) 0px 0px 0px 1px, rgba(255, 255, 255, 0.24) 0px 0px 0px 4px",
+     "outline": "none 3px rgb(237, 237, 237) off 0px",
+     "pad": "0px",
+     "font": "14px/400/20px/normal",
+     "color": "rgb(237, 237, 237)",
+     "transition": "all 0.15s"
+    },
+    "placeholder": "rgb(143, 143, 143)",
+    "ph": "Small"
+   },
+   "w": 178,
+   "h": 32
+  },
+  {
+   "rest": {
+    "self": {
+     "h": "36px",
+     "bg": "rgb(10, 10, 10)",
+     "border": "0px rgb(31, 31, 31)",
+     "radius": "0px",
+     "shadow": "none",
+     "outline": "none 3px rgb(255, 255, 255) off 0px",
+     "pad": "0px 12px",
+     "font": "14px/400/20px/normal",
+     "color": "rgb(255, 255, 255)",
+     "transition": "all 0s"
+    },
+    "parent": {
+     "h": "36px",
+     "bg": "rgba(0, 0, 0, 0)",
+     "border": "0px rgb(31, 31, 31)",
+     "radius": "6px",
+     "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(255, 255, 255, 0.14) 0px 0px 0px 1px",
+     "outline": "none 3px rgb(237, 237, 237) off 0px",
+     "pad": "0px",
+     "font": "14px/400/20px/normal",
+     "color": "rgb(237, 237, 237)",
+     "transition": "all 0.15s"
+    },
+    "placeholder": "rgb(143, 143, 143)",
+    "ph": "Default"
+   },
+   "foc": {
+    "self": {
+     "h": "36px",
+     "bg": "rgb(10, 10, 10)",
+     "border": "0px rgb(31, 31, 31)",
+     "radius": "0px",
+     "shadow": "none",
+     "outline": "none 1px rgb(153, 200, 255) off 0px",
+     "pad": "0px 12px",
+     "font": "14px/400/20px/normal",
+     "color": "rgb(255, 255, 255)",
+     "transition": "all 0s"
+    },
+    "parent": {
+     "h": "36px",
+     "bg": "rgba(0, 0, 0, 0)",
+     "border": "0px rgb(31, 31, 31)",
+     "radius": "6px",
+     "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(255, 255, 255, 0.51) 0px 0px 0px 1px, rgba(255, 255, 255, 0.24) 0px 0px 0px 4px",
+     "outline": "none 3px rgb(237, 237, 237) off 0px",
+     "pad": "0px",
+     "font": "14px/400/20px/normal",
+     "color": "rgb(237, 237, 237)",
+     "transition": "all 0.15s"
+    },
+    "placeholder": "rgb(143, 143, 143)",
+    "ph": "Default"
+   },
+   "w": 178,
+   "h": 36
+  },
+  {
+   "rest": {
+    "self": {
+     "h": "40px",
+     "bg": "rgb(10, 10, 10)",
+     "border": "0px rgb(31, 31, 31)",
+     "radius": "0px",
+     "shadow": "none",
+     "outline": "none 3px rgb(255, 255, 255) off 0px",
+     "pad": "0px 12px",
+     "font": "16px/400/24px/normal",
+     "color": "rgb(255, 255, 255)",
+     "transition": "all 0s"
+    },
+    "parent": {
+     "h": "40px",
+     "bg": "rgba(0, 0, 0, 0)",
+     "border": "0px rgb(31, 31, 31)",
+     "radius": "8px",
+     "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(255, 255, 255, 0.14) 0px 0px 0px 1px",
+     "outline": "none 3px rgb(237, 237, 237) off 0px",
+     "pad": "0px",
+     "font": "16px/400/24px/normal",
+     "color": "rgb(237, 237, 237)",
+     "transition": "all 0.15s"
+    },
+    "placeholder": "rgb(143, 143, 143)",
+    "ph": "Large"
+   },
+   "foc": {
+    "self": {
+     "h": "40px",
+     "bg": "rgb(10, 10, 10)",
+     "border": "0px rgb(31, 31, 31)",
+     "radius": "0px",
+     "shadow": "none",
+     "outline": "none 1px rgb(153, 200, 255) off 0px",
+     "pad": "0px 12px",
+     "font": "16px/400/24px/normal",
+     "color": "rgb(255, 255, 255)",
+     "transition": "all 0s"
+    },
+    "parent": {
+     "h": "40px",
+     "bg": "rgba(0, 0, 0, 0)",
+     "border": "0px rgb(31, 31, 31)",
+     "radius": "8px",
+     "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(255, 255, 255, 0.51) 0px 0px 0px 1px, rgba(255, 255, 255, 0.24) 0px 0px 0px 4px",
+     "outline": "none 3px rgb(237, 237, 237) off 0px",
+     "pad": "0px",
+     "font": "16px/400/24px/normal",
+     "color": "rgb(237, 237, 237)",
+     "transition": "all 0.15s"
+    },
+    "placeholder": "rgb(143, 143, 143)",
+    "ph": "Large"
+   },
+   "w": 199,
+   "h": 40
+  }
+ ],
+ "coss-input-light": [
+  {
+   "rest": {
+    "self": {
+     "h": "30px",
+     "bg": "rgba(0, 0, 0, 0)",
+     "border": "0px oklab(0 0 0 / 0.08)",
+     "radius": "10px",
+     "shadow": "none",
+     "outline": "none 3px oklab(0.707999 -0.00000712276 0.0000166297 / 0.5) off 0px",
+     "pad": "0px 11px",
+     "font": "14px/400/30px/normal",
+     "color": "lab(15.204 0 -0.00000596046)",
+     "transition": "background-color 5e+06s"
+    },
+    "parent": {
+     "h": "32px",
+     "bg": "rgb(255, 255, 255)",
+     "border": "1px oklab(0 0 0 / 0.1)",
+     "radius": "10px",
+     "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, lab(0 0 0 / 0.05) 0px 1px 2px 0px",
+     "outline": "none 3px oklab(0.707999 -0.00000712276 0.0000166297 / 0.5) off 0px",
+     "pad": "0px",
+     "font": "14px/400/20px/normal",
+     "color": "lab(15.204 0 -0.00000596046)",
+     "transition": "box-shadow 0.15s"
+    },
+    "placeholder": "oklab(0.515982 -0.00000466406 0.0000120103 / 0.72)",
+    "ph": "Enter text"
+   },
+   "foc": {
+    "self": {
+     "h": "30px",
+     "bg": "rgba(0, 0, 0, 0)",
+     "border": "0px oklab(0 0 0 / 0.08)",
+     "radius": "10px",
+     "shadow": "none",
+     "outline": "none 1px oklab(0.707999 -0.00000712276 0.0000166297 / 0.5) off 0px",
+     "pad": "0px 11px",
+     "font": "14px/400/30px/normal",
+     "color": "lab(15.204 0 -0.00000596046)",
+     "transition": "background-color 5e+06s"
+    },
+    "parent": {
+     "h": "32px",
+     "bg": "rgb(255, 255, 255)",
+     "border": "1px lab(66.128 -0.0000298023 0.0000119209)",
+     "radius": "10px",
+     "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklab(0.707999 -0.00000712276 0.0000166297 / 0.24) 0px 0px 0px 3px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+     "outline": "none 3px oklab(0.707999 -0.00000712276 0.0000166297 / 0.5) off 0px",
+     "pad": "0px",
+     "font": "14px/400/20px/normal",
+     "color": "lab(15.204 0 -0.00000596046)",
+     "transition": "box-shadow 0.15s"
+    },
+    "placeholder": "oklab(0.515982 -0.00000466406 0.0000120103 / 0.72)",
+    "ph": "Enter text"
+   },
+   "w": 254,
+   "h": 30
+  },
+  {
+   "rest": {
+    "self": {
+     "h": "26px",
+     "bg": "rgba(0, 0, 0, 0)",
+     "border": "0px oklab(0 0 0 / 0.08)",
+     "radius": "10px",
+     "shadow": "none",
+     "outline": "none 3px oklab(0.707999 -0.00000712276 0.0000166297 / 0.5) off 0px",
+     "pad": "0px 9px",
+     "font": "14px/400/26px/normal",
+     "color": "lab(15.204 0 -0.00000596046)",
+     "transition": "background-color 5e+06s"
+    },
+    "parent": {
+     "h": "28px",
+     "bg": "rgb(255, 255, 255)",
+     "border": "1px oklab(0 0 0 / 0.1)",
+     "radius": "10px",
+     "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, lab(0 0 0 / 0.05) 0px 1px 2px 0px",
+     "outline": "none 3px oklab(0.707999 -0.00000712276 0.0000166297 / 0.5) off 0px",
+     "pad": "0px",
+     "font": "14px/400/20px/normal",
+     "color": "lab(15.204 0 -0.00000596046)",
+     "transition": "box-shadow 0.15s"
+    },
+    "placeholder": "oklab(0.515982 -0.00000466406 0.0000120103 / 0.72)",
+    "ph": "Enter text"
+   },
+   "foc": {
+    "self": {
+     "h": "26px",
+     "bg": "rgba(0, 0, 0, 0)",
+     "border": "0px oklab(0 0 0 / 0.08)",
+     "radius": "10px",
+     "shadow": "none",
+     "outline": "none 1px oklab(0.707999 -0.00000712276 0.0000166297 / 0.5) off 0px",
+     "pad": "0px 9px",
+     "font": "14px/400/26px/normal",
+     "color": "lab(15.204 0 -0.00000596046)",
+     "transition": "background-color 5e+06s"
+    },
+    "parent": {
+     "h": "28px",
+     "bg": "rgb(255, 255, 255)",
+     "border": "1px lab(66.128 -0.0000298023 0.0000119209)",
+     "radius": "10px",
+     "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklab(0.707999 -0.00000712276 0.0000166297 / 0.24) 0px 0px 0px 3px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+     "outline": "none 3px oklab(0.707999 -0.00000712276 0.0000166297 / 0.5) off 0px",
+     "pad": "0px",
+     "font": "14px/400/20px/normal",
+     "color": "lab(15.204 0 -0.00000596046)",
+     "transition": "box-shadow 0.15s"
+    },
+    "placeholder": "oklab(0.515982 -0.00000466406 0.0000120103 / 0.72)",
+    "ph": "Enter text"
+   },
+   "w": 254,
+   "h": 26
+  },
+  {
+   "rest": {
+    "self": {
+     "h": "34px",
+     "bg": "rgba(0, 0, 0, 0)",
+     "border": "0px oklab(0 0 0 / 0.08)",
+     "radius": "10px",
+     "shadow": "none",
+     "outline": "none 3px oklab(0.707999 -0.00000712276 0.0000166297 / 0.5) off 0px",
+     "pad": "0px 11px",
+     "font": "14px/400/34px/normal",
+     "color": "lab(15.204 0 -0.00000596046)",
+     "transition": "background-color 5e+06s"
+    },
+    "parent": {
+     "h": "36px",
+     "bg": "rgb(255, 255, 255)",
+     "border": "1px oklab(0 0 0 / 0.1)",
+     "radius": "10px",
+     "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, lab(0 0 0 / 0.05) 0px 1px 2px 0px",
+     "outline": "none 3px oklab(0.707999 -0.00000712276 0.0000166297 / 0.5) off 0px",
+     "pad": "0px",
+     "font": "14px/400/20px/normal",
+     "color": "lab(15.204 0 -0.00000596046)",
+     "transition": "box-shadow 0.15s"
+    },
+    "placeholder": "oklab(0.515982 -0.00000466406 0.0000120103 / 0.72)",
+    "ph": "Enter text"
+   },
+   "foc": {
+    "self": {
+     "h": "34px",
+     "bg": "rgba(0, 0, 0, 0)",
+     "border": "0px oklab(0 0 0 / 0.08)",
+     "radius": "10px",
+     "shadow": "none",
+     "outline": "none 1px oklab(0.707999 -0.00000712276 0.0000166297 / 0.5) off 0px",
+     "pad": "0px 11px",
+     "font": "14px/400/34px/normal",
+     "color": "lab(15.204 0 -0.00000596046)",
+     "transition": "background-color 5e+06s"
+    },
+    "parent": {
+     "h": "36px",
+     "bg": "rgb(255, 255, 255)",
+     "border": "1px lab(66.128 -0.0000298023 0.0000119209)",
+     "radius": "10px",
+     "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklab(0.707999 -0.00000712276 0.0000166297 / 0.24) 0px 0px 0px 3px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+     "outline": "none 3px oklab(0.707999 -0.00000712276 0.0000166297 / 0.5) off 0px",
+     "pad": "0px",
+     "font": "14px/400/20px/normal",
+     "color": "lab(15.204 0 -0.00000596046)",
+     "transition": "box-shadow 0.15s"
+    },
+    "placeholder": "oklab(0.515982 -0.00000466406 0.0000120103 / 0.72)",
+    "ph": "Enter text"
+   },
+   "w": 254,
+   "h": 34
+  }
+ ],
+ "coss-input-dark": [
+  {
+   "rest": {
+    "self": {
+     "h": "30px",
+     "bg": "rgba(0, 0, 0, 0)",
+     "border": "0px oklab(0.999994 0.0000455678 0.0000200868 / 0.06)",
+     "radius": "10px",
+     "shadow": "none",
+     "outline": "none 3px oklab(0.555999 -0.00000530481 0.000012964 / 0.5) off 0px",
+     "pad": "0px 11px",
+     "font": "14px/400/30px/normal",
+     "color": "lab(96.52 -0.0000298023 0.0000119209)",
+     "transition": "background-color 5e+06s"
+    },
+    "parent": {
+     "h": "32px",
+     "bg": "oklab(0.999994 0.0000455678 0.0000200868 / 0.0256)",
+     "border": "1px oklab(0.999994 0.0000455678 0.0000200868 / 0.08)",
+     "radius": "10px",
+     "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, lab(0 0 0 / 0.05) 0px 1px 2px 0px",
+     "outline": "none 3px oklab(0.555999 -0.00000530481 0.000012964 / 0.5) off 0px",
+     "pad": "0px",
+     "font": "14px/400/20px/normal",
+     "color": "lab(96.52 -0.0000298023 0.0000119209)",
+     "transition": "box-shadow 0.15s"
+    },
+    "placeholder": "oklab(0.603663 3.27826e-7 0.0000137091 / 0.72)",
+    "ph": "Enter text"
+   },
+   "foc": {
+    "self": {
+     "h": "30px",
+     "bg": "rgba(0, 0, 0, 0)",
+     "border": "0px oklab(0.999994 0.0000455678 0.0000200868 / 0.06)",
+     "radius": "10px",
+     "shadow": "none",
+     "outline": "none 1px oklab(0.555999 -0.00000530481 0.000012964 / 0.5) off 0px",
+     "pad": "0px 11px",
+     "font": "14px/400/30px/normal",
+     "color": "lab(96.52 -0.0000298023 0.0000119209)",
+     "transition": "background-color 5e+06s"
+    },
+    "parent": {
+     "h": "32px",
+     "bg": "oklab(0.999994 0.0000455678 0.0000200868 / 0.0256)",
+     "border": "1px lab(48.496 0 0)",
+     "radius": "10px",
+     "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklab(0.555999 -0.00000530481 0.000012964 / 0.24) 0px 0px 0px 3px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+     "outline": "none 3px oklab(0.555999 -0.00000530481 0.000012964 / 0.5) off 0px",
+     "pad": "0px",
+     "font": "14px/400/20px/normal",
+     "color": "lab(96.52 -0.0000298023 0.0000119209)",
+     "transition": "box-shadow 0.15s"
+    },
+    "placeholder": "oklab(0.603663 3.27826e-7 0.0000137091 / 0.72)",
+    "ph": "Enter text"
+   },
+   "w": 254,
+   "h": 30
+  },
+  {
+   "rest": {
+    "self": {
+     "h": "26px",
+     "bg": "rgba(0, 0, 0, 0)",
+     "border": "0px oklab(0.999994 0.0000455678 0.0000200868 / 0.06)",
+     "radius": "10px",
+     "shadow": "none",
+     "outline": "none 3px oklab(0.555999 -0.00000530481 0.000012964 / 0.5) off 0px",
+     "pad": "0px 9px",
+     "font": "14px/400/26px/normal",
+     "color": "lab(96.52 -0.0000298023 0.0000119209)",
+     "transition": "background-color 5e+06s"
+    },
+    "parent": {
+     "h": "28px",
+     "bg": "oklab(0.999994 0.0000455678 0.0000200868 / 0.0256)",
+     "border": "1px oklab(0.999994 0.0000455678 0.0000200868 / 0.08)",
+     "radius": "10px",
+     "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, lab(0 0 0 / 0.05) 0px 1px 2px 0px",
+     "outline": "none 3px oklab(0.555999 -0.00000530481 0.000012964 / 0.5) off 0px",
+     "pad": "0px",
+     "font": "14px/400/20px/normal",
+     "color": "lab(96.52 -0.0000298023 0.0000119209)",
+     "transition": "box-shadow 0.15s"
+    },
+    "placeholder": "oklab(0.603663 3.27826e-7 0.0000137091 / 0.72)",
+    "ph": "Enter text"
+   },
+   "foc": {
+    "self": {
+     "h": "26px",
+     "bg": "rgba(0, 0, 0, 0)",
+     "border": "0px oklab(0.999994 0.0000455678 0.0000200868 / 0.06)",
+     "radius": "10px",
+     "shadow": "none",
+     "outline": "none 1px oklab(0.555999 -0.00000530481 0.000012964 / 0.5) off 0px",
+     "pad": "0px 9px",
+     "font": "14px/400/26px/normal",
+     "color": "lab(96.52 -0.0000298023 0.0000119209)",
+     "transition": "background-color 5e+06s"
+    },
+    "parent": {
+     "h": "28px",
+     "bg": "oklab(0.999994 0.0000455678 0.0000200868 / 0.0256)",
+     "border": "1px lab(48.496 0 0)",
+     "radius": "10px",
+     "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklab(0.555999 -0.00000530481 0.000012964 / 0.24) 0px 0px 0px 3px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+     "outline": "none 3px oklab(0.555999 -0.00000530481 0.000012964 / 0.5) off 0px",
+     "pad": "0px",
+     "font": "14px/400/20px/normal",
+     "color": "lab(96.52 -0.0000298023 0.0000119209)",
+     "transition": "box-shadow 0.15s"
+    },
+    "placeholder": "oklab(0.603663 3.27826e-7 0.0000137091 / 0.72)",
+    "ph": "Enter text"
+   },
+   "w": 254,
+   "h": 26
+  },
+  {
+   "rest": {
+    "self": {
+     "h": "34px",
+     "bg": "rgba(0, 0, 0, 0)",
+     "border": "0px oklab(0.999994 0.0000455678 0.0000200868 / 0.06)",
+     "radius": "10px",
+     "shadow": "none",
+     "outline": "none 3px oklab(0.555999 -0.00000530481 0.000012964 / 0.5) off 0px",
+     "pad": "0px 11px",
+     "font": "14px/400/34px/normal",
+     "color": "lab(96.52 -0.0000298023 0.0000119209)",
+     "transition": "background-color 5e+06s"
+    },
+    "parent": {
+     "h": "36px",
+     "bg": "oklab(0.999994 0.0000455678 0.0000200868 / 0.0256)",
+     "border": "1px oklab(0.999994 0.0000455678 0.0000200868 / 0.08)",
+     "radius": "10px",
+     "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, lab(0 0 0 / 0.05) 0px 1px 2px 0px",
+     "outline": "none 3px oklab(0.555999 -0.00000530481 0.000012964 / 0.5) off 0px",
+     "pad": "0px",
+     "font": "14px/400/20px/normal",
+     "color": "lab(96.52 -0.0000298023 0.0000119209)",
+     "transition": "box-shadow 0.15s"
+    },
+    "placeholder": "oklab(0.603663 3.27826e-7 0.0000137091 / 0.72)",
+    "ph": "Enter text"
+   },
+   "foc": {
+    "self": {
+     "h": "34px",
+     "bg": "rgba(0, 0, 0, 0)",
+     "border": "0px oklab(0.999994 0.0000455678 0.0000200868 / 0.06)",
+     "radius": "10px",
+     "shadow": "none",
+     "outline": "none 1px oklab(0.555999 -0.00000530481 0.000012964 / 0.5) off 0px",
+     "pad": "0px 11px",
+     "font": "14px/400/34px/normal",
+     "color": "lab(96.52 -0.0000298023 0.0000119209)",
+     "transition": "background-color 5e+06s"
+    },
+    "parent": {
+     "h": "36px",
+     "bg": "oklab(0.999994 0.0000455678 0.0000200868 / 0.0256)",
+     "border": "1px lab(48.496 0 0)",
+     "radius": "10px",
+     "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklab(0.555999 -0.00000530481 0.000012964 / 0.24) 0px 0px 0px 3px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+     "outline": "none 3px oklab(0.555999 -0.00000530481 0.000012964 / 0.5) off 0px",
+     "pad": "0px",
+     "font": "14px/400/20px/normal",
+     "color": "lab(96.52 -0.0000298023 0.0000119209)",
+     "transition": "box-shadow 0.15s"
+    },
+    "placeholder": "oklab(0.603663 3.27826e-7 0.0000137091 / 0.72)",
+    "ph": "Enter text"
+   },
+   "w": 254,
+   "h": 34
+  }
+ ],
+ "untitledui-inputs-light": [
+  {
+   "rest": {
+    "self": {
+     "h": "40px",
+     "bg": "rgba(0, 0, 0, 0)",
+     "border": "0px lab(7.78201 -0.0000149012 0)",
+     "radius": "0px",
+     "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, lab(7.78201 -0.0000149012 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+     "outline": "none 3px lab(7.78201 -0.0000149012 0) off 0px",
+     "pad": "8px 36px 8px 12px",
+     "font": "16px/400/24px/normal",
+     "color": "lab(7.78201 -0.0000149012 0)",
+     "transition": "all 0s"
+    },
+    "parent": {
+     "h": "40px",
+     "bg": "rgb(255, 255, 255)",
+     "border": "0px lab(34.924 0 0)",
+     "radius": "8px",
+     "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, lab(84.92 0 -0.0000119209) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px",
+     "outline": "none 3px lab(34.924 0 0) off 0px",
+     "pad": "0px",
+     "font": "16px/400/24px/normal",
+     "color": "lab(34.924 0 0)",
+     "transition": "box-shadow 0.1s"
+    },
+    "placeholder": "lab(48.496 0 0)",
+    "ph": "olivia@untitledui.com"
+   },
+   "foc": {
+    "self": {
+     "h": "40px",
+     "bg": "rgba(0, 0, 0, 0)",
+     "border": "0px lab(7.78201 -0.0000149012 0)",
+     "radius": "0px",
+     "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, lab(7.78201 -0.0000149012 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+     "outline": "none 1px rgb(0, 95, 204) off 0px",
+     "pad": "8px 36px 8px 12px",
+     "font": "16px/400/24px/normal",
+     "color": "lab(7.78201 -0.0000149012 0)",
+     "transition": "all 0s"
+    },
+    "parent": {
+     "h": "40px",
+     "bg": "rgb(255, 255, 255)",
+     "border": "0px lab(34.924 0 0)",
+     "radius": "8px",
+     "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(158, 119, 237) 0px 0px 0px 2px inset, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px",
+     "outline": "none 3px lab(34.924 0 0) off 0px",
+     "pad": "0px",
+     "font": "16px/400/24px/normal",
+     "color": "lab(34.924 0 0)",
+     "transition": "box-shadow 0.1s"
+    },
+    "placeholder": "lab(48.496 0 0)",
+    "ph": "olivia@untitledui.com"
+   },
+   "w": 320,
+   "h": 40
+  },
+  {
+   "rest": {
+    "self": {
+     "h": "40px",
+     "bg": "rgba(0, 0, 0, 0)",
+     "border": "0px lab(7.78201 -0.0000149012 0)",
+     "radius": "0px",
+     "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, lab(7.78201 -0.0000149012 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+     "outline": "none 3px lab(7.78201 -0.0000149012 0) off 0px",
+     "pad": "8px 36px 8px 12px",
+     "font": "16px/400/24px/normal",
+     "color": "lab(7.78201 -0.0000149012 0)",
+     "transition": "all 0s"
+    },
+    "parent": {
+     "h": "40px",
+     "bg": "rgb(255, 255, 255)",
+     "border": "0px lab(34.924 0 0)",
+     "radius": "8px",
+     "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, lab(84.92 0 -0.0000119209) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px",
+     "outline": "none 3px lab(34.924 0 0) off 0px",
+     "pad": "0px",
+     "font": "16px/400/24px/normal",
+     "color": "lab(34.924 0 0)",
+     "transition": "box-shadow 0.1s"
+    },
+    "placeholder": "lab(48.496 0 0)",
+    "ph": "olivia@untitledui.com"
+   },
+   "foc": {
+    "self": {
+     "h": "40px",
+     "bg": "rgba(0, 0, 0, 0)",
+     "border": "0px lab(7.78201 -0.0000149012 0)",
+     "radius": "0px",
+     "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, lab(7.78201 -0.0000149012 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+     "outline": "none 1px rgb(0, 95, 204) off 0px",
+     "pad": "8px 36px 8px 12px",
+     "font": "16px/400/24px/normal",
+     "color": "lab(7.78201 -0.0000149012 0)",
+     "transition": "all 0s"
+    },
+    "parent": {
+     "h": "40px",
+     "bg": "rgb(255, 255, 255)",
+     "border": "0px lab(34.924 0 0)",
+     "radius": "8px",
+     "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(158, 119, 237) 0px 0px 0px 2px inset, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px",
+     "outline": "none 3px lab(34.924 0 0) off 0px",
+     "pad": "0px",
+     "font": "16px/400/24px/normal",
+     "color": "lab(34.924 0 0)",
+     "transition": "box-shadow 0.1s"
+    },
+    "placeholder": "lab(48.496 0 0)",
+    "ph": "olivia@untitledui.com"
+   },
+   "w": 320,
+   "h": 40
+  },
+  {
+   "rest": {
+    "self": {
+     "h": "40px",
+     "bg": "rgba(0, 0, 0, 0)",
+     "border": "0px lab(7.78201 -0.0000149012 0)",
+     "radius": "0px",
+     "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, lab(7.78201 -0.0000149012 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+     "outline": "none 3px lab(7.78201 -0.0000149012 0) off 0px",
+     "pad": "8px 36px 8px 12px",
+     "font": "16px/400/24px/normal",
+     "color": "lab(7.78201 -0.0000149012 0)",
+     "transition": "all 0s"
+    },
+    "parent": {
+     "h": "40px",
+     "bg": "rgb(255, 255, 255)",
+     "border": "0px lab(34.924 0 0)",
+     "radius": "8px",
+     "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, lab(84.92 0 -0.0000119209) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px",
+     "outline": "none 3px lab(34.924 0 0) off 0px",
+     "pad": "0px",
+     "font": "16px/400/24px/normal",
+     "color": "lab(34.924 0 0)",
+     "transition": "box-shadow 0.1s"
+    },
+    "placeholder": "lab(48.496 0 0)",
+    "ph": "olivia@untitledui.com"
+   },
+   "foc": {
+    "self": {
+     "h": "40px",
+     "bg": "rgba(0, 0, 0, 0)",
+     "border": "0px lab(7.78201 -0.0000149012 0)",
+     "radius": "0px",
+     "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, lab(7.78201 -0.0000149012 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+     "outline": "none 3px lab(7.78201 -0.0000149012 0) off 0px",
+     "pad": "8px 36px 8px 12px",
+     "font": "16px/400/24px/normal",
+     "color": "lab(7.78201 -0.0000149012 0)",
+     "transition": "all 0s"
+    },
+    "parent": {
+     "h": "40px",
+     "bg": "rgb(255, 255, 255)",
+     "border": "0px lab(34.924 0 0)",
+     "radius": "8px",
+     "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, lab(84.92 0 -0.0000119209) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px",
+     "outline": "none 3px lab(34.924 0 0) off 0px",
+     "pad": "0px",
+     "font": "16px/400/24px/normal",
+     "color": "lab(34.924 0 0)",
+     "transition": "box-shadow 0.1s"
+    },
+    "placeholder": "lab(48.496 0 0)",
+    "ph": "olivia@untitledui.com"
+   },
+   "w": 320,
+   "h": 40
+  }
+ ],
+ "untitledui-inputs-dark": [
+  {
+   "rest": {
+    "self": {
+     "h": "40px",
+     "bg": "rgba(0, 0, 0, 0)",
+     "border": "0px lab(7.78201 -0.0000149012 0)",
+     "radius": "0px",
+     "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, lab(7.78201 -0.0000149012 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+     "outline": "none 3px lab(7.78201 -0.0000149012 0) off 0px",
+     "pad": "8px 36px 8px 12px",
+     "font": "16px/400/24px/normal",
+     "color": "lab(7.78201 -0.0000149012 0)",
+     "transition": "all 0s"
+    },
+    "parent": {
+     "h": "40px",
+     "bg": "rgb(255, 255, 255)",
+     "border": "0px lab(34.924 0 0)",
+     "radius": "8px",
+     "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, lab(84.92 0 -0.0000119209) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px",
+     "outline": "none 3px lab(34.924 0 0) off 0px",
+     "pad": "0px",
+     "font": "16px/400/24px/normal",
+     "color": "lab(34.924 0 0)",
+     "transition": "box-shadow 0.1s"
+    },
+    "placeholder": "lab(48.496 0 0)",
+    "ph": "olivia@untitledui.com"
+   },
+   "foc": {
+    "self": {
+     "h": "40px",
+     "bg": "rgba(0, 0, 0, 0)",
+     "border": "0px lab(7.78201 -0.0000149012 0)",
+     "radius": "0px",
+     "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, lab(7.78201 -0.0000149012 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+     "outline": "none 1px rgb(0, 95, 204) off 0px",
+     "pad": "8px 36px 8px 12px",
+     "font": "16px/400/24px/normal",
+     "color": "lab(7.78201 -0.0000149012 0)",
+     "transition": "all 0s"
+    },
+    "parent": {
+     "h": "40px",
+     "bg": "rgb(255, 255, 255)",
+     "border": "0px lab(34.924 0 0)",
+     "radius": "8px",
+     "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(158, 119, 237) 0px 0px 0px 2px inset, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px",
+     "outline": "none 3px lab(34.924 0 0) off 0px",
+     "pad": "0px",
+     "font": "16px/400/24px/normal",
+     "color": "lab(34.924 0 0)",
+     "transition": "box-shadow 0.1s"
+    },
+    "placeholder": "lab(48.496 0 0)",
+    "ph": "olivia@untitledui.com"
+   },
+   "w": 320,
+   "h": 40
+  },
+  {
+   "rest": {
+    "self": {
+     "h": "40px",
+     "bg": "rgba(0, 0, 0, 0)",
+     "border": "0px lab(7.78201 -0.0000149012 0)",
+     "radius": "0px",
+     "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, lab(7.78201 -0.0000149012 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+     "outline": "none 3px lab(7.78201 -0.0000149012 0) off 0px",
+     "pad": "8px 36px 8px 12px",
+     "font": "16px/400/24px/normal",
+     "color": "lab(7.78201 -0.0000149012 0)",
+     "transition": "all 0s"
+    },
+    "parent": {
+     "h": "40px",
+     "bg": "rgb(255, 255, 255)",
+     "border": "0px lab(34.924 0 0)",
+     "radius": "8px",
+     "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, lab(84.92 0 -0.0000119209) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px",
+     "outline": "none 3px lab(34.924 0 0) off 0px",
+     "pad": "0px",
+     "font": "16px/400/24px/normal",
+     "color": "lab(34.924 0 0)",
+     "transition": "box-shadow 0.1s"
+    },
+    "placeholder": "lab(48.496 0 0)",
+    "ph": "olivia@untitledui.com"
+   },
+   "foc": {
+    "self": {
+     "h": "40px",
+     "bg": "rgba(0, 0, 0, 0)",
+     "border": "0px lab(7.78201 -0.0000149012 0)",
+     "radius": "0px",
+     "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, lab(7.78201 -0.0000149012 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+     "outline": "none 1px rgb(0, 95, 204) off 0px",
+     "pad": "8px 36px 8px 12px",
+     "font": "16px/400/24px/normal",
+     "color": "lab(7.78201 -0.0000149012 0)",
+     "transition": "all 0s"
+    },
+    "parent": {
+     "h": "40px",
+     "bg": "rgb(255, 255, 255)",
+     "border": "0px lab(34.924 0 0)",
+     "radius": "8px",
+     "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(158, 119, 237) 0px 0px 0px 2px inset, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px",
+     "outline": "none 3px lab(34.924 0 0) off 0px",
+     "pad": "0px",
+     "font": "16px/400/24px/normal",
+     "color": "lab(34.924 0 0)",
+     "transition": "box-shadow 0.1s"
+    },
+    "placeholder": "lab(48.496 0 0)",
+    "ph": "olivia@untitledui.com"
+   },
+   "w": 320,
+   "h": 40
+  },
+  {
+   "rest": {
+    "self": {
+     "h": "40px",
+     "bg": "rgba(0, 0, 0, 0)",
+     "border": "0px lab(7.78201 -0.0000149012 0)",
+     "radius": "0px",
+     "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, lab(7.78201 -0.0000149012 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+     "outline": "none 3px lab(7.78201 -0.0000149012 0) off 0px",
+     "pad": "8px 36px 8px 12px",
+     "font": "16px/400/24px/normal",
+     "color": "lab(7.78201 -0.0000149012 0)",
+     "transition": "all 0s"
+    },
+    "parent": {
+     "h": "40px",
+     "bg": "rgb(255, 255, 255)",
+     "border": "0px lab(34.924 0 0)",
+     "radius": "8px",
+     "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, lab(84.92 0 -0.0000119209) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px",
+     "outline": "none 3px lab(34.924 0 0) off 0px",
+     "pad": "0px",
+     "font": "16px/400/24px/normal",
+     "color": "lab(34.924 0 0)",
+     "transition": "box-shadow 0.1s"
+    },
+    "placeholder": "lab(48.496 0 0)",
+    "ph": "olivia@untitledui.com"
+   },
+   "foc": {
+    "self": {
+     "h": "40px",
+     "bg": "rgba(0, 0, 0, 0)",
+     "border": "0px lab(7.78201 -0.0000149012 0)",
+     "radius": "0px",
+     "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, lab(7.78201 -0.0000149012 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+     "outline": "none 3px lab(7.78201 -0.0000149012 0) off 0px",
+     "pad": "8px 36px 8px 12px",
+     "font": "16px/400/24px/normal",
+     "color": "lab(7.78201 -0.0000149012 0)",
+     "transition": "all 0s"
+    },
+    "parent": {
+     "h": "40px",
+     "bg": "rgb(255, 255, 255)",
+     "border": "0px lab(34.924 0 0)",
+     "radius": "8px",
+     "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, lab(84.92 0 -0.0000119209) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px",
+     "outline": "none 3px lab(34.924 0 0) off 0px",
+     "pad": "0px",
+     "font": "16px/400/24px/normal",
+     "color": "lab(34.924 0 0)",
+     "transition": "box-shadow 0.1s"
+    },
+    "placeholder": "lab(48.496 0 0)",
+    "ph": "olivia@untitledui.com"
+   },
+   "w": 320,
+   "h": 40
+  }
+ ],
+ "alignui-light": [
+  {
+   "rest": {
+    "self": {
+     "h": "40px",
+     "bg": "rgba(0, 0, 0, 0)",
+     "border": "0px rgb(235, 235, 235)",
+     "radius": "0px",
+     "shadow": "none",
+     "outline": "solid 2px rgba(0, 0, 0, 0) off 2px",
+     "pad": "0px",
+     "font": "14px/400/20px/-0.084px",
+     "color": "rgb(23, 23, 23)",
+     "transition": "color, background-color, border-color, text-decoration-color 0.2s"
+    },
+    "parent": {
+     "h": "40px",
+     "bg": "rgb(255, 255, 255)",
+     "border": "0px rgb(235, 235, 235)",
+     "radius": "0px",
+     "shadow": "none",
+     "outline": "none 3px rgb(23, 23, 23) off 0px",
+     "pad": "0px 12px",
+     "font": "16px/400/24px/normal",
+     "color": "rgb(23, 23, 23)",
+     "transition": "color, background-color, border-color, text-decoration-color 0.2s"
+    },
+    "placeholder": "rgb(163, 163, 163)",
+    "ph": "hello@alignui.com"
+   },
+   "foc": {
+    "self": {
+     "h": "40px",
+     "bg": "rgba(0, 0, 0, 0)",
+     "border": "0px rgb(235, 235, 235)",
+     "radius": "0px",
+     "shadow": "none",
+     "outline": "solid 2px rgba(0, 0, 0, 0) off 2px",
+     "pad": "0px",
+     "font": "14px/400/20px/-0.084px",
+     "color": "rgb(23, 23, 23)",
+     "transition": "color, background-color, border-color, text-decoration-color 0.2s"
+    },
+    "parent": {
+     "h": "40px",
+     "bg": "rgb(255, 255, 255)",
+     "border": "0px rgb(235, 235, 235)",
+     "radius": "0px",
+     "shadow": "none",
+     "outline": "none 3px rgb(23, 23, 23) off 0px",
+     "pad": "0px 12px",
+     "font": "16px/400/24px/normal",
+     "color": "rgb(23, 23, 23)",
+     "transition": "color, background-color, border-color, text-decoration-color 0.2s"
+    },
+    "placeholder": "rgb(92, 92, 92)",
+    "ph": "hello@alignui.com"
+   },
+   "w": 320,
+   "h": 40
+  },
+  {
+   "rest": {
+    "self": {
+     "h": "40px",
+     "bg": "rgba(0, 0, 0, 0)",
+     "border": "0px rgb(235, 235, 235)",
+     "radius": "0px",
+     "shadow": "none",
+     "outline": "solid 2px rgba(0, 0, 0, 0) off 2px",
+     "pad": "0px",
+     "font": "14px/400/20px/-0.084px",
+     "color": "rgb(23, 23, 23)",
+     "transition": "color, background-color, border-color, text-decoration-color 0.2s"
+    },
+    "parent": {
+     "h": "40px",
+     "bg": "rgb(255, 255, 255)",
+     "border": "0px rgb(235, 235, 235)",
+     "radius": "0px",
+     "shadow": "none",
+     "outline": "none 3px rgb(23, 23, 23) off 0px",
+     "pad": "0px 12px",
+     "font": "16px/400/24px/normal",
+     "color": "rgb(23, 23, 23)",
+     "transition": "color, background-color, border-color, text-decoration-color 0.2s"
+    },
+    "placeholder": "rgb(163, 163, 163)",
+    "ph": "••••••••••"
+   },
+   "foc": {
+    "self": {
+     "h": "40px",
+     "bg": "rgba(0, 0, 0, 0)",
+     "border": "0px rgb(235, 235, 235)",
+     "radius": "0px",
+     "shadow": "none",
+     "outline": "solid 2px rgba(0, 0, 0, 0) off 2px",
+     "pad": "0px",
+     "font": "14px/400/20px/-0.084px",
+     "color": "rgb(23, 23, 23)",
+     "transition": "color, background-color, border-color, text-decoration-color 0.2s"
+    },
+    "parent": {
+     "h": "40px",
+     "bg": "rgb(255, 255, 255)",
+     "border": "0px rgb(235, 235, 235)",
+     "radius": "0px",
+     "shadow": "none",
+     "outline": "none 3px rgb(23, 23, 23) off 0px",
+     "pad": "0px 12px",
+     "font": "16px/400/24px/normal",
+     "color": "rgb(23, 23, 23)",
+     "transition": "color, background-color, border-color, text-decoration-color 0.2s"
+    },
+    "placeholder": "rgb(92, 92, 92)",
+    "ph": "••••••••••"
+   },
+   "w": 292,
+   "h": 40
+  },
+  {
+   "rest": {
+    "self": {
+     "h": "40px",
+     "bg": "rgba(0, 0, 0, 0)",
+     "border": "0px rgb(235, 235, 235)",
+     "radius": "0px",
+     "shadow": "none",
+     "outline": "solid 2px rgba(0, 0, 0, 0) off 2px",
+     "pad": "0px",
+     "font": "14px/400/20px/-0.084px",
+     "color": "rgb(23, 23, 23)",
+     "transition": "color, background-color, border-color, text-decoration-color 0.2s"
+    },
+    "parent": {
+     "h": "40px",
+     "bg": "rgb(255, 255, 255)",
+     "border": "0px rgb(235, 235, 235)",
+     "radius": "0px",
+     "shadow": "none",
+     "outline": "none 3px rgb(23, 23, 23) off 0px",
+     "pad": "0px 12px",
+     "font": "16px/400/24px/normal",
+     "color": "rgb(23, 23, 23)",
+     "transition": "color, background-color, border-color, text-decoration-color 0.2s"
+    },
+    "placeholder": "rgb(163, 163, 163)",
+    "ph": "hello@alignui.com"
+   },
+   "foc": {
+    "self": {
+     "h": "40px",
+     "bg": "rgba(0, 0, 0, 0)",
+     "border": "0px rgb(235, 235, 235)",
+     "radius": "0px",
+     "shadow": "none",
+     "outline": "solid 2px rgba(0, 0, 0, 0) off 2px",
+     "pad": "0px",
+     "font": "14px/400/20px/-0.084px",
+     "color": "rgb(23, 23, 23)",
+     "transition": "color, background-color, border-color, text-decoration-color 0.2s"
+    },
+    "parent": {
+     "h": "40px",
+     "bg": "rgb(255, 255, 255)",
+     "border": "0px rgb(235, 235, 235)",
+     "radius": "0px",
+     "shadow": "none",
+     "outline": "none 3px rgb(23, 23, 23) off 0px",
+     "pad": "0px 12px",
+     "font": "16px/400/24px/normal",
+     "color": "rgb(23, 23, 23)",
+     "transition": "color, background-color, border-color, text-decoration-color 0.2s"
+    },
+    "placeholder": "rgb(92, 92, 92)",
+    "ph": "hello@alignui.com"
+   },
+   "w": 236,
+   "h": 40
+  }
+ ],
+ "alignui-dark": [
+  {
+   "rest": {
+    "self": {
+     "h": "40px",
+     "bg": "rgba(0, 0, 0, 0)",
+     "border": "0px rgb(235, 235, 235)",
+     "radius": "0px",
+     "shadow": "none",
+     "outline": "solid 2px rgba(0, 0, 0, 0) off 2px",
+     "pad": "0px",
+     "font": "14px/400/20px/-0.084px",
+     "color": "rgb(23, 23, 23)",
+     "transition": "color, background-color, border-color, text-decoration-color 0.2s"
+    },
+    "parent": {
+     "h": "40px",
+     "bg": "rgb(255, 255, 255)",
+     "border": "0px rgb(235, 235, 235)",
+     "radius": "0px",
+     "shadow": "none",
+     "outline": "none 3px rgb(23, 23, 23) off 0px",
+     "pad": "0px 12px",
+     "font": "16px/400/24px/normal",
+     "color": "rgb(23, 23, 23)",
+     "transition": "color, background-color, border-color, text-decoration-color 0.2s"
+    },
+    "placeholder": "rgb(163, 163, 163)",
+    "ph": "hello@alignui.com"
+   },
+   "foc": {
+    "self": {
+     "h": "40px",
+     "bg": "rgba(0, 0, 0, 0)",
+     "border": "0px rgb(235, 235, 235)",
+     "radius": "0px",
+     "shadow": "none",
+     "outline": "solid 2px rgba(0, 0, 0, 0) off 2px",
+     "pad": "0px",
+     "font": "14px/400/20px/-0.084px",
+     "color": "rgb(23, 23, 23)",
+     "transition": "color, background-color, border-color, text-decoration-color 0.2s"
+    },
+    "parent": {
+     "h": "40px",
+     "bg": "rgb(255, 255, 255)",
+     "border": "0px rgb(235, 235, 235)",
+     "radius": "0px",
+     "shadow": "none",
+     "outline": "none 3px rgb(23, 23, 23) off 0px",
+     "pad": "0px 12px",
+     "font": "16px/400/24px/normal",
+     "color": "rgb(23, 23, 23)",
+     "transition": "color, background-color, border-color, text-decoration-color 0.2s"
+    },
+    "placeholder": "rgb(92, 92, 92)",
+    "ph": "hello@alignui.com"
+   },
+   "w": 320,
+   "h": 40
+  },
+  {
+   "rest": {
+    "self": {
+     "h": "40px",
+     "bg": "rgba(0, 0, 0, 0)",
+     "border": "0px rgb(235, 235, 235)",
+     "radius": "0px",
+     "shadow": "none",
+     "outline": "solid 2px rgba(0, 0, 0, 0) off 2px",
+     "pad": "0px",
+     "font": "14px/400/20px/-0.084px",
+     "color": "rgb(23, 23, 23)",
+     "transition": "color, background-color, border-color, text-decoration-color 0.2s"
+    },
+    "parent": {
+     "h": "40px",
+     "bg": "rgb(255, 255, 255)",
+     "border": "0px rgb(235, 235, 235)",
+     "radius": "0px",
+     "shadow": "none",
+     "outline": "none 3px rgb(23, 23, 23) off 0px",
+     "pad": "0px 12px",
+     "font": "16px/400/24px/normal",
+     "color": "rgb(23, 23, 23)",
+     "transition": "color, background-color, border-color, text-decoration-color 0.2s"
+    },
+    "placeholder": "rgb(163, 163, 163)",
+    "ph": "••••••••••"
+   },
+   "foc": {
+    "self": {
+     "h": "40px",
+     "bg": "rgba(0, 0, 0, 0)",
+     "border": "0px rgb(235, 235, 235)",
+     "radius": "0px",
+     "shadow": "none",
+     "outline": "solid 2px rgba(0, 0, 0, 0) off 2px",
+     "pad": "0px",
+     "font": "14px/400/20px/-0.084px",
+     "color": "rgb(23, 23, 23)",
+     "transition": "color, background-color, border-color, text-decoration-color 0.2s"
+    },
+    "parent": {
+     "h": "40px",
+     "bg": "rgb(255, 255, 255)",
+     "border": "0px rgb(235, 235, 235)",
+     "radius": "0px",
+     "shadow": "none",
+     "outline": "none 3px rgb(23, 23, 23) off 0px",
+     "pad": "0px 12px",
+     "font": "16px/400/24px/normal",
+     "color": "rgb(23, 23, 23)",
+     "transition": "color, background-color, border-color, text-decoration-color 0.2s"
+    },
+    "placeholder": "rgb(92, 92, 92)",
+    "ph": "••••••••••"
+   },
+   "w": 292,
+   "h": 40
+  },
+  {
+   "rest": {
+    "self": {
+     "h": "40px",
+     "bg": "rgba(0, 0, 0, 0)",
+     "border": "0px rgb(235, 235, 235)",
+     "radius": "0px",
+     "shadow": "none",
+     "outline": "solid 2px rgba(0, 0, 0, 0) off 2px",
+     "pad": "0px",
+     "font": "14px/400/20px/-0.084px",
+     "color": "rgb(23, 23, 23)",
+     "transition": "color, background-color, border-color, text-decoration-color 0.2s"
+    },
+    "parent": {
+     "h": "40px",
+     "bg": "rgb(255, 255, 255)",
+     "border": "0px rgb(235, 235, 235)",
+     "radius": "0px",
+     "shadow": "none",
+     "outline": "none 3px rgb(23, 23, 23) off 0px",
+     "pad": "0px 12px",
+     "font": "16px/400/24px/normal",
+     "color": "rgb(23, 23, 23)",
+     "transition": "color, background-color, border-color, text-decoration-color 0.2s"
+    },
+    "placeholder": "rgb(163, 163, 163)",
+    "ph": "hello@alignui.com"
+   },
+   "foc": {
+    "self": {
+     "h": "40px",
+     "bg": "rgba(0, 0, 0, 0)",
+     "border": "0px rgb(235, 235, 235)",
+     "radius": "0px",
+     "shadow": "none",
+     "outline": "solid 2px rgba(0, 0, 0, 0) off 2px",
+     "pad": "0px",
+     "font": "14px/400/20px/-0.084px",
+     "color": "rgb(23, 23, 23)",
+     "transition": "color, background-color, border-color, text-decoration-color 0.2s"
+    },
+    "parent": {
+     "h": "40px",
+     "bg": "rgb(255, 255, 255)",
+     "border": "0px rgb(235, 235, 235)",
+     "radius": "0px",
+     "shadow": "none",
+     "outline": "none 3px rgb(23, 23, 23) off 0px",
+     "pad": "0px 12px",
+     "font": "16px/400/24px/normal",
+     "color": "rgb(23, 23, 23)",
+     "transition": "color, background-color, border-color, text-decoration-color 0.2s"
+    },
+    "placeholder": "rgb(92, 92, 92)",
+    "ph": "hello@alignui.com"
+   },
+   "w": 236,
+   "h": 40
+  }
+ ],
+ "clerk-light": [],
+ "clerk-dark": []
+}
