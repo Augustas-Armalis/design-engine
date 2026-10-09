@@ -166,7 +166,7 @@ export function RollingNumber({ value, at = 0, stagger = 0.045, className = '' }
       <span aria-hidden className="inline-flex">
         {chars.map((c, i) => {
           const key = chars.length - i // keyed from the right so slots stay put when the value changes
-          if (!/\d/.test(c)) return <span key={`s${key}${c}`}>{c}</span>
+          if (!/\d/.test(c)) return <span key={`s${key}${c}`} className="inline-block h-[1.1em] leading-[1.1em]">{c}</span> // same box as a digit slot, so symbols share the baseline
           const d = Number(c)
           return (
             <span key={`d${key}`} className="relative inline-block h-[1.1em] overflow-hidden leading-[1.1em] [mask-image:linear-gradient(to_bottom,transparent,#000_18%,#000_82%,transparent)]">

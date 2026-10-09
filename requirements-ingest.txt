@@ -1,0 +1,6 @@
+# Optional: only needed to ingest new books/PDFs into corpus/ (tools/extract_pdf.py, tools/ocr_pdf.py).
+# The design pipeline itself (select_rules.py, build_index.py) uses the Python standard library only.
+PyMuPDF==1.26.5
+# macOS only, for OCR of image-only PDFs:
+pyobjc-framework-Vision==12.0; sys_platform == "darwin"
+pyobjc-framework-Quartz==12.0; sys_platform == "darwin"

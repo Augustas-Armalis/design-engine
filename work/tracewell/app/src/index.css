@@ -1,0 +1,39 @@
+@import "tailwindcss";
+@import "@fontsource-variable/schibsted-grotesk";
+@import "@fontsource-variable/jetbrains-mono";
+@import "./theme.css";
+@theme {
+  --font-sans: "Schibsted Grotesk Variable", "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "JetBrains Mono Variable", ui-monospace, monospace;
+}
+/* Tracewell, round 2: premium dark measured from Linear (canvas #08090a, h1 510-550 weight, -0.02 to -0.03em, muted sub
+   #8a8f98, 8% hairlines). Monochrome UI; one lime accent for live state only; coral for failure. Surfaces step by lightness. */
+:root {
+  color-scheme: dark;
+  --canvas: #08090a; --s1: #0f1011; --s2: #151617; --s3: #1c1d1f;
+  --line: rgba(255, 255, 255, 0.07); --line-2: rgba(255, 255, 255, 0.11);
+  --ink: #f7f8f8; --sub: #8a8f98; --soft: #7b8088;
+  --lime: #c8f169; --lime-ink: #10140a; --coral: #ff7a6b; --ok: #4cc38a;
+  --bar: rgba(255, 255, 255, 0.16); --bar-llm: rgba(255, 255, 255, 0.26);
+  --accent: var(--lime); --weak: var(--s2); --track: var(--s2);
+  --shadow-ring: 0 0 0 1px var(--line-2);
+}
+html, body { background: var(--canvas); }
+body { color: var(--ink); font-family: var(--font-sans); -webkit-font-smoothing: antialiased; }
+:focus-visible { outline: 2px solid var(--lime); outline-offset: 2px; }
+
+/* Button grammar: light pill (Linear / Vercel dark). Off-white, not pure white; a faint top highlight; the arrow travels. */
+.btn-light { background: #ececec; color: #08090a; box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6), 0 0 0 1px rgba(255, 255, 255, 0.08); transition: background-color 180ms cubic-bezier(.22,1,.36,1); }
+@media (hover: hover) { .btn-light:hover { background: #ffffff; } .btn-light:hover .arr, .btn-text:hover .arr { transform: translateX(2px); } }
+.btn-light .arr, .btn-text .arr { transition: transform 200ms cubic-bezier(.22,1,.36,1); }
+.btn-text { color: var(--sub); transition: color 180ms; }
+@media (hover: hover) { .btn-text:hover { color: var(--ink); } }
+
+.press { transition: transform 160ms cubic-bezier(.22,1,.36,1); }
+.press:active { transform: scale(0.97); }
+@media (prefers-reduced-motion: reduce) { .press:active { transform: none; } }
+h1, h2, h3 { text-wrap: balance; }
+p { text-wrap: pretty; }
+.tnum { font-variant-numeric: tabular-nums; }
+
+@keyframes shimmer { from { background-position: 100% 0 } to { background-position: -100% 0 } }

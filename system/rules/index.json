@@ -2048,6 +2048,34 @@
   "origin": "founder"
  },
  {
+  "id": "founder.founder-taste#64",
+  "text": "[founder] Dark heroes must be premium dark (Linear, Vercel, Raycast grade), never \"dev-tool template\" dark: no neo-brutalist hard offset-block buttons, no muddy coloured glow on graphite, no flat dark product slab that sinks into the canvas, no random pastel data colours, no heavy 700 headline with crushed tracking. The product window in dark needs light: a defined edge (1px top highlight + hairline ring), a surface step above the canvas, and one controlled key light; data colours come from one tuned ramp. The split band layout (headline left, subtitle + CTAs right on the headline baseline, full-width product below) is good and reusable.",
+  "why": "Founder on Tracewell (V1 dark hero #1): \"straight up dogshit\"; \"the app and the buttons and everything else about it (except layout, I know that layout is good to use)... those buttons... looking ass and in general the dark design of the SaaS ass as well\".",
+  "applies": "every dark hero and dark product UI.",
+  "check": "side-by-side with knowledge/benchmarks/dark/linear and vercel folds via tools/compare.mjs before delivery; product window luminance step >= 4% above canvas with a visible top edge; buttons from knowledge/web/button-grammars.md dark recipes, not offset blocks.",
+  "checkable": true,
+  "source": "founder, Tracewell round 1, 2026-10-09",
+  "file": "founder/founder-taste.md",
+  "section": "5. Exceptions & judgement calls",
+  "tags": [
+   "founder",
+   "taste",
+   "hero",
+   "nav",
+   "typography",
+   "copy",
+   "icons",
+   "logo",
+   "layout",
+   "product-card",
+   "background",
+   "buttons",
+   "quality-bar"
+  ],
+  "kind": "source",
+  "origin": "founder"
+ },
+ {
   "id": "dos-and-donts.dos-and-donts#1",
   "text": "[T13] Use as few font sizes as possible in a form; differentiate size only between sections (labels/placeholders at one small size) and actions (the button label larger). The good mock uses 12 for both label and placeholder and 32 for the button label; the bad mock mixes 16 (label), 12 (placeholder), 32 (button).",
   "why": "Every extra size is another thing to decode, so the form takes longer to process.",
