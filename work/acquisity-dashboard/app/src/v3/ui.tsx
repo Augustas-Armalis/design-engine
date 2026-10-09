@@ -7,7 +7,7 @@ export const ICON = { size: 16, strokeWidth: 1.5 } as const
 export function Btn({ children, icon: Icon, primary, kbd, label, className = '' }: { children?: ReactNode; icon?: LucideIcon; primary?: boolean; kbd?: string; label?: string; className?: string }) {
   const only = !children
   return (
-    <button type="button" aria-label={label} className={`press inline-flex h-7 shrink-0 items-center justify-center gap-1.5 rounded-[8px] t14 leading-none ${only ? 'w-7' : 'px-2.5'} ${primary ? 'bg-[var(--blue)] text-white shadow-[inset_0_0_0_1px_rgba(0,0,0,0.08),0_1px_2px_rgba(38,109,240,0.3)] hover:bg-[#1f5fd9]' : 'bg-white text-[var(--ink)] shadow-[var(--btn)] hover:bg-[var(--hover)]'} ${className}`}>
+    <button type="button" aria-label={label} className={`press inline-flex h-7 shrink-0 items-center justify-center gap-1.5 rounded-[8px] t14 leading-none ${only ? 'w-7' : 'px-2.5'} ${primary ? 'bg-[var(--blue)] text-white shadow-[inset_0_0_0_1px_rgba(0,0,0,0.08),0_1px_2px_rgba(38,109,240,0.3)] hover:bg-[#1f5fd9]' : 'btn-white text-[var(--ink)]'} ${className}`}>
       {Icon && <Icon {...ICON} className="shrink-0" />}
       {children && <span className="leading-none">{children}</span>}
       {kbd && <kbd className={`ml-auto flex h-[18px] items-center rounded-[6px] px-1 font-sans text-[11px] leading-none ${primary ? 'text-white shadow-[inset_0_0_0_1px_rgba(255,255,255,0.35)]' : 'text-[var(--soft)] shadow-[inset_0_0_0_1px_var(--line)]'}`}>{kbd}</kbd>}

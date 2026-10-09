@@ -1,4 +1,4 @@
-/* Acquisity v3: compact record-centric grammar measured from Attio / Rico / Kargul (knowledge/web/*-recreation*, attio-product-ui, kargul-source-study). */
+/* Ferry (v3): compact record-centric grammar measured from Attio / Rico / Kargul (knowledge/web/*-recreation*, attio-product-ui, kargul-source-study). */
 :root {
   --ink: #232529; --sub: #5c5e63; --soft: #6b6e73; --line: #eeeff1; --grid: #e6e7ea; --side: #fbfbfb; --hover: #f4f5f6; --sel: #f5f8ff;
   --blue: #266df0; --blue-ink: #183c81;
@@ -8,4 +8,7 @@
 .t13 { font-size: 13px; line-height: 18px; font-weight: 500; letter-spacing: -0.15px; }
 .t12 { font-size: 12px; line-height: 16px; font-weight: 500; letter-spacing: -0.05px; }
 .t16 { font-size: 16px; line-height: 22px; font-weight: 600; letter-spacing: -0.3px; }
+/* white control: crisp 1px ring + soft lift + faint bottom edge (was a blurred 2px halo that read fuzzy) */
+.btn-white { background: #fff; box-shadow: 0 0 0 1px rgba(28, 40, 64, 0.1), 0 1px 2px rgba(28, 40, 64, 0.06), inset 0 -1px 0 rgba(28, 40, 64, 0.03); transition: background-color 150ms cubic-bezier(0.25, 1, 0.5, 1), box-shadow 150ms cubic-bezier(0.25, 1, 0.5, 1); }
+@media (hover: hover) { .btn-white:hover { background: #f8f8f9; box-shadow: 0 0 0 1px rgba(28, 40, 64, 0.14), 0 1px 2px rgba(28, 40, 64, 0.06); } }
 .num { font-size: 20px; line-height: 26px; font-weight: 600; letter-spacing: -0.4px; font-variant-numeric: tabular-nums; }

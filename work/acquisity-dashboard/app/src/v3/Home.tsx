@@ -61,7 +61,7 @@ function Table({ sel, setSel }: { sel: number; setSel: (n: number) => void }) {
         <span className="grid size-4 place-items-center rounded-[4px] bg-[#fd9038]"><Inbox12 /></span>
         <h2 className="t14 font-[600] text-[var(--ink)]">Replies to handle</h2><span className="tnum t13 text-[var(--soft)]">8</span>
         <div className="ml-auto flex items-center gap-1.5">
-          <span className="inline-flex h-7 items-center gap-1.5 rounded-[8px] bg-white pl-2 pr-1 t14 leading-none shadow-[var(--btn)]"><Filter size={14} strokeWidth={1.5} className="text-[var(--soft)]" /><span className="text-[var(--sub)]">Intent is</span><span className="text-[var(--ink)]">Interested</span><button type="button" aria-label="Remove filter" className="grid size-5 place-items-center rounded-[6px] text-[var(--soft)] hover:bg-[var(--hover)]"><X size={12} strokeWidth={1.75} /></button></span>
+          <span className="inline-flex h-7 items-center gap-1.5 btn-white rounded-[8px] pl-2 pr-1 t14 leading-none"><Filter size={14} strokeWidth={1.5} className="text-[var(--soft)]" /><span className="text-[var(--sub)]">Intent is</span><span className="text-[var(--ink)]">Interested</span><button type="button" aria-label="Remove filter" className="grid size-5 place-items-center rounded-[6px] text-[var(--soft)] hover:bg-[var(--hover)]"><X size={12} strokeWidth={1.75} /></button></span>
           <Btn icon={Sparkles}>Draft all</Btn>
         </div>
       </div>
