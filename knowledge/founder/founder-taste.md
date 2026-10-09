@@ -19,9 +19,9 @@ Every rule here is a direct founder verdict on real output. It outranks books, w
 
 ## 2. Rules
 
-- **RULE** [founder] Never hand-draw icons or logos in SVG paths; use a professional icon set (Phosphor or Lucide) or supplied/traced artwork.
-  **Why** Founder: hand-made icons look amateur ("it's ass").
-  **Applies to** all. **Check** icons come from an installed icon package or a supplied/traced file. **Source** founder, Tideline round 1
+- **RULE** [founder] Never hand-draw icons in SVG paths; use a professional icon set (Phosphor or Lucide). Logos are never freehand and never an icon-set glyph: use supplied/traced artwork, or construct the mark with `tools/logo.mjs` from exact geometry (one idea, 1-4 parts, one slit/band regime, strokes >= 0.09 H, gaps >= 0.06 H) and pass `node tools/logo.mjs present` (16px, one colour, inverse, brand field, measured nav lockup) before it ships.
+  **Why** Founder: hand-made icons look amateur ("it's ass"). Founder, 2026-10-09, on every engine logo so far (two overlapping rounded squares, icon glyphs): "straight up dogshit... spend time learning how to create logos... learn fully". The study is `knowledge/web/logo-craft.md` (LG-01..28) and `knowledge/web/logo-anatomy-measured.md`.
+  **Applies to** all. **Check** icons come from an installed icon package; the brand mark comes from a supplied file or `work/<name>/brand/` with a present.png sheet; no Lucide/Phosphor glyph as a mark; no overlapping-squares, sparkle, hexagon or swirl without a written reason. **Source** founder, Tideline round 1; founder 2026-10-09 (logo study)
 
 - **RULE** [founder] A logo is a mark plus wordmark with no rounded-rectangle container behind the mark; wordmark at 20px+ in the nav (not 17px).
   **Why** Founder rejected icon-in-a-box logos and asked for the wordmark "a few pixels bigger".
@@ -293,3 +293,6 @@ Every rule here is a direct founder verdict on real output. It outranks books, w
 - **RULE** [founder] Component posts (the X / social format) follow Flo: one component alone on the #fafafa preview canvas, scaled up (~1.5x) inside its grey tray, the tray strip narrating the state, and a real cursor (Lucide MousePointer2) that travels, presses and lets go in sync with the component's own phases. Record the full loop at 4K60 plus an X-preset upload.
   **Why** Founder: "get me a high quality of the approval request component just like he does on X and animate it too".
   **Applies to** component showcases for social. **Check** cursor target measured after the entrance settles; one full state loop inside the clip. **Source** founder, Tandem round 3, 2026-10-09
+- **RULE** [founder] Present logos the way studios do before asking for a verdict: each finalist on white, on the brand colour and on ink, at 32/24/16 px, in the real nav lockup (mark 1.43x cap height, gap 0.28x mark, wordmark >= 20px), with its one-sentence idea; then drop the chosen mark into the live build (nav, favicon, the agent avatar) so it is judged in place, never only on a white artboard.
+  **Why** Founder: "the logo is the last piece that's still shitty". The references (logosystem.co, svgl.app) show marks on brand fields and in lockups; a mark judged alone at 256px hides every small-size and pairing failure.
+  **Applies to** brand marks. **Check** work/<name>/brand/present.png exists for the shipped mark; the build uses the mark in nav and product. **Source** founder, 2026-10-09; knowledge/web/logo-craft.md sections 5-6

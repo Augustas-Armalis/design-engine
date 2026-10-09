@@ -6,12 +6,13 @@ import { useEffect, useState } from 'react'
 import type { ReactNode } from 'react'
 import { AnimatePresence, motion, useReducedMotion } from 'motion/react'
 import {
-  ArrowUp, BookOpen, Bot, ChevronDown, CircleCheck, Clock, CreditCard, Ellipsis, House, Inbox, Lock, Mail, MessageCircle, Mic,
+  ArrowUp, BookOpen, ChevronDown, CircleCheck, Clock, CreditCard, Ellipsis, House, Inbox, Lock, Mail, MessageCircle, Mic,
   PanelLeft, Paperclip, Play, Search, Settings, ShieldCheck, SquarePen, TriangleAlert, Package, Zap,
 } from 'lucide-react'
 import type { LucideIcon } from 'lucide-react'
 import Approval, { type ApprovalPhase } from './Approval'
 import { AppTile, Avatar, Chip } from './ui'
+import { AgentMark } from './Logo'
 
 const ease = [0.22, 1, 0.36, 1] as const
 const SW = 1.75
@@ -38,8 +39,8 @@ const Label = ({ children }: { children: ReactNode }) => <div className="mb-1 mt
 function AgentRow({ name, live }: { name: string; live?: boolean }) {
   return (
     <a href="#" className="flex h-8 items-center rounded-[8px] pl-2.5 pr-2.5 text-[13.5px] text-[#4b4b4b] hover:bg-[rgba(0,0,0,0.04)]">
-      <span className="relative mr-2 grid size-5 shrink-0 place-items-center rounded-full bg-[var(--ink)]">
-        <Bot size={11} strokeWidth={2} color="#fff" />
+      <span className="relative mr-2 grid size-5 shrink-0 place-items-center">
+        <AgentMark size={20} />
         <span className={`absolute -bottom-px -right-px size-[7px] rounded-full ring-2 ring-[#fafafa] ${live ? 'bg-[var(--blue)]' : 'bg-[#c7c7c7]'}`} />
       </span>
       <span className="flex-1 truncate">{name}</span>
@@ -109,7 +110,7 @@ export default function Product() {
           <div className="mx-auto w-[640px] pb-6 pt-7">
             <div className="ml-auto w-fit max-w-[440px] rounded-[16px] bg-[#f4f4f4] px-4 py-2.5 text-[14.5px] leading-[22px]">Process this morning's refund requests and flag anything that looks off.</div>
             <div className="mt-6 grid grid-cols-[28px_1fr] gap-x-3">
-              <span className="mt-[1px] grid size-7 place-items-center rounded-full bg-[var(--ink)]"><Bot size={14} strokeWidth={2} color="#fff" /></span>
+              <span className="mt-[1px] grid size-7 place-items-center"><AgentMark size={28} /></span>
               <div className="min-w-0">
                 <div className="flex h-7 items-center gap-2 text-[13px]">
                   <span className={answered ? 'text-[var(--sub)]' : 'shimmer font-[500]'}>{answered ? 'Worked for' : 'Working'}</span>
@@ -162,7 +163,7 @@ export default function Product() {
           <dd className="flex"><AnimatePresence mode="wait" initial={false}><motion.span key={ap + String(answered)} initial={{ opacity: 0, y: 3 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -3 }} transition={{ duration: 0.2 }} className="inline-flex">
             {done ? <Chip tone="green"><CircleCheck size={12} strokeWidth={2} />Completed</Chip> : ap === 'running' ? <Chip tone="blue">Refunding</Chip> : answered ? <Chip tone="amber"><TriangleAlert size={12} strokeWidth={2} />Waiting for you</Chip> : <Chip tone="blue">Working</Chip>}
           </motion.span></AnimatePresence></dd>
-          <dt className="text-[var(--sub)]">Agent</dt><dd className="flex items-center gap-1.5"><Bot size={14} strokeWidth={SW} className="text-[#525252]" />Ops agent</dd>
+          <dt className="text-[var(--sub)]">Agent</dt><dd className="flex items-center gap-1.5"><AgentMark size={14} />Ops agent</dd>
           <dt className="text-[var(--sub)]">Started</dt><dd className="tnum">09:12 today</dd>
           <dt className="text-[var(--sub)]">Cost</dt><dd className="tnum">$0.04</dd>
         </dl>

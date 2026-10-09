@@ -7,6 +7,7 @@ import { motion, useReducedMotion } from 'motion/react'
 import { ArrowRight, BookOpen, Check, CreditCard, Inbox, Package, ShieldCheck, Zap } from 'lucide-react'
 import { Reveal } from './kit'
 import Approval from './Approval'
+import { Lockup } from './Logo'
 import { AppTile, Avatar, Chip, Switch, Tray } from './ui'
 
 const ease = [0.22, 1, 0.36, 1] as const
@@ -32,7 +33,7 @@ export default function Hero() {
       <Reveal at={0.02} y={-4} className="absolute inset-x-0 top-0 z-40">
         <a href="#" className="flex h-[30px] items-center justify-center gap-1.5 border-b border-[rgba(201,26,116,0.08)] bg-[#fdf6f9] text-[12.5px] text-[var(--pink)]"><Zap size={13} fill="currentColor" strokeWidth={0} />New · hold-to-approve for refunds and payouts<span className="underline underline-offset-2">See what changed</span><ArrowRight size={12} strokeWidth={2} /></a>
         <header className="mx-auto flex h-[64px] w-[1200px] items-center">
-          <a href="#" aria-label="Tandem home" className="flex items-center gap-2"><span className="relative block size-[22px]"><span className="absolute left-0 top-0 size-[14px] rounded-[4px] bg-[var(--ink)]" /><span className="absolute bottom-0 right-0 size-[14px] rounded-[4px] bg-[var(--blue)] mix-blend-multiply" /></span><span className="text-[19px] font-[600] tracking-[-0.03em]">Tandem</span></a>
+          <a href="#" aria-label="Tandem home" className="flex items-center"><Lockup /></a>
           <nav aria-label="Main" className="ml-10"><ul className="flex">{['Product', 'Agents', 'Docs', 'Pricing'].map((l) => <li key={l}><a href="#" className="flex h-9 items-center rounded-full px-3.5 text-[13.5px] font-[500] text-[var(--sub)] transition-colors hover:bg-[rgba(0,0,0,0.04)] hover:text-[var(--ink)]">{l}</a></li>)}</ul></nav>
           <a href="#" className="pill-ghost press ml-auto flex h-9 items-center rounded-full px-4 text-[13.5px] font-[500]">Log in</a>
           <a href="#" className="pill-dark press ml-2 flex h-9 items-center rounded-full px-4 text-[13.5px] font-[500]">Start free</a>

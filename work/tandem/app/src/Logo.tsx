@@ -1,0 +1,44 @@
+// Tandem mark, constructed (work/tandem/brand/finalists.mjs, tested by `node tools/logo.mjs present`). Two finalists:
+//   t  T-cut: a disc cut into three by a T of slits; the letter lives in the space between the parts (default)
+//   h  Halves: two half discs side by side, stepping down past each other; leader and follower
+// ?mark=h on the URL switches the whole build so both can be judged in place. The agent avatar in the product is the mark.
+import { useId } from 'react'
+
+export type MarkVariant = 't' | 'h'
+export const markVariant = (): MarkVariant => (new URLSearchParams(location.search).get('mark') === 'h' ? 'h' : 't')
+
+export function Mark({ size = 21, variant = markVariant(), className = '' }: { size?: number; variant?: MarkVariant; className?: string }) {
+  const id = useId().replace(/:/g, '')
+  return (
+    <svg viewBox="0 0 100 100" width={size} height={size} fill="currentColor" overflow="visible" aria-hidden className={`shrink-0 ${className}`}>
+      {variant === 't' ? (
+        <>
+          <mask id={id} maskUnits="userSpaceOnUse" x="-10" y="-10" width="120" height="120">
+            <rect x="-10" y="-10" width="120" height="120" fill="#fff" />
+            <rect x="-5" y="30" width="110" height="7.5" fill="#000" /><rect x="46" y="30" width="8" height="75" fill="#000" />
+          </mask>
+          <circle cx="50" cy="50" r="51" mask={`url(#${id})`} />
+        </>
+      ) : (
+        <><path d="M46.5 2 A33 33 0 0 0 46.5 68 Z" /><path d="M53.5 32 A33 33 0 0 1 53.5 98 Z" /></>
+      )}
+    </svg>
+  )
+}
+
+/** the agent's avatar: the T-cut is already a disc, so it is the avatar; the halves sit white inside an ink disc */
+export function AgentMark({ size = 22 }: { size?: number }) {
+  const v = markVariant()
+  if (v === 't') return <Mark size={size} variant="t" className="text-[var(--ink)]" />
+  return <span className="grid shrink-0 place-items-center rounded-full bg-[var(--ink)] text-white" style={{ width: size, height: size }}><Mark size={Math.round(size * 0.56)} variant="h" /></span>
+}
+
+/** nav lockup measured to the logo-craft pairing spec: 20px wordmark (cap ~14.5px), mark 1.43x cap = 21px, gap 0.28x = 6px */
+export function Lockup() {
+  return (
+    <span className="flex items-center gap-[6px]">
+      <Mark size={21} />
+      <span className="text-[20px] font-[600] leading-none tracking-[-0.03em]">Tandem</span>
+    </span>
+  )
+}

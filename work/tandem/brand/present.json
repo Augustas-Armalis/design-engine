@@ -1,0 +1,46 @@
+[
+ {
+  "k": "T-cut · classic",
+  "coverage": 0.69,
+  "parts": 3,
+  "aspect": 1,
+  "flags": []
+ },
+ {
+  "k": "T-cut · high bar",
+  "coverage": 0.68,
+  "parts": 2,
+  "aspect": 1,
+  "flags": []
+ },
+ {
+  "k": "T-cut · offset stem",
+  "coverage": 0.69,
+  "parts": 3,
+  "aspect": 1,
+  "flags": []
+ },
+ {
+  "k": "Halves · wide",
+  "coverage": 0.49,
+  "parts": 2,
+  "aspect": 1.32,
+  "flags": []
+ },
+ {
+  "k": "Halves · stacked tall",
+  "coverage": 0.49,
+  "parts": 2,
+  "aspect": 1.32,
+  "flags": []
+ },
+ {
+  "k": "One behind · open",
+  "coverage": 0.78,
+  "parts": 2,
+  "aspect": 1.58,
+  "flags": [
+   "coverage outside 0.27-0.75"
+  ]
+ }
+]

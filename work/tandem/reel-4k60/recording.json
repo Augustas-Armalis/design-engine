@@ -2,16 +2,16 @@
   "version": 1,
   "id": "reel-4k60",
   "dir": "/Users/augustas/Documents/Larpo front-end engine/work/tandem/reel-4k60",
-  "createdAt": "2026-10-09T19:48:05.234Z",
+  "createdAt": "2026-10-09T20:02:59.662Z",
   "settings": {
-    "url": "http://localhost:4334/#/product",
+    "url": "http://localhost:4334/",
     "width": 1440,
     "height": 900,
     "scale": 2.6666666666666665,
     "scrollY": 0,
     "fps": 60,
     "startMs": 0,
-    "durationMs": 10000,
+    "durationMs": 7000,
     "holdMs": 500,
     "region": {
       "type": "viewport"
@@ -28,7 +28,7 @@
     "width": 3840,
     "height": 2400
   },
-  "frames": 600,
+  "frames": 420,
   "browser": "153.0.8010.12",
   "files": {
     "master": "/Users/augustas/Documents/Larpo front-end engine/work/tandem/reel-4k60/master.nut",
@@ -37,7 +37,7 @@
     "poster": "/Users/augustas/Documents/Larpo front-end engine/work/tandem/reel-4k60/poster.png"
   },
   "thumbs": {
-    "step": 15,
+    "step": 10,
     "count": 40
   },
   "edits": {
@@ -48,35 +48,35 @@
   "exports": [
     {
       "preset": "h264",
-      "file": "/Users/augustas/Documents/Larpo front-end engine/work/tandem/tandem-product-4k60.mp4",
-      "bytes": 2943960,
+      "file": "/Users/augustas/Documents/Larpo front-end engine/work/tandem/tandem-hero-loadin-4k60.mp4",
+      "bytes": 2954786,
       "probe": {
-        "file": "/Users/augustas/Documents/Larpo front-end engine/work/tandem/tandem-product-4k60.mp4",
-        "bytes": 2943960,
+        "file": "/Users/augustas/Documents/Larpo front-end engine/work/tandem/tandem-hero-loadin-4k60.mp4",
+        "bytes": 2954786,
         "codec": "h264",
         "profile": "High",
         "pixFmt": "yuv420p",
         "width": 3840,
         "height": 2400,
         "fps": "60/1",
-        "frames": 630,
-        "durationSec": 10.5,
-        "bitrateKbps": 1773,
+        "frames": 450,
+        "durationSec": 7.5,
+        "bitrateKbps": 2696,
         "color": {
           "space": "bt709",
           "primaries": "bt709",
           "transfer": "bt709",
           "range": "tv"
         },
-        "cover": "/Users/augustas/Documents/Larpo front-end engine/work/tandem/tandem-product-4k60-cover.png"
+        "cover": "/Users/augustas/Documents/Larpo front-end engine/work/tandem/tandem-hero-loadin-4k60-cover.png"
       },
-      "ms": 10816
+      "ms": 9628
     }
   ],
   "timings": {
-    "loadMs": 781,
-    "captureMs": 72831,
-    "finishMs": 9118,
+    "loadMs": 771,
+    "captureMs": 59467,
+    "finishMs": 7400,
     "exportMs": 0
   }
 }

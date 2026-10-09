@@ -28,3 +28,4 @@ Apple HIG motion page and m3.material.io were client-rendered and unreadable (va
 | `dark-mode-premium.md` | 19 dark folds measured: light sources, colour budget, product-window edges, dark buttons, hover, grain; 16 rules; six bound dark recipes in `system/variety/dark-recipes.json` | studied |
 
 Pick a fresh combination across these with `node tools/variety.mjs pick --mode dark|light --seed <name>`.
+- `logo-craft.md`: how abstract/geometric marks are built (12 families with recipes and numbers, amateur-vs-pro checklist, lockup pairing spec, 9-step test protocol, LG-01..28). Pairs with `system/logo/families.json` and `tools/logo.mjs`.

@@ -4,7 +4,8 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { AnimatePresence, motion, useReducedMotion } from 'motion/react'
 import { Check, CreditCard, Package, RotateCcw, ShieldCheck } from 'lucide-react'
-import { AppTile, Avatar, Chip } from './ui'
+import { AppTile, Chip } from './ui'
+import { AgentMark } from './Logo'
 
 const ease = [0.22, 1, 0.36, 1] as const
 const HOLD = 1100
@@ -70,7 +71,7 @@ export default function Approval({ demo = false, delay = 0, onPhase, flat = fals
   return (
     <div className={`w-[364px] overflow-hidden rounded-[16px] bg-white text-left ${flat ? 'shadow-[0_0_0_1px_#ececec,0_1px_2px_rgba(0,0,0,0.04)]' : 'shadow-[0_0_0_1px_rgba(0,0,0,0.07),0_1px_2px_rgba(0,0,0,0.04),0_12px_32px_-14px_rgba(0,0,0,0.18)]'}`}>
       <div className="flex items-center gap-2.5 px-4 pt-3.5">
-        <Avatar i="TA" size={22} />
+        <AgentMark size={22} />
         <span className="text-[13px] text-[var(--sub)]"><span className="font-[500] text-[var(--ink)]">Ops agent</span> wants to</span>
         <span className="ml-auto"><Chip tone={phase === 'done' ? 'green' : 'amber'}>{phase === 'done' ? 'Approved' : 'Needs approval'}</Chip></span>
       </div>

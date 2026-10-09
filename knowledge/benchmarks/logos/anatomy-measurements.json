@@ -1,0 +1,4313 @@
+{
+ "vercel": {
+  "name": "vercel",
+  "group": "saas",
+  "source": "vercel.com nav (inline SVG)",
+  "mode": "alpha",
+  "aspect": 1.151,
+  "parts": 1,
+  "holes": 0,
+  "partAreas": [
+   1
+  ],
+  "colours": 1,
+  "colourCover": 1,
+  "gradient": false,
+  "construction": {
+   "fill": 1,
+   "stroke": 0,
+   "both": 0,
+   "skipped": 0
+  },
+  "strokeWidthsPctH": [],
+  "coverageBBox": 0.501,
+  "coverageHull": 0.993,
+  "symmetry": {
+   "mirrorV": 1,
+   "mirrorH": 0.522,
+   "mirrorD": 0.596,
+   "rot": {
+    "2": 0.522,
+    "3": 0.994,
+    "4": 0.596,
+    "5": 0.533,
+    "6": 0.522,
+    "8": 0.54,
+    "12": 0.596
+   },
+   "rotOrder": 3
+  },
+  "thicknessPctH": {
+   "p5": 23.8,
+   "p25": 49.8,
+   "p50": 65.2,
+   "p95": 65.2
+  },
+  "gapPctH": {
+   "p5": null,
+   "p50": null,
+   "gapShareOfHull": 0.007
+  },
+  "minPartGapPctH": null,
+  "minCounterPctH": null,
+  "outline": {
+   "outlineLenPerH": 3.5,
+   "straightShare": 0.991,
+   "arcShare": 0,
+   "freeShare": 0.009,
+   "sharpCorners": 3,
+   "roundedCorners": 0,
+   "cornerRadiusPctH": null,
+   "anglePeaks": [
+    {
+     "deg": 119,
+     "share": 0.335
+    },
+    {
+     "deg": 59,
+     "share": 0.333
+    },
+    {
+     "deg": 0,
+     "share": 0.332
+    }
+   ],
+   "angleFamilies": {
+    "orth": 0.332,
+    "d45": 0,
+    "d30_60": 0.668,
+    "other": 0
+   },
+   "arcRadii": []
+  },
+  "survival": {
+   "16": {
+    "features": 1,
+    "kept": 1,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 1,
+    "holes": 0,
+    "heightPx": 13.9,
+    "minInkPx": 3.31,
+    "minGapPx": null,
+    "topology": true
+   },
+   "32": {
+    "features": 1,
+    "kept": 1,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 1,
+    "holes": 0,
+    "heightPx": 27.8,
+    "minInkPx": 6.62,
+    "minGapPx": null,
+    "topology": true
+   },
+   "64": {
+    "features": 1,
+    "kept": 1,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 1,
+    "holes": 0,
+    "heightPx": 55.6,
+    "minInkPx": 13.23,
+    "minGapPx": null,
+    "topology": true
+   }
+  }
+ },
+ "framer": {
+  "name": "framer",
+  "group": "saas",
+  "source": "framer.com nav (SVG data URI background)",
+  "mode": "alpha",
+  "aspect": 0.666,
+  "parts": 1,
+  "holes": 0,
+  "partAreas": [
+   1
+  ],
+  "colours": 1,
+  "colourCover": 1,
+  "gradient": false,
+  "construction": {
+   "fill": 1,
+   "stroke": 0,
+   "both": 0,
+   "skipped": 0
+  },
+  "strokeWidthsPctH": [],
+  "coverageBBox": 0.584,
+  "coverageHull": 0.7,
+  "symmetry": {
+   "mirrorV": 0.423,
+   "mirrorH": 0.474,
+   "mirrorD": 0.46,
+   "rot": {
+    "2": 0.508,
+    "3": 0.382,
+    "4": 0.327,
+    "5": 0.359,
+    "6": 0.368,
+    "8": 0.414,
+    "12": 0.491
+   },
+   "rotOrder": 1
+  },
+  "thicknessPctH": {
+   "p5": 13.8,
+   "p25": 28.8,
+   "p50": 33,
+   "p95": 37.7
+  },
+  "gapPctH": {
+   "p5": 6.2,
+   "p50": 19.3,
+   "gapShareOfHull": 0.3
+  },
+  "minPartGapPctH": null,
+  "minCounterPctH": null,
+  "outline": {
+   "outlineLenPerH": 4.1,
+   "straightShare": 0.979,
+   "arcShare": 0,
+   "freeShare": 0.021,
+   "sharpCorners": 10,
+   "roundedCorners": 0,
+   "cornerRadiusPctH": null,
+   "anglePeaks": [
+    {
+     "deg": 0,
+     "share": 0.408
+    },
+    {
+     "deg": 134,
+     "share": 0.347
+    },
+    {
+     "deg": 89,
+     "share": 0.245
+    }
+   ],
+   "angleFamilies": {
+    "orth": 0.653,
+    "d45": 0.347,
+    "d30_60": 0,
+    "other": 0
+   },
+   "arcRadii": []
+  },
+  "survival": {
+   "16": {
+    "features": 1,
+    "kept": 1,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 1,
+    "holes": 0,
+    "heightPx": 16,
+    "minInkPx": 2.21,
+    "minGapPx": 0.99,
+    "topology": true
+   },
+   "32": {
+    "features": 1,
+    "kept": 1,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 1,
+    "holes": 0,
+    "heightPx": 32,
+    "minInkPx": 4.42,
+    "minGapPx": 1.98,
+    "topology": true
+   },
+   "64": {
+    "features": 1,
+    "kept": 1,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 1,
+    "holes": 0,
+    "heightPx": 64,
+    "minInkPx": 8.83,
+    "minGapPx": 3.97,
+    "topology": true
+   }
+  }
+ },
+ "slack-2019": {
+  "name": "slack-2019",
+  "group": "saas",
+  "source": "Wikimedia Commons File:Slack icon 2019.svg",
+  "mode": "alpha",
+  "aspect": 1.001,
+  "parts": 8,
+  "holes": 0,
+  "partAreas": [
+   0.178,
+   0.178,
+   0.177,
+   0.176,
+   0.073,
+   0.073,
+   0.073,
+   0.073
+  ],
+  "colours": 4,
+  "colourCover": 1,
+  "gradient": false,
+  "construction": {
+   "fill": 4,
+   "stroke": 0,
+   "both": 0,
+   "skipped": 0
+  },
+  "strokeWidthsPctH": [],
+  "coverageBBox": 0.508,
+  "coverageHull": 0.644,
+  "symmetry": {
+   "mirrorV": 0.778,
+   "mirrorH": 0.776,
+   "mirrorD": 0.776,
+   "rot": {
+    "2": 0.99,
+    "3": 0.374,
+    "4": 0.99,
+    "5": 0.388,
+    "6": 0.374,
+    "8": 0.48,
+    "12": 0.374
+   },
+   "rotOrder": 4
+  },
+  "thicknessPctH": {
+   "p5": 20.6,
+   "p25": 20.6,
+   "p50": 20.6,
+   "p95": 20.6
+  },
+  "gapPctH": {
+   "p5": 4.8,
+   "p50": 9.3,
+   "gapShareOfHull": 0.356
+  },
+  "minPartGapPctH": 5.3,
+  "minCounterPctH": null,
+  "outline": {
+   "outlineLenPerH": 7.6,
+   "straightShare": 0.372,
+   "arcShare": 0.598,
+   "freeShare": 0.03,
+   "sharpCorners": 4,
+   "roundedCorners": 8,
+   "cornerRadiusPctH": 10.5,
+   "anglePeaks": [
+    {
+     "deg": 0,
+     "share": 0.5
+    },
+    {
+     "deg": 89,
+     "share": 0.5
+    }
+   ],
+   "angleFamilies": {
+    "orth": 1,
+    "d45": 0,
+    "d30_60": 0,
+    "other": 0
+   },
+   "arcRadii": [
+    {
+     "rPctH": 10.5,
+     "share": 1,
+     "turnDeg": 2497
+    }
+   ]
+  },
+  "survival": {
+   "16": {
+    "features": 8,
+    "kept": 2,
+    "keptWeighted": 0.31,
+    "lostBig": 6,
+    "holds": false,
+    "parts": 2,
+    "holes": 0,
+    "heightPx": 16,
+    "minInkPx": 3.29,
+    "minGapPx": 0.77,
+    "topology": false
+   },
+   "32": {
+    "features": 8,
+    "kept": 8,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 8,
+    "holes": 0,
+    "heightPx": 32,
+    "minInkPx": 6.59,
+    "minGapPx": 1.53,
+    "topology": true
+   },
+   "64": {
+    "features": 8,
+    "kept": 8,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 8,
+    "holes": 0,
+    "heightPx": 63.9,
+    "minInkPx": 13.17,
+    "minGapPx": 3.07,
+    "topology": true
+   }
+  }
+ },
+ "apple": {
+  "name": "apple",
+  "group": "classic",
+  "source": "Wikimedia Commons File:Apple logo black.svg",
+  "mode": "alpha",
+  "aspect": 0.814,
+  "parts": 2,
+  "holes": 0,
+  "partAreas": [
+   0.947,
+   0.053
+  ],
+  "colours": 1,
+  "colourCover": 1,
+  "gradient": false,
+  "construction": {
+   "fill": 1,
+   "stroke": 0,
+   "both": 0,
+   "skipped": 0
+  },
+  "strokeWidthsPctH": [],
+  "coverageBBox": 0.637,
+  "coverageHull": 0.841,
+  "symmetry": {
+   "mirrorV": 0.741,
+   "mirrorH": 0.765,
+   "mirrorD": 0.779,
+   "rot": {
+    "2": 0.716,
+    "3": 0.69,
+    "4": 0.764,
+    "5": 0.734,
+    "6": 0.69,
+    "8": 0.68,
+    "12": 0.703
+   },
+   "rotOrder": 1
+  },
+  "thicknessPctH": {
+   "p5": 12.1,
+   "p25": 56.6,
+   "p50": 64.7,
+   "p95": 64.7
+  },
+  "gapPctH": {
+   "p5": 2.3,
+   "p50": 11.3,
+   "gapShareOfHull": 0.159
+  },
+  "minPartGapPctH": 4.9,
+  "minCounterPctH": null,
+  "outline": {
+   "outlineLenPerH": 3.5,
+   "straightShare": 0.013,
+   "arcShare": 0.816,
+   "freeShare": 0.171,
+   "sharpCorners": 4,
+   "roundedCorners": 0,
+   "cornerRadiusPctH": null,
+   "anglePeaks": [
+    {
+     "deg": 126,
+     "share": 0.511
+    },
+    {
+     "deg": 157,
+     "share": 0.255
+    },
+    {
+     "deg": 22,
+     "share": 0.234
+    }
+   ],
+   "angleFamilies": {
+    "orth": 0,
+    "d45": 0,
+    "d30_60": 0,
+    "other": 1
+   },
+   "arcRadii": [
+    {
+     "rPctH": 21.3,
+     "share": 0.47,
+     "turnDeg": 362
+    },
+    {
+     "rPctH": 54.8,
+     "share": 0.18,
+     "turnDeg": 55
+    },
+    {
+     "rPctH": 26.8,
+     "share": 0.16,
+     "turnDeg": 96
+    },
+    {
+     "rPctH": 23.9,
+     "share": 0.08,
+     "turnDeg": 54
+    },
+    {
+     "rPctH": 13.3,
+     "share": 0.06,
+     "turnDeg": 69
+    }
+   ]
+  },
+  "survival": {
+   "16": {
+    "features": 2,
+    "kept": 1,
+    "keptWeighted": 0.81,
+    "lostBig": 1,
+    "holds": false,
+    "parts": 1,
+    "holes": 1,
+    "heightPx": 16,
+    "minInkPx": 1.94,
+    "minGapPx": 0.37,
+    "topology": false
+   },
+   "32": {
+    "features": 2,
+    "kept": 2,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 2,
+    "holes": 0,
+    "heightPx": 32,
+    "minInkPx": 3.87,
+    "minGapPx": 0.74,
+    "topology": true
+   },
+   "64": {
+    "features": 2,
+    "kept": 2,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 2,
+    "holes": 0,
+    "heightPx": 64,
+    "minInkPx": 7.74,
+    "minGapPx": 1.47,
+    "topology": true
+   }
+  }
+ },
+ "linear": {
+  "name": "linear",
+  "group": "saas",
+  "source": "linear.app nav (inline SVG)",
+  "mode": "alpha",
+  "aspect": 1,
+  "parts": 4,
+  "holes": 0,
+  "partAreas": [
+   0.722,
+   0.118,
+   0.1,
+   0.06
+  ],
+  "colours": 1,
+  "colourCover": 1,
+  "gradient": false,
+  "construction": {
+   "fill": 1,
+   "stroke": 0,
+   "both": 0,
+   "skipped": 0
+  },
+  "strokeWidthsPctH": [],
+  "coverageBBox": 0.597,
+  "coverageHull": 0.758,
+  "symmetry": {
+   "mirrorV": 0.608,
+   "mirrorH": 0.609,
+   "mirrorD": 0.998,
+   "rot": {
+    "2": 0.521,
+    "3": 0.587,
+    "4": 0.608,
+    "5": 0.624,
+    "6": 0.634,
+    "8": 0.66,
+    "12": 0.68
+   },
+   "rotOrder": 1
+  },
+  "thicknessPctH": {
+   "p5": 7.6,
+   "p25": 8.7,
+   "p50": 49.4,
+   "p95": 54.1
+  },
+  "gapPctH": {
+   "p5": 6.7,
+   "p50": 7.6,
+   "gapShareOfHull": 0.242
+  },
+  "minPartGapPctH": 7.5,
+  "minCounterPctH": null,
+  "outline": {
+   "outlineLenPerH": 7.5,
+   "straightShare": 0.637,
+   "arcShare": 0.317,
+   "freeShare": 0.047,
+   "sharpCorners": 0,
+   "roundedCorners": 0,
+   "cornerRadiusPctH": null,
+   "anglePeaks": [
+    {
+     "deg": 134,
+     "share": 1
+    }
+   ],
+   "angleFamilies": {
+    "orth": 0,
+    "d45": 1,
+    "d30_60": 0,
+    "other": 0
+   },
+   "arcRadii": [
+    {
+     "rPctH": 50,
+     "share": 0.89,
+     "turnDeg": 244
+    },
+    {
+     "rPctH": 1.5,
+     "share": 0.11,
+     "turnDeg": 1016
+    }
+   ]
+  },
+  "survival": {
+   "16": {
+    "features": 4,
+    "kept": 3,
+    "keptWeighted": 0.82,
+    "lostBig": 1,
+    "holds": false,
+    "parts": 3,
+    "holes": 7,
+    "heightPx": 16,
+    "minInkPx": 1.22,
+    "minGapPx": 1.07,
+    "topology": false
+   },
+   "32": {
+    "features": 4,
+    "kept": 4,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 4,
+    "holes": 0,
+    "heightPx": 32,
+    "minInkPx": 2.43,
+    "minGapPx": 2.14,
+    "topology": true
+   },
+   "64": {
+    "features": 4,
+    "kept": 4,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 4,
+    "holes": 0,
+    "heightPx": 64,
+    "minInkPx": 4.86,
+    "minGapPx": 4.29,
+    "topology": true
+   }
+  }
+ },
+ "raycast": {
+  "name": "raycast",
+  "group": "saas",
+  "source": "raycast.com nav (inline SVG)",
+  "mode": "alpha",
+  "aspect": 0.998,
+  "parts": 6,
+  "holes": 0,
+  "partAreas": [
+   0.729,
+   0.156,
+   0.039,
+   0.038,
+   0.019,
+   0.019
+  ],
+  "colours": 1,
+  "colourCover": 1,
+  "gradient": false,
+  "construction": {
+   "fill": 1,
+   "stroke": 0,
+   "both": 0,
+   "skipped": 0
+  },
+  "strokeWidthsPctH": [],
+  "coverageBBox": 0.304,
+  "coverageHull": 0.601,
+  "symmetry": {
+   "mirrorV": 0.457,
+   "mirrorH": 0.458,
+   "mirrorD": 0.983,
+   "rot": {
+    "2": 0.602,
+    "3": 0.368,
+    "4": 0.455,
+    "5": 0.443,
+    "6": 0.416,
+    "8": 0.399,
+    "12": 0.462
+   },
+   "rotOrder": 1
+  },
+  "thicknessPctH": {
+   "p5": 7.6,
+   "p25": 7.6,
+   "p50": 15.8,
+   "p95": 37.7
+  },
+  "gapPctH": {
+   "p5": 5.1,
+   "p50": 8.7,
+   "gapShareOfHull": 0.399
+  },
+  "minPartGapPctH": 3.1,
+  "minCounterPctH": null,
+  "outline": {
+   "outlineLenPerH": 6.5,
+   "straightShare": 0.948,
+   "arcShare": 0,
+   "freeShare": 0.052,
+   "sharpCorners": 41,
+   "roundedCorners": 0,
+   "cornerRadiusPctH": null,
+   "anglePeaks": [
+    {
+     "deg": 134,
+     "share": 0.633
+    },
+    {
+     "deg": 44,
+     "share": 0.128
+    },
+    {
+     "deg": 0,
+     "share": 0.12
+    },
+    {
+     "deg": 89,
+     "share": 0.119
+    }
+   ],
+   "angleFamilies": {
+    "orth": 0.239,
+    "d45": 0.761,
+    "d30_60": 0,
+    "other": 0
+   },
+   "arcRadii": []
+  },
+  "survival": {
+   "16": {
+    "features": 6,
+    "kept": 6,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 6,
+    "holes": 0,
+    "heightPx": 16,
+    "minInkPx": 1.22,
+    "minGapPx": 0.82,
+    "topology": true
+   },
+   "32": {
+    "features": 6,
+    "kept": 6,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 6,
+    "holes": 0,
+    "heightPx": 32,
+    "minInkPx": 2.43,
+    "minGapPx": 1.63,
+    "topology": true
+   },
+   "64": {
+    "features": 6,
+    "kept": 6,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 6,
+    "holes": 0,
+    "heightPx": 64,
+    "minInkPx": 4.86,
+    "minGapPx": 3.26,
+    "topology": true
+   }
+  }
+ },
+ "attio": {
+  "name": "attio",
+  "group": "saas",
+  "source": "attio.com nav (inline SVG)",
+  "mode": "alpha",
+  "aspect": 1.218,
+  "parts": 2,
+  "holes": 2,
+  "partAreas": [
+   0.701,
+   0.299
+  ],
+  "colours": 1,
+  "colourCover": 1,
+  "gradient": false,
+  "construction": {
+   "fill": 2,
+   "stroke": 0,
+   "both": 0,
+   "skipped": 0
+  },
+  "strokeWidthsPctH": [],
+  "coverageBBox": 0.448,
+  "coverageHull": 0.631,
+  "symmetry": {
+   "mirrorV": 0.462,
+   "mirrorH": 0.273,
+   "mirrorD": 0.405,
+   "rot": {
+    "2": 0.354,
+    "3": 0.454,
+    "4": 0.329,
+    "5": 0.264,
+    "6": 0.262,
+    "8": 0.307,
+    "12": 0.391
+   },
+   "rotOrder": 1
+  },
+  "thicknessPctH": {
+   "p5": 3.7,
+   "p25": 23.5,
+   "p50": 28.7,
+   "p95": 30.7
+  },
+  "gapPctH": {
+   "p5": 5.9,
+   "p50": 22,
+   "gapShareOfHull": 0.369
+  },
+  "minPartGapPctH": 5.8,
+  "minCounterPctH": 21.7,
+  "outline": {
+   "outlineLenPerH": 7.7,
+   "straightShare": 0.818,
+   "arcShare": 0.146,
+   "freeShare": 0.036,
+   "sharpCorners": 2,
+   "roundedCorners": 12,
+   "cornerRadiusPctH": 4.7,
+   "anglePeaks": [
+    {
+     "deg": 57,
+     "share": 0.635
+    },
+    {
+     "deg": 121,
+     "share": 0.235
+    },
+    {
+     "deg": 0,
+     "share": 0.131
+    }
+   ],
+   "angleFamilies": {
+    "orth": 0.131,
+    "d45": 0,
+    "d30_60": 0.869,
+    "other": 0
+   },
+   "arcRadii": [
+    {
+     "rPctH": 8.3,
+     "share": 0.74,
+     "turnDeg": 576
+    },
+    {
+     "rPctH": 4.6,
+     "share": 0.17,
+     "turnDeg": 247
+    },
+    {
+     "rPctH": 1.4,
+     "share": 0.09,
+     "turnDeg": 412
+    }
+   ]
+  },
+  "survival": {
+   "16": {
+    "features": 4,
+    "kept": 2,
+    "keptWeighted": 0.5,
+    "lostBig": 2,
+    "holds": false,
+    "parts": 4,
+    "holes": 0,
+    "heightPx": 13.1,
+    "minInkPx": 0.49,
+    "minGapPx": 0.77,
+    "topology": false
+   },
+   "32": {
+    "features": 4,
+    "kept": 4,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 2,
+    "holes": 2,
+    "heightPx": 26.3,
+    "minInkPx": 0.97,
+    "minGapPx": 1.55,
+    "topology": true
+   },
+   "64": {
+    "features": 4,
+    "kept": 4,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 2,
+    "holes": 2,
+    "heightPx": 52.5,
+    "minInkPx": 1.94,
+    "minGapPx": 3.1,
+    "topology": true
+   }
+  }
+ },
+ "arc": {
+  "name": "arc",
+  "group": "saas",
+  "source": "arc.net nav (inline SVG; cream sticker outline excluded)",
+  "mode": "dark",
+  "aspect": 1.152,
+  "parts": 1,
+  "holes": 1,
+  "partAreas": [
+   0.999
+  ],
+  "colours": 4,
+  "colourCover": 0.99,
+  "gradient": false,
+  "construction": {
+   "fill": 6,
+   "stroke": 0,
+   "both": 0,
+   "skipped": 1
+  },
+  "strokeWidthsPctH": [],
+  "coverageBBox": 0.403,
+  "coverageHull": 0.52,
+  "symmetry": {
+   "mirrorV": 0.712,
+   "mirrorH": 0.476,
+   "mirrorD": 0.527,
+   "rot": {
+    "2": 0.496,
+    "3": 0.508,
+    "4": 0.522,
+    "5": 0.519,
+    "6": 0.503,
+    "8": 0.466,
+    "12": 0.488
+   },
+   "rotOrder": 1
+  },
+  "thicknessPctH": {
+   "p5": 20.8,
+   "p25": 20.8,
+   "p50": 27.2,
+   "p95": 29.1
+  },
+  "gapPctH": {
+   "p5": 7.2,
+   "p50": 13,
+   "gapShareOfHull": 0.48
+  },
+  "minPartGapPctH": null,
+  "minCounterPctH": 7.3,
+  "outline": {
+   "outlineLenPerH": 7.5,
+   "straightShare": 0.391,
+   "arcShare": 0.561,
+   "freeShare": 0.048,
+   "sharpCorners": 16,
+   "roundedCorners": 2,
+   "cornerRadiusPctH": 10.5,
+   "anglePeaks": [
+    {
+     "deg": 115,
+     "share": 0.647
+    },
+    {
+     "deg": 64,
+     "share": 0.353
+    }
+   ],
+   "angleFamilies": {
+    "orth": 0,
+    "d45": 0,
+    "d30_60": 0,
+    "other": 1
+   },
+   "arcRadii": [
+    {
+     "rPctH": 10.5,
+     "share": 0.36,
+     "turnDeg": 844
+    },
+    {
+     "rPctH": 30,
+     "share": 0.21,
+     "turnDeg": 170
+    },
+    {
+     "rPctH": 53.8,
+     "share": 0.2,
+     "turnDeg": 89
+    },
+    {
+     "rPctH": 47.4,
+     "share": 0.17,
+     "turnDeg": 86
+    }
+   ]
+  },
+  "survival": {
+   "16": {
+    "features": 2,
+    "kept": 2,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 1,
+    "holes": 1,
+    "heightPx": 13.9,
+    "minInkPx": 2.89,
+    "minGapPx": 1,
+    "topology": true
+   },
+   "32": {
+    "features": 2,
+    "kept": 2,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 1,
+    "holes": 1,
+    "heightPx": 27.8,
+    "minInkPx": 5.78,
+    "minGapPx": 2,
+    "topology": true
+   },
+   "64": {
+    "features": 2,
+    "kept": 2,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 1,
+    "holes": 1,
+    "heightPx": 55.5,
+    "minInkPx": 11.55,
+    "minGapPx": 4,
+    "topology": true
+   }
+  }
+ },
+ "mercury": {
+  "name": "mercury",
+  "group": "saas",
+  "source": "mercury.com nav (inline SVG)",
+  "mode": "alpha",
+  "aspect": 1,
+  "parts": 1,
+  "holes": 17,
+  "partAreas": [
+   1
+  ],
+  "colours": 1,
+  "colourCover": 1,
+  "gradient": false,
+  "construction": {
+   "fill": 1,
+   "stroke": 0,
+   "both": 0,
+   "skipped": 0
+  },
+  "strokeWidthsPctH": [],
+  "coverageBBox": 0.305,
+  "coverageHull": 0.387,
+  "symmetry": {
+   "mirrorV": 0.701,
+   "mirrorH": 0.698,
+   "mirrorD": 0.704,
+   "rot": {
+    "2": 0.955,
+    "3": 0.474,
+    "4": 0.961,
+    "5": 0.547,
+    "6": 0.474,
+    "8": 0.579,
+    "12": 0.476
+   },
+   "rotOrder": 4
+  },
+  "thicknessPctH": {
+   "p5": 3.1,
+   "p25": 3.3,
+   "p50": 3.3,
+   "p95": 4.5
+  },
+  "gapPctH": {
+   "p5": 6.2,
+   "p50": 7.1,
+   "gapShareOfHull": 0.613
+  },
+  "minPartGapPctH": null,
+  "minCounterPctH": 7.2,
+  "outline": {
+   "outlineLenPerH": 18.6,
+   "straightShare": 0.003,
+   "arcShare": 0.933,
+   "freeShare": 0.065,
+   "sharpCorners": 48,
+   "roundedCorners": 0,
+   "cornerRadiusPctH": null,
+   "anglePeaks": [
+    {
+     "deg": 0,
+     "share": 0.397
+    },
+    {
+     "deg": 89,
+     "share": 0.314
+    },
+    {
+     "deg": 28,
+     "share": 0.144
+    },
+    {
+     "deg": 117,
+     "share": 0.072
+    },
+    {
+     "deg": 141,
+     "share": 0.072
+    }
+   ],
+   "angleFamilies": {
+    "orth": 0.712,
+    "d45": 0,
+    "d30_60": 0.216,
+    "other": 0.072
+   },
+   "arcRadii": [
+    {
+     "rPctH": 48.6,
+     "share": 0.32,
+     "turnDeg": 654
+    },
+    {
+     "rPctH": 15.8,
+     "share": 0.16,
+     "turnDeg": 1030
+    },
+    {
+     "rPctH": 38.6,
+     "share": 0.15,
+     "turnDeg": 384
+    },
+    {
+     "rPctH": 18.9,
+     "share": 0.1,
+     "turnDeg": 515
+    },
+    {
+     "rPctH": 9.1,
+     "share": 0.09,
+     "turnDeg": 977
+    }
+   ]
+  },
+  "survival": {
+   "16": {
+    "features": 18,
+    "kept": 1,
+    "keptWeighted": 0.2,
+    "lostBig": 9,
+    "holds": false,
+    "parts": 17,
+    "holes": 0,
+    "heightPx": 16,
+    "minInkPx": 0.5,
+    "minGapPx": 0.99,
+    "topology": false
+   },
+   "32": {
+    "features": 18,
+    "kept": 18,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 1,
+    "holes": 17,
+    "heightPx": 32,
+    "minInkPx": 0.99,
+    "minGapPx": 1.98,
+    "topology": true
+   },
+   "64": {
+    "features": 18,
+    "kept": 18,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 1,
+    "holes": 18,
+    "heightPx": 64,
+    "minInkPx": 1.98,
+    "minGapPx": 3.97,
+    "topology": false
+   }
+  }
+ },
+ "ramp": {
+  "name": "ramp",
+  "group": "saas",
+  "source": "ramp.com nav (inline SVG)",
+  "mode": "alpha",
+  "aspect": 1.168,
+  "parts": 2,
+  "holes": 0,
+  "partAreas": [
+   0.792,
+   0.208
+  ],
+  "colours": 1,
+  "colourCover": 1,
+  "gradient": false,
+  "construction": {
+   "fill": 1,
+   "stroke": 0,
+   "both": 0,
+   "skipped": 0
+  },
+  "strokeWidthsPctH": [],
+  "coverageBBox": 0.304,
+  "coverageHull": 0.507,
+  "symmetry": {
+   "mirrorV": 0.285,
+   "mirrorH": 0.246,
+   "mirrorD": 0.696,
+   "rot": {
+    "2": 0.216,
+    "3": 0.256,
+    "4": 0.249,
+    "5": 0.163,
+    "6": 0.179,
+    "8": 0.2,
+    "12": 0.257
+   },
+   "rotOrder": 1
+  },
+  "thicknessPctH": {
+   "p5": 12.4,
+   "p25": 18.4,
+   "p50": 22.5,
+   "p95": 23.8
+  },
+  "gapPctH": {
+   "p5": 6.8,
+   "p50": 19.7,
+   "gapShareOfHull": 0.493
+  },
+  "minPartGapPctH": 7.5,
+  "minCounterPctH": null,
+  "outline": {
+   "outlineLenPerH": 4.5,
+   "straightShare": 0.354,
+   "arcShare": 0.471,
+   "freeShare": 0.175,
+   "sharpCorners": 13,
+   "roundedCorners": 0,
+   "cornerRadiusPctH": null,
+   "anglePeaks": [
+    {
+     "deg": 0,
+     "share": 0.552
+    },
+    {
+     "deg": 134,
+     "share": 0.419
+    }
+   ],
+   "angleFamilies": {
+    "orth": 0.552,
+    "d45": 0.434,
+    "d30_60": 0,
+    "other": 0.014
+   },
+   "arcRadii": [
+    {
+     "rPctH": 94.2,
+     "share": 0.93,
+     "turnDeg": 119
+    },
+    {
+     "rPctH": 74.7,
+     "share": 0.07,
+     "turnDeg": 11
+    }
+   ]
+  },
+  "survival": {
+   "16": {
+    "features": 2,
+    "kept": 1,
+    "keptWeighted": 0.66,
+    "lostBig": 1,
+    "holds": false,
+    "parts": 1,
+    "holes": 0,
+    "heightPx": 13.7,
+    "minInkPx": 1.7,
+    "minGapPx": 0.93,
+    "topology": false
+   },
+   "32": {
+    "features": 2,
+    "kept": 2,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 2,
+    "holes": 0,
+    "heightPx": 27.4,
+    "minInkPx": 3.4,
+    "minGapPx": 1.86,
+    "topology": true
+   },
+   "64": {
+    "features": 2,
+    "kept": 2,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 2,
+    "holes": 0,
+    "heightPx": 54.8,
+    "minInkPx": 6.79,
+    "minGapPx": 3.72,
+    "topology": true
+   }
+  }
+ },
+ "clerk": {
+  "name": "clerk",
+  "group": "saas",
+  "source": "clerk.com nav (inline SVG)",
+  "mode": "alpha",
+  "aspect": 0.79,
+  "parts": 3,
+  "holes": 0,
+  "partAreas": [
+   0.567,
+   0.252,
+   0.181
+  ],
+  "colours": 7,
+  "colourCover": 0.95,
+  "gradient": true,
+  "construction": {
+   "fill": 6,
+   "stroke": 0,
+   "both": 0,
+   "skipped": 0
+  },
+  "strokeWidthsPctH": [],
+  "coverageBBox": 0.535,
+  "coverageHull": 0.634,
+  "symmetry": {
+   "mirrorV": 0.325,
+   "mirrorH": 0.872,
+   "mirrorD": 0.291,
+   "rot": {
+    "2": 0.322,
+    "3": 0.276,
+    "4": 0.233,
+    "5": 0.26,
+    "6": 0.311,
+    "8": 0.395,
+    "12": 0.507
+   },
+   "rotOrder": 1
+  },
+  "thicknessPctH": {
+   "p5": 20.6,
+   "p25": 22.1,
+   "p50": 22.1,
+   "p95": 31.2
+  },
+  "gapPctH": {
+   "p5": 11.3,
+   "p50": 13.8,
+   "gapShareOfHull": 0.366
+  },
+  "minPartGapPctH": 12.5,
+  "minCounterPctH": null,
+  "outline": {
+   "outlineLenPerH": 9.9,
+   "straightShare": 0.125,
+   "arcShare": 0.856,
+   "freeShare": 0.019,
+   "sharpCorners": 0,
+   "roundedCorners": 0,
+   "cornerRadiusPctH": null,
+   "anglePeaks": [
+    {
+     "deg": 44,
+     "share": 0.75
+    },
+    {
+     "deg": 134,
+     "share": 0.25
+    }
+   ],
+   "angleFamilies": {
+    "orth": 0,
+    "d45": 1,
+    "d30_60": 0,
+    "other": 0
+   },
+   "arcRadii": [
+    {
+     "rPctH": 50,
+     "share": 0.46,
+     "turnDeg": 448
+    },
+    {
+     "rPctH": 15.6,
+     "share": 0.23,
+     "turnDeg": 723
+    },
+    {
+     "rPctH": 28.1,
+     "share": 0.23,
+     "turnDeg": 393
+    }
+   ]
+  },
+  "survival": {
+   "16": {
+    "features": 3,
+    "kept": 3,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 3,
+    "holes": 0,
+    "heightPx": 16,
+    "minInkPx": 3.3,
+    "minGapPx": 1.81,
+    "topology": true
+   },
+   "32": {
+    "features": 3,
+    "kept": 3,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 3,
+    "holes": 0,
+    "heightPx": 32,
+    "minInkPx": 6.59,
+    "minGapPx": 3.62,
+    "topology": true
+   },
+   "64": {
+    "features": 3,
+    "kept": 3,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 3,
+    "holes": 0,
+    "heightPx": 64,
+    "minInkPx": 13.18,
+    "minGapPx": 7.23,
+    "topology": true
+   }
+  }
+ },
+ "supabase": {
+  "name": "supabase",
+  "group": "saas",
+  "source": "supabase.com nav (inline SVG)",
+  "mode": "alpha",
+  "aspect": 0.973,
+  "parts": 1,
+  "holes": 0,
+  "partAreas": [
+   1
+  ],
+  "colours": 8,
+  "colourCover": 1,
+  "gradient": true,
+  "construction": {
+   "fill": 3,
+   "stroke": 0,
+   "both": 0,
+   "skipped": 0
+  },
+  "strokeWidthsPctH": [],
+  "coverageBBox": 0.412,
+  "coverageHull": 0.732,
+  "symmetry": {
+   "mirrorV": 0.417,
+   "mirrorH": 0.417,
+   "mirrorD": 0.538,
+   "rot": {
+    "2": 0.998,
+    "3": 0.381,
+    "4": 0.495,
+    "5": 0.401,
+    "6": 0.381,
+    "8": 0.412,
+    "12": 0.492
+   },
+   "rotOrder": 2
+  },
+  "thicknessPctH": {
+   "p5": 18,
+   "p25": 30.8,
+   "p50": 37.7,
+   "p95": 37.7
+  },
+  "gapPctH": {
+   "p5": 5.8,
+   "p50": 22.1,
+   "gapShareOfHull": 0.268
+  },
+  "minPartGapPctH": null,
+  "minCounterPctH": null,
+  "outline": {
+   "outlineLenPerH": 5.8,
+   "straightShare": 0.828,
+   "arcShare": 0.154,
+   "freeShare": 0.019,
+   "sharpCorners": 3,
+   "roundedCorners": 6,
+   "cornerRadiusPctH": 8.8,
+   "anglePeaks": [
+    {
+     "deg": 51,
+     "share": 0.383
+    },
+    {
+     "deg": 90,
+     "share": 0.371
+    },
+    {
+     "deg": 0,
+     "share": 0.246
+    }
+   ],
+   "angleFamilies": {
+    "orth": 0.617,
+    "d45": 0,
+    "d30_60": 0,
+    "other": 0.383
+   },
+   "arcRadii": [
+    {
+     "rPctH": 8.8,
+     "share": 0.65,
+     "turnDeg": 382
+    },
+    {
+     "rPctH": 4.4,
+     "share": 0.35,
+     "turnDeg": 408
+    }
+   ]
+  },
+  "survival": {
+   "16": {
+    "features": 1,
+    "kept": 1,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 1,
+    "holes": 0,
+    "heightPx": 16,
+    "minInkPx": 2.88,
+    "minGapPx": 0.93,
+    "topology": true
+   },
+   "32": {
+    "features": 1,
+    "kept": 1,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 1,
+    "holes": 0,
+    "heightPx": 32,
+    "minInkPx": 5.76,
+    "minGapPx": 1.86,
+    "topology": true
+   },
+   "64": {
+    "features": 1,
+    "kept": 1,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 1,
+    "holes": 0,
+    "heightPx": 64,
+    "minInkPx": 11.52,
+    "minGapPx": 3.71,
+    "topology": true
+   }
+  }
+ },
+ "loom": {
+  "name": "loom",
+  "group": "saas",
+  "source": "loom.com nav (inline SVG; white burst on blue tile, burst measured)",
+  "mode": "light",
+  "aspect": 1,
+  "parts": 1,
+  "holes": 1,
+  "partAreas": [
+   1
+  ],
+  "colours": 1,
+  "colourCover": 1,
+  "gradient": false,
+  "construction": {
+   "fill": 1,
+   "stroke": 0,
+   "both": 0,
+   "skipped": 1
+  },
+  "strokeWidthsPctH": [],
+  "coverageBBox": 0.451,
+  "coverageHull": 0.573,
+  "symmetry": {
+   "mirrorV": 0.995,
+   "mirrorH": 0.995,
+   "mirrorD": 0.998,
+   "rot": {
+    "2": 0.994,
+    "3": 0.989,
+    "4": 0.995,
+    "5": 0.341,
+    "6": 0.988,
+    "8": 0.297,
+    "12": 0.989
+   },
+   "rotOrder": 12
+  },
+  "thicknessPctH": {
+   "p5": 10.6,
+   "p25": 10.6,
+   "p50": 10.6,
+   "p95": 11.4
+  },
+  "gapPctH": {
+   "p5": 4.2,
+   "p50": 11.3,
+   "gapShareOfHull": 0.427
+  },
+  "minPartGapPctH": null,
+  "minCounterPctH": 30.2,
+  "outline": {
+   "outlineLenPerH": 9.3,
+   "straightShare": 0.847,
+   "arcShare": 0.101,
+   "freeShare": 0.051,
+   "sharpCorners": 36,
+   "roundedCorners": 0,
+   "cornerRadiusPctH": null,
+   "anglePeaks": [
+    {
+     "deg": 0,
+     "share": 0.168
+    },
+    {
+     "deg": 119,
+     "share": 0.167
+    },
+    {
+     "deg": 149,
+     "share": 0.166
+    },
+    {
+     "deg": 29,
+     "share": 0.166
+    },
+    {
+     "deg": 59,
+     "share": 0.166
+    },
+    {
+     "deg": 89,
+     "share": 0.166
+    }
+   ],
+   "angleFamilies": {
+    "orth": 0.334,
+    "d45": 0,
+    "d30_60": 0.666,
+    "other": 0
+   },
+   "arcRadii": [
+    {
+     "rPctH": 15.2,
+     "share": 1,
+     "turnDeg": 363
+    }
+   ]
+  },
+  "survival": {
+   "16": {
+    "features": 2,
+    "kept": 2,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 1,
+    "holes": 5,
+    "heightPx": 16,
+    "minInkPx": 1.7,
+    "minGapPx": 0.67,
+    "topology": false
+   },
+   "32": {
+    "features": 2,
+    "kept": 2,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 1,
+    "holes": 5,
+    "heightPx": 32,
+    "minInkPx": 3.39,
+    "minGapPx": 1.34,
+    "topology": false
+   },
+   "64": {
+    "features": 2,
+    "kept": 2,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 1,
+    "holes": 5,
+    "heightPx": 64,
+    "minInkPx": 6.78,
+    "minGapPx": 2.69,
+    "topology": false
+   }
+  }
+ },
+ "notion": {
+  "name": "notion",
+  "group": "saas",
+  "source": "notion.com nav (inline SVG)",
+  "mode": "dark",
+  "aspect": 0.965,
+  "parts": 2,
+  "holes": 2,
+  "partAreas": [
+   0.73,
+   0.27
+  ],
+  "colours": 1,
+  "colourCover": 0.98,
+  "gradient": false,
+  "construction": {
+   "fill": 1,
+   "stroke": 0,
+   "both": 0,
+   "skipped": 2
+  },
+  "strokeWidthsPctH": [],
+  "coverageBBox": 0.508,
+  "coverageHull": 0.552,
+  "symmetry": {
+   "mirrorV": 0.368,
+   "mirrorH": 0.536,
+   "mirrorD": 0.411,
+   "rot": {
+    "2": 0.432,
+    "3": 0.313,
+    "4": 0.381,
+    "5": 0.346,
+    "6": 0.347,
+    "8": 0.325,
+    "12": 0.346
+   },
+   "rotOrder": 1
+  },
+  "thicknessPctH": {
+   "p5": 5.8,
+   "p25": 7.1,
+   "p50": 8.7,
+   "p95": 20.6
+  },
+  "gapPctH": {
+   "p5": 8.7,
+   "p50": 12.9,
+   "gapShareOfHull": 0.448
+  },
+  "minPartGapPctH": 7.2,
+  "minCounterPctH": 11.6,
+  "outline": {
+   "outlineLenPerH": 10.9,
+   "straightShare": 0.838,
+   "arcShare": 0.095,
+   "freeShare": 0.067,
+   "sharpCorners": 14,
+   "roundedCorners": 12,
+   "cornerRadiusPctH": 3.4,
+   "anglePeaks": [
+    {
+     "deg": 3,
+     "share": 0.425
+    },
+    {
+     "deg": 89,
+     "share": 0.41
+    },
+    {
+     "deg": 122,
+     "share": 0.076
+    },
+    {
+     "deg": 144,
+     "share": 0.044
+    }
+   ],
+   "angleFamilies": {
+    "orth": 0.41,
+    "d45": 0,
+    "d30_60": 0,
+    "other": 0.59
+   },
+   "arcRadii": [
+    {
+     "rPctH": 11.7,
+     "share": 0.24,
+     "turnDeg": 123
+    },
+    {
+     "rPctH": 3.5,
+     "share": 0.23,
+     "turnDeg": 398
+    },
+    {
+     "rPctH": 7.3,
+     "share": 0.12,
+     "turnDeg": 102
+    },
+    {
+     "rPctH": 6.1,
+     "share": 0.1,
+     "turnDeg": 93
+    },
+    {
+     "rPctH": 2.6,
+     "share": 0.09,
+     "turnDeg": 197
+    }
+   ]
+  },
+  "survival": {
+   "16": {
+    "features": 4,
+    "kept": 3,
+    "keptWeighted": 0.84,
+    "lostBig": 1,
+    "holds": false,
+    "parts": 2,
+    "holes": 1,
+    "heightPx": 16,
+    "minInkPx": 0.93,
+    "minGapPx": 1.39,
+    "topology": false
+   },
+   "32": {
+    "features": 4,
+    "kept": 4,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 2,
+    "holes": 2,
+    "heightPx": 32,
+    "minInkPx": 1.86,
+    "minGapPx": 2.78,
+    "topology": true
+   },
+   "64": {
+    "features": 4,
+    "kept": 4,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 2,
+    "holes": 2,
+    "heightPx": 64,
+    "minInkPx": 3.71,
+    "minGapPx": 5.57,
+    "topology": true
+   }
+  }
+ },
+ "figma": {
+  "name": "figma",
+  "group": "saas",
+  "source": "figma.com nav (inline SVG)",
+  "mode": "alpha",
+  "aspect": 0.666,
+  "parts": 1,
+  "holes": 1,
+  "partAreas": [
+   1
+  ],
+  "colours": 5,
+  "colourCover": 1,
+  "gradient": false,
+  "construction": {
+   "fill": 5,
+   "stroke": 0,
+   "both": 0,
+   "skipped": 0
+  },
+  "strokeWidthsPctH": [],
+  "coverageBBox": 0.72,
+  "coverageHull": 0.864,
+  "symmetry": {
+   "mirrorV": 0.649,
+   "mirrorH": 0.641,
+   "mirrorD": 0.54,
+   "rot": {
+    "2": 0.616,
+    "3": 0.482,
+    "4": 0.459,
+    "5": 0.483,
+    "6": 0.489,
+    "8": 0.492,
+    "12": 0.563
+   },
+   "rotOrder": 1
+  },
+  "thicknessPctH": {
+   "p5": 33,
+   "p25": 33,
+   "p50": 33,
+   "p95": 35.3
+  },
+  "gapPctH": {
+   "p5": 1.6,
+   "p50": 8.1,
+   "gapShareOfHull": 0.136
+  },
+  "minPartGapPctH": null,
+  "minCounterPctH": 5.1,
+  "outline": {
+   "outlineLenPerH": 5.8,
+   "straightShare": 0.401,
+   "arcShare": 0.575,
+   "freeShare": 0.024,
+   "sharpCorners": 7,
+   "roundedCorners": 1,
+   "cornerRadiusPctH": 16.7,
+   "anglePeaks": [
+    {
+     "deg": 89,
+     "share": 0.506
+    },
+    {
+     "deg": 0,
+     "share": 0.494
+    }
+   ],
+   "angleFamilies": {
+    "orth": 1,
+    "d45": 0,
+    "d30_60": 0,
+    "other": 0
+   },
+   "arcRadii": [
+    {
+     "rPctH": 16.7,
+     "share": 0.86,
+     "turnDeg": 991
+    },
+    {
+     "rPctH": 14.7,
+     "share": 0.14,
+     "turnDeg": 178
+    }
+   ]
+  },
+  "survival": {
+   "16": {
+    "features": 2,
+    "kept": 2,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 1,
+    "holes": 1,
+    "heightPx": 16,
+    "minInkPx": 5.28,
+    "minGapPx": 0.26,
+    "topology": true
+   },
+   "32": {
+    "features": 2,
+    "kept": 2,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 1,
+    "holes": 1,
+    "heightPx": 32,
+    "minInkPx": 10.56,
+    "minGapPx": 0.51,
+    "topology": true
+   },
+   "64": {
+    "features": 2,
+    "kept": 2,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 1,
+    "holes": 1,
+    "heightPx": 64,
+    "minInkPx": 21.12,
+    "minGapPx": 1.02,
+    "topology": true
+   }
+  }
+ },
+ "airtable": {
+  "name": "airtable",
+  "group": "saas",
+  "source": "airtable.com nav (inline SVG)",
+  "mode": "alpha",
+  "aspect": 1.19,
+  "parts": 3,
+  "holes": 0,
+  "partAreas": [
+   0.436,
+   0.403,
+   0.16
+  ],
+  "colours": 1,
+  "colourCover": 1,
+  "gradient": false,
+  "construction": {
+   "fill": 1,
+   "stroke": 0,
+   "both": 0,
+   "skipped": 0
+  },
+  "strokeWidthsPctH": [],
+  "coverageBBox": 0.559,
+  "coverageHull": 0.74,
+  "symmetry": {
+   "mirrorV": 0.609,
+   "mirrorH": 0.496,
+   "mirrorD": 0.483,
+   "rot": {
+    "2": 0.495,
+    "3": 0.389,
+    "4": 0.353,
+    "5": 0.364,
+    "6": 0.413,
+    "8": 0.509,
+    "12": 0.56
+   },
+   "rotOrder": 1
+  },
+  "thicknessPctH": {
+   "p5": 16.4,
+   "p25": 28.1,
+   "p50": 42,
+   "p95": 44.9
+  },
+  "gapPctH": {
+   "p5": 6.5,
+   "p50": 26.3,
+   "gapShareOfHull": 0.26
+  },
+  "minPartGapPctH": 6.4,
+  "minCounterPctH": null,
+  "outline": {
+   "outlineLenPerH": 5.9,
+   "straightShare": 0.842,
+   "arcShare": 0.135,
+   "freeShare": 0.023,
+   "sharpCorners": 1,
+   "roundedCorners": 7,
+   "cornerRadiusPctH": 7.1,
+   "anglePeaks": [
+    {
+     "deg": 22,
+     "share": 0.495
+    },
+    {
+     "deg": 157,
+     "share": 0.294
+    },
+    {
+     "deg": 89,
+     "share": 0.211
+    }
+   ],
+   "angleFamilies": {
+    "orth": 0.211,
+    "d45": 0,
+    "d30_60": 0,
+    "other": 0.789
+   },
+   "arcRadii": [
+    {
+     "rPctH": 3.6,
+     "share": 0.53,
+     "turnDeg": 696
+    },
+    {
+     "rPctH": 14.2,
+     "share": 0.27,
+     "turnDeg": 88
+    },
+    {
+     "rPctH": 7.1,
+     "share": 0.2,
+     "turnDeg": 130
+    }
+   ]
+  },
+  "survival": {
+   "16": {
+    "features": 3,
+    "kept": 1,
+    "keptWeighted": 0.39,
+    "lostBig": 2,
+    "holds": false,
+    "parts": 1,
+    "holes": 2,
+    "heightPx": 13.4,
+    "minInkPx": 2.21,
+    "minGapPx": 0.87,
+    "topology": false
+   },
+   "32": {
+    "features": 3,
+    "kept": 3,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 3,
+    "holes": 0,
+    "heightPx": 26.9,
+    "minInkPx": 4.41,
+    "minGapPx": 1.75,
+    "topology": true
+   },
+   "64": {
+    "features": 3,
+    "kept": 3,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 3,
+    "holes": 0,
+    "heightPx": 53.8,
+    "minInkPx": 8.82,
+    "minGapPx": 3.5,
+    "topology": true
+   }
+  }
+ },
+ "dropbox": {
+  "name": "dropbox",
+  "group": "saas",
+  "source": "dropbox.com nav (inline SVG; tile is CSS)",
+  "mode": "alpha",
+  "aspect": 1.178,
+  "parts": 3,
+  "holes": 0,
+  "partAreas": [
+   0.4,
+   0.4,
+   0.2
+  ],
+  "colours": 1,
+  "colourCover": 1,
+  "gradient": false,
+  "construction": {
+   "fill": 4,
+   "stroke": 0,
+   "both": 0,
+   "skipped": 0
+  },
+  "strokeWidthsPctH": [],
+  "coverageBBox": 0.471,
+  "coverageHull": 0.625,
+  "symmetry": {
+   "mirrorV": 0.999,
+   "mirrorH": 0.32,
+   "mirrorD": 0.461,
+   "rot": {
+    "2": 0.32,
+    "3": 0.43,
+    "4": 0.461,
+    "5": 0.492,
+    "6": 0.474,
+    "8": 0.419,
+    "12": 0.41
+   },
+   "rotOrder": 1
+  },
+  "thicknessPctH": {
+   "p5": 12.5,
+   "p25": 29.8,
+   "p50": 29.8,
+   "p95": 31.8
+  },
+  "gapPctH": {
+   "p5": 4.1,
+   "p50": 19.9,
+   "gapShareOfHull": 0.375
+  },
+  "minPartGapPctH": 0.5,
+  "minCounterPctH": null,
+  "outline": {
+   "outlineLenPerH": 7,
+   "straightShare": 0.971,
+   "arcShare": 0,
+   "freeShare": 0.029,
+   "sharpCorners": 20,
+   "roundedCorners": 0,
+   "cornerRadiusPctH": null,
+   "anglePeaks": [
+    {
+     "deg": 147,
+     "share": 0.5
+    },
+    {
+     "deg": 31,
+     "share": 0.5
+    }
+   ],
+   "angleFamilies": {
+    "orth": 0,
+    "d45": 0,
+    "d30_60": 1,
+    "other": 0
+   },
+   "arcRadii": []
+  },
+  "survival": {
+   "16": {
+    "features": 3,
+    "kept": 2,
+    "keptWeighted": 0.63,
+    "lostBig": 1,
+    "holds": false,
+    "parts": 2,
+    "holes": 2,
+    "heightPx": 13.6,
+    "minInkPx": 1.7,
+    "minGapPx": 0.56,
+    "topology": false
+   },
+   "32": {
+    "features": 3,
+    "kept": 2,
+    "keptWeighted": 0.63,
+    "lostBig": 1,
+    "holds": false,
+    "parts": 3,
+    "holes": 0,
+    "heightPx": 27.2,
+    "minInkPx": 3.39,
+    "minGapPx": 1.11,
+    "topology": true
+   },
+   "64": {
+    "features": 3,
+    "kept": 2,
+    "keptWeighted": 0.63,
+    "lostBig": 1,
+    "holds": false,
+    "parts": 2,
+    "holes": 0,
+    "heightPx": 54.3,
+    "minInkPx": 6.79,
+    "minGapPx": 2.23,
+    "topology": false
+   }
+  }
+ },
+ "slack-2013": {
+  "name": "slack-2013",
+  "group": "saas",
+  "source": "Wikimedia Commons File:Slack Logo Pre 2019.svg",
+  "mode": "alpha",
+  "aspect": 1.001,
+  "parts": 1,
+  "holes": 1,
+  "partAreas": [
+   1
+  ],
+  "colours": 8,
+  "colourCover": 1,
+  "gradient": false,
+  "construction": {
+   "fill": 8,
+   "stroke": 0,
+   "both": 0,
+   "skipped": 0
+  },
+  "strokeWidthsPctH": [],
+  "coverageBBox": 0.502,
+  "coverageHull": 0.681,
+  "symmetry": {
+   "mirrorV": 0.523,
+   "mirrorH": 0.523,
+   "mirrorD": 0.523,
+   "rot": {
+    "2": 0.996,
+    "3": 0.484,
+    "4": 0.997,
+    "5": 0.544,
+    "6": 0.484,
+    "8": 0.512,
+    "12": 0.484
+   },
+   "rotOrder": 4
+  },
+  "thicknessPctH": {
+   "p5": 16.9,
+   "p25": 18,
+   "p50": 19.3,
+   "p95": 25.2
+  },
+  "gapPctH": {
+   "p5": 4,
+   "p50": 18,
+   "gapShareOfHull": 0.319
+  },
+  "minPartGapPctH": null,
+  "minCounterPctH": 19.5,
+  "outline": {
+   "outlineLenPerH": 11,
+   "straightShare": 0.779,
+   "arcShare": 0.198,
+   "freeShare": 0.023,
+   "sharpCorners": 16,
+   "roundedCorners": 8,
+   "cornerRadiusPctH": 8.9,
+   "anglePeaks": [
+    {
+     "deg": 17,
+     "share": 0.501
+    },
+    {
+     "deg": 107,
+     "share": 0.499
+    }
+   ],
+   "angleFamilies": {
+    "orth": 0,
+    "d45": 0,
+    "d30_60": 0,
+    "other": 1
+   },
+   "arcRadii": [
+    {
+     "rPctH": 8.9,
+     "share": 1,
+     "turnDeg": 1419
+    }
+   ]
+  },
+  "survival": {
+   "16": {
+    "features": 2,
+    "kept": 2,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 1,
+    "holes": 1,
+    "heightPx": 16,
+    "minInkPx": 2.7,
+    "minGapPx": 0.64,
+    "topology": true
+   },
+   "32": {
+    "features": 2,
+    "kept": 2,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 1,
+    "holes": 1,
+    "heightPx": 32,
+    "minInkPx": 5.4,
+    "minGapPx": 1.28,
+    "topology": true
+   },
+   "64": {
+    "features": 2,
+    "kept": 2,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 1,
+    "holes": 1,
+    "heightPx": 63.9,
+    "minInkPx": 10.81,
+    "minGapPx": 2.56,
+    "topology": true
+   }
+  }
+ },
+ "claude": {
+  "name": "claude",
+  "group": "ai",
+  "source": "Wikimedia Commons File:Claude AI symbol.svg",
+  "mode": "alpha",
+  "aspect": 0.999,
+  "parts": 1,
+  "holes": 0,
+  "partAreas": [
+   1
+  ],
+  "colours": 1,
+  "colourCover": 1,
+  "gradient": false,
+  "construction": {
+   "fill": 1,
+   "stroke": 0,
+   "both": 0,
+   "skipped": 0
+  },
+  "strokeWidthsPctH": [],
+  "coverageBBox": 0.399,
+  "coverageHull": 0.52,
+  "symmetry": {
+   "mirrorV": 0.387,
+   "mirrorH": 0.488,
+   "mirrorD": 0.509,
+   "rot": {
+    "2": 0.42,
+    "3": 0.381,
+    "4": 0.4,
+    "5": 0.468,
+    "6": 0.434,
+    "8": 0.37,
+    "12": 0.544
+   },
+   "rotOrder": 1
+  },
+  "thicknessPctH": {
+   "p5": 5.8,
+   "p25": 7.6,
+   "p50": 8.7,
+   "p95": 26.4
+  },
+  "gapPctH": {
+   "p5": 3.5,
+   "p50": 12.1,
+   "gapShareOfHull": 0.48
+  },
+  "minPartGapPctH": null,
+  "minCounterPctH": null,
+  "outline": {
+   "outlineLenPerH": 9.1,
+   "straightShare": 0.877,
+   "arcShare": 0.002,
+   "freeShare": 0.12,
+   "sharpCorners": 66,
+   "roundedCorners": 0,
+   "cornerRadiusPctH": null,
+   "anglePeaks": [
+    {
+     "deg": 53,
+     "share": 0.115
+    },
+    {
+     "deg": 176,
+     "share": 0.109
+    },
+    {
+     "deg": 84,
+     "share": 0.099
+    },
+    {
+     "deg": 125,
+     "share": 0.074
+    },
+    {
+     "deg": 142,
+     "share": 0.077
+    },
+    {
+     "deg": 12,
+     "share": 0.069
+    }
+   ],
+   "angleFamilies": {
+    "orth": 0.026,
+    "d45": 0.028,
+    "d30_60": 0.087,
+    "other": 0.859
+   },
+   "arcRadii": [
+    {
+     "rPctH": 10.4,
+     "share": 1,
+     "turnDeg": 13
+    }
+   ]
+  },
+  "survival": {
+   "16": {
+    "features": 1,
+    "kept": 1,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 2,
+    "holes": 1,
+    "heightPx": 16,
+    "minInkPx": 0.93,
+    "minGapPx": 0.56,
+    "topology": false
+   },
+   "32": {
+    "features": 1,
+    "kept": 1,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 1,
+    "holes": 4,
+    "heightPx": 32,
+    "minInkPx": 1.86,
+    "minGapPx": 1.12,
+    "topology": false
+   },
+   "64": {
+    "features": 1,
+    "kept": 1,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 1,
+    "holes": 2,
+    "heightPx": 64,
+    "minInkPx": 3.71,
+    "minGapPx": 2.24,
+    "topology": false
+   }
+  }
+ },
+ "openai": {
+  "name": "openai",
+  "group": "ai",
+  "source": "Wikimedia Commons File:OpenAI logo 2025 (symbol).svg",
+  "mode": "alpha",
+  "aspect": 1.008,
+  "parts": 1,
+  "holes": 7,
+  "partAreas": [
+   1
+  ],
+  "colours": 1,
+  "colourCover": 1,
+  "gradient": false,
+  "construction": {
+   "fill": 1,
+   "stroke": 0,
+   "both": 0,
+   "skipped": 0
+  },
+  "strokeWidthsPctH": [],
+  "coverageBBox": 0.405,
+  "coverageHull": 0.532,
+  "symmetry": {
+   "mirrorV": 0.36,
+   "mirrorH": 0.362,
+   "mirrorD": 0.568,
+   "rot": {
+    "2": 0.982,
+    "3": 0.972,
+    "4": 0.248,
+    "5": 0.488,
+    "6": 0.973,
+    "8": 0.407,
+    "12": 0.248
+   },
+   "rotOrder": 6
+  },
+  "thicknessPctH": {
+   "p5": 6.3,
+   "p25": 6.7,
+   "p50": 6.7,
+   "p95": 8.7
+  },
+  "gapPctH": {
+   "p5": 3.7,
+   "p50": 8.7,
+   "gapShareOfHull": 0.468
+  },
+  "minPartGapPctH": null,
+  "minCounterPctH": 10.9,
+  "outline": {
+   "outlineLenPerH": 11.6,
+   "straightShare": 0.458,
+   "arcShare": 0.496,
+   "freeShare": 0.046,
+   "sharpCorners": 24,
+   "roundedCorners": 8,
+   "cornerRadiusPctH": 3.8,
+   "anglePeaks": [
+    {
+     "deg": 89,
+     "share": 0.336
+    },
+    {
+     "deg": 150,
+     "share": 0.332
+    },
+    {
+     "deg": 29,
+     "share": 0.331
+    }
+   ],
+   "angleFamilies": {
+    "orth": 0.336,
+    "d45": 0,
+    "d30_60": 0.664,
+    "other": 0.001
+   },
+   "arcRadii": [
+    {
+     "rPctH": 24.8,
+     "share": 0.53,
+     "turnDeg": 715
+    },
+    {
+     "rPctH": 18.4,
+     "share": 0.4,
+     "turnDeg": 726
+    }
+   ]
+  },
+  "survival": {
+   "16": {
+    "features": 8,
+    "kept": 8,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 1,
+    "holes": 7,
+    "heightPx": 15.9,
+    "minInkPx": 1,
+    "minGapPx": 0.59,
+    "topology": true
+   },
+   "32": {
+    "features": 8,
+    "kept": 8,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 1,
+    "holes": 7,
+    "heightPx": 31.7,
+    "minInkPx": 2,
+    "minGapPx": 1.17,
+    "topology": true
+   },
+   "64": {
+    "features": 8,
+    "kept": 8,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 1,
+    "holes": 7,
+    "heightPx": 63.5,
+    "minInkPx": 4,
+    "minGapPx": 2.35,
+    "topology": true
+   }
+  }
+ },
+ "perplexity": {
+  "name": "perplexity",
+  "group": "ai",
+  "source": "perplexity.ai nav (inline SVG)",
+  "mode": "alpha",
+  "aspect": 0.913,
+  "parts": 1,
+  "holes": 6,
+  "partAreas": [
+   1
+  ],
+  "colours": 1,
+  "colourCover": 1,
+  "gradient": false,
+  "construction": {
+   "fill": 1,
+   "stroke": 0,
+   "both": 0,
+   "skipped": 0
+  },
+  "strokeWidthsPctH": [],
+  "coverageBBox": 0.377,
+  "coverageHull": 0.408,
+  "symmetry": {
+   "mirrorV": 0.782,
+   "mirrorH": 0.597,
+   "mirrorD": 0.242,
+   "rot": {
+    "2": 0.491,
+    "3": 0.219,
+    "4": 0.234,
+    "5": 0.227,
+    "6": 0.235,
+    "8": 0.225,
+    "12": 0.282
+   },
+   "rotOrder": 1
+  },
+  "thicknessPctH": {
+   "p5": 5.5,
+   "p25": 5.5,
+   "p50": 5.5,
+   "p95": 12.9
+  },
+  "gapPctH": {
+   "p5": 5.1,
+   "p50": 15.8,
+   "gapShareOfHull": 0.592
+  },
+  "minPartGapPctH": null,
+  "minCounterPctH": 12.9,
+  "outline": {
+   "outlineLenPerH": 11.2,
+   "straightShare": 0.916,
+   "arcShare": 0.046,
+   "freeShare": 0.039,
+   "sharpCorners": 30,
+   "roundedCorners": 9,
+   "cornerRadiusPctH": 2.8,
+   "anglePeaks": [
+    {
+     "deg": 89,
+     "share": 0.448
+    },
+    {
+     "deg": 0,
+     "share": 0.145
+    },
+    {
+     "deg": 134,
+     "share": 0.138
+    },
+    {
+     "deg": 44,
+     "share": 0.203
+    },
+    {
+     "deg": 138,
+     "share": 0.066
+    }
+   ],
+   "angleFamilies": {
+    "orth": 0.593,
+    "d45": 0.275,
+    "d30_60": 0,
+    "other": 0.132
+   },
+   "arcRadii": [
+    {
+     "rPctH": 2.8,
+     "share": 1,
+     "turnDeg": 1058
+    }
+   ]
+  },
+  "survival": {
+   "16": {
+    "features": 7,
+    "kept": 3,
+    "keptWeighted": 0.52,
+    "lostBig": 4,
+    "holds": false,
+    "parts": 1,
+    "holes": 2,
+    "heightPx": 16,
+    "minInkPx": 0.88,
+    "minGapPx": 0.82,
+    "topology": false
+   },
+   "32": {
+    "features": 7,
+    "kept": 7,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 1,
+    "holes": 6,
+    "heightPx": 32,
+    "minInkPx": 1.76,
+    "minGapPx": 1.63,
+    "topology": true
+   },
+   "64": {
+    "features": 7,
+    "kept": 7,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 1,
+    "holes": 6,
+    "heightPx": 64,
+    "minInkPx": 3.52,
+    "minGapPx": 3.26,
+    "topology": true
+   }
+  }
+ },
+ "mistral": {
+  "name": "mistral",
+  "group": "ai",
+  "source": "mistral.ai nav (inline SVG)",
+  "mode": "alpha",
+  "aspect": 1.398,
+  "parts": 1,
+  "holes": 2,
+  "partAreas": [
+   1
+  ],
+  "colours": 5,
+  "colourCover": 1,
+  "gradient": false,
+  "construction": {
+   "fill": 10,
+   "stroke": 0,
+   "both": 0,
+   "skipped": 0
+  },
+  "strokeWidthsPctH": [],
+  "coverageBBox": 0.571,
+  "coverageHull": 0.645,
+  "symmetry": {
+   "mirrorV": 1,
+   "mirrorH": 0.518,
+   "mirrorD": 0.397,
+   "rot": {
+    "2": 0.518,
+    "3": 0.409,
+    "4": 0.429,
+    "5": 0.385,
+    "6": 0.321,
+    "8": 0.313,
+    "12": 0.362
+   },
+   "rotOrder": 1
+  },
+  "thicknessPctH": {
+   "p5": 19.3,
+   "p25": 19.3,
+   "p50": 25.2,
+   "p95": 37.7
+  },
+  "gapPctH": {
+   "p5": 7.2,
+   "p50": 19.3,
+   "gapShareOfHull": 0.355
+  },
+  "minPartGapPctH": null,
+  "minCounterPctH": 20.2,
+  "outline": {
+   "outlineLenPerH": 12,
+   "straightShare": 0.959,
+   "arcShare": 0,
+   "freeShare": 0.041,
+   "sharpCorners": 40,
+   "roundedCorners": 0,
+   "cornerRadiusPctH": null,
+   "anglePeaks": [
+    {
+     "deg": 0,
+     "share": 0.675
+    },
+    {
+     "deg": 89,
+     "share": 0.325
+    }
+   ],
+   "angleFamilies": {
+    "orth": 1,
+    "d45": 0,
+    "d30_60": 0,
+    "other": 0
+   },
+   "arcRadii": []
+  },
+  "survival": {
+   "16": {
+    "features": 3,
+    "kept": 3,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 1,
+    "holes": 2,
+    "heightPx": 11.4,
+    "minInkPx": 2.21,
+    "minGapPx": 0.82,
+    "topology": true
+   },
+   "32": {
+    "features": 3,
+    "kept": 3,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 1,
+    "holes": 2,
+    "heightPx": 22.9,
+    "minInkPx": 4.42,
+    "minGapPx": 1.65,
+    "topology": true
+   },
+   "64": {
+    "features": 3,
+    "kept": 3,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 1,
+    "holes": 2,
+    "heightPx": 45.8,
+    "minInkPx": 8.84,
+    "minGapPx": 3.3,
+    "topology": true
+   }
+  }
+ },
+ "cohere": {
+  "name": "cohere",
+  "group": "ai",
+  "source": "cohere.com/logo.svg (nav img)",
+  "mode": "alpha",
+  "aspect": 0.975,
+  "parts": 3,
+  "holes": 0,
+  "partAreas": [
+   0.591,
+   0.281,
+   0.128
+  ],
+  "colours": 3,
+  "colourCover": 1,
+  "gradient": false,
+  "construction": {
+   "fill": 3,
+   "stroke": 0,
+   "both": 0,
+   "skipped": 0
+  },
+  "strokeWidthsPctH": [],
+  "coverageBBox": 0.783,
+  "coverageHull": 0.826,
+  "symmetry": {
+   "mirrorV": 0.716,
+   "mirrorH": 0.728,
+   "mirrorD": 0.728,
+   "rot": {
+    "2": 0.726,
+    "3": 0.585,
+    "4": 0.65,
+    "5": 0.603,
+    "6": 0.569,
+    "8": 0.536,
+    "12": 0.575
+   },
+   "rotOrder": 1
+  },
+  "thicknessPctH": {
+   "p5": 33,
+   "p25": 46.2,
+   "p50": 49.4,
+   "p95": 56.6
+  },
+  "gapPctH": {
+   "p5": 4,
+   "p50": 12.1,
+   "gapShareOfHull": 0.174
+  },
+  "minPartGapPctH": 5.8,
+  "minCounterPctH": null,
+  "outline": {
+   "outlineLenPerH": 5.3,
+   "straightShare": 0.207,
+   "arcShare": 0.76,
+   "freeShare": 0.033,
+   "sharpCorners": 0,
+   "roundedCorners": 0,
+   "cornerRadiusPctH": null,
+   "anglePeaks": [
+    {
+     "deg": 0,
+     "share": 0.556
+    },
+    {
+     "deg": 23,
+     "share": 0.414
+    }
+   ],
+   "angleFamilies": {
+    "orth": 0.586,
+    "d45": 0,
+    "d30_60": 0,
+    "other": 0.414
+   },
+   "arcRadii": [
+    {
+     "rPctH": 17,
+     "share": 0.26,
+     "turnDeg": 360
+    },
+    {
+     "rPctH": 20.1,
+     "share": 0.25,
+     "turnDeg": 288
+    },
+    {
+     "rPctH": 30.2,
+     "share": 0.23,
+     "turnDeg": 179
+    },
+    {
+     "rPctH": 22.9,
+     "share": 0.2,
+     "turnDeg": 202
+    }
+   ]
+  },
+  "survival": {
+   "16": {
+    "features": 3,
+    "kept": 2,
+    "keptWeighted": 0.68,
+    "lostBig": 1,
+    "holds": false,
+    "parts": 2,
+    "holes": 0,
+    "heightPx": 16,
+    "minInkPx": 5.28,
+    "minGapPx": 0.64,
+    "topology": false
+   },
+   "32": {
+    "features": 3,
+    "kept": 3,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 3,
+    "holes": 0,
+    "heightPx": 32,
+    "minInkPx": 10.56,
+    "minGapPx": 1.28,
+    "topology": true
+   },
+   "64": {
+    "features": 3,
+    "kept": 3,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 3,
+    "holes": 0,
+    "heightPx": 64,
+    "minInkPx": 21.12,
+    "minGapPx": 2.56,
+    "topology": true
+   }
+  }
+ },
+ "mastercard": {
+  "name": "mastercard",
+  "group": "classic",
+  "source": "Wikimedia Commons File:Mastercard 2019 logo.svg",
+  "mode": "alpha",
+  "aspect": 1.617,
+  "parts": 1,
+  "holes": 0,
+  "partAreas": [
+   1
+  ],
+  "colours": 3,
+  "colourCover": 1,
+  "gradient": false,
+  "construction": {
+   "fill": 3,
+   "stroke": 0,
+   "both": 0,
+   "skipped": 0
+  },
+  "strokeWidthsPctH": [],
+  "coverageBBox": 0.843,
+  "coverageHull": 0.967,
+  "symmetry": {
+   "mirrorV": 1,
+   "mirrorH": 0.997,
+   "mirrorD": 0.494,
+   "rot": {
+    "2": 0.997,
+    "3": 0.544,
+    "4": 0.494,
+    "5": 0.512,
+    "6": 0.544,
+    "8": 0.608,
+    "12": 0.702
+   },
+   "rotOrder": 2
+  },
+  "thicknessPctH": {
+   "p5": 100.2,
+   "p25": 100.2,
+   "p50": 100.2,
+   "p95": 100.2
+  },
+  "gapPctH": {
+   "p5": 0.6,
+   "p50": 6.8,
+   "gapShareOfHull": 0.033
+  },
+  "minPartGapPctH": null,
+  "minCounterPctH": null,
+  "outline": {
+   "outlineLenPerH": 8.1,
+   "straightShare": 0,
+   "arcShare": 0.993,
+   "freeShare": 0.007,
+   "sharpCorners": 2,
+   "roundedCorners": 0,
+   "cornerRadiusPctH": null,
+   "anglePeaks": [],
+   "angleFamilies": {
+    "orth": 0,
+    "d45": 0,
+    "d30_60": 0,
+    "other": 0
+   },
+   "arcRadii": [
+    {
+     "rPctH": 50,
+     "share": 1,
+     "turnDeg": 927
+    }
+   ]
+  },
+  "survival": {
+   "16": {
+    "features": 1,
+    "kept": 1,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 1,
+    "holes": 0,
+    "heightPx": 9.9,
+    "minInkPx": 9.91,
+    "minGapPx": 0.06,
+    "topology": true
+   },
+   "32": {
+    "features": 1,
+    "kept": 1,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 1,
+    "holes": 0,
+    "heightPx": 19.8,
+    "minInkPx": 19.83,
+    "minGapPx": 0.12,
+    "topology": true
+   },
+   "64": {
+    "features": 1,
+    "kept": 1,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 1,
+    "holes": 0,
+    "heightPx": 39.6,
+    "minInkPx": 39.66,
+    "minGapPx": 0.24,
+    "topology": true
+   }
+  }
+ },
+ "chase": {
+  "name": "chase",
+  "group": "classic",
+  "source": "chase.com nav img logo_chase_headerfooter.svg",
+  "mode": "alpha",
+  "aspect": 0.969,
+  "parts": 4,
+  "holes": 0,
+  "partAreas": [
+   0.251,
+   0.25,
+   0.25,
+   0.249
+  ],
+  "colours": 1,
+  "colourCover": 1,
+  "gradient": false,
+  "construction": {
+   "fill": 4,
+   "stroke": 0,
+   "both": 0,
+   "skipped": 0
+  },
+  "strokeWidthsPctH": [],
+  "coverageBBox": 0.57,
+  "coverageHull": 0.709,
+  "symmetry": {
+   "mirrorV": 0.85,
+   "mirrorH": 0.85,
+   "mirrorD": 0.807,
+   "rot": {
+    "2": 0.999,
+    "3": 0.718,
+    "4": 0.917,
+    "5": 0.738,
+    "6": 0.718,
+    "8": 0.718,
+    "12": 0.724
+   },
+   "rotOrder": 4
+  },
+  "thicknessPctH": {
+   "p5": 12.9,
+   "p25": 27,
+   "p50": 27,
+   "p95": 27
+  },
+  "gapPctH": {
+   "p5": 4,
+   "p50": 40.4,
+   "gapShareOfHull": 0.291
+  },
+  "minPartGapPctH": 4.1,
+  "minCounterPctH": null,
+  "outline": {
+   "outlineLenPerH": 6.6,
+   "straightShare": 0.943,
+   "arcShare": 0.03,
+   "freeShare": 0.027,
+   "sharpCorners": 12,
+   "roundedCorners": 4,
+   "cornerRadiusPctH": 3.5,
+   "anglePeaks": [
+    {
+     "deg": 89,
+     "share": 0.38
+    },
+    {
+     "deg": 0,
+     "share": 0.368
+    },
+    {
+     "deg": 46,
+     "share": 0.126
+    },
+    {
+     "deg": 135,
+     "share": 0.126
+    }
+   ],
+   "angleFamilies": {
+    "orth": 0.748,
+    "d45": 0.252,
+    "d30_60": 0,
+    "other": 0
+   },
+   "arcRadii": [
+    {
+     "rPctH": 3.5,
+     "share": 1,
+     "turnDeg": 333
+    }
+   ]
+  },
+  "survival": {
+   "16": {
+    "features": 4,
+    "kept": 1,
+    "keptWeighted": 0.25,
+    "lostBig": 3,
+    "holds": false,
+    "parts": 1,
+    "holes": 1,
+    "heightPx": 16,
+    "minInkPx": 2.06,
+    "minGapPx": 0.64,
+    "topology": false
+   },
+   "32": {
+    "features": 4,
+    "kept": 4,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 4,
+    "holes": 0,
+    "heightPx": 32,
+    "minInkPx": 4.13,
+    "minGapPx": 1.28,
+    "topology": true
+   },
+   "64": {
+    "features": 4,
+    "kept": 4,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 4,
+    "holes": 0,
+    "heightPx": 64,
+    "minInkPx": 8.26,
+    "minGapPx": 2.56,
+    "topology": true
+   }
+  }
+ },
+ "deutschebank": {
+  "name": "deutschebank",
+  "group": "classic",
+  "source": "Wikimedia Commons File:Deutsche Bank logo without wordmark.svg",
+  "mode": "dark",
+  "aspect": 1,
+  "parts": 2,
+  "holes": 1,
+  "partAreas": [
+   0.835,
+   0.165
+  ],
+  "colours": 1,
+  "colourCover": 1,
+  "gradient": false,
+  "construction": {
+   "fill": 1,
+   "stroke": 0,
+   "both": 0,
+   "skipped": 0
+  },
+  "strokeWidthsPctH": [],
+  "coverageBBox": 0.576,
+  "coverageHull": 0.576,
+  "symmetry": {
+   "mirrorV": 0.765,
+   "mirrorH": 0.765,
+   "mirrorD": 0.906,
+   "rot": {
+    "2": 0.948,
+    "3": 0.36,
+    "4": 0.762,
+    "5": 0.448,
+    "6": 0.361,
+    "8": 0.337,
+    "12": 0.395
+   },
+   "rotOrder": 2
+  },
+  "thicknessPctH": {
+   "p5": 13.8,
+   "p25": 13.8,
+   "p50": 13.8,
+   "p95": 15.8
+  },
+  "gapPctH": {
+   "p5": 9.9,
+   "p50": 35.3,
+   "gapShareOfHull": 0.424
+  },
+  "minPartGapPctH": 8.2,
+  "minCounterPctH": 35.9,
+  "outline": {
+   "outlineLenPerH": 8.5,
+   "straightShare": 0.988,
+   "arcShare": 0,
+   "freeShare": 0.012,
+   "sharpCorners": 12,
+   "roundedCorners": 0,
+   "cornerRadiusPctH": null,
+   "anglePeaks": [
+    {
+     "deg": 0,
+     "share": 0.446
+    },
+    {
+     "deg": 89,
+     "share": 0.404
+    },
+    {
+     "deg": 53,
+     "share": 0.15
+    }
+   ],
+   "angleFamilies": {
+    "orth": 0.85,
+    "d45": 0,
+    "d30_60": 0,
+    "other": 0.15
+   },
+   "arcRadii": []
+  },
+  "survival": {
+   "16": {
+    "features": 3,
+    "kept": 3,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 2,
+    "holes": 1,
+    "heightPx": 16,
+    "minInkPx": 2.21,
+    "minGapPx": 1.58,
+    "topology": true
+   },
+   "32": {
+    "features": 3,
+    "kept": 3,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 2,
+    "holes": 1,
+    "heightPx": 32,
+    "minInkPx": 4.42,
+    "minGapPx": 3.17,
+    "topology": true
+   },
+   "64": {
+    "features": 3,
+    "kept": 3,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 2,
+    "holes": 1,
+    "heightPx": 64,
+    "minInkPx": 8.83,
+    "minGapPx": 6.34,
+    "topology": true
+   }
+  }
+ },
+ "mitsubishi": {
+  "name": "mitsubishi",
+  "group": "classic",
+  "source": "Wikimedia Commons File:Mitsubishi logo.svg",
+  "mode": "alpha",
+  "aspect": 1.161,
+  "parts": 1,
+  "holes": 0,
+  "partAreas": [
+   1
+  ],
+  "colours": 1,
+  "colourCover": 1,
+  "gradient": false,
+  "construction": {
+   "fill": 1,
+   "stroke": 0,
+   "both": 0,
+   "skipped": 0
+  },
+  "strokeWidthsPctH": [],
+  "coverageBBox": 0.336,
+  "coverageHull": 0.663,
+  "symmetry": {
+   "mirrorV": 0.998,
+   "mirrorH": 0.148,
+   "mirrorD": 0.234,
+   "rot": {
+    "2": 0.148,
+    "3": 0.94,
+    "4": 0.234,
+    "5": 0.21,
+    "6": 0.182,
+    "8": 0.152,
+    "12": 0.239
+   },
+   "rotOrder": 3
+  },
+  "thicknessPctH": {
+   "p5": 13.1,
+   "p25": 29.3,
+   "p50": 31.3,
+   "p95": 33.5
+  },
+  "gapPctH": {
+   "p5": 6.4,
+   "p50": 20.9,
+   "gapShareOfHull": 0.337
+  },
+  "minPartGapPctH": null,
+  "minCounterPctH": null,
+  "outline": {
+   "outlineLenPerH": 4.6,
+   "straightShare": 0.975,
+   "arcShare": 0,
+   "freeShare": 0.025,
+   "sharpCorners": 12,
+   "roundedCorners": 0,
+   "cornerRadiusPctH": null,
+   "anglePeaks": [
+    {
+     "deg": 0,
+     "share": 0.335
+    },
+    {
+     "deg": 120,
+     "share": 0.333
+    },
+    {
+     "deg": 59,
+     "share": 0.332
+    }
+   ],
+   "angleFamilies": {
+    "orth": 0.335,
+    "d45": 0,
+    "d30_60": 0.665,
+    "other": 0
+   },
+   "arcRadii": []
+  },
+  "survival": {
+   "16": {
+    "features": 1,
+    "kept": 1,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 1,
+    "holes": 0,
+    "heightPx": 13.8,
+    "minInkPx": 1.81,
+    "minGapPx": 0.88,
+    "topology": true
+   },
+   "32": {
+    "features": 1,
+    "kept": 1,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 2,
+    "holes": 0,
+    "heightPx": 27.6,
+    "minInkPx": 3.61,
+    "minGapPx": 1.76,
+    "topology": false
+   },
+   "64": {
+    "features": 1,
+    "kept": 1,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 1,
+    "holes": 0,
+    "heightPx": 55.1,
+    "minInkPx": 7.22,
+    "minGapPx": 3.53,
+    "topology": true
+   }
+  }
+ },
+ "airbnb": {
+  "name": "airbnb",
+  "group": "classic",
+  "source": "airbnb.com nav (inline SVG)",
+  "mode": "alpha",
+  "aspect": 0.932,
+  "parts": 1,
+  "holes": 2,
+  "partAreas": [
+   1
+  ],
+  "colours": 1,
+  "colourCover": 1,
+  "gradient": false,
+  "construction": {
+   "fill": 1,
+   "stroke": 0,
+   "both": 0,
+   "skipped": 0
+  },
+  "strokeWidthsPctH": [],
+  "coverageBBox": 0.315,
+  "coverageHull": 0.449,
+  "symmetry": {
+   "mirrorV": 0.98,
+   "mirrorH": 0.201,
+   "mirrorD": 0.193,
+   "rot": {
+    "2": 0.201,
+    "3": 0.363,
+    "4": 0.206,
+    "5": 0.165,
+    "6": 0.166,
+    "8": 0.186,
+    "12": 0.227
+   },
+   "rotOrder": 1
+  },
+  "thicknessPctH": {
+   "p5": 7.6,
+   "p25": 7.6,
+   "p50": 7.6,
+   "p95": 7.6
+  },
+  "gapPctH": {
+   "p5": 9.3,
+   "p50": 25.2,
+   "gapShareOfHull": 0.551
+  },
+  "minPartGapPctH": null,
+  "minCounterPctH": 19.7,
+  "outline": {
+   "outlineLenPerH": 7.7,
+   "straightShare": 0.306,
+   "arcShare": 0.596,
+   "freeShare": 0.098,
+   "sharpCorners": 4,
+   "roundedCorners": 0,
+   "cornerRadiusPctH": null,
+   "anglePeaks": [
+    {
+     "deg": 116,
+     "share": 0.506
+    },
+    {
+     "deg": 64,
+     "share": 0.485
+    }
+   ],
+   "angleFamilies": {
+    "orth": 0,
+    "d45": 0.009,
+    "d30_60": 0.026,
+    "other": 0.965
+   },
+   "arcRadii": [
+    {
+     "rPctH": 22.8,
+     "share": 0.26,
+     "turnDeg": 297
+    },
+    {
+     "rPctH": 17.7,
+     "share": 0.2,
+     "turnDeg": 301
+    },
+    {
+     "rPctH": 14.9,
+     "share": 0.14,
+     "turnDeg": 244
+    },
+    {
+     "rPctH": 10.1,
+     "share": 0.11,
+     "turnDeg": 290
+    },
+    {
+     "rPctH": 39.5,
+     "share": 0.07,
+     "turnDeg": 44
+    }
+   ]
+  },
+  "survival": {
+   "16": {
+    "features": 3,
+    "kept": 3,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 1,
+    "holes": 2,
+    "heightPx": 16,
+    "minInkPx": 1.22,
+    "minGapPx": 1.49,
+    "topology": true
+   },
+   "32": {
+    "features": 3,
+    "kept": 3,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 1,
+    "holes": 2,
+    "heightPx": 32,
+    "minInkPx": 2.43,
+    "minGapPx": 2.98,
+    "topology": true
+   },
+   "64": {
+    "features": 3,
+    "kept": 3,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 1,
+    "holes": 2,
+    "heightPx": 64,
+    "minInkPx": 4.86,
+    "minGapPx": 5.95,
+    "topology": true
+   }
+  }
+ },
+ "pinterest": {
+  "name": "pinterest",
+  "group": "classic",
+  "source": "pinterest.com nav (inline SVG)",
+  "mode": "dark",
+  "aspect": 1.007,
+  "parts": 1,
+  "holes": 0,
+  "partAreas": [
+   1
+  ],
+  "colours": 1,
+  "colourCover": 0.99,
+  "gradient": false,
+  "construction": {
+   "fill": 1,
+   "stroke": 0,
+   "both": 0,
+   "skipped": 1
+  },
+  "strokeWidthsPctH": [],
+  "coverageBBox": 0.585,
+  "coverageHull": 0.74,
+  "symmetry": {
+   "mirrorV": 0.776,
+   "mirrorH": 0.806,
+   "mirrorD": 0.786,
+   "rot": {
+    "2": 0.725,
+    "3": 0.749,
+    "4": 0.774,
+    "5": 0.788,
+    "6": 0.8,
+    "8": 0.821,
+    "12": 0.844
+   },
+   "rotOrder": 1
+  },
+  "thicknessPctH": {
+   "p5": 9.3,
+   "p25": 17,
+   "p50": 18.2,
+   "p95": 23.8
+  },
+  "gapPctH": {
+   "p5": 7.7,
+   "p50": 10,
+   "gapShareOfHull": 0.26
+  },
+  "minPartGapPctH": null,
+  "minCounterPctH": null,
+  "outline": {
+   "outlineLenPerH": 7.4,
+   "straightShare": 0.052,
+   "arcShare": 0.935,
+   "freeShare": 0.013,
+   "sharpCorners": 4,
+   "roundedCorners": 0,
+   "cornerRadiusPctH": null,
+   "anglePeaks": [
+    {
+     "deg": 76,
+     "share": 1
+    }
+   ],
+   "angleFamilies": {
+    "orth": 0,
+    "d45": 0,
+    "d30_60": 0,
+    "other": 1
+   },
+   "arcRadii": [
+    {
+     "rPctH": 50,
+     "share": 0.5,
+     "turnDeg": 393
+    },
+    {
+     "rPctH": 30.8,
+     "share": 0.2,
+     "turnDeg": 257
+    },
+    {
+     "rPctH": 21.8,
+     "share": 0.1,
+     "turnDeg": 175
+    },
+    {
+     "rPctH": 25.2,
+     "share": 0.05,
+     "turnDeg": 80
+    }
+   ]
+  },
+  "survival": {
+   "16": {
+    "features": 1,
+    "kept": 1,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 1,
+    "holes": 0,
+    "heightPx": 15.9,
+    "minInkPx": 1.48,
+    "minGapPx": 1.22,
+    "topology": true
+   },
+   "32": {
+    "features": 1,
+    "kept": 1,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 1,
+    "holes": 0,
+    "heightPx": 31.8,
+    "minInkPx": 2.96,
+    "minGapPx": 2.45,
+    "topology": true
+   },
+   "64": {
+    "features": 1,
+    "kept": 1,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 1,
+    "holes": 0,
+    "heightPx": 63.6,
+    "minInkPx": 5.91,
+    "minGapPx": 4.89,
+    "topology": true
+   }
+  }
+ },
+ "spotify": {
+  "name": "spotify",
+  "group": "classic",
+  "source": "spotify.com nav (inline SVG)",
+  "mode": "alpha",
+  "aspect": 0.999,
+  "parts": 1,
+  "holes": 3,
+  "partAreas": [
+   1
+  ],
+  "colours": 1,
+  "colourCover": 1,
+  "gradient": false,
+  "construction": {
+   "fill": 0,
+   "stroke": 0,
+   "both": 1,
+   "skipped": 0
+  },
+  "strokeWidthsPctH": [
+   4.2
+  ],
+  "coverageBBox": 0.639,
+  "coverageHull": 0.811,
+  "symmetry": {
+   "mirrorV": 0.785,
+   "mirrorH": 0.82,
+   "mirrorD": 0.742,
+   "rot": {
+    "2": 0.817,
+    "3": 0.758,
+    "4": 0.749,
+    "5": 0.755,
+    "6": 0.756,
+    "8": 0.761,
+    "12": 0.764
+   },
+   "rotOrder": 1
+  },
+  "thicknessPctH": {
+   "p5": 7.6,
+   "p25": 19.3,
+   "p50": 23.6,
+   "p95": 30.8
+  },
+  "gapPctH": {
+   "p5": 5.8,
+   "p50": 7.6,
+   "gapShareOfHull": 0.189
+  },
+  "minPartGapPctH": null,
+  "minCounterPctH": 6.1,
+  "outline": {
+   "outlineLenPerH": 7.2,
+   "straightShare": 0,
+   "arcShare": 0.989,
+   "freeShare": 0.011,
+   "sharpCorners": 0,
+   "roundedCorners": 0,
+   "cornerRadiusPctH": null,
+   "anglePeaks": [],
+   "angleFamilies": {
+    "orth": 0,
+    "d45": 0,
+    "d30_60": 0,
+    "other": 0
+   },
+   "arcRadii": [
+    {
+     "rPctH": 50,
+     "share": 0.44,
+     "turnDeg": 361
+    },
+    {
+     "rPctH": 77.8,
+     "share": 0.15,
+     "turnDeg": 81
+    },
+    {
+     "rPctH": 63.3,
+     "share": 0.13,
+     "turnDeg": 85
+    },
+    {
+     "rPctH": 98.9,
+     "share": 0.09,
+     "turnDeg": 39
+    },
+    {
+     "rPctH": 89.2,
+     "share": 0.08,
+     "turnDeg": 39
+    }
+   ]
+  },
+  "survival": {
+   "16": {
+    "features": 4,
+    "kept": 4,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 1,
+    "holes": 4,
+    "heightPx": 16,
+    "minInkPx": 1.22,
+    "minGapPx": 0.93,
+    "topology": false
+   },
+   "32": {
+    "features": 4,
+    "kept": 4,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 1,
+    "holes": 3,
+    "heightPx": 32,
+    "minInkPx": 2.43,
+    "minGapPx": 1.86,
+    "topology": true
+   },
+   "64": {
+    "features": 4,
+    "kept": 4,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 1,
+    "holes": 3,
+    "heightPx": 64,
+    "minInkPx": 4.86,
+    "minGapPx": 3.71,
+    "topology": true
+   }
+  }
+ },
+ "nike": {
+  "name": "nike",
+  "group": "classic",
+  "source": "nike.com nav (inline SVG)",
+  "mode": "alpha",
+  "aspect": 2.863,
+  "parts": 1,
+  "holes": 0,
+  "partAreas": [
+   1
+  ],
+  "colours": 1,
+  "colourCover": 1,
+  "gradient": false,
+  "construction": {
+   "fill": 1,
+   "stroke": 0,
+   "both": 0,
+   "skipped": 0
+  },
+  "strokeWidthsPctH": [],
+  "coverageBBox": 0.258,
+  "coverageHull": 0.471,
+  "symmetry": {
+   "mirrorV": 0.261,
+   "mirrorH": 0.257,
+   "mirrorD": 0.095,
+   "rot": {
+    "2": 0.286,
+    "3": 0.076,
+    "4": 0.063,
+    "5": 0.072,
+    "6": 0.093,
+    "8": 0.162,
+    "12": 0.262
+   },
+   "rotOrder": 1
+  },
+  "thicknessPctH": {
+   "p5": 10,
+   "p25": 21.9,
+   "p50": 32.5,
+   "p95": 48.5
+  },
+  "gapPctH": {
+   "p5": 13.8,
+   "p50": 48.5,
+   "gapShareOfHull": 0.529
+  },
+  "minPartGapPctH": null,
+  "minCounterPctH": null,
+  "outline": {
+   "outlineLenPerH": 7.2,
+   "straightShare": 0.61,
+   "arcShare": 0.33,
+   "freeShare": 0.06,
+   "sharpCorners": 2,
+   "roundedCorners": 0,
+   "cornerRadiusPctH": null,
+   "anglePeaks": [
+    {
+     "deg": 22,
+     "share": 0.516
+    },
+    {
+     "deg": 14,
+     "share": 0.484
+    }
+   ],
+   "angleFamilies": {
+    "orth": 0,
+    "d45": 0.001,
+    "d30_60": 0,
+    "other": 0.999
+   },
+   "arcRadii": [
+    {
+     "rPctH": 31.8,
+     "share": 0.27,
+     "turnDeg": 118
+    },
+    {
+     "rPctH": 71.5,
+     "share": 0.23,
+     "turnDeg": 43
+    },
+    {
+     "rPctH": 81.5,
+     "share": 0.16,
+     "turnDeg": 27
+    },
+    {
+     "rPctH": 142.8,
+     "share": 0.15,
+     "turnDeg": 14
+    },
+    {
+     "rPctH": 25,
+     "share": 0.12,
+     "turnDeg": 64
+    }
+   ]
+  },
+  "survival": {
+   "16": {
+    "features": 1,
+    "kept": 1,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 1,
+    "holes": 0,
+    "heightPx": 5.6,
+    "minInkPx": 0.56,
+    "minGapPx": 0.77,
+    "topology": true
+   },
+   "32": {
+    "features": 1,
+    "kept": 1,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 2,
+    "holes": 0,
+    "heightPx": 11.2,
+    "minInkPx": 1.12,
+    "minGapPx": 1.54,
+    "topology": false
+   },
+   "64": {
+    "features": 1,
+    "kept": 1,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 1,
+    "holes": 0,
+    "heightPx": 22.4,
+    "minInkPx": 2.24,
+    "minGapPx": 3.09,
+    "topology": true
+   }
+  }
+ },
+ "twitter": {
+  "name": "twitter",
+  "group": "classic",
+  "source": "Wikimedia Commons File:Twitter bird logo.svg (2012 bird)",
+  "mode": "alpha",
+  "aspect": 1.23,
+  "parts": 1,
+  "holes": 0,
+  "partAreas": [
+   1
+  ],
+  "colours": 1,
+  "colourCover": 1,
+  "gradient": false,
+  "construction": {
+   "fill": 1,
+   "stroke": 0,
+   "both": 0,
+   "skipped": 0
+  },
+  "strokeWidthsPctH": [],
+  "coverageBBox": 0.601,
+  "coverageHull": 0.764,
+  "symmetry": {
+   "mirrorV": 0.62,
+   "mirrorH": 0.493,
+   "mirrorD": 0.627,
+   "rot": {
+    "2": 0.627,
+    "3": 0.578,
+    "4": 0.565,
+    "5": 0.531,
+    "6": 0.507,
+    "8": 0.517,
+    "12": 0.591
+   },
+   "rotOrder": 1
+  },
+  "thicknessPctH": {
+   "p5": 13.9,
+   "p25": 46.5,
+   "p50": 53.2,
+   "p95": 60.8
+  },
+  "gapPctH": {
+   "p5": 2.9,
+   "p50": 20.8,
+   "gapShareOfHull": 0.236
+  },
+  "minPartGapPctH": null,
+  "minCounterPctH": null,
+  "outline": {
+   "outlineLenPerH": 5.2,
+   "straightShare": 0.013,
+   "arcShare": 0.915,
+   "freeShare": 0.071,
+   "sharpCorners": 13,
+   "roundedCorners": 0,
+   "cornerRadiusPctH": null,
+   "anglePeaks": [
+    {
+     "deg": 3,
+     "share": 0.603
+    },
+    {
+     "deg": 10,
+     "share": 0.379
+    }
+   ],
+   "angleFamilies": {
+    "orth": 0.31,
+    "d45": 0,
+    "d30_60": 0,
+    "other": 0.69
+   },
+   "arcRadii": [
+    {
+     "rPctH": 25.3,
+     "share": 0.43,
+     "turnDeg": 467
+    },
+    {
+     "rPctH": 71.5,
+     "share": 0.39,
+     "turnDeg": 147
+    },
+    {
+     "rPctH": 50.9,
+     "share": 0.18,
+     "turnDeg": 98
+    }
+   ]
+  },
+  "survival": {
+   "16": {
+    "features": 1,
+    "kept": 1,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 1,
+    "holes": 0,
+    "heightPx": 13,
+    "minInkPx": 1.81,
+    "minGapPx": 0.38,
+    "topology": true
+   },
+   "32": {
+    "features": 1,
+    "kept": 1,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 1,
+    "holes": 0,
+    "heightPx": 26,
+    "minInkPx": 3.62,
+    "minGapPx": 0.75,
+    "topology": true
+   },
+   "64": {
+    "features": 1,
+    "kept": 1,
+    "keptWeighted": 1,
+    "lostBig": 0,
+    "holds": true,
+    "parts": 1,
+    "holes": 0,
+    "heightPx": 52.1,
+    "minInkPx": 7.24,
+    "minGapPx": 1.51,
+    "topology": true
+   }
+  }
+ }
+}

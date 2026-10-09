@@ -1,0 +1,3410 @@
+{
+ "_about": "Pixel measurements of reference marks, made 2026-10-09 by a canvas script (bg = modal colour; ink = colour distance > 90; parts = 4-connected ink components; stroke = 2 x median distance-transform ridge of ink, as a fraction of bbox height; gap = same on background pixels enclosed by ink on both axes; combo = mark/wordmark split at the largest column gap > 1.8 x median). Heights are in source px. Indicative, not exact: anti-aliasing and gradients add noise.",
+ "lockups_svgl": {
+  "airbnb": {
+   "segs": 7,
+   "all": {
+    "w": 576,
+    "h": 180,
+    "aspect": 3.2,
+    "coverage": 0.24,
+    "parts": 8,
+    "stroke": 0.089,
+    "strokeMax": 0.132,
+    "gap": 0.144,
+    "gapToStroke": 1.63
+   },
+   "combo": {
+    "markSide": "left",
+    "mark": {
+     "w": 167,
+     "h": 180,
+     "aspect": 0.93,
+     "coverage": 0.27,
+     "parts": 1,
+     "stroke": 0.067,
+     "strokeMax": 0.093,
+     "gap": 0.133,
+     "gapToStroke": 2
+    },
+    "wordH": 103,
+    "letterHMax": 102,
+    "letterHMed": 101,
+    "markToWordBbox": 1.75,
+    "markToTallLetter": 1.76,
+    "markToXish": 1.78,
+    "gapToMarkH": 0.21,
+    "gapToTallLetter": 0.36,
+    "wordStrokeToTall": 0.176,
+    "markStrokeToWordStroke": 0.67,
+    "markCenterOffset": 0.05
+   }
+  },
+  "anthropic": {
+   "segs": 9,
+   "all": {
+    "w": 756,
+    "h": 86,
+    "aspect": 8.79,
+    "coverage": 0.46,
+    "parts": 9,
+    "stroke": 0.209,
+    "strokeMax": 0.329,
+    "gap": 0.163,
+    "gapToStroke": 0.78
+   }
+  },
+  "asana": {
+   "segs": 6,
+   "all": {
+    "w": 774,
+    "h": 153,
+    "aspect": 5.06,
+    "coverage": 0.34,
+    "parts": 8,
+    "stroke": 0.131,
+    "strokeMax": 0.471,
+    "gap": 0.065,
+    "gapToStroke": 0.5
+   },
+   "combo": {
+    "markSide": "left",
+    "mark": {
+     "w": 165,
+     "h": 153,
+     "aspect": 1.08,
+     "coverage": 0.48,
+     "parts": 3,
+     "stroke": 0.471,
+     "strokeMax": 0.471,
+     "gap": 0.039,
+     "gapToStroke": 0.08
+    },
+    "wordH": 107,
+    "letterHMax": 107,
+    "letterHMed": 107,
+    "markToWordBbox": 1.43,
+    "markToTallLetter": 1.43,
+    "markToXish": 1.43,
+    "gapToMarkH": 0.26,
+    "gapToTallLetter": 0.37,
+    "wordStrokeToTall": 0.187,
+    "markStrokeToWordStroke": 3.6,
+    "markCenterOffset": -0.01
+   }
+  },
+  "astro": {
+   "segs": 6,
+   "all": {
+    "w": 685,
+    "h": 169,
+    "aspect": 4.05,
+    "coverage": 0.33,
+    "parts": 7,
+    "stroke": 0.142,
+    "strokeMax": 0.296,
+    "gap": 0.071,
+    "gapToStroke": 0.5
+   },
+   "combo": {
+    "markSide": "left",
+    "mark": {
+     "w": 143,
+     "h": 169,
+     "aspect": 0.85,
+     "coverage": 0.44,
+     "parts": 2,
+     "stroke": 0.201,
+     "strokeMax": 0.296,
+     "gap": 0.047,
+     "gapToStroke": 0.24
+    },
+    "wordH": 104,
+    "letterHMax": 103,
+    "letterHMed": 89,
+    "markToWordBbox": 1.63,
+    "markToTallLetter": 1.64,
+    "markToXish": 1.9,
+    "gapToMarkH": 0.23,
+    "gapToTallLetter": 0.38,
+    "wordStrokeToTall": 0.233,
+    "markStrokeToWordStroke": 1.42,
+    "markCenterOffset": 0.18
+   }
+  },
+  "axiom": {
+   "segs": 6,
+   "all": {
+    "w": 774,
+    "h": 132,
+    "aspect": 5.86,
+    "coverage": 0.45,
+    "parts": 6,
+    "stroke": 0.227,
+    "strokeMax": 0.337,
+    "gap": 0.121,
+    "gapToStroke": 0.53
+   },
+   "combo": {
+    "markSide": "left",
+    "mark": {
+     "w": 152,
+     "h": 132,
+     "aspect": 1.15,
+     "coverage": 0.56,
+     "parts": 1,
+     "stroke": 0.273,
+     "strokeMax": 0.337,
+     "gap": 0.182,
+     "gapToStroke": 0.67
+    },
+    "wordH": 114,
+    "letterHMax": 114,
+    "letterHMed": 108,
+    "markToWordBbox": 1.16,
+    "markToTallLetter": 1.16,
+    "markToXish": 1.22,
+    "gapToMarkH": 0.3,
+    "gapToTallLetter": 0.35,
+    "wordStrokeToTall": 0.263,
+    "markStrokeToWordStroke": 1.2,
+    "markCenterOffset": 0.02
+   }
+  },
+  "better-auth": {
+   "segs": 1,
+   "all": {
+    "w": 720,
+    "h": 180,
+    "aspect": 4,
+    "coverage": 0.92,
+    "parts": 5,
+    "stroke": 0.311,
+    "strokeMax": 0.538,
+    "gap": 0.033,
+    "gapToStroke": 0.11
+   }
+  },
+  "cerebras": {
+   "segs": 5,
+   "all": {
+    "w": 365,
+    "h": 160,
+    "aspect": 2.28,
+    "coverage": 0.27,
+    "parts": 12,
+    "stroke": 0.071,
+    "strokeMax": 0.096,
+    "gap": 0.025,
+    "gapToStroke": 0.35
+   }
+  },
+  "claude-ai": {
+   "segs": 6,
+   "all": {
+    "w": 774,
+    "h": 166,
+    "aspect": 4.66,
+    "coverage": 0.29,
+    "parts": 7,
+    "stroke": 0.096,
+    "strokeMax": 0.285,
+    "gap": 0.072,
+    "gapToStroke": 0.75
+   },
+   "combo": {
+    "markSide": "left",
+    "mark": {
+     "w": 166,
+     "h": 166,
+     "aspect": 1,
+     "coverage": 0.4,
+     "parts": 1,
+     "stroke": 0.075,
+     "strokeMax": 0.285,
+     "gap": 0.034,
+     "gapToStroke": 0.45
+    },
+    "wordH": 137,
+    "letterHMax": 137,
+    "letterHMed": 133,
+    "markToWordBbox": 1.21,
+    "markToTallLetter": 1.21,
+    "markToXish": 1.25,
+    "gapToMarkH": 0.2,
+    "gapToTallLetter": 0.25,
+    "wordStrokeToTall": 0.144,
+    "markStrokeToWordStroke": 0.63,
+    "markCenterOffset": 0
+   }
+  },
+  "clerk": {
+   "segs": 6,
+   "all": {
+    "w": 619,
+    "h": 180,
+    "aspect": 3.44,
+    "coverage": 0.35,
+    "parts": 8,
+    "stroke": 0.137,
+    "strokeMax": 0.311,
+    "gap": 0.133,
+    "gapToStroke": 0.97
+   },
+   "combo": {
+    "markSide": "left",
+    "mark": {
+     "w": 142,
+     "h": 180,
+     "aspect": 0.79,
+     "coverage": 0.52,
+     "parts": 3,
+     "stroke": 0.22,
+     "strokeMax": 0.311,
+     "gap": 0.033,
+     "gapToStroke": 0.15
+    },
+    "wordH": 148,
+    "letterHMax": 146,
+    "letterHMed": 108,
+    "markToWordBbox": 1.22,
+    "markToTallLetter": 1.23,
+    "markToXish": 1.67,
+    "gapToMarkH": 0.21,
+    "gapToTallLetter": 0.26,
+    "wordStrokeToTall": 0.164,
+    "markStrokeToWordStroke": 1.65,
+    "markCenterOffset": -0.01
+   }
+  },
+  "clickup": {
+   "segs": 8,
+   "all": {
+    "w": 720,
+    "h": 178,
+    "aspect": 4.04,
+    "coverage": 0.35,
+    "parts": 10,
+    "stroke": 0.157,
+    "strokeMax": 0.229,
+    "gap": 0.079,
+    "gapToStroke": 0.5
+   },
+   "combo": {
+    "markSide": "left",
+    "mark": {
+     "w": 146,
+     "h": 177,
+     "aspect": 0.82,
+     "coverage": 0.42,
+     "parts": 2,
+     "stroke": 0.203,
+     "strokeMax": 0.231,
+     "gap": 0.136,
+     "gapToStroke": 0.67
+    },
+    "wordH": 151,
+    "letterHMax": 118,
+    "letterHMed": 112,
+    "markToWordBbox": 1.17,
+    "markToTallLetter": 1.5,
+    "markToXish": 1.58,
+    "gapToMarkH": 0.19,
+    "gapToTallLetter": 0.28,
+    "wordStrokeToTall": 0.236,
+    "markStrokeToWordStroke": 1.29,
+    "markCenterOffset": -0.09
+   }
+  },
+  "cohere": {
+   "segs": 7,
+   "all": {
+    "w": 774,
+    "h": 130,
+    "aspect": 5.95,
+    "coverage": 0.38,
+    "parts": 10,
+    "stroke": 0.138,
+    "strokeMax": 0.6,
+    "gap": 0.138,
+    "gapToStroke": 1
+   },
+   "combo": {
+    "markSide": "left",
+    "mark": {
+     "w": 129,
+     "h": 130,
+     "aspect": 0.99,
+     "coverage": 0.78,
+     "parts": 3,
+     "stroke": 0.523,
+     "strokeMax": 0.6,
+     "gap": 0.046,
+     "gapToStroke": 0.09
+    },
+    "wordH": 130,
+    "letterHMax": 128,
+    "letterHMed": 98,
+    "markToWordBbox": 1,
+    "markToTallLetter": 1.02,
+    "markToXish": 1.33,
+    "gapToMarkH": 0.33,
+    "gapToTallLetter": 0.34,
+    "wordStrokeToTall": 0.133,
+    "markStrokeToWordStroke": 4.01,
+    "markCenterOffset": 0
+   }
+  },
+  "coinbase": {
+   "segs": 8,
+   "all": {
+    "w": 180,
+    "h": 32,
+    "aspect": 5.63,
+    "coverage": 0.44,
+    "parts": 8,
+    "stroke": 0.188,
+    "strokeMax": 0.25,
+    "gap": 0.125,
+    "gapToStroke": 0.67
+   }
+  },
+  "conductor": {
+   "segs": 7,
+   "all": {
+    "w": 774,
+    "h": 120,
+    "aspect": 6.45,
+    "coverage": 0.49,
+    "parts": 73,
+    "stroke": 0.15,
+    "strokeMax": 0.167,
+    "gap": 0.117,
+    "gapToStroke": 0.78
+   }
+  },
+  "convex": {
+   "segs": 4,
+   "all": {
+    "w": 621,
+    "h": 106,
+    "aspect": 5.86,
+    "coverage": 0.46,
+    "parts": 10,
+    "stroke": 0.226,
+    "strokeMax": 0.334,
+    "gap": 0.046,
+    "gapToStroke": 0.2
+   },
+   "combo": {
+    "markSide": "left",
+    "mark": {
+     "w": 106,
+     "h": 106,
+     "aspect": 1,
+     "coverage": 0.49,
+     "parts": 3,
+     "stroke": 0.179,
+     "strokeMax": 0.251,
+     "gap": 0.038,
+     "gapToStroke": 0.21
+    },
+    "wordH": 76,
+    "letterHMax": 76,
+    "letterHMed": 75,
+    "markToWordBbox": 1.39,
+    "markToTallLetter": 1.39,
+    "markToXish": 1.41,
+    "gapToMarkH": 0.22,
+    "gapToTallLetter": 0.3,
+    "wordStrokeToTall": 0.335,
+    "markStrokeToWordStroke": 0.75,
+    "markCenterOffset": -0.01
+   }
+  },
+  "cursor": {
+   "segs": 6,
+   "all": {
+    "w": 774,
+    "h": 130,
+    "aspect": 5.95,
+    "coverage": 0.48,
+    "parts": 6,
+    "stroke": 0.185,
+    "strokeMax": 0.246,
+    "gap": 0.231,
+    "gapToStroke": 1.25
+   }
+  },
+  "deepseek": {
+   "segs": 10,
+   "all": {
+    "w": 771,
+    "h": 139,
+    "aspect": 5.55,
+    "coverage": 0.3,
+    "parts": 10,
+    "stroke": 0.101,
+    "strokeMax": 0.421,
+    "gap": 0.101,
+    "gapToStroke": 1
+   },
+   "combo": {
+    "markSide": "left",
+    "mark": {
+     "w": 186,
+     "h": 139,
+     "aspect": 1.34,
+     "coverage": 0.51,
+     "parts": 1,
+     "stroke": 0.136,
+     "strokeMax": 0.421,
+     "gap": 0.096,
+     "gapToStroke": 0.7
+    },
+    "wordH": 103,
+    "letterHMax": 85,
+    "letterHMed": 64,
+    "markToWordBbox": 1.35,
+    "markToTallLetter": 1.64,
+    "markToXish": 2.17,
+    "gapToMarkH": 0.23,
+    "gapToTallLetter": 0.38,
+    "wordStrokeToTall": 0.165,
+    "markStrokeToWordStroke": 1.35,
+    "markCenterOffset": -0.09
+   }
+  },
+  "deno": {
+   "segs": 5,
+   "all": {
+    "w": 596,
+    "h": 165,
+    "aspect": 3.61,
+    "coverage": 0.35,
+    "parts": 6,
+    "stroke": 0.145,
+    "strokeMax": 0.339,
+    "gap": 0.085,
+    "gapToStroke": 0.58
+   },
+   "combo": {
+    "markSide": "left",
+    "mark": {
+     "w": 180,
+     "h": 165,
+     "aspect": 1.09,
+     "coverage": 0.45,
+     "parts": 2,
+     "stroke": 0.206,
+     "strokeMax": 0.339,
+     "gap": 0.048,
+     "gapToStroke": 0.24
+    },
+    "wordH": 92,
+    "letterHMax": 91,
+    "letterHMed": 91,
+    "markToWordBbox": 1.79,
+    "markToTallLetter": 1.81,
+    "markToXish": 1.81,
+    "gapToMarkH": 0.28,
+    "gapToTallLetter": 0.51,
+    "wordStrokeToTall": 0.264,
+    "markStrokeToWordStroke": 1.42,
+    "markCenterOffset": -0.08
+   }
+  },
+  "depot": {
+   "segs": 6,
+   "all": {
+    "w": 773,
+    "h": 170,
+    "aspect": 4.55,
+    "coverage": 0.37,
+    "parts": 9,
+    "stroke": 0.141,
+    "strokeMax": 0.2,
+    "gap": 0.129,
+    "gapToStroke": 0.92
+   },
+   "combo": {
+    "markSide": "left",
+    "mark": {
+     "w": 155,
+     "h": 155,
+     "aspect": 1,
+     "coverage": 0.53,
+     "parts": 4,
+     "stroke": 0.155,
+     "strokeMax": 0.179,
+     "gap": null,
+     "gapToStroke": null
+    },
+    "wordH": 159,
+    "letterHMax": 137,
+    "letterHMed": 133,
+    "markToWordBbox": 0.97,
+    "markToTallLetter": 1.13,
+    "markToXish": 1.17,
+    "gapToMarkH": 0.28,
+    "gapToTallLetter": 0.32,
+    "wordStrokeToTall": 0.175,
+    "markStrokeToWordStroke": 1,
+    "markCenterOffset": -0.08
+   }
+  },
+  "dodo-payments": {
+   "segs": 13,
+   "all": {
+    "w": 769,
+    "h": 126,
+    "aspect": 6.1,
+    "coverage": 0.32,
+    "parts": 13,
+    "stroke": 0.095,
+    "strokeMax": 1,
+    "gap": 0.077,
+    "gapToStroke": 0.8
+   },
+   "combo": {
+    "markSide": "left",
+    "mark": {
+     "w": 126,
+     "h": 126,
+     "aspect": 1,
+     "coverage": 0.79,
+     "parts": 1,
+     "stroke": 1,
+     "strokeMax": 1,
+     "gap": null,
+     "gapToStroke": null
+    },
+    "wordH": 87,
+    "letterHMax": 69,
+    "letterHMed": 50,
+    "markToWordBbox": 1.45,
+    "markToTallLetter": 1.83,
+    "markToXish": 2.52,
+    "gapToMarkH": 0.25,
+    "gapToTallLetter": 0.45,
+    "wordStrokeToTall": 0.174,
+    "markStrokeToWordStroke": 10.5,
+    "markCenterOffset": -0.11
+   }
+  },
+  "dropbox": {
+   "segs": 7,
+   "all": {
+    "w": 598,
+    "h": 118,
+    "aspect": 5.07,
+    "coverage": 0.35,
+    "parts": 9,
+    "stroke": 0.136,
+    "strokeMax": 0.336,
+    "gap": 0.153,
+    "gapToStroke": 1.13
+   },
+   "combo": {
+    "markSide": "left",
+    "mark": {
+     "w": 140,
+     "h": 118,
+     "aspect": 1.19,
+     "coverage": 0.48,
+     "parts": 2,
+     "stroke": 0.329,
+     "strokeMax": 0.336,
+     "gap": 0.058,
+     "gapToStroke": 0.18
+    },
+    "wordH": 100,
+    "letterHMax": 82,
+    "letterHMed": 73,
+    "markToWordBbox": 1.18,
+    "markToTallLetter": 1.44,
+    "markToXish": 1.62,
+    "gapToMarkH": 0.22,
+    "gapToTallLetter": 0.32,
+    "wordStrokeToTall": 0.195,
+    "markStrokeToWordStroke": 2.43,
+    "markCenterOffset": -0.07
+   }
+  },
+  "dub": {
+   "segs": 3,
+   "all": {
+    "w": 346,
+    "h": 143,
+    "aspect": 2.42,
+    "coverage": 0.42,
+    "parts": 3,
+    "stroke": 0.168,
+    "strokeMax": 0.238,
+    "gap": 0.415,
+    "gapToStroke": 2.47
+   }
+  },
+  "firebase": {
+   "segs": 8,
+   "all": {
+    "w": 650,
+    "h": 172,
+    "aspect": 3.78,
+    "coverage": 0.3,
+    "parts": 10,
+    "stroke": 0.081,
+    "strokeMax": 0.691,
+    "gap": 0.07,
+    "gapToStroke": 0.86
+   },
+   "combo": {
+    "markSide": "left",
+    "mark": {
+     "w": 137,
+     "h": 172,
+     "aspect": 0.8,
+     "coverage": 0.66,
+     "parts": 1,
+     "stroke": 0.674,
+     "strokeMax": 0.691,
+     "gap": null,
+     "gapToStroke": null
+    },
+    "wordH": 98,
+    "letterHMax": 96,
+    "letterHMed": 69,
+    "markToWordBbox": 1.76,
+    "markToTallLetter": 1.79,
+    "markToXish": 2.49,
+    "gapToMarkH": 0.28,
+    "gapToTallLetter": 0.5,
+    "wordStrokeToTall": 0.146,
+    "markStrokeToWordStroke": 8.28,
+    "markCenterOffset": -0.06
+   }
+  },
+  "firecrawl": {
+   "segs": 10,
+   "all": {
+    "w": 768,
+    "h": 180,
+    "aspect": 4.27,
+    "coverage": 0.25,
+    "parts": 11,
+    "stroke": 0.089,
+    "strokeMax": 0.325,
+    "gap": 0.078,
+    "gapToStroke": 0.88
+   },
+   "combo": {
+    "markSide": "left",
+    "mark": {
+     "w": 126,
+     "h": 180,
+     "aspect": 0.7,
+     "coverage": 0.5,
+     "parts": 1,
+     "stroke": 0.246,
+     "strokeMax": 0.325,
+     "gap": null,
+     "gapToStroke": null
+    },
+    "wordH": 107,
+    "letterHMax": 106,
+    "letterHMed": 78,
+    "markToWordBbox": 1.68,
+    "markToTallLetter": 1.7,
+    "markToXish": 2.31,
+    "gapToMarkH": 0.33,
+    "gapToTallLetter": 0.56,
+    "wordStrokeToTall": 0.151,
+    "markStrokeToWordStroke": 2.77,
+    "markCenterOffset": -0.1
+   }
+  },
+  "formance": {
+   "segs": 9,
+   "all": {
+    "w": 769,
+    "h": 146,
+    "aspect": 5.27,
+    "coverage": 0.26,
+    "parts": 16,
+    "stroke": 0.096,
+    "strokeMax": 0.165,
+    "gap": 0.077,
+    "gapToStroke": 0.81
+   },
+   "combo": {
+    "markSide": "left",
+    "mark": {
+     "w": 146,
+     "h": 146,
+     "aspect": 1,
+     "coverage": 0.38,
+     "parts": 8,
+     "stroke": 0.082,
+     "strokeMax": 0.165,
+     "gap": 0.055,
+     "gapToStroke": 0.67
+    },
+    "wordH": 95,
+    "letterHMax": 93,
+    "letterHMed": 76,
+    "markToWordBbox": 1.54,
+    "markToTallLetter": 1.57,
+    "markToXish": 1.92,
+    "gapToMarkH": 0.19,
+    "gapToTallLetter": 0.3,
+    "wordStrokeToTall": 0.151,
+    "markStrokeToWordStroke": 0.86,
+    "markCenterOffset": -0.03
+   }
+  },
+  "gemini": {
+   "segs": 5,
+   "all": {
+    "w": 488,
+    "h": 173,
+    "aspect": 2.82,
+    "coverage": 0.24,
+    "parts": 9,
+    "stroke": 0.081,
+    "strokeMax": 0.175,
+    "gap": 0.116,
+    "gapToStroke": 1.43
+   }
+  },
+  "ghostty": {
+   "segs": 7,
+   "all": {
+    "w": 738,
+    "h": 180,
+    "aspect": 4.1,
+    "coverage": 0.23,
+    "parts": 9,
+    "stroke": 0.089,
+    "strokeMax": 0.122,
+    "gap": 0.111,
+    "gapToStroke": 1.25
+   },
+   "combo": {
+    "markSide": "left",
+    "mark": {
+     "w": 151,
+     "h": 180,
+     "aspect": 0.84,
+     "coverage": 0.36,
+     "parts": 3,
+     "stroke": 0.094,
+     "strokeMax": 0.101,
+     "gap": 0.233,
+     "gapToStroke": 2.48
+    },
+    "wordH": 135,
+    "letterHMax": 109,
+    "letterHMed": 104,
+    "markToWordBbox": 1.33,
+    "markToTallLetter": 1.65,
+    "markToXish": 1.73,
+    "gapToMarkH": 0.39,
+    "gapToTallLetter": 0.65,
+    "wordStrokeToTall": 0.14,
+    "markStrokeToWordStroke": 1.11,
+    "markCenterOffset": -0.11
+   }
+  },
+  "github": {
+   "segs": 6,
+   "all": {
+    "w": 664,
+    "h": 180,
+    "aspect": 3.69,
+    "coverage": 0.54,
+    "parts": 7,
+    "stroke": 0.211,
+    "strokeMax": 0.28,
+    "gap": 0.144,
+    "gapToStroke": 0.68
+   }
+  },
+  "glide": {
+   "segs": 5,
+   "all": {
+    "w": 573,
+    "h": 177,
+    "aspect": 3.24,
+    "coverage": 0.49,
+    "parts": 6,
+    "stroke": 0.192,
+    "strokeMax": 0.26,
+    "gap": 0.113,
+    "gapToStroke": 0.59
+   }
+  },
+  "granola": {
+   "segs": 8,
+   "all": {
+    "w": 774,
+    "h": 168,
+    "aspect": 4.61,
+    "coverage": 0.42,
+    "parts": 8,
+    "stroke": 0.148,
+    "strokeMax": 0.226,
+    "gap": 0.125,
+    "gapToStroke": 0.84
+   },
+   "combo": {
+    "markSide": "left",
+    "mark": {
+     "w": 160,
+     "h": 168,
+     "aspect": 0.95,
+     "coverage": 0.49,
+     "parts": 1,
+     "stroke": 0.131,
+     "strokeMax": 0.226,
+     "gap": 0.13,
+     "gapToStroke": 0.99
+    },
+    "wordH": 168,
+    "letterHMax": 135,
+    "letterHMed": 104,
+    "markToWordBbox": 1,
+    "markToTallLetter": 1.24,
+    "markToXish": 1.62,
+    "gapToMarkH": 0.15,
+    "gapToTallLetter": 0.19,
+    "wordStrokeToTall": 0.193,
+    "markStrokeToWordStroke": 0.85,
+    "markCenterOffset": 0
+   }
+  },
+  "groq": {
+   "segs": 4,
+   "all": {
+    "w": 528,
+    "h": 180,
+    "aspect": 2.93,
+    "coverage": 0.32,
+    "parts": 6,
+    "stroke": 0.133,
+    "strokeMax": 0.145,
+    "gap": 0.1,
+    "gapToStroke": 0.75
+   }
+  },
+  "kimi": {
+   "segs": 4,
+   "all": {
+    "w": 385,
+    "h": 150,
+    "aspect": 2.57,
+    "coverage": 0.56,
+    "parts": 4,
+    "stroke": 0.2,
+    "strokeMax": 0.321,
+    "gap": 0.067,
+    "gapToStroke": 0.33
+   }
+  },
+  "langchain": {
+   "segs": 10,
+   "all": {
+    "w": 769,
+    "h": 142,
+    "aspect": 5.42,
+    "coverage": 0.31,
+    "parts": 15,
+    "stroke": 0.127,
+    "strokeMax": 0.279,
+    "gap": 0.07,
+    "gapToStroke": 0.56
+   },
+   "combo": {
+    "markSide": "left",
+    "mark": {
+     "w": 125,
+     "h": 126,
+     "aspect": 0.99,
+     "coverage": 0.47,
+     "parts": 4,
+     "stroke": 0.27,
+     "strokeMax": 0.314,
+     "gap": 0.048,
+     "gapToStroke": 0.18
+    },
+    "wordH": 121,
+    "letterHMax": 98,
+    "letterHMed": 89,
+    "markToWordBbox": 1.04,
+    "markToTallLetter": 1.29,
+    "markToXish": 1.42,
+    "gapToMarkH": 0.21,
+    "gapToTallLetter": 0.28,
+    "wordStrokeToTall": 0.184,
+    "markStrokeToWordStroke": 1.89,
+    "markCenterOffset": -0.15
+   }
+  },
+  "manus": {
+   "segs": 6,
+   "all": {
+    "w": 610,
+    "h": 166,
+    "aspect": 3.67,
+    "coverage": 0.22,
+    "parts": 9,
+    "stroke": 0.085,
+    "strokeMax": 0.189,
+    "gap": 0.06,
+    "gapToStroke": 0.71
+   },
+   "combo": {
+    "markSide": "left",
+    "mark": {
+     "w": 128,
+     "h": 166,
+     "aspect": 0.77,
+     "coverage": 0.38,
+     "parts": 4,
+     "stroke": 0.084,
+     "strokeMax": 0.189,
+     "gap": 0.046,
+     "gapToStroke": 0.55
+    },
+    "wordH": 68,
+    "letterHMax": 68,
+    "letterHMed": 67,
+    "markToWordBbox": 2.44,
+    "markToTallLetter": 2.44,
+    "markToXish": 2.48,
+    "gapToMarkH": 0.31,
+    "gapToTallLetter": 0.76,
+    "wordStrokeToTall": 0.265,
+    "markStrokeToWordStroke": 0.77,
+    "markCenterOffset": -0.01
+   }
+  },
+  "mastra": {
+   "segs": 7,
+   "all": {
+    "w": 774,
+    "h": 122,
+    "aspect": 6.34,
+    "coverage": 0.35,
+    "parts": 8,
+    "stroke": 0.148,
+    "strokeMax": 0.44,
+    "gap": 0.131,
+    "gapToStroke": 0.89
+   },
+   "combo": {
+    "markSide": "left",
+    "mark": {
+     "w": 194,
+     "h": 122,
+     "aspect": 1.59,
+     "coverage": 0.55,
+     "parts": 2,
+     "stroke": 0.23,
+     "strokeMax": 0.44,
+     "gap": 0.033,
+     "gapToStroke": 0.14
+    },
+    "wordH": 97,
+    "letterHMax": 97,
+    "letterHMed": 77,
+    "markToWordBbox": 1.26,
+    "markToTallLetter": 1.26,
+    "markToXish": 1.58,
+    "gapToMarkH": 0.56,
+    "gapToTallLetter": 0.7,
+    "wordStrokeToTall": 0.186,
+    "markStrokeToWordStroke": 1.56,
+    "markCenterOffset": 0.11
+   }
+  },
+  "mintlify": {
+   "segs": 8,
+   "all": {
+    "w": 771,
+    "h": 172,
+    "aspect": 4.48,
+    "coverage": 0.35,
+    "parts": 10,
+    "stroke": 0.14,
+    "strokeMax": 0.349,
+    "gap": 0.081,
+    "gapToStroke": 0.58
+   },
+   "combo": {
+    "markSide": "left",
+    "mark": {
+     "w": 137,
+     "h": 136,
+     "aspect": 1.01,
+     "coverage": 0.53,
+     "parts": 1,
+     "stroke": 0.235,
+     "strokeMax": 0.441,
+     "gap": 0.171,
+     "gapToStroke": 0.73
+    },
+    "wordH": 172,
+    "letterHMax": 172,
+    "letterHMed": 134,
+    "markToWordBbox": 0.79,
+    "markToTallLetter": 0.79,
+    "markToXish": 1.01,
+    "gapToMarkH": 0.29,
+    "gapToTallLetter": 0.23,
+    "wordStrokeToTall": 0.14,
+    "markStrokeToWordStroke": 1.33,
+    "markCenterOffset": 0
+   }
+  },
+  "mistral-ai": {
+   "segs": 8,
+   "all": {
+    "w": 562,
+    "h": 180,
+    "aspect": 3.12,
+    "coverage": 0.35,
+    "parts": 11,
+    "stroke": 0.067,
+    "strokeMax": 0.438,
+    "gap": 0.056,
+    "gapToStroke": 0.83
+   },
+   "combo": {
+    "markSide": "left",
+    "mark": {
+     "w": 186,
+     "h": 169,
+     "aspect": 1.1,
+     "coverage": 0.77,
+     "parts": 1,
+     "stroke": 0.26,
+     "strokeMax": 0.466,
+     "gap": null,
+     "gapToStroke": null
+    },
+    "wordH": 150,
+    "letterHMax": 150,
+    "letterHMed": 52,
+    "markToWordBbox": 1.13,
+    "markToTallLetter": 1.13,
+    "markToXish": 3.25,
+    "gapToMarkH": 0.29,
+    "gapToTallLetter": 0.33,
+    "wordStrokeToTall": 0.08,
+    "markStrokeToWordStroke": 3.66,
+    "markCenterOffset": -0.14
+   }
+  },
+  "n8n": {
+   "segs": 4,
+   "all": {
+    "w": 635,
+    "h": 180,
+    "aspect": 3.53,
+    "coverage": 0.24,
+    "parts": 4,
+    "stroke": 0.105,
+    "strokeMax": 0.139,
+    "gap": 0.2,
+    "gapToStroke": 1.89
+   },
+   "combo": {
+    "markSide": "left",
+    "mark": {
+     "w": 351,
+     "h": 180,
+     "aspect": 1.95,
+     "coverage": 0.27,
+     "parts": 1,
+     "stroke": 0.105,
+     "strokeMax": 0.139,
+     "gap": 0.156,
+     "gapToStroke": 1.48
+    },
+    "wordH": 98,
+    "letterHMax": 98,
+    "letterHMed": 75,
+    "markToWordBbox": 1.84,
+    "markToTallLetter": 1.84,
+    "markToXish": 2.4,
+    "gapToMarkH": 0.21,
+    "gapToTallLetter": 0.38,
+    "wordStrokeToTall": 0.204,
+    "markStrokeToWordStroke": 0.94,
+    "markCenterOffset": 0.02
+   }
+  },
+  "neon": {
+   "segs": 5,
+   "all": {
+    "w": 625,
+    "h": 176,
+    "aspect": 3.55,
+    "coverage": 0.33,
+    "parts": 5,
+    "stroke": 0.125,
+    "strokeMax": 0.187,
+    "gap": 0.114,
+    "gapToStroke": 0.91
+   },
+   "combo": {
+    "markSide": "left",
+    "mark": {
+     "w": 174,
+     "h": 176,
+     "aspect": 0.99,
+     "coverage": 0.49,
+     "parts": 1,
+     "stroke": 0.125,
+     "strokeMax": 0.182,
+     "gap": 0.295,
+     "gapToStroke": 2.36
+    },
+    "wordH": 107,
+    "letterHMax": 107,
+    "letterHMed": 106,
+    "markToWordBbox": 1.64,
+    "markToTallLetter": 1.64,
+    "markToXish": 1.66,
+    "gapToMarkH": 0.3,
+    "gapToTallLetter": 0.49,
+    "wordStrokeToTall": 0.206,
+    "markStrokeToWordStroke": 1,
+    "markCenterOffset": -0.01
+   }
+  },
+  "next-js": {
+   "segs": 5,
+   "all": {
+    "w": 774,
+    "h": 157,
+    "aspect": 4.93,
+    "coverage": 0.34,
+    "parts": 7,
+    "stroke": 0.166,
+    "strokeMax": 0.246,
+    "gap": 0.229,
+    "gapToStroke": 1.38
+   }
+  },
+  "nvidia": {
+   "segs": 8,
+   "all": {
+    "w": 767,
+    "h": 142,
+    "aspect": 5.4,
+    "coverage": 0.42,
+    "parts": 8,
+    "stroke": 0.169,
+    "strokeMax": 0.452,
+    "gap": 0.094,
+    "gapToStroke": 0.55
+   },
+   "combo": {
+    "markSide": "left",
+    "mark": {
+     "w": 214,
+     "h": 142,
+     "aspect": 1.51,
+     "coverage": 0.59,
+     "parts": 1,
+     "stroke": 0.114,
+     "strokeMax": 0.452,
+     "gap": 0.094,
+     "gapToStroke": 0.82
+    },
+    "wordH": 96,
+    "letterHMax": 94,
+    "letterHMed": 94,
+    "markToWordBbox": 1.48,
+    "markToTallLetter": 1.51,
+    "markToXish": 1.51,
+    "gapToMarkH": 0.25,
+    "gapToTallLetter": 0.37,
+    "wordStrokeToTall": 0.277,
+    "markStrokeToWordStroke": 0.62,
+    "markCenterOffset": -0.04
+   }
+  },
+  "openai": {
+   "segs": 6,
+   "all": {
+    "w": 282,
+    "h": 76,
+    "aspect": 3.71,
+    "coverage": 0.37,
+    "parts": 6,
+    "stroke": 0.158,
+    "strokeMax": 0.221,
+    "gap": 0.079,
+    "gapToStroke": 0.5
+   }
+  },
+  "paper": {
+   "segs": 5,
+   "all": {
+    "w": 493,
+    "h": 135,
+    "aspect": 3.65,
+    "coverage": 0.33,
+    "parts": 7,
+    "stroke": 0.119,
+    "strokeMax": 0.326,
+    "gap": 0.133,
+    "gapToStroke": 1.13
+   },
+   "combo": {
+    "markSide": "left",
+    "mark": {
+     "w": 116,
+     "h": 116,
+     "aspect": 1,
+     "coverage": 0.6,
+     "parts": 2,
+     "stroke": 0.19,
+     "strokeMax": 0.379,
+     "gap": 0.241,
+     "gapToStroke": 1.27
+    },
+    "wordH": 122,
+    "letterHMax": 96,
+    "letterHMed": 96,
+    "markToWordBbox": 0.95,
+    "markToTallLetter": 1.21,
+    "markToXish": 1.21,
+    "gapToMarkH": 0.36,
+    "gapToTallLetter": 0.44,
+    "wordStrokeToTall": 0.167,
+    "markStrokeToWordStroke": 1.38,
+    "markCenterOffset": -0.13
+   }
+  },
+  "perplexity-ai": {
+   "segs": 10,
+   "all": {
+    "w": 658,
+    "h": 142,
+    "aspect": 4.63,
+    "coverage": 0.24,
+    "parts": 12,
+    "stroke": 0.07,
+    "strokeMax": 0.178,
+    "gap": 0.085,
+    "gapToStroke": 1.2
+   },
+   "combo": {
+    "markSide": "left",
+    "mark": {
+     "w": 123,
+     "h": 142,
+     "aspect": 0.87,
+     "coverage": 0.4,
+     "parts": 1,
+     "stroke": 0.06,
+     "strokeMax": 0.178,
+     "gap": 0.07,
+     "gapToStroke": 1.18
+    },
+    "wordH": 104,
+    "letterHMax": 83,
+    "letterHMed": 80,
+    "markToWordBbox": 1.37,
+    "markToTallLetter": 1.71,
+    "markToXish": 1.77,
+    "gapToMarkH": 0.24,
+    "gapToTallLetter": 0.41,
+    "wordStrokeToTall": 0.12,
+    "markStrokeToWordStroke": 0.85,
+    "markCenterOffset": 0
+   }
+  },
+  "posthog": {
+   "segs": 9,
+   "all": {
+    "w": 774,
+    "h": 136,
+    "aspect": 5.69,
+    "coverage": 0.38,
+    "parts": 13,
+    "stroke": 0.147,
+    "strokeMax": 0.235,
+    "gap": 0.056,
+    "gapToStroke": 0.38
+   },
+   "combo": {
+    "markSide": "left",
+    "mark": {
+     "w": 237,
+     "h": 132,
+     "aspect": 1.8,
+     "coverage": 0.56,
+     "parts": 6,
+     "stroke": 0.214,
+     "strokeMax": 0.242,
+     "gap": 0.052,
+     "gapToStroke": 0.24
+    },
+    "wordH": 115,
+    "letterHMax": 91,
+    "letterHMed": 85,
+    "markToWordBbox": 1.15,
+    "markToTallLetter": 1.45,
+    "markToXish": 1.55,
+    "gapToMarkH": 0.44,
+    "gapToTallLetter": 0.64,
+    "wordStrokeToTall": 0.208,
+    "markStrokeToWordStroke": 1.49,
+    "markCenterOffset": -0.11
+   }
+  },
+  "qdrant": {
+   "segs": 7,
+   "all": {
+    "w": 676,
+    "h": 180,
+    "aspect": 3.76,
+    "coverage": 0.32,
+    "parts": 8,
+    "stroke": 0.111,
+    "strokeMax": 0.333,
+    "gap": 0.11,
+    "gapToStroke": 0.99
+   },
+   "combo": {
+    "markSide": "left",
+    "mark": {
+     "w": 156,
+     "h": 180,
+     "aspect": 0.87,
+     "coverage": 0.58,
+     "parts": 2,
+     "stroke": 0.167,
+     "strokeMax": 0.333,
+     "gap": 0.11,
+     "gapToStroke": 0.66
+    },
+    "wordH": 108,
+    "letterHMax": 108,
+    "letterHMed": 103,
+    "markToWordBbox": 1.67,
+    "markToTallLetter": 1.67,
+    "markToXish": 1.75,
+    "gapToMarkH": 0.24,
+    "gapToTallLetter": 0.41,
+    "wordStrokeToTall": 0.183,
+    "markStrokeToWordStroke": 1.52,
+    "markCenterOffset": 0
+   }
+  },
+  "raycast": {
+   "segs": 8,
+   "all": {
+    "w": 694,
+    "h": 180,
+    "aspect": 3.86,
+    "coverage": 0.21,
+    "parts": 12,
+    "stroke": 0.089,
+    "strokeMax": 0.157,
+    "gap": 0.067,
+    "gapToStroke": 0.75
+   },
+   "combo": {
+    "markSide": "left",
+    "mark": {
+     "w": 179,
+     "h": 180,
+     "aspect": 0.99,
+     "coverage": 0.24,
+     "parts": 5,
+     "stroke": 0.079,
+     "strokeMax": 0.157,
+     "gap": 0.089,
+     "gapToStroke": 1.13
+    },
+    "wordH": 116,
+    "letterHMax": 95,
+    "letterHMed": 71,
+    "markToWordBbox": 1.55,
+    "markToTallLetter": 1.89,
+    "markToXish": 2.54,
+    "gapToMarkH": 0.3,
+    "gapToTallLetter": 0.57,
+    "wordStrokeToTall": 0.168,
+    "markStrokeToWordStroke": 0.89,
+    "markCenterOffset": -0.11
+   }
+  },
+  "render": {
+   "segs": 7,
+   "all": {
+    "w": 316,
+    "h": 60,
+    "aspect": 5.27,
+    "coverage": 0.34,
+    "parts": 7,
+    "stroke": 0.133,
+    "strokeMax": 0.5,
+    "gap": 0.133,
+    "gapToStroke": 1
+   },
+   "combo": {
+    "markSide": "left",
+    "mark": {
+     "w": 59,
+     "h": 59,
+     "aspect": 1,
+     "coverage": 0.5,
+     "parts": 1,
+     "stroke": 0.274,
+     "strokeMax": 0.508,
+     "gap": null,
+     "gapToStroke": null
+    },
+    "wordH": 52,
+    "letterHMax": 52,
+    "letterHMed": 37,
+    "markToWordBbox": 1.13,
+    "markToTallLetter": 1.13,
+    "markToXish": 1.59,
+    "gapToMarkH": 0.51,
+    "gapToTallLetter": 0.58,
+    "wordStrokeToTall": 0.154,
+    "markStrokeToWordStroke": 2.02,
+    "markCenterOffset": -0.09
+   }
+  },
+  "replicate": {
+   "segs": 9,
+   "all": {
+    "w": 773,
+    "h": 178,
+    "aspect": 4.34,
+    "coverage": 0.28,
+    "parts": 12,
+    "stroke": 0.101,
+    "strokeMax": 0.154,
+    "gap": 0.079,
+    "gapToStroke": 0.78
+   }
+  },
+  "replit": {
+   "segs": 6,
+   "all": {
+    "w": 768,
+    "h": 180,
+    "aspect": 4.27,
+    "coverage": 0.29,
+    "parts": 8,
+    "stroke": 0.122,
+    "strokeMax": 0.356,
+    "gap": 0.089,
+    "gapToStroke": 0.73
+   },
+   "combo": {
+    "markSide": "left",
+    "mark": {
+     "w": 153,
+     "h": 180,
+     "aspect": 0.85,
+     "coverage": 0.49,
+     "parts": 1,
+     "stroke": 0.244,
+     "strokeMax": 0.356,
+     "gap": null,
+     "gapToStroke": null
+    },
+    "wordH": 150,
+    "letterHMax": 119,
+    "letterHMed": 117,
+    "markToWordBbox": 1.2,
+    "markToTallLetter": 1.51,
+    "markToXish": 1.54,
+    "gapToMarkH": 0.4,
+    "gapToTallLetter": 0.61,
+    "wordStrokeToTall": 0.166,
+    "markStrokeToWordStroke": 2.22,
+    "markCenterOffset": 0
+   }
+  },
+  "resend": {
+   "segs": 5,
+   "all": {
+    "w": 774,
+    "h": 164,
+    "aspect": 4.72,
+    "coverage": 0.45,
+    "parts": 6,
+    "stroke": 0.172,
+    "strokeMax": 0.305,
+    "gap": 0.086,
+    "gapToStroke": 0.5
+   }
+  },
+  "sanity": {
+   "segs": 5,
+   "all": {
+    "w": 508,
+    "h": 180,
+    "aspect": 2.82,
+    "coverage": 0.34,
+    "parts": 6,
+    "stroke": 0.122,
+    "strokeMax": 0.189,
+    "gap": 0.056,
+    "gapToStroke": 0.45
+   }
+  },
+  "shopify": {
+   "segs": 3,
+   "all": {
+    "w": 629,
+    "h": 179,
+    "aspect": 3.51,
+    "coverage": 0.36,
+    "parts": 9,
+    "stroke": 0.123,
+    "strokeMax": 0.436,
+    "gap": 0.045,
+    "gapToStroke": 0.36
+   }
+  },
+  "slack": {
+   "segs": 7,
+   "all": {
+    "w": 712,
+    "h": 180,
+    "aspect": 3.96,
+    "coverage": 0.39,
+    "parts": 13,
+    "stroke": 0.178,
+    "strokeMax": 0.211,
+    "gap": 0.044,
+    "gapToStroke": 0.25
+   },
+   "combo": {
+    "markSide": "left",
+    "mark": {
+     "w": 181,
+     "h": 180,
+     "aspect": 1.01,
+     "coverage": 0.51,
+     "parts": 8,
+     "stroke": 0.211,
+     "strokeMax": 0.211,
+     "gap": 0.022,
+     "gapToStroke": 0.11
+    },
+    "wordH": 153,
+    "letterHMax": 151,
+    "letterHMed": 108,
+    "markToWordBbox": 1.18,
+    "markToTallLetter": 1.19,
+    "markToXish": 1.67,
+    "gapToMarkH": 0.27,
+    "gapToTallLetter": 0.32,
+    "wordStrokeToTall": 0.201,
+    "markStrokeToWordStroke": 1.25,
+    "markCenterOffset": 0.08
+   }
+  },
+  "spotify": {
+   "segs": 7,
+   "all": {
+    "w": 594,
+    "h": 180,
+    "aspect": 3.3,
+    "coverage": 0.34,
+    "parts": 9,
+    "stroke": 0.089,
+    "strokeMax": 0.344,
+    "gap": 0.078,
+    "gapToStroke": 0.88
+   },
+   "combo": {
+    "markSide": "left",
+    "mark": {
+     "w": 180,
+     "h": 180,
+     "aspect": 1,
+     "coverage": 0.64,
+     "parts": 1,
+     "stroke": 0.154,
+     "strokeMax": 0.344,
+     "gap": 0.078,
+     "gapToStroke": 0.51
+    },
+    "wordH": 109,
+    "letterHMax": 105,
+    "letterHMed": 85,
+    "markToWordBbox": 1.65,
+    "markToTallLetter": 1.71,
+    "markToXish": 2.12,
+    "gapToMarkH": 0.16,
+    "gapToTallLetter": 0.27,
+    "wordStrokeToTall": 0.152,
+    "markStrokeToWordStroke": 1.73,
+    "markCenterOffset": -0.05
+   }
+  },
+  "stripe": {
+   "segs": 6,
+   "all": {
+    "w": 430,
+    "h": 179,
+    "aspect": 2.4,
+    "coverage": 0.43,
+    "parts": 7,
+    "stroke": 0.168,
+    "strokeMax": 0.201,
+    "gap": 0.089,
+    "gapToStroke": 0.53
+   }
+  },
+  "suno": {
+   "segs": 5,
+   "all": {
+    "w": 743,
+    "h": 180,
+    "aspect": 4.13,
+    "coverage": 0.39,
+    "parts": 5,
+    "stroke": 0.167,
+    "strokeMax": 0.498,
+    "gap": 0.144,
+    "gapToStroke": 0.87
+   },
+   "combo": {
+    "markSide": "left",
+    "mark": {
+     "w": 181,
+     "h": 180,
+     "aspect": 1.01,
+     "coverage": 0.49,
+     "parts": 1,
+     "stroke": 0.289,
+     "strokeMax": 0.498,
+     "gap": null,
+     "gapToStroke": null
+    },
+    "wordH": 169,
+    "letterHMax": 169,
+    "letterHMed": 123,
+    "markToWordBbox": 1.07,
+    "markToTallLetter": 1.07,
+    "markToXish": 1.46,
+    "gapToMarkH": 0.28,
+    "gapToTallLetter": 0.3,
+    "wordStrokeToTall": 0.178,
+    "markStrokeToWordStroke": 1.73,
+    "markCenterOffset": 0
+   }
+  },
+  "supabase": {
+   "segs": 9,
+   "all": {
+    "w": 773,
+    "h": 150,
+    "aspect": 5.15,
+    "coverage": 0.28,
+    "parts": 9,
+    "stroke": 0.12,
+    "strokeMax": 0.404,
+    "gap": 0.067,
+    "gapToStroke": 0.56
+   },
+   "combo": {
+    "markSide": "left",
+    "mark": {
+     "w": 145,
+     "h": 150,
+     "aspect": 0.97,
+     "coverage": 0.41,
+     "parts": 1,
+     "stroke": 0.267,
+     "strokeMax": 0.404,
+     "gap": null,
+     "gapToStroke": null
+    },
+    "wordH": 123,
+    "letterHMax": 99,
+    "letterHMed": 70,
+    "markToWordBbox": 1.22,
+    "markToTallLetter": 1.52,
+    "markToXish": 2.14,
+    "gapToMarkH": 0.38,
+    "gapToTallLetter": 0.58,
+    "wordStrokeToTall": 0.178,
+    "markStrokeToWordStroke": 2.27,
+    "markCenterOffset": 0.03
+   }
+  },
+  "tailwind-css": {
+   "segs": 12,
+   "all": {
+    "w": 771,
+    "h": 96,
+    "aspect": 8.03,
+    "coverage": 0.31,
+    "parts": 15,
+    "stroke": 0.139,
+    "strokeMax": 0.353,
+    "gap": 0.104,
+    "gapToStroke": 0.75
+   },
+   "combo": {
+    "markSide": "left",
+    "mark": {
+     "w": 158,
+     "h": 96,
+     "aspect": 1.65,
+     "coverage": 0.34,
+     "parts": 2,
+     "stroke": 0.208,
+     "strokeMax": 0.353,
+     "gap": 0.104,
+     "gapToStroke": 0.5
+    },
+    "wordH": 84,
+    "letterHMax": 82,
+    "letterHMed": 60,
+    "markToWordBbox": 1.14,
+    "markToTallLetter": 1.17,
+    "markToXish": 1.6,
+    "gapToMarkH": 0.46,
+    "gapToTallLetter": 0.54,
+    "wordStrokeToTall": 0.162,
+    "markStrokeToWordStroke": 1.5,
+    "markCenterOffset": 0.04
+   }
+  },
+  "tanstack": {
+   "segs": 5,
+   "all": {
+    "w": 774,
+    "h": 122,
+    "aspect": 6.34,
+    "coverage": 0.53,
+    "parts": 9,
+    "stroke": 0.23,
+    "strokeMax": 0.475,
+    "gap": 0.049,
+    "gapToStroke": 0.21
+   },
+   "combo": {
+    "markSide": "left",
+    "mark": {
+     "w": 92,
+     "h": 122,
+     "aspect": 0.75,
+     "coverage": 0.67,
+     "parts": 1,
+     "stroke": 0.139,
+     "strokeMax": 0.246,
+     "gap": 0.056,
+     "gapToStroke": 0.4
+    },
+    "wordH": 92,
+    "letterHMax": 92,
+    "letterHMed": 88,
+    "markToWordBbox": 1.33,
+    "markToTallLetter": 1.33,
+    "markToXish": 1.39,
+    "gapToMarkH": 0.22,
+    "gapToTallLetter": 0.29,
+    "wordStrokeToTall": 0.348,
+    "markStrokeToWordStroke": 0.53,
+    "markCenterOffset": 0
+   }
+  },
+  "todoist": {
+   "segs": 7,
+   "all": {
+    "w": 166,
+    "h": 42,
+    "aspect": 3.95,
+    "coverage": 0.39,
+    "parts": 8,
+    "stroke": 0.095,
+    "strokeMax": 0.476,
+    "gap": 0.095,
+    "gapToStroke": 1
+   },
+   "combo": {
+    "markSide": "left",
+    "mark": {
+     "w": 42,
+     "h": 42,
+     "aspect": 1,
+     "coverage": 0.85,
+     "parts": 1,
+     "stroke": 0.238,
+     "strokeMax": 0.476,
+     "gap": 0.095,
+     "gapToStroke": 0.4
+    },
+    "wordH": 27,
+    "letterHMax": 26,
+    "letterHMed": 24,
+    "markToWordBbox": 1.56,
+    "markToTallLetter": 1.62,
+    "markToXish": 1.75,
+    "gapToMarkH": 0.31,
+    "gapToTallLetter": 0.5,
+    "wordStrokeToTall": 0.154,
+    "markStrokeToWordStroke": 2.5,
+    "markCenterOffset": -0.02
+   }
+  },
+  "trello": {
+   "segs": 7,
+   "all": {
+    "w": 772,
+    "h": 157,
+    "aspect": 4.92,
+    "coverage": 0.47,
+    "parts": 7,
+    "stroke": 0.204,
+    "strokeMax": 0.471,
+    "gap": 0.229,
+    "gapToStroke": 1.13
+   },
+   "combo": {
+    "markSide": "left",
+    "mark": {
+     "w": 156,
+     "h": 155,
+     "aspect": 1.01,
+     "coverage": 0.77,
+     "parts": 1,
+     "stroke": 0.194,
+     "strokeMax": 0.477,
+     "gap": 0.245,
+     "gapToStroke": 1.27
+    },
+    "wordH": 157,
+    "letterHMax": 156,
+    "letterHMed": 144,
+    "markToWordBbox": 0.99,
+    "markToTallLetter": 0.99,
+    "markToXish": 1.08,
+    "gapToMarkH": 0.39,
+    "gapToTallLetter": 0.39,
+    "wordStrokeToTall": 0.205,
+    "markStrokeToWordStroke": 0.94,
+    "markCenterOffset": -0.01
+   }
+  },
+  "trpc": {
+   "segs": 5,
+   "all": {
+    "w": 600,
+    "h": 180,
+    "aspect": 3.33,
+    "coverage": 0.49,
+    "parts": 15,
+    "stroke": 0.167,
+    "strokeMax": 0.321,
+    "gap": 0.038,
+    "gapToStroke": 0.23
+   },
+   "combo": {
+    "markSide": "left",
+    "mark": {
+     "w": 181,
+     "h": 180,
+     "aspect": 1.01,
+     "coverage": 0.77,
+     "parts": 11,
+     "stroke": 0.156,
+     "strokeMax": 0.321,
+     "gap": 0.038,
+     "gapToStroke": 0.24
+    },
+    "wordH": 127,
+    "letterHMax": 127,
+    "letterHMed": 123,
+    "markToWordBbox": 1.42,
+    "markToTallLetter": 1.42,
+    "markToXish": 1.46,
+    "gapToMarkH": 0.17,
+    "gapToTallLetter": 0.24,
+    "wordStrokeToTall": 0.236,
+    "markStrokeToWordStroke": 0.94,
+    "markCenterOffset": 0
+   }
+  },
+  "turso": {
+   "segs": 5,
+   "all": {
+    "w": 774,
+    "h": 178,
+    "aspect": 4.35,
+    "coverage": 0.39,
+    "parts": 6,
+    "stroke": 0.169,
+    "strokeMax": 0.348,
+    "gap": 0.079,
+    "gapToStroke": 0.47
+   },
+   "combo": {
+    "markSide": "left",
+    "mark": {
+     "w": 210,
+     "h": 178,
+     "aspect": 1.18,
+     "coverage": 0.45,
+     "parts": 1,
+     "stroke": 0.165,
+     "strokeMax": 0.348,
+     "gap": 0.09,
+     "gapToStroke": 0.54
+    },
+    "wordH": 126,
+    "letterHMax": 126,
+    "letterHMed": 126,
+    "markToWordBbox": 1.41,
+    "markToTallLetter": 1.41,
+    "markToXish": 1.41,
+    "gapToMarkH": 0.23,
+    "gapToTallLetter": 0.33,
+    "wordStrokeToTall": 0.238,
+    "markStrokeToWordStroke": 0.98,
+    "markCenterOffset": 0
+   }
+  },
+  "vercel": {
+   "segs": 5,
+   "all": {
+    "w": 769,
+    "h": 153,
+    "aspect": 5.03,
+    "coverage": 0.42,
+    "parts": 7,
+    "stroke": 0.161,
+    "strokeMax": 0.692,
+    "gap": 0.078,
+    "gapToStroke": 0.49
+   }
+  },
+  "webflow": {
+   "segs": 6,
+   "all": {
+    "w": 774,
+    "h": 130,
+    "aspect": 5.95,
+    "coverage": 0.46,
+    "parts": 8,
+    "stroke": 0.146,
+    "strokeMax": 0.516,
+    "gap": 0.062,
+    "gapToStroke": 0.42
+   },
+   "combo": {
+    "markSide": "left",
+    "mark": {
+     "w": 206,
+     "h": 130,
+     "aspect": 1.58,
+     "coverage": 0.73,
+     "parts": 1,
+     "stroke": 0.338,
+     "strokeMax": 0.516,
+     "gap": 0.059,
+     "gapToStroke": 0.17
+    },
+    "wordH": 104,
+    "letterHMax": 104,
+    "letterHMed": 103,
+    "markToWordBbox": 1.25,
+    "markToTallLetter": 1.25,
+    "markToXish": 1.26,
+    "gapToMarkH": 0.22,
+    "gapToTallLetter": 0.27,
+    "wordStrokeToTall": 0.181,
+    "markStrokeToWordStroke": 2.33,
+    "markCenterOffset": 0
+   }
+  },
+  "windsurf": {
+   "segs": 8,
+   "all": {
+    "w": 449,
+    "h": 61,
+    "aspect": 7.36,
+    "coverage": 0.34,
+    "parts": 9,
+    "stroke": 0.131,
+    "strokeMax": 0.357,
+    "gap": 0.197,
+    "gapToStroke": 1.5
+   },
+   "combo": {
+    "markSide": "left",
+    "mark": {
+     "w": 102,
+     "h": 60,
+     "aspect": 1.7,
+     "coverage": 0.41,
+     "parts": 1,
+     "stroke": 0.236,
+     "strokeMax": 0.363,
+     "gap": null,
+     "gapToStroke": null
+    },
+    "wordH": 61,
+    "letterHMax": 61,
+    "letterHMed": 60,
+    "markToWordBbox": 0.98,
+    "markToTallLetter": 0.98,
+    "markToXish": 1,
+    "gapToMarkH": 0.43,
+    "gapToTallLetter": 0.43,
+    "wordStrokeToTall": 0.131,
+    "markStrokeToWordStroke": 1.77,
+    "markCenterOffset": -0.01
+   }
+  },
+  "xata": {
+   "segs": 5,
+   "all": {
+    "w": 749,
+    "h": 179,
+    "aspect": 4.18,
+    "coverage": 0.42,
+    "parts": 8,
+    "stroke": 0.156,
+    "strokeMax": 0.363,
+    "gap": 0.089,
+    "gapToStroke": 0.57
+   },
+   "combo": {
+    "markSide": "left",
+    "mark": {
+     "w": 176,
+     "h": 178,
+     "aspect": 0.99,
+     "coverage": 0.56,
+     "parts": 4,
+     "stroke": 0.337,
+     "strokeMax": 0.365,
+     "gap": 0.059,
+     "gapToStroke": 0.17
+    },
+    "wordH": 179,
+    "letterHMax": 177,
+    "letterHMed": 147,
+    "markToWordBbox": 0.99,
+    "markToTallLetter": 1.01,
+    "markToXish": 1.21,
+    "gapToMarkH": 0.36,
+    "gapToTallLetter": 0.36,
+    "wordStrokeToTall": 0.158,
+    "markStrokeToWordStroke": 2.14,
+    "markCenterOffset": 0
+   }
+  }
+ },
+ "marks_svgl": {
+  "airbnb": {
+   "segs": 1,
+   "all": {
+    "w": 408,
+    "h": 440,
+    "aspect": 0.93,
+    "coverage": 0.27,
+    "parts": 1,
+    "stroke": 0.067,
+    "strokeMax": 0.091,
+    "gap": 0.145,
+    "gapToStroke": 2.17
+   }
+  },
+  "anthropic_black": {
+   "segs": 1,
+   "all": {
+    "w": 440,
+    "h": 303,
+    "aspect": 1.45,
+    "coverage": 0.48,
+    "parts": 2,
+    "stroke": 0.218,
+    "strokeMax": 0.275,
+    "gap": 0.112,
+    "gapToStroke": 0.52
+   }
+  },
+  "arc": {
+   "segs": 1,
+   "all": {
+    "w": 440,
+    "h": 440,
+    "aspect": 1,
+    "coverage": 0.71,
+    "parts": 1,
+    "stroke": 0.269,
+    "strokeMax": 0.463,
+    "gap": 0.082,
+    "gapToStroke": 0.3
+   }
+  },
+  "better-auth_light": {
+   "segs": 1,
+   "all": {
+    "w": 440,
+    "h": 440,
+    "aspect": 1,
+    "coverage": 0.72,
+    "parts": 1,
+    "stroke": 0.155,
+    "strokeMax": 0.285,
+    "gap": 0.168,
+    "gapToStroke": 1.09
+   }
+  },
+  "bluesky": {
+   "segs": 1,
+   "all": {
+    "w": 440,
+    "h": 387,
+    "aspect": 1.14,
+    "coverage": 0.67,
+    "parts": 1,
+    "stroke": 0.34,
+    "strokeMax": 0.453,
+    "gap": null,
+    "gapToStroke": null
+   }
+  },
+  "bun": {
+   "segs": 1,
+   "all": {
+    "w": 436,
+    "h": 382,
+    "aspect": 1.14,
+    "coverage": 0.23,
+    "parts": 8,
+    "stroke": 0.04,
+    "strokeMax": 0.126,
+    "gap": 0.188,
+    "gapToStroke": 4.7
+   }
+  },
+  "cal": {
+   "segs": 7,
+   "all": {
+    "w": 437,
+    "h": 91,
+    "aspect": 4.8,
+    "coverage": 0.4,
+    "parts": 7,
+    "stroke": 0.185,
+    "strokeMax": 0.24,
+    "gap": 0.154,
+    "gapToStroke": 0.83
+   }
+  },
+  "clerk-icon-light": {
+   "segs": 1,
+   "all": {
+    "w": 348,
+    "h": 440,
+    "aspect": 0.79,
+    "coverage": 0.53,
+    "parts": 3,
+    "stroke": 0.221,
+    "strokeMax": 0.313,
+    "gap": 0.036,
+    "gapToStroke": 0.16
+   }
+  },
+  "coinbase": {
+   "segs": 1,
+   "all": {
+    "w": 440,
+    "h": 440,
+    "aspect": 1,
+    "coverage": 0.5,
+    "parts": 1,
+    "stroke": 0.148,
+    "strokeMax": 0.354,
+    "gap": 0.18,
+    "gapToStroke": 1.22
+   }
+  },
+  "conductor_light": {
+   "segs": 1,
+   "all": {
+    "w": 277,
+    "h": 440,
+    "aspect": 0.63,
+    "coverage": 0.5,
+    "parts": 7,
+    "stroke": 0.155,
+    "strokeMax": 0.159,
+    "gap": 0.109,
+    "gapToStroke": 0.71
+   }
+  },
+  "convex": {
+   "segs": 1,
+   "all": {
+    "w": 406,
+    "h": 416,
+    "aspect": 0.98,
+    "coverage": 0.48,
+    "parts": 3,
+    "stroke": 0.168,
+    "strokeMax": 0.249,
+    "gap": 0.038,
+    "gapToStroke": 0.23
+   }
+  },
+  "deno": {
+   "segs": 1,
+   "all": {
+    "w": 439,
+    "h": 403,
+    "aspect": 1.09,
+    "coverage": 0.44,
+    "parts": 2,
+    "stroke": 0.198,
+    "strokeMax": 0.337,
+    "gap": 0.02,
+    "gapToStroke": 0.1
+   }
+  },
+  "depot-light": {
+   "segs": 1,
+   "all": {
+    "w": 440,
+    "h": 440,
+    "aspect": 1,
+    "coverage": 0.52,
+    "parts": 4,
+    "stroke": 0.145,
+    "strokeMax": 0.172,
+    "gap": null,
+    "gapToStroke": null
+   }
+  },
+  "discord": {
+   "segs": 1,
+   "all": {
+    "w": 440,
+    "h": 340,
+    "aspect": 1.29,
+    "coverage": 0.71,
+    "parts": 1,
+    "stroke": 0.314,
+    "strokeMax": 0.441,
+    "gap": 0.039,
+    "gapToStroke": 0.12
+   }
+  },
+  "dodo-payments": {
+   "segs": 1,
+   "all": {
+    "w": 436,
+    "h": 436,
+    "aspect": 1,
+    "coverage": 0.79,
+    "parts": 1,
+    "stroke": 0.999,
+    "strokeMax": 0.999,
+    "gap": null,
+    "gapToStroke": null
+   }
+  },
+  "drizzle-orm_light": {
+   "segs": 3,
+   "all": {
+    "w": 304,
+    "h": 158,
+    "aspect": 1.92,
+    "coverage": 0.24,
+    "parts": 4,
+    "stroke": 0.179,
+    "strokeMax": 0.179,
+    "gap": 0.127,
+    "gapToStroke": 0.71
+   }
+  },
+  "dropbox": {
+   "segs": 1,
+   "all": {
+    "w": 440,
+    "h": 440,
+    "aspect": 1,
+    "coverage": 0.84,
+    "parts": 1,
+    "stroke": 0.223,
+    "strokeMax": 0.395,
+    "gap": 0.172,
+    "gapToStroke": 0.77
+   }
+  },
+  "eth": {
+   "segs": 1,
+   "all": {
+    "w": 413,
+    "h": 413,
+    "aspect": 1,
+    "coverage": 0.63,
+    "parts": 1,
+    "stroke": 0.251,
+    "strokeMax": 0.315,
+    "gap": 0.087,
+    "gapToStroke": 0.35
+   }
+  },
+  "figma": {
+   "segs": 1,
+   "all": {
+    "w": 293,
+    "h": 440,
+    "aspect": 0.67,
+    "coverage": 0.72,
+    "parts": 1,
+    "stroke": 0.336,
+    "strokeMax": 0.373,
+    "gap": 0.023,
+    "gapToStroke": 0.07
+   }
+  },
+  "fly": {
+   "segs": 1,
+   "all": {
+    "w": 440,
+    "h": 397,
+    "aspect": 1.11,
+    "coverage": 0.8,
+    "parts": 1,
+    "stroke": 0.131,
+    "strokeMax": 0.564,
+    "gap": 0.075,
+    "gapToStroke": 0.57
+   }
+  },
+  "framer": {
+   "segs": 1,
+   "all": {
+    "w": 294,
+    "h": 440,
+    "aspect": 0.67,
+    "coverage": 0.59,
+    "parts": 1,
+    "stroke": 0.191,
+    "strokeMax": 0.395,
+    "gap": null,
+    "gapToStroke": null
+   }
+  },
+  "gemini": {
+   "segs": 1,
+   "all": {
+    "w": 437,
+    "h": 439,
+    "aspect": 1,
+    "coverage": 0.36,
+    "parts": 1,
+    "stroke": 0.539,
+    "strokeMax": 0.539,
+    "gap": null,
+    "gapToStroke": null
+   }
+  },
+  "gitlab": {
+   "segs": 1,
+   "all": {
+    "w": 440,
+    "h": 424,
+    "aspect": 1.04,
+    "coverage": 0.59,
+    "parts": 1,
+    "stroke": 0.5,
+    "strokeMax": 0.618,
+    "gap": null,
+    "gapToStroke": null
+   }
+  },
+  "glide_light": {
+   "segs": 1,
+   "all": {
+    "w": 440,
+    "h": 440,
+    "aspect": 1,
+    "coverage": 0.27,
+    "parts": 2,
+    "stroke": 0.205,
+    "strokeMax": 0.276,
+    "gap": 0.055,
+    "gapToStroke": 0.27
+   }
+  },
+  "hono": {
+   "segs": 1,
+   "all": {
+    "w": 342,
+    "h": 440,
+    "aspect": 0.78,
+    "coverage": 0.67,
+    "parts": 1,
+    "stroke": 0.736,
+    "strokeMax": 0.75,
+    "gap": null,
+    "gapToStroke": null
+   }
+  },
+  "intlayer-light": {
+   "segs": 1,
+   "all": {
+    "w": 434,
+    "h": 403,
+    "aspect": 1.08,
+    "coverage": 0.46,
+    "parts": 3,
+    "stroke": 0.213,
+    "strokeMax": 0.213,
+    "gap": null,
+    "gapToStroke": null
+   }
+  },
+  "laravel": {
+   "segs": 1,
+   "all": {
+    "w": 426,
+    "h": 439,
+    "aspect": 0.97,
+    "coverage": 0.21,
+    "parts": 1,
+    "stroke": 0.032,
+    "strokeMax": 0.057,
+    "gap": 0.155,
+    "gapToStroke": 4.86
+   }
+  },
+  "linear": {
+   "segs": 1,
+   "all": {
+    "w": 440,
+    "h": 440,
+    "aspect": 1,
+    "coverage": 0.6,
+    "parts": 4,
+    "stroke": 0.075,
+    "strokeMax": 0.538,
+    "gap": 0.075,
+    "gapToStroke": 1
+   }
+  },
+  "loom": {
+   "segs": 1,
+   "all": {
+    "w": 440,
+    "h": 440,
+    "aspect": 1,
+    "coverage": 0.46,
+    "parts": 1,
+    "stroke": 0.114,
+    "strokeMax": 0.12,
+    "gap": 0.045,
+    "gapToStroke": 0.4
+   }
+  },
+  "mastodon": {
+   "segs": 1,
+   "all": {
+    "w": 412,
+    "h": 440,
+    "aspect": 0.94,
+    "coverage": 0.64,
+    "parts": 1,
+    "stroke": 0.164,
+    "strokeMax": 0.276,
+    "gap": 0.105,
+    "gapToStroke": 0.64
+   }
+  },
+  "mastra-icon-light": {
+   "segs": 1,
+   "all": {
+    "w": 440,
+    "h": 272,
+    "aspect": 1.62,
+    "coverage": 0.55,
+    "parts": 2,
+    "stroke": 0.221,
+    "strokeMax": 0.441,
+    "gap": 0.015,
+    "gapToStroke": 0.07
+   }
+  },
+  "meta": {
+   "segs": 1,
+   "all": {
+    "w": 440,
+    "h": 293,
+    "aspect": 1.5,
+    "coverage": 0.45,
+    "parts": 1,
+    "stroke": 0.164,
+    "strokeMax": 0.208,
+    "gap": 0.374,
+    "gapToStroke": 2.28
+   }
+  },
+  "mistral-ai_logo": {
+   "segs": 1,
+   "all": {
+    "w": 440,
+    "h": 400,
+    "aspect": 1.1,
+    "coverage": 0.76,
+    "parts": 1,
+    "stroke": 0.29,
+    "strokeMax": 0.46,
+    "gap": null,
+    "gapToStroke": null
+   }
+  },
+  "n8n": {
+   "segs": 1,
+   "all": {
+    "w": 440,
+    "h": 232,
+    "aspect": 1.9,
+    "coverage": 0.27,
+    "parts": 1,
+    "stroke": 0.103,
+    "strokeMax": 0.137,
+    "gap": 0.138,
+    "gapToStroke": 1.33
+   }
+  },
+  "neon": {
+   "segs": 1,
+   "all": {
+    "w": 433,
+    "h": 437,
+    "aspect": 0.99,
+    "coverage": 0.48,
+    "parts": 1,
+    "stroke": 0.124,
+    "strokeMax": 0.175,
+    "gap": 0.316,
+    "gapToStroke": 2.56
+   }
+  },
+  "netlify": {
+   "segs": 3,
+   "all": {
+    "w": 440,
+    "h": 387,
+    "aspect": 1.14,
+    "coverage": 0.17,
+    "parts": 7,
+    "stroke": 0.093,
+    "strokeMax": 0.103,
+    "gap": 0.093,
+    "gapToStroke": 1
+   }
+  },
+  "notion": {
+   "segs": 1,
+   "all": {
+    "w": 420,
+    "h": 440,
+    "aspect": 0.95,
+    "coverage": 0.51,
+    "parts": 2,
+    "stroke": 0.068,
+    "strokeMax": 0.21,
+    "gap": 0.114,
+    "gapToStroke": 1.67
+   }
+  },
+  "nuxt": {
+   "segs": 1,
+   "all": {
+    "w": 440,
+    "h": 286,
+    "aspect": 1.54,
+    "coverage": 0.42,
+    "parts": 1,
+    "stroke": 0.168,
+    "strokeMax": 0.225,
+    "gap": 0.196,
+    "gapToStroke": 1.16
+   }
+  },
+  "nx_light": {
+   "segs": 1,
+   "all": {
+    "w": 440,
+    "h": 274,
+    "aspect": 1.61,
+    "coverage": 0.57,
+    "parts": 6,
+    "stroke": 0.191,
+    "strokeMax": 0.372,
+    "gap": 0.021,
+    "gapToStroke": 0.11
+   }
+  },
+  "openai": {
+   "segs": 1,
+   "all": {
+    "w": 288,
+    "h": 289,
+    "aspect": 1,
+    "coverage": 0.38,
+    "parts": 1,
+    "stroke": 0.062,
+    "strokeMax": 0.084,
+    "gap": 0.095,
+    "gapToStroke": 1.53
+   }
+  },
+  "opera": {
+   "segs": 1,
+   "all": {
+    "w": 440,
+    "h": 440,
+    "aspect": 1,
+    "coverage": 0.48,
+    "parts": 1,
+    "stroke": 0.193,
+    "strokeMax": 0.245,
+    "gap": 0.523,
+    "gapToStroke": 2.71
+   }
+  },
+  "perplexity": {
+   "segs": 1,
+   "all": {
+    "w": 276,
+    "h": 366,
+    "aspect": 0.75,
+    "coverage": 0.2,
+    "parts": 1,
+    "stroke": 0.027,
+    "strokeMax": 0.077,
+    "gap": 0.082,
+    "gapToStroke": 3
+   }
+  },
+  "planetscale": {
+   "segs": 1,
+   "all": {
+    "w": 440,
+    "h": 440,
+    "aspect": 1,
+    "coverage": 0.59,
+    "parts": 2,
+    "stroke": 0.09,
+    "strokeMax": 0.532,
+    "gap": 0.088,
+    "gapToStroke": 0.98
+   }
+  },
+  "plausible": {
+   "segs": 1,
+   "all": {
+    "w": 333,
+    "h": 440,
+    "aspect": 0.76,
+    "coverage": 0.71,
+    "parts": 2,
+    "stroke": 0.277,
+    "strokeMax": 0.39,
+    "gap": 0.036,
+    "gapToStroke": 0.13
+   }
+  },
+  "polar-sh_light": {
+   "segs": 1,
+   "all": {
+    "w": 439,
+    "h": 439,
+    "aspect": 1,
+    "coverage": 0.41,
+    "parts": 1,
+    "stroke": 0.068,
+    "strokeMax": 0.122,
+    "gap": 0.063,
+    "gapToStroke": 0.92
+   }
+  },
+  "posthog": {
+   "segs": 2,
+   "all": {
+    "w": 423,
+    "h": 235,
+    "aspect": 1.8,
+    "coverage": 0.55,
+    "parts": 6,
+    "stroke": 0.217,
+    "strokeMax": 0.239,
+    "gap": 0.057,
+    "gapToStroke": 0.26
+   }
+  },
+  "prisma": {
+   "segs": 1,
+   "all": {
+    "w": 364,
+    "h": 439,
+    "aspect": 0.83,
+    "coverage": 0.34,
+    "parts": 1,
+    "stroke": 0.064,
+    "strokeMax": 0.314,
+    "gap": 0.207,
+    "gapToStroke": 3.21
+   }
+  },
+  "railway": {
+   "segs": 1,
+   "all": {
+    "w": 440,
+    "h": 440,
+    "aspect": 1,
+    "coverage": 0.6,
+    "parts": 4,
+    "stroke": 0.073,
+    "strokeMax": 0.295,
+    "gap": 0.05,
+    "gapToStroke": 0.68
+   }
+  },
+  "raycast": {
+   "segs": 1,
+   "all": {
+    "w": 439,
+    "h": 440,
+    "aspect": 1,
+    "coverage": 0.3,
+    "parts": 7,
+    "stroke": 0.075,
+    "strokeMax": 0.391,
+    "gap": 0.041,
+    "gapToStroke": 0.54
+   }
+  },
+  "react_light": {
+   "segs": 1,
+   "all": {
+    "w": 440,
+    "h": 396,
+    "aspect": 1.11,
+    "coverage": 0.36,
+    "parts": 2,
+    "stroke": 0.056,
+    "strokeMax": 0.214,
+    "gap": 0.111,
+    "gapToStroke": 2
+   }
+  },
+  "remotion": {
+   "segs": 1,
+   "all": {
+    "w": 245,
+    "h": 252,
+    "aspect": 0.97,
+    "coverage": 0.74,
+    "parts": 1,
+    "stroke": 0.667,
+    "strokeMax": 0.864,
+    "gap": null,
+    "gapToStroke": null
+   }
+  },
+  "sentry": {
+   "segs": 1,
+   "all": {
+    "w": 440,
+    "h": 388,
+    "aspect": 1.13,
+    "coverage": 0.33,
+    "parts": 1,
+    "stroke": 0.088,
+    "strokeMax": 0.109,
+    "gap": 0.098,
+    "gapToStroke": 1.12
+   }
+  },
+  "slack": {
+   "segs": 2,
+   "all": {
+    "w": 440,
+    "h": 440,
+    "aspect": 1,
+    "coverage": 0.47,
+    "parts": 8,
+    "stroke": 0.2,
+    "strokeMax": 0.2,
+    "gap": 0.018,
+    "gapToStroke": 0.09
+   }
+  },
+  "sol": {
+   "segs": 1,
+   "all": {
+    "w": 440,
+    "h": 440,
+    "aspect": 1,
+    "coverage": 0.79,
+    "parts": 1,
+    "stroke": 1,
+    "strokeMax": 1,
+    "gap": null,
+    "gapToStroke": null
+   }
+  },
+  "spotify": {
+   "segs": 1,
+   "all": {
+    "w": 440,
+    "h": 440,
+    "aspect": 1,
+    "coverage": 0.64,
+    "parts": 1,
+    "stroke": 0.17,
+    "strokeMax": 0.336,
+    "gap": 0.077,
+    "gapToStroke": 0.46
+   }
+  },
+  "sst": {
+   "segs": 1,
+   "all": {
+    "w": 440,
+    "h": 339,
+    "aspect": 1.3,
+    "coverage": 0.35,
+    "parts": 1,
+    "stroke": 0.053,
+    "strokeMax": 0.239,
+    "gap": 0.195,
+    "gapToStroke": 3.67
+   }
+  },
+  "stripe": {
+   "segs": 1,
+   "all": {
+    "w": 384,
+    "h": 384,
+    "aspect": 1,
+    "coverage": 0.79,
+    "parts": 1,
+    "stroke": 0.5,
+    "strokeMax": 0.789,
+    "gap": null,
+    "gapToStroke": null
+   }
+  },
+  "supabase": {
+   "segs": 1,
+   "all": {
+    "w": 424,
+    "h": 436,
+    "aspect": 0.97,
+    "coverage": 0.41,
+    "parts": 1,
+    "stroke": 0.271,
+    "strokeMax": 0.404,
+    "gap": null,
+    "gapToStroke": null
+   }
+  },
+  "svelte": {
+   "segs": 1,
+   "all": {
+    "w": 366,
+    "h": 440,
+    "aspect": 0.83,
+    "coverage": 0.5,
+    "parts": 1,
+    "stroke": 0.118,
+    "strokeMax": 0.152,
+    "gap": 0.127,
+    "gapToStroke": 1.07
+   }
+  },
+  "tailwindcss": {
+   "segs": 1,
+   "all": {
+    "w": 438,
+    "h": 263,
+    "aspect": 1.67,
+    "coverage": 0.34,
+    "parts": 2,
+    "stroke": 0.198,
+    "strokeMax": 0.352,
+    "gap": 0.114,
+    "gapToStroke": 0.58
+   }
+  },
+  "tanstack_light": {
+   "segs": 1,
+   "all": {
+    "w": 336,
+    "h": 440,
+    "aspect": 0.76,
+    "coverage": 0.66,
+    "parts": 1,
+    "stroke": 0.131,
+    "strokeMax": 0.245,
+    "gap": 0.056,
+    "gapToStroke": 0.42
+   }
+  },
+  "tembo": {
+   "segs": 1,
+   "all": {
+    "w": 440,
+    "h": 438,
+    "aspect": 1,
+    "coverage": 0.35,
+    "parts": 3,
+    "stroke": 0.169,
+    "strokeMax": 0.224,
+    "gap": null,
+    "gapToStroke": null
+   }
+  },
+  "threads": {
+   "segs": 1,
+   "all": {
+    "w": 378,
+    "h": 440,
+    "aspect": 0.86,
+    "coverage": 0.41,
+    "parts": 1,
+    "stroke": 0.091,
+    "strokeMax": 0.124,
+    "gap": 0.15,
+    "gapToStroke": 1.65
+   }
+  },
+  "trpc": {
+   "segs": 1,
+   "all": {
+    "w": 440,
+    "h": 440,
+    "aspect": 1,
+    "coverage": 0.77,
+    "parts": 11,
+    "stroke": 0.164,
+    "strokeMax": 0.319,
+    "gap": 0.037,
+    "gapToStroke": 0.22
+   }
+  },
+  "turborepo-icon-light": {
+   "segs": 1,
+   "all": {
+    "w": 440,
+    "h": 440,
+    "aspect": 1,
+    "coverage": 0.48,
+    "parts": 4,
+    "stroke": 0.13,
+    "strokeMax": 0.17,
+    "gap": 0.056,
+    "gapToStroke": 0.43
+   }
+  },
+  "turso-light": {
+   "segs": 1,
+   "all": {
+    "w": 438,
+    "h": 372,
+    "aspect": 1.18,
+    "coverage": 0.45,
+    "parts": 1,
+    "stroke": 0.161,
+    "strokeMax": 0.344,
+    "gap": 0.084,
+    "gapToStroke": 0.52
+   }
+  },
+  "upstash": {
+   "segs": 1,
+   "all": {
+    "w": 330,
+    "h": 440,
+    "aspect": 0.75,
+    "coverage": 0.47,
+    "parts": 1,
+    "stroke": 0.109,
+    "strokeMax": 0.115,
+    "gap": 0.091,
+    "gapToStroke": 0.83
+   }
+  },
+  "v0_light": {
+   "segs": 2,
+   "all": {
+    "w": 440,
+    "h": 220,
+    "aspect": 2,
+    "coverage": 0.49,
+    "parts": 2,
+    "stroke": 0.191,
+    "strokeMax": 0.296,
+    "gap": 0.155,
+    "gapToStroke": 0.81
+   }
+  },
+  "vercel": {
+   "segs": 1,
+   "all": {
+    "w": 440,
+    "h": 382,
+    "aspect": 1.15,
+    "coverage": 0.5,
+    "parts": 1,
+    "stroke": 0.346,
+    "strokeMax": 0.681,
+    "gap": null,
+    "gapToStroke": null
+   }
+  },
+  "vite": {
+   "segs": 1,
+   "all": {
+    "w": 437,
+    "h": 416,
+    "aspect": 1.05,
+    "coverage": 0.49,
+    "parts": 1,
+    "stroke": 0.236,
+    "strokeMax": 0.469,
+    "gap": null,
+    "gapToStroke": null
+   }
+  },
+  "vue": {
+   "segs": 1,
+   "all": {
+    "w": 440,
+    "h": 379,
+    "aspect": 1.16,
+    "coverage": 0.48,
+    "parts": 1,
+    "stroke": 0.401,
+    "strokeMax": 0.528,
+    "gap": null,
+    "gapToStroke": null
+   }
+  },
+  "webflow": {
+   "segs": 1,
+   "all": {
+    "w": 440,
+    "h": 274,
+    "aspect": 1.61,
+    "coverage": 0.73,
+    "parts": 1,
+    "stroke": 0.336,
+    "strokeMax": 0.512,
+    "gap": 0.049,
+    "gapToStroke": 0.14
+   }
+  },
+  "workos": {
+   "segs": 1,
+   "all": {
+    "w": 440,
+    "h": 382,
+    "aspect": 1.15,
+    "coverage": 0.63,
+    "parts": 2,
+    "stroke": 0.344,
+    "strokeMax": 0.363,
+    "gap": 0.042,
+    "gapToStroke": 0.12
+   }
+  },
+  "xai_light": {
+   "segs": 1,
+   "all": {
+    "w": 230,
+    "h": 254,
+    "aspect": 0.91,
+    "coverage": 0.48,
+    "parts": 4,
+    "stroke": 0.165,
+    "strokeMax": 0.178,
+    "gap": 0.045,
+    "gapToStroke": 0.27
+   }
+  },
+  "xata": {
+   "segs": 2,
+   "all": {
+    "w": 436,
+    "h": 440,
+    "aspect": 0.99,
+    "coverage": 0.56,
+    "parts": 4,
+    "stroke": 0.349,
+    "strokeMax": 0.366,
+    "gap": 0.058,
+    "gapToStroke": 0.17
+   }
+  },
+  "zen-browser-light": {
+   "segs": 1,
+   "all": {
+    "w": 440,
+    "h": 440,
+    "aspect": 1,
+    "coverage": 0.43,
+    "parts": 3,
+    "stroke": 0.09,
+    "strokeMax": 0.099,
+    "gap": 0.077,
+    "gapToStroke": 0.86
+   }
+  }
+ },
+ "marks_logosystem_clean": {
+  "1228": {
+   "segs": 2,
+   "all": {
+    "w": 132,
+    "h": 125,
+    "aspect": 1.06,
+    "coverage": 0.47,
+    "parts": 6,
+    "stroke": 0.144,
+    "strokeMax": 0.288,
+    "gap": 0.224,
+    "gapToStroke": 1.56
+   }
+  },
+  "abstract-logo": {
+   "segs": 1,
+   "all": {
+    "w": 294,
+    "h": 262,
+    "aspect": 1.12,
+    "coverage": 0.39,
+    "parts": 5,
+    "stroke": 0.107,
+    "strokeMax": 0.115,
+    "gap": 0.065,
+    "gapToStroke": 0.61
+   }
+  },
+  "aprile": {
+   "segs": 1,
+   "all": {
+    "w": 312,
+    "h": 103,
+    "aspect": 3.03,
+    "coverage": 0.31,
+    "parts": 1,
+    "stroke": 0.137,
+    "strokeMax": 0.233,
+    "gap": 0.35,
+    "gapToStroke": 2.55
+   }
+  },
+  "bonia": {
+   "segs": 1,
+   "all": {
+    "w": 260,
+    "h": 275,
+    "aspect": 0.95,
+    "coverage": 0.43,
+    "parts": 3,
+    "stroke": 0.148,
+    "strokeMax": 0.218,
+    "gap": 0.048,
+    "gapToStroke": 0.33
+   }
+  },
+  "bontrust": {
+   "segs": 1,
+   "all": {
+    "w": 142,
+    "h": 163,
+    "aspect": 0.87,
+    "coverage": 0.37,
+    "parts": 1,
+    "stroke": 0.139,
+    "strokeMax": 0.156,
+    "gap": 0.086,
+    "gapToStroke": 0.62
+   }
+  },
+  "craft": {
+   "segs": 1,
+   "all": {
+    "w": 316,
+    "h": 317,
+    "aspect": 1,
+    "coverage": 0.22,
+    "parts": 1,
+    "stroke": 0.048,
+    "strokeMax": 0.072,
+    "gap": 0.06,
+    "gapToStroke": 1.24
+   }
+  },
+  "jinxed": {
+   "segs": 1,
+   "all": {
+    "w": 334,
+    "h": 319,
+    "aspect": 1.05,
+    "coverage": 0.45,
+    "parts": 2,
+    "stroke": 0.142,
+    "strokeMax": 0.447,
+    "gap": 0.204,
+    "gapToStroke": 1.44
+   }
+  },
+  "makanat": {
+   "segs": 1,
+   "all": {
+    "w": 198,
+    "h": 149,
+    "aspect": 1.33,
+    "coverage": 0.67,
+    "parts": 4,
+    "stroke": 0.215,
+    "strokeMax": 0.55,
+    "gap": 0.027,
+    "gapToStroke": 0.13
+   }
+  },
+  "pearl-box": {
+   "segs": 1,
+   "all": {
+    "w": 152,
+    "h": 151,
+    "aspect": 1.01,
+    "coverage": 0.43,
+    "parts": 1,
+    "stroke": 0.106,
+    "strokeMax": 0.158,
+    "gap": 0.265,
+    "gapToStroke": 2.5
+   }
+  },
+  "rise-ads": {
+   "segs": 1,
+   "all": {
+    "w": 102,
+    "h": 157,
+    "aspect": 0.65,
+    "coverage": 0.49,
+    "parts": 1,
+    "stroke": 0.166,
+    "strokeMax": 0.277,
+    "gap": 0.076,
+    "gapToStroke": 0.46
+   }
+  },
+  "soulsessions": {
+   "segs": 1,
+   "all": {
+    "w": 263,
+    "h": 248,
+    "aspect": 1.06,
+    "coverage": 0.6,
+    "parts": 1,
+    "stroke": 0.113,
+    "strokeMax": 0.459,
+    "gap": 0.137,
+    "gapToStroke": 1.21
+   }
+  },
+  "swell": {
+   "segs": 2,
+   "all": {
+    "w": 237,
+    "h": 213,
+    "aspect": 1.11,
+    "coverage": 0.44,
+    "parts": 5,
+    "stroke": 0.122,
+    "strokeMax": 0.136,
+    "gap": 0.056,
+    "gapToStroke": 0.46
+   }
+  },
+  "tbd": {
+   "segs": 3,
+   "all": {
+    "w": 340,
+    "h": 137,
+    "aspect": 2.48,
+    "coverage": 0.49,
+    "parts": 3,
+    "stroke": 0.204,
+    "strokeMax": 0.341,
+    "gap": 0.131,
+    "gapToStroke": 0.64
+   }
+  },
+  "vm": {
+   "segs": 1,
+   "all": {
+    "w": 509,
+    "h": 319,
+    "aspect": 1.6,
+    "coverage": 0.57,
+    "parts": 1,
+    "stroke": 0.458,
+    "strokeMax": 0.461,
+    "gap": 0.075,
+    "gapToStroke": 0.16
+   }
+  },
+  "legg": {
+   "segs": 4,
+   "all": {
+    "w": 306,
+    "h": 187,
+    "aspect": 1.64,
+    "coverage": 0.24,
+    "parts": 4,
+    "stroke": 0.053,
+    "strokeMax": 0.086,
+    "gap": 0.086,
+    "gapToStroke": 1.6
+   }
+  },
+  "stylish-rent-symbol": {
+   "segs": 1,
+   "all": {
+    "w": 185,
+    "h": 248,
+    "aspect": 0.75,
+    "coverage": 0.43,
+    "parts": 2,
+    "stroke": 0.065,
+    "strokeMax": 0.156,
+    "gap": 0.024,
+    "gapToStroke": 0.38
+   }
+  }
+ }
+}

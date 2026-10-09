@@ -1,0 +1,254 @@
+{
+  "_about": "Logo mark families and the parameters a generator should expose, with good ranges taken from measured references (2026-10-09). Study: knowledge/web/logo-craft.md (rules LG-01..LG-28). Evidence: knowledge/benchmarks/logos/ (logosystem-*.png, svgl-*.png, lockups/, scale-test-1x.png, measurements.json). Units: H = mark bounding-box height; 'stroke' = the mark's main stroke width; angles in degrees. 'range' = everything seen in good references; 'good' = where the strongest references cluster; start there. Cross-check: system/logo/anatomy.json (parallel 32-mark study) reports the same coverage and aspect medians. Study only: never reproduce a reference.",
+  "version": 1,
+
+  "global": {
+    "parts": { "range": [1, 4], "good": [1, 3], "measured": "63 shipped marks: median 1, p75 3, p90 4", "rule": "LG-01" },
+    "primitiveTypes": { "max": 3, "rule": "LG-01" },
+    "aspect": { "range": [0.8, 1.7], "good": [0.9, 1.15], "measured": "median 1.00, p25 0.98, p75 1.14, p90 1.61", "rule": "LG-10" },
+    "coverage": { "range": [0.3, 0.75], "good": [0.4, 0.6], "measured": "median 0.48, p25 0.38, p75 0.56", "rule": "LG-10" },
+    "stroke": {
+      "filled": { "range": [0.1, 0.34], "good": [0.13, 0.22], "measured": "median 0.17 H (47 marks)" },
+      "line": { "range": [0.06, 0.1], "good": [0.07, 0.09], "measured": "median 0.075 H (15 marks)", "smallSizeVariantBelow": 0.09 },
+      "secondWeightMinRatio": 1.6,
+      "rule": ["LG-06", "LG-07"]
+    },
+    "gapRegime": {
+      "options": {
+        "slit": { "gapToStroke": [0.07, 0.3], "examples": "Slack .09, Figma .07, WorkOS .12, Webflow .14, Clerk .16, Xata .17, Convex .23" },
+        "band": { "gapToStroke": [0.4, 1.2], "examples": "Turborepo .43, Spotify .46, Railway .68, PlanetScale .98, Linear 1.0, Svelte 1.07" },
+        "airy": { "gapToStroke": [1.5, 3.0], "examples": "OpenAI 1.53, Airbnb 2.17, Neon 2.56, Prisma 3.2 (line marks only)" }
+      },
+      "mixAllowed": false,
+      "minGapH_oneColour": 0.06,
+      "rule": ["LG-08", "LG-09"]
+    },
+    "corner": { "options": ["sharp", "single-radius", "full-round"], "radiusAsStrokeFraction": [0, 0.25, 0.5, 1.0], "distinctNonZeroRadiiMax": 1, "rule": "LG-11" },
+    "angleSet": { "options": ["0/90", "45", "30/60", "360/n"], "freeAnglesAllowed": false, "rule": "LG-12" },
+    "ownedBreak": { "count": 1, "kinds": ["cut", "missing-module", "shifted-bar", "offset-counter", "satellite", "over-under"], "rule": "LG-04" },
+    "optical": { "roundOvershootPctH": [1, 3], "apexOvershootPctH": [3, 5], "horizontalThinningPct": [1, 5], "inverseThinning": "by eye; check at 16px on the dark canvas", "rule": ["LG-17", "LG-18"] },
+    "colour": { "masterIs": "flat one-colour, currentColor fills", "countersAreHoles": true, "gradientIs": "optional variant only", "noOpacityOrBlend": true, "rule": ["LG-16", "LG-19", "LG-20"] },
+    "tests": {
+      "sizesPx": [16, 24, 32, 64, 256],
+      "minStrokePxAt16": 1.5,
+      "minGapPxAt16": 1,
+      "renders": ["light", "build-canvas", "one-colour", "inverse"],
+      "doodle": "describe in one sentence, redraw in < 30 s with <= 6 primitives",
+      "blurSilhouettePxAt32": 2,
+      "output": "work/<name>/brand/mark-test.png",
+      "rule": "LG-25"
+    },
+    "lockup": {
+      "markToCap": { "range": [1.15, 1.8], "good": [1.25, 1.6], "measured": "median 1.43, p25 1.19, p75 1.64 (47 shipped lockups)" },
+      "markToXHeight_lowercaseWords": { "good": [1.4, 1.8], "measured": "median 1.60" },
+      "gapToMarkH": { "range": [0.19, 0.4], "good": [0.22, 0.33], "measured": "median 0.28" },
+      "gapToCap": { "good": [0.3, 0.5], "measured": "median 0.37" },
+      "verticalAlign": "centre of the cap band (baseline to cap line); x band for all-lowercase words; ignore descenders",
+      "markStrokeToWordStem": { "range": [0.67, 2.2], "good": [0.9, 1.65], "measured": "median 1.29" },
+      "wordStemToCap": { "good": [0.15, 0.21], "measured": "median 0.178 (medium to semibold grotesk)" },
+      "wordTrackingPct": { "good": [-3, -1], "at": "20-32px" },
+      "clearSpace": { "unit": "mark H", "min": 0.5, "note": "engine default, not measured" },
+      "nav": { "wordmarkMinPx": 20, "markHeightPx": [18, 23], "gapPx": [5, 7], "container": "none" },
+      "rule": ["LG-21", "LG-22", "LG-23", "LG-24"]
+    },
+    "cliches": {
+      "avoidUnlessOwned": ["equal-armed sparkle 4-12 points", "generic asterisk", "plain hexagon", "swirl / whirlpool rotation", "brain", "lightbulb", "chat bubble with dots", "rocket", "globe with orbit", "shield with check", "infinity loop", "two overlapping rounded squares", "translucent overlap", "icon-set glyph", "letter in a rounded tile"],
+      "evidence": "Fast Company: hexagons ~4.6x baseline in AI logos; NN/g: sparkles not read as AI; knowledge/benchmarks/logos/sheets/logosystem-ai-fold.png",
+      "rule": "LG-05"
+    }
+  },
+
+  "families": {
+    "radial": {
+      "id": "F1",
+      "summary": "One module rotated n times by 360/n about the centre, with a central void or dot.",
+      "primitives": ["rounded-rect", "chevron", "arc", "teardrop", "L-corner", "dash", "capsule+dot"],
+      "params": {
+        "mode": { "options": ["solid-modules", "thin-rays"] },
+        "count": { "solid-modules": { "range": [3, 8], "good": [3, 6] }, "thin-rays": { "range": [12, 32], "good": [16, 24] } },
+        "module": { "options": ["chevron", "L-corner", "capsule", "teardrop", "arc", "stepped-arm", "loop"], "note": "the module must be distinctive on its own; a plain petal or plain bar makes the AI asterisk" },
+        "innerVoidRatio": { "range": [0.15, 0.4], "good": [0.18, 0.35], "note": "void radius / outer radius" },
+        "moduleStrokeH": { "range": [0.1, 0.22], "good": [0.12, 0.2] },
+        "rayWidthH": { "range": [0.035, 0.08], "good": [0.04, 0.07] },
+        "moduleGapToStroke": { "range": [0.3, 1.6], "good": [0.4, 1.0] },
+        "rotationOffsetDeg": { "options": [0, "180/n"], "note": "never arbitrary" },
+        "chirality": { "options": ["none", "pinwheel"], "note": "pinwheel (all modules leaning one way) is the swirl cliche; use with care" },
+        "break": { "options": ["one-module-missing", "one-module-recoloured", "central-dot", "interlaced-over-under"] }
+      },
+      "failureModes": ["9-11 solid modules clog at 16px", "equal plain arms = sparkle/asterisk cliche", "rays touching the centre turn black at 16px", "random offsets"],
+      "references": ["logosystem-1228", "logosystem-craft", "logosystem-uniqode", "logosystem-syntage", "logosystem-stylish-rent-symbol", "logosystem-maddison-walker", "logosystem-collab", "logosystem-wayfinder", "svgl-slack", "svgl-turborepo-icon-light", "svgl-openai", "svgl-convex", "sheets/rad-00.png"]
+    },
+
+    "grid": {
+      "id": "F2",
+      "summary": "Cells on a unit grid drawing a letter, step or figure; at most two cell shapes.",
+      "primitives": ["square-cell", "quarter-circle-cell", "triangle-cell", "dot"],
+      "params": {
+        "cols": { "range": [2, 5], "good": [3, 4] },
+        "rows": { "range": [2, 5], "good": [3, 4] },
+        "cellGapUnit": { "options": [0, [0.15, 0.3]], "note": "0 merges cells into one silhouette; otherwise >= 0.15 unit" },
+        "cellRadiusUnit": { "options": [0, 0.5] },
+        "cellShapesMax": 2,
+        "fillPattern": { "note": "must spell a letter, a step or one figure; random checkerboards fail" },
+        "coverage": { "good": [0.45, 0.75] },
+        "pixelSnap": { "sizesPx": [16, 32], "note": "unit must land on whole pixels at favicon sizes" }
+      },
+      "failureModes": ["random fills", "drifting cell sizes", "anti-aliased off-grid edges", "more than two cell shapes"],
+      "references": ["logosystem-38", "logosystem-tbd", "logosystem-harv", "logosystem-pad-res", "logosystem-vive", "svgl Mistral / Better Auth in sheets/saas-*", "lockups/svgl-conductor.png"]
+    },
+
+    "monogram": {
+      "id": "F3",
+      "summary": "The initial reduced to 1-3 strokes of one weight, found inside a simpler geometric figure; its counter is the signature.",
+      "primitives": ["stem", "bowl/circle", "arc", "square", "diagonal"],
+      "params": {
+        "letter": { "note": "initial of the brand name; ligature of two letters only if both reduce to <= 3 strokes total" },
+        "strokes": { "range": [1, 3] },
+        "strokeH": { "range": [0.14, 0.34], "good": [0.17, 0.24], "measured": "Deno .20, Clerk .22, Anthropic .22, Mastra .22, xAI .17, Webflow .34" },
+        "counterToStroke": { "min": 0.8, "good": [1.0, 2.0] },
+        "terminal": { "options": ["flat-0", "cut-45", "round"], "note": "one terminal rule for every end" },
+        "host": { "options": ["none", "circle", "square", "superellipse"], "note": "host shape is ink with the letter as the cut (Daimon), never a filled tile behind a typed letter" },
+        "aspect": { "good": [0.8, 1.2] },
+        "break": { "options": ["open-counter", "offset-counter", "cut-terminal", "spiral"] }
+      },
+      "failureModes": ["typed font letter in a rounded tile", "mixed stroke weights", "counter that closes at 16px", "decorative serifs on a geometric mark"],
+      "references": ["logosystem-daimon", "logosystem-gobji", "logosystem-bonia", "logosystem-beron", "logosystem-axiom", "logosystem-ambiance-creators", "logosystem-granola", "logosystem-swell", "logosystem-codecraft", "logosystem-ringback", "logosystem-d-shaped", "svgl-notion", "svgl-webflow", "svgl-deno", "svgl-clerk-icon-light", "svgl-anthropic_black", "svgl-framer"]
+    },
+
+    "cut": {
+      "id": "F4",
+      "summary": "One solid primitive minus 1-4 subtracted shapes; the subtraction is the idea.",
+      "primitives": ["circle", "square", "superellipse", "triangle"],
+      "params": {
+        "base": { "options": ["circle", "square", "superellipse", "triangle"] },
+        "superellipseN": { "range": [3, 6], "good": [4, 5] },
+        "cutKind": { "options": ["parallel-bands", "single-slit", "inner-circle", "quarter", "wedge"] },
+        "cutCount": { "range": [1, 4] },
+        "cutAngleDeg": { "options": [0, 45, 90, 30, 60] },
+        "bandGapToStroke": { "range": [0.45, 1.1], "good": [0.7, 1.0], "measured": "Spotify .46, Railway .68, PlanetScale .98, Linear 1.0" },
+        "slitWidthH": { "range": [0.05, 0.1], "good": [0.06, 0.09] },
+        "innerCircleToBase": { "range": [0.4, 0.65], "good": [0.45, 0.6] },
+        "innerOffset": { "range": [0, 0.2], "note": "fraction of base width; offset is often the break" },
+        "minSliverH": 0.05
+      },
+      "failureModes": ["cuts at unrelated angles", "slivers < 0.05 H", "holes with no second reading"],
+      "references": ["logosystem-jinxed", "logosystem-amina", "logosystem-element", "logosystem-logo-darelstudio", "logosystem-eye", "logosystem-makanat", "logosystem-pearl-box", "svgl-linear", "svgl-planetscale", "svgl-railway", "svgl-spotify"]
+    },
+
+    "interlock": {
+      "id": "F5",
+      "summary": "Two (rarely three) identical modules, the second rotated 180 or mirrored, overlapped with an explicit over-under break.",
+      "primitives": ["hook", "half-hexagon", "C-arc", "rounded-rect-outline", "node"],
+      "params": {
+        "modules": { "range": [2, 3], "good": [2, 2] },
+        "symmetry": { "options": ["rot180", "mirror", "rot120"] },
+        "strokeH": { "range": [0.1, 0.22], "good": [0.11, 0.2] },
+        "overlapOfModuleWidth": { "range": [0.15, 0.45], "good": [0.2, 0.4] },
+        "breakGapToStroke": { "range": [0.2, 0.8], "good": [0.25, 0.6] },
+        "fill": { "options": ["outline-stroke", "solid"], "note": "no opacity, no blend modes" }
+      },
+      "failureModes": ["two overlapping rounded squares", "translucent overlap", "non-identical modules", "missing over-under break"],
+      "references": ["logosystem-bontrust", "logosystem-manifold", "logosystem-datachain", "logosystem-zynk", "logosystem-vm", "svgl-convex", "svgl Upstash / Svelte / SST in sheets/saas-*", "logosystem-people-face (caution)"]
+    },
+
+    "bars": {
+      "id": "F6",
+      "summary": "3-5 equal bars with one progressive transform.",
+      "primitives": ["bar", "rounded-bar", "chevron-bar", "parallelogram"],
+      "params": {
+        "count": { "range": [2, 5], "good": [3, 4] },
+        "barH": { "range": [0.12, 0.24], "good": [0.14, 0.22] },
+        "gapToBar": { "range": [0.4, 1.1], "good": [0.5, 1.0] },
+        "transform": { "options": ["stair-shift", "bend", "taper", "skew", "interleave"] },
+        "transformStep": { "note": "linear progression across bars; one transform only" },
+        "cap": { "options": ["flat", "round", "cut-45"] }
+      },
+      "failureModes": ["three plain lines (reads as a menu icon)", "unequal bar weights", "two transforms at once"],
+      "references": ["logosystem-abstract-logo", "logosystem-buildingls", "logosystem-handled", "logosystem-sileon", "logosystem-38", "svgl-depot-light", "svgl-posthog"]
+    },
+
+    "orbit": {
+      "id": "F7",
+      "summary": "A ring or arc with exactly one interruption: break, satellite, offset inner circle or second arc.",
+      "primitives": ["ring", "arc", "dot", "ellipse"],
+      "params": {
+        "ringStrokeToDiameter": { "range": [0.1, 0.22], "good": [0.12, 0.2] },
+        "breakAngleDeg": { "range": [20, 90], "good": [30, 60] },
+        "satelliteToStroke": { "range": [0.8, 1.8], "good": [1.0, 1.5] },
+        "innerOffset": { "range": [0.05, 0.25], "note": "offset of an inner circle/ellipse as a fraction of diameter" },
+        "rings": { "range": [1, 3] }
+      },
+      "failureModes": ["concentric rings with no break", "planet with orbit ellipse (literal globe)", "rings < 0.1 stroke at 16px"],
+      "references": ["logosystem-osiro", "svgl Coinbase / Opera / Zen / Turborepo in sheets/saas-*"]
+    },
+
+    "blob": {
+      "id": "F8",
+      "summary": "2-5 circular nodes joined by tangent fillets (metaball), or one superellipse with a single bite.",
+      "primitives": ["circle-node", "fillet", "superellipse"],
+      "params": {
+        "nodes": { "range": [2, 5], "good": [3, 5] },
+        "nodeLayout": { "options": ["row", "triangle", "grid-2x2", "letter-path"] },
+        "filletToNodeRadius": { "range": [0.25, 0.7], "good": [0.3, 0.6] },
+        "coverage": { "good": [0.5, 0.65] },
+        "bite": { "note": "superellipse mode: one circular bite, diameter 0.3-0.5 H" }
+      },
+      "failureModes": ["freehand blobs", "mixed fillet radii", "faces on clouds"],
+      "references": ["logosystem-vm", "logosystem-bonia", "svgl-mastra-icon-light", "svgl-deno"]
+    },
+
+    "fold": {
+      "id": "F9",
+      "summary": "2-4 flat facets implying a fold or solid, shown by a gap or a tone step; one projection.",
+      "primitives": ["parallelogram", "triangle", "quad"],
+      "params": {
+        "facets": { "range": [2, 4] },
+        "projection": { "options": ["iso-30", "shear-45", "flat-offset"] },
+        "foldGapH": { "range": [0.025, 0.07], "good": [0.03, 0.06] },
+        "toneStepL": { "min": 0.25, "note": "OKLCH lightness step between facets when tones are used; the gap version is the master" }
+      },
+      "failureModes": ["drop shadows, bevels, glass", "fold only readable in colour"],
+      "references": ["logosystem-one-stack", "logosystem-lexit", "logosystem-rise-ads", "logosystem-logo-darelstudio", "svgl-framer", "svgl-supabase", "svgl Prisma / Laravel in sheets/saas-*"]
+    },
+
+    "monoline": {
+      "id": "F10",
+      "summary": "One continuous constant stroke, round caps and joins, one curvature family.",
+      "primitives": ["path-stroke"],
+      "params": {
+        "strokeH": { "range": [0.06, 0.12], "good": [0.07, 0.1] },
+        "caps": { "options": ["round"] },
+        "segments": { "range": [1, 3] },
+        "gapToStroke": { "range": [1.2, 3.0] },
+        "smallSizeVariant": { "requiredIfStrokeHBelow": 0.09, "variantStrokeH": [0.12, 0.16] }
+      },
+      "failureModes": ["hairline construction drawings (< 0.05 H)", "mixed stroke widths", "no small-size variant"],
+      "references": ["logosystem-aprile", "logosystem-legg", "logosystem-perplexity", "logosystem-people-face", "svgl-airbnb", "svgl-openai", "svgl-perplexity"]
+    }
+  },
+
+  "modifiers": {
+    "gradientGlass": {
+      "id": "F11",
+      "summary": "A finish applied to a mark from F1-F10 for hero or app-icon use. Never the master.",
+      "params": { "stops": { "range": [2, 3] }, "hueSpreadDeg": { "range": [20, 120] }, "requiresFlatPass": true },
+      "references": ["logosystem-atlas", "logosystem-snaptix", "logosystem-diamond", "logosystem-soulsessions"]
+    },
+    "smallSizeVariant": {
+      "summary": "Same construction, heavier stroke and fewer parts for 16-32px.",
+      "params": { "strokeH": [0.12, 0.18], "dropPartsTo": [1, 3], "gapH": [0.08, 0.12] }
+    }
+  },
+
+  "selection": {
+    "steps": [
+      "Decide symbol vs wordmark-only (LG-27).",
+      "Pick a family not used by the last 6 builds (LG-28).",
+      "Choose parameters inside 'good', one angle set, one corner rule, one gap regime.",
+      "Add exactly one owned break (LG-04).",
+      "Apply optical corrections, build counters as holes, make the inverse.",
+      "Run the test protocol and the lockup check; save work/<name>/brand/mark-test.png.",
+      "Record family + params in DIRECTION.md and present with the spec, not a golden-ratio overlay."
+    ]
+  }
+}

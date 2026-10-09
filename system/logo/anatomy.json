@@ -1,0 +1,494 @@
+{
+  "_about": "Numeric construction targets for logo marks and nav lockups, measured from 32 acclaimed marks and 30 live navs on 2026-10-09. Study: knowledge/web/logo-anatomy-measured.md (rules LA-01..LA-20). Raw data: knowledge/benchmarks/logos/anatomy-measurements.json, anatomy-nav-pairing.json. Checker: node tools/logo_measure.mjs <mark.svg>. 'target' = where the accepted marks cluster (IQR or rule band); 'hard' / 'fail' = outside every mark that holds at 16px. All %H values are percent of the mark's bounding-box height.",
+  "version": 1,
+  "sample": {
+    "marks": [
+      "linear",
+      "vercel",
+      "raycast",
+      "attio",
+      "arc",
+      "mercury",
+      "ramp",
+      "clerk",
+      "supabase",
+      "framer",
+      "loom",
+      "notion",
+      "figma",
+      "airtable",
+      "dropbox",
+      "slack-2019",
+      "slack-2013",
+      "claude",
+      "openai",
+      "perplexity",
+      "mistral",
+      "cohere",
+      "mastercard",
+      "chase",
+      "deutschebank",
+      "mitsubishi",
+      "airbnb",
+      "pinterest",
+      "spotify",
+      "nike",
+      "apple",
+      "twitter"
+    ],
+    "navs": 30
+  },
+  "mark": {
+    "construction": {
+      "fillOnly": true,
+      "measured": "31/32 marks are filled shapes; the one stroke (Spotify) is a 4.2%H hairline in the fill colour",
+      "rule": "LA-01"
+    },
+    "aspect": {
+      "target": [
+        0.8,
+        1.25
+      ],
+      "hard": [
+        0.6,
+        3.0
+      ],
+      "measured": {
+        "min": 0.666,
+        "p25": 0.972,
+        "median": 1.0,
+        "p75": 1.163,
+        "max": 2.863,
+        "inTarget": "26/32"
+      },
+      "rule": "LA-07"
+    },
+    "silhouetteParts": {
+      "preferred": 1,
+      "target": [
+        1,
+        4
+      ],
+      "max": 8,
+      "measured": {
+        "1": 19,
+        "2": 5,
+        "3": 4,
+        "4": 2,
+        "6": 1,
+        "8": 1
+      },
+      "multiPartGrammars": {
+        "dominantPlusAccents": {
+          "dominantShareMin": 0.55,
+          "examples": "apple .95/.05, deutschebank .84/.16, ramp .79/.21, notion .73/.27, attio .70/.30, clerk .57/.25/.18"
+        },
+        "rotationalRepeat": {
+          "equalSharesTolerance": 0.05,
+          "examples": "chase 4 x .25, slack-2019 4 x .18 + 4 x .07, dropbox .40/.40/.20"
+        }
+      },
+      "rule": "LA-02"
+    },
+    "partsPlusHoles": {
+      "target": [
+        1,
+        4
+      ],
+      "max": 6,
+      "measured": {
+        "holds16": {
+          "median": 2,
+          "max": 4
+        },
+        "detailLost16": {
+          "median": 3.5,
+          "max": 8
+        },
+        "fails16": [
+          7,
+          18
+        ]
+      },
+      "rule": "LA-03"
+    },
+    "outlineLenPerH": {
+      "target": [
+        3.5,
+        10
+      ],
+      "max": 12,
+      "measured": {
+        "holds16": {
+          "median": 7.45,
+          "p75": 8.7,
+          "max": 12
+        },
+        "fails16": [
+          11.2,
+          18.6
+        ]
+      },
+      "rule": "LA-03"
+    },
+    "coverageBBox": {
+      "target": [
+        0.3,
+        0.65
+      ],
+      "core": [
+        0.4,
+        0.6
+      ],
+      "hard": [
+        0.25,
+        0.85
+      ],
+      "measured": {
+        "min": 0.258,
+        "p25": 0.402,
+        "median": 0.505,
+        "p75": 0.584,
+        "max": 0.843,
+        "inCore": "18/32",
+        "inTarget": "28/32"
+      },
+      "lowAllowedFor": "single gestural stroke or open linework (nike .26, ramp .30, raycast .30, airbnb .32, mitsubishi .34)",
+      "highAllowedFor": "pure geometric solids (figma .72, cohere .78, mastercard .84)",
+      "rule": "LA-06"
+    },
+    "thinStrokeP25PctH": {
+      "min": 7.5,
+      "fail": 5.5,
+      "measured": {
+        "holds16": {
+          "min": 7.1,
+          "median": 21.35
+        },
+        "fails16": [
+          3.3,
+          5.5
+        ]
+      },
+      "note": "p25 of local thickness (largest inscribed disc) over the ink area; at 16px 7.5%H = 1.2px",
+      "rule": "LA-04"
+    },
+    "thinnestP5PctH": {
+      "warnBelow": 5.5,
+      "measured": {
+        "median": 12.7,
+        "holds16Min": 5.8
+      },
+      "rule": "LA-04"
+    },
+    "strokeP50PctH": {
+      "lineMarks": [
+        7.5,
+        25
+      ],
+      "solidMarks": [
+        25,
+        100
+      ],
+      "measured": {
+        "p25": 15.3,
+        "median": 26.1,
+        "p75": 34.2
+      }
+    },
+    "minSeparationPctH": {
+      "min": 7.5,
+      "fail": 4.0,
+      "measured": {
+        "holds16": {
+          "min": 4.9,
+          "median": 7.85
+        },
+        "detailLost16": {
+          "median": 5.8,
+          "values": "raycast 3.1, chase 4.1, slack-2019 5.3, cohere 5.8, attio 5.8, airtable 6.4"
+        }
+      },
+      "note": "min of (distance between distinct parts, inscribed diameter of the smallest counter)",
+      "rule": "LA-05"
+    },
+    "angleSystem": {
+      "maxDirections": 3,
+      "minShareInTopDirections": 0.95,
+      "families": {
+        "orthogonal": [
+          0,
+          90
+        ],
+        "triangleHex": [
+          0,
+          30,
+          60,
+          90,
+          120,
+          150
+        ],
+        "diagonal": [
+          45,
+          135
+        ],
+        "singleTilt": "one off-axis angle (and its mirror or perpendicular) used for every straight edge: slack-2013 17/107, airtable 22/157, airbnb and arc 64/116, supabase 51"
+      },
+      "measured": "19/25 straight-edged marks put >= 97% of straight edge length in <= 3 directions; dominant family orth 9, other/tilt 7, 30-60 6, 45 2",
+      "rule": "LA-08"
+    },
+    "arcRadii": {
+      "maxFamilies": 3,
+      "adjacentRatio": [
+        1.25,
+        2.0
+      ],
+      "fullCircleRPctH": 50,
+      "measured": "geometric arc marks: 1-3 radius families; adjacent radius ratios (23 pairs, 13 marks) 1.14-2.86, median 1.41; full-height circle (r 50%H) in 6 marks; only pinterest has a golden ratio (1.62); twitter 'golden circles' measure 1 : 2.0 : 2.8",
+      "rule": "LA-09"
+    },
+    "corners": {
+      "treatments": {
+        "sharp": "vercel, framer, mitsubishi, deutschebank, mistral, dropbox, raycast, linear",
+        "roundTerminal": {
+          "radiusOverStroke": [
+            0.45,
+            0.6
+          ],
+          "examples": "slack-2019 .51, figma .51, slack-2013 .46, openai .57, perplexity .5"
+        },
+        "softened": {
+          "radiusOverStroke": [
+            0.13,
+            0.25
+          ],
+          "radiusPctH": [
+            3.5,
+            9
+          ],
+          "examples": "chase .13, attio .16, airtable .17, supabase .23"
+        }
+      },
+      "measured": {
+        "roundedCornerRadiusPctH": {
+          "min": 2.8,
+          "median": 7.1,
+          "max": 16.7
+        }
+      },
+      "rule": "LA-10"
+    },
+    "symmetry": {
+      "exactMin": 0.94,
+      "brokenMax": 0.88,
+      "measured": {
+        "rotationalOnly": 7,
+        "mirrorOnly": 5,
+        "both": 4,
+        "asymmetric": 16,
+        "asymmetricMaxIoU": 0.872
+      },
+      "rule": "LA-11"
+    },
+    "colours": {
+      "designIn": 1,
+      "measured": "23/32 single colour; multi-colour marks colour whole parts (slack 4, figma 5, mastercard 3); gradients only in clerk and supabase",
+      "rule": "LA-13"
+    },
+    "survival16": {
+      "minFeaturePx": 1.2,
+      "minSeparationPx": 1.2,
+      "measured": "eye verdict at 16px: holds 20/32, interior detail lost 10/32, fails 2/32 (mercury, perplexity)",
+      "rule": "LA-14"
+    },
+    "module": {
+      "rule": "LA-12",
+      "measured": "18/32 marks are one module and its transforms (16 exact mirror/rotation) or a grid (figma H/3 with r = H/6, framer 8-unit grid in 16x24)",
+      "gridMaxStep": "H/12",
+      "exactSymmetryMin": 0.94
+    },
+    "nonRule": {
+      "goldenRatio": "not a construction pattern in the sample (1 of 23 radius ratios); do not claim it unless measured"
+    }
+  },
+  "lockup": {
+    "markOverCapHeight": {
+      "target": [
+        1.2,
+        1.5
+      ],
+      "range": [
+        1.0,
+        2.8
+      ],
+      "measured": {
+        "min": 1.0,
+        "p25": 1.19,
+        "median": 1.33,
+        "p75": 2.0,
+        "max": 2.78
+      },
+      "note": "cap height = ink top to baseline of the wordmark (ascender height for lowercase wordmarks)",
+      "rule": "LA-15"
+    },
+    "markOverXHeight": {
+      "target": [
+        1.5,
+        2.2
+      ],
+      "measured": {
+        "min": 1.33,
+        "p25": 1.58,
+        "median": 1.65,
+        "p75": 2.6,
+        "max": 3.2
+      },
+      "rule": "LA-15"
+    },
+    "gapOverMarkHeight": {
+      "target": [
+        0.2,
+        0.35
+      ],
+      "range": [
+        0.13,
+        0.45
+      ],
+      "measured": {
+        "min": 0.13,
+        "p25": 0.21,
+        "median": 0.28,
+        "p75": 0.35,
+        "max": 0.45
+      },
+      "rule": "LA-16"
+    },
+    "gapOverCapHeight": {
+      "target": [
+        0.25,
+        0.6
+      ],
+      "measured": {
+        "min": 0.2,
+        "p25": 0.25,
+        "median": 0.34,
+        "p75": 0.58,
+        "max": 1.04
+      },
+      "rule": "LA-16"
+    },
+    "gapPx": {
+      "target": [
+        4,
+        10
+      ],
+      "measured": {
+        "p25": 4.5,
+        "median": 6.5,
+        "p75": 10
+      }
+    },
+    "verticalAlign": {
+      "anchor": "centre of the mark on the centre of the cap-height band (cap top to baseline)",
+      "centreOffsetPctMark": {
+        "target": [
+          -3,
+          3
+        ],
+        "measured": {
+          "median": 0,
+          "p25": 0,
+          "p75": 2,
+          "within3": "12/17"
+        }
+      },
+      "markBelowBaselinePctMark": {
+        "measured": {
+          "median": 13,
+          "p25": 8,
+          "p75": 25
+        }
+      },
+      "rule": "LA-17"
+    },
+    "wordmark": {
+      "stemOverCap": {
+        "target": [
+          0.17,
+          0.22
+        ],
+        "measured": {
+          "min": 0.138,
+          "p25": 0.174,
+          "median": 0.195,
+          "p75": 0.217,
+          "max": 0.333
+        },
+        "calibration": "Helvetica Neue 400 = .123, 500 = .164, 700 = .205"
+      },
+      "letterGapOverCap": {
+        "target": [
+          0.05,
+          0.1
+        ],
+        "measured": {
+          "min": 0.047,
+          "p25": 0.067,
+          "median": 0.083,
+          "p75": 0.1,
+          "max": 0.391
+        },
+        "allCapsTarget": [
+          0.1,
+          0.4
+        ]
+      },
+      "capHeightPx": {
+        "target": [
+          15,
+          19
+        ],
+        "measured": {
+          "p25": 15,
+          "median": 16,
+          "p75": 18.75
+        }
+      },
+      "case": "13/22 nav wordmarks are lowercase",
+      "rule": "LA-18"
+    },
+    "markStrokeOverWordmarkStem": {
+      "lineMarks": [
+        0.8,
+        1.4
+      ],
+      "measured": "airbnb .81, pinterest .87, ramp .98, slack 1.05, mistral 1.2, clerk 1.33, attio 1.38; solid marks 2-4x (no constraint)",
+      "rule": "LA-19"
+    },
+    "navMarkHeightPx": {
+      "inLockup": {
+        "target": [
+          20,
+          26
+        ],
+        "measured": {
+          "p25": 20,
+          "median": 24,
+          "p75": 25.5
+        }
+      },
+      "markOnly": {
+        "target": [
+          18,
+          32
+        ],
+        "measured": {
+          "min": 16,
+          "median": 27.5,
+          "max": 32
+        }
+      },
+      "rule": "LA-20"
+    }
+  }
+}
