@@ -179,6 +179,10 @@ Every rule here is a direct founder verdict on real output. It outranks books, w
   **Why** Founder on Margin build 1: "the red bubble doesn't fade in, it just stays there when loading in, very distracting".
   **Applies to** every looping animation. **Check** filmstrip at 300ms steps: no looping element visible before its entrance; grep `animate={{ .*opacity: \[0\.[1-9]` for loops starting visible. **Source** founder, Margin build 1
 
+- **RULE** [founder] Range is mandatory: no two consecutive builds may share the same page family and skeleton. Rotate between image-led heroes (engraving, painting, photo, generative scenes behind crisp product), framed pages (site as a sheet on a backdrop), left-aligned editorial heroes, mono/sharp operator styles, AI-composer heroes and the centred product-over-canvas default. Polish rules (spacing, nav comfort, radii consistency, motion discipline) carry across; the aesthetic does not.
+  **Why** Founder after Kestrel and Margin: "now I see the patterns, you're a bit repetitive and we need a lot of different styles and aesthetics", with references from @1Aakib and @uisabor (knowledge/web/style-refs-x-2026-10.md).
+  **Applies to** every new brand. **Check** DIRECTION.md states the family of this build and of the last two; they differ. **Source** founder 2026-10-09
+
 ## 5. Exceptions & judgement calls
 
 - The split layout (copy left, visual right) was rejected by Larpo when the right side was a decorative dashboard. With a real product world on the right (the payout globe) the founder accepted it.

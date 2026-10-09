@@ -1,0 +1,40 @@
+@import "tailwindcss";
+@import "@fontsource-variable/hanken-grotesk";
+@import "@fontsource-variable/jetbrains-mono";
+/* Bound to system/systems/strata. theme.css redefines --radius-*; this build uses explicit px radii. */
+@import "./theme.css";
+@theme {
+  --font-sans: "Hanken Grotesk Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono Variable", ui-monospace, monospace;
+  --color-backdrop: #d3dce6;
+  --color-sheet: #fbfaf8;
+  --color-paper: #f2efe7;
+  --color-ink: #0f1729;
+  --color-sub: #3c4a5d;
+  --color-soft: #586476;
+  --color-line: #dde3ea;
+  --color-blue: #1f3a68;
+  --color-ok: #17784a;
+  --color-ok-tint: #e5f3eb;
+  --color-warn: #8a5a0b;
+}
+:root {
+  --canvas: #fbfaf8; --ink: #0f1729; --sub: #3c4a5d; --soft: #586476; --line: #dde3ea; --rail: #dde3ea; --weak: #f1f3f6; --track: #eef1f4; --accent: #1f3a68;
+  --shadow-ring: 0 0 0 1px rgba(15, 23, 41, 0.10);
+  --shadow-tile: 0 0 0 1px rgba(15, 23, 41, 0.09), 0 1px 2px rgba(15, 23, 41, 0.05), 0 10px 20px -12px rgba(15, 23, 41, 0.22);
+  --shadow-frame: 0 0 0 1px rgba(15, 23, 41, 0.12), 0 2px 4px rgba(15, 23, 41, 0.04), 0 40px 70px -36px rgba(15, 23, 41, 0.45);
+}
+body { background: var(--color-backdrop); color: var(--ink); font-family: var(--font-sans); -webkit-font-smoothing: antialiased; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.tnum { font-variant-numeric: tabular-nums; }
+.mono-ui { font-family: var(--font-mono); text-transform: uppercase; letter-spacing: 0.06em; }
+
+/* Sharp operator controls: 4px radius, mono uppercase labels. Hover = fill shift, press = 0.98. */
+.btn-ink { background: #0f1729; color: #fff; border-radius: 4px; box-shadow: inset 0 1px 0 rgba(255,255,255,0.12), 0 1px 2px rgba(15,23,41,0.3); transition: background-color 220ms; }
+.btn-ink:hover { background: #22304a; }
+.btn-paper { background: #fff; color: #0f1729; border-radius: 4px; box-shadow: 0 0 0 1px rgba(15,23,41,0.16), 0 1px 2px rgba(15,23,41,0.06); transition: background-color 220ms; }
+.btn-paper:hover { background: #f4f6f8; }
+
+.dots { background-image: radial-gradient(rgba(15,23,41,0.14) 1px, transparent 1.2px); background-size: 20px 20px; }
+.hatch { background-image: repeating-linear-gradient(135deg, rgba(15,23,41,0.10) 0 1px, transparent 1px 9px); }
+.engraved-text { background-image: repeating-linear-gradient(to bottom, #f2efe7 0 2px, rgba(242,239,231,0.35) 2px 4px); -webkit-background-clip: text; background-clip: text; color: transparent; }
