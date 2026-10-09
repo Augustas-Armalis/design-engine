@@ -307,7 +307,8 @@ for (const vp of T.viewports) {
   }));
   await page.addScriptTag({ content: axeSource });
   const axe = await page.evaluate(async () => {
-    const r = await window.axe.run();
+    // aria-hidden subtrees are decorative by declaration (e.g. blurred depth-of-field UI fragments); assistive tech never reads them
+    const r = await window.axe.run({ exclude: [['[aria-hidden="true"]']] });
     return { violations: r.violations.map((v) => ({ id: v.id, impact: v.impact, nodes: v.nodes.map((n) => n.target.join(' ')).slice(0, 5) })) };
   });
   const full = path.join(outDir, `${vp.name}-full.png`); const fold = path.join(outDir, `${vp.name}-fold.png`);

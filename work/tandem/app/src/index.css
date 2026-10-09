@@ -1,0 +1,41 @@
+@import "tailwindcss";
+@import "@fontsource-variable/inter/opsz.css";
+@import "@fontsource-variable/geist-mono";
+@theme {
+  --font-sans: "Inter Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Geist Mono Variable", ui-monospace, monospace;
+}
+/* Tandem: built to Florian Hoeller's grammar (affectUI / adfects, measured in knowledge/benchmarks/flohoeller):
+   pure white canvas, Inter 500 at modest sizes, muted #737373 copy, card-in-card frames, a dark pill made of two stacked
+   gradients with a 1px ring, a 4% grey ghost twin, real-feeling content, depth by blur rather than by colour. */
+:root {
+  --canvas: #ffffff; --panel: #f7f7f7; --panel-2: #f2f2f2;
+  --line: rgba(0, 0, 0, 0.07); --line-2: rgba(0, 0, 0, 0.11);
+  --ink: #0a0a0a; --sub: #666666; --soft: #707070;
+  --blue: #2f6bff; --blue-tint: #edf2ff; --green: #15803d; --green-tint: #ecfdf3; --amber: #b45309; --amber-tint: #fff7ed;
+  --pink: #c91a74; --pink-tint: #fdeef5;
+  --accent: var(--blue); --weak: var(--panel); --track: var(--panel);
+  --shadow-ring: 0 0 0 1px var(--line);
+  --card: 0 0 0 1px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04), 0 8px 24px -12px rgba(0, 0, 0, 0.12);
+}
+html, body { background: var(--canvas); }
+body { color: var(--ink); font-family: var(--font-sans); font-feature-settings: "cv11", "ss01"; -webkit-font-smoothing: antialiased; }
+:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
+
+/* the dark pill: two stacked gradients (face + rim) through a transparent 1px border, a hard 1px ring, a soft drop */
+.pill-dark { color: #fafafa; border: 1px solid transparent; background: linear-gradient(#323137, #201e25) padding-box, linear-gradient(#4b4951, #31303a, #18171b) border-box; box-shadow: 0 0 0 1px #0d0d0d, 0 2px 4px rgba(0, 0, 0, 0.1); transition: filter 140ms cubic-bezier(.22,1,.36,1); }
+@media (hover: hover) { .pill-dark:hover { filter: brightness(1.18); } }
+.pill-ghost { color: var(--ink); background: rgba(0, 0, 0, 0.04); transition: background-color 140ms cubic-bezier(.22,1,.36,1); }
+@media (hover: hover) { .pill-ghost:hover { background: rgba(0, 0, 0, 0.07); } }
+.pill-white { color: var(--ink); background: #fff; box-shadow: 0 0 0 1px var(--line-2), 0 1px 2px rgba(0, 0, 0, 0.05); transition: background-color 140ms; }
+@media (hover: hover) { .pill-white:hover { background: #fafafa; } }
+
+.press { transition: transform 160ms cubic-bezier(.22,1,.36,1); }
+.press:active { transform: scale(0.97); }
+@media (prefers-reduced-motion: reduce) { .press:active { transform: none; } }
+h1, h2, h3 { text-wrap: balance; }
+p { text-wrap: pretty; }
+.tnum { font-variant-numeric: tabular-nums; }
+@keyframes shimmer { from { background-position: 100% 0 } to { background-position: -100% 0 } }
+.shimmer { background: linear-gradient(90deg, var(--soft) 0%, var(--ink) 50%, var(--soft) 100%); background-size: 200% 100%; -webkit-background-clip: text; background-clip: text; color: transparent; animation: shimmer 1.8s linear infinite; }
+@media (prefers-reduced-motion: reduce) { .shimmer { animation: none; color: var(--sub); background: none; } }
