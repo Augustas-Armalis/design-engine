@@ -15,12 +15,12 @@ export function Mark({ size = 21, variant = markVariant(), className = '' }: { s
         <>
           <mask id={id} maskUnits="userSpaceOnUse" x="-10" y="-10" width="120" height="120">
             <rect x="-10" y="-10" width="120" height="120" fill="#fff" />
-            <rect x="-5" y="30" width="110" height="7.5" fill="#000" /><rect x="46" y="30" width="8" height="75" fill="#000" />
+            <rect x="-5" y="30" width="110" height="8.5" fill="#000" /><rect x="45.5" y="30" width="9" height="75" fill="#000" />
           </mask>
           <circle cx="50" cy="50" r="51" mask={`url(#${id})`} />
         </>
       ) : (
-        <><path d="M46.5 2 A33 33 0 0 0 46.5 68 Z" /><path d="M53.5 32 A33 33 0 0 1 53.5 98 Z" /></>
+        <><path d="M46 7 A33 33 0 0 0 46 73 Z" /><path d="M54 27 A33 33 0 0 1 54 93 Z" /></>
       )}
     </svg>
   )

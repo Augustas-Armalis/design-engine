@@ -29,3 +29,4 @@ Apple HIG motion page and m3.material.io were client-rendered and unreadable (va
 
 Pick a fresh combination across these with `node tools/variety.mjs pick --mode dark|light --seed <name>`.
 - `logo-craft.md`: how abstract/geometric marks are built (12 families with recipes and numbers, amateur-vs-pro checklist, lockup pairing spec, 9-step test protocol, LG-01..28). Pairs with `system/logo/families.json` and `tools/logo.mjs`.
+- `logo-anatomy-measured.md`: 32 shipped marks and 30 live navs measured (parts, coverage, aspect, min stroke/gap vs 16px survival, angles, radii ratios, symmetry, lockup ratios), LA-01..20. Targets in `system/logo/anatomy.json`; checker `node tools/logo_measure.mjs <mark.svg>` (exit 1 on fail).

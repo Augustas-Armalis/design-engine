@@ -10,3 +10,7 @@
 - override: dark-mode n/a (light study).
 
 <!-- variety: layout=art-led nav=G03 button=flat type=swiss-regular palette=light system=kestrel -->
+
+## Brand mark (2026-10-09)
+Constructed per knowledge/web/logo-craft.md: 10 concepts (work/tandem/brand/marks.mjs, present sheet), 6 finalists (finalists.mjs / finalists.png), 2 picks wired in (`?mark=h` switches): **T-cut** (default, `brand/tandem-mark.svg`) and **Halves**. Both hold at 16px in `tools/logo_measure.mjs`.
+override: LA-06 (ink coverage <= 0.65) because the T-cut is a solid disc with slits by design (0.655, same class as Chase / Mastercard); the slits are 8.4% H so it still holds at 16px.
