@@ -170,8 +170,8 @@ export function RollingNumber({ value, at = 0, stagger = 0.045, className = '' }
           const d = Number(c)
           return (
             <span key={`d${key}`} className="relative inline-block h-[1.2em] overflow-hidden leading-[1.2em] [mask-image:linear-gradient(to_bottom,transparent,#000_9%,#000_91%,transparent)]">
-              <span className="invisible">0</span>
-              <motion.span className="absolute inset-x-0 top-0 flex flex-col" initial={{ y: '0%' }} animate={{ y: `${-d * 10}%` }}
+              <span className="invisible">{c}</span>{/* sized to its own digit, so proportional figures keep their spacing */}
+              <motion.span className="absolute inset-x-0 top-0 flex flex-col items-center" initial={{ y: '0%' }} animate={{ y: `${-d * 10}%` }}
                 transition={{ delay: (first ? wait : 0) + i * stagger, duration: first ? 1.1 : 0.6, ease: ease.outExpo }}>
                 {'0123456789'.split('').map((n) => <span key={n} className="h-[1.2em]">{n}</span>)}
               </motion.span>
