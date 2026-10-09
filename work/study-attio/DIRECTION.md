@@ -1,34 +1,15 @@
-# Study Attio: direction
+# Study Attio: direction (private study, not a client build)
 
-**Brief:** <product, audience, the one action, the proof needed>
+**Brief:** 1:1 recreation of Attio's Deals records table (sidebar + view bar + sort/filter bar + table + footer aggregates) to train product-UI craft after the founder rejected `work/acquisity-dashboard` as "nothing like Attio... too noobish". Credit: Attio. Not for publication.
 
-## Hero class
-<product proof | brand campaign | editorial | interactive> and why. Default SaaS: centred copy over a full product dashboard (founder rule).
+**Reference:** `ref/reference.png` = attio.com/platform/data "sales-screen" image, served at 4536x2252 (1134x563 CSS @4x). Copy in `knowledge/benchmarks/attio/img/data-sales-screen-original-4536x2252.png`.
 
-## Concept
-<one sentence: what world is this product in?>
+**Method:** measure the reference at 4x (hairline scan, ink-band scan, point colour sampling: `tools/lines.cjs`, `tools/bands.cjs`, `tools/probe.cjs`), build at native 1134x563 in plain React + CSS (`app/src/App.tsx`, `app/src/study.css`), render @4x, compose reference | render | 50% onion | difference (`tools/compare.cjs <N>` writes `round-N.png` + `round-N.json`), read the gap per zone, fix, repeat. Company logos and people photos are cropped from the reference (`app/public/ref-assets/`) so the overlay measures layout, not photography.
 
-## Reference triad
-- Structure: <ref> -> rule taken
-- Type and identity: <ref> -> rule taken
-- Proof, material, motion: <ref> -> rule taken
+**Rounds:** 1 -> 6, pixels off (>24/255 mean channel diff) 5.18% -> 1.78%; mean abs diff 8.59 -> 2.19. Lessons are rules in `knowledge/web/attio-product-ui.md` (section 2.8 and section 4).
 
-## Divergence (vs last accepted: Kestrel, and the last 8 ledger entries)
-| axis | Kestrel | Study Attio |
-|---|---|---|
-| structure | centred over dashboard | |
-| type voice | Inter 550 -4.5% | |
-| palette | grey #f7f7f7, blue #335cff | |
-| CTA grammar | fancy ink + white, 44px r14 | |
-| nav grammar | grey track + sliding white pill | |
-| motion signature | tiles + routes landing dots | |
-| product world | analytics dashboard + AI panel | |
+**Residual gap (accepted):** Attio's own icon glyphs (sort arrows with a plus, the select/"Source" icon, the sidebar toggle with two dots) have no exact public equivalent; sub-pixel text rasterisation differs (their PNG was rendered by their own pipeline). Everything else lands within 0.5 px.
 
-## Bound system
-<slug> (contract met)
+**Overrides:** founder rule "use a professional icon set" kept: nearest Lucide/Remix/Phosphor glyphs used, no hand-drawn SVG.
 
-## Kit primitives used (system/kits/product-hero/GUIDE.md)
-<Word, Stage, Frame, PillNav, Segmented, CountUp, Route, FloatTile, Rails: which, and which were replaced by a brand-specific construction>
-
-## Overrides
-- override: <rule-id> because <reason>
+Run: `cd app && npx vite build && node ../tools/compare.cjs 7`.
