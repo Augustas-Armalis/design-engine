@@ -1,0 +1,53 @@
+{
+  "name": "tandem",
+  "date": "2026-10-09",
+  "verdict": "reject",
+  "why": "hero is a bit badly designed for this minimalism (scattered depth-of-field collage read messy and unbalanced)",
+  "summary": {
+    "pass": 25,
+    "warn": 4,
+    "fail": 0
+  },
+  "fingerprint": {
+    "h1": {
+      "px": 52,
+      "lh": "56.16px",
+      "ls": "-1.664px",
+      "weight": "500",
+      "family": "Inter Variable",
+      "text": "Agents That AskBefore They Act"
+    },
+    "fonts": [
+      "Inter Variable",
+      "Geist Mono Variable"
+    ],
+    "accentHues": [
+      0,
+      30,
+      45,
+      165,
+      180,
+      195,
+      225,
+      240,
+      255
+    ],
+    "radii": [
+      14,
+      "pill",
+      5,
+      18,
+      10,
+      16,
+      4
+    ],
+    "navHeight": 64,
+    "contentWidth": "602",
+    "sectionPad": null,
+    "sectionCount": 0,
+    "bodyPx": 17,
+    "heroLayout": "integrated",
+    "navNumbered": false
+  },
+  "screenshot": "ledger/shots/2026-10-09-tandem-fold.png"
+}

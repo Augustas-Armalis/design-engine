@@ -3,7 +3,7 @@
 // Space/Enter hold) and plays itself in demo mode. Sample data, fictional orders.
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { AnimatePresence, motion, useReducedMotion } from 'motion/react'
-import { ArrowCounterClockwise, Check, CreditCard, Package, ShieldCheck } from '@phosphor-icons/react'
+import { Check, CreditCard, Package, RotateCcw, ShieldCheck } from 'lucide-react'
 import { AppTile, Avatar, Chip } from './ui'
 
 const ease = [0.22, 1, 0.36, 1] as const
@@ -78,9 +78,9 @@ export default function Approval({ demo = false, delay = 0, onPhase }: { demo?: 
                 <span className="grid size-[18px] shrink-0 place-items-center">
                   <AnimatePresence mode="wait" initial={false}>
                     {ok ? (
-                      <motion.span key="ok" initial={{ scale: 0.5, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} transition={{ duration: 0.3, ease }} className="grid size-[18px] place-items-center rounded-full bg-[var(--green)]"><Check size={11} weight="bold" color="#fff" /></motion.span>
+                      <motion.span key="ok" initial={{ scale: 0.5, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} transition={{ duration: 0.3, ease }} className="grid size-[18px] place-items-center rounded-full bg-[var(--green)]"><Check size={11} strokeWidth={3} color="#fff" /></motion.span>
                     ) : (
-                      <motion.span key="box" exit={{ opacity: 0 }}><Package size={16} className="text-[var(--soft)]" /></motion.span>
+                      <motion.span key="box" exit={{ opacity: 0 }}><Package size={16} strokeWidth={1.5} className="text-[var(--soft)]" /></motion.span>
                     )}
                   </AnimatePresence>
                 </span>
@@ -93,7 +93,7 @@ export default function Approval({ demo = false, delay = 0, onPhase }: { demo?: 
         </div>
         <div className="mt-3 flex flex-wrap items-center gap-1.5">
           <Chip tone="white"><AppTile icon={CreditCard} hue="#635bff" size={14} />Payments</Chip>
-          <Chip tone="white"><ShieldCheck size={12} weight="fill" className="text-[var(--green)]" />Refunds only</Chip>
+          <Chip tone="white"><ShieldCheck size={12} strokeWidth={2} className="text-[var(--green)]" />Refunds only</Chip>
           <Chip tone="white">Once · 10 min</Chip>
         </div>
       </div>
@@ -102,9 +102,9 @@ export default function Approval({ demo = false, delay = 0, onPhase }: { demo?: 
         <AnimatePresence mode="popLayout" initial={false}>
           {phase === 'done' ? (
             <motion.div key="receipt" initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} transition={{ duration: 0.35, ease }} className="flex flex-1 items-center gap-2.5 pl-1">
-              <span className="grid size-6 place-items-center rounded-full bg-[var(--green-tint)]"><Check size={13} weight="bold" className="text-[var(--green)]" /></span>
+              <span className="grid size-6 place-items-center rounded-full bg-[var(--green-tint)]"><Check size={13} strokeWidth={2.5} className="text-[var(--green)]" /></span>
               <span className="text-[13px]"><span className="font-[500]">Refunded ${total.toFixed(2)}</span><span className="text-[var(--sub)]"> · 3 notified</span></span>
-              <button type="button" className="pill-ghost press ml-auto flex h-8 items-center gap-1.5 rounded-full px-3 text-[12.5px] font-[500]"><ArrowCounterClockwise size={13} />Undo <span className="tnum text-[var(--soft)]">0:09</span></button>
+              <button type="button" className="pill-ghost press ml-auto flex h-8 items-center gap-1.5 rounded-full px-3 text-[12.5px] font-[500]"><RotateCcw size={13} strokeWidth={1.75} />Undo <span className="tnum text-[var(--soft)]">0:09</span></button>
             </motion.div>
           ) : (
             <motion.div key="actions" exit={{ opacity: 0, y: -6 }} transition={{ duration: 0.2 }} className="flex flex-1 items-center gap-2">

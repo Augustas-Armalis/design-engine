@@ -1,7 +1,7 @@
 // Tandem primitives in Flo Hoeller's grammar: chips, app tiles, avatars, the card-in-card showcase frame.
 import type { ReactNode } from 'react'
-import type { Icon } from '@phosphor-icons/react'
-import { Copy, Lightning } from '@phosphor-icons/react'
+import type { LucideIcon as Icon } from 'lucide-react'
+import { Copy, Zap } from 'lucide-react'
 
 export function Chip({ children, tone = 'grey', className = '' }: { children: ReactNode; tone?: 'grey' | 'blue' | 'green' | 'amber' | 'pink' | 'white'; className?: string }) {
   const t = {
@@ -13,7 +13,7 @@ export function Chip({ children, tone = 'grey', className = '' }: { children: Re
 
 /** Generic app tile (no third-party logos): a soft colour square with a white filled glyph. */
 export function AppTile({ icon: I, hue, size = 18 }: { icon: Icon; hue: string; size?: number }) {
-  return <span className="grid shrink-0 place-items-center rounded-[5px] shadow-[inset_0_0_0_1px_rgba(0,0,0,0.06),inset_0_1px_0_rgba(255,255,255,0.25)]" style={{ width: size, height: size, background: hue }}><I size={size * 0.62} weight="fill" color="#fff" /></span>
+  return <span className="grid shrink-0 place-items-center rounded-[5px] shadow-[inset_0_0_0_1px_rgba(0,0,0,0.06),inset_0_1px_0_rgba(255,255,255,0.25)]" style={{ width: size, height: size, background: hue }}><I size={size * 0.62} strokeWidth={2.4} color="#fff" /></span>
 }
 
 const AV: Record<string, string> = { MR: '#dbe7ff,#1d3f9c', JW: '#fde7d4,#8a3b0b', AK: '#e3f6e8,#14532d', SL: '#efe4ff,#4c1d95', TA: '#0a0a0a,#ffffff' }
@@ -29,7 +29,7 @@ export function Showcase({ category, title, desc, children, pro = true }: { cate
     <figure className="w-[440px] rounded-[24px] bg-white p-2 shadow-[0_0_0_1px_var(--line)]">
       <div className="relative grid h-[420px] place-items-center overflow-hidden rounded-[18px] bg-[var(--panel)] shadow-[inset_0_0_0_1px_rgba(0,0,0,0.03)]">
         <span className="absolute left-3 top-3"><Chip tone="white">{category}</Chip></span>
-        {pro && <span className="absolute right-3 top-3"><Chip tone="pink" className="shadow-[0_0_0_1px_rgba(201,26,116,0.18)]"><Lightning size={12} weight="fill" />Pro</Chip></span>}
+        {pro && <span className="absolute right-3 top-3"><Chip tone="pink" className="shadow-[0_0_0_1px_rgba(201,26,116,0.18)]"><Zap size={12} fill="currentColor" strokeWidth={0} />Pro</Chip></span>}
         {children}
       </div>
       <figcaption className="flex items-center gap-3 px-3 pb-2.5 pt-3.5">
@@ -37,7 +37,7 @@ export function Showcase({ category, title, desc, children, pro = true }: { cate
           <div className="text-[16px] font-[500] tracking-[-0.01em]">{title}</div>
           <div className="mt-0.5 truncate text-[15px] text-[var(--sub)]">{desc}</div>
         </div>
-        <button type="button" aria-label={`Copy ${title}`} className="pill-white press grid size-10 shrink-0 place-items-center rounded-full"><Copy size={16} weight="fill" className="text-[#404040]" /></button>
+        <button type="button" aria-label={`Copy ${title}`} className="pill-white press grid size-10 shrink-0 place-items-center rounded-full"><Copy size={16} strokeWidth={1.75} className="text-[#404040]" /></button>
       </figcaption>
     </figure>
   )
