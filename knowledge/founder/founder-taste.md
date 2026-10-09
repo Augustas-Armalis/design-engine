@@ -195,6 +195,37 @@ Every rule here is a direct founder verdict on real output. It outranks books, w
   **Why** Founder on Nocturne: "not up to our quality levels... everything is just loading in and it's a bit noobish". Kestrel's load-in was praised once; repeating the same kit stagger on Margin, Strata and Nocturne turned it into a template. Research agrees: 8 of 15 top heroes show the headline in the first frame and the median hero settles in ~1.5s (knowledge/web/product-motion-patterns.md).
   **Applies to** every hero load-in. **Check** filmstrip at 0/300/800/1500ms: the composed hero (headline + CTA) is readable by 300ms unless the concept needs otherwise; entrance groups <= 3; DIRECTION.md names the conceptual reveal and how it differs from the last build's. **Source** founder, Nocturne build 1
 
+- **RULE** [founder] Every product visual on one site speaks ONE visual language: one edge treatment for white boxes (a 1px hairline OR a faint 6% ring, never both, never a borderless box with a muddy shadow), one radius ladder by element height (nested radius = outer minus inset), one grey shadow scale of at most 3 levels, type roles at 500/600 only, one accent rule (accent only for the selected/primary thing, tints at ~8%). Benchmark is Commslayer/Attio product UI. Audit computed values across ALL visuals before shipping, not one at a time.
+  **Why** Founder on the Kaching app visuals (2026-10-09): "the animations are in 3 completely different styles of colours, effects, roundness... what the hell", "random box components without borders and bad shadows or double pixel stroke"; client: "I saw 3-4 different styles of borders and how things look and move". Root cause found in code: three competing box-shadow recipes in one style file.
+  **Applies to** every animated product visual / bento scene / card. **Check** across all visuals: distinct box-shadow strings <= 3, no element with both a border and a 0 0 0 1px ring, distinct radii map to the ladder, font weights in {500, 600}. **Source** founder + client, Kaching round 2
+
+- **RULE** [founder] Sibling pages built from one template keep an identical bento: same box sizes, positions and padding at every breakpoint; only the content differs. Never mirror or resize the grid for one page.
+  **Why** Client on Kaching app pages: "the Bundles section size and how things work is not the same as Subscriptions".
+  **Applies to** app/product pages sharing a template. **Check** bento box rects match across all sibling pages at 1440/768/375. **Source** client, Kaching round 2
+
+- **RULE** [founder] Each product visual has its own signature build-in (rows assemble, a cursor acts, a dithered product photo develops, a number counts, a connector draws) on shared timing tokens; never the same generic "panel fades/rises in like a card" for every visual.
+  **Why** Founder: "each visual is like a card, it loads in just like a card, couldn't it do something of its own?"
+  **Applies to** bento scenes, hero visuals, step visuals. **Check** filmstrip of two visuals side by side: their first 800ms differ in choreography, not just content. **Source** founder, Kaching round 2
+
+- **RULE** [founder] Product photos inside an app/section visual are tinted from that section's own palette (or neutral grey); a red tee glowing on the green Cart card is wrong. Palettes stay clean: gold is a clean amber, never olive or muddy.
+  **Why** Client: "why does the red T-shirt glow on the green card instead of being green", "the yellow is too dirty compared to the new one".
+  **Applies to** dithered/duotone product art and app colour fields. **Check** each product-art ramp's hue sits within ~25deg of its section accent or is neutral. **Source** client, Kaching round 2
+
+- **RULE** [founder] Dither (and gradient) fields should end in a slow, uneven, drifting wave, not one straight horizontal line, and the wave stays modest: depth about a quarter of the fade band, capped near 85px, wavelength ~640px. 0.36 of the band / 120px cap read "good but a bit too big".
+  **Why** Client: "make some waves so it's not all one straight horizontal line, it looks basic"; founder after the first pass: "they're good but just a bit too big".
+  **Applies to** dither/gradient section edges. **Check** the fade boundary varies along its length; peak depth <= ~86px at 1440. **Source** client + founder, Kaching round 2
+
+- **RULE** [founder] Never reproduce a friend brand's signature section identically (Kaching's founders' letter mirrored Commslayer's structure and was rejected); take the idea, then make it unmistakably ours (Kaching: a torn notebook page with 2px dither fibres along the tear).
+  **Why** Client: "it's not similar, it's identical to Commslayer, I'll be ashamed to look their founder in the eye".
+  **Applies to** reference-driven sections. **Check** structure, material and copy rhythm all differ from the reference. **Source** client, Kaching round 2
+
+- **RULE** [founder] Hero title sizes are one scale across a site's secondary pages; no page gets a one-off giant h1 (Kaching About was "huge and out of place").
+  **Applies to** multi-page sites. **Check** h1 font-size is identical across secondary pages at each breakpoint. **Source** founder, Kaching round 2
+
+- **RULE** [founder] Auto-advancing tabs show progress as a small circular ring beside the active label (or a fill inside a full-width segmented track), never a 1px line under a pill.
+  **Why** Client: "that 1px line at the bottom of the pill doesn't look good, try a small circular progress next to the name".
+  **Applies to** auto-cycling tab selectors. **Check** no progress hairline under pills; the indicator is driven by the same clock as the advance. **Source** client, Kaching round 2
+
 ## 5. Exceptions & judgement calls
 
 - The split layout (copy left, visual right) was rejected by Larpo when the right side was a decorative dashboard. With a real product world on the right (the payout globe) the founder accepted it.
