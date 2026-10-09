@@ -1,0 +1,13 @@
+{
+  "slug": "nocturne",
+  "name": "Nocturne",
+  "showcaseHeadline": "Wake Up To A Finished Backlog",
+  "signature": "Dark-first: deep blue-black night, a planet horizon where dawn breaks behind the product, warm amber as the single accent (the morning), Geist at 560, glass product surfaces with lit top edges.",
+  "personality": { "brandHue": 62, "brandChroma": 0.14, "neutralTemperature": "cool", "radiusPreset": "default", "depthStyle": "border", "density": "default", "motionPersonality": "calm", "typeVoice": "Quiet, confident, morning-after: the work is already done." },
+  "fonts": { "display": "'Geist Variable', ui-sans-serif, system-ui, sans-serif", "body": "'Geist Variable', ui-sans-serif, system-ui, sans-serif", "mono": "'Geist Mono Variable', ui-monospace, monospace" },
+  "type": { "ratio": 1.25, "basePx": 16, "displayMaxPx": 72, "displayWeight": 560, "displayTracking": -0.045, "displayLeading": 1.04, "bodyLeading": 1.5 },
+  "bestFor": ["AI agents", "developer tools", "background automation"],
+  "avoidFor": ["daytime consumer brands"],
+  "owned": ["Dawn horizon: light rises behind the product as the night's work completes", "Amber only for the morning: highlights, the rim light, 'ready' states", "Glass surfaces with a lit top edge"],
+  "never": ["mono poster headlines", "neon glows", "more than one accent hue"]
+}

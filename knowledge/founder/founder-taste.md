@@ -183,6 +183,14 @@ Every rule here is a direct founder verdict on real output. It outranks books, w
   **Why** Founder after Kestrel and Margin: "now I see the patterns, you're a bit repetitive and we need a lot of different styles and aesthetics", with references from @1Aakib and @uisabor (knowledge/web/style-refs-x-2026-10.md).
   **Applies to** every new brand. **Check** DIRECTION.md states the family of this build and of the last two; they differ. **Source** founder 2026-10-09
 
+- **RULE** [founder] Leave real air between the hero CTAs and the product frame: at least 64px from the bottom of the buttons to the top of the frame (Strata had 44px and read cramped). Measure it; do not eyeball it.
+  **Why** Founder on Strata: "not bad, just the product is too close to the buttons".
+  **Applies to** product-led heroes. **Check** frame.top - cta.bottom >= 64px at 1440x900. **Source** founder, Strata build 1
+
+- **RULE** [founder] Generative, one-of-a-kind backgrounds are welcome when they are crafted (Strata's live engraving: "interesting style choice, really unique"); keep exploring bespoke shaders and illustrations per brand instead of stock gradients.
+  **Why** Founder on Strata's engraved landscape.
+  **Applies to** signature visuals. **Check** DIRECTION.md names the bespoke visual and why it fits the product. **Source** founder, Strata build 1
+
 ## 5. Exceptions & judgement calls
 
 - The split layout (copy left, visual right) was rejected by Larpo when the right side was a decorative dashboard. With a real product world on the right (the payout globe) the founder accepted it.

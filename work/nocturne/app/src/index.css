@@ -1,0 +1,21 @@
+@import "tailwindcss";
+@import "@fontsource-variable/geist";
+@import "@fontsource-variable/geist-mono";
+/* Bound to system/systems/nocturne (dark roles). theme.css redefines --radius-*; this build uses explicit px radii. */
+@import "./theme.css";
+@theme {
+  --font-sans: "Geist Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Geist Mono Variable", ui-monospace, monospace;
+}
+:root {
+  color-scheme: dark;
+  --canvas: #05060a; --ink: #f5f6f8; --sub: rgba(245,246,248,0.62); --soft: rgba(245,246,248,0.5); --accent: #f5b26b;
+  --shadow-ring: inset 0 0 0 1px rgba(255,255,255,0.08);
+}
+body { background: #05060a; color: #f5f6f8; font-family: var(--font-sans); -webkit-font-smoothing: antialiased; }
+:focus-visible { outline: 2px solid #f5b26b; outline-offset: 2px; }
+.tnum { font-variant-numeric: tabular-nums; }
+/* light-on-dark primary: white face, soft inner shade, lit top edge */
+.btn-light { background: linear-gradient(180deg, #ffffff 0%, #e9eaee 100%); color: #0b0d13; box-shadow: 0 0 0 1px rgba(255,255,255,0.9), inset 0 -1px 0 rgba(0,0,0,0.08), 0 8px 24px -8px rgba(245,178,107,0.35); transition: filter 220ms; }
+.btn-light:hover { filter: brightness(0.96); }
+.headline > span { background-image: linear-gradient(180deg, #ffffff 30%, rgba(255,255,255,0.8) 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
