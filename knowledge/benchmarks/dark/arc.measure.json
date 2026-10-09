@@ -1,0 +1,1173 @@
+{
+ "url": "https://arc.net",
+ "scheme": "dark",
+ "pageHeight": 6125,
+ "fold": {
+  "title": "Arc from The Browser Company",
+  "vw": 1440,
+  "pageHeight": 6125,
+  "colorScheme": {
+   "html": "normal",
+   "body": "normal",
+   "metaTheme": "rgba(49, 57, 251, 1)",
+   "htmlClass": "",
+   "dataTheme": null
+  },
+  "pageBg": "#fffcec",
+  "pageBgOklabL": 0.989,
+  "pageBgOklabC": 0.021,
+  "pageBgOklabH": 98,
+  "cssVarCount": 120,
+  "cssVars": [
+   [
+    ":root, .t-kuJjET --colors-primary1",
+    "rgb(255, 234, 231)"
+   ],
+   [
+    ":root, .t-kuJjET --colors-primary2",
+    "rgb(255, 201, 195)"
+   ],
+   [
+    ":root, .t-kuJjET --colors-primary3",
+    "rgb(252, 163, 159)"
+   ],
+   [
+    ":root, .t-kuJjET --colors-primary4",
+    "rgb(252, 130, 121)"
+   ],
+   [
+    ":root, .t-kuJjET --colors-primary5",
+    "rgb(253, 105, 88)"
+   ],
+   [
+    ":root, .t-kuJjET --colors-primary6",
+    "rgb(250, 69, 49)"
+   ],
+   [
+    ":root, .t-kuJjET --colors-primary7",
+    "rgb(207, 56, 40)"
+   ],
+   [
+    ":root, .t-kuJjET --colors-primary8",
+    "rgb(162, 43, 31)"
+   ],
+   [
+    ":root, .t-kuJjET --colors-primary9",
+    "rgb(116, 30, 21)"
+   ],
+   [
+    ":root, .t-kuJjET --colors-primary10",
+    "rgb(71, 17, 12)"
+   ],
+   [
+    ":root, .t-kuJjET --colors-primary11",
+    "rgb(26, 4, 2)"
+   ],
+   [
+    ":root, .t-kuJjET --colors-primary12",
+    "rgb(9, 2, 1)"
+   ],
+   [
+    ":root, .t-kuJjET --colors-secondary1",
+    "rgb(0, 234, 231)"
+   ],
+   [
+    ":root, .t-kuJjET --colors-secondary2",
+    "rgb(0, 201, 195)"
+   ],
+   [
+    ":root, .t-kuJjET --colors-secondary3",
+    "rgb(0, 163, 159)"
+   ],
+   [
+    ":root, .t-kuJjET --colors-secondary4",
+    "rgb(0, 130, 121)"
+   ],
+   [
+    ":root, .t-kuJjET --colors-secondary5",
+    "rgb(0, 105, 88)"
+   ],
+   [
+    ":root, .t-kuJjET --colors-secondary6",
+    "rgb(0, 69, 49)"
+   ],
+   [
+    ":root, .t-kuJjET --colors-secondary7",
+    "rgb(0, 56, 40)"
+   ],
+   [
+    ":root, .t-kuJjET --colors-secondary8",
+    "rgb(0, 43, 31)"
+   ],
+   [
+    ":root, .t-kuJjET --colors-secondary9",
+    "rgb(0, 30, 21)"
+   ],
+   [
+    ":root, .t-kuJjET --colors-secondary10",
+    "rgb(0, 17, 12)"
+   ],
+   [
+    ":root, .t-kuJjET --colors-secondary11",
+    "rgb(0, 4, 2)"
+   ],
+   [
+    ":root, .t-kuJjET --colors-secondary12",
+    "rgb(0, 2, 1)"
+   ],
+   [
+    ":root, .t-kuJjET --colors-students-arc_blue",
+    "rgb(12, 80, 255)"
+   ],
+   [
+    ":root, .t-kuJjET --colors-students-arc_blue_pale",
+    "rgb(69, 138, 255)"
+   ],
+   [
+    ":root, .t-kuJjET --colors-students-deep_blue",
+    "rgb(36, 4, 170)"
+   ],
+   [
+    ":root, .t-kuJjET --colors-students-arc_pinkish",
+    "rgb(242, 94, 107)"
+   ],
+   [
+    ":root, .t-kuJjET --colors-students-off_white",
+    "rgb(245, 244, 226)"
+   ],
+   [
+    ":root, .t-kuJjET --colors-students-dark_grey",
+    "rgb(60, 59, 58)"
+   ],
+   [
+    ":root, .t-kuJjET --colors-students-light_grey",
+    "rgb(225, 224, 206)"
+   ],
+   [
+    ":root, .t-kuJjET --colors-students-light_grey-hover",
+    "rgb(215, 214, 196)"
+   ],
+   [
+    ":root, .t-kuJjET --colors-students-text_light",
+    "rgb(151, 146, 143)"
+   ],
+   [
+    ":root, .t-kuJjET --colors-students-text_dark",
+    "rgb(118, 110, 106)"
+   ],
+   [
+    ":root, .t-kuJjET --colors-students-dark_blue",
+    "rgb(39, 2, 194)"
+   ],
+   [
+    ":root, .t-kuJjET --colors-students-light_blue",
+    "rgb(205, 204, 223)"
+   ],
+   [
+    ":root, .t-kuJjET --colors-students-light_green",
+    "rgb(211, 224, 129)"
+   ],
+   [
+    ":root, .t-kuJjET --colors-students-salmon",
+    "rgb(242, 194, 172)"
+   ],
+   [
+    ":root, .t-kuJjET --colors-lowContrast",
+    "#FFF"
+   ],
+   [
+    ":root, .t-kuJjET --colors-highContrast",
+    "#000"
+   ],
+   [
+    ":root, .t-kuJjET --colors-brandDarkBlue",
+    "#000354"
+   ],
+   [
+    ":root, .t-kuJjET --colors-brandDeepBlue",
+    "#2404AA"
+   ],
+   [
+    ":root, .t-kuJjET --colors-brandBlue",
+    "#3139FB"
+   ],
+   [
+    ":root, .t-kuJjET --colors-brandRed",
+    "#FB3A4D"
+   ],
+   [
+    ":root, .t-kuJjET --colors-brandOffwhite",
+    "#FFFCEC"
+   ],
+   [
+    ":root, .t-kuJjET --colors-focusOutline",
+    "#96C4FF"
+   ],
+   [
+    ":root, .t-kuJjET --shadows-small",
+    "0 5px 10px rgba(0, 0, 0, 0.12)"
+   ],
+   [
+    ":root, .t-kuJjET --shadows-medium",
+    "0 8px 30px rgba(0, 0, 0, 0.12)"
+   ],
+   [
+    ":root, .t-kuJjET --shadows-large",
+    "0 30px 60px rgba(0, 0, 0, 0.12)"
+   ]
+  ],
+  "surfaces": [
+   {
+    "hex": "#ffffff",
+    "L": 1,
+    "C": 0,
+    "H": 90,
+    "n": 7,
+    "area": 4359298,
+    "ex": [
+     "main.c-gtTkau",
+     "button.c-bCeQxv"
+    ]
+   },
+   {
+    "hex": "#3139fb",
+    "L": 0.499,
+    "C": 0.274,
+    "H": 269,
+    "n": 4,
+    "area": 2516535,
+    "ex": [
+     "div.c-kFyPaX",
+     "section.c-gujhdE"
+    ]
+   },
+   {
+    "hex": "#fffcec",
+    "L": 0.989,
+    "C": 0.021,
+    "H": 98,
+    "n": 3,
+    "area": 1522080,
+    "ex": [
+     "div.c-kXWSNC",
+     "aside.c-CPmpi"
+    ]
+   },
+   {
+    "hex": "#2702c2",
+    "L": 0.382,
+    "C": 0.246,
+    "H": 271,
+    "n": 1,
+    "area": 12285,
+    "ex": [
+     "button.c-bCeQxv"
+    ]
+   }
+  ],
+  "overlays": [
+   {
+    "bg": "rgba(0, 0, 0, 0.85) => #262623",
+    "n": 1,
+    "area": 16281
+   }
+  ],
+  "borders": [
+   {
+    "border": "rgba(0, 0, 0, 0) @1px",
+    "n": 20,
+    "alpha": 0,
+    "flatOnPage": "#fffcec",
+    "L": 0.989
+   },
+   {
+    "border": "rgb(49, 57, 251) @2px",
+    "n": 16,
+    "alpha": 1,
+    "flatOnPage": "#3139fb",
+    "L": 0.499
+   }
+  ],
+  "radii": [
+   [
+    "8px",
+    9
+   ],
+   [
+    "10px",
+    3
+   ],
+   [
+    "22px",
+    1
+   ],
+   [
+    "4px",
+    1
+   ]
+  ],
+  "shadows": [
+   {
+    "shadow": "rgba(0, 0, 0, 0.1) 0px 5px 5px 0px",
+    "n": 3
+   },
+   {
+    "shadow": "rgba(0, 0, 0, 0.25) 0px 2px 8px 0px",
+    "n": 1
+   }
+  ],
+  "nShadowEls": 4,
+  "textColors": [
+   {
+    "color": "rgb(49, 57, 251)",
+    "chars": 1216,
+    "n": 29,
+    "fg": "#3139fb",
+    "alpha": 1,
+    "contrast": 6.56,
+    "L": 0.499,
+    "bg": "#fffcec",
+    "size": "16px",
+    "weight": "700",
+    "ex": "“Rethinking the fundamentals"
+   },
+   {
+    "color": "rgb(105, 105, 105)",
+    "chars": 415,
+    "n": 8,
+    "fg": "#696969",
+    "alpha": 1,
+    "contrast": 5.49,
+    "L": 0.521,
+    "bg": "#ffffff",
+    "size": "17px",
+    "weight": "500",
+    "ex": "Clean and calm, Arc shapes i"
+   },
+   {
+    "color": "rgb(255, 252, 236)",
+    "chars": 254,
+    "n": 19,
+    "fg": "#fffcec",
+    "alpha": 1,
+    "contrast": 6.56,
+    "L": 0.989,
+    "bg": "#3139fb",
+    "size": "45.51px",
+    "weight": "700",
+    "ex": "Arc is the Chrome replacemen"
+   },
+   {
+    "color": "rgb(255, 250, 221)",
+    "chars": 123,
+    "n": 1,
+    "fg": "#fffadd",
+    "alpha": 1,
+    "contrast": 6.42,
+    "L": 0.981,
+    "bg": "#3139fb",
+    "size": "13px",
+    "weight": "400",
+    "ex": "FYI: Arc receives Chromium u"
+   },
+   {
+    "color": "rgba(0, 0, 0, 0.65)",
+    "chars": 82,
+    "n": 1,
+    "fg": "#595853",
+    "alpha": 0.65,
+    "contrast": 6.9,
+    "L": 0.46,
+    "bg": "#fffcec",
+    "size": "20px",
+    "weight": "400",
+    "ex": "Weekly security updates, SOC"
+   },
+   {
+    "color": "rgb(255, 255, 255)",
+    "chars": 62,
+    "n": 7,
+    "fg": "#ffffff",
+    "alpha": 1,
+    "contrast": 6.75,
+    "L": 1,
+    "bg": "#3139fb",
+    "size": "14px",
+    "weight": "500",
+    "ex": "Max"
+   },
+   {
+    "color": "rgb(39, 2, 194)",
+    "chars": 40,
+    "n": 2,
+    "fg": "#2702c2",
+    "alpha": 1,
+    "contrast": 11.21,
+    "L": 0.382,
+    "bg": "#ffffff",
+    "size": "14px",
+    "weight": "600",
+    "ex": "Download Arc for Mac"
+   },
+   {
+    "color": "rgb(0, 0, 0)",
+    "chars": 35,
+    "n": 1,
+    "fg": "#000000",
+    "alpha": 1,
+    "contrast": 20.39,
+    "L": 0,
+    "bg": "#fffcec",
+    "size": "36px",
+    "weight": "700",
+    "ex": "Meet Dia, the next evolution"
+   }
+  ],
+  "h1": {
+   "text": "Arc is the Chrome replacement I've been waiting for.",
+   "family": "\"Marlin Soft SQ\", -apple-system, \"system-ui\", \"Segoe UI\", Ro",
+   "size": "45.51px",
+   "weight": "700",
+   "lh": "42.25px",
+   "ls": "-1.8204px",
+   "color": "rgb(255, 252, 236)",
+   "smooth": "antialiased",
+   "bgClip": "border-box",
+   "bgImage": "none",
+   "textShadow": null
+  },
+  "body": {
+   "text": "Max\nMobile\nDevelopers\nStudents\nBlog\nMeet Dia, the next evolu",
+   "family": "Marlin, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxyg",
+   "size": "16px",
+   "weight": "400",
+   "lh": "normal",
+   "ls": "normal",
+   "color": "rgb(0, 0, 0)",
+   "smooth": "antialiased",
+   "bgClip": "border-box",
+   "bgImage": "none",
+   "textShadow": null
+  },
+  "bodySmoothing": "antialiased",
+  "textRendering": "auto",
+  "heroP": {
+   "text": "FYI: Arc receives Chromium updates only. For active security",
+   "family": "Marlin, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxyg",
+   "size": "13px",
+   "weight": "400",
+   "lh": "normal",
+   "ls": "normal",
+   "color": "rgb(255, 250, 221)",
+   "smooth": "antialiased",
+   "bgClip": "border-box",
+   "bgImage": "none",
+   "textShadow": null
+  },
+  "ctas": [
+   {
+    "text": "Max",
+    "h": 36,
+    "kind": "outline",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "border": "1px rgba(0, 0, 0, 0)",
+    "radius": "8px",
+    "shadow": null,
+    "bgImage": null,
+    "size": "14px",
+    "weight": "500"
+   },
+   {
+    "text": "Mobile",
+    "h": 36,
+    "kind": "outline",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "border": "1px rgba(0, 0, 0, 0)",
+    "radius": "8px",
+    "shadow": null,
+    "bgImage": null,
+    "size": "14px",
+    "weight": "500"
+   },
+   {
+    "text": "Developers",
+    "h": 36,
+    "kind": "outline",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "border": "1px rgba(0, 0, 0, 0)",
+    "radius": "8px",
+    "shadow": null,
+    "bgImage": null,
+    "size": "14px",
+    "weight": "500"
+   },
+   {
+    "text": "Students",
+    "h": 36,
+    "kind": "outline",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "border": "1px rgba(0, 0, 0, 0)",
+    "radius": "8px",
+    "shadow": null,
+    "bgImage": null,
+    "size": "14px",
+    "weight": "500"
+   },
+   {
+    "text": "Blog",
+    "h": 36,
+    "kind": "outline",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "border": "1px rgba(0, 0, 0, 0)",
+    "radius": "8px",
+    "shadow": null,
+    "bgImage": null,
+    "size": "14px",
+    "weight": "500"
+   },
+   {
+    "text": "Try Dia",
+    "h": 76,
+    "kind": "filled",
+    "bg": "rgba(0, 0, 0, 0.85)",
+    "color": "rgb(255, 255, 255)",
+    "border": null,
+    "radius": "22px",
+    "shadow": "rgba(0, 0, 0, 0.25) 0px 2px 8px 0px",
+    "bgImage": null,
+    "size": "24px",
+    "weight": "400"
+   }
+  ],
+  "nav": {
+   "h": 96,
+   "bg": "rgb(49, 57, 251)",
+   "backdrop": "none",
+   "bb": "0px none rgb(0, 0, 0)",
+   "shadow": null,
+   "linkColor": "rgb(0, 0, 0)"
+  },
+  "effects": {
+   "radial": 0,
+   "conic": 0,
+   "linear": 0,
+   "urlbg": 5,
+   "blurEls": 0,
+   "backdropEls": 1,
+   "mixBlend": 2,
+   "maskEls": 3,
+   "gradEx": [],
+   "canvas": 0,
+   "video": 4,
+   "svg": 35,
+   "img": 3
+  },
+  "noise": true,
+  "gradientHeadings": 0,
+  "accents": [
+   {
+    "hex": "#3139fb",
+    "n": 240,
+    "L": 0.499,
+    "C": 0.274,
+    "H": 269
+   },
+   {
+    "hex": "#2702c2",
+    "n": 13,
+    "L": 0.382,
+    "C": 0.246,
+    "H": 271
+   }
+  ]
+ },
+ "full": {
+  "title": "Arc from The Browser Company",
+  "vw": 1440,
+  "pageHeight": 6125,
+  "colorScheme": {
+   "html": "normal",
+   "body": "normal",
+   "metaTheme": "rgba(49, 57, 251, 1)",
+   "htmlClass": "",
+   "dataTheme": null
+  },
+  "pageBg": "#fffcec",
+  "pageBgOklabL": 0.989,
+  "pageBgOklabC": 0.021,
+  "pageBgOklabH": 98,
+  "cssVarCount": 120,
+  "cssVars": [
+   [
+    ":root, .t-kuJjET --colors-primary1",
+    "rgb(255, 234, 231)"
+   ],
+   [
+    ":root, .t-kuJjET --colors-primary2",
+    "rgb(255, 201, 195)"
+   ],
+   [
+    ":root, .t-kuJjET --colors-primary3",
+    "rgb(252, 163, 159)"
+   ],
+   [
+    ":root, .t-kuJjET --colors-primary4",
+    "rgb(252, 130, 121)"
+   ],
+   [
+    ":root, .t-kuJjET --colors-primary5",
+    "rgb(253, 105, 88)"
+   ],
+   [
+    ":root, .t-kuJjET --colors-primary6",
+    "rgb(250, 69, 49)"
+   ],
+   [
+    ":root, .t-kuJjET --colors-primary7",
+    "rgb(207, 56, 40)"
+   ],
+   [
+    ":root, .t-kuJjET --colors-primary8",
+    "rgb(162, 43, 31)"
+   ],
+   [
+    ":root, .t-kuJjET --colors-primary9",
+    "rgb(116, 30, 21)"
+   ],
+   [
+    ":root, .t-kuJjET --colors-primary10",
+    "rgb(71, 17, 12)"
+   ],
+   [
+    ":root, .t-kuJjET --colors-primary11",
+    "rgb(26, 4, 2)"
+   ],
+   [
+    ":root, .t-kuJjET --colors-primary12",
+    "rgb(9, 2, 1)"
+   ],
+   [
+    ":root, .t-kuJjET --colors-secondary1",
+    "rgb(0, 234, 231)"
+   ],
+   [
+    ":root, .t-kuJjET --colors-secondary2",
+    "rgb(0, 201, 195)"
+   ],
+   [
+    ":root, .t-kuJjET --colors-secondary3",
+    "rgb(0, 163, 159)"
+   ],
+   [
+    ":root, .t-kuJjET --colors-secondary4",
+    "rgb(0, 130, 121)"
+   ],
+   [
+    ":root, .t-kuJjET --colors-secondary5",
+    "rgb(0, 105, 88)"
+   ],
+   [
+    ":root, .t-kuJjET --colors-secondary6",
+    "rgb(0, 69, 49)"
+   ],
+   [
+    ":root, .t-kuJjET --colors-secondary7",
+    "rgb(0, 56, 40)"
+   ],
+   [
+    ":root, .t-kuJjET --colors-secondary8",
+    "rgb(0, 43, 31)"
+   ],
+   [
+    ":root, .t-kuJjET --colors-secondary9",
+    "rgb(0, 30, 21)"
+   ],
+   [
+    ":root, .t-kuJjET --colors-secondary10",
+    "rgb(0, 17, 12)"
+   ],
+   [
+    ":root, .t-kuJjET --colors-secondary11",
+    "rgb(0, 4, 2)"
+   ],
+   [
+    ":root, .t-kuJjET --colors-secondary12",
+    "rgb(0, 2, 1)"
+   ],
+   [
+    ":root, .t-kuJjET --colors-students-arc_blue",
+    "rgb(12, 80, 255)"
+   ],
+   [
+    ":root, .t-kuJjET --colors-students-arc_blue_pale",
+    "rgb(69, 138, 255)"
+   ],
+   [
+    ":root, .t-kuJjET --colors-students-deep_blue",
+    "rgb(36, 4, 170)"
+   ],
+   [
+    ":root, .t-kuJjET --colors-students-arc_pinkish",
+    "rgb(242, 94, 107)"
+   ],
+   [
+    ":root, .t-kuJjET --colors-students-off_white",
+    "rgb(245, 244, 226)"
+   ],
+   [
+    ":root, .t-kuJjET --colors-students-dark_grey",
+    "rgb(60, 59, 58)"
+   ],
+   [
+    ":root, .t-kuJjET --colors-students-light_grey",
+    "rgb(225, 224, 206)"
+   ],
+   [
+    ":root, .t-kuJjET --colors-students-light_grey-hover",
+    "rgb(215, 214, 196)"
+   ],
+   [
+    ":root, .t-kuJjET --colors-students-text_light",
+    "rgb(151, 146, 143)"
+   ],
+   [
+    ":root, .t-kuJjET --colors-students-text_dark",
+    "rgb(118, 110, 106)"
+   ],
+   [
+    ":root, .t-kuJjET --colors-students-dark_blue",
+    "rgb(39, 2, 194)"
+   ],
+   [
+    ":root, .t-kuJjET --colors-students-light_blue",
+    "rgb(205, 204, 223)"
+   ],
+   [
+    ":root, .t-kuJjET --colors-students-light_green",
+    "rgb(211, 224, 129)"
+   ],
+   [
+    ":root, .t-kuJjET --colors-students-salmon",
+    "rgb(242, 194, 172)"
+   ],
+   [
+    ":root, .t-kuJjET --colors-lowContrast",
+    "#FFF"
+   ],
+   [
+    ":root, .t-kuJjET --colors-highContrast",
+    "#000"
+   ],
+   [
+    ":root, .t-kuJjET --colors-brandDarkBlue",
+    "#000354"
+   ],
+   [
+    ":root, .t-kuJjET --colors-brandDeepBlue",
+    "#2404AA"
+   ],
+   [
+    ":root, .t-kuJjET --colors-brandBlue",
+    "#3139FB"
+   ],
+   [
+    ":root, .t-kuJjET --colors-brandRed",
+    "#FB3A4D"
+   ],
+   [
+    ":root, .t-kuJjET --colors-brandOffwhite",
+    "#FFFCEC"
+   ],
+   [
+    ":root, .t-kuJjET --colors-focusOutline",
+    "#96C4FF"
+   ],
+   [
+    ":root, .t-kuJjET --shadows-small",
+    "0 5px 10px rgba(0, 0, 0, 0.12)"
+   ],
+   [
+    ":root, .t-kuJjET --shadows-medium",
+    "0 8px 30px rgba(0, 0, 0, 0.12)"
+   ],
+   [
+    ":root, .t-kuJjET --shadows-large",
+    "0 30px 60px rgba(0, 0, 0, 0.12)"
+   ]
+  ],
+  "surfaces": [
+   {
+    "hex": "#ffffff",
+    "L": 1,
+    "C": 0,
+    "H": 90,
+    "n": 7,
+    "area": 4359298,
+    "ex": [
+     "main.c-gtTkau",
+     "button.c-bCeQxv"
+    ]
+   },
+   {
+    "hex": "#3139fb",
+    "L": 0.499,
+    "C": 0.274,
+    "H": 269,
+    "n": 4,
+    "area": 2516535,
+    "ex": [
+     "div.c-kFyPaX",
+     "section.c-gujhdE"
+    ]
+   },
+   {
+    "hex": "#fffcec",
+    "L": 0.989,
+    "C": 0.021,
+    "H": 98,
+    "n": 3,
+    "area": 1522080,
+    "ex": [
+     "div.c-kXWSNC",
+     "aside.c-CPmpi"
+    ]
+   },
+   {
+    "hex": "#2702c2",
+    "L": 0.382,
+    "C": 0.246,
+    "H": 271,
+    "n": 1,
+    "area": 12285,
+    "ex": [
+     "button.c-bCeQxv"
+    ]
+   }
+  ],
+  "overlays": [
+   {
+    "bg": "rgba(0, 0, 0, 0.85) => #262623",
+    "n": 1,
+    "area": 16281
+   }
+  ],
+  "borders": [
+   {
+    "border": "rgba(0, 0, 0, 0) @1px",
+    "n": 20,
+    "alpha": 0,
+    "flatOnPage": "#fffcec",
+    "L": 0.989
+   },
+   {
+    "border": "rgb(49, 57, 251) @2px",
+    "n": 16,
+    "alpha": 1,
+    "flatOnPage": "#3139fb",
+    "L": 0.499
+   }
+  ],
+  "radii": [
+   [
+    "8px",
+    9
+   ],
+   [
+    "10px",
+    3
+   ],
+   [
+    "22px",
+    1
+   ],
+   [
+    "4px",
+    1
+   ]
+  ],
+  "shadows": [
+   {
+    "shadow": "rgba(0, 0, 0, 0.1) 0px 5px 5px 0px",
+    "n": 3
+   },
+   {
+    "shadow": "rgba(0, 0, 0, 0.25) 0px 2px 8px 0px",
+    "n": 1
+   }
+  ],
+  "nShadowEls": 4,
+  "textColors": [
+   {
+    "color": "rgb(49, 57, 251)",
+    "chars": 1216,
+    "n": 29,
+    "fg": "#3139fb",
+    "alpha": 1,
+    "contrast": 6.56,
+    "L": 0.499,
+    "bg": "#fffcec",
+    "size": "16px",
+    "weight": "700",
+    "ex": "“Rethinking the fundamentals"
+   },
+   {
+    "color": "rgb(105, 105, 105)",
+    "chars": 415,
+    "n": 8,
+    "fg": "#696969",
+    "alpha": 1,
+    "contrast": 5.49,
+    "L": 0.521,
+    "bg": "#ffffff",
+    "size": "17px",
+    "weight": "500",
+    "ex": "Clean and calm, Arc shapes i"
+   },
+   {
+    "color": "rgb(255, 252, 236)",
+    "chars": 254,
+    "n": 19,
+    "fg": "#fffcec",
+    "alpha": 1,
+    "contrast": 6.56,
+    "L": 0.989,
+    "bg": "#3139fb",
+    "size": "45.51px",
+    "weight": "700",
+    "ex": "Arc is the Chrome replacemen"
+   },
+   {
+    "color": "rgb(255, 250, 221)",
+    "chars": 123,
+    "n": 1,
+    "fg": "#fffadd",
+    "alpha": 1,
+    "contrast": 6.42,
+    "L": 0.981,
+    "bg": "#3139fb",
+    "size": "13px",
+    "weight": "400",
+    "ex": "FYI: Arc receives Chromium u"
+   },
+   {
+    "color": "rgba(0, 0, 0, 0.65)",
+    "chars": 82,
+    "n": 1,
+    "fg": "#595853",
+    "alpha": 0.65,
+    "contrast": 6.9,
+    "L": 0.46,
+    "bg": "#fffcec",
+    "size": "20px",
+    "weight": "400",
+    "ex": "Weekly security updates, SOC"
+   },
+   {
+    "color": "rgb(255, 255, 255)",
+    "chars": 62,
+    "n": 7,
+    "fg": "#ffffff",
+    "alpha": 1,
+    "contrast": 6.75,
+    "L": 1,
+    "bg": "#3139fb",
+    "size": "14px",
+    "weight": "500",
+    "ex": "Max"
+   },
+   {
+    "color": "rgb(39, 2, 194)",
+    "chars": 40,
+    "n": 2,
+    "fg": "#2702c2",
+    "alpha": 1,
+    "contrast": 11.21,
+    "L": 0.382,
+    "bg": "#ffffff",
+    "size": "14px",
+    "weight": "600",
+    "ex": "Download Arc for Mac"
+   },
+   {
+    "color": "rgb(0, 0, 0)",
+    "chars": 35,
+    "n": 1,
+    "fg": "#000000",
+    "alpha": 1,
+    "contrast": 20.39,
+    "L": 0,
+    "bg": "#fffcec",
+    "size": "36px",
+    "weight": "700",
+    "ex": "Meet Dia, the next evolution"
+   }
+  ],
+  "h1": {
+   "text": "Arc is the Chrome replacement I've been waiting for.",
+   "family": "\"Marlin Soft SQ\", -apple-system, \"system-ui\", \"Segoe UI\", Ro",
+   "size": "45.51px",
+   "weight": "700",
+   "lh": "42.25px",
+   "ls": "-1.8204px",
+   "color": "rgb(255, 252, 236)",
+   "smooth": "antialiased",
+   "bgClip": "border-box",
+   "bgImage": "none",
+   "textShadow": null
+  },
+  "body": {
+   "text": "Max\nMobile\nDevelopers\nStudents\nBlog\nMeet Dia, the next evolu",
+   "family": "Marlin, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxyg",
+   "size": "16px",
+   "weight": "400",
+   "lh": "normal",
+   "ls": "normal",
+   "color": "rgb(0, 0, 0)",
+   "smooth": "antialiased",
+   "bgClip": "border-box",
+   "bgImage": "none",
+   "textShadow": null
+  },
+  "bodySmoothing": "antialiased",
+  "textRendering": "auto",
+  "heroP": {
+   "text": "FYI: Arc receives Chromium updates only. For active security",
+   "family": "Marlin, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxyg",
+   "size": "13px",
+   "weight": "400",
+   "lh": "normal",
+   "ls": "normal",
+   "color": "rgb(255, 250, 221)",
+   "smooth": "antialiased",
+   "bgClip": "border-box",
+   "bgImage": "none",
+   "textShadow": null
+  },
+  "ctas": [
+   {
+    "text": "Max",
+    "h": 36,
+    "kind": "outline",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "border": "1px rgba(0, 0, 0, 0)",
+    "radius": "8px",
+    "shadow": null,
+    "bgImage": null,
+    "size": "14px",
+    "weight": "500"
+   },
+   {
+    "text": "Mobile",
+    "h": 36,
+    "kind": "outline",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "border": "1px rgba(0, 0, 0, 0)",
+    "radius": "8px",
+    "shadow": null,
+    "bgImage": null,
+    "size": "14px",
+    "weight": "500"
+   },
+   {
+    "text": "Developers",
+    "h": 36,
+    "kind": "outline",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "border": "1px rgba(0, 0, 0, 0)",
+    "radius": "8px",
+    "shadow": null,
+    "bgImage": null,
+    "size": "14px",
+    "weight": "500"
+   },
+   {
+    "text": "Students",
+    "h": 36,
+    "kind": "outline",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "border": "1px rgba(0, 0, 0, 0)",
+    "radius": "8px",
+    "shadow": null,
+    "bgImage": null,
+    "size": "14px",
+    "weight": "500"
+   },
+   {
+    "text": "Blog",
+    "h": 36,
+    "kind": "outline",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "border": "1px rgba(0, 0, 0, 0)",
+    "radius": "8px",
+    "shadow": null,
+    "bgImage": null,
+    "size": "14px",
+    "weight": "500"
+   },
+   {
+    "text": "Try Dia",
+    "h": 76,
+    "kind": "filled",
+    "bg": "rgba(0, 0, 0, 0.85)",
+    "color": "rgb(255, 255, 255)",
+    "border": null,
+    "radius": "22px",
+    "shadow": "rgba(0, 0, 0, 0.25) 0px 2px 8px 0px",
+    "bgImage": null,
+    "size": "24px",
+    "weight": "400"
+   }
+  ],
+  "nav": {
+   "h": 96,
+   "bg": "rgb(49, 57, 251)",
+   "backdrop": "none",
+   "bb": "0px none rgb(0, 0, 0)",
+   "shadow": null,
+   "linkColor": "rgb(0, 0, 0)"
+  },
+  "effects": {
+   "radial": 0,
+   "conic": 0,
+   "linear": 0,
+   "urlbg": 5,
+   "blurEls": 0,
+   "backdropEls": 1,
+   "mixBlend": 2,
+   "maskEls": 3,
+   "gradEx": [],
+   "canvas": 0,
+   "video": 4,
+   "svg": 35,
+   "img": 3
+  },
+  "noise": true,
+  "gradientHeadings": 0,
+  "accents": [
+   {
+    "hex": "#3139fb",
+    "n": 240,
+    "L": 0.499,
+    "C": 0.274,
+    "H": 269
+   },
+   {
+    "hex": "#2702c2",
+    "n": 13,
+    "L": 0.382,
+    "C": 0.246,
+    "H": 271
+   }
+  ]
+ }
+}

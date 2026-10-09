@@ -1,0 +1,1607 @@
+{
+ "url": "https://planetscale.com",
+ "scheme": "dark",
+ "pageHeight": 8363,
+ "fold": {
+  "title": "PlanetScale - the world’s fastest and most scalable cloud hosting for Vitess, Neki, and Postgres",
+  "vw": 1440,
+  "pageHeight": 8363,
+  "colorScheme": {
+   "html": "normal",
+   "body": "normal",
+   "metaTheme": "#111111",
+   "htmlClass": "",
+   "dataTheme": null
+  },
+  "pageBg": "#111111",
+  "pageBgOklabL": 0.178,
+  "pageBgOklabC": 0,
+  "pageBgOklabH": 90,
+  "cssVarCount": 317,
+  "cssVars": [
+   [
+    ":root, :host --color-white",
+    "#fff"
+   ],
+   [
+    ":root, :host --color-black",
+    "#000"
+   ],
+   [
+    ":root, :host --color-primary",
+    "var(--bg-primary)"
+   ],
+   [
+    ":root, :host --color-gray-50",
+    "#fafafa"
+   ],
+   [
+    ":root, :host --color-gray-100",
+    "#ebebeb"
+   ],
+   [
+    ":root, :host --color-gray-200",
+    "#e1e1e1"
+   ],
+   [
+    ":root, :host --color-gray-300",
+    "#c1c1c1"
+   ],
+   [
+    ":root, :host --color-gray-400",
+    "#a1a1a1"
+   ],
+   [
+    ":root, :host --color-gray-500",
+    "#818181"
+   ],
+   [
+    ":root, :host --color-gray-550",
+    "#737373"
+   ],
+   [
+    ":root, :host --color-gray-600",
+    "#616161"
+   ],
+   [
+    ":root, :host --color-gray-700",
+    "#414141"
+   ],
+   [
+    ":root, :host --color-gray-800",
+    "#2b2b2b"
+   ],
+   [
+    ":root, :host --color-gray-850",
+    "#1a1a1a"
+   ],
+   [
+    ":root, :host --color-gray-900",
+    "#111"
+   ],
+   [
+    ":root, :host --color-red-100",
+    "#ffe5e9"
+   ],
+   [
+    ":root, :host --color-red-200",
+    "#fbbfc7"
+   ],
+   [
+    ":root, :host --color-red-300",
+    "#ff909f"
+   ],
+   [
+    ":root, :host --color-red-400",
+    "#ff7082"
+   ],
+   [
+    ":root, :host --color-red-500",
+    "#ff455d"
+   ],
+   [
+    ":root, :host --color-red-600",
+    "#d92038"
+   ],
+   [
+    ":root, :host --color-red-700",
+    "#c11027"
+   ],
+   [
+    ":root, :host --color-red-800",
+    "#8f0718"
+   ],
+   [
+    ":root, :host --color-red-900",
+    "#341418"
+   ],
+   [
+    ":root, :host --color-red-950",
+    "#200a0d"
+   ],
+   [
+    ":root, :host --color-red",
+    "var(--text-red)"
+   ],
+   [
+    ":root, :host --color-orange-50",
+    "#fff8f3"
+   ],
+   [
+    ":root, :host --color-orange-100",
+    "#ffe8d8"
+   ],
+   [
+    ":root, :host --color-orange-200",
+    "#ffc59b"
+   ],
+   [
+    ":root, :host --color-orange-300",
+    "#fc9c66"
+   ],
+   [
+    ":root, :host --color-orange-400",
+    "#fd812d"
+   ],
+   [
+    ":root, :host --color-orange-500",
+    "#f35815"
+   ],
+   [
+    ":root, :host --color-orange-600",
+    "#b83a05"
+   ],
+   [
+    ":root, :host --color-orange-700",
+    "#962d00"
+   ],
+   [
+    ":root, :host --color-orange-800",
+    "#672002"
+   ],
+   [
+    ":root, :host --color-orange-900",
+    "#3c1403"
+   ],
+   [
+    ":root, :host --color-orange-950",
+    "#240b00"
+   ],
+   [
+    ":root, :host --color-orange",
+    "var(--text-orange)"
+   ],
+   [
+    ":root, :host --color-yellow-50",
+    "#fffbe4"
+   ],
+   [
+    ":root, :host --color-yellow-100",
+    "#fff1a8"
+   ],
+   [
+    ":root, :host --color-yellow-200",
+    "#fed54a"
+   ],
+   [
+    ":root, :host --color-yellow-300",
+    "#f2b600"
+   ],
+   [
+    ":root, :host --color-yellow-400",
+    "#d19f03"
+   ],
+   [
+    ":root, :host --color-yellow-500",
+    "#a78103"
+   ],
+   [
+    ":root, :host --color-yellow-600",
+    "#7d5903"
+   ],
+   [
+    ":root, :host --color-yellow-700",
+    "#5c4716"
+   ],
+   [
+    ":root, :host --color-yellow-800",
+    "#41320c"
+   ],
+   [
+    ":root, :host --color-yellow-900",
+    "#281e03"
+   ],
+   [
+    ":root, :host --color-yellow-950",
+    "#171101"
+   ],
+   [
+    ":root, :host --color-green-50",
+    "#effff3"
+   ],
+   [
+    ":root, :host --color-green-100",
+    "#d7fbdf"
+   ],
+   [
+    ":root, :host --color-green-200",
+    "#a9ecb8"
+   ],
+   [
+    ":root, :host --color-green-300",
+    "#75db8c"
+   ],
+   [
+    ":root, :host --color-green-400",
+    "#40d763"
+   ],
+   [
+    ":root, :host --color-green-500",
+    "#27b648"
+   ],
+   [
+    ":root, :host --color-green-600",
+    "#13862e"
+   ],
+   [
+    ":root, :host --color-green-700",
+    "#19652a"
+   ],
+   [
+    ":root, :host --color-green-800",
+    "#10481d"
+   ],
+   [
+    ":root, :host --color-green-900",
+    "#0a2b13"
+   ],
+   [
+    ":root, :host --color-green-950",
+    "#041a0a"
+   ],
+   [
+    ":root, :host --color-green",
+    "var(--text-green)"
+   ],
+   [
+    ":root, :host --color-neki",
+    "#fbca00"
+   ],
+   [
+    ":root, :host --color-postgres",
+    "var(--text-postgres)"
+   ],
+   [
+    ":root, :host --color-blue-50",
+    "#f3fbff"
+   ],
+   [
+    ":root, :host --color-blue-100",
+    "#ddf2ff"
+   ],
+   [
+    ":root, :host --color-blue-200",
+    "#a9dffe"
+   ],
+   [
+    ":root, :host --color-blue-300",
+    "#73c7f9"
+   ],
+   [
+    ":root, :host --color-blue-400",
+    "#47b7f8"
+   ],
+   [
+    ":root, :host --color-blue-500",
+    "#1e9de7"
+   ],
+   [
+    ":root, :host --color-blue-600",
+    "#0b6ec5"
+   ],
+   [
+    ":root, :host --color-blue-700",
+    "#144eb6"
+   ],
+   [
+    ":root, :host --color-blue-800",
+    "#0e3682"
+   ],
+   [
+    ":root, :host --color-blue-900",
+    "#08204e"
+   ],
+   [
+    ":root, :host --color-blue-950",
+    "#04122e"
+   ],
+   [
+    ":root, :host --color-blue",
+    "var(--text-blue)"
+   ],
+   [
+    ":root, :host --color-purple-50",
+    "#f9f8ff"
+   ],
+   [
+    ":root, :host --color-purple-100",
+    "#eeeaff"
+   ],
+   [
+    ":root, :host --color-purple-200",
+    "#d4c9fe"
+   ],
+   [
+    ":root, :host --color-purple-300",
+    "#b7a5fb"
+   ],
+   [
+    ":root, :host --color-purple-400",
+    "#a18bf5"
+   ],
+   [
+    ":root, :host --color-purple-500",
+    "#8467f3"
+   ],
+   [
+    ":root, :host --color-purple-600",
+    "#5e49af"
+   ],
+   [
+    ":root, :host --color-purple-700",
+    "#4b3990"
+   ],
+   [
+    ":root, :host --color-purple-800",
+    "#3e1f75"
+   ],
+   [
+    ":root, :host --color-purple-900",
+    "#27124a"
+   ],
+   [
+    ":root, :host --color-purple-950",
+    "#180636"
+   ],
+   [
+    ":root, :host --color-purple",
+    "var(--text-purple)"
+   ],
+   [
+    ":root, :host --color-focus",
+    "rgb(var(--bg-focus) / 60%)"
+   ],
+   [
+    ":root, :host --background-color-primary",
+    "var(--bg-primary)"
+   ],
+   [
+    ":root, :host --background-color-secondary",
+    "var(--bg-secondary)"
+   ],
+   [
+    ":root, :host --background-color-inverted",
+    "var(--bg-inverted)"
+   ],
+   [
+    ":root, :host --border-color-primary",
+    "var(--border-primary)"
+   ],
+   [
+    ":root, :host --border-color-contrast",
+    "var(--border-contrast)"
+   ],
+   [
+    ":root, :host --text-color-contrast",
+    "var(--text-contrast)"
+   ],
+   [
+    ":root, :host --text-color-primary",
+    "var(--text-primary)"
+   ],
+   [
+    ":root, :host --text-color-secondary",
+    "var(--text-secondary)"
+   ],
+   [
+    ":root, :host --text-color-decoration",
+    "var(--text-decoration)"
+   ],
+   [
+    ":root, :host --text-color-inverted",
+    "var(--bg-primary)"
+   ],
+   [
+    ":root, :host --text-color-disabled",
+    "var(--text-disabled)"
+   ],
+   [
+    ".dark\\:ui-active\\:ring-blue-500[data-hea --tw-ring-color",
+    "var(--color-blue-500)"
+   ],
+   [
+    ":root, .invert-color-mode --white",
+    "#fff"
+   ],
+   [
+    ":root, .invert-color-mode --black",
+    "#000"
+   ],
+   [
+    ":root, .invert-color-mode --gray-50",
+    "var(--color-gray-50)"
+   ],
+   [
+    ":root, .invert-color-mode --gray-100",
+    "var(--color-gray-100)"
+   ],
+   [
+    ":root, .invert-color-mode --gray-200",
+    "var(--color-gray-200)"
+   ],
+   [
+    ":root, .invert-color-mode --gray-300",
+    "var(--color-gray-300)"
+   ],
+   [
+    ":root, .invert-color-mode --gray-400",
+    "var(--color-gray-400)"
+   ],
+   [
+    ":root, .invert-color-mode --gray-500",
+    "var(--color-gray-500)"
+   ],
+   [
+    ":root, .invert-color-mode --gray-550",
+    "var(--color-gray-550)"
+   ],
+   [
+    ":root, .invert-color-mode --gray-600",
+    "var(--color-gray-600)"
+   ],
+   [
+    ":root, .invert-color-mode --gray-700",
+    "var(--color-gray-700)"
+   ],
+   [
+    ":root, .invert-color-mode --gray-800",
+    "var(--color-gray-800)"
+   ],
+   [
+    ":root, .invert-color-mode --gray-850",
+    "var(--color-gray-850)"
+   ],
+   [
+    ":root, .invert-color-mode --gray-900",
+    "var(--color-gray-900)"
+   ],
+   [
+    ":root, .invert-color-mode --red-50",
+    "var(--color-red-50)"
+   ],
+   [
+    ":root, .invert-color-mode --red-100",
+    "var(--color-red-100)"
+   ],
+   [
+    ":root, .invert-color-mode --red-200",
+    "var(--color-red-200)"
+   ],
+   [
+    ":root, .invert-color-mode --red-300",
+    "var(--color-red-300)"
+   ],
+   [
+    ":root, .invert-color-mode --red-400",
+    "var(--color-red-400)"
+   ],
+   [
+    ":root, .invert-color-mode --red-500",
+    "var(--color-red-500)"
+   ]
+  ],
+  "surfaces": [
+   {
+    "hex": "#111111",
+    "L": 0.178,
+    "C": 0,
+    "H": 90,
+    "n": 2,
+    "area": 549651,
+    "ex": [
+     "header.relative",
+     "pre.hidden"
+    ]
+   },
+   {
+    "hex": "#fbca00",
+    "L": 0.857,
+    "C": 0.175,
+    "H": 91,
+    "n": 1,
+    "area": 57600,
+    "ex": [
+     "div.bg-neki"
+    ]
+   },
+   {
+    "hex": "#ffffff",
+    "L": 1,
+    "C": 0,
+    "H": 90,
+    "n": 1,
+    "area": 20272,
+    "ex": [
+     "button.py-2"
+    ]
+   },
+   {
+    "hex": "#f35815",
+    "L": 0.661,
+    "C": 0.202,
+    "H": 39,
+    "n": 1,
+    "area": 4310,
+    "ex": [
+     "a.btn"
+    ]
+   }
+  ],
+  "overlays": [],
+  "borders": [
+   {
+    "border": "rgb(193, 193, 193) @1px",
+    "n": 329,
+    "alpha": 1,
+    "flatOnPage": "#c1c1c1",
+    "L": 0.811
+   },
+   {
+    "border": "rgb(97, 97, 97) @2px",
+    "n": 6,
+    "alpha": 1,
+    "flatOnPage": "#616161",
+    "L": 0.493
+   },
+   {
+    "border": "rgb(243, 88, 21) @2px",
+    "n": 5,
+    "alpha": 1,
+    "flatOnPage": "#f35815",
+    "L": 0.661
+   }
+  ],
+  "radii": [
+   [
+    "3.35544e+07px",
+    1
+   ]
+  ],
+  "shadows": [],
+  "nShadowEls": 0,
+  "textColors": [
+   {
+    "color": "rgb(225, 225, 225)",
+    "chars": 7784,
+    "n": 112,
+    "fg": "#e1e1e1",
+    "alpha": 1,
+    "contrast": 14.44,
+    "L": 0.91,
+    "bg": "#111111",
+    "size": "16px",
+    "weight": "600",
+    "ex": "Sign in"
+   },
+   {
+    "color": "rgb(255, 255, 255)",
+    "chars": 2347,
+    "n": 9,
+    "fg": "#ffffff",
+    "alpha": 1,
+    "contrast": 18.88,
+    "L": 1,
+    "bg": "#111111",
+    "size": "16px",
+    "weight": "600",
+    "ex": "Get started"
+   },
+   {
+    "color": "rgb(71, 183, 248)",
+    "chars": 1094,
+    "n": 67,
+    "fg": "#47b7f8",
+    "alpha": 1,
+    "contrast": 8.45,
+    "L": 0.744,
+    "bg": "#111111",
+    "size": "16px",
+    "weight": "400",
+    "ex": "fastest databases"
+   },
+   {
+    "color": "rgb(161, 161, 161)",
+    "chars": 374,
+    "n": 8,
+    "fg": "#a1a1a1",
+    "alpha": 1,
+    "contrast": 7.31,
+    "L": 0.709,
+    "bg": "#111111",
+    "size": "16px",
+    "weight": "400",
+    "ex": "– Sualeh Asif - Chief Produc"
+   },
+   {
+    "color": "rgb(17, 17, 17)",
+    "chars": 47,
+    "n": 2,
+    "fg": "#111111",
+    "alpha": 1,
+    "contrast": 12.18,
+    "L": 0.178,
+    "bg": "#fbca00",
+    "size": "16px",
+    "weight": "600",
+    "ex": "Neki, sharded Postgres, is n"
+   },
+   {
+    "color": "rgb(65, 65, 65)",
+    "chars": 14,
+    "n": 14,
+    "fg": "#414141",
+    "alpha": 1,
+    "contrast": 1.85,
+    "L": 0.375,
+    "bg": "#111111",
+    "size": "16px",
+    "weight": "400",
+    "ex": "|"
+   }
+  ],
+  "h1": {
+   "text": "The world’s fastest and most scalable cloud databases",
+   "family": "ui-monospace, SFMono-Regular, \"SF Mono\", Menlo, Consolas, \"L",
+   "size": "16px",
+   "weight": "700",
+   "lh": "24px",
+   "ls": "normal",
+   "color": "rgb(255, 255, 255)",
+   "smooth": "antialiased",
+   "bgClip": "border-box",
+   "bgImage": "none",
+   "textShadow": null
+  },
+  "body": {
+   "text": "Neki, sharded Postgres, is now available. Get started\nSign i",
+   "family": "ui-monospace, SFMono-Regular, \"SF Mono\", Menlo, Consolas, \"L",
+   "size": "16px",
+   "weight": "400",
+   "lh": "24px",
+   "ls": "normal",
+   "color": "rgb(225, 225, 225)",
+   "smooth": "antialiased",
+   "bgClip": "border-box",
+   "bgImage": "none",
+   "textShadow": null
+  },
+  "bodySmoothing": "antialiased",
+  "textRendering": "auto",
+  "heroP": {
+   "text": "PlanetScale brings you the fastest databases available in th",
+   "family": "ui-monospace, SFMono-Regular, \"SF Mono\", Menlo, Consolas, \"L",
+   "size": "16px",
+   "weight": "400",
+   "lh": "24px",
+   "ls": "normal",
+   "color": "rgb(225, 225, 225)",
+   "smooth": "antialiased",
+   "bgClip": "border-box",
+   "bgImage": "none",
+   "textShadow": null
+  },
+  "ctas": [
+   {
+    "text": "View sandbox",
+    "h": 32,
+    "kind": "outline",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(225, 225, 225)",
+    "border": "2px rgb(243, 88, 21)",
+    "radius": "0px",
+    "shadow": null,
+    "bgImage": null,
+    "size": "16px",
+    "weight": "600"
+   },
+   {
+    "text": "Get in touch",
+    "h": 32,
+    "kind": "filled",
+    "bg": "rgb(243, 88, 21)",
+    "color": "rgb(255, 255, 255)",
+    "border": null,
+    "radius": "0px",
+    "shadow": null,
+    "bgImage": null,
+    "size": "16px",
+    "weight": "600"
+   },
+   {
+    "text": "Read case study",
+    "h": 128,
+    "kind": "outline",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(71, 183, 248)",
+    "border": "1px rgb(193, 193, 193)",
+    "radius": "0px",
+    "shadow": null,
+    "bgImage": null,
+    "size": "16px",
+    "weight": "400"
+   },
+   {
+    "text": "Read case study",
+    "h": 128,
+    "kind": "outline",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(71, 183, 248)",
+    "border": "1px rgb(193, 193, 193)",
+    "radius": "0px",
+    "shadow": null,
+    "bgImage": null,
+    "size": "16px",
+    "weight": "400"
+   }
+  ],
+  "nav": {
+   "h": 32,
+   "bg": "rgb(17, 17, 17)",
+   "backdrop": "none",
+   "bb": "0px solid rgb(193, 193, 193)",
+   "shadow": null,
+   "linkColor": "rgb(225, 225, 225)"
+  },
+  "effects": {
+   "radial": 0,
+   "conic": 0,
+   "linear": 6,
+   "urlbg": 0,
+   "blurEls": 0,
+   "backdropEls": 0,
+   "mixBlend": 0,
+   "maskEls": 0,
+   "gradEx": [],
+   "canvas": 0,
+   "video": 0,
+   "svg": 154,
+   "img": 1
+  },
+  "noise": false,
+  "gradientHeadings": 0,
+  "accents": [
+   {
+    "hex": "#47b7f8",
+    "n": 97,
+    "L": 0.744,
+    "C": 0.137,
+    "H": 238
+   },
+   {
+    "hex": "#f35815",
+    "n": 3,
+    "L": 0.661,
+    "C": 0.202,
+    "H": 39
+   },
+   {
+    "hex": "#fbca00",
+    "n": 1,
+    "L": 0.857,
+    "C": 0.175,
+    "H": 91
+   }
+  ]
+ },
+ "full": {
+  "title": "PlanetScale - the world’s fastest and most scalable cloud hosting for Vitess, Neki, and Postgres",
+  "vw": 1440,
+  "pageHeight": 8363,
+  "colorScheme": {
+   "html": "normal",
+   "body": "normal",
+   "metaTheme": "#111111",
+   "htmlClass": "",
+   "dataTheme": null
+  },
+  "pageBg": "#111111",
+  "pageBgOklabL": 0.178,
+  "pageBgOklabC": 0,
+  "pageBgOklabH": 90,
+  "cssVarCount": 317,
+  "cssVars": [
+   [
+    ":root, :host --color-white",
+    "#fff"
+   ],
+   [
+    ":root, :host --color-black",
+    "#000"
+   ],
+   [
+    ":root, :host --color-primary",
+    "var(--bg-primary)"
+   ],
+   [
+    ":root, :host --color-gray-50",
+    "#fafafa"
+   ],
+   [
+    ":root, :host --color-gray-100",
+    "#ebebeb"
+   ],
+   [
+    ":root, :host --color-gray-200",
+    "#e1e1e1"
+   ],
+   [
+    ":root, :host --color-gray-300",
+    "#c1c1c1"
+   ],
+   [
+    ":root, :host --color-gray-400",
+    "#a1a1a1"
+   ],
+   [
+    ":root, :host --color-gray-500",
+    "#818181"
+   ],
+   [
+    ":root, :host --color-gray-550",
+    "#737373"
+   ],
+   [
+    ":root, :host --color-gray-600",
+    "#616161"
+   ],
+   [
+    ":root, :host --color-gray-700",
+    "#414141"
+   ],
+   [
+    ":root, :host --color-gray-800",
+    "#2b2b2b"
+   ],
+   [
+    ":root, :host --color-gray-850",
+    "#1a1a1a"
+   ],
+   [
+    ":root, :host --color-gray-900",
+    "#111"
+   ],
+   [
+    ":root, :host --color-red-100",
+    "#ffe5e9"
+   ],
+   [
+    ":root, :host --color-red-200",
+    "#fbbfc7"
+   ],
+   [
+    ":root, :host --color-red-300",
+    "#ff909f"
+   ],
+   [
+    ":root, :host --color-red-400",
+    "#ff7082"
+   ],
+   [
+    ":root, :host --color-red-500",
+    "#ff455d"
+   ],
+   [
+    ":root, :host --color-red-600",
+    "#d92038"
+   ],
+   [
+    ":root, :host --color-red-700",
+    "#c11027"
+   ],
+   [
+    ":root, :host --color-red-800",
+    "#8f0718"
+   ],
+   [
+    ":root, :host --color-red-900",
+    "#341418"
+   ],
+   [
+    ":root, :host --color-red-950",
+    "#200a0d"
+   ],
+   [
+    ":root, :host --color-red",
+    "var(--text-red)"
+   ],
+   [
+    ":root, :host --color-orange-50",
+    "#fff8f3"
+   ],
+   [
+    ":root, :host --color-orange-100",
+    "#ffe8d8"
+   ],
+   [
+    ":root, :host --color-orange-200",
+    "#ffc59b"
+   ],
+   [
+    ":root, :host --color-orange-300",
+    "#fc9c66"
+   ],
+   [
+    ":root, :host --color-orange-400",
+    "#fd812d"
+   ],
+   [
+    ":root, :host --color-orange-500",
+    "#f35815"
+   ],
+   [
+    ":root, :host --color-orange-600",
+    "#b83a05"
+   ],
+   [
+    ":root, :host --color-orange-700",
+    "#962d00"
+   ],
+   [
+    ":root, :host --color-orange-800",
+    "#672002"
+   ],
+   [
+    ":root, :host --color-orange-900",
+    "#3c1403"
+   ],
+   [
+    ":root, :host --color-orange-950",
+    "#240b00"
+   ],
+   [
+    ":root, :host --color-orange",
+    "var(--text-orange)"
+   ],
+   [
+    ":root, :host --color-yellow-50",
+    "#fffbe4"
+   ],
+   [
+    ":root, :host --color-yellow-100",
+    "#fff1a8"
+   ],
+   [
+    ":root, :host --color-yellow-200",
+    "#fed54a"
+   ],
+   [
+    ":root, :host --color-yellow-300",
+    "#f2b600"
+   ],
+   [
+    ":root, :host --color-yellow-400",
+    "#d19f03"
+   ],
+   [
+    ":root, :host --color-yellow-500",
+    "#a78103"
+   ],
+   [
+    ":root, :host --color-yellow-600",
+    "#7d5903"
+   ],
+   [
+    ":root, :host --color-yellow-700",
+    "#5c4716"
+   ],
+   [
+    ":root, :host --color-yellow-800",
+    "#41320c"
+   ],
+   [
+    ":root, :host --color-yellow-900",
+    "#281e03"
+   ],
+   [
+    ":root, :host --color-yellow-950",
+    "#171101"
+   ],
+   [
+    ":root, :host --color-green-50",
+    "#effff3"
+   ],
+   [
+    ":root, :host --color-green-100",
+    "#d7fbdf"
+   ],
+   [
+    ":root, :host --color-green-200",
+    "#a9ecb8"
+   ],
+   [
+    ":root, :host --color-green-300",
+    "#75db8c"
+   ],
+   [
+    ":root, :host --color-green-400",
+    "#40d763"
+   ],
+   [
+    ":root, :host --color-green-500",
+    "#27b648"
+   ],
+   [
+    ":root, :host --color-green-600",
+    "#13862e"
+   ],
+   [
+    ":root, :host --color-green-700",
+    "#19652a"
+   ],
+   [
+    ":root, :host --color-green-800",
+    "#10481d"
+   ],
+   [
+    ":root, :host --color-green-900",
+    "#0a2b13"
+   ],
+   [
+    ":root, :host --color-green-950",
+    "#041a0a"
+   ],
+   [
+    ":root, :host --color-green",
+    "var(--text-green)"
+   ],
+   [
+    ":root, :host --color-neki",
+    "#fbca00"
+   ],
+   [
+    ":root, :host --color-postgres",
+    "var(--text-postgres)"
+   ],
+   [
+    ":root, :host --color-blue-50",
+    "#f3fbff"
+   ],
+   [
+    ":root, :host --color-blue-100",
+    "#ddf2ff"
+   ],
+   [
+    ":root, :host --color-blue-200",
+    "#a9dffe"
+   ],
+   [
+    ":root, :host --color-blue-300",
+    "#73c7f9"
+   ],
+   [
+    ":root, :host --color-blue-400",
+    "#47b7f8"
+   ],
+   [
+    ":root, :host --color-blue-500",
+    "#1e9de7"
+   ],
+   [
+    ":root, :host --color-blue-600",
+    "#0b6ec5"
+   ],
+   [
+    ":root, :host --color-blue-700",
+    "#144eb6"
+   ],
+   [
+    ":root, :host --color-blue-800",
+    "#0e3682"
+   ],
+   [
+    ":root, :host --color-blue-900",
+    "#08204e"
+   ],
+   [
+    ":root, :host --color-blue-950",
+    "#04122e"
+   ],
+   [
+    ":root, :host --color-blue",
+    "var(--text-blue)"
+   ],
+   [
+    ":root, :host --color-purple-50",
+    "#f9f8ff"
+   ],
+   [
+    ":root, :host --color-purple-100",
+    "#eeeaff"
+   ],
+   [
+    ":root, :host --color-purple-200",
+    "#d4c9fe"
+   ],
+   [
+    ":root, :host --color-purple-300",
+    "#b7a5fb"
+   ],
+   [
+    ":root, :host --color-purple-400",
+    "#a18bf5"
+   ],
+   [
+    ":root, :host --color-purple-500",
+    "#8467f3"
+   ],
+   [
+    ":root, :host --color-purple-600",
+    "#5e49af"
+   ],
+   [
+    ":root, :host --color-purple-700",
+    "#4b3990"
+   ],
+   [
+    ":root, :host --color-purple-800",
+    "#3e1f75"
+   ],
+   [
+    ":root, :host --color-purple-900",
+    "#27124a"
+   ],
+   [
+    ":root, :host --color-purple-950",
+    "#180636"
+   ],
+   [
+    ":root, :host --color-purple",
+    "var(--text-purple)"
+   ],
+   [
+    ":root, :host --color-focus",
+    "rgb(var(--bg-focus) / 60%)"
+   ],
+   [
+    ":root, :host --background-color-primary",
+    "var(--bg-primary)"
+   ],
+   [
+    ":root, :host --background-color-secondary",
+    "var(--bg-secondary)"
+   ],
+   [
+    ":root, :host --background-color-inverted",
+    "var(--bg-inverted)"
+   ],
+   [
+    ":root, :host --border-color-primary",
+    "var(--border-primary)"
+   ],
+   [
+    ":root, :host --border-color-contrast",
+    "var(--border-contrast)"
+   ],
+   [
+    ":root, :host --text-color-contrast",
+    "var(--text-contrast)"
+   ],
+   [
+    ":root, :host --text-color-primary",
+    "var(--text-primary)"
+   ],
+   [
+    ":root, :host --text-color-secondary",
+    "var(--text-secondary)"
+   ],
+   [
+    ":root, :host --text-color-decoration",
+    "var(--text-decoration)"
+   ],
+   [
+    ":root, :host --text-color-inverted",
+    "var(--bg-primary)"
+   ],
+   [
+    ":root, :host --text-color-disabled",
+    "var(--text-disabled)"
+   ],
+   [
+    ".dark\\:ui-active\\:ring-blue-500[data-hea --tw-ring-color",
+    "var(--color-blue-500)"
+   ],
+   [
+    ":root, .invert-color-mode --white",
+    "#fff"
+   ],
+   [
+    ":root, .invert-color-mode --black",
+    "#000"
+   ],
+   [
+    ":root, .invert-color-mode --gray-50",
+    "var(--color-gray-50)"
+   ],
+   [
+    ":root, .invert-color-mode --gray-100",
+    "var(--color-gray-100)"
+   ],
+   [
+    ":root, .invert-color-mode --gray-200",
+    "var(--color-gray-200)"
+   ],
+   [
+    ":root, .invert-color-mode --gray-300",
+    "var(--color-gray-300)"
+   ],
+   [
+    ":root, .invert-color-mode --gray-400",
+    "var(--color-gray-400)"
+   ],
+   [
+    ":root, .invert-color-mode --gray-500",
+    "var(--color-gray-500)"
+   ],
+   [
+    ":root, .invert-color-mode --gray-550",
+    "var(--color-gray-550)"
+   ],
+   [
+    ":root, .invert-color-mode --gray-600",
+    "var(--color-gray-600)"
+   ],
+   [
+    ":root, .invert-color-mode --gray-700",
+    "var(--color-gray-700)"
+   ],
+   [
+    ":root, .invert-color-mode --gray-800",
+    "var(--color-gray-800)"
+   ],
+   [
+    ":root, .invert-color-mode --gray-850",
+    "var(--color-gray-850)"
+   ],
+   [
+    ":root, .invert-color-mode --gray-900",
+    "var(--color-gray-900)"
+   ],
+   [
+    ":root, .invert-color-mode --red-50",
+    "var(--color-red-50)"
+   ],
+   [
+    ":root, .invert-color-mode --red-100",
+    "var(--color-red-100)"
+   ],
+   [
+    ":root, .invert-color-mode --red-200",
+    "var(--color-red-200)"
+   ],
+   [
+    ":root, .invert-color-mode --red-300",
+    "var(--color-red-300)"
+   ],
+   [
+    ":root, .invert-color-mode --red-400",
+    "var(--color-red-400)"
+   ],
+   [
+    ":root, .invert-color-mode --red-500",
+    "var(--color-red-500)"
+   ]
+  ],
+  "surfaces": [
+   {
+    "hex": "#111111",
+    "L": 0.178,
+    "C": 0,
+    "H": 90,
+    "n": 2,
+    "area": 549651,
+    "ex": [
+     "header.relative",
+     "pre.hidden"
+    ]
+   },
+   {
+    "hex": "#fbca00",
+    "L": 0.857,
+    "C": 0.175,
+    "H": 91,
+    "n": 1,
+    "area": 57600,
+    "ex": [
+     "div.bg-neki"
+    ]
+   },
+   {
+    "hex": "#ffffff",
+    "L": 1,
+    "C": 0,
+    "H": 90,
+    "n": 1,
+    "area": 20272,
+    "ex": [
+     "button.py-2"
+    ]
+   },
+   {
+    "hex": "#f35815",
+    "L": 0.661,
+    "C": 0.202,
+    "H": 39,
+    "n": 1,
+    "area": 4310,
+    "ex": [
+     "a.btn"
+    ]
+   }
+  ],
+  "overlays": [],
+  "borders": [
+   {
+    "border": "rgb(193, 193, 193) @1px",
+    "n": 329,
+    "alpha": 1,
+    "flatOnPage": "#c1c1c1",
+    "L": 0.811
+   },
+   {
+    "border": "rgb(97, 97, 97) @2px",
+    "n": 6,
+    "alpha": 1,
+    "flatOnPage": "#616161",
+    "L": 0.493
+   },
+   {
+    "border": "rgb(243, 88, 21) @2px",
+    "n": 5,
+    "alpha": 1,
+    "flatOnPage": "#f35815",
+    "L": 0.661
+   }
+  ],
+  "radii": [
+   [
+    "3.35544e+07px",
+    1
+   ]
+  ],
+  "shadows": [],
+  "nShadowEls": 0,
+  "textColors": [
+   {
+    "color": "rgb(225, 225, 225)",
+    "chars": 7784,
+    "n": 112,
+    "fg": "#e1e1e1",
+    "alpha": 1,
+    "contrast": 14.44,
+    "L": 0.91,
+    "bg": "#111111",
+    "size": "16px",
+    "weight": "600",
+    "ex": "Sign in"
+   },
+   {
+    "color": "rgb(255, 255, 255)",
+    "chars": 2347,
+    "n": 9,
+    "fg": "#ffffff",
+    "alpha": 1,
+    "contrast": 18.88,
+    "L": 1,
+    "bg": "#111111",
+    "size": "16px",
+    "weight": "600",
+    "ex": "Get started"
+   },
+   {
+    "color": "rgb(71, 183, 248)",
+    "chars": 1094,
+    "n": 67,
+    "fg": "#47b7f8",
+    "alpha": 1,
+    "contrast": 8.45,
+    "L": 0.744,
+    "bg": "#111111",
+    "size": "16px",
+    "weight": "400",
+    "ex": "fastest databases"
+   },
+   {
+    "color": "rgb(161, 161, 161)",
+    "chars": 374,
+    "n": 8,
+    "fg": "#a1a1a1",
+    "alpha": 1,
+    "contrast": 7.31,
+    "L": 0.709,
+    "bg": "#111111",
+    "size": "16px",
+    "weight": "400",
+    "ex": "– Sualeh Asif - Chief Produc"
+   },
+   {
+    "color": "rgb(17, 17, 17)",
+    "chars": 47,
+    "n": 2,
+    "fg": "#111111",
+    "alpha": 1,
+    "contrast": 12.18,
+    "L": 0.178,
+    "bg": "#fbca00",
+    "size": "16px",
+    "weight": "600",
+    "ex": "Neki, sharded Postgres, is n"
+   },
+   {
+    "color": "rgb(65, 65, 65)",
+    "chars": 14,
+    "n": 14,
+    "fg": "#414141",
+    "alpha": 1,
+    "contrast": 1.85,
+    "L": 0.375,
+    "bg": "#111111",
+    "size": "16px",
+    "weight": "400",
+    "ex": "|"
+   }
+  ],
+  "h1": {
+   "text": "The world’s fastest and most scalable cloud databases",
+   "family": "ui-monospace, SFMono-Regular, \"SF Mono\", Menlo, Consolas, \"L",
+   "size": "16px",
+   "weight": "700",
+   "lh": "24px",
+   "ls": "normal",
+   "color": "rgb(255, 255, 255)",
+   "smooth": "antialiased",
+   "bgClip": "border-box",
+   "bgImage": "none",
+   "textShadow": null
+  },
+  "body": {
+   "text": "Neki, sharded Postgres, is now available. Get started\nSign i",
+   "family": "ui-monospace, SFMono-Regular, \"SF Mono\", Menlo, Consolas, \"L",
+   "size": "16px",
+   "weight": "400",
+   "lh": "24px",
+   "ls": "normal",
+   "color": "rgb(225, 225, 225)",
+   "smooth": "antialiased",
+   "bgClip": "border-box",
+   "bgImage": "none",
+   "textShadow": null
+  },
+  "bodySmoothing": "antialiased",
+  "textRendering": "auto",
+  "heroP": {
+   "text": "PlanetScale brings you the fastest databases available in th",
+   "family": "ui-monospace, SFMono-Regular, \"SF Mono\", Menlo, Consolas, \"L",
+   "size": "16px",
+   "weight": "400",
+   "lh": "24px",
+   "ls": "normal",
+   "color": "rgb(225, 225, 225)",
+   "smooth": "antialiased",
+   "bgClip": "border-box",
+   "bgImage": "none",
+   "textShadow": null
+  },
+  "ctas": [
+   {
+    "text": "View sandbox",
+    "h": 32,
+    "kind": "outline",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(225, 225, 225)",
+    "border": "2px rgb(243, 88, 21)",
+    "radius": "0px",
+    "shadow": null,
+    "bgImage": null,
+    "size": "16px",
+    "weight": "600"
+   },
+   {
+    "text": "Get in touch",
+    "h": 32,
+    "kind": "filled",
+    "bg": "rgb(243, 88, 21)",
+    "color": "rgb(255, 255, 255)",
+    "border": null,
+    "radius": "0px",
+    "shadow": null,
+    "bgImage": null,
+    "size": "16px",
+    "weight": "600"
+   },
+   {
+    "text": "Read case study",
+    "h": 128,
+    "kind": "outline",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(71, 183, 248)",
+    "border": "1px rgb(193, 193, 193)",
+    "radius": "0px",
+    "shadow": null,
+    "bgImage": null,
+    "size": "16px",
+    "weight": "400"
+   },
+   {
+    "text": "Read case study",
+    "h": 128,
+    "kind": "outline",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(71, 183, 248)",
+    "border": "1px rgb(193, 193, 193)",
+    "radius": "0px",
+    "shadow": null,
+    "bgImage": null,
+    "size": "16px",
+    "weight": "400"
+   }
+  ],
+  "nav": {
+   "h": 32,
+   "bg": "rgb(17, 17, 17)",
+   "backdrop": "none",
+   "bb": "0px solid rgb(193, 193, 193)",
+   "shadow": null,
+   "linkColor": "rgb(225, 225, 225)"
+  },
+  "effects": {
+   "radial": 0,
+   "conic": 0,
+   "linear": 6,
+   "urlbg": 0,
+   "blurEls": 0,
+   "backdropEls": 0,
+   "mixBlend": 0,
+   "maskEls": 0,
+   "gradEx": [],
+   "canvas": 0,
+   "video": 0,
+   "svg": 154,
+   "img": 1
+  },
+  "noise": false,
+  "gradientHeadings": 0,
+  "accents": [
+   {
+    "hex": "#47b7f8",
+    "n": 97,
+    "L": 0.744,
+    "C": 0.137,
+    "H": 238
+   },
+   {
+    "hex": "#f35815",
+    "n": 3,
+    "L": 0.661,
+    "C": 0.202,
+    "H": 39
+   },
+   {
+    "hex": "#fbca00",
+    "n": 1,
+    "L": 0.857,
+    "C": 0.175,
+    "H": 91
+   }
+  ]
+ }
+}

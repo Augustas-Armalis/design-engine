@@ -1,0 +1,1058 @@
+{
+ "url": "https://kargul.studio",
+ "scheme": "dark",
+ "pageHeight": 8238,
+ "fold": {
+  "title": "Home - kargul.studio",
+  "vw": 1440,
+  "pageHeight": 8238,
+  "colorScheme": {
+   "html": "normal",
+   "body": "normal",
+   "metaTheme": null,
+   "htmlClass": "bg-background",
+   "dataTheme": null
+  },
+  "pageBg": "#efefef",
+  "pageBgOklabL": 0.952,
+  "pageBgOklabC": 0,
+  "pageBgOklabH": 90,
+  "cssVarCount": 133,
+  "cssVars": [
+   [
+    ":root, :host --color-yellow-200",
+    "lab(94.3433% -5.00429 52.9663)"
+   ],
+   [
+    ":root, :host --color-blue-500",
+    "lab(54.1736% 13.3369 -74.6839)"
+   ],
+   [
+    ":root, :host --color-blue-600",
+    "lab(44.0605% 29.0279 -86.0352)"
+   ],
+   [
+    ":root, :host --color-gray-50",
+    "lab(98.2596% -.247031 -.706708)"
+   ],
+   [
+    ":root, :host --color-gray-600",
+    "lab(35.6337% -1.58697 -10.8425)"
+   ],
+   [
+    ":root, :host --color-gray-900",
+    "lab(8.11897% .811279 -12.254)"
+   ],
+   [
+    ":root, :host --color-black",
+    "#000"
+   ],
+   [
+    ":root, :host --color-white",
+    "#fff"
+   ],
+   [
+    ":root --background",
+    "#efefef"
+   ],
+   [
+    ":root --foreground",
+    "#232323"
+   ],
+   [
+    ":root --dark-foreground",
+    "#efefef"
+   ],
+   [
+    ":root --dark-muted",
+    "#9d9d9d"
+   ],
+   [
+    ":root --dark-surface",
+    "#313131"
+   ],
+   [
+    ":root --dark-card",
+    "#2e2e2e"
+   ],
+   [
+    ":root --card",
+    "#fff"
+   ],
+   [
+    ":root --card-foreground",
+    "#232323"
+   ],
+   [
+    ":root --popover-foreground",
+    "lab(2.75381% 0 0)"
+   ],
+   [
+    ":root --primary",
+    "#232323"
+   ],
+   [
+    ":root --primary-foreground",
+    "#efefef"
+   ],
+   [
+    ":root --secondary-foreground",
+    "#000"
+   ],
+   [
+    ":root --muted",
+    "lab(96.52% -.0000298023 .0000119209)"
+   ],
+   [
+    ":root --muted-foreground",
+    "#707070"
+   ],
+   [
+    ":root --accent",
+    "lab(96.52% -.0000298023 .0000119209)"
+   ],
+   [
+    ":root --accent-foreground",
+    "lab(7.78201% -.0000149012 0)"
+   ],
+   [
+    ":root --border",
+    "lab(90.952% 0 -.0000119209)"
+   ],
+   [
+    ":root --sidebar-foreground",
+    "lab(2.75381% 0 0)"
+   ],
+   [
+    ":root --sidebar-primary",
+    "lab(7.78201% -.0000149012 0)"
+   ],
+   [
+    ":root --sidebar-primary-foreground",
+    "lab(98.26% 0 0)"
+   ],
+   [
+    ":root --sidebar-accent",
+    "lab(96.52% -.0000298023 .0000119209)"
+   ],
+   [
+    ":root --sidebar-accent-foreground",
+    "lab(7.78201% -.0000149012 0)"
+   ],
+   [
+    ":root --sidebar-border",
+    "lab(90.952% 0 -.0000119209)"
+   ],
+   [
+    ".dark --background",
+    "lab(2.75381% 0 0)"
+   ],
+   [
+    ".dark --foreground",
+    "lab(98.26% 0 0)"
+   ],
+   [
+    ".dark --card",
+    "lab(7.78201% -.0000149012 0)"
+   ],
+   [
+    ".dark --card-foreground",
+    "lab(98.26% 0 0)"
+   ],
+   [
+    ".dark --popover-foreground",
+    "lab(98.26% 0 0)"
+   ],
+   [
+    ".dark --primary",
+    "lab(90.952% 0 -.0000119209)"
+   ],
+   [
+    ".dark --primary-foreground",
+    "lab(7.78201% -.0000149012 0)"
+   ],
+   [
+    ".dark --secondary-foreground",
+    "lab(98.26% 0 0)"
+   ],
+   [
+    ".dark --muted",
+    "lab(15.204% 0 -.00000596046)"
+   ],
+   [
+    ".dark --muted-foreground",
+    "lab(66.128% -.0000298023 .0000119209)"
+   ],
+   [
+    ".dark --accent",
+    "lab(15.204% 0 -.00000596046)"
+   ],
+   [
+    ".dark --accent-foreground",
+    "lab(98.26% 0 0)"
+   ],
+   [
+    ".dark --border",
+    "lab(100% 0 0/.1)"
+   ],
+   [
+    ".dark --sidebar-foreground",
+    "lab(98.26% 0 0)"
+   ],
+   [
+    ".dark --sidebar-primary",
+    "lab(36.9089% 35.0961 -85.6872)"
+   ],
+   [
+    ".dark --sidebar-primary-foreground",
+    "lab(98.26% 0 0)"
+   ],
+   [
+    ".dark --sidebar-accent",
+    "lab(15.204% 0 -.00000596046)"
+   ],
+   [
+    ".dark --sidebar-accent-foreground",
+    "lab(98.26% 0 0)"
+   ],
+   [
+    ".dark --sidebar-border",
+    "lab(100% 0 0/.1)"
+   ],
+   [
+    ":root --swiper-theme-color",
+    "#007aff"
+   ]
+  ],
+  "surfaces": [
+   {
+    "hex": "#232323",
+    "L": 0.256,
+    "C": 0,
+    "H": 90,
+    "n": 23,
+    "area": 4317370,
+    "ex": [
+     "a.ease-power3-in-out",
+     "div.bg-dark"
+    ]
+   },
+   {
+    "hex": "#313131",
+    "L": 0.313,
+    "C": 0,
+    "H": 90,
+    "n": 8,
+    "area": 2519552,
+    "ex": [
+     "article.bg-dark-surface",
+     "article.bg-dark-surface"
+    ]
+   },
+   {
+    "hex": "#ffffff",
+    "L": 1,
+    "C": 0,
+    "H": 90,
+    "n": 16,
+    "area": 1940111,
+    "ex": [
+     "nav.ease-smooth-in-out",
+     "a.ease-smooth-in-out"
+    ]
+   },
+   {
+    "hex": "#f5f5f5",
+    "L": 0.97,
+    "C": 0,
+    "H": 90,
+    "n": 10,
+    "area": 778410,
+    "ex": [
+     "div.relative",
+     "div.relative"
+    ]
+   },
+   {
+    "hex": "#efefef",
+    "L": 0.952,
+    "C": 0,
+    "H": 90,
+    "n": 1,
+    "area": 7234,
+    "ex": [
+     "span.bg-background"
+    ]
+   }
+  ],
+  "overlays": [
+   {
+    "bg": "oklab(0.256152 0.0000116825 0.000005126 / 0.4) => #2b2b2b",
+    "n": 5,
+    "area": 14122
+   }
+  ],
+  "borders": [],
+  "radii": [
+   [
+    "3.35544e+07px",
+    76
+   ],
+   [
+    "27.166px",
+    14
+   ],
+   [
+    "18px",
+    8
+   ],
+   [
+    "24px",
+    7
+   ],
+   [
+    "28.8px",
+    7
+   ],
+   [
+    "36px",
+    4
+   ],
+   [
+    "38px",
+    3
+   ],
+   [
+    "20px",
+    3
+   ]
+  ],
+  "shadows": [],
+  "nShadowEls": 0,
+  "textColors": [
+   {
+    "color": "rgb(112, 112, 112)",
+    "chars": 3410,
+    "n": 40,
+    "fg": "#707070",
+    "alpha": 1,
+    "contrast": 4.95,
+    "L": 0.545,
+    "bg": "#ffffff",
+    "size": "13px",
+    "weight": "500",
+    "ex": "Recent Work"
+   },
+   {
+    "color": "rgb(157, 157, 157)",
+    "chars": 2835,
+    "n": 17,
+    "fg": "#9d9d9d",
+    "alpha": 1,
+    "contrast": 5.8,
+    "L": 0.696,
+    "bg": "#232323",
+    "size": "14px",
+    "weight": "500",
+    "ex": "Websites, product design, an"
+   },
+   {
+    "color": "rgb(0, 0, 0)",
+    "chars": 960,
+    "n": 16,
+    "fg": "#000000",
+    "alpha": 1,
+    "contrast": 21,
+    "L": 0,
+    "bg": "#ffffff",
+    "size": "15px",
+    "weight": "600",
+    "ex": "See"
+   },
+   {
+    "color": "rgb(239, 239, 239)",
+    "chars": 735,
+    "n": 79,
+    "fg": "#efefef",
+    "alpha": 1,
+    "contrast": 13.67,
+    "L": 0.952,
+    "bg": "#232323",
+    "size": "15px",
+    "weight": "700",
+    "ex": "Start"
+   },
+   {
+    "color": "rgb(35, 35, 35)",
+    "chars": 649,
+    "n": 51,
+    "fg": "#232323",
+    "alpha": 1,
+    "contrast": 15.72,
+    "L": 0.256,
+    "bg": "#ffffff",
+    "size": "13px",
+    "weight": "600",
+    "ex": "Start"
+   },
+   {
+    "color": "rgb(136, 136, 136)",
+    "chars": 86,
+    "n": 10,
+    "fg": "#888888",
+    "alpha": 1,
+    "contrast": 3.54,
+    "L": 0.627,
+    "bg": "#ffffff",
+    "size": "14px",
+    "weight": "500",
+    "ex": "Liggo"
+   }
+  ],
+  "h1": {
+   "text": "A design and engineering partner for scale-ups and enterpris",
+   "family": "Geist, \"Geist Fallback\"",
+   "size": "52px",
+   "weight": "700",
+   "lh": "55.64px",
+   "ls": "-1.56px",
+   "color": "rgb(35, 35, 35)",
+   "smooth": "antialiased",
+   "bgClip": "border-box",
+   "bgImage": "none",
+   "textShadow": null
+  },
+  "body": {
+   "text": "Recent Work\nSwipe file\nStart\na\nproject\nAccepting 3 more proj",
+   "family": "Geist, \"Geist Fallback\"",
+   "size": "16px",
+   "weight": "500",
+   "lh": "24px",
+   "ls": "normal",
+   "color": "rgb(35, 35, 35)",
+   "smooth": "antialiased",
+   "bgClip": "border-box",
+   "bgImage": "none",
+   "textShadow": null
+  },
+  "bodySmoothing": "antialiased",
+  "textRendering": "auto",
+  "heroP": {
+   "text": "We act as an elite extension of your in-house team, shipping",
+   "family": "Geist, \"Geist Fallback\"",
+   "size": "16px",
+   "weight": "500",
+   "lh": "24px",
+   "ls": "normal",
+   "color": "rgb(112, 112, 112)",
+   "smooth": "antialiased",
+   "bgClip": "border-box",
+   "bgImage": "none",
+   "textShadow": null
+  },
+  "ctas": [
+   {
+    "text": "Start\na\nproject",
+    "h": 42,
+    "kind": "filled",
+    "bg": "rgb(255, 255, 255)",
+    "color": "rgb(35, 35, 35)",
+    "border": null,
+    "radius": "3.35544e+07px",
+    "shadow": null,
+    "bgImage": null,
+    "size": "13px",
+    "weight": "600"
+   },
+   {
+    "text": "Start\na\nproject",
+    "h": 54,
+    "kind": "filled",
+    "bg": "rgb(35, 35, 35)",
+    "color": "rgb(239, 239, 239)",
+    "border": null,
+    "radius": "3.35544e+07px",
+    "shadow": null,
+    "bgImage": null,
+    "size": "15px",
+    "weight": "700"
+   },
+   {
+    "text": "See\nour\nwork",
+    "h": 54,
+    "kind": "filled",
+    "bg": "rgb(255, 255, 255)",
+    "color": "rgb(0, 0, 0)",
+    "border": null,
+    "radius": "3.35544e+07px",
+    "shadow": null,
+    "bgImage": null,
+    "size": "15px",
+    "weight": "600"
+   }
+  ],
+  "nav": {
+   "h": 42,
+   "bg": "rgba(0, 0, 0, 0)",
+   "backdrop": "none",
+   "bb": "0px solid lab(90.952 0 -0.0000119209)",
+   "shadow": null,
+   "linkColor": "rgb(35, 35, 35)"
+  },
+  "effects": {
+   "radial": 0,
+   "conic": 0,
+   "linear": 0,
+   "urlbg": 7,
+   "blurEls": 0,
+   "backdropEls": 10,
+   "mixBlend": 1,
+   "maskEls": 1,
+   "gradEx": [],
+   "canvas": 6,
+   "video": 0,
+   "svg": 20,
+   "img": 171
+  },
+  "noise": false,
+  "gradientHeadings": 0,
+  "accents": [
+   {
+    "hex": "#1daf61",
+    "n": 3,
+    "L": 0.664,
+    "C": 0.163,
+    "H": 153
+   }
+  ]
+ },
+ "full": {
+  "title": "Home - kargul.studio",
+  "vw": 1440,
+  "pageHeight": 8238,
+  "colorScheme": {
+   "html": "normal",
+   "body": "normal",
+   "metaTheme": null,
+   "htmlClass": "bg-background",
+   "dataTheme": null
+  },
+  "pageBg": "#efefef",
+  "pageBgOklabL": 0.952,
+  "pageBgOklabC": 0,
+  "pageBgOklabH": 90,
+  "cssVarCount": 133,
+  "cssVars": [
+   [
+    ":root, :host --color-yellow-200",
+    "lab(94.3433% -5.00429 52.9663)"
+   ],
+   [
+    ":root, :host --color-blue-500",
+    "lab(54.1736% 13.3369 -74.6839)"
+   ],
+   [
+    ":root, :host --color-blue-600",
+    "lab(44.0605% 29.0279 -86.0352)"
+   ],
+   [
+    ":root, :host --color-gray-50",
+    "lab(98.2596% -.247031 -.706708)"
+   ],
+   [
+    ":root, :host --color-gray-600",
+    "lab(35.6337% -1.58697 -10.8425)"
+   ],
+   [
+    ":root, :host --color-gray-900",
+    "lab(8.11897% .811279 -12.254)"
+   ],
+   [
+    ":root, :host --color-black",
+    "#000"
+   ],
+   [
+    ":root, :host --color-white",
+    "#fff"
+   ],
+   [
+    ":root --background",
+    "#efefef"
+   ],
+   [
+    ":root --foreground",
+    "#232323"
+   ],
+   [
+    ":root --dark-foreground",
+    "#efefef"
+   ],
+   [
+    ":root --dark-muted",
+    "#9d9d9d"
+   ],
+   [
+    ":root --dark-surface",
+    "#313131"
+   ],
+   [
+    ":root --dark-card",
+    "#2e2e2e"
+   ],
+   [
+    ":root --card",
+    "#fff"
+   ],
+   [
+    ":root --card-foreground",
+    "#232323"
+   ],
+   [
+    ":root --popover-foreground",
+    "lab(2.75381% 0 0)"
+   ],
+   [
+    ":root --primary",
+    "#232323"
+   ],
+   [
+    ":root --primary-foreground",
+    "#efefef"
+   ],
+   [
+    ":root --secondary-foreground",
+    "#000"
+   ],
+   [
+    ":root --muted",
+    "lab(96.52% -.0000298023 .0000119209)"
+   ],
+   [
+    ":root --muted-foreground",
+    "#707070"
+   ],
+   [
+    ":root --accent",
+    "lab(96.52% -.0000298023 .0000119209)"
+   ],
+   [
+    ":root --accent-foreground",
+    "lab(7.78201% -.0000149012 0)"
+   ],
+   [
+    ":root --border",
+    "lab(90.952% 0 -.0000119209)"
+   ],
+   [
+    ":root --sidebar-foreground",
+    "lab(2.75381% 0 0)"
+   ],
+   [
+    ":root --sidebar-primary",
+    "lab(7.78201% -.0000149012 0)"
+   ],
+   [
+    ":root --sidebar-primary-foreground",
+    "lab(98.26% 0 0)"
+   ],
+   [
+    ":root --sidebar-accent",
+    "lab(96.52% -.0000298023 .0000119209)"
+   ],
+   [
+    ":root --sidebar-accent-foreground",
+    "lab(7.78201% -.0000149012 0)"
+   ],
+   [
+    ":root --sidebar-border",
+    "lab(90.952% 0 -.0000119209)"
+   ],
+   [
+    ".dark --background",
+    "lab(2.75381% 0 0)"
+   ],
+   [
+    ".dark --foreground",
+    "lab(98.26% 0 0)"
+   ],
+   [
+    ".dark --card",
+    "lab(7.78201% -.0000149012 0)"
+   ],
+   [
+    ".dark --card-foreground",
+    "lab(98.26% 0 0)"
+   ],
+   [
+    ".dark --popover-foreground",
+    "lab(98.26% 0 0)"
+   ],
+   [
+    ".dark --primary",
+    "lab(90.952% 0 -.0000119209)"
+   ],
+   [
+    ".dark --primary-foreground",
+    "lab(7.78201% -.0000149012 0)"
+   ],
+   [
+    ".dark --secondary-foreground",
+    "lab(98.26% 0 0)"
+   ],
+   [
+    ".dark --muted",
+    "lab(15.204% 0 -.00000596046)"
+   ],
+   [
+    ".dark --muted-foreground",
+    "lab(66.128% -.0000298023 .0000119209)"
+   ],
+   [
+    ".dark --accent",
+    "lab(15.204% 0 -.00000596046)"
+   ],
+   [
+    ".dark --accent-foreground",
+    "lab(98.26% 0 0)"
+   ],
+   [
+    ".dark --border",
+    "lab(100% 0 0/.1)"
+   ],
+   [
+    ".dark --sidebar-foreground",
+    "lab(98.26% 0 0)"
+   ],
+   [
+    ".dark --sidebar-primary",
+    "lab(36.9089% 35.0961 -85.6872)"
+   ],
+   [
+    ".dark --sidebar-primary-foreground",
+    "lab(98.26% 0 0)"
+   ],
+   [
+    ".dark --sidebar-accent",
+    "lab(15.204% 0 -.00000596046)"
+   ],
+   [
+    ".dark --sidebar-accent-foreground",
+    "lab(98.26% 0 0)"
+   ],
+   [
+    ".dark --sidebar-border",
+    "lab(100% 0 0/.1)"
+   ],
+   [
+    ":root --swiper-theme-color",
+    "#007aff"
+   ]
+  ],
+  "surfaces": [
+   {
+    "hex": "#232323",
+    "L": 0.256,
+    "C": 0,
+    "H": 90,
+    "n": 23,
+    "area": 4317370,
+    "ex": [
+     "a.ease-power3-in-out",
+     "div.bg-dark"
+    ]
+   },
+   {
+    "hex": "#313131",
+    "L": 0.313,
+    "C": 0,
+    "H": 90,
+    "n": 8,
+    "area": 2519552,
+    "ex": [
+     "article.bg-dark-surface",
+     "article.bg-dark-surface"
+    ]
+   },
+   {
+    "hex": "#ffffff",
+    "L": 1,
+    "C": 0,
+    "H": 90,
+    "n": 16,
+    "area": 1940111,
+    "ex": [
+     "nav.ease-smooth-in-out",
+     "a.ease-smooth-in-out"
+    ]
+   },
+   {
+    "hex": "#f5f5f5",
+    "L": 0.97,
+    "C": 0,
+    "H": 90,
+    "n": 10,
+    "area": 778410,
+    "ex": [
+     "div.relative",
+     "div.relative"
+    ]
+   },
+   {
+    "hex": "#efefef",
+    "L": 0.952,
+    "C": 0,
+    "H": 90,
+    "n": 1,
+    "area": 7234,
+    "ex": [
+     "span.bg-background"
+    ]
+   }
+  ],
+  "overlays": [
+   {
+    "bg": "oklab(0.256152 0.0000116825 0.000005126 / 0.4) => #2b2b2b",
+    "n": 5,
+    "area": 14122
+   }
+  ],
+  "borders": [],
+  "radii": [
+   [
+    "3.35544e+07px",
+    76
+   ],
+   [
+    "27.166px",
+    14
+   ],
+   [
+    "18px",
+    8
+   ],
+   [
+    "24px",
+    7
+   ],
+   [
+    "28.8px",
+    7
+   ],
+   [
+    "36px",
+    4
+   ],
+   [
+    "38px",
+    3
+   ],
+   [
+    "20px",
+    3
+   ]
+  ],
+  "shadows": [
+   {
+    "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.004) 0px 0.0553395px 0.166018px 0px, rgba(0, 0, 0, 0.004) 0px 0.0553395px 0.110679px -0.0553395px",
+    "n": 3
+   }
+  ],
+  "nShadowEls": 3,
+  "textColors": [
+   {
+    "color": "rgb(112, 112, 112)",
+    "chars": 3410,
+    "n": 40,
+    "fg": "#707070",
+    "alpha": 1,
+    "contrast": 4.95,
+    "L": 0.545,
+    "bg": "#ffffff",
+    "size": "13px",
+    "weight": "500",
+    "ex": "Recent Work"
+   },
+   {
+    "color": "rgb(157, 157, 157)",
+    "chars": 2835,
+    "n": 17,
+    "fg": "#9d9d9d",
+    "alpha": 1,
+    "contrast": 5.8,
+    "L": 0.696,
+    "bg": "#232323",
+    "size": "14px",
+    "weight": "500",
+    "ex": "Websites, product design, an"
+   },
+   {
+    "color": "rgb(0, 0, 0)",
+    "chars": 960,
+    "n": 16,
+    "fg": "#000000",
+    "alpha": 1,
+    "contrast": 21,
+    "L": 0,
+    "bg": "#ffffff",
+    "size": "15px",
+    "weight": "600",
+    "ex": "See"
+   },
+   {
+    "color": "rgb(239, 239, 239)",
+    "chars": 735,
+    "n": 79,
+    "fg": "#efefef",
+    "alpha": 1,
+    "contrast": 13.67,
+    "L": 0.952,
+    "bg": "#232323",
+    "size": "15px",
+    "weight": "700",
+    "ex": "Start"
+   },
+   {
+    "color": "rgb(35, 35, 35)",
+    "chars": 649,
+    "n": 51,
+    "fg": "#232323",
+    "alpha": 1,
+    "contrast": 15.72,
+    "L": 0.256,
+    "bg": "#ffffff",
+    "size": "13px",
+    "weight": "600",
+    "ex": "Start"
+   },
+   {
+    "color": "rgb(136, 136, 136)",
+    "chars": 86,
+    "n": 10,
+    "fg": "#888888",
+    "alpha": 1,
+    "contrast": 3.54,
+    "L": 0.627,
+    "bg": "#ffffff",
+    "size": "14px",
+    "weight": "500",
+    "ex": "Liggo"
+   }
+  ],
+  "h1": {
+   "text": "A design and engineering partner for scale-ups and enterpris",
+   "family": "Geist, \"Geist Fallback\"",
+   "size": "52px",
+   "weight": "700",
+   "lh": "55.64px",
+   "ls": "-1.56px",
+   "color": "rgb(35, 35, 35)",
+   "smooth": "antialiased",
+   "bgClip": "border-box",
+   "bgImage": "none",
+   "textShadow": null
+  },
+  "body": {
+   "text": "Recent Work\nSwipe file\nStart\na\nproject\nAccepting 3 more proj",
+   "family": "Geist, \"Geist Fallback\"",
+   "size": "16px",
+   "weight": "500",
+   "lh": "24px",
+   "ls": "normal",
+   "color": "rgb(35, 35, 35)",
+   "smooth": "antialiased",
+   "bgClip": "border-box",
+   "bgImage": "none",
+   "textShadow": null
+  },
+  "bodySmoothing": "antialiased",
+  "textRendering": "auto",
+  "heroP": {
+   "text": "We act as an elite extension of your in-house team, shipping",
+   "family": "Geist, \"Geist Fallback\"",
+   "size": "16px",
+   "weight": "500",
+   "lh": "24px",
+   "ls": "normal",
+   "color": "rgb(112, 112, 112)",
+   "smooth": "antialiased",
+   "bgClip": "border-box",
+   "bgImage": "none",
+   "textShadow": null
+  },
+  "ctas": [
+   {
+    "text": "Start\na\nproject",
+    "h": 42,
+    "kind": "filled",
+    "bg": "rgb(255, 255, 255)",
+    "color": "rgb(35, 35, 35)",
+    "border": null,
+    "radius": "3.35544e+07px",
+    "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.004) 0px 0.0553395px 0.166018px 0px, rgba(0, 0, ",
+    "bgImage": null,
+    "size": "13px",
+    "weight": "600"
+   },
+   {
+    "text": "Start\na\nproject",
+    "h": 54,
+    "kind": "filled",
+    "bg": "rgb(35, 35, 35)",
+    "color": "rgb(239, 239, 239)",
+    "border": null,
+    "radius": "3.35544e+07px",
+    "shadow": null,
+    "bgImage": null,
+    "size": "15px",
+    "weight": "700"
+   },
+   {
+    "text": "See\nour\nwork",
+    "h": 54,
+    "kind": "filled",
+    "bg": "rgb(255, 255, 255)",
+    "color": "rgb(0, 0, 0)",
+    "border": null,
+    "radius": "3.35544e+07px",
+    "shadow": null,
+    "bgImage": null,
+    "size": "15px",
+    "weight": "600"
+   }
+  ],
+  "nav": {
+   "h": 42,
+   "bg": "rgba(0, 0, 0, 0)",
+   "backdrop": "none",
+   "bb": "0px solid lab(90.952 0 -0.0000119209)",
+   "shadow": null,
+   "linkColor": "rgb(35, 35, 35)"
+  },
+  "effects": {
+   "radial": 0,
+   "conic": 0,
+   "linear": 0,
+   "urlbg": 6,
+   "blurEls": 0,
+   "backdropEls": 10,
+   "mixBlend": 1,
+   "maskEls": 1,
+   "gradEx": [],
+   "canvas": 6,
+   "video": 0,
+   "svg": 20,
+   "img": 171
+  },
+  "noise": false,
+  "gradientHeadings": 0,
+  "accents": [
+   {
+    "hex": "#1daf61",
+    "n": 3,
+    "L": 0.664,
+    "C": 0.163,
+    "H": 153
+   }
+  ]
+ }
+}

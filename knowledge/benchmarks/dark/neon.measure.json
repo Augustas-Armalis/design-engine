@@ -1,0 +1,1294 @@
+{
+ "url": "https://neon.com",
+ "scheme": "dark",
+ "pageHeight": 11039,
+ "fold": {
+  "title": "Neon — Postgres backends for apps and agents",
+  "vw": 1440,
+  "pageHeight": 11039,
+  "colorScheme": {
+   "html": "dark",
+   "body": "dark",
+   "metaTheme": "#000000",
+   "htmlClass": "inter_d1c45a15-module__NRYtTG__variable esbuild_ad6179e5-module__3z7Vca__variable geistmono_157ca88a-module__iaM1Ya__var",
+   "dataTheme": null
+  },
+  "pageBg": "#000000",
+  "pageBgOklabL": 0,
+  "pageBgOklabC": 0,
+  "pageBgOklabH": 0,
+  "cssVarCount": 129,
+  "cssVars": [
+   [
+    ":root, :host --error-tooltip-bg",
+    "#000"
+   ],
+   [
+    ":root --shiki-color-text",
+    "#131415"
+   ],
+   [
+    ":root --shiki-foreground",
+    "#131415"
+   ],
+   [
+    ":root --shiki-token-link",
+    "#078345"
+   ],
+   [
+    ".dark --shiki-color-text",
+    "#f9fafa"
+   ],
+   [
+    ".dark --shiki-foreground",
+    "#f9fafa"
+   ],
+   [
+    ".dark --shiki-token-link",
+    "#47d18c"
+   ],
+   [
+    ".dark\\:to-gray-new-15:is(.dark *) --tw-gradient-to",
+    "#242628"
+   ],
+   [
+    ".dark\\:to-gray-new-15:is(.dark *) --tw-gradient-stops",
+    "var(--tw-gradient-via-stops,var(--tw-gradient-position), var(--tw-gradient-from)"
+   ],
+   [
+    ".dark\\:shadow-\\[0_8px_20px_0_rgba\\(0\\,0\\ --tw-shadow",
+    "0 8px 20px 0 var(--tw-shadow-color,#0006)"
+   ],
+   [
+    ".dark\\:shadow-\\[0px_2px_10px_0px_rgba\\(0 --tw-shadow",
+    "0px 2px 10px 0px var(--tw-shadow-color,#0006), 0px 2px 30px 0px var(--tw-shadow-"
+   ],
+   [
+    ".dark\\:shadow-\\[0px_8px_20px_0px_rgba\\(0 --tw-shadow",
+    "0px 8px 20px 0px var(--tw-shadow-color,#0006)"
+   ],
+   [
+    ".dark\\:shadow-\\[0px_14px_20px_0px_rgba\\( --tw-shadow",
+    "0px 14px 20px 0px var(--tw-shadow-color,#00000080)"
+   ],
+   [
+    ".dark\\:shadow-contact:is(.dark *) --tw-shadow",
+    "0px 4px 10px 0px var(--tw-shadow-color,#00000080), 0px 4px 30px 0px var(--tw-sha"
+   ],
+   [
+    ".dark\\:ring-gray-new-20:is(.dark *) --tw-ring-color",
+    "#303236"
+   ],
+   [
+    ".dark\\:prose-invert:is(.dark *) --tw-prose-links",
+    "var(--tw-prose-invert-links)"
+   ],
+   [
+    ".dark\\:prose-invert:is(.dark *) --tw-prose-quote-borders",
+    "var(--tw-prose-invert-quote-borders)"
+   ],
+   [
+    ".dark\\:prose-invert:is(.dark *) --tw-prose-kbd-shadows",
+    "var(--tw-prose-invert-kbd-shadows)"
+   ],
+   [
+    ".dark\\:prose-invert:is(.dark *) --tw-prose-pre-bg",
+    "var(--tw-prose-invert-pre-bg)"
+   ],
+   [
+    ".dark\\:prose-invert:is(.dark *) --tw-prose-th-borders",
+    "var(--tw-prose-invert-th-borders)"
+   ],
+   [
+    ".dark\\:prose-invert:is(.dark *) --tw-prose-td-borders",
+    "var(--tw-prose-invert-td-borders)"
+   ],
+   [
+    ".dark\\:\\[--error-tooltip-bg\\:\\#18191B\\]: --error-tooltip-bg",
+    "#18191b"
+   ],
+   [
+    ".dark\\:focus\\:ring-primary-1\\/20:is(.dar --tw-ring-color",
+    "lab(80.7954% -61.4598 23.582/.2)"
+   ],
+   [
+    ".dark\\:focus\\:ring-offset-gray-new-8:is( --tw-ring-offset-color",
+    "#131415"
+   ]
+  ],
+  "surfaces": [
+   {
+    "hex": "#000000",
+    "L": 0,
+    "C": 0,
+    "H": 0,
+    "n": 13,
+    "area": 8184219,
+    "ex": [
+     "header.header",
+     "a.group"
+    ]
+   },
+   {
+    "hex": "#e4f1eb",
+    "L": 0.947,
+    "C": 0.016,
+    "H": 167,
+    "n": 2,
+    "area": 3204720,
+    "ex": [
+     "section.architecture",
+     "section.agent-platform"
+    ]
+   },
+   {
+    "hex": "#18191b",
+    "L": 0.213,
+    "C": 0.004,
+    "H": 264,
+    "n": 6,
+    "area": 2298191,
+    "ex": [
+     "a.group",
+     "div.absolute"
+    ]
+   },
+   {
+    "hex": "#151617",
+    "L": 0.2,
+    "C": 0.003,
+    "H": 248,
+    "n": 1,
+    "area": 1019520,
+    "ex": [
+     "section.cta"
+    ]
+   },
+   {
+    "hex": "#cddfd7",
+    "L": 0.888,
+    "C": 0.022,
+    "H": 167,
+    "n": 4,
+    "area": 439168,
+    "ex": [
+     "li.flex",
+     "li.flex"
+    ]
+   },
+   {
+    "hex": "#111315",
+    "L": 0.185,
+    "C": 0.005,
+    "H": 248,
+    "n": 5,
+    "area": 259205,
+    "ex": [
+     "span.relative",
+     "span.relative"
+    ]
+   },
+   {
+    "hex": "#131415",
+    "L": 0.191,
+    "C": 0.003,
+    "H": 248,
+    "n": 1,
+    "area": 226336,
+    "ex": [
+     "div.w-96"
+    ]
+   },
+   {
+    "hex": "#0d221a",
+    "L": 0.231,
+    "C": 0.032,
+    "H": 167,
+    "n": 6,
+    "area": 202496,
+    "ex": [
+     "span.absolute",
+     "span.absolute"
+    ]
+   },
+   {
+    "hex": "#ffffff",
+    "L": 1,
+    "C": 0,
+    "H": 90,
+    "n": 6,
+    "area": 90556,
+    "ex": [
+     "span.pointer-events-none",
+     "span.pointer-events-none"
+    ]
+   },
+   {
+    "hex": "#303236",
+    "L": 0.317,
+    "C": 0.008,
+    "H": 264,
+    "n": 3,
+    "area": 47320,
+    "ex": [
+     "div.relative",
+     "div.flex"
+    ]
+   },
+   {
+    "hex": "#242628",
+    "L": 0.267,
+    "C": 0.005,
+    "H": 248,
+    "n": 1,
+    "area": 38016,
+    "ex": [
+     "div.relative"
+    ]
+   },
+   {
+    "hex": "#0a0a0b",
+    "L": 0.145,
+    "C": 0.002,
+    "H": 286,
+    "n": 1,
+    "area": 18653,
+    "ex": [
+     "ul.flex"
+    ]
+   },
+   {
+    "hex": "#34d59a",
+    "L": 0.778,
+    "C": 0.155,
+    "H": 163,
+    "n": 1,
+    "area": 9733,
+    "ex": [
+     "button.cursor-pointer"
+    ]
+   }
+  ],
+  "overlays": [
+   {
+    "bg": "rgba(255, 255, 255, 0.02) => #1a1b1c",
+    "n": 1,
+    "area": 7136
+   }
+  ],
+  "borders": [
+   {
+    "border": "rgb(73, 75, 80) @1px",
+    "n": 15,
+    "alpha": 1,
+    "flatOnPage": "#494b50",
+    "L": 0.413
+   },
+   {
+    "border": "rgb(36, 38, 40) @1px",
+    "n": 13,
+    "alpha": 1,
+    "flatOnPage": "#242628",
+    "L": 0.267
+   },
+   {
+    "border": "rgb(97, 100, 107) @1px",
+    "n": 12,
+    "alpha": 1,
+    "flatOnPage": "#61646b",
+    "L": 0.503
+   },
+   {
+    "border": "rgb(48, 50, 54) @1px",
+    "n": 9,
+    "alpha": 1,
+    "flatOnPage": "#303236",
+    "L": 0.317
+   },
+   {
+    "border": "rgb(24, 25, 27) @1px",
+    "n": 5,
+    "alpha": 1,
+    "flatOnPage": "#18191b",
+    "L": 0.213
+   },
+   {
+    "border": "rgb(97, 100, 107) @2px",
+    "n": 4,
+    "alpha": 1,
+    "flatOnPage": "#61646b",
+    "L": 0.503
+   },
+   {
+    "border": "rgb(148, 151, 158) @2px",
+    "n": 4,
+    "alpha": 1,
+    "flatOnPage": "#94979e",
+    "L": 0.676
+   },
+   {
+    "border": "rgb(121, 125, 134) @1px",
+    "n": 1,
+    "alpha": 1,
+    "flatOnPage": "#797d86",
+    "L": 0.589
+   }
+  ],
+  "radii": [
+   [
+    "4px",
+    59
+   ],
+   [
+    "3.35544e+07px",
+    11
+   ],
+   [
+    "5px",
+    1
+   ],
+   [
+    "10px",
+    1
+   ]
+  ],
+  "shadows": [
+   {
+    "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, lab(100 -0.0000298023 0.0000119209 / 0.05) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+    "n": 5
+   },
+   {
+    "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(48, 50, 54) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+    "n": 2
+   },
+   {
+    "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.4) 0px 8px 20px 0px",
+    "n": 1
+   }
+  ],
+  "nShadowEls": 8,
+  "textColors": [
+   {
+    "color": "rgb(148, 151, 158)",
+    "chars": 1556,
+    "n": 34,
+    "fg": "#94979e",
+    "alpha": 1,
+    "contrast": 7.18,
+    "L": 0.676,
+    "bg": "#000000",
+    "size": "13px",
+    "weight": "400",
+    "ex": "Lakebase Postgres\nServerless"
+   },
+   {
+    "color": "rgb(255, 255, 255)",
+    "chars": 1303,
+    "n": 74,
+    "fg": "#ffffff",
+    "alpha": 1,
+    "contrast": 17.59,
+    "L": 1,
+    "bg": "#18191b",
+    "size": "14px",
+    "weight": "500",
+    "ex": "Major update to our Free Pla"
+   },
+   {
+    "color": "rgb(121, 125, 134)",
+    "chars": 989,
+    "n": 16,
+    "fg": "#797d86",
+    "alpha": 1,
+    "contrast": 5.09,
+    "L": 0.589,
+    "bg": "#000000",
+    "size": "10px",
+    "weight": "500",
+    "ex": "CORE PRIMITIVES"
+   },
+   {
+    "color": "rgb(201, 203, 207)",
+    "chars": 593,
+    "n": 15,
+    "fg": "#c9cbcf",
+    "alpha": 1,
+    "contrast": 12.93,
+    "L": 0.842,
+    "bg": "#000000",
+    "size": "12px",
+    "weight": "500",
+    "ex": "NEON IS PART OF THE DATABRIC"
+   },
+   {
+    "color": "rgb(97, 100, 107)",
+    "chars": 582,
+    "n": 10,
+    "fg": "#61646b",
+    "alpha": 1,
+    "contrast": 5.1,
+    "L": 0.503,
+    "bg": "#e4f1eb",
+    "size": "36px",
+    "weight": "400",
+    "ex": "The lakebase architecture de"
+   },
+   {
+    "color": "rgb(0, 0, 0)",
+    "chars": 383,
+    "n": 12,
+    "fg": "#000000",
+    "alpha": 1,
+    "contrast": 21,
+    "L": 0,
+    "bg": "#ffffff",
+    "size": "14px",
+    "weight": "500",
+    "ex": "Sign up"
+   },
+   {
+    "color": "rgb(175, 177, 182)",
+    "chars": 349,
+    "n": 30,
+    "fg": "#afb1b6",
+    "alpha": 1,
+    "contrast": 9.79,
+    "L": 0.76,
+    "bg": "#000000",
+    "size": "20px",
+    "weight": "400",
+    "ex": "Founder at Encore"
+   },
+   {
+    "color": "rgb(48, 50, 54)",
+    "chars": 279,
+    "n": 6,
+    "fg": "#303236",
+    "alpha": 1,
+    "contrast": 1.37,
+    "L": 0.317,
+    "bg": "#18191b",
+    "size": "16px",
+    "weight": "400",
+    "ex": "Ask for follow-up changes"
+   },
+   {
+    "color": "rgb(202, 230, 220)",
+    "chars": 233,
+    "n": 9,
+    "fg": "#cae6dc",
+    "alpha": 1,
+    "contrast": 15.86,
+    "L": 0.902,
+    "bg": "#000000",
+    "size": "52px",
+    "weight": "400",
+    "ex": "WHERE STARTUPS"
+   },
+   {
+    "color": "rgb(172, 172, 172)",
+    "chars": 43,
+    "n": 2,
+    "fg": "#acacac",
+    "alpha": 1,
+    "contrast": 6.69,
+    "L": 0.744,
+    "bg": "#242628",
+    "size": "16px",
+    "weight": "600",
+    "ex": "0"
+   },
+   {
+    "color": "rgb(228, 229, 231)",
+    "chars": 38,
+    "n": 2,
+    "fg": "#e4e5e7",
+    "alpha": 1,
+    "contrast": 15.7,
+    "L": 0.922,
+    "bg": "#0a0a0b",
+    "size": "15px",
+    "weight": "400",
+    "ex": "Compliance Guide"
+   },
+   {
+    "color": "rgb(26, 26, 26)",
+    "chars": 28,
+    "n": 3,
+    "fg": "#1a1a1a",
+    "alpha": 1,
+    "contrast": 17.4,
+    "L": 0.218,
+    "bg": "#ffffff",
+    "size": "16px",
+    "weight": "500",
+    "ex": "Get started"
+   }
+  ],
+  "h1": {
+   "text": "The backend for apps and agents, built to scale on Lakebase\n",
+   "family": "Inter, \"Inter Fallback\", ui-sans-serif, system-ui, sans-seri",
+   "size": "56px",
+   "weight": "400",
+   "lh": "63px",
+   "ls": "-2.24px",
+   "color": "rgb(255, 255, 255)",
+   "smooth": "antialiased",
+   "bgClip": "border-box",
+   "bgImage": "none",
+   "textShadow": null
+  },
+  "body": {
+   "text": "Major update to our Free Plan: now with 1 GB of Postgres sto",
+   "family": "Inter, \"Inter Fallback\", ui-sans-serif, system-ui, sans-seri",
+   "size": "16px",
+   "weight": "400",
+   "lh": "24px",
+   "ls": "normal",
+   "color": "rgb(255, 255, 255)",
+   "smooth": "antialiased",
+   "bgClip": "border-box",
+   "bgImage": "none",
+   "textShadow": null
+  },
+  "bodySmoothing": "antialiased",
+  "textRendering": "auto",
+  "heroP": null,
+  "ctas": [
+   {
+    "text": "Log in",
+    "h": 36,
+    "kind": "outline",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "border": "1px rgb(97, 100, 107)",
+    "radius": "3.35544e+07px",
+    "shadow": null,
+    "bgImage": null,
+    "size": "14px",
+    "weight": "500"
+   },
+   {
+    "text": "Sign up",
+    "h": 36,
+    "kind": "filled",
+    "bg": "rgb(255, 255, 255)",
+    "color": "rgb(0, 0, 0)",
+    "border": null,
+    "radius": "3.35544e+07px",
+    "shadow": null,
+    "bgImage": null,
+    "size": "14px",
+    "weight": "500"
+   },
+   {
+    "text": "Get started",
+    "h": 44,
+    "kind": "filled",
+    "bg": "rgb(255, 255, 255)",
+    "color": "rgb(26, 26, 26)",
+    "border": null,
+    "radius": "3.35544e+07px",
+    "shadow": null,
+    "bgImage": null,
+    "size": "16px",
+    "weight": "500"
+   },
+   {
+    "text": "Read the docs",
+    "h": 44,
+    "kind": "outline",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "border": "1px rgb(97, 100, 107)",
+    "radius": "3.35544e+07px",
+    "shadow": null,
+    "bgImage": null,
+    "size": "16px",
+    "weight": "400"
+   }
+  ],
+  "nav": {
+   "h": 64,
+   "bg": "rgb(0, 0, 0)",
+   "backdrop": "none",
+   "bb": "0px solid rgb(255, 255, 255)",
+   "shadow": null,
+   "linkColor": "rgb(255, 255, 255)"
+  },
+  "effects": {
+   "radial": 0,
+   "conic": 0,
+   "linear": 5,
+   "urlbg": 0,
+   "blurEls": 0,
+   "backdropEls": 0,
+   "mixBlend": 0,
+   "maskEls": 23,
+   "gradEx": [],
+   "canvas": 1,
+   "video": 6,
+   "svg": 57,
+   "img": 94
+  },
+  "noise": true,
+  "gradientHeadings": 1,
+  "accents": [
+   {
+    "hex": "#34d59a",
+    "n": 33,
+    "L": 0.778,
+    "C": 0.155,
+    "H": 163
+   },
+   {
+    "hex": "#ff3621",
+    "n": 16,
+    "L": 0.65,
+    "C": 0.237,
+    "H": 30
+   }
+  ]
+ },
+ "full": {
+  "title": "Neon — Postgres backends for apps and agents",
+  "vw": 1440,
+  "pageHeight": 11039,
+  "colorScheme": {
+   "html": "dark",
+   "body": "dark",
+   "metaTheme": "#000000",
+   "htmlClass": "inter_d1c45a15-module__NRYtTG__variable esbuild_ad6179e5-module__3z7Vca__variable geistmono_157ca88a-module__iaM1Ya__var",
+   "dataTheme": null
+  },
+  "pageBg": "#000000",
+  "pageBgOklabL": 0,
+  "pageBgOklabC": 0,
+  "pageBgOklabH": 0,
+  "cssVarCount": 129,
+  "cssVars": [
+   [
+    ":root, :host --error-tooltip-bg",
+    "#000"
+   ],
+   [
+    ":root --shiki-color-text",
+    "#131415"
+   ],
+   [
+    ":root --shiki-foreground",
+    "#131415"
+   ],
+   [
+    ":root --shiki-token-link",
+    "#078345"
+   ],
+   [
+    ".dark --shiki-color-text",
+    "#f9fafa"
+   ],
+   [
+    ".dark --shiki-foreground",
+    "#f9fafa"
+   ],
+   [
+    ".dark --shiki-token-link",
+    "#47d18c"
+   ],
+   [
+    ".dark\\:to-gray-new-15:is(.dark *) --tw-gradient-to",
+    "#242628"
+   ],
+   [
+    ".dark\\:to-gray-new-15:is(.dark *) --tw-gradient-stops",
+    "var(--tw-gradient-via-stops,var(--tw-gradient-position), var(--tw-gradient-from)"
+   ],
+   [
+    ".dark\\:shadow-\\[0_8px_20px_0_rgba\\(0\\,0\\ --tw-shadow",
+    "0 8px 20px 0 var(--tw-shadow-color,#0006)"
+   ],
+   [
+    ".dark\\:shadow-\\[0px_2px_10px_0px_rgba\\(0 --tw-shadow",
+    "0px 2px 10px 0px var(--tw-shadow-color,#0006), 0px 2px 30px 0px var(--tw-shadow-"
+   ],
+   [
+    ".dark\\:shadow-\\[0px_8px_20px_0px_rgba\\(0 --tw-shadow",
+    "0px 8px 20px 0px var(--tw-shadow-color,#0006)"
+   ],
+   [
+    ".dark\\:shadow-\\[0px_14px_20px_0px_rgba\\( --tw-shadow",
+    "0px 14px 20px 0px var(--tw-shadow-color,#00000080)"
+   ],
+   [
+    ".dark\\:shadow-contact:is(.dark *) --tw-shadow",
+    "0px 4px 10px 0px var(--tw-shadow-color,#00000080), 0px 4px 30px 0px var(--tw-sha"
+   ],
+   [
+    ".dark\\:ring-gray-new-20:is(.dark *) --tw-ring-color",
+    "#303236"
+   ],
+   [
+    ".dark\\:prose-invert:is(.dark *) --tw-prose-links",
+    "var(--tw-prose-invert-links)"
+   ],
+   [
+    ".dark\\:prose-invert:is(.dark *) --tw-prose-quote-borders",
+    "var(--tw-prose-invert-quote-borders)"
+   ],
+   [
+    ".dark\\:prose-invert:is(.dark *) --tw-prose-kbd-shadows",
+    "var(--tw-prose-invert-kbd-shadows)"
+   ],
+   [
+    ".dark\\:prose-invert:is(.dark *) --tw-prose-pre-bg",
+    "var(--tw-prose-invert-pre-bg)"
+   ],
+   [
+    ".dark\\:prose-invert:is(.dark *) --tw-prose-th-borders",
+    "var(--tw-prose-invert-th-borders)"
+   ],
+   [
+    ".dark\\:prose-invert:is(.dark *) --tw-prose-td-borders",
+    "var(--tw-prose-invert-td-borders)"
+   ],
+   [
+    ".dark\\:\\[--error-tooltip-bg\\:\\#18191B\\]: --error-tooltip-bg",
+    "#18191b"
+   ],
+   [
+    ".dark\\:focus\\:ring-primary-1\\/20:is(.dar --tw-ring-color",
+    "lab(80.7954% -61.4598 23.582/.2)"
+   ],
+   [
+    ".dark\\:focus\\:ring-offset-gray-new-8:is( --tw-ring-offset-color",
+    "#131415"
+   ]
+  ],
+  "surfaces": [
+   {
+    "hex": "#000000",
+    "L": 0,
+    "C": 0,
+    "H": 0,
+    "n": 13,
+    "area": 8184219,
+    "ex": [
+     "header.header",
+     "a.group"
+    ]
+   },
+   {
+    "hex": "#e4f1eb",
+    "L": 0.947,
+    "C": 0.016,
+    "H": 167,
+    "n": 2,
+    "area": 3204720,
+    "ex": [
+     "section.architecture",
+     "section.agent-platform"
+    ]
+   },
+   {
+    "hex": "#18191b",
+    "L": 0.213,
+    "C": 0.004,
+    "H": 264,
+    "n": 6,
+    "area": 2298191,
+    "ex": [
+     "a.group",
+     "div.absolute"
+    ]
+   },
+   {
+    "hex": "#151617",
+    "L": 0.2,
+    "C": 0.003,
+    "H": 248,
+    "n": 1,
+    "area": 1019520,
+    "ex": [
+     "section.cta"
+    ]
+   },
+   {
+    "hex": "#cddfd7",
+    "L": 0.888,
+    "C": 0.022,
+    "H": 167,
+    "n": 4,
+    "area": 439168,
+    "ex": [
+     "li.flex",
+     "li.flex"
+    ]
+   },
+   {
+    "hex": "#111315",
+    "L": 0.185,
+    "C": 0.005,
+    "H": 248,
+    "n": 5,
+    "area": 259205,
+    "ex": [
+     "span.relative",
+     "span.relative"
+    ]
+   },
+   {
+    "hex": "#131415",
+    "L": 0.191,
+    "C": 0.003,
+    "H": 248,
+    "n": 1,
+    "area": 226336,
+    "ex": [
+     "div.w-96"
+    ]
+   },
+   {
+    "hex": "#0d221a",
+    "L": 0.231,
+    "C": 0.032,
+    "H": 167,
+    "n": 6,
+    "area": 202496,
+    "ex": [
+     "span.absolute",
+     "span.absolute"
+    ]
+   },
+   {
+    "hex": "#ffffff",
+    "L": 1,
+    "C": 0,
+    "H": 90,
+    "n": 5,
+    "area": 87330,
+    "ex": [
+     "span.pointer-events-none",
+     "span.pointer-events-none"
+    ]
+   },
+   {
+    "hex": "#303236",
+    "L": 0.317,
+    "C": 0.008,
+    "H": 264,
+    "n": 3,
+    "area": 47320,
+    "ex": [
+     "div.flex",
+     "div.flex"
+    ]
+   },
+   {
+    "hex": "#242628",
+    "L": 0.267,
+    "C": 0.005,
+    "H": 248,
+    "n": 1,
+    "area": 38016,
+    "ex": [
+     "div.relative"
+    ]
+   },
+   {
+    "hex": "#0a0a0b",
+    "L": 0.145,
+    "C": 0.002,
+    "H": 286,
+    "n": 1,
+    "area": 18653,
+    "ex": [
+     "ul.flex"
+    ]
+   },
+   {
+    "hex": "#34d59a",
+    "L": 0.778,
+    "C": 0.155,
+    "H": 163,
+    "n": 1,
+    "area": 9733,
+    "ex": [
+     "button.cursor-pointer"
+    ]
+   }
+  ],
+  "overlays": [
+   {
+    "bg": "rgba(255, 255, 255, 0.02) => #1a1b1c",
+    "n": 1,
+    "area": 7136
+   }
+  ],
+  "borders": [
+   {
+    "border": "rgb(73, 75, 80) @1px",
+    "n": 19,
+    "alpha": 1,
+    "flatOnPage": "#494b50",
+    "L": 0.413
+   },
+   {
+    "border": "rgb(36, 38, 40) @1px",
+    "n": 13,
+    "alpha": 1,
+    "flatOnPage": "#242628",
+    "L": 0.267
+   },
+   {
+    "border": "rgb(97, 100, 107) @1px",
+    "n": 12,
+    "alpha": 1,
+    "flatOnPage": "#61646b",
+    "L": 0.503
+   },
+   {
+    "border": "rgb(48, 50, 54) @1px",
+    "n": 9,
+    "alpha": 1,
+    "flatOnPage": "#303236",
+    "L": 0.317
+   },
+   {
+    "border": "rgb(97, 100, 107) @2px",
+    "n": 8,
+    "alpha": 1,
+    "flatOnPage": "#61646b",
+    "L": 0.503
+   },
+   {
+    "border": "rgb(24, 25, 27) @1px",
+    "n": 5,
+    "alpha": 1,
+    "flatOnPage": "#18191b",
+    "L": 0.213
+   },
+   {
+    "border": "rgb(121, 125, 134) @1px",
+    "n": 1,
+    "alpha": 1,
+    "flatOnPage": "#797d86",
+    "L": 0.589
+   }
+  ],
+  "radii": [
+   [
+    "4px",
+    59
+   ],
+   [
+    "3.35544e+07px",
+    11
+   ],
+   [
+    "5px",
+    1
+   ],
+   [
+    "10px",
+    1
+   ]
+  ],
+  "shadows": [
+   {
+    "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, lab(100 -0.0000298023 0.0000119209 / 0.05) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+    "n": 5
+   },
+   {
+    "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(48, 50, 54) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+    "n": 2
+   },
+   {
+    "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.4) 0px 8px 20px 0px",
+    "n": 1
+   }
+  ],
+  "nShadowEls": 8,
+  "textColors": [
+   {
+    "color": "rgb(148, 151, 158)",
+    "chars": 1569,
+    "n": 34,
+    "fg": "#94979e",
+    "alpha": 1,
+    "contrast": 7.18,
+    "L": 0.676,
+    "bg": "#000000",
+    "size": "13px",
+    "weight": "400",
+    "ex": "Lakebase Postgres\nServerless"
+   },
+   {
+    "color": "rgb(255, 255, 255)",
+    "chars": 1274,
+    "n": 73,
+    "fg": "#ffffff",
+    "alpha": 1,
+    "contrast": 17.59,
+    "L": 1,
+    "bg": "#18191b",
+    "size": "14px",
+    "weight": "500",
+    "ex": "Major update to our Free Pla"
+   },
+   {
+    "color": "rgb(121, 125, 134)",
+    "chars": 989,
+    "n": 16,
+    "fg": "#797d86",
+    "alpha": 1,
+    "contrast": 5.09,
+    "L": 0.589,
+    "bg": "#000000",
+    "size": "10px",
+    "weight": "500",
+    "ex": "CORE PRIMITIVES"
+   },
+   {
+    "color": "rgb(201, 203, 207)",
+    "chars": 593,
+    "n": 15,
+    "fg": "#c9cbcf",
+    "alpha": 1,
+    "contrast": 12.93,
+    "L": 0.842,
+    "bg": "#000000",
+    "size": "12px",
+    "weight": "500",
+    "ex": "NEON IS PART OF THE DATABRIC"
+   },
+   {
+    "color": "rgb(97, 100, 107)",
+    "chars": 582,
+    "n": 10,
+    "fg": "#61646b",
+    "alpha": 1,
+    "contrast": 5.1,
+    "L": 0.503,
+    "bg": "#e4f1eb",
+    "size": "36px",
+    "weight": "400",
+    "ex": "The lakebase architecture de"
+   },
+   {
+    "color": "rgb(0, 0, 0)",
+    "chars": 383,
+    "n": 12,
+    "fg": "#000000",
+    "alpha": 1,
+    "contrast": 21,
+    "L": 0,
+    "bg": "#ffffff",
+    "size": "14px",
+    "weight": "500",
+    "ex": "Sign up"
+   },
+   {
+    "color": "rgb(175, 177, 182)",
+    "chars": 349,
+    "n": 30,
+    "fg": "#afb1b6",
+    "alpha": 1,
+    "contrast": 9.79,
+    "L": 0.76,
+    "bg": "#000000",
+    "size": "20px",
+    "weight": "400",
+    "ex": "Founder at Encore"
+   },
+   {
+    "color": "rgb(48, 50, 54)",
+    "chars": 279,
+    "n": 6,
+    "fg": "#303236",
+    "alpha": 1,
+    "contrast": 1.37,
+    "L": 0.317,
+    "bg": "#18191b",
+    "size": "16px",
+    "weight": "400",
+    "ex": "Ask for follow-up changes"
+   },
+   {
+    "color": "rgb(202, 230, 220)",
+    "chars": 233,
+    "n": 9,
+    "fg": "#cae6dc",
+    "alpha": 1,
+    "contrast": 15.86,
+    "L": 0.902,
+    "bg": "#000000",
+    "size": "52px",
+    "weight": "400",
+    "ex": "WHERE STARTUPS"
+   },
+   {
+    "color": "rgb(172, 172, 172)",
+    "chars": 43,
+    "n": 2,
+    "fg": "#acacac",
+    "alpha": 1,
+    "contrast": 6.69,
+    "L": 0.744,
+    "bg": "#242628",
+    "size": "16px",
+    "weight": "600",
+    "ex": "0"
+   },
+   {
+    "color": "rgb(228, 229, 231)",
+    "chars": 40,
+    "n": 3,
+    "fg": "#e4e5e7",
+    "alpha": 1,
+    "contrast": 16.66,
+    "L": 0.922,
+    "bg": "#000000",
+    "size": "20px",
+    "weight": "500",
+    "ex": "0%"
+   },
+   {
+    "color": "rgb(26, 26, 26)",
+    "chars": 22,
+    "n": 2,
+    "fg": "#1a1a1a",
+    "alpha": 1,
+    "contrast": 17.4,
+    "L": 0.218,
+    "bg": "#ffffff",
+    "size": "16px",
+    "weight": "500",
+    "ex": "Get started"
+   }
+  ],
+  "h1": {
+   "text": "The backend for apps and agents, built to scale on Lakebase\n",
+   "family": "Inter, \"Inter Fallback\", ui-sans-serif, system-ui, sans-seri",
+   "size": "56px",
+   "weight": "400",
+   "lh": "63px",
+   "ls": "-2.24px",
+   "color": "rgb(255, 255, 255)",
+   "smooth": "antialiased",
+   "bgClip": "border-box",
+   "bgImage": "none",
+   "textShadow": null
+  },
+  "body": {
+   "text": "Major update to our Free Plan: now with 1 GB of Postgres sto",
+   "family": "Inter, \"Inter Fallback\", ui-sans-serif, system-ui, sans-seri",
+   "size": "16px",
+   "weight": "400",
+   "lh": "24px",
+   "ls": "normal",
+   "color": "rgb(255, 255, 255)",
+   "smooth": "antialiased",
+   "bgClip": "border-box",
+   "bgImage": "none",
+   "textShadow": null
+  },
+  "bodySmoothing": "antialiased",
+  "textRendering": "auto",
+  "heroP": null,
+  "ctas": [
+   {
+    "text": "Log in",
+    "h": 36,
+    "kind": "outline",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "border": "1px rgb(97, 100, 107)",
+    "radius": "3.35544e+07px",
+    "shadow": null,
+    "bgImage": null,
+    "size": "14px",
+    "weight": "500"
+   },
+   {
+    "text": "Sign up",
+    "h": 36,
+    "kind": "filled",
+    "bg": "rgb(255, 255, 255)",
+    "color": "rgb(0, 0, 0)",
+    "border": null,
+    "radius": "3.35544e+07px",
+    "shadow": null,
+    "bgImage": null,
+    "size": "14px",
+    "weight": "500"
+   },
+   {
+    "text": "Get started",
+    "h": 44,
+    "kind": "filled",
+    "bg": "rgb(255, 255, 255)",
+    "color": "rgb(26, 26, 26)",
+    "border": null,
+    "radius": "3.35544e+07px",
+    "shadow": null,
+    "bgImage": null,
+    "size": "16px",
+    "weight": "500"
+   },
+   {
+    "text": "Read the docs",
+    "h": 44,
+    "kind": "outline",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "border": "1px rgb(97, 100, 107)",
+    "radius": "3.35544e+07px",
+    "shadow": null,
+    "bgImage": null,
+    "size": "16px",
+    "weight": "400"
+   }
+  ],
+  "nav": {
+   "h": 64,
+   "bg": "rgb(0, 0, 0)",
+   "backdrop": "none",
+   "bb": "0px solid rgb(255, 255, 255)",
+   "shadow": null,
+   "linkColor": "rgb(255, 255, 255)"
+  },
+  "effects": {
+   "radial": 0,
+   "conic": 0,
+   "linear": 5,
+   "urlbg": 0,
+   "blurEls": 0,
+   "backdropEls": 0,
+   "mixBlend": 0,
+   "maskEls": 23,
+   "gradEx": [],
+   "canvas": 4,
+   "video": 6,
+   "svg": 57,
+   "img": 93
+  },
+  "noise": true,
+  "gradientHeadings": 1,
+  "accents": [
+   {
+    "hex": "#34d59a",
+    "n": 33,
+    "L": 0.778,
+    "C": 0.155,
+    "H": 163
+   },
+   {
+    "hex": "#ff3621",
+    "n": 16,
+    "L": 0.65,
+    "C": 0.237,
+    "H": 30
+   }
+  ]
+ }
+}

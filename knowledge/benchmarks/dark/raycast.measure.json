@@ -1,0 +1,1589 @@
+{
+ "url": "https://www.raycast.com",
+ "scheme": "dark",
+ "pageHeight": 15983,
+ "fold": {
+  "title": "Raycast - Your shortcut to everything",
+  "vw": 1440,
+  "pageHeight": 15983,
+  "colorScheme": {
+   "html": "dark",
+   "body": "dark",
+   "metaTheme": null,
+   "htmlClass": "inter_5901b7c6-module__ec5Qua__variable jetbrainsmono_2d6849a8-module__3XfLhG__variable geistmono_157ca88a-module__iaM1Y",
+   "dataTheme": null
+  },
+  "pageBg": "#07080a",
+  "pageBgOklabL": 0.134,
+  "pageBgOklabC": 0.005,
+  "pageBgOklabH": 262,
+  "cssVarCount": 82,
+  "cssVars": [
+   [
+    ":root --grey-50",
+    "#e6e6e6"
+   ],
+   [
+    ":root --grey-100",
+    "#cdcece"
+   ],
+   [
+    ":root --grey-200",
+    "#9c9c9d"
+   ],
+   [
+    ":root --grey-300",
+    "#6a6b6c"
+   ],
+   [
+    ":root --grey-400",
+    "#434345"
+   ],
+   [
+    ":root --grey-500",
+    "#2f3031"
+   ],
+   [
+    ":root --grey-600",
+    "#1b1c1e"
+   ],
+   [
+    ":root --grey-700",
+    "#111214"
+   ],
+   [
+    ":root --grey-800",
+    "#0c0d0f"
+   ],
+   [
+    ":root --grey-900",
+    "#07080a"
+   ],
+   [
+    ":root --background",
+    "var(--grey-900)"
+   ],
+   [
+    ":root --reverse-background",
+    "#fff"
+   ],
+   [
+    ":root --color-bg",
+    "var(--grey-900)"
+   ],
+   [
+    ":root --color-bg-100",
+    "#101111"
+   ],
+   [
+    ":root --color-bg-200",
+    "#18191a"
+   ],
+   [
+    ":root --color-bg-300",
+    "#313133"
+   ],
+   [
+    ":root --color-bg-400",
+    "#494b4d"
+   ],
+   [
+    ":root --color-fg",
+    "#f4f4f6"
+   ],
+   [
+    ":root --color-fg-200",
+    "#c2c7ca"
+   ],
+   [
+    ":root --color-fg-300",
+    "#78787c"
+   ],
+   [
+    ":root --color-fg-400",
+    "#5e6366"
+   ],
+   [
+    ":root --color-yellow",
+    "#ffc533"
+   ],
+   [
+    ":root --color-yellow-transparent",
+    "#ffc53326"
+   ],
+   [
+    ":root --color-red",
+    "#ff6161"
+   ],
+   [
+    ":root --color-red-transparent",
+    "#ff616126"
+   ],
+   [
+    ":root --color-blue",
+    "#57c1ff"
+   ],
+   [
+    ":root --color-blue-transparent",
+    "#57c1ff26"
+   ],
+   [
+    ":root --color-green",
+    "#59d499"
+   ],
+   [
+    ":root --color-green-transparent",
+    "#59d49926"
+   ],
+   [
+    ":root --color-border",
+    "#242728"
+   ],
+   [
+    ":root --color-button-bg",
+    "#ffffffd0"
+   ],
+   [
+    ":root --color-button-bg-hover",
+    "#fff"
+   ],
+   [
+    ":root --color-button-fg",
+    "#18191a"
+   ]
+  ],
+  "surfaces": [
+   {
+    "hex": "#07080a",
+    "L": 0.134,
+    "C": 0.005,
+    "H": 262,
+    "n": 2,
+    "area": 2016955,
+    "ex": [
+     "div.page-module__H3BVAa__heroBackground",
+     "div.index-module__utU0aa__frameInner"
+    ]
+   },
+   {
+    "hex": "#434345",
+    "L": 0.384,
+    "C": 0.003,
+    "H": 286,
+    "n": 18,
+    "area": 535613,
+    "ex": [
+     "a.YoutubeCarousel-module__Jy8ojW__placeh",
+     "a.YoutubeCarousel-module__Jy8ojW__placeh"
+    ]
+   },
+   {
+    "hex": "#111214",
+    "L": 0.182,
+    "C": 0.004,
+    "H": 264,
+    "n": 1,
+    "area": 193028,
+    "ex": [
+     "a.ExtensionHighlight-module__3Yq4tG__bro"
+    ]
+   },
+   {
+    "hex": "#1f2025",
+    "L": 0.245,
+    "C": 0.01,
+    "H": 277,
+    "n": 1,
+    "area": 165268,
+    "ex": [
+     "div.styles-module__pdSE7a__background"
+    ]
+   },
+   {
+    "hex": "#e6e6e6",
+    "L": 0.925,
+    "C": 0,
+    "H": 90,
+    "n": 4,
+    "area": 20885,
+    "ex": [
+     "a.Button-module__3dJGfa__button",
+     "a.Button-module__3dJGfa__button"
+    ]
+   },
+   {
+    "hex": "#1b1c1e",
+    "L": 0.226,
+    "C": 0.004,
+    "H": 264,
+    "n": 2,
+    "area": 7031,
+    "ex": [
+     "span.index-module__NFhuXW__badge",
+     "div.FeatureBadge-module__q3_hwG__badge"
+    ]
+   },
+   {
+    "hex": "#452324",
+    "L": 0.302,
+    "C": 0.052,
+    "H": 19,
+    "n": 1,
+    "area": 6541,
+    "ex": [
+     "div.HeroAnnouncement-module__ezSJPa__ann"
+    ]
+   },
+   {
+    "hex": "#130d0e",
+    "L": 0.167,
+    "C": 0.01,
+    "H": 7,
+    "n": 1,
+    "area": 6072,
+    "ex": [
+     "a.HeroAnnouncement-module__ezSJPa__annou"
+    ]
+   },
+   {
+    "hex": "#ffffff",
+    "L": 1,
+    "C": 0,
+    "H": 90,
+    "n": 1,
+    "area": 5796,
+    "ex": [
+     "input.Submit-module__Fa7Cva__submit"
+    ]
+   },
+   {
+    "hex": "#ff6363",
+    "L": 0.7,
+    "C": 0.191,
+    "H": 23,
+    "n": 1,
+    "area": 5625,
+    "ex": [
+     "div."
+    ]
+   }
+  ],
+  "overlays": [
+   {
+    "bg": "rgba(255, 255, 255, 0.02) => #0c0d0f",
+    "n": 3,
+    "area": 994155
+   },
+   {
+    "bg": "rgba(0, 0, 0, 0.44) => #040406",
+    "n": 1,
+    "area": 890960
+   },
+   {
+    "bg": "rgba(158, 190, 215, 0.1) => #161a1f",
+    "n": 1,
+    "area": 665760
+   },
+   {
+    "bg": "rgba(255, 255, 255, 0.05) => #131416",
+    "n": 85,
+    "area": 604296
+   },
+   {
+    "bg": "rgba(0, 0, 0, 0.6) => #030304",
+    "n": 1,
+    "area": 356250
+   },
+   {
+    "bg": "rgba(215, 42, 42, 0.02) => #0b090b",
+    "n": 1,
+    "area": 291984
+   },
+   {
+    "bg": "rgba(255, 255, 255, 0.02) => #111214",
+    "n": 2,
+    "area": 211850
+   },
+   {
+    "bg": "rgba(255, 255, 255, 0.1) => #1c1c1d",
+    "n": 2,
+    "area": 120048
+   },
+   {
+    "bg": "rgba(255, 255, 255, 0.1) => #202123",
+    "n": 2,
+    "area": 39840
+   },
+   {
+    "bg": "rgba(255, 255, 255, 0.05) => #18191b",
+    "n": 2,
+    "area": 34017
+   },
+   {
+    "bg": "rgba(0, 0, 0, 0.1) => #030304",
+    "n": 1,
+    "area": 29920
+   },
+   {
+    "bg": "rgba(255, 255, 255, 0.1) => #242527",
+    "n": 1,
+    "area": 8311
+   }
+  ],
+  "borders": [
+   {
+    "border": "rgba(255, 255, 255, 0.1) @1px",
+    "n": 115,
+    "alpha": 0.1,
+    "flatOnPage": "#202123",
+    "L": 0.246
+   },
+   {
+    "border": "rgba(0, 0, 0, 0) @1px",
+    "n": 105,
+    "alpha": 0,
+    "flatOnPage": "#07080a",
+    "L": 0.134
+   },
+   {
+    "border": "rgba(255, 255, 255, 0.06) @1px",
+    "n": 52,
+    "alpha": 0.06,
+    "flatOnPage": "#161719",
+    "L": 0.204
+   },
+   {
+    "border": "rgba(255, 255, 255, 0.6) @1px",
+    "n": 20,
+    "alpha": 0.6,
+    "flatOnPage": "#9c9c9d",
+    "L": 0.693
+   },
+   {
+    "border": "rgba(142, 140, 144, 0.2) @1px",
+    "n": 17,
+    "alpha": 0.2,
+    "flatOnPage": "#222225",
+    "L": 0.254
+   },
+   {
+    "border": "rgba(255, 255, 255, 0.2) @2px",
+    "n": 16,
+    "alpha": 0.2,
+    "flatOnPage": "#39393b",
+    "L": 0.346
+   },
+   {
+    "border": "rgb(47, 48, 49) @1px",
+    "n": 16,
+    "alpha": 1,
+    "flatOnPage": "#2f3031",
+    "L": 0.309
+   },
+   {
+    "border": "rgba(255, 255, 255, 0.08) @1px",
+    "n": 8,
+    "alpha": 0.08,
+    "flatOnPage": "#1b1c1e",
+    "L": 0.225
+   },
+   {
+    "border": "rgba(255, 255, 255, 0.05) @1px",
+    "n": 8,
+    "alpha": 0.05,
+    "flatOnPage": "#131416",
+    "L": 0.193
+   },
+   {
+    "border": "rgb(255, 255, 255) @1px",
+    "n": 5,
+    "alpha": 1,
+    "flatOnPage": "#ffffff",
+    "L": 1
+   },
+   {
+    "border": "rgba(255, 255, 255, 0.2) @1px",
+    "n": 4,
+    "alpha": 0.2,
+    "flatOnPage": "#39393b",
+    "L": 0.346
+   },
+   {
+    "border": "rgba(255, 255, 255, 0.4) @1px",
+    "n": 4,
+    "alpha": 0.4,
+    "flatOnPage": "#6a6b6c",
+    "L": 0.527
+   }
+  ],
+  "radii": [
+   [
+    "11px",
+    159
+   ],
+   [
+    "8px",
+    107
+   ],
+   [
+    "100%",
+    101
+   ],
+   [
+    "6px",
+    63
+   ],
+   [
+    "12px",
+    53
+   ],
+   [
+    "20px",
+    38
+   ],
+   [
+    "16px",
+    28
+   ],
+   [
+    "99999px",
+    24
+   ]
+  ],
+  "shadows": [
+   {
+    "shadow": "rgba(0, 0, 0, 0.4) 0px 1.5px 0.5px 2.5px, rgb(0, 0, 0) 0px 0px 0.5px 1px, rgba(0, 0, 0, 0.25) 0px 2px 1px 1px inset, rgba(255, 255, 255, 0.2) 0px 1px 1px 1px inset, rgba(0, 0, 0, 0) 0px 0px 0px 0px inset",
+    "n": 159
+   },
+   {
+    "shadow": "rgb(27, 28, 30) 0px 0px 0px 1px, rgb(7, 8, 10) 0px 0px 0px 1px inset",
+    "n": 54
+   },
+   {
+    "shadow": "rgba(215, 201, 175, 0.05) 0px 0px 20px 5px, rgba(215, 201, 175, 0.05) 0px 0px 16px -7px",
+    "n": 18
+   },
+   {
+    "shadow": "rgba(0, 0, 0, 0.28) 0px 1.189px 2.377px 0px",
+    "n": 17
+   },
+   {
+    "shadow": "rgba(255, 255, 255, 0.05) 0px 1px 0px 0px inset, rgba(255, 255, 255, 0.25) 0px 0px 0px 1px, rgba(0, 0, 0, 0.2) 0px -1px 0px 0px inset",
+    "n": 17
+   },
+   {
+    "shadow": "rgba(0, 0, 0, 0.03) 0px 7px 3px 0px, rgba(0, 0, 0, 0.25) 0px 4px 4px 0px",
+    "n": 6
+   },
+   {
+    "shadow": "rgba(255, 255, 255, 0.1) 0px 1px 0px 0px inset",
+    "n": 6
+   },
+   {
+    "shadow": "rgba(0, 0, 0, 0.5) 0px 0px 0px 2px, rgba(255, 255, 255, 0.19) 0px 0px 14px 0px, rgba(0, 0, 0, 0.2) 0px -1px 0.4px 0px inset, rgb(255, 255, 255) 0px 1px 0.4px 0px inset",
+    "n": 5
+   },
+   {
+    "shadow": "rgba(0, 0, 0, 0.4) 0px 4px 40px 8px, rgba(0, 0, 0, 0.8) 0px 0px 0px 0.5px, rgba(255, 255, 255, 0.3) 0px 0.5px 0px 0px inset",
+    "n": 4
+   },
+   {
+    "shadow": "rgba(0, 0, 0, 0.25) 0px 0px 0px 0.5px",
+    "n": 4
+   }
+  ],
+  "nShadowEls": 321,
+  "textColors": [
+   {
+    "color": "rgb(255, 255, 255)",
+    "chars": 4704,
+    "n": 450,
+    "fg": "#ffffff",
+    "alpha": 1,
+    "contrast": 20.04,
+    "L": 1,
+    "bg": "#07080a",
+    "size": "64px",
+    "weight": "600",
+    "ex": "Your shortcut to everything."
+   },
+   {
+    "color": "rgb(156, 156, 157)",
+    "chars": 1711,
+    "n": 97,
+    "fg": "#9c9c9d",
+    "alpha": 1,
+    "contrast": 7.3,
+    "L": 0.693,
+    "bg": "#07080a",
+    "size": "14px",
+    "weight": "500",
+    "ex": "Store"
+   },
+   {
+    "color": "rgb(106, 107, 108)",
+    "chars": 1384,
+    "n": 49,
+    "fg": "#6a6b6c",
+    "alpha": 1,
+    "contrast": 3.75,
+    "L": 0.527,
+    "bg": "#07080a",
+    "size": "20px",
+    "weight": "500",
+    "ex": "One interface, everything yo"
+   },
+   {
+    "color": "rgba(255, 255, 255, 0.4)",
+    "chars": 696,
+    "n": 17,
+    "fg": "#6a6b6c",
+    "alpha": 0.4,
+    "contrast": 3.75,
+    "L": 0.527,
+    "bg": "#07080a",
+    "size": "16px",
+    "weight": "400",
+    "ex": "Type to filter entries..."
+   },
+   {
+    "color": "rgba(255, 255, 255, 0.6)",
+    "chars": 643,
+    "n": 70,
+    "fg": "#9c9c9d",
+    "alpha": 0.6,
+    "contrast": 7.31,
+    "L": 0.693,
+    "bg": "#07080a",
+    "size": "13px",
+    "weight": "600",
+    "ex": "Today"
+   },
+   {
+    "color": "rgb(67, 67, 69)",
+    "chars": 433,
+    "n": 36,
+    "fg": "#434345",
+    "alpha": 1,
+    "contrast": 2.03,
+    "L": 0.384,
+    "bg": "#07080a",
+    "size": "16px",
+    "weight": "600",
+    "ex": "@rauchg"
+   },
+   {
+    "color": "rgba(255, 255, 255, 0.3)",
+    "chars": 154,
+    "n": 8,
+    "fg": "#58595a",
+    "alpha": 0.3,
+    "contrast": 2.68,
+    "L": 0.464,
+    "bg": "#111214",
+    "size": "12px",
+    "weight": "400",
+    "ex": "Quick AI\n⇥"
+   },
+   {
+    "color": "rgba(255, 255, 255, 0.8)",
+    "chars": 83,
+    "n": 1,
+    "fg": "#d1d1d1",
+    "alpha": 0.8,
+    "contrast": 11.51,
+    "L": 0.861,
+    "bg": "#18191b",
+    "size": "14px",
+    "weight": "400",
+    "ex": "Check \nLinear\n for tasks ass"
+   },
+   {
+    "color": "rgba(255, 255, 255, 0.5)",
+    "chars": 63,
+    "n": 1,
+    "fg": "#838485",
+    "alpha": 0.5,
+    "contrast": 5.32,
+    "L": 0.612,
+    "bg": "#07080a",
+    "size": "18px",
+    "weight": "400",
+    "ex": "Raycast AI uses the tools yo"
+   },
+   {
+    "color": "rgb(140, 214, 255)",
+    "chars": 54,
+    "n": 1,
+    "fg": "#8cd6ff",
+    "alpha": 1,
+    "contrast": 12.57,
+    "L": 0.842,
+    "bg": "#07080a",
+    "size": "16px",
+    "weight": "500",
+    "ex": "3rd Floor 1 Ashley Road, WA1"
+   },
+   {
+    "color": "rgb(47, 48, 49)",
+    "chars": 52,
+    "n": 5,
+    "fg": "#2f3031",
+    "alpha": 1,
+    "contrast": 10.6,
+    "L": 0.309,
+    "bg": "#e6e6e6",
+    "size": "14px",
+    "weight": "500",
+    "ex": "Download"
+   },
+   {
+    "color": "rgba(255, 255, 255, 0.7)",
+    "chars": 30,
+    "n": 1,
+    "fg": "#b8b8b8",
+    "alpha": 0.7,
+    "contrast": 9.45,
+    "L": 0.782,
+    "bg": "#111214",
+    "size": "18px",
+    "weight": "400",
+    "ex": "Block my calendar for tomorr"
+   }
+  ],
+  "h1": {
+   "text": "Your shortcut to everything.",
+   "family": "Inter, \"Inter Fallback\", sans-serif",
+   "size": "64px",
+   "weight": "600",
+   "lh": "70.4px",
+   "ls": "normal",
+   "color": "rgb(255, 255, 255)",
+   "smooth": "antialiased",
+   "bgClip": "border-box",
+   "bgImage": "none",
+   "textShadow": "rgba(0, 0, 0, 0.15) 0px 4px 4px"
+  },
+  "body": {
+   "text": "Store\nPro\nAI\niOS\nWindows\nTeams\nEnterprise\nBlog\nPricing\nLog i",
+   "family": "Inter, \"Inter Fallback\", sans-serif",
+   "size": "16px",
+   "weight": "400",
+   "lh": "18.4px",
+   "ls": "normal",
+   "color": "rgb(255, 255, 255)",
+   "smooth": "antialiased",
+   "bgClip": "border-box",
+   "bgImage": "none",
+   "textShadow": null
+  },
+  "bodySmoothing": "antialiased",
+  "textRendering": "auto",
+  "heroP": {
+   "text": "A collection of powerful productivity tools all within an ex",
+   "family": "Inter, \"Inter Fallback\", sans-serif",
+   "size": "18px",
+   "weight": "400",
+   "lh": "normal",
+   "ls": "0.2px",
+   "color": "rgb(255, 255, 255)",
+   "smooth": "antialiased",
+   "bgClip": "border-box",
+   "bgImage": "none",
+   "textShadow": "rgba(0, 0, 0, 0.25) 0px 4px 4px"
+  },
+  "ctas": [
+   {
+    "text": "Download",
+    "h": 36,
+    "kind": "filled",
+    "bg": "rgb(230, 230, 230)",
+    "color": "rgb(47, 48, 49)",
+    "border": null,
+    "radius": "8px",
+    "shadow": "rgba(0, 0, 0, 0.5) 0px 0px 0px 2px, rgba(255, 255, 255, 0.19) 0px 0px 14px 0px, rgba(0, 0, 0, 0.2) 0px -1px 0.4px 0px inset, rgb(255, 255, 255) 0px 1px 0.4px 0px inset",
+    "bgImage": null,
+    "size": "14px",
+    "weight": "500"
+   },
+   {
+    "text": "Download for Mac",
+    "h": 36,
+    "kind": "filled",
+    "bg": "rgb(230, 230, 230)",
+    "color": "rgb(47, 48, 49)",
+    "border": null,
+    "radius": "8px",
+    "shadow": "rgba(0, 0, 0, 0.5) 0px 0px 0px 2px, rgba(255, 255, 255, 0.19) 0px 0px 14px 0px, rgba(0, 0, 0, 0.2) 0px -1px 0.4px 0px inset, rgb(255, 255, 255) 0px 1px 0.4px 0px inset",
+    "bgImage": null,
+    "size": "14px",
+    "weight": "500"
+   }
+  ],
+  "effects": {
+   "radial": 190,
+   "conic": 1,
+   "linear": 46,
+   "urlbg": 0,
+   "blurEls": 2,
+   "backdropEls": 20,
+   "mixBlend": 10,
+   "maskEls": 15,
+   "gradEx": [
+    "radial-gradient(85.77% 49.97% at 51% 5.12%, rgba(255, 150, 150, 0.11) 0%, rgba(222, 226, 255, 0.08) 45.83%, rgba(241, 242, 255, 0.02) 100%), none",
+    "radial-gradient(79.21% 79.21% at 42.35% 0px, rgb(120, 120, 120) 0%, rgb(40, 40, 40) 100%)",
+    "radial-gradient(1139.98% 138.18% at 0px 0px, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%)",
+    "radial-gradient(1139.98% 138.18% at 0px 0px, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%)",
+    "radial-gradient(1139.98% 138.18% at 0px 0px, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%)",
+    "radial-gradient(1139.98% 138.18% at 0px 0px, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%)"
+   ],
+   "canvas": 1,
+   "video": 0,
+   "svg": 169,
+   "img": 117
+  },
+  "noise": false,
+  "gradientHeadings": 0,
+  "accents": [
+   {
+    "hex": "#ff6363",
+    "n": 4,
+    "L": 0.7,
+    "C": 0.191,
+    "H": 23
+   },
+   {
+    "hex": "#59d499",
+    "n": 1,
+    "L": 0.785,
+    "C": 0.14,
+    "H": 160
+   },
+   {
+    "hex": "#56c2ff",
+    "n": 1,
+    "L": 0.776,
+    "C": 0.131,
+    "H": 237
+   },
+   {
+    "hex": "#ffc531",
+    "n": 1,
+    "L": 0.853,
+    "C": 0.163,
+    "H": 85
+   },
+   {
+    "hex": "#ff625b",
+    "n": 1,
+    "L": 0.698,
+    "C": 0.193,
+    "H": 26
+   },
+   {
+    "hex": "#e53733",
+    "n": 1,
+    "L": 0.606,
+    "C": 0.211,
+    "H": 27
+   }
+  ]
+ },
+ "full": {
+  "title": "Raycast - Your shortcut to everything",
+  "vw": 1440,
+  "pageHeight": 15983,
+  "colorScheme": {
+   "html": "dark",
+   "body": "dark",
+   "metaTheme": null,
+   "htmlClass": "inter_5901b7c6-module__ec5Qua__variable jetbrainsmono_2d6849a8-module__3XfLhG__variable geistmono_157ca88a-module__iaM1Y",
+   "dataTheme": null
+  },
+  "pageBg": "#07080a",
+  "pageBgOklabL": 0.134,
+  "pageBgOklabC": 0.005,
+  "pageBgOklabH": 262,
+  "cssVarCount": 82,
+  "cssVars": [
+   [
+    ":root --grey-50",
+    "#e6e6e6"
+   ],
+   [
+    ":root --grey-100",
+    "#cdcece"
+   ],
+   [
+    ":root --grey-200",
+    "#9c9c9d"
+   ],
+   [
+    ":root --grey-300",
+    "#6a6b6c"
+   ],
+   [
+    ":root --grey-400",
+    "#434345"
+   ],
+   [
+    ":root --grey-500",
+    "#2f3031"
+   ],
+   [
+    ":root --grey-600",
+    "#1b1c1e"
+   ],
+   [
+    ":root --grey-700",
+    "#111214"
+   ],
+   [
+    ":root --grey-800",
+    "#0c0d0f"
+   ],
+   [
+    ":root --grey-900",
+    "#07080a"
+   ],
+   [
+    ":root --background",
+    "var(--grey-900)"
+   ],
+   [
+    ":root --reverse-background",
+    "#fff"
+   ],
+   [
+    ":root --color-bg",
+    "var(--grey-900)"
+   ],
+   [
+    ":root --color-bg-100",
+    "#101111"
+   ],
+   [
+    ":root --color-bg-200",
+    "#18191a"
+   ],
+   [
+    ":root --color-bg-300",
+    "#313133"
+   ],
+   [
+    ":root --color-bg-400",
+    "#494b4d"
+   ],
+   [
+    ":root --color-fg",
+    "#f4f4f6"
+   ],
+   [
+    ":root --color-fg-200",
+    "#c2c7ca"
+   ],
+   [
+    ":root --color-fg-300",
+    "#78787c"
+   ],
+   [
+    ":root --color-fg-400",
+    "#5e6366"
+   ],
+   [
+    ":root --color-yellow",
+    "#ffc533"
+   ],
+   [
+    ":root --color-yellow-transparent",
+    "#ffc53326"
+   ],
+   [
+    ":root --color-red",
+    "#ff6161"
+   ],
+   [
+    ":root --color-red-transparent",
+    "#ff616126"
+   ],
+   [
+    ":root --color-blue",
+    "#57c1ff"
+   ],
+   [
+    ":root --color-blue-transparent",
+    "#57c1ff26"
+   ],
+   [
+    ":root --color-green",
+    "#59d499"
+   ],
+   [
+    ":root --color-green-transparent",
+    "#59d49926"
+   ],
+   [
+    ":root --color-border",
+    "#242728"
+   ],
+   [
+    ":root --color-button-bg",
+    "#ffffffd0"
+   ],
+   [
+    ":root --color-button-bg-hover",
+    "#fff"
+   ],
+   [
+    ":root --color-button-fg",
+    "#18191a"
+   ]
+  ],
+  "surfaces": [
+   {
+    "hex": "#07080a",
+    "L": 0.134,
+    "C": 0.005,
+    "H": 262,
+    "n": 2,
+    "area": 2016955,
+    "ex": [
+     "div.page-module__H3BVAa__heroBackground",
+     "div.index-module__utU0aa__frameInner"
+    ]
+   },
+   {
+    "hex": "#434345",
+    "L": 0.384,
+    "C": 0.003,
+    "H": 286,
+    "n": 18,
+    "area": 535613,
+    "ex": [
+     "a.YoutubeCarousel-module__Jy8ojW__placeh",
+     "a.YoutubeCarousel-module__Jy8ojW__placeh"
+    ]
+   },
+   {
+    "hex": "#111214",
+    "L": 0.182,
+    "C": 0.004,
+    "H": 264,
+    "n": 1,
+    "area": 193028,
+    "ex": [
+     "a.ExtensionHighlight-module__3Yq4tG__bro"
+    ]
+   },
+   {
+    "hex": "#1f2025",
+    "L": 0.245,
+    "C": 0.01,
+    "H": 277,
+    "n": 1,
+    "area": 165268,
+    "ex": [
+     "div.styles-module__pdSE7a__background"
+    ]
+   },
+   {
+    "hex": "#e6e6e6",
+    "L": 0.925,
+    "C": 0,
+    "H": 90,
+    "n": 4,
+    "area": 20885,
+    "ex": [
+     "a.Button-module__3dJGfa__button",
+     "a.Button-module__3dJGfa__button"
+    ]
+   },
+   {
+    "hex": "#1b1c1e",
+    "L": 0.226,
+    "C": 0.004,
+    "H": 264,
+    "n": 2,
+    "area": 7031,
+    "ex": [
+     "span.index-module__NFhuXW__badge",
+     "div.FeatureBadge-module__q3_hwG__badge"
+    ]
+   },
+   {
+    "hex": "#452324",
+    "L": 0.302,
+    "C": 0.052,
+    "H": 19,
+    "n": 1,
+    "area": 6541,
+    "ex": [
+     "div.HeroAnnouncement-module__ezSJPa__ann"
+    ]
+   },
+   {
+    "hex": "#130d0e",
+    "L": 0.167,
+    "C": 0.01,
+    "H": 7,
+    "n": 1,
+    "area": 6072,
+    "ex": [
+     "a.HeroAnnouncement-module__ezSJPa__annou"
+    ]
+   },
+   {
+    "hex": "#ffffff",
+    "L": 1,
+    "C": 0,
+    "H": 90,
+    "n": 1,
+    "area": 5796,
+    "ex": [
+     "input.Submit-module__Fa7Cva__submit"
+    ]
+   },
+   {
+    "hex": "#ff6363",
+    "L": 0.7,
+    "C": 0.191,
+    "H": 23,
+    "n": 1,
+    "area": 5625,
+    "ex": [
+     "div."
+    ]
+   }
+  ],
+  "overlays": [
+   {
+    "bg": "rgba(255, 255, 255, 0.02) => #0c0d0f",
+    "n": 3,
+    "area": 994155
+   },
+   {
+    "bg": "rgba(0, 0, 0, 0.44) => #040406",
+    "n": 1,
+    "area": 890960
+   },
+   {
+    "bg": "rgba(158, 190, 215, 0.1) => #161a1f",
+    "n": 1,
+    "area": 665760
+   },
+   {
+    "bg": "rgba(255, 255, 255, 0.05) => #131416",
+    "n": 85,
+    "area": 604296
+   },
+   {
+    "bg": "rgba(0, 0, 0, 0.6) => #030304",
+    "n": 1,
+    "area": 356250
+   },
+   {
+    "bg": "rgba(215, 42, 42, 0.02) => #0b090b",
+    "n": 1,
+    "area": 291984
+   },
+   {
+    "bg": "rgba(255, 255, 255, 0.02) => #111214",
+    "n": 2,
+    "area": 211850
+   },
+   {
+    "bg": "rgba(255, 255, 255, 0.1) => #1c1c1d",
+    "n": 2,
+    "area": 120048
+   },
+   {
+    "bg": "rgba(34, 34, 34, 0.85) => #1e1e1e",
+    "n": 1,
+    "area": 52320
+   },
+   {
+    "bg": "rgba(255, 255, 255, 0.1) => #202123",
+    "n": 2,
+    "area": 39840
+   },
+   {
+    "bg": "rgba(255, 255, 255, 0.05) => #18191b",
+    "n": 2,
+    "area": 34017
+   },
+   {
+    "bg": "rgba(0, 0, 0, 0.1) => #030304",
+    "n": 1,
+    "area": 29920
+   },
+   {
+    "bg": "rgba(255, 255, 255, 0.1) => #242527",
+    "n": 1,
+    "area": 8311
+   },
+   {
+    "bg": "rgba(255, 255, 255, 0.1) => #343535",
+    "n": 1,
+    "area": 5696
+   }
+  ],
+  "borders": [
+   {
+    "border": "rgba(255, 255, 255, 0.1) @1px",
+    "n": 117,
+    "alpha": 0.1,
+    "flatOnPage": "#202123",
+    "L": 0.246
+   },
+   {
+    "border": "rgba(0, 0, 0, 0) @1px",
+    "n": 105,
+    "alpha": 0,
+    "flatOnPage": "#07080a",
+    "L": 0.134
+   },
+   {
+    "border": "rgba(255, 255, 255, 0.06) @1px",
+    "n": 52,
+    "alpha": 0.06,
+    "flatOnPage": "#161719",
+    "L": 0.204
+   },
+   {
+    "border": "rgba(255, 255, 255, 0.6) @1px",
+    "n": 20,
+    "alpha": 0.6,
+    "flatOnPage": "#9c9c9d",
+    "L": 0.693
+   },
+   {
+    "border": "rgba(142, 140, 144, 0.2) @1px",
+    "n": 17,
+    "alpha": 0.2,
+    "flatOnPage": "#222225",
+    "L": 0.254
+   },
+   {
+    "border": "rgba(255, 255, 255, 0.2) @2px",
+    "n": 16,
+    "alpha": 0.2,
+    "flatOnPage": "#39393b",
+    "L": 0.346
+   },
+   {
+    "border": "rgb(47, 48, 49) @1px",
+    "n": 16,
+    "alpha": 1,
+    "flatOnPage": "#2f3031",
+    "L": 0.309
+   },
+   {
+    "border": "rgba(255, 255, 255, 0.08) @1px",
+    "n": 8,
+    "alpha": 0.08,
+    "flatOnPage": "#1b1c1e",
+    "L": 0.225
+   },
+   {
+    "border": "rgba(255, 255, 255, 0.2) @1px",
+    "n": 8,
+    "alpha": 0.2,
+    "flatOnPage": "#39393b",
+    "L": 0.346
+   },
+   {
+    "border": "rgba(255, 255, 255, 0.05) @1px",
+    "n": 8,
+    "alpha": 0.05,
+    "flatOnPage": "#131416",
+    "L": 0.193
+   },
+   {
+    "border": "rgb(255, 255, 255) @1px",
+    "n": 5,
+    "alpha": 1,
+    "flatOnPage": "#ffffff",
+    "L": 1
+   },
+   {
+    "border": "rgba(255, 255, 255, 0.4) @1px",
+    "n": 4,
+    "alpha": 0.4,
+    "flatOnPage": "#6a6b6c",
+    "L": 0.527
+   }
+  ],
+  "radii": [
+   [
+    "11px",
+    159
+   ],
+   [
+    "8px",
+    108
+   ],
+   [
+    "100%",
+    101
+   ],
+   [
+    "6px",
+    69
+   ],
+   [
+    "12px",
+    53
+   ],
+   [
+    "20px",
+    38
+   ],
+   [
+    "16px",
+    28
+   ],
+   [
+    "99999px",
+    24
+   ]
+  ],
+  "shadows": [
+   {
+    "shadow": "rgba(0, 0, 0, 0.4) 0px 1.5px 0.5px 2.5px, rgb(0, 0, 0) 0px 0px 0.5px 1px, rgba(0, 0, 0, 0.25) 0px 2px 1px 1px inset, rgba(255, 255, 255, 0.2) 0px 1px 1px 1px inset, rgba(0, 0, 0, 0) 0px 0px 0px 0px inset",
+    "n": 159
+   },
+   {
+    "shadow": "rgb(27, 28, 30) 0px 0px 0px 1px, rgb(7, 8, 10) 0px 0px 0px 1px inset",
+    "n": 54
+   },
+   {
+    "shadow": "rgba(215, 201, 175, 0.05) 0px 0px 20px 5px, rgba(215, 201, 175, 0.05) 0px 0px 16px -7px",
+    "n": 18
+   },
+   {
+    "shadow": "rgba(0, 0, 0, 0.28) 0px 1.189px 2.377px 0px",
+    "n": 17
+   },
+   {
+    "shadow": "rgba(255, 255, 255, 0.05) 0px 1px 0px 0px inset, rgba(255, 255, 255, 0.25) 0px 0px 0px 1px, rgba(0, 0, 0, 0.2) 0px -1px 0px 0px inset",
+    "n": 17
+   },
+   {
+    "shadow": "rgba(0, 0, 0, 0.03) 0px 7px 3px 0px, rgba(0, 0, 0, 0.25) 0px 4px 4px 0px",
+    "n": 6
+   },
+   {
+    "shadow": "rgba(255, 255, 255, 0.1) 0px 1px 0px 0px inset",
+    "n": 6
+   },
+   {
+    "shadow": "rgba(0, 0, 0, 0.5) 0px 0px 0px 2px, rgba(255, 255, 255, 0.19) 0px 0px 14px 0px, rgba(0, 0, 0, 0.2) 0px -1px 0.4px 0px inset, rgb(255, 255, 255) 0px 1px 0.4px 0px inset",
+    "n": 5
+   },
+   {
+    "shadow": "rgba(0, 0, 0, 0.4) 0px 4px 40px 8px, rgba(0, 0, 0, 0.8) 0px 0px 0px 0.5px, rgba(255, 255, 255, 0.3) 0px 0.5px 0px 0px inset",
+    "n": 4
+   },
+   {
+    "shadow": "rgba(0, 0, 0, 0.25) 0px 0px 0px 0.5px",
+    "n": 4
+   }
+  ],
+  "nShadowEls": 321,
+  "textColors": [
+   {
+    "color": "rgb(255, 255, 255)",
+    "chars": 4764,
+    "n": 456,
+    "fg": "#ffffff",
+    "alpha": 1,
+    "contrast": 20.04,
+    "L": 1,
+    "bg": "#07080a",
+    "size": "64px",
+    "weight": "600",
+    "ex": "Your shortcut to everything."
+   },
+   {
+    "color": "rgb(156, 156, 157)",
+    "chars": 1711,
+    "n": 97,
+    "fg": "#9c9c9d",
+    "alpha": 1,
+    "contrast": 7.3,
+    "L": 0.693,
+    "bg": "#07080a",
+    "size": "14px",
+    "weight": "500",
+    "ex": "Store"
+   },
+   {
+    "color": "rgb(106, 107, 108)",
+    "chars": 1384,
+    "n": 49,
+    "fg": "#6a6b6c",
+    "alpha": 1,
+    "contrast": 3.75,
+    "L": 0.527,
+    "bg": "#07080a",
+    "size": "20px",
+    "weight": "500",
+    "ex": "One interface, everything yo"
+   },
+   {
+    "color": "rgba(255, 255, 255, 0.4)",
+    "chars": 696,
+    "n": 17,
+    "fg": "#6a6b6c",
+    "alpha": 0.4,
+    "contrast": 3.75,
+    "L": 0.527,
+    "bg": "#07080a",
+    "size": "16px",
+    "weight": "400",
+    "ex": "Type to filter entries..."
+   },
+   {
+    "color": "rgba(255, 255, 255, 0.6)",
+    "chars": 652,
+    "n": 71,
+    "fg": "#a5a5a5",
+    "alpha": 0.6,
+    "contrast": 6.76,
+    "L": 0.722,
+    "bg": "#1e1e1e",
+    "size": "13px",
+    "weight": "400",
+    "ex": "Search..."
+   },
+   {
+    "color": "rgb(67, 67, 69)",
+    "chars": 433,
+    "n": 36,
+    "fg": "#434345",
+    "alpha": 1,
+    "contrast": 2.03,
+    "L": 0.384,
+    "bg": "#07080a",
+    "size": "16px",
+    "weight": "600",
+    "ex": "@rauchg"
+   },
+   {
+    "color": "rgba(255, 255, 255, 0.3)",
+    "chars": 154,
+    "n": 8,
+    "fg": "#58595a",
+    "alpha": 0.3,
+    "contrast": 2.68,
+    "L": 0.464,
+    "bg": "#111214",
+    "size": "12px",
+    "weight": "400",
+    "ex": "Quick AI\n⇥"
+   },
+   {
+    "color": "rgba(255, 255, 255, 0.8)",
+    "chars": 83,
+    "n": 1,
+    "fg": "#d1d1d1",
+    "alpha": 0.8,
+    "contrast": 11.51,
+    "L": 0.861,
+    "bg": "#18191b",
+    "size": "14px",
+    "weight": "400",
+    "ex": "Check \nLinear\n for tasks ass"
+   },
+   {
+    "color": "rgba(255, 255, 255, 0.5)",
+    "chars": 63,
+    "n": 1,
+    "fg": "#838485",
+    "alpha": 0.5,
+    "contrast": 5.32,
+    "L": 0.612,
+    "bg": "#07080a",
+    "size": "18px",
+    "weight": "400",
+    "ex": "Raycast AI uses the tools yo"
+   },
+   {
+    "color": "rgb(140, 214, 255)",
+    "chars": 54,
+    "n": 1,
+    "fg": "#8cd6ff",
+    "alpha": 1,
+    "contrast": 12.57,
+    "L": 0.842,
+    "bg": "#07080a",
+    "size": "16px",
+    "weight": "500",
+    "ex": "3rd Floor 1 Ashley Road, WA1"
+   },
+   {
+    "color": "rgb(47, 48, 49)",
+    "chars": 52,
+    "n": 5,
+    "fg": "#2f3031",
+    "alpha": 1,
+    "contrast": 10.6,
+    "L": 0.309,
+    "bg": "#e6e6e6",
+    "size": "14px",
+    "weight": "500",
+    "ex": "Download"
+   },
+   {
+    "color": "rgba(255, 255, 255, 0.7)",
+    "chars": 30,
+    "n": 1,
+    "fg": "#b8b8b8",
+    "alpha": 0.7,
+    "contrast": 9.45,
+    "L": 0.782,
+    "bg": "#111214",
+    "size": "18px",
+    "weight": "400",
+    "ex": "Block my calendar for tomorr"
+   }
+  ],
+  "h1": {
+   "text": "Your shortcut to everything.",
+   "family": "Inter, \"Inter Fallback\", sans-serif",
+   "size": "64px",
+   "weight": "600",
+   "lh": "70.4px",
+   "ls": "normal",
+   "color": "rgb(255, 255, 255)",
+   "smooth": "antialiased",
+   "bgClip": "border-box",
+   "bgImage": "none",
+   "textShadow": "rgba(0, 0, 0, 0.15) 0px 4px 4px"
+  },
+  "body": {
+   "text": "Store\nPro\nAI\niOS\nWindows\nTeams\nEnterprise\nBlog\nPricing\nLog i",
+   "family": "Inter, \"Inter Fallback\", sans-serif",
+   "size": "16px",
+   "weight": "400",
+   "lh": "18.4px",
+   "ls": "normal",
+   "color": "rgb(255, 255, 255)",
+   "smooth": "antialiased",
+   "bgClip": "border-box",
+   "bgImage": "none",
+   "textShadow": null
+  },
+  "bodySmoothing": "antialiased",
+  "textRendering": "auto",
+  "heroP": {
+   "text": "A collection of powerful productivity tools all within an ex",
+   "family": "Inter, \"Inter Fallback\", sans-serif",
+   "size": "18px",
+   "weight": "400",
+   "lh": "normal",
+   "ls": "0.2px",
+   "color": "rgb(255, 255, 255)",
+   "smooth": "antialiased",
+   "bgClip": "border-box",
+   "bgImage": "none",
+   "textShadow": "rgba(0, 0, 0, 0.25) 0px 4px 4px"
+  },
+  "ctas": [
+   {
+    "text": "Download",
+    "h": 36,
+    "kind": "filled",
+    "bg": "rgb(230, 230, 230)",
+    "color": "rgb(47, 48, 49)",
+    "border": null,
+    "radius": "8px",
+    "shadow": "rgba(0, 0, 0, 0.5) 0px 0px 0px 2px, rgba(255, 255, 255, 0.19) 0px 0px 14px 0px, rgba(0, 0, 0, 0.2) 0px -1px 0.4px 0px inset, rgb(255, 255, 255) 0px 1px 0.4px 0px inset",
+    "bgImage": null,
+    "size": "14px",
+    "weight": "500"
+   },
+   {
+    "text": "Download for Mac",
+    "h": 36,
+    "kind": "filled",
+    "bg": "rgb(230, 230, 230)",
+    "color": "rgb(47, 48, 49)",
+    "border": null,
+    "radius": "8px",
+    "shadow": "rgba(0, 0, 0, 0.5) 0px 0px 0px 2px, rgba(255, 255, 255, 0.19) 0px 0px 14px 0px, rgba(0, 0, 0, 0.2) 0px -1px 0.4px 0px inset, rgb(255, 255, 255) 0px 1px 0.4px 0px inset",
+    "bgImage": null,
+    "size": "14px",
+    "weight": "500"
+   }
+  ],
+  "effects": {
+   "radial": 190,
+   "conic": 1,
+   "linear": 46,
+   "urlbg": 0,
+   "blurEls": 2,
+   "backdropEls": 21,
+   "mixBlend": 10,
+   "maskEls": 15,
+   "gradEx": [
+    "radial-gradient(85.77% 49.97% at 51% 5.12%, rgba(255, 150, 150, 0.11) 0%, rgba(222, 226, 255, 0.08) 45.83%, rgba(241, 242, 255, 0.02) 100%), none",
+    "radial-gradient(79.21% 79.21% at 42.35% 0px, rgb(120, 120, 120) 0%, rgb(40, 40, 40) 100%)",
+    "radial-gradient(1139.98% 138.18% at 0px 0px, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%)",
+    "radial-gradient(1139.98% 138.18% at 0px 0px, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%)",
+    "radial-gradient(1139.98% 138.18% at 0px 0px, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%)",
+    "radial-gradient(1139.98% 138.18% at 0px 0px, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%)"
+   ],
+   "canvas": 1,
+   "video": 0,
+   "svg": 169,
+   "img": 117
+  },
+  "noise": false,
+  "gradientHeadings": 0,
+  "accents": [
+   {
+    "hex": "#ff6363",
+    "n": 4,
+    "L": 0.7,
+    "C": 0.191,
+    "H": 23
+   },
+   {
+    "hex": "#59d499",
+    "n": 1,
+    "L": 0.785,
+    "C": 0.14,
+    "H": 160
+   },
+   {
+    "hex": "#56c2ff",
+    "n": 1,
+    "L": 0.776,
+    "C": 0.131,
+    "H": 237
+   },
+   {
+    "hex": "#ffc531",
+    "n": 1,
+    "L": 0.853,
+    "C": 0.163,
+    "H": 85
+   },
+   {
+    "hex": "#ff625b",
+    "n": 1,
+    "L": 0.698,
+    "C": 0.193,
+    "H": 26
+   },
+   {
+    "hex": "#e53733",
+    "n": 1,
+    "L": 0.606,
+    "C": 0.211,
+    "H": 27
+   }
+  ]
+ }
+}

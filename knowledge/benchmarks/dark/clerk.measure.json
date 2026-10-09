@@ -1,0 +1,2407 @@
+{
+ "url": "https://clerk.com",
+ "scheme": "dark",
+ "pageHeight": 7187,
+ "fold": {
+  "title": "Clerk | Authentication and User Management",
+  "vw": 1440,
+  "pageHeight": 7187,
+  "colorScheme": {
+   "html": "normal",
+   "body": "normal",
+   "metaTheme": null,
+   "htmlClass": "suisse_c1aba7e9-module__WpjB7a__variable soehnemono_a1bc168a-module__FMl8Nq__variable geistnumbers_bd8c890c-module__bH8f",
+   "dataTheme": null
+  },
+  "pageBg": "#f7f7f8",
+  "pageBgOklabL": 0.976,
+  "pageBgOklabC": 0.001,
+  "pageBgOklabH": 286,
+  "cssVarCount": 473,
+  "cssVars": [
+   [
+    ":root, :host --color-red-50",
+    "#fef2f2"
+   ],
+   [
+    ":root, :host --color-red-100",
+    "#fef2f2"
+   ],
+   [
+    ":root, :host --color-red-200",
+    "#fecaca"
+   ],
+   [
+    ":root, :host --color-red-300",
+    "#fca5a5"
+   ],
+   [
+    ":root, :host --color-red-400",
+    "#f87171"
+   ],
+   [
+    ":root, :host --color-red-500",
+    "#ef4444"
+   ],
+   [
+    ":root, :host --color-red-600",
+    "#dc2626"
+   ],
+   [
+    ":root, :host --color-red-700",
+    "#b91c1c"
+   ],
+   [
+    ":root, :host --color-red-800",
+    "#991b1b"
+   ],
+   [
+    ":root, :host --color-red-900",
+    "#7f1d1d"
+   ],
+   [
+    ":root, :host --color-red-950",
+    "#450a0a"
+   ],
+   [
+    ":root, :host --color-orange-50",
+    "#fff6ed"
+   ],
+   [
+    ":root, :host --color-orange-100",
+    "#ffebd5"
+   ],
+   [
+    ":root, :host --color-orange-200",
+    "#fed1aa"
+   ],
+   [
+    ":root, :host --color-orange-300",
+    "#fdb674"
+   ],
+   [
+    ":root, :host --color-orange-400",
+    "#f98c49"
+   ],
+   [
+    ":root, :host --color-orange-500",
+    "#f36b16"
+   ],
+   [
+    ":root, :host --color-orange-600",
+    "#ea520c"
+   ],
+   [
+    ":root, :host --color-orange-700",
+    "#c23a0c"
+   ],
+   [
+    ":root, :host --color-orange-800",
+    "#9a2f12"
+   ],
+   [
+    ":root, :host --color-orange-900",
+    "#7c2912"
+   ],
+   [
+    ":root, :host --color-orange-950",
+    "#431207"
+   ],
+   [
+    ":root, :host --color-amber-50",
+    "lab(98.6252% -.635922 8.42309)"
+   ],
+   [
+    ":root, :host --color-amber-200",
+    "lab(91.7203% -.505269 49.9084)"
+   ],
+   [
+    ":root, :host --color-amber-300",
+    "lab(86.4156% 6.13147 78.3961)"
+   ],
+   [
+    ":root, :host --color-amber-500",
+    "lab(72.7183% 31.8672 97.9407)"
+   ],
+   [
+    ":root, :host --color-amber-900",
+    "lab(31.2288% 30.2627 40.0378)"
+   ],
+   [
+    ":root, :host --color-amber-950",
+    "lab(15.8111% 20.9107 23.3752)"
+   ],
+   [
+    ":root, :host --color-yellow-50",
+    "#fefce8"
+   ],
+   [
+    ":root, :host --color-yellow-100",
+    "#fef9c3"
+   ],
+   [
+    ":root, :host --color-yellow-200",
+    "#fef18a"
+   ],
+   [
+    ":root, :host --color-yellow-300",
+    "#fde047"
+   ],
+   [
+    ":root, :host --color-yellow-400",
+    "#efd420"
+   ],
+   [
+    ":root, :host --color-yellow-500",
+    "#eab308"
+   ],
+   [
+    ":root, :host --color-yellow-600",
+    "#ca8a04"
+   ],
+   [
+    ":root, :host --color-yellow-700",
+    "#a16207"
+   ],
+   [
+    ":root, :host --color-yellow-800",
+    "#854d0e"
+   ],
+   [
+    ":root, :host --color-yellow-900",
+    "#713f12"
+   ],
+   [
+    ":root, :host --color-yellow-950",
+    "#422006"
+   ],
+   [
+    ":root, :host --color-green-50",
+    "#f0fdf2"
+   ],
+   [
+    ":root, :host --color-green-100",
+    "#dcfce2"
+   ],
+   [
+    ":root, :host --color-green-200",
+    "#bbf7c6"
+   ],
+   [
+    ":root, :host --color-green-300",
+    "#86ef9b"
+   ],
+   [
+    ":root, :host --color-green-400",
+    "#4ade68"
+   ],
+   [
+    ":root, :host --color-green-500",
+    "#22c543"
+   ],
+   [
+    ":root, :host --color-green-600",
+    "#16a332"
+   ],
+   [
+    ":root, :host --color-green-700",
+    "#15802a"
+   ],
+   [
+    ":root, :host --color-green-800",
+    "#166527"
+   ],
+   [
+    ":root, :host --color-green-900",
+    "#145323"
+   ],
+   [
+    ":root, :host --color-green-950",
+    "#052e0f"
+   ],
+   [
+    ":root, :host --color-emerald-300",
+    "lab(83.9203% -48.7124 13.8849)"
+   ],
+   [
+    ":root, :host --color-emerald-400",
+    "lab(75.0771% -60.7313 19.4147)"
+   ],
+   [
+    ":root, :host --color-emerald-500",
+    "lab(66.9756% -58.27 19.5419)"
+   ],
+   [
+    ":root, :host --color-emerald-950",
+    "lab(15.0582% -17.9507 2.38369)"
+   ],
+   [
+    ":root, :host --color-sky-50",
+    "#ebfdff"
+   ],
+   [
+    ":root, :host --color-sky-100",
+    "#ccf9ff"
+   ],
+   [
+    ":root, :host --color-sky-200",
+    "#9ff1ff"
+   ],
+   [
+    ":root, :host --color-sky-300",
+    "#5de3ff"
+   ],
+   [
+    ":root, :host --color-sky-400",
+    "#3ad4fd"
+   ],
+   [
+    ":root, :host --color-sky-500",
+    "#00aee3"
+   ],
+   [
+    ":root, :host --color-sky-600",
+    "#0089be"
+   ],
+   [
+    ":root, :host --color-sky-700",
+    "#056d99"
+   ],
+   [
+    ":root, :host --color-sky-800",
+    "#0e597c"
+   ],
+   [
+    ":root, :host --color-sky-900",
+    "#104a69"
+   ],
+   [
+    ":root, :host --color-sky-950",
+    "#043048"
+   ],
+   [
+    ":root, :host --color-blue-50",
+    "#eff6ff"
+   ],
+   [
+    ":root, :host --color-blue-100",
+    "#dbeafe"
+   ],
+   [
+    ":root, :host --color-blue-200",
+    "#bfdbfe"
+   ],
+   [
+    ":root, :host --color-blue-300",
+    "#93c5fd"
+   ],
+   [
+    ":root, :host --color-blue-400",
+    "#60a5fa"
+   ],
+   [
+    ":root, :host --color-blue-500",
+    "#3b82f6"
+   ],
+   [
+    ":root, :host --color-blue-600",
+    "#2563eb"
+   ],
+   [
+    ":root, :host --color-blue-700",
+    "#1d4ed8"
+   ],
+   [
+    ":root, :host --color-blue-800",
+    "#1e40af"
+   ],
+   [
+    ":root, :host --color-blue-900",
+    "#1e3a8a"
+   ],
+   [
+    ":root, :host --color-blue-950",
+    "#0e1a3a"
+   ],
+   [
+    ":root, :host --color-indigo-500",
+    "lab(48.295% 38.3129 -81.9673)"
+   ],
+   [
+    ":root, :host --color-indigo-600",
+    "lab(38.4009% 52.6132 -92.3857)"
+   ],
+   [
+    ":root, :host --color-indigo-700",
+    "lab(32.4486% 49.2217 -84.6695)"
+   ],
+   [
+    ":root, :host --color-violet-400",
+    "lab(62.8239% 34.9159 -60.0512)"
+   ],
+   [
+    ":root, :host --color-purple-50",
+    "#f4f2ff"
+   ],
+   [
+    ":root, :host --color-purple-100",
+    "#eae8ff"
+   ],
+   [
+    ":root, :host --color-purple-200",
+    "#d7d4ff"
+   ],
+   [
+    ":root, :host --color-purple-300",
+    "#bab1ff"
+   ],
+   [
+    ":root, :host --color-purple-400",
+    "#9785ff"
+   ],
+   [
+    ":root, :host --color-purple-500",
+    "#6c47ff"
+   ],
+   [
+    ":root, :host --color-purple-600",
+    "#6430f7"
+   ],
+   [
+    ":root, :host --color-purple-700",
+    "#561ee3"
+   ],
+   [
+    ":root, :host --color-purple-800",
+    "#4818bf"
+   ],
+   [
+    ":root, :host --color-purple-900",
+    "#3c169c"
+   ],
+   [
+    ":root, :host --color-purple-950",
+    "#230b6a"
+   ],
+   [
+    ":root, :host --color-pink-50",
+    "lab(96.4459% 4.53997 -1.49434)"
+   ],
+   [
+    ":root, :host --color-pink-500",
+    "lab(56.9303% 76.8162 -8.07021)"
+   ],
+   [
+    ":root, :host --color-rose-400",
+    "lab(64.4125% 63.0291 19.2068)"
+   ],
+   [
+    ":root, :host --color-slate-50",
+    "lab(98.1434% -.369519 -1.05966)"
+   ],
+   [
+    ":root, :host --color-slate-100",
+    "lab(96.286% -.852436 -2.46847)"
+   ],
+   [
+    ":root, :host --color-slate-200",
+    "lab(91.7353% -.998765 -4.76968)"
+   ],
+   [
+    ":root, :host --color-slate-400",
+    "lab(65.5349% -2.25151 -14.5072)"
+   ],
+   [
+    ":root, :host --color-slate-500",
+    "lab(48.0876% -2.03595 -16.5814)"
+   ],
+   [
+    ":root, :host --color-gray-50",
+    "#f7f7f8"
+   ],
+   [
+    ":root, :host --color-gray-100",
+    "#eeeef0"
+   ],
+   [
+    ":root, :host --color-gray-200",
+    "#d9d9de"
+   ],
+   [
+    ":root, :host --color-gray-300",
+    "#b7b8c2"
+   ],
+   [
+    ":root, :host --color-gray-400",
+    "#9394a1"
+   ],
+   [
+    ":root, :host --color-gray-500",
+    "#747686"
+   ],
+   [
+    ":root, :host --color-gray-600",
+    "#5e5f6e"
+   ],
+   [
+    ":root, :host --color-gray-700",
+    "#42434d"
+   ],
+   [
+    ":root, :host --color-gray-800",
+    "#2f3037"
+   ],
+   [
+    ":root, :host --color-gray-900",
+    "#212126"
+   ],
+   [
+    ":root, :host --color-gray-950",
+    "#131316"
+   ],
+   [
+    ":root, :host --color-zinc-100",
+    "lab(96.1634% .0993311 -.364041)"
+   ],
+   [
+    ":root, :host --color-zinc-300",
+    "lab(84.9837% .601262 -2.17986)"
+   ],
+   [
+    ":root, :host --color-zinc-400",
+    "lab(65.6464% 1.53497 -5.42429)"
+   ],
+   [
+    ":root, :host --color-zinc-500",
+    "lab(47.8878% 1.65477 -5.77283)"
+   ],
+   [
+    ":root, :host --color-zinc-600",
+    "lab(35.1166% 1.78212 -6.1173)"
+   ],
+   [
+    ":root, :host --color-zinc-700",
+    "lab(26.8019% 1.35387 -4.68303)"
+   ],
+   [
+    ":root, :host --color-zinc-800",
+    "lab(15.7305% .613764 -2.16959)"
+   ],
+   [
+    ":root, :host --color-zinc-950",
+    "lab(2.51107% .242703 -.886115)"
+   ],
+   [
+    ":root, :host --color-neutral-50",
+    "lab(98.26% 0 0)"
+   ],
+   [
+    ":root, :host --color-neutral-100",
+    "lab(96.52% -.0000298023 .0000119209)"
+   ]
+  ],
+  "surfaces": [
+   {
+    "hex": "#f7f7f8",
+    "L": 0.976,
+    "C": 0.001,
+    "H": 286,
+    "n": 51,
+    "area": 9976414,
+    "ex": [
+     "div.isolate",
+     "div.pointer-events-none"
+    ]
+   },
+   {
+    "hex": "#ffffff",
+    "L": 1,
+    "C": 0,
+    "H": 90,
+    "n": 66,
+    "area": 9362585,
+    "ex": [
+     "div.relative",
+     "section.relative"
+    ]
+   },
+   {
+    "hex": "#131316",
+    "L": 0.188,
+    "C": 0.006,
+    "H": 286,
+    "n": 19,
+    "area": 4466290,
+    "ex": [
+     "a.group",
+     "span.relative"
+    ]
+   },
+   {
+    "hex": "#212126",
+    "L": 0.25,
+    "C": 0.009,
+    "H": 286,
+    "n": 16,
+    "area": 1777919,
+    "ex": [
+     "div.group",
+     "div.group"
+    ]
+   },
+   {
+    "hex": "#f7f7f7",
+    "L": 0.976,
+    "C": 0,
+    "H": 90,
+    "n": 1,
+    "area": 340656,
+    "ex": [
+     "div.font-mosaic"
+    ]
+   },
+   {
+    "hex": "#fafafb",
+    "L": 0.985,
+    "C": 0.001,
+    "H": 286,
+    "n": 3,
+    "area": 339955,
+    "ex": [
+     "div.bg-gray-25",
+     "div.bg-gray-25"
+    ]
+   },
+   {
+    "hex": "#2f3037",
+    "L": 0.311,
+    "C": 0.013,
+    "H": 279,
+    "n": 18,
+    "area": 173654,
+    "ex": [
+     "div.relative",
+     "div.relative"
+    ]
+   },
+   {
+    "hex": "#25252a",
+    "L": 0.267,
+    "C": 0.009,
+    "H": 286,
+    "n": 1,
+    "area": 102400,
+    "ex": [
+     "div.absolute"
+    ]
+   },
+   {
+    "hex": "#29292e",
+    "L": 0.283,
+    "C": 0.009,
+    "H": 286,
+    "n": 1,
+    "area": 65536,
+    "ex": [
+     "div.absolute"
+    ]
+   },
+   {
+    "hex": "#f8f8f8",
+    "L": 0.979,
+    "C": 0,
+    "H": 90,
+    "n": 1,
+    "area": 51576,
+    "ex": [
+     "div.transition-[color,background-color,b"
+    ]
+   },
+   {
+    "hex": "#2d2d32",
+    "L": 0.299,
+    "C": 0.009,
+    "H": 286,
+    "n": 1,
+    "area": 36864,
+    "ex": [
+     "div.absolute"
+    ]
+   },
+   {
+    "hex": "#eeeef0",
+    "L": 0.95,
+    "C": 0.003,
+    "H": 286,
+    "n": 4,
+    "area": 22954,
+    "ex": [
+     "span.absolute",
+     "div.flex"
+    ]
+   },
+   {
+    "hex": "#313136",
+    "L": 0.315,
+    "C": 0.009,
+    "H": 286,
+    "n": 1,
+    "area": 16384,
+    "ex": [
+     "div.absolute"
+    ]
+   },
+   {
+    "hex": "#f6f6f7",
+    "L": 0.973,
+    "C": 0.001,
+    "H": 286,
+    "n": 1,
+    "area": 11840,
+    "ex": [
+     "div.flex"
+    ]
+   }
+  ],
+  "overlays": [
+   {
+    "bg": "oklab(0.976413 0.000417292 -0.00124955 / 0.8) => #f9f9f9",
+    "n": 3,
+    "area": 241119
+   },
+   {
+    "bg": "oklab(0.985377 0.000417113 -0.00124651 / 0.5) => #fdfdfd",
+    "n": 1,
+    "area": 92112
+   },
+   {
+    "bg": "oklab(0.56965 0.00427368 -0.0242401 / 0.05) => #25252b",
+    "n": 1,
+    "area": 64512
+   },
+   {
+    "bg": "oklab(0.188081 0.0016512 -0.00579907 / 0.5) => #212227",
+    "n": 1,
+    "area": 48404
+   },
+   {
+    "bg": "rgba(19, 19, 22, 0.5) => #1a1a1e",
+    "n": 1,
+    "area": 30997
+   },
+   {
+    "bg": "oklab(0.310988 0.00201792 -0.012381 / 0.075) => #efeff0",
+    "n": 1,
+    "area": 7360
+   },
+   {
+    "bg": "oklab(0.310988 0.00201792 -0.012381 / 0.025) => #fafafa",
+    "n": 1,
+    "area": 7360
+   },
+   {
+    "bg": "oklab(0.188081 0.0016512 -0.00579907 / 0.05) => #ececed",
+    "n": 1,
+    "area": 5971
+   },
+   {
+    "bg": "oklab(0.188081 0.0016512 -0.00579907 / 0.6) => #19191c",
+    "n": 1,
+    "area": 5184
+   }
+  ],
+  "borders": [
+   {
+    "border": "oklab(0 0 0 / 0.2) @1px",
+    "n": 40,
+    "alpha": 0.2,
+    "flatOnPage": "#c6c6c6",
+    "L": 0.826
+   },
+   {
+    "border": "rgb(47, 48, 55) @1px",
+    "n": 36,
+    "alpha": 1,
+    "flatOnPage": "#2f3037",
+    "L": 0.311
+   },
+   {
+    "border": "rgb(236, 236, 238) @1px",
+    "n": 29,
+    "alpha": 1,
+    "flatOnPage": "#ececee",
+    "L": 0.944
+   },
+   {
+    "border": "rgba(0, 0, 0, 0.06) @1px",
+    "n": 24,
+    "alpha": 0.06,
+    "flatOnPage": "#e8e8e9",
+    "L": 0.932
+   },
+   {
+    "border": "oklab(0.188081 0.0016512 -0.00579907 / 0.05) @1px",
+    "n": 21,
+    "alpha": 0.05,
+    "flatOnPage": "#ececed",
+    "L": 0.942
+   },
+   {
+    "border": "rgb(217, 217, 222) @1px",
+    "n": 16,
+    "alpha": 1,
+    "flatOnPage": "#d9d9de",
+    "L": 0.887
+   },
+   {
+    "border": "rgb(147, 148, 161) @1px",
+    "n": 16,
+    "alpha": 1,
+    "flatOnPage": "#9394a1",
+    "L": 0.67
+   },
+   {
+    "border": "oklab(0.188081 0.0016512 -0.00579907 / 0.075) @1px",
+    "n": 16,
+    "alpha": 0.075,
+    "flatOnPage": "#e6e6e7",
+    "L": 0.925
+   },
+   {
+    "border": "rgb(238, 238, 240) @1px",
+    "n": 12,
+    "alpha": 1,
+    "flatOnPage": "#eeeef0",
+    "L": 0.95
+   },
+   {
+    "border": "rgb(255, 255, 255) @2px",
+    "n": 12,
+    "alpha": 1,
+    "flatOnPage": "#ffffff",
+    "L": 1
+   },
+   {
+    "border": "rgba(19, 19, 22, 0) @1px",
+    "n": 8,
+    "alpha": 0,
+    "flatOnPage": "#f7f7f8",
+    "L": 0.976
+   },
+   {
+    "border": "rgb(94, 95, 110) @1px",
+    "n": 8,
+    "alpha": 1,
+    "flatOnPage": "#5e5f6e",
+    "L": 0.49
+   }
+  ],
+  "radii": [
+   [
+    "3.35544e+07px",
+    171
+   ],
+   [
+    "6px",
+    97
+   ],
+   [
+    "8px",
+    50
+   ],
+   [
+    "4px",
+    46
+   ],
+   [
+    "12px",
+    36
+   ],
+   [
+    "16px",
+    17
+   ],
+   [
+    "50%",
+    13
+   ],
+   [
+    "3.37079% 21.4286%",
+    9
+   ]
+  ],
+  "shadows": [
+   {
+    "shadow": "rgba(19, 19, 22, 0.024) 0px 0px 0px 1px, rgba(19, 19, 22, 0.024) 0px 1px 1px -0.5px, rgba(19, 19, 22, 0.024) 0px 3px 3px -1.5px, rgba(19, 19, 22, 0.024) 0px 6px 6px -3px, rgba(19, 19, 22, 0.024) 0px 12px 12px -6px, rgba(19, 19, 22, 0.024) 0px 24px 24px -12px",
+    "n": 60
+   },
+   {
+    "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.1) 0px 1px 2px -1px",
+    "n": 18
+   },
+   {
+    "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklab(0.999994 0.0000455678 0.0000200868 / 0.05) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+    "n": 18
+   },
+   {
+    "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, lab(84.5189 -31.4667 -23.9754 / 0.08) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+    "n": 18
+   },
+   {
+    "shadow": "rgb(217, 217, 222) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px, rgba(0, 0, 0, 0.08) 0px 0px 2px 0px",
+    "n": 16
+   },
+   {
+    "shadow": "rgba(19, 19, 22, 0.05) 0px 0px 0px 1px, rgba(19, 19, 22, 0.05) 0px 1px 1px -0.5px, rgba(19, 19, 22, 0.05) 0px 3px 3px -1.5px, rgba(19, 19, 22, 0.05) 0px 6px 6px -3px, rgba(19, 19, 22, 0.05) 0px 12px 12px -6px, rgba(19, 19, 22, 0.05) 0px 24px 24px -12px",
+    "n": 15
+   },
+   {
+    "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklab(0.249859 0.00254738 -0.00901626 / 0.1) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+    "n": 15
+   },
+   {
+    "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.06) 0px 2px 10px -4px, rgba(0, 0, 0, 0.06) 0px 8px 12px -4px, rgba(255",
+    "n": 12
+   },
+   {
+    "shadow": "rgba(0, 0, 0, 0.24) 0px 1px 1px 0px, rgba(0, 0, 0, 0.2) 0px 2px 3px 0px, rgba(255, 255, 255, 0.07) 0px 1px 1px 0px inset, rgb(47, 48, 55) 0px 0px 0px 1px",
+    "n": 11
+   },
+   {
+    "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklab(0.999994 0.0000455678 0.0000200868 / 0.025) 0px 1px 0px 0px inset, oklab(0.999994 0.0000455678 0.0000200868 / 0.025) 0",
+    "n": 11
+   }
+  ],
+  "nShadowEls": 387,
+  "textColors": [
+   {
+    "color": "rgb(19, 19, 22)",
+    "chars": 5216,
+    "n": 182,
+    "fg": "#131316",
+    "alpha": 1,
+    "contrast": 17.45,
+    "L": 0.188,
+    "bg": "#f8f8f8",
+    "size": "13px",
+    "weight": "500",
+    "ex": "Products"
+   },
+   {
+    "color": "rgb(147, 148, 161)",
+    "chars": 1650,
+    "n": 27,
+    "fg": "#9394a1",
+    "alpha": 1,
+    "contrast": 3,
+    "L": 0.67,
+    "bg": "#ffffff",
+    "size": "13px",
+    "weight": "400",
+    "ex": "❯"
+   },
+   {
+    "color": "rgb(116, 118, 134)",
+    "chars": 1580,
+    "n": 85,
+    "fg": "#747686",
+    "alpha": 1,
+    "contrast": 4.19,
+    "L": 0.57,
+    "bg": "#f7f7f8",
+    "size": "11px",
+    "weight": "400",
+    "ex": "Manage your account info."
+   },
+   {
+    "color": "rgb(94, 95, 110)",
+    "chars": 1451,
+    "n": 51,
+    "fg": "#5e5f6e",
+    "alpha": 1,
+    "contrast": 6.29,
+    "L": 0.49,
+    "bg": "#ffffff",
+    "size": "18px",
+    "weight": "400",
+    "ex": "More than APIs. The complete"
+   },
+   {
+    "color": "rgb(55, 55, 60)",
+    "chars": 1200,
+    "n": 2,
+    "fg": "#37373c",
+    "alpha": 1,
+    "contrast": 1.35,
+    "L": 0.339,
+    "bg": "#212126",
+    "size": "10px",
+    "weight": "400",
+    "ex": "hUa1i2odeuaKQAsd7HfhWuMiiNZE"
+   },
+   {
+    "color": "rgb(255, 255, 255)",
+    "chars": 592,
+    "n": 38,
+    "fg": "#ffffff",
+    "alpha": 1,
+    "contrast": 9.81,
+    "L": 1,
+    "bg": "#42434d",
+    "size": "13px",
+    "weight": "500",
+    "ex": "Skip to main content"
+   },
+   {
+    "color": "rgb(0, 0, 0)",
+    "chars": 583,
+    "n": 45,
+    "fg": "#000000",
+    "alpha": 1,
+    "contrast": 21,
+    "L": 0,
+    "bg": "#ffffff",
+    "size": "16px",
+    "weight": "400",
+    "ex": "Add Clerk auth to my app: cl"
+   },
+   {
+    "color": "rgb(95, 95, 111)",
+    "chars": 346,
+    "n": 30,
+    "fg": "#5f5f6f",
+    "alpha": 1,
+    "contrast": 6.26,
+    "L": 0.491,
+    "bg": "#ffffff",
+    "size": "14px",
+    "weight": "400",
+    "ex": "Role sets"
+   },
+   {
+    "color": "rgb(33, 33, 38)",
+    "chars": 291,
+    "n": 16,
+    "fg": "#212126",
+    "alpha": 1,
+    "contrast": 16.03,
+    "L": 0.25,
+    "bg": "#ffffff",
+    "size": "11px",
+    "weight": "400",
+    "ex": "Visa ⋯ 4242"
+   },
+   {
+    "color": "rgb(43, 43, 52)",
+    "chars": 117,
+    "n": 9,
+    "fg": "#2b2b34",
+    "alpha": 1,
+    "contrast": 14.02,
+    "L": 0.293,
+    "bg": "#ffffff",
+    "size": "24px",
+    "weight": "500",
+    "ex": "Roles & Permissions"
+   },
+   {
+    "color": "rgb(183, 184, 194)",
+    "chars": 113,
+    "n": 16,
+    "fg": "#b7b8c2",
+    "alpha": 1,
+    "contrast": 8.09,
+    "L": 0.785,
+    "bg": "#212227",
+    "size": "10px",
+    "weight": "500",
+    "ex": "Phone"
+   },
+   {
+    "color": "rgb(66, 67, 77)",
+    "chars": 86,
+    "n": 5,
+    "fg": "#42434d",
+    "alpha": 1,
+    "contrast": 9.81,
+    "L": 0.386,
+    "bg": "#ffffff",
+    "size": "13px",
+    "weight": "500",
+    "ex": "Upload"
+   }
+  ],
+  "h1": {
+   "text": "Everything you need for authentication",
+   "family": "geistNumbers, suisse, \"suisse Fallback\"",
+   "size": "56px",
+   "weight": "700",
+   "lh": "64px",
+   "ls": "-1.96px",
+   "color": "rgb(19, 19, 22)",
+   "smooth": "antialiased",
+   "bgClip": "border-box",
+   "bgImage": "none",
+   "textShadow": null
+  },
+  "body": {
+   "text": "Skip to main content\nProducts\nDocs\nChangelog\nCompany\nAI\nPric",
+   "family": "geistNumbers, suisse, \"suisse Fallback\"",
+   "size": "16px",
+   "weight": "400",
+   "lh": "24px",
+   "ls": "normal",
+   "color": "rgb(0, 0, 0)",
+   "smooth": "antialiased",
+   "bgClip": "border-box",
+   "bgImage": "none",
+   "textShadow": null
+  },
+  "bodySmoothing": "antialiased",
+  "textRendering": "auto",
+  "heroP": {
+   "text": "More than APIs. The complete user layer for modern apps.",
+   "family": "geistNumbers, suisse, \"suisse Fallback\"",
+   "size": "18px",
+   "weight": "400",
+   "lh": "27.9px",
+   "ls": "normal",
+   "color": "rgb(94, 95, 110)",
+   "smooth": "antialiased",
+   "bgClip": "border-box",
+   "bgImage": "none",
+   "textShadow": null
+  },
+  "ctas": [
+   {
+    "text": "Skip to main content",
+    "h": 30,
+    "kind": "filled",
+    "bg": "rgb(66, 67, 77)",
+    "color": "rgb(255, 255, 255)",
+    "border": null,
+    "radius": "6px",
+    "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(66, 67, 77) 0px 0px 0px 0.5px, oklab(0.999994 0.0000455678 0.0000200868 / 0.07) 0px 1px 0px 0p",
+    "bgImage": null,
+    "size": "13px",
+    "weight": "500"
+   },
+   {
+    "text": "Sign in",
+    "h": 26,
+    "kind": "outline",
+    "bg": "rgba(19, 19, 22, 0)",
+    "color": "rgb(19, 19, 22)",
+    "border": "1px rgba(19, 19, 22, 0)",
+    "radius": "6px",
+    "shadow": null,
+    "bgImage": null,
+    "size": "13px",
+    "weight": "500"
+   },
+   {
+    "text": "Sign up",
+    "h": 26,
+    "kind": "outline",
+    "bg": "rgba(19, 19, 22, 0)",
+    "color": "rgb(19, 19, 22)",
+    "border": "1px rgba(19, 19, 22, 0)",
+    "radius": "6px",
+    "shadow": null,
+    "bgImage": null,
+    "size": "13px",
+    "weight": "500"
+   },
+   {
+    "text": "Support",
+    "h": 40,
+    "kind": "filled",
+    "bg": "rgb(33, 33, 38)",
+    "color": "rgb(0, 0, 0)",
+    "border": null,
+    "radius": "3.35544e+07px",
+    "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklab(0 0 0 / 0.075) 0px 0px 0px 6px, oklab(0.999994 0.0000455678 0.0000200868 / 0.075) 0px 1px 0p",
+    "bgImage": null,
+    "size": "16px",
+    "weight": "400"
+   }
+  ],
+  "nav": {
+   "h": 42,
+   "bg": "rgba(0, 0, 0, 0)",
+   "backdrop": "none",
+   "bb": "0px solid rgb(217, 217, 222)",
+   "shadow": null,
+   "linkColor": "rgb(0, 0, 0)"
+  },
+  "effects": {
+   "radial": 23,
+   "conic": 0,
+   "linear": 77,
+   "urlbg": 12,
+   "blurEls": 14,
+   "backdropEls": 18,
+   "mixBlend": 14,
+   "maskEls": 87,
+   "gradEx": [
+    "radial-gradient(79.87% 92.91% at 81.25% 12.5%, rgb(255, 255, 255) 0%, rgb(25, 25, 27) 100%)",
+    "radial-gradient(79.87% 92.91% at 81.25% 12.5%, rgb(255, 255, 255) 0%, rgb(25, 25, 27) 100%)",
+    "radial-gradient(79.87% 92.91% at 81.25% 12.5%, rgb(255, 255, 255) 0%, rgb(25, 25, 27) 100%)",
+    "radial-gradient(50% 100% at 50% 0%, color(srgb 0 0 0 / 0), color(srgb 0.129412 0.129412 0.14902 / 0.68) 61.5%, rgb(33, 33, 38))",
+    "radial-gradient(97.14% 100% at 50% 0%, rgba(33, 33, 38, 0) 42.04%, rgb(33, 33, 38) 89.82%)",
+    "radial-gradient(circle at 50% 22px, rgba(33, 33, 38, 0), rgb(33, 33, 38))"
+   ],
+   "canvas": 1,
+   "video": 0,
+   "svg": 263,
+   "img": 151
+  },
+  "noise": false,
+  "gradientHeadings": 0,
+  "accents": [
+   {
+    "hex": "#16a332",
+    "n": 6,
+    "L": 0.624,
+    "C": 0.189,
+    "H": 145
+   },
+   {
+    "hex": "#6c47ff",
+    "n": 4,
+    "L": 0.557,
+    "C": 0.254,
+    "H": 284
+   },
+   {
+    "hex": "#5de3ff",
+    "n": 3,
+    "L": 0.853,
+    "C": 0.122,
+    "H": 214
+   },
+   {
+    "hex": "#ef4444",
+    "n": 2,
+    "L": 0.637,
+    "C": 0.208,
+    "H": 25
+   },
+   {
+    "hex": "#9785ff",
+    "n": 2,
+    "L": 0.688,
+    "C": 0.174,
+    "H": 288
+   },
+   {
+    "hex": "#15802a",
+    "n": 1,
+    "L": 0.525,
+    "C": 0.154,
+    "H": 146
+   }
+  ]
+ },
+ "full": {
+  "title": "Clerk | Authentication and User Management",
+  "vw": 1440,
+  "pageHeight": 7187,
+  "colorScheme": {
+   "html": "normal",
+   "body": "normal",
+   "metaTheme": null,
+   "htmlClass": "suisse_c1aba7e9-module__WpjB7a__variable soehnemono_a1bc168a-module__FMl8Nq__variable geistnumbers_bd8c890c-module__bH8f",
+   "dataTheme": null
+  },
+  "pageBg": "#f7f7f8",
+  "pageBgOklabL": 0.976,
+  "pageBgOklabC": 0.001,
+  "pageBgOklabH": 286,
+  "cssVarCount": 473,
+  "cssVars": [
+   [
+    ":root, :host --color-red-50",
+    "#fef2f2"
+   ],
+   [
+    ":root, :host --color-red-100",
+    "#fef2f2"
+   ],
+   [
+    ":root, :host --color-red-200",
+    "#fecaca"
+   ],
+   [
+    ":root, :host --color-red-300",
+    "#fca5a5"
+   ],
+   [
+    ":root, :host --color-red-400",
+    "#f87171"
+   ],
+   [
+    ":root, :host --color-red-500",
+    "#ef4444"
+   ],
+   [
+    ":root, :host --color-red-600",
+    "#dc2626"
+   ],
+   [
+    ":root, :host --color-red-700",
+    "#b91c1c"
+   ],
+   [
+    ":root, :host --color-red-800",
+    "#991b1b"
+   ],
+   [
+    ":root, :host --color-red-900",
+    "#7f1d1d"
+   ],
+   [
+    ":root, :host --color-red-950",
+    "#450a0a"
+   ],
+   [
+    ":root, :host --color-orange-50",
+    "#fff6ed"
+   ],
+   [
+    ":root, :host --color-orange-100",
+    "#ffebd5"
+   ],
+   [
+    ":root, :host --color-orange-200",
+    "#fed1aa"
+   ],
+   [
+    ":root, :host --color-orange-300",
+    "#fdb674"
+   ],
+   [
+    ":root, :host --color-orange-400",
+    "#f98c49"
+   ],
+   [
+    ":root, :host --color-orange-500",
+    "#f36b16"
+   ],
+   [
+    ":root, :host --color-orange-600",
+    "#ea520c"
+   ],
+   [
+    ":root, :host --color-orange-700",
+    "#c23a0c"
+   ],
+   [
+    ":root, :host --color-orange-800",
+    "#9a2f12"
+   ],
+   [
+    ":root, :host --color-orange-900",
+    "#7c2912"
+   ],
+   [
+    ":root, :host --color-orange-950",
+    "#431207"
+   ],
+   [
+    ":root, :host --color-amber-50",
+    "lab(98.6252% -.635922 8.42309)"
+   ],
+   [
+    ":root, :host --color-amber-200",
+    "lab(91.7203% -.505269 49.9084)"
+   ],
+   [
+    ":root, :host --color-amber-300",
+    "lab(86.4156% 6.13147 78.3961)"
+   ],
+   [
+    ":root, :host --color-amber-500",
+    "lab(72.7183% 31.8672 97.9407)"
+   ],
+   [
+    ":root, :host --color-amber-900",
+    "lab(31.2288% 30.2627 40.0378)"
+   ],
+   [
+    ":root, :host --color-amber-950",
+    "lab(15.8111% 20.9107 23.3752)"
+   ],
+   [
+    ":root, :host --color-yellow-50",
+    "#fefce8"
+   ],
+   [
+    ":root, :host --color-yellow-100",
+    "#fef9c3"
+   ],
+   [
+    ":root, :host --color-yellow-200",
+    "#fef18a"
+   ],
+   [
+    ":root, :host --color-yellow-300",
+    "#fde047"
+   ],
+   [
+    ":root, :host --color-yellow-400",
+    "#efd420"
+   ],
+   [
+    ":root, :host --color-yellow-500",
+    "#eab308"
+   ],
+   [
+    ":root, :host --color-yellow-600",
+    "#ca8a04"
+   ],
+   [
+    ":root, :host --color-yellow-700",
+    "#a16207"
+   ],
+   [
+    ":root, :host --color-yellow-800",
+    "#854d0e"
+   ],
+   [
+    ":root, :host --color-yellow-900",
+    "#713f12"
+   ],
+   [
+    ":root, :host --color-yellow-950",
+    "#422006"
+   ],
+   [
+    ":root, :host --color-green-50",
+    "#f0fdf2"
+   ],
+   [
+    ":root, :host --color-green-100",
+    "#dcfce2"
+   ],
+   [
+    ":root, :host --color-green-200",
+    "#bbf7c6"
+   ],
+   [
+    ":root, :host --color-green-300",
+    "#86ef9b"
+   ],
+   [
+    ":root, :host --color-green-400",
+    "#4ade68"
+   ],
+   [
+    ":root, :host --color-green-500",
+    "#22c543"
+   ],
+   [
+    ":root, :host --color-green-600",
+    "#16a332"
+   ],
+   [
+    ":root, :host --color-green-700",
+    "#15802a"
+   ],
+   [
+    ":root, :host --color-green-800",
+    "#166527"
+   ],
+   [
+    ":root, :host --color-green-900",
+    "#145323"
+   ],
+   [
+    ":root, :host --color-green-950",
+    "#052e0f"
+   ],
+   [
+    ":root, :host --color-emerald-300",
+    "lab(83.9203% -48.7124 13.8849)"
+   ],
+   [
+    ":root, :host --color-emerald-400",
+    "lab(75.0771% -60.7313 19.4147)"
+   ],
+   [
+    ":root, :host --color-emerald-500",
+    "lab(66.9756% -58.27 19.5419)"
+   ],
+   [
+    ":root, :host --color-emerald-950",
+    "lab(15.0582% -17.9507 2.38369)"
+   ],
+   [
+    ":root, :host --color-sky-50",
+    "#ebfdff"
+   ],
+   [
+    ":root, :host --color-sky-100",
+    "#ccf9ff"
+   ],
+   [
+    ":root, :host --color-sky-200",
+    "#9ff1ff"
+   ],
+   [
+    ":root, :host --color-sky-300",
+    "#5de3ff"
+   ],
+   [
+    ":root, :host --color-sky-400",
+    "#3ad4fd"
+   ],
+   [
+    ":root, :host --color-sky-500",
+    "#00aee3"
+   ],
+   [
+    ":root, :host --color-sky-600",
+    "#0089be"
+   ],
+   [
+    ":root, :host --color-sky-700",
+    "#056d99"
+   ],
+   [
+    ":root, :host --color-sky-800",
+    "#0e597c"
+   ],
+   [
+    ":root, :host --color-sky-900",
+    "#104a69"
+   ],
+   [
+    ":root, :host --color-sky-950",
+    "#043048"
+   ],
+   [
+    ":root, :host --color-blue-50",
+    "#eff6ff"
+   ],
+   [
+    ":root, :host --color-blue-100",
+    "#dbeafe"
+   ],
+   [
+    ":root, :host --color-blue-200",
+    "#bfdbfe"
+   ],
+   [
+    ":root, :host --color-blue-300",
+    "#93c5fd"
+   ],
+   [
+    ":root, :host --color-blue-400",
+    "#60a5fa"
+   ],
+   [
+    ":root, :host --color-blue-500",
+    "#3b82f6"
+   ],
+   [
+    ":root, :host --color-blue-600",
+    "#2563eb"
+   ],
+   [
+    ":root, :host --color-blue-700",
+    "#1d4ed8"
+   ],
+   [
+    ":root, :host --color-blue-800",
+    "#1e40af"
+   ],
+   [
+    ":root, :host --color-blue-900",
+    "#1e3a8a"
+   ],
+   [
+    ":root, :host --color-blue-950",
+    "#0e1a3a"
+   ],
+   [
+    ":root, :host --color-indigo-500",
+    "lab(48.295% 38.3129 -81.9673)"
+   ],
+   [
+    ":root, :host --color-indigo-600",
+    "lab(38.4009% 52.6132 -92.3857)"
+   ],
+   [
+    ":root, :host --color-indigo-700",
+    "lab(32.4486% 49.2217 -84.6695)"
+   ],
+   [
+    ":root, :host --color-violet-400",
+    "lab(62.8239% 34.9159 -60.0512)"
+   ],
+   [
+    ":root, :host --color-purple-50",
+    "#f4f2ff"
+   ],
+   [
+    ":root, :host --color-purple-100",
+    "#eae8ff"
+   ],
+   [
+    ":root, :host --color-purple-200",
+    "#d7d4ff"
+   ],
+   [
+    ":root, :host --color-purple-300",
+    "#bab1ff"
+   ],
+   [
+    ":root, :host --color-purple-400",
+    "#9785ff"
+   ],
+   [
+    ":root, :host --color-purple-500",
+    "#6c47ff"
+   ],
+   [
+    ":root, :host --color-purple-600",
+    "#6430f7"
+   ],
+   [
+    ":root, :host --color-purple-700",
+    "#561ee3"
+   ],
+   [
+    ":root, :host --color-purple-800",
+    "#4818bf"
+   ],
+   [
+    ":root, :host --color-purple-900",
+    "#3c169c"
+   ],
+   [
+    ":root, :host --color-purple-950",
+    "#230b6a"
+   ],
+   [
+    ":root, :host --color-pink-50",
+    "lab(96.4459% 4.53997 -1.49434)"
+   ],
+   [
+    ":root, :host --color-pink-500",
+    "lab(56.9303% 76.8162 -8.07021)"
+   ],
+   [
+    ":root, :host --color-rose-400",
+    "lab(64.4125% 63.0291 19.2068)"
+   ],
+   [
+    ":root, :host --color-slate-50",
+    "lab(98.1434% -.369519 -1.05966)"
+   ],
+   [
+    ":root, :host --color-slate-100",
+    "lab(96.286% -.852436 -2.46847)"
+   ],
+   [
+    ":root, :host --color-slate-200",
+    "lab(91.7353% -.998765 -4.76968)"
+   ],
+   [
+    ":root, :host --color-slate-400",
+    "lab(65.5349% -2.25151 -14.5072)"
+   ],
+   [
+    ":root, :host --color-slate-500",
+    "lab(48.0876% -2.03595 -16.5814)"
+   ],
+   [
+    ":root, :host --color-gray-50",
+    "#f7f7f8"
+   ],
+   [
+    ":root, :host --color-gray-100",
+    "#eeeef0"
+   ],
+   [
+    ":root, :host --color-gray-200",
+    "#d9d9de"
+   ],
+   [
+    ":root, :host --color-gray-300",
+    "#b7b8c2"
+   ],
+   [
+    ":root, :host --color-gray-400",
+    "#9394a1"
+   ],
+   [
+    ":root, :host --color-gray-500",
+    "#747686"
+   ],
+   [
+    ":root, :host --color-gray-600",
+    "#5e5f6e"
+   ],
+   [
+    ":root, :host --color-gray-700",
+    "#42434d"
+   ],
+   [
+    ":root, :host --color-gray-800",
+    "#2f3037"
+   ],
+   [
+    ":root, :host --color-gray-900",
+    "#212126"
+   ],
+   [
+    ":root, :host --color-gray-950",
+    "#131316"
+   ],
+   [
+    ":root, :host --color-zinc-100",
+    "lab(96.1634% .0993311 -.364041)"
+   ],
+   [
+    ":root, :host --color-zinc-300",
+    "lab(84.9837% .601262 -2.17986)"
+   ],
+   [
+    ":root, :host --color-zinc-400",
+    "lab(65.6464% 1.53497 -5.42429)"
+   ],
+   [
+    ":root, :host --color-zinc-500",
+    "lab(47.8878% 1.65477 -5.77283)"
+   ],
+   [
+    ":root, :host --color-zinc-600",
+    "lab(35.1166% 1.78212 -6.1173)"
+   ],
+   [
+    ":root, :host --color-zinc-700",
+    "lab(26.8019% 1.35387 -4.68303)"
+   ],
+   [
+    ":root, :host --color-zinc-800",
+    "lab(15.7305% .613764 -2.16959)"
+   ],
+   [
+    ":root, :host --color-zinc-950",
+    "lab(2.51107% .242703 -.886115)"
+   ],
+   [
+    ":root, :host --color-neutral-50",
+    "lab(98.26% 0 0)"
+   ],
+   [
+    ":root, :host --color-neutral-100",
+    "lab(96.52% -.0000298023 .0000119209)"
+   ]
+  ],
+  "surfaces": [
+   {
+    "hex": "#f7f7f8",
+    "L": 0.976,
+    "C": 0.001,
+    "H": 286,
+    "n": 51,
+    "area": 9976414,
+    "ex": [
+     "div.isolate",
+     "div.pointer-events-none"
+    ]
+   },
+   {
+    "hex": "#ffffff",
+    "L": 1,
+    "C": 0,
+    "H": 90,
+    "n": 67,
+    "area": 9372057,
+    "ex": [
+     "div.relative",
+     "section.relative"
+    ]
+   },
+   {
+    "hex": "#131316",
+    "L": 0.188,
+    "C": 0.006,
+    "H": 286,
+    "n": 19,
+    "area": 4466290,
+    "ex": [
+     "a.group",
+     "span.relative"
+    ]
+   },
+   {
+    "hex": "#212126",
+    "L": 0.25,
+    "C": 0.009,
+    "H": 286,
+    "n": 16,
+    "area": 1777919,
+    "ex": [
+     "div.group",
+     "div.group"
+    ]
+   },
+   {
+    "hex": "#f7f7f7",
+    "L": 0.976,
+    "C": 0,
+    "H": 90,
+    "n": 1,
+    "area": 340656,
+    "ex": [
+     "div.font-mosaic"
+    ]
+   },
+   {
+    "hex": "#fafafb",
+    "L": 0.985,
+    "C": 0.001,
+    "H": 286,
+    "n": 3,
+    "area": 339955,
+    "ex": [
+     "div.bg-gray-25",
+     "div.bg-gray-25"
+    ]
+   },
+   {
+    "hex": "#2f3037",
+    "L": 0.311,
+    "C": 0.013,
+    "H": 279,
+    "n": 18,
+    "area": 173654,
+    "ex": [
+     "div.relative",
+     "div.relative"
+    ]
+   },
+   {
+    "hex": "#25252a",
+    "L": 0.267,
+    "C": 0.009,
+    "H": 286,
+    "n": 1,
+    "area": 102400,
+    "ex": [
+     "div.absolute"
+    ]
+   },
+   {
+    "hex": "#29292e",
+    "L": 0.283,
+    "C": 0.009,
+    "H": 286,
+    "n": 1,
+    "area": 65536,
+    "ex": [
+     "div.absolute"
+    ]
+   },
+   {
+    "hex": "#f8f8f8",
+    "L": 0.979,
+    "C": 0,
+    "H": 90,
+    "n": 1,
+    "area": 51576,
+    "ex": [
+     "div.transition-[color,background-color,b"
+    ]
+   },
+   {
+    "hex": "#2d2d32",
+    "L": 0.299,
+    "C": 0.009,
+    "H": 286,
+    "n": 1,
+    "area": 36864,
+    "ex": [
+     "div.absolute"
+    ]
+   },
+   {
+    "hex": "#eeeef0",
+    "L": 0.95,
+    "C": 0.003,
+    "H": 286,
+    "n": 4,
+    "area": 22954,
+    "ex": [
+     "span.absolute",
+     "div.flex"
+    ]
+   },
+   {
+    "hex": "#313136",
+    "L": 0.315,
+    "C": 0.009,
+    "H": 286,
+    "n": 1,
+    "area": 16384,
+    "ex": [
+     "div.absolute"
+    ]
+   },
+   {
+    "hex": "#f6f6f7",
+    "L": 0.973,
+    "C": 0.001,
+    "H": 286,
+    "n": 1,
+    "area": 11840,
+    "ex": [
+     "div.flex"
+    ]
+   }
+  ],
+  "overlays": [
+   {
+    "bg": "oklab(0.976413 0.000417292 -0.00124955 / 0.8) => #f9f9f9",
+    "n": 3,
+    "area": 241119
+   },
+   {
+    "bg": "oklab(0.985377 0.000417113 -0.00124651 / 0.5) => #fdfdfd",
+    "n": 1,
+    "area": 92112
+   },
+   {
+    "bg": "oklab(0.56965 0.00427368 -0.0242401 / 0.05) => #25252b",
+    "n": 1,
+    "area": 64512
+   },
+   {
+    "bg": "oklab(0.188081 0.0016512 -0.00579907 / 0.5) => #212227",
+    "n": 1,
+    "area": 48404
+   },
+   {
+    "bg": "rgba(19, 19, 22, 0.5) => #1a1a1e",
+    "n": 1,
+    "area": 30997
+   },
+   {
+    "bg": "oklab(0.310988 0.00201792 -0.012381 / 0.075) => #efeff0",
+    "n": 1,
+    "area": 7360
+   },
+   {
+    "bg": "oklab(0.310988 0.00201792 -0.012381 / 0.025) => #fafafa",
+    "n": 1,
+    "area": 7360
+   },
+   {
+    "bg": "oklab(0.188081 0.0016512 -0.00579907 / 0.05) => #ececed",
+    "n": 1,
+    "area": 5971
+   },
+   {
+    "bg": "oklab(0.188081 0.0016512 -0.00579907 / 0.6) => #19191c",
+    "n": 1,
+    "area": 5184
+   }
+  ],
+  "borders": [
+   {
+    "border": "oklab(0 0 0 / 0.2) @1px",
+    "n": 40,
+    "alpha": 0.2,
+    "flatOnPage": "#c6c6c6",
+    "L": 0.826
+   },
+   {
+    "border": "rgb(47, 48, 55) @1px",
+    "n": 36,
+    "alpha": 1,
+    "flatOnPage": "#2f3037",
+    "L": 0.311
+   },
+   {
+    "border": "rgb(236, 236, 238) @1px",
+    "n": 29,
+    "alpha": 1,
+    "flatOnPage": "#ececee",
+    "L": 0.944
+   },
+   {
+    "border": "rgba(0, 0, 0, 0.06) @1px",
+    "n": 24,
+    "alpha": 0.06,
+    "flatOnPage": "#e8e8e9",
+    "L": 0.932
+   },
+   {
+    "border": "oklab(0.188081 0.0016512 -0.00579907 / 0.05) @1px",
+    "n": 21,
+    "alpha": 0.05,
+    "flatOnPage": "#ececed",
+    "L": 0.942
+   },
+   {
+    "border": "rgb(217, 217, 222) @1px",
+    "n": 16,
+    "alpha": 1,
+    "flatOnPage": "#d9d9de",
+    "L": 0.887
+   },
+   {
+    "border": "rgb(147, 148, 161) @1px",
+    "n": 16,
+    "alpha": 1,
+    "flatOnPage": "#9394a1",
+    "L": 0.67
+   },
+   {
+    "border": "oklab(0.188081 0.0016512 -0.00579907 / 0.075) @1px",
+    "n": 16,
+    "alpha": 0.075,
+    "flatOnPage": "#e6e6e7",
+    "L": 0.925
+   },
+   {
+    "border": "rgb(238, 238, 240) @1px",
+    "n": 12,
+    "alpha": 1,
+    "flatOnPage": "#eeeef0",
+    "L": 0.95
+   },
+   {
+    "border": "rgb(255, 255, 255) @2px",
+    "n": 12,
+    "alpha": 1,
+    "flatOnPage": "#ffffff",
+    "L": 1
+   },
+   {
+    "border": "rgba(19, 19, 22, 0) @1px",
+    "n": 8,
+    "alpha": 0,
+    "flatOnPage": "#f7f7f8",
+    "L": 0.976
+   },
+   {
+    "border": "rgb(94, 95, 110) @1px",
+    "n": 8,
+    "alpha": 1,
+    "flatOnPage": "#5e5f6e",
+    "L": 0.49
+   }
+  ],
+  "radii": [
+   [
+    "3.35544e+07px",
+    171
+   ],
+   [
+    "6px",
+    97
+   ],
+   [
+    "8px",
+    50
+   ],
+   [
+    "4px",
+    46
+   ],
+   [
+    "12px",
+    36
+   ],
+   [
+    "16px",
+    17
+   ],
+   [
+    "50%",
+    13
+   ],
+   [
+    "3.37079% 21.4286%",
+    9
+   ]
+  ],
+  "shadows": [
+   {
+    "shadow": "rgba(19, 19, 22, 0.024) 0px 0px 0px 1px, rgba(19, 19, 22, 0.024) 0px 1px 1px -0.5px, rgba(19, 19, 22, 0.024) 0px 3px 3px -1.5px, rgba(19, 19, 22, 0.024) 0px 6px 6px -3px, rgba(19, 19, 22, 0.024) 0px 12px 12px -6px, rgba(19, 19, 22, 0.024) 0px 24px 24px -12px",
+    "n": 60
+   },
+   {
+    "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.1) 0px 1px 2px -1px",
+    "n": 18
+   },
+   {
+    "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklab(0.999994 0.0000455678 0.0000200868 / 0.05) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+    "n": 18
+   },
+   {
+    "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, lab(84.5189 -31.4667 -23.9754 / 0.08) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+    "n": 18
+   },
+   {
+    "shadow": "rgb(217, 217, 222) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px, rgba(0, 0, 0, 0.08) 0px 0px 2px 0px",
+    "n": 16
+   },
+   {
+    "shadow": "rgba(19, 19, 22, 0.05) 0px 0px 0px 1px, rgba(19, 19, 22, 0.05) 0px 1px 1px -0.5px, rgba(19, 19, 22, 0.05) 0px 3px 3px -1.5px, rgba(19, 19, 22, 0.05) 0px 6px 6px -3px, rgba(19, 19, 22, 0.05) 0px 12px 12px -6px, rgba(19, 19, 22, 0.05) 0px 24px 24px -12px",
+    "n": 15
+   },
+   {
+    "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklab(0.249859 0.00254738 -0.00901626 / 0.1) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+    "n": 15
+   },
+   {
+    "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.06) 0px 2px 10px -4px, rgba(0, 0, 0, 0.06) 0px 8px 12px -4px, rgba(255",
+    "n": 12
+   },
+   {
+    "shadow": "rgba(0, 0, 0, 0.24) 0px 1px 1px 0px, rgba(0, 0, 0, 0.2) 0px 2px 3px 0px, rgba(255, 255, 255, 0.07) 0px 1px 1px 0px inset, rgb(47, 48, 55) 0px 0px 0px 1px",
+    "n": 11
+   },
+   {
+    "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklab(0.999994 0.0000455678 0.0000200868 / 0.025) 0px 1px 0px 0px inset, oklab(0.999994 0.0000455678 0.0000200868 / 0.025) 0",
+    "n": 11
+   }
+  ],
+  "nShadowEls": 387,
+  "textColors": [
+   {
+    "color": "rgb(19, 19, 22)",
+    "chars": 5216,
+    "n": 182,
+    "fg": "#131316",
+    "alpha": 1,
+    "contrast": 17.45,
+    "L": 0.188,
+    "bg": "#f8f8f8",
+    "size": "13px",
+    "weight": "500",
+    "ex": "Products"
+   },
+   {
+    "color": "rgb(147, 148, 161)",
+    "chars": 1650,
+    "n": 27,
+    "fg": "#9394a1",
+    "alpha": 1,
+    "contrast": 3,
+    "L": 0.67,
+    "bg": "#ffffff",
+    "size": "13px",
+    "weight": "400",
+    "ex": "❯"
+   },
+   {
+    "color": "rgb(116, 118, 134)",
+    "chars": 1580,
+    "n": 85,
+    "fg": "#747686",
+    "alpha": 1,
+    "contrast": 4.19,
+    "L": 0.57,
+    "bg": "#f7f7f8",
+    "size": "11px",
+    "weight": "400",
+    "ex": "Manage your account info."
+   },
+   {
+    "color": "rgb(94, 95, 110)",
+    "chars": 1451,
+    "n": 51,
+    "fg": "#5e5f6e",
+    "alpha": 1,
+    "contrast": 6.29,
+    "L": 0.49,
+    "bg": "#ffffff",
+    "size": "18px",
+    "weight": "400",
+    "ex": "More than APIs. The complete"
+   },
+   {
+    "color": "rgb(55, 55, 60)",
+    "chars": 1200,
+    "n": 2,
+    "fg": "#37373c",
+    "alpha": 1,
+    "contrast": 1.35,
+    "L": 0.339,
+    "bg": "#212126",
+    "size": "10px",
+    "weight": "400",
+    "ex": "hUa1i2odeuaKQAsd7HfhWuMiiNZE"
+   },
+   {
+    "color": "rgb(255, 255, 255)",
+    "chars": 592,
+    "n": 38,
+    "fg": "#ffffff",
+    "alpha": 1,
+    "contrast": 9.81,
+    "L": 1,
+    "bg": "#42434d",
+    "size": "13px",
+    "weight": "500",
+    "ex": "Skip to main content"
+   },
+   {
+    "color": "rgb(0, 0, 0)",
+    "chars": 583,
+    "n": 45,
+    "fg": "#000000",
+    "alpha": 1,
+    "contrast": 21,
+    "L": 0,
+    "bg": "#ffffff",
+    "size": "16px",
+    "weight": "400",
+    "ex": "Add Clerk auth to my app: cl"
+   },
+   {
+    "color": "rgb(95, 95, 111)",
+    "chars": 346,
+    "n": 30,
+    "fg": "#5f5f6f",
+    "alpha": 1,
+    "contrast": 6.26,
+    "L": 0.491,
+    "bg": "#ffffff",
+    "size": "14px",
+    "weight": "400",
+    "ex": "Role sets"
+   },
+   {
+    "color": "rgb(33, 33, 38)",
+    "chars": 291,
+    "n": 16,
+    "fg": "#212126",
+    "alpha": 1,
+    "contrast": 16.03,
+    "L": 0.25,
+    "bg": "#ffffff",
+    "size": "11px",
+    "weight": "400",
+    "ex": "Visa ⋯ 4242"
+   },
+   {
+    "color": "rgb(43, 43, 52)",
+    "chars": 117,
+    "n": 9,
+    "fg": "#2b2b34",
+    "alpha": 1,
+    "contrast": 14.02,
+    "L": 0.293,
+    "bg": "#ffffff",
+    "size": "24px",
+    "weight": "500",
+    "ex": "Roles & Permissions"
+   },
+   {
+    "color": "rgb(183, 184, 194)",
+    "chars": 113,
+    "n": 16,
+    "fg": "#b7b8c2",
+    "alpha": 1,
+    "contrast": 8.09,
+    "L": 0.785,
+    "bg": "#212227",
+    "size": "10px",
+    "weight": "500",
+    "ex": "Phone"
+   },
+   {
+    "color": "rgb(66, 67, 77)",
+    "chars": 86,
+    "n": 5,
+    "fg": "#42434d",
+    "alpha": 1,
+    "contrast": 9.81,
+    "L": 0.386,
+    "bg": "#ffffff",
+    "size": "13px",
+    "weight": "500",
+    "ex": "Upload"
+   }
+  ],
+  "h1": {
+   "text": "Everything you need for authentication",
+   "family": "geistNumbers, suisse, \"suisse Fallback\"",
+   "size": "56px",
+   "weight": "700",
+   "lh": "64px",
+   "ls": "-1.96px",
+   "color": "rgb(19, 19, 22)",
+   "smooth": "antialiased",
+   "bgClip": "border-box",
+   "bgImage": "none",
+   "textShadow": null
+  },
+  "body": {
+   "text": "Skip to main content\nProducts\nDocs\nChangelog\nCompany\nAI\nPric",
+   "family": "geistNumbers, suisse, \"suisse Fallback\"",
+   "size": "16px",
+   "weight": "400",
+   "lh": "24px",
+   "ls": "normal",
+   "color": "rgb(0, 0, 0)",
+   "smooth": "antialiased",
+   "bgClip": "border-box",
+   "bgImage": "none",
+   "textShadow": null
+  },
+  "bodySmoothing": "antialiased",
+  "textRendering": "auto",
+  "heroP": {
+   "text": "More than APIs. The complete user layer for modern apps.",
+   "family": "geistNumbers, suisse, \"suisse Fallback\"",
+   "size": "18px",
+   "weight": "400",
+   "lh": "27.9px",
+   "ls": "normal",
+   "color": "rgb(94, 95, 110)",
+   "smooth": "antialiased",
+   "bgClip": "border-box",
+   "bgImage": "none",
+   "textShadow": null
+  },
+  "ctas": [
+   {
+    "text": "Skip to main content",
+    "h": 30,
+    "kind": "filled",
+    "bg": "rgb(66, 67, 77)",
+    "color": "rgb(255, 255, 255)",
+    "border": null,
+    "radius": "6px",
+    "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(66, 67, 77) 0px 0px 0px 0.5px, oklab(0.999994 0.0000455678 0.0000200868 / 0.07) 0px 1px 0px 0p",
+    "bgImage": null,
+    "size": "13px",
+    "weight": "500"
+   },
+   {
+    "text": "Sign in",
+    "h": 26,
+    "kind": "outline",
+    "bg": "rgba(19, 19, 22, 0)",
+    "color": "rgb(19, 19, 22)",
+    "border": "1px rgba(19, 19, 22, 0)",
+    "radius": "6px",
+    "shadow": null,
+    "bgImage": null,
+    "size": "13px",
+    "weight": "500"
+   },
+   {
+    "text": "Sign up",
+    "h": 26,
+    "kind": "outline",
+    "bg": "rgba(19, 19, 22, 0)",
+    "color": "rgb(19, 19, 22)",
+    "border": "1px rgba(19, 19, 22, 0)",
+    "radius": "6px",
+    "shadow": null,
+    "bgImage": null,
+    "size": "13px",
+    "weight": "500"
+   },
+   {
+    "text": "Support",
+    "h": 40,
+    "kind": "filled",
+    "bg": "rgb(33, 33, 38)",
+    "color": "rgb(0, 0, 0)",
+    "border": null,
+    "radius": "3.35544e+07px",
+    "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklab(0 0 0 / 0.075) 0px 0px 0px 6px, oklab(0.999994 0.0000455678 0.0000200868 / 0.075) 0px 1px 0p",
+    "bgImage": null,
+    "size": "16px",
+    "weight": "400"
+   }
+  ],
+  "nav": {
+   "h": 42,
+   "bg": "rgba(0, 0, 0, 0)",
+   "backdrop": "none",
+   "bb": "0px solid rgb(217, 217, 222)",
+   "shadow": null,
+   "linkColor": "rgb(0, 0, 0)"
+  },
+  "effects": {
+   "radial": 23,
+   "conic": 0,
+   "linear": 78,
+   "urlbg": 12,
+   "blurEls": 15,
+   "backdropEls": 18,
+   "mixBlend": 14,
+   "maskEls": 87,
+   "gradEx": [
+    "radial-gradient(79.87% 92.91% at 81.25% 12.5%, rgb(255, 255, 255) 0%, rgb(25, 25, 27) 100%)",
+    "radial-gradient(79.87% 92.91% at 81.25% 12.5%, rgb(255, 255, 255) 0%, rgb(25, 25, 27) 100%)",
+    "radial-gradient(79.87% 92.91% at 81.25% 12.5%, rgb(255, 255, 255) 0%, rgb(25, 25, 27) 100%)",
+    "radial-gradient(50% 100% at 50% 0%, color(srgb 0 0 0 / 0), color(srgb 0.129412 0.129412 0.14902 / 0.68) 61.5%, rgb(33, 33, 38))",
+    "radial-gradient(97.14% 100% at 50% 0%, rgba(33, 33, 38, 0) 42.04%, rgb(33, 33, 38) 89.82%)",
+    "radial-gradient(circle at 50% 22px, rgba(33, 33, 38, 0), rgb(33, 33, 38))"
+   ],
+   "canvas": 1,
+   "video": 0,
+   "svg": 263,
+   "img": 151
+  },
+  "noise": false,
+  "gradientHeadings": 0,
+  "accents": [
+   {
+    "hex": "#16a332",
+    "n": 6,
+    "L": 0.624,
+    "C": 0.189,
+    "H": 145
+   },
+   {
+    "hex": "#6c47ff",
+    "n": 4,
+    "L": 0.557,
+    "C": 0.254,
+    "H": 284
+   },
+   {
+    "hex": "#5de3ff",
+    "n": 3,
+    "L": 0.853,
+    "C": 0.122,
+    "H": 214
+   },
+   {
+    "hex": "#ef4444",
+    "n": 2,
+    "L": 0.637,
+    "C": 0.208,
+    "H": 25
+   },
+   {
+    "hex": "#9785ff",
+    "n": 2,
+    "L": 0.688,
+    "C": 0.174,
+    "H": 288
+   },
+   {
+    "hex": "#15802a",
+    "n": 1,
+    "L": 0.525,
+    "C": 0.154,
+    "H": 146
+   }
+  ]
+ }
+}

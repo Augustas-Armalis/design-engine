@@ -1,0 +1,1967 @@
+{
+ "url": "https://github.com",
+ "scheme": "dark",
+ "pageHeight": 11198,
+ "fold": {
+  "title": "GitHub · Change is constant. GitHub keeps you ahead. · GitHub · GitHub",
+  "vw": 1440,
+  "pageHeight": 11198,
+  "colorScheme": {
+   "html": "dark",
+   "body": "dark",
+   "metaTheme": "#1e2327",
+   "htmlClass": "",
+   "dataTheme": "dark"
+  },
+  "pageBg": "#0d1117",
+  "pageBgOklabL": 0.176,
+  "pageBgOklabC": 0.014,
+  "pageBgOklabH": 258,
+  "cssVarCount": 1064,
+  "cssVars": [
+   [
+    ":root --motion-easing-linear",
+    "var(--base-easing-linear)"
+   ],
+   [
+    ":root --borderWidth-default",
+    "var(--borderWidth-thin)"
+   ],
+   [
+    ":root --boxShadow-thick",
+    "inset 0 0 0 var(--borderWidth-thick)"
+   ],
+   [
+    ":root --boxShadow-thicker",
+    "inset 0 0 0 var(--borderWidth-thicker)"
+   ],
+   [
+    ":root --boxShadow-thin",
+    "inset 0 0 0 var(--borderWidth-thin)"
+   ],
+   [
+    ":root --outline-focus-offset",
+    "var(--focus-outline-offset)"
+   ],
+   [
+    ":root --outline-focus-width",
+    "var(--focus-outline-width)"
+   ],
+   [
+    ":root --borderRadius-default",
+    "var(--borderRadius-medium)"
+   ],
+   [
+    ":root --text-body-lineHeight-large",
+    "var(--base-text-lineHeight-normal)"
+   ],
+   [
+    ":root --text-body-lineHeight-medium",
+    "var(--base-text-lineHeight-normal)"
+   ],
+   [
+    ":root --text-body-lineHeight-small",
+    "var(--base-text-lineHeight-relaxed)"
+   ],
+   [
+    ":root --text-body-size-large",
+    "var(--base-text-size-md)"
+   ],
+   [
+    ":root --text-body-size-medium",
+    "var(--base-text-size-sm)"
+   ],
+   [
+    ":root --text-body-size-small",
+    "var(--base-text-size-xs)"
+   ],
+   [
+    ":root --text-body-weight",
+    "var(--base-text-weight-normal)"
+   ],
+   [
+    ":root --text-caption-lineHeight",
+    "var(--base-text-lineHeight-tight)"
+   ],
+   [
+    ":root --text-caption-size",
+    "var(--base-text-size-xs)"
+   ],
+   [
+    ":root --text-caption-weight",
+    "var(--base-text-weight-normal)"
+   ],
+   [
+    ":root --text-codeBlock-lineHeight",
+    "var(--base-text-lineHeight-normal)"
+   ],
+   [
+    ":root --text-codeBlock-weight",
+    "var(--base-text-weight-normal)"
+   ],
+   [
+    ":root --text-codeInline-weight",
+    "var(--base-text-weight-normal)"
+   ],
+   [
+    ":root --text-display-lineHeight",
+    "var(--base-text-lineHeight-snug)"
+   ],
+   [
+    ":root --text-display-size",
+    "var(--base-text-size-2xl)"
+   ],
+   [
+    ":root --text-display-weight",
+    "var(--base-text-weight-medium)"
+   ],
+   [
+    ":root --text-subtitle-lineHeight",
+    "var(--base-text-lineHeight-relaxed)"
+   ],
+   [
+    ":root --text-subtitle-size",
+    "var(--base-text-size-lg)"
+   ],
+   [
+    ":root --text-subtitle-weight",
+    "var(--base-text-weight-normal)"
+   ],
+   [
+    ":root --text-title-lineHeight-large",
+    "var(--base-text-lineHeight-normal)"
+   ],
+   [
+    ":root --text-title-lineHeight-medium",
+    "var(--base-text-lineHeight-relaxed)"
+   ],
+   [
+    ":root --text-title-lineHeight-small",
+    "var(--base-text-lineHeight-normal)"
+   ],
+   [
+    ":root --text-title-size-large",
+    "var(--base-text-size-xl)"
+   ],
+   [
+    ":root --text-title-size-medium",
+    "var(--base-text-size-lg)"
+   ],
+   [
+    ":root --text-title-size-small",
+    "var(--base-text-size-md)"
+   ],
+   [
+    ":root --text-title-weight-large",
+    "var(--base-text-weight-semibold)"
+   ],
+   [
+    ":root --text-title-weight-medium",
+    "var(--base-text-weight-semibold)"
+   ],
+   [
+    ":root --text-title-weight-small",
+    "var(--base-text-weight-semibold)"
+   ],
+   [
+    ":root --text-body-shorthand-large",
+    "var(--text-body-weight) var(--text-body-size-large) / var(--text-body-lineHeight"
+   ],
+   [
+    ":root --text-body-shorthand-medium",
+    "var(--text-body-weight) var(--text-body-size-medium) / var(--text-body-lineHeigh"
+   ],
+   [
+    ":root --text-body-shorthand-small",
+    "var(--text-body-weight) var(--text-body-size-small) / var(--text-body-lineHeight"
+   ],
+   [
+    ":root --text-caption-shorthand",
+    "var(--text-caption-weight) var(--text-caption-size) / var(--text-caption-lineHei"
+   ],
+   [
+    ":root --text-codeBlock-shorthand",
+    "var(--text-codeBlock-weight) var(--text-codeBlock-size) / var(--text-codeBlock-l"
+   ],
+   [
+    ":root --text-codeInline-shorthand",
+    "var(--text-codeInline-weight) var(--text-codeInline-size) var(--fontStack-monosp"
+   ],
+   [
+    ":root --text-display-shorthand",
+    "var(--text-display-weight) var(--text-display-size) / var(--text-display-lineHei"
+   ],
+   [
+    ":root --text-subtitle-shorthand",
+    "var(--text-subtitle-weight) var(--text-subtitle-size) / var(--text-subtitle-line"
+   ],
+   [
+    ":root --text-title-shorthand-large",
+    "var(--text-title-weight-large) var(--text-title-size-large) / var(--text-title-l"
+   ],
+   [
+    ":root --text-title-shorthand-medium",
+    "var(--text-title-weight-medium) var(--text-title-size-medium) / var(--text-title"
+   ],
+   [
+    ":root --text-title-shorthand-small",
+    "var(--text-title-weight-small) var(--text-title-size-small) / var(--text-title-l"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"][data-li --color-workflow-card-bg",
+    "var(--bgColor-default)"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"][data-li --color-workflow-card-header-shadow",
+    "#0000"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"][data-li --color-bg-discussions-row-emoji-box",
+    "#d1d5da80"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"][data-li --color-notifications-row-read-bg",
+    "var(--bgColor-muted)"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"][data-li --color-notifications-row-bg",
+    "var(--bgColor-white)"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"][data-li --color-user-mention-fg",
+    "var(--fgColor-default)"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"][data-li --color-mktg-btn-shadow-outline",
+    "#00000026 0 0 0 1px inset"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"][data-li --color-marketing-icon-primary",
+    "#218bff"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"][data-li --color-marketing-icon-secondary",
+    "#54aeff"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"][data-li --color-project-header-bg",
+    "#24292f"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"][data-li --color-project-sidebar-bg",
+    "var(--bgColor-white)"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"][data-li --color-project-gradient-in",
+    "var(--bgColor-white)"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"][data-li --color-project-gradient-out",
+    "#fff0"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"][data-li --color-text-white",
+    "var(--fgColor-white)"
+   ],
+   [
+    ":root .hx_IssueLabel, [data-color-mode=\" --border-alpha",
+    "max(0, min(calc((var(--perceived-lightness) - var(--border-threshold)) * 100), 1"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"] --brand-color-success-fg",
+    "var(--base-color-scale-green-6)"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"] --brand-color-success-emphasis",
+    "var(--base-color-scale-green-5)"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"] --brand-color-success-muted",
+    "#8cf2a699"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"] --brand-color-success-subtle",
+    "var(--base-color-scale-green-1)"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"] --brand-color-danger-fg",
+    "var(--base-color-scale-red-5)"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"] --brand-color-danger-emphasis",
+    "var(--base-color-scale-red-5)"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"] --brand-color-danger-muted",
+    "#ffaba899"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"] --brand-color-danger-subtle",
+    "var(--base-color-scale-red-0)"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"] --brand-color-error-fg",
+    "var(--brand-color-danger-fg)"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"] --brand-color-error-emphasis",
+    "var(--brand-color-danger-emphasis)"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"] --brand-color-error-muted",
+    "var(--brand-color-danger-muted)"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"] --brand-color-error-subtle",
+    "var(--brand-color-danger-subtle)"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"] --brand-color-accent-primary",
+    "var(--base-color-scale-green-7)"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"] --brand-color-accent-secondary",
+    "var(--base-color-scale-yellow-5)"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"] --brand-color-text-default",
+    "var(--base-color-scale-black-0)"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"] --brand-color-text-muted",
+    "var(--base-color-scale-gray-7)"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"] --brand-color-text-subtle",
+    "var(--brand-color-text-muted)"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"] --brand-color-text-onEmphasis",
+    "var(--base-color-scale-white-0)"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"] --brand-color-text-emphasized",
+    "var(--base-color-scale-green-6)"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"] --brand-color-text-link-rest",
+    "var(--base-color-scale-blue-6)"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"] --brand-color-text-link-pressed",
+    "var(--base-color-scale-blue-8)"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"] --brand-color-text-danger",
+    "#cf222e"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"] --brand-color-text-error",
+    "var(--brand-color-text-danger)"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"] --brand-color-neutral-emphasisPlus",
+    "var(--base-color-scale-gray-8)"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"] --brand-color-neutral-emphasis",
+    "var(--base-color-scale-gray-6)"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"] --brand-color-neutral-muted",
+    "#c4ccc6fe"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"] --brand-color-neutral-subtle",
+    "#e4ebe6fe"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"] --brand-color-canvas-default",
+    "var(--base-color-scale-white-0)"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"] --brand-color-canvas-invert",
+    "var(--base-color-scale-black-0)"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"] --brand-color-canvas-overlay",
+    "var(--base-color-scale-white-0)"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"] --brand-color-canvas-inset",
+    "var(--base-color-scale-gray-0)"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"] --brand-color-canvas-subtle",
+    "var(--base-color-scale-gray-0)"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"] --brand-color-canvas-muted",
+    "#f9fbf9"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"] --brand-color-border-default",
+    "var(--base-color-scale-gray-4)"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"] --brand-color-border-muted",
+    "var(--base-color-scale-gray-1)"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"] --brand-color-border-subtle",
+    "var(--base-color-scale-gray-2)"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"] --brand-color-focus",
+    "var(--base-color-scale-blue-5)"
+   ],
+   [
+    ":root --brand-borderRadius-xlarge",
+    "var(--base-size-24)"
+   ],
+   [
+    ":root --brand-borderRadius-large",
+    "var(--base-size-16)"
+   ],
+   [
+    ":root --brand-borderRadius-medium",
+    "var(--base-size-8)"
+   ],
+   [
+    ":root --brand-borderRadius-small",
+    "var(--base-size-4)"
+   ],
+   [
+    ":root --brand-borderInset-thicker",
+    "inset 0 0 0 var(--brand-borderWidth-thicker)"
+   ],
+   [
+    ":root --brand-borderInset-thick",
+    "inset 0 0 0 var(--brand-borderWidth-thick)"
+   ],
+   [
+    ":root --brand-borderInset-thin",
+    "inset 0 0 0 var(--brand-borderWidth-thin)"
+   ],
+   [
+    ":root --brand-text-weight-1000",
+    "var(--base-text-weight-normal)"
+   ],
+   [
+    ":root --brand-text-weight-900",
+    "var(--base-text-weight-normal)"
+   ],
+   [
+    ":root --brand-text-weight-800",
+    "var(--base-text-weight-normal)"
+   ],
+   [
+    ":root --brand-text-weight-700",
+    "var(--base-text-weight-normal)"
+   ],
+   [
+    ":root --brand-text-weight-600",
+    "var(--base-text-weight-normal)"
+   ],
+   [
+    ":root --brand-text-weight-500",
+    "var(--base-text-weight-normal)"
+   ],
+   [
+    ":root --brand-text-weight-400",
+    "var(--base-text-weight-normal)"
+   ],
+   [
+    ":root --brand-text-weight-350",
+    "var(--base-text-weight-normal)"
+   ],
+   [
+    ":root --brand-text-weight-300",
+    "var(--base-text-weight-normal)"
+   ],
+   [
+    ":root --brand-text-weight-200",
+    "var(--base-text-weight-normal)"
+   ],
+   [
+    ":root --brand-text-weight-100",
+    "var(--base-text-weight-normal)"
+   ],
+   [
+    ":root --brand-control-large-paddingInline-spacious",
+    "var(--base-size-32)"
+   ],
+   [
+    ":root --brand-control-large-paddingInline-normal",
+    "var(--base-size-20)"
+   ],
+   [
+    ":root --brand-control-large-paddingInline-condensed",
+    "var(--base-size-16)"
+   ]
+  ],
+  "surfaces": [
+   {
+    "hex": "#000000",
+    "L": 0,
+    "C": 0,
+    "H": 0,
+    "n": 13,
+    "area": 14326276,
+    "ex": [
+     "div.lp-Home",
+     "div.lp-SectionBlock"
+    ]
+   },
+   {
+    "hex": "#0d1117",
+    "L": 0.176,
+    "C": 0.014,
+    "H": 258,
+    "n": 3,
+    "area": 9951750,
+    "ex": [
+     "main.font-mktg",
+     "div."
+    ]
+   },
+   {
+    "hex": "#0f1511",
+    "L": 0.188,
+    "C": 0.012,
+    "H": 156,
+    "n": 2,
+    "area": 1451430,
+    "ex": [
+     "footer.MarketingFooter-module__footer__s",
+     "div.SubFooter-module__bar__MCrz3"
+    ]
+   },
+   {
+    "hex": "#151a22",
+    "L": 0.216,
+    "C": 0.018,
+    "H": 260,
+    "n": 1,
+    "area": 822163,
+    "ex": [
+     "video."
+    ]
+   },
+   {
+    "hex": "#08872b",
+    "L": 0.543,
+    "C": 0.163,
+    "H": 146,
+    "n": 3,
+    "area": 20775,
+    "ex": [
+     "button.Primer_Brand__Button-module__Butt",
+     "button.Primer_Brand__Button-module__Butt"
+    ]
+   }
+  ],
+  "overlays": [
+   {
+    "bg": "rgba(255, 255, 255, 0.06) => #0f0f0f",
+    "n": 3,
+    "area": 2414020
+   },
+   {
+    "bg": "rgba(255, 255, 255, 0.2) => #333333",
+    "n": 3,
+    "area": 1155757
+   },
+   {
+    "bg": "rgba(255, 255, 255, 0.15) => #262626",
+    "n": 1,
+    "area": 877009
+   },
+   {
+    "bg": "rgba(31, 35, 40, 0.4) => #0c0e10",
+    "n": 2,
+    "area": 30431
+   },
+   {
+    "bg": "rgba(0, 0, 0, 0.01) => #0d1117",
+    "n": 1,
+    "area": 6400
+   },
+   {
+    "bg": "rgba(255, 255, 255, 0.12) => #2c312e",
+    "n": 1,
+    "area": 3964
+   }
+  ],
+  "borders": [
+   {
+    "border": "rgba(0, 0, 0, 0) @1px",
+    "n": 52,
+    "alpha": 0,
+    "flatOnPage": "#0d1117",
+    "L": 0.176
+   },
+   {
+    "border": "rgb(33, 38, 45) @1px",
+    "n": 30,
+    "alpha": 1,
+    "flatOnPage": "#21262d",
+    "L": 0.267
+   },
+   {
+    "border": "rgb(255, 255, 255) @1px",
+    "n": 16,
+    "alpha": 1,
+    "flatOnPage": "#ffffff",
+    "L": 1
+   },
+   {
+    "border": "rgb(53, 61, 55) @1px",
+    "n": 13,
+    "alpha": 1,
+    "flatOnPage": "#353d37",
+    "L": 0.35
+   },
+   {
+    "border": "rgb(25, 31, 27) @1px",
+    "n": 10,
+    "alpha": 1,
+    "flatOnPage": "#191f1b",
+    "L": 0.232
+   },
+   {
+    "border": "rgba(255, 255, 255, 0.1) @1px",
+    "n": 10,
+    "alpha": 0.1,
+    "flatOnPage": "#25292e",
+    "L": 0.279
+   },
+   {
+    "border": "rgba(255, 255, 255, 0.6) @1px",
+    "n": 9,
+    "alpha": 0.6,
+    "flatOnPage": "#9ea0a2",
+    "L": 0.705
+   },
+   {
+    "border": "rgb(38, 44, 40) @1px",
+    "n": 8,
+    "alpha": 1,
+    "flatOnPage": "#262c28",
+    "L": 0.286
+   },
+   {
+    "border": "rgba(255, 255, 255, 0.06) @1px",
+    "n": 8,
+    "alpha": 0.06,
+    "flatOnPage": "#1c1f25",
+    "L": 0.239
+   },
+   {
+    "border": "rgb(72, 79, 88) @1px",
+    "n": 8,
+    "alpha": 1,
+    "flatOnPage": "#484f58",
+    "L": 0.425
+   },
+   {
+    "border": "rgba(72, 79, 88, 0.5) @1px",
+    "n": 6,
+    "alpha": 0.5,
+    "flatOnPage": "#2b3038",
+    "L": 0.307
+   },
+   {
+    "border": "rgba(255, 255, 255, 0.15) @1px",
+    "n": 4,
+    "alpha": 0.15,
+    "flatOnPage": "#31353a",
+    "L": 0.326
+   }
+  ],
+  "radii": [
+   [
+    "60px",
+    12
+   ],
+   [
+    "6px",
+    11
+   ],
+   [
+    "8px",
+    7
+   ],
+   [
+    "24px",
+    7
+   ],
+   [
+    "16px",
+    6
+   ],
+   [
+    "50%",
+    3
+   ],
+   [
+    "4px",
+    1
+   ],
+   [
+    "12px",
+    1
+   ]
+  ],
+  "shadows": [
+   {
+    "shadow": "rgb(25, 31, 27) 0px -1px 0px 0px inset",
+    "n": 1
+   }
+  ],
+  "nShadowEls": 1,
+  "textColors": [
+   {
+    "color": "rgb(255, 255, 255)",
+    "chars": 2873,
+    "n": 91,
+    "fg": "#ffffff",
+    "alpha": 1,
+    "contrast": 4.63,
+    "L": 1,
+    "bg": "#1f6feb",
+    "size": "14px",
+    "weight": "400",
+    "ex": "Skip to content"
+   },
+   {
+    "color": "rgb(164, 174, 166)",
+    "chars": 1896,
+    "n": 47,
+    "fg": "#a4aea6",
+    "alpha": 1,
+    "contrast": 9.18,
+    "L": 0.741,
+    "bg": "#000000",
+    "size": "16px",
+    "weight": "400",
+    "ex": "Write, test, and fix code qu"
+   },
+   {
+    "color": "rgb(162, 218, 255)",
+    "chars": 490,
+    "n": 23,
+    "fg": "#a2daff",
+    "alpha": 1,
+    "contrast": 14.01,
+    "L": 0.863,
+    "bg": "#000000",
+    "size": "18px",
+    "weight": "400",
+    "ex": "Explore GitHub Copilot"
+   },
+   {
+    "color": "rgba(255, 255, 255, 0.85)",
+    "chars": 342,
+    "n": 3,
+    "fg": "#d9d9d9",
+    "alpha": 0.85,
+    "contrast": 14.84,
+    "L": 0.885,
+    "bg": "#000000",
+    "size": "22px",
+    "weight": "400",
+    "ex": "From your first line of code"
+   },
+   {
+    "color": "rgb(124, 137, 128)",
+    "chars": 132,
+    "n": 2,
+    "fg": "#7c8980",
+    "alpha": 1,
+    "contrast": 5.75,
+    "L": 0.617,
+    "bg": "#000000",
+    "size": "22px",
+    "weight": "600",
+    "ex": "Spend less time debugging an"
+   },
+   {
+    "color": "rgba(36, 41, 47, 0.9)",
+    "chars": 32,
+    "n": 2,
+    "fg": "#20252a",
+    "alpha": 0.9,
+    "contrast": 1.36,
+    "L": 0.262,
+    "bg": "#000000",
+    "size": "16px",
+    "weight": "400",
+    "ex": "Enter your email"
+   },
+   {
+    "color": "rgb(95, 237, 131)",
+    "chars": 1,
+    "n": 1,
+    "fg": "#5fed83",
+    "alpha": 1,
+    "contrast": 13.93,
+    "L": 0.844,
+    "bg": "#000000",
+    "size": "48px",
+    "weight": "800",
+    "ex": "“"
+   }
+  ],
+  "h1": {
+   "text": "The future of building happens together",
+   "family": "\"Mona Sans\", MonaSansFallback, -apple-system, \"system-ui\", \"",
+   "size": "64px",
+   "weight": "425",
+   "lh": "69.12px",
+   "ls": "-2.24px",
+   "color": "rgb(255, 255, 255)",
+   "smooth": "antialiased",
+   "bgClip": "border-box",
+   "bgImage": "none",
+   "textShadow": null
+  },
+  "body": {
+   "text": "Skip to content\nNavigation Menu\nPlatform\nSolutions\nResources",
+   "family": "\"Mona Sans VF\", -apple-system, \"system-ui\", \"Segoe UI\", \"Not",
+   "size": "14px",
+   "weight": "400",
+   "lh": "21px",
+   "ls": "normal",
+   "color": "rgb(240, 246, 252)",
+   "smooth": "auto",
+   "bgClip": "border-box",
+   "bgImage": "none",
+   "textShadow": null
+  },
+  "bodySmoothing": "auto",
+  "textRendering": "auto",
+  "heroP": {
+   "text": "Tools and trends evolve, but collaboration endures. With Git",
+   "family": "\"Mona Sans\", MonaSansFallback, -apple-system, \"system-ui\", \"",
+   "size": "18px",
+   "weight": "400",
+   "lh": "27px",
+   "ls": "0.18px",
+   "color": "rgb(255, 255, 255)",
+   "smooth": "antialiased",
+   "bgClip": "border-box",
+   "bgImage": "none",
+   "textShadow": null
+  },
+  "ctas": [
+   {
+    "text": "Search\n/",
+    "h": 32,
+    "kind": "outline",
+    "bg": "rgba(0, 0, 0, 0.01)",
+    "color": "rgb(255, 255, 255)",
+    "border": "1px rgb(38, 44, 40)",
+    "radius": "6px",
+    "shadow": null,
+    "bgImage": null,
+    "size": "16px",
+    "weight": "400"
+   },
+   {
+    "text": "Sign in",
+    "h": 32,
+    "kind": "outline",
+    "bg": "rgba(0, 0, 0, 0.01)",
+    "color": "rgb(255, 255, 255)",
+    "border": "1px rgb(38, 44, 40)",
+    "radius": "6px",
+    "shadow": null,
+    "bgImage": null,
+    "size": "16px",
+    "weight": "400"
+   },
+   {
+    "text": "Sign up",
+    "h": 32,
+    "kind": "outline",
+    "bg": "rgba(255, 255, 255, 0.12)",
+    "color": "rgb(255, 255, 255)",
+    "border": "1px rgba(255, 255, 255, 0.06)",
+    "radius": "6px",
+    "shadow": null,
+    "bgImage": null,
+    "size": "16px",
+    "weight": "400"
+   },
+   {
+    "text": "Sign up for GitHub",
+    "h": 48,
+    "kind": "filled",
+    "bg": "rgb(8, 135, 43)",
+    "color": "rgb(255, 255, 255)",
+    "border": "1px rgba(0, 0, 0, 0)",
+    "radius": "6px",
+    "shadow": null,
+    "bgImage": null,
+    "size": "14px",
+    "weight": "400"
+   },
+   {
+    "text": "Download GitHub Copilot ",
+    "h": 56,
+    "kind": "filled",
+    "bg": "rgba(31, 35, 40, 0.4)",
+    "color": "rgb(162, 218, 255)",
+    "border": "1px rgb(255, 255, 255)",
+    "radius": "6px",
+    "shadow": null,
+    "bgImage": null,
+    "size": "14px",
+    "weight": "400"
+   }
+  ],
+  "nav": {
+   "h": 72,
+   "bg": "rgba(0, 0, 0, 0)",
+   "backdrop": "none",
+   "bb": "0px none rgb(255, 255, 255)",
+   "shadow": null,
+   "linkColor": "rgb(255, 255, 255)"
+  },
+  "effects": {
+   "radial": 5,
+   "conic": 0,
+   "linear": 10,
+   "urlbg": 0,
+   "blurEls": 5,
+   "backdropEls": 9,
+   "mixBlend": 1,
+   "maskEls": 2,
+   "gradEx": [
+    "radial-gradient(circle at 0px 100%, rgb(230, 183, 254) 10%, rgb(80, 73, 194) 20%, rgba(87, 78, 255, 0) 60%)",
+    "radial-gradient(rgb(167, 162, 255) 30%, rgba(147, 80, 255, 0.5))",
+    "radial-gradient(circle at 0px 100%, rgb(230, 183, 254) 20%, rgb(80, 73, 194) 40%, rgba(58, 55, 255, 0) 50%)",
+    "radial-gradient(circle at 0px 100%, rgb(230, 183, 254) 10%, rgb(80, 73, 194) 20%, rgba(87, 78, 255, 0) 60%)",
+    "radial-gradient(rgb(167, 162, 255) 30%, rgba(147, 80, 255, 0.5))"
+   ],
+   "canvas": 6,
+   "video": 2,
+   "svg": 116,
+   "img": 24
+  },
+  "noise": false,
+  "gradientHeadings": 0,
+  "accents": [
+   {
+    "hex": "#5fed83",
+    "n": 6,
+    "L": 0.844,
+    "C": 0.191,
+    "H": 149
+   },
+   {
+    "hex": "#08872b",
+    "n": 3,
+    "L": 0.543,
+    "C": 0.163,
+    "H": 146
+   },
+   {
+    "hex": "#1f6feb",
+    "n": 1,
+    "L": 0.569,
+    "C": 0.202,
+    "H": 260
+   },
+   {
+    "hex": "#8c93fb",
+    "n": 1,
+    "L": 0.703,
+    "C": 0.151,
+    "H": 279
+   }
+  ]
+ },
+ "full": {
+  "title": "GitHub · Change is constant. GitHub keeps you ahead. · GitHub · GitHub",
+  "vw": 1440,
+  "pageHeight": 11529,
+  "colorScheme": {
+   "html": "dark",
+   "body": "dark",
+   "metaTheme": "#1e2327",
+   "htmlClass": "",
+   "dataTheme": "dark"
+  },
+  "pageBg": "#0d1117",
+  "pageBgOklabL": 0.176,
+  "pageBgOklabC": 0.014,
+  "pageBgOklabH": 258,
+  "cssVarCount": 1064,
+  "cssVars": [
+   [
+    ":root --motion-easing-linear",
+    "var(--base-easing-linear)"
+   ],
+   [
+    ":root --borderWidth-default",
+    "var(--borderWidth-thin)"
+   ],
+   [
+    ":root --boxShadow-thick",
+    "inset 0 0 0 var(--borderWidth-thick)"
+   ],
+   [
+    ":root --boxShadow-thicker",
+    "inset 0 0 0 var(--borderWidth-thicker)"
+   ],
+   [
+    ":root --boxShadow-thin",
+    "inset 0 0 0 var(--borderWidth-thin)"
+   ],
+   [
+    ":root --outline-focus-offset",
+    "var(--focus-outline-offset)"
+   ],
+   [
+    ":root --outline-focus-width",
+    "var(--focus-outline-width)"
+   ],
+   [
+    ":root --borderRadius-default",
+    "var(--borderRadius-medium)"
+   ],
+   [
+    ":root --text-body-lineHeight-large",
+    "var(--base-text-lineHeight-normal)"
+   ],
+   [
+    ":root --text-body-lineHeight-medium",
+    "var(--base-text-lineHeight-normal)"
+   ],
+   [
+    ":root --text-body-lineHeight-small",
+    "var(--base-text-lineHeight-relaxed)"
+   ],
+   [
+    ":root --text-body-size-large",
+    "var(--base-text-size-md)"
+   ],
+   [
+    ":root --text-body-size-medium",
+    "var(--base-text-size-sm)"
+   ],
+   [
+    ":root --text-body-size-small",
+    "var(--base-text-size-xs)"
+   ],
+   [
+    ":root --text-body-weight",
+    "var(--base-text-weight-normal)"
+   ],
+   [
+    ":root --text-caption-lineHeight",
+    "var(--base-text-lineHeight-tight)"
+   ],
+   [
+    ":root --text-caption-size",
+    "var(--base-text-size-xs)"
+   ],
+   [
+    ":root --text-caption-weight",
+    "var(--base-text-weight-normal)"
+   ],
+   [
+    ":root --text-codeBlock-lineHeight",
+    "var(--base-text-lineHeight-normal)"
+   ],
+   [
+    ":root --text-codeBlock-weight",
+    "var(--base-text-weight-normal)"
+   ],
+   [
+    ":root --text-codeInline-weight",
+    "var(--base-text-weight-normal)"
+   ],
+   [
+    ":root --text-display-lineHeight",
+    "var(--base-text-lineHeight-snug)"
+   ],
+   [
+    ":root --text-display-size",
+    "var(--base-text-size-2xl)"
+   ],
+   [
+    ":root --text-display-weight",
+    "var(--base-text-weight-medium)"
+   ],
+   [
+    ":root --text-subtitle-lineHeight",
+    "var(--base-text-lineHeight-relaxed)"
+   ],
+   [
+    ":root --text-subtitle-size",
+    "var(--base-text-size-lg)"
+   ],
+   [
+    ":root --text-subtitle-weight",
+    "var(--base-text-weight-normal)"
+   ],
+   [
+    ":root --text-title-lineHeight-large",
+    "var(--base-text-lineHeight-normal)"
+   ],
+   [
+    ":root --text-title-lineHeight-medium",
+    "var(--base-text-lineHeight-relaxed)"
+   ],
+   [
+    ":root --text-title-lineHeight-small",
+    "var(--base-text-lineHeight-normal)"
+   ],
+   [
+    ":root --text-title-size-large",
+    "var(--base-text-size-xl)"
+   ],
+   [
+    ":root --text-title-size-medium",
+    "var(--base-text-size-lg)"
+   ],
+   [
+    ":root --text-title-size-small",
+    "var(--base-text-size-md)"
+   ],
+   [
+    ":root --text-title-weight-large",
+    "var(--base-text-weight-semibold)"
+   ],
+   [
+    ":root --text-title-weight-medium",
+    "var(--base-text-weight-semibold)"
+   ],
+   [
+    ":root --text-title-weight-small",
+    "var(--base-text-weight-semibold)"
+   ],
+   [
+    ":root --text-body-shorthand-large",
+    "var(--text-body-weight) var(--text-body-size-large) / var(--text-body-lineHeight"
+   ],
+   [
+    ":root --text-body-shorthand-medium",
+    "var(--text-body-weight) var(--text-body-size-medium) / var(--text-body-lineHeigh"
+   ],
+   [
+    ":root --text-body-shorthand-small",
+    "var(--text-body-weight) var(--text-body-size-small) / var(--text-body-lineHeight"
+   ],
+   [
+    ":root --text-caption-shorthand",
+    "var(--text-caption-weight) var(--text-caption-size) / var(--text-caption-lineHei"
+   ],
+   [
+    ":root --text-codeBlock-shorthand",
+    "var(--text-codeBlock-weight) var(--text-codeBlock-size) / var(--text-codeBlock-l"
+   ],
+   [
+    ":root --text-codeInline-shorthand",
+    "var(--text-codeInline-weight) var(--text-codeInline-size) var(--fontStack-monosp"
+   ],
+   [
+    ":root --text-display-shorthand",
+    "var(--text-display-weight) var(--text-display-size) / var(--text-display-lineHei"
+   ],
+   [
+    ":root --text-subtitle-shorthand",
+    "var(--text-subtitle-weight) var(--text-subtitle-size) / var(--text-subtitle-line"
+   ],
+   [
+    ":root --text-title-shorthand-large",
+    "var(--text-title-weight-large) var(--text-title-size-large) / var(--text-title-l"
+   ],
+   [
+    ":root --text-title-shorthand-medium",
+    "var(--text-title-weight-medium) var(--text-title-size-medium) / var(--text-title"
+   ],
+   [
+    ":root --text-title-shorthand-small",
+    "var(--text-title-weight-small) var(--text-title-size-small) / var(--text-title-l"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"][data-li --color-workflow-card-bg",
+    "var(--bgColor-default)"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"][data-li --color-workflow-card-header-shadow",
+    "#0000"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"][data-li --color-bg-discussions-row-emoji-box",
+    "#d1d5da80"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"][data-li --color-notifications-row-read-bg",
+    "var(--bgColor-muted)"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"][data-li --color-notifications-row-bg",
+    "var(--bgColor-white)"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"][data-li --color-user-mention-fg",
+    "var(--fgColor-default)"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"][data-li --color-mktg-btn-shadow-outline",
+    "#00000026 0 0 0 1px inset"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"][data-li --color-marketing-icon-primary",
+    "#218bff"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"][data-li --color-marketing-icon-secondary",
+    "#54aeff"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"][data-li --color-project-header-bg",
+    "#24292f"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"][data-li --color-project-sidebar-bg",
+    "var(--bgColor-white)"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"][data-li --color-project-gradient-in",
+    "var(--bgColor-white)"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"][data-li --color-project-gradient-out",
+    "#fff0"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"][data-li --color-text-white",
+    "var(--fgColor-white)"
+   ],
+   [
+    ":root .hx_IssueLabel, [data-color-mode=\" --border-alpha",
+    "max(0, min(calc((var(--perceived-lightness) - var(--border-threshold)) * 100), 1"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"] --brand-color-success-fg",
+    "var(--base-color-scale-green-6)"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"] --brand-color-success-emphasis",
+    "var(--base-color-scale-green-5)"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"] --brand-color-success-muted",
+    "#8cf2a699"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"] --brand-color-success-subtle",
+    "var(--base-color-scale-green-1)"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"] --brand-color-danger-fg",
+    "var(--base-color-scale-red-5)"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"] --brand-color-danger-emphasis",
+    "var(--base-color-scale-red-5)"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"] --brand-color-danger-muted",
+    "#ffaba899"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"] --brand-color-danger-subtle",
+    "var(--base-color-scale-red-0)"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"] --brand-color-error-fg",
+    "var(--brand-color-danger-fg)"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"] --brand-color-error-emphasis",
+    "var(--brand-color-danger-emphasis)"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"] --brand-color-error-muted",
+    "var(--brand-color-danger-muted)"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"] --brand-color-error-subtle",
+    "var(--brand-color-danger-subtle)"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"] --brand-color-accent-primary",
+    "var(--base-color-scale-green-7)"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"] --brand-color-accent-secondary",
+    "var(--base-color-scale-yellow-5)"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"] --brand-color-text-default",
+    "var(--base-color-scale-black-0)"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"] --brand-color-text-muted",
+    "var(--base-color-scale-gray-7)"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"] --brand-color-text-subtle",
+    "var(--brand-color-text-muted)"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"] --brand-color-text-onEmphasis",
+    "var(--base-color-scale-white-0)"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"] --brand-color-text-emphasized",
+    "var(--base-color-scale-green-6)"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"] --brand-color-text-link-rest",
+    "var(--base-color-scale-blue-6)"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"] --brand-color-text-link-pressed",
+    "var(--base-color-scale-blue-8)"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"] --brand-color-text-danger",
+    "#cf222e"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"] --brand-color-text-error",
+    "var(--brand-color-text-danger)"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"] --brand-color-neutral-emphasisPlus",
+    "var(--base-color-scale-gray-8)"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"] --brand-color-neutral-emphasis",
+    "var(--base-color-scale-gray-6)"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"] --brand-color-neutral-muted",
+    "#c4ccc6fe"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"] --brand-color-neutral-subtle",
+    "#e4ebe6fe"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"] --brand-color-canvas-default",
+    "var(--base-color-scale-white-0)"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"] --brand-color-canvas-invert",
+    "var(--base-color-scale-black-0)"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"] --brand-color-canvas-overlay",
+    "var(--base-color-scale-white-0)"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"] --brand-color-canvas-inset",
+    "var(--base-color-scale-gray-0)"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"] --brand-color-canvas-subtle",
+    "var(--base-color-scale-gray-0)"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"] --brand-color-canvas-muted",
+    "#f9fbf9"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"] --brand-color-border-default",
+    "var(--base-color-scale-gray-4)"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"] --brand-color-border-muted",
+    "var(--base-color-scale-gray-1)"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"] --brand-color-border-subtle",
+    "var(--base-color-scale-gray-2)"
+   ],
+   [
+    ":root, [data-color-mode=\"light\"] --brand-color-focus",
+    "var(--base-color-scale-blue-5)"
+   ],
+   [
+    ":root --brand-borderRadius-xlarge",
+    "var(--base-size-24)"
+   ],
+   [
+    ":root --brand-borderRadius-large",
+    "var(--base-size-16)"
+   ],
+   [
+    ":root --brand-borderRadius-medium",
+    "var(--base-size-8)"
+   ],
+   [
+    ":root --brand-borderRadius-small",
+    "var(--base-size-4)"
+   ],
+   [
+    ":root --brand-borderInset-thicker",
+    "inset 0 0 0 var(--brand-borderWidth-thicker)"
+   ],
+   [
+    ":root --brand-borderInset-thick",
+    "inset 0 0 0 var(--brand-borderWidth-thick)"
+   ],
+   [
+    ":root --brand-borderInset-thin",
+    "inset 0 0 0 var(--brand-borderWidth-thin)"
+   ],
+   [
+    ":root --brand-text-weight-1000",
+    "var(--base-text-weight-normal)"
+   ],
+   [
+    ":root --brand-text-weight-900",
+    "var(--base-text-weight-normal)"
+   ],
+   [
+    ":root --brand-text-weight-800",
+    "var(--base-text-weight-normal)"
+   ],
+   [
+    ":root --brand-text-weight-700",
+    "var(--base-text-weight-normal)"
+   ],
+   [
+    ":root --brand-text-weight-600",
+    "var(--base-text-weight-normal)"
+   ],
+   [
+    ":root --brand-text-weight-500",
+    "var(--base-text-weight-normal)"
+   ],
+   [
+    ":root --brand-text-weight-400",
+    "var(--base-text-weight-normal)"
+   ],
+   [
+    ":root --brand-text-weight-350",
+    "var(--base-text-weight-normal)"
+   ],
+   [
+    ":root --brand-text-weight-300",
+    "var(--base-text-weight-normal)"
+   ],
+   [
+    ":root --brand-text-weight-200",
+    "var(--base-text-weight-normal)"
+   ],
+   [
+    ":root --brand-text-weight-100",
+    "var(--base-text-weight-normal)"
+   ],
+   [
+    ":root --brand-control-large-paddingInline-spacious",
+    "var(--base-size-32)"
+   ],
+   [
+    ":root --brand-control-large-paddingInline-normal",
+    "var(--base-size-20)"
+   ],
+   [
+    ":root --brand-control-large-paddingInline-condensed",
+    "var(--base-size-16)"
+   ]
+  ],
+  "surfaces": [
+   {
+    "hex": "#000000",
+    "L": 0,
+    "C": 0,
+    "H": 0,
+    "n": 13,
+    "area": 14803568,
+    "ex": [
+     "div.lp-Home",
+     "div.lp-SectionBlock"
+    ]
+   },
+   {
+    "hex": "#0d1117",
+    "L": 0.176,
+    "C": 0.014,
+    "H": 258,
+    "n": 3,
+    "area": 9951750,
+    "ex": [
+     "main.font-mktg",
+     "div."
+    ]
+   },
+   {
+    "hex": "#0f1511",
+    "L": 0.188,
+    "C": 0.012,
+    "H": 156,
+    "n": 2,
+    "area": 1451430,
+    "ex": [
+     "footer.MarketingFooter-module__footer__s",
+     "div.SubFooter-module__bar__MCrz3"
+    ]
+   },
+   {
+    "hex": "#151a22",
+    "L": 0.216,
+    "C": 0.018,
+    "H": 260,
+    "n": 1,
+    "area": 822163,
+    "ex": [
+     "video."
+    ]
+   },
+   {
+    "hex": "#08872b",
+    "L": 0.543,
+    "C": 0.163,
+    "H": 146,
+    "n": 3,
+    "area": 20625,
+    "ex": [
+     "button.Primer_Brand__Button-module__Butt",
+     "button.Primer_Brand__Button-module__Butt"
+    ]
+   }
+  ],
+  "overlays": [
+   {
+    "bg": "rgba(255, 255, 255, 0.06) => #0f0f0f",
+    "n": 3,
+    "area": 2414020
+   },
+   {
+    "bg": "rgba(255, 255, 255, 0.2) => #333333",
+    "n": 3,
+    "area": 1155757
+   },
+   {
+    "bg": "rgba(255, 255, 255, 0.15) => #262626",
+    "n": 1,
+    "area": 877009
+   },
+   {
+    "bg": "rgba(31, 35, 40, 0.4) => #0c0e10",
+    "n": 2,
+    "area": 30174
+   },
+   {
+    "bg": "rgba(0, 0, 0, 0.01) => #0d1117",
+    "n": 1,
+    "area": 6400
+   },
+   {
+    "bg": "rgba(255, 255, 255, 0.12) => #2c312e",
+    "n": 1,
+    "area": 3964
+   }
+  ],
+  "borders": [
+   {
+    "border": "rgba(0, 0, 0, 0) @1px",
+    "n": 52,
+    "alpha": 0,
+    "flatOnPage": "#0d1117",
+    "L": 0.176
+   },
+   {
+    "border": "rgb(33, 38, 45) @1px",
+    "n": 30,
+    "alpha": 1,
+    "flatOnPage": "#21262d",
+    "L": 0.267
+   },
+   {
+    "border": "rgb(255, 255, 255) @1px",
+    "n": 16,
+    "alpha": 1,
+    "flatOnPage": "#ffffff",
+    "L": 1
+   },
+   {
+    "border": "rgb(53, 61, 55) @1px",
+    "n": 13,
+    "alpha": 1,
+    "flatOnPage": "#353d37",
+    "L": 0.35
+   },
+   {
+    "border": "rgb(25, 31, 27) @1px",
+    "n": 10,
+    "alpha": 1,
+    "flatOnPage": "#191f1b",
+    "L": 0.232
+   },
+   {
+    "border": "rgba(255, 255, 255, 0.1) @1px",
+    "n": 10,
+    "alpha": 0.1,
+    "flatOnPage": "#25292e",
+    "L": 0.279
+   },
+   {
+    "border": "rgba(255, 255, 255, 0.6) @1px",
+    "n": 9,
+    "alpha": 0.6,
+    "flatOnPage": "#9ea0a2",
+    "L": 0.705
+   },
+   {
+    "border": "rgb(38, 44, 40) @1px",
+    "n": 8,
+    "alpha": 1,
+    "flatOnPage": "#262c28",
+    "L": 0.286
+   },
+   {
+    "border": "rgba(255, 255, 255, 0.06) @1px",
+    "n": 8,
+    "alpha": 0.06,
+    "flatOnPage": "#1c1f25",
+    "L": 0.239
+   },
+   {
+    "border": "rgb(72, 79, 88) @1px",
+    "n": 8,
+    "alpha": 1,
+    "flatOnPage": "#484f58",
+    "L": 0.425
+   },
+   {
+    "border": "rgba(72, 79, 88, 0.5) @1px",
+    "n": 6,
+    "alpha": 0.5,
+    "flatOnPage": "#2b3038",
+    "L": 0.307
+   },
+   {
+    "border": "rgba(255, 255, 255, 0.15) @1px",
+    "n": 4,
+    "alpha": 0.15,
+    "flatOnPage": "#31353a",
+    "L": 0.326
+   }
+  ],
+  "radii": [
+   [
+    "60px",
+    12
+   ],
+   [
+    "6px",
+    11
+   ],
+   [
+    "16px",
+    9
+   ],
+   [
+    "8px",
+    7
+   ],
+   [
+    "24px",
+    7
+   ],
+   [
+    "50%",
+    3
+   ],
+   [
+    "4px",
+    1
+   ],
+   [
+    "12px",
+    1
+   ]
+  ],
+  "shadows": [
+   {
+    "shadow": "rgb(25, 31, 27) 0px -1px 0px 0px inset",
+    "n": 1
+   }
+  ],
+  "nShadowEls": 1,
+  "textColors": [
+   {
+    "color": "rgb(255, 255, 255)",
+    "chars": 2873,
+    "n": 91,
+    "fg": "#ffffff",
+    "alpha": 1,
+    "contrast": 4.63,
+    "L": 1,
+    "bg": "#1f6feb",
+    "size": "14px",
+    "weight": "400",
+    "ex": "Skip to content"
+   },
+   {
+    "color": "rgb(164, 174, 166)",
+    "chars": 1896,
+    "n": 47,
+    "fg": "#a4aea6",
+    "alpha": 1,
+    "contrast": 9.18,
+    "L": 0.741,
+    "bg": "#000000",
+    "size": "16px",
+    "weight": "400",
+    "ex": "Write, test, and fix code qu"
+   },
+   {
+    "color": "rgb(162, 218, 255)",
+    "chars": 490,
+    "n": 23,
+    "fg": "#a2daff",
+    "alpha": 1,
+    "contrast": 14.01,
+    "L": 0.863,
+    "bg": "#000000",
+    "size": "18px",
+    "weight": "400",
+    "ex": "Explore GitHub Copilot"
+   },
+   {
+    "color": "rgba(255, 255, 255, 0.85)",
+    "chars": 342,
+    "n": 3,
+    "fg": "#d9d9d9",
+    "alpha": 0.85,
+    "contrast": 14.84,
+    "L": 0.885,
+    "bg": "#000000",
+    "size": "22px",
+    "weight": "400",
+    "ex": "From your first line of code"
+   },
+   {
+    "color": "rgb(124, 137, 128)",
+    "chars": 132,
+    "n": 2,
+    "fg": "#7c8980",
+    "alpha": 1,
+    "contrast": 5.75,
+    "L": 0.617,
+    "bg": "#000000",
+    "size": "22px",
+    "weight": "600",
+    "ex": "Spend less time debugging an"
+   },
+   {
+    "color": "rgba(36, 41, 47, 0.9)",
+    "chars": 32,
+    "n": 2,
+    "fg": "#20252a",
+    "alpha": 0.9,
+    "contrast": 1.36,
+    "L": 0.262,
+    "bg": "#000000",
+    "size": "16px",
+    "weight": "400",
+    "ex": "Enter your email"
+   },
+   {
+    "color": "rgb(95, 237, 131)",
+    "chars": 1,
+    "n": 1,
+    "fg": "#5fed83",
+    "alpha": 1,
+    "contrast": 13.93,
+    "L": 0.844,
+    "bg": "#000000",
+    "size": "48px",
+    "weight": "800",
+    "ex": "“"
+   }
+  ],
+  "h1": {
+   "text": "The future of building happens together",
+   "family": "\"Mona Sans\", MonaSansFallback, -apple-system, \"system-ui\", \"",
+   "size": "64px",
+   "weight": "425",
+   "lh": "69.12px",
+   "ls": "-2.24px",
+   "color": "rgb(255, 255, 255)",
+   "smooth": "antialiased",
+   "bgClip": "border-box",
+   "bgImage": "none",
+   "textShadow": null
+  },
+  "body": {
+   "text": "Skip to content\nNavigation Menu\nPlatform\nSolutions\nResources",
+   "family": "\"Mona Sans VF\", -apple-system, \"system-ui\", \"Segoe UI\", \"Not",
+   "size": "14px",
+   "weight": "400",
+   "lh": "21px",
+   "ls": "normal",
+   "color": "rgb(240, 246, 252)",
+   "smooth": "auto",
+   "bgClip": "border-box",
+   "bgImage": "none",
+   "textShadow": null
+  },
+  "bodySmoothing": "auto",
+  "textRendering": "auto",
+  "heroP": {
+   "text": "Tools and trends evolve, but collaboration endures. With Git",
+   "family": "\"Mona Sans\", MonaSansFallback, -apple-system, \"system-ui\", \"",
+   "size": "18px",
+   "weight": "400",
+   "lh": "27px",
+   "ls": "0.18px",
+   "color": "rgb(255, 255, 255)",
+   "smooth": "antialiased",
+   "bgClip": "border-box",
+   "bgImage": "none",
+   "textShadow": null
+  },
+  "ctas": [
+   {
+    "text": "Search\n/",
+    "h": 32,
+    "kind": "outline",
+    "bg": "rgba(0, 0, 0, 0.01)",
+    "color": "rgb(255, 255, 255)",
+    "border": "1px rgb(38, 44, 40)",
+    "radius": "6px",
+    "shadow": null,
+    "bgImage": null,
+    "size": "16px",
+    "weight": "400"
+   },
+   {
+    "text": "Sign in",
+    "h": 32,
+    "kind": "outline",
+    "bg": "rgba(0, 0, 0, 0.01)",
+    "color": "rgb(255, 255, 255)",
+    "border": "1px rgb(38, 44, 40)",
+    "radius": "6px",
+    "shadow": null,
+    "bgImage": null,
+    "size": "16px",
+    "weight": "400"
+   },
+   {
+    "text": "Sign up",
+    "h": 32,
+    "kind": "outline",
+    "bg": "rgba(255, 255, 255, 0.12)",
+    "color": "rgb(255, 255, 255)",
+    "border": "1px rgba(255, 255, 255, 0.06)",
+    "radius": "6px",
+    "shadow": null,
+    "bgImage": null,
+    "size": "16px",
+    "weight": "400"
+   },
+   {
+    "text": "Sign up for GitHub",
+    "h": 48,
+    "kind": "filled",
+    "bg": "rgb(8, 135, 43)",
+    "color": "rgb(255, 255, 255)",
+    "border": "1px rgba(0, 0, 0, 0)",
+    "radius": "6px",
+    "shadow": null,
+    "bgImage": null,
+    "size": "14px",
+    "weight": "400"
+   },
+   {
+    "text": "Download GitHub Copilot ",
+    "h": 56,
+    "kind": "filled",
+    "bg": "rgba(31, 35, 40, 0.4)",
+    "color": "rgb(162, 218, 255)",
+    "border": "1px rgb(255, 255, 255)",
+    "radius": "6px",
+    "shadow": null,
+    "bgImage": null,
+    "size": "14px",
+    "weight": "400"
+   }
+  ],
+  "nav": {
+   "h": 72,
+   "bg": "rgba(0, 0, 0, 0)",
+   "backdrop": "none",
+   "bb": "0px none rgb(255, 255, 255)",
+   "shadow": null,
+   "linkColor": "rgb(255, 255, 255)"
+  },
+  "effects": {
+   "radial": 5,
+   "conic": 0,
+   "linear": 10,
+   "urlbg": 0,
+   "blurEls": 5,
+   "backdropEls": 9,
+   "mixBlend": 1,
+   "maskEls": 2,
+   "gradEx": [
+    "radial-gradient(circle at 0px 100%, rgb(230, 183, 254) 10%, rgb(80, 73, 194) 20%, rgba(87, 78, 255, 0) 60%)",
+    "radial-gradient(rgb(167, 162, 255) 30%, rgba(147, 80, 255, 0.5))",
+    "radial-gradient(circle at 0px 100%, rgb(230, 183, 254) 20%, rgb(80, 73, 194) 40%, rgba(58, 55, 255, 0) 50%)",
+    "radial-gradient(circle at 0px 100%, rgb(230, 183, 254) 10%, rgb(80, 73, 194) 20%, rgba(87, 78, 255, 0) 60%)",
+    "radial-gradient(rgb(167, 162, 255) 30%, rgba(147, 80, 255, 0.5))"
+   ],
+   "canvas": 6,
+   "video": 2,
+   "svg": 116,
+   "img": 24
+  },
+  "noise": false,
+  "gradientHeadings": 0,
+  "accents": [
+   {
+    "hex": "#5fed83",
+    "n": 6,
+    "L": 0.844,
+    "C": 0.191,
+    "H": 149
+   },
+   {
+    "hex": "#08872b",
+    "n": 3,
+    "L": 0.543,
+    "C": 0.163,
+    "H": 146
+   },
+   {
+    "hex": "#1f6feb",
+    "n": 1,
+    "L": 0.569,
+    "C": 0.202,
+    "H": 260
+   },
+   {
+    "hex": "#8c93fb",
+    "n": 1,
+    "L": 0.703,
+    "C": 0.151,
+    "H": 279
+   }
+  ]
+ }
+}

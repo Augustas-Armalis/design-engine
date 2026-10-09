@@ -6,12 +6,14 @@ import { STAGGER, dur, ease, reveal, spring } from './motion'
 
 /** Headline word that rises out of a 6px blur (Kaching hero reveal). Put spaces between <Word>s. */
 export function Word({ children, i, start = 0.3 }: { children: ReactNode; i: number; start?: number }) {
-  return <motion.span className="inline-block" {...reveal(start + i * STAGGER, { y: 28, blur: true })}>{children}</motion.span>
+  const still = useReducedMotion()
+  return <motion.span className="inline-block" {...reveal(start + i * STAGGER, { y: still ? 0 : 28, blur: !still })}>{children}</motion.span>
 }
 
 /** Any block that should arrive on the timeline. */
 export function Reveal({ at, y = 20, blur = false, className, children }: { at: number; y?: number; blur?: boolean; className?: string; children: ReactNode }) {
-  return <motion.div {...reveal(at, { y, blur })} className={className}>{children}</motion.div>
+  const still = useReducedMotion()
+  return <motion.div {...reveal(at, { y: still ? 0 : y, blur: blur && !still })} className={className}>{children}</motion.div>
 }
 
 /** Product stage: lifts from 97% and rises, fading in quickly (Kaching page-hero-stage). */
@@ -43,7 +45,7 @@ export function PillNav({ links, active, id = 'nav-pill' }: { links: string[]; a
       {links.map((l) => (
         <li key={l} className="relative">
           {on === l && <motion.span layoutId={id} transition={spring} className="absolute inset-0 rounded-[10px] bg-white shadow-[var(--shadow-ring)]" />}
-          <a href="#" onMouseEnter={() => setHover(l)} onFocus={() => setHover(l)}
+          <a href="#" onPointerEnter={(e) => { if (e.pointerType === 'mouse') setHover(l) }} onFocus={() => setHover(l)}
             className={`relative flex h-9 items-center rounded-[10px] px-3.5 text-[14px] font-[500] tracking-[-0.01em] transition-colors duration-[220ms] ${on === l ? 'text-[var(--ink)]' : 'text-[var(--sub)]'}`}>{l}</a>
         </li>
       ))}
@@ -97,7 +99,7 @@ export function Route({ d, end, at, order = 0, color = 'var(--accent,#335cff)', 
           initial={{ pathLength: 0.09, pathOffset: 0, opacity: 0 }} animate={{ pathOffset: [0, 0.91], opacity: [0, 1, 1, 0] }}
           transition={{ delay: land + 0.6 + order * 0.5, duration: 2.4, ease: ease.inOut, times: [0, 0.15, 0.85, 1], repeat: Infinity, repeatDelay: 1.8 }} />
       )}
-      <motion.g style={fillBox} initial={{ scale: 0, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} transition={{ delay: land - 0.08, duration: 0.6, ease: ease.outExpo }}>
+      <motion.g style={fillBox} initial={{ scale: 0.5, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} transition={{ delay: land - 0.08, duration: 0.6, ease: ease.outExpo }}>
         {!still && (
           <motion.circle cx={end[0]} cy={end[1]} r={6} fill={color} style={fillBox} initial={{ scale: 0.6, opacity: 0 }} animate={{ scale: [0.6, 0.6, 2.6], opacity: [0, 0.5, 0] }}
             transition={{ delay: land + 0.15, duration: 2.5, times: [0, 0.05, 1], ease: ease.outQuint, repeat: Infinity, repeatDelay: 0.8 + order * 0.15 }} />
@@ -131,7 +133,7 @@ export function Rails({ xs = [120, 1320], hairline = 88 }: { xs?: number[]; hair
     <div aria-hidden className="pointer-events-none absolute inset-0">
       {xs.map((l) => <motion.div key={l} initial={{ scaleY: 0 }} animate={{ scaleY: 1 }} transition={{ duration: 1.6, ease: ease.outExpo }} className="absolute inset-y-0 w-px origin-top bg-[var(--rail,#e4e4e4)]" style={{ left: l }} />)}
       <motion.div initial={{ scaleX: 0 }} animate={{ scaleX: 1 }} transition={{ delay: 0.05, duration: 1.6, ease: ease.outExpo }} className="absolute inset-x-0 h-px bg-[var(--rail,#e4e4e4)]" style={{ top: hairline }} />
-      {xs.map((l) => <motion.span key={`n${l}`} initial={{ scale: 0, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} transition={{ delay: 0.5, duration: 0.6, ease: ease.outExpo }} className="absolute size-[7px] rounded-[2px] bg-[var(--canvas,#f7f7f7)] shadow-[0_0_0_1px_#d4d4d4]" style={{ left: l - 3, top: hairline - 3 }} />)}
+      {xs.map((l) => <motion.span key={`n${l}`} initial={{ scale: 0.5, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} transition={{ delay: 0.5, duration: 0.6, ease: ease.outExpo }} className="absolute size-[7px] rounded-[2px] bg-[var(--canvas,#f7f7f7)] shadow-[0_0_0_1px_#d4d4d4]" style={{ left: l - 3, top: hairline - 3 }} />)}
     </div>
   )
 }

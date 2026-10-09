@@ -1,0 +1,1140 @@
+{
+ "url": "https://www.framer.com",
+ "scheme": "dark",
+ "pageHeight": 10741,
+ "fold": {
+  "title": "Framer: AI design agent",
+  "vw": 1440,
+  "pageHeight": 10741,
+  "colorScheme": {
+   "html": "normal",
+   "body": "normal",
+   "metaTheme": null,
+   "htmlClass": "",
+   "dataTheme": null
+  },
+  "pageBg": "#000000",
+  "pageBgOklabL": 0,
+  "pageBgOklabC": 0,
+  "pageBgOklabH": 0,
+  "cssVarCount": 424,
+  "cssVars": [],
+  "surfaces": [
+   {
+    "hex": "#000000",
+    "L": 0,
+    "C": 0,
+    "H": 0,
+    "n": 37,
+    "area": 17908028,
+    "ex": [
+     "div.framer-7JImb",
+     "div.framer-1gyv5v7"
+    ]
+   },
+   {
+    "hex": "#111111",
+    "L": 0.178,
+    "C": 0,
+    "H": 90,
+    "n": 13,
+    "area": 3645005,
+    "ex": [
+     "div.framer-1wqofv6",
+     "div.framer-1p8qibt"
+    ]
+   },
+   {
+    "hex": "#171717",
+    "L": 0.205,
+    "C": 0,
+    "H": 90,
+    "n": 4,
+    "area": 949653,
+    "ex": [
+     "div.framer-3iubu6",
+     "div.framer-1ywvyej"
+    ]
+   },
+   {
+    "hex": "#0099ff",
+    "L": 0.669,
+    "C": 0.184,
+    "H": 249,
+    "n": 2,
+    "area": 113040,
+    "ex": [
+     "div.framer-ebjkfq",
+     "div.framer-14s0p1d"
+    ]
+   },
+   {
+    "hex": "#1a1a1a",
+    "L": 0.218,
+    "C": 0,
+    "H": 90,
+    "n": 1,
+    "area": 108252,
+    "ex": [
+     "form.framer-7yc5tw"
+    ]
+   },
+   {
+    "hex": "#242424",
+    "L": 0.26,
+    "C": 0,
+    "H": 90,
+    "n": 11,
+    "area": 97174,
+    "ex": [
+     "div.framer-2kw70q",
+     "div.framer-1c3c556"
+    ]
+   },
+   {
+    "hex": "#1f1f1f",
+    "L": 0.239,
+    "C": 0,
+    "H": 90,
+    "n": 3,
+    "area": 38434,
+    "ex": [
+     "div.framer-n9x44",
+     "div.framer-molehw"
+    ]
+   },
+   {
+    "hex": "#121212",
+    "L": 0.182,
+    "C": 0,
+    "H": 90,
+    "n": 2,
+    "area": 14880,
+    "ex": [
+     "div.framer-18m1fx3",
+     "div.framer-1bjns7x"
+    ]
+   },
+   {
+    "hex": "#ffffff",
+    "L": 1,
+    "C": 0,
+    "H": 90,
+    "n": 1,
+    "area": 5075,
+    "ex": [
+     "a.framer-PzEJo"
+    ]
+   },
+   {
+    "hex": "#383838",
+    "L": 0.341,
+    "C": 0,
+    "H": 90,
+    "n": 1,
+    "area": 3199,
+    "ex": [
+     "div.framer-1ef7umo"
+    ]
+   }
+  ],
+  "overlays": [
+   {
+    "bg": "rgba(0, 153, 255, 0.22) => #002238",
+    "n": 3,
+    "area": 549172
+   },
+   {
+    "bg": "rgba(255, 255, 255, 0.15) => #262626",
+    "n": 1,
+    "area": 411172
+   },
+   {
+    "bg": "rgba(0, 153, 255, 0.22) => #0d2f45",
+    "n": 1,
+    "area": 34400
+   },
+   {
+    "bg": "rgba(255, 255, 255, 0.1) => #1a1a1a",
+    "n": 5,
+    "area": 23829
+   },
+   {
+    "bg": "rgba(255, 255, 255, 0.05) => #232323",
+    "n": 1,
+    "area": 16800
+   },
+   {
+    "bg": "rgba(255, 255, 255, 0.08) => #141414",
+    "n": 4,
+    "area": 13776
+   },
+   {
+    "bg": "rgba(31, 31, 31, 0.5) => #101010",
+    "n": 1,
+    "area": 11056
+   }
+  ],
+  "borders": [
+   {
+    "border": "rgba(255, 255, 255, 0.06) @1px",
+    "n": 32,
+    "alpha": 0.06,
+    "flatOnPage": "#0f0f0f",
+    "L": 0.17
+   },
+   {
+    "border": "rgba(0, 153, 255, 0.42) @1px",
+    "n": 16,
+    "alpha": 0.42,
+    "flatOnPage": "#00406b",
+    "L": 0.361
+   },
+   {
+    "border": "rgb(0, 153, 255) @1px",
+    "n": 16,
+    "alpha": 1,
+    "flatOnPage": "#0099ff",
+    "L": 0.669
+   }
+  ],
+  "radii": [
+   [
+    "8px",
+    214
+   ],
+   [
+    "15px",
+    71
+   ],
+   [
+    "6px",
+    34
+   ],
+   [
+    "20px",
+    26
+   ],
+   [
+    "4px",
+    24
+   ],
+   [
+    "100px",
+    14
+   ],
+   [
+    "18px",
+    13
+   ],
+   [
+    "25px",
+    10
+   ]
+  ],
+  "shadows": [
+   {
+    "shadow": "rgba(0, 0, 0, 0.1) 0px 1px 2px 0px",
+    "n": 3
+   },
+   {
+    "shadow": "rgba(0, 0, 0, 0.2) 0px 2px 6px 0px",
+    "n": 3
+   },
+   {
+    "shadow": "rgba(0, 0, 0, 0.2) 0px 26px 41.6px 0px",
+    "n": 2
+   },
+   {
+    "shadow": "rgba(0, 0, 0, 0.2) 0px 35.8995px 57.4392px 0px",
+    "n": 2
+   },
+   {
+    "shadow": "rgba(0, 0, 0, 0.2) 0px 16.1005px 25.7608px 0px",
+    "n": 2
+   },
+   {
+    "shadow": "rgba(255, 255, 255, 0.08) 0px 0px 0px 1px",
+    "n": 1
+   },
+   {
+    "shadow": "rgba(0, 153, 255, 0.15) 0px 1px 2px 0px, rgba(0, 153, 255, 0.2) 0px 2px 4px 0px",
+    "n": 1
+   },
+   {
+    "shadow": "rgba(0, 0, 0, 0.2) 0px 40px 64px 0px",
+    "n": 1
+   },
+   {
+    "shadow": "rgba(0, 0, 0, 0.2) 0px 12px 19.2px 0px",
+    "n": 1
+   },
+   {
+    "shadow": "rgba(255, 255, 255, 0.1) 0px 0px 0px 1px",
+    "n": 1
+   }
+  ],
+  "nShadowEls": 18,
+  "textColors": [
+   {
+    "color": "rgb(255, 255, 255)",
+    "chars": 2205,
+    "n": 147,
+    "fg": "#ffffff",
+    "alpha": 1,
+    "contrast": 21,
+    "L": 1,
+    "bg": "#000000",
+    "size": "14px",
+    "weight": "400",
+    "ex": "Framer"
+   },
+   {
+    "color": "rgba(255, 255, 255, 0.6)",
+    "chars": 1557,
+    "n": 94,
+    "fg": "#999999",
+    "alpha": 0.6,
+    "contrast": 7.37,
+    "L": 0.683,
+    "bg": "#000000",
+    "size": "14px",
+    "weight": "400",
+    "ex": "Log in"
+   },
+   {
+    "color": "rgb(153, 153, 153)",
+    "chars": 1286,
+    "n": 147,
+    "fg": "#999999",
+    "alpha": 1,
+    "contrast": 6.63,
+    "L": 0.683,
+    "bg": "#111111",
+    "size": "12px",
+    "weight": "400",
+    "ex": "·"
+   },
+   {
+    "color": "rgb(214, 122, 92)",
+    "chars": 260,
+    "n": 5,
+    "fg": "#d67a5c",
+    "alpha": 1,
+    "contrast": 6.11,
+    "L": 0.674,
+    "bg": "#111111",
+    "size": "12px",
+    "weight": "400",
+    "ex": "╭─── Claude Code v2.1.170 ──"
+   },
+   {
+    "color": "rgb(204, 204, 204)",
+    "chars": 157,
+    "n": 3,
+    "fg": "#cccccc",
+    "alpha": 1,
+    "contrast": 11.76,
+    "L": 0.845,
+    "bg": "#111111",
+    "size": "12px",
+    "weight": "500",
+    "ex": "Placing layout variations si"
+   },
+   {
+    "color": "rgb(102, 102, 102)",
+    "chars": 145,
+    "n": 20,
+    "fg": "#666666",
+    "alpha": 1,
+    "contrast": 3.29,
+    "L": 0.51,
+    "bg": "#111111",
+    "size": "10px",
+    "weight": "500",
+    "ex": "256"
+   },
+   {
+    "color": "rgba(255, 255, 255, 0.5)",
+    "chars": 45,
+    "n": 2,
+    "fg": "#8b8b8b",
+    "alpha": 0.5,
+    "contrast": 5.26,
+    "L": 0.637,
+    "bg": "#171717",
+    "size": "12px",
+    "weight": "600",
+    "ex": "Exploration — Big Intro"
+   },
+   {
+    "color": "rgba(255, 255, 255, 0.8)",
+    "chars": 43,
+    "n": 5,
+    "fg": "#cccccc",
+    "alpha": 0.8,
+    "contrast": 13.08,
+    "L": 0.845,
+    "bg": "#000000",
+    "size": "14px",
+    "weight": "400",
+    "ex": "Platform"
+   },
+   {
+    "color": "rgb(0, 0, 0)",
+    "chars": 42,
+    "n": 3,
+    "fg": "#000000",
+    "alpha": 1,
+    "contrast": 21,
+    "L": 0,
+    "bg": "#ffffff",
+    "size": "14px",
+    "weight": "400",
+    "ex": "Sign up"
+   },
+   {
+    "color": "rgb(0, 187, 136)",
+    "chars": 40,
+    "n": 10,
+    "fg": "#00bb88",
+    "alpha": 1,
+    "contrast": 6.68,
+    "L": 0.702,
+    "bg": "#0f221d",
+    "size": "13px",
+    "weight": "500",
+    "ex": "Live"
+   },
+   {
+    "color": "rgb(0, 153, 255)",
+    "chars": 35,
+    "n": 6,
+    "fg": "#0099ff",
+    "alpha": 1,
+    "contrast": 5.98,
+    "L": 0.669,
+    "bg": "#171717",
+    "size": "12px",
+    "weight": "600",
+    "ex": "Exploration"
+   },
+   {
+    "color": "rgb(203, 203, 203)",
+    "chars": 24,
+    "n": 3,
+    "fg": "#cbcbcb",
+    "alpha": 1,
+    "contrast": 11.64,
+    "L": 0.842,
+    "bg": "#111111",
+    "size": "12px",
+    "weight": "500",
+    "ex": "Title"
+   }
+  ],
+  "h1": {
+   "text": "Framer is the design agent for every step from idea to launc",
+   "family": "\"GT Walsheim Medium\", \"GT Walsheim Medium Placeholder\", sans",
+   "size": "54px",
+   "weight": "500",
+   "lh": "54px",
+   "ls": "-2.16px",
+   "color": "rgb(255, 255, 255)",
+   "smooth": "antialiased",
+   "bgClip": "border-box",
+   "bgImage": "none",
+   "textShadow": null
+  },
+  "body": {
+   "text": "Framer\n\nPlatform\n\nSolutions\n\nResources\n\nEnterprise\n\nPricing\n",
+   "family": "sans-serif",
+   "size": "12px",
+   "weight": "400",
+   "lh": "normal",
+   "ls": "normal",
+   "color": "rgb(0, 0, 0)",
+   "smooth": "antialiased",
+   "bgClip": "border-box",
+   "bgImage": "none",
+   "textShadow": null
+  },
+  "bodySmoothing": "antialiased",
+  "textRendering": "auto",
+  "heroP": null,
+  "ctas": [
+   {
+    "text": "Sign up",
+    "h": 30,
+    "kind": "filled",
+    "bg": "rgb(255, 255, 255)",
+    "color": "rgb(0, 0, 238)",
+    "border": null,
+    "radius": "8px",
+    "shadow": null,
+    "bgImage": null,
+    "size": "12px",
+    "weight": "400"
+   },
+   {
+    "text": "Get started for free",
+    "h": 34,
+    "kind": "filled",
+    "bg": "rgb(255, 255, 255)",
+    "color": "rgb(0, 0, 238)",
+    "border": null,
+    "radius": "8px",
+    "shadow": null,
+    "bgImage": null,
+    "size": "12px",
+    "weight": "400"
+   }
+  ],
+  "nav": {
+   "h": 64,
+   "bg": "rgba(0, 0, 0, 0)",
+   "backdrop": "none",
+   "bb": "0px none rgb(0, 0, 0)",
+   "shadow": null,
+   "linkColor": "rgb(0, 0, 238)"
+  },
+  "effects": {
+   "radial": 0,
+   "conic": 0,
+   "linear": 6,
+   "urlbg": 111,
+   "blurEls": 41,
+   "backdropEls": 5,
+   "mixBlend": 4,
+   "maskEls": 33,
+   "gradEx": [],
+   "canvas": 0,
+   "video": 4,
+   "svg": 135,
+   "img": 85
+  },
+  "noise": false,
+  "gradientHeadings": 0,
+  "accents": [
+   {
+    "hex": "#0000ee",
+    "n": 928,
+    "L": 0.429,
+    "C": 0.297,
+    "H": 264
+   },
+   {
+    "hex": "#0099ff",
+    "n": 23,
+    "L": 0.669,
+    "C": 0.184,
+    "H": 249
+   },
+   {
+    "hex": "#00bb88",
+    "n": 20,
+    "L": 0.702,
+    "C": 0.147,
+    "H": 165
+   },
+   {
+    "hex": "#d67a5c",
+    "n": 10,
+    "L": 0.674,
+    "C": 0.123,
+    "H": 39
+   },
+   {
+    "hex": "#9869fd",
+    "n": 4,
+    "L": 0.642,
+    "C": 0.211,
+    "H": 294
+   },
+   {
+    "hex": "#4cd963",
+    "n": 3,
+    "L": 0.784,
+    "C": 0.2,
+    "H": 146
+   }
+  ]
+ },
+ "full": {
+  "title": "Framer: AI design agent",
+  "vw": 1440,
+  "pageHeight": 10741,
+  "colorScheme": {
+   "html": "normal",
+   "body": "normal",
+   "metaTheme": null,
+   "htmlClass": "",
+   "dataTheme": null
+  },
+  "pageBg": "#000000",
+  "pageBgOklabL": 0,
+  "pageBgOklabC": 0,
+  "pageBgOklabH": 0,
+  "cssVarCount": 424,
+  "cssVars": [],
+  "surfaces": [
+   {
+    "hex": "#000000",
+    "L": 0,
+    "C": 0,
+    "H": 0,
+    "n": 37,
+    "area": 17908028,
+    "ex": [
+     "div.framer-7JImb",
+     "div.framer-1gyv5v7"
+    ]
+   },
+   {
+    "hex": "#111111",
+    "L": 0.178,
+    "C": 0,
+    "H": 90,
+    "n": 14,
+    "area": 3800705,
+    "ex": [
+     "div.framer-1wqofv6",
+     "div.framer-1p8qibt"
+    ]
+   },
+   {
+    "hex": "#171717",
+    "L": 0.205,
+    "C": 0,
+    "H": 90,
+    "n": 4,
+    "area": 949653,
+    "ex": [
+     "div.framer-3iubu6",
+     "div.framer-1ywvyej"
+    ]
+   },
+   {
+    "hex": "#0099ff",
+    "L": 0.669,
+    "C": 0.184,
+    "H": 249,
+    "n": 2,
+    "area": 113040,
+    "ex": [
+     "div.framer-ebjkfq",
+     "div.framer-14s0p1d"
+    ]
+   },
+   {
+    "hex": "#1a1a1a",
+    "L": 0.218,
+    "C": 0,
+    "H": 90,
+    "n": 1,
+    "area": 108252,
+    "ex": [
+     "form.framer-7yc5tw"
+    ]
+   },
+   {
+    "hex": "#242424",
+    "L": 0.26,
+    "C": 0,
+    "H": 90,
+    "n": 11,
+    "area": 97174,
+    "ex": [
+     "div.framer-2kw70q",
+     "div.framer-1c3c556"
+    ]
+   },
+   {
+    "hex": "#1f1f1f",
+    "L": 0.239,
+    "C": 0,
+    "H": 90,
+    "n": 3,
+    "area": 38434,
+    "ex": [
+     "div.framer-n9x44",
+     "div.framer-molehw"
+    ]
+   },
+   {
+    "hex": "#121212",
+    "L": 0.182,
+    "C": 0,
+    "H": 90,
+    "n": 2,
+    "area": 14880,
+    "ex": [
+     "div.framer-18m1fx3",
+     "div.framer-1bjns7x"
+    ]
+   },
+   {
+    "hex": "#ffffff",
+    "L": 1,
+    "C": 0,
+    "H": 90,
+    "n": 1,
+    "area": 5075,
+    "ex": [
+     "a.framer-PzEJo"
+    ]
+   },
+   {
+    "hex": "#383838",
+    "L": 0.341,
+    "C": 0,
+    "H": 90,
+    "n": 1,
+    "area": 3199,
+    "ex": [
+     "div.framer-1ef7umo"
+    ]
+   }
+  ],
+  "overlays": [
+   {
+    "bg": "rgba(255, 255, 255, 0.15) => #262626",
+    "n": 1,
+    "area": 411172
+   },
+   {
+    "bg": "rgba(0, 153, 255, 0.204) => #001f34",
+    "n": 1,
+    "area": 389391
+   },
+   {
+    "bg": "rgba(0, 153, 255, 0.18) => #001c2e",
+    "n": 2,
+    "area": 159781
+   },
+   {
+    "bg": "rgba(0, 153, 255, 0.2) => #0e2c41",
+    "n": 1,
+    "area": 34400
+   },
+   {
+    "bg": "rgba(255, 255, 255, 0.1) => #1a1a1a",
+    "n": 5,
+    "area": 23829
+   },
+   {
+    "bg": "rgba(255, 255, 255, 0.05) => #232323",
+    "n": 1,
+    "area": 16800
+   },
+   {
+    "bg": "rgba(255, 255, 255, 0.08) => #141414",
+    "n": 4,
+    "area": 13776
+   },
+   {
+    "bg": "rgba(31, 31, 31, 0.5) => #101010",
+    "n": 1,
+    "area": 11056
+   }
+  ],
+  "borders": [
+   {
+    "border": "rgba(255, 255, 255, 0.06) @1px",
+    "n": 32,
+    "alpha": 0.06,
+    "flatOnPage": "#0f0f0f",
+    "L": 0.17
+   },
+   {
+    "border": "rgb(0, 153, 255) @1px",
+    "n": 16,
+    "alpha": 1,
+    "flatOnPage": "#0099ff",
+    "L": 0.669
+   },
+   {
+    "border": "rgba(0, 153, 255, 0.365) @1px",
+    "n": 8,
+    "alpha": 0.365,
+    "flatOnPage": "#00385d",
+    "L": 0.329
+   },
+   {
+    "border": "rgba(0, 153, 255, 0.392) @1px",
+    "n": 4,
+    "alpha": 0.392,
+    "flatOnPage": "#003c64",
+    "L": 0.345
+   },
+   {
+    "border": "rgba(0, 153, 255, 0.4) @1px",
+    "n": 4,
+    "alpha": 0.4,
+    "flatOnPage": "#003d66",
+    "L": 0.35
+   }
+  ],
+  "radii": [
+   [
+    "8px",
+    231
+   ],
+   [
+    "15px",
+    71
+   ],
+   [
+    "6px",
+    34
+   ],
+   [
+    "20px",
+    29
+   ],
+   [
+    "4px",
+    24
+   ],
+   [
+    "100px",
+    17
+   ],
+   [
+    "18px",
+    15
+   ],
+   [
+    "25px",
+    10
+   ]
+  ],
+  "shadows": [
+   {
+    "shadow": "rgba(0, 0, 0, 0.2) 0px 2px 6px 0px",
+    "n": 6
+   },
+   {
+    "shadow": "rgba(0, 0, 0, 0.1) 0px 1px 2px 0px",
+    "n": 3
+   },
+   {
+    "shadow": "rgba(255, 255, 255, 0.08) 0px 0px 0px 1px",
+    "n": 1
+   },
+   {
+    "shadow": "rgba(0, 153, 255, 0.15) 0px 1px 2px 0px, rgba(0, 153, 255, 0.2) 0px 2px 4px 0px",
+    "n": 1
+   },
+   {
+    "shadow": "rgba(0, 0, 0, 0.2) 0px 31.2606px 50.0169px 0px",
+    "n": 1
+   },
+   {
+    "shadow": "rgba(0, 0, 0, 0.2) 0px 38.8938px 62.2301px 0px",
+    "n": 1
+   },
+   {
+    "shadow": "rgba(0, 0, 0, 0.2) 0px 38.9741px 62.3585px 0px",
+    "n": 1
+   },
+   {
+    "shadow": "rgba(0, 0, 0, 0.2) 0px 31.4543px 50.3268px 0px",
+    "n": 1
+   },
+   {
+    "shadow": "rgba(0, 0, 0, 0.2) 0px 20.7394px 33.1831px 0px",
+    "n": 1
+   },
+   {
+    "shadow": "rgba(0, 0, 0, 0.2) 0px 13.1062px 20.9699px 0px",
+    "n": 1
+   }
+  ],
+  "nShadowEls": 21,
+  "textColors": [
+   {
+    "color": "rgb(255, 255, 255)",
+    "chars": 2298,
+    "n": 155,
+    "fg": "#ffffff",
+    "alpha": 1,
+    "contrast": 21,
+    "L": 1,
+    "bg": "#000000",
+    "size": "14px",
+    "weight": "400",
+    "ex": "Framer"
+   },
+   {
+    "color": "rgba(255, 255, 255, 0.6)",
+    "chars": 1557,
+    "n": 94,
+    "fg": "#999999",
+    "alpha": 0.6,
+    "contrast": 7.37,
+    "L": 0.683,
+    "bg": "#000000",
+    "size": "14px",
+    "weight": "400",
+    "ex": "Log in"
+   },
+   {
+    "color": "rgb(153, 153, 153)",
+    "chars": 1325,
+    "n": 161,
+    "fg": "#999999",
+    "alpha": 1,
+    "contrast": 6.63,
+    "L": 0.683,
+    "bg": "#111111",
+    "size": "12px",
+    "weight": "400",
+    "ex": "·"
+   },
+   {
+    "color": "rgb(204, 204, 204)",
+    "chars": 275,
+    "n": 5,
+    "fg": "#cccccc",
+    "alpha": 1,
+    "contrast": 11.76,
+    "L": 0.845,
+    "bg": "#111111",
+    "size": "12px",
+    "weight": "500",
+    "ex": "Placing layout variations si"
+   },
+   {
+    "color": "rgb(214, 122, 92)",
+    "chars": 260,
+    "n": 5,
+    "fg": "#d67a5c",
+    "alpha": 1,
+    "contrast": 6.11,
+    "L": 0.674,
+    "bg": "#111111",
+    "size": "12px",
+    "weight": "400",
+    "ex": "╭─── Claude Code v2.1.170 ──"
+   },
+   {
+    "color": "rgb(102, 102, 102)",
+    "chars": 206,
+    "n": 25,
+    "fg": "#666666",
+    "alpha": 1,
+    "contrast": 3.29,
+    "L": 0.51,
+    "bg": "#111111",
+    "size": "10px",
+    "weight": "500",
+    "ex": "256"
+   },
+   {
+    "color": "rgba(255, 255, 255, 0.5)",
+    "chars": 45,
+    "n": 2,
+    "fg": "#8b8b8b",
+    "alpha": 0.5,
+    "contrast": 5.26,
+    "L": 0.637,
+    "bg": "#171717",
+    "size": "12px",
+    "weight": "600",
+    "ex": "Exploration — Big Intro"
+   },
+   {
+    "color": "rgba(255, 255, 255, 0.8)",
+    "chars": 43,
+    "n": 5,
+    "fg": "#cccccc",
+    "alpha": 0.8,
+    "contrast": 13.08,
+    "L": 0.845,
+    "bg": "#000000",
+    "size": "14px",
+    "weight": "400",
+    "ex": "Platform"
+   },
+   {
+    "color": "rgb(0, 0, 0)",
+    "chars": 42,
+    "n": 3,
+    "fg": "#000000",
+    "alpha": 1,
+    "contrast": 21,
+    "L": 0,
+    "bg": "#ffffff",
+    "size": "14px",
+    "weight": "400",
+    "ex": "Sign up"
+   },
+   {
+    "color": "rgb(0, 187, 136)",
+    "chars": 40,
+    "n": 10,
+    "fg": "#00bb88",
+    "alpha": 1,
+    "contrast": 6.68,
+    "L": 0.702,
+    "bg": "#0f221d",
+    "size": "13px",
+    "weight": "500",
+    "ex": "Live"
+   },
+   {
+    "color": "rgb(0, 153, 255)",
+    "chars": 35,
+    "n": 6,
+    "fg": "#0099ff",
+    "alpha": 1,
+    "contrast": 5.98,
+    "L": 0.669,
+    "bg": "#171717",
+    "size": "12px",
+    "weight": "600",
+    "ex": "Exploration"
+   },
+   {
+    "color": "rgb(203, 203, 203)",
+    "chars": 24,
+    "n": 3,
+    "fg": "#cbcbcb",
+    "alpha": 1,
+    "contrast": 11.64,
+    "L": 0.842,
+    "bg": "#111111",
+    "size": "12px",
+    "weight": "500",
+    "ex": "Title"
+   }
+  ],
+  "h1": {
+   "text": "Framer is the design agent for every step from idea to launc",
+   "family": "\"GT Walsheim Medium\", \"GT Walsheim Medium Placeholder\", sans",
+   "size": "54px",
+   "weight": "500",
+   "lh": "54px",
+   "ls": "-2.16px",
+   "color": "rgb(255, 255, 255)",
+   "smooth": "antialiased",
+   "bgClip": "border-box",
+   "bgImage": "none",
+   "textShadow": null
+  },
+  "body": {
+   "text": "Framer\n\nPlatform\n\nSolutions\n\nResources\n\nEnterprise\n\nPricing\n",
+   "family": "sans-serif",
+   "size": "12px",
+   "weight": "400",
+   "lh": "normal",
+   "ls": "normal",
+   "color": "rgb(0, 0, 0)",
+   "smooth": "antialiased",
+   "bgClip": "border-box",
+   "bgImage": "none",
+   "textShadow": null
+  },
+  "bodySmoothing": "antialiased",
+  "textRendering": "auto",
+  "heroP": null,
+  "ctas": [
+   {
+    "text": "Sign up",
+    "h": 30,
+    "kind": "filled",
+    "bg": "rgb(255, 255, 255)",
+    "color": "rgb(0, 0, 238)",
+    "border": null,
+    "radius": "8px",
+    "shadow": null,
+    "bgImage": null,
+    "size": "12px",
+    "weight": "400"
+   },
+   {
+    "text": "Get started for free",
+    "h": 34,
+    "kind": "filled",
+    "bg": "rgb(255, 255, 255)",
+    "color": "rgb(0, 0, 238)",
+    "border": null,
+    "radius": "8px",
+    "shadow": null,
+    "bgImage": null,
+    "size": "12px",
+    "weight": "400"
+   }
+  ],
+  "nav": {
+   "h": 64,
+   "bg": "rgba(0, 0, 0, 0)",
+   "backdrop": "none",
+   "bb": "0px none rgb(0, 0, 0)",
+   "shadow": null,
+   "linkColor": "rgb(0, 0, 238)"
+  },
+  "effects": {
+   "radial": 0,
+   "conic": 0,
+   "linear": 6,
+   "urlbg": 124,
+   "blurEls": 41,
+   "backdropEls": 8,
+   "mixBlend": 4,
+   "maskEls": 33,
+   "gradEx": [],
+   "canvas": 0,
+   "video": 7,
+   "svg": 139,
+   "img": 90
+  },
+  "noise": false,
+  "gradientHeadings": 0,
+  "accents": [
+   {
+    "hex": "#0000ee",
+    "n": 928,
+    "L": 0.429,
+    "C": 0.297,
+    "H": 264
+   },
+   {
+    "hex": "#0099ff",
+    "n": 23,
+    "L": 0.669,
+    "C": 0.184,
+    "H": 249
+   },
+   {
+    "hex": "#00bb88",
+    "n": 20,
+    "L": 0.702,
+    "C": 0.147,
+    "H": 165
+   },
+   {
+    "hex": "#d67a5c",
+    "n": 10,
+    "L": 0.674,
+    "C": 0.123,
+    "H": 39
+   },
+   {
+    "hex": "#9869fd",
+    "n": 4,
+    "L": 0.642,
+    "C": 0.211,
+    "H": 294
+   },
+   {
+    "hex": "#4cd963",
+    "n": 3,
+    "L": 0.784,
+    "C": 0.2,
+    "H": 146
+   }
+  ]
+ }
+}

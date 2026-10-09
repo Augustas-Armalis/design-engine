@@ -1,0 +1,2033 @@
+{
+ "url": "https://resend.com",
+ "scheme": "dark",
+ "pageHeight": 12319,
+ "fold": {
+  "title": "Resend · Email for developers",
+  "vw": 1440,
+  "pageHeight": 12319,
+  "colorScheme": {
+   "html": "dark",
+   "body": "dark",
+   "metaTheme": "#000000",
+   "htmlClass": "inter_5ab5b4e3-module__YT86iW__variable abcfavorit_5c8f7c25-module__H1A7Za__variable domaine_56b9fc94-module__WvXfCW__va",
+   "dataTheme": null
+  },
+  "pageBg": "#000000",
+  "pageBgOklabL": 0,
+  "pageBgOklabC": 0,
+  "pageBgOklabH": 0,
+  "cssVarCount": 868,
+  "cssVars": [
+   [
+    ":root, :host --color-red-500",
+    "lab(55.4814% 75.0732 48.8528)"
+   ],
+   [
+    ":root, :host --color-red-600",
+    "lab(48.4493% 77.4328 61.5452)"
+   ],
+   [
+    ":root, :host --color-orange-400",
+    "lab(70.0429% 42.5156 75.8207)"
+   ],
+   [
+    ":root, :host --color-orange-500",
+    "lab(64.272% 57.1788 90.3583)"
+   ],
+   [
+    ":root, :host --color-amber-500",
+    "lab(72.7183% 31.8672 97.9407)"
+   ],
+   [
+    ":root, :host --color-yellow-300",
+    "lab(89.7033% -.480294 84.4917)"
+   ],
+   [
+    ":root, :host --color-yellow-500",
+    "lab(76.3898% 14.5258 98.4589)"
+   ],
+   [
+    ":root, :host --color-lime-500",
+    "lab(75.3197% -46.6547 86.1778)"
+   ],
+   [
+    ":root, :host --color-green-300",
+    "lab(86.9953% -47.2691 25.0054)"
+   ],
+   [
+    ":root, :host --color-green-500",
+    "lab(70.5521% -66.5147 45.8073)"
+   ],
+   [
+    ":root, :host --color-emerald-400",
+    "lab(75.0771% -60.7313 19.4147)"
+   ],
+   [
+    ":root, :host --color-emerald-500",
+    "lab(66.9756% -58.27 19.5419)"
+   ],
+   [
+    ":root, :host --color-cyan-500",
+    "lab(67.805% -35.3952 -30.2018)"
+   ],
+   [
+    ":root, :host --color-blue-500",
+    "lab(54.1736% 13.3369 -74.6839)"
+   ],
+   [
+    ":root, :host --color-blue-600",
+    "lab(44.0605% 29.0279 -86.0352)"
+   ],
+   [
+    ":root, :host --color-violet-500",
+    "lab(49.9355% 55.1776 -81.8963)"
+   ],
+   [
+    ":root, :host --color-fuchsia-500",
+    "lab(56.4256% 83.132 -64.639)"
+   ],
+   [
+    ":root, :host --color-pink-500",
+    "lab(56.9303% 76.8162 -8.07021)"
+   ],
+   [
+    ":root, :host --color-slate-50",
+    "lab(98.1434% -.369519 -1.05966)"
+   ],
+   [
+    ":root, :host --color-slate-100",
+    "lab(96.286% -.852436 -2.46847)"
+   ],
+   [
+    ":root, :host --color-slate-300",
+    "lab(84.7652% -1.94535 -7.93337)"
+   ],
+   [
+    ":root, :host --color-gray-100",
+    "lab(96.1596% -.0823438 -1.13575)"
+   ],
+   [
+    ":root, :host --color-gray-200",
+    "lab(91.6229% -.159115 -2.26791)"
+   ],
+   [
+    ":root, :host --color-gray-300",
+    "lab(85.1236% -.612259 -3.7138)"
+   ],
+   [
+    ":root, :host --color-gray-500",
+    "lab(47.7841% -.393182 -10.0268)"
+   ],
+   [
+    ":root, :host --color-gray-600",
+    "lab(35.6337% -1.58697 -10.8425)"
+   ],
+   [
+    ":root, :host --color-zinc-200",
+    "lab(90.6853% .399232 -1.45452)"
+   ],
+   [
+    ":root, :host --color-zinc-300",
+    "lab(84.9837% .601262 -2.17986)"
+   ],
+   [
+    ":root, :host --color-zinc-400",
+    "lab(65.6464% 1.53497 -5.42429)"
+   ],
+   [
+    ":root, :host --color-zinc-500",
+    "lab(47.8878% 1.65477 -5.77283)"
+   ],
+   [
+    ":root, :host --color-zinc-950",
+    "lab(2.51107% .242703 -.886115)"
+   ],
+   [
+    ":root, :host --color-neutral-200",
+    "lab(90.952% 0 -.0000119209)"
+   ],
+   [
+    ":root, :host --color-neutral-300",
+    "lab(84.92% 0 -.0000119209)"
+   ],
+   [
+    ":root, :host --color-black",
+    "#000"
+   ],
+   [
+    ":root, :host --color-white",
+    "#fff"
+   ],
+   [
+    ":root, :host --shadow-lg",
+    "0 10px 15px -3px #0000001a, 0 4px 6px -4px #0000001a"
+   ],
+   [
+    ":root, :host --color-background",
+    "var(--background)"
+   ],
+   [
+    ":root, :host --color-canvas",
+    "var(--canvas)"
+   ],
+   [
+    ":root, :host --color-slate-1",
+    "var(--slate-a1)"
+   ],
+   [
+    ":root, :host --color-slate-2",
+    "var(--slate-a2)"
+   ],
+   [
+    ":root, :host --color-slate-3",
+    "var(--slate-a3)"
+   ],
+   [
+    ":root, :host --color-slate-4",
+    "var(--slate-a4)"
+   ],
+   [
+    ":root, :host --color-slate-5",
+    "var(--slate-a5)"
+   ],
+   [
+    ":root, :host --color-slate-6",
+    "var(--slate-a6)"
+   ],
+   [
+    ":root, :host --color-slate-7",
+    "var(--slate-a7)"
+   ],
+   [
+    ":root, :host --color-slate-8",
+    "var(--slate-a8)"
+   ],
+   [
+    ":root, :host --color-slate-9",
+    "var(--slate-a9)"
+   ],
+   [
+    ":root, :host --color-slate-10",
+    "var(--slate-a10)"
+   ],
+   [
+    ":root, :host --color-slate-11",
+    "var(--slate-a11)"
+   ],
+   [
+    ":root, :host --color-slate-12",
+    "var(--slate-a12)"
+   ],
+   [
+    ":root, :host --color-gray-1",
+    "var(--gray-1)"
+   ],
+   [
+    ":root, :host --color-gray-2",
+    "var(--gray-2)"
+   ],
+   [
+    ":root, :host --color-gray-3",
+    "var(--gray-3)"
+   ],
+   [
+    ":root, :host --color-gray-4",
+    "var(--gray-4)"
+   ],
+   [
+    ":root, :host --color-gray-5",
+    "var(--gray-5)"
+   ],
+   [
+    ":root, :host --color-gray-6",
+    "var(--gray-6)"
+   ],
+   [
+    ":root, :host --color-gray-7",
+    "var(--gray-7)"
+   ],
+   [
+    ":root, :host --color-gray-8",
+    "var(--gray-8)"
+   ],
+   [
+    ":root, :host --color-gray-9",
+    "var(--gray-9)"
+   ],
+   [
+    ":root, :host --color-gray-10",
+    "var(--gray-10)"
+   ],
+   [
+    ":root, :host --color-gray-11",
+    "var(--gray-11)"
+   ],
+   [
+    ":root, :host --color-gray-12",
+    "var(--gray-12)"
+   ],
+   [
+    ":root, :host --color-light-gray-a2",
+    "#ebebeb"
+   ],
+   [
+    ":root, :host --color-light-gray-a3",
+    "#d9d9d9"
+   ],
+   [
+    ":root, :host --color-light-gray-1",
+    "#f0f0f0"
+   ],
+   [
+    ":root, :host --color-light-gray-2",
+    "#eee"
+   ],
+   [
+    ":root, :host --color-light-gray-3",
+    "#d7d7d7"
+   ],
+   [
+    ":root, :host --color-light-gray-4",
+    "#bebebe"
+   ],
+   [
+    ":root, :host --color-light-gray-5",
+    "#989898"
+   ],
+   [
+    ":root, :host --color-light-gray-7",
+    "#656565"
+   ],
+   [
+    ":root, :host --color-light-gray-11",
+    "#0d0d0d"
+   ],
+   [
+    ":root, :host --color-light-gray-12",
+    "#191919"
+   ],
+   [
+    ":root, :host --color-gray-a1",
+    "var(--gray-a1)"
+   ],
+   [
+    ":root, :host --color-gray-a2",
+    "var(--gray-a2)"
+   ],
+   [
+    ":root, :host --color-gray-a3",
+    "var(--gray-a3)"
+   ],
+   [
+    ":root, :host --color-gray-a4",
+    "var(--gray-a4)"
+   ],
+   [
+    ":root, :host --color-gray-a5",
+    "var(--gray-a5)"
+   ],
+   [
+    ":root, :host --color-gray-a8",
+    "var(--gray-a8)"
+   ],
+   [
+    ":root, :host --color-gray-a9",
+    "var(--gray-a9)"
+   ],
+   [
+    ":root, :host --color-gray-a10",
+    "var(--gray-a10)"
+   ],
+   [
+    ":root, :host --color-gray-a11",
+    "var(--gray-a11)"
+   ],
+   [
+    ":root, :host --color-gray-a12",
+    "var(--gray-a12)"
+   ],
+   [
+    ":root, :host --color-black-2",
+    "var(--black-a2)"
+   ],
+   [
+    ":root, :host --color-black-3",
+    "var(--black-a3)"
+   ],
+   [
+    ":root, :host --color-black-5",
+    "var(--black-a5)"
+   ],
+   [
+    ":root, :host --color-black-6",
+    "var(--black-a6)"
+   ],
+   [
+    ":root, :host --color-black-8",
+    "var(--black-a8)"
+   ],
+   [
+    ":root, :host --color-black-9",
+    "var(--black-a9)"
+   ],
+   [
+    ":root, :host --color-black-12",
+    "var(--black-a12)"
+   ],
+   [
+    ":root, :host --color-light-slate-3",
+    "#0000330f"
+   ],
+   [
+    ":root, :host --color-light-slate-7",
+    "#00062e32"
+   ],
+   [
+    ":root, :host --color-violet-3",
+    "var(--violet-a3)"
+   ],
+   [
+    ":root, :host --color-violet-4",
+    "var(--violet-a4)"
+   ],
+   [
+    ":root, :host --color-violet-6",
+    "var(--violet-a6)"
+   ],
+   [
+    ":root, :host --color-violet-7",
+    "var(--violet-a7)"
+   ],
+   [
+    ":root, :host --color-violet-8",
+    "var(--violet-a8)"
+   ],
+   [
+    ":root, :host --color-violet-9",
+    "var(--violet-a9)"
+   ],
+   [
+    ":root, :host --color-violet-10",
+    "var(--violet-a10)"
+   ],
+   [
+    ":root, :host --color-violet-11",
+    "var(--violet-a11)"
+   ],
+   [
+    ":root, :host --color-sand-3",
+    "var(--sand-a3)"
+   ],
+   [
+    ":root, :host --color-sand-4",
+    "var(--sand-a4)"
+   ],
+   [
+    ":root, :host --color-sand-9",
+    "var(--sand-a9)"
+   ],
+   [
+    ":root, :host --color-sand-10",
+    "var(--sand-a10)"
+   ],
+   [
+    ":root, :host --color-sand-11",
+    "var(--sand-a11)"
+   ],
+   [
+    ":root, :host --color-green-1",
+    "var(--green-a1)"
+   ],
+   [
+    ":root, :host --color-green-3",
+    "var(--green-a3)"
+   ],
+   [
+    ":root, :host --color-green-4",
+    "var(--green-a4)"
+   ],
+   [
+    ":root, :host --color-green-5",
+    "var(--green-a5)"
+   ],
+   [
+    ":root, :host --color-green-6",
+    "var(--green-a6)"
+   ],
+   [
+    ":root, :host --color-green-7",
+    "var(--green-a7)"
+   ],
+   [
+    ":root, :host --color-green-8",
+    "var(--green-a8)"
+   ],
+   [
+    ":root, :host --color-green-9",
+    "var(--green-a9)"
+   ],
+   [
+    ":root, :host --color-green-10",
+    "var(--green-a10)"
+   ],
+   [
+    ":root, :host --color-green-11",
+    "var(--green-a11)"
+   ],
+   [
+    ":root, :host --color-green-12",
+    "var(--green-a12)"
+   ],
+   [
+    ":root, :host --color-red-1",
+    "var(--red-a1)"
+   ],
+   [
+    ":root, :host --color-red-3",
+    "var(--red-a3)"
+   ],
+   [
+    ":root, :host --color-red-4",
+    "var(--red-a4)"
+   ],
+   [
+    ":root, :host --color-red-5",
+    "var(--red-a5)"
+   ],
+   [
+    ":root, :host --color-red-6",
+    "var(--red-a6)"
+   ]
+  ],
+  "surfaces": [
+   {
+    "hex": "#000000",
+    "L": 0,
+    "C": 0,
+    "H": 0,
+    "n": 9,
+    "area": 6540375,
+    "ex": [
+     "div.bg-black",
+     "div.disable-children-scrolling"
+    ]
+   },
+   {
+    "hex": "#ffffff",
+    "L": 1,
+    "C": 0,
+    "H": 90,
+    "n": 3,
+    "area": 399641,
+    "ex": [
+     "div.md:border-[#262A2D]",
+     "div.tiptap"
+    ]
+   },
+   {
+    "hex": "#0b0e14",
+    "L": 0.163,
+    "C": 0.014,
+    "H": 264,
+    "n": 1,
+    "area": 6471,
+    "ex": [
+     "span.inline-flex"
+    ]
+   },
+   {
+    "hex": "#00a3ff",
+    "L": 0.691,
+    "C": 0.174,
+    "H": 245,
+    "n": 1,
+    "area": 4711,
+    "ex": [
+     "a."
+    ]
+   }
+  ],
+  "overlays": [
+   {
+    "bg": "rgba(214, 235, 253, 0.19) => #292d30",
+    "n": 3,
+    "area": 105120
+   },
+   {
+    "bg": "rgba(217, 237, 254, 0.145) => #1f2225",
+    "n": 1,
+    "area": 5621
+   },
+   {
+    "bg": "rgba(216, 244, 246, 0.035) => #080909",
+    "n": 1,
+    "area": 2948
+   }
+  ],
+  "borders": [
+   {
+    "border": "rgba(0, 0, 0, 0) @1px",
+    "n": 280,
+    "alpha": 0,
+    "flatOnPage": "#000000",
+    "L": 0
+   },
+   {
+    "border": "rgba(214, 235, 253, 0.19) @1px",
+    "n": 251,
+    "alpha": 0.19,
+    "flatOnPage": "#292d30",
+    "L": 0.293
+   },
+   {
+    "border": "rgba(217, 237, 254, 0.145) @1px",
+    "n": 94,
+    "alpha": 0.145,
+    "flatOnPage": "#1f2225",
+    "L": 0.252
+   },
+   {
+    "border": "oklab(0.999994 0.0000455678 0.0000200868 / 0.05) @2px",
+    "n": 16,
+    "alpha": 0.05,
+    "flatOnPage": "#0d0d0d",
+    "L": 0.158
+   },
+   {
+    "border": "rgb(38, 42, 45) @1px",
+    "n": 6,
+    "alpha": 1,
+    "flatOnPage": "#262a2d",
+    "L": 0.282
+   },
+   {
+    "border": "rgba(217, 237, 255, 0.365) @1px",
+    "n": 4,
+    "alpha": 0.365,
+    "flatOnPage": "#4f575d",
+    "L": 0.451
+   },
+   {
+    "border": "rgb(255, 196, 70) @1px",
+    "n": 4,
+    "alpha": 1,
+    "flatOnPage": "#ffc446",
+    "L": 0.852
+   },
+   {
+    "border": "rgb(255, 255, 255) @1px",
+    "n": 4,
+    "alpha": 1,
+    "flatOnPage": "#ffffff",
+    "L": 1
+   },
+   {
+    "border": "oklab(0.999994 0.0000455678 0.0000200868 / 0.05) @1px",
+    "n": 4,
+    "alpha": 0.05,
+    "flatOnPage": "#0d0d0d",
+    "L": 0.158
+   },
+   {
+    "border": "rgba(211, 237, 248, 0.114) @1px",
+    "n": 2,
+    "alpha": 0.114,
+    "flatOnPage": "#181b1c",
+    "L": 0.22
+   }
+  ],
+  "radii": [
+   [
+    "3.35544e+07px",
+    196
+   ],
+   [
+    "16px",
+    63
+   ],
+   [
+    "6px",
+    53
+   ],
+   [
+    "8px",
+    31
+   ],
+   [
+    "4px",
+    19
+   ],
+   [
+    "24px",
+    10
+   ],
+   [
+    "10px",
+    6
+   ],
+   [
+    "12px",
+    3
+   ]
+  ],
+  "shadows": [
+   {
+    "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(24, 25, 28, 0.88) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+    "n": 60
+   },
+   {
+    "shadow": "rgb(0, 0, 0) 0px 0px 0px 8px",
+    "n": 5
+   },
+   {
+    "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.1) 0px 1px 2px -1px",
+    "n": 4
+   }
+  ],
+  "nShadowEls": 69,
+  "textColors": [
+   {
+    "color": "rgb(161, 164, 165)",
+    "chars": 9049,
+    "n": 124,
+    "fg": "#a1a4a5",
+    "alpha": 1,
+    "contrast": 8.37,
+    "L": 0.717,
+    "bg": "#000000",
+    "size": "14px",
+    "weight": "500",
+    "ex": "Features"
+   },
+   {
+    "color": "rgba(241, 247, 254, 0.71)",
+    "chars": 1204,
+    "n": 77,
+    "fg": "#abafb4",
+    "alpha": 0.71,
+    "contrast": 9.56,
+    "L": 0.753,
+    "bg": "#000000",
+    "size": "16px",
+    "weight": "400",
+    "ex": "HTTP 200:"
+   },
+   {
+    "color": "rgb(240, 240, 240)",
+    "chars": 1014,
+    "n": 60,
+    "fg": "#f0f0f0",
+    "alpha": 1,
+    "contrast": 16.95,
+    "L": 0.955,
+    "bg": "#0b0e14",
+    "size": "14px",
+    "weight": "400",
+    "ex": "Join us at Resend Forward"
+   },
+   {
+    "color": "rgba(252, 253, 255, 0.937)",
+    "chars": 613,
+    "n": 32,
+    "fg": "#ecedef",
+    "alpha": 0.937,
+    "contrast": 17.94,
+    "L": 0.946,
+    "bg": "#000000",
+    "size": "20px",
+    "weight": "400",
+    "ex": "Test mode"
+   },
+   {
+    "color": "rgb(235, 236, 237)",
+    "chars": 551,
+    "n": 74,
+    "fg": "#ebeced",
+    "alpha": 1,
+    "contrast": 17.75,
+    "L": 0.943,
+    "bg": "#000000",
+    "size": "14px",
+    "weight": "400",
+    "ex": "Resend"
+   },
+   {
+    "color": "rgb(171, 171, 171)",
+    "chars": 530,
+    "n": 58,
+    "fg": "#ababab",
+    "alpha": 1,
+    "contrast": 9.14,
+    "L": 0.741,
+    "bg": "#000000",
+    "size": "12px",
+    "weight": "400",
+    "ex": "'react-email'"
+   },
+   {
+    "color": "rgb(108, 108, 108)",
+    "chars": 307,
+    "n": 66,
+    "fg": "#6c6c6c",
+    "alpha": 1,
+    "contrast": 4,
+    "L": 0.531,
+    "bg": "#000000",
+    "size": "14px",
+    "weight": "400",
+    "ex": "import"
+   },
+   {
+    "color": "rgba(229, 237, 253, 0.482)",
+    "chars": 266,
+    "n": 7,
+    "fg": "#6e727a",
+    "alpha": 0.482,
+    "contrast": 4.37,
+    "L": 0.552,
+    "bg": "#000000",
+    "size": "16px",
+    "weight": "400",
+    "ex": "\"26abdd24-36a9-475d-83bf-4d2"
+   },
+   {
+    "color": "rgb(255, 255, 255)",
+    "chars": 244,
+    "n": 25,
+    "fg": "#ffffff",
+    "alpha": 1,
+    "contrast": 21,
+    "L": 1,
+    "bg": "#000000",
+    "size": "14px",
+    "weight": "600",
+    "ex": "Get started"
+   },
+   {
+    "color": "rgb(160, 160, 160)",
+    "chars": 238,
+    "n": 216,
+    "fg": "#a0a0a0",
+    "alpha": 1,
+    "contrast": 8.03,
+    "L": 0.706,
+    "bg": "#000000",
+    "size": "14px",
+    "weight": "400",
+    "ex": "{"
+   },
+   {
+    "color": "rgb(70, 74, 77)",
+    "chars": 150,
+    "n": 84,
+    "fg": "#464a4d",
+    "alpha": 1,
+    "contrast": 2.35,
+    "L": 0.407,
+    "bg": "#000000",
+    "size": "14px",
+    "weight": "400",
+    "ex": "1"
+   },
+   {
+    "color": "rgb(255, 196, 70)",
+    "chars": 108,
+    "n": 6,
+    "fg": "#ffc446",
+    "alpha": 1,
+    "contrast": 13.24,
+    "L": 0.852,
+    "bg": "#000000",
+    "size": "14px",
+    "weight": "400",
+    "ex": "'resend'"
+   }
+  ],
+  "h1": {
+   "text": "Email for\ndevelopers",
+   "family": "domaine, ui-sans-serif, system-ui, sans-serif, \"Apple Color ",
+   "size": "96px",
+   "weight": "400",
+   "lh": "96px",
+   "ls": "-0.96px",
+   "color": "rgb(240, 240, 240)",
+   "smooth": "antialiased",
+   "bgClip": "text",
+   "bgImage": "linear-gradient(to right bottom, rgb(255, 255, 255) 30%, rgba(255, 255, 255, 0.5))",
+   "textShadow": null
+  },
+  "body": {
+   "text": "Features\nCompany\nEnterprise\nHelp\nDocs\nAI\nPricing\nLog in\nGet ",
+   "family": "inter, ui-sans-serif, system-ui, sans-serif, \"Apple Color Em",
+   "size": "16px",
+   "weight": "400",
+   "lh": "24px",
+   "ls": "normal",
+   "color": "rgb(240, 240, 240)",
+   "smooth": "antialiased",
+   "bgClip": "border-box",
+   "bgImage": "none",
+   "textShadow": null
+  },
+  "bodySmoothing": "antialiased",
+  "textRendering": "optimizelegibility",
+  "heroP": {
+   "text": "The best way to reach humans instead of spam folders. Delive",
+   "family": "inter, ui-sans-serif, system-ui, sans-serif, \"Apple Color Em",
+   "size": "18px",
+   "weight": "400",
+   "lh": "27px",
+   "ls": "normal",
+   "color": "rgb(161, 164, 165)",
+   "smooth": "antialiased",
+   "bgClip": "border-box",
+   "bgImage": "none",
+   "textShadow": null
+  },
+  "ctas": [
+   {
+    "text": "Log in",
+    "h": 40,
+    "kind": "outline",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(161, 164, 165)",
+    "border": "1px rgba(0, 0, 0, 0)",
+    "radius": "16px",
+    "shadow": null,
+    "bgImage": null,
+    "size": "14px",
+    "weight": "600"
+   },
+   {
+    "text": "Get started",
+    "h": 40,
+    "kind": "outline",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "border": "2px oklab(0.999994 0.0000455678 0.0000200868 / 0.05)",
+    "radius": "16px",
+    "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.1) 0px 1px 2",
+    "bgImage": "linear-gradient(104deg, rgba(253, 253, 253, 0.05) 5%, rgba(240, 240, 228, 0.1) 100%)",
+    "size": "14px",
+    "weight": "600"
+   },
+   {
+    "text": "Get started",
+    "h": 48,
+    "kind": "outline",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "border": "2px oklab(0.999994 0.0000455678 0.0000200868 / 0.05)",
+    "radius": "16px",
+    "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.1) 0px 1px 2",
+    "bgImage": "linear-gradient(104deg, rgba(253, 253, 253, 0.05) 5%, rgba(240, 240, 228, 0.1) 100%)",
+    "size": "16px",
+    "weight": "600"
+   },
+   {
+    "text": "Documentation",
+    "h": 48,
+    "kind": "outline",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(161, 164, 165)",
+    "border": "1px rgba(0, 0, 0, 0)",
+    "radius": "16px",
+    "shadow": null,
+    "bgImage": null,
+    "size": "16px",
+    "weight": "600"
+   }
+  ],
+  "nav": {
+   "h": 58,
+   "bg": "rgba(0, 0, 0, 0)",
+   "backdrop": "none",
+   "bb": "0px solid rgb(240, 240, 240)",
+   "shadow": null,
+   "linkColor": "rgb(240, 240, 240)"
+  },
+  "effects": {
+   "radial": 8,
+   "conic": 5,
+   "linear": 197,
+   "urlbg": 0,
+   "blurEls": 5,
+   "backdropEls": 4,
+   "mixBlend": 1,
+   "maskEls": 9,
+   "gradEx": [
+    "conic-gradient(from 90deg, rgba(0, 0, 0, 0) 50%, rgb(0, 0, 0) 50%), radial-gradient(rgba(200, 200, 200, 0.1) 0%, rgba(0, 0, 0, 0) 80%)",
+    "radial-gradient(70% 80% at 50% 0%, rgba(255, 255, 255, 0.06) 3%, rgba(98, 255, 179, 0) 70%, rgba(98, 255, 179, 0) 100%)",
+    "radial-gradient(41.07% 8.33% at 50% 0%, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(rgb(16, 16, 16) 0%, rgba(0, 0, 0, 0.8) 100%)",
+    "radial-gradient(100% 50% at 50% 0%, rgba(0, 163, 255, 0.13) 0%, rgba(0, 163, 255, 0) 50%, rgba(0, 163, 255, 0) 100%)",
+    "conic-gradient(from 90deg, rgba(0, 0, 0, 0) 50%, rgb(0, 0, 0) 50%), radial-gradient(rgba(200, 200, 200, 0.1) 0%, rgba(0, 0, 0, 0) 80%)",
+    "conic-gradient(from 90deg, rgba(0, 0, 0, 0) 50%, rgb(0, 0, 0) 50%), radial-gradient(rgba(200, 200, 200, 0.1) 0%, rgba(0, 0, 0, 0) 80%)"
+   ],
+   "canvas": 1,
+   "video": 5,
+   "svg": 103,
+   "img": 73
+  },
+  "noise": false,
+  "gradientHeadings": 10,
+  "accents": [
+   {
+    "hex": "#ffc446",
+    "n": 30,
+    "L": 0.852,
+    "C": 0.152,
+    "H": 83
+   },
+   {
+    "hex": "#44ffa4",
+    "n": 9,
+    "L": 0.888,
+    "C": 0.194,
+    "H": 157
+   },
+   {
+    "hex": "#3b9eff",
+    "n": 8,
+    "L": 0.688,
+    "C": 0.169,
+    "H": 251
+   },
+   {
+    "hex": "#46fea5",
+    "n": 6,
+    "L": 0.886,
+    "C": 0.191,
+    "H": 157
+   },
+   {
+    "hex": "#baa7ff",
+    "n": 5,
+    "L": 0.778,
+    "C": 0.125,
+    "H": 293
+   },
+   {
+    "hex": "#70b8ff",
+    "n": 5,
+    "L": 0.764,
+    "C": 0.126,
+    "H": 249
+   }
+  ]
+ },
+ "full": {
+  "title": "Resend · Email for developers",
+  "vw": 1440,
+  "pageHeight": 12320,
+  "colorScheme": {
+   "html": "dark",
+   "body": "dark",
+   "metaTheme": "#000000",
+   "htmlClass": "inter_5ab5b4e3-module__YT86iW__variable abcfavorit_5c8f7c25-module__H1A7Za__variable domaine_56b9fc94-module__WvXfCW__va",
+   "dataTheme": null
+  },
+  "pageBg": "#000000",
+  "pageBgOklabL": 0,
+  "pageBgOklabC": 0,
+  "pageBgOklabH": 0,
+  "cssVarCount": 868,
+  "cssVars": [
+   [
+    ":root, :host --color-red-500",
+    "lab(55.4814% 75.0732 48.8528)"
+   ],
+   [
+    ":root, :host --color-red-600",
+    "lab(48.4493% 77.4328 61.5452)"
+   ],
+   [
+    ":root, :host --color-orange-400",
+    "lab(70.0429% 42.5156 75.8207)"
+   ],
+   [
+    ":root, :host --color-orange-500",
+    "lab(64.272% 57.1788 90.3583)"
+   ],
+   [
+    ":root, :host --color-amber-500",
+    "lab(72.7183% 31.8672 97.9407)"
+   ],
+   [
+    ":root, :host --color-yellow-300",
+    "lab(89.7033% -.480294 84.4917)"
+   ],
+   [
+    ":root, :host --color-yellow-500",
+    "lab(76.3898% 14.5258 98.4589)"
+   ],
+   [
+    ":root, :host --color-lime-500",
+    "lab(75.3197% -46.6547 86.1778)"
+   ],
+   [
+    ":root, :host --color-green-300",
+    "lab(86.9953% -47.2691 25.0054)"
+   ],
+   [
+    ":root, :host --color-green-500",
+    "lab(70.5521% -66.5147 45.8073)"
+   ],
+   [
+    ":root, :host --color-emerald-400",
+    "lab(75.0771% -60.7313 19.4147)"
+   ],
+   [
+    ":root, :host --color-emerald-500",
+    "lab(66.9756% -58.27 19.5419)"
+   ],
+   [
+    ":root, :host --color-cyan-500",
+    "lab(67.805% -35.3952 -30.2018)"
+   ],
+   [
+    ":root, :host --color-blue-500",
+    "lab(54.1736% 13.3369 -74.6839)"
+   ],
+   [
+    ":root, :host --color-blue-600",
+    "lab(44.0605% 29.0279 -86.0352)"
+   ],
+   [
+    ":root, :host --color-violet-500",
+    "lab(49.9355% 55.1776 -81.8963)"
+   ],
+   [
+    ":root, :host --color-fuchsia-500",
+    "lab(56.4256% 83.132 -64.639)"
+   ],
+   [
+    ":root, :host --color-pink-500",
+    "lab(56.9303% 76.8162 -8.07021)"
+   ],
+   [
+    ":root, :host --color-slate-50",
+    "lab(98.1434% -.369519 -1.05966)"
+   ],
+   [
+    ":root, :host --color-slate-100",
+    "lab(96.286% -.852436 -2.46847)"
+   ],
+   [
+    ":root, :host --color-slate-300",
+    "lab(84.7652% -1.94535 -7.93337)"
+   ],
+   [
+    ":root, :host --color-gray-100",
+    "lab(96.1596% -.0823438 -1.13575)"
+   ],
+   [
+    ":root, :host --color-gray-200",
+    "lab(91.6229% -.159115 -2.26791)"
+   ],
+   [
+    ":root, :host --color-gray-300",
+    "lab(85.1236% -.612259 -3.7138)"
+   ],
+   [
+    ":root, :host --color-gray-500",
+    "lab(47.7841% -.393182 -10.0268)"
+   ],
+   [
+    ":root, :host --color-gray-600",
+    "lab(35.6337% -1.58697 -10.8425)"
+   ],
+   [
+    ":root, :host --color-zinc-200",
+    "lab(90.6853% .399232 -1.45452)"
+   ],
+   [
+    ":root, :host --color-zinc-300",
+    "lab(84.9837% .601262 -2.17986)"
+   ],
+   [
+    ":root, :host --color-zinc-400",
+    "lab(65.6464% 1.53497 -5.42429)"
+   ],
+   [
+    ":root, :host --color-zinc-500",
+    "lab(47.8878% 1.65477 -5.77283)"
+   ],
+   [
+    ":root, :host --color-zinc-950",
+    "lab(2.51107% .242703 -.886115)"
+   ],
+   [
+    ":root, :host --color-neutral-200",
+    "lab(90.952% 0 -.0000119209)"
+   ],
+   [
+    ":root, :host --color-neutral-300",
+    "lab(84.92% 0 -.0000119209)"
+   ],
+   [
+    ":root, :host --color-black",
+    "#000"
+   ],
+   [
+    ":root, :host --color-white",
+    "#fff"
+   ],
+   [
+    ":root, :host --shadow-lg",
+    "0 10px 15px -3px #0000001a, 0 4px 6px -4px #0000001a"
+   ],
+   [
+    ":root, :host --color-background",
+    "var(--background)"
+   ],
+   [
+    ":root, :host --color-canvas",
+    "var(--canvas)"
+   ],
+   [
+    ":root, :host --color-slate-1",
+    "var(--slate-a1)"
+   ],
+   [
+    ":root, :host --color-slate-2",
+    "var(--slate-a2)"
+   ],
+   [
+    ":root, :host --color-slate-3",
+    "var(--slate-a3)"
+   ],
+   [
+    ":root, :host --color-slate-4",
+    "var(--slate-a4)"
+   ],
+   [
+    ":root, :host --color-slate-5",
+    "var(--slate-a5)"
+   ],
+   [
+    ":root, :host --color-slate-6",
+    "var(--slate-a6)"
+   ],
+   [
+    ":root, :host --color-slate-7",
+    "var(--slate-a7)"
+   ],
+   [
+    ":root, :host --color-slate-8",
+    "var(--slate-a8)"
+   ],
+   [
+    ":root, :host --color-slate-9",
+    "var(--slate-a9)"
+   ],
+   [
+    ":root, :host --color-slate-10",
+    "var(--slate-a10)"
+   ],
+   [
+    ":root, :host --color-slate-11",
+    "var(--slate-a11)"
+   ],
+   [
+    ":root, :host --color-slate-12",
+    "var(--slate-a12)"
+   ],
+   [
+    ":root, :host --color-gray-1",
+    "var(--gray-1)"
+   ],
+   [
+    ":root, :host --color-gray-2",
+    "var(--gray-2)"
+   ],
+   [
+    ":root, :host --color-gray-3",
+    "var(--gray-3)"
+   ],
+   [
+    ":root, :host --color-gray-4",
+    "var(--gray-4)"
+   ],
+   [
+    ":root, :host --color-gray-5",
+    "var(--gray-5)"
+   ],
+   [
+    ":root, :host --color-gray-6",
+    "var(--gray-6)"
+   ],
+   [
+    ":root, :host --color-gray-7",
+    "var(--gray-7)"
+   ],
+   [
+    ":root, :host --color-gray-8",
+    "var(--gray-8)"
+   ],
+   [
+    ":root, :host --color-gray-9",
+    "var(--gray-9)"
+   ],
+   [
+    ":root, :host --color-gray-10",
+    "var(--gray-10)"
+   ],
+   [
+    ":root, :host --color-gray-11",
+    "var(--gray-11)"
+   ],
+   [
+    ":root, :host --color-gray-12",
+    "var(--gray-12)"
+   ],
+   [
+    ":root, :host --color-light-gray-a2",
+    "#ebebeb"
+   ],
+   [
+    ":root, :host --color-light-gray-a3",
+    "#d9d9d9"
+   ],
+   [
+    ":root, :host --color-light-gray-1",
+    "#f0f0f0"
+   ],
+   [
+    ":root, :host --color-light-gray-2",
+    "#eee"
+   ],
+   [
+    ":root, :host --color-light-gray-3",
+    "#d7d7d7"
+   ],
+   [
+    ":root, :host --color-light-gray-4",
+    "#bebebe"
+   ],
+   [
+    ":root, :host --color-light-gray-5",
+    "#989898"
+   ],
+   [
+    ":root, :host --color-light-gray-7",
+    "#656565"
+   ],
+   [
+    ":root, :host --color-light-gray-11",
+    "#0d0d0d"
+   ],
+   [
+    ":root, :host --color-light-gray-12",
+    "#191919"
+   ],
+   [
+    ":root, :host --color-gray-a1",
+    "var(--gray-a1)"
+   ],
+   [
+    ":root, :host --color-gray-a2",
+    "var(--gray-a2)"
+   ],
+   [
+    ":root, :host --color-gray-a3",
+    "var(--gray-a3)"
+   ],
+   [
+    ":root, :host --color-gray-a4",
+    "var(--gray-a4)"
+   ],
+   [
+    ":root, :host --color-gray-a5",
+    "var(--gray-a5)"
+   ],
+   [
+    ":root, :host --color-gray-a8",
+    "var(--gray-a8)"
+   ],
+   [
+    ":root, :host --color-gray-a9",
+    "var(--gray-a9)"
+   ],
+   [
+    ":root, :host --color-gray-a10",
+    "var(--gray-a10)"
+   ],
+   [
+    ":root, :host --color-gray-a11",
+    "var(--gray-a11)"
+   ],
+   [
+    ":root, :host --color-gray-a12",
+    "var(--gray-a12)"
+   ],
+   [
+    ":root, :host --color-black-2",
+    "var(--black-a2)"
+   ],
+   [
+    ":root, :host --color-black-3",
+    "var(--black-a3)"
+   ],
+   [
+    ":root, :host --color-black-5",
+    "var(--black-a5)"
+   ],
+   [
+    ":root, :host --color-black-6",
+    "var(--black-a6)"
+   ],
+   [
+    ":root, :host --color-black-8",
+    "var(--black-a8)"
+   ],
+   [
+    ":root, :host --color-black-9",
+    "var(--black-a9)"
+   ],
+   [
+    ":root, :host --color-black-12",
+    "var(--black-a12)"
+   ],
+   [
+    ":root, :host --color-light-slate-3",
+    "#0000330f"
+   ],
+   [
+    ":root, :host --color-light-slate-7",
+    "#00062e32"
+   ],
+   [
+    ":root, :host --color-violet-3",
+    "var(--violet-a3)"
+   ],
+   [
+    ":root, :host --color-violet-4",
+    "var(--violet-a4)"
+   ],
+   [
+    ":root, :host --color-violet-6",
+    "var(--violet-a6)"
+   ],
+   [
+    ":root, :host --color-violet-7",
+    "var(--violet-a7)"
+   ],
+   [
+    ":root, :host --color-violet-8",
+    "var(--violet-a8)"
+   ],
+   [
+    ":root, :host --color-violet-9",
+    "var(--violet-a9)"
+   ],
+   [
+    ":root, :host --color-violet-10",
+    "var(--violet-a10)"
+   ],
+   [
+    ":root, :host --color-violet-11",
+    "var(--violet-a11)"
+   ],
+   [
+    ":root, :host --color-sand-3",
+    "var(--sand-a3)"
+   ],
+   [
+    ":root, :host --color-sand-4",
+    "var(--sand-a4)"
+   ],
+   [
+    ":root, :host --color-sand-9",
+    "var(--sand-a9)"
+   ],
+   [
+    ":root, :host --color-sand-10",
+    "var(--sand-a10)"
+   ],
+   [
+    ":root, :host --color-sand-11",
+    "var(--sand-a11)"
+   ],
+   [
+    ":root, :host --color-green-1",
+    "var(--green-a1)"
+   ],
+   [
+    ":root, :host --color-green-3",
+    "var(--green-a3)"
+   ],
+   [
+    ":root, :host --color-green-4",
+    "var(--green-a4)"
+   ],
+   [
+    ":root, :host --color-green-5",
+    "var(--green-a5)"
+   ],
+   [
+    ":root, :host --color-green-6",
+    "var(--green-a6)"
+   ],
+   [
+    ":root, :host --color-green-7",
+    "var(--green-a7)"
+   ],
+   [
+    ":root, :host --color-green-8",
+    "var(--green-a8)"
+   ],
+   [
+    ":root, :host --color-green-9",
+    "var(--green-a9)"
+   ],
+   [
+    ":root, :host --color-green-10",
+    "var(--green-a10)"
+   ],
+   [
+    ":root, :host --color-green-11",
+    "var(--green-a11)"
+   ],
+   [
+    ":root, :host --color-green-12",
+    "var(--green-a12)"
+   ],
+   [
+    ":root, :host --color-red-1",
+    "var(--red-a1)"
+   ],
+   [
+    ":root, :host --color-red-3",
+    "var(--red-a3)"
+   ],
+   [
+    ":root, :host --color-red-4",
+    "var(--red-a4)"
+   ],
+   [
+    ":root, :host --color-red-5",
+    "var(--red-a5)"
+   ],
+   [
+    ":root, :host --color-red-6",
+    "var(--red-a6)"
+   ]
+  ],
+  "surfaces": [
+   {
+    "hex": "#000000",
+    "L": 0,
+    "C": 0,
+    "H": 0,
+    "n": 9,
+    "area": 6540375,
+    "ex": [
+     "div.bg-black",
+     "div.disable-children-scrolling"
+    ]
+   },
+   {
+    "hex": "#ffffff",
+    "L": 1,
+    "C": 0,
+    "H": 90,
+    "n": 3,
+    "area": 399641,
+    "ex": [
+     "div.md:border-[#262A2D]",
+     "div.tiptap"
+    ]
+   },
+   {
+    "hex": "#0b0e14",
+    "L": 0.163,
+    "C": 0.014,
+    "H": 264,
+    "n": 1,
+    "area": 6471,
+    "ex": [
+     "span.inline-flex"
+    ]
+   },
+   {
+    "hex": "#00a3ff",
+    "L": 0.691,
+    "C": 0.174,
+    "H": 245,
+    "n": 1,
+    "area": 4711,
+    "ex": [
+     "a."
+    ]
+   }
+  ],
+  "overlays": [
+   {
+    "bg": "rgba(214, 235, 253, 0.19) => #292d30",
+    "n": 3,
+    "area": 105120
+   },
+   {
+    "bg": "rgba(217, 237, 254, 0.145) => #1f2225",
+    "n": 1,
+    "area": 5621
+   },
+   {
+    "bg": "rgba(216, 244, 246, 0.035) => #080909",
+    "n": 1,
+    "area": 2948
+   }
+  ],
+  "borders": [
+   {
+    "border": "rgba(0, 0, 0, 0) @1px",
+    "n": 284,
+    "alpha": 0,
+    "flatOnPage": "#000000",
+    "L": 0
+   },
+   {
+    "border": "rgba(214, 235, 253, 0.19) @1px",
+    "n": 271,
+    "alpha": 0.19,
+    "flatOnPage": "#292d30",
+    "L": 0.293
+   },
+   {
+    "border": "rgba(217, 237, 254, 0.145) @1px",
+    "n": 94,
+    "alpha": 0.145,
+    "flatOnPage": "#1f2225",
+    "L": 0.252
+   },
+   {
+    "border": "oklab(0.999994 0.0000455678 0.0000200868 / 0.05) @2px",
+    "n": 16,
+    "alpha": 0.05,
+    "flatOnPage": "#0d0d0d",
+    "L": 0.158
+   },
+   {
+    "border": "rgb(38, 42, 45) @1px",
+    "n": 6,
+    "alpha": 1,
+    "flatOnPage": "#262a2d",
+    "L": 0.282
+   },
+   {
+    "border": "rgba(217, 237, 255, 0.365) @1px",
+    "n": 4,
+    "alpha": 0.365,
+    "flatOnPage": "#4f575d",
+    "L": 0.451
+   },
+   {
+    "border": "rgb(255, 196, 70) @1px",
+    "n": 4,
+    "alpha": 1,
+    "flatOnPage": "#ffc446",
+    "L": 0.852
+   },
+   {
+    "border": "rgb(255, 255, 255) @1px",
+    "n": 4,
+    "alpha": 1,
+    "flatOnPage": "#ffffff",
+    "L": 1
+   },
+   {
+    "border": "oklab(0.999994 0.0000455678 0.0000200868 / 0.05) @1px",
+    "n": 4,
+    "alpha": 0.05,
+    "flatOnPage": "#0d0d0d",
+    "L": 0.158
+   },
+   {
+    "border": "rgba(211, 237, 248, 0.114) @1px",
+    "n": 2,
+    "alpha": 0.114,
+    "flatOnPage": "#181b1c",
+    "L": 0.22
+   }
+  ],
+  "radii": [
+   [
+    "3.35544e+07px",
+    196
+   ],
+   [
+    "16px",
+    63
+   ],
+   [
+    "6px",
+    57
+   ],
+   [
+    "8px",
+    32
+   ],
+   [
+    "4px",
+    19
+   ],
+   [
+    "24px",
+    10
+   ],
+   [
+    "10px",
+    7
+   ],
+   [
+    "12px",
+    3
+   ]
+  ],
+  "shadows": [
+   {
+    "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(24, 25, 28, 0.88) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+    "n": 60
+   },
+   {
+    "shadow": "rgb(0, 0, 0) 0px 0px 0px 8px",
+    "n": 6
+   },
+   {
+    "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.1) 0px 1px 2px -1px",
+    "n": 4
+   }
+  ],
+  "nShadowEls": 70,
+  "textColors": [
+   {
+    "color": "rgb(161, 164, 165)",
+    "chars": 9049,
+    "n": 124,
+    "fg": "#a1a4a5",
+    "alpha": 1,
+    "contrast": 8.37,
+    "L": 0.717,
+    "bg": "#000000",
+    "size": "14px",
+    "weight": "500",
+    "ex": "Features"
+   },
+   {
+    "color": "rgba(241, 247, 254, 0.71)",
+    "chars": 1367,
+    "n": 85,
+    "fg": "#abafb4",
+    "alpha": 0.71,
+    "contrast": 9.56,
+    "L": 0.753,
+    "bg": "#000000",
+    "size": "16px",
+    "weight": "400",
+    "ex": "HTTP 200:"
+   },
+   {
+    "color": "rgb(240, 240, 240)",
+    "chars": 1014,
+    "n": 60,
+    "fg": "#f0f0f0",
+    "alpha": 1,
+    "contrast": 16.95,
+    "L": 0.955,
+    "bg": "#0b0e14",
+    "size": "14px",
+    "weight": "400",
+    "ex": "Join us at Resend Forward"
+   },
+   {
+    "color": "rgba(252, 253, 255, 0.937)",
+    "chars": 613,
+    "n": 32,
+    "fg": "#ecedef",
+    "alpha": 0.937,
+    "contrast": 17.94,
+    "L": 0.946,
+    "bg": "#000000",
+    "size": "20px",
+    "weight": "400",
+    "ex": "Test mode"
+   },
+   {
+    "color": "rgb(235, 236, 237)",
+    "chars": 551,
+    "n": 74,
+    "fg": "#ebeced",
+    "alpha": 1,
+    "contrast": 17.75,
+    "L": 0.943,
+    "bg": "#000000",
+    "size": "14px",
+    "weight": "400",
+    "ex": "Resend"
+   },
+   {
+    "color": "rgb(171, 171, 171)",
+    "chars": 530,
+    "n": 58,
+    "fg": "#ababab",
+    "alpha": 1,
+    "contrast": 9.14,
+    "L": 0.741,
+    "bg": "#000000",
+    "size": "12px",
+    "weight": "400",
+    "ex": "'react-email'"
+   },
+   {
+    "color": "rgb(108, 108, 108)",
+    "chars": 307,
+    "n": 66,
+    "fg": "#6c6c6c",
+    "alpha": 1,
+    "contrast": 4,
+    "L": 0.531,
+    "bg": "#000000",
+    "size": "14px",
+    "weight": "400",
+    "ex": "import"
+   },
+   {
+    "color": "rgba(229, 237, 253, 0.482)",
+    "chars": 304,
+    "n": 8,
+    "fg": "#6e727a",
+    "alpha": 0.482,
+    "contrast": 4.37,
+    "L": 0.552,
+    "bg": "#000000",
+    "size": "16px",
+    "weight": "400",
+    "ex": "\"26abdd24-36a9-475d-83bf-4d2"
+   },
+   {
+    "color": "rgb(255, 255, 255)",
+    "chars": 284,
+    "n": 29,
+    "fg": "#ffffff",
+    "alpha": 1,
+    "contrast": 21,
+    "L": 1,
+    "bg": "#000000",
+    "size": "14px",
+    "weight": "600",
+    "ex": "Get started"
+   },
+   {
+    "color": "rgb(160, 160, 160)",
+    "chars": 238,
+    "n": 216,
+    "fg": "#a0a0a0",
+    "alpha": 1,
+    "contrast": 8.03,
+    "L": 0.706,
+    "bg": "#000000",
+    "size": "14px",
+    "weight": "400",
+    "ex": "{"
+   },
+   {
+    "color": "rgb(70, 74, 77)",
+    "chars": 150,
+    "n": 84,
+    "fg": "#464a4d",
+    "alpha": 1,
+    "contrast": 2.35,
+    "L": 0.407,
+    "bg": "#000000",
+    "size": "14px",
+    "weight": "400",
+    "ex": "1"
+   },
+   {
+    "color": "rgb(255, 196, 70)",
+    "chars": 108,
+    "n": 6,
+    "fg": "#ffc446",
+    "alpha": 1,
+    "contrast": 13.24,
+    "L": 0.852,
+    "bg": "#000000",
+    "size": "14px",
+    "weight": "400",
+    "ex": "'resend'"
+   }
+  ],
+  "h1": {
+   "text": "Email for\ndevelopers",
+   "family": "domaine, ui-sans-serif, system-ui, sans-serif, \"Apple Color ",
+   "size": "96px",
+   "weight": "400",
+   "lh": "96px",
+   "ls": "-0.96px",
+   "color": "rgb(240, 240, 240)",
+   "smooth": "antialiased",
+   "bgClip": "text",
+   "bgImage": "linear-gradient(to right bottom, rgb(255, 255, 255) 30%, rgba(255, 255, 255, 0.5))",
+   "textShadow": null
+  },
+  "body": {
+   "text": "Features\nCompany\nEnterprise\nHelp\nDocs\nAI\nPricing\nLog in\nGet ",
+   "family": "inter, ui-sans-serif, system-ui, sans-serif, \"Apple Color Em",
+   "size": "16px",
+   "weight": "400",
+   "lh": "24px",
+   "ls": "normal",
+   "color": "rgb(240, 240, 240)",
+   "smooth": "antialiased",
+   "bgClip": "border-box",
+   "bgImage": "none",
+   "textShadow": null
+  },
+  "bodySmoothing": "antialiased",
+  "textRendering": "optimizelegibility",
+  "heroP": {
+   "text": "The best way to reach humans instead of spam folders. Delive",
+   "family": "inter, ui-sans-serif, system-ui, sans-serif, \"Apple Color Em",
+   "size": "18px",
+   "weight": "400",
+   "lh": "27px",
+   "ls": "normal",
+   "color": "rgb(161, 164, 165)",
+   "smooth": "antialiased",
+   "bgClip": "border-box",
+   "bgImage": "none",
+   "textShadow": null
+  },
+  "ctas": [
+   {
+    "text": "Log in",
+    "h": 40,
+    "kind": "outline",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(161, 164, 165)",
+    "border": "1px rgba(0, 0, 0, 0)",
+    "radius": "16px",
+    "shadow": null,
+    "bgImage": null,
+    "size": "14px",
+    "weight": "600"
+   },
+   {
+    "text": "Get started",
+    "h": 40,
+    "kind": "outline",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "border": "2px oklab(0.999994 0.0000455678 0.0000200868 / 0.05)",
+    "radius": "16px",
+    "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.1) 0px 1px 2",
+    "bgImage": "linear-gradient(104deg, rgba(253, 253, 253, 0.05) 5%, rgba(240, 240, 228, 0.1) 100%)",
+    "size": "14px",
+    "weight": "600"
+   },
+   {
+    "text": "Get started",
+    "h": 48,
+    "kind": "outline",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "border": "2px oklab(0.999994 0.0000455678 0.0000200868 / 0.05)",
+    "radius": "16px",
+    "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.1) 0px 1px 2",
+    "bgImage": "linear-gradient(104deg, rgba(253, 253, 253, 0.05) 5%, rgba(240, 240, 228, 0.1) 100%)",
+    "size": "16px",
+    "weight": "600"
+   },
+   {
+    "text": "Documentation",
+    "h": 48,
+    "kind": "outline",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(161, 164, 165)",
+    "border": "1px rgba(0, 0, 0, 0)",
+    "radius": "16px",
+    "shadow": null,
+    "bgImage": null,
+    "size": "16px",
+    "weight": "600"
+   }
+  ],
+  "nav": {
+   "h": 58,
+   "bg": "rgba(0, 0, 0, 0)",
+   "backdrop": "none",
+   "bb": "0px solid rgb(240, 240, 240)",
+   "shadow": null,
+   "linkColor": "rgb(240, 240, 240)"
+  },
+  "effects": {
+   "radial": 8,
+   "conic": 5,
+   "linear": 202,
+   "urlbg": 0,
+   "blurEls": 5,
+   "backdropEls": 4,
+   "mixBlend": 1,
+   "maskEls": 9,
+   "gradEx": [
+    "conic-gradient(from 90deg, rgba(0, 0, 0, 0) 50%, rgb(0, 0, 0) 50%), radial-gradient(rgba(200, 200, 200, 0.1) 0%, rgba(0, 0, 0, 0) 80%)",
+    "radial-gradient(70% 80% at 50% 0%, rgba(255, 255, 255, 0.06) 3%, rgba(98, 255, 179, 0) 70%, rgba(98, 255, 179, 0) 100%)",
+    "radial-gradient(41.07% 8.33% at 50% 0%, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(rgb(16, 16, 16) 0%, rgba(0, 0, 0, 0.8) 100%)",
+    "radial-gradient(100% 50% at 50% 0%, rgba(0, 163, 255, 0.13) 0%, rgba(0, 163, 255, 0) 50%, rgba(0, 163, 255, 0) 100%)",
+    "conic-gradient(from 90deg, rgba(0, 0, 0, 0) 50%, rgb(0, 0, 0) 50%), radial-gradient(rgba(200, 200, 200, 0.1) 0%, rgba(0, 0, 0, 0) 80%)",
+    "conic-gradient(from 90deg, rgba(0, 0, 0, 0) 50%, rgb(0, 0, 0) 50%), radial-gradient(rgba(200, 200, 200, 0.1) 0%, rgba(0, 0, 0, 0) 80%)"
+   ],
+   "canvas": 1,
+   "video": 5,
+   "svg": 107,
+   "img": 73
+  },
+  "noise": false,
+  "gradientHeadings": 10,
+  "accents": [
+   {
+    "hex": "#ffc446",
+    "n": 30,
+    "L": 0.852,
+    "C": 0.152,
+    "H": 83
+   },
+   {
+    "hex": "#46fea5",
+    "n": 11,
+    "L": 0.886,
+    "C": 0.191,
+    "H": 157
+   },
+   {
+    "hex": "#44ffa4",
+    "n": 9,
+    "L": 0.888,
+    "C": 0.194,
+    "H": 157
+   },
+   {
+    "hex": "#3b9eff",
+    "n": 8,
+    "L": 0.688,
+    "C": 0.169,
+    "H": 251
+   },
+   {
+    "hex": "#baa7ff",
+    "n": 5,
+    "L": 0.778,
+    "C": 0.125,
+    "H": 293
+   },
+   {
+    "hex": "#70b8ff",
+    "n": 5,
+    "L": 0.764,
+    "C": 0.126,
+    "H": 249
+   }
+  ]
+ }
+}

@@ -21,4 +21,13 @@ body { background: var(--canvas); color: var(--ink); font-family: var(--font-san
 /* Button grammar from Kestrel (fancy ink + white). Change per brand if the CTA grammar changes. */
 .btn-ink { background: linear-gradient(180deg, rgba(255,255,255,0.14) 0%, rgba(255,255,255,0) 100%), var(--ink); color: #fff; box-shadow: 0 0 0 1px var(--ink), inset 0 1px 0 rgba(255,255,255,0.18), 0 1px 2px rgba(10,13,20,0.2), 0 6px 12px -4px rgba(23,23,23,0.28); transition: background-color 220ms, box-shadow 220ms; }
 .btn-white { background: #fff; color: var(--ink); box-shadow: var(--shadow-ring); transition: background-color 220ms; }
-.btn-white:hover { background: var(--weak); }
+@media (hover: hover) { .btn-white:hover { background: var(--weak); } }
+
+/* polish layer (better-ui / emil-design-eng): press feedback, wrapping, numerals, hit areas */
+.press { transition: transform 160ms cubic-bezier(.22,1,.36,1); }
+.press:active { transform: scale(0.98); }
+@media (prefers-reduced-motion: reduce) { .press:active { transform: none; } }
+h1, h2, h3 { text-wrap: balance; }
+p { text-wrap: pretty; }
+.tnum, [data-numeric] { font-variant-numeric: tabular-nums; }
+.hit { position: relative; } .hit::after { content: ""; position: absolute; inset: 50% auto auto 50%; width: max(100%, 44px); height: max(100%, 44px); transform: translate(-50%, -50%); }
