@@ -1,0 +1,238 @@
+{
+ "url": "https://linear.app/changelog",
+ "measured": "2026-10-09",
+ "viewport": "1440x900 dark",
+ "title": "Changelog – Linear",
+ "H": 25042,
+ "scheme": {
+  "html": "dark",
+  "meta": "#08090a"
+ },
+ "canvas": {
+  "hex": "#08090a",
+  "L": 0.139,
+  "C": 0.003,
+  "H": 246
+ },
+ "surfaces": [
+  {
+   "hex": "#08090a",
+   "L": 0.139,
+   "C": 0.003,
+   "H": 246,
+   "n": 1,
+   "area": 2592000,
+   "ex": "div 1440x25042"
+  },
+  {
+   "hex": "#141516",
+   "L": 0.195,
+   "C": 0.003,
+   "H": 248,
+   "n": 1,
+   "area": 11200,
+   "ex": "button 280x40"
+  },
+  {
+   "hex": "#e5e5e6",
+   "L": 0.922,
+   "C": 0.001,
+   "H": 286,
+   "n": 1,
+   "area": 2334,
+   "ex": "a 73x32"
+  }
+ ],
+ "overlays": [],
+ "borders": [
+  {
+   "border": "rgb(229, 229, 230) @1",
+   "n": 4,
+   "alpha": 1,
+   "flat": "#e5e5e6",
+   "dL": 0.783
+  },
+  {
+   "border": "rgba(255, 255, 255, 0.08) @1",
+   "n": 1,
+   "alpha": 0.08,
+   "flat": "#1c1d1e",
+   "dL": 0.09
+  }
+ ],
+ "shadows": [
+  {
+   "s": "rgba(0, 0, 0, 0) 0px 8px 2px 0px, rgba(0, 0, 0, 0.01) 0px 5px 2px 0px, rgba(0, 0, 0, 0.04) 0px 3px 2px 0px, rgba(0, 0, 0, 0.07) 0px 1px 1px 0px, rgba(0, 0, 0, 0.08) 0px 0px 1px 0px",
+   "n": 1
+  },
+  {
+   "s": "rgba(255, 255, 255, 0.03) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.04) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.6) 0px 0px 0px 1px, rgba(0, 0, 0, 0.1) 0px 4px 4px 0px",
+   "n": 1
+  }
+ ],
+ "text": [
+  {
+   "color": "rgb(208, 214, 224)",
+   "chars": 236,
+   "flat": "#d0d6e0",
+   "alpha": 1,
+   "L": 0.874,
+   "C": 0.015,
+   "H": 261,
+   "wcag": 13.64,
+   "size": "17px",
+   "weight": "400",
+   "ex": "Stacked pull requests are now "
+  },
+  {
+   "color": "rgb(138, 143, 152)",
+   "chars": 110,
+   "flat": "#8a8f98",
+   "alpha": 1,
+   "L": 0.649,
+   "C": 0.015,
+   "H": 262,
+   "wcag": 6.13,
+   "size": "13px",
+   "weight": "400",
+   "ex": "Product"
+  },
+  {
+   "color": "rgb(247, 248, 248)",
+   "chars": 48,
+   "flat": "#f7f8f8",
+   "alpha": 1,
+   "L": 0.978,
+   "C": 0.001,
+   "H": 197,
+   "wcag": 18.73,
+   "size": "48px",
+   "weight": "510",
+   "ex": "Now"
+  },
+  {
+   "color": "rgb(8, 9, 10)",
+   "chars": 7,
+   "flat": "#08090a",
+   "alpha": 1,
+   "L": 0.139,
+   "C": 0.003,
+   "H": 246,
+   "wcag": 15.83,
+   "size": "13px",
+   "weight": "510",
+   "ex": "Sign up"
+  }
+ ],
+ "h1": {
+  "text": "Now",
+  "family": "\"Inter Variable\"",
+  "size": "48px",
+  "weight": "510",
+  "ls": "-1.056px",
+  "lh": "48px",
+  "color": "rgb(247, 248, 248)",
+  "bgClip": "border-box",
+  "bgImage": null,
+  "textShadow": null,
+  "fillColor": "rgb(247, 248, 248)",
+  "mask": null
+ },
+ "ctas": [
+  {
+   "text": "Search…",
+   "w": 280,
+   "h": 40,
+   "bg": "rgb(20, 21, 22)",
+   "fillL": 0.195,
+   "color": "rgb(138, 143, 152)",
+   "border": null,
+   "radius": "100px",
+   "shadow": "rgba(255, 255, 255, 0.03) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.04) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.6) 0px 0px 0px 1px, rgba(0, 0, 0, 0.1) 0px 4px 4px 0px",
+   "bgi": null,
+   "size": "14px",
+   "weight": "400",
+   "before": null,
+   "after": null,
+   "childBg": null
+  }
+ ],
+ "nav": {
+  "h": 73,
+  "w": 1440,
+  "bg": "rgba(0, 0, 0, 0)",
+  "backdrop": "blur(20px)",
+  "bb": "1px rgba(255, 255, 255, 0.08)",
+  "border": null,
+  "radius": "0px",
+  "shadow": null,
+  "link": "rgb(247, 248, 248)",
+  "linkSize": "16px"
+ },
+ "lightFx": [
+  {
+   "el": "header 1440x73@0,0",
+   "bgi": "linear-gradient(rgba(11, 11, 11, 0.8) 0%, oklab(0.149576 0.00000680983 0.00000298768 / 0.761905) 100%)",
+   "filter": null,
+   "mask": null,
+   "blend": null,
+   "opacity": null
+  },
+  {
+   "el": "header::before 1440x73@0,0",
+   "bgi": "linear-gradient(rgb(8, 9, 10) 0%, rgba(0, 0, 0, 0) 100%)",
+   "filter": null,
+   "mask": null,
+   "blend": null,
+   "opacity": null
+  }
+ ],
+ "lightFxCount": 2,
+ "media": [],
+ "noise": {
+  "feTurbulence": 0,
+  "cssNoise": [],
+  "imgs": 0
+ },
+ "frames": [
+  {
+   "tag": "img",
+   "box": [
+    408,
+    466,
+    624,
+    364
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgL": null,
+   "border": null,
+   "radius": "8px",
+   "shadow": null,
+   "bgi": null,
+   "mask": null,
+   "before": null,
+   "after": null
+  }
+ ],
+ "accentUse": [],
+ "radii": [
+  [
+   "9999px",
+   10
+  ],
+  [
+   "6px",
+   1
+  ],
+  [
+   "100px",
+   1
+  ],
+  [
+   "8px",
+   1
+  ]
+ ],
+ "smoothing": "antialiased",
+ "canvasCtx": []
+}

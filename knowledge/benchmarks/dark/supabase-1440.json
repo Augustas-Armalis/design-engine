@@ -1,0 +1,382 @@
+{
+ "url": "https://supabase.com",
+ "measured": "2026-10-09",
+ "viewport": "1440x900 dark",
+ "title": "Supabase | The Postgres Development Platform",
+ "H": 7691,
+ "scheme": {
+  "html": "dark",
+  "meta": null
+ },
+ "canvas": {
+  "hex": "#131413",
+  "L": 0.19,
+  "C": 0.003,
+  "H": 145
+ },
+ "surfaces": [
+  {
+   "hex": "#181a19",
+   "L": 0.215,
+   "C": 0.004,
+   "H": 165,
+   "n": 16,
+   "area": 1691220,
+   "ex": "div 538x400"
+  },
+  {
+   "hex": "#131413",
+   "L": 0.19,
+   "C": 0.003,
+   "H": 145,
+   "n": 61,
+   "area": 324240,
+   "ex": "div 1440x65"
+  },
+  {
+   "hex": "#006338",
+   "L": 0.439,
+   "C": 0.107,
+   "H": 156,
+   "n": 2,
+   "area": 8768,
+   "ex": "a 120x26"
+  },
+  {
+   "hex": "#1b1d1c",
+   "L": 0.228,
+   "C": 0.004,
+   "H": 165,
+   "n": 1,
+   "area": 2762,
+   "ex": "div 106x26"
+  }
+ ],
+ "overlays": [
+  {
+   "bg": "oklch(0.95 0.00275 157.5 / 0.0328947)",
+   "n": 2,
+   "area": 8078,
+   "flat": "#222423",
+   "L": 0.257
+  }
+ ],
+ "borders": [
+  {
+   "border": "oklch(0.95 0.001485 157.5 / 0.075125) @1",
+   "n": 246,
+   "alpha": 0.075,
+   "flat": "#232423",
+   "dL": 0.071
+  },
+  {
+   "border": "rgba(0, 0, 0, 0) @1",
+   "n": 16,
+   "alpha": 0,
+   "flat": "#131413",
+   "dL": 0
+  },
+  {
+   "border": "oklch(0.95 0.001375 157.5 / 0.134738) @1",
+   "n": 4,
+   "alpha": 0.135,
+   "flat": "#313231",
+   "dL": 0.124
+  },
+  {
+   "border": "oklab(0.684 -0.00254067 0.00105238 / 0.7) @1",
+   "n": 4,
+   "alpha": 0.7,
+   "flat": "#707271",
+   "dL": 0.36
+  },
+  {
+   "border": "rgb(62, 207, 142) @1",
+   "n": 4,
+   "alpha": 1,
+   "flat": "#3ecf8e",
+   "dL": 0.572
+  }
+ ],
+ "shadows": [
+  {
+   "s": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+   "n": 4
+  },
+  {
+   "s": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.2) 0px 1px 3px 0px, rgba(255, 255, 255, 0.04) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.06) 0px -1px 0px 0px",
+   "n": 3
+  },
+  {
+   "s": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.2) 0px 1px 3px 0px, rgba(255, 255, 255, 0.04) 0px 1px 0px 0px inset, rgba(255, 255, 255, 0.06) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.1) 0px 0",
+   "n": 2
+  }
+ ],
+ "text": [
+  {
+   "color": "oklch(0.684 0.00275 157.5)",
+   "chars": 388,
+   "flat": "#989a99",
+   "alpha": 1,
+   "L": 0.684,
+   "C": 0.003,
+   "H": 165,
+   "wcag": 6.52,
+   "size": "16px",
+   "weight": "450",
+   "ex": "Start your project with a Post"
+  },
+  {
+   "color": "oklch(0.95 0.00275 157.5)",
+   "chars": 329,
+   "flat": "#edefee",
+   "alpha": 1,
+   "L": 0.95,
+   "C": 0.003,
+   "H": 165,
+   "wcag": 15.99,
+   "size": "14px",
+   "weight": "500",
+   "ex": "Product"
+  },
+  {
+   "color": "oklch(0.76 0.15 157.5)",
+   "chars": 39,
+   "flat": "#4acd8b",
+   "alpha": 1,
+   "L": 0.76,
+   "C": 0.15,
+   "H": 158,
+   "wcag": 9.14,
+   "size": "46px",
+   "weight": "500",
+   "ex": "Scale to millions"
+  },
+  {
+   "color": "oklch(0.798 0.00275 157.5)",
+   "chars": 6,
+   "flat": "#bcbdbc",
+   "alpha": 1,
+   "L": 0.797,
+   "C": 0.002,
+   "H": 146,
+   "wcag": 9.8,
+   "size": "12px",
+   "weight": "500",
+   "ex": "111.2K"
+  }
+ ],
+ "h1": {
+  "text": "Build in a weekend\nScale to millions",
+  "family": "Manrope",
+  "size": "46px",
+  "weight": "500",
+  "ls": "normal",
+  "lh": "46px",
+  "color": "oklch(0.95 0.00275 157.5)",
+  "bgClip": "border-box",
+  "bgImage": null,
+  "textShadow": null,
+  "fillColor": "oklch(0.95 0.00275 157.5)",
+  "mask": null
+ },
+ "ctas": [
+  {
+   "text": "Start your project",
+   "w": 149,
+   "h": 38,
+   "bg": "oklch(0.43627 0.11 157.5)",
+   "fillL": 0.439,
+   "color": "oklch(0.95 0.00275 157.5)",
+   "border": null,
+   "radius": "9.29231px",
+   "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.2) 0px 1px 3px 0px, rgba(255, 255, 255, 0.04) 0px 1px 0px 0px inset, rgba(255, 255, 255, 0.06) 0px 0px 0px 1",
+   "bgi": "linear-gradient(rgba(255, 255, 255, 0.016), rgba(0, 0, 0, 0.01))",
+   "size": "14px",
+   "weight": "500",
+   "before": null,
+   "after": null,
+   "childBg": null
+  },
+  {
+   "text": "Request a demo",
+   "w": 140,
+   "h": 38,
+   "bg": "oklch(0.95 0.00275 157.5 / 0.0328947)",
+   "fillL": null,
+   "color": "oklch(0.95 0.00275 157.5)",
+   "border": null,
+   "radius": "9.29231px",
+   "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.2) 0px 1px 3px 0px, rgba(255, 255, 255, 0.04) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px ins",
+   "bgi": "linear-gradient(rgba(255, 255, 255, 0.016), rgba(0, 0, 0, 0.01))",
+   "size": "14px",
+   "weight": "500",
+   "before": null,
+   "after": null,
+   "childBg": null
+  }
+ ],
+ "nav": {
+  "h": 65,
+  "w": 1440,
+  "bg": "rgba(0, 0, 0, 0)",
+  "backdrop": "none",
+  "bb": null,
+  "border": null,
+  "radius": "0px",
+  "shadow": null,
+  "link": "oklch(0.95 0.00275 157.5)",
+  "linkSize": "16px"
+ },
+ "lightFx": [
+  {
+   "el": "a 149x38@176,349",
+   "bgi": "linear-gradient(rgba(255, 255, 255, 0.016), rgba(0, 0, 0, 0.01))",
+   "filter": null,
+   "mask": null,
+   "blend": null,
+   "opacity": null
+  },
+  {
+   "el": "a 140x38@333,349",
+   "bgi": "linear-gradient(rgba(255, 255, 255, 0.016), rgba(0, 0, 0, 0.01))",
+   "filter": null,
+   "mask": null,
+   "blend": null,
+   "opacity": null
+  },
+  {
+   "el": "div 538x400@176,451",
+   "bgi": "linear-gradient(oklch(0.95 0.001485 157.5 / 0.075125) 0px, oklch(0.215 0.0025 157.5) 100%)",
+   "filter": null,
+   "mask": null,
+   "blend": null,
+   "opacity": null
+  },
+  {
+   "el": "div 263x400@726,451",
+   "bgi": "linear-gradient(oklch(0.95 0.001485 157.5 / 0.075125) 0px, oklch(0.215 0.0025 157.5) 100%)",
+   "filter": null,
+   "mask": null,
+   "blend": null,
+   "opacity": null
+  },
+  {
+   "el": "div 263x400@1001,451",
+   "bgi": "linear-gradient(oklch(0.95 0.001485 157.5 / 0.075125) 0px, oklch(0.215 0.0025 157.5) 100%)",
+   "filter": null,
+   "mask": null,
+   "blend": null,
+   "opacity": null
+  },
+  {
+   "el": "div 263x400@176,863",
+   "bgi": "linear-gradient(oklch(0.95 0.001485 157.5 / 0.075125) 0px, oklch(0.215 0.0025 157.5) 100%)",
+   "filter": null,
+   "mask": null,
+   "blend": null,
+   "opacity": null
+  },
+  {
+   "el": "div 263x400@451,863",
+   "bgi": "linear-gradient(oklch(0.95 0.001485 157.5 / 0.075125) 0px, oklch(0.215 0.0025 157.5) 100%)",
+   "filter": null,
+   "mask": null,
+   "blend": null,
+   "opacity": null
+  },
+  {
+   "el": "div 261x406@452,864",
+   "bgi": "linear-gradient(to top, rgba(0, 0, 0, 0) 0px, rgba(0, 0, 0, 0) 50%, oklch(0.215 0.0025 157.5) 85%)",
+   "filter": null,
+   "mask": null,
+   "blend": null,
+   "opacity": null
+  },
+  {
+   "el": "div 263x400@726,863",
+   "bgi": "linear-gradient(oklch(0.95 0.001485 157.5 / 0.075125) 0px, oklch(0.215 0.0025 157.5) 100%)",
+   "filter": null,
+   "mask": null,
+   "blend": null,
+   "opacity": null
+  },
+  {
+   "el": "div 263x400@1001,863",
+   "bgi": "linear-gradient(oklch(0.95 0.001485 157.5 / 0.075125) 0px, oklch(0.215 0.0025 157.5) 100%)",
+   "filter": null,
+   "mask": null,
+   "blend": null,
+   "opacity": null
+  }
+ ],
+ "lightFxCount": 10,
+ "media": [],
+ "noise": {
+  "feTurbulence": 0,
+  "cssNoise": [],
+  "imgs": 0
+ },
+ "frames": [],
+ "accentUse": [
+  {
+   "hex": "#006338",
+   "L": 0.439,
+   "C": 0.107,
+   "H": 156,
+   "fillArea": 8768,
+   "textChars": 0,
+   "ex": "A Start your project"
+  },
+  {
+   "hex": "#4acd8b",
+   "L": 0.76,
+   "C": 0.15,
+   "H": 158,
+   "fillArea": 0,
+   "textChars": 39,
+   "ex": "SPAN Scale to millions"
+  },
+  {
+   "hex": "#3ecf8e",
+   "L": 0.762,
+   "C": 0.154,
+   "H": 159,
+   "fillArea": 108,
+   "textChars": 0,
+   "ex": "DIV "
+  }
+ ],
+ "radii": [
+  [
+   "16px",
+   14
+  ],
+  [
+   "15px",
+   7
+  ],
+  [
+   "8px",
+   6
+  ],
+  [
+   "3.35544e+07px",
+   5
+  ],
+  [
+   "8.86154px",
+   3
+  ],
+  [
+   "9.29231px",
+   2
+  ],
+  [
+   "2.66667px",
+   1
+  ]
+ ],
+ "smoothing": "antialiased",
+ "canvasCtx": []
+}

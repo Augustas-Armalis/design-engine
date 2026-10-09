@@ -1,0 +1,1203 @@
+{
+ "measuredAt": "2026-10-09",
+ "viewport": "1440x1000 @2x, Chromium 1243, cookie banners hidden with CSS only",
+ "note": "h1 = first visible h1 (or largest top text if h1 is tiny/missing). trackingEm = letter-spacing/font-size. leading = line-height/font-size. body = first paragraph under the h1. are-na and cursor-com are deliberately small-headline sites. Crops: <slug>.png",
+ "sites": {
+  "stripe-com": {
+   "url": "https://stripe.com/en-lt",
+   "h1": {
+    "text": "Financial infrastructure to grow your revenue. Accept payments, offer financial services and implement custom revenue mo",
+    "family": "sohne-var, \"SF Pro Display\", sans-serif",
+    "size": 48,
+    "weight": 300,
+    "trackingEm": -0.02,
+    "leading": 1.15,
+    "features": "\"ss01\"",
+    "variation": "normal",
+    "transform": "none",
+    "lines": 4
+   },
+   "body": {
+    "family": "sohne-var, \"SF Pro Display\", sans-serif",
+    "size": 32,
+    "weight": 300,
+    "leading": 1.1,
+    "trackingEm": -0.02
+   },
+   "pageBg": "rgba(0, 0, 0, 0)"
+  },
+  "linear-app": {
+   "url": "https://linear.app/",
+   "h1": {
+    "text": "The product development system for teams and agents The product development system for teams and agents",
+    "family": "\"Inter Variable\", \"SF Pro Display\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+    "size": 64,
+    "weight": 510,
+    "trackingEm": -0.022,
+    "leading": 1,
+    "features": "\"cv01\", \"ss03\"",
+    "variation": "normal",
+    "transform": "none",
+    "lines": 2
+   },
+   "body": {
+    "family": "\"Inter Variable\", \"SF Pro Display\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+    "size": 15,
+    "weight": 400,
+    "leading": 1.6,
+    "trackingEm": -0.011
+   },
+   "pageBg": "rgb(8, 9, 10)"
+  },
+  "mercury-com": {
+   "url": "https://mercury.com/",
+   "h1": {
+    "text": "Radically different banking",
+    "family": "arcadiaDisplay, \"arcadiaDisplay Fallback\"",
+    "size": 49.35,
+    "weight": 480,
+    "trackingEm": 0,
+    "leading": 1.1,
+    "features": "normal",
+    "variation": "normal",
+    "transform": "none",
+    "lines": 2
+   },
+   "body": {
+    "family": "arcadia, \"arcadia Fallback\"",
+    "size": 21.01,
+    "weight": 360,
+    "leading": 1.35,
+    "trackingEm": 0
+   },
+   "pageBg": "rgba(0, 0, 0, 0)"
+  },
+  "granola-ai": {
+   "url": "https://www.granola.ai/",
+   "h1": {
+    "text": "The AI notepad for back-to-back meetings",
+    "family": "quadrant, \"quadrant Fallback\"",
+    "size": 86.4,
+    "weight": 400,
+    "trackingEm": -0.02,
+    "leading": 0.93,
+    "features": "normal",
+    "variation": "normal",
+    "transform": "none",
+    "lines": 4
+   },
+   "body": {
+    "family": "melange, \"melange Fallback\"",
+    "size": 20,
+    "weight": 400,
+    "leading": 1.4,
+    "trackingEm": 0
+   },
+   "pageBg": "rgb(255, 255, 255)"
+  },
+  "cursor-com": {
+   "url": "https://cursor.com/",
+   "h1": {
+    "text": "Cursor is your coding agent for building ambitious software.",
+    "family": "CursorGothic, \"CursorGothic Fallback\", system-ui, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+    "size": 26,
+    "weight": 400,
+    "trackingEm": -0.0125,
+    "leading": 1.25,
+    "features": "normal",
+    "variation": "normal",
+    "transform": "none",
+    "lines": 2
+   },
+   "body": {
+    "family": "\"EB Garamond\", \"Iowan Old Style\", \"Palatino Linotype\", \"URW Palladio L\", P052, ui-serif, Georgia, Cambria, \"Times New Roman\", Times, serif, \"Iowan Old Style\", \"Palatino Linotype\", \"URW Palladio L\", P052, ui-serif, Georgia, Cambria, \"Times New Roman\", Times, serif",
+    "size": 17.28,
+    "weight": 400,
+    "leading": 1.35,
+    "trackingEm": 0
+   },
+   "pageBg": "rgb(247, 247, 244)"
+  },
+  "framer-com": {
+   "url": "https://www.framer.com/",
+   "h1": {
+    "text": "Framer is the design agent for every step from idea to launch",
+    "family": "\"GT Walsheim Medium\", \"GT Walsheim Medium Placeholder\", sans-serif",
+    "size": 54,
+    "weight": 500,
+    "trackingEm": -0.04,
+    "leading": 1,
+    "features": "\"ss02\"",
+    "variation": "normal",
+    "transform": "none",
+    "lines": 2
+   },
+   "body": {
+    "family": "\"Inter Variable\", \"Inter Variable Placeholder\", sans-serif",
+    "size": 18,
+    "weight": 400,
+    "leading": 1.35,
+    "trackingEm": -0.0111
+   },
+   "pageBg": "rgb(0, 0, 0)"
+  },
+  "arc-net": {
+   "url": "https://arc.net/",
+   "h1": {
+    "text": "Arc is the Chrome replacement I've been waiting for.",
+    "family": "\"Marlin Soft SQ\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+    "size": 45.51,
+    "weight": 700,
+    "trackingEm": -0.04,
+    "leading": 0.928,
+    "features": "normal",
+    "variation": "normal",
+    "transform": "none",
+    "lines": 4
+   },
+   "body": {
+    "family": "\"ABC Oracle\", Helvetica, sans-serif",
+    "size": 20,
+    "weight": 400,
+    "leading": 1.2,
+    "trackingEm": 0
+   },
+   "pageBg": "rgb(255, 252, 236)"
+  },
+  "family-co": {
+   "url": "https://family.co/",
+   "h1": {
+    "text": "Your favorite crypto wallet.",
+    "family": "Family, -apple-system, \"system-ui\", \"Segoe UI\", Helvetica, \"Apple Color Emoji\", Arial, sans-serif, \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+    "size": 68,
+    "weight": 500,
+    "trackingEm": -0.02,
+    "leading": 1.1,
+    "features": "normal",
+    "variation": "normal",
+    "transform": "none",
+    "lines": 4
+   },
+   "body": {
+    "family": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", Helvetica, \"Apple Color Emoji\", Arial, sans-serif, \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+    "size": 17,
+    "weight": 500,
+    "leading": 1.529,
+    "trackingEm": -0.0129
+   },
+   "pageBg": "rgba(0, 0, 0, 0)"
+  },
+  "raycast-com": {
+   "url": "https://www.raycast.com/",
+   "h1": {
+    "text": "Your shortcut to everything.",
+    "family": "Inter, \"Inter Fallback\", sans-serif",
+    "size": 64,
+    "weight": 600,
+    "trackingEm": 0,
+    "leading": 1.1,
+    "features": "\"liga\" 0, \"ss02\", \"ss08\"",
+    "variation": "normal",
+    "transform": "none",
+    "lines": 2
+   },
+   "body": {
+    "family": "Inter, \"Inter Fallback\", sans-serif",
+    "size": 18,
+    "weight": 400,
+    "leading": "normal",
+    "trackingEm": 0.0111
+   },
+   "pageBg": "rgb(7, 8, 10)"
+  },
+  "posthog-com": {
+   "url": "https://posthog.com/",
+   "h1": {
+    "text": "Your product's context layer",
+    "family": "RoundHog, sans-serif",
+    "size": 36,
+    "weight": 800,
+    "trackingEm": -0.025,
+    "leading": 1.111,
+    "features": "normal",
+    "variation": "normal",
+    "transform": "none",
+    "lines": 1
+   },
+   "body": {
+    "family": "RoundHog, sans-serif",
+    "size": 17,
+    "weight": 500,
+    "leading": 1.5,
+    "trackingEm": 0
+   },
+   "pageBg": "rgb(238, 239, 233)"
+  },
+  "clay-com": {
+   "url": "https://www.clay.com/",
+   "h1": {
+    "text": "Build systems to grow revenue",
+    "family": "Roobertvf, Arial, sans-serif",
+    "size": 88,
+    "weight": 575,
+    "trackingEm": -0.04,
+    "leading": 1,
+    "features": "\"ss01\", \"ss03\", \"ss10\", \"ss11\", \"ss12\"",
+    "variation": "\"wght\" 575",
+    "transform": "none",
+    "lines": 2
+   },
+   "body": {
+    "family": "Roobertvf, Arial, sans-serif",
+    "size": 14,
+    "weight": 400,
+    "leading": 1.3,
+    "trackingEm": 0
+   },
+   "pageBg": "rgb(255, 255, 255)"
+  },
+  "attio-com": {
+   "url": "https://attio.com/",
+   "h1": {
+    "text": "Welcome to agentic revenue.",
+    "family": "interDisplay, \"interDisplay Fallback\"",
+    "size": 69.33,
+    "weight": 600,
+    "trackingEm": -0.0238,
+    "leading": 0.95,
+    "features": "\"ss03\"",
+    "variation": "normal",
+    "transform": "none",
+    "lines": 1
+   },
+   "body": {
+    "family": "inter, \"inter Fallback\"",
+    "size": 18,
+    "weight": 500,
+    "leading": 1.3,
+    "trackingEm": -0.01
+   },
+   "pageBg": "lab(99.9987 0.0337958 0.000309944)"
+  },
+  "lovable-dev": {
+   "url": "https://lovable.dev/",
+   "h1": {
+    "text": "Build something Lovable",
+    "family": "\"Camera Plain Variable\", ui-sans-serif, system-ui, sans-serif",
+    "size": 48,
+    "weight": 600,
+    "trackingEm": -0.04,
+    "leading": 1.1,
+    "features": "normal",
+    "variation": "normal",
+    "transform": "none",
+    "lines": 1
+   },
+   "body": {
+    "family": "\"Camera Plain Variable\", ui-sans-serif, system-ui, sans-serif",
+    "size": 18,
+    "weight": 400,
+    "leading": 1.333,
+    "trackingEm": 0
+   },
+   "pageBg": "oklch(0.9699 0 107)"
+  },
+  "vercel-com": {
+   "url": "https://vercel.com/",
+   "h1": {
+    "text": "Agentic Infrastructure",
+    "family": "GeistSans, \"GeistSans Fallback\"",
+    "size": 64,
+    "weight": 400,
+    "trackingEm": -0.06,
+    "leading": 1,
+    "features": "\"calt\" 0, \"rlig\", \"ss11\"",
+    "variation": "normal",
+    "transform": "none",
+    "lines": 2
+   },
+   "body": {
+    "family": "GeistSans, \"GeistSans Fallback\"",
+    "size": 24,
+    "weight": 450,
+    "leading": 1.333,
+    "trackingEm": -0.04
+   },
+   "pageBg": "rgb(250, 250, 250)"
+  },
+  "resend-com": {
+   "url": "https://resend.com/",
+   "h1": {
+    "text": "Email for developers",
+    "family": "domaine, ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+    "size": 96,
+    "weight": 400,
+    "trackingEm": -0.01,
+    "leading": 1,
+    "features": "\"ss01\", \"ss04\", \"ss05\", \"ss11\"",
+    "variation": "normal",
+    "transform": "none",
+    "lines": 2
+   },
+   "body": {
+    "family": "inter, ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+    "size": 18,
+    "weight": 400,
+    "leading": 1.5,
+    "trackingEm": 0
+   },
+   "pageBg": "rgb(0, 0, 0)"
+  },
+  "superhuman-com": {
+   "url": "https://superhuman.com/",
+   "h1": {
+    "text": "Bring AI inside every app and tab with Superhuman Go",
+    "family": "\"Super Sans VF\", system-ui, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+    "size": 49,
+    "weight": 460,
+    "trackingEm": -0.0275,
+    "leading": 1.2,
+    "features": "normal",
+    "variation": "normal",
+    "transform": "none",
+    "lines": 2
+   },
+   "body": {
+    "family": "\"Super Sans VF\", system-ui, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+    "size": 14,
+    "weight": 540,
+    "leading": 1.2,
+    "trackingEm": 0
+   },
+   "pageBg": "rgb(255, 255, 255)"
+  },
+  "are-na": {
+   "url": "https://www.are.na/",
+   "h1": {
+    "text": "Are.na is",
+    "family": "areal, \"areal Fallback\", Arial, Helvetica, sans-serif, Arial, Helvetica, sans-serif",
+    "size": 19.2,
+    "weight": 400,
+    "trackingEm": 0,
+    "leading": 1.45,
+    "features": "normal",
+    "variation": "\"DRKM\" 0",
+    "transform": "none",
+    "lines": 1
+   },
+   "body": {
+    "family": "areal, \"areal Fallback\", Arial, Helvetica, sans-serif, Arial, Helvetica, sans-serif",
+    "size": 12.5,
+    "weight": 400,
+    "leading": 1.35,
+    "trackingEm": 0
+   },
+   "pageBg": "rgb(255, 255, 255)"
+  },
+  "basement-studio": {
+   "url": "https://basement.studio/",
+   "h1": {
+    "text": "A digital studio & branding powerhouse making cool shit that performs",
+    "family": "Geist, \"Geist Fallback\"",
+    "size": 87,
+    "weight": 600,
+    "trackingEm": -0.04,
+    "leading": 0.897,
+    "features": "\"ss01\"",
+    "variation": "normal",
+    "transform": "none",
+    "lines": 3
+   },
+   "body": {
+    "family": "Geist, \"Geist Fallback\"",
+    "size": 20,
+    "weight": 600,
+    "leading": 1,
+    "trackingEm": -0.02
+   },
+   "pageBg": "rgb(0, 0, 0)"
+  },
+  "mintlify-com": {
+   "url": "https://www.mintlify.com/",
+   "h1": {
+    "text": "The intelligent documentation platform",
+    "family": "arizonaFlare, \"arizonaFlare Fallback\", serif",
+    "size": 50,
+    "weight": 400,
+    "trackingEm": -0.04,
+    "leading": 1.04,
+    "features": "normal",
+    "variation": "normal",
+    "transform": "none",
+    "lines": 3
+   },
+   "body": {
+    "family": "inter, \"inter Fallback\"",
+    "size": 18,
+    "weight": 400,
+    "leading": 1.333,
+    "trackingEm": 0
+   },
+   "pageBg": "lab(100 0 0)"
+  },
+  "pitch-com": {
+   "url": "https://pitch.com/",
+   "h1": {
+    "text": "Create slides that win.",
+    "family": "\"Mark Pro Bold\", \"Mark Pro Bold Placeholder\", sans-serif",
+    "size": 180,
+    "weight": 700,
+    "trackingEm": -0.04,
+    "leading": 0.8,
+    "features": "\"blwf\", \"cv03\", \"cv04\", \"cv09\", \"cv11\"",
+    "variation": "normal",
+    "transform": "none",
+    "lines": 2
+   },
+   "body": {
+    "family": "\"Eina 03 Regular\", \"Eina 03 Regular Placeholder\", sans-serif",
+    "size": 18,
+    "weight": 400,
+    "leading": 1.6,
+    "trackingEm": -0.02
+   },
+   "pageBg": "rgb(255, 255, 255)"
+  },
+  "campsite-com": {
+   "url": "https://www.campsite.com/",
+   "h1": {
+    "text": "Teamwork, meet deep work",
+    "family": "__Inter_d65c78, __Inter_Fallback_d65c78, ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+    "size": 57.6,
+    "weight": 600,
+    "trackingEm": -0.0313,
+    "leading": 1,
+    "features": "normal",
+    "variation": "normal",
+    "transform": "none",
+    "lines": 2
+   },
+   "body": {
+    "family": "__Inter_d65c78, __Inter_Fallback_d65c78, ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+    "size": 22.4,
+    "weight": 500,
+    "leading": 1.5,
+    "trackingEm": -0.0179
+   },
+   "pageBg": "rgb(255, 255, 255)"
+  },
+  "anthropic-com": {
+   "url": "https://www.anthropic.com/",
+   "h1": {
+    "text": "AI research and products that put safety at the frontier AI research and products that put safety at the frontier",
+    "family": "\"Anthropic Sans\", Arial, sans-serif",
+    "size": 60.87,
+    "weight": 700,
+    "trackingEm": 0,
+    "leading": 1.1,
+    "features": "normal",
+    "variation": "normal",
+    "transform": "none",
+    "lines": 7
+   },
+   "body": {
+    "family": "\"Anthropic Serif\", Georgia, sans-serif",
+    "size": 24,
+    "weight": 400,
+    "leading": 1.4,
+    "trackingEm": 0
+   },
+   "pageBg": "rgb(250, 249, 245)"
+  },
+  "elevenlabs-io": {
+   "url": "https://elevenlabs.io/",
+   "h1": {
+    "text": "Bringing technology to life",
+    "family": "Waldenburg, \"Waldenburg Fallback\"",
+    "size": 48,
+    "weight": 300,
+    "trackingEm": -0.02,
+    "leading": 1.083,
+    "features": "normal",
+    "variation": "normal",
+    "transform": "none",
+    "lines": 3
+   },
+   "body": {
+    "family": "Inter, \"Inter Fallback\"",
+    "size": 14,
+    "weight": 400,
+    "leading": 1.286,
+    "trackingEm": 0.01
+   },
+   "pageBg": "rgb(253, 252, 252)"
+  },
+  "runwayml-com": {
+   "url": "https://runway.com/",
+   "h1": {
+    "text": "Building Real-World Intelligence",
+    "family": "abcNormal, \"abcNormal Fallback\"",
+    "size": 40,
+    "weight": 400,
+    "trackingEm": -0.0125,
+    "leading": 1.15,
+    "features": "normal",
+    "variation": "normal",
+    "transform": "none",
+    "lines": 1
+   },
+   "body": {
+    "family": "abcNormal, \"abcNormal Fallback\"",
+    "size": 20,
+    "weight": 400,
+    "leading": 1.55,
+    "trackingEm": -0.005
+   },
+   "pageBg": "rgba(0, 0, 0, 0)"
+  },
+  "modal-com": {
+   "url": "https://modal.com/",
+   "h1": {
+    "text": "The platform for production AI",
+    "family": "\"ABC Diatype\", \"ABC Diatype Fallback\", Arial, ui-sans-serif, system-ui, sans-serif",
+    "size": 44,
+    "weight": 400,
+    "trackingEm": 0,
+    "leading": 1.091,
+    "features": "\"cv11\"",
+    "variation": "normal",
+    "transform": "none",
+    "lines": 1
+   },
+   "body": {
+    "family": "\"ABC Diatype\", \"ABC Diatype Fallback\", Arial, ui-sans-serif, system-ui, sans-serif",
+    "size": 14,
+    "weight": 400,
+    "leading": 1.714,
+    "trackingEm": 0
+   },
+   "pageBg": "rgb(24, 24, 24)"
+  },
+  "railway-com": {
+   "url": "https://railway.com/",
+   "h1": {
+    "text": "Ship software peacefully",
+    "family": "\"IBM Plex Serif\", Georgia, Cambria, \"Times New Roman\", serif, ui-serif, Georgia, Cambria, \"Times New Roman\", Times, serif",
+    "size": 54,
+    "weight": 500,
+    "trackingEm": -0.0363,
+    "leading": 1.12,
+    "features": "normal",
+    "variation": "normal",
+    "transform": "none",
+    "lines": 1
+   },
+   "body": {
+    "family": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+    "size": 18,
+    "weight": 500,
+    "leading": 1.6,
+    "trackingEm": -0.005
+   },
+   "pageBg": "rgb(19, 17, 28)"
+  },
+  "warp-dev": {
+   "url": "https://www.warp.dev/",
+   "h1": {
+    "text": "Open infrastructure for cloud software factories",
+    "family": "azeretSemiMono, \"azeretSemiMono Fallback\", \"Azeret SemiMono\", ui-monospace, monospace",
+    "size": 54,
+    "weight": 400,
+    "trackingEm": -0.037,
+    "leading": 1.05,
+    "features": "normal",
+    "variation": "normal",
+    "transform": "none",
+    "lines": 2
+   },
+   "body": {
+    "family": "azeretSemiMono, \"azeretSemiMono Fallback\", \"Azeret SemiMono\", ui-monospace, monospace",
+    "size": 16,
+    "weight": 400,
+    "leading": 1.65,
+    "trackingEm": 0
+   },
+   "pageBg": "rgba(0, 0, 0, 0)"
+  },
+  "replicate-com": {
+   "url": "https://replicate.com/",
+   "h1": {
+    "text": "Run AI with an API.",
+    "family": "rb-freigeist-neue, ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+    "size": 72,
+    "weight": 700,
+    "trackingEm": -0.025,
+    "leading": 1,
+    "features": "normal",
+    "variation": "normal",
+    "transform": "none",
+    "lines": 2
+   },
+   "body": {
+    "family": "basier-square, ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+    "size": 14,
+    "weight": 400,
+    "leading": 1.429,
+    "trackingEm": 0
+   },
+   "pageBg": "rgb(255, 255, 255)"
+  },
+  "plain-com": {
+   "url": "https://www.plain.com/",
+   "h1": {
+    "text": "Build support your own way",
+    "family": "\"ABC Favorit Regular\", \"ABC Favorit Regular Placeholder\", sans-serif",
+    "size": 80,
+    "weight": 400,
+    "trackingEm": -0.02,
+    "leading": 1,
+    "features": "normal",
+    "variation": "normal",
+    "transform": "none",
+    "lines": 2
+   },
+   "body": {
+    "family": "\"ABC Favorit Regular\", \"ABC Favorit Regular Placeholder\", sans-serif",
+    "size": 24,
+    "weight": 400,
+    "leading": 1.167,
+    "trackingEm": -0.02
+   },
+   "pageBg": "rgb(255, 255, 255)"
+  },
+  "ramp-com": {
+   "url": "https://ramp.com/",
+   "h1": {
+    "text": "Time is money. Save both.",
+    "family": "Lausanne, Arial, sans-serif",
+    "size": 64,
+    "weight": 400,
+    "trackingEm": -0.0002,
+    "leading": 1,
+    "features": "\"ss01\"",
+    "variation": "normal",
+    "transform": "none",
+    "lines": 1
+   },
+   "body": {
+    "family": "Lausanne, Arial, sans-serif",
+    "size": 18,
+    "weight": 400,
+    "leading": 1.333,
+    "trackingEm": 0
+   },
+   "pageBg": "lab(100 0 0)"
+  },
+  "sanity-io": {
+   "url": "https://www.sanity.io/",
+   "h1": {
+    "text": "The Content Operations Platform",
+    "family": "Waldenburg-75357948a2b6a39b, \"Waldenburg-75357948a2b6a39b fallback: Arial\", ui-sans-serif, system-ui, sans-serif",
+    "size": 112,
+    "weight": 400,
+    "trackingEm": -0.04,
+    "leading": 1,
+    "features": "\"calt\" 0",
+    "variation": "normal",
+    "transform": "none",
+    "lines": 2
+   },
+   "body": {
+    "family": "Waldenburg-75357948a2b6a39b, \"Waldenburg-75357948a2b6a39b fallback: Arial\", ui-sans-serif, system-ui, sans-serif",
+    "size": 32,
+    "weight": 425,
+    "leading": 1.1,
+    "trackingEm": -0.01
+   },
+   "pageBg": "rgb(255, 255, 255)"
+  },
+  "oxide-computer": {
+   "url": "https://oxide.computer/",
+   "h1": {
+    "text": "On-prem that feels like the public cloud",
+    "family": "SuisseIntl, -apple-system, \"system-ui\", Helvetica, Arial, sans-serif",
+    "size": 65,
+    "weight": 400,
+    "trackingEm": -0.025,
+    "leading": 1,
+    "features": "normal",
+    "variation": "normal",
+    "transform": "none",
+    "lines": 2
+   },
+   "body": {
+    "family": "SuisseIntl, -apple-system, \"system-ui\", Helvetica, Arial, sans-serif",
+    "size": 25,
+    "weight": 400,
+    "leading": 1.28,
+    "trackingEm": 0
+   },
+   "pageBg": "oklch(0.162 0.01 260)"
+  },
+  "rive-app": {
+   "url": "https://rive.app/",
+   "h1": {
+    "text": "THE INTERACTIVE EXPERIENCE ENGINE",
+    "family": "Orbitron, \"Orbitron Placeholder\", sans-serif",
+    "size": 40,
+    "weight": 900,
+    "trackingEm": 0.01,
+    "leading": 1.2,
+    "features": "normal",
+    "variation": "normal",
+    "transform": "uppercase",
+    "lines": 2
+   },
+   "body": {
+    "family": "Inter, sans-serif",
+    "size": 16,
+    "weight": 400,
+    "leading": 1.6,
+    "trackingEm": 0
+   },
+   "pageBg": "rgb(0, 0, 0)"
+  },
+  "browserbase-com": {
+   "url": "https://www.browserbase.com/",
+   "h1": {
+    "text": "Infrastructure for your agents to act on the web.",
+    "family": "gtPlanar, \"gtPlanar Fallback\", system-ui, Arial, sans-serif",
+    "size": 45,
+    "weight": 500,
+    "trackingEm": -0.02,
+    "leading": 1.15,
+    "features": "normal",
+    "variation": "normal",
+    "transform": "none",
+    "lines": 2
+   },
+   "body": {
+    "family": "plain, \"plain Fallback\", system-ui, Arial, sans-serif",
+    "size": 20,
+    "weight": 500,
+    "leading": 1.16,
+    "trackingEm": 0.02
+   },
+   "pageBg": "rgba(0, 0, 0, 0)"
+  },
+  "cohere-com": {
+   "url": "https://cohere.com/",
+   "h1": {
+    "text": "Your AI. Your rules.",
+    "family": "CohereText, \"Space Grotesk\", Inter, ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+    "size": 96,
+    "weight": 400,
+    "trackingEm": -0.02,
+    "leading": 1,
+    "features": "normal",
+    "variation": "normal",
+    "transform": "none",
+    "lines": 2
+   },
+   "body": {
+    "family": "\"Unica77 Cohere Web\", Inter, Arial, ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+    "size": 18,
+    "weight": 400,
+    "leading": 1.4,
+    "trackingEm": 0
+   },
+   "pageBg": "rgb(255, 255, 255)"
+  },
+  "every-to": {
+   "url": "https://every.to/",
+   "h1": {
+    "text": "Go AI-native, automatically with a company agent in Slack",
+    "family": "Signifier, \"Signifier Fallback\", ui-serif, Georgia, Cambria, \"Times New Roman\", Times, serif",
+    "size": 64,
+    "weight": 400,
+    "trackingEm": -0.04,
+    "leading": 0.9,
+    "features": "\"calt\", \"clig\", \"kern\", \"liga\", \"pnum\"",
+    "variation": "normal",
+    "transform": "none",
+    "lines": 2
+   },
+   "body": {
+    "family": "Switzer, \"Inter var\", ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+    "size": 16,
+    "weight": 500,
+    "leading": 1,
+    "trackingEm": 0
+   },
+   "pageBg": "rgb(2, 2, 2)"
+  },
+  "fly-io": {
+   "url": "https://fly.io/",
+   "h1": {
+    "text": "Computers for agents",
+    "family": "Mackinac, ui-serif, Georgia, Cambria, \"Times New Roman\", Times, serif",
+    "size": 72,
+    "weight": 500,
+    "trackingEm": -0.02,
+    "leading": 0.95,
+    "features": "normal",
+    "variation": "\"opsz\" 24",
+    "transform": "none",
+    "lines": 2
+   },
+   "body": {
+    "family": "\"Fricolage Grotesque\", ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+    "size": 20.5,
+    "weight": 325,
+    "leading": 1.35,
+    "trackingEm": 0
+   },
+   "pageBg": "rgba(0, 0, 0, 0)"
+  },
+  "cal-com": {
+   "url": "https://cal.com/",
+   "h1": {
+    "text": "The better way to schedule your meetings",
+    "family": "\"Cal Sans\", \"Cal Sans Placeholder\", sans-serif",
+    "size": 64,
+    "weight": 600,
+    "trackingEm": 0,
+    "leading": 1.1,
+    "features": "normal",
+    "variation": "normal",
+    "transform": "none",
+    "lines": 3
+   },
+   "body": {
+    "family": "\"Cal Sans UI Variable Light\", \"Cal Sans UI Variable Light Placeholder\", sans-serif",
+    "size": 16,
+    "weight": 300,
+    "leading": 1.5,
+    "trackingEm": 0
+   },
+   "pageBg": "rgb(244, 244, 244)"
+  },
+  "supabase-com": {
+   "url": "https://supabase.com/",
+   "h1": {
+    "text": "Build in a weekend Scale to millions",
+    "family": "Manrope, \"Manrope Fallback\", system-ui, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+    "size": 46,
+    "weight": 500,
+    "trackingEm": 0,
+    "leading": 1,
+    "features": "normal",
+    "variation": "normal",
+    "transform": "none",
+    "lines": 4
+   },
+   "body": {
+    "family": "Inter, \"Inter Fallback\", system-ui, \"Helvetica Neue\", Helvetica, Arial, sans-serif, Inter, \"Helvetica Neue\", Helvetica, ui-sans-serif, system-ui, sans-serif",
+    "size": 14,
+    "weight": 450,
+    "leading": 1.429,
+    "trackingEm": 0
+   },
+   "pageBg": "oklch(0.995 0 337.5)"
+  },
+  "notion-com": {
+   "url": "https://www.notion.com/",
+   "h1": {
+    "text": "Where teams and agents Ship together.",
+    "family": "NotionInter, Inter, -apple-system, \"system-ui\", \"Segoe UI\", Helvetica, \"Apple Color Emoji\", Arial, sans-serif, \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+    "size": 96,
+    "weight": 600,
+    "trackingEm": -0.0479,
+    "leading": 1.042,
+    "features": "normal",
+    "variation": "normal",
+    "transform": "none",
+    "lines": 4
+   },
+   "body": {
+    "family": "NotionInter, Inter, -apple-system, \"system-ui\", \"Segoe UI\", Helvetica, \"Apple Color Emoji\", Arial, sans-serif, \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+    "size": 20,
+    "weight": 400,
+    "leading": 1.4,
+    "trackingEm": -0.0063
+   },
+   "pageBg": "rgb(255, 255, 255)"
+  },
+  "harvey-ai": {
+   "url": "https://www.harvey.ai/",
+   "h1": {
+    "text": "Build a Frontier Legal Organization",
+    "family": "HarveySerifFont, \"HarveySerifFont Fallback\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif, sans-serif",
+    "size": 72,
+    "weight": 400,
+    "trackingEm": -0.0125,
+    "leading": 1.05,
+    "features": "\"calt\", \"liga\"",
+    "variation": "normal",
+    "transform": "none",
+    "lines": 2
+   },
+   "body": {
+    "family": "HarveySansFont, \"HarveySansFont Fallback\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif, sans-serif",
+    "size": 14,
+    "weight": 400,
+    "leading": 1.3,
+    "trackingEm": 0
+   },
+   "pageBg": "rgb(15, 14, 13)"
+  },
+  "hex-tech": {
+   "url": "https://hex.tech/",
+   "h1": {
+    "text": "Make everyone a data person",
+    "family": "\"PP Formula SemiExtended\", ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+    "size": 74,
+    "weight": 700,
+    "trackingEm": -0.025,
+    "leading": 1.2,
+    "features": "normal",
+    "variation": "normal",
+    "transform": "none",
+    "lines": 4
+   },
+   "body": {
+    "family": "Cinetype, ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\", sans-serif",
+    "size": 14,
+    "weight": 400,
+    "leading": 1.571,
+    "trackingEm": 0
+   },
+   "pageBg": "rgb(20, 20, 28)"
+  },
+  "factory-ai": {
+   "url": "https://factory.com/",
+   "h1": {
+    "text": "MAKE YOUR SOFTWARE IMPROVE ITSELF",
+    "family": "Geist, \"Geist Fallback\", sans-serif",
+    "size": 60.48,
+    "weight": 500,
+    "trackingEm": -0.04,
+    "leading": 1,
+    "features": "normal",
+    "variation": "normal",
+    "transform": "uppercase",
+    "lines": 4
+   },
+   "body": {
+    "family": "Geist, \"Geist Fallback\", sans-serif",
+    "size": 16,
+    "weight": 400,
+    "leading": 1.2,
+    "trackingEm": 0
+   },
+   "pageBg": "rgb(245, 245, 245)"
+  },
+  "sierra-ai": {
+   "url": "https://sierra.ai/",
+   "h1": {
+    "text": "Better outcomes. Built on Sierra.",
+    "family": "gtAmerica, \"gtAmerica Fallback\"",
+    "size": 65,
+    "weight": 400,
+    "trackingEm": -0.02,
+    "leading": 1.108,
+    "features": "normal",
+    "variation": "normal",
+    "transform": "none",
+    "lines": 4
+   },
+   "body": {
+    "family": "gtAmerica, \"gtAmerica Fallback\"",
+    "size": 38,
+    "weight": 400,
+    "leading": 1.211,
+    "trackingEm": -0.01
+   },
+   "pageBg": "rgba(0, 0, 0, 0)"
+  },
+  "mistral-ai": {
+   "url": "https://mistral.ai/",
+   "h1": {
+    "text": "Mistral is #1 in Sovereign AI.",
+    "family": "ALTMistral, sans-serif",
+    "size": 96,
+    "weight": 500,
+    "trackingEm": -0.02,
+    "leading": 1,
+    "features": "normal",
+    "variation": "normal",
+    "transform": "none",
+    "lines": 3
+   },
+   "body": {
+    "family": "ALTMistral, sans-serif",
+    "size": 16,
+    "weight": 500,
+    "leading": 1.5,
+    "trackingEm": 0
+   },
+   "pageBg": "rgb(251, 251, 248)"
+  },
+  "cognition-ai": {
+   "url": "https://cognition.com/",
+   "h1": {
+    "text": "Cognition operates Devin, the first autonomous software engineer.",
+    "family": "nbInternational, \"nbInternational Fallback\"",
+    "size": 36,
+    "weight": 400,
+    "trackingEm": -0.02,
+    "leading": 1.1,
+    "features": "normal",
+    "variation": "normal",
+    "transform": "none",
+    "lines": 2
+   },
+   "body": {
+    "family": "stkBureauSerif, \"stkBureauSerif Fallback\"",
+    "size": 15,
+    "weight": 400,
+    "leading": 1.5,
+    "trackingEm": 0
+   },
+   "pageBg": "rgb(247, 246, 245)"
+  },
+  "krea-ai": {
+   "url": "https://www.krea.ai/",
+   "h1": {
+    "text": "Start by generating with Krea 2",
+    "family": "\"Suisse Intl\", ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+    "size": 60,
+    "weight": 450,
+    "trackingEm": 0,
+    "leading": 1,
+    "features": "normal",
+    "variation": "normal",
+    "transform": "none",
+    "lines": 1
+   },
+   "body": {
+    "family": "\"Suisse Intl\", ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+    "size": 24,
+    "weight": 450,
+    "leading": 1.333,
+    "trackingEm": 0
+   },
+   "pageBg": "rgb(16, 16, 16)"
+  },
+  "descript-com": {
+   "url": "https://www.descript.com/",
+   "h1": {
+    "text": "AI-editing for every kind of video",
+    "family": "gamuthDisplay, \"gamuthDisplay Fallback\", Georgia, serif",
+    "size": 88,
+    "weight": 400,
+    "trackingEm": 0,
+    "leading": "normal",
+    "features": "\"calt\", \"liga\"",
+    "variation": "normal",
+    "transform": "none",
+    "lines": 2
+   },
+   "body": {
+    "family": "booton, \"booton Fallback\", system-ui, Roboto, Arial, sans-serif",
+    "size": 18,
+    "weight": 400,
+    "leading": 1.5,
+    "trackingEm": 0
+   },
+   "pageBg": "rgb(255, 247, 250)"
+  },
+  "dub-co": {
+   "url": "https://dub.co/",
+   "h1": {
+    "text": "Turn clicks into revenue",
+    "family": "satoshi, \"satoshi Fallback\", system-ui, sans-serif",
+    "size": 48,
+    "weight": 500,
+    "trackingEm": 0,
+    "leading": 1.15,
+    "features": "normal",
+    "variation": "normal",
+    "transform": "none",
+    "lines": 1
+   },
+   "body": {
+    "family": "Inter, \"Inter Fallback\", system-ui, sans-serif",
+    "size": 20,
+    "weight": 400,
+    "leading": 1.4,
+    "trackingEm": 0
+   },
+   "pageBg": "rgb(250, 250, 250)"
+  },
+  "tailwindcss-com": {
+   "url": "https://tailwindcss.com/",
+   "h1": {
+    "text": "Rapidly build modern websites without ever leaving your HTML.",
+    "family": "inter, \"inter Fallback\", system-ui",
+    "size": 96,
+    "weight": 400,
+    "trackingEm": -0.05,
+    "leading": 1,
+    "features": "\"cv02\", \"cv03\", \"cv04\", \"cv11\"",
+    "variation": "normal",
+    "transform": "none",
+    "lines": 2
+   },
+   "body": {
+    "family": "inter, \"inter Fallback\", system-ui",
+    "size": 18,
+    "weight": 500,
+    "leading": 1.556,
+    "trackingEm": 0
+   },
+   "pageBg": "rgba(0, 0, 0, 0)"
+  },
+  "retool-com": {
+   "url": "https://retool.com/",
+   "h1": {
+    "text": "Secure your vibe-coded apps",
+    "family": "saansFont, \"saansFont Fallback\", sans-serif",
+    "size": 72,
+    "weight": 300,
+    "trackingEm": -0.022,
+    "leading": 1.05,
+    "features": "normal",
+    "variation": "normal",
+    "transform": "none",
+    "lines": 2
+   },
+   "body": {
+    "family": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+    "size": 16,
+    "weight": 400,
+    "leading": 1.5,
+    "trackingEm": 0
+   },
+   "pageBg": "rgb(21, 21, 21)"
+  },
+  "linear-app-method": {
+   "url": "https://linear.app/method",
+   "h1": {
+    "text": "Practices for building",
+    "family": "\"Tiempos Headline\", ui-serif, Georgia, Cambria, \"Times New Roman\", Times, serif",
+    "size": 128,
+    "weight": 400,
+    "trackingEm": 0,
+    "leading": 1,
+    "features": "normal",
+    "variation": "normal",
+    "transform": "none",
+    "lines": 2
+   },
+   "body": {
+    "family": "\"Inter Variable\", \"SF Pro Display\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+    "size": 17,
+    "weight": 400,
+    "leading": 1.6,
+    "trackingEm": 0
+   },
+   "pageBg": "rgb(8, 9, 10)"
+  }
+ }
+}

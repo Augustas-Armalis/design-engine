@@ -1,0 +1,332 @@
+{
+ "url": "https://neon.com",
+ "measured": "2026-10-09",
+ "viewport": "1440x900 dark",
+ "title": "Neon — Postgres backends for apps and agents",
+ "H": 11039,
+ "scheme": {
+  "html": "dark",
+  "meta": "#000000"
+ },
+ "canvas": {
+  "hex": "#000000",
+  "L": 0,
+  "C": 0,
+  "H": 0
+ },
+ "surfaces": [
+  {
+   "hex": "#000000",
+   "L": 0,
+   "C": 0,
+   "H": 0,
+   "n": 6,
+   "area": 2635423,
+   "ex": "header 1440x64"
+  },
+  {
+   "hex": "#111315",
+   "L": 0.185,
+   "C": 0.005,
+   "H": 248,
+   "n": 5,
+   "area": 259205,
+   "ex": "span 262x259"
+  },
+  {
+   "hex": "#ffffff",
+   "L": 1,
+   "C": 0,
+   "H": 90,
+   "n": 4,
+   "area": 81266,
+   "ex": "span 328x110"
+  },
+  {
+   "hex": "#18191b",
+   "L": 0.213,
+   "C": 0.004,
+   "H": 264,
+   "n": 1,
+   "area": 51840,
+   "ex": "a 1440x36"
+  }
+ ],
+ "overlays": [],
+ "borders": [
+  {
+   "border": "rgb(97, 100, 107) @1",
+   "n": 8,
+   "alpha": 1,
+   "flat": "#61646b",
+   "dL": 0.503
+  },
+  {
+   "border": "rgb(24, 25, 27) @1",
+   "n": 4,
+   "alpha": 1,
+   "flat": "#18191b",
+   "dL": 0.213
+  },
+  {
+   "border": "rgb(73, 75, 80) @1",
+   "n": 4,
+   "alpha": 1,
+   "flat": "#494b50",
+   "dL": 0.413
+  },
+  {
+   "border": "rgb(48, 50, 54) @1",
+   "n": 3,
+   "alpha": 1,
+   "flat": "#303236",
+   "dL": 0.317
+  }
+ ],
+ "shadows": [
+  {
+   "s": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, lab(100 -0.0000298023 0.0000119209 / 0.05) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+   "n": 5
+  },
+  {
+   "s": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(48, 50, 54) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+   "n": 2
+  }
+ ],
+ "text": [
+  {
+   "color": "rgb(148, 151, 158)",
+   "chars": 1116,
+   "flat": "#94979e",
+   "alpha": 1,
+   "L": 0.676,
+   "C": 0.011,
+   "H": 267,
+   "wcag": 7.18,
+   "size": "13px",
+   "weight": "400",
+   "ex": "Lakebase Postgres\nServerless P"
+  },
+  {
+   "color": "rgb(255, 255, 255)",
+   "chars": 557,
+   "flat": "#ffffff",
+   "alpha": 1,
+   "L": 1,
+   "C": 0,
+   "H": 90,
+   "wcag": 17.59,
+   "size": "14px",
+   "weight": "500",
+   "ex": "Major update to our Free Plan:"
+  },
+  {
+   "color": "rgb(121, 125, 134)",
+   "chars": 59,
+   "flat": "#797d86",
+   "alpha": 1,
+   "L": 0.589,
+   "C": 0.015,
+   "H": 267,
+   "wcag": 5.09,
+   "size": "10px",
+   "weight": "500",
+   "ex": "CORE PRIMITIVES"
+  },
+  {
+   "color": "rgb(201, 203, 207)",
+   "chars": 39,
+   "flat": "#c9cbcf",
+   "alpha": 1,
+   "L": 0.842,
+   "C": 0.006,
+   "H": 265,
+   "wcag": 12.93,
+   "size": "12px",
+   "weight": "500",
+   "ex": "NEON IS PART OF THE DATABRICKS"
+  },
+  {
+   "color": "rgb(26, 26, 26)",
+   "chars": 11,
+   "flat": "#1a1a1a",
+   "alpha": 1,
+   "L": 0.218,
+   "C": 0,
+   "H": 90,
+   "wcag": 17.4,
+   "size": "16px",
+   "weight": "500",
+   "ex": "Get started"
+  },
+  {
+   "color": "rgb(0, 0, 0)",
+   "chars": 7,
+   "flat": "#000000",
+   "alpha": 1,
+   "L": 0,
+   "C": 0,
+   "H": 0,
+   "wcag": 21,
+   "size": "14px",
+   "weight": "500",
+   "ex": "Sign up"
+  }
+ ],
+ "h1": {
+  "text": "The backend for apps and agents, built to scale on Lakebase\n Postgres.",
+  "family": "Inter",
+  "size": "56px",
+  "weight": "400",
+  "ls": "-2.24px",
+  "lh": "63px",
+  "color": "rgb(255, 255, 255)",
+  "bgClip": "border-box",
+  "bgImage": null,
+  "textShadow": null,
+  "fillColor": "rgb(255, 255, 255)",
+  "mask": null
+ },
+ "ctas": [
+  {
+   "text": "Lakebase",
+   "w": 236,
+   "h": 63,
+   "bg": "rgba(0, 0, 0, 0)",
+   "fillL": null,
+   "color": "rgb(255, 255, 255)",
+   "border": null,
+   "radius": "0px",
+   "shadow": null,
+   "bgi": null,
+   "size": "56px",
+   "weight": "400",
+   "before": null,
+   "after": null,
+   "childBg": "rgb(255, 255, 255)"
+  },
+  {
+   "text": "Get started",
+   "w": 138,
+   "h": 44,
+   "bg": "rgb(255, 255, 255)",
+   "fillL": 1,
+   "color": "rgb(26, 26, 26)",
+   "border": null,
+   "radius": "3.35544e+07px",
+   "shadow": null,
+   "bgi": null,
+   "size": "16px",
+   "weight": "500",
+   "before": null,
+   "after": null,
+   "childBg": null
+  },
+  {
+   "text": "Read the docs",
+   "w": 162,
+   "h": 44,
+   "bg": "rgba(0, 0, 0, 0)",
+   "fillL": null,
+   "color": "rgb(255, 255, 255)",
+   "border": "1px solid rgb(97, 100, 107)",
+   "radius": "3.35544e+07px",
+   "shadow": null,
+   "bgi": null,
+   "size": "16px",
+   "weight": "400",
+   "before": null,
+   "after": null,
+   "childBg": null
+  }
+ ],
+ "nav": {
+  "h": 64,
+  "w": 1440,
+  "bg": "rgb(0, 0, 0)",
+  "backdrop": "none",
+  "bb": null,
+  "border": null,
+  "radius": "0px",
+  "shadow": null,
+  "link": "rgb(255, 255, 255)",
+  "linkSize": "15px"
+ },
+ "lightFx": [
+  {
+   "el": "span 328x110@635,162",
+   "bgi": null,
+   "filter": null,
+   "mask": "url(\"https://neon.com/_next/static/immutable/media/noise.20qyfz0pxfv46.svg\")",
+   "blend": null,
+   "opacity": "0.075"
+  },
+  {
+   "el": "span 328x110@635,290",
+   "bgi": null,
+   "filter": null,
+   "mask": "url(\"https://neon.com/_next/static/immutable/media/noise.20qyfz0pxfv46.svg\")",
+   "blend": null,
+   "opacity": "0.075"
+  },
+  {
+   "el": "div::before 1376x28@32,805",
+   "bgi": "linear-gradient(to right in oklab, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%)",
+   "filter": null,
+   "mask": null,
+   "blend": null,
+   "opacity": null
+  },
+  {
+   "el": "div::after 1376x28@32,805",
+   "bgi": "linear-gradient(to left in oklab, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%)",
+   "filter": null,
+   "mask": null,
+   "blend": null,
+   "opacity": null
+  },
+  {
+   "el": "div 1440x88@0,753",
+   "bgi": "linear-gradient(rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%)",
+   "filter": null,
+   "mask": null,
+   "blend": null,
+   "opacity": null
+  }
+ ],
+ "lightFxCount": 5,
+ "media": [
+  {
+   "tag": "video",
+   "w": 1920,
+   "h": 832,
+   "top": 36,
+   "blend": "normal",
+   "opacity": "1",
+   "mask": null
+  }
+ ],
+ "noise": {
+  "feTurbulence": 0,
+  "cssNoise": [],
+  "imgs": 4
+ },
+ "frames": [],
+ "accentUse": [],
+ "radii": [
+  [
+   "4px",
+   31
+  ],
+  [
+   "3.35544e+07px",
+   4
+  ],
+  [
+   "5px",
+   1
+  ]
+ ],
+ "smoothing": "antialiased",
+ "canvasCtx": []
+}

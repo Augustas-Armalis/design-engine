@@ -1,0 +1,951 @@
+{
+  "$id": "design-engine/type-voices",
+  "version": "2026-10-09",
+  "doc": "knowledge/web/type-voices.md",
+  "specimen": "system/variety/type-specimen.html",
+  "evidence": "knowledge/benchmarks/variety/type/measurements.json (50 premium SaaS/AI hero h1s measured at 1440) + <site>.png crops",
+  "units": "size px at 1440 viewport; tracking em (letter-spacing / font-size); leading unitless line-height; mobileSize px at 390; wordSpacing em (null = font default)",
+  "usage": "Pick ONE voice per brand. Record the slug in DIRECTION.md. Do not reuse the voice of any of the last 4 ledger entries. Display face only for h1/h2/big numbers; body face for everything else; mono for code, meta, IDs. Hero headline: Title Case, max two lines at 1440, no full stop (founder rules).",
+  "voices": [
+    {
+      "slug": "geometric-studio",
+      "class": "geometric sans",
+      "display": {
+        "family": "Outfit",
+        "fontsource": "@fontsource-variable/outfit",
+        "weights": [
+          400,
+          500,
+          600
+        ],
+        "size": 76,
+        "mobileSize": 44,
+        "weight": 500,
+        "tracking": -0.035,
+        "leading": 1,
+        "axes": null,
+        "features": null,
+        "wordSpacing": null
+      },
+      "body": {
+        "family": "Onest",
+        "fontsource": "@fontsource-variable/onest",
+        "size": 18,
+        "weight": 400,
+        "tracking": -0.005,
+        "leading": 1.55
+      },
+      "mono": {
+        "family": "DM Mono",
+        "fontsource": "@fontsource/dm-mono",
+        "weight": 400
+      },
+      "personality": "Round-shouldered, optimistic, crafted; reads like a design tool that ships",
+      "bestFor": [
+        "design and no-code tools",
+        "website/app builders",
+        "creative AI",
+        "presentation and whiteboard products"
+      ],
+      "neverFor": [
+        "legal, compliance, security",
+        "serious finance",
+        "dense data products"
+      ],
+      "analog": {
+        "site": "framer.com",
+        "measured": "GT Walsheim Medium 54px / 500 / -0.04em / lh 1.0, ss02; body Inter 18/1.35",
+        "also": "pitch.com Mark Pro Bold 180 / 700 / -0.04 / 0.8"
+      },
+      "specimen": {
+        "line1": "Prototype Every Screen",
+        "line2": "Your Team Can Imagine",
+        "sub": "Design, test and publish product flows from one canvas, with real components.",
+        "label": "Sample · design tool"
+      },
+      "googleFontsCss": "https://fonts.googleapis.com/css2?family=Outfit:wght@400..600&family=Onest:wght@400..600&family=DM+Mono:wght@400;500&display=swap"
+    },
+    {
+      "slug": "light-grotesk",
+      "class": "neo-grotesque, light weight",
+      "display": {
+        "family": "Hanken Grotesk",
+        "fontsource": "@fontsource-variable/hanken-grotesk",
+        "weights": [
+          300,
+          400,
+          500
+        ],
+        "size": 76,
+        "mobileSize": 42,
+        "weight": 300,
+        "tracking": -0.03,
+        "leading": 1.04,
+        "axes": null,
+        "features": null,
+        "wordSpacing": null
+      },
+      "body": {
+        "family": "Hanken Grotesk",
+        "fontsource": "@fontsource-variable/hanken-grotesk",
+        "size": 19,
+        "weight": 400,
+        "tracking": -0.005,
+        "leading": 1.55
+      },
+      "mono": {
+        "family": "Source Code Pro",
+        "fontsource": "@fontsource-variable/source-code-pro",
+        "weight": 400
+      },
+      "personality": "Quiet authority; confident enough to whisper. Large and light instead of bold and loud",
+      "bestFor": [
+        "payments and financial infrastructure",
+        "enterprise AI platforms",
+        "voice/audio AI",
+        "B2B infra with a premium price"
+      ],
+      "neverFor": [
+        "consumer/playful apps",
+        "small hero sizes (< 56px: 300 goes weak)",
+        "low-contrast or busy backgrounds"
+      ],
+      "analog": {
+        "site": "stripe.com",
+        "measured": "sohne-var 48px / 300 / -0.02em / lh 1.15, ss01",
+        "also": "retool.com Saans 72 / 300 / -0.022 / 1.05; elevenlabs.io Waldenburg 48 / 300 / -0.02 / 1.083"
+      },
+      "specimen": {
+        "line1": "Settle Every Payout",
+        "line2": "In The Currency It Earned",
+        "sub": "Multi-currency treasury, FX and payouts on one ledger you can audit line by line.",
+        "label": "Sample · payments infrastructure"
+      },
+      "googleFontsCss": "https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300..500&family=Source+Code+Pro:wght@400;500&display=swap"
+    },
+    {
+      "slug": "swiss-regular",
+      "class": "neo-grotesque, regular weight",
+      "display": {
+        "family": "Host Grotesk",
+        "fontsource": "@fontsource-variable/host-grotesk",
+        "weights": [
+          400,
+          500
+        ],
+        "size": 80,
+        "mobileSize": 44,
+        "weight": 400,
+        "tracking": -0.025,
+        "leading": 1,
+        "axes": null,
+        "features": null,
+        "wordSpacing": -0.1
+      },
+      "body": {
+        "family": "Host Grotesk",
+        "fontsource": "@fontsource-variable/host-grotesk",
+        "size": 18,
+        "weight": 400,
+        "tracking": 0,
+        "leading": 1.5
+      },
+      "mono": {
+        "family": "JetBrains Mono",
+        "fontsource": "@fontsource-variable/jetbrains-mono",
+        "weight": 400
+      },
+      "personality": "Swiss, engineered, unbothered. Regular weight at large size; the restraint is the brand",
+      "bestFor": [
+        "compute, cloud and hardware",
+        "AI infra and model platforms",
+        "spend management",
+        "developer platforms that want to look grown-up"
+      ],
+      "neverFor": [
+        "consumer social",
+        "anything that needs warmth or humour"
+      ],
+      "analog": {
+        "site": "oxide.computer",
+        "measured": "SuisseIntl 65px / 400 / -0.025em / lh 1.0",
+        "also": "krea.ai Suisse Intl 60 / 450 / 0 / 1.0; ramp.com Lausanne 64 / 400 / 0 / 1.0, ss01; modal.com ABC Diatype 44 / 400 / 0; sanity.io Waldenburg 112 / 400 / -0.04 / 1.0"
+      },
+      "specimen": {
+        "line1": "Compute That Runs",
+        "line2": "Where Your Data Lives",
+        "sub": "Rack-scale GPU clusters you own, run like a public cloud.",
+        "label": "Sample · on-prem compute"
+      },
+      "googleFontsCss": "https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@400..500&family=JetBrains+Mono:wght@400;500&display=swap",
+      "tuningNote": "Host Grotesk has a wide word space: at -0.03em tracking the gaps between words opened up visibly; tighten words with word-spacing, not more tracking."
+    },
+    {
+      "slug": "character-grotesk",
+      "class": "grotesque with quirky drawn details (single-storey a, flat terminals)",
+      "display": {
+        "family": "Funnel Display",
+        "fontsource": "@fontsource-variable/funnel-display",
+        "weights": [
+          400,
+          500,
+          600
+        ],
+        "size": 84,
+        "mobileSize": 46,
+        "weight": 500,
+        "tracking": -0.03,
+        "leading": 0.98,
+        "axes": null,
+        "features": null,
+        "wordSpacing": null
+      },
+      "body": {
+        "family": "Funnel Sans",
+        "fontsource": "@fontsource-variable/funnel-sans",
+        "size": 18,
+        "weight": 400,
+        "tracking": 0,
+        "leading": 1.5
+      },
+      "mono": {
+        "family": "Fragment Mono",
+        "fontsource": "@fontsource/fragment-mono",
+        "weight": 400
+      },
+      "personality": "Opinionated and a little punk; a grotesk with visible drawing decisions",
+      "bestFor": [
+        "GTM and data-enrichment tools",
+        "growth/revenue platforms",
+        "support and ops tools",
+        "brands with a strong colour field"
+      ],
+      "neverFor": [
+        "banking/regulated",
+        "long headlines (over ~36 characters the quirks get noisy)",
+        "weights above 600 (the details clog)"
+      ],
+      "analog": {
+        "site": "clay.com",
+        "measured": "Roobertvf 88px / 575 / -0.04em / lh 1.0, ss01 ss03 ss10 ss11 ss12",
+        "also": "plain.com ABC Favorit 80 / 400 / -0.02 / 1.0"
+      },
+      "specimen": {
+        "line1": "Turn Every Account",
+        "line2": "Into A Living Signal",
+        "sub": "Enrich, score and route leads from 150 sources without writing a single formula.",
+        "label": "Sample · GTM data"
+      },
+      "googleFontsCss": "https://fonts.googleapis.com/css2?family=Funnel+Display:wght@400..600&family=Funnel+Sans:wght@400..600&family=Fragment+Mono&display=swap",
+      "tuningNote": "Familjen Grotesk 600 was tried first and read as a generic heavy grotesk next to gothic-heavy; Funnel Display 500 keeps the Roobert-style quirks visible."
+    },
+    {
+      "slug": "gothic-heavy",
+      "class": "American gothic (Franklin-style), heavy",
+      "display": {
+        "family": "Special Gothic",
+        "fontsource": "@fontsource-variable/special-gothic",
+        "weights": [
+          500,
+          700
+        ],
+        "size": 80,
+        "mobileSize": 44,
+        "weight": 700,
+        "tracking": -0.025,
+        "leading": 0.98,
+        "axes": {
+          "wdth": 100
+        },
+        "features": null,
+        "wordSpacing": null
+      },
+      "body": {
+        "family": "Public Sans",
+        "fontsource": "@fontsource-variable/public-sans",
+        "size": 18,
+        "weight": 400,
+        "tracking": 0,
+        "leading": 1.55
+      },
+      "mono": {
+        "family": "IBM Plex Mono",
+        "fontsource": "@fontsource/ibm-plex-mono",
+        "weight": 400
+      },
+      "personality": "Newsroom punch; blunt, direct, a headline that means it",
+      "bestFor": [
+        "project management and shipping tools",
+        "developer APIs",
+        "products with a manifesto tone",
+        "high-energy launches"
+      ],
+      "neverFor": [
+        "luxury, wellness",
+        "light weights or loose tracking (it collapses into a generic sans)"
+      ],
+      "analog": {
+        "site": "replicate.com",
+        "measured": "rb-freigeist-neue 72px / 700 / -0.025em / lh 1.0",
+        "also": "lovable.dev Camera Plain 48 / 600 / -0.04 / 1.1; basecamp Graphik 42 / 800 / -0.026 (typography.md 3.6)"
+      },
+      "specimen": {
+        "line1": "Ship The Feature",
+        "line2": "Your Users Asked For",
+        "sub": "Requests, roadmap and releases in one loop, so nothing gets lost.",
+        "label": "Sample · product management"
+      },
+      "googleFontsCss": "https://fonts.googleapis.com/css2?family=Special+Gothic:wdth,wght@75..100,400..700&family=Public+Sans:wght@400..600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+    },
+    {
+      "slug": "humanist-warm",
+      "class": "humanist-grotesque",
+      "display": {
+        "family": "Commissioner",
+        "fontsource": "@fontsource-variable/commissioner",
+        "weights": [
+          400,
+          500
+        ],
+        "size": 72,
+        "mobileSize": 42,
+        "weight": 480,
+        "tracking": -0.02,
+        "leading": 1.06,
+        "axes": null,
+        "features": null,
+        "wordSpacing": null
+      },
+      "body": {
+        "family": "Commissioner",
+        "fontsource": "@fontsource-variable/commissioner",
+        "size": 19,
+        "weight": 360,
+        "tracking": 0,
+        "leading": 1.5
+      },
+      "mono": {
+        "family": "Red Hat Mono",
+        "fontsource": "@fontsource-variable/red-hat-mono",
+        "weight": 400
+      },
+      "personality": "Human, calm, trustworthy without being corporate; a voice that talks to founders",
+      "bestFor": [
+        "startup banking and finance",
+        "email and productivity",
+        "HR/people tools",
+        "healthcare admin"
+      ],
+      "neverFor": [
+        "developer tools that need edge",
+        "poster-style statements"
+      ],
+      "analog": {
+        "site": "mercury.com",
+        "measured": "arcadiaDisplay 49.3px / 480 / 0em / lh 1.1; body arcadia 21 / 360 / 1.35",
+        "also": "superhuman.com Super Sans VF 49 / 460 / -0.0275 / 1.2"
+      },
+      "specimen": {
+        "line1": "Banking That Moves",
+        "line2": "At Founder Speed",
+        "sub": "Accounts, cards and bill pay that set themselves up in an afternoon.",
+        "label": "Sample · startup banking"
+      },
+      "googleFontsCss": "https://fonts.googleapis.com/css2?family=Commissioner:wght@300..500&family=Red+Hat+Mono:wght@400;500&display=swap"
+    },
+    {
+      "slug": "editorial-serif",
+      "class": "contemporary text-display serif (optical size)",
+      "display": {
+        "family": "Newsreader",
+        "fontsource": "@fontsource-variable/newsreader",
+        "weights": [
+          400,
+          500
+        ],
+        "size": 92,
+        "mobileSize": 48,
+        "weight": 400,
+        "tracking": -0.02,
+        "leading": 1,
+        "axes": {
+          "opsz": 72
+        },
+        "features": null,
+        "italicAccent": true,
+        "wordSpacing": null
+      },
+      "body": {
+        "family": "Inter",
+        "fontsource": "@fontsource-variable/inter",
+        "size": 18,
+        "weight": 400,
+        "tracking": -0.011,
+        "leading": 1.5
+      },
+      "mono": {
+        "family": "JetBrains Mono",
+        "fontsource": "@fontsource-variable/jetbrains-mono",
+        "weight": 400
+      },
+      "personality": "Literate, considered, writerly; the product respects reading",
+      "bestFor": [
+        "AI writing and research tools",
+        "documentation",
+        "email/communication APIs",
+        "knowledge products"
+      ],
+      "neverFor": [
+        "real-time ops dashboards as the hero",
+        "gaming",
+        "headlines over ~40 characters at this size"
+      ],
+      "analog": {
+        "site": "resend.com",
+        "measured": "domaine 96px / 400 / -0.01em / lh 1.0, ss01 ss04 ss05 ss11; body Inter 18/1.5",
+        "also": "every.to Signifier 64 / 400 / -0.04 / 0.9; linear.app/method Tiempos Headline 128 / 400 / 0 / 1.0"
+      },
+      "specimen": {
+        "line1": "Write The Memo",
+        "line2": "Your Board Will Read",
+        "sub": "Research, draft and cite in one document, with sources you can check.",
+        "label": "Sample · AI writing"
+      },
+      "googleFontsCss": "https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..500;1,6..72,400..500&family=Inter:wght@400..600&family=JetBrains+Mono:wght@400;500&display=swap"
+    },
+    {
+      "slug": "transitional-serif",
+      "class": "transitional serif (optical size)",
+      "display": {
+        "family": "Source Serif 4",
+        "fontsource": "@fontsource-variable/source-serif-4",
+        "weights": [
+          400,
+          500
+        ],
+        "size": 76,
+        "mobileSize": 42,
+        "weight": 450,
+        "tracking": -0.02,
+        "leading": 1.05,
+        "axes": {
+          "opsz": 60
+        },
+        "features": null,
+        "wordSpacing": null
+      },
+      "body": {
+        "family": "IBM Plex Sans",
+        "fontsource": "@fontsource-variable/ibm-plex-sans",
+        "size": 17,
+        "weight": 400,
+        "tracking": 0,
+        "leading": 1.6
+      },
+      "mono": {
+        "family": "IBM Plex Mono",
+        "fontsource": "@fontsource/ibm-plex-mono",
+        "weight": 400
+      },
+      "personality": "Institutional, precise, accountable; the voice of a firm, not a startup",
+      "bestFor": [
+        "legal AI",
+        "compliance, audit, tax",
+        "insurance and healthcare",
+        "enterprise knowledge"
+      ],
+      "neverFor": [
+        "consumer apps",
+        "playful brands",
+        "dark neon aesthetics"
+      ],
+      "analog": {
+        "site": "harvey.ai",
+        "measured": "HarveySerif 72px / 400 / -0.0125em / lh 1.05, calt liga; body HarveySans 14",
+        "also": "railway.com IBM Plex Serif 54 / 500 / -0.036 / 1.12; mintlify.com Arizona Flare 50 / 400 / -0.04 / 1.04"
+      },
+      "specimen": {
+        "line1": "Legal Work, Drafted",
+        "line2": "From Your Own Precedent",
+        "sub": "Contracts, memos and diligence grounded in your firm's documents, cited to the clause.",
+        "label": "Sample · legal AI"
+      },
+      "googleFontsCss": "https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400..500&family=IBM+Plex+Sans:wght@400..600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+    },
+    {
+      "slug": "soft-serif",
+      "class": "soft old-style display serif (SOFT axis)",
+      "display": {
+        "family": "Fraunces",
+        "fontsource": "@fontsource-variable/fraunces",
+        "weights": [
+          400,
+          500,
+          600
+        ],
+        "size": 84,
+        "mobileSize": 46,
+        "weight": 500,
+        "tracking": -0.025,
+        "leading": 0.98,
+        "axes": {
+          "opsz": 144,
+          "SOFT": 100,
+          "WONK": 0
+        },
+        "features": null,
+        "wordSpacing": null
+      },
+      "body": {
+        "family": "Figtree",
+        "fontsource": "@fontsource-variable/figtree",
+        "size": 18,
+        "weight": 400,
+        "tracking": 0,
+        "leading": 1.55
+      },
+      "mono": {
+        "family": "DM Mono",
+        "fontsource": "@fontsource/dm-mono",
+        "weight": 400
+      },
+      "personality": "Warm, friendly, a little nostalgic; cooper-ish softness with modern restraint",
+      "bestFor": [
+        "hosting and dev platforms with a friendly brand",
+        "video/audio creator tools",
+        "small-business software",
+        "consumer productivity"
+      ],
+      "neverFor": [
+        "security, defence",
+        "high-frequency finance",
+        "WONK 1 or SOFT 0 at hero size (turns quirky or stiff)"
+      ],
+      "analog": {
+        "site": "fly.io",
+        "measured": "Mackinac 72px / 500 / -0.02em / lh 0.95, opsz 24; body Fricolage Grotesque 20.5 / 325",
+        "also": "descript.com gamuthDisplay 88 / 400 / 0"
+      },
+      "specimen": {
+        "line1": "A Calmer Inbox",
+        "line2": "For Busy Little Shops",
+        "sub": "Orders, questions and returns answered in one thread, with replies drafted for you.",
+        "label": "Sample · small-business support"
+      },
+      "googleFontsCss": "https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,400..600,0..100,0..1&family=Figtree:wght@400..600&family=DM+Mono:wght@400;500&display=swap"
+    },
+    {
+      "slug": "slab-notepad",
+      "class": "slab serif",
+      "display": {
+        "family": "Zilla Slab",
+        "fontsource": "@fontsource/zilla-slab",
+        "weights": [
+          400,
+          500,
+          600
+        ],
+        "size": 84,
+        "mobileSize": 46,
+        "weight": 500,
+        "tracking": -0.02,
+        "leading": 0.96,
+        "axes": null,
+        "features": null,
+        "wordSpacing": null
+      },
+      "body": {
+        "family": "Source Sans 3",
+        "fontsource": "@fontsource-variable/source-sans-3",
+        "size": 19,
+        "weight": 400,
+        "tracking": 0,
+        "leading": 1.5
+      },
+      "mono": {
+        "family": "Red Hat Mono",
+        "fontsource": "@fontsource-variable/red-hat-mono",
+        "weight": 400
+      },
+      "personality": "Notebook, typewriter, honest work; analogue warmth for an AI product",
+      "bestFor": [
+        "AI note-taking and meeting tools",
+        "journaling and personal knowledge",
+        "research assistants",
+        "writing apps"
+      ],
+      "neverFor": [
+        "enterprise infra",
+        "luxury",
+        "anything that needs to look fast"
+      ],
+      "analog": {
+        "site": "granola.ai",
+        "measured": "quadrant 86.4px / 400 / -0.02em / lh 0.93; body melange 20 / 1.4"
+      },
+      "specimen": {
+        "line1": "Every Call, Written Up",
+        "line2": "Before You Hang Up",
+        "sub": "Your rough notes, finished by AI the moment the meeting ends.",
+        "label": "Sample · AI notes"
+      },
+      "googleFontsCss": "https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@400;500;600&family=Source+Sans+3:wght@400..600&family=Red+Hat+Mono:wght@400;500&display=swap"
+    },
+    {
+      "slug": "didone-luxe",
+      "class": "high-contrast didone display (optical size)",
+      "display": {
+        "family": "Bodoni Moda",
+        "fontsource": "@fontsource-variable/bodoni-moda",
+        "weights": [
+          400,
+          500
+        ],
+        "size": 88,
+        "mobileSize": 46,
+        "weight": 500,
+        "tracking": -0.025,
+        "leading": 1,
+        "axes": {
+          "opsz": 72
+        },
+        "features": null,
+        "wordSpacing": null
+      },
+      "body": {
+        "family": "Hanken Grotesk",
+        "fontsource": "@fontsource-variable/hanken-grotesk",
+        "size": 18,
+        "weight": 400,
+        "tracking": 0,
+        "leading": 1.55
+      },
+      "mono": {
+        "family": "IBM Plex Mono",
+        "fontsource": "@fontsource/ibm-plex-mono",
+        "weight": 400
+      },
+      "personality": "Private-client, fashion-adjacent, expensive; hairlines that need space",
+      "bestFor": [
+        "wealth and private banking",
+        "luxury commerce and hospitality software",
+        "art and collectibles",
+        "premium concierge AI"
+      ],
+      "neverFor": [
+        "developer tools",
+        "below 48px (hairlines vanish)",
+        "dark grey on dark (contrast drops on hairlines)"
+      ],
+      "analog": {
+        "site": "resend.com (closest measured)",
+        "measured": "domaine 96px / 400 / -0.01em / lh 1.0 (high-contrast display serif); no SaaS in the 50-site sample uses a true Didone: open lane"
+      },
+      "specimen": {
+        "line1": "Every Family Trust",
+        "line2": "In One Quiet Letter",
+        "sub": "Accounts, entities and trusts reported monthly, prepared by your own advisor.",
+        "label": "Sample · private wealth"
+      },
+      "googleFontsCss": "https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400..500&family=Hanken+Grotesk:wght@400..600&family=IBM+Plex+Mono:wght@400;500&display=swap",
+      "tuningNote": "opsz 96 at 88px gives hairlines that vanish on retina-less screens and a gappy W-e pair; opsz 72 and -0.025em hold together. Bodoni Moda kerns W/V against lowercase loosely (a visible gap in \"Wealth\"): avoid a leading W/V word or kern that pair by hand (-0.06em on the capital)."
+    },
+    {
+      "slug": "mono-terminal",
+      "class": "monospace-led display",
+      "display": {
+        "family": "Azeret Mono",
+        "fontsource": "@fontsource-variable/azeret-mono",
+        "weights": [
+          400,
+          500
+        ],
+        "size": 64,
+        "mobileSize": 34,
+        "weight": 400,
+        "tracking": -0.045,
+        "leading": 1.05,
+        "axes": null,
+        "features": null,
+        "wordSpacing": -0.25
+      },
+      "body": {
+        "family": "Geist",
+        "fontsource": "@fontsource-variable/geist",
+        "size": 17,
+        "weight": 400,
+        "tracking": -0.005,
+        "leading": 1.6
+      },
+      "mono": {
+        "family": "Azeret Mono",
+        "fontsource": "@fontsource-variable/azeret-mono",
+        "weight": 400
+      },
+      "personality": "Terminal-native, agentic, engineered; the product speaks in the user's own medium",
+      "bestFor": [
+        "coding agents and terminals",
+        "CLI-first developer tools",
+        "observability",
+        "security tooling"
+      ],
+      "neverFor": [
+        "non-technical buyers",
+        "body copy in mono",
+        "headlines over ~34 characters (mono gets wide fast)"
+      ],
+      "analog": {
+        "site": "warp.dev",
+        "measured": "azeretSemiMono 54px / 400 / -0.037em / lh 1.05; body azeretSemiMono 16 / 1.65"
+      },
+      "specimen": {
+        "line1": "Agents That Ship",
+        "line2": "Code While You Sleep",
+        "sub": "Hand off tickets at night, review tested pull requests in the morning.",
+        "label": "Sample · coding agent"
+      },
+      "googleFontsCss": "https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@400..500&family=Geist:wght@400..600&display=swap",
+      "tuningNote": "Mono spaces are a full cell wide; without word-spacing -0.25em the headline reads as four separate words per line."
+    },
+    {
+      "slug": "wide-extended",
+      "class": "extended grotesque (wdth axis)",
+      "display": {
+        "family": "Mona Sans",
+        "fontsource": "@fontsource-variable/mona-sans",
+        "weights": [
+          600,
+          700
+        ],
+        "size": 72,
+        "mobileSize": 38,
+        "weight": 650,
+        "tracking": -0.03,
+        "leading": 1.02,
+        "axes": {
+          "wdth": 112.5
+        },
+        "features": null,
+        "wordSpacing": null
+      },
+      "body": {
+        "family": "Mona Sans",
+        "fontsource": "@fontsource-variable/mona-sans",
+        "size": 18,
+        "weight": 400,
+        "tracking": 0,
+        "leading": 1.5,
+        "axes": {
+          "wdth": 100
+        }
+      },
+      "mono": {
+        "family": "Martian Mono",
+        "fontsource": "@fontsource-variable/martian-mono",
+        "weight": 400
+      },
+      "personality": "Broad-shouldered and architectural; data-heavy confidence",
+      "bestFor": [
+        "analytics and data notebooks",
+        "BI and warehouses",
+        "fintech dashboards",
+        "developer platforms with an engineering brand"
+      ],
+      "neverFor": [
+        "long headlines (wide eats the line: keep <= 32 characters)",
+        "pairing with another wide or quirky display"
+      ],
+      "analog": {
+        "site": "hex.tech",
+        "measured": "PP Formula SemiExtended 74px / 700 / -0.025em / lh 1.2 (with an italic serif accent word)"
+      },
+      "specimen": {
+        "line1": "Ask Your Warehouse",
+        "line2": "Anything At All",
+        "sub": "SQL, Python and AI answers in one notebook your whole company can read.",
+        "label": "Sample · data notebook"
+      },
+      "googleFontsCss": "https://fonts.googleapis.com/css2?family=Mona+Sans:wdth,wght@75..125,400..700&family=Martian+Mono:wdth,wght@75..112.5,400..500&display=swap"
+    },
+    {
+      "slug": "condensed-statement",
+      "class": "condensed grotesque (wdth axis)",
+      "display": {
+        "family": "Archivo",
+        "fontsource": "@fontsource-variable/archivo",
+        "weights": [
+          600,
+          700
+        ],
+        "size": 104,
+        "mobileSize": 56,
+        "weight": 700,
+        "tracking": -0.01,
+        "leading": 0.94,
+        "axes": {
+          "wdth": 68
+        },
+        "features": null,
+        "wordSpacing": null
+      },
+      "body": {
+        "family": "Archivo",
+        "fontsource": "@fontsource-variable/archivo",
+        "size": 18,
+        "weight": 400,
+        "tracking": 0,
+        "leading": 1.5,
+        "axes": {
+          "wdth": 100
+        }
+      },
+      "mono": {
+        "family": "JetBrains Mono",
+        "fontsource": "@fontsource-variable/jetbrains-mono",
+        "weight": 400
+      },
+      "personality": "Scoreboard, poster, urgent; big size because the letters are narrow",
+      "bestFor": [
+        "sports and live-event data",
+        "media and newsroom tools",
+        "logistics and dispatch",
+        "launch campaigns"
+      ],
+      "neverFor": [
+        "quiet/premium B2B",
+        "stacking with another condensed face",
+        "running text"
+      ],
+      "analog": {
+        "site": "none in the 50-site sample (open lane)",
+        "measured": "closest scale analog pitch.com Mark Pro Bold 180 / 700 / -0.04 / 0.8; factory.ai Geist uppercase 60.5 / 500 / -0.04 / 1.0"
+      },
+      "specimen": {
+        "line1": "Every Match Stat",
+        "line2": "Live In Your Pocket",
+        "sub": "Tracking data from 40 leagues, streamed to analysts within two seconds.",
+        "label": "Sample · sports data"
+      },
+      "googleFontsCss": "https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..700&family=JetBrains+Mono:wght@400;500&display=swap"
+    },
+    {
+      "slug": "rounded-friendly",
+      "class": "rounded squarish sans",
+      "display": {
+        "family": "Rubik",
+        "fontsource": "@fontsource-variable/rubik",
+        "weights": [
+          500,
+          600,
+          700
+        ],
+        "size": 72,
+        "mobileSize": 40,
+        "weight": 600,
+        "tracking": -0.03,
+        "leading": 0.98,
+        "axes": null,
+        "features": null,
+        "wordSpacing": null
+      },
+      "body": {
+        "family": "Rubik",
+        "fontsource": "@fontsource-variable/rubik",
+        "size": 18,
+        "weight": 400,
+        "tracking": 0,
+        "leading": 1.55
+      },
+      "mono": {
+        "family": "DM Mono",
+        "fontsource": "@fontsource/dm-mono",
+        "weight": 400
+      },
+      "personality": "Soft corners, friendly, tactile; approachable without being childish",
+      "bestFor": [
+        "browsers and consumer utilities",
+        "product analytics with a playful brand",
+        "education",
+        "consumer finance apps"
+      ],
+      "neverFor": [
+        "legal, enterprise security",
+        "light weights (rounded at 300 looks cheap)"
+      ],
+      "analog": {
+        "site": "arc.net",
+        "measured": "Marlin Soft SQ 45.5px / 700 / -0.04em / lh 0.93",
+        "also": "posthog.com RoundHog 36 / 800 / -0.025 / 1.11"
+      },
+      "specimen": {
+        "line1": "The Browser That",
+        "line2": "Tidies Itself Up",
+        "sub": "Tabs archive themselves, spaces keep work apart, and nothing gets lost.",
+        "label": "Sample · browser"
+      },
+      "googleFontsCss": "https://fonts.googleapis.com/css2?family=Rubik:wght@400..700&family=DM+Mono:wght@400;500&display=swap"
+    },
+    {
+      "slug": "variable-expressive",
+      "class": "expressive grotesque (opsz + wdth axes)",
+      "display": {
+        "family": "Bricolage Grotesque",
+        "fontsource": "@fontsource-variable/bricolage-grotesque",
+        "weights": [
+          600,
+          700,
+          800
+        ],
+        "size": 88,
+        "mobileSize": 46,
+        "weight": 700,
+        "tracking": -0.02,
+        "leading": 0.95,
+        "axes": {
+          "opsz": 96,
+          "wdth": 92
+        },
+        "features": null,
+        "wordSpacing": null
+      },
+      "body": {
+        "family": "Instrument Sans",
+        "fontsource": "@fontsource-variable/instrument-sans",
+        "size": 18,
+        "weight": 400,
+        "tracking": 0,
+        "leading": 1.5
+      },
+      "mono": {
+        "family": "Geist Mono",
+        "fontsource": "@fontsource-variable/geist-mono",
+        "weight": 400
+      },
+      "personality": "Inky, bold, editorial-poster; optical size makes it sharper as it grows",
+      "bestFor": [
+        "creator and media tools",
+        "AI audio/video",
+        "community and events platforms",
+        "consumer AI with personality"
+      ],
+      "neverFor": [
+        "regulated finance",
+        "pairing with Clash/Cabinet/Syne",
+        "body text at display opsz"
+      ],
+      "analog": {
+        "site": "fly.io",
+        "measured": "body face Fricolage Grotesque (a Bricolage derivative) 20.5 / 325 / lh 1.35 under a Mackinac display",
+        "also": "notion.com NotionInter 96 / 600 / -0.048 / 1.04 (scale reference for poster-size heavy sans)"
+      },
+      "specimen": {
+        "line1": "Launch A Podcast",
+        "line2": "That Sounds Expensive",
+        "sub": "Record remotely, edit by text and publish everywhere with studio-grade audio.",
+        "label": "Sample · creator audio"
+      },
+      "googleFontsCss": "https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Instrument+Sans:wght@400..600&family=Geist+Mono:wght@400;500&display=swap",
+      "tuningNote": "wdth 85 at -0.035em made letters collide (Launch, Podcast); opsz 96 already tightens, so use wdth 92 and only -0.02em."
+    }
+  ]
+}

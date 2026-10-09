@@ -1,0 +1,179 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dark recipes specimen</title>
+<meta name="color-scheme" content="dark">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:dark}
+*{box-sizing:border-box;margin:0}
+body{background:#050505;color:#ededed;font-family:Geist,ui-sans-serif,system-ui,sans-serif;-webkit-font-smoothing:antialiased;padding:28px}
+.pagehead{display:flex;justify-content:space-between;align-items:baseline;margin:0 4px 20px;color:#a1a1a1;font-size:13px}
+.pagehead h1{font-size:18px;font-weight:500;color:#ededed;letter-spacing:-.01em}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.t-graphite{--canvas:#0a0a0b;--s1:#111212;--s2:#18191a;--s3:#212222;--line:rgb(245 245 246 / 0.08);--line-strong:rgb(245 245 246 / 0.14);--ink:#eff0f1;--sub:#a2a3a6;--soft:#6f7074;--accent:#65afff;--accent-ink:#0a0a0b;--frame:0 0 0 1px rgb(255 255 255 / 0.08), inset 0 1px 0 rgb(255 255 255 / 0.05), 0 2px 32px rgb(0 0 0 / 0.35);--glow:radial-gradient(60% 45% at 50% 0%, rgb(255 255 255 / 0.06), transparent 70%);--row-hover:rgb(245 245 246 / 0.04);--row-sel:rgb(245 245 246 / 0.07);
+ --pb-bg:#eff0f1;--pb-fg:#0a0a0b;--pb-border:0 solid transparent;--pb-shadow:none;--pb-radius:9999px;
+ --sb-bg:rgb(245 245 246 / 0.04);--sb-shadow:inset 0 0 0 1px rgb(245 245 246 / 0.1), inset 0 1px 0 rgb(245 245 246 / 0.04);--chip-bg:rgb(101 175 255 / 0.14);--chip-fg:#65afff;--chip-ring:inset 0 0 0 1px rgb(101 175 255 / 0.22);}
+.t-blue-black{--canvas:#090b12;--s1:#101319;--s2:#181b21;--s3:#21242a;--line:rgb(243 245 250 / 0.08);--line-strong:rgb(243 245 250 / 0.15);--ink:#f0f2f7;--sub:#9da3b0;--soft:#6b717e;--accent:#8c9bff;--accent-ink:#090b12;--frame:0 0 0 1px oklch(0.86 0.02 266 / 0.10), inset 0 1px 0 rgb(255 255 255 / 0.06), 0 20px 25px -5px rgb(0 0 0 / 0.35), 0 8px 10px -6px rgb(0 0 0 / 0.30);--glow:radial-gradient(70% 55% at 50% -5%, oklch(0.62 0.13 272 / 0.14), transparent 70%);--row-hover:rgb(243 245 250 / 0.04);--row-sel:rgb(243 245 250 / 0.07);
+ --pb-bg:#f0f2f7;--pb-fg:#090b12;--pb-border:0 solid transparent;--pb-shadow:none;--pb-radius:9999px;
+ --sb-bg:rgb(243 245 250 / 0.04);--sb-shadow:inset 0 0 0 1px rgb(243 245 250 / 0.1), inset 0 1px 0 rgb(243 245 250 / 0.04);--chip-bg:rgb(140 155 255 / 0.14);--chip-fg:#8c9bff;--chip-ring:inset 0 0 0 1px rgb(140 155 255 / 0.22);}
+.t-warm-black{--canvas:#130f0a;--s1:#1a1612;--s2:#221e19;--s3:#2a2622;--line:rgb(248 244 241 / 0.09);--line-strong:rgb(248 244 241 / 0.18);--ink:#f1edea;--sub:#aaa49d;--soft:#7a736c;--accent:#f96e31;--accent-ink:#130f0a;--frame:0 0 0 1px oklch(0.94 0.006 68 / 0.10), inset 0 1px 0 rgb(255 255 255 / 0.05), 0 28px 70px rgb(0 0 0 / 0.30), 0 14px 32px rgb(0 0 0 / 0.20);--glow:radial-gradient(90% 60% at 50% 105%, oklch(0.58 0.13 50 / 0.12), transparent 70%);--row-hover:rgb(248 244 241 / 0.04);--row-sel:rgb(248 244 241 / 0.07);
+ --pb-bg:#f1edea;--pb-fg:#130f0a;--pb-border:0 solid transparent;--pb-shadow:none;--pb-radius:9999px;
+ --sb-bg:rgb(248 244 241 / 0.04);--sb-shadow:inset 0 0 0 1px rgb(248 244 241 / 0.1), inset 0 1px 0 rgb(248 244 241 / 0.04);--chip-bg:rgb(249 110 49 / 0.14);--chip-fg:#f96e31;--chip-ring:inset 0 0 0 1px rgb(249 110 49 / 0.22);}
+.t-green-black{--canvas:#090f0b;--s1:#111612;--s2:#181e19;--s3:#202622;--line:rgb(242 246 243 / 0.08);--line-strong:rgb(242 246 243 / 0.14);--ink:#ebf1ec;--sub:#9fa8a1;--soft:#6c766e;--accent:#56dc85;--accent-ink:#090f0b;--frame:inset 0 0 0 1px rgb(255 255 255 / 0.07), inset 0 1px 0 rgb(255 255 255 / 0.06), 0 0 40px 20px #090f0b;--glow:radial-gradient(50% 100% at 50% 100%, oklch(0.32 0.07 150 / 0.70), transparent);--row-hover:rgb(242 246 243 / 0.04);--row-sel:rgb(242 246 243 / 0.07);
+ --pb-bg:#046339;--pb-fg:#f3f6f3;--pb-border:1px solid rgb(242 246 243 / 0.15);--pb-shadow:inset 0 1px 0 rgb(255 255 255 / 0.06), 0 1px 3px rgb(0 0 0 / 0.20);--pb-radius:10px;
+ --sb-bg:rgb(242 246 243 / 0.04);--sb-shadow:inset 0 0 0 1px rgb(242 246 243 / 0.1), inset 0 1px 0 rgb(242 246 243 / 0.04);--chip-bg:rgb(86 220 133 / 0.14);--chip-fg:#56dc85;--chip-ring:inset 0 0 0 1px rgb(86 220 133 / 0.22);}
+.t-plum-black{--canvas:#120e19;--s1:#191620;--s2:#211d27;--s3:#292630;--line:rgb(246 244 252 / 0.09);--line-strong:rgb(246 244 252 / 0.18);--ink:#f3f1f7;--sub:#a9a4b3;--soft:#787383;--accent:#c396f5;--accent-ink:#120e19;--frame:inset 0 0 0 1px rgb(255 255 255 / 0.10), 0 -12px 127px oklch(0.45 0.12 300 / 0.12), 0 36px 70px rgb(10 5 20 / 0.45), 0 9px 17px rgb(10 5 20 / 0.30);--glow:radial-gradient(80% 70% at 50% 0%, oklch(0.55 0.12 300 / 0.16), transparent 70%), linear-gradient(rgb(0 0 0 / 0.30), rgb(0 0 0 / 0.05));--row-hover:rgb(246 244 252 / 0.04);--row-sel:rgb(246 244 252 / 0.07);
+ --pb-bg:#584083;--pb-fg:#f6f4fa;--pb-border:1px solid rgb(246 244 252 / 0.15);--pb-shadow:inset 0 1px 0 rgb(255 255 255 / 0.06), 0 1px 3px rgb(0 0 0 / 0.20);--pb-radius:10px;
+ --sb-bg:rgb(246 244 252 / 0.04);--sb-shadow:inset 0 0 0 1px rgb(246 244 252 / 0.1), inset 0 1px 0 rgb(246 244 252 / 0.04);--chip-bg:rgb(195 150 245 / 0.14);--chip-fg:#c396f5;--chip-ring:inset 0 0 0 1px rgb(195 150 245 / 0.22);}
+.t-true-black{--canvas:#000000;--s1:#0b0b0b;--s2:#141414;--s3:#1c1c1c;--line:rgb(245 245 245 / 0.1);--line-strong:rgb(245 245 245 / 0.15);--ink:#ededed;--sub:#a1a1a1;--soft:#6d6d6d;--accent:#ff5727;--accent-ink:#000000;--frame:0 0 0 1px rgb(255 255 255 / 0.12), inset 0 0.5px 0 rgb(255 255 255 / 0.25), 0 4px 40px 8px rgb(0 0 0 / 0.40);--glow:radial-gradient(41% 8% at 50% 0%, rgb(255 255 255 / 0.10), transparent), radial-gradient(70% 80% at 50% 0%, rgb(255 255 255 / 0.06) 3%, transparent 70%);--row-hover:rgb(245 245 245 / 0.04);--row-sel:rgb(245 245 245 / 0.07);
+ --pb-bg:#ededed;--pb-fg:#000000;--pb-border:0 solid transparent;--pb-shadow:none;--pb-radius:9999px;
+ --sb-bg:rgb(245 245 245 / 0.04);--sb-shadow:inset 0 0 0 1px rgb(245 245 245 / 0.1), inset 0 1px 0 rgb(245 245 245 / 0.04);--chip-bg:rgb(255 87 39 / 0.14);--chip-fg:#ff5727;--chip-ring:inset 0 0 0 1px rgb(255 87 39 / 0.22);}
+.tile{position:relative;overflow:hidden;background:var(--canvas);border-radius:16px;padding:0 36px 0;height:680px;isolation:isolate;box-shadow:0 0 0 1px rgb(255 255 255 / .06)}
+.glow{position:absolute;inset:0;background:var(--glow);z-index:-2;pointer-events:none}
+.t-green-black .glow{mix-blend-mode:plus-lighter;top:auto;height:52%}
+.grain{position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .6 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");opacity:.045;mix-blend-mode:soft-light;z-index:-1;pointer-events:none}
+.nav{display:flex;align-items:center;gap:28px;height:56px;border-bottom:1px solid var(--line);margin:0 -36px;padding:0 36px;font-size:13px}
+.logo{display:flex;align-items:center;gap:8px;color:var(--ink);font-weight:600;letter-spacing:-.01em}
+.logo b{width:16px;height:16px;border-radius:5px;background:var(--ink);display:block}
+.nav nav{display:flex;gap:20px;flex:1}
+.nav a{color:var(--sub)}
+.nav .navcta{color:var(--ink);padding:6px 12px;border-radius:8px;background:var(--sb-bg);box-shadow:var(--sb-shadow)}
+.copy{padding-top:40px;max-width:560px}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;height:26px;padding:0 10px 0 8px;border-radius:999px;font-size:12px;font-weight:500;color:var(--sub);background:var(--sb-bg);box-shadow:var(--sb-shadow)}
+.eyebrow .dot{width:6px;height:6px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 3px var(--chip-bg)}
+h2{margin-top:18px;font-size:40px;line-height:1.04;font-weight:560;letter-spacing:-.032em;color:var(--ink);text-wrap:balance}
+.copy p{margin-top:14px;font-size:15px;line-height:1.5;color:var(--sub);max-width:440px}
+.ctas{display:flex;gap:10px;margin-top:24px}
+.btn{display:inline-flex;align-items:center;height:40px;padding:0 18px;font-size:14px;font-weight:500;letter-spacing:-.005em;cursor:pointer}
+.pri{background:var(--pb-bg);color:var(--pb-fg);border-radius:var(--pb-radius);border:var(--pb-border);box-shadow:var(--pb-shadow)}
+.sec{background:var(--sb-bg);color:var(--ink);border-radius:var(--pb-radius);box-shadow:var(--sb-shadow)}
+.frame{position:relative;margin-top:36px;border-radius:12px;background:var(--s1);box-shadow:var(--frame);overflow:hidden}
+.fbar{display:flex;align-items:center;gap:14px;height:44px;padding:0 14px;background:var(--s2);border-bottom:1px solid var(--line)}
+.ftitle{font-size:13px;font-weight:500;color:var(--ink)}
+.seg{display:flex;gap:2px;padding:2px;border-radius:7px;background:var(--canvas);box-shadow:inset 0 0 0 1px var(--line)}
+.seg span{font-size:12px;color:var(--soft);padding:3px 8px;border-radius:5px}
+.seg .on{background:var(--s3);color:var(--ink);box-shadow:inset 0 1px 0 rgb(255 255 255 / .05)}
+.fmeta{margin-left:auto;font-size:12px;color:var(--soft);font-family:'Geist Mono',ui-monospace,monospace}
+.thead,.row{display:grid;grid-template-columns:96px 1fr 120px 80px;align-items:center;padding:0 14px}
+.thead{height:30px;font-size:11px;font-weight:500;color:var(--soft);border-bottom:1px solid var(--line)}
+.row{height:40px;font-size:13px;border-bottom:1px solid var(--line)}
+.row:last-child{border-bottom:0}
+.row.hover{background:var(--row-hover)}
+.row.sel{background:var(--row-sel)}
+.id{font-family:'Geist Mono',ui-monospace,monospace;font-size:12px;color:var(--soft)}
+.nm{color:var(--ink);font-weight:500}
+.tm{color:var(--sub);font-size:12px;text-align:right}
+.chip{justify-self:start;display:inline-flex;align-items:center;gap:6px;height:22px;padding:0 8px;border-radius:999px;font-size:12px;font-weight:500;color:oklch(0.80 0.13 var(--h));background:oklch(0.72 0.14 var(--h) / .13);box-shadow:inset 0 0 0 1px oklch(0.72 0.14 var(--h) / .20)}
+.chip i{width:6px;height:6px;border-radius:50%;background:currentColor}
+.chip.acc{color:var(--chip-fg);background:var(--chip-bg);box-shadow:var(--chip-ring)}
+.sw{position:absolute;right:36px;bottom:12px;display:flex;gap:4px;z-index:2}
+.sw i{width:18px;height:18px;border-radius:5px;box-shadow:inset 0 0 0 1px rgb(255 255 255 / .10)}
+.label{position:absolute;left:36px;bottom:16px;font-size:11px;color:var(--soft);font-family:'Geist Mono',ui-monospace,monospace;z-index:2}
+.label b{color:var(--sub);font-weight:500}
+.tile::after{content:"";position:absolute;left:0;right:0;bottom:0;height:120px;background:linear-gradient(transparent,var(--canvas) 70%);z-index:1;pointer-events:none}
+@media (max-width:900px){.grid{grid-template-columns:1fr}}
+</style></head><body>
+<div class="pagehead"><h1>Dark recipes: six premium palettes</h1><span>system/variety/dark-recipes.json · 2026-10-09</span></div>
+<div class="grid">
+<section class="tile t-graphite">
+ <div class="glow"></div><div class="grain"></div>
+ <header class="nav"><span class="logo"><b></b>Graphite</span><nav><a>Product</a><a>Docs</a><a>Pricing</a></nav><a class="navcta">Sign in</a></header>
+ <div class="copy">
+  <span class="eyebrow"><span class="dot"></span>New: Graphite instrument</span>
+  <h2>Issues, triaged before standup</h2>
+  <p>Every bug report lands labelled, owned and linked to the commit that caused it.</p>
+  <div class="ctas"><a class="btn pri">Start free</a><a class="btn sec">Talk to sales</a></div>
+ </div>
+ <div class="frame">
+  <div class="fbar"><span class="ftitle">Deployments</span><span class="seg"><span class="on">All</span><span>Production</span><span>Preview</span></span><span class="fmeta">4 of 128</span></div>
+  <div class="thead"><span>ID</span><span>Service</span><span>Status</span><span>Updated</span></div>
+  <div class="row"><span class="id">DEP-2041</span><span class="nm">api-gateway</span><span class="chip" style="--h:150"><i></i>Live</span><span class="tm">2m ago</span></div><div class="row hover"><span class="id">DEP-2040</span><span class="nm">billing-worker</span><span class="chip" style="--h:80"><i></i>Building</span><span class="tm">6m ago</span></div><div class="row sel"><span class="id">DEP-2039</span><span class="nm">search-index</span><span class="chip acc"><i></i>Preview</span><span class="tm">14m ago</span></div><div class="row"><span class="id">DEP-2038</span><span class="nm">auth-service</span><span class="chip" style="--h:25"><i></i>Failed</span><span class="tm">1h ago</span></div>
+ </div>
+ <div class="sw"><i style="background:#0a0a0b" title="canvas"></i><i style="background:#111212" title="surface-1"></i><i style="background:#18191a" title="surface-2"></i><i style="background:#212222" title="surface-3"></i><i style="background:#6f7074" title="soft"></i><i style="background:#a2a3a6" title="sub"></i><i style="background:#eff0f1" title="ink"></i><i style="background:#65afff" title="accent"></i><i style="background:#1e55a4" title="accent-deep"></i></div>
+ <footer class="label"><b>Graphite instrument</b> · #0a0a0b</footer>
+</section>
+<section class="tile t-blue-black">
+ <div class="glow"></div><div class="grain"></div>
+ <header class="nav"><span class="logo"><b></b>Midnight</span><nav><a>Product</a><a>Docs</a><a>Pricing</a></nav><a class="navcta">Sign in</a></header>
+ <div class="copy">
+  <span class="eyebrow"><span class="dot"></span>New: Midnight ink</span>
+  <h2>Agents that finish the ticket</h2>
+  <p>Queue work at 6pm. Review clean pull requests at 9am, each with a passing test run.</p>
+  <div class="ctas"><a class="btn pri">Start free</a><a class="btn sec">Talk to sales</a></div>
+ </div>
+ <div class="frame">
+  <div class="fbar"><span class="ftitle">Deployments</span><span class="seg"><span class="on">All</span><span>Production</span><span>Preview</span></span><span class="fmeta">4 of 128</span></div>
+  <div class="thead"><span>ID</span><span>Service</span><span>Status</span><span>Updated</span></div>
+  <div class="row"><span class="id">DEP-2041</span><span class="nm">api-gateway</span><span class="chip" style="--h:150"><i></i>Live</span><span class="tm">2m ago</span></div><div class="row hover"><span class="id">DEP-2040</span><span class="nm">billing-worker</span><span class="chip" style="--h:80"><i></i>Building</span><span class="tm">6m ago</span></div><div class="row sel"><span class="id">DEP-2039</span><span class="nm">search-index</span><span class="chip acc"><i></i>Preview</span><span class="tm">14m ago</span></div><div class="row"><span class="id">DEP-2038</span><span class="nm">auth-service</span><span class="chip" style="--h:25"><i></i>Failed</span><span class="tm">1h ago</span></div>
+ </div>
+ <div class="sw"><i style="background:#090b12" title="canvas"></i><i style="background:#101319" title="surface-1"></i><i style="background:#181b21" title="surface-2"></i><i style="background:#21242a" title="surface-3"></i><i style="background:#6b717e" title="soft"></i><i style="background:#9da3b0" title="sub"></i><i style="background:#f0f2f7" title="ink"></i><i style="background:#8c9bff" title="accent"></i><i style="background:#4247a6" title="accent-deep"></i></div>
+ <footer class="label"><b>Midnight ink</b> · #090b12</footer>
+</section>
+<section class="tile t-warm-black">
+ <div class="glow"></div><div class="grain"></div>
+ <header class="nav"><span class="logo"><b></b>Ember</span><nav><a>Product</a><a>Docs</a><a>Pricing</a></nav><a class="navcta">Sign in</a></header>
+ <div class="copy">
+  <span class="eyebrow"><span class="dot"></span>New: Ember walnut</span>
+  <h2>Write the spec. Ship the feature.</h2>
+  <p>A coding agent that reads your repo like a senior engineer and asks before it guesses.</p>
+  <div class="ctas"><a class="btn pri">Start free</a><a class="btn sec">Talk to sales</a></div>
+ </div>
+ <div class="frame">
+  <div class="fbar"><span class="ftitle">Deployments</span><span class="seg"><span class="on">All</span><span>Production</span><span>Preview</span></span><span class="fmeta">4 of 128</span></div>
+  <div class="thead"><span>ID</span><span>Service</span><span>Status</span><span>Updated</span></div>
+  <div class="row"><span class="id">DEP-2041</span><span class="nm">api-gateway</span><span class="chip" style="--h:150"><i></i>Live</span><span class="tm">2m ago</span></div><div class="row hover"><span class="id">DEP-2040</span><span class="nm">billing-worker</span><span class="chip" style="--h:80"><i></i>Building</span><span class="tm">6m ago</span></div><div class="row sel"><span class="id">DEP-2039</span><span class="nm">search-index</span><span class="chip" style="--h:250"><i></i>Preview</span><span class="tm">14m ago</span></div><div class="row"><span class="id">DEP-2038</span><span class="nm">auth-service</span><span class="chip" style="--h:18"><i></i>Failed</span><span class="tm">1h ago</span></div>
+ </div>
+ <div class="sw"><i style="background:#130f0a" title="canvas"></i><i style="background:#1a1612" title="surface-1"></i><i style="background:#221e19" title="surface-2"></i><i style="background:#2a2622" title="surface-3"></i><i style="background:#7a736c" title="soft"></i><i style="background:#aaa49d" title="sub"></i><i style="background:#f1edea" title="ink"></i><i style="background:#f96e31" title="accent"></i><i style="background:#9d3106" title="accent-deep"></i></div>
+ <footer class="label"><b>Ember walnut</b> · #130f0a</footer>
+</section>
+<section class="tile t-green-black">
+ <div class="glow"></div><div class="grain"></div>
+ <header class="nav"><span class="logo"><b></b>Phosphor</span><nav><a>Product</a><a>Docs</a><a>Pricing</a></nav><a class="navcta">Sign in</a></header>
+ <div class="copy">
+  <span class="eyebrow"><span class="dot"></span>New: Phosphor forest</span>
+  <h2>GPUs in one second, not one sprint</h2>
+  <p>Run inference, batch jobs and sandboxes on serverless compute that scales to zero.</p>
+  <div class="ctas"><a class="btn pri">Start free</a><a class="btn sec">Talk to sales</a></div>
+ </div>
+ <div class="frame">
+  <div class="fbar"><span class="ftitle">Deployments</span><span class="seg"><span class="on">All</span><span>Production</span><span>Preview</span></span><span class="fmeta">4 of 128</span></div>
+  <div class="thead"><span>ID</span><span>Service</span><span>Status</span><span>Updated</span></div>
+  <div class="row"><span class="id">DEP-2041</span><span class="nm">api-gateway</span><span class="chip" style="--h:150"><i></i>Live</span><span class="tm">2m ago</span></div><div class="row hover"><span class="id">DEP-2040</span><span class="nm">billing-worker</span><span class="chip" style="--h:80"><i></i>Building</span><span class="tm">6m ago</span></div><div class="row sel"><span class="id">DEP-2039</span><span class="nm">search-index</span><span class="chip" style="--h:250"><i></i>Preview</span><span class="tm">14m ago</span></div><div class="row"><span class="id">DEP-2038</span><span class="nm">auth-service</span><span class="chip" style="--h:25"><i></i>Failed</span><span class="tm">1h ago</span></div>
+ </div>
+ <div class="sw"><i style="background:#090f0b" title="canvas"></i><i style="background:#111612" title="surface-1"></i><i style="background:#181e19" title="surface-2"></i><i style="background:#202622" title="surface-3"></i><i style="background:#6c766e" title="soft"></i><i style="background:#9fa8a1" title="sub"></i><i style="background:#ebf1ec" title="ink"></i><i style="background:#56dc85" title="accent"></i><i style="background:#046339" title="accent-deep"></i></div>
+ <footer class="label"><b>Phosphor forest</b> · #090f0b</footer>
+</section>
+<section class="tile t-plum-black">
+ <div class="glow"></div><div class="grain"></div>
+ <header class="nav"><span class="logo"><b></b>Plum</span><nav><a>Product</a><a>Docs</a><a>Pricing</a></nav><a class="navcta">Sign in</a></header>
+ <div class="copy">
+  <span class="eyebrow"><span class="dot"></span>New: Plum dusk</span>
+  <h2>Deploys that feel like dusk</h2>
+  <p>Push to main and watch every service go live, with rollbacks one click away.</p>
+  <div class="ctas"><a class="btn pri">Start free</a><a class="btn sec">Talk to sales</a></div>
+ </div>
+ <div class="frame">
+  <div class="fbar"><span class="ftitle">Deployments</span><span class="seg"><span class="on">All</span><span>Production</span><span>Preview</span></span><span class="fmeta">4 of 128</span></div>
+  <div class="thead"><span>ID</span><span>Service</span><span>Status</span><span>Updated</span></div>
+  <div class="row"><span class="id">DEP-2041</span><span class="nm">api-gateway</span><span class="chip" style="--h:150"><i></i>Live</span><span class="tm">2m ago</span></div><div class="row hover"><span class="id">DEP-2040</span><span class="nm">billing-worker</span><span class="chip" style="--h:80"><i></i>Building</span><span class="tm">6m ago</span></div><div class="row sel"><span class="id">DEP-2039</span><span class="nm">search-index</span><span class="chip acc"><i></i>Preview</span><span class="tm">14m ago</span></div><div class="row"><span class="id">DEP-2038</span><span class="nm">auth-service</span><span class="chip" style="--h:25"><i></i>Failed</span><span class="tm">1h ago</span></div>
+ </div>
+ <div class="sw"><i style="background:#120e19" title="canvas"></i><i style="background:#191620" title="surface-1"></i><i style="background:#211d27" title="surface-2"></i><i style="background:#292630" title="surface-3"></i><i style="background:#787383" title="soft"></i><i style="background:#a9a4b3" title="sub"></i><i style="background:#f3f1f7" title="ink"></i><i style="background:#c396f5" title="accent"></i><i style="background:#584083" title="accent-deep"></i></div>
+ <footer class="label"><b>Plum dusk</b> · #120e19</footer>
+</section>
+<section class="tile t-true-black">
+ <div class="glow"></div><div class="grain"></div>
+ <header class="nav"><span class="logo"><b></b>Void</span><nav><a>Product</a><a>Docs</a><a>Pricing</a></nav><a class="navcta">Sign in</a></header>
+ <div class="copy">
+  <span class="eyebrow"><span class="dot"></span>New: Void + signal</span>
+  <h2>Email your users will open</h2>
+  <p>Transactional email with templates in code, delivery you can see and bounces you can fix.</p>
+  <div class="ctas"><a class="btn pri">Start free</a><a class="btn sec">Talk to sales</a></div>
+ </div>
+ <div class="frame">
+  <div class="fbar"><span class="ftitle">Deployments</span><span class="seg"><span class="on">All</span><span>Production</span><span>Preview</span></span><span class="fmeta">4 of 128</span></div>
+  <div class="thead"><span>ID</span><span>Service</span><span>Status</span><span>Updated</span></div>
+  <div class="row"><span class="id">DEP-2041</span><span class="nm">api-gateway</span><span class="chip" style="--h:150"><i></i>Live</span><span class="tm">2m ago</span></div><div class="row hover"><span class="id">DEP-2040</span><span class="nm">billing-worker</span><span class="chip" style="--h:80"><i></i>Building</span><span class="tm">6m ago</span></div><div class="row sel"><span class="id">DEP-2039</span><span class="nm">search-index</span><span class="chip" style="--h:250"><i></i>Preview</span><span class="tm">14m ago</span></div><div class="row"><span class="id">DEP-2038</span><span class="nm">auth-service</span><span class="chip" style="--h:18"><i></i>Failed</span><span class="tm">1h ago</span></div>
+ </div>
+ <div class="sw"><i style="background:#000000" title="canvas"></i><i style="background:#0b0b0b" title="surface-1"></i><i style="background:#141414" title="surface-2"></i><i style="background:#1c1c1c" title="surface-3"></i><i style="background:#6d6d6d" title="soft"></i><i style="background:#a1a1a1" title="sub"></i><i style="background:#ededed" title="ink"></i><i style="background:#ff5727" title="accent"></i><i style="background:#b42300" title="accent-deep"></i></div>
+ <footer class="label"><b>Void + signal</b> · #000000</footer>
+</section>
+</div></body></html>

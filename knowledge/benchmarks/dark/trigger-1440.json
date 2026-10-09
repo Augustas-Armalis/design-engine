@@ -1,0 +1,490 @@
+{
+ "url": "https://trigger.dev",
+ "measured": "2026-10-09",
+ "viewport": "1440x900 dark",
+ "title": "Trigger.dev | The open source platform for durable AI agents",
+ "H": 11854,
+ "scheme": {
+  "html": "dark",
+  "meta": null
+ },
+ "canvas": {
+  "hex": "#121317",
+  "L": 0.187,
+  "C": 0.008,
+  "H": 274
+ },
+ "surfaces": [
+  {
+   "hex": "#121317",
+   "L": 0.187,
+   "C": 0.008,
+   "H": 274,
+   "n": 19,
+   "area": 1141275,
+   "ex": "header 1440x60"
+  },
+  {
+   "hex": "#a8ff53",
+   "L": 0.912,
+   "C": 0.218,
+   "H": 132,
+   "n": 2,
+   "area": 12260,
+   "ex": "div 116x32"
+  },
+  {
+   "hex": "#212327",
+   "L": 0.256,
+   "C": 0.008,
+   "H": 264,
+   "n": 1,
+   "area": 4903,
+   "ex": "button 123x40"
+  }
+ ],
+ "overlays": [
+  {
+   "bg": "oklab(0 0 0 / 0.2)",
+   "n": 1,
+   "area": 10606,
+   "flat": "#0e0f12",
+   "L": 0.17
+  }
+ ],
+ "borders": [
+  {
+   "border": "rgb(28, 30, 33) @1",
+   "n": 71,
+   "alpha": 1,
+   "flat": "#1c1e21",
+   "dL": 0.047
+  },
+  {
+   "border": "rgb(59, 62, 69) @1",
+   "n": 8,
+   "alpha": 1,
+   "flat": "#3b3e45",
+   "dL": 0.177
+  },
+  {
+   "border": "oklab(0.78264 -0.0000630915 -0.0117598 / 0.1) @1",
+   "n": 4,
+   "alpha": 0.1,
+   "flat": "#222428",
+   "dL": 0.072
+  },
+  {
+   "border": "rgba(181, 184, 192, 0.1) @1",
+   "n": 4,
+   "alpha": 0.1,
+   "flat": "#222428",
+   "dL": 0.072
+  },
+  {
+   "border": "rgb(72, 26, 189) @1",
+   "n": 4,
+   "alpha": 1,
+   "flat": "#481abd",
+   "dL": 0.227
+  }
+ ],
+ "shadows": [
+  {
+   "s": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px",
+   "n": 1
+  }
+ ],
+ "text": [
+  {
+   "color": "rgb(181, 184, 192)",
+   "chars": 332,
+   "flat": "#b5b8c0",
+   "alpha": 1,
+   "L": 0.783,
+   "C": 0.012,
+   "H": 270,
+   "wcag": 9.35,
+   "size": "18px",
+   "weight": "400",
+   "ex": "Trigger.dev is the open source"
+  },
+  {
+   "color": "rgb(215, 217, 221)",
+   "chars": 90,
+   "flat": "#d7d9dd",
+   "alpha": 1,
+   "L": 0.885,
+   "C": 0.006,
+   "H": 265,
+   "wcag": 13.13,
+   "size": "14px",
+   "weight": "400",
+   "ex": "How it works"
+  },
+  {
+   "color": "rgb(232, 233, 236)",
+   "chars": 48,
+   "flat": "#e8e9ec",
+   "alpha": 1,
+   "L": 0.934,
+   "C": 0.004,
+   "H": 271,
+   "wcag": 15.29,
+   "size": "60px",
+   "weight": "600",
+   "ex": "Build and deploy durable AI ag"
+  },
+  {
+   "color": "rgb(18, 19, 23)",
+   "chars": 29,
+   "flat": "#121317",
+   "alpha": 1,
+   "L": 0.187,
+   "C": 0.008,
+   "H": 274,
+   "wcag": 15.11,
+   "size": "14px",
+   "weight": "500",
+   "ex": "Get started"
+  },
+  {
+   "color": "rgb(186, 178, 255)",
+   "chars": 3,
+   "flat": "#bab2ff",
+   "alpha": 1,
+   "L": 0.798,
+   "C": 0.108,
+   "H": 288,
+   "wcag": 7.18,
+   "size": "10px",
+   "weight": "600",
+   "ex": "NEW"
+  }
+ ],
+ "h1": {
+  "text": "Build and deploy durable AI agents and workflows",
+  "family": "Satoshi-Variable",
+  "size": "60px",
+  "weight": "600",
+  "ls": "normal",
+  "lh": "60px",
+  "color": "rgb(232, 233, 236)",
+  "bgClip": "border-box",
+  "bgImage": null,
+  "textShadow": null,
+  "fillColor": "rgb(232, 233, 236)",
+  "mask": null
+ },
+ "ctas": [
+  {
+   "text": "NEW\n\nIntroducing Ask Trigg",
+   "w": 279,
+   "h": 38,
+   "bg": "oklab(0 0 0 / 0.2)",
+   "fillL": null,
+   "color": "rgb(215, 217, 221)",
+   "border": "1px solid oklab(0.78264 -0.0000630915 -0.0117598 / 0.1)",
+   "radius": "3.35544e+07px",
+   "shadow": null,
+   "bgi": null,
+   "size": "16px",
+   "weight": "400",
+   "before": null,
+   "after": null,
+   "childBg": "rgb(26, 27, 31)"
+  },
+  {
+   "text": "Start building now",
+   "w": 214,
+   "h": 40,
+   "bg": "rgba(0, 0, 0, 0)",
+   "fillL": null,
+   "color": "rgb(215, 217, 221)",
+   "border": null,
+   "radius": "0px",
+   "shadow": null,
+   "bgi": null,
+   "size": "16px",
+   "weight": "400",
+   "before": null,
+   "after": null,
+   "childBg": "rgb(168, 255, 83)"
+  },
+  {
+   "text": "AI agents",
+   "w": 123,
+   "h": 40,
+   "bg": "rgb(33, 35, 39)",
+   "fillL": 0.256,
+   "color": "rgb(215, 217, 221)",
+   "border": "1px solid rgb(28, 30, 33)",
+   "radius": "4px",
+   "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px",
+   "bgi": null,
+   "size": "16px",
+   "weight": "400",
+   "before": null,
+   "after": null,
+   "childBg": null
+  },
+  {
+   "text": "Media processing",
+   "w": 183,
+   "h": 40,
+   "bg": "rgb(18, 19, 23)",
+   "fillL": 0.187,
+   "color": "rgb(181, 184, 192)",
+   "border": "1px solid rgb(28, 30, 33)",
+   "radius": "4px",
+   "shadow": null,
+   "bgi": null,
+   "size": "16px",
+   "weight": "400",
+   "before": null,
+   "after": null,
+   "childBg": null
+  },
+  {
+   "text": "Media generation",
+   "w": 180,
+   "h": 40,
+   "bg": "rgb(18, 19, 23)",
+   "fillL": 0.187,
+   "color": "rgb(181, 184, 192)",
+   "border": "1px solid rgb(28, 30, 33)",
+   "radius": "4px",
+   "shadow": null,
+   "bgi": null,
+   "size": "16px",
+   "weight": "400",
+   "before": null,
+   "after": null,
+   "childBg": null
+  },
+  {
+   "text": "Human in the loop",
+   "w": 187,
+   "h": 40,
+   "bg": "rgb(18, 19, 23)",
+   "fillL": 0.187,
+   "color": "rgb(181, 184, 192)",
+   "border": "1px solid rgb(28, 30, 33)",
+   "radius": "4px",
+   "shadow": null,
+   "bgi": null,
+   "size": "16px",
+   "weight": "400",
+   "before": null,
+   "after": null,
+   "childBg": null
+  }
+ ],
+ "nav": {
+  "h": 60,
+  "w": 1440,
+  "bg": "rgb(18, 19, 23)",
+  "backdrop": "none",
+  "bb": "1px rgb(28, 30, 33)",
+  "border": null,
+  "radius": "0px",
+  "shadow": null,
+  "link": "rgb(215, 217, 221)",
+  "linkSize": "14px"
+ },
+ "lightFx": [
+  {
+   "el": "div 1440x600@0,60",
+   "bgi": null,
+   "filter": null,
+   "mask": "linear-gradient(rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 11.875%, rgb(0, 0, 0) 88.125%, rgba(0, 0, 0, 0) 100%), linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%)",
+   "blend": null,
+   "opacity": null
+  }
+ ],
+ "lightFxCount": 1,
+ "media": [
+  {
+   "tag": "video",
+   "w": 1440,
+   "h": 600,
+   "top": 60,
+   "blend": "normal",
+   "opacity": "1",
+   "mask": null
+  },
+  {
+   "tag": "canvas",
+   "w": 20,
+   "h": 20,
+   "top": 716,
+   "blend": "normal",
+   "opacity": "1",
+   "mask": null
+  },
+  {
+   "tag": "canvas",
+   "w": 24,
+   "h": 24,
+   "top": 859,
+   "blend": "normal",
+   "opacity": "1",
+   "mask": null
+  },
+  {
+   "tag": "canvas",
+   "w": 24,
+   "h": 24,
+   "top": 859,
+   "blend": "normal",
+   "opacity": "1",
+   "mask": null
+  },
+  {
+   "tag": "canvas",
+   "w": 24,
+   "h": 24,
+   "top": 859,
+   "blend": "normal",
+   "opacity": "1",
+   "mask": null
+  },
+  {
+   "tag": "canvas",
+   "w": 24,
+   "h": 24,
+   "top": 859,
+   "blend": "normal",
+   "opacity": "1",
+   "mask": null
+  },
+  {
+   "tag": "canvas",
+   "w": 24,
+   "h": 24,
+   "top": 859,
+   "blend": "normal",
+   "opacity": "1",
+   "mask": null
+  },
+  {
+   "tag": "canvas",
+   "w": 24,
+   "h": 24,
+   "top": 859,
+   "blend": "normal",
+   "opacity": "1",
+   "mask": null
+  },
+  {
+   "tag": "canvas",
+   "w": 24,
+   "h": 24,
+   "top": 859,
+   "blend": "normal",
+   "opacity": "1",
+   "mask": null
+  },
+  {
+   "tag": "canvas",
+   "w": 24,
+   "h": 24,
+   "top": 859,
+   "blend": "normal",
+   "opacity": "1",
+   "mask": null
+  },
+  {
+   "tag": "canvas",
+   "w": 24,
+   "h": 24,
+   "top": 859,
+   "blend": "normal",
+   "opacity": "1",
+   "mask": null
+  },
+  {
+   "tag": "canvas",
+   "w": 24,
+   "h": 24,
+   "top": 859,
+   "blend": "normal",
+   "opacity": "1",
+   "mask": null
+  },
+  {
+   "tag": "canvas",
+   "w": 24,
+   "h": 24,
+   "top": 859,
+   "blend": "normal",
+   "opacity": "1",
+   "mask": null
+  },
+  {
+   "tag": "canvas",
+   "w": 24,
+   "h": 24,
+   "top": 859,
+   "blend": "normal",
+   "opacity": "1",
+   "mask": null
+  },
+  {
+   "tag": "canvas",
+   "w": 24,
+   "h": 24,
+   "top": 859,
+   "blend": "normal",
+   "opacity": "1",
+   "mask": null
+  }
+ ],
+ "noise": {
+  "feTurbulence": 0,
+  "cssNoise": [],
+  "imgs": 0
+ },
+ "frames": [],
+ "accentUse": [
+  {
+   "hex": "#a8ff53",
+   "L": 0.912,
+   "C": 0.218,
+   "H": 132,
+   "fillArea": 12260,
+   "textChars": 0,
+   "ex": "DIV Get started"
+  },
+  {
+   "hex": "#481abd",
+   "L": 0.414,
+   "C": 0.224,
+   "H": 284,
+   "fillArea": 887,
+   "textChars": 0,
+   "ex": "SPAN NEW"
+  },
+  {
+   "hex": "#bab2ff",
+   "L": 0.798,
+   "C": 0.108,
+   "H": 288,
+   "fillArea": 0,
+   "textChars": 3,
+   "ex": "SPAN NEW"
+  }
+ ],
+ "radii": [
+  [
+   "4px",
+   26
+  ],
+  [
+   "3.35544e+07px",
+   3
+  ]
+ ],
+ "smoothing": "auto",
+ "canvasCtx": []
+}

@@ -1,0 +1,210 @@
+{
+ "url": "https://vercel.com",
+ "measured": "2026-10-09",
+ "viewport": "1440x900 dark",
+ "title": "Agentic Infrastructure - Vercel",
+ "H": 5333,
+ "scheme": {
+  "html": "dark",
+  "meta": "#000000"
+ },
+ "canvas": {
+  "hex": "#000000",
+  "L": 0,
+  "C": 0,
+  "H": 0
+ },
+ "surfaces": [
+  {
+   "hex": "#000000",
+   "L": 0,
+   "C": 0,
+   "H": 0,
+   "n": 1,
+   "area": 777600,
+   "ex": "div 1080x720"
+  },
+  {
+   "hex": "#ededed",
+   "L": 0.946,
+   "C": 0,
+   "H": 90,
+   "n": 3,
+   "area": 154768,
+   "ex": "a 75x32"
+  },
+  {
+   "hex": "#0a0a0a",
+   "L": 0.145,
+   "C": 0,
+   "H": 90,
+   "n": 3,
+   "area": 10465,
+   "ex": "a 101x32"
+  }
+ ],
+ "overlays": [],
+ "borders": [],
+ "shadows": [
+  {
+   "s": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(46, 46, 46) 0px 0px 0px 1px",
+   "n": 3
+  }
+ ],
+ "text": [
+  {
+   "color": "rgb(237, 237, 237)",
+   "chars": 162,
+   "flat": "#ededed",
+   "alpha": 1,
+   "L": 0.946,
+   "C": 0,
+   "H": 90,
+   "wcag": 16.91,
+   "size": "14px",
+   "weight": "500",
+   "ex": "Get a Demo"
+  },
+  {
+   "color": "rgb(161, 161, 161)",
+   "chars": 34,
+   "flat": "#a1a1a1",
+   "alpha": 1,
+   "L": 0.709,
+   "C": 0,
+   "H": 90,
+   "wcag": 8.13,
+   "size": "14px",
+   "weight": "400",
+   "ex": "Products"
+  },
+  {
+   "color": "rgb(10, 10, 10)",
+   "chars": 17,
+   "flat": "#0a0a0a",
+   "alpha": 1,
+   "L": 0.145,
+   "C": 0,
+   "H": 90,
+   "wcag": 16.91,
+   "size": "14px",
+   "weight": "500",
+   "ex": "Sign Up"
+  }
+ ],
+ "h1": {
+  "text": "Agentic Infrastructure",
+  "family": "GeistSans",
+  "size": "64px",
+  "weight": "400",
+  "ls": "-3.84px",
+  "lh": "64px",
+  "color": "rgb(237, 237, 237)",
+  "bgClip": "border-box",
+  "bgImage": null,
+  "textShadow": null,
+  "fillColor": "rgb(237, 237, 237)",
+  "mask": null
+ },
+ "ctas": [
+  {
+   "text": "Deploy now",
+   "w": 124,
+   "h": 40,
+   "bg": "rgb(237, 237, 237)",
+   "fillL": 0.946,
+   "color": "rgb(10, 10, 10)",
+   "border": null,
+   "radius": "3.35544e+07px",
+   "shadow": null,
+   "bgi": null,
+   "size": "16px",
+   "weight": "500",
+   "before": null,
+   "after": null,
+   "childBg": null
+  },
+  {
+   "text": "Talk to sales",
+   "w": 130,
+   "h": 40,
+   "bg": "rgb(10, 10, 10)",
+   "fillL": 0.145,
+   "color": "rgb(237, 237, 237)",
+   "border": null,
+   "radius": "3.35544e+07px",
+   "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(46, 46, 46) 0px 0px 0px 1px",
+   "bgi": null,
+   "size": "16px",
+   "weight": "500",
+   "before": null,
+   "after": null,
+   "childBg": null
+  }
+ ],
+ "nav": {
+  "h": 64,
+  "w": 1440,
+  "bg": "rgba(0, 0, 0, 0)",
+  "backdrop": "none",
+  "bb": null,
+  "border": null,
+  "radius": "0px",
+  "shadow": null,
+  "link": "rgb(237, 237, 237)",
+  "linkSize": "16px"
+ },
+ "lightFx": [
+  {
+   "el": "img 840x560@300,168",
+   "bgi": null,
+   "filter": null,
+   "mask": null,
+   "blend": "luminosity",
+   "opacity": null
+  },
+  {
+   "el": "div 1080x720@180,88",
+   "bgi": null,
+   "filter": null,
+   "mask": null,
+   "blend": "multiply",
+   "opacity": "0.42"
+  }
+ ],
+ "lightFxCount": 2,
+ "media": [
+  {
+   "tag": "canvas",
+   "w": 1080,
+   "h": 720,
+   "top": 88,
+   "blend": "normal",
+   "opacity": "1",
+   "mask": null
+  }
+ ],
+ "noise": {
+  "feTurbulence": 0,
+  "cssNoise": [
+   "DIV.absolute inset-0 bg-repeat op=0.42 blend=multiply"
+  ],
+  "imgs": 0
+ },
+ "frames": [],
+ "accentUse": [],
+ "radii": [
+  [
+   "6px",
+   3
+  ],
+  [
+   "3.35544e+07px",
+   3
+  ]
+ ],
+ "smoothing": "antialiased",
+ "canvasCtx": [
+  "2d-or-none 1080x720"
+ ]
+}

@@ -1,0 +1,226 @@
+{
+ "url": "https://planetscale.com",
+ "measured": "2026-10-09",
+ "viewport": "1440x900 dark",
+ "title": "PlanetScale - the world’s fastest and most scalable cloud hosting for Vitess, Neki, and Postgres",
+ "H": 8363,
+ "scheme": {
+  "html": "normal",
+  "meta": "#111111"
+ },
+ "canvas": {
+  "hex": "#111111",
+  "L": 0.178,
+  "C": 0,
+  "H": 90
+ },
+ "surfaces": [
+  {
+   "hex": "#fbca00",
+   "L": 0.857,
+   "C": 0.175,
+   "H": 91,
+   "n": 1,
+   "area": 57600,
+   "ex": "div 1440x40"
+  },
+  {
+   "hex": "#111111",
+   "L": 0.178,
+   "C": 0,
+   "H": 90,
+   "n": 2,
+   "area": 48299,
+   "ex": "a 117x19"
+  },
+  {
+   "hex": "#f35815",
+   "L": 0.661,
+   "C": 0.202,
+   "H": 39,
+   "n": 1,
+   "area": 4310,
+   "ex": "a 135x32"
+  }
+ ],
+ "overlays": [],
+ "borders": [
+  {
+   "border": "rgb(193, 193, 193) @1",
+   "n": 220,
+   "alpha": 1,
+   "flat": "#c1c1c1",
+   "dL": 0.633
+  },
+  {
+   "border": "rgb(243, 88, 21) @2",
+   "n": 5,
+   "alpha": 1,
+   "flat": "#f35815",
+   "dL": 0.483
+  }
+ ],
+ "shadows": [],
+ "text": [
+  {
+   "color": "rgb(225, 225, 225)",
+   "chars": 705,
+   "flat": "#e1e1e1",
+   "alpha": 1,
+   "L": 0.91,
+   "C": 0,
+   "H": 90,
+   "wcag": 14.44,
+   "size": "16px",
+   "weight": "600",
+   "ex": "Sign in"
+  },
+  {
+   "color": "rgb(71, 183, 248)",
+   "chars": 81,
+   "flat": "#47b7f8",
+   "alpha": 1,
+   "L": 0.744,
+   "C": 0.137,
+   "H": 238,
+   "wcag": 8.45,
+   "size": "16px",
+   "weight": "400",
+   "ex": "fastest databases"
+  },
+  {
+   "color": "rgb(255, 255, 255)",
+   "chars": 76,
+   "flat": "#ffffff",
+   "alpha": 1,
+   "L": 1,
+   "C": 0,
+   "H": 90,
+   "wcag": 18.88,
+   "size": "16px",
+   "weight": "600",
+   "ex": "Get started"
+  },
+  {
+   "color": "rgb(17, 17, 17)",
+   "chars": 41,
+   "flat": "#111111",
+   "alpha": 1,
+   "L": 0.178,
+   "C": 0,
+   "H": 90,
+   "wcag": 12.18,
+   "size": "16px",
+   "weight": "600",
+   "ex": "Neki, sharded Postgres, is now"
+  }
+ ],
+ "h1": {
+  "text": "The world’s fastest and most scalable cloud databases",
+  "family": "ui-monospace",
+  "size": "16px",
+  "weight": "700",
+  "ls": "normal",
+  "lh": "24px",
+  "color": "rgb(255, 255, 255)",
+  "bgClip": "border-box",
+  "bgImage": null,
+  "textShadow": null,
+  "fillColor": "rgb(255, 255, 255)",
+  "mask": null
+ },
+ "ctas": [
+  {
+   "text": "View sandbox",
+   "w": 139,
+   "h": 32,
+   "bg": "rgba(0, 0, 0, 0)",
+   "fillL": null,
+   "color": "rgb(225, 225, 225)",
+   "border": "2px solid rgb(243, 88, 21)",
+   "radius": "0px",
+   "shadow": null,
+   "bgi": null,
+   "size": "16px",
+   "weight": "600",
+   "before": null,
+   "after": null,
+   "childBg": null
+  },
+  {
+   "text": "Get in touch",
+   "w": 135,
+   "h": 32,
+   "bg": "rgb(243, 88, 21)",
+   "fillL": 0.661,
+   "color": "rgb(255, 255, 255)",
+   "border": null,
+   "radius": "0px",
+   "shadow": null,
+   "bgi": null,
+   "size": "16px",
+   "weight": "600",
+   "before": null,
+   "after": null,
+   "childBg": null
+  }
+ ],
+ "nav": {
+  "h": 32,
+  "w": 1440,
+  "bg": "rgb(17, 17, 17)",
+  "backdrop": "none",
+  "bb": null,
+  "border": null,
+  "radius": "0px",
+  "shadow": null,
+  "link": "rgb(255, 255, 255)",
+  "linkSize": "16px"
+ },
+ "lightFx": [],
+ "lightFxCount": 0,
+ "media": [],
+ "noise": {
+  "feTurbulence": 0,
+  "cssNoise": [],
+  "imgs": 0
+ },
+ "frames": [],
+ "accentUse": [
+  {
+   "hex": "#fbca00",
+   "L": 0.857,
+   "C": 0.175,
+   "H": 91,
+   "fillArea": 57600,
+   "textChars": 0,
+   "ex": "DIV Neki, sharded Postgr"
+  },
+  {
+   "hex": "#47b7f8",
+   "L": 0.744,
+   "C": 0.137,
+   "H": 238,
+   "fillArea": 0,
+   "textChars": 81,
+   "ex": "A fastest databases"
+  },
+  {
+   "hex": "#f35815",
+   "L": 0.661,
+   "C": 0.202,
+   "H": 39,
+   "fillArea": 4310,
+   "textChars": 0,
+   "ex": "A Get in touch"
+  }
+ ],
+ "radii": [
+  [
+   "3.35544e+07px",
+   1
+  ]
+ ],
+ "smoothing": "antialiased",
+ "canvasCtx": []
+}

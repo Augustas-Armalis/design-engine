@@ -1,0 +1,583 @@
+{
+ "url": "https://linear.app",
+ "measured": "2026-10-09",
+ "viewport": "1440x900 dark",
+ "title": "Linear – The system for product development",
+ "H": 9960,
+ "scheme": {
+  "html": "dark",
+  "meta": "#08090a"
+ },
+ "canvas": {
+  "hex": "#08090a",
+  "L": 0.139,
+  "C": 0.003,
+  "H": 246
+ },
+ "surfaces": [
+  {
+   "hex": "#08090a",
+   "L": 0.139,
+   "C": 0.003,
+   "H": 246,
+   "n": 1,
+   "area": 2592000,
+   "ex": "div 1440x9960"
+  },
+  {
+   "hex": "#090a0b",
+   "L": 0.144,
+   "C": 0.003,
+   "H": 247,
+   "n": 1,
+   "area": 950400,
+   "ex": "div 1320x720"
+  },
+  {
+   "hex": "#101112",
+   "L": 0.177,
+   "C": 0.003,
+   "H": 248,
+   "n": 1,
+   "area": 950400,
+   "ex": "div 1320x720"
+  },
+  {
+   "hex": "#161718",
+   "L": 0.204,
+   "C": 0.003,
+   "H": 248,
+   "n": 2,
+   "area": 228520,
+   "ex": "div 400x520"
+  },
+  {
+   "hex": "#0f1011",
+   "L": 0.172,
+   "C": 0.003,
+   "H": 248,
+   "n": 2,
+   "area": 158689,
+   "ex": "div 662x149"
+  },
+  {
+   "hex": "#e5e5e6",
+   "L": 0.922,
+   "C": 0.001,
+   "H": 286,
+   "n": 1,
+   "area": 2334,
+   "ex": "a 73x32"
+  }
+ ],
+ "overlays": [
+  {
+   "bg": "rgba(255, 255, 255, 0.01)",
+   "n": 1,
+   "area": 754688,
+   "flat": "#0b0c0d",
+   "L": 0.156
+  },
+  {
+   "bg": "rgba(255, 255, 255, 0.04)",
+   "n": 1,
+   "area": 5824,
+   "flat": "#131415",
+   "L": 0.19
+  },
+  {
+   "bg": "rgba(255, 255, 255, 0.05)",
+   "n": 1,
+   "area": 2526,
+   "flat": "#18191a",
+   "L": 0.211
+  }
+ ],
+ "borders": [
+  {
+   "border": "rgba(255, 255, 255, 0.08) @1",
+   "n": 37,
+   "alpha": 0.08,
+   "flat": "#1c1d1e",
+   "dL": 0.09
+  },
+  {
+   "border": "rgba(255, 255, 255, 0.05) @1",
+   "n": 9,
+   "alpha": 0.05,
+   "flat": "#141516",
+   "dL": 0.057
+  },
+  {
+   "border": "rgb(46, 46, 50) @1",
+   "n": 8,
+   "alpha": 1,
+   "flat": "#2e2e32",
+   "dL": 0.164
+  },
+  {
+   "border": "rgb(229, 229, 230) @1",
+   "n": 4,
+   "alpha": 1,
+   "flat": "#e5e5e6",
+   "dL": 0.783
+  },
+  {
+   "border": "rgb(36, 40, 44) @1",
+   "n": 4,
+   "alpha": 1,
+   "flat": "#24282c",
+   "dL": 0.135
+  },
+  {
+   "border": "rgba(255, 255, 255, 0.12) @1",
+   "n": 4,
+   "alpha": 0.12,
+   "flat": "#262727",
+   "dL": 0.131
+  },
+  {
+   "border": "rgba(0, 0, 0, 0) @1",
+   "n": 4,
+   "alpha": 0,
+   "flat": "#08090a",
+   "dL": 0
+  }
+ ],
+ "shadows": [
+  {
+   "s": "rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset",
+   "n": 4
+  },
+  {
+   "s": "rgba(0, 0, 0, 0.2) 0px 0px 0px 1px",
+   "n": 4
+  },
+  {
+   "s": "rgba(0, 0, 0, 0) 0px 8px 2px 0px, rgba(0, 0, 0, 0.01) 0px 5px 2px 0px, rgba(0, 0, 0, 0.04) 0px 3px 2px 0px, rgba(0, 0, 0, 0.07) 0px 1px 1px 0px, rgba(0, 0, 0, 0.08) 0px 0px 1px 0px",
+   "n": 1
+  },
+  {
+   "s": "rgba(0, 0, 0, 0.2) 0px 0px 0px 2px",
+   "n": 1
+  },
+  {
+   "s": "rgba(0, 0, 0, 0.25) 0px 2px 32px 0px",
+   "n": 1
+  },
+  {
+   "s": "rgba(255, 255, 255, 0.08) 0px 0px 0px 0.5px inset",
+   "n": 1
+  },
+  {
+   "s": "rgba(0, 0, 0, 0.06) 0px 4px 4px -1px, rgba(0, 0, 0, 0.12) 0px 1px 1px 0px",
+   "n": 1
+  }
+ ],
+ "text": [
+  {
+   "color": "rgb(138, 143, 152)",
+   "chars": 290,
+   "flat": "#8a8f98",
+   "alpha": 1,
+   "L": 0.649,
+   "C": 0.015,
+   "H": 262,
+   "wcag": 6.13,
+   "size": "13px",
+   "weight": "400",
+   "ex": "Product"
+  },
+  {
+   "color": "rgb(98, 102, 109)",
+   "chars": 223,
+   "flat": "#62666d",
+   "alpha": 1,
+   "L": 0.509,
+   "C": 0.012,
+   "H": 262,
+   "wcag": 3.44,
+   "size": "12px",
+   "weight": "510",
+   "ex": "Workspace"
+  },
+  {
+   "color": "rgb(208, 214, 224)",
+   "chars": 192,
+   "flat": "#d0d6e0",
+   "alpha": 1,
+   "L": 0.874,
+   "C": 0.015,
+   "H": 261,
+   "wcag": 13.64,
+   "size": "15px",
+   "weight": "510",
+   "ex": "New"
+  },
+  {
+   "color": "rgb(247, 248, 248)",
+   "chars": 156,
+   "flat": "#f7f8f8",
+   "alpha": 1,
+   "L": 0.978,
+   "C": 0.001,
+   "H": 197,
+   "wcag": 18.73,
+   "size": "64px",
+   "weight": "510",
+   "ex": "The product development"
+  },
+  {
+   "color": "rgb(98, 99, 102)",
+   "chars": 19,
+   "flat": "#626366",
+   "alpha": 1,
+   "L": 0.5,
+   "C": 0.005,
+   "H": 271,
+   "wcag": 2.99,
+   "size": "13px",
+   "weight": "400",
+   "ex": "Thinking…\nThinking…"
+  },
+  {
+   "color": "rgba(0, 0, 0, 0)",
+   "chars": 9,
+   "flat": "#161718",
+   "alpha": 0,
+   "L": 0.204,
+   "C": 0.003,
+   "H": 248,
+   "wcag": 1,
+   "size": "13px",
+   "weight": "400",
+   "ex": "Thinking…"
+  },
+  {
+   "color": "rgb(8, 9, 10)",
+   "chars": 7,
+   "flat": "#08090a",
+   "alpha": 1,
+   "L": 0.139,
+   "C": 0.003,
+   "H": 246,
+   "wcag": 15.83,
+   "size": "13px",
+   "weight": "510",
+   "ex": "Sign up"
+  }
+ ],
+ "h1": {
+  "text": "The product development\nsystem for teams and agents\nThe product develo",
+  "family": "\"Inter Variable\"",
+  "size": "64px",
+  "weight": "510",
+  "ls": "-1.408px",
+  "lh": "64px",
+  "color": "rgb(247, 248, 248)",
+  "bgClip": "border-box",
+  "bgImage": null,
+  "textShadow": null,
+  "fillColor": "rgb(247, 248, 248)",
+  "mask": null
+ },
+ "ctas": [
+  {
+   "text": "Linear",
+   "w": 97,
+   "h": 28,
+   "bg": "rgba(0, 0, 0, 0)",
+   "fillL": null,
+   "color": "rgb(255, 255, 255)",
+   "border": null,
+   "radius": "8px",
+   "shadow": null,
+   "bgi": null,
+   "size": "13.3333px",
+   "weight": "400",
+   "before": null,
+   "after": null,
+   "childBg": "rgb(18, 20, 20)"
+  }
+ ],
+ "nav": {
+  "h": 73,
+  "w": 1440,
+  "bg": "rgba(0, 0, 0, 0)",
+  "backdrop": "blur(20px)",
+  "bb": "1px rgba(255, 255, 255, 0.08)",
+  "border": null,
+  "radius": "0px",
+  "shadow": null,
+  "link": "rgb(247, 248, 248)",
+  "linkSize": "16px"
+ },
+ "lightFx": [
+  {
+   "el": "header 1440x73@0,0",
+   "bgi": "linear-gradient(rgba(11, 11, 11, 0.8) 0%, oklab(0.149576 0.00000680983 0.00000298768 / 0.761905) 100%)",
+   "filter": null,
+   "mask": null,
+   "blend": null,
+   "opacity": null
+  },
+  {
+   "el": "header::before 1440x73@0,0",
+   "bgi": "linear-gradient(rgb(8, 9, 10) 0%, rgba(0, 0, 0, 0) 100%)",
+   "filter": null,
+   "mask": null,
+   "blend": null,
+   "opacity": null
+  },
+  {
+   "el": "span 763x124@48,242",
+   "bgi": null,
+   "filter": "blur(0px)",
+   "mask": null,
+   "blend": null,
+   "opacity": null
+  },
+  {
+   "el": "span 844x124@48,306",
+   "bgi": null,
+   "filter": "blur(0px)",
+   "mask": null,
+   "blend": null,
+   "opacity": null
+  },
+  {
+   "el": "span 505x24@80,432",
+   "bgi": null,
+   "filter": "blur(0px)",
+   "mask": null,
+   "blend": null,
+   "opacity": null
+  },
+  {
+   "el": "span 104x24@1256,433",
+   "bgi": null,
+   "filter": "blur(0px)",
+   "mask": null,
+   "blend": null,
+   "opacity": null
+  },
+  {
+   "el": "div 1416x768@12,527",
+   "bgi": "radial-gradient(52.53% 57.5% at 50% 100%, rgba(8, 9, 10, 0) 0%, rgba(8, 9, 10, 0.5) 100%), linear-gradient(rgb(8, 9, 10) 10%, rgb(208, 214, 224) 100%)",
+   "filter": null,
+   "mask": null,
+   "blend": null,
+   "opacity": null
+  },
+  {
+   "el": "nav::after 232x704@68,535",
+   "bgi": null,
+   "filter": "blur(80px)",
+   "mask": null,
+   "blend": null,
+   "opacity": null
+  },
+  {
+   "el": "div 400x400@101,336",
+   "bgi": "radial-gradient(50% 50%, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0) 90%)",
+   "filter": null,
+   "mask": null,
+   "blend": null,
+   "opacity": null
+  },
+  {
+   "el": "div 662x149@357,868",
+   "bgi": "linear-gradient(rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.03)), none",
+   "filter": null,
+   "mask": null,
+   "blend": null,
+   "opacity": null
+  },
+  {
+   "el": "div::after 662x149@357,868",
+   "bgi": null,
+   "filter": null,
+   "mask": "radial-gradient(100px 100px at 0px 0px, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 16%, rgba(0, 0, 0, 0) 100%)",
+   "blend": null,
+   "opacity": null
+  },
+  {
+   "el": "div 386x88@966,765",
+   "bgi": null,
+   "filter": "blur(0px)",
+   "mask": null,
+   "blend": null,
+   "opacity": null
+  },
+  {
+   "el": "p 342x60@1006,769",
+   "bgi": "linear-gradient(rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.04)), none",
+   "filter": null,
+   "mask": null,
+   "blend": null,
+   "opacity": null
+  },
+  {
+   "el": "p 386x32@966,861",
+   "bgi": null,
+   "filter": "blur(0px)",
+   "mask": null,
+   "blend": null,
+   "opacity": null
+  },
+  {
+   "el": "div 1318x718@61,528",
+   "bgi": null,
+   "filter": null,
+   "mask": null,
+   "blend": "overlay",
+   "opacity": "0.6"
+  },
+  {
+   "el": "div 1320x720@60,527",
+   "bgi": null,
+   "filter": null,
+   "mask": "radial-gradient(200px 200px at 8% 0%, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0) 70%)",
+   "blend": null,
+   "opacity": null
+  },
+  {
+   "el": "div 1320x704@300,535",
+   "bgi": null,
+   "filter": null,
+   "mask": "radial-gradient(200px 200px at 8% 0%, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0) 70%)",
+   "blend": null,
+   "opacity": null
+  },
+  {
+   "el": "div 1320x720@60,527",
+   "bgi": null,
+   "filter": null,
+   "mask": "radial-gradient(200px 200px at 0px 0%, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0) 70%)",
+   "blend": null,
+   "opacity": null
+  },
+  {
+   "el": "div 1320x704@300,535",
+   "bgi": null,
+   "filter": null,
+   "mask": "radial-gradient(200px 200px at 0px 0%, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0) 70%)",
+   "blend": null,
+   "opacity": null
+  }
+ ],
+ "lightFxCount": 19,
+ "media": [],
+ "noise": {
+  "feTurbulence": 0,
+  "cssNoise": [],
+  "imgs": 0
+ },
+ "frames": [
+  {
+   "tag": "div",
+   "box": [
+    60,
+    527,
+    1320,
+    720
+   ],
+   "bg": "rgb(16, 17, 18)",
+   "bgL": 0.177,
+   "border": "1px rgba(255, 255, 255, 0.08)",
+   "radius": "12px",
+   "shadow": null,
+   "bgi": null,
+   "mask": null,
+   "before": null,
+   "after": null
+  },
+  {
+   "tag": "div",
+   "box": [
+    60,
+    527,
+    1320,
+    720
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgL": null,
+   "border": "1px rgba(255, 255, 255, 0.08)",
+   "radius": "12px",
+   "shadow": null,
+   "bgi": null,
+   "mask": "radial-gradient(200px 200px at 8% 0%, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0) 70%)",
+   "before": null,
+   "after": null
+  },
+  {
+   "tag": "div",
+   "box": [
+    300,
+    535,
+    1320,
+    704
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgL": null,
+   "border": "1px rgba(255, 255, 255, 0.08)",
+   "radius": "8px",
+   "shadow": null,
+   "bgi": null,
+   "mask": "radial-gradient(200px 200px at 8% 0%, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0) 70%)",
+   "before": null,
+   "after": null
+  },
+  {
+   "tag": "div",
+   "box": [
+    60,
+    527,
+    1320,
+    720
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgL": null,
+   "border": "1px rgba(255, 255, 255, 0.08)",
+   "radius": "12px",
+   "shadow": null,
+   "bgi": null,
+   "mask": "radial-gradient(200px 200px at 0px 0%, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0) 70%)",
+   "before": null,
+   "after": null
+  }
+ ],
+ "accentUse": [],
+ "radii": [
+  [
+   "9999px",
+   18
+  ],
+  [
+   "8px",
+   15
+  ],
+  [
+   "12px",
+   6
+  ],
+  [
+   "50%",
+   4
+  ],
+  [
+   "6px",
+   3
+  ],
+  [
+   "4px",
+   2
+  ],
+  [
+   "999px",
+   2
+  ]
+ ],
+ "smoothing": "antialiased",
+ "canvasCtx": []
+}

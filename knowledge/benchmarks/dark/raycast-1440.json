@@ -1,0 +1,326 @@
+{
+ "url": "https://www.raycast.com",
+ "measured": "2026-10-09",
+ "viewport": "1440x900 dark",
+ "title": "Raycast - Your shortcut to everything",
+ "H": 15983,
+ "scheme": {
+  "html": "dark",
+  "meta": null
+ },
+ "canvas": {
+  "hex": "#07080a",
+  "L": 0.134,
+  "C": 0.005,
+  "H": 262
+ },
+ "surfaces": [
+  {
+   "hex": "#07080a",
+   "L": 0.134,
+   "C": 0.005,
+   "H": 262,
+   "n": 2,
+   "area": 2016955,
+   "ex": "div 1200x967"
+  },
+  {
+   "hex": "#e6e6e6",
+   "L": 0.925,
+   "C": 0,
+   "H": 90,
+   "n": 2,
+   "area": 10442,
+   "ex": "a 117x36"
+  },
+  {
+   "hex": "#452324",
+   "L": 0.302,
+   "C": 0.052,
+   "H": 19,
+   "n": 1,
+   "area": 6541,
+   "ex": "div 204x32"
+  },
+  {
+   "hex": "#130d0e",
+   "L": 0.167,
+   "C": 0.01,
+   "H": 7,
+   "n": 1,
+   "area": 6072,
+   "ex": "a 202x30"
+  },
+  {
+   "hex": "#ff6363",
+   "L": 0.7,
+   "C": 0.191,
+   "H": 23,
+   "n": 1,
+   "area": 5625,
+   "ex": "div 75x75"
+  }
+ ],
+ "overlays": [
+  {
+   "bg": "rgba(0, 0, 0, 0.44)",
+   "n": 1,
+   "area": 890960,
+   "flat": "#040406",
+   "L": 0.11
+  },
+  {
+   "bg": "rgba(158, 190, 215, 0.1)",
+   "n": 1,
+   "area": 665760,
+   "flat": "#161a1f",
+   "L": 0.216
+  },
+  {
+   "bg": "rgba(0, 0, 0, 0.6)",
+   "n": 1,
+   "area": 356250,
+   "flat": "#030304",
+   "L": 0.099
+  },
+  {
+   "bg": "rgba(255, 255, 255, 0.1)",
+   "n": 3,
+   "area": 69120,
+   "flat": "#202123",
+   "L": 0.246
+  },
+  {
+   "bg": "rgba(255, 255, 255, 0.05)",
+   "n": 6,
+   "area": 42336,
+   "flat": "#131416",
+   "L": 0.193
+  }
+ ],
+ "borders": [
+  {
+   "border": "rgba(142, 140, 144, 0.2) @1",
+   "n": 16,
+   "alpha": 0.2,
+   "flat": "#222225",
+   "dL": 0.12
+  },
+  {
+   "border": "rgba(255, 255, 255, 0.1) @1",
+   "n": 9,
+   "alpha": 0.1,
+   "flat": "#202123",
+   "dL": 0.112
+  },
+  {
+   "border": "rgba(255, 255, 255, 0.08) @1",
+   "n": 8,
+   "alpha": 0.08,
+   "flat": "#1b1c1e",
+   "dL": 0.091
+  },
+  {
+   "border": "rgba(255, 255, 255, 0.06) @1",
+   "n": 4,
+   "alpha": 0.06,
+   "flat": "#161719",
+   "dL": 0.07
+  },
+  {
+   "border": "rgba(255, 255, 255, 0.2) @1",
+   "n": 4,
+   "alpha": 0.2,
+   "flat": "#39393b",
+   "dL": 0.212
+  },
+  {
+   "border": "rgba(255, 255, 255, 0.2) @2",
+   "n": 4,
+   "alpha": 0.2,
+   "flat": "#39393b",
+   "dL": 0.212
+  },
+  {
+   "border": "rgba(255, 255, 255, 0.6) @1",
+   "n": 4,
+   "alpha": 0.6,
+   "flat": "#9c9c9d",
+   "dL": 0.559
+  },
+  {
+   "border": "rgb(255, 255, 255) @1",
+   "n": 4,
+   "alpha": 1,
+   "flat": "#ffffff",
+   "dL": 0.866
+  }
+ ],
+ "shadows": [
+  {
+   "s": "rgba(0, 0, 0, 0.4) 0px 4px 40px 8px, rgba(0, 0, 0, 0.8) 0px 0px 0px 0.5px, rgba(255, 255, 255, 0.3) 0px 0.5px 0px 0px inset",
+   "n": 4
+  },
+  {
+   "s": "rgba(0, 0, 0, 0.5) 0px 0px 0px 2px, rgba(255, 255, 255, 0.19) 0px 0px 14px 0px, rgba(0, 0, 0, 0.2) 0px -1px 0.4px 0px inset, rgb(255, 255, 255) 0px 1px 0.4px 0px inset",
+   "n": 2
+  },
+  {
+   "s": "rgba(255, 255, 255, 0.15) 0px 1px 1px 0px inset",
+   "n": 1
+  },
+  {
+   "s": "rgba(245, 48, 107, 0.1) 0px 0px 20px 0px",
+   "n": 1
+  },
+  {
+   "s": "rgba(255, 255, 255, 0.03) 0px 0px 40px 20px, rgba(255, 255, 255, 0.3) 0px 0.5px 0px 0px inset",
+   "n": 1
+  },
+  {
+   "s": "rgba(255, 255, 255, 0.19) 0px 0px 2px 0px, rgba(255, 255, 255, 0.1) 0px 0.5px 0px 0px inset",
+   "n": 1
+  }
+ ],
+ "text": [
+  {
+   "color": "rgb(255, 255, 255)",
+   "chars": 174,
+   "flat": "#ffffff",
+   "alpha": 1,
+   "L": 1,
+   "C": 0,
+   "H": 90,
+   "wcag": 20.04,
+   "size": "64px",
+   "weight": "600",
+   "ex": "Your shortcut to everything."
+  },
+  {
+   "color": "rgb(156, 156, 157)",
+   "chars": 83,
+   "flat": "#9c9c9d",
+   "alpha": 1,
+   "L": 0.693,
+   "C": 0.001,
+   "H": 286,
+   "wcag": 7.3,
+   "size": "14px",
+   "weight": "500",
+   "ex": "Store"
+  },
+  {
+   "color": "rgb(47, 48, 49)",
+   "chars": 24,
+   "flat": "#2f3031",
+   "alpha": 1,
+   "L": 0.309,
+   "C": 0.002,
+   "H": 248,
+   "wcag": 10.6,
+   "size": "14px",
+   "weight": "500",
+   "ex": "Download"
+  }
+ ],
+ "h1": {
+  "text": "Your shortcut to everything.",
+  "family": "Inter",
+  "size": "64px",
+  "weight": "600",
+  "ls": "normal",
+  "lh": "70.4px",
+  "color": "rgb(255, 255, 255)",
+  "bgClip": "border-box",
+  "bgImage": null,
+  "textShadow": "rgba(0, 0, 0, 0.15) 0px 4px 4px",
+  "fillColor": "rgb(255, 255, 255)",
+  "mask": null
+ },
+ "ctas": [
+  {
+   "text": "Download for Mac",
+   "w": 173,
+   "h": 36,
+   "bg": "rgb(230, 230, 230)",
+   "fillL": 0.925,
+   "color": "rgb(47, 48, 49)",
+   "border": null,
+   "radius": "8px",
+   "shadow": "rgba(0, 0, 0, 0.5) 0px 0px 0px 2px, rgba(255, 255, 255, 0.19) 0px 0px 14px 0px, rgba(0, 0, 0, 0.2) 0px -1px 0.4px 0px inset, rgb(255, 255, 255) 0px 1px 0.4px 0px inset",
+   "bgi": null,
+   "size": "14px",
+   "weight": "500",
+   "before": null,
+   "after": null,
+   "childBg": null
+  }
+ ],
+ "lightFx": [
+  {
+   "el": "div 1204x76@118,16",
+   "bgi": "linear-gradient(137deg, rgba(17, 18, 20, 0.75) 4.87%, rgba(12, 13, 15, 0.9) 75.88%)",
+   "filter": null,
+   "mask": null,
+   "blend": null,
+   "opacity": null
+  },
+  {
+   "el": "p 281x19@579,849",
+   "bgi": null,
+   "filter": null,
+   "mask": null,
+   "blend": "plus-lighter",
+   "opacity": "0.4"
+  },
+  {
+   "el": "div::after 1200x967@120,0",
+   "bgi": "linear-gradient(rgba(7, 8, 10, 0.125) 0%, rgba(7, 8, 10, 0.125) 90%, rgb(7, 8, 10) 100%), linear-gradient(to left, rgba(7, 8, 10, 0) 0%, rgb(7, 8, 10) 100%), linear-gradient(to right, rgba(7, 8, 10, 0) 0%, rgb(7, 8, 10) 100%)",
+   "filter": null,
+   "mask": null,
+   "blend": null,
+   "opacity": null
+  }
+ ],
+ "lightFxCount": 3,
+ "media": [
+  {
+   "tag": "canvas",
+   "w": 1200,
+   "h": 967,
+   "top": 0,
+   "blend": "normal",
+   "opacity": "1",
+   "mask": null
+  }
+ ],
+ "noise": {
+  "feTurbulence": 0,
+  "cssNoise": [],
+  "imgs": 0
+ },
+ "frames": [],
+ "accentUse": [],
+ "radii": [
+  [
+   "6px",
+   10
+  ],
+  [
+   "8px",
+   2
+  ],
+  [
+   "4px",
+   2
+  ],
+  [
+   "16px",
+   1
+  ]
+ ],
+ "smoothing": "antialiased",
+ "canvasCtx": [
+  "webgl 2400x1934"
+ ]
+}

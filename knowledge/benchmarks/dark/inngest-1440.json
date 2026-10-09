@@ -1,0 +1,458 @@
+{
+ "url": "https://www.inngest.com",
+ "measured": "2026-10-09",
+ "viewport": "1440x900 dark",
+ "title": "Durable Execution for Workflows & AI | Inngest",
+ "H": 11513,
+ "scheme": {
+  "html": "normal",
+  "meta": null
+ },
+ "canvas": {
+  "hex": "#0c0a09",
+  "L": 0.147,
+  "C": 0.004,
+  "H": 49
+ },
+ "surfaces": [
+  {
+   "hex": "#1c1c1c",
+   "L": 0.226,
+   "C": 0,
+   "H": 90,
+   "n": 1,
+   "area": 2592000,
+   "ex": "div 1440x11513"
+  },
+  {
+   "hex": "#f76246",
+   "L": 0.683,
+   "C": 0.188,
+   "H": 33,
+   "n": 1,
+   "area": 46080,
+   "ex": "a 1440x32"
+  },
+  {
+   "hex": "#f65c4f",
+   "L": 0.675,
+   "C": 0.191,
+   "H": 28,
+   "n": 2,
+   "area": 13272,
+   "ex": "a 124x42"
+  },
+  {
+   "hex": "#ffffff",
+   "L": 1,
+   "C": 0,
+   "H": 90,
+   "n": 1,
+   "area": 3840,
+   "ex": "a 120x32"
+  }
+ ],
+ "overlays": [
+  {
+   "bg": "rgba(246, 92, 79, 0.004)",
+   "n": 1,
+   "area": 45756,
+   "flat": "#1d1c1c",
+   "L": 0.228
+  },
+  {
+   "bg": "rgba(102, 189, 139, 0.14)",
+   "n": 2,
+   "area": 5447,
+   "flat": "#26332c",
+   "L": 0.306
+  },
+  {
+   "bg": "rgba(120, 177, 131, 0.14)",
+   "n": 1,
+   "area": 2723,
+   "flat": "#2a312b",
+   "L": 0.304
+  }
+ ],
+ "borders": [
+  {
+   "border": "rgba(255, 255, 255, 0.08) @1",
+   "n": 1,
+   "alpha": 0.08,
+   "flat": "#1f1e1d",
+   "dL": 0.088
+  }
+ ],
+ "shadows": [
+  {
+   "s": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(28, 28, 28) 0px 0px 0px 2px",
+   "n": 14
+  },
+  {
+   "s": "rgb(255, 255, 255) 0px 0px 0px 2px inset",
+   "n": 3
+  },
+  {
+   "s": "rgba(102, 189, 139, 0.4) 0px 0px 0px 1px inset",
+   "n": 3
+  },
+  {
+   "s": "rgb(102, 189, 139) 2px 0px 0px 0px inset",
+   "n": 2
+  },
+  {
+   "s": "rgb(109, 184, 136) 2px 0px 0px 0px inset",
+   "n": 1
+  }
+ ],
+ "text": [
+  {
+   "color": "rgb(155, 155, 155)",
+   "chars": 1078,
+   "flat": "#9b9b9b",
+   "alpha": 1,
+   "L": 0.689,
+   "C": 0,
+   "H": 90,
+   "wcag": 6.13,
+   "size": "13px",
+   "weight": "400",
+   "ex": "import { copyFromURL, upload, "
+  },
+  {
+   "color": "rgb(179, 179, 179)",
+   "chars": 185,
+   "flat": "#b3b3b3",
+   "alpha": 1,
+   "L": 0.767,
+   "C": 0,
+   "H": 90,
+   "wcag": 8.13,
+   "size": "20px",
+   "weight": "400",
+   "ex": "Inngest is the fastest way to "
+  },
+  {
+   "color": "rgb(255, 255, 255)",
+   "chars": 134,
+   "flat": "#ffffff",
+   "alpha": 1,
+   "L": 1,
+   "C": 0,
+   "H": 90,
+   "wcag": 3.09,
+   "size": "14px",
+   "weight": "400",
+   "ex": "Watch our CodeTV episode on Yo"
+  },
+  {
+   "color": "rgb(246, 92, 79)",
+   "chars": 59,
+   "flat": "#f65c4f",
+   "alpha": 1,
+   "L": 0.675,
+   "C": 0.191,
+   "H": 28,
+   "wcag": 5.33,
+   "size": "12px",
+   "weight": "600",
+   "ex": "OPEN SOURCE"
+  },
+  {
+   "color": "rgba(0, 0, 0, 0)",
+   "chars": 53,
+   "flat": "#1c1c1c",
+   "alpha": 0,
+   "L": 0.226,
+   "C": 0,
+   "H": 90,
+   "wcag": 1,
+   "size": "12px",
+   "weight": "600",
+   "ex": "PLATFORM"
+  },
+  {
+   "color": "rgb(102, 189, 139)",
+   "chars": 32,
+   "flat": "#66bd8b",
+   "alpha": 1,
+   "L": 0.73,
+   "C": 0.112,
+   "H": 157,
+   "wcag": 5.82,
+   "size": "11px",
+   "weight": "400",
+   "ex": "COMPLETED | 1.2S"
+  },
+  {
+   "color": "rgb(74, 250, 125)",
+   "chars": 25,
+   "flat": "#4afa7d",
+   "alpha": 1,
+   "L": 0.87,
+   "C": 0.22,
+   "H": 149,
+   "wcag": 12.39,
+   "size": "13px",
+   "weight": "400",
+   "ex": "copyFromURL, upload, list"
+  },
+  {
+   "color": "rgba(255, 255, 255, 0.6)",
+   "chars": 24,
+   "flat": "#a4a4a4",
+   "alpha": 0.6,
+   "L": 0.719,
+   "C": 0,
+   "H": 90,
+   "wcag": 6.85,
+   "size": "12px",
+   "weight": "400",
+   "ex": "TRUSTED IN PRODUCTION BY"
+  }
+ ],
+ "h1": {
+  "text": "MAKE EVERY\nBACKEND\nUNBREAKABLE.",
+  "family": "WhyteV1",
+  "size": "72px",
+  "weight": "400",
+  "ls": "-1.44px",
+  "lh": "68.4px",
+  "color": "rgb(255, 255, 255)",
+  "bgClip": "border-box",
+  "bgImage": null,
+  "textShadow": null,
+  "fillColor": "rgb(255, 255, 255)",
+  "mask": null
+ },
+ "ctas": [
+  {
+   "text": "npm install inngest",
+   "w": 218,
+   "h": 42,
+   "bg": "rgba(0, 0, 0, 0)",
+   "fillL": null,
+   "color": "rgb(255, 255, 255)",
+   "border": null,
+   "radius": "6px",
+   "shadow": "rgb(255, 255, 255) 0px 0px 0px 2px inset",
+   "bgi": null,
+   "size": "12px",
+   "weight": "600",
+   "before": null,
+   "after": null,
+   "childBg": null
+  },
+  {
+   "text": "START FREE",
+   "w": 124,
+   "h": 42,
+   "bg": "rgb(246, 92, 79)",
+   "fillL": 0.675,
+   "color": "rgb(255, 255, 255)",
+   "border": null,
+   "radius": "6px",
+   "shadow": null,
+   "bgi": null,
+   "size": "12px",
+   "weight": "600",
+   "before": null,
+   "after": null,
+   "childBg": null
+  },
+  {
+   "text": "READ THE CASE STUDY",
+   "w": 118,
+   "h": 29,
+   "bg": "rgba(0, 0, 0, 0)",
+   "fillL": null,
+   "color": "rgb(246, 246, 246)",
+   "border": null,
+   "radius": "0px",
+   "shadow": null,
+   "bgi": null,
+   "size": "16px",
+   "weight": "400",
+   "before": null,
+   "after": null,
+   "childBg": "rgb(246, 92, 79)"
+  },
+  {
+   "text": "READ THE CASE STUDY",
+   "w": 127,
+   "h": 28,
+   "bg": "rgba(0, 0, 0, 0)",
+   "fillL": null,
+   "color": "rgb(246, 246, 246)",
+   "border": null,
+   "radius": "0px",
+   "shadow": null,
+   "bgi": null,
+   "size": "16px",
+   "weight": "400",
+   "before": null,
+   "after": null,
+   "childBg": "rgb(246, 92, 79)"
+  },
+  {
+   "text": "READ THE CASE STUDY",
+   "w": 118,
+   "h": 29,
+   "bg": "rgba(0, 0, 0, 0)",
+   "fillL": null,
+   "color": "rgb(246, 246, 246)",
+   "border": null,
+   "radius": "0px",
+   "shadow": null,
+   "bgi": null,
+   "size": "16px",
+   "weight": "400",
+   "before": null,
+   "after": null,
+   "childBg": "rgb(246, 92, 79)"
+  },
+  {
+   "text": "READ THE CASE STUDY",
+   "w": 118,
+   "h": 29,
+   "bg": "rgba(0, 0, 0, 0)",
+   "fillL": null,
+   "color": "rgb(246, 246, 246)",
+   "border": null,
+   "radius": "0px",
+   "shadow": null,
+   "bgi": null,
+   "size": "16px",
+   "weight": "400",
+   "before": null,
+   "after": null,
+   "childBg": "rgb(246, 92, 79)"
+  }
+ ],
+ "nav": {
+  "h": 88,
+  "w": 1440,
+  "bg": "rgba(0, 0, 0, 0)",
+  "backdrop": "none",
+  "bb": null,
+  "border": null,
+  "radius": "0px",
+  "shadow": null,
+  "link": "rgb(255, 255, 255)",
+  "linkSize": "12px"
+ },
+ "lightFx": [
+  {
+   "el": "span 1440x32@0,0",
+   "bgi": null,
+   "filter": null,
+   "mask": null,
+   "blend": "soft-light",
+   "opacity": null
+  },
+  {
+   "el": "pre 640x523@720,117",
+   "bgi": null,
+   "filter": "blur(0px)",
+   "mask": null,
+   "blend": null,
+   "opacity": null
+  },
+  {
+   "el": "section 1376x110@32,790",
+   "bgi": null,
+   "filter": null,
+   "mask": "linear-gradient(to right, rgba(0, 0, 0, 0) 0px, rgb(0, 0, 0) 120px, rgb(0, 0, 0) calc(100% - 120px), rgba(0, 0, 0, 0) 100%)",
+   "blend": null,
+   "opacity": null
+  }
+ ],
+ "lightFxCount": 3,
+ "media": [],
+ "noise": {
+  "feTurbulence": 0,
+  "cssNoise": [
+   "SPAN.pointer-events-none absolute inset-0 op=1 blend=soft-light",
+   "DIV.v1-page-bg pointer-events-none absolute  op=1 blend=normal"
+  ],
+  "imgs": 0
+ },
+ "frames": [],
+ "accentUse": [
+  {
+   "hex": "#f76246",
+   "L": 0.683,
+   "C": 0.188,
+   "H": 33,
+   "fillArea": 46080,
+   "textChars": 0,
+   "ex": "A Watch our CodeTV epi"
+  },
+  {
+   "hex": "#f65c4f",
+   "L": 0.675,
+   "C": 0.191,
+   "H": 28,
+   "fillArea": 5894,
+   "textChars": 59,
+   "ex": "SPAN OPEN SOURCE"
+  },
+  {
+   "hex": "#66bd8b",
+   "L": 0.73,
+   "C": 0.112,
+   "H": 157,
+   "fillArea": 0,
+   "textChars": 32,
+   "ex": "SPAN COMPLETED | 1.2S"
+  },
+  {
+   "hex": "#4afa7d",
+   "L": 0.87,
+   "C": 0.22,
+   "H": 149,
+   "fillArea": 0,
+   "textChars": 25,
+   "ex": "SPAN copyFromURL, upload,"
+  },
+  {
+   "hex": "#4c74ee",
+   "L": 0.596,
+   "C": 0.189,
+   "H": 267,
+   "fillArea": 0,
+   "textChars": 21,
+   "ex": "SPAN copyFromURL"
+  },
+  {
+   "hex": "#77b788",
+   "L": 0.723,
+   "C": 0.095,
+   "H": 152,
+   "fillArea": 0,
+   "textChars": 16,
+   "ex": "SPAN COMPLETED | 0.4S"
+  }
+ ],
+ "radii": [
+  [
+   "9999px",
+   14
+  ],
+  [
+   "6px",
+   3
+  ],
+  [
+   "8px",
+   3
+  ],
+  [
+   "999px",
+   3
+  ]
+ ],
+ "smoothing": "antialiased",
+ "canvasCtx": []
+}

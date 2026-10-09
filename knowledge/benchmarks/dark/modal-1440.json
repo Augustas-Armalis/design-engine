@@ -1,0 +1,348 @@
+{
+ "url": "https://modal.com",
+ "measured": "2026-10-09",
+ "viewport": "1440x900 dark",
+ "title": "Modal: The platform for production AI",
+ "H": 10618,
+ "scheme": {
+  "html": "dark",
+  "meta": null
+ },
+ "canvas": {
+  "hex": "#040804",
+  "L": 0.126,
+  "C": 0.015,
+  "H": 145
+ },
+ "surfaces": [
+  {
+   "hex": "#040804",
+   "L": 0.126,
+   "C": 0.015,
+   "H": 145,
+   "n": 4,
+   "area": 4235677,
+   "ex": "div 1440x10618"
+  },
+  {
+   "hex": "#10120f",
+   "L": 0.179,
+   "C": 0.007,
+   "H": 135,
+   "n": 2,
+   "area": 390701,
+   "ex": "span 349x196"
+  },
+  {
+   "hex": "#7fee64",
+   "L": 0.854,
+   "C": 0.204,
+   "H": 140,
+   "n": 1,
+   "area": 51840,
+   "ex": "div 1440x36"
+  },
+  {
+   "hex": "#e3e5e1",
+   "L": 0.919,
+   "C": 0.006,
+   "H": 129,
+   "n": 2,
+   "area": 6030,
+   "ex": "a 71x32"
+  }
+ ],
+ "overlays": [
+  {
+   "bg": "rgba(255, 255, 255, 0.05)",
+   "n": 2,
+   "area": 7429,
+   "flat": "#111411",
+   "L": 0.187
+  }
+ ],
+ "borders": [
+  {
+   "border": "rgba(0, 0, 0, 0) @1",
+   "n": 12,
+   "alpha": 0,
+   "flat": "#040804",
+   "dL": 0
+  },
+  {
+   "border": "rgba(255, 255, 255, 0.1) @1",
+   "n": 8,
+   "alpha": 0.1,
+   "flat": "#1d211d",
+   "dL": 0.115
+  },
+  {
+   "border": "rgba(255, 255, 255, 0.05) @1",
+   "n": 5,
+   "alpha": 0.05,
+   "flat": "#111411",
+   "dL": 0.061
+  },
+  {
+   "border": "rgba(255, 255, 255, 0.03) @1",
+   "n": 4,
+   "alpha": 0.03,
+   "flat": "#0c0f0c",
+   "dL": 0.038
+  },
+  {
+   "border": "rgba(255, 255, 255, 0.07) @1",
+   "n": 1,
+   "alpha": 0.07,
+   "flat": "#161916",
+   "dL": 0.083
+  }
+ ],
+ "shadows": [
+  {
+   "s": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+   "n": 24
+  },
+  {
+   "s": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+   "n": 2
+  },
+  {
+   "s": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+   "n": 1
+  }
+ ],
+ "text": [
+  {
+   "color": "rgb(168, 171, 166)",
+   "chars": 509,
+   "flat": "#a8aba6",
+   "alpha": 1,
+   "L": 0.737,
+   "C": 0.008,
+   "H": 132,
+   "wcag": 8.68,
+   "size": "14px",
+   "weight": "400",
+   "ex": "Products"
+  },
+  {
+   "color": "rgb(227, 229, 225)",
+   "chars": 314,
+   "flat": "#e3e5e1",
+   "alpha": 1,
+   "L": 0.919,
+   "C": 0.006,
+   "H": 129,
+   "wcag": 14.91,
+   "size": "14px",
+   "weight": "400",
+   "ex": "Download logo as .svg"
+  },
+  {
+   "color": "rgb(0, 0, 0)",
+   "chars": 86,
+   "flat": "#000000",
+   "alpha": 1,
+   "L": 0,
+   "C": 0,
+   "H": 0,
+   "wcag": 14.32,
+   "size": "14px",
+   "weight": "500",
+   "ex": "Runtime recap: the full keynot"
+  },
+  {
+   "color": "rgb(108, 110, 106)",
+   "chars": 45,
+   "flat": "#6c6e6a",
+   "alpha": 1,
+   "L": 0.535,
+   "C": 0.007,
+   "H": 129,
+   "wcag": 3.91,
+   "size": "13px",
+   "weight": "400",
+   "ex": "Products"
+  },
+  {
+   "color": "rgb(16, 18, 15)",
+   "chars": 18,
+   "flat": "#10120f",
+   "alpha": 1,
+   "L": 0.179,
+   "C": 0.007,
+   "H": 135,
+   "wcag": 14.85,
+   "size": "14px",
+   "weight": "500",
+   "ex": "Sign up"
+  },
+  {
+   "color": "rgb(127, 238, 100)",
+   "chars": 13,
+   "flat": "#7fee64",
+   "alpha": 1,
+   "L": 0.854,
+   "C": 0.204,
+   "H": 140,
+   "wcag": 13.74,
+   "size": "44px",
+   "weight": "400",
+   "ex": "production AI"
+  },
+  {
+   "color": "rgb(173, 117, 247)",
+   "chars": 11,
+   "flat": "#ad75f7",
+   "alpha": 1,
+   "L": 0.677,
+   "C": 0.189,
+   "H": 301,
+   "wcag": 5.84,
+   "size": "13px",
+   "weight": "400",
+   "ex": "Engineering"
+  }
+ ],
+ "h1": {
+  "text": "The platform for production AI",
+  "family": "\"ABC Diatype\"",
+  "size": "44px",
+  "weight": "400",
+  "ls": "normal",
+  "lh": "48px",
+  "color": "rgb(227, 229, 225)",
+  "bgClip": "border-box",
+  "bgImage": null,
+  "textShadow": null,
+  "fillColor": "rgb(227, 229, 225)",
+  "mask": null
+ },
+ "ctas": [
+  {
+   "text": "Get started",
+   "w": 104,
+   "h": 36,
+   "bg": "rgb(227, 229, 225)",
+   "fillL": 0.919,
+   "color": "rgb(16, 18, 15)",
+   "border": null,
+   "radius": "48px",
+   "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+   "bgi": null,
+   "size": "14px",
+   "weight": "500",
+   "before": null,
+   "after": null,
+   "childBg": null
+  },
+  {
+   "text": "Contact us",
+   "w": 100,
+   "h": 36,
+   "bg": "rgba(255, 255, 255, 0.05)",
+   "fillL": null,
+   "color": "rgb(227, 229, 225)",
+   "border": null,
+   "radius": "48px",
+   "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+   "bgi": null,
+   "size": "14px",
+   "weight": "400",
+   "before": null,
+   "after": null,
+   "childBg": null
+  }
+ ],
+ "nav": {
+  "h": 65,
+  "w": 1440,
+  "bg": "rgba(0, 0, 0, 0)",
+  "backdrop": "none",
+  "bb": null,
+  "border": null,
+  "radius": "0px",
+  "shadow": null,
+  "link": "rgb(227, 229, 225)",
+  "linkSize": "16px"
+ },
+ "lightFx": [
+  {
+   "el": "section::before 1440x1029@0,101",
+   "bgi": "radial-gradient(50% 100% at 50% 100%, rgba(20, 26, 19, 0.7), rgba(0, 0, 0, 0))",
+   "filter": null,
+   "mask": null,
+   "blend": "plus-lighter",
+   "opacity": null
+  }
+ ],
+ "lightFxCount": 1,
+ "media": [
+  {
+   "tag": "canvas",
+   "w": 1440,
+   "h": 1080,
+   "top": -90,
+   "blend": "normal",
+   "opacity": "1",
+   "mask": null
+  }
+ ],
+ "noise": {
+  "feTurbulence": 0,
+  "cssNoise": [],
+  "imgs": 0
+ },
+ "frames": [],
+ "accentUse": [
+  {
+   "hex": "#7fee64",
+   "L": 0.854,
+   "C": 0.204,
+   "H": 140,
+   "fillArea": 51840,
+   "textChars": 13,
+   "ex": "DIV Runtime recap: the f"
+  },
+  {
+   "hex": "#ad75f7",
+   "L": 0.677,
+   "C": 0.189,
+   "H": 301,
+   "fillArea": 0,
+   "textChars": 11,
+   "ex": "SPAN Engineering"
+  }
+ ],
+ "radii": [
+  [
+   "7px",
+   18
+  ],
+  [
+   "48px",
+   12
+  ],
+  [
+   "4px",
+   1
+  ]
+ ],
+ "smoothing": "antialiased",
+ "canvasCtx": [
+  "webgl 1440x1080",
+  "2d-or-none 1398x1080",
+  "2d-or-none 1398x1080",
+  "2d-or-none 1398x1080",
+  "2d-or-none 1398x1080",
+  "2d-or-none 1398x1080",
+  "2d-or-none 1398x1080",
+  "2d-or-none 1398x1080",
+  "2d-or-none 1398x1080",
+  "2d-or-none 1398x1080",
+  "2d-or-none 1398x1080",
+  "2d-or-none 1398x1080",
+  "2d-or-none 1398x1080"
+ ]
+}

@@ -1,0 +1,401 @@
+{
+ "url": "https://liveblocks.io",
+ "measured": "2026-10-09",
+ "viewport": "1440x900 dark",
+ "title": "Liveblocks | Realtime and sync for the agentic web",
+ "H": 9378,
+ "scheme": {
+  "html": "dark",
+  "meta": "#000000"
+ },
+ "canvas": {
+  "hex": "#000000",
+  "L": 0,
+  "C": 0,
+  "H": 0
+ },
+ "surfaces": [
+  {
+   "hex": "#000000",
+   "L": 0,
+   "C": 0,
+   "H": 0,
+   "n": 2,
+   "area": 2592000,
+   "ex": "div 1440x900"
+  },
+  {
+   "hex": "#f9fbfd",
+   "L": 0.987,
+   "C": 0.003,
+   "H": 248,
+   "n": 3,
+   "area": 470448,
+   "ex": "div 396x396"
+  },
+  {
+   "hex": "#fefefe",
+   "L": 0.997,
+   "C": 0,
+   "H": 90,
+   "n": 2,
+   "area": 313632,
+   "ex": "div 396x396"
+  },
+  {
+   "hex": "#21222b",
+   "L": 0.255,
+   "C": 0.017,
+   "H": 280,
+   "n": 1,
+   "area": 156816,
+   "ex": "div 396x396"
+  },
+  {
+   "hex": "#e5e5e5",
+   "L": 0.922,
+   "C": 0,
+   "H": 90,
+   "n": 1,
+   "area": 156816,
+   "ex": "div 396x396"
+  },
+  {
+   "hex": "#141716",
+   "L": 0.201,
+   "C": 0.005,
+   "H": 174,
+   "n": 1,
+   "area": 156816,
+   "ex": "div 396x396"
+  },
+  {
+   "hex": "#f3f3f3",
+   "L": 0.964,
+   "C": 0,
+   "H": 90,
+   "n": 1,
+   "area": 156816,
+   "ex": "div 396x396"
+  },
+  {
+   "hex": "#ebecf0",
+   "L": 0.943,
+   "C": 0.005,
+   "H": 275,
+   "n": 1,
+   "area": 156816,
+   "ex": "div 396x396"
+  },
+  {
+   "hex": "#f6ece2",
+   "L": 0.948,
+   "C": 0.017,
+   "H": 68,
+   "n": 1,
+   "area": 156816,
+   "ex": "div 396x396"
+  },
+  {
+   "hex": "#ffffff",
+   "L": 1,
+   "C": 0,
+   "H": 90,
+   "n": 2,
+   "area": 11316,
+   "ex": "a 102x36"
+  }
+ ],
+ "overlays": [],
+ "borders": [
+  {
+   "border": "rgba(253, 252, 252, 0.16) @1",
+   "n": 4,
+   "alpha": 0.16,
+   "flat": "#282828",
+   "dL": 0.278
+  }
+ ],
+ "shadows": [
+  {
+   "s": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(255, 255, 255) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+   "n": 1
+  }
+ ],
+ "text": [
+  {
+   "color": "rgb(183, 180, 180)",
+   "chars": 121,
+   "flat": "#b7b4b4",
+   "alpha": 1,
+   "L": 0.772,
+   "C": 0.003,
+   "H": 17,
+   "wcag": 7.13,
+   "size": "11.008px",
+   "weight": "500",
+   "ex": "New"
+  },
+  {
+   "color": "rgb(255, 255, 255)",
+   "chars": 115,
+   "flat": "#ffffff",
+   "alpha": 1,
+   "L": 1,
+   "C": 0,
+   "H": 90,
+   "wcag": 21,
+   "size": "14px",
+   "weight": "500",
+   "ex": "Product"
+  },
+  {
+   "color": "rgb(0, 0, 0)",
+   "chars": 73,
+   "flat": "#000000",
+   "alpha": 1,
+   "L": 0,
+   "C": 0,
+   "H": 0,
+   "wcag": 21,
+   "size": "14px",
+   "weight": "500",
+   "ex": "Get started"
+  },
+  {
+   "color": "rgba(0, 0, 0, 0)",
+   "chars": 15,
+   "flat": "#000000",
+   "alpha": 0,
+   "L": 0,
+   "C": 0,
+   "H": 0,
+   "wcag": 1,
+   "size": "14px",
+   "weight": "500",
+   "ex": "Liveblocks Sync"
+  }
+ ],
+ "h1": {
+  "text": "Realtime sync for\nPierre\n apps",
+  "family": "suisse",
+  "size": "60px",
+  "weight": "500",
+  "ls": "-1.2px",
+  "lh": "66px",
+  "color": "rgb(255, 255, 255)",
+  "bgClip": "border-box",
+  "bgImage": null,
+  "textShadow": null,
+  "fillColor": "rgb(255, 255, 255)",
+  "mask": null
+ },
+ "ctas": [
+  {
+   "text": "New\n\nIntroducing Liveblock",
+   "w": 280,
+   "h": 38,
+   "bg": "rgba(0, 0, 0, 0)",
+   "fillL": null,
+   "color": "rgb(255, 255, 255)",
+   "border": "1px solid rgba(253, 252, 252, 0.16)",
+   "radius": "3.35544e+07px",
+   "shadow": null,
+   "bgi": null,
+   "size": "16px",
+   "weight": "500",
+   "before": null,
+   "after": null,
+   "childBg": null
+  },
+  {
+   "text": "Get started for free",
+   "w": 174,
+   "h": 44,
+   "bg": "rgb(255, 255, 255)",
+   "fillL": 1,
+   "color": "rgb(0, 0, 0)",
+   "border": null,
+   "radius": "8px",
+   "shadow": null,
+   "bgi": null,
+   "size": "16px",
+   "weight": "500",
+   "before": null,
+   "after": null,
+   "childBg": null
+  }
+ ],
+ "nav": {
+  "h": 80,
+  "w": 1440,
+  "bg": "rgba(0, 0, 0, 0)",
+  "backdrop": "none",
+  "bb": null,
+  "border": null,
+  "radius": "0px",
+  "shadow": null,
+  "link": "rgb(255, 255, 255)",
+  "linkSize": "14px"
+ },
+ "lightFx": [
+  {
+   "el": "section::before 1440x385@0,80",
+   "bgi": "linear-gradient(rgb(0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%)",
+   "filter": null,
+   "mask": null,
+   "blend": null,
+   "opacity": null
+  },
+  {
+   "el": "div 230x20@589,137",
+   "bgi": null,
+   "filter": null,
+   "mask": "linear-gradient(60deg, rgb(0, 0, 0) 25%, rgba(0, 0, 0, 0.4) 50%, rgb(0, 0, 0) 75%)",
+   "blend": null,
+   "opacity": null
+  },
+  {
+   "el": "div::before 1440x900@0,67",
+   "bgi": "linear-gradient(90deg, rgb(0, 0, 0), rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, 0) 95%, rgb(0, 0, 0)), radial-gradient(65% 65%, rgba(0, 0, 0, 0) 52%, rgba(0, 0, 0, 0.35) 68%, rgb(0, 0, 0) 88%)",
+   "filter": null,
+   "mask": null,
+   "blend": null,
+   "opacity": null
+  },
+  {
+   "el": "span 1926x367@-243,523",
+   "bgi": null,
+   "filter": "blur(12px)",
+   "mask": "linear-gradient(rgba(0, 0, 0, 0.65) 0px, rgba(0, 0, 0, 0.65) 44px, rgb(0, 0, 0) 100%)",
+   "blend": null,
+   "opacity": null
+  },
+  {
+   "el": "span 1680x272@-120,553",
+   "bgi": null,
+   "filter": "brightness(1.5)",
+   "mask": "linear-gradient(rgba(0, 0, 0, 0) 47%, rgb(0, 0, 0) 54%, rgb(0, 0, 0) 74%, rgba(0, 0, 0, 0) 81%)",
+   "blend": null,
+   "opacity": "0.3"
+  },
+  {
+   "el": "div::after 1440x900@0,67",
+   "bgi": null,
+   "filter": null,
+   "mask": null,
+   "blend": "soft-light",
+   "opacity": "0.045"
+  },
+  {
+   "el": "div::before 1440x24@0,852",
+   "bgi": "radial-gradient(rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.45) 35%, rgba(0, 0, 0, 0) 75%)",
+   "filter": null,
+   "mask": null,
+   "blend": null,
+   "opacity": null
+  },
+  {
+   "el": "div::before 49x24@695,852",
+   "bgi": null,
+   "filter": "blur(10px)",
+   "mask": null,
+   "blend": null,
+   "opacity": null
+  }
+ ],
+ "lightFxCount": 8,
+ "media": [
+  {
+   "tag": "canvas",
+   "w": 1200,
+   "h": 279,
+   "top": 190,
+   "blend": "normal",
+   "opacity": "1",
+   "mask": null
+  },
+  {
+   "tag": "canvas",
+   "w": 1440,
+   "h": 900,
+   "top": 67,
+   "blend": "normal",
+   "opacity": "1",
+   "mask": null
+  }
+ ],
+ "noise": {
+  "feTurbulence": 0,
+  "cssNoise": [
+   "DIV.hero-3d-module__-TjwLG__scene hero-3d-mo op=1 blend=normal"
+  ],
+  "imgs": 0
+ },
+ "frames": [],
+ "accentUse": [
+  {
+   "hex": "#eca465",
+   "L": 0.776,
+   "C": 0.117,
+   "H": 61,
+   "fillArea": 2318,
+   "textChars": 0,
+   "ex": "SPAN Corpus Christi"
+  },
+  {
+   "hex": "#65eaec",
+   "L": 0.865,
+   "C": 0.116,
+   "H": 197,
+   "fillArea": 2205,
+   "textChars": 0,
+   "ex": "SPAN Salt Lake City"
+  },
+  {
+   "hex": "#ec6572",
+   "L": 0.678,
+   "C": 0.167,
+   "H": 17,
+   "fillArea": 1883,
+   "textChars": 0,
+   "ex": "SPAN AI agent"
+  },
+  {
+   "hex": "#ecd365",
+   "L": 0.866,
+   "C": 0.133,
+   "H": 97,
+   "fillArea": 718,
+   "textChars": 0,
+   "ex": "SPAN Pierre"
+  }
+ ],
+ "radii": [
+  [
+   "6px",
+   9
+  ],
+  [
+   "4px",
+   4
+  ],
+  [
+   "3.35544e+07px",
+   3
+  ],
+  [
+   "8px",
+   2
+  ],
+  [
+   "9999px",
+   1
+  ]
+ ],
+ "smoothing": "antialiased",
+ "canvasCtx": [
+  "2d-or-none 2400x558",
+  "webgl 1440x900"
+ ]
+}

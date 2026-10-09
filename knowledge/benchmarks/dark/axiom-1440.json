@@ -1,0 +1,497 @@
+{
+ "url": "https://axiom.co",
+ "measured": "2026-10-09",
+ "viewport": "1440x900 dark",
+ "title": "Axiom - The modern machine data platform",
+ "H": 11621,
+ "scheme": {
+  "html": "normal",
+  "meta": null
+ },
+ "canvas": {
+  "hex": "#090909",
+  "L": 0.14,
+  "C": 0,
+  "H": 90
+ },
+ "surfaces": [
+  {
+   "hex": "#090909",
+   "L": 0.14,
+   "C": 0,
+   "H": 90,
+   "n": 3,
+   "area": 1873520,
+   "ex": "header 1440x65"
+  },
+  {
+   "hex": "#0c0c0c",
+   "L": 0.154,
+   "C": 0,
+   "H": 90,
+   "n": 2,
+   "area": 1181004,
+   "ex": "div 1334x706"
+  },
+  {
+   "hex": "#111111",
+   "L": 0.178,
+   "C": 0,
+   "H": 90,
+   "n": 4,
+   "area": 171088,
+   "ex": "div 1332x40"
+  },
+  {
+   "hex": "#0f0f0f",
+   "L": 0.168,
+   "C": 0,
+   "H": 90,
+   "n": 8,
+   "area": 128353,
+   "ex": "div 192x84"
+  },
+  {
+   "hex": "#da5c2b",
+   "L": 0.628,
+   "C": 0.17,
+   "H": 40,
+   "n": 2,
+   "area": 6189,
+   "ex": "a 92x28"
+  }
+ ],
+ "overlays": [
+  {
+   "bg": "oklab(0.285017 -0.00000284612 0.00000667572 / 0.5)",
+   "n": 2,
+   "area": 19065,
+   "flat": "#1b1b1b",
+   "L": 0.222
+  },
+  {
+   "bg": "oklab(0.251964 -0.00000243634 0.00000587106 / 0.5)",
+   "n": 1,
+   "area": 4617,
+   "flat": "#1a1a1a",
+   "L": 0.216
+  }
+ ],
+ "borders": [
+  {
+   "border": "rgba(0, 0, 0, 0) @1",
+   "n": 44,
+   "alpha": 0,
+   "flat": "#090909",
+   "dL": 0
+  },
+  {
+   "border": "lab(24.4214 -0.0000149012 0.00000596046) @1",
+   "n": 32,
+   "alpha": 1,
+   "flat": "#3a3a3a",
+   "dL": 0.208
+  },
+  {
+   "border": "lab(13.2279 0 0) @1",
+   "n": 29,
+   "alpha": 1,
+   "flat": "#222222",
+   "dL": 0.112
+  },
+  {
+   "border": "lab(11.84 0 0) @1",
+   "n": 4,
+   "alpha": 1,
+   "flat": "#1f1f1f",
+   "dL": 0.099
+  },
+  {
+   "border": "lab(5.06335 0 0) @1",
+   "n": 4,
+   "alpha": 1,
+   "flat": "#111111",
+   "dL": 0.038
+  },
+  {
+   "border": "oklab(0.239999 -0.00000238419 0.00000561774 / 0.5) @1",
+   "n": 1,
+   "alpha": 0.5,
+   "flat": "#141414",
+   "dL": 0.051
+  }
+ ],
+ "shadows": [
+  {
+   "s": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklab(0.14 -0.00000137836 0.00000326335) 0px 0px 40px 20px",
+   "n": 2
+  },
+  {
+   "s": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklab(0 0 0 / 0.05) 0px 0px 40px 20px",
+   "n": 1
+  }
+ ],
+ "text": [
+  {
+   "color": "lab(100 0 0 / 0.63)",
+   "chars": 188,
+   "flat": "#a4a4a4",
+   "alpha": 0.63,
+   "L": 0.719,
+   "C": 0,
+   "H": 90,
+   "wcag": 7.99,
+   "size": "13px",
+   "weight": "450",
+   "ex": "Platform"
+  },
+  {
+   "color": "lab(94.0978 0 -0.0000119209)",
+   "chars": 102,
+   "flat": "#eeeeee",
+   "alpha": 1,
+   "L": 0.949,
+   "C": 0,
+   "H": 90,
+   "wcag": 16.28,
+   "size": "13px",
+   "weight": "500",
+   "ex": "Query"
+  },
+  {
+   "color": "lab(51.6183 0 0)",
+   "chars": 100,
+   "flat": "#7b7b7b",
+   "alpha": 1,
+   "L": 0.583,
+   "C": 0,
+   "H": 90,
+   "wcag": 4.46,
+   "size": "14px",
+   "weight": "400",
+   "ex": "Cancel"
+  },
+  {
+   "color": "lab(74.8426 31.7313 52.5971)",
+   "chars": 80,
+   "flat": "#ffa057",
+   "alpha": 1,
+   "L": 0.789,
+   "C": 0.143,
+   "H": 56,
+   "wcag": 9.7,
+   "size": "13px",
+   "weight": "400",
+   "ex": "'payment-service'"
+  },
+  {
+   "color": "lab(98.26 0 0)",
+   "chars": 46,
+   "flat": "#fafafa",
+   "alpha": 1,
+   "L": 0.985,
+   "C": 0,
+   "H": 90,
+   "wcag": 19.08,
+   "size": "64px",
+   "weight": "500",
+   "ex": "The modern\nmachine data platfo"
+  },
+  {
+   "color": "lab(73.312 -0.0000596046 0.0000119209)",
+   "chars": 39,
+   "flat": "#b4b4b4",
+   "alpha": 1,
+   "L": 0.77,
+   "C": 0,
+   "H": 90,
+   "wcag": 9.11,
+   "size": "13px",
+   "weight": "500",
+   "ex": "Stream"
+  },
+  {
+   "color": "rgb(255, 255, 255)",
+   "chars": 28,
+   "flat": "#ffffff",
+   "alpha": 1,
+   "L": 1,
+   "C": 0,
+   "H": 90,
+   "wcag": 3.79,
+   "size": "13px",
+   "weight": "450",
+   "ex": "Start free\n→\n→"
+  },
+  {
+   "color": "lab(72.2478 -7.99873 -42.6896)",
+   "chars": 16,
+   "flat": "#70b8ff",
+   "alpha": 1,
+   "L": 0.764,
+   "C": 0.126,
+   "H": 249,
+   "wcag": 9.3,
+   "size": "13px",
+   "weight": "400",
+   "ex": "where"
+  }
+ ],
+ "h1": {
+  "text": "The modern\nmachine data platform.",
+  "family": "Geist",
+  "size": "64px",
+  "weight": "500",
+  "ls": "-0.96px",
+  "lh": "64px",
+  "color": "lab(98.26 0 0)",
+  "bgClip": "border-box",
+  "bgImage": null,
+  "textShadow": null,
+  "fillColor": "lab(98.26 0 0)",
+  "mask": null
+ },
+ "ctas": [
+  {
+   "text": "Start free\n→\n→",
+   "w": 101,
+   "h": 36,
+   "bg": "rgb(218, 92, 43)",
+   "fillL": 0.628,
+   "color": "rgb(255, 255, 255)",
+   "border": "1px solid rgba(0, 0, 0, 0)",
+   "radius": "6.08px",
+   "shadow": null,
+   "bgi": null,
+   "size": "13px",
+   "weight": "500",
+   "before": null,
+   "after": null,
+   "childBg": null
+  },
+  {
+   "text": "Talk to sales",
+   "w": 102,
+   "h": 36,
+   "bg": "rgba(0, 0, 0, 0)",
+   "fillL": null,
+   "color": "lab(98.26 0 0)",
+   "border": "1px solid lab(11.84 0 0)",
+   "radius": "6.08px",
+   "shadow": null,
+   "bgi": "linear-gradient(rgba(0, 0, 0, 0) 0%, lab(5.06335 0 0) 100%)",
+   "size": "13px",
+   "weight": "500",
+   "before": null,
+   "after": null,
+   "childBg": null
+  },
+  {
+   "text": "Query",
+   "w": 61,
+   "h": 39,
+   "bg": "rgba(0, 0, 0, 0)",
+   "fillL": null,
+   "color": "lab(94.0978 0 -0.0000119209)",
+   "border": null,
+   "radius": "0px",
+   "shadow": null,
+   "bgi": null,
+   "size": "13px",
+   "weight": "500",
+   "before": null,
+   "after": null,
+   "childBg": "lab(94.0978 0 -0.0000119209)"
+  }
+ ],
+ "nav": {
+  "h": 65,
+  "w": 1440,
+  "bg": "lab(2.47865 0 0)",
+  "backdrop": "none",
+  "bb": "1px oklab(0.239999 -0.00000238419 0.00000561774 / 0.5)",
+  "border": null,
+  "radius": "0px",
+  "shadow": null,
+  "link": "lab(100 0 0 / 0.63)",
+  "linkSize": "13px"
+ },
+ "lightFx": [
+  {
+   "el": "div 1348x360@92,858",
+   "bgi": "linear-gradient(to top, lab(2.47865 0 0) 0%, rgba(0, 0, 0, 0) 100%)",
+   "filter": null,
+   "mask": null,
+   "blend": null,
+   "opacity": null
+  },
+  {
+   "el": "div 674x720@766,498",
+   "bgi": "linear-gradient(to left, lab(2.47865 0 0) 0%, rgba(0, 0, 0, 0) 100%)",
+   "filter": null,
+   "mask": null,
+   "blend": null,
+   "opacity": null
+  },
+  {
+   "el": "div 520x460@872,822",
+   "bgi": null,
+   "filter": "blur(0px)",
+   "mask": null,
+   "blend": null,
+   "opacity": null
+  },
+  {
+   "el": "div 518x349@873,855",
+   "bgi": null,
+   "filter": null,
+   "mask": "linear-gradient(rgba(0, 0, 0, 0) 0px, rgb(0, 0, 0) 0px, rgb(0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%)",
+   "blend": null,
+   "opacity": null
+  },
+  {
+   "el": "div 184x184@1256,716",
+   "bgi": null,
+   "filter": null,
+   "mask": "radial-gradient(125% 115% at 80% 82%, rgb(0, 0, 0) 36%, rgba(0, 0, 0, 0) 70%)",
+   "blend": null,
+   "opacity": null
+  }
+ ],
+ "lightFxCount": 5,
+ "media": [
+  {
+   "tag": "canvas",
+   "w": 1208,
+   "h": 670,
+   "top": 66,
+   "blend": "normal",
+   "opacity": "1",
+   "mask": null
+  }
+ ],
+ "noise": {
+  "feTurbulence": 0,
+  "cssNoise": [],
+  "imgs": 0
+ },
+ "frames": [
+  {
+   "tag": "div",
+   "box": [
+    92,
+    498,
+    1348,
+    720
+   ],
+   "bg": "lab(2.47865 0 0)",
+   "bgL": 0.14,
+   "border": "1px lab(5.06335 0 0)",
+   "radius": "16px",
+   "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklab(0 0 0 / 0.05) 0px 0px 40px 20px",
+   "bgi": null,
+   "mask": null,
+   "before": null,
+   "after": null
+  },
+  {
+   "tag": "div",
+   "box": [
+    99,
+    505,
+    1334,
+    706
+   ],
+   "bg": "lab(3.32098 0 0)",
+   "bgL": 0.154,
+   "border": "1px lab(13.2279 0 0)",
+   "radius": "10px",
+   "shadow": null,
+   "bgi": null,
+   "mask": null,
+   "before": null,
+   "after": null
+  },
+  {
+   "tag": "div",
+   "box": [
+    92,
+    498,
+    1348,
+    720
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgL": null,
+   "border": null,
+   "radius": "0px",
+   "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklab(0.14 -0.00000137836 0.00000326335) 0px 0px 40px 20px",
+   "bgi": null,
+   "mask": null,
+   "before": null,
+   "after": null
+  }
+ ],
+ "accentUse": [
+  {
+   "hex": "#ffa057",
+   "L": 0.789,
+   "C": 0.143,
+   "H": 56,
+   "fillArea": 0,
+   "textChars": 80,
+   "ex": "SPAN 'payment-service'"
+  },
+  {
+   "hex": "#da5c2b",
+   "L": 0.628,
+   "C": 0.17,
+   "H": 40,
+   "fillArea": 6189,
+   "textChars": 0,
+   "ex": "A Start free\n→\n→"
+  },
+  {
+   "hex": "#70b8ff",
+   "L": 0.764,
+   "C": 0.126,
+   "H": 249,
+   "fillArea": 0,
+   "textChars": 16,
+   "ex": "SPAN where"
+  }
+ ],
+ "radii": [
+  [
+   "4px",
+   18
+  ],
+  [
+   "6.08px",
+   11
+  ],
+  [
+   "2px",
+   4
+  ],
+  [
+   "3.35544e+07px",
+   4
+  ],
+  [
+   "16px",
+   1
+  ],
+  [
+   "10px",
+   1
+  ],
+  [
+   "7px",
+   1
+  ]
+ ],
+ "smoothing": "antialiased",
+ "canvasCtx": [
+  "webgl 1208x670"
+ ]
+}

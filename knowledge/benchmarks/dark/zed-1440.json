@@ -1,0 +1,523 @@
+{
+ "url": "https://zed.dev",
+ "measured": "2026-10-09",
+ "viewport": "1440x900 dark",
+ "title": "Zed — Your last next editor",
+ "H": 8206,
+ "scheme": {
+  "html": "dark",
+  "meta": "var(--nav-bg-color)"
+ },
+ "canvas": {
+  "hex": "#111216",
+  "L": 0.183,
+  "C": 0.008,
+  "H": 274
+ },
+ "surfaces": [
+  {
+   "hex": "#3b414d",
+   "L": 0.375,
+   "C": 0.022,
+   "H": 264,
+   "n": 4,
+   "area": 854757,
+   "ex": "div 1088x738"
+  },
+  {
+   "hex": "#282c33",
+   "L": 0.292,
+   "C": 0.014,
+   "H": 262,
+   "n": 7,
+   "area": 636513,
+   "ex": "div 355x80"
+  },
+  {
+   "hex": "#2f343e",
+   "L": 0.324,
+   "C": 0.019,
+   "H": 264,
+   "n": 7,
+   "area": 543269,
+   "ex": "div 256x738"
+  },
+  {
+   "hex": "#121316",
+   "L": 0.187,
+   "C": 0.006,
+   "H": 271,
+   "n": 3,
+   "area": 254880,
+   "ex": "div 48x8206"
+  },
+  {
+   "hex": "#282c34",
+   "L": 0.293,
+   "C": 0.016,
+   "H": 264,
+   "n": 1,
+   "area": 74240,
+   "ex": "div 464x160"
+  },
+  {
+   "hex": "#454a56",
+   "L": 0.409,
+   "C": 0.021,
+   "H": 268,
+   "n": 1,
+   "area": 11475,
+   "ex": "div 255x45"
+  },
+  {
+   "hex": "#1348dc",
+   "L": 0.479,
+   "C": 0.23,
+   "H": 264,
+   "n": 2,
+   "area": 9293,
+   "ex": "a 107x32"
+  }
+ ],
+ "overlays": [
+  {
+   "bg": "oklab(0.706992 -0.043759 -0.159072 / 0.2)",
+   "n": 1,
+   "area": 10559,
+   "flat": "#1e2f45",
+   "L": 0.3
+  },
+  {
+   "bg": "rgba(90, 111, 137, 0.1)",
+   "n": 1,
+   "area": 10096,
+   "flat": "#2d333c",
+   "L": 0.318
+  },
+  {
+   "bg": "rgba(222, 193, 132, 0.1)",
+   "n": 1,
+   "area": 9232,
+   "flat": "#3a3b3b",
+   "L": 0.351
+  },
+  {
+   "bg": "rgba(116, 173, 232, 0.1)",
+   "n": 1,
+   "area": 8944,
+   "flat": "#303945",
+   "L": 0.341
+  },
+  {
+   "bg": "rgba(208, 114, 119, 0.1)",
+   "n": 1,
+   "area": 7216,
+   "flat": "#39333a",
+   "L": 0.33
+  },
+  {
+   "bg": "oklab(0.747396 -0.00186008 -0.0148959 / 0.05)",
+   "n": 1,
+   "area": 5496,
+   "flat": "#191a1e",
+   "L": 0.217
+  }
+ ],
+ "borders": [
+  {
+   "border": "rgba(0, 0, 0, 0) @1",
+   "n": 226,
+   "alpha": 0,
+   "flat": "#111216",
+   "dL": 0
+  },
+  {
+   "border": "oklch(0.266339 0.0114936 262.882) @1",
+   "n": 112,
+   "alpha": 1,
+   "flat": "#23262b",
+   "dL": 0.085
+  },
+  {
+   "border": "rgb(70, 75, 87) @1",
+   "n": 30,
+   "alpha": 1,
+   "flat": "#464b57",
+   "dL": 0.23
+  },
+  {
+   "border": "oklab(0.642147 -0.00263254 -0.0210819 / 0.1) @1",
+   "n": 12,
+   "alpha": 0.1,
+   "flat": "#1d1e23",
+   "dL": 0.054
+  },
+  {
+   "border": "oklab(0.497938 -0.00266258 -0.0213224 / 0.14) @1",
+   "n": 11,
+   "alpha": 0.14,
+   "flat": "#1c1d22",
+   "dL": 0.049
+  },
+  {
+   "border": "oklab(0.999994 0.0000455678 0.0000200868 / 0.2) @1",
+   "n": 8,
+   "alpha": 0.2,
+   "flat": "#414145",
+   "dL": 0.194
+  },
+  {
+   "border": "oklab(0.642147 -0.00263254 -0.0210819 / 0.2) @1",
+   "n": 4,
+   "alpha": 0.2,
+   "flat": "#282b30",
+   "dL": 0.105
+  },
+  {
+   "border": "oklab(0.706992 -0.043759 -0.159072 / 0.2) @1",
+   "n": 4,
+   "alpha": 0.2,
+   "flat": "#1e2f45",
+   "dL": 0.117
+  }
+ ],
+ "shadows": [
+  {
+   "s": "rgb(5, 55, 148) 0px -2px 0px 0px inset, rgba(0, 0, 0, 0.4) 0px 1px 3px 0px",
+   "n": 2
+  },
+  {
+   "s": "rgba(169, 176, 188, 0.08) 0px -2px 0px 0px inset",
+   "n": 1
+  },
+  {
+   "s": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklab(0 0 0 / 0.2) 0px 20px 25px -5px, oklab(0 0 0 / 0.2) 0px 8px 10px -6px",
+   "n": 1
+  },
+  {
+   "s": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklab(0.810546 -0.0013966 -0.0111843 / 0.4) 0px 0px 0px 1px, oklab(0 0 0 / 0.2) 0px 20px 25px -5px, oklab(0 0 0 / 0.2) 0px 8px 10px -6px",
+   "n": 1
+  },
+  {
+   "s": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.1) 0px 1px 2px -1px",
+   "n": 1
+  },
+  {
+   "s": "rgba(61, 125, 245, 0.04) 5px 5px 0px 0px",
+   "n": 1
+  }
+ ],
+ "text": [
+  {
+   "color": "rgb(220, 224, 229)",
+   "chars": 632,
+   "flat": "#dce0e5",
+   "alpha": 1,
+   "L": 0.905,
+   "C": 0.008,
+   "H": 254,
+   "wcag": 6.69,
+   "size": "11px",
+   "weight": "400",
+   "ex": "Add AccessKit support to GPUI "
+  },
+  {
+   "color": "oklch(0.747396 0.0150116 262.882)",
+   "chars": 380,
+   "flat": "#a8adb7",
+   "alpha": 1,
+   "L": 0.747,
+   "C": 0.015,
+   "H": 264,
+   "wcag": 8.31,
+   "size": "16px",
+   "weight": "400",
+   "ex": "Zed is a minimal code editor c"
+  },
+  {
+   "color": "rgb(169, 175, 188)",
+   "chars": 233,
+   "flat": "#a9afbc",
+   "alpha": 1,
+   "L": 0.753,
+   "C": 0.02,
+   "H": 266,
+   "wcag": 5.68,
+   "size": "11px",
+   "weight": "400",
+   "ex": "Search…"
+  },
+  {
+   "color": "oklch(0.915795 0.00503706 262.882)",
+   "chars": 65,
+   "flat": "#e1e3e7",
+   "alpha": 1,
+   "L": 0.915,
+   "C": 0.006,
+   "H": 265,
+   "wcag": 14.46,
+   "size": "14px",
+   "weight": "400",
+   "ex": "Product"
+  },
+  {
+   "color": "rgb(255, 255, 255)",
+   "chars": 48,
+   "flat": "#ffffff",
+   "alpha": 1,
+   "L": 1,
+   "C": 0,
+   "H": 90,
+   "wcag": 7.03,
+   "size": "14px",
+   "weight": "400",
+   "ex": "Download\nD"
+  },
+  {
+   "color": "rgb(93, 99, 111)",
+   "chars": 43,
+   "flat": "#5d636f",
+   "alpha": 1,
+   "L": 0.499,
+   "C": 0.021,
+   "H": 264,
+   "wcag": 2.32,
+   "size": "12px",
+   "weight": "400",
+   "ex": "// Types for our \"essential\" m"
+  },
+  {
+   "color": "lab(92.0301 -2.24757 -11.6453)",
+   "chars": 42,
+   "flat": "#dbeafe",
+   "alpha": 1,
+   "L": 0.932,
+   "C": 0.032,
+   "H": 256,
+   "wcag": 15.34,
+   "size": "14px",
+   "weight": "500",
+   "ex": "Delta is now in public beta. T"
+  },
+  {
+   "color": "rgb(180, 119, 207)",
+   "chars": 31,
+   "flat": "#b477cf",
+   "alpha": 1,
+   "L": 0.666,
+   "C": 0.141,
+   "H": 315,
+   "wcag": 4.33,
+   "size": "12px",
+   "weight": "400",
+   "ex": "import"
+  }
+ ],
+ "h1": {
+  "text": "Your last next editor",
+  "family": "plexSerif",
+  "size": "48px",
+  "weight": "320",
+  "ls": "-0.96px",
+  "lh": "57.6px",
+  "color": "lab(77.5052 -6.4629 -36.42)",
+  "bgClip": "border-box",
+  "bgImage": null,
+  "textShadow": "rgba(0, 0, 0, 0.004) 1px 1px 1px",
+  "fillColor": "lab(77.5052 -6.4629 -36.42)",
+  "mask": null
+ },
+ "ctas": [
+  {
+   "text": "Download now\nD",
+   "w": 163,
+   "h": 36,
+   "bg": "lab(36.3314 31.1715 -81.0014)",
+   "fillL": 0.479,
+   "color": "rgb(255, 255, 255)",
+   "border": "1px solid rgba(0, 0, 0, 0)",
+   "radius": "4px",
+   "shadow": "rgb(5, 55, 148) 0px -2px 0px 0px inset, rgba(0, 0, 0, 0.4) 0px 1px 3px 0px",
+   "bgi": null,
+   "size": "14px",
+   "weight": "400",
+   "before": null,
+   "after": null,
+   "childBg": null
+  },
+  {
+   "text": "Clone source\nC",
+   "w": 153,
+   "h": 36,
+   "bg": "oklab(0.747396 -0.00186008 -0.0148959 / 0.05)",
+   "fillL": null,
+   "color": "oklch(0.915795 0.00503706 262.882)",
+   "border": "1px solid oklab(0.642147 -0.00263254 -0.0210819 / 0.2)",
+   "radius": "4px",
+   "shadow": "rgba(169, 176, 188, 0.08) 0px -2px 0px 0px inset",
+   "bgi": null,
+   "size": "14px",
+   "weight": "400",
+   "before": null,
+   "after": null,
+   "childBg": null
+  }
+ ],
+ "nav": {
+  "h": 57,
+  "w": 1440,
+  "bg": "rgb(18, 19, 22)",
+  "backdrop": "none",
+  "bb": "1px oklab(0.497938 -0.00266258 -0.0213224 / 0.14)",
+  "border": null,
+  "radius": "0px",
+  "shadow": null,
+  "link": "oklch(0.747396 0.0150116 262.882)",
+  "linkSize": "16px"
+ },
+ "lightFx": [
+  {
+   "el": "a 1120x36@160,57",
+   "bgi": "linear-gradient(to right, rgba(0, 0, 0, 0) 0%, oklab(0.545987 -0.0303796 -0.243091 / 0.08) 50%, rgba(0, 0, 0, 0) 100%)",
+   "filter": null,
+   "mask": null,
+   "blend": null,
+   "opacity": null
+  },
+  {
+   "el": "div 1120x448@160,94",
+   "bgi": "linear-gradient(to top, oklab(0.378993 -0.0114082 -0.145541 / 0.03) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%)",
+   "filter": null,
+   "mask": null,
+   "blend": null,
+   "opacity": null
+  },
+  {
+   "el": "svg 1120x448@160,94",
+   "bgi": null,
+   "filter": null,
+   "mask": "linear-gradient(rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.68))",
+   "blend": null,
+   "opacity": "0.06"
+  }
+ ],
+ "lightFxCount": 3,
+ "media": [
+  {
+   "tag": "canvas",
+   "w": 1120,
+   "h": 770,
+   "top": 640,
+   "blend": "normal",
+   "opacity": "1",
+   "mask": null
+  }
+ ],
+ "noise": {
+  "feTurbulence": 0,
+  "cssNoise": [
+   "DIV.pointer-events-none [z-index:-1] absolut op=0.012 blend=normal",
+   "DIV.pointer-events-none [z-index:-1] absolut op=0.05 blend=normal",
+   "DIV.pointer-events-none [z-index:-1] absolut op=0.012 blend=normal"
+  ],
+  "imgs": 0
+ },
+ "frames": [
+  {
+   "tag": "div",
+   "box": [
+    176,
+    656,
+    1088,
+    738
+   ],
+   "bg": "rgb(59, 65, 77)",
+   "bgL": 0.375,
+   "border": null,
+   "radius": "6px",
+   "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklab(0.810546 -0.0013966 -0.0111843 / 0.4) 0px 0px 0px 1px, oklab(0 0 0 / 0.2) 0px 20px 25px -5px, oklab(0 0 0 / 0.2) 0px 8px 10px -6px",
+   "bgi": null,
+   "mask": null,
+   "before": null,
+   "after": null
+  }
+ ],
+ "accentUse": [
+  {
+   "hex": "#1348dc",
+   "L": 0.479,
+   "C": 0.23,
+   "H": 264,
+   "fillArea": 9294,
+   "textChars": 0,
+   "ex": "A Download\nD"
+  },
+  {
+   "hex": "#b477cf",
+   "L": 0.666,
+   "C": 0.141,
+   "H": 315,
+   "fillArea": 0,
+   "textChars": 31,
+   "ex": "SPAN import"
+  },
+  {
+   "hex": "#a1c181",
+   "L": 0.771,
+   "C": 0.094,
+   "H": 130,
+   "fillArea": 0,
+   "textChars": 29,
+   "ex": "SPAN \"use client\""
+  },
+  {
+   "hex": "#8ec5ff",
+   "L": 0.807,
+   "C": 0.101,
+   "H": 250,
+   "fillArea": 0,
+   "textChars": 26,
+   "ex": "SPAN News:"
+  },
+  {
+   "hex": "#27a657",
+   "L": 0.64,
+   "C": 0.158,
+   "H": 151,
+   "fillArea": 0,
+   "textChars": 3,
+   "ex": "SPAN +23"
+  },
+  {
+   "hex": "#e06c76",
+   "L": 0.671,
+   "C": 0.145,
+   "H": 16,
+   "fillArea": 0,
+   "textChars": 2,
+   "ex": "SPAN -2"
+  }
+ ],
+ "radii": [
+  [
+   "4px",
+   28
+  ],
+  [
+   "2px",
+   6
+  ],
+  [
+   "3.35544e+07px",
+   5
+  ],
+  [
+   "6px",
+   1
+  ]
+ ],
+ "smoothing": "antialiased",
+ "canvasCtx": [
+  "webgl 2240x1540"
+ ]
+}

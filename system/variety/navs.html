@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1440">
+<title>Nav grammars specimen</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&family=Instrument+Serif&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/bold/style.css">
+<style>
+/* Specimen for knowledge/web/nav-grammars.md. Every band is one grammar at 1440 wide, 160px tall.
+   Content rail: 1200px (gutter 120). Founder floor: link targets >= 36px with ~14px side padding, buttons 40px, wordmark >= 20px, no logo container. */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --font: "Geist", ui-sans-serif, system-ui, sans-serif;
+  --mono: "Geist Mono", ui-monospace, monospace;
+  --serif: "Instrument Serif", Georgia, serif;
+  --ease: cubic-bezier(.23, 1, .32, 1);
+}
+body { width: 1440px; background: #fff; font-family: var(--font); -webkit-font-smoothing: antialiased; }
+a { color: inherit; text-decoration: none; }
+
+/* themes: role tokens only */
+.light { --canvas: #f7f7f5; --surface: #ffffff; --ink: #141413; --sub: #5f5e5a; --line: rgba(20,20,19,.10); --accent: #3b5bfd; --accent-ink: #ffffff; --hover: rgba(20,20,19,.05); }
+.dark  { --canvas: #0b0c0e; --surface: #16171a; --ink: #f3f3f2; --sub: #9a9ca1; --line: rgba(255,255,255,.08); --accent: #6d7cff; --accent-ink: #0b0c0e; --hover: rgba(255,255,255,.075); }
+
+.band { position: relative; height: 160px; overflow: hidden; background: var(--canvas); color: var(--ink); }
+.band + .band { border-top: 1px solid rgba(127,127,127,.18); }
+.tag { position: absolute; right: 120px; bottom: 14px; font: 500 11px/1 var(--mono); letter-spacing: .02em; color: var(--sub); opacity: .8; z-index: 5; }
+.tag b { color: var(--ink); font-weight: 500; }
+
+/* shared atoms */
+.brand { display: inline-flex; align-items: center; gap: 8px; font: 600 20px/1 var(--font); letter-spacing: -.025em; color: var(--ink); white-space: nowrap; }
+.brand i { font-size: 22px; color: var(--ink); }
+.row { display: flex; align-items: center; }
+.links { display: flex; align-items: center; gap: 2px; }
+.lnk { height: 36px; padding: 0 14px; display: inline-flex; align-items: center; gap: 5px; font: 500 14px/1 var(--font); letter-spacing: -.01em; color: var(--sub); border-radius: 10px; white-space: nowrap; transition: background .22s var(--ease), color .22s var(--ease); }
+.lnk .ph, .lnk .ph-bold { font-size: 12px; opacity: .7; }
+.lnk.is-hover { color: var(--ink); background: var(--hover); }
+.btn { height: 40px; padding: 0 16px; display: inline-flex; align-items: center; gap: 8px; font: 500 14px/1 var(--font); letter-spacing: -.01em; border-radius: 12px; white-space: nowrap; }
+.btn-ink { background: var(--ink); color: var(--canvas); }
+.btn-ghost { color: var(--ink); }
+.btn-ring { color: var(--ink); box-shadow: inset 0 0 0 1px var(--line); background: var(--surface); }
+.divider { width: 1px; height: 18px; background: var(--line); margin: 0 10px; }
+.art { position: absolute; inset: 0; pointer-events: none; }
+
+/* 01 hairline glass bar */
+.g01 .art { background:
+   radial-gradient(600px 220px at 70% 130%, rgba(109,124,255,.30), transparent 70%),
+   radial-gradient(500px 200px at 20% 140%, rgba(255,140,90,.16), transparent 70%); }
+.g01 .frame { position: absolute; left: 120px; right: 120px; top: 50px; height: 140px; border-radius: 14px; background: #121316; box-shadow: inset 0 0 0 1px rgba(255,255,255,.07); }
+.g01 .frame::before { content: ""; position: absolute; left: 18px; top: 18px; width: 220px; height: 8px; border-radius: 4px; background: rgba(255,255,255,.10); box-shadow: 0 18px 0 rgba(255,255,255,.06), 0 36px 0 rgba(255,255,255,.06); }
+.g01 .bar { position: absolute; inset: 0 0 auto 0; height: 64px; background: rgba(11,12,14,.55); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border-bottom: 1px solid rgba(255,255,255,.08); }
+.g01 .in { width: 1200px; margin: 0 auto; height: 64px; justify-content: space-between; }
+.g01 .lnk { font-size: 13px; border-radius: 999px; padding: 0 14px; }
+.g01 .btn { border-radius: 999px; height: 36px; font-size: 13px; font-weight: 600; }
+.g01 .btn-light { background: #e9e9ea; color: #0b0c0e; box-shadow: 0 1px 0 rgba(255,255,255,.4) inset; }
+
+/* 02 floating capsule */
+.g02 .art { background:
+   radial-gradient(420px 160px at 30% 120%, rgba(255,72,96,.55), transparent 70%),
+   radial-gradient(520px 180px at 72% 125%, rgba(109,124,255,.55), transparent 72%),
+   linear-gradient(180deg, #08090b 0%, #0d0e12 100%); }
+.g02 .cap { position: absolute; left: 120px; top: 16px; width: 1200px; height: 64px; padding: 0 12px 0 20px; border-radius: 16px;
+   background: rgba(255,255,255,.035); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+   box-shadow: inset 0 0 0 1px rgba(255,255,255,.07), inset 0 1px 0 rgba(255,255,255,.12), 0 12px 32px -12px rgba(0,0,0,.6); justify-content: space-between; }
+.g02 .links { position: absolute; left: 50%; transform: translateX(-50%); }
+.g02 .btn-dl { background: linear-gradient(#f2f2f3, #d9d9dc); color: #1a1b1e; border-radius: 10px; box-shadow: 0 0 0 1px rgba(0,0,0,.5), 0 0 16px rgba(255,255,255,.14), inset 0 1px 0 #fff; }
+
+/* 03 centred island */
+.g03 { --canvas: #f3f3f1; }
+.g03 .art { background: radial-gradient(700px 120px at 50% 175%, rgba(59,91,253,.10), transparent 70%); }
+.g03 .island { position: absolute; left: 50%; top: 20px; transform: translateX(-50%); height: 52px; padding: 6px 6px 6px 18px; border-radius: 16px; background: #e8e8e5; box-shadow: inset 0 0 0 1px rgba(20,20,19,.04); gap: 8px; }
+.g03 .lnk { padding: 0 12px; height: 36px; color: #6a6964; }
+.g03 .brand { margin-right: 8px; }
+.g03 .btn { border-radius: 11px; }
+.g03 .divider { background: rgba(20,20,19,.14); margin: 0 4px; }
+
+/* 04 scroll-morph */
+.g04 { --canvas: #faf8f5; }
+.g04 .art { background: radial-gradient(520px 160px at 85% 110%, rgba(255,122,61,.18), transparent 70%), radial-gradient(520px 160px at 15% 110%, rgba(59,91,253,.12), transparent 70%); }
+.g04 .state { position: absolute; font: 500 10px/1 var(--mono); letter-spacing: .06em; text-transform: uppercase; color: var(--sub); left: 24px; }
+.g04 .rest { position: absolute; left: 120px; right: 120px; top: 8px; height: 52px; justify-content: space-between; }
+.g04 .scrolled { position: absolute; left: 50%; transform: translateX(-50%); top: 72px; width: 980px; height: 56px; padding: 0 8px 0 22px; border-radius: 28px; justify-content: space-between;
+   background: rgba(255,255,255,.78); backdrop-filter: blur(22px) saturate(1.8); -webkit-backdrop-filter: blur(22px) saturate(1.8);
+   box-shadow: 0 0 0 1px rgba(20,20,19,.06), 0 8px 24px -10px rgba(20,20,19,.18); }
+.g04 .btn { border-radius: 999px; }
+.g04 .btn-accent { background: #ff6a2b; color: #fff; }
+
+/* 05 mono operator bar */
+.g05 { --canvas: #0e1113; --sub: #a4a8ad; --line: #2a2f33; --accent: #34d399; }
+.g05 .art { background: linear-gradient(90deg, rgba(52,211,153,.06) 1px, transparent 1px) 0 0/40px 40px, linear-gradient(0deg, rgba(52,211,153,.05) 1px, transparent 1px) 0 0/40px 40px; mask-image: linear-gradient(180deg, transparent 30%, #000 100%); -webkit-mask-image: linear-gradient(180deg, transparent 30%, #000 100%); }
+.g05 .bar { position: absolute; inset: 0 0 auto 0; height: 60px; border-bottom: 1px solid var(--line); }
+.g05 .in { width: 1200px; margin: 0 auto; height: 60px; justify-content: space-between; }
+.g05 .brand { color: var(--accent); font-family: var(--mono); font-weight: 500; letter-spacing: -.04em; font-size: 22px; }
+.g05 .brand i { color: var(--accent); }
+.g05 .lnk { font: 400 12px/1 var(--mono); letter-spacing: .06em; text-transform: uppercase; border-radius: 2px; }
+.g05 .lnk.is-hover { background: #1e2327; color: #e9eaeb; }
+.g05 .btn { height: 36px; padding: 0 14px; font: 400 12px/1 var(--mono); letter-spacing: .06em; text-transform: uppercase; border-radius: 2px; }
+.g05 .btn-line { box-shadow: inset 0 0 0 1px var(--line); color: var(--sub); }
+.g05 .btn-tint { background: color-mix(in oklab, var(--accent) 16%, var(--canvas)); color: var(--accent); }
+
+/* 06 utility strip + main bar */
+.g06 .strip { height: 36px; background: #1b1a19; color: rgba(255,255,255,.72); }
+.g06 .strip .in, .g06 .main .in { width: 1200px; margin: 0 auto; justify-content: space-between; height: 100%; }
+.g06 .strip span, .g06 .strip a { font: 500 11px/1 var(--mono); letter-spacing: .06em; text-transform: uppercase; }
+.g06 .strip a { height: 36px; display: inline-flex; align-items: center; padding: 0 12px; }
+.g06 .strip .news { display: inline-flex; gap: 10px; align-items: center; color: #fff; }
+.g06 .strip .news u { text-underline-offset: 3px; color: rgba(255,255,255,.72); }
+.g06 .main { height: 68px; background: var(--surface); border-bottom: 1px solid var(--line); }
+.g06 .lnk { color: var(--ink); }
+.g06 .btn { border-radius: 8px; }
+
+/* 07 hanging sheet over art */
+.g07 { --canvas: #c9cdf8; }
+.g07 .art { background:
+   radial-gradient(500px 140px at 20% 100%, rgba(255,255,255,.65), transparent 70%),
+   repeating-linear-gradient(100deg, rgba(76,61,255,.0) 0 18px, rgba(76,61,255,.16) 18px 20px),
+   linear-gradient(180deg, #b9bdf6, #8b84f5); }
+.g07 .sheet { position: absolute; left: 120px; top: 0; width: 1200px; border-radius: 0 0 16px 16px; overflow: hidden; background: var(--surface); box-shadow: 0 1px 0 rgba(20,20,19,.06), 0 16px 40px -18px rgba(20,20,40,.45); }
+.g07 .ann { height: 40px; background: #3a0d2e; color: #f6d9ee; justify-content: space-between; padding: 0 24px; font: 500 13px/1 var(--font); }
+.g07 .ann a { font: 500 11px/1 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: #f2c46d; display: inline-flex; gap: 6px; align-items: center; }
+.g07 .nav { height: 64px; padding: 0 12px 0 24px; justify-content: space-between; }
+.g07 .lnk { color: var(--ink); }
+.g07 .btn-soft { background: #f1efe9; color: var(--ink); }
+
+/* 08 proof chips */
+.g08 { --canvas: #1a1715; --sub: #cfc9c2; --ink: #f6f2ec; }
+.g08 .art { background: radial-gradient(600px 160px at 90% 160%, rgba(243,176,28,.30), transparent 70%); }
+.g08 .bar { position: absolute; inset: 0 0 auto 0; height: 76px; }
+.g08 .in { width: 1200px; margin: 0 auto; height: 76px; justify-content: space-between; }
+.g08 .brand { font-weight: 600; font-size: 22px; letter-spacing: -.05em; }
+.g08 .lnk { color: var(--ink); font-size: 15px; }
+.g08 .chip { height: 44px; padding: 0 16px 0 12px; border-radius: 999px; background: rgba(255,255,255,.06); box-shadow: inset 0 0 0 1px rgba(255,255,255,.05); display: inline-flex; align-items: center; gap: 10px; color: var(--ink); }
+.g08 .chip i { font-size: 22px; }
+.g08 .chip .two { display: grid; gap: 3px; }
+.g08 .chip .two b { font: 500 13px/1 var(--font); }
+.g08 .chip .two small { font: 400 11px/1 var(--font); color: #a49d95; font-variant-numeric: tabular-nums; }
+.g08 .dot { width: 7px; height: 7px; border-radius: 50%; background: #4ade80; box-shadow: 0 0 0 3px rgba(74,222,128,.18); margin-left: 4px; }
+.g08 .btn { border-radius: 999px; }
+.g08 .btn-light { background: #f6f2ec; color: #1a1715; }
+.g08 .actions { gap: 8px; }
+
+/* 09 command search */
+.g09 .bar { position: absolute; inset: 0 0 auto 0; height: 68px; background: var(--surface); border-bottom: 1px solid var(--line); }
+.g09 .in { width: 1200px; margin: 0 auto; height: 68px; gap: 20px; }
+.g09 .search { border: 0; cursor: text; flex: 0 0 400px; height: 40px; border-radius: 10px; box-shadow: inset 0 0 0 1px var(--line); background: var(--canvas); display: flex; align-items: center; gap: 10px; padding: 0 8px 0 14px; color: var(--sub); font: 400 14px/1 var(--font); }
+.g09 .search i { font-size: 16px; }
+.g09 .kbd { margin-left: auto; display: inline-flex; gap: 3px; }
+.g09 kbd, .g10 kbd { font: 500 11px/1 var(--mono); min-width: 20px; height: 20px; padding: 0 5px; display: inline-grid; place-items: center; border-radius: 5px; background: var(--surface); box-shadow: inset 0 0 0 1px var(--line), 0 1px 0 var(--line); color: var(--sub); }
+.g09 .icon { width: 40px; height: 40px; display: grid; place-items: center; border-radius: 10px; color: var(--sub); font-size: 18px; }
+.g09 .end { margin-left: auto; gap: 4px; }
+.g09 .btn { border-radius: 10px; }
+
+/* 10 section index with keycaps */
+.g10 { --canvas: #2a1eff; --ink: #ffffff; --sub: rgba(255,255,255,.82); --line: rgba(255,255,255,.4); }
+.g10 .art { background: linear-gradient(180deg, transparent 64px, #fbf9fe 64px); }
+.g10 .art::after { content: ""; position: absolute; left: 0; right: 0; top: 64px; bottom: 0; background: radial-gradient(circle, rgba(26,21,34,.12) 1px, transparent 1.5px) 0 0/12px 12px; mask-image: linear-gradient(90deg, #000 0 30%, transparent 70%); -webkit-mask-image: linear-gradient(90deg, #000 0 30%, transparent 70%); }
+.g10 .bar { position: absolute; inset: 0 0 auto 0; height: 64px; }
+.g10 .in { width: 1200px; margin: 0 auto; height: 64px; justify-content: space-between; }
+.g10 .lnk { font: 500 13px/1 var(--mono); color: var(--ink); gap: 8px; padding: 0 12px 0 0; margin-right: 14px; }
+.g10 .lnk.is-active { box-shadow: inset 0 -2px 0 #fff; border-radius: 0; }
+.g10 kbd { background: rgba(255,255,255,.12); box-shadow: inset 0 0 0 1px rgba(255,255,255,.4), 0 1px 0 rgba(255,255,255,.4); color: #fff; font-size: 10px; }
+.g10 .btn { height: 36px; background: #fff; color: #2a1eff; border-radius: 4px; font: 500 12px/1 var(--mono); letter-spacing: .06em; text-transform: uppercase; }
+.g10 .tag { color: #4b4560; }
+.g10 .tag b { color: #1a1522; }
+
+/* 11 micro strip with counts and status */
+.g11 { --canvas: #050505; --sub: #bdbdbd; }
+.g11 .art { background:
+   linear-gradient(115deg, transparent 47%, rgba(255,255,255,.18) 47.2%, transparent 47.5%) 0 0/260px 160px,
+   linear-gradient(65deg, transparent 47%, rgba(255,255,255,.12) 47.2%, transparent 47.5%) 0 0/200px 160px;
+   mask-image: linear-gradient(180deg, transparent 25%, #000); -webkit-mask-image: linear-gradient(180deg, transparent 25%, #000); }
+.g11 .bar { position: absolute; inset: 0 0 auto 0; height: 44px; }
+.g11 .in { padding: 0 24px; height: 44px; justify-content: space-between; }
+.g11 .brand { font-weight: 700; letter-spacing: -.04em; }
+.g11 .links { position: absolute; left: 50%; transform: translateX(-50%); gap: 0; }
+.g11 .lnk { height: 36px; padding: 0 14px; font: 600 12px/1 var(--font); letter-spacing: 0; color: #e6e6e6; border-radius: 0; }
+.g11 .lnk sup { font: 600 9px/1 var(--font); color: #757575; margin-left: 2px; align-self: flex-start; margin-top: 9px; }
+.g11 .lnk.is-hover { color: #ff4d00; background: none; }
+.g11 .status { display: inline-flex; align-items: center; gap: 6px; font: 600 12px/1 var(--font); color: #c4c4c4; height: 36px; padding: 0 14px; }
+.g11 .status i { width: 6px; height: 6px; border-radius: 50%; background: #ff4d00; box-shadow: 0 0 0 3px rgba(255,77,0,.2); }
+.g11 .status kbd { font: 500 10px/1 var(--mono); color: #757575; }
+
+/* 12 centred wordmark split */
+.g12 { --canvas: #f5f3ef; --sub: #75716b; }
+.g12 .art { background: radial-gradient(240px 70px at 80% 150%, rgba(20,20,19,.10), transparent 70%), radial-gradient(240px 70px at 26% 160%, rgba(20,20,19,.08), transparent 70%); }
+.g12 .bar { position: absolute; inset: 0 0 auto 0; height: 92px; }
+.g12 .in { width: 1200px; margin: 0 auto; height: 92px; justify-content: space-between; position: relative; }
+.g12 .lnk { font-size: 15px; }
+.g12 .center { position: absolute; left: 50%; transform: translateX(-50%); }
+.g12 .center .brand { font-size: 22px; letter-spacing: -.03em; }
+.g12 .btn { height: 44px; padding: 0 20px; border-radius: 999px; font-size: 15px; }
+.g12 .lead { gap: 4px; }
+.g12 .lead > i { font-size: 24px; margin-right: 10px; }
+
+/* 13 brand-colour band */
+.g13 { --canvas: #fffcec; --ink: #ffffff; --sub: rgba(255,255,255,.88); }
+.g13 .art { background: radial-gradient(500px 80px at 50% 160%, rgba(255,183,214,.6), transparent 70%); }
+.g13 .bandbar { position: absolute; inset: 0 0 auto 0; height: 100px; background: #3139fb;
+   -webkit-mask: radial-gradient(8px 7px at 50% 100%, transparent 98%, #000) 0 0/16px 100% repeat-x;
+   mask: radial-gradient(8px 7px at 50% 100%, transparent 98%, #000) 0 0/16px 100% repeat-x; }
+.g13 .in { position: absolute; left: 120px; right: 120px; top: 0; height: 92px; justify-content: space-between; }
+.g13 .brand, .g13 .brand i { color: #fff; }
+.g13 .lnk { color: #fff; border-radius: 8px; }
+.g13 .lnk.is-hover { background: rgba(23,3,148,.45); }
+.g13 .btn-white { background: #fff; color: #2027c9; box-shadow: 0 1px 0 rgba(0,0,0,.08), 0 6px 14px -6px rgba(10,10,80,.5); }
+.g13 .tag { color: #6b6658; }
+.g13 .tag b { color: #2a2720; }
+
+/* 14 text-only editorial */
+.g14 { --canvas: #f6f2e9; --ink: #1d1b17; --sub: #1d1b17; }
+.g14 .bar { position: absolute; inset: 0 0 auto 0; height: 88px; }
+.g14 .in { width: 1200px; margin: 0 auto; height: 88px; justify-content: space-between; position: relative; }
+.g14 .brand { font-weight: 500; letter-spacing: -.02em; }
+.g14 .center { position: absolute; left: 50%; transform: translateX(-50%); gap: 10px; }
+.g14 .lnk { font: 400 20px/1 var(--serif); letter-spacing: 0; color: var(--ink); gap: 8px; padding: 0 12px; }
+.g14 .lnk::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--c); }
+.g14 .lnk.is-hover { background: none; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 5px; }
+.g14 .txt { font: 400 20px/1 var(--serif); height: 36px; display: inline-flex; align-items: center; padding: 0 12px; gap: 6px; }
+.g14 .txt.cta { color: #e2552b; }
+.g14 .hl { position: absolute; left: 120px; top: 100px; font: 400 48px/1 var(--serif); letter-spacing: -.02em; color: #1d1b17; opacity: .9; }
+</style>
+</head>
+<body>
+
+<!-- 01 Hairline glass bar -->
+<section class="band dark g01" aria-label="01 Hairline glass bar">
+  <div class="art"></div><div class="frame"></div>
+  <header class="bar"><div class="row in">
+    <a class="brand" href="#"><i class="ph-fill ph-circle-half"></i>Acme</a>
+    <nav class="row" aria-label="Main">
+      <div class="links">
+        <a class="lnk" href="#">Product</a><a class="lnk is-hover" href="#">Resources</a><a class="lnk" href="#">Customers</a><a class="lnk" href="#">Pricing</a><a class="lnk" href="#">Changelog</a>
+      </div>
+      <span class="divider"></span>
+      <a class="lnk" href="#">Log in</a>
+      <a class="btn btn-light" href="#" style="margin-left:6px">Sign up</a>
+    </nav>
+  </div></header>
+  <p class="tag"><b>01 Hairline glass bar</b> · full bleed 64 · 1px 8% hairline · blur 20 · linear, supabase, modal</p>
+</section>
+
+<!-- 02 Floating capsule -->
+<section class="band dark g02" aria-label="02 Floating capsule">
+  <div class="art"></div>
+  <header class="row cap">
+    <a class="brand" href="#"><i class="ph-fill ph-sparkle"></i>Acme</a>
+    <nav class="links" aria-label="Main">
+      <a class="lnk" href="#">Store</a><a class="lnk is-hover" href="#">Pro</a><a class="lnk" href="#">AI</a><a class="lnk" href="#">Teams</a><a class="lnk" href="#">Enterprise</a><a class="lnk" href="#">Blog</a><a class="lnk" href="#">Pricing</a>
+    </nav>
+    <div class="row" style="gap:6px"><a class="lnk" href="#">Log in</a><a class="btn btn-dl" href="#"><i class="ph-fill ph-apple-logo" style="font-size:16px"></i>Download</a></div>
+  </header>
+  <p class="tag"><b>02 Floating capsule</b> · rail width · top 16 · r16 · 7% ring + 12% top highlight · raycast, spline, screen.studio</p>
+</section>
+
+<!-- 03 Centred island -->
+<section class="band light g03" aria-label="03 Centred island">
+  <div class="art"></div>
+  <header class="row island">
+    <a class="brand" href="#"><i class="ph-bold ph-arrows-in-line-horizontal"></i>Acme</a>
+    <a class="lnk" href="#">Product</a><a class="lnk is-hover" href="#">Customers</a><a class="lnk" href="#">Pricing</a><a class="lnk" href="#">Docs</a>
+    <span class="divider"></span>
+    <a class="lnk" href="#">Log in</a>
+    <a class="btn btn-ink" href="#">Request demo</a>
+  </header>
+  <p class="tag"><b>03 Centred island</b> · hugs content · tinted fill, no border · lightfield, diabrowser</p>
+</section>
+
+<!-- 04 Scroll-morph -->
+<section class="band light g04" aria-label="04 Scroll morph bar to capsule">
+  <div class="art"></div>
+  <span class="state" style="top:30px">at rest</span>
+  <header class="row rest">
+    <a class="brand" href="#"><i class="ph-fill ph-brain"></i>Acme</a>
+    <nav class="links" aria-label="Main"><a class="lnk" href="#">Features</a><a class="lnk" href="#">Teams</a><a class="lnk" href="#">Pricing</a></nav>
+    <div class="row" style="gap:6px"><a class="lnk" href="#">Log in</a><a class="btn btn-accent" href="#">Sign up</a></div>
+  </header>
+  <span class="state" style="top:95px">scrolled</span>
+  <header class="row scrolled">
+    <a class="brand" href="#"><i class="ph-fill ph-brain"></i>Acme</a>
+    <nav class="links" aria-label="Main (scrolled)"><a class="lnk" href="#">Features</a><a class="lnk is-hover" href="#">Teams</a><a class="lnk" href="#">Pricing</a></nav>
+    <div class="row" style="gap:6px"><a class="lnk" href="#">Log in</a><a class="btn btn-accent" href="#">Sign up</a></div>
+  </header>
+  <p class="tag"><b>04 Scroll morph</b> · transparent bar → 980 capsule r28, 78% + blur 22 saturate 1.8 · mymind, cal, granola</p>
+</section>
+
+<!-- 05 Mono operator bar -->
+<section class="band dark g05" aria-label="05 Mono operator bar">
+  <div class="art"></div>
+  <header class="bar"><div class="row in">
+    <a class="brand" href="#"><i class="ph-bold ph-terminal-window"></i>acme</a>
+    <nav class="links" aria-label="Main">
+      <a class="lnk" href="#">Product <i class="ph-bold ph-caret-down"></i></a><a class="lnk is-hover" href="#">Solutions <i class="ph-bold ph-caret-down"></i></a><a class="lnk" href="#">Resources <i class="ph-bold ph-caret-down"></i></a><a class="lnk" href="#">Docs</a><a class="lnk" href="#">Blog</a>
+    </nav>
+    <div class="row" style="gap:8px"><a class="btn btn-line" href="#">Try now</a><a class="btn btn-tint" href="#">Contact sales</a></div>
+  </div></header>
+  <p class="tag"><b>05 Mono operator bar</b> · 12px mono caps +0.06em · r2 · tinted accent CTA · oxide, sanity, warp</p>
+</section>
+
+<!-- 06 Utility strip + main bar -->
+<section class="band light g06" aria-label="06 Utility strip and main bar">
+  <div class="strip"><div class="row in">
+    <span class="news"><i class="ph-fill ph-sparkle" style="color:#c9b6ff"></i>See everything from Acme Live <u>Read the recap →</u></span>
+    <span class="row"><a href="#">Blog</a><a href="#">Docs</a><a href="#">Download</a><a href="#">Contact sales</a></span>
+  </div></div>
+  <header class="main"><div class="row in">
+    <div class="row" style="gap:28px">
+      <a class="brand" href="#"><i class="ph-fill ph-dots-nine"></i>Acme</a>
+      <nav class="links" aria-label="Main"><a class="lnk" href="#">Platform <i class="ph-bold ph-plus"></i></a><a class="lnk is-hover" href="#">Solutions <i class="ph-bold ph-plus"></i></a><a class="lnk" href="#">Customers <i class="ph-bold ph-plus"></i></a><a class="lnk" href="#">Pricing</a></nav>
+    </div>
+    <div class="row" style="gap:6px"><a class="lnk" href="#">Log in</a><a class="btn btn-ink" href="#">Get started, it’s free</a></div>
+  </div></header>
+  <p class="tag"><b>06 Utility strip + main bar</b> · 36 mono strip carries secondary links · tailscale, attio</p>
+</section>
+
+<!-- 07 Hanging sheet -->
+<section class="band light g07" aria-label="07 Hanging sheet">
+  <div class="art"></div>
+  <div class="sheet">
+    <div class="row ann"><span><b style="font-weight:600;color:#fff">Acme Live</b>&nbsp;&nbsp;The operators’ summit. November 12, Berlin</span><a href="#">Watch the keynote <i class="ph-bold ph-arrow-right"></i></a></div>
+    <header class="row nav">
+      <div class="row" style="gap:24px">
+        <a class="brand" href="#"><i class="ph-fill ph-cube"></i>Acme</a>
+        <nav class="links" aria-label="Main"><a class="lnk" href="#">Product</a><a class="lnk is-hover" href="#">Solutions</a><a class="lnk" href="#">Resources</a><a class="lnk" href="#">Pricing</a></nav>
+      </div>
+      <div class="row" style="gap:8px"><a class="lnk" href="#">Log in</a><a class="btn btn-soft" href="#">Get a demo</a><a class="btn btn-ink" href="#">Start free trial</a></div>
+    </header>
+  </div>
+  <p class="tag" style="color:#2b2575"><b>07 Hanging sheet</b> · announcement + nav share one opaque sheet, bottom r16 · clay, pylon</p>
+</section>
+
+<!-- 08 Proof chips -->
+<section class="band dark g08" aria-label="08 Proof chip nav">
+  <div class="art"></div>
+  <header class="bar"><div class="row in">
+    <div class="row" style="gap:24px">
+      <a class="brand" href="#"><i class="ph-fill ph-lightning"></i>acme</a>
+      <nav class="links" aria-label="Main"><a class="lnk" href="#">Product <i class="ph-bold ph-caret-down"></i></a><a class="lnk" href="#">Developers <i class="ph-bold ph-caret-down"></i></a><a class="lnk" href="#">Docs</a><a class="lnk" href="#">Pricing</a></nav>
+    </div>
+    <div class="row actions">
+      <a class="chip" href="#"><span class="dot"></span><span class="two"><b>Operational</b><small>status page</small></span></a>
+      <a class="chip" href="#"><i class="ph-fill ph-github-logo"></i><span class="two"><b>GitHub</b><small>stars: live count</small></span></a>
+      <a class="lnk" href="#">Log in</a>
+      <a class="btn btn-light" href="#">Start building</a>
+    </div>
+  </div></header>
+  <p class="tag"><b>08 Proof chips</b> · 44 two-line chips, live values only (sample labels here) · convex, neon, supabase, trigger</p>
+</section>
+
+<!-- 09 Command search -->
+<section class="band light g09" aria-label="09 Command search nav">
+  <header class="bar"><div class="row in">
+    <a class="brand" href="#"><i class="ph-fill ph-hexagon"></i>Acme</a>
+    <nav class="links" aria-label="Main"><a class="lnk" href="#">Docs</a><a class="lnk is-hover" href="#">Guides</a><a class="lnk" href="#">Reference</a><a class="lnk" href="#">Blog</a></nav>
+    <button class="search" type="button"><i class="ph ph-magnifying-glass"></i>Search docs, APIs, guides<span class="kbd"><kbd>⌘</kbd><kbd>K</kbd></span></button>
+    <div class="row end"><a class="icon" href="#" aria-label="GitHub"><i class="ph ph-github-logo"></i></a><a class="icon" href="#" aria-label="Discord"><i class="ph ph-discord-logo"></i></a><a class="btn btn-ink" href="#" style="margin-left:6px">Install</a></div>
+  </div></header>
+  <p class="tag"><b>09 Command search</b> · 400 × 40 field with keycaps sits in the bar · bun, replicate, clay ⌘K</p>
+</section>
+
+<!-- 10 Section index -->
+<section class="band g10" aria-label="10 Section index with keycaps">
+  <div class="art"></div>
+  <header class="bar"><div class="row in">
+    <nav class="links" aria-label="On this page">
+      <a class="lnk is-active" href="#"><kbd>C</kbd>Configuration</a><a class="lnk" href="#"><kbd>S</kbd>SDLC</a><a class="lnk" href="#"><kbd>Q</kbd>Quality loop</a><a class="lnk" href="#"><kbd>E</kbd>Enterprise</a><a class="lnk" href="#"><kbd>L</kbd>Layers</a><a class="lnk" href="#"><kbd>F</kbd>FAQ</a>
+    </nav>
+    <a class="btn" href="#">Get started</a>
+  </div></header>
+  <p class="tag"><b>10 Section index</b> · swaps in for the main nav after the hero · solid accent 64 · warp</p>
+</section>
+
+<!-- 11 Micro strip -->
+<section class="band dark g11" aria-label="11 Micro strip with counts">
+  <div class="art"></div>
+  <header class="bar"><div class="row in">
+    <a class="brand" href="#">acme.</a>
+    <nav class="links" aria-label="Main"><a class="lnk" href="#">Home</a><a class="lnk" href="#">Services</a><a class="lnk is-hover" href="#">Showcase<sup>(26)</sup></a><a class="lnk" href="#">People</a><a class="lnk" href="#">Blog<sup>(29)</sup></a><a class="lnk" href="#">Lab</a></nav>
+    <div class="row"><span class="status"><i></i>Online <kbd>[/]</kbd></span><a class="lnk" href="#">Contact us</a></div>
+  </div></header>
+  <p class="tag"><b>11 Micro strip</b> · 44 bar, 12px/600 links, 9px counts, status dot, colour-only hover · basement</p>
+</section>
+
+<!-- 12 Centred wordmark -->
+<section class="band light g12" aria-label="12 Centred wordmark split">
+  <div class="art"></div>
+  <header class="bar"><div class="row in">
+    <nav class="row lead" aria-label="Main"><i class="ph-fill ph-flower-lotus"></i><a class="lnk" href="#">Explore</a><a class="lnk is-hover" href="#">Sequence</a><a class="lnk" href="#">Shop</a></nav>
+    <a class="center brand" href="#">ACME</a>
+    <div class="row" style="gap:6px"><a class="lnk" href="#">Log in</a><a class="btn btn-ink" href="#">Sign up</a></div>
+  </div></header>
+  <p class="tag"><b>12 Centred wordmark</b> · links left, wordmark dead centre, 44 pills right · cosmos</p>
+</section>
+
+<!-- 13 Brand-colour band -->
+<section class="band g13" aria-label="13 Brand colour band">
+  <div class="art"></div>
+  <div class="bandbar"></div>
+  <header class="row in">
+    <div class="row" style="gap:20px">
+      <a class="brand" href="#"><i class="ph-fill ph-shooting-star"></i>Acme</a>
+      <nav class="links" aria-label="Main"><a class="lnk is-hover" href="#">Max <i class="ph-bold ph-sparkle"></i></a><a class="lnk" href="#">Mobile</a><a class="lnk" href="#">Developers</a><a class="lnk" href="#">Students</a><a class="lnk" href="#">Blog</a></nav>
+    </div>
+    <a class="btn btn-white" href="#"><i class="ph-fill ph-download-simple"></i>Download</a>
+  </header>
+  <p class="tag"><b>13 Brand-colour band</b> · 92 solid accent band, scalloped edge, hover = ink tint r8 · arc</p>
+</section>
+
+<!-- 14 Text-only editorial -->
+<section class="band light g14" aria-label="14 Text-only editorial">
+  <header class="bar"><div class="row in">
+    <a class="brand" href="#"><i class="ph ph-smiley-meh"></i>acme</a>
+    <nav class="row center" aria-label="Main"><a class="lnk" href="#" style="--c:#f2552c">What</a><a class="lnk is-hover" href="#" style="--c:#f2c12c">Why</a><a class="lnk" href="#" style="--c:#e86fd3">How</a></nav>
+    <div class="row"><a class="txt" href="#">log in</a><a class="txt cta" href="#">sign up <i class="ph ph-arrow-right" style="font-size:16px"></i></a></div>
+  </div></header>
+  <p class="hl">Keep what matters.</p>
+  <p class="tag"><b>14 Text-only editorial</b> · serif 20, dot bullets, no buttons · mymind, paper</p>
+</section>
+
+</body>
+</html>

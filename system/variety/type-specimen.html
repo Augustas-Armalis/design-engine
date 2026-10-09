@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Type Voices Specimen</title>
+<!-- Generated from system/variety/type-voices.json (16 voices). Each panel renders the voice at its exact 1440 hero spec. Odd voices on light, even on dark. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400..600&amp;family=Onest:wght@400..600&amp;family=DM+Mono:wght@400;500&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300..500&amp;family=Source+Code+Pro:wght@400;500&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@400..500&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@400..600&amp;family=Funnel+Sans:wght@400..600&amp;family=Fragment+Mono&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Special+Gothic:wdth,wght@75..100,400..700&amp;family=Public+Sans:wght@400..600&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Commissioner:wght@300..500&amp;family=Red+Hat+Mono:wght@400;500&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..500;1,6..72,400..500&amp;family=Inter:wght@400..600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400..500&amp;family=IBM+Plex+Sans:wght@400..600&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,400..600,0..100,0..1&amp;family=Figtree:wght@400..600&amp;family=DM+Mono:wght@400;500&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@400;500;600&amp;family=Source+Sans+3:wght@400..600&amp;family=Red+Hat+Mono:wght@400;500&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400..500&amp;family=Hanken+Grotesk:wght@400..600&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@400..500&amp;family=Geist:wght@400..600&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mona+Sans:wdth,wght@75..125,400..700&amp;family=Martian+Mono:wdth,wght@75..112.5,400..500&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400..700&amp;family=DM+Mono:wght@400;500&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&amp;family=Instrument+Sans:wght@400..600&amp;family=Geist+Mono:wght@400;500&amp;display=swap">
+<style>
+  :root { --light-bg:#f6f6f3; --light-ink:#111110; --light-mute:#5f5e5a; --light-line:rgba(17,17,16,.10);
+          --dark-bg:#0c0c0d; --dark-ink:#f3f2ee; --dark-mute:#9a9994; --dark-line:rgba(243,242,238,.12); }
+  * { box-sizing:border-box; }
+  html { -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; text-rendering:optimizeLegibility; }
+  body { margin:0; background:var(--light-bg); font-synthesis:none; }
+  .voice { width:100%; max-width:1440px; margin:0 auto; padding:56px 120px 52px; min-height:440px; display:flex; flex-direction:column; }
+  .light { background:var(--light-bg); color:var(--light-ink); --mute:var(--light-mute); --line:var(--light-line); }
+  .dark { background:var(--dark-bg); color:var(--dark-ink); --mute:var(--dark-mute); --line:var(--dark-line); }
+  .meta, .foot { display:flex; gap:28px; font-size:12px; line-height:1.4; letter-spacing:0; color:var(--mute); }
+  .meta { justify-content:space-between; padding-bottom:16px; border-bottom:1px solid var(--line); margin-bottom:56px; }
+  h1 { margin:0; font-kerning:normal; }
+  h1 span { display:block; white-space:nowrap; }
+  .sub { margin:24px 0 0; max-width:680px; text-wrap:pretty; color:var(--mute); }
+  .foot { margin-top:auto; padding-top:36px; flex-wrap:wrap; }
+  .foot .label { color:inherit; }
+  .dark h1 { -webkit-font-smoothing:antialiased; }
+  @media (max-width: 760px) { .voice { padding:40px 16px; min-height:0; } h1 { font-size:clamp(32px, 10vw, 48px) !important; } h1 span { white-space:normal; } .meta { flex-direction:column; gap:4px; margin-bottom:32px; } }
+</style>
+</head>
+<body>
+<section class="voice light" id="geometric-studio" data-slug="geometric-studio">
+  <header class="meta" style="font-family:'DM Mono', ui-monospace, monospace"><span>01 · geometric-studio</span><span>geometric sans</span></header>
+  <h1 style="font-family:'Outfit';font-weight:500;font-size:76px;letter-spacing:-0.035em;line-height:1;font-variation-settings:normal"><span>Prototype Every Screen</span><span>Your Team Can Imagine</span></h1>
+  <p class="sub" style="font-family:'Onest';font-weight:400;font-size:18px;letter-spacing:-0.005em;line-height:1.55;font-variation-settings:normal">Design, test and publish product flows from one canvas, with real components.</p>
+  <footer class="foot" style="font-family:'DM Mono', ui-monospace, monospace"><span class="label">Sample · design tool</span><span>Outfit 500 · 76/1 · -0.035em</span><span>Onest 400 · 18/1.55</span><span>DM Mono</span></footer>
+</section>
+<section class="voice dark" id="light-grotesk" data-slug="light-grotesk">
+  <header class="meta" style="font-family:'Source Code Pro', ui-monospace, monospace"><span>02 · light-grotesk</span><span>neo-grotesque, light weight</span></header>
+  <h1 style="font-family:'Hanken Grotesk';font-weight:300;font-size:76px;letter-spacing:-0.03em;line-height:1.04;font-variation-settings:normal"><span>Settle Every Payout</span><span>In The Currency It Earned</span></h1>
+  <p class="sub" style="font-family:'Hanken Grotesk';font-weight:400;font-size:19px;letter-spacing:-0.005em;line-height:1.55;font-variation-settings:normal">Multi-currency treasury, FX and payouts on one ledger you can audit line by line.</p>
+  <footer class="foot" style="font-family:'Source Code Pro', ui-monospace, monospace"><span class="label">Sample · payments infrastructure</span><span>Hanken Grotesk 300 · 76/1.04 · -0.03em</span><span>Hanken Grotesk 400 · 19/1.55</span><span>Source Code Pro</span></footer>
+</section>
+<section class="voice light" id="swiss-regular" data-slug="swiss-regular">
+  <header class="meta" style="font-family:'JetBrains Mono', ui-monospace, monospace"><span>03 · swiss-regular</span><span>neo-grotesque, regular weight</span></header>
+  <h1 style="font-family:'Host Grotesk';font-weight:400;font-size:80px;letter-spacing:-0.025em;line-height:1;word-spacing:-0.1em;font-variation-settings:normal"><span>Compute That Runs</span><span>Where Your Data Lives</span></h1>
+  <p class="sub" style="font-family:'Host Grotesk';font-weight:400;font-size:18px;letter-spacing:0em;line-height:1.5;font-variation-settings:normal">Rack-scale GPU clusters you own, run like a public cloud.</p>
+  <footer class="foot" style="font-family:'JetBrains Mono', ui-monospace, monospace"><span class="label">Sample · on-prem compute</span><span>Host Grotesk 400 · 80/1 · -0.025em · ws -0.1em</span><span>Host Grotesk 400 · 18/1.5</span><span>JetBrains Mono</span></footer>
+</section>
+<section class="voice dark" id="character-grotesk" data-slug="character-grotesk">
+  <header class="meta" style="font-family:'Fragment Mono', ui-monospace, monospace"><span>04 · character-grotesk</span><span>grotesque with quirky drawn details (single-storey a, flat terminals)</span></header>
+  <h1 style="font-family:'Funnel Display';font-weight:500;font-size:84px;letter-spacing:-0.03em;line-height:0.98;font-variation-settings:normal"><span>Turn Every Account</span><span>Into A Living Signal</span></h1>
+  <p class="sub" style="font-family:'Funnel Sans';font-weight:400;font-size:18px;letter-spacing:0em;line-height:1.5;font-variation-settings:normal">Enrich, score and route leads from 150 sources without writing a single formula.</p>
+  <footer class="foot" style="font-family:'Fragment Mono', ui-monospace, monospace"><span class="label">Sample · GTM data</span><span>Funnel Display 500 · 84/0.98 · -0.03em</span><span>Funnel Sans 400 · 18/1.5</span><span>Fragment Mono</span></footer>
+</section>
+<section class="voice light" id="gothic-heavy" data-slug="gothic-heavy">
+  <header class="meta" style="font-family:'IBM Plex Mono', ui-monospace, monospace"><span>05 · gothic-heavy</span><span>American gothic (Franklin-style), heavy</span></header>
+  <h1 style="font-family:'Special Gothic';font-weight:700;font-size:80px;letter-spacing:-0.025em;line-height:0.98;font-variation-settings:'wdth' 100"><span>Ship The Feature</span><span>Your Users Asked For</span></h1>
+  <p class="sub" style="font-family:'Public Sans';font-weight:400;font-size:18px;letter-spacing:0em;line-height:1.55;font-variation-settings:normal">Requests, roadmap and releases in one loop, so nothing gets lost.</p>
+  <footer class="foot" style="font-family:'IBM Plex Mono', ui-monospace, monospace"><span class="label">Sample · product management</span><span>Special Gothic 700 · 80/0.98 · -0.025em · wdth 100</span><span>Public Sans 400 · 18/1.55</span><span>IBM Plex Mono</span></footer>
+</section>
+<section class="voice dark" id="humanist-warm" data-slug="humanist-warm">
+  <header class="meta" style="font-family:'Red Hat Mono', ui-monospace, monospace"><span>06 · humanist-warm</span><span>humanist-grotesque</span></header>
+  <h1 style="font-family:'Commissioner';font-weight:480;font-size:72px;letter-spacing:-0.02em;line-height:1.06;font-variation-settings:normal"><span>Banking That Moves</span><span>At Founder Speed</span></h1>
+  <p class="sub" style="font-family:'Commissioner';font-weight:360;font-size:19px;letter-spacing:0em;line-height:1.5;font-variation-settings:normal">Accounts, cards and bill pay that set themselves up in an afternoon.</p>
+  <footer class="foot" style="font-family:'Red Hat Mono', ui-monospace, monospace"><span class="label">Sample · startup banking</span><span>Commissioner 480 · 72/1.06 · -0.02em</span><span>Commissioner 360 · 19/1.5</span><span>Red Hat Mono</span></footer>
+</section>
+<section class="voice light" id="editorial-serif" data-slug="editorial-serif">
+  <header class="meta" style="font-family:'JetBrains Mono', ui-monospace, monospace"><span>07 · editorial-serif</span><span>contemporary text-display serif (optical size)</span></header>
+  <h1 style="font-family:'Newsreader';font-weight:400;font-size:92px;letter-spacing:-0.02em;line-height:1;font-variation-settings:'opsz' 72"><span>Write The Memo</span><span>Your Board Will Read</span></h1>
+  <p class="sub" style="font-family:'Inter';font-weight:400;font-size:18px;letter-spacing:-0.011em;line-height:1.5;font-variation-settings:normal">Research, draft and cite in one document, with sources you can check.</p>
+  <footer class="foot" style="font-family:'JetBrains Mono', ui-monospace, monospace"><span class="label">Sample · AI writing</span><span>Newsreader 400 · 92/1 · -0.02em · opsz 72</span><span>Inter 400 · 18/1.5</span><span>JetBrains Mono</span></footer>
+</section>
+<section class="voice dark" id="transitional-serif" data-slug="transitional-serif">
+  <header class="meta" style="font-family:'IBM Plex Mono', ui-monospace, monospace"><span>08 · transitional-serif</span><span>transitional serif (optical size)</span></header>
+  <h1 style="font-family:'Source Serif 4';font-weight:450;font-size:76px;letter-spacing:-0.02em;line-height:1.05;font-variation-settings:'opsz' 60"><span>Legal Work, Drafted</span><span>From Your Own Precedent</span></h1>
+  <p class="sub" style="font-family:'IBM Plex Sans';font-weight:400;font-size:17px;letter-spacing:0em;line-height:1.6;font-variation-settings:normal">Contracts, memos and diligence grounded in your firm's documents, cited to the clause.</p>
+  <footer class="foot" style="font-family:'IBM Plex Mono', ui-monospace, monospace"><span class="label">Sample · legal AI</span><span>Source Serif 4 450 · 76/1.05 · -0.02em · opsz 60</span><span>IBM Plex Sans 400 · 17/1.6</span><span>IBM Plex Mono</span></footer>
+</section>
+<section class="voice light" id="soft-serif" data-slug="soft-serif">
+  <header class="meta" style="font-family:'DM Mono', ui-monospace, monospace"><span>09 · soft-serif</span><span>soft old-style display serif (SOFT axis)</span></header>
+  <h1 style="font-family:'Fraunces';font-weight:500;font-size:84px;letter-spacing:-0.025em;line-height:0.98;font-variation-settings:'opsz' 144, 'SOFT' 100, 'WONK' 0"><span>A Calmer Inbox</span><span>For Busy Little Shops</span></h1>
+  <p class="sub" style="font-family:'Figtree';font-weight:400;font-size:18px;letter-spacing:0em;line-height:1.55;font-variation-settings:normal">Orders, questions and returns answered in one thread, with replies drafted for you.</p>
+  <footer class="foot" style="font-family:'DM Mono', ui-monospace, monospace"><span class="label">Sample · small-business support</span><span>Fraunces 500 · 84/0.98 · -0.025em · opsz 144 SOFT 100 WONK 0</span><span>Figtree 400 · 18/1.55</span><span>DM Mono</span></footer>
+</section>
+<section class="voice dark" id="slab-notepad" data-slug="slab-notepad">
+  <header class="meta" style="font-family:'Red Hat Mono', ui-monospace, monospace"><span>10 · slab-notepad</span><span>slab serif</span></header>
+  <h1 style="font-family:'Zilla Slab';font-weight:500;font-size:84px;letter-spacing:-0.02em;line-height:0.96;font-variation-settings:normal"><span>Every Call, Written Up</span><span>Before You Hang Up</span></h1>
+  <p class="sub" style="font-family:'Source Sans 3';font-weight:400;font-size:19px;letter-spacing:0em;line-height:1.5;font-variation-settings:normal">Your rough notes, finished by AI the moment the meeting ends.</p>
+  <footer class="foot" style="font-family:'Red Hat Mono', ui-monospace, monospace"><span class="label">Sample · AI notes</span><span>Zilla Slab 500 · 84/0.96 · -0.02em</span><span>Source Sans 3 400 · 19/1.5</span><span>Red Hat Mono</span></footer>
+</section>
+<section class="voice light" id="didone-luxe" data-slug="didone-luxe">
+  <header class="meta" style="font-family:'IBM Plex Mono', ui-monospace, monospace"><span>11 · didone-luxe</span><span>high-contrast didone display (optical size)</span></header>
+  <h1 style="font-family:'Bodoni Moda';font-weight:500;font-size:88px;letter-spacing:-0.025em;line-height:1;font-variation-settings:'opsz' 72"><span>Every Family Trust</span><span>In One Quiet Letter</span></h1>
+  <p class="sub" style="font-family:'Hanken Grotesk';font-weight:400;font-size:18px;letter-spacing:0em;line-height:1.55;font-variation-settings:normal">Accounts, entities and trusts reported monthly, prepared by your own advisor.</p>
+  <footer class="foot" style="font-family:'IBM Plex Mono', ui-monospace, monospace"><span class="label">Sample · private wealth</span><span>Bodoni Moda 500 · 88/1 · -0.025em · opsz 72</span><span>Hanken Grotesk 400 · 18/1.55</span><span>IBM Plex Mono</span></footer>
+</section>
+<section class="voice dark" id="mono-terminal" data-slug="mono-terminal">
+  <header class="meta" style="font-family:'Azeret Mono', ui-monospace, monospace"><span>12 · mono-terminal</span><span>monospace-led display</span></header>
+  <h1 style="font-family:'Azeret Mono';font-weight:400;font-size:64px;letter-spacing:-0.045em;line-height:1.05;word-spacing:-0.25em;font-variation-settings:normal"><span>Agents That Ship</span><span>Code While You Sleep</span></h1>
+  <p class="sub" style="font-family:'Geist';font-weight:400;font-size:17px;letter-spacing:-0.005em;line-height:1.6;font-variation-settings:normal">Hand off tickets at night, review tested pull requests in the morning.</p>
+  <footer class="foot" style="font-family:'Azeret Mono', ui-monospace, monospace"><span class="label">Sample · coding agent</span><span>Azeret Mono 400 · 64/1.05 · -0.045em · ws -0.25em</span><span>Geist 400 · 17/1.6</span><span>Azeret Mono</span></footer>
+</section>
+<section class="voice light" id="wide-extended" data-slug="wide-extended">
+  <header class="meta" style="font-family:'Martian Mono', ui-monospace, monospace"><span>13 · wide-extended</span><span>extended grotesque (wdth axis)</span></header>
+  <h1 style="font-family:'Mona Sans';font-weight:650;font-size:72px;letter-spacing:-0.03em;line-height:1.02;font-variation-settings:'wdth' 112.5"><span>Ask Your Warehouse</span><span>Anything At All</span></h1>
+  <p class="sub" style="font-family:'Mona Sans';font-weight:400;font-size:18px;letter-spacing:0em;line-height:1.5;font-variation-settings:'wdth' 100">SQL, Python and AI answers in one notebook your whole company can read.</p>
+  <footer class="foot" style="font-family:'Martian Mono', ui-monospace, monospace"><span class="label">Sample · data notebook</span><span>Mona Sans 650 · 72/1.02 · -0.03em · wdth 112.5</span><span>Mona Sans 400 · 18/1.5</span><span>Martian Mono</span></footer>
+</section>
+<section class="voice dark" id="condensed-statement" data-slug="condensed-statement">
+  <header class="meta" style="font-family:'JetBrains Mono', ui-monospace, monospace"><span>14 · condensed-statement</span><span>condensed grotesque (wdth axis)</span></header>
+  <h1 style="font-family:'Archivo';font-weight:700;font-size:104px;letter-spacing:-0.01em;line-height:0.94;font-variation-settings:'wdth' 68"><span>Every Match Stat</span><span>Live In Your Pocket</span></h1>
+  <p class="sub" style="font-family:'Archivo';font-weight:400;font-size:18px;letter-spacing:0em;line-height:1.5;font-variation-settings:'wdth' 100">Tracking data from 40 leagues, streamed to analysts within two seconds.</p>
+  <footer class="foot" style="font-family:'JetBrains Mono', ui-monospace, monospace"><span class="label">Sample · sports data</span><span>Archivo 700 · 104/0.94 · -0.01em · wdth 68</span><span>Archivo 400 · 18/1.5</span><span>JetBrains Mono</span></footer>
+</section>
+<section class="voice light" id="rounded-friendly" data-slug="rounded-friendly">
+  <header class="meta" style="font-family:'DM Mono', ui-monospace, monospace"><span>15 · rounded-friendly</span><span>rounded squarish sans</span></header>
+  <h1 style="font-family:'Rubik';font-weight:600;font-size:72px;letter-spacing:-0.03em;line-height:0.98;font-variation-settings:normal"><span>The Browser That</span><span>Tidies Itself Up</span></h1>
+  <p class="sub" style="font-family:'Rubik';font-weight:400;font-size:18px;letter-spacing:0em;line-height:1.55;font-variation-settings:normal">Tabs archive themselves, spaces keep work apart, and nothing gets lost.</p>
+  <footer class="foot" style="font-family:'DM Mono', ui-monospace, monospace"><span class="label">Sample · browser</span><span>Rubik 600 · 72/0.98 · -0.03em</span><span>Rubik 400 · 18/1.55</span><span>DM Mono</span></footer>
+</section>
+<section class="voice dark" id="variable-expressive" data-slug="variable-expressive">
+  <header class="meta" style="font-family:'Geist Mono', ui-monospace, monospace"><span>16 · variable-expressive</span><span>expressive grotesque (opsz + wdth axes)</span></header>
+  <h1 style="font-family:'Bricolage Grotesque';font-weight:700;font-size:88px;letter-spacing:-0.02em;line-height:0.95;font-variation-settings:'opsz' 96, 'wdth' 92"><span>Launch A Podcast</span><span>That Sounds Expensive</span></h1>
+  <p class="sub" style="font-family:'Instrument Sans';font-weight:400;font-size:18px;letter-spacing:0em;line-height:1.5;font-variation-settings:normal">Record remotely, edit by text and publish everywhere with studio-grade audio.</p>
+  <footer class="foot" style="font-family:'Geist Mono', ui-monospace, monospace"><span class="label">Sample · creator audio</span><span>Bricolage Grotesque 700 · 88/0.95 · -0.02em · opsz 96 wdth 92</span><span>Instrument Sans 400 · 18/1.5</span><span>Geist Mono</span></footer>
+</section>
+</body>
+</html>

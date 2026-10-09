@@ -1,0 +1,393 @@
+{
+ "url": "https://cursor.com",
+ "measured": "2026-10-09",
+ "viewport": "1440x900 dark",
+ "title": "AI Coding Agent for Building Ambitious Software | Cursor",
+ "H": 8175,
+ "scheme": {
+  "html": "dark",
+  "meta": "#f7f7f4"
+ },
+ "canvas": {
+  "hex": "#14120b",
+  "L": 0.182,
+  "C": 0.014,
+  "H": 94
+ },
+ "surfaces": [
+  {
+   "hex": "#14120b",
+   "L": 0.182,
+   "C": 0.014,
+   "H": 94,
+   "n": 14,
+   "area": 4775568,
+   "ex": "header 1440x52"
+  },
+  {
+   "hex": "#1b1913",
+   "L": 0.214,
+   "C": 0.012,
+   "H": 92,
+   "n": 24,
+   "area": 2637651,
+   "ex": "div 133x30"
+  },
+  {
+   "hex": "#4a443b",
+   "L": 0.39,
+   "C": 0.017,
+   "H": 78,
+   "n": 1,
+   "area": 571200,
+   "ex": "div 840x680"
+  },
+  {
+   "hex": "#edecec",
+   "L": 0.944,
+   "C": 0.001,
+   "H": 17,
+   "n": 2,
+   "area": 11766,
+   "ex": "a 88x27"
+  },
+  {
+   "hex": "#201e18",
+   "L": 0.235,
+   "C": 0.012,
+   "H": 92,
+   "n": 1,
+   "area": 11166,
+   "ex": "button 219x51"
+  },
+  {
+   "hex": "#26241e",
+   "L": 0.26,
+   "C": 0.011,
+   "H": 92,
+   "n": 1,
+   "area": 7904,
+   "ex": "a 183x43"
+  }
+ ],
+ "overlays": [],
+ "borders": [
+  {
+   "border": "oklab(0.943853 0.00107113 0.000336707 / 0.1) @1",
+   "n": 67,
+   "alpha": 0.1,
+   "flat": "#2a2822",
+   "dL": 0.094
+  },
+  {
+   "border": "rgba(0, 0, 0, 0) @1",
+   "n": 26,
+   "alpha": 0,
+   "flat": "#14120b",
+   "dL": 0
+  },
+  {
+   "border": "oklab(0.943853 0.00107113 0.000336707 / 0.2) @1",
+   "n": 20,
+   "alpha": 0.2,
+   "flat": "#3f3e38",
+   "dL": 0.18
+  },
+  {
+   "border": "rgb(237, 236, 236) @1",
+   "n": 16,
+   "alpha": 1,
+   "flat": "#edecec",
+   "dL": 0.762
+  },
+  {
+   "border": "oklab(0.943853 0.00107113 0.000336707 / 0.025) @1",
+   "n": 4,
+   "alpha": 0.025,
+   "flat": "#191711",
+   "dL": 0.024
+  }
+ ],
+ "shadows": [
+  {
+   "s": "rgba(0, 0, 0, 0.14) 0px 28px 70px 0px, rgba(0, 0, 0, 0.1) 0px 14px 32px 0px, oklab(0.943853 0.00107113 0.000336707 / 0.1) 0px 0px 0px 1px",
+   "n": 3
+  }
+ ],
+ "text": [
+  {
+   "color": "rgb(237, 236, 236)",
+   "chars": 2446,
+   "flat": "#edecec",
+   "alpha": 1,
+   "L": 0.944,
+   "C": 0.001,
+   "H": 17,
+   "wcag": 15.89,
+   "size": "16px",
+   "weight": "400",
+   "ex": "Cursor"
+  },
+  {
+   "color": "oklab(0.943853 0.00107113 0.000336707 / 0.6)",
+   "chars": 414,
+   "flat": "#969592",
+   "alpha": 0.6,
+   "L": 0.67,
+   "C": 0.004,
+   "H": 85,
+   "wcag": 6.25,
+   "size": "11px",
+   "weight": "500",
+   "ex": "READY FOR REVIEW 5"
+  },
+  {
+   "color": "oklab(0.943853 0.00107113 0.000336707 / 0.4)",
+   "chars": 213,
+   "flat": "#6b6965",
+   "alpha": 0.4,
+   "L": 0.522,
+   "C": 0.007,
+   "H": 89,
+   "wcag": 3.42,
+   "size": "11px",
+   "weight": "400",
+   "ex": "now"
+  },
+  {
+   "color": "rgb(20, 18, 11)",
+   "chars": 43,
+   "flat": "#14120b",
+   "alpha": 1,
+   "L": 0.182,
+   "C": 0.014,
+   "H": 94,
+   "wcag": 15.89,
+   "size": "14px",
+   "weight": "400",
+   "ex": "Skip to content"
+  },
+  {
+   "color": "rgb(31, 138, 101)",
+   "chars": 10,
+   "flat": "#1f8a65",
+   "alpha": 1,
+   "L": 0.565,
+   "C": 0.11,
+   "H": 164,
+   "wcag": 3.87,
+   "size": "11px",
+   "weight": "400",
+   "ex": "+20"
+  },
+  {
+   "color": "rgb(255, 255, 255)",
+   "chars": 5,
+   "flat": "#ffffff",
+   "alpha": 1,
+   "L": 1,
+   "C": 0,
+   "H": 90,
+   "wcag": 3.16,
+   "size": "12px",
+   "weight": "500",
+   "ex": "Build"
+  },
+  {
+   "color": "rgb(207, 45, 86)",
+   "chars": 3,
+   "flat": "#cf2d56",
+   "alpha": 1,
+   "L": 0.566,
+   "C": 0.197,
+   "H": 12,
+   "wcag": 3.71,
+   "size": "11px",
+   "weight": "400",
+   "ex": "-21"
+  },
+  {
+   "color": "lab(48.4493 77.4328 61.5452)",
+   "chars": 3,
+   "flat": "#e7000b",
+   "alpha": 1,
+   "L": 0.583,
+   "C": 0.239,
+   "H": 28,
+   "wcag": 3.68,
+   "size": "12px",
+   "weight": "400",
+   "ex": "-10"
+  }
+ ],
+ "h1": {
+  "text": "Cursor is your coding agent for building ambitious software.",
+  "family": "CursorGothic",
+  "size": "26px",
+  "weight": "400",
+  "ls": "-0.325px",
+  "lh": "32.5px",
+  "color": "rgb(237, 236, 236)",
+  "bgClip": "border-box",
+  "bgImage": null,
+  "textShadow": null,
+  "fillColor": "rgb(237, 236, 236)",
+  "mask": null
+ },
+ "ctas": [
+  {
+   "text": "Download for macOS\n⤓",
+   "w": 216,
+   "h": 43,
+   "bg": "rgb(237, 236, 236)",
+   "fillL": 0.944,
+   "color": "rgb(20, 18, 11)",
+   "border": "1px solid rgb(237, 236, 236)",
+   "radius": "3.35544e+07px",
+   "shadow": null,
+   "bgi": null,
+   "size": "16px",
+   "weight": "400",
+   "before": null,
+   "after": null,
+   "childBg": null
+  },
+  {
+   "text": "Request a demo\n→",
+   "w": 183,
+   "h": 43,
+   "bg": "rgb(38, 36, 30)",
+   "fillL": 0.26,
+   "color": "rgb(237, 236, 236)",
+   "border": "1px solid oklab(0.943853 0.00107113 0.000336707 / 0.025)",
+   "radius": "3.35544e+07px",
+   "shadow": null,
+   "bgi": null,
+   "size": "16px",
+   "weight": "400",
+   "before": null,
+   "after": null,
+   "childBg": null
+  }
+ ],
+ "nav": {
+  "h": 52,
+  "w": 1440,
+  "bg": "rgb(20, 18, 11)",
+  "backdrop": "none",
+  "bb": null,
+  "border": null,
+  "radius": "0px",
+  "shadow": null,
+  "link": "rgb(237, 236, 236)",
+  "linkSize": "14px"
+ },
+ "lightFx": [
+  {
+   "el": "div 1300x720@70,351",
+   "bgi": "linear-gradient(oklab(0.943853 0.00107113 0.000336707 / 0.05) 0%, oklab(0.943853 0.00107113 0.000336707 / 0.05) 100%), linear-gradient(rgb(27, 25, 19) 0%, rgb(27, 25, 19) 100%)",
+   "filter": null,
+   "mask": null,
+   "blend": null,
+   "opacity": null
+  }
+ ],
+ "lightFxCount": 1,
+ "media": [],
+ "noise": {
+  "feTurbulence": 0,
+  "cssNoise": [],
+  "imgs": 0
+ },
+ "frames": [
+  {
+   "tag": "div",
+   "box": [
+    180,
+    401,
+    1080,
+    620
+   ],
+   "bg": "rgb(20, 18, 11)",
+   "bgL": 0.182,
+   "border": null,
+   "radius": "10px",
+   "shadow": "rgba(0, 0, 0, 0.14) 0px 28px 70px 0px, rgba(0, 0, 0, 0.1) 0px 14px 32px 0px, oklab(0.943853 0.00107113 0.000336707 / 0.1) 0px 0px 0px 1px",
+   "bgi": null,
+   "mask": null,
+   "before": null,
+   "after": null
+  }
+ ],
+ "accentUse": [
+  {
+   "hex": "#1f8a65",
+   "L": 0.565,
+   "C": 0.11,
+   "H": 164,
+   "fillArea": 0,
+   "textChars": 10,
+   "ex": "SPAN +20"
+  },
+  {
+   "hex": "#cf2d56",
+   "L": 0.566,
+   "C": 0.197,
+   "H": 12,
+   "fillArea": 0,
+   "textChars": 5,
+   "ex": "SPAN -3"
+  },
+  {
+   "hex": "#e7000b",
+   "L": 0.583,
+   "C": 0.239,
+   "H": 28,
+   "fillArea": 0,
+   "textChars": 5,
+   "ex": "SPAN -10"
+  },
+  {
+   "hex": "#c08532",
+   "L": 0.661,
+   "C": 0.121,
+   "H": 72,
+   "fillArea": 901,
+   "textChars": 0,
+   "ex": "BUTTON Build"
+  },
+  {
+   "hex": "#00a63e",
+   "L": 0.632,
+   "C": 0.186,
+   "H": 147,
+   "fillArea": 0,
+   "textChars": 2,
+   "ex": "SPAN +3"
+  }
+ ],
+ "radii": [
+  [
+   "3.35544e+07px",
+   15
+  ],
+  [
+   "4px",
+   10
+  ],
+  [
+   "8px",
+   7
+  ],
+  [
+   "10px",
+   2
+  ],
+  [
+   "2px",
+   1
+  ]
+ ],
+ "smoothing": "antialiased",
+ "canvasCtx": []
+}

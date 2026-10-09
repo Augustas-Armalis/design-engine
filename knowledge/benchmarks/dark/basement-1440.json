@@ -1,0 +1,166 @@
+{
+ "url": "https://basement.studio",
+ "measured": "2026-10-09",
+ "viewport": "1440x900 dark",
+ "title": "basement.studio | We make cool shit that performs.",
+ "H": 6714,
+ "scheme": {
+  "html": "dark",
+  "meta": null
+ },
+ "canvas": {
+  "hex": "#000000",
+  "L": 0,
+  "C": 0,
+  "H": 0
+ },
+ "surfaces": [
+  {
+   "hex": "#000000",
+   "L": 0,
+   "C": 0,
+   "H": 0,
+   "n": 2,
+   "area": 2596308,
+   "ex": "main 1440x4966"
+  }
+ ],
+ "overlays": [],
+ "borders": [
+  {
+   "border": "rgb(46, 46, 46) @1",
+   "n": 4,
+   "alpha": 1,
+   "flat": "#2e2e2e",
+   "dL": 0.301
+  }
+ ],
+ "shadows": [],
+ "text": [
+  {
+   "color": "rgb(230, 230, 230)",
+   "chars": 50,
+   "flat": "#e6e6e6",
+   "alpha": 1,
+   "L": 0.925,
+   "C": 0,
+   "H": 90,
+   "wcag": 16.83,
+   "size": "12px",
+   "weight": "600",
+   "ex": "Home"
+  },
+  {
+   "color": "rgb(196, 196, 196)",
+   "chars": 27,
+   "flat": "#c4c4c4",
+   "alpha": 1,
+   "L": 0.82,
+   "C": 0,
+   "H": 90,
+   "wcag": 12.04,
+   "size": "12px",
+   "weight": "600",
+   "ex": "Online\n()\nPress [/] to chat"
+  },
+  {
+   "color": "rgb(255, 77, 0)",
+   "chars": 5,
+   "flat": "#ff4d00",
+   "alpha": 1,
+   "L": 0.668,
+   "C": 0.224,
+   "H": 37,
+   "wcag": 6.31,
+   "size": "13px",
+   "weight": "600",
+   "ex": "HUMAN"
+  }
+ ],
+ "h1": {
+  "text": "A digital studio & branding powerhouse making cool shit that performs",
+  "family": "Geist",
+  "size": "87px",
+  "weight": "600",
+  "ls": "-3.48px",
+  "lh": "78px",
+  "color": "rgb(230, 230, 230)",
+  "bgClip": "border-box",
+  "bgImage": null,
+  "textShadow": null,
+  "fillColor": "rgb(230, 230, 230)",
+  "mask": null
+ },
+ "ctas": [],
+ "nav": {
+  "h": 36,
+  "w": 1440,
+  "bg": "rgba(0, 0, 0, 0)",
+  "backdrop": "none",
+  "bb": null,
+  "border": null,
+  "radius": "0px",
+  "shadow": null,
+  "link": "rgb(230, 230, 230)",
+  "linkSize": "12px"
+ },
+ "lightFx": [
+  {
+   "el": "nav 1440x36@0,0",
+   "bgi": "linear-gradient(rgb(0, 0, 0) 1px, rgba(0, 0, 0, 0) 1px), linear-gradient(90deg, rgb(0, 0, 0) 1px, rgba(0, 0, 0, 0.7) 1px)",
+   "filter": null,
+   "mask": null,
+   "blend": null,
+   "opacity": null
+  }
+ ],
+ "lightFxCount": 1,
+ "media": [
+  {
+   "tag": "canvas",
+   "w": 1440,
+   "h": 900,
+   "top": 0,
+   "blend": "normal",
+   "opacity": "1",
+   "mask": null
+  },
+  {
+   "tag": "canvas",
+   "w": 1440,
+   "h": 900,
+   "top": 0,
+   "blend": "normal",
+   "opacity": "1",
+   "mask": null
+  }
+ ],
+ "noise": {
+  "feTurbulence": 0,
+  "cssNoise": [],
+  "imgs": 0
+ },
+ "frames": [],
+ "accentUse": [
+  {
+   "hex": "#ff4d00",
+   "L": 0.668,
+   "C": 0.224,
+   "H": 37,
+   "fillArea": 36,
+   "textChars": 5,
+   "ex": "SPAN "
+  }
+ ],
+ "radii": [
+  [
+   "9999px",
+   4
+  ]
+ ],
+ "smoothing": "antialiased",
+ "canvasCtx": [
+  "webgl 1440x900",
+  "err 1440x900"
+ ]
+}

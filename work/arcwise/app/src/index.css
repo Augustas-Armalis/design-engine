@@ -1,0 +1,39 @@
+@import "tailwindcss";
+@import "@fontsource-variable/sora";
+@import "@fontsource-variable/albert-sans";
+@import "@fontsource/dm-mono/400.css";
+@import "@fontsource/dm-mono/500.css";
+@import "./theme.css";
+@theme {
+  --font-sans: "Albert Sans Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Sora Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "DM Mono", ui-monospace, monospace;
+}
+/* Arcwise: Polar system, dark recipe "Midnight ink" (system/variety/dark-recipes.json, measured from Linear / Zed / Trigger).
+   The light source is the product window itself (edge spotlight + floor reflection), never a colour blob behind the type. */
+:root {
+  color-scheme: dark;
+  --canvas: #090b12; --s1: #101319; --s2: #181b21; --s3: #21242a;
+  --line: rgb(243 245 250 / 0.08); --line-2: rgb(243 245 250 / 0.15);
+  --ink: #f0f2f7; --sub: #9da3b0; --soft: #8a90a0;
+  --accent: #8c9bff; --accent-deep: #4247a6; --accent-ink: #090b12;
+  --ok: oklch(0.80 0.13 150); --warn: oklch(0.80 0.13 80);
+  --weak: var(--s2); --track: var(--s2);
+  --shadow-ring: 0 0 0 1px var(--line);
+}
+html, body { background: var(--canvas); }
+body { color: var(--ink); font-family: var(--font-sans); -webkit-font-smoothing: antialiased; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+/* Button grammar: deep chromatic pill (primary) + glass pill (secondary). Hover moves lightness, never adds glow at rest. */
+.btn-deep { background: var(--accent-deep); color: #f3f5f9; box-shadow: inset 0 0 0 1px rgb(255 255 255 / 0.14), inset 0 1px 0 rgb(255 255 255 / 0.16), 0 1px 3px rgb(0 0 0 / 0.3); transition: background-color 160ms cubic-bezier(.22,1,.36,1); }
+@media (hover: hover) { .btn-deep:hover { background: #4d53b8; } }
+.btn-glass { background: rgb(243 245 250 / 0.04); color: var(--ink); box-shadow: inset 0 0 0 1px rgb(243 245 250 / 0.10), inset 0 1px 0 rgb(243 245 250 / 0.05); transition: background-color 160ms; }
+@media (hover: hover) { .btn-glass:hover { background: rgb(243 245 250 / 0.08); } }
+
+.press { transition: transform 160ms cubic-bezier(.22,1,.36,1); }
+.press:active { transform: scale(0.97); }
+@media (prefers-reduced-motion: reduce) { .press:active { transform: none; } }
+h1, h2, h3 { text-wrap: balance; }
+p { text-wrap: pretty; }
+.tnum { font-variant-numeric: tabular-nums; }

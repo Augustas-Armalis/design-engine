@@ -1,0 +1,321 @@
+{
+ "url": "https://resend.com",
+ "measured": "2026-10-09",
+ "viewport": "1440x900 dark",
+ "title": "Resend · Email for developers",
+ "H": 12319,
+ "scheme": {
+  "html": "dark",
+  "meta": "#000000"
+ },
+ "canvas": {
+  "hex": "#000000",
+  "L": 0,
+  "C": 0,
+  "H": 0
+ },
+ "surfaces": [
+  {
+   "hex": "#000000",
+   "L": 0,
+   "C": 0,
+   "H": 0,
+   "n": 1,
+   "area": 2592000,
+   "ex": "div 1440x12319"
+  },
+  {
+   "hex": "#0b0e14",
+   "L": 0.163,
+   "C": 0.014,
+   "H": 264,
+   "n": 1,
+   "area": 6471,
+   "ex": "span 216x30"
+  }
+ ],
+ "overlays": [],
+ "borders": [
+  {
+   "border": "rgba(0, 0, 0, 0) @1",
+   "n": 12,
+   "alpha": 0,
+   "flat": "#000000",
+   "dL": 0
+  },
+  {
+   "border": "oklab(0.999994 0.0000455678 0.0000200868 / 0.05) @2",
+   "n": 8,
+   "alpha": 0.05,
+   "flat": "#0d0d0d",
+   "dL": 0.158
+  },
+  {
+   "border": "rgba(214, 235, 253, 0.19) @1",
+   "n": 1,
+   "alpha": 0.19,
+   "flat": "#292d30",
+   "dL": 0.293
+  }
+ ],
+ "shadows": [
+  {
+   "s": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.1) 0px 1px 2px -1px",
+   "n": 2
+  }
+ ],
+ "text": [
+  {
+   "color": "rgb(161, 164, 165)",
+   "chars": 167,
+   "flat": "#a1a4a5",
+   "alpha": 1,
+   "L": 0.717,
+   "C": 0.004,
+   "H": 220,
+   "wcag": 8.37,
+   "size": "14px",
+   "weight": "500",
+   "ex": "Features"
+  },
+  {
+   "color": "rgb(240, 240, 240)",
+   "chars": 45,
+   "flat": "#f0f0f0",
+   "alpha": 1,
+   "L": 0.955,
+   "C": 0,
+   "H": 90,
+   "wcag": 16.95,
+   "size": "14px",
+   "weight": "400",
+   "ex": "Join us at Resend Forward"
+  },
+  {
+   "color": "rgb(255, 255, 255)",
+   "chars": 22,
+   "flat": "#ffffff",
+   "alpha": 1,
+   "L": 1,
+   "C": 0,
+   "H": 90,
+   "wcag": 21,
+   "size": "14px",
+   "weight": "600",
+   "ex": "Get started"
+  }
+ ],
+ "h1": {
+  "text": "Email for\ndevelopers",
+  "family": "domaine",
+  "size": "96px",
+  "weight": "400",
+  "ls": "-0.96px",
+  "lh": "96px",
+  "color": "rgb(240, 240, 240)",
+  "bgClip": "text",
+  "bgImage": "linear-gradient(to right bottom, rgb(255, 255, 255) 30%, rgba(255, 255, 255, 0.5))",
+  "textShadow": null,
+  "fillColor": "rgba(0, 0, 0, 0)",
+  "mask": null
+ },
+ "ctas": [
+  {
+   "text": "Join us at Resend Forward",
+   "w": 218,
+   "h": 32,
+   "bg": "rgba(0, 0, 0, 0)",
+   "fillL": null,
+   "color": "rgb(240, 240, 240)",
+   "border": null,
+   "radius": "3.35544e+07px",
+   "shadow": null,
+   "bgi": "linear-gradient(19.3848deg, rgba(2, 252, 239, 0.44) 0%, rgba(255, 181, 43, 0.44) 50%, rgba(160, 43, 254, 0.44) 100%)",
+   "size": "14px",
+   "weight": "400",
+   "before": null,
+   "after": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "linear-gradient(19.3848deg, rgb(2, 252, 239) 0%, rgb(255, 181, 43) 50%, rgb(160, 43, 254) 100%)",
+    "sh": null,
+    "border": null,
+    "filter": "blur(20px)",
+    "mask": null,
+    "opacity": "0"
+   },
+   "childBg": "rgb(11, 14, 20)"
+  },
+  {
+   "text": "Get started",
+   "w": 130,
+   "h": 48,
+   "bg": "rgba(0, 0, 0, 0)",
+   "fillL": null,
+   "color": "rgb(255, 255, 255)",
+   "border": "2px solid oklab(0.999994 0.0000455678 0.0000200868 / 0.05)",
+   "radius": "16px",
+   "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.1) 0px 1px 2px -1px",
+   "bgi": "linear-gradient(104deg, rgba(253, 253, 253, 0.05) 5%, rgba(240, 240, 228, 0.1) 100%)",
+   "size": "16px",
+   "weight": "600",
+   "before": null,
+   "after": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "url(\"https://resend.com/static/texture-btn.png\")",
+    "sh": null,
+    "border": null,
+    "filter": null,
+    "mask": null,
+    "opacity": "1"
+   },
+   "childBg": null
+  },
+  {
+   "text": "Documentation",
+   "w": 160,
+   "h": 48,
+   "bg": "rgba(0, 0, 0, 0)",
+   "fillL": null,
+   "color": "rgb(161, 164, 165)",
+   "border": "1px solid rgba(0, 0, 0, 0)",
+   "radius": "16px",
+   "shadow": null,
+   "bgi": null,
+   "size": "16px",
+   "weight": "600",
+   "before": null,
+   "after": null,
+   "childBg": null
+  }
+ ],
+ "nav": {
+  "h": 58,
+  "w": 1440,
+  "bg": "rgba(0, 0, 0, 0)",
+  "backdrop": "none",
+  "bb": null,
+  "border": null,
+  "radius": "0px",
+  "shadow": null,
+  "link": "rgb(255, 255, 255)",
+  "linkSize": "14px"
+ },
+ "lightFx": [
+  {
+   "el": "header::before 1440x58@0,0",
+   "bgi": null,
+   "filter": null,
+   "mask": "linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0))",
+   "blend": null,
+   "opacity": "0"
+  },
+  {
+   "el": "a 112x40@1224,9",
+   "bgi": "linear-gradient(104deg, rgba(253, 253, 253, 0.05) 5%, rgba(240, 240, 228, 0.1) 100%)",
+   "filter": null,
+   "mask": null,
+   "blend": null,
+   "opacity": null
+  },
+  {
+   "el": "img 1440x900@0,58",
+   "bgi": null,
+   "filter": null,
+   "mask": "linear-gradient(to top, rgba(0, 0, 0, 0) 15%, rgb(0, 0, 0) 25%)",
+   "blend": null,
+   "opacity": "0.8"
+  },
+  {
+   "el": "a 218x32@168,263",
+   "bgi": "linear-gradient(19.3848deg, rgba(2, 252, 239, 0.44) 0%, rgba(255, 181, 43, 0.44) 50%, rgba(160, 43, 254, 0.44) 100%)",
+   "filter": null,
+   "mask": null,
+   "blend": null,
+   "opacity": null
+  },
+  {
+   "el": "a::after 218x32@168,263",
+   "bgi": "linear-gradient(19.3848deg, rgb(2, 252, 239) 0%, rgb(255, 181, 43) 50%, rgb(160, 43, 254) 100%)",
+   "filter": "blur(20px)",
+   "mask": null,
+   "blend": null,
+   "opacity": "0"
+  },
+  {
+   "el": "h1 480x204@168,327",
+   "bgi": "linear-gradient(to right bottom, rgb(255, 255, 255) 30%, rgba(255, 255, 255, 0.5))",
+   "filter": null,
+   "mask": null,
+   "blend": null,
+   "opacity": null
+  },
+  {
+   "el": "a 130x48@168,625",
+   "bgi": "linear-gradient(104deg, rgba(253, 253, 253, 0.05) 5%, rgba(240, 240, 228, 0.1) 100%)",
+   "filter": null,
+   "mask": null,
+   "blend": null,
+   "opacity": null
+  },
+  {
+   "el": "img 1440x900@0,-22",
+   "bgi": null,
+   "filter": null,
+   "mask": "linear-gradient(to top, rgba(0, 0, 0, 0) 15%, rgb(0, 0, 0) 25%)",
+   "blend": null,
+   "opacity": null
+  }
+ ],
+ "lightFxCount": 8,
+ "media": [
+  {
+   "tag": "canvas",
+   "w": 648,
+   "h": 550,
+   "top": 193,
+   "blend": "normal",
+   "opacity": "1",
+   "mask": null
+  }
+ ],
+ "noise": {
+  "feTurbulence": 0,
+  "cssNoise": [],
+  "imgs": 0
+ },
+ "frames": [
+  {
+   "tag": "section",
+   "box": [
+    80,
+    1038,
+    1280,
+    567
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgL": null,
+   "border": "1px rgba(214, 235, 253, 0.19)",
+   "radius": "24px",
+   "shadow": null,
+   "bgi": null,
+   "mask": null,
+   "before": null,
+   "after": null
+  }
+ ],
+ "accentUse": [],
+ "radii": [
+  [
+   "16px",
+   4
+  ],
+  [
+   "3.35544e+07px",
+   2
+  ]
+ ],
+ "smoothing": "antialiased",
+ "canvasCtx": [
+  "webgl 648x550"
+ ]
+}
