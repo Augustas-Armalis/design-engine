@@ -238,6 +238,10 @@ Every rule here is a direct founder verdict on real output. It outranks books, w
   **Why** Founder on Acquisity v1/v2: "it seems to have copied it mostly and just changed surface level stuff", "nothing like Marcel Kargul's style nor Rico... too noobish... nothing like Attio... spend more time perfecting product craft".
   **Applies to** all SaaS app UI and dashboards. **Check** DIRECTION.md names the reference screens used, includes a side-by-side at equal zoom, and lists the structural changes (not only restyling). **Source** founder, Acquisity redesign rejection 2026-10-09
 
+- **RULE** [founder] Bento visuals (Commslayer-measured): no grey stage boxes; each visual starts exactly on its copy's left edge, one fixed gap under the copy, top-aligned (never centred in a tall box), filling the cell's width; only the lead cell carries the brand dither, across the whole lower cell edge to edge; the longest visual goes in the tall lead cell and the widest in the wide cell; on tablet and phone every cell has the same height. Never replace an accepted bento layout with a "systemised" fixed grid without diffing it against the accepted one.
+  **Why** Founder on Kaching round 2: "not in a rectangular grey box", "this bento was clean, neat, consistent when scaling down, on mobile all the same heights, and now you messed it up everywhere", "we had the long visual, so put it first and the calendar as the long one".
+  **Applies to** feature bentos. **Check** visual.left == copy.left per cell; gap copy->visual identical across cells; no stage background; tablet/phone cell heights equal. **Source** founder, Kaching round 2
+
 ## 5. Exceptions & judgement calls
 
 - The split layout (copy left, visual right) was rejected by Larpo when the right side was a decorative dashboard. With a real product world on the right (the payout globe) the founder accepted it.
