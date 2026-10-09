@@ -2,11 +2,13 @@
 //   #/hero       the landing hero (depth-of-field collage + live approval)    (default)
 //   #/component  the Approval Request component in an affectUI-style showcase frame
 //   #/product    the full Tandem workspace screen
+//   #/x          the Approval Request alone, posted the way Flo posts a component on X (cursor demo)
 import { useEffect, useState } from 'react'
 import { MotionConfig } from 'motion/react'
 import Hero from './Hero'
 import Product from './Product'
 import Approval from './Approval'
+import Post from './Post'
 import { Showcase } from './ui'
 
 function ComponentPage() {
@@ -28,7 +30,7 @@ export default function App() {
   useEffect(() => { const f = () => setRoute(location.hash); addEventListener('hashchange', f); return () => removeEventListener('hashchange', f) }, [])
   return (
     <MotionConfig reducedMotion="user">
-      {route === '#/component' ? <ComponentPage /> : route === '#/product' ? <Product /> : <Hero />}
+      {route === '#/x' ? <Post /> : route === '#/component' ? <ComponentPage /> : route === '#/product' ? <Product /> : <Hero />}
     </MotionConfig>
   )
 }

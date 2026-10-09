@@ -42,3 +42,18 @@ export function Showcase({ category, title, desc, children, pro = true }: { cate
     </figure>
   )
 }
+
+/** Flo's signature anatomy: a grey tray holding one white card, the tray strip carrying status (radius 20 = card 16 + inset 4). */
+export function Tray({ head, children, className = '', flat = true }: { head: ReactNode; children: ReactNode; className?: string; flat?: boolean }) {
+  return (
+    <div className={`rounded-[20px] bg-[#f0f0f0] p-1 ${flat ? 'shadow-[0_0_0_1px_rgba(0,0,0,0.04)]' : 'shadow-[0_0_0_1px_rgba(0,0,0,0.05),0_18px_40px_-12px_rgba(0,0,0,0.16)]'} ${className}`}>
+      <div className="flex h-9 items-center gap-2 px-3 text-[12.5px] font-[500] text-[#404040]">{head}</div>
+      <div className="rounded-[16px] bg-white shadow-[0_0_0_1px_#ececec,0_1px_2px_rgba(0,0,0,0.04)]">{children}</div>
+    </div>
+  )
+}
+
+/** a visual switch (static, decorative inside ghosts) */
+export function Switch({ on }: { on: boolean }) {
+  return <span className={`relative inline-block h-[18px] w-[30px] shrink-0 rounded-full ${on ? 'bg-[var(--blue)]' : 'bg-[#e4e4e4]'} shadow-[inset_0_0_0_1px_rgba(0,0,0,0.06)]`}><span className={`absolute top-[2px] size-[14px] rounded-full bg-white shadow-[0_1px_2px_rgba(0,0,0,0.2)] ${on ? 'left-[14px]' : 'left-[2px]'}`} /></span>
+}

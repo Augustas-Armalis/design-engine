@@ -16,12 +16,13 @@ const ORDERS = [
 type Phase = 'idle' | 'holding' | 'running' | 'done'
 
 export type ApprovalPhase = 'idle' | 'holding' | 'running' | 'done'
-export default function Approval({ demo = false, delay = 0, onPhase }: { demo?: boolean; delay?: number; onPhase?: (p: ApprovalPhase) => void }) {
+export default function Approval({ demo = false, delay = 0, onPhase, flat = false }: { demo?: boolean; delay?: number; onPhase?: (p: ApprovalPhase) => void; flat?: boolean }) {
   const still = useReducedMotion()
   const [phase, setPhase] = useState<Phase>('idle')
   const [held, setHeld] = useState(0) // 0..1
   const [done, setDone] = useState(0) // orders refunded
   const raf = useRef(0), t0 = useRef(0)
+  const [left, setLeft] = useState(10) // undo window, seconds
   useEffect(() => { onPhase?.(phase) }, [phase, onPhase])
 
   const startHold = useCallback(() => {
@@ -57,9 +58,17 @@ export default function Approval({ demo = false, delay = 0, onPhase }: { demo?: 
     return () => ids.forEach(clearTimeout)
   }, [demo, phase, startHold, delay, still])
 
+  // the undo window really counts down
+  useEffect(() => {
+    if (phase !== 'done') { setLeft(10); return }
+    if (still || left <= 0) return
+    const id = setTimeout(() => setLeft((l) => l - 1), 1000)
+    return () => clearTimeout(id)
+  }, [phase, left, still])
+
   const total = ORDERS.reduce((a, o) => a + o.amt, 0)
   return (
-    <div className="w-[364px] overflow-hidden rounded-[16px] bg-white text-left shadow-[0_0_0_1px_rgba(0,0,0,0.07),0_1px_2px_rgba(0,0,0,0.04),0_12px_32px_-14px_rgba(0,0,0,0.18)]">
+    <div className={`w-[364px] overflow-hidden rounded-[16px] bg-white text-left ${flat ? 'shadow-[0_0_0_1px_#ececec,0_1px_2px_rgba(0,0,0,0.04)]' : 'shadow-[0_0_0_1px_rgba(0,0,0,0.07),0_1px_2px_rgba(0,0,0,0.04),0_12px_32px_-14px_rgba(0,0,0,0.18)]'}`}>
       <div className="flex items-center gap-2.5 px-4 pt-3.5">
         <Avatar i="TA" size={22} />
         <span className="text-[13px] text-[var(--sub)]"><span className="font-[500] text-[var(--ink)]">Ops agent</span> wants to</span>
@@ -104,7 +113,7 @@ export default function Approval({ demo = false, delay = 0, onPhase }: { demo?: 
             <motion.div key="receipt" initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} transition={{ duration: 0.35, ease }} className="flex flex-1 items-center gap-2.5 pl-1">
               <span className="grid size-6 place-items-center rounded-full bg-[var(--green-tint)]"><Check size={13} strokeWidth={2.5} className="text-[var(--green)]" /></span>
               <span className="text-[13px]"><span className="font-[500]">Refunded ${total.toFixed(2)}</span><span className="text-[var(--sub)]"> · 3 notified</span></span>
-              <button type="button" className="pill-ghost press ml-auto flex h-8 items-center gap-1.5 rounded-full px-3 text-[12.5px] font-[500]"><RotateCcw size={13} strokeWidth={1.75} />Undo <span className="tnum text-[var(--soft)]">0:09</span></button>
+              <button type="button" className="pill-ghost press ml-auto flex h-8 items-center gap-1.5 rounded-full px-3 text-[12.5px] font-[500]"><RotateCcw size={13} strokeWidth={1.75} />Undo <span className="tnum text-[var(--soft)]">0:{String(left).padStart(2, '0')}</span></button>
             </motion.div>
           ) : (
             <motion.div key="actions" exit={{ opacity: 0, y: -6 }} transition={{ duration: 0.2 }} className="flex flex-1 items-center gap-2">
