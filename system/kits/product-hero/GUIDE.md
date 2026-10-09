@@ -16,6 +16,7 @@ Start a build: `node tools/new_build.mjs <name> --system <slug>` (copies `templa
 | `PillNav` | | link track with a white pill sliding to the hovered link (`layoutId`), 36px items |
 | `Segmented` | | equal-width slots, labels centred both ways, sliding pill, 32px = neighbouring icon buttons |
 | `CountUp` | | numbers settle up from 60% on `ease.link` |
+| `RollingNumber` | | NumberFlow-style: each digit rolls up in its own masked slot (45ms stagger), symbols stay still, later changes roll only changed digits; the founder's preferred number motion (Ferry hero). Prefer it over `CountUp` for KPIs and stats |
 | `Route` | | a line draws to an edge, its endpoint lands when it arrives, then pulses, then a comet loops |
 | `FloatTile` | | icon tiles rise, bob gently, straighten on hover |
 | `Rails` | | rails draw down, hairline draws out, registration nodes land |
@@ -46,3 +47,6 @@ The founder rejects sameness ("too alike the project we just did"). Per brand, c
 
 ## Measuring overlays (connectors, callouts) inside animated stages
 Measure anchor points with layout offsets (`offsetLeft/offsetTop` summed up to the container), never `getBoundingClientRect` on first render: the stage is still mid-transform (scale 0.97, translateY) and every point lands a few px off. Founder caught Margin's note dots sitting above the centre of their code lines.
+
+## Product build-in (founder, Ferry hero round 5)
+"Product should load in with stagger and fully load in, plus the numbers count up professionally by sliding up each number." The frame lands first (empty white app), then the whole product builds top to bottom on one `intro` time: sidebar items 25ms apart in parallel with header, tabs, KPI cards (numbers roll via `RollingNumber`, sparks grow from the baseline), the table card, then rows 35ms apart. Done in about 0.9s, and only then does any live story begin. Build the stagger wrapper as a stable module-level component (a wrapper defined inside render remounts and replays on every hover).

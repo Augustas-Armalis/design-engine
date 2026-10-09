@@ -5,7 +5,7 @@ import { useState } from 'react'
 import { MotionConfig, motion } from 'motion/react'
 import { Sailboat } from '@phosphor-icons/react'
 import './ferry/tokens.css'
-import { CountUp, Frame, Reveal } from './kit'
+import { Frame, Reveal, RollingNumber } from './kit'
 import { ease, spring } from './motion'
 import { Product, StatusPill, useLive } from './hero/Story'
 
@@ -54,7 +54,7 @@ export default function App() {
       <div className="relative mx-auto h-[900px] w-[1440px] overflow-hidden bg-[var(--canvas)]">
         {stage && (
           // Folk / Cursor grammar: the only art on the page is one stage panel directly behind the product
-          <motion.div aria-hidden initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.15, duration: 0.9, ease: ease.outQuint }}
+          <motion.div aria-hidden initial={{ opacity: 0, x: 40 }} animate={{ opacity: 1, x: 0 }} transition={{ x: { delay: T.window - 0.05, duration: 1.2, ease: ease.reveal }, opacity: { delay: T.window - 0.05, duration: 0.7, ease: ease.outQuint } }}
             className="absolute left-[600px] top-[118px] h-[900px] w-[1000px] overflow-hidden rounded-[28px] shadow-[inset_0_0_0_1px_rgba(28,40,64,0.06)]"
             style={{ background: 'radial-gradient(120% 90% at 20% 0%, #f3f7ff 0%, rgba(243,247,255,0) 55%), linear-gradient(165deg, #dce7fb 0%, #c7d8f8 48%, #aec6f3 100%)' }}>
             <div className="absolute inset-0 opacity-[0.22] mix-blend-multiply" style={{ backgroundImage: GRAIN }} />
@@ -84,13 +84,13 @@ export default function App() {
           <Reveal at={T.copy + 0.3} y={10}>
             <dl className="mt-14 grid w-[468px] grid-cols-3">
               {[
-                { v: <CountUp to={38} suffix="s" at={T.copy + 0.35} />, l: 'to draft a reply' },
+                { v: <RollingNumber value="38s" at={T.copy + 0.35} />, l: 'to draft a reply' },
                 { v: '24/7', l: 'inbox coverage' },
                 { v: '1 click', l: 'to approve and book' },
               ].map((x, i) => (
                 <div key={i} className={`${i ? 'border-l border-[#e3e5e9] pl-5' : 'pr-5'} ${i === 1 ? 'pr-5' : ''}`}>
                   <dt className="sr-only">{x.l}</dt>
-                  <dd className="tnum font-[family-name:var(--font-display)] text-[30px] font-[600] leading-none tracking-[-0.045em] text-[var(--ink)]">{x.v}</dd>
+                  <dd className="tnum font-[family-name:var(--font-display)] text-[30px] font-[600] leading-[1.1] tracking-[-0.045em] text-[var(--ink)]">{x.v}</dd>
                   <dd className="mt-2 whitespace-nowrap text-[14px] leading-[20px] tracking-[-0.01em] text-[var(--soft)]">{x.l}</dd>
                 </div>
               ))}
@@ -98,14 +98,14 @@ export default function App() {
           </Reveal>
         </main>
 
-        <Reveal at={T.window + 0.6} y={8} className="absolute left-[640px] top-[140px] z-20"><StatusPill pill={s.pill} /></Reveal>
+        <Reveal at={T.window + 1.25} y={8} className="absolute left-[640px] top-[140px] z-20"><StatusPill pill={s.pill} /></Reveal>
 
         <motion.section initial={{ opacity: 0.01, x: 64 }} animate={{ opacity: 1, x: 0 }}
           transition={{ x: { delay: T.window, duration: 1.2, ease: ease.reveal }, opacity: { delay: T.window, duration: 0.6, ease: ease.outQuint } }}
           className="absolute left-[640px] top-[198px] z-10 [mask-image:linear-gradient(to_bottom,#000_540px,transparent_700px)]" role="img" aria-label="Ferry product, sample data: new replies arrive, the AI drafts answers, two are approved and booked as meetings">
           {/* a picture of the product, not a second app: inert keeps its links out of the tab order.
               zoom 0.82 shows the dashboard at Lightfield/Attio hero scale (more of it, ~11.5px text) without a blurry transform */}
-          <div inert><Frame inner={16} pad={6} height={856}><div style={{ zoom: 0.82, width: 1240, height: 1044 }}><Product s={s} /></div></Frame></div>
+          <div inert><Frame inner={16} pad={6} height={856}><div style={{ zoom: 0.82, width: 1240, height: 1044 }}><Product s={s} intro={T.window + 0.45} /></div></Frame></div>
         </motion.section>
 
       </div>

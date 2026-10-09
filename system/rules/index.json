@@ -2020,6 +2020,34 @@
   "origin": "founder"
  },
  {
+  "id": "founder.founder-taste#63",
+  "text": "[founder] Hero products build in fully and in order, and numbers roll: after the frame lands, every part of the product enters on a top-to-bottom stagger (sidebar items, header, tabs, KPI cards, table rows), and every number rolls up digit by digit in its own slot (kit `RollingNumber`), never a plain fade or a whole-number count. The live story starts only after the build completes.",
+  "why": "Founder on Ferry hero round 4: \"product should like load in with stagger and fully load in plus like the numbers to count up professionally by sliding up each number... more professional\".",
+  "applies": "product heroes and product visuals in sections.",
+  "check": "filmstrip at 0.3/0.7/1.0/1.4s shows frame, then staggered contents; KPI digits roll; nothing in the product is static from frame 1.",
+  "checkable": true,
+  "source": "founder, Ferry hero round 4, 2026-10-09; system/kits/product-hero/GUIDE.md",
+  "file": "founder/founder-taste.md",
+  "section": "5. Exceptions & judgement calls",
+  "tags": [
+   "founder",
+   "taste",
+   "hero",
+   "nav",
+   "typography",
+   "copy",
+   "icons",
+   "logo",
+   "layout",
+   "product-card",
+   "background",
+   "buttons",
+   "quality-bar"
+  ],
+  "kind": "source",
+  "origin": "founder"
+ },
+ {
   "id": "dos-and-donts.dos-and-donts#1",
   "text": "[T13] Use as few font sizes as possible in a form; differentiate size only between sections (labels/placeholders at one small size) and actions (the button label larger). The good mock uses 12 for both label and placeholder and 32 for the button label; the bad mock mixes 16 (label), 12 (placeholder), 32 (button).",
   "why": "Every extra size is another thing to decode, so the form takes longer to process.",

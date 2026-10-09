@@ -148,3 +148,37 @@ export function InView({ i = 0, y = 24, className, children }: { i?: number; y?:
     </motion.div>
   )
 }
+
+/** Rolling number (NumberFlow-style): every digit sits in its own masked slot and rolls up to its value; symbols ($ , . % s)
+ *  stay still. On mount it rolls up from 0 at `at` seconds with a small left-to-right stagger; later changes roll only the
+ *  digits that changed. Digits align from the right so 720 -> 721 moves one slot. Screen readers get the plain value.
+ *  Slots are 1.1em tall: give static siblings (other stats in a row) line-height 1.1 too, or the rows sit 0.1em apart. */
+export function RollingNumber({ value, at = 0, stagger = 0.045, className = '' }: { value: string; at?: number; stagger?: number; className?: string }) {
+  const still = useReducedMotion()
+  const [born] = useState(() => performance.now())
+  if (still) return <span className={`tabular-nums ${className}`}>{value}</span>
+  const chars = [...value]
+  const wait = Math.max(0, at - (performance.now() - born) / 1000)
+  const first = wait > 0
+  return (
+    <span className={`relative inline-flex tabular-nums ${className}`}>
+      <span className="sr-only">{value}</span>
+      <span aria-hidden className="inline-flex">
+        {chars.map((c, i) => {
+          const key = chars.length - i // keyed from the right so slots stay put when the value changes
+          if (!/\d/.test(c)) return <span key={`s${key}${c}`}>{c}</span>
+          const d = Number(c)
+          return (
+            <span key={`d${key}`} className="relative inline-block h-[1.1em] overflow-hidden leading-[1.1em] [mask-image:linear-gradient(to_bottom,transparent,#000_18%,#000_82%,transparent)]">
+              <span className="invisible">0</span>
+              <motion.span className="absolute inset-x-0 top-0 flex flex-col" initial={{ y: '0%' }} animate={{ y: `${-d * 10}%` }}
+                transition={{ delay: (first ? wait : 0) + i * stagger, duration: first ? 1.1 : 0.6, ease: ease.outExpo }}>
+                {'0123456789'.split('').map((n) => <span key={n} className="h-[1.1em]">{n}</span>)}
+              </motion.span>
+            </span>
+          )
+        })}
+      </span>
+    </span>
+  )
+}

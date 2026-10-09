@@ -2,7 +2,8 @@
 // refined outline icon family (Phosphor regular, 16px); records as solid colour tiles with white filled glyphs; favourites,
 // lists and agents as their own groups; sentence-case group headers with a hover "+". Active = grey fill + ink, icon goes fill.
 import { useState } from 'react'
-import { motion } from 'motion/react'
+import type React from 'react'
+import { motion, useReducedMotion } from 'motion/react'
 import {
   House, Tray, CheckSquare, NotePencil, PhoneCall, ChartBar, Lightning, Gear, Question, UserPlus, Users, Buildings, Handshake,
   PaperPlaneTilt, Robot, EnvelopeSimple, Star, MagnifyingGlass, Sparkle, SidebarSimple, CaretDown, Plus, Sailboat, Hash, Waveform,
@@ -41,29 +42,38 @@ function NavRow({ r, active, hover, onHover }: { r: Row; active?: boolean; hover
   )
 }
 
-export function Sidebar() {
+function In({ i, intro, className, children }: { i: number; intro?: number; className?: string; children: React.ReactNode }) {
+  const still = useReducedMotion()
+  if (intro == null || still) return <div className={className}>{children}</div>
+  return <motion.div className={className} initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: intro + i * 0.025, duration: 0.45, ease: [0.22, 1, 0.36, 1] }}>{children}</motion.div>
+}
+
+/** intro (hero only): seconds at which the sidebar builds in, top to bottom, 25ms per item. Omit for a static sidebar. */
+export function Sidebar({ intro }: { intro?: number }) {
   const [hover, setHover] = useState<string | null>(null)
-  const row = (r: Row, active = false) => <NavRow key={r.label} r={r} active={active} hover={hover === r.label} onHover={() => setHover(r.label)} />
+  let n = 0
+  const k = () => n++
+  const row = (r: Row, active = false) => <In key={r.label} i={k()} intro={intro}><NavRow r={r} active={active} hover={hover === r.label} onHover={() => setHover(r.label)} /></In>
   return (
     <aside onMouseLeave={() => setHover(null)} className="flex h-full w-[248px] shrink-0 flex-col border-r border-[var(--line)] bg-[var(--side)]" aria-label="Main navigation">
-      <div className="flex h-12 shrink-0 items-center gap-2 px-3">
+      <In i={k()} intro={intro} className="flex h-12 shrink-0 items-center gap-2 px-3">
         <button type="button" className="press -ml-1 flex h-8 items-center gap-2 rounded-[8px] pl-1 pr-1.5 hover:bg-[var(--hover)]">
           <span className="grid size-6 place-items-center rounded-[7px] bg-[linear-gradient(180deg,#2f7bff,#1d5fe0)] text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.25),0_1px_2px_rgba(29,95,224,0.35)]"><Sailboat size={14} weight="fill" /></span>
           <span className="t14 font-[600] text-[var(--ink)]">Ferry</span><CaretDown size={12} weight="bold" className="text-[var(--soft)]" />
         </button>
         <button type="button" aria-label="Collapse sidebar" className="press ml-auto grid size-7 place-items-center rounded-[7px] text-[#7c7f85] hover:bg-[var(--hover)]"><SidebarSimple size={16} /></button>
-      </div>
-      <div className="flex shrink-0 gap-1.5 px-3 pb-3">
+      </In>
+      <In i={k()} intro={intro} className="flex shrink-0 gap-1.5 px-3 pb-3">
         <button type="button" className="btn-white press flex h-7 flex-1 items-center gap-2 rounded-[8px] px-2 t14 leading-none text-[var(--sub)]">
           <MagnifyingGlass size={15} className="text-[#7c7f85]" />Search<kbd className="ml-auto flex h-[18px] items-center rounded-[5px] px-1 font-sans text-[11px] leading-none text-[var(--soft)] shadow-[inset_0_0_0_1px_var(--grid)]">⌘K</kbd>
         </button>
         <button type="button" aria-label="Ask AI" className="btn-white press grid size-7 place-items-center rounded-[8px] text-[var(--blue)]"><Sparkle size={15} weight="fill" /></button>
-      </div>
+      </In>
       <nav className="min-h-0 flex-1 overflow-y-auto px-2 pb-6 [mask-image:linear-gradient(to_bottom,#000_calc(100%-28px),transparent)]">
         <div className="space-y-px">{PAGES.map((r) => row(r, r.label === 'Home'))}</div>
         {GROUPS.map((g) => (
           <div key={g.title} className="group/g mt-3.5">
-            <div className="flex h-6 items-center justify-between px-2 t12 text-[var(--soft)]">{g.title}<Plus size={12} weight="bold" className="opacity-0 transition-opacity group-hover/g:opacity-100" /></div>
+            <In i={k()} intro={intro} className="flex h-6 items-center justify-between px-2 t12 text-[var(--soft)]">{g.title}<Plus size={12} weight="bold" className="opacity-0 transition-opacity group-hover/g:opacity-100" /></In>
             <div className="space-y-px">{g.rows.map((r) => row(r))}</div>
           </div>
         ))}

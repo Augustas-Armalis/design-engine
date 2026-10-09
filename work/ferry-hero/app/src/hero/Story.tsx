@@ -5,6 +5,7 @@ import { useEffect, useReducer } from 'react'
 import { AnimatePresence, motion, useReducedMotion } from 'motion/react'
 import { ArrowUpRight, CalendarCheck, Check, CircleNotch, Cursor, FunnelSimple, House, Plus, Sparkle, Tray } from '@phosphor-icons/react'
 import { Sidebar } from '../ferry/Shell'
+import { RollingNumber } from '../kit'
 import { AiStatus, Btn, CardHead, Checkbox, Chip, Logo, Person, Spark } from '../ferry/ui'
 import { INTENT_HUE, REPLIES, type Reply } from '../ferry/data'
 
@@ -24,9 +25,9 @@ const IN: Record<string, Omit<Row, 'ai' | 'received'>> = {
 }
 type Act = { t: number; k: 'arrive' | 'ready' | 'approve' | 'book'; id: string }
 export const SCRIPT: Act[] = [
-  { t: 1.5, k: 'arrive', id: 'n1' }, { t: 2.4, k: 'ready', id: 'n1' }, { t: 3.3, k: 'approve', id: 'n1' }, { t: 4.3, k: 'book', id: 'n1' },
-  { t: 5.2, k: 'arrive', id: 'n2' }, { t: 6.1, k: 'ready', id: 'n2' }, { t: 6.9, k: 'arrive', id: 'n3' }, { t: 7.8, k: 'ready', id: 'n3' },
-  { t: 8.6, k: 'approve', id: 'n2' }, { t: 9.6, k: 'book', id: 'n2' }, { t: 10.5, k: 'arrive', id: 'n4' }, { t: 11.4, k: 'ready', id: 'n4' },
+  { t: 2.0, k: 'arrive', id: 'n1' }, { t: 2.9, k: 'ready', id: 'n1' }, { t: 3.8, k: 'approve', id: 'n1' }, { t: 4.8, k: 'book', id: 'n1' },
+  { t: 5.7, k: 'arrive', id: 'n2' }, { t: 6.6, k: 'ready', id: 'n2' }, { t: 7.4, k: 'arrive', id: 'n3' }, { t: 8.3, k: 'ready', id: 'n3' },
+  { t: 9.1, k: 'approve', id: 'n2' }, { t: 10.1, k: 'book', id: 'n2' }, { t: 11.0, k: 'arrive', id: 'n4' }, { t: 11.9, k: 'ready', id: 'n4' },
 ]
 const first = (n: string) => n.split(' ')[0]
 
@@ -55,14 +56,9 @@ export function useLive(): State {
 
 const ease = [0.22, 1, 0.36, 1] as const
 
-function Odometer({ value }: { value: string }) {
-  return (
-    <span className="relative inline-flex overflow-hidden">
-      <AnimatePresence mode="popLayout" initial={false}>
-        <motion.span key={value} initial={{ y: '90%', opacity: 0 }} animate={{ y: 0, opacity: 1 }} exit={{ y: '-90%', opacity: 0 }} transition={{ duration: 0.5, ease }}>{value}</motion.span>
-      </AnimatePresence>
-    </span>
-  )
+// numbers roll digit by digit (kit RollingNumber); `at` = when the first roll-up starts
+function Odometer({ value, at = 0 }: { value: string; at?: number }) {
+  return <RollingNumber value={value} at={at} />
 }
 
 /* ---------- status pill above the window ---------- */
@@ -114,7 +110,12 @@ function AiCell({ r }: { r: Row }) {
   )
 }
 
-export function Product({ s }: { s: State }) {
+/** intro: when the window has landed (s). The whole product builds once, top to bottom: sidebar items (25ms apart) alongside
+ *  the header, tabs, KPI cards (numbers roll up digit by digit, sparks grow), then the table rows (35ms apart). Rows that
+ *  arrive later use their own height build. The live SCRIPT starts after this finishes. */
+export function Product({ s, intro = 0 }: { s: State; intro?: number }) {
+  const still = useReducedMotion()
+  const build = (d: number) => (still ? { initial: false as const } : { initial: { opacity: 0, y: 6 }, animate: { opacity: 1, y: 0 }, transition: { delay: intro + d, duration: 0.45, ease } })
   const th = 'h-8 border-y border-[var(--grid)] px-3 text-left t13 font-[500] text-[var(--sub)] whitespace-nowrap'
   const td = 'border-b border-[var(--grid)] px-3 align-middle whitespace-nowrap'
   const pct = (n: number) => `+${(n * 100).toFixed(1)}%`
@@ -126,35 +127,35 @@ export function Product({ s }: { s: State }) {
   ]
   return (
     <div className="flex h-full bg-white text-[var(--ink)]">
-      <Sidebar />
+      <Sidebar intro={intro} />
       <div className="flex min-w-0 flex-1 flex-col">
         <div className="flex h-12 shrink-0 items-center gap-2 border-b border-[var(--line)] px-5">
-          <House size={16} className="text-[var(--soft)]" /><span className="t14 font-[600]">Home</span><span className="t14 text-[var(--soft)]">· Last 30 days</span>
-          <div className="ml-auto flex items-center gap-2"><Btn icon={ArrowUpRight}>Share</Btn><Btn primary icon={Plus}>New campaign</Btn></div>
+          <motion.span {...build(0)} className="flex items-center gap-2"><House size={16} className="text-[var(--soft)]" /><span className="t14 font-[600]">Home</span><span className="t14 text-[var(--soft)]">· Last 30 days</span></motion.span>
+          <motion.div {...build(0.05)} className="ml-auto flex items-center gap-2"><Btn icon={ArrowUpRight}>Share</Btn><Btn primary icon={Plus}>New campaign</Btn></motion.div>
         </div>
-        <div className="flex h-12 shrink-0 items-center gap-1 border-b border-[var(--line)] px-3">
+        <motion.div {...build(0.08)} className="flex h-12 shrink-0 items-center gap-1 border-b border-[var(--line)] px-3">
           {([['Overview'], ['Replies', 12 + s.arrived], ['Meetings', 3 + s.booked], ['Tasks', 8]] as [string, number?][]).map(([k, n], i) => (
             <span key={k} className={`relative flex h-12 items-center gap-1.5 px-2 t14 leading-none ${i ? 'text-[var(--sub)]' : 'text-[var(--ink)]'}`}>
-              {k}{n != null && <span className="tnum t12 text-[var(--soft)]"><Odometer value={String(n)} /></span>}
+              {k}{n != null && <span className="tnum t12 text-[var(--soft)]"><Odometer value={String(n)} at={intro + 0.12 + i * 0.04} /></span>}
               {!i && <span className="absolute inset-x-2 -bottom-px h-[1.5px] rounded-full bg-[var(--ink)]" />}
             </span>
           ))}
-        </div>
+        </motion.div>
         <div className="flex-1 space-y-4 bg-[#fafafa] p-5">
           <div className="grid grid-cols-4 overflow-hidden rounded-[12px] border border-[var(--line)] bg-white">
             {kpis.map((k, i) => (
-              <div key={k.l} className={`flex items-end gap-3 px-4 py-3.5 ${i ? 'border-l border-[var(--line)]' : ''}`}>
+              <motion.div key={k.l} {...build(0.12 + i * 0.06)} className={`flex items-end gap-3 px-4 py-3.5 ${i ? 'border-l border-[var(--line)]' : ''}`}>
                 <div className="min-w-0">
                   <div className="t13 text-[var(--sub)]"><span className="underline decoration-[#c9ccd1] decoration-dotted decoration-1 underline-offset-[3px]">{k.l}</span></div>
-                  <div className="mt-1.5 flex items-baseline gap-2"><span className="num"><Odometer value={k.v} /></span>
-                    <span className={`tnum t12 ${k.down ? 'text-[#c2262f]' : 'text-[#0a7a43]'}`}><Odometer value={k.d} /></span></div>
+                  <div className="mt-1.5 flex items-baseline gap-2"><span className="num"><Odometer value={k.v} at={intro + 0.18 + i * 0.06} /></span>
+                    <span className={`tnum t12 ${k.down ? 'text-[#c2262f]' : 'text-[#0a7a43]'}`}><Odometer value={k.d} at={intro + 0.4 + i * 0.06} /></span></div>
                 </div>
-                <span className="mb-1 ml-auto"><Spark values={k.sp} down={k.down} /></span>
-              </div>
+                <motion.span className="mb-1 ml-auto origin-bottom" initial={still ? false : { scaleY: 0 }} animate={{ scaleY: 1 }} transition={{ delay: intro + 0.3 + i * 0.06, duration: 0.6, ease }}><Spark values={k.sp} down={k.down} /></motion.span>
+              </motion.div>
             ))}
           </div>
-          <section aria-label="Replies to handle (sample)" className="overflow-hidden rounded-[12px] border border-[var(--line)] bg-white">
-            <CardHead icon={Tray} hue="#ea7a1f" title="Replies to handle" meta={<Odometer value={String(8 + s.arrived - s.booked)} />}>
+          <motion.section {...build(0.36)} aria-label="Replies to handle (sample)" className="overflow-hidden rounded-[12px] border border-[var(--line)] bg-white">
+            <CardHead icon={Tray} hue="#ea7a1f" title="Replies to handle" meta={<Odometer value={String(8 + s.arrived - s.booked)} at={intro + 0.42} />}>
               <span className="btn-white inline-flex h-7 items-center gap-1.5 rounded-[8px] px-2 t14 leading-none"><FunnelSimple size={16} className="text-[var(--soft)]" /><span className="text-[var(--sub)]">Sorted by</span>Newest</span>
             </CardHead>
             <table className="w-full border-separate border-spacing-0">
@@ -163,7 +164,7 @@ export function Product({ s }: { s: State }) {
                 <th className={th}>Lead</th><th className={th}>Intent</th><th className={`${th} w-[200px]`}>AI</th><th className={`${th} text-right`}>Deal size</th><th className={th}>Company</th><th className={`${th} pr-4`}>Received</th>
               </tr></thead>
               <tbody>
-                {s.rows.map((r) => {
+                {s.rows.map((r, ri) => {
                   const cells = [
                     <span className="flex"><Checkbox label={`Select ${r.lead}`} /></span>,
                     <Person name={r.lead} />, <Chip hue={INTENT_HUE[r.intent]}>{r.intent}</Chip>, <AiCell r={r} />,
@@ -172,19 +173,19 @@ export function Product({ s }: { s: State }) {
                     <span className="tnum t14 text-[var(--sub)]">{r.received}</span>,
                   ]
                   return (
-                    <tr key={r.id} className={`transition-colors duration-700 ${r.fresh && r.ai !== 'booked' ? 'bg-[var(--sel)]' : ''}`}>
+                    <motion.tr key={r.id} {...(r.fresh ? { initial: false as const } : build(0.46 + ri * 0.035))} className={`transition-colors duration-700 ${r.fresh && r.ai !== 'booked' ? 'bg-[var(--sel)]' : ''}`}>
                       {cells.map((c, i) => (
                         <td key={i} className={`${td} ${i === 0 ? 'pl-4 pr-0' : ''} ${i === 6 ? 'pr-4' : ''}`}>
                           <motion.div initial={r.fresh ? { height: 0, opacity: 0 } : false} animate={{ height: 36, opacity: 1 }} transition={{ duration: 0.45, ease }}
                             className={`flex items-center ${i === 3 ? '' : 'overflow-hidden'} ${i === 4 ? 'justify-end' : ''}`}>{c}</motion.div>
                         </td>
                       ))}
-                    </tr>
+                    </motion.tr>
                   )
                 })}
               </tbody>
             </table>
-          </section>
+          </motion.section>
         </div>
       </div>
     </div>
