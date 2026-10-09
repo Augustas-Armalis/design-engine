@@ -8,3 +8,5 @@
 - Variety row: nav G06 utility strip + main bar; buttons deep chromatic fill r10 + underline text link; type voice transitional-serif (Source Serif 4 450, opsz 60, 76px, -0.02em); radius 10/16; motion: tiles rise in turn, then fail -> fixing -> pass, evidence streams, ring rolls 91 -> 96%.
 - Light: Modal's floor glow under the product only, grain at .05 soft-light; nothing behind the headline.
 - Divergence vs Tracewell / Arcwise: serif vs grotesks, bento vs band vs tilt, utility-strip nav vs hairline bar vs capsule, deep green r10 vs light pill vs deep indigo pill.
+
+<!-- variety: layout=bento nav=G06 button=arrow type=transitional-serif palette=green-black system=meridian -->

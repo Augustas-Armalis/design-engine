@@ -8,3 +8,5 @@
 - Variety row: nav G02 floating capsule (knowledge/web/nav-grammars.md); buttons deep-chromatic pill + glass pill (dark-mode-premium.md rule: inverse / deep / glass family); type voice Sora 600 -0.04em centred with one tinted line (L .8); radius pill + 12/18; motion: tilt-land, then ask -> answer.
 - Divergence vs Tracewell (same batch): centred vs band, capsule vs hairline bar, deep indigo pill vs light pill, Sora vs Schibsted, 3D tilt vs flat frame.
 - Light: the product window itself (edge spotlight + soft key wash at <= .16 under the window), no colour blobs behind the type.
+
+<!-- variety: layout=tilted-3d nav=G02 button=lamp type=geometric-studio palette=blue-black system=polar -->

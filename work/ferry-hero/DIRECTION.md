@@ -42,3 +42,5 @@ Stage (product entrance, re-tuned to travel from the right), Frame (double bezel
 - Round 1 verdict: kept title, subtitle, buttons, nav, product; rejected the sea-chart contour field and the three steps ("so stupid"). Removed both; studied Lightfield, Folk, Attio, Linear, Ramp, Pylon, Clay, Granola (knowledge/benchmarks/split-heroes).
 - Round 2 verdict: "the bluish not bad"; unsure about the pop-up draft card and the dashboard size; "just empty... too simple". Now: blue grain stage is the default; no pop-up card; the dashboard renders at 0.82 zoom so more of it shows; the product is live (replies arrive, AI drafts, a cursor approves inline, rows book, KPIs tick) and a Lightfield-style status pill above the window narrates the agent.
 - override: rails because rails crossing a product that bleeds off two edges would cut it; the chart field is the texture and it fades behind the copy instead.
+
+<!-- variety: layout=split-bleed nav=G03 button=lamp type=swiss-regular palette=light system=kestrel -->

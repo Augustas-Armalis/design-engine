@@ -7,3 +7,5 @@
 - Bound system: press (Instrument Serif 400 with italic emphasis, Onest body). Light.
 - Variety row: nav G12 centred wordmark (links left, serif wordmark centre, actions right, hairline rule); buttons ink rectangle r3 + editorial underline link; type voice editorial serif at 92px; radius 3/6/8; motion: sheet rises, answer types, chips pop, leaders draw, cards slide in, figures roll.
 - Divergence vs the three dark V1 heroes: light warm paper, serif display, document not dashboard, centred-wordmark nav, sharp ink rectangle.
+
+<!-- variety: layout=annotated-document nav=G12 button=compact type=editorial-serif palette=light system=press -->

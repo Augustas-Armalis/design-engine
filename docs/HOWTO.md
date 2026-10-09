@@ -41,6 +41,13 @@ node tools/ledger.mjs list
 .venv/bin/python tools/build_index.py query hero headline  # find rules by keyword
 .venv/bin/python tools/select_rules.py --name acme-hero --type hero --brief "..."   # 50-rule slate for this brief
 node tools/compile_system.mjs --all                         # seeds -> tokens.json, theme.css, GUIDE.md, showcase.html
+node tools/variety.mjs pick --mode dark --seed acme          # fresh layout / nav / button / type / palette / system vs recent builds
+node tools/variety.mjs status                               # what recent builds used, what was never used
+node tools/new_build.mjs acme --system polar --port 4340    # scaffold a hero from the product-hero kit
+node tools/shot.mjs http://localhost:4340 work/acme/acme-4k.png --scale 2.6666667 --wait 6000   # 4K still
+node tools/record.mjs http://localhost:4340 --name acme     # 4K 60fps load-in video (Reel)
+node tools/compare.mjs <url> <reference.png> work/acme/cmp  # side-by-side + onion skin vs a reference
+tools/export_package.sh                                     # build "Larpo Engine V1.zip" for the team
 ```
 
 ### House design systems

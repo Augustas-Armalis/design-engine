@@ -120,10 +120,10 @@
 }
 .btn-g-glass-2nd {
   color: var(--surface);                                            /* white label over imagery */
-  background: rgb(255 255 255 / .16);                               /* Mercury rgba(175 178 206/.2) */
+  background: rgb(0 0 0 / .2);                                      /* Convex smoke .2 (bright imagery); Mercury tints .2 lilac on dark imagery */
   -webkit-backdrop-filter: blur(20px) saturate(1.4); backdrop-filter: blur(20px) saturate(1.4);
-  --_bevel: inset 0 0 0 1px rgb(255 255 255 / .34), inset 0 1px 0 rgb(255 255 255 / .28);
-  --_hover: rgb(255 255 255 / .10);                                 /* .2 -> .28 */
+  --_bevel: inset 0 0 0 1px rgb(255 255 255 / .36), inset 0 1px 0 rgb(255 255 255 / .22);
+  --_hover: rgb(255 255 255 / .10);                                 /* Mercury .2 -> .28 step */
   text-shadow: 0 1px 2px rgb(0 0 0 / .12);
 }
 :is([data-theme="dark"], .dark) .btn-g-glass-2nd {
@@ -206,9 +206,9 @@
 .btn-g-push:active, .btn-g-push-2nd:active { transform: none; }
 .btn-g-push:active .bgx-face, .btn-g-push-2nd:active .bgx-face { transform: translateY(3px); transition-duration: 34ms; }  /* Comeau: 34ms in, 250ms out */
 :is([data-theme="dark"], .dark) .btn-g-push { background: color-mix(in oklab, var(--accent) 52%, #000); box-shadow: 0 8px 20px -10px rgb(0 0 0 / .7); }
-:is([data-theme="dark"], .dark) .btn-g-push-2nd { background: color-mix(in oklab, var(--canvas) 60%, #000); box-shadow: 0 8px 20px -10px rgb(0 0 0 / .7); }
+:is([data-theme="dark"], .dark) .btn-g-push-2nd { background: color-mix(in oklab, var(--ink) 5%, var(--canvas)); box-shadow: 0 0 0 1px rgb(255 255 255 / .06), 0 8px 20px -10px rgb(0 0 0 / .7); }
 :is([data-theme="dark"], .dark) .btn-g-push-2nd .bgx-face {
-  background: color-mix(in oklab, var(--ink) 9%, var(--canvas));
+  background: color-mix(in oklab, var(--ink) 13%, var(--canvas));
   box-shadow: inset 0 0 0 1px rgb(255 255 255 / .1), inset 0 1px 0 rgb(255 255 255 / .08);
 }
 
@@ -456,7 +456,10 @@
 .btn-g-tile-2nd .bgx-tile { background: color-mix(in oklab, var(--ink) 5%, var(--surface)); }
 @media (hover: hover) { .btn-g-tile:hover .bgx-arrow, .btn-g-tile-2nd:hover .bgx-arrow { transform: translateX(3px); } }
 .btn-g-tile:active, .btn-g-tile-2nd:active { transform: scale(.98); }
-:is([data-theme="dark"], .dark) .btn-g-tile { box-shadow: 0 2px 10px rgb(0 0 0 / .5), 0 0 0 1px rgb(255 255 255 / .1); }
+:is([data-theme="dark"], .dark) .btn-g-tile {
+  background: var(--ink); box-shadow: 0 2px 10px rgb(0 0 0 / .5);
+  --_hover: color-mix(in oklab, var(--ink), #fff 70%);              /* dark: brighten, never grey out */
+}
 :is([data-theme="dark"], .dark) .btn-g-tile-2nd { box-shadow: 0 0 0 1px rgb(255 255 255 / .1); --_bevel: inset 0 1px 0 rgb(255 255 255 / .05); }
 
 /* =====================================================================

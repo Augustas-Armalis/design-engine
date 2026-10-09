@@ -17,3 +17,14 @@ Web-sourced notes (not from the corpus books). Format follows `../SCHEMA.md`. Pr
 
 ## Known gaps (see section 7 of each file)
 Apple HIG motion page and m3.material.io were client-rendered and unreadable (values taken from Android/material-web/androidx primary sources and WWDC18); Dan Saffer's book and animations.dev paid content not read; Paco Coursey and Benji Taylor yielded little numeric content; several engine-note claims (LCP opacity-0 behavior, FLIP, scheduler.yield, ScrollTrigger refresh) are from general knowledge and flagged.
+
+## Variety and premium dark (studied 2026-10-09, measured with Playwright)
+
+| File | What it covers | Status |
+|---|---|---|
+| `button-grammars.md` | 16 button grammars measured on 32 sites (flat pill, glass, keycap, push, inner glow, spectrum edge, lamp-lit ink, auth stack, compact rectangle, mono caps, arrow morph, icon tile, chip row, arrow link, slide swap, spotlight), light + dark recipes, 12 rules; CSS in `system/variety/buttons.css` | studied |
+| `nav-grammars.md` | 14 nav grammars measured on 61 sites (hairline glass bar, floating capsule, centred island, scroll morph, mono operator, utility strip, hanging sheet, proof chips, command search, section index, micro strip, centred wordmark, brand band, text-only editorial), 11 rules; specimen `system/variety/navs.html` | studied |
+| `type-voices.md` | 16 type voices from 50 measured hero headlines (premium h1 weight is mostly 400-450), exact hero specs, fontsource packages, 11 rules; data `system/variety/type-voices.json` | studied |
+| `dark-mode-premium.md` | 19 dark folds measured: light sources, colour budget, product-window edges, dark buttons, hover, grain; 16 rules; six bound dark recipes in `system/variety/dark-recipes.json` | studied |
+
+Pick a fresh combination across these with `node tools/variety.mjs pick --mode dark|light --seed <name>`.

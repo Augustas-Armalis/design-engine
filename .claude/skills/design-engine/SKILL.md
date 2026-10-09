@@ -22,7 +22,7 @@ node tools/ledger.mjs add reports/<project> --verdict accept|reject --why "<foun
 
 1. Restate the brief in one line (product, audience, the one action, the proof needed). Ask one sharp question only if a guess could be badly wrong.
 2. Read the last 8 entries in `ledger/entries/`, rejects first.
-3. Deal: run `deal.mjs`. Choose one of the three candidates (or combine two axes from different ones) and say why in `work/<project>/DIRECTION.md`. Set `"chosen": N` in `direction.json`.
+3. Variety: run `node tools/variety.mjs pick --mode dark|light --seed <project>` and paste its `<!-- variety -->` line into DIRECTION.md (fresh layout, nav, button, type voice, palette, system vs the last six builds). Then deal: run `deal.mjs`. Choose one of the three candidates (or combine two axes from different ones) and say why in `work/<project>/DIRECTION.md`. Set `"chosen": N` in `direction.json`.
 4. Pull rules for the page type: query the index for the relevant topics (typography, spacing, hero, forms, motion, colour, copy). Open `system/` tokens and `knowledge/web/palette-recipes.md` / `typography.md` / `motion-tokens.json` as needed. Open `examples/ui-pedia/<topic>/` figures when unsure what "right" looks like.
 5. Build. Plain HTML/CSS for hero concepts and sections; Next.js + Tailwind v4 + coss ui for apps (see global instructions: render prop not asChild, size props not custom padding).
 6. Check, fix every FAIL, answer every WARN (fix or justify in DIRECTION.md), Read the screenshots and critique. Run the diversity gate.

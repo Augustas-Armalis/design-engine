@@ -40,3 +40,5 @@ hairline ring, top edge highlight and a soft drop; monochrome spans, the running
 floating AI panel explains the failure and proposes a diff.
 - override: signal zero-radius containers because the founder rejected the hard brutalist read; frame r16, controls pill/7.
 - override: signal offset block shadow elevation, same reason.
+
+<!-- variety: layout=band nav=G01 button=flat type=swiss-regular palette=graphite system=signal -->
