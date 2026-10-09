@@ -5,7 +5,7 @@ import { useState } from 'react'
 import { MotionConfig, motion } from 'motion/react'
 import { Sailboat } from '@phosphor-icons/react'
 import './ferry/tokens.css'
-import { Frame, Reveal } from './kit'
+import { CountUp, Frame, Reveal } from './kit'
 import { ease, spring } from './motion'
 import { Product, StatusPill, useLive } from './hero/Story'
 
@@ -61,9 +61,13 @@ export default function App() {
           </motion.div>
         )}
 
+        {/* founder-approved texture: a fine dot grid on the copy side only, cleared behind the type, gone before the stage */}
+        <motion.div aria-hidden initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.1, duration: 1 }}
+          className="pointer-events-none absolute inset-y-0 left-0 w-[640px] bg-[radial-gradient(rgba(28,40,64,0.17)_1px,transparent_1.2px)] bg-[size:16px_16px] bg-[position:8px_8px] [mask-image:radial-gradient(ellipse_62%_46%_at_38%_50%,transparent_42%,#000_100%),linear-gradient(to_right,#000_70%,transparent)] [mask-composite:intersect]" />
+
         <Nav />
 
-        <main className="pointer-events-none absolute left-[80px] top-[286px] z-20 w-[540px] [&>*]:pointer-events-auto">
+        <main className="pointer-events-none absolute left-[80px] top-[232px] z-20 w-[540px] [&>*]:pointer-events-auto">
           <Reveal at={T.copy} y={14} blur>
             <h1 className="font-[family-name:var(--font-display)] text-[74px] font-[600] leading-[0.98] tracking-[-0.052em] text-[var(--ink)]">Turn Replies<br />Into Meetings</h1>
           </Reveal>
@@ -75,6 +79,22 @@ export default function App() {
               <a href="#" className="btn-ink press flex h-11 items-center rounded-[14px] px-5 text-[18px] font-[550] tracking-[-0.54px]">Start free</a>
               <a href="#" className="text-[18px] font-[500] tracking-[-0.54px] text-[var(--ink)] underline decoration-transparent underline-offset-4 transition-colors hover:decoration-[var(--ink)]">Book a demo</a>
             </div>
+          </Reveal>
+          {/* product specs, not customer results: nothing here claims proof */}
+          <Reveal at={T.copy + 0.3} y={10}>
+            <dl className="mt-14 grid w-[468px] grid-cols-3">
+              {[
+                { v: <CountUp to={38} suffix="s" at={T.copy + 0.35} />, l: 'to draft a reply' },
+                { v: '24/7', l: 'inbox coverage' },
+                { v: '1 click', l: 'to approve and book' },
+              ].map((x, i) => (
+                <div key={i} className={`${i ? 'border-l border-[#e3e5e9] pl-5' : 'pr-5'} ${i === 1 ? 'pr-5' : ''}`}>
+                  <dt className="sr-only">{x.l}</dt>
+                  <dd className="tnum font-[family-name:var(--font-display)] text-[30px] font-[600] leading-none tracking-[-0.045em] text-[var(--ink)]">{x.v}</dd>
+                  <dd className="mt-2 whitespace-nowrap text-[14px] leading-[20px] tracking-[-0.01em] text-[var(--soft)]">{x.l}</dd>
+                </div>
+              ))}
+            </dl>
           </Reveal>
         </main>
 
