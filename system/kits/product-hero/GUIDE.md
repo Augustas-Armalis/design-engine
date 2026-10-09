@@ -23,6 +23,8 @@ Start a build: `node tools/new_build.mjs <name> --system <slug>` (copies `templa
 
 ## The timeline discipline (non-negotiable)
 
+0. **The kit stagger is a tool, not the default.** Founder on Nocturne: repeating "everything loads in" on every brand is "noobish". Each brand gets one conceptual reveal tied to its idea; copy is readable by ~300ms unless the concept needs a reveal; at most 2-3 entrance groups, settled by ~1.2-1.5s. `Word` (word-by-word blur) is for one brand at a time, never by reflex.
+
 1. One `T` object holds every entrance time; every delay is derived from it.
 2. Order: frame lines, nav (logo, track, actions), headline words, subtitle, CTAs, stage, stage contents in reading order (sidebar, header, KPIs, chart, side panel), decorative tiles, routes, landing dots.
 3. Nothing is visible before its moment. Loops (pulses, comets, floats) start only after their element's entrance, and every looping keyframe array starts at opacity 0 (Framer Motion paints the first keyframe during the delay; Margin build 1 showed a static red dot from page load).

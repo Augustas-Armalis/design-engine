@@ -1488,6 +1488,34 @@
   "origin": "founder"
  },
  {
+  "id": "founder.founder-taste#44",
+  "text": "[founder] Do not ship the generic \"everything loads in\" parade (every word, block and row rising out of blur in sequence). Choreograph the load-in around the brand's idea with ONE conceptual reveal (dawn light sweeping across a dark product, ink developing on paper, a flow drawing itself), and keep the rest either present at first paint or arriving in at most 2-3 quick groups within ~1.2s. Word-by-word headline reveals are a deliberate choice for one brand, not the default. Vary the motion vocabulary per brand exactly like layout and type.",
+  "why": "Founder on Nocturne: \"not up to our quality levels... everything is just loading in and it's a bit noobish\". Kestrel's load-in was praised once; repeating the same kit stagger on Margin, Strata and Nocturne turned it into a template. Research agrees: 8 of 15 top heroes show the headline in the first frame and the median hero settles in ~1.5s (knowledge/web/product-motion-patterns.md).",
+  "applies": "every hero load-in.",
+  "check": "filmstrip at 0/300/800/1500ms: the composed hero (headline + CTA) is readable by 300ms unless the concept needs otherwise; entrance groups <= 3; DIRECTION.md names the conceptual reveal and how it differs from the last build's.",
+  "checkable": true,
+  "source": "founder, Nocturne build 1",
+  "file": "founder/founder-taste.md",
+  "section": "2. Rules",
+  "tags": [
+   "founder",
+   "taste",
+   "hero",
+   "nav",
+   "typography",
+   "copy",
+   "icons",
+   "logo",
+   "layout",
+   "product-card",
+   "background",
+   "buttons",
+   "quality-bar"
+  ],
+  "kind": "source",
+  "origin": "founder"
+ },
+ {
   "id": "dos-and-donts.dos-and-donts#1",
   "text": "[T13] Use as few font sizes as possible in a form; differentiate size only between sections (labels/placeholders at one small size) and actions (the button label larger). The good mock uses 12 for both label and placeholder and 32 for the button label; the bad mock mixes 16 (label), 12 (placeholder), 32 (button).",
   "why": "Every extra size is another thing to decode, so the form takes longer to process.",

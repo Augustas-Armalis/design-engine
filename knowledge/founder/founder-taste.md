@@ -191,6 +191,10 @@ Every rule here is a direct founder verdict on real output. It outranks books, w
   **Why** Founder on Strata's engraved landscape.
   **Applies to** signature visuals. **Check** DIRECTION.md names the bespoke visual and why it fits the product. **Source** founder, Strata build 1
 
+- **RULE** [founder] Do not ship the generic "everything loads in" parade (every word, block and row rising out of blur in sequence). Choreograph the load-in around the brand's idea with ONE conceptual reveal (dawn light sweeping across a dark product, ink developing on paper, a flow drawing itself), and keep the rest either present at first paint or arriving in at most 2-3 quick groups within ~1.2s. Word-by-word headline reveals are a deliberate choice for one brand, not the default. Vary the motion vocabulary per brand exactly like layout and type.
+  **Why** Founder on Nocturne: "not up to our quality levels... everything is just loading in and it's a bit noobish". Kestrel's load-in was praised once; repeating the same kit stagger on Margin, Strata and Nocturne turned it into a template. Research agrees: 8 of 15 top heroes show the headline in the first frame and the median hero settles in ~1.5s (knowledge/web/product-motion-patterns.md).
+  **Applies to** every hero load-in. **Check** filmstrip at 0/300/800/1500ms: the composed hero (headline + CTA) is readable by 300ms unless the concept needs otherwise; entrance groups <= 3; DIRECTION.md names the conceptual reveal and how it differs from the last build's. **Source** founder, Nocturne build 1
+
 ## 5. Exceptions & judgement calls
 
 - The split layout (copy left, visual right) was rejected by Larpo when the right side was a decorative dashboard. With a real product world on the right (the payout globe) the founder accepted it.

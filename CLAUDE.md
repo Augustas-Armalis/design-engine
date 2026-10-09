@@ -25,6 +25,16 @@ What that bar looks like: polished modern SaaS. Big confident tightly tracked he
 4. **Never invent proof.** No fake customers, logos, endorsements, security claims or metrics presented as real. Sample data is labelled sample and kept internally coherent.
 5. **Learn from every verdict.** Every accept or reject from a founder goes into the ledger with the reason. Rejects are negative evidence; accepts are positive references.
 
+## What this engine is for (founder, 2026-10-09)
+
+Two jobs, one brain: (1) **design** client websites and product UI from a brief, at the founders' shipped bar; (2) **review and fix** work that already exists (a URL, a repo, a screenshot): measure it against the rules and the accepted references, list what breaks (consistency first: radius ladder, icon centring, spacing, type tuples, shadows, dark-mode surfaces, motion), then fix it in place. Later it becomes a product of its own with more automation; for now, keep raising the design quality, especially dark mode, bento visuals, typography, buttons, shadows and motion.
+
+### Review-and-fix mode (existing work)
+1. Render and measure: `node tools/check.mjs <url> --name <name>` (correctness + consistency probes) and full-page screenshots at 1440 and 2x.
+2. Critique against `knowledge/founder/founder-taste.md`, the accepted references (`knowledge/engine-accepted/`, `knowledge/larpo-shipped/`) and the consistency contract (`knowledge/web/consistency-mechanics.md`).
+3. Write `work/<name>/REVIEW.md`: findings ranked by severity, each with the measured evidence (selector, computed value, screenshot crop) and the exact fix.
+4. Fix in the source, re-run the check, diff computed styles before/after, and show before/after crops.
+
 ## Layout
 
 | Path | Use |

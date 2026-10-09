@@ -1,0 +1,2386 @@
+{
+ "url": "https://cursor.com",
+ "scheme": "dark",
+ "pageHeight": 8175,
+ "fold": {
+  "title": "AI Coding Agent for Building Ambitious Software | Cursor",
+  "vw": 1440,
+  "pageHeight": 8175,
+  "colorScheme": {
+   "html": "dark",
+   "body": "dark",
+   "metaTheme": "#f7f7f4",
+   "htmlClass": "cursorgothic_71ba3fd8-module__Sj65MG__variable berkeleymono_82e21e43-module__aDRXRq__variable cursormono_86b25b91-module",
+   "dataTheme": "dark"
+  },
+  "pageBg": "#14120b",
+  "pageBgOklabL": 0.182,
+  "pageBgOklabC": 0.014,
+  "pageBgOklabH": 94,
+  "cssVarCount": 436,
+  "cssVars": [
+   [
+    ":root, :host --color-red-500",
+    "lab(55.4814% 75.0732 48.8528)"
+   ],
+   [
+    ":root, :host --color-red-600",
+    "lab(48.4493% 77.4328 61.5452)"
+   ],
+   [
+    ":root, :host --color-green-50",
+    "lab(98.1563% -5.60117 2.75915)"
+   ],
+   [
+    ":root, :host --color-green-500",
+    "lab(70.5521% -66.5147 45.8073)"
+   ],
+   [
+    ":root, :host --color-green-600",
+    "lab(59.0978% -58.6621 41.2579)"
+   ],
+   [
+    ":root, :host --color-green-800",
+    "lab(37.4616% -36.7971 22.9692)"
+   ],
+   [
+    ":root, :host --color-green-900",
+    "lab(30.797% -29.6927 17.382)"
+   ],
+   [
+    ":root, :host --color-blue-50",
+    "lab(96.492% -1.14644 -5.11479)"
+   ],
+   [
+    ":root, :host --color-blue-600",
+    "lab(44.0605% 29.0279 -86.0352)"
+   ],
+   [
+    ":root, :host --color-blue-800",
+    "lab(30.2514% 27.7853 -70.2699)"
+   ],
+   [
+    ":root, :host --color-blue-900",
+    "lab(26.1542% 15.7545 -51.5504)"
+   ],
+   [
+    ":root, :host --color-indigo-600",
+    "lab(38.4009% 52.6132 -92.3857)"
+   ],
+   [
+    ":root, :host --color-purple-400",
+    "lab(63.6946% 47.6127 -59.2066)"
+   ],
+   [
+    ":root, :host --color-slate-200",
+    "lab(91.7353% -.998765 -4.76968)"
+   ],
+   [
+    ":root, :host --color-slate-500",
+    "lab(48.0876% -2.03595 -16.5814)"
+   ],
+   [
+    ":root, :host --color-gray-50",
+    "lab(98.2596% -.247031 -.706708)"
+   ],
+   [
+    ":root, :host --color-gray-100",
+    "lab(96.1596% -.0823438 -1.13575)"
+   ],
+   [
+    ":root, :host --color-gray-200",
+    "lab(91.6229% -.159115 -2.26791)"
+   ],
+   [
+    ":root, :host --color-gray-300",
+    "lab(85.1236% -.612259 -3.7138)"
+   ],
+   [
+    ":root, :host --color-gray-500",
+    "lab(47.7841% -.393182 -10.0268)"
+   ],
+   [
+    ":root, :host --color-gray-600",
+    "lab(35.6337% -1.58697 -10.8425)"
+   ],
+   [
+    ":root, :host --color-gray-700",
+    "lab(27.1134% -.956401 -12.3224)"
+   ],
+   [
+    ":root, :host --color-gray-800",
+    "lab(16.1051% -1.18239 -11.7533)"
+   ],
+   [
+    ":root, :host --color-gray-900",
+    "lab(8.11897% .811279 -12.254)"
+   ],
+   [
+    ":root, :host --color-gray-950",
+    "lab(1.90334% .278696 -5.48866)"
+   ],
+   [
+    ":root, :host --color-neutral-500",
+    "lab(48.496% 0 0)"
+   ],
+   [
+    ":root, :host --color-neutral-800",
+    "lab(15.204% 0 -.00000596046)"
+   ],
+   [
+    ":root, :host --color-neutral-900",
+    "lab(7.78201% -.0000149012 0)"
+   ],
+   [
+    ":root, :host --color-black",
+    "#000"
+   ],
+   [
+    ":root, :host --color-white",
+    "#fff"
+   ],
+   [
+    ":root, :host --shadow-outline-theme",
+    "0 0 0 1px var(--color-theme-border-02)"
+   ],
+   [
+    ":root, :host --shadow-flyout",
+    "0 0 1rem #00000005, 0 0 .5rem #00000002"
+   ],
+   [
+    ":root, :host --color-theme-bg",
+    "#f7f7f4"
+   ],
+   [
+    ":root, :host --color-theme-fg",
+    "#26251e"
+   ],
+   [
+    ":root, :host --color-theme-fg-01",
+    "color-mix(in oklab, var(--color-theme-fg) 1%, transparent)"
+   ],
+   [
+    ":root, :host --color-theme-fg-02-5",
+    "color-mix(in oklab, var(--color-theme-fg) 2.5%, transparent)"
+   ],
+   [
+    ":root, :host --color-theme-fg-05",
+    "color-mix(in oklab, var(--color-theme-fg) 5%, transparent)"
+   ],
+   [
+    ":root, :host --color-theme-fg-07-5",
+    "color-mix(in oklab, var(--color-theme-fg) 7.5%, transparent)"
+   ],
+   [
+    ":root, :host --color-theme-fg-08",
+    "color-mix(in oklab, var(--color-theme-fg) 8%, transparent)"
+   ],
+   [
+    ":root, :host --color-theme-fg-10",
+    "color-mix(in oklab, var(--color-theme-fg) 10%, transparent)"
+   ],
+   [
+    ":root, :host --color-theme-fg-15",
+    "color-mix(in oklab, var(--color-theme-fg) 15%, transparent)"
+   ],
+   [
+    ":root, :host --color-theme-fg-20",
+    "color-mix(in oklab, var(--color-theme-fg) 20%, transparent)"
+   ],
+   [
+    ":root, :host --color-theme-card-hex",
+    "#f2f1ed"
+   ],
+   [
+    ":root, :host --color-theme-card",
+    "linear-gradient(var(--color-theme-card-hex) 0% 100%)"
+   ],
+   [
+    ":root, :host --color-theme-accent",
+    "#f54e00"
+   ],
+   [
+    ":root, :host --color-theme-text",
+    "var(--color-theme-fg)"
+   ],
+   [
+    ":root, :host --color-theme-text-mid",
+    "color-mix(in oklab, var(--color-theme-fg) 50%, transparent)"
+   ],
+   [
+    ":root, :host --color-theme-text-sec",
+    "color-mix(in oklab, var(--color-theme-fg) 60%, transparent)"
+   ],
+   [
+    ":root, :host --color-theme-text-tertiary",
+    "color-mix(in oklab, var(--color-theme-fg) 40%, transparent)"
+   ],
+   [
+    ":root, :host --color-theme-card-01-hex",
+    "#f0efeb"
+   ],
+   [
+    ":root, :host --color-theme-card-02-hex",
+    "#ebeae5"
+   ],
+   [
+    ":root, :host --color-theme-card-02",
+    "linear-gradient(var(--color-theme-fg-02-5) 0% 100%), linear-gradient(var(--color"
+   ],
+   [
+    ":root, :host --color-theme-card-03-hex",
+    "#e6e5e0"
+   ],
+   [
+    ":root, :host --color-theme-card-03",
+    "linear-gradient(var(--color-theme-fg-05) 0% 100%), linear-gradient(var(--color-t"
+   ],
+   [
+    ":root, :host --color-theme-card-04-hex",
+    "#e1e0db"
+   ],
+   [
+    ":root, :host --color-theme-card-warm-hex",
+    "#f3ede6"
+   ],
+   [
+    ":root, :host --color-theme-fg-02",
+    "#3b3a33"
+   ],
+   [
+    ":root, :host --color-theme-border-01",
+    "color-mix(in oklab, var(--color-theme-fg) 2.5%, transparent)"
+   ],
+   [
+    ":root, :host --color-theme-border-01-5",
+    "color-mix(in oklab, var(--color-theme-fg) 5%, transparent)"
+   ],
+   [
+    ":root, :host --color-theme-border-02",
+    "color-mix(in oklab, var(--color-theme-fg) 10%, transparent)"
+   ],
+   [
+    ":root, :host --color-theme-border-02-5",
+    "color-mix(in oklab, var(--color-theme-fg) 20%, transparent)"
+   ],
+   [
+    ":root, :host --color-theme-border-03",
+    "color-mix(in oklab, var(--color-theme-fg) 60%, transparent)"
+   ],
+   [
+    ":root, :host --color-theme-border",
+    "var(--color-theme-border-01)"
+   ],
+   [
+    ":root, :host --color-theme-card-hover-hex",
+    "#ebeae5"
+   ],
+   [
+    ":root, :host --color-theme-card-hover-light-hex",
+    "#f0efeb"
+   ],
+   [
+    ":root, :host --color-theme-card-hover-border",
+    "var(--color-theme-border-02)"
+   ],
+   [
+    ":root, :host --color-theme-button-bg",
+    "var(--color-theme-fg)"
+   ],
+   [
+    ":root, :host --color-theme-button-text",
+    "var(--color-theme-bg)"
+   ],
+   [
+    ":root, :host --color-theme-button-hover-bg",
+    "var(--color-theme-fg-02)"
+   ],
+   [
+    ":root, :host --color-theme-button-hover-border",
+    "var(--color-theme-fg-02)"
+   ],
+   [
+    ":root, :host --color-theme-button-hover-text",
+    "var(--color-theme-bg)"
+   ],
+   [
+    ":root, :host --color-theme-button-sec-border",
+    "var(--color-theme-border-03)"
+   ],
+   [
+    ":root, :host --color-theme-button-sec-text",
+    "var(--color-theme-fg)"
+   ],
+   [
+    ":root, :host --prose-code-bg",
+    "var(--color-theme-card-hex)"
+   ],
+   [
+    ":root, :host --prose-code-border",
+    "var(--color-theme-border-01)"
+   ],
+   [
+    ":root, :host --prose-code-border-radius",
+    "var(--radius-xs)"
+   ],
+   [
+    ":root, :host --prose-pre-bg",
+    "var(--color-theme-border-01)"
+   ],
+   [
+    ":root, :host --color-theme-product-chrome",
+    "var(--color-theme-card-hex)"
+   ],
+   [
+    ":root, :host --color-theme-product-editor",
+    "var(--color-theme-bg)"
+   ],
+   [
+    ":root, :host --color-theme-product-text",
+    "color-mix(in oklab, var(--color-theme-fg) 92%, transparent)"
+   ],
+   [
+    ":root, :host --color-theme-product-text-sec",
+    "color-mix(in oklab, var(--color-theme-fg) 60%, transparent)"
+   ],
+   [
+    ":root, :host --color-theme-product-text-tertiary",
+    "color-mix(in oklab, var(--color-theme-fg) 40%, transparent)"
+   ],
+   [
+    ":root, :host --color-theme-product-ansi-green",
+    "#1f8a65"
+   ],
+   [
+    ":root, :host --color-theme-product-ansi-red",
+    "#cf2d56"
+   ],
+   [
+    ":root, :host --color-theme-product-line-inserted-line-background",
+    "color-mix(in srgb, var(--color-theme-product-ansi-green) 8%, transparent)"
+   ],
+   [
+    ":root, :host --color-theme-product-removed-line-background",
+    "color-mix(in srgb, var(--color-theme-product-ansi-red) 6%, transparent)"
+   ],
+   [
+    "[data-theme=\"dark\"] --color-theme-bg",
+    "#14120b"
+   ],
+   [
+    "[data-theme=\"dark\"] --color-theme-fg",
+    "#edecec"
+   ],
+   [
+    "[data-theme=\"dark\"] --color-theme-fg-02",
+    "#d7d6d5"
+   ],
+   [
+    "[data-theme=\"dark\"] --color-theme-card-hex",
+    "#1b1913"
+   ],
+   [
+    "[data-theme=\"dark\"] --color-theme-card-rgb",
+    "27 29 39"
+   ],
+   [
+    "[data-theme=\"dark\"] --color-theme-card-01-hex",
+    "#1d1b15"
+   ],
+   [
+    "[data-theme=\"dark\"] --color-theme-card-02-hex",
+    "#201e18"
+   ],
+   [
+    "[data-theme=\"dark\"] --color-theme-card-03-hex",
+    "#26241e"
+   ],
+   [
+    "[data-theme=\"dark\"] --color-theme-card-04-hex",
+    "#2b2923"
+   ],
+   [
+    "[data-theme=\"dark\"] --color-theme-card-hover-hex",
+    "#201e18"
+   ],
+   [
+    "[data-theme=\"dark\"] --color-theme-card-hover-light-hex",
+    "#1d1b15"
+   ],
+   [
+    "[data-theme=\"dark\"] --color-theme-card-warm-hex",
+    "#1c1713"
+   ],
+   [
+    "[data-theme=\"dark\"] --color-theme-product-chrome",
+    "var(--color-theme-bg)"
+   ],
+   [
+    "[data-theme=\"dark\"] --color-theme-product-editor",
+    "var(--color-theme-card-hex)"
+   ],
+   [
+    "[data-theme=\"dark\"] --color-theme-product-text",
+    "color-mix(in oklab, var(--color-theme-fg) 92%, transparent)"
+   ],
+   [
+    "[data-theme=\"dark\"] --color-theme-product-text-sec",
+    "color-mix(in oklab, var(--color-theme-fg) 60%, transparent)"
+   ],
+   [
+    "[data-theme=\"dark\"] --color-theme-product-text-tertiary",
+    "color-mix(in oklab, var(--color-theme-fg) 40%, transparent)"
+   ],
+   [
+    "[data-theme=\"dark\"] --color-theme-product-ansi-green",
+    "#1f8a65"
+   ],
+   [
+    "[data-theme=\"dark\"] --color-theme-product-ansi-red",
+    "#cf2d56"
+   ],
+   [
+    "[data-theme=\"dark\"] --color-theme-product-line-inserted-line-background",
+    "color-mix(in srgb, var(--color-theme-product-ansi-green) 8%, transparent)"
+   ],
+   [
+    "[data-theme=\"dark\"] --color-theme-product-removed-line-background",
+    "color-mix(in srgb, var(--color-theme-product-ansi-red) 6%, transparent)"
+   ],
+   [
+    "[data-theme=\"dark\"] --window-shadow-inner",
+    "0 -1px 0 0 var(--color-theme-border-02) inset"
+   ],
+   [
+    "html:has([data-origin-dark]) --color-theme-bg",
+    "#14120b"
+   ],
+   [
+    "html:has([data-origin-dark]) --color-theme-fg",
+    "#edecec"
+   ],
+   [
+    "html:has([data-origin-dark]) --color-theme-fg-02",
+    "#d7d6d5"
+   ],
+   [
+    "html:has([data-origin-dark]) --color-theme-card-hex",
+    "#1b1913"
+   ],
+   [
+    "html:has([data-origin-dark]) --color-theme-card-rgb",
+    "27 29 39"
+   ],
+   [
+    "html:has([data-origin-dark]) --color-theme-card-01-hex",
+    "#1d1b15"
+   ],
+   [
+    "html:has([data-origin-dark]) --color-theme-card-02-hex",
+    "#201e18"
+   ],
+   [
+    "html:has([data-origin-dark]) --color-theme-card-03-hex",
+    "#26241e"
+   ],
+   [
+    "html:has([data-origin-dark]) --color-theme-card-04-hex",
+    "#2b2923"
+   ],
+   [
+    "html:has([data-origin-dark]) --color-theme-card-hover-hex",
+    "#201e18"
+   ],
+   [
+    "html:has([data-origin-dark]) --color-theme-card-hover-light-hex",
+    "#1d1b15"
+   ],
+   [
+    "html:has([data-origin-dark]) --color-theme-card-warm-hex",
+    "#1c1713"
+   ]
+  ],
+  "surfaces": [
+   {
+    "hex": "#14120b",
+    "L": 0.182,
+    "C": 0.014,
+    "H": 94,
+    "n": 36,
+    "area": 14352395,
+    "ex": [
+     "header.bg-theme-bg",
+     "section.section"
+    ]
+   },
+   {
+    "hex": "#1b1913",
+    "L": 0.214,
+    "C": 0.012,
+    "H": 92,
+    "n": 56,
+    "area": 9279408,
+    "ex": [
+     "div.group/tab",
+     "div.bg-theme-product-editor"
+    ]
+   },
+   {
+    "hex": "#4a443b",
+    "L": 0.39,
+    "C": 0.017,
+    "H": 78,
+    "n": 1,
+    "area": 571200,
+    "ex": [
+     "div.media-dark"
+    ]
+   },
+   {
+    "hex": "#3c3935",
+    "L": 0.346,
+    "C": 0.008,
+    "H": 75,
+    "n": 1,
+    "area": 571200,
+    "ex": [
+     "div.media-dark"
+    ]
+   },
+   {
+    "hex": "#3a3a3c",
+    "L": 0.349,
+    "C": 0.003,
+    "H": 286,
+    "n": 1,
+    "area": 195000,
+    "ex": [
+     "div.absolute"
+    ]
+   },
+   {
+    "hex": "#26241e",
+    "L": 0.26,
+    "C": 0.011,
+    "H": 92,
+    "n": 4,
+    "area": 167394,
+    "ex": [
+     "a.btn",
+     "div.media-border-container"
+    ]
+   },
+   {
+    "hex": "#47433c",
+    "L": 0.385,
+    "C": 0.013,
+    "H": 82,
+    "n": 1,
+    "area": 148052,
+    "ex": [
+     "div.media-dark"
+    ]
+   },
+   {
+    "hex": "#201e18",
+    "L": 0.235,
+    "C": 0.012,
+    "H": 92,
+    "n": 7,
+    "area": 114433,
+    "ex": [
+     "button.agent-sidebar__row",
+     "div.flex"
+    ]
+   },
+   {
+    "hex": "#edecec",
+    "L": 0.944,
+    "C": 0.001,
+    "H": 17,
+    "n": 2,
+    "area": 18714,
+    "ex": [
+     "a.btn",
+     "a.btn"
+    ]
+   },
+   {
+    "hex": "#000000",
+    "L": 0,
+    "C": 0,
+    "H": 0,
+    "n": 1,
+    "area": 2688,
+    "ex": [
+     "div.absolute"
+    ]
+   }
+  ],
+  "overlays": [
+   {
+    "bg": "rgba(28, 28, 26, 0.62) => #191814",
+    "n": 1,
+    "area": 368160
+   },
+   {
+    "bg": "color(srgb 0.14902 0.14902 0.14902 / 0.84) => #242423",
+    "n": 1,
+    "area": 236000
+   },
+   {
+    "bg": "rgba(20, 20, 20, 0.28) => #181714",
+    "n": 1,
+    "area": 132160
+   },
+   {
+    "bg": "oklab(0 0 0 / 0.08) => #12110a",
+    "n": 1,
+    "area": 48089
+   },
+   {
+    "bg": "color(srgb 0.929412 0.92549 0.92549 / 0.03) => #1b1912",
+    "n": 2,
+    "area": 31338
+   },
+   {
+    "bg": "color(srgb 0.14902 0.14902 0.14902 / 0.68) => #252525",
+    "n": 1,
+    "area": 21160
+   },
+   {
+    "bg": "rgba(255, 255, 255, 0.075) => #292826",
+    "n": 1,
+    "area": 13462
+   },
+   {
+    "bg": "rgba(255, 255, 255, 0.07) => #282725",
+    "n": 1,
+    "area": 8128
+   }
+  ],
+  "borders": [
+   {
+    "border": "oklab(0.943853 0.00107113 0.000336707 / 0.1) @1px",
+    "n": 126,
+    "alpha": 0.1,
+    "flatOnPage": "#2a2822",
+    "L": 0.276
+   },
+   {
+    "border": "oklab(0.943853 0.00107113 0.000336707 / 0.2) @1px",
+    "n": 36,
+    "alpha": 0.2,
+    "flatOnPage": "#3f3e38",
+    "L": 0.362
+   },
+   {
+    "border": "rgba(0, 0, 0, 0) @1px",
+    "n": 30,
+    "alpha": 0,
+    "flatOnPage": "#14120b",
+    "L": 0.182
+   },
+   {
+    "border": "rgb(237, 236, 236) @1px",
+    "n": 24,
+    "alpha": 1,
+    "flatOnPage": "#edecec",
+    "L": 0.944
+   },
+   {
+    "border": "rgb(27, 25, 19) @1px",
+    "n": 16,
+    "alpha": 1,
+    "flatOnPage": "#1b1913",
+    "L": 0.214
+   },
+   {
+    "border": "color(srgb 0.929412 0.92549 0.92549 / 0.06) @1px",
+    "n": 15,
+    "alpha": 0.06,
+    "flatOnPage": "#211f19",
+    "L": 0.239
+   },
+   {
+    "border": "oklab(0.943853 0.00107113 0.000336707 / 0.025) @1px",
+    "n": 12,
+    "alpha": 0.025,
+    "flatOnPage": "#191711",
+    "L": 0.206
+   },
+   {
+    "border": "rgba(255, 255, 255, 0.12) @1px",
+    "n": 9,
+    "alpha": 0.12,
+    "flatOnPage": "#302e28",
+    "L": 0.303
+   },
+   {
+    "border": "rgba(255, 255, 255, 0.055) @1px",
+    "n": 6,
+    "alpha": 0.055,
+    "flatOnPage": "#211f18",
+    "L": 0.239
+   },
+   {
+    "border": "color(srgb 0.929411 0.92549 0.92549 / 0.06) @1px",
+    "n": 4,
+    "alpha": 0.06,
+    "flatOnPage": "#211f19",
+    "L": 0.239
+   },
+   {
+    "border": "rgb(52, 120, 92) @1px",
+    "n": 4,
+    "alpha": 1,
+    "flatOnPage": "#34785c",
+    "L": 0.52
+   },
+   {
+    "border": "color(srgb 0.929412 0.92549 0.92549 / 0.08) @1px",
+    "n": 2,
+    "alpha": 0.08,
+    "flatOnPage": "#25231d",
+    "L": 0.258
+   }
+  ],
+  "radii": [
+   [
+    "4px",
+    145
+   ],
+   [
+    "3.35544e+07px",
+    86
+   ],
+   [
+    "8px",
+    30
+   ],
+   [
+    "50%",
+    30
+   ],
+   [
+    "10px",
+    16
+   ],
+   [
+    "2px",
+    9
+   ],
+   [
+    "12px",
+    7
+   ],
+   [
+    "9999px",
+    7
+   ]
+  ],
+  "shadows": [
+   {
+    "shadow": "rgba(0, 0, 0, 0.14) 0px 28px 70px 0px, rgba(0, 0, 0, 0.1) 0px 14px 32px 0px, oklab(0.943853 0.00107113 0.000336707 / 0.1) 0px 0px 0px 1px",
+    "n": 6
+   },
+   {
+    "shadow": "rgb(38, 38, 38) 0px 0px 0px 2px",
+    "n": 3
+   },
+   {
+    "shadow": "rgba(0, 0, 0, 0.3) 0px 22px 70px 4px, rgba(0, 0, 0, 0.15) 0px 0px 0px 0.5px",
+    "n": 1
+   },
+   {
+    "shadow": "rgba(0, 0, 0, 0.25) 0px 25px 50px -12px, rgba(0, 0, 0, 0.15) 0px 12px 24px -8px, oklab(0.943853 0.00107113 0.000336707 / 0.1) 0px 0px 0px 0.5px",
+    "n": 1
+   },
+   {
+    "shadow": "rgba(0, 0, 0, 0.35) 0px 8px 30px 0px, rgba(0, 0, 0, 0.15) 0px 0px 0px 0.5px",
+    "n": 1
+   },
+   {
+    "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.1) 0px 4px 6px -4px",
+    "n": 1
+   },
+   {
+    "shadow": "oklab(0.943853 0.00107113 0.000336707 / 0.1) 0px 0px 0px 1px, rgba(0, 0, 0, 0.28) 0px 18px 36px -18px",
+    "n": 1
+   }
+  ],
+  "nShadowEls": 14,
+  "textColors": [
+   {
+    "color": "rgb(237, 236, 236)",
+    "chars": 7451,
+    "n": 318,
+    "fg": "#edecec",
+    "alpha": 1,
+    "contrast": 15.89,
+    "L": 0.944,
+    "bg": "#14120b",
+    "size": "16px",
+    "weight": "400",
+    "ex": "Cursor"
+   },
+   {
+    "color": "oklab(0.943853 0.00107113 0.000336707 / 0.6)",
+    "chars": 1940,
+    "n": 107,
+    "fg": "#969592",
+    "alpha": 0.6,
+    "contrast": 6.25,
+    "L": 0.67,
+    "bg": "#14120b",
+    "size": "11px",
+    "weight": "500",
+    "ex": "READY FOR REVIEW 5"
+   },
+   {
+    "color": "rgba(255, 255, 255, 0.55)",
+    "chars": 304,
+    "n": 8,
+    "fg": "#979795",
+    "alpha": 0.55,
+    "contrast": 6.11,
+    "L": 0.675,
+    "bg": "#181714",
+    "size": "14px",
+    "weight": "400",
+    "ex": ""
+   },
+   {
+    "color": "oklab(0.943853 0.00107113 0.000336707 / 0.4)",
+    "chars": 232,
+    "n": 15,
+    "fg": "#6b6965",
+    "alpha": 0.4,
+    "contrast": 3.42,
+    "L": 0.522,
+    "bg": "#14120b",
+    "size": "11px",
+    "weight": "400",
+    "ex": "now"
+   },
+   {
+    "color": "oklab(0.943853 0.00107113 0.000336707 / 0.5)",
+    "chars": 221,
+    "n": 30,
+    "fg": "#817f7c",
+    "alpha": 0.5,
+    "contrast": 4.68,
+    "L": 0.597,
+    "bg": "#14120b",
+    "size": "11px",
+    "weight": "500",
+    "ex": "5"
+   },
+   {
+    "color": "rgb(245, 78, 0)",
+    "chars": 197,
+    "n": 10,
+    "fg": "#f54e00",
+    "alpha": 1,
+    "contrast": 5,
+    "L": 0.652,
+    "bg": "#1b1913",
+    "size": "16px",
+    "weight": "400",
+    "ex": "Learn about agentic developm"
+   },
+   {
+    "color": "rgba(255, 255, 255, 0.86)",
+    "chars": 186,
+    "n": 7,
+    "fg": "#dfdfde",
+    "alpha": 0.86,
+    "contrast": 13.16,
+    "L": 0.903,
+    "bg": "#1b1913",
+    "size": "19px",
+    "weight": "510",
+    "ex": "All Repos"
+   },
+   {
+    "color": "rgba(255, 255, 255, 0.42)",
+    "chars": 123,
+    "n": 18,
+    "fg": "#7b7a76",
+    "alpha": 0.42,
+    "contrast": 4.07,
+    "L": 0.578,
+    "bg": "#1b1913",
+    "size": "12px",
+    "weight": "400",
+    "ex": "Working"
+   },
+   {
+    "color": "rgba(255, 255, 255, 0.9)",
+    "chars": 94,
+    "n": 8,
+    "fg": "#e8e8e8",
+    "alpha": 0.9,
+    "contrast": 14.61,
+    "L": 0.93,
+    "bg": "#181714",
+    "size": "14px",
+    "weight": "400",
+    "ex": "Chief"
+   },
+   {
+    "color": "rgb(20, 18, 11)",
+    "chars": 65,
+    "n": 6,
+    "fg": "#14120b",
+    "alpha": 1,
+    "contrast": 15.89,
+    "L": 0.182,
+    "bg": "#edecec",
+    "size": "14px",
+    "weight": "400",
+    "ex": "Skip to content"
+   },
+   {
+    "color": "rgba(255, 255, 255, 0.32)",
+    "chars": 53,
+    "n": 8,
+    "fg": "#6d6c6b",
+    "alpha": 0.32,
+    "contrast": 2.85,
+    "L": 0.532,
+    "bg": "#282725",
+    "size": "14px",
+    "weight": "400",
+    "ex": ""
+   },
+   {
+    "color": "rgb(255, 255, 255)",
+    "chars": 36,
+    "n": 6,
+    "fg": "#ffffff",
+    "alpha": 1,
+    "contrast": 3.16,
+    "L": 1,
+    "bg": "#c08532",
+    "size": "12px",
+    "weight": "500",
+    "ex": "Build"
+   }
+  ],
+  "h1": {
+   "text": "Cursor is your coding agent for building ambitious software.",
+   "family": "CursorGothic, \"CursorGothic Fallback\", system-ui, \"Helvetica",
+   "size": "26px",
+   "weight": "400",
+   "lh": "32.5px",
+   "ls": "-0.325px",
+   "color": "rgb(237, 236, 236)",
+   "smooth": "antialiased",
+   "bgClip": "border-box",
+   "bgImage": "none",
+   "textShadow": null
+  },
+  "body": {
+   "text": "Skip to content\nCursor\nModels\n↓\nProduct\n↓\nEnterprise\nPricing",
+   "family": "CursorGothic, \"CursorGothic Fallback\", system-ui, \"Helvetica",
+   "size": "16px",
+   "weight": "400",
+   "lh": "24px",
+   "ls": "normal",
+   "color": "rgb(237, 236, 236)",
+   "smooth": "antialiased",
+   "bgClip": "border-box",
+   "bgImage": "none",
+   "textShadow": null
+  },
+  "bodySmoothing": "antialiased",
+  "textRendering": "auto",
+  "heroP": {
+   "text": "This element contains an interactive demo for sighted users ",
+   "family": "CursorGothic, \"CursorGothic Fallback\", system-ui, \"Helvetica",
+   "size": "16px",
+   "weight": "400",
+   "lh": "24px",
+   "ls": "normal",
+   "color": "rgb(237, 236, 236)",
+   "smooth": "antialiased",
+   "bgClip": "border-box",
+   "bgImage": "none",
+   "textShadow": null
+  },
+  "ctas": [
+   {
+    "text": "Models",
+    "h": 34,
+    "kind": "outline",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(237, 236, 236)",
+    "border": "1px rgba(0, 0, 0, 0)",
+    "radius": "0px",
+    "shadow": null,
+    "bgImage": null,
+    "size": "14px",
+    "weight": "400"
+   },
+   {
+    "text": "Product",
+    "h": 34,
+    "kind": "outline",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(237, 236, 236)",
+    "border": "1px rgba(0, 0, 0, 0)",
+    "radius": "0px",
+    "shadow": null,
+    "bgImage": null,
+    "size": "14px",
+    "weight": "400"
+   },
+   {
+    "text": "Enterprise",
+    "h": 34,
+    "kind": "outline",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(237, 236, 236)",
+    "border": "1px rgba(0, 0, 0, 0)",
+    "radius": "0px",
+    "shadow": null,
+    "bgImage": null,
+    "size": "14px",
+    "weight": "400"
+   },
+   {
+    "text": "Pricing",
+    "h": 34,
+    "kind": "outline",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(237, 236, 236)",
+    "border": "1px rgba(0, 0, 0, 0)",
+    "radius": "0px",
+    "shadow": null,
+    "bgImage": null,
+    "size": "14px",
+    "weight": "400"
+   },
+   {
+    "text": "Resources",
+    "h": 34,
+    "kind": "outline",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(237, 236, 236)",
+    "border": "1px rgba(0, 0, 0, 0)",
+    "radius": "0px",
+    "shadow": null,
+    "bgImage": null,
+    "size": "14px",
+    "weight": "400"
+   },
+   {
+    "text": "Sign in",
+    "h": 31,
+    "kind": "outline",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(237, 236, 236)",
+    "border": "1px rgba(0, 0, 0, 0)",
+    "radius": "0px",
+    "shadow": null,
+    "bgImage": null,
+    "size": "14px",
+    "weight": "400"
+   },
+   {
+    "text": "Contact sales",
+    "h": 27,
+    "kind": "outline",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(237, 236, 236)",
+    "border": "1px oklab(0.943853 0.00107113 0.000336707 / 0.2)",
+    "radius": "3.35544e+07px",
+    "shadow": null,
+    "bgImage": null,
+    "size": "14px",
+    "weight": "400"
+   },
+   {
+    "text": "Download",
+    "h": 27,
+    "kind": "filled",
+    "bg": "rgb(237, 236, 236)",
+    "color": "rgb(20, 18, 11)",
+    "border": "1px rgb(237, 236, 236)",
+    "radius": "3.35544e+07px",
+    "shadow": null,
+    "bgImage": null,
+    "size": "14px",
+    "weight": "400"
+   }
+  ],
+  "nav": {
+   "h": 52,
+   "bg": "rgb(20, 18, 11)",
+   "backdrop": "none",
+   "bb": "0px solid rgb(237, 236, 236)",
+   "shadow": null,
+   "linkColor": "rgb(20, 18, 11)"
+  },
+  "effects": {
+   "radial": 0,
+   "conic": 0,
+   "linear": 22,
+   "urlbg": 0,
+   "blurEls": 0,
+   "backdropEls": 0,
+   "mixBlend": 0,
+   "maskEls": 10,
+   "gradEx": [],
+   "canvas": 0,
+   "video": 1,
+   "svg": 65,
+   "img": 28
+  },
+  "noise": false,
+  "gradientHeadings": 0,
+  "accents": [
+   {
+    "hex": "#c08532",
+    "n": 40,
+    "L": 0.661,
+    "C": 0.121,
+    "H": 72
+   },
+   {
+    "hex": "#f54e00",
+    "n": 22,
+    "L": 0.652,
+    "C": 0.214,
+    "H": 38
+   },
+   {
+    "hex": "#1f8a65",
+    "n": 6,
+    "L": 0.565,
+    "C": 0.11,
+    "H": 164
+   },
+   {
+    "hex": "#4ade80",
+    "n": 6,
+    "L": 0.8,
+    "C": 0.182,
+    "H": 152
+   },
+   {
+    "hex": "#5eb8ed",
+    "n": 6,
+    "L": 0.748,
+    "C": 0.115,
+    "H": 237
+   },
+   {
+    "hex": "#cf2d56",
+    "n": 4,
+    "L": 0.566,
+    "C": 0.197,
+    "H": 12
+   }
+  ]
+ },
+ "full": {
+  "title": "AI Coding Agent for Building Ambitious Software | Cursor",
+  "vw": 1440,
+  "pageHeight": 8175,
+  "colorScheme": {
+   "html": "dark",
+   "body": "dark",
+   "metaTheme": "#f7f7f4",
+   "htmlClass": "cursorgothic_71ba3fd8-module__Sj65MG__variable berkeleymono_82e21e43-module__aDRXRq__variable cursormono_86b25b91-module",
+   "dataTheme": "dark"
+  },
+  "pageBg": "#14120b",
+  "pageBgOklabL": 0.182,
+  "pageBgOklabC": 0.014,
+  "pageBgOklabH": 94,
+  "cssVarCount": 438,
+  "cssVars": [
+   [
+    ":root, :host --color-red-500",
+    "lab(55.4814% 75.0732 48.8528)"
+   ],
+   [
+    ":root, :host --color-red-600",
+    "lab(48.4493% 77.4328 61.5452)"
+   ],
+   [
+    ":root, :host --color-green-50",
+    "lab(98.1563% -5.60117 2.75915)"
+   ],
+   [
+    ":root, :host --color-green-500",
+    "lab(70.5521% -66.5147 45.8073)"
+   ],
+   [
+    ":root, :host --color-green-600",
+    "lab(59.0978% -58.6621 41.2579)"
+   ],
+   [
+    ":root, :host --color-green-800",
+    "lab(37.4616% -36.7971 22.9692)"
+   ],
+   [
+    ":root, :host --color-green-900",
+    "lab(30.797% -29.6927 17.382)"
+   ],
+   [
+    ":root, :host --color-blue-50",
+    "lab(96.492% -1.14644 -5.11479)"
+   ],
+   [
+    ":root, :host --color-blue-600",
+    "lab(44.0605% 29.0279 -86.0352)"
+   ],
+   [
+    ":root, :host --color-blue-800",
+    "lab(30.2514% 27.7853 -70.2699)"
+   ],
+   [
+    ":root, :host --color-blue-900",
+    "lab(26.1542% 15.7545 -51.5504)"
+   ],
+   [
+    ":root, :host --color-indigo-600",
+    "lab(38.4009% 52.6132 -92.3857)"
+   ],
+   [
+    ":root, :host --color-purple-400",
+    "lab(63.6946% 47.6127 -59.2066)"
+   ],
+   [
+    ":root, :host --color-slate-200",
+    "lab(91.7353% -.998765 -4.76968)"
+   ],
+   [
+    ":root, :host --color-slate-500",
+    "lab(48.0876% -2.03595 -16.5814)"
+   ],
+   [
+    ":root, :host --color-gray-50",
+    "lab(98.2596% -.247031 -.706708)"
+   ],
+   [
+    ":root, :host --color-gray-100",
+    "lab(96.1596% -.0823438 -1.13575)"
+   ],
+   [
+    ":root, :host --color-gray-200",
+    "lab(91.6229% -.159115 -2.26791)"
+   ],
+   [
+    ":root, :host --color-gray-300",
+    "lab(85.1236% -.612259 -3.7138)"
+   ],
+   [
+    ":root, :host --color-gray-500",
+    "lab(47.7841% -.393182 -10.0268)"
+   ],
+   [
+    ":root, :host --color-gray-600",
+    "lab(35.6337% -1.58697 -10.8425)"
+   ],
+   [
+    ":root, :host --color-gray-700",
+    "lab(27.1134% -.956401 -12.3224)"
+   ],
+   [
+    ":root, :host --color-gray-800",
+    "lab(16.1051% -1.18239 -11.7533)"
+   ],
+   [
+    ":root, :host --color-gray-900",
+    "lab(8.11897% .811279 -12.254)"
+   ],
+   [
+    ":root, :host --color-gray-950",
+    "lab(1.90334% .278696 -5.48866)"
+   ],
+   [
+    ":root, :host --color-neutral-500",
+    "lab(48.496% 0 0)"
+   ],
+   [
+    ":root, :host --color-neutral-800",
+    "lab(15.204% 0 -.00000596046)"
+   ],
+   [
+    ":root, :host --color-neutral-900",
+    "lab(7.78201% -.0000149012 0)"
+   ],
+   [
+    ":root, :host --color-black",
+    "#000"
+   ],
+   [
+    ":root, :host --color-white",
+    "#fff"
+   ],
+   [
+    ":root, :host --shadow-outline-theme",
+    "0 0 0 1px var(--color-theme-border-02)"
+   ],
+   [
+    ":root, :host --shadow-flyout",
+    "0 0 1rem #00000005, 0 0 .5rem #00000002"
+   ],
+   [
+    ":root, :host --color-theme-bg",
+    "#f7f7f4"
+   ],
+   [
+    ":root, :host --color-theme-fg",
+    "#26251e"
+   ],
+   [
+    ":root, :host --color-theme-fg-01",
+    "color-mix(in oklab, var(--color-theme-fg) 1%, transparent)"
+   ],
+   [
+    ":root, :host --color-theme-fg-02-5",
+    "color-mix(in oklab, var(--color-theme-fg) 2.5%, transparent)"
+   ],
+   [
+    ":root, :host --color-theme-fg-05",
+    "color-mix(in oklab, var(--color-theme-fg) 5%, transparent)"
+   ],
+   [
+    ":root, :host --color-theme-fg-07-5",
+    "color-mix(in oklab, var(--color-theme-fg) 7.5%, transparent)"
+   ],
+   [
+    ":root, :host --color-theme-fg-08",
+    "color-mix(in oklab, var(--color-theme-fg) 8%, transparent)"
+   ],
+   [
+    ":root, :host --color-theme-fg-10",
+    "color-mix(in oklab, var(--color-theme-fg) 10%, transparent)"
+   ],
+   [
+    ":root, :host --color-theme-fg-15",
+    "color-mix(in oklab, var(--color-theme-fg) 15%, transparent)"
+   ],
+   [
+    ":root, :host --color-theme-fg-20",
+    "color-mix(in oklab, var(--color-theme-fg) 20%, transparent)"
+   ],
+   [
+    ":root, :host --color-theme-card-hex",
+    "#f2f1ed"
+   ],
+   [
+    ":root, :host --color-theme-card",
+    "linear-gradient(var(--color-theme-card-hex) 0% 100%)"
+   ],
+   [
+    ":root, :host --color-theme-accent",
+    "#f54e00"
+   ],
+   [
+    ":root, :host --color-theme-text",
+    "var(--color-theme-fg)"
+   ],
+   [
+    ":root, :host --color-theme-text-mid",
+    "color-mix(in oklab, var(--color-theme-fg) 50%, transparent)"
+   ],
+   [
+    ":root, :host --color-theme-text-sec",
+    "color-mix(in oklab, var(--color-theme-fg) 60%, transparent)"
+   ],
+   [
+    ":root, :host --color-theme-text-tertiary",
+    "color-mix(in oklab, var(--color-theme-fg) 40%, transparent)"
+   ],
+   [
+    ":root, :host --color-theme-card-01-hex",
+    "#f0efeb"
+   ],
+   [
+    ":root, :host --color-theme-card-02-hex",
+    "#ebeae5"
+   ],
+   [
+    ":root, :host --color-theme-card-02",
+    "linear-gradient(var(--color-theme-fg-02-5) 0% 100%), linear-gradient(var(--color"
+   ],
+   [
+    ":root, :host --color-theme-card-03-hex",
+    "#e6e5e0"
+   ],
+   [
+    ":root, :host --color-theme-card-03",
+    "linear-gradient(var(--color-theme-fg-05) 0% 100%), linear-gradient(var(--color-t"
+   ],
+   [
+    ":root, :host --color-theme-card-04-hex",
+    "#e1e0db"
+   ],
+   [
+    ":root, :host --color-theme-card-warm-hex",
+    "#f3ede6"
+   ],
+   [
+    ":root, :host --color-theme-fg-02",
+    "#3b3a33"
+   ],
+   [
+    ":root, :host --color-theme-border-01",
+    "color-mix(in oklab, var(--color-theme-fg) 2.5%, transparent)"
+   ],
+   [
+    ":root, :host --color-theme-border-01-5",
+    "color-mix(in oklab, var(--color-theme-fg) 5%, transparent)"
+   ],
+   [
+    ":root, :host --color-theme-border-02",
+    "color-mix(in oklab, var(--color-theme-fg) 10%, transparent)"
+   ],
+   [
+    ":root, :host --color-theme-border-02-5",
+    "color-mix(in oklab, var(--color-theme-fg) 20%, transparent)"
+   ],
+   [
+    ":root, :host --color-theme-border-03",
+    "color-mix(in oklab, var(--color-theme-fg) 60%, transparent)"
+   ],
+   [
+    ":root, :host --color-theme-border",
+    "var(--color-theme-border-01)"
+   ],
+   [
+    ":root, :host --color-theme-card-hover-hex",
+    "#ebeae5"
+   ],
+   [
+    ":root, :host --color-theme-card-hover-light-hex",
+    "#f0efeb"
+   ],
+   [
+    ":root, :host --color-theme-card-hover-border",
+    "var(--color-theme-border-02)"
+   ],
+   [
+    ":root, :host --color-theme-button-bg",
+    "var(--color-theme-fg)"
+   ],
+   [
+    ":root, :host --color-theme-button-text",
+    "var(--color-theme-bg)"
+   ],
+   [
+    ":root, :host --color-theme-button-hover-bg",
+    "var(--color-theme-fg-02)"
+   ],
+   [
+    ":root, :host --color-theme-button-hover-border",
+    "var(--color-theme-fg-02)"
+   ],
+   [
+    ":root, :host --color-theme-button-hover-text",
+    "var(--color-theme-bg)"
+   ],
+   [
+    ":root, :host --color-theme-button-sec-border",
+    "var(--color-theme-border-03)"
+   ],
+   [
+    ":root, :host --color-theme-button-sec-text",
+    "var(--color-theme-fg)"
+   ],
+   [
+    ":root, :host --prose-code-bg",
+    "var(--color-theme-card-hex)"
+   ],
+   [
+    ":root, :host --prose-code-border",
+    "var(--color-theme-border-01)"
+   ],
+   [
+    ":root, :host --prose-code-border-radius",
+    "var(--radius-xs)"
+   ],
+   [
+    ":root, :host --prose-pre-bg",
+    "var(--color-theme-border-01)"
+   ],
+   [
+    ":root, :host --color-theme-product-chrome",
+    "var(--color-theme-card-hex)"
+   ],
+   [
+    ":root, :host --color-theme-product-editor",
+    "var(--color-theme-bg)"
+   ],
+   [
+    ":root, :host --color-theme-product-text",
+    "color-mix(in oklab, var(--color-theme-fg) 92%, transparent)"
+   ],
+   [
+    ":root, :host --color-theme-product-text-sec",
+    "color-mix(in oklab, var(--color-theme-fg) 60%, transparent)"
+   ],
+   [
+    ":root, :host --color-theme-product-text-tertiary",
+    "color-mix(in oklab, var(--color-theme-fg) 40%, transparent)"
+   ],
+   [
+    ":root, :host --color-theme-product-ansi-green",
+    "#1f8a65"
+   ],
+   [
+    ":root, :host --color-theme-product-ansi-red",
+    "#cf2d56"
+   ],
+   [
+    ":root, :host --color-theme-product-line-inserted-line-background",
+    "color-mix(in srgb, var(--color-theme-product-ansi-green) 8%, transparent)"
+   ],
+   [
+    ":root, :host --color-theme-product-removed-line-background",
+    "color-mix(in srgb, var(--color-theme-product-ansi-red) 6%, transparent)"
+   ],
+   [
+    "[data-theme=\"dark\"] --color-theme-bg",
+    "#14120b"
+   ],
+   [
+    "[data-theme=\"dark\"] --color-theme-fg",
+    "#edecec"
+   ],
+   [
+    "[data-theme=\"dark\"] --color-theme-fg-02",
+    "#d7d6d5"
+   ],
+   [
+    "[data-theme=\"dark\"] --color-theme-card-hex",
+    "#1b1913"
+   ],
+   [
+    "[data-theme=\"dark\"] --color-theme-card-rgb",
+    "27 29 39"
+   ],
+   [
+    "[data-theme=\"dark\"] --color-theme-card-01-hex",
+    "#1d1b15"
+   ],
+   [
+    "[data-theme=\"dark\"] --color-theme-card-02-hex",
+    "#201e18"
+   ],
+   [
+    "[data-theme=\"dark\"] --color-theme-card-03-hex",
+    "#26241e"
+   ],
+   [
+    "[data-theme=\"dark\"] --color-theme-card-04-hex",
+    "#2b2923"
+   ],
+   [
+    "[data-theme=\"dark\"] --color-theme-card-hover-hex",
+    "#201e18"
+   ],
+   [
+    "[data-theme=\"dark\"] --color-theme-card-hover-light-hex",
+    "#1d1b15"
+   ],
+   [
+    "[data-theme=\"dark\"] --color-theme-card-warm-hex",
+    "#1c1713"
+   ],
+   [
+    "[data-theme=\"dark\"] --color-theme-product-chrome",
+    "var(--color-theme-bg)"
+   ],
+   [
+    "[data-theme=\"dark\"] --color-theme-product-editor",
+    "var(--color-theme-card-hex)"
+   ],
+   [
+    "[data-theme=\"dark\"] --color-theme-product-text",
+    "color-mix(in oklab, var(--color-theme-fg) 92%, transparent)"
+   ],
+   [
+    "[data-theme=\"dark\"] --color-theme-product-text-sec",
+    "color-mix(in oklab, var(--color-theme-fg) 60%, transparent)"
+   ],
+   [
+    "[data-theme=\"dark\"] --color-theme-product-text-tertiary",
+    "color-mix(in oklab, var(--color-theme-fg) 40%, transparent)"
+   ],
+   [
+    "[data-theme=\"dark\"] --color-theme-product-ansi-green",
+    "#1f8a65"
+   ],
+   [
+    "[data-theme=\"dark\"] --color-theme-product-ansi-red",
+    "#cf2d56"
+   ],
+   [
+    "[data-theme=\"dark\"] --color-theme-product-line-inserted-line-background",
+    "color-mix(in srgb, var(--color-theme-product-ansi-green) 8%, transparent)"
+   ],
+   [
+    "[data-theme=\"dark\"] --color-theme-product-removed-line-background",
+    "color-mix(in srgb, var(--color-theme-product-ansi-red) 6%, transparent)"
+   ],
+   [
+    "[data-theme=\"dark\"] --window-shadow-inner",
+    "0 -1px 0 0 var(--color-theme-border-02) inset"
+   ],
+   [
+    "html:has([data-origin-dark]) --color-theme-bg",
+    "#14120b"
+   ],
+   [
+    "html:has([data-origin-dark]) --color-theme-fg",
+    "#edecec"
+   ],
+   [
+    "html:has([data-origin-dark]) --color-theme-fg-02",
+    "#d7d6d5"
+   ],
+   [
+    "html:has([data-origin-dark]) --color-theme-card-hex",
+    "#1b1913"
+   ],
+   [
+    "html:has([data-origin-dark]) --color-theme-card-rgb",
+    "27 29 39"
+   ],
+   [
+    "html:has([data-origin-dark]) --color-theme-card-01-hex",
+    "#1d1b15"
+   ],
+   [
+    "html:has([data-origin-dark]) --color-theme-card-02-hex",
+    "#201e18"
+   ],
+   [
+    "html:has([data-origin-dark]) --color-theme-card-03-hex",
+    "#26241e"
+   ],
+   [
+    "html:has([data-origin-dark]) --color-theme-card-04-hex",
+    "#2b2923"
+   ],
+   [
+    "html:has([data-origin-dark]) --color-theme-card-hover-hex",
+    "#201e18"
+   ],
+   [
+    "html:has([data-origin-dark]) --color-theme-card-hover-light-hex",
+    "#1d1b15"
+   ],
+   [
+    "html:has([data-origin-dark]) --color-theme-card-warm-hex",
+    "#1c1713"
+   ]
+  ],
+  "surfaces": [
+   {
+    "hex": "#14120b",
+    "L": 0.182,
+    "C": 0.014,
+    "H": 94,
+    "n": 37,
+    "area": 14929362,
+    "ex": [
+     "header.bg-theme-bg",
+     "section.section"
+    ]
+   },
+   {
+    "hex": "#1b1913",
+    "L": 0.214,
+    "C": 0.012,
+    "H": 92,
+    "n": 54,
+    "area": 9237165,
+    "ex": [
+     "div.bg-theme-product-editor",
+     "div.bg-theme-product-editor"
+    ]
+   },
+   {
+    "hex": "#4a443b",
+    "L": 0.39,
+    "C": 0.017,
+    "H": 78,
+    "n": 1,
+    "area": 571200,
+    "ex": [
+     "div.media-dark"
+    ]
+   },
+   {
+    "hex": "#3c3935",
+    "L": 0.346,
+    "C": 0.008,
+    "H": 75,
+    "n": 1,
+    "area": 571200,
+    "ex": [
+     "div.media-dark"
+    ]
+   },
+   {
+    "hex": "#3a3a3c",
+    "L": 0.349,
+    "C": 0.003,
+    "H": 286,
+    "n": 1,
+    "area": 195000,
+    "ex": [
+     "div.absolute"
+    ]
+   },
+   {
+    "hex": "#26241e",
+    "L": 0.26,
+    "C": 0.011,
+    "H": 92,
+    "n": 4,
+    "area": 167394,
+    "ex": [
+     "a.btn",
+     "div.media-border-container"
+    ]
+   },
+   {
+    "hex": "#47433c",
+    "L": 0.385,
+    "C": 0.013,
+    "H": 82,
+    "n": 1,
+    "area": 148052,
+    "ex": [
+     "div.media-dark"
+    ]
+   },
+   {
+    "hex": "#201e18",
+    "L": 0.235,
+    "C": 0.012,
+    "H": 92,
+    "n": 7,
+    "area": 114433,
+    "ex": [
+     "button.agent-sidebar__row",
+     "div.flex"
+    ]
+   },
+   {
+    "hex": "#edecec",
+    "L": 0.944,
+    "C": 0.001,
+    "H": 17,
+    "n": 2,
+    "area": 18714,
+    "ex": [
+     "a.btn",
+     "a.btn"
+    ]
+   },
+   {
+    "hex": "#000000",
+    "L": 0,
+    "C": 0,
+    "H": 0,
+    "n": 1,
+    "area": 2688,
+    "ex": [
+     "div.absolute"
+    ]
+   }
+  ],
+  "overlays": [
+   {
+    "bg": "rgba(28, 28, 26, 0.62) => #191814",
+    "n": 1,
+    "area": 368160
+   },
+   {
+    "bg": "color(srgb 0.14902 0.14902 0.14902 / 0.84) => #242423",
+    "n": 1,
+    "area": 236000
+   },
+   {
+    "bg": "rgba(20, 20, 20, 0.28) => #181714",
+    "n": 1,
+    "area": 132160
+   },
+   {
+    "bg": "oklab(0 0 0 / 0.08) => #12110a",
+    "n": 1,
+    "area": 48089
+   },
+   {
+    "bg": "color(srgb 0.929412 0.92549 0.92549 / 0.03) => #1b1912",
+    "n": 2,
+    "area": 30711
+   },
+   {
+    "bg": "rgba(255, 255, 255, 0.06) => #313130",
+    "n": 1,
+    "area": 22298
+   },
+   {
+    "bg": "color(srgb 0.14902 0.14902 0.14902 / 0.68) => #252525",
+    "n": 1,
+    "area": 21160
+   },
+   {
+    "bg": "rgba(255, 255, 255, 0.075) => #292826",
+    "n": 1,
+    "area": 13462
+   },
+   {
+    "bg": "rgba(255, 255, 255, 0.07) => #282725",
+    "n": 1,
+    "area": 8128
+   },
+   {
+    "bg": "rgba(139, 196, 248, 0.08) => #1e201e",
+    "n": 1,
+    "area": 4706
+   },
+   {
+    "bg": "rgba(237, 236, 236, 0.08) => #25231d",
+    "n": 1,
+    "area": 3554
+   }
+  ],
+  "borders": [
+   {
+    "border": "oklab(0.943853 0.00107113 0.000336707 / 0.1) @1px",
+    "n": 114,
+    "alpha": 0.1,
+    "flatOnPage": "#2a2822",
+    "L": 0.276
+   },
+   {
+    "border": "rgba(0, 0, 0, 0) @1px",
+    "n": 29,
+    "alpha": 0,
+    "flatOnPage": "#14120b",
+    "L": 0.182
+   },
+   {
+    "border": "rgba(237, 236, 236, 0.08) @1px",
+    "n": 27,
+    "alpha": 0.08,
+    "flatOnPage": "#25231d",
+    "L": 0.258
+   },
+   {
+    "border": "rgb(237, 236, 236) @1px",
+    "n": 24,
+    "alpha": 1,
+    "flatOnPage": "#edecec",
+    "L": 0.944
+   },
+   {
+    "border": "oklab(0.943853 0.00107113 0.000336707 / 0.2) @1px",
+    "n": 20,
+    "alpha": 0.2,
+    "flatOnPage": "#3f3e38",
+    "L": 0.362
+   },
+   {
+    "border": "rgb(27, 25, 19) @1px",
+    "n": 16,
+    "alpha": 1,
+    "flatOnPage": "#1b1913",
+    "L": 0.214
+   },
+   {
+    "border": "color(srgb 0.929412 0.92549 0.92549 / 0.06) @1px",
+    "n": 15,
+    "alpha": 0.06,
+    "flatOnPage": "#211f19",
+    "L": 0.239
+   },
+   {
+    "border": "oklab(0.943853 0.00107113 0.000336707 / 0.025) @1px",
+    "n": 12,
+    "alpha": 0.025,
+    "flatOnPage": "#191711",
+    "L": 0.206
+   },
+   {
+    "border": "rgba(255, 255, 255, 0.12) @1px",
+    "n": 9,
+    "alpha": 0.12,
+    "flatOnPage": "#302e28",
+    "L": 0.303
+   },
+   {
+    "border": "rgba(255, 255, 255, 0.055) @1px",
+    "n": 6,
+    "alpha": 0.055,
+    "flatOnPage": "#211f18",
+    "L": 0.239
+   },
+   {
+    "border": "rgba(139, 196, 248, 0.2) @2px",
+    "n": 4,
+    "alpha": 0.2,
+    "flatOnPage": "#2c363a",
+    "L": 0.324
+   },
+   {
+    "border": "color(srgb 0.929411 0.92549 0.92549 / 0.06) @1px",
+    "n": 4,
+    "alpha": 0.06,
+    "flatOnPage": "#211f19",
+    "L": 0.239
+   }
+  ],
+  "radii": [
+   [
+    "4px",
+    139
+   ],
+   [
+    "3.35544e+07px",
+    80
+   ],
+   [
+    "8px",
+    36
+   ],
+   [
+    "50%",
+    30
+   ],
+   [
+    "10px",
+    16
+   ],
+   [
+    "2px",
+    9
+   ],
+   [
+    "12px",
+    7
+   ],
+   [
+    "9999px",
+    7
+   ]
+  ],
+  "shadows": [
+   {
+    "shadow": "rgba(0, 0, 0, 0.14) 0px 28px 70px 0px, rgba(0, 0, 0, 0.1) 0px 14px 32px 0px, oklab(0.943853 0.00107113 0.000336707 / 0.1) 0px 0px 0px 1px",
+    "n": 6
+   },
+   {
+    "shadow": "rgb(38, 38, 38) 0px 0px 0px 2px",
+    "n": 3
+   },
+   {
+    "shadow": "rgba(0, 0, 0, 0.3) 0px 22px 70px 4px, rgba(0, 0, 0, 0.15) 0px 0px 0px 0.5px",
+    "n": 1
+   },
+   {
+    "shadow": "rgba(0, 0, 0, 0.25) 0px 25px 50px -12px, rgba(0, 0, 0, 0.15) 0px 12px 24px -8px, oklab(0.943853 0.00107113 0.000336707 / 0.1) 0px 0px 0px 0.5px",
+    "n": 1
+   },
+   {
+    "shadow": "rgba(0, 0, 0, 0.35) 0px 8px 30px 0px, rgba(0, 0, 0, 0.15) 0px 0px 0px 0.5px",
+    "n": 1
+   },
+   {
+    "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.1) 0px 4px 6px -4px",
+    "n": 1
+   },
+   {
+    "shadow": "oklab(0.943853 0.00107113 0.000336707 / 0.1) 0px 0px 0px 1px, rgba(0, 0, 0, 0.28) 0px 18px 36px -18px",
+    "n": 1
+   }
+  ],
+  "nShadowEls": 14,
+  "textColors": [
+   {
+    "color": "rgb(237, 236, 236)",
+    "chars": 7145,
+    "n": 315,
+    "fg": "#edecec",
+    "alpha": 1,
+    "contrast": 15.89,
+    "L": 0.944,
+    "bg": "#14120b",
+    "size": "16px",
+    "weight": "400",
+    "ex": "Cursor"
+   },
+   {
+    "color": "oklab(0.943853 0.00107113 0.000336707 / 0.6)",
+    "chars": 1968,
+    "n": 107,
+    "fg": "#969592",
+    "alpha": 0.6,
+    "contrast": 6.25,
+    "L": 0.67,
+    "bg": "#14120b",
+    "size": "11px",
+    "weight": "500",
+    "ex": "READY FOR REVIEW 5"
+   },
+   {
+    "color": "rgba(237, 236, 236, 0.55)",
+    "chars": 533,
+    "n": 31,
+    "fg": "#8b8a87",
+    "alpha": 0.55,
+    "contrast": 5.42,
+    "L": 0.633,
+    "bg": "#14120b",
+    "size": "17.28px",
+    "weight": "400",
+    "ex": "Software creation is changin"
+   },
+   {
+    "color": "rgba(255, 255, 255, 0.55)",
+    "chars": 415,
+    "n": 9,
+    "fg": "#979795",
+    "alpha": 0.55,
+    "contrast": 6.11,
+    "L": 0.675,
+    "bg": "#181714",
+    "size": "14px",
+    "weight": "400",
+    "ex": ""
+   },
+   {
+    "color": "oklab(0.943853 0.00107113 0.000336707 / 0.5)",
+    "chars": 221,
+    "n": 30,
+    "fg": "#817f7c",
+    "alpha": 0.5,
+    "contrast": 4.68,
+    "L": 0.597,
+    "bg": "#14120b",
+    "size": "11px",
+    "weight": "500",
+    "ex": "5"
+   },
+   {
+    "color": "oklab(0.943853 0.00107113 0.000336707 / 0.4)",
+    "chars": 209,
+    "n": 16,
+    "fg": "#72706d",
+    "alpha": 0.4,
+    "contrast": 3.39,
+    "L": 0.547,
+    "bg": "#201e18",
+    "size": "11px",
+    "weight": "400",
+    "ex": "now"
+   },
+   {
+    "color": "rgb(245, 78, 0)",
+    "chars": 197,
+    "n": 10,
+    "fg": "#f54e00",
+    "alpha": 1,
+    "contrast": 5,
+    "L": 0.652,
+    "bg": "#1b1913",
+    "size": "16px",
+    "weight": "400",
+    "ex": "Learn about agentic developm"
+   },
+   {
+    "color": "rgba(255, 255, 255, 0.86)",
+    "chars": 186,
+    "n": 7,
+    "fg": "#dfdfde",
+    "alpha": 0.86,
+    "contrast": 13.16,
+    "L": 0.903,
+    "bg": "#1b1913",
+    "size": "19px",
+    "weight": "510",
+    "ex": "All Repos"
+   },
+   {
+    "color": "rgba(255, 255, 255, 0.42)",
+    "chars": 123,
+    "n": 18,
+    "fg": "#7b7a76",
+    "alpha": 0.42,
+    "contrast": 4.07,
+    "L": 0.578,
+    "bg": "#1b1913",
+    "size": "12px",
+    "weight": "400",
+    "ex": "Working"
+   },
+   {
+    "color": "rgb(242, 242, 242)",
+    "chars": 120,
+    "n": 2,
+    "fg": "#f2f2f2",
+    "alpha": 1,
+    "contrast": 13.91,
+    "L": 0.961,
+    "bg": "#242423",
+    "size": "13px",
+    "weight": "400",
+    "ex": "New agent"
+   },
+   {
+    "color": "rgba(255, 255, 255, 0.9)",
+    "chars": 94,
+    "n": 8,
+    "fg": "#e8e8e8",
+    "alpha": 0.9,
+    "contrast": 14.61,
+    "L": 0.93,
+    "bg": "#181714",
+    "size": "14px",
+    "weight": "400",
+    "ex": "Chief"
+   },
+   {
+    "color": "rgb(20, 18, 11)",
+    "chars": 65,
+    "n": 6,
+    "fg": "#14120b",
+    "alpha": 1,
+    "contrast": 15.89,
+    "L": 0.182,
+    "bg": "#edecec",
+    "size": "14px",
+    "weight": "400",
+    "ex": "Skip to content"
+   }
+  ],
+  "h1": {
+   "text": "Cursor is your coding agent for building ambitious software.",
+   "family": "CursorGothic, \"CursorGothic Fallback\", system-ui, \"Helvetica",
+   "size": "26px",
+   "weight": "400",
+   "lh": "32.5px",
+   "ls": "-0.325px",
+   "color": "rgb(237, 236, 236)",
+   "smooth": "antialiased",
+   "bgClip": "border-box",
+   "bgImage": "none",
+   "textShadow": null
+  },
+  "body": {
+   "text": "Skip to content\nCursor\nModels\n↓\nProduct\n↓\nEnterprise\nPricing",
+   "family": "CursorGothic, \"CursorGothic Fallback\", system-ui, \"Helvetica",
+   "size": "16px",
+   "weight": "400",
+   "lh": "24px",
+   "ls": "normal",
+   "color": "rgb(237, 236, 236)",
+   "smooth": "antialiased",
+   "bgClip": "border-box",
+   "bgImage": "none",
+   "textShadow": null
+  },
+  "bodySmoothing": "antialiased",
+  "textRendering": "auto",
+  "heroP": {
+   "text": "This element contains an interactive demo for sighted users ",
+   "family": "CursorGothic, \"CursorGothic Fallback\", system-ui, \"Helvetica",
+   "size": "16px",
+   "weight": "400",
+   "lh": "24px",
+   "ls": "normal",
+   "color": "rgb(237, 236, 236)",
+   "smooth": "antialiased",
+   "bgClip": "border-box",
+   "bgImage": "none",
+   "textShadow": null
+  },
+  "ctas": [
+   {
+    "text": "Models",
+    "h": 34,
+    "kind": "outline",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(237, 236, 236)",
+    "border": "1px rgba(0, 0, 0, 0)",
+    "radius": "0px",
+    "shadow": null,
+    "bgImage": null,
+    "size": "14px",
+    "weight": "400"
+   },
+   {
+    "text": "Product",
+    "h": 34,
+    "kind": "outline",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(237, 236, 236)",
+    "border": "1px rgba(0, 0, 0, 0)",
+    "radius": "0px",
+    "shadow": null,
+    "bgImage": null,
+    "size": "14px",
+    "weight": "400"
+   },
+   {
+    "text": "Enterprise",
+    "h": 34,
+    "kind": "outline",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(237, 236, 236)",
+    "border": "1px rgba(0, 0, 0, 0)",
+    "radius": "0px",
+    "shadow": null,
+    "bgImage": null,
+    "size": "14px",
+    "weight": "400"
+   },
+   {
+    "text": "Pricing",
+    "h": 34,
+    "kind": "outline",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(237, 236, 236)",
+    "border": "1px rgba(0, 0, 0, 0)",
+    "radius": "0px",
+    "shadow": null,
+    "bgImage": null,
+    "size": "14px",
+    "weight": "400"
+   },
+   {
+    "text": "Resources",
+    "h": 34,
+    "kind": "outline",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(237, 236, 236)",
+    "border": "1px rgba(0, 0, 0, 0)",
+    "radius": "0px",
+    "shadow": null,
+    "bgImage": null,
+    "size": "14px",
+    "weight": "400"
+   },
+   {
+    "text": "Sign in",
+    "h": 31,
+    "kind": "outline",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(237, 236, 236)",
+    "border": "1px rgba(0, 0, 0, 0)",
+    "radius": "0px",
+    "shadow": null,
+    "bgImage": null,
+    "size": "14px",
+    "weight": "400"
+   },
+   {
+    "text": "Contact sales",
+    "h": 27,
+    "kind": "outline",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(237, 236, 236)",
+    "border": "1px oklab(0.943853 0.00107113 0.000336707 / 0.2)",
+    "radius": "3.35544e+07px",
+    "shadow": null,
+    "bgImage": null,
+    "size": "14px",
+    "weight": "400"
+   },
+   {
+    "text": "Download",
+    "h": 27,
+    "kind": "filled",
+    "bg": "rgb(237, 236, 236)",
+    "color": "rgb(20, 18, 11)",
+    "border": "1px rgb(237, 236, 236)",
+    "radius": "3.35544e+07px",
+    "shadow": null,
+    "bgImage": null,
+    "size": "14px",
+    "weight": "400"
+   }
+  ],
+  "nav": {
+   "h": 52,
+   "bg": "rgb(20, 18, 11)",
+   "backdrop": "none",
+   "bb": "0px solid rgb(237, 236, 236)",
+   "shadow": null,
+   "linkColor": "rgb(20, 18, 11)"
+  },
+  "effects": {
+   "radial": 0,
+   "conic": 0,
+   "linear": 22,
+   "urlbg": 0,
+   "blurEls": 0,
+   "backdropEls": 0,
+   "mixBlend": 0,
+   "maskEls": 10,
+   "gradEx": [],
+   "canvas": 0,
+   "video": 1,
+   "svg": 65,
+   "img": 28
+  },
+  "noise": false,
+  "gradientHeadings": 0,
+  "accents": [
+   {
+    "hex": "#f54e00",
+    "n": 22,
+    "L": 0.652,
+    "C": 0.214,
+    "H": 38
+   },
+   {
+    "hex": "#c08532",
+    "n": 20,
+    "L": 0.661,
+    "C": 0.121,
+    "H": 72
+   },
+   {
+    "hex": "#1f8a65",
+    "n": 10,
+    "L": 0.565,
+    "C": 0.11,
+    "H": 164
+   },
+   {
+    "hex": "#cf2d56",
+    "n": 8,
+    "L": 0.566,
+    "C": 0.197,
+    "H": 12
+   },
+   {
+    "hex": "#a78bfa",
+    "n": 8,
+    "L": 0.709,
+    "C": 0.159,
+    "H": 294
+   },
+   {
+    "hex": "#c27aff",
+    "n": 6,
+    "L": 0.71,
+    "C": 0.196,
+    "H": 307
+   }
+  ]
+ }
+}

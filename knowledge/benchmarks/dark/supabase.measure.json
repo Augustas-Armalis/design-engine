@@ -1,0 +1,1195 @@
+{
+ "url": "https://supabase.com",
+ "scheme": "dark",
+ "pageHeight": 7691,
+ "fold": {
+  "title": "Supabase | The Postgres Development Platform",
+  "vw": 1440,
+  "pageHeight": 7691,
+  "colorScheme": {
+   "html": "dark",
+   "body": "dark",
+   "metaTheme": null,
+   "htmlClass": "__variable_99576b __variable_085cbe __variable_80d833",
+   "dataTheme": "dark"
+  },
+  "pageBg": "#131413",
+  "pageBgOklabL": 0.19,
+  "pageBgOklabC": 0.003,
+  "pageBgOklabH": 145,
+  "cssVarCount": 0,
+  "cssVars": [],
+  "surfaces": [
+   {
+    "hex": "#181a19",
+    "L": 0.215,
+    "C": 0.004,
+    "H": 165,
+    "n": 40,
+    "area": 3324692,
+    "ex": [
+     "div.group/panel",
+     "div.z-10"
+    ]
+   },
+   {
+    "hex": "#131413",
+    "L": 0.19,
+    "C": 0.003,
+    "H": 145,
+    "n": 68,
+    "area": 2853294,
+    "ex": [
+     "div.absolute",
+     "div.w-[60px]"
+    ]
+   },
+   {
+    "hex": "#0c0f24",
+    "L": 0.179,
+    "C": 0.043,
+    "H": 275,
+    "n": 1,
+    "area": 36480,
+    "ex": [
+     "div.text-left"
+    ]
+   },
+   {
+    "hex": "#002533",
+    "L": 0.247,
+    "C": 0.048,
+    "H": 228,
+    "n": 1,
+    "area": 36480,
+    "ex": [
+     "div.text-left"
+    ]
+   },
+   {
+    "hex": "#000000",
+    "L": 0,
+    "C": 0,
+    "H": 0,
+    "n": 1,
+    "area": 36480,
+    "ex": [
+     "div.text-left"
+    ]
+   },
+   {
+    "hex": "#006338",
+    "L": 0.439,
+    "C": 0.107,
+    "H": 156,
+    "n": 3,
+    "area": 14416,
+    "ex": [
+     "a.relative",
+     "a.relative"
+    ]
+   },
+   {
+    "hex": "#1b1d1c",
+    "L": 0.228,
+    "C": 0.004,
+    "H": 165,
+    "n": 1,
+    "area": 2762,
+    "ex": [
+     "div.inline-flex"
+    ]
+   }
+  ],
+  "overlays": [
+   {
+    "bg": "oklab(0.684 -0.00254067 0.00105238 / 0.1) => #202120",
+    "n": 11,
+    "area": 61346
+   },
+   {
+    "bg": "oklch(0.95 0.00275 157.5 / 0.0328947) => #1a1b1a",
+    "n": 4,
+    "area": 20889
+   },
+   {
+    "bg": "oklab(0.57843 0.0338314 -0.232163 / 0.05) => #17181f",
+    "n": 1,
+    "area": 16383
+   },
+   {
+    "bg": "oklab(0.95 -0.00254067 0.00105238 / 0.0230263) => #181918",
+    "n": 3,
+    "area": 16182
+   },
+   {
+    "bg": "oklch(0 0 0 / 0.12) => #111211",
+    "n": 1,
+    "area": 8384
+   },
+   {
+    "bg": "oklch(0.95 0.00275 157.5 / 0.0328947) => #1e1f26",
+    "n": 1,
+    "area": 6400
+   },
+   {
+    "bg": "oklch(0.95 0.00275 157.5 / 0.0328947) => #222423",
+    "n": 1,
+    "area": 2762
+   }
+  ],
+  "borders": [
+   {
+    "border": "oklch(0.95 0.001485 157.5 / 0.075125) @1px",
+    "n": 373,
+    "alpha": 0.075,
+    "flatOnPage": "#232423",
+    "L": 0.261
+   },
+   {
+    "border": "oklch(0.95 0.001375 157.5 / 0.134738) @1px",
+    "n": 68,
+    "alpha": 0.135,
+    "flatOnPage": "#313231",
+    "L": 0.314
+   },
+   {
+    "border": "rgba(0, 0, 0, 0) @1px",
+    "n": 16,
+    "alpha": 0,
+    "flatOnPage": "#131413",
+    "L": 0.19
+   },
+   {
+    "border": "oklab(0.95 -0.00127033 0.00052619 / 0.0870156) @1px",
+    "n": 6,
+    "alpha": 0.087,
+    "flatOnPage": "#262726",
+    "L": 0.272
+   },
+   {
+    "border": "oklab(0.684 -0.00254067 0.00105238 / 0.7) @1px",
+    "n": 4,
+    "alpha": 0.7,
+    "flatOnPage": "#707271",
+    "L": 0.55
+   },
+   {
+    "border": "rgb(62, 207, 142) @1px",
+    "n": 4,
+    "alpha": 1,
+    "flatOnPage": "#3ecf8e",
+    "L": 0.762
+   },
+   {
+    "border": "oklch(0.95 0.00275 157.5) @1px",
+    "n": 4,
+    "alpha": 1,
+    "flatOnPage": "#edefee",
+    "L": 0.95
+   },
+   {
+    "border": "oklab(0.684 -0.00254067 0.00105238 / 0.1) @1px",
+    "n": 1,
+    "alpha": 0.1,
+    "flatOnPage": "#202120",
+    "L": 0.248
+   }
+  ],
+  "radii": [
+   [
+    "10.6667px",
+    70
+   ],
+   [
+    "3.35544e+07px",
+    60
+   ],
+   [
+    "5.33333px",
+    27
+   ],
+   [
+    "21.3333px",
+    16
+   ],
+   [
+    "8px",
+    15
+   ],
+   [
+    "16px",
+    14
+   ],
+   [
+    "15px",
+    7
+   ],
+   [
+    "8.86154px",
+    5
+   ]
+  ],
+  "shadows": [
+   {
+    "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.2) 0px 1px 3px 0px, rgba(255, 255, 255, 0.04) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px ins",
+    "n": 6
+   },
+   {
+    "shadow": "rgba(255, 255, 255, 0.12) 0px 0px 0px 1px inset",
+    "n": 5
+   },
+   {
+    "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklab(0.999994 0.0000455678 0.0000200868 / 0.3) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+    "n": 5
+   },
+   {
+    "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+    "n": 4
+   },
+   {
+    "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.2) 0px 1px 3px 0px, rgba(255, 255, 255, 0.04) 0px 1px 0px 0px inset, rgba(255, 255, 255, 0.06) 0px 0px 0px 1",
+    "n": 4
+   },
+   {
+    "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.1) 0px 4px 6px -4px",
+    "n": 3
+   },
+   {
+    "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.1) 0px 2px 4px -2px",
+    "n": 1
+   }
+  ],
+  "nShadowEls": 28,
+  "textColors": [
+   {
+    "color": "oklch(0.684 0.00275 157.5)",
+    "chars": 4837,
+    "n": 110,
+    "fg": "#989a99",
+    "alpha": 1,
+    "contrast": 6.52,
+    "L": 0.684,
+    "bg": "#131413",
+    "size": "16px",
+    "weight": "450",
+    "ex": "Start your project with a Po"
+   },
+   {
+    "color": "oklch(0.95 0.00275 157.5)",
+    "chars": 1186,
+    "n": 79,
+    "fg": "#edefee",
+    "alpha": 1,
+    "contrast": 13.54,
+    "L": 0.95,
+    "bg": "#222423",
+    "size": "12px",
+    "weight": "500",
+    "ex": "Skip to content"
+   },
+   {
+    "color": "rgb(255, 255, 255)",
+    "chars": 977,
+    "n": 41,
+    "fg": "#ffffff",
+    "alpha": 1,
+    "contrast": 18.47,
+    "L": 1,
+    "bg": "#131413",
+    "size": "13px",
+    "weight": "500",
+    "ex": "{ createClient }"
+   },
+   {
+    "color": "rgba(255, 255, 255, 0.6)",
+    "chars": 334,
+    "n": 5,
+    "fg": "#a1a1a1",
+    "alpha": 0.6,
+    "contrast": 7.14,
+    "L": 0.709,
+    "bg": "#131413",
+    "size": "12px",
+    "weight": "450",
+    "ex": "Powering millions of AI-gene"
+   },
+   {
+    "color": "rgba(255, 255, 255, 0.65)",
+    "chars": 192,
+    "n": 5,
+    "fg": "#acadac",
+    "alpha": 0.65,
+    "contrast": 8.2,
+    "L": 0.746,
+    "bg": "#131413",
+    "size": "12px",
+    "weight": "450",
+    "ex": "Bryan Byrne, Product Manager"
+   },
+   {
+    "color": "rgb(62, 207, 142)",
+    "chars": 117,
+    "n": 15,
+    "fg": "#3ecf8e",
+    "alpha": 1,
+    "contrast": 9.25,
+    "L": 0.762,
+    "bg": "#131413",
+    "size": "13px",
+    "weight": "500",
+    "ex": "supabase"
+   },
+   {
+    "color": "rgba(255, 255, 255, 0.7)",
+    "chars": 80,
+    "n": 5,
+    "fg": "#b8b9b8",
+    "alpha": 0.7,
+    "contrast": 9.35,
+    "L": 0.784,
+    "bg": "#131413",
+    "size": "12px",
+    "weight": "450",
+    "ex": "Read the story →"
+   },
+   {
+    "color": "oklch(0.798 0.00275 157.5)",
+    "chars": 75,
+    "n": 5,
+    "fg": "#bcbdbc",
+    "alpha": 1,
+    "contrast": 9.8,
+    "L": 0.797,
+    "bg": "#131413",
+    "size": "12px",
+    "weight": "500",
+    "ex": "111.2K"
+   },
+   {
+    "color": "oklch(0.76 0.15 157.5)",
+    "chars": 55,
+    "n": 4,
+    "fg": "#4acd8b",
+    "alpha": 1,
+    "contrast": 9.14,
+    "L": 0.76,
+    "bg": "#131413",
+    "size": "46px",
+    "weight": "500",
+    "ex": "Scale to millions"
+   },
+   {
+    "color": "rgb(189, 164, 255)",
+    "chars": 54,
+    "n": 13,
+    "fg": "#bda4ff",
+    "alpha": 1,
+    "contrast": 8.72,
+    "L": 0.775,
+    "bg": "#131413",
+    "size": "13px",
+    "weight": "500",
+    "ex": "import"
+   },
+   {
+    "color": "rgb(255, 205, 161)",
+    "chars": 27,
+    "n": 3,
+    "fg": "#ffcda1",
+    "alpha": 1,
+    "contrast": 12.75,
+    "L": 0.882,
+    "bg": "#131413",
+    "size": "13px",
+    "weight": "500",
+    "ex": "@supabase/supabase-js"
+   }
+  ],
+  "h1": {
+   "text": "Build in a weekend\nScale to millions",
+   "family": "Manrope, \"Manrope Fallback\", system-ui, \"Helvetica Neue\", He",
+   "size": "46px",
+   "weight": "500",
+   "lh": "46px",
+   "ls": "normal",
+   "color": "oklch(0.95 0.00275 157.5)",
+   "smooth": "antialiased",
+   "bgClip": "border-box",
+   "bgImage": "none",
+   "textShadow": null
+  },
+  "body": {
+   "text": "Skip to content\nProduct\nDevelopers\nSolutions\n\nPricing\n\nDocs\n",
+   "family": "Inter, \"Inter Fallback\", system-ui, \"Helvetica Neue\", Helvet",
+   "size": "16px",
+   "weight": "450",
+   "lh": "24px",
+   "ls": "normal",
+   "color": "oklch(0.95 0.00275 157.5)",
+   "smooth": "antialiased",
+   "bgClip": "border-box",
+   "bgImage": "none",
+   "textShadow": null
+  },
+  "bodySmoothing": "antialiased",
+  "textRendering": "auto",
+  "heroP": {
+   "text": "Every project is a full Postgres database, the world's most ",
+   "family": "Inter, \"Inter Fallback\", system-ui, \"Helvetica Neue\", Helvet",
+   "size": "14px",
+   "weight": "450",
+   "lh": "20px",
+   "ls": "normal",
+   "color": "oklch(0.684 0.00275 157.5)",
+   "smooth": "antialiased",
+   "bgClip": "border-box",
+   "bgImage": "none",
+   "textShadow": null
+  },
+  "ctas": [
+   {
+    "text": "Product",
+    "h": 64,
+    "kind": "outline",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "oklch(0.95 0.00275 157.5)",
+    "border": "1px rgba(0, 0, 0, 0)",
+    "radius": "8.86154px",
+    "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+    "bgImage": null,
+    "size": "14px",
+    "weight": "500"
+   },
+   {
+    "text": "Developers",
+    "h": 64,
+    "kind": "outline",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "oklch(0.95 0.00275 157.5)",
+    "border": "1px rgba(0, 0, 0, 0)",
+    "radius": "8.86154px",
+    "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+    "bgImage": null,
+    "size": "14px",
+    "weight": "500"
+   },
+   {
+    "text": "Solutions",
+    "h": 64,
+    "kind": "outline",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "oklch(0.95 0.00275 157.5)",
+    "border": "1px rgba(0, 0, 0, 0)",
+    "radius": "8.86154px",
+    "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+    "bgImage": null,
+    "size": "14px",
+    "weight": "500"
+   },
+   {
+    "text": "111.2K",
+    "h": 26,
+    "kind": "outline",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "oklch(0.798 0.00275 157.5)",
+    "border": "1px rgba(0, 0, 0, 0)",
+    "radius": "8px",
+    "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+    "bgImage": null,
+    "size": "12px",
+    "weight": "500"
+   },
+   {
+    "text": "Start your project",
+    "h": 26,
+    "kind": "filled",
+    "bg": "oklch(0.43627 0.11 157.5)",
+    "color": "oklch(0.95 0.00275 157.5)",
+    "border": null,
+    "radius": "8px",
+    "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.2) 0px 1px 3px 0px, rgba(255, 255, 255, 0.04) 0p",
+    "bgImage": "linear-gradient(rgba(255, 255, 255, 0.016), rgba(0, 0, 0, 0.01))",
+    "size": "12px",
+    "weight": "500"
+   },
+   {
+    "text": "Start your project",
+    "h": 38,
+    "kind": "filled",
+    "bg": "oklch(0.43627 0.11 157.5)",
+    "color": "oklch(0.95 0.00275 157.5)",
+    "border": null,
+    "radius": "9.29231px",
+    "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.2) 0px 1px 3px 0px, rgba(255, 255, 255, 0.04) 0p",
+    "bgImage": "linear-gradient(rgba(255, 255, 255, 0.016), rgba(0, 0, 0, 0.01))",
+    "size": "14px",
+    "weight": "500"
+   }
+  ],
+  "nav": {
+   "h": 65,
+   "bg": "rgba(0, 0, 0, 0)",
+   "backdrop": "none",
+   "bb": "0px solid oklch(0.95 0.001485 157.5 / 0.075125)",
+   "shadow": null,
+   "linkColor": "oklch(0.95 0.00275 157.5)"
+  },
+  "effects": {
+   "radial": 0,
+   "conic": 0,
+   "linear": 21,
+   "urlbg": 0,
+   "blurEls": 2,
+   "backdropEls": 1,
+   "mixBlend": 0,
+   "maskEls": 3,
+   "gradEx": [],
+   "canvas": 0,
+   "video": 0,
+   "svg": 131,
+   "img": 57
+  },
+  "noise": false,
+  "gradientHeadings": 0,
+  "accents": [
+   {
+    "hex": "#3ecf8e",
+    "n": 19,
+    "L": 0.762,
+    "C": 0.154,
+    "H": 159
+   },
+   {
+    "hex": "#bda4ff",
+    "n": 13,
+    "L": 0.775,
+    "C": 0.13,
+    "H": 296
+   },
+   {
+    "hex": "#006338",
+    "n": 4,
+    "L": 0.439,
+    "C": 0.107,
+    "H": 156
+   },
+   {
+    "hex": "#4acd8b",
+    "n": 4,
+    "L": 0.76,
+    "C": 0.15,
+    "H": 158
+   },
+   {
+    "hex": "#7938b2",
+    "n": 1,
+    "L": 0.488,
+    "C": 0.186,
+    "H": 305
+   },
+   {
+    "hex": "#8e4ec6",
+    "n": 1,
+    "L": 0.556,
+    "C": 0.183,
+    "H": 306
+   }
+  ]
+ },
+ "full": {
+  "title": "Supabase | The Postgres Development Platform",
+  "vw": 1440,
+  "pageHeight": 7691,
+  "colorScheme": {
+   "html": "dark",
+   "body": "dark",
+   "metaTheme": null,
+   "htmlClass": "__variable_99576b __variable_085cbe __variable_80d833",
+   "dataTheme": "dark"
+  },
+  "pageBg": "#131413",
+  "pageBgOklabL": 0.19,
+  "pageBgOklabC": 0.003,
+  "pageBgOklabH": 145,
+  "cssVarCount": 0,
+  "cssVars": [],
+  "surfaces": [
+   {
+    "hex": "#181a19",
+    "L": 0.215,
+    "C": 0.004,
+    "H": 165,
+    "n": 40,
+    "area": 3363572,
+    "ex": [
+     "div.group/panel",
+     "div.z-10"
+    ]
+   },
+   {
+    "hex": "#131413",
+    "L": 0.19,
+    "C": 0.003,
+    "H": 145,
+    "n": 68,
+    "area": 2853294,
+    "ex": [
+     "div.absolute",
+     "div.w-[60px]"
+    ]
+   },
+   {
+    "hex": "#0c0f24",
+    "L": 0.179,
+    "C": 0.043,
+    "H": 275,
+    "n": 1,
+    "area": 36480,
+    "ex": [
+     "div.text-left"
+    ]
+   },
+   {
+    "hex": "#002533",
+    "L": 0.247,
+    "C": 0.048,
+    "H": 228,
+    "n": 1,
+    "area": 36480,
+    "ex": [
+     "div.text-left"
+    ]
+   },
+   {
+    "hex": "#000000",
+    "L": 0,
+    "C": 0,
+    "H": 0,
+    "n": 1,
+    "area": 36480,
+    "ex": [
+     "div.text-left"
+    ]
+   },
+   {
+    "hex": "#006338",
+    "L": 0.439,
+    "C": 0.107,
+    "H": 156,
+    "n": 3,
+    "area": 14416,
+    "ex": [
+     "a.relative",
+     "a.relative"
+    ]
+   },
+   {
+    "hex": "#1b1d1c",
+    "L": 0.228,
+    "C": 0.004,
+    "H": 165,
+    "n": 1,
+    "area": 2762,
+    "ex": [
+     "div.inline-flex"
+    ]
+   }
+  ],
+  "overlays": [
+   {
+    "bg": "oklab(0.684 -0.00254067 0.00105238 / 0.1) => #202120",
+    "n": 11,
+    "area": 61346
+   },
+   {
+    "bg": "oklch(0.95 0.00275 157.5 / 0.0328947) => #1a1b1a",
+    "n": 4,
+    "area": 20889
+   },
+   {
+    "bg": "oklab(0.57843 0.0338314 -0.232163 / 0.05) => #17181f",
+    "n": 1,
+    "area": 16383
+   },
+   {
+    "bg": "oklab(0.95 -0.00254067 0.00105238 / 0.0230263) => #181918",
+    "n": 3,
+    "area": 16182
+   },
+   {
+    "bg": "oklch(0 0 0 / 0.12) => #111211",
+    "n": 1,
+    "area": 8384
+   },
+   {
+    "bg": "oklch(0.95 0.00275 157.5 / 0.0328947) => #1e1f26",
+    "n": 1,
+    "area": 6400
+   },
+   {
+    "bg": "oklch(0.95 0.00275 157.5 / 0.0328947) => #222423",
+    "n": 1,
+    "area": 2762
+   }
+  ],
+  "borders": [
+   {
+    "border": "oklch(0.95 0.001485 157.5 / 0.075125) @1px",
+    "n": 373,
+    "alpha": 0.075,
+    "flatOnPage": "#232423",
+    "L": 0.261
+   },
+   {
+    "border": "oklch(0.95 0.001375 157.5 / 0.134738) @1px",
+    "n": 68,
+    "alpha": 0.135,
+    "flatOnPage": "#313231",
+    "L": 0.314
+   },
+   {
+    "border": "rgba(0, 0, 0, 0) @1px",
+    "n": 16,
+    "alpha": 0,
+    "flatOnPage": "#131413",
+    "L": 0.19
+   },
+   {
+    "border": "oklab(0.95 -0.00127033 0.00052619 / 0.0870156) @1px",
+    "n": 6,
+    "alpha": 0.087,
+    "flatOnPage": "#262726",
+    "L": 0.272
+   },
+   {
+    "border": "oklab(0.684 -0.00254067 0.00105238 / 0.7) @1px",
+    "n": 4,
+    "alpha": 0.7,
+    "flatOnPage": "#707271",
+    "L": 0.55
+   },
+   {
+    "border": "rgb(62, 207, 142) @1px",
+    "n": 4,
+    "alpha": 1,
+    "flatOnPage": "#3ecf8e",
+    "L": 0.762
+   },
+   {
+    "border": "oklch(0.95 0.00275 157.5) @1px",
+    "n": 4,
+    "alpha": 1,
+    "flatOnPage": "#edefee",
+    "L": 0.95
+   },
+   {
+    "border": "oklab(0.684 -0.00254067 0.00105238 / 0.1) @1px",
+    "n": 1,
+    "alpha": 0.1,
+    "flatOnPage": "#202120",
+    "L": 0.248
+   }
+  ],
+  "radii": [
+   [
+    "10.6667px",
+    70
+   ],
+   [
+    "3.35544e+07px",
+    60
+   ],
+   [
+    "5.33333px",
+    27
+   ],
+   [
+    "21.3333px",
+    16
+   ],
+   [
+    "8px",
+    15
+   ],
+   [
+    "16px",
+    14
+   ],
+   [
+    "15px",
+    7
+   ],
+   [
+    "8.86154px",
+    5
+   ]
+  ],
+  "shadows": [
+   {
+    "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.2) 0px 1px 3px 0px, rgba(255, 255, 255, 0.04) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px ins",
+    "n": 6
+   },
+   {
+    "shadow": "rgba(255, 255, 255, 0.12) 0px 0px 0px 1px inset",
+    "n": 5
+   },
+   {
+    "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklab(0.999994 0.0000455678 0.0000200868 / 0.3) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+    "n": 5
+   },
+   {
+    "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+    "n": 4
+   },
+   {
+    "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.2) 0px 1px 3px 0px, rgba(255, 255, 255, 0.04) 0px 1px 0px 0px inset, rgba(255, 255, 255, 0.06) 0px 0px 0px 1",
+    "n": 4
+   },
+   {
+    "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.1) 0px 4px 6px -4px",
+    "n": 3
+   },
+   {
+    "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.1) 0px 2px 4px -2px",
+    "n": 1
+   }
+  ],
+  "nShadowEls": 28,
+  "textColors": [
+   {
+    "color": "oklch(0.684 0.00275 157.5)",
+    "chars": 5004,
+    "n": 110,
+    "fg": "#989a99",
+    "alpha": 1,
+    "contrast": 6.52,
+    "L": 0.684,
+    "bg": "#131413",
+    "size": "16px",
+    "weight": "450",
+    "ex": "Start your project with a Po"
+   },
+   {
+    "color": "oklch(0.95 0.00275 157.5)",
+    "chars": 1198,
+    "n": 79,
+    "fg": "#edefee",
+    "alpha": 1,
+    "contrast": 13.54,
+    "L": 0.95,
+    "bg": "#222423",
+    "size": "12px",
+    "weight": "500",
+    "ex": "Skip to content"
+   },
+   {
+    "color": "rgb(255, 255, 255)",
+    "chars": 977,
+    "n": 41,
+    "fg": "#ffffff",
+    "alpha": 1,
+    "contrast": 18.47,
+    "L": 1,
+    "bg": "#131413",
+    "size": "13px",
+    "weight": "500",
+    "ex": "{ createClient }"
+   },
+   {
+    "color": "rgba(255, 255, 255, 0.6)",
+    "chars": 334,
+    "n": 5,
+    "fg": "#a1a1a1",
+    "alpha": 0.6,
+    "contrast": 7.14,
+    "L": 0.709,
+    "bg": "#131413",
+    "size": "12px",
+    "weight": "450",
+    "ex": "Powering millions of AI-gene"
+   },
+   {
+    "color": "rgba(255, 255, 255, 0.65)",
+    "chars": 192,
+    "n": 5,
+    "fg": "#acadac",
+    "alpha": 0.65,
+    "contrast": 8.2,
+    "L": 0.746,
+    "bg": "#131413",
+    "size": "12px",
+    "weight": "450",
+    "ex": "Bryan Byrne, Product Manager"
+   },
+   {
+    "color": "rgb(62, 207, 142)",
+    "chars": 117,
+    "n": 15,
+    "fg": "#3ecf8e",
+    "alpha": 1,
+    "contrast": 9.25,
+    "L": 0.762,
+    "bg": "#131413",
+    "size": "13px",
+    "weight": "500",
+    "ex": "supabase"
+   },
+   {
+    "color": "rgba(255, 255, 255, 0.7)",
+    "chars": 80,
+    "n": 5,
+    "fg": "#b8b9b8",
+    "alpha": 0.7,
+    "contrast": 9.35,
+    "L": 0.784,
+    "bg": "#131413",
+    "size": "12px",
+    "weight": "450",
+    "ex": "Read the story →"
+   },
+   {
+    "color": "oklch(0.798 0.00275 157.5)",
+    "chars": 75,
+    "n": 5,
+    "fg": "#bcbdbc",
+    "alpha": 1,
+    "contrast": 9.8,
+    "L": 0.797,
+    "bg": "#131413",
+    "size": "12px",
+    "weight": "500",
+    "ex": "111.2K"
+   },
+   {
+    "color": "rgb(189, 164, 255)",
+    "chars": 54,
+    "n": 13,
+    "fg": "#bda4ff",
+    "alpha": 1,
+    "contrast": 8.72,
+    "L": 0.775,
+    "bg": "#131413",
+    "size": "13px",
+    "weight": "500",
+    "ex": "import"
+   },
+   {
+    "color": "oklch(0.76 0.15 157.5)",
+    "chars": 47,
+    "n": 4,
+    "fg": "#4acd8b",
+    "alpha": 1,
+    "contrast": 9.14,
+    "L": 0.76,
+    "bg": "#131413",
+    "size": "46px",
+    "weight": "500",
+    "ex": "Scale to millions"
+   },
+   {
+    "color": "rgb(255, 205, 161)",
+    "chars": 27,
+    "n": 3,
+    "fg": "#ffcda1",
+    "alpha": 1,
+    "contrast": 12.75,
+    "L": 0.882,
+    "bg": "#131413",
+    "size": "13px",
+    "weight": "500",
+    "ex": "@supabase/supabase-js"
+   }
+  ],
+  "h1": {
+   "text": "Build in a weekend\nScale to millions",
+   "family": "Manrope, \"Manrope Fallback\", system-ui, \"Helvetica Neue\", He",
+   "size": "46px",
+   "weight": "500",
+   "lh": "46px",
+   "ls": "normal",
+   "color": "oklch(0.95 0.00275 157.5)",
+   "smooth": "antialiased",
+   "bgClip": "border-box",
+   "bgImage": "none",
+   "textShadow": null
+  },
+  "body": {
+   "text": "Skip to content\nProduct\nDevelopers\nSolutions\n\nPricing\n\nDocs\n",
+   "family": "Inter, \"Inter Fallback\", system-ui, \"Helvetica Neue\", Helvet",
+   "size": "16px",
+   "weight": "450",
+   "lh": "24px",
+   "ls": "normal",
+   "color": "oklch(0.95 0.00275 157.5)",
+   "smooth": "antialiased",
+   "bgClip": "border-box",
+   "bgImage": "none",
+   "textShadow": null
+  },
+  "bodySmoothing": "antialiased",
+  "textRendering": "auto",
+  "heroP": {
+   "text": "Every project is a full Postgres database, the world's most ",
+   "family": "Inter, \"Inter Fallback\", system-ui, \"Helvetica Neue\", Helvet",
+   "size": "14px",
+   "weight": "450",
+   "lh": "20px",
+   "ls": "normal",
+   "color": "oklch(0.684 0.00275 157.5)",
+   "smooth": "antialiased",
+   "bgClip": "border-box",
+   "bgImage": "none",
+   "textShadow": null
+  },
+  "ctas": [
+   {
+    "text": "Product",
+    "h": 64,
+    "kind": "outline",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "oklch(0.95 0.00275 157.5)",
+    "border": "1px rgba(0, 0, 0, 0)",
+    "radius": "8.86154px",
+    "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+    "bgImage": null,
+    "size": "14px",
+    "weight": "500"
+   },
+   {
+    "text": "Developers",
+    "h": 64,
+    "kind": "outline",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "oklch(0.95 0.00275 157.5)",
+    "border": "1px rgba(0, 0, 0, 0)",
+    "radius": "8.86154px",
+    "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+    "bgImage": null,
+    "size": "14px",
+    "weight": "500"
+   },
+   {
+    "text": "Solutions",
+    "h": 64,
+    "kind": "outline",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "oklch(0.95 0.00275 157.5)",
+    "border": "1px rgba(0, 0, 0, 0)",
+    "radius": "8.86154px",
+    "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+    "bgImage": null,
+    "size": "14px",
+    "weight": "500"
+   },
+   {
+    "text": "111.2K",
+    "h": 26,
+    "kind": "outline",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "oklch(0.798 0.00275 157.5)",
+    "border": "1px rgba(0, 0, 0, 0)",
+    "radius": "8px",
+    "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+    "bgImage": null,
+    "size": "12px",
+    "weight": "500"
+   },
+   {
+    "text": "Start your project",
+    "h": 26,
+    "kind": "filled",
+    "bg": "oklch(0.43627 0.11 157.5)",
+    "color": "oklch(0.95 0.00275 157.5)",
+    "border": null,
+    "radius": "8px",
+    "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.2) 0px 1px 3px 0px, rgba(255, 255, 255, 0.04) 0p",
+    "bgImage": "linear-gradient(rgba(255, 255, 255, 0.016), rgba(0, 0, 0, 0.01))",
+    "size": "12px",
+    "weight": "500"
+   },
+   {
+    "text": "Start your project",
+    "h": 38,
+    "kind": "filled",
+    "bg": "oklch(0.43627 0.11 157.5)",
+    "color": "oklch(0.95 0.00275 157.5)",
+    "border": null,
+    "radius": "9.29231px",
+    "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.2) 0px 1px 3px 0px, rgba(255, 255, 255, 0.04) 0p",
+    "bgImage": "linear-gradient(rgba(255, 255, 255, 0.016), rgba(0, 0, 0, 0.01))",
+    "size": "14px",
+    "weight": "500"
+   }
+  ],
+  "nav": {
+   "h": 65,
+   "bg": "rgba(0, 0, 0, 0)",
+   "backdrop": "none",
+   "bb": "0px solid oklch(0.95 0.001485 157.5 / 0.075125)",
+   "shadow": null,
+   "linkColor": "oklch(0.95 0.00275 157.5)"
+  },
+  "effects": {
+   "radial": 0,
+   "conic": 0,
+   "linear": 21,
+   "urlbg": 0,
+   "blurEls": 2,
+   "backdropEls": 1,
+   "mixBlend": 0,
+   "maskEls": 3,
+   "gradEx": [],
+   "canvas": 0,
+   "video": 1,
+   "svg": 131,
+   "img": 58
+  },
+  "noise": false,
+  "gradientHeadings": 0,
+  "accents": [
+   {
+    "hex": "#3ecf8e",
+    "n": 19,
+    "L": 0.762,
+    "C": 0.154,
+    "H": 159
+   },
+   {
+    "hex": "#bda4ff",
+    "n": 13,
+    "L": 0.775,
+    "C": 0.13,
+    "H": 296
+   },
+   {
+    "hex": "#006338",
+    "n": 4,
+    "L": 0.439,
+    "C": 0.107,
+    "H": 156
+   },
+   {
+    "hex": "#4acd8b",
+    "n": 4,
+    "L": 0.76,
+    "C": 0.15,
+    "H": 158
+   },
+   {
+    "hex": "#7938b2",
+    "n": 1,
+    "L": 0.488,
+    "C": 0.186,
+    "H": 305
+   },
+   {
+    "hex": "#8e4ec6",
+    "n": 1,
+    "L": 0.556,
+    "C": 0.183,
+    "H": 306
+   }
+  ]
+ }
+}

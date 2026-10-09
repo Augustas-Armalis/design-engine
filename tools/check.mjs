@@ -217,6 +217,7 @@ function evaluate(m, vp, axe) {
   c.push(mk('a11y.axe-minor', minor.length ? 'warn' : 'pass', minor.length, '0 moderate/minor', fmt(minor)));
   // AI tells
   c.push(mk('interaction.blocked-targets', m.blockedTargets.length ? 'fail' : 'pass', m.blockedTargets.length, '0 controls covered by another layer', m.blockedTargets.slice(0, 6).join('; ')));
+  c.push(mk('shape.icon-centring', m.iconOffCentre.length ? 'warn' : 'pass', m.iconOffCentre.length, 'icons centred in their controls within 0.75px', m.iconOffCentre.slice(0, 6).join('; ')));
   c.push(mk('shape.radius-ladder', 'info', m.radiusMixedBands.join(',') || 'consistent', '<= 2 radii per control-height band (21-48px)', m.radiusLadder.join(' | ')));
   if (m.loadIn) c.push(mk('motion.load-in', m.loadIn.earlyH1Opacity == null ? 'info' : m.loadIn.lateH1Opacity < 0.99 ? 'fail' : 'info', m.loadIn.earlyH1Opacity < 0.99 ? 'animated' : 'static', 'h1 fully visible after load; founder wants an orchestrated load-in', `h1 opacity at 350ms ${m.loadIn.earlyH1Opacity}, at 4.3s ${m.loadIn.lateH1Opacity}`));
   c.push(mk('ai.banned-phrases', 'info', m.bannedHits.length, '0 cliché phrases', m.bannedHits.join(', ')));
@@ -277,7 +278,25 @@ for (const vp of T.viewports) {
     }
     const ladder = Object.entries(bands).map(([k, v]) => `${k}px: ${[...v].sort((x, y) => x - y).join('/')}`);
     const mixed = Object.entries(bands).filter(([k, v]) => ['21-30', '31-36', '37-48'].includes(k) && v.size > 2).map(([k]) => k);
-    return { blockedTargets: blocked, radiusLadder: ladder, radiusMixedBands: mixed };
+    // icon centring (founder: "if an icon is not centered... that's the main thing that always breaks").
+    // Vertical centring for every icon in a small control; horizontal too when the control is icon-only.
+    const off = [];
+    for (const svg of document.querySelectorAll('svg')) {
+      const host = svg.closest('button, a, [role=button], span, div, li, kbd');
+      if (!host) continue;
+      const hr = host.getBoundingClientRect(), r = svg.getBoundingClientRect();
+      if (hr.height > 56 || hr.height < 12 || r.width < 6 || r.width > 40 || hr.bottom < 0 || hr.top > innerHeight) continue;
+      const cs = getComputedStyle(host);
+      if (!/flex|grid/.test(cs.display)) continue;
+      const pt = parseFloat(cs.paddingTop) + parseFloat(cs.borderTopWidth), pb = parseFloat(cs.paddingBottom) + parseFloat(cs.borderBottomWidth);
+      const cy = hr.top + pt + (hr.height - pt - pb) / 2, iy = r.top + r.height / 2;
+      const text = [...host.childNodes].some((n) => n.nodeType === 3 && n.textContent.trim()) || [...host.children].some((c) => c.tagName !== 'svg' && c.textContent.trim());
+      let dx = 0;
+      if (!text) { const pl = parseFloat(cs.paddingLeft) + parseFloat(cs.borderLeftWidth), pr = parseFloat(cs.paddingRight) + parseFloat(cs.borderRightWidth); dx = (r.left + r.width / 2) - (hr.left + pl + (hr.width - pl - pr) / 2); }
+      const dy = iy - cy, d = Math.max(Math.abs(dx), Math.abs(dy));
+      if (d > 0.75) off.push(`${(host.getAttribute('aria-label') || host.textContent || host.tagName).trim().replace(/\s+/g, ' ').slice(0, 22) || host.tagName.toLowerCase()} dx ${dx.toFixed(1)} dy ${dy.toFixed(1)}`);
+    }
+    return { blockedTargets: blocked, radiusLadder: ladder, radiusMixedBands: mixed, iconOffCentre: off };
   }));
   await page.addScriptTag({ content: axeSource });
   const axe = await page.evaluate(async () => {
