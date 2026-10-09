@@ -5,8 +5,8 @@ import {
   ChevronDown, ChevronLeft, ChevronRight, ChevronsUpDown, CirclePlus, Command, Megaphone,
   MessageCirclePlus, Rocket, Workflow,
 } from 'lucide-react'
-import { RiGlobalLine, RiApps2Line, RiApps2AddLine, RiLockFill, RiMoneyDollarCircleFill, RiStackFill, RiSideBarLine } from '@remixicon/react'
-import { ChartBar, Sidebar, CalendarBlank } from '@phosphor-icons/react'
+import { RiBarChart2Line, RiGlobalLine, RiApps2Line, RiApps2AddLine, RiLockFill, RiMoneyDollarCircleFill, RiStackFill } from '@remixicon/react'
+import { Sidebar, CalendarBlank } from '@phosphor-icons/react'
 import { mainDotted, mainSolid, sessDotted, sessSolid } from '../data/chart'
 
 const C = {
@@ -89,7 +89,7 @@ export default function Analytics() {
           </span>
           <span style={{ ...abs(102, 106, 120, 16), color: C.strong }} className="text-[13px] leading-[16px] font-[500]">Ace Studio</span>
           <span style={{ ...abs(176, 106, 16, 16), color: C.strong }}><ChevronDown size={16} strokeWidth={1.5} /></span>
-          <span style={{ ...abs(279, 104, 18, 18), color: C.sub }}><Sidebar size={18} /></span>
+          <span style={{ ...abs(279, 105, 18, 18), color: C.sub }}><Sidebar size={18} /></span>
 
           <div style={{ ...abs(68, 138, 236, 28), background: C.white, border: `1px solid ${C.line}`, borderRadius: 8 }} className="flex items-center gap-[10px] px-[7px]">
             <Command {...ICON} />
@@ -98,7 +98,7 @@ export default function Analytics() {
           </div>
 
           <Row y={176} icon={<RiApps2Line size={14} color={C.sub} />} label="Home" />
-          <Row y={206} icon={<ChartBar size={15} color={C.strong} />} label="Analytics" active />
+          <Row y={206} icon={<RiBarChart2Line size={14} color={C.strong} />} label="Analytics" active />
           <Row y={234} label="Reports" />
           <Row y={262} label="Live view" />
           <Row y={292} icon={<Workflow size={15} strokeWidth={1.4} color={C.sub} />} label="Plan" />
@@ -134,7 +134,7 @@ export default function Analytics() {
 
           {/* main */}
           <div style={{ ...abs(316, 87, 800, 901), background: C.page }} />
-          <span style={{ ...abs(339.5, 116.5, 17, 17), color: C.strong }}><ChartBar size={17} /></span>
+          <span style={{ ...abs(340, 117, 16, 16), color: C.strong }}><RiBarChart2Line size={16} /></span>
           <span style={{ ...abs(361.7, 116, 200, 20), color: C.strong }} className="text-[16px] leading-[20px] font-[500]">Analytics</span>
 
           <Chip x={341} w={134.5} icon={<CalendarBlank size={15} weight="duotone" />} label="Last 30 days" />
