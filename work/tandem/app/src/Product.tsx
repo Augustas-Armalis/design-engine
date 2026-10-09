@@ -61,16 +61,18 @@ export default function Product() {
     <div className="relative mx-auto flex h-[900px] w-[1440px] overflow-hidden bg-white text-[14px]">
       {/* sidebar */}
       <aside className="flex w-[256px] shrink-0 flex-col border-r border-[var(--line)] bg-[#fafafa] px-2.5 pb-2.5">
-        <div className="flex h-14 items-center pl-2.5 pr-1">
-          <span className="relative mr-2.5 block size-5"><span className="absolute left-0 top-0 size-[13px] rounded-[4px] bg-[var(--ink)]" /><span className="absolute bottom-0 right-0 size-[13px] rounded-[4px] bg-[var(--blue)] mix-blend-multiply" /></span>
-          <span className="text-[14px] font-[600] tracking-[-0.01em]">Northwind Ops</span><ChevronDown size={14} strokeWidth={SW} className="ml-1 text-[var(--soft)]" />
+        {/* workspace switcher: one tile, name, chevron; collapse on the right */}
+        <div className="flex h-14 items-center pl-2 pr-1">
+          <span className="mr-2.5 grid size-6 shrink-0 place-items-center rounded-[7px] bg-[linear-gradient(180deg,#3b77ff,#2559e6)] text-[12px] font-[600] text-white shadow-[inset_0_0_0_1px_rgba(0,0,0,0.08),inset_0_1px_0_rgba(255,255,255,0.25)]">N</span>
+          <span className="truncate text-[14px] font-[600] tracking-[-0.01em]">Northwind Ops</span><ChevronDown size={14} strokeWidth={SW} className="ml-1 shrink-0 text-[var(--soft)]" />
           <button type="button" aria-label="Collapse sidebar" className="ml-auto grid size-8 place-items-center rounded-[8px] text-[#7a7a7a] hover:bg-[rgba(0,0,0,0.04)]"><PanelLeft size={16} strokeWidth={SW} /></button>
         </div>
-        <div className="flex gap-1.5">
-          <a href="#" className="pill-dark press flex h-9 flex-1 items-center gap-2 rounded-[10px] pl-3 pr-2 text-[13.5px] font-[500]"><SquarePen size={15} strokeWidth={SW} />New run<span className="ml-auto rounded-[5px] bg-white/10 px-1.5 py-0.5 font-mono text-[10.5px] text-white/70">N</span></a>
-          <button type="button" aria-label="Search" className="pill-white press grid size-9 place-items-center rounded-[10px] text-[#525252]"><Search size={15} strokeWidth={SW} /></button>
-        </div>
+        {/* search as a quiet field, the same left edge as every row below */}
+        <button type="button" className="flex h-8 w-full items-center rounded-[8px] bg-white pl-3 pr-1.5 text-[13.5px] text-[var(--soft)] shadow-[0_0_0_1px_var(--line),0_1px_2px_rgba(0,0,0,0.03)]">
+          <Search size={15} strokeWidth={SW} className="mr-2.5" />Search<span className="ml-auto rounded-[5px] px-1.5 py-0.5 font-mono text-[11px] text-[var(--soft)] shadow-[inset_0_0_0_1px_var(--line-2)]">⌘K</span>
+        </button>
         <nav className="mt-3 space-y-px" aria-label="Workspace">
+          <Row icon={SquarePen}>New run</Row>
           <Row icon={House}>Home</Row>
           <Row icon={Inbox} right={4}>Inbox</Row>
           <Row icon={Play} active right={1}>Runs</Row>

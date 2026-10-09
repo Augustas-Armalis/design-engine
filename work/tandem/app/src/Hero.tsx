@@ -16,7 +16,7 @@ const card = 'rounded-[16px] bg-white shadow-[0_0_0_1px_rgba(0,0,0,0.07),0_1px_2
 function Ghost({ side, depth, x, y, w, children, at }: { side: 'l' | 'r'; depth: 1 | 2; x: number; y: number; w: number; children: ReactNode; at: number }) {
   const still = useReducedMotion()
   const k = side === 'l' ? 1 : -1
-  const look = depth === 1 ? { blur: 1.5, o: 0.7, ry: 24, s: 0.92 } : { blur: 6, o: 0.32, ry: 34, s: 0.84 }
+  const look = depth === 1 ? { blur: 0.6, o: 0.88, ry: 22, s: 0.93 } : { blur: 1.1, o: 0.72, ry: 28, s: 0.87 }
   return (
     <motion.div aria-hidden className="pointer-events-none absolute" style={{ left: x, top: y, width: w, perspective: 1200 }}
       initial={still ? false : { opacity: 0, x: -k * 40, filter: `blur(${look.blur + 8}px)` }} animate={{ opacity: look.o, x: 0, filter: `blur(${look.blur}px)` }}
@@ -40,7 +40,7 @@ export default function Hero() {
         </header>
       </Reveal>
 
-      <main className="pointer-events-none absolute inset-x-0 top-[150px] z-20 flex flex-col items-center text-center [&>*]:pointer-events-auto">
+      <main className="pointer-events-none absolute inset-x-0 top-[128px] z-20 flex flex-col items-center text-center [&>*]:pointer-events-auto">
         <Reveal at={0.1} y={12} blur>
           <h1 className="text-[52px] font-[500] leading-[1.08] tracking-[-0.032em]">Agents That Ask<br />Before They Act</h1>
         </Reveal>
@@ -56,27 +56,27 @@ export default function Hero() {
       </main>
 
       {/* stage: mirrored ghosts, sharp centre */}
-      <Ghost side="l" depth={2} x={-30} y={520} w={300} at={0.55}>
+      <Ghost side="l" depth={2} x={-30} y={548} w={300} at={0.55}>
         <div className={`${card} p-4`}><div className="text-[12px] text-[var(--sub)]">Hours saved this month</div><div className="mt-1 text-[24px] font-[550] tracking-[-0.02em]">312h</div><div className="mt-3 h-[48px] rounded-[8px] bg-[linear-gradient(180deg,rgba(47,107,255,0.14),rgba(47,107,255,0))]" /></div>
       </Ghost>
-      <Ghost side="r" depth={2} x={1170} y={520} w={300} at={0.55}>
+      <Ghost side="r" depth={2} x={1170} y={548} w={300} at={0.55}>
         <div className={`${card} p-4`}><div className="mb-2 flex items-center gap-2 text-[12px] font-[500]"><Inbox size={14} strokeWidth={1.75} />Inbox</div>{[['MR', 'Refund for ORD-4821'], ['JW', 'Wrong size, can I swap?']].map(([a, t]) => <div key={t} className="flex items-center gap-2 py-1.5 text-[12px]"><Avatar i={a} size={18} /><span className="truncate text-[#404040]">{t}</span></div>)}</div>
       </Ghost>
-      <Ghost side="l" depth={1} x={232} y={486} w={316} at={0.45}>
+      <Ghost side="l" depth={1} x={232} y={512} w={316} at={0.45}>
         <div className={`${card} p-4`}>
           <div className="flex items-center gap-2 text-[12px] text-[var(--sub)]"><span className="size-1.5 rounded-full bg-[var(--blue)]" />Worked for <span className="tnum">7s</span></div>
           <div className="mt-2.5 flex flex-wrap gap-1.5">{([[Inbox, '#f59e0b', 'Support inbox'], [Package, '#10b981', 'Orders'], [CreditCard, '#635bff', 'Payments'], [BookOpen, '#64748b', 'Policy']] as const).map(([I, h, t]) => <Chip key={t} tone="white"><AppTile icon={I} hue={h} size={13} />{t}</Chip>)}</div>
           <div className="mt-3 space-y-1.5 text-[12.5px]">{['Read 14 new tickets', 'Matched 3 to the refund policy', 'Flagged 1 duplicate claim'].map((t, i) => <div key={t} className="flex items-center gap-2"><Check size={12} strokeWidth={2.5} className={i < 2 ? 'text-[var(--green)]' : 'text-[var(--amber)]'} /><span className="text-[#404040]">{t}</span></div>)}</div>
         </div>
       </Ghost>
-      <Ghost side="r" depth={1} x={892} y={486} w={316} at={0.45}>
+      <Ghost side="r" depth={1} x={892} y={512} w={316} at={0.45}>
         <div className={`${card} p-4`}>
           <div className="flex items-center gap-2 text-[12px] text-[var(--sub)]"><span className="size-1.5 rounded-full bg-[var(--green)]" />Earlier today</div>
           {[['Refunded $98.00', '2 orders · undo expired'], ['Paused a $2,400 payout', 'needs a second approver'], ['Replied to 9 tickets', 'all within policy']].map(([a, b]) => <div key={a} className="mt-2.5 flex items-start gap-2.5 text-[12.5px]"><span className="mt-[3px] grid size-4 place-items-center rounded-full bg-[var(--green-tint)]"><Check size={10} strokeWidth={3} className="text-[var(--green)]" /></span><div><div className="text-[var(--ink)]">{a}</div><div className="text-[var(--sub)]">{b}</div></div></div>)}
         </div>
       </Ghost>
 
-      <motion.div className="absolute left-1/2 top-[452px] z-10 -translate-x-1/2" initial={still ? false : { opacity: 0, y: 36, filter: 'blur(10px)' }} animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
+      <motion.div className="absolute left-1/2 top-[476px] z-10 -translate-x-1/2" initial={still ? false : { opacity: 0, y: 36, filter: 'blur(10px)' }} animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
         transition={{ delay: 0.35, duration: 1.2, ease }} role="img" aria-label="Tandem approval request, sample: the Ops agent asks to refund 3 orders; it is held to approve and completes with an undo receipt">
         <div inert><Approval demo delay={0.9} /></div>
       </motion.div>

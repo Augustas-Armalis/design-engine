@@ -1,48 +1,39 @@
 {
   "name": "tandem",
   "date": "2026-10-09",
-  "verdict": "reject",
-  "why": "hero is a bit badly designed for this minimalism (scattered depth-of-field collage read messy and unbalanced)",
+  "verdict": "accept",
+  "why": "hero now good (round 2); fix: product visuals too close to the CTAs again, side cards blur out too fast, sidebar top wtf",
   "summary": {
-    "pass": 25,
-    "warn": 4,
+    "pass": 27,
+    "warn": 2,
     "fail": 0
   },
   "fingerprint": {
     "h1": {
-      "px": 52,
-      "lh": "56.16px",
-      "ls": "-1.664px",
+      "px": 40,
+      "lh": "46px",
+      "ls": "-1.2px",
       "weight": "500",
       "family": "Inter Variable",
-      "text": "Agents That AskBefore They Act"
+      "text": "Approval Request"
     },
     "fonts": [
       "Inter Variable",
       "Geist Mono Variable"
     ],
     "accentHues": [
-      0,
-      30,
-      45,
-      165,
-      180,
-      195,
-      225,
-      240,
-      255
+      240
     ],
     "radii": [
-      14,
-      "pill",
-      5,
+      24,
       18,
-      10,
+      "pill",
       16,
-      4
+      10,
+      5
     ],
-    "navHeight": 64,
-    "contentWidth": "602",
+    "navHeight": null,
+    "contentWidth": null,
     "sectionPad": null,
     "sectionCount": 0,
     "bodyPx": 17,

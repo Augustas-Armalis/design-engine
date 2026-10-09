@@ -1,0 +1,216 @@
+{
+  "schema": "benchmark-tokens/v1",
+  "updated": "2026-10-09",
+  "credit": "Measured from Florian Hoeller's (Flo, @flohoeller / @growthflo, Vienna) public sites affectui.com and adfects.com with Playwright getComputedStyle, document.getAnimations() and the sites' own served CSS/JS. Study material only: do not ship his assets, copy or components; reproduce the grammar.",
+  "about": "Two registers from one designer. affectUI = component-library product site (neutral greys, Inter 500, dark gradient pill, gray-tray-around-white-card anatomy, calm 140-520ms motion). adfects = studio site (one accent blue #0171E3, flat pills, 6px shell around an inset panel, curved 3D reference reel). Values are computed px at 1440x900 unless noted. See knowledge/web/flohoeller-craft.md.",
+
+  "fonts": {
+    "family": "Inter (self-hosted woff2, latin + latin-ext subsets); flohoeller.com uses -apple-system / SF Pro Text",
+    "weights_used": { "affectui_css_counts": { "500": 95, "600": 32, "400": 10, "700": 8 }, "rule": "500 for every heading, label, button and tab; 400 for body; 600 only inside product UI titles (18px card titles, 16px form headings)" },
+    "smoothing": "-webkit-font-smoothing: antialiased",
+    "text_wrap": "h1 / section leads / short copy: balance; running copy: pretty"
+  },
+
+  "type_scale": {
+    "affectui": {
+      "h1":          { "size": 46, "line": 52, "weight": 500, "tracking_px": -1.4, "tracking_em": -0.030, "color": "#0a0a0a", "mobile": { "size": 34, "line": 40, "tracking_px": -1.0 } },
+      "section_h2":  { "size": 28, "line": 34, "weight": 500, "tracking_px": -0.7, "tracking_em": -0.025, "lines": 2, "note": "always two short lines with a comma break: '81+ pieces, / none of them generic'", "mobile": { "size": 23, "line": 29 } },
+      "hero_sub":    { "size": 16, "line": 24, "weight": 400, "color": "#737373", "max_width": 560 },
+      "section_sub": { "size": 15, "line": 22, "weight": 400, "color": "#737373", "max_width": 640 },
+      "body_ui":     { "size": 13, "line": 18.571, "weight": 400, "note": "13px base, line-height 1.4286" },
+      "nav_link":    { "size": 13, "weight": 500, "color": "#737373", "height": 32, "padding_x": 11 },
+      "card_title":  { "size": 13, "line": 18.571, "weight": 500, "color": "#0a0a0a" },
+      "card_desc":   { "size": 13, "weight": 400, "color": "#737373", "single_line_ellipsis": true },
+      "chip":        { "size": 11, "weight": 500 },
+      "in_product":  { "answer_body": "15/24.75 w400 #404040", "card_heading": "18/24.3 w600 -0.216px #171717", "form_heading": "16/20.8 w600 -0.16px", "meta": "12-12.5px w400 #8f8f8f", "citation_chip": "11.5px w500 #8f8f8f" },
+      "font_size_histogram_main_css": { "13px": 60, "12px": 29, "14px": 26, "12.5px": 24, "11px": 22, "15px": 16, "16px": 9, "10.5px": 9 }
+    },
+    "adfects": {
+      "h1":          { "size": 54, "css": "clamp(34px, 3.9vw, 54px)", "line_ratio": 1.04, "weight": 500, "tracking_em": -0.022, "color": "#1c1d1f" },
+      "section_h2":  { "size": 31.68, "line": 36.43, "weight": 500, "tracking_em": -0.008, "text_wrap": "balance", "note": "ends with a full stop: 'Case studies.' 'Pricing.' 'Questions.'" },
+      "case_h2":     { "size": 18, "line": 24, "weight": 500 },
+      "about_h2":    { "size": 22, "line": 29.7, "weight": 500 },
+      "hero_sub":    { "size": 16, "color": "#6e6e76" },
+      "section_sub": { "size": 15, "line": 22.5, "color": "#6e6e76", "max_width": 378.5, "lines": 2 },
+      "card_title":  { "size": 16, "weight": 500, "tracking_em": -0.002 },
+      "card_desc":   { "size": 14, "line": 21, "color": "#6e6e76" },
+      "faq_q":       { "size": 16, "weight": 500, "row_height": 68 },
+      "button":      { "size": 14, "weight": 500, "line": 1 }
+    }
+  },
+
+  "colors": {
+    "affectui_light": {
+      "bg": "#f5f5f5", "page": "#ffffff", "panel": "#fcfcfc", "card": "#ffffff", "preview": "#fafafa",
+      "muted_bg": "#0000000a", "hover_bg": "#0000000d",
+      "text": "#0a0a0a", "text_muted": "#737373", "text_subtle": "#00000066",
+      "border": "#e5e5e5", "border_soft": "#0a0a0a1a", "card_stroke": "#0a0a0a0e",
+      "primary": "#171717", "accent": "#1d93d2", "accent_soft": "#1d93d21a",
+      "pro_bg": "#fdf2f8", "pro_from": "#dd0674", "pro_to": "#5e3ee0",
+      "focus_outline": "#1d93d2"
+    },
+    "affectui_dark": {
+      "bg": "#0c0c0d", "page": "#121213", "panel": "#121213", "card": "#19191b", "preview": "#1f1f21",
+      "muted_bg": "#ffffff0d", "hover_bg": "#ffffff12",
+      "text": "#ededed", "text_muted": "#8f8f8f", "text_subtle": "#ffffff66",
+      "border": "#262628", "border_soft": "#ffffff12", "card_stroke": "#ffffff0d",
+      "primary": "#ededed", "primary_fg": "#121213",
+      "pro_bg": "#dd067424", "pro_from": "#f472b6", "pro_to": "#a78bfa"
+    },
+    "affectui_component_palette": {
+      "note": "Identical across 12 component token blocks (.ui-ans, .ui-cbx, .ui-otp, .ui-sf, .ui-dz, .ui-drp, .ui-cm, .ui-ts, .ui-seg ...). Each component exposes these as --ui-<x>-* so a host can theme it.",
+      "tray": "#f0f0f0", "card": "#ffffff", "line": "#ececec", "line_strong": "#e5e5e5",
+      "ink": "#171717", "text": "#404040", "muted": "#8f8f8f", "faint": "#b5b5b5", "placeholder": "#c4c4c4",
+      "chip": "#f4f4f5", "chip_hover": "#ebebec", "hover": "#f2f2f3", "active": "#f0f0f1",
+      "accent": "#2f6bff", "accent_band": "rgba(47,107,255,0.10)", "accent_wash": "rgba(47,107,255,0.05)",
+      "success": "#2f9e5b", "ok": "#1f8a4c", "danger": "#e5484d", "alert": "#f44900",
+      "focus_ring": "rgba(23,23,23,0.22)", "selection_ring": "rgba(23,23,23,0.08)", "shine": "rgba(23,23,23,0.9)",
+      "glow_gradient": ["#ec4899", "#8b5cf6", "#2f6bff"]
+    },
+    "adfects": {
+      "bg": "#ffffff", "text": "#1c1d1f", "muted": "#6e6e76", "muted_2": "#9a9aa3", "border": "#e4e7ec",
+      "accent": "#0171e3", "accent_hover": "#0165ca", "accent_soft": "#f0f6fd",
+      "btn_ink": "#1b1c1d", "btn_ink_hover": "#2c2d2f", "outline_hover": "#f5f6f7",
+      "frame_bg": "#f5f6f7", "plate": "#fafafa", "light_card": "#f9f9f9", "disabled_bg": "#f1f1f1",
+      "logo_mono": "#58534f", "rule": "One blue for the whole page: booking button, funding labels, pricing accents, every focus ring."
+    },
+    "flohoeller_com": { "bg": "#fcfcfc", "text": "rgba(0,0,0,0.45)", "accent": "#0391ff", "accent_hover": "#4db4ff", "body": "14px/21.7px -0.15px" }
+  },
+
+  "radii": {
+    "affectui_tokens": { "panel": 18, "card": 14, "preview": 10, "pill": 999 },
+    "concentric_rule": "inner = outer - inset. Card 14 - 6 = stage 8. AI Answer tray 20 - 4 = card 16. Writing Assistant 32 - 8 = panel 24. adfects case/plan shell 14 - 6 = panel 8. Segmented control r 11 - pad 3 = pill 8.",
+    "ladder_measured": { "chip_inline": 6, "segmented_sm_md_lg": [9, 11, 13], "source_card": 12, "card": 14, "product_card": 16, "agent_chat_panel": 17, "tray": 20, "agent_frame": 22, "assistant_card": 32, "buttons": 999 },
+    "adfects": { "shell": 14, "panel": 8, "reel_image": 8, "client_card": 14, "case_tile": "1cqw (24/2400 of the board)", "buttons": 999 }
+  },
+
+  "shadows": {
+    "card": "0 1px 1.5px #0000000a, inset 0 -1px 0 #0000000f",
+    "card_dark": "0 1px 1.5px #0000004d, inset 0 -1px 0 #ffffff0a",
+    "pop": "0 4px 42px #0000000f, 0 2px 6px #0000000d, 0 0 0 1px #0000000f",
+    "pop_dark": "0 4px 42px #0006, 0 0 0 1px #ffffff14",
+    "product_card_rest": "0 0 0 1px #ececec, 0 1px 2px rgba(0,0,0,.04)",
+    "menu": "0 0 0 1px rgba(0,0,0,.06), 0 18px 40px -12px rgba(0,0,0,.18), 0 4px 12px -4px rgba(0,0,0,.06)",
+    "toast": "0 0 0 1px #ececec, 0 1px 2px rgba(0,0,0,.04), 0 8px 24px -6px rgba(0,0,0,.1)",
+    "segment_pill": "0 0 0 0.5px rgba(0,0,0,.08), 0 1px 2px rgba(0,0,0,.08), 0 2px 8px -2px rgba(0,0,0,.06)",
+    "source_preview": "0 0 0 1px #ececec, 0 12px 32px -10px rgba(0,0,0,.2), 0 2px 6px rgba(0,0,0,.04)",
+    "assistant_card": "0 1px 2px rgba(0,0,0,.05), 0 12px 32px rgba(0,0,0,.06)",
+    "focus_halo_accent": "0 0 0 1px var(--accent), 0 0 0 4px var(--accent-soft)",
+    "adfects_plan_dark": "0 0.5px 1.625px rgba(33,34,35,.2), 0 6px 4px -2px rgba(33,34,35,.2)",
+    "adfects_plan_light": "0 0.5px 0.5px rgba(33,34,35,.1), 0 4px 8px -3px rgba(33,34,35,.06), 0 0 0 0.5px rgba(33,34,35,.12)",
+    "rule": "Edges are rings (0 0 0 1px or inset 1px at 5.5-8% ink), not borders; elevation is a 1-2px contact shadow plus at most one wide soft blur with negative spread."
+  },
+
+  "buttons": {
+    "affectui_primary_dark_pill": {
+      "css": "border-radius:999px; border:1px solid #0000; background: linear-gradient(#323137,#201e25) padding-box, linear-gradient(#4b4951,#31303a,#18171b) border-box; box-shadow: 0 0 0 1px #0d0d0d, 0 2px 4px #0000001a; color:#fafafa; font:500 14px/1 Inter; height:42px; padding:0 20px; transition: background-color .18s ease, color .18s ease, transform .18s cubic-bezier(.22,1,.36,1);",
+      "hover": "background: linear-gradient(#3c3b42,#29272f) padding-box, linear-gradient(#4b4951,#31303a,#18171b) border-box;",
+      "active": "transform: scale(.99)",
+      "sizes": { "nav": { "h": 28, "px": 10.5, "fs": 13 }, "section": { "h": 36, "px": 15, "fs": 13 }, "hero": { "h": 42, "px": 20, "fs": 14 } },
+      "dark_mode": "inverts to a light pill: linear-gradient(#f4f4f5,#e4e4e7) fill, edge #fff -> #f0f0f2 -> #d4d4d8, ring #0009, text #121213",
+      "anatomy": "three layers: (1) 2-stop vertical fill on padding-box, (2) 3-stop vertical edge gradient on border-box through a transparent 1px border = lit top edge, (3) 1px near-black outer ring + 2px/4px 10% drop"
+    },
+    "affectui_secondary_pill": { "css": "border-radius:999px; border:0; background:#0000000a; color:#0a0a0a; font:500 13-14px Inter; height:28|36|42px;", "hover": "background:#0000000d" },
+    "affectui_ghost": { "css": "background:transparent; color:#737373;", "hover": "background:#0000000d; color:#0a0a0a" },
+    "affectui_pro_button": { "css": "isolation:isolate; overflow:hidden; padding:0 12px 0 10px; gap:5px;", "after": "linear-gradient(105deg,#0000 30%,#ffffffbf 48% 52%,#0000 70%) translated -120% -> 120% over .9s cubic-bezier(.22,1,.36,1) on hover (one shimmer sweep)" },
+    "affectui_press": "every .btn:active scale(.97); primary scale(.99); icon buttons scale(.94)",
+    "adfects_accent_pill": { "css": "border-radius:999px; border:1px solid transparent; background:#0171e3; color:#fff; font:500 14px/1 Inter; padding:10px 18px (nav, h36) | 12px 22px (hero, h40); box-shadow:none; transition: background .15s ease, color .15s ease, border-color .15s ease;", "hover": "background:#0165ca", "rule": "only the call booking wears the accent; flat, no shadow, hover is one step down in the same blue" },
+    "adfects_outline_pill": { "css": "background:#fff; color:#1c1d1f; border:1px solid #e4e7ec; border-radius:999px;", "hover": "background:#f5f6f7" },
+    "adfects_ink_pill": { "css": "background:#1b1c1d; color:#fff; border:1px solid transparent;", "hover": "background:#2c2d2f", "note": "transparent border keeps it the same size as outlined pills beside it" },
+    "adfects_disabled": { "css": "background:#f1f1f1; color:#9a9aa3; cursor:not-allowed" },
+    "vibecoded_antipattern_he_shows": "rgb(37,99,235) fill, 6px radius, font-weight 600, 13px, h30 - the 'before' state in his Same-screen compare"
+  },
+
+  "chips": {
+    "category_chip": "position:absolute; top:10.5px; left:10.5px; height:22px; padding:0 8px; border-radius:999px; background:var(--card); color:#737373; box-shadow:0 0 0 1px #0a0a0a1a; font:500 11px Inter;",
+    "pro_chip": "position:absolute; top:10.5px; right:10.5px; height:22px; padding:0 9px 0 7px; gap:3px; border-radius:999px; background:#fdf2f8; box-shadow: inset 0 0 0 1px color-mix(in srgb,#dd0674 16%,transparent), 0 1px 0 color-mix(in srgb,#dd0674 14%,transparent); label: linear-gradient(90deg,#dd0674,#5e3ee0) background-clip:text; bolt icon #dd0674",
+    "count_chip": "padding:0 6px; border-radius:999px; background:#0000000a; font:11px/17px tabular-nums",
+    "new_chip": "padding:0 7px; line-height:18px; border-radius:999px; background:#0000000a; box-shadow: inset 0 0 0 1px #0a0a0a1a; font:500 11px; color:#737373",
+    "citation_chip": "height:20px; padding:0 7px; border-radius:6px; background:#f4f4f5; color:#8f8f8f; font:500 11.5px",
+    "adfects_funding_label": "accent text #0171e3 on #f0f6fd, top-right of a 158x100 white client card, radius 14"
+  },
+
+  "card_in_card": {
+    "affectui_library_card": { "outer": { "radius": 14, "padding": "6px 6px 0", "bg": "#fff", "border": "1px solid #0a0a0a0e" }, "stage": { "radius": 8, "bg": "#fafafa", "ring": "inset 0 0 0 1px #0a0a0a0e", "aspect": "16/10", "min_h": 230, "preview_padding": "48px 24px" }, "footer": { "padding": "10px 4px 10px 11.5px", "title": "13/18.571 w500", "desc": "13px #737373 ellipsis", "action": "icon button with ring 0 0 0 1px var(--border)" }, "grid": "3 cols, gap 14, max 1008" },
+    "component_tray": { "tray": "#f0f0f0", "card": "#fff ring #ececec + 0 1px 2px rgba(0,0,0,.04)", "inset": "4-8px", "note": "a grey tray frames the white card on every side; secondary actions live on the tray strip (Connect apps, Demo code)" },
+    "adfects_plan": { "shell": { "radius": 14, "padding": 6, "dark": "#1b1c1d", "light": "#f9f9f9" }, "panel": { "radius": 8, "padding": "18px 18px 24px", "bg": "rgba(119,119,119,.06) / dark rgba(255,255,255,.04)", "border": "0.5px solid rgba(119,119,119,.16) / dark rgba(255,255,255,.16)" }, "foot": "figure + button on one baseline on the shell itself" },
+    "adfects_case": { "shell": "radius 14, padding 6, bg #fafafa, border .75px solid rgba(23,23,23,.06)", "shot": "16/9, white, radius 8, container-type:size", "board": "padding 2.5cqw, gap 1.25cqw, rows split 1700:550 then mirrored, tile radius 1cqw" }
+  },
+
+  "spacing": {
+    "affectui": { "content_max": 1008, "nav_max": 1240, "nav_h": 68, "hero_padding": "120px 0 112px", "hero_min_h": 620, "section_padding_bottom": 112, "faq_bottom": 168, "lead_to_sub": 10, "sub_to_ctas": 28, "h1_to_sub": 14, "cta_gap": 8, "tabs_margin": 24, "tab_h": 40, "grid_gap": 14, "gap_histogram": { "6px": 38, "8px": 37, "12px": 25, "10px": 20, "4px": 18, "14px": 11 } },
+    "adfects": { "frame_max": 1200, "gutter": 32, "hero_top": 112, "h1_mb": 22, "sub_mb": 32, "cta_gap": 6, "section_tops_px": [156, 108, 264, 156, 132, 132, 120], "seam_rule": "seams between sections are measured and equalised (264 above About = services-to-case distance; gap below cards = gap above title)", "reel_padding": "60px 0 88px", "reel_gap": 22 }
+  },
+
+  "motion": {
+    "easing": {
+      "ease_out_expo_like": "cubic-bezier(0.22, 1, 0.36, 1)",
+      "spring_pop": "cubic-bezier(0.34, 1.56, 0.64, 1)",
+      "spring_soft": "cubic-bezier(0.34, 1.3, 0.64, 1)",
+      "ease_out_quart": "cubic-bezier(0.25, 1, 0.5, 1)",
+      "in_out_sine": "cubic-bezier(0.45, 0, 0.55, 1)",
+      "swap": "cubic-bezier(0.72, 0, 0.1, 1)",
+      "colour_changes": "ease (268 uses in component CSS) - colour/bg/shadow transitions use plain ease, movement uses the ease-out curve"
+    },
+    "durations_ms": {
+      "token_duration": 180,
+      "hover_colour": [140, 160],
+      "press_scale": 160,
+      "small_enter": [200, 260],
+      "fade_lift": [300, 320, 380],
+      "height_glide": [320, 360, 380],
+      "card_pop": 420,
+      "source_card_in": 460,
+      "toast_in": 440,
+      "hero_rise": 700,
+      "hero_collage_fade": 1400,
+      "shimmer_sweep": 1600,
+      "pro_shimmer": 900,
+      "histogram_component_css": { "160ms": 48, "200ms": 45, "220ms": 35, "260ms": 30, "320ms": 23, "300ms": 22, "140ms": 22, "380ms": 19 }
+    },
+    "stagger_ms": { "hero_copy": 60, "source_cards": 40, "list_items": 70, "exit_reverse": 22, "adfects_words": 30, "adfects_lines": 110, "logo_ticker_px_s": 46, "reel_px_s": 80 },
+    "keyframes": {
+      "lp-rise (hero copy)": "from { opacity:0; filter:blur(4px); transform:translateY(10px) } 700ms cubic-bezier(.22,1,.36,1) both, delays 0/60/120ms",
+      "lp-fade (grid)": "from { opacity:0; transform:translateY(6px) } 360ms ease-out-expo",
+      "ui-ans-card (source card)": "from { opacity:0; transform: translateY(6px) scale(.96) } 460ms, delay 40ms steps",
+      "ui-think-in (step)": "from { opacity:0; transform:translateY(6px); filter:blur(3px) } 420-520ms",
+      "ui-think-chip": "from { opacity:0; transform: translateY(4px) scale(.92) } 420ms",
+      "ui-ans-word (streamed word)": "from { opacity:0; filter:blur(3px) } 420ms",
+      "ui-otp-pop (digit)": "from { opacity:0; transform: translateY(4px) scale(.7); filter:blur(3px) } - 'a small lift out of a blur, no bounce'",
+      "ui-ans-fade (label swap)": "from { opacity:0; transform:translateY(3px) } 260-320ms",
+      "ui-sf-enter (step pane)": "from { opacity:0; transform: translateX(28px) } back: -28px",
+      "ui-dz-shake (error)": "translateX(-3px / 3px) at 20/40/60/80%",
+      "shimmer (working label)": "background-position 100% -> 0% over 1.6s linear infinite, dark band rgba(23,23,23,.9) on a copy of the label",
+      "adfects anim-word": "opacity 0, translateY(8px), blur(6px) -> none, 450ms ease-out, per-word delay 30ms; filter dropped after 1600ms to free layers"
+    },
+    "ambient_loops": { "hero_collage_scroll": "80s linear infinite translateY(-33.33%)", "eyes_blink": "7s", "eyes_scan": "1.4s", "glow_blobs": "5.5-7s ease-in-out alternate, blur(34px), opacity .28", "adfects_service_drawings": "one shared 8s loop, staggered a beat apart" },
+    "reduced_motion": "every component + hero has @media (prefers-reduced-motion: reduce) { animation:none; transition:none } (13 blocks in component CSS); keep state changes, remove movement",
+    "focus": { "affectui": "outline: 2px solid #1d93d2; outline-offset: 2px", "components": "ring rgba(23,23,23,.22)", "adfects": "browser default auto ring, accent #0171e3 per CSS comment" }
+  },
+
+  "hero_patterns": {
+    "affectui_depth_of_field_collage": {
+      "plane": "absolute layer spanning the viewport, 7-column grid of 400x250 pre-rendered component tiles (light and dark PNG sets), every 2nd tile translate(0,60px)",
+      "transform": "transform-origin:0 0; top:-24%; left:-6%; transform: perspective(4000px) rotateX(34deg) rotate(-16deg) scale(.78)",
+      "drift": "track animation 80s linear infinite translateY(-33.333%)",
+      "mask_outer": "mask-image: radial-gradient(40% 54% at 50% 56%, #0000 42%, #00000040 72%, #000 100%), linear-gradient(#0000 0, #000 56px calc(100% - 150px), #0000 100%); mask-composite:intersect  -> empty clearing behind the copy, fades top and bottom",
+      "blur_layers": [
+        "backdrop-filter: blur(2px); mask radial-gradient(50% 64% at 50% 56%, #000 60%, #0000 100%)",
+        "backdrop-filter: blur(8px); mask radial-gradient(42% 54% at 50% 56%, #000 58%, #0000 100%)",
+        "backdrop-filter: blur(6px); mask linear-gradient(0deg, #000 0, #0000 200px)"
+      ],
+      "effect": "tiles are sharp at the corners and go soft (2px then 8px) toward the headline, invisible under it: a lens depth of field that frames the copy",
+      "enter": "lp-iso-in opacity 0 -> 1 over 1.4s ease-out-expo; copy rises 700ms with 60ms stagger",
+      "mobile": "<=860px: becomes a 320px (260px at <=760) band above the copy, plane left -45%, blur layers removed"
+    },
+    "adfects_curved_reel": {
+      "track": "flex row, gap 22px, images height 320px width auto, radius 8, no plate, no stroke",
+      "per_card_transform": "translateX(spacing correction) perspective(1100px) rotateY(+-k*30deg) scale(1 + k*0.26), k = min(t*t, 1.3) where t = distance from screen centre in screen-halves, eased to 0 beyond 1.5",
+      "z_order": "zIndex = round(k*100) so outer, nearer cards sit on top",
+      "speed": "80 px/s at rest; draggable with throw (max 4200 px/s), settles back with exp(-2.2*dt)",
+      "spacing": "edges of every projected card are computed so the rendered gap stays exactly 22px",
+      "content": "dark product UI on near-black, light UI on #fafafa, and translucent glass panels over cinematic photo (grass at golden hour)",
+      "below": "logo ticker 46 px/s, grayscale(1) opacity .45, edge mask linear-gradient 100px fades"
+    }
+  }
+}

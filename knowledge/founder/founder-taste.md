@@ -186,6 +186,7 @@ Every rule here is a direct founder verdict on real output. It outranks books, w
 - **RULE** [founder] Leave real air between the hero CTAs and the product frame: at least 64px from the bottom of the buttons to the top of the frame (Strata had 44px and read cramped). Measure it; do not eyeball it.
   **Why** Founder on Strata: "not bad, just the product is too close to the buttons".
   **Applies to** product-led heroes. **Check** frame.top - cta.bottom >= 64px at 1440x900. **Source** founder, Strata build 1
+  **Repeat offence (Tandem round 2, 2026-10-09):** "the product visuals like too close to the hero like buttons once again bro why". The rule covers every product visual under the CTAs: the centre card AND any floating or ghost cards. Target 72-96px, measure with getBoundingClientRect after every layout change (Tandem fixed at 90px), and never move the headline block without re-measuring.
 
 - **RULE** [founder] Generative, one-of-a-kind backgrounds are welcome when they are crafted (Strata's live engraving: "interesting style choice, really unique"); keep exploring bespoke shaders and illustrations per brand instead of stock gradients.
   **Why** Founder on Strata's engraved landscape.
@@ -280,3 +281,9 @@ Every rule here is a direct founder verdict on real output. It outranks books, w
 - **RULE** [founder] Product UI icons: use Lucide (stroke 1.5-1.75 at 16px) for app chrome unless the build says otherwise; and place things properly: one left edge for icons, one for labels, counts in one right column, section labels aligned to item text, no orphan icon lines.
   **Why** Founder on Tandem product: "product just use lucide icons and just better sidebar and properly placed stuff".
   **Applies to** product UI. **Check** one icon library imported in the product; sidebar icon x and label x identical across rows; counts right-aligned to one x. **Source** founder, Tandem round 1, 2026-10-09
+- **RULE** [founder] The top of a product sidebar is quiet and clean: one workspace tile (a solid rounded square with a letter or glyph, padded, never a clipped or overlapping mark at the edge), the workspace name, a chevron, a collapse icon; under it at most one light search field (white, hairline ring, kbd hint). The primary "New" action is a normal nav row or a ghost button, never a heavy dark pill with a kbd chip crammed into the sidebar.
+  **Why** Founder on Tandem product round 2: "sidebar top wtf???" (crop: clipped two-square logo, heavy dark "New run" pill with an N kbd, separate search square).
+  **Applies to** product UI sidebars. **Check** the workspace mark is fully inside the sidebar with >= 8px inset; no dark filled button in the sidebar; search and rows share one left edge. **Source** founder, Tandem round 2, 2026-10-09
+- **RULE** [founder] Depth-of-field side cards fall off gently: each depth step loses little. Near siblings stay almost sharp (blur <= 0.6px, opacity >= 0.85); the far ones stay legible (blur <= 1.2px, opacity >= 0.7). The fade comes from the white edge mask and the tilt, not from heavy blur.
+  **Why** Founder on Tandem hero round 2: "the ones to the sides blur out too fast" (they were 1.5px/0.7 and 6px/0.32).
+  **Applies to** heroes with ghost or collage cards. **Check** computed filter blur and opacity per depth match the caps above. **Source** founder, Tandem round 2, 2026-10-09
