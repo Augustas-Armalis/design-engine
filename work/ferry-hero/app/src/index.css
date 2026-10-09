@@ -13,7 +13,7 @@
 /* Brand layer (AlignUI ln- grammar): replace every value per brand; keep the names (kit.tsx reads them). */
 :root {
   /* Ferry: the product's own greys and blue (src/ferry/tokens.css), canvas = cool chart paper */
-  --canvas: #f7f9fc; --ink: #1b1d21; --sub: #5c5e63; --soft: #6b6e73; --line: #eeeff1; --rail: #e6e7ea; --weak: #f4f5f6; --track: #eef0f3;
+  --canvas: #f6f7f9; --ink: #1b1d21; --sub: #5c5e63; --soft: #6b6e73; --line: #eeeff1; --rail: #e6e7ea; --weak: #f4f5f6; --track: #eef0f3;
   --accent: #266df0;
   --shadow-ring: 0 0 0 1px rgba(23, 23, 23, 0.07), 0 1px 2px 0 rgba(10, 13, 20, 0.05);
   --shadow-tile: 0 0 0 1px rgba(23, 23, 23, 0.06), 0 1px 2px rgba(10, 13, 20, 0.04), 0 6px 14px -6px rgba(23, 23, 23, 0.10);

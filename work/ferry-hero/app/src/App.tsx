@@ -1,22 +1,18 @@
-// Ferry hero: split layout. Copy on the left over a quiet sea chart; the real product sails in from the right edge at 1:1
-// and makes one crossing (reply in, meeting out) while the steps on the left light up in sync. One clock: T for entrances,
-// BEAT (hero/Story.tsx) for the story.
+// Ferry hero: split layout (Lightfield grammar). Copy vertically centred on a plain canvas; the real product sails in from
+// the right edge at 1:1 and makes one crossing (reply in, meeting out). ?bg=stage puts one grain-gradient stage behind the
+// product (Folk / Cursor). One clock: T for entrances, BEAT (hero/Story.tsx) for the story.
 import { useState } from 'react'
 import { MotionConfig, motion } from 'motion/react'
 import { Sailboat } from '@phosphor-icons/react'
 import './ferry/tokens.css'
 import { Frame, Reveal } from './kit'
 import { ease, spring } from './motion'
-import Field from './hero/Field'
-import { Draft, Product, Steps, useStory } from './hero/Story'
+import { Draft, Product, useStory } from './hero/Story'
 
-const T = { field: 0, nav: 0.05, copy: 0.12, window: 0.35, steps: 0.6 }
+const T = { nav: 0.05, copy: 0.12, window: 0.35 }
 const LINKS = ['Product', 'Agents', 'Pricing', 'Changelog']
-// chart soundings (depths), placed only where the field shows: the strip above the product and the gutter beside the copy
-const SOUNDINGS: [number, number, string][] = [
-  [700, 106, '14'], [818, 92, '17'], [948, 116, '21'], [1086, 96, '19'], [1214, 114, '24'], [1352, 98, '22'],
-  [606, 214, '12'], [588, 330, '11'], [604, 448, '9'], [470, 560, '7'], [520, 612, '8'],
-]
+// film grain for the stage panel (inline SVG noise, no asset)
+const GRAIN = `url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.35 0 0 0 0 0.4 0 0 0 0 0.5 0 0 0 0.9 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")`
 
 function Nav() {
   const [hover, setHover] = useState<string | null>(null)
@@ -52,21 +48,22 @@ function Nav() {
 
 export default function App() {
   const p = useStory()
+  const stage = new URLSearchParams(location.search).get('bg') === 'stage'
   return (
     <MotionConfig reducedMotion="user">
       <div className="relative mx-auto h-[900px] w-[1440px] overflow-hidden bg-[var(--canvas)]">
-        <motion.div aria-hidden initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: T.field, duration: 0.8 }} className="absolute inset-0"><Field /></motion.div>
-        {/* chart soundings: decorative chart ink, so they live in an aria-hidden SVG rather than as page text */}
-        <svg aria-hidden className="pointer-events-none absolute inset-0 size-full" viewBox="0 0 1440 900">
-          {SOUNDINGS.map(([x, y, v], i) => (
-            <motion.text key={i} x={x} y={y + 9} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5 + i * 0.04, duration: 0.6 }}
-              className="font-mono text-[10px] [font-variant-numeric:tabular-nums]" fill="rgba(38,109,240,0.5)">{v}</motion.text>
-          ))}
-        </svg>
+        {stage && (
+          // Folk / Cursor grammar: the only art on the page is one stage panel directly behind the product
+          <motion.div aria-hidden initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.15, duration: 0.9, ease: ease.outQuint }}
+            className="absolute left-[600px] top-[128px] h-[900px] w-[1000px] overflow-hidden rounded-[28px] shadow-[inset_0_0_0_1px_rgba(28,40,64,0.06)]"
+            style={{ background: 'radial-gradient(120% 90% at 20% 0%, #f3f7ff 0%, rgba(243,247,255,0) 55%), linear-gradient(165deg, #dce7fb 0%, #c7d8f8 48%, #aec6f3 100%)' }}>
+            <div className="absolute inset-0 opacity-[0.22] mix-blend-multiply" style={{ backgroundImage: GRAIN }} />
+          </motion.div>
+        )}
 
         <Nav />
 
-        <main className="pointer-events-none absolute left-[80px] top-[188px] z-20 w-[540px] [&>*]:pointer-events-auto">
+        <main className="pointer-events-none absolute left-[80px] top-[286px] z-20 w-[540px] [&>*]:pointer-events-auto">
           <Reveal at={T.copy} y={14} blur>
             <h1 className="font-[family-name:var(--font-display)] text-[74px] font-[600] leading-[0.98] tracking-[-0.052em] text-[var(--ink)]">Turn Replies<br />Into Meetings</h1>
           </Reveal>
@@ -81,17 +78,15 @@ export default function App() {
           </Reveal>
         </main>
 
-        <Reveal at={T.steps} y={10} className="absolute left-[80px] top-[606px] z-20"><Steps p={p} /></Reveal>
-
         <motion.section initial={{ opacity: 0.01, x: 64 }} animate={{ opacity: 1, x: 0 }}
           transition={{ x: { delay: T.window, duration: 1.2, ease: ease.reveal }, opacity: { delay: T.window, duration: 0.6, ease: ease.outQuint } }}
-          className="absolute left-[640px] top-[148px] z-10 w-[1180px] [mask-image:linear-gradient(to_bottom,#000_660px,transparent_820px)]" role="img" aria-label="Ferry product, sample data: a new reply from Ines Carvalho is drafted, approved and booked as a meeting">
+          className={`absolute z-10 w-[1180px] ${stage ? "left-[648px] top-[176px]" : "left-[640px] top-[148px] [mask-image:linear-gradient(to_bottom,#000_660px,transparent_820px)]"}`} role="img" aria-label="Ferry product, sample data: a new reply from Ines Carvalho is drafted, approved and booked as a meeting">
           {/* a picture of the product, not a second app: inert keeps its links out of the tab order and under the card */}
           <div inert><Frame inner={16} pad={6} height={840}><Product p={p} /></Frame></div>
         </motion.section>
 
         {/* the card exists only from its beat, so nothing half-faded sits in the page before the story reaches it */}
-        {p >= 2 && <div className="absolute left-[548px] top-[536px] z-30"><Draft p={p} /></div>}
+        {p >= 2 && <div className="absolute left-[572px] top-[526px] z-30"><Draft p={p} /></div>}
       </div>
     </MotionConfig>
   )

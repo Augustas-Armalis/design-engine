@@ -1,5 +1,5 @@
 // The hero's one conceptual reveal: a reply crosses to a meeting. One clock (useStory) drives the product window,
-// the floating draft card, the cursor and the "how it works" steps, so all three tell the same moment.
+// the floating draft card and the cursor, so they tell the same moment.
 import { useEffect, useState } from 'react'
 import { AnimatePresence, motion, useReducedMotion } from 'motion/react'
 import { ArrowUpRight, CalendarBlank, CalendarCheck, Check, CircleNotch, Cursor, FunnelSimple, House, PencilSimple, Plus, Sparkle, Tray } from '@phosphor-icons/react'
@@ -193,35 +193,5 @@ export function Draft({ p }: { p: Phase }) {
         <Cursor size={22} weight="fill" className="text-[var(--ink)] drop-shadow-[0_2px_3px_rgba(0,0,0,0.25)] [&_path]:[paint-order:stroke] [&_path]:stroke-white [&_path]:[stroke-width:22px] [&_path]:[stroke-linejoin:round]" />
       </motion.span>
     </motion.div>
-  )
-}
-
-/* ---------- how it works, lit in sync ---------- */
-
-const STEPS = [
-  { icon: Tray, t: 'Reads every reply', d: 'and sorts the intent' },
-  { icon: Sparkle, t: 'Drafts the answer', d: 'in your voice, with times' },
-  { icon: CalendarCheck, t: 'Books the meeting', d: 'when you approve' },
-]
-export function Steps({ p }: { p: Phase }) {
-  const step = at(p, 'booked') ? 2 : at(p, 'card') ? 1 : at(p, 'row') ? 0 : -1
-  return (
-    <ol aria-label="How Ferry works" className="relative">
-      <span aria-hidden className="absolute bottom-[22px] left-[14px] top-[22px] w-px bg-[#dfe3ea]" />
-      <motion.span aria-hidden className="absolute left-[14px] top-[22px] w-px origin-top bg-[var(--blue)]" style={{ height: 'calc(100% - 44px)' }}
-        initial={{ scaleY: 0 }} animate={{ scaleY: step <= 0 ? 0 : step === 1 ? 0.5 : 1 }} transition={{ duration: 0.6, ease }} />
-      {STEPS.map((s, i) => {
-        const on = i <= step
-        return (
-          <li key={s.t} className="relative flex h-11 items-center gap-3.5">
-            <span className={`relative grid size-[29px] place-items-center rounded-full transition-[background-color,box-shadow,color] duration-300 ${on ? 'bg-[var(--blue)] text-white shadow-[0_0_0_4px_rgba(38,109,240,0.12)]' : 'bg-white text-[var(--soft)] shadow-[0_0_0_1px_#dfe3ea]'}`}>
-              <s.icon size={15} weight={on ? 'fill' : 'regular'} />
-            </span>
-            <span className={`text-[15px] font-[500] tracking-[-0.01em] transition-colors duration-300 ${on ? 'text-[var(--ink)]' : 'text-[var(--sub)]'}`}>{s.t}</span>
-            <span className="text-[15px] tracking-[-0.01em] text-[var(--soft)]">{s.d}</span>
-          </li>
-        )
-      })}
-    </ol>
   )
 }
