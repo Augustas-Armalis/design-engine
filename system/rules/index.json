@@ -1992,6 +1992,34 @@
   "origin": "founder"
  },
  {
+  "id": "founder.founder-taste#62",
+  "text": "[founder] A product hero must feel alive and show enough of the product: render the dashboard at hero scale (about 0.8 zoom, ~11-12px text) so sidebar, KPIs and a full table read at once, and let the story play inside the product (rows arrive, AI states change, a cursor acts inline, numbers tick) with at most one narrating chip above the window (Lightfield's agent pill). No pop-up cards floating over the copy side; a static 1:1 crop of one table reads \"empty... too simple\". A soft blue stage panel behind the product was \"not bad\".",
+  "why": "Founder on Ferry hero round 2: \"the bluish not bad just idk about second card like popping up nor the size of the dashboard... it's just empty and no stuff going on, it's not good... too simple\".",
+  "applies": "product heroes.",
+  "check": "something in the product changes at least every ~1-1.5s for the first ~10s; visible product shows the sidebar, KPIs and >= 8 table rows; no floating card overlaps the copy column.",
+  "checkable": true,
+  "source": "founder, Ferry hero round 2, 2026-10-09; knowledge/benchmarks/split-heroes/lightfield-1440.png",
+  "file": "founder/founder-taste.md",
+  "section": "5. Exceptions & judgement calls",
+  "tags": [
+   "founder",
+   "taste",
+   "hero",
+   "nav",
+   "typography",
+   "copy",
+   "icons",
+   "logo",
+   "layout",
+   "product-card",
+   "background",
+   "buttons",
+   "quality-bar"
+  ],
+  "kind": "source",
+  "origin": "founder"
+ },
+ {
   "id": "dos-and-donts.dos-and-donts#1",
   "text": "[T13] Use as few font sizes as possible in a form; differentiate size only between sections (labels/placeholders at one small size) and actions (the button label larger). The good mock uses 12 for both label and placeholder and 32 for the button label; the bad mock mixes 16 (label), 12 (placeholder), 32 (button).",
   "why": "Every extra size is another thing to decode, so the form takes longer to process.",

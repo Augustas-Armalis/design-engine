@@ -1,13 +1,13 @@
 // Ferry hero: split layout (Lightfield grammar). Copy vertically centred on a plain canvas; the real product sails in from
-// the right edge at 1:1 and makes one crossing (reply in, meeting out). ?bg=stage puts one grain-gradient stage behind the
-// product (Folk / Cursor). One clock: T for entrances, BEAT (hero/Story.tsx) for the story.
+// the right edge, live: replies arrive, the AI drafts, a cursor approves, rows book, KPIs tick; a status pill narrates.
+// Default: one grain-gradient stage behind the product (Folk / Cursor); ?bg=plain drops it. T for entrances, SCRIPT for the story.
 import { useState } from 'react'
 import { MotionConfig, motion } from 'motion/react'
 import { Sailboat } from '@phosphor-icons/react'
 import './ferry/tokens.css'
 import { Frame, Reveal } from './kit'
 import { ease, spring } from './motion'
-import { Draft, Product, useStory } from './hero/Story'
+import { Product, StatusPill, useLive } from './hero/Story'
 
 const T = { nav: 0.05, copy: 0.12, window: 0.35 }
 const LINKS = ['Product', 'Agents', 'Pricing', 'Changelog']
@@ -47,15 +47,15 @@ function Nav() {
 }
 
 export default function App() {
-  const p = useStory()
-  const stage = new URLSearchParams(location.search).get('bg') === 'stage'
+  const s = useLive()
+  const stage = new URLSearchParams(location.search).get('bg') !== 'plain' // the product dissolves into the stage (or the canvas) at the bottom
   return (
     <MotionConfig reducedMotion="user">
       <div className="relative mx-auto h-[900px] w-[1440px] overflow-hidden bg-[var(--canvas)]">
         {stage && (
           // Folk / Cursor grammar: the only art on the page is one stage panel directly behind the product
           <motion.div aria-hidden initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.15, duration: 0.9, ease: ease.outQuint }}
-            className="absolute left-[600px] top-[128px] h-[900px] w-[1000px] overflow-hidden rounded-[28px] shadow-[inset_0_0_0_1px_rgba(28,40,64,0.06)]"
+            className="absolute left-[600px] top-[118px] h-[900px] w-[1000px] overflow-hidden rounded-[28px] shadow-[inset_0_0_0_1px_rgba(28,40,64,0.06)]"
             style={{ background: 'radial-gradient(120% 90% at 20% 0%, #f3f7ff 0%, rgba(243,247,255,0) 55%), linear-gradient(165deg, #dce7fb 0%, #c7d8f8 48%, #aec6f3 100%)' }}>
             <div className="absolute inset-0 opacity-[0.22] mix-blend-multiply" style={{ backgroundImage: GRAIN }} />
           </motion.div>
@@ -78,15 +78,16 @@ export default function App() {
           </Reveal>
         </main>
 
+        <Reveal at={T.window + 0.6} y={8} className="absolute left-[640px] top-[140px] z-20"><StatusPill pill={s.pill} /></Reveal>
+
         <motion.section initial={{ opacity: 0.01, x: 64 }} animate={{ opacity: 1, x: 0 }}
           transition={{ x: { delay: T.window, duration: 1.2, ease: ease.reveal }, opacity: { delay: T.window, duration: 0.6, ease: ease.outQuint } }}
-          className={`absolute z-10 w-[1180px] ${stage ? "left-[648px] top-[176px]" : "left-[640px] top-[148px] [mask-image:linear-gradient(to_bottom,#000_660px,transparent_820px)]"}`} role="img" aria-label="Ferry product, sample data: a new reply from Ines Carvalho is drafted, approved and booked as a meeting">
-          {/* a picture of the product, not a second app: inert keeps its links out of the tab order and under the card */}
-          <div inert><Frame inner={16} pad={6} height={840}><Product p={p} /></Frame></div>
+          className="absolute left-[640px] top-[198px] z-10 [mask-image:linear-gradient(to_bottom,#000_540px,transparent_700px)]" role="img" aria-label="Ferry product, sample data: new replies arrive, the AI drafts answers, two are approved and booked as meetings">
+          {/* a picture of the product, not a second app: inert keeps its links out of the tab order.
+              zoom 0.82 shows the dashboard at Lightfield/Attio hero scale (more of it, ~11.5px text) without a blurry transform */}
+          <div inert><Frame inner={16} pad={6} height={856}><div style={{ zoom: 0.82, width: 1240, height: 1044 }}><Product s={s} /></div></Frame></div>
         </motion.section>
 
-        {/* the card exists only from its beat, so nothing half-faded sits in the page before the story reaches it */}
-        {p >= 2 && <div className="absolute left-[572px] top-[526px] z-30"><Draft p={p} /></div>}
       </div>
     </MotionConfig>
   )
