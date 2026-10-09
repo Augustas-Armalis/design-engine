@@ -242,6 +242,13 @@ Every rule here is a direct founder verdict on real output. It outranks books, w
   **Why** Founder on Kaching round 2: "not in a rectangular grey box", "this bento was clean, neat, consistent when scaling down, on mobile all the same heights, and now you messed it up everywhere", "we had the long visual, so put it first and the calendar as the long one".
   **Applies to** feature bentos. **Check** visual.left == copy.left per cell; gap copy->visual identical across cells; no stage background; tablet/phone cell heights equal. **Source** founder, Kaching round 2
 
+- **RULE** [founder] Visuals inside dark sections are dark visuals (dark panels with a faint white ring, light text, accent only on the selected/primary element). Never drop a bright white UI window onto a black band.
+  **Why** Founder on the Kaching migration section: "dark sections should have dark visuals, what's going on?"
+  **Applies to** any product visual on a dark surface. **Check** in dark sections, no visual panel has a background lighter than ~#2A2A2A. **Source** founder, Kaching round 2
+
+- **RULE** [founder] When a founder-approved visual already exists (a motion artist's scene, a shipped section), revise it app by app: keep its composition, polish styling and motion, check it side by side against the original, and only then move to the next. Never regenerate a whole set in parallel from a new system; it drifts ("what you replaced is a bit shit", "let's go one by one").
+  **Applies to** revision rounds. **Check** each revised visual has a side-by-side with its original in the report. **Source** founder, Kaching round 2
+
 ## 5. Exceptions & judgement calls
 
 - The split layout (copy left, visual right) was rejected by Larpo when the right side was a decorative dashboard. With a real product world on the right (the payout globe) the founder accepted it.
