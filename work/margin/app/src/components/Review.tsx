@@ -46,14 +46,22 @@ export default function Review({ start }: { start: number }) {
 
   // connectors from each note card to the line it is about (measured, so they stay true at any font metrics)
   useLayoutEffect(() => {
+    // layout offsets, not getBoundingClientRect: the stage is mid-transform (scale/translate) when this first runs,
+    // which skewed the dots a few px above their lines (founder: "not in the centre of the line's height")
+    const within = (el: HTMLElement | null) => {
+      let x = 0, y = 0, n: HTMLElement | null = el
+      while (n && n !== box.current) { x += n.offsetLeft; y += n.offsetTop; n = n.offsetParent as HTMLElement | null }
+      return { x, y, w: el?.offsetWidth ?? 0, h: el?.offsetHeight ?? 0 }
+    }
     const measure = () => {
-      const b = box.current?.getBoundingClientRect(); if (!b) return
+      if (!box.current) return
       setPaths([0, 1].map((i) => {
         const li = DIFF.findIndex((l) => l.note === i)
-        const l = lineRefs.current[li]?.getBoundingClientRect(), c = noteRefs.current[i]?.getBoundingClientRect()
-        if (!l || !c) return { d: '', end: [0, 0] as [number, number] }
-        const x1 = l.right - b.left - 14, y1 = l.top - b.top + l.height / 2
-        const x2 = c.left - b.left, y2 = c.top - b.top + 22
+        const le = lineRefs.current[li], ce = noteRefs.current[i]
+        if (!le || !ce) return { d: '', end: [0, 0] as [number, number] }
+        const l = within(le), c = within(ce)
+        const x1 = l.x + l.w - 14, y1 = l.y + l.h / 2
+        const x2 = c.x, y2 = c.y + 22
         const mid = (x1 + x2) / 2
         return { d: `M${x1} ${y1} C${mid} ${y1} ${mid} ${y2} ${x2} ${y2}`, end: [x1, y1] as [number, number] }
       }))

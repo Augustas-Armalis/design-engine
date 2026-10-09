@@ -43,3 +43,6 @@ The founder rejects sameness ("too alike the project we just did"). Per brand, c
 - CTAs 44px r14 (fancy ink + white, secondary text-only).
 - Product radius ladder: 8 (sidebar items, badges, inner segments, tooltip) / 12 (32px controls, small buttons, inputs) / 16 (cards, bubbles, app) / 22 (outer frame).
 - Dot grid 16px only between the rails, faded behind the headline. Dashboard top at 476px, 1136px wide, cut by the fold with a 56px fade.
+
+## Measuring overlays (connectors, callouts) inside animated stages
+Measure anchor points with layout offsets (`offsetLeft/offsetTop` summed up to the container), never `getBoundingClientRect` on first render: the stage is still mid-transform (scale 0.97, translateY) and every point lands a few px off. Founder caught Margin's note dots sitting above the centre of their code lines.

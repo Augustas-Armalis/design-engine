@@ -22,7 +22,7 @@ function Bands() {
       <div className="flex h-12 items-center gap-2 border-b border-[var(--line)] px-5">
         <HomeIcon {...ICON} className="text-[var(--soft)]" /><h1 className="t14 font-[600] text-[var(--ink)]">Home</h1>
         <span className="t14 text-[var(--soft)]">· Last 30 days</span>
-        <div className="ml-auto flex items-center gap-2"><Btn icon={ArrowUpRight}>Share</Btn><Btn primary icon={Plus} kbd="N">New campaign</Btn></div>
+        <div className="ml-auto flex items-center gap-2"><Btn icon={ArrowUpRight}>Share</Btn><Btn primary icon={Plus}>New campaign</Btn></div>
       </div>
       <div className="flex h-12 items-center gap-1 border-b border-[var(--line)] px-4">
         {TABS.map((t) => (
@@ -54,13 +54,16 @@ function Kpis() {
 function Table({ sel, setSel }: { sel: number; setSel: (n: number) => void }) {
   const total = REPLIES.reduce((a, r) => a + r.value, 0)
   const th = 'h-8 border-b border-[var(--grid)] px-3 text-left t13 font-[500] text-[var(--sub)]'
-  const td = 'h-9 border-b border-[var(--grid)] px-3'
+  const td = 'h-9 border-b border-[var(--grid)] px-3 align-middle'
   return (
     <section aria-label="Replies to handle (sample)" className="min-w-0 overflow-hidden rounded-[12px] border border-[var(--line)] bg-white">
       <div className="flex h-11 items-center gap-2 px-3.5">
         <span className="grid size-4 place-items-center rounded-[4px] bg-[#fd9038]"><Inbox12 /></span>
         <h2 className="t14 font-[600] text-[var(--ink)]">Replies to handle</h2><span className="tnum t13 text-[var(--soft)]">8</span>
-        <div className="ml-auto flex items-center gap-1.5"><Ghost icon={Filter}>Interested</Ghost><Btn icon={Sparkles}>Draft all</Btn></div>
+        <div className="ml-auto flex items-center gap-1.5">
+          <span className="inline-flex h-7 items-center gap-1.5 rounded-[8px] bg-white pl-2 pr-1 t14 leading-none shadow-[var(--btn)]"><Filter size={14} strokeWidth={1.5} className="text-[var(--soft)]" /><span className="text-[var(--sub)]">Intent is</span><span className="text-[var(--ink)]">Interested</span><button type="button" aria-label="Remove filter" className="grid size-5 place-items-center rounded-[6px] text-[var(--soft)] hover:bg-[var(--hover)]"><X size={12} strokeWidth={1.75} /></button></span>
+          <Btn icon={Sparkles}>Draft all</Btn>
+        </div>
       </div>
       <table className="w-full border-separate border-spacing-0">
         <thead><tr>
@@ -70,12 +73,12 @@ function Table({ sel, setSel }: { sel: number; setSel: (n: number) => void }) {
         <tbody>
           {REPLIES.map((r) => (
             <tr key={r.id} onClick={() => setSel(r.id)} className={`cursor-pointer ${sel === r.id ? 'bg-[var(--sel)]' : 'hover:bg-[#fafafb]'}`}>
-              <td className={td}><Person name={r.lead} /></td>
-              <td className={td}><span className="inline-flex items-center gap-2 t14 text-[var(--ink)]"><Logo name={r.company} hue={r.logo} /><span className="whitespace-nowrap underline decoration-[#e7e7e7] underline-offset-[3px]">{r.company}</span></span></td>
-              <td className={td}><Chip hue={INTENT_HUE[r.intent]}>{r.intent}</Chip></td>
+              <td className={td}><div className="flex h-9 items-center"><Person name={r.lead} /></div></td>
+              <td className={td}><div className="flex h-9 items-center gap-2 t14 leading-none text-[var(--ink)]"><Logo name={r.company} hue={r.logo} /><span className="whitespace-nowrap underline decoration-[#e3e4e7] decoration-1 underline-offset-[4px]">{r.company}</span></div></td>
+              <td className={td}><div className="flex h-9 items-center"><Chip hue={INTENT_HUE[r.intent]}>{r.intent}</Chip></div></td>
               <td className={`${td} tnum text-right t14 text-[var(--ink)]`}>{money(r.value)}</td>
               <td className={`${td} whitespace-nowrap t14 text-[var(--sub)]`}>{r.received}</td>
-              <td className={td}><Chip hue={AI_HUE[r.ai]}>{r.ai}</Chip></td>
+              <td className={td}><div className="flex h-9 items-center"><Chip hue={AI_HUE[r.ai]}>{r.ai}</Chip></div></td>
             </tr>
           ))}
           <tr>
@@ -105,7 +108,7 @@ function Panel({ id }: { id: number }) {
             <button type="button" aria-label="Close" className="press grid size-7 place-items-center rounded-[8px] text-[var(--soft)] hover:bg-[var(--hover)]"><X {...ICON} /></button>
           </div>
           <div className="flex flex-wrap gap-1.5 border-b border-[var(--line)] px-4 py-3">
-            <Chip hue={INTENT_HUE[r.intent]}>{r.intent}</Chip><Chip>{r.campaign}</Chip>{r.value > 0 && <Chip hue="cyan">{money(r.value)}</Chip>}
+            <Chip hue={INTENT_HUE[r.intent]}>{r.intent}</Chip><Chip hue={AI_HUE[r.ai]}>{r.ai}</Chip><span className="ml-auto flex items-center t13 text-[var(--sub)]"><span className="tnum text-[var(--ink)]">{money(r.value)}</span>&nbsp;deal</span>
           </div>
           <div className="space-y-4 p-4">
             <div>
@@ -145,16 +148,18 @@ function Panel({ id }: { id: number }) {
 function Weekly() {
   const max = 240
   return (
-    <section aria-label="Replies per week (sample)" className="rounded-[12px] border border-[var(--line)] bg-white p-4">
-      <div className="flex items-center"><h2 className="t14 font-[600] text-[var(--ink)]">Replies per week</h2><Ghost>Weekly<ChevronDown size={14} strokeWidth={1.5} /></Ghost></div>
-      <div className="mt-4 flex h-[120px] items-end gap-3">
-        {WEEKS.map((w, i) => (
-          <div key={w.w} className="flex flex-1 flex-col items-center gap-2">
-            <span className="tnum t12 text-[var(--sub)]">{w.r}</span>
-            <div className={`w-full rounded-[4px] ${i === WEEKS.length - 1 ? 'bg-[var(--blue)]' : 'bg-[#d6e5ff]'}`} style={{ height: (w.r / max) * 84 }} />
-            <span className="t12 text-[var(--soft)]">{w.w}</span>
-          </div>
-        ))}
+    <section aria-label="Replies per week (sample)" className="flex flex-col rounded-[12px] border border-[var(--line)] bg-white p-4">
+      <div className="flex h-7 items-center"><h2 className="t14 font-[600] text-[var(--ink)]">Replies per week</h2><span className="ml-auto"><Ghost>Weekly<ChevronDown size={14} strokeWidth={1.5} /></Ghost></span></div>
+      <div className="mt-auto pt-4">
+        <div className="flex h-[112px] items-end gap-3 border-b border-[var(--line)]">
+          {WEEKS.map((w, i) => (
+            <div key={w.w} className="flex flex-1 flex-col items-center gap-1.5">
+              <span className={`tnum t12 ${i === WEEKS.length - 1 ? 'text-[var(--ink)]' : 'text-[var(--sub)]'}`}>{w.r}</span>
+              <div className={`w-full rounded-t-[4px] ${i === WEEKS.length - 1 ? 'bg-[var(--blue)]' : 'bg-[#d6e5ff]'}`} style={{ height: (w.r / max) * 80 }} />
+            </div>
+          ))}
+        </div>
+        <div className="mt-2 flex gap-3">{WEEKS.map((w) => <span key={w.w} className="flex-1 text-center t12 text-[var(--soft)]">{w.w}</span>)}</div>
       </div>
     </section>
   )
@@ -163,14 +168,14 @@ function Weekly() {
 function Campaigns() {
   return (
     <section aria-label="Campaigns (sample)" className="rounded-[12px] border border-[var(--line)] bg-white p-4">
-      <div className="flex items-center"><h2 className="t14 font-[600] text-[var(--ink)]">Campaigns</h2><span className="ml-1.5 tnum t13 text-[var(--soft)]">3 running</span><a href="#" className="-my-1 ml-auto py-1 t13 text-[var(--sub)] hover:text-[var(--ink)]">View all</a></div>
+      <div className="flex h-7 items-center"><h2 className="t14 font-[600] text-[var(--ink)]">Campaigns</h2><span className="ml-1.5 tnum t13 text-[var(--soft)]">3 running</span><a href="#" className="-my-1 ml-auto py-1 t13 text-[var(--sub)] hover:text-[var(--ink)]">View all</a></div>
       <div className="mt-3">
         {CAMPAIGNS.map((c, i) => (
           <div key={c.name} className={`flex h-10 items-center gap-3 ${i ? 'border-t border-[var(--line)]' : ''}`}>
             <span className="size-2 rounded-full" style={{ background: c.hue }} />
             <span className="flex-1 truncate t14 text-[var(--ink)]">{c.name}</span>
-            <span className="tnum w-12 text-right t13 text-[var(--ink)]">{c.rate}%</span>
-            <Chip hue={c.status === 'Sending' ? 'green' : 'yellow'}>{c.status}</Chip>
+            <span className="tnum w-12 text-right t13 text-[var(--ink)]">{c.rate ? `${c.rate}%` : '–'}</span>
+            <span className="flex w-[76px] justify-end"><Chip hue={c.status === 'Sending' ? 'green' : c.status === 'Paused' ? 'yellow' : 'grey'}>{c.status}</Chip></span>
           </div>
         ))}
       </div>

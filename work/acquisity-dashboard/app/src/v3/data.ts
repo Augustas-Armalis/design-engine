@@ -26,4 +26,5 @@ export const CAMPAIGNS = [
   { name: 'Recruitment MDs, UK', hue: '#266df0', sent: 12480, rate: 3.1, meetings: 14, status: 'Sending' },
   { name: 'Logistics growth', hue: '#0eb472', sent: 9310, rate: 2.4, meetings: 8, status: 'Sending' },
   { name: 'Accounting founders', hue: '#9b69ff', sent: 6120, rate: 1.8, meetings: 5, status: 'Paused' },
+  { name: 'Legal partners, EU', hue: '#c9ccd1', sent: 0, rate: 0, meetings: 0, status: 'Draft' },
 ]

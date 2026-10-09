@@ -10,7 +10,7 @@ export function Btn({ children, icon: Icon, primary, kbd, label, className = '' 
     <button type="button" aria-label={label} className={`press inline-flex h-7 shrink-0 items-center justify-center gap-1.5 rounded-[8px] t14 leading-none ${only ? 'w-7' : 'px-2.5'} ${primary ? 'bg-[var(--blue)] text-white shadow-[inset_0_0_0_1px_rgba(0,0,0,0.08),0_1px_2px_rgba(38,109,240,0.3)] hover:bg-[#1f5fd9]' : 'bg-white text-[var(--ink)] shadow-[var(--btn)] hover:bg-[var(--hover)]'} ${className}`}>
       {Icon && <Icon {...ICON} className="shrink-0" />}
       {children && <span className="leading-none">{children}</span>}
-      {kbd && <kbd className={`ml-0.5 flex h-[18px] items-center rounded-[6px] px-1 font-sans text-[11px] leading-none ${primary ? 'text-white shadow-[inset_0_0_0_1px_rgba(255,255,255,0.35)]' : 'text-[var(--soft)] shadow-[inset_0_0_0_1px_var(--line)]'}`}>{kbd}</kbd>}
+      {kbd && <kbd className={`ml-auto flex h-[18px] items-center rounded-[6px] px-1 font-sans text-[11px] leading-none ${primary ? 'text-white shadow-[inset_0_0_0_1px_rgba(255,255,255,0.35)]' : 'text-[var(--soft)] shadow-[inset_0_0_0_1px_var(--line)]'}`}>{kbd}</kbd>}
     </button>
   )
 }
@@ -46,5 +46,5 @@ export function Logo({ name, hue }: { name: string; hue: string }) {
 }
 
 export function Person({ name }: { name: string }) {
-  return <span className="inline-flex h-[22px] items-center gap-1.5 whitespace-nowrap rounded-[11px] border border-[var(--grid)] bg-[var(--side)] pl-[3px] pr-2 t14 leading-none text-[var(--ink)]"><Avatar name={name} />{name}</span>
+  return <span className="inline-flex items-center gap-2 whitespace-nowrap t14 leading-none text-[var(--ink)]"><Avatar name={name} />{name}</span>
 }

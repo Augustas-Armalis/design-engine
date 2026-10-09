@@ -36,7 +36,7 @@ export function Sidebar() {
         <button type="button" aria-label="Collapse sidebar" className="press ml-auto grid size-7 place-items-center rounded-[8px] text-[var(--soft)] hover:bg-[var(--hover)]"><PanelLeft {...ICON} /></button>
       </div>
       <div className="flex gap-1.5 px-3 pb-3">
-        <Btn icon={Search} kbd="⌘K" className="flex-1 justify-start">Search</Btn>
+        <Btn icon={Search} kbd="⌘K" className="flex-1 justify-start gap-2">Search</Btn>
         <Btn icon={Sparkles} label="Ask AI" />
       </div>
       <nav className="flex-1 overflow-y-auto px-2">
