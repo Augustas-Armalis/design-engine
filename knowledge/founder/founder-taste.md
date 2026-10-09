@@ -234,6 +234,10 @@ Every rule here is a direct founder verdict on real output. It outranks books, w
   **Why** Founder: "that example I gave you was just like the content, you should design the stuff in your own size and way or even add stuff there isn't and just do it consistently".
   **Applies to** every redesign and review-and-fix job. **Check** DIRECTION.md lists what was restructured and what was added, not only what was restyled. **Source** founder, Acquisity redesign v1
 
+- **RULE** [founder] The product-UI bar is Marcel Kargul's, Rico's (@_heyrico) and Attio's shipped product work, not "AlignUI-flavoured". Before building product UI, study and recreate reference screens at 1:1 (overlay your render on the reference and close the gaps), build from a measured product kit, and judge every screen side by side with a reference at the same zoom. A redesign that keeps the source layout and changes surface styling is a reject.
+  **Why** Founder on Acquisity v1/v2: "it seems to have copied it mostly and just changed surface level stuff", "nothing like Marcel Kargul's style nor Rico... too noobish... nothing like Attio... spend more time perfecting product craft".
+  **Applies to** all SaaS app UI and dashboards. **Check** DIRECTION.md names the reference screens used, includes a side-by-side at equal zoom, and lists the structural changes (not only restyling). **Source** founder, Acquisity redesign rejection 2026-10-09
+
 ## 5. Exceptions & judgement calls
 
 - The split layout (copy left, visual right) was rejected by Larpo when the right side was a decorative dashboard. With a real product world on the right (the payout globe) the founder accepted it.

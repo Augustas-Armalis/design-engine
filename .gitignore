@@ -5,3 +5,6 @@ node_modules/
 *.log
 reports/
 corpus/web/
+
+# third-party source studied for knowledge/web/kargul-source-study.md (not ours; workflow-editor and kanban have no licence)
+corpus/kargul-src/

@@ -1,0 +1,47 @@
+{
+  "name": "acquisity-dashboard",
+  "date": "2026-10-09",
+  "verdict": "reject",
+  "why": "Founder on the Acquisity redesign v2: 'I think I prefer mine... it seems to have copied it mostly and just changed surface level stuff'; 'product design is nothing like Marcel Kargul's style nor Rico... a bit too noobish... nothing like Attio'",
+  "summary": {
+    "pass": 22,
+    "warn": 5,
+    "fail": 2
+  },
+  "fingerprint": {
+    "h1": {
+      "px": 18,
+      "lh": "24px",
+      "ls": "-0.27px",
+      "weight": "500",
+      "family": "Inter Variable",
+      "text": "Good afternoon, Daniel"
+    },
+    "fonts": [
+      "Inter Variable"
+    ],
+    "accentHues": [
+      30,
+      150,
+      225,
+      360
+    ],
+    "radii": [
+      "pill",
+      6,
+      8,
+      12,
+      2,
+      10,
+      3
+    ],
+    "navHeight": 486,
+    "contentWidth": "720",
+    "sectionPad": null,
+    "sectionCount": 0,
+    "bodyPx": 16,
+    "heroLayout": "integrated",
+    "navNumbered": false
+  },
+  "screenshot": "ledger/shots/2026-10-09-acquisity-dashboard-fold.png"
+}

@@ -1796,6 +1796,34 @@
   "origin": "founder"
  },
  {
+  "id": "founder.founder-taste#55",
+  "text": "[founder] The product-UI bar is Marcel Kargul's, Rico's (@_heyrico) and Attio's shipped product work, not \"AlignUI-flavoured\". Before building product UI, study and recreate reference screens at 1:1 (overlay your render on the reference and close the gaps), build from a measured product kit, and judge every screen side by side with a reference at the same zoom. A redesign that keeps the source layout and changes surface styling is a reject.",
+  "why": "Founder on Acquisity v1/v2: \"it seems to have copied it mostly and just changed surface level stuff\", \"nothing like Marcel Kargul's style nor Rico... too noobish... nothing like Attio... spend more time perfecting product craft\".",
+  "applies": "all SaaS app UI and dashboards.",
+  "check": "DIRECTION.md names the reference screens used, includes a side-by-side at equal zoom, and lists the structural changes (not only restyling).",
+  "checkable": true,
+  "source": "founder, Acquisity redesign rejection 2026-10-09",
+  "file": "founder/founder-taste.md",
+  "section": "2. Rules",
+  "tags": [
+   "founder",
+   "taste",
+   "hero",
+   "nav",
+   "typography",
+   "copy",
+   "icons",
+   "logo",
+   "layout",
+   "product-card",
+   "background",
+   "buttons",
+   "quality-bar"
+  ],
+  "kind": "source",
+  "origin": "founder"
+ },
+ {
   "id": "dos-and-donts.dos-and-donts#1",
   "text": "[T13] Use as few font sizes as possible in a form; differentiate size only between sections (labels/placeholders at one small size) and actions (the button label larger). The good mock uses 12 for both label and placeholder and 32 for the button label; the bad mock mixes 16 (label), 12 (placeholder), 32 (button).",
   "why": "Every extra size is another thing to decode, so the form takes longer to process.",

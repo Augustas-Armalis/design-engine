@@ -67,6 +67,7 @@ Two jobs, one brain: (1) **design** client websites and product UI from a brief,
 
 ## Craft reminders
 
+- **Judge product UI against a reference, not by eye.** `node tools/compare.mjs <url> <reference.png> <out-prefix>` renders ours next to a reference (Marcel, Rico, Attio, AlignUI templates) at the same zoom and writes a 50% onion-skin overlay. Product screens ship only after a side-by-side read (founder: "nothing like Marcel... too noobish").
 - **Measure radii as rendered, never by class name.** A bound system's `theme.css` redefines `--radius-sm/md/lg/xl` (6/8/12/16), so Tailwind `rounded-md` renders 8px, not 6px. Before changing or "normalising" any radius, read `getComputedStyle(el).borderRadius` on the page; after the change, diff computed values against the last accepted build. (Kestrel round 3 silently sharpened the whole product by ~4px this way and the founder caught it.)
 
 - Decide the type system before the layout. Headline size follows the composition, not a default 72px.
