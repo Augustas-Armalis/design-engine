@@ -2076,6 +2076,34 @@
   "origin": "founder"
  },
  {
+  "id": "founder.founder-taste#65",
+  "text": "[founder] Florian Hoeller (@flohoeller; affectui.com, adfects.com) is the top quality bar for product UI, components and light SaaS heroes, alongside Kargul, Rico and Attio. Study his work before building those: calm Inter 500 headlines at modest size (46-52px, about -0.03em), muted #666-#737373 copy, a dark pill built from two stacked gradients with a 1px ring plus a 4% grey ghost twin, card-in-card showcase frames (r24 outer, r18 grey inner stage), believable content in every pixel (real-feeling names, numbers, sources), product states that move (thinking timers, steps landing one by one, morphs into success), and his depth-of-field collage hero (tilted UI fragments at different blur depths around a clean centre).",
+  "why": "Founder: \"STUDY THIS GUY FULLY I WANT HIS QUALITY EVERYTHING LIKE HIM... HE'S THE BEST\".",
+  "applies": "components, product UI, light SaaS heroes.",
+  "check": "compare against knowledge/benchmarks/flohoeller/*.png with tools/compare.mjs; read knowledge/web/flohoeller-craft.md.",
+  "checkable": true,
+  "source": "founder, 2026-10-09; knowledge/benchmarks/flohoeller",
+  "file": "founder/founder-taste.md",
+  "section": "5. Exceptions & judgement calls",
+  "tags": [
+   "founder",
+   "taste",
+   "hero",
+   "nav",
+   "typography",
+   "copy",
+   "icons",
+   "logo",
+   "layout",
+   "product-card",
+   "background",
+   "buttons",
+   "quality-bar"
+  ],
+  "kind": "source",
+  "origin": "founder"
+ },
+ {
   "id": "dos-and-donts.dos-and-donts#1",
   "text": "[T13] Use as few font sizes as possible in a form; differentiate size only between sections (labels/placeholders at one small size) and actions (the button label larger). The good mock uses 12 for both label and placeholder and 32 for the button label; the bad mock mixes 16 (label), 12 (placeholder), 32 (button).",
   "why": "Every extra size is another thing to decode, so the form takes longer to process.",
