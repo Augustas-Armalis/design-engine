@@ -28,3 +28,21 @@ export const CAMPAIGNS = [
   { name: 'Accounting founders', hue: '#9b69ff', sent: 6120, rate: 1.8, meetings: 5, status: 'Paused' },
   { name: 'Legal partners, EU', hue: '#c9ccd1', sent: 0, rate: 0, meetings: 0, status: 'Draft' },
 ]
+
+// Daily replies for the 29 days in view (Aug 18 – Sep 15), reconciled to the KPIs: 720 this period, 628 the period before (+14.6%).
+// Weekends dip (about a third); a gentle upward trend; deterministic wobble so the shape is stable between renders.
+const wave = (n: number, from: number, to: number, seed: number) => Array.from({ length: n }, (_, i) => {
+  const d = new Date(2026, 7, 18 + i).getDay(), wk = d === 0 || d === 6 ? 0.66 : 1
+  return (from + (to - from) * (i / (n - 1))) * wk * (0.84 + 0.32 * ((Math.sin((i + 1) * seed) + 1) / 2))
+})
+const fit = (xs: number[], total: number) => {
+  const s = xs.reduce((a, b) => a + b, 0), r = xs.map((x) => Math.round((x / s) * total))
+  r[r.length - 1] += total - r.reduce((a, b) => a + b, 0)
+  return r
+}
+export const DAYS = Array.from({ length: 29 }, (_, i) => new Date(2026, 7, 18 + i))
+export const DAILY = fit(wave(29, 19, 33, 12.9898), 720)
+export const PREV = fit(wave(29, 20, 23, 7.233), 628)
+
+/** Compact relative time for dense table cells; the panel keeps the long form. */
+export const short = (r: string) => r.replace(/ min ago$/, 'm').replace(/ h ago$/, 'h').replace(/^Yesterday$/, '1d')
