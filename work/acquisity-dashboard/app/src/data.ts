@@ -10,7 +10,7 @@ export const KPIS = [
   { label: 'Replies', value: '720', delta: '+14.6%', up: true, note: 'vs last 30 days', spark: [118, 131, 149, 166, 190, 215] },
   { label: 'Meetings booked', value: '27', delta: '+6', up: true, note: 'vs last 30 days', spark: [2, 4, 5, 6, 7, 9] },
   { label: 'Pipeline', value: '$184,300', delta: '+8.1%', up: true, note: 'from 27 meetings', spark: [120, 128, 141, 150, 168, 184] },
-  { label: 'Reply rate', value: '2.58%', delta: '−0.2', up: false, note: '720 of 27,910 sent', spark: [2.9, 2.8, 2.7, 2.7, 2.6, 2.58] },
+  { label: 'Reply rate', value: '2.58%', delta: '−0.2 pts', up: false, note: '720 of 27,910 emails', spark: [2.9, 2.8, 2.7, 2.7, 2.6, 2.58] },
 ]
 
 export const CAMPAIGNS = [
@@ -21,8 +21,15 @@ export const CAMPAIGNS = [
 ] as const
 
 export const INTENT = [
-  { label: 'Interested', n: 4, cls: 'bg-success' },
-  { label: 'Not now', n: 6, cls: 'bg-primary' },
-  { label: 'Out of office', n: 3, cls: 'bg-[#a3a3a3]' },
-  { label: 'Unsubscribe', n: 1, cls: 'bg-error' },
+  { label: 'Interested', n: 4, cls: 'bg-primary' },
+  { label: 'Not now', n: 6, cls: 'bg-[#94a8ff]' },
+  { label: 'Out of office', n: 3, cls: 'bg-[#cdd7ff]' },
+  { label: 'Unsubscribe', n: 1, cls: 'bg-[#e1e4ea]' },
+]
+
+// Reply sources (sample): sums to the 720 replies.
+export const CHANNELS = [
+  { label: 'Cold email', replies: 512, rate: '2.9%', trend: '+3.1%', up: true },
+  { label: 'LinkedIn', replies: 141, rate: '4.2%', trend: '+0.8%', up: true },
+  { label: 'Follow-ups', replies: 67, rate: '1.1%', trend: '−0.4%', up: false },
 ]

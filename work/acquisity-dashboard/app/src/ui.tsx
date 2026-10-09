@@ -19,7 +19,7 @@ const TEXT: Record<Size, string> = { xs: 'label-xs', sm: 'label-sm', md: 'label-
 
 type Variant = 'primary' | 'neutral' | 'stroke' | 'ghost' | 'error-light'
 const V: Record<Variant, string> = {
-  primary: 'bg-primary text-white shadow-[0_1px_2px_rgba(14,18,27,0.24),inset_0_1px_0_rgba(255,255,255,0.16)] hover:bg-primary-dark',
+  primary: 'bg-primary text-white shadow-[0_1px_2px_rgba(51,92,255,0.32),inset_0_1px_0_rgba(255,255,255,0.18)] hover:bg-primary-dark',
   neutral: 'bg-bg-strong text-white shadow-[0_1px_2px_rgba(14,18,27,0.24),inset_0_1px_0_rgba(255,255,255,0.12)] hover:bg-[#2b2b2b]',
   stroke: 'bg-white text-text-sub shadow-[var(--ring),var(--shadow-xs)] hover:bg-bg-weak hover:text-text-strong hover:shadow-none',
   ghost: 'text-text-sub hover:bg-bg-weak hover:text-text-strong',
@@ -92,5 +92,31 @@ export function Card({ title, sub, action, children, className = '', bodyClass =
       </header>
       <div className={`min-h-0 flex-1 ${bodyClass}`}>{children}</div>
     </section>
+  )
+}
+
+/** Ringed icon circle (AlignUI page headers and list rows): 1px stroke ring, icon centred. */
+export function IconCircle({ icon: Icon, size = 40, className = '' }: { icon: RemixiconComponentType; size?: 32 | 40 | 48; className?: string }) {
+  const box = size === 48 ? 'size-12' : size === 40 ? 'size-10' : 'size-8'
+  return <span className={`grid shrink-0 place-items-center rounded-full bg-white text-text-sub shadow-[var(--ring),var(--shadow-xs)] ${box} ${className}`}><Icon size={size === 32 ? 16 : 20} /></span>
+}
+
+/** Change as quiet text, not a pill (AlignUI templates): "+14.6%" in status colour + muted context. */
+export function Change({ v, up, ctx }: { v: string; up: boolean; ctx?: string }) {
+  return (
+    <span className="tnum inline-flex items-baseline gap-1 label-xs leading-none">
+      <span className={up ? 'text-success-text' : 'text-error-text'}>{v}</span>
+      {ctx && <span className="font-[400] text-text-soft">{ctx}</span>}
+    </span>
+  )
+}
+
+/** Section heading row used inside the page (no card): title + optional sub + actions. */
+export function SectionHead({ title, sub, children }: { title: ReactNode; sub?: ReactNode; children?: ReactNode }) {
+  return (
+    <div className="flex items-start gap-4">
+      <div className="min-w-0 flex-1"><h2 className="label-md text-text-strong">{title}</h2>{sub && <p className="mt-1 para-sm text-text-sub">{sub}</p>}</div>
+      {children && <div className="flex shrink-0 items-center gap-2">{children}</div>}
+    </div>
   )
 }

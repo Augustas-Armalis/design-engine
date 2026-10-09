@@ -226,6 +226,14 @@ Every rule here is a direct founder verdict on real output. It outranks books, w
   **Why** Client: "that 1px line at the bottom of the pill doesn't look good, try a small circular progress next to the name".
   **Applies to** auto-cycling tab selectors. **Check** no progress hairline under pills; the indicator is driven by the same clock as the advance. **Source** client, Kaching round 2
 
+- **RULE** [founder] Product dashboards follow the AlignUI template grammar (knowledge/benchmarks/alignui-dashboards/): white shell and white sidebar with uppercase section labels; active nav = soft grey fill + chevron + accent bar on the outer edge; page header = ringed icon circle + title + one-line description, quiet icon buttons, one stroke and one primary button, hairline below; content is mostly NOT boxed: key numbers as plain columns split by hairlines, sections divided by (dashed) rules, a right rail behind one vertical rule; numbers in regular weight (~24px/450); changes as quiet coloured text, not pills; one accent hue for the whole product, status colours only as small dots/text; generous air (32px page padding, 28-32px between sections).
+  **Why** Founder on the Acquisity redesign v1 (four boxed KPIs, cards everywhere, many tints, everything squeezed into one screen): "it's not the AlignUI style and is a bit messy colour wise... layout not properly neatly built... not so cramped".
+  **Applies to** SaaS app UI and dashboards. **Check** count bordered cards in the fold (<= 2); distinct saturated hues <= 2 (accent + success/error text); page padding >= 32; section gap >= 28. **Source** founder, Acquisity redesign v1 -> v2
+
+- **RULE** [founder] A content reference (an existing screen, a kit, a brief) is content only: redesign structure, sizes and hierarchy from scratch in our own system, and add what the product is missing (sections, states, live elements) instead of re-skinning the original layout box for box.
+  **Why** Founder: "that example I gave you was just like the content, you should design the stuff in your own size and way or even add stuff there isn't and just do it consistently".
+  **Applies to** every redesign and review-and-fix job. **Check** DIRECTION.md lists what was restructured and what was added, not only what was restyled. **Source** founder, Acquisity redesign v1
+
 ## 5. Exceptions & judgement calls
 
 - The split layout (copy left, visual right) was rejected by Larpo when the right side was a decorative dashboard. With a real product world on the right (the payout globe) the founder accepted it.
