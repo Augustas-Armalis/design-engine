@@ -16,7 +16,7 @@ A knowledge base plus tooling that sits around Claude, so output is designed fro
 
 ## 2. Using it
 
-Open a Claude Code session with the working directory `~/dev/design-engine` and just say what you want:
+Open a Claude Code session with the engine folder as the working directory (in the team package: `engine/`) and just say what you want:
 
 > Hero for an AI invoicing tool for freelancers. One action: start free.
 > Pricing page for a devtool, three tiers + enterprise.
@@ -26,9 +26,9 @@ Claude follows `CLAUDE.md`: restate the brief, read the ledger, deal three direc
 
 You do three things: give the brief, pick or tweak the direction if you care, and say accept or reject **with a reason**. Everything else is automatic.
 
-To use it from other projects, add this folder as a working directory (`--add-dir ~/dev/design-engine`) or symlink the skill:
+To use it from other projects, add this folder as a working directory (`--add-dir <path-to-engine>`) or symlink the skill:
 ```bash
-ln -s ~/dev/design-engine/.claude/skills/design-engine ~/.claude/skills/design-engine
+ln -s <path-to-engine>/.claude/skills/design-engine ~/.claude/skills/design-engine
 ```
 
 ### Commands
