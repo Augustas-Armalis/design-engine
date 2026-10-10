@@ -1,0 +1,3612 @@
+{
+ "vw": 1440,
+ "pageHeight": 37696,
+ "title": "Changelog - Neon Docs",
+ "bodyBg": "rgb(255, 255, 255)",
+ "htmlBg": "rgba(0, 0, 0, 0)",
+ "bodyFont": "Inter",
+ "blocks": [
+  {
+   "idx": 0,
+   "tag": "header",
+   "id": "",
+   "cls": "header top-0 right-0 left-0 z-50 flex w-full items-center bg",
+   "top": 36,
+   "h": 112,
+   "w": 1440,
+   "x": 0,
+   "bg": "rgb(255, 255, 255)",
+   "ownBg": "rgb(255, 255, 255)",
+   "bgImg": null,
+   "radius": "0px",
+   "cssPadT": 0,
+   "cssPadB": 0,
+   "effPadT": 14,
+   "effPadB": 0,
+   "contentL": 32,
+   "contentR": 1408,
+   "contentW": 1376,
+   "containerW": 1376,
+   "cards": {
+    "n": 4,
+    "cols": 4,
+    "rows": 1,
+    "w": 173,
+    "h": 195,
+    "sizes": [
+     "152x195",
+     "193x195",
+     "173x106",
+     "161x338"
+    ],
+    "gap": null,
+    "radius": [
+     [
+      "0px",
+      4
+     ]
+    ],
+    "pad": [
+     [
+      "16px/16px",
+      4
+     ]
+    ],
+    "bg": [
+     [
+      "rgb(255, 255, 255)",
+      4
+     ]
+    ],
+    "border": [
+     [
+      "1px rgb(239, 239, 240)",
+      4
+     ]
+    ],
+    "shadow": [
+     [
+      "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0",
+      4
+     ]
+    ]
+   },
+   "words": 73,
+   "snippet": "Neon Docs Search... ⌘K Ask AI Log in Sign up Get started Concepts Products Postgres Auth Neon Functions Object Storage AI Gateway Lakebase Search Platform Manage & operate Resilience & architecture Security & compliance Plans & billing Building on Neon AI agen",
+   "f": {
+    "img": 0,
+    "bigMedia": 0,
+    "video": 0,
+    "canvas": 0,
+    "logoish": 1,
+    "squareIcons": 0,
+    "avatars": 0,
+    "marquee": false,
+    "details": 0,
+    "expanded": 0,
+    "tabs": 0,
+    "tables": 0,
+    "tr": 0,
+    "quotes": 0,
+    "prices": 0,
+    "bigNums": [],
+    "steps": 0,
+    "email": 0,
+    "inputs": 0,
+    "compliance": 0,
+    "integ": 1,
+    "faq": 0,
+    "dates": 0,
+    "sticky": false,
+    "buttons": 7,
+    "links": 32,
+    "switch": 0,
+    "checks": 35,
+    "h2count": 0
+   }
+  },
+  {
+   "idx": 1,
+   "tag": "div",
+   "id": "",
+   "cls": "changelog-hero mt-10 text-black-pure dark:text-white",
+   "top": 256,
+   "h": 96,
+   "w": 832,
+   "x": 304,
+   "bg": "rgb(255, 255, 255)",
+   "ownBg": "rgba(0, 0, 0, 0)",
+   "bgImg": null,
+   "radius": "0px",
+   "cssPadT": 0,
+   "cssPadB": 0,
+   "effPadT": 0,
+   "effPadB": 0,
+   "contentL": 304,
+   "contentR": 1136,
+   "contentW": 832,
+   "containerW": 832,
+   "heading": {
+    "text": "Changelog",
+    "tag": "h1",
+    "size": 48,
+    "weight": "400",
+    "lh": "54px",
+    "ls": "-1.92px",
+    "fam": "Inter",
+    "color": "rgb(0, 0, 0)",
+    "align": "start",
+    "tt": "none",
+    "w": 832,
+    "h": 54,
+    "x": 304,
+    "y": 256,
+    "lines": 1
+   },
+   "headingFromTop": 0,
+   "sub": {
+    "text": "The latest product updates from Neon",
+    "tag": "p",
+    "size": 20,
+    "weight": "400",
+    "lh": "27.5px",
+    "ls": "-0.4px",
+    "fam": "Inter",
+    "color": "rgb(97, 100, 107)",
+    "align": "start",
+    "tt": "none",
+    "w": 346,
+    "h": 28,
+    "x": 304,
+    "y": 324,
+    "lines": 1
+   },
+   "subGap": 14,
+   "groupBottom": 96,
+   "allHeadings": [
+    {
+     "t": "h1",
+     "s": 48,
+     "w": "400",
+     "text": "Changelog"
+    }
+   ],
+   "words": 7,
+   "snippet": "Changelog The latest product updates from Neon",
+   "f": {
+    "img": 0,
+    "bigMedia": 0,
+    "video": 0,
+    "canvas": 0,
+    "logoish": 0,
+    "squareIcons": 0,
+    "avatars": 0,
+    "marquee": false,
+    "details": 0,
+    "expanded": 0,
+    "tabs": 0,
+    "tables": 0,
+    "tr": 0,
+    "quotes": 0,
+    "prices": 0,
+    "bigNums": [],
+    "steps": 0,
+    "email": 0,
+    "inputs": 0,
+    "compliance": 0,
+    "integ": 0,
+    "faq": 0,
+    "dates": 0,
+    "sticky": false,
+    "buttons": 0,
+    "links": 1,
+    "switch": 0,
+    "checks": 2,
+    "h2count": 0
+   }
+  },
+  {
+   "idx": 2,
+   "tag": "section",
+   "id": "changelog-form",
+   "cls": "relative border border-[#C7D4CE] bg-[#E4F1EB]/40 px-5 py-5 d",
+   "top": 376,
+   "h": 131,
+   "w": 832,
+   "x": 304,
+   "bg": "lab(94.0366 -5.26896 1.34127 / 0.4)",
+   "ownBg": "lab(94.0366 -5.26896 1.34127 / 0.4)",
+   "bgImg": null,
+   "radius": "0px",
+   "cssPadT": 20,
+   "cssPadB": 20,
+   "effPadT": 21,
+   "effPadB": 21,
+   "contentL": 325,
+   "contentR": 1115,
+   "contentW": 790,
+   "containerW": 830,
+   "heading": {
+    "text": "Subscribe to our changelog. No spam, guaranteed.",
+    "tag": "h2",
+    "size": 20,
+    "weight": "500",
+    "lh": "25px",
+    "ls": "-0.5px",
+    "fam": "Inter",
+    "color": "rgb(12, 13, 13)",
+    "align": "start",
+    "tt": "none",
+    "w": 790,
+    "h": 25,
+    "x": 325,
+    "y": 397,
+    "lines": 1
+   },
+   "headingFromTop": 21,
+   "groupCtas": [
+    "Subscribe"
+   ],
+   "ctaGap": 20,
+   "groupBottom": 110,
+   "allHeadings": [
+    {
+     "t": "h2",
+     "s": 20,
+     "w": "500",
+     "text": "Subscribe to our changelog. No spam, guaranteed."
+    }
+   ],
+   "words": 8,
+   "snippet": "Subscribe to our changelog. No spam, guaranteed. Subscribe",
+   "f": {
+    "img": 1,
+    "bigMedia": 0,
+    "video": 0,
+    "canvas": 0,
+    "logoish": 0,
+    "squareIcons": 0,
+    "avatars": 0,
+    "marquee": false,
+    "details": 0,
+    "expanded": 0,
+    "tabs": 0,
+    "tables": 0,
+    "tr": 0,
+    "quotes": 0,
+    "prices": 0,
+    "bigNums": [],
+    "steps": 0,
+    "email": 1,
+    "inputs": 1,
+    "compliance": 0,
+    "integ": 0,
+    "faq": 0,
+    "dates": 0,
+    "sticky": false,
+    "buttons": 1,
+    "links": 0,
+    "switch": 0,
+    "checks": 0,
+    "h2count": 0
+   }
+  },
+  {
+   "idx": 3,
+   "tag": "article",
+   "id": "",
+   "cls": "group flex first:mt-0 lg:flex-col lg:space-y-3",
+   "top": 563,
+   "h": 2317,
+   "w": 832,
+   "x": 304,
+   "bg": "rgb(255, 255, 255)",
+   "ownBg": "rgba(0, 0, 0, 0)",
+   "bgImg": null,
+   "radius": "0px",
+   "cssPadT": 40,
+   "cssPadB": 96,
+   "effPadT": 40,
+   "effPadB": -2,
+   "contentL": 144,
+   "contentR": 1136,
+   "contentW": 992,
+   "containerW": 832,
+   "heading": {
+    "text": "All AI Gateway models now available with prepaid credits",
+    "tag": "h2",
+    "size": 28,
+    "weight": "500",
+    "lh": "35px",
+    "ls": "-1.12px",
+    "fam": "Inter",
+    "color": "rgb(0, 0, 0)",
+    "align": "start",
+    "tt": "none",
+    "w": 832,
+    "h": 35,
+    "x": 304,
+    "y": 603,
+    "lines": 1
+   },
+   "headingFromTop": 40,
+   "sub": {
+    "text": "You don't need to request access to frontier models in the Neon AI Gateway anymore. If you're on a paid plan and have prepaid credits, you can call every model ",
+    "tag": "p",
+    "size": 18,
+    "weight": "400",
+    "lh": "27px",
+    "ls": "-0.45px",
+    "fam": "Inter",
+    "color": "rgb(73, 75, 80)",
+    "align": "start",
+    "tt": "none",
+    "w": 832,
+    "h": 108,
+    "x": 304,
+    "y": 656,
+    "lines": 4
+   },
+   "subGap": 18,
+   "groupBottom": 201,
+   "headToContent": 36,
+   "allHeadings": [
+    {
+     "t": "h2",
+     "s": 28,
+     "w": "500",
+     "text": "All AI Gateway models now available with prepaid credits"
+    },
+    {
+     "t": "h2",
+     "s": 28,
+     "w": "500",
+     "text": "Try Neon's backend features with your coding agent"
+    },
+    {
+     "t": "h2",
+     "s": 28,
+     "w": "500",
+     "text": "Send feedback from the CLI and MCP Server"
+    },
+    {
+     "t": "h2",
+     "s": 28,
+     "w": "500",
+     "text": "Fixes & improvements"
+    }
+   ],
+   "words": 366,
+   "snippet": "OCT 09, 2026 All AI Gateway models now available with prepaid credits You don't need to request access to frontier models in the Neon AI Gateway anymore. If you're on a paid plan and have prepaid credits, you can call every model in the catalog, including mode",
+   "f": {
+    "img": 1,
+    "bigMedia": 1,
+    "video": 0,
+    "canvas": 0,
+    "logoish": 0,
+    "squareIcons": 0,
+    "avatars": 0,
+    "marquee": false,
+    "details": 8,
+    "expanded": 0,
+    "tabs": 0,
+    "tables": 0,
+    "tr": 0,
+    "quotes": 2,
+    "prices": 0,
+    "bigNums": [],
+    "steps": 0,
+    "email": 0,
+    "inputs": 0,
+    "compliance": 0,
+    "integ": 0,
+    "faq": 0,
+    "dates": 1,
+    "sticky": false,
+    "buttons": 1,
+    "links": 20,
+    "switch": 0,
+    "checks": 8,
+    "h2count": 4
+   }
+  },
+  {
+   "idx": 4,
+   "tag": "article",
+   "id": "",
+   "cls": "group flex first:mt-0 lg:flex-col lg:space-y-3",
+   "top": 2879,
+   "h": 2474,
+   "w": 832,
+   "x": 304,
+   "bg": "rgb(255, 255, 255)",
+   "ownBg": "rgba(0, 0, 0, 0)",
+   "bgImg": null,
+   "radius": "0px",
+   "cssPadT": 40,
+   "cssPadB": 96,
+   "effPadT": 40,
+   "effPadB": 17,
+   "contentL": 144,
+   "contentR": 1136,
+   "contentW": 992,
+   "containerW": 832,
+   "heading": {
+    "text": "More storage on the Free plan",
+    "tag": "h2",
+    "size": 28,
+    "weight": "500",
+    "lh": "35px",
+    "ls": "-1.12px",
+    "fam": "Inter",
+    "color": "rgb(0, 0, 0)",
+    "align": "start",
+    "tt": "none",
+    "w": 832,
+    "h": 35,
+    "x": 304,
+    "y": 2919,
+    "lines": 1
+   },
+   "headingFromTop": 40,
+   "groupBottom": 75,
+   "headToContent": 36,
+   "allHeadings": [
+    {
+     "t": "h2",
+     "s": 28,
+     "w": "500",
+     "text": "More storage on the Free plan"
+    },
+    {
+     "t": "h2",
+     "s": 28,
+     "w": "500",
+     "text": "Embedding models in the Neon AI Gateway"
+    },
+    {
+     "t": "h2",
+     "s": 28,
+     "w": "500",
+     "text": "Effect bindings for the Neon SDK"
+    },
+    {
+     "t": "h2",
+     "s": 28,
+     "w": "500",
+     "text": "Fixes & improvements"
+    }
+   ],
+   "cards": {
+    "n": 2,
+    "cols": 1,
+    "rows": 0,
+    "w": 832,
+    "h": 307,
+    "sizes": [
+     "832x307",
+     "832x223"
+    ],
+    "gap": null,
+    "radius": [
+     [
+      "0px",
+      2
+     ]
+    ],
+    "pad": [
+     [
+      "0px/0px",
+      2
+     ]
+    ],
+    "bg": [
+     [
+      "rgba(0, 0, 0, 0)",
+      2
+     ]
+    ],
+    "border": [
+     [
+      "1px rgb(201, 203, 207)",
+      2
+     ]
+    ],
+    "shadow": [
+     [
+      "none",
+      2
+     ]
+    ]
+   },
+   "words": 413,
+   "snippet": "OCT 02, 2026 More storage on the Free plan The Neon Free plan now gives you 1 GB of database storage per project, up from 0.5 GB. Existing projects pick up the new limit automatically. It was one of the most requested Free plan changes. The extra storage build",
+   "f": {
+    "img": 1,
+    "bigMedia": 0,
+    "video": 0,
+    "canvas": 0,
+    "logoish": 0,
+    "squareIcons": 0,
+    "avatars": 0,
+    "marquee": false,
+    "details": 14,
+    "expanded": 0,
+    "tabs": 0,
+    "tables": 0,
+    "tr": 0,
+    "quotes": 0,
+    "prices": 0,
+    "bigNums": [],
+    "steps": 0,
+    "email": 0,
+    "inputs": 0,
+    "compliance": 0,
+    "integ": 1,
+    "faq": 0,
+    "dates": 1,
+    "sticky": false,
+    "buttons": 1,
+    "links": 32,
+    "switch": 0,
+    "checks": 6,
+    "h2count": 4
+   }
+  },
+  {
+   "idx": 5,
+   "tag": "article",
+   "id": "",
+   "cls": "group flex first:mt-0 lg:flex-col lg:space-y-3",
+   "top": 5353,
+   "h": 1558,
+   "w": 832,
+   "x": 304,
+   "bg": "rgb(255, 255, 255)",
+   "ownBg": "rgba(0, 0, 0, 0)",
+   "bgImg": null,
+   "radius": "0px",
+   "cssPadT": 40,
+   "cssPadB": 96,
+   "effPadT": 40,
+   "effPadB": 96,
+   "contentL": 144,
+   "contentR": 1136,
+   "contentW": 992,
+   "containerW": 832,
+   "heading": {
+    "text": "Reset a branch's Object Storage from its parent",
+    "tag": "h2",
+    "size": 28,
+    "weight": "500",
+    "lh": "35px",
+    "ls": "-1.12px",
+    "fam": "Inter",
+    "color": "rgb(0, 0, 0)",
+    "align": "start",
+    "tt": "none",
+    "w": 832,
+    "h": 35,
+    "x": 304,
+    "y": 5393,
+    "lines": 1
+   },
+   "headingFromTop": 40,
+   "sub": {
+    "text": "Reset from parent now rolls back a branch's Object Storage along with its Postgres data. When you reset a branch, its buckets and objects return to the parent's",
+    "tag": "p",
+    "size": 18,
+    "weight": "400",
+    "lh": "27px",
+    "ls": "-0.45px",
+    "fam": "Inter",
+    "color": "rgb(73, 75, 80)",
+    "align": "start",
+    "tt": "none",
+    "w": 832,
+    "h": 81,
+    "x": 304,
+    "y": 5446,
+    "lines": 3
+   },
+   "subGap": 18,
+   "groupBottom": 174,
+   "headToContent": 355,
+   "allHeadings": [
+    {
+     "t": "h2",
+     "s": 28,
+     "w": "500",
+     "text": "Reset a branch's Object Storage from its parent"
+    },
+    {
+     "t": "h2",
+     "s": 28,
+     "w": "500",
+     "text": "Lakebase Search extensions updated"
+    },
+    {
+     "t": "h4",
+     "s": 13,
+     "w": "500",
+     "text": "NOTE"
+    },
+    {
+     "t": "h2",
+     "s": 28,
+     "w": "500",
+     "text": "Automating workloads with Neon Functions"
+    },
+    {
+     "t": "h2",
+     "s": 28,
+     "w": "500",
+     "text": "Realtime is coming to Neon"
+    }
+   ],
+   "cards": {
+    "n": 2,
+    "cols": 1,
+    "rows": 0,
+    "w": 832,
+    "h": 265,
+    "sizes": [
+     "832x174",
+     "832x265"
+    ],
+    "gap": null,
+    "radius": [
+     [
+      "0px",
+      2
+     ]
+    ],
+    "pad": [
+     [
+      "16px/18px",
+      1
+     ],
+     [
+      "0px/0px",
+      1
+     ]
+    ],
+    "bg": [
+     [
+      "rgb(250, 250, 250)",
+      1
+     ],
+     [
+      "rgba(0, 0, 0, 0)",
+      1
+     ]
+    ],
+    "border": [
+     [
+      "none",
+      1
+     ],
+     [
+      "1px rgb(201, 203, 207)",
+      1
+     ]
+    ],
+    "shadow": [
+     [
+      "none",
+      2
+     ]
+    ]
+   },
+   "words": 327,
+   "snippet": "SEP 25, 2026 Reset a branch's Object Storage from its parent Reset from parent now rolls back a branch's Object Storage along with its Postgres data. When you reset a branch, its buckets and objects return to the parent's current state, so any object storage u",
+   "f": {
+    "img": 0,
+    "bigMedia": 0,
+    "video": 0,
+    "canvas": 0,
+    "logoish": 0,
+    "squareIcons": 0,
+    "avatars": 0,
+    "marquee": false,
+    "details": 0,
+    "expanded": 0,
+    "tabs": 0,
+    "tables": 0,
+    "tr": 0,
+    "quotes": 0,
+    "prices": 0,
+    "bigNums": [],
+    "steps": 0,
+    "email": 0,
+    "inputs": 0,
+    "compliance": 0,
+    "integ": 0,
+    "faq": 0,
+    "dates": 1,
+    "sticky": false,
+    "buttons": 0,
+    "links": 11,
+    "switch": 0,
+    "checks": 4,
+    "h2count": 4
+   }
+  },
+  {
+   "idx": 6,
+   "tag": "article",
+   "id": "",
+   "cls": "group flex first:mt-0 lg:flex-col lg:space-y-3",
+   "top": 6911,
+   "h": 5543,
+   "w": 832,
+   "x": 304,
+   "bg": "rgb(255, 255, 255)",
+   "ownBg": "rgba(0, 0, 0, 0)",
+   "bgImg": null,
+   "radius": "0px",
+   "cssPadT": 40,
+   "cssPadB": 96,
+   "effPadT": 40,
+   "effPadB": -2,
+   "contentL": 144,
+   "contentR": 1136,
+   "contentW": 992,
+   "containerW": 832,
+   "heading": {
+    "text": "The Neon backend is generally available",
+    "tag": "h2",
+    "size": 28,
+    "weight": "500",
+    "lh": "35px",
+    "ls": "-1.12px",
+    "fam": "Inter",
+    "color": "rgb(0, 0, 0)",
+    "align": "start",
+    "tt": "none",
+    "w": 832,
+    "h": 35,
+    "x": 304,
+    "y": 6951,
+    "lines": 1
+   },
+   "headingFromTop": 40,
+   "sub": {
+    "text": "Neon started as serverless Postgres. Now you get the whole backend, and all of it branches. Every branch is a full copy, so a PR, preview, or agent session gets",
+    "tag": "p",
+    "size": 18,
+    "weight": "400",
+    "lh": "27px",
+    "ls": "-0.45px",
+    "fam": "Inter",
+    "color": "rgb(73, 75, 80)",
+    "align": "start",
+    "tt": "none",
+    "w": 832,
+    "h": 108,
+    "x": 304,
+    "y": 7004,
+    "lines": 4
+   },
+   "subGap": 18,
+   "groupBottom": 201,
+   "headToContent": 91,
+   "allHeadings": [
+    {
+     "t": "h2",
+     "s": 28,
+     "w": "500",
+     "text": "The Neon backend is generally available"
+    },
+    {
+     "t": "h3",
+     "s": 18,
+     "w": "500",
+     "text": "Lakebase Postgres"
+    },
+    {
+     "t": "h3",
+     "s": 18,
+     "w": "500",
+     "text": "Object Storage"
+    },
+    {
+     "t": "h3",
+     "s": 18,
+     "w": "500",
+     "text": "Auth"
+    },
+    {
+     "t": "h3",
+     "s": 18,
+     "w": "500",
+     "text": "Functions"
+    },
+    {
+     "t": "h3",
+     "s": 18,
+     "w": "500",
+     "text": "AI Gateway"
+    },
+    {
+     "t": "h3",
+     "s": 18,
+     "w": "500",
+     "text": "Data API"
+    },
+    {
+     "t": "h2",
+     "s": 28,
+     "w": "500",
+     "text": "New with the GA release"
+    },
+    {
+     "t": "h3",
+     "s": 20,
+     "w": "500",
+     "text": "Function Triggers"
+    },
+    {
+     "t": "h3",
+     "s": 20,
+     "w": "500",
+     "text": "Custom domains for Functions"
+    },
+    {
+     "t": "h3",
+     "s": 20,
+     "w": "500",
+     "text": "Prepaid credits for the AI Gateway"
+    },
+    {
+     "t": "h3",
+     "s": 20,
+     "w": "500",
+     "text": "More regions"
+    },
+    {
+     "t": "h2",
+     "s": 28,
+     "w": "500",
+     "text": "Turn on the backend when you create a project"
+    },
+    {
+     "t": "h2",
+     "s": 28,
+     "w": "500",
+     "text": "A redesigned project settings page"
+    }
+   ],
+   "cards": {
+    "n": 9,
+    "cols": 2,
+    "rows": 3,
+    "w": 406,
+    "h": 199,
+    "sizes": [
+     "406x199",
+     "406x199",
+     "406x199",
+     "406x199",
+     "406x199",
+     "406x199",
+     "832x223",
+     "832x265",
+     "832x181"
+    ],
+    "gap": 20,
+    "radius": [
+     [
+      "0px",
+      9
+     ]
+    ],
+    "pad": [
+     [
+      "20px/20px",
+      6
+     ],
+     [
+      "0px/0px",
+      3
+     ]
+    ],
+    "bg": [
+     [
+      "lab(94.0366 -5.26896 1.34127 / 0.4)",
+      6
+     ],
+     [
+      "rgba(0, 0, 0, 0)",
+      3
+     ]
+    ],
+    "border": [
+     [
+      "1px rgb(201, 203, 207)",
+      9
+     ]
+    ],
+    "shadow": [
+     [
+      "none",
+      9
+     ]
+    ]
+   },
+   "words": 779,
+   "snippet": "SEP 18, 2026 The Neon backend is generally available Neon started as serverless Postgres. Now you get the whole backend, and all of it branches. Every branch is a full copy, so a PR, preview, or agent session gets your entire backend, not just the database. Ev",
+   "f": {
+    "img": 9,
+    "bigMedia": 3,
+    "video": 0,
+    "canvas": 0,
+    "logoish": 0,
+    "squareIcons": 6,
+    "avatars": 0,
+    "marquee": false,
+    "details": 8,
+    "expanded": 0,
+    "tabs": 0,
+    "tables": 0,
+    "tr": 0,
+    "quotes": 0,
+    "prices": 0,
+    "bigNums": [],
+    "steps": 0,
+    "email": 0,
+    "inputs": 0,
+    "compliance": 1,
+    "integ": 0,
+    "faq": 0,
+    "dates": 1,
+    "sticky": false,
+    "buttons": 3,
+    "links": 25,
+    "switch": 0,
+    "checks": 15,
+    "h2count": 6
+   }
+  },
+  {
+   "idx": 7,
+   "tag": "article",
+   "id": "",
+   "cls": "group flex first:mt-0 lg:flex-col lg:space-y-3",
+   "top": 12454,
+   "h": 1787,
+   "w": 832,
+   "x": 304,
+   "bg": "rgb(255, 255, 255)",
+   "ownBg": "rgba(0, 0, 0, 0)",
+   "bgImg": null,
+   "radius": "0px",
+   "cssPadT": 40,
+   "cssPadB": 96,
+   "effPadT": 40,
+   "effPadB": 112,
+   "contentL": 144,
+   "contentR": 1136,
+   "contentW": 992,
+   "containerW": 832,
+   "heading": {
+    "text": "Claimable Neon: provisioned by agents, claimed by humans",
+    "tag": "h2",
+    "size": 28,
+    "weight": "500",
+    "lh": "35px",
+    "ls": "-1.12px",
+    "fam": "Inter",
+    "color": "rgb(0, 0, 0)",
+    "align": "start",
+    "tt": "none",
+    "w": 832,
+    "h": 35,
+    "x": 304,
+    "y": 12494,
+    "lines": 1
+   },
+   "headingFromTop": 40,
+   "sub": {
+    "text": "Claimable Neon is for developers building with agents. When your agent is mid-build, the signup, email verification, or API key it needs to provision a database",
+    "tag": "p",
+    "size": 18,
+    "weight": "400",
+    "lh": "27px",
+    "ls": "-0.45px",
+    "fam": "Inter",
+    "color": "rgb(73, 75, 80)",
+    "align": "start",
+    "tt": "none",
+    "w": 832,
+    "h": 135,
+    "x": 304,
+    "y": 12547,
+    "lines": 5
+   },
+   "subGap": 18,
+   "groupBottom": 228,
+   "headToContent": 36,
+   "allHeadings": [
+    {
+     "t": "h2",
+     "s": 28,
+     "w": "500",
+     "text": "Claimable Neon: provisioned by agents, claimed by humans"
+    },
+    {
+     "t": "h2",
+     "s": 28,
+     "w": "500",
+     "text": "Give your agent Neon tools with @neon/tools"
+    },
+    {
+     "t": "h2",
+     "s": 28,
+     "w": "500",
+     "text": "Faster queries on large computes"
+    },
+    {
+     "t": "h2",
+     "s": 28,
+     "w": "500",
+     "text": "Fixes & improvements"
+    }
+   ],
+   "cards": {
+    "n": 2,
+    "cols": 1,
+    "rows": 0,
+    "w": 832,
+    "h": 286,
+    "sizes": [
+     "832x139",
+     "832x286"
+    ],
+    "gap": null,
+    "radius": [
+     [
+      "0px",
+      2
+     ]
+    ],
+    "pad": [
+     [
+      "0px/0px",
+      2
+     ]
+    ],
+    "bg": [
+     [
+      "rgba(0, 0, 0, 0)",
+      2
+     ]
+    ],
+    "border": [
+     [
+      "1px rgb(201, 203, 207)",
+      2
+     ]
+    ],
+    "shadow": [
+     [
+      "none",
+      2
+     ]
+    ]
+   },
+   "words": 402,
+   "snippet": "SEP 11, 2026 Claimable Neon: provisioned by agents, claimed by humans Claimable Neon is for developers building with agents. When your agent is mid-build, the signup, email verification, or API key it needs to provision a database brings everything to a halt. ",
+   "f": {
+    "img": 0,
+    "bigMedia": 0,
+    "video": 0,
+    "canvas": 0,
+    "logoish": 0,
+    "squareIcons": 0,
+    "avatars": 0,
+    "marquee": false,
+    "details": 2,
+    "expanded": 0,
+    "tabs": 0,
+    "tables": 0,
+    "tr": 0,
+    "quotes": 0,
+    "prices": 0,
+    "bigNums": [],
+    "steps": 0,
+    "email": 0,
+    "inputs": 0,
+    "compliance": 0,
+    "integ": 4,
+    "faq": 0,
+    "dates": 1,
+    "sticky": false,
+    "buttons": 0,
+    "links": 15,
+    "switch": 0,
+    "checks": 3,
+    "h2count": 4
+   }
+  },
+  {
+   "idx": 8,
+   "tag": "article",
+   "id": "",
+   "cls": "group flex first:mt-0 lg:flex-col lg:space-y-3",
+   "top": 14241,
+   "h": 1843,
+   "w": 832,
+   "x": 304,
+   "bg": "rgb(255, 255, 255)",
+   "ownBg": "rgba(0, 0, 0, 0)",
+   "bgImg": null,
+   "radius": "0px",
+   "cssPadT": 40,
+   "cssPadB": 96,
+   "effPadT": 40,
+   "effPadB": 152,
+   "contentL": 144,
+   "contentR": 1136,
+   "contentW": 992,
+   "containerW": 832,
+   "heading": {
+    "text": "Neon backend in Europe, plus new AI Gateway models",
+    "tag": "h2",
+    "size": 28,
+    "weight": "500",
+    "lh": "35px",
+    "ls": "-1.12px",
+    "fam": "Inter",
+    "color": "rgb(0, 0, 0)",
+    "align": "start",
+    "tt": "none",
+    "w": 832,
+    "h": 35,
+    "x": 304,
+    "y": 14281,
+    "lines": 1
+   },
+   "headingFromTop": 40,
+   "sub": {
+    "text": "The Neon backend is now available in AWS Europe (Frankfurt) (aws-eu-central-1), alongside AWS US East (Ohio) (aws-us-east-2). If you build in Europe, you can no",
+    "tag": "p",
+    "size": 18,
+    "weight": "400",
+    "lh": "27px",
+    "ls": "-0.45px",
+    "fam": "Inter",
+    "color": "rgb(73, 75, 80)",
+    "align": "start",
+    "tt": "none",
+    "w": 832,
+    "h": 81,
+    "x": 304,
+    "y": 14334,
+    "lines": 3
+   },
+   "subGap": 18,
+   "groupBottom": 174,
+   "headToContent": 276,
+   "allHeadings": [
+    {
+     "t": "h2",
+     "s": 28,
+     "w": "500",
+     "text": "Neon backend in Europe, plus new AI Gateway models"
+    },
+    {
+     "t": "h2",
+     "s": 28,
+     "w": "500",
+     "text": "Neon is now available in Grok Bot"
+    },
+    {
+     "t": "h2",
+     "s": 28,
+     "w": "500",
+     "text": "Neon CLI updates"
+    }
+   ],
+   "words": 379,
+   "snippet": "SEP 04, 2026 Neon backend in Europe, plus new AI Gateway models The Neon backend is now available in AWS Europe (Frankfurt) (aws-eu-central-1), alongside AWS US East (Ohio) (aws-us-east-2). If you build in Europe, you can now run these services closer to your ",
+   "f": {
+    "img": 1,
+    "bigMedia": 0,
+    "video": 0,
+    "canvas": 0,
+    "logoish": 0,
+    "squareIcons": 0,
+    "avatars": 0,
+    "marquee": false,
+    "details": 0,
+    "expanded": 0,
+    "tabs": 0,
+    "tables": 0,
+    "tr": 0,
+    "quotes": 0,
+    "prices": 0,
+    "bigNums": [],
+    "steps": 0,
+    "email": 0,
+    "inputs": 0,
+    "compliance": 0,
+    "integ": 8,
+    "faq": 0,
+    "dates": 1,
+    "sticky": false,
+    "buttons": 1,
+    "links": 14,
+    "switch": 0,
+    "checks": 3,
+    "h2count": 3
+   }
+  },
+  {
+   "idx": 9,
+   "tag": "article",
+   "id": "",
+   "cls": "group flex first:mt-0 lg:flex-col lg:space-y-3",
+   "top": 16084,
+   "h": 3412,
+   "w": 832,
+   "x": 304,
+   "bg": "rgb(255, 255, 255)",
+   "ownBg": "rgba(0, 0, 0, 0)",
+   "bgImg": null,
+   "radius": "0px",
+   "cssPadT": 40,
+   "cssPadB": 96,
+   "effPadT": 40,
+   "effPadB": -2,
+   "contentL": 144,
+   "contentR": 1136,
+   "contentW": 992,
+   "containerW": 864,
+   "heading": {
+    "text": "Add Neon to your coding agent",
+    "tag": "h2",
+    "size": 28,
+    "weight": "500",
+    "lh": "35px",
+    "ls": "-1.12px",
+    "fam": "Inter",
+    "color": "rgb(0, 0, 0)",
+    "align": "start",
+    "tt": "none",
+    "w": 832,
+    "h": 35,
+    "x": 304,
+    "y": 16124,
+    "lines": 1
+   },
+   "headingFromTop": 40,
+   "sub": {
+    "text": "Three new Neon CLI commands set up Neon in coding agents like Cursor and Claude Code, without manual config steps. Each runs an interactive walkthrough, or take",
+    "tag": "p",
+    "size": 18,
+    "weight": "400",
+    "lh": "27px",
+    "ls": "-0.45px",
+    "fam": "Inter",
+    "color": "rgb(73, 75, 80)",
+    "align": "start",
+    "tt": "none",
+    "w": 832,
+    "h": 54,
+    "x": 304,
+    "y": 16177,
+    "lines": 2
+   },
+   "subGap": 18,
+   "groupBottom": 147,
+   "headToContent": 1082,
+   "allHeadings": [
+    {
+     "t": "h2",
+     "s": 28,
+     "w": "500",
+     "text": "Add Neon to your coding agent"
+    },
+    {
+     "t": "h3",
+     "s": 20,
+     "w": "500",
+     "text": "neon mcp"
+    },
+    {
+     "t": "h3",
+     "s": 20,
+     "w": "500",
+     "text": "neon skills"
+    },
+    {
+     "t": "h3",
+     "s": 20,
+     "w": "500",
+     "text": "neon plugins"
+    },
+    {
+     "t": "h4",
+     "s": 13,
+     "w": "500",
+     "text": "HAVE AN IDEA FOR THE CLI OR AGENT TOOLS?"
+    },
+    {
+     "t": "h2",
+     "s": 28,
+     "w": "500",
+     "text": "Postgres minor version rollout history now in the docs"
+    },
+    {
+     "t": "h4",
+     "s": 13,
+     "w": "500",
+     "text": "INFO"
+    },
+    {
+     "t": "h2",
+     "s": 28,
+     "w": "500",
+     "text": "Get started building on the Neon backend"
+    },
+    {
+     "t": "h2",
+     "s": 28,
+     "w": "500",
+     "text": "Connect fx to Neon's MCP server"
+    },
+    {
+     "t": "h2",
+     "s": 28,
+     "w": "500",
+     "text": "Fixes & improvements"
+    }
+   ],
+   "cards": {
+    "n": 3,
+    "cols": 1,
+    "rows": 0,
+    "w": 832,
+    "h": 131,
+    "sizes": [
+     "832x106",
+     "832x131",
+     "832x149"
+    ],
+    "gap": null,
+    "radius": [
+     [
+      "0px",
+      3
+     ]
+    ],
+    "pad": [
+     [
+      "16px/18px",
+      2
+     ],
+     [
+      "20px/20px",
+      1
+     ]
+    ],
+    "bg": [
+     [
+      "rgb(250, 250, 250)",
+      2
+     ],
+     [
+      "lab(94.0366 -5.26896 1.34127 / 0.4)",
+      1
+     ]
+    ],
+    "border": [
+     [
+      "none",
+      2
+     ],
+     [
+      "1px rgb(201, 203, 207)",
+      1
+     ]
+    ],
+    "shadow": [
+     [
+      "none",
+      3
+     ]
+    ]
+   },
+   "words": 700,
+   "snippet": "AUG 28, 2026 Add Neon to your coding agent Three new Neon CLI commands set up Neon in coding agents like Cursor and Claude Code, without manual config steps. Each runs an interactive walkthrough, or takes flags so you can script it. neon mcp Installs the Neon ",
+   "f": {
+    "img": 1,
+    "bigMedia": 0,
+    "video": 0,
+    "canvas": 0,
+    "logoish": 0,
+    "squareIcons": 0,
+    "avatars": 0,
+    "marquee": false,
+    "details": 4,
+    "expanded": 0,
+    "tabs": 0,
+    "tables": 1,
+    "tr": 2,
+    "quotes": 0,
+    "prices": 0,
+    "bigNums": [],
+    "steps": 0,
+    "email": 0,
+    "inputs": 0,
+    "compliance": 0,
+    "integ": 9,
+    "faq": 0,
+    "dates": 3,
+    "sticky": true,
+    "buttons": 1,
+    "links": 25,
+    "switch": 0,
+    "checks": 16,
+    "h2count": 5
+   }
+  },
+  {
+   "idx": 10,
+   "tag": "article",
+   "id": "",
+   "cls": "group flex first:mt-0 lg:flex-col lg:space-y-3",
+   "top": 19496,
+   "h": 2951,
+   "w": 832,
+   "x": 304,
+   "bg": "rgb(255, 255, 255)",
+   "ownBg": "rgba(0, 0, 0, 0)",
+   "bgImg": null,
+   "radius": "0px",
+   "cssPadT": 40,
+   "cssPadB": 96,
+   "effPadT": 40,
+   "effPadB": 97,
+   "contentL": 144,
+   "contentR": 1136,
+   "contentW": 992,
+   "containerW": 832,
+   "heading": {
+    "text": "Faster Lakebase Search setup",
+    "tag": "h2",
+    "size": 28,
+    "weight": "500",
+    "lh": "35px",
+    "ls": "-1.12px",
+    "fam": "Inter",
+    "color": "rgb(0, 0, 0)",
+    "align": "start",
+    "tt": "none",
+    "w": 832,
+    "h": 35,
+    "x": 304,
+    "y": 19536,
+    "lines": 1
+   },
+   "headingFromTop": 40,
+   "sub": {
+    "text": "Lakebase Search is now easier to install. You can install both Lakebase Search extensions (lakebase_vector and lakebase_text) directly with the following CREATE",
+    "tag": "p",
+    "size": 18,
+    "weight": "400",
+    "lh": "27px",
+    "ls": "-0.45px",
+    "fam": "Inter",
+    "color": "rgb(73, 75, 80)",
+    "align": "start",
+    "tt": "none",
+    "w": 832,
+    "h": 81,
+    "x": 304,
+    "y": 19589,
+    "lines": 3
+   },
+   "subGap": 18,
+   "groupBottom": 174,
+   "headToContent": 289,
+   "allHeadings": [
+    {
+     "t": "h2",
+     "s": 28,
+     "w": "500",
+     "text": "Faster Lakebase Search setup"
+    },
+    {
+     "t": "h4",
+     "s": 13,
+     "w": "500",
+     "text": "GET STARTED WITH LAKEBASE SEARCH"
+    },
+    {
+     "t": "h2",
+     "s": 28,
+     "w": "500",
+     "text": "Postgres minor version updates"
+    },
+    {
+     "t": "h2",
+     "s": 28,
+     "w": "500",
+     "text": "Neon CLI updates"
+    },
+    {
+     "t": "h4",
+     "s": 13,
+     "w": "500",
+     "text": "NOTE"
+    },
+    {
+     "t": "h2",
+     "s": 28,
+     "w": "500",
+     "text": "Neon MCP server now an official Claude connector"
+    },
+    {
+     "t": "h2",
+     "s": 28,
+     "w": "500",
+     "text": "Install Neon Agent Skills with Pi"
+    },
+    {
+     "t": "h2",
+     "s": 28,
+     "w": "500",
+     "text": "New Neon Functions guides"
+    }
+   ],
+   "cards": {
+    "n": 4,
+    "cols": 1,
+    "rows": 0,
+    "w": 832,
+    "h": 125,
+    "sizes": [
+     "832x76",
+     "832x154",
+     "832x83",
+     "832x125"
+    ],
+    "gap": null,
+    "radius": [
+     [
+      "0px",
+      4
+     ]
+    ],
+    "pad": [
+     [
+      "16px/18px",
+      2
+     ],
+     [
+      "0px/0px",
+      1
+     ],
+     [
+      "20px/20px",
+      1
+     ]
+    ],
+    "bg": [
+     [
+      "rgb(250, 250, 250)",
+      2
+     ],
+     [
+      "rgba(0, 0, 0, 0)",
+      1
+     ],
+     [
+      "lab(94.0366 -5.26896 1.34127 / 0.4)",
+      1
+     ]
+    ],
+    "border": [
+     [
+      "1px rgb(201, 203, 207)",
+      2
+     ],
+     [
+      "none",
+      2
+     ]
+    ],
+    "shadow": [
+     [
+      "none",
+      4
+     ]
+    ]
+   },
+   "words": 525,
+   "snippet": "AUG 21, 2026 Faster Lakebase Search setup Lakebase Search is now easier to install. You can install both Lakebase Search extensions (lakebase_vector and lakebase_text) directly with the following CREATE EXTENSION statements from your SQL client or the Neon SQL",
+   "f": {
+    "img": 2,
+    "bigMedia": 1,
+    "video": 0,
+    "canvas": 0,
+    "logoish": 0,
+    "squareIcons": 0,
+    "avatars": 0,
+    "marquee": false,
+    "details": 0,
+    "expanded": 0,
+    "tabs": 0,
+    "tables": 0,
+    "tr": 0,
+    "quotes": 0,
+    "prices": 0,
+    "bigNums": [],
+    "steps": 0,
+    "email": 0,
+    "inputs": 0,
+    "compliance": 0,
+    "integ": 2,
+    "faq": 0,
+    "dates": 1,
+    "sticky": false,
+    "buttons": 2,
+    "links": 20,
+    "switch": 0,
+    "checks": 13,
+    "h2count": 6
+   }
+  },
+  {
+   "idx": 11,
+   "tag": "article",
+   "id": "",
+   "cls": "group flex first:mt-0 lg:flex-col lg:space-y-3",
+   "top": 22447,
+   "h": 3010,
+   "w": 832,
+   "x": 304,
+   "bg": "rgb(255, 255, 255)",
+   "ownBg": "rgba(0, 0, 0, 0)",
+   "bgImg": null,
+   "radius": "0px",
+   "cssPadT": 40,
+   "cssPadB": 96,
+   "effPadT": 40,
+   "effPadB": 39,
+   "contentL": 144,
+   "contentR": 1136,
+   "contentW": 992,
+   "containerW": 832,
+   "heading": {
+    "text": "Electric joins Neon",
+    "tag": "h2",
+    "size": 28,
+    "weight": "500",
+    "lh": "35px",
+    "ls": "-1.12px",
+    "fam": "Inter",
+    "color": "rgb(0, 0, 0)",
+    "align": "start",
+    "tt": "none",
+    "w": 832,
+    "h": 35,
+    "x": 304,
+    "y": 22487,
+    "lines": 1
+   },
+   "headingFromTop": 40,
+   "sub": {
+    "text": "Electric, the team behind the Electric sync engine and PGlite, is joining Neon. The sync engine keeps data continuously synchronized between a central Postgres ",
+    "tag": "p",
+    "size": 18,
+    "weight": "400",
+    "lh": "27px",
+    "ls": "-0.45px",
+    "fam": "Inter",
+    "color": "rgb(73, 75, 80)",
+    "align": "start",
+    "tt": "none",
+    "w": 832,
+    "h": 108,
+    "x": 304,
+    "y": 22540,
+    "lines": 4
+   },
+   "subGap": 18,
+   "groupBottom": 201,
+   "headToContent": 514,
+   "allHeadings": [
+    {
+     "t": "h2",
+     "s": 28,
+     "w": "500",
+     "text": "Electric joins Neon"
+    },
+    {
+     "t": "h2",
+     "s": 28,
+     "w": "500",
+     "text": "Neon AI Gateway is now a Vercel AI SDK provider"
+    },
+    {
+     "t": "h4",
+     "s": 13,
+     "w": "500",
+     "text": "FREE AI GATEWAY CREDITS ON PAID PLANS"
+    },
+    {
+     "t": "h2",
+     "s": 28,
+     "w": "500",
+     "text": "Neon's skills and MCP install in any agent"
+    },
+    {
+     "t": "h3",
+     "s": 20,
+     "w": "500",
+     "text": "Support for Agent Plugins 1.0.0"
+    },
+    {
+     "t": "h2",
+     "s": 28,
+     "w": "500",
+     "text": "Neon CLI updates"
+    },
+    {
+     "t": "h2",
+     "s": 28,
+     "w": "500",
+     "text": "Inspect a database from the Neon MCP server"
+    },
+    {
+     "t": "h2",
+     "s": 28,
+     "w": "500",
+     "text": "Neon for Herdr"
+    },
+    {
+     "t": "h4",
+     "s": 13,
+     "w": "500",
+     "text": "Update your IP allowlists"
+    }
+   ],
+   "cards": {
+    "n": 4,
+    "cols": 1,
+    "rows": 0,
+    "w": 832,
+    "h": 106,
+    "sizes": [
+     "832x181",
+     "832x106",
+     "832x76",
+     "798x106"
+    ],
+    "gap": null,
+    "radius": [
+     [
+      "0px",
+      4
+     ]
+    ],
+    "pad": [
+     [
+      "0px/0px",
+      2
+     ],
+     [
+      "16px/18px",
+      1
+     ],
+     [
+      "16px/26px",
+      1
+     ]
+    ],
+    "bg": [
+     [
+      "rgba(0, 0, 0, 0)",
+      2
+     ],
+     [
+      "rgb(250, 250, 250)",
+      2
+     ]
+    ],
+    "border": [
+     [
+      "1px rgb(201, 203, 207)",
+      2
+     ],
+     [
+      "none",
+      2
+     ]
+    ],
+    "shadow": [
+     [
+      "none",
+      4
+     ]
+    ]
+   },
+   "words": 645,
+   "snippet": "AUG 14, 2026 Electric joins Neon Electric, the team behind the Electric sync engine and PGlite, is joining Neon. The sync engine keeps data continuously synchronized between a central Postgres database and connected clients such as browser tabs, mobile apps, a",
+   "f": {
+    "img": 0,
+    "bigMedia": 0,
+    "video": 0,
+    "canvas": 0,
+    "logoish": 0,
+    "squareIcons": 0,
+    "avatars": 0,
+    "marquee": false,
+    "details": 2,
+    "expanded": 0,
+    "tabs": 0,
+    "tables": 0,
+    "tr": 0,
+    "quotes": 0,
+    "prices": 0,
+    "bigNums": [],
+    "steps": 0,
+    "email": 0,
+    "inputs": 0,
+    "compliance": 0,
+    "integ": 13,
+    "faq": 0,
+    "dates": 1,
+    "sticky": false,
+    "buttons": 0,
+    "links": 19,
+    "switch": 0,
+    "checks": 11,
+    "h2count": 6
+   }
+  },
+  {
+   "idx": 12,
+   "tag": "article",
+   "id": "",
+   "cls": "group flex first:mt-0 lg:flex-col lg:space-y-3",
+   "top": 25456,
+   "h": 4486,
+   "w": 832,
+   "x": 304,
+   "bg": "rgb(255, 255, 255)",
+   "ownBg": "rgba(0, 0, 0, 0)",
+   "bgImg": null,
+   "radius": "0px",
+   "cssPadT": 40,
+   "cssPadB": 96,
+   "effPadT": 40,
+   "effPadB": 96,
+   "contentL": 144,
+   "contentR": 1149,
+   "contentW": 1005,
+   "containerW": 832,
+   "heading": {
+    "text": "A new Console layout for the Neon backend",
+    "tag": "h2",
+    "size": 28,
+    "weight": "500",
+    "lh": "35px",
+    "ls": "-1.12px",
+    "fam": "Inter",
+    "color": "rgb(0, 0, 0)",
+    "align": "start",
+    "tt": "none",
+    "w": 832,
+    "h": 35,
+    "x": 304,
+    "y": 25496,
+    "lines": 1
+   },
+   "headingFromTop": 40,
+   "sub": {
+    "text": "The Console sidebar has a new shape. Every branch-level Neon backend service now sits at the same level.",
+    "tag": "p",
+    "size": 18,
+    "weight": "400",
+    "lh": "27px",
+    "ls": "-0.45px",
+    "fam": "Inter",
+    "color": "rgb(73, 75, 80)",
+    "align": "start",
+    "tt": "none",
+    "w": 832,
+    "h": 54,
+    "x": 304,
+    "y": 25549,
+    "lines": 2
+   },
+   "subGap": 18,
+   "groupBottom": 147,
+   "headToContent": 334,
+   "allHeadings": [
+    {
+     "t": "h2",
+     "s": 28,
+     "w": "500",
+     "text": "A new Console layout for the Neon backend"
+    },
+    {
+     "t": "h4",
+     "s": 13,
+     "w": "500",
+     "text": "MORE REGIONS FOR BACKEND SERVICES COMING SOON"
+    },
+    {
+     "t": "h2",
+     "s": 28,
+     "w": "500",
+     "text": "More models on the AI Gateway"
+    },
+    {
+     "t": "h4",
+     "s": 13,
+     "w": "500",
+     "text": "SET UP THE NEON BACKEND WITH YOUR AI AGENT"
+    },
+    {
+     "t": "h2",
+     "s": 28,
+     "w": "500",
+     "text": "Project-level permissions for all orgs"
+    },
+    {
+     "t": "h4",
+     "s": 13,
+     "w": "500",
+     "text": "GET STARTED WITH PROJECT PERMISSIONS"
+    },
+    {
+     "t": "h2",
+     "s": 28,
+     "w": "500",
+     "text": "API keys and multiple accounts in the Neon CLI"
+    },
+    {
+     "t": "h4",
+     "s": 13,
+     "w": "500",
+     "text": "NEW TO THE NEON CLI?"
+    },
+    {
+     "t": "h3",
+     "s": 20,
+     "w": "500",
+     "text": "Manage API keys with neon api-keys"
+    },
+    {
+     "t": "h3",
+     "s": 20,
+     "w": "500",
+     "text": "Use more than one account with neon profile"
+    },
+    {
+     "t": "h2",
+     "s": 28,
+     "w": "500",
+     "text": "New NAT gateway IPs and VPC endpoint services in Europe (Frankfurt)"
+    },
+    {
+     "t": "h4",
+     "s": 13,
+     "w": "500",
+     "text": "UPDATE YOUR IP ALLOWLISTS"
+    }
+   ],
+   "cards": {
+    "n": 8,
+    "cols": 1,
+    "rows": 0,
+    "w": 832,
+    "h": 118,
+    "sizes": [
+     "832x143",
+     "832x118",
+     "832x233",
+     "832x82",
+     "832x107",
+     "832x97",
+     "832x97",
+     "832x130"
+    ],
+    "gap": null,
+    "radius": [
+     [
+      "0px",
+      8
+     ]
+    ],
+    "pad": [
+     [
+      "16px/18px",
+      5
+     ],
+     [
+      "0px/0px",
+      3
+     ]
+    ],
+    "bg": [
+     [
+      "rgb(250, 250, 250)",
+      5
+     ],
+     [
+      "rgba(0, 0, 0, 0)",
+      3
+     ]
+    ],
+    "border": [
+     [
+      "none",
+      5
+     ],
+     [
+      "1px rgb(201, 203, 207)",
+      3
+     ]
+    ],
+    "shadow": [
+     [
+      "none",
+      8
+     ]
+    ]
+   },
+   "words": 987,
+   "snippet": "AUG 07, 2026 A new Console layout for the Neon backend The Console sidebar has a new shape. Every branch-level Neon backend service now sits at the same level. Postgres database is everything that was in the sidebar before: Tables, SQL Editor, Backup & Restore",
+   "f": {
+    "img": 1,
+    "bigMedia": 1,
+    "video": 0,
+    "canvas": 0,
+    "logoish": 0,
+    "squareIcons": 0,
+    "avatars": 0,
+    "marquee": false,
+    "details": 0,
+    "expanded": 0,
+    "tabs": 0,
+    "tables": 0,
+    "tr": 0,
+    "quotes": 10,
+    "prices": 0,
+    "bigNums": [],
+    "steps": 0,
+    "email": 0,
+    "inputs": 0,
+    "compliance": 0,
+    "integ": 2,
+    "faq": 0,
+    "dates": 1,
+    "sticky": false,
+    "buttons": 1,
+    "links": 19,
+    "switch": 0,
+    "checks": 11,
+    "h2count": 5
+   }
+  },
+  {
+   "idx": 13,
+   "tag": "article",
+   "id": "",
+   "cls": "group flex first:mt-0 lg:flex-col lg:space-y-3",
+   "top": 29942,
+   "h": 3631,
+   "w": 832,
+   "x": 304,
+   "bg": "rgb(255, 255, 255)",
+   "ownBg": "rgba(0, 0, 0, 0)",
+   "bgImg": null,
+   "radius": "0px",
+   "cssPadT": 40,
+   "cssPadB": 96,
+   "effPadT": 40,
+   "effPadB": 0,
+   "contentL": 144,
+   "contentR": 1136,
+   "contentW": 992,
+   "containerW": 832,
+   "heading": {
+    "text": "Project-level permissions",
+    "tag": "h2",
+    "size": 28,
+    "weight": "500",
+    "lh": "35px",
+    "ls": "-1.12px",
+    "fam": "Inter",
+    "color": "rgb(0, 0, 0)",
+    "align": "start",
+    "tt": "none",
+    "w": 832,
+    "h": 35,
+    "x": 304,
+    "y": 29982,
+    "lines": 1
+   },
+   "headingFromTop": 40,
+   "sub": {
+    "text": "A feature you've been asking for is finally here. Until now, a person's access applied across your entire organization. We're excited to bring project-level per",
+    "tag": "p",
+    "size": 18,
+    "weight": "400",
+    "lh": "27px",
+    "ls": "-0.45px",
+    "fam": "Inter",
+    "color": "rgb(73, 75, 80)",
+    "align": "start",
+    "tt": "none",
+    "w": 832,
+    "h": 135,
+    "x": 304,
+    "y": 30035,
+    "lines": 5
+   },
+   "subGap": 18,
+   "groupBottom": 228,
+   "headToContent": 36,
+   "allHeadings": [
+    {
+     "t": "h2",
+     "s": 28,
+     "w": "500",
+     "text": "Project-level permissions"
+    },
+    {
+     "t": "h4",
+     "s": 13,
+     "w": "500",
+     "text": "AVAILABILITY"
+    },
+    {
+     "t": "h3",
+     "s": 20,
+     "w": "500",
+     "text": "What changes for existing organizations"
+    },
+    {
+     "t": "h2",
+     "s": 28,
+     "w": "500",
+     "text": "New guides for building on the Neon backend"
+    },
+    {
+     "t": "h4",
+     "s": 13,
+     "w": "500",
+     "text": "SET UP THE NEON BACKEND WITH YOUR AI AGENT"
+    },
+    {
+     "t": "h2",
+     "s": 28,
+     "w": "500",
+     "text": "More with Lakebase Search"
+    },
+    {
+     "t": "h2",
+     "s": 28,
+     "w": "500",
+     "text": "Fixes & improvements"
+    }
+   ],
+   "cards": {
+    "n": 4,
+    "cols": 1,
+    "rows": 0,
+    "w": 832,
+    "h": 139,
+    "sizes": [
+     "832x106",
+     "832x139",
+     "832x210",
+     "832x76"
+    ],
+    "gap": null,
+    "radius": [
+     [
+      "0px",
+      4
+     ]
+    ],
+    "pad": [
+     [
+      "16px/18px",
+      2
+     ],
+     [
+      "0px/0px",
+      2
+     ]
+    ],
+    "bg": [
+     [
+      "rgb(250, 250, 250)",
+      2
+     ],
+     [
+      "rgba(0, 0, 0, 0)",
+      2
+     ]
+    ],
+    "border": [
+     [
+      "none",
+      2
+     ],
+     [
+      "1px rgb(201, 203, 207)",
+      2
+     ]
+    ],
+    "shadow": [
+     [
+      "none",
+      4
+     ]
+    ]
+   },
+   "words": 733,
+   "snippet": "JUL 31, 2026 Project-level permissions A feature you've been asking for is finally here. Until now, a person's access applied across your entire organization. We're excited to bring project-level permissions to Neon, so you can now grant people and agents acce",
+   "f": {
+    "img": 1,
+    "bigMedia": 1,
+    "video": 0,
+    "canvas": 0,
+    "logoish": 0,
+    "squareIcons": 0,
+    "avatars": 0,
+    "marquee": false,
+    "details": 6,
+    "expanded": 0,
+    "tabs": 0,
+    "tables": 0,
+    "tr": 0,
+    "quotes": 2,
+    "prices": 0,
+    "bigNums": [],
+    "steps": 0,
+    "email": 0,
+    "inputs": 0,
+    "compliance": 0,
+    "integ": 1,
+    "faq": 0,
+    "dates": 1,
+    "sticky": false,
+    "buttons": 0,
+    "links": 18,
+    "switch": 0,
+    "checks": 7,
+    "h2count": 4
+   }
+  },
+  {
+   "idx": 14,
+   "tag": "article",
+   "id": "",
+   "cls": "group flex first:mt-0 lg:flex-col lg:space-y-3",
+   "top": 33572,
+   "h": 3446,
+   "w": 832,
+   "x": 304,
+   "bg": "rgb(255, 255, 255)",
+   "ownBg": "rgba(0, 0, 0, 0)",
+   "bgImg": null,
+   "radius": "0px",
+   "cssPadT": 40,
+   "cssPadB": 96,
+   "effPadT": 40,
+   "effPadB": 112,
+   "contentL": 144,
+   "contentR": 1136,
+   "contentW": 992,
+   "containerW": 832,
+   "heading": {
+    "text": "Debug Postgres from the terminal with neon inspect db",
+    "tag": "h2",
+    "size": 28,
+    "weight": "500",
+    "lh": "35px",
+    "ls": "-1.12px",
+    "fam": "Inter",
+    "color": "rgb(0, 0, 0)",
+    "align": "start",
+    "tt": "none",
+    "w": 832,
+    "h": 35,
+    "x": 304,
+    "y": 33612,
+    "lines": 1
+   },
+   "headingFromTop": 40,
+   "sub": {
+    "text": "You can now run read-only Postgres diagnostics straight from the Neon CLI with neon inspect db. Each subcommand runs a single, known-good query against Postgres",
+    "tag": "p",
+    "size": 18,
+    "weight": "400",
+    "lh": "27px",
+    "ls": "-0.45px",
+    "fam": "Inter",
+    "color": "rgb(73, 75, 80)",
+    "align": "start",
+    "tt": "none",
+    "w": 832,
+    "h": 135,
+    "x": 304,
+    "y": 33666,
+    "lines": 5
+   },
+   "subGap": 18,
+   "groupCtas": [
+    "CLI quickstart"
+   ],
+   "ctaGap": 80,
+   "groupBottom": 353,
+   "headToContent": 1272,
+   "allHeadings": [
+    {
+     "t": "h2",
+     "s": 28,
+     "w": "500",
+     "text": "Debug Postgres from the terminal with neon inspect db"
+    },
+    {
+     "t": "h4",
+     "s": 13,
+     "w": "500",
+     "text": "NEW TO THE NEON CLI?"
+    },
+    {
+     "t": "h2",
+     "s": 28,
+     "w": "500",
+     "text": "Manage snapshots from the Neon CLI"
+    },
+    {
+     "t": "h2",
+     "s": 28,
+     "w": "500",
+     "text": "Create projects with more control from the CLI"
+    },
+    {
+     "t": "h2",
+     "s": 28,
+     "w": "500",
+     "text": "Query Functions and Storage logs from the Neon MCP server"
+    },
+    {
+     "t": "h2",
+     "s": 28,
+     "w": "500",
+     "text": "New guides for building on the Neon backend"
+    },
+    {
+     "t": "h4",
+     "s": 13,
+     "w": "500",
+     "text": "SET UP THE NEON BACKEND WITH YOUR AI AGENT"
+    }
+   ],
+   "cards": {
+    "n": 5,
+    "cols": 1,
+    "rows": 0,
+    "w": 832,
+    "h": 97,
+    "sizes": [
+     "832x107",
+     "832x76",
+     "832x97",
+     "832x97",
+     "832x210"
+    ],
+    "gap": null,
+    "radius": [
+     [
+      "0px",
+      5
+     ]
+    ],
+    "pad": [
+     [
+      "0px/0px",
+      3
+     ],
+     [
+      "16px/18px",
+      2
+     ]
+    ],
+    "bg": [
+     [
+      "rgba(0, 0, 0, 0)",
+      3
+     ],
+     [
+      "rgb(250, 250, 250)",
+      2
+     ]
+    ],
+    "border": [
+     [
+      "1px rgb(201, 203, 207)",
+      3
+     ],
+     [
+      "none",
+      2
+     ]
+    ],
+    "shadow": [
+     [
+      "none",
+      5
+     ]
+    ]
+   },
+   "words": 823,
+   "snippet": "JUL 24, 2026 Debug Postgres from the terminal with neon inspect db You can now run read-only Postgres diagnostics straight from the Neon CLI with neon inspect db. Each subcommand runs a single, known-good query against Postgres' own statistics and catalog view",
+   "f": {
+    "img": 0,
+    "bigMedia": 0,
+    "video": 0,
+    "canvas": 0,
+    "logoish": 0,
+    "squareIcons": 0,
+    "avatars": 0,
+    "marquee": false,
+    "details": 0,
+    "expanded": 0,
+    "tabs": 0,
+    "tables": 0,
+    "tr": 0,
+    "quotes": 0,
+    "prices": 0,
+    "bigNums": [],
+    "steps": 0,
+    "email": 0,
+    "inputs": 0,
+    "compliance": 0,
+    "integ": 0,
+    "faq": 1,
+    "dates": 1,
+    "sticky": false,
+    "buttons": 0,
+    "links": 16,
+    "switch": 0,
+    "checks": 9,
+    "h2count": 5
+   }
+  },
+  {
+   "idx": 15,
+   "tag": "div",
+   "id": "",
+   "cls": "mt-[76px] flex items-center justify-between pt-3 sm:flex-col",
+   "top": 37094,
+   "h": 44,
+   "w": 832,
+   "x": 304,
+   "bg": "rgb(255, 255, 255)",
+   "ownBg": "rgba(0, 0, 0, 0)",
+   "bgImg": null,
+   "radius": "0px",
+   "cssPadT": 12,
+   "cssPadB": 0,
+   "effPadT": 12,
+   "effPadB": 0,
+   "contentL": 304,
+   "contentR": 1123,
+   "contentW": 819,
+   "words": 9,
+   "snippet": "Was this page helpful? Yes No Edit on GitHub",
+   "f": {
+    "img": 0,
+    "bigMedia": 0,
+    "video": 0,
+    "canvas": 0,
+    "logoish": 0,
+    "squareIcons": 0,
+    "avatars": 0,
+    "marquee": false,
+    "details": 0,
+    "expanded": 0,
+    "tabs": 0,
+    "tables": 0,
+    "tr": 0,
+    "quotes": 0,
+    "prices": 0,
+    "bigNums": [],
+    "steps": 0,
+    "email": 0,
+    "inputs": 0,
+    "compliance": 0,
+    "integ": 0,
+    "faq": 0,
+    "dates": 0,
+    "sticky": false,
+    "buttons": 2,
+    "links": 1,
+    "switch": 0,
+    "checks": 3,
+    "h2count": 0
+   }
+  }
+ ],
+ "header": {
+  "y": 36,
+  "h": 112,
+  "w": 1440,
+  "pos": "sticky",
+  "bg": "rgb(255, 255, 255)"
+ },
+ "topStrips": [
+  {
+   "y": 0,
+   "h": 36,
+   "w": 1440,
+   "bg": "rgb(235, 245, 240)",
+   "text": "Major update to our Free Plan: now with 1 GB of Postgres storage per project, 100 projects included",
+   "size": 14,
+   "weight": "500",
+   "color": "rgb(0, 0, 0)",
+   "links": 0
+  }
+ ],
+ "h2": [
+  {
+   "text": "Subscribe to our changelog. No spam, guaranteed.",
+   "size": 20,
+   "weight": "500",
+   "ls": "-0.5px",
+   "lh": "25px",
+   "fam": "Inter",
+   "y": 397,
+   "x": 325,
+   "w": 790,
+   "h": 25,
+   "align": "start",
+   "words": 7
+  },
+  {
+   "text": "All AI Gateway models now available with prepaid credits",
+   "size": 28,
+   "weight": "500",
+   "ls": "-1.12px",
+   "lh": "35px",
+   "fam": "Inter",
+   "y": 603,
+   "x": 304,
+   "w": 832,
+   "h": 35,
+   "align": "start",
+   "words": 9
+  },
+  {
+   "text": "Try Neon's backend features with your coding agent",
+   "size": 28,
+   "weight": "500",
+   "ls": "-1.12px",
+   "lh": "35px",
+   "fam": "Inter",
+   "y": 1316,
+   "x": 304,
+   "w": 832,
+   "h": 35,
+   "align": "start",
+   "words": 8
+  },
+  {
+   "text": "Send feedback from the CLI and MCP Server",
+   "size": 28,
+   "weight": "500",
+   "ls": "-1.12px",
+   "lh": "35px",
+   "fam": "Inter",
+   "y": 2044,
+   "x": 304,
+   "w": 832,
+   "h": 35,
+   "align": "start",
+   "words": 8
+  },
+  {
+   "text": "Fixes & improvements",
+   "size": 28,
+   "weight": "500",
+   "ls": "-1.12px",
+   "lh": "35px",
+   "fam": "Inter",
+   "y": 2451,
+   "x": 304,
+   "w": 832,
+   "h": 35,
+   "align": "start",
+   "words": 3
+  },
+  {
+   "text": "More storage on the Free plan",
+   "size": 28,
+   "weight": "500",
+   "ls": "-1.12px",
+   "lh": "35px",
+   "fam": "Inter",
+   "y": 2919,
+   "x": 304,
+   "w": 832,
+   "h": 35,
+   "align": "start",
+   "words": 6
+  },
+  {
+   "text": "Embedding models in the Neon AI Gateway",
+   "size": 28,
+   "weight": "500",
+   "ls": "-1.12px",
+   "lh": "35px",
+   "fam": "Inter",
+   "y": 3502,
+   "x": 304,
+   "w": 832,
+   "h": 35,
+   "align": "start",
+   "words": 7
+  },
+  {
+   "text": "Effect bindings for the Neon SDK",
+   "size": 28,
+   "weight": "500",
+   "ls": "-1.12px",
+   "lh": "35px",
+   "fam": "Inter",
+   "y": 4179,
+   "x": 304,
+   "w": 832,
+   "h": 35,
+   "align": "start",
+   "words": 6
+  },
+  {
+   "text": "Fixes & improvements",
+   "size": 28,
+   "weight": "500",
+   "ls": "-1.12px",
+   "lh": "35px",
+   "fam": "Inter",
+   "y": 4799,
+   "x": 304,
+   "w": 832,
+   "h": 35,
+   "align": "start",
+   "words": 3
+  },
+  {
+   "text": "Reset a branch's Object Storage from its parent",
+   "size": 28,
+   "weight": "500",
+   "ls": "-1.12px",
+   "lh": "35px",
+   "fam": "Inter",
+   "y": 5393,
+   "x": 304,
+   "w": 832,
+   "h": 35,
+   "align": "start",
+   "words": 8
+  },
+  {
+   "text": "Lakebase Search extensions updated",
+   "size": 28,
+   "weight": "500",
+   "ls": "-1.12px",
+   "lh": "35px",
+   "fam": "Inter",
+   "y": 5712,
+   "x": 304,
+   "w": 832,
+   "h": 35,
+   "align": "start",
+   "words": 4
+  },
+  {
+   "text": "Automating workloads with Neon Functions",
+   "size": 28,
+   "weight": "500",
+   "ls": "-1.12px",
+   "lh": "35px",
+   "fam": "Inter",
+   "y": 6112,
+   "x": 304,
+   "w": 832,
+   "h": 35,
+   "align": "start",
+   "words": 5
+  },
+  {
+   "text": "Realtime is coming to Neon",
+   "size": 28,
+   "weight": "500",
+   "ls": "-1.12px",
+   "lh": "35px",
+   "fam": "Inter",
+   "y": 6681,
+   "x": 304,
+   "w": 832,
+   "h": 35,
+   "align": "start",
+   "words": 5
+  },
+  {
+   "text": "The Neon backend is generally available",
+   "size": 28,
+   "weight": "500",
+   "ls": "-1.12px",
+   "lh": "35px",
+   "fam": "Inter",
+   "y": 6951,
+   "x": 304,
+   "w": 832,
+   "h": 35,
+   "align": "start",
+   "words": 6
+  },
+  {
+   "text": "New with the GA release",
+   "size": 28,
+   "weight": "500",
+   "ls": "-1.12px",
+   "lh": "35px",
+   "fam": "Inter",
+   "y": 8570,
+   "x": 304,
+   "w": 832,
+   "h": 35,
+   "align": "start",
+   "words": 5
+  },
+  {
+   "text": "Turn on the backend when you create a project",
+   "size": 28,
+   "weight": "500",
+   "ls": "-1.12px",
+   "lh": "35px",
+   "fam": "Inter",
+   "y": 10042,
+   "x": 304,
+   "w": 832,
+   "h": 35,
+   "align": "start",
+   "words": 9
+  },
+  {
+   "text": "A redesigned project settings page",
+   "size": 28,
+   "weight": "500",
+   "ls": "-1.12px",
+   "lh": "35px",
+   "fam": "Inter",
+   "y": 10716,
+   "x": 304,
+   "w": 832,
+   "h": 35,
+   "align": "start",
+   "words": 5
+  },
+  {
+   "text": "Organizations and account settings moved to the profile menu",
+   "size": 28,
+   "weight": "500",
+   "ls": "-1.12px",
+   "lh": "35px",
+   "fam": "Inter",
+   "y": 11426,
+   "x": 304,
+   "w": 832,
+   "h": 35,
+   "align": "start",
+   "words": 9
+  },
+  {
+   "text": "Fixes & improvements",
+   "size": 28,
+   "weight": "500",
+   "ls": "-1.12px",
+   "lh": "35px",
+   "fam": "Inter",
+   "y": 12071,
+   "x": 304,
+   "w": 832,
+   "h": 35,
+   "align": "start",
+   "words": 3
+  },
+  {
+   "text": "Claimable Neon: provisioned by agents, claimed by humans",
+   "size": 28,
+   "weight": "500",
+   "ls": "-1.12px",
+   "lh": "35px",
+   "fam": "Inter",
+   "y": 12494,
+   "x": 304,
+   "w": 832,
+   "h": 35,
+   "align": "start",
+   "words": 8
+  },
+  {
+   "text": "Give your agent Neon tools with @neon/tools",
+   "size": 28,
+   "weight": "500",
+   "ls": "-1.12px",
+   "lh": "35px",
+   "fam": "Inter",
+   "y": 13054,
+   "x": 304,
+   "w": 832,
+   "h": 35,
+   "align": "start",
+   "words": 7
+  },
+  {
+   "text": "Faster queries on large computes",
+   "size": 28,
+   "weight": "500",
+   "ls": "-1.12px",
+   "lh": "35px",
+   "fam": "Inter",
+   "y": 13683,
+   "x": 304,
+   "w": 832,
+   "h": 35,
+   "align": "start",
+   "words": 5
+  },
+  {
+   "text": "Fixes & improvements",
+   "size": 28,
+   "weight": "500",
+   "ls": "-1.12px",
+   "lh": "35px",
+   "fam": "Inter",
+   "y": 14029,
+   "x": 304,
+   "w": 832,
+   "h": 35,
+   "align": "start",
+   "words": 3
+  },
+  {
+   "text": "Neon backend in Europe, plus new AI Gateway models",
+   "size": 28,
+   "weight": "500",
+   "ls": "-1.12px",
+   "lh": "35px",
+   "fam": "Inter",
+   "y": 14281,
+   "x": 304,
+   "w": 832,
+   "h": 35,
+   "align": "start",
+   "words": 9
+  },
+  {
+   "text": "Neon is now available in Grok Bot",
+   "size": 28,
+   "weight": "500",
+   "ls": "-1.12px",
+   "lh": "35px",
+   "fam": "Inter",
+   "y": 14896,
+   "x": 304,
+   "w": 832,
+   "h": 35,
+   "align": "start",
+   "words": 7
+  },
+  {
+   "text": "Neon CLI updates",
+   "size": 28,
+   "weight": "500",
+   "ls": "-1.12px",
+   "lh": "35px",
+   "fam": "Inter",
+   "y": 15441,
+   "x": 304,
+   "w": 832,
+   "h": 35,
+   "align": "start",
+   "words": 3
+  },
+  {
+   "text": "Add Neon to your coding agent",
+   "size": 28,
+   "weight": "500",
+   "ls": "-1.12px",
+   "lh": "35px",
+   "fam": "Inter",
+   "y": 16124,
+   "x": 304,
+   "w": 832,
+   "h": 35,
+   "align": "start",
+   "words": 6
+  },
+  {
+   "text": "Postgres minor version rollout history now in the docs",
+   "size": 28,
+   "weight": "500",
+   "ls": "-1.12px",
+   "lh": "35px",
+   "fam": "Inter",
+   "y": 17475,
+   "x": 304,
+   "w": 832,
+   "h": 35,
+   "align": "start",
+   "words": 9
+  },
+  {
+   "text": "Get started building on the Neon backend",
+   "size": 28,
+   "weight": "500",
+   "ls": "-1.12px",
+   "lh": "35px",
+   "fam": "Inter",
+   "y": 18134,
+   "x": 304,
+   "w": 832,
+   "h": 35,
+   "align": "start",
+   "words": 7
+  },
+  {
+   "text": "Connect fx to Neon's MCP server",
+   "size": 28,
+   "weight": "500",
+   "ls": "-1.12px",
+   "lh": "35px",
+   "fam": "Inter",
+   "y": 18678,
+   "x": 304,
+   "w": 832,
+   "h": 35,
+   "align": "start",
+   "words": 6
+  },
+  {
+   "text": "Fixes & improvements",
+   "size": 28,
+   "weight": "500",
+   "ls": "-1.12px",
+   "lh": "35px",
+   "fam": "Inter",
+   "y": 19227,
+   "x": 304,
+   "w": 832,
+   "h": 35,
+   "align": "start",
+   "words": 3
+  },
+  {
+   "text": "Faster Lakebase Search setup",
+   "size": 28,
+   "weight": "500",
+   "ls": "-1.12px",
+   "lh": "35px",
+   "fam": "Inter",
+   "y": 19536,
+   "x": 304,
+   "w": 832,
+   "h": 35,
+   "align": "start",
+   "words": 4
+  },
+  {
+   "text": "Postgres minor version updates",
+   "size": 28,
+   "weight": "500",
+   "ls": "-1.12px",
+   "lh": "35px",
+   "fam": "Inter",
+   "y": 20169,
+   "x": 304,
+   "w": 832,
+   "h": 35,
+   "align": "start",
+   "words": 4
+  },
+  {
+   "text": "Neon CLI updates",
+   "size": 28,
+   "weight": "500",
+   "ls": "-1.12px",
+   "lh": "35px",
+   "fam": "Inter",
+   "y": 20410,
+   "x": 304,
+   "w": 832,
+   "h": 35,
+   "align": "start",
+   "words": 3
+  },
+  {
+   "text": "Neon MCP server now an official Claude connector",
+   "size": 28,
+   "weight": "500",
+   "ls": "-1.12px",
+   "lh": "35px",
+   "fam": "Inter",
+   "y": 20978,
+   "x": 304,
+   "w": 832,
+   "h": 35,
+   "align": "start",
+   "words": 8
+  },
+  {
+   "text": "Install Neon Agent Skills with Pi",
+   "size": 28,
+   "weight": "500",
+   "ls": "-1.12px",
+   "lh": "35px",
+   "fam": "Inter",
+   "y": 21651,
+   "x": 304,
+   "w": 832,
+   "h": 35,
+   "align": "start",
+   "words": 6
+  },
+  {
+   "text": "New Neon Functions guides",
+   "size": 28,
+   "weight": "500",
+   "ls": "-1.12px",
+   "lh": "35px",
+   "fam": "Inter",
+   "y": 21968,
+   "x": 304,
+   "w": 832,
+   "h": 35,
+   "align": "start",
+   "words": 4
+  },
+  {
+   "text": "Electric joins Neon",
+   "size": 28,
+   "weight": "500",
+   "ls": "-1.12px",
+   "lh": "35px",
+   "fam": "Inter",
+   "y": 22487,
+   "x": 304,
+   "w": 832,
+   "h": 35,
+   "align": "start",
+   "words": 3
+  },
+  {
+   "text": "Neon AI Gateway is now a Vercel AI SDK provider",
+   "size": 28,
+   "weight": "500",
+   "ls": "-1.12px",
+   "lh": "35px",
+   "fam": "Inter",
+   "y": 22965,
+   "x": 304,
+   "w": 832,
+   "h": 35,
+   "align": "start",
+   "words": 10
+  },
+  {
+   "text": "Neon's skills and MCP install in any agent",
+   "size": 28,
+   "weight": "500",
+   "ls": "-1.12px",
+   "lh": "35px",
+   "fam": "Inter",
+   "y": 23631,
+   "x": 304,
+   "w": 832,
+   "h": 35,
+   "align": "start",
+   "words": 8
+  },
+  {
+   "text": "Neon CLI updates",
+   "size": 28,
+   "weight": "500",
+   "ls": "-1.12px",
+   "lh": "35px",
+   "fam": "Inter",
+   "y": 24071,
+   "x": 304,
+   "w": 832,
+   "h": 35,
+   "align": "start",
+   "words": 3
+  },
+  {
+   "text": "Inspect a database from the Neon MCP server",
+   "size": 28,
+   "weight": "500",
+   "ls": "-1.12px",
+   "lh": "35px",
+   "fam": "Inter",
+   "y": 24611,
+   "x": 304,
+   "w": 832,
+   "h": 35,
+   "align": "start",
+   "words": 8
+  },
+  {
+   "text": "Neon for Herdr",
+   "size": 28,
+   "weight": "500",
+   "ls": "-1.12px",
+   "lh": "35px",
+   "fam": "Inter",
+   "y": 24997,
+   "x": 304,
+   "w": 832,
+   "h": 35,
+   "align": "start",
+   "words": 3
+  },
+  {
+   "text": "A new Console layout for the Neon backend",
+   "size": 28,
+   "weight": "500",
+   "ls": "-1.12px",
+   "lh": "35px",
+   "fam": "Inter",
+   "y": 25496,
+   "x": 304,
+   "w": 832,
+   "h": 35,
+   "align": "start",
+   "words": 8
+  },
+  {
+   "text": "More models on the AI Gateway",
+   "size": 28,
+   "weight": "500",
+   "ls": "-1.12px",
+   "lh": "35px",
+   "fam": "Inter",
+   "y": 26874,
+   "x": 304,
+   "w": 832,
+   "h": 35,
+   "align": "start",
+   "words": 6
+  },
+  {
+   "text": "Project-level permissions for all orgs",
+   "size": 28,
+   "weight": "500",
+   "ls": "-1.12px",
+   "lh": "35px",
+   "fam": "Inter",
+   "y": 27682,
+   "x": 304,
+   "w": 832,
+   "h": 35,
+   "align": "start",
+   "words": 5
+  },
+  {
+   "text": "API keys and multiple accounts in the Neon CLI",
+   "size": 28,
+   "weight": "500",
+   "ls": "-1.12px",
+   "lh": "35px",
+   "fam": "Inter",
+   "y": 28068,
+   "x": 304,
+   "w": 832,
+   "h": 35,
+   "align": "start",
+   "words": 9
+  },
+  {
+   "text": "New NAT gateway IPs and VPC endpoint services in Europe (Frankfurt)",
+   "size": 28,
+   "weight": "500",
+   "ls": "-1.12px",
+   "lh": "35px",
+   "fam": "Inter",
+   "y": 29421,
+   "x": 304,
+   "w": 832,
+   "h": 70,
+   "align": "start",
+   "words": 11
+  },
+  {
+   "text": "Project-level permissions",
+   "size": 28,
+   "weight": "500",
+   "ls": "-1.12px",
+   "lh": "35px",
+   "fam": "Inter",
+   "y": 29982,
+   "x": 304,
+   "w": 832,
+   "h": 35,
+   "align": "start",
+   "words": 2
+  },
+  {
+   "text": "New guides for building on the Neon backend",
+   "size": 28,
+   "weight": "500",
+   "ls": "-1.12px",
+   "lh": "35px",
+   "fam": "Inter",
+   "y": 32066,
+   "x": 304,
+   "w": 832,
+   "h": 35,
+   "align": "start",
+   "words": 8
+  },
+  {
+   "text": "More with Lakebase Search",
+   "size": 28,
+   "weight": "500",
+   "ls": "-1.12px",
+   "lh": "35px",
+   "fam": "Inter",
+   "y": 32697,
+   "x": 304,
+   "w": 832,
+   "h": 35,
+   "align": "start",
+   "words": 4
+  },
+  {
+   "text": "Fixes & improvements",
+   "size": 28,
+   "weight": "500",
+   "ls": "-1.12px",
+   "lh": "35px",
+   "fam": "Inter",
+   "y": 33246,
+   "x": 304,
+   "w": 832,
+   "h": 35,
+   "align": "start",
+   "words": 3
+  },
+  {
+   "text": "Debug Postgres from the terminal with neon inspect db",
+   "size": 28,
+   "weight": "500",
+   "ls": "-1.12px",
+   "lh": "35px",
+   "fam": "Inter",
+   "y": 33612,
+   "x": 304,
+   "w": 832,
+   "h": 35,
+   "align": "start",
+   "words": 9
+  },
+  {
+   "text": "Manage snapshots from the Neon CLI",
+   "size": 28,
+   "weight": "500",
+   "ls": "-1.12px",
+   "lh": "35px",
+   "fam": "Inter",
+   "y": 34733,
+   "x": 304,
+   "w": 832,
+   "h": 35,
+   "align": "start",
+   "words": 6
+  },
+  {
+   "text": "Create projects with more control from the CLI",
+   "size": 28,
+   "weight": "500",
+   "ls": "-1.12px",
+   "lh": "35px",
+   "fam": "Inter",
+   "y": 35467,
+   "x": 304,
+   "w": 832,
+   "h": 35,
+   "align": "start",
+   "words": 8
+  },
+  {
+   "text": "Query Functions and Storage logs from the Neon MCP server",
+   "size": 28,
+   "weight": "500",
+   "ls": "-1.12px",
+   "lh": "35px",
+   "fam": "Inter",
+   "y": 35826,
+   "x": 304,
+   "w": 832,
+   "h": 35,
+   "align": "start",
+   "words": 10
+  },
+  {
+   "text": "New guides for building on the Neon backend",
+   "size": 28,
+   "weight": "500",
+   "ls": "-1.12px",
+   "lh": "35px",
+   "fam": "Inter",
+   "y": 36400,
+   "x": 304,
+   "w": 832,
+   "h": 35,
+   "align": "start",
+   "words": 8
+  }
+ ],
+ "footer": {
+  "top": 37266,
+  "h": 430,
+  "bg": "rgb(255, 255, 255)",
+  "ownBg": "rgb(255, 255, 255)",
+  "bgImg": null,
+  "borderTop": "1px solid rgb(228, 229, 231)",
+  "radius": "0px",
+  "inner": null,
+  "cssPadT": 0,
+  "cssPadB": 0,
+  "effPadT": 33,
+  "effPadB": 32,
+  "contentL": 32,
+  "contentR": 1408,
+  "linkCount": 33,
+  "linkSize": [
+   [
+    "15",
+    31
+   ],
+   [
+    "13",
+    1
+   ],
+   [
+    "16",
+    1
+   ]
+  ],
+  "linkWeight": [
+   [
+    "400",
+    33
+   ]
+  ],
+  "linkColor": [
+   [
+    "rgb(97, 100, 107)",
+    30
+   ],
+   [
+    "rgb(24, 25, 27)",
+    2
+   ]
+  ],
+  "cols": [
+   {
+    "x": 552,
+    "y": 37339,
+    "w": 148,
+    "n": 5,
+    "pitch": 35,
+    "head": {
+     "text": "COMPANY",
+     "tag": "span",
+     "size": 12,
+     "weight": "600",
+     "lh": "12px",
+     "ls": "normal",
+     "fam": "Inter",
+     "color": "rgb(24, 25, 27)",
+     "align": "start",
+     "tt": "uppercase",
+     "w": 148,
+     "h": 12,
+     "x": 552,
+     "y": 37299,
+     "lines": 1
+    },
+    "link": {
+     "text": "About",
+     "tag": "a",
+     "size": 15,
+     "weight": "400",
+     "lh": "15px",
+     "ls": "-0.3px",
+     "fam": "Inter",
+     "color": "rgb(97, 100, 107)",
+     "align": "start",
+     "tt": "none",
+     "w": 41,
+     "h": 17,
+     "x": 552,
+     "y": 37338,
+     "lines": 1
+    }
+   },
+   {
+    "x": 788,
+    "y": 37339,
+    "w": 148,
+    "n": 7,
+    "pitch": 35,
+    "head": {
+     "text": "RESOURCES",
+     "tag": "span",
+     "size": 12,
+     "weight": "600",
+     "lh": "12px",
+     "ls": "normal",
+     "fam": "Inter",
+     "color": "rgb(24, 25, 27)",
+     "align": "start",
+     "tt": "uppercase",
+     "w": 148,
+     "h": 12,
+     "x": 788,
+     "y": 37299,
+     "lines": 1
+    },
+    "link": {
+     "text": "Docs",
+     "tag": "a",
+     "size": 15,
+     "weight": "400",
+     "lh": "15px",
+     "ls": "-0.3px",
+     "fam": "Inter",
+     "color": "rgb(97, 100, 107)",
+     "align": "start",
+     "tt": "none",
+     "w": 35,
+     "h": 17,
+     "x": 788,
+     "y": 37338,
+     "lines": 1
+    }
+   },
+   {
+    "x": 1024,
+    "y": 37339,
+    "w": 148,
+    "n": 5,
+    "pitch": 36,
+    "head": {
+     "text": "COMMUNITY",
+     "tag": "span",
+     "size": 12,
+     "weight": "600",
+     "lh": "12px",
+     "ls": "normal",
+     "fam": "Inter",
+     "color": "rgb(24, 25, 27)",
+     "align": "start",
+     "tt": "uppercase",
+     "w": 148,
+     "h": 12,
+     "x": 1024,
+     "y": 37299,
+     "lines": 1
+    },
+    "link": {
+     "text": "Discord",
+     "tag": "a",
+     "size": 15,
+     "weight": "400",
+     "lh": "15px",
+     "ls": "-0.3px",
+     "fam": "Inter",
+     "color": "rgb(97, 100, 107)",
+     "align": "start",
+     "tt": "none",
+     "w": 78,
+     "h": 18,
+     "x": 1024,
+     "y": 37338,
+     "lines": 1
+    }
+   },
+   {
+    "x": 1201,
+    "y": 37424,
+    "w": 207,
+    "n": 2,
+    "pitch": 39,
+    "head": {
+     "text": "HIPAA Compliant",
+     "tag": "a",
+     "size": 15,
+     "weight": "400",
+     "lh": "15px",
+     "ls": "-0.3px",
+     "fam": "Inter",
+     "color": "rgb(97, 100, 107)",
+     "align": "start",
+     "tt": "none",
+     "w": 134,
+     "h": 19,
+     "x": 1260,
+     "y": 37523,
+     "lines": 1
+    },
+    "link": {
+     "text": "Compliance Guide",
+     "tag": "a",
+     "size": 15,
+     "weight": "400",
+     "lh": "16.875px",
+     "ls": "-0.3px",
+     "fam": "Inter",
+     "color": "rgb(24, 25, 27)",
+     "align": "start",
+     "tt": "none",
+     "w": 190,
+     "h": 35,
+     "x": 1210,
+     "y": 37432,
+     "lines": 2
+    }
+   }
+  ],
+  "colCount": 4,
+  "brand": {
+   "x": 32,
+   "y": 33,
+   "w": 177,
+   "h": 28
+  },
+  "big": [],
+  "legal": {
+   "y": 37522,
+   "fromBottom": 120,
+   "text": "© Neon 2026. All rights reserved. Apache, Apache Spark, Spark, the Spark Logo, Apache Iceb",
+   "size": 13,
+   "color": "rgb(97, 100, 107)"
+  },
+  "email": 0,
+  "inputs": 0,
+  "status": "status",
+  "social": 5,
+  "theme": 3,
+  "lang": 0,
+  "canvas": 0,
+  "video": 0,
+  "svg": 4,
+  "animated": 0,
+  "compliance": 5,
+  "headings": [],
+  "buttons": [],
+  "text": "Neon is part of the Databricks Platform © Neon 2026. All rights reserved. Apache, Apache Spark, Spark, the Spark Logo, Apache Iceberg, Iceberg, and the Apache Iceberg logo are trademarks of the Apache Software Foundation. COMPANY About Blog Careers Contact Sales Security RESOURCES Docs Changelog Support Community Guides FAQs PostgreSQL Tutorial Startups COMMUNITY Discord GitHub X.com LinkedIn YouTube COMPLIANCE CCPA Compliant GDPR Compliant ISO 27001 Certified ISO 27701 Certified SOC 2 Certified HIPAA Compliant Compliance Guide Neon’s Sub Contractors Trust Center Neon status loading... Privacy Notice Terms of Use Neon Platform Terms Modern Slavery Statement California Privacy"
+ },
+ "url": "https://neon.com/docs/changelog",
+ "slug": "neon--changelog",
+ "kind": "changelog",
+ "site": "neon",
+ "finalUrl": "https://neon.com/docs/changelog",
+ "captured": "2026-10-10"
+}

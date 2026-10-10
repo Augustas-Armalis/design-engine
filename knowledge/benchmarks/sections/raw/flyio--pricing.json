@@ -1,0 +1,1061 @@
+{
+ "vw": 1440,
+ "pageHeight": 4178,
+ "title": "Pricing · Fly",
+ "bodyBg": "rgba(0, 0, 0, 0)",
+ "htmlBg": "rgba(0, 0, 0, 0)",
+ "bodyFont": "Fricolage Grotesque",
+ "blocks": [
+  {
+   "idx": 0,
+   "tag": "header",
+   "id": "",
+   "cls": "navbar sticky top-0 z-[500] bg-white px-4 sm:px-6 lg:px-20 f",
+   "top": 0,
+   "h": 96,
+   "w": 1440,
+   "x": 0,
+   "bg": "rgb(255, 255, 255)",
+   "ownBg": "rgb(255, 255, 255)",
+   "bgImg": null,
+   "radius": "0px",
+   "cssPadT": 0,
+   "cssPadB": 0,
+   "effPadT": 25,
+   "effPadB": 25,
+   "contentL": 80,
+   "contentR": 1360,
+   "contentW": 1280,
+   "words": 34,
+   "snippet": "Products PRODUCTS Machines Sprites Managed Postgres FEATURES Private Networking Autoscaling Zero Downtime Deploys Granular Routing Monitoring Docs Platform Docs Sprites Docs Customers Pricing Articles Blog Sprites Infra Log Community Status Log In Sign Up",
+   "f": {
+    "img": 0,
+    "bigMedia": 0,
+    "video": 0,
+    "canvas": 0,
+    "logoish": 1,
+    "squareIcons": 0,
+    "avatars": 0,
+    "marquee": false,
+    "details": 8,
+    "expanded": 1,
+    "tabs": 0,
+    "tables": 0,
+    "tr": 0,
+    "quotes": 0,
+    "prices": 0,
+    "bigNums": [],
+    "steps": 0,
+    "email": 0,
+    "inputs": 0,
+    "compliance": 0,
+    "integ": 0,
+    "faq": 0,
+    "dates": 0,
+    "sticky": false,
+    "buttons": 2,
+    "links": 20,
+    "switch": 0,
+    "checks": 7,
+    "h2count": 0
+   }
+  },
+  {
+   "idx": 1,
+   "tag": "header",
+   "id": "",
+   "cls": "relative overflow-hidden",
+   "top": 96,
+   "h": 532,
+   "w": 1440,
+   "x": 0,
+   "bg": "rgb(255, 255, 255)",
+   "ownBg": "rgba(0, 0, 0, 0)",
+   "bgImg": null,
+   "radius": "0px",
+   "cssPadT": 0,
+   "cssPadB": 0,
+   "effPadT": 128,
+   "effPadB": 128,
+   "contentL": 168,
+   "contentR": 744,
+   "contentW": 576,
+   "containerW": 1152,
+   "heading": {
+    "text": "Start for free, pay as you grow.",
+    "tag": "h1",
+    "size": 60,
+    "weight": "325",
+    "lh": "75px",
+    "ls": "normal",
+    "fam": "Mackinac",
+    "color": "rgb(34, 24, 60)",
+    "align": "start",
+    "tt": "none",
+    "w": 576,
+    "h": 150,
+    "x": 168,
+    "y": 224,
+    "lines": 2
+   },
+   "headingFromTop": 128,
+   "sub": {
+    "text": "Compute bills by the second, storage on what you provision.",
+    "tag": "p",
+    "size": 19,
+    "weight": "325",
+    "lh": "26.125px",
+    "ls": "normal",
+    "fam": "Fricolage Grotesque",
+    "color": "rgb(66, 56, 95)",
+    "align": "start",
+    "tt": "none",
+    "w": 576,
+    "h": 26,
+    "x": 168,
+    "y": 394,
+    "lines": 1
+   },
+   "subGap": 20,
+   "groupCtas": [
+    "Get Started",
+    "Calculate your cost"
+   ],
+   "ctaGap": 32,
+   "groupBottom": 404,
+   "allHeadings": [
+    {
+     "t": "h1",
+     "s": 60,
+     "w": "325",
+     "text": "Start for free, pay as you grow."
+    }
+   ],
+   "words": 22,
+   "snippet": "Start for free, pay as you grow. Compute bills by the second, storage on what you provision. Get Started Calculate your cost",
+   "f": {
+    "img": 1,
+    "bigMedia": 1,
+    "video": 0,
+    "canvas": 0,
+    "logoish": 0,
+    "squareIcons": 0,
+    "avatars": 0,
+    "marquee": false,
+    "details": 0,
+    "expanded": 0,
+    "tabs": 0,
+    "tables": 0,
+    "tr": 0,
+    "quotes": 0,
+    "prices": 0,
+    "bigNums": [],
+    "steps": 0,
+    "email": 0,
+    "inputs": 0,
+    "compliance": 0,
+    "integ": 0,
+    "faq": 0,
+    "dates": 0,
+    "sticky": false,
+    "buttons": 1,
+    "links": 2,
+    "switch": 0,
+    "checks": 0,
+    "h2count": 0
+   }
+  },
+  {
+   "idx": 2,
+   "tag": "section",
+   "id": "",
+   "cls": "mx-auto max-w-6xl px-6 py-16 md:py-24",
+   "top": 628,
+   "h": 1308,
+   "w": 1152,
+   "x": 144,
+   "bg": "rgb(255, 255, 255)",
+   "ownBg": "rgba(0, 0, 0, 0)",
+   "bgImg": null,
+   "radius": "0px",
+   "cssPadT": 96,
+   "cssPadB": 96,
+   "effPadT": 96,
+   "effPadB": 96,
+   "contentL": 168,
+   "contentR": 1272,
+   "contentW": 1104,
+   "containerW": 1104,
+   "heading": {
+    "text": "Here's what it costs",
+    "tag": "h2",
+    "size": 36,
+    "weight": "325",
+    "lh": "47.7px",
+    "ls": "normal",
+    "fam": "Mackinac",
+    "color": "rgb(34, 24, 60)",
+    "align": "start",
+    "tt": "none",
+    "w": 1104,
+    "h": 48,
+    "x": 168,
+    "y": 724,
+    "lines": 1
+   },
+   "headingFromTop": 96,
+   "groupCtas": [
+    "Machines",
+    "Sprites",
+    "Managed Postgres"
+   ],
+   "ctaGap": 16,
+   "groupBottom": 212,
+   "headToContent": 32,
+   "allHeadings": [
+    {
+     "t": "h2",
+     "s": 36,
+     "w": "325",
+     "text": "Here's what it costs"
+    },
+    {
+     "t": "h4",
+     "s": 19,
+     "w": "575",
+     "text": "Machines Compute"
+    },
+    {
+     "t": "h4",
+     "s": 19,
+     "w": "575",
+     "text": "Machines Storage and network"
+    }
+   ],
+   "cards": {
+    "n": 2,
+    "cols": 2,
+    "rows": 1,
+    "w": 544,
+    "h": 667,
+    "sizes": [
+     "544x667",
+     "544x667"
+    ],
+    "gap": 16,
+    "radius": [
+     [
+      "8px",
+      2
+     ]
+    ],
+    "pad": [
+     [
+      "32px/32px",
+      2
+     ]
+    ],
+    "bg": [
+     [
+      "rgba(0, 0, 0, 0)",
+      2
+     ]
+    ],
+    "border": [
+     [
+      "1px rgb(231, 230, 244)",
+      2
+     ]
+    ],
+    "shadow": [
+     [
+      "none",
+      2
+     ]
+    ]
+   },
+   "words": 208,
+   "snippet": "Here's what it costs Machines Sprites Managed Postgres Machines pricing Machines Compute Billed by the second while a Machine runs. Prices for Region for compute prices Secaucus Ashburn Toronto San Jose Los Angeles Dallas Chicago Amsterdam Stockholm Paris Lond",
+   "f": {
+    "img": 2,
+    "bigMedia": 0,
+    "video": 0,
+    "canvas": 0,
+    "logoish": 0,
+    "squareIcons": 0,
+    "avatars": 0,
+    "marquee": false,
+    "details": 0,
+    "expanded": 0,
+    "tabs": 3,
+    "tables": 6,
+    "tr": 39,
+    "quotes": 0,
+    "prices": 15,
+    "bigNums": [],
+    "steps": 0,
+    "email": 0,
+    "inputs": 0,
+    "compliance": 0,
+    "integ": 0,
+    "faq": 0,
+    "dates": 0,
+    "sticky": false,
+    "buttons": 6,
+    "links": 2,
+    "switch": 2,
+    "checks": 0,
+    "h2count": 1
+   }
+  },
+  {
+   "idx": 3,
+   "tag": "section",
+   "id": "",
+   "cls": "border-y border-navy-200 bg-violet-50 px-6 py-16 md:py-20",
+   "top": 1936,
+   "h": 805,
+   "w": 1440,
+   "x": 0,
+   "bg": "rgb(245, 243, 255)",
+   "ownBg": "rgb(245, 243, 255)",
+   "bgImg": null,
+   "radius": "0px",
+   "cssPadT": 80,
+   "cssPadB": 80,
+   "effPadT": 81,
+   "effPadB": 114,
+   "contentL": 144,
+   "contentR": 1296,
+   "contentW": 1152,
+   "containerW": 1152,
+   "heading": {
+    "text": "Support",
+    "tag": "h2",
+    "size": 36,
+    "weight": "325",
+    "lh": "47.7px",
+    "ls": "normal",
+    "fam": "Mackinac",
+    "color": "rgb(34, 24, 60)",
+    "align": "start",
+    "tt": "none",
+    "w": 1152,
+    "h": 48,
+    "x": 144,
+    "y": 2017,
+    "lines": 1
+   },
+   "headingFromTop": 81,
+   "sub": {
+    "text": "Community support is free and always has been. The paid plans add an easily nerd-sniped support team that feels like an extension of your own.",
+    "tag": "p",
+    "size": 17,
+    "weight": "325",
+    "lh": "25.5px",
+    "ls": "normal",
+    "fam": "Fricolage Grotesque",
+    "color": "rgb(86, 76, 115)",
+    "align": "start",
+    "tt": "none",
+    "w": 1152,
+    "h": 26,
+    "x": 144,
+    "y": 2081,
+    "lines": 1
+   },
+   "subGap": 16,
+   "groupBottom": 170,
+   "headToContent": 32,
+   "allHeadings": [
+    {
+     "t": "h2",
+     "s": 36,
+     "w": "325",
+     "text": "Support"
+    },
+    {
+     "t": "h3",
+     "s": 19,
+     "w": "575",
+     "text": "Standard"
+    },
+    {
+     "t": "h3",
+     "s": 19,
+     "w": "575",
+     "text": "Premium"
+    },
+    {
+     "t": "h3",
+     "s": 19,
+     "w": "575",
+     "text": "Enterprise"
+    }
+   ],
+   "cards": {
+    "n": 3,
+    "cols": 3,
+    "rows": 1,
+    "w": 373,
+    "h": 522,
+    "sizes": [
+     "373x522",
+     "373x522",
+     "373x522"
+    ],
+    "gap": 16,
+    "radius": [
+     [
+      "8px",
+      3
+     ]
+    ],
+    "pad": [
+     [
+      "32px/32px",
+      3
+     ]
+    ],
+    "bg": [
+     [
+      "rgb(255, 255, 255)",
+      3
+     ]
+    ],
+    "border": [
+     [
+      "1px rgb(231, 230, 244)",
+      3
+     ]
+    ],
+    "shadow": [
+     [
+      "none",
+      3
+     ]
+    ]
+   },
+   "words": 122,
+   "snippet": "Support Community support is free and always has been. The paid plans add an easily nerd-sniped support team that feels like an extension of your own. Standard $29 / mo Basic support for single developers and small teams. Great for personal projects and startu",
+   "f": {
+    "img": 0,
+    "bigMedia": 0,
+    "video": 0,
+    "canvas": 0,
+    "logoish": 0,
+    "squareIcons": 0,
+    "avatars": 0,
+    "marquee": false,
+    "details": 0,
+    "expanded": 0,
+    "tabs": 0,
+    "tables": 0,
+    "tr": 0,
+    "quotes": 0,
+    "prices": 6,
+    "bigNums": [],
+    "steps": 0,
+    "email": 0,
+    "inputs": 0,
+    "compliance": 0,
+    "integ": 1,
+    "faq": 0,
+    "dates": 0,
+    "sticky": false,
+    "buttons": 0,
+    "links": 0,
+    "switch": 0,
+    "checks": 0,
+    "h2count": 1
+   }
+  },
+  {
+   "idx": 4,
+   "tag": "section",
+   "id": "",
+   "cls": "px-6 pt-16 text-center md:pt-20",
+   "top": 2741,
+   "h": 513,
+   "w": 1440,
+   "x": 0,
+   "bg": "rgb(255, 255, 255)",
+   "ownBg": "rgba(0, 0, 0, 0)",
+   "bgImg": null,
+   "radius": "0px",
+   "cssPadT": 80,
+   "cssPadB": 0,
+   "effPadT": 80,
+   "effPadB": 0,
+   "contentL": 336,
+   "contentR": 1104,
+   "contentW": 768,
+   "containerW": 768,
+   "heading": {
+    "text": "Compliance",
+    "tag": "h2",
+    "size": 36,
+    "weight": "325",
+    "lh": "47.7px",
+    "ls": "normal",
+    "fam": "Mackinac",
+    "color": "rgb(34, 24, 60)",
+    "align": "center",
+    "tt": "none",
+    "w": 768,
+    "h": 48,
+    "x": 336,
+    "y": 3009,
+    "lines": 1
+   },
+   "headingFromTop": 268,
+   "sub": {
+    "text": "HIPAA package at $99/mo, with the BAA pre-signed so you are not waiting on legal to start building.",
+    "tag": "p",
+    "size": 17,
+    "weight": "325",
+    "lh": "25.5px",
+    "ls": "normal",
+    "fam": "Fricolage Grotesque",
+    "color": "rgb(86, 76, 115)",
+    "align": "center",
+    "tt": "none",
+    "w": 768,
+    "h": 26,
+    "x": 336,
+    "y": 3073,
+    "lines": 1
+   },
+   "subGap": 16,
+   "groupCtas": [
+    "Add compliance"
+   ],
+   "ctaGap": 84,
+   "groupBottom": 483,
+   "allHeadings": [
+    {
+     "t": "h2",
+     "s": 36,
+     "w": "325",
+     "text": "Compliance"
+    }
+   ],
+   "words": 34,
+   "snippet": "Compliance HIPAA package at $99/mo, with the BAA pre-signed so you are not waiting on legal to start building. SOC 2 Type II DPA available BAA pre-signed Add compliance Available on any paid plan.",
+   "f": {
+    "img": 1,
+    "bigMedia": 0,
+    "video": 0,
+    "canvas": 0,
+    "logoish": 0,
+    "squareIcons": 0,
+    "avatars": 0,
+    "marquee": false,
+    "details": 0,
+    "expanded": 0,
+    "tabs": 0,
+    "tables": 0,
+    "tr": 0,
+    "quotes": 0,
+    "prices": 2,
+    "bigNums": [],
+    "steps": 0,
+    "email": 0,
+    "inputs": 0,
+    "compliance": 2,
+    "integ": 0,
+    "faq": 0,
+    "dates": 0,
+    "sticky": false,
+    "buttons": 1,
+    "links": 1,
+    "switch": 0,
+    "checks": 0,
+    "h2count": 1
+   }
+  },
+  {
+   "idx": 5,
+   "tag": "section",
+   "id": "",
+   "cls": "mx-auto max-w-6xl px-6 py-16 md:py-20",
+   "top": 3254,
+   "h": 445,
+   "w": 1152,
+   "x": 144,
+   "bg": "rgb(255, 255, 255)",
+   "ownBg": "rgba(0, 0, 0, 0)",
+   "bgImg": null,
+   "radius": "0px",
+   "cssPadT": 80,
+   "cssPadB": 80,
+   "effPadT": 113,
+   "effPadB": 113,
+   "contentL": 201,
+   "contentR": 1239,
+   "contentW": 1038,
+   "containerW": 1104,
+   "heading": {
+    "text": "Startup program",
+    "tag": "h3",
+    "size": 19,
+    "weight": "575",
+    "lh": "28.5px",
+    "ls": "normal",
+    "fam": "Fricolage Grotesque",
+    "color": "rgb(34, 24, 60)",
+    "align": "start",
+    "tt": "none",
+    "w": 478,
+    "h": 29,
+    "x": 201,
+    "y": 3471,
+    "lines": 1
+   },
+   "headingFromTop": 217,
+   "sub": {
+    "text": "Up to $15,000 in credit for eligible early-stage companies, plus a direct line to our team.",
+    "tag": "p",
+    "size": 14.5,
+    "weight": "325",
+    "lh": "20.3px",
+    "ls": "normal",
+    "fam": "Fricolage Grotesque",
+    "color": "rgb(86, 76, 115)",
+    "align": "start",
+    "tt": "none",
+    "w": 478,
+    "h": 41,
+    "x": 201,
+    "y": 3507,
+    "lines": 2
+   },
+   "subGap": 8,
+   "groupBottom": 294,
+   "allHeadings": [
+    {
+     "t": "h3",
+     "s": 19,
+     "w": "575",
+     "text": "Startup program"
+    },
+    {
+     "t": "h3",
+     "s": 19,
+     "w": "575",
+     "text": "Custom plan"
+    }
+   ],
+   "cards": {
+    "n": 2,
+    "cols": 2,
+    "rows": 1,
+    "w": 544,
+    "h": 285,
+    "sizes": [
+     "544x285",
+     "544x285"
+    ],
+    "gap": 16,
+    "radius": [
+     [
+      "8px",
+      2
+     ]
+    ],
+    "pad": [
+     [
+      "32px/32px",
+      2
+     ]
+    ],
+    "bg": [
+     [
+      "rgba(0, 0, 0, 0)",
+      2
+     ]
+    ],
+    "border": [
+     [
+      "1px rgb(231, 230, 244)",
+      2
+     ]
+    ],
+    "shadow": [
+     [
+      "none",
+      2
+     ]
+    ]
+   },
+   "words": 39,
+   "snippet": "Startup program Up to $15,000 in credit for eligible early-stage companies, plus a direct line to our team. Apply for credit Custom plan Committed spend, volume discounts, invoicing and dedicated capacity. Tell us what you are running. Contact us",
+   "f": {
+    "img": 0,
+    "bigMedia": 0,
+    "video": 0,
+    "canvas": 0,
+    "logoish": 0,
+    "squareIcons": 0,
+    "avatars": 0,
+    "marquee": false,
+    "details": 0,
+    "expanded": 0,
+    "tabs": 0,
+    "tables": 0,
+    "tr": 0,
+    "quotes": 0,
+    "prices": 1,
+    "bigNums": [],
+    "steps": 0,
+    "email": 0,
+    "inputs": 0,
+    "compliance": 0,
+    "integ": 0,
+    "faq": 0,
+    "dates": 0,
+    "sticky": false,
+    "buttons": 0,
+    "links": 2,
+    "switch": 0,
+    "checks": 0,
+    "h2count": 0
+   }
+  }
+ ],
+ "header": {
+  "y": 0,
+  "h": 96,
+  "w": 1440,
+  "pos": "sticky",
+  "bg": "rgb(255, 255, 255)"
+ },
+ "topStrips": [],
+ "h2": [
+  {
+   "text": "Here's what it costs",
+   "size": 36,
+   "weight": "325",
+   "ls": "normal",
+   "lh": "47.7px",
+   "fam": "Mackinac",
+   "y": 724,
+   "x": 168,
+   "w": 1104,
+   "h": 48,
+   "align": "start",
+   "words": 4
+  },
+  {
+   "text": "Support",
+   "size": 36,
+   "weight": "325",
+   "ls": "normal",
+   "lh": "47.7px",
+   "fam": "Mackinac",
+   "y": 2017,
+   "x": 144,
+   "w": 1152,
+   "h": 48,
+   "align": "start",
+   "words": 1
+  },
+  {
+   "text": "Compliance",
+   "size": 36,
+   "weight": "325",
+   "ls": "normal",
+   "lh": "47.7px",
+   "fam": "Mackinac",
+   "y": 3009,
+   "x": 336,
+   "w": 768,
+   "h": 48,
+   "align": "center",
+   "words": 1
+  }
+ ],
+ "footer": {
+  "top": 3699,
+  "h": 479,
+  "bg": "rgb(25, 16, 52)",
+  "ownBg": "rgb(25, 16, 52)",
+  "bgImg": "linear-gradient(to right bottom, rgba(18, 18, 38, 0.5), rgba(34, 24, 60, 0.5), r",
+  "borderTop": "0px solid rgb(231, 230, 244)",
+  "radius": "0px",
+  "inner": null,
+  "cssPadT": 80,
+  "cssPadB": 32,
+  "effPadT": 80,
+  "effPadB": 32,
+  "contentL": 0,
+  "contentR": 1440,
+  "linkCount": 20,
+  "linkSize": [
+   [
+    "14.5",
+    20
+   ]
+  ],
+  "linkWeight": [
+   [
+    "450",
+    19
+   ],
+   [
+    "325",
+    1
+   ]
+  ],
+  "linkColor": [
+   [
+    "rgb(163, 154, 193)",
+    20
+   ]
+  ],
+  "cols": [
+   {
+    "x": 376,
+    "y": 3809,
+    "w": 61,
+    "n": 4,
+    "pitch": 24,
+    "head": {
+     "text": "COMPANY",
+     "tag": "dt",
+     "size": 12,
+     "weight": "575",
+     "lh": "18px",
+     "ls": "0.6px",
+     "fam": "Fricolage Grotesque",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "tt": "uppercase",
+     "w": 61,
+     "h": 18,
+     "x": 376,
+     "y": 3779,
+     "lines": 1
+    },
+    "link": {
+     "text": "About",
+     "tag": "a",
+     "size": 14.5,
+     "weight": "450",
+     "lh": "24px",
+     "ls": "normal",
+     "fam": "Fricolage Grotesque",
+     "color": "rgb(163, 154, 193)",
+     "align": "start",
+     "tt": "none",
+     "w": 40,
+     "h": 24,
+     "x": 376,
+     "y": 3809,
+     "lines": 1
+    }
+   },
+   {
+    "x": 578,
+    "y": 3809,
+    "w": 58,
+    "n": 3,
+    "pitch": 24,
+    "head": {
+     "text": "ARTICLES",
+     "tag": "dt",
+     "size": 12,
+     "weight": "575",
+     "lh": "18px",
+     "ls": "0.6px",
+     "fam": "Fricolage Grotesque",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "tt": "uppercase",
+     "w": 58,
+     "h": 18,
+     "x": 578,
+     "y": 3779,
+     "lines": 1
+    },
+    "link": {
+     "text": "Blog",
+     "tag": "a",
+     "size": 14.5,
+     "weight": "450",
+     "lh": "24px",
+     "ls": "normal",
+     "fam": "Fricolage Grotesque",
+     "color": "rgb(163, 154, 193)",
+     "align": "start",
+     "tt": "none",
+     "w": 29,
+     "h": 24,
+     "x": 578,
+     "y": 3809,
+     "lines": 1
+    }
+   },
+   {
+    "x": 754,
+    "y": 3809,
+    "w": 108,
+    "n": 5,
+    "pitch": 24,
+    "head": {
+     "text": "RESOURCES",
+     "tag": "dt",
+     "size": 12,
+     "weight": "575",
+     "lh": "18px",
+     "ls": "0.6px",
+     "fam": "Fricolage Grotesque",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "tt": "uppercase",
+     "w": 108,
+     "h": 18,
+     "x": 754,
+     "y": 3779,
+     "lines": 1
+    },
+    "link": {
+     "text": "Docs",
+     "tag": "a",
+     "size": 14.5,
+     "weight": "450",
+     "lh": "24px",
+     "ls": "normal",
+     "fam": "Fricolage Grotesque",
+     "color": "rgb(163, 154, 193)",
+     "align": "start",
+     "tt": "none",
+     "w": 33,
+     "h": 24,
+     "x": 754,
+     "y": 3809,
+     "lines": 1
+    }
+   },
+   {
+    "x": 969,
+    "y": 3809,
+    "w": 77,
+    "n": 3,
+    "pitch": 24,
+    "head": {
+     "text": "CONTACT",
+     "tag": "dt",
+     "size": 12,
+     "weight": "575",
+     "lh": "18px",
+     "ls": "0.6px",
+     "fam": "Fricolage Grotesque",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "tt": "uppercase",
+     "w": 77,
+     "h": 18,
+     "x": 969,
+     "y": 3779,
+     "lines": 1
+    },
+    "link": {
+     "text": "GitHub",
+     "tag": "a",
+     "size": 14.5,
+     "weight": "450",
+     "lh": "24px",
+     "ls": "normal",
+     "fam": "Fricolage Grotesque",
+     "color": "rgb(163, 154, 193)",
+     "align": "start",
+     "tt": "none",
+     "w": 45,
+     "h": 24,
+     "x": 969,
+     "y": 3809,
+     "lines": 1
+    }
+   },
+   {
+    "x": 1134,
+    "y": 3809,
+    "w": 147,
+    "n": 4,
+    "pitch": 24,
+    "head": {
+     "text": "LEGAL",
+     "tag": "dt",
+     "size": 12,
+     "weight": "575",
+     "lh": "18px",
+     "ls": "0.6px",
+     "fam": "Fricolage Grotesque",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "tt": "uppercase",
+     "w": 147,
+     "h": 18,
+     "x": 1134,
+     "y": 3779,
+     "lines": 1
+    },
+    "link": {
+     "text": "Security",
+     "tag": "a",
+     "size": 14.5,
+     "weight": "450",
+     "lh": "24px",
+     "ls": "normal",
+     "fam": "Fricolage Grotesque",
+     "color": "rgb(163, 154, 193)",
+     "align": "start",
+     "tt": "none",
+     "w": 56,
+     "h": 24,
+     "x": 1134,
+     "y": 3809,
+     "lines": 1
+    }
+   }
+  ],
+  "colCount": 5,
+  "brand": {
+   "x": 152,
+   "y": 80,
+   "w": 111,
+   "h": 36
+  },
+  "big": [],
+  "legal": {
+   "y": 4128,
+   "fromBottom": 32,
+   "text": "Copyright © 2026 Fly.io",
+   "size": 12,
+   "color": "rgb(163, 154, 193)"
+  },
+  "email": 1,
+  "inputs": 7,
+  "status": "status",
+  "social": 2,
+  "theme": 0,
+  "lang": 0,
+  "canvas": 0,
+  "video": 0,
+  "svg": 1,
+  "animated": 0,
+  "compliance": 0,
+  "headings": [],
+  "buttons": [
+   "Subscribe"
+  ],
+  "text": "COMPANY About News Pricing Jobs ARTICLES Blog Sprites Infra Log RESOURCES Docs Customers Support Support Metrics Status CONTACT GitHub Twitter Community LEGAL Security Privacy policy Terms of service Acceptable Use Policy Cookie preferences SIGN UP TO THE FLY.IO NEWSLETTER What we shipped, what we learned, like ... stuff you put in a newsletter. Get it monthly. Your name Email address Subscribe Copyright © 2026 Fly.io"
+ },
+ "url": "https://fly.io/pricing",
+ "slug": "flyio--pricing",
+ "kind": "pricing",
+ "site": "flyio",
+ "finalUrl": "https://fly.io/pricing/",
+ "captured": "2026-10-10"
+}

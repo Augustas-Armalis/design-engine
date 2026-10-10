@@ -1,0 +1,1192 @@
+{
+ "vw": 1440,
+ "pageHeight": 7757,
+ "title": "Pricing — Neon",
+ "bodyBg": "rgb(0, 0, 0)",
+ "htmlBg": "rgba(0, 0, 0, 0)",
+ "bodyFont": "Inter",
+ "blocks": [
+  {
+   "idx": 0,
+   "tag": "section",
+   "id": "",
+   "cls": "hero overflow-hidden pt-40 safe-paddings xl:pt-32 lg:pt-[52p",
+   "top": 36,
+   "h": 1311,
+   "w": 1440,
+   "x": 0,
+   "bg": "rgb(0, 0, 0)",
+   "ownBg": "rgba(0, 0, 0, 0)",
+   "bgImg": null,
+   "radius": "0px",
+   "cssPadT": 160,
+   "cssPadB": 0,
+   "effPadT": 160,
+   "effPadB": 21,
+   "contentL": 265,
+   "contentR": 1199,
+   "contentW": 934,
+   "containerW": 960,
+   "heading": {
+    "text": "Neon pricing",
+    "tag": "h1",
+    "size": 60,
+    "weight": "400",
+    "lh": "67.5px",
+    "ls": "-2.4px",
+    "fam": "Inter",
+    "color": "rgb(255, 255, 255)",
+    "align": "center",
+    "tt": "none",
+    "w": 335,
+    "h": 68,
+    "x": 552,
+    "y": 196,
+    "lines": 1
+   },
+   "headingFromTop": 160,
+   "sub": {
+    "text": "Get started for free. Pay per usage as you grow.",
+    "tag": "p",
+    "size": 20,
+    "weight": "400",
+    "lh": "30px",
+    "ls": "-0.4px",
+    "fam": "Inter",
+    "color": "rgb(148, 151, 158)",
+    "align": "center",
+    "tt": "none",
+    "w": 433,
+    "h": 30,
+    "x": 503,
+    "y": 280,
+    "lines": 1
+   },
+   "subGap": 16,
+   "groupBottom": 274,
+   "headToContent": 64,
+   "allHeadings": [
+    {
+     "t": "h1",
+     "s": 60,
+     "w": "400",
+     "text": "Neon pricing"
+    },
+    {
+     "t": "h3",
+     "s": 14,
+     "w": "500",
+     "text": "FREE"
+    },
+    {
+     "t": "h4",
+     "s": 28,
+     "w": "400",
+     "text": "$0"
+    },
+    {
+     "t": "h3",
+     "s": 14,
+     "w": "500",
+     "text": "LAUNCH"
+    },
+    {
+     "t": "h4",
+     "s": 28,
+     "w": "400",
+     "text": "Usage-based"
+    },
+    {
+     "t": "h3",
+     "s": 14,
+     "w": "500",
+     "text": "SCALE"
+    },
+    {
+     "t": "h4",
+     "s": 28,
+     "w": "400",
+     "text": "Usage-based"
+    },
+    {
+     "t": "h2",
+     "s": 24,
+     "w": "400",
+     "text": "Special programs"
+    },
+    {
+     "t": "h3",
+     "s": 20,
+     "w": "400",
+     "text": "App generation platforms"
+    },
+    {
+     "t": "h3",
+     "s": 20,
+     "w": "400",
+     "text": "Early-stage startups"
+    },
+    {
+     "t": "h3",
+     "s": 20,
+     "w": "400",
+     "text": "Open source on Neon"
+    }
+   ],
+   "cards": {
+    "n": 2,
+    "cols": 1,
+    "rows": 0,
+    "w": 960,
+    "h": 661,
+    "sizes": [
+     "960x661",
+     "960x288"
+    ],
+    "gap": null,
+    "radius": [
+     [
+      "0px",
+      2
+     ]
+    ],
+    "pad": [
+     [
+      "0px/0px",
+      2
+     ]
+    ],
+    "bg": [
+     [
+      "rgba(0, 0, 0, 0)",
+      2
+     ]
+    ],
+    "border": [
+     [
+      "1px rgb(73, 75, 80)",
+      2
+     ]
+    ],
+    "shadow": [
+     [
+      "none",
+      2
+     ]
+    ]
+   },
+   "words": 217,
+   "snippet": "Neon pricing Get started for free. Pay per usage as you grow. Neon pricing plans FREE $0 Build and learn free with no time limits and no credit card required. Try Neon LAKEBASE POSTGRES 100 projects 100 CU-hrs monthly per project 1 GB of storage per project Si",
+   "f": {
+    "img": 1,
+    "bigMedia": 0,
+    "video": 0,
+    "canvas": 0,
+    "logoish": 0,
+    "squareIcons": 0,
+    "avatars": 0,
+    "marquee": false,
+    "details": 0,
+    "expanded": 2,
+    "tabs": 0,
+    "tables": 0,
+    "tr": 0,
+    "quotes": 0,
+    "prices": 10,
+    "bigNums": [],
+    "steps": 0,
+    "email": 0,
+    "inputs": 0,
+    "compliance": 1,
+    "integ": 0,
+    "faq": 0,
+    "dates": 0,
+    "sticky": false,
+    "buttons": 3,
+    "links": 6,
+    "switch": 1,
+    "checks": 5,
+    "h2count": 0
+   }
+  },
+  {
+   "idx": 1,
+   "tag": "header",
+   "id": "",
+   "cls": "header top-0 right-0 left-0 z-50 flex h-16 w-full items-cent",
+   "top": 36,
+   "h": 64,
+   "w": 1440,
+   "x": 0,
+   "bg": "rgb(0, 0, 0)",
+   "ownBg": "rgb(0, 0, 0)",
+   "bgImg": null,
+   "radius": "0px",
+   "cssPadT": 0,
+   "cssPadB": 0,
+   "effPadT": 14,
+   "effPadB": 14,
+   "contentL": 32,
+   "contentR": 1408,
+   "contentW": 1376,
+   "cards": {
+    "n": 3,
+    "cols": 1,
+    "rows": 0,
+    "w": 330,
+    "h": 112,
+    "sizes": [
+     "320x340",
+     "330x112",
+     "330x112"
+    ],
+    "gap": null,
+    "radius": [
+     [
+      "0px",
+      3
+     ]
+    ],
+    "pad": [
+     [
+      "16px/16px",
+      2
+     ],
+     [
+      "24px/24px",
+      1
+     ]
+    ],
+    "bg": [
+     [
+      "rgb(0, 0, 0)",
+      3
+     ]
+    ],
+    "border": [
+     [
+      "none",
+      2
+     ],
+     [
+      "1px rgb(24, 25, 27)",
+      1
+     ]
+    ],
+    "shadow": [
+     [
+      "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(48, 50, 54) 0p",
+      2
+     ],
+     [
+      "none",
+      1
+     ]
+    ]
+   },
+   "words": 187,
+   "snippet": "Neon Product Solutions Docs Pricing Resources CORE PRIMITIVES Lakebase Postgres Serverless Postgres database Object Storage S3-compatible storage that branches Functions Serverless compute next to your data Managed Better Auth Authentication built into your da",
+   "f": {
+    "img": 2,
+    "bigMedia": 0,
+    "video": 0,
+    "canvas": 0,
+    "logoish": 1,
+    "squareIcons": 0,
+    "avatars": 0,
+    "marquee": false,
+    "details": 0,
+    "expanded": 3,
+    "tabs": 0,
+    "tables": 0,
+    "tr": 0,
+    "quotes": 0,
+    "prices": 0,
+    "bigNums": [],
+    "steps": 0,
+    "email": 0,
+    "inputs": 0,
+    "compliance": 0,
+    "integ": 2,
+    "faq": 0,
+    "dates": 0,
+    "sticky": false,
+    "buttons": 4,
+    "links": 34,
+    "switch": 0,
+    "checks": 23,
+    "h2count": 0
+   }
+  },
+  {
+   "idx": 2,
+   "tag": "section",
+   "id": "plans",
+   "cls": "plans px-safe mt-[200px] scroll-mt-5 px-safe xl:mt-[184px] l",
+   "top": 1675,
+   "h": 2560,
+   "w": 1440,
+   "x": 0,
+   "bg": "rgb(0, 0, 0)",
+   "ownBg": "rgba(0, 0, 0, 0)",
+   "bgImg": null,
+   "radius": "0px",
+   "cssPadT": 0,
+   "cssPadB": 10,
+   "effPadT": 24,
+   "effPadB": 22,
+   "contentL": 194,
+   "contentR": 1246,
+   "contentW": 1052,
+   "containerW": 1152,
+   "heading": {
+    "text": "Free",
+    "tag": "h3",
+    "size": 24,
+    "weight": "400",
+    "lh": "33px",
+    "ls": "-0.96px",
+    "fam": "Inter",
+    "color": "rgb(255, 255, 255)",
+    "align": "start",
+    "tt": "none",
+    "w": 240,
+    "h": 33,
+    "x": 414,
+    "y": 1699,
+    "lines": 1
+   },
+   "headingFromTop": 24,
+   "groupCtas": [
+    "Get started",
+    "Get started",
+    "Get started"
+   ],
+   "ctaGap": 54,
+   "groupBottom": 149,
+   "headToContent": 282,
+   "allHeadings": [
+    {
+     "t": "h3",
+     "s": 24,
+     "w": "400",
+     "text": "Free"
+    },
+    {
+     "t": "h3",
+     "s": 24,
+     "w": "400",
+     "text": "Launch"
+    },
+    {
+     "t": "h3",
+     "s": 24,
+     "w": "400",
+     "text": "Scale"
+    }
+   ],
+   "cards": {
+    "n": 96,
+    "cols": 4,
+    "rows": 24,
+    "w": 296,
+    "h": 73,
+    "sizes": [
+     "220x73",
+     "220x73",
+     "220x86",
+     "220x73",
+     "220x73",
+     "220x73",
+     "220x73",
+     "220x92",
+     "220x92",
+     "220x73"
+    ],
+    "gap": 0,
+    "radius": [
+     [
+      "0px",
+      96
+     ]
+    ],
+    "pad": [
+     [
+      "14px/0px",
+      80
+     ],
+     [
+      "0px/0px",
+      16
+     ]
+    ],
+    "bg": [
+     [
+      "rgba(0, 0, 0, 0)",
+      96
+     ]
+    ],
+    "border": [
+     [
+      "1px rgb(36, 38, 40)",
+      96
+     ]
+    ],
+    "shadow": [
+     [
+      "none",
+      96
+     ]
+    ]
+   },
+   "words": 373,
+   "snippet": "Projects and Branches Projects Branches per project Included Additional branches Read more Lakebase Postgres Compute rates Compute sizes Autoscaling Scale to zero When inactive Database storage Root and child branches History Instant restore storage History wi",
+   "f": {
+    "img": 0,
+    "bigMedia": 0,
+    "video": 0,
+    "canvas": 0,
+    "logoish": 0,
+    "squareIcons": 0,
+    "avatars": 0,
+    "marquee": false,
+    "details": 0,
+    "expanded": 0,
+    "tabs": 0,
+    "tables": 0,
+    "tr": 0,
+    "quotes": 0,
+    "prices": 27,
+    "bigNums": [],
+    "steps": 0,
+    "email": 0,
+    "inputs": 0,
+    "compliance": 2,
+    "integ": 0,
+    "faq": 0,
+    "dates": 0,
+    "sticky": false,
+    "buttons": 1,
+    "links": 11,
+    "switch": 1,
+    "checks": 0,
+    "h2count": 0
+   }
+  },
+  {
+   "idx": 3,
+   "tag": "section",
+   "id": "",
+   "cls": "features mt-[200px] scroll-mt-5 px-safe xl:mt-[184px] lg:mt-",
+   "top": 4435,
+   "h": 820,
+   "w": 1440,
+   "x": 0,
+   "bg": "rgb(0, 0, 0)",
+   "ownBg": "rgba(0, 0, 0, 0)",
+   "bgImg": null,
+   "radius": "0px",
+   "cssPadT": 0,
+   "cssPadB": 0,
+   "effPadT": 0,
+   "effPadB": 11,
+   "contentL": 176,
+   "contentR": 1264,
+   "contentW": 1088,
+   "containerW": 1152,
+   "heading": {
+    "text": "Included with every Neon database, on every plan, by default. These are core platform capabilities that come out of the box with Neon.",
+    "tag": "h2",
+    "size": 48,
+    "weight": "400",
+    "lh": "54px",
+    "ls": "-1.92px",
+    "fam": "Inter",
+    "color": "rgb(121, 125, 134)",
+    "align": "start",
+    "tt": "none",
+    "w": 1088,
+    "h": 162,
+    "x": 176,
+    "y": 4435,
+    "lines": 3
+   },
+   "headingFromTop": 0,
+   "groupBottom": 162,
+   "allHeadings": [
+    {
+     "t": "h2",
+     "s": 48,
+     "w": "400",
+     "text": "Included with every Neon database, on every plan, by default. These ar"
+    },
+    {
+     "t": "h3",
+     "s": 18,
+     "w": "400",
+     "text": "High availability."
+    },
+    {
+     "t": "h3",
+     "s": 18,
+     "w": "400",
+     "text": "Read replicas."
+    },
+    {
+     "t": "h3",
+     "s": 18,
+     "w": "400",
+     "text": "Autoscaling."
+    },
+    {
+     "t": "h3",
+     "s": 18,
+     "w": "400",
+     "text": "Monitoring."
+    },
+    {
+     "t": "h3",
+     "s": 18,
+     "w": "400",
+     "text": "Connection pooling."
+    },
+    {
+     "t": "h3",
+     "s": 18,
+     "w": "400",
+     "text": "Postgres extensions library."
+    },
+    {
+     "t": "h3",
+     "s": 18,
+     "w": "400",
+     "text": "Managed Better Auth."
+    },
+    {
+     "t": "h3",
+     "s": 18,
+     "w": "400",
+     "text": "GDPR and ISO compliance."
+    }
+   ],
+   "words": 138,
+   "snippet": "Included with every Neon database, on every plan, by default. These are core platform capabilities that come out of the box with Neon. High availability. Neon’s storage is multi-AZ by default, without the need for HA standbys. Read replicas. Neon lets you offl",
+   "f": {
+    "img": 0,
+    "bigMedia": 0,
+    "video": 0,
+    "canvas": 0,
+    "logoish": 0,
+    "squareIcons": 8,
+    "avatars": 0,
+    "marquee": false,
+    "details": 0,
+    "expanded": 0,
+    "tabs": 0,
+    "tables": 0,
+    "tr": 0,
+    "quotes": 0,
+    "prices": 0,
+    "bigNums": [],
+    "steps": 0,
+    "email": 0,
+    "inputs": 0,
+    "compliance": 1,
+    "integ": 0,
+    "faq": 0,
+    "dates": 0,
+    "sticky": false,
+    "buttons": 0,
+    "links": 10,
+    "switch": 0,
+    "checks": 0,
+    "h2count": 1
+   }
+  },
+  {
+   "idx": 4,
+   "tag": "section",
+   "id": "faq",
+   "cls": "faq safe-paddings mt-[200px] xl:mt-[184px] lg:mt-40 md:mt-[1",
+   "top": 5455,
+   "h": 1140,
+   "w": 1440,
+   "x": 0,
+   "bg": "rgb(0, 0, 0)",
+   "ownBg": "rgba(0, 0, 0, 0)",
+   "bgImg": null,
+   "radius": "0px",
+   "cssPadT": 0,
+   "cssPadB": 0,
+   "effPadT": 0,
+   "effPadB": -2,
+   "contentL": 176,
+   "contentR": 1264,
+   "contentW": 1088,
+   "containerW": 1152,
+   "heading": {
+    "text": "Your questions, answered",
+    "tag": "h2",
+    "size": 44,
+    "weight": "400",
+    "lh": "49.5px",
+    "ls": "-2.2px",
+    "fam": "Inter",
+    "color": "rgb(255, 255, 255)",
+    "align": "start",
+    "tt": "none",
+    "w": 320,
+    "h": 1140,
+    "x": 176,
+    "y": 5455,
+    "lines": 23
+   },
+   "headingFromTop": 0,
+   "groupBottom": 1140,
+   "allHeadings": [
+    {
+     "t": "h2",
+     "s": 44,
+     "w": "400",
+     "text": "Your questions, answered"
+    },
+    {
+     "t": "h3",
+     "s": 20,
+     "w": "500",
+     "text": "Does Neon offer a backend now?"
+    },
+    {
+     "t": "h3",
+     "s": 20,
+     "w": "500",
+     "text": "What is a Neon project?"
+    },
+    {
+     "t": "h3",
+     "s": 20,
+     "w": "500",
+     "text": "What is a CU?"
+    },
+    {
+     "t": "h3",
+     "s": 20,
+     "w": "500",
+     "text": "What is a CU-hour?"
+    },
+    {
+     "t": "h3",
+     "s": 20,
+     "w": "500",
+     "text": "What does 100 CU-hours per project give me on the Free plan?"
+    },
+    {
+     "t": "h3",
+     "s": 20,
+     "w": "500",
+     "text": "Is Object Storage, Functions, or AI Gateway usage included in my Free "
+    },
+    {
+     "t": "h3",
+     "s": 20,
+     "w": "500",
+     "text": "How are the workload cost estimates calculated?"
+    },
+    {
+     "t": "h3",
+     "s": 18,
+     "w": "600",
+     "text": "Intermittent load"
+    },
+    {
+     "t": "h3",
+     "s": 18,
+     "w": "600",
+     "text": "Low load"
+    },
+    {
+     "t": "h3",
+     "s": 18,
+     "w": "600",
+     "text": "Medium load"
+    },
+    {
+     "t": "h3",
+     "s": 18,
+     "w": "600",
+     "text": "High load"
+    },
+    {
+     "t": "h3",
+     "s": 18,
+     "w": "600",
+     "text": "XL load"
+    },
+    {
+     "t": "h3",
+     "s": 20,
+     "w": "500",
+     "text": "How are Object Storage, Functions, and AI Gateway billed?"
+    }
+   ],
+   "words": 2161,
+   "snippet": "Your questions, answered Does Neon offer a backend now? Yes. Alongside Lakebase Postgres, Neon now offers Managed Better Auth, Object Storage, Functions, and AI Gateway. Together they form a full backend suite that runs alongside your database and branches wit",
+   "f": {
+    "img": 5,
+    "bigMedia": 5,
+    "video": 0,
+    "canvas": 0,
+    "logoish": 0,
+    "squareIcons": 0,
+    "avatars": 0,
+    "marquee": false,
+    "details": 0,
+    "expanded": 15,
+    "tabs": 0,
+    "tables": 0,
+    "tr": 0,
+    "quotes": 1,
+    "prices": 13,
+    "bigNums": [],
+    "steps": 0,
+    "email": 0,
+    "inputs": 0,
+    "compliance": 0,
+    "integ": 0,
+    "faq": 1,
+    "dates": 0,
+    "sticky": false,
+    "buttons": 15,
+    "links": 19,
+    "switch": 1,
+    "checks": 0,
+    "h2count": 1
+   }
+  },
+  {
+   "idx": 5,
+   "tag": "section",
+   "id": "",
+   "cls": "cta relative bg-[#151617] safe-paddings mt-[183px] xl:mt-[16",
+   "top": 6777,
+   "h": 550,
+   "w": 1440,
+   "x": 0,
+   "bg": "rgb(21, 22, 23)",
+   "ownBg": "rgb(21, 22, 23)",
+   "bgImg": null,
+   "radius": "0px",
+   "cssPadT": 0,
+   "cssPadB": 0,
+   "effPadT": 160,
+   "effPadB": 160,
+   "contentL": 32,
+   "contentR": 832,
+   "contentW": 800,
+   "heading": {
+    "text": "Still have questions? Ask our AI.",
+    "tag": "h2",
+    "size": 48,
+    "weight": "400",
+    "lh": "54px",
+    "ls": "-1.92px",
+    "fam": "Inter",
+    "color": "rgb(255, 255, 255)",
+    "align": "start",
+    "tt": "none",
+    "w": 800,
+    "h": 54,
+    "x": 32,
+    "y": 6975,
+    "lines": 1
+   },
+   "headingFromTop": 198,
+   "eyebrow": {
+    "text": "ASK AI",
+    "tag": "span",
+    "size": 12,
+    "weight": "500",
+    "lh": "12px",
+    "ls": "normal",
+    "fam": "GeistMono",
+    "color": "rgb(201, 203, 207)",
+    "align": "start",
+    "tt": "uppercase",
+    "w": 43,
+    "h": 12,
+    "x": 52,
+    "y": 6939,
+    "lines": 1
+   },
+   "eyebrowGap": 24,
+   "groupBottom": 252,
+   "allHeadings": [
+    {
+     "t": "h2",
+     "s": 48,
+     "w": "400",
+     "text": "Still have questions? Ask our AI."
+    }
+   ],
+   "words": 16,
+   "snippet": "ASK AI Still have questions? Ask our AI. It knows Neon inside and out. Get Answers",
+   "f": {
+    "img": 1,
+    "bigMedia": 1,
+    "video": 0,
+    "canvas": 0,
+    "logoish": 0,
+    "squareIcons": 0,
+    "avatars": 0,
+    "marquee": false,
+    "details": 0,
+    "expanded": 0,
+    "tabs": 0,
+    "tables": 0,
+    "tr": 0,
+    "quotes": 0,
+    "prices": 0,
+    "bigNums": [],
+    "steps": 0,
+    "email": 0,
+    "inputs": 0,
+    "compliance": 0,
+    "integ": 0,
+    "faq": 1,
+    "dates": 0,
+    "sticky": false,
+    "buttons": 1,
+    "links": 0,
+    "switch": 0,
+    "checks": 1,
+    "h2count": 1
+   }
+  }
+ ],
+ "header": {
+  "y": 36,
+  "h": 64,
+  "w": 1440,
+  "pos": "absolute",
+  "bg": "rgb(0, 0, 0)"
+ },
+ "topStrips": [
+  {
+   "y": 0,
+   "h": 36,
+   "w": 1440,
+   "bg": "rgb(24, 25, 27)",
+   "text": "Major update to our Free Plan: now with 1 GB of Postgres storage per project, 100 projects included",
+   "size": 14,
+   "weight": "500",
+   "color": "rgb(255, 255, 255)",
+   "links": 0
+  }
+ ],
+ "h2": [
+  {
+   "text": "Special programs",
+   "size": 24,
+   "weight": "400",
+   "ls": "-0.48px",
+   "lh": "33px",
+   "fam": "Inter",
+   "y": 1080,
+   "x": 265,
+   "w": 910,
+   "h": 33,
+   "align": "start",
+   "words": 2
+  },
+  {
+   "text": "Included with every Neon database, on every plan, by default. These are core platform capabilities t",
+   "size": 48,
+   "weight": "400",
+   "ls": "-1.92px",
+   "lh": "54px",
+   "fam": "Inter",
+   "y": 4435,
+   "x": 176,
+   "w": 1088,
+   "h": 162,
+   "align": "start",
+   "words": 23
+  },
+  {
+   "text": "Your questions, answered",
+   "size": 44,
+   "weight": "400",
+   "ls": "-2.2px",
+   "lh": "49.5px",
+   "fam": "Inter",
+   "y": 5455,
+   "x": 176,
+   "w": 320,
+   "h": 1140,
+   "align": "start",
+   "words": 3
+  },
+  {
+   "text": "Still have questions? Ask our AI.",
+   "size": 48,
+   "weight": "400",
+   "ls": "-1.92px",
+   "lh": "54px",
+   "fam": "Inter",
+   "y": 6975,
+   "x": 32,
+   "w": 800,
+   "h": 54,
+   "align": "start",
+   "words": 6
+  }
+ ],
+ "footer": {
+  "top": 7327,
+  "h": 430,
+  "bg": "rgb(0, 0, 0)",
+  "ownBg": "rgb(0, 0, 0)",
+  "bgImg": null,
+  "borderTop": "1px solid rgb(48, 50, 54)",
+  "radius": "0px",
+  "inner": null,
+  "cssPadT": 0,
+  "cssPadB": 0,
+  "effPadT": 33,
+  "effPadB": 32,
+  "contentL": 32,
+  "contentR": 1408,
+  "linkCount": 33,
+  "linkSize": [
+   [
+    "15",
+    31
+   ],
+   [
+    "13",
+    1
+   ],
+   [
+    "16",
+    1
+   ]
+  ],
+  "linkWeight": [
+   [
+    "400",
+    33
+   ]
+  ],
+  "linkColor": [
+   [
+    "rgb(175, 177, 182)",
+    29
+   ],
+   [
+    "rgb(228, 229, 231)",
+    2
+   ]
+  ],
+  "cols": [
+   {
+    "x": 552,
+    "y": 7400,
+    "w": 148,
+    "n": 5,
+    "pitch": 35,
+    "head": {
+     "text": "COMPANY",
+     "tag": "span",
+     "size": 12,
+     "weight": "600",
+     "lh": "12px",
+     "ls": "normal",
+     "fam": "Inter",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "tt": "uppercase",
+     "w": 148,
+     "h": 12,
+     "x": 552,
+     "y": 7360,
+     "lines": 1
+    },
+    "link": {
+     "text": "About",
+     "tag": "a",
+     "size": 15,
+     "weight": "400",
+     "lh": "15px",
+     "ls": "-0.3px",
+     "fam": "Inter",
+     "color": "rgb(175, 177, 182)",
+     "align": "start",
+     "tt": "none",
+     "w": 41,
+     "h": 17,
+     "x": 552,
+     "y": 7399,
+     "lines": 1
+    }
+   },
+   {
+    "x": 788,
+    "y": 7400,
+    "w": 148,
+    "n": 7,
+    "pitch": 35,
+    "head": {
+     "text": "RESOURCES",
+     "tag": "span",
+     "size": 12,
+     "weight": "600",
+     "lh": "12px",
+     "ls": "normal",
+     "fam": "Inter",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "tt": "uppercase",
+     "w": 148,
+     "h": 12,
+     "x": 788,
+     "y": 7360,
+     "lines": 1
+    },
+    "link": {
+     "text": "Docs",
+     "tag": "a",
+     "size": 15,
+     "weight": "400",
+     "lh": "15px",
+     "ls": "-0.3px",
+     "fam": "Inter",
+     "color": "rgb(175, 177, 182)",
+     "align": "start",
+     "tt": "none",
+     "w": 35,
+     "h": 17,
+     "x": 788,
+     "y": 7399,
+     "lines": 1
+    }
+   },
+   {
+    "x": 1024,
+    "y": 7400,
+    "w": 148,
+    "n": 5,
+    "pitch": 36,
+    "head": {
+     "text": "COMMUNITY",
+     "tag": "span",
+     "size": 12,
+     "weight": "600",
+     "lh": "12px",
+     "ls": "normal",
+     "fam": "Inter",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "tt": "uppercase",
+     "w": 148,
+     "h": 12,
+     "x": 1024,
+     "y": 7360,
+     "lines": 1
+    },
+    "link": {
+     "text": "Discord",
+     "tag": "a",
+     "size": 15,
+     "weight": "400",
+     "lh": "15px",
+     "ls": "-0.3px",
+     "fam": "Inter",
+     "color": "rgb(175, 177, 182)",
+     "align": "start",
+     "tt": "none",
+     "w": 78,
+     "h": 18,
+     "x": 1024,
+     "y": 7399,
+     "lines": 1
+    }
+   },
+   {
+    "x": 1201,
+    "y": 7485,
+    "w": 207,
+    "n": 2,
+    "pitch": 39,
+    "head": {
+     "text": "HIPAA Compliant",
+     "tag": "a",
+     "size": 15,
+     "weight": "400",
+     "lh": "15px",
+     "ls": "-0.3px",
+     "fam": "Inter",
+     "color": "rgb(175, 177, 182)",
+     "align": "start",
+     "tt": "none",
+     "w": 134,
+     "h": 19,
+     "x": 1260,
+     "y": 7584,
+     "lines": 1
+    },
+    "link": {
+     "text": "Compliance Guide",
+     "tag": "a",
+     "size": 15,
+     "weight": "400",
+     "lh": "16.875px",
+     "ls": "-0.3px",
+     "fam": "Inter",
+     "color": "rgb(228, 229, 231)",
+     "align": "start",
+     "tt": "none",
+     "w": 190,
+     "h": 35,
+     "x": 1210,
+     "y": 7493,
+     "lines": 2
+    }
+   }
+  ],
+  "colCount": 4,
+  "brand": {
+   "x": 32,
+   "y": 33,
+   "w": 177,
+   "h": 28
+  },
+  "big": [],
+  "legal": {
+   "y": 7584,
+   "fromBottom": 120,
+   "text": "© Neon 2026. All rights reserved. Apache, Apache Spark, Spark, the Spark Logo, Apache Iceb",
+   "size": 13,
+   "color": "rgb(97, 100, 107)"
+  },
+  "email": 0,
+  "inputs": 0,
+  "status": " center all systems operational",
+  "social": 5,
+  "theme": 0,
+  "lang": 0,
+  "canvas": 0,
+  "video": 0,
+  "svg": 1,
+  "animated": 0,
+  "compliance": 5,
+  "headings": [],
+  "buttons": [],
+  "text": "Neon is part of the Databricks Platform © Neon 2026. All rights reserved. Apache, Apache Spark, Spark, the Spark Logo, Apache Iceberg, Iceberg, and the Apache Iceberg logo are trademarks of the Apache Software Foundation. COMPANY About Blog Careers Contact Sales Security RESOURCES Docs Changelog Support Community Guides FAQs PostgreSQL Tutorial Startups COMMUNITY Discord GitHub X.com LinkedIn YouTube COMPLIANCE CCPA Compliant GDPR Compliant ISO 27001 Certified ISO 27701 Certified SOC 2 Certified HIPAA Compliant Compliance Guide Neon’s Sub Contractors Trust Center All systems operational Privacy Notice Terms of Use Neon Platform Terms Modern Slavery Statement California Privacy"
+ },
+ "url": "https://neon.com/pricing",
+ "slug": "neon--pricing",
+ "kind": "pricing",
+ "site": "neon",
+ "finalUrl": "https://neon.com/pricing",
+ "captured": "2026-10-10"
+}

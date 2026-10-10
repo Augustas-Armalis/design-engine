@@ -1,0 +1,1931 @@
+{
+ "vw": 1440,
+ "pageHeight": 7187,
+ "title": "Clerk | Authentication and User Management",
+ "bodyBg": "rgb(247, 247, 248)",
+ "htmlBg": "rgb(247, 247, 248)",
+ "bodyFont": "geistNumbers",
+ "blocks": [
+  {
+   "idx": 0,
+   "tag": "a",
+   "id": "",
+   "cls": "group absolute top-0 z-10 mt-0 flex w-full gap-x-4 bg-gray-9",
+   "top": 0,
+   "h": 40,
+   "w": 1440,
+   "x": 0,
+   "bg": "rgb(19, 19, 22)",
+   "ownBg": "rgb(19, 19, 22)",
+   "bgImg": null,
+   "radius": "0px",
+   "cssPadT": 8,
+   "cssPadB": 8,
+   "effPadT": 8,
+   "effPadB": 8,
+   "contentL": 577,
+   "contentR": 863,
+   "contentW": 286,
+   "words": 7,
+   "snippet": "Clerk raises $50m Series C Learn more",
+   "f": {
+    "img": 0,
+    "bigMedia": 0,
+    "video": 0,
+    "canvas": 0,
+    "logoish": 0,
+    "squareIcons": 0,
+    "avatars": 0,
+    "marquee": false,
+    "details": 0,
+    "expanded": 0,
+    "tabs": 0,
+    "tables": 0,
+    "tr": 0,
+    "quotes": 0,
+    "prices": 1,
+    "bigNums": [],
+    "steps": 0,
+    "email": 0,
+    "inputs": 0,
+    "compliance": 0,
+    "integ": 0,
+    "faq": 0,
+    "dates": 0,
+    "sticky": false,
+    "buttons": 0,
+    "links": 0,
+    "switch": 0,
+    "checks": 2,
+    "h2count": 0
+   }
+  },
+  {
+   "idx": 1,
+   "tag": "div",
+   "id": "",
+   "cls": "relative bg-white pb-8",
+   "top": 26,
+   "h": 1164,
+   "w": 1440,
+   "x": 0,
+   "bg": "rgb(255, 255, 255)",
+   "ownBg": "rgb(255, 255, 255)",
+   "bgImg": null,
+   "radius": "0px",
+   "cssPadT": 164,
+   "cssPadB": 32,
+   "effPadT": 11,
+   "effPadB": 0,
+   "contentL": -196,
+   "contentR": 2372,
+   "contentW": 2568,
+   "containerW": 1264,
+   "heading": {
+    "text": "Everything you need for authentication",
+    "tag": "h1",
+    "size": 56,
+    "weight": "700",
+    "lh": "64px",
+    "ls": "-1.96px",
+    "fam": "geistNumbers",
+    "color": "rgb(19, 19, 22)",
+    "align": "left",
+    "tt": "none",
+    "w": 598,
+    "h": 128,
+    "x": 120,
+    "y": 190,
+    "lines": 2
+   },
+   "headingFromTop": 164,
+   "eyebrow": {
+    "text": "Current plan",
+    "tag": "div",
+    "size": 11,
+    "weight": "500",
+    "lh": "20px",
+    "ls": "normal",
+    "fam": "ui-sans-serif",
+    "color": "rgb(19, 19, 22)",
+    "align": "start",
+    "tt": "none",
+    "w": 360,
+    "h": 24,
+    "x": 540,
+    "y": 161,
+    "lines": 1,
+    "chip": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "border": "1px solid rgba(0, 0, 0, 0.06)",
+     "radius": "0px",
+     "h": 24,
+     "padX": "0px"
+    }
+   },
+   "eyebrowGap": 5,
+   "sub": {
+    "text": "Add Clerk auth to my app: clerk.com/SKILL.md",
+    "tag": "span",
+    "size": 13,
+    "weight": "400",
+    "lh": "24px",
+    "ls": "normal",
+    "fam": "soehneMono",
+    "color": "rgb(19, 19, 22)",
+    "align": "left",
+    "tt": "none",
+    "w": 367,
+    "h": 24,
+    "x": 911,
+    "y": 324,
+    "lines": 1
+   },
+   "subGap": 6,
+   "groupBottom": 322,
+   "headToContent": 70,
+   "allHeadings": [
+    {
+     "t": "h1",
+     "s": 56,
+     "w": "700",
+     "text": "Everything you need for authentication"
+    },
+    {
+     "t": "h2",
+     "s": 17,
+     "w": "700",
+     "text": "Account"
+    },
+    {
+     "t": "h2",
+     "s": 14,
+     "w": "700",
+     "text": "Profile details"
+    },
+    {
+     "t": "h2",
+     "s": 17,
+     "w": "700",
+     "text": "Create Organization"
+    },
+    {
+     "t": "h2",
+     "s": 17,
+     "w": "700",
+     "text": "Account"
+    },
+    {
+     "t": "h2",
+     "s": 14,
+     "w": "700",
+     "text": "Billing"
+    },
+    {
+     "t": "h2",
+     "s": 17,
+     "w": "700",
+     "text": "Organization"
+    },
+    {
+     "t": "h2",
+     "s": 14,
+     "w": "700",
+     "text": "Billing"
+    },
+    {
+     "t": "h1",
+     "s": 17,
+     "w": "700",
+     "text": "Join the waitlist"
+    },
+    {
+     "t": "h1",
+     "s": 17,
+     "w": "700",
+     "text": "Create your account"
+    },
+    {
+     "t": "h1",
+     "s": 17,
+     "w": "700",
+     "text": "Sign in to your account"
+    },
+    {
+     "t": "h2",
+     "s": 17,
+     "w": "700",
+     "text": "Organization"
+    },
+    {
+     "t": "h2",
+     "s": 14,
+     "w": "700",
+     "text": "General details"
+    },
+    {
+     "t": "h1",
+     "s": 17,
+     "w": "700",
+     "text": "Choose an account"
+    }
+   ],
+   "cards": {
+    "n": 80,
+    "cols": 3,
+    "rows": 23,
+    "w": 352,
+    "h": 394,
+    "sizes": [
+     "436x63",
+     "352x385",
+     "352x428",
+     "352x323",
+     "352x254",
+     "352x146",
+     "720x506",
+     "352x514",
+     "352x254",
+     "352x428"
+    ],
+    "gap": 16,
+    "radius": [
+     [
+      "8px",
+      17
+     ],
+     [
+      "2.22222% 3.07692%",
+      9
+     ],
+     [
+      "2.22222% 5.36913%",
+      8
+     ]
+    ],
+    "pad": [
+     [
+      "0px/0px",
+      80
+     ]
+    ],
+    "bg": [
+     [
+      "rgba(0, 0, 0, 0)",
+      61
+     ],
+     [
+      "rgb(247, 247, 248)",
+      12
+     ],
+     [
+      "rgb(255, 255, 255)",
+      5
+     ]
+    ],
+    "border": [
+     [
+      "none",
+      80
+     ]
+    ],
+    "shadow": [
+     [
+      "rgba(19, 19, 22, 0.024) 0px 0px 0px 1px, rgba(19, 19, 22, 0.024) 0px 1px 1px -0.5px, rgba(19, 19, 22, 0.024) 0px 3px 3px",
+      60
+     ],
+     [
+      "rgba(19, 19, 22, 0.05) 0px 0px 0px 1px, rgba(19, 19, 22, 0.05) 0px 1px 1px -0.5px, rgba(19, 19, 22, 0.05) 0px 3px 3px -1",
+      15
+     ]
+    ]
+   },
+   "words": 708,
+   "snippet": "Everything you need for authentication More than APIs. The complete user layer for modern apps. Build with agents ❯ Add Clerk auth to my app: clerk.com/SKILL.md Add Clerk auth to my app: clerk.com/SKILL.md User Authentication Multi-tenancy Enterprise Authentic",
+   "f": {
+    "img": 69,
+    "bigMedia": 9,
+    "video": 0,
+    "canvas": 1,
+    "logoish": 9,
+    "squareIcons": 19,
+    "avatars": 10,
+    "marquee": false,
+    "details": 0,
+    "expanded": 0,
+    "tabs": 0,
+    "tables": 2,
+    "tr": 8,
+    "quotes": 0,
+    "prices": 3,
+    "bigNums": [],
+    "steps": 0,
+    "email": 0,
+    "inputs": 10,
+    "compliance": 2,
+    "integ": 6,
+    "faq": 0,
+    "dates": 2,
+    "sticky": false,
+    "buttons": 3,
+    "links": 0,
+    "switch": 4,
+    "checks": 124,
+    "h2count": 0
+   }
+  },
+  {
+   "idx": 2,
+   "tag": "header",
+   "id": "header",
+   "cls": "sticky top-2 isolate mt-(--header-mt-mobile,var(--header-mt,",
+   "top": 48,
+   "h": 42,
+   "w": 1440,
+   "x": 0,
+   "bg": "rgb(247, 247, 248)",
+   "ownBg": "rgba(0, 0, 0, 0)",
+   "bgImg": null,
+   "radius": "0px",
+   "cssPadT": 0,
+   "cssPadB": 0,
+   "effPadT": 8,
+   "effPadB": 8,
+   "contentL": 118,
+   "contentR": 1326,
+   "contentW": 1208,
+   "words": 10,
+   "snippet": "Products Docs Changelog Company AI Pricing Sign in Sign up",
+   "f": {
+    "img": 0,
+    "bigMedia": 0,
+    "video": 0,
+    "canvas": 0,
+    "logoish": 1,
+    "squareIcons": 0,
+    "avatars": 0,
+    "marquee": false,
+    "details": 0,
+    "expanded": 6,
+    "tabs": 0,
+    "tables": 0,
+    "tr": 0,
+    "quotes": 0,
+    "prices": 0,
+    "bigNums": [],
+    "steps": 0,
+    "email": 0,
+    "inputs": 0,
+    "compliance": 0,
+    "integ": 0,
+    "faq": 0,
+    "dates": 0,
+    "sticky": false,
+    "buttons": 6,
+    "links": 3,
+    "switch": 0,
+    "checks": 7,
+    "h2count": 0
+   }
+  },
+  {
+   "idx": 3,
+   "tag": "div",
+   "id": "",
+   "cls": "font-inter pointer-events-none fixed bottom-7 z-150 flex w-f",
+   "top": 760,
+   "h": 112,
+   "w": 1440,
+   "x": 0,
+   "bg": "rgb(247, 247, 248)",
+   "ownBg": "rgba(0, 0, 0, 0)",
+   "bgImg": null,
+   "radius": "0px",
+   "cssPadT": 16,
+   "cssPadB": 16,
+   "effPadT": 16,
+   "effPadB": 16,
+   "contentL": 465,
+   "contentR": 992,
+   "contentW": 527,
+   "containerW": 576,
+   "words": 27,
+   "snippet": "We use cookies for analytics and to share your activity with advertising partners. Read our privacy policy. You can change your preferences at any time. Decline Accept",
+   "f": {
+    "img": 0,
+    "bigMedia": 0,
+    "video": 0,
+    "canvas": 0,
+    "logoish": 0,
+    "squareIcons": 0,
+    "avatars": 0,
+    "marquee": false,
+    "details": 0,
+    "expanded": 1,
+    "tabs": 0,
+    "tables": 0,
+    "tr": 0,
+    "quotes": 0,
+    "prices": 0,
+    "bigNums": [],
+    "steps": 0,
+    "email": 0,
+    "inputs": 0,
+    "compliance": 0,
+    "integ": 0,
+    "faq": 0,
+    "dates": 0,
+    "sticky": false,
+    "buttons": 3,
+    "links": 1,
+    "switch": 0,
+    "checks": 1,
+    "h2count": 0
+   }
+  },
+  {
+   "idx": 4,
+   "tag": "div",
+   "id": "",
+   "cls": "relative bg-white pt-6 pb-8 md:pt-12 md:pb-16",
+   "top": 1190,
+   "h": 192,
+   "w": 1440,
+   "x": 0,
+   "bg": "rgb(255, 255, 255)",
+   "ownBg": "rgb(255, 255, 255)",
+   "bgImg": null,
+   "radius": "0px",
+   "cssPadT": 48,
+   "cssPadB": 64,
+   "effPadT": 16,
+   "effPadB": 32,
+   "contentL": 198,
+   "contentR": 1242,
+   "contentW": 1044,
+   "containerW": 1264,
+   "words": 0,
+   "snippet": "",
+   "f": {
+    "img": 16,
+    "bigMedia": 0,
+    "video": 0,
+    "canvas": 0,
+    "logoish": 16,
+    "squareIcons": 0,
+    "avatars": 0,
+    "marquee": false,
+    "details": 0,
+    "expanded": 0,
+    "tabs": 0,
+    "tables": 0,
+    "tr": 0,
+    "quotes": 0,
+    "prices": 0,
+    "bigNums": [],
+    "steps": 0,
+    "email": 0,
+    "inputs": 0,
+    "compliance": 0,
+    "integ": 0,
+    "faq": 0,
+    "dates": 0,
+    "sticky": false,
+    "buttons": 0,
+    "links": 0,
+    "switch": 0,
+    "checks": 0,
+    "h2count": 0
+   }
+  },
+  {
+   "idx": 5,
+   "tag": "div",
+   "id": "",
+   "cls": "relative bg-gray-950 pt-32 pb-[calc(--spacing(32)_+_--spacin",
+   "top": 1382,
+   "h": 1905,
+   "w": 1440,
+   "x": 0,
+   "bg": "rgb(19, 19, 22)",
+   "ownBg": "rgb(19, 19, 22)",
+   "bgImg": null,
+   "radius": "0px",
+   "cssPadT": 128,
+   "cssPadB": 172,
+   "effPadT": 128,
+   "effPadB": 115,
+   "contentL": 92,
+   "contentR": 1389,
+   "contentW": 1296,
+   "containerW": 1264,
+   "heading": {
+    "text": "User authentication",
+    "tag": "h2",
+    "size": 13,
+    "weight": "500",
+    "lh": "24px",
+    "ls": "normal",
+    "fam": "geistNumbers",
+    "color": "rgb(151, 133, 255)",
+    "align": "center",
+    "tt": "none",
+    "w": 1200,
+    "h": 24,
+    "x": 120,
+    "y": 1510,
+    "lines": 1
+   },
+   "headingFromTop": 128,
+   "groupBottom": 152,
+   "headToContent": 229,
+   "allHeadings": [
+    {
+     "t": "h2",
+     "s": 13,
+     "w": "500",
+     "text": "User authentication"
+    },
+    {
+     "t": "h3",
+     "s": 13,
+     "w": "500",
+     "text": "Multifactor Authentication"
+    },
+    {
+     "t": "h3",
+     "s": 13,
+     "w": "500",
+     "text": "Fraud and Abuse Prevention"
+    },
+    {
+     "t": "h3",
+     "s": 13,
+     "w": "500",
+     "text": "Advanced security"
+    },
+    {
+     "t": "h3",
+     "s": 13,
+     "w": "500",
+     "text": "Session Management"
+    },
+    {
+     "t": "h3",
+     "s": 13,
+     "w": "500",
+     "text": "Social Sign-On"
+    },
+    {
+     "t": "h3",
+     "s": 13,
+     "w": "500",
+     "text": "Bot Detection"
+    },
+    {
+     "t": "h3",
+     "s": 13,
+     "w": "500",
+     "text": "Email and SMS one-time passcodes"
+    },
+    {
+     "t": "h3",
+     "s": 13,
+     "w": "500",
+     "text": "Magic Links"
+    },
+    {
+     "t": "h3",
+     "s": 13,
+     "w": "500",
+     "text": "Passwords"
+    },
+    {
+     "t": "h3",
+     "s": 13,
+     "w": "500",
+     "text": "API Keys"
+    },
+    {
+     "t": "h3",
+     "s": 13,
+     "w": "500",
+     "text": "Clerk CLI"
+    }
+   ],
+   "cards": {
+    "n": 11,
+    "cols": 3,
+    "rows": 4,
+    "w": 395,
+    "h": 260,
+    "sizes": [
+     "395x260",
+     "395x528",
+     "395x260",
+     "395x528",
+     "395x260",
+     "395x260",
+     "395x260",
+     "395x528",
+     "395x260",
+     "797x280"
+    ],
+    "gap": 8,
+    "radius": [
+     [
+      "16px",
+      11
+     ]
+    ],
+    "pad": [
+     [
+      "0px/0px",
+      11
+     ]
+    ],
+    "bg": [
+     [
+      "rgb(33, 33, 38)",
+      11
+     ]
+    ],
+    "border": [
+     [
+      "none",
+      11
+     ]
+    ],
+    "shadow": [
+     [
+      "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0",
+      11
+     ]
+    ]
+   },
+   "words": 286,
+   "snippet": "User authentication Auth that keeps evolving Ever feel like authentication requirements change with the season? Clerk keeps up with the latest trends and security best practices. Explore user authentication Multifactor Authentication Each user's self-serve mul",
+   "f": {
+    "img": 2,
+    "bigMedia": 4,
+    "video": 0,
+    "canvas": 0,
+    "logoish": 0,
+    "squareIcons": 7,
+    "avatars": 12,
+    "marquee": false,
+    "details": 0,
+    "expanded": 0,
+    "tabs": 0,
+    "tables": 0,
+    "tr": 0,
+    "quotes": 1,
+    "prices": 0,
+    "bigNums": [],
+    "steps": 1,
+    "email": 0,
+    "inputs": 0,
+    "compliance": 4,
+    "integ": 0,
+    "faq": 0,
+    "dates": 0,
+    "sticky": false,
+    "buttons": 0,
+    "links": 1,
+    "switch": 0,
+    "checks": 62,
+    "h2count": 0
+   }
+  },
+  {
+   "idx": 6,
+   "tag": "div",
+   "id": "",
+   "cls": "mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] md:px-",
+   "top": 3239,
+   "h": 48,
+   "w": 1264,
+   "x": 88,
+   "bg": "rgb(247, 247, 248)",
+   "ownBg": "rgba(0, 0, 0, 0)",
+   "bgImg": null,
+   "radius": "0px",
+   "cssPadT": 0,
+   "cssPadB": 0,
+   "words": 0,
+   "snippet": "",
+   "f": {
+    "img": 0,
+    "bigMedia": 0,
+    "video": 0,
+    "canvas": 0,
+    "logoish": 0,
+    "squareIcons": 0,
+    "avatars": 0,
+    "marquee": false,
+    "details": 0,
+    "expanded": 0,
+    "tabs": 0,
+    "tables": 0,
+    "tr": 0,
+    "quotes": 0,
+    "prices": 0,
+    "bigNums": [],
+    "steps": 0,
+    "email": 0,
+    "inputs": 0,
+    "compliance": 0,
+    "integ": 0,
+    "faq": 0,
+    "dates": 0,
+    "sticky": false,
+    "buttons": 0,
+    "links": 0,
+    "switch": 0,
+    "checks": 2,
+    "h2count": 0
+   }
+  },
+  {
+   "idx": 7,
+   "tag": "div",
+   "id": "b2b-saas",
+   "cls": "pt-32 mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] ",
+   "top": 3287,
+   "h": 893,
+   "w": 1280,
+   "x": 80,
+   "bg": "rgb(247, 247, 248)",
+   "ownBg": "rgba(0, 0, 0, 0)",
+   "bgImg": null,
+   "radius": "0px",
+   "cssPadT": 128,
+   "cssPadB": 0,
+   "effPadT": 128,
+   "effPadB": 24,
+   "contentL": 112,
+   "contentR": 1328,
+   "contentW": 1216,
+   "containerW": 1216,
+   "heading": {
+    "text": "Multi-tenancy",
+    "tag": "h2",
+    "size": 13,
+    "weight": "500",
+    "lh": "24px",
+    "ls": "normal",
+    "fam": "geistNumbers",
+    "color": "rgb(108, 71, 255)",
+    "align": "start",
+    "tt": "none",
+    "w": 1216,
+    "h": 24,
+    "x": 112,
+    "y": 3415,
+    "lines": 1
+   },
+   "headingFromTop": 128,
+   "groupBottom": 152,
+   "headToContent": 37,
+   "allHeadings": [
+    {
+     "t": "h2",
+     "s": 13,
+     "w": "500",
+     "text": "Multi-tenancy"
+    },
+    {
+     "t": "h3",
+     "s": 13,
+     "w": "500",
+     "text": "Custom roles and permissions"
+    },
+    {
+     "t": "h3",
+     "s": 13,
+     "w": "500",
+     "text": "Auto-join"
+    },
+    {
+     "t": "h3",
+     "s": 13,
+     "w": "500",
+     "text": "Invitations"
+    },
+    {
+     "t": "h3",
+     "s": 13,
+     "w": "500",
+     "text": "Organization UI Components"
+    }
+   ],
+   "cards": {
+    "n": 4,
+    "cols": 3,
+    "rows": 1,
+    "w": 400,
+    "h": 528,
+    "sizes": [
+     "400x528",
+     "400x260",
+     "400x260",
+     "400x528"
+    ],
+    "gap": 8,
+    "radius": [
+     [
+      "16px",
+      4
+     ]
+    ],
+    "pad": [
+     [
+      "0px/0px",
+      4
+     ]
+    ],
+    "bg": [
+     [
+      "rgb(255, 255, 255)",
+      4
+     ]
+    ],
+    "border": [
+     [
+      "none",
+      4
+     ]
+    ],
+    "shadow": [
+     [
+      "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0",
+      4
+     ]
+    ]
+   },
+   "words": 117,
+   "snippet": "Multi-tenancy Everything your B2B SaaS needs Clerk has all the features you need to onboard and manage the users and organizations of your multi-tenant SaaS application. Explore Multi-tenancy Custom roles and permissions Powerful primitives to fully customize ",
+   "f": {
+    "img": 0,
+    "bigMedia": 0,
+    "video": 0,
+    "canvas": 0,
+    "logoish": 1,
+    "squareIcons": 7,
+    "avatars": 3,
+    "marquee": false,
+    "details": 0,
+    "expanded": 0,
+    "tabs": 0,
+    "tables": 0,
+    "tr": 0,
+    "quotes": 0,
+    "prices": 0,
+    "bigNums": [],
+    "steps": 0,
+    "email": 0,
+    "inputs": 0,
+    "compliance": 0,
+    "integ": 0,
+    "faq": 0,
+    "dates": 0,
+    "sticky": false,
+    "buttons": 0,
+    "links": 1,
+    "switch": 0,
+    "checks": 18,
+    "h2count": 0
+   }
+  },
+  {
+   "idx": 8,
+   "tag": "div",
+   "id": "",
+   "cls": "overflow-hidden pt-32 pb-[calc(--spacing(32)_+_--spacing(11)",
+   "top": 4180,
+   "h": 890,
+   "w": 1440,
+   "x": 0,
+   "bg": "rgb(247, 247, 248)",
+   "ownBg": "rgba(0, 0, 0, 0)",
+   "bgImg": null,
+   "radius": "0px",
+   "cssPadT": 128,
+   "cssPadB": 172,
+   "effPadT": 128,
+   "effPadB": 214,
+   "contentL": 120,
+   "contentR": 1320,
+   "contentW": 1200,
+   "containerW": 1264,
+   "heading": {
+    "text": "Billing",
+    "tag": "h2",
+    "size": 13,
+    "weight": "500",
+    "lh": "24px",
+    "ls": "normal",
+    "fam": "geistNumbers",
+    "color": "rgb(108, 71, 255)",
+    "align": "start",
+    "tt": "none",
+    "w": 384,
+    "h": 24,
+    "x": 120,
+    "y": 4397,
+    "lines": 1
+   },
+   "headingFromTop": 217,
+   "eyebrow": {
+    "text": "Product",
+    "tag": "div",
+    "size": 10,
+    "weight": "500",
+    "lh": "15px",
+    "ls": "normal",
+    "fam": "Inter",
+    "color": "rgb(94, 95, 110)",
+    "align": "start",
+    "tt": "none",
+    "w": 38,
+    "h": 15,
+    "x": 648,
+    "y": 4342,
+    "lines": 1,
+    "chip": {
+     "bg": "rgb(250, 250, 251)",
+     "border": "0px solid rgb(217, 217, 222)",
+     "radius": "0px",
+     "h": 40,
+     "padX": "24px"
+    }
+   },
+   "eyebrowGap": 40,
+   "sub": {
+    "text": "Free 365-day trial, no credit-card required.",
+    "tag": "div",
+    "size": 12,
+    "weight": "500",
+    "lh": "20px",
+    "ls": "normal",
+    "fam": "Inter",
+    "color": "rgb(94, 95, 110)",
+    "align": "center",
+    "tt": "none",
+    "w": 736,
+    "h": 20,
+    "x": 584,
+    "y": 4455,
+    "lines": 1
+   },
+   "subGap": 35,
+   "groupBottom": 295,
+   "headToContent": 15,
+   "allHeadings": [
+    {
+     "t": "h2",
+     "s": 13,
+     "w": "500",
+     "text": "Billing"
+    }
+   ],
+   "words": 178,
+   "snippet": "Billing Subscription billing, without the headache Add subscriptions to your B2C or B2B application without having to write payment code, custom UI, or wrangle webhooks. Just drop in React components and start earning recurring revenue. Here’s what you can do ",
+   "f": {
+    "img": 0,
+    "bigMedia": 0,
+    "video": 0,
+    "canvas": 0,
+    "logoish": 0,
+    "squareIcons": 1,
+    "avatars": 1,
+    "marquee": false,
+    "details": 0,
+    "expanded": 0,
+    "tabs": 0,
+    "tables": 0,
+    "tr": 0,
+    "quotes": 0,
+    "prices": 10,
+    "bigNums": [],
+    "steps": 0,
+    "email": 0,
+    "inputs": 0,
+    "compliance": 0,
+    "integ": 2,
+    "faq": 0,
+    "dates": 0,
+    "sticky": false,
+    "buttons": 0,
+    "links": 1,
+    "switch": 1,
+    "checks": 27,
+    "h2count": 0
+   }
+  },
+  {
+   "idx": 9,
+   "tag": "div",
+   "id": "",
+   "cls": "relative bg-gray-950 pt-32 pb-[calc(--spacing(32)_+_--spacin",
+   "top": 5070,
+   "h": 880,
+   "w": 1440,
+   "x": 0,
+   "bg": "rgb(19, 19, 22)",
+   "ownBg": "rgb(19, 19, 22)",
+   "bgImg": null,
+   "radius": "0px",
+   "cssPadT": 128,
+   "cssPadB": 172,
+   "effPadT": 128,
+   "effPadB": 221,
+   "contentL": 120,
+   "contentR": 1320,
+   "contentW": 1200,
+   "containerW": 1264,
+   "heading": {
+    "text": "Frameworks",
+    "tag": "h2",
+    "size": 13,
+    "weight": "500",
+    "lh": "24px",
+    "ls": "normal",
+    "fam": "geistNumbers",
+    "color": "rgb(93, 227, 255)",
+    "align": "center",
+    "tt": "none",
+    "w": 568,
+    "h": 24,
+    "x": 120,
+    "y": 5198,
+    "lines": 1
+   },
+   "headingFromTop": 128,
+   "groupBottom": 152,
+   "allHeadings": [
+    {
+     "t": "h2",
+     "s": 13,
+     "w": "500",
+     "text": "Frameworks"
+    },
+    {
+     "t": "h2",
+     "s": 13,
+     "w": "500",
+     "text": "Integrations"
+    }
+   ],
+   "cards": {
+    "n": 9,
+    "cols": 6,
+    "rows": 2,
+    "w": 190,
+    "h": 140,
+    "sizes": [
+     "190x140",
+     "190x140",
+     "190x140",
+     "190x140",
+     "190x140",
+     "190x140",
+     "190x279",
+     "190x279",
+     "190x279"
+    ],
+    "gap": 64,
+    "radius": [
+     [
+      "0px",
+      9
+     ]
+    ],
+    "pad": [
+     [
+      "32px/0px",
+      9
+     ]
+    ],
+    "bg": [
+     [
+      "rgb(19, 19, 22)",
+      9
+     ]
+    ],
+    "border": [
+     [
+      "1px rgb(47, 48, 55)",
+      9
+     ]
+    ],
+    "shadow": [
+     [
+      "none",
+      9
+     ]
+    ]
+   },
+   "words": 68,
+   "snippet": "Frameworks Build with SDKs for modern frameworks Clerk keeps developer experience front-and-center by providing helpful SDKs for most modern frameworks on web and mobile. All frameworks Next.js React Expo React Router TanStack React Start Astro Integrations In",
+   "f": {
+    "img": 0,
+    "bigMedia": 0,
+    "video": 0,
+    "canvas": 0,
+    "logoish": 9,
+    "squareIcons": 0,
+    "avatars": 0,
+    "marquee": false,
+    "details": 0,
+    "expanded": 0,
+    "tabs": 0,
+    "tables": 0,
+    "tr": 0,
+    "quotes": 0,
+    "prices": 0,
+    "bigNums": [],
+    "steps": 0,
+    "email": 0,
+    "inputs": 0,
+    "compliance": 0,
+    "integ": 4,
+    "faq": 0,
+    "dates": 0,
+    "sticky": false,
+    "buttons": 0,
+    "links": 11,
+    "switch": 0,
+    "checks": 6,
+    "h2count": 0
+   }
+  },
+  {
+   "idx": 10,
+   "tag": "div",
+   "id": "",
+   "cls": "mx-auto w-full px-6 sm:max-w-[40rem] md:max-w-[48rem] md:px-",
+   "top": 5902,
+   "h": 48,
+   "w": 1264,
+   "x": 88,
+   "bg": "rgb(247, 247, 248)",
+   "ownBg": "rgba(0, 0, 0, 0)",
+   "bgImg": null,
+   "radius": "0px",
+   "cssPadT": 0,
+   "cssPadB": 0,
+   "words": 0,
+   "snippet": "",
+   "f": {
+    "img": 0,
+    "bigMedia": 0,
+    "video": 0,
+    "canvas": 0,
+    "logoish": 0,
+    "squareIcons": 0,
+    "avatars": 0,
+    "marquee": false,
+    "details": 0,
+    "expanded": 0,
+    "tabs": 0,
+    "tables": 0,
+    "tr": 0,
+    "quotes": 0,
+    "prices": 0,
+    "bigNums": [],
+    "steps": 0,
+    "email": 0,
+    "inputs": 0,
+    "compliance": 0,
+    "integ": 0,
+    "faq": 0,
+    "dates": 0,
+    "sticky": false,
+    "buttons": 0,
+    "links": 0,
+    "switch": 0,
+    "checks": 2,
+    "h2count": 0
+   }
+  },
+  {
+   "idx": 11,
+   "tag": "div",
+   "id": "",
+   "cls": "-mb-96 overflow-hidden bg-gray-50 pt-10 pb-96 contain-[paint",
+   "top": 5950,
+   "h": 1080,
+   "w": 1440,
+   "x": 0,
+   "bg": "rgb(247, 247, 248)",
+   "ownBg": "rgb(247, 247, 248)",
+   "bgImg": null,
+   "radius": "0px",
+   "cssPadT": 112,
+   "cssPadB": 384,
+   "effPadT": 127,
+   "effPadB": -1,
+   "contentL": 115,
+   "contentR": 1300,
+   "contentW": 1185,
+   "containerW": 1264,
+   "heading": {
+    "text": "Trusted around the world",
+    "tag": "p",
+    "size": 32,
+    "weight": "600",
+    "lh": "40px",
+    "ls": "-0.48px",
+    "fam": "geistNumbers",
+    "color": "rgb(19, 19, 22)",
+    "align": "start",
+    "tt": "none",
+    "w": 384,
+    "h": 40,
+    "x": 120,
+    "y": 6128,
+    "lines": 1
+   },
+   "headingFromTop": 178,
+   "sub": {
+    "text": "Join the customers and champions who trust Clerk. Free for your first 50,000 monthly retained users and 100 monthly retained orgs.",
+    "tag": "p",
+    "size": 15,
+    "weight": "400",
+    "lh": "24px",
+    "ls": "normal",
+    "fam": "geistNumbers",
+    "color": "rgb(94, 95, 110)",
+    "align": "start",
+    "tt": "none",
+    "w": 384,
+    "h": 72,
+    "x": 120,
+    "y": 6184,
+    "lines": 3
+   },
+   "subGap": 16,
+   "groupCtas": [
+    "Prompt copied Build with agents"
+   ],
+   "ctaGap": 24,
+   "groupBottom": 360,
+   "headToContent": 65,
+   "allHeadings": [],
+   "cards": {
+    "n": 12,
+    "cols": 1,
+    "rows": 0,
+    "w": 360,
+    "h": 202,
+    "sizes": [
+     "360x302",
+     "360x182",
+     "360x342",
+     "360x182",
+     "360x202",
+     "360x182",
+     "360x202",
+     "360x142",
+     "360x262",
+     "360x262"
+    ],
+    "gap": null,
+    "radius": [
+     [
+      "12px",
+      12
+     ]
+    ],
+    "pad": [
+     [
+      "20px/20px",
+      12
+     ]
+    ],
+    "bg": [
+     [
+      "rgb(247, 247, 248)",
+      12
+     ]
+    ],
+    "border": [
+     [
+      "none",
+      12
+     ]
+    ],
+    "shadow": [
+     [
+      "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0",
+      12
+     ]
+    ]
+   },
+   "words": 586,
+   "snippet": "Trusted around the world Join the customers and champions who trust Clerk. Free for your first 50,000 monthly retained users and 100 monthly retained orgs. Prompt copied Build with agents Clerk's integration gives Supabase developers another incredible option ",
+   "f": {
+    "img": 0,
+    "bigMedia": 0,
+    "video": 0,
+    "canvas": 0,
+    "logoish": 0,
+    "squareIcons": 16,
+    "avatars": 0,
+    "marquee": false,
+    "details": 0,
+    "expanded": 0,
+    "tabs": 0,
+    "tables": 0,
+    "tr": 0,
+    "quotes": 1,
+    "prices": 0,
+    "bigNums": [],
+    "steps": 0,
+    "email": 0,
+    "inputs": 0,
+    "compliance": 0,
+    "integ": 3,
+    "faq": 0,
+    "dates": 0,
+    "sticky": false,
+    "buttons": 1,
+    "links": 12,
+    "switch": 1,
+    "checks": 6,
+    "h2count": 0
+   }
+  }
+ ],
+ "header": {
+  "y": 48,
+  "h": 42,
+  "w": 1440,
+  "pos": "sticky",
+  "bg": "rgba(0, 0, 0, 0)"
+ },
+ "topStrips": [
+  {
+   "y": 48,
+   "h": 42,
+   "w": 1228,
+   "bg": "rgba(248, 248, 248, 0.9)",
+   "text": "Products Docs Changelog Company AI Pricing Sign in Sign up",
+   "size": 16,
+   "weight": "400",
+   "color": "rgb(0, 0, 0)",
+   "links": 3
+  },
+  {
+   "y": 0,
+   "h": 40,
+   "w": 1440,
+   "bg": "rgb(19, 19, 22)",
+   "text": "Clerk raises $50m Series C Learn more",
+   "size": 13,
+   "weight": "500",
+   "color": "rgb(255, 255, 255)",
+   "links": 0
+  }
+ ],
+ "h2": [
+  {
+   "text": "Account",
+   "size": 17,
+   "weight": "700",
+   "ls": "-0.17px",
+   "lh": "24px",
+   "fam": "ui-sans-serif",
+   "y": 364,
+   "x": -176,
+   "w": 140,
+   "h": 24,
+   "align": "start",
+   "words": 1
+  },
+  {
+   "text": "Profile details",
+   "size": 14,
+   "weight": "700",
+   "ls": "-0.14px",
+   "lh": "20px",
+   "fam": "ui-sans-serif",
+   "y": 366,
+   "x": 8,
+   "w": 492,
+   "h": 20,
+   "align": "start",
+   "words": 2
+  },
+  {
+   "text": "Create Organization",
+   "size": 17,
+   "weight": "700",
+   "ls": "-0.17px",
+   "lh": "24px",
+   "fam": "ui-sans-serif",
+   "y": 1328,
+   "x": 192,
+   "w": 313,
+   "h": 23,
+   "align": "start",
+   "words": 2
+  },
+  {
+   "text": "Account",
+   "size": 17,
+   "weight": "700",
+   "ls": "-0.17px",
+   "lh": "24px",
+   "fam": "ui-sans-serif",
+   "y": 1724,
+   "x": -176,
+   "w": 140,
+   "h": 24,
+   "align": "start",
+   "words": 1
+  },
+  {
+   "text": "Billing",
+   "size": 14,
+   "weight": "700",
+   "ls": "-0.14px",
+   "lh": "20px",
+   "fam": "ui-sans-serif",
+   "y": 1726,
+   "x": 8,
+   "w": 492,
+   "h": 20,
+   "align": "start",
+   "words": 1
+  },
+  {
+   "text": "Organization",
+   "size": 17,
+   "weight": "700",
+   "ls": "-0.17px",
+   "lh": "24px",
+   "fam": "ui-sans-serif",
+   "y": 3002,
+   "x": -176,
+   "w": 140,
+   "h": 24,
+   "align": "start",
+   "words": 1
+  },
+  {
+   "text": "Billing",
+   "size": 14,
+   "weight": "700",
+   "ls": "-0.14px",
+   "lh": "20px",
+   "fam": "ui-sans-serif",
+   "y": 3004,
+   "x": 8,
+   "w": 492,
+   "h": 20,
+   "align": "start",
+   "words": 1
+  },
+  {
+   "text": "Organization",
+   "size": 17,
+   "weight": "700",
+   "ls": "-0.17px",
+   "lh": "24px",
+   "fam": "ui-sans-serif",
+   "y": 254,
+   "x": 936,
+   "w": 140,
+   "h": 24,
+   "align": "start",
+   "words": 1
+  },
+  {
+   "text": "General details",
+   "size": 14,
+   "weight": "700",
+   "ls": "-0.14px",
+   "lh": "20px",
+   "fam": "ui-sans-serif",
+   "y": 256,
+   "x": 1120,
+   "w": 492,
+   "h": 20,
+   "align": "start",
+   "words": 2
+  },
+  {
+   "text": "Organization",
+   "size": 20,
+   "weight": "700",
+   "ls": "normal",
+   "lh": "26.6666px",
+   "fam": "ui-sans-serif",
+   "y": 1644,
+   "x": 940,
+   "w": 131,
+   "h": 26,
+   "align": "start",
+   "words": 1
+  },
+  {
+   "text": "Members",
+   "size": 14,
+   "weight": "700",
+   "ls": "-0.14px",
+   "lh": "20px",
+   "fam": "ui-sans-serif",
+   "y": 1646,
+   "x": 1116,
+   "w": 499,
+   "h": 20,
+   "align": "start",
+   "words": 1
+  },
+  {
+   "text": "Organization",
+   "size": 17,
+   "weight": "700",
+   "ls": "-0.17px",
+   "lh": "24px",
+   "fam": "ui-sans-serif",
+   "y": 349,
+   "x": 1672,
+   "w": 140,
+   "h": 24,
+   "align": "start",
+   "words": 1
+  },
+  {
+   "text": "Select your identity provider",
+   "size": 14,
+   "weight": "700",
+   "ls": "-0.14px",
+   "lh": "20px",
+   "fam": "ui-sans-serif",
+   "y": 389,
+   "x": 1856,
+   "w": 192,
+   "h": 20,
+   "align": "start",
+   "words": 4
+  },
+  {
+   "text": "User authentication",
+   "size": 13,
+   "weight": "500",
+   "ls": "normal",
+   "lh": "24px",
+   "fam": "geistNumbers",
+   "y": 1510,
+   "x": 120,
+   "w": 1200,
+   "h": 24,
+   "align": "center",
+   "words": 2
+  },
+  {
+   "text": "Multi-tenancy",
+   "size": 13,
+   "weight": "500",
+   "ls": "normal",
+   "lh": "24px",
+   "fam": "geistNumbers",
+   "y": 3415,
+   "x": 112,
+   "w": 1216,
+   "h": 24,
+   "align": "start",
+   "words": 1
+  },
+  {
+   "text": "Billing",
+   "size": 13,
+   "weight": "500",
+   "ls": "normal",
+   "lh": "24px",
+   "fam": "geistNumbers",
+   "y": 4397,
+   "x": 120,
+   "w": 384,
+   "h": 24,
+   "align": "start",
+   "words": 1
+  },
+  {
+   "text": "Frameworks",
+   "size": 13,
+   "weight": "500",
+   "ls": "normal",
+   "lh": "24px",
+   "fam": "geistNumbers",
+   "y": 5198,
+   "x": 120,
+   "w": 568,
+   "h": 24,
+   "align": "center",
+   "words": 1
+  },
+  {
+   "text": "Integrations",
+   "size": 13,
+   "weight": "500",
+   "ls": "normal",
+   "lh": "24px",
+   "fam": "geistNumbers",
+   "y": 5198,
+   "x": 752,
+   "w": 568,
+   "h": 24,
+   "align": "center",
+   "words": 1
+  }
+ ],
+ "footer": {
+  "top": 6774,
+  "h": 413,
+  "bg": "rgb(247, 247, 248)",
+  "ownBg": "rgba(0, 0, 0, 0)",
+  "bgImg": null,
+  "borderTop": "0px solid rgb(217, 217, 222)",
+  "radius": "0px",
+  "inner": null,
+  "cssPadT": 0,
+  "cssPadB": 0,
+  "effPadT": 0,
+  "effPadB": 80,
+  "contentL": 120,
+  "contentR": 1320,
+  "linkCount": 32,
+  "linkSize": [
+   [
+    "13",
+    32
+   ]
+  ],
+  "linkWeight": [
+   [
+    "500",
+    27
+   ],
+   [
+    "400",
+    5
+   ]
+  ],
+  "linkColor": [
+   [
+    "rgb(19, 19, 22)",
+    27
+   ],
+   [
+    "rgb(94, 95, 110)",
+    5
+   ]
+  ],
+  "cols": [
+   {
+    "x": 422,
+    "y": 6810,
+    "w": 167,
+    "n": 5,
+    "pitch": 28,
+    "head": {
+     "text": "Product",
+     "tag": "div",
+     "size": 13,
+     "weight": "450",
+     "lh": "16px",
+     "ls": "normal",
+     "fam": "geistNumbers",
+     "color": "rgb(147, 148, 161)",
+     "align": "start",
+     "tt": "none",
+     "w": 167,
+     "h": 16,
+     "x": 422,
+     "y": 6774,
+     "lines": 1
+    },
+    "link": {
+     "text": "Authentication",
+     "tag": "a",
+     "size": 13,
+     "weight": "500",
+     "lh": "16px",
+     "ls": "normal",
+     "fam": "geistNumbers",
+     "color": "rgb(19, 19, 22)",
+     "align": "start",
+     "tt": "none",
+     "w": 89,
+     "h": 15,
+     "x": 422,
+     "y": 6810,
+     "lines": 1
+    }
+   },
+   {
+    "x": 605,
+    "y": 6810,
+    "w": 167,
+    "n": 4,
+    "pitch": 28,
+    "head": {
+     "text": "SDKs",
+     "tag": "div",
+     "size": 13,
+     "weight": "450",
+     "lh": "16px",
+     "ls": "normal",
+     "fam": "geistNumbers",
+     "color": "rgb(147, 148, 161)",
+     "align": "start",
+     "tt": "none",
+     "w": 167,
+     "h": 16,
+     "x": 605,
+     "y": 6774,
+     "lines": 1
+    },
+    "link": {
+     "text": "React",
+     "tag": "a",
+     "size": 13,
+     "weight": "500",
+     "lh": "16px",
+     "ls": "normal",
+     "fam": "geistNumbers",
+     "color": "rgb(19, 19, 22)",
+     "align": "start",
+     "tt": "none",
+     "w": 35,
+     "h": 15,
+     "x": 605,
+     "y": 6810,
+     "lines": 1
+    }
+   },
+   {
+    "x": 788,
+    "y": 6810,
+    "w": 167,
+    "n": 7,
+    "pitch": 28,
+    "head": {
+     "text": "Resources",
+     "tag": "div",
+     "size": 13,
+     "weight": "450",
+     "lh": "16px",
+     "ls": "normal",
+     "fam": "geistNumbers",
+     "color": "rgb(147, 148, 161)",
+     "align": "start",
+     "tt": "none",
+     "w": 167,
+     "h": 16,
+     "x": 788,
+     "y": 6774,
+     "lines": 1
+    },
+    "link": {
+     "text": "Documentation",
+     "tag": "a",
+     "size": 13,
+     "weight": "500",
+     "lh": "16px",
+     "ls": "normal",
+     "fam": "geistNumbers",
+     "color": "rgb(19, 19, 22)",
+     "align": "start",
+     "tt": "none",
+     "w": 94,
+     "h": 15,
+     "x": 788,
+     "y": 6810,
+     "lines": 1
+    }
+   },
+   {
+    "x": 970,
+    "y": 6810,
+    "w": 167,
+    "n": 6,
+    "pitch": 28,
+    "head": {
+     "text": "Company",
+     "tag": "div",
+     "size": 13,
+     "weight": "450",
+     "lh": "16px",
+     "ls": "normal",
+     "fam": "geistNumbers",
+     "color": "rgb(147, 148, 161)",
+     "align": "start",
+     "tt": "none",
+     "w": 167,
+     "h": 16,
+     "x": 970,
+     "y": 6774,
+     "lines": 1
+    },
+    "link": {
+     "text": "About",
+     "tag": "a",
+     "size": 13,
+     "weight": "500",
+     "lh": "16px",
+     "ls": "normal",
+     "fam": "geistNumbers",
+     "color": "rgb(19, 19, 22)",
+     "align": "start",
+     "tt": "none",
+     "w": 37,
+     "h": 15,
+     "x": 970,
+     "y": 6810,
+     "lines": 1
+    }
+   },
+   {
+    "x": 1153,
+    "y": 6810,
+    "w": 167,
+    "n": 5,
+    "pitch": 28,
+    "head": {
+     "text": "Legal",
+     "tag": "div",
+     "size": 13,
+     "weight": "450",
+     "lh": "16px",
+     "ls": "normal",
+     "fam": "geistNumbers",
+     "color": "rgb(147, 148, 161)",
+     "align": "start",
+     "tt": "none",
+     "w": 167,
+     "h": 16,
+     "x": 1153,
+     "y": 6774,
+     "lines": 1
+    },
+    "link": {
+     "text": "Terms and conditions",
+     "tag": "a",
+     "size": 13,
+     "weight": "500",
+     "lh": "16px",
+     "ls": "normal",
+     "fam": "geistNumbers",
+     "color": "rgb(19, 19, 22)",
+     "align": "start",
+     "tt": "none",
+     "w": 130,
+     "h": 15,
+     "x": 1153,
+     "y": 6810,
+     "lines": 1
+    }
+   }
+  ],
+  "colCount": 5,
+  "brand": {
+   "x": 122,
+   "y": 18,
+   "w": 62,
+   "h": 18
+  },
+  "big": [],
+  "legal": {
+   "y": 7083,
+   "fromBottom": 80,
+   "text": "© 2026 Clerk, Inc.",
+   "size": 13,
+   "color": "rgb(94, 95, 110)"
+  },
+  "email": 0,
+  "inputs": 0,
+  "status": null,
+  "social": 6,
+  "theme": 0,
+  "lang": 0,
+  "canvas": 0,
+  "video": 0,
+  "svg": 6,
+  "animated": 0,
+  "compliance": 0,
+  "headings": [],
+  "buttons": [],
+  "text": "Product Authentication Multi-tenancy Billing CLI Agents SDKs React Next.js Expo View all Resources Documentation Changelog Glossary Feature requests Startups Students LLM Leaderboard Company About Careers Blog Contact Brand assets Articles Legal Terms and conditions Privacy policy Website terms of use Security Legal Resources Do Not Sell or Share My Personal Information Cookie manager © 2026 Clerk, Inc."
+ },
+ "url": "https://clerk.com",
+ "slug": "clerk",
+ "kind": "home",
+ "site": "clerk",
+ "finalUrl": "https://clerk.com/",
+ "captured": "2026-10-10"
+}

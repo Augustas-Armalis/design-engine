@@ -1,0 +1,1598 @@
+{
+ "vw": 1440,
+ "pageHeight": 7597,
+ "title": "Webflow: The agentic web platform for modern businesses",
+ "bodyBg": "rgb(255, 255, 255)",
+ "htmlBg": "rgba(0, 0, 0, 0)",
+ "bodyFont": "WF Visual Sans Variable",
+ "blocks": [
+  {
+   "idx": 0,
+   "tag": "aside",
+   "id": "",
+   "cls": "nav-banner-wrap",
+   "top": 0,
+   "h": 46,
+   "w": 1440,
+   "x": 0,
+   "bg": "rgb(255, 255, 255)",
+   "ownBg": "rgba(0, 0, 0, 0)",
+   "bgImg": null,
+   "radius": "0px",
+   "cssPadT": 12,
+   "cssPadB": 12,
+   "effPadT": 12,
+   "effPadB": 12,
+   "contentL": 72,
+   "contentR": 1368,
+   "contentW": 1296,
+   "words": 11,
+   "snippet": "The biggest announcements from Webflow Conf '26 - Read the recap↗",
+   "f": {
+    "img": 0,
+    "bigMedia": 0,
+    "video": 0,
+    "canvas": 0,
+    "logoish": 0,
+    "squareIcons": 0,
+    "avatars": 0,
+    "marquee": false,
+    "details": 0,
+    "expanded": 0,
+    "tabs": 0,
+    "tables": 0,
+    "tr": 0,
+    "quotes": 0,
+    "prices": 0,
+    "bigNums": [],
+    "steps": 0,
+    "email": 0,
+    "inputs": 0,
+    "compliance": 0,
+    "integ": 0,
+    "faq": 0,
+    "dates": 0,
+    "sticky": false,
+    "buttons": 0,
+    "links": 1,
+    "switch": 0,
+    "checks": 0,
+    "h2count": 0
+   }
+  },
+  {
+   "idx": 1,
+   "tag": "div",
+   "id": "",
+   "cls": "nav w-nav",
+   "top": 46,
+   "h": 68,
+   "w": 1440,
+   "x": 0,
+   "bg": "rgb(255, 255, 255)",
+   "ownBg": "rgb(255, 255, 255)",
+   "bgImg": null,
+   "radius": "0px",
+   "cssPadT": 0,
+   "cssPadB": 0,
+   "effPadT": 0,
+   "effPadB": 1,
+   "contentL": 72,
+   "contentR": 1368,
+   "contentW": 1296,
+   "containerW": 1296,
+   "words": 17,
+   "snippet": "SKIP TO MAIN CONTENT Platform Source Solutions Resources Enterprise Pricing Log in Contact Sales Start for free",
+   "f": {
+    "img": 0,
+    "bigMedia": 0,
+    "video": 0,
+    "canvas": 0,
+    "logoish": 1,
+    "squareIcons": 0,
+    "avatars": 0,
+    "marquee": false,
+    "details": 0,
+    "expanded": 10,
+    "tabs": 0,
+    "tables": 0,
+    "tr": 0,
+    "quotes": 0,
+    "prices": 0,
+    "bigNums": [],
+    "steps": 0,
+    "email": 0,
+    "inputs": 0,
+    "compliance": 0,
+    "integ": 0,
+    "faq": 0,
+    "dates": 0,
+    "sticky": false,
+    "buttons": 4,
+    "links": 7,
+    "switch": 0,
+    "checks": 22,
+    "h2count": 0
+   }
+  },
+  {
+   "idx": 2,
+   "tag": "section",
+   "id": "",
+   "cls": "section cc-hs-hero",
+   "top": 114,
+   "h": 812,
+   "w": 1440,
+   "x": 0,
+   "bg": "rgb(255, 255, 255)",
+   "ownBg": "rgba(0, 0, 0, 0)",
+   "bgImg": null,
+   "radius": "0px",
+   "cssPadT": 80,
+   "cssPadB": 80,
+   "effPadT": 80,
+   "effPadB": 66,
+   "contentL": -177,
+   "contentR": 4127,
+   "contentW": 4304,
+   "containerW": 1328,
+   "heading": {
+    "text": "Build for what’s next",
+    "tag": "h1",
+    "size": 80,
+    "weight": "600",
+    "lh": "83.2px",
+    "ls": "-0.8px",
+    "fam": "WF Visual Sans Variable",
+    "color": "rgb(8, 8, 8)",
+    "align": "start",
+    "tt": "none",
+    "w": 743,
+    "h": 83,
+    "x": 72,
+    "y": 194,
+    "lines": 1
+   },
+   "headingFromTop": 80,
+   "sub": {
+    "text": "Webflow gives every team the tools to build, manage, and grow a website that drives real revenue.",
+    "tag": "p",
+    "size": 16,
+    "weight": "400",
+    "lh": "25.6px",
+    "ls": "normal",
+    "fam": "WF Visual Sans Variable",
+    "color": "rgb(8, 8, 8)",
+    "align": "start",
+    "tt": "none",
+    "w": 407,
+    "h": 51,
+    "x": 72,
+    "y": 302,
+    "lines": 2
+   },
+   "subGap": 24,
+   "groupCtas": [
+    "Get started",
+    "Talk to Sales"
+   ],
+   "ctaGap": 32,
+   "groupBottom": 322,
+   "headToContent": 80,
+   "allHeadings": [
+    {
+     "t": "h1",
+     "s": 80,
+     "w": "600",
+     "text": "Build for what’s next"
+    }
+   ],
+   "cards": {
+    "n": 4,
+    "cols": 4,
+    "rows": 1,
+    "w": 248,
+    "h": 330,
+    "sizes": [
+     "248x330",
+     "248x330",
+     "248x330",
+     "248x330"
+    ],
+    "gap": null,
+    "radius": [
+     [
+      "8px",
+      4
+     ]
+    ],
+    "pad": [
+     [
+      "0px/0px",
+      4
+     ]
+    ],
+    "bg": [
+     [
+      "rgb(216, 216, 216)",
+      4
+     ]
+    ],
+    "border": [
+     [
+      "none",
+      4
+     ]
+    ],
+    "shadow": [
+     [
+      "none",
+      4
+     ]
+    ]
+   },
+   "words": 125,
+   "snippet": "Build for what’s next Webflow gives every team the tools to build, manage, and grow a website that drives real revenue. Get started Talk to Sales Talk to Sales What marketing teams love about webflow What marketing teams love about Webflow Build and launch web",
+   "f": {
+    "img": 18,
+    "bigMedia": 0,
+    "video": 0,
+    "canvas": 0,
+    "logoish": 2,
+    "squareIcons": 0,
+    "avatars": 0,
+    "marquee": false,
+    "details": 0,
+    "expanded": 1,
+    "tabs": 0,
+    "tables": 0,
+    "tr": 0,
+    "quotes": 0,
+    "prices": 4,
+    "bigNums": [
+     {
+      "t": "$4M+",
+      "s": 32,
+      "w": "600"
+     },
+     {
+      "t": "$200M",
+      "s": 32,
+      "w": "600"
+     },
+     {
+      "t": "$4M+",
+      "s": 32,
+      "w": "600"
+     },
+     {
+      "t": "$200M",
+      "s": 32,
+      "w": "600"
+     }
+    ],
+    "steps": 0,
+    "email": 0,
+    "inputs": 0,
+    "compliance": 0,
+    "integ": 0,
+    "faq": 0,
+    "dates": 0,
+    "sticky": false,
+    "buttons": 15,
+    "links": 2,
+    "switch": 0,
+    "checks": 1,
+    "h2count": 0
+   }
+  },
+  {
+   "idx": 3,
+   "tag": "section",
+   "id": "",
+   "cls": "section u-padding-block-0 u-mb-lg",
+   "top": 991,
+   "h": 84,
+   "w": 1440,
+   "x": 0,
+   "bg": "rgb(255, 255, 255)",
+   "ownBg": "rgba(0, 0, 0, 0)",
+   "bgImg": null,
+   "radius": "0px",
+   "cssPadT": 0,
+   "cssPadB": 0,
+   "effPadT": 1,
+   "effPadB": 0,
+   "contentL": 79,
+   "contentR": 1376,
+   "contentW": 1297,
+   "containerW": 1296,
+   "cards": {
+    "n": 5,
+    "cols": 3,
+    "rows": 1,
+    "w": 160,
+    "h": 173,
+    "sizes": [
+     "160x199",
+     "160x173",
+     "160x173",
+     "160x173",
+     "160x173"
+    ],
+    "gap": 30,
+    "radius": [
+     [
+      "8px",
+      5
+     ]
+    ],
+    "pad": [
+     [
+      "16px/16px",
+      5
+     ]
+    ],
+    "bg": [
+     [
+      "rgb(240, 240, 240)",
+      5
+     ]
+    ],
+    "border": [
+     [
+      "1px rgb(216, 216, 216)",
+      5
+     ]
+    ],
+    "shadow": [
+     [
+      "none",
+      5
+     ]
+    ]
+   },
+   "words": 42,
+   "snippet": "$200M in new pipeline generated post-site launch Read story → 67% decrease in dev ticketing Read story → $6M in cost savings annually Read story → 49.5% reduction in dev time Read story → 1,170% increase in traffic YoY Read story →",
+   "f": {
+    "img": 8,
+    "bigMedia": 0,
+    "video": 0,
+    "canvas": 0,
+    "logoish": 16,
+    "squareIcons": 0,
+    "avatars": 0,
+    "marquee": false,
+    "details": 0,
+    "expanded": 0,
+    "tabs": 0,
+    "tables": 0,
+    "tr": 0,
+    "quotes": 0,
+    "prices": 2,
+    "bigNums": [],
+    "steps": 0,
+    "email": 0,
+    "inputs": 0,
+    "compliance": 0,
+    "integ": 0,
+    "faq": 0,
+    "dates": 0,
+    "sticky": false,
+    "buttons": 0,
+    "links": 5,
+    "switch": 1,
+    "checks": 5,
+    "h2count": 0
+   }
+  },
+  {
+   "idx": 4,
+   "tag": "section",
+   "id": "",
+   "cls": "section",
+   "top": 1108,
+   "h": 1436,
+   "w": 1440,
+   "x": 0,
+   "bg": "rgb(255, 255, 255)",
+   "ownBg": "rgba(0, 0, 0, 0)",
+   "bgImg": null,
+   "radius": "0px",
+   "cssPadT": 80,
+   "cssPadB": 80,
+   "effPadT": 80,
+   "effPadB": 93,
+   "contentL": 72,
+   "contentR": 1368,
+   "contentW": 1296,
+   "containerW": 1328,
+   "heading": {
+    "text": "Where modern teams and agents run the web",
+    "tag": "h3",
+    "size": 32,
+    "weight": "600",
+    "lh": "38.4px",
+    "ls": "normal",
+    "fam": "WF Visual Sans Variable",
+    "color": "rgb(8, 8, 8)",
+    "align": "start",
+    "tt": "none",
+    "w": 520,
+    "h": 77,
+    "x": 184,
+    "y": 2262,
+    "lines": 2
+   },
+   "headingFromTop": 1154,
+   "eyebrow": {
+    "text": "►",
+    "tag": "div",
+    "size": 16,
+    "weight": "500",
+    "lh": "16px",
+    "ls": "-0.16px",
+    "fam": "WF Visual Sans Variable",
+    "color": "rgb(8, 8, 8)",
+    "align": "start",
+    "tt": "none",
+    "w": 14,
+    "h": 16,
+    "x": 635,
+    "y": 2175,
+    "lines": 1
+   },
+   "eyebrowGap": 71,
+   "sub": {
+    "text": "Customize workspaces for every team member.",
+    "tag": "p",
+    "size": 16,
+    "weight": "400",
+    "lh": "25.6px",
+    "ls": "normal",
+    "fam": "WF Visual Sans Variable",
+    "color": "rgb(8, 8, 8)",
+    "align": "start",
+    "tt": "none",
+    "w": 481,
+    "h": 26,
+    "x": 887,
+    "y": 2375,
+    "lines": 1
+   },
+   "subGap": 36,
+   "groupBottom": 1293,
+   "allHeadings": [
+    {
+     "t": "h3",
+     "s": 32,
+     "w": "600",
+     "text": "Where modern teams and agents run the web"
+    }
+   ],
+   "words": 43,
+   "snippet": "Introducing by Webflow ► Watch launch video https://www.youtube.com/watch?v=aYC4SMVspD4 Where modern teams and agents run the web Explore Source Explore Source Connect any codebase and your existing stack. Build agentically or visually. Customize workspaces fo",
+   "f": {
+    "img": 2,
+    "bigMedia": 2,
+    "video": 0,
+    "canvas": 0,
+    "logoish": 0,
+    "squareIcons": 4,
+    "avatars": 0,
+    "marquee": false,
+    "details": 0,
+    "expanded": 0,
+    "tabs": 0,
+    "tables": 0,
+    "tr": 0,
+    "quotes": 0,
+    "prices": 0,
+    "bigNums": [],
+    "steps": 0,
+    "email": 0,
+    "inputs": 0,
+    "compliance": 0,
+    "integ": 1,
+    "faq": 0,
+    "dates": 0,
+    "sticky": false,
+    "buttons": 0,
+    "links": 2,
+    "switch": 0,
+    "checks": 1,
+    "h2count": 1
+   }
+  },
+  {
+   "idx": 5,
+   "tag": "section",
+   "id": "customers",
+   "cls": "section",
+   "top": 2544,
+   "h": 1170,
+   "w": 1440,
+   "x": 0,
+   "bg": "rgb(255, 255, 255)",
+   "ownBg": "rgba(0, 0, 0, 0)",
+   "bgImg": null,
+   "radius": "0px",
+   "cssPadT": 80,
+   "cssPadB": 80,
+   "effPadT": 80,
+   "effPadB": 96,
+   "contentL": 72,
+   "contentR": 3216,
+   "contentW": 3144,
+   "containerW": 1328,
+   "heading": {
+    "text": "300,000+ brands move the needle with Webflow",
+    "tag": "h2",
+    "size": 56,
+    "weight": "600",
+    "lh": "58.24px",
+    "ls": "normal",
+    "fam": "WF Visual Sans Variable",
+    "color": "rgb(8, 8, 8)",
+    "align": "start",
+    "tt": "none",
+    "w": 673,
+    "h": 116,
+    "x": 72,
+    "y": 2624,
+    "lines": 2
+   },
+   "headingFromTop": 80,
+   "groupBottom": 196,
+   "headToContent": 48,
+   "allHeadings": [
+    {
+     "t": "h2",
+     "s": 56,
+     "w": "600",
+     "text": "300,000+ brands move the needle with Webflow"
+    }
+   ],
+   "words": 279,
+   "snippet": "300,000+ brands move the needle with Webflow ← → Read customer story 32 global sites launched in 10 days “With Webflow, we’re not just keeping up, we’re setting the pace. It’s the speedboat that’s helping us move faster than ever before.” Rob Alfano VP of Digi",
+   "f": {
+    "img": 12,
+    "bigMedia": 18,
+    "video": 6,
+    "canvas": 0,
+    "logoish": 6,
+    "squareIcons": 0,
+    "avatars": 0,
+    "marquee": false,
+    "details": 0,
+    "expanded": 0,
+    "tabs": 0,
+    "tables": 0,
+    "tr": 0,
+    "quotes": 6,
+    "prices": 2,
+    "bigNums": [
+     {
+      "t": "32",
+      "s": 40,
+      "w": "600"
+     },
+     {
+      "t": "20%",
+      "s": 40,
+      "w": "600"
+     },
+     {
+      "t": "$6M",
+      "s": 40,
+      "w": "600"
+     },
+     {
+      "t": "98%",
+      "s": 40,
+      "w": "600"
+     },
+     {
+      "t": "56%",
+      "s": 40,
+      "w": "600"
+     },
+     {
+      "t": "1,170%",
+      "s": 40,
+      "w": "600"
+     }
+    ],
+    "steps": 0,
+    "email": 0,
+    "inputs": 0,
+    "compliance": 0,
+    "integ": 0,
+    "faq": 0,
+    "dates": 0,
+    "sticky": false,
+    "buttons": 8,
+    "links": 7,
+    "switch": 1,
+    "checks": 12,
+    "h2count": 1
+   }
+  },
+  {
+   "idx": 6,
+   "tag": "section",
+   "id": "",
+   "cls": "section",
+   "top": 3714,
+   "h": 994,
+   "w": 1440,
+   "x": 0,
+   "bg": "rgb(255, 255, 255)",
+   "ownBg": "rgba(0, 0, 0, 0)",
+   "bgImg": null,
+   "radius": "0px",
+   "cssPadT": 80,
+   "cssPadB": 80,
+   "effPadT": 80,
+   "effPadB": 80,
+   "contentL": 72,
+   "contentR": 1690,
+   "contentW": 1618,
+   "containerW": 1328,
+   "heading": {
+    "text": "Turn your website into a growth engine",
+    "tag": "h2",
+    "size": 56,
+    "weight": "600",
+    "lh": "58.24px",
+    "ls": "normal",
+    "fam": "WF Visual Sans Variable",
+    "color": "rgb(8, 8, 8)",
+    "align": "start",
+    "tt": "none",
+    "w": 521,
+    "h": 116,
+    "x": 72,
+    "y": 3794,
+    "lines": 2
+   },
+   "headingFromTop": 80,
+   "sub": {
+    "text": "Talk to our team about building brand and pipeline on one intuitive platform with AEO, localization, and experimentation built in.",
+    "tag": "p",
+    "size": 16,
+    "weight": "400",
+    "lh": "25.6px",
+    "ls": "normal",
+    "fam": "WF Visual Sans Variable",
+    "color": "rgb(90, 90, 90)",
+    "align": "start",
+    "tt": "none",
+    "w": 521,
+    "h": 51,
+    "x": 72,
+    "y": 3935,
+    "lines": 2
+   },
+   "subGap": 24,
+   "groupBottom": 272,
+   "headToContent": 48,
+   "allHeadings": [
+    {
+     "t": "h2",
+     "s": 56,
+     "w": "600",
+     "text": "Turn your website into a growth engine"
+    }
+   ],
+   "cards": {
+    "n": 2,
+    "cols": 1,
+    "rows": 0,
+    "w": 954,
+    "h": 594,
+    "sizes": [
+     "521x594",
+     "954x564"
+    ],
+    "gap": null,
+    "radius": [
+     [
+      "8px",
+      1
+     ],
+     [
+      "4px",
+      1
+     ]
+    ],
+    "pad": [
+     [
+      "0px/0px",
+      2
+     ]
+    ],
+    "bg": [
+     [
+      "rgba(0, 0, 0, 0)",
+      2
+     ]
+    ],
+    "border": [
+     [
+      "1px rgb(216, 216, 216)",
+      1
+     ],
+     [
+      "none",
+      1
+     ]
+    ],
+    "shadow": [
+     [
+      "none",
+      1
+     ],
+     [
+      "rgba(0, 0, 0, 0.12) 0px 9px 4px 0px, rgba(0, 0, 0, 0.1) 0px 17px 17px 0px, rgba(0, 0, 0, 0.06) 0px 38px 23px 0px, rgba(0",
+      1
+     ]
+    ]
+   },
+   "words": 53,
+   "snippet": "Turn your website into a growth engine Talk to our team about building brand and pipeline on one intuitive platform with AEO, localization, and experimentation built in. Business email First name Last name Company Title Phone Number Contact sales By submitting",
+   "f": {
+    "img": 1,
+    "bigMedia": 1,
+    "video": 0,
+    "canvas": 0,
+    "logoish": 0,
+    "squareIcons": 0,
+    "avatars": 0,
+    "marquee": false,
+    "details": 0,
+    "expanded": 0,
+    "tabs": 0,
+    "tables": 0,
+    "tr": 0,
+    "quotes": 0,
+    "prices": 0,
+    "bigNums": [],
+    "steps": 0,
+    "email": 1,
+    "inputs": 34,
+    "compliance": 0,
+    "integ": 0,
+    "faq": 0,
+    "dates": 0,
+    "sticky": false,
+    "buttons": 1,
+    "links": 2,
+    "switch": 0,
+    "checks": 0,
+    "h2count": 1
+   }
+  },
+  {
+   "idx": 7,
+   "tag": "section",
+   "id": "",
+   "cls": "section",
+   "top": 4708,
+   "h": 568,
+   "w": 1440,
+   "x": 0,
+   "bg": "rgb(255, 255, 255)",
+   "ownBg": "rgba(0, 0, 0, 0)",
+   "bgImg": null,
+   "radius": "0px",
+   "cssPadT": 80,
+   "cssPadB": 80,
+   "effPadT": 80,
+   "effPadB": 80,
+   "contentL": 72,
+   "contentR": 1368,
+   "contentW": 1296,
+   "containerW": 1328,
+   "heading": {
+    "text": "Recent updates",
+    "tag": "h2",
+    "size": 40,
+    "weight": "600",
+    "lh": "48px",
+    "ls": "normal",
+    "fam": "WF Visual Sans Variable",
+    "color": "rgb(8, 8, 8)",
+    "align": "start",
+    "tt": "none",
+    "w": 1296,
+    "h": 48,
+    "x": 72,
+    "y": 4788,
+    "lines": 1
+   },
+   "headingFromTop": 80,
+   "sub": {
+    "text": "The biggest announcements from Webflow Conf '26",
+    "tag": "h3",
+    "size": 20,
+    "weight": "500",
+    "lh": "28px",
+    "ls": "normal",
+    "fam": "WF Visual Sans Variable",
+    "color": "rgb(8, 8, 8)",
+    "align": "start",
+    "tt": "none",
+    "w": 200,
+    "h": 81,
+    "x": 72,
+    "y": 4896,
+    "lines": 3
+   },
+   "subGap": 60,
+   "groupBottom": 269,
+   "headToContent": 51,
+   "allHeadings": [
+    {
+     "t": "h2",
+     "s": 40,
+     "w": "600",
+     "text": "Recent updates"
+    },
+    {
+     "t": "h3",
+     "s": 20,
+     "w": "500",
+     "text": "The biggest announcements from Webflow Conf '26"
+    },
+    {
+     "t": "h3",
+     "s": 20,
+     "w": "500",
+     "text": "For the builders: canvas, CMS, and quality-of-life improvements"
+    },
+    {
+     "t": "h3",
+     "s": 20,
+     "w": "500",
+     "text": "Watch a replay of the opening keynote"
+    }
+   ],
+   "words": 37,
+   "snippet": "Recent updates Blog The biggest announcements from Webflow Conf '26 Read article Blog For the builders: canvas, CMS, and quality-of-life improvements Read article Webflow Conf Watch a replay of the opening keynote Learn more about the MCP",
+   "f": {
+    "img": 3,
+    "bigMedia": 0,
+    "video": 0,
+    "canvas": 0,
+    "logoish": 0,
+    "squareIcons": 0,
+    "avatars": 0,
+    "marquee": false,
+    "details": 0,
+    "expanded": 0,
+    "tabs": 0,
+    "tables": 0,
+    "tr": 0,
+    "quotes": 0,
+    "prices": 0,
+    "bigNums": [],
+    "steps": 0,
+    "email": 0,
+    "inputs": 0,
+    "compliance": 0,
+    "integ": 0,
+    "faq": 0,
+    "dates": 0,
+    "sticky": false,
+    "buttons": 0,
+    "links": 3,
+    "switch": 0,
+    "checks": 0,
+    "h2count": 1
+   }
+  },
+  {
+   "idx": 8,
+   "tag": "section",
+   "id": "",
+   "cls": "webgl_slider_wrap",
+   "top": 5276,
+   "h": 900,
+   "w": 1440,
+   "x": 0,
+   "bg": "rgb(255, 255, 255)",
+   "ownBg": "rgba(0, 0, 0, 0)",
+   "bgImg": null,
+   "radius": "0px",
+   "cssPadT": 0,
+   "cssPadB": 0,
+   "effPadT": 32,
+   "effPadB": 217,
+   "contentL": -288,
+   "contentR": 2172,
+   "contentW": 2460,
+   "containerW": 1021,
+   "heading": {
+    "text": "#MadeinWebflow",
+    "tag": "h1",
+    "size": 80,
+    "weight": "600",
+    "lh": "83.2px",
+    "ls": "-0.8px",
+    "fam": "WF Visual Sans Variable",
+    "color": "rgb(8, 8, 8)",
+    "align": "center",
+    "tt": "none",
+    "w": 1440,
+    "h": 83,
+    "x": 0,
+    "y": 5308,
+    "lines": 1
+   },
+   "headingFromTop": 32,
+   "groupBottom": 115,
+   "headToContent": 102,
+   "allHeadings": [
+    {
+     "t": "h1",
+     "s": 80,
+     "w": "600",
+     "text": "#MadeinWebflow"
+    }
+   ],
+   "cards": {
+    "n": 9,
+    "cols": 9,
+    "rows": 1,
+    "w": 190,
+    "h": 82,
+    "sizes": [
+     "217x82",
+     "148x82",
+     "189x82",
+     "190x82",
+     "206x82",
+     "180x82",
+     "195x82",
+     "164x82",
+     "206x82"
+    ],
+    "gap": null,
+    "radius": [
+     [
+      "8px",
+      9
+     ]
+    ],
+    "pad": [
+     [
+      "16px/16px",
+      9
+     ]
+    ],
+    "bg": [
+     [
+      "rgb(255, 255, 255)",
+      9
+     ]
+    ],
+    "border": [
+     [
+      "1px rgb(224, 224, 224)",
+      9
+     ]
+    ],
+    "shadow": [
+     [
+      "none",
+      9
+     ]
+    ]
+   },
+   "words": 30,
+   "snippet": "#MadeinWebflow Claude Science Clay by Clay Trevor Noah by Off-brand Greenhouse Luffu fauna robotics by O0 fuegofonts by Lit Radian by Uncommon Veo by Kvalifik Buff motion by Shrink Studio",
+   "f": {
+    "img": 20,
+    "bigMedia": 0,
+    "video": 0,
+    "canvas": 0,
+    "logoish": 0,
+    "squareIcons": 20,
+    "avatars": 10,
+    "marquee": false,
+    "details": 0,
+    "expanded": 0,
+    "tabs": 0,
+    "tables": 0,
+    "tr": 0,
+    "quotes": 0,
+    "prices": 0,
+    "bigNums": [],
+    "steps": 0,
+    "email": 0,
+    "inputs": 0,
+    "compliance": 0,
+    "integ": 0,
+    "faq": 0,
+    "dates": 0,
+    "sticky": false,
+    "buttons": 20,
+    "links": 7,
+    "switch": 0,
+    "checks": 10,
+    "h2count": 0
+   }
+  }
+ ],
+ "header": {
+  "y": 46,
+  "h": 68,
+  "w": 1440,
+  "pos": "sticky",
+  "bg": "rgb(255, 255, 255)"
+ },
+ "topStrips": [
+  {
+   "y": 0,
+   "h": 46,
+   "w": 1440,
+   "bg": "rgb(20, 110, 245)",
+   "text": "The biggest announcements from Webflow Conf '26 - Read the recap↗",
+   "size": 14,
+   "weight": "500",
+   "color": "rgb(255, 255, 255)",
+   "links": 0
+  },
+  {
+   "y": 12,
+   "h": 22,
+   "w": 1296,
+   "bg": "rgb(20, 110, 245)",
+   "text": "The biggest announcements from Webflow Conf '26 - Read the recap↗",
+   "size": 14,
+   "weight": "500",
+   "color": "rgb(255, 255, 255)",
+   "links": 0
+  }
+ ],
+ "h2": [
+  {
+   "text": "300,000+ brands move the needle with Webflow",
+   "size": 56,
+   "weight": "600",
+   "ls": "normal",
+   "lh": "58.24px",
+   "fam": "WF Visual Sans Variable",
+   "y": 2624,
+   "x": 72,
+   "w": 673,
+   "h": 116,
+   "align": "start",
+   "words": 7
+  },
+  {
+   "text": "Turn your website into a growth engine",
+   "size": 56,
+   "weight": "600",
+   "ls": "normal",
+   "lh": "58.24px",
+   "fam": "WF Visual Sans Variable",
+   "y": 3794,
+   "x": 72,
+   "w": 521,
+   "h": 116,
+   "align": "start",
+   "words": 7
+  },
+  {
+   "text": "Recent updates",
+   "size": 40,
+   "weight": "600",
+   "ls": "normal",
+   "lh": "48px",
+   "fam": "WF Visual Sans Variable",
+   "y": 4788,
+   "x": 72,
+   "w": 1296,
+   "h": 48,
+   "align": "start",
+   "words": 2
+  },
+  {
+   "text": "Source by Webflow",
+   "size": 20,
+   "weight": "500",
+   "ls": "normal",
+   "lh": "28px",
+   "fam": "WF Visual Sans Variable",
+   "y": 6257,
+   "x": 72,
+   "w": 300,
+   "h": 28,
+   "align": "start",
+   "words": 3
+  },
+  {
+   "text": "Product",
+   "size": 20,
+   "weight": "500",
+   "ls": "normal",
+   "lh": "28px",
+   "fam": "WF Visual Sans Variable",
+   "y": 6381,
+   "x": 72,
+   "w": 300,
+   "h": 28,
+   "align": "start",
+   "words": 1
+  },
+  {
+   "text": "Solutions",
+   "size": 20,
+   "weight": "500",
+   "ls": "normal",
+   "lh": "28px",
+   "fam": "WF Visual Sans Variable",
+   "y": 6257,
+   "x": 404,
+   "w": 300,
+   "h": 28,
+   "align": "start",
+   "words": 1
+  },
+  {
+   "text": "Resources",
+   "size": 20,
+   "weight": "500",
+   "ls": "normal",
+   "lh": "28px",
+   "fam": "WF Visual Sans Variable",
+   "y": 6501,
+   "x": 404,
+   "w": 300,
+   "h": 28,
+   "align": "start",
+   "words": 1
+  },
+  {
+   "text": "Company",
+   "size": 20,
+   "weight": "500",
+   "ls": "normal",
+   "lh": "28px",
+   "fam": "WF Visual Sans Variable",
+   "y": 6257,
+   "x": 736,
+   "w": 300,
+   "h": 28,
+   "align": "start",
+   "words": 1
+  },
+  {
+   "text": "Compare",
+   "size": 20,
+   "weight": "500",
+   "ls": "normal",
+   "lh": "28px",
+   "fam": "WF Visual Sans Variable",
+   "y": 6701,
+   "x": 736,
+   "w": 300,
+   "h": 28,
+   "align": "start",
+   "words": 1
+  },
+  {
+   "text": "Community",
+   "size": 20,
+   "weight": "500",
+   "ls": "normal",
+   "lh": "28px",
+   "fam": "WF Visual Sans Variable",
+   "y": 6257,
+   "x": 1068,
+   "w": 300,
+   "h": 28,
+   "align": "start",
+   "words": 1
+  },
+  {
+   "text": "Get help",
+   "size": 20,
+   "weight": "500",
+   "ls": "normal",
+   "lh": "28px",
+   "fam": "WF Visual Sans Variable",
+   "y": 6621,
+   "x": 1068,
+   "w": 300,
+   "h": 28,
+   "align": "start",
+   "words": 2
+  }
+ ],
+ "footer": {
+  "top": 6176,
+  "h": 1421,
+  "bg": "rgb(255, 255, 255)",
+  "ownBg": "rgb(255, 255, 255)",
+  "bgImg": null,
+  "borderTop": "1px solid rgb(216, 216, 216)",
+  "radius": "0px",
+  "inner": null,
+  "cssPadT": 80,
+  "cssPadB": 32,
+  "effPadT": -5315,
+  "effPadB": -90,
+  "contentL": 72,
+  "contentR": 1526,
+  "linkCount": 76,
+  "linkSize": [
+   [
+    "16",
+    75
+   ],
+   [
+    "14",
+    1
+   ]
+  ],
+  "linkWeight": [
+   [
+    "400",
+    75
+   ],
+   [
+    "500",
+    1
+   ]
+  ],
+  "linkColor": [
+   [
+    "rgb(90, 90, 90)",
+    74
+   ],
+   [
+    "rgb(8, 8, 8)",
+    2
+   ]
+  ],
+  "cols": [
+   {
+    "x": 72,
+    "y": 6433,
+    "w": 300,
+    "n": 23,
+    "pitch": 40,
+    "head": {
+     "text": "Product",
+     "tag": "h2",
+     "size": 20,
+     "weight": "500",
+     "lh": "28px",
+     "ls": "normal",
+     "fam": "WF Visual Sans Variable",
+     "color": "rgb(8, 8, 8)",
+     "align": "start",
+     "tt": "none",
+     "w": 300,
+     "h": 28,
+     "x": 72,
+     "y": 6381,
+     "lines": 1
+    },
+    "link": {
+     "text": "Platform",
+     "tag": "a",
+     "size": 16,
+     "weight": "400",
+     "lh": "24px",
+     "ls": "normal",
+     "fam": "WF Visual Sans Variable",
+     "color": "rgb(90, 90, 90)",
+     "align": "start",
+     "tt": "none",
+     "w": 64,
+     "h": 24,
+     "x": 72,
+     "y": 6433,
+     "lines": 1
+    }
+   },
+   {
+    "x": 404,
+    "y": 6309,
+    "w": 300,
+    "n": 4,
+    "pitch": 40,
+    "head": {
+     "text": "Solutions",
+     "tag": "h2",
+     "size": 20,
+     "weight": "500",
+     "lh": "28px",
+     "ls": "normal",
+     "fam": "WF Visual Sans Variable",
+     "color": "rgb(8, 8, 8)",
+     "align": "start",
+     "tt": "none",
+     "w": 300,
+     "h": 28,
+     "x": 404,
+     "y": 6257,
+     "lines": 1
+    },
+    "link": {
+     "text": "Enterprise",
+     "tag": "a",
+     "size": 16,
+     "weight": "400",
+     "lh": "24px",
+     "ls": "normal",
+     "fam": "WF Visual Sans Variable",
+     "color": "rgb(90, 90, 90)",
+     "align": "start",
+     "tt": "none",
+     "w": 76,
+     "h": 24,
+     "x": 404,
+     "y": 6309,
+     "lines": 1
+    }
+   },
+   {
+    "x": 404,
+    "y": 6553,
+    "w": 300,
+    "n": 13,
+    "pitch": 40,
+    "head": {
+     "text": "Resources",
+     "tag": "h2",
+     "size": 20,
+     "weight": "500",
+     "lh": "28px",
+     "ls": "normal",
+     "fam": "WF Visual Sans Variable",
+     "color": "rgb(8, 8, 8)",
+     "align": "start",
+     "tt": "none",
+     "w": 300,
+     "h": 28,
+     "x": 404,
+     "y": 6501,
+     "lines": 1
+    },
+    "link": {
+     "text": "University",
+     "tag": "a",
+     "size": 16,
+     "weight": "400",
+     "lh": "24px",
+     "ls": "normal",
+     "fam": "WF Visual Sans Variable",
+     "color": "rgb(90, 90, 90)",
+     "align": "start",
+     "tt": "none",
+     "w": 75,
+     "h": 24,
+     "x": 404,
+     "y": 6553,
+     "lines": 1
+    }
+   },
+   {
+    "x": 736,
+    "y": 6309,
+    "w": 300,
+    "n": 9,
+    "pitch": 40,
+    "head": {
+     "text": "Company",
+     "tag": "h2",
+     "size": 20,
+     "weight": "500",
+     "lh": "28px",
+     "ls": "normal",
+     "fam": "WF Visual Sans Variable",
+     "color": "rgb(8, 8, 8)",
+     "align": "start",
+     "tt": "none",
+     "w": 300,
+     "h": 28,
+     "x": 736,
+     "y": 6257,
+     "lines": 1
+    },
+    "link": {
+     "text": "About",
+     "tag": "a",
+     "size": 16,
+     "weight": "400",
+     "lh": "24px",
+     "ls": "normal",
+     "fam": "WF Visual Sans Variable",
+     "color": "rgb(90, 90, 90)",
+     "align": "start",
+     "tt": "none",
+     "w": 46,
+     "h": 24,
+     "x": 736,
+     "y": 6309,
+     "lines": 1
+    }
+   },
+   {
+    "x": 736,
+    "y": 6753,
+    "w": 300,
+    "n": 5,
+    "pitch": 40,
+    "head": {
+     "text": "Compare",
+     "tag": "h2",
+     "size": 20,
+     "weight": "500",
+     "lh": "28px",
+     "ls": "normal",
+     "fam": "WF Visual Sans Variable",
+     "color": "rgb(8, 8, 8)",
+     "align": "start",
+     "tt": "none",
+     "w": 300,
+     "h": 28,
+     "x": 736,
+     "y": 6701,
+     "lines": 1
+    },
+    "link": {
+     "text": "Contentful",
+     "tag": "a",
+     "size": 16,
+     "weight": "400",
+     "lh": "24px",
+     "ls": "normal",
+     "fam": "WF Visual Sans Variable",
+     "color": "rgb(90, 90, 90)",
+     "align": "start",
+     "tt": "none",
+     "w": 80,
+     "h": 24,
+     "x": 736,
+     "y": 6753,
+     "lines": 1
+    }
+   },
+   {
+    "x": 1068,
+    "y": 6309,
+    "w": 300,
+    "n": 7,
+    "pitch": 40,
+    "head": {
+     "text": "Community",
+     "tag": "h2",
+     "size": 20,
+     "weight": "500",
+     "lh": "28px",
+     "ls": "normal",
+     "fam": "WF Visual Sans Variable",
+     "color": "rgb(8, 8, 8)",
+     "align": "start",
+     "tt": "none",
+     "w": 300,
+     "h": 28,
+     "x": 1068,
+     "y": 6257,
+     "lines": 1
+    },
+    "link": {
+     "text": "Discover the community",
+     "tag": "a",
+     "size": 16,
+     "weight": "400",
+     "lh": "24px",
+     "ls": "normal",
+     "fam": "WF Visual Sans Variable",
+     "color": "rgb(90, 90, 90)",
+     "align": "start",
+     "tt": "none",
+     "w": 184,
+     "h": 24,
+     "x": 1068,
+     "y": 6309,
+     "lines": 1
+    }
+   },
+   {
+    "x": 1068,
+    "y": 6673,
+    "w": 300,
+    "n": 5,
+    "pitch": 40,
+    "head": {
+     "text": "Get help",
+     "tag": "h2",
+     "size": 20,
+     "weight": "500",
+     "lh": "28px",
+     "ls": "normal",
+     "fam": "WF Visual Sans Variable",
+     "color": "rgb(8, 8, 8)",
+     "align": "start",
+     "tt": "none",
+     "w": 300,
+     "h": 28,
+     "x": 1068,
+     "y": 6621,
+     "lines": 1
+    },
+    "link": {
+     "text": "Support",
+     "tag": "a",
+     "size": 16,
+     "weight": "400",
+     "lh": "24px",
+     "ls": "normal",
+     "fam": "WF Visual Sans Variable",
+     "color": "rgb(90, 90, 90)",
+     "align": "start",
+     "tt": "none",
+     "w": 61,
+     "h": 24,
+     "x": 1068,
+     "y": 6673,
+     "lines": 1
+    }
+   }
+  ],
+  "colCount": 7,
+  "brand": {
+   "x": 1276,
+   "y": -5315,
+   "w": 20,
+   "h": 20
+  },
+  "big": [
+   {
+    "tag": "img",
+    "w": 806,
+    "h": 502,
+    "fromBottom": -90,
+    "size": 16,
+    "text": "",
+    "color": "rgb(8, 8, 8)"
+   }
+  ],
+  "legal": {
+   "y": 7499,
+   "fromBottom": 72,
+   "text": "© Webflow, Inc. All rights reserved",
+   "size": 16,
+   "color": "rgb(90, 90, 90)"
+  },
+  "email": 0,
+  "inputs": 0,
+  "status": "status",
+  "social": 6,
+  "theme": 0,
+  "lang": 0,
+  "canvas": 0,
+  "video": 0,
+  "svg": 10,
+  "animated": 0,
+  "compliance": 0,
+  "headings": [],
+  "buttons": [
+   "Made in Webflow"
+  ],
+  "text": "Source by Webflow Research preview Product Platform Design Edit content Interactions GSAP Page building Shared Libraries Collaboration CMS Hosting Localize Security Ecommerce Analyze Optimize SEO MCP NEW AEO NEW Webflow Cloud DevLinkLABS Figma to WebflowLABS Accessibility AI Solutions Enterprise Global alliances Agencies Freelancers Resources University Blog Customer stories Webinars & ebooks Apps Libraries Templates Developers Made in Webflow Glossary Livestreams The Webflow Way Business Value Calculator Company About CareersWE'RE HIRING Press Webflow Ventures Webflow Shop Terms of Service Privacy policy Cookie policy Accessibility statement Compare Contentful Framer Sitecore Wix WordPress Community Discover the community Partner with Webflow Certified Partners Become a template designer Become an affiliate Become a Global Leader Find a meetup near you Get help Support Pricing Status Co"
+ },
+ "url": "https://webflow.com",
+ "slug": "webflow",
+ "kind": "home",
+ "site": "webflow",
+ "finalUrl": "https://webflow.com/",
+ "captured": "2026-10-10"
+}

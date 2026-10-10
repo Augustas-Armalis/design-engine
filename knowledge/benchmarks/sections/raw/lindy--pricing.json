@@ -1,0 +1,1217 @@
+{
+ "vw": 1440,
+ "pageHeight": 5905,
+ "title": "Pricing - Lindy",
+ "bodyBg": "rgba(0, 0, 0, 0)",
+ "htmlBg": "rgb(252, 249, 248)",
+ "bodyFont": "Manrope",
+ "blocks": [
+  {
+   "idx": 0,
+   "tag": "section",
+   "id": "",
+   "cls": "pricing-hero container",
+   "top": 0,
+   "h": 1198,
+   "w": 1184,
+   "x": 128,
+   "bg": "rgb(252, 249, 248)",
+   "ownBg": "rgba(0, 0, 0, 0)",
+   "bgImg": null,
+   "radius": "0px",
+   "cssPadT": 144,
+   "cssPadB": 61.71,
+   "effPadT": 144,
+   "effPadB": 62,
+   "contentL": 149,
+   "contentR": 1291,
+   "contentW": 1142,
+   "containerW": 1184,
+   "heading": {
+    "text": "The teammate that punches above its price.",
+    "tag": "h1",
+    "size": 72,
+    "weight": "700",
+    "lh": "75.6px",
+    "ls": "-1.44px",
+    "fam": "Manrope",
+    "color": "rgb(15, 30, 46)",
+    "align": "center",
+    "tt": "none",
+    "w": 940,
+    "h": 151,
+    "x": 250,
+    "y": 144,
+    "lines": 2
+   },
+   "headingFromTop": 144,
+   "sub": {
+    "text": "Start with $50 in free credits. No credit card required.",
+    "tag": "p",
+    "size": 20,
+    "weight": "500",
+    "lh": "30px",
+    "ls": "-0.16px",
+    "fam": "Manrope",
+    "color": "rgb(15, 30, 46)",
+    "align": "center",
+    "tt": "none",
+    "w": 601,
+    "h": 30,
+    "x": 420,
+    "y": 319,
+    "lines": 1
+   },
+   "subGap": 23,
+   "groupBottom": 349,
+   "headToContent": 111,
+   "allHeadings": [
+    {
+     "t": "h1",
+     "s": 72,
+     "w": "700",
+     "text": "The teammate that punches above its price."
+    },
+    {
+     "t": "h3",
+     "s": 24,
+     "w": "700",
+     "text": "Free"
+    },
+    {
+     "t": "h3",
+     "s": 24,
+     "w": "700",
+     "text": "Team"
+    },
+    {
+     "t": "h3",
+     "s": 24,
+     "w": "700",
+     "text": "Enterprise"
+    }
+   ],
+   "cards": {
+    "n": 3,
+    "cols": 3,
+    "rows": 1,
+    "w": 384,
+    "h": 591,
+    "sizes": [
+     "384x591",
+     "384x591",
+     "384x591"
+    ],
+    "gap": 16,
+    "radius": [
+     [
+      "12px",
+      3
+     ]
+    ],
+    "pad": [
+     [
+      "20px/20px",
+      3
+     ]
+    ],
+    "bg": [
+     [
+      "rgb(255, 255, 255)",
+      3
+     ]
+    ],
+    "border": [
+     [
+      "1px rgba(0, 0, 0, 0.08)",
+      2
+     ],
+     [
+      "1px rgb(250, 199, 117)",
+      1
+     ]
+    ],
+    "shadow": [
+     [
+      "none",
+      3
+     ]
+    ]
+   },
+   "words": 148,
+   "snippet": "The teammate that punches above its price. Start with $50 in free credits. No credit card required. Free Give Lindy real work before you pay. $ 0 $50 in credits for free Try for free Everything you need to get started No credit card required Setup in 2 minutes",
+   "f": {
+    "img": 1,
+    "bigMedia": 0,
+    "video": 0,
+    "canvas": 0,
+    "logoish": 1,
+    "squareIcons": 3,
+    "avatars": 0,
+    "marquee": false,
+    "details": 0,
+    "expanded": 1,
+    "tabs": 0,
+    "tables": 0,
+    "tr": 0,
+    "quotes": 0,
+    "prices": 8,
+    "bigNums": [
+     {
+      "t": "$ 0",
+      "s": 48,
+      "w": "700"
+     },
+     {
+      "t": "29.99",
+      "s": 48,
+      "w": "700"
+     }
+    ],
+    "steps": 0,
+    "email": 0,
+    "inputs": 0,
+    "compliance": 3,
+    "integ": 0,
+    "faq": 0,
+    "dates": 0,
+    "sticky": false,
+    "buttons": 4,
+    "links": 5,
+    "switch": 0,
+    "checks": 2,
+    "h2count": 0
+   }
+  },
+  {
+   "idx": 1,
+   "tag": "header",
+   "id": "",
+   "cls": "site-header has-demo",
+   "top": 16,
+   "h": 58,
+   "w": 1184,
+   "x": 128,
+   "bg": "rgb(252, 249, 248)",
+   "ownBg": "rgb(252, 249, 248)",
+   "bgImg": null,
+   "radius": "12px",
+   "cssPadT": 8,
+   "cssPadB": 8,
+   "effPadT": 9,
+   "effPadB": 9,
+   "contentL": 145,
+   "contentR": 1278,
+   "contentW": 1133,
+   "heading": {
+    "text": "Resources",
+    "tag": "h2",
+    "size": 12.08,
+    "weight": "500",
+    "lh": "18.12px",
+    "ls": "-0.1208px",
+    "fam": "Manrope",
+    "color": "rgb(15, 30, 46)",
+    "align": "start",
+    "tt": "uppercase",
+    "w": 151,
+    "h": 18,
+    "x": 801,
+    "y": 98,
+    "lines": 1
+   },
+   "headingFromTop": 82,
+   "eyebrow": {
+    "text": "Book a demo",
+    "tag": "span",
+    "size": 14,
+    "weight": "600",
+    "lh": "14px",
+    "ls": "-0.14px",
+    "fam": "Manrope",
+    "color": "rgb(71, 74, 85)",
+    "align": "start",
+    "tt": "none",
+    "w": 83,
+    "h": 14,
+    "x": 1079,
+    "y": 38,
+    "lines": 1,
+    "chip": {
+     "bg": "rgb(255, 255, 255)",
+     "border": "1px solid rgb(243, 243, 243)",
+     "radius": "12px",
+     "h": 40,
+     "padX": "16px"
+    }
+   },
+   "eyebrowGap": 46,
+   "groupBottom": 100,
+   "allHeadings": [
+    {
+     "t": "h2",
+     "s": 12.08,
+     "w": "500",
+     "text": "Resources"
+    },
+    {
+     "t": "h2",
+     "s": 12.08,
+     "w": "500",
+     "text": "Blog Topics"
+    }
+   ],
+   "words": 16,
+   "snippet": "Hire Lindy for Integrations Pricing Security Enterprise Resources Log in Book a demo Try for free",
+   "f": {
+    "img": 0,
+    "bigMedia": 0,
+    "video": 0,
+    "canvas": 0,
+    "logoish": 1,
+    "squareIcons": 0,
+    "avatars": 0,
+    "marquee": false,
+    "details": 4,
+    "expanded": 1,
+    "tabs": 0,
+    "tables": 0,
+    "tr": 0,
+    "quotes": 0,
+    "prices": 0,
+    "bigNums": [],
+    "steps": 0,
+    "email": 0,
+    "inputs": 0,
+    "compliance": 0,
+    "integ": 1,
+    "faq": 0,
+    "dates": 0,
+    "sticky": false,
+    "buttons": 2,
+    "links": 35,
+    "switch": 0,
+    "checks": 2,
+    "h2count": 0
+   }
+  },
+  {
+   "idx": 2,
+   "tag": "section",
+   "id": "included",
+   "cls": "included section container",
+   "top": 1198,
+   "h": 809,
+   "w": 1184,
+   "x": 128,
+   "bg": "rgb(252, 249, 248)",
+   "ownBg": "rgba(0, 0, 0, 0)",
+   "bgImg": null,
+   "radius": "0px",
+   "cssPadT": 64,
+   "cssPadB": 96,
+   "effPadT": 64,
+   "effPadB": 97,
+   "contentL": 128,
+   "contentR": 1312,
+   "contentW": 1184,
+   "containerW": 1184,
+   "heading": {
+    "text": "Everything included right out of the box.",
+    "tag": "h2",
+    "size": 48,
+    "weight": "700",
+    "lh": "50.4px",
+    "ls": "-0.96px",
+    "fam": "Manrope",
+    "color": "rgb(15, 30, 46)",
+    "align": "center",
+    "tt": "none",
+    "w": 1184,
+    "h": 101,
+    "x": 128,
+    "y": 1308,
+    "lines": 2
+   },
+   "headingFromTop": 110,
+   "sub": {
+    "text": "Slack-native teammate in threads + mentions",
+    "tag": "li",
+    "size": 14.08,
+    "weight": "600",
+    "lh": "21.12px",
+    "ls": "-0.16px",
+    "fam": "Manrope",
+    "color": "rgb(15, 30, 46)",
+    "align": "start",
+    "tt": "none",
+    "w": 393,
+    "h": 69,
+    "x": 129,
+    "y": 1490,
+    "lines": 3
+   },
+   "subGap": 81,
+   "groupBottom": 361,
+   "allHeadings": [
+    {
+     "t": "h2",
+     "s": 48,
+     "w": "700",
+     "text": "Everything included right out of the box."
+    }
+   ],
+   "cards": {
+    "n": 18,
+    "cols": 3,
+    "rows": 6,
+    "w": 393,
+    "h": 69,
+    "sizes": [
+     "393x69",
+     "393x69",
+     "393x69",
+     "393x69",
+     "393x69",
+     "393x69",
+     "393x69",
+     "393x69",
+     "393x69",
+     "393x69"
+    ],
+    "gap": 1,
+    "radius": [
+     [
+      "0px",
+      18
+     ]
+    ],
+    "pad": [
+     [
+      "24px/24px",
+      18
+     ]
+    ],
+    "bg": [
+     [
+      "rgb(252, 249, 248)",
+      18
+     ]
+    ],
+    "border": [
+     [
+      "none",
+      18
+     ]
+    ],
+    "shadow": [
+     [
+      "none",
+      18
+     ]
+    ]
+   },
+   "words": 88,
+   "snippet": "Everything included right out of the box. Slack-native teammate in threads + mentions Scheduled routines Persistent workspace context 40+ skills, plus create your own Shared meeting library and folders Meeting recording and notes Meeting scheduling, prep and f",
+   "f": {
+    "img": 0,
+    "bigMedia": 0,
+    "video": 0,
+    "canvas": 0,
+    "logoish": 1,
+    "squareIcons": 0,
+    "avatars": 0,
+    "marquee": false,
+    "details": 0,
+    "expanded": 0,
+    "tabs": 0,
+    "tables": 0,
+    "tr": 0,
+    "quotes": 0,
+    "prices": 0,
+    "bigNums": [],
+    "steps": 0,
+    "email": 0,
+    "inputs": 0,
+    "compliance": 0,
+    "integ": 3,
+    "faq": 0,
+    "dates": 0,
+    "sticky": false,
+    "buttons": 0,
+    "links": 0,
+    "switch": 0,
+    "checks": 0,
+    "h2count": 1
+   }
+  },
+  {
+   "idx": 3,
+   "tag": "section",
+   "id": "",
+   "cls": "credits-section section container",
+   "top": 2006,
+   "h": 1528,
+   "w": 1184,
+   "x": 128,
+   "bg": "rgb(252, 249, 248)",
+   "ownBg": "rgba(0, 0, 0, 0)",
+   "bgImg": null,
+   "radius": "0px",
+   "cssPadT": 64,
+   "cssPadB": 64,
+   "effPadT": 64,
+   "effPadB": 65,
+   "contentL": 129,
+   "contentR": 1311,
+   "contentW": 1182,
+   "containerW": 1184,
+   "heading": {
+    "text": "What’s a credit?",
+    "tag": "h2",
+    "size": 48,
+    "weight": "700",
+    "lh": "50.4px",
+    "ls": "-0.96px",
+    "fam": "Manrope",
+    "color": "rgb(15, 30, 46)",
+    "align": "center",
+    "tt": "none",
+    "w": 650,
+    "h": 50,
+    "x": 395,
+    "y": 2103,
+    "lines": 1
+   },
+   "headingFromTop": 97,
+   "eyebrow": {
+    "text": "HOW USAGE WORKS",
+    "tag": "p",
+    "size": 14.08,
+    "weight": "700",
+    "lh": "21.12px",
+    "ls": "1.408px",
+    "fam": "Manrope",
+    "color": "rgb(136, 115, 61)",
+    "align": "center",
+    "tt": "uppercase",
+    "w": 650,
+    "h": 21,
+    "x": 395,
+    "y": 2070,
+    "lines": 1
+   },
+   "eyebrowGap": 12,
+   "sub": {
+    "text": "Credits measure the work Lindy does. You only use them when Lindy is working.",
+    "tag": "p",
+    "size": 16,
+    "weight": "500",
+    "lh": "24px",
+    "ls": "-0.16px",
+    "fam": "Manrope",
+    "color": "rgb(15, 30, 46)",
+    "align": "center",
+    "tt": "none",
+    "w": 401,
+    "h": 48,
+    "x": 520,
+    "y": 2170,
+    "lines": 2
+   },
+   "subGap": 16,
+   "groupBottom": 212,
+   "headToContent": 64,
+   "allHeadings": [
+    {
+     "t": "h2",
+     "s": 48,
+     "w": "700",
+     "text": "What’s a credit?"
+    },
+    {
+     "t": "h3",
+     "s": 32,
+     "w": "700",
+     "text": "2-250 Credits"
+    },
+    {
+     "t": "h3",
+     "s": 32,
+     "w": "700",
+     "text": "250-1,000 Credits"
+    },
+    {
+     "t": "h3",
+     "s": 32,
+     "w": "700",
+     "text": "1,000-2,500 Credits"
+    },
+    {
+     "t": "h3",
+     "s": 24,
+     "w": "700",
+     "text": "Model agnostic"
+    },
+    {
+     "t": "h3",
+     "s": 24,
+     "w": "700",
+     "text": "One pool, whole team"
+    },
+    {
+     "t": "h3",
+     "s": 24,
+     "w": "700",
+     "text": "No surprise bills"
+    }
+   ],
+   "cards": {
+    "n": 6,
+    "cols": 3,
+    "rows": 1,
+    "w": 579,
+    "h": 303,
+    "sizes": [
+     "579x245",
+     "579x245",
+     "579x245",
+     "384x303",
+     "384x303",
+     "384x303"
+    ],
+    "gap": 16,
+    "radius": [
+     [
+      "8px",
+      3
+     ],
+     [
+      "12px",
+      3
+     ]
+    ],
+    "pad": [
+     [
+      "0px/0px",
+      6
+     ]
+    ],
+    "bg": [
+     [
+      "rgb(245, 239, 232)",
+      3
+     ],
+     [
+      "rgb(255, 255, 255)",
+      3
+     ]
+    ],
+    "border": [
+     [
+      "none",
+      3
+     ],
+     [
+      "1px rgb(222, 219, 216)",
+      3
+     ]
+    ],
+    "shadow": [
+     [
+      "none",
+      6
+     ]
+    ]
+   },
+   "words": 149,
+   "snippet": "HOW USAGE WORKS What’s a credit? Credits measure the work Lindy does. You only use them when Lindy is working. Everyday Asks 2-250 Credits Answers, summaries, lookups and updates in your tools, closing out a meeting, drafting a reply. Deep work 250-1,000 Credi",
+   "f": {
+    "img": 6,
+    "bigMedia": 3,
+    "video": 0,
+    "canvas": 0,
+    "logoish": 0,
+    "squareIcons": 0,
+    "avatars": 0,
+    "marquee": false,
+    "details": 0,
+    "expanded": 0,
+    "tabs": 0,
+    "tables": 0,
+    "tr": 0,
+    "quotes": 0,
+    "prices": 0,
+    "bigNums": [],
+    "steps": 0,
+    "email": 0,
+    "inputs": 0,
+    "compliance": 0,
+    "integ": 0,
+    "faq": 0,
+    "dates": 0,
+    "sticky": false,
+    "buttons": 0,
+    "links": 0,
+    "switch": 0,
+    "checks": 0,
+    "h2count": 4
+   }
+  },
+  {
+   "idx": 4,
+   "tag": "section",
+   "id": "",
+   "cls": "faq section",
+   "top": 3534,
+   "h": 1001,
+   "w": 1440,
+   "x": 0,
+   "bg": "rgb(252, 249, 248)",
+   "ownBg": "rgba(0, 0, 0, 0)",
+   "bgImg": null,
+   "radius": "0px",
+   "cssPadT": 64,
+   "cssPadB": 64,
+   "effPadT": 64,
+   "effPadB": 81,
+   "contentL": 232,
+   "contentR": 1208,
+   "contentW": 976,
+   "containerW": 976,
+   "heading": {
+    "text": "FAQ.",
+    "tag": "h2",
+    "size": 56,
+    "weight": "700",
+    "lh": "58.8px",
+    "ls": "-1.12px",
+    "fam": "Manrope",
+    "color": "rgb(15, 30, 46)",
+    "align": "center",
+    "tt": "none",
+    "w": 976,
+    "h": 59,
+    "x": 232,
+    "y": 3598,
+    "lines": 1
+   },
+   "headingFromTop": 64,
+   "groupBottom": 123,
+   "allHeadings": [
+    {
+     "t": "h2",
+     "s": 56,
+     "w": "700",
+     "text": "FAQ."
+    }
+   ],
+   "words": 76,
+   "snippet": "FAQ. How do credits work? ⌄ Do unused credits roll over? ⌄ What happens if we run out of credits? ⌄ Who actually needs a paid seat? ⌄ How does billing and seat management work? ⌄ Will Lindy do anything without my approval? ⌄ Is our data secure? ⌄ Can I try Lin",
+   "f": {
+    "img": 0,
+    "bigMedia": 0,
+    "video": 0,
+    "canvas": 0,
+    "logoish": 0,
+    "squareIcons": 0,
+    "avatars": 0,
+    "marquee": false,
+    "details": 20,
+    "expanded": 10,
+    "tabs": 0,
+    "tables": 0,
+    "tr": 0,
+    "quotes": 0,
+    "prices": 0,
+    "bigNums": [],
+    "steps": 0,
+    "email": 0,
+    "inputs": 0,
+    "compliance": 0,
+    "integ": 0,
+    "faq": 1,
+    "dates": 0,
+    "sticky": false,
+    "buttons": 0,
+    "links": 1,
+    "switch": 0,
+    "checks": 0,
+    "h2count": 1
+   }
+  },
+  {
+   "idx": 5,
+   "tag": "section",
+   "id": "prefooter",
+   "cls": "container cta-section",
+   "top": 4599,
+   "h": 610,
+   "w": 1184,
+   "x": 128,
+   "bg": "rgb(252, 249, 248)",
+   "ownBg": "rgba(0, 0, 0, 0)",
+   "bgImg": null,
+   "radius": "24px",
+   "cssPadT": 0,
+   "cssPadB": 0,
+   "effPadT": 0,
+   "effPadB": 0,
+   "contentL": 128,
+   "contentR": 1312,
+   "contentW": 1184,
+   "containerW": 1184,
+   "heading": {
+    "text": "Start with $50 in free credits.",
+    "tag": "h2",
+    "size": 72,
+    "weight": "700",
+    "lh": "75.6px",
+    "ls": "-1.44px",
+    "fam": "Manrope",
+    "color": "rgb(15, 30, 46)",
+    "align": "center",
+    "tt": "none",
+    "w": 948,
+    "h": 151,
+    "x": 246,
+    "y": 4727,
+    "lines": 2
+   },
+   "headingFromTop": 128,
+   "sub": {
+    "text": "Put Lindy to work in two minutes.",
+    "tag": "p",
+    "size": 20,
+    "weight": "500",
+    "lh": "30px",
+    "ls": "-0.16px",
+    "fam": "Manrope",
+    "color": "rgb(15, 30, 46)",
+    "align": "center",
+    "tt": "none",
+    "w": 301,
+    "h": 30,
+    "x": 570,
+    "y": 4910,
+    "lines": 1
+   },
+   "subGap": 32,
+   "groupCtas": [
+    "Try for free"
+   ],
+   "ctaGap": 32,
+   "groupBottom": 413,
+   "allHeadings": [
+    {
+     "t": "h2",
+     "s": 72,
+     "w": "700",
+     "text": "Start with $50 in free credits."
+    }
+   ],
+   "words": 20,
+   "snippet": "Start with $50 in free credits. Put Lindy to work in two minutes. Try for free No credit card required",
+   "f": {
+    "img": 2,
+    "bigMedia": 1,
+    "video": 0,
+    "canvas": 0,
+    "logoish": 1,
+    "squareIcons": 0,
+    "avatars": 0,
+    "marquee": false,
+    "details": 0,
+    "expanded": 0,
+    "tabs": 0,
+    "tables": 0,
+    "tr": 0,
+    "quotes": 0,
+    "prices": 1,
+    "bigNums": [],
+    "steps": 0,
+    "email": 0,
+    "inputs": 0,
+    "compliance": 0,
+    "integ": 0,
+    "faq": 0,
+    "dates": 0,
+    "sticky": false,
+    "buttons": 1,
+    "links": 2,
+    "switch": 0,
+    "checks": 0,
+    "h2count": 1
+   }
+  }
+ ],
+ "header": {
+  "y": 16,
+  "h": 58,
+  "w": 1184,
+  "pos": "fixed",
+  "bg": "rgb(252, 249, 248)"
+ },
+ "topStrips": [],
+ "h2": [
+  {
+   "text": "Resources",
+   "size": 12.08,
+   "weight": "500",
+   "ls": "-0.1208px",
+   "lh": "18.12px",
+   "fam": "Manrope",
+   "y": 98,
+   "x": 801,
+   "w": 151,
+   "h": 18,
+   "align": "start",
+   "words": 1
+  },
+  {
+   "text": "Blog Topics",
+   "size": 12.08,
+   "weight": "500",
+   "ls": "-0.1208px",
+   "lh": "18.12px",
+   "fam": "Manrope",
+   "y": 98,
+   "x": 1016,
+   "w": 125,
+   "h": 18,
+   "align": "start",
+   "words": 2
+  },
+  {
+   "text": "Everything included right out of the box.",
+   "size": 48,
+   "weight": "700",
+   "ls": "-0.96px",
+   "lh": "50.4px",
+   "fam": "Manrope",
+   "y": 1308,
+   "x": 128,
+   "w": 1184,
+   "h": 101,
+   "align": "center",
+   "words": 7
+  },
+  {
+   "text": "What’s a credit?",
+   "size": 48,
+   "weight": "700",
+   "ls": "-0.96px",
+   "lh": "50.4px",
+   "fam": "Manrope",
+   "y": 2103,
+   "x": 395,
+   "w": 650,
+   "h": 50,
+   "align": "center",
+   "words": 3
+  },
+  {
+   "text": "FAQ.",
+   "size": 56,
+   "weight": "700",
+   "ls": "-1.12px",
+   "lh": "58.8px",
+   "fam": "Manrope",
+   "y": 3598,
+   "x": 232,
+   "w": 976,
+   "h": 59,
+   "align": "center",
+   "words": 1
+  },
+  {
+   "text": "Start with $50 in free credits.",
+   "size": 72,
+   "weight": "700",
+   "ls": "-1.44px",
+   "lh": "75.6px",
+   "fam": "Manrope",
+   "y": 4727,
+   "x": 246,
+   "w": 948,
+   "h": 151,
+   "align": "center",
+   "words": 6
+  },
+  {
+   "text": "Hire Lindy for",
+   "size": 14.08,
+   "weight": "600",
+   "ls": "-0.1408px",
+   "lh": "21.12px",
+   "fam": "Manrope",
+   "y": 5407,
+   "x": 128,
+   "w": 288,
+   "h": 21,
+   "align": "start",
+   "words": 3
+  },
+  {
+   "text": "Product",
+   "size": 14.08,
+   "weight": "600",
+   "ls": "-0.1408px",
+   "lh": "21.12px",
+   "fam": "Manrope",
+   "y": 5407,
+   "x": 432,
+   "w": 208,
+   "h": 21,
+   "align": "start",
+   "words": 1
+  },
+  {
+   "text": "Enterprise",
+   "size": 14.08,
+   "weight": "600",
+   "ls": "-0.1408px",
+   "lh": "21.12px",
+   "fam": "Manrope",
+   "y": 5407,
+   "x": 656,
+   "w": 208,
+   "h": 21,
+   "align": "start",
+   "words": 1
+  },
+  {
+   "text": "Resources",
+   "size": 14.08,
+   "weight": "600",
+   "ls": "-0.1408px",
+   "lh": "21.12px",
+   "fam": "Manrope",
+   "y": 5407,
+   "x": 880,
+   "w": 208,
+   "h": 21,
+   "align": "start",
+   "words": 1
+  },
+  {
+   "text": "Legal",
+   "size": 14.08,
+   "weight": "600",
+   "ls": "-0.1408px",
+   "lh": "21.12px",
+   "fam": "Manrope",
+   "y": 5407,
+   "x": 1104,
+   "w": 208,
+   "h": 21,
+   "align": "start",
+   "words": 1
+  }
+ ],
+ "footer": {
+  "top": 5274,
+  "h": 632,
+  "bg": "rgb(252, 249, 248)",
+  "ownBg": "rgba(0, 0, 0, 0)",
+  "bgImg": null,
+  "borderTop": "0px none rgb(15, 30, 46)",
+  "radius": "0px",
+  "inner": null,
+  "cssPadT": 64,
+  "cssPadB": 64,
+  "effPadT": 68,
+  "effPadB": 64,
+  "contentL": 128,
+  "contentR": 1312,
+  "linkCount": 26,
+  "linkSize": [
+   [
+    "14.08",
+    22
+   ],
+   [
+    "16",
+    4
+   ]
+  ],
+  "linkWeight": [
+   [
+    "500",
+    26
+   ]
+  ],
+  "linkColor": [
+   [
+    "rgba(15, 30, 46, 0.8)",
+    22
+   ],
+   [
+    "rgb(15, 30, 46)",
+    4
+   ]
+  ],
+  "cols": [
+   {
+    "x": 128,
+    "y": 5407,
+    "w": 288,
+    "n": 8,
+    "pitch": 33,
+    "head": null,
+    "link": {
+     "text": "Paid ads",
+     "tag": "a",
+     "size": 14.08,
+     "weight": "500",
+     "lh": "21.12px",
+     "ls": "-0.1408px",
+     "fam": "Manrope",
+     "color": "rgba(15, 30, 46, 0.8)",
+     "align": "start",
+     "tt": "none",
+     "w": 288,
+     "h": 21,
+     "x": 128,
+     "y": 5440,
+     "lines": 1
+    }
+   },
+   {
+    "x": 432,
+    "y": 5407,
+    "w": 208,
+    "n": 4,
+    "pitch": 33,
+    "head": null,
+    "link": {
+     "text": "Integrations",
+     "tag": "a",
+     "size": 14.08,
+     "weight": "500",
+     "lh": "21.12px",
+     "ls": "-0.1408px",
+     "fam": "Manrope",
+     "color": "rgba(15, 30, 46, 0.8)",
+     "align": "start",
+     "tt": "none",
+     "w": 208,
+     "h": 21,
+     "x": 432,
+     "y": 5440,
+     "lines": 1
+    }
+   },
+   {
+    "x": 656,
+    "y": 5407,
+    "w": 208,
+    "n": 2,
+    "pitch": 33,
+    "head": null,
+    "link": {
+     "text": "Case Studies",
+     "tag": "a",
+     "size": 14.08,
+     "weight": "500",
+     "lh": "21.12px",
+     "ls": "-0.1408px",
+     "fam": "Manrope",
+     "color": "rgba(15, 30, 46, 0.8)",
+     "align": "start",
+     "tt": "none",
+     "w": 208,
+     "h": 21,
+     "x": 656,
+     "y": 5440,
+     "lines": 1
+    }
+   },
+   {
+    "x": 880,
+    "y": 5407,
+    "w": 208,
+    "n": 5,
+    "pitch": 33,
+    "head": null,
+    "link": {
+     "text": "Docs",
+     "tag": "a",
+     "size": 14.08,
+     "weight": "500",
+     "lh": "21.12px",
+     "ls": "-0.1408px",
+     "fam": "Manrope",
+     "color": "rgba(15, 30, 46, 0.8)",
+     "align": "start",
+     "tt": "none",
+     "w": 208,
+     "h": 21,
+     "x": 880,
+     "y": 5440,
+     "lines": 1
+    }
+   },
+   {
+    "x": 1104,
+    "y": 5407,
+    "w": 208,
+    "n": 3,
+    "pitch": 33,
+    "head": null,
+    "link": {
+     "text": "Privacy Policy",
+     "tag": "a",
+     "size": 14.08,
+     "weight": "500",
+     "lh": "21.12px",
+     "ls": "-0.1408px",
+     "fam": "Manrope",
+     "color": "rgba(15, 30, 46, 0.8)",
+     "align": "start",
+     "tt": "none",
+     "w": 208,
+     "h": 21,
+     "x": 1104,
+     "y": 5440,
+     "lines": 1
+    }
+   }
+  ],
+  "colCount": 5,
+  "brand": {
+   "x": 128,
+   "y": 68,
+   "w": 88,
+   "h": 29
+  },
+  "big": [],
+  "legal": {
+   "y": 5820,
+   "fromBottom": 64,
+   "text": "Lindy. All rights reserved. ©",
+   "size": 14.08,
+   "color": "rgba(15, 30, 46, 0.8)"
+  },
+  "email": 0,
+  "inputs": 0,
+  "status": null,
+  "social": 3,
+  "theme": 0,
+  "lang": 0,
+  "canvas": 0,
+  "video": 0,
+  "svg": 0,
+  "animated": 0,
+  "compliance": 3,
+  "headings": [],
+  "buttons": [],
+  "text": "Hire Lindy for Paid ads Account management Client reporting Lead gen & outreach Inbox & calendar Data analysis Calls & bookings See every role Product Integrations Pricing Security Chrome Extension Enterprise Case Studies Contact Sales Resources Docs Contact Creators Sitemap Partners Legal Privacy Policy Trust Center Terms of Service GDPR Compliant SOC 2 Compliant HIPAA Compliant PIPEDA Compliant Lindy. All rights reserved. © 2026 Lindy is not associated with Lindy Electronik Gmbh"
+ },
+ "url": "https://www.lindy.ai/pricing",
+ "slug": "lindy--pricing",
+ "kind": "pricing",
+ "site": "lindy",
+ "finalUrl": "https://www.lindy.ai/pricing",
+ "captured": "2026-10-10"
+}

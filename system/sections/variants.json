@@ -1,0 +1,2800 @@
+{
+ "_about": {
+  "what": "Machine-readable section library for premium SaaS / AI-SaaS marketing sites: section -> variants -> {count, structure spec, measured ranges, references, crop}. Source study: knowledge/web/section-anatomy.md (SA-01..SA-48) and knowledge/web/footers.md (FT-01..FT-20).",
+  "sample": {
+   "homepages": 43,
+   "dedicated_pages": 97,
+   "framer_templates": 6,
+   "captured": "2026-10-10",
+   "viewport": "1440x900",
+   "note": "counts are homepages out of 43 unless the section says pages; posthog (desktop-OS homepage) excluded; openai not captured (human-verification wall)"
+  },
+  "units": "px at 1440 viewport unless stated; ranges are [p25, p75] unless marked range",
+  "evidence": "knowledge/benchmarks/sections/{full,raw,types.json,sequences.json,<section>/}",
+  "use": "Pick a variant per section in DIRECTION.md; prefer the second-most-common variant when the last build used the dominant one (founder range rule)."
+ },
+ "page": {
+  "sections_incl_hero": {
+   "median": 10,
+   "p25": 8,
+   "p75": 11,
+   "range": [
+    5,
+    14
+   ]
+  },
+  "height": {
+   "median": 9724,
+   "p25": 7187,
+   "p75": 12205,
+   "range": [
+    3340,
+    17599
+   ]
+  },
+  "dark_homepages": 9,
+  "order": {
+   "fixed_start": "hero -> logos (32/43 immediately; 37/38 walls in position 2-3)",
+   "fixed_end": "testimonials (median position 0.75) -> closing CTA (28/43 last section; +5 merged into footer)",
+   "common_pairs": {
+    "features>features": 51,
+    "hero>logos": 32,
+    "testimonials>cta": 10,
+    "logos>features": 10,
+    "features>testimonials": 9,
+    "logos>statement": 6,
+    "features>metrics": 6,
+    "bento>features": 6,
+    "blog>cta": 5
+   },
+   "archetypes": {
+    "product_chapter": {
+     "sequence": [
+      "hero",
+      "logos",
+      "statement",
+      "features x4-6",
+      "changelog|testimonials",
+      "cta"
+     ],
+     "references": [
+      "linear",
+      "resend",
+      "attio",
+      "dub",
+      "plain",
+      "raycast"
+     ]
+    },
+    "proof_heavy_enterprise": {
+     "sequence": [
+      "hero",
+      "logos",
+      "bento|catalogue",
+      "segments",
+      "features",
+      "metrics",
+      "cases|testimonials",
+      "security",
+      "awards",
+      "blog",
+      "cta"
+     ],
+     "references": [
+      "stripe",
+      "ramp",
+      "brex",
+      "vanta",
+      "rippling",
+      "mercury"
+     ]
+    },
+    "short_brand": {
+     "sequence": [
+      "hero",
+      "logos",
+      "2-3 blocks",
+      "cta"
+     ],
+     "references": [
+      "vercel",
+      "anthropic",
+      "notion",
+      "runway",
+      "clerk"
+     ]
+    },
+    "self_serve_checklist": {
+     "sequence": [
+      "hero",
+      "logos",
+      "features|tabs",
+      "testimonials",
+      "pricing",
+      "faq",
+      "cta"
+     ],
+     "references": [
+      "lindy",
+      "tw_salient",
+      "tw_pocket",
+      "framer templates"
+     ]
+    }
+   }
+  },
+  "frequency_sites": {
+   "hero": 43,
+   "logos": 38,
+   "cta": 33,
+   "cta_or_footer_merged": 38,
+   "features": 32,
+   "testimonials": 29,
+   "catalogue": 16,
+   "bento": 16,
+   "statement": 12,
+   "cases": 12,
+   "metrics": 12,
+   "tabs": 12,
+   "blog": 11,
+   "integrations": 10,
+   "security": 8,
+   "segments": 6,
+   "faq": 6,
+   "changelog": 6,
+   "story": 4,
+   "showcase": 4,
+   "launch_card": 4,
+   "pricing": 4,
+   "video": 3,
+   "interactive_demo": 3,
+   "awards": 3,
+   "newsletter": 2,
+   "how_it_works": 2,
+   "founder_letter": 2,
+   "press": 2,
+   "community": 2,
+   "templates": 2
+  },
+  "templates_frequency_of_6": {
+   "faq": 6,
+   "cta": 6,
+   "testimonials": 6,
+   "pricing": 5,
+   "logos": 5,
+   "catalogue": 5,
+   "features": 5,
+   "how_it_works": 3,
+   "integrations": 3,
+   "comparison": 2
+  }
+ },
+ "standards": {
+  "section_h2": {
+   "size": {
+    "median": 48,
+    "p25": 36,
+    "p75": 54,
+    "mode": 48
+   },
+   "weight": {
+    "300": 19,
+    "400": 68,
+    "500": 65,
+    "600": 21,
+    "700": 28
+   },
+   "tracking_em": {
+    "median": -0.02,
+    "p25": -0.036,
+    "p75": 0
+   },
+   "line_height": {
+    "median": 1.1,
+    "p25": 1.04,
+    "p75": 1.17
+   },
+   "words": {
+    "median": 5,
+    "p25": 4,
+    "p75": 8
+   },
+   "align": {
+    "left": 127,
+    "center": 109
+   },
+   "n": 236
+  },
+  "subtitle": {
+   "size": {
+    "16": 37,
+    "18": 61,
+    "20": 12
+   },
+   "width": {
+    "median": 540,
+    "p25": 440,
+    "p75": 640
+   },
+   "lines": {
+    "1": 39,
+    "2": 67,
+    "3": 28
+   },
+   "gap_from_heading": {
+    "median": 16,
+    "p25": 12,
+    "p75": 24
+   },
+   "n": 150
+  },
+  "eyebrow": {
+   "share_of_headed_sections": 0.19,
+   "sites_consistent": 8,
+   "sites_never": 25,
+   "size": [
+    12,
+    14
+   ],
+   "case": {
+    "sentence": 31,
+    "uppercase_sans": 12,
+    "uppercase_mono": 11
+   },
+   "chip_share": 0.37
+  },
+  "section_padding_top": {
+   "median": 96,
+   "p25": 80,
+   "p75": 128,
+   "modes": [
+    128,
+    80,
+    96,
+    120,
+    160
+   ],
+   "n": 167
+  },
+  "heading_group_to_content": {
+   "median": 64,
+   "p25": 48,
+   "p75": 95,
+   "n": 158
+  },
+  "container_width": {
+   "median": 1280,
+   "p25": 1184,
+   "p75": 1328
+  },
+  "card": {
+   "radius": {
+    "median": 12,
+    "p25": 8,
+    "p75": 16,
+    "modes": [
+     12,
+     16,
+     0
+    ]
+   },
+   "gap": {
+    "median": 16,
+    "p25": 12,
+    "p75": 31
+   },
+   "columns": {
+    "1": 21,
+    "2": 24,
+    "3": 34,
+    "4": 9
+   }
+  }
+ },
+ "sections": {
+  "announcement": {
+   "frequency": 16,
+   "position": "above nav",
+   "measured": {
+    "height": {
+     "median": 46,
+     "range": [
+      36,
+      64
+     ]
+    },
+    "text": {
+     "size_mode": 14,
+     "range": [
+      12,
+      22
+     ],
+     "weight": [
+      400,
+      600
+     ]
+    },
+    "links": 1
+   },
+   "rules": [
+    "SA-15"
+   ],
+   "variants": {
+    "ink_strip": {
+     "count": 8,
+     "structure": "full-bleed 40-48px strip, ink fill, white 13-14px text + one link/arrow, nav docks under it",
+     "measured": {
+      "height": [
+       36,
+       64
+      ]
+     },
+     "references": [
+      "attio",
+      "clerk",
+      "ramp",
+      "plain",
+      "retool",
+      "deel",
+      "clay",
+      "neon"
+     ],
+     "crop": "knowledge/benchmarks/sections/announcement/attio-top.jpg"
+    },
+    "brand_colour_strip": {
+     "count": 4,
+     "structure": "full-bleed strip in the brand colour, white or ink 14-16px text",
+     "measured": {
+      "height": [
+       44,
+       60
+      ]
+     },
+     "references": [
+      "webflow",
+      "loom",
+      "runway",
+      "pitch"
+     ],
+     "crop": "knowledge/benchmarks/sections/announcement/webflow-top.jpg"
+    },
+    "quiet_canvas_strip": {
+     "count": 2,
+     "structure": "strip one step off the canvas, muted 14-18px text",
+     "measured": {},
+     "references": [
+      "mercury",
+      "elevenlabs"
+     ],
+     "crop": "knowledge/benchmarks/sections/announcement/mercury-top.jpg"
+    },
+    "floating_pill_or_subrow": {
+     "count": 2,
+     "structure": "pill floating at top 8px or a row under the nav",
+     "measured": {},
+     "references": [
+      "superhuman",
+      "vercel"
+     ],
+     "crop": "knowledge/benchmarks/sections/announcement/superhuman-top.jpg"
+    }
+   }
+  },
+  "logos": {
+   "frequency": 38,
+   "position": {
+    "median": 0.13,
+    "note": "position 2 on 32/43"
+   },
+   "measured": {
+    "glyph_height": {
+     "median": 30,
+     "range": [
+      20,
+      56
+     ]
+    },
+    "gap": {
+     "median": 75,
+     "range": [
+      40,
+      150
+     ]
+    },
+    "rows": {
+     "1": 7,
+     "2": 9
+    },
+    "caption_size": [
+     14,
+     20
+    ],
+    "n": 19
+   },
+   "rules": [
+    "SA-02",
+    "SA-16",
+    "SA-17",
+    "SA-18"
+   ],
+   "variants": {
+    "hero_attached_row": {
+     "count": 10,
+     "structure": "one row of 6-10 mono logos on the hero bottom edge, 14px caption or none",
+     "measured": {},
+     "references": [
+      "vercel",
+      "stripe",
+      "framer",
+      "notion",
+      "plain",
+      "mistral",
+      "pitch",
+      "clay",
+      "tw_salient",
+      "tw_pocket"
+     ],
+     "crop": null
+    },
+    "single_row": {
+     "count": 7,
+     "structure": "one row of 6-12 logos on the canvas below the hero, optional 14-20px caption",
+     "measured": {
+      "glyph_height": [
+       20,
+       32
+      ]
+     },
+     "references": [
+      "linear",
+      "clerk",
+      "webflow",
+      "runway",
+      "neon",
+      "flyio",
+      "tw_radiant"
+     ],
+     "crop": "knowledge/benchmarks/sections/logos/runway-single-row.jpg"
+    },
+    "two_row_grid": {
+     "count": 7,
+     "structure": "2 rows x 6 logos, centred, 14-18px caption above",
+     "measured": {
+      "glyph_height": [
+       30,
+       48
+      ],
+      "gap": [
+       50,
+       80
+      ]
+     },
+     "references": [
+      "resend",
+      "supabase",
+      "lovable",
+      "retool",
+      "brex",
+      "vanta",
+      "liveblocks"
+     ],
+     "crop": "knowledge/benchmarks/sections/logos/supabase-two-row.jpg"
+    },
+    "marquee_edge_fade": {
+     "count": 4,
+     "structure": "infinite row with 80-160px edge masks; pause on hover; static under reduced motion",
+     "measured": {},
+     "references": [
+      "cal",
+      "lindy",
+      "perplexity",
+      "deel"
+     ],
+     "crop": "knowledge/benchmarks/sections/logos/lindy-marquee.jpg"
+    },
+    "headline_led_wall": {
+     "count": 4,
+     "structure": "a 42-160px claim with a real number, then the wall (rows or a dark band)",
+     "measured": {
+      "claim_size": [
+       42,
+       160
+      ]
+     },
+     "references": [
+      "mercury",
+      "ramp",
+      "granola",
+      "loom"
+     ],
+     "crop": "knowledge/benchmarks/sections/logos/loom-claim-wall.jpg"
+    },
+    "tile_grid": {
+     "count": 3,
+     "structure": "equal tiles 3-5% off canvas, r4-12, gap 8-12; logo centred",
+     "measured": {
+      "tile": [
+       "154x100 r4 (cursor)",
+       "251x80 r12 (dub)"
+      ]
+     },
+     "references": [
+      "cursor",
+      "dub",
+      "railway"
+     ],
+     "crop": "knowledge/benchmarks/sections/logos/cursor-tile-grid.jpg"
+    },
+    "hairline_cell_grid": {
+     "count": 3,
+     "structure": "5x2 or 6x3 cells divided by 1px rules, optional corner arrow to the story",
+     "measured": {
+      "cell": "278x97 (attio)"
+     },
+     "references": [
+      "attio",
+      "elevenlabs",
+      "superhuman"
+     ],
+     "crop": "knowledge/benchmarks/sections/logos/attio-hairline-cells.jpg"
+    }
+   }
+  },
+  "statement": {
+   "frequency": 12,
+   "position": {
+    "median": 0.56,
+    "typical": "after logos"
+   },
+   "problem_agitation_sites": 3,
+   "measured": {
+    "size": [
+     28,
+     56
+    ],
+    "lines_max": 3
+   },
+   "rules": [
+    "SA-07",
+    "SA-19"
+   ],
+   "variants": {
+    "two_tone_lead": {
+     "count": 4,
+     "structure": "one paragraph, one size 28-48px; first sentence ink, rest ~55% ink",
+     "measured": {},
+     "references": [
+      "linear",
+      "dub",
+      "stripe",
+      "attio"
+     ],
+     "crop": "knowledge/benchmarks/sections/statement/dub-two-tone.jpg"
+    },
+    "display_or_serif_statement": {
+     "count": 4,
+     "structure": "centred 40-56px statement in the brand display face, 2-3 lines",
+     "measured": {},
+     "references": [
+      "granola",
+      "flyio",
+      "vanta"
+     ],
+     "crop": "knowledge/benchmarks/sections/statement/granola-serif-statement.jpg"
+    },
+    "highlighted_phrase": {
+     "count": 1,
+     "structure": "statement with 2-3 phrases on a tinted highlight",
+     "measured": {},
+     "references": [
+      "neon"
+     ],
+     "crop": "knowledge/benchmarks/sections/statement/neon-highlight-statement.jpg"
+    },
+    "inline_icon_sentence": {
+     "count": 1,
+     "structure": "one sentence with product/app icons set inline in the text",
+     "measured": {},
+     "references": [
+      "plain"
+     ],
+     "crop": "knowledge/benchmarks/sections/statement/plain-inline-icons.jpg"
+    },
+    "problem_reframe": {
+     "count": 3,
+     "structure": "pain named once in the heading or as a chaos visual, answered in the same block",
+     "measured": {},
+     "references": [
+      "mercury",
+      "ramp",
+      "plain"
+     ],
+     "crop": "knowledge/benchmarks/sections/integrations/home-ramp-systems-collage.jpg"
+    },
+    "us_vs_them_block": {
+     "count": 0,
+     "structure": "two columns: other tools (crosses) vs us (checks); templates only",
+     "measured": {
+      "templates": 2
+     },
+     "references": [
+      "fr_verity",
+      "fr_optivio"
+     ],
+     "crop": null
+    }
+   }
+  },
+  "feature_rows": {
+   "frequency": 32,
+   "occurrences": 97,
+   "per_page": {
+    "0": 11,
+    "1": 8,
+    "2": 4,
+    "3": 5,
+    "4": 9,
+    "5": 6
+   },
+   "position": {
+    "median": 0.45
+   },
+   "rules": [
+    "SA-20",
+    "SA-21"
+   ],
+   "variants": {
+    "full_width_chapter": {
+     "count": 10,
+     "structure": "heading 48px in a 380-560px left column, body/two-tone in the right column, full-container media below, 3 small sub-features under it",
+     "measured": {
+      "block_height": [
+       1220,
+       1232
+      ],
+      "padding": 128
+     },
+     "references": [
+      "linear",
+      "attio",
+      "resend",
+      "raycast",
+      "plain",
+      "dub",
+      "vercel",
+      "framer",
+      "elevenlabs",
+      "granola"
+     ],
+     "crop": "knowledge/benchmarks/sections/feature-rows/linear-chapter.jpg"
+    },
+    "alternating_rows": {
+     "count": 9,
+     "structure": "text 420-520px / media 600-700px, sides alternate, media top-aligned with heading, 64-96px between rows",
+     "measured": {
+      "row_height": [
+       422,
+       490
+      ]
+     },
+     "references": [
+      "brex",
+      "loom",
+      "mistral",
+      "cursor",
+      "rippling",
+      "perplexity",
+      "mercury",
+      "flyio",
+      "deel"
+     ],
+     "crop": "knowledge/benchmarks/sections/feature-rows/brex-alternating.jpg"
+    },
+    "centred_stack": {
+     "count": 3,
+     "structure": "centred heading + one-line sub over a centred UI, repeated",
+     "measured": {},
+     "references": [
+      "campsite",
+      "arc",
+      "loom"
+     ],
+     "crop": "knowledge/benchmarks/sections/feature-rows/campsite-centred-stack.jpg"
+    },
+    "colour_panel_rows": {
+     "count": 3,
+     "structure": "each feature in a tinted or carded panel with its own art",
+     "measured": {
+      "row_height": 676
+     },
+     "references": [
+      "clay",
+      "superhuman",
+      "granola"
+     ],
+     "crop": "knowledge/benchmarks/sections/feature-rows/clay-colour-panels.jpg"
+    },
+    "numbered_or_rail_chapters": {
+     "count": 2,
+     "structure": "chapters numbered 01/02/03 or joined by a left progress rail",
+     "measured": {},
+     "references": [
+      "railway",
+      "neon"
+     ],
+     "crop": "knowledge/benchmarks/sections/feature-rows/railway-rail-chapter.jpg"
+    }
+   }
+  },
+  "feature_tabs": {
+   "frequency": 12,
+   "position": {
+    "median": 0.33
+   },
+   "rules": [
+    "SA-22"
+   ],
+   "variants": {
+    "pill_row_above_panel": {
+     "count": 7,
+     "structure": "3-6 pills (32-40px) centred above one fixed-size panel; first active",
+     "measured": {},
+     "references": [
+      "dub",
+      "supabase",
+      "lindy",
+      "clay",
+      "perplexity",
+      "superhuman",
+      "raycast"
+     ],
+     "crop": "knowledge/benchmarks/sections/feature-tabs/lindy-pill-row.jpg"
+    },
+    "vertical_list_beside_panel": {
+     "count": 2,
+     "structure": "list of 4-5 tab labels (title + 1-line body for the active one) left, panel right",
+     "measured": {},
+     "references": [
+      "tw_salient",
+      "runway"
+     ],
+     "crop": "knowledge/benchmarks/sections/feature-tabs/runway-vertical-list.jpg"
+    },
+    "icon_columns": {
+     "count": 1,
+     "structure": "3 icon+title+body columns act as tabs above a shared screenshot",
+     "measured": {},
+     "references": [
+      "tw_salient"
+     ],
+     "crop": "knowledge/benchmarks/sections/feature-tabs/tw_salient-icon-columns.jpg"
+    },
+    "carousel_selector": {
+     "count": 1,
+     "structure": "a horizontal carousel of visual items; the centred item is the selection",
+     "measured": {},
+     "references": [
+      "elevenlabs"
+     ],
+     "crop": "knowledge/benchmarks/sections/feature-tabs/elevenlabs-carousel-selector.jpg"
+    },
+    "timeline_tabs": {
+     "count": 1,
+     "structure": "product tabs over a 3-point timeline (Today / Hours later / Tomorrow)",
+     "measured": {},
+     "references": [
+      "deel"
+     ],
+     "crop": "knowledge/benchmarks/sections/how-it-works/deel-timeline-tabs.jpg"
+    }
+   }
+  },
+  "how_it_works": {
+   "frequency": 2,
+   "templates_of_6": 3,
+   "rules": [
+    "SA-23"
+   ],
+   "variants": {
+    "three_numbered_cards": {
+     "count": 1,
+     "structure": "3 equal cards 01/02/03, each with a mini UI",
+     "measured": {},
+     "references": [
+      "cal",
+      "fr_optivio"
+     ],
+     "crop": "knowledge/benchmarks/sections/how-it-works/cal-numbered-cards.jpg"
+    },
+    "timeboxed_columns": {
+     "count": 1,
+     "structure": "3 columns headed by elapsed time with checklists",
+     "measured": {},
+     "references": [
+      "plain"
+     ],
+     "crop": "knowledge/benchmarks/sections/how-it-works/plain-timeboxed-columns.jpg"
+    },
+    "timeline_tabs": {
+     "count": 1,
+     "structure": "see feature_tabs.timeline_tabs",
+     "measured": {},
+     "references": [
+      "deel"
+     ],
+     "crop": "knowledge/benchmarks/sections/how-it-works/deel-timeline-tabs.jpg"
+    },
+    "process_slider": {
+     "count": 0,
+     "structure": "one step per slide with step counter; templates only",
+     "measured": {},
+     "references": [
+      "fr_platform"
+     ],
+     "crop": null
+    }
+   }
+  },
+  "product_tour": {
+   "frequency": 4,
+   "video_band_sites": 3,
+   "rules": [
+    "SA-24"
+   ],
+   "variants": {
+    "numbered_sticky_list": {
+     "count": 1,
+     "structure": "left numbered list (inactive ~40% ink), right sticky visual swapping per step",
+     "measured": {},
+     "references": [
+      "lindy"
+     ],
+     "crop": "knowledge/benchmarks/sections/product-tour/lindy-numbered-sticky.jpg"
+    },
+    "sticky_nav_list": {
+     "count": 1,
+     "structure": "left sticky nav list of capabilities, right scrolling content",
+     "measured": {},
+     "references": [
+      "attio"
+     ],
+     "crop": "knowledge/benchmarks/sections/product-tour/attio-sticky-nav.jpg"
+    },
+    "sticky_text_stacked_visuals": {
+     "count": 1,
+     "structure": "left sticky text, right column of 5-6 stacked product visuals",
+     "measured": {},
+     "references": [
+      "retool"
+     ],
+     "crop": "knowledge/benchmarks/sections/product-tour/retool-sticky-stack.jpg"
+    },
+    "accordion_with_visual": {
+     "count": 1,
+     "structure": "left accordion of capabilities, right visual for the open one",
+     "measured": {},
+     "references": [
+      "lovable"
+     ],
+     "crop": "knowledge/benchmarks/sections/product-tour/lovable-accordion-visual.jpg"
+    }
+   }
+  },
+  "bento": {
+   "frequency": 16,
+   "occurrences": 20,
+   "position": {
+    "median": 0.43
+   },
+   "rules": [
+    "SA-48"
+   ],
+   "note": "classification only; construction in knowledge/web/bento-craft.md",
+   "references": [
+    "stripe",
+    "clerk",
+    "supabase",
+    "framer",
+    "mercury",
+    "ramp",
+    "notion",
+    "cal",
+    "plain",
+    "raycast",
+    "vanta",
+    "elevenlabs",
+    "liveblocks",
+    "tw_radiant",
+    "vercel"
+   ]
+  },
+  "catalogue": {
+   "frequency": 16,
+   "occurrences": 19,
+   "position": {
+    "median": 0.44
+   },
+   "structure": "6-8 small icon tiles (title + 1 line) in a 3-4 column grid, often after a bento",
+   "references": [
+    "cal",
+    "notion",
+    "linear",
+    "resend",
+    "rippling",
+    "deel",
+    "brex",
+    "flyio"
+   ]
+  },
+  "metrics": {
+   "frequency": 12,
+   "occurrences": 14,
+   "position": {
+    "median": 0.75
+   },
+   "measured": {
+    "numeral": {
+     "median": 60,
+     "range": [
+      32,
+      80
+     ]
+    },
+    "weight": [
+     300,
+     700
+    ],
+    "caption": [
+     16,
+     20
+    ],
+    "column_pitch": [
+     264,
+     637
+    ],
+    "n": 11
+   },
+   "rules": [
+    "SA-25",
+    "SA-26"
+   ],
+   "variants": {
+    "ruled_centred_row": {
+     "count": 4,
+     "structure": "heading, then 3-4 numbers in one row with hairline dividers",
+     "measured": {
+      "numeral": [
+       48,
+       65
+      ]
+     },
+     "references": [
+      "stripe",
+      "mercury",
+      "deel",
+      "pitch"
+     ],
+     "crop": "knowledge/benchmarks/sections/metrics/stripe-ruled-row.jpg"
+    },
+    "split_heading_stat_grid": {
+     "count": 3,
+     "structure": "heading + copy left, 2x2 or 3-up numbers right",
+     "measured": {
+      "numeral": [
+       36,
+       60
+      ]
+     },
+     "references": [
+      "flyio",
+      "brex",
+      "perplexity"
+     ],
+     "crop": "knowledge/benchmarks/sections/metrics/flyio-split-grid.jpg"
+    },
+    "live_counter": {
+     "count": 3,
+     "structure": "numbers from the product API, ticking (split-flap or mono)",
+     "measured": {},
+     "references": [
+      "railway",
+      "dub",
+      "supabase"
+     ],
+     "crop": "knowledge/benchmarks/sections/metrics/railway-live-counter.jpg"
+    },
+    "chart_backed": {
+     "count": 2,
+     "structure": "numbers over or beside a real growth chart",
+     "measured": {
+      "numeral": 32
+     },
+     "references": [
+      "attio",
+      "lovable"
+     ],
+     "crop": "knowledge/benchmarks/sections/metrics/attio-chart-backed.jpg"
+    },
+    "stat_cells_in_bento": {
+     "count": 2,
+     "structure": "numbers as cells inside a bento or panel",
+     "measured": {
+      "numeral": [
+       64,
+       80
+      ]
+     },
+     "references": [
+      "neon",
+      "liveblocks"
+     ],
+     "crop": "knowledge/benchmarks/sections/metrics/neon-stat-cells.jpg"
+    }
+   }
+  },
+  "testimonials": {
+   "frequency": 29,
+   "position": {
+    "median": 0.75,
+    "last_before_cta": 9
+   },
+   "max_per_page": 2,
+   "measured": {
+    "quote_size": {
+     "wall_grid_cards": [
+      13,
+      16
+     ],
+     "feature_quote": [
+      18,
+      25
+     ],
+     "single_quote": [
+      28,
+      56
+     ]
+    },
+    "card": {
+     "radius": {
+      "median": 16,
+      "range": [
+       8,
+       24
+      ]
+     },
+     "padding": [
+      20,
+      32
+     ],
+     "width": [
+      288,
+      539
+     ]
+    },
+    "avatar": {
+     "median": 36,
+     "range": [
+      20,
+      64
+     ]
+    },
+    "name_size": 14,
+    "quote_chars": {
+     "median": 130
+    },
+    "n": 28
+   },
+   "rules": [
+    "SA-04",
+    "SA-27",
+    "SA-28",
+    "SA-29"
+   ],
+   "variants": {
+    "masonry_wall": {
+     "count": 6,
+     "structure": "3 columns of uneven quote cards (r12-16, pad 20-24, hairline), 9-16 quotes, \"show more\" or fade",
+     "measured": {
+      "quote": [
+       13,
+       16
+      ]
+     },
+     "references": [
+      "clerk",
+      "ramp",
+      "cal",
+      "lindy",
+      "tw_salient",
+      "tw_pocket"
+     ],
+     "crop": "knowledge/benchmarks/sections/testimonials/lindy-masonry-wall.jpg"
+    },
+    "uniform_grid": {
+     "count": 5,
+     "structure": "3x2 or 3-up equal cards with name/role/logo",
+     "measured": {
+      "quote": [
+       14,
+       19
+      ],
+      "card": "427x240 r4 (cursor)"
+     },
+     "references": [
+      "cursor",
+      "arc",
+      "dub",
+      "railway",
+      "flyio"
+     ],
+     "crop": "knowledge/benchmarks/sections/testimonials/cursor-uniform-grid.jpg"
+    },
+    "portrait_photo_cards": {
+     "count": 4,
+     "structure": "quote over or beside a large portrait or video still",
+     "measured": {
+      "quote": [
+       20,
+       36
+      ]
+     },
+     "references": [
+      "notion",
+      "granola",
+      "pitch",
+      "tw_radiant"
+     ],
+     "crop": "knowledge/benchmarks/sections/testimonials/granola-portrait-duo.jpg"
+    },
+    "carousel": {
+     "count": 3,
+     "structure": "one quote at a time (24-25px) with arrows, optional 2 metrics and photo",
+     "measured": {
+      "quote": [
+       24,
+       25
+      ]
+     },
+     "references": [
+      "loom",
+      "rippling",
+      "clay"
+     ],
+     "crop": "knowledge/benchmarks/sections/testimonials/rippling-quote-metric-carousel.jpg"
+    },
+    "single_big_quote": {
+     "count": 3,
+     "structure": "one centred quote 28-56px, name and role under, no card",
+     "measured": {
+      "quote": [
+       28,
+       56
+      ]
+     },
+     "references": [
+      "mercury",
+      "vanta",
+      "neon"
+     ],
+     "crop": "knowledge/benchmarks/sections/testimonials/vanta-single-quote.jpg"
+    },
+    "marquee_row": {
+     "count": 2,
+     "structure": "row of 14px quote cards scrolling with edge fade",
+     "measured": {
+      "card": "450x217 r16 (resend)"
+     },
+     "references": [
+      "resend",
+      "raycast"
+     ],
+     "crop": "knowledge/benchmarks/sections/testimonials/resend-marquee-row.jpg"
+    },
+    "quote_metric_panel": {
+     "count": 2,
+     "structure": "a quote beside 1-3 measured outcomes",
+     "measured": {},
+     "references": [
+      "perplexity",
+      "liveblocks"
+     ],
+     "crop": "knowledge/benchmarks/sections/testimonials/liveblocks-quote-metric-panel.jpg"
+    },
+    "duo_colour_cards": {
+     "count": 1,
+     "structure": "two colour-filled cards, 2:1 widths, 32px quote",
+     "measured": {
+      "cards": [
+       "880x480",
+       "432x480"
+      ]
+     },
+     "references": [
+      "linear"
+     ],
+     "crop": "knowledge/benchmarks/sections/testimonials/linear-duo-colour-cards.jpg"
+    },
+    "video_led": {
+     "count": 1,
+     "structure": "one large video testimonial card + 2 quote cards",
+     "measured": {},
+     "references": [
+      "plain"
+     ],
+     "crop": "knowledge/benchmarks/sections/testimonials/plain-video-plus-quotes.jpg"
+    },
+    "logo_tab_switcher": {
+     "count": 1,
+     "structure": "company names as tabs; selected shows photo + 36px quote + case link",
+     "measured": {
+      "quote": 36
+     },
+     "references": [
+      "brex"
+     ],
+     "crop": "knowledge/benchmarks/sections/testimonials/brex-logo-tab-switcher.jpg"
+    },
+    "centre_focus_carousel": {
+     "count": 1,
+     "structure": "3-up carousel, centre card emphasised, edges faded (second section on cal)",
+     "measured": {
+      "card": "476x250 r16",
+      "quote": 24
+     },
+     "references": [
+      "cal"
+     ],
+     "crop": "knowledge/benchmarks/sections/testimonials/cal-centre-carousel.jpg"
+    }
+   }
+  },
+  "case_studies": {
+   "frequency": 12,
+   "pages": 8,
+   "rules": [
+    "SA-30"
+   ],
+   "variants": {
+    "logo_tabs_photo_metric": {
+     "count": 3,
+     "structure": "logo tabs; selected shows photo + one metric + story link",
+     "measured": {},
+     "references": [
+      "attio",
+      "mistral",
+      "brex"
+     ],
+     "crop": "knowledge/benchmarks/sections/case-studies/home-attio-logo-tabs-photo.jpg"
+    },
+    "featured_carousel": {
+     "count": 3,
+     "structure": "one large featured story card + smaller cards, arrows",
+     "measured": {},
+     "references": [
+      "supabase",
+      "lovable",
+      "webflow"
+     ],
+     "crop": "knowledge/benchmarks/sections/case-studies/home-supabase-featured-carousel.jpg"
+    },
+    "photo_cards": {
+     "count": 2,
+     "structure": "4 portrait or brand-colour cards with logo and metric",
+     "measured": {},
+     "references": [
+      "vanta",
+      "stripe"
+     ],
+     "crop": "knowledge/benchmarks/sections/case-studies/home-vanta-photo-cards.jpg"
+    },
+    "editorial_feature": {
+     "count": 2,
+     "structure": "one story told as an editorial spread",
+     "measured": {},
+     "references": [
+      "ramp",
+      "retool"
+     ],
+     "crop": "knowledge/benchmarks/sections/case-studies/home-ramp-editorial.jpg"
+    },
+    "logo_led_quote_cards": {
+     "count": 2,
+     "structure": "3 cards led by the customer logo, quote, person",
+     "measured": {},
+     "references": [
+      "railway",
+      "vercel"
+     ],
+     "crop": "knowledge/benchmarks/sections/case-studies/home-railway-logo-quote.jpg"
+    },
+    "page_featured_plus_grid": {
+     "count": 4,
+     "structure": "customers page: featured story + grid or list rows with filters",
+     "measured": {},
+     "references": [
+      "attio",
+      "ramp",
+      "vercel",
+      "retool"
+     ],
+     "crop": "knowledge/benchmarks/sections/case-studies/page-ramp.jpg"
+    },
+    "page_logo_tile_grid": {
+     "count": 2,
+     "structure": "customers page: 3-col logo tiles, each a story",
+     "measured": {},
+     "references": [
+      "resend",
+      "cal"
+     ],
+     "crop": "knowledge/benchmarks/sections/case-studies/page-resend.jpg"
+    },
+    "page_filterable_cards": {
+     "count": 2,
+     "structure": "customers page: filter selects + 3-col cards (+ stat row)",
+     "measured": {},
+     "references": [
+      "supabase",
+      "linear"
+     ],
+     "crop": "knowledge/benchmarks/sections/case-studies/page-linear.jpg"
+    }
+   }
+  },
+  "integrations": {
+   "frequency": 10,
+   "pages": 8,
+   "position": {
+    "median": 0.7
+   },
+   "rules": [
+    "SA-31"
+   ],
+   "variants": {
+    "icon_grid_beside_copy": {
+     "count": 3,
+     "structure": "copy left, 2x4 to 4x4 grid of 32-48px partner marks right",
+     "measured": {},
+     "references": [
+      "cal",
+      "clerk",
+      "dub"
+     ],
+     "crop": "knowledge/benchmarks/sections/integrations/home-cal-split-icon-grid.jpg"
+    },
+    "orbit_around_mark": {
+     "count": 2,
+     "structure": "partner marks on an orbit/arc around the product mark",
+     "measured": {},
+     "references": [
+      "pitch",
+      "campsite"
+     ],
+     "crop": "knowledge/benchmarks/sections/integrations/home-pitch-orbit.jpg"
+    },
+    "logo_tiles_row": {
+     "count": 2,
+     "structure": "one row of partner tiles under a statement",
+     "measured": {},
+     "references": [
+      "granola",
+      "attio"
+     ],
+     "crop": "knowledge/benchmarks/sections/integrations/home-granola-logo-tiles.jpg"
+    },
+    "sdk_tabs_code": {
+     "count": 1,
+     "structure": "SDK/language icon tabs over a live code block",
+     "measured": {},
+     "references": [
+      "resend"
+     ],
+     "crop": "knowledge/benchmarks/sections/integrations/home-resend-sdk-code.jpg"
+    },
+    "systems_collage": {
+     "count": 1,
+     "structure": "collage of the tools being replaced/connected",
+     "measured": {},
+     "references": [
+      "ramp"
+     ],
+     "crop": "knowledge/benchmarks/sections/integrations/home-ramp-systems-collage.jpg"
+    },
+    "page_directory": {
+     "count": 6,
+     "structure": "integrations page: search + category sidebar/chips + card grid",
+     "measured": {},
+     "references": [
+      "clay",
+      "lindy",
+      "linear",
+      "ramp",
+      "vercel",
+      "cal"
+     ],
+     "crop": "knowledge/benchmarks/sections/integrations/page-lindy.jpg"
+    },
+    "page_marketing_tiles": {
+     "count": 2,
+     "structure": "integrations page: hero + featured tiles + categories",
+     "measured": {},
+     "references": [
+      "plain",
+      "attio"
+     ],
+     "crop": "knowledge/benchmarks/sections/integrations/page-plain.jpg"
+    }
+   }
+  },
+  "security": {
+   "frequency": 8,
+   "pages": 9,
+   "position": {
+    "median": 0.82
+   },
+   "rules": [
+    "SA-32",
+    "SA-33"
+   ],
+   "variants": {
+    "card_grid": {
+     "count": 4,
+     "structure": "3-6 cards: icon or visual, control name, one line; badges for held certifications",
+     "measured": {},
+     "references": [
+      "perplexity",
+      "lindy",
+      "mercury",
+      "elevenlabs"
+     ],
+     "crop": "knowledge/benchmarks/sections/security/home-perplexity-icon-card-grid.jpg"
+    },
+    "badge_strip_or_statement": {
+     "count": 2,
+     "structure": "row of seals with one statement line",
+     "measured": {},
+     "references": [
+      "supabase",
+      "plain"
+     ],
+     "crop": "knowledge/benchmarks/sections/security/home-plain-badge-statement.jpg"
+    },
+    "framework_carousel": {
+     "count": 1,
+     "structure": "cards per framework (SOC 2, ISO 27001, HIPAA, GDPR) with arrows",
+     "measured": {},
+     "references": [
+      "vanta"
+     ],
+     "crop": "knowledge/benchmarks/sections/security/home-vanta-framework-carousel.jpg"
+    },
+    "dark_panel": {
+     "count": 1,
+     "structure": "one dark rounded panel: heading, paragraph, link",
+     "measured": {},
+     "references": [
+      "loom"
+     ],
+     "crop": "knowledge/benchmarks/sections/security/home-loom-dark-panel.jpg"
+    },
+    "page_compliance_table": {
+     "count": 1,
+     "structure": "requirement / status pill / scope / evidence link table",
+     "measured": {},
+     "references": [
+      "clerk"
+     ],
+     "crop": "knowledge/benchmarks/sections/security/page-clerk.jpg"
+    },
+    "page_trust_center": {
+     "count": 1,
+     "structure": "trust center with overview, compliance, controls, subprocessors",
+     "measured": {},
+     "references": [
+      "attio"
+     ],
+     "crop": null
+    },
+    "page_section_stack": {
+     "count": 6,
+     "structure": "hero + sections per area with badges",
+     "measured": {},
+     "references": [
+      "linear",
+      "lindy",
+      "resend",
+      "supabase",
+      "ramp",
+      "vercel"
+     ],
+     "crop": "knowledge/benchmarks/sections/security/page-resend.jpg"
+    },
+    "page_policy_doc": {
+     "count": 1,
+     "structure": "long-form policy with a table of contents",
+     "measured": {},
+     "references": [
+      "cursor"
+     ],
+     "crop": "knowledge/benchmarks/sections/security/page-cursor.jpg"
+    }
+   }
+  },
+  "pricing": {
+   "frequency": 4,
+   "pages": 29,
+   "templates_of_6": 5,
+   "measured": {
+    "page_h1": {
+     "median": 60,
+     "range": [
+      48,
+      80
+     ]
+    },
+    "plans": {
+     "median": 4,
+     "range": [
+      2,
+      8
+     ]
+    },
+    "card": {
+     "width": {
+      "median": 320,
+      "range": [
+       253,
+       463
+      ]
+     },
+     "height": {
+      "median": 640,
+      "range": [
+       500,
+       920
+      ]
+     },
+     "radius": {
+      "ruled": 0,
+      "cards": [
+       8,
+       20
+      ],
+      "outlier": 44
+     },
+     "gap": {
+      "ruled": [
+       0,
+       1
+      ],
+      "cards": [
+       10,
+       24
+      ]
+     }
+    },
+    "price": {
+     "median": 36,
+     "range": [
+      24,
+      64
+     ],
+     "weight": [
+      300,
+      700
+     ]
+    },
+    "features_per_card": [
+     6,
+     10
+    ],
+    "cta_height": {
+     "median": 40,
+     "range": [
+      30,
+      58
+     ]
+    },
+    "toggle": {
+     "pages": 19,
+     "gap_to_cards": {
+      "median": 57,
+      "range": [
+       30,
+       97
+      ]
+     }
+    },
+    "comparison_table_pages": 18,
+    "faq_pages": 21
+   },
+   "rules": [
+    "SA-05",
+    "SA-34",
+    "SA-35",
+    "SA-36"
+   ],
+   "highlight_methods": {
+    "inverted_fill": [
+     "cal",
+     "runway"
+    ],
+    "accent_border": [
+     "attio",
+     "supabase",
+     "loom"
+    ],
+    "raised_taller": [
+     "supabase",
+     "raycast"
+    ],
+    "tint": [
+     "superhuman",
+     "granola"
+    ],
+    "gradient_art": [
+     "elevenlabs",
+     "pitch"
+    ]
+   },
+   "variants": {
+    "separate_cards_one_highlighted": {
+     "count": 14,
+     "structure": "3-5 equal-height cards, gap 12-24, r8-20, one highlighted + badge, CTAs on one baseline",
+     "measured": {},
+     "references": [
+      "attio",
+      "raycast",
+      "clerk",
+      "granola",
+      "dub",
+      "cal",
+      "lovable",
+      "plain",
+      "retool",
+      "pitch",
+      "runway",
+      "clay",
+      "lindy",
+      "railway"
+     ],
+     "crop": "knowledge/benchmarks/sections/pricing/page-cal.jpg"
+    },
+    "ruled_grid": {
+     "count": 9,
+     "structure": "plans share 1px rules, no gaps, r0; highlight by fill/raise",
+     "measured": {},
+     "references": [
+      "vercel",
+      "supabase",
+      "resend",
+      "cursor",
+      "neon",
+      "liveblocks",
+      "mercury",
+      "superhuman",
+      "linear"
+     ],
+     "crop": "knowledge/benchmarks/sections/pricing/page-supabase.jpg"
+    },
+    "grouped_plan_families": {
+     "count": 6,
+     "structure": "tabs or rows per product/audience, each with its own plans",
+     "measured": {},
+     "references": [
+      "webflow",
+      "notion",
+      "elevenlabs",
+      "superhuman",
+      "runway",
+      "resend"
+     ],
+     "crop": "knowledge/benchmarks/sections/pricing/page-notion.jpg"
+    },
+    "calculator_slider": {
+     "count": 4,
+     "structure": "volume/seat slider or team-size input drives the price",
+     "measured": {},
+     "references": [
+      "resend",
+      "pitch",
+      "loom",
+      "vercel"
+     ],
+     "crop": "knowledge/benchmarks/sections/pricing/page-pitch.jpg"
+    },
+    "usage_tables": {
+     "count": 3,
+     "structure": "pay-as-you-go resource tables or usage chart",
+     "measured": {},
+     "references": [
+      "flyio",
+      "railway",
+      "supabase"
+     ],
+     "crop": "knowledge/benchmarks/sections/pricing/page-flyio.jpg"
+    },
+    "homepage_teaser": {
+     "count": 4,
+     "structure": "3 cards or teaser cells on the homepage, then FAQ, then CTA",
+     "measured": {},
+     "references": [
+      "lindy",
+      "tw_salient",
+      "tw_pocket",
+      "neon"
+     ],
+     "crop": "knowledge/benchmarks/sections/pricing/home-lindy-three-cards.jpg"
+    }
+   }
+  },
+  "comparison": {
+   "in_pricing_pages": 18,
+   "compare_pages": 6,
+   "measured": {
+    "row_height": {
+     "median": 57,
+     "mode": 44,
+     "range": [
+      40,
+      104
+     ]
+    },
+    "feature_column": {
+     "median": 300,
+     "range": [
+      145,
+      480
+     ]
+    },
+    "columns": [
+     4,
+     5
+    ],
+    "sticky_header": "19 of 23",
+    "cell_text": [
+     12,
+     16
+    ],
+    "check_icon": {
+     "median": 18,
+     "range": [
+      12,
+      24
+     ]
+    }
+   },
+   "rules": [
+    "SA-37",
+    "SA-38"
+   ],
+   "variants": {
+    "full_grid_sticky_header": {
+     "count": 12,
+     "structure": "sticky plan header (name, price, CTA), grouped rows, check/dash cells",
+     "measured": {},
+     "references": [
+      "clerk",
+      "granola",
+      "liveblocks",
+      "loom",
+      "railway",
+      "resend",
+      "retool",
+      "runway",
+      "elevenlabs",
+      "dub",
+      "attio",
+      "linear"
+     ],
+     "crop": "knowledge/benchmarks/sections/comparison/granola-pricing.jpg"
+    },
+    "collapsible_groups": {
+     "count": 4,
+     "structure": "groups as accordions; open one by default",
+     "measured": {},
+     "references": [
+      "mercury",
+      "pitch",
+      "supabase",
+      "superhuman"
+     ],
+     "crop": "knowledge/benchmarks/sections/comparison/mercury-pricing.jpg"
+    },
+    "head_to_head": {
+     "count": 2,
+     "structure": "us vs them, our column a highlighted card inside the table",
+     "measured": {},
+     "references": [
+      "dub",
+      "cal"
+     ],
+     "crop": "knowledge/benchmarks/sections/comparison/dub-compare.jpg"
+    },
+    "prose_table": {
+     "count": 2,
+     "structure": "text cells comparing approaches",
+     "measured": {},
+     "references": [
+      "framer",
+      "railway"
+     ],
+     "crop": "knowledge/benchmarks/sections/comparison/framer-compare.jpg"
+    },
+    "compare_hub": {
+     "count": 1,
+     "structure": "cards per competitor + switching quotes + promise letter",
+     "measured": {},
+     "references": [
+      "plain"
+     ],
+     "crop": "knowledge/benchmarks/sections/comparison/page-plain-compare.jpg"
+    }
+   }
+  },
+  "faq": {
+   "frequency": 6,
+   "pricing_pages": 21,
+   "templates_of_6": 6,
+   "position": {
+    "median": 1,
+    "note": "last before CTA"
+   },
+   "measured": {
+    "row_height": {
+     "median": 62,
+     "range": [
+      44,
+      102
+     ]
+    },
+    "pitch": 73,
+    "width": [
+     650,
+     900
+    ],
+    "question": {
+     "size_mode": 16,
+     "range": [
+      15,
+      20
+     ],
+     "weight": [
+      400,
+      600
+     ]
+    },
+    "icon": {
+     "mode": 20,
+     "range": [
+      14,
+      24
+     ]
+    },
+    "answer_size": [
+     13,
+     18
+    ],
+    "questions": {
+     "median": 11,
+     "range": [
+      3,
+      24
+     ]
+    }
+   },
+   "rules": [
+    "SA-39",
+    "SA-40"
+   ],
+   "variants": {
+    "centred_accordion": {
+     "count": 16,
+     "structure": "single column 700-860px, hairline rows 56-72px, chevron/plus right, \"more questions\" link below",
+     "measured": {},
+     "references": [
+      "cal",
+      "lindy",
+      "perplexity",
+      "dub",
+      "mercury",
+      "raycast",
+      "supabase",
+      "granola",
+      "lovable",
+      "notion",
+      "attio"
+     ],
+     "crop": "knowledge/benchmarks/sections/faq/pricing-supabase-centred-accordion.jpg"
+    },
+    "split_heading_left": {
+     "count": 8,
+     "structure": "heading (and contact link) in a 280-420px left column, accordion right; can group by category",
+     "measured": {},
+     "references": [
+      "cursor",
+      "webflow",
+      "elevenlabs",
+      "clerk",
+      "liveblocks",
+      "neon",
+      "retool",
+      "runway"
+     ],
+     "crop": "knowledge/benchmarks/sections/faq/pricing-cursor-split.jpg"
+    },
+    "filled_rows": {
+     "count": 3,
+     "structure": "each question in a filled rounded row (r16-42)",
+     "measured": {},
+     "references": [
+      "loom",
+      "resend",
+      "pitch"
+     ],
+     "crop": "knowledge/benchmarks/sections/faq/pricing-loom-filled-rows.jpg"
+    },
+    "open_grid": {
+     "count": 2,
+     "structure": "all answers visible in 3 columns, no accordion",
+     "measured": {},
+     "references": [
+      "tw_salient",
+      "tw_pocket"
+     ],
+     "crop": "knowledge/benchmarks/sections/faq/tw_salient-open-grid.jpg"
+    }
+   }
+  },
+  "cta": {
+   "frequency": 33,
+   "footer_merged": 5,
+   "position": "last section on 28 of 43",
+   "measured": {
+    "heading": {
+     "median": 52,
+     "range": [
+      24,
+      96
+     ]
+    },
+    "centred_share": 0.7,
+    "buttons": {
+     "1": 11,
+     "2": 9,
+     "3": 2
+    },
+    "button_height": {
+     "median": 44,
+     "range": [
+      36,
+      61
+     ]
+    },
+    "heading_to_button": {
+     "median": 40
+    },
+    "block_height": [
+     190,
+     887
+    ],
+    "n": 27
+   },
+   "rules": [
+    "SA-03",
+    "SA-41",
+    "SA-42"
+   ],
+   "variants": {
+    "bare_centred_statement": {
+     "count": 9,
+     "structure": "48-76px centred heading (often the hero promise), 1-2 buttons, page canvas",
+     "measured": {
+      "heading": [
+       48,
+       77
+      ]
+     },
+     "references": [
+      "linear",
+      "cursor",
+      "resend",
+      "supabase",
+      "attio",
+      "mercury",
+      "cal",
+      "liveblocks",
+      "lovable"
+     ],
+     "crop": "knowledge/benchmarks/sections/cta/linear-bare-statement.jpg"
+    },
+    "colour_or_photo_band": {
+     "count": 6,
+     "structure": "full-bleed brand colour, gradient or photo band; heading + button",
+     "measured": {},
+     "references": [
+      "flyio",
+      "tw_salient",
+      "superhuman",
+      "perplexity",
+      "rippling",
+      "dub"
+     ],
+     "crop": "knowledge/benchmarks/sections/cta/flyio-colour-band.jpg"
+    },
+    "art_panel": {
+     "count": 4,
+     "structure": "signature art (collage, 3D, illustration) behind or beside the heading",
+     "measured": {
+      "heading": [
+       60,
+       96
+      ]
+     },
+     "references": [
+      "granola",
+      "neon",
+      "retool",
+      "vanta"
+     ],
+     "crop": "knowledge/benchmarks/sections/cta/granola-art-panel.jpg"
+    },
+    "input_cta": {
+     "count": 4,
+     "structure": "prompt box or email field as the action",
+     "measured": {},
+     "references": [
+      "lovable",
+      "framer",
+      "ramp",
+      "retool"
+     ],
+     "crop": "knowledge/benchmarks/sections/cta/framer-prompt-input.jpg"
+    },
+    "split_text_product": {
+     "count": 2,
+     "structure": "text + button left, product image right (or a pill strip)",
+     "measured": {},
+     "references": [
+      "brex",
+      "loom"
+     ],
+     "crop": "knowledge/benchmarks/sections/cta/brex-split-product.jpg"
+    },
+    "gradient_panel_with_proof": {
+     "count": 2,
+     "structure": "soft gradient panel, buttons, rating badges under",
+     "measured": {},
+     "references": [
+      "lindy",
+      "cal"
+     ],
+     "crop": "knowledge/benchmarks/sections/cta/lindy-gradient-panel.jpg"
+    },
+    "footer_merged": {
+     "count": 5,
+     "structure": "see footers.cta_merged",
+     "measured": {},
+     "references": [
+      "arc",
+      "clay",
+      "pitch",
+      "tw_radiant",
+      "rippling"
+     ],
+     "crop": "knowledge/benchmarks/sections/footers/clay.jpg"
+    }
+   }
+  },
+  "newsletter": {
+   "frequency": 2,
+   "footer_sites": 5,
+   "rules": [
+    "SA-43",
+    "FT-15"
+   ],
+   "variants": {
+    "inline_row_under_changelog": {
+     "count": 1,
+     "structure": "14px line + email + Subscribe under the changelog strip",
+     "measured": {},
+     "references": [
+      "attio"
+     ],
+     "crop": "knowledge/benchmarks/sections/changelog/home-attio-column-strip.jpg"
+    },
+    "footer_row": {
+     "count": 5,
+     "structure": "one row in the footer",
+     "measured": {},
+     "references": [
+      "deel",
+      "flyio",
+      "raycast",
+      "supabase",
+      "tw_pocket"
+     ],
+     "crop": "knowledge/benchmarks/sections/footers/deel.jpg"
+    },
+    "header_control_on_changelog_blog": {
+     "count": 3,
+     "structure": "subscribe/RSS control in the changelog or blog header",
+     "measured": {},
+     "references": [
+      "clerk",
+      "neon",
+      "resend"
+     ],
+     "crop": "knowledge/benchmarks/sections/changelog/page-neon.jpg"
+    }
+   }
+  },
+  "changelog": {
+   "frequency": 6,
+   "pages": 12,
+   "measured": {
+    "entry_column": {
+     "median": 650,
+     "range": [
+      560,
+      763
+     ]
+    },
+    "entry_x": [
+     384,
+     470
+    ],
+    "entry_heading": {
+     "mode": 24,
+     "range": [
+      20,
+      36
+     ]
+    },
+    "page_h1": [
+     32,
+     77
+    ]
+   },
+   "rules": [
+    "SA-44",
+    "SA-45"
+   ],
+   "variants": {
+    "home_four_entry_row": {
+     "count": 3,
+     "structure": "4 entries in a row: date (12-13px mono/muted), title 14-16px, excerpt, View all",
+     "measured": {},
+     "references": [
+      "linear",
+      "attio",
+      "cursor"
+     ],
+     "crop": "knowledge/benchmarks/sections/changelog/home-linear-timeline-strip.jpg"
+    },
+    "home_split_timeline": {
+     "count": 1,
+     "structure": "heading + link left, vertical timeline of 5 entries right",
+     "measured": {},
+     "references": [
+      "dub"
+     ],
+     "crop": "knowledge/benchmarks/sections/changelog/home-dub-split-timeline.jpg"
+    },
+    "home_card_carousel": {
+     "count": 2,
+     "structure": "image cards of recent launches with arrows",
+     "measured": {},
+     "references": [
+      "rippling",
+      "vercel"
+     ],
+     "crop": "knowledge/benchmarks/sections/changelog/home-rippling-card-carousel.jpg"
+    },
+    "page_date_gutter_feed": {
+     "count": 9,
+     "structure": "date in a left gutter, 560-760px entry column, cover art or UI per entry, subscribe in header",
+     "measured": {},
+     "references": [
+      "clerk",
+      "cursor",
+      "dub",
+      "linear",
+      "neon",
+      "raycast",
+      "resend",
+      "supabase",
+      "vercel"
+     ],
+     "crop": "knowledge/benchmarks/sections/changelog/page-resend.jpg"
+    },
+    "page_weekly_card_grid": {
+     "count": 1,
+     "structure": "3-col grid of weekly cards with art",
+     "measured": {},
+     "references": [
+      "railway"
+     ],
+     "crop": "knowledge/benchmarks/sections/changelog/page-railway.jpg"
+    },
+    "page_compact_list": {
+     "count": 1,
+     "structure": "list rows (date, title, excerpt) expanding inline",
+     "measured": {},
+     "references": [
+      "plain"
+     ],
+     "crop": "knowledge/benchmarks/sections/changelog/page-plain.jpg"
+    },
+    "page_week_covers": {
+     "count": 1,
+     "structure": "feed with a large week-number cover per week",
+     "measured": {},
+     "references": [
+      "liveblocks"
+     ],
+     "crop": "knowledge/benchmarks/sections/changelog/page-liveblocks.jpg"
+    }
+   }
+  },
+  "blog": {
+   "frequency": 11,
+   "pages": 12,
+   "filters_on_pages": 10,
+   "search_on_pages": 8,
+   "rules": [
+    "SA-46"
+   ],
+   "variants": {
+    "home_three_cards": {
+     "count": 5,
+     "structure": "3-4 cards with thumbnails or tinted text cards",
+     "measured": {},
+     "references": [
+      "webflow",
+      "elevenlabs",
+      "vanta",
+      "anthropic",
+      "brex"
+     ],
+     "crop": "knowledge/benchmarks/sections/blog/home-elevenlabs-three-cards.jpg"
+    },
+    "home_featured_side": {
+     "count": 1,
+     "structure": "featured post large + side items",
+     "measured": {},
+     "references": [
+      "stripe"
+     ],
+     "crop": "knowledge/benchmarks/sections/blog/home-stripe-featured-side.jpg"
+    },
+    "home_list": {
+     "count": 2,
+     "structure": "2x2 thumbnail list or text row",
+     "measured": {},
+     "references": [
+      "runway",
+      "cursor"
+     ],
+     "crop": "knowledge/benchmarks/sections/blog/home-runway-thumb-list.jpg"
+    },
+    "page_featured_plus_grid": {
+     "count": 7,
+     "structure": "featured post + 3-col card grid + category tabs",
+     "measured": {},
+     "references": [
+      "attio",
+      "cal",
+      "raycast",
+      "resend",
+      "mistral",
+      "stripe",
+      "supabase"
+     ],
+     "crop": "knowledge/benchmarks/sections/blog/page-resend.jpg"
+    },
+    "page_featured_plus_list": {
+     "count": 3,
+     "structure": "featured + dense list/table (date, category, title, author)",
+     "measured": {},
+     "references": [
+      "anthropic",
+      "clerk",
+      "supabase"
+     ],
+     "crop": "knowledge/benchmarks/sections/blog/page-anthropic.jpg"
+    },
+    "page_uniform_grid": {
+     "count": 2,
+     "structure": "uniform grid (text-only on vercel)",
+     "measured": {},
+     "references": [
+      "dub",
+      "vercel"
+     ],
+     "crop": "knowledge/benchmarks/sections/blog/page-vercel.jpg"
+    }
+   }
+  },
+  "careers": {
+   "pages": 13,
+   "rules": [
+    "SA-47"
+   ],
+   "measured": {
+    "h1": [
+     46,
+     80
+    ],
+    "role_row_height": 60
+   },
+   "variants": {
+    "culture_led": {
+     "count": 9,
+     "structure": "mission h1, film/team photo, values 4-6, perks, open roles list with filters",
+     "measured": {},
+     "references": [
+      "anthropic",
+      "attio",
+      "notion",
+      "stripe",
+      "linear",
+      "supabase",
+      "raycast",
+      "resend",
+      "mistral"
+     ],
+     "crop": "knowledge/benchmarks/sections/careers/linear.jpg"
+    },
+    "jobs_board_first": {
+     "count": 2,
+     "structure": "short intro, then roles list with filters",
+     "measured": {},
+     "references": [
+      "cursor",
+      "vercel"
+     ],
+     "crop": "knowledge/benchmarks/sections/careers/cursor.jpg"
+    },
+    "founder_letter": {
+     "count": 1,
+     "structure": "signed letter from the founder above roles",
+     "measured": {},
+     "references": [
+      "clerk"
+     ],
+     "crop": "knowledge/benchmarks/sections/careers/clerk.jpg"
+    },
+    "type_and_people": {
+     "count": 1,
+     "structure": "giant headline + people cutouts",
+     "measured": {},
+     "references": [
+      "ramp"
+     ],
+     "crop": "knowledge/benchmarks/sections/careers/ramp.jpg"
+    }
+   }
+  },
+  "footers": {
+   "frequency": 43,
+   "rules": [
+    "FT-01..FT-20 in knowledge/web/footers.md"
+   ],
+   "measured": {
+    "height": {
+     "median": 833,
+     "p25": 526,
+     "p75": 1097,
+     "range": [
+      337,
+      1970
+     ]
+    },
+    "share_of_page": {
+     "median": 0.08,
+     "p25": 0.06,
+     "p75": 0.13
+    },
+    "padding": {
+     "top": {
+      "median": 64,
+      "p25": 40,
+      "p75": 80
+     },
+     "bottom": {
+      "median": 48,
+      "p25": 32,
+      "p75": 80
+     }
+    },
+    "content_width": {
+     "median": 1280,
+     "p25": 1200,
+     "p75": 1376
+    },
+    "links": {
+     "median": 49,
+     "p25": 30,
+     "p75": 72,
+     "range": [
+      5,
+      108
+     ]
+    },
+    "link_size": {
+     "14": 17,
+     "16": 13
+    },
+    "link_weight_400": 30,
+    "head": {
+     "size_median": 14,
+     "weight": {
+      "400": 10,
+      "500": 13
+     },
+     "uppercase": "5 of 32 (12-12.6px)"
+    },
+    "link_pitch": {
+     "median": 30,
+     "p25": 28,
+     "p75": 36
+    },
+    "head_to_first_link": 16,
+    "column": {
+     "width": 198,
+     "pitch": 232
+    },
+    "column_positions": {
+     "3": 3,
+     "4": 15,
+     "5": 13,
+     "6": 7
+    },
+    "legal": {
+     "sites": 31,
+     "size": 13
+    },
+    "surface": {
+     "dark": 18,
+     "light": 20,
+     "brand": 5
+    },
+    "dark_footer_on_light_page": "9 of 34"
+   },
+   "layouts": {
+    "brand_column_plus_columns": {
+     "count": 19,
+     "structure": "brand column 300-430px (logo, tagline, socials, status) + 3-6 link columns from x 420-560; legal row",
+     "measured": {},
+     "references": [
+      "linear",
+      "attio",
+      "clerk",
+      "dub",
+      "cal",
+      "supabase",
+      "resend",
+      "lindy",
+      "neon",
+      "notion",
+      "elevenlabs",
+      "flyio",
+      "railway",
+      "superhuman",
+      "plain",
+      "liveblocks",
+      "brex",
+      "deel",
+      "anthropic"
+     ],
+     "crop": "knowledge/benchmarks/sections/footers/dub.jpg"
+    },
+    "full_width_grid": {
+     "count": 16,
+     "structure": "4-12 groups across the container; logo in the bottom row, as a giant wordmark, or absent",
+     "measured": {},
+     "references": [
+      "vercel",
+      "stripe",
+      "framer",
+      "cursor",
+      "loom",
+      "mercury",
+      "ramp",
+      "raycast",
+      "retool",
+      "rippling",
+      "runway",
+      "vanta",
+      "webflow",
+      "granola",
+      "mistral",
+      "perplexity"
+     ],
+     "crop": "knowledge/benchmarks/sections/footers/vercel.jpg"
+    },
+    "cta_merged": {
+     "count": 4,
+     "structure": "closing CTA opens the footer on the same surface; links below",
+     "measured": {},
+     "references": [
+      "arc",
+      "clay",
+      "pitch",
+      "tw_radiant"
+     ],
+     "crop": "knowledge/benchmarks/sections/footers/arc.jpg"
+    },
+    "inset_panel": {
+     "count": 1,
+     "structure": "rounded panel (r16-48) inset in a coloured or art frame",
+     "measured": {},
+     "references": [
+      "lovable"
+     ],
+     "crop": "knowledge/benchmarks/sections/footers/lovable.jpg"
+    },
+    "minimal": {
+     "count": 3,
+     "structure": "logo + 3-5 links + legal in 1-2 rows",
+     "measured": {},
+     "references": [
+      "campsite",
+      "tw_salient",
+      "tw_pocket"
+     ],
+     "crop": "knowledge/benchmarks/sections/footers/tw_salient.jpg"
+    }
+   },
+   "features": {
+    "mega_sitemap_70plus": {
+     "count": 11,
+     "structure": "groups stacked inside columns",
+     "measured": {
+      "links": [
+       72,
+       108
+      ]
+     },
+     "references": [
+      "rippling",
+      "framer",
+      "anthropic",
+      "stripe",
+      "vanta",
+      "vercel",
+      "ramp",
+      "webflow",
+      "liveblocks",
+      "elevenlabs",
+      "cal"
+     ],
+     "crop": "knowledge/benchmarks/sections/footers/anthropic.jpg"
+    },
+    "giant_wordmark": {
+     "count": 5,
+     "structure": "brand SVG 65-100% of viewport width, 130-320px tall, flat or 4-8% faded, 0-48px from bottom or bleeding",
+     "measured": {
+      "examples": [
+       "granola 1200x253",
+       "retool 960x188",
+       "superhuman 1376x132",
+       "pitch 1503x228",
+       "webflow mark 806x502"
+      ]
+     },
+     "references": [
+      "granola",
+      "retool",
+      "superhuman",
+      "webflow",
+      "pitch"
+     ],
+     "crop": "knowledge/benchmarks/sections/footers/granola.jpg"
+    },
+    "illustrated_or_animated": {
+     "count": 8,
+     "structure": "signature art as a top strip, a 200-300px bottom band, or a scene behind an inset panel",
+     "measured": {},
+     "references": [
+      "clay",
+      "mistral",
+      "raycast",
+      "lovable",
+      "perplexity",
+      "rippling",
+      "tw_radiant",
+      "railway"
+     ],
+     "crop": "knowledge/benchmarks/sections/footers/clay.jpg"
+    },
+    "cta_merged_any_layout": {
+     "count": 7,
+     "structure": "heading 28-48px + button or input at the top of the footer",
+     "measured": {},
+     "references": [
+      "arc",
+      "clay",
+      "pitch",
+      "tw_radiant",
+      "rippling",
+      "ramp",
+      "plain"
+     ],
+     "crop": "knowledge/benchmarks/sections/footers/rippling.jpg"
+    },
+    "inset_rounded_panel": {
+     "count": 4,
+     "structure": "panel radius matches the page frame",
+     "measured": {
+      "radius": [
+       "clay 48",
+       "pitch 24"
+      ]
+     },
+     "references": [
+      "clay",
+      "pitch",
+      "lovable",
+      "tw_radiant"
+     ],
+     "crop": "knowledge/benchmarks/sections/footers/pitch.jpg"
+    },
+    "newsletter_row": {
+     "count": 5,
+     "structure": "one row: what/how often + 36-44px email + Subscribe",
+     "measured": {},
+     "references": [
+      "deel",
+      "flyio",
+      "raycast",
+      "supabase",
+      "tw_pocket"
+     ],
+     "crop": "knowledge/benchmarks/sections/footers/deel.jpg"
+    },
+    "live_status_pill": {
+     "count": 8,
+     "structure": "6-8px dot + \"All systems operational\" 12-13px, links to status page",
+     "measured": {},
+     "references": [
+      "vercel",
+      "dub",
+      "liveblocks",
+      "neon",
+      "railway",
+      "resend",
+      "cal",
+      "framer"
+     ],
+     "crop": "knowledge/benchmarks/sections/footers/resend.jpg"
+    },
+    "status_link": {
+     "count": 29,
+     "structure": "plain Status link in the sitemap",
+     "measured": {},
+     "references": [],
+     "crop": null
+    },
+    "socials": {
+     "count": 39,
+     "structure": "16-20px mono icons in brand column or bottom row",
+     "measured": {},
+     "references": [],
+     "crop": null
+    },
+    "legal_row": {
+     "count": 31,
+     "structure": "copyright + legal links 12-14px muted",
+     "measured": {
+      "size": 13
+     },
+     "references": [],
+     "crop": null
+    },
+    "language_selector": {
+     "count": 10,
+     "structure": "select or button in the bottom row/brand column",
+     "measured": {},
+     "references": [
+      "anthropic",
+      "cursor",
+      "elevenlabs",
+      "framer",
+      "mistral",
+      "notion",
+      "runway",
+      "stripe",
+      "supabase",
+      "cal"
+     ],
+     "crop": "knowledge/benchmarks/sections/footers/cursor.jpg"
+    },
+    "compliance": {
+     "count": 11,
+     "structure": "mono seals 24-40px or one 12-13px text line",
+     "measured": {},
+     "references": [
+      "cal",
+      "cursor",
+      "dub",
+      "framer",
+      "lindy",
+      "liveblocks",
+      "neon",
+      "pitch",
+      "resend",
+      "supabase",
+      "vanta"
+     ],
+     "crop": "knowledge/benchmarks/sections/footers/vanta.jpg"
+    },
+    "app_badges": {
+     "count": 6,
+     "structure": "App Store / Google Play / platform chips / QR",
+     "measured": {},
+     "references": [
+      "brex",
+      "mistral",
+      "perplexity",
+      "rippling",
+      "cal",
+      "tw_pocket"
+     ],
+     "crop": "knowledge/benchmarks/sections/footers/perplexity.jpg"
+    },
+    "regulatory_disclosures": {
+     "count": 4,
+     "structure": "11-12px paragraphs under the legal row (fintech)",
+     "measured": {},
+     "references": [
+      "brex",
+      "mercury",
+      "ramp",
+      "rippling"
+     ],
+     "crop": "knowledge/benchmarks/sections/footers/brex.jpg"
+    },
+    "theme_switch": {
+     "count": 2,
+     "structure": "system/light/dark segmented control bottom-right",
+     "measured": {},
+     "references": [
+      "vercel",
+      "cursor"
+     ],
+     "crop": "knowledge/benchmarks/sections/footers/vercel.jpg"
+    },
+    "parent_brand": {
+     "count": 2,
+     "structure": "parent company line or logo",
+     "measured": {},
+     "references": [
+      "loom",
+      "neon"
+     ],
+     "crop": "knowledge/benchmarks/sections/footers/neon.jpg"
+    },
+    "featured_content": {
+     "count": 2,
+     "structure": "announcement cards or a quote inside the footer",
+     "measured": {},
+     "references": [
+      "railway",
+      "notion"
+     ],
+     "crop": "knowledge/benchmarks/sections/footers/railway.jpg"
+    }
+   },
+   "templates_of_6": {
+    "cta_merged": 3,
+    "giant_wordmark": 2,
+    "newsletter": 3,
+    "inset_panel": 1,
+    "contact_led": 1,
+    "crops": "knowledge/benchmarks/sections/footers/template-fr_*.jpg"
+   }
+  }
+ }
+}

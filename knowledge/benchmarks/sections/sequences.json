@@ -1,0 +1,797 @@
+{
+ "_about": "Homepage section order read by eye from full/<slug>.jpg (1440 wide, captured 2026-10-10) cross-checked with raw/<slug>.json block geometry. One code per top-level section between nav and footer. 'ann' = announcement bar above the nav (not counted as a section). Codes: hero, logos, statement (text-only breather/two-tone claim), problem, features (feature row or product chapter with media), tabs (feature tabs/segmented showcase), bento, catalogue (small icon-tile feature grid), how (how-it-works/steps/timeline), story (sticky scroll story), metrics, testimonials, cases (case studies/customer stories), integrations, security, pricing, faq, cta, newsletter, changelog, blog, launch (product announcement card), segments (use cases/personas/company sizes), showcase (gallery of things built with it), community, press, awards (ratings/badges row), interactive (live prompt/demo input), templates, letter (founder letter), video. Excluded: openai (Cloudflare human-verification wall, not bypassed), posthog (desktop-OS homepage, no section stack), height (connection reset), oatmeal.tailwindui.com (no DNS).",
+ "linear": {
+  "theme": "dark",
+  "ann": false,
+  "seq": [
+   "hero",
+   "logos",
+   "statement",
+   "catalogue",
+   "features",
+   "features",
+   "features",
+   "features",
+   "changelog",
+   "testimonials",
+   "cta"
+  ]
+ },
+ "vercel": {
+  "theme": "light",
+  "ann": true,
+  "seq": [
+   "hero",
+   "logos",
+   "features",
+   "cases",
+   "changelog",
+   "cta"
+  ]
+ },
+ "stripe": {
+  "theme": "light",
+  "ann": false,
+  "seq": [
+   "hero",
+   "logos",
+   "bento",
+   "video",
+   "metrics",
+   "segments",
+   "cases",
+   "integrations",
+   "blog",
+   "cta"
+  ]
+ },
+ "attio": {
+  "theme": "light",
+  "ann": true,
+  "seq": [
+   "hero",
+   "logos",
+   "story",
+   "features",
+   "integrations",
+   "features",
+   "metrics",
+   "cases",
+   "changelog",
+   "newsletter",
+   "cta"
+  ]
+ },
+ "raycast": {
+  "theme": "dark",
+  "ann": false,
+  "seq": [
+   "hero",
+   "features",
+   "video",
+   "features",
+   "tabs",
+   "features",
+   "features",
+   "testimonials",
+   "bento",
+   "features",
+   "newsletter"
+  ]
+ },
+ "resend": {
+  "theme": "dark",
+  "ann": false,
+  "seq": [
+   "hero",
+   "logos",
+   "integrations",
+   "features",
+   "features",
+   "features",
+   "features",
+   "catalogue",
+   "features",
+   "testimonials",
+   "cta"
+  ]
+ },
+ "clerk": {
+  "theme": "light",
+  "ann": true,
+  "seq": [
+   "hero",
+   "logos",
+   "bento",
+   "bento",
+   "features",
+   "integrations",
+   "testimonials"
+  ]
+ },
+ "supabase": {
+  "theme": "light",
+  "ann": false,
+  "seq": [
+   "hero",
+   "bento",
+   "logos",
+   "tabs",
+   "tabs",
+   "templates",
+   "cases",
+   "community",
+   "metrics",
+   "cta",
+   "security"
+  ]
+ },
+ "framer": {
+  "theme": "dark",
+  "ann": false,
+  "seq": [
+   "hero",
+   "logos",
+   "features",
+   "bento",
+   "showcase",
+   "testimonials",
+   "community",
+   "cta"
+  ]
+ },
+ "arc": {
+  "theme": "light",
+  "ann": false,
+  "seq": [
+   "launch",
+   "hero",
+   "press",
+   "features",
+   "features",
+   "features",
+   "statement",
+   "testimonials",
+   "cta"
+  ]
+ },
+ "cursor": {
+  "theme": "light",
+  "ann": false,
+  "seq": [
+   "hero",
+   "logos",
+   "features",
+   "features",
+   "features",
+   "features",
+   "testimonials",
+   "catalogue",
+   "changelog",
+   "letter",
+   "blog",
+   "cta"
+  ]
+ },
+ "mercury": {
+  "theme": "dark",
+  "ann": true,
+  "seq": [
+   "hero",
+   "features",
+   "logos",
+   "testimonials",
+   "bento",
+   "testimonials",
+   "features",
+   "features",
+   "bento",
+   "metrics",
+   "security",
+   "press",
+   "cta"
+  ]
+ },
+ "ramp": {
+  "theme": "light",
+  "ann": true,
+  "seq": [
+   "hero",
+   "logos",
+   "bento",
+   "interactive",
+   "integrations",
+   "cases",
+   "testimonials",
+   "features",
+   "features",
+   "testimonials",
+   "cta"
+  ]
+ },
+ "notion": {
+  "theme": "light",
+  "ann": false,
+  "seq": [
+   "hero",
+   "logos",
+   "bento",
+   "catalogue",
+   "testimonials",
+   "cta"
+  ]
+ },
+ "lovable": {
+  "theme": "light",
+  "ann": false,
+  "seq": [
+   "hero",
+   "catalogue",
+   "story",
+   "logos",
+   "cases",
+   "metrics",
+   "cta"
+  ]
+ },
+ "granola": {
+  "theme": "light",
+  "ann": false,
+  "seq": [
+   "hero",
+   "statement",
+   "logos",
+   "statement",
+   "features",
+   "statement",
+   "testimonials",
+   "features",
+   "integrations",
+   "cta"
+  ]
+ },
+ "dub": {
+  "theme": "light",
+  "ann": false,
+  "seq": [
+   "hero",
+   "tabs",
+   "logos",
+   "statement",
+   "features",
+   "features",
+   "integrations",
+   "features",
+   "metrics",
+   "features",
+   "testimonials",
+   "changelog",
+   "cta"
+  ]
+ },
+ "cal": {
+  "theme": "light",
+  "ann": false,
+  "seq": [
+   "hero",
+   "logos",
+   "how",
+   "bento",
+   "catalogue",
+   "testimonials",
+   "integrations",
+   "testimonials",
+   "faq",
+   "logos",
+   "cta"
+  ]
+ },
+ "plain": {
+  "theme": "light",
+  "ann": true,
+  "seq": [
+   "hero",
+   "logos",
+   "statement",
+   "bento",
+   "features",
+   "features",
+   "features",
+   "features",
+   "statement",
+   "testimonials",
+   "how",
+   "security",
+   "cta"
+  ]
+ },
+ "lindy": {
+  "theme": "light",
+  "ann": false,
+  "seq": [
+   "hero",
+   "logos",
+   "story",
+   "tabs",
+   "catalogue",
+   "testimonials",
+   "security",
+   "pricing",
+   "faq",
+   "cta"
+  ]
+ },
+ "retool": {
+  "theme": "dark",
+  "ann": true,
+  "seq": [
+   "hero",
+   "logos",
+   "showcase",
+   "story",
+   "statement",
+   "cases",
+   "cta",
+   "blog"
+  ]
+ },
+ "webflow": {
+  "theme": "light",
+  "ann": true,
+  "seq": [
+   "hero",
+   "logos",
+   "launch",
+   "cases",
+   "interactive",
+   "blog",
+   "showcase"
+  ]
+ },
+ "loom": {
+  "theme": "light",
+  "ann": true,
+  "seq": [
+   "hero",
+   "logos",
+   "launch",
+   "features",
+   "features",
+   "features",
+   "features",
+   "security",
+   "segments",
+   "catalogue",
+   "blog",
+   "launch",
+   "testimonials",
+   "cta"
+  ]
+ },
+ "superhuman": {
+  "theme": "light",
+  "ann": true,
+  "seq": [
+   "hero",
+   "logos",
+   "tabs",
+   "features",
+   "features",
+   "features",
+   "features",
+   "statement",
+   "cta"
+  ]
+ },
+ "perplexity": {
+  "theme": "light",
+  "ann": false,
+  "seq": [
+   "hero",
+   "logos",
+   "features",
+   "features",
+   "features",
+   "catalogue",
+   "security",
+   "tabs",
+   "testimonials",
+   "faq",
+   "cta"
+  ]
+ },
+ "anthropic": {
+  "theme": "light",
+  "ann": false,
+  "seq": [
+   "hero",
+   "launch",
+   "blog",
+   "statement",
+   "blog"
+  ]
+ },
+ "mistral": {
+  "theme": "light",
+  "ann": false,
+  "seq": [
+   "hero",
+   "logos",
+   "statement",
+   "features",
+   "features",
+   "features",
+   "features",
+   "cases",
+   "catalogue"
+  ]
+ },
+ "elevenlabs": {
+  "theme": "light",
+  "ann": true,
+  "seq": [
+   "hero",
+   "tabs",
+   "logos",
+   "features",
+   "bento",
+   "bento",
+   "features",
+   "showcase",
+   "features",
+   "security",
+   "blog",
+   "cta"
+  ]
+ },
+ "runway": {
+  "theme": "light",
+  "ann": true,
+  "seq": [
+   "hero",
+   "logos",
+   "segments",
+   "tabs",
+   "statement",
+   "blog"
+  ]
+ },
+ "pitch": {
+  "theme": "light",
+  "ann": true,
+  "seq": [
+   "hero",
+   "logos",
+   "features",
+   "metrics",
+   "features",
+   "testimonials",
+   "bento",
+   "integrations",
+   "segments",
+   "templates",
+   "faq"
+  ]
+ },
+ "rippling": {
+  "theme": "light",
+  "ann": false,
+  "seq": [
+   "hero",
+   "catalogue",
+   "features",
+   "features",
+   "features",
+   "video",
+   "features",
+   "testimonials",
+   "changelog",
+   "awards",
+   "cta"
+  ]
+ },
+ "deel": {
+  "theme": "light",
+  "ann": true,
+  "seq": [
+   "hero",
+   "logos",
+   "catalogue",
+   "tabs",
+   "features",
+   "cases",
+   "metrics",
+   "awards"
+  ]
+ },
+ "brex": {
+  "theme": "light",
+  "ann": false,
+  "seq": [
+   "hero",
+   "logos",
+   "catalogue",
+   "segments",
+   "features",
+   "features",
+   "features",
+   "features",
+   "features",
+   "metrics",
+   "testimonials",
+   "cta",
+   "blog"
+  ]
+ },
+ "vanta": {
+  "theme": "light",
+  "ann": false,
+  "seq": [
+   "hero",
+   "logos",
+   "bento",
+   "features",
+   "testimonials",
+   "security",
+   "segments",
+   "cases",
+   "awards",
+   "blog",
+   "cta"
+  ]
+ },
+ "clay": {
+  "theme": "light",
+  "ann": true,
+  "seq": [
+   "hero",
+   "logos",
+   "tabs",
+   "interactive",
+   "features",
+   "features",
+   "features",
+   "features",
+   "features",
+   "testimonials",
+   "blog",
+   "cta"
+  ]
+ },
+ "campsite": {
+  "theme": "light",
+  "ann": false,
+  "seq": [
+   "hero",
+   "features",
+   "features",
+   "features",
+   "features",
+   "features",
+   "integrations",
+   "letter"
+  ]
+ },
+ "liveblocks": {
+  "theme": "dark",
+  "ann": false,
+  "seq": [
+   "hero",
+   "logos",
+   "tabs",
+   "catalogue",
+   "bento",
+   "features",
+   "catalogue",
+   "testimonials",
+   "cta"
+  ]
+ },
+ "neon": {
+  "theme": "dark",
+  "ann": true,
+  "seq": [
+   "hero",
+   "logos",
+   "features",
+   "features",
+   "features",
+   "metrics",
+   "testimonials",
+   "metrics",
+   "statement",
+   "features",
+   "metrics",
+   "pricing",
+   "cta"
+  ]
+ },
+ "railway": {
+  "theme": "dark",
+  "ann": false,
+  "seq": [
+   "hero",
+   "logos",
+   "features",
+   "features",
+   "features",
+   "features",
+   "features",
+   "cases",
+   "testimonials",
+   "metrics"
+  ]
+ },
+ "flyio": {
+  "theme": "light",
+  "ann": false,
+  "seq": [
+   "hero",
+   "logos",
+   "statement",
+   "catalogue",
+   "features",
+   "features",
+   "features",
+   "catalogue",
+   "metrics",
+   "catalogue",
+   "testimonials",
+   "cta"
+  ]
+ },
+ "tw_radiant": {
+  "theme": "light",
+  "ann": false,
+  "seq": [
+   "hero",
+   "logos",
+   "features",
+   "bento",
+   "bento",
+   "testimonials",
+   "cta"
+  ]
+ },
+ "tw_salient": {
+  "theme": "light",
+  "ann": false,
+  "seq": [
+   "hero",
+   "logos",
+   "tabs",
+   "tabs",
+   "cta",
+   "testimonials",
+   "pricing",
+   "faq"
+  ]
+ },
+ "tw_pocket": {
+  "theme": "light",
+  "ann": false,
+  "seq": [
+   "hero",
+   "logos",
+   "features",
+   "catalogue",
+   "cta",
+   "testimonials",
+   "pricing",
+   "faq"
+  ]
+ },
+ "_templates": {
+  "_about": "Framer marketplace SaaS templates (category page order, captured 2026-10-10). Read the same way; kept apart because templates are sold as section checklists, not shipped products.",
+  "fr_verity": {
+   "theme": "dark",
+   "ann": false,
+   "seq": [
+    "hero",
+    "logos",
+    "catalogue",
+    "features",
+    "how",
+    "bento",
+    "comparison",
+    "testimonials",
+    "integrations",
+    "pricing",
+    "faq",
+    "cta"
+   ]
+  },
+  "fr_platform": {
+   "theme": "dark",
+   "ann": false,
+   "seq": [
+    "hero",
+    "statement",
+    "showcase",
+    "catalogue",
+    "how",
+    "features",
+    "pricing",
+    "faq",
+    "team",
+    "testimonials",
+    "blog",
+    "cta"
+   ]
+  },
+  "fr_grovia": {
+   "theme": "light",
+   "ann": false,
+   "seq": [
+    "hero",
+    "logos",
+    "catalogue",
+    "tabs",
+    "integrations",
+    "pricing",
+    "cases",
+    "testimonials",
+    "faq",
+    "cta"
+   ]
+  },
+  "fr_coorda": {
+   "theme": "light",
+   "ann": false,
+   "seq": [
+    "hero",
+    "logos",
+    "statement",
+    "catalogue",
+    "features",
+    "features",
+    "features",
+    "features",
+    "catalogue",
+    "metrics",
+    "showcase",
+    "pricing",
+    "testimonials",
+    "faq",
+    "blog",
+    "cta"
+   ]
+  },
+  "fr_optivio": {
+   "theme": "light",
+   "ann": false,
+   "seq": [
+    "hero",
+    "logos",
+    "interactive",
+    "testimonials",
+    "comparison",
+    "catalogue",
+    "how",
+    "tabs",
+    "features",
+    "testimonials",
+    "pricing",
+    "faq",
+    "cta"
+   ]
+  },
+  "fr_strand": {
+   "theme": "dark",
+   "ann": false,
+   "seq": [
+    "hero",
+    "logos",
+    "interactive",
+    "features",
+    "features",
+    "features",
+    "integrations",
+    "testimonials",
+    "metrics",
+    "faq",
+    "cta"
+   ]
+  }
+ }
+}

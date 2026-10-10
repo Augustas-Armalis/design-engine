@@ -1,0 +1,945 @@
+{
+ "vw": 1440,
+ "pageHeight": 2565,
+ "title": "Vercel Marketplace",
+ "bodyBg": "rgb(250, 250, 250)",
+ "htmlBg": "rgb(250, 250, 250)",
+ "bodyFont": "GeistSans",
+ "blocks": [
+  {
+   "idx": 0,
+   "tag": "header",
+   "id": "marketing-header",
+   "cls": "peer sticky top-0 z-(--header-zindex) h-(--header-height) w-",
+   "top": 0,
+   "h": 64,
+   "w": 1440,
+   "x": 0,
+   "bg": "rgb(250, 250, 250)",
+   "ownBg": "rgb(250, 250, 250)",
+   "bgImg": null,
+   "radius": "0px",
+   "cssPadT": 0,
+   "cssPadB": 0,
+   "effPadT": 16,
+   "effPadB": 16,
+   "contentL": 24,
+   "contentR": 1410,
+   "contentW": 1386,
+   "words": 9,
+   "snippet": "Products Resources Enterprise Pricing Contact Log In Sign Up",
+   "f": {
+    "img": 0,
+    "bigMedia": 0,
+    "video": 0,
+    "canvas": 0,
+    "logoish": 0,
+    "squareIcons": 0,
+    "avatars": 0,
+    "marquee": false,
+    "details": 4,
+    "expanded": 4,
+    "tabs": 0,
+    "tables": 0,
+    "tr": 0,
+    "quotes": 0,
+    "prices": 0,
+    "bigNums": [],
+    "steps": 0,
+    "email": 0,
+    "inputs": 0,
+    "compliance": 0,
+    "integ": 0,
+    "faq": 0,
+    "dates": 0,
+    "sticky": false,
+    "buttons": 5,
+    "links": 6,
+    "switch": 0,
+    "checks": 11,
+    "h2count": 0
+   }
+  },
+  {
+   "idx": 1,
+   "tag": "div",
+   "id": "",
+   "cls": "inset-0 pointer-events-none fixed z-[100000] h-full w-full",
+   "top": 0,
+   "h": 900,
+   "w": 1440,
+   "x": 0,
+   "bg": "rgb(250, 250, 250)",
+   "ownBg": "rgba(0, 0, 0, 0)",
+   "bgImg": null,
+   "radius": "0px",
+   "cssPadT": 0,
+   "cssPadB": 0,
+   "effPadT": 0,
+   "effPadB": 893,
+   "contentL": -7,
+   "contentR": 7,
+   "contentW": 14,
+   "words": 0,
+   "snippet": "",
+   "f": {
+    "img": 0,
+    "bigMedia": 0,
+    "video": 0,
+    "canvas": 0,
+    "logoish": 0,
+    "squareIcons": 0,
+    "avatars": 0,
+    "marquee": false,
+    "details": 0,
+    "expanded": 0,
+    "tabs": 0,
+    "tables": 0,
+    "tr": 0,
+    "quotes": 0,
+    "prices": 0,
+    "bigNums": [],
+    "steps": 0,
+    "email": 0,
+    "inputs": 0,
+    "compliance": 0,
+    "integ": 0,
+    "faq": 0,
+    "dates": 0,
+    "sticky": false,
+    "buttons": 0,
+    "links": 0,
+    "switch": 0,
+    "checks": 1,
+    "h2count": 0
+   }
+  },
+  {
+   "idx": 2,
+   "tag": "div",
+   "id": "",
+   "cls": "flex flex-col gap-8",
+   "top": 136,
+   "h": 496,
+   "w": 1392,
+   "x": 24,
+   "bg": "rgb(250, 250, 250)",
+   "ownBg": "rgba(0, 0, 0, 0)",
+   "bgImg": null,
+   "radius": "0px",
+   "cssPadT": 0,
+   "cssPadB": 0,
+   "effPadT": 0,
+   "effPadB": 38,
+   "contentL": 20,
+   "contentR": 1776,
+   "contentW": 1756,
+   "containerW": 1392,
+   "heading": {
+    "text": "Marketplace",
+    "tag": "h1",
+    "size": 48,
+    "weight": "450",
+    "lh": "56px",
+    "ls": "-2.88px",
+    "fam": "GeistSans",
+    "color": "rgb(23, 23, 23)",
+    "align": "start",
+    "tt": "none",
+    "w": 247,
+    "h": 56,
+    "x": 20,
+    "y": 136,
+    "lines": 1
+   },
+   "headingFromTop": 0,
+   "groupBottom": 56,
+   "headToContent": 86,
+   "allHeadings": [
+    {
+     "t": "h1",
+     "s": 48,
+     "w": "450",
+     "text": "Marketplace"
+    }
+   ],
+   "cards": {
+    "n": 4,
+    "cols": 4,
+    "rows": 1,
+    "w": 420,
+    "h": 348,
+    "sizes": [
+     "420x348",
+     "420x348",
+     "420x348",
+     "420x348"
+    ],
+    "gap": 24,
+    "radius": [
+     [
+      "2px",
+      4
+     ]
+    ],
+    "pad": [
+     [
+      "0px/0px",
+      4
+     ]
+    ],
+    "bg": [
+     [
+      "rgb(255, 255, 255)",
+      4
+     ]
+    ],
+    "border": [
+     [
+      "none",
+      4
+     ]
+    ],
+    "shadow": [
+     [
+      "none",
+      4
+     ]
+    ]
+   },
+   "words": 108,
+   "snippet": "Marketplace All types Native integrations External integrations Recently added All categories Agents AI Analytics Authentication CMS Code Review Code Security Code Testing Commerce Database DevTools Experimentation Flags Logging Messaging Monitoring Observabil",
+   "f": {
+    "img": 4,
+    "bigMedia": 4,
+    "video": 0,
+    "canvas": 0,
+    "logoish": 0,
+    "squareIcons": 4,
+    "avatars": 4,
+    "marquee": false,
+    "details": 0,
+    "expanded": 0,
+    "tabs": 0,
+    "tables": 0,
+    "tr": 0,
+    "quotes": 0,
+    "prices": 0,
+    "bigNums": [],
+    "steps": 0,
+    "email": 0,
+    "inputs": 1,
+    "compliance": 0,
+    "integ": 3,
+    "faq": 0,
+    "dates": 0,
+    "sticky": false,
+    "buttons": 2,
+    "links": 4,
+    "switch": 0,
+    "checks": 6,
+    "h2count": 0
+   }
+  },
+  {
+   "idx": 3,
+   "tag": "section",
+   "id": "",
+   "cls": "flex flex-col gap-8",
+   "top": 704,
+   "h": 266,
+   "w": 1392,
+   "x": 24,
+   "bg": "rgb(250, 250, 250)",
+   "ownBg": "rgba(0, 0, 0, 0)",
+   "bgImg": null,
+   "radius": "0px",
+   "cssPadT": 0,
+   "cssPadB": 0,
+   "effPadT": 0,
+   "effPadB": 30,
+   "contentL": 24,
+   "contentR": 1392,
+   "contentW": 1368,
+   "containerW": 1392,
+   "heading": {
+    "text": "Recently added",
+    "tag": "h2",
+    "size": 24,
+    "weight": "450",
+    "lh": "32px",
+    "ls": "-0.96px",
+    "fam": "GeistSans",
+    "color": "rgb(23, 23, 23)",
+    "align": "start",
+    "tt": "none",
+    "w": 160,
+    "h": 32,
+    "x": 24,
+    "y": 704,
+    "lines": 1
+   },
+   "headingFromTop": 0,
+   "groupBottom": 32,
+   "headToContent": 32,
+   "allHeadings": [
+    {
+     "t": "h2",
+     "s": 24,
+     "w": "450",
+     "text": "Recently added"
+    },
+    {
+     "t": "h3",
+     "s": 16,
+     "w": "400",
+     "text": "Mem0"
+    },
+    {
+     "t": "h3",
+     "s": 16,
+     "w": "400",
+     "text": "LaunchDarkly"
+    },
+    {
+     "t": "h3",
+     "s": 16,
+     "w": "400",
+     "text": "Exa Search API"
+    },
+    {
+     "t": "h3",
+     "s": 16,
+     "w": "400",
+     "text": "Algolia"
+    }
+   ],
+   "cards": {
+    "n": 4,
+    "cols": 4,
+    "rows": 1,
+    "w": 330,
+    "h": 196,
+    "sizes": [
+     "330x196",
+     "330x196",
+     "330x196",
+     "330x196"
+    ],
+    "gap": 24,
+    "radius": [
+     [
+      "2px",
+      4
+     ]
+    ],
+    "pad": [
+     [
+      "24px/24px",
+      4
+     ]
+    ],
+    "bg": [
+     [
+      "rgb(255, 255, 255)",
+      4
+     ]
+    ],
+    "border": [
+     [
+      "none",
+      4
+     ]
+    ],
+    "shadow": [
+     [
+      "rgba(0, 0, 0, 0.08) 0px 0px 0px 1px, rgb(250, 250, 250) 0px 0px 0px 1px",
+      4
+     ]
+    ]
+   },
+   "words": 53,
+   "snippet": "Recently added Agents Mem0 Enable Persistent Memory for your Agents and AI Applications Experimentation LaunchDarkly Feature flags, experimentation, and AI AgentControl to ship with confidence. Searching Exa Search API AI-powered search API for developers. Bui",
+   "f": {
+    "img": 0,
+    "bigMedia": 0,
+    "video": 0,
+    "canvas": 0,
+    "logoish": 0,
+    "squareIcons": 4,
+    "avatars": 4,
+    "marquee": false,
+    "details": 0,
+    "expanded": 0,
+    "tabs": 0,
+    "tables": 0,
+    "tr": 0,
+    "quotes": 0,
+    "prices": 0,
+    "bigNums": [],
+    "steps": 0,
+    "email": 0,
+    "inputs": 0,
+    "compliance": 0,
+    "integ": 1,
+    "faq": 0,
+    "dates": 0,
+    "sticky": false,
+    "buttons": 0,
+    "links": 4,
+    "switch": 0,
+    "checks": 1,
+    "h2count": 0
+   }
+  },
+  {
+   "idx": 4,
+   "tag": "section",
+   "id": "",
+   "cls": "flex flex-col gap-8",
+   "top": 1042,
+   "h": 768,
+   "w": 1392,
+   "x": 24,
+   "bg": "rgb(250, 250, 250)",
+   "ownBg": "rgba(0, 0, 0, 0)",
+   "bgImg": null,
+   "radius": "0px",
+   "cssPadT": 0,
+   "cssPadB": 0,
+   "effPadT": 0,
+   "effPadB": 0,
+   "contentL": 24,
+   "contentR": 1416,
+   "contentW": 1392,
+   "containerW": 1392,
+   "heading": {
+    "text": "Native integrations",
+    "tag": "h2",
+    "size": 24,
+    "weight": "450",
+    "lh": "32px",
+    "ls": "-0.96px",
+    "fam": "GeistSans",
+    "color": "rgb(23, 23, 23)",
+    "align": "start",
+    "tt": "none",
+    "w": 191,
+    "h": 32,
+    "x": 24,
+    "y": 1042,
+    "lines": 1
+   },
+   "headingFromTop": 0,
+   "groupBottom": 32,
+   "headToContent": 32,
+   "allHeadings": [
+    {
+     "t": "h2",
+     "s": 24,
+     "w": "450",
+     "text": "Native integrations"
+    },
+    {
+     "t": "h3",
+     "s": 16,
+     "w": "400",
+     "text": "Neon"
+    },
+    {
+     "t": "h3",
+     "s": 16,
+     "w": "400",
+     "text": "AWS"
+    },
+    {
+     "t": "h3",
+     "s": 16,
+     "w": "400",
+     "text": "Upstash"
+    },
+    {
+     "t": "h3",
+     "s": 16,
+     "w": "400",
+     "text": "Supabase"
+    },
+    {
+     "t": "h3",
+     "s": 16,
+     "w": "400",
+     "text": "Redis"
+    },
+    {
+     "t": "h3",
+     "s": 16,
+     "w": "400",
+     "text": "Nile"
+    },
+    {
+     "t": "h3",
+     "s": 16,
+     "w": "400",
+     "text": "MotherDuck"
+    },
+    {
+     "t": "h3",
+     "s": 16,
+     "w": "400",
+     "text": "fal"
+    },
+    {
+     "t": "h3",
+     "s": 16,
+     "w": "400",
+     "text": "Deep Infra"
+    },
+    {
+     "t": "h3",
+     "s": 16,
+     "w": "400",
+     "text": "Sentry"
+    },
+    {
+     "t": "h3",
+     "s": 16,
+     "w": "400",
+     "text": "Checkly"
+    },
+    {
+     "t": "h3",
+     "s": 16,
+     "w": "400",
+     "text": "Request an Integration"
+    }
+   ],
+   "cards": {
+    "n": 12,
+    "cols": 4,
+    "rows": 3,
+    "w": 330,
+    "h": 196,
+    "sizes": [
+     "330x196",
+     "330x196",
+     "330x196",
+     "330x196",
+     "330x196",
+     "330x196",
+     "330x196",
+     "330x196",
+     "330x196",
+     "330x196"
+    ],
+    "gap": 24,
+    "radius": [
+     [
+      "2px",
+      12
+     ]
+    ],
+    "pad": [
+     [
+      "24px/24px",
+      12
+     ]
+    ],
+    "bg": [
+     [
+      "rgb(255, 255, 255)",
+      12
+     ]
+    ],
+    "border": [
+     [
+      "none",
+      12
+     ]
+    ],
+    "shadow": [
+     [
+      "rgba(0, 0, 0, 0.08) 0px 0px 0px 1px, rgb(250, 250, 250) 0px 0px 0px 1px",
+      12
+     ]
+    ]
+   },
+   "words": 115,
+   "snippet": "Native integrations Storage Neon Postgres serverless platform designed to build reliable and scalable apps Storage AWS Serverless, reliable, secure AWS Services. Storage Upstash Serverless DB (Redis, Vector, Queue, Search) Storage Supabase Open-source Postgres",
+   "f": {
+    "img": 0,
+    "bigMedia": 0,
+    "video": 0,
+    "canvas": 0,
+    "logoish": 0,
+    "squareIcons": 12,
+    "avatars": 12,
+    "marquee": false,
+    "details": 0,
+    "expanded": 0,
+    "tabs": 0,
+    "tables": 0,
+    "tr": 0,
+    "quotes": 0,
+    "prices": 0,
+    "bigNums": [],
+    "steps": 0,
+    "email": 0,
+    "inputs": 0,
+    "compliance": 0,
+    "integ": 8,
+    "faq": 0,
+    "dates": 0,
+    "sticky": false,
+    "buttons": 2,
+    "links": 11,
+    "switch": 0,
+    "checks": 2,
+    "h2count": 0
+   }
+  },
+  {
+   "idx": 5,
+   "tag": "section",
+   "id": "",
+   "cls": "flex flex-col gap-8",
+   "top": 1882,
+   "h": 508,
+   "w": 1392,
+   "x": 24,
+   "bg": "rgb(250, 250, 250)",
+   "ownBg": "rgba(0, 0, 0, 0)",
+   "bgImg": null,
+   "radius": "0px",
+   "cssPadT": 0,
+   "cssPadB": 0,
+   "effPadT": 0,
+   "effPadB": 0,
+   "contentL": 24,
+   "contentR": 1403,
+   "contentW": 1379,
+   "containerW": 1392,
+   "heading": {
+    "text": "External integrations",
+    "tag": "h2",
+    "size": 24,
+    "weight": "450",
+    "lh": "32px",
+    "ls": "-0.96px",
+    "fam": "GeistSans",
+    "color": "rgb(23, 23, 23)",
+    "align": "start",
+    "tt": "none",
+    "w": 209,
+    "h": 32,
+    "x": 24,
+    "y": 1882,
+    "lines": 1
+   },
+   "headingFromTop": 0,
+   "sub": {
+    "text": "The most powerful AI text to speech API",
+    "tag": "p",
+    "size": 13,
+    "weight": "400",
+    "lh": "18px",
+    "ls": "normal",
+    "fam": "GeistSans",
+    "color": "rgb(77, 77, 77)",
+    "align": "start",
+    "tt": "none",
+    "w": 256,
+    "h": 18,
+    "x": 439,
+    "y": 1987,
+    "lines": 1
+   },
+   "subGap": 73,
+   "groupBottom": 123,
+   "allHeadings": [
+    {
+     "t": "h2",
+     "s": 24,
+     "w": "450",
+     "text": "External integrations"
+    },
+    {
+     "t": "h3",
+     "s": 13,
+     "w": "400",
+     "text": "Deep Infra"
+    },
+    {
+     "t": "h3",
+     "s": 13,
+     "w": "400",
+     "text": "ElevenLabs"
+    },
+    {
+     "t": "h3",
+     "s": 13,
+     "w": "400",
+     "text": "LMNT"
+    },
+    {
+     "t": "h3",
+     "s": 13,
+     "w": "400",
+     "text": "Perplexity API"
+    },
+    {
+     "t": "h3",
+     "s": 13,
+     "w": "400",
+     "text": "Replicate"
+    },
+    {
+     "t": "h3",
+     "s": 13,
+     "w": "400",
+     "text": "Together AI"
+    },
+    {
+     "t": "h3",
+     "s": 13,
+     "w": "400",
+     "text": "PostHog"
+    },
+    {
+     "t": "h3",
+     "s": 13,
+     "w": "400",
+     "text": "Statsig"
+    },
+    {
+     "t": "h3",
+     "s": 13,
+     "w": "400",
+     "text": "Vercel Web Analytics"
+    },
+    {
+     "t": "h3",
+     "s": 13,
+     "w": "400",
+     "text": "DevCycle"
+    },
+    {
+     "t": "h3",
+     "s": 13,
+     "w": "400",
+     "text": "Kameleoon"
+    },
+    {
+     "t": "h3",
+     "s": 13,
+     "w": "400",
+     "text": "Split"
+    },
+    {
+     "t": "h3",
+     "s": 13,
+     "w": "400",
+     "text": "Clerk"
+    }
+   ],
+   "cards": {
+    "n": 16,
+    "cols": 4,
+    "rows": 4,
+    "w": 330,
+    "h": 76,
+    "sizes": [
+     "330x76",
+     "330x76",
+     "330x76",
+     "330x76",
+     "330x76",
+     "330x76",
+     "330x76",
+     "330x76",
+     "330x76",
+     "330x76"
+    ],
+    "gap": 24,
+    "radius": [
+     [
+      "2px",
+      16
+     ]
+    ],
+    "pad": [
+     [
+      "16px/12px",
+      16
+     ]
+    ],
+    "bg": [
+     [
+      "rgb(255, 255, 255)",
+      16
+     ]
+    ],
+    "border": [
+     [
+      "1px rgba(0, 0, 0, 0.08)",
+      16
+     ]
+    ],
+    "shadow": [
+     [
+      "none",
+      16
+     ]
+    ]
+   },
+   "words": 148,
+   "snippet": "External integrations Deep Infra AI Deep Infra AI integration ElevenLabs AI The most powerful AI text to speech API LMNT AI Fast text-to-speech & voice cloning Perplexity API AI Access Perplexity's cutting edge LLMs Replicate AI Run AI with an API. Together AI",
+   "f": {
+    "img": 0,
+    "bigMedia": 0,
+    "video": 0,
+    "canvas": 0,
+    "logoish": 0,
+    "squareIcons": 16,
+    "avatars": 16,
+    "marquee": false,
+    "details": 0,
+    "expanded": 0,
+    "tabs": 0,
+    "tables": 0,
+    "tr": 0,
+    "quotes": 0,
+    "prices": 0,
+    "bigNums": [],
+    "steps": 0,
+    "email": 0,
+    "inputs": 0,
+    "compliance": 0,
+    "integ": 4,
+    "faq": 0,
+    "dates": 0,
+    "sticky": false,
+    "buttons": 1,
+    "links": 16,
+    "switch": 0,
+    "checks": 1,
+    "h2count": 0
+   }
+  }
+ ],
+ "header": {
+  "y": 0,
+  "h": 64,
+  "w": 1440,
+  "pos": "sticky",
+  "bg": "rgb(250, 250, 250)"
+ },
+ "topStrips": [],
+ "h2": [
+  {
+   "text": "Recently added",
+   "size": 24,
+   "weight": "450",
+   "ls": "-0.96px",
+   "lh": "32px",
+   "fam": "GeistSans",
+   "y": 704,
+   "x": 24,
+   "w": 160,
+   "h": 32,
+   "align": "start",
+   "words": 2
+  },
+  {
+   "text": "Native integrations",
+   "size": 24,
+   "weight": "450",
+   "ls": "-0.96px",
+   "lh": "32px",
+   "fam": "GeistSans",
+   "y": 1042,
+   "x": 24,
+   "w": 191,
+   "h": 32,
+   "align": "start",
+   "words": 2
+  },
+  {
+   "text": "External integrations",
+   "size": 24,
+   "weight": "450",
+   "ls": "-0.96px",
+   "lh": "32px",
+   "fam": "GeistSans",
+   "y": 1882,
+   "x": 24,
+   "w": 209,
+   "h": 32,
+   "align": "start",
+   "words": 2
+  }
+ ],
+ "footer": {
+  "top": 2486,
+  "h": 79,
+  "bg": "rgb(255, 255, 255)",
+  "ownBg": "rgb(255, 255, 255)",
+  "bgImg": null,
+  "borderTop": "1px solid rgba(0, 0, 0, 0.08)",
+  "radius": "0px",
+  "inner": null,
+  "cssPadT": 20,
+  "cssPadB": 24,
+  "effPadT": 26,
+  "effPadB": 29,
+  "contentL": 120,
+  "contentR": 1320,
+  "linkCount": 9,
+  "linkSize": [
+   [
+    "14",
+    9
+   ]
+  ],
+  "linkWeight": [
+   [
+    "400",
+    9
+   ]
+  ],
+  "linkColor": [
+   [
+    "rgb(77, 77, 77)",
+    7
+   ],
+   [
+    "rgb(23, 23, 23)",
+    2
+   ]
+  ],
+  "cols": [],
+  "colCount": 0,
+  "brand": null,
+  "big": [],
+  "legal": null,
+  "email": 0,
+  "inputs": 3,
+  "status": "all systems normal",
+  "social": 0,
+  "theme": 0,
+  "lang": 0,
+  "canvas": 0,
+  "video": 0,
+  "svg": 6,
+  "animated": 0,
+  "compliance": 0,
+  "headings": [],
+  "buttons": [],
+  "text": "HomeDocsKnowledge BaseAcademySDKsAI SDKWorkflow SDKFlags SDKChat SDKStreamdown AIHelpContactLegalAll systems normal.Select a display theme:systemlightdark"
+ },
+ "url": "https://vercel.com/integrations",
+ "slug": "vercel--integrations",
+ "kind": "integrations",
+ "site": "vercel",
+ "finalUrl": "https://vercel.com/marketplace",
+ "captured": "2026-10-10"
+}

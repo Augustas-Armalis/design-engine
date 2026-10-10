@@ -11,7 +11,9 @@ ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
 KNOW = os.path.join(ROOT, "knowledge")
 OUT = os.path.join(ROOT, "system", "rules", "index.json")
 
-START = re.compile(r"^\s*(?:[-*]|\d+\.)?\s*\*\*RULE(?:\s*\[([^\]]+)\])?\*\*\s*(.*)")
+# Accepted rule openers (studies write them three ways): **RULE** text, **RULE [ID]** text, **RULE ID** text, **ID RULE** text.
+# Group 1 = id (bracketed, after RULE, or before RULE), group 2 = the rule text.
+START = re.compile(r"^\s*(?:[-*]|\d+\.)?\s*\*\*(?:([A-Z]{1,5}-\d+[a-z]?)\s+)?RULE(?:\s*\[([^\]]+)\]|\s+([A-Z]{1,5}-\d+[a-z]?))?\*\*\s*(.*)")
 FIELD = re.compile(r"\*\*(Why|Applies to|Check|Source|Severity|Applies)\*\*\s*:?\s*")
 
 
@@ -38,8 +40,8 @@ def parse(path):
             section = line.lstrip("# ").strip()
         m = START.match(line)
         if m:
-            block = [m.group(2)]
-            rid = m.group(1)
+            block = [m.group(4)]
+            rid = m.group(2) or m.group(3) or m.group(1)
             i += 1
             while i < len(lines) and lines[i].strip() != "" and not START.match(lines[i]) and not lines[i].startswith("#"):
                 block.append(lines[i].strip())

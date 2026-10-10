@@ -1,0 +1,1766 @@
+{
+ "vw": 1440,
+ "pageHeight": 8175,
+ "title": "AI Coding Agent for Building Ambitious Software | Cursor",
+ "bodyBg": "rgb(247, 247, 244)",
+ "htmlBg": "rgba(0, 0, 0, 0)",
+ "bodyFont": "CursorGothic",
+ "blocks": [
+  {
+   "idx": 0,
+   "tag": "header",
+   "id": "site-header",
+   "cls": "bg-theme-bg px-g2 fixed top-0 left-0 z-50 w-full",
+   "top": 0,
+   "h": 52,
+   "w": 1440,
+   "x": 0,
+   "bg": "rgb(247, 247, 244)",
+   "ownBg": "rgb(247, 247, 244)",
+   "bgImg": null,
+   "radius": "0px",
+   "cssPadT": 0,
+   "cssPadB": 0,
+   "effPadT": 9,
+   "effPadB": 9,
+   "contentL": 67,
+   "contentR": 1370,
+   "contentW": 1303,
+   "words": 17,
+   "snippet": "Skip to content Cursor Models ↓ Product ↓ Enterprise Pricing Resources ↓ Sign in Contact sales Download",
+   "f": {
+    "img": 0,
+    "bigMedia": 0,
+    "video": 0,
+    "canvas": 0,
+    "logoish": 1,
+    "squareIcons": 0,
+    "avatars": 0,
+    "marquee": false,
+    "details": 0,
+    "expanded": 7,
+    "tabs": 0,
+    "tables": 0,
+    "tr": 0,
+    "quotes": 0,
+    "prices": 0,
+    "bigNums": [],
+    "steps": 0,
+    "email": 0,
+    "inputs": 0,
+    "compliance": 0,
+    "integ": 0,
+    "faq": 0,
+    "dates": 0,
+    "sticky": false,
+    "buttons": 0,
+    "links": 10,
+    "switch": 0,
+    "checks": 3,
+    "h2count": 0
+   }
+  },
+  {
+   "idx": 1,
+   "tag": "section",
+   "id": "",
+   "cls": "section bg-theme-bg text-theme-text",
+   "top": 52,
+   "h": 1086,
+   "w": 1440,
+   "x": 0,
+   "bg": "rgb(247, 247, 244)",
+   "ownBg": "rgb(247, 247, 244)",
+   "bgImg": null,
+   "radius": "0px",
+   "cssPadT": 112,
+   "cssPadB": 67.2,
+   "effPadT": 112,
+   "effPadB": 22,
+   "contentL": 70,
+   "contentR": 1370,
+   "contentW": 1300,
+   "containerW": 1300,
+   "heading": {
+    "text": "Cursor is your coding agent for building ambitious software.",
+    "tag": "h1",
+    "size": 26,
+    "weight": "400",
+    "lh": "32.5px",
+    "ls": "-0.325px",
+    "fam": "CursorGothic",
+    "color": "rgb(38, 37, 30)",
+    "align": "left",
+    "tt": "none",
+    "w": 658,
+    "h": 65,
+    "x": 70,
+    "y": 164,
+    "lines": 2
+   },
+   "headingFromTop": 112,
+   "groupCtas": [
+    "Download for macOS ⤓",
+    "Request a demo →"
+   ],
+   "ctaGap": 22,
+   "groupBottom": 243,
+   "headToContent": 56,
+   "allHeadings": [
+    {
+     "t": "h1",
+     "s": 26,
+     "w": "400",
+     "text": "Cursor is your coding agent for building ambitious software."
+    }
+   ],
+   "cards": {
+    "n": 3,
+    "cols": 1,
+    "rows": 0,
+    "w": 480,
+    "h": 360,
+    "sizes": [
+     "520x592",
+     "315x65",
+     "480x360"
+    ],
+    "gap": null,
+    "radius": [
+     [
+      "0px",
+      1
+     ],
+     [
+      "8px",
+      1
+     ],
+     [
+      "10px",
+      1
+     ]
+    ],
+    "pad": [
+     [
+      "0px/0px",
+      3
+     ]
+    ],
+    "bg": [
+     [
+      "rgb(247, 247, 244)",
+      1
+     ],
+     [
+      "rgba(0, 0, 0, 0)",
+      1
+     ],
+     [
+      "rgb(242, 241, 237)",
+      1
+     ]
+    ],
+    "border": [
+     [
+      "none",
+      2
+     ],
+     [
+      "1px oklab(0.263084 -0.00230259 0.0124794 / 0.1)",
+      1
+     ]
+    ],
+    "shadow": [
+     [
+      "none",
+      2
+     ],
+     [
+      "rgba(0, 0, 0, 0.14) 0px 28px 70px 0px, rgba(0, 0, 0, 0.1) 0px 14px 32px 0px, oklab(0.263084 -0.00230259 0.0124794 / 0.1)",
+      1
+     ]
+    ]
+   },
+   "words": 485,
+   "snippet": "Cursor is your coding agent for building ambitious software. Download for macOS ⤓ Request a demo → This element contains an interactive demo for sighted users showing multiple Cursor interfaces: Cursor Desktop interface, Cursor CLI interface. The interface is ",
+   "f": {
+    "img": 1,
+    "bigMedia": 1,
+    "video": 0,
+    "canvas": 0,
+    "logoish": 0,
+    "squareIcons": 0,
+    "avatars": 0,
+    "marquee": false,
+    "details": 0,
+    "expanded": 0,
+    "tabs": 0,
+    "tables": 1,
+    "tr": 9,
+    "quotes": 0,
+    "prices": 0,
+    "bigNums": [],
+    "steps": 2,
+    "email": 0,
+    "inputs": 2,
+    "compliance": 0,
+    "integ": 0,
+    "faq": 1,
+    "dates": 0,
+    "sticky": true,
+    "buttons": 15,
+    "links": 3,
+    "switch": 0,
+    "checks": 16,
+    "h2count": 0
+   }
+  },
+  {
+   "idx": 2,
+   "tag": "section",
+   "id": "logo-garden",
+   "cls": "section bg-theme-bg text-theme-text pb-v1.5 pt-0",
+   "top": 1138,
+   "h": 177,
+   "w": 1440,
+   "x": 0,
+   "bg": "rgb(247, 247, 244)",
+   "ownBg": "rgb(247, 247, 244)",
+   "bgImg": null,
+   "radius": "0px",
+   "cssPadT": 0,
+   "cssPadB": 33.6,
+   "effPadT": 0,
+   "effPadB": 64,
+   "contentL": 70,
+   "contentR": 1370,
+   "contentW": 1300,
+   "containerW": 1300,
+   "heading": {
+    "text": "Trusted every day by teams that build world-class software",
+    "tag": "h2",
+    "size": 14,
+    "weight": "400",
+    "lh": "21px",
+    "ls": "0.14px",
+    "fam": "CursorGothic",
+    "color": "rgb(38, 37, 30)",
+    "align": "center",
+    "tt": "none",
+    "w": 1300,
+    "h": 21,
+    "x": 70,
+    "y": 1138,
+    "lines": 1
+   },
+   "headingFromTop": 0,
+   "groupBottom": 21,
+   "allHeadings": [
+    {
+     "t": "h2",
+     "s": 14,
+     "w": "400",
+     "text": "Trusted every day by teams that build world-class software"
+    }
+   ],
+   "cards": {
+    "n": 8,
+    "cols": 8,
+    "rows": 1,
+    "w": 154,
+    "h": 100,
+    "sizes": [
+     "154x100",
+     "154x100",
+     "154x100",
+     "154x100",
+     "154x100",
+     "154x100",
+     "154x100",
+     "154x100"
+    ],
+    "gap": 10,
+    "radius": [
+     [
+      "4px",
+      8
+     ]
+    ],
+    "pad": [
+     [
+      "0px/7.5px",
+      8
+     ]
+    ],
+    "bg": [
+     [
+      "rgb(242, 241, 237)",
+      8
+     ]
+    ],
+    "border": [
+     [
+      "none",
+      8
+     ]
+    ],
+    "shadow": [
+     [
+      "none",
+      8
+     ]
+    ]
+   },
+   "words": 9,
+   "snippet": "Trusted every day by teams that build world-class software",
+   "f": {
+    "img": 0,
+    "bigMedia": 0,
+    "video": 0,
+    "canvas": 0,
+    "logoish": 6,
+    "squareIcons": 0,
+    "avatars": 0,
+    "marquee": false,
+    "details": 0,
+    "expanded": 0,
+    "tabs": 0,
+    "tables": 0,
+    "tr": 0,
+    "quotes": 0,
+    "prices": 0,
+    "bigNums": [],
+    "steps": 0,
+    "email": 0,
+    "inputs": 0,
+    "compliance": 0,
+    "integ": 0,
+    "faq": 0,
+    "dates": 0,
+    "sticky": false,
+    "buttons": 0,
+    "links": 0,
+    "switch": 0,
+    "checks": 9,
+    "h2count": 0
+   }
+  },
+  {
+   "idx": 3,
+   "tag": "section",
+   "id": "",
+   "cls": "section section--flush-x",
+   "top": 1315,
+   "h": 3203,
+   "w": 1440,
+   "x": 0,
+   "bg": "rgb(247, 247, 244)",
+   "ownBg": "rgba(0, 0, 0, 0)",
+   "bgImg": null,
+   "radius": "0px",
+   "cssPadT": 67.2,
+   "cssPadB": 67.2,
+   "effPadT": 130,
+   "effPadB": 52,
+   "contentL": 46,
+   "contentR": 1457,
+   "contentW": 1411,
+   "containerW": 1300,
+   "heading": {
+    "text": "Agents turn ideas into code",
+    "tag": "h3",
+    "size": 22,
+    "weight": "400",
+    "lh": "28.6px",
+    "ls": "-0.11px",
+    "fam": "CursorGothic",
+    "color": "rgb(38, 37, 30)",
+    "align": "start",
+    "tt": "none",
+    "w": 383,
+    "h": 29,
+    "x": 90,
+    "y": 1663,
+    "lines": 1
+   },
+   "headingFromTop": 348,
+   "sub": {
+    "text": "Overlay existing windows into a grid of live previews with spring-based layout animations and shared element transitions.",
+    "tag": "p",
+    "size": 13,
+    "weight": "400",
+    "lh": "20.15px",
+    "ls": "normal",
+    "fam": "system-ui",
+    "color": "rgb(38, 37, 30)",
+    "align": "start",
+    "tt": "none",
+    "w": 452,
+    "h": 40,
+    "x": 949,
+    "y": 1748,
+    "lines": 2
+   },
+   "subGap": 56,
+   "groupBottom": 473,
+   "headToContent": 399,
+   "allHeadings": [
+    {
+     "t": "h3",
+     "s": 22,
+     "w": "400",
+     "text": "Agents turn ideas into code"
+    },
+    {
+     "t": "h2",
+     "s": 20,
+     "w": "700",
+     "text": "Mission Control Interface"
+    },
+    {
+     "t": "h2",
+     "s": 14,
+     "w": "600",
+     "text": "Trigger"
+    },
+    {
+     "t": "h2",
+     "s": 14,
+     "w": "600",
+     "text": "View Behavior"
+    },
+    {
+     "t": "h3",
+     "s": 22,
+     "w": "400",
+     "text": "Works autonomously, runs in parallel"
+    },
+    {
+     "t": "h3",
+     "s": 22,
+     "w": "400",
+     "text": "In every tool, at every step"
+    },
+    {
+     "t": "h2",
+     "s": 16,
+     "w": "600",
+     "text": "#feature-realtime-sync"
+    },
+    {
+     "t": "h3",
+     "s": 22,
+     "w": "400",
+     "text": "Hand work to AI teammates"
+    }
+   ],
+   "cards": {
+    "n": 7,
+    "cols": 1,
+    "rows": 0,
+    "w": 780,
+    "h": 584,
+    "sizes": [
+     "840x680",
+     "920x600",
+     "840x680",
+     "740x584",
+     "540x340",
+     "580x420",
+     "780x500"
+    ],
+    "gap": null,
+    "radius": [
+     [
+      "10px",
+      5
+     ],
+     [
+      "0px",
+      2
+     ]
+    ],
+    "pad": [
+     [
+      "0px/0px",
+      7
+     ]
+    ],
+    "bg": [
+     [
+      "rgb(242, 241, 237)",
+      4
+     ],
+     [
+      "rgb(217, 213, 207)",
+      1
+     ],
+     [
+      "rgb(182, 185, 190)",
+      1
+     ]
+    ],
+    "border": [
+     [
+      "none",
+      7
+     ]
+    ],
+    "shadow": [
+     [
+      "rgba(0, 0, 0, 0.14) 0px 28px 70px 0px, rgba(0, 0, 0, 0.1) 0px 14px 32px 0px, oklab(0.263084 -0.00230259 0.0124794 / 0.1)",
+      4
+     ],
+     [
+      "none",
+      2
+     ]
+    ]
+   },
+   "words": 697,
+   "snippet": "Agents turn ideas into code Accelerate development by handing off tasks to Cursor, while you focus on making decisions. Learn about agentic development → This element contains an interactive demo for sighted users. It's a demonstration of Cursor's IDE showing ",
+   "f": {
+    "img": 5,
+    "bigMedia": 4,
+    "video": 0,
+    "canvas": 0,
+    "logoish": 0,
+    "squareIcons": 13,
+    "avatars": 4,
+    "marquee": false,
+    "details": 0,
+    "expanded": 0,
+    "tabs": 2,
+    "tables": 0,
+    "tr": 0,
+    "quotes": 0,
+    "prices": 0,
+    "bigNums": [],
+    "steps": 3,
+    "email": 0,
+    "inputs": 2,
+    "compliance": 0,
+    "integ": 1,
+    "faq": 1,
+    "dates": 0,
+    "sticky": true,
+    "buttons": 31,
+    "links": 6,
+    "switch": 1,
+    "checks": 28,
+    "h2count": 0
+   }
+  },
+  {
+   "idx": 4,
+   "tag": "section",
+   "id": "",
+   "cls": "section bg-theme-bg text-theme-text overflow-hidden",
+   "top": 4518,
+   "h": 700,
+   "w": 1440,
+   "x": 0,
+   "bg": "rgb(247, 247, 244)",
+   "ownBg": "rgb(247, 247, 244)",
+   "bgImg": null,
+   "radius": "0px",
+   "cssPadT": 67.2,
+   "cssPadB": 67.2,
+   "effPadT": 67,
+   "effPadB": 85,
+   "contentL": 88,
+   "contentR": 1352,
+   "contentW": 1265,
+   "containerW": 1300,
+   "heading": {
+    "text": "The new way to build software.",
+    "tag": "h2",
+    "size": 36,
+    "weight": "400",
+    "lh": "43.2px",
+    "ls": "-0.72px",
+    "fam": "CursorGothic",
+    "color": "rgb(38, 37, 30)",
+    "align": "center",
+    "tt": "none",
+    "w": 810,
+    "h": 43,
+    "x": 315,
+    "y": 4585,
+    "lines": 1
+   },
+   "headingFromTop": 67,
+   "sub": {
+    "text": "“It was night and day from one batch to another, adoption went from single digits to over 80%. It just spread like wildfire, all the best builders were using Cu",
+    "tag": "p",
+    "size": 16,
+    "weight": "400",
+    "lh": "24px",
+    "ls": "0.08px",
+    "fam": "CursorGothic",
+    "color": "rgb(38, 37, 30)",
+    "align": "start",
+    "tt": "none",
+    "w": 392,
+    "h": 96,
+    "x": 88,
+    "y": 4700,
+    "lines": 4
+   },
+   "subGap": 72,
+   "groupBottom": 278,
+   "headToContent": 114,
+   "allHeadings": [
+    {
+     "t": "h2",
+     "s": 36,
+     "w": "400",
+     "text": "The new way to build software."
+    }
+   ],
+   "cards": {
+    "n": 6,
+    "cols": 3,
+    "rows": 2,
+    "w": 427,
+    "h": 240,
+    "sizes": [
+     "427x216",
+     "427x216",
+     "427x216",
+     "427x240",
+     "427x240",
+     "427x240"
+    ],
+    "gap": 10,
+    "radius": [
+     [
+      "4px",
+      6
+     ]
+    ],
+    "pad": [
+     [
+      "15.9px/17.5px",
+      6
+     ]
+    ],
+    "bg": [
+     [
+      "rgb(242, 241, 237)",
+      6
+     ]
+    ],
+    "border": [
+     [
+      "none",
+      6
+     ]
+    ],
+    "shadow": [
+     [
+      "none",
+      6
+     ]
+    ]
+   },
+   "words": 230,
+   "snippet": "The new way to build software. “It was night and day from one batch to another, adoption went from single digits to over 80%. It just spread like wildfire, all the best builders were using Cursor.” Diana Hu General Partner, Y Combinator “My favorite enterprise",
+   "f": {
+    "img": 0,
+    "bigMedia": 0,
+    "video": 0,
+    "canvas": 0,
+    "logoish": 0,
+    "squareIcons": 6,
+    "avatars": 6,
+    "marquee": false,
+    "details": 0,
+    "expanded": 0,
+    "tabs": 0,
+    "tables": 0,
+    "tr": 0,
+    "quotes": 12,
+    "prices": 0,
+    "bigNums": [],
+    "steps": 0,
+    "email": 0,
+    "inputs": 0,
+    "compliance": 0,
+    "integ": 0,
+    "faq": 0,
+    "dates": 0,
+    "sticky": false,
+    "buttons": 0,
+    "links": 0,
+    "switch": 0,
+    "checks": 0,
+    "h2count": 1
+   }
+  },
+  {
+   "idx": 5,
+   "tag": "section",
+   "id": "",
+   "cls": "section bg-theme-bg text-theme-text",
+   "top": 5218,
+   "h": 739,
+   "w": 1440,
+   "x": 0,
+   "bg": "rgb(247, 247, 244)",
+   "ownBg": "rgb(247, 247, 244)",
+   "bgImg": null,
+   "radius": "0px",
+   "cssPadT": 67.2,
+   "cssPadB": 67.2,
+   "effPadT": 67,
+   "effPadB": 16,
+   "contentL": 70,
+   "contentR": 1352,
+   "contentW": 1282,
+   "containerW": 1300,
+   "heading": {
+    "text": "Stay on the frontier",
+    "tag": "h2",
+    "size": 22,
+    "weight": "400",
+    "lh": "28.6px",
+    "ls": "-0.11px",
+    "fam": "CursorGothic",
+    "color": "rgb(38, 37, 30)",
+    "align": "left",
+    "tt": "none",
+    "w": 486,
+    "h": 29,
+    "x": 70,
+    "y": 5285,
+    "lines": 1
+   },
+   "headingFromTop": 67,
+   "sub": {
+    "text": "Use the best model for every task",
+    "tag": "h3",
+    "size": 16,
+    "weight": "400",
+    "lh": "24px",
+    "ls": "0.08px",
+    "fam": "CursorGothic",
+    "color": "rgb(38, 37, 30)",
+    "align": "start",
+    "tt": "none",
+    "w": 392,
+    "h": 24,
+    "x": 88,
+    "y": 5352,
+    "lines": 1
+   },
+   "subGap": 38,
+   "groupBottom": 158,
+   "headToContent": 104,
+   "allHeadings": [
+    {
+     "t": "h2",
+     "s": 22,
+     "w": "400",
+     "text": "Stay on the frontier"
+    },
+    {
+     "t": "h3",
+     "s": 16,
+     "w": "400",
+     "text": "Use the best model for every task"
+    },
+    {
+     "t": "h3",
+     "s": 16,
+     "w": "400",
+     "text": "Build with autonomous agents"
+    },
+    {
+     "t": "h2",
+     "s": 19,
+     "w": "510",
+     "text": "All Repos"
+    },
+    {
+     "t": "h3",
+     "s": 16,
+     "w": "400",
+     "text": "Develop enduring software"
+    }
+   ],
+   "cards": {
+    "n": 3,
+    "cols": 3,
+    "rows": 1,
+    "w": 427,
+    "h": 553,
+    "sizes": [
+     "427x553",
+     "427x553",
+     "427x553"
+    ],
+    "gap": 10,
+    "radius": [
+     [
+      "4px",
+      3
+     ]
+    ],
+    "pad": [
+     [
+      "15.9px/17.5px",
+      3
+     ]
+    ],
+    "bg": [
+     [
+      "rgb(242, 241, 237)",
+      3
+     ]
+    ],
+    "border": [
+     [
+      "none",
+      3
+     ]
+    ],
+    "shadow": [
+     [
+      "none",
+      3
+     ]
+    ]
+   },
+   "words": 147,
+   "snippet": "Stay on the frontier Use the best model for every task Choose between every cutting-edge model from OpenAI, Anthropic, Gemini, SpaceXAI, and Cursor. Explore models ↗ Ask Cursor to plan or build anything Agent Composer 2.5 Auto Suggested Grok 4.7 GPT-5.6 Sol Fa",
+   "f": {
+    "img": 1,
+    "bigMedia": 0,
+    "video": 0,
+    "canvas": 0,
+    "logoish": 0,
+    "squareIcons": 0,
+    "avatars": 0,
+    "marquee": false,
+    "details": 0,
+    "expanded": 0,
+    "tabs": 0,
+    "tables": 0,
+    "tr": 0,
+    "quotes": 0,
+    "prices": 0,
+    "bigNums": [],
+    "steps": 0,
+    "email": 0,
+    "inputs": 0,
+    "compliance": 0,
+    "integ": 0,
+    "faq": 0,
+    "dates": 0,
+    "sticky": false,
+    "buttons": 16,
+    "links": 3,
+    "switch": 0,
+    "checks": 4,
+    "h2count": 0
+   }
+  },
+  {
+   "idx": 6,
+   "tag": "section",
+   "id": "",
+   "cls": "bg-theme-bg text-theme-text section",
+   "top": 5957,
+   "h": 310,
+   "w": 1440,
+   "x": 0,
+   "bg": "rgb(247, 247, 244)",
+   "ownBg": "rgb(247, 247, 244)",
+   "bgImg": null,
+   "radius": "0px",
+   "cssPadT": 67.2,
+   "cssPadB": 67.2,
+   "effPadT": 67,
+   "effPadB": 67,
+   "contentL": 70,
+   "contentR": 1370,
+   "contentW": 1300,
+   "containerW": 1300,
+   "heading": {
+    "text": "Changelog",
+    "tag": "h2",
+    "size": 22,
+    "weight": "400",
+    "lh": "28.6px",
+    "ls": "-0.11px",
+    "fam": "CursorGothic",
+    "color": "rgb(38, 37, 30)",
+    "align": "start",
+    "tt": "none",
+    "w": 1300,
+    "h": 29,
+    "x": 70,
+    "y": 6024,
+    "lines": 1
+   },
+   "headingFromTop": 67,
+   "sub": {
+    "text": "Remote control for local agents",
+    "tag": "p",
+    "size": 16,
+    "weight": "400",
+    "lh": "24px",
+    "ls": "0.08px",
+    "fam": "CursorGothic",
+    "color": "rgb(38, 37, 30)",
+    "align": "start",
+    "tt": "none",
+    "w": 283,
+    "h": 24,
+    "x": 88,
+    "y": 6115,
+    "lines": 1
+   },
+   "subGap": 62,
+   "groupBottom": 182,
+   "allHeadings": [
+    {
+     "t": "h2",
+     "s": 22,
+     "w": "400",
+     "text": "Changelog"
+    }
+   ],
+   "cards": {
+    "n": 4,
+    "cols": 4,
+    "rows": 1,
+    "w": 318,
+    "h": 84,
+    "sizes": [
+     "318x84",
+     "318x84",
+     "318x84",
+     "318x84"
+    ],
+    "gap": 10,
+    "radius": [
+     [
+      "4px",
+      4
+     ]
+    ],
+    "pad": [
+     [
+      "15.9px/17.5px",
+      4
+     ]
+    ],
+    "bg": [
+     [
+      "rgb(242, 241, 237)",
+      4
+     ]
+    ],
+    "border": [
+     [
+      "none",
+      4
+     ]
+    ],
+    "shadow": [
+     [
+      "none",
+      4
+     ]
+    ]
+   },
+   "words": 32,
+   "snippet": "Changelog Oct 6, 2026 Remote control for local agents Sep 23, 2026 Rollouts and Security Review Sep 10, 2026 Cursor Projects Sep 2, 2026 Self-hosted machines See what's new in Cursor →",
+   "f": {
+    "img": 0,
+    "bigMedia": 0,
+    "video": 0,
+    "canvas": 0,
+    "logoish": 0,
+    "squareIcons": 0,
+    "avatars": 0,
+    "marquee": false,
+    "details": 0,
+    "expanded": 0,
+    "tabs": 0,
+    "tables": 0,
+    "tr": 0,
+    "quotes": 0,
+    "prices": 0,
+    "bigNums": [],
+    "steps": 0,
+    "email": 0,
+    "inputs": 0,
+    "compliance": 0,
+    "integ": 0,
+    "faq": 0,
+    "dates": 4,
+    "sticky": false,
+    "buttons": 0,
+    "links": 5,
+    "switch": 0,
+    "checks": 0,
+    "h2count": 0
+   }
+  },
+  {
+   "idx": 7,
+   "tag": "section",
+   "id": "",
+   "cls": "section bg-theme-bg text-theme-text",
+   "top": 6267,
+   "h": 694,
+   "w": 1440,
+   "x": 0,
+   "bg": "rgb(247, 247, 244)",
+   "ownBg": "rgb(247, 247, 244)",
+   "bgImg": null,
+   "radius": "0px",
+   "cssPadT": 67.2,
+   "cssPadB": 67.2,
+   "effPadT": 85,
+   "effPadB": 85,
+   "contentL": 90,
+   "contentR": 1353,
+   "contentW": 1263,
+   "containerW": 1300,
+   "heading": {
+    "text": "Cursor is an applied research team focused on building the future of software development.",
+    "tag": "h3",
+    "size": 22,
+    "weight": "400",
+    "lh": "28.6px",
+    "ls": "-0.11px",
+    "fam": "CursorGothic",
+    "color": "rgb(38, 37, 30)",
+    "align": "start",
+    "tt": "none",
+    "w": 383,
+    "h": 86,
+    "x": 90,
+    "y": 6552,
+    "lines": 3
+   },
+   "headingFromTop": 285,
+   "groupBottom": 371,
+   "allHeadings": [
+    {
+     "t": "h3",
+     "s": 22,
+     "w": "400",
+     "text": "Cursor is an applied research team focused on building the future of s"
+    }
+   ],
+   "words": 17,
+   "snippet": "Cursor is an applied research team focused on building the future of software development. Join us →",
+   "f": {
+    "img": 1,
+    "bigMedia": 1,
+    "video": 0,
+    "canvas": 0,
+    "logoish": 0,
+    "squareIcons": 0,
+    "avatars": 0,
+    "marquee": false,
+    "details": 0,
+    "expanded": 0,
+    "tabs": 0,
+    "tables": 0,
+    "tr": 0,
+    "quotes": 0,
+    "prices": 0,
+    "bigNums": [],
+    "steps": 0,
+    "email": 0,
+    "inputs": 0,
+    "compliance": 0,
+    "integ": 0,
+    "faq": 0,
+    "dates": 0,
+    "sticky": false,
+    "buttons": 0,
+    "links": 1,
+    "switch": 0,
+    "checks": 0,
+    "h2count": 0
+   }
+  },
+  {
+   "idx": 8,
+   "tag": "section",
+   "id": "",
+   "cls": "section bg-theme-bg text-theme-text",
+   "top": 6961,
+   "h": 341,
+   "w": 1440,
+   "x": 0,
+   "bg": "rgb(247, 247, 244)",
+   "ownBg": "rgb(247, 247, 244)",
+   "bgImg": null,
+   "radius": "0px",
+   "cssPadT": 67.2,
+   "cssPadB": 67.2,
+   "effPadT": 67,
+   "effPadB": 67,
+   "contentL": 70,
+   "contentR": 1370,
+   "contentW": 1300,
+   "containerW": 1300,
+   "heading": {
+    "text": "Recent highlights",
+    "tag": "h2",
+    "size": 22,
+    "weight": "400",
+    "lh": "28.6px",
+    "ls": "-0.11px",
+    "fam": "CursorGothic",
+    "color": "rgb(38, 37, 30)",
+    "align": "start",
+    "tt": "none",
+    "w": 1300,
+    "h": 29,
+    "x": 70,
+    "y": 7028,
+    "lines": 1
+   },
+   "headingFromTop": 67,
+   "sub": {
+    "text": "A technical report on Composer 2",
+    "tag": "p",
+    "size": 16,
+    "weight": "400",
+    "lh": "24px",
+    "ls": "0.08px",
+    "fam": "CursorGothic",
+    "color": "rgb(38, 37, 30)",
+    "align": "start",
+    "tt": "none",
+    "w": 275,
+    "h": 24,
+    "x": 85,
+    "y": 7117,
+    "lines": 1
+   },
+   "subGap": 60,
+   "groupBottom": 180,
+   "allHeadings": [
+    {
+     "t": "h2",
+     "s": 22,
+     "w": "400",
+     "text": "Recent highlights"
+    }
+   ],
+   "cards": {
+    "n": 4,
+    "cols": 4,
+    "rows": 1,
+    "w": 318,
+    "h": 115,
+    "sizes": [
+     "318x115",
+     "318x115",
+     "318x115",
+     "318x115"
+    ],
+    "gap": 10,
+    "radius": [
+     [
+      "4px",
+      4
+     ]
+    ],
+    "pad": [
+     [
+      "13.4px/15px",
+      4
+     ]
+    ],
+    "bg": [
+     [
+      "rgb(242, 241, 237)",
+      4
+     ]
+    ],
+    "border": [
+     [
+      "none",
+      4
+     ]
+    ],
+    "shadow": [
+     [
+      "none",
+      4
+     ]
+    ]
+   },
+   "words": 72,
+   "snippet": "Recent highlights Mar 27, 2026 · Research A technical report on Composer 2 Sasha Rush · 3 min read Aug 14, 2026 · Company Cursor is now a part of SpaceX Cursor Team · 2 min read Sep 21, 2026 · Research Introducing Grok 4.7 Cursor Team · 3 min read Aug 18, 2026",
+   "f": {
+    "img": 0,
+    "bigMedia": 0,
+    "video": 0,
+    "canvas": 0,
+    "logoish": 0,
+    "squareIcons": 3,
+    "avatars": 3,
+    "marquee": false,
+    "details": 0,
+    "expanded": 0,
+    "tabs": 0,
+    "tables": 0,
+    "tr": 0,
+    "quotes": 0,
+    "prices": 0,
+    "bigNums": [],
+    "steps": 0,
+    "email": 0,
+    "inputs": 0,
+    "compliance": 0,
+    "integ": 0,
+    "faq": 0,
+    "dates": 4,
+    "sticky": false,
+    "buttons": 0,
+    "links": 5,
+    "switch": 0,
+    "checks": 0,
+    "h2count": 0
+   }
+  },
+  {
+   "idx": 9,
+   "tag": "section",
+   "id": "",
+   "cls": "section bg-theme-bg text-theme-text section--headline",
+   "top": 7303,
+   "h": 346,
+   "w": 1440,
+   "x": 0,
+   "bg": "rgb(247, 247, 244)",
+   "ownBg": "rgb(247, 247, 244)",
+   "bgImg": null,
+   "radius": "0px",
+   "cssPadT": 67.2,
+   "cssPadB": 134.4,
+   "effPadT": 67,
+   "effPadB": 134,
+   "contentL": 315,
+   "contentR": 1125,
+   "contentW": 810,
+   "containerW": 1300,
+   "heading": {
+    "text": "Try Cursor now.",
+    "tag": "h2",
+    "size": 72,
+    "weight": "400",
+    "lh": "79.2px",
+    "ls": "-2.16px",
+    "fam": "CursorGothic",
+    "color": "rgb(38, 37, 30)",
+    "align": "center",
+    "tt": "none",
+    "w": 810,
+    "h": 79,
+    "x": 315,
+    "y": 7370,
+    "lines": 1
+   },
+   "headingFromTop": 67,
+   "groupCtas": [
+    "Download for macOS ⤓"
+   ],
+   "ctaGap": 22,
+   "groupBottom": 212,
+   "allHeadings": [
+    {
+     "t": "h2",
+     "s": 72,
+     "w": "400",
+     "text": "Try Cursor now."
+    }
+   ],
+   "words": 7,
+   "snippet": "Try Cursor now. Download for macOS ⤓",
+   "f": {
+    "img": 0,
+    "bigMedia": 0,
+    "video": 0,
+    "canvas": 0,
+    "logoish": 0,
+    "squareIcons": 0,
+    "avatars": 0,
+    "marquee": false,
+    "details": 0,
+    "expanded": 0,
+    "tabs": 0,
+    "tables": 0,
+    "tr": 0,
+    "quotes": 0,
+    "prices": 0,
+    "bigNums": [],
+    "steps": 0,
+    "email": 0,
+    "inputs": 0,
+    "compliance": 0,
+    "integ": 0,
+    "faq": 0,
+    "dates": 0,
+    "sticky": false,
+    "buttons": 1,
+    "links": 1,
+    "switch": 0,
+    "checks": 0,
+    "h2count": 1
+   }
+  }
+ ],
+ "header": {
+  "y": 0,
+  "h": 52,
+  "w": 1440,
+  "pos": "fixed",
+  "bg": "rgb(247, 247, 244)"
+ },
+ "topStrips": [],
+ "h2": [
+  {
+   "text": "Trusted every day by teams that build world-class software",
+   "size": 14,
+   "weight": "400",
+   "ls": "0.14px",
+   "lh": "21px",
+   "fam": "CursorGothic",
+   "y": 1138,
+   "x": 70,
+   "w": 1300,
+   "h": 21,
+   "align": "center",
+   "words": 9
+  },
+  {
+   "text": "Mission Control Interface",
+   "size": 20,
+   "weight": "700",
+   "ls": "normal",
+   "lh": "31px",
+   "fam": "system-ui",
+   "y": 1551,
+   "x": 949,
+   "w": 452,
+   "h": 31,
+   "align": "start",
+   "words": 3
+  },
+  {
+   "text": "Trigger",
+   "size": 14,
+   "weight": "600",
+   "ls": "normal",
+   "lh": "21.7px",
+   "fam": "system-ui",
+   "y": 1646,
+   "x": 949,
+   "w": 452,
+   "h": 22,
+   "align": "start",
+   "words": 1
+  },
+  {
+   "text": "View Behavior",
+   "size": 14,
+   "weight": "600",
+   "ls": "normal",
+   "lh": "21.7px",
+   "fam": "system-ui",
+   "y": 1724,
+   "x": 949,
+   "w": 452,
+   "h": 22,
+   "align": "start",
+   "words": 2
+  },
+  {
+   "text": "#feature-realtime-sync",
+   "size": 16,
+   "weight": "600",
+   "ls": "normal",
+   "lh": "21.3333px",
+   "fam": "Lato",
+   "y": 3081,
+   "x": 611,
+   "w": 166,
+   "h": 21,
+   "align": "left",
+   "words": 1
+  },
+  {
+   "text": "The new way to build software.",
+   "size": 36,
+   "weight": "400",
+   "ls": "-0.72px",
+   "lh": "43.2px",
+   "fam": "CursorGothic",
+   "y": 4585,
+   "x": 315,
+   "w": 810,
+   "h": 43,
+   "align": "center",
+   "words": 6
+  },
+  {
+   "text": "Stay on the frontier",
+   "size": 22,
+   "weight": "400",
+   "ls": "-0.11px",
+   "lh": "28.6px",
+   "fam": "CursorGothic",
+   "y": 5285,
+   "x": 70,
+   "w": 486,
+   "h": 29,
+   "align": "left",
+   "words": 4
+  },
+  {
+   "text": "All Repos",
+   "size": 19,
+   "weight": "510",
+   "ls": "-0.26px",
+   "lh": "20.9px",
+   "fam": "system-ui",
+   "y": 5595,
+   "x": 595,
+   "w": 250,
+   "h": 21,
+   "align": "start",
+   "words": 2
+  },
+  {
+   "text": "Changelog",
+   "size": 22,
+   "weight": "400",
+   "ls": "-0.11px",
+   "lh": "28.6px",
+   "fam": "CursorGothic",
+   "y": 6024,
+   "x": 70,
+   "w": 1300,
+   "h": 29,
+   "align": "start",
+   "words": 1
+  },
+  {
+   "text": "Recent highlights",
+   "size": 22,
+   "weight": "400",
+   "ls": "-0.11px",
+   "lh": "28.6px",
+   "fam": "CursorGothic",
+   "y": 7028,
+   "x": 70,
+   "w": 1300,
+   "h": 29,
+   "align": "start",
+   "words": 2
+  },
+  {
+   "text": "Try Cursor now.",
+   "size": 72,
+   "weight": "400",
+   "ls": "-2.16px",
+   "lh": "79.2px",
+   "fam": "CursorGothic",
+   "y": 7370,
+   "x": 315,
+   "w": 810,
+   "h": 79,
+   "align": "center",
+   "words": 3
+  }
+ ],
+ "footer": {
+  "top": 7649,
+  "h": 526,
+  "bg": "rgb(242, 241, 237)",
+  "ownBg": "rgb(242, 241, 237)",
+  "bgImg": null,
+  "borderTop": "0px solid rgb(38, 37, 30)",
+  "radius": "0px",
+  "inner": null,
+  "cssPadT": 67.2,
+  "cssPadB": 30,
+  "effPadT": 67,
+  "effPadB": 31,
+  "contentL": 70,
+  "contentR": 1370,
+  "linkCount": 36,
+  "linkSize": [
+   [
+    "14",
+    36
+   ]
+  ],
+  "linkWeight": [
+   [
+    "400",
+    36
+   ]
+  ],
+  "linkColor": [
+   [
+    "rgb(38, 37, 30)",
+    34
+   ],
+   [
+    "oklab(0.263084 -0.00230259 0.0124794 / 0.6)",
+    2
+   ]
+  ],
+  "cols": [
+   {
+    "x": 70,
+    "y": 7742,
+    "w": 252,
+    "n": 9,
+    "pitch": 30,
+    "head": {
+     "text": "Product",
+     "tag": "h3",
+     "size": 14,
+     "weight": "400",
+     "lh": "21px",
+     "ls": "0.14px",
+     "fam": "CursorGothic",
+     "color": "oklab(0.263084 -0.00230259 0.0124794 / 0.6)",
+     "align": "start",
+     "tt": "none",
+     "w": 252,
+     "h": 26,
+     "x": 70,
+     "y": 7716,
+     "lines": 1
+    },
+    "link": {
+     "text": "Agents",
+     "tag": "a",
+     "size": 14,
+     "weight": "400",
+     "lh": "21px",
+     "ls": "0.14px",
+     "fam": "CursorGothic",
+     "color": "rgb(38, 37, 30)",
+     "align": "start",
+     "tt": "none",
+     "w": 46,
+     "h": 30,
+     "x": 70,
+     "y": 7742,
+     "lines": 1
+    }
+   },
+   {
+    "x": 332,
+    "y": 7742,
+    "w": 252,
+    "n": 8,
+    "pitch": 30,
+    "head": {
+     "text": "Resources",
+     "tag": "h3",
+     "size": 14,
+     "weight": "400",
+     "lh": "21px",
+     "ls": "0.14px",
+     "fam": "CursorGothic",
+     "color": "oklab(0.263084 -0.00230259 0.0124794 / 0.6)",
+     "align": "start",
+     "tt": "none",
+     "w": 252,
+     "h": 26,
+     "x": 332,
+     "y": 7716,
+     "lines": 1
+    },
+    "link": {
+     "text": "Download",
+     "tag": "a",
+     "size": 14,
+     "weight": "400",
+     "lh": "21px",
+     "ls": "0.14px",
+     "fam": "CursorGothic",
+     "color": "rgb(38, 37, 30)",
+     "align": "start",
+     "tt": "none",
+     "w": 66,
+     "h": 30,
+     "x": 332,
+     "y": 7742,
+     "lines": 1
+    }
+   },
+   {
+    "x": 594,
+    "y": 7742,
+    "w": 252,
+    "n": 7,
+    "pitch": 30,
+    "head": {
+     "text": "Company",
+     "tag": "h3",
+     "size": 14,
+     "weight": "400",
+     "lh": "21px",
+     "ls": "0.14px",
+     "fam": "CursorGothic",
+     "color": "oklab(0.263084 -0.00230259 0.0124794 / 0.6)",
+     "align": "start",
+     "tt": "none",
+     "w": 252,
+     "h": 26,
+     "x": 594,
+     "y": 7716,
+     "lines": 1
+    },
+    "link": {
+     "text": "Careers",
+     "tag": "a",
+     "size": 14,
+     "weight": "400",
+     "lh": "21px",
+     "ls": "0.14px",
+     "fam": "CursorGothic",
+     "color": "rgb(38, 37, 30)",
+     "align": "start",
+     "tt": "none",
+     "w": 51,
+     "h": 30,
+     "x": 594,
+     "y": 7742,
+     "lines": 1
+    }
+   },
+   {
+    "x": 856,
+    "y": 7742,
+    "w": 252,
+    "n": 7,
+    "pitch": 30,
+    "head": {
+     "text": "Legal",
+     "tag": "h3",
+     "size": 14,
+     "weight": "400",
+     "lh": "21px",
+     "ls": "0.14px",
+     "fam": "CursorGothic",
+     "color": "oklab(0.263084 -0.00230259 0.0124794 / 0.6)",
+     "align": "start",
+     "tt": "none",
+     "w": 252,
+     "h": 26,
+     "x": 856,
+     "y": 7716,
+     "lines": 1
+    },
+    "link": {
+     "text": "Terms of Service",
+     "tag": "a",
+     "size": 14,
+     "weight": "400",
+     "lh": "21px",
+     "ls": "0.14px",
+     "fam": "CursorGothic",
+     "color": "rgb(38, 37, 30)",
+     "align": "start",
+     "tt": "none",
+     "w": 108,
+     "h": 30,
+     "x": 856,
+     "y": 7742,
+     "lines": 1
+    }
+   },
+   {
+    "x": 1118,
+    "y": 7742,
+    "w": 252,
+    "n": 3,
+    "pitch": 30,
+    "head": {
+     "text": "Connect",
+     "tag": "h3",
+     "size": 14,
+     "weight": "400",
+     "lh": "21px",
+     "ls": "0.14px",
+     "fam": "CursorGothic",
+     "color": "oklab(0.263084 -0.00230259 0.0124794 / 0.6)",
+     "align": "start",
+     "tt": "none",
+     "w": 252,
+     "h": 26,
+     "x": 1118,
+     "y": 7716,
+     "lines": 1
+    },
+    "link": {
+     "text": "X ↗",
+     "tag": "a",
+     "size": 14,
+     "weight": "400",
+     "lh": "21px",
+     "ls": "0.14px",
+     "fam": "CursorGothic",
+     "color": "rgb(38, 37, 30)",
+     "align": "start",
+     "tt": "none",
+     "w": 22,
+     "h": 30,
+     "x": 1118,
+     "y": 7742,
+     "lines": 1
+    }
+   }
+  ],
+  "colCount": 5,
+  "brand": null,
+  "big": [],
+  "legal": {
+   "y": 8120,
+   "fromBottom": 34,
+   "text": "© 2026",
+   "size": 14,
+   "color": "oklab(0.263084 -0.00230259 0.0124794 / 0.6)"
+  },
+  "email": 0,
+  "inputs": 0,
+  "status": "status",
+  "social": 3,
+  "theme": 3,
+  "lang": 1,
+  "canvas": 0,
+  "video": 0,
+  "svg": 0,
+  "animated": 0,
+  "compliance": 2,
+  "headings": [],
+  "buttons": [],
+  "text": "Product Agents Teams Enterprise Pricing Code Review CLI Cloud Agents Composer Marketplace ↗ Resources Download Changelog Docs Learn ↗ Forum ↗ Help ↗ Workshops Status ↗ Company Careers Blog Community Students Brand Future Anysphere ↗ Legal Terms of Service Acceptable Use Policy Grok Bot Terms Privacy Policy Cookie Policy Data Use Security Privacy choices Connect X ↗ LinkedIn ↗ YouTube ↗ © 2026 Anysphere, Inc. 🛡 SOC 2 | ISO27001 | ISO42001 | AIUC-1 Certified 🖥 ☉ ☾ 🌐 English ↓"
+ },
+ "url": "https://cursor.com",
+ "slug": "cursor",
+ "kind": "home",
+ "site": "cursor",
+ "finalUrl": "https://cursor.com/",
+ "captured": "2026-10-10"
+}
