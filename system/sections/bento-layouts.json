@@ -1,0 +1,297 @@
+{
+  "schema": "bento-layouts/v1",
+  "updated": "2026-10-10",
+  "about": "Fifteen bento section layouts as grid specs. Every number was measured at a 1440 viewport (css px) on the sites named in `measured`; `range` is the band across measured sites; values marked (screenshot) were read from the 2x capture, not from the DOM. Rules: knowledge/web/bento.md (BE-01..32) and knowledge/web/bento-craft.md. Cell visuals: system/sections/bento-cells.md (C01..C28). Pick the layout from the claim count (BE-01), then bind radius, gap and shell to the house system (BE-08..11). Founder rules in knowledge/founder/founder-taste.md outrank everything here (no grey stage boxes, equal tile heights on tablet and phone, identical bentos across sibling pages).",
+  "conventions": {
+    "container": "1200-1312 wide at 1440 (Stripe 1245, Ramp 1312, Notion 1229, Supabase 1280, Clerk 1200); narrow grids 980-1080 (Apple MBP 980, Spline 1080, Apple upgrade 1050)",
+    "spans": "colSpan/rowSpan are on the layout's own column grid; rows sum exactly to the container width; tall = 2 x short + gap",
+    "radius_by_voice": { "precise_tool": [4, 6], "product_saas": [8, 16], "consumer_creative": [24, 30] },
+    "gap_to_radius": [0.7, 2.5],
+    "text_padding": [16, 40],
+    "mobile_default": "1 column, equal heights per tier, 16-24 side gutter, same radius; crop visuals rather than scale (BE-29, BE-30)"
+  },
+  "layouts": [
+    {
+      "id": "L01",
+      "name": "Uniform spec grid 3x2",
+      "use_when": "6 parallel specs or upgrade reasons of equal weight, each one fact; hardware, plans, performance claims",
+      "tiles": [6, 6],
+      "grid": { "columns": 3, "rows": 2, "template": "repeat(3, 1fr) / repeat(2, auto)" },
+      "cells": [
+        { "name": "spec", "colSpan": 1, "rowSpan": 1, "count": 6, "visual": ["C04", "C05", "C06", "C07"] }
+      ],
+      "measured": {
+        "apple-iphone-18-pro": { "tile": [337, 300], "gap": [20, 20], "radius": 28, "fill": "#000 tiles inside a lighter rounded panel (about 36 radius, screenshot)", "pad": 32, "title": "19/600 +0.228px rgba(255,255,255,.56), centred", "figure": "48/600 -0.144px #f5f5f7", "qualifier": "19/600 #86868b", "transition": "background-color 0.344s", "control": "compare selector top-right re-fills all tiles" },
+        "apple-watch-ultra-4": { "tile": [337, 300], "gap": [20, 20], "radius": 28, "figure_colour": "rgb(0,217,89)" }
+      },
+      "range": { "tile_ratio": [1.1, 1.15], "gap": [20, 20], "radius": [28, 28] },
+      "rhythm": "alternate figure tiles (max 1/3) with render tiles; no two figure tiles share an edge (Apple: diagonal, end of row 1 and start of row 2) (BE-17)",
+      "text": "centred (BE-16)",
+      "mobile": { "columns": 2, "tile": [161, 192], "radius": 15, "gap": [20, 20] },
+      "references": ["knowledge/benchmarks/bento/apple-iphone-upgrade-3x2.png", "knowledge/benchmarks/bento/apple-watch-upgrade-3x2.png", "knowledge/benchmarks/bento/mobile-apple-iphone-upgrade.png"],
+      "avoid": "all six tiles as figures; UI fragments in a centred spec grid"
+    },
+    {
+      "id": "L02",
+      "name": "Offset masonry 2-col (photo headline tiles)",
+      "use_when": "4 big headline claims backed by photography; consumer hardware, creative tools",
+      "tiles": [4, 6],
+      "grid": { "columns": 2, "rows": "independent per column", "template": "two flex columns, each a stack of tall + short tiles in opposite order" },
+      "cells": [
+        { "name": "tall-photo", "colSpan": 1, "heightPx": [380, 401], "visual": ["C08"] },
+        { "name": "short-icon", "colSpan": 1, "heightPx": [230, 241], "visual": ["C23"] }
+      ],
+      "measured": {
+        "apple-macbook-pro": { "column_width": 480, "heights": "col A 401 then 241; col B 241 then 401 (variants 380/230)", "gap": 20, "radius": 28, "fill": "#1d1d1f", "pad": 40, "title": "40/600 (tall) or 28/600 (short) #f5f5f7, no body", "icon": "multicolour gradient line glyph 74-106px" }
+      },
+      "range": { "tall_to_short": [1.65, 1.7], "gap": [20, 20], "radius": [28, 28] },
+      "mobile": { "columns": 1, "tile_width": 328, "radius": 28, "pad": [30, 26] },
+      "references": ["knowledge/benchmarks/bento/apple-mbp-masonry-2col.png"],
+      "avoid": "masonry with UI fragments (ragged crops); more than 2 columns"
+    },
+    {
+      "id": "L03",
+      "name": "2 over 3",
+      "use_when": "5 claims under one platform theme; 2 core workflows on top, 3 supporting below",
+      "tiles": [5, 5],
+      "grid": { "columns": 6, "rows": 2, "template": "repeat(6, 1fr) / 483px 526px" },
+      "cells": [
+        { "name": "lead-a", "colSpan": 3, "rowSpan": 1, "visual": ["C02", "C19"] },
+        { "name": "lead-b", "colSpan": 3, "rowSpan": 1, "visual": ["C01"] },
+        { "name": "support", "colSpan": 2, "rowSpan": 1, "count": 3, "visual": ["C01", "C13", "C17"] }
+      ],
+      "measured": {
+        "ramp": { "tiles": "644x483 x2 (4:3), 421x526 x3 (0.8 portrait)", "gap": 24, "radius": 12, "fill": "lab(95.6) warm grey", "border": "1px rgba(33,33,33,.1)", "pad": "about 32 (screenshot)", "title": "24/400 two-tone sentence, 39-50 chars, no body", "affordance": "16px arrow in about 32px button top-right, transform on hover", "field": "dotted particle arcs behind UI", "visual": "full-bleed canvas 642x482" }
+      },
+      "range": { "row1_ratio": [1.3, 1.35], "row2_ratio": [0.78, 0.82], "gap": [24, 24], "radius": [12, 12] },
+      "mobile": { "columns": 1, "tile": [358, 520], "tier2_height": 448, "radius": 12 },
+      "references": ["knowledge/benchmarks/bento/ramp-platform-2plus3.png", "knowledge/benchmarks/bento/mobile-ramp-platform.png", "knowledge/benchmarks/bento/hover-ramp-rest.png", "knowledge/benchmarks/bento/hover-ramp-hover.png"],
+      "avoid": "same visual type in the two lead tiles; a body paragraph under sentence titles"
+    },
+    {
+      "id": "L04",
+      "name": "Two-thirds lead, three, full",
+      "use_when": "6 product lines or capabilities with one flagship; payments, platforms",
+      "tiles": [6, 6],
+      "grid": { "columns": 6, "rows": 3, "template": "repeat(6, 1fr) / 686px 690px 456px" },
+      "cells": [
+        { "name": "flagship", "colSpan": 4, "rowSpan": 1, "visual": ["C20", "C01", "C10"] },
+        { "name": "side", "colSpan": 2, "rowSpan": 1, "visual": ["C13", "C01"] },
+        { "name": "middle", "colSpan": 2, "rowSpan": 1, "count": 3, "visual": ["C03", "C19", "C11", "C12"] },
+        { "name": "closer", "colSpan": 6, "rowSpan": 1, "visual": ["C01", "C02"] }
+      ],
+      "measured": {
+        "stripe": { "tiles": "828x686 + 409x690; 409x690 x3; 1245x456", "gap": "about 5 in the DOM; about 14 visible at rest because each tile is clip-path inset 4px", "radius": 6, "fill": "#e5edf5 frame, white inner", "title": "about 22/400 top-left (screenshot)", "affordance": "38px expand button top-right", "field": "brand ribbon gradient bleeding from one corner", "ui_text": "9-15px", "hover": "clip-path inset(4px 4.83px round 6px) -> inset(0 round 6px) 0.8s cubic-bezier(0.165,0.84,0.44,1); gradient border opacity 0->1 0.25s; title translate(-4.8px,-4px) 0.8s; icon arrows +-2px 0.6s cubic-bezier(0.16,1,0.3,1)" }
+      },
+      "range": { "flagship_vs_side_area": [2.0, 2.0], "tall_ratio": [0.59, 0.6], "radius": [6, 6] },
+      "mobile": { "columns": 1, "tile": [360, 527], "equal_heights": true },
+      "references": ["knowledge/benchmarks/bento/stripe-flexible-6col.png", "knowledge/benchmarks/bento/mobile-stripe-flexible.png", "knowledge/benchmarks/bento/hover-stripe-billing-rest.png", "knowledge/benchmarks/bento/hover-stripe-billing-hover.png"],
+      "avoid": "gradient field in every tile (keep to 30-60%); soft radius with this tight gap"
+    },
+    {
+      "id": "L05",
+      "name": "2 + full-wide + catalogue strip",
+      "use_when": "3 headline capabilities plus 4-6 use cases or templates",
+      "tiles": [8, 9],
+      "grid": { "columns": 10, "rows": 3, "template": "repeat(10, 1fr) / 560px 364px 160px" },
+      "cells": [
+        { "name": "half", "colSpan": 5, "rowSpan": 1, "count": 2, "visual": ["C02", "C13"] },
+        { "name": "wide", "colSpan": 10, "rowSpan": 1, "visual": ["C03", "C01"], "copy": "left 1/3, visual right 2/3" },
+        { "name": "catalogue", "colSpan": 2, "rowSpan": 1, "count": 5, "visual": ["C23"] }
+      ],
+      "measured": {
+        "notion": { "tiles": "602x560 x2; 1229x364; 239x160 x5", "gap": 24, "radius": 12, "fill": "light grey step on white", "pad": 24, "copy": "eyebrow ('Capture knowledge') + 22/700 -0.25px title + 32px round black arrow; catalogue 16/700 two-line label with arrow, 40px illustrated icon", "visual": "white app window inset 24-32px bleeding off the bottom, plus a floating overlay (recording pill, ask bar)" }
+      },
+      "range": { "gap": [24, 24], "radius": [12, 12] },
+      "mobile": { "columns": 1, "tile": [358, 385], "radius": 6, "catalogue": "horizontal scroller, cards 294x367" },
+      "references": ["knowledge/benchmarks/bento/notion-ai-2plus1plus5.png"],
+      "avoid": "catalogue cards with visuals; wide tile with copy centred"
+    },
+    {
+      "id": "L06",
+      "name": "Brick (alternating offset)",
+      "use_when": "4 capabilities of equal weight that need movement without a fake hierarchy; creative and 3D tools",
+      "tiles": [4, 4],
+      "grid": { "columns": "flex rows", "rows": 2, "template": "row 1: 1.3fr 1fr; row 2: 1fr 1.3fr" },
+      "cells": [
+        { "name": "wide", "widthPx": 596, "count": 2, "visual": ["C07", "C24"] },
+        { "name": "narrow", "widthPx": 460, "count": 2, "visual": ["C07", "C24"] }
+      ],
+      "measured": {
+        "spline": { "tiles": "596x400 + 460x400, then 460x400 + 596x400", "gap": 24, "radius": 24, "fill": "rgba(255,255,255,.08) on #000", "pad": 40, "title": "20/500 rgba(255,255,255,.9)", "body": "16/400 rgba(255,255,255,.6)", "list": "14px checklist, 4 items", "visual": "3D object video on an isometric floor grid, bottom-right; one canvas 598x520 bleeding right and bottom", "preceded_by": "1080x608 product frame, radius 16, 1px rgba(255,255,255,.1)" }
+      },
+      "range": { "wide_to_narrow": [1.2, 1.45], "gap": [24, 24], "radius": [24, 24] },
+      "mobile": { "columns": 1, "tile": [358, 400], "pad": 40, "equal_heights": true },
+      "references": ["knowledge/benchmarks/bento/spline-agentic-brick.png", "knowledge/benchmarks/bento/mobile-spline-agentic.png"],
+      "avoid": "brick with 5+ tiles (reads ragged); mirrored rows with different heights"
+    },
+    {
+      "id": "L07",
+      "name": "12-col lead plus small",
+      "use_when": "a platform with one primary product and 4-6 modules",
+      "tiles": [6, 7],
+      "grid": { "columns": 12, "rows": 2, "template": "repeat(12, 1fr) / 400px 400px" },
+      "cells": [
+        { "name": "lead", "colSpan": 6, "rowSpan": 1, "visual": ["C21", "C01"] },
+        { "name": "module", "colSpan": 3, "rowSpan": 1, "count": 6, "visual": ["C21", "C17", "C12", "C15"] }
+      ],
+      "measured": {
+        "supabase": { "tiles": "538x400 lead, 263x400 x6", "gap": 12, "radius": 16, "inner_radius": 15, "frame": "1px gradient ink 8% -> 4%", "pad": 24, "title": "16/600, body 14/450 muted" }
+      },
+      "range": { "lead_to_small_width": [2.0, 2.1], "gap": [12, 12], "radius": [16, 16] },
+      "mobile": { "columns": "1 below sm, 2 at sm" },
+      "references": ["knowledge/benchmarks/bento/supabase-bento.png"],
+      "source_note": "measured 2026-10-09, see bento-craft.md"
+    },
+    {
+      "id": "L08",
+      "name": "3-col with tall spans",
+      "use_when": "7-9 security or platform features of mixed depth; dark technical brands",
+      "tiles": [5, 9],
+      "grid": { "columns": 3, "rows": "260px auto", "template": "repeat(3, 1fr); tall tiles span 2 rows" },
+      "cells": [
+        { "name": "short", "colSpan": 1, "rowSpan": 1, "visual": ["C27", "C03", "C25"] },
+        { "name": "tall", "colSpan": 1, "rowSpan": 2, "visual": ["C01", "C28"] }
+      ],
+      "measured": {
+        "clerk": { "tiles": "395x260, 395x528 (= 2x260 + 8)", "gap": 8, "radius": 16, "fill": "#212126", "pad": 24, "title": "13/500" },
+        "vercel": { "tiles": "685x580 (= 2x280 + 20), 685x280 x2", "gap": 20, "radius": 6, "fill": "#fafafa" }
+      },
+      "range": { "gap": [8, 20], "radius": [6, 16] },
+      "mobile": { "columns": "1, 2 at md, 3 at xl" },
+      "references": ["knowledge/benchmarks/bento/clerk-bento-a.png", "knowledge/benchmarks/bento/vercel-bento.png"],
+      "source_note": "measured 2026-10-09, see bento-craft.md"
+    },
+    {
+      "id": "L09",
+      "name": "2x2 (tiles or media-caption)",
+      "use_when": "4 equal claims; media-caption variant for editorial or finance brands",
+      "tiles": [4, 4],
+      "grid": { "columns": 2, "rows": 2, "template": "1fr 1fr / auto auto" },
+      "variants": {
+        "tile": { "measured": { "cal": { "tiles": "518x450 over 518x355", "gap": 12, "radius": 16, "shadow": "0 1px 5px -4px rgba(36,36,36,.7), 0 4px 8px rgba(36,36,36,.05)", "pad": "24 24 0" } } },
+        "media-caption": { "measured": { "mercury": { "media": "496x331 (3:2)", "gap": 32, "radius": "about 16 (screenshot)", "stage": "warm grey with grain and depth-of-field blur, purple light", "caption": "below the media, 18/480 title + 18/360 body, same size", "video": "32px round play control bottom-left" } }, "founder_note": "a grey stage needs an override in DIRECTION.md (founder: no grey stage boxes)" }
+      },
+      "cells": [
+        { "name": "quad", "colSpan": 1, "rowSpan": 1, "count": 4, "visual": ["C01", "C02", "C19", "C24"] }
+      ],
+      "range": { "gap": [12, 32], "radius": [16, 16] },
+      "mobile": { "columns": 1 },
+      "references": ["knowledge/benchmarks/bento/cal-bento-2x2.png", "knowledge/benchmarks/bento/mercury-media-caption-2x2.png"]
+    },
+    {
+      "id": "L10",
+      "name": "Full-width lead plus 2",
+      "use_when": "one flagship capability plus 2 companions; AI and app launches",
+      "tiles": [3, 3],
+      "grid": { "columns": 2, "rows": 2, "template": "1fr 1fr / auto auto; lead spans 2 columns" },
+      "cells": [
+        { "name": "lead", "colSpan": 2, "rowSpan": 1, "visual": ["C01", "C03"] },
+        { "name": "half", "colSpan": 1, "rowSpan": 1, "count": 2, "visual": ["C27", "C09", "C01"] }
+      ],
+      "measured": {
+        "raycast-a": { "tiles": "1020x477 lead, 495x513 x2", "gap": 30, "radius": 30, "fill": "rgba(255,255,255,.02)" },
+        "raycast-b": { "tiles": "1204x218 lead, 582x341 x2", "gap": 40, "radius": 12, "fill": "linear-gradient(45deg,#0c0d0f,#070809)", "edge": "1px 6% white + inset 0 1px 0 rgba(255,255,255,.10)" }
+      },
+      "range": { "gap": [30, 40], "radius": [12, 30] },
+      "mobile": { "columns": 1 },
+      "references": ["knowledge/benchmarks/bento/raycast-bento.png", "knowledge/benchmarks/bento/raycast-bento-b.png"],
+      "source_note": "measured 2026-10-09, see bento-craft.md"
+    },
+    {
+      "id": "L11",
+      "name": "Hairline grid / triptych",
+      "use_when": "engineered or dark brands; principles, platform pillars, 3-9 features drawn as line art or tight UI",
+      "tiles": [3, 9],
+      "grid": { "columns": 3, "rows": [1, 3], "template": "repeat(3, 1fr); gap 0; 1px dividers or 1px dashed cells" },
+      "cells": [
+        { "name": "cell", "colSpan": 1, "rowSpan": 1, "visual": ["C21", "C01", "C18", "C04"] },
+        { "name": "wide-cell", "colSpan": 2, "rowSpan": 1, "visual": ["C01", "C13"] }
+      ],
+      "measured": {
+        "linear-fig": { "columns": "3 at about 426 pitch, text at x 80/539/965", "divider": "1px vertical hairline", "label": "FIG 0.N 12/400 Berkeley Mono #8a8f98 at top", "drawing": "isometric line svg 265-304 x 262-281", "title": "15/510 -0.165px #d0d6e0", "body": "15/400 #8a8f98", "page": "#08090a", "heading": "48/510 -1.056px two-tone (#f7f8f8 lead, #8a8f98 continuation)" },
+        "framer": { "cells": "400x480 inside a 1200 frame, radius 25, gap 0" },
+        "plain-dark": { "cells": "3x2, 1px dashed green borders (screenshot), about 8 radius", "copy": "eyebrow 12/400 rgb(26,211,121); 18/500 rgb(243,251,233); body 18/400", "visual": "icon or chip clusters with dashed empty slots" },
+        "dub": { "rails": "1px vertical page rails at the container edges; full-width 1px section rules" }
+      },
+      "range": { "divider_alpha": [0.06, 0.12], "label_size": [12, 12] },
+      "mobile": { "columns": 1, "dividers": "horizontal rules between stacked cells" },
+      "references": ["knowledge/benchmarks/bento/linear-fig-triptych.png", "knowledge/benchmarks/bento/framer-bento.png", "knowledge/benchmarks/bento/plain-dashed-3x2-dark.png", "knowledge/benchmarks/bento/dub-tabbed-funnel.png"],
+      "avoid": "hairlines plus tile fills (double structure); dividers that cross the drawings (founder rail rule)"
+    },
+    {
+      "id": "L12",
+      "name": "Wide plus 3 small, text in the slot",
+      "use_when": "one headline capability with 3 sub-capabilities; the headline copy sits in the empty slot beside the wide visual",
+      "tiles": [4, 4],
+      "grid": { "columns": 3, "rows": 2, "template": "repeat(3, 1fr) / 480px 220px; wide spans 2 cols; copy occupies col 3 row 1" },
+      "cells": [
+        { "name": "wide-visual", "colSpan": 2, "rowSpan": 1, "visual": ["C24", "C17", "C07"] },
+        { "name": "slot-copy", "colSpan": 1, "rowSpan": 1, "visual": [], "copy": "eyebrow chip + 48-56px headline + body + mono CTA" },
+        { "name": "small", "colSpan": 1, "rowSpan": 1, "count": 3, "visual": ["C16", "C03", "C17"], "copy": "caption below the tile" }
+      ],
+      "measured": {
+        "plain-agents": { "tiles": "793x480 video, 387x220 x3", "gap": 20, "radius": [8, 9], "fill": "#f9f6f1 cream", "caption": "below the tile" }
+      },
+      "range": { "gap": [20, 20], "radius": [8, 9] },
+      "mobile": { "columns": 1, "tile_width": 318 },
+      "references": ["knowledge/benchmarks/bento/plain-agents-1plus3.png"]
+    },
+    {
+      "id": "L13",
+      "name": "Uniform 2-up / 3-up feature cards",
+      "use_when": "2-3 equal claims, each with its own visual; the most common 2026 bento",
+      "tiles": [2, 3],
+      "grid": { "columns": [2, 3], "rows": 1, "template": "repeat(N, 1fr)" },
+      "cells": [
+        { "name": "card", "colSpan": 1, "rowSpan": 1, "visual": ["C01", "C02", "C20", "C09", "C17"] }
+      ],
+      "measured": {
+        "cursor-frontier": { "tile": [427, 553], "gap": 10, "radius": 4, "fill": "#f2f1ed on #f7f7f4", "pad": "15.9 17.5", "title": "16/400 + body 16/400 at 60% (two-tone)", "link": "accent orange", "plate": "392x392 inset 18, radius 4, #e6e5e0", "loop": "phone list 3.1s" },
+        "lovable": { "tile": [365, 425], "gap": 12, "radius": 16, "fill": "white on oklch(.97), no edge", "title": "16/600 at bottom", "body": "14/400 #616161", "visual": "UI top, cropped right, radial colour halo mask behind it", "hover": "inner transform/colour 0.25s cubic-bezier(0.16,1,0.3,1)" },
+        "resend": { "tile": [600, 526], "gap": 32, "radius": 24, "fill": "transparent on #000", "border": "1px rgba(214,235,253,.19)", "pad": 40, "title": "icon 20 + 20/400", "body": "14-16/400 #a1a4a5", "mask": "linear-gradient(45deg,#000 50%,transparent)" },
+        "lindy": { "tile": [369, 295], "gap": 12, "radius": 8, "border": "1px #e7e7e7" }
+      },
+      "range": { "gap": [10, 32], "radius": [4, 24], "tile_ratio": [0.77, 1.25] },
+      "mobile": { "columns": 1, "tile": [353, 425], "equal_heights": "Lovable, Resend yes; Cursor content height (less tidy)" },
+      "references": ["knowledge/benchmarks/bento/cursor-frontier-3up.png", "knowledge/benchmarks/bento/lovable-platform-3up.png", "knowledge/benchmarks/bento/resend-dx-2up-dark.png", "knowledge/benchmarks/bento/lindy-3up.png", "knowledge/benchmarks/bento/mobile-lovable-platform.png"],
+      "avoid": "three tiles with the same visual type; icon-only visuals (that is a feature list, not a bento)"
+    },
+    {
+      "id": "L14",
+      "name": "Icon catalogue",
+      "use_when": "5-8 small extras after the main bento ('and so much more')",
+      "tiles": [4, 10],
+      "grid": { "columns": [4, 5], "rows": [1, 2], "template": "repeat(4, 180px) centred, or repeat(5, 1fr)" },
+      "cells": [
+        { "name": "extra", "colSpan": 1, "rowSpan": 1, "visual": ["C23"] }
+      ],
+      "measured": {
+        "cal-more": { "tile": [180, 180], "gap": 12, "radius": 16, "shadow": "0 1px 5px -4px rgba(36,36,36,.7), 0 4px 8px rgba(36,36,36,.05)", "pad": "28 8 8", "label": "14/400 centred", "icon_plate": "64x64 radius 12 #f5f5f5 with 4 corner screws", "hover": "overlay opacity 0 -> 1" },
+        "notion-strip": { "tile": [239, 160], "gap": 8, "radius": 12, "label": "16/700 with arrow", "icon": "40px illustrated" }
+      },
+      "range": { "tile": [160, 240], "gap": [8, 12], "radius": [12, 16] },
+      "mobile": { "columns": 2, "tile": [170, 170], "alt": "horizontal scroller (Notion 294x367)" },
+      "references": ["knowledge/benchmarks/bento/cal-icon-tiles-4x2.png", "knowledge/benchmarks/bento/notion-ai-2plus1plus5.png"]
+    },
+    {
+      "id": "L15",
+      "name": "Sequenced alternatives (when a grid would be too many cells)",
+      "use_when": "8+ deep features, or one feature that needs a full-width scene",
+      "tiles": [3, 12],
+      "variants": {
+        "tabs-plus-stage": { "measured": { "dub": "funnel stage above 3 tabs; active tab 1px green left rule, inactive about 40% opacity", "lovable": "sticky tab list left (active gradient underline), 880x500 radius 12 dark panels right with a bottom pastel glow", "posthog": "tabbed window, active tab filled in brand magenta" } },
+        "scroll-stack": { "measured": { "retool": "sticky headline + accordion left; stacked radius-24 cards right, active card pastel gradient, inactive dimmed grey" } },
+        "scrolly-numbered": { "measured": { "lindy": "01/02/03 list left (inactive about 40%), one sticky visual card right with corner gradient" } },
+        "unboxed-composition": { "measured": { "linear-intake": "480x559 chat panel overlapping a kanban that fades into the page; feature links in 2 columns with a hairline divider" } },
+        "photo-plate-rows": { "measured": { "granola": "hairline topic rows (serif 32/400 left, 22/400 right) over 1280x527 photo plates split 900+443, square corners" } }
+      },
+      "mobile": { "tabs": "become stacked panels with inline titles", "scrolly": "becomes stacked cards (Lindy radius 24)" },
+      "references": ["knowledge/benchmarks/bento/dub-tabbed-funnel.png", "knowledge/benchmarks/bento/lovable-tabbed-stack-dark.png", "knowledge/benchmarks/bento/retool-scroll-stack.png", "knowledge/benchmarks/bento/lindy-scrolly-numbered.png", "knowledge/benchmarks/bento/linear-intake-unboxed.png", "knowledge/benchmarks/bento/granola-photo-plate.png"]
+    }
+  ],
+  "selector": {
+    "by_claims": { "2": ["L13"], "3": ["L13", "L10", "L11"], "4": ["L09", "L06", "L12", "L02"], "5": ["L03"], "6": ["L01", "L04"], "6-7": ["L07", "L08"], "8-9": ["L05", "L08", "L11"], "8+ deep": ["L15"], "extras": ["L14"] },
+    "by_voice": { "precise_tool": ["L04", "L11", "L13"], "product_saas": ["L03", "L05", "L07", "L09", "L13"], "consumer_creative": ["L01", "L02", "L06", "L10"], "editorial_warm": ["L09 media-caption", "L15 photo-plate-rows"] }
+  }
+}

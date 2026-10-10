@@ -18973,7 +18973,7 @@
   "text": "BE-17 Use a single large figure as the whole visual only inside a spec grid, and then mix figure tiles with object tiles (Apple: 2 of 6 tiles are figures, \"22 more hours\" and \"50% charge\", at 48/600 with -0.144px tracking; the rest are renders). Put the unit in a smaller line above (\"Up to\") and the qualifier below in grey (19/600 `#86868b`). Allow a glyph inside the figure (Apple's green battery after \"hours\"). Elsewhere keep to one figure per grid (bento-craft 2.5).",
   "why": "Alternating figures and objects keeps a spec sheet rhythmic; all-figure grids are the \"2TB / 1,600 / 25M\" template.",
   "applies": "landing page.",
-  "check": "figure tiles <= 1/3 of the grid, and none adjacent to another figure tile in reading order.",
+  "check": "figure tiles <= 1/3 of the grid, and no two figure tiles share an edge (Apple places its two diagonally: end of row 1, start of row 2).",
   "checkable": true,
   "source": "Apple iPhone and Watch, bentogrids/Dribbble negatives",
   "file": "web/bento.md",
