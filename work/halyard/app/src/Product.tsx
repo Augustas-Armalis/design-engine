@@ -84,7 +84,7 @@ function LatencyChart({ at }: { at: number }) {
 export default function Product({ at = 0 }: { at?: number }) {
   const s = (k: number) => at + k * 0.06
   return (
-    <div className="flex h-[880px] w-[1152px] overflow-hidden rounded-[16px] bg-[var(--win)] text-left shadow-[0_0_0_1px_rgba(255,255,255,0.08),inset_0_1px_0_rgba(255,255,255,0.06),0_30px_80px_-24px_rgba(0,0,0,0.9)]">
+    <div className="flex h-[880px] w-[1152px] overflow-hidden rounded-[16px] bg-[var(--win)] text-left sh-5">
       {/* sidebar */}
       <aside aria-label="Workspace navigation" className="flex w-[232px] shrink-0 flex-col border-r border-[var(--edge)] bg-[var(--win-side)] px-2.5 pb-3">
         <In at={s(1)} className="flex h-14 items-center pl-1.5 pr-0.5">
@@ -117,7 +117,7 @@ export default function Product({ at = 0 }: { at?: number }) {
           ))}
         </In>
         <In at={s(5)} className="mt-auto">
-          <div className="rounded-[12px] bg-[var(--win-raised)] p-3 shadow-[inset_0_0_0_1px_var(--edge)]">
+          <div className="rounded-[12px] bg-[var(--win-raised)] p-3 sh-1">
             <div className="flex items-center gap-2 text-[12.5px] text-[#8a8a8a]"><span className="size-1.5 rounded-full bg-[var(--ok)]" />On call now</div>
             <div className="mt-2 flex items-center gap-2.5"><Person i="ML" size={26} /><div><div className="text-[13.5px] font-[500]">Maya Lindqvist</div><div className="mono text-[11.5px] text-[#8a8a8a]">until 18:00 UTC</div></div></div>
           </div>
@@ -148,13 +148,13 @@ export default function Product({ at = 0 }: { at?: number }) {
             <In at={s(9)} className="ml-[38px] mt-3 text-[13.5px] leading-[22px] text-[#d9d9d9]">
               p99 went from 180 ms to 2.4 s at 13:57, four minutes after deploy <span className="mono rounded-[4px] bg-white/[0.07] px-1 text-[13.5px]">#4821</span>. Traces point to a new N+1 query in <span className="mono rounded-[4px] bg-white/[0.07] px-1 text-[13.5px]">CartSummary.load</span> (412 calls per request). Errors are flat: this is latency, not failure.
             </In>
-            <In at={s(10)} className="ml-[38px] mt-4 rounded-[14px] bg-[var(--win-raised)] p-3.5 pb-2 shadow-[inset_0_0_0_1px_var(--edge)]">
+            <In at={s(10)} className="ml-[38px] mt-4 rounded-[14px] bg-[var(--win-raised)] p-3.5 pb-2 sh-1">
               <div className="mb-1.5 flex items-center text-[12.5px]"><span className="font-[500] text-[#e5e5e5]">checkout-api · p99 latency</span><span className="ml-2 text-[#8a8a8a]">last 60 min</span><span className="mono ml-auto text-[12.5px] text-[var(--amber-ink)]">2.41s</span></div>
               <LatencyChart at={s(11)} />
             </In>
 
             {/* the human step: the rollback waits for an approval */}
-            <In at={s(13)} className="ml-[38px] mt-4 overflow-hidden rounded-[14px] bg-[var(--win-raised)] shadow-[inset_0_0_0_1px_var(--edge-2),0_12px_30px_-12px_rgba(0,0,0,0.7)]">
+            <In at={s(13)} className="ml-[38px] mt-4 overflow-hidden rounded-[14px] bg-[var(--win-raised)] sh-3">
               <div className="flex items-center gap-2 px-3.5 pt-3 text-[12.5px] text-[#a3a3a3]"><Orb size={18} live /><span className="font-[500] text-[#e5e5e5]">Rollback agent</span> wants to
                 <span className="ml-auto flex items-center gap-1.5 text-[var(--amber-ink)]"><span className="relative grid size-2 place-items-center"><span className="absolute size-2 animate-ping rounded-full bg-[var(--amber)] opacity-50" /><span className="size-1.5 rounded-full bg-[var(--amber)]" /></span>Waiting for you</span></div>
               <div className="px-3.5 pb-3 pt-1.5">
@@ -176,7 +176,7 @@ export default function Product({ at = 0 }: { at?: number }) {
           <div aria-hidden className="pointer-events-none absolute inset-x-0 bottom-0 h-16 bg-[linear-gradient(to_bottom,transparent,var(--win))]" />
         </div>
         <In at={s(14)} className="shrink-0 px-5 pb-4">
-          <div className="mx-auto max-w-[620px] rounded-[16px] bg-[var(--win-raised)] p-3 shadow-[inset_0_0_0_1px_var(--edge)]">
+          <div className="mx-auto max-w-[620px] rounded-[16px] bg-[var(--win-raised)] p-3 sh-1">
             <div className="h-6 text-[13.5px] text-[#8a8a8a]">Ask Halyard, or @ an agent</div>
             <div className="mt-2 flex items-center gap-1.5">
               <button type="button" aria-label="Add context" className="grid size-8 place-items-center rounded-[9px] text-[#a3a3a3] shadow-[inset_0_0_0_1px_var(--edge)]"><Plus size={16} strokeWidth={SW} /></button>
@@ -208,7 +208,7 @@ export default function Product({ at = 0 }: { at?: number }) {
             </In></li>
           ))}
         </ol>
-        <In at={s(12)} className="mt-6 rounded-[12px] bg-[var(--win-raised)] p-3 shadow-[inset_0_0_0_1px_var(--edge)]">
+        <In at={s(12)} className="mt-6 rounded-[12px] bg-[var(--win-raised)] p-3 sh-1">
           <div className="text-[12.5px] text-[#cfcfcf]">Comms agent drafted a status page update</div>
           <div className="mt-2 text-[12.5px] leading-[19px] text-[#8a8a8a]">"Checkout is slower than usual. Orders are going through. We are rolling back a change."</div>
           <a href="#" className="mt-1.5 inline-flex h-7 items-center text-[12.5px] font-[500] text-[#e5e5e5] underline decoration-white/25 underline-offset-[3px]">Review draft</a>
