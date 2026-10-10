@@ -1,0 +1,11 @@
+{
+  "slug": "quillwork", "name": "Quillwork",
+  "showcaseHeadline": "Write The Draft You Meant",
+  "signature": "Warm black desk at night (#120e0a field, grain at 4%), a lamp's spotlight from the upper right as the only light, Bodoni Moda display with a quiet grotesk body, ember orange only for the AI's edits. One document, never a dashboard.",
+  "personality": { "brandHue": 40, "brandChroma": 0.16, "neutralTemperature": "warm", "radiusPreset": "default", "depthStyle": "soft", "density": "comfortable", "motionPersonality": "calm", "typeVoice": "Literate, exact, a little dry." },
+  "fonts": { "display": "'Bodoni Moda', 'Didot', serif", "body": "'Inter', system-ui, sans-serif", "mono": "'IBM Plex Mono', ui-monospace, monospace", "href": "https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400..700&family=Inter:wght@400;500;600&display=swap" },
+  "type": { "ratio": 1.333, "basePx": 16, "displayMaxPx": 92, "displayWeight": 500, "displayTracking": -0.02, "displayLeading": 1.0, "bodyLeading": 1.55 },
+  "bestFor": ["writing and docs", "legal and editorial AI", "knowledge tools"], "avoidFor": ["infrastructure dashboards"],
+  "owned": ["Didone display at poster size", "One lit document as the hero object", "Ember orange only for AI edits"],
+  "never": ["a full dashboard in the hero", "cold blue light", "more than one accent hue"]
+}

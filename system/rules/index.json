@@ -2328,6 +2328,34 @@
   "origin": "founder"
  },
  {
+  "id": "founder.founder-taste#74",
+  "text": "[founder] A hero shows the product, not the whole product. Show one view at a readable size with fewer, larger elements (about 6-10 rows or items, one panel, one moment of AI), not a full multi-panel workspace with a thread, chart, approval, inspector and timeline at once. Unique structure is welcome, but the product density should match what shipped premium heroes show.",
+  "why": "Founder on Halyard (Marcel grid + Rico workspace): \"not bad for uniqueness... just yeah nobody shows that much or high product design\", then asked for heroes \"a bit more normal, like ours\".",
+  "applies": "product heroes.",
+  "check": "product window in the fold shows <= 3 regions (e.g. sidebar + one main view + one AI moment) and no text under 12.5px; count visible distinct components <= 12.",
+  "checkable": true,
+  "source": "founder, Halyard round 1, 2026-10-10",
+  "file": "founder/founder-taste.md",
+  "section": "5. Exceptions & judgement calls",
+  "tags": [
+   "founder",
+   "taste",
+   "hero",
+   "nav",
+   "typography",
+   "copy",
+   "icons",
+   "logo",
+   "layout",
+   "product-card",
+   "background",
+   "buttons",
+   "quality-bar"
+  ],
+  "kind": "source",
+  "origin": "founder"
+ },
+ {
   "id": "dos-and-donts.dos-and-donts#1",
   "text": "[T13] Use as few font sizes as possible in a form; differentiate size only between sections (labels/placeholders at one small size) and actions (the button label larger). The good mock uses 12 for both label and placeholder and 32 for the button label; the bad mock mixes 16 (label), 12 (placeholder), 32 (button).",
   "why": "Every extra size is another thing to decode, so the form takes longer to process.",

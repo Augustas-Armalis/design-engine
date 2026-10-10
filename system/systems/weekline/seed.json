@@ -1,0 +1,11 @@
+{
+  "slug": "weekline", "name": "Weekline",
+  "showcaseHeadline": "Your Week, Already Arranged",
+  "signature": "Graphite dark (Linear-measured ladder: #0a0a0b field, #111113 panel, #18181b raised, white hairlines 6/9/12%), Host Grotesk at regular weight, one cool blue for the thing the AI proposes. Light comes from the product window, never from blobs behind the type.",
+  "personality": { "brandHue": 245, "brandChroma": 0.13, "neutralTemperature": "cool", "radiusPreset": "default", "depthStyle": "border", "density": "comfortable", "motionPersonality": "calm", "typeVoice": "Swiss, unbothered, short sentences." },
+  "fonts": { "display": "'Host Grotesk', 'Helvetica Neue', sans-serif", "body": "'Host Grotesk', 'Helvetica Neue', sans-serif", "mono": "'Geist Mono', ui-monospace, monospace", "href": "https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@300..700&display=swap" },
+  "type": { "ratio": 1.25, "basePx": 15, "displayMaxPx": 68, "displayWeight": 400, "displayTracking": -0.035, "displayLeading": 1.02, "bodyLeading": 1.55 },
+  "bestFor": ["calendars and scheduling", "productivity", "team tools"], "avoidFor": ["poster-style campaigns"],
+  "owned": ["Regular-weight display at large size", "Blue only for what the AI proposes", "The product window is the light source"],
+  "never": ["colour blobs behind the headline", "glow on a resting button", "more than one accent hue"]
+}
