@@ -2,7 +2,7 @@
   "version": 1,
   "id": "reel-4k60",
   "dir": "/Users/augustas/Documents/Larpo front-end engine/work/halyard/reel-4k60",
-  "createdAt": "2026-10-10T14:10:55.467Z",
+  "createdAt": "2026-10-10T14:50:12.068Z",
   "settings": {
     "url": "http://localhost:4335/",
     "width": 1440,
@@ -49,10 +49,10 @@
     {
       "preset": "h264",
       "file": "/Users/augustas/Documents/Larpo front-end engine/work/halyard/halyard-loadin-4k60.mp4",
-      "bytes": 4452191,
+      "bytes": 4430879,
       "probe": {
         "file": "/Users/augustas/Documents/Larpo front-end engine/work/halyard/halyard-loadin-4k60.mp4",
-        "bytes": 4452191,
+        "bytes": 4430879,
         "codec": "h264",
         "profile": "High",
         "pixFmt": "yuv420p",
@@ -61,7 +61,7 @@
         "fps": "60/1",
         "frames": 750,
         "durationSec": 12.5,
-        "bitrateKbps": 2473,
+        "bitrateKbps": 2460,
         "color": {
           "space": "bt709",
           "primaries": "bt709",
@@ -70,13 +70,13 @@
         },
         "cover": "/Users/augustas/Documents/Larpo front-end engine/work/halyard/halyard-loadin-4k60-cover.png"
       },
-      "ms": 27135
+      "ms": 9228
     }
   ],
   "timings": {
-    "loadMs": 925,
-    "captureMs": 134712,
-    "finishMs": 19897,
+    "loadMs": 860,
+    "captureMs": 75019,
+    "finishMs": 7843,
     "exportMs": 0
   }
 }

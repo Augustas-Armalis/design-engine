@@ -29,7 +29,7 @@ function Cell({ fig, claim, rest, alt, children, className = '', i, shown }: { f
     <motion.article className={`group relative flex flex-col overflow-hidden ${className}`} initial={reduce ? false : { opacity: 0.01, y: 16 }} animate={shown ? { opacity: 1, y: 0 } : undefined} transition={{ delay: i * 0.08, duration: 0.8, ease }}>
       <div className="px-7 pt-6">
         <div className="mono text-[11px] tracking-[0.04em] text-[var(--sub)]">FIG {fig}</div>
-        <h3 className="mt-3 max-w-[460px] text-[19px] font-[500] leading-[26px] tracking-[-0.01em]"><span className="text-[var(--ink)]">{claim}</span> <span className="text-[var(--soft)]">{rest}</span></h3>
+        <h3 className="mt-3 max-w-[460px] text-[19px] font-[500] leading-[1.3] tracking-[-0.01em]"><span className="text-[var(--ink)]">{claim}</span> <span className="text-[var(--soft)]">{rest}</span></h3>
       </div>
       <div className="relative mt-6 flex-1" role="img" aria-label={alt}><div aria-hidden className="contents">{children}</div></div>
     </motion.article>

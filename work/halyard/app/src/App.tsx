@@ -9,6 +9,7 @@ import { STAGGER } from './motion'
 import Field, { type FieldPhase } from './Field'
 import Product from './Product'
 import Bento from './Bento'
+import { Faq, Footer, HowItWorks } from './Sections'
 
 const T = { nav: 0.08, label: 0.22, h1: 0.3, field: 0.45, product: 1.05 }
 const T_SUB = T.h1 + 5 * STAGGER + 0.05
@@ -100,8 +101,10 @@ export default function App() {
           <Stage at={T.product}><Product at={T.product + 0.2} /></Stage>
         </section>
         <div className="relative z-10 border-b border-[var(--rule)]" style={{ marginLeft: X0, width: X1 - X0 }}><Bento /></div>
+        <div className="relative z-10 border-b border-[var(--rule)]" style={{ marginLeft: X0, width: X1 - X0 }}><HowItWorks /></div>
+        <div className="relative z-10 border-b border-[var(--rule)]" style={{ marginLeft: X0, width: X1 - X0 }}><Faq /></div>
         </main>
-        <div className="h-24" />
+        <div className="relative z-10" style={{ marginLeft: X0, width: X1 - X0 }}><Footer Mark={Mark} /></div>
       </div>
     </MotionConfig>
   )
