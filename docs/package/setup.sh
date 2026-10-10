@@ -12,6 +12,8 @@ node -e 'const [a,b]=process.versions.node.split(".").map(Number); if(a<22||(a==
 
 say "1/4  Engine tools (Playwright + Chromium, axe-core)"
 (cd engine && npm install --no-audit --no-fund && npx playwright install chromium)
+# logo drawing kit (tools/logo_drawkit.cjs): paper.js + offset + opentype, installed without touching package.json
+(cd engine && npm install --no-save --no-audit --no-fund paper@0.12.18 paperjs-offset@2.2.1 opentype.js@2.0.0)
 
 say "2/4  Python venv for the rule index (stdlib only; ingest deps are optional)"
 python3 -m venv engine/.venv

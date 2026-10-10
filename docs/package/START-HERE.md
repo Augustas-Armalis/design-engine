@@ -58,6 +58,13 @@ Reel also has a web UI: `cd reel && corepack pnpm dev`, then open http://localho
 
 To preview any past build: `cd engine/work/<name>/app && npm install && npm run build && npx vite preview`.
 
+## 3b. New in this package (2026-10-10)
+
+- **Five deep studies** in `engine/knowledge/web/`: `logo-drawing.md` (how marks are drawn), `product-ui-deep.md` (premium app UI in numbers, the 11-point template audit), `bento.md` (layouts by claim count, 28 tile visuals), `section-anatomy.md` + `footers.md` (every marketing section, variants and frequencies), `effects-materials.md` (smooth corners, measured shadow tiers, textures).
+- **Code you can drop in:** `system/effects/squircle.ts`, `shadows.css`, `textures.css`; `system/product-ui/tokens.json`; `system/sections/*.json`.
+- **Logo tools:** `tools/logo_drawkit.cjs`, `tools/logo_curves.mjs`, `tools/logo_measure.mjs`, `tools/logo.mjs present`.
+- **Reference build:** `work/halyard/` (dark, Marcel Kargul grid + Rico product window, full landing page, drawn logo in `work/halyard/brand/`).
+
 ## 4. What is inside `engine/`
 
 | Path | What |
@@ -79,7 +86,7 @@ To preview any past build: `cd engine/work/<name>/app && npm install && npm run 
 
 - The bar is the work they ship and love (Kaching, Capto, Kestrel), not the rulebook. Passing checks is not quality.
 - Never invent proof: no fake customers, logos, testimonials or results presented as real. Sample data is labelled.
-- Real icon sets only (Phosphor, Lucide); never hand-drawn icons or logos.
+- Real icon sets only (Phosphor, Lucide) for icons. Logos are never freehand and never an icon glyph: draw them with the logo method (`system/logo/drawing-method.md`: concepts, a 30+ sketch sweep, 3-4 routes, one drawn contour, `node tools/logo.mjs present`), or use supplied artwork.
 - Range is mandatory: no two builds in a row share a skeleton, button grammar, nav or type voice.
 - Product UI must feel alive: it builds in on a stagger, numbers roll digit by digit, something real happens.
 - Nothing gets published or sent anywhere from the engine.
