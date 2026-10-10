@@ -23,7 +23,7 @@ function useClock(active: boolean, still = 6) {
   return t
 }
 
-function Cell({ fig, claim, rest, children, className = '', i, shown }: { fig: string; claim: string; rest: string; children: ReactNode; className?: string; i: number; shown: boolean }) {
+function Cell({ fig, claim, rest, alt, children, className = '', i, shown }: { fig: string; claim: string; rest: string; alt: string; children: ReactNode; className?: string; i: number; shown: boolean }) {
   const reduce = useReducedMotion()
   return (
     <motion.article className={`group relative flex flex-col overflow-hidden ${className}`} initial={reduce ? false : { opacity: 0.01, y: 16 }} animate={shown ? { opacity: 1, y: 0 } : undefined} transition={{ delay: i * 0.08, duration: 0.8, ease }}>
@@ -31,7 +31,7 @@ function Cell({ fig, claim, rest, children, className = '', i, shown }: { fig: s
         <div className="mono text-[11px] tracking-[0.04em] text-[var(--sub)]">FIG {fig}</div>
         <h3 className="mt-3 max-w-[460px] text-[19px] font-[500] leading-[26px] tracking-[-0.01em]"><span className="text-[var(--ink)]">{claim}</span> <span className="text-[var(--soft)]">{rest}</span></h3>
       </div>
-      <div className="relative mt-6 flex-1">{children}</div>
+      <div className="relative mt-6 flex-1" role="img" aria-label={alt}><div aria-hidden className="contents">{children}</div></div>
     </motion.article>
   )
 }
@@ -185,13 +185,13 @@ export default function Bento() {
         </div>
       </div>
       <div className="grid grid-cols-2 border-b border-[var(--rule)]">
-        <Cell i={0} shown={shown} fig="03.1" claim="Reads every signal" rest="before it pages anyone." className="h-[372px] border-r border-[var(--rule)]"><Signals t={t} /></Cell>
-        <Cell i={1} shown={shown} fig="03.2" claim="Asks before it touches production," rest="every time you tell it to." className="h-[372px]"><Policy t={t} /></Cell>
+        <Cell i={0} shown={shown} fig="03.1" alt="Sample: metrics, logs, traces and deploys stream in; Halyard reports the cause, an N+1 query shipped in deploy 4821" claim="Reads every signal" rest="before it pages anyone." className="h-[372px] border-r border-[var(--rule)]"><Signals t={t} /></Cell>
+        <Cell i={1} shown={shown} fig="03.2" alt="Sample policy: restart pods and scale replicas run automatically, rolling back a deploy asks first, migrations never run; a rollback is approved by Maya" claim="Asks before it touches production," rest="every time you tell it to." className="h-[372px]"><Policy t={t} /></Cell>
       </div>
       <div className="grid grid-cols-3">
-        <Cell i={2} shown={shown} fig="03.3" claim="Pages the right person," rest="once." className="h-[330px] border-r border-[var(--rule)]"><Rotation t={t} /></Cell>
-        <Cell i={3} shown={shown} fig="03.4" claim="Writes the postmortem" rest="while it is still fresh." className="h-[330px] border-r border-[var(--rule)]"><Postmortem t={t} /></Cell>
-        <Cell i={4} shown={shown} fig="03.5" claim="Undo anything" rest="for 30 minutes." className="h-[330px]"><Undo t={t} /></Cell>
+        <Cell i={2} shown={shown} fig="03.3" alt="Sample on-call rotation for one week; Halyard pages only Maya, who is on call today" claim="Pages the right person," rest="once." className="h-[330px] border-r border-[var(--rule)]"><Rotation t={t} /></Cell>
+        <Cell i={3} shown={shown} fig="03.4" alt="Sample postmortem for incident 2291 drafting its own timeline" claim="Writes the postmortem" rest="while it is still fresh." className="h-[330px] border-r border-[var(--rule)]"><Postmortem t={t} /></Cell>
+        <Cell i={4} shown={shown} fig="03.5" alt="Sample rollback with 29 minutes left to undo it" claim="Undo anything" rest="for 30 minutes." className="h-[330px]"><Undo t={t} /></Cell>
       </div>
     </section>
   )
