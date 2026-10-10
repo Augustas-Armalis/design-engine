@@ -1,0 +1,2797 @@
+{
+ "_about": "Bezier anatomy of shipped marks, measured 2026-10-10 with tools/logo_curves.mjs. marks = knowledge/benchmarks/logos/marks/*.svg (32, sources in ../CREDITS.md); svgl = 61 SVGs from github.com/pheralb/svgl static/library (parsed as text, not stored). Metric definitions in the tool header. Mask-based SVGs are measured without their masks (masked holes are not seen), so treat their numbers as the outer silhouette only.",
+ "marks": {
+  "airbnb": {
+   "subpaths": 13,
+   "nodes": 105,
+   "lines": 33,
+   "cubics": 72,
+   "curvedShare": 0.711,
+   "joins": {
+    "corner": 40,
+    "smooth": 63,
+    "kink": 2
+   },
+   "extremaOnNodes": 0.778,
+   "missingExtrema": 0,
+   "tension": {
+    "median": 1.036,
+    "p10": 0.995,
+    "p90": 1.067,
+    "circleLikeShare": 0.359,
+    "drawnShare": 0.641,
+    "squarerShare": 0.421,
+    "flatterShare": 0
+   },
+   "balance": 0.027,
+   "g2": {
+    "medianRatio": 0.977,
+    "curvatureJumps": 12,
+    "smoothCurveJoins": 63
+   },
+   "inflections": 4
+  },
+  "airtable": {
+   "subpaths": 3,
+   "nodes": 27,
+   "lines": 13,
+   "cubics": 14,
+   "curvedShare": 0.14,
+   "joins": {
+    "corner": 5,
+    "smooth": 21,
+    "kink": 0
+   },
+   "extremaOnNodes": 0.333,
+   "missingExtrema": 6,
+   "tension": {
+    "median": 1,
+    "p10": 1,
+    "p90": 1,
+    "circleLikeShare": 1,
+    "drawnShare": 0,
+    "squarerShare": 0,
+    "flatterShare": 0
+   },
+   "balance": 0,
+   "g2": {
+    "medianRatio": 0,
+    "curvatureJumps": 17,
+    "smoothCurveJoins": 21
+   },
+   "inflections": 0
+  },
+  "apple": {
+   "subpaths": 2,
+   "nodes": 19,
+   "lines": 0,
+   "cubics": 19,
+   "curvedShare": 1,
+   "joins": {
+    "corner": 4,
+    "smooth": 15,
+    "kink": 0
+   },
+   "extremaOnNodes": 0.733,
+   "missingExtrema": 0,
+   "tension": {
+    "median": 0.953,
+    "p10": 0.813,
+    "p90": 1.175,
+    "circleLikeShare": 0,
+    "drawnShare": 1,
+    "squarerShare": 0.308,
+    "flatterShare": 0.546
+   },
+   "balance": 0.525,
+   "g2": {
+    "medianRatio": 0.705,
+    "curvatureJumps": 4,
+    "smoothCurveJoins": 15
+   },
+   "inflections": 5
+  },
+  "arc": {
+   "subpaths": 12,
+   "nodes": 103,
+   "lines": 42,
+   "cubics": 61,
+   "curvedShare": 0.688,
+   "joins": {
+    "corner": 35,
+    "smooth": 65,
+    "kink": 3
+   },
+   "extremaOnNodes": 0.246,
+   "missingExtrema": 15,
+   "tension": {
+    "median": 1,
+    "p10": 0.996,
+    "p90": 1,
+    "circleLikeShare": 0.847,
+    "drawnShare": 0.153,
+    "squarerShare": 0,
+    "flatterShare": 0.077
+   },
+   "balance": 0,
+   "g2": {
+    "medianRatio": 0.836,
+    "curvatureJumps": 28,
+    "smoothCurveJoins": 57
+   },
+   "inflections": 0
+  },
+  "attio": {
+   "subpaths": 4,
+   "nodes": 66,
+   "lines": 33,
+   "cubics": 33,
+   "curvedShare": 0.154,
+   "joins": {
+    "corner": 11,
+    "smooth": 46,
+    "kink": 9
+   },
+   "extremaOnNodes": 0.317,
+   "missingExtrema": 5,
+   "tension": {
+    "median": 0.997,
+    "p10": 0.963,
+    "p90": 1.011,
+    "circleLikeShare": 0.902,
+    "drawnShare": 0.098,
+    "squarerShare": 0.002,
+    "flatterShare": 0.022
+   },
+   "balance": 0.029,
+   "g2": {
+    "medianRatio": 0,
+    "curvatureJumps": 33,
+    "smoothCurveJoins": 41
+   },
+   "inflections": 2
+  },
+  "chase": {
+   "subpaths": 4,
+   "nodes": 20,
+   "lines": 16,
+   "cubics": 4,
+   "curvedShare": 0.033,
+   "joins": {
+    "corner": 12,
+    "smooth": 8,
+    "kink": 0
+   },
+   "extremaOnNodes": 1,
+   "missingExtrema": 0,
+   "tension": {
+    "median": 1.001,
+    "p10": 0.995,
+    "p90": 1.007,
+    "circleLikeShare": 1,
+    "drawnShare": 0,
+    "squarerShare": 0,
+    "flatterShare": 0
+   },
+   "balance": 0.006,
+   "g2": {
+    "medianRatio": 0,
+    "curvatureJumps": 8,
+    "smoothCurveJoins": 8
+   },
+   "inflections": 0
+  },
+  "claude": {
+   "subpaths": 1,
+   "nodes": 158,
+   "lines": 157,
+   "cubics": 1,
+   "curvedShare": 0.003,
+   "joins": {
+    "corner": 89,
+    "smooth": 28,
+    "kink": 41
+   },
+   "extremaOnNodes": null,
+   "missingExtrema": 0,
+   "tension": {
+    "median": 1.018,
+    "p10": 1.018,
+    "p90": 1.018,
+    "circleLikeShare": 0,
+    "drawnShare": 1,
+    "squarerShare": 0,
+    "flatterShare": 0
+   },
+   "balance": 0.223,
+   "g2": {
+    "medianRatio": null,
+    "curvatureJumps": 0,
+    "smoothCurveJoins": 0
+   },
+   "inflections": 0
+  },
+  "clerk": {
+   "subpaths": 6,
+   "nodes": 52,
+   "lines": 8,
+   "cubics": 44,
+   "curvedShare": 0.869,
+   "joins": {
+    "corner": 0,
+    "smooth": 52,
+    "kink": 0
+   },
+   "extremaOnNodes": 0.385,
+   "missingExtrema": 16,
+   "tension": {
+    "median": 1.003,
+    "p10": 0.999,
+    "p90": 1.004,
+    "circleLikeShare": 1,
+    "drawnShare": 0,
+    "squarerShare": 0,
+    "flatterShare": 0
+   },
+   "balance": 0.059,
+   "g2": {
+    "medianRatio": 0.13,
+    "curvatureJumps": 32,
+    "smoothCurveJoins": 52
+   },
+   "inflections": 0
+  },
+  "cohere": {
+   "subpaths": 3,
+   "nodes": 21,
+   "lines": 7,
+   "cubics": 14,
+   "curvedShare": 0.844,
+   "joins": {
+    "corner": 0,
+    "smooth": 21,
+    "kink": 0
+   },
+   "extremaOnNodes": 0.81,
+   "missingExtrema": 1,
+   "tension": {
+    "median": 1,
+    "p10": 0.998,
+    "p90": 1.106,
+    "circleLikeShare": 0.713,
+    "drawnShare": 0.287,
+    "squarerShare": 0.252,
+    "flatterShare": 0
+   },
+   "balance": 0,
+   "g2": {
+    "medianRatio": 0,
+    "curvatureJumps": 16,
+    "smoothCurveJoins": 21
+   },
+   "inflections": 1
+  },
+  "deutschebank": {
+   "subpaths": 3,
+   "nodes": 12,
+   "lines": 12,
+   "cubics": 0,
+   "curvedShare": 0,
+   "joins": {
+    "corner": 12,
+    "smooth": 0,
+    "kink": 0
+   },
+   "extremaOnNodes": null,
+   "missingExtrema": 0,
+   "tension": {
+    "median": null,
+    "p10": null,
+    "p90": null,
+    "circleLikeShare": null,
+    "drawnShare": null,
+    "squarerShare": null,
+    "flatterShare": null
+   },
+   "balance": null,
+   "g2": {
+    "medianRatio": null,
+    "curvatureJumps": 0,
+    "smoothCurveJoins": 0
+   },
+   "inflections": 0
+  },
+  "dropbox": {
+   "subpaths": 4,
+   "nodes": 20,
+   "lines": 20,
+   "cubics": 0,
+   "curvedShare": 0,
+   "joins": {
+    "corner": 20,
+    "smooth": 0,
+    "kink": 0
+   },
+   "extremaOnNodes": null,
+   "missingExtrema": 0,
+   "tension": {
+    "median": null,
+    "p10": null,
+    "p90": null,
+    "circleLikeShare": null,
+    "drawnShare": null,
+    "squarerShare": null,
+    "flatterShare": null
+   },
+   "balance": null,
+   "g2": {
+    "medianRatio": null,
+    "curvatureJumps": 0,
+    "smoothCurveJoins": 0
+   },
+   "inflections": 0
+  },
+  "figma": {
+   "subpaths": 5,
+   "nodes": 27,
+   "lines": 14,
+   "cubics": 13,
+   "curvedShare": 0.581,
+   "joins": {
+    "corner": 7,
+    "smooth": 17,
+    "kink": 0
+   },
+   "extremaOnNodes": 1,
+   "missingExtrema": 0,
+   "tension": {
+    "median": 1,
+    "p10": 1,
+    "p90": 1,
+    "circleLikeShare": 1,
+    "drawnShare": 0,
+    "squarerShare": 0,
+    "flatterShare": 0
+   },
+   "balance": 0,
+   "g2": {
+    "medianRatio": 0,
+    "curvatureJumps": 14,
+    "smoothCurveJoins": 17
+   },
+   "inflections": 0
+  },
+  "framer": {
+   "subpaths": 2,
+   "nodes": 10,
+   "lines": 10,
+   "cubics": 0,
+   "curvedShare": 0,
+   "joins": {
+    "corner": 10,
+    "smooth": 0,
+    "kink": 0
+   },
+   "extremaOnNodes": null,
+   "missingExtrema": 0,
+   "tension": {
+    "median": null,
+    "p10": null,
+    "p90": null,
+    "circleLikeShare": null,
+    "drawnShare": null,
+    "squarerShare": null,
+    "flatterShare": null
+   },
+   "balance": null,
+   "g2": {
+    "medianRatio": null,
+    "curvatureJumps": 0,
+    "smoothCurveJoins": 0
+   },
+   "inflections": 0
+  },
+  "linear": {
+   "subpaths": 4,
+   "nodes": 26,
+   "lines": 6,
+   "cubics": 20,
+   "curvedShare": 0.354,
+   "joins": {
+    "corner": 0,
+    "smooth": 24,
+    "kink": 0
+   },
+   "extremaOnNodes": 0.083,
+   "missingExtrema": 14,
+   "tension": {
+    "median": 1,
+    "p10": 1,
+    "p90": 1.042,
+    "circleLikeShare": 0.972,
+    "drawnShare": 0.028,
+    "squarerShare": 0.028,
+    "flatterShare": 0
+   },
+   "balance": 0.006,
+   "g2": {
+    "medianRatio": 0.014,
+    "curvatureJumps": 22,
+    "smoothCurveJoins": 24
+   },
+   "inflections": 0
+  },
+  "loom": {
+   "subpaths": 3,
+   "nodes": 49,
+   "lines": 41,
+   "cubics": 8,
+   "curvedShare": 0.237,
+   "joins": {
+    "corner": 37,
+    "smooth": 12,
+    "kink": 0
+   },
+   "extremaOnNodes": 1,
+   "missingExtrema": 0,
+   "tension": {
+    "median": 1,
+    "p10": 1,
+    "p90": 1,
+    "circleLikeShare": 1,
+    "drawnShare": 0,
+    "squarerShare": 0,
+    "flatterShare": 0
+   },
+   "balance": 0,
+   "g2": {
+    "medianRatio": 0,
+    "curvatureJumps": 8,
+    "smoothCurveJoins": 12
+   },
+   "inflections": 0
+  },
+  "mastercard": {
+   "subpaths": 3,
+   "nodes": 14,
+   "lines": 2,
+   "cubics": 12,
+   "curvedShare": 0.999,
+   "joins": {
+    "corner": 1,
+    "smooth": 12,
+    "kink": 0
+   },
+   "extremaOnNodes": 1,
+   "missingExtrema": 0,
+   "tension": {
+    "median": 1,
+    "p10": 1,
+    "p90": 1,
+    "circleLikeShare": 1,
+    "drawnShare": 0,
+    "squarerShare": 0,
+    "flatterShare": 0
+   },
+   "balance": 0,
+   "g2": {
+    "medianRatio": 1,
+    "curvatureJumps": 4,
+    "smoothCurveJoins": 12
+   },
+   "inflections": 0
+  },
+  "mercury": {
+   "subpaths": 18,
+   "nodes": 205,
+   "lines": 39,
+   "cubics": 166,
+   "curvedShare": 0.992,
+   "joins": {
+    "corner": 60,
+    "smooth": 112,
+    "kink": 33
+   },
+   "extremaOnNodes": 0.68,
+   "missingExtrema": 0,
+   "tension": {
+    "median": 1.003,
+    "p10": 0.994,
+    "p90": 1.052,
+    "circleLikeShare": 0.831,
+    "drawnShare": 0.169,
+    "squarerShare": 0.03,
+    "flatterShare": 0
+   },
+   "balance": 0.05,
+   "g2": {
+    "medianRatio": 0.789,
+    "curvatureJumps": 40,
+    "smoothCurveJoins": 97
+   },
+   "inflections": 10
+  },
+  "mistral": {
+   "subpaths": 10,
+   "nodes": 40,
+   "lines": 40,
+   "cubics": 0,
+   "curvedShare": 0,
+   "joins": {
+    "corner": 40,
+    "smooth": 0,
+    "kink": 0
+   },
+   "extremaOnNodes": null,
+   "missingExtrema": 0,
+   "tension": {
+    "median": null,
+    "p10": null,
+    "p90": null,
+    "circleLikeShare": null,
+    "drawnShare": null,
+    "squarerShare": null,
+    "flatterShare": null
+   },
+   "balance": null,
+   "g2": {
+    "medianRatio": null,
+    "curvatureJumps": 0,
+    "smoothCurveJoins": 0
+   },
+   "inflections": 0
+  },
+  "mitsubishi": {
+   "subpaths": 3,
+   "nodes": 12,
+   "lines": 12,
+   "cubics": 0,
+   "curvedShare": 0,
+   "joins": {
+    "corner": 12,
+    "smooth": 0,
+    "kink": 0
+   },
+   "extremaOnNodes": null,
+   "missingExtrema": 0,
+   "tension": {
+    "median": null,
+    "p10": null,
+    "p90": null,
+    "circleLikeShare": null,
+    "drawnShare": null,
+    "squarerShare": null,
+    "flatterShare": null
+   },
+   "balance": null,
+   "g2": {
+    "medianRatio": null,
+    "curvatureJumps": 0,
+    "smoothCurveJoins": 0
+   },
+   "inflections": 0
+  },
+  "nike": {
+   "subpaths": 1,
+   "nodes": 9,
+   "lines": 2,
+   "cubics": 7,
+   "curvedShare": 0.386,
+   "joins": {
+    "corner": 2,
+    "smooth": 7,
+    "kink": 0
+   },
+   "extremaOnNodes": 0.286,
+   "missingExtrema": 2,
+   "tension": {
+    "median": 1.018,
+    "p10": 0.963,
+    "p90": 1.09,
+    "circleLikeShare": 0.51,
+    "drawnShare": 0.49,
+    "squarerShare": 0.278,
+    "flatterShare": 0
+   },
+   "balance": 0.017,
+   "g2": {
+    "medianRatio": 0.711,
+    "curvatureJumps": 2,
+    "smoothCurveJoins": 7
+   },
+   "inflections": 0
+  },
+  "notion": {
+   "subpaths": 7,
+   "nodes": 98,
+   "lines": 54,
+   "cubics": 44,
+   "curvedShare": 0.171,
+   "joins": {
+    "corner": 14,
+    "smooth": 75,
+    "kink": 9
+   },
+   "extremaOnNodes": 0.313,
+   "missingExtrema": 18,
+   "tension": {
+    "median": 1.148,
+    "p10": 1.023,
+    "p90": 1.383,
+    "circleLikeShare": 0.02,
+    "drawnShare": 0.98,
+    "squarerShare": 0.819,
+    "flatterShare": 0.01
+   },
+   "balance": 0.266,
+   "g2": {
+    "medianRatio": 0,
+    "curvatureJumps": 62,
+    "smoothCurveJoins": 67
+   },
+   "inflections": 3
+  },
+  "openai": {
+   "subpaths": 8,
+   "nodes": 100,
+   "lines": 32,
+   "cubics": 68,
+   "curvedShare": 0.518,
+   "joins": {
+    "corner": 25,
+    "smooth": 48,
+    "kink": 24
+   },
+   "extremaOnNodes": 0.313,
+   "missingExtrema": 6,
+   "tension": {
+    "median": 1,
+    "p10": 1,
+    "p90": 1.019,
+    "circleLikeShare": 0.996,
+    "drawnShare": 0.004,
+    "squarerShare": 0.004,
+    "flatterShare": 0
+   },
+   "balance": 0,
+   "g2": {
+    "medianRatio": 0.908,
+    "curvatureJumps": 14,
+    "smoothCurveJoins": 48
+   },
+   "inflections": 0
+  },
+  "perplexity": {
+   "subpaths": 0,
+   "nodes": 0,
+   "lines": 0,
+   "cubics": 0,
+   "curvedShare": 0,
+   "joins": {
+    "corner": 0,
+    "smooth": 0,
+    "kink": 0
+   },
+   "extremaOnNodes": null,
+   "missingExtrema": 0,
+   "tension": {
+    "median": null,
+    "p10": null,
+    "p90": null,
+    "circleLikeShare": null,
+    "drawnShare": null,
+    "squarerShare": null,
+    "flatterShare": null
+   },
+   "balance": null,
+   "g2": {
+    "medianRatio": null,
+    "curvatureJumps": 0,
+    "smoothCurveJoins": 0
+   },
+   "inflections": 0
+  },
+  "pinterest": {
+   "subpaths": 2,
+   "nodes": 30,
+   "lines": 3,
+   "cubics": 27,
+   "curvedShare": 0.962,
+   "joins": {
+    "corner": 5,
+    "smooth": 25,
+    "kink": 0
+   },
+   "extremaOnNodes": 0.84,
+   "missingExtrema": 1,
+   "tension": {
+    "median": 1.01,
+    "p10": 0.993,
+    "p90": 1.092,
+    "circleLikeShare": 0.714,
+    "drawnShare": 0.286,
+    "squarerShare": 0.162,
+    "flatterShare": 0
+   },
+   "balance": 0.048,
+   "g2": {
+    "medianRatio": 0.935,
+    "curvatureJumps": 5,
+    "smoothCurveJoins": 25
+   },
+   "inflections": 0
+  },
+  "ramp": {
+   "subpaths": 8,
+   "nodes": 80,
+   "lines": 43,
+   "cubics": 37,
+   "curvedShare": 0.568,
+   "joins": {
+    "corner": 50,
+    "smooth": 26,
+    "kink": 0
+   },
+   "extremaOnNodes": 0.846,
+   "missingExtrema": 0,
+   "tension": {
+    "median": 1.108,
+    "p10": 1.062,
+    "p90": 1.22,
+    "circleLikeShare": 0,
+    "drawnShare": 1,
+    "squarerShare": 1,
+    "flatterShare": 0
+   },
+   "balance": 0.053,
+   "g2": {
+    "medianRatio": 0.814,
+    "curvatureJumps": 8,
+    "smoothCurveJoins": 26
+   },
+   "inflections": 1
+  },
+  "raycast": {
+   "subpaths": 7,
+   "nodes": 41,
+   "lines": 41,
+   "cubics": 0,
+   "curvedShare": 0,
+   "joins": {
+    "corner": 41,
+    "smooth": 0,
+    "kink": 0
+   },
+   "extremaOnNodes": null,
+   "missingExtrema": 0,
+   "tension": {
+    "median": null,
+    "p10": null,
+    "p90": null,
+    "circleLikeShare": null,
+    "drawnShare": null,
+    "squarerShare": null,
+    "flatterShare": null
+   },
+   "balance": null,
+   "g2": {
+    "medianRatio": null,
+    "curvatureJumps": 0,
+    "smoothCurveJoins": 0
+   },
+   "inflections": 0
+  },
+  "slack-2013": {
+   "subpaths": 8,
+   "nodes": 40,
+   "lines": 24,
+   "cubics": 16,
+   "curvedShare": 0.201,
+   "joins": {
+    "corner": 12,
+    "smooth": 16,
+    "kink": 4
+   },
+   "extremaOnNodes": 0,
+   "missingExtrema": 16,
+   "tension": {
+    "median": 1,
+    "p10": 0.989,
+    "p90": 1,
+    "circleLikeShare": 1,
+    "drawnShare": 0,
+    "squarerShare": 0,
+    "flatterShare": 0
+   },
+   "balance": 0.007,
+   "g2": {
+    "medianRatio": 0.495,
+    "curvatureJumps": 8,
+    "smoothCurveJoins": 16
+   },
+   "inflections": 0
+  },
+  "slack-2019": {
+   "subpaths": 8,
+   "nodes": 44,
+   "lines": 16,
+   "cubics": 28,
+   "curvedShare": 0.611,
+   "joins": {
+    "corner": 4,
+    "smooth": 40,
+    "kink": 0
+   },
+   "extremaOnNodes": 1,
+   "missingExtrema": 0,
+   "tension": {
+    "median": 1.001,
+    "p10": 1.001,
+    "p90": 1.001,
+    "circleLikeShare": 1,
+    "drawnShare": 0,
+    "squarerShare": 0,
+    "flatterShare": 0
+   },
+   "balance": 0,
+   "g2": {
+    "medianRatio": 0,
+    "curvatureJumps": 24,
+    "smoothCurveJoins": 40
+   },
+   "inflections": 0
+  },
+  "spotify": {
+   "subpaths": 17,
+   "nodes": 186,
+   "lines": 52,
+   "cubics": 134,
+   "curvedShare": 0.707,
+   "joins": {
+    "corner": 23,
+    "smooth": 141,
+    "kink": 5
+   },
+   "extremaOnNodes": 0.567,
+   "missingExtrema": 29,
+   "tension": {
+    "median": 1.018,
+    "p10": 1,
+    "p90": 1.242,
+    "circleLikeShare": 0.558,
+    "drawnShare": 0.442,
+    "squarerShare": 0.368,
+    "flatterShare": 0.059
+   },
+   "balance": 0,
+   "g2": {
+    "medianRatio": 0.067,
+    "curvatureJumps": 77,
+    "smoothCurveJoins": 141
+   },
+   "inflections": 0
+  },
+  "supabase": {
+   "subpaths": 3,
+   "nodes": 15,
+   "lines": 9,
+   "cubics": 6,
+   "curvedShare": 0.158,
+   "joins": {
+    "corner": 3,
+    "smooth": 12,
+    "kink": 0
+   },
+   "extremaOnNodes": 0.5,
+   "missingExtrema": 6,
+   "tension": {
+    "median": 1,
+    "p10": 1,
+    "p90": 1,
+    "circleLikeShare": 1,
+    "drawnShare": 0,
+    "squarerShare": 0,
+    "flatterShare": 0
+   },
+   "balance": 0,
+   "g2": {
+    "medianRatio": 0,
+    "curvatureJumps": 12,
+    "smoothCurveJoins": 12
+   },
+   "inflections": 0
+  },
+  "twitter": {
+   "subpaths": 1,
+   "nodes": 22,
+   "lines": 1,
+   "cubics": 21,
+   "curvedShare": 1,
+   "joins": {
+    "corner": 14,
+    "smooth": 8,
+    "kink": 0
+   },
+   "extremaOnNodes": 1,
+   "missingExtrema": 0,
+   "tension": {
+    "median": 1.002,
+    "p10": 0.998,
+    "p90": 1.003,
+    "circleLikeShare": 0.781,
+    "drawnShare": 0.219,
+    "squarerShare": 0,
+    "flatterShare": 0
+   },
+   "balance": 0.047,
+   "g2": {
+    "medianRatio": 0.975,
+    "curvatureJumps": 1,
+    "smoothCurveJoins": 8
+   },
+   "inflections": 0
+  },
+  "vercel": {
+   "subpaths": 1,
+   "nodes": 3,
+   "lines": 3,
+   "cubics": 0,
+   "curvedShare": 0,
+   "joins": {
+    "corner": 3,
+    "smooth": 0,
+    "kink": 0
+   },
+   "extremaOnNodes": null,
+   "missingExtrema": 0,
+   "tension": {
+    "median": null,
+    "p10": null,
+    "p90": null,
+    "circleLikeShare": null,
+    "drawnShare": null,
+    "squarerShare": null,
+    "flatterShare": null
+   },
+   "balance": null,
+   "g2": {
+    "medianRatio": null,
+    "curvatureJumps": 0,
+    "smoothCurveJoins": 0
+   },
+   "inflections": 0
+  }
+ },
+ "svgl": {
+  "airbnb": {
+   "subpaths": 3,
+   "nodes": 70,
+   "lines": 8,
+   "cubics": 62,
+   "curvedShare": 0.996,
+   "joins": {
+    "corner": 8,
+    "smooth": 42,
+    "kink": 20
+   },
+   "extremaOnNodes": 0.143,
+   "missingExtrema": 10,
+   "tension": {
+    "median": 1.01,
+    "p10": 0.995,
+    "p90": 1.036,
+    "circleLikeShare": 0.786,
+    "drawnShare": 0.214,
+    "squarerShare": 0.038,
+    "flatterShare": 0
+   },
+   "balance": 0.046,
+   "g2": {
+    "medianRatio": 0.817,
+    "curvatureJumps": 14,
+    "smoothCurveJoins": 42
+   },
+   "inflections": 12
+  },
+  "anthropic_black": {
+   "subpaths": 3,
+   "nodes": 17,
+   "lines": 17,
+   "cubics": 0,
+   "curvedShare": 0,
+   "joins": {
+    "corner": 17,
+    "smooth": 0,
+    "kink": 0
+   },
+   "extremaOnNodes": null,
+   "missingExtrema": 0,
+   "tension": {
+    "median": null,
+    "p10": null,
+    "p90": null,
+    "circleLikeShare": null,
+    "drawnShare": null,
+    "squarerShare": null,
+    "flatterShare": null
+   },
+   "balance": null,
+   "g2": {
+    "medianRatio": null,
+    "curvatureJumps": 0,
+    "smoothCurveJoins": 0
+   },
+   "inflections": 0
+  },
+  "apple": {
+   "subpaths": 2,
+   "nodes": 19,
+   "lines": 0,
+   "cubics": 19,
+   "curvedShare": 1,
+   "joins": {
+    "corner": 4,
+    "smooth": 15,
+    "kink": 0
+   },
+   "extremaOnNodes": 0.733,
+   "missingExtrema": 0,
+   "tension": {
+    "median": 0.953,
+    "p10": 0.813,
+    "p90": 1.175,
+    "circleLikeShare": 0,
+    "drawnShare": 1,
+    "squarerShare": 0.308,
+    "flatterShare": 0.546
+   },
+   "balance": 0.525,
+   "g2": {
+    "medianRatio": 0.705,
+    "curvatureJumps": 4,
+    "smoothCurveJoins": 15
+   },
+   "inflections": 5
+  },
+  "arc_browser": {
+   "subpaths": 7,
+   "nodes": 88,
+   "lines": 40,
+   "cubics": 48,
+   "curvedShare": 0.659,
+   "joins": {
+    "corner": 26,
+    "smooth": 57,
+    "kink": 1
+   },
+   "extremaOnNodes": 0.17,
+   "missingExtrema": 15,
+   "tension": {
+    "median": 1,
+    "p10": 0.989,
+    "p90": 1.001,
+    "circleLikeShare": 0.913,
+    "drawnShare": 0.087,
+    "squarerShare": 0,
+    "flatterShare": 0.087
+   },
+   "balance": 0.002,
+   "g2": {
+    "medianRatio": 0,
+    "curvatureJumps": 35,
+    "smoothCurveJoins": 53
+   },
+   "inflections": 0
+  },
+  "astro-icon-light": {
+   "subpaths": 2,
+   "nodes": 29,
+   "lines": 8,
+   "cubics": 21,
+   "curvedShare": 0.475,
+   "joins": {
+    "corner": 11,
+    "smooth": 16,
+    "kink": 2
+   },
+   "extremaOnNodes": 0.313,
+   "missingExtrema": 4,
+   "tension": {
+    "median": 1.044,
+    "p10": 1.013,
+    "p90": 1.206,
+    "circleLikeShare": 0.2,
+    "drawnShare": 0.8,
+    "squarerShare": 0.504,
+    "flatterShare": 0.144
+   },
+   "balance": 0.074,
+   "g2": {
+    "medianRatio": 0.47,
+    "curvatureJumps": 8,
+    "smoothCurveJoins": 16
+   },
+   "inflections": 5
+  },
+  "bun": {
+   "subpaths": 21,
+   "nodes": 143,
+   "lines": 14,
+   "cubics": 129,
+   "curvedShare": 0.972,
+   "joins": {
+    "corner": 20,
+    "smooth": 97,
+    "kink": 26
+   },
+   "extremaOnNodes": 0.451,
+   "missingExtrema": 35,
+   "tension": {
+    "median": 1,
+    "p10": 0.999,
+    "p90": 1.052,
+    "circleLikeShare": 0.799,
+    "drawnShare": 0.201,
+    "squarerShare": 0.147,
+    "flatterShare": 0.054
+   },
+   "balance": 0,
+   "g2": {
+    "medianRatio": 0.986,
+    "curvatureJumps": 27,
+    "smoothCurveJoins": 91
+   },
+   "inflections": 16
+  },
+  "claude-ai-icon": {
+   "subpaths": 1,
+   "nodes": 159,
+   "lines": 158,
+   "cubics": 1,
+   "curvedShare": 0.003,
+   "joins": {
+    "corner": 89,
+    "smooth": 26,
+    "kink": 44
+   },
+   "extremaOnNodes": null,
+   "missingExtrema": 0,
+   "tension": {
+    "median": 1.109,
+    "p10": 1.109,
+    "p90": 1.109,
+    "circleLikeShare": 0,
+    "drawnShare": 1,
+    "squarerShare": 1,
+    "flatterShare": 0
+   },
+   "balance": 0.409,
+   "g2": {
+    "medianRatio": null,
+    "curvatureJumps": 0,
+    "smoothCurveJoins": 0
+   },
+   "inflections": 0
+  },
+  "clerk-icon-light": {
+   "subpaths": 3,
+   "nodes": 26,
+   "lines": 4,
+   "cubics": 22,
+   "curvedShare": 0.869,
+   "joins": {
+    "corner": 0,
+    "smooth": 26,
+    "kink": 0
+   },
+   "extremaOnNodes": 0.385,
+   "missingExtrema": 8,
+   "tension": {
+    "median": 1,
+    "p10": 0.999,
+    "p90": 1.005,
+    "circleLikeShare": 1,
+    "drawnShare": 0,
+    "squarerShare": 0,
+    "flatterShare": 0
+   },
+   "balance": 0.029,
+   "g2": {
+    "medianRatio": 0.13,
+    "curvatureJumps": 16,
+    "smoothCurveJoins": 26
+   },
+   "inflections": 0
+  },
+  "convex": {
+   "subpaths": 3,
+   "nodes": 15,
+   "lines": 0,
+   "cubics": 15,
+   "curvedShare": 1,
+   "joins": {
+    "corner": 6,
+    "smooth": 9,
+    "kink": 0
+   },
+   "extremaOnNodes": 0,
+   "missingExtrema": 9,
+   "tension": {
+    "median": 0.988,
+    "p10": 0.96,
+    "p90": 0.999,
+    "circleLikeShare": 0.548,
+    "drawnShare": 0.452,
+    "squarerShare": 0,
+    "flatterShare": 0.262
+   },
+   "balance": 0.021,
+   "g2": {
+    "medianRatio": 0.339,
+    "curvatureJumps": 6,
+    "smoothCurveJoins": 9
+   },
+   "inflections": 0
+  },
+  "cursor_light": {
+   "subpaths": 2,
+   "nodes": 23,
+   "lines": 13,
+   "cubics": 10,
+   "curvedShare": 0.057,
+   "joins": {
+    "corner": 5,
+    "smooth": 18,
+    "kink": 0
+   },
+   "extremaOnNodes": 0.444,
+   "missingExtrema": 5,
+   "tension": {
+    "median": 1,
+    "p10": 0.999,
+    "p90": 1.001,
+    "circleLikeShare": 1,
+    "drawnShare": 0,
+    "squarerShare": 0,
+    "flatterShare": 0
+   },
+   "balance": 0.001,
+   "g2": {
+    "medianRatio": 0,
+    "curvatureJumps": 18,
+    "smoothCurveJoins": 18
+   },
+   "inflections": 0
+  },
+  "deno": {
+   "subpaths": 2,
+   "nodes": 25,
+   "lines": 0,
+   "cubics": 25,
+   "curvedShare": 1,
+   "joins": {
+    "corner": 1,
+    "smooth": 23,
+    "kink": 1
+   },
+   "extremaOnNodes": 0.087,
+   "missingExtrema": 15,
+   "tension": {
+    "median": 1,
+    "p10": 0.896,
+    "p90": 1.093,
+    "circleLikeShare": 0.491,
+    "drawnShare": 0.509,
+    "squarerShare": 0.156,
+    "flatterShare": 0.203
+   },
+   "balance": 0.189,
+   "g2": {
+    "medianRatio": 0.63,
+    "curvatureJumps": 8,
+    "smoothCurveJoins": 23
+   },
+   "inflections": 1
+  },
+  "depot-light": {
+   "subpaths": 4,
+   "nodes": 59,
+   "lines": 27,
+   "cubics": 32,
+   "curvedShare": 0.277,
+   "joins": {
+    "corner": 33,
+    "smooth": 20,
+    "kink": 6
+   },
+   "extremaOnNodes": 0.7,
+   "missingExtrema": 0,
+   "tension": {
+    "median": 1,
+    "p10": 1,
+    "p90": 1.002,
+    "circleLikeShare": 1,
+    "drawnShare": 0,
+    "squarerShare": 0,
+    "flatterShare": 0
+   },
+   "balance": 0.052,
+   "g2": {
+    "medianRatio": 0,
+    "curvatureJumps": 14,
+    "smoothCurveJoins": 20
+   },
+   "inflections": 0
+  },
+  "discord": {
+   "subpaths": 3,
+   "nodes": 25,
+   "lines": 1,
+   "cubics": 24,
+   "curvedShare": 1,
+   "joins": {
+    "corner": 17,
+    "smooth": 8,
+    "kink": 0
+   },
+   "extremaOnNodes": 1,
+   "missingExtrema": 4,
+   "tension": {
+    "median": 1,
+    "p10": 0.995,
+    "p90": 1.021,
+    "circleLikeShare": 0.593,
+    "drawnShare": 0.407,
+    "squarerShare": 0,
+    "flatterShare": 0.026
+   },
+   "balance": 0.008,
+   "g2": {
+    "medianRatio": 0.974,
+    "curvatureJumps": 0,
+    "smoothCurveJoins": 8
+   },
+   "inflections": 0
+  },
+  "dropbox": {
+   "subpaths": 5,
+   "nodes": 25,
+   "lines": 25,
+   "cubics": 0,
+   "curvedShare": 0,
+   "joins": {
+    "corner": 25,
+    "smooth": 0,
+    "kink": 0
+   },
+   "extremaOnNodes": null,
+   "missingExtrema": 0,
+   "tension": {
+    "median": null,
+    "p10": null,
+    "p90": null,
+    "circleLikeShare": null,
+    "drawnShare": null,
+    "squarerShare": null,
+    "flatterShare": null
+   },
+   "balance": null,
+   "g2": {
+    "medianRatio": null,
+    "curvatureJumps": 0,
+    "smoothCurveJoins": 0
+   },
+   "inflections": 0
+  },
+  "dub": {
+   "subpaths": 3,
+   "nodes": 12,
+   "lines": 4,
+   "cubics": 8,
+   "curvedShare": 0.712,
+   "joins": {
+    "corner": 4,
+    "smooth": 8,
+    "kink": 0
+   },
+   "extremaOnNodes": 1,
+   "missingExtrema": 0,
+   "tension": {
+    "median": 1,
+    "p10": 1,
+    "p90": 1,
+    "circleLikeShare": 1,
+    "drawnShare": 0,
+    "squarerShare": 0,
+    "flatterShare": 0
+   },
+   "balance": 0,
+   "g2": {
+    "medianRatio": 1,
+    "curvatureJumps": 0,
+    "smoothCurveJoins": 8
+   },
+   "inflections": 0
+  },
+  "figma": {
+   "subpaths": 5,
+   "nodes": 24,
+   "lines": 11,
+   "cubics": 13,
+   "curvedShare": 0.593,
+   "joins": {
+    "corner": 7,
+    "smooth": 17,
+    "kink": 0
+   },
+   "extremaOnNodes": 1,
+   "missingExtrema": 0,
+   "tension": {
+    "median": 0.999,
+    "p10": 0.999,
+    "p90": 0.999,
+    "circleLikeShare": 1,
+    "drawnShare": 0,
+    "squarerShare": 0,
+    "flatterShare": 0
+   },
+   "balance": 0,
+   "g2": {
+    "medianRatio": 1,
+    "curvatureJumps": 8,
+    "smoothCurveJoins": 17
+   },
+   "inflections": 0
+  },
+  "firefox": {
+   "subpaths": 15,
+   "nodes": 215,
+   "lines": 36,
+   "cubics": 179,
+   "curvedShare": 0.999,
+   "joins": {
+    "corner": 90,
+    "smooth": 89,
+    "kink": 36
+   },
+   "extremaOnNodes": 0.202,
+   "missingExtrema": 51,
+   "tension": {
+    "median": 1,
+    "p10": 0.865,
+    "p90": 1.006,
+    "circleLikeShare": 0.599,
+    "drawnShare": 0.401,
+    "squarerShare": 0.006,
+    "flatterShare": 0.179
+   },
+   "balance": 0,
+   "g2": {
+    "medianRatio": 0.424,
+    "curvatureJumps": 57,
+    "smoothCurveJoins": 89
+   },
+   "inflections": 35
+  },
+  "framer": {
+   "subpaths": 2,
+   "nodes": 10,
+   "lines": 10,
+   "cubics": 0,
+   "curvedShare": 0,
+   "joins": {
+    "corner": 10,
+    "smooth": 0,
+    "kink": 0
+   },
+   "extremaOnNodes": null,
+   "missingExtrema": 0,
+   "tension": {
+    "median": null,
+    "p10": null,
+    "p90": null,
+    "circleLikeShare": null,
+    "drawnShare": null,
+    "squarerShare": null,
+    "flatterShare": null
+   },
+   "balance": null,
+   "g2": {
+    "medianRatio": null,
+    "curvatureJumps": 0,
+    "smoothCurveJoins": 0
+   },
+   "inflections": 0
+  },
+  "granola-light": {
+   "subpaths": 1,
+   "nodes": 101,
+   "lines": 0,
+   "cubics": 101,
+   "curvedShare": 1,
+   "joins": {
+    "corner": 8,
+    "smooth": 78,
+    "kink": 14
+   },
+   "extremaOnNodes": 0.59,
+   "missingExtrema": 28,
+   "tension": {
+    "median": 1.119,
+    "p10": 0.862,
+    "p90": 2.34,
+    "circleLikeShare": 0.305,
+    "drawnShare": 0.695,
+    "squarerShare": 0.477,
+    "flatterShare": 0.218
+   },
+   "balance": 0.045,
+   "g2": {
+    "medianRatio": 0.545,
+    "curvatureJumps": 33,
+    "smoothCurveJoins": 78
+   },
+   "inflections": 56
+  },
+  "groq": {
+   "subpaths": 2,
+   "nodes": 43,
+   "lines": 19,
+   "cubics": 24,
+   "curvedShare": 0.382,
+   "joins": {
+    "corner": 9,
+    "smooth": 17,
+    "kink": 17
+   },
+   "extremaOnNodes": 0.75,
+   "missingExtrema": 9,
+   "tension": {
+    "median": 1.051,
+    "p10": 0.986,
+    "p90": 1.169,
+    "circleLikeShare": 0.327,
+    "drawnShare": 0.673,
+    "squarerShare": 0.579,
+    "flatterShare": 0
+   },
+   "balance": 0.105,
+   "g2": {
+    "medianRatio": 0,
+    "curvatureJumps": 11,
+    "smoothCurveJoins": 12
+   },
+   "inflections": 0
+  },
+  "hume-ai": {
+   "subpaths": 7,
+   "nodes": 28,
+   "lines": 0,
+   "cubics": 28,
+   "curvedShare": 1,
+   "joins": {
+    "corner": 0,
+    "smooth": 28,
+    "kink": 0
+   },
+   "extremaOnNodes": 0.143,
+   "missingExtrema": 24,
+   "tension": {
+    "median": 1.02,
+    "p10": 1.014,
+    "p90": 1.024,
+    "circleLikeShare": 1,
+    "drawnShare": 0,
+    "squarerShare": 0,
+    "flatterShare": 0
+   },
+   "balance": 0.018,
+   "g2": {
+    "medianRatio": 0.988,
+    "curvatureJumps": 0,
+    "smoothCurveJoins": 28
+   },
+   "inflections": 0
+  },
+  "inngest-light": {
+   "subpaths": 10,
+   "nodes": 186,
+   "lines": 52,
+   "cubics": 134,
+   "curvedShare": 0.56,
+   "joins": {
+    "corner": 48,
+    "smooth": 135,
+    "kink": 3
+   },
+   "extremaOnNodes": 0.378,
+   "missingExtrema": 1,
+   "tension": {
+    "median": 1.012,
+    "p10": 1.003,
+    "p90": 1.046,
+    "circleLikeShare": 0.788,
+    "drawnShare": 0.212,
+    "squarerShare": 0.212,
+    "flatterShare": 0
+   },
+   "balance": 0,
+   "g2": {
+    "medianRatio": 0.774,
+    "curvatureJumps": 31,
+    "smoothCurveJoins": 135
+   },
+   "inflections": 0
+  },
+  "instagram-icon": {
+   "subpaths": 9,
+   "nodes": 153,
+   "lines": 13,
+   "cubics": 140,
+   "curvedShare": 0.938,
+   "joins": {
+    "corner": 8,
+    "smooth": 145,
+    "kink": 0
+   },
+   "extremaOnNodes": 0.283,
+   "missingExtrema": 0,
+   "tension": {
+    "median": 1.047,
+    "p10": 1,
+    "p90": 1.108,
+    "circleLikeShare": 0.459,
+    "drawnShare": 0.541,
+    "squarerShare": 0.49,
+    "flatterShare": 0
+   },
+   "balance": 0.009,
+   "g2": {
+    "medianRatio": 0.667,
+    "curvatureJumps": 69,
+    "smoothCurveJoins": 145
+   },
+   "inflections": 0
+  },
+  "kimi-icon": {
+   "subpaths": 3,
+   "nodes": 34,
+   "lines": 18,
+   "cubics": 16,
+   "curvedShare": 0.308,
+   "joins": {
+    "corner": 14,
+    "smooth": 19,
+    "kink": 0
+   },
+   "extremaOnNodes": 0.526,
+   "missingExtrema": 5,
+   "tension": {
+    "median": 1.018,
+    "p10": 0.998,
+    "p90": 1.086,
+    "circleLikeShare": 0.865,
+    "drawnShare": 0.135,
+    "squarerShare": 0.118,
+    "flatterShare": 0
+   },
+   "balance": 0.002,
+   "g2": {
+    "medianRatio": 0,
+    "curvatureJumps": 15,
+    "smoothCurveJoins": 19
+   },
+   "inflections": 3
+  },
+  "linear": {
+   "subpaths": 4,
+   "nodes": 30,
+   "lines": 8,
+   "cubics": 22,
+   "curvedShare": 0.349,
+   "joins": {
+    "corner": 4,
+    "smooth": 26,
+    "kink": 0
+   },
+   "extremaOnNodes": 0.077,
+   "missingExtrema": 14,
+   "tension": {
+    "median": 1,
+    "p10": 1,
+    "p90": 1.006,
+    "circleLikeShare": 1,
+    "drawnShare": 0,
+    "squarerShare": 0,
+    "flatterShare": 0
+   },
+   "balance": 0,
+   "g2": {
+    "medianRatio": 0.02,
+    "curvatureJumps": 22,
+    "smoothCurveJoins": 26
+   },
+   "inflections": 0
+  },
+  "lovable": {
+   "subpaths": 4,
+   "nodes": 16,
+   "lines": 0,
+   "cubics": 16,
+   "curvedShare": 1,
+   "joins": {
+    "corner": 0,
+    "smooth": 16,
+    "kink": 0
+   },
+   "extremaOnNodes": 1,
+   "missingExtrema": 0,
+   "tension": {
+    "median": 1,
+    "p10": 1,
+    "p90": 1,
+    "circleLikeShare": 1,
+    "drawnShare": 0,
+    "squarerShare": 0,
+    "flatterShare": 0
+   },
+   "balance": 0,
+   "g2": {
+    "medianRatio": 1,
+    "curvatureJumps": 0,
+    "smoothCurveJoins": 16
+   },
+   "inflections": 0
+  },
+  "manus": {
+   "subpaths": 5,
+   "nodes": 117,
+   "lines": 15,
+   "cubics": 102,
+   "curvedShare": 0.97,
+   "joins": {
+    "corner": 12,
+    "smooth": 96,
+    "kink": 9
+   },
+   "extremaOnNodes": 0.052,
+   "missingExtrema": 39,
+   "tension": {
+    "median": 1.002,
+    "p10": 0.976,
+    "p90": 1.145,
+    "circleLikeShare": 0.168,
+    "drawnShare": 0.832,
+    "squarerShare": 0.312,
+    "flatterShare": 0.093
+   },
+   "balance": 0.414,
+   "g2": {
+    "medianRatio": 0.573,
+    "curvatureJumps": 46,
+    "smoothCurveJoins": 96
+   },
+   "inflections": 1
+  },
+  "mastra-icon-light": {
+   "subpaths": 2,
+   "nodes": 40,
+   "lines": 9,
+   "cubics": 31,
+   "curvedShare": 0.935,
+   "joins": {
+    "corner": 0,
+    "smooth": 34,
+    "kink": 4
+   },
+   "extremaOnNodes": 0.455,
+   "missingExtrema": 6,
+   "tension": {
+    "median": 1,
+    "p10": 1,
+    "p90": 1.207,
+    "circleLikeShare": 0.73,
+    "drawnShare": 0.27,
+    "squarerShare": 0.252,
+    "flatterShare": 0
+   },
+   "balance": 0,
+   "g2": {
+    "medianRatio": 0.268,
+    "curvatureJumps": 17,
+    "smoothCurveJoins": 33
+   },
+   "inflections": 7
+  },
+  "midday": {
+   "subpaths": 13,
+   "nodes": 44,
+   "lines": 28,
+   "cubics": 16,
+   "curvedShare": 0.22,
+   "joins": {
+    "corner": 36,
+    "smooth": 8,
+    "kink": 0
+   },
+   "extremaOnNodes": 1,
+   "missingExtrema": 0,
+   "tension": {
+    "median": 1.001,
+    "p10": 1,
+    "p90": 1.002,
+    "circleLikeShare": 1,
+    "drawnShare": 0,
+    "squarerShare": 0,
+    "flatterShare": 0
+   },
+   "balance": 0.026,
+   "g2": {
+    "medianRatio": 0,
+    "curvatureJumps": 8,
+    "smoothCurveJoins": 8
+   },
+   "inflections": 0
+  },
+  "mistral-ai_logo": {
+   "subpaths": 26,
+   "nodes": 104,
+   "lines": 104,
+   "cubics": 0,
+   "curvedShare": 0,
+   "joins": {
+    "corner": 104,
+    "smooth": 0,
+    "kink": 0
+   },
+   "extremaOnNodes": null,
+   "missingExtrema": 0,
+   "tension": {
+    "median": null,
+    "p10": null,
+    "p90": null,
+    "circleLikeShare": null,
+    "drawnShare": null,
+    "squarerShare": null,
+    "flatterShare": null
+   },
+   "balance": null,
+   "g2": {
+    "medianRatio": null,
+    "curvatureJumps": 0,
+    "smoothCurveJoins": 0
+   },
+   "inflections": 0
+  },
+  "neon": {
+   "subpaths": 2,
+   "nodes": 12,
+   "lines": 12,
+   "cubics": 0,
+   "curvedShare": 0,
+   "joins": {
+    "corner": 12,
+    "smooth": 0,
+    "kink": 0
+   },
+   "extremaOnNodes": null,
+   "missingExtrema": 0,
+   "tension": {
+    "median": null,
+    "p10": null,
+    "p90": null,
+    "circleLikeShare": null,
+    "drawnShare": null,
+    "squarerShare": null,
+    "flatterShare": null
+   },
+   "balance": null,
+   "g2": {
+    "medianRatio": null,
+    "curvatureJumps": 0,
+    "smoothCurveJoins": 0
+   },
+   "inflections": 0
+  },
+  "notion": {
+   "subpaths": 5,
+   "nodes": 64,
+   "lines": 37,
+   "cubics": 27,
+   "curvedShare": 0.148,
+   "joins": {
+    "corner": 15,
+    "smooth": 39,
+    "kink": 10
+   },
+   "extremaOnNodes": 0.351,
+   "missingExtrema": 14,
+   "tension": {
+    "median": 1.233,
+    "p10": 1.009,
+    "p90": 1.391,
+    "circleLikeShare": 0.035,
+    "drawnShare": 0.965,
+    "squarerShare": 0.916,
+    "flatterShare": 0.018
+   },
+   "balance": 0.201,
+   "g2": {
+    "medianRatio": 0,
+    "curvatureJumps": 37,
+    "smoothCurveJoins": 37
+   },
+   "inflections": 1
+  },
+  "openai": {
+   "subpaths": 8,
+   "nodes": 69,
+   "lines": 33,
+   "cubics": 36,
+   "curvedShare": 0.511,
+   "joins": {
+    "corner": 29,
+    "smooth": 40,
+    "kink": 0
+   },
+   "extremaOnNodes": 0.25,
+   "missingExtrema": 20,
+   "tension": {
+    "median": 1.001,
+    "p10": 0.996,
+    "p90": 1.002,
+    "circleLikeShare": 1,
+    "drawnShare": 0,
+    "squarerShare": 0,
+    "flatterShare": 0
+   },
+   "balance": 0.059,
+   "g2": {
+    "medianRatio": 0,
+    "curvatureJumps": 30,
+    "smoothCurveJoins": 40
+   },
+   "inflections": 0
+  },
+  "openrouter_light": {
+   "subpaths": 4,
+   "nodes": 12,
+   "lines": 6,
+   "cubics": 6,
+   "curvedShare": 0.459,
+   "joins": {
+    "corner": 6,
+    "smooth": 4,
+    "kink": 0
+   },
+   "extremaOnNodes": 0,
+   "missingExtrema": 2,
+   "tension": {
+    "median": 1.501,
+    "p10": 0.661,
+    "p90": 1.56,
+    "circleLikeShare": 0,
+    "drawnShare": 1,
+    "squarerShare": 0.761,
+    "flatterShare": 0.239
+   },
+   "balance": 0.641,
+   "g2": {
+    "medianRatio": 0,
+    "curvatureJumps": 4,
+    "smoothCurveJoins": 4
+   },
+   "inflections": 2
+  },
+  "perplexity": {
+   "subpaths": 6,
+   "nodes": 16,
+   "lines": 16,
+   "cubics": 0,
+   "curvedShare": 0,
+   "joins": {
+    "corner": 10,
+    "smooth": 0,
+    "kink": 0
+   },
+   "extremaOnNodes": null,
+   "missingExtrema": 0,
+   "tension": {
+    "median": null,
+    "p10": null,
+    "p90": null,
+    "circleLikeShare": null,
+    "drawnShare": null,
+    "squarerShare": null,
+    "flatterShare": null
+   },
+   "balance": null,
+   "g2": {
+    "medianRatio": null,
+    "curvatureJumps": 0,
+    "smoothCurveJoins": 0
+   },
+   "inflections": 0
+  },
+  "planetscale": {
+   "subpaths": 1,
+   "nodes": 6,
+   "lines": 4,
+   "cubics": 2,
+   "curvedShare": 0.238,
+   "joins": {
+    "corner": 5,
+    "smooth": 0,
+    "kink": 0
+   },
+   "extremaOnNodes": null,
+   "missingExtrema": 0,
+   "tension": {
+    "median": 1.001,
+    "p10": 1.001,
+    "p90": 1.002,
+    "circleLikeShare": 1,
+    "drawnShare": 0,
+    "squarerShare": 0,
+    "flatterShare": 0
+   },
+   "balance": 0.032,
+   "g2": {
+    "medianRatio": null,
+    "curvatureJumps": 0,
+    "smoothCurveJoins": 0
+   },
+   "inflections": 0
+  },
+  "polar-sh_light": {
+   "subpaths": 6,
+   "nodes": 27,
+   "lines": 3,
+   "cubics": 24,
+   "curvedShare": 1,
+   "joins": {
+    "corner": 14,
+    "smooth": 13,
+    "kink": 0
+   },
+   "extremaOnNodes": 0.308,
+   "missingExtrema": 12,
+   "tension": {
+    "median": 0.989,
+    "p10": 0.97,
+    "p90": 1,
+    "circleLikeShare": 0.923,
+    "drawnShare": 0.077,
+    "squarerShare": 0,
+    "flatterShare": 0.077
+   },
+   "balance": 0.056,
+   "g2": {
+    "medianRatio": 1,
+    "curvatureJumps": 0,
+    "smoothCurveJoins": 13
+   },
+   "inflections": 0
+  },
+  "posthog": {
+   "subpaths": 15,
+   "nodes": 113,
+   "lines": 59,
+   "cubics": 54,
+   "curvedShare": 0.153,
+   "joins": {
+    "corner": 20,
+    "smooth": 93,
+    "kink": 0
+   },
+   "extremaOnNodes": 0.473,
+   "missingExtrema": 22,
+   "tension": {
+    "median": 1,
+    "p10": 1,
+    "p90": 1,
+    "circleLikeShare": 1,
+    "drawnShare": 0,
+    "squarerShare": 0,
+    "flatterShare": 0
+   },
+   "balance": 0,
+   "g2": {
+    "medianRatio": 0,
+    "curvatureJumps": 84,
+    "smoothCurveJoins": 93
+   },
+   "inflections": 0
+  },
+  "railway": {
+   "subpaths": 4,
+   "nodes": 22,
+   "lines": 7,
+   "cubics": 15,
+   "curvedShare": 0.703,
+   "joins": {
+    "corner": 11,
+    "smooth": 10,
+    "kink": 0
+   },
+   "extremaOnNodes": 0.3,
+   "missingExtrema": 7,
+   "tension": {
+    "median": 1.078,
+    "p10": 0.86,
+    "p90": 1.533,
+    "circleLikeShare": 0.076,
+    "drawnShare": 0.924,
+    "squarerShare": 0.458,
+    "flatterShare": 0.466
+   },
+   "balance": 0,
+   "g2": {
+    "medianRatio": 0.924,
+    "curvatureJumps": 3,
+    "smoothCurveJoins": 10
+   },
+   "inflections": 2
+  },
+  "raycast": {
+   "subpaths": 7,
+   "nodes": 42,
+   "lines": 42,
+   "cubics": 0,
+   "curvedShare": 0,
+   "joins": {
+    "corner": 42,
+    "smooth": 0,
+    "kink": 0
+   },
+   "extremaOnNodes": null,
+   "missingExtrema": 0,
+   "tension": {
+    "median": null,
+    "p10": null,
+    "p90": null,
+    "circleLikeShare": null,
+    "drawnShare": null,
+    "squarerShare": null,
+    "flatterShare": null
+   },
+   "balance": null,
+   "g2": {
+    "medianRatio": null,
+    "curvatureJumps": 0,
+    "smoothCurveJoins": 0
+   },
+   "inflections": 0
+  },
+  "replit": {
+   "subpaths": 3,
+   "nodes": 20,
+   "lines": 12,
+   "cubics": 8,
+   "curvedShare": 0.183,
+   "joins": {
+    "corner": 4,
+    "smooth": 16,
+    "kink": 0
+   },
+   "extremaOnNodes": 1,
+   "missingExtrema": 0,
+   "tension": {
+    "median": 1,
+    "p10": 1,
+    "p90": 1,
+    "circleLikeShare": 1,
+    "drawnShare": 0,
+    "squarerShare": 0,
+    "flatterShare": 0
+   },
+   "balance": 0,
+   "g2": {
+    "medianRatio": 0,
+    "curvatureJumps": 16,
+    "smoothCurveJoins": 16
+   },
+   "inflections": 0
+  },
+  "resend-icon-black": {
+   "subpaths": 1,
+   "nodes": 14,
+   "lines": 8,
+   "cubics": 6,
+   "curvedShare": 0.34,
+   "joins": {
+    "corner": 5,
+    "smooth": 9,
+    "kink": 0
+   },
+   "extremaOnNodes": 0.667,
+   "missingExtrema": 0,
+   "tension": {
+    "median": 1.066,
+    "p10": 0.997,
+    "p90": 1.084,
+    "circleLikeShare": 0.132,
+    "drawnShare": 0.868,
+    "squarerShare": 0.811,
+    "flatterShare": 0
+   },
+   "balance": 0.098,
+   "g2": {
+    "medianRatio": 0,
+    "curvatureJumps": 6,
+    "smoothCurveJoins": 9
+   },
+   "inflections": 0
+  },
+  "runway": {
+   "subpaths": 9,
+   "nodes": 83,
+   "lines": 10,
+   "cubics": 73,
+   "curvedShare": 0.596,
+   "joins": {
+    "corner": 14,
+    "smooth": 63,
+    "kink": 6
+   },
+   "extremaOnNodes": 0.419,
+   "missingExtrema": 38,
+   "tension": {
+    "median": 1.074,
+    "p10": 0.961,
+    "p90": 1.108,
+    "circleLikeShare": 0.357,
+    "drawnShare": 0.643,
+    "squarerShare": 0.499,
+    "flatterShare": 0.022
+   },
+   "balance": 0.071,
+   "g2": {
+    "medianRatio": 0.045,
+    "curvatureJumps": 40,
+    "smoothCurveJoins": 62
+   },
+   "inflections": 25
+  },
+  "sanity-light": {
+   "subpaths": 1,
+   "nodes": 44,
+   "lines": 44,
+   "cubics": 0,
+   "curvedShare": 0,
+   "joins": {
+    "corner": 44,
+    "smooth": 0,
+    "kink": 0
+   },
+   "extremaOnNodes": null,
+   "missingExtrema": 0,
+   "tension": {
+    "median": null,
+    "p10": null,
+    "p90": null,
+    "circleLikeShare": null,
+    "drawnShare": null,
+    "squarerShare": null,
+    "flatterShare": null
+   },
+   "balance": null,
+   "g2": {
+    "medianRatio": null,
+    "curvatureJumps": 0,
+    "smoothCurveJoins": 0
+   },
+   "inflections": 0
+  },
+  "slack": {
+   "subpaths": 8,
+   "nodes": 46,
+   "lines": 16,
+   "cubics": 30,
+   "curvedShare": 0.6,
+   "joins": {
+    "corner": 5,
+    "smooth": 39,
+    "kink": 0
+   },
+   "extremaOnNodes": 1,
+   "missingExtrema": 2,
+   "tension": {
+    "median": 1,
+    "p10": 1,
+    "p90": 1,
+    "circleLikeShare": 1,
+    "drawnShare": 0,
+    "squarerShare": 0,
+    "flatterShare": 0
+   },
+   "balance": 0,
+   "g2": {
+    "medianRatio": 0,
+    "curvatureJumps": 24,
+    "smoothCurveJoins": 39
+   },
+   "inflections": 0
+  },
+  "spotify": {
+   "subpaths": 4,
+   "nodes": 27,
+   "lines": 4,
+   "cubics": 23,
+   "curvedShare": 1,
+   "joins": {
+    "corner": 7,
+    "smooth": 20,
+    "kink": 0
+   },
+   "extremaOnNodes": 0.15,
+   "missingExtrema": 18,
+   "tension": {
+    "median": 1,
+    "p10": 0.926,
+    "p90": 1.001,
+    "circleLikeShare": 0.671,
+    "drawnShare": 0.329,
+    "squarerShare": 0,
+    "flatterShare": 0.329
+   },
+   "balance": 0.001,
+   "g2": {
+    "medianRatio": 0.101,
+    "curvatureJumps": 11,
+    "smoothCurveJoins": 20
+   },
+   "inflections": 0
+  },
+  "stripe": {
+   "subpaths": 1,
+   "nodes": 4,
+   "lines": 4,
+   "cubics": 0,
+   "curvedShare": 0,
+   "joins": {
+    "corner": 4,
+    "smooth": 0,
+    "kink": 0
+   },
+   "extremaOnNodes": null,
+   "missingExtrema": 0,
+   "tension": {
+    "median": null,
+    "p10": null,
+    "p90": null,
+    "circleLikeShare": null,
+    "drawnShare": null,
+    "squarerShare": null,
+    "flatterShare": null
+   },
+   "balance": null,
+   "g2": {
+    "medianRatio": null,
+    "curvatureJumps": 0,
+    "smoothCurveJoins": 0
+   },
+   "inflections": 0
+  },
+  "suno": {
+   "subpaths": 2,
+   "nodes": 22,
+   "lines": 6,
+   "cubics": 16,
+   "curvedShare": 0.542,
+   "joins": {
+    "corner": 4,
+    "smooth": 17,
+    "kink": 0
+   },
+   "extremaOnNodes": 0.588,
+   "missingExtrema": 0,
+   "tension": {
+    "median": 1.134,
+    "p10": 1,
+    "p90": 1.268,
+    "circleLikeShare": 0.662,
+    "drawnShare": 0.338,
+    "squarerShare": 0.338,
+    "flatterShare": 0
+   },
+   "balance": 0.203,
+   "g2": {
+    "medianRatio": 0.679,
+    "curvatureJumps": 0,
+    "smoothCurveJoins": 17
+   },
+   "inflections": 0
+  },
+  "supabase": {
+   "subpaths": 3,
+   "nodes": 15,
+   "lines": 9,
+   "cubics": 6,
+   "curvedShare": 0.158,
+   "joins": {
+    "corner": 3,
+    "smooth": 12,
+    "kink": 0
+   },
+   "extremaOnNodes": 0.5,
+   "missingExtrema": 6,
+   "tension": {
+    "median": 1,
+    "p10": 1,
+    "p90": 1,
+    "circleLikeShare": 1,
+    "drawnShare": 0,
+    "squarerShare": 0,
+    "flatterShare": 0
+   },
+   "balance": 0,
+   "g2": {
+    "medianRatio": 0,
+    "curvatureJumps": 12,
+    "smoothCurveJoins": 12
+   },
+   "inflections": 0
+  },
+  "tailwindcss": {
+   "subpaths": 2,
+   "nodes": 16,
+   "lines": 0,
+   "cubics": 16,
+   "curvedShare": 1,
+   "joins": {
+    "corner": 4,
+    "smooth": 12,
+    "kink": 0
+   },
+   "extremaOnNodes": 0.333,
+   "missingExtrema": 4,
+   "tension": {
+    "median": 1.139,
+    "p10": 1.1,
+    "p90": 1.167,
+    "circleLikeShare": 0,
+    "drawnShare": 1,
+    "squarerShare": 1,
+    "flatterShare": 0
+   },
+   "balance": 0.322,
+   "g2": {
+    "medianRatio": 0.619,
+    "curvatureJumps": 4,
+    "smoothCurveJoins": 12
+   },
+   "inflections": 0
+  },
+  "tembo": {
+   "subpaths": 3,
+   "nodes": 12,
+   "lines": 6,
+   "cubics": 6,
+   "curvedShare": 0.726,
+   "joins": {
+    "corner": 12,
+    "smooth": 0,
+    "kink": 0
+   },
+   "extremaOnNodes": null,
+   "missingExtrema": 12,
+   "tension": {
+    "median": 1.022,
+    "p10": 1.016,
+    "p90": 1.028,
+    "circleLikeShare": 0.355,
+    "drawnShare": 0.645,
+    "squarerShare": 0,
+    "flatterShare": 0
+   },
+   "balance": 0.155,
+   "g2": {
+    "medianRatio": null,
+    "curvatureJumps": 0,
+    "smoothCurveJoins": 0
+   },
+   "inflections": 0
+  },
+  "threads": {
+   "subpaths": 2,
+   "nodes": 43,
+   "lines": 8,
+   "cubics": 35,
+   "curvedShare": 0.977,
+   "joins": {
+    "corner": 8,
+    "smooth": 35,
+    "kink": 0
+   },
+   "extremaOnNodes": 0.412,
+   "missingExtrema": 5,
+   "tension": {
+    "median": 1.029,
+    "p10": 0.998,
+    "p90": 1.094,
+    "circleLikeShare": 0.383,
+    "drawnShare": 0.617,
+    "squarerShare": 0.53,
+    "flatterShare": 0
+   },
+   "balance": 0,
+   "g2": {
+    "medianRatio": 0.903,
+    "curvatureJumps": 10,
+    "smoothCurveJoins": 34
+   },
+   "inflections": 0
+  },
+  "togetherai_light": {
+   "subpaths": 17,
+   "nodes": 316,
+   "lines": 163,
+   "cubics": 153,
+   "curvedShare": 0.611,
+   "joins": {
+    "corner": 80,
+    "smooth": 152,
+    "kink": 84
+   },
+   "extremaOnNodes": 0.582,
+   "missingExtrema": 47,
+   "tension": {
+    "median": 1.037,
+    "p10": 0.998,
+    "p90": 1.199,
+    "circleLikeShare": 0.167,
+    "drawnShare": 0.833,
+    "squarerShare": 0.37,
+    "flatterShare": 0.068
+   },
+   "balance": 0.161,
+   "g2": {
+    "medianRatio": 0,
+    "curvatureJumps": 66,
+    "smoothCurveJoins": 91
+   },
+   "inflections": 3
+  },
+  "turborepo-icon-light": {
+   "subpaths": 5,
+   "nodes": 26,
+   "lines": 10,
+   "cubics": 16,
+   "curvedShare": 0.905,
+   "joins": {
+    "corner": 13,
+    "smooth": 12,
+    "kink": 1
+   },
+   "extremaOnNodes": 1,
+   "missingExtrema": 0,
+   "tension": {
+    "median": 1,
+    "p10": 0.998,
+    "p90": 1.002,
+    "circleLikeShare": 1,
+    "drawnShare": 0,
+    "squarerShare": 0,
+    "flatterShare": 0
+   },
+   "balance": 0.005,
+   "g2": {
+    "medianRatio": 1,
+    "curvatureJumps": 4,
+    "smoothCurveJoins": 12
+   },
+   "inflections": 0
+  },
+  "twitter": {
+   "subpaths": 1,
+   "nodes": 20,
+   "lines": 0,
+   "cubics": 20,
+   "curvedShare": 1,
+   "joins": {
+    "corner": 12,
+    "smooth": 7,
+    "kink": 0
+   },
+   "extremaOnNodes": 1,
+   "missingExtrema": 1,
+   "tension": {
+    "median": 1.001,
+    "p10": 0.999,
+    "p90": 1.003,
+    "circleLikeShare": 0.781,
+    "drawnShare": 0.219,
+    "squarerShare": 0,
+    "flatterShare": 0
+   },
+   "balance": 0.033,
+   "g2": {
+    "medianRatio": 0.981,
+    "curvatureJumps": 1,
+    "smoothCurveJoins": 7
+   },
+   "inflections": 0
+  },
+  "vercel": {
+   "subpaths": 1,
+   "nodes": 3,
+   "lines": 3,
+   "cubics": 0,
+   "curvedShare": 0,
+   "joins": {
+    "corner": 3,
+    "smooth": 0,
+    "kink": 0
+   },
+   "extremaOnNodes": null,
+   "missingExtrema": 0,
+   "tension": {
+    "median": null,
+    "p10": null,
+    "p90": null,
+    "circleLikeShare": null,
+    "drawnShare": null,
+    "squarerShare": null,
+    "flatterShare": null
+   },
+   "balance": null,
+   "g2": {
+    "medianRatio": null,
+    "curvatureJumps": 0,
+    "smoothCurveJoins": 0
+   },
+   "inflections": 0
+  },
+  "vercel_dark": {
+   "subpaths": 1,
+   "nodes": 3,
+   "lines": 3,
+   "cubics": 0,
+   "curvedShare": 0,
+   "joins": {
+    "corner": 3,
+    "smooth": 0,
+    "kink": 0
+   },
+   "extremaOnNodes": null,
+   "missingExtrema": 0,
+   "tension": {
+    "median": null,
+    "p10": null,
+    "p90": null,
+    "circleLikeShare": null,
+    "drawnShare": null,
+    "squarerShare": null,
+    "flatterShare": null
+   },
+   "balance": null,
+   "g2": {
+    "medianRatio": null,
+    "curvatureJumps": 0,
+    "smoothCurveJoins": 0
+   },
+   "inflections": 0
+  },
+  "warp": {
+   "subpaths": 3,
+   "nodes": 101,
+   "lines": 62,
+   "cubics": 39,
+   "curvedShare": 0.245,
+   "joins": {
+    "corner": 12,
+    "smooth": 81,
+    "kink": 8
+   },
+   "extremaOnNodes": 0.867,
+   "missingExtrema": 6,
+   "tension": {
+    "median": 1.07,
+    "p10": 1.012,
+    "p90": 1.153,
+    "circleLikeShare": 0.094,
+    "drawnShare": 0.906,
+    "squarerShare": 0.906,
+    "flatterShare": 0
+   },
+   "balance": 0.086,
+   "g2": {
+    "medianRatio": 0,
+    "curvatureJumps": 34,
+    "smoothCurveJoins": 45
+   },
+   "inflections": 0
+  },
+  "webflow": {
+   "subpaths": 1,
+   "nodes": 18,
+   "lines": 16,
+   "cubics": 2,
+   "curvedShare": 0.185,
+   "joins": {
+    "corner": 18,
+    "smooth": 0,
+    "kink": 0
+   },
+   "extremaOnNodes": null,
+   "missingExtrema": 0,
+   "tension": {
+    "median": 1.043,
+    "p10": 1.043,
+    "p90": 1.043,
+    "circleLikeShare": 0,
+    "drawnShare": 1,
+    "squarerShare": 1,
+    "flatterShare": 0
+   },
+   "balance": 0.115,
+   "g2": {
+    "medianRatio": null,
+    "curvatureJumps": 0,
+    "smoothCurveJoins": 0
+   },
+   "inflections": 0
+  },
+  "x": {
+   "subpaths": 2,
+   "nodes": 22,
+   "lines": 22,
+   "cubics": 0,
+   "curvedShare": 0,
+   "joins": {
+    "corner": 19,
+    "smooth": 3,
+    "kink": 0
+   },
+   "extremaOnNodes": null,
+   "missingExtrema": 0,
+   "tension": {
+    "median": null,
+    "p10": null,
+    "p90": null,
+    "circleLikeShare": null,
+    "drawnShare": null,
+    "squarerShare": null,
+    "flatterShare": null
+   },
+   "balance": null,
+   "g2": {
+    "medianRatio": null,
+    "curvatureJumps": 0,
+    "smoothCurveJoins": 0
+   },
+   "inflections": 0
+  },
+  "zed-logo": {
+   "subpaths": 1,
+   "nodes": 46,
+   "lines": 36,
+   "cubics": 10,
+   "curvedShare": 0.068,
+   "joins": {
+    "corner": 26,
+    "smooth": 20,
+    "kink": 0
+   },
+   "extremaOnNodes": 0.9,
+   "missingExtrema": 2,
+   "tension": {
+    "median": 1,
+    "p10": 1,
+    "p90": 1,
+    "circleLikeShare": 1,
+    "drawnShare": 0,
+    "squarerShare": 0,
+    "flatterShare": 0
+   },
+   "balance": 0,
+   "g2": {
+    "medianRatio": 0,
+    "curvatureJumps": 20,
+    "smoothCurveJoins": 20
+   },
+   "inflections": 0
+  }
+ }
+}

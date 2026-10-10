@@ -1,0 +1,1166 @@
+{
+ "url": "https://neon.com/",
+ "title": "Neon — Postgres backends for apps and agents",
+ "svgFilters": [],
+ "canvases": [
+  {
+   "el": "canvas",
+   "rect": [
+    385,
+    1977,
+    609,
+    759
+   ],
+   "w": 300,
+   "h": 150
+  },
+  {
+   "el": "canvas",
+   "rect": [
+    -240,
+    5102,
+    1920,
+    1610
+   ],
+   "w": 3840,
+   "h": 3220
+  },
+  {
+   "el": "canvas",
+   "rect": [
+    271,
+    6452,
+    1198,
+    765
+   ],
+   "w": 300,
+   "h": 150
+  },
+  {
+   "el": "canvas",
+   "rect": [
+    384,
+    7666,
+    1056,
+    230
+   ],
+   "w": 300,
+   "h": 150
+  }
+ ],
+ "videos": [
+  {
+   "el": "video.absolute.inset-0",
+   "rect": [
+    -240,
+    36,
+    1920,
+    832
+   ],
+   "src": "https://cdn.neonapi.io/public/pages/home/hero/hero-av1.mp4"
+  },
+  {
+   "el": "video.absolute.inset-0.h-full.w-full",
+   "rect": [
+    32,
+    1348,
+    262,
+    259
+   ],
+   "src": "https://neon.com/videos/pages/home/hero/postgres-database.webm?updated=20260813-3"
+  },
+  {
+   "el": "video.absolute.inset-0.h-full.w-full",
+   "rect": [
+    310,
+    1411,
+    262,
+    196
+   ],
+   "src": "https://neon.com/videos/pages/home/hero/authentication.webm?updated=20260821"
+  },
+  {
+   "el": "video.absolute.inset-0.h-full.w-full",
+   "rect": [
+    589,
+    1474,
+    262,
+    133
+   ],
+   "src": "https://neon.com/videos/pages/home/hero/compute.webm?updated=20260821"
+  },
+  {
+   "el": "video.absolute.inset-0.h-full.w-full",
+   "rect": [
+    867,
+    1305,
+    262,
+    302
+   ],
+   "src": "https://neon.com/videos/pages/home/hero/storage.webm?updated=20260827"
+  },
+  {
+   "el": "video.absolute.inset-0.h-full.w-full",
+   "rect": [
+    1146,
+    1509,
+    262,
+    98
+   ],
+   "src": "https://neon.com/videos/pages/home/hero/ai-gateway.webm?updated=20260814"
+  },
+  {
+   "el": "video.absolute.inset-0.size-full.object-cover",
+   "rect": [
+    0,
+    9901,
+    1440,
+    708
+   ],
+   "src": "https://cdn.neonapi.io/public/images/pages/home/cta/cta-new-av1.mp4?updated=20260918"
+  }
+ ],
+ "counts": {
+  "elements": 858,
+  "shadows": 4,
+  "glass": 0,
+  "blends": 0,
+  "masks": 22,
+  "filters": 1,
+  "gradients": 7,
+  "urlBgs": 0,
+  "cornerShape": 0,
+  "clipPath": 14,
+  "borderImage": 0
+ },
+ "shadows": [
+  {
+   "value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, lab(100 -0.0000298023 0.0000119209 / 0.05) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+   "n": 5,
+   "ex": [
+    {
+     "el": "span.relative.mt-8.block.w-full",
+     "rect": [
+      32,
+      1348,
+      262,
+      259
+     ],
+     "radius": "0px",
+     "bg": "rgb(17, 19, 21)",
+     "border": null
+    },
+    {
+     "el": "span.relative.mt-8.block.w-full",
+     "rect": [
+      310,
+      1411,
+      262,
+      196
+     ],
+     "radius": "0px",
+     "bg": "rgb(17, 19, 21)",
+     "border": null
+    },
+    {
+     "el": "span.relative.mt-8.block.w-full",
+     "rect": [
+      589,
+      1474,
+      262,
+      133
+     ],
+     "radius": "0px",
+     "bg": "rgb(17, 19, 21)",
+     "border": null
+    }
+   ]
+  },
+  {
+   "value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(48, 50, 54) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+   "n": 2,
+   "ex": [
+    {
+     "el": "a.group.relative.flex.h-full",
+     "rect": [
+      634,
+      161,
+      330,
+      112
+     ],
+     "radius": "0px",
+     "bg": "rgb(0, 0, 0)",
+     "border": null
+    },
+    {
+     "el": "a.group.relative.flex.h-full",
+     "rect": [
+      634,
+      289,
+      330,
+      112
+     ],
+     "radius": "0px",
+     "bg": "rgb(0, 0, 0)",
+     "border": null
+    }
+   ]
+  },
+  {
+   "value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.4) 0px 8px 20px 0px",
+   "n": 1,
+   "ex": [
+    {
+     "el": "ul.flex.w-full.flex-col.gap-y-1",
+     "rect": [
+      1201,
+      10767,
+      207,
+      90
+     ],
+     "radius": "0px",
+     "bg": "rgb(10, 10, 11)",
+     "border": "1px solid rgb(48, 50, 54)"
+    }
+   ]
+  },
+  {
+   "value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 14px 20px 0px",
+   "n": 1,
+   "ex": [
+    {
+     "el": "div.fixed.bottom-4.left-4.z-50",
+     "rect": [
+      16,
+      812,
+      503,
+      73
+     ],
+     "radius": "8px",
+     "bg": "rgb(11, 12, 15)",
+     "border": "1px solid rgb(22, 24, 29)"
+    }
+   ]
+  }
+ ],
+ "radii": [
+  {
+   "value": "4px",
+   "n": 59,
+   "ex": [
+    {
+     "el": "button.cursor-pointer.justify-center.text-center.group/main-nav-trigger",
+     "h": 23
+    },
+    {
+     "el": "button.cursor-pointer.justify-center.text-center.group/main-nav-trigger",
+     "h": 23
+    },
+    {
+     "el": "a.cursor-pointer.justify-center.text-center.group/main-nav-trigger",
+     "h": 23
+    }
+   ]
+  },
+  {
+   "value": "3.35544e+07px",
+   "n": 13,
+   "ex": [
+    {
+     "el": "a.inline-flex.cursor-pointer.items-center.justify-center",
+     "h": 36
+    },
+    {
+     "el": "a.inline-flex.cursor-pointer.items-center.justify-center",
+     "h": 36
+    },
+    {
+     "el": "a.inline-flex.cursor-pointer.items-center.justify-center",
+     "h": 44
+    }
+   ]
+  },
+  {
+   "value": "5px",
+   "n": 1,
+   "ex": [
+    {
+     "el": "span.flex.size-6.shrink-0.items-center",
+     "h": 24
+    }
+   ]
+  },
+  {
+   "value": "10px",
+   "n": 1,
+   "ex": [
+    {
+     "el": "div.absolute.bottom-4.left-4.h-24",
+     "h": 83
+    }
+   ]
+  },
+  {
+   "value": "8px",
+   "n": 1,
+   "ex": [
+    {
+     "el": "div.fixed.bottom-4.left-4.z-50",
+     "h": 73
+    }
+   ]
+  }
+ ],
+ "glass": [],
+ "blends": [],
+ "masks": [
+  {
+   "el": "span.pointer-events-none.absolute.inset-px.z-0",
+   "rect": [
+    635,
+    162,
+    328,
+    110
+   ],
+   "radius": "0px",
+   "bg": "rgb(255, 255, 255)",
+   "border": null,
+   "mask": "url(\"https://neon.com/_next/static/immutable/media/noise.20qyfz0pxfv46.svg\")",
+   "composite": "add",
+   "maskSize": "330px 112px",
+   "maskRepeat": "repeat",
+   "opacity": "0.075"
+  },
+  {
+   "el": "span.pointer-events-none.absolute.inset-px.z-0",
+   "rect": [
+    635,
+    290,
+    328,
+    110
+   ],
+   "radius": "0px",
+   "bg": "rgb(255, 255, 255)",
+   "border": null,
+   "mask": "url(\"https://neon.com/_next/static/immutable/media/noise.20qyfz0pxfv46.svg\")",
+   "composite": "add",
+   "maskSize": "330px 112px",
+   "maskRepeat": "repeat",
+   "opacity": "0.075"
+  },
+  {
+   "el": "g",
+   "rect": [
+    107,
+    804,
+    29,
+    29
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "mask": "url(\"#outfront7_inline_svg__b\")",
+   "composite": "add",
+   "maskSize": "auto",
+   "maskRepeat": "repeat",
+   "opacity": "1"
+  },
+  {
+   "el": "g",
+   "rect": [
+    210,
+    809,
+    180,
+    21
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "mask": "url(\"#door-dash_inline_svg__a\")",
+   "composite": "add",
+   "maskSize": "auto",
+   "maskRepeat": "repeat",
+   "opacity": "1"
+  },
+  {
+   "el": "g",
+   "rect": [
+    472,
+    808,
+    100,
+    21
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "mask": "url(\"#bcg_inline_svg__b\")",
+   "composite": "add",
+   "maskSize": "auto",
+   "maskRepeat": "repeat",
+   "opacity": "1"
+  },
+  {
+   "el": "g",
+   "rect": [
+    653,
+    805,
+    28,
+    28
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "mask": "url(\"#pepsi_inline_svg__b\")",
+   "composite": "add",
+   "maskSize": "auto",
+   "maskRepeat": "repeat",
+   "opacity": "1"
+  },
+  {
+   "el": "g",
+   "rect": [
+    761,
+    809,
+    105,
+    21
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "mask": "url(\"#retool_inline_svg__a\")",
+   "composite": "add",
+   "maskSize": "auto",
+   "maskRepeat": "repeat",
+   "opacity": "1"
+  },
+  {
+   "el": "g",
+   "rect": [
+    761,
+    809,
+    105,
+    21
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "mask": "url(\"#retool_inline_svg__b\")",
+   "composite": "add",
+   "maskSize": "auto",
+   "maskRepeat": "repeat",
+   "opacity": "1"
+  },
+  {
+   "el": "g",
+   "rect": [
+    1812,
+    804,
+    29,
+    29
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "mask": "url(\"#outfront7_inline_svg__b\")",
+   "composite": "add",
+   "maskSize": "auto",
+   "maskRepeat": "repeat",
+   "opacity": "1"
+  },
+  {
+   "el": "g",
+   "rect": [
+    1915,
+    809,
+    180,
+    21
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "mask": "url(\"#door-dash_inline_svg__a\")",
+   "composite": "add",
+   "maskSize": "auto",
+   "maskRepeat": "repeat",
+   "opacity": "1"
+  },
+  {
+   "el": "g",
+   "rect": [
+    2177,
+    808,
+    100,
+    21
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "mask": "url(\"#bcg_inline_svg__b\")",
+   "composite": "add",
+   "maskSize": "auto",
+   "maskRepeat": "repeat",
+   "opacity": "1"
+  },
+  {
+   "el": "g",
+   "rect": [
+    2358,
+    805,
+    28,
+    28
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "mask": "url(\"#pepsi_inline_svg__b\")",
+   "composite": "add",
+   "maskSize": "auto",
+   "maskRepeat": "repeat",
+   "opacity": "1"
+  },
+  {
+   "el": "g",
+   "rect": [
+    2466,
+    809,
+    105,
+    21
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "mask": "url(\"#retool_inline_svg__a\")",
+   "composite": "add",
+   "maskSize": "auto",
+   "maskRepeat": "repeat",
+   "opacity": "1"
+  },
+  {
+   "el": "g",
+   "rect": [
+    2466,
+    809,
+    105,
+    21
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "mask": "url(\"#retool_inline_svg__b\")",
+   "composite": "add",
+   "maskSize": "auto",
+   "maskRepeat": "repeat",
+   "opacity": "1"
+  },
+  {
+   "el": "div.absolute.top-[246px].-left-8.flex",
+   "rect": [
+    352,
+    3333,
+    1056,
+    632
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "mask": "url(\"https://neon.com/images/pages/home/scale-your-app/startup-logos-mask.svg\")",
+   "composite": "add",
+   "maskSize": "1612px 1435px",
+   "maskRepeat": "no-repeat",
+   "opacity": "0.5"
+  },
+  {
+   "el": "span.pointer-events-none.absolute.-top-[6.9364%].-left-[7.2682%]",
+   "rect": [
+    981,
+    3304,
+    536,
+    214
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "mask": "url(\"https://neon.com/images/pages/home/scale-your-app/startup-card-noise-mask.png\")",
+   "composite": "add",
+   "maskSize": "74.3017% 80.8411%",
+   "maskRepeat": "no-repeat",
+   "opacity": "1"
+  },
+  {
+   "el": "div.pointer-events-none.absolute.top-0.left-1/2",
+   "rect": [
+    -239,
+    5088,
+    1919,
+    1067
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "mask": "url(\"https://neon.com/images/pages/home/scale-your-app/scale-noise-mask.png\")",
+   "composite": "add",
+   "maskSize": "100% 100%",
+   "maskRepeat": "no-repeat",
+   "opacity": "1"
+  },
+  {
+   "el": "span.discord-icon.mr-2.5.inline-block.size-4",
+   "rect": [
+    1024,
+    10682,
+    16,
+    16
+   ],
+   "radius": "0px",
+   "bg": "rgb(175, 177, 182)",
+   "border": null,
+   "mask": "url(\"https://neon.com/images/footer/discord.svg\")",
+   "composite": "add",
+   "maskSize": "16px 16px",
+   "maskRepeat": "no-repeat",
+   "opacity": "1"
+  },
+  {
+   "el": "span.github-icon.mr-2.5.inline-block.size-4",
+   "rect": [
+    1024,
+    10718,
+    16,
+    16
+   ],
+   "radius": "0px",
+   "bg": "rgb(175, 177, 182)",
+   "border": null,
+   "mask": "url(\"https://neon.com/images/footer/github.svg\")",
+   "composite": "add",
+   "maskSize": "16px 16px",
+   "maskRepeat": "no-repeat",
+   "opacity": "1"
+  },
+  {
+   "el": "span.x-icon.mr-2.5.inline-block.size-4",
+   "rect": [
+    1024,
+    10754,
+    16,
+    16
+   ],
+   "radius": "0px",
+   "bg": "rgb(175, 177, 182)",
+   "border": null,
+   "mask": "url(\"https://neon.com/images/footer/x.svg\")",
+   "composite": "add",
+   "maskSize": "16px 16px",
+   "maskRepeat": "no-repeat",
+   "opacity": "1"
+  },
+  {
+   "el": "span.linkedin-icon.mr-2.5.inline-block.size-4",
+   "rect": [
+    1024,
+    10790,
+    16,
+    16
+   ],
+   "radius": "0px",
+   "bg": "rgb(175, 177, 182)",
+   "border": null,
+   "mask": "url(\"https://neon.com/images/footer/linkedin.svg\")",
+   "composite": "add",
+   "maskSize": "16px 16px",
+   "maskRepeat": "no-repeat",
+   "opacity": "1"
+  },
+  {
+   "el": "span.youtube-icon.mr-2.5.inline-block.size-4",
+   "rect": [
+    1024,
+    10826,
+    16,
+    16
+   ],
+   "radius": "0px",
+   "bg": "rgb(175, 177, 182)",
+   "border": null,
+   "mask": "url(\"https://neon.com/images/footer/youtube.svg\")",
+   "composite": "add",
+   "maskSize": "16px 16px",
+   "maskRepeat": "no-repeat",
+   "opacity": "1"
+  }
+ ],
+ "filters": [
+  {
+   "el": "img.size-10.object-contain.brightness-0.invert",
+   "rect": [
+    825,
+    4499,
+    40,
+    40
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "filter": "brightness(0) invert(1)",
+   "opacity": "1"
+  }
+ ],
+ "gradients": [
+  {
+   "el": "div.logos.logos-animated.flex.w-full::before",
+   "rect": [
+    32,
+    805,
+    1376,
+    28
+   ],
+   "radius": "0px",
+   "bg": "linear-gradient(to right in oklab, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%)",
+   "border": null,
+   "size": "auto",
+   "clip": "border-box",
+   "opacity": "1",
+   "blend": "normal",
+   "bgBlend": "normal"
+  },
+  {
+   "el": "div.logos.logos-animated.flex.w-full::after",
+   "rect": [
+    32,
+    805,
+    1376,
+    28
+   ],
+   "radius": "0px",
+   "bg": "linear-gradient(to left in oklab, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%)",
+   "border": null,
+   "size": "auto",
+   "clip": "border-box",
+   "opacity": "1",
+   "blend": "normal",
+   "bgBlend": "normal"
+  },
+  {
+   "el": "div.absolute.bottom-0.z-20.h-22",
+   "rect": [
+    0,
+    753,
+    1440,
+    88
+   ],
+   "radius": "0px",
+   "bg": "linear-gradient(rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%)",
+   "border": null,
+   "size": "auto",
+   "clip": "border-box",
+   "opacity": "1",
+   "blend": "normal",
+   "bgBlend": "normal"
+  },
+  {
+   "el": "mark.-mr-[0.15em].-ml-[0.1em].bg-transparent.bg-[linear-gradient(to_bottom,transparent_0.15em,rgba(57,165,125,0.6)_0.15em)]",
+   "rect": [
+    750,
+    6323,
+    474,
+    63
+   ],
+   "radius": "0px",
+   "bg": "linear-gradient(rgba(0, 0, 0, 0) 7.8px, rgba(57, 165, 125, 0.6) 7.8px)",
+   "border": null,
+   "size": "auto",
+   "clip": "border-box",
+   "opacity": "1",
+   "blend": "normal",
+   "bgBlend": "normal"
+  },
+  {
+   "el": "mark.-mr-[0.15em].-ml-[0.1em].bg-transparent.bg-[linear-gradient(to_bottom,transparent_0.15em,rgba(57,165,125,0.6)_0.15em)]",
+   "rect": [
+    27,
+    6381,
+    503,
+    63
+   ],
+   "radius": "0px",
+   "bg": "linear-gradient(rgba(0, 0, 0, 0) 7.8px, rgba(57, 165, 125, 0.6) 7.8px)",
+   "border": null,
+   "size": "auto",
+   "clip": "border-box",
+   "opacity": "1",
+   "blend": "normal",
+   "bgBlend": "normal"
+  },
+  {
+   "el": "mark.-mr-[0.15em].-ml-[0.1em].bg-transparent.bg-[linear-gradient(to_bottom,transparent_0.15em,rgba(57,165,125,0.6)_0.15em)]",
+   "rect": [
+    628,
+    6381,
+    473,
+    63
+   ],
+   "radius": "0px",
+   "bg": "linear-gradient(rgba(0, 0, 0, 0) 7.8px, rgba(57, 165, 125, 0.6) 7.8px)",
+   "border": null,
+   "size": "auto",
+   "clip": "border-box",
+   "opacity": "1",
+   "blend": "normal",
+   "bgBlend": "normal"
+  },
+  {
+   "el": "mark.-mr-[0.15em].-ml-[0.1em].bg-transparent.bg-[linear-gradient(to_bottom,transparent_0.15em,rgba(57,165,125,0.6)_0.15em)]",
+   "rect": [
+    450,
+    7105,
+    344,
+    44
+   ],
+   "radius": "0px",
+   "bg": "linear-gradient(rgba(0, 0, 0, 0) 5.4px, rgba(57, 165, 125, 0.6) 5.4px)",
+   "border": null,
+   "size": "auto",
+   "clip": "border-box",
+   "opacity": "1",
+   "blend": "normal",
+   "bgBlend": "normal"
+  }
+ ],
+ "urlBgs": [],
+ "cornerShape": [],
+ "clipPath": [
+  {
+   "el": "g",
+   "rect": [
+    1044,
+    61,
+    18,
+    14
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "clipPath": "url(\"#discord_inline_svg__a\")"
+  },
+  {
+   "el": "g",
+   "rect": [
+    -210,
+    805,
+    124,
+    28
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "clipPath": "url(\"#replit_inline_svg__a\")"
+  },
+  {
+   "el": "g",
+   "rect": [
+    -5,
+    804,
+    142,
+    29
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "clipPath": "url(\"#outfront7_inline_svg__a\")"
+  },
+  {
+   "el": "g",
+   "rect": [
+    472,
+    808,
+    100,
+    21
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "clipPath": "url(\"#bcg_inline_svg__a\")"
+  },
+  {
+   "el": "g",
+   "rect": [
+    653,
+    805,
+    28,
+    28
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "clipPath": "url(\"#pepsi_inline_svg__a\")"
+  },
+  {
+   "el": "g",
+   "rect": [
+    1309,
+    805,
+    104,
+    28
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "clipPath": "url(\"#framer_inline_svg__a\")"
+  },
+  {
+   "el": "g",
+   "rect": [
+    1495,
+    805,
+    124,
+    28
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "clipPath": "url(\"#replit_inline_svg__a\")"
+  },
+  {
+   "el": "g",
+   "rect": [
+    1700,
+    804,
+    142,
+    29
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "clipPath": "url(\"#outfront7_inline_svg__a\")"
+  },
+  {
+   "el": "g",
+   "rect": [
+    2177,
+    808,
+    100,
+    21
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "clipPath": "url(\"#bcg_inline_svg__a\")"
+  },
+  {
+   "el": "g",
+   "rect": [
+    2358,
+    805,
+    28,
+    28
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "clipPath": "url(\"#pepsi_inline_svg__a\")"
+  },
+  {
+   "el": "g",
+   "rect": [
+    3014,
+    805,
+    104,
+    28
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "clipPath": "url(\"#framer_inline_svg__a\")"
+  },
+  {
+   "el": "g",
+   "rect": [
+    1381,
+    1990,
+    13,
+    13
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "clipPath": "url(\"#bullet-list_inline_svg__a\")"
+  },
+  {
+   "el": "g",
+   "rect": [
+    1370,
+    2619,
+    7,
+    11
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "clipPath": "url(\"#arrow-up_inline_svg__a\")"
+  },
+  {
+   "el": "g",
+   "rect": [
+    1367,
+    10537,
+    12,
+    12
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "clipPath": "url(\"#copy_inline_svg__a\")"
+  }
+ ],
+ "animations": [
+  {
+   "value": "infinityScroll 60s linear infinite",
+   "n": 2,
+   "ex": [
+    {
+     "el": "ul.logos-content.m-0!.flex.p-0!",
+     "rect": [
+      -210,
+      805,
+      1625,
+      28
+     ]
+    },
+    {
+     "el": "ul.logos-content.m-0!.flex.p-0!",
+     "rect": [
+      1495,
+      805,
+      1625,
+      28
+     ]
+    }
+   ]
+  }
+ ],
+ "borderImage": [],
+ "textShadow": [],
+ "atProperty": [
+  "@property --tw-translate-x { syntax: \"*\"; inherits: false; initial-value: 0; }",
+  "@property --tw-translate-y { syntax: \"*\"; inherits: false; initial-value: 0; }",
+  "@property --tw-translate-z { syntax: \"*\"; inherits: false; initial-value: 0; }",
+  "@property --tw-content { syntax: \"*\"; inherits: false; initial-value: \"\"; }",
+  "@property --tw-tracking { syntax: \"*\"; inherits: false; }",
+  "@property --tw-font-weight { syntax: \"*\"; inherits: false; }",
+  "@property --tw-border-spacing-x { syntax: \"<length>\"; inherits: false; initial-value: 0; }",
+  "@property --tw-border-spacing-y { syntax: \"<length>\"; inherits: false; initial-value: 0; }",
+  "@property --tw-scale-x { syntax: \"*\"; inherits: false; initial-value: 1; }",
+  "@property --tw-scale-y { syntax: \"*\"; inherits: false; initial-value: 1; }",
+  "@property --tw-scale-z { syntax: \"*\"; inherits: false; initial-value: 1; }",
+  "@property --tw-rotate-x { syntax: \"*\"; inherits: false; }",
+  "@property --tw-rotate-y { syntax: \"*\"; inherits: false; }",
+  "@property --tw-rotate-z { syntax: \"*\"; inherits: false; }",
+  "@property --tw-skew-x { syntax: \"*\"; inherits: false; }",
+  "@property --tw-skew-y { syntax: \"*\"; inherits: false; }",
+  "@property --tw-space-y-reverse { syntax: \"*\"; inherits: false; initial-value: 0; }",
+  "@property --tw-space-x-reverse { syntax: \"*\"; inherits: false; initial-value: 0; }",
+  "@property --tw-divide-y-reverse { syntax: \"*\"; inherits: false; initial-value: 0; }",
+  "@property --tw-border-style { syntax: \"*\"; inherits: false; initial-value: solid; }",
+  "@property --tw-duration { syntax: \"*\"; inherits: false; }",
+  "@property --tw-gradient-position { syntax: \"*\"; inherits: false; }",
+  "@property --tw-gradient-from { syntax: \"<color>\"; inherits: false; initial-value: #0000; }",
+  "@property --tw-gradient-via { syntax: \"<color>\"; inherits: false; initial-value: #0000; }",
+  "@property --tw-gradient-to { syntax: \"<color>\"; inherits: false; initial-value: #0000; }",
+  "@property --tw-gradient-stops { syntax: \"*\"; inherits: false; }",
+  "@property --tw-gradient-via-stops { syntax: \"*\"; inherits: false; }",
+  "@property --tw-gradient-from-position { syntax: \"<length-percentage>\"; inherits: false; initial-value: 0%; }",
+  "@property --tw-gradient-via-position { syntax: \"<length-percentage>\"; inherits: false; initial-value: 50%; }",
+  "@property --tw-gradient-to-position { syntax: \"<length-percentage>\"; inherits: false; initial-value: 100%; }"
+ ],
+ "keyframes": [
+  "@keyframes infinityScroll { \n  0% { transform: translate(0px); }\n  100% { transform: translateX(calc(-100% - var(--gap))); }\n}",
+  "@keyframes move { \n  0% { transform: translateY(100%); }\n  100% { transform: translateY(-100%); }\n}",
+  "@keyframes slideUpAndFade { \n  0% { opacity: 0; transform: translateY(10px); }\n  100% { opacity: 1; transform: translateY(0px); }\n}",
+  "@keyframes slideRightAndFade { \n  0% { opacity: 0; transform: translate(-10px); }\n  100% { opacity: 1; transform: translate(0px); }\n}",
+  "@keyframes slideDownAndFade { \n  0% { opacity: 0; transform: translateY(-10px); }\n  100% { opacity: 1; transform: translateY(0px); }\n}",
+  "@keyframes slideLeftAndFade { \n  0% { opacity: 0; transform: translate(10px); }\n  100% { opacity: 1; transform: translate(0px); }\n}",
+  "@keyframes lineAnimation { \n  0% { transform: translateY(0px); }\n  100% { transform: translateY(-100%); }\n}",
+  "@keyframes shimmer { \n  100% { transform: translate(100%); }\n}",
+  "@keyframes spin { \n  100% { transform: rotate(360deg); }\n}",
+  "@keyframes text-blink { \n  0% { color: rgb(0, 0, 0); text-shadow: rgb(38, 38, 38) -1px -1px, rgb(38, 38, 38) 1px -1px, rgb(38, 38, 38) -1px 1px, rgb(38, 38, 38) 1px 1px; }\n  25% { color: currentcolor; text-shadow: rgba(0, 0, 0, 0) -1px -1px, rgba(0, 0, 0, 0) 1px -1px, rgba(0, 0, 0, 0) -1px 1px, rgba(0, 0, 0, 0) 1px 1px; }\n  50% { color: rgb(0, 0, 0); text-shadow: rgb(38, 38, 38) -1px -1px, rgb(38, 38, 38) 1px -1px, rgb(38, 38, 38) -1px 1px, rgb(38, 38, 38) 1px 1px; }\n  100% { color: currentcolor",
+  "@keyframes logoMove { \n  0% { transform: translateY(0px); }\n  100% { transform: translateY(-3%); }\n}"
+ ],
+ "sheetHrefs": [
+  "https://neon.com/_next/static/immutable/chunks/2k96h2smqsfgm.css",
+  "https://neon.com/_next/static/immutable/chunks/1291wu9i_ed4m.css"
+ ],
+ "cssGrep": {
+  "cornerShape": {
+   "n": 0,
+   "ex": []
+  },
+  "superellipse": {
+   "n": 0,
+   "ex": []
+  },
+  "squircle": {
+   "n": 0,
+   "ex": []
+  },
+  "feTurbulence": {
+   "n": 0,
+   "ex": []
+  },
+  "maskComposite": {
+   "n": 24,
+   "ex": [
+    "-webkit-mask-composite:xor",
+    "mask-composite:exclude"
+   ]
+  },
+  "atProperty": {
+   "n": 77,
+   "ex": [
+    "@property --tw-translate-x{syntax:\"*\";inherits:false;initial-value:0}",
+    "@property --tw-translate-y{syntax:\"*\";inherits:false;initial-value:0}",
+    "@property --tw-translate-z{syntax:\"*\";inherits:false;initial-value:0}",
+    "@property --tw-content{syntax:\"*\";inherits:false;initial-value:\"\"}",
+    "@property --tw-tracking{syntax:\"*\";inherits:false}",
+    "@property --tw-font-weight{syntax:\"*\";inherits:false}"
+   ]
+  },
+  "backdrop": {
+   "n": 12,
+   "ex": [
+    "backdrop-filter:var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var"
+   ]
+  },
+  "inOklab": {
+   "n": 14,
+   "ex": [
+    "in oklab",
+    "in oklab}}.logos-animated:before{background-image:linear-gradient(var(--tw-gradient-stops",
+    "in oklab}}.logos-animated:after{background-image:linear-gradient(var(--tw-gradient-stops",
+    "in oklab}}.bg-linear-to-b{background-image:linear-gradient(var(--tw-gradient-stops",
+    "in oklab}}.bg-linear-to-l{background-image:linear-gradient(var(--tw-gradient-stops",
+    "in oklab}}.bg-linear-to-r{background-image:linear-gradient(var(--tw-gradient-stops"
+   ]
+  },
+  "conic": {
+   "n": 0,
+   "ex": []
+  },
+  "plusLighter": {
+   "n": 2,
+   "ex": [
+    "plus-lighter"
+   ]
+  },
+  "offsetPath": {
+   "n": 0,
+   "ex": []
+  },
+  "paintWorklet": {
+   "n": 0,
+   "ex": []
+  }
+ },
+ "scheme": "dark",
+ "measuredAt": "2026-10-10T13:59:43.379Z",
+ "chromium": "156.0.8078.4"
+}

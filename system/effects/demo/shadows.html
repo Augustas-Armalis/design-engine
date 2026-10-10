@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1440">
+<title>Shadow scale specimen</title>
+<link rel="stylesheet" href="../shadows.css">
+<style>
+  *{box-sizing:border-box} html,body{margin:0;font:13px/1.45 -apple-system,BlinkMacSystemFont,"Inter","Segoe UI",sans-serif;color:#18181b}
+  body{width:1440px;background:#fff}
+  section{padding:40px 48px 48px} section.light{background:#f6f6f7} section.white{background:#fff;border-top:1px solid #ececef} section.dark{background:#0b0c0e;color:#ededef}
+  h2{margin:0 0 4px;font-size:18px;font-weight:550;letter-spacing:-.015em} p.sub{margin:0 0 28px;color:#71717a} .dark p.sub{color:#8b8d93}
+  .row{display:grid;grid-template-columns:repeat(5,1fr);gap:40px}
+  .card{height:150px;border-radius:16px;background:#fff;padding:14px 16px;display:flex;flex-direction:column;justify-content:space-between}
+  .dark .card{background:#16171a}
+  .card b{font-weight:550;font-size:13px} .card span{color:#71717a;font-size:12px} .dark .card span{color:#8b8d93}
+  .specials{display:grid;grid-template-columns:repeat(5,1fr);gap:40px;margin-top:40px;align-items:center}
+  .btn{height:40px;border-radius:12px;display:inline-flex;align-items:center;justify-content:center;padding:0 18px;font-weight:550;font-size:14px;letter-spacing:-.01em}
+  .accent{--accent:#2563eb;background:#2563eb;color:#fff;box-shadow:var(--sh-accent)}
+  .ink{background:#18181b;color:#fff;box-shadow:var(--sh-ink-btn)}
+  .dark .ink{background:#ececee;color:#111}
+  .sp{height:96px;border-radius:14px;background:#fff;display:flex;align-items:flex-end;padding:10px 12px;font-size:12px;color:#71717a}
+  .dark .sp{background:#16171a;color:#8b8d93}
+  .label{font-size:12px;color:#71717a;margin-top:8px} .dark .label{color:#8b8d93}
+</style>
+</head>
+<body>
+  <section class="light">
+    <h2>5-tier scale on a grey canvas (#f6f6f7)</h2>
+    <p class="sub">--sh-ink 17 20 28. Tiers 1-3 respect the founder card cap (blur &lt;= 24px, alpha &lt;= .16 per layer); 4 and 5 are overlay and hero-frame only.</p>
+    <div class="row">
+      <div class="card sh-1"><b>1 resting</b><span>ring .07 + 0 1px 2px .05</span></div>
+      <div class="card sh-2"><b>2 raised</b><span>+ 0 4px 8px -2px .06</span></div>
+      <div class="card sh-3"><b>3 floating</b><span>ring .08 + 3 soft layers to 24px</span></div>
+      <div class="card sh-4"><b>4 overlay</b><span>to 0 32px 48px -12px .12</span></div>
+      <div class="card sh-5"><b>5 hero frame</b><span>doubling ladder, spread -y/2</span></div>
+    </div>
+    <div class="specials">
+      <div><div class="sp" style="box-shadow:var(--sh-contact), 0 4px 8px rgb(var(--sh-ink)/.05), 0 0 0 1px rgb(var(--sh-ink)/.06)">contact line (Cal)</div></div>
+      <div><div class="sp" style="box-shadow:var(--sh-tray), var(--sh-1)">tray halo 6px (Granola)</div></div>
+      <div><div class="sp" style="box-shadow:var(--sh-ambient), 0 0 0 1px rgb(var(--sh-ink)/.07)">ambient 48px .04 (Lightfield)</div></div>
+      <div><span class="btn accent">Accent button</span><div class="label">coloured shadow + inset bevel</div></div>
+      <div><span class="btn ink">Ink button</span><div class="label">inset top light + tight lift</div></div>
+    </div>
+  </section>
+  <section class="white">
+    <h2>Same scale on white (#fff)</h2>
+    <p class="sub">On white the ring does the edge work; tiers 1-2 must still read.</p>
+    <div class="row">
+      <div class="card sh-1"><b>1 resting</b><span>&nbsp;</span></div>
+      <div class="card sh-2"><b>2 raised</b><span>&nbsp;</span></div>
+      <div class="card sh-3"><b>3 floating</b><span>&nbsp;</span></div>
+      <div class="card sh-4"><b>4 overlay</b><span>&nbsp;</span></div>
+      <div class="card sh-5"><b>5 hero frame</b><span>&nbsp;</span></div>
+    </div>
+  </section>
+  <section class="dark fx-dark">
+    <h2>Dark scale on #0b0c0e (surface #16171a, +.05 L)</h2>
+    <p class="sub">Edge = inset white ring + top highlight; depth = outer black hairline + black drops at .3-.6.</p>
+    <div class="row">
+      <div class="card sh-1"><b>1 resting</b><span>inset ring .07 + top .04</span></div>
+      <div class="card sh-2"><b>2 raised</b><span>+ black ring .4 + 0 4px 8px .35</span></div>
+      <div class="card sh-3"><b>3 floating</b><span>0 8px 24px -8px .5</span></div>
+      <div class="card sh-4"><b>4 overlay</b><span>0 24px 48px -12px .6</span></div>
+      <div class="card sh-5"><b>5 hero frame</b><span>0 2px 32px .25 + 0 24px 64px .5</span></div>
+    </div>
+    <div class="specials">
+      <div><div class="sp" style="box-shadow:var(--sh-1), var(--sh-tray)">tray halo (white .03)</div></div>
+      <div><div class="sp" style="box-shadow:var(--sh-1), var(--sh-ambient)">ambient (black .4)</div></div>
+      <div><span class="btn ink">Inverse button</span><div class="label">inset white .5 + black ring .5</div></div>
+      <div><span class="btn accent" style="--accent:#5b7cfa;background:#3f5fe0">Accent on dark</span><div class="label">same recipe, deeper fill</div></div>
+      <div></div>
+    </div>
+  </section>
+</body>
+</html>

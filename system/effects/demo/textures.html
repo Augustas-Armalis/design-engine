@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1440">
+<title>Textures specimen</title>
+<link rel="stylesheet" href="../shadows.css">
+<link rel="stylesheet" href="../textures.css">
+<style>
+  *{box-sizing:border-box} html,body{margin:0;font:13px/1.45 -apple-system,BlinkMacSystemFont,"Inter","Segoe UI",sans-serif;color:#18181b}
+  body{width:1440px;background:#f6f6f7;padding:40px 48px}
+  h1{font-size:20px;font-weight:550;letter-spacing:-.02em;margin:0 0 4px} p.sub{margin:0 0 28px;color:#71717a}
+  .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:28px}
+  figure{margin:0} figcaption{margin-top:8px;font-size:12px;color:#52525b} figcaption b{font-weight:550;color:#18181b}
+  .t{height:220px;border-radius:16px;position:relative;overflow:hidden;box-shadow:var(--sh-1)}
+  .photo{background:url(../../../knowledge/larpo-shipped/kaching-fold.png) 30% 40%/260% auto}
+  .photo2{background:url(../../../knowledge/larpo-shipped/capto-fold.png) 60% 30%/240% auto}
+  .center{position:absolute;inset:0;display:grid;place-items:center}
+  .pill{height:40px;padding:0 18px;border-radius:999px;display:inline-flex;align-items:center;font-weight:550;font-size:14px}
+  .darkbg{background:#0b0c0e;color:#ededef}
+  .ramp-srgb{background:linear-gradient(90deg,#0f1115,#1d2433)}
+  .ramp-ok{background:linear-gradient(in oklab 90deg,#0f1115,#1d2433)}
+  .half{position:absolute;inset:0 0 50% 0} .half2{position:absolute;inset:50% 0 0 0}
+  .lab{position:absolute;left:12px;bottom:10px;font-size:11px;color:#a1a1aa}
+  .mini{width:200px;height:120px;border-radius:14px;background:#fff;padding:14px;font-size:12px}
+</style>
+</head>
+<body>
+  <h1>Textures, light and materials</h1>
+  <p class="sub">Every tile uses only classes from system/effects/textures.css (+ shadows.css). Pointer effects are frozen at one pointer position for the screenshot.</p>
+  <div class="grid">
+    <figure><div class="t fx-grain" style="background:linear-gradient(in oklab 160deg,#e9ecff,#f6f6f7 60%)"></div><figcaption><b>.fx-grain</b> multiply .06 on a light gradient</figcaption></figure>
+    <figure><div class="t fx-grain is-dark" style="background:radial-gradient(80% 70% at 30% 0%,#3a3f55,#0b0c0e 70%)"></div><figcaption><b>.fx-grain.is-dark</b> soft-light .06 over a dark light-pool</figcaption></figure>
+    <figure><div class="t" style="box-shadow:none"><div class="half ramp-srgb"></div><div class="half2 ramp-ok fx-grain is-dark"></div><span class="lab" style="bottom:auto;top:10px">sRGB ramp: 14 steps over 1440px = ~100px bands</span><span class="lab">oklab + grain: bands dithered</span></div><figcaption><b>banding fix</b> oklab interpolation + grain</figcaption></figure>
+    <figure><div class="t darkbg"><div class="center"><div class="mini fx-gradient-border" style="background:#141517;color:#a1a1aa;--fx-radius:14px">gradient border<br>white .5 to .02, 1px</div></div></div><figcaption><b>.fx-gradient-border</b> mask-composite exclude</figcaption></figure>
+
+    <figure><div class="t" style="background:#fff"><div class="center"><div class="fx-beam" style="--fx-radius:14px;width:200px;height:120px;padding:14px;font-size:12px">border beam<br><span style="color:#71717a">conic arc, 4s linear</span></div></div></div><figcaption><b>.fx-beam</b> @property angle + padding-box/border-box</figcaption></figure>
+    <figure><div class="t photo"><div class="center"><span class="pill fx-glass">Frosted glass pill</span></div></div><figcaption><b>.fx-glass</b> white .72 + saturate 1.8 blur 20 (Apple)</figcaption></figure>
+    <figure><div class="t photo2"><div class="center"><div class="mini fx-glass is-dark" style="background:rgb(22 23 26/.6);color:#ededef">dark glass window<br><span style="color:#a1a1aa">black .6, blur 24, .5px rim</span></div></div></div><figcaption><b>.fx-glass.is-dark</b> (Raycast window recipe)</figcaption></figure>
+    <figure><div class="t photo"><div class="fx-progressive-blur" style="height:90px"><i></i><i></i><i></i><i></i></div><div class="center" style="align-items:start;padding-top:28px;font-weight:550">header over content</div></div><figcaption><b>.fx-progressive-blur</b> 1/2/4/8px stepped masks (Clerk)</figcaption></figure>
+
+    <figure><div class="t darkbg"><div class="center"><div class="mini fx-spotlight" style="--mx:150px;--my:20px;background:#141517;color:#a1a1aa;box-shadow:var(--sh-1);--fx-radius:14px"><style>.frozen::before,.frozen::after{opacity:1!important}</style>pointer spotlight<br>surface .06 + border .35</div></div></div><figcaption><b>.fx-spotlight</b> (frozen at the top-right)</figcaption></figure>
+    <figure><div class="t" style="background:#fff"><div class="fx-dots" style="position:absolute;inset:0"></div><div class="center" style="font-weight:550">dots, 14px, ink .16, ellipse fade</div></div><figcaption><b>.fx-dots</b> radial mask fade</figcaption></figure>
+    <figure><div class="t" style="background:#fff"><div class="fx-grid" style="position:absolute;inset:0"></div><div class="center" style="font-weight:550">48px grid, ink .06, top fade</div></div><figcaption><b>.fx-grid</b></figcaption></figure>
+    <figure><div class="t" style="background:#fff"><div class="center"><span class="fx-shimmer-text" style="font-size:22px;font-weight:550;animation-play-state:paused;animation-delay:-1s">Thinking about Q3 pipeline</span></div></div><figcaption><b>.fx-shimmer-text</b> 250%, peak .95 (frozen)</figcaption></figure>
+
+    <figure><div class="t fx-dark-surface" style="padding:18px"><b style="font-weight:550">Noise-textured dark surface</b><div style="color:#8b8d93;margin-top:4px">#141517, top radial .05, grain soft-light .08, inset ring + top light</div></div><figcaption><b>.fx-dark-surface</b></figcaption></figure>
+    <figure><div class="t darkbg fx-edge-spot" style="box-shadow:inset 0 0 0 1px rgb(255 255 255/.08)"><div class="center" style="color:#8b8d93">static corner spotlight on the frame edge</div></div><figcaption><b>.fx-edge-spot</b> (Linear masked border)</figcaption></figure>
+    <figure><div class="t" style="background:#e8e8ec;perspective:1000px"><div class="center"><div class="mini fx-tilt sh-3" style="--rx:6deg;--ry:-8deg;--gx:30%;--gy:10%;--glare:1">3D tilt 6/-8deg<br><span style="color:#71717a">soft-light glare at the pointer</span></div></div></div><figcaption><b>.fx-tilt</b> (frozen pose)</figcaption></figure>
+    <figure><div class="t fx-duotone" style="--fx-duo-light:#e6ecff;--fx-duo-dark:#1b2a74"><img alt="" src="../../../knowledge/larpo-shipped/capto-fold.png"></div><figcaption><b>.fx-duotone</b> greyscale + multiply/screen</figcaption></figure>
+  </div>
+  <script>document.querySelectorAll('.fx-spotlight').forEach(e=>e.classList.add('frozen'))</script>
+</body>
+</html>

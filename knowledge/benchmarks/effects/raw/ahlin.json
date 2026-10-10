@@ -1,0 +1,392 @@
+{
+ "url": "https://tobiasahlin.com/blog/layered-smooth-box-shadows/",
+ "title": "Smoother & sharper shadows with layered box-shadows | Tobias Ahlin",
+ "svgFilters": [],
+ "canvases": [],
+ "videos": [],
+ "counts": {
+  "elements": 746,
+  "shadows": 12,
+  "glass": 0,
+  "blends": 0,
+  "masks": 0,
+  "filters": 0,
+  "gradients": 0,
+  "urlBgs": 0,
+  "cornerShape": 0,
+  "clipPath": 0,
+  "borderImage": 0
+ },
+ "shadows": [
+  {
+   "value": "rgba(0, 0, 0, 0.4) 0px 1px 1px 0px",
+   "n": 1,
+   "ex": [
+    {
+     "el": "div#carbonads",
+     "rect": [
+      1272,
+      602,
+      148,
+      233
+     ],
+     "radius": "4px",
+     "bg": "rgba(255, 255, 255, 0.5)",
+     "border": null
+    }
+   ]
+  },
+  {
+   "value": "rgba(16, 27, 30, 0.4) 0px 6px 6px 0px",
+   "n": 1,
+   "ex": [
+    {
+     "el": "div.blog-traditional-shadow-box",
+     "rect": [
+      602,
+      538,
+      100,
+      80
+     ],
+     "radius": "3px",
+     "bg": "rgb(255, 255, 255)",
+     "border": null
+    }
+   ]
+  },
+  {
+   "value": "rgba(16, 27, 30, 0.15) 0px 1px 1px 0px, rgba(16, 27, 30, 0.15) 0px 2px 2px 0px, rgba(16, 27, 30, 0.15) 0px 4px 4px 0px, rgba(16, 27, 30, 0.15) 0px 8px 8px 0px, rgba(16, 27, 30, 0.15) 0px 16px 16px 0px",
+   "n": 1,
+   "ex": [
+    {
+     "el": "div.blog-realistic-shadow-box",
+     "rect": [
+      738,
+      538,
+      100,
+      80
+     ],
+     "radius": "3px",
+     "bg": "rgb(255, 255, 255)",
+     "border": null
+    }
+   ]
+  },
+  {
+   "value": "rgba(0, 0, 0, 0.4) 0px 6px 6px 0px",
+   "n": 1,
+   "ex": [
+    {
+     "el": "div.blog-traditional-shadow-box.blog-shadow-big.blog-shadow-6",
+     "rect": [
+      502,
+      1401,
+      200,
+      120
+     ],
+     "radius": "3px",
+     "bg": "rgb(255, 255, 255)",
+     "border": null
+    }
+   ]
+  },
+  {
+   "value": "rgba(0, 0, 0, 0.12) 0px 1px 1px 0px, rgba(0, 0, 0, 0.12) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 4px 4px 0px, rgba(0, 0, 0, 0.12) 0px 8px 8px 0px, rgba(0, 0, 0, 0.12) 0px 16px 16px 0px",
+   "n": 1,
+   "ex": [
+    {
+     "el": "div.blog-realistic-shadow-box.blog-shadow-big.blog-shadow-long",
+     "rect": [
+      738,
+      1401,
+      200,
+      120
+     ],
+     "radius": "3px",
+     "bg": "rgb(255, 255, 255)",
+     "border": null
+    }
+   ]
+  },
+  {
+   "value": "rgba(0, 0, 0, 0.15) 0px 1px 1px 0px, rgba(0, 0, 0, 0.15) 0px 2px 2px 0px, rgba(0, 0, 0, 0.15) 0px 4px 4px 0px, rgba(0, 0, 0, 0.15) 0px 8px 8px 0px",
+   "n": 1,
+   "ex": [
+    {
+     "el": "div.blog-realistic-shadow-box.blog-shadow-big.blog-shadow-medium",
+     "rect": [
+      502,
+      2544,
+      200,
+      120
+     ],
+     "radius": "3px",
+     "bg": "rgb(255, 255, 255)",
+     "border": null
+    }
+   ]
+  },
+  {
+   "value": "rgba(0, 0, 0, 0.11) 0px 1px 1px 0px, rgba(0, 0, 0, 0.11) 0px 2px 2px 0px, rgba(0, 0, 0, 0.11) 0px 4px 4px 0px, rgba(0, 0, 0, 0.11) 0px 8px 8px 0px, rgba(0, 0, 0, 0.11) 0px 16px 16px 0px, rgba(0, 0, 0, 0.11) 0px 32px 32px 0px",
+   "n": 1,
+   "ex": [
+    {
+     "el": "div.blog-realistic-shadow-box.blog-shadow-big.blog-shadow-extra-long",
+     "rect": [
+      738,
+      2544,
+      200,
+      120
+     ],
+     "radius": "3px",
+     "bg": "rgb(255, 255, 255)",
+     "border": null
+    }
+   ]
+  },
+  {
+   "value": "rgba(0, 0, 0, 0.25) 0px 1px 1px 0px, rgba(0, 0, 0, 0.2) 0px 2px 2px 0px, rgba(0, 0, 0, 0.15) 0px 4px 4px 0px, rgba(0, 0, 0, 0.1) 0px 8px 8px 0px, rgba(0, 0, 0, 0.05) 0px 16px 16px 0px",
+   "n": 1,
+   "ex": [
+    {
+     "el": "div.blog-realistic-shadow-box.blog-shadow-big.blog-shadow-sharp",
+     "rect": [
+      502,
+      3598,
+      200,
+      120
+     ],
+     "radius": "3px",
+     "bg": "rgb(255, 255, 255)",
+     "border": null
+    }
+   ]
+  },
+  {
+   "value": "rgba(0, 0, 0, 0.08) 0px 1px 1px 0px, rgba(0, 0, 0, 0.12) 0px 2px 2px 0px, rgba(0, 0, 0, 0.16) 0px 4px 4px 0px, rgba(0, 0, 0, 0.2) 0px 8px 8px 0px",
+   "n": 1,
+   "ex": [
+    {
+     "el": "div.blog-realistic-shadow-box.blog-shadow-big.blog-shadow-soft",
+     "rect": [
+      738,
+      3598,
+      200,
+      120
+     ],
+     "radius": "3px",
+     "bg": "rgb(255, 255, 255)",
+     "border": null
+    }
+   ]
+  },
+  {
+   "value": "rgba(0, 0, 0, 0.07) 0px 1px 2px 0px, rgba(0, 0, 0, 0.07) 0px 2px 4px 0px, rgba(0, 0, 0, 0.07) 0px 4px 8px 0px, rgba(0, 0, 0, 0.07) 0px 8px 16px 0px, rgba(0, 0, 0, 0.07) 0px 16px 32px 0px, rgba(0, 0, 0, 0.07) 0px 32px 64px 0px",
+   "n": 1,
+   "ex": [
+    {
+     "el": "div.blog-realistic-shadow-box.blog-shadow-big.blog-shadow-softer",
+     "rect": [
+      620,
+      4368,
+      200,
+      120
+     ],
+     "radius": "3px",
+     "bg": "rgb(255, 255, 255)",
+     "border": null
+    }
+   ]
+  },
+  {
+   "value": "rgba(0, 0, 0, 0.11) 0px 1px 1px 0px, rgba(0, 0, 0, 0.11) 0px 2px 2px 0px, rgba(0, 0, 0, 0.11) 0px 4px 4px 0px, rgba(0, 0, 0, 0.11) 0px 6px 8px 0px, rgba(0, 0, 0, 0.11) 0px 8px 16px 0px",
+   "n": 1,
+   "ex": [
+    {
+     "el": "div.blog-realistic-shadow-box.blog-shadow-big.blog-shadow-distance-short",
+     "rect": [
+      502,
+      4996,
+      200,
+      120
+     ],
+     "radius": "3px",
+     "bg": "rgb(255, 255, 255)",
+     "border": null
+    }
+   ]
+  },
+  {
+   "value": "rgba(0, 0, 0, 0.09) 0px 2px 1px 0px, rgba(0, 0, 0, 0.09) 0px 4px 2px 0px, rgba(0, 0, 0, 0.09) 0px 8px 4px 0px, rgba(0, 0, 0, 0.09) 0px 16px 8px 0px, rgba(0, 0, 0, 0.09) 0px 32px 16px 0px",
+   "n": 1,
+   "ex": [
+    {
+     "el": "div.blog-realistic-shadow-box.blog-shadow-big.blog-shadow-distance-long",
+     "rect": [
+      738,
+      4996,
+      200,
+      120
+     ],
+     "radius": "3px",
+     "bg": "rgb(255, 255, 255)",
+     "border": null
+    }
+   ]
+  }
+ ],
+ "radii": [
+  {
+   "value": "3px",
+   "n": 11,
+   "ex": [
+    {
+     "el": "div.blog-traditional-shadow-box",
+     "h": 80
+    },
+    {
+     "el": "div.blog-realistic-shadow-box",
+     "h": 80
+    },
+    {
+     "el": "div.blog-traditional-shadow-box.blog-shadow-big.blog-shadow-6",
+     "h": 120
+    }
+   ]
+  },
+  {
+   "value": "7px",
+   "n": 9,
+   "ex": [
+    {
+     "el": "code.language-plaintext.highlighter-rouge",
+     "h": 25
+    },
+    {
+     "el": "code.language-plaintext.highlighter-rouge",
+     "h": 25
+    },
+    {
+     "el": "code.language-plaintext.highlighter-rouge",
+     "h": 25
+    }
+   ]
+  },
+  {
+   "value": "18px",
+   "n": 6,
+   "ex": [
+    {
+     "el": "div.post-content-wrapper.center",
+     "h": 220
+    },
+    {
+     "el": "div.highlight",
+     "h": 418
+    },
+    {
+     "el": "div.post-content-wrapper.center",
+     "h": 220
+    }
+   ]
+  },
+  {
+   "value": "2px",
+   "n": 2,
+   "ex": [
+    {
+     "el": "span.site-search-close-icon-line.site-search-close-icon-line-1",
+     "h": 13
+    },
+    {
+     "el": "span.site-search-close-icon-line.site-search-close-icon-line-2",
+     "h": 13
+    }
+   ]
+  },
+  {
+   "value": "4px",
+   "n": 1,
+   "ex": [
+    {
+     "el": "div#carbonads",
+     "h": 233
+    }
+   ]
+  }
+ ],
+ "glass": [],
+ "blends": [],
+ "masks": [],
+ "filters": [],
+ "gradients": [],
+ "urlBgs": [],
+ "cornerShape": [],
+ "clipPath": [],
+ "animations": [],
+ "borderImage": [],
+ "textShadow": [],
+ "atProperty": [],
+ "keyframes": [
+  "@-webkit-keyframes rotateplane { \n  0% { transform: perspective(120px); }\n  50% { transform: perspective(120px) rotateY(180deg); }\n  100% { transform: perspective(120px) rotateY(180deg) rotateX(180deg); }\n}",
+  "@keyframes rotateplane { \n  0% { transform: perspective(120px) rotateX(0deg) rotateY(0deg); }\n  50% { transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg); }\n  100% { transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg); }\n}",
+  "@keyframes fade-In { \n  0% { opacity: 0; }\n  100% { opacity: 1; }\n}",
+  "@keyframes fadeInScale { \n  0% { opacity: 0; transform: scale(0); }\n  100% { opacity: 1; transform: scale(1); }\n}"
+ ],
+ "sheetHrefs": [
+  "https://tobiasahlin.com/css/site.css"
+ ],
+ "cssGrep": {
+  "cornerShape": {
+   "n": 0,
+   "ex": []
+  },
+  "superellipse": {
+   "n": 0,
+   "ex": []
+  },
+  "squircle": {
+   "n": 0,
+   "ex": []
+  },
+  "feTurbulence": {
+   "n": 0,
+   "ex": []
+  },
+  "maskComposite": {
+   "n": 0,
+   "ex": []
+  },
+  "atProperty": {
+   "n": 0,
+   "ex": []
+  },
+  "backdrop": {
+   "n": 0,
+   "ex": []
+  },
+  "inOklab": {
+   "n": 0,
+   "ex": []
+  },
+  "conic": {
+   "n": 0,
+   "ex": []
+  },
+  "plusLighter": {
+   "n": 0,
+   "ex": []
+  },
+  "offsetPath": {
+   "n": 0,
+   "ex": []
+  },
+  "paintWorklet": {
+   "n": 0,
+   "ex": []
+  }
+ },
+ "scheme": "light",
+ "measuredAt": "2026-10-10T13:57:13.417Z",
+ "chromium": "156.0.8078.4"
+}

@@ -14,11 +14,11 @@ const T_SUB = T.h1 + 5 * STAGGER + 0.05
 const X0 = 120, X1 = 1320 // content rails (Marcel: everything sits between two full-height hairlines)
 
 function Mark() {
-  // placeholder until the logo study's drawing method lands: a pixel H from the field's own cell (7 cells on a 3x3 grid)
-  const on = [[0, 0], [0, 1], [0, 2], [1, 1], [2, 0], [2, 1], [2, 2]]
+  // Halyard mark, route C "Sail H" (work/halyard/brand: CONCEPTS.md -> sweep.png -> draw.cjs -> present.png): the left stem is
+  // the mast, the bar climbs at 14 degrees, the right stem is a sail with a full leech. One contour, continuous outer corners.
   return (
-    <svg viewBox="0 0 20 20" width="20" height="20" aria-hidden className="shrink-0">
-      {on.map(([c, r]) => <rect key={`${c}${r}`} x={c * 7} y={r * 7} width="6" height="6" rx="1.2" fill="#f2f2f0" opacity={c === 1 ? 0.6 : 1} />)}
+    <svg viewBox="0 0 100 100" width="22" height="22" aria-hidden className="shrink-0" fill="#f2f2f0">
+      <path d="M9.89416,93.33939c-5.89416,0 -5.89416,0 -5.89416,-5.89416v-70.77675c0,-4.60502 0,-4.60502 4.46823,-5.71908l9.88138,-2.46371c2.41339,-0.60172 4.03109,-1.00506 5.11545,-1.00506c2.20463,0 2.20463,1.66723 2.20463,6.72414v32.54476l30.90506,-7.25223c1.69223,-0.3971 2.90184,-0.68095 3.76646,-0.74246v-32.09425c24.00128,14.05948 35.65879,43.91581 35.65879,68.38338c0,4.11779 -0.33018,8.08295 -0.98727,11.7945c-6.50091,5.41742 -26.00364,6.50091 -34.67152,6.50091v-41.23138c-0.60739,0.19155 -1.38503,0.37403 -2.38063,0.60766l-32.29088,7.57743v27.15213c0,5.89416 0,5.89416 -5.89416,5.89416z" />
     </svg>
   )
 }
@@ -38,7 +38,7 @@ export default function App() {
         {/* nav: one ruled row of cells */}
         <Reveal at={T.nav} y={-6} className="relative z-30">
           <header className="flex h-16 border-b border-[var(--rule)]" style={{ marginLeft: X0, width: X1 - X0 }}>
-            <a href="#" aria-label="Halyard home" className="flex w-[240px] items-center gap-2.5 border-r border-[var(--rule)] pl-6"><Mark /><span className="text-[20px] font-[600] tracking-[-0.03em]">Halyard</span></a>
+            <a href="#" aria-label="Halyard home" className="flex w-[240px] items-center gap-[6px] border-r border-[var(--rule)] pl-6"><Mark /><span className="text-[20px] font-[600] tracking-[-0.03em]">Halyard</span></a>
             <nav aria-label="Main" className="flex flex-1 items-center justify-center">
               <ul className="flex gap-1">{['Product', 'Agents', 'Pricing', 'Docs'].map((l, i) => (
                 <li key={l}><a href="#" className="group flex h-10 items-center gap-2 rounded-[6px] px-3.5 text-[14px] text-[var(--sub)] transition-colors hover:text-[var(--ink)]"><span className="mono text-[11px] text-[var(--soft)] group-hover:text-[var(--amber-ink)]">0{i + 1}</span>{l}</a></li>

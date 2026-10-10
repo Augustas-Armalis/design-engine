@@ -1,0 +1,383 @@
+{
+ "url": "https://www.figma.com/",
+ "title": "Figma: The collaborative canvas for design, code, and AI",
+ "svgFilters": [],
+ "canvases": [],
+ "videos": [],
+ "counts": {
+  "elements": 831,
+  "shadows": 2,
+  "glass": 0,
+  "blends": 0,
+  "masks": 0,
+  "filters": 0,
+  "gradients": 2,
+  "urlBgs": 0,
+  "cornerShape": 0,
+  "clipPath": 3,
+  "borderImage": 0
+ },
+ "shadows": [
+  {
+   "value": "oklch(0 0 none / 0.16) 0px 0px 0px 1px inset",
+   "n": 3,
+   "ex": [
+    {
+     "el": "a.fig-42wdr4",
+     "rect": [
+      1048,
+      16,
+      151,
+      46
+     ],
+     "radius": "8px",
+     "bg": "oklch(0 0 none / 0)",
+     "border": null
+    },
+    {
+     "el": "button.fig-5vh56z",
+     "rect": [
+      1316,
+      6802,
+      36,
+      36
+     ],
+     "radius": "9999px",
+     "bg": "oklch(0 0 none / 0)",
+     "border": null
+    },
+    {
+     "el": "button.fig-5vh56z",
+     "rect": [
+      1364,
+      6802,
+      36,
+      36
+     ],
+     "radius": "9999px",
+     "bg": "oklch(0 0 none / 0)",
+     "border": null
+    }
+   ]
+  },
+  {
+   "value": "oklch(0 0 none / 0.16) 0px 1px 0px 0px",
+   "n": 1,
+   "ex": [
+    {
+     "el": "div.fig-1rmlagr",
+     "rect": [
+      0,
+      0,
+      1440,
+      78
+     ],
+     "radius": "0px",
+     "bg": "rgb(255, 255, 255)",
+     "border": null
+    }
+   ]
+  }
+ ],
+ "radii": [
+  {
+   "value": "2px",
+   "n": 16,
+   "ex": [
+    {
+     "el": "a.fig-1siyav2",
+     "h": 22
+    },
+    {
+     "el": "a.fig-1siyav2",
+     "h": 22
+    },
+    {
+     "el": "a.fig-1siyav2",
+     "h": 22
+    }
+   ]
+  },
+  {
+   "value": "9999px",
+   "n": 15,
+   "ex": [
+    {
+     "el": "button",
+     "h": 36
+    },
+    {
+     "el": "button",
+     "h": 36
+    },
+    {
+     "el": "button",
+     "h": 36
+    }
+   ]
+  },
+  {
+   "value": "24px",
+   "n": 11,
+   "ex": [
+    {
+     "el": "div.fig-e3oo29",
+     "h": 48
+    },
+    {
+     "el": "div.fig-e3oo29",
+     "h": 48
+    },
+    {
+     "el": "div.fig-e3oo29",
+     "h": 48
+    }
+   ]
+  },
+  {
+   "value": "8px",
+   "n": 5,
+   "ex": [
+    {
+     "el": "div.fig-1d61hkn",
+     "h": 278
+    },
+    {
+     "el": "button.fig-1xsbq6c",
+     "h": 46
+    },
+    {
+     "el": "button.fig-1xsbq6c",
+     "h": 46
+    }
+   ]
+  },
+  {
+   "value": "50%",
+   "n": 4,
+   "ex": [
+    {
+     "el": "a.fig-gdypag",
+     "h": 36
+    },
+    {
+     "el": "a.fig-gdypag",
+     "h": 36
+    },
+    {
+     "el": "a.fig-gdypag",
+     "h": 36
+    }
+   ]
+  },
+  {
+   "value": "4px",
+   "n": 4,
+   "ex": [
+    {
+     "el": "div.fig-1ymitnt",
+     "h": 21
+    },
+    {
+     "el": "div.fig-1ymitnt",
+     "h": 21
+    },
+    {
+     "el": "div.fig-1ymitnt",
+     "h": 21
+    }
+   ]
+  },
+  {
+   "value": "16px",
+   "n": 1,
+   "ex": [
+    {
+     "el": "a.fig-1ytmgio",
+     "h": 84
+    }
+   ]
+  }
+ ],
+ "glass": [],
+ "blends": [],
+ "masks": [],
+ "filters": [],
+ "gradients": [
+  {
+   "el": "div.fig-51j1vz",
+   "rect": [
+    70,
+    5971,
+    76,
+    76
+   ],
+   "radius": "9999px",
+   "bg": "repeating-conic-gradient(rgb(0, 182, 255) 0deg, rgb(0, 182, 255) 18deg, rgba(0, 0, 0, 0) 18deg, rgba(0, 0, 0, 0) 30deg)",
+   "border": null,
+   "size": "auto",
+   "clip": "border-box",
+   "opacity": "1",
+   "blend": "normal",
+   "bgBlend": "normal"
+  },
+  {
+   "el": "div.fig-27t8gn::before",
+   "rect": [
+    40,
+    6102,
+    1292,
+    32
+   ],
+   "radius": "0px",
+   "bg": "linear-gradient(90deg, rgb(255, 255, 255) 0px, rgba(0, 0, 0, 0) 40px), linear-gradient(270deg, rgb(255, 255, 255) 0px, rgba(0, 0, 0, 0) 40px)",
+   "border": null,
+   "size": "auto, auto",
+   "clip": "border-box, border-box",
+   "opacity": "1",
+   "blend": "normal",
+   "bgBlend": "normal, normal"
+  }
+ ],
+ "urlBgs": [],
+ "cornerShape": [],
+ "clipPath": [
+  {
+   "el": "g",
+   "rect": [
+    957,
+    1182,
+    16,
+    16
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "clipPath": "url(\"#a\")"
+  },
+  {
+   "el": "g",
+   "rect": [
+    155,
+    2637,
+    16,
+    16
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "clipPath": "url(\"#a\")"
+  },
+  {
+   "el": "g",
+   "rect": [
+    728,
+    2637,
+    16,
+    16
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "clipPath": "url(\"#a\")"
+  }
+ ],
+ "animations": [
+  {
+   "value": "animation-1ps4q2h 25s linear infinite",
+   "n": 1,
+   "ex": [
+    {
+     "el": "div.fig-51j1vz",
+     "rect": [
+      70,
+      5971,
+      76,
+      76
+     ]
+    }
+   ]
+  }
+ ],
+ "borderImage": [],
+ "textShadow": [],
+ "atProperty": [],
+ "keyframes": [
+  "@-webkit-keyframes animation-1ps4q2h { \n  0% { rotate: 0deg; }\n  100% { rotate: 360deg; }\n}",
+  "@keyframes animation-1ps4q2h { \n  0% { rotate: 0deg; }\n  100% { rotate: 360deg; }\n}"
+ ],
+ "sheetHrefs": [
+  "https://www.figma.com/_netlify/_next/static/css/617e0bc399c83bea.css"
+ ],
+ "cssGrep": {
+  "cornerShape": {
+   "n": 0,
+   "ex": []
+  },
+  "superellipse": {
+   "n": 0,
+   "ex": []
+  },
+  "squircle": {
+   "n": 2,
+   "ex": [
+    "squircle"
+   ]
+  },
+  "feTurbulence": {
+   "n": 0,
+   "ex": []
+  },
+  "maskComposite": {
+   "n": 1,
+   "ex": [
+    "mask-composite:exclude"
+   ]
+  },
+  "atProperty": {
+   "n": 14,
+   "ex": [
+    "@property --x-backgroundColor { syntax: \"*\"; inherits: false;}",
+    "@property --x-color { syntax: \"*\"; inherits: false;}",
+    "@property --x-fill { syntax: \"*\"; inherits: false;}",
+    "@property --x-fontSize { syntax: \"*\"; inherits: false;}",
+    "@property --x-height { syntax: \"*\"; inherits: false;}",
+    "@property --x-lineHeight { syntax: \"*\"; inherits: false;}"
+   ]
+  },
+  "backdrop": {
+   "n": 40,
+   "ex": [
+    "backdrop-filter:blur(8px)",
+    "backdrop-filter:blur(40px)"
+   ]
+  },
+  "inOklab": {
+   "n": 134,
+   "ex": [
+    "in oklch"
+   ]
+  },
+  "conic": {
+   "n": 2,
+   "ex": [
+    "conic-gradient(\n                                  #00b6ff 0deg 18deg,\n                                  transparent 18deg 30deg\n                                )"
+   ]
+  },
+  "plusLighter": {
+   "n": 0,
+   "ex": []
+  },
+  "offsetPath": {
+   "n": 0,
+   "ex": []
+  },
+  "paintWorklet": {
+   "n": 0,
+   "ex": []
+  }
+ },
+ "scheme": "light",
+ "measuredAt": "2026-10-10T13:59:30.650Z",
+ "chromium": "156.0.8078.4"
+}

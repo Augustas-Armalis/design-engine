@@ -1,0 +1,331 @@
+{
+ "url": "https://www.apple.com/store",
+ "title": "Apple Store Online - Apple",
+ "svgFilters": [],
+ "canvases": [],
+ "videos": [
+  {
+   "el": "video.rc-video.rf-ccard-inline-video",
+   "rect": [
+    560,
+    655,
+    400,
+    500
+   ],
+   "src": "https://store.storevideos.cdn-apple.com/v1/store.apple.com/st/1789684605768/store-card-40-motion-iphone-duo-202609-vid1_GEO_US.mp4"
+  },
+  {
+   "el": "video.rc-video.rf-ccard-inline-video",
+   "rect": [
+    140,
+    2530,
+    400,
+    500
+   ],
+   "src": "https://store.storevideos.cdn-apple.com/v1/store.apple.com/st/1787323760889/store-card-40-upgrade-202609-vid1.mp4"
+  }
+ ],
+ "counts": {
+  "elements": 1836,
+  "shadows": 1,
+  "glass": 0,
+  "blends": 0,
+  "masks": 4,
+  "filters": 0,
+  "gradients": 0,
+  "urlBgs": 0,
+  "cornerShape": 0,
+  "clipPath": 0,
+  "borderImage": 0
+ },
+ "shadows": [
+  {
+   "value": "rgba(0, 0, 0, 0.08) 2px 4px 12px 0px",
+   "n": 60,
+   "ex": [
+    {
+     "el": "div.rf-ccard-content.rf-ccard-content-withfullimg",
+     "rect": [
+      140,
+      655,
+      400,
+      500
+     ],
+     "radius": "18px",
+     "bg": "rgb(0, 0, 0)",
+     "border": null
+    },
+    {
+     "el": "div.rf-ccard-content",
+     "rect": [
+      560,
+      655,
+      400,
+      500
+     ],
+     "radius": "18px",
+     "bg": "rgb(255, 255, 255)",
+     "border": null
+    },
+    {
+     "el": "div.rf-ccard-content.rf-ccard-content-withfullimg",
+     "rect": [
+      980,
+      655,
+      400,
+      500
+     ],
+     "radius": "18px",
+     "bg": "rgb(0, 0, 0)",
+     "border": null
+    }
+   ]
+  }
+ ],
+ "radii": [
+  {
+   "value": "18px",
+   "n": 73,
+   "ex": [
+    {
+     "el": "div.rf-productnav-card-content",
+     "h": 148
+    },
+    {
+     "el": "div.rf-productnav-card-content",
+     "h": 148
+    },
+    {
+     "el": "div.rf-productnav-card-content",
+     "h": 148
+    }
+   ]
+  },
+  {
+   "value": "56px",
+   "n": 16,
+   "ex": [
+    {
+     "el": "button.paddlenav-arrow.paddlenav-arrow-previous",
+     "h": 45
+    },
+    {
+     "el": "button.paddlenav-arrow.paddlenav-arrow-next",
+     "h": 56
+    },
+    {
+     "el": "button.paddlenav-arrow.paddlenav-arrow-previous",
+     "h": 45
+    }
+   ]
+  },
+  {
+   "value": "980px",
+   "n": 5,
+   "ex": [
+    {
+     "el": "a.rs-quicklinks-button.button.button-secondary-neutral",
+     "h": 38
+    },
+    {
+     "el": "a.rs-quicklinks-button.button.button-secondary-neutral",
+     "h": 38
+    },
+    {
+     "el": "a.rs-quicklinks-button.button.button-secondary-neutral",
+     "h": 38
+    }
+   ]
+  },
+  {
+   "value": "100%",
+   "n": 1,
+   "ex": [
+    {
+     "el": "div.rc-chaticon-container.as-util-relatedlink",
+     "h": 56
+    }
+   ]
+  },
+  {
+   "value": "50%",
+   "n": 1,
+   "ex": [
+    {
+     "el": "img",
+     "h": 54
+    }
+   ]
+  }
+ ],
+ "glass": [],
+ "blends": [],
+ "masks": [
+  {
+   "el": "video.rc-video.rf-ccard-inline-video",
+   "rect": [
+    560,
+    655,
+    400,
+    500
+   ],
+   "radius": "18px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "mask": "-webkit-radial-gradient(center, rgb(255, 255, 255), rgb(0, 0, 0))",
+   "composite": "add",
+   "maskSize": "auto",
+   "maskRepeat": "repeat",
+   "opacity": "1"
+  },
+  {
+   "el": "video.rc-video.rf-ccard-inline-video",
+   "rect": [
+    140,
+    2530,
+    400,
+    500
+   ],
+   "radius": "18px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "mask": "-webkit-radial-gradient(center, rgb(255, 255, 255), rgb(0, 0, 0))",
+   "composite": "add",
+   "maskSize": "auto",
+   "maskRepeat": "repeat",
+   "opacity": "1"
+  },
+  {
+   "el": "span.as-globalfooter-breadcrumbs-home-icon",
+   "rect": [
+    230,
+    13544,
+    14,
+    18
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0.72)",
+   "border": null,
+   "mask": "url(\"https://store.storeimages.cdn-apple.com/4982/store.apple.com/static-resources/rs-external-1.74.1-85ac2/dist/45dfd13dacaf484f3462.svg\")",
+   "composite": "add",
+   "maskSize": "auto",
+   "maskRepeat": "repeat",
+   "opacity": "1"
+  },
+  {
+   "el": "li.as-globalfooter-breadcrumbs-item::before",
+   "rect": [
+    255,
+    13544,
+    128,
+    22
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0.48)",
+   "border": null,
+   "mask": "url(\"https://store.storeimages.cdn-apple.com/4982/store.apple.com/static-resources/rs-external-1.74.1-85ac2/dist/031a5e775752813cfad5.svg\")",
+   "composite": "add",
+   "maskSize": "auto",
+   "maskRepeat": "repeat",
+   "opacity": "1"
+  }
+ ],
+ "filters": [],
+ "gradients": [],
+ "urlBgs": [],
+ "cornerShape": [],
+ "clipPath": [],
+ "animations": [
+  {
+   "value": "ribbon-drop 0.8s ease-in-out 1",
+   "n": 1,
+   "ex": [
+    {
+     "el": "div.ribbon-drop-wrapper",
+     "rect": [
+      0,
+      44,
+      1440,
+      58
+     ]
+    }
+   ]
+  }
+ ],
+ "borderImage": [],
+ "textShadow": [],
+ "atProperty": [],
+ "keyframes": [],
+ "sheetHrefs": [
+  "https://store.storeimages.cdn-apple.com/4982/store.apple.com/static-resources/rs-globalelements-2.25.0-4bbf8/dist/ac-globalnav.css",
+  "https://store.storeimages.cdn-apple.com/4982/store.apple.com/static-resources/rs-external-1.74.1-85ac2/dist/us/external.css",
+  "https://store.storeimages.cdn-apple.com/4982/store.apple.com/static-resources/rs-vendor-1.36.0-38108/dist/common-css@1.3.3/dist/common.css",
+  "https://store.storeimages.cdn-apple.com/4982/store.apple.com/static-resources/rs-merch-4.19.6-e74fc/dist/store-home.css",
+  "https://www.apple.com/wss/fonts?families=SF+Pro,v3:200,300,400,500,600|SF+Pro+Icons,v3|Apple+Monochrome+Emoji,v3|Apple+Monochrome+Emoji+Ind,v2|Graphik,v1",
+  "https://store.storeimages.cdn-apple.com/4982/store.apple.com/shop/Catalog/global/css/dd/merch/step-zero.css",
+  "https://store.storeimages.cdn-apple.com/4982/store.apple.com/shop/Catalog/global/css/web/fee/landing-pages/as-store.css"
+ ],
+ "cssGrep": {
+  "cornerShape": {
+   "n": 0,
+   "ex": []
+  },
+  "superellipse": {
+   "n": 0,
+   "ex": []
+  },
+  "squircle": {
+   "n": 0,
+   "ex": []
+  },
+  "feTurbulence": {
+   "n": 0,
+   "ex": []
+  },
+  "maskComposite": {
+   "n": 0,
+   "ex": []
+  },
+  "atProperty": {
+   "n": 2,
+   "ex": [
+    "@property --tabnav-mask-color-left{syntax:\"<color>\";inherits:true;initial-value:#0000}",
+    "@property --tabnav-mask-color-right{syntax:\"<color>\";inherits:true;initial-value:#0000}"
+   ]
+  },
+  "backdrop": {
+   "n": 64,
+   "ex": [
+    "backdrop-filter: none",
+    "backdrop-filter:var(--globalnav-backdrop-filter)",
+    "backdrop-filter:none",
+    "backdrop-filter: initial){#globalnav.globalnav-scrim,.globalnav-scrim #globalnav{--globalnav-backdrop-filter: saturate(180%) blur(20px)",
+    "backdrop-filter: initial){#globalnav.globalnav-scrim.globalnav-dark,.globalnav-scrim.globalheader-dark #globalnav,.globalnav-scrim #globalnav.globalnav-dark,.globalheader-dark #globalnav.globalnav-scrim{--globalnav-backg",
+    "backdrop-filter: initial){.globalnav-scrim.globalnav-light#globalnav,.globalnav-scrim.globalheader-dark .globalnav-light{--globalnav-background: rgba(250, 250, 252, .8)"
+   ]
+  },
+  "inOklab": {
+   "n": 0,
+   "ex": []
+  },
+  "conic": {
+   "n": 0,
+   "ex": []
+  },
+  "plusLighter": {
+   "n": 0,
+   "ex": []
+  },
+  "offsetPath": {
+   "n": 0,
+   "ex": []
+  },
+  "paintWorklet": {
+   "n": 0,
+   "ex": []
+  }
+ },
+ "scheme": "light",
+ "measuredAt": "2026-10-10T13:57:24.650Z",
+ "chromium": "156.0.8078.4"
+}

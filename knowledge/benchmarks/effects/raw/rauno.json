@@ -1,0 +1,187 @@
+{
+ "url": "https://rauno.me/",
+ "title": "Rauno Freiberg",
+ "svgFilters": [],
+ "canvases": [],
+ "videos": [],
+ "counts": {
+  "elements": 89,
+  "shadows": 0,
+  "glass": 0,
+  "blends": 1,
+  "masks": 0,
+  "filters": 0,
+  "gradients": 0,
+  "urlBgs": 0,
+  "cornerShape": 0,
+  "clipPath": 0,
+  "borderImage": 0
+ },
+ "shadows": [],
+ "radii": [
+  {
+   "value": "12px",
+   "n": 5,
+   "ex": [
+    {
+     "el": "a",
+     "h": 90
+    },
+    {
+     "el": "a",
+     "h": 90
+    },
+    {
+     "el": "a",
+     "h": 90
+    }
+   ]
+  },
+  {
+   "value": "9999px",
+   "n": 2,
+   "ex": [
+    {
+     "el": "div.c-lesPJm.c-lesPJm-ifOgKdU-css.index_circle___AjIu",
+     "h": 635
+    },
+    {
+     "el": "div.c-lesPJm.c-lesPJm-ikAXRTc-css.index_circle___AjIu",
+     "h": 635
+    }
+   ]
+  }
+ ],
+ "glass": [],
+ "blends": [
+  {
+   "el": "svg.index_cross__ZrtrX",
+   "rect": [
+    710,
+    440,
+    20,
+    20
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "blend": "difference",
+   "opacity": "1",
+   "bgImage": "none",
+   "filter": "none"
+  }
+ ],
+ "masks": [],
+ "filters": [],
+ "gradients": [],
+ "urlBgs": [],
+ "cornerShape": [],
+ "clipPath": [],
+ "animations": [
+  {
+   "value": "index_fadeFrames__RAnv2 0.35s ease-in-out 1",
+   "n": 7,
+   "ex": [
+    {
+     "el": "a.index_frame__XKrH1",
+     "rect": [
+      1285,
+      132,
+      1059,
+      635
+     ]
+    },
+    {
+     "el": "a.index_frame__XKrH1",
+     "rect": [
+      2379,
+      132,
+      1059,
+      635
+     ]
+    },
+    {
+     "el": "a.index_frame__XKrH1",
+     "rect": [
+      3473,
+      132,
+      1059,
+      635
+     ]
+    }
+   ]
+  }
+ ],
+ "borderImage": [],
+ "textShadow": [],
+ "atProperty": [],
+ "keyframes": [
+  "@keyframes fade { \n  100% { opacity: 1; }\n}",
+  "@keyframes animate { \n  100% { offset-distance: 100%; }\n}",
+  "@keyframes index_fadeFrames__RAnv2 { \n  100% { opacity: 1; }\n}"
+ ],
+ "sheetHrefs": [
+  "https://rauno.me/_next/static/css/e621362aa87785a2.css",
+  "https://rauno.me/_next/static/css/647af292b7760dc7.css"
+ ],
+ "cssGrep": {
+  "cornerShape": {
+   "n": 0,
+   "ex": []
+  },
+  "superellipse": {
+   "n": 0,
+   "ex": []
+  },
+  "squircle": {
+   "n": 0,
+   "ex": []
+  },
+  "feTurbulence": {
+   "n": 0,
+   "ex": []
+  },
+  "maskComposite": {
+   "n": 2,
+   "ex": [
+    "-webkit-mask-composite:xor",
+    "mask-composite:exclude"
+   ]
+  },
+  "atProperty": {
+   "n": 0,
+   "ex": []
+  },
+  "backdrop": {
+   "n": 2,
+   "ex": [
+    "backdrop-filter:blur(1px)"
+   ]
+  },
+  "inOklab": {
+   "n": 0,
+   "ex": []
+  },
+  "conic": {
+   "n": 0,
+   "ex": []
+  },
+  "plusLighter": {
+   "n": 0,
+   "ex": []
+  },
+  "offsetPath": {
+   "n": 1,
+   "ex": [
+    "offset-path:path(\"M 100 0 A 100 100 0 1 1 100 200 A 100 100 0 1 1 100 0\")"
+   ]
+  },
+  "paintWorklet": {
+   "n": 0,
+   "ex": []
+  }
+ },
+ "scheme": "light",
+ "measuredAt": "2026-10-10T13:59:42.179Z",
+ "chromium": "156.0.8078.4"
+}

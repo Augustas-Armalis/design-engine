@@ -1,0 +1,1276 @@
+{
+ "url": "https://www.apple.com/iphone/",
+ "title": "iPhone - Apple",
+ "svgFilters": [],
+ "canvases": [],
+ "videos": [],
+ "counts": {
+  "elements": 1375,
+  "shadows": 0,
+  "glass": 2,
+  "blends": 0,
+  "masks": 25,
+  "filters": 0,
+  "gradients": 25,
+  "urlBgs": 0,
+  "cornerShape": 0,
+  "clipPath": 0,
+  "borderImage": 0
+ },
+ "shadows": [],
+ "radii": [
+  {
+   "value": "28px",
+   "n": 45,
+   "ex": [
+    {
+     "el": "div.all-access-pass__element.play-pause-button-wrapper",
+     "h": 56
+    },
+    {
+     "el": "span.all-access-pass__background",
+     "h": 56
+    },
+    {
+     "el": "div.all-access-pass__element.aap-media-card-gallery__timed-dotnav",
+     "h": 56
+    }
+   ]
+  },
+  {
+   "value": "50%",
+   "n": 38,
+   "ex": [
+    {
+     "el": "li.colorindicator-item.colorindicator-swatch.finish-iphoneduo-star-white",
+     "h": 12
+    },
+    {
+     "el": "li.colorindicator-item.colorindicator-swatch.finish-iphoneduo-night-sky",
+     "h": 12
+    },
+    {
+     "el": "li.colorindicator-item.colorindicator-swatch.finish-iphone18pro-red",
+     "h": 12
+    }
+   ]
+  },
+  {
+   "value": "20px",
+   "n": 20,
+   "ex": [
+    {
+     "el": "li.product-wrap.product-wrap--iphone-duo.chapternav-item.chapternav-item-iphone-duo",
+     "h": 111
+    },
+    {
+     "el": "a.product-link.chapternav-link",
+     "h": 111
+    },
+    {
+     "el": "li.product-wrap.product-wrap--iphone-18-pro.chapternav-item.chapternav-item-iphone-18-pro",
+     "h": 111
+    }
+   ]
+  },
+  {
+   "value": "980px",
+   "n": 8,
+   "ex": [
+    {
+     "el": "a.button.button-elevated",
+     "h": 44
+    },
+    {
+     "el": "a.button.button-elevated",
+     "h": 44
+    },
+    {
+     "el": "a.action-handler.button.product-tile-button",
+     "h": 44
+    }
+   ]
+  },
+  {
+   "value": "36px",
+   "n": 6,
+   "ex": [
+    {
+     "el": "button.paddlenav-arrow.paddlenav-arrow-previous",
+     "h": 36
+    },
+    {
+     "el": "button.paddlenav-arrow.paddlenav-arrow-next",
+     "h": 36
+    },
+    {
+     "el": "button.paddlenav-arrow.paddlenav-arrow-previous",
+     "h": 36
+    }
+   ]
+  },
+  {
+   "value": "10px",
+   "n": 2,
+   "ex": [
+    {
+     "el": "a#media-card-gallery-item-1-trigger.dotnav-link.current",
+     "h": 8
+    },
+    {
+     "el": "a#media-card-gallery-item-2-trigger.dotnav-link",
+     "h": 8
+    }
+   ]
+  },
+  {
+   "value": "11px",
+   "n": 1,
+   "ex": [
+    {
+     "el": "div#ac-ls-dropdown-select.ac-ls-dropdown-select",
+     "h": 42
+    }
+   ]
+  },
+  {
+   "value": "8px",
+   "n": 1,
+   "ex": [
+    {
+     "el": "a#ac-ls-continue.ac-ls-button.ac-ls-actions-item.ac-ls-continue",
+     "h": 36
+    }
+   ]
+  },
+  {
+   "value": "56px",
+   "n": 1,
+   "ex": [
+    {
+     "el": "div.all-access-pass__intro-element",
+     "h": 45
+    }
+   ]
+  },
+  {
+   "value": "32px",
+   "n": 1,
+   "ex": [
+    {
+     "el": "button.play-pause-button.all-access-pass__play-pause-button.aap-media-card-gallery__button",
+     "h": 56
+    }
+   ]
+  }
+ ],
+ "glass": [
+  {
+   "el": "span.all-access-pass__background",
+   "rect": [
+    760,
+    812,
+    56,
+    56
+   ],
+   "radius": "28px",
+   "bg": "rgba(232, 232, 237, 0.72)",
+   "border": null,
+   "backdropFilter": "blur(7px)",
+   "bgImage": "none",
+   "boxShadow": "none",
+   "opacity": "1"
+  },
+  {
+   "el": "span.all-access-pass__background",
+   "rect": [
+    624,
+    812,
+    120,
+    56
+   ],
+   "radius": "28px",
+   "bg": "rgba(232, 232, 237, 0.72)",
+   "border": null,
+   "backdropFilter": "blur(7px)",
+   "bgImage": "none",
+   "boxShadow": "none",
+   "opacity": "1"
+  }
+ ],
+ "blends": [],
+ "masks": [
+  {
+   "el": "li.colorindicator-item.colorindicator-swatch.finish-iphoneduo-star-white::after",
+   "rect": [
+    261,
+    2115,
+    12,
+    12
+   ],
+   "radius": "50%",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "mask": "radial-gradient(circle, rgba(0, 0, 0, 0) 4.5px, rgb(0, 0, 0) 5.5px)",
+   "composite": "add",
+   "maskSize": "100% 100%",
+   "maskRepeat": "repeat",
+   "opacity": "1"
+  },
+  {
+   "el": "li.colorindicator-item.colorindicator-swatch.finish-iphoneduo-night-sky::after",
+   "rect": [
+    279,
+    2115,
+    12,
+    12
+   ],
+   "radius": "50%",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "mask": "radial-gradient(circle, rgba(0, 0, 0, 0) 4.5px, rgb(0, 0, 0) 5.5px)",
+   "composite": "add",
+   "maskSize": "100% 100%",
+   "maskRepeat": "repeat",
+   "opacity": "1"
+  },
+  {
+   "el": "li.colorindicator-item.colorindicator-swatch.finish-iphone18pro-red::after",
+   "rect": [
+    635,
+    2115,
+    12,
+    12
+   ],
+   "radius": "50%",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "mask": "radial-gradient(circle, rgba(0, 0, 0, 0) 4.5px, rgb(0, 0, 0) 5.5px)",
+   "composite": "add",
+   "maskSize": "100% 100%",
+   "maskRepeat": "repeat",
+   "opacity": "1"
+  },
+  {
+   "el": "li.colorindicator-item.colorindicator-swatch.finish-iphone18pro-blue::after",
+   "rect": [
+    653,
+    2115,
+    12,
+    12
+   ],
+   "radius": "50%",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "mask": "radial-gradient(circle, rgba(0, 0, 0, 0) 4.5px, rgb(0, 0, 0) 5.5px)",
+   "composite": "add",
+   "maskSize": "100% 100%",
+   "maskRepeat": "repeat",
+   "opacity": "1"
+  },
+  {
+   "el": "li.colorindicator-item.colorindicator-swatch.finish-iphone18pro-white::after",
+   "rect": [
+    671,
+    2115,
+    12,
+    12
+   ],
+   "radius": "50%",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "mask": "radial-gradient(circle, rgba(0, 0, 0, 0) 4.5px, rgb(0, 0, 0) 5.5px)",
+   "composite": "add",
+   "maskSize": "100% 100%",
+   "maskRepeat": "repeat",
+   "opacity": "1"
+  },
+  {
+   "el": "li.colorindicator-item.colorindicator-swatch.finish-iphone18pro-black::after",
+   "rect": [
+    689,
+    2115,
+    12,
+    12
+   ],
+   "radius": "50%",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "mask": "radial-gradient(circle, rgba(0, 0, 0, 0) 4.5px, rgb(0, 0, 0) 5.5px)",
+   "composite": "add",
+   "maskSize": "100% 100%",
+   "maskRepeat": "repeat",
+   "opacity": "1"
+  },
+  {
+   "el": "li.colorindicator-item.colorindicator-swatch.finish-iphone-air-blue::after",
+   "rect": [
+    1027,
+    2115,
+    12,
+    12
+   ],
+   "radius": "50%",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "mask": "radial-gradient(circle, rgba(0, 0, 0, 0) 4.5px, rgb(0, 0, 0) 5.5px)",
+   "composite": "add",
+   "maskSize": "100% 100%",
+   "maskRepeat": "repeat",
+   "opacity": "1"
+  },
+  {
+   "el": "li.colorindicator-item.colorindicator-swatch.finish-iphone-air-gold::after",
+   "rect": [
+    1045,
+    2115,
+    12,
+    12
+   ],
+   "radius": "50%",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "mask": "radial-gradient(circle, rgba(0, 0, 0, 0) 4.5px, rgb(0, 0, 0) 5.5px)",
+   "composite": "add",
+   "maskSize": "100% 100%",
+   "maskRepeat": "repeat",
+   "opacity": "1"
+  },
+  {
+   "el": "li.colorindicator-item.colorindicator-swatch.finish-iphone-air-white::after",
+   "rect": [
+    1063,
+    2115,
+    12,
+    12
+   ],
+   "radius": "50%",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "mask": "radial-gradient(circle, rgba(0, 0, 0, 0) 4.5px, rgb(0, 0, 0) 5.5px)",
+   "composite": "add",
+   "maskSize": "100% 100%",
+   "maskRepeat": "repeat",
+   "opacity": "1"
+  },
+  {
+   "el": "li.colorindicator-item.colorindicator-swatch.finish-iphone-air-black::after",
+   "rect": [
+    1081,
+    2115,
+    12,
+    12
+   ],
+   "radius": "50%",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "mask": "radial-gradient(circle, rgba(0, 0, 0, 0) 4.5px, rgb(0, 0, 0) 5.5px)",
+   "composite": "add",
+   "maskSize": "100% 100%",
+   "maskRepeat": "repeat",
+   "opacity": "1"
+  },
+  {
+   "el": "li.colorindicator-item.colorindicator-swatch.finish-lavender::after",
+   "rect": [
+    1410,
+    2115,
+    12,
+    12
+   ],
+   "radius": "50%",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "mask": "radial-gradient(circle, rgba(0, 0, 0, 0) 4.5px, rgb(0, 0, 0) 5.5px)",
+   "composite": "add",
+   "maskSize": "100% 100%",
+   "maskRepeat": "repeat",
+   "opacity": "1"
+  },
+  {
+   "el": "li.colorindicator-item.colorindicator-swatch.finish-sage::after",
+   "rect": [
+    1428,
+    2115,
+    12,
+    12
+   ],
+   "radius": "50%",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "mask": "radial-gradient(circle, rgba(0, 0, 0, 0) 4.5px, rgb(0, 0, 0) 5.5px)",
+   "composite": "add",
+   "maskSize": "100% 100%",
+   "maskRepeat": "repeat",
+   "opacity": "1"
+  },
+  {
+   "el": "li.colorindicator-item.colorindicator-swatch.finish-mist-blue::after",
+   "rect": [
+    1446,
+    2115,
+    12,
+    12
+   ],
+   "radius": "50%",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "mask": "radial-gradient(circle, rgba(0, 0, 0, 0) 4.5px, rgb(0, 0, 0) 5.5px)",
+   "composite": "add",
+   "maskSize": "100% 100%",
+   "maskRepeat": "repeat",
+   "opacity": "1"
+  },
+  {
+   "el": "li.colorindicator-item.colorindicator-swatch.finish-white::after",
+   "rect": [
+    1464,
+    2115,
+    12,
+    12
+   ],
+   "radius": "50%",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "mask": "radial-gradient(circle, rgba(0, 0, 0, 0) 4.5px, rgb(0, 0, 0) 5.5px)",
+   "composite": "add",
+   "maskSize": "100% 100%",
+   "maskRepeat": "repeat",
+   "opacity": "1"
+  },
+  {
+   "el": "li.colorindicator-item.colorindicator-swatch.finish-black::after",
+   "rect": [
+    1482,
+    2115,
+    12,
+    12
+   ],
+   "radius": "50%",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "mask": "radial-gradient(circle, rgba(0, 0, 0, 0) 4.5px, rgb(0, 0, 0) 5.5px)",
+   "composite": "add",
+   "maskSize": "100% 100%",
+   "maskRepeat": "repeat",
+   "opacity": "1"
+  },
+  {
+   "el": "li.colorindicator-item.colorindicator-swatch.finish-iphone-17e-pink::after",
+   "rect": [
+    1820,
+    2115,
+    12,
+    12
+   ],
+   "radius": "50%",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "mask": "radial-gradient(circle, rgba(0, 0, 0, 0) 4.5px, rgb(0, 0, 0) 5.5px)",
+   "composite": "add",
+   "maskSize": "100% 100%",
+   "maskRepeat": "repeat",
+   "opacity": "1"
+  },
+  {
+   "el": "li.colorindicator-item.colorindicator-swatch.finish-iphone-17e-white::after",
+   "rect": [
+    1838,
+    2115,
+    12,
+    12
+   ],
+   "radius": "50%",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "mask": "radial-gradient(circle, rgba(0, 0, 0, 0) 4.5px, rgb(0, 0, 0) 5.5px)",
+   "composite": "add",
+   "maskSize": "100% 100%",
+   "maskRepeat": "repeat",
+   "opacity": "1"
+  },
+  {
+   "el": "li.colorindicator-item.colorindicator-swatch.finish-iphone-17e-black::after",
+   "rect": [
+    1856,
+    2115,
+    12,
+    12
+   ],
+   "radius": "50%",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "mask": "radial-gradient(circle, rgba(0, 0, 0, 0) 4.5px, rgb(0, 0, 0) 5.5px)",
+   "composite": "add",
+   "maskSize": "100% 100%",
+   "maskRepeat": "repeat",
+   "opacity": "1"
+  },
+  {
+   "el": "li.colorindicator-item.colorindicator-swatch.finish-ultramarine::after",
+   "rect": [
+    2194,
+    2115,
+    12,
+    12
+   ],
+   "radius": "50%",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "mask": "radial-gradient(circle, rgba(0, 0, 0, 0) 4.5px, rgb(0, 0, 0) 5.5px)",
+   "composite": "add",
+   "maskSize": "100% 100%",
+   "maskRepeat": "repeat",
+   "opacity": "1"
+  },
+  {
+   "el": "li.colorindicator-item.colorindicator-swatch.finish-teal::after",
+   "rect": [
+    2212,
+    2115,
+    12,
+    12
+   ],
+   "radius": "50%",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "mask": "radial-gradient(circle, rgba(0, 0, 0, 0) 4.5px, rgb(0, 0, 0) 5.5px)",
+   "composite": "add",
+   "maskSize": "100% 100%",
+   "maskRepeat": "repeat",
+   "opacity": "1"
+  },
+  {
+   "el": "li.colorindicator-item.colorindicator-swatch.finish-pink::after",
+   "rect": [
+    2230,
+    2115,
+    12,
+    12
+   ],
+   "radius": "50%",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "mask": "radial-gradient(circle, rgba(0, 0, 0, 0) 4.5px, rgb(0, 0, 0) 5.5px)",
+   "composite": "add",
+   "maskSize": "100% 100%",
+   "maskRepeat": "repeat",
+   "opacity": "1"
+  },
+  {
+   "el": "li.colorindicator-item.colorindicator-swatch.finish-white::after",
+   "rect": [
+    2248,
+    2115,
+    12,
+    12
+   ],
+   "radius": "50%",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "mask": "radial-gradient(circle, rgba(0, 0, 0, 0) 4.5px, rgb(0, 0, 0) 5.5px)",
+   "composite": "add",
+   "maskSize": "100% 100%",
+   "maskRepeat": "repeat",
+   "opacity": "1"
+  },
+  {
+   "el": "li.colorindicator-item.colorindicator-swatch.finish-black::after",
+   "rect": [
+    2266,
+    2115,
+    12,
+    12
+   ],
+   "radius": "50%",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "mask": "radial-gradient(circle, rgba(0, 0, 0, 0) 4.5px, rgb(0, 0, 0) 5.5px)",
+   "composite": "add",
+   "maskSize": "100% 100%",
+   "maskRepeat": "repeat",
+   "opacity": "1"
+  },
+  {
+   "el": "span.ac-gf-breadcrumbs-home-icon",
+   "rect": [
+    230,
+    16351,
+    14,
+    18
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0.72)",
+   "border": null,
+   "mask": "url(\"https://www.apple.com/ac/globalfooter/8/en_US/assets/ac-footer/breadcrumbs/apple/icon_large.svg\")",
+   "composite": "add",
+   "maskSize": "auto",
+   "maskRepeat": "repeat",
+   "opacity": "1"
+  },
+  {
+   "el": "li.ac-gf-breadcrumbs-item::before",
+   "rect": [
+    256,
+    16351,
+    59,
+    24
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0.48)",
+   "border": null,
+   "mask": "url(\"https://www.apple.com/ac/globalfooter/8/en_US/assets/ac-footer/breadcrumbs/separator/icon_large.svg\")",
+   "composite": "add",
+   "maskSize": "auto",
+   "maskRepeat": "repeat",
+   "opacity": "1"
+  }
+ ],
+ "filters": [],
+ "gradients": [
+  {
+   "el": "button.paddlenav.paddlenav-left.disabled::before",
+   "rect": [
+    90,
+    360,
+    50,
+    130
+   ],
+   "radius": "0px",
+   "bg": "linear-gradient(90deg, rgba(134, 134, 139, 0.07), rgba(0, 0, 0, 0))",
+   "border": null,
+   "size": "auto",
+   "clip": "border-box",
+   "opacity": "1",
+   "blend": "normal",
+   "bgBlend": "normal"
+  },
+  {
+   "el": "button.paddlenav.paddlenav-right.disabled::before",
+   "rect": [
+    1300,
+    360,
+    50,
+    130
+   ],
+   "radius": "0px",
+   "bg": "linear-gradient(270deg, rgba(134, 134, 139, 0.07), rgba(0, 0, 0, 0))",
+   "border": null,
+   "size": "auto",
+   "clip": "border-box",
+   "opacity": "1",
+   "blend": "normal",
+   "bgBlend": "normal"
+  },
+  {
+   "el": "li.colorindicator-item.colorindicator-swatch.finish-iphoneduo-star-white::after",
+   "rect": [
+    261,
+    2115,
+    12,
+    12
+   ],
+   "radius": "50%",
+   "bg": "conic-gradient(from 270deg, rgba(0, 0, 0, 0.08) 0deg, rgba(0, 0, 0, 0.48) 64.8deg, rgba(0, 0, 0, 0.48) 115.2deg, rgba(0, 0, 0, 0.08) 180deg, rgba(0, 0, 0, 0) 208.8deg, rgba(0, 0, 0, 0) 331.2deg, rgba(0, 0, 0, 0.08) 360deg)",
+   "border": null,
+   "size": "auto",
+   "clip": "border-box",
+   "opacity": "1",
+   "blend": "normal",
+   "bgBlend": "normal"
+  },
+  {
+   "el": "li.colorindicator-item.colorindicator-swatch.finish-iphoneduo-night-sky::after",
+   "rect": [
+    279,
+    2115,
+    12,
+    12
+   ],
+   "radius": "50%",
+   "bg": "conic-gradient(from 270deg, rgba(0, 0, 0, 0.08) 0deg, rgba(0, 0, 0, 0.48) 64.8deg, rgba(0, 0, 0, 0.48) 115.2deg, rgba(0, 0, 0, 0.08) 180deg, rgba(0, 0, 0, 0) 208.8deg, rgba(0, 0, 0, 0) 331.2deg, rgba(0, 0, 0, 0.08) 360deg)",
+   "border": null,
+   "size": "auto",
+   "clip": "border-box",
+   "opacity": "1",
+   "blend": "normal",
+   "bgBlend": "normal"
+  },
+  {
+   "el": "li.colorindicator-item.colorindicator-swatch.finish-iphone18pro-red::after",
+   "rect": [
+    635,
+    2115,
+    12,
+    12
+   ],
+   "radius": "50%",
+   "bg": "conic-gradient(from 270deg, rgba(0, 0, 0, 0.08) 0deg, rgba(0, 0, 0, 0.48) 64.8deg, rgba(0, 0, 0, 0.48) 115.2deg, rgba(0, 0, 0, 0.08) 180deg, rgba(0, 0, 0, 0) 208.8deg, rgba(0, 0, 0, 0) 331.2deg, rgba(0, 0, 0, 0.08) 360deg)",
+   "border": null,
+   "size": "auto",
+   "clip": "border-box",
+   "opacity": "1",
+   "blend": "normal",
+   "bgBlend": "normal"
+  },
+  {
+   "el": "li.colorindicator-item.colorindicator-swatch.finish-iphone18pro-blue::after",
+   "rect": [
+    653,
+    2115,
+    12,
+    12
+   ],
+   "radius": "50%",
+   "bg": "conic-gradient(from 270deg, rgba(0, 0, 0, 0.08) 0deg, rgba(0, 0, 0, 0.48) 64.8deg, rgba(0, 0, 0, 0.48) 115.2deg, rgba(0, 0, 0, 0.08) 180deg, rgba(0, 0, 0, 0) 208.8deg, rgba(0, 0, 0, 0) 331.2deg, rgba(0, 0, 0, 0.08) 360deg)",
+   "border": null,
+   "size": "auto",
+   "clip": "border-box",
+   "opacity": "1",
+   "blend": "normal",
+   "bgBlend": "normal"
+  },
+  {
+   "el": "li.colorindicator-item.colorindicator-swatch.finish-iphone18pro-white::after",
+   "rect": [
+    671,
+    2115,
+    12,
+    12
+   ],
+   "radius": "50%",
+   "bg": "conic-gradient(from 270deg, rgba(0, 0, 0, 0.08) 0deg, rgba(0, 0, 0, 0.48) 64.8deg, rgba(0, 0, 0, 0.48) 115.2deg, rgba(0, 0, 0, 0.08) 180deg, rgba(0, 0, 0, 0) 208.8deg, rgba(0, 0, 0, 0) 331.2deg, rgba(0, 0, 0, 0.08) 360deg)",
+   "border": null,
+   "size": "auto",
+   "clip": "border-box",
+   "opacity": "1",
+   "blend": "normal",
+   "bgBlend": "normal"
+  },
+  {
+   "el": "li.colorindicator-item.colorindicator-swatch.finish-iphone18pro-black::after",
+   "rect": [
+    689,
+    2115,
+    12,
+    12
+   ],
+   "radius": "50%",
+   "bg": "conic-gradient(from 270deg, rgba(0, 0, 0, 0.08) 0deg, rgba(0, 0, 0, 0.48) 64.8deg, rgba(0, 0, 0, 0.48) 115.2deg, rgba(0, 0, 0, 0.08) 180deg, rgba(0, 0, 0, 0) 208.8deg, rgba(0, 0, 0, 0) 331.2deg, rgba(0, 0, 0, 0.08) 360deg)",
+   "border": null,
+   "size": "auto",
+   "clip": "border-box",
+   "opacity": "1",
+   "blend": "normal",
+   "bgBlend": "normal"
+  },
+  {
+   "el": "li.colorindicator-item.colorindicator-swatch.finish-iphone-air-blue::after",
+   "rect": [
+    1027,
+    2115,
+    12,
+    12
+   ],
+   "radius": "50%",
+   "bg": "conic-gradient(from 270deg, rgba(0, 0, 0, 0.08) 0deg, rgba(0, 0, 0, 0.48) 64.8deg, rgba(0, 0, 0, 0.48) 115.2deg, rgba(0, 0, 0, 0.08) 180deg, rgba(0, 0, 0, 0) 208.8deg, rgba(0, 0, 0, 0) 331.2deg, rgba(0, 0, 0, 0.08) 360deg)",
+   "border": null,
+   "size": "auto",
+   "clip": "border-box",
+   "opacity": "1",
+   "blend": "normal",
+   "bgBlend": "normal"
+  },
+  {
+   "el": "li.colorindicator-item.colorindicator-swatch.finish-iphone-air-gold::after",
+   "rect": [
+    1045,
+    2115,
+    12,
+    12
+   ],
+   "radius": "50%",
+   "bg": "conic-gradient(from 270deg, rgba(0, 0, 0, 0.08) 0deg, rgba(0, 0, 0, 0.48) 64.8deg, rgba(0, 0, 0, 0.48) 115.2deg, rgba(0, 0, 0, 0.08) 180deg, rgba(0, 0, 0, 0) 208.8deg, rgba(0, 0, 0, 0) 331.2deg, rgba(0, 0, 0, 0.08) 360deg)",
+   "border": null,
+   "size": "auto",
+   "clip": "border-box",
+   "opacity": "1",
+   "blend": "normal",
+   "bgBlend": "normal"
+  },
+  {
+   "el": "li.colorindicator-item.colorindicator-swatch.finish-iphone-air-white::after",
+   "rect": [
+    1063,
+    2115,
+    12,
+    12
+   ],
+   "radius": "50%",
+   "bg": "conic-gradient(from 270deg, rgba(0, 0, 0, 0.08) 0deg, rgba(0, 0, 0, 0.48) 64.8deg, rgba(0, 0, 0, 0.48) 115.2deg, rgba(0, 0, 0, 0.08) 180deg, rgba(0, 0, 0, 0) 208.8deg, rgba(0, 0, 0, 0) 331.2deg, rgba(0, 0, 0, 0.08) 360deg)",
+   "border": null,
+   "size": "auto",
+   "clip": "border-box",
+   "opacity": "1",
+   "blend": "normal",
+   "bgBlend": "normal"
+  },
+  {
+   "el": "li.colorindicator-item.colorindicator-swatch.finish-iphone-air-black::after",
+   "rect": [
+    1081,
+    2115,
+    12,
+    12
+   ],
+   "radius": "50%",
+   "bg": "conic-gradient(from 270deg, rgba(0, 0, 0, 0.08) 0deg, rgba(0, 0, 0, 0.48) 64.8deg, rgba(0, 0, 0, 0.48) 115.2deg, rgba(0, 0, 0, 0.08) 180deg, rgba(0, 0, 0, 0) 208.8deg, rgba(0, 0, 0, 0) 331.2deg, rgba(0, 0, 0, 0.08) 360deg)",
+   "border": null,
+   "size": "auto",
+   "clip": "border-box",
+   "opacity": "1",
+   "blend": "normal",
+   "bgBlend": "normal"
+  },
+  {
+   "el": "li.colorindicator-item.colorindicator-swatch.finish-lavender::after",
+   "rect": [
+    1410,
+    2115,
+    12,
+    12
+   ],
+   "radius": "50%",
+   "bg": "conic-gradient(from 270deg, rgba(0, 0, 0, 0.08) 0deg, rgba(0, 0, 0, 0.48) 64.8deg, rgba(0, 0, 0, 0.48) 115.2deg, rgba(0, 0, 0, 0.08) 180deg, rgba(0, 0, 0, 0) 208.8deg, rgba(0, 0, 0, 0) 331.2deg, rgba(0, 0, 0, 0.08) 360deg)",
+   "border": null,
+   "size": "auto",
+   "clip": "border-box",
+   "opacity": "1",
+   "blend": "normal",
+   "bgBlend": "normal"
+  },
+  {
+   "el": "li.colorindicator-item.colorindicator-swatch.finish-sage::after",
+   "rect": [
+    1428,
+    2115,
+    12,
+    12
+   ],
+   "radius": "50%",
+   "bg": "conic-gradient(from 270deg, rgba(0, 0, 0, 0.08) 0deg, rgba(0, 0, 0, 0.48) 64.8deg, rgba(0, 0, 0, 0.48) 115.2deg, rgba(0, 0, 0, 0.08) 180deg, rgba(0, 0, 0, 0) 208.8deg, rgba(0, 0, 0, 0) 331.2deg, rgba(0, 0, 0, 0.08) 360deg)",
+   "border": null,
+   "size": "auto",
+   "clip": "border-box",
+   "opacity": "1",
+   "blend": "normal",
+   "bgBlend": "normal"
+  },
+  {
+   "el": "li.colorindicator-item.colorindicator-swatch.finish-mist-blue::after",
+   "rect": [
+    1446,
+    2115,
+    12,
+    12
+   ],
+   "radius": "50%",
+   "bg": "conic-gradient(from 270deg, rgba(0, 0, 0, 0.08) 0deg, rgba(0, 0, 0, 0.48) 64.8deg, rgba(0, 0, 0, 0.48) 115.2deg, rgba(0, 0, 0, 0.08) 180deg, rgba(0, 0, 0, 0) 208.8deg, rgba(0, 0, 0, 0) 331.2deg, rgba(0, 0, 0, 0.08) 360deg)",
+   "border": null,
+   "size": "auto",
+   "clip": "border-box",
+   "opacity": "1",
+   "blend": "normal",
+   "bgBlend": "normal"
+  },
+  {
+   "el": "li.colorindicator-item.colorindicator-swatch.finish-white::after",
+   "rect": [
+    1464,
+    2115,
+    12,
+    12
+   ],
+   "radius": "50%",
+   "bg": "conic-gradient(from 270deg, rgba(0, 0, 0, 0.08) 0deg, rgba(0, 0, 0, 0.48) 64.8deg, rgba(0, 0, 0, 0.48) 115.2deg, rgba(0, 0, 0, 0.08) 180deg, rgba(0, 0, 0, 0) 208.8deg, rgba(0, 0, 0, 0) 331.2deg, rgba(0, 0, 0, 0.08) 360deg)",
+   "border": null,
+   "size": "auto",
+   "clip": "border-box",
+   "opacity": "1",
+   "blend": "normal",
+   "bgBlend": "normal"
+  },
+  {
+   "el": "li.colorindicator-item.colorindicator-swatch.finish-black::after",
+   "rect": [
+    1482,
+    2115,
+    12,
+    12
+   ],
+   "radius": "50%",
+   "bg": "conic-gradient(from 270deg, rgba(0, 0, 0, 0.08) 0deg, rgba(0, 0, 0, 0.48) 64.8deg, rgba(0, 0, 0, 0.48) 115.2deg, rgba(0, 0, 0, 0.08) 180deg, rgba(0, 0, 0, 0) 208.8deg, rgba(0, 0, 0, 0) 331.2deg, rgba(0, 0, 0, 0.08) 360deg)",
+   "border": null,
+   "size": "auto",
+   "clip": "border-box",
+   "opacity": "1",
+   "blend": "normal",
+   "bgBlend": "normal"
+  },
+  {
+   "el": "li.colorindicator-item.colorindicator-swatch.finish-iphone-17e-pink::after",
+   "rect": [
+    1820,
+    2115,
+    12,
+    12
+   ],
+   "radius": "50%",
+   "bg": "conic-gradient(from 270deg, rgba(0, 0, 0, 0.08) 0deg, rgba(0, 0, 0, 0.48) 64.8deg, rgba(0, 0, 0, 0.48) 115.2deg, rgba(0, 0, 0, 0.08) 180deg, rgba(0, 0, 0, 0) 208.8deg, rgba(0, 0, 0, 0) 331.2deg, rgba(0, 0, 0, 0.08) 360deg)",
+   "border": null,
+   "size": "auto",
+   "clip": "border-box",
+   "opacity": "1",
+   "blend": "normal",
+   "bgBlend": "normal"
+  },
+  {
+   "el": "li.colorindicator-item.colorindicator-swatch.finish-iphone-17e-white::after",
+   "rect": [
+    1838,
+    2115,
+    12,
+    12
+   ],
+   "radius": "50%",
+   "bg": "conic-gradient(from 270deg, rgba(0, 0, 0, 0.08) 0deg, rgba(0, 0, 0, 0.48) 64.8deg, rgba(0, 0, 0, 0.48) 115.2deg, rgba(0, 0, 0, 0.08) 180deg, rgba(0, 0, 0, 0) 208.8deg, rgba(0, 0, 0, 0) 331.2deg, rgba(0, 0, 0, 0.08) 360deg)",
+   "border": null,
+   "size": "auto",
+   "clip": "border-box",
+   "opacity": "1",
+   "blend": "normal",
+   "bgBlend": "normal"
+  },
+  {
+   "el": "li.colorindicator-item.colorindicator-swatch.finish-iphone-17e-black::after",
+   "rect": [
+    1856,
+    2115,
+    12,
+    12
+   ],
+   "radius": "50%",
+   "bg": "conic-gradient(from 270deg, rgba(0, 0, 0, 0.08) 0deg, rgba(0, 0, 0, 0.48) 64.8deg, rgba(0, 0, 0, 0.48) 115.2deg, rgba(0, 0, 0, 0.08) 180deg, rgba(0, 0, 0, 0) 208.8deg, rgba(0, 0, 0, 0) 331.2deg, rgba(0, 0, 0, 0.08) 360deg)",
+   "border": null,
+   "size": "auto",
+   "clip": "border-box",
+   "opacity": "1",
+   "blend": "normal",
+   "bgBlend": "normal"
+  },
+  {
+   "el": "li.colorindicator-item.colorindicator-swatch.finish-ultramarine::after",
+   "rect": [
+    2194,
+    2115,
+    12,
+    12
+   ],
+   "radius": "50%",
+   "bg": "conic-gradient(from 270deg, rgba(0, 0, 0, 0.08) 0deg, rgba(0, 0, 0, 0.48) 64.8deg, rgba(0, 0, 0, 0.48) 115.2deg, rgba(0, 0, 0, 0.08) 180deg, rgba(0, 0, 0, 0) 208.8deg, rgba(0, 0, 0, 0) 331.2deg, rgba(0, 0, 0, 0.08) 360deg)",
+   "border": null,
+   "size": "auto",
+   "clip": "border-box",
+   "opacity": "1",
+   "blend": "normal",
+   "bgBlend": "normal"
+  },
+  {
+   "el": "li.colorindicator-item.colorindicator-swatch.finish-teal::after",
+   "rect": [
+    2212,
+    2115,
+    12,
+    12
+   ],
+   "radius": "50%",
+   "bg": "conic-gradient(from 270deg, rgba(0, 0, 0, 0.08) 0deg, rgba(0, 0, 0, 0.48) 64.8deg, rgba(0, 0, 0, 0.48) 115.2deg, rgba(0, 0, 0, 0.08) 180deg, rgba(0, 0, 0, 0) 208.8deg, rgba(0, 0, 0, 0) 331.2deg, rgba(0, 0, 0, 0.08) 360deg)",
+   "border": null,
+   "size": "auto",
+   "clip": "border-box",
+   "opacity": "1",
+   "blend": "normal",
+   "bgBlend": "normal"
+  },
+  {
+   "el": "li.colorindicator-item.colorindicator-swatch.finish-pink::after",
+   "rect": [
+    2230,
+    2115,
+    12,
+    12
+   ],
+   "radius": "50%",
+   "bg": "conic-gradient(from 270deg, rgba(0, 0, 0, 0.08) 0deg, rgba(0, 0, 0, 0.48) 64.8deg, rgba(0, 0, 0, 0.48) 115.2deg, rgba(0, 0, 0, 0.08) 180deg, rgba(0, 0, 0, 0) 208.8deg, rgba(0, 0, 0, 0) 331.2deg, rgba(0, 0, 0, 0.08) 360deg)",
+   "border": null,
+   "size": "auto",
+   "clip": "border-box",
+   "opacity": "1",
+   "blend": "normal",
+   "bgBlend": "normal"
+  },
+  {
+   "el": "li.colorindicator-item.colorindicator-swatch.finish-white::after",
+   "rect": [
+    2248,
+    2115,
+    12,
+    12
+   ],
+   "radius": "50%",
+   "bg": "conic-gradient(from 270deg, rgba(0, 0, 0, 0.08) 0deg, rgba(0, 0, 0, 0.48) 64.8deg, rgba(0, 0, 0, 0.48) 115.2deg, rgba(0, 0, 0, 0.08) 180deg, rgba(0, 0, 0, 0) 208.8deg, rgba(0, 0, 0, 0) 331.2deg, rgba(0, 0, 0, 0.08) 360deg)",
+   "border": null,
+   "size": "auto",
+   "clip": "border-box",
+   "opacity": "1",
+   "blend": "normal",
+   "bgBlend": "normal"
+  },
+  {
+   "el": "li.colorindicator-item.colorindicator-swatch.finish-black::after",
+   "rect": [
+    2266,
+    2115,
+    12,
+    12
+   ],
+   "radius": "50%",
+   "bg": "conic-gradient(from 270deg, rgba(0, 0, 0, 0.08) 0deg, rgba(0, 0, 0, 0.48) 64.8deg, rgba(0, 0, 0, 0.48) 115.2deg, rgba(0, 0, 0, 0.08) 180deg, rgba(0, 0, 0, 0) 208.8deg, rgba(0, 0, 0, 0) 331.2deg, rgba(0, 0, 0, 0.08) 360deg)",
+   "border": null,
+   "size": "auto",
+   "clip": "border-box",
+   "opacity": "1",
+   "blend": "normal",
+   "bgBlend": "normal"
+  }
+ ],
+ "urlBgs": [],
+ "cornerShape": [],
+ "clipPath": [],
+ "animations": [
+  {
+   "value": "link-in 0.32s ease 1",
+   "n": 29,
+   "ex": [
+    {
+     "el": "h3#index-d836f05a.typography-index-list-title.index-list-title",
+     "rect": [
+      90,
+      6540,
+      224,
+      21
+     ]
+    },
+    {
+     "el": "li.index-item.typography-index-item-elevated.index-item-elevated",
+     "rect": [
+      90,
+      6574,
+      224,
+      32
+     ]
+    },
+    {
+     "el": "li.index-item.typography-index-item-elevated.index-item-elevated",
+     "rect": [
+      90,
+      6617,
+      224,
+      32
+     ]
+    }
+   ]
+  },
+  {
+   "value": "animate-background-f5f5f7-f5f5f7 1s cubic-bezier(0.42, 0, 0.58, 1) 1",
+   "n": 1,
+   "ex": [
+    {
+     "el": "div.ac-ribbon__upgrade-2026-content-wrapper",
+     "rect": [
+      0,
+      114,
+      1440,
+      46
+     ]
+    }
+   ]
+  },
+  {
+   "value": "animate-color-1d1d1f-1d1d1f 1s cubic-bezier(0.42, 0, 0.58, 1) 1",
+   "n": 1,
+   "ex": [
+    {
+     "el": "div.ac-ribbon__upgrade-2026-content.row",
+     "rect": [
+      230,
+      127,
+      980,
+      20
+     ]
+    }
+   ]
+  },
+  {
+   "value": "animate-color-06c-06c 1s cubic-bezier(0.42, 0, 0.58, 1) 1",
+   "n": 1,
+   "ex": [
+    {
+     "el": "a.icon-wrapper.ac-ribbon__upgrade-2026-link.upgrade-2026-link",
+     "rect": [
+      1084,
+      129,
+      82,
+      16
+     ]
+    }
+   ]
+  },
+  {
+   "value": "aap-animate-progress 6.15s linear 1",
+   "n": 1,
+   "ex": [
+    {
+     "el": "a#media-card-gallery-item-1-trigger.dotnav-link.current::after",
+     "rect": [
+      648,
+      836,
+      48,
+      8
+     ]
+    }
+   ]
+  }
+ ],
+ "borderImage": [],
+ "textShadow": [],
+ "atProperty": [],
+ "keyframes": [
+  "@keyframes globalnav-chevron-slide-in-hover { \n  0% { opacity: 0; transform: translate(-4px); }\n  100% { opacity: 1; transform: translate(0px); }\n}",
+  "@keyframes globalnav-chevron-hover-off { \n  0% { opacity: 1; transform: scale(1); }\n  100% { opacity: 0; transform: scale(0.8); }\n}",
+  "@keyframes globalnav-flyout-slide-forward-next { \n  0% { opacity: 0; transform: translate(8px); }\n  100% { opacity: 1; transform: translate(0px); }\n}",
+  "@keyframes globalnav-flyout-slide-forward-previous { \n  0% { opacity: 1; transform: translate(0px); }\n  100% { opacity: 0; transform: translate(-8px); }\n}",
+  "@keyframes globalnav-flyout-slide-back-previous { \n  0% { opacity: 1; transform: translate(0px); }\n  100% { opacity: 0; transform: translate(8px); }\n}",
+  "@keyframes globalnav-flyout-slide-back-next { \n  0% { opacity: 0; transform: translate(-8px); }\n  100% { opacity: 1; transform: translate(0px); }\n}",
+  "@keyframes globalnav-scrim-height-change { \n  0% { height: var(--r-globalnav-previous-flyout-height); }\n  100% { height: var(--r-globalnav-next-flyout-height); }\n}",
+  "@keyframes globalnav-fade-in { \n  0% { opacity: 0; }\n  100% { opacity: 1; }\n}",
+  "@keyframes globalnav-search-fade { \n  0% { opacity: 0; transform: translateY(0px); }\n  100% { opacity: 1; transform: translateY(0px); }\n}",
+  "@keyframes globalnav-search-fade-and-slide { \n  0% { opacity: 0; transform: translateY(calc(var(--r-globalnav-search-shift-vertical) * -1)); }\n  100% { opacity: 1; transform: translateY(0px); }\n}",
+  "@keyframes globalnav-search-fade-and-slide-to-close { \n  0% { opacity: 0; transform: translateY(calc(var(--r-globalnav-search-shift-vertical) * -1)); }\n  100% { opacity: 1; transform: translateY(0px); }\n}",
+  "@keyframes globalnav-search-slide-top-to-bottom { \n  0% { transform: translateY(calc(var(--r-globalnav-suggested-links-height) * -1)); }\n  100% { transform: translateY(0px); }\n}",
+  "@keyframes globalnav-search-slide-bottom-to-top { \n  0% { transform: translateY(var(--r-globalnav-suggested-links-height)); }\n  100% { transform: translateY(0px); }\n}",
+  "@keyframes globalnav-search-input-intro { \n  0% { opacity: 0; transform: translateY(var(--r-globalnav-search-input-vertical-shift)); }\n  100% { opacity: 1; transform: translateY(0px); }\n}",
+  "@keyframes globalnav-search-input-outro { \n  0% { opacity: 1; transform: translateY(0px); }\n  100% { opacity: 0; transform: translateY(var(--r-globalnav-search-input-vertical-shift)); }\n}",
+  "@keyframes segment-out { \n  0% { top: 0px; }\n  100% { top: calc(-1 * var(--r-globalmessage-segment-height)); }\n}",
+  "@keyframes progress-indicator-animating { \n  0% { opacity: 1; }\n  12.5% { opacity: 0.9; }\n  25% { opacity: 0.7; }\n  37.5% { opacity: 0.6; }\n  50% { opacity: 0.4; }\n  62.5% { opacity: 0.3; }\n  75% { opacity: 0.2; }\n  87.5% { opacity: 0.13; }\n}",
+  "@keyframes ribbon-drop { \n  0% { transform: translateY(-100%); }\n  100% { transform: translateY(0px); }\n}",
+  "@keyframes animate-color-fff-1d1d1f { \n  0% { color: var(--ribbon-text-color-initial); }\n  100% { color: var(--ribbon-text-color); }\n}",
+  "@keyframes animate-color-fff-06c { \n  0% { color: var(--ribbon-link-color-initial); }\n  100% { color: var(--ribbon-link-color); }\n}",
+  "@keyframes animate-background-0071e3-f5f5f7 { \n  0% { background-color: var(--ribbon-background-color-initial); }\n  100% { background-color: var(--ribbon-background-color); }\n}",
+  "@keyframes animate-color-fff-fff { \n  0% { color: var(--ribbon-text-color-initial); }\n  100% { color: var(--ribbon-text-color); }\n}",
+  "@keyframes animate-color-fff-2997ff { \n  0% { color: var(--ribbon-link-color-initial); }\n  100% { color: var(--ribbon-link-color); }\n}",
+  "@keyframes animate-background-0071e3-1d1d1f { \n  0% { background-color: var(--ribbon-background-color-initial); }\n  100% { background-color: var(--ribbon-background-color); }\n}",
+  "@keyframes animate-color-2997ff-2997ff { \n  0% { color: var(--ribbon-link-color-initial); }\n  100% { color: var(--ribbon-link-color); }\n}",
+  "@keyframes animate-background-1d1d1f-1d1d1f { \n  0% { background-color: var(--ribbon-background-color-initial); }\n  100% { background-color: var(--ribbon-background-color); }\n}",
+  "@keyframes animate-color-1d1d1f-1d1d1f { \n  0% { color: var(--ribbon-text-color-initial); }\n  100% { color: var(--ribbon-text-color); }\n}",
+  "@keyframes animate-color-06c-06c { \n  0% { color: var(--ribbon-link-color-initial); }\n  100% { color: var(--ribbon-link-color); }\n}",
+  "@keyframes animate-background-f5f5f7-f5f5f7 { \n  0% { background-color: var(--ribbon-background-color-initial); }\n  100% { background-color: var(--ribbon-background-color); }\n}",
+  "@keyframes animate-color-1d1d1f-1d1d1f { \n  0% { color: var(--ribbon-text-color-initial); }\n  100% { color: var(--ribbon-text-color); }\n}",
+  "@keyframes animate-color-06c-06c { \n  0% { color: var(--ribbon-link-color-initial); }\n  100% { color: var(--ribbon-link-color); }\n}",
+  "@keyframes animate-background-fff-fff { \n  0% { background-color: var(--ribbon-background-color-initial); }\n  100% { background-color: var(--ribbon-background-color); }\n}",
+  "@keyframes animate-color-fff-fff { \n  0% { color: var(--ribbon-text-color-initial); }\n  100% { color: var(--ribbon-text-color); }\n}",
+  "@keyframes animate-color-fff-fff { \n  0% { color: var(--ribbon-link-color-initial); }\n  100% { color: var(--ribbon-link-color); }\n}",
+  "@keyframes animate-background-0071e3-0071e3 { \n  0% { background-color: var(--ribbon-background-color-initial); }\n  100% { background-color: var(--ribbon-background-color); }\n}",
+  "@keyframes animate-color-1d1d1f-1d1d1f { \n  0% { color: var(--ribbon-text-color-initial); }\n  100% { color: var(--ribbon-text-color); }\n}",
+  "@keyframes animate-color-06c-06c { \n  0% { color: var(--ribbon-link-color-initial); }\n  100% { color: var(--ribbon-link-color); }\n}",
+  "@keyframes animate-background-f5f5f7-f5f5f7 { \n  0% { background-color: var(--ribbon-background-color-initial); }\n  100% { background-color: var(--ribbon-background-color); }\n}",
+  "@keyframes animate-color-fff-1d1d1f { \n  0% { color: var(--ribbon-text-color-initial); }\n  100% { color: var(--ribbon-text-color); }\n}",
+  "@keyframes animate-color-fff-06c { \n  0% { color: var(--ribbon-link-color-initial); }\n  100% { color: var(--ribbon-link-color); }\n}"
+ ],
+ "sheetHrefs": [
+  "https://www.apple.com/api-www/global-elements/global-header/v1/assets/globalheader.css",
+  "https://www.apple.com/ac/globalfooter/8/en_US/styles/ac-globalfooter.built.css",
+  "https://www.apple.com/ac/localnav/9/styles/ac-localnav.built.css",
+  "https://www.apple.com/wss/fonts?families=SF+Pro,v3|SF+Pro+Icons,v3",
+  "https://www.apple.com/v/ac/includes/campaigns-seasonal/upgrade-2026/a/built/styles/overview.built.css",
+  "https://www.apple.com/v/iphone/home/ck/built/styles/overview.built.css",
+  "https://www.apple.com/ac/localeswitcher/4/lt_LT/styles/localeswitcher.built.css",
+  "https://www.apple.com/ac/ac-films/7.5.1/styles/modal.css"
+ ],
+ "cssGrep": {
+  "cornerShape": {
+   "n": 0,
+   "ex": []
+  },
+  "superellipse": {
+   "n": 0,
+   "ex": []
+  },
+  "squircle": {
+   "n": 0,
+   "ex": []
+  },
+  "feTurbulence": {
+   "n": 0,
+   "ex": []
+  },
+  "maskComposite": {
+   "n": 4,
+   "ex": [
+    "-webkit-mask-composite:source-over",
+    "mask-composite:add"
+   ]
+  },
+  "atProperty": {
+   "n": 0,
+   "ex": []
+  },
+  "backdrop": {
+   "n": 53,
+   "ex": [
+    "backdrop-filter:blur(var(--modal-scrim-blur))",
+    "backdrop-filter:blur(calc(var(--aap-blur)*(2 - var(--alpha))))",
+    "backdrop-filter:blur(var(--ribbon-background-blur))",
+    "backdrop-filter:blur(0px)",
+    "backdrop-filter:blur(20px)",
+    "backdrop-filter: initial){#ac-localnav.ac-localnav-scrim{--localnav-background: rgba(250, 250, 252, 0.8)"
+   ]
+  },
+  "inOklab": {
+   "n": 0,
+   "ex": []
+  },
+  "conic": {
+   "n": 4,
+   "ex": [
+    "conic-gradient(from 90deg,rgba(255,255,255,0.08) 0deg,rgba(255,255,255,0.48) 64.8deg,rgba(255,255,255,0.48) 115.2deg,rgba(255,255,255,0.08) 180deg,rgba(255,255,255,0) 208.8deg",
+    "conic-gradient(from 270deg,rgba(0,0,0,0.08) 0deg,rgba(0,0,0,0.48) 64.8deg,rgba(0,0,0,0.48) 115.2deg,rgba(0,0,0,0.08) 180deg,rgba(0,0,0,0) 208.8deg,rgba(0,0,0,0) 331.2deg,rgba("
+   ]
+  },
+  "plusLighter": {
+   "n": 0,
+   "ex": []
+  },
+  "offsetPath": {
+   "n": 0,
+   "ex": []
+  },
+  "paintWorklet": {
+   "n": 0,
+   "ex": []
+  }
+ },
+ "scheme": "light",
+ "measuredAt": "2026-10-10T13:57:04.683Z",
+ "chromium": "156.0.8078.4"
+}

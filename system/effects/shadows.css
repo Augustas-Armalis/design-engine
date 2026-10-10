@@ -1,0 +1,66 @@
+/* system/effects/shadows.css: the engine's 5-tier elevation scale, light + dark, plus measured specials.
+   Data + anchors: shadows.json. Rules: knowledge/web/effects-materials.md sections 2.2, 3.2 and 3.3 (EF-10..EF-19).
+   Specimen: system/effects/demo/shadows.html -> shadows.png.
+
+   Use:   box-shadow: var(--sh-3);            (or class .sh-3)
+   Tint:  --sh-ink: <r g b> of the brand neutral at L 10-20% (default cool 17 20 28).
+   Dark:  any ancestor with [data-theme="dark"], .dark or .fx-dark swaps the same tokens.
+   Never: transition box-shadow on a multi-layer token; use .sh-lift (pseudo-element opacity) instead. */
+
+:root {
+  --sh-ink: 17 20 28;
+
+  /* 1 resting: cards on canvas, inputs, secondary buttons */
+  --sh-1: 0 0 0 1px rgb(var(--sh-ink) / .07), 0 1px 2px 0 rgb(var(--sh-ink) / .05);
+  /* 2 raised: hover cards, chips, toasts, hero side cards */
+  --sh-2: 0 0 0 1px rgb(var(--sh-ink) / .07), 0 1px 2px 0 rgb(var(--sh-ink) / .05), 0 4px 8px -2px rgb(var(--sh-ink) / .06);
+  /* 3 floating: popovers, menus, floating product cards */
+  --sh-3: 0 0 0 1px rgb(var(--sh-ink) / .08), 0 2px 4px -1px rgb(var(--sh-ink) / .05), 0 8px 16px -4px rgb(var(--sh-ink) / .08), 0 16px 24px -8px rgb(var(--sh-ink) / .08);
+  /* 4 overlay: dialogs, command palette, sheets */
+  --sh-4: 0 0 0 1px rgb(var(--sh-ink) / .08), 0 2px 4px 0 rgb(var(--sh-ink) / .04), 0 12px 24px -6px rgb(var(--sh-ink) / .1), 0 32px 48px -12px rgb(var(--sh-ink) / .12);
+  /* 5 hero frame: one product window per page (doubling ladder, spread = -y/2) */
+  --sh-5: 0 0 0 1px rgb(var(--sh-ink) / .06), 0 1px 1px -.5px rgb(var(--sh-ink) / .05), 0 3px 3px -1.5px rgb(var(--sh-ink) / .05),
+          0 6px 6px -3px rgb(var(--sh-ink) / .05), 0 12px 12px -6px rgb(var(--sh-ink) / .05), 0 24px 24px -12px rgb(var(--sh-ink) / .05),
+          0 48px 48px -24px rgb(var(--sh-ink) / .04);
+
+  /* specials (measured) */
+  --sh-hl: inset 0 1px 0 0 rgb(255 255 255 / .7);                 /* top catch-light on white over grey canvas */
+  --sh-contact: 0 1px 5px -4px rgb(var(--sh-ink) / .7);           /* Cal: crisp 1px bottom line, pair with a soft layer */
+  --sh-tray: 0 0 0 6px rgb(var(--sh-ink) / .04);                  /* Granola: soft outer tray halo, no extra element */
+  --sh-ambient: 0 4px 48px 0 rgb(var(--sh-ink) / .04);            /* Lightfield: wide faint air over a 1px border */
+  --sh-accent: inset 0 1px 0 0 rgb(255 255 255 / .18), inset 0 -1px 0 0 rgb(0 0 0 / .12),
+               0 1px 2px 0 color-mix(in oklab, var(--accent, #2563eb) 35%, transparent),
+               0 2px 6px -1px color-mix(in oklab, var(--accent, #2563eb) 30%, transparent);
+  --sh-ink-btn: inset 0 1px 0 0 rgb(255 255 255 / .12), 0 0 0 1px rgb(var(--sh-ink) / .9), 0 1px 2px 0 rgb(var(--sh-ink) / .2), 0 3px 6px -2px rgb(var(--sh-ink) / .18);
+}
+
+:root[data-theme="dark"], .dark, .fx-dark {
+  /* dark: the edge is light (inset white ring + top highlight), the depth is black at 3-6x the light alpha */
+  --sh-1: inset 0 0 0 1px rgb(255 255 255 / .07), inset 0 1px 0 0 rgb(255 255 255 / .04), 0 1px 2px 0 rgb(0 0 0 / .3);
+  --sh-2: inset 0 0 0 1px rgb(255 255 255 / .08), inset 0 1px 0 0 rgb(255 255 255 / .05), 0 0 0 1px rgb(0 0 0 / .4), 0 4px 8px -2px rgb(0 0 0 / .35);
+  --sh-3: inset 0 0 0 1px rgb(255 255 255 / .09), inset 0 1px 0 0 rgb(255 255 255 / .06), 0 0 0 1px rgb(0 0 0 / .5), 0 8px 24px -8px rgb(0 0 0 / .5);
+  --sh-4: inset 0 0 0 1px rgb(255 255 255 / .1), inset 0 1px 0 0 rgb(255 255 255 / .07), 0 0 0 1px rgb(0 0 0 / .6), 0 2px 4px 0 rgb(0 0 0 / .3), 0 24px 48px -12px rgb(0 0 0 / .6);
+  --sh-5: inset 0 0 0 1px rgb(255 255 255 / .08), inset 0 1px 0 0 rgb(255 255 255 / .08), 0 0 0 1px rgb(0 0 0 / .6), 0 2px 32px 0 rgb(0 0 0 / .25), 0 24px 64px -16px rgb(0 0 0 / .5);
+  --sh-hl: inset 0 1px 0 0 rgb(255 255 255 / .06);
+  --sh-contact: 0 1px 2px 0 rgb(0 0 0 / .5);
+  --sh-tray: 0 0 0 6px rgb(255 255 255 / .03);
+  --sh-ambient: 0 8px 48px 0 rgb(0 0 0 / .4);
+  --sh-ink-btn: inset 0 1px 0 0 rgb(255 255 255 / .5), 0 0 0 1px rgb(0 0 0 / .5), 0 1px 2px 0 rgb(0 0 0 / .4); /* inverse (light) button on dark */
+}
+
+.sh-1 { box-shadow: var(--sh-1); }
+.sh-2 { box-shadow: var(--sh-2); }
+.sh-3 { box-shadow: var(--sh-3); }
+.sh-4 { box-shadow: var(--sh-4); }
+.sh-5 { box-shadow: var(--sh-5); }
+
+/* Hover elevation without animating box-shadow (Ahlin): the next tier lives on ::after at opacity 0. */
+.sh-lift { position: relative; box-shadow: var(--sh-1); transition: transform .2s cubic-bezier(.2, 0, 0, 1); }
+.sh-lift::after { content: ""; position: absolute; inset: 0; border-radius: inherit; box-shadow: var(--sh-3); opacity: 0; transition: opacity .2s cubic-bezier(.2, 0, 0, 1); pointer-events: none; }
+@media (hover: hover) { .sh-lift:hover { transform: translateY(-1px); } .sh-lift:hover::after { opacity: 1; } }
+@media (prefers-reduced-motion: reduce) { .sh-lift, .sh-lift::after { transition: none; } .sh-lift:hover { transform: none; } }
+
+/* Non-rectangular shapes (icons, squircles, cut-outs): filter follows alpha; no spread, no inset. */
+.sh-drop-2 { filter: drop-shadow(0 1px 1px rgb(var(--sh-ink) / .08)) drop-shadow(0 4px 6px rgb(var(--sh-ink) / .08)); }
+
+@media (forced-colors: active) { .sh-1, .sh-2, .sh-3, .sh-4, .sh-5 { outline: 1px solid CanvasText; } }

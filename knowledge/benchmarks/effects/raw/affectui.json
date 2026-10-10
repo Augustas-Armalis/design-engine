@@ -1,0 +1,3536 @@
+{
+ "url": "https://www.affectui.com/",
+ "title": "affectUI · Agent-ready React UI for AI products",
+ "svgFilters": [
+  "<filter id=\"ui-fd_r_0_-hl\" x=\"-10%\" y=\"-10%\" width=\"120%\" height=\"120%\"><feGaussianBlur in=\"SourceAlpha\" stdDeviation=\"4\" result=\"blur\"></feGaussianBlur><feOffset in=\"blur\" dy=\"3\" result=\"offset\"></feOffset><feComposite in=\"blur\" in2=\"offset\" operator=\"arithmetic\" k2=\"1\" k3=\"-1\" result=\"diff\"></feComposite><feFlood flood-color=\"#fff\" flood-opacity=\"0.65\"></feFlood><feComposite in2=\"diff\" operator=\"in\" result=\"light\"></feComposite><feComposite in=\"light\" in2=\"SourceAlpha\" operator=\"in\"></feComposite></filter>"
+ ],
+ "canvases": [],
+ "videos": [],
+ "counts": {
+  "elements": 1459,
+  "shadows": 43,
+  "glass": 4,
+  "blends": 0,
+  "masks": 4,
+  "filters": 30,
+  "gradients": 26,
+  "urlBgs": 0,
+  "cornerShape": 0,
+  "clipPath": 2,
+  "borderImage": 0
+ },
+ "shadows": [
+  {
+   "value": "rgba(10, 10, 10, 0.055) 0px 0px 0px 1px inset",
+   "n": 9,
+   "ex": [
+    {
+     "el": "div.card__stage",
+     "rect": [
+      223,
+      1914,
+      313,
+      230
+     ],
+     "radius": "8px",
+     "bg": "rgb(250, 250, 250)",
+     "border": null
+    },
+    {
+     "el": "div.card__stage",
+     "rect": [
+      564,
+      1914,
+      313,
+      230
+     ],
+     "radius": "8px",
+     "bg": "rgb(250, 250, 250)",
+     "border": null
+    },
+    {
+     "el": "div.card__stage",
+     "rect": [
+      904,
+      1914,
+      313,
+      230
+     ],
+     "radius": "8px",
+     "bg": "rgb(250, 250, 250)",
+     "border": null
+    }
+   ]
+  },
+  {
+   "value": "rgb(229, 229, 229) 0px 0px 0px 1px",
+   "n": 9,
+   "ex": [
+    {
+     "el": "button.icon-btn.icon-btn--card",
+     "rect": [
+      504,
+      2158,
+      28,
+      28
+     ],
+     "radius": "999px",
+     "bg": "rgb(255, 255, 255)",
+     "border": null
+    },
+    {
+     "el": "button.icon-btn.icon-btn--card",
+     "rect": [
+      844,
+      2158,
+      28,
+      28
+     ],
+     "radius": "999px",
+     "bg": "rgb(255, 255, 255)",
+     "border": null
+    },
+    {
+     "el": "button.icon-btn.icon-btn--card",
+     "rect": [
+      1185,
+      2158,
+      28,
+      28
+     ],
+     "radius": "999px",
+     "bg": "rgb(255, 255, 255)",
+     "border": null
+    }
+   ]
+  },
+  {
+   "value": "rgba(255, 255, 255, 0.18) 0px 0px 0px 1px inset",
+   "n": 9,
+   "ex": [
+    {
+     "el": "span.lp-clean__app",
+     "rect": [
+      232,
+      3228,
+      13,
+      13
+     ],
+     "radius": "5px",
+     "bg": "rgb(249, 115, 22)",
+     "border": null
+    },
+    {
+     "el": "span.lp-clean__app",
+     "rect": [
+      232,
+      3251,
+      13,
+      13
+     ],
+     "radius": "5px",
+     "bg": "rgb(47, 107, 255)",
+     "border": null
+    },
+    {
+     "el": "span.lp-clean__app",
+     "rect": [
+      232,
+      3275,
+      13,
+      13
+     ],
+     "radius": "5px",
+     "bg": "rgb(20, 184, 166)",
+     "border": null
+    }
+   ]
+  },
+  {
+   "value": "rgba(0, 0, 0, 0.14) 0px 0px 0px 0.24388px inset, rgba(0, 0, 0, 0.055) 0px 2.92656px 3.41432px -2.4388px",
+   "n": 8,
+   "ex": [
+    {
+     "el": "span.ui-ig-tile",
+     "rect": [
+      1005,
+      4339,
+      34,
+      34
+     ],
+     "radius": "5.36536px",
+     "bg": "rgba(255, 255, 255, 0.506)",
+     "border": null
+    },
+    {
+     "el": "span.ui-ig-tile",
+     "rect": [
+      1044,
+      4339,
+      34,
+      34
+     ],
+     "radius": "5.36536px",
+     "bg": "rgba(255, 255, 255, 0.545)",
+     "border": null
+    },
+    {
+     "el": "span.ui-ig-tile",
+     "rect": [
+      1083,
+      4339,
+      34,
+      34
+     ],
+     "radius": "5.36536px",
+     "bg": "rgba(255, 255, 255, 0.506)",
+     "border": null
+    }
+   ]
+  },
+  {
+   "value": "rgb(231, 231, 231) 0px 0px 0px 1px inset",
+   "n": 6,
+   "ex": [
+    {
+     "el": "span.ui-tc__icon",
+     "rect": [
+      461,
+      1400,
+      18,
+      18
+     ],
+     "radius": "7px",
+     "bg": "rgb(245, 245, 245)",
+     "border": null
+    },
+    {
+     "el": "pre.ui-tc__code",
+     "rect": [
+      463,
+      1453,
+      435,
+      94
+     ],
+     "radius": "8px",
+     "bg": "rgb(250, 250, 250)",
+     "border": null
+    },
+    {
+     "el": "pre.ui-tc__code",
+     "rect": [
+      463,
+      1577,
+      435,
+      135
+     ],
+     "radius": "8px",
+     "bg": "rgb(250, 250, 250)",
+     "border": null
+    }
+   ]
+  },
+  {
+   "value": "rgba(10, 10, 10, 0.1) 0px 0px 0px 1px",
+   "n": 6,
+   "ex": [
+    {
+     "el": "span.card__tag",
+     "rect": [
+      234,
+      1924,
+      41,
+      22
+     ],
+     "radius": "999px",
+     "bg": "rgb(255, 255, 255)",
+     "border": null
+    },
+    {
+     "el": "span.card__tag",
+     "rect": [
+      574,
+      1924,
+      41,
+      22
+     ],
+     "radius": "999px",
+     "bg": "rgb(255, 255, 255)",
+     "border": null
+    },
+    {
+     "el": "span.card__tag",
+     "rect": [
+      915,
+      1924,
+      41,
+      22
+     ],
+     "radius": "999px",
+     "bg": "rgb(255, 255, 255)",
+     "border": null
+    }
+   ]
+  },
+  {
+   "value": "rgba(255, 255, 255, 0.09) 0px 0px 0px 0.24388px inset, rgba(0, 0, 0, 0.21) 0px 2.92656px 3.41432px -2.4388px",
+   "n": 6,
+   "ex": [
+    {
+     "el": "span.ui-ig-tile",
+     "rect": [
+      966,
+      4339,
+      34,
+      34
+     ],
+     "radius": "5.36536px",
+     "bg": "rgba(35, 35, 38, 0.427)",
+     "border": null
+    },
+    {
+     "el": "span.ui-ig-tile",
+     "rect": [
+      1122,
+      4339,
+      34,
+      34
+     ],
+     "radius": "5.36536px",
+     "bg": "rgba(35, 35, 38, 0.427)",
+     "border": null
+    },
+    {
+     "el": "span.ui-ig-tile",
+     "rect": [
+      966,
+      4378,
+      34,
+      34
+     ],
+     "radius": "5.36536px",
+     "bg": "rgba(35, 35, 38, 0.45)",
+     "border": null
+    }
+   ]
+  },
+  {
+   "value": "rgb(236, 236, 236) 0px 0px 0px 1px inset",
+   "n": 5,
+   "ex": [
+    {
+     "el": "span.ui-pl__marker",
+     "rect": [
+      448,
+      1105,
+      14,
+      14
+     ],
+     "radius": "999px",
+     "bg": "rgb(255, 255, 255)",
+     "border": null
+    },
+    {
+     "el": "span.ui-pl__marker",
+     "rect": [
+      448,
+      1146,
+      14,
+      14
+     ],
+     "radius": "999px",
+     "bg": "rgb(255, 255, 255)",
+     "border": null
+    },
+    {
+     "el": "span.ui-pl__marker",
+     "rect": [
+      448,
+      1187,
+      14,
+      14
+     ],
+     "radius": "999px",
+     "bg": "rgb(255, 255, 255)",
+     "border": null
+    }
+   ]
+  },
+  {
+   "value": "color(srgb 0.866667 0.0235294 0.454902 / 0.16) 0px 0px 0px 1px inset, color(srgb 0.866667 0.0235294 0.454902 / 0.14) 0px 1px 0px 0px",
+   "n": 5,
+   "ex": [
+    {
+     "el": "span.pro-badge.card__pro",
+     "rect": [
+      478,
+      1924,
+      47,
+      22
+     ],
+     "radius": "999px",
+     "bg": "rgb(253, 242, 248)",
+     "border": null
+    },
+    {
+     "el": "span.pro-badge.card__pro",
+     "rect": [
+      819,
+      1924,
+      47,
+      22
+     ],
+     "radius": "999px",
+     "bg": "rgb(253, 242, 248)",
+     "border": null
+    },
+    {
+     "el": "span.pro-badge.card__pro",
+     "rect": [
+      1160,
+      1924,
+      47,
+      22
+     ],
+     "radius": "999px",
+     "bg": "rgb(253, 242, 248)",
+     "border": null
+    }
+   ]
+  },
+  {
+   "value": "rgb(13, 13, 13) 0px 0px 0px 1px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px",
+   "n": 4,
+   "ex": [
+    {
+     "el": "a.btn.btn--primary",
+     "rect": [
+      1112,
+      52,
+      112,
+      28
+     ],
+     "radius": "999px",
+     "bg": "rgba(0, 0, 0, 0)",
+     "border": "1px solid rgba(0, 0, 0, 0)"
+    },
+    {
+     "el": "a.btn.btn--primary.lp-btn.lp-btn--lg",
+     "rect": [
+      589,
+      490,
+      138,
+      42
+     ],
+     "radius": "999px",
+     "bg": "rgba(0, 0, 0, 0)",
+     "border": "1px solid rgba(0, 0, 0, 0)"
+    },
+    {
+     "el": "a.btn.btn--primary.lp-btn",
+     "rect": [
+      730,
+      1603,
+      151,
+      36
+     ],
+     "radius": "999px",
+     "bg": "rgba(0, 0, 0, 0)",
+     "border": "1px solid rgba(0, 0, 0, 0)"
+    }
+   ]
+  },
+  {
+   "value": "rgba(0, 0, 0, 0.08) 0px 0px 0px 1px inset",
+   "n": 4,
+   "ex": [
+    {
+     "el": "i",
+     "rect": [
+      960,
+      3258,
+      16,
+      16
+     ],
+     "radius": "50%",
+     "bg": "rgb(227, 211, 184)",
+     "border": null
+    },
+    {
+     "el": "i",
+     "rect": [
+      991,
+      3258,
+      16,
+      16
+     ],
+     "radius": "50%",
+     "bg": "rgb(124, 132, 88)",
+     "border": null
+    },
+    {
+     "el": "i",
+     "rect": [
+      1032,
+      3258,
+      16,
+      16
+     ],
+     "radius": "50%",
+     "bg": "rgb(244, 241, 234)",
+     "border": null
+    }
+   ]
+  },
+  {
+   "value": "rgba(0, 0, 0, 0.133) 0px 0px 0px 0.24388px inset, rgba(0, 0, 0, 0.05) 0px 2.92656px 3.41432px -2.4388px",
+   "n": 4,
+   "ex": [
+    {
+     "el": "span.ui-ig-tile",
+     "rect": [
+      966,
+      4339,
+      34,
+      34
+     ],
+     "radius": "5.36536px",
+     "bg": "rgba(255, 255, 255, 0.427)",
+     "border": null
+    },
+    {
+     "el": "span.ui-ig-tile",
+     "rect": [
+      1122,
+      4339,
+      34,
+      34
+     ],
+     "radius": "5.36536px",
+     "bg": "rgba(255, 255, 255, 0.427)",
+     "border": null
+    },
+    {
+     "el": "span.ui-ig-tile",
+     "rect": [
+      966,
+      4417,
+      34,
+      34
+     ],
+     "radius": "5.36536px",
+     "bg": "rgba(255, 255, 255, 0.427)",
+     "border": null
+    }
+   ]
+  },
+  {
+   "value": "rgba(255, 255, 255, 0.094) 0px 0px 0px 0.24388px inset, rgba(0, 0, 0, 0.22) 0px 2.92656px 3.41432px -2.4388px",
+   "n": 4,
+   "ex": [
+    {
+     "el": "span.ui-ig-tile",
+     "rect": [
+      1005,
+      4339,
+      34,
+      34
+     ],
+     "radius": "5.36536px",
+     "bg": "rgba(35, 35, 38, 0.506)",
+     "border": null
+    },
+    {
+     "el": "span.ui-ig-tile",
+     "rect": [
+      1083,
+      4339,
+      34,
+      34
+     ],
+     "radius": "5.36536px",
+     "bg": "rgba(35, 35, 38, 0.506)",
+     "border": null
+    },
+    {
+     "el": "span.ui-ig-tile",
+     "rect": [
+      1005,
+      4417,
+      34,
+      34
+     ],
+     "radius": "5.36536px",
+     "bg": "rgba(35, 35, 38, 0.506)",
+     "border": null
+    }
+   ]
+  },
+  {
+   "value": "rgba(255, 255, 255, 0.094) 0px 0px 0px 0.24388px inset, rgba(0, 0, 0, 0.227) 0px 2.92656px 3.41432px -2.4388px",
+   "n": 4,
+   "ex": [
+    {
+     "el": "span.ui-ig-tile",
+     "rect": [
+      1044,
+      4339,
+      34,
+      34
+     ],
+     "radius": "5.36536px",
+     "bg": "rgba(35, 35, 38, 0.545)",
+     "border": null
+    },
+    {
+     "el": "span.ui-ig-tile",
+     "rect": [
+      1005,
+      4378,
+      34,
+      34
+     ],
+     "radius": "5.36536px",
+     "bg": "rgba(35, 35, 38, 0.545)",
+     "border": null
+    },
+    {
+     "el": "span.ui-ig-tile",
+     "rect": [
+      1083,
+      4378,
+      34,
+      34
+     ],
+     "radius": "5.36536px",
+     "bg": "rgba(35, 35, 38, 0.545)",
+     "border": null
+    }
+   ]
+  },
+  {
+   "value": "rgb(229, 229, 229) 0px -1px 0px 0px inset",
+   "n": 3,
+   "ex": [
+    {
+     "el": "div.lp-tabs",
+     "rect": [
+      481,
+      848,
+      479,
+      40
+     ],
+     "radius": "0px",
+     "bg": "rgba(0, 0, 0, 0)",
+     "border": null
+    },
+    {
+     "el": "div.lp-tabs",
+     "rect": [
+      529,
+      1843,
+      383,
+      40
+     ],
+     "radius": "0px",
+     "bg": "rgba(0, 0, 0, 0)",
+     "border": null
+    },
+    {
+     "el": "div.lp-tabs.lp-ba__switch",
+     "rect": [
+      618,
+      2846,
+      203,
+      76
+     ],
+     "radius": "0px",
+     "bg": "rgba(0, 0, 0, 0)",
+     "border": null
+    }
+   ]
+  },
+  {
+   "value": "rgb(235, 235, 235) 0px 0px 0px 1px, rgba(0, 0, 0, 0.04) 0px 2px 6px 0px",
+   "n": 3,
+   "ex": [
+    {
+     "el": "div.ui-as-news__card.ui-as-news__card--back",
+     "rect": [
+      231,
+      1395,
+      127,
+      34
+     ],
+     "radius": "12px",
+     "bg": "rgb(255, 255, 255)",
+     "border": null
+    },
+    {
+     "el": "div.ui-as-news__card",
+     "rect": [
+      224,
+      1416,
+      141,
+      64
+     ],
+     "radius": "12px",
+     "bg": "rgb(255, 255, 255)",
+     "border": null
+    },
+    {
+     "el": "div.ui-as-guide",
+     "rect": [
+      224,
+      1486,
+      141,
+      49
+     ],
+     "radius": "12px",
+     "bg": "rgb(255, 255, 255)",
+     "border": null
+    }
+   ]
+  },
+  {
+   "value": "rgb(231, 231, 231) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.04) 0px 1px 2px 0px",
+   "n": 3,
+   "ex": [
+    {
+     "el": "div.ui-tc",
+     "rect": [
+      455,
+      1395,
+      451,
+      28
+     ],
+     "radius": "12px",
+     "bg": "rgb(255, 255, 255)",
+     "border": null
+    },
+    {
+     "el": "div.ui-tc",
+     "rect": [
+      455,
+      1429,
+      451,
+      28
+     ],
+     "radius": "12px",
+     "bg": "rgb(255, 255, 255)",
+     "border": null
+    },
+    {
+     "el": "span.ui-tl.ui-ar__loader",
+     "rect": [
+      455,
+      1433,
+      143,
+      20
+     ],
+     "radius": "999px",
+     "bg": "rgb(255, 255, 255)",
+     "border": null
+    }
+   ]
+  },
+  {
+   "value": "rgba(0, 0, 0, 0) 0px 0.83484px 1.66968px 0px",
+   "n": 3,
+   "ex": [
+    {
+     "el": "div.ui-chat-composer__card",
+     "rect": [
+      397,
+      3391,
+      513,
+      62
+     ],
+     "radius": "17.82px",
+     "bg": "rgb(255, 255, 255)",
+     "border": "1.6129px solid rgb(229, 229, 229)"
+    },
+    {
+     "el": "button.ui-chat-composer__square",
+     "rect": [
+      866,
+      3429,
+      15,
+      15
+     ],
+     "radius": "8.64px",
+     "bg": "rgb(255, 255, 255)",
+     "border": "1.6129px solid rgb(229, 229, 229)"
+    },
+    {
+     "el": "button.ui-chat-composer__square",
+     "rect": [
+      884,
+      3429,
+      15,
+      15
+     ],
+     "radius": "8.64px",
+     "bg": "rgb(255, 255, 255)",
+     "border": "1.6129px solid rgb(229, 229, 229)"
+    }
+   ]
+  },
+  {
+   "value": "color(srgb 0.898039 0.898039 0.898039 / 0.8) 0px 0px 0px 1px",
+   "n": 3,
+   "ex": [
+    {
+     "el": "span",
+     "rect": [
+      951,
+      3029,
+      83,
+      18
+     ],
+     "radius": "6px",
+     "bg": "rgb(255, 255, 255)",
+     "border": null
+    },
+    {
+     "el": "img.lp-chat__thumb",
+     "rect": [
+      955,
+      3061,
+      24,
+      24
+     ],
+     "radius": "6px",
+     "bg": "rgba(0, 0, 0, 0)",
+     "border": null
+    },
+    {
+     "el": "span.lp-brief__option",
+     "rect": [
+      954,
+      3122,
+      245,
+      32
+     ],
+     "radius": "7px",
+     "bg": "rgb(255, 255, 255)",
+     "border": null
+    }
+   ]
+  },
+  {
+   "value": "rgba(0, 0, 0, 0.06) 0px 1px 2px 0px",
+   "n": 2,
+   "ex": [
+    {
+     "el": "button.ui-button",
+     "rect": [
+      840,
+      954,
+      70,
+      22
+     ],
+     "radius": "10px",
+     "bg": "rgb(255, 255, 255)",
+     "border": "1px solid rgb(229, 229, 229)"
+    },
+    {
+     "el": "button.ui-button",
+     "rect": [
+      296,
+      3459,
+      64,
+      26
+     ],
+     "radius": "10px",
+     "bg": "rgb(255, 255, 255)",
+     "border": "1px solid rgb(229, 229, 229)"
+    }
+   ]
+  },
+  {
+   "value": "rgb(236, 236, 236) 0px 0px 0px 1px, rgba(0, 0, 0, 0.04) 0px 1px 2px 0px",
+   "n": 2,
+   "ex": [
+    {
+     "el": "div.ui-pl__card",
+     "rect": [
+      434,
+      1009,
+      469,
+      258
+     ],
+     "radius": "16px",
+     "bg": "rgb(255, 255, 255)",
+     "border": null
+    },
+    {
+     "el": "div.ui-df__card",
+     "rect": [
+      983,
+      1160,
+      217,
+      147
+     ],
+     "radius": "16px",
+     "bg": "rgb(255, 255, 255)",
+     "border": null
+    }
+   ]
+  },
+  {
+   "value": "rgb(231, 231, 231) 0px 0px 0px 1px inset, rgb(255, 255, 255) 0px 0px 0px 2px",
+   "n": 2,
+   "ex": [
+    {
+     "el": "span.ui-tc__icon",
+     "rect": [
+      458,
+      1369,
+      17,
+      17
+     ],
+     "radius": "7px",
+     "bg": "rgb(245, 245, 245)",
+     "border": null
+    },
+    {
+     "el": "span.ui-tc__icon",
+     "rect": [
+      471,
+      1369,
+      17,
+      17
+     ],
+     "radius": "7px",
+     "bg": "rgb(245, 245, 245)",
+     "border": null
+    }
+   ]
+  },
+  {
+   "value": "rgba(10, 10, 10, 0.1) 0px 0px 0px 1px inset",
+   "n": 2,
+   "ex": [
+    {
+     "el": "span.card__new",
+     "rect": [
+      684,
+      2463,
+      38,
+      18
+     ],
+     "radius": "999px",
+     "bg": "rgba(0, 0, 0, 0.04)",
+     "border": null
+    },
+    {
+     "el": "span.card__new",
+     "rect": [
+      1053,
+      2463,
+      38,
+      18
+     ],
+     "radius": "999px",
+     "bg": "rgba(0, 0, 0, 0.04)",
+     "border": null
+    }
+   ]
+  },
+  {
+   "value": "rgb(229, 229, 229) 0px 0px 0px 1.25px inset",
+   "n": 2,
+   "ex": [
+    {
+     "el": "span.lp-brief__radio",
+     "rect": [
+      959,
+      3166,
+      10,
+      10
+     ],
+     "radius": "50%",
+     "bg": "rgba(0, 0, 0, 0)",
+     "border": null
+    },
+    {
+     "el": "span.lp-brief__radio",
+     "rect": [
+      959,
+      3200,
+      10,
+      10
+     ],
+     "radius": "50%",
+     "bg": "rgba(0, 0, 0, 0)",
+     "border": null
+    }
+   ]
+  },
+  {
+   "value": "rgba(0, 0, 0, 0.1) 0px 4px 6px -1px",
+   "n": 2,
+   "ex": [
+    {
+     "el": "div.lp-vibe__msg.lp-vibe__msg--ai",
+     "rect": [
+      395,
+      3129,
+      453,
+      103
+     ],
+     "radius": "18px",
+     "bg": "rgb(255, 255, 255)",
+     "border": null
+    },
+    {
+     "el": "div.lp-vibe__typing",
+     "rect": [
+      395,
+      3243,
+      46,
+      25
+     ],
+     "radius": "16px",
+     "bg": "rgb(255, 255, 255)",
+     "border": null
+    }
+   ]
+  },
+  {
+   "value": "rgba(10, 10, 10, 0.055) 0px 0px 0px 1px",
+   "n": 2,
+   "ex": [
+    {
+     "el": "div.lp-agent__chat",
+     "rect": [
+      266,
+      3808,
+      501,
+      252
+     ],
+     "radius": "17px",
+     "bg": "rgb(255, 255, 255)",
+     "border": null
+    },
+    {
+     "el": "div.lp-agent__setup",
+     "rect": [
+      773,
+      3808,
+      401,
+      252
+     ],
+     "radius": "17px",
+     "bg": "rgb(255, 255, 255)",
+     "border": null
+    }
+   ]
+  },
+  {
+   "value": "rgb(10, 10, 10) 0px 0px 0px 1.25px",
+   "n": 2,
+   "ex": [
+    {
+     "el": "b.ba-tweak__ring",
+     "rect": [
+      717,
+      4344,
+      15,
+      15
+     ],
+     "radius": "50%",
+     "bg": "rgba(0, 0, 0, 0)",
+     "border": null
+    },
+    {
+     "el": "i",
+     "rect": [
+      807,
+      4401,
+      9,
+      9
+     ],
+     "radius": "50%",
+     "bg": "rgb(255, 255, 255)",
+     "border": null
+    }
+   ]
+  },
+  {
+   "value": "rgba(0, 0, 0, 0.2) 0px 1px 2px 0px",
+   "n": 2,
+   "ex": [
+    {
+     "el": "i",
+     "rect": [
+      818,
+      4456,
+      9,
+      9
+     ],
+     "radius": "50%",
+     "bg": "rgb(255, 255, 255)",
+     "border": null
+    },
+    {
+     "el": "i",
+     "rect": [
+      1192,
+      4297,
+      13,
+      13
+     ],
+     "radius": "50%",
+     "bg": "rgb(255, 255, 255)",
+     "border": null
+    }
+   ]
+  },
+  {
+   "value": "rgba(0, 0, 0, 0.13) 0px 0px 0px 0.24388px inset, rgba(0, 0, 0, 0.05) 0px 2.92656px 3.41432px -2.4388px",
+   "n": 2,
+   "ex": [
+    {
+     "el": "span.ui-ig-tile",
+     "rect": [
+      927,
+      4378,
+      34,
+      34
+     ],
+     "radius": "5.36536px",
+     "bg": "rgba(255, 255, 255, 0.357)",
+     "border": null
+    },
+    {
+     "el": "span.ui-ig-tile",
+     "rect": [
+      1161,
+      4378,
+      34,
+      34
+     ],
+     "radius": "5.36536px",
+     "bg": "rgba(255, 255, 255, 0.357)",
+     "border": null
+    }
+   ]
+  },
+  {
+   "value": "rgba(0, 0, 0, 0.137) 0px 0px 0px 0.24388px inset, rgba(0, 0, 0, 0.055) 0px 2.92656px 3.41432px -2.4388px",
+   "n": 2,
+   "ex": [
+    {
+     "el": "span.ui-ig-tile",
+     "rect": [
+      966,
+      4378,
+      34,
+      34
+     ],
+     "radius": "5.36536px",
+     "bg": "rgba(255, 255, 255, 0.45)",
+     "border": null
+    },
+    {
+     "el": "span.ui-ig-tile",
+     "rect": [
+      1122,
+      4378,
+      34,
+      34
+     ],
+     "radius": "5.36536px",
+     "bg": "rgba(255, 255, 255, 0.45)",
+     "border": null
+    }
+   ]
+  },
+  {
+   "value": "rgba(255, 255, 255, 0.086) 0px 0px 0px 0.24388px inset, rgba(0, 0, 0, 0.2) 0px 2.92656px 3.41432px -2.4388px",
+   "n": 2,
+   "ex": [
+    {
+     "el": "span.ui-ig-tile",
+     "rect": [
+      927,
+      4378,
+      34,
+      34
+     ],
+     "radius": "5.36536px",
+     "bg": "rgba(35, 35, 38, 0.357)",
+     "border": null
+    },
+    {
+     "el": "span.ui-ig-tile",
+     "rect": [
+      1161,
+      4378,
+      34,
+      34
+     ],
+     "radius": "5.36536px",
+     "bg": "rgba(35, 35, 38, 0.357)",
+     "border": null
+    }
+   ]
+  },
+  {
+   "value": "color(srgb 0.866667 0.0235294 0.454902 / 0.14) 0px -1px 0px 0px inset",
+   "n": 1,
+   "ex": [
+    {
+     "el": "div.offer-banner",
+     "rect": [
+      0,
+      0,
+      1440,
+      32
+     ],
+     "radius": "0px",
+     "bg": "rgb(252, 252, 252)",
+     "border": null
+    }
+   ]
+  },
+  {
+   "value": "rgb(229, 229, 229) 0px 0px 0px 1px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px",
+   "n": 1,
+   "ex": [
+    {
+     "el": "button.icon-btn",
+     "rect": [
+      935,
+      54,
+      24,
+      24
+     ],
+     "radius": "999px",
+     "bg": "rgb(255, 255, 255)",
+     "border": null
+    }
+   ]
+  },
+  {
+   "value": "rgba(0, 0, 0, 0.08) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.12) 0px 1px 1px 0px",
+   "n": 1,
+   "ex": [
+    {
+     "el": "span.ui-as-side__logo",
+     "rect": [
+      228,
+      952,
+      13,
+      13
+     ],
+     "radius": "5px",
+     "bg": "rgb(255, 255, 255)",
+     "border": null
+    }
+   ]
+  },
+  {
+   "value": "rgb(235, 235, 235) 0px 0px 0px 1px inset",
+   "n": 1,
+   "ex": [
+    {
+     "el": "span.ui-ar__num",
+     "rect": [
+      431,
+      1410,
+      16,
+      16
+     ],
+     "radius": "50%",
+     "bg": "rgba(0, 0, 0, 0)",
+     "border": null
+    }
+   ]
+  },
+  {
+   "value": "rgb(240, 240, 240) 0px 0px 0px 1px inset",
+   "n": 1,
+   "ex": [
+    {
+     "el": "div.ui-ar__quiet",
+     "rect": [
+      980,
+      998,
+      223,
+      93
+     ],
+     "radius": "14px",
+     "bg": "rgb(250, 250, 250)",
+     "border": null
+    }
+   ]
+  },
+  {
+   "value": "rgb(10, 10, 10) 0px 0px 0px 3.5px inset",
+   "n": 1,
+   "ex": [
+    {
+     "el": "span.lp-brief__radio",
+     "rect": [
+      959,
+      3133,
+      10,
+      10
+     ],
+     "radius": "50%",
+     "bg": "rgba(0, 0, 0, 0)",
+     "border": null
+    }
+   ]
+  },
+  {
+   "value": "rgba(0, 0, 0, 0.08) 0px 4px 6px -1px",
+   "n": 1,
+   "ex": [
+    {
+     "el": "div.lp-vibe__input",
+     "rect": [
+      395,
+      3436,
+      581,
+      44
+     ],
+     "radius": "12px",
+     "bg": "rgb(255, 255, 255)",
+     "border": "1px solid rgb(209, 213, 219)"
+    }
+   ]
+  },
+  {
+   "value": "rgba(0, 0, 0, 0.08) 0px 0px 0px 1px, rgba(0, 0, 0, 0.12) 0px 0px 12px 0px",
+   "n": 1,
+   "ex": [
+    {
+     "el": "div.lp-ba__handle::before",
+     "rect": [
+      708,
+      2977,
+      24,
+      519
+     ],
+     "radius": "0px",
+     "bg": "rgb(255, 255, 255)",
+     "border": null
+    }
+   ]
+  },
+  {
+   "value": "rgba(0, 0, 0, 0.06) 0px 4px 42px 0px, rgba(0, 0, 0, 0.05) 0px 2px 6px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px",
+   "n": 1,
+   "ex": [
+    {
+     "el": "span.lp-ba__knob",
+     "rect": [
+      702,
+      3219,
+      36,
+      36
+     ],
+     "radius": "50%",
+     "bg": "rgb(255, 255, 255)",
+     "border": null
+    }
+   ]
+  },
+  {
+   "value": "rgba(255, 255, 255, 0.3) 0px 0px 0px 0.101756px inset, rgba(255, 255, 255, 0.55) 0px 0.0379688px 0px 0px inset",
+   "n": 1,
+   "ex": [
+    {
+     "el": "div.ui-fd-front",
+     "rect": [
+      265,
+      4407,
+      15,
+      10
+     ],
+     "radius": "0.961824px",
+     "bg": "rgba(0, 0, 0, 0)",
+     "border": null
+    }
+   ]
+  },
+  {
+   "value": "rgba(0, 0, 0, 0.14) 0px 0px 0px 0.24388px inset, rgba(0, 0, 0, 0.14) 0px 3.90208px 4.38984px -2.92656px",
+   "n": 1,
+   "ex": [
+    {
+     "el": "span.ui-ig-tile.ui-ig-tile--center",
+     "rect": [
+      1040,
+      4375,
+      41,
+      41
+     ],
+     "radius": "6.82865px",
+     "bg": "rgb(255, 255, 255)",
+     "border": null
+    }
+   ]
+  },
+  {
+   "value": "rgba(255, 255, 255, 0.16) 0px 0px 0px 0.24388px inset, rgba(0, 0, 0, 0.5) 0px 3.90208px 4.38984px -2.92656px",
+   "n": 1,
+   "ex": [
+    {
+     "el": "span.ui-ig-tile.ui-ig-tile--center",
+     "rect": [
+      1040,
+      4375,
+      41,
+      41
+     ],
+     "radius": "6.82865px",
+     "bg": "rgb(42, 42, 45)",
+     "border": null
+    }
+   ]
+  }
+ ],
+ "radii": [
+  {
+   "value": "999px",
+   "n": 62,
+   "ex": [
+    {
+     "el": "button.lp-nav__link.lp-menu__trigger",
+     "h": 32
+    },
+    {
+     "el": "a.lp-nav__link",
+     "h": 32
+    },
+    {
+     "el": "a.lp-nav__link",
+     "h": 32
+    }
+   ]
+  },
+  {
+   "value": "8px",
+   "n": 45,
+   "ex": [
+    {
+     "el": "button.ui-as-side__workspace",
+     "h": 21
+    },
+    {
+     "el": "button.ui-as-icon-btn",
+     "h": 20
+    },
+    {
+     "el": "button.ui-as-icon-btn",
+     "h": 20
+    }
+   ]
+  },
+  {
+   "value": "50%",
+   "n": 37,
+   "ex": [
+    {
+     "el": "i",
+     "h": 8
+    },
+    {
+     "el": "i",
+     "h": 8
+    },
+    {
+     "el": "i",
+     "h": 8
+    }
+   ]
+  },
+  {
+   "value": "6px",
+   "n": 35,
+   "ex": [
+    {
+     "el": "button.ui-as-news__close",
+     "h": 13
+    },
+    {
+     "el": "code.ui-pl__tool",
+     "h": 13
+    },
+    {
+     "el": "code.ui-pl__tool",
+     "h": 13
+    }
+   ]
+  },
+  {
+   "value": "5.36536px",
+   "n": 32,
+   "ex": [
+    {
+     "el": "span.ui-ig-tile",
+     "h": 34
+    },
+    {
+     "el": "span.ui-ig-tile",
+     "h": 34
+    },
+    {
+     "el": "span.ui-ig-tile",
+     "h": 34
+    }
+   ]
+  },
+  {
+   "value": "10px",
+   "n": 25,
+   "ex": [
+    {
+     "el": "button.ui-button",
+     "h": 22
+    },
+    {
+     "el": "li.ui-pl__step",
+     "h": 41
+    },
+    {
+     "el": "li.ui-pl__step",
+     "h": 41
+    }
+   ]
+  },
+  {
+   "value": "4px",
+   "n": 25,
+   "ex": [
+    {
+     "el": "span.ui-df__chg",
+     "h": 11
+    },
+    {
+     "el": "del.ui-df__del",
+     "h": 13
+    },
+    {
+     "el": "ins.ui-df__ins",
+     "h": 13
+    }
+   ]
+  },
+  {
+   "value": "12px",
+   "n": 16,
+   "ex": [
+    {
+     "el": "div.ui-as-news__card.ui-as-news__card--back",
+     "h": 34
+    },
+    {
+     "el": "div.ui-as-news__card",
+     "h": 64
+    },
+    {
+     "el": "div.ui-as-guide",
+     "h": 49
+    }
+   ]
+  },
+  {
+   "value": "5px",
+   "n": 14,
+   "ex": [
+    {
+     "el": "span.ui-as-side__logo",
+     "h": 13
+    },
+    {
+     "el": "kbd",
+     "h": 17
+    },
+    {
+     "el": "span.lp-clean__app",
+     "h": 13
+    }
+   ]
+  },
+  {
+   "value": "14px",
+   "n": 12,
+   "ex": [
+    {
+     "el": "div.lp-screens__window",
+     "h": 659
+    },
+    {
+     "el": "div.ui-ar__quiet",
+     "h": 93
+    },
+    {
+     "el": "article#ai-answer.card",
+     "h": 295
+    }
+   ]
+  },
+  {
+   "value": "3px",
+   "n": 11,
+   "ex": [
+    {
+     "el": "i",
+     "h": 18
+    },
+    {
+     "el": "i",
+     "h": 18
+    },
+    {
+     "el": "i",
+     "h": 16
+    }
+   ]
+  },
+  {
+   "value": "1px",
+   "n": 9,
+   "ex": [
+    {
+     "el": "i",
+     "h": 3
+    },
+    {
+     "el": "i",
+     "h": 5
+    },
+    {
+     "el": "i",
+     "h": 7
+    }
+   ]
+  },
+  {
+   "value": "7px",
+   "n": 7,
+   "ex": [
+    {
+     "el": "span.ui-tc__icon",
+     "h": 17
+    },
+    {
+     "el": "span.ui-tc__icon",
+     "h": 17
+    },
+    {
+     "el": "span.ui-tc__icon",
+     "h": 18
+    }
+   ]
+  },
+  {
+   "value": "16px",
+   "n": 6,
+   "ex": [
+    {
+     "el": "div.ui-pl__card",
+     "h": 258
+    },
+    {
+     "el": "div.ui-df__card",
+     "h": 147
+    },
+    {
+     "el": "div.lp-browser",
+     "h": 551
+    }
+   ]
+  },
+  {
+   "value": "9px",
+   "n": 6,
+   "ex": [
+    {
+     "el": "div.ba-tray__card.ba-install__term",
+     "h": 52
+    },
+    {
+     "el": "div.ba-tray__card.ba-install__files",
+     "h": 58
+    },
+    {
+     "el": "div.ba-tray__card.ba-tweak__profile",
+     "h": 132
+    }
+   ]
+  },
+  {
+   "value": "2px",
+   "n": 4,
+   "ex": [
+    {
+     "el": "span.ui-as-steps__bar",
+     "h": 3
+    },
+    {
+     "el": "i",
+     "h": 3
+    },
+    {
+     "el": "span.ba-tweak__track",
+     "h": 3
+    }
+   ]
+  },
+  {
+   "value": "6.48px",
+   "n": 4,
+   "ex": [
+    {
+     "el": "button.ui-chat-composer__row.ui-chat-composer__connect",
+     "h": 9
+    },
+    {
+     "el": "button.ui-chat-composer__icon-btn",
+     "h": 9
+    },
+    {
+     "el": "button.ui-chat-composer__model",
+     "h": 8
+    }
+   ]
+  },
+  {
+   "value": "18px",
+   "n": 3,
+   "ex": [
+    {
+     "el": "main.ui-as-main",
+     "h": 618
+    },
+    {
+     "el": "p.lp-vibe__msg.lp-vibe__msg--me",
+     "h": 37
+    },
+    {
+     "el": "div.lp-vibe__msg.lp-vibe__msg--ai",
+     "h": 103
+    }
+   ]
+  },
+  {
+   "value": "20px",
+   "n": 2,
+   "ex": [
+    {
+     "el": "div.ui-pl",
+     "h": 296
+    },
+    {
+     "el": "div.ui-df",
+     "h": 171
+    }
+   ]
+  },
+  {
+   "value": "8.95212px",
+   "n": 2,
+   "ex": [
+    {
+     "el": "button.ui-chat-composer__approval",
+     "h": 9
+    },
+    {
+     "el": "span.ui-chat-composer__wash",
+     "h": 9
+    }
+   ]
+  },
+  {
+   "value": "8.64px",
+   "n": 2,
+   "ex": [
+    {
+     "el": "button.ui-chat-composer__square",
+     "h": 15
+    },
+    {
+     "el": "button.ui-chat-composer__square",
+     "h": 15
+    }
+   ]
+  },
+  {
+   "value": "17px",
+   "n": 2,
+   "ex": [
+    {
+     "el": "div.lp-agent__chat",
+     "h": 252
+    },
+    {
+     "el": "div.lp-agent__setup",
+     "h": 252
+    }
+   ]
+  },
+  {
+   "value": "6.82865px",
+   "n": 2,
+   "ex": [
+    {
+     "el": "span.ui-ig-tile.ui-ig-tile--center",
+     "h": 41
+    },
+    {
+     "el": "span.ui-ig-tile.ui-ig-tile--center",
+     "h": 41
+    }
+   ]
+  },
+  {
+   "value": "25.0447px",
+   "n": 1,
+   "ex": [
+    {
+     "el": "div.ui-chat-composer__tray",
+     "h": 90
+    }
+   ]
+  },
+  {
+   "value": "17.82px",
+   "n": 1,
+   "ex": [
+    {
+     "el": "div.ui-chat-composer__card",
+     "h": 62
+    }
+   ]
+  }
+ ],
+ "glass": [
+  {
+   "el": "div.lp-iso__blur.lp-iso__blur--soft",
+   "rect": [
+    0,
+    100,
+    1440,
+    620
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "backdropFilter": "blur(2px)",
+   "bgImage": "none",
+   "boxShadow": "none",
+   "opacity": "1"
+  },
+  {
+   "el": "div.lp-iso__blur.lp-iso__blur--strong",
+   "rect": [
+    0,
+    100,
+    1440,
+    620
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "backdropFilter": "blur(8px)",
+   "bgImage": "none",
+   "boxShadow": "none",
+   "opacity": "1"
+  },
+  {
+   "el": "div.lp-iso__blur.lp-iso__blur--bottom",
+   "rect": [
+    0,
+    100,
+    1440,
+    620
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "backdropFilter": "blur(6px)",
+   "bgImage": "none",
+   "boxShadow": "none",
+   "opacity": "1"
+  },
+  {
+   "el": "div.ui-fd-front",
+   "rect": [
+    265,
+    4407,
+    15,
+    10
+   ],
+   "radius": "0.961824px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "backdropFilter": "blur(0.501188px) saturate(1.1)",
+   "bgImage": "linear-gradient(rgba(0, 40, 75, 0) 74%, rgba(0, 40, 75, 0.28) 100%), linear-gradient(rgba(132, 214, 248, 0.45) 0%, rgba(69, 170, 220, 0.45) 100%)",
+   "boxShadow": "rgba(255, 255, 255, 0.3) 0px 0px 0px 0.101756px inset, rgba(255, 255, 255, 0.55) 0px 0.0379688px 0px 0px inset",
+   "opacity": "1"
+  }
+ ],
+ "blends": [],
+ "masks": [
+  {
+   "el": "div.lp-iso",
+   "rect": [
+    0,
+    100,
+    1440,
+    620
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "mask": "radial-gradient(40% 54% at 50% 56%, rgba(0, 0, 0, 0) 42%, rgba(0, 0, 0, 0.25) 72%, rgb(0, 0, 0) 100%), linear-gradient(rgba(0, 0, 0, 0) 0px, rgb(0, 0, 0) 56px, rgb(0, 0, 0) calc(100% - 150px), rgba(0, 0, 0, 0) 100%)",
+   "composite": "intersect, intersect",
+   "maskSize": "auto, auto",
+   "maskRepeat": "repeat, repeat",
+   "opacity": "1"
+  },
+  {
+   "el": "div.lp-iso__blur.lp-iso__blur--soft",
+   "rect": [
+    0,
+    100,
+    1440,
+    620
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "mask": "radial-gradient(50% 64% at 50% 56%, rgb(0, 0, 0) 60%, rgba(0, 0, 0, 0) 100%)",
+   "composite": "add",
+   "maskSize": "auto",
+   "maskRepeat": "repeat",
+   "opacity": "1"
+  },
+  {
+   "el": "div.lp-iso__blur.lp-iso__blur--strong",
+   "rect": [
+    0,
+    100,
+    1440,
+    620
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "mask": "radial-gradient(42% 54% at 50% 56%, rgb(0, 0, 0) 58%, rgba(0, 0, 0, 0) 100%)",
+   "composite": "add",
+   "maskSize": "auto",
+   "maskRepeat": "repeat",
+   "opacity": "1"
+  },
+  {
+   "el": "div.lp-iso__blur.lp-iso__blur--bottom",
+   "rect": [
+    0,
+    100,
+    1440,
+    620
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "mask": "linear-gradient(0deg, rgb(0, 0, 0) 0px, rgba(0, 0, 0, 0) 200px)",
+   "composite": "add",
+   "maskSize": "auto",
+   "maskRepeat": "repeat",
+   "opacity": "1"
+  }
+ ],
+ "filters": [
+  {
+   "el": "h1.lp-hero__title",
+   "rect": [
+    562,
+    296,
+    316,
+    104
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "filter": "blur(0px)",
+   "opacity": "1"
+  },
+  {
+   "el": "p.lp-hero__sub",
+   "rect": [
+    481,
+    400,
+    479,
+    62
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "filter": "blur(0px)",
+   "opacity": "1"
+  },
+  {
+   "el": "div.lp-hero__ctas",
+   "rect": [
+    589,
+    462,
+    261,
+    70
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "filter": "blur(0px)",
+   "opacity": "1"
+  },
+  {
+   "el": "span.ui-button__icon",
+   "rect": [
+    849,
+    960,
+    11,
+    11
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "filter": "blur(0px)",
+   "opacity": "1"
+  },
+  {
+   "el": "span.ui-button__label",
+   "rect": [
+    864,
+    961,
+    36,
+    9
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "filter": "blur(0px)",
+   "opacity": "1"
+  },
+  {
+   "el": "span.ui-tc-group__title",
+   "rect": [
+    494,
+    1370,
+    84,
+    13
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "filter": "blur(0px)",
+   "opacity": "1"
+  },
+  {
+   "el": "span.ui-tc__status",
+   "rect": [
+    839,
+    1403,
+    43,
+    12
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "filter": "blur(0px)",
+   "opacity": "1"
+  },
+  {
+   "el": "svg.ui-tc__copy-done",
+   "rect": [
+    886,
+    1438,
+    6,
+    6
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "filter": "blur(2px)",
+   "opacity": "0"
+  },
+  {
+   "el": "svg.ui-tc__copy-done",
+   "rect": [
+    886,
+    1561,
+    6,
+    6
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "filter": "blur(2px)",
+   "opacity": "0"
+  },
+  {
+   "el": "span.ui-tc__status",
+   "rect": [
+    839,
+    1437,
+    43,
+    12
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "filter": "blur(0px)",
+   "opacity": "1"
+  },
+  {
+   "el": "svg.ui-tc__copy-done",
+   "rect": [
+    886,
+    1471,
+    6,
+    6
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "filter": "blur(2px)",
+   "opacity": "0"
+  },
+  {
+   "el": "svg.ui-tc__copy-done",
+   "rect": [
+    886,
+    1568,
+    6,
+    6
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "filter": "blur(2px)",
+   "opacity": "0"
+  },
+  {
+   "el": "span.ui-tl__label.ui-tl__label--out",
+   "rect": [
+    475,
+    1437,
+    114,
+    12
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "filter": "blur(0px)",
+   "opacity": "1"
+  },
+  {
+   "el": "span.ui-tl__label.ui-tl__label--in.ui-tl__shine",
+   "rect": [
+    475,
+    1446,
+    137,
+    12
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "filter": "blur(3px)",
+   "opacity": "0"
+  },
+  {
+   "el": "span.ui-button__label",
+   "rect": [
+    306,
+    3467,
+    43,
+    11
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "filter": "blur(0px)",
+   "opacity": "1"
+  },
+  {
+   "el": "span.ui-chat-composer__granted",
+   "rect": [
+    439,
+    3430,
+    76,
+    8
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "filter": "blur(8px)",
+   "opacity": "0"
+  },
+  {
+   "el": "span.ui-button__label",
+   "rect": [
+    1135,
+    3382,
+    58,
+    9
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "filter": "blur(0px)",
+   "opacity": "1"
+  },
+  {
+   "el": "svg.ui-fd-layer.ui-fd-back",
+   "rect": [
+    265,
+    4405,
+    15,
+    13
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "filter": "drop-shadow(rgba(60, 130, 180, 0.28) 0px 0.6075px 0.698625px) drop-shadow(rgba(60, 130, 180, 0.16) 0px 0.197437px 0.30375px) drop-shadow(rgba(60, 130, 180, 0.1) 0px 0.0455625px 0.106312px)",
+   "opacity": "1"
+  },
+  {
+   "el": "path",
+   "rect": [
+    265,
+    4405,
+    15,
+    13
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "filter": "url(\"#ui-fd_r_0_-hl\")",
+   "opacity": "1"
+  },
+  {
+   "el": "use.ui-fd-doc.ui-fd-doc--left",
+   "rect": [
+    266,
+    4406,
+    8,
+    10
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "filter": "drop-shadow(rgba(0, 30, 60, 0.18) 0px 3px 4px)",
+   "opacity": "1"
+  },
+  {
+   "el": "use.ui-fd-doc.ui-fd-doc--right",
+   "rect": [
+    272,
+    4406,
+    8,
+    10
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "filter": "drop-shadow(rgba(0, 30, 60, 0.18) 0px 3px 4px)",
+   "opacity": "1"
+  },
+  {
+   "el": "use.ui-fd-doc.ui-fd-doc--middle",
+   "rect": [
+    269,
+    4406,
+    8,
+    9
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "filter": "drop-shadow(rgba(0, 30, 60, 0.18) 0px 3px 4px)",
+   "opacity": "1"
+  },
+  {
+   "el": "span.ba-install__file.ba-install__file--new",
+   "rect": [
+    262,
+    4444,
+    234,
+    24
+   ],
+   "radius": "6px",
+   "bg": "rgba(0, 0, 0, 0.05)",
+   "border": null,
+   "filter": "blur(3px)",
+   "opacity": "0"
+  },
+  {
+   "el": "svg.ba-cursor",
+   "rect": [
+    768,
+    4373,
+    18,
+    22
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "filter": "drop-shadow(rgba(0, 0, 0, 0.18) 0px 2px 4px)",
+   "opacity": "1"
+  },
+  {
+   "el": "p.faq__a",
+   "rect": [
+    400,
+    5049,
+    640,
+    62
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "filter": "blur(3px)",
+   "opacity": "0"
+  },
+  {
+   "el": "p.faq__a",
+   "rect": [
+    400,
+    5104,
+    640,
+    62
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "filter": "blur(3px)",
+   "opacity": "0"
+  },
+  {
+   "el": "p.faq__a",
+   "rect": [
+    400,
+    5159,
+    640,
+    84
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "filter": "blur(3px)",
+   "opacity": "0"
+  },
+  {
+   "el": "p.faq__a",
+   "rect": [
+    400,
+    5214,
+    640,
+    62
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "filter": "blur(3px)",
+   "opacity": "0"
+  },
+  {
+   "el": "p.faq__a",
+   "rect": [
+    400,
+    5269,
+    640,
+    62
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "filter": "blur(3px)",
+   "opacity": "0"
+  },
+  {
+   "el": "p.faq__a",
+   "rect": [
+    400,
+    5324,
+    640,
+    40
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "filter": "blur(3px)",
+   "opacity": "0"
+  }
+ ],
+ "gradients": [
+  {
+   "el": "div.offer-banner",
+   "rect": [
+    0,
+    0,
+    1440,
+    32
+   ],
+   "radius": "0px",
+   "bg": "linear-gradient(rgb(253, 242, 248), rgb(253, 242, 248)), none",
+   "border": null,
+   "size": "auto, auto",
+   "clip": "border-box, border-box",
+   "opacity": "1",
+   "blend": "normal",
+   "bgBlend": "normal, normal"
+  },
+  {
+   "el": "a.btn.btn--primary",
+   "rect": [
+    1112,
+    52,
+    112,
+    28
+   ],
+   "radius": "999px",
+   "bg": "linear-gradient(rgb(50, 49, 55), rgb(32, 30, 37)), linear-gradient(rgb(75, 73, 81), rgb(49, 48, 58), rgb(24, 23, 27))",
+   "border": "1px solid rgba(0, 0, 0, 0)",
+   "size": "auto, auto",
+   "clip": "padding-box, border-box",
+   "opacity": "1",
+   "blend": "normal",
+   "bgBlend": "normal, normal"
+  },
+  {
+   "el": "a.btn.btn--primary.lp-btn.lp-btn--lg",
+   "rect": [
+    589,
+    490,
+    138,
+    42
+   ],
+   "radius": "999px",
+   "bg": "linear-gradient(rgb(50, 49, 55), rgb(32, 30, 37)), linear-gradient(rgb(75, 73, 81), rgb(49, 48, 58), rgb(24, 23, 27))",
+   "border": "1px solid rgba(0, 0, 0, 0)",
+   "size": "auto, auto",
+   "clip": "padding-box, border-box",
+   "opacity": "1",
+   "blend": "normal",
+   "bgBlend": "normal, normal"
+  },
+  {
+   "el": "span.ui-button__label::after",
+   "rect": [
+    864,
+    961,
+    36,
+    9
+   ],
+   "radius": "0px",
+   "bg": "linear-gradient(90deg, rgba(0, 0, 0, 0) 38%, rgba(23, 23, 23, 0.92) 50%, rgba(0, 0, 0, 0) 62%)",
+   "border": null,
+   "size": "300% 100%",
+   "clip": "text",
+   "opacity": "0",
+   "blend": "normal",
+   "bgBlend": "normal"
+  },
+  {
+   "el": "pre.ui-tc__code::after",
+   "rect": [
+    463,
+    1453,
+    435,
+    94
+   ],
+   "radius": "0px",
+   "bg": "linear-gradient(rgba(0, 0, 0, 0), rgb(250, 250, 250))",
+   "border": null,
+   "size": "auto",
+   "clip": "border-box",
+   "opacity": "0",
+   "blend": "normal",
+   "bgBlend": "normal"
+  },
+  {
+   "el": "pre.ui-tc__code::after",
+   "rect": [
+    463,
+    1577,
+    435,
+    135
+   ],
+   "radius": "0px",
+   "bg": "linear-gradient(rgba(0, 0, 0, 0), rgb(250, 250, 250))",
+   "border": null,
+   "size": "auto",
+   "clip": "border-box",
+   "opacity": "0",
+   "blend": "normal",
+   "bgBlend": "normal"
+  },
+  {
+   "el": "pre.ui-tc__code::after",
+   "rect": [
+    463,
+    1487,
+    435,
+    68
+   ],
+   "radius": "0px",
+   "bg": "linear-gradient(rgba(0, 0, 0, 0), rgb(250, 250, 250))",
+   "border": null,
+   "size": "auto",
+   "clip": "border-box",
+   "opacity": "0",
+   "blend": "normal",
+   "bgBlend": "normal"
+  },
+  {
+   "el": "pre.ui-tc__code::after",
+   "rect": [
+    463,
+    1584,
+    435,
+    68
+   ],
+   "radius": "0px",
+   "bg": "linear-gradient(rgba(0, 0, 0, 0), rgb(250, 250, 250))",
+   "border": null,
+   "size": "auto",
+   "clip": "border-box",
+   "opacity": "0",
+   "blend": "normal",
+   "bgBlend": "normal"
+  },
+  {
+   "el": "span.ui-tl__label.ui-tl__label--in.ui-tl__shine::after",
+   "rect": [
+    475,
+    1446,
+    137,
+    12
+   ],
+   "radius": "0px",
+   "bg": "linear-gradient(90deg, rgba(0, 0, 0, 0) 38%, rgba(23, 23, 23, 0.95) 50%, rgba(0, 0, 0, 0) 62%)",
+   "border": null,
+   "size": "300% 100%",
+   "clip": "text",
+   "opacity": "1",
+   "blend": "normal",
+   "bgBlend": "normal"
+  },
+  {
+   "el": "a.btn.btn--primary.lp-btn",
+   "rect": [
+    730,
+    1603,
+    151,
+    36
+   ],
+   "radius": "999px",
+   "bg": "linear-gradient(rgb(50, 49, 55), rgb(32, 30, 37)), linear-gradient(rgb(75, 73, 81), rgb(49, 48, 58), rgb(24, 23, 27))",
+   "border": "1px solid rgba(0, 0, 0, 0)",
+   "size": "auto, auto",
+   "clip": "padding-box, border-box",
+   "opacity": "1",
+   "blend": "normal",
+   "bgBlend": "normal, normal"
+  },
+  {
+   "el": "span",
+   "rect": [
+    498,
+    1926,
+    18,
+    19
+   ],
+   "radius": "0px",
+   "bg": "linear-gradient(90deg, rgb(221, 6, 116), rgb(94, 62, 224))",
+   "border": null,
+   "size": "auto",
+   "clip": "text",
+   "opacity": "1",
+   "blend": "normal",
+   "bgBlend": "normal"
+  },
+  {
+   "el": "span",
+   "rect": [
+    839,
+    1926,
+    18,
+    19
+   ],
+   "radius": "0px",
+   "bg": "linear-gradient(90deg, rgb(221, 6, 116), rgb(94, 62, 224))",
+   "border": null,
+   "size": "auto",
+   "clip": "text",
+   "opacity": "1",
+   "blend": "normal",
+   "bgBlend": "normal"
+  },
+  {
+   "el": "span",
+   "rect": [
+    1180,
+    1926,
+    18,
+    19
+   ],
+   "radius": "0px",
+   "bg": "linear-gradient(90deg, rgb(221, 6, 116), rgb(94, 62, 224))",
+   "border": null,
+   "size": "auto",
+   "clip": "text",
+   "opacity": "1",
+   "blend": "normal",
+   "bgBlend": "normal"
+  },
+  {
+   "el": "span",
+   "rect": [
+    498,
+    2235,
+    18,
+    19
+   ],
+   "radius": "0px",
+   "bg": "linear-gradient(90deg, rgb(221, 6, 116), rgb(94, 62, 224))",
+   "border": null,
+   "size": "auto",
+   "clip": "text",
+   "opacity": "1",
+   "blend": "normal",
+   "bgBlend": "normal"
+  },
+  {
+   "el": "span",
+   "rect": [
+    1180,
+    2235,
+    18,
+    19
+   ],
+   "radius": "0px",
+   "bg": "linear-gradient(90deg, rgb(221, 6, 116), rgb(94, 62, 224))",
+   "border": null,
+   "size": "auto",
+   "clip": "text",
+   "opacity": "1",
+   "blend": "normal",
+   "bgBlend": "normal"
+  },
+  {
+   "el": "span.ui-button__label::after",
+   "rect": [
+    306,
+    3467,
+    43,
+    11
+   ],
+   "radius": "0px",
+   "bg": "linear-gradient(90deg, rgba(0, 0, 0, 0) 38%, rgba(23, 23, 23, 0.92) 50%, rgba(0, 0, 0, 0) 62%)",
+   "border": null,
+   "size": "300% 100%",
+   "clip": "text",
+   "opacity": "0",
+   "blend": "normal",
+   "bgBlend": "normal"
+  },
+  {
+   "el": "span.ui-chat-composer__label.ui-chat-composer__shimmer::after",
+   "rect": [
+    441,
+    3461,
+    53,
+    8
+   ],
+   "radius": "0px",
+   "bg": "linear-gradient(90deg, rgba(0, 0, 0, 0) 38%, rgba(23, 23, 23, 0.92) 50%, rgba(0, 0, 0, 0) 62%)",
+   "border": null,
+   "size": "300% 100%",
+   "clip": "text",
+   "opacity": "0",
+   "blend": "normal",
+   "bgBlend": "normal"
+  },
+  {
+   "el": "span.ui-chat-composer__request.ui-chat-composer__shimmer::after",
+   "rect": [
+    439,
+    3430,
+    76,
+    8
+   ],
+   "radius": "0px",
+   "bg": "linear-gradient(90deg, rgba(0, 0, 0, 0) 38%, rgba(23, 23, 23, 0.92) 50%, rgba(0, 0, 0, 0) 62%)",
+   "border": null,
+   "size": "300% 100%",
+   "clip": "text",
+   "opacity": "0",
+   "blend": "normal",
+   "bgBlend": "normal"
+  },
+  {
+   "el": "button.ui-button",
+   "rect": [
+    1126,
+    3375,
+    77,
+    23
+   ],
+   "radius": "10px",
+   "bg": "linear-gradient(rgb(50, 49, 55), rgb(32, 30, 37)), linear-gradient(rgb(75, 73, 81), rgb(49, 48, 58), rgb(24, 23, 27))",
+   "border": "1.13636px solid rgba(0, 0, 0, 0)",
+   "size": "auto, auto",
+   "clip": "padding-box, border-box",
+   "opacity": "1",
+   "blend": "normal",
+   "bgBlend": "normal, normal"
+  },
+  {
+   "el": "span.ui-button__label::after",
+   "rect": [
+    1135,
+    3382,
+    58,
+    9
+   ],
+   "radius": "0px",
+   "bg": "linear-gradient(90deg, rgba(0, 0, 0, 0) 38%, rgba(255, 255, 255, 0.95) 50%, rgba(0, 0, 0, 0) 62%)",
+   "border": null,
+   "size": "300% 100%",
+   "clip": "text",
+   "opacity": "0",
+   "blend": "normal",
+   "bgBlend": "normal"
+  },
+  {
+   "el": "div.ui-fd-front",
+   "rect": [
+    265,
+    4407,
+    15,
+    10
+   ],
+   "radius": "0.961824px",
+   "bg": "linear-gradient(rgba(0, 40, 75, 0) 74%, rgba(0, 40, 75, 0.28) 100%), linear-gradient(rgba(132, 214, 248, 0.45) 0%, rgba(69, 170, 220, 0.45) 100%)",
+   "border": null,
+   "size": "auto, auto",
+   "clip": "border-box, border-box",
+   "opacity": "1",
+   "blend": "normal",
+   "bgBlend": "normal, normal"
+  },
+  {
+   "el": "div.ba-tweak",
+   "rect": [
+    564,
+    4285,
+    313,
+    220
+   ],
+   "radius": "0px",
+   "bg": "radial-gradient(rgb(229, 229, 229) 1px, rgba(0, 0, 0, 0) 1.2px)",
+   "border": null,
+   "size": "12px 12px",
+   "clip": "border-box",
+   "opacity": "1",
+   "blend": "normal",
+   "bgBlend": "normal"
+  },
+  {
+   "el": "div.ba-tray.ba-tweak__preview",
+   "rect": [
+    592,
+    4316,
+    109,
+    158
+   ],
+   "radius": "12px",
+   "bg": "linear-gradient(rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.04)), none",
+   "border": null,
+   "size": "auto, auto",
+   "clip": "border-box, border-box",
+   "opacity": "1",
+   "blend": "normal",
+   "bgBlend": "normal, normal"
+  },
+  {
+   "el": "div.ba-tray.ba-tweak__accent",
+   "rect": [
+    709,
+    4316,
+    139,
+    49
+   ],
+   "radius": "12px",
+   "bg": "linear-gradient(rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.04)), none",
+   "border": null,
+   "size": "auto, auto",
+   "clip": "border-box, border-box",
+   "opacity": "1",
+   "blend": "normal",
+   "bgBlend": "normal, normal"
+  },
+  {
+   "el": "div.ba-tray.ba-tweak__radius",
+   "rect": [
+    709,
+    4371,
+    139,
+    49
+   ],
+   "radius": "12px",
+   "bg": "linear-gradient(rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.04)), none",
+   "border": null,
+   "size": "auto, auto",
+   "clip": "border-box, border-box",
+   "opacity": "1",
+   "blend": "normal",
+   "bgBlend": "normal, normal"
+  },
+  {
+   "el": "div.ba-tray.ba-tweak__shadow",
+   "rect": [
+    709,
+    4425,
+    139,
+    49
+   ],
+   "radius": "12px",
+   "bg": "linear-gradient(rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.04)), none",
+   "border": null,
+   "size": "auto, auto",
+   "clip": "border-box, border-box",
+   "opacity": "1",
+   "blend": "normal",
+   "bgBlend": "normal, normal"
+  }
+ ],
+ "urlBgs": [],
+ "cornerShape": [],
+ "clipPath": [
+  {
+   "el": "div.lp-ba__before",
+   "rect": [
+    217,
+    2977,
+    1006,
+    519
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "clipPath": "inset(0px 50% 0px 0px)"
+  },
+  {
+   "el": "div.ba-theme__layer.ba-theme__layer--dark.dark",
+   "rect": [
+    904,
+    4285,
+    313,
+    220
+   ],
+   "radius": "0px",
+   "bg": "rgb(18, 18, 19)",
+   "border": null,
+   "clipPath": "inset(0px 0px 0px 28.0137%)"
+  }
+ ],
+ "animations": [
+  {
+   "value": "lp-agent-in 0.42s cubic-bezier(0.22, 1, 0.36, 1) 1",
+   "n": 4,
+   "ex": [
+    {
+     "el": "li",
+     "rect": [
+      288,
+      3881,
+      457,
+      21
+     ]
+    },
+    {
+     "el": "li",
+     "rect": [
+      288,
+      3909,
+      457,
+      21
+     ]
+    },
+    {
+     "el": "li",
+     "rect": [
+      288,
+      3938,
+      457,
+      43
+     ]
+    }
+   ]
+  },
+  {
+   "value": "lp-rise 0.7s cubic-bezier(0.22, 1, 0.36, 1) 1",
+   "n": 3,
+   "ex": [
+    {
+     "el": "h1.lp-hero__title",
+     "rect": [
+      562,
+      296,
+      316,
+      104
+     ]
+    },
+    {
+     "el": "p.lp-hero__sub",
+     "rect": [
+      481,
+      400,
+      479,
+      62
+     ]
+    },
+    {
+     "el": "div.lp-hero__ctas",
+     "rect": [
+      589,
+      462,
+      261,
+      70
+     ]
+    }
+   ]
+  },
+  {
+   "value": "ui-button-label-in 0.48s cubic-bezier(0.25, 1, 0.5, 1) 1",
+   "n": 3,
+   "ex": [
+    {
+     "el": "span.ui-button__label",
+     "rect": [
+      864,
+      961,
+      36,
+      9
+     ]
+    },
+    {
+     "el": "span.ui-button__label",
+     "rect": [
+      306,
+      3467,
+      43,
+      11
+     ]
+    },
+    {
+     "el": "span.ui-button__label",
+     "rect": [
+      1135,
+      3382,
+      58,
+      9
+     ]
+    }
+   ]
+  },
+  {
+   "value": "ui-tc-in 0.36s cubic-bezier(0.22, 1, 0.36, 1) 1",
+   "n": 3,
+   "ex": [
+    {
+     "el": "span.ui-tc-group__title",
+     "rect": [
+      494,
+      1370,
+      84,
+      13
+     ]
+    },
+    {
+     "el": "span.ui-tc__status",
+     "rect": [
+      839,
+      1403,
+      43,
+      12
+     ]
+    },
+    {
+     "el": "span.ui-tc__status",
+     "rect": [
+      839,
+      1437,
+      43,
+      12
+     ]
+    }
+   ]
+  },
+  {
+   "value": "ui-pl-pop 0.36s cubic-bezier(0.22, 1, 0.36, 1) 1",
+   "n": 2,
+   "ex": [
+    {
+     "el": "svg.ui-pl__mark",
+     "rect": [
+      451,
+      1067,
+      8,
+      8
+     ]
+    },
+    {
+     "el": "svg.ui-pl__spinner",
+     "rect": [
+      453,
+      1109,
+      5,
+      5
+     ]
+    }
+   ]
+  },
+  {
+   "value": "ui-pl-fade 0.3s ease 1",
+   "n": 2,
+   "ex": [
+    {
+     "el": "span.ui-pl__time.ui-pl__time--done",
+     "rect": [
+      874,
+      1064,
+      18,
+      13
+     ]
+    },
+    {
+     "el": "span.ui-pl__time",
+     "rect": [
+      874,
+      1107,
+      18,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "value": "ui-as-rise 0.42s cubic-bezier(0.22, 1, 0.36, 1) 1",
+   "n": 2,
+   "ex": [
+    {
+     "el": "div.ui-ar__entry.ui-as-rise",
+     "rect": [
+      431,
+      1342,
+      475,
+      62
+     ]
+    },
+    {
+     "el": "div.ui-ar__entry.ui-as-rise",
+     "rect": [
+      431,
+      1410,
+      475,
+      29
+     ]
+    }
+   ]
+  },
+  {
+   "value": "ui-tc-pop 0.42s cubic-bezier(0.22, 1, 0.36, 1) 1",
+   "n": 2,
+   "ex": [
+    {
+     "el": "span.ui-tc__icon",
+     "rect": [
+      458,
+      1369,
+      17,
+      17
+     ]
+    },
+    {
+     "el": "span.ui-tc__icon",
+     "rect": [
+      471,
+      1369,
+      17,
+      17
+     ]
+    }
+   ]
+  },
+  {
+   "value": "ui-tc-draw 0.36s cubic-bezier(0.22, 1, 0.36, 1) 1",
+   "n": 2,
+   "ex": [
+    {
+     "el": "path",
+     "rect": [
+      841,
+      1407,
+      6,
+      4
+     ]
+    },
+    {
+     "el": "path",
+     "rect": [
+      841,
+      1441,
+      6,
+      4
+     ]
+    }
+   ]
+  },
+  {
+   "value": "lp-iso-in 1.4s cubic-bezier(0.22, 1, 0.36, 1) 1",
+   "n": 1,
+   "ex": [
+    {
+     "el": "div.lp-iso",
+     "rect": [
+      0,
+      100,
+      1440,
+      620
+     ]
+    }
+   ]
+  },
+  {
+   "value": "lp-iso-scroll 80s linear infinite",
+   "n": 1,
+   "ex": [
+    {
+     "el": "div.lp-iso__track",
+     "rect": [
+      -100,
+      -542,
+      3019,
+      2257
+     ]
+    }
+   ]
+  },
+  {
+   "value": "lp-screens-in 0.42s cubic-bezier(0.22, 1, 0.36, 1) 1",
+   "n": 1,
+   "ex": [
+    {
+     "el": "div.lp-screens__view",
+     "rect": [
+      217,
+      941,
+      1006,
+      629
+     ]
+    }
+   ]
+  },
+  {
+   "value": "ui-as-guide-in 0.36s cubic-bezier(0.22, 1, 0.36, 1) 1",
+   "n": 1,
+   "ex": [
+    {
+     "el": "button.ui-as-steps.ui-as-guide__content",
+     "rect": [
+      224,
+      1486,
+      141,
+      49
+     ]
+    }
+   ]
+  },
+  {
+   "value": "ui-ar-breathe 1.4s ease-in-out infinite",
+   "n": 1,
+   "ex": [
+    {
+     "el": "span",
+     "rect": [
+      583,
+      963,
+      4,
+      4
+     ]
+    }
+   ]
+  },
+  {
+   "value": "ui-button-icon-in 0.52s cubic-bezier(0.25, 1, 0.5, 1) 1",
+   "n": 1,
+   "ex": [
+    {
+     "el": "span.ui-button__icon",
+     "rect": [
+      849,
+      960,
+      11,
+      11
+     ]
+    }
+   ]
+  },
+  {
+   "value": "ui-pl-draw 0.42s cubic-bezier(0.22, 1, 0.36, 1) 1",
+   "n": 1,
+   "ex": [
+    {
+     "el": "path.ui-pl__draw",
+     "rect": [
+      453,
+      1069,
+      4,
+      3
+     ]
+    }
+   ]
+  },
+  {
+   "value": "ui-pl-fade 0.32s cubic-bezier(0.22, 1, 0.36, 1) 1",
+   "n": 1,
+   "ex": [
+    {
+     "el": "div.ui-pl__foot",
+     "rect": [
+      434,
+      1267,
+      469,
+      32
+     ]
+    }
+   ]
+  },
+  {
+   "value": "ui-tl-out 0.32s cubic-bezier(0.22, 1, 0.36, 1) 1",
+   "n": 1,
+   "ex": [
+    {
+     "el": "span.ui-tl__label.ui-tl__label--out",
+     "rect": [
+      475,
+      1437,
+      114,
+      12
+     ]
+    }
+   ]
+  },
+  {
+   "value": "ui-tl-in 0.46s cubic-bezier(0.22, 1, 0.36, 1) 1",
+   "n": 1,
+   "ex": [
+    {
+     "el": "span.ui-tl__label.ui-tl__label--in.ui-tl__shine",
+     "rect": [
+      475,
+      1446,
+      137,
+      12
+     ]
+    }
+   ]
+  },
+  {
+   "value": "ui-tl-sweep 1.8s linear infinite",
+   "n": 1,
+   "ex": [
+    {
+     "el": "span.ui-tl__label.ui-tl__label--in.ui-tl__shine::after",
+     "rect": [
+      475,
+      1446,
+      137,
+      12
+     ]
+    }
+   ]
+  },
+  {
+   "value": "lp-fade 0.36s cubic-bezier(0.22, 1, 0.36, 1) 1",
+   "n": 1,
+   "ex": [
+    {
+     "el": "div.grid.lp-grid",
+     "rect": [
+      216,
+      1907,
+      1008,
+      605
+     ]
+    }
+   ]
+  },
+  {
+   "value": "ba-type, ba-caret 6s, 0.8s steps(28), steps(1) infinite, infinite",
+   "n": 1,
+   "ex": [
+    {
+     "el": "span.ba-install__type",
+     "rect": [
+      281,
+      4342,
+      185,
+      15
+     ]
+    }
+   ]
+  },
+  {
+   "value": "ba-done 6s ease infinite",
+   "n": 1,
+   "ex": [
+    {
+     "el": "span.ba-install__done",
+     "rect": [
+      268,
+      4361,
+      222,
+      15
+     ]
+    }
+   ]
+  },
+  {
+   "value": "ba-drop 6s cubic-bezier(0.22, 1, 0.36, 1) infinite",
+   "n": 1,
+   "ex": [
+    {
+     "el": "span.ba-install__file.ba-install__file--new",
+     "rect": [
+      262,
+      4444,
+      234,
+      24
+     ]
+    }
+   ]
+  },
+  {
+   "value": "ba-r 10s cubic-bezier(0.22, 1, 0.36, 1) infinite",
+   "n": 1,
+   "ex": [
+    {
+     "el": "div.ba-tweak",
+     "rect": [
+      564,
+      4285,
+      313,
+      220
+     ]
+    }
+   ]
+  },
+  {
+   "value": "ba-shadow 10s cubic-bezier(0.22, 1, 0.36, 1) infinite",
+   "n": 1,
+   "ex": [
+    {
+     "el": "div.ba-tray__card.ba-tweak__profile",
+     "rect": [
+      595,
+      4340,
+      104,
+      132
+     ]
+    }
+   ]
+  },
+  {
+   "value": "ba-accent 10s linear infinite",
+   "n": 1,
+   "ex": [
+    {
+     "el": "span.ba-tweak__button",
+     "rect": [
+      605,
+      4437,
+      84,
+      22
+     ]
+    }
+   ]
+  },
+  {
+   "value": "ba-hex-a 10s linear infinite",
+   "n": 1,
+   "ex": [
+    {
+     "el": "span.ba-tweak__hex--a",
+     "rect": [
+      806,
+      4324,
+      32,
+      9
+     ]
+    }
+   ]
+  },
+  {
+   "value": "ba-hex-b 10s linear infinite",
+   "n": 1,
+   "ex": [
+    {
+     "el": "span.ba-tweak__hex--b",
+     "rect": [
+      806,
+      4321,
+      32,
+      16
+     ]
+    }
+   ]
+  },
+  {
+   "value": "ba-ring 10s linear infinite",
+   "n": 1,
+   "ex": [
+    {
+     "el": "b.ba-tweak__ring",
+     "rect": [
+      717,
+      4344,
+      15,
+      15
+     ]
+    }
+   ]
+  }
+ ],
+ "borderImage": [],
+ "textShadow": [],
+ "atProperty": [
+  "@property --ba-r { syntax: \"<integer>\"; inherits: true; initial-value: 6; }"
+ ],
+ "keyframes": [
+  "@keyframes ui-as-guide-out { \n  100% { opacity: 0; }\n}",
+  "@keyframes ui-as-guide-in { \n  0% { opacity: 0; transform: translateY(6px); }\n  100% { opacity: 1; transform: none; }\n}",
+  "@keyframes ui-as-popover-up { \n  0% { opacity: 0; transform: scale(0.96) translateY(4px); }\n  100% { opacity: 1; transform: none; }\n}",
+  "@keyframes ui-as-rise { \n  0% { opacity: 0; transform: translateY(8px); }\n  100% { opacity: 1; transform: none; }\n}",
+  "@keyframes ui-as-pop { \n  0% { opacity: 0; transform: scale(0.6); }\n  100% { opacity: 1; transform: none; }\n}",
+  "@keyframes ui-as-popover { \n  0% { opacity: 0; transform: scale(0.96) translateY(-4px); }\n  100% { opacity: 1; transform: none; }\n}",
+  "@keyframes ui-as-toast { \n  0% { opacity: 0; transform: translateY(12px) scale(0.96); }\n  12%, 85% { opacity: 1; transform: none; }\n  100% { opacity: 0; transform: translateY(6px); }\n}",
+  "@keyframes ui-ar-breathe { \n  50% { opacity: 0.35; }\n}",
+  "@keyframes ui-ar-panel-in { \n  0% { transform: translateX(40px); opacity: 0; }\n  100% { transform: none; opacity: 1; }\n}",
+  "@keyframes ui-ar-fade { \n  0% { opacity: 0; }\n}",
+  "@keyframes ui-button-label-in { \n  0% { opacity: 0; filter: blur(3px); transform: translateY(25%); }\n}",
+  "@keyframes ui-button-icon-in { \n  0% { opacity: 0; filter: blur(2px); transform: scale(0.7); }\n}",
+  "@keyframes ui-button-spin { \n  100% { transform: rotate(1turn); }\n}",
+  "@keyframes ui-button-sweep { \n  0% { background-position: 100% 0px; }\n  100% { background-position: 0% 0px; }\n}",
+  "@keyframes ui-pl-fade { \n  0% { opacity: 0; transform: translateY(3px); }\n  100% { opacity: 1; transform: none; }\n}",
+  "@keyframes ui-pl-enter { \n  0% { opacity: 0; transform: translateY(6px); }\n  100% { opacity: 1; transform: none; }\n}",
+  "@keyframes ui-pl-pop { \n  0% { opacity: 0; transform: scale(0.5); }\n  100% { opacity: 1; transform: none; }\n}",
+  "@keyframes ui-pl-draw { \n  100% { stroke-dashoffset: 0; }\n}",
+  "@keyframes ui-pl-ray { \n  0% { opacity: 1; }\n  100% { opacity: 0.18; }\n}",
+  "@keyframes ui-tl-ray { \n  0% { opacity: 1; }\n  100% { opacity: 0.18; }\n}",
+  "@keyframes ui-tl-in { \n  0% { opacity: 0; transform: translateY(70%); filter: blur(3px); }\n  100% { opacity: 1; transform: none; filter: none; }\n}",
+  "@keyframes ui-tl-out { \n  0% { opacity: 1; transform: none; filter: none; }\n  100% { opacity: 0; transform: translateY(-70%); filter: blur(3px); }\n}",
+  "@keyframes ui-tl-draw { \n  100% { stroke-dashoffset: 0; }\n}",
+  "@keyframes ui-tl-sweep { \n  0% { background-position: 100% 0px; }\n  100% { background-position: 0% 0px; }\n}",
+  "@keyframes ui-df-draw { \n  100% { stroke-dashoffset: 0; }\n}",
+  "@keyframes ui-chat-composer-sweep { \n  0% { background-position: 100% 0px; }\n  100% { background-position: 0% 0px; }\n}",
+  "@keyframes ui-chat-composer-hop { \n  0%, 70%, 100% { transform: translateY(0px); }\n  32% { transform: translateY(calc(-13 * var(--u))); }\n}",
+  "@keyframes ui-chat-composer-wave { \n  0%, 76%, 100% { transform: rotate(0deg); }\n  18% { transform: rotate(16deg); }\n  38% { transform: rotate(-10deg); }\n  58% { transform: rotate(7deg); }\n}",
+  "@keyframes ui-chat-composer-model-in { \n  0% { opacity: 0; filter: blur(3px); transform: translateY(30%); }\n}",
+  "@keyframes ui-chat-composer-logo-in { \n  0% { opacity: 0; transform: scale(0.6) rotate(-12deg); }\n}",
+  "@keyframes ui-tc-in { \n  0% { opacity: 0; transform: translateY(3px); filter: blur(2px); }\n  100% { opacity: 1; transform: none; filter: none; }\n}",
+  "@keyframes ui-tc-pop { \n  0% { opacity: 0; transform: scale(0.6); }\n  100% { opacity: 1; transform: none; }\n}",
+  "@keyframes ui-tc-spin { \n  100% { transform: rotate(360deg); }\n}",
+  "@keyframes ui-tc-draw { \n  100% { stroke-dashoffset: 0; }\n}",
+  "@keyframes ui-tc-sweep { \n  0% { background-position: 100% 0px; }\n  100% { background-position: 0% 0px; }\n}",
+  "@keyframes lp-pop { \n  0% { opacity: 0; transform: translateY(-4px) scale(0.98); }\n}",
+  "@keyframes lp-iso-in { \n  0% { opacity: 0; }\n}",
+  "@keyframes lp-iso-scroll { \n  100% { transform: translateY(-33.3333%); }\n}",
+  "@keyframes lp-rise { \n  0% { opacity: 0; filter: blur(4px); transform: translateY(10px); }\n}",
+  "@keyframes lp-fade { \n  0% { opacity: 0; transform: translateY(6px); }\n}"
+ ],
+ "sheetHrefs": [
+  "https://www.affectui.com/assets/index-dEWX0nlf.css",
+  "https://www.affectui.com/assets/demo-CTF8-njg.css",
+  "https://www.affectui.com/assets/demo-D-cARMXK.css",
+  "https://www.affectui.com/assets/demo-BGl6r4_C.css",
+  "https://www.affectui.com/assets/demo-BbYZRnA4.css",
+  "https://www.affectui.com/assets/demo-CAQMqaoG.css",
+  "https://www.affectui.com/assets/demo-3vX34NSo.css"
+ ],
+ "cssGrep": {
+  "cornerShape": {
+   "n": 0,
+   "ex": []
+  },
+  "superellipse": {
+   "n": 0,
+   "ex": []
+  },
+  "squircle": {
+   "n": 0,
+   "ex": []
+  },
+  "feTurbulence": {
+   "n": 0,
+   "ex": []
+  },
+  "maskComposite": {
+   "n": 3,
+   "ex": [
+    "-webkit-mask-composite:source-in",
+    "mask-composite:intersect"
+   ]
+  },
+  "atProperty": {
+   "n": 1,
+   "ex": [
+    "@property --ba-r{syntax:\"<integer>\";inherits:true;initial-value:6}"
+   ]
+  },
+  "backdrop": {
+   "n": 16,
+   "ex": [
+    "backdrop-filter:blur(2px)",
+    "backdrop-filter:blur(8px)",
+    "backdrop-filter:blur(6px)",
+    "backdrop-filter: blur(3.3cqw) saturate(1.1)",
+    "backdrop-filter: blur(4px) saturate(1.15)"
+   ]
+  },
+  "inOklab": {
+   "n": 0,
+   "ex": []
+  },
+  "conic": {
+   "n": 0,
+   "ex": []
+  },
+  "plusLighter": {
+   "n": 0,
+   "ex": []
+  },
+  "offsetPath": {
+   "n": 0,
+   "ex": []
+  },
+  "paintWorklet": {
+   "n": 0,
+   "ex": []
+  }
+ },
+ "scheme": "light",
+ "measuredAt": "2026-10-10T13:57:10.193Z",
+ "chromium": "156.0.8078.4"
+}

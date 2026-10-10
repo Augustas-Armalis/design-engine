@@ -1,0 +1,192 @@
+{
+ "measured": "2026-10-10T14:08:22.146Z",
+ "radius": 96,
+ "box": 400,
+ "dpr": 1,
+ "cssCornerShapeSupported": true,
+ "note": "xorPx2 = summed |coverage difference| over a CELLxCELL css px window holding one corner; 0 = identical. For scale: a uniform 1px offset along one corner contour of this radius is about 2.6*R px^2.",
+ "native": [
+  {
+   "smoothing": 0,
+   "k": 1,
+   "scale": 1,
+   "xorPx2": 0
+  },
+  {
+   "smoothing": 0.2,
+   "k": 1,
+   "scale": 1,
+   "xorPx2": 10.59
+  },
+  {
+   "smoothing": 0.4,
+   "k": 1,
+   "scale": 1,
+   "xorPx2": 27.13
+  },
+  {
+   "smoothing": 0.6,
+   "k": 1.32,
+   "scale": 1.2,
+   "xorPx2": 48.09
+  },
+  {
+   "smoothing": 0.8,
+   "k": 1.76,
+   "scale": 1.56,
+   "xorPx2": 31.83
+  },
+  {
+   "smoothing": 1,
+   "k": 2.2,
+   "scale": 2.14,
+   "xorPx2": 23.86
+  }
+ ],
+ "plainRadius": [
+  {
+   "smoothing": 0,
+   "k": 1,
+   "scale": 1,
+   "xorPx2": 0,
+   "sameRadiusXorPx2": 0
+  },
+  {
+   "smoothing": 0.2,
+   "k": 1,
+   "scale": 1,
+   "xorPx2": 10.28,
+   "sameRadiusXorPx2": 10.28
+  },
+  {
+   "smoothing": 0.4,
+   "k": 1,
+   "scale": 1,
+   "xorPx2": 27.16,
+   "sameRadiusXorPx2": 27.16
+  },
+  {
+   "smoothing": 0.6,
+   "k": 1,
+   "scale": 1,
+   "xorPx2": 90.24,
+   "sameRadiusXorPx2": 89.18
+  },
+  {
+   "smoothing": 0.8,
+   "k": 1,
+   "scale": 1.01,
+   "xorPx2": 188.56,
+   "sameRadiusXorPx2": 189.78
+  },
+  {
+   "smoothing": 1,
+   "k": 1,
+   "scale": 1.04,
+   "xorPx2": 304.05,
+   "sameRadiusXorPx2": 337.97
+  }
+ ],
+ "apple": {
+  "vsFigmaAtSameRadius": [
+   {
+    "smoothing": 0.5,
+    "xorPx2": 52.76
+   },
+   {
+    "smoothing": 0.55,
+    "xorPx2": 36.31
+   },
+   {
+    "smoothing": 0.6,
+    "xorPx2": 26.96
+   },
+   {
+    "smoothing": 0.65,
+    "xorPx2": 37.48
+   },
+   {
+    "smoothing": 0.7,
+    "xorPx2": 50.22
+   },
+   {
+    "smoothing": 0.75,
+    "xorPx2": 74.51
+   },
+   {
+    "smoothing": 0.8,
+    "xorPx2": 100.44
+   }
+  ],
+  "bestFigmaSmoothing": {
+   "smoothing": 0.6,
+   "xorPx2": 26.96
+  },
+  "bestNative": {
+   "k": 1.32,
+   "scale": 1.2,
+   "xorPx2": 27.49
+  },
+  "bestPlainRadius": {
+   "k": 1,
+   "scale": 1,
+   "xorPx2": 96.98
+  },
+  "vsPlainSameRadius": 96.81
+ },
+ "framerCheck": {
+  "what": "plain border-radius that best matches corner-shape: superellipse(1.5) at the same radius (Framer ships radius * 0.752 as its fallback)",
+  "bestScale": 0.76,
+  "xorPx2": 77.26,
+  "framerFallbackScale": 0.752
+ },
+ "squircleKeyword": {
+  "what": "plain border-radius that best matches corner-shape: squircle (superellipse(2)) at the same radius",
+  "bestScale": 0.6,
+  "xorPx2": 106.45
+ },
+ "profiles": {
+  "border-radius R (circular)": {
+   "bendStartPx": 91,
+   "bendStartR": 0.948,
+   "diagDepthPx": 40.3,
+   "diagDepthR": 0.42
+  },
+  "figma smoothing 0.6 at R": {
+   "bendStartPx": 112,
+   "bendStartR": 1.167,
+   "diagDepthPx": 40.3,
+   "diagDepthR": 0.42
+  },
+  "figma smoothing 1.0 at R": {
+   "bendStartPx": 138,
+   "bendStartR": 1.438,
+   "diagDepthPx": 40.3,
+   "diagDepthR": 0.42
+  },
+  "apple continuous (UIBezierPath) at R": {
+   "bendStartPx": 107,
+   "bendStartR": 1.115,
+   "diagDepthPx": 40.3,
+   "diagDepthR": 0.42
+  },
+  "corner-shape superellipse(1.5) at R (Framer)": {
+   "bendStartPx": 80,
+   "bendStartR": 0.833,
+   "diagDepthPx": 30.3,
+   "diagDepthR": 0.316
+  },
+  "corner-shape squircle = superellipse(2) at R": {
+   "bendStartPx": 66,
+   "bendStartR": 0.688,
+   "diagDepthPx": 22,
+   "diagDepthR": 0.23
+  },
+  "corner-shape superellipse(1.32) at 1.2R (fitted iOS match)": {
+   "bendStartPx": 104,
+   "bendStartR": 1.083,
+   "diagDepthPx": 40.3,
+   "diagDepthR": 0.42
+  }
+ }
+}

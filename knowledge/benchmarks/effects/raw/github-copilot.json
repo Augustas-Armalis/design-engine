@@ -1,0 +1,895 @@
+{
+ "url": "https://github.com/features/copilot",
+ "title": "GitHub Copilot · Your AI coding agent · GitHub · GitHub",
+ "svgFilters": [
+  "<filter id=\"vscFilter0\" x=\"-8.39411\" y=\"15.8291\" width=\"116.727\" height=\"92.2456\" filterUnits=\"userSpaceOnUse\" color-interpolation-filters=\"sRGB\"><feFlood flood-opacity=\"0\" result=\"BackgroundImageFix\"></feFlood><feColorMatrix in=\"SourceAlpha\" type=\"matrix\" values=\"0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0\"></feColorMatrix><feOffset></feOffset><feGaussianBlur stdDeviation=\"4.16667\"></feGaussianBlur><feColorMatrix type=\"matrix\" values=\"0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0\"></feColorMatrix><feBlend mode=\"overlay\" in2=\"BackgroundImageFix\" result=\"effect1_dropShadow\"></feBlend><feBlend mode=\"",
+  "<filter id=\"vscFilter1\" x=\"60.4167\" y=\"-8.07558\" width=\"47.9167\" height=\"116.151\" filterUnits=\"userSpaceOnUse\" color-interpolation-filters=\"sRGB\"><feFlood flood-opacity=\"0\" result=\"BackgroundImageFix\"></feFlood><feColorMatrix in=\"SourceAlpha\" type=\"matrix\" values=\"0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0\"></feColorMatrix><feOffset></feOffset><feGaussianBlur stdDeviation=\"4.16667\"></feGaussianBlur><feColorMatrix type=\"matrix\" values=\"0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0\"></feColorMatrix><feBlend mode=\"overlay\" in2=\"BackgroundImageFix\" result=\"effect1_dropShadow\"></feBlend><feBlend mode=\""
+ ],
+ "canvases": [
+  {
+   "el": "canvas",
+   "rect": [
+    0,
+    -90,
+    1440,
+    1080
+   ],
+   "w": 1440,
+   "h": 1080
+  }
+ ],
+ "videos": [],
+ "counts": {
+  "elements": 1175,
+  "shadows": 2,
+  "glass": 8,
+  "blends": 1,
+  "masks": 3,
+  "filters": 2,
+  "gradients": 0,
+  "urlBgs": 0,
+  "cornerShape": 0,
+  "clipPath": 12,
+  "borderImage": 8
+ },
+ "shadows": [
+  {
+   "value": "rgb(25, 31, 27) 1px 0px 0px 0px, rgb(25, 31, 27) 0px 1px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px inset",
+   "n": 8,
+   "ex": [
+    {
+     "el": "li.Primer_Brand__Tiles-module__Tiles-item___YlnUj",
+     "rect": [
+      96,
+      6778,
+      156,
+      156
+     ],
+     "radius": "0px",
+     "bg": "rgb(9, 13, 10)",
+     "border": "1px solid rgb(25, 31, 27)"
+    },
+    {
+     "el": "li.Primer_Brand__Tiles-module__Tiles-item___YlnUj",
+     "rect": [
+      252,
+      6778,
+      156,
+      156
+     ],
+     "radius": "0px",
+     "bg": "rgb(9, 13, 10)",
+     "border": "1px solid rgb(25, 31, 27)"
+    },
+    {
+     "el": "li.Primer_Brand__Tiles-module__Tiles-item___YlnUj",
+     "rect": [
+      408,
+      6778,
+      156,
+      156
+     ],
+     "radius": "0px",
+     "bg": "rgb(9, 13, 10)",
+     "border": "1px solid rgb(25, 31, 27)"
+    }
+   ]
+  },
+  {
+   "value": "rgb(25, 31, 27) 0px -1px 0px 0px inset",
+   "n": 1,
+   "ex": [
+    {
+     "el": "kbd.HeaderSearch-module__kbd__HNG0o",
+     "rect": [
+      1204,
+      71,
+      25,
+      20
+     ],
+     "radius": "4px",
+     "bg": "rgba(0, 0, 0, 0)",
+     "border": "1px solid rgb(53, 61, 55)"
+    }
+   ]
+  }
+ ],
+ "radii": [
+  {
+   "value": "9999.01px",
+   "n": 25,
+   "ex": [
+    {
+     "el": "a.Primer_Brand__SubNav-module__SubNav__heading___d8v1r.Primer_Brand__SubNav-module__SubNav__link___rY_yE.Primer_Brand__SubNav-module__SubNav__subHeading___cmfhs",
+     "h": 27
+    },
+    {
+     "el": "a.Primer_Brand__SubNav-module__SubNav__link___rY_yE",
+     "h": 25
+    },
+    {
+     "el": "a.Primer_Brand__SubNav-module__SubNav__link___rY_yE",
+     "h": 25
+    }
+   ]
+  },
+  {
+   "value": "8px",
+   "n": 16,
+   "ex": [
+    {
+     "el": "div.Primer_Brand__ActionMenu-module__ActionMenu__button___vFLAF.Primer_Brand__ActionMenu-module__ActionMenu__button--medium___n5ovs.Primer_Brand__ActionMenu-module__ActionMenu__button--split-button___2Grop",
+     "h": 45
+    },
+    {
+     "el": "picture.Primer_Brand__Image-module__Image__container___CEHRD.Primer_Brand__Hero-module__Hero-image___GC10l.Primer_Brand__Hero-module__Hero-media___rM3qR.Primer_Brand__Hero-module__Hero-media--pos-block-end___6QShk",
+     "h": 676
+    },
+    {
+     "el": "img.Primer_Brand__Image-module__Image___JSzlx",
+     "h": 668
+    }
+   ]
+  },
+  {
+   "value": "6px",
+   "n": 13,
+   "ex": [
+    {
+     "el": "button.Primer_Brand__Button-module__Button___scH9Z.Primer_Brand__Button-module__Button--subtle___F7pEE.Primer_Brand__Button-module__Button--size-small___zQrEw.HeaderSearch-module__trigger__zsF9q",
+     "h": 32
+    },
+    {
+     "el": "a.Primer_Brand__Button-module__Button___scH9Z.Primer_Brand__Button-module__Button--subtle___F7pEE.Primer_Brand__Button-module__Button--size-small___zQrEw.AuthCTAs-module__cta__WpwQq",
+     "h": 32
+    },
+    {
+     "el": "a.Primer_Brand__Button-module__Button___scH9Z.Primer_Brand__Button-module__Button--secondary___gHnw_.Primer_Brand__Button-module__Button--size-small___zQrEw.AuthCTAs-module__cta__WpwQq",
+     "h": 32
+    }
+   ]
+  },
+  {
+   "value": "4px",
+   "n": 13,
+   "ex": [
+    {
+     "el": "kbd.HeaderSearch-module__kbd__HNG0o",
+     "h": 20
+    },
+    {
+     "el": "div.Primer_Brand__Card-module__Card__outer___FFzJY.Primer_Brand__Card-module__Card--maxWidth___vGoIk",
+     "h": 367
+    },
+    {
+     "el": "span.Primer_Brand__Token-module__Token___nJxhW.Primer_Brand__Token-module__Token--variant-default___eMkcM.Primer_Brand__Card-module__Card__label___q_cqg",
+     "h": 35
+    }
+   ]
+  },
+  {
+   "value": "12px",
+   "n": 9,
+   "ex": [
+    {
+     "el": "div.Primer_Brand__Icon-module__Icon___aJJhk.Primer_Brand__Icon-module__Icon--size-32___Tgjny.Primer_Brand__Icon-module__Icon--color-green___ufOLM.Primer_Brand__Icon-module__Icon--background___fgUOm",
+     "h": 56
+    },
+    {
+     "el": "div.Primer_Brand__Icon-module__Icon___aJJhk.Primer_Brand__Icon-module__Icon--size-32___Tgjny.Primer_Brand__Icon-module__Icon--color-green___ufOLM.Primer_Brand__Icon-module__Icon--background___fgUOm",
+     "h": 56
+    },
+    {
+     "el": "div.Primer_Brand__Icon-module__Icon___aJJhk.Primer_Brand__Icon-module__Icon--size-32___Tgjny.Primer_Brand__Icon-module__Icon--color-green___ufOLM.Primer_Brand__Icon-module__Icon--background___fgUOm",
+     "h": 56
+    }
+   ]
+  },
+  {
+   "value": "48px",
+   "n": 1,
+   "ex": [
+    {
+     "el": "button.Primer_Brand__LogoSuite-module__LogoSuite__logobar-playPauseButton___KDfie",
+     "h": 32
+    }
+   ]
+  }
+ ],
+ "glass": [
+  {
+   "el": "button.Primer_Brand__Button-module__Button___scH9Z.Primer_Brand__Button-module__Button--subtle___F7pEE.Primer_Brand__Button-module__Button--size-small___zQrEw.HeaderSearch-module__trigger__zsF9q",
+   "rect": [
+    1042,
+    65,
+    200,
+    32
+   ],
+   "radius": "6px",
+   "bg": "rgba(0, 0, 0, 0.01)",
+   "border": "1px solid rgb(38, 44, 40)",
+   "backdropFilter": "blur(20px)",
+   "bgImage": "none",
+   "boxShadow": "none",
+   "opacity": "1"
+  },
+  {
+   "el": "a.Primer_Brand__Button-module__Button___scH9Z.Primer_Brand__Button-module__Button--subtle___F7pEE.Primer_Brand__Button-module__Button--size-small___zQrEw.AuthCTAs-module__cta__WpwQq",
+   "rect": [
+    1250,
+    65,
+    72,
+    32
+   ],
+   "radius": "6px",
+   "bg": "rgba(0, 0, 0, 0.01)",
+   "border": "1px solid rgb(38, 44, 40)",
+   "backdropFilter": "blur(20px)",
+   "bgImage": "none",
+   "boxShadow": "none",
+   "opacity": "1"
+  },
+  {
+   "el": "a.Primer_Brand__Button-module__Button___scH9Z.Primer_Brand__Button-module__Button--secondary___gHnw_.Primer_Brand__Button-module__Button--size-small___zQrEw.AuthCTAs-module__cta__WpwQq",
+   "rect": [
+    1331,
+    65,
+    78,
+    32
+   ],
+   "radius": "6px",
+   "bg": "rgba(255, 255, 255, 0.12)",
+   "border": "1px solid rgba(255, 255, 255, 0.06)",
+   "backdropFilter": "blur(20px)",
+   "bgImage": "none",
+   "boxShadow": "none",
+   "opacity": "1"
+  },
+  {
+   "el": "a.Primer_Brand__Button-module__Button___scH9Z.Primer_Brand__Button-module__Button--secondary___gHnw_.Primer_Brand__Button-module__Button--size-medium___KFmzx",
+   "rect": [
+    891,
+    367,
+    190,
+    43
+   ],
+   "radius": "6px",
+   "bg": "rgba(255, 255, 255, 0.12)",
+   "border": "1px solid rgba(255, 255, 255, 0.06)",
+   "backdropFilter": "blur(20px)",
+   "bgImage": "none",
+   "boxShadow": "none",
+   "opacity": "1"
+  },
+  {
+   "el": "picture.Primer_Brand__Image-module__Image__container___CEHRD.Primer_Brand__Hero-module__Hero-image___GC10l.Primer_Brand__Hero-module__Hero-media___rM3qR.Primer_Brand__Hero-module__Hero-media--pos-block-end___6QShk::before",
+   "rect": [
+    144,
+    582,
+    1152,
+    676
+   ],
+   "radius": "16px",
+   "bg": "rgba(255, 255, 255, 0.3)",
+   "border": "1px solid rgb(255, 255, 255)",
+   "backdropFilter": "blur(5px)",
+   "bgImage": "none",
+   "boxShadow": "none",
+   "opacity": "1"
+  },
+  {
+   "el": "a.Primer_Brand__Button-module__Button___scH9Z.Primer_Brand__Button-module__Button--secondary___gHnw_.Primer_Brand__Button-module__Button--size-medium___KFmzx.Primer_Brand__Button-module__Button--block___kCYDx",
+   "rect": [
+    121,
+    6129,
+    264,
+    43
+   ],
+   "radius": "6px",
+   "bg": "rgba(255, 255, 255, 0.12)",
+   "border": "1px solid rgba(255, 255, 255, 0.06)",
+   "backdropFilter": "blur(20px)",
+   "bgImage": "none",
+   "boxShadow": "none",
+   "opacity": "1"
+  },
+  {
+   "el": "a.Primer_Brand__Button-module__Button___scH9Z.Primer_Brand__Button-module__Button--secondary___gHnw_.Primer_Brand__Button-module__Button--size-medium___KFmzx",
+   "rect": [
+    601,
+    6982,
+    239,
+    43
+   ],
+   "radius": "6px",
+   "bg": "rgba(255, 255, 255, 0.12)",
+   "border": "1px solid rgba(255, 255, 255, 0.06)",
+   "backdropFilter": "blur(20px)",
+   "bgImage": "none",
+   "boxShadow": "none",
+   "opacity": "1"
+  },
+  {
+   "el": "button#_R_ad_-button.Primer_Brand__Button-module__Button___scH9Z.Primer_Brand__Button-module__Button--secondary___gHnw_.Primer_Brand__Button-module__Button--size-small___zQrEw.Primer_Brand__ActionMenu-module__ActionMenu__button___vFLAF",
+   "rect": [
+    1204,
+    9934,
+    124,
+    32
+   ],
+   "radius": "6px",
+   "bg": "rgba(255, 255, 255, 0.12)",
+   "border": "1px solid rgba(255, 255, 255, 0.06)",
+   "backdropFilter": "blur(20px)",
+   "bgImage": "none",
+   "boxShadow": "none",
+   "opacity": "1"
+  }
+ ],
+ "blends": [
+  {
+   "el": "g",
+   "rect": [
+    470,
+    6840,
+    32,
+    32
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "blend": "overlay",
+   "opacity": "0.25",
+   "bgImage": "none",
+   "filter": "none"
+  }
+ ],
+ "masks": [
+  {
+   "el": "div.Primer_Brand__LogoSuite-module__LogoSuite__logobar-marquee____s6pK",
+   "rect": [
+    145,
+    1323,
+    1094,
+    40
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "mask": "linear-gradient(90deg, rgba(0, 0, 0, 0), rgb(0, 0, 0) 20%, rgb(0, 0, 0) 80%, rgba(0, 0, 0, 0))",
+   "composite": "add",
+   "maskSize": "auto",
+   "maskRepeat": "repeat",
+   "opacity": "1"
+  },
+  {
+   "el": "g",
+   "rect": [
+    470,
+    6840,
+    32,
+    32
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "mask": "url(\"#vscMask0\")",
+   "composite": "add",
+   "maskSize": "auto",
+   "maskRepeat": "repeat",
+   "opacity": "1"
+  },
+  {
+   "el": "g",
+   "rect": [
+    784,
+    6842,
+    27,
+    27
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "mask": "url(\"#mask0_15531_7071\")",
+   "composite": "add",
+   "maskSize": "auto",
+   "maskRepeat": "repeat",
+   "opacity": "1"
+  }
+ ],
+ "filters": [
+  {
+   "el": "g",
+   "rect": [
+    470,
+    6848,
+    32,
+    24
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "filter": "url(\"#vscFilter0\")",
+   "opacity": "1"
+  },
+  {
+   "el": "g",
+   "rect": [
+    492,
+    6840,
+    10,
+    32
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "filter": "url(\"#vscFilter1\")",
+   "opacity": "1"
+  }
+ ],
+ "gradients": [],
+ "urlBgs": [],
+ "cornerShape": [],
+ "clipPath": [
+  {
+   "el": "span.Primer_Brand__TextCursorAnimation-module__TextCursorAnimation__sizingContainer___7_wcg",
+   "rect": [
+    145,
+    300,
+    124,
+    21
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "clipPath": "inset(50%)"
+  },
+  {
+   "el": "h1#hero-section-brand-heading.Primer_Brand__Animation-module__Animation___cS_aI.Primer_Brand__Animation-module__Animation--reveal-in-up___8fCQo.Primer_Brand__Heading-module__Heading___fudyh.Primer_Brand__Heading-module__Heading-font--mona-sans___0OM_a",
+   "rect": [
+    145,
+    335,
+    530,
+    62
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "clipPath": "inset(0px 0px -11.2px)"
+  },
+  {
+   "el": "g",
+   "rect": [
+    -338,
+    1327,
+    105,
+    32
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "clipPath": "url(\"#clip0_115_25\")"
+  },
+  {
+   "el": "g",
+   "rect": [
+    -136,
+    1327,
+    215,
+    32
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "clipPath": "url(\"#clip0_1_610\")"
+  },
+  {
+   "el": "g",
+   "rect": [
+    177,
+    1328,
+    110,
+    31
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "clipPath": "url(\"#clip0_66_71316\")"
+  },
+  {
+   "el": "g",
+   "rect": [
+    384,
+    1327,
+    77,
+    32
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "clipPath": "url(\"#clip0_1_624\")"
+  },
+  {
+   "el": "g",
+   "rect": [
+    755,
+    1328,
+    96,
+    31
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "clipPath": "url(\"#clip0_2_889\")"
+  },
+  {
+   "el": "g",
+   "rect": [
+    1480,
+    1327,
+    105,
+    32
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "clipPath": "url(\"#clip0_115_25\")"
+  },
+  {
+   "el": "g",
+   "rect": [
+    1681,
+    1327,
+    215,
+    32
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "clipPath": "url(\"#clip0_1_610\")"
+  },
+  {
+   "el": "g",
+   "rect": [
+    1994,
+    1328,
+    110,
+    31
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "clipPath": "url(\"#clip0_66_71316\")"
+  },
+  {
+   "el": "g",
+   "rect": [
+    2202,
+    1327,
+    77,
+    32
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "clipPath": "url(\"#clip0_1_624\")"
+  },
+  {
+   "el": "g",
+   "rect": [
+    2572,
+    1328,
+    96,
+    31
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": null,
+   "clipPath": "url(\"#clip0_2_889\")"
+  }
+ ],
+ "animations": [
+  {
+   "value": "Primer_Brand__LogoSuite-module__LogobarScrollX___eGhi4 60s linear infinite",
+   "n": 2,
+   "ex": [
+    {
+     "el": "div.Primer_Brand__LogoSuite-module__LogoSuite__logobar-marqueeGroup___bUhyS.Primer_Brand__LogoSuite-module__LogoSuite__logobar-marqueeGroup--speed-slow___NZHrb",
+     "rect": [
+      -570,
+      1327,
+      1721,
+      32
+     ]
+    },
+    {
+     "el": "div.Primer_Brand__LogoSuite-module__LogoSuite__logobar-marqueeGroup___bUhyS.Primer_Brand__LogoSuite-module__LogoSuite__logobar-marqueeGroup--speed-slow___NZHrb",
+     "rect": [
+      1248,
+      1327,
+      1721,
+      32
+     ]
+    }
+   ]
+  },
+  {
+   "value": "Primer_Brand__TextCursorAnimation-module__TextCursorAnimation-cursor-blink___cTxPh 0.833s steps(1) 3",
+   "n": 1,
+   "ex": [
+    {
+     "el": "span.Primer_Brand__TextCursorAnimation-module__TextCursorAnimation__cursor___suzWD.Primer_Brand__TextCursorAnimation-module__TextCursorAnimation__cursor--animated___EfpR4.Primer_Brand__TextCursorAnimation-module__TextCursorAnimation__cursor--complete___gufWv",
+     "rect": [
+      275,
+      303,
+      9,
+      14
+     ]
+    }
+   ]
+  }
+ ],
+ "borderImage": [
+  {
+   "el": "section.Primer_Brand__river-shared-module__River___PCP5W.Primer_Brand__river-shared-module__River--50-50___37Rpp.Primer_Brand__river-shared-module__River--align-start___PjR7w.Primer_Brand__river-shared-module__River--variant-gridline___e27QX::before",
+   "rect": [
+    80,
+    2158,
+    1280,
+    548
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": "1px solid rgb(240, 246, 252)",
+   "src": "linear-gradient(rgb(25, 31, 27), rgb(25, 31, 27))",
+   "slice": "1"
+  },
+  {
+   "el": "section.Primer_Brand__river-shared-module__River___PCP5W.Primer_Brand__river-shared-module__River--50-50___37Rpp.Primer_Brand__river-shared-module__River--align-start___PjR7w.Primer_Brand__river-shared-module__River--variant-gridline___e27QX::after",
+   "rect": [
+    80,
+    2158,
+    1280,
+    548
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": "1px solid rgb(240, 246, 252)",
+   "src": "linear-gradient(rgb(25, 31, 27), rgb(25, 31, 27))",
+   "slice": "1"
+  },
+  {
+   "el": "section.Primer_Brand__river-shared-module__River___PCP5W.Primer_Brand__river-shared-module__River--50-50___37Rpp.Primer_Brand__river-shared-module__River--align-start___PjR7w.Primer_Brand__river-shared-module__River--variant-gridline___e27QX::before",
+   "rect": [
+    80,
+    2754,
+    1280,
+    548
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": "1px solid rgb(240, 246, 252)",
+   "src": "linear-gradient(rgb(25, 31, 27), rgb(25, 31, 27))",
+   "slice": "1"
+  },
+  {
+   "el": "section.Primer_Brand__river-shared-module__River___PCP5W.Primer_Brand__river-shared-module__River--50-50___37Rpp.Primer_Brand__river-shared-module__River--align-start___PjR7w.Primer_Brand__river-shared-module__River--variant-gridline___e27QX::after",
+   "rect": [
+    80,
+    2754,
+    1280,
+    548
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": "1px solid rgb(240, 246, 252)",
+   "src": "linear-gradient(rgb(25, 31, 27), rgb(25, 31, 27))",
+   "slice": "1"
+  },
+  {
+   "el": "section.Primer_Brand__river-shared-module__River___PCP5W.Primer_Brand__river-shared-module__River--50-50___37Rpp.Primer_Brand__river-shared-module__River--align-start___PjR7w.Primer_Brand__river-shared-module__River--variant-gridline___e27QX::before",
+   "rect": [
+    80,
+    3349,
+    1280,
+    548
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": "1px solid rgb(240, 246, 252)",
+   "src": "linear-gradient(rgb(25, 31, 27), rgb(25, 31, 27))",
+   "slice": "1"
+  },
+  {
+   "el": "section.Primer_Brand__river-shared-module__River___PCP5W.Primer_Brand__river-shared-module__River--50-50___37Rpp.Primer_Brand__river-shared-module__River--align-start___PjR7w.Primer_Brand__river-shared-module__River--variant-gridline___e27QX::after",
+   "rect": [
+    80,
+    3349,
+    1280,
+    548
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": "1px solid rgb(240, 246, 252)",
+   "src": "linear-gradient(rgb(25, 31, 27), rgb(25, 31, 27))",
+   "slice": "1"
+  },
+  {
+   "el": "div.Primer_Brand__Tiles-module__Tiles___RhWBm.Primer_Brand__Tiles-module__Tiles--variant-gridlines___6CsMP.Primer_Brand__Tiles-module__Tiles--layout-compact___HBisD.Primer_Brand__shared-module__gridline___FDR_5::before",
+   "rect": [
+    96,
+    6778,
+    1248,
+    157
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": "1px solid rgb(255, 255, 255)",
+   "src": "linear-gradient(rgb(25, 31, 27), rgb(25, 31, 27))",
+   "slice": "1"
+  },
+  {
+   "el": "div.Primer_Brand__Tiles-module__Tiles___RhWBm.Primer_Brand__Tiles-module__Tiles--variant-gridlines___6CsMP.Primer_Brand__Tiles-module__Tiles--layout-compact___HBisD.Primer_Brand__shared-module__gridline___FDR_5::after",
+   "rect": [
+    96,
+    6778,
+    1248,
+    157
+   ],
+   "radius": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": "1px solid rgb(255, 255, 255)",
+   "src": "linear-gradient(rgb(25, 31, 27), rgb(25, 31, 27))",
+   "slice": "1"
+  }
+ ],
+ "textShadow": [],
+ "atProperty": [
+  "@property --dialog-scrollgutter { syntax: \"<length>\"; inherits: false; initial-value: 0; }",
+  "@property --prc-dialog-scrollgutter { syntax: \"<length>\"; inherits: false; initial-value: 0; }",
+  "@property --borderOpacity { syntax: \"<number>\"; inherits: true; initial-value: 1; }",
+  "@property --prc-dialog-scrollgutter { syntax: \"<length>\"; inherits: false; initial-value: 0; }",
+  "@property --prc-dialog-scrollgutter { syntax: \"<length>\"; inherits: false; initial-value: 0; }",
+  "@property --prc-dialog-scrollgutter { syntax: \"<length>\"; inherits: false; initial-value: 0; }",
+  "@property --prc-dialog-scrollgutter { syntax: \"<length>\"; inherits: false; initial-value: 0; }",
+  "@property --prc-dialog-scrollgutter { syntax: \"<length>\"; inherits: false; initial-value: 0; }"
+ ],
+ "keyframes": [
+  "@keyframes AppFrame-a11yLink-focus { \n  0% { color: var(--fgColor-accent,var(--color-accent-emphasis)); transform: scale(0.3, 0.25); }\n  50% { color: var(--fgColor-accent,var(--color-accent-emphasis)); transform: scale(1); }\n  55% { color: var(--fgColor-onEmphasis,var(--color-fg-on-emphasis)); }\n  100% { transform: scaleX(1); }\n}",
+  "@keyframes tooltip-appear { \n  0% { opacity: 0; }\n  100% { opacity: 1; }\n}",
+  "@keyframes fade-in { \n  0% { opacity: 0; }\n  100% { opacity: 1; }\n}",
+  "@keyframes fade-out { \n  0% { opacity: 1; }\n  100% { opacity: 0; }\n}",
+  "@keyframes fade-up { \n  0% { opacity: 0.8; transform: translateY(100%); }\n  100% { opacity: 1; transform: translateY(0px); }\n}",
+  "@keyframes fade-down { \n  0% { opacity: 1; transform: translateY(0px); }\n  100% { opacity: 0.5; transform: translateY(100%); }\n}",
+  "@keyframes grow-x { \n  100% { width: 100%; }\n}",
+  "@keyframes shrink-x { \n  100% { width: 0%; }\n}",
+  "@keyframes scale-in { \n  0% { opacity: 0; transform: scale(0.5); }\n  100% { opacity: 1; transform: scale(1); }\n}",
+  "@keyframes pulse { \n  0% { opacity: 0.3; }\n  10% { opacity: 1; }\n  100% { opacity: 0.3; }\n}",
+  "@keyframes pulse-in { \n  0% { transform: scale(1); }\n  50% { transform: scale3d(1.1, 1.1, 1.1); }\n  100% { transform: scale(1); }\n}",
+  "@keyframes rotate-keyframes { \n  100% { transform: rotate(360deg); }\n}",
+  "@keyframes AnimatedEllipsis-keyframes { \n  0% { transform: translate(-100%); }\n}",
+  "@keyframes SelectMenu-modal-animation { \n  0% { opacity: 0; transform: scale(0.9); }\n}",
+  "@keyframes SelectMenu-modal-animation--sm { \n  0% { opacity: 0; transform: translateY(calc(var(--base-size-16) * -1)); }\n}",
+  "@keyframes Toast--animateIn { \n  0% { opacity: 0; transform: translateY(100%); }\n}",
+  "@keyframes Toast--animateOut { \n  100% { pointer-events: none; opacity: 0; transform: translateY(100%); }\n}",
+  "@keyframes Toast--spinner { \n  0% { transform: rotate(0deg); }\n  100% { transform: rotate(360deg); }\n}",
+  "@keyframes Overlay--motion-scaleFade { \n  0% { opacity: 0; transform: scale(0.5); }\n  100% { opacity: 1; transform: scale(1); }\n}",
+  "@keyframes Overlay--motion-slideDown { \n  0% { transform: translateY(-100%); }\n}",
+  "@keyframes Overlay--motion-slideUp { \n  0% { transform: translateY(100%); }\n}",
+  "@keyframes Overlay--motion-slideInRight { \n  0% { transform: translate(-100%); }\n}",
+  "@keyframes Overlay--motion-slideInLeft { \n  0% { transform: translate(100%); }\n}",
+  "@keyframes checkmarkIn { \n  0% { clip-path: inset(var(--base-size-16) 0 0 0); }\n  100% { clip-path: inset(0px); }\n}",
+  "@keyframes checkmarkOut { \n  0% { clip-path: inset(0px); }\n  100% { clip-path: inset(var(--base-size-16) 0 0 0); }\n}",
+  "@keyframes shimmer { \n  0% { mask-position: 200% center; }\n  100% { mask-position: 0px center; }\n}",
+  "@keyframes blink { \n  50% { background-color: rgba(0, 0, 0, 0); }\n}",
+  "@keyframes checkmarkIn { \n  0% { clip-path: inset(16px 0px 0px); }\n  100% { clip-path: inset(0px); }\n}",
+  "@keyframes checkmarkOut { \n  0% { clip-path: inset(0px); }\n  100% { clip-path: inset(16px 0px 0px); }\n}",
+  "@keyframes skeleton-loading { \n  0% { transform: translate(-33%); }\n  100% { transform: translate(33%); }\n}",
+  "@keyframes hx-fade-out { \n  0% { opacity: 1; }\n  100% { opacity: 0; }\n}",
+  "@keyframes dropdown-menu-animation { \n  0% { opacity: 0; transform: scale(0.9); }\n}",
+  "@keyframes hx_rsm-trigger-animation { \n  0% { opacity: 0; }\n}",
+  "@keyframes hx_rsm-modal-animation { \n  0% { opacity: 0; transform: scale(0.9); }\n}",
+  "@keyframes show-pane { \n  0% { transform: translate(390px); }\n  100% { transform: translate(0px); }\n}",
+  "@keyframes sponsors-progress-animation { \n  0% { background-position: 100% center; }\n  100% { background-position: 0% center; }\n}",
+  "@keyframes circle-progress { \n  0% { stroke-dasharray: 0, 100; }\n}",
+  "@keyframes prc-Spinner-rotate-keyframes-LV51p { \n  100% { transform: rotate(1turn); }\n}",
+  "@keyframes prc-components-loadingCounterKeyFrames-8tMlf { \n  0% { opacity: 1; }\n  100% { opacity: 0.2; }\n}",
+  "@keyframes prc-Checkbox-checkmarkIn-73iWj { \n  0% { clip-path: inset(var(--base-size-16,1rem) 0 0 0); }\n  100% { clip-path: inset(0px); }\n}"
+ ],
+ "sheetHrefs": [
+  "https://github.githubassets.com/assets/light-5c4e9fc574bf49f3.css",
+  "https://github.githubassets.com/assets/light_high_contrast-fb37c309e0603a69.css",
+  "https://github.githubassets.com/assets/dark-afff6c53aef9b9d1.css",
+  "https://github.githubassets.com/assets/dark_high_contrast-c409873d7987dffa.css",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "https://github.githubassets.com/assets/primer-primitives-97df7784617ce1ea.css",
+  "https://github.githubassets.com/assets/primer-9be9fe6313f476af.css"
+ ],
+ "cssGrep": {
+  "cornerShape": {
+   "n": 0,
+   "ex": []
+  },
+  "superellipse": {
+   "n": 0,
+   "ex": []
+  },
+  "squircle": {
+   "n": 0,
+   "ex": []
+  },
+  "feTurbulence": {
+   "n": 0,
+   "ex": []
+  },
+  "maskComposite": {
+   "n": 11,
+   "ex": [
+    "-webkit-mask-composite:xor",
+    "mask-composite:exclude"
+   ]
+  },
+  "atProperty": {
+   "n": 3,
+   "ex": [
+    "@property --dialog-scrollgutter{syntax:\"<length>\";inherits:false;initial-value:0}",
+    "@property --borderOpacity{syntax:\"<number>\";inherits:true;initial-value:1}",
+    "@property --prc-dialog-scrollgutter{syntax:\"<length>\";inherits:false;initial-value:0}"
+   ]
+  },
+  "backdrop": {
+   "n": 21,
+   "ex": [
+    "backdrop-filter:none",
+    "backdrop-filter:blur(var(--base-size-48))",
+    "backdrop-filter:blur(5px)",
+    "backdrop-filter:blur(10px)",
+    "backdrop-filter:blur(var(--base-size-20))",
+    "backdrop-filter:blur(var(--base-size-6))"
+   ]
+  },
+  "inOklab": {
+   "n": 0,
+   "ex": []
+  },
+  "conic": {
+   "n": 18,
+   "ex": [
+    "conic-gradient(from 100deg at 50% 50%, var(--brand-Label-color-green-blue-purple-3) 0deg, var(--brand-Label-color-green-blue-end) 130deg, var(--brand-Label-color-green-blue-en",
+    "conic-gradient(from 90deg at center, var(--brand-Label-color-stop-1) 0deg, var(--brand-Label-color-stop-2) 160deg, var(--brand-Label-color-stop-3) 175deg, var(--brand-Label-co",
+    "conic-gradient(var(--c) 0, var(--c) 0) 0 / var(--r) calc(100% - var(--p) - var(--b) / 2) 0 calc(var(--p) - var(--b) / 2) / 0 0 var(--h) 0",
+    "conic-gradient(var(--c) 0, var(--c) 0) fill 0 / var(--r) calc(100% - var(--p) - var(--b) / 2) 0 calc(var(--p) - var(--b) / 2) / 0 0 var(--h) 0",
+    "conic-gradient(red 0deg, red 0deg 1deg, red 2deg)){.Primer_Brand__Tooltip-module__Tooltip___0Eipx[data-direction=n]{-o-border-image:conic-gradient(var(--c) 0 0) 0 / var(--r) c",
+    "conic-gradient(var(--c) 0 0) fill 0 / var(--r) calc(100% - var(--p) - var(--b) / 2) 0 calc(var(--p) - var(--b) / 2) / 0 0 var(--h) 0}}.Primer_Brand__Tooltip-module__Tooltip___"
+   ]
+  },
+  "plusLighter": {
+   "n": 0,
+   "ex": []
+  },
+  "offsetPath": {
+   "n": 0,
+   "ex": []
+  },
+  "paintWorklet": {
+   "n": 0,
+   "ex": []
+  }
+ },
+ "scheme": "dark",
+ "measuredAt": "2026-10-10T13:59:53.678Z",
+ "chromium": "156.0.8078.4"
+}

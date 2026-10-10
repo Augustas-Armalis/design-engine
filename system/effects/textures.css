@@ -1,0 +1,202 @@
+/* system/effects/textures.css: measured texture, light and material recipes as classes.
+   Rules + where each is used well + the amateur version: knowledge/web/effects-materials.md sections 2.3 and 3.4 (EF-20..EF-43).
+   Specimen: system/effects/demo/textures.html -> textures.png.
+   Every class is opt-in, pointer-events: none on decoration layers, reduced-motion safe, and costs are noted inline.
+   Tokens they read (set them from the bound system): --fx-canvas, --fx-ink, --fx-accent, --fx-radius. */
+
+:root {
+  --fx-canvas: #f6f6f7;
+  --fx-ink: 17 20 28;           /* rgb triplet */
+  --fx-accent: #2563eb;
+  --fx-radius: 16px;
+  /* fractal noise tile: Liveblocks recipe (baseFrequency .86, 3 octaves, 180px, desaturated) */
+  --fx-noise: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.86' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* ---------- 1. Grain ---------------------------------------------------------------------------------------------
+   Measured: Liveblocks soft-light .045 over the WebGL hero (180px tile); Linear overlay .25-.9 grain PNG over feature
+   panels; Neon noise.svg as mask-image (330x112) on highlighted spans; Vercel multiply .42 over its prism; Arc a baked
+   noise-light.png on every section; Framer 12-frame webp sprite at .05 overlay, steps(12) .75s (animated film grain).
+   Static grain costs one tiled layer; never animate feTurbulence itself. */
+.fx-grain { position: relative; isolation: isolate; }
+.fx-grain::after {
+  content: ""; position: absolute; inset: 0; border-radius: inherit; pointer-events: none; z-index: 1;
+  background: var(--fx-noise) 0 0 / 180px 180px; mix-blend-mode: multiply; opacity: .06;
+}
+.dark .fx-grain::after, [data-theme="dark"] .fx-grain::after, .fx-grain.is-dark::after { mix-blend-mode: soft-light; opacity: .06; }
+/* film grain: shifts the tile on steps (no repaint of the noise), off for reduced motion */
+.fx-grain.is-film::after { inset: -50%; animation: fx-film 1s steps(10) infinite; }
+@keyframes fx-film { 0%{transform:translate(0,0)} 10%{transform:translate(-5%,-10%)} 20%{transform:translate(-15%,5%)} 30%{transform:translate(7%,-25%)} 40%{transform:translate(-5%,25%)} 50%{transform:translate(-15%,10%)} 60%{transform:translate(15%,0)} 70%{transform:translate(0,15%)} 80%{transform:translate(3%,35%)} 90%{transform:translate(-10%,10%)} 100%{transform:translate(0,0)} }
+@media (prefers-reduced-motion: reduce) { .fx-grain.is-film::after { animation: none; inset: 0; } }
+
+/* ---------- 2. Gradient done right ------------------------------------------------------------------------------
+   Interpolate in oklab (no grey dead zone), keep the hue span small, add grain when a smooth ramp is wide (banding). */
+.fx-gradient-soft {
+  background:
+    radial-gradient(120% 80% at 50% 0%, color-mix(in oklab, var(--fx-accent) 14%, transparent), transparent 60%),
+    linear-gradient(in oklab 180deg, color-mix(in oklab, var(--fx-canvas) 92%, var(--fx-accent)), var(--fx-canvas));
+}
+/* eased scrim: Andreas Larsen's easing-gradient stops (no hard edge where a linear fade ends) */
+.fx-scrim-bottom {
+  background: linear-gradient(to top, rgb(0 0 0 / .8) 0%, rgb(0 0 0 / .59) 19%, rgb(0 0 0 / .433) 34%, rgb(0 0 0 / .306) 47%,
+    rgb(0 0 0 / .222) 56.5%, rgb(0 0 0 / .155) 65%, rgb(0 0 0 / .101) 73%, rgb(0 0 0 / .06) 80.2%, rgb(0 0 0 / .034) 86.1%,
+    rgb(0 0 0 / .017) 91%, rgb(0 0 0 / .006) 95.2%, rgb(0 0 0 / .002) 98.2%, transparent 100%);
+}
+
+/* ---------- 3. Gradient border (mask-composite) --------------------------------------------------------------------
+   Measured: Raycast pill r36 and card r30 use exactly this (mask-composite: exclude); Resend/Ryan Mulligan use the
+   padding-box/border-box double background (works with border-radius, no pseudo). border-image ignores radius. */
+.fx-gradient-border { position: relative; border-radius: var(--fx-radius); }
+.fx-gradient-border::before {
+  content: ""; position: absolute; inset: 0; border-radius: inherit; padding: 1px; pointer-events: none;
+  background: linear-gradient(180deg, rgb(255 255 255 / .5), rgb(255 255 255 / .06) 40%, rgb(255 255 255 / .02));
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor;
+          mask: linear-gradient(#000 0 0) content-box exclude, linear-gradient(#000 0 0);
+}
+.fx-gradient-border.is-light::before { background: linear-gradient(180deg, rgb(var(--fx-ink) / .14), rgb(var(--fx-ink) / .05)); }
+/* top-lit card edge (Supabase dark cards): hairline at the top fading into the surface */
+.fx-toplit { border: 1px solid transparent; background: linear-gradient(var(--fx-surface, #17181a), var(--fx-surface, #17181a)) padding-box, linear-gradient(rgb(255 255 255 / .12), rgb(255 255 255 / .03) 60%) border-box; }
+
+/* ---------- 4. Border beam (animated) --------------------------------------------------------------------------
+   Measured: Raycast announcement pill conic beam, 3s linear infinite via @property --r2 <angle>; Linear agent badge
+   border sweep 2s linear; Resend rainbow border 30s. A beam is one short bright arc (<= 25% of the turn) on a quiet ring. */
+@property --fx-angle { syntax: "<angle>"; inherits: false; initial-value: 0deg; }
+.fx-beam {
+  border: 1px solid transparent; border-radius: var(--fx-radius);
+  background:
+    linear-gradient(var(--fx-surface, #fff), var(--fx-surface, #fff)) padding-box,
+    conic-gradient(from var(--fx-angle), rgb(var(--fx-ink) / .1) 0deg, rgb(var(--fx-ink) / .1) 270deg, var(--fx-accent) 320deg, rgb(var(--fx-ink) / .1) 360deg) border-box;
+  animation: fx-spin 4s linear infinite;
+}
+@keyframes fx-spin { to { --fx-angle: 360deg; } }
+@media (prefers-reduced-motion: reduce) { .fx-beam { animation: none; } }
+
+/* ---------- 5. Glass ---------------------------------------------------------------------------------------------
+   Measured premium glass: Apple nav rgba(29,29,31,.8) / rgba(250,250,252,.8) + saturate(1.8) blur(20px); Apple pills
+   rgba(232,232,237,.72) blur(7px); Raycast window rgba(0,0,0,.6) blur(36px) + .5px black ring + inset .5px white .3;
+   Mercury pill rgba(175,178,206,.2) blur(20px) + 1px rgba(175,178,206,.36); Linear header blur(20px) over a .8->.76
+   gradient. Cheap glass = white/10 + blur(40px) on every card over a flat colour. Budget: <= 3 glass layers per view. */
+.fx-glass {
+  background: rgb(250 250 252 / .72);
+  -webkit-backdrop-filter: saturate(1.8) blur(20px); backdrop-filter: saturate(1.8) blur(20px);
+  box-shadow: inset 0 0 0 1px rgb(255 255 255 / .5), inset 0 1px 0 rgb(255 255 255 / .7), 0 0 0 1px rgb(var(--fx-ink) / .06), 0 8px 24px -8px rgb(var(--fx-ink) / .12);
+}
+.fx-glass.is-dark {
+  background: rgb(22 23 26 / .6);
+  -webkit-backdrop-filter: saturate(1.4) blur(24px); backdrop-filter: saturate(1.4) blur(24px);
+  box-shadow: inset 0 .5px 0 rgb(255 255 255 / .3), inset 0 0 0 1px rgb(255 255 255 / .06), 0 0 0 .5px rgb(0 0 0 / .8), 0 8px 32px rgb(0 0 0 / .35);
+}
+/* smoke glass over bright photos (Convex/Mercury register) */
+.fx-glass.is-smoke { background: rgb(0 0 0 / .2); -webkit-backdrop-filter: blur(16px) saturate(1.4); backdrop-filter: blur(16px) saturate(1.4); box-shadow: inset 0 0 0 1px rgb(255 255 255 / .28), inset 0 1px 0 rgb(255 255 255 / .22); color: #fff; }
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .fx-glass { background: rgb(250 250 252 / .96); } .fx-glass.is-dark { background: rgb(22 23 26 / .95); }
+}
+/* progressive blur edge (Clerk: 7 stacked layers blur 1-4px under stepped masks; Mercury feathered blur 8px) */
+.fx-progressive-blur { position: absolute; inset: 0 0 auto; height: 64px; pointer-events: none; }
+.fx-progressive-blur > i { position: absolute; inset: 0; }
+.fx-progressive-blur > i:nth-child(1) { backdrop-filter: blur(1px); mask: linear-gradient(#000 0%, #000 25%, transparent 50%); }
+.fx-progressive-blur > i:nth-child(2) { backdrop-filter: blur(2px); mask: linear-gradient(#000 0%, #000 37%, transparent 62%); }
+.fx-progressive-blur > i:nth-child(3) { backdrop-filter: blur(4px); mask: linear-gradient(#000 0%, #000 50%, transparent 75%); }
+.fx-progressive-blur > i:nth-child(4) { backdrop-filter: blur(8px); mask: linear-gradient(#000 0%, #000 62%, transparent 100%); }
+
+/* ---------- 6. Spotlight / pointer light ------------------------------------------------------------------------
+   Measured: Liveblocks 200px radial white .08 translated to the pointer, opacity 0 -> 1 in .15s (buttons); Linear
+   static border spotlight: a duplicate 1px border masked by radial-gradient(200px 200px at 8% 0%, #000, .6 30%, .2 50%,
+   transparent 70%) and 400px lighten glows at white .03-.04. Needs 4 lines of JS:
+     el.addEventListener('pointermove', e => { const r = el.getBoundingClientRect();
+       el.style.setProperty('--mx', e.clientX - r.left + 'px'); el.style.setProperty('--my', e.clientY - r.top + 'px'); });  */
+.fx-spotlight { position: relative; isolation: isolate; --mx: 50%; --my: 0%; }
+.fx-spotlight::before { /* surface light */
+  content: ""; position: absolute; inset: 0; border-radius: inherit; pointer-events: none; z-index: -1; opacity: 0;
+  background: radial-gradient(240px circle at var(--mx) var(--my), rgb(255 255 255 / .06), transparent 70%);
+  transition: opacity .2s cubic-bezier(0, 0, .2, 1);
+}
+.fx-spotlight::after { /* border light: 1px ring revealed only near the pointer */
+  content: ""; position: absolute; inset: 0; border-radius: inherit; padding: 1px; pointer-events: none; opacity: 0;
+  background: radial-gradient(180px circle at var(--mx) var(--my), rgb(255 255 255 / .35), transparent 70%);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor;
+          mask: linear-gradient(#000 0 0) content-box exclude, linear-gradient(#000 0 0);
+  transition: opacity .2s cubic-bezier(0, 0, .2, 1);
+}
+.fx-spotlight.is-light::before { background: radial-gradient(240px circle at var(--mx) var(--my), color-mix(in oklab, var(--fx-accent) 8%, transparent), transparent 70%); }
+.fx-spotlight.is-light::after { background: radial-gradient(180px circle at var(--mx) var(--my), color-mix(in oklab, var(--fx-accent) 45%, transparent), transparent 70%); }
+@media (hover: hover) { .fx-spotlight:hover::before, .fx-spotlight:hover::after { opacity: 1; } }
+/* static corner spotlight on a dark frame edge (Linear) */
+.fx-edge-spot { position: relative; }
+.fx-edge-spot::after {
+  content: ""; position: absolute; inset: 0; border-radius: inherit; border: 1px solid rgb(255 255 255 / .22); pointer-events: none;
+  -webkit-mask: radial-gradient(200px 200px at 8% 0%, #000 0%, rgb(0 0 0 / .6) 30%, rgb(0 0 0 / .2) 50%, transparent 70%);
+          mask: radial-gradient(200px 200px at 8% 0%, #000 0%, rgb(0 0 0 / .6) 30%, rgb(0 0 0 / .2) 50%, transparent 70%);
+}
+
+/* ---------- 7. Shimmer / sheen ------------------------------------------------------------------------------------
+   Measured "thinking" shimmer: Cursor bg-size 200%, base .6 alpha, peak .92 at 55%, 1.6-2.5s linear infinite;
+   Attio 250%, white .65 peak; Affect UI 300%, band 38-50-62%; Liveblocks mask flare 60deg, mask-size 400%, 3.4s. */
+.fx-shimmer-text {
+  background: linear-gradient(90deg, rgb(var(--fx-ink) / .45) 0%, rgb(var(--fx-ink) / .45) 35%, rgb(var(--fx-ink) / .95) 50%, rgb(var(--fx-ink) / .45) 65%, rgb(var(--fx-ink) / .45) 100%) 0 0 / 250% 100%;
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+  animation: fx-shimmer 2s linear infinite;
+}
+@keyframes fx-shimmer { from { background-position: 100% 0; } to { background-position: -150% 0; } }
+.fx-sheen { position: relative; overflow: hidden; }
+.fx-sheen::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none; transform: translateX(-120%);
+  background: linear-gradient(105deg, transparent 35%, rgb(255 255 255 / .35) 50%, transparent 65%);
+}
+@media (hover: hover) { .fx-sheen:hover::after { transform: translateX(120%); transition: transform .9s cubic-bezier(.2, .6, .2, 1); } }
+@media (prefers-reduced-motion: reduce) { .fx-shimmer-text { animation: none; color: rgb(var(--fx-ink) / .6); } }
+
+/* ---------- 8. Dot / grid fields with radial fade -------------------------------------------------------------------
+   Measured: Affect UI dots radial-gradient(#e5e5e5 1px, transparent 1.2px) 12px; Folk 5px dots at ink .4 0.75px;
+   Stripe 10px tile of 2px squares #30437F at opacity .46, faded by a vertical mask; Granola 1px #dedede lines every
+   80px masked off at the sides; ibelick dots 16px + ellipse mask 70%. Founder: texture stays inside the rails. */
+.fx-dots {
+  background-image: radial-gradient(rgb(var(--fx-ink) / .16) 1px, transparent 1.2px); background-size: 14px 14px;
+  -webkit-mask: radial-gradient(ellipse 70% 60% at 50% 40%, #000 30%, transparent 80%);
+          mask: radial-gradient(ellipse 70% 60% at 50% 40%, #000 30%, transparent 80%);
+}
+.fx-grid {
+  background-image: linear-gradient(to right, rgb(var(--fx-ink) / .06) 1px, transparent 1px), linear-gradient(to bottom, rgb(var(--fx-ink) / .06) 1px, transparent 1px);
+  background-size: 48px 48px;
+  -webkit-mask: radial-gradient(ellipse 60% 55% at 50% 0%, #000 50%, transparent 100%);
+          mask: radial-gradient(ellipse 60% 55% at 50% 0%, #000 50%, transparent 100%);
+}
+/* clear the field behind the headline (founder: fade texture softly behind type) */
+.fx-clear-center { -webkit-mask: radial-gradient(ellipse 34% 26% at 50% 38%, transparent 40%, #000 100%); mask: radial-gradient(ellipse 34% 26% at 50% 38%, transparent 40%, #000 100%); }
+
+/* ---------- 9. Vignette / light leak / glow that works ---------------------------------------------------------------
+   Vignettes darken in the canvas colour (Liveblocks radial 65%: transparent 52%, .35 68%, #000 88%). A glow that works
+   is white or the object's own colour at <= .1 alpha with eased stops, behind an object, never a purple blob behind type.
+   Light leak: one warm off-axis radial at <= .12, plus-lighter on dark. */
+.fx-vignette { position: relative; }
+.fx-vignette::after { content: ""; position: absolute; inset: 0; pointer-events: none;
+  background: linear-gradient(90deg, var(--fx-canvas), transparent 6%, transparent 94%, var(--fx-canvas)), radial-gradient(65% 65% at 50% 50%, transparent 52%, color-mix(in oklab, var(--fx-canvas) 35%, transparent) 68%, var(--fx-canvas) 88%); }
+.fx-glow-behind { position: relative; isolation: isolate; }
+.fx-glow-behind::before { content: ""; position: absolute; inset: -12% -8% auto; height: 70%; z-index: -1; pointer-events: none;
+  background: radial-gradient(50% 50% at 50% 50%, rgb(255 255 255 / .1) 0%, rgb(255 255 255 / .07) 25%, rgb(255 255 255 / .035) 50%, rgb(255 255 255 / .01) 75%, transparent 100%); }
+.fx-light-leak::before { content: ""; position: absolute; inset: 0; pointer-events: none; mix-blend-mode: plus-lighter;
+  background: radial-gradient(40% 60% at 100% 0%, rgb(255 170 110 / .12), transparent 70%); }
+
+/* ---------- 10. Noise-textured dark surface (premium dark card) ---------------------------------------------------- */
+.fx-dark-surface {
+  position: relative; isolation: isolate; border-radius: var(--fx-radius); color: #ededef;
+  background: radial-gradient(120% 70% at 50% 0%, rgb(255 255 255 / .05), transparent 60%), #141517;
+  box-shadow: inset 0 0 0 1px rgb(255 255 255 / .07), inset 0 1px 0 rgb(255 255 255 / .06), 0 0 0 1px rgb(0 0 0 / .5), 0 8px 24px -8px rgb(0 0 0 / .5);
+}
+.fx-dark-surface::after { content: ""; position: absolute; inset: 0; border-radius: inherit; pointer-events: none; background: var(--fx-noise) 0 0 / 180px; mix-blend-mode: soft-light; opacity: .08; }
+
+/* ---------- 11. 3D tilt with specular highlight -------------------------------------------------------------------
+   vanilla-tilt defaults: max 15deg, perspective 1000, speed 300, easing cubic-bezier(.03,.98,.52,.99). Premium tilt
+   is 4-8deg with a glare that follows the pointer (set --rx --ry --gx --gy from JS). */
+.fx-tilt { transform: perspective(1000px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg)); transition: transform .3s cubic-bezier(.03, .98, .52, .99); transform-style: preserve-3d; position: relative; }
+.fx-tilt::after { content: ""; position: absolute; inset: 0; border-radius: inherit; pointer-events: none; mix-blend-mode: soft-light;
+  background: radial-gradient(60% 60% at var(--gx, 50%) var(--gy, 0%), rgb(255 255 255 / .5), transparent 60%); opacity: var(--glare, 0); transition: opacity .3s; }
+@media (prefers-reduced-motion: reduce) { .fx-tilt { transform: none !important; } }
+
+/* ---------- 12. Image treatments ------------------------------------------------------------------------------------
+   Duotone: greyscale + contrast on the image, multiply the dark tone, screen the light tone, inside isolation.
+   Grain over photos: the .fx-grain layer at multiply .08 (light) / soft-light .1 (dark). Section-tinted product art:
+   duotone ramp hue within ~25deg of the section accent (founder, Kaching round 2). */
+.fx-duotone { position: relative; isolation: isolate; overflow: hidden; background: var(--fx-duo-light, #e8edff); }
+.fx-duotone > img { display: block; width: 100%; height: 100%; object-fit: cover; filter: grayscale(1) contrast(1.15); mix-blend-mode: multiply; }
+.fx-duotone::after { content: ""; position: absolute; inset: 0; background: var(--fx-duo-dark, #1d2a6b); mix-blend-mode: screen; pointer-events: none; }
