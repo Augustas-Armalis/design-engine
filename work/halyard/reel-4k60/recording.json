@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "id": "reel-4k60",
+  "dir": "/Users/augustas/Documents/Larpo front-end engine/work/halyard/reel-4k60",
+  "createdAt": "2026-10-10T14:10:55.467Z",
+  "settings": {
+    "url": "http://localhost:4335/",
+    "width": 1440,
+    "height": 900,
+    "scale": 2.6666666666666665,
+    "scrollY": 0,
+    "fps": 60,
+    "startMs": 0,
+    "durationMs": 12000,
+    "holdMs": 500,
+    "region": {
+      "type": "viewport"
+    },
+    "actions": [],
+    "cursor": false,
+    "colorScheme": "light",
+    "seed": 24301,
+    "realRandom": false,
+    "keepFrames": false,
+    "presets": []
+  },
+  "size": {
+    "width": 3840,
+    "height": 2400
+  },
+  "frames": 720,
+  "browser": "153.0.8010.12",
+  "files": {
+    "master": "/Users/augustas/Documents/Larpo front-end engine/work/halyard/reel-4k60/master.nut",
+    "proxy": "/Users/augustas/Documents/Larpo front-end engine/work/halyard/reel-4k60/proxy.mp4",
+    "thumbs": "/Users/augustas/Documents/Larpo front-end engine/work/halyard/reel-4k60/thumbs.jpg",
+    "poster": "/Users/augustas/Documents/Larpo front-end engine/work/halyard/reel-4k60/poster.png"
+  },
+  "thumbs": {
+    "step": 18,
+    "count": 40
+  },
+  "edits": {
+    "holdLastMs": 500,
+    "fadeColor": "#08080a"
+  },
+  "background": "#08080a",
+  "exports": [
+    {
+      "preset": "h264",
+      "file": "/Users/augustas/Documents/Larpo front-end engine/work/halyard/halyard-loadin-4k60.mp4",
+      "bytes": 4452191,
+      "probe": {
+        "file": "/Users/augustas/Documents/Larpo front-end engine/work/halyard/halyard-loadin-4k60.mp4",
+        "bytes": 4452191,
+        "codec": "h264",
+        "profile": "High",
+        "pixFmt": "yuv420p",
+        "width": 3840,
+        "height": 2400,
+        "fps": "60/1",
+        "frames": 750,
+        "durationSec": 12.5,
+        "bitrateKbps": 2473,
+        "color": {
+          "space": "bt709",
+          "primaries": "bt709",
+          "transfer": "bt709",
+          "range": "tv"
+        },
+        "cover": "/Users/augustas/Documents/Larpo front-end engine/work/halyard/halyard-loadin-4k60-cover.png"
+      },
+      "ms": 27135
+    }
+  ],
+  "timings": {
+    "loadMs": 925,
+    "captureMs": 134712,
+    "finishMs": 19897,
+    "exportMs": 0
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "slug": "watchfloor",
+  "name": "Watchfloor",
+  "showcaseHeadline": "Incidents Closed Before The Page.",
+  "signature": "Dark-first operations, built to Marcel Kargul's dark grammar (near-black #08080a field, a hairline cell grid that runs the page, numbered sections, pixel-matrix art lit by one accent) with Rico-grade product windows (neutral grey surfaces, white pill primary, real-looking agent work). Signal amber is the only colour: it means 'something needs a human'.",
+  "personality": {
+    "brandHue": 70,
+    "brandChroma": 0.14,
+    "neutralTemperature": "neutral",
+    "radiusPreset": "default",
+    "depthStyle": "border",
+    "density": "default",
+    "motionPersonality": "calm",
+    "typeVoice": "Plain, exact, calm under pressure; sentences an on-call engineer would write."
+  },
+  "fonts": {
+    "display": "'Instrument Sans', 'Helvetica Neue', sans-serif",
+    "body": "'Instrument Sans', 'Helvetica Neue', sans-serif",
+    "mono": "'IBM Plex Mono', ui-monospace, monospace",
+    "href": "https://fonts.googleapis.com/css2?family=Instrument+Sans:wdth,wght@75..100,400..700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+  },
+  "type": {
+    "ratio": 1.25,
+    "basePx": 15,
+    "displayMaxPx": 64,
+    "displayWeight": 500,
+    "displayTracking": -0.03,
+    "displayLeading": 1.04,
+    "bodyLeading": 1.55
+  },
+  "bestFor": ["incident response and on-call", "observability", "infra AI agents", "security operations"],
+  "avoidFor": ["consumer lifestyle", "warm editorial brands"],
+  "owned": [
+    "A hairline cell grid (rails + rules) that frames every section, Marcel-style; content sits in cells, never floats",
+    "Pixel-matrix art made of square cells that light in amber where a human is needed and cool to white when resolved",
+    "Numbered section and tab labels in mono (01, 02...)",
+    "Product windows at Rico grade: #161616-#1c1c1c greys, 1px #ffffff0f edges, white pill primary"
+  ],
+  "never": ["purple or blue gradients behind type", "glow on a resting button", "more than one accent hue"]
+}

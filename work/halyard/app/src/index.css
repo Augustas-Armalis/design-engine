@@ -1,0 +1,47 @@
+@import "tailwindcss";
+@import "@fontsource-variable/instrument-sans/wdth.css";
+@import "@fontsource/ibm-plex-mono/400.css";
+@import "@fontsource/ibm-plex-mono/500.css";
+@import "./theme.css";
+@theme {
+  --font-sans: "Instrument Sans Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+/* Halyard brand layer. Field = Marcel Kargul's measured dark (Uplinq: canvas #080808, panel #0d0d0d, box #111111);
+   product window = Rico's measured greys (window #1a1a1a/#171717, side #1e1e1e, selected row #292929).
+   One accent: signal amber, only for "a human is needed" and for lighting the pixel art. */
+:root {
+  --canvas: #08080a; --panel: #0d0d0f; --box: #111113;
+  --rule: rgba(255, 255, 255, 0.07); --rule-2: rgba(255, 255, 255, 0.11);
+  --ink: #f2f2f0; --sub: #a1a1a0; --soft: #8b8b8a;
+  --win: #171717; --win-side: #131313; --win-raised: #1c1c1c; --win-hover: #232323; --win-sel: #292929;
+  --edge: rgba(255, 255, 255, 0.075); --edge-2: rgba(255, 255, 255, 0.12);
+  --amber: #f5a524; --amber-ink: #ffcf7a; --amber-tint: rgba(245, 165, 36, 0.12);
+  --ok: #4ade80; --ok-tint: rgba(74, 222, 128, 0.12); --bad: #f87171;
+  --accent: var(--amber);
+}
+html, body { background: var(--canvas); }
+body { color: var(--ink); font-family: var(--font-sans); font-optical-sizing: auto; -webkit-font-smoothing: antialiased; }
+:focus-visible { outline: 2px solid var(--amber); outline-offset: 2px; }
+
+/* mono caps square (button-grammars #10, dark): white fill, ink label; hover: fill goes amber */
+.btn-mono { background: #f2f2f0; color: #0a0a0a; font-family: var(--font-mono); font-size: 12.5px; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase;
+  border-radius: 4px; box-shadow: 0 0 0 1px #f2f2f0, inset 0 -1px 0 rgba(0,0,0,0.12); transition: background-color 150ms, box-shadow 150ms; }
+@media (hover: hover) { .btn-mono:hover { background: var(--amber); box-shadow: 0 0 0 1px var(--amber); } }
+/* Rico's product-window primary: small white pill */
+.pill-white { background: #f2f2f0; color: #111; transition: background-color 150ms; }
+@media (hover: hover) { .pill-white:hover { background: #fff; } }
+.pill-ghost { background: rgba(255,255,255,0.06); color: var(--ink); box-shadow: inset 0 0 0 1px var(--edge); transition: background-color 150ms; }
+@media (hover: hover) { .pill-ghost:hover { background: rgba(255,255,255,0.09); } }
+/* dot-matrix texture (Marcel's band above content): 1px dots on a 6px pitch, faded at the edges */
+.dots { background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.10) 1px, transparent 1.2px); background-size: 6px 6px; }
+.mono { font-family: var(--font-mono); }
+
+/* polish layer (better-ui / emil-design-eng): press feedback, wrapping, numerals, hit areas */
+.press { transition: transform 160ms cubic-bezier(.22,1,.36,1); }
+.press:active { transform: scale(0.98); }
+@media (prefers-reduced-motion: reduce) { .press:active { transform: none; } }
+h1, h2, h3 { text-wrap: balance; }
+p { text-wrap: pretty; }
+.tnum, [data-numeric] { font-variant-numeric: tabular-nums; }
+.hit { position: relative; } .hit::after { content: ""; position: absolute; inset: 50% auto auto 50%; width: max(100%, 44px); height: max(100%, 44px); transform: translate(-50%, -50%); }
