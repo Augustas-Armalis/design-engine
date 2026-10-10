@@ -9,7 +9,7 @@ import {
 } from 'lucide-react'
 import { RollingNumber } from './kit'
 
-const SW = 1.75
+const SW = 1.6
 const ease = [0.22, 1, 0.36, 1] as const
 
 function In({ at, children, className = '', y = 8 }: { at: number; children: ReactNode; className?: string; y?: number }) {
@@ -29,7 +29,7 @@ function Person({ i, size = 20 }: { i: string; size?: number }) {
   return <span className="grid shrink-0 place-items-center rounded-full bg-[#2c2c2c] font-[600] text-[#d6d6d6] shadow-[inset_0_0_0_1px_rgba(255,255,255,0.08)]" style={{ width: size, height: size, fontSize: Math.max(10, Math.round(size * 0.42)) }}>{i}</span>
 }
 const Chip = ({ children, tone = 'grey' }: { children: ReactNode; tone?: 'grey' | 'amber' }) => (
-  <span className={`inline-flex h-[22px] items-center gap-1.5 whitespace-nowrap rounded-full px-2 text-[12px] font-[500] leading-none ${tone === 'amber' ? 'bg-[var(--amber-tint)] text-[var(--amber-ink)]' : 'bg-white/[0.06] text-[#c4c4c4] shadow-[inset_0_0_0_1px_var(--edge)]'}`}>{children}</span>
+  <span className={`inline-flex h-[22px] items-center gap-1.5 whitespace-nowrap rounded-full px-2 text-[12.5px] font-[500] leading-none ${tone === 'amber' ? 'bg-[var(--amber-tint)] text-[var(--amber-ink)]' : 'bg-white/[0.06] text-[#c4c4c4] shadow-[inset_0_0_0_1px_var(--edge)]'}`}>{children}</span>
 )
 const Source = ({ icon: I, label }: { icon: typeof Activity; label: string }) => (
   <span className="inline-flex h-7 items-center gap-1.5 rounded-[8px] bg-[var(--win-raised)] pl-1.5 pr-2.5 text-[12.5px] text-[#cfcfcf] shadow-[inset_0_0_0_1px_var(--edge)]">
@@ -39,10 +39,10 @@ const Source = ({ icon: I, label }: { icon: typeof Activity; label: string }) =>
 
 function Row({ icon: I, children, count, active, amber }: { icon: typeof Activity; children: ReactNode; count?: string; active?: boolean; amber?: boolean }) {
   return (
-    <a href="#" className={`flex h-8 items-center rounded-[8px] pl-2.5 pr-2 text-[13.5px] ${active ? 'bg-[var(--win-sel)] text-[var(--ink)]' : 'text-[#bdbdbd] hover:bg-[var(--win-hover)]'}`}>
-      <I size={16} strokeWidth={SW} className={`mr-2.5 ${active ? 'text-[var(--ink)]' : 'text-[#8a8a8a]'}`} />
+    <a href="#" className={`flex h-[30px] items-center rounded-[8px] pl-2.5 pr-2 text-[13.5px] ${active ? 'bg-[var(--win-sel)] text-[var(--ink)]' : 'text-[#bdbdbd] hover:bg-[var(--win-hover)]'}`}>
+      <I size={15} strokeWidth={SW} className={`mr-2.5 ${active ? 'text-[var(--ink)]' : 'text-[#8a8a8a]'}`} />
       <span className="flex-1">{children}</span>
-      {count && <span className={`tnum text-[12px] ${amber ? 'rounded-full bg-[var(--amber-tint)] px-1.5 py-0.5 leading-none text-[var(--amber-ink)]' : 'text-[#8a8a8a]'}`}>{count}</span>}
+      {count && <span className={`tnum text-[12.5px] ${amber ? 'rounded-full bg-[var(--amber-tint)] px-1.5 py-0.5 leading-none text-[var(--amber-ink)]' : 'text-[#8a8a8a]'}`}>{count}</span>}
     </a>
   )
 }
@@ -88,8 +88,8 @@ export default function Product({ at = 0 }: { at?: number }) {
       {/* sidebar */}
       <aside aria-label="Workspace navigation" className="flex w-[232px] shrink-0 flex-col border-r border-[var(--edge)] bg-[var(--win-side)] px-2.5 pb-3">
         <In at={s(1)} className="flex h-14 items-center pl-1.5 pr-0.5">
-          <span className="mr-2.5 grid size-6 place-items-center rounded-[7px] bg-[#2b2b2b] text-[12px] font-[600] text-[#e5e5e5] shadow-[inset_0_0_0_1px_rgba(255,255,255,0.1)]">N</span>
-          <span className="text-[14px] font-[600] tracking-[-0.01em]">Northwind</span><ChevronDown size={14} strokeWidth={SW} className="ml-1 text-[#8a8a8a]" />
+          <span className="mr-2.5 grid size-6 place-items-center rounded-[7px] bg-[#2b2b2b] text-[12.5px] font-[600] text-[#e5e5e5] shadow-[inset_0_0_0_1px_rgba(255,255,255,0.1)]">N</span>
+          <span className="text-[13.5px] font-[600] tracking-[-0.01em]">Northwind</span><ChevronDown size={14} strokeWidth={SW} className="ml-1 text-[#8a8a8a]" />
           <span className="ml-auto flex"><button type="button" aria-label="Search" className="grid size-8 place-items-center rounded-[8px] text-[#8a8a8a] hover:bg-[var(--win-hover)]"><Search size={16} strokeWidth={SW} /></button><button type="button" aria-label="Collapse sidebar" className="grid size-8 place-items-center rounded-[8px] text-[#8a8a8a] hover:bg-[var(--win-hover)]"><PanelLeft size={16} strokeWidth={SW} /></button></span>
         </In>
         <In at={s(2)}><nav aria-label="Workspace" className="space-y-px">
@@ -101,25 +101,25 @@ export default function Product({ at = 0 }: { at?: number }) {
           <Row icon={FileText}>Postmortems</Row>
         </nav></In>
         <In at={s(3)}>
-          <div className="mb-1 mt-5 pl-2.5 text-[12px] font-[500] text-[#8a8a8a]">Agents</div>
+          <div className="mb-1 mt-5 pl-2.5 text-[12.5px] font-[500] text-[#8a8a8a]">Agents</div>
           {([['Triage agent', 'working'], ['Rollback agent', 'waiting'], ['Comms agent', '']] as const).map(([n, st]) => (
-            <a key={n} href="#" className="flex h-8 items-center gap-2.5 rounded-[8px] pl-2.5 pr-2 text-[13.5px] text-[#bdbdbd] hover:bg-[var(--win-hover)]">
-              <Orb size={18} live={st === 'waiting'} /><span className="flex-1">{n}</span>{st && <span className={`text-[12px] ${st === 'waiting' ? 'text-[var(--amber-ink)]' : 'text-[#8a8a8a]'}`}>{st}</span>}
+            <a key={n} href="#" className="flex h-[30px] items-center gap-2.5 rounded-[8px] pl-2.5 pr-2 text-[13.5px] text-[#bdbdbd] hover:bg-[var(--win-hover)]">
+              <Orb size={18} live={st === 'waiting'} /><span className="flex-1">{n}</span>{st && <span className={`text-[12.5px] ${st === 'waiting' ? 'text-[var(--amber-ink)]' : 'text-[#8a8a8a]'}`}>{st}</span>}
             </a>
           ))}
         </In>
         <In at={s(4)}>
-          <div className="mb-1 mt-5 pl-2.5 text-[12px] font-[500] text-[#8a8a8a]">Recent</div>
+          <div className="mb-1 mt-5 pl-2.5 text-[12.5px] font-[500] text-[#8a8a8a]">Recent</div>
           {([['INC-2291', 'checkout-api latency', true], ['INC-2288', 'Search indexing lag', false], ['INC-2276', 'Webhook retries', false]] as const).map(([id, t, on]) => (
-            <a key={id} href="#" className="flex h-8 items-center gap-2.5 rounded-[8px] pl-2.5 pr-2 text-[13.5px] text-[#bdbdbd] hover:bg-[var(--win-hover)]">
+            <a key={id} href="#" className="flex h-[30px] items-center gap-2.5 rounded-[8px] pl-2.5 pr-2 text-[13.5px] text-[#bdbdbd] hover:bg-[var(--win-hover)]">
               <CircleDot size={14} strokeWidth={2} className={on ? 'text-[var(--amber)]' : 'text-[#6b6b6b]'} /><span className="truncate">{t}</span>
             </a>
           ))}
         </In>
         <In at={s(5)} className="mt-auto">
           <div className="rounded-[12px] bg-[var(--win-raised)] p-3 shadow-[inset_0_0_0_1px_var(--edge)]">
-            <div className="flex items-center gap-2 text-[12px] text-[#8a8a8a]"><span className="size-1.5 rounded-full bg-[var(--ok)]" />On call now</div>
-            <div className="mt-2 flex items-center gap-2.5"><Person i="ML" size={26} /><div><div className="text-[13px] font-[500]">Maya Lindqvist</div><div className="mono text-[11.5px] text-[#8a8a8a]">until 18:00 UTC</div></div></div>
+            <div className="flex items-center gap-2 text-[12.5px] text-[#8a8a8a]"><span className="size-1.5 rounded-full bg-[var(--ok)]" />On call now</div>
+            <div className="mt-2 flex items-center gap-2.5"><Person i="ML" size={26} /><div><div className="text-[13.5px] font-[500]">Maya Lindqvist</div><div className="mono text-[11.5px] text-[#8a8a8a]">until 18:00 UTC</div></div></div>
           </div>
         </In>
       </aside>
@@ -128,28 +128,28 @@ export default function Product({ at = 0 }: { at?: number }) {
       <section className="flex min-w-0 flex-1 flex-col">
         <In at={s(2)} className="flex h-14 shrink-0 items-center gap-2.5 border-b border-[var(--edge)] px-5 text-[13.5px]">
           <span className="text-[#8a8a8a]">Incidents</span><ChevronRight size={14} strokeWidth={SW} className="text-[#6b6b6b]" />
-          <span className="mono text-[12.5px] text-[#a3a3a3]">INC-2291</span><span className="text-[14px] font-[600]">checkout-api p99 latency</span>
+          <span className="mono text-[12.5px] text-[#a3a3a3]">INC-2291</span><span className="text-[13.5px] font-[600]">checkout-api p99 latency</span>
           <Chip tone="amber">SEV-2</Chip><span className="ml-auto text-[12.5px] text-[#8a8a8a]">Ongoing <span className="tnum text-[#cfcfcf]">14m</span></span>
         </In>
         <div className="relative min-h-0 flex-1 overflow-hidden">
           <div className="mx-auto max-w-[620px] px-2 pt-5">
-            <In at={s(4)} className="flex items-center gap-2.5 text-[13px] text-[#a3a3a3]">
+            <In at={s(4)} className="flex items-center gap-2.5 text-[13.5px] text-[#a3a3a3]">
               <span className="grid size-7 place-items-center rounded-full bg-[var(--amber-tint)]"><BellRing size={14} strokeWidth={2} className="text-[var(--amber-ink)]" /></span>
               <span><span className="text-[var(--ink)]">Alert fired</span> · p99 above 1.5s for 5 min · Maya paged</span><span className="mono ml-auto text-[11.5px] text-[#8a8a8a]">14:02</span>
             </In>
             <div className="ml-[13px] mt-1 h-4 w-px bg-white/[0.08]" />
-            <In at={s(6)} className="flex items-center gap-2.5 text-[13px]">
+            <In at={s(6)} className="flex items-center gap-2.5 text-[13.5px]">
               <Orb size={28} /><span className="font-[500]">Triage agent</span>
               <span className="flex items-center gap-1 text-[#8a8a8a]">Investigated for <RollingNumber value="2m 14s" at={s(7)} className="text-[#cfcfcf]" /><ChevronDown size={13} strokeWidth={SW} /></span>
             </In>
             <In at={s(8)} className="ml-[38px] mt-2.5 flex flex-wrap gap-1.5">
               <Source icon={Activity} label="Metrics" /><Source icon={ScrollText} label="Logs" /><Source icon={Waypoints} label="Traces" /><Source icon={GitCommitHorizontal} label="Deploys" />
             </In>
-            <In at={s(9)} className="ml-[38px] mt-3 text-[14.5px] leading-[23px] text-[#d9d9d9]">
-              p99 went from 180 ms to 2.4 s at 13:57, four minutes after deploy <span className="mono rounded-[4px] bg-white/[0.07] px-1 text-[13px]">#4821</span>. Traces point to a new N+1 query in <span className="mono rounded-[4px] bg-white/[0.07] px-1 text-[13px]">CartSummary.load</span> (412 calls per request). Errors are flat: this is latency, not failure.
+            <In at={s(9)} className="ml-[38px] mt-3 text-[13.5px] leading-[22px] text-[#d9d9d9]">
+              p99 went from 180 ms to 2.4 s at 13:57, four minutes after deploy <span className="mono rounded-[4px] bg-white/[0.07] px-1 text-[13.5px]">#4821</span>. Traces point to a new N+1 query in <span className="mono rounded-[4px] bg-white/[0.07] px-1 text-[13.5px]">CartSummary.load</span> (412 calls per request). Errors are flat: this is latency, not failure.
             </In>
             <In at={s(10)} className="ml-[38px] mt-4 rounded-[14px] bg-[var(--win-raised)] p-3.5 pb-2 shadow-[inset_0_0_0_1px_var(--edge)]">
-              <div className="mb-1.5 flex items-center text-[12.5px]"><span className="font-[500] text-[#e5e5e5]">checkout-api · p99 latency</span><span className="ml-2 text-[#8a8a8a]">last 60 min</span><span className="mono ml-auto text-[12px] text-[var(--amber-ink)]">2.41s</span></div>
+              <div className="mb-1.5 flex items-center text-[12.5px]"><span className="font-[500] text-[#e5e5e5]">checkout-api · p99 latency</span><span className="ml-2 text-[#8a8a8a]">last 60 min</span><span className="mono ml-auto text-[12.5px] text-[var(--amber-ink)]">2.41s</span></div>
               <LatencyChart at={s(11)} />
             </In>
 
@@ -158,18 +158,18 @@ export default function Product({ at = 0 }: { at?: number }) {
               <div className="flex items-center gap-2 px-3.5 pt-3 text-[12.5px] text-[#a3a3a3]"><Orb size={18} live /><span className="font-[500] text-[#e5e5e5]">Rollback agent</span> wants to
                 <span className="ml-auto flex items-center gap-1.5 text-[var(--amber-ink)]"><span className="relative grid size-2 place-items-center"><span className="absolute size-2 animate-ping rounded-full bg-[var(--amber)] opacity-50" /><span className="size-1.5 rounded-full bg-[var(--amber)]" /></span>Waiting for you</span></div>
               <div className="px-3.5 pb-3 pt-1.5">
-                <div className="text-[15.5px] font-[600] tracking-[-0.01em]">Roll back checkout-api to <span className="mono font-[500]">#4820</span></div>
+                <div className="text-[15px] font-[600] tracking-[-0.01em]">Roll back checkout-api to <span className="mono font-[500]">#4820</span></div>
                 <div className="mt-2.5 grid grid-cols-3 overflow-hidden rounded-[10px] shadow-[inset_0_0_0_1px_var(--edge)]">
                   {[['Recovery', '3-4 min'], ['Blast radius', 'checkout-api'], ['Reverts', '1 commit']].map(([k, v], i) => (
-                    <div key={k} className={`px-3 py-2 ${i ? 'border-l border-[var(--edge)]' : ''}`}><div className="text-[11.5px] text-[#8a8a8a]">{k}</div><div className="mt-0.5 text-[13px] text-[#e5e5e5]">{v}</div></div>
+                    <div key={k} className={`px-3 py-2 ${i ? 'border-l border-[var(--edge)]' : ''}`}><div className="text-[11.5px] text-[#8a8a8a]">{k}</div><div className="mt-0.5 text-[13.5px] text-[#e5e5e5]">{v}</div></div>
                   ))}
                 </div>
                 <div className="mt-2.5 flex flex-wrap gap-1.5"><Chip><ShieldCheck size={12} strokeWidth={2} className="text-[#86efac]" />Production · eu-west-1</Chip><Chip>Once</Chip><Chip>Undo for 30 min</Chip></div>
               </div>
               <div className="flex items-center gap-2 border-t border-[var(--edge)] bg-white/[0.015] px-3 py-2.5">
                 <span className="text-[12.5px] text-[#8a8a8a]">Maya, this needs your approval</span>
-                <button type="button" className="pill-ghost ml-auto h-8 rounded-full px-3.5 text-[13px] font-[500]">Hold</button>
-                <button type="button" className="pill-white h-8 rounded-full px-3.5 text-[13px] font-[600]">Approve rollback</button>
+                <button type="button" className="pill-ghost ml-auto h-8 rounded-full px-3.5 text-[13.5px] font-[500]">Hold</button>
+                <button type="button" className="pill-white h-8 rounded-full px-3.5 text-[13.5px] font-[600]">Approve rollback</button>
               </div>
             </In>
           </div>
@@ -177,7 +177,7 @@ export default function Product({ at = 0 }: { at?: number }) {
         </div>
         <In at={s(14)} className="shrink-0 px-5 pb-4">
           <div className="mx-auto max-w-[620px] rounded-[16px] bg-[var(--win-raised)] p-3 shadow-[inset_0_0_0_1px_var(--edge)]">
-            <div className="h-6 text-[14px] text-[#8a8a8a]">Ask Halyard, or @ an agent</div>
+            <div className="h-6 text-[13.5px] text-[#8a8a8a]">Ask Halyard, or @ an agent</div>
             <div className="mt-2 flex items-center gap-1.5">
               <button type="button" aria-label="Add context" className="grid size-8 place-items-center rounded-[9px] text-[#a3a3a3] shadow-[inset_0_0_0_1px_var(--edge)]"><Plus size={16} strokeWidth={SW} /></button>
               <span className="mono ml-1 text-[11.5px] text-[#8a8a8a]">INC-2291 attached</span>
@@ -189,8 +189,8 @@ export default function Product({ at = 0 }: { at?: number }) {
       </section>
 
       {/* incident inspector */}
-      <aside aria-label="Incident details" className="w-[290px] shrink-0 border-l border-[var(--edge)] px-4 pt-4 text-[13px]">
-        <In at={s(3)} className="text-[12px] font-[500] text-[#8a8a8a]">Incident</In>
+      <aside aria-label="Incident details" className="w-[290px] shrink-0 border-l border-[var(--edge)] px-4 pt-4 text-[13.5px]">
+        <In at={s(3)} className="text-[12.5px] font-[500] text-[#8a8a8a]">Incident</In>
         <In at={s(4)}><dl className="mt-2.5 grid grid-cols-[96px_1fr] gap-y-2.5">
           <dt className="text-[#8a8a8a]">Status</dt><dd className="flex items-center gap-1.5 text-[#e5e5e5]"><span className="size-1.5 rounded-full bg-[var(--amber)]" />Mitigating</dd>
           <dt className="text-[#8a8a8a]">Severity</dt><dd><Chip tone="amber">SEV-2</Chip></dd>
@@ -199,7 +199,7 @@ export default function Product({ at = 0 }: { at?: number }) {
           <dt className="text-[#8a8a8a]">Impact</dt><dd className="text-[#cfcfcf]">Slow checkout, no failed orders</dd>
           <dt className="text-[#8a8a8a]">Started</dt><dd className="mono text-[12.5px] text-[#cfcfcf]">13:57 UTC</dd>
         </dl></In>
-        <In at={s(6)} className="mt-6 text-[12px] font-[500] text-[#8a8a8a]">Timeline</In>
+        <In at={s(6)} className="mt-6 text-[12.5px] font-[500] text-[#8a8a8a]">Timeline</In>
         <ol className="relative mt-2.5 space-y-3.5 before:absolute before:bottom-2 before:left-[4.5px] before:top-2 before:w-px before:bg-white/[0.08]">
           {([['13:53', 'Deploy #4821 shipped', 'done'], ['13:57', 'p99 crossed 1.5s', 'done'], ['14:02', 'Alert fired, Maya paged', 'done'], ['14:03', 'Triage agent started', 'done'], ['14:05', 'Cause found: N+1 query', 'done'], ['14:06', 'Rollback proposed', 'now'], ['', 'Status page update', 'next']] as const).map(([t, l, st], i) => (
             <li key={l}><In at={s(7 + i * 0.6)} y={4} className="relative flex items-start gap-3">
