@@ -3,10 +3,10 @@
 import { useEffect } from 'react'
 import { AnimatePresence, motion } from 'motion/react'
 import { AlertTriangle, Bell, Check, CircleDashed, Clock3, FileText, Link2, X } from 'lucide-react'
-import { categoryHue, me, type Bill } from './data'
+import { me, type Bill } from './data'
 import { approve, toast, useStore } from './store'
 import { Due, StatusTag } from './Table'
-import { Avatar, Button, cx, I, Kbd, Money, Tag, Tip, VendorTile } from './ui'
+import { Avatar, Button, cx, I, Kbd, Money, Tip, VendorTile } from './ui'
 
 const ease = [0.215, 0.61, 0.355, 1] as const
 
@@ -38,20 +38,20 @@ function Body({ b }: { b: Bill }) {
         <div className="flex flex-col py-1">
           <Fact k="Due"><Due b={b} /></Fact>
           <Fact k="Pay run">{b.run ? <span className="tnum">Thu, {b.run}</span> : <span className="text-[var(--soft)]">Not scheduled</span>}<span className="text-[var(--faint)]">·</span><span className="text-[var(--sub)]">{b.method}</span></Fact>
-          <Fact k="Category"><Tag hue={categoryHue[b.category]}>{b.category}</Tag></Fact>
+          <Fact k="Category">{b.category}</Fact>
           <Fact k="Budget owner"><Avatar p={b.owner} size={20} />{b.owner.name}</Fact>
           <Fact k="Memo"><span className="truncate text-[var(--sub)]">{b.memo}</span></Fact>
-          {b.discount && <Fact k="Discount"><Tag hue="teal">{b.discount.terms}</Tag><span className="text-[var(--sub)]">Save <Money n={b.discount.save} /> by {b.discount.by}</span></Fact>}
+          {b.discount && <Fact k="Discount"><span>{b.discount.terms}</span><span className="text-[var(--sub)]">· Save <Money n={b.discount.save} /> by {b.discount.by}</span></Fact>}
         </div>
 
         <h3 className="mt-5 text-[12px] font-[500] text-[var(--soft)]">Approvals</h3>
         <ol className="mt-2 rounded-[12px] p-1 shadow-[var(--sh-ring)]">
           {b.chain.map((s, i) => (
-            <li key={s.who.id} className={cx('relative flex h-12 items-center gap-3 rounded-[8px] px-2.5', s.state === 'waiting' && 'bg-[var(--sunk)] dark:bg-[rgba(255,255,255,0.03)]')}>
+            <li key={s.who.id} className={cx('relative flex h-12 items-center gap-3 rounded-[8px] px-2.5', s.state === 'waiting' && 'bg-[var(--hover)]')}>
               {i < b.chain.length - 1 && <span aria-hidden className="absolute left-[21px] top-[34px] h-[28px] w-px bg-[var(--line-2)]" />}
               <span className={cx(s.state === 'todo' && 'opacity-40 grayscale')}><Avatar p={s.who} size={24} /></span>
               <span className="min-w-0 flex-1 leading-[16px]"><span className="block text-[14px] font-[500]">{s.who.id === me.id ? 'You' : s.who.name}</span><span className="block text-[12px] text-[var(--soft)]">{s.who.role}</span></span>
-              {s.state === 'done' && <span className="flex items-center gap-1.5 text-[12px] text-[var(--sub)]"><Check size={12} strokeWidth={2.5} className="text-[var(--green)]" />Approved {when[i]}</span>}
+              {s.state === 'done' && <span className="flex items-center gap-1.5 text-[12px] text-[var(--sub)]"><Check size={12} strokeWidth={2.5} className="text-[var(--ink)]" />Approved {when[i]}</span>}
               {s.state === 'waiting' && <span className="flex items-center gap-1.5 text-[12px] font-[500] text-[var(--amber)]"><Clock3 size={12} strokeWidth={2.25} />Waiting · 2d</span>}
               {s.state === 'todo' && <span className="text-[12px] text-[var(--soft)]">Next</span>}
             </li>
@@ -62,7 +62,7 @@ function Body({ b }: { b: Bill }) {
         <div className="mt-2 grid grid-cols-3 gap-2">
           {['Purchase order', 'Goods receipt', 'Invoice'].map((l, i) => (
             <div key={l} className="rounded-[12px] p-3 shadow-[var(--sh-ring)]">
-              <div className="flex items-center gap-1.5 text-[12px] font-[500]">{match[i] ? <Check size={12} strokeWidth={2.5} className="text-[var(--green)]" /> : b.match ? <AlertTriangle size={12} strokeWidth={2.25} className="text-[var(--amber)]" /> : <CircleDashed size={12} strokeWidth={2} className="text-[var(--faint)]" />}<span className={match[i] ? 'text-[var(--ink)]' : 'text-[var(--soft)]'}>{l}</span></div>
+              <div className="flex items-center gap-1.5 text-[12px] font-[500]">{match[i] ? <Check size={12} strokeWidth={2.5} className="text-[var(--ink)]" /> : b.match ? <AlertTriangle size={12} strokeWidth={2.25} className="text-[var(--amber)]" /> : <CircleDashed size={12} strokeWidth={2} className="text-[var(--faint)]" />}<span className={match[i] ? 'text-[var(--ink)]' : 'text-[var(--soft)]'}>{l}</span></div>
               <div className={cx('mono mt-1.5', match[i] ? 'text-[var(--sub)]' : 'text-[var(--soft)]')}>{match[i] ? docs[i] : b.match ? 'Missing' : 'No PO'}</div>
             </div>
           ))}
@@ -73,14 +73,14 @@ function Body({ b }: { b: Bill }) {
           <span className="relative h-[60px] w-[48px] shrink-0 overflow-hidden rounded-[6px] bg-white p-1.5 shadow-[0_0_0_1px_rgba(20,20,18,0.1),0_2px_4px_rgba(20,20,18,0.08)]">
             <span className="block h-1 w-4 rounded-full bg-[#1e1e1e]" /><span className="mt-1.5 block h-[3px] w-6 rounded-full bg-[#d6d6d2]" /><span className="mt-1 block h-[3px] w-5 rounded-full bg-[#d6d6d2]" />
             <span className="mt-2.5 block h-[3px] w-full rounded-full bg-[#e6e6e2]" /><span className="mt-1 block h-[3px] w-full rounded-full bg-[#e6e6e2]" /><span className="mt-1 block h-[3px] w-3/4 rounded-full bg-[#e6e6e2]" />
-            <span className="mt-2 ml-auto block h-1 w-3 rounded-full bg-[#0b7a5c]" />
+            <span className="mt-2 ml-auto block h-1 w-3 rounded-full bg-[#1e1e1e]" />
           </span>
           <span className="min-w-0 flex-1 leading-[18px]"><span className="block truncate text-[14px] font-[500]">{b.invoice.toLowerCase()}.pdf</span><span className="block text-[12px] text-[var(--soft)]">2 pages · received by email Oct 2</span></span>
           <FileText {...I} className="text-[var(--faint)]" />
         </a>
       </div>
 
-      <div className="m-1 mt-0 flex shrink-0 items-center gap-2 rounded-[10px] bg-[var(--sunk)] p-1.5 dark:bg-[rgba(255,255,255,0.03)]">
+      <div className="flex shrink-0 items-center gap-2 px-3 py-3 shadow-[inset_0_1px_0_var(--div)]">
         <Button variant="ghost" className="!text-[var(--red)]" onClick={() => toast({ title: `Rejected ${b.vendor.name}` })}>Reject</Button>
         <span className="flex-1" />
         <Button onClick={() => toast({ title: `Asked ${b.owner.name.split(' ')[0]} for changes` })}>Request changes</Button>

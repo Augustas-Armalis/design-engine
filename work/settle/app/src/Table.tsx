@@ -3,12 +3,12 @@ import { useMemo, useState } from 'react'
 import { Menu } from '@base-ui/react/menu'
 import { ArrowDown, ArrowUp, CalendarDays, Check, Copy, Ellipsis, ExternalLink, Stamp, X } from 'lucide-react'
 import { AnimatePresence, motion } from 'motion/react'
-import { categoryHue, me, statusMeta, type Bill } from './data'
+import { me, statusMeta, type Bill } from './data'
 import { approve, selectAll, toast, toggle, useStore } from './store'
-import { Avatar, Button, Checkbox, cx, I, Kbd, Match, Money, Tag, VendorTile } from './ui'
+import { Avatar, Button, Checkbox, cx, I, Kbd, Match, Money, Status, VendorTile } from './ui'
 
 export type Col = 'vendor' | 'invoice' | 'category' | 'owner' | 'chain' | 'match' | 'due' | 'amount' | 'status'
-const W: Record<Col, string> = { vendor: 'minmax(220px,1fr)', invoice: '150px', category: '128px', owner: '168px', chain: '104px', match: '76px', due: '148px', amount: '128px', status: '144px' }
+const W: Record<Col, string> = { vendor: 'minmax(220px,1fr)', invoice: '150px', category: '128px', owner: '180px', chain: '104px', match: '72px', due: '150px', amount: '132px', status: '150px' }
 const LABEL: Record<Col, string> = { vendor: 'Vendor', invoice: 'Invoice', category: 'Category', owner: 'Budget owner', chain: 'Approvals', match: 'Match', due: 'Due', amount: 'Amount', status: 'Status' }
 type SortKey = 'due' | 'amount' | 'vendor'
 
@@ -17,7 +17,7 @@ export function Due({ b }: { b: Bill }) {
   return (
     <span className="flex items-center gap-2 whitespace-nowrap">
       <CalendarDays {...I} className="text-[var(--faint)]" />
-      <span className="tnum">{b.due}</span>
+      <span className="tnum text-[var(--sub)]">{b.due}</span>
       <span className="h-3 w-px bg-[var(--line-2)]" />
       <span className={cx('tnum text-[12px]', late ? 'font-[500] text-[var(--red)]' : 'text-[var(--soft)]')}>{b.status === 'paid' ? 'paid' : late ? `${-b.dueIn}d late` : b.dueIn === 0 ? 'today' : `in ${b.dueIn}d`}</span>
     </span>
@@ -41,7 +41,7 @@ export function Chain({ b }: { b: Bill }) {
   )
 }
 
-export function StatusTag({ b }: { b: Bill }) { const m = statusMeta[b.status]; return <Tag hue={m.tone} dot>{m.label}</Tag> }
+export function StatusTag({ b }: { b: Bill }) { const m = statusMeta[b.status]; return <Status label={m.label} tone={m.tone} /> }
 
 function RowMenu({ b }: { b: Bill }) {
   const mine = b.chain.some((s) => s.who.id === me.id && s.state === 'waiting')
@@ -72,14 +72,14 @@ function RowMenu({ b }: { b: Bill }) {
   )
 }
 
-export default function Table({ rows, cols, limit }: { rows: Bill[]; cols: Col[]; limit?: number }) {
+export default function Table({ rows, cols, limit, selectable = true }: { rows: Bill[]; cols: Col[]; limit?: number; selectable?: boolean }) {
   const { selected } = useStore()
   const [sort, setSort] = useState<{ k: SortKey; dir: 1 | -1 }>({ k: 'due', dir: 1 })
   const sorted = useMemo(() => {
     const r = [...rows].sort((a, b) => (sort.k === 'due' ? a.dueIn - b.dueIn : sort.k === 'amount' ? a.amount - b.amount : a.vendor.name.localeCompare(b.vendor.name)) * sort.dir)
     return limit ? r.slice(0, limit) : r
   }, [rows, sort, limit])
-  const grid = `40px ${cols.map((c) => W[c]).join(' ')} 44px`
+  const grid = `${selectable ? '40px' : '8px'} ${cols.map((c) => W[c]).join(' ')} 48px`
   const ids = sorted.map((b) => b.id)
   const nSel = ids.filter((i) => selected.has(i)).length
   const total = rows.reduce((a, b) => a + b.amount, 0)
@@ -97,8 +97,8 @@ export default function Table({ rows, cols, limit }: { rows: Bill[]; cols: Col[]
 
   return (
     <div role="table" aria-label="Bills, sample data" className="relative text-[14px]">
-      <div role="row" className="grid h-9 items-center text-[12px] font-[500] text-[var(--soft)] shadow-[inset_0_-1px_0_var(--div)]" style={{ gridTemplateColumns: grid }}>
-        <div role="columnheader" className="flex items-center justify-center"><Checkbox label="Select all bills" checked={nSel === ids.length && nSel > 0} indeterminate={nSel > 0 && nSel < ids.length} onChange={(v) => selectAll(ids, v)} /></div>
+      <div role="row" className="group/h grid h-10 items-center text-[12px] font-[500] text-[var(--soft)] shadow-[inset_0_-1px_0_var(--div)]" style={{ gridTemplateColumns: grid }}>
+        <div role="columnheader" className={cx('st flex items-center justify-center', nSel ? 'opacity-100' : 'opacity-0 group-hover/h:opacity-100 focus-within:opacity-100')}>{selectable ? <Checkbox label="Select all bills" checked={nSel === ids.length && nSel > 0} indeterminate={nSel > 0 && nSel < ids.length} onChange={(v) => selectAll(ids, v)} /> : <span className="sr-only">Row</span>}</div>
         {cols.map(head)}
         <div role="columnheader"><span className="sr-only">Actions</span></div>
       </div>
@@ -107,14 +107,14 @@ export default function Table({ rows, cols, limit }: { rows: Bill[]; cols: Col[]
           const sel = selected.has(b.id)
           return (
             <motion.div layout="position" key={b.id} role="row" onClick={() => (location.hash = `#/bills/${b.id}`)}
-              className={cx('st group grid h-11 items-center shadow-[inset_0_-1px_0_var(--div)]', sel ? 'bg-[var(--select)]' : 'hover:bg-[var(--hover)]')} style={{ gridTemplateColumns: grid }}>
-              <div role="cell" className="flex items-center justify-center" onClick={(e) => e.stopPropagation()}><Checkbox label={`Select ${b.vendor.name}`} checked={sel} onChange={(v) => toggle(b.id, v)} /></div>
+              className={cx('st group grid h-12 items-center shadow-[inset_0_-1px_0_var(--div)] last-of-type:shadow-none', sel ? 'bg-[var(--select)]' : 'hover:bg-[var(--hover)]')} style={{ gridTemplateColumns: grid }}>
+              <div role="cell" className={cx('st flex items-center justify-center', sel || nSel ? 'opacity-100' : 'opacity-0 group-hover:opacity-100 focus-within:opacity-100')} onClick={(e) => e.stopPropagation()}>{selectable && <Checkbox label={`Select ${b.vendor.name}`} checked={sel} onChange={(v) => toggle(b.id, v)} />}</div>
               {cols.map((c) => (
                 <div key={c} role="cell" className={cx('flex min-w-0 items-center px-3', c === 'amount' && 'justify-end')}>
                   {c === 'vendor' && <span className="flex min-w-0 items-center gap-2.5"><VendorCell b={b} /></span>}
                   {c === 'invoice' && <span className="mono truncate text-[var(--sub)]">{b.invoice}</span>}
-                  {c === 'category' && <Tag hue={categoryHue[b.category]}>{b.category}</Tag>}
-                  {c === 'owner' && <span className="flex min-w-0 items-center gap-2"><Avatar p={b.owner} size={20} /><span className="truncate">{b.owner.name}</span></span>}
+                  {c === 'category' && <span className="truncate text-[var(--sub)]">{b.category}</span>}
+                  {c === 'owner' && <span className="flex min-w-0 items-center gap-2"><Avatar p={b.owner} size={20} /><span className="truncate text-[var(--sub)]">{b.owner.name}</span></span>}
                   {c === 'chain' && <Chain b={b} />}
                   {c === 'match' && <Match m={b.match} />}
                   {c === 'due' && <Due b={b} />}
@@ -122,12 +122,12 @@ export default function Table({ rows, cols, limit }: { rows: Bill[]; cols: Col[]
                   {c === 'status' && <StatusTag b={b} />}
                 </div>
               ))}
-              <div role="cell" className="flex items-center justify-center opacity-60 group-hover:opacity-100" onClick={(e) => e.stopPropagation()}><RowMenu b={b} /></div>
+              <div role="cell" className="st flex items-center justify-center opacity-0 group-hover:opacity-100 focus-within:opacity-100" onClick={(e) => e.stopPropagation()}><RowMenu b={b} /></div>
             </motion.div>
           )
         })}
       </AnimatePresence>
-      <div className="grid h-10 items-center text-[12px] text-[var(--soft)]" style={{ gridTemplateColumns: grid }}>
+      <div className="grid h-11 items-center text-[12px] text-[var(--soft)] shadow-[inset_0_1px_0_var(--div)]" style={{ gridTemplateColumns: grid }}>
         <div />
         <div className="px-3" style={{ gridColumn: `span ${cols.indexOf('amount')}` }}><span className="tnum text-[var(--ink)]">{rows.length}</span> bills{limit && rows.length > limit ? <> · showing {limit}</> : null}</div>
         <div className="flex items-center justify-end gap-1.5 px-3"><span>Total</span><Money n={total} className="text-[12px] font-[500] text-[var(--ink)]" /></div>

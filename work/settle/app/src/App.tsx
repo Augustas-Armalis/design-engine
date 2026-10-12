@@ -51,15 +51,15 @@ export default function App() {
     <MotionConfig reducedMotion="user">
       <div className="flex h-screen min-h-[760px] w-full min-w-[1200px] overflow-hidden bg-[var(--canvas)]">
         <Sidebar page={page} />
-        <div className="relative my-2 mr-2 flex min-w-0 flex-1 flex-col overflow-hidden rounded-[16px] bg-[var(--panel)] shadow-[var(--sh-panel)]">
-          <div className="flex h-[52px] shrink-0 items-center gap-2 px-4 shadow-[inset_0_-1px_0_var(--div)]">
+        <div className="relative flex min-w-0 flex-1 flex-col overflow-hidden bg-[var(--panel)]">
+          <div className="flex h-[52px] shrink-0 items-center gap-2 px-5 shadow-[inset_0_-1px_0_var(--div)]">
             <nav aria-label="Breadcrumb" className="flex items-center gap-1.5 text-[14px] font-[500]">
               <a href="#/" className="st -mx-1 inline-flex h-6 items-center rounded-[6px] px-1 text-[var(--soft)] hover:text-[var(--ink)]">Payables</a>
               <ChevronRight size={12} strokeWidth={2} className="text-[var(--faint)]" />
               <span aria-current="page">{page === 'bills' ? 'Bills' : 'Overview'}</span>
             </nav>
             <div className="ml-auto flex items-center gap-1">
-              <Tip label="Notifications"><Button variant="ghost" size="icon" aria-label="Notifications" className="relative"><Bell {...I} /><span className="absolute right-[8px] top-[7px] size-[6px] rounded-full bg-[var(--red)] shadow-[0_0_0_1.5px_var(--panel)]" /></Button></Tip>
+              <Tip label="Notifications"><Button variant="ghost" size="icon" aria-label="Notifications" className="relative"><Bell {...I} /><span className="absolute right-[8px] top-[7px] size-[6px] rounded-full bg-[var(--ink)] shadow-[0_0_0_1.5px_var(--panel)]" /></Button></Tip>
               <Tip label={theme === 'dark' ? 'Light theme' : 'Dark theme'}><Button variant="ghost" size="icon" aria-label="Switch theme" onClick={toggleTheme}>{theme === 'dark' ? <Sun {...I} /> : <Moon {...I} />}</Button></Tip>
             </div>
           </div>

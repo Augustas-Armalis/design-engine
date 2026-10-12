@@ -53,9 +53,8 @@ export function Tag({ hue, children, dot }: { hue: string; children: ReactNode; 
 
 export function Avatar({ p, size = 20, ring }: { p: Person; size?: number; ring?: boolean }) {
   return (
-    <span className={cx('relative inline-block shrink-0 overflow-hidden rounded-full bg-[var(--sunk)]', ring && 'shadow-[0_0_0_2px_var(--card)]')} style={{ width: size, height: size }}>
-      <img src={p.face} alt="" className="size-full" draggable={false} />
-      <span aria-hidden className="absolute inset-0 rounded-full shadow-[inset_0_0_0_1px_rgba(0,0,0,0.06)] dark:shadow-[inset_0_0_0_1px_rgba(255,255,255,0.1)]" />
+    <span className={cx('relative inline-block shrink-0 overflow-hidden rounded-full bg-[var(--sunk)]', ring && 'shadow-[0_0_0_2px_var(--canvas)]')} style={{ width: size, height: size }}>
+      <img src={p.face} alt="" className="size-full dark:opacity-90" draggable={false} />
     </span>
   )
 }
@@ -63,19 +62,20 @@ export function Stack({ people, size = 20 }: { people: Person[]; size?: number }
   return <span className="flex items-center">{people.map((p, i) => <span key={p.id} className={i ? '-ml-1.5' : ''}><Avatar p={p} size={size} ring /></span>)}</span>
 }
 
-/* vendor tile: white squircle with the brand glyph, or a tinted monogram for vendors without a mark. 24px r7 by default. */
-const dark = (hex: string) => { const n = parseInt(hex, 16); return ((n >> 16) * 299 + ((n >> 8) & 255) * 587 + (n & 255) * 114) / 1000 < 60 }
+/* vendor tile (v2 clean): the vendor's mark in ink on a neutral fill step, no ring, no brand colour (founder: v1 "dirty") */
 export function VendorTile({ v, size = 24 }: { v: Vendor; size?: number }) {
   const r = Math.round(size * 0.3)
-  if (v.icon) return (
-    <span className="grid shrink-0 place-items-center bg-white shadow-[0_0_0_1px_rgba(20,20,18,0.08),0_1px_2px_rgba(20,20,18,0.06)] dark:bg-[#232326] dark:shadow-[0_0_0_1px_rgba(255,255,255,0.08),inset_0_1px_0_rgba(255,255,255,0.05)]" style={{ width: size, height: size, borderRadius: r }}>
-      <svg viewBox="0 0 24 24" width={Math.round(size * 0.54)} height={Math.round(size * 0.54)} aria-hidden style={{ color: dark(v.icon.hex) ? undefined : `#${v.icon.hex}` }} className={dark(v.icon.hex) ? 'text-[#161615] dark:text-[#ededec]' : ''}><path d={v.icon.path} fill="currentColor" /></svg>
+  return (
+    <span className="grid shrink-0 place-items-center bg-[var(--sunk)] font-[600] tracking-[-0.02em] text-[var(--ink)]" style={{ width: size, height: size, borderRadius: r, fontSize: size < 26 ? 11 : Math.round(size * 0.4) }}>
+      {v.icon ? <svg viewBox="0 0 24 24" width={Math.round(size * 0.5)} height={Math.round(size * 0.5)} aria-hidden><path d={v.icon.path} fill="currentColor" /></svg> : v.mono?.[0]}
     </span>
   )
-  return (
-    <span className="grid shrink-0 place-items-center font-[600] tracking-[-0.02em] text-white shadow-[inset_0_0_0_1px_rgba(0,0,0,0.12),inset_0_1px_0_rgba(255,255,255,0.22)]"
-      style={{ width: size, height: size, borderRadius: r, fontSize: size < 22 ? 10 : Math.round(size * 0.4), background: `linear-gradient(180deg, color-mix(in oklab, ${v.tint} 88%, white), ${v.tint})` }}>{size < 22 ? v.mono?.[0] : v.mono}</span>
-  )
+}
+
+/* status: a dot and a word. Only "needs you" and "late" carry colour. */
+export function Status({ label, tone }: { label: string; tone: 'warn' | 'bad' | 'muted' | 'ink' }) {
+  const dot = tone === 'warn' ? 'bg-[var(--amber)]' : tone === 'bad' ? 'bg-[var(--red)]' : tone === 'ink' ? 'bg-[var(--ink)]' : 'bg-[var(--faint)]'
+  return <span className="inline-flex items-center gap-2 whitespace-nowrap text-[14px] text-[var(--sub)]"><span className={cx('size-1.5 rounded-full', dot)} />{label}</span>
 }
 
 export function Tip({ label, children, side = 'top' }: { label: ReactNode; children: React.ReactElement; side?: 'top' | 'bottom' | 'left' | 'right' }) {
@@ -107,7 +107,7 @@ export function Match({ m }: { m: [boolean, boolean, boolean] | null }) {
   return (
     <Tip label={`PO ${m[0] ? 'matched' : 'missing'} · Receipt ${m[1] ? 'matched' : 'missing'} · Invoice ${m[2] ? 'matched' : 'missing'}`}>
       <span className="inline-flex items-center gap-2" tabIndex={0}>
-        <span className="flex gap-[3px]">{m.map((x, i) => <span key={i} className={cx('h-[14px] w-[6px] rounded-[2px]', x ? 'bg-[var(--green)]' : 'bg-[var(--amber)]')} style={{ opacity: x ? 1 : 0.9 }} />)}</span>
+        <span className="flex gap-[3px]">{m.map((x, i) => <span key={i} className={cx('h-3 w-[5px] rounded-[2px]', x ? 'bg-[var(--ink)] opacity-70' : 'bg-[var(--amber)]')} />)}</span>
         <span className={cx('tnum text-[12px]', ok === 3 ? 'text-[var(--sub)]' : 'font-[500] text-[#9a5b00] dark:text-[var(--amber)]')}>{ok}/3</span>
       </span>
     </Tip>

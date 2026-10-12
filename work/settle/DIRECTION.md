@@ -42,3 +42,12 @@ Justified warns: `type.body-size` 14px (app UI base is 14/20, web.design-systems
 
 ## Applied from the Marcel playbook (knowledge/web/kargul-saas-playbook.md)
 L1 analytics overview (KPI strip as one card split by hairlines -> chart 2/3 + list 1/3 -> table); 28/600/-3% KPI numerals with muted units at the value's size; list card `Title + count` with `View all ->`; chart compares against something (the buffer); 30px controls, 14px icons, 44px rows; floating bulk bar; every control wired (approve, undo, nudge, move, sort, filter tabs, menus, ⌘K, theme).
+
+## v2 "clean" (founder on v1: "a bit dirty... I'm not a fan of this style... you could do better and cleaner")
+Diagnosis (fold census at 1440x900): v1 had 5 accent hue families plus coloured logos, faces and monograms, 55 ringed boxes, 3 surfaces on a warm grey canvas.
+v2 changes:
+- Neutral white page + #fafafa sidebar (one surface step).
+- Ink is the only accent; red only for late or under buffer; one amber dot for "needs approval".
+- Monochrome vendor marks on a fill step; faces on neutral grey.
+- Status as dot + word; category as plain text; checkboxes and row actions appear on hover; no trays; whole dollars in summaries, cents in tables; more air (rows 48, cards 20 padding, gaps 20).
+Census after: 2 hue families, 10 ringed boxes, 2 surfaces. check.mjs 0 fail (overview light/dark, bills). v1 shots in shots/v1.

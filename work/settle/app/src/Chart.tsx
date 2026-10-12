@@ -47,8 +47,7 @@ export default function Chart({ moved }: { moved: boolean }) {
       onPointerLeave={() => setHover(null)}>
       <svg width={W} height={H} className="absolute inset-0 overflow-visible" role="img" aria-label="Projected operating balance for the next 30 days, sample data">
         <defs>
-          <linearGradient id="cash-fill" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stopColor="var(--accent)" stopOpacity="0.16" /><stop offset="1" stopColor="var(--accent)" stopOpacity="0" /></linearGradient>
-          <pattern id="under" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="6" height="6" fill="var(--red)" fillOpacity="0.08" /><line x1="0" y1="0" x2="0" y2="6" stroke="var(--red)" strokeOpacity="0.35" strokeWidth="1.5" /></pattern>
+          <linearGradient id="cash-fill" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stopColor="var(--ink)" stopOpacity="0.07" /><stop offset="1" stopColor="var(--ink)" stopOpacity="0" /></linearGradient>
         </defs>
         {ticks.map((t) => (
           <g key={t}>
@@ -60,14 +59,14 @@ export default function Chart({ moved }: { moved: boolean }) {
         <AnimatePresence>
           {under.map((d) => (
             <motion.rect key={`u${d.i}`} initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.3 }}
-              x={x(d.i)} width={x(d.i + 1) - x(d.i)} y={by} height={y(d.balance) - by} fill="url(#under)" />
+              x={x(d.i)} width={x(d.i + 1) - x(d.i)} y={by} height={y(d.balance) - by} fill="var(--red)" fillOpacity="0.14" />
           ))}
         </AnimatePresence>
-        <line x1={0} x2={W - PR} y1={by} y2={by} stroke="var(--red)" strokeOpacity="0.6" strokeDasharray="3 4" strokeWidth="1.25" />
-        <motion.path d={step} initial={false} animate={{ d: step }} transition={{ duration: 0.6, ease }} fill="none" stroke="var(--accent)" strokeWidth="1.75" strokeLinejoin="round" />
+        <line x1={0} x2={W - PR} y1={by} y2={by} stroke="var(--red)" strokeOpacity="0.45" strokeDasharray="2 4" strokeWidth="1" />
+        <motion.path d={step} initial={false} animate={{ d: step }} transition={{ duration: 0.6, ease }} fill="none" stroke="var(--ink)" strokeWidth="1.5" strokeLinejoin="round" />
         {data.map((d) => (d.run || d.payroll) ? (
           <motion.circle key={`m${d.i}`} cy={y(d.balance)} initial={false} animate={{ cy: y(d.balance) }} transition={{ duration: 0.6, ease }} cx={x(d.i)} r={3.5}
-            fill="var(--card)" stroke={d.payroll ? 'var(--violet)' : 'var(--accent)'} strokeWidth="1.75" />
+            fill="var(--canvas)" stroke="var(--ink)" strokeWidth="1.5" />
         ) : null)}
         {data.filter((_, i) => i % 7 === 0).map((d) => (
           <text key={`x${d.i}`} x={x(d.i)} y={H - 8} textAnchor={d.i === 0 ? 'start' : 'middle'} className="fill-[var(--soft)] text-[12px]">{d.i === 0 ? 'Today' : d.label}</text>
@@ -75,14 +74,14 @@ export default function Chart({ moved }: { moved: boolean }) {
         {hd && (
           <g>
             <line x1={x(hd.i)} x2={x(hd.i)} y1={PT - 6} y2={H - PB} stroke="var(--ink)" strokeOpacity="0.18" />
-            <circle cx={x(hd.i)} cy={y(hd.balance)} r={4} fill="var(--accent)" stroke="var(--card)" strokeWidth="2" />
+            <circle cx={x(hd.i)} cy={y(hd.balance)} r={4} fill="var(--ink)" stroke="var(--canvas)" strokeWidth="2" />
           </g>
         )}
       </svg>
 
       {/* buffer label sits on the rule, left */}
-      <span className="absolute flex h-5 -translate-y-1/2 items-center bg-[var(--card)] pl-2 text-[12px] font-[500] text-[var(--red)]" style={{ top: by, right: PR - 10 }}>
-        Buffer
+      <span className="absolute flex h-5 -translate-y-1/2 items-center bg-[var(--canvas)] pl-2 text-[12px] text-[var(--soft)]" style={{ top: by, right: PR - 10 }}>
+        Buffer $750k
       </span>
 
       {/* the dip, called out where it happens */}
@@ -103,10 +102,10 @@ export default function Chart({ moved }: { moved: boolean }) {
           style={{ left: Math.min(x(hd.i) + 12, W - PR - 220), top: 6 }}>
           <div className="flex items-center justify-between px-2 pb-1 pt-1.5 text-[12px]"><span className="font-[500] text-[var(--sub)]">{hd.i === 0 ? 'Today' : hd.label}</span>{hd.balance < BUFFER && <span className="font-[500] text-[var(--red)]">Under buffer</span>}</div>
           <div className="px-2 pb-2 text-[16px] font-[550] tracking-[-0.01em]"><Money n={hd.balance} /></div>
-          <div className="flex flex-col gap-1 rounded-[8px] bg-[var(--sunk)] p-2 text-[12px] dark:bg-[rgba(255,255,255,0.03)]">
-            <Line dot="var(--green)" label="Receipts" v={hd.inflow} sign="+" />
-            {hd.run && <Line dot="var(--accent)" label={`Pay run · ${hd.run.bills} bills`} v={hd.run.amount} sign="−" />}
-            {hd.payroll && <Line dot="var(--violet)" label="Payroll" v={hd.payroll} sign="−" />}
+          <div className="flex flex-col gap-1 px-2 pb-2 pt-1.5 text-[12px] shadow-[inset_0_1px_0_var(--div)]">
+            <Line dot="var(--faint)" label="Receipts" v={hd.inflow} sign="+" />
+            {hd.run && <Line dot="var(--ink)" label={`Pay run · ${hd.run.bills} bills`} v={hd.run.amount} sign="−" />}
+            {hd.payroll && <Line dot="var(--ink)" label="Payroll" v={hd.payroll} sign="−" />}
             {'moved' in hd && hd.moved ? <Line dot="var(--amber)" label="Hartwell wire (moved)" v={hd.moved as number} sign="−" /> : null}
           </div>
         </div>

@@ -2664,6 +2664,34 @@
   "origin": "founder"
  },
  {
+  "id": "founder.founder-taste#86",
+  "text": "[founder] Product UI must read clean: one accent at most (ink is the default accent), colour only where it carries meaning (late = red, needs action = one warm dot), monochrome vendor logos and neutral monogram tiles, avatars on a neutral ground, and no more than one surface step (page + cards, or sidebar + page, never canvas + panel + cards). Separate with space before edges: count the ringed boxes in the fold and cut every ring that a gap could replace (checkboxes appear on hover, row actions are ghost, keycaps only on the search field).",
+  "why": "Founder on Settle v1 (Kargul-style dense AP dashboard, 0 check fails): \"with those colors and layouts it's looking a bit dirty you know... I'm not a fan of this style... I think you could do better and cleaner\". Measured in that fold: 5 accent hue families plus coloured logos, faces and monograms, 55 ringed boxes, 3 surface layers on a warm grey canvas.",
+  "applies": "product UI, dashboards, app screens in heroes.",
+  "check": "fold census: <= 2 accent hue families (excluding photos), ringed boxes <= ~25 at 1440x900, surface fills <= 2, canvas neutral (chroma < 0.01).",
+  "checkable": true,
+  "source": "founder, 2026-10-12, Settle v1",
+  "file": "founder/founder-taste.md",
+  "section": "5. Exceptions & judgement calls",
+  "tags": [
+   "founder",
+   "taste",
+   "hero",
+   "nav",
+   "typography",
+   "copy",
+   "icons",
+   "logo",
+   "layout",
+   "product-card",
+   "background",
+   "buttons",
+   "quality-bar"
+  ],
+  "kind": "source",
+  "origin": "founder"
+ },
+ {
   "id": "dos-and-donts.dos-and-donts#1",
   "text": "[T13] Use as few font sizes as possible in a form; differentiate size only between sections (labels/placeholders at one small size) and actions (the button label larger). The good mock uses 12 for both label and placeholder and 32 for the button label; the bad mock mixes 16 (label), 12 (placeholder), 32 (button).",
   "why": "Every extra size is another thing to decode, so the form takes longer to process.",

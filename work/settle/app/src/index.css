@@ -14,61 +14,63 @@
 /* Settle roles. Edges are alpha ink (BN-02), drawn as box-shadow rings (BN-03), one edge per box (BN-04).
    Three text sizes 12/14/16 + one numeral size 28 (Kargul floor). One control height: 30px. */
 :root {
+  /* v2 "clean" (founder 2026-10-12: v1 "a bit dirty"): neutral greys, ink is the only accent, one surface step */
   color-scheme: light;
-  --canvas: #f4f4f2;          /* shell behind the panel (warm grey) */
-  --panel: #ffffff;           /* the work area */
+  --canvas: #ffffff;          /* page */
+  --side: #fafafa;            /* sidebar, the one surface step */
+  --panel: #ffffff;
   --card: #ffffff;
-  --sunk: #f7f7f6;            /* recessed: table header, tracks, inputs at rest */
-  --hover: rgba(20, 20, 18, 0.035);
-  --select: rgba(20, 20, 18, 0.055);
-  --ink: #161615;
-  --sub: #5f5f5b;             /* 6.3:1 on white */
-  --soft: #6b6b66;            /* 5.3:1 on white, 4.8:1 on the canvas */
-  --faint: #a3a39e;           /* icons, never text under 16px */
-  --line: rgba(20, 20, 18, 0.075);   /* ring (BN-02 default) */
-  --line-2: rgba(20, 20, 18, 0.11);  /* strong ring: controls */
-  --div: rgba(20, 20, 18, 0.06);     /* dividers, never darker than the ring (BN-11) */
-  --accent: #0b7a5c;          /* money teal */
+  --sunk: #f5f5f5;            /* fills: tiles, tracks, hover rows */
+  --hover: rgba(0, 0, 0, 0.03);
+  --select: rgba(0, 0, 0, 0.045);
+  --ink: #0a0a0a;
+  --sub: #525252;
+  --soft: #6b6b6b;            /* 5.3:1 on white, 4.9:1 on the fill step */
+  --faint: #a3a3a3;           /* icons only */
+  --line: rgba(0, 0, 0, 0.08);
+  --line-2: rgba(0, 0, 0, 0.1);
+  --div: rgba(0, 0, 0, 0.055);
+  --accent: #0a0a0a;          /* ink is the accent */
   --accent-ink: #ffffff;
-  --accent-soft: rgba(11, 122, 92, 0.1);
-  --green: #1f9d55; --amber: #c27803; --red: #d93a3a; --blue: #2f6fe4; --violet: #7a5af5;
-  --primary: #161615; --primary-ink: #fff;
+  --accent-soft: rgba(0, 0, 0, 0.06);
+  --red: #dc2626; --amber: #d97706; --green: #0a0a0a; --blue: #0a0a0a; --violet: #0a0a0a;
+  --primary: #0a0a0a; --primary-ink: #fff;
   --sh-ring: 0 0 0 1px var(--line);
-  --sh-control: 0 0 0 1px var(--line-2), 0 1px 2px rgba(20, 20, 18, 0.06);
-  --sh-card: 0 0 0 1px var(--line), 0 1px 2px rgba(20, 20, 18, 0.035), 0 2px 8px -4px rgba(20, 20, 18, 0.05);
-  --sh-panel: 0 0 0 1px rgba(20, 20, 18, 0.07), 0 1px 3px rgba(20, 20, 18, 0.04);
-  --sh-pop: 0 0 0 1px rgba(20, 20, 18, 0.08), 0 4px 12px -2px rgba(20, 20, 18, 0.08), 0 16px 40px -8px rgba(20, 20, 18, 0.14);
-  --sh-primary: 0 0 0 1px #161615, inset 0 1px 0 rgba(255, 255, 255, 0.16), 0 1px 2px rgba(20, 20, 18, 0.22);
-  --focus: 0 0 0 1px var(--accent), 0 0 0 4px rgba(11, 122, 92, 0.18);
+  --sh-control: 0 0 0 1px var(--line-2), 0 1px 1px rgba(0, 0, 0, 0.03);
+  --sh-card: 0 0 0 1px var(--line);
+  --sh-panel: none;
+  --sh-pop: 0 0 0 1px rgba(0, 0, 0, 0.08), 0 4px 12px -2px rgba(0, 0, 0, 0.06), 0 16px 40px -8px rgba(0, 0, 0, 0.12);
+  --sh-primary: inset 0 1px 0 rgba(255, 255, 255, 0.12);
+  --focus: 0 0 0 1px var(--ink), 0 0 0 4px rgba(0, 0, 0, 0.08);
 }
 [data-theme=dark] {
   color-scheme: dark;
-  --canvas: #0c0c0d;
-  --panel: #131315;
-  --card: #18181b;
-  --sunk: #161618;
+  --canvas: #0a0a0a;
+  --side: #0f0f0f;
+  --panel: #0a0a0a;
+  --card: #0f0f0f;
+  --sunk: #1a1a1a;
   --hover: rgba(255, 255, 255, 0.035);
-  --select: rgba(255, 255, 255, 0.06);
-  --ink: #ededec;
-  --sub: #a3a3a0;
-  --soft: #8b8b88;
-  --faint: #616160;
-  --line: rgba(255, 255, 255, 0.075);
+  --select: rgba(255, 255, 255, 0.055);
+  --ink: #ededed;
+  --sub: #a1a1a1;
+  --soft: #8f8f8f;
+  --faint: #5c5c5c;
+  --line: rgba(255, 255, 255, 0.08);
   --line-2: rgba(255, 255, 255, 0.1);
-  --div: rgba(255, 255, 255, 0.055);
-  --accent: #3fc79a;
-  --accent-ink: #06231a;
-  --accent-soft: rgba(63, 199, 154, 0.12);
-  --green: #46c37b; --amber: #e9a23b; --red: #f06a6a; --blue: #6b9cff; --violet: #a28cff;
-  --primary: #ededec; --primary-ink: #111;
-  /* dark lifts with a fill step + top highlight (BN-10), drops are black and only on floating layers */
+  --div: rgba(255, 255, 255, 0.06);
+  --accent: #ededed;
+  --accent-ink: #0a0a0a;
+  --accent-soft: rgba(255, 255, 255, 0.08);
+  --red: #f26565; --amber: #f0a43a; --green: #ededed; --blue: #ededed; --violet: #ededed;
+  --primary: #ededed; --primary-ink: #0a0a0a;
   --sh-ring: 0 0 0 1px var(--line);
-  --sh-control: 0 0 0 1px var(--line-2), inset 0 1px 0 rgba(255, 255, 255, 0.04);
-  --sh-card: 0 0 0 1px var(--line), inset 0 1px 0 rgba(255, 255, 255, 0.035);
-  --sh-panel: 0 0 0 1px rgba(255, 255, 255, 0.06), inset 0 1px 0 rgba(255, 255, 255, 0.03);
-  --sh-pop: 0 0 0 1px rgba(255, 255, 255, 0.09), inset 0 1px 0 rgba(255, 255, 255, 0.05), 0 16px 40px -8px rgba(0, 0, 0, 0.6);
-  --sh-primary: 0 0 0 1px #ededec, inset 0 -1px 0 rgba(0, 0, 0, 0.12);
-  --focus: 0 0 0 1px var(--accent), 0 0 0 4px rgba(63, 199, 154, 0.2);
+  --sh-control: 0 0 0 1px var(--line-2);
+  --sh-card: 0 0 0 1px var(--line), inset 0 1px 0 rgba(255, 255, 255, 0.03);
+  --sh-panel: none;
+  --sh-pop: 0 0 0 1px rgba(255, 255, 255, 0.09), 0 16px 40px -8px rgba(0, 0, 0, 0.7);
+  --sh-primary: none;
+  --focus: 0 0 0 1px var(--ink), 0 0 0 4px rgba(255, 255, 255, 0.1);
 }
 
 html, body { background: var(--canvas); }

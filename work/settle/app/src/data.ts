@@ -9,14 +9,14 @@ export type Person = { id: string; name: string; role: string; face: string }
 const face = (seed: string, bg: string) => createAvatar(openPeeps, { seed, backgroundColor: [bg], maskProbability: 0, scale: 92, translateY: 2 }).toDataUri()
 const P = (id: string, name: string, role: string, bg: string): Person => ({ id, name, role, face: face(name, bg) })
 export const people = {
-  maya: P('maya', 'Maya Okafor', 'Controller', 'e9e4ff'),
-  daniel: P('daniel', 'Daniel Reyes', 'CFO', 'ffe7d6'),
-  priya: P('priya', 'Priya Natarajan', 'Engineering', 'd9f2e6'),
-  tom: P('tom', 'Tom Becker', 'Operations', 'fde2e4'),
-  lena: P('lena', 'Lena Vogt', 'Marketing', 'dcecff'),
-  sam: P('sam', 'Sam Whitaker', 'People', 'fff1c2'),
-  jonas: P('jonas', 'Jonas Lindqvist', 'Infrastructure', 'e3f4f9'),
-  aiko: P('aiko', 'Aiko Tanaka', 'Design', 'f3e3f7'),
+  maya: P('maya', 'Maya Okafor', 'Controller', 'ececec'),
+  daniel: P('daniel', 'Daniel Reyes', 'CFO', 'ececec'),
+  priya: P('priya', 'Priya Natarajan', 'Engineering', 'ececec'),
+  tom: P('tom', 'Tom Becker', 'Operations', 'ececec'),
+  lena: P('lena', 'Lena Vogt', 'Marketing', 'ececec'),
+  sam: P('sam', 'Sam Whitaker', 'People', 'ececec'),
+  jonas: P('jonas', 'Jonas Lindqvist', 'Infrastructure', 'ececec'),
+  aiko: P('aiko', 'Aiko Tanaka', 'Design', 'ececec'),
 }
 export const me = people.maya
 
@@ -83,12 +83,12 @@ export const bills: Bill[] = [
   { id: 'b19', vendor: v.gusto, invoice: 'GUS-PR-1015', category: 'Payroll', owner: sam, amount: 1240, due: 'Oct 15', dueIn: 3, status: 'paid', chain: chain([sam, 'done']), match: null, method: 'ACH', memo: 'Payroll platform fee, October' },
 ]
 
-export const statusMeta: Record<Status, { label: string; tone: string }> = {
-  review: { label: 'In review', tone: 'slate' },
-  approval: { label: 'Needs approval', tone: 'amber' },
-  approved: { label: 'Approved', tone: 'blue' },
-  scheduled: { label: 'Scheduled', tone: 'teal' },
-  paid: { label: 'Paid', tone: 'green' },
+export const statusMeta: Record<Status, { label: string; tone: 'warn' | 'bad' | 'muted' | 'ink' }> = {
+  review: { label: 'In review', tone: 'muted' },
+  approval: { label: 'Needs approval', tone: 'warn' },
+  approved: { label: 'Approved', tone: 'ink' },
+  scheduled: { label: 'Scheduled', tone: 'ink' },
+  paid: { label: 'Paid', tone: 'muted' },
 }
 
 // Cash forecast, next 30 days from Oct 12. Opening balance, then daily: customer receipts in, and the outflows that land.
