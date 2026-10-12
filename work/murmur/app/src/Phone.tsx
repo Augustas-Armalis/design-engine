@@ -52,7 +52,7 @@ export default function Phone({ at = 0 }: { at?: number }) {
         </div>
         {/* sheet: transcript arriving + the AI's tag */}
         <div className="absolute inset-x-0 bottom-0 top-[238px] rounded-t-[26px] bg-[#f4f6fb] px-4 pt-4 text-[#0d1330]">
-          <div className="flex items-center justify-between"><span className="text-[14px] font-[600]">Live transcript</span><span className="text-[12px] text-[#6b7392]">auto-saved</span></div>
+          <div className="flex items-center justify-between"><span className="text-[14px] font-[600]">Live transcript</span><span className="text-[12px] text-[#5a6280]">auto-saved</span></div>
           <div className="mt-3 space-y-2.5">
             {LINES.slice(0, n).map(([who, t], i) => (
               <motion.div key={i} initial={still ? false : { opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, ease }} className="flex gap-2.5">
