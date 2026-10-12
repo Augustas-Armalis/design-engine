@@ -2496,6 +2496,34 @@
   "origin": "founder"
  },
  {
+  "id": "founder.founder-taste#80",
+  "text": "[founder] When a button, row or card leads with a tile (icon square, app icon, avatar box), the tile's left inset equals its top and bottom insets, exactly. The tile's radius is concentric with the container (outer radius - inset) when there is room; otherwise it stays smaller than the outer radius. Size controls with `box-sizing: border-box` so padding never inflates the height and doubles the vertical inset.",
+  "why": "Founder on the Buttons II app-tile button (left inset 6px, top/bottom 12px because padding was added on top of a fixed height): \"WTF IS THE LEFT SPACING FOR THE CARD WITH RECTANGULAR BOX OR ICONS ON LEFT???? IT SHOULD BE SAME AS TOP AND BOTTOM PADDINGS\". The new probe then found the same fault shipped in Halyard's bento lanes (10 left vs 8 top/bottom).",
+  "applies": "all buttons, list rows, cards and chips with a leading tile.",
+  "check": "`node tools/check.mjs` probe `shape.inset-tile` (FAIL): left = top = bottom within 1.5px, radius concentric.",
+  "checkable": true,
+  "source": "founder, 2026-10-12, Buttons II / X posts",
+  "file": "founder/founder-taste.md",
+  "section": "5. Exceptions & judgement calls",
+  "tags": [
+   "founder",
+   "taste",
+   "hero",
+   "nav",
+   "typography",
+   "copy",
+   "icons",
+   "logo",
+   "layout",
+   "product-card",
+   "background",
+   "buttons",
+   "quality-bar"
+  ],
+  "kind": "source",
+  "origin": "founder"
+ },
+ {
   "id": "dos-and-donts.dos-and-donts#1",
   "text": "[T13] Use as few font sizes as possible in a form; differentiate size only between sections (labels/placeholders at one small size) and actions (the button label larger). The good mock uses 12 for both label and placeholder and 32 for the button label; the bad mock mixes 16 (label), 12 (placeholder), 32 (button).",
   "why": "Every extra size is another thing to decode, so the form takes longer to process.",

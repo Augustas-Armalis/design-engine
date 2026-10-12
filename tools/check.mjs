@@ -218,6 +218,7 @@ function evaluate(m, vp, axe) {
   // AI tells
   c.push(mk('interaction.blocked-targets', m.blockedTargets.length ? 'fail' : 'pass', m.blockedTargets.length, '0 controls covered by another layer', m.blockedTargets.slice(0, 6).join('; ')));
   c.push(mk('shape.icon-centring', m.iconOffCentre.length ? 'warn' : 'pass', m.iconOffCentre.length, 'icons centred in their controls within 0.75px', m.iconOffCentre.slice(0, 6).join('; ')));
+  c.push(mk('shape.inset-tile', m.insetTiles?.length ? 'fail' : 'pass', m.insetTiles?.length ?? 0, 'leading tile: left inset = top = bottom (within 1.5px), radius concentric', (m.insetTiles || []).slice(0, 6).join('; ')));
   c.push(mk('shape.radius-ladder', 'info', m.radiusMixedBands.join(',') || 'consistent', '<= 2 radii per control-height band (21-48px)', m.radiusLadder.join(' | ')));
   if (m.loadIn) c.push(mk('motion.load-in', m.loadIn.earlyH1Opacity == null ? 'info' : m.loadIn.lateH1Opacity < 0.99 ? 'fail' : 'info', m.loadIn.earlyH1Opacity < 0.99 ? 'animated' : 'static', 'h1 fully visible after load; founder wants an orchestrated load-in', `h1 opacity at 350ms ${m.loadIn.earlyH1Opacity}, at 4.3s ${m.loadIn.lateH1Opacity}`));
   c.push(mk('ai.banned-phrases', 'info', m.bannedHits.length, '0 cliché phrases', m.bannedHits.join(', ')));
@@ -303,7 +304,32 @@ for (const vp of T.viewports) {
       const dy = iy - cy, d = Math.max(Math.abs(dx), Math.abs(dy));
       if (d > 0.75) off.push(`${(host.getAttribute('aria-label') || host.textContent || host.tagName).trim().replace(/\s+/g, ' ').slice(0, 22) || host.tagName.toLowerCase()} dx ${dx.toFixed(1)} dy ${dy.toFixed(1)}`);
     }
-    return { blockedTargets: blocked, radiusLadder: ladder, radiusMixedBands: mixed, iconOffCentre: off };
+    // inset tiles (founder 2026-10-12: "the left spacing for the card with a rectangular box or icons on the left SHOULD BE
+    // the same as top and bottom paddings"): a control or card that leads with a tile (icon square, avatar, app icon) keeps the
+    // tile's left inset equal to its top and bottom insets, and the tile's radius concentric (outer radius - inset).
+    const insets = [];
+    for (const host of document.querySelectorAll('button, a, [role=button], li, article, div')) {
+      const hr = host.getBoundingClientRect();
+      if (hr.height < 28 || hr.height > 220 || hr.width < hr.height * 1.6) continue; // whole page, not just the fold
+      const hcs = getComputedStyle(host);
+      const framed = parseFloat(hcs.borderTopLeftRadius) > 0 && (hcs.backgroundColor !== 'rgba(0, 0, 0, 0)' || hcs.boxShadow !== 'none' || parseFloat(hcs.borderTopWidth) > 0);
+      if (!framed) continue;
+      const tile = [...host.querySelectorAll('*')].find((el) => {
+        const r = el.getBoundingClientRect(), cs = getComputedStyle(el);
+        return r.left - hr.left >= 0 && r.left - hr.left <= 24 && r.height >= hr.height * 0.55 && r.height < hr.height - 2 && Math.abs(r.width - r.height) <= r.height * 0.15
+          && (cs.backgroundColor !== 'rgba(0, 0, 0, 0)' || cs.backgroundImage !== 'none') && parseFloat(cs.borderTopLeftRadius) > 0;
+      });
+      if (!tile) continue;
+      const r = tile.getBoundingClientRect();
+      const l = r.left - hr.left, t = r.top - hr.top, b = hr.bottom - r.bottom;
+      const k = hr.width / (parseFloat(hcs.width) || hr.width) || 1; // CSS zoom: rects are zoomed, radii are not
+      const outerR = parseFloat(hcs.borderTopLeftRadius) * k, innerR = parseFloat(getComputedStyle(tile).borderTopLeftRadius) * k;
+      const label = (host.getAttribute('aria-label') || host.textContent || host.tagName).trim().replace(/\s+/g, ' ').slice(0, 22);
+      if (Math.max(Math.abs(l - t), Math.abs(l - b), Math.abs(t - b)) > 1.5) insets.push(`${label}: left ${l.toFixed(1)} top ${t.toFixed(1)} bottom ${b.toFixed(1)}`);
+      // concentric only when there is room (outer - inset >= 4px); below that the tile keeps a small radius under the outer one
+      else if (outerR < hr.height / 2 - 1 && (outerR - l >= 4 * k ? Math.abs(innerR - (outerR - l)) > 2.5 * k : innerR > outerR)) insets.push(`${label}: radius ${innerR} not concentric (outer ${outerR} - inset ${l.toFixed(1)} = ${(outerR - l).toFixed(1)})`);
+    }
+    return { blockedTargets: blocked, radiusLadder: ladder, radiusMixedBands: mixed, iconOffCentre: off, insetTiles: insets };
   }));
   await page.addScriptTag({ content: axeSource });
   const axe = await page.evaluate(async () => {

@@ -55,7 +55,7 @@ function Signals({ t }: { t: number }) {
           const I = l.icon
           const hot = found && /412|2\.41|#4821/.test(l.lines[k])
           return (
-            <div key={l.name} className="flex h-9 items-center gap-3 rounded-[8px] bg-white/[0.025] pl-2.5 pr-3 shadow-[inset_0_0_0_1px_var(--rule)]">
+            <div key={l.name} className="flex h-9 items-center gap-3 rounded-[8px] bg-white/[0.025] pl-2 pr-3 shadow-[inset_0_0_0_1px_var(--rule)]">
               <span className="grid size-5 place-items-center rounded-[5px] bg-white/[0.06] text-[#cfcfcf]"><I size={12} strokeWidth={2} /></span>
               <Mono className="w-[58px] text-[var(--sub)]">{l.name}</Mono>
               <div className="relative flex h-[18px] flex-1 items-center overflow-hidden">

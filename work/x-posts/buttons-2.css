@@ -3,7 +3,7 @@
    Every class reads --acc (accent), --acc-2 (accent end), --ink, --canvas. Add .is-hover to show a hover state statically.
    Light theme: wrap in [data-theme=light]. */
 :root { --acc: #4f7dff; --acc-2: #7b5cff; --ink: #f5f7ff; --canvas: #07080c; --ease: cubic-bezier(.22,1,.36,1); }
-.b2 { position: relative; display: inline-flex; align-items: center; justify-content: center; gap: 8px; height: 48px; padding: 0 24px; border-radius: 999px; font: 500 15px/1 "Inter", system-ui, sans-serif; letter-spacing: -0.005em; text-decoration: none; white-space: nowrap; cursor: pointer; border: 0; overflow: hidden; isolation: isolate; transition: transform .16s var(--ease), box-shadow .25s var(--ease), background .25s var(--ease), filter .25s; }
+.b2 { box-sizing: border-box; position: relative; display: inline-flex; align-items: center; justify-content: center; gap: 8px; height: 48px; padding: 0 24px; border-radius: 999px; font: 500 15px/1 "Inter", system-ui, sans-serif; letter-spacing: -0.005em; text-decoration: none; white-space: nowrap; cursor: pointer; border: 0; overflow: hidden; isolation: isolate; transition: transform .16s var(--ease), box-shadow .25s var(--ease), background .25s var(--ease), filter .25s; }
 .b2:active { transform: scale(.975); }
 .b2.sq { border-radius: 14px; }            /* smooth-corner variant: pair with squircle.ts clip for true G2 */
 .b2 svg { width: 16px; height: 16px; flex: none; }
