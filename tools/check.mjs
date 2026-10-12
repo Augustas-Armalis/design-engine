@@ -219,6 +219,8 @@ function evaluate(m, vp, axe) {
   c.push(mk('interaction.blocked-targets', m.blockedTargets.length ? 'fail' : 'pass', m.blockedTargets.length, '0 controls covered by another layer', m.blockedTargets.slice(0, 6).join('; ')));
   c.push(mk('shape.icon-centring', m.iconOffCentre.length ? 'warn' : 'pass', m.iconOffCentre.length, 'icons centred in their controls within 0.75px', m.iconOffCentre.slice(0, 6).join('; ')));
   c.push(mk('shape.inset-tile', m.insetTiles?.length ? 'fail' : 'pass', m.insetTiles?.length ?? 0, 'leading tile: left inset = top = bottom (within 1.5px), radius concentric', (m.insetTiles || []).slice(0, 6).join('; ')));
+  { const q = m.squircle || { total: 0, on: 0, miss: [] }; const share = q.total ? q.on / q.total : 1;
+    c.push(mk('shape.squircle', share >= 0.9 ? 'pass' : 'warn', `${q.on}/${q.total}`, '>= 90% of rounded non-capsule boxes use continuous corners (import squircle.css)', q.miss.join('; '))); }
   c.push(mk('shape.radius-ladder', 'info', m.radiusMixedBands.join(',') || 'consistent', '<= 2 radii per control-height band (21-48px)', m.radiusLadder.join(' | ')));
   if (m.loadIn) c.push(mk('motion.load-in', m.loadIn.earlyH1Opacity == null ? 'info' : m.loadIn.lateH1Opacity < 0.99 ? 'fail' : 'info', m.loadIn.earlyH1Opacity < 0.99 ? 'animated' : 'static', 'h1 fully visible after load; founder wants an orchestrated load-in', `h1 opacity at 350ms ${m.loadIn.earlyH1Opacity}, at 4.3s ${m.loadIn.lateH1Opacity}`));
   c.push(mk('ai.banned-phrases', 'info', m.bannedHits.length, '0 cliché phrases', m.bannedHits.join(', ')));
@@ -327,9 +329,20 @@ for (const vp of T.viewports) {
       const label = (host.getAttribute('aria-label') || host.textContent || host.tagName).trim().replace(/\s+/g, ' ').slice(0, 22);
       if (Math.max(Math.abs(l - t), Math.abs(l - b), Math.abs(t - b)) > 1.5) insets.push(`${label}: left ${l.toFixed(1)} top ${t.toFixed(1)} bottom ${b.toFixed(1)}`);
       // concentric only when there is room (outer - inset >= 4px); below that the tile keeps a small radius under the outer one
-      else if (outerR < hr.height / 2 - 1 && (outerR - l >= 4 * k ? Math.abs(innerR - (outerR - l)) > 2.5 * k : innerR > outerR)) insets.push(`${label}: radius ${innerR} not concentric (outer ${outerR} - inset ${l.toFixed(1)} = ${(outerR - l).toFixed(1)})`);
+      else if (innerR < r.height / 2 - 0.5 && outerR < hr.height / 2 - 1 && (outerR - l >= 4 * k ? Math.abs(innerR - (outerR - l)) > 2.5 * k : innerR > outerR)) insets.push(`${label}: radius ${innerR} not concentric (outer ${outerR} - inset ${l.toFixed(1)} = ${(outerR - l).toFixed(1)})`);
     }
-    return { blockedTargets: blocked, radiusLadder: ladder, radiusMixedBands: mixed, iconOffCentre: off, insetTiles: insets };
+    // squircle coverage (founder 2026-10-12, BN-12): visible rounded non-capsule boxes should use a continuous corner
+    let sqTotal = 0, sqOn = 0; const sqMiss = [];
+    if (CSS.supports('corner-shape', 'superellipse(2)')) for (const el of document.querySelectorAll('body *')) {
+      const r = el.getBoundingClientRect(); if (r.width < 24 || r.height < 24) continue;
+      const cs = getComputedStyle(el), rad = parseFloat(cs.borderTopLeftRadius);
+      if (!(rad >= 6) || rad >= Math.min(r.width, r.height) / 2 - 0.5) continue; // square corners and capsules/circles are exempt
+      if (cs.backgroundColor === 'rgba(0, 0, 0, 0)' && cs.boxShadow === 'none' && !(parseFloat(cs.borderTopWidth) > 0) && cs.backgroundImage === 'none' && cs.overflow === 'visible') continue;
+      sqTotal++;
+      if (/superellipse\((?!1\))|squircle/.test(cs.cornerTopLeftShape || '')) sqOn++;
+      else if (sqMiss.length < 6) sqMiss.push(`${el.tagName.toLowerCase()}${el.className && typeof el.className === 'string' ? '.' + el.className.trim().split(/\s+/)[0] : ''} r${Math.round(rad)}`);
+    }
+    return { blockedTargets: blocked, radiusLadder: ladder, radiusMixedBands: mixed, iconOffCentre: off, insetTiles: insets, squircle: { total: sqTotal, on: sqOn, miss: sqMiss } };
   }));
   await page.addScriptTag({ content: axeSource });
   const axe = await page.evaluate(async () => {

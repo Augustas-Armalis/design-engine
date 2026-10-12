@@ -213,6 +213,8 @@ background: --alpha(var(--primary) / 10%);
 
 ---
 
+**Smooth corners (engine default, founder 2026-10-12):** copy `system/effects/squircle.css` next to `globals.css` and add `@import "./squircle.css";` after the Tailwind import. coss components keep their own radii; the corner shape becomes Apple-continuous, and `rounded-full` pills and avatars stay round. Borders follow `knowledge/web/borders-and-nesting.md`.
+
 ## Migration from shadcn / Radix UI
 
 | shadcn/Radix | coss ui |

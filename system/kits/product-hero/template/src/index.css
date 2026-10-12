@@ -1,6 +1,8 @@
 @import "tailwindcss";
 @import "@fontsource-variable/inter/opsz.css";
 @import "@fontsource-variable/geist-mono";
+/* Apple continuous corners on every rounded box (founder: squircles always); pills and circles stay round */
+@import "./squircle.css";
 /* Bind a house system: copy system/systems/<slug>/theme.css next to this file and import it here.
    WARNING: theme.css redefines --radius-sm/md/lg/xl (6/8/12/16), so Tailwind rounded-md renders 8px. Measure rendered radii. */
 /* @import "./theme.css"; */

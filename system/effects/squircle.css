@@ -1,0 +1,14 @@
+/* Apple continuous corners by default (founder 2026-10-12: "create designs with apple soothing squircles always").
+   Every rounded box gets a superellipse corner; capsules, circles and dots stay true round (Apple capsules are semicircles).
+   superellipse(1.32) at radius x1.2 matches Figma/Apple 60% corner smoothing (fit in system/effects/squircle.ts, NATIVE_FIT).
+   Author radii at squircle scale: a 12px card radius you would have written becomes ~14px, or multiply by var(--sq).
+   Browsers without corner-shape (Safari, Firefox today) fall back to the plain border-radius, which is the old look.
+   For hero objects that must be squircle everywhere (app icon, device frame), use <Squircle> / squircleClipPath() from squircle.ts.
+   Opt out per element with .round or data-round. BN-12 in knowledge/web/borders-and-nesting.md. */
+:root { --sq: 1.2; }
+@supports (corner-shape: superellipse(2)) {
+  :where(*, *::before, *::after) { corner-shape: superellipse(1.32); }
+  :where(.round, [data-round], .rounded-full, [class*="rounded-full"], [class*="rounded-[99"], [class*="rounded-[50%"],
+    [style*="border-radius: 999"], [style*="border-radius: 9999"], [style*="border-radius: 50%"],
+    .b2:not(.b2-app), [class*="p2-"], input[type="radio"], input[type="checkbox"]) { corner-shape: round; }
+}

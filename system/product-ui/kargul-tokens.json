@@ -1,0 +1,204 @@
+{
+  "$description": "Kargul-level SaaS dashboard tokens (light + dark). Numbers are CSS px at 1x unless noted. Provenance per value: M = measured with Playwright getComputedStyle on the public kargulstudio repos run locally (sales-crm flat dark, workflow-editor tactile dark, kanban light), P = pixel-sampled from his gallery or X images, E = estimated from images normalised so a body/nav label renders at 14px (X exports are 1.4-2.2x crops; treat E as +/-10%). Companion spec: knowledge/web/kargul-saas-playbook.md (rules KS-01..KS-32). Study values only: never copy client work, logos or the unlicensed workflow-editor/kanban code.",
+  "$version": "2026-10-12",
+  "$sources": [
+    "corpus/kargul-src/sales-crm (MIT), workflow-editor, kanban (no licence: values only)",
+    "knowledge/benchmarks/kargul-x/borders-census.json (border/ring/nesting census of 5 views)",
+    "knowledge/benchmarks/kargul-x/*.png|jpg (40 X images), posts.json (223 posts)",
+    "knowledge/benchmarks/kargul-deep/gallery (285 case images)",
+    "knowledge/web/kargul-crm-teardown.md, kargul-source-study.md"
+  ],
+
+  "density": {
+    "body": 14, "chrome": 12, "title": 16, "pageTitleOverview": 24,
+    "controlHeight": 30, "fieldHeight": 36, "iconButton": 30, "iconButtonSm": 24,
+    "navRow": 30, "navRowPitchWithGap": 34, "tableHeader": 38, "tableRow": 42, "tableRowPitch": 43,
+    "$note": "M (CRM + kanban). X dashboards normalise to nav rows 33-36 and controls 28-32 (E): one notch looser for marketing shots; app builds use the M values."
+  },
+
+  "shell": {
+    "sidebar": { "width": 254, "widthRange": [234, 272], "collapsed": 60, "rail": 70, "railExpanded": 236, "resizable": [200, 400], "headerHeight": 57, "sectionPadding": 12, "rowGap": 4, "sectionGapPx": 41, "$src": "M CRM 254 / kanban 260 / workflow rail 70-236; E X 234-254" },
+    "header": { "height": 58, "paddingY": 14, "paddingX": 16, "alt": 63, "titleSize": 16, "titleWeight": 500, "$src": "M CRM 58, kanban 63 (16+30+16+1)" },
+    "tabsRow": { "height": 45, "gap": 16, "$src": "M CRM" },
+    "toolbar": { "height": 62, "padding": 16, "pillGap": 8, "$src": "M CRM 62, kanban 63" },
+    "overviewContainer": { "maxWidth": 1200, "paddingTop": 32, "paddingX": 32, "paddingBottom": 40, "headerToContent": 40, "titleToTabs": 18, "rowGap": 20, "gridGap": 16, "$src": "M workflow overview" },
+    "insetAppPanel": { "pageInset": 6, "radius": 10, "$src": "M workflow (page #0c0c0f, panel #111114 inset 6 top/right/bottom)" },
+    "cardGridGap": { "tight": 14, "default": 16, "loose": 20, "$src": "M kanban 14, workflow 16/20; E X 20-24" }
+  },
+
+  "radius": {
+    "ladder": [1, 2, 4, 6, 8, 10, 12, 16, 9999],
+    "meterSegment": 1, "meterTrack": 2, "checkbox": 4, "kbd": 6, "menuItem": 6, "tile24": 6,
+    "field": 8, "navRow": 8, "listRow": 8, "tooltip": 8, "menu": 8, "button_light_square": 10, "segmentedTrack": 10,
+    "popover": 12, "dialog_dark": 12, "dialog_light": 16, "card": 16, "cardEstimatedX": [16, 20],
+    "pill": 9999, "logoTileRatio": 0.25,
+    "nestingRule": "inner = one rung below outer (12>8 at 6px inset, 16>14 at 20px inset, 12>10 at 5px inset); not strict concentric math",
+    "$src": "M all three repos; card 16 in kanban + workflow; E X cards 16-20"
+  },
+
+  "borders": {
+    "width": { "hairline": 1, "chipHalf": 0.5, "focusRing": 2, "cardHalo": 3 },
+    "asInkAlpha": {
+      "$doc": "Border colour expressed as the share of the foreground ink mixed into the surface (c = bg*(1-a) + ink*a). M = computed from census.",
+      "light": { "dividerOnWhite": 0.076, "dividerOnSidebar": 0.056, "cardFooterDivider": 0.098, "controlRing": 0.076, "innerListDivider": 0.026, "cellVerticalDivider": 0.055, "emptyMeterSegment": 0.097 },
+      "dark_flat": { "structureHairline": 0.057, "objectBorder": 0.14, "popupBorder": 0.154, "tagBorder": [0.14, 0.29], "chipBorder": 0.18 },
+      "dark_tactile": { "edgeRing": "0 0 0 1px rgb(0 0 0 / 0.12-0.40) (darker than surface)", "innerHighlight": "inset 0 1px 0 rgb(255 255 255 / 0.04) + inset 0 0 0 1px rgb(253 253 255 / 0.04)", "controlBorder": "1px #000" }
+    },
+    "hex": {
+      "light": { "border": "#ededed", "cardBorder": "#e7e7e9", "hairlineX": "#eeeeee", "rowLineFaint": "#f1f1f1", "cellDivider": "#f2f2f2", "strong": "#e0e0e0" },
+      "dark_flat": { "border": "#232323", "lineStrong": "#393939", "chip": "#414141", "objectBorder": "#363636" },
+      "dark_navy": { "border": "#20232c", "lineStrong": "#343844" }
+    },
+    "methodShare": {
+      "$doc": "How surfaces separate, counted per surface in the default views (borders-census.json).",
+      "crm_dark_flat": { "fill+border": 33, "fill+ring+drop": 11, "fill": 4 },
+      "workflow_dark_tactile": { "fill+ring+drop": 24, "ring+drop": 24, "border+ring+drop": 10, "fill": 11 },
+      "kanban_light": { "ring": 30, "ring+drop": 28, "fill": 6, "fill+ring": 4 }
+    },
+    "where": {
+      "border": "structural edges only: sidebar right, header/tabs/toolbar bottom, table row bottoms, footer top, sheet left; plus fields and tags",
+      "ring": "every floating object in light (controls, cards via 3px halo, popovers) as box-shadow so it never shifts layout",
+      "fill": "state and hierarchy: active nav, selected row, header band of a card, segmented track, muted chips",
+      "shadow": "only floating layers (cards light halo, popovers, dialogs) and tactile controls"
+    }
+  },
+
+  "nesting": {
+    "$doc": "Insets between a container and its nested surface (M from census unless E).",
+    "cardPadding": 16, "cardPaddingLarge": 20, "statCardPadding": "19/20/18 (top/x/bottom)",
+    "cardHeaderBandHeight": 68, "cardHeaderBandPadding": "14 18", "cardHeaderFlush": true,
+    "cardFooterDividerFlush": true, "footerChipInset": 16, "footerChipGap": 8,
+    "kanbanCardInsetInColumn": 16, "cardStackGap": 14,
+    "sidebarRowInset": 12, "countChipInsetRight": 8,
+    "nodeShellPadding": "5 5 7", "nodeOuterRadius": 12, "nodeInnerRadius": 10,
+    "listInsideCard": { "outerRadius": 16, "padding": 20, "innerRadius": 14 },
+    "segmentedTrack": { "trackRadius": 9, "trackPadding": 1, "itemGap": 2 },
+    "segmentedTrackLight": { "trackRadius": 10, "trackPadding": 0, "indicatorRadius": 10, "indicator": "white + 1px ring" },
+    "popupInset": { "popover12": 6, "menu8": 4 },
+    "tileInsetRule": "leading tile: left inset = top inset = bottom inset (founder rule; check.mjs shape.inset-tile)",
+    "kpiStripCellPadding": { "x": 16, "y": 16, "estimatedX": [16, 22] },
+    "tableEdgeCellPadding": 12, "tableEdgeInCard": 16
+  },
+
+  "type": {
+    "family": { "ui": "Geist (variable) or Inter", "mono": "Geist Mono (numbers in X dashboards)", "display": "Inter Display Medium (KPI 40px, workflow)" },
+    "tuples": {
+      "body": { "size": 14, "lh": 14, "weight": 400, "tracking": 0 },
+      "bodyLight": { "size": 14, "lh": "130%", "weight": 500, "tracking": "-0.02em" },
+      "nav": { "size": 14, "lh": 14, "weight": 500 },
+      "chrome": { "size": 12, "lh": 12, "weight": 400 },
+      "button": { "size": 12, "lh": 12, "weight": 500 },
+      "eyebrow": { "size": 12, "lh": 12, "weight": 500, "tracking": "1px", "transform": "uppercase" },
+      "eyebrowLight": { "size": 12, "family": "mono", "tracking": "-0.03em" },
+      "title": { "size": 16, "lh": 16, "weight": 600 },
+      "pageTitle": { "size": 16, "weight": 500 },
+      "overviewTitle": { "size": 24, "lh": 32, "weight": 600 },
+      "overviewSub": { "size": 14, "lh": 24, "opacity": 0.6 },
+      "kpiValue": { "size": 28, "lh": 28, "weight": 600, "tracking": "-0.03em", "numeric": "tabular" },
+      "kpiValueDisplay": { "size": 40, "lh": 48, "weight": 500, "tracking": "-0.2px", "unitSize": 24, "unitOpacity": 0.5 },
+      "kpiValueMonoX": { "size": [24, 28], "family": "mono", "$src": "E X 151/170" },
+      "kpiLabel": { "size": 14, "weight": 500, "color": "muted" },
+      "delta": { "size": 12, "weight": 600, "pillHeight": 20, "minWidth": 56 },
+      "axisTick": { "size": 12, "opacity": 0.3 },
+      "tooltipValue": { "size": 14, "weight": 550 }, "tooltipMeta": { "size": 11, "opacity": 0.5 }
+    },
+    "displayTracking": { "16": "0%", "36": "-3%", "100+": "-5% to -6% (never past -6%)", "$src": "Marcel X post 2109273659038650501" },
+    "weights": [400, 500, 600], "neverAbove": 600
+  },
+
+  "icons": {
+    "set": "one outline set (Untitled UI exports in his repos; Lucide per founder rule)",
+    "size": { "inText12Button": 12, "nav": 14, "iconButton": 14, "cell": 14, "close": 16, "checkbox": 16, "tactile": 18, "rail": 20, "statBadgeGlyph": 22 },
+    "stroke": { "crm14": 1.4, "kanban14": 1.167, "workflow18": 1.5, "lucide16": 1.5 },
+    "ratioIconToText": [0.85, 1.15],
+    "tiles": { "kpiTile": 24, "cardHeaderTile": [16, 24, 28], "statBadge": 40, "badgeRadiusRatio": 0.275, "logoTile": [24, 32, 50, 56], "fill": "solid colour or gloss gradient, white filled glyph" }
+  },
+
+  "light": {
+    "page": "#ffffff", "pageAlt": "#fafafa", "sidebar": "#fafafa", "sidebarWarm": "#f0efeb",
+    "card": "#ffffff", "cardHeaderBand": "#fafafa", "tableHead": "#f7f7f7", "tableHeadAlt": "#fcfcfc",
+    "muted": "#f0f0f0", "hoverFill": "rgba(18,18,18,0.04)", "activeFill": "rgba(18,18,18,0.05)", "fieldHover": "#f7f7f7",
+    "rowSelected": "#f1effc", "navActive": "#ffffff (white pill + 1px ring + 1-2px lift) or tint of accent",
+    "fg": "#121212", "muted_fg": "#757575", "subtle": "#a1a1a1", "icon": "#aaaaaa",
+    "border": "#ededed", "cardBorder": "#e7e7e9",
+    "primary": "#121212", "primaryHover": "#2b2b2b",
+    "info": "#0d5fea", "brand": "#2575ff", "success": "#47ba39", "warning": "#ff6e00", "danger": "#ef1111",
+    "chart": { "c1": "#328ff9", "c2": "#f49515", "c3": "#2db374", "c4": "#5954fe", "empty": "#e8e8e8", "areaTint": "#e6f3fd", "greenTint": "#c0ead6", "orangeTint": "#fee8bf", "selectedBand": "#def5eb" },
+    "chipTints": { "urgent": "#fff0ec", "medium": "#ffdcab", "low": "#eaf5f1" },
+    "shadows": {
+      "ring": "0 0 0 1px #ededed",
+      "control": "0 1px 2px 0 rgb(0 0 0 / 0.08), 0 0 0 1px #ededed",
+      "card": "0 2px 4px 0 rgb(35 35 35 / 0.03), 0 1px 2px 0 rgb(35 35 35 / 0.04), 0 0 0 3px rgb(205 205 205 / 0.12)",
+      "cardHover": "0 2px 4px 0 rgb(35 35 35 / 0.04), 0 1px 2px 0 rgb(35 35 35 / 0.05), 0 4px 12px 0 rgb(35 35 35 / 0.06), 0 0 0 3px rgb(205 205 205 / 0.18)",
+      "cardLift": "0 0 0 1px rgb(37 117 255 / 0.24), 0 0 0 4px rgb(37 117 255 / 0.16), 0 2px 12px rgb(35 35 35 / 0.08), 0 6px 16px rgb(35 35 35 / 0.12)",
+      "focus": "0 0 0 1px #0d5fea, 0 0 0 4px rgb(13 95 234 / 0.14)",
+      "popover": "0 0 0 1px #ededed, 0 4px 12px rgb(0 0 0 / 0.06), 0 12px 32px rgb(0 0 0 / 0.08)",
+      "scrim": "rgb(18 18 18 / 0.4), no blur"
+    },
+    "$src": "M kanban :root + census; P X 151/170/101/001/119 samples"
+  },
+
+  "dark": {
+    "flat": {
+      "page": "#161616", "sidebar": "#171717", "sidebarBlock": "#181818", "card": "#1b1d20", "control": "#1e1e1e", "raised": "#2a2a2a", "hover": "#333333",
+      "border": "#232323", "lineStrong": "#393939", "track": "#3a3a3a",
+      "fg": "#f9fbff", "soft": "#a4a4a4", "muted_fg": "#7f7f7f", "subtle": "#676767", "faint": "#454545", "icon": "#d0d4dd",
+      "primary": "#4124fb", "primaryHover": "#4b30ff", "success": "#22c55e", "warning": "#fbbf24", "danger": "#f97373", "trend": "#00b562", "trendMuted": "#395e4d", "status": "#16c89e",
+      "shadows": {
+        "control": "0 0 0 1px rgba(0,0,0,.4), inset 0 1px 0 rgba(255,255,255,.10), inset 0 0 0 1px rgba(255,255,255,.06)",
+        "primary": "0 4px 4px rgba(42,42,42,.32), 0 0 0 1px #0e0e0e, inset 0 4px 6px rgba(255,255,255,.20), inset 0 0 0 1px rgba(255,255,255,.15), inset 0 -8px 14px rgba(0,0,0,.15)",
+        "overlay": "0 16px 40px rgba(0,0,0,.5), 0 0 0 1px #0e0e0e (+ 1px #393939 border)",
+        "scrim": "rgba(0,0,0,.6) + blur(6px)"
+      },
+      "$src": "M sales-crm"
+    },
+    "tactile": {
+      "page": "#0c0c0f", "app": "#111114", "canvas": "#0e0e12", "card": "#141417", "cardHeaderBand": "#18181c", "innerList": "#18181c", "field": "rgba(255,255,255,.02)", "raisedFrom": "#1b1b20", "raisedTo": "#27272e", "track": "#121215", "tooltip": "#1f1f25", "tabActive": "#222227",
+      "text": { "primary": "#ffffff", "secondary": "rgba(255,255,255,.6)", "tertiary": "rgba(255,255,255,.5)", "axis": "rgba(255,255,255,.3)" },
+      "accent": "#5016ff", "accentHover": "#5b25ff", "focus": "#7f59f0", "success": "#1fc16b", "danger": "#f05959",
+      "chartLineStops": ["#4961fc", "#7649fc", "#bd49fc", "#12a8ff"],
+      "shadows": {
+        "card": "0 2px 4px rgb(0 0 0 / 0.16), 0 0 0 1px rgb(0 0 0 / 0.12)",
+        "bezel": "inset 0 1px 0 rgb(255 255 255 / 0.04), inset 0 0 0 1px rgb(253 253 255 / 0.04) (separate pointer-events-none overlay, last child)",
+        "innerList": "0 2px 4px -1px rgb(0 0 0 / .08), 0 1px 1px -1px rgb(0 0 0 / .12), 0 0 0 1px rgb(0 0 0 / .32), inset 0 1px 0 rgb(255 255 255 / .04), inset 0 0 0 1px rgb(255 255 255 / .04)",
+        "tooltip": "0 8px 16px rgb(0 0 0 / .32), 0 0 0 1px rgb(0 0 0 / .32), inset 0 1px 0 rgb(255 255 255 / .06)"
+      },
+      "$src": "M workflow-editor; P X 096"
+    },
+    "navy": { "page": "#0e121b", "border": "#20232c", "lineStrong": "#343844", "$src": "P gallery copecart-01" }
+  },
+
+  "components": {
+    "kpiStrip": { "construction": "one card, N equal cells split by 1px vertical hairlines", "cells": [3, 5], "height": [118, 140], "cellPadding": 16, "labelRow": "12-16px icon + 14/500 muted label", "valueGapFromLabel": [12, 20], "delta": "arrow/triangle glyph + 12-14 coloured % + muted 'vs last month'", "$src": "E X 170/101/151, P gallery uniops-02, zeroleaks-01" },
+    "kpiCardBanded": { "headerBand": "#fafafa, 52-64 tall, hairline below, 24-32 icon tile + 14-16/600 title + kebab or arrow button", "body": "white, 28px value + delta line", "radius": [16, 20], "$src": "E X 119/151" },
+    "kpiTile": { "radius": 16, "padding": 16, "gap": 12, "value": "28/600/-0.03em tabular", "shadow": "light.card", "$src": "M kanban overview" },
+    "statCardDark": { "minHeight": 145, "radius": 16, "padding": "19 20 18", "gap": 20, "badge": 40, "value": "Inter Display 40/48/500", "deltaPill": "20h, 12/600, 20% tint", "hover": "top glow 600ms + label 60%->100% in 400ms", "$src": "M workflow" },
+    "chartCard": { "minHeight": 399, "headerHeight": 68, "axisWidth": 28, "tickSize": 12, "baselineDash": "3 6 @10%", "guideDash": "2 4 @16%", "lineWidth": [1.5, 3], "endDot": "r4, surface fill, 2px stroke", "tooltipOffset": 12, "tooltipRadius": 8, "drawMs": 900, "areaFadeMs": 400, "$src": "M workflow growth chart" },
+    "barChartLight": { "bar": "tint fill + 4-5px solid cap of the series colour, top radius 6", "pairGap": 5, "selectedBucket": "series-tint column band + solid bars + coloured x label", "referenceLines": "dashed, series colour, labelled 'Avg. view 392' at left", "grid": "dashed both axes", "zeroBuckets": "ghost bars #e8e8e8-ish at 2-4px", "$src": "E X 101/170" },
+    "distributionBar": { "track": 6, "radius": 9999, "labelCol": 96, "countCol": 24, "$src": "M kanban" },
+    "segmentedMeter": { "height": 14, "padding": 2, "gap": 2, "segments": { "table": 17, "list": 60, "sheet": 63 }, "segmentRadius": 1, "colourRule": "first third danger, next third warning, rest success", "$src": "M CRM" },
+    "stackedBreakdownBar": { "height": [24, 32], "segmentGap": 4, "outerRadius": 9999, "remainder": "#e8e8e8", "legendRows": "8px square dot r2 + label + mono value + delta", "$src": "E X 170" },
+    "stepsProgress": { "dashes": 4, "dashWidth": 40, "height": 4, "gap": 8, "done": "#25ad61", "todo": "#e8e8e8", "label": "2/4", "$src": "P gallery uniops-02" },
+    "table": { "header": 38, "row": 42, "pitch": 43, "cellPadX": 12, "headerText": "12/400 subtle (or uppercase 12 +1px in light analytics)", "selectedRow": "solid card tint (#1b1d20 dark / #f1effc light)", "hover": "card @60% dark / ink 4% light", "verticalDividers": "only in spreadsheet-style CRM views (#f2f2f2)", "maxFilledChipsPerRow": 1 },
+    "detailSheet": { "width": [480, 560], "header": 56, "footer": 62, "sectionPadding": 20, "kvLabelCol": "~35%", "kvRowHeight": [32, 34] },
+    "inlineDetailPanel": { "width": [360, 420], "border": "1px left hairline", "radius": "shares the app frame radius", "$src": "E X 001-2/025-2" },
+    "filterPill": { "height": 30, "split": "label 9px pad | 1px divider | value 9px pad + 12px chevron", "$src": "M CRM" },
+    "segmentedTabs": { "height": 30, "indicator": "layoutId spring 0.3s bounce 0", "$src": "M kanban" },
+    "emptyState": { "tableRow": 120, "boardTile": 130, "iconTile": 40, "titleSize": 14, "bodySize": 12, "padding": 48 },
+    "toast": { "light": "ink pill #121212, white 14/500, r12, 14x10 pad, bottom-centre", "error": "red pill with Retry chip (X 001-0)" }
+  },
+
+  "motion": {
+    "hover": "150ms cubic-bezier(.25,1,.5,1) on background-color,color,box-shadow",
+    "chevron": "200ms rotate 180",
+    "popover": "200 in / 150 out, scale .97, origin from trigger",
+    "dialog": "250 in / 200 out, scale .95",
+    "sheet": "350 in / 250 out, translateX",
+    "collapse": "200-300ms cubic-bezier(.7,0,0,1) on width or grid-template-rows",
+    "layout": "spring 0.3s bounce 0 (motion layoutId)",
+    "chartDraw": "900ms pathLength; area 400ms fade; re-key on filter change",
+    "digitRoll": "per-digit slot roll (sliding-number) for KPI changes",
+    "press": "none in flat tools; scale .98 only in tactile/brand pills",
+    "reducedMotion": "MotionConfig reducedMotion='user'; gate overlay scale/translate"
+  }
+}

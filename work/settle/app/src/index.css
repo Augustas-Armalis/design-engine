@@ -1,0 +1,89 @@
+@import "tailwindcss";
+@import "@fontsource-variable/geist";
+@import "@fontsource-variable/geist-mono";
+/* Apple continuous corners on every rounded box (founder 2026-10-12); pills and circles stay round */
+@import "./squircle.css";
+
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+@theme {
+  --font-sans: "Geist Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Geist Mono Variable", ui-monospace, monospace;
+}
+
+/* Settle roles. Edges are alpha ink (BN-02), drawn as box-shadow rings (BN-03), one edge per box (BN-04).
+   Three text sizes 12/14/16 + one numeral size 28 (Kargul floor). One control height: 30px. */
+:root {
+  color-scheme: light;
+  --canvas: #f4f4f2;          /* shell behind the panel (warm grey) */
+  --panel: #ffffff;           /* the work area */
+  --card: #ffffff;
+  --sunk: #f7f7f6;            /* recessed: table header, tracks, inputs at rest */
+  --hover: rgba(20, 20, 18, 0.035);
+  --select: rgba(20, 20, 18, 0.055);
+  --ink: #161615;
+  --sub: #5f5f5b;             /* 6.3:1 on white */
+  --soft: #6b6b66;            /* 5.3:1 on white, 4.8:1 on the canvas */
+  --faint: #a3a39e;           /* icons, never text under 16px */
+  --line: rgba(20, 20, 18, 0.075);   /* ring (BN-02 default) */
+  --line-2: rgba(20, 20, 18, 0.11);  /* strong ring: controls */
+  --div: rgba(20, 20, 18, 0.06);     /* dividers, never darker than the ring (BN-11) */
+  --accent: #0b7a5c;          /* money teal */
+  --accent-ink: #ffffff;
+  --accent-soft: rgba(11, 122, 92, 0.1);
+  --green: #1f9d55; --amber: #c27803; --red: #d93a3a; --blue: #2f6fe4; --violet: #7a5af5;
+  --primary: #161615; --primary-ink: #fff;
+  --sh-ring: 0 0 0 1px var(--line);
+  --sh-control: 0 0 0 1px var(--line-2), 0 1px 2px rgba(20, 20, 18, 0.06);
+  --sh-card: 0 0 0 1px var(--line), 0 1px 2px rgba(20, 20, 18, 0.035), 0 2px 8px -4px rgba(20, 20, 18, 0.05);
+  --sh-panel: 0 0 0 1px rgba(20, 20, 18, 0.07), 0 1px 3px rgba(20, 20, 18, 0.04);
+  --sh-pop: 0 0 0 1px rgba(20, 20, 18, 0.08), 0 4px 12px -2px rgba(20, 20, 18, 0.08), 0 16px 40px -8px rgba(20, 20, 18, 0.14);
+  --sh-primary: 0 0 0 1px #161615, inset 0 1px 0 rgba(255, 255, 255, 0.16), 0 1px 2px rgba(20, 20, 18, 0.22);
+  --focus: 0 0 0 1px var(--accent), 0 0 0 4px rgba(11, 122, 92, 0.18);
+}
+[data-theme=dark] {
+  color-scheme: dark;
+  --canvas: #0c0c0d;
+  --panel: #131315;
+  --card: #18181b;
+  --sunk: #161618;
+  --hover: rgba(255, 255, 255, 0.035);
+  --select: rgba(255, 255, 255, 0.06);
+  --ink: #ededec;
+  --sub: #a3a3a0;
+  --soft: #8b8b88;
+  --faint: #616160;
+  --line: rgba(255, 255, 255, 0.075);
+  --line-2: rgba(255, 255, 255, 0.1);
+  --div: rgba(255, 255, 255, 0.055);
+  --accent: #3fc79a;
+  --accent-ink: #06231a;
+  --accent-soft: rgba(63, 199, 154, 0.12);
+  --green: #46c37b; --amber: #e9a23b; --red: #f06a6a; --blue: #6b9cff; --violet: #a28cff;
+  --primary: #ededec; --primary-ink: #111;
+  /* dark lifts with a fill step + top highlight (BN-10), drops are black and only on floating layers */
+  --sh-ring: 0 0 0 1px var(--line);
+  --sh-control: 0 0 0 1px var(--line-2), inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  --sh-card: 0 0 0 1px var(--line), inset 0 1px 0 rgba(255, 255, 255, 0.035);
+  --sh-panel: 0 0 0 1px rgba(255, 255, 255, 0.06), inset 0 1px 0 rgba(255, 255, 255, 0.03);
+  --sh-pop: 0 0 0 1px rgba(255, 255, 255, 0.09), inset 0 1px 0 rgba(255, 255, 255, 0.05), 0 16px 40px -8px rgba(0, 0, 0, 0.6);
+  --sh-primary: 0 0 0 1px #ededec, inset 0 -1px 0 rgba(0, 0, 0, 0.12);
+  --focus: 0 0 0 1px var(--accent), 0 0 0 4px rgba(63, 199, 154, 0.2);
+}
+
+html, body { background: var(--canvas); }
+body { color: var(--ink); font-family: var(--font-sans); font-size: 14px; line-height: 20px; font-weight: 450; letter-spacing: -0.006em; -webkit-font-smoothing: antialiased; }
+:focus-visible { outline: none; box-shadow: var(--focus) !important; }
+.cmd-input:focus-visible { box-shadow: none !important; }
+.tnum { font-variant-numeric: tabular-nums; }
+.mono { font-family: var(--font-mono); font-size: 12px; letter-spacing: 0; }
+button { cursor: default; }
+::selection { background: var(--accent-soft); }
+
+/* state motion only (Kargul: 150ms power3-out state, 200ms overlays) */
+.st { transition: background-color 150ms cubic-bezier(.215,.61,.355,1), color 150ms cubic-bezier(.215,.61,.355,1), box-shadow 150ms cubic-bezier(.215,.61,.355,1), opacity 150ms; }
+
+/* Base UI popups */
+.pop { transform-origin: var(--transform-origin); transition: opacity 160ms cubic-bezier(.215,.61,.355,1), transform 160ms cubic-bezier(.215,.61,.355,1); }
+.pop[data-starting-style], .pop[data-ending-style] { opacity: 0; transform: scale(0.97) translateY(-2px); }
+@media (prefers-reduced-motion: reduce) { .pop, .st { transition: none; } }
