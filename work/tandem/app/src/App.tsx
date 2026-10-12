@@ -9,6 +9,7 @@ import Hero from './Hero'
 import Product from './Product'
 import Approval from './Approval'
 import Post from './Post'
+import XPost from './XPost'
 import { Showcase } from './ui'
 
 function ComponentPage() {
@@ -30,7 +31,7 @@ export default function App() {
   useEffect(() => { const f = () => setRoute(location.hash); addEventListener('hashchange', f); return () => removeEventListener('hashchange', f) }, [])
   return (
     <MotionConfig reducedMotion="user">
-      {route === '#/x' ? <Post /> : route === '#/component' ? <ComponentPage /> : route === '#/product' ? <Product /> : <Hero />}
+      {route.startsWith('#/x3-') ? <XPost n={Number(route.slice(5))} /> : route === '#/x' ? <Post /> : route === '#/component' ? <ComponentPage /> : route === '#/product' ? <Product /> : <Hero />}
     </MotionConfig>
   )
 }

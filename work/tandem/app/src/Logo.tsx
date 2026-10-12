@@ -3,6 +3,7 @@
 //   h  Halves: two half discs side by side, stepping down past each other; leader and follower
 // ?mark=h on the URL switches the whole build so both can be judged in place. The agent avatar in the product is the mark.
 import { useId } from 'react'
+import { Bot } from 'lucide-react'
 
 export type MarkVariant = 't' | 'h'
 export const markVariant = (): MarkVariant => (new URLSearchParams(location.search).get('mark') === 'h' ? 'h' : 't')
@@ -26,11 +27,15 @@ export function Mark({ size = 21, variant = markVariant(), className = '' }: { s
   )
 }
 
-/** the agent's avatar: the T-cut is already a disc, so it is the avatar; the halves sit white inside an ink disc */
+/** the agent's avatar (founder: "replace with some icon in square box gray, just nicer"): a soft grey rounded tile with a
+ *  Lucide glyph, a hairline ring and a lit top edge; radius scales with the tile so 14px and 28px read the same */
 export function AgentMark({ size = 22 }: { size?: number }) {
-  const v = markVariant()
-  if (v === 't') return <Mark size={size} variant="t" className="text-[var(--ink)]" />
-  return <span className="grid shrink-0 place-items-center rounded-full bg-[var(--ink)] text-white" style={{ width: size, height: size }}><Mark size={Math.round(size * 0.56)} variant="h" /></span>
+  return (
+    <span className="grid shrink-0 place-items-center bg-[linear-gradient(180deg,#f7f7f7,#ececec)] text-[#3f3f3f] shadow-[inset_0_0_0_1px_rgba(0,0,0,0.07),inset_0_1px_0_rgba(255,255,255,0.9)]"
+      style={{ width: size, height: size, borderRadius: Math.max(4, Math.round(size * 0.28)) }}>
+      <Bot size={Math.round(size * 0.6)} strokeWidth={size < 18 ? 2 : 1.75} />
+    </span>
+  )
 }
 
 /** nav lockup measured to the logo-craft pairing spec: 20px wordmark (cap ~14.5px), mark 1.43x cap = 21px, gap 0.28x = 6px */

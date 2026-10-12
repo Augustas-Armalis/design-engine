@@ -53,6 +53,8 @@ export default function Post() {
   return (
     <main className="relative mx-auto grid h-[900px] w-[1440px] place-items-center overflow-hidden bg-[#fafafa]">
       <h1 className="sr-only">Approval Request, a Tandem component (sample data)</h1>
+      {/* #post-box: the tight frame recorded for the post video (component + air, the cursor's rest stays inside) */}
+      <div id="post-box" className="bg-[#fafafa] px-[130px] pb-[160px] pt-[110px]">
       <div ref={stage} className="relative">
         <motion.div style={{ zoom: ZOOM }} initial={still ? false : { opacity: 0, y: 14, filter: 'blur(8px)' }} animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }} transition={{ duration: 0.9, ease }}>
           <div className="rounded-[20px] bg-[#f0f0f0] p-1 shadow-[0_0_0_1px_rgba(0,0,0,0.035)]">
@@ -72,6 +74,7 @@ export default function Post() {
             </motion.div>
           </motion.div>
         )}
+      </div>
       </div>
     </main>
   )
