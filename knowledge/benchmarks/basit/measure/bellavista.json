@@ -1,0 +1,1332 @@
+{
+ "id": "bellavista",
+ "url": "https://bellavista.framer.media/",
+ "date": "2026-10-11",
+ "hero": {
+  "bgImages": [
+   {
+    "n": "div",
+    "r": [
+     0,
+     0,
+     1440,
+     900
+    ],
+    "bg": "url(\"https://framerusercontent.com/images/Zc51XICRMXtLRbug4tGLcbo.gif\")",
+    "size": "120px 120px",
+    "blend": "normal",
+    "op": "0.1",
+    "filter": "none"
+   }
+  ],
+  "filters": [
+   {
+    "n": "img",
+    "r": [
+     0,
+     0,
+     1440,
+     900
+    ],
+    "filter": "brightness(0.7)",
+    "backdrop": "none",
+    "bg": "rgba(0, 0, 0, 0)",
+    "op": "1"
+   },
+   {
+    "n": "span",
+    "r": [
+     444,
+     200,
+     77,
+     108
+    ],
+    "filter": "blur(0px)",
+    "backdrop": "none",
+    "bg": "rgba(0, 0, 0, 0)",
+    "op": "1"
+   },
+   {
+    "n": "span",
+    "r": [
+     521,
+     200,
+     26,
+     108
+    ],
+    "filter": "blur(0px)",
+    "backdrop": "none",
+    "bg": "rgba(0, 0, 0, 0)",
+    "op": "1"
+   },
+   {
+    "n": "span",
+    "r": [
+     547,
+     200,
+     71,
+     108
+    ],
+    "filter": "blur(0px)",
+    "backdrop": "none",
+    "bg": "rgba(0, 0, 0, 0)",
+    "op": "1"
+   },
+   {
+    "n": "span",
+    "r": [
+     619,
+     200,
+     78,
+     108
+    ],
+    "filter": "blur(0px)",
+    "backdrop": "none",
+    "bg": "rgba(0, 0, 0, 0)",
+    "op": "1"
+   },
+   {
+    "n": "span",
+    "r": [
+     697,
+     200,
+     83,
+     108
+    ],
+    "filter": "blur(0px)",
+    "backdrop": "none",
+    "bg": "rgba(0, 0, 0, 0)",
+    "op": "1"
+   },
+   {
+    "n": "span",
+    "r": [
+     780,
+     200,
+     75,
+     108
+    ],
+    "filter": "blur(0px)",
+    "backdrop": "none",
+    "bg": "rgba(0, 0, 0, 0)",
+    "op": "1"
+   },
+   {
+    "n": "span",
+    "r": [
+     856,
+     200,
+     66,
+     108
+    ],
+    "filter": "blur(0px)",
+    "backdrop": "none",
+    "bg": "rgba(0, 0, 0, 0)",
+    "op": "1"
+   },
+   {
+    "n": "span",
+    "r": [
+     921,
+     200,
+     74,
+     108
+    ],
+    "filter": "blur(0px)",
+    "backdrop": "none",
+    "bg": "rgba(0, 0, 0, 0)",
+    "op": "1"
+   },
+   {
+    "n": "span",
+    "r": [
+     394,
+     308,
+     75,
+     108
+    ],
+    "filter": "blur(0px)",
+    "backdrop": "none",
+    "bg": "rgba(0, 0, 0, 0)",
+    "op": "1"
+   },
+   {
+    "n": "span",
+    "r": [
+     470,
+     308,
+     66,
+     108
+    ],
+    "filter": "blur(0px)",
+    "backdrop": "none",
+    "bg": "rgba(0, 0, 0, 0)",
+    "op": "1"
+   },
+   {
+    "n": "span",
+    "r": [
+     535,
+     308,
+     63,
+     108
+    ],
+    "filter": "blur(0px)",
+    "backdrop": "none",
+    "bg": "rgba(0, 0, 0, 0)",
+    "op": "1"
+   },
+   {
+    "n": "span",
+    "r": [
+     598,
+     308,
+     63,
+     108
+    ],
+    "filter": "blur(0px)",
+    "backdrop": "none",
+    "bg": "rgba(0, 0, 0, 0)",
+    "op": "1"
+   },
+   {
+    "n": "span",
+    "r": [
+     661,
+     308,
+     75,
+     108
+    ],
+    "filter": "blur(0px)",
+    "backdrop": "none",
+    "bg": "rgba(0, 0, 0, 0)",
+    "op": "1"
+   },
+   {
+    "n": "span",
+    "r": [
+     736,
+     308,
+     75,
+     108
+    ],
+    "filter": "blur(0px)",
+    "backdrop": "none",
+    "bg": "rgba(0, 0, 0, 0)",
+    "op": "1"
+   },
+   {
+    "n": "span",
+    "r": [
+     812,
+     308,
+     26,
+     108
+    ],
+    "filter": "blur(0px)",
+    "backdrop": "none",
+    "bg": "rgba(0, 0, 0, 0)",
+    "op": "1"
+   },
+   {
+    "n": "span",
+    "r": [
+     838,
+     308,
+     71,
+     108
+    ],
+    "filter": "blur(0px)",
+    "backdrop": "none",
+    "bg": "rgba(0, 0, 0, 0)",
+    "op": "1"
+   },
+   {
+    "n": "span",
+    "r": [
+     909,
+     308,
+     61,
+     108
+    ],
+    "filter": "blur(0px)",
+    "backdrop": "none",
+    "bg": "rgba(0, 0, 0, 0)",
+    "op": "1"
+   },
+   {
+    "n": "span",
+    "r": [
+     970,
+     308,
+     75,
+     108
+    ],
+    "filter": "blur(0px)",
+    "backdrop": "none",
+    "bg": "rgba(0, 0, 0, 0)",
+    "op": "1"
+   }
+  ],
+  "blends": [],
+  "transforms": [
+   {
+    "n": "div",
+    "r": [
+     1397,
+     697,
+     6,
+     6
+    ],
+    "t": "matrix(0.707107, 0.707107, -0.707107, 0.707107, 0, 0)",
+    "persp": "none",
+    "op": "1"
+   },
+   {
+    "n": "div",
+    "r": [
+     1397,
+     697,
+     6,
+     6
+    ],
+    "t": "matrix(0.707107, -0.707107, 0.707107, 0.707107, 0, 0)",
+    "persp": "none",
+    "op": "1"
+   },
+   {
+    "n": "p",
+    "r": [
+     1350,
+     861,
+     0,
+     0
+    ],
+    "t": "matrix(0.001, 0, 0, 0.001, 0, 0)",
+    "persp": "none",
+    "op": "1"
+   }
+  ],
+  "perspective": [],
+  "media": [
+   {
+    "tag": "IMG",
+    "n": "div",
+    "r": [
+     0,
+     0,
+     1440,
+     900
+    ],
+    "src": "https://framerusercontent.com/images/CuqtmnTZ5R7MUFjqqKLzxOuE.jpg?width=3117&height=2102",
+    "fit": "cover",
+    "radius": "0px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": [
+     1439,
+     971
+    ]
+   },
+   {
+    "tag": "IMG",
+    "n": "div",
+    "r": [
+     270,
+     1417,
+     440,
+     600
+    ],
+    "src": "https://framerusercontent.com/images/3A53BTeppyXv4kXscSfBwXGHCs.png?scale-down-to=2048&width=1808&height=2400",
+    "fit": "cover",
+    "radius": "0px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": [
+     440,
+     584
+    ]
+   },
+   {
+    "tag": "IMG",
+    "n": "div",
+    "r": [
+     730,
+     1417,
+     440,
+     600
+    ],
+    "src": "https://framerusercontent.com/images/7dMnmPMkcRWqcYHo12Ex4K7LQY.png?scale-down-to=2048&width=1808&height=2400",
+    "fit": "cover",
+    "radius": "0px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": [
+     440,
+     584
+    ]
+   },
+   {
+    "tag": "VIDEO",
+    "n": "div",
+    "r": [
+     1278,
+     680,
+     142,
+     110
+    ],
+    "src": "https://framerusercontent.com/assets/WcH77Lx8QMPsgqbnolhjli6oMN8.mp4",
+    "fit": "cover",
+    "radius": "0px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": null
+   }
+  ],
+  "svgNoise": 0,
+  "turb": [],
+  "canvas": [],
+  "radii": [
+   "Desktop 142x36 r=10px bg=rgb(0, 0, 0) bd=0px rgb(0, 0, 238) sh=rgba(0, 0, 0, 0.3) 0px 0px 20px 5px",
+   "Desktop 142x110 r=5px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 238) sh=none",
+   "Backdrop 138x36 r=10px bg=rgb(255, 255, 255) bd=0px rgb(0, 0, 238) sh=rgba(0, 0, 0, 0.17) 0px 0.602187px 1.56569px -1.5px, rgba(0, 0, 0, 0.14) 0px 2.28853px 5.95019px -3px, rgba(0, 0, 0, 0.02) 0px 10px 26px -4.",
+   "Bottom 140x38 r=11px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 238) sh=rgb(0, 0, 0) 0px 0px 0px 1px inset",
+   "Border 140x38 r=11px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 238) sh=rgb(0, 0, 0) 0px 0px 0px 1px inset"
+  ],
+  "texts": [
+   "BELLAVISTA | Geist 30px/27px w500 ls=-1.2px c=rgb(217, 213, 197) tt=uppercase @60,27,159,27",
+   "BOOK NOW | Geist 18px/21.6px w500 ls=normal c=rgb(10, 18, 20) tt=none @1222,28,99,23",
+   "D | Geist 120px/108px w500 ls=-7.2px c=rgb(217, 213, 197) tt=uppercase @444,200,77,108",
+   "I | Geist 120px/108px w500 ls=-7.2px c=rgb(217, 213, 197) tt=uppercase @521,200,26,108",
+   "S | Geist 120px/108px w500 ls=-7.2px c=rgb(217, 213, 197) tt=uppercase @547,200,71,108",
+   "C | Geist 120px/108px w500 ls=-7.2px c=rgb(217, 213, 197) tt=uppercase @619,200,78,108",
+   "O | Geist 120px/108px w500 ls=-7.2px c=rgb(217, 213, 197) tt=uppercase @697,200,83,108",
+   "V | Geist 120px/108px w500 ls=-7.2px c=rgb(217, 213, 197) tt=uppercase @780,200,75,108",
+   "E | Geist 120px/108px w500 ls=-7.2px c=rgb(217, 213, 197) tt=uppercase @856,200,66,108",
+   "R | Geist 120px/108px w500 ls=-7.2px c=rgb(217, 213, 197) tt=uppercase @921,200,74,108",
+   "B | Geist 120px/108px w500 ls=-7.2px c=rgb(217, 213, 197) tt=uppercase @394,308,75,108",
+   "E | Geist 120px/108px w500 ls=-7.2px c=rgb(217, 213, 197) tt=uppercase @470,308,66,108",
+   "L | Geist 120px/108px w500 ls=-7.2px c=rgb(217, 213, 197) tt=uppercase @535,308,63,108",
+   "L | Geist 120px/108px w500 ls=-7.2px c=rgb(217, 213, 197) tt=uppercase @598,308,63,108",
+   "A | Geist 120px/108px w500 ls=-7.2px c=rgb(217, 213, 197) tt=uppercase @661,308,75,108",
+   "V | Geist 120px/108px w500 ls=-7.2px c=rgb(217, 213, 197) tt=uppercase @736,308,75,108",
+   "I | Geist 120px/108px w500 ls=-7.2px c=rgb(217, 213, 197) tt=uppercase @812,308,26,108",
+   "S | Geist 120px/108px w500 ls=-7.2px c=rgb(217, 213, 197) tt=uppercase @838,308,71,108",
+   "T | Geist 120px/108px w500 ls=-7.2px c=rgb(217, 213, 197) tt=uppercase @909,308,61,108",
+   "A | Geist 120px/108px w500 ls=-7.2px c=rgb(217, 213, 197) tt=uppercase @970,308,75,108",
+   "Where flavor becomes art and every moment feels cu | Geist 16px/22.4px w400 ls=normal c=rgb(217, 213, 197) tt=none @520,683,400,67",
+   "SCROLL DOWN | Geist 16px/22.4px w400 ls=normal c=rgb(217, 213, 197) tt=none @663,813,115,22",
+   "Get This Template | Switzer 14px/16.8px w600 ls=-0.28px c=rgb(255, 255, 255) tt=none @1293,809,111,17",
+   "Monarque | Inter 22px/26.4px w600 ls=-0.88px c=rgb(255, 255, 255) tt=none @1298,736,101,26",
+   "Latest Template | Inter 14px/16.8px w400 ls=-0.56px c=rgb(255, 255, 255) tt=none @1301,765,97,17",
+   "Create a free website with Framer, the website bui | sans-serif 12px/normal w400 ls=normal c=rgb(0, 0, 238) tt=none @1350,861,0,0"
+  ],
+  "buttons": [
+   {
+    "t": "BELLAVISTA",
+    "r": [
+     20,
+     25,
+     199,
+     30
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgb(217, 213, 197)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "BOOK NOW",
+    "r": [
+     1222,
+     29,
+     99,
+     22
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "Get This Template",
+    "r": [
+     1278,
+     799,
+     142,
+     36
+    ],
+    "bg": "rgb(0, 0, 0)",
+    "bgi": "none",
+    "radius": "10px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "rgba(0, 0, 0, 0.3) 0px 0px 20px 5px",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "Monarque Latest Template",
+    "r": [
+     1278,
+     680,
+     142,
+     110
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "5px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   }
+  ],
+  "fonts": [
+   "Geist 400",
+   "Geist 500",
+   "Inter 400",
+   "Inter 600",
+   "Switzer 600",
+   "Geist Placeholder normal",
+   "Inter Placeholder normal",
+   "Switzer Placeholder normal"
+  ],
+  "appear": "{\"aqhh4m\":{\"default\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1.2,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":0},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0,\"delay\":0,\"duration\":1.5,\"type\":\"spring\"},\"x\":0,\"y\":0}}},\"1j35up8\":{\"default\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":20},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0,\"delay\":0.4,\"duration\":1,\"type\":\"spring\"},\"x\":0,\"y\":0}}},\"fm49n\":{\"default\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":0},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0,\"delay\":0.6,\"duration\":1,\"type\":\"spring\"},\"x\":0,\"y\":0},\"transformTemplate\":\"translateX(-50%) __Appear_Animation_Transform__\"}}}",
+  "anims": [
+   {
+    "name": "Animation",
+    "tgt": "scroll down",
+    "dur": 1000,
+    "delay": 600,
+    "ease": "linear",
+    "iter": 1,
+    "kf": "[{\"offset\":null,\"easing\":\"linear\",\"composite\":\"auto\",\"transform\":\"translateX(-50%)\",\"computedOffset\":0},{\"offset\":null,\"easing\":\"linear\",\"composite\":\"auto\",\"transform\":\"translateX(-50%)\",\"computedOffset\":0.01},{\"offset\":null,\"easing\":\"linear\",\"composite\":\"auto"
+   }
+  ]
+ },
+ "hover": [
+  {
+   "n": "DIV",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgi": "none",
+   "sh": "none",
+   "t": "none",
+   "r": "0px"
+  },
+  {
+   "n": "DIV",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgi": "none",
+   "sh": "none",
+   "t": "none",
+   "r": "0px"
+  },
+  {
+   "n": "A",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgi": "none",
+   "sh": "none",
+   "t": "none",
+   "r": "0px"
+  },
+  {
+   "n": "DIV",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgi": "none",
+   "sh": "none",
+   "t": "none",
+   "r": "0px"
+  }
+ ],
+ "page": {
+  "vw": 1440,
+  "pageHeight": 11058,
+  "title": "Bellavista",
+  "htmlBg": "rgba(0, 0, 0, 0)",
+  "bodyBg": "rgb(113, 0, 23)",
+  "bodyColor": "rgb(0, 0, 0)",
+  "colorScheme": "normal",
+  "h1": {
+   "text": "DISCOVER BELLAVISTA",
+   "family": "Geist, \"Geist Placeholder\", sans-serif",
+   "size": "120px",
+   "weight": "500",
+   "lh": "108px",
+   "ls": "-7.2px",
+   "color": "rgb(217, 213, 197)",
+   "tt": "uppercase",
+   "align": "center",
+   "w": 1400,
+   "h": 216,
+   "top": 200,
+   "left": 20,
+   "tag": "h1",
+   "balance": "wrap"
+  },
+  "largestHeroText": {
+   "text": "D",
+   "family": "Geist, \"Geist Placeholder\", sans-serif",
+   "size": "120px",
+   "weight": "500",
+   "lh": "108px",
+   "ls": "-7.2px",
+   "color": "rgb(217, 213, 197)",
+   "tt": "uppercase",
+   "align": "center",
+   "w": 77,
+   "h": 108,
+   "top": 200,
+   "left": 444,
+   "tag": "span",
+   "balance": "nowrap"
+  },
+  "h2": [
+   {
+    "text": "BEAUTY IN EVERY STAY",
+    "family": "Geist, \"Geist Placeholder\", sans-serif",
+    "size": "72px",
+    "weight": "500",
+    "lh": "64.8px",
+    "ls": "-2.88px",
+    "color": "rgb(217, 213, 197)",
+    "tt": "uppercase",
+    "align": "center",
+    "w": 460,
+    "h": 194,
+    "top": 1092,
+    "left": 490,
+    "tag": "h2",
+    "balance": "wrap"
+   },
+   {
+    "text": "YOUR KIND OF STAY",
+    "family": "Geist, \"Geist Placeholder\", sans-serif",
+    "size": "72px",
+    "weight": "500",
+    "lh": "64.8px",
+    "ls": "-2.88px",
+    "color": "rgb(217, 213, 197)",
+    "tt": "uppercase",
+    "align": "center",
+    "w": 400,
+    "h": 130,
+    "top": 2977,
+    "left": 170,
+    "tag": "h2",
+    "balance": "wrap"
+   },
+   {
+    "text": "BEGIN WITH BEAUTY",
+    "family": "Geist, \"Geist Placeholder\", sans-serif",
+    "size": "72px",
+    "weight": "500",
+    "lh": "64.8px",
+    "ls": "-2.88px",
+    "color": "rgb(217, 213, 197)",
+    "tt": "uppercase",
+    "align": "center",
+    "w": 400,
+    "h": 130,
+    "top": 5327,
+    "left": 870,
+    "tag": "h2",
+    "balance": "wrap"
+   },
+   {
+    "text": "A CLOSER LOOK",
+    "family": "Geist, \"Geist Placeholder\", sans-serif",
+    "size": "72px",
+    "weight": "500",
+    "lh": "64.8px",
+    "ls": "-2.88px",
+    "color": "rgb(217, 213, 197)",
+    "tt": "uppercase",
+    "align": "center",
+    "w": 370,
+    "h": 130,
+    "top": 6168,
+    "left": 535,
+    "tag": "h2",
+    "balance": "wrap"
+   }
+  ],
+  "h3": [
+   {
+    "text": "BELLAVISTA ESSENTIAL",
+    "family": "Geist, \"Geist Placeholder\", sans-serif",
+    "size": "58px",
+    "weight": "500",
+    "lh": "52.2px",
+    "ls": "-2.32px",
+    "color": "rgba(217, 213, 197, 0.5)",
+    "tt": "uppercase",
+    "align": "center",
+    "w": 467,
+    "h": 104,
+    "top": 3881,
+    "left": 20,
+    "tag": "h3",
+    "balance": "wrap"
+   },
+   {
+    "text": "BELLAVISTA SIGNATURE",
+    "family": "Geist, \"Geist Placeholder\", sans-serif",
+    "size": "58px",
+    "weight": "500",
+    "lh": "52.2px",
+    "ls": "-2.32px",
+    "color": "rgba(217, 213, 197, 0.5)",
+    "tt": "uppercase",
+    "align": "center",
+    "w": 467,
+    "h": 104,
+    "top": 3881,
+    "left": 487,
+    "tag": "h3",
+    "balance": "wrap"
+   }
+  ],
+  "p": [
+   {
+    "text": "Where flavor becomes art and every moment feels curated. Indulge in a ",
+    "family": "Geist, \"Geist Placeholder\", sans-serif",
+    "size": "16px",
+    "weight": "400",
+    "lh": "22.4px",
+    "ls": "normal",
+    "color": "rgb(217, 213, 197)",
+    "tt": "none",
+    "align": "center",
+    "w": 400,
+    "h": 67,
+    "top": 683,
+    "left": 520,
+    "tag": "p",
+    "balance": "wrap"
+   },
+   {
+    "text": "The balance between comfort and elegance is spot on. It’s the kind of ",
+    "family": "Geist, \"Geist Placeholder\", sans-serif",
+    "size": "36px",
+    "weight": "400",
+    "lh": "39.6px",
+    "ls": "-0.72px",
+    "color": "rgb(217, 213, 197)",
+    "tt": "none",
+    "align": "center",
+    "w": 700,
+    "h": 158,
+    "top": 7332,
+    "left": -1760,
+    "tag": "p",
+    "balance": "wrap"
+   },
+   {
+    "text": "We hosted meetings here and stayed overnight — the experience was seam",
+    "family": "Geist, \"Geist Placeholder\", sans-serif",
+    "size": "36px",
+    "weight": "400",
+    "lh": "39.6px",
+    "ls": "-0.72px",
+    "color": "rgb(217, 213, 197)",
+    "tt": "none",
+    "align": "center",
+    "w": 700,
+    "h": 158,
+    "top": 7332,
+    "left": -1050,
+    "tag": "p",
+    "balance": "wrap"
+   }
+  ],
+  "heroP": null,
+  "typeScale": [
+   [
+    "Geist|36|400",
+    1011
+   ],
+   [
+    "Geist|18|400",
+    986
+   ],
+   [
+    "Geist|16|400",
+    604
+   ],
+   [
+    "Geist|18|500",
+    173
+   ],
+   [
+    "Geist|72|500",
+    117
+   ],
+   [
+    "sans-serif|12|400",
+    97
+   ],
+   [
+    "Geist|58|500",
+    88
+   ],
+   [
+    "Geist|40|500",
+    51
+   ],
+   [
+    "Geist|120|500",
+    28
+   ],
+   [
+    "Geist|30|500",
+    20
+   ],
+   [
+    "Switzer|14|600",
+    17
+   ],
+   [
+    "Inter|14|400",
+    15
+   ],
+   [
+    "Inter|22|600",
+    8
+   ]
+  ],
+  "fontFamiliesUsed": [
+   [
+    "Geist",
+    186
+   ],
+   [
+    "Inter",
+    2
+   ],
+   [
+    "Switzer",
+    1
+   ],
+   [
+    "sans-serif",
+    1
+   ]
+  ],
+  "sizesDistinct": [
+   12,
+   14,
+   16,
+   18,
+   22,
+   30,
+   36,
+   40,
+   58,
+   72,
+   120
+  ],
+  "lsHist": [
+   [
+    "-0.040em",
+    101
+   ],
+   [
+    "normal",
+    51
+   ],
+   [
+    "-0.060em",
+    19
+   ],
+   [
+    "-0.020em",
+    11
+   ],
+   [
+    "-0.030em",
+    8
+   ]
+  ],
+  "nav": {
+   "tag": "NAV",
+   "h": 80,
+   "outerH": 80,
+   "top": 0,
+   "w": 1440,
+   "position": "fixed",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgHeader": "rgba(0, 0, 0, 0)",
+   "backdrop": "none",
+   "bb": "0px none rgb(0, 0, 0)",
+   "shadow": "none",
+   "contentLeft": 20,
+   "contentRight": 1321,
+   "nLinks": 2,
+   "linkTexts": [
+    "BELLAVISTA",
+    "BOOK NOW"
+   ],
+   "linkTypo": [
+    {
+     "text": "BELLAVISTA",
+     "family": "sans-serif",
+     "size": "12px",
+     "weight": "400",
+     "lh": "normal",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "tt": "none",
+     "align": "start",
+     "w": 199,
+     "h": 30,
+     "top": 25,
+     "left": 20,
+     "tag": "a",
+     "balance": "wrap"
+    },
+    {
+     "text": "BOOK NOW",
+     "family": "sans-serif",
+     "size": "12px",
+     "weight": "400",
+     "lh": "normal",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "tt": "none",
+     "align": "start",
+     "w": 99,
+     "h": 22,
+     "top": 29,
+     "left": 1222,
+     "tag": "a",
+     "balance": "wrap"
+    }
+   ],
+   "hasLogoSvgOrImg": false,
+   "px": "20px/20px"
+  },
+  "ctas": [
+   {
+    "text": "Get This Template",
+    "inHeader": false,
+    "kind": "filled",
+    "h": 36,
+    "w": 142,
+    "radius": "10px",
+    "bg": "rgb(0, 0, 0)",
+    "color": "rgb(0, 0, 238)",
+    "border": null,
+    "size": "12px",
+    "weight": "400",
+    "pad": "0px 0px",
+    "shadow": "rgba(0, 0, 0, 0.3) 0px 0px 20px 5px",
+    "family": "sans-serif"
+   }
+  ],
+  "chain": [
+   {
+    "tag": "h1.framer-text",
+    "w": 1400,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "block",
+    "ta": "center"
+   },
+   {
+    "tag": "div.framer-1hfjxkb",
+    "w": 1400,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "div.framer-1ijkeiw",
+    "w": 1400,
+    "maxW": "1600px",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "header.framer-6sm8fg",
+    "w": 1440,
+    "maxW": "none",
+    "pl": "20px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "main.framer-edqx99",
+    "w": 1440,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "div.framer-YGPhv",
+    "w": 0,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "contents",
+    "ta": "start"
+   },
+   {
+    "tag": "div.framer-VPdhk",
+    "w": 1440,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "div",
+    "w": 1440,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "block",
+    "ta": "start"
+   },
+   {
+    "tag": "body",
+    "w": 1440,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "block",
+    "ta": "start"
+   }
+  ],
+  "sections": [
+   {
+    "cls": "framer-1f831fx",
+    "tag": "section",
+    "top": 1050,
+    "h": 1356,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 0,
+    "effPb": 0,
+    "contentW": 900,
+    "contentL": 270,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "BEAUTY IN EVERY STAY",
+    "hSize": "72px",
+    "hAlign": "center"
+   },
+   {
+    "cls": "framer-1the0po",
+    "tag": "section",
+    "top": 2726,
+    "h": 3099,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 0,
+    "effPb": 0,
+    "contentW": 1400,
+    "contentL": 20,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "YOUR KIND OF STAY",
+    "hSize": "72px",
+    "hAlign": "center"
+   },
+   {
+    "cls": "framer-jm5Uh",
+    "tag": "section",
+    "top": 5975,
+    "h": 964,
+    "pt": "150px",
+    "pb": "150px",
+    "effPt": 150,
+    "effPb": 150,
+    "contentW": 2620,
+    "contentL": 38,
+    "bg": "rgb(113, 0, 23)",
+    "heading": "A CLOSER LOOK",
+    "hSize": "72px",
+    "hAlign": "center"
+   },
+   {
+    "cls": "framer-2V6CQ",
+    "tag": "section",
+    "top": 7090,
+    "h": 1311,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 0,
+    "effPb": 0,
+    "contentW": 4960,
+    "contentL": -1760,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "STORIES FROM THE STAY",
+    "hSize": "72px",
+    "hAlign": "center"
+   },
+   {
+    "cls": "framer-86gn5f",
+    "tag": "section",
+    "top": 8721,
+    "h": 826,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 0,
+    "effPb": 0,
+    "contentW": 1400,
+    "contentL": 20,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "MOMENTS & MEMORIES",
+    "hSize": "72px",
+    "hAlign": "center"
+   },
+   {
+    "cls": "framer-c7FGw",
+    "tag": "footer",
+    "top": 9697,
+    "h": 1361,
+    "pt": "150px",
+    "pb": "0px",
+    "effPt": 150,
+    "effPb": 0,
+    "contentW": 1400,
+    "contentL": 20,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "YOUR NEXT STAY STARTS HERE",
+    "hSize": "72px",
+    "hAlign": "center"
+   }
+  ],
+  "radiusAll": [
+   [
+    "100px",
+    2
+   ],
+   [
+    "10px",
+    2
+   ],
+   [
+    "5px",
+    1
+   ],
+   [
+    "11px",
+    1
+   ]
+  ],
+  "radiusCards": [],
+  "radiusMedia": [],
+  "radiusInputs": [],
+  "shadows": [
+   [
+    "rgba(0, 0, 0, 0.3) 0px 0px 20px 5px",
+    1
+   ],
+   [
+    "rgba(0, 0, 0, 0.17) 0px 0.602187px 1.56569px -1.5px, rgba(0, 0, 0, 0.14) 0px 2.28853px 5.95019px -3px, rgba(0, 0, 0, 0.02) 0px 10px 26px -4.5px",
+    1
+   ],
+   [
+    "rgb(0, 0, 0) 0px 0px 0px 1px inset",
+    1
+   ]
+  ],
+  "borders": [],
+  "cardBgs": [],
+  "grids": [
+   [
+    "2col gap 20px/10px",
+    1
+   ],
+   [
+    "3col gap 0px/0px",
+    1
+   ],
+   [
+    "4col gap 20px/20px",
+    1
+   ],
+   [
+    "3col gap 20px/20px",
+    1
+   ],
+   [
+    "4col gap 20px/50px",
+    1
+   ]
+  ],
+  "flexGaps": [
+   [
+    "0px",
+    59
+   ],
+   [
+    "20px",
+    25
+   ],
+   [
+    "10px",
+    22
+   ],
+   [
+    "30px",
+    13
+   ],
+   [
+    "70px",
+    5
+   ],
+   [
+    "20px normal",
+    4
+   ],
+   [
+    "150px",
+    2
+   ],
+   [
+    "5px",
+    2
+   ]
+  ],
+  "bgByArea": [
+   [
+    "rgb(113, 0, 23)",
+    "50%"
+   ],
+   [
+    "rgb(10, 18, 20)",
+    "42%"
+   ],
+   [
+    "rgb(217, 213, 197)",
+    "0%"
+   ],
+   [
+    "rgb(255, 109, 16)",
+    "0%"
+   ],
+   [
+    "rgb(0, 0, 0)",
+    "0%"
+   ],
+   [
+    "rgb(255, 255, 255)",
+    "0%"
+   ]
+  ],
+  "textColors": [
+   [
+    "rgb(217, 213, 197)",
+    159
+   ],
+   [
+    "rgba(240, 239, 234, 0.5)",
+    17
+   ],
+   [
+    "rgba(217, 213, 197, 0.7)",
+    6
+   ],
+   [
+    "rgba(217, 213, 197, 0.5)",
+    3
+   ],
+   [
+    "rgb(255, 255, 255)",
+    3
+   ],
+   [
+    "rgb(10, 18, 20)",
+    1
+   ]
+  ],
+  "linkColors": [
+   [
+    "rgb(217, 213, 197)",
+    27
+   ],
+   [
+    "rgba(217, 213, 197, 0.5)",
+    3
+   ],
+   [
+    "rgba(240, 239, 234, 0.5)",
+    3
+   ]
+  ],
+  "counts": {
+   "video": 1,
+   "canvas": 0,
+   "iframe": 1,
+   "svg": 1,
+   "img": 36,
+   "picture": 0,
+   "spline": 0,
+   "lottie": 0
+  },
+  "heroMedia": {
+   "video": true,
+   "canvas": false,
+   "bigImg": 1
+  },
+  "libs": {
+   "gsap": false,
+   "lenis": true,
+   "locomotive": false,
+   "next": false,
+   "framer": true,
+   "webflow": false,
+   "three": false,
+   "astro": false,
+   "nuxt": false,
+   "tailwindish": false
+  },
+  "sticky": 0,
+  "fixed": 4,
+  "snap": 0
+ },
+ "pageHeight": 11058
+}

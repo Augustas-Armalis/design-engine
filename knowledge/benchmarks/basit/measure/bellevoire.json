@@ -1,0 +1,1067 @@
+{
+ "id": "bellevoire",
+ "url": "https://bellevoire.framer.website/",
+ "date": "2026-10-11",
+ "hero": {
+  "bgImages": [],
+  "filters": [],
+  "blends": [
+   {
+    "n": "div",
+    "r": [
+     0,
+     0,
+     1440,
+     100
+    ],
+    "blend": "difference",
+    "op": "1"
+   }
+  ],
+  "transforms": [
+   {
+    "n": "div",
+    "r": [
+     1397,
+     649,
+     6,
+     6
+    ],
+    "t": "matrix(0.707107, 0.707107, -0.707107, 0.707107, 0, 0)",
+    "persp": "none",
+    "op": "1"
+   },
+   {
+    "n": "div",
+    "r": [
+     1397,
+     649,
+     6,
+     6
+    ],
+    "t": "matrix(0.707107, -0.707107, 0.707107, 0.707107, 0, 0)",
+    "persp": "none",
+    "op": "1"
+   },
+   {
+    "n": "p",
+    "r": [
+     1350,
+     861,
+     0,
+     0
+    ],
+    "t": "matrix(0.001, 0, 0, 0.001, 0, 0)",
+    "persp": "none",
+    "op": "1"
+   }
+  ],
+  "perspective": [],
+  "media": [
+   {
+    "tag": "IMG",
+    "n": "div",
+    "r": [
+     0,
+     0,
+     1440,
+     900
+    ],
+    "src": "https://framerusercontent.com/images/bimyiU5RnafEI9aZIoQlMDyoE8.jpg?width=2000&height=1180",
+    "fit": "cover",
+    "radius": "0px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": [
+     1440,
+     849
+    ]
+   },
+   {
+    "tag": "VIDEO",
+    "n": "div",
+    "r": [
+     1210,
+     632,
+     210,
+     158
+    ],
+    "src": "https://framerusercontent.com/assets/TNg2xfI1CEpQsOAJClKAFpU1XR4.mp4",
+    "fit": "cover",
+    "radius": "0px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": null
+   }
+  ],
+  "svgNoise": 0,
+  "turb": [],
+  "canvas": [],
+  "radii": [
+   "Desktop 210x158 r=5px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 238) sh=none",
+   "Desktop 142x36 r=10px bg=rgb(0, 0, 0) bd=0px rgb(0, 0, 238) sh=rgba(0, 0, 0, 0.3) 0px 0px 20px 5px",
+   "Backdrop 138x36 r=10px bg=rgb(255, 255, 255) bd=0px rgb(0, 0, 238) sh=rgba(0, 0, 0, 0.17) 0px 0.602187px 1.56569px -1.5px, rgba(0, 0, 0, 0.14) 0px 2.28853px 5.95019px -3px, rgba(0, 0, 0, 0.02) 0px 10px 26px -4.",
+   "Bottom 140x38 r=11px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 238) sh=rgb(0, 0, 0) 0px 0px 0px 1px inset",
+   "Border 140x38 r=11px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 238) sh=rgb(0, 0, 0) 0px 0px 0px 1px inset"
+  ],
+  "texts": [
+   "Bellovoire | \"Instrument Serif\" 40px/40px w400 ls=normal c=rgb(237, 233, 228) tt=none @110,30,135,40",
+   "W | Inter 22px/26.4px w400 ls=-0.66px c=rgb(237, 233, 228) tt=none @600,569,21,26",
+   "h | Inter 22px/26.4px w400 ls=-0.66px c=rgb(237, 233, 228) tt=none @621,569,12,26",
+   "e | Inter 22px/26.4px w400 ls=-0.66px c=rgb(237, 233, 228) tt=none @634,569,12,26",
+   "r | Inter 22px/26.4px w400 ls=-0.66px c=rgb(237, 233, 228) tt=none @646,569,8,26",
+   "e | Inter 22px/26.4px w400 ls=-0.66px c=rgb(237, 233, 228) tt=none @653,569,12,26",
+   "D | Inter 22px/26.4px w400 ls=-0.66px c=rgb(237, 233, 228) tt=none @671,569,15,26",
+   "r | Inter 22px/26.4px w400 ls=-0.66px c=rgb(237, 233, 228) tt=none @686,569,8,26",
+   "e | Inter 22px/26.4px w400 ls=-0.66px c=rgb(237, 233, 228) tt=none @694,569,12,26",
+   "a | Inter 22px/26.4px w400 ls=-0.66px c=rgb(237, 233, 228) tt=none @706,569,12,26",
+   "m | Inter 22px/26.4px w400 ls=-0.66px c=rgb(237, 233, 228) tt=none @718,569,19,26",
+   "s | Inter 22px/26.4px w400 ls=-0.66px c=rgb(237, 233, 228) tt=none @737,569,11,26",
+   "M | Inter 22px/26.4px w400 ls=-0.66px c=rgb(237, 233, 228) tt=none @753,569,19,26",
+   "e | Inter 22px/26.4px w400 ls=-0.66px c=rgb(237, 233, 228) tt=none @772,569,12,26",
+   "e | Inter 22px/26.4px w400 ls=-0.66px c=rgb(237, 233, 228) tt=none @784,569,12,26",
+   "t | Inter 22px/26.4px w400 ls=-0.66px c=rgb(237, 233, 228) tt=none @797,569,7,26",
+   "t | Inter 22px/26.4px w400 ls=-0.66px c=rgb(237, 233, 228) tt=none @809,569,7,26",
+   "h | Inter 22px/26.4px w400 ls=-0.66px c=rgb(237, 233, 228) tt=none @815,569,12,26",
+   "e | Inter 22px/26.4px w400 ls=-0.66px c=rgb(237, 233, 228) tt=none @828,569,12,26",
+   "B | Inter 22px/26.4px w400 ls=-0.66px c=rgb(237, 233, 228) tt=none @633,596,14,26",
+   "e | Inter 22px/26.4px w400 ls=-0.66px c=rgb(237, 233, 228) tt=none @647,596,12,26",
+   "a | Inter 22px/26.4px w400 ls=-0.66px c=rgb(237, 233, 228) tt=none @659,596,12,26",
+   "u | Inter 22px/26.4px w400 ls=-0.66px c=rgb(237, 233, 228) tt=none @671,596,12,26",
+   "t | Inter 22px/26.4px w400 ls=-0.66px c=rgb(237, 233, 228) tt=none @683,596,7,26",
+   "y | Inter 22px/26.4px w400 ls=-0.66px c=rgb(237, 233, 228) tt=none @690,596,12,26",
+   "o | Inter 22px/26.4px w400 ls=-0.66px c=rgb(237, 233, 228) tt=none @707,596,13,26",
+   "f | Inter 22px/26.4px w400 ls=-0.66px c=rgb(237, 233, 228) tt=none @720,596,7,26",
+   "F | Inter 22px/26.4px w400 ls=-0.66px c=rgb(237, 233, 228) tt=none @733,596,12,26",
+   "r | Inter 22px/26.4px w400 ls=-0.66px c=rgb(237, 233, 228) tt=none @745,596,8,26",
+   "a | Inter 22px/26.4px w400 ls=-0.66px c=rgb(237, 233, 228) tt=none @753,596,12,26",
+   "n | Inter 22px/26.4px w400 ls=-0.66px c=rgb(237, 233, 228) tt=none @764,596,12,26",
+   "c | Inter 22px/26.4px w400 ls=-0.66px c=rgb(237, 233, 228) tt=none @777,596,12,26",
+   "e | Inter 22px/26.4px w400 ls=-0.66px c=rgb(237, 233, 228) tt=none @789,596,12,26",
+   ". | Inter 22px/26.4px w400 ls=-0.66px c=rgb(237, 233, 228) tt=none @801,596,6,26",
+   "BELLEVOIRE | \"Instrument Serif\" 16px/14.4px w400 ls=normal c=rgb(237, 233, 228) tt=uppercase @50,652,1340,276",
+   "Monarque | Inter 22px/26.4px w600 ls=-0.88px c=rgb(255, 255, 255) tt=none @1264,736,101,26",
+   "Latest Template | Inter 14px/16.8px w400 ls=-0.56px c=rgb(255, 255, 255) tt=none @1267,765,97,17",
+   "Get This Template | Switzer 14px/16.8px w600 ls=-0.28px c=rgb(255, 255, 255) tt=none @1293,809,111,17",
+   "Create a free website with Framer, the website bui | sans-serif 12px/normal w400 ls=normal c=rgb(0, 0, 238) tt=none @1350,861,0,0"
+  ],
+  "buttons": [
+   {
+    "t": "Bellovoire",
+    "r": [
+     50,
+     30,
+     195,
+     40
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "Monarque Latest Template",
+    "r": [
+     1210,
+     632,
+     210,
+     158
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "5px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "Get This Template",
+    "r": [
+     1278,
+     799,
+     142,
+     36
+    ],
+    "bg": "rgb(0, 0, 0)",
+    "bgi": "none",
+    "radius": "10px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "rgba(0, 0, 0, 0.3) 0px 0px 20px 5px",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   }
+  ],
+  "fonts": [
+   "Instrument Serif 400",
+   "Inter 400",
+   "Inter 500",
+   "Inter 600",
+   "Switzer 600",
+   "Instrument Serif Placeholder normal",
+   "Inter Placeholder normal",
+   "Switzer Placeholder normal"
+  ],
+  "appear": "{\"ayotzz\":{\"default\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":-50},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0,\"delay\":0,\"duration\":1.5,\"type\":\"spring\"},\"x\":0,\"y\":0},\"transformTemplate\":\"translateX(-50%) __Appear_Animation_Transform__\"}},\"19ka5ap\":{\"default\":{\"initial\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1.2,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":0},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0,\"delay\":0.2,\"duration\":2,\"type\":\"spring\"},\"x\":0,\"y\":0}}},\"1kdlnj0\":{\"default\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":50},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0,\"delay\":0.8,\"duration\":1.5,\"type\":\"spring\"},\"x\":0,\"y\":0}}}}",
+  "anims": []
+ },
+ "hover": [
+  {
+   "n": "P",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgi": "none",
+   "sh": "none",
+   "t": "none",
+   "r": "0px"
+  },
+  {
+   "n": "DIV",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgi": "none",
+   "sh": "none",
+   "t": "none",
+   "r": "0px"
+  },
+  {
+   "n": "A",
+   "bg": "rgb(0, 0, 0)",
+   "bgi": "none",
+   "sh": "rgba(253, 108, 16, 0.498) 0px 0px 20px 5px",
+   "t": "none",
+   "r": "10px"
+  },
+  {
+   "n": "DIV",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgi": "none",
+   "sh": "none",
+   "t": "none",
+   "r": "0px"
+  }
+ ],
+ "page": {
+  "vw": 1440,
+  "pageHeight": 13677,
+  "title": "Bellevoire",
+  "htmlBg": "rgba(0, 0, 0, 0)",
+  "bodyBg": "rgb(237, 233, 228)",
+  "bodyColor": "rgb(0, 0, 0)",
+  "colorScheme": "normal",
+  "h1": {
+   "text": "BELLEVOIRE",
+   "family": "\"Instrument Serif\", \"Instrument Serif Placeholder\", serif",
+   "size": "16px",
+   "weight": "400",
+   "lh": "14.4px",
+   "ls": "normal",
+   "color": "rgb(237, 233, 228)",
+   "tt": "uppercase",
+   "align": "center",
+   "w": 1340,
+   "h": 276,
+   "top": 652,
+   "left": 50,
+   "tag": "h1",
+   "balance": "nowrap"
+  },
+  "largestHeroText": {
+   "text": "Bellovoire",
+   "family": "\"Instrument Serif\", \"Instrument Serif Placeholder\", serif",
+   "size": "40px",
+   "weight": "400",
+   "lh": "40px",
+   "ls": "normal",
+   "color": "rgb(237, 233, 228)",
+   "tt": "none",
+   "align": "left",
+   "w": 135,
+   "h": 40,
+   "top": 30,
+   "left": 110,
+   "tag": "div",
+   "balance": "nowrap"
+  },
+  "h2": [
+   {
+    "text": "Welcome to Bellevoire",
+    "family": "\"Instrument Serif\", \"Instrument Serif Placeholder\", serif",
+    "size": "80px",
+    "weight": "400",
+    "lh": "72px",
+    "ls": "normal",
+    "color": "rgb(23, 15, 11)",
+    "tt": "none",
+    "align": "left",
+    "w": 800,
+    "h": 72,
+    "top": 1100,
+    "left": 320,
+    "tag": "h2",
+    "balance": "wrap"
+   },
+   {
+    "text": "Your Elegant Retreat",
+    "family": "\"Instrument Serif\", \"Instrument Serif Placeholder\", serif",
+    "size": "80px",
+    "weight": "400",
+    "lh": "72px",
+    "ls": "normal",
+    "color": "rgb(23, 15, 11)",
+    "tt": "none",
+    "align": "center",
+    "w": 800,
+    "h": 72,
+    "top": 1172,
+    "left": 320,
+    "tag": "h2",
+    "balance": "wrap"
+   },
+   {
+    "text": "in the Heart of Paris",
+    "family": "\"Instrument Serif\", \"Instrument Serif Placeholder\", serif",
+    "size": "80px",
+    "weight": "400",
+    "lh": "72px",
+    "ls": "normal",
+    "color": "rgb(23, 15, 11)",
+    "tt": "none",
+    "align": "right",
+    "w": 800,
+    "h": 72,
+    "top": 1244,
+    "left": 320,
+    "tag": "h2",
+    "balance": "wrap"
+   },
+   {
+    "text": "Paris Awaits at",
+    "family": "\"Instrument Serif\", \"Instrument Serif Placeholder\", serif",
+    "size": "80px",
+    "weight": "400",
+    "lh": "72px",
+    "ls": "normal",
+    "color": "rgb(23, 15, 11)",
+    "tt": "none",
+    "align": "center",
+    "w": 1340,
+    "h": 72,
+    "top": 2431,
+    "left": 50,
+    "tag": "h2",
+    "balance": "wrap"
+   }
+  ],
+  "h3": [
+   {
+    "text": "Private Chef",
+    "family": "\"Instrument Serif\", \"Instrument Serif Placeholder\", serif",
+    "size": "60px",
+    "weight": "400",
+    "lh": "60px",
+    "ls": "-2.4px",
+    "color": "rgb(23, 15, 11)",
+    "tt": "none",
+    "align": "left",
+    "w": 410,
+    "h": 60,
+    "top": 5355,
+    "left": 124,
+    "tag": "h3",
+    "balance": "wrap"
+   },
+   {
+    "text": "Boarding Assistance",
+    "family": "\"Instrument Serif\", \"Instrument Serif Placeholder\", serif",
+    "size": "60px",
+    "weight": "400",
+    "lh": "60px",
+    "ls": "-2.4px",
+    "color": "rgb(23, 15, 11)",
+    "tt": "none",
+    "align": "left",
+    "w": 412,
+    "h": 81,
+    "top": 5499,
+    "left": 119,
+    "tag": "h3",
+    "balance": "wrap"
+   }
+  ],
+  "p": [
+   {
+    "text": "We provide an experience of refined comfort, timeless elegance, and he",
+    "family": "Inter, sans-serif",
+    "size": "16px",
+    "weight": "400",
+    "lh": "22.4px",
+    "ls": "-0.64px",
+    "color": "rgb(23, 15, 11)",
+    "tt": "none",
+    "align": "center",
+    "w": 600,
+    "h": 90,
+    "top": 1346,
+    "left": 420,
+    "tag": "p",
+    "balance": "wrap"
+   },
+   {
+    "text": "Nestled in the artistic heart of Paris, this boutique hotel blends boh",
+    "family": "Inter, sans-serif",
+    "size": "16px",
+    "weight": "400",
+    "lh": "22.4px",
+    "ls": "-0.64px",
+    "color": "rgb(23, 15, 11)",
+    "tt": "none",
+    "align": "left",
+    "w": 350,
+    "h": 67,
+    "top": 2775,
+    "left": 50,
+    "tag": "p",
+    "balance": "wrap"
+   },
+   {
+    "text": "Just steps from luxury shopping and iconic landmarks, experience moder",
+    "family": "Inter, sans-serif",
+    "size": "16px",
+    "weight": "400",
+    "lh": "22.4px",
+    "ls": "-0.64px",
+    "color": "rgb(23, 15, 11)",
+    "tt": "none",
+    "align": "left",
+    "w": 350,
+    "h": 67,
+    "top": 3547,
+    "left": 50,
+    "tag": "p",
+    "balance": "wrap"
+   }
+  ],
+  "heroP": null,
+  "typeScale": [
+   [
+    "Inter|16|400",
+    1286
+   ],
+   [
+    "Inter|20|500",
+    656
+   ],
+   [
+    "Instrument Serif|40|400",
+    358
+   ],
+   [
+    "Inter|16|600",
+    236
+   ],
+   [
+    "Instrument Serif|80|400",
+    194
+   ],
+   [
+    "Instrument Serif|28|400",
+    185
+   ],
+   [
+    "Instrument Serif|60|400",
+    165
+   ],
+   [
+    "sans-serif|12|400",
+    97
+   ],
+   [
+    "Inter|22|400",
+    33
+   ],
+   [
+    "Instrument Serif|120|400",
+    25
+   ],
+   [
+    "Switzer|14|600",
+    17
+   ],
+   [
+    "Inter|14|400",
+    15
+   ],
+   [
+    "Instrument Serif|16|400",
+    10
+   ],
+   [
+    "Inter|22|600",
+    8
+   ]
+  ],
+  "fontFamiliesUsed": [
+   [
+    "Instrument Serif",
+    344
+   ],
+   [
+    "Inter",
+    71
+   ],
+   [
+    "Switzer",
+    1
+   ],
+   [
+    "sans-serif",
+    1
+   ]
+  ],
+  "sizesDistinct": [
+   12,
+   14,
+   16,
+   20,
+   22,
+   28,
+   40,
+   60,
+   80,
+   120
+  ],
+  "lsHist": [
+   [
+    "normal",
+    322
+   ],
+   [
+    "-0.030em",
+    41
+   ],
+   [
+    "-0.010em",
+    32
+   ],
+   [
+    "-0.040em",
+    21
+   ],
+   [
+    "-0.020em",
+    1
+   ]
+  ],
+  "nav": {
+   "tag": "NAV",
+   "h": 100,
+   "outerH": 100,
+   "top": 0,
+   "w": 1440,
+   "position": "fixed",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgHeader": "rgba(0, 0, 0, 0)",
+   "backdrop": "none",
+   "bb": "0px none rgb(0, 0, 0)",
+   "shadow": "none",
+   "contentLeft": 50,
+   "contentRight": 245,
+   "nLinks": 1,
+   "linkTexts": [
+    "Bellovoire"
+   ],
+   "linkTypo": [
+    {
+     "text": "Bellovoire",
+     "family": "sans-serif",
+     "size": "12px",
+     "weight": "400",
+     "lh": "normal",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "tt": "none",
+     "align": "start",
+     "w": 195,
+     "h": 40,
+     "top": 30,
+     "left": 50,
+     "tag": "a",
+     "balance": "wrap"
+    }
+   ],
+   "hasLogoSvgOrImg": false,
+   "px": "50px/50px"
+  },
+  "ctas": [
+   {
+    "text": "Get This Template",
+    "inHeader": false,
+    "kind": "filled",
+    "h": 36,
+    "w": 142,
+    "radius": "10px",
+    "bg": "rgb(0, 0, 0)",
+    "color": "rgb(0, 0, 238)",
+    "border": null,
+    "size": "12px",
+    "weight": "400",
+    "pad": "0px 0px",
+    "shadow": "rgba(0, 0, 0, 0.3) 0px 0px 20px 5px",
+    "family": "sans-serif"
+   }
+  ],
+  "chain": [
+   {
+    "tag": "h1.framer-text",
+    "w": 1340,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "block",
+    "ta": "center"
+   },
+   {
+    "tag": "foreignobject",
+    "w": 1340,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "block",
+    "ta": "start"
+   },
+   {
+    "tag": "svg",
+    "w": 1340,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "div.framer-srjri",
+    "w": 1440,
+    "maxW": "none",
+    "pl": "50px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "header.framer-1eqly4o",
+    "w": 1440,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "main.framer-fk09o8",
+    "w": 1440,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "div.framer-kFq2g",
+    "w": 0,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "contents",
+    "ta": "start"
+   },
+   {
+    "tag": "div.framer-J5E5I",
+    "w": 1440,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "div",
+    "w": 1440,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "block",
+    "ta": "start"
+   }
+  ],
+  "sections": [
+   {
+    "cls": "framer-4ew3sl",
+    "tag": "div",
+    "top": 900,
+    "h": 11901,
+    "pt": "200px",
+    "pb": "0px",
+    "effPt": 200,
+    "effPb": 28,
+    "contentW": 3977,
+    "contentL": -1268,
+    "bg": "rgb(237, 233, 228)",
+    "heading": "Welcome to Bellevoire",
+    "hSize": "80px",
+    "hAlign": "left"
+   },
+   {
+    "cls": "framer-hqxnoo",
+    "tag": "section",
+    "top": 1100,
+    "h": 1131,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 0,
+    "effPb": 748,
+    "contentW": 800,
+    "contentL": 320,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "Welcome to Bellevoire",
+    "hSize": "80px",
+    "hAlign": "left"
+   },
+   {
+    "cls": "framer-10yf33g",
+    "tag": "section",
+    "top": 2431,
+    "h": 2461,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 0,
+    "effPb": 446,
+    "contentW": 1340,
+    "contentL": 50,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "Paris Awaits at",
+    "hSize": "80px",
+    "hAlign": "center"
+   },
+   {
+    "cls": "framer-qi19jc",
+    "tag": "section",
+    "top": 5091,
+    "h": 1667,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 0,
+    "effPb": 0,
+    "contentW": 1351,
+    "contentL": 45,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "Personalized",
+    "hSize": "80px",
+    "hAlign": "center"
+   },
+   {
+    "cls": "framer-mcyk2",
+    "tag": "section",
+    "top": 6958,
+    "h": 900,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 396,
+    "effPb": 44,
+    "contentW": 1340,
+    "contentL": 50,
+    "bg": "rgb(23, 15, 11)",
+    "heading": "",
+    "hSize": null,
+    "hAlign": null
+   },
+   {
+    "cls": "framer-1s9uy0a",
+    "tag": "section",
+    "top": 8058,
+    "h": 1438,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 0,
+    "effPb": 0,
+    "contentW": 1340,
+    "contentL": 50,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "Where Every Day is",
+    "hSize": "80px",
+    "hAlign": "center"
+   },
+   {
+    "cls": "framer-16cgv58",
+    "tag": "section",
+    "top": 9696,
+    "h": 900,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 396,
+    "effPb": 50,
+    "contentW": 1340,
+    "contentL": 50,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "",
+    "hSize": null,
+    "hAlign": null
+   },
+   {
+    "cls": "framer-1nz58pa",
+    "tag": "section",
+    "top": 10796,
+    "h": 844,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 0,
+    "effPb": 0,
+    "contentW": 3977,
+    "contentL": -1268,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "Experience Bellevoire",
+    "hSize": "80px",
+    "hAlign": "center"
+   },
+   {
+    "cls": "",
+    "tag": "section",
+    "top": 11164,
+    "h": 476,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 0,
+    "effPb": 0,
+    "contentW": 3977,
+    "contentL": -1268,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "",
+    "hSize": null,
+    "hAlign": null
+   },
+   {
+    "cls": "framer-qBKqZ",
+    "tag": "section",
+    "top": 11841,
+    "h": 960,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 618,
+    "effPb": 28,
+    "contentW": 695,
+    "contentL": 363,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "Reserve Your Stay",
+    "hSize": "80px",
+    "hAlign": "center"
+   },
+   {
+    "cls": "framer-pvI5S",
+    "tag": "footer",
+    "top": 12601,
+    "h": 877,
+    "pt": "100px",
+    "pb": "30px",
+    "effPt": 150,
+    "effPb": 30,
+    "contentW": 1340,
+    "contentL": 50,
+    "bg": "rgb(23, 15, 11)",
+    "heading": "Bellevoire",
+    "hSize": "80px",
+    "hAlign": "center"
+   }
+  ],
+  "radiusAll": [
+   [
+    "10px",
+    2
+   ],
+   [
+    "5px",
+    1
+   ],
+   [
+    "11px",
+    1
+   ]
+  ],
+  "radiusCards": [],
+  "radiusMedia": [],
+  "radiusInputs": [],
+  "shadows": [
+   [
+    "rgba(0, 0, 0, 0.3) 0px 0px 20px 5px",
+    1
+   ],
+   [
+    "rgba(0, 0, 0, 0.17) 0px 0.602187px 1.56569px -1.5px, rgba(0, 0, 0, 0.14) 0px 2.28853px 5.95019px -3px, rgba(0, 0, 0, 0.02) 0px 10px 26px -4.5px",
+    1
+   ],
+   [
+    "rgb(0, 0, 0) 0px 0px 0px 1px inset",
+    1
+   ]
+  ],
+  "borders": [],
+  "cardBgs": [],
+  "grids": [
+   [
+    "5col gap 0px/0px",
+    1
+   ]
+  ],
+  "flexGaps": [
+   [
+    "0px",
+    82
+   ],
+   [
+    "50px",
+    13
+   ],
+   [
+    "20px",
+    12
+   ],
+   [
+    "10px",
+    11
+   ],
+   [
+    "30px",
+    11
+   ],
+   [
+    "100px",
+    7
+   ],
+   [
+    "14px",
+    4
+   ],
+   [
+    "200px",
+    1
+   ]
+  ],
+  "bgByArea": [
+   [
+    "rgb(237, 233, 228)",
+    "114%"
+   ],
+   [
+    "rgb(189, 180, 175)",
+    "30%"
+   ],
+   [
+    "rgb(23, 15, 11)",
+    "20%"
+   ],
+   [
+    "rgb(255, 109, 16)",
+    "0%"
+   ],
+   [
+    "rgb(0, 0, 0)",
+    "0%"
+   ],
+   [
+    "rgb(255, 255, 255)",
+    "0%"
+   ]
+  ],
+  "textColors": [
+   [
+    "rgb(237, 233, 228)",
+    224
+   ],
+   [
+    "rgb(23, 15, 11)",
+    176
+   ],
+   [
+    "rgb(199, 199, 199)",
+    7
+   ],
+   [
+    "rgb(122, 111, 106)",
+    4
+   ],
+   [
+    "rgb(255, 255, 255)",
+    3
+   ],
+   [
+    "rgb(189, 180, 175)",
+    2
+   ]
+  ],
+  "linkColors": [
+   [
+    "rgb(237, 233, 228)",
+    19
+   ],
+   [
+    "rgb(23, 15, 11)",
+    8
+   ],
+   [
+    "rgb(255, 255, 255)",
+    3
+   ]
+  ],
+  "counts": {
+   "video": 1,
+   "canvas": 0,
+   "iframe": 1,
+   "svg": 2,
+   "img": 44,
+   "picture": 0,
+   "spline": 0,
+   "lottie": 0
+  },
+  "heroMedia": {
+   "video": true,
+   "canvas": false,
+   "bigImg": 2
+  },
+  "libs": {
+   "gsap": false,
+   "lenis": true,
+   "locomotive": false,
+   "next": false,
+   "framer": true,
+   "webflow": false,
+   "three": false,
+   "astro": false,
+   "nuxt": false,
+   "tailwindish": false
+  },
+  "sticky": 2,
+  "fixed": 4,
+  "snap": 0
+ },
+ "pageHeight": 13677
+}

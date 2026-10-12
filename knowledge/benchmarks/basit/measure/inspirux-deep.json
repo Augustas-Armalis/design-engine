@@ -1,0 +1,361 @@
+{
+ "headline": {
+  "text": "Where ideas",
+  "tag": "H2",
+  "fam": "PPMoriRegular, Arial, Helvetica, sans-serif",
+  "size": "150px",
+  "lh": "120px",
+  "w": "500",
+  "ls": "-6px",
+  "color": "rgb(179, 236, 17)",
+  "bgi": "none",
+  "clip": "border-box",
+  "fill": "rgb(179, 236, 17)",
+  "style": "normal",
+  "align": "start",
+  "r": [
+   40,
+   504,
+   1329,
+   120
+  ],
+  "wrap": "wrap",
+  "feat": "normal"
+ },
+ "headlineSpans": [
+  {
+   "text": "Where ideas",
+   "tag": "SPAN",
+   "fam": "PPMoriRegular, Arial, Helvetica, sans-serif",
+   "size": "150px",
+   "lh": "120px",
+   "w": "500",
+   "ls": "-6px",
+   "color": "rgba(0, 0, 0, 0)",
+   "bgi": "none",
+   "clip": "border-box",
+   "fill": "rgba(0, 0, 0, 0)",
+   "style": "normal",
+   "align": "start",
+   "r": [
+    40,
+    504,
+    1329,
+    120
+   ],
+   "wrap": "wrap",
+   "feat": "normal"
+  }
+ ],
+ "sub": {
+  "text": "Our website utilizes cookies to customize content & enhance website performance.",
+  "tag": "P",
+  "fam": "PPMoriRegular, Arial, Helvetica, sans-serif",
+  "size": "14px",
+  "lh": "19.6px",
+  "w": "400",
+  "ls": "normal",
+  "color": "rgb(16, 16, 18)",
+  "bgi": "none",
+  "clip": "border-box",
+  "fill": "rgb(16, 16, 18)",
+  "style": "normal",
+  "align": "start",
+  "r": [
+   1120,
+   788,
+   280,
+   39
+  ],
+  "wrap": "wrap",
+  "feat": "normal"
+ },
+ "headToSub": 165,
+ "buttons": [
+  {
+   "t": "EXPLORE WORKS",
+   "r": [
+    0,
+    774,
+    720,
+    126
+   ],
+   "font": "PPMoriRegular 12px w400 ls=0.5px c=rgb(238, 238, 238)",
+   "layers": [
+    {
+     "n": "a",
+     "r": [
+      0,
+      774,
+      720,
+      126
+     ],
+     "bg": "rgb(59, 78, 255)",
+     "bgi": "none",
+     "radius": "0px",
+     "border": "",
+     "sh": "",
+     "filter": "",
+     "backdrop": "",
+     "op": "1",
+     "blend": ""
+    }
+   ]
+  }
+ ],
+ "nav": {
+  "r": [
+   0,
+   0,
+   1440,
+   49
+  ],
+  "pos": "fixed",
+  "shells": [
+   {
+    "n": "nav",
+    "r": [
+     0,
+     0,
+     1440,
+     49
+    ],
+    "bg": "rgba(16, 16, 18, 0.937)",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 0)",
+    "bb": "1px rgb(58, 58, 58)",
+    "backdrop": "blur(5px)",
+    "sh": "none",
+    "pos": "fixed"
+   }
+  ],
+  "links": [
+   "WORKS",
+   "EXPERTISE",
+   "ABOUT",
+   "INSIGHTS",
+   "CONTACT"
+  ]
+ },
+ "layers": [
+  {
+   "n": "canvas",
+   "tag": "CANVAS",
+   "r": [
+    0,
+    0,
+    1440,
+    900
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgi": "none",
+   "radius": "0px",
+   "border": "",
+   "sh": "",
+   "filter": "",
+   "backdrop": "",
+   "op": "1",
+   "blend": "",
+   "t": "",
+   "persp": "",
+   "mask": "none",
+   "src": "",
+   "overflow": "clip"
+  },
+  {
+   "n": "section",
+   "tag": "SECTION",
+   "r": [
+    0,
+    900,
+    1440,
+    838
+   ],
+   "bg": "rgb(249, 250, 247)",
+   "bgi": "none",
+   "radius": "0px",
+   "border": "",
+   "sh": "",
+   "filter": "",
+   "backdrop": "",
+   "op": "1",
+   "blend": "",
+   "t": "",
+   "persp": "",
+   "mask": "none",
+   "src": "",
+   "overflow": "hidden auto"
+  }
+ ],
+ "canvases": [
+  {
+   "r": [
+    0,
+    0,
+    1440,
+    900
+   ],
+   "parent": "div",
+   "gp": "div",
+   "ggp": "div"
+  }
+ ],
+ "bodyBg": "rgb(16, 16, 18)",
+ "htmlBg": "rgba(0, 0, 0, 0)",
+ "appear": null,
+ "appearTargets": [],
+ "sections": [
+  {
+   "n": "section",
+   "r": [
+    0,
+    0,
+    1440,
+    9638
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "pt": "0px",
+   "pb": "0px",
+   "gap": "normal",
+   "radius": "0px"
+  }
+ ],
+ "radiusHist": [
+  [
+   "50px",
+   34
+  ],
+  [
+   "8px",
+   10
+  ],
+  [
+   "6px",
+   7
+  ],
+  [
+   "7px",
+   3
+  ],
+  [
+   "5px",
+   1
+  ],
+  [
+   "10px",
+   1
+  ],
+  [
+   "15px",
+   1
+  ]
+ ],
+ "shadowHist": [
+  [
+   "rgb(138, 138, 138) 0px 0px 20px 0px",
+   1
+  ]
+ ],
+ "backdropHist": [
+  [
+   "blur(5px)",
+   1
+  ]
+ ],
+ "filterHist": [],
+ "fontHist": [
+  [
+   "PPMoriRegular 32px w100 ls-1px",
+   689
+  ],
+  [
+   "PPMoriRegular 14px w400 lsnormal",
+   370
+  ],
+  [
+   "PPMoriRegular 12px w400 ls0.5px",
+   132
+  ],
+  [
+   "PPMoriRegular 52px w400 lsnormal",
+   15
+  ],
+  [
+   "PPMoriRegular 14px w400 ls0.2px",
+   12
+  ],
+  [
+   "PPMoriRegular 12px w400 ls0.2px",
+   7
+  ],
+  [
+   "PPMoriRegular 14px w700 lsnormal",
+   6
+  ],
+  [
+   "PPMoriSemiBold 72px w700 ls-0.5px",
+   6
+  ],
+  [
+   "PPMoriRegular 16px w400 ls0.4px",
+   5
+  ],
+  [
+   "PPMoriRegular 150px w500 ls-6px",
+   2
+  ],
+  [
+   "PPMoriRegular 216px w400 ls-14.4px",
+   2
+  ],
+  [
+   "PPMoriRegular 16px w700 ls0.5px",
+   1
+  ]
+ ],
+ "gradHist": [],
+ "scripts": [
+  "https://inspirux.com/_next/static/chunks/polyfills-78c92fac7aa8fdd8.js",
+  "https://inspirux.com/_next/static/chunks/webpack-afc7ce83b0bd2dff.js",
+  "https://inspirux.com/_next/static/chunks/framework-ecc4130bc7a58a64.js",
+  "https://inspirux.com/_next/static/chunks/main-a2882bbda5f7d018.js",
+  "https://inspirux.com/_next/static/chunks/pages/_app-517de2c3e43b92a5.js",
+  "https://inspirux.com/_next/static/chunks/614-71f8ef866fd2c115.js",
+  "https://inspirux.com/_next/static/chunks/900-2ff366edd0a281d1.js",
+  "https://inspirux.com/_next/static/chunks/pages/index-5d3fa23d90ffd7b7.js",
+  "https://inspirux.com/_next/static/pz7hrDBw0mdh26VtA6LgW/_buildManifest.js",
+  "https://inspirux.com/_next/static/pz7hrDBw0mdh26VtA6LgW/_ssgManifest.js"
+ ],
+ "html": [
+  "Grainient.b-cdn.net/Inspirux/inspiruxSocial.png",
+  "Grainient.b-cdn.net/Inspirux/inspiruxSocial.png",
+  "Grainient.b-cdn.net/Inspirux/inspiruxSocial.png",
+  "Grainient.b-cdn.net/Inspirux/logo.svg",
+  "three.js r157",
+  "Grainient.b-cdn.net/Inspirux/greenArrow.svg",
+  "Grainient.b-cdn.net/Inspirux/new%20short.mp4",
+  "Grainient.b-cdn.net/Inspirux/Inspirux-Showreel.mp4",
+  "Grainient.b-cdn.net/Inspirux/new%20short.mp4",
+  "Grainient.b-cdn.net/Inspirux/orbital_work.webp",
+  "Grainient.b-cdn.net/Inspirux/arrowRight.svg",
+  "Grainient.b-cdn.net/Inspirux/orbital_work.webp&quot;); clip-path:",
+  "Grainient.b-cdn.net/Inspirux/WorkSingleBentley1.png",
+  "Grainient.b-cdn.net/Inspirux/arrowRight.svg",
+  "Grainient.b-cdn.net/Inspirux/WorkSingleBentley1.png&quot;); clip-",
+  "Grainient.b-cdn.net/Inspirux/WorkSingleAcreMade1.png",
+  "Grainient.b-cdn.net/Inspirux/arrowRight.svg",
+  "Grainient.b-cdn.net/Inspirux/WorkSingleAcreMade1.png&quot;); clip",
+  "Grainient.b-cdn.net/Inspirux/munch_work.webp",
+  "Grainient.b-cdn.net/Inspirux/arrowRight.svg"
+ ],
+ "hover": [
+  {
+   "t": "EXPLORE WORKS",
+   "after": [
+    "A bg=rgb(59, 78, 255) bgi=none sh=none t=none op=1",
+    "DIV bg=rgba(0, 0, 0, 0) bgi=none sh=none t=none op=1",
+    "P bg=rgba(0, 0, 0, 0) bgi=none sh=none t=none op=1"
+   ]
+  }
+ ]
+}

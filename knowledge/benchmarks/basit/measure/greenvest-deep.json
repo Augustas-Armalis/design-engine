@@ -1,0 +1,1012 @@
+{
+ "headline": {
+  "text": "Be part of 200K",
+  "tag": "H1",
+  "fam": "Inter, \"Inter Placeholder\", sans-serif",
+  "size": "60px",
+  "lh": "72px",
+  "w": "700",
+  "ls": "-3px",
+  "color": "rgb(17, 17, 17)",
+  "bgi": "none",
+  "clip": "border-box",
+  "fill": "rgb(17, 17, 17)",
+  "style": "normal",
+  "align": "right",
+  "r": [
+   40,
+   150,
+   605,
+   72
+  ],
+  "wrap": "wrap",
+  "feat": "normal"
+ },
+ "headlineSpans": [
+  {
+   "text": "Be",
+   "tag": "SPAN",
+   "fam": "Inter, \"Inter Placeholder\", sans-serif",
+   "size": "60px",
+   "lh": "72px",
+   "w": "700",
+   "ls": "-3px",
+   "color": "rgb(17, 17, 17)",
+   "bgi": "none",
+   "clip": "border-box",
+   "fill": "rgb(17, 17, 17)",
+   "style": "normal",
+   "align": "right",
+   "r": [
+    230,
+    150,
+    69,
+    72
+   ],
+   "wrap": "nowrap",
+   "feat": "normal"
+  }
+ ],
+ "sub": {
+  "text": "Your Trusted Partner in Financial Growth – Simplifying Solutions, Maximizing Opportunities",
+  "tag": "P",
+  "fam": "Inter, sans-serif",
+  "size": "16px",
+  "lh": "25.6px",
+  "w": "400",
+  "ls": "-0.32px",
+  "color": "rgb(17, 17, 17)",
+  "bgi": "none",
+  "clip": "border-box",
+  "fill": "rgb(17, 17, 17)",
+  "style": "normal",
+  "align": "center",
+  "r": [
+   40,
+   304,
+   1360,
+   26
+  ],
+  "wrap": "wrap",
+  "feat": "normal"
+ },
+ "headToSub": 82,
+ "eyebrow": {
+  "text": "Contact",
+  "tag": "P",
+  "fam": "Inter, \"Inter Placeholder\", sans-serif",
+  "size": "16px",
+  "lh": "19.2px",
+  "w": "600",
+  "ls": "-0.32px",
+  "color": "rgb(17, 17, 17)",
+  "bgi": "none",
+  "clip": "border-box",
+  "fill": "rgb(17, 17, 17)",
+  "style": "normal",
+  "align": "start",
+  "r": [
+   1332,
+   54,
+   59,
+   19
+  ],
+  "wrap": "nowrap",
+  "feat": "normal"
+ },
+ "eyebrowPill": {
+  "r": [
+   1305,
+   20,
+   115,
+   47
+  ],
+  "bg": "rgb(124, 242, 165)",
+  "bgi": "none",
+  "radius": "50px",
+  "border": "0px rgb(0, 0, 238)",
+  "sh": "none",
+  "pad": "14px 28px",
+  "backdrop": "none"
+ },
+ "eyebrowGap": 83,
+ "buttons": [
+  {
+   "t": "Contact Contact",
+   "r": [
+    1305,
+    20,
+    115,
+    47
+   ],
+   "font": "Inter 16px w600 ls=-0.32px c=rgb(17, 17, 17)",
+   "layers": [
+    {
+     "n": "Regular btn",
+     "r": [
+      1305,
+      20,
+      115,
+      47
+     ],
+     "bg": "rgb(124, 242, 165)",
+     "bgi": "none",
+     "radius": "50px",
+     "border": "",
+     "sh": "",
+     "filter": "",
+     "backdrop": "",
+     "op": "1",
+     "blend": ""
+    }
+   ]
+  },
+  {
+   "t": "Download Now Download Now",
+   "r": [
+    520,
+    360,
+    192,
+    48
+   ],
+   "font": "Inter 16px w600 ls=-0.32px c=rgb(255, 255, 255)",
+   "layers": [
+    {
+     "n": "Arrow btn",
+     "r": [
+      520,
+      360,
+      192,
+      48
+     ],
+     "bg": "rgb(17, 17, 17)",
+     "bgi": "none",
+     "radius": "50px",
+     "border": "",
+     "sh": "",
+     "filter": "",
+     "backdrop": "",
+     "op": "1",
+     "blend": ""
+    },
+    {
+     "n": "arrow",
+     "r": [
+      671,
+      367,
+      34,
+      34
+     ],
+     "bg": "rgb(255, 255, 255)",
+     "bgi": "none",
+     "radius": "100px",
+     "border": "",
+     "sh": "",
+     "filter": "",
+     "backdrop": "",
+     "op": "1",
+     "blend": ""
+    }
+   ]
+  }
+ ],
+ "nav": {
+  "r": [
+   0,
+   0,
+   1440,
+   87
+  ],
+  "pos": "fixed",
+  "shells": [
+   {
+    "n": "desktop",
+    "r": [
+     0,
+     0,
+     1440,
+     87
+    ],
+    "bg": "rgb(255, 255, 255)",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 0)",
+    "bb": "0px rgb(0, 0, 0)",
+    "backdrop": "none",
+    "sh": "none",
+    "pos": "relative"
+   }
+  ],
+  "links": [
+   "Green Vest",
+   "Home Home",
+   "Features Features",
+   "About About",
+   "Blogs Blogs",
+   "Contact Contact"
+  ]
+ },
+ "layers": [
+  {
+   "n": "div",
+   "tag": "DIV",
+   "r": [
+    0,
+    0,
+    1440,
+    8414
+   ],
+   "bg": "rgb(255, 255, 255)",
+   "bgi": "none",
+   "radius": "0px",
+   "border": "",
+   "sh": "",
+   "filter": "",
+   "backdrop": "",
+   "op": "1",
+   "blend": "",
+   "t": "",
+   "persp": "",
+   "mask": "none",
+   "src": "",
+   "overflow": "hidden"
+  }
+ ],
+ "canvases": [],
+ "bodyBg": "rgb(255, 255, 255)",
+ "htmlBg": "rgba(0, 0, 0, 0)",
+ "appear": {
+  "1vh2gx0": {
+   "default": {
+    "initial": {
+     "opacity": 0.001,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "x": 0,
+     "y": 10
+    },
+    "animate": {
+     "opacity": 1,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "transition": {
+      "delay": 0.1,
+      "duration": 0.5,
+      "ease": [
+       0.44,
+       0,
+       0.56,
+       1
+      ],
+      "type": "tween"
+     },
+     "x": 0,
+     "y": 0
+    }
+   }
+  },
+  "mufeax": {
+   "default": {
+    "initial": {
+     "opacity": 0.001,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "x": 0,
+     "y": 20
+    },
+    "animate": {
+     "opacity": 1,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "transition": {
+      "bounce": 0.2,
+      "delay": 0.6,
+      "duration": 1,
+      "type": "spring"
+     },
+     "x": 0,
+     "y": 0
+    }
+   }
+  },
+  "1a4uby0": {
+   "default": {
+    "initial": {
+     "opacity": 0.001,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "x": 0,
+     "y": 20
+    },
+    "animate": {
+     "opacity": 1,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "transition": {
+      "bounce": 0.2,
+      "delay": 0.8,
+      "duration": 1,
+      "type": "spring"
+     },
+     "x": 0,
+     "y": 0
+    }
+   },
+   "18bmr5d": {
+    "initial": {
+     "opacity": 0.001,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "x": 0,
+     "y": 20
+    },
+    "animate": {
+     "opacity": 1,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "transition": {
+      "bounce": 0.2,
+      "delay": 0.8,
+      "duration": 1,
+      "type": "spring"
+     },
+     "x": 0,
+     "y": 0
+    }
+   },
+   "1ie9x3f": {
+    "initial": {
+     "opacity": 0.001,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "x": 0,
+     "y": 20
+    },
+    "animate": {
+     "opacity": 1,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "transition": {
+      "bounce": 0.2,
+      "delay": 0.8,
+      "duration": 1,
+      "type": "spring"
+     },
+     "x": 0,
+     "y": 0
+    }
+   }
+  },
+  "ebv57v": {
+   "default": {
+    "initial": {
+     "opacity": 0.001,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "x": 0,
+     "y": 20
+    },
+    "animate": {
+     "opacity": 1,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "transition": {
+      "bounce": 0.2,
+      "delay": 0.9,
+      "duration": 1,
+      "type": "spring"
+     },
+     "x": 0,
+     "y": 0
+    }
+   },
+   "18bmr5d": {
+    "initial": {
+     "opacity": 0.001,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "x": 0,
+     "y": 20
+    },
+    "animate": {
+     "opacity": 1,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "transition": {
+      "bounce": 0.2,
+      "delay": 0.9,
+      "duration": 1,
+      "type": "spring"
+     },
+     "x": 0,
+     "y": 0
+    }
+   },
+   "1ie9x3f": {
+    "initial": {
+     "opacity": 0.001,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "x": 0,
+     "y": 20
+    },
+    "animate": {
+     "opacity": 1,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "transition": {
+      "bounce": 0.2,
+      "delay": 0.9,
+      "duration": 1,
+      "type": "spring"
+     },
+     "x": 0,
+     "y": 0
+    }
+   }
+  },
+  "11k45v2": {
+   "default": {
+    "initial": {
+     "opacity": 0.001,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "x": 0,
+     "y": 10
+    },
+    "animate": {
+     "opacity": 1,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "transition": {
+      "bounce": 0.2,
+      "delay": 1.2,
+      "duration": 1,
+      "type": "spring"
+     },
+     "x": 0,
+     "y": 0
+    }
+   }
+  },
+  "c1sj8e": {
+   "default": {
+    "initial": {
+     "opacity": 0.001,
+     "rotate": 0,
+     "rotateX": 40,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "x": 0,
+     "y": 0
+    },
+    "animate": {
+     "opacity": 1,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "transition": {
+      "bounce": 0.2,
+      "delay": 1.4,
+      "duration": 2,
+      "type": "spring"
+     },
+     "x": 0,
+     "y": 0
+    }
+   },
+   "1ie9x3f": {
+    "initial": {
+     "opacity": 0.001,
+     "rotate": 0,
+     "rotateX": 40,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "x": 0,
+     "y": 0
+    },
+    "animate": {
+     "opacity": 1,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "transition": {
+      "bounce": 0.2,
+      "delay": 1.4,
+      "duration": 2,
+      "type": "spring"
+     },
+     "x": 0,
+     "y": 0
+    }
+   },
+   "18bmr5d": {
+    "initial": {
+     "opacity": 0.001,
+     "rotate": 0,
+     "rotateX": 40,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "x": 0,
+     "y": 0
+    },
+    "animate": {
+     "opacity": 1,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "transition": {
+      "bounce": 0.2,
+      "delay": 1.4,
+      "duration": 2,
+      "type": "spring"
+     },
+     "x": 0,
+     "y": 0
+    }
+   }
+  },
+  "uf3vmb": {
+   "default": {
+    "initial": {
+     "opacity": 0.001,
+     "rotate": 0,
+     "rotateX": 30,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "x": 0,
+     "y": -50
+    },
+    "animate": {
+     "opacity": 1,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "transition": {
+      "bounce": 0.2,
+      "delay": 1.6,
+      "duration": 1.2,
+      "type": "spring"
+     },
+     "x": 0,
+     "y": 0
+    },
+    "transformTemplate": "translate(-50%, -50%) __Appear_Animation_Transform__"
+   },
+   "1ie9x3f": {
+    "initial": {
+     "opacity": 0.001,
+     "rotate": 0,
+     "rotateX": 30,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "x": 0,
+     "y": -50
+    },
+    "animate": {
+     "opacity": 1,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "transition": {
+      "bounce": 0.2,
+      "delay": 1.6,
+      "duration": 1.2,
+      "type": "spring"
+     },
+     "x": 0,
+     "y": 0
+    },
+    "transformTemplate": "translate(-50%, -50%) __Appear_Animation_Transform__"
+   },
+   "18bmr5d": {
+    "initial": {
+     "opacity": 0.001,
+     "rotate": 0,
+     "rotateX": 30,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "x": 0,
+     "y": -50
+    },
+    "animate": {
+     "opacity": 1,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "transition": {
+      "bounce": 0.2,
+      "delay": 1.6,
+      "duration": 1.2,
+      "type": "spring"
+     },
+     "x": 0,
+     "y": 0
+    },
+    "transformTemplate": "translate(-50%, -50%) __Appear_Animation_Transform__"
+   }
+  },
+  "3brese": {
+   "default": {
+    "initial": {
+     "opacity": 0.001,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 0.5,
+     "skewX": 0,
+     "skewY": 0,
+     "x": 0,
+     "y": 0
+    },
+    "animate": {
+     "opacity": 1,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "transition": {
+      "delay": 1.8,
+      "duration": 1,
+      "ease": [
+       0.44,
+       0,
+       0.56,
+       1
+      ],
+      "type": "tween"
+     },
+     "x": 0,
+     "y": 0
+    }
+   }
+  }
+ },
+ "appearTargets": [
+  {
+   "id": "1vh2gx0",
+   "n": "Profile",
+   "r": [
+    650,
+    160,
+    140,
+    53
+   ],
+   "txt": ""
+  },
+  {
+   "id": "mufeax",
+   "n": "div",
+   "r": [
+    40,
+    304,
+    1360,
+    26
+   ],
+   "txt": "Your Trusted Partner in Financial Growth"
+  },
+  {
+   "id": "1a4uby0",
+   "n": "div",
+   "r": [
+    520,
+    360,
+    192,
+    48
+   ],
+   "txt": "Download Now Download Now"
+  },
+  {
+   "id": "ebv57v",
+   "n": "div",
+   "r": [
+    732,
+    360,
+    188,
+    47
+   ],
+   "txt": "Become a Partner Become a Partner"
+  },
+  {
+   "id": "11k45v2",
+   "n": "rating",
+   "r": [
+    40,
+    438,
+    1360,
+    26
+   ],
+   "txt": "Rated 4.7/5"
+  },
+  {
+   "id": "c1sj8e",
+   "n": "Phone img",
+   "r": [
+    520,
+    513,
+    400,
+    757
+   ],
+   "txt": ""
+  },
+  {
+   "id": "uf3vmb",
+   "n": "Card image",
+   "r": [
+    552,
+    568,
+    500,
+    330
+   ],
+   "txt": ""
+  },
+  {
+   "id": "3brese",
+   "n": "gradient blur",
+   "r": [
+    516,
+    551,
+    408,
+    682
+   ],
+   "txt": ""
+  }
+ ],
+ "sections": [
+  {
+   "n": "div",
+   "r": [
+    0,
+    0,
+    1440,
+    87
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "pt": "0px",
+   "pb": "0px",
+   "gap": "normal",
+   "radius": "0px"
+  },
+  {
+   "n": "main",
+   "r": [
+    0,
+    0,
+    1440,
+    7904
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "pt": "150px",
+   "pb": "150px",
+   "gap": "150px",
+   "radius": "0px"
+  }
+ ],
+ "radiusHist": [
+  [
+   "20px",
+   16
+  ],
+  [
+   "50px",
+   12
+  ],
+  [
+   "30px",
+   4
+  ],
+  [
+   "8px",
+   2
+  ],
+  [
+   "100px",
+   1
+  ],
+  [
+   "10px",
+   1
+  ]
+ ],
+ "shadowHist": [
+  [
+   "rgba(0, 0, 0, 0.05) 0px 1px 20px 3px",
+   1
+  ],
+  [
+   "rgb(124, 242, 165) 0px 0px 0px 0px inset, rgba(0, 0, 0, 0.01) 0px 3px 4px 0px",
+   1
+  ],
+  [
+   "rgba(0, 0, 0, 0.26) 0px 0.636953px 1.14652px -1.125px, rgba(0, 0, 0, 0.24) 0px 1.9316px 3.47689px -2.25px, rgba(0, 0, 0, 0.192) 0px 5.10612px 9.19102px -3.375px, rgba(0, 0, 0, 0.03) 0px 16px 28.8px -4.5px",
+   1
+  ]
+ ],
+ "backdropHist": [
+  [
+   "blur(20px)",
+   2
+  ]
+ ],
+ "filterHist": [
+  [
+   "blur(100px)",
+   1
+  ]
+ ],
+ "fontHist": [
+  [
+   "Inter 60px w700 ls-3px",
+   57
+  ],
+  [
+   "Inter 16px w500 ls-0.48px",
+   28
+  ],
+  [
+   "Inter 16px w400 ls-0.32px",
+   25
+  ],
+  [
+   "Inter 14px w400 lsnormal",
+   25
+  ],
+  [
+   "Inter 16px w600 ls-0.32px",
+   19
+  ],
+  [
+   "Inter 22px w600 ls-0.66px",
+   10
+  ],
+  [
+   "Inter 40px w600 ls-2px",
+   7
+  ],
+  [
+   "Inter 18px w400 ls-0.36px",
+   6
+  ],
+  [
+   "Inter 28px w600 ls-0.84px",
+   2
+  ]
+ ],
+ "gradHist": [
+  [
+   "linear-gradient(140deg, rgba(235, 255, 225, 0.7) 0%, rgba(124, 242, 165, 0.7) 100%)",
+   3
+  ],
+  [
+   "linear-gradient(132deg, rgba(235, 255, 225, 0.5) 0%, rgba(124, 242, 165, 0.5) 100%)",
+   2
+  ],
+  [
+   "linear-gradient(119deg, rgba(235, 255, 225, 0.7) 0%, rgba(124, 242, 165, 0.7) 100%)",
+   1
+  ],
+  [
+   "linear-gradient(rgba(235, 255, 225, 0.7) 27%, rgba(124, 242, 165, 0.7) 100%)",
+   1
+  ]
+ ],
+ "scripts": [
+  "https://events.framer.com/script"
+ ],
+ "hover": [
+  {
+   "t": "Download Now Download Now",
+   "after": [
+    "A bg=rgb(17, 17, 17) bgi=none sh=none t=none op=1",
+    "link bg=rgba(0, 0, 0, 0) bgi=none sh=none t=none op=1",
+    "DIV bg=rgba(0, 0, 0, 0) bgi=none sh=none t=matrix(1, 0, 0, 1, 0, -0.051621) op=1",
+    "P bg=rgba(0, 0, 0, 0) bgi=none sh=none t=none op=1",
+    "DIV bg=rgba(0, 0, 0, 0) bgi=none sh=none t=matrix(1, 0, 0, 1, 0, -0.0510363) op=1",
+    "P bg=rgba(0, 0, 0, 0) bgi=none sh=none t=none op=1"
+   ]
+  }
+ ]
+}

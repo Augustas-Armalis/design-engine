@@ -1,0 +1,1202 @@
+{
+ "id": "taxo",
+ "url": "https://taxo.ai/",
+ "date": "2026-10-11",
+ "hero": {
+  "bgImages": [
+   {
+    "n": "Glow",
+    "r": [
+     1075,
+     7,
+     176,
+     56
+    ],
+    "bg": "radial-gradient(25% 40.5035% at 19.5625% 30.4375%, rgb(59, 128, 255) 0%, rgba(255, 255, 255, 0) 100%)",
+    "size": "auto",
+    "blend": "normal",
+    "op": "1",
+    "filter": "blur(15px)"
+   },
+   {
+    "n": "Stroke",
+    "r": [
+     1075,
+     7,
+     176,
+     56
+    ],
+    "bg": "radial-gradient(18.2041% 45.7996% at 19.5625% 30.4375%, rgb(59, 128, 255) 0%, rgba(255, 255, 255, 0) 100%)",
+    "size": "auto",
+    "blend": "normal",
+    "op": "1",
+    "filter": "none"
+   },
+   {
+    "n": "Glow",
+    "r": [
+     1256,
+     7,
+     134,
+     56
+    ],
+    "bg": "radial-gradient(25% 40.5035% at 19.5625% 30.4375%, rgb(59, 128, 255) 0%, rgba(255, 255, 255, 0) 100%)",
+    "size": "auto",
+    "blend": "normal",
+    "op": "1",
+    "filter": "blur(15px)"
+   },
+   {
+    "n": "Stroke",
+    "r": [
+     1256,
+     7,
+     134,
+     56
+    ],
+    "bg": "radial-gradient(18.2041% 45.7996% at 19.5625% 30.4375%, rgb(59, 128, 255) 0%, rgba(255, 255, 255, 0) 100%)",
+    "size": "auto",
+    "blend": "normal",
+    "op": "1",
+    "filter": "none"
+   },
+   {
+    "n": "Glow",
+    "r": [
+     632,
+     533,
+     176,
+     56
+    ],
+    "bg": "radial-gradient(25% 40.5035% at 19.5625% 30.4375%, rgb(59, 128, 255) 0%, rgba(255, 255, 255, 0) 100%)",
+    "size": "auto",
+    "blend": "normal",
+    "op": "1",
+    "filter": "blur(15px)"
+   },
+   {
+    "n": "Stroke",
+    "r": [
+     632,
+     533,
+     176,
+     56
+    ],
+    "bg": "radial-gradient(18.2041% 45.7996% at 19.5625% 30.4375%, rgb(59, 128, 255) 0%, rgba(255, 255, 255, 0) 100%)",
+    "size": "auto",
+    "blend": "normal",
+    "op": "1",
+    "filter": "none"
+   }
+  ],
+  "filters": [
+   {
+    "n": "Desktop",
+    "r": [
+     0,
+     0,
+     1440,
+     70
+    ],
+    "filter": "none",
+    "backdrop": "blur(20px)",
+    "bg": "rgba(8, 8, 8, 0.7)",
+    "op": "1"
+   },
+   {
+    "n": "Glow",
+    "r": [
+     1075,
+     7,
+     176,
+     56
+    ],
+    "filter": "blur(15px)",
+    "backdrop": "none",
+    "bg": "rgba(0, 0, 0, 0)",
+    "op": "1"
+   },
+   {
+    "n": "Glow",
+    "r": [
+     1256,
+     7,
+     134,
+     56
+    ],
+    "filter": "blur(15px)",
+    "backdrop": "none",
+    "bg": "rgba(0, 0, 0, 0)",
+    "op": "1"
+   },
+   {
+    "n": "Glow",
+    "r": [
+     632,
+     533,
+     176,
+     56
+    ],
+    "filter": "blur(15px)",
+    "backdrop": "none",
+    "bg": "rgba(0, 0, 0, 0)",
+    "op": "1"
+   }
+  ],
+  "blends": [],
+  "transforms": [],
+  "perspective": [],
+  "media": [
+   {
+    "tag": "CANVAS",
+    "n": "div",
+    "r": [
+     0,
+     0,
+     1440,
+     900
+    ],
+    "src": "",
+    "fit": "fill",
+    "radius": "0px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": null
+   }
+  ],
+  "svgNoise": 0,
+  "turb": [],
+  "canvas": [
+   {
+    "r": [
+     0,
+     0,
+     1440,
+     900
+    ],
+    "ctx": "",
+    "parent": "div"
+   }
+  ],
+  "radii": [
+   "Top 176x56 r=118px bg=rgba(255, 255, 255, 0.1) bd=0px rgb(0, 0, 238) sh=none",
+   "Glow 176x56 r=72px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 238) sh=none",
+   "Stroke 176x56 r=72px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 238) sh=none",
+   "Fill 170x50 r=114px bg=rgb(255, 255, 255) bd=0px rgb(0, 0, 238) sh=none",
+   "Top 134x56 r=118px bg=rgba(255, 255, 255, 0.1) bd=0px rgb(0, 0, 238) sh=none",
+   "Glow 134x56 r=72px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 238) sh=none",
+   "Stroke 134x56 r=72px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 238) sh=none",
+   "Fill 128x50 r=114px bg=rgb(255, 255, 255) bd=0px rgb(0, 0, 238) sh=none",
+   "Top 176x56 r=118px bg=rgba(255, 255, 255, 0.1) bd=0px rgb(0, 0, 238) sh=none",
+   "Glow 176x56 r=72px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 238) sh=none",
+   "Stroke 176x56 r=72px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 238) sh=none",
+   "Fill 170x50 r=114px bg=rgb(255, 255, 255) bd=0px rgb(0, 0, 238) sh=none",
+   "div 360x186 r=10px bg=rgb(45, 45, 45) bd=0px rgb(0, 0, 0) sh=rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset",
+   "input 145x38 r=50px bg=rgba(255, 255, 255, 0.05) bd=0px rgb(255, 255, 255) sh=none",
+   "input 145x38 r=50px bg=rgb(59, 128, 255) bd=0px rgb(255, 255, 255) sh=none"
+  ],
+  "texts": [
+   "Solutions | \"Source Serif 4\" 16px/22.4px w300 ls=0.16px c=rgb(255, 255, 255) tt=none @598,24,72,22",
+   "Blog | \"Source Serif 4\" 16px/22.4px w300 ls=0.16px c=rgb(255, 255, 255) tt=none @710,24,34,22",
+   "Careers | \"Source Serif 4\" 16px/22.4px w300 ls=0.16px c=rgb(255, 255, 255) tt=none @784,24,59,22",
+   "Request Demo | \"Source Serif 4\" 16px/22.4px w600 ls=normal c=rgb(8, 8, 8) tt=none @1108,24,111,22",
+   "Login | \"Source Serif 4\" 16px/22.4px w600 ls=normal c=rgb(8, 8, 8) tt=none @1301,24,44,22",
+   "Intelligent | \"Source Serif 4 Variable\" 120px/156px w400 ls=-6px c=rgb(255, 255, 255) tt=none @245,311,450,156",
+   "healthcare | \"Source Serif 4 Variable\" 120px/156px w400 ls=-6px c=rgb(255, 255, 255) tt=none @725,311,469,156",
+   "Agentic AI that handles the entire patient journey | \"Source Serif 4\" 16px/22.4px w300 ls=0.16px c=rgb(255, 255, 255) tt=none @50,481,1340,22",
+   "Request Demo | \"Source Serif 4\" 16px/22.4px w600 ls=normal c=rgb(8, 8, 8) tt=none @665,550,111,22",
+   "Cookie Settings | sans-serif 16px/normal w400 ls=normal c=rgb(255, 255, 255) tt=none @1298,852,112,18",
+   "Cookie Settings | \"Source Serif 4\" 20px/20px w400 ls=-0.4px c=rgb(255, 255, 255) tt=none @1090,733,300,20",
+   "We use cookies to improve your experience. Cookie  | Inter 14px/21px w400 ls=normal c=rgba(255, 255, 255, 0.5) tt=none @1090,763,300,42",
+   "Cookie Policy. | Inter 14px/21px w400 ls=normal c=rgba(255, 255, 255, 0.5) tt=none @1090,786,93,17",
+   "Cookie Policy | Inter 14px/21px w400 ls=normal c=rgb(255, 255, 255) tt=none @1090,786,89,17"
+  ],
+  "buttons": [
+   {
+    "t": "Solutions",
+    "r": [
+     598,
+     24,
+     72,
+     22
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "Blog",
+    "r": [
+     710,
+     24,
+     34,
+     22
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "Careers",
+    "r": [
+     784,
+     24,
+     59,
+     22
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "Request Demo",
+    "r": [
+     1075,
+     7,
+     176,
+     56
+    ],
+    "bg": "rgba(255, 255, 255, 0.1)",
+    "bgi": "none",
+    "radius": "118px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "radial-gradient(25% 40.5035% at 19.5625% 30.4375%, rgb(59, 128, 255) 0%, rgba(255, 255, 255, 0) 100%)",
+     "radius": "72px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "Login",
+    "r": [
+     1256,
+     7,
+     134,
+     56
+    ],
+    "bg": "rgba(255, 255, 255, 0.1)",
+    "bgi": "none",
+    "radius": "118px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "radial-gradient(25% 40.5035% at 19.5625% 30.4375%, rgb(59, 128, 255) 0%, rgba(255, 255, 255, 0) 100%)",
+     "radius": "72px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "Request Demo",
+    "r": [
+     632,
+     533,
+     176,
+     56
+    ],
+    "bg": "rgba(255, 255, 255, 0.1)",
+    "bgi": "none",
+    "radius": "118px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "radial-gradient(25% 40.5035% at 19.5625% 30.4375%, rgb(59, 128, 255) 0%, rgba(255, 255, 255, 0) 100%)",
+     "radius": "72px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "Cookie Settings",
+    "r": [
+     1298,
+     852,
+     112,
+     18
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "0px",
+    "border": "0px rgb(255, 255, 255)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(255, 255, 255)"
+    },
+    "font": "sans-serif 16px w400"
+   },
+   {
+    "t": "Cookie Policy",
+    "r": [
+     1090,
+     786,
+     89,
+     17
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "0px",
+    "border": "0px rgb(255, 255, 255)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(255, 255, 255)"
+    },
+    "font": "Inter 14px w400"
+   }
+  ],
+  "fonts": [
+   "Noto Serif Armenian 300",
+   "Noto Serif Armenian 700",
+   "Source Serif 4 300",
+   "Source Serif 4 600",
+   "Source Serif 4 Variable 200 900",
+   "Source Serif 4 400",
+   "Source Serif 4 700",
+   "Times Now SemiLight 400",
+   "Inter 400",
+   "Source Serif 4 Placeholder normal",
+   "Source Serif 4 Variable Placeholder normal",
+   "Noto Serif Armenian Placeholder normal",
+   "Times Now SemiLight Placeholder normal"
+  ],
+  "appear": "{\"g3uyaq\":{\"default\":{\"initial\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":-80},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0,\"delay\":0,\"duration\":1.2,\"type\":\"spring\"},\"x\":0,\"y\":0}}},\"1pnvo93\":{\"default\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1.2,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":0},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0,\"delay\":1.5,\"duration\":1.5,\"type\":\"spring\"},\"x\":0,\"y\":0}}},\"1fl7ga0\":{\"default\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":120},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0,\"delay\":0.2,\"duration\":1.2,\"type\":\"spring\"},\"x\":0,\"y\":0}}},\"2ttjn3\":{\"default\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":120},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0,\"delay\":0.4,\"duration\":1.2,\"type\":\"spring\"},\"x\":0,\"y\":0}}},\"b6dvk7\":{\"default\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":20},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0,\"delay\":0.8,\"duration\":1.2,\"type\":\"spring\"},\"x\":0,\"y\":0}}},\"15g04zr\":{\"default\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":20},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0,\"delay\":1,\"duration\":1.2,\"type\":\"spring\"},\"x\":0,\"y\":0}}}}",
+  "anims": [
+   {
+    "name": "Animation",
+    "tgt": "div",
+    "dur": 650,
+    "delay": 0,
+    "ease": "linear(0 0%, 0.0212 1.5625%, 0.0703 3.125%, 0.1328 4.6875%, 0.2001 6.25%, 0.2675 7.8125%, 0.3323 9.375%, 0.3932 10.9375%, 0.4496 12.5%, 0.5015 14.0625%, 0.5488 15.625%, 0.5919 17.1875%, 0.6311 18.75%, 0.6665 20.3125%, 0.6986 21.875%, 0.7277 23.4375%, 0.7539 25%, 0.7777 26.5625%, 0.7991 28.125%, 0.8185 29.6875%, 0.836 31.25%, 0.8519 32.8125%, 0.8662 34.375%, 0.8791 35.9375%, 0.8908 37.5%, 0.9013 39.0625%, 0.9109 40.625%, 0.9195 42.1875%, 0.9272 43.75%, 0.9343 45.3125%, 0.9406 46.875%, 0.9464 48.4375%, 0.9515 50%, 0.9562 51.5625%, 0.9604 53.125%, 0.9643 54.6875%, 0.9677 56.25%, 0.9708 57.8125%, 0.9736 59.375%, 0.9762 60.9375%, 0.9785 62.5%, 0.9806 64.0625%, 0.9824 65.625%, 0.9841 67.1875%, 0.9857 68.75%, 0.9871 70.3125%, 0.9883 71.875%, 0.9894 73.4375%, 0.9905 75%, 0.9914 76.5625%, 0.9922 78.125%, 0.993 79.6875%, 0.9936 81.25%, 0.9943 82.8125%, 0.9948 84.375%, 0.9953 85.9375%, 0.9958 87.5%, 0.9962 89.0625%, 0.9965 90.625%, 0.9969 92.1875%, 0.9972 93.75%, 0.9975 95.3125%, 0.9977 96.875%, 0.9979 98.4375%, 1 100%)",
+    "iter": 1,
+    "kf": "[{\"offset\":null,\"easing\":\"linear\",\"composite\":\"auto\",\"opacity\":\"1\",\"computedOffset\":0},{\"offset\":null,\"easing\":\"linear\",\"composite\":\"auto\",\"opacity\":\"0\",\"computedOffset\":1}]"
+   }
+  ]
+ },
+ "hover": [
+  {
+   "n": "DIV",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgi": "none",
+   "sh": "none",
+   "t": "none",
+   "r": "0px"
+  },
+  {
+   "n": "Text",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgi": "none",
+   "sh": "none",
+   "t": "none",
+   "r": "0px"
+  },
+  {
+   "n": "A",
+   "bg": "rgba(255, 255, 255, 0.1)",
+   "bgi": "none",
+   "sh": "none",
+   "t": "none",
+   "r": "118px"
+  },
+  {
+   "n": "DIV",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgi": "none",
+   "sh": "none",
+   "t": "none",
+   "r": "0px"
+  }
+ ],
+ "page": {
+  "vw": 1440,
+  "pageHeight": 5863,
+  "title": "Taxo - Intelligent Healthcare",
+  "htmlBg": "rgba(0, 0, 0, 0)",
+  "bodyBg": "rgb(8, 8, 8)",
+  "bodyColor": "rgb(0, 0, 0)",
+  "colorScheme": "normal",
+  "h1": {
+   "text": "Intelligent",
+   "family": "\"Source Serif 4 Variable\", \"Source Serif 4 Variable Placeholder\", seri",
+   "size": "120px",
+   "weight": "400",
+   "lh": "156px",
+   "ls": "-6px",
+   "color": "rgb(255, 255, 255)",
+   "tt": "none",
+   "align": "start",
+   "w": 450,
+   "h": 156,
+   "top": 311,
+   "left": 245,
+   "tag": "h1",
+   "balance": "nowrap"
+  },
+  "largestHeroText": {
+   "text": "Intelligent",
+   "family": "\"Source Serif 4 Variable\", \"Source Serif 4 Variable Placeholder\", seri",
+   "size": "120px",
+   "weight": "400",
+   "lh": "156px",
+   "ls": "-6px",
+   "color": "rgb(255, 255, 255)",
+   "tt": "none",
+   "align": "start",
+   "w": 450,
+   "h": 156,
+   "top": 311,
+   "left": 245,
+   "tag": "h1",
+   "balance": "nowrap"
+  },
+  "h2": [
+   {
+    "text": "Taxo is an AI-powered platform for the front desk of clinics, designed",
+    "family": "\"Source Serif 4 Variable\", \"Source Serif 4 Variable Placeholder\", seri",
+    "size": "48px",
+    "weight": "400",
+    "lh": "52.8px",
+    "ls": "normal",
+    "color": "rgb(255, 255, 255)",
+    "tt": "none",
+    "align": "start",
+    "w": 1100,
+    "h": 211,
+    "top": 1087,
+    "left": 50,
+    "tag": "h2",
+    "balance": "wrap"
+   },
+   {
+    "text": "0",
+    "family": "\"Times Now SemiLight\", \"Times Now SemiLight Placeholder\", sans-serif",
+    "size": "200px",
+    "weight": "400",
+    "lh": "200px",
+    "ls": "-6px",
+    "color": "rgb(255, 255, 255)",
+    "tt": "none",
+    "align": "center",
+    "w": 188,
+    "h": 200,
+    "top": 1874,
+    "left": 50,
+    "tag": "h2",
+    "balance": "wrap"
+   },
+   {
+    "text": "0",
+    "family": "\"Times Now SemiLight\", \"Times Now SemiLight Placeholder\", sans-serif",
+    "size": "200px",
+    "weight": "400",
+    "lh": "200px",
+    "ls": "-6px",
+    "color": "rgb(255, 255, 255)",
+    "tt": "none",
+    "align": "center",
+    "w": 188,
+    "h": 200,
+    "top": 1874,
+    "left": 524,
+    "tag": "h2",
+    "balance": "wrap"
+   },
+   {
+    "text": "0",
+    "family": "\"Times Now SemiLight\", \"Times Now SemiLight Placeholder\", sans-serif",
+    "size": "200px",
+    "weight": "400",
+    "lh": "200px",
+    "ls": "-6px",
+    "color": "rgb(255, 255, 255)",
+    "tt": "none",
+    "align": "center",
+    "w": 282,
+    "h": 200,
+    "top": 1874,
+    "left": 997,
+    "tag": "h2",
+    "balance": "wrap"
+   }
+  ],
+  "h3": [
+   {
+    "text": "Capacity unlocked",
+    "family": "\"Source Serif 4 Variable\", \"Source Serif 4 Variable Placeholder\", seri",
+    "size": "24px",
+    "weight": "400",
+    "lh": "28.8px",
+    "ls": "0.24px",
+    "color": "rgb(255, 255, 255)",
+    "tt": "none",
+    "align": "start",
+    "w": 393,
+    "h": 29,
+    "top": 2084,
+    "left": 50,
+    "tag": "h3",
+    "balance": "wrap"
+   },
+   {
+    "text": "More patients seen",
+    "family": "\"Source Serif 4 Variable\", \"Source Serif 4 Variable Placeholder\", seri",
+    "size": "24px",
+    "weight": "400",
+    "lh": "28.8px",
+    "ls": "0.24px",
+    "color": "rgb(255, 255, 255)",
+    "tt": "none",
+    "align": "start",
+    "w": 393,
+    "h": 29,
+    "top": 2084,
+    "left": 524,
+    "tag": "h3",
+    "balance": "wrap"
+   }
+  ],
+  "p": [
+   {
+    "text": "Agentic AI that handles the entire patient journey: from referrals and",
+    "family": "\"Source Serif 4\", \"Source Serif 4 Placeholder\", serif",
+    "size": "16px",
+    "weight": "300",
+    "lh": "22.4px",
+    "ls": "0.16px",
+    "color": "rgb(255, 255, 255)",
+    "tt": "none",
+    "align": "center",
+    "w": 1340,
+    "h": 22,
+    "top": 481,
+    "left": 50,
+    "tag": "p",
+    "balance": "wrap"
+   },
+   {
+    "text": "Through its sophisticated omnichannel infrastructure, Taxo seamlessly ",
+    "family": "\"Source Serif 4\", \"Source Serif 4 Placeholder\", serif",
+    "size": "16px",
+    "weight": "300",
+    "lh": "22.4px",
+    "ls": "0.16px",
+    "color": "rgb(162, 162, 162)",
+    "tt": "none",
+    "align": "start",
+    "w": 600,
+    "h": 90,
+    "top": 1518,
+    "left": 50,
+    "tag": "p",
+    "balance": "wrap"
+   },
+   {
+    "text": "By eliminating manual bottlenecks and reducing administrative overhead",
+    "family": "\"Source Serif 4\", \"Source Serif 4 Placeholder\", serif",
+    "size": "16px",
+    "weight": "300",
+    "lh": "22.4px",
+    "ls": "0.16px",
+    "color": "rgb(162, 162, 162)",
+    "tt": "none",
+    "align": "start",
+    "w": 460,
+    "h": 90,
+    "top": 1518,
+    "left": 832,
+    "tag": "p",
+    "balance": "wrap"
+   }
+  ],
+  "heroP": {
+   "text": "Agentic AI that handles the entire patient journey: from referrals and",
+   "family": "\"Source Serif 4\", \"Source Serif 4 Placeholder\", serif",
+   "size": "16px",
+   "weight": "300",
+   "lh": "22.4px",
+   "ls": "0.16px",
+   "color": "rgb(255, 255, 255)",
+   "tt": "none",
+   "align": "center",
+   "w": 1340,
+   "h": 22,
+   "top": 481,
+   "left": 50,
+   "tag": "p",
+   "balance": "wrap"
+  },
+  "typeScale": [
+   [
+    "Source Serif 4|16|300",
+    1366
+   ],
+   [
+    "Source Serif 4 Variable|48|400",
+    384
+   ],
+   [
+    "Source Serif 4 Variable|24|400",
+    343
+   ],
+   [
+    "Source Serif 4|24|300",
+    290
+   ],
+   [
+    "Source Serif 4|14|400",
+    55
+   ],
+   [
+    "Source Serif 4|16|600",
+    29
+   ],
+   [
+    "Noto Serif Armenian|16|300",
+    24
+   ],
+   [
+    "Source Serif 4 Variable|120|400",
+    21
+   ],
+   [
+    "sans-serif|16|400",
+    15
+   ],
+   [
+    "Noto Serif Armenian|16|700",
+    11
+   ],
+   [
+    "Source Serif 4 Variable|200|400",
+    8
+   ],
+   [
+    "Times Now SemiLight|200|400",
+    3
+   ],
+   [
+    "Source Serif 4|60|700",
+    3
+   ]
+  ],
+  "fontFamiliesUsed": [
+   [
+    "Source Serif 4 Variable",
+    373
+   ],
+   [
+    "Source Serif 4",
+    37
+   ],
+   [
+    "Times Now SemiLight",
+    3
+   ],
+   [
+    "Noto Serif Armenian",
+    2
+   ],
+   [
+    "sans-serif",
+    1
+   ]
+  ],
+  "sizesDistinct": [
+   14,
+   16,
+   24,
+   48,
+   60,
+   120,
+   200
+  ],
+  "lsHist": [
+   [
+    "normal",
+    380
+   ],
+   [
+    "0.010em",
+    30
+   ],
+   [
+    "-0.030em",
+    3
+   ],
+   [
+    "-0.050em",
+    2
+   ],
+   [
+    "-0.020em",
+    1
+   ]
+  ],
+  "nav": {
+   "tag": "NAV",
+   "h": 70,
+   "outerH": 70,
+   "top": 0,
+   "w": 1440,
+   "position": "fixed",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgHeader": "rgba(8, 8, 8, 0.7)",
+   "backdrop": "none",
+   "bb": "0px none rgb(0, 0, 0)",
+   "shadow": "none",
+   "contentLeft": 50,
+   "contentRight": 1390,
+   "nLinks": 6,
+   "linkTexts": [
+    "Solutions",
+    "Blog",
+    "Careers",
+    "Request Demo",
+    "Login"
+   ],
+   "linkTypo": [
+    {
+     "text": "Solutions",
+     "family": "sans-serif",
+     "size": "12px",
+     "weight": "400",
+     "lh": "normal",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "tt": "none",
+     "align": "start",
+     "w": 72,
+     "h": 22,
+     "top": 24,
+     "left": 598,
+     "tag": "a",
+     "balance": "wrap"
+    },
+    {
+     "text": "Blog",
+     "family": "sans-serif",
+     "size": "12px",
+     "weight": "400",
+     "lh": "normal",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "tt": "none",
+     "align": "start",
+     "w": 34,
+     "h": 22,
+     "top": 24,
+     "left": 710,
+     "tag": "a",
+     "balance": "wrap"
+    },
+    {
+     "text": "Careers",
+     "family": "sans-serif",
+     "size": "12px",
+     "weight": "400",
+     "lh": "normal",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "tt": "none",
+     "align": "start",
+     "w": 59,
+     "h": 22,
+     "top": 24,
+     "left": 784,
+     "tag": "a",
+     "balance": "wrap"
+    }
+   ],
+   "hasLogoSvgOrImg": false,
+   "px": "0px/0px"
+  },
+  "ctas": [],
+  "chain": [
+   {
+    "tag": "h1.framer-text",
+    "w": 450,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "block",
+    "ta": "start"
+   },
+   {
+    "tag": "div.framer-1fl7ga0",
+    "w": 450,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "div.framer-ccx4xw",
+    "w": 1340,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "div.framer-1whapgx",
+    "w": 1440,
+    "maxW": "1600px",
+    "pl": "50px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "header.framer-1uyjcfz",
+    "w": 1440,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "main.framer-l6h7ub",
+    "w": 1440,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "div.framer-ekugZ",
+    "w": 0,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "contents",
+    "ta": "start"
+   },
+   {
+    "tag": "div.framer-aFmeK",
+    "w": 1440,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "div",
+    "w": 1440,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "block",
+    "ta": "start"
+   }
+  ],
+  "sections": [
+   {
+    "cls": "framer-cgwp05",
+    "tag": "section",
+    "top": 1050,
+    "h": 558,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 37,
+    "effPb": 0,
+    "contentW": 1242,
+    "contentL": 50,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "Taxo is an AI-powered platform for the front desk ",
+    "hSize": "48px",
+    "hAlign": "start"
+   },
+   {
+    "cls": "framer-r0v5sc",
+    "tag": "section",
+    "top": 1758,
+    "h": 478,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 117,
+    "effPb": 0,
+    "contentW": 1340,
+    "contentL": 50,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "57",
+    "hSize": "200px",
+    "hAlign": "center"
+   },
+   {
+    "cls": "framer-1japqvt-container",
+    "tag": "div",
+    "top": 2385,
+    "h": 739,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 30,
+    "effPb": 30,
+    "contentW": 1606,
+    "contentL": 50,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "Frequently Asked Questions",
+    "hSize": "48px",
+    "hAlign": "start"
+   },
+   {
+    "cls": "framer-guwtki",
+    "tag": "section",
+    "top": 3274,
+    "h": 754,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": null,
+    "effPb": null,
+    "contentW": null,
+    "contentL": null,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "",
+    "hSize": null,
+    "hAlign": null
+   },
+   {
+    "cls": "framer-s7vyfn-container",
+    "tag": "div",
+    "top": 4178,
+    "h": 1132,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 390,
+    "effPb": 0,
+    "contentW": 1340,
+    "contentL": 50,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "Security",
+    "hSize": "200px",
+    "hAlign": "center"
+   },
+   {
+    "cls": "framer-6pRFx",
+    "tag": "footer",
+    "top": 5360,
+    "h": 402,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 70,
+    "effPb": 50,
+    "contentW": 1340,
+    "contentL": 50,
+    "bg": "rgb(21, 21, 21)",
+    "heading": "",
+    "hSize": null,
+    "hAlign": null
+   }
+  ],
+  "radiusAll": [
+   [
+    "72px",
+    6
+   ],
+   [
+    "15px",
+    4
+   ],
+   [
+    "118px",
+    3
+   ],
+   [
+    "114px",
+    3
+   ],
+   [
+    "20px",
+    1
+   ]
+  ],
+  "radiusCards": [],
+  "radiusMedia": [
+   [
+    "15px",
+    1
+   ]
+  ],
+  "radiusInputs": [],
+  "shadows": [],
+  "borders": [],
+  "cardBgs": [],
+  "grids": [],
+  "flexGaps": [
+   [
+    "0px",
+    33
+   ],
+   [
+    "20px",
+    22
+   ],
+   [
+    "10px",
+    17
+   ],
+   [
+    "5px",
+    4
+   ],
+   [
+    "8px",
+    4
+   ],
+   [
+    "150px",
+    3
+   ],
+   [
+    "40px",
+    2
+   ],
+   [
+    "100px",
+    2
+   ]
+  ],
+  "bgByArea": [
+   [
+    "rgb(8, 8, 8)",
+    "136%"
+   ],
+   [
+    "rgb(59, 128, 255)",
+    "8%"
+   ],
+   [
+    "rgb(21, 21, 21)",
+    "7%"
+   ],
+   [
+    "rgb(255, 255, 255)",
+    "0%"
+   ],
+   [
+    "rgb(45, 45, 45)",
+    "0%"
+   ],
+   [
+    "rgb(162, 162, 162)",
+    "0%"
+   ]
+  ],
+  "textColors": [
+   [
+    "rgb(255, 255, 255)",
+    392
+   ],
+   [
+    "rgb(162, 162, 162)",
+    9
+   ],
+   [
+    "rgb(59, 128, 255)",
+    8
+   ],
+   [
+    "rgb(8, 8, 8)",
+    3
+   ],
+   [
+    "rgb(105, 105, 105)",
+    3
+   ],
+   [
+    "rgb(21, 21, 21)",
+    1
+   ]
+  ],
+  "linkColors": [
+   [
+    "rgb(255, 255, 255)",
+    10
+   ],
+   [
+    "rgb(8, 8, 8)",
+    3
+   ]
+  ],
+  "counts": {
+   "video": 0,
+   "canvas": 1,
+   "iframe": 2,
+   "svg": 0,
+   "img": 3,
+   "picture": 0,
+   "spline": 0,
+   "lottie": 0
+  },
+  "heroMedia": {
+   "video": false,
+   "canvas": true,
+   "bigImg": 0
+  },
+  "libs": {
+   "gsap": false,
+   "lenis": true,
+   "locomotive": false,
+   "next": false,
+   "framer": true,
+   "webflow": false,
+   "three": false,
+   "astro": false,
+   "nuxt": false,
+   "tailwindish": false
+  },
+  "sticky": 2,
+  "fixed": 2,
+  "snap": 0
+ },
+ "pageHeight": 5863
+}

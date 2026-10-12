@@ -1,0 +1,1420 @@
+{
+ "id": "archar",
+ "url": "https://archar.framer.website/",
+ "date": "2026-10-11",
+ "hero": {
+  "bgImages": [],
+  "filters": [],
+  "blends": [],
+  "transforms": [
+   {
+    "n": "div",
+    "r": [
+     1397,
+     649,
+     6,
+     6
+    ],
+    "t": "matrix(0.707107, 0.707107, -0.707107, 0.707107, 0, 0)",
+    "persp": "none",
+    "op": "1"
+   },
+   {
+    "n": "div",
+    "r": [
+     1397,
+     649,
+     6,
+     6
+    ],
+    "t": "matrix(0.707107, -0.707107, 0.707107, 0.707107, 0, 0)",
+    "persp": "none",
+    "op": "1"
+   },
+   {
+    "n": "p",
+    "r": [
+     1350,
+     861,
+     0,
+     0
+    ],
+    "t": "matrix(0.001, 0, 0, 0.001, 0, 0)",
+    "persp": "none",
+    "op": "1"
+   }
+  ],
+  "perspective": [],
+  "media": [
+   {
+    "tag": "IMG",
+    "n": "div",
+    "r": [
+     0,
+     0,
+     1440,
+     900
+    ],
+    "src": "https://framerusercontent.com/images/p9zLY0ctQZhfgAbFBX9W6kdlz8U.png",
+    "fit": "cover",
+    "radius": "0px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": [
+     1440,
+     937
+    ]
+   },
+   {
+    "tag": "IMG",
+    "n": "div",
+    "r": [
+     20,
+     1201,
+     350,
+     421
+    ],
+    "src": "https://framerusercontent.com/images/laTb38r7yc7PJ2YdRSAfjaewFs.png",
+    "fit": "cover",
+    "radius": "10px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": [
+     500,
+     601
+    ]
+   },
+   {
+    "tag": "VIDEO",
+    "n": "div",
+    "r": [
+     1210,
+     632,
+     210,
+     158
+    ],
+    "src": "https://framerusercontent.com/assets/TNg2xfI1CEpQsOAJClKAFpU1XR4.mp4",
+    "fit": "cover",
+    "radius": "0px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": null
+   }
+  ],
+  "svgNoise": 0,
+  "turb": [],
+  "canvas": [],
+  "radii": [
+   "Desktop 148x50 r=50px bg=rgb(243, 243, 243) bd=0px rgb(0, 0, 238) sh=none",
+   "Desktop 219x59 r=50px bg=rgb(255, 255, 255) bd=0px rgb(0, 0, 238) sh=none",
+   "Desktop 142x36 r=10px bg=rgb(0, 0, 0) bd=0px rgb(0, 0, 238) sh=rgba(0, 0, 0, 0.3) 0px 0px 20px 5px",
+   "Desktop 210x158 r=5px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 238) sh=none",
+   "Backdrop 138x36 r=10px bg=rgb(255, 255, 255) bd=0px rgb(0, 0, 238) sh=rgba(0, 0, 0, 0.17) 0px 0.602187px 1.56569px -1.5px, rgba(0, 0, 0, 0.14) 0px 2.28853px 5.95019px -3px, rgba(0, 0, 0, 0.02) 0px 10px 26px -4.",
+   "Bottom 140x38 r=11px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 238) sh=rgb(0, 0, 0) 0px 0px 0px 1px inset",
+   "Border 140x38 r=11px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 238) sh=rgb(0, 0, 0) 0px 0px 0px 1px inset"
+  ],
+  "texts": [
+   "NEW YORK TIME | Switzer 14px/16.8px w600 ls=-0.28px c=rgb(0, 0, 0) tt=none @20,37,104,17",
+   "- | Switzer 14px/16.8px w600 ls=-0.28px c=rgb(0, 0, 0) tt=none @129,37,5,17",
+   "12:27:33 AM | Switzer 14px/14px w600 ls=normal c=rgb(0, 0, 0) tt=none @139,38,80,14",
+   "HOME, | Switzer 14px/16.8px w600 ls=-0.28px c=rgb(0, 0, 0) tt=none @513,37,43,17",
+   "ABOUT, | Switzer 14px/16.8px w600 ls=-0.28px c=rgb(0, 0, 0) tt=none @576,37,48,17",
+   "WORKS, | Switzer 14px/16.8px w600 ls=-0.28px c=rgb(0, 0, 0) tt=none @644,37,53,17",
+   "SERVICES, | Switzer 14px/16.8px w600 ls=-0.28px c=rgb(0, 0, 0) tt=none @717,37,66,17",
+   "AWARDS, | Switzer 14px/16.8px w600 ls=-0.28px c=rgb(0, 0, 0) tt=none @804,37,61,17",
+   "STORE | Switzer 14px/16.8px w600 ls=-0.28px c=rgb(0, 0, 0) tt=none @884,37,43,17",
+   "Email me | Switzer 14px/16.8px w600 ls=-0.28px c=rgb(0, 0, 0) tt=none @1318,37,56,17",
+   "Hi, I multidisciplinary Product designer | Switzer 14px/16.8px w600 ls=-0.28px c=rgb(0, 0, 0) tt=none @20,494,140,34",
+   "Based on NewYork* Available worldwide | Switzer 14px/16.8px w600 ls=-0.28px c=rgb(0, 0, 0) tt=none @630,673,140,34",
+   "Archer | Switzer 176.18px/133.897px w600 ls=-10.5708px c=rgb(0, 0, 0) tt=none @20,548,700,162",
+   "Monroe | Switzer 176.18px/133.897px w600 ls=-10.5708px c=rgb(0, 0, 0) tt=none @20,709,700,162",
+   "See Featured Works | Switzer 14px/16.8px w600 ls=-0.28px c=rgb(0, 0, 0) tt=none @1247,832,127,17",
+   "Get This Template | Switzer 14px/16.8px w600 ls=-0.28px c=rgb(255, 255, 255) tt=none @1293,809,111,17",
+   "Monarque | Inter 22px/26.4px w600 ls=-0.88px c=rgb(255, 255, 255) tt=none @1264,736,101,26",
+   "Latest Template | Inter 14px/16.8px w400 ls=-0.56px c=rgb(255, 255, 255) tt=none @1267,765,97,17",
+   "Create a free website with Framer, the website bui | sans-serif 12px/normal w400 ls=normal c=rgb(0, 0, 238) tt=none @1350,861,0,0"
+  ],
+  "buttons": [
+   {
+    "t": "HOME,",
+    "r": [
+     513,
+     37,
+     43,
+     17
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "ABOUT,",
+    "r": [
+     576,
+     37,
+     48,
+     17
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "WORKS,",
+    "r": [
+     644,
+     37,
+     53,
+     17
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "SERVICES,",
+    "r": [
+     717,
+     37,
+     66,
+     17
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "AWARDS,",
+    "r": [
+     804,
+     37,
+     61,
+     17
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "STORE",
+    "r": [
+     884,
+     37,
+     43,
+     17
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "Email me",
+    "r": [
+     1272,
+     20,
+     148,
+     50
+    ],
+    "bg": "rgb(243, 243, 243)",
+    "bgi": "none",
+    "radius": "50px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "See Featured Works",
+    "r": [
+     1201,
+     811,
+     219,
+     59
+    ],
+    "bg": "rgb(255, 255, 255)",
+    "bgi": "none",
+    "radius": "50px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "Get This Template",
+    "r": [
+     1278,
+     799,
+     142,
+     36
+    ],
+    "bg": "rgb(0, 0, 0)",
+    "bgi": "none",
+    "radius": "10px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "rgba(0, 0, 0, 0.3) 0px 0px 20px 5px",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "Monarque Latest Template",
+    "r": [
+     1210,
+     632,
+     210,
+     158
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "5px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   }
+  ],
+  "fonts": [
+   "Inter 600",
+   "Inter 400",
+   "Switzer 600",
+   "Switzer 400",
+   "Inter Placeholder normal",
+   "Switzer Placeholder normal"
+  ],
+  "appear": "{\"1vhmn9s\":{\"default\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":-70,\"y\":0},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0,\"delay\":1,\"duration\":1.5,\"type\":\"spring\"},\"x\":0,\"y\":0}}},\"pcoqa3\":{\"default\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":-70,\"y\":0},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0,\"delay\":1.2,\"duration\":1.5,\"type\":\"spring\"},\"x\":0,\"y\":0},\"transformTemplate\":\"translateY(-50%) __Appear_Animation_Transform__\"},\"ncvlj9\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":-70,\"y\":0},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0,\"delay\":1.2,\"duration\":1.5,\"type\":\"spring\"},\"x\":0,\"y\":0}},\"1c9wn65\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":-70,\"y\":0},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0,\"delay\":1.2,\"duration\":1.5,\"type\":\"spring\"},\"x\":0,\"y\":0}}},\"1lmyihu\":{\"default\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":-100,\"y\":0},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0,\"delay\":0.5,\"duration\":1.5,\"type\":\"spring\"},\"x\":0,\"y\":0}}},\"a11odn\":{\"default\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":70,\"y\":0},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0,\"delay\":1.4,\"duration\":1.5,\"type\":\"spring\"},\"x\":0,\"y\":0}}},\"1o3cjco\":{\"default\":{\"initial\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1.4,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":0},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0,\"delay\":0,\"duration\":1.5,\"type\":\"spring\"},\"x\":0,\"y\":0}}}}",
+  "anims": [
+   {
+    "name": "Animation",
+    "tgt": "ul",
+    "dur": 5850,
+    "delay": 0,
+    "ease": "linear",
+    "iter": null,
+    "kf": "[{\"offset\":null,\"easing\":\"linear\",\"composite\":\"auto\",\"transform\":\"translateX(0px)\",\"computedOffset\":0},{\"offset\":null,\"easing\":\"linear\",\"composite\":\"auto\",\"transform\":\"translateX(-234px)\",\"computedOffset\":1}]"
+   },
+   {
+    "name": "Animation",
+    "tgt": "ul",
+    "dur": 6450,
+    "delay": 0,
+    "ease": "linear",
+    "iter": null,
+    "kf": "[{\"offset\":null,\"easing\":\"linear\",\"composite\":\"auto\",\"transform\":\"translateX(0px)\",\"computedOffset\":0},{\"offset\":null,\"easing\":\"linear\",\"composite\":\"auto\",\"transform\":\"translateX(-258px)\",\"computedOffset\":1}]"
+   },
+   {
+    "name": "Animation",
+    "tgt": "ul",
+    "dur": 9050,
+    "delay": 0,
+    "ease": "linear",
+    "iter": null,
+    "kf": "[{\"offset\":null,\"easing\":\"linear\",\"composite\":\"auto\",\"transform\":\"translateX(0px)\",\"computedOffset\":0},{\"offset\":null,\"easing\":\"linear\",\"composite\":\"auto\",\"transform\":\"translateX(-362px)\",\"computedOffset\":1}]"
+   },
+   {
+    "name": "Animation",
+    "tgt": "ul",
+    "dur": 6950,
+    "delay": 0,
+    "ease": "linear",
+    "iter": null,
+    "kf": "[{\"offset\":null,\"easing\":\"linear\",\"composite\":\"auto\",\"transform\":\"translateX(0px)\",\"computedOffset\":0},{\"offset\":null,\"easing\":\"linear\",\"composite\":\"auto\",\"transform\":\"translateX(-278px)\",\"computedOffset\":1}]"
+   },
+   {
+    "name": "Animation",
+    "tgt": "ul",
+    "dur": 7750,
+    "delay": 0,
+    "ease": "linear",
+    "iter": null,
+    "kf": "[{\"offset\":null,\"easing\":\"linear\",\"composite\":\"auto\",\"transform\":\"translateX(0px)\",\"computedOffset\":0},{\"offset\":null,\"easing\":\"linear\",\"composite\":\"auto\",\"transform\":\"translateX(-310px)\",\"computedOffset\":1}]"
+   },
+   {
+    "name": "Animation",
+    "tgt": "ul",
+    "dur": 5900,
+    "delay": 0,
+    "ease": "linear",
+    "iter": null,
+    "kf": "[{\"offset\":null,\"easing\":\"linear\",\"composite\":\"auto\",\"transform\":\"translateX(0px)\",\"computedOffset\":0},{\"offset\":null,\"easing\":\"linear\",\"composite\":\"auto\",\"transform\":\"translateX(-236px)\",\"computedOffset\":1}]"
+   },
+   {
+    "name": "Animation",
+    "tgt": "ul",
+    "dur": 46875,
+    "delay": 0,
+    "ease": "linear",
+    "iter": null,
+    "kf": "[{\"offset\":null,\"easing\":\"linear\",\"composite\":\"auto\",\"transform\":\"translateX(0px)\",\"computedOffset\":0},{\"offset\":null,\"easing\":\"linear\",\"composite\":\"auto\",\"transform\":\"translateX(-3750px)\",\"computedOffset\":1}]"
+   },
+   {
+    "name": "Animation",
+    "tgt": "ul",
+    "dur": 3975,
+    "delay": 0,
+    "ease": "linear",
+    "iter": null,
+    "kf": "[{\"offset\":null,\"easing\":\"linear\",\"composite\":\"auto\",\"transform\":\"translateX(0px)\",\"computedOffset\":0},{\"offset\":null,\"easing\":\"linear\",\"composite\":\"auto\",\"transform\":\"translateX(-159px)\",\"computedOffset\":1}]"
+   }
+  ]
+ },
+ "hover": [
+  {
+   "n": "P",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgi": "none",
+   "sh": "none",
+   "t": "none",
+   "r": "0px"
+  },
+  {
+   "n": "DIV",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgi": "none",
+   "sh": "none",
+   "t": "none",
+   "r": "0px"
+  },
+  {
+   "n": "A",
+   "bg": "rgb(243, 243, 243)",
+   "bgi": "none",
+   "sh": "rgba(0, 0, 0, 0.29) 0px 0px 19.4623px 4.86557px",
+   "t": "none",
+   "r": "50px"
+  },
+  {
+   "n": "DIV",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgi": "none",
+   "sh": "none",
+   "t": "none",
+   "r": "0px"
+  }
+ ],
+ "page": {
+  "vw": 1440,
+  "pageHeight": 22494,
+  "title": "Archer",
+  "htmlBg": "rgba(0, 0, 0, 0)",
+  "bodyBg": "rgb(255, 255, 255)",
+  "bodyColor": "rgb(0, 0, 0)",
+  "colorScheme": "normal",
+  "h1": {
+   "text": "Archer",
+   "family": "Switzer, \"Switzer Placeholder\", sans-serif",
+   "size": "176.18px",
+   "weight": "600",
+   "lh": "133.897px",
+   "ls": "-10.5708px",
+   "color": "rgb(0, 0, 0)",
+   "tt": "none",
+   "align": "start",
+   "w": 700,
+   "h": 162,
+   "top": 548,
+   "left": 20,
+   "tag": "h1",
+   "balance": "nowrap"
+  },
+  "largestHeroText": {
+   "text": "Archer",
+   "family": "Switzer, \"Switzer Placeholder\", sans-serif",
+   "size": "176.18px",
+   "weight": "600",
+   "lh": "133.897px",
+   "ls": "-10.5708px",
+   "color": "rgb(0, 0, 0)",
+   "tt": "none",
+   "align": "start",
+   "w": 700,
+   "h": 162,
+   "top": 548,
+   "left": 20,
+   "tag": "h1",
+   "balance": "nowrap"
+  },
+  "h2": [
+   {
+    "text": "Simplicity through design & Strategy.",
+    "family": "Switzer, \"Switzer Placeholder\", sans-serif",
+    "size": "120px",
+    "weight": "600",
+    "lh": "108px",
+    "ls": "-7.2px",
+    "color": "rgb(255, 255, 255)",
+    "tt": "none",
+    "align": "start",
+    "w": 750,
+    "h": 324,
+    "top": 2733,
+    "left": 345,
+    "tag": "h2",
+    "balance": "wrap"
+   },
+   {
+    "text": "Work that Speaks Louder",
+    "family": "Switzer, \"Switzer Placeholder\", sans-serif",
+    "size": "120px",
+    "weight": "600",
+    "lh": "108px",
+    "ls": "-7.2px",
+    "color": "rgb(0, 0, 0)",
+    "tt": "none",
+    "align": "start",
+    "w": 800,
+    "h": 216,
+    "top": 4820,
+    "left": 20,
+    "tag": "h2",
+    "balance": "wrap"
+   },
+   {
+    "text": "Pushing boundaries",
+    "family": "Switzer, \"Switzer Placeholder\", sans-serif",
+    "size": "88px",
+    "weight": "600",
+    "lh": "79.2px",
+    "ls": "-3.52px",
+    "color": "rgb(255, 255, 255)",
+    "tt": "none",
+    "align": "center",
+    "w": 1400,
+    "h": 79,
+    "top": 8834,
+    "left": 20,
+    "tag": "h2",
+    "balance": "wrap"
+   },
+   {
+    "text": "with creativity and a relentless",
+    "family": "Switzer, \"Switzer Placeholder\", sans-serif",
+    "size": "88px",
+    "weight": "600",
+    "lh": "79.2px",
+    "ls": "-3.52px",
+    "color": "rgb(255, 255, 255)",
+    "tt": "none",
+    "align": "center",
+    "w": 1400,
+    "h": 79,
+    "top": 9413,
+    "left": 20,
+    "tag": "h2",
+    "balance": "wrap"
+   }
+  ],
+  "h3": [
+   {
+    "text": "A passionate UI/UX designer committed to blending creativity with user",
+    "family": "Switzer, \"Switzer Placeholder\", sans-serif",
+    "size": "48px",
+    "weight": "600",
+    "lh": "57.6px",
+    "ls": "-1.44px",
+    "color": "rgb(0, 0, 0)",
+    "tt": "none",
+    "align": "start",
+    "w": 900,
+    "h": 403,
+    "top": 1182,
+    "left": 520,
+    "tag": "h3",
+    "balance": "wrap"
+   },
+   {
+    "text": "Projects",
+    "family": "Switzer, \"Switzer Placeholder\", sans-serif",
+    "size": "58px",
+    "weight": "600",
+    "lh": "58px",
+    "ls": "-3.48px",
+    "color": "rgb(0, 0, 0)",
+    "tt": "none",
+    "align": "start",
+    "w": 194,
+    "h": 58,
+    "top": 1970,
+    "left": 20,
+    "tag": "h3",
+    "balance": "nowrap"
+   }
+  ],
+  "p": [
+   {
+    "text": "Decades of mastery and a finely tuned process distinguish us in the fi",
+    "family": "Switzer, \"Switzer Placeholder\", sans-serif",
+    "size": "14px",
+    "weight": "400",
+    "lh": "19.6px",
+    "ls": "-0.28px",
+    "color": "rgb(139, 139, 139)",
+    "tt": "none",
+    "align": "start",
+    "w": 420,
+    "h": 39,
+    "top": 4499,
+    "left": 1000,
+    "tag": "p",
+    "balance": "wrap"
+   },
+   {
+    "text": "Discover a portfolio where creativity meets impact, shaping industries",
+    "family": "Switzer, \"Switzer Placeholder\", sans-serif",
+    "size": "14px",
+    "weight": "400",
+    "lh": "19.6px",
+    "ls": "-0.28px",
+    "color": "rgb(0, 0, 0)",
+    "tt": "none",
+    "align": "start",
+    "w": 200,
+    "h": 78,
+    "top": 4958,
+    "left": 1220,
+    "tag": "p",
+    "balance": "wrap"
+   },
+   {
+    "text": "We're like detectives, sleuthing through data to unearth golden insigh",
+    "family": "Switzer, \"Switzer Placeholder\", sans-serif",
+    "size": "14px",
+    "weight": "400",
+    "lh": "19.6px",
+    "ls": "-0.28px",
+    "color": "rgb(99, 99, 99)",
+    "tt": "none",
+    "align": "start",
+    "w": 300,
+    "h": 59,
+    "top": 12123,
+    "left": 640,
+    "tag": "p",
+    "balance": "wrap"
+   }
+  ],
+  "heroP": {
+   "text": "Create a free website with Framer, the website builder loved by startu",
+   "family": "sans-serif",
+   "size": "12px",
+   "weight": "400",
+   "lh": "normal",
+   "ls": "normal",
+   "color": "rgb(0, 0, 238)",
+   "tt": "none",
+   "align": "start",
+   "w": 0,
+   "h": 0,
+   "top": 861,
+   "left": 1350,
+   "tag": "p",
+   "balance": "wrap"
+  },
+  "typeScale": [
+   [
+    "Switzer|14|400",
+    4143
+   ],
+   [
+    "Switzer|14|600",
+    1690
+   ],
+   [
+    "Switzer|48|600",
+    227
+   ],
+   [
+    "Switzer|120|600",
+    180
+   ],
+   [
+    "sans-serif|12|400",
+    97
+   ],
+   [
+    "Switzer|88|600",
+    78
+   ],
+   [
+    "Switzer|58|600",
+    39
+   ],
+   [
+    "Switzer|61|600",
+    18
+   ],
+   [
+    "Inter|14|400",
+    15
+   ],
+   [
+    "Switzer|176|600",
+    12
+   ],
+   [
+    "Switzer|177|600",
+    12
+   ],
+   [
+    "Inter|22|600",
+    8
+   ]
+  ],
+  "fontFamiliesUsed": [
+   [
+    "Switzer",
+    423
+   ],
+   [
+    "Inter",
+    2
+   ],
+   [
+    "sans-serif",
+    1
+   ]
+  ],
+  "sizesDistinct": [
+   12,
+   14,
+   22,
+   48,
+   58,
+   60.8418,
+   88,
+   120,
+   176.18,
+   177.285
+  ],
+  "lsHist": [
+   [
+    "-0.030em",
+    229
+   ],
+   [
+    "-0.020em",
+    168
+   ],
+   [
+    "-0.060em",
+    21
+   ],
+   [
+    "-0.040em",
+    5
+   ],
+   [
+    "normal",
+    3
+   ]
+  ],
+  "nav": {
+   "tag": "NAV",
+   "h": 90,
+   "outerH": 90,
+   "top": -120,
+   "w": 1440,
+   "position": "fixed",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgHeader": "rgba(0, 0, 0, 0)",
+   "backdrop": "none",
+   "bb": "0px none rgb(0, 0, 0)",
+   "shadow": "none",
+   "contentLeft": 513,
+   "contentRight": 1420,
+   "nLinks": 7,
+   "linkTexts": [
+    "HOME,",
+    "ABOUT,",
+    "WORKS,",
+    "SERVICES,",
+    "AWARDS,",
+    "STORE",
+    "Email me"
+   ],
+   "linkTypo": [
+    {
+     "text": "HOME,",
+     "family": "sans-serif",
+     "size": "12px",
+     "weight": "400",
+     "lh": "normal",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "tt": "none",
+     "align": "start",
+     "w": 43,
+     "h": 17,
+     "top": -83,
+     "left": 513,
+     "tag": "a",
+     "balance": "wrap"
+    },
+    {
+     "text": "ABOUT,",
+     "family": "sans-serif",
+     "size": "12px",
+     "weight": "400",
+     "lh": "normal",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "tt": "none",
+     "align": "start",
+     "w": 48,
+     "h": 17,
+     "top": -83,
+     "left": 576,
+     "tag": "a",
+     "balance": "wrap"
+    },
+    {
+     "text": "WORKS,",
+     "family": "sans-serif",
+     "size": "12px",
+     "weight": "400",
+     "lh": "normal",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "tt": "none",
+     "align": "start",
+     "w": 53,
+     "h": 17,
+     "top": -83,
+     "left": 644,
+     "tag": "a",
+     "balance": "wrap"
+    }
+   ],
+   "hasLogoSvgOrImg": false,
+   "px": "20px/20px"
+  },
+  "ctas": [
+   {
+    "text": "Email me",
+    "inHeader": true,
+    "kind": "filled",
+    "h": 50,
+    "w": 148,
+    "radius": "50px",
+    "bg": "rgb(243, 243, 243)",
+    "color": "rgb(0, 0, 238)",
+    "border": null,
+    "size": "12px",
+    "weight": "400",
+    "pad": "21px 46px",
+    "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+    "family": "sans-serif"
+   },
+   {
+    "text": "See Featured Works",
+    "inHeader": false,
+    "kind": "filled",
+    "h": 59,
+    "w": 219,
+    "radius": "50px",
+    "bg": "rgb(255, 255, 255)",
+    "color": "rgb(0, 0, 238)",
+    "border": null,
+    "size": "12px",
+    "weight": "400",
+    "pad": "21px 46px",
+    "shadow": null,
+    "family": "sans-serif"
+   },
+   {
+    "text": "Get This Template",
+    "inHeader": false,
+    "kind": "filled",
+    "h": 36,
+    "w": 142,
+    "radius": "10px",
+    "bg": "rgb(0, 0, 0)",
+    "color": "rgb(0, 0, 238)",
+    "border": null,
+    "size": "12px",
+    "weight": "400",
+    "pad": "0px 0px",
+    "shadow": "rgba(0, 0, 0, 0.3) 0px 0px 20px 5px",
+    "family": "sans-serif"
+   }
+  ],
+  "chain": [
+   {
+    "tag": "h1.framer-text",
+    "w": 700,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "block",
+    "ta": "start"
+   },
+   {
+    "tag": "foreignobject",
+    "w": 700,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "block",
+    "ta": "start"
+   },
+   {
+    "tag": "svg",
+    "w": 700,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "div.framer-f0291c",
+    "w": 700,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "div.framer-19g02ju",
+    "w": 1400,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "div.framer-pf2hka",
+    "w": 1400,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "header.framer-xiqtr",
+    "w": 1440,
+    "maxW": "none",
+    "pl": "20px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "main.framer-3au9p8",
+    "w": 1440,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "div.framer-RrxOP",
+    "w": 0,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "contents",
+    "ta": "start"
+   }
+  ],
+  "sections": [
+   {
+    "cls": "framer-1hvflhi",
+    "tag": "div",
+    "top": 900,
+    "h": 20916,
+    "pt": "250px",
+    "pb": "250px",
+    "effPt": 248,
+    "effPb": 250,
+    "contentW": 8083,
+    "contentL": -700,
+    "bg": "rgb(255, 255, 255)",
+    "heading": "Simplicity through design & Strategy.",
+    "hSize": "120px",
+    "hAlign": "start"
+   },
+   {
+    "cls": "framer-14ncykk",
+    "tag": "section",
+    "top": 1150,
+    "h": 524,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": -2,
+    "effPb": -54,
+    "contentW": 1400,
+    "contentL": 20,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "",
+    "hSize": null,
+    "hAlign": null
+   },
+   {
+    "cls": "framer-3ub5ij",
+    "tag": "section",
+    "top": 2345,
+    "h": 2193,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 388,
+    "effPb": 0,
+    "contentW": 1400,
+    "contentL": 20,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "Simplicity through design & Strategy.",
+    "hSize": "120px",
+    "hAlign": "start"
+   },
+   {
+    "cls": "framer-k43moh",
+    "tag": "section",
+    "top": 4788,
+    "h": 2396,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": -2,
+    "effPb": 0,
+    "contentW": 1418,
+    "contentL": 2,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "Work that Speaks Louder",
+    "hSize": "120px",
+    "hAlign": "start"
+   },
+   {
+    "cls": "framer-1wsrtvz",
+    "tag": "section",
+    "top": 7434,
+    "h": 4038,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 235,
+    "effPb": 1400,
+    "contentW": 1400,
+    "contentL": 20,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "Pushing boundaries",
+    "hSize": "88px",
+    "hAlign": "center"
+   },
+   {
+    "cls": "framer-ekuxev",
+    "tag": "section",
+    "top": 11722,
+    "h": 890,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": -2,
+    "effPb": 0,
+    "contentW": 1409,
+    "contentL": 11,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "Creative Approach",
+    "hSize": "120px",
+    "hAlign": "start"
+   },
+   {
+    "cls": "framer-46oj20",
+    "tag": "section",
+    "top": 12862,
+    "h": 1277,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": -2,
+    "effPb": 0,
+    "contentW": 1418,
+    "contentL": 2,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "Services I Provide!",
+    "hSize": "120px",
+    "hAlign": "start"
+   },
+   {
+    "cls": "framer-3jl009",
+    "tag": "section",
+    "top": 14390,
+    "h": 2700,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 396,
+    "effPb": 2196,
+    "contentW": 750,
+    "contentL": 345,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "Visual",
+    "hSize": "120px",
+    "hAlign": "start"
+   },
+   {
+    "cls": "framer-125qldq",
+    "tag": "section",
+    "top": 17340,
+    "h": 1355,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": -2,
+    "effPb": 0,
+    "contentW": 3950,
+    "contentL": -700,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "See what they are Saying about me",
+    "hSize": "120px",
+    "hAlign": "start"
+   },
+   {
+    "cls": "",
+    "tag": "section",
+    "top": 18495,
+    "h": 200,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 0,
+    "effPb": 0,
+    "contentW": 3950,
+    "contentL": -700,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "",
+    "hSize": null,
+    "hAlign": null
+   },
+   {
+    "cls": "framer-tjbegy",
+    "tag": "section",
+    "top": 18945,
+    "h": 868,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": -2,
+    "effPb": 0,
+    "contentW": 1409,
+    "contentL": 11,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "Awards & Recognitions",
+    "hSize": "120px",
+    "hAlign": "start"
+   },
+   {
+    "cls": "framer-1rhmzcw",
+    "tag": "section",
+    "top": 20463,
+    "h": 1103,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": -2,
+    "effPb": 0,
+    "contentW": 1417,
+    "contentL": 3,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "Products & Templates",
+    "hSize": "120px",
+    "hAlign": "start"
+   },
+   {
+    "cls": "framer-026Dg",
+    "tag": "footer",
+    "top": 21816,
+    "h": 678,
+    "pt": "30px",
+    "pb": "30px",
+    "effPt": 30,
+    "effPb": 30,
+    "contentW": 1400,
+    "contentL": 20,
+    "bg": "rgb(0, 0, 0)",
+    "heading": "",
+    "hSize": null,
+    "hAlign": null
+   }
+  ],
+  "radiusAll": [
+   [
+    "10px",
+    74
+   ],
+   [
+    "50px",
+    6
+   ],
+   [
+    "100px",
+    2
+   ],
+   [
+    "3px",
+    1
+   ],
+   [
+    "1000px",
+    1
+   ],
+   [
+    "5px",
+    1
+   ],
+   [
+    "11px",
+    1
+   ]
+  ],
+  "radiusCards": [
+   [
+    "1000px",
+    1
+   ]
+  ],
+  "radiusMedia": [
+   [
+    "10px",
+    21
+   ],
+   [
+    "3px",
+    1
+   ]
+  ],
+  "radiusInputs": [],
+  "shadows": [
+   [
+    "rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+    1
+   ],
+   [
+    "rgba(0, 0, 0, 0.3) 0px 0px 20px 5px",
+    1
+   ],
+   [
+    "rgba(0, 0, 0, 0.17) 0px 0.602187px 1.56569px -1.5px, rgba(0, 0, 0, 0.14) 0px 2.28853px 5.95019px -3px, rgba(0, 0, 0, 0.02) 0px 10px 26px -4.5px",
+    1
+   ],
+   [
+    "rgb(0, 0, 0) 0px 0px 0px 1px inset",
+    1
+   ]
+  ],
+  "borders": [],
+  "cardBgs": [
+   [
+    "rgb(22, 22, 22)",
+    1
+   ]
+  ],
+  "grids": [],
+  "flexGaps": [
+   [
+    "0px",
+    122
+   ],
+   [
+    "10px",
+    93
+   ],
+   [
+    "20px",
+    53
+   ],
+   [
+    "5px",
+    21
+   ],
+   [
+    "100px",
+    12
+   ],
+   [
+    "30px",
+    7
+   ],
+   [
+    "250px",
+    1
+   ],
+   [
+    "500px",
+    1
+   ]
+  ],
+  "bgByArea": [
+   [
+    "rgb(255, 255, 255)",
+    "36%"
+   ],
+   [
+    "rgb(0, 0, 0)",
+    "4%"
+   ],
+   [
+    "rgb(255, 109, 16)",
+    "0%"
+   ],
+   [
+    "rgb(22, 22, 22)",
+    "0%"
+   ],
+   [
+    "rgb(243, 243, 243)",
+    "0%"
+   ]
+  ],
+  "textColors": [
+   [
+    "rgb(0, 0, 0)",
+    295
+   ],
+   [
+    "rgb(139, 139, 139)",
+    50
+   ],
+   [
+    "rgb(255, 109, 16)",
+    40
+   ],
+   [
+    "rgb(255, 255, 255)",
+    22
+   ],
+   [
+    "rgb(112, 112, 112)",
+    9
+   ],
+   [
+    "rgb(99, 99, 99)",
+    4
+   ]
+  ],
+  "linkColors": [
+   [
+    "rgb(0, 0, 0)",
+    24
+   ],
+   [
+    "rgb(255, 255, 255)",
+    16
+   ],
+   [
+    "rgb(139, 139, 139)",
+    12
+   ]
+  ],
+  "counts": {
+   "video": 4,
+   "canvas": 0,
+   "iframe": 1,
+   "svg": 78,
+   "img": 27,
+   "picture": 0,
+   "spline": 0,
+   "lottie": 0
+  },
+  "heroMedia": {
+   "video": true,
+   "canvas": false,
+   "bigImg": 2
+  },
+  "libs": {
+   "gsap": false,
+   "lenis": true,
+   "locomotive": false,
+   "next": false,
+   "framer": true,
+   "webflow": false,
+   "three": false,
+   "astro": false,
+   "nuxt": false,
+   "tailwindish": false
+  },
+  "sticky": 8,
+  "fixed": 5,
+  "snap": 0
+ },
+ "pageHeight": 22494
+}

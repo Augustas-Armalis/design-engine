@@ -1,0 +1,1663 @@
+{
+ "headline": {
+  "text": "PETER KENWORTH",
+  "tag": "H1",
+  "fam": "\"Funnel Sans\", \"Funnel Sans Placeholder\", sans-serif",
+  "size": "150px",
+  "lh": "127.5px",
+  "w": "300",
+  "ls": "-7.5px",
+  "color": "rgb(0, 0, 0)",
+  "bgi": "none",
+  "clip": "border-box",
+  "fill": "rgb(0, 0, 0)",
+  "style": "normal",
+  "align": "start",
+  "r": [
+   20,
+   433,
+   1130,
+   255
+  ],
+  "wrap": "wrap",
+  "feat": "normal"
+ },
+ "headlineSpans": [
+  {
+   "text": "PETER",
+   "tag": "SPAN",
+   "fam": "\"Funnel Sans\", \"Funnel Sans Placeholder\", sans-serif",
+   "size": "150px",
+   "lh": "127.5px",
+   "w": "300",
+   "ls": "-7.5px",
+   "color": "rgb(0, 0, 0)",
+   "bgi": "none",
+   "clip": "border-box",
+   "fill": "rgb(0, 0, 0)",
+   "style": "normal",
+   "align": "start",
+   "r": [
+    20,
+    402,
+    409,
+    188
+   ],
+   "wrap": "nowrap",
+   "feat": "normal"
+  }
+ ],
+ "sub": {
+  "text": "Create a free website with Framer, the website builder loved by startups, designers and agencies.",
+  "tag": "P",
+  "fam": "sans-serif",
+  "size": "12px",
+  "lh": "normal",
+  "w": "400",
+  "ls": "normal",
+  "color": "rgb(0, 0, 238)",
+  "bgi": "none",
+  "clip": "border-box",
+  "fill": "rgb(0, 0, 238)",
+  "style": "normal",
+  "align": "start",
+  "r": [
+   1350,
+   861,
+   0,
+   0
+  ],
+  "wrap": "wrap",
+  "feat": "normal"
+ },
+ "headToSub": 173,
+ "eyebrow": {
+  "text": "SHOWREEL",
+  "tag": "P",
+  "fam": "\"Funnel Sans\", \"Funnel Sans Placeholder\", sans-serif",
+  "size": "12px",
+  "lh": "18px",
+  "w": "400",
+  "ls": "normal",
+  "color": "rgb(0, 0, 0)",
+  "bgi": "none",
+  "clip": "border-box",
+  "fill": "rgb(0, 0, 0)",
+  "style": "normal",
+  "align": "start",
+  "r": [
+   137,
+   331,
+   63,
+   18
+  ],
+  "wrap": "nowrap",
+  "feat": "normal"
+ },
+ "eyebrowPill": {
+  "r": [
+   116,
+   329,
+   89,
+   22
+  ],
+  "bg": "rgb(237, 237, 237)",
+  "bgi": "none",
+  "radius": "50px",
+  "border": "0px rgb(0, 0, 0)",
+  "sh": "none",
+  "pad": "2px 5px",
+  "backdrop": "none"
+ },
+ "eyebrowGap": 82,
+ "buttons": [
+  {
+   "t": "HOME",
+   "r": [
+    20,
+    20,
+    40,
+    18
+   ],
+   "font": "\"Funnel Sans\" 14px w400 ls=normal c=rgb(0, 0, 0)",
+   "layers": [
+    {
+     "n": "line",
+     "r": [
+      20,
+      37,
+      40,
+      1
+     ],
+     "bg": "rgb(0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "border": "",
+     "sh": "",
+     "filter": "",
+     "backdrop": "",
+     "op": "1",
+     "blend": ""
+    },
+    {
+     "n": "line",
+     "r": [
+      -25,
+      37,
+      40,
+      1
+     ],
+     "bg": "rgb(0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "border": "",
+     "sh": "",
+     "filter": "",
+     "backdrop": "",
+     "op": "1",
+     "blend": ""
+    }
+   ]
+  },
+  {
+   "t": "EXPERTISE",
+   "r": [
+    90,
+    20,
+    70,
+    18
+   ],
+   "font": "\"Funnel Sans\" 14px w400 ls=normal c=rgb(0, 0, 0)",
+   "layers": [
+    {
+     "n": "line",
+     "r": [
+      90,
+      37,
+      70,
+      1
+     ],
+     "bg": "rgb(0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "border": "",
+     "sh": "",
+     "filter": "",
+     "backdrop": "",
+     "op": "1",
+     "blend": ""
+    },
+    {
+     "n": "line",
+     "r": [
+      12,
+      37,
+      70,
+      1
+     ],
+     "bg": "rgb(0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "border": "",
+     "sh": "",
+     "filter": "",
+     "backdrop": "",
+     "op": "1",
+     "blend": ""
+    }
+   ]
+  },
+  {
+   "t": "WORKS",
+   "r": [
+    190,
+    20,
+    48,
+    18
+   ],
+   "font": "\"Funnel Sans\" 14px w400 ls=normal c=rgb(0, 0, 0)",
+   "layers": [
+    {
+     "n": "line",
+     "r": [
+      190,
+      37,
+      48,
+      1
+     ],
+     "bg": "rgb(0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "border": "",
+     "sh": "",
+     "filter": "",
+     "backdrop": "",
+     "op": "1",
+     "blend": ""
+    },
+    {
+     "n": "line",
+     "r": [
+      137,
+      37,
+      48,
+      1
+     ],
+     "bg": "rgb(0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "border": "",
+     "sh": "",
+     "filter": "",
+     "backdrop": "",
+     "op": "1",
+     "blend": ""
+    }
+   ]
+  },
+  {
+   "t": "ABOUT",
+   "r": [
+    268,
+    20,
+    46,
+    18
+   ],
+   "font": "\"Funnel Sans\" 14px w400 ls=normal c=rgb(0, 0, 0)",
+   "layers": [
+    {
+     "n": "line",
+     "r": [
+      268,
+      37,
+      46,
+      1
+     ],
+     "bg": "rgb(0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "border": "",
+     "sh": "",
+     "filter": "",
+     "backdrop": "",
+     "op": "1",
+     "blend": ""
+    },
+    {
+     "n": "line",
+     "r": [
+      218,
+      37,
+      46,
+      1
+     ],
+     "bg": "rgb(0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "border": "",
+     "sh": "",
+     "filter": "",
+     "backdrop": "",
+     "op": "1",
+     "blend": ""
+    }
+   ]
+  },
+  {
+   "t": "AWARDS & HONORS",
+   "r": [
+    344,
+    20,
+    130,
+    18
+   ],
+   "font": "\"Funnel Sans\" 14px w400 ls=normal c=rgb(0, 0, 0)",
+   "layers": [
+    {
+     "n": "line",
+     "r": [
+      344,
+      37,
+      130,
+      1
+     ],
+     "bg": "rgb(0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "border": "",
+     "sh": "",
+     "filter": "",
+     "backdrop": "",
+     "op": "1",
+     "blend": ""
+    },
+    {
+     "n": "line",
+     "r": [
+      199,
+      37,
+      130,
+      1
+     ],
+     "bg": "rgb(0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "border": "",
+     "sh": "",
+     "filter": "",
+     "backdrop": "",
+     "op": "1",
+     "blend": ""
+    }
+   ]
+  },
+  {
+   "t": "HIRE ME",
+   "r": [
+    504,
+    20,
+    55,
+    18
+   ],
+   "font": "\"Funnel Sans\" 14px w400 ls=normal c=rgb(0, 0, 0)",
+   "layers": [
+    {
+     "n": "line",
+     "r": [
+      504,
+      37,
+      55,
+      1
+     ],
+     "bg": "rgb(0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "border": "",
+     "sh": "",
+     "filter": "",
+     "backdrop": "",
+     "op": "1",
+     "blend": ""
+    },
+    {
+     "n": "line",
+     "r": [
+      443,
+      37,
+      55,
+      1
+     ],
+     "bg": "rgb(0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "border": "",
+     "sh": "",
+     "filter": "",
+     "backdrop": "",
+     "op": "1",
+     "blend": ""
+    }
+   ]
+  },
+  {
+   "t": "LINKEDIN",
+   "r": [
+    1138,
+    20,
+    62,
+    18
+   ],
+   "font": "\"Funnel Sans\" 14px w400 ls=normal c=rgb(0, 0, 0)",
+   "layers": [
+    {
+     "n": "line",
+     "r": [
+      1138,
+      37,
+      62,
+      1
+     ],
+     "bg": "rgb(0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "border": "",
+     "sh": "",
+     "filter": "",
+     "backdrop": "",
+     "op": "1",
+     "blend": ""
+    },
+    {
+     "n": "line",
+     "r": [
+      1069,
+      37,
+      62,
+      1
+     ],
+     "bg": "rgb(0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "border": "",
+     "sh": "",
+     "filter": "",
+     "backdrop": "",
+     "op": "1",
+     "blend": ""
+    }
+   ]
+  },
+  {
+   "t": "TWITTER “X”",
+   "r": [
+    1231,
+    20,
+    82,
+    18
+   ],
+   "font": "\"Funnel Sans\" 14px w400 ls=normal c=rgb(0, 0, 0)",
+   "layers": [
+    {
+     "n": "line",
+     "r": [
+      1231,
+      37,
+      82,
+      1
+     ],
+     "bg": "rgb(0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "border": "",
+     "sh": "",
+     "filter": "",
+     "backdrop": "",
+     "op": "1",
+     "blend": ""
+    },
+    {
+     "n": "line",
+     "r": [
+      1139,
+      37,
+      82,
+      1
+     ],
+     "bg": "rgb(0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "border": "",
+     "sh": "",
+     "filter": "",
+     "backdrop": "",
+     "op": "1",
+     "blend": ""
+    }
+   ]
+  },
+  {
+   "t": "INSTAGRAM",
+   "r": [
+    1342,
+    20,
+    78,
+    18
+   ],
+   "font": "\"Funnel Sans\" 14px w400 ls=normal c=rgb(0, 0, 0)",
+   "layers": [
+    {
+     "n": "line",
+     "r": [
+      1342,
+      37,
+      78,
+      1
+     ],
+     "bg": "rgb(0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "border": "",
+     "sh": "",
+     "filter": "",
+     "backdrop": "",
+     "op": "1",
+     "blend": ""
+    },
+    {
+     "n": "line",
+     "r": [
+      1256,
+      37,
+      78,
+      1
+     ],
+     "bg": "rgb(0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "border": "",
+     "sh": "",
+     "filter": "",
+     "backdrop": "",
+     "op": "1",
+     "blend": ""
+    }
+   ]
+  },
+  {
+   "t": "WORKS",
+   "r": [
+    1150,
+    670,
+    60,
+    18
+   ],
+   "font": "\"Funnel Sans\" 14px w400 ls=normal c=rgb(0, 0, 0)",
+   "layers": [
+    {
+     "n": "icon",
+     "r": [
+      1150,
+      674,
+      7,
+      9
+     ],
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 7 9%22><path d=%22M 6.25 4.067 C 6.405 4.156 6.5 4.321 6.5 4.5 C 6.5 4.679 6.405 4.844 6.2",
+     "radius": "0px",
+     "border": "",
+     "sh": "",
+     "filter": "",
+     "backdrop": "",
+     "op": "1",
+     "blend": ""
+    },
+    {
+     "n": "line",
+     "r": [
+      1108,
+      687,
+      48,
+      1
+     ],
+     "bg": "rgb(0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "border": "",
+     "sh": "",
+     "filter": "",
+     "backdrop": "",
+     "op": "1",
+     "blend": ""
+    },
+    {
+     "n": "line",
+     "r": [
+      1162,
+      687,
+      48,
+      1
+     ],
+     "bg": "rgb(0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "border": "",
+     "sh": "",
+     "filter": "",
+     "backdrop": "",
+     "op": "1",
+     "blend": ""
+    }
+   ]
+  },
+  {
+   "t": "LINKEDIN",
+   "r": [
+    20,
+    853,
+    62,
+    17
+   ],
+   "font": "\"Funnel Sans\" 14px w400 ls=normal c=rgb(237, 237, 237)",
+   "layers": [
+    {
+     "n": "div",
+     "r": [
+      -45,
+      869,
+      62,
+      1
+     ],
+     "bg": "rgb(237, 237, 237)",
+     "bgi": "none",
+     "radius": "0px",
+     "border": "",
+     "sh": "",
+     "filter": "",
+     "backdrop": "",
+     "op": "1",
+     "blend": ""
+    }
+   ]
+  },
+  {
+   "t": "TWITTER “X”",
+   "r": [
+    112,
+    853,
+    82,
+    17
+   ],
+   "font": "\"Funnel Sans\" 14px w400 ls=normal c=rgb(237, 237, 237)",
+   "layers": [
+    {
+     "n": "div",
+     "r": [
+      27,
+      869,
+      82,
+      1
+     ],
+     "bg": "rgb(237, 237, 237)",
+     "bgi": "none",
+     "radius": "0px",
+     "border": "",
+     "sh": "",
+     "filter": "",
+     "backdrop": "",
+     "op": "1",
+     "blend": ""
+    }
+   ]
+  },
+  {
+   "t": "INSTAGRAM",
+   "r": [
+    224,
+    853,
+    78,
+    17
+   ],
+   "font": "\"Funnel Sans\" 14px w400 ls=normal c=rgb(237, 237, 237)",
+   "layers": [
+    {
+     "n": "div",
+     "r": [
+      143,
+      869,
+      78,
+      1
+     ],
+     "bg": "rgb(237, 237, 237)",
+     "bgi": "none",
+     "radius": "0px",
+     "border": "",
+     "sh": "",
+     "filter": "",
+     "backdrop": "",
+     "op": "1",
+     "blend": ""
+    }
+   ]
+  },
+  {
+   "t": "HELLO@PETER.COM",
+   "r": [
+    725,
+    30,
+    695,
+    80
+   ],
+   "font": "\"Funnel Sans\" 96px w400 ls=-4.8px c=rgb(237, 237, 237)",
+   "layers": [
+    {
+     "n": "div",
+     "r": [
+      0,
+      109,
+      695,
+      1
+     ],
+     "bg": "rgb(237, 237, 237)",
+     "bgi": "none",
+     "radius": "0px",
+     "border": "",
+     "sh": "",
+     "filter": "",
+     "backdrop": "",
+     "op": "1",
+     "blend": ""
+    }
+   ]
+  },
+  {
+   "t": "(+34) 930 046 720",
+   "r": [
+    725,
+    286,
+    111,
+    17
+   ],
+   "font": "\"Funnel Sans\" 14px w400 ls=normal c=rgb(237, 237, 237)",
+   "layers": [
+    {
+     "n": "div",
+     "r": [
+      610,
+      302,
+      111,
+      1
+     ],
+     "bg": "rgb(237, 237, 237)",
+     "bgi": "none",
+     "radius": "0px",
+     "border": "",
+     "sh": "",
+     "filter": "",
+     "backdrop": "",
+     "op": "1",
+     "blend": ""
+    }
+   ]
+  },
+  {
+   "t": "HELLO@PETER.COM",
+   "r": [
+    725,
+    323,
+    131,
+    17
+   ],
+   "font": "\"Funnel Sans\" 14px w400 ls=normal c=rgb(237, 237, 237)",
+   "layers": [
+    {
+     "n": "div",
+     "r": [
+      588,
+      339,
+      131,
+      1
+     ],
+     "bg": "rgb(237, 237, 237)",
+     "bgi": "none",
+     "radius": "0px",
+     "border": "",
+     "sh": "",
+     "filter": "",
+     "backdrop": "",
+     "op": "1",
+     "blend": ""
+    }
+   ]
+  },
+  {
+   "t": "EXPERTISE",
+   "r": [
+    725,
+    853,
+    70,
+    17
+   ],
+   "font": "\"Funnel Sans\" 14px w400 ls=normal c=rgb(237, 237, 237)",
+   "layers": [
+    {
+     "n": "div",
+     "r": [
+      652,
+      869,
+      70,
+      1
+     ],
+     "bg": "rgb(237, 237, 237)",
+     "bgi": "none",
+     "radius": "0px",
+     "border": "",
+     "sh": "",
+     "filter": "",
+     "backdrop": "",
+     "op": "1",
+     "blend": ""
+    }
+   ]
+  },
+  {
+   "t": "WORKS",
+   "r": [
+    882,
+    853,
+    48,
+    17
+   ],
+   "font": "\"Funnel Sans\" 14px w400 ls=normal c=rgb(237, 237, 237)",
+   "layers": [
+    {
+     "n": "div",
+     "r": [
+      832,
+      869,
+      48,
+      1
+     ],
+     "bg": "rgb(237, 237, 237)",
+     "bgi": "none",
+     "radius": "0px",
+     "border": "",
+     "sh": "",
+     "filter": "",
+     "backdrop": "",
+     "op": "1",
+     "blend": ""
+    }
+   ]
+  },
+  {
+   "t": "ABOUT",
+   "r": [
+    1017,
+    853,
+    46,
+    17
+   ],
+   "font": "\"Funnel Sans\" 14px w400 ls=normal c=rgb(237, 237, 237)",
+   "layers": [
+    {
+     "n": "div",
+     "r": [
+      969,
+      869,
+      46,
+      1
+     ],
+     "bg": "rgb(237, 237, 237)",
+     "bgi": "none",
+     "radius": "0px",
+     "border": "",
+     "sh": "",
+     "filter": "",
+     "backdrop": "",
+     "op": "1",
+     "blend": ""
+    }
+   ]
+  },
+  {
+   "t": "AWARDS & HONORS",
+   "r": [
+    1149,
+    853,
+    130,
+    17
+   ],
+   "font": "\"Funnel Sans\" 14px w400 ls=normal c=rgb(237, 237, 237)",
+   "layers": [
+    {
+     "n": "div",
+     "r": [
+      1014,
+      869,
+      130,
+      1
+     ],
+     "bg": "rgb(237, 237, 237)",
+     "bgi": "none",
+     "radius": "0px",
+     "border": "",
+     "sh": "",
+     "filter": "",
+     "backdrop": "",
+     "op": "1",
+     "blend": ""
+    }
+   ]
+  },
+  {
+   "t": "HIRE ME",
+   "r": [
+    1365,
+    853,
+    55,
+    17
+   ],
+   "font": "\"Funnel Sans\" 14px w400 ls=normal c=rgb(237, 237, 237)",
+   "layers": [
+    {
+     "n": "div",
+     "r": [
+      1308,
+      869,
+      55,
+      1
+     ],
+     "bg": "rgb(237, 237, 237)",
+     "bgi": "none",
+     "radius": "0px",
+     "border": "",
+     "sh": "",
+     "filter": "",
+     "backdrop": "",
+     "op": "1",
+     "blend": ""
+    }
+   ]
+  },
+  {
+   "t": "Get This Template",
+   "r": [
+    1278,
+    799,
+    142,
+    36
+   ],
+   "font": "Switzer 14px w600 ls=-0.28px c=rgb(255, 255, 255)",
+   "layers": [
+    {
+     "n": "Desktop",
+     "r": [
+      1278,
+      799,
+      142,
+      36
+     ],
+     "bg": "rgb(0, 0, 0)",
+     "bgi": "none",
+     "radius": "10px",
+     "border": "",
+     "sh": "rgba(0, 0, 0, 0.3) 0px 0px 20px 5px",
+     "filter": "",
+     "backdrop": "",
+     "op": "1",
+     "blend": ""
+    },
+    {
+     "n": "overlay",
+     "r": [
+      1103,
+      796,
+      170,
+      43
+     ],
+     "bg": "rgb(255, 109, 16)",
+     "bgi": "none",
+     "radius": "0px",
+     "border": "",
+     "sh": "",
+     "filter": "",
+     "backdrop": "",
+     "op": "1",
+     "blend": ""
+    }
+   ]
+  },
+  {
+   "t": "Monarque Latest Template",
+   "r": [
+    1210,
+    632,
+    210,
+    158
+   ],
+   "font": "Inter 22px w600 ls=-0.88px c=rgb(255, 255, 255)",
+   "layers": [
+    {
+     "n": "div",
+     "r": [
+      1210,
+      632,
+      210,
+      158
+     ],
+     "bg": "rgba(0, 0, 0, 0.57)",
+     "bgi": "none",
+     "radius": "0px",
+     "border": "",
+     "sh": "",
+     "filter": "",
+     "backdrop": "",
+     "op": "0",
+     "blend": ""
+    },
+    {
+     "n": "div",
+     "r": [
+      1390,
+      642,
+      20,
+      20
+     ],
+     "bg": "rgb(255, 255, 255)",
+     "bgi": "none",
+     "radius": "100px",
+     "border": "",
+     "sh": "",
+     "filter": "",
+     "backdrop": "",
+     "op": "1",
+     "blend": ""
+    },
+    {
+     "n": "div",
+     "r": [
+      1397,
+      649,
+      6,
+      6
+     ],
+     "bg": "rgb(0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "border": "",
+     "sh": "",
+     "filter": "",
+     "backdrop": "",
+     "op": "1",
+     "blend": ""
+    },
+    {
+     "n": "div",
+     "r": [
+      1397,
+      649,
+      6,
+      6
+     ],
+     "bg": "rgb(0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "border": "",
+     "sh": "",
+     "filter": "",
+     "backdrop": "",
+     "op": "1",
+     "blend": ""
+    }
+   ]
+  }
+ ],
+ "nav": {
+  "r": [
+   0,
+   0,
+   1440,
+   58
+  ],
+  "pos": "relative",
+  "shells": [
+   {
+    "n": "Desktop",
+    "r": [
+     0,
+     0,
+     1440,
+     58
+    ],
+    "bg": "rgb(237, 237, 237)",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 0)",
+    "bb": "0px rgb(0, 0, 0)",
+    "backdrop": "none",
+    "sh": "none",
+    "pos": "relative"
+   },
+   {
+    "n": "line",
+    "r": [
+     344,
+     37,
+     130,
+     1
+    ],
+    "bg": "rgb(0, 0, 0)",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 238)",
+    "bb": "0px rgb(0, 0, 238)",
+    "backdrop": "none",
+    "sh": "none",
+    "pos": "relative"
+   },
+   {
+    "n": "line",
+    "r": [
+     199,
+     37,
+     130,
+     1
+    ],
+    "bg": "rgb(0, 0, 0)",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 238)",
+    "bb": "0px rgb(0, 0, 238)",
+    "backdrop": "none",
+    "sh": "none",
+    "pos": "absolute"
+   }
+  ],
+  "links": [
+   "HOME",
+   "EXPERTISE",
+   "WORKS",
+   "ABOUT",
+   "AWARDS & HONORS",
+   "HIRE ME",
+   "LINKEDIN",
+   "TWITTER “X”",
+   "INSTAGRAM"
+  ]
+ },
+ "layers": [
+  {
+   "n": "div",
+   "tag": "DIV",
+   "r": [
+    0,
+    0,
+    1440,
+    13983
+   ],
+   "bg": "rgb(237, 237, 237)",
+   "bgi": "none",
+   "radius": "0px",
+   "border": "",
+   "sh": "",
+   "filter": "",
+   "backdrop": "",
+   "op": "1",
+   "blend": "",
+   "t": "",
+   "persp": "",
+   "mask": "none",
+   "src": "",
+   "overflow": "visible"
+  },
+  {
+   "n": "Main",
+   "tag": "MAIN",
+   "r": [
+    0,
+    58,
+    1440,
+    13026
+   ],
+   "bg": "rgb(237, 237, 237)",
+   "bgi": "none",
+   "radius": "0px",
+   "border": "",
+   "sh": "",
+   "filter": "",
+   "backdrop": "",
+   "op": "1",
+   "blend": "",
+   "t": "",
+   "persp": "",
+   "mask": "none",
+   "src": "",
+   "overflow": "visible"
+  },
+  {
+   "n": "img",
+   "tag": "IMG",
+   "r": [
+    20,
+    653,
+    1400,
+    1416
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgi": "none",
+   "radius": "5px",
+   "border": "",
+   "sh": "",
+   "filter": "",
+   "backdrop": "",
+   "op": "1",
+   "blend": "",
+   "t": "",
+   "persp": "",
+   "mask": "none",
+   "src": "/images/1W2sBxxLe6L2yhn2vUWAP1u27k.png?scale-down-to=2048&width=1920&height=2549",
+   "overflow": "clip"
+  },
+  {
+   "n": "Desktop",
+   "tag": "FOOTER",
+   "r": [
+    0,
+    0,
+    1440,
+    900
+   ],
+   "bg": "rgb(0, 0, 0)",
+   "bgi": "none",
+   "radius": "0px",
+   "border": "",
+   "sh": "",
+   "filter": "",
+   "backdrop": "",
+   "op": "1",
+   "blend": "",
+   "t": "",
+   "persp": "",
+   "mask": "none",
+   "src": "",
+   "overflow": "hidden"
+  }
+ ],
+ "canvases": [],
+ "bodyBg": "rgb(237, 237, 237)",
+ "htmlBg": "rgba(0, 0, 0, 0)",
+ "appear": {
+  "swj4wf": {
+   "default": {
+    "initial": {
+     "opacity": 0.001,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "x": 0,
+     "y": 0
+    },
+    "animate": {
+     "opacity": 1,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "transition": {
+      "bounce": 0.2,
+      "delay": 1.4,
+      "duration": 0.8,
+      "type": "spring"
+     },
+     "x": 0,
+     "y": 0
+    }
+   },
+   "1ml3rki": {
+    "initial": {
+     "opacity": 0.001,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "x": 0,
+     "y": 0
+    },
+    "animate": {
+     "opacity": 1,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "transition": {
+      "bounce": 0.2,
+      "delay": 1.4,
+      "duration": 0.8,
+      "type": "spring"
+     },
+     "x": 0,
+     "y": 0
+    }
+   },
+   "1mn5n6k": {
+    "initial": {
+     "opacity": 0.001,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "x": 0,
+     "y": 0
+    },
+    "animate": {
+     "opacity": 1,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "transition": {
+      "bounce": 0.2,
+      "delay": 1.4,
+      "duration": 0.8,
+      "type": "spring"
+     },
+     "x": 0,
+     "y": 0
+    }
+   }
+  },
+  "1qnz14l": {
+   "default": {
+    "initial": {
+     "opacity": 0.001,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "x": 0,
+     "y": 10
+    },
+    "animate": {
+     "opacity": 1,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "transition": {
+      "bounce": 0.2,
+      "delay": 0.8,
+      "duration": 0.8,
+      "type": "spring"
+     },
+     "x": 0,
+     "y": 0
+    }
+   }
+  },
+  "1ujap8a": {
+   "default": {
+    "initial": {
+     "opacity": 0.001,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "x": 0,
+     "y": 10
+    },
+    "animate": {
+     "opacity": 1,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "transition": {
+      "bounce": 0.2,
+      "delay": 1,
+      "duration": 0.8,
+      "type": "spring"
+     },
+     "x": 0,
+     "y": 0
+    }
+   }
+  },
+  "1ccy5h6": {
+   "default": {
+    "initial": {
+     "opacity": 0.001,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "x": 0,
+     "y": 20
+    },
+    "animate": {
+     "opacity": 1,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "transition": {
+      "bounce": 0.2,
+      "delay": 1.2,
+      "duration": 1.2,
+      "type": "spring"
+     },
+     "x": 0,
+     "y": 0
+    }
+   }
+  }
+ },
+ "appearTargets": [
+  {
+   "id": "swj4wf",
+   "n": "div",
+   "r": [
+    20,
+    257,
+    1400,
+    166
+   ],
+   "txt": "SHOWREEL"
+  },
+  {
+   "id": "1qnz14l",
+   "n": "div",
+   "r": [
+    1150,
+    568,
+    270,
+    72
+   ],
+   "txt": "BASED IN NEW YORK CITY, I’M PETER KENWOR"
+  },
+  {
+   "id": "1ujap8a",
+   "n": "div",
+   "r": [
+    1150,
+    670,
+    60,
+    18
+   ],
+   "txt": "WORKS"
+  },
+  {
+   "id": "1ccy5h6",
+   "n": "img - holder",
+   "r": [
+    20,
+    718,
+    1400,
+    1287
+   ],
+   "txt": "PHOTOGRAPHY, CINEMATOGRAPHY ART DIRECTIO"
+  },
+  {
+   "id": "n0ccwk",
+   "n": "Light",
+   "r": [
+    1280,
+    842,
+    140,
+    38
+   ],
+   "txt": "Create a free website with Framer, the w"
+  }
+ ],
+ "sections": [
+  {
+   "n": "Footer Revealer",
+   "r": [
+    0,
+    13083,
+    1440,
+    900
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "pt": "0px",
+   "pb": "0px",
+   "gap": "normal",
+   "radius": "0px"
+  },
+  {
+   "n": "div",
+   "r": [
+    0,
+    0,
+    1440,
+    900
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "pt": "0px",
+   "pb": "0px",
+   "gap": "normal",
+   "radius": "0px"
+  },
+  {
+   "n": "div",
+   "r": [
+    1278,
+    799,
+    142,
+    36
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "pt": "0px",
+   "pb": "0px",
+   "gap": "normal",
+   "radius": "0px"
+  },
+  {
+   "n": "div",
+   "r": [
+    1210,
+    632,
+    210,
+    158
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "pt": "0px",
+   "pb": "0px",
+   "gap": "normal",
+   "radius": "0px"
+  }
+ ],
+ "radiusHist": [
+  [
+   "5px",
+   57
+  ],
+  [
+   "10px",
+   2
+  ],
+  [
+   "11px",
+   2
+  ],
+  [
+   "50px",
+   1
+  ]
+ ],
+ "shadowHist": [
+  [
+   "rgb(0, 0, 0) 0px 0px 0px 1px inset",
+   2
+  ],
+  [
+   "rgba(0, 0, 0, 0.3) 0px 0px 20px 5px",
+   1
+  ],
+  [
+   "rgba(0, 0, 0, 0.17) 0px 0.602187px 1.56569px -1.5px, rgba(0, 0, 0, 0.14) 0px 2.28853px 5.95019px -3px, rgba(0, 0, 0, 0.02) 0px 10px 26px -4.5px",
+   1
+  ]
+ ],
+ "backdropHist": [],
+ "filterHist": [],
+ "fontHist": [
+  [
+   "Funnel Sans 32px w400 ls-1.28px",
+   163
+  ],
+  [
+   "Funnel Sans 12px w400 lsnormal",
+   80
+  ],
+  [
+   "Funnel Sans 14px w400 lsnormal",
+   28
+  ],
+  [
+   "Funnel Sans 150px w300 ls-7.5px",
+   13
+  ],
+  [
+   "Funnel Sans 96px w400 ls-4.8px",
+   9
+  ],
+  [
+   "Funnel Sans 16px w400 lsnormal",
+   6
+  ],
+  [
+   "Funnel Sans 72px w400 ls-2.16px",
+   5
+  ],
+  [
+   "Funnel Sans 113.68px w300 ls-5.68398px",
+   2
+  ],
+  [
+   "Switzer 14px w600 ls-0.28px",
+   1
+  ],
+  [
+   "Inter 22px w600 ls-0.88px",
+   1
+  ],
+  [
+   "Inter 14px w400 ls-0.56px",
+   1
+  ],
+  [
+   "sans-serif 12px w400 lsnormal",
+   1
+  ]
+ ],
+ "gradHist": [],
+ "scripts": [
+  "https://events.framer.com/script?v=2"
+ ],
+ "html": [
+  "Grainient.b-cdn.net/FRAMER%20_%20TEMPLATE/0335c8cf7ed7aa52d6538e8"
+ ],
+ "hover": [
+  {
+   "t": "WORKS",
+   "after": [
+    "A bg=rgba(0, 0, 0, 0) bgi=none sh=none t=matrix(0.999279, 0, 0, 1, -0.0234559, 0) op=1",
+    "icon bg=rgba(0, 0, 0, 0) bgi=url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewB sh=none t=matrix(1.00072, 0, 0, 1, 0, 0) op=1",
+    "wrapper bg=rgba(0, 0, 0, 0) bgi=none sh=none t=matrix(1.00072, 0, 0, 1, -0.0173411, 0) op=1",
+    "DIV bg=rgba(0, 0, 0, 0) bgi=none sh=none t=none op=1",
+    "P bg=rgba(0, 0, 0, 0) bgi=none sh=none t=none op=1",
+    "line bg=rgb(0, 0, 0) bgi=none sh=none t=matrix(1, 0, 0, 1, -2.87194, 0) op=1"
+   ]
+  },
+  {
+   "t": "LINKEDIN",
+   "after": null
+  },
+  {
+   "t": "TWITTER “X”",
+   "after": null
+  }
+ ]
+}

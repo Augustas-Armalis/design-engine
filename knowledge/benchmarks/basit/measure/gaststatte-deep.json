@@ -1,0 +1,612 @@
+{
+ "headline": {
+  "text": "Gaststätte",
+  "tag": "H1",
+  "fam": "Aboreto, sans-serif",
+  "size": "360px",
+  "lh": "288px",
+  "w": "400",
+  "ls": "-18px",
+  "color": "rgb(235, 234, 223)",
+  "bgi": "none",
+  "clip": "border-box",
+  "fill": "rgb(235, 234, 223)",
+  "style": "normal",
+  "align": "start",
+  "r": [
+   -761,
+   612,
+   2046,
+   288
+  ],
+  "wrap": "nowrap",
+  "feat": "normal"
+ },
+ "headlineSpans": [],
+ "sub": null,
+ "headToSub": null,
+ "eyebrow": {
+  "text": "Discover a dining experience where refined flavors, impeccable service, and sophisticated surroundings come together in ",
+  "tag": "P",
+  "fam": "\"Zalando Sans\", \"Zalando Sans Placeholder\", sans-serif",
+  "size": "14px",
+  "lh": "19.6px",
+  "w": "400",
+  "ls": "0.14px",
+  "color": "rgb(235, 234, 223)",
+  "bgi": "none",
+  "clip": "border-box",
+  "fill": "rgb(235, 234, 223)",
+  "style": "normal",
+  "align": "start",
+  "r": [
+   1010,
+   494,
+   390,
+   59
+  ],
+  "wrap": "wrap",
+  "feat": "normal"
+ },
+ "eyebrowPill": {
+  "r": [
+   0,
+   494,
+   1440,
+   406
+  ],
+  "bg": "rgba(0, 0, 0, 0)",
+  "bgi": "none",
+  "radius": "0px",
+  "border": "0px rgb(0, 0, 0)",
+  "sh": "none",
+  "pad": "0px",
+  "backdrop": "none"
+ },
+ "eyebrowGap": -288,
+ "buttons": [],
+ "nav": {
+  "r": [
+   0,
+   0,
+   1440,
+   88
+  ],
+  "pos": "fixed",
+  "shells": [
+   {
+    "n": "Desktop - Transparent",
+    "r": [
+     0,
+     0,
+     1440,
+     88
+    ],
+    "bg": "rgba(255, 255, 255, 0)",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 0)",
+    "bb": "0px rgb(0, 0, 0)",
+    "backdrop": "none",
+    "sh": "none",
+    "pos": "relative"
+   }
+  ],
+  "links": [
+   "Welcome to Gaststätte Welcome to Gaststätte",
+   "About About",
+   "Experience Experience",
+   "Menu Menu",
+   "Philosophy Philosophy",
+   "Contact Contact"
+  ]
+ },
+ "layers": [
+  {
+   "n": "div",
+   "tag": "DIV",
+   "r": [
+    0,
+    0,
+    1440,
+    14765
+   ],
+   "bg": "rgb(255, 255, 255)",
+   "bgi": "none",
+   "radius": "0px",
+   "border": "",
+   "sh": "",
+   "filter": "",
+   "backdrop": "",
+   "op": "1",
+   "blend": "",
+   "t": "",
+   "persp": "",
+   "mask": "none",
+   "src": "",
+   "overflow": "clip"
+  },
+  {
+   "n": "video",
+   "tag": "VIDEO",
+   "r": [
+    0,
+    0,
+    1440,
+    900
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgi": "none",
+   "radius": "0px",
+   "border": "",
+   "sh": "",
+   "filter": "",
+   "backdrop": "",
+   "op": "1",
+   "blend": "",
+   "t": "",
+   "persp": "",
+   "mask": "none",
+   "src": "https://framerusercontent.com/assets/TiGJc56PMzCctcb8fsfSQXVlmR8.mp4",
+   "overflow": "clip"
+  },
+  {
+   "n": "Main",
+   "tag": "MAIN",
+   "r": [
+    0,
+    900,
+    1440,
+    12849
+   ],
+   "bg": "rgb(255, 255, 255)",
+   "bgi": "none",
+   "radius": "0px",
+   "border": "",
+   "sh": "",
+   "filter": "",
+   "backdrop": "",
+   "op": "1",
+   "blend": "",
+   "t": "",
+   "persp": "",
+   "mask": "none",
+   "src": "",
+   "overflow": "clip"
+  },
+  {
+   "n": "Section - About",
+   "tag": "SECTION",
+   "r": [
+    0,
+    900,
+    1440,
+    900
+   ],
+   "bg": "rgb(125, 148, 130)",
+   "bgi": "none",
+   "radius": "0px",
+   "border": "",
+   "sh": "",
+   "filter": "",
+   "backdrop": "",
+   "op": "1",
+   "blend": "",
+   "t": "",
+   "persp": "",
+   "mask": "none",
+   "src": "",
+   "overflow": "clip"
+  },
+  {
+   "n": "div",
+   "tag": "DIV",
+   "r": [
+    180,
+    1008,
+    1080,
+    1080
+   ],
+   "bg": "rgb(235, 234, 223)",
+   "bgi": "none",
+   "radius": "0px",
+   "border": "",
+   "sh": "",
+   "filter": "",
+   "backdrop": "",
+   "op": "0.05",
+   "blend": "",
+   "t": "matrix(1, 0, 0, 1, -540, -540)",
+   "persp": "",
+   "mask": "url(\"data:image/svg+xml,<svg display=\\\"block\\\" id=\\\"3400259284\\\" role=\\\"presentation\\\" viewBox=\\\"0 0 100 100\\\" xmlns=\\\"http://www.w3.org/2000/svg\\\"><g fill=\\\"transparent\\\" height=\\\"99px\\\" id=\\\"Vdok6kZ",
+   "src": "",
+   "overflow": "visible"
+  }
+ ],
+ "canvases": [],
+ "bodyBg": "rgb(255, 255, 255)",
+ "htmlBg": "rgba(0, 0, 0, 0)",
+ "appear": {
+  "1p1ynqq": {
+   "default": null
+  },
+  "1hbjoos": {
+   "default": null
+  },
+  "1573cyk": {
+   "default": null
+  },
+  "1kzewxu": {
+   "default": null
+  },
+  "2fvg6e": {
+   "default": null
+  },
+  "1riblus": {
+   "default": {
+    "initial": {
+     "opacity": 0.001,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "x": 0,
+     "y": 800
+    },
+    "animate": {
+     "opacity": 1,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "transition": {
+      "bounce": 0,
+      "delay": 0,
+      "duration": 2,
+      "type": "spring"
+     },
+     "x": 0,
+     "y": 0
+    },
+    "transformTemplate": "translate(-50%, -50%) __Appear_Animation_Transform__"
+   }
+  },
+  "fuuxif": {
+   "default": {
+    "initial": {
+     "opacity": 0.001,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "x": 0,
+     "y": 20
+    },
+    "animate": {
+     "opacity": 1,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "transition": {
+      "bounce": 0,
+      "delay": 3.2,
+      "duration": 1,
+      "type": "spring"
+     },
+     "x": 0,
+     "y": 0
+    }
+   },
+   "17sbvpl": {
+    "initial": {
+     "opacity": 0.001,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "x": 0,
+     "y": 20
+    },
+    "animate": {
+     "opacity": 1,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "transition": {
+      "bounce": 0,
+      "delay": 3.2,
+      "duration": 1,
+      "type": "spring"
+     },
+     "x": 0,
+     "y": 0
+    }
+   },
+   "1o09raw": {
+    "initial": {
+     "opacity": 0.001,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "x": 0,
+     "y": 20
+    },
+    "animate": {
+     "opacity": 1,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "transition": {
+      "bounce": 0,
+      "delay": 3.2,
+      "duration": 1,
+      "type": "spring"
+     },
+     "x": 0,
+     "y": 0
+    }
+   }
+  },
+  "foake2": {
+   "default": {
+    "initial": {
+     "opacity": 0.001,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "x": 20,
+     "y": 0
+    },
+    "animate": {
+     "opacity": 1,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "transition": {
+      "bounce": 0,
+      "delay": 3.4,
+      "duration": 1,
+      "type": "spring"
+     },
+     "x": 0,
+     "y": 0
+    }
+   }
+  },
+  "sqepk0": {
+   "default": {},
+   "17sbvpl": {},
+   "1o09raw": {}
+  }
+ },
+ "appearTargets": [
+  {
+   "id": "1p1ynqq",
+   "n": "div",
+   "r": [
+    1054,
+    34,
+    40,
+    20
+   ],
+   "txt": "About About"
+  },
+  {
+   "id": "1hbjoos",
+   "n": "div",
+   "r": [
+    1111,
+    34,
+    74,
+    20
+   ],
+   "txt": "Experience Experience"
+  },
+  {
+   "id": "1573cyk",
+   "n": "div",
+   "r": [
+    1203,
+    34,
+    37,
+    20
+   ],
+   "txt": "Menu Menu"
+  },
+  {
+   "id": "1kzewxu",
+   "n": "div",
+   "r": [
+    1257,
+    34,
+    73,
+    20
+   ],
+   "txt": "Philosophy Philosophy"
+  },
+  {
+   "id": "2fvg6e",
+   "n": "div",
+   "r": [
+    1347,
+    34,
+    53,
+    20
+   ],
+   "txt": "Contact Contact"
+  },
+  {
+   "id": "fuuxif",
+   "n": "div",
+   "r": [
+    40,
+    351,
+    189,
+    58
+   ],
+   "txt": "Make reservation Make reservation"
+  },
+  {
+   "id": "foake2",
+   "n": "div",
+   "r": [
+    1010,
+    494,
+    390,
+    59
+   ],
+   "txt": "Discover a dining experience where refin"
+  },
+  {
+   "id": "sqepk0",
+   "n": "div",
+   "r": [
+    0,
+    612,
+    1440,
+    288
+   ],
+   "txt": "Gaststätte Gaststätte"
+  },
+  {
+   "id": "n0ccwk",
+   "n": "Light",
+   "r": [
+    1280,
+    842,
+    140,
+    38
+   ],
+   "txt": "Create a free website with Framer, the w"
+  }
+ ],
+ "sections": [
+  {
+   "n": "div",
+   "r": [
+    0,
+    13749,
+    1440,
+    1016
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "pt": "0px",
+   "pb": "0px",
+   "gap": "normal",
+   "radius": "0px"
+  }
+ ],
+ "radiusHist": [
+  [
+   "50px",
+   9
+  ],
+  [
+   "10px",
+   5
+  ],
+  [
+   "11px",
+   2
+  ]
+ ],
+ "shadowHist": [
+  [
+   "rgb(0, 0, 0) 0px 0px 0px 1px inset",
+   2
+  ],
+  [
+   "rgba(0, 0, 0, 0.17) 0px 0.602187px 1.56569px -1.5px, rgba(0, 0, 0, 0.14) 0px 2.28853px 5.95019px -3px, rgba(0, 0, 0, 0.02) 0px 10px 26px -4.5px",
+   1
+  ]
+ ],
+ "backdropHist": [
+  [
+   "blur(20px)",
+   6
+  ]
+ ],
+ "filterHist": [
+  [
+   "blur(10px)",
+   4
+  ]
+ ],
+ "fontHist": [
+  [
+   "Aboreto 44px w400 ls-2.2px",
+   695
+  ],
+  [
+   "Zalando Sans 36px w400 ls-0.72px",
+   117
+  ],
+  [
+   "Zalando Sans 14px w400 ls0.14px",
+   50
+  ],
+  [
+   "Zalando Sans 12px w400 lsnormal",
+   18
+  ],
+  [
+   "Zalando Sans 16px w400 lsnormal",
+   14
+  ],
+  [
+   "Aboreto 360px w400 ls-18px",
+   4
+  ],
+  [
+   "Inter 12px w400 lsnormal",
+   3
+  ],
+  [
+   "Zalando Sans 14px w400 lsnormal",
+   2
+  ],
+  [
+   "Zalando Sans 20px w400 lsnormal",
+   1
+  ],
+  [
+   "sans-serif 12px w400 lsnormal",
+   1
+  ]
+ ],
+ "gradHist": [
+  [
+   "linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 29%, rgba(14, 0, 5, 0.5) 50%, rgba(0, 0, 0, 0) 71%, rgba(0, 0, 0, 0) 100%)",
+   1
+  ]
+ ],
+ "scripts": [
+  "https://events.framer.com/script?v=2"
+ ],
+ "hover": []
+}

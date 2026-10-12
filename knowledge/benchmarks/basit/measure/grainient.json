@@ -1,0 +1,1482 @@
+{
+ "id": "grainient",
+ "url": "https://grainient.supply/",
+ "date": "2026-10-11",
+ "hero": {
+  "bgImages": [
+   {
+    "n": "Container",
+    "r": [
+     15,
+     62,
+     1410,
+     823
+    ],
+    "bg": "linear-gradient(rgb(0, 0, 0) 0%, rgb(20, 20, 20) 100%)",
+    "size": "auto",
+    "blend": "normal",
+    "op": "1",
+    "filter": "none"
+   }
+  ],
+  "filters": [
+   {
+    "n": "Desktop",
+    "r": [
+     0,
+     0,
+     1440,
+     62
+    ],
+    "filter": "none",
+    "backdrop": "blur(20px)",
+    "bg": "rgb(0, 0, 0)",
+    "op": "1"
+   }
+  ],
+  "blends": [],
+  "transforms": [
+   {
+    "n": "img",
+    "r": [
+     -53,
+     822,
+     478,
+     544
+    ],
+    "t": "matrix(1.4, 0, 0, 1.4, 0, 0)",
+    "persp": "none",
+    "op": "0"
+   },
+   {
+    "n": "img",
+    "r": [
+     303,
+     823,
+     478,
+     542
+    ],
+    "t": "matrix(1.4, 0, 0, 1.4, 0, 0)",
+    "persp": "none",
+    "op": "0"
+   },
+   {
+    "n": "div",
+    "r": [
+     659,
+     822,
+     478,
+     544
+    ],
+    "t": "matrix(1.4, 0, 0, 1.4, 0, 0)",
+    "persp": "none",
+    "op": "0"
+   },
+   {
+    "n": "img",
+    "r": [
+     1016,
+     822,
+     478,
+     544
+    ],
+    "t": "matrix(1.4, 0, 0, 1.4, 0, 0)",
+    "persp": "none",
+    "op": "0"
+   }
+  ],
+  "perspective": [],
+  "media": [
+   {
+    "tag": "CANVAS",
+    "n": "div",
+    "r": [
+     15,
+     62,
+     1410,
+     823
+    ],
+    "src": "",
+    "fit": "fill",
+    "radius": "0px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": null
+   },
+   {
+    "tag": "IMG",
+    "n": "div",
+    "r": [
+     -53,
+     822,
+     478,
+     544
+    ],
+    "src": "https://framerusercontent.com/images/96xoOFnQP5CtwpeROZ7uf8vwi6k.png?scale-down-to=1024&width=5120&height=2880",
+    "fit": "cover",
+    "radius": "0px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": [
+     341,
+     191
+    ]
+   },
+   {
+    "tag": "IMG",
+    "n": "div",
+    "r": [
+     303,
+     823,
+     478,
+     542
+    ],
+    "src": "https://framerusercontent.com/images/eiodnGRlaG2am17MfvyHwgFU.png?scale-down-to=1024&width=870&height=1226",
+    "fit": "cover",
+    "radius": "0px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": [
+     341,
+     481
+    ]
+   },
+   {
+    "tag": "VIDEO",
+    "n": "div",
+    "r": [
+     659,
+     822,
+     478,
+     544
+    ],
+    "src": "https://grainient.b-cdn.net/%40Grainient-Freebies/grainientAnimatedFree.mp4",
+    "fit": "cover",
+    "radius": "0px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": null
+   },
+   {
+    "tag": "IMG",
+    "n": "div",
+    "r": [
+     1016,
+     822,
+     478,
+     544
+    ],
+    "src": "https://framerusercontent.com/images/r6k4GwBdPATNys7nN2ssdREJA.png?scale-down-to=1024&width=6000&height=4000",
+    "fit": "cover",
+    "radius": "0px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": [
+     341,
+     227
+    ]
+   }
+  ],
+  "svgNoise": 0,
+  "turb": [],
+  "canvas": [
+   {
+    "r": [
+     15,
+     14,
+     34,
+     34
+    ],
+    "ctx": "",
+    "parent": "div"
+   },
+   {
+    "r": [
+     15,
+     62,
+     1410,
+     823
+    ],
+    "ctx": "",
+    "parent": "div"
+   }
+  ],
+  "radii": [
+   "14 - Rounded 105x40 r=50px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 238) sh=none",
+   "14 - Rounded 156x40 r=50px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 238) sh=none",
+   "14 - Rounded 109x40 r=50px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 238) sh=none",
+   "14 - Rounded 80x40 r=50px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 238) sh=none",
+   "14 - Rounded 89x40 r=50px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 238) sh=none",
+   "14 - Rounded 66x40 r=50px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 238) sh=none",
+   "Light 93x38 r=50px bg=rgb(255, 255, 255) bd=0px rgb(0, 0, 238) sh=none",
+   "Primary 145x38 r=50px bg=rgb(194, 241, 60) bd=0px rgb(0, 0, 238) sh=none",
+   "Container 1410x823 r=20px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 0) sh=none",
+   "pill 133x28 r=50px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 0) sh=rgba(255, 255, 255, 0.02) 0px 0.482901px 1.25554px 0px inset, rgba(255, 255, 255, 0.18) 0px 4px 10.4px 0px inset",
+   "Primary - Large 163x47 r=50px bg=rgb(194, 241, 60) bd=0px rgb(0, 0, 238) sh=none"
+  ],
+  "texts": [
+   "Collections | \"SF Pro Rounded Regular\" 14px/19.6px w400 ls=normal c=rgb(255, 255, 255) tt=none @437,-8,65,20",
+   "Collections | \"SF Pro Rounded Regular\" 14px/19.6px w400 ls=normal c=rgb(255, 255, 255) tt=none @438,21,65,20",
+   "Animated Gradients | \"SF Pro Rounded Regular\" 14px/19.6px w400 ls=normal c=rgb(255, 255, 255) tt=none @541,-8,116,20",
+   "Animated Gradients | \"SF Pro Rounded Regular\" 14px/19.6px w400 ls=normal c=rgb(255, 255, 255) tt=none @543,21,116,20",
+   "Shader Tool | \"SF Pro Rounded Regular\" 14px/19.6px w400 ls=normal c=rgb(255, 255, 255) tt=none @698,-8,69,20",
+   "Shader Tool | \"SF Pro Rounded Regular\" 14px/19.6px w400 ls=normal c=rgb(255, 255, 255) tt=none @699,21,69,20",
+   "Pricing | \"SF Pro Rounded Regular\" 14px/19.6px w400 ls=normal c=rgb(255, 255, 255) tt=none @807,-8,40,20",
+   "Pricing | \"SF Pro Rounded Regular\" 14px/19.6px w400 ls=normal c=rgb(255, 255, 255) tt=none @808,21,40,20",
+   "Request | \"SF Pro Rounded Regular\" 14px/19.6px w400 ls=normal c=rgb(255, 255, 255) tt=none @887,-8,49,20",
+   "Request | \"SF Pro Rounded Regular\" 14px/19.6px w400 ls=normal c=rgb(255, 255, 255) tt=none @888,21,49,20",
+   "FAQ | \"SF Pro Rounded Regular\" 14px/19.6px w400 ls=normal c=rgb(255, 255, 255) tt=none @976,-8,26,20",
+   "FAQ | \"SF Pro Rounded Regular\" 14px/19.6px w400 ls=normal c=rgb(255, 255, 255) tt=none @977,21,26,20",
+   "Sign in | \"SF Pro Rounded Semibold\" 14px/15.4px w600 ls=normal c=rgb(0, 0, 0) tt=none @1214,4,42,15",
+   "Sign in | \"SF Pro Rounded Semibold\" 14px/15.4px w600 ls=normal c=rgb(0, 0, 0) tt=none @1214,23,42,15",
+   "Get Pro Access | \"SF Pro Rounded Semibold\" 14px/15.4px w600 ls=normal c=rgb(0, 0, 0) tt=none @1317,4,94,15",
+   "Get Pro Access | \"SF Pro Rounded Semibold\" 14px/15.4px w600 ls=normal c=rgb(0, 0, 0) tt=none @1317,23,94,15",
+   "Meet Grainient 2.0 | \"SF Pro Rounded Regular\" 12px/12px w400 ls=normal c=rgb(255, 255, 255) tt=none @673,338,93,12",
+   "Discover the Best Gradients on the Internet. | \"SF Pro Rounded Medium\" 48px/48px w500 ls=normal c=rgb(255, 255, 255) tt=none @30,374,1380,96",
+   "Grainient combines Grainy and smooth Gradients, An | \"SF Pro Rounded Regular\" 14px/19.6px w400 ls=normal c=rgb(178, 178, 178) tt=none @420,486,600,39",
+   "Get Pro Access | \"SF Pro Rounded Medium\" 16px/19.2px w500 ls=normal c=rgb(0, 0, 0) tt=none @677,559,105,19",
+   "Get Pro Access | \"SF Pro Rounded Medium\" 16px/19.2px w500 ls=normal c=rgb(0, 0, 0) tt=none @677,583,105,19"
+  ],
+  "buttons": [
+   {
+    "t": "Collections Collections",
+    "r": [
+     418,
+     11,
+     105,
+     40
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "50px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "Animated Gradients Animated Gradients",
+    "r": [
+     523,
+     11,
+     156,
+     40
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "50px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "Shader Tool Shader Tool",
+    "r": [
+     679,
+     11,
+     109,
+     40
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "50px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "Pricing Pricing",
+    "r": [
+     788,
+     11,
+     80,
+     40
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "50px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "Request Request",
+    "r": [
+     868,
+     11,
+     89,
+     40
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "50px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "FAQ FAQ",
+    "r": [
+     957,
+     11,
+     66,
+     40
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "50px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "Sign in Sign in",
+    "r": [
+     1177,
+     12,
+     93,
+     38
+    ],
+    "bg": "rgb(255, 255, 255)",
+    "bgi": "none",
+    "radius": "50px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "Get Pro Access Get Pro Access",
+    "r": [
+     1280,
+     12,
+     145,
+     38
+    ],
+    "bg": "rgb(194, 241, 60)",
+    "bgi": "none",
+    "radius": "50px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "Get Pro Access Get Pro Access",
+    "r": [
+     638,
+     569,
+     163,
+     47
+    ],
+    "bg": "rgb(194, 241, 60)",
+    "bgi": "none",
+    "radius": "50px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   }
+  ],
+  "fonts": [
+   "SF Pro Rounded Regular 400",
+   "SF Pro Rounded Semibold 600",
+   "SF Pro Rounded Medium 500",
+   "Inter 500",
+   "SF Pro Rounded Regular Placeholder normal",
+   "SF Pro Rounded Semibold Placeholder normal",
+   "SF Pro Rounded Medium Placeholder normal"
+  ],
+  "appear": null,
+  "anims": []
+ },
+ "hover": [
+  {
+   "n": "P",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgi": "none",
+   "sh": "none",
+   "t": "none",
+   "r": "0px"
+  },
+  {
+   "n": "DIV",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgi": "none",
+   "sh": "none",
+   "t": "matrix(1, 0, 0, 1, 0, -0.0239936)",
+   "r": "0px"
+  },
+  {
+   "n": "text",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgi": "none",
+   "sh": "none",
+   "t": "none",
+   "r": "0px"
+  },
+  {
+   "n": "A",
+   "bg": "rgb(255, 255, 255)",
+   "bgi": "none",
+   "sh": "rgba(255, 255, 255, 0.2) 0px 0px 0px 4.99081px",
+   "t": "none",
+   "r": "50px"
+  }
+ ],
+ "page": {
+  "vw": 1440,
+  "pageHeight": 18254,
+  "title": "Unlimited Gradients, Animated Gradients and AI-Generated Backgrounds",
+  "htmlBg": "rgba(0, 0, 0, 0)",
+  "bodyBg": "rgb(0, 0, 0)",
+  "bodyColor": "rgb(0, 0, 0)",
+  "colorScheme": "normal",
+  "h1": {
+   "text": "Discover the Best Gradients on the Internet.",
+   "family": "\"SF Pro Rounded Medium\", \"SF Pro Rounded Medium Placeholder\", sans-ser",
+   "size": "48px",
+   "weight": "500",
+   "lh": "48px",
+   "ls": "normal",
+   "color": "rgb(255, 255, 255)",
+   "tt": "none",
+   "align": "center",
+   "w": 1380,
+   "h": 96,
+   "top": 374,
+   "left": 30,
+   "tag": "h1",
+   "balance": "wrap"
+  },
+  "largestHeroText": {
+   "text": "Discover the Best Gradients on the Internet.",
+   "family": "\"SF Pro Rounded Medium\", \"SF Pro Rounded Medium Placeholder\", sans-ser",
+   "size": "48px",
+   "weight": "500",
+   "lh": "48px",
+   "ls": "normal",
+   "color": "rgb(255, 255, 255)",
+   "tt": "none",
+   "align": "center",
+   "w": 1380,
+   "h": 96,
+   "top": 374,
+   "left": 30,
+   "tag": "h1",
+   "balance": "wrap"
+  },
+  "h2": [
+   {
+    "text": "More than Gradients, A complete Visual Engine",
+    "family": "\"SF Pro Rounded Medium\", \"SF Pro Rounded Medium Placeholder\", sans-ser",
+    "size": "34px",
+    "weight": "500",
+    "lh": "40.8px",
+    "ls": "normal",
+    "color": "rgb(255, 255, 255)",
+    "tt": "none",
+    "align": "center",
+    "w": 196,
+    "h": 41,
+    "top": 4103,
+    "left": 622,
+    "tag": "h2",
+    "balance": "wrap"
+   },
+   {
+    "text": "Meet Grainient Shader Gradient Tool",
+    "family": "\"SF Pro Rounded Medium\", \"SF Pro Rounded Medium Placeholder\", sans-ser",
+    "size": "34px",
+    "weight": "500",
+    "lh": "40.8px",
+    "ls": "normal",
+    "color": "rgb(255, 255, 255)",
+    "tt": "none",
+    "align": "center",
+    "w": 400,
+    "h": 82,
+    "top": 6868,
+    "left": 164,
+    "tag": "h2",
+    "balance": "wrap"
+   },
+   {
+    "text": "Meet Grainient Animated Backgrounds",
+    "family": "\"SF Pro Rounded Medium\", \"SF Pro Rounded Medium Placeholder\", sans-ser",
+    "size": "34px",
+    "weight": "500",
+    "lh": "40.8px",
+    "ls": "normal",
+    "color": "rgb(255, 255, 255)",
+    "tt": "none",
+    "align": "center",
+    "w": 400,
+    "h": 82,
+    "top": 6860,
+    "left": 876,
+    "tag": "h2",
+    "balance": "wrap"
+   },
+   {
+    "text": "Introducing Grainient v2, Gradients, Animated Backgrounds, and a Real-",
+    "family": "\"SF Pro Rounded Medium\", \"SF Pro Rounded Medium Placeholder\", sans-ser",
+    "size": "34px",
+    "weight": "500",
+    "lh": "40.8px",
+    "ls": "normal",
+    "color": "rgb(255, 255, 255)",
+    "tt": "none",
+    "align": "center",
+    "w": 600,
+    "h": 122,
+    "top": 7954,
+    "left": 420,
+    "tag": "h2",
+    "balance": "wrap"
+   }
+  ],
+  "h3": [
+   {
+    "text": "Go Unlimited",
+    "family": "\"SF Pro Rounded Regular\", \"SF Pro Rounded Regular Placeholder\", sans-s",
+    "size": "28px",
+    "weight": "400",
+    "lh": "33.6px",
+    "ls": "normal",
+    "color": "rgb(255, 255, 255)",
+    "tt": "none",
+    "align": "start",
+    "w": 152,
+    "h": 34,
+    "top": 12991,
+    "left": 1134,
+    "tag": "h3",
+    "balance": "nowrap"
+   },
+   {
+    "text": "Go Unlimited",
+    "family": "\"SF Pro Rounded Regular\", \"SF Pro Rounded Regular Placeholder\", sans-s",
+    "size": "28px",
+    "weight": "400",
+    "lh": "33.6px",
+    "ls": "normal",
+    "color": "rgb(255, 255, 255)",
+    "tt": "none",
+    "align": "start",
+    "w": 152,
+    "h": 34,
+    "top": 13026,
+    "left": 1134,
+    "tag": "h3",
+    "balance": "nowrap"
+   }
+  ],
+  "p": [
+   {
+    "text": "Grainient combines Grainy and smooth Gradients, Animated Gradients, AI",
+    "family": "\"SF Pro Rounded Regular\", \"SF Pro Rounded Regular Placeholder\", sans-s",
+    "size": "14px",
+    "weight": "400",
+    "lh": "19.6px",
+    "ls": "normal",
+    "color": "rgb(178, 178, 178)",
+    "tt": "none",
+    "align": "center",
+    "w": 600,
+    "h": 39,
+    "top": 486,
+    "left": 420,
+    "tag": "p",
+    "balance": "wrap"
+   },
+   {
+    "text": "12 beautifully crafted God rays Gradients backgrounds specifically des",
+    "family": "\"SF Pro Rounded Regular\", \"SF Pro Rounded Regular Placeholder\", sans-s",
+    "size": "14px",
+    "weight": "400",
+    "lh": "19.6px",
+    "ls": "normal",
+    "color": "rgb(178, 178, 178)",
+    "tt": "none",
+    "align": "left",
+    "w": 402,
+    "h": 20,
+    "top": 2089,
+    "left": 44,
+    "tag": "p",
+    "balance": "wrap"
+   },
+   {
+    "text": "20 Beautifully designed dither art gradients, perfect for your next de",
+    "family": "\"SF Pro Rounded Regular\", \"SF Pro Rounded Regular Placeholder\", sans-s",
+    "size": "14px",
+    "weight": "400",
+    "lh": "19.6px",
+    "ls": "normal",
+    "color": "rgb(178, 178, 178)",
+    "tt": "none",
+    "align": "left",
+    "w": 402,
+    "h": 20,
+    "top": 2089,
+    "left": 519,
+    "tag": "p",
+    "balance": "wrap"
+   }
+  ],
+  "heroP": {
+   "text": "Grainient combines Grainy and smooth Gradients, Animated Gradients, AI",
+   "family": "\"SF Pro Rounded Regular\", \"SF Pro Rounded Regular Placeholder\", sans-s",
+   "size": "14px",
+   "weight": "400",
+   "lh": "19.6px",
+   "ls": "normal",
+   "color": "rgb(178, 178, 178)",
+   "tt": "none",
+   "align": "center",
+   "w": 600,
+   "h": 39,
+   "top": 486,
+   "left": 420,
+   "tag": "p",
+   "balance": "wrap"
+  },
+  "typeScale": [
+   [
+    "SF Pro Rounded Regular|18|400",
+    3951
+   ],
+   [
+    "SF Pro Rounded Regular|14|400",
+    2559
+   ],
+   [
+    "SF Pro Rounded Regular|16|400",
+    741
+   ],
+   [
+    "SF Pro Rounded Medium|34|500",
+    516
+   ],
+   [
+    "SF Pro Rounded Medium|16|500",
+    299
+   ],
+   [
+    "SF Pro Rounded Medium|20|500",
+    191
+   ],
+   [
+    "SF Pro Rounded Medium|24|500",
+    97
+   ],
+   [
+    "SF Pro Rounded Regular|12|400",
+    87
+   ],
+   [
+    "SF Pro Rounded Medium|48|500",
+    44
+   ],
+   [
+    "SF Pro Rounded Semibold|14|600",
+    42
+   ],
+   [
+    "SF Pro Rounded Regular|28|400",
+    24
+   ],
+   [
+    "SF Pro Rounded Semibold|32|600",
+    20
+   ],
+   [
+    "Inter|16|500",
+    14
+   ]
+  ],
+  "fontFamiliesUsed": [
+   [
+    "SF Pro Rounded Regular",
+    133
+   ],
+   [
+    "SF Pro Rounded Medium",
+    42
+   ],
+   [
+    "SF Pro Rounded Semibold",
+    8
+   ],
+   [
+    "Inter",
+    2
+   ]
+  ],
+  "sizesDistinct": [
+   12,
+   14,
+   16,
+   18,
+   20,
+   24,
+   28,
+   32,
+   34,
+   48
+  ],
+  "lsHist": [
+   [
+    "normal",
+    181
+   ],
+   [
+    "-0.050em",
+    4
+   ]
+  ],
+  "nav": {
+   "tag": "NAV",
+   "h": 62,
+   "outerH": 62,
+   "top": 0,
+   "w": 1440,
+   "position": "fixed",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgHeader": "rgb(0, 0, 0)",
+   "backdrop": "none",
+   "bb": "0px none rgb(0, 0, 0)",
+   "shadow": "none",
+   "contentLeft": 15,
+   "contentRight": 1425,
+   "nLinks": 9,
+   "linkTexts": [
+    "Collections Collections",
+    "Animated Gradients Animated Gradients",
+    "Shader Tool Shader Tool",
+    "Pricing Pricing",
+    "Request Request",
+    "FAQ FAQ",
+    "Sign in Sign in",
+    "Get Pro Access Get Pro Access"
+   ],
+   "linkTypo": [
+    {
+     "text": "Collections Collections",
+     "family": "sans-serif",
+     "size": "12px",
+     "weight": "400",
+     "lh": "normal",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "tt": "none",
+     "align": "start",
+     "w": 105,
+     "h": 40,
+     "top": 11,
+     "left": 418,
+     "tag": "a",
+     "balance": "wrap"
+    },
+    {
+     "text": "Animated Gradients Animated Gradients",
+     "family": "sans-serif",
+     "size": "12px",
+     "weight": "400",
+     "lh": "normal",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "tt": "none",
+     "align": "start",
+     "w": 156,
+     "h": 40,
+     "top": 11,
+     "left": 523,
+     "tag": "a",
+     "balance": "wrap"
+    },
+    {
+     "text": "Shader Tool Shader Tool",
+     "family": "sans-serif",
+     "size": "12px",
+     "weight": "400",
+     "lh": "normal",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "tt": "none",
+     "align": "start",
+     "w": 109,
+     "h": 40,
+     "top": 11,
+     "left": 679,
+     "tag": "a",
+     "balance": "wrap"
+    }
+   ],
+   "hasLogoSvgOrImg": false,
+   "px": "0px/0px"
+  },
+  "ctas": [
+   {
+    "text": "Sign in Sign in",
+    "inHeader": true,
+    "kind": "filled",
+    "h": 38,
+    "w": 93,
+    "radius": "50px",
+    "bg": "rgb(255, 255, 255)",
+    "color": "rgb(0, 0, 238)",
+    "border": null,
+    "size": "12px",
+    "weight": "400",
+    "pad": "10px 14px",
+    "shadow": "rgba(255, 255, 255, 0.2) 0px 0px 0px 0px",
+    "family": "sans-serif"
+   },
+   {
+    "text": "Get Pro Access Get Pro Access",
+    "inHeader": true,
+    "kind": "filled",
+    "h": 38,
+    "w": 145,
+    "radius": "50px",
+    "bg": "rgb(194, 241, 60)",
+    "color": "rgb(0, 0, 238)",
+    "border": null,
+    "size": "12px",
+    "weight": "400",
+    "pad": "10px 14px",
+    "shadow": null,
+    "family": "sans-serif"
+   },
+   {
+    "text": "Get Pro Access Get Pro Access",
+    "inHeader": false,
+    "kind": "filled",
+    "h": 47,
+    "w": 163,
+    "radius": "50px",
+    "bg": "rgb(194, 241, 60)",
+    "color": "rgb(0, 0, 238)",
+    "border": null,
+    "size": "12px",
+    "weight": "400",
+    "pad": "14px 19px",
+    "shadow": null,
+    "family": "sans-serif"
+   },
+   {
+    "text": "( 466 ) Gradients Smooth Blend",
+    "inHeader": false,
+    "kind": "filled",
+    "h": 387,
+    "w": 341,
+    "radius": "20px",
+    "bg": "rgb(20, 20, 20)",
+    "color": "rgb(0, 0, 238)",
+    "border": null,
+    "size": "12px",
+    "weight": "400",
+    "pad": "0px 0px",
+    "shadow": null,
+    "family": "sans-serif"
+   }
+  ],
+  "chain": [
+   {
+    "tag": "h1.framer-text",
+    "w": 1380,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "block",
+    "ta": "center"
+   },
+   {
+    "tag": "div.framer-swox4n",
+    "w": 1380,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "div.ssr-variant",
+    "w": 0,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "contents",
+    "ta": "start"
+   },
+   {
+    "tag": "div.framer-1oaxqx",
+    "w": 1410,
+    "maxW": "none",
+    "pl": "15px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "header.framer-11qz8nc",
+    "w": 1440,
+    "maxW": "none",
+    "pl": "15px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "section.framer-107owtv",
+    "w": 1440,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "main.framer-y6yuem",
+    "w": 1440,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "div.framer-du5LT",
+    "w": 0,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "contents",
+    "ta": "start"
+   },
+   {
+    "tag": "div.framer-iRVEz",
+    "w": 1440,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   }
+  ],
+  "sections": [
+   {
+    "cls": "framer-107owtv",
+    "tag": "section",
+    "top": 0,
+    "h": 1289,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 62,
+    "effPb": -78,
+    "contentW": 1547,
+    "contentL": -53,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "Discover the Best Gradients on the Internet.",
+    "hSize": "48px",
+    "hAlign": "center"
+   },
+   {
+    "cls": "framer-3gn6ao",
+    "tag": "section",
+    "top": 1489,
+    "h": 1985,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 0,
+    "effPb": 0,
+    "contentW": 1490,
+    "contentL": -25,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "",
+    "hSize": null,
+    "hAlign": null
+   },
+   {
+    "cls": "framer-1lptwp5",
+    "tag": "section",
+    "top": 3673,
+    "h": 2700,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 155,
+    "effPb": 1741,
+    "contentW": 1440,
+    "contentL": 0,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "More than Gradients, A complete Visual Engine",
+    "hSize": "34px",
+    "hAlign": "center"
+   },
+   {
+    "cls": "framer-15rbihi",
+    "tag": "section",
+    "top": 6573,
+    "h": 794,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 0,
+    "effPb": 0,
+    "contentW": 1261,
+    "contentL": 164,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "Meet Grainient Shader Gradient Tool",
+    "hSize": "34px",
+    "hAlign": "center"
+   },
+   {
+    "cls": "framer-uqrom7",
+    "tag": "section",
+    "top": 7567,
+    "h": 4500,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 386,
+    "effPb": 3916,
+    "contentW": 600,
+    "contentL": 420,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "Introducing Grainient v2, Gradients, Animated Back",
+    "hSize": "34px",
+    "hAlign": "center"
+   },
+   {
+    "cls": "framer-1spl5bp",
+    "tag": "section",
+    "top": 12267,
+    "h": 1001,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 0,
+    "effPb": -509,
+    "contentW": 1512,
+    "contentL": -36,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "The Internet’s #1 Gradient & Background Hub",
+    "hSize": "34px",
+    "hAlign": "center"
+   },
+   {
+    "cls": "framer-1cg64lh",
+    "tag": "section",
+    "top": 13468,
+    "h": 640,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 0,
+    "effPb": 30,
+    "contentW": 1410,
+    "contentL": 15,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "Infinite Gradients, Unlimited access!",
+    "hSize": "34px",
+    "hAlign": "center"
+   },
+   {
+    "cls": "framer-gfyh22",
+    "tag": "section",
+    "top": 14308,
+    "h": 881,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": -3,
+    "effPb": 0,
+    "contentW": 1261,
+    "contentL": 17,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "Curated gradients, Animated Gradients and AI-gener",
+    "hSize": "34px",
+    "hAlign": "center"
+   },
+   {
+    "cls": "framer-7v9ic2",
+    "tag": "section",
+    "top": 15389,
+    "h": 980,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": -211,
+    "effPb": -470,
+    "contentW": 1410,
+    "contentL": 15,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "Loved by Creatives all around the globe",
+    "hSize": "34px",
+    "hAlign": "center"
+   },
+   {
+    "cls": "framer-bu9j1o",
+    "tag": "section",
+    "top": 16569,
+    "h": 750,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": -320,
+    "effPb": -1267,
+    "contentW": 1823,
+    "contentL": -191,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "Be notified when new Update drops",
+    "hSize": "34px",
+    "hAlign": "center"
+   },
+   {
+    "cls": "framer-p0M1S",
+    "tag": "footer",
+    "top": 17519,
+    "h": 735,
+    "pt": "0px",
+    "pb": "10px",
+    "effPt": 80,
+    "effPb": 10,
+    "contentW": 2990,
+    "contentL": -1,
+    "bg": "rgb(8, 8, 8)",
+    "heading": "",
+    "hSize": null,
+    "hAlign": null
+   }
+  ],
+  "radiusAll": [
+   [
+    "5px",
+    212
+   ],
+   [
+    "8px",
+    90
+   ],
+   [
+    "15px",
+    69
+   ],
+   [
+    "50%",
+    48
+   ],
+   [
+    "10px",
+    36
+   ],
+   [
+    "50px",
+    33
+   ],
+   [
+    "20px",
+    21
+   ],
+   [
+    "3px",
+    8
+   ],
+   [
+    "100px",
+    1
+   ],
+   [
+    "45px",
+    1
+   ]
+  ],
+  "radiusCards": [
+   [
+    "10px",
+    21
+   ],
+   [
+    "20px",
+    16
+   ],
+   [
+    "50px",
+    1
+   ]
+  ],
+  "radiusMedia": [
+   [
+    "5px",
+    71
+   ],
+   [
+    "8px",
+    30
+   ],
+   [
+    "15px",
+    23
+   ],
+   [
+    "50%",
+    16
+   ]
+  ],
+  "radiusInputs": [
+   [
+    "50px",
+    1
+   ],
+   [
+    "45px",
+    1
+   ]
+  ],
+  "shadows": [
+   [
+    "rgba(255, 255, 255, 0.4) 0px 0.5px 0.5px 0px inset, rgba(0, 0, 0, 0.05) 0px 70px 30px 0px, rgba(0, 0, 0, 0.25) 0px 40px 25px 0px, rgba(0, 0, 0, 0.25) 0px 20px 20px 0px, r",
+    4
+   ],
+   [
+    "rgba(255, 255, 255, 0.2) 0px 0px 0px 0px",
+    1
+   ],
+   [
+    "rgba(255, 255, 255, 0.02) 0px 0.482901px 1.25554px 0px inset, rgba(255, 255, 255, 0.18) 0px 4px 10.4px 0px inset",
+    1
+   ],
+   [
+    "rgb(255, 255, 255) 0px 0.5px 0.5px 0px inset, rgba(0, 0, 0, 0.05) 0px 70px 30px 0px, rgba(0, 0, 0, 0.25) 0px 40px 25px 0px, rgba(0, 0, 0, 0.25) 0px 20px 20px 0px, rgba(0,",
+    1
+   ],
+   [
+    "rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset",
+    1
+   ]
+  ],
+  "borders": [],
+  "cardBgs": [
+   [
+    "rgb(20, 20, 20)",
+    20
+   ],
+   [
+    "rgb(21, 21, 21)",
+    16
+   ],
+   [
+    "rgb(13, 13, 13)",
+    1
+   ],
+   [
+    "rgba(0, 0, 0, 0.5)",
+    1
+   ]
+  ],
+  "grids": [
+   [
+    "4col gap 15px/15px",
+    2
+   ],
+   [
+    "3col gap 15px/15px",
+    2
+   ],
+   [
+    "2col gap 15px/15px",
+    1
+   ],
+   [
+    "5col gap 0px/50px",
+    1
+   ]
+  ],
+  "flexGaps": [
+   [
+    "0px",
+    98
+   ],
+   [
+    "10px",
+    76
+   ],
+   [
+    "15px",
+    31
+   ],
+   [
+    "5px",
+    30
+   ],
+   [
+    "6px",
+    11
+   ],
+   [
+    "24px",
+    6
+   ],
+   [
+    "30px",
+    4
+   ],
+   [
+    "50px",
+    4
+   ]
+  ],
+  "bgByArea": [
+   [
+    "rgb(0, 0, 0)",
+    "22%"
+   ],
+   [
+    "rgb(20, 20, 20)",
+    "17%"
+   ],
+   [
+    "rgb(21, 21, 21)",
+    "7%"
+   ],
+   [
+    "rgb(13, 13, 13)",
+    "4%"
+   ],
+   [
+    "rgb(8, 8, 8)",
+    "4%"
+   ],
+   [
+    "rgb(43, 43, 43)",
+    "3%"
+   ]
+  ],
+  "textColors": [
+   [
+    "rgb(255, 255, 255)",
+    114
+   ],
+   [
+    "rgb(178, 178, 178)",
+    49
+   ],
+   [
+    "rgb(0, 0, 0)",
+    18
+   ],
+   [
+    "rgba(255, 255, 255, 0.7)",
+    2
+   ],
+   [
+    "rgb(102, 102, 102)",
+    2
+   ]
+  ],
+  "linkColors": [
+   [
+    "rgb(255, 255, 255)",
+    64
+   ],
+   [
+    "rgb(178, 178, 178)",
+    27
+   ],
+   [
+    "rgb(0, 0, 0)",
+    14
+   ]
+  ],
+  "counts": {
+   "video": 3,
+   "canvas": 2,
+   "iframe": 3,
+   "svg": 3,
+   "img": 159,
+   "picture": 0,
+   "spline": 0,
+   "lottie": 0
+  },
+  "heroMedia": {
+   "video": true,
+   "canvas": true,
+   "bigImg": 3
+  },
+  "libs": {
+   "gsap": false,
+   "lenis": true,
+   "locomotive": false,
+   "next": false,
+   "framer": true,
+   "webflow": false,
+   "three": false,
+   "astro": false,
+   "nuxt": false,
+   "tailwindish": false
+  },
+  "sticky": 2,
+  "fixed": 1,
+  "snap": 0
+ },
+ "pageHeight": 18254
+}

@@ -1,0 +1,1745 @@
+{
+ "id": "eventverse",
+ "url": "https://event-verse.framer.website/",
+ "date": "2026-10-11",
+ "hero": {
+  "bgImages": [
+   {
+    "n": "Header",
+    "r": [
+     0,
+     0,
+     1440,
+     1032
+    ],
+    "bg": "linear-gradient(0deg, rgb(255, 255, 255) 87%, rgb(191, 236, 255) 100%)",
+    "size": "auto",
+    "blend": "normal",
+    "op": "1",
+    "filter": "none"
+   },
+   {
+    "n": "div",
+    "r": [
+     1293,
+     814,
+     11,
+     12
+    ],
+    "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 10.8 12%22 overflow=%22visible%22><path d=%22M 2.4 12 L 4.8 7.5 L 0 6.9 L 7.2 0 L 8.4 0 L 6 4.5 L 10.8 5.1 L 3.6 12 Z%22 fill=%22rgb(255, 255, 255)%22></path></svg>\")",
+    "size": "100% 100%",
+    "blend": "normal",
+    "op": "1",
+    "filter": "none"
+   },
+   {
+    "n": "div",
+    "r": [
+     1292,
+     794,
+     11,
+     12
+    ],
+    "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 10.8 12%22 overflow=%22visible%22><path d=%22M 2.4 12 L 4.8 7.5 L 0 6.9 L 7.2 0 L 8.4 0 L 6 4.5 L 10.8 5.1 L 3.6 12 Z%22 fill=%22rgb(255, 255, 255)%22></path></svg>\")",
+    "size": "100% 100%",
+    "blend": "normal",
+    "op": "1",
+    "filter": "none"
+   }
+  ],
+  "filters": [],
+  "blends": [],
+  "transforms": [
+   {
+    "n": "div",
+    "r": [
+     1397,
+     649,
+     6,
+     6
+    ],
+    "t": "matrix(0.707107, 0.707107, -0.707107, 0.707107, 0, 0)",
+    "persp": "none",
+    "op": "1"
+   },
+   {
+    "n": "div",
+    "r": [
+     1397,
+     649,
+     6,
+     6
+    ],
+    "t": "matrix(0.707107, -0.707107, 0.707107, 0.707107, 0, 0)",
+    "persp": "none",
+    "op": "1"
+   },
+   {
+    "n": "p",
+    "r": [
+     1350,
+     861,
+     0,
+     0
+    ],
+    "t": "matrix(0.001, 0, 0, 0.001, 0, 0)",
+    "persp": "none",
+    "op": "1"
+   }
+  ],
+  "perspective": [],
+  "media": [
+   {
+    "tag": "IMG",
+    "n": "div",
+    "r": [
+     -515,
+     582,
+     400,
+     450
+    ],
+    "src": "https://framerusercontent.com/images/qyN2CKkv6G5gxPKHn8LlwjzAE.jpeg?scale-down-to=2048",
+    "fit": "cover",
+    "radius": "50px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": [
+     800,
+     968
+    ]
+   },
+   {
+    "tag": "IMG",
+    "n": "div",
+    "r": [
+     -105,
+     582,
+     400,
+     450
+    ],
+    "src": "https://framerusercontent.com/images/zf2KY4R2f7Wvq4TM9dVsfLBzhz8.png",
+    "fit": "cover",
+    "radius": "50px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": [
+     800,
+     968
+    ]
+   },
+   {
+    "tag": "IMG",
+    "n": "div",
+    "r": [
+     305,
+     582,
+     400,
+     450
+    ],
+    "src": "https://framerusercontent.com/images/7l4VUEBnvK69WttT6q0ZCT1x2u4.jpeg",
+    "fit": "cover",
+    "radius": "50px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": [
+     800,
+     1028
+    ]
+   },
+   {
+    "tag": "IMG",
+    "n": "div",
+    "r": [
+     715,
+     582,
+     400,
+     450
+    ],
+    "src": "https://framerusercontent.com/images/5j6KwYErDZMO63uF5f09XuQHd7E.jpeg?scale-down-to=2048",
+    "fit": "cover",
+    "radius": "50px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": [
+     800,
+     1000
+    ]
+   },
+   {
+    "tag": "IMG",
+    "n": "div",
+    "r": [
+     1125,
+     582,
+     400,
+     450
+    ],
+    "src": "https://framerusercontent.com/images/B3JJ6ZUucPsexj459R5ZARkKHcs.jpeg",
+    "fit": "cover",
+    "radius": "50px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": [
+     1200,
+     1500
+    ]
+   },
+   {
+    "tag": "IMG",
+    "n": "div",
+    "r": [
+     1535,
+     582,
+     400,
+     450
+    ],
+    "src": "https://framerusercontent.com/images/qyN2CKkv6G5gxPKHn8LlwjzAE.jpeg?scale-down-to=2048",
+    "fit": "cover",
+    "radius": "50px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": [
+     800,
+     968
+    ]
+   },
+   {
+    "tag": "IMG",
+    "n": "div",
+    "r": [
+     1945,
+     582,
+     400,
+     450
+    ],
+    "src": "https://framerusercontent.com/images/zf2KY4R2f7Wvq4TM9dVsfLBzhz8.png",
+    "fit": "cover",
+    "radius": "50px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": [
+     800,
+     968
+    ]
+   },
+   {
+    "tag": "IMG",
+    "n": "div",
+    "r": [
+     2355,
+     582,
+     400,
+     450
+    ],
+    "src": "https://framerusercontent.com/images/7l4VUEBnvK69WttT6q0ZCT1x2u4.jpeg",
+    "fit": "cover",
+    "radius": "50px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": [
+     800,
+     1028
+    ]
+   },
+   {
+    "tag": "IMG",
+    "n": "div",
+    "r": [
+     2765,
+     582,
+     400,
+     450
+    ],
+    "src": "https://framerusercontent.com/images/5j6KwYErDZMO63uF5f09XuQHd7E.jpeg?scale-down-to=2048",
+    "fit": "cover",
+    "radius": "50px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": [
+     800,
+     1000
+    ]
+   },
+   {
+    "tag": "IMG",
+    "n": "div",
+    "r": [
+     3175,
+     582,
+     400,
+     450
+    ],
+    "src": "https://framerusercontent.com/images/B3JJ6ZUucPsexj459R5ZARkKHcs.jpeg",
+    "fit": "cover",
+    "radius": "50px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": [
+     800,
+     1000
+    ]
+   },
+   {
+    "tag": "IMG",
+    "n": "div",
+    "r": [
+     3585,
+     582,
+     400,
+     450
+    ],
+    "src": "https://framerusercontent.com/images/qyN2CKkv6G5gxPKHn8LlwjzAE.jpeg?scale-down-to=2048",
+    "fit": "cover",
+    "radius": "50px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": [
+     800,
+     968
+    ]
+   },
+   {
+    "tag": "IMG",
+    "n": "div",
+    "r": [
+     3995,
+     582,
+     400,
+     450
+    ],
+    "src": "https://framerusercontent.com/images/zf2KY4R2f7Wvq4TM9dVsfLBzhz8.png",
+    "fit": "cover",
+    "radius": "50px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": [
+     800,
+     968
+    ]
+   },
+   {
+    "tag": "IMG",
+    "n": "div",
+    "r": [
+     4405,
+     582,
+     400,
+     450
+    ],
+    "src": "https://framerusercontent.com/images/7l4VUEBnvK69WttT6q0ZCT1x2u4.jpeg",
+    "fit": "cover",
+    "radius": "50px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": [
+     800,
+     1028
+    ]
+   },
+   {
+    "tag": "IMG",
+    "n": "div",
+    "r": [
+     4815,
+     582,
+     400,
+     450
+    ],
+    "src": "https://framerusercontent.com/images/5j6KwYErDZMO63uF5f09XuQHd7E.jpeg?scale-down-to=2048",
+    "fit": "cover",
+    "radius": "50px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": [
+     800,
+     1000
+    ]
+   },
+   {
+    "tag": "IMG",
+    "n": "div",
+    "r": [
+     5225,
+     582,
+     400,
+     450
+    ],
+    "src": "https://framerusercontent.com/images/B3JJ6ZUucPsexj459R5ZARkKHcs.jpeg",
+    "fit": "cover",
+    "radius": "50px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": [
+     800,
+     1000
+    ]
+   },
+   {
+    "tag": "VIDEO",
+    "n": "div",
+    "r": [
+     1210,
+     632,
+     210,
+     158
+    ],
+    "src": "https://framerusercontent.com/assets/TNg2xfI1CEpQsOAJClKAFpU1XR4.mp4",
+    "fit": "cover",
+    "radius": "0px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": null
+   }
+  ],
+  "svgNoise": 0,
+  "turb": [],
+  "canvas": [],
+  "radii": [
+   "Container 1200x80 r=100px bg=rgb(255, 255, 255) bd=0px rgb(0, 0, 0) sh=rgba(0, 0, 0, 0.12) 0px 5px 30px 0px",
+   "Desktop 207x66 r=100px bg=rgb(191, 236, 255) bd=0px rgb(0, 0, 238) sh=none",
+   "Desktop 227x66 r=100px bg=rgb(255, 204, 234) bd=0px rgb(0, 0, 238) sh=none",
+   "image 400x450 r=50px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 0) sh=none",
+   "div 400x450 r=50px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 0) sh=none",
+   "img 400x450 r=50px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 0) sh=none",
+   "image 400x450 r=50px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 0) sh=none",
+   "div 400x450 r=50px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 0) sh=none",
+   "img 400x450 r=50px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 0) sh=none",
+   "image 400x450 r=50px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 0) sh=none",
+   "div 400x450 r=50px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 0) sh=none",
+   "img 400x450 r=50px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 0) sh=none",
+   "image 400x450 r=50px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 0) sh=none",
+   "div 400x450 r=50px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 0) sh=none",
+   "img 400x450 r=50px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 0) sh=none",
+   "image 400x450 r=50px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 0) sh=none",
+   "div 400x450 r=50px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 0) sh=none",
+   "img 400x450 r=50px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 0) sh=none",
+   "image 400x450 r=50px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 0) sh=none",
+   "div 400x450 r=50px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 0) sh=none",
+   "img 400x450 r=50px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 0) sh=none",
+   "image 400x450 r=50px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 0) sh=none",
+   "div 400x450 r=50px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 0) sh=none",
+   "img 400x450 r=50px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 0) sh=none",
+   "image 400x450 r=50px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 0) sh=none",
+   "div 400x450 r=50px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 0) sh=none",
+   "img 400x450 r=50px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 0) sh=none",
+   "image 400x450 r=50px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 0) sh=none",
+   "div 400x450 r=50px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 0) sh=none",
+   "img 400x450 r=50px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 0) sh=none",
+   "image 400x450 r=50px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 0) sh=none",
+   "div 400x450 r=50px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 0) sh=none",
+   "img 400x450 r=50px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 0) sh=none",
+   "image 400x450 r=50px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 0) sh=none",
+   "div 400x450 r=50px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 0) sh=none",
+   "img 400x450 r=50px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 0) sh=none",
+   "image 400x450 r=50px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 0) sh=none",
+   "div 400x450 r=50px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 0) sh=none",
+   "img 400x450 r=50px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 0) sh=none",
+   "image 400x450 r=50px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 0) sh=none"
+  ],
+  "texts": [
+   "Eventverse | \"Instrument Serif\" 32px/38.4px w400 ls=normal c=rgb(0, 0, 0) tt=none @160,41,115,38",
+   "Events | Roboto 16px/22.4px w500 ls=normal c=rgb(0, 0, 0) tt=none @508,50,48,19",
+   "Growth | Roboto 16px/22.4px w500 ls=normal c=rgb(0, 0, 0) tt=none @596,50,52,19",
+   "Community | Roboto 16px/22.4px w500 ls=normal c=rgb(0, 0, 0) tt=none @687,50,82,19",
+   "Sponsor | Roboto 16px/22.4px w500 ls=normal c=rgb(0, 0, 0) tt=none @810,50,60,19",
+   "Contact | Roboto 16px/22.4px w500 ls=normal c=rgb(0, 0, 0) tt=none @909,50,56,19",
+   "Become a Member | Roboto 16px/22.4px w500 ls=normal c=rgb(0, 0, 0) tt=none @1142,49,135,22",
+   "USA’s Most Connected Tech Community | \"Instrument Serif\" 84px/75.6px w400 ls=-0.84px c=rgb(0, 0, 0) tt=none @370,200,700,151",
+   "Engage with leaders, exchange ideas, and build con | Roboto 16px/22.4px w400 ls=normal c=rgb(0, 0, 0) tt=none @495,371,450,45",
+   "See Upcoming Events | Roboto 16px/22.4px w500 ls=normal c=rgb(0, 0, 0) tt=none @642,468,155,22",
+   "Buy Template | Inter 14px/16.8px w500 ls=-0.7px c=rgb(255, 255, 255) tt=none @1314,812,83,17",
+   "Unlock for $99 | Inter 14px/16.8px w500 ls=-0.7px c=rgb(255, 255, 255) tt=none @1314,834,90,17",
+   "Monarque | Inter 22px/26.4px w600 ls=-0.88px c=rgb(255, 255, 255) tt=none @1264,736,101,26",
+   "Latest Template | Inter 14px/16.8px w400 ls=-0.56px c=rgb(255, 255, 255) tt=none @1267,765,97,17",
+   "Create a free website with Framer, the website bui | sans-serif 12px/normal w400 ls=normal c=rgb(0, 0, 238) tt=none @1350,861,0,0"
+  ],
+  "buttons": [
+   {
+    "t": "Eventverse",
+    "r": [
+     160,
+     41,
+     115,
+     38
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "Events",
+    "r": [
+     508,
+     50,
+     48,
+     19
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 0)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 0)"
+    },
+    "font": "Roboto 16px w500"
+   },
+   {
+    "t": "Growth",
+    "r": [
+     596,
+     50,
+     52,
+     19
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 0)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 0)"
+    },
+    "font": "Roboto 16px w500"
+   },
+   {
+    "t": "Community",
+    "r": [
+     687,
+     50,
+     82,
+     19
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 0)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 0)"
+    },
+    "font": "Roboto 16px w500"
+   },
+   {
+    "t": "Sponsor",
+    "r": [
+     810,
+     50,
+     60,
+     19
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 0)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 0)"
+    },
+    "font": "Roboto 16px w500"
+   },
+   {
+    "t": "Contact",
+    "r": [
+     909,
+     50,
+     56,
+     19
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 0)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 0)"
+    },
+    "font": "Roboto 16px w500"
+   },
+   {
+    "t": "Become a Member",
+    "r": [
+     1106,
+     27,
+     207,
+     66
+    ],
+    "bg": "rgb(191, 236, 255)",
+    "bgi": "none",
+    "radius": "100px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "See Upcoming Events",
+    "r": [
+     606,
+     446,
+     227,
+     66
+    ],
+    "bg": "rgb(255, 204, 234)",
+    "bgi": "none",
+    "radius": "100px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "Buy Template Unlock for $99",
+    "r": [
+     1278,
+     802,
+     142,
+     36
+    ],
+    "bg": "rgb(0, 0, 0)",
+    "bgi": "none",
+    "radius": "10px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "Monarque Latest Template",
+    "r": [
+     1210,
+     632,
+     210,
+     158
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "5px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   }
+  ],
+  "fonts": [
+   "Roboto 400",
+   "Roboto 500",
+   "Instrument Serif 400",
+   "Inter 500",
+   "Inter 600",
+   "Inter 400",
+   "Roboto Placeholder normal",
+   "Instrument Serif Placeholder normal",
+   "Inter Placeholder normal"
+  ],
+  "appear": "{\"4h4swt\":{\"default\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":-50},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0.2,\"delay\":0,\"duration\":1,\"type\":\"spring\"},\"x\":0,\"y\":0},\"transformTemplate\":\"translateX(-50%) __Appear_Animation_Transform__\"}},\"12oraaa\":{\"default\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":20},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0.2,\"delay\":0.4,\"duration\":1,\"type\":\"spring\"},\"x\":0,\"y\":0}}},\"ot453u\":{\"default\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":20},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0.2,\"delay\":0.6,\"duration\":1,\"type\":\"spring\"},\"x\":0,\"y\":0}}},\"1fpi4l8\":{\"default\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":20},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0.2,\"delay\":1,\"duration\":1,\"type\":\"spring\"},\"x\":0,\"y\":0}},\"1rz2a8y\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":20},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0.2,\"delay\":1,\"duration\":1,\"type\":\"spring\"},\"x\":0,\"y\":0}},\"1eg001\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":20},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0.2,\"delay\":1,\"duration\":1,\"type\":\"spring\"},\"x\":0,\"y\":0}}},\"1s2s8d3\":{\"default\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":20},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0.2,\"delay\":1.2,\"duration\":1,\"type\":\"spring\"},\"x\":0,\"y\":0}},\"1rz2a8y\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":20},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0.2,\"delay\":1.2,\"duration\":1,\"type\":\"spring\"},\"x\":0,\"y\":0}},\"1eg001\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":20},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0.2,\"delay\":1.2,\"duration\":1,\"type\":\"spring\"},\"x\":0,\"y\":0}}},\"gk6l9y\":{\"default\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":50},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"damping\":50,\"delay\":2,\"mass\":1,\"stiffness\":300,\"type\":\"spring\"},\"x\":0,\"y\":0}}}}",
+  "anims": [
+   {
+    "name": "Animation",
+    "tgt": "ul",
+    "dur": 41000,
+    "delay": 0,
+    "ease": "linear",
+    "iter": null,
+    "kf": "[{\"offset\":null,\"easing\":\"linear\",\"composite\":\"auto\",\"transform\":\"translateX(0px)\",\"computedOffset\":0},{\"offset\":null,\"easing\":\"linear\",\"composite\":\"auto\",\"transform\":\"translateX(-4100px)\",\"computedOffset\":1}]"
+   },
+   {
+    "name": "Animation",
+    "tgt": "ul",
+    "dur": 50400,
+    "delay": 0,
+    "ease": "linear",
+    "iter": null,
+    "kf": "[{\"offset\":null,\"easing\":\"linear\",\"composite\":\"auto\",\"transform\":\"translateX(0px)\",\"computedOffset\":0},{\"offset\":null,\"easing\":\"linear\",\"composite\":\"auto\",\"transform\":\"translateX(-5040px)\",\"computedOffset\":1}]"
+   },
+   {
+    "name": "Animation",
+    "tgt": "ul",
+    "dur": 29690,
+    "delay": 0,
+    "ease": "linear",
+    "iter": null,
+    "kf": "[{\"offset\":null,\"easing\":\"linear\",\"composite\":\"auto\",\"transform\":\"translateX(0px)\",\"computedOffset\":0},{\"offset\":null,\"easing\":\"linear\",\"composite\":\"auto\",\"transform\":\"translateX(-2969px)\",\"computedOffset\":1}]"
+   }
+  ]
+ },
+ "hover": [
+  {
+   "n": "P",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgi": "none",
+   "sh": "none",
+   "t": "none",
+   "r": "0px"
+  },
+  {
+   "n": "DIV",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgi": "none",
+   "sh": "none",
+   "t": "none",
+   "r": "0px"
+  },
+  {
+   "n": "A",
+   "bg": "rgb(0, 0, 0)",
+   "bgi": "none",
+   "sh": "none",
+   "t": "none",
+   "r": "100px"
+  },
+  {
+   "n": "DIV",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgi": "none",
+   "sh": "none",
+   "t": "none",
+   "r": "0px"
+  }
+ ],
+ "page": {
+  "vw": 1440,
+  "pageHeight": 11566,
+  "title": "Eventverse",
+  "htmlBg": "rgba(0, 0, 0, 0)",
+  "bodyBg": "rgb(255, 255, 255)",
+  "bodyColor": "rgb(0, 0, 0)",
+  "colorScheme": "normal",
+  "h1": {
+   "text": "USA’s Most Connected Tech Community",
+   "family": "\"Instrument Serif\", \"Instrument Serif Placeholder\", serif",
+   "size": "84px",
+   "weight": "400",
+   "lh": "75.6px",
+   "ls": "-0.84px",
+   "color": "rgb(0, 0, 0)",
+   "tt": "none",
+   "align": "center",
+   "w": 700,
+   "h": 151,
+   "top": 200,
+   "left": 370,
+   "tag": "h1",
+   "balance": "wrap"
+  },
+  "largestHeroText": {
+   "text": "USA’s Most Connected Tech Community",
+   "family": "\"Instrument Serif\", \"Instrument Serif Placeholder\", serif",
+   "size": "84px",
+   "weight": "400",
+   "lh": "75.6px",
+   "ls": "-0.84px",
+   "color": "rgb(0, 0, 0)",
+   "tt": "none",
+   "align": "center",
+   "w": 700,
+   "h": 151,
+   "top": 200,
+   "left": 370,
+   "tag": "h1",
+   "balance": "wrap"
+  },
+  "h2": [
+   {
+    "text": "Events that",
+    "family": "\"Instrument Serif\", \"Instrument Serif Placeholder\", serif",
+    "size": "72px",
+    "weight": "400",
+    "lh": "72px",
+    "ls": "normal",
+    "color": "rgb(0, 0, 0)",
+    "tt": "none",
+    "align": "center",
+    "w": 270,
+    "h": 72,
+    "top": 1680,
+    "left": 323,
+    "tag": "h2",
+    "balance": "nowrap"
+   },
+   {
+    "text": "Inspire out",
+    "family": "\"Instrument Serif\", \"Instrument Serif Placeholder\", serif",
+    "size": "72px",
+    "weight": "400",
+    "lh": "72px",
+    "ls": "normal",
+    "color": "rgb(0, 0, 0)",
+    "tt": "none",
+    "align": "center",
+    "w": 263,
+    "h": 72,
+    "top": 1680,
+    "left": 853,
+    "tag": "h2",
+    "balance": "nowrap"
+   },
+   {
+    "text": "On Its Way",
+    "family": "\"Instrument Serif\", \"Instrument Serif Placeholder\", serif",
+    "size": "72px",
+    "weight": "400",
+    "lh": "72px",
+    "ls": "normal",
+    "color": "rgb(0, 0, 0)",
+    "tt": "none",
+    "align": "start",
+    "w": 1140,
+    "h": 72,
+    "top": 3112,
+    "left": 150,
+    "tag": "h2",
+    "balance": "wrap"
+   },
+   {
+    "text": "Train with the Elite",
+    "family": "\"Instrument Serif\", \"Instrument Serif Placeholder\", serif",
+    "size": "72px",
+    "weight": "400",
+    "lh": "72px",
+    "ls": "normal",
+    "color": "rgb(0, 0, 0)",
+    "tt": "none",
+    "align": "left",
+    "w": 300,
+    "h": 144,
+    "top": 4784,
+    "left": 755,
+    "tag": "h2",
+    "balance": "wrap"
+   }
+  ],
+  "h3": [
+   {
+    "text": "Global Tech Conference",
+    "family": "\"Instrument Serif\", \"Instrument Serif Placeholder\", serif",
+    "size": "48px",
+    "weight": "400",
+    "lh": "48px",
+    "ls": "normal",
+    "color": "rgb(0, 0, 0)",
+    "tt": "none",
+    "align": "start",
+    "w": 530,
+    "h": 48,
+    "top": 2475,
+    "left": 150,
+    "tag": "h3",
+    "balance": "wrap"
+   },
+   {
+    "text": "Shaping Tomorrow's Technology",
+    "family": "\"Instrument Serif\", \"Instrument Serif Placeholder\", serif",
+    "size": "48px",
+    "weight": "400",
+    "lh": "48px",
+    "ls": "normal",
+    "color": "rgb(0, 0, 0)",
+    "tt": "none",
+    "align": "start",
+    "w": 530,
+    "h": 96,
+    "top": 2475,
+    "left": 760,
+    "tag": "h3",
+    "balance": "wrap"
+   }
+  ],
+  "p": [
+   {
+    "text": "Engage with leaders, exchange ideas, and build connections that unlock",
+    "family": "Roboto, \"Roboto Placeholder\", sans-serif",
+    "size": "16px",
+    "weight": "400",
+    "lh": "22.4px",
+    "ls": "normal",
+    "color": "rgb(0, 0, 0)",
+    "tt": "none",
+    "align": "center",
+    "w": 450,
+    "h": 45,
+    "top": 371,
+    "left": 495,
+    "tag": "p",
+    "balance": "wrap"
+   },
+   {
+    "text": "Where the brightest minds in technology converge to drive the future f",
+    "family": "Roboto, \"Roboto Placeholder\", sans-serif",
+    "size": "14px",
+    "weight": "400",
+    "lh": "22.4px",
+    "ls": "normal",
+    "color": "rgb(0, 0, 0)",
+    "tt": "none",
+    "align": "start",
+    "w": 490,
+    "h": 22,
+    "top": 3519,
+    "left": 170,
+    "tag": "p",
+    "balance": "wrap"
+   },
+   {
+    "text": "Where groundbreaking ideas meet real-world execution, shaping the futu",
+    "family": "Roboto, \"Roboto Placeholder\", sans-serif",
+    "size": "14px",
+    "weight": "400",
+    "lh": "22.4px",
+    "ls": "normal",
+    "color": "rgb(0, 0, 0)",
+    "tt": "none",
+    "align": "start",
+    "w": 490,
+    "h": 45,
+    "top": 3992,
+    "left": 780,
+    "tag": "p",
+    "balance": "wrap"
+   }
+  ],
+  "heroP": {
+   "text": "Engage with leaders, exchange ideas, and build connections that unlock",
+   "family": "Roboto, \"Roboto Placeholder\", sans-serif",
+   "size": "16px",
+   "weight": "400",
+   "lh": "22.4px",
+   "ls": "normal",
+   "color": "rgb(0, 0, 0)",
+   "tt": "none",
+   "align": "center",
+   "w": 450,
+   "h": 45,
+   "top": 371,
+   "left": 495,
+   "tag": "p",
+   "balance": "wrap"
+  },
+  "typeScale": [
+   [
+    "Instrument Serif|28|400",
+    3587
+   ],
+   [
+    "Roboto|14|400",
+    1436
+   ],
+   [
+    "Roboto|16|400",
+    727
+   ],
+   [
+    "Roboto|22|500",
+    265
+   ],
+   [
+    "Roboto|16|500",
+    261
+   ],
+   [
+    "Instrument Serif|72|400",
+    176
+   ],
+   [
+    "Instrument Serif|200|400",
+    144
+   ],
+   [
+    "Roboto|12|400",
+    141
+   ],
+   [
+    "sans-serif|12|400",
+    97
+   ],
+   [
+    "Instrument Serif|48|400",
+    51
+   ],
+   [
+    "Instrument Serif|84|400",
+    35
+   ],
+   [
+    "Roboto|18|500",
+    26
+   ],
+   [
+    "Inter|14|500",
+    26
+   ],
+   [
+    "Instrument Serif|32|400",
+    20
+   ]
+  ],
+  "fontFamiliesUsed": [
+   [
+    "Roboto",
+    111
+   ],
+   [
+    "Instrument Serif",
+    66
+   ],
+   [
+    "Inter",
+    4
+   ],
+   [
+    "sans-serif",
+    1
+   ]
+  ],
+  "sizesDistinct": [
+   12,
+   14,
+   16,
+   18,
+   22,
+   28,
+   32,
+   48,
+   72,
+   84,
+   200
+  ],
+  "lsHist": [
+   [
+    "normal",
+    165
+   ],
+   [
+    "-0.040em",
+    14
+   ],
+   [
+    "-0.050em",
+    2
+   ],
+   [
+    "-0.010em",
+    1
+   ]
+  ],
+  "nav": {
+   "tag": "NAV",
+   "h": 80,
+   "outerH": 80,
+   "top": 20,
+   "w": 1440,
+   "position": "fixed",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgHeader": "rgba(0, 0, 0, 0)",
+   "backdrop": "none",
+   "bb": "0px none rgb(0, 0, 0)",
+   "shadow": "none",
+   "contentLeft": 160,
+   "contentRight": 1313,
+   "nLinks": 7,
+   "linkTexts": [
+    "Eventverse",
+    "Events",
+    "Growth",
+    "Community",
+    "Sponsor",
+    "Contact",
+    "Become a Member"
+   ],
+   "linkTypo": [
+    {
+     "text": "Eventverse",
+     "family": "sans-serif",
+     "size": "12px",
+     "weight": "400",
+     "lh": "normal",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "tt": "none",
+     "align": "start",
+     "w": 115,
+     "h": 38,
+     "top": 41,
+     "left": 160,
+     "tag": "a",
+     "balance": "wrap"
+    },
+    {
+     "text": "Events",
+     "family": "Roboto, \"Roboto Placeholder\", sans-serif",
+     "size": "16px",
+     "weight": "500",
+     "lh": "22.4px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "tt": "none",
+     "align": "start",
+     "w": 48,
+     "h": 19,
+     "top": 50,
+     "left": 508,
+     "tag": "a",
+     "balance": "nowrap"
+    },
+    {
+     "text": "Growth",
+     "family": "Roboto, \"Roboto Placeholder\", sans-serif",
+     "size": "16px",
+     "weight": "500",
+     "lh": "22.4px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "tt": "none",
+     "align": "start",
+     "w": 52,
+     "h": 19,
+     "top": 50,
+     "left": 596,
+     "tag": "a",
+     "balance": "nowrap"
+    }
+   ],
+   "hasLogoSvgOrImg": false,
+   "px": "12px/12px"
+  },
+  "ctas": [
+   {
+    "text": "Become a Member",
+    "inHeader": true,
+    "kind": "filled",
+    "h": 66,
+    "w": 207,
+    "radius": "100px",
+    "bg": "rgb(191, 236, 255)",
+    "color": "rgb(0, 0, 238)",
+    "border": null,
+    "size": "12px",
+    "weight": "400",
+    "pad": "22px 36px",
+    "shadow": null,
+    "family": "sans-serif"
+   },
+   {
+    "text": "See Upcoming Events",
+    "inHeader": false,
+    "kind": "filled",
+    "h": 66,
+    "w": 227,
+    "radius": "100px",
+    "bg": "rgb(255, 204, 234)",
+    "color": "rgb(0, 0, 238)",
+    "border": null,
+    "size": "12px",
+    "weight": "400",
+    "pad": "22px 36px",
+    "shadow": null,
+    "family": "sans-serif"
+   },
+   {
+    "text": "Buy Template Unlock for $99",
+    "inHeader": false,
+    "kind": "filled",
+    "h": 36,
+    "w": 142,
+    "radius": "10px",
+    "bg": "rgb(0, 0, 0)",
+    "color": "rgb(0, 0, 238)",
+    "border": null,
+    "size": "12px",
+    "weight": "400",
+    "pad": "0px 0px",
+    "shadow": null,
+    "family": "sans-serif"
+   }
+  ],
+  "chain": [
+   {
+    "tag": "h1.framer-text",
+    "w": 700,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "block",
+    "ta": "center"
+   },
+   {
+    "tag": "div.framer-12oraaa",
+    "w": 700,
+    "maxW": "700px",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "div.framer-4hcgkk",
+    "w": 1200,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "div.framer-624seh",
+    "w": 1200,
+    "maxW": "1200px",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "section.framer-1l8rw8h",
+    "w": 1440,
+    "maxW": "none",
+    "pl": "12px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "header.framer-7nr086",
+    "w": 1440,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "main.framer-kg4kv5",
+    "w": 1440,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "div.framer-gUc8R",
+    "w": 0,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "contents",
+    "ta": "start"
+   },
+   {
+    "tag": "div.framer-7B4vx",
+    "w": 1440,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   }
+  ],
+  "sections": [
+   {
+    "cls": "framer-1l8rw8h",
+    "tag": "section",
+    "top": 0,
+    "h": 1032,
+    "pt": "200px",
+    "pb": "0px",
+    "effPt": 200,
+    "effPb": 0,
+    "contentW": 6140,
+    "contentL": -975,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "USA’s Most Connected Tech Community",
+    "hSize": "84px",
+    "hAlign": "center"
+   },
+   {
+    "cls": "framer-FN9DQ",
+    "tag": "section",
+    "top": 1182,
+    "h": 324,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 0,
+    "effPb": 50,
+    "contentW": 1140,
+    "contentL": 150,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "",
+    "hSize": null,
+    "hAlign": null
+   },
+   {
+    "cls": "framer-185bjs3",
+    "tag": "section",
+    "top": 1656,
+    "h": 1306,
+    "pt": "0px",
+    "pb": "150px",
+    "effPt": 0,
+    "effPb": 150,
+    "contentW": 1200,
+    "contentL": 120,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "Events that",
+    "hSize": "72px",
+    "hAlign": "center"
+   },
+   {
+    "cls": "framer-AzBVG",
+    "tag": "section",
+    "top": 3112,
+    "h": 1193,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 0,
+    "effPb": 50,
+    "contentW": 1140,
+    "contentL": 150,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "On Its Way",
+    "hSize": "72px",
+    "hAlign": "start"
+   },
+   {
+    "cls": "framer-18g7x78",
+    "tag": "section",
+    "top": 4455,
+    "h": 824,
+    "pt": "150px",
+    "pb": "0px",
+    "effPt": 150,
+    "effPb": 0,
+    "contentW": 1035,
+    "contentL": 120,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "Train with the Elite",
+    "hSize": "72px",
+    "hAlign": "left"
+   },
+   {
+    "cls": "framer-1gkrby8",
+    "tag": "section",
+    "top": 5429,
+    "h": 900,
+    "pt": "150px",
+    "pb": "150px",
+    "effPt": 250,
+    "effPb": 250,
+    "contentW": 600,
+    "contentL": 420,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "Grow and Expand Your Connections",
+    "hSize": "72px",
+    "hAlign": "center"
+   },
+   {
+    "cls": "framer-kvvlfy",
+    "tag": "section",
+    "top": 6480,
+    "h": 1131,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 0,
+    "effPb": 0,
+    "contentW": 1200,
+    "contentL": 120,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "Other Ways Members Benefit",
+    "hSize": "72px",
+    "hAlign": "start"
+   },
+   {
+    "cls": "framer-h2n60j",
+    "tag": "section",
+    "top": 7761,
+    "h": 968,
+    "pt": "150px",
+    "pb": "150px",
+    "effPt": 150,
+    "effPb": 150,
+    "contentW": 7540,
+    "contentL": -1320,
+    "bg": "rgb(191, 236, 255)",
+    "heading": "Impact Stories",
+    "hSize": "72px",
+    "hAlign": "center"
+   },
+   {
+    "cls": "framer-2swF2",
+    "tag": "section",
+    "top": 8879,
+    "h": 988,
+    "pt": "0px",
+    "pb": "150px",
+    "effPt": 0,
+    "effPb": 200,
+    "contentW": 1140,
+    "contentL": 150,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "VIP Sponsorship Opportunities",
+    "hSize": "72px",
+    "hAlign": "start"
+   },
+   {
+    "cls": "framer-BWFDc",
+    "tag": "section",
+    "top": 10016,
+    "h": 823,
+    "pt": "150px",
+    "pb": "150px",
+    "effPt": 300,
+    "effPb": 300,
+    "contentW": 1160,
+    "contentL": 140,
+    "bg": "rgb(255, 255, 255)",
+    "heading": "Subscribe to Newsletter",
+    "hSize": "72px",
+    "hAlign": "center"
+   },
+   {
+    "cls": "framer-JYgEK",
+    "tag": "footer",
+    "top": 10840,
+    "h": 726,
+    "pt": "0px",
+    "pb": "30px",
+    "effPt": 0,
+    "effPb": 30,
+    "contentW": 8906,
+    "contentL": -1431,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "",
+    "hSize": null,
+    "hAlign": null
+   }
+  ],
+  "radiusAll": [
+   [
+    "50px",
+    75
+   ],
+   [
+    "160px",
+    54
+   ],
+   [
+    "100px",
+    31
+   ],
+   [
+    "40px",
+    12
+   ],
+   [
+    "70px",
+    7
+   ],
+   [
+    "60px",
+    3
+   ],
+   [
+    "30px",
+    2
+   ],
+   [
+    "10px",
+    2
+   ],
+   [
+    "5px",
+    1
+   ],
+   [
+    "11px",
+    1
+   ]
+  ],
+  "radiusCards": [
+   [
+    "50px",
+    22
+   ],
+   [
+    "70px",
+    4
+   ],
+   [
+    "100px",
+    2
+   ]
+  ],
+  "radiusMedia": [
+   [
+    "160px",
+    18
+   ],
+   [
+    "50px",
+    15
+   ],
+   [
+    "40px",
+    4
+   ],
+   [
+    "60px",
+    1
+   ]
+  ],
+  "radiusInputs": [
+   [
+    "0px",
+    1
+   ]
+  ],
+  "shadows": [
+   [
+    "rgba(0, 0, 0, 0.05) 0px 5px 20px 0px",
+    4
+   ],
+   [
+    "rgba(0, 0, 0, 0.08) 0px 10px 20px 0px",
+    2
+   ],
+   [
+    "rgba(0, 0, 0, 0.1) 0px 5px 20px 0px",
+    2
+   ],
+   [
+    "rgba(0, 0, 0, 0.12) 0px 5px 30px 0px",
+    1
+   ],
+   [
+    "rgba(0, 0, 0, 0.17) 0px 0.602187px 1.56569px -1.5px, rgba(0, 0, 0, 0.14) 0px 2.28853px 5.95019px -3px, rgba(0, 0, 0, 0.02) 0px 10px 26px -4.5px",
+    1
+   ],
+   [
+    "rgb(0, 0, 0) 0px 0px 0px 1px inset",
+    1
+   ]
+  ],
+  "borders": [],
+  "cardBgs": [
+   [
+    "rgb(255, 255, 255)",
+    24
+   ],
+   [
+    "rgb(222, 229, 255)",
+    1
+   ],
+   [
+    "rgb(255, 230, 255)",
+    1
+   ],
+   [
+    "rgb(230, 244, 255)",
+    1
+   ],
+   [
+    "rgb(255, 224, 233)",
+    1
+   ]
+  ],
+  "grids": [
+   [
+    "2col gap 20px/20px",
+    1
+   ]
+  ],
+  "flexGaps": [
+   [
+    "10px",
+    111
+   ],
+   [
+    "0px",
+    64
+   ],
+   [
+    "20px",
+    59
+   ],
+   [
+    "30px",
+    31
+   ],
+   [
+    "70px",
+    6
+   ],
+   [
+    "50px",
+    4
+   ],
+   [
+    "5px",
+    3
+   ],
+   [
+    "40px",
+    1
+   ]
+  ],
+  "bgByArea": [
+   [
+    "rgb(255, 255, 255)",
+    "77%"
+   ],
+   [
+    "rgb(191, 236, 255)",
+    "9%"
+   ],
+   [
+    "rgb(255, 204, 234)",
+    "1%"
+   ],
+   [
+    "rgb(222, 229, 255)",
+    "1%"
+   ],
+   [
+    "rgb(255, 230, 255)",
+    "1%"
+   ],
+   [
+    "rgb(230, 244, 255)",
+    "1%"
+   ]
+  ],
+  "textColors": [
+   [
+    "rgb(0, 0, 0)",
+    170
+   ],
+   [
+    "rgba(0, 0, 0, 0)",
+    6
+   ],
+   [
+    "rgb(255, 255, 255)",
+    5
+   ],
+   [
+    "rgb(0, 0, 238)",
+    1
+   ]
+  ],
+  "linkColors": [
+   [
+    "rgb(0, 0, 0)",
+    27
+   ],
+   [
+    "rgb(255, 255, 255)",
+    4
+   ],
+   [
+    "rgb(0, 0, 238)",
+    1
+   ]
+  ],
+  "counts": {
+   "video": 1,
+   "canvas": 0,
+   "iframe": 1,
+   "svg": 54,
+   "img": 44,
+   "picture": 0,
+   "spline": 0,
+   "lottie": 0
+  },
+  "heroMedia": {
+   "video": true,
+   "canvas": false,
+   "bigImg": 1
+  },
+  "libs": {
+   "gsap": false,
+   "lenis": true,
+   "locomotive": false,
+   "next": false,
+   "framer": true,
+   "webflow": false,
+   "three": false,
+   "astro": false,
+   "nuxt": false,
+   "tailwindish": false
+  },
+  "sticky": 0,
+  "fixed": 4,
+  "snap": 0
+ },
+ "pageHeight": 11566
+}

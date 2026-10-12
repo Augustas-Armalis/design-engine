@@ -1,0 +1,535 @@
+[
+ {
+  "file": "taxo-fold.png",
+  "w": 2880,
+  "h": 1800,
+  "rects": [
+   {
+    "label": "hero full",
+    "px": [
+     0,
+     144,
+     2880,
+     1656
+    ],
+    "mean": "#314a69",
+    "noiseStd": 12.14,
+    "grid": [
+     "#2d6baa #5688c1 #6997cc #abc5e5 #d9e5f5",
+     "#104684 #28497a #244f81 #335782 #789ac3",
+     "#0a2f5f #071228 #272e3c #060f1d #091423",
+     "#071834 #040912 #050709 #050608 #040506"
+    ]
+   },
+   {
+    "label": "flat blue patch",
+    "px": [
+     144,
+     270,
+     346,
+     216
+    ],
+    "mean": "#2365a4",
+    "noiseStd": 14.64,
+    "grid": [
+     "#1a65a6 #296dac #447fba #467fba #437fb9",
+     "#145c9e #2267a7 #2f71af #276aa9 #3875b2",
+     "#125799 #195d9e #1d61a2 #165798 #286aa9",
+     "#105295 #135697 #135697 #104d8e #175b9c"
+    ]
+   },
+   {
+    "label": "dark floor",
+    "px": [
+     1152,
+     1350,
+     576,
+     360
+    ],
+    "mean": "#05070a",
+    "noiseStd": 1.21,
+    "grid": [
+     "#03070c #03070d #04070b #06070b #05060a",
+     "#05070b #05070b #05070a #060709 #050608",
+     "#05070a #050608 #050609 #060709 #050608",
+     "#05060a #060709 #060709 #060709 #060709"
+    ]
+   }
+  ],
+  "note": "measured on the lossless 2x PNG capture before JPEG conversion",
+  "file_now": "taxo-fold.jpg"
+ },
+ {
+  "file": "grainient-fold.png",
+  "w": 2880,
+  "h": 1800,
+  "rects": [
+   {
+    "label": "hero container",
+    "px": [
+     29,
+     126,
+     2822,
+     1620
+    ],
+    "mean": "#1c1617",
+    "noiseStd": 8.26,
+    "grid": [
+     "#000000 #000000 #000000 #000000 #000000",
+     "#000000 #0a0a0a #1e1e1e #080808 #010101",
+     "#18191d #050608 #1c220c #030304 #342a2f",
+     "#4b3133 #594045 #30282c #664b4f #573942"
+    ]
+   },
+   {
+    "label": "light wave",
+    "px": [
+     864,
+     1350,
+     1152,
+     270
+    ],
+    "mean": "#41363c",
+    "noiseStd": 0.48,
+    "grid": [
+     "#26303b #0a0f13 #050708 #060809 #0c0f12",
+     "#5f545f #282d35 #161c22 #161a20 #262c34",
+     "#92696b #665b66 #42434f #393a44 #5a515c",
+     "#632e33 #916262 #634448 #583b3e #80575a"
+    ]
+   }
+  ],
+  "note": "measured on the lossless 2x PNG capture before JPEG conversion",
+  "file_now": "grainient-fold.jpg"
+ },
+ {
+  "file": "grainient-hero-gradients-v3-fold.png",
+  "w": 2880,
+  "h": 1800,
+  "rects": [
+   {
+    "label": "tile1 copper",
+    "px": [
+     979,
+     936,
+     374,
+     270
+    ],
+    "mean": "#320506",
+    "noiseStd": 0.21,
+    "grid": [
+     "#4c090b #520a0d #580c10 #5e0f12 #621214",
+     "#310203 #370304 #3c0304 #3f0406 #400507",
+     "#1e0102 #200102 #220102 #240102 #270202",
+     "#100101 #120101 #160102 #190102 #1d0103"
+    ]
+   },
+   {
+    "label": "tile2 rose",
+    "px": [
+     1454,
+     936,
+     374,
+     270
+    ],
+    "mean": "#230326",
+    "noiseStd": 0.34,
+    "grid": [
+     "#35063b #3b0741 #400847 #44094c #490a51",
+     "#1f0122 #220125 #250129 #2b0230 #310337",
+     "#100112 #130115 #18021a #1a011d #1d0220",
+     "#0d010e #0e020f #0e010f #0f0110 #100112"
+    ]
+   },
+   {
+    "label": "tile3 violet",
+    "px": [
+     1930,
+     936,
+     374,
+     270
+    ],
+    "mean": "#21052c",
+    "noiseStd": 0.89,
+    "grid": [
+     "#550f5e #5a1263 #48104f #100531 #150740",
+     "#39043f #3a0541 #2f0534 #08011c #0a0125",
+     "#210224 #230227 #1f0122 #05010f #060115",
+     "#18011a #1b021e #18021a #04010b #05020f"
+    ]
+   },
+   {
+    "label": "tile4 indigo",
+    "px": [
+     2419,
+     936,
+     374,
+     270
+    ],
+    "mean": "#100533",
+    "noiseStd": 0.21,
+    "grid": [
+     "#19094d #1c0b53 #1f0d59 #220f5e #251262",
+     "#0e0232 #100338 #11033c #12043f #130540",
+     "#09021e #090220 #0a0221 #0a0224 #0b0227",
+     "#050110 #060113 #070216 #07011a #08021e"
+    ]
+   }
+  ],
+  "note": "measured on the lossless 2x PNG capture before JPEG conversion",
+  "file_now": "grainient-hero-gradients-v3-fold.png"
+ },
+ {
+  "file": "grainient-spectral-darks-fold.png",
+  "w": 2880,
+  "h": 1800,
+  "rects": [
+   {
+    "label": "dark1",
+    "px": [
+     979,
+     936,
+     374,
+     270
+    ],
+    "mean": "#151415",
+    "noiseStd": 1.15,
+    "grid": [
+     "#141415 #141314 #151415 #151416 #171618",
+     "#141315 #141314 #141415 #151416 #161517",
+     "#151415 #141415 #151414 #151415 #161517",
+     "#151415 #151415 #151515 #161516 #171617"
+    ]
+   },
+   {
+    "label": "dark2",
+    "px": [
+     1454,
+     936,
+     374,
+     270
+    ],
+    "mean": "#141314",
+    "noiseStd": 1.21,
+    "grid": [
+     "#141314 #151314 #141414 #141415 #141415",
+     "#141314 #141314 #141414 #141315 #141315",
+     "#141314 #141414 #141414 #141415 #141415",
+     "#141315 #141315 #141314 #141414 #141314"
+    ]
+   },
+   {
+    "label": "dark4",
+    "px": [
+     2419,
+     936,
+     374,
+     270
+    ],
+    "mean": "#1f1820",
+    "noiseStd": 1.5,
+    "grid": [
+     "#251a27 #1d161d #1a161a #171518 #181518",
+     "#231a24 #1b161c #1a1519 #191519 #191519",
+     "#352037 #1b161c #1a151a #191519 #191518",
+     "#4b284e #271b28 #1a161a #19151a #181519"
+    ]
+   }
+  ],
+  "note": "measured on the lossless 2x PNG capture before JPEG conversion",
+  "file_now": "grainient-spectral-darks-fold.jpg"
+ },
+ {
+  "file": "grainient-swiftglow-fold.png",
+  "w": 2880,
+  "h": 1800,
+  "rects": [
+   {
+    "label": "light1",
+    "px": [
+     979,
+     936,
+     374,
+     270
+    ],
+    "mean": "#5889d8",
+    "noiseStd": 0.29,
+    "grid": [
+     "#639ddf #7eaee7 #90bbf1 #9cc4f6 #90c2f4",
+     "#4a7cce #5c8ed9 #6ea1e6 #76adee #62a9ed",
+     "#395fbb #446dc8 #4f7fd7 #508ce0 #3f87e1",
+     "#2c46a8 #3251b7 #395fc6 #3868d0 #2d65d0"
+    ]
+   },
+   {
+    "label": "light2",
+    "px": [
+     1454,
+     936,
+     374,
+     270
+    ],
+    "mean": "#b4d0f0",
+    "noiseStd": 5.27,
+    "grid": [
+     "#c6d9e5 #c5bfeb #80c6f9 #a5affd #d3dad2",
+     "#cbdfea #cacbec #85c3fa #a1b2fc #cee4df",
+     "#d2e4ee #ced7ef #81c4fa #9eb8fa #c7eceb",
+     "#d8e8f0 #cfe0f1 #80c8fa #9ebff6 #c5eeef"
+    ]
+   }
+  ],
+  "note": "measured on the lossless 2x PNG capture before JPEG conversion",
+  "file_now": "grainient-swiftglow-fold.jpg"
+ },
+ {
+  "file": "grainient-ecliptic-fold.png",
+  "w": 2880,
+  "h": 1800,
+  "rects": [
+   {
+    "label": "ring1",
+    "px": [
+     490,
+     936,
+     374,
+     270
+    ],
+    "mean": "#372a30",
+    "noiseStd": 0.7,
+    "grid": [
+     "#01101d #416f8d #592a2d #000000 #021f65",
+     "#123f60 #757d87 #5f211d #000000 #011332",
+     "#7998a8 #985a43 #55140d #000000 #000001",
+     "#b5653e #7b210f #3a0905 #000000 #000000"
+    ]
+   },
+   {
+    "label": "ring2",
+    "px": [
+     979,
+     936,
+     374,
+     270
+    ],
+    "mean": "#000331",
+    "noiseStd": 0.24,
+    "grid": [
+     "#000000 #000000 #000000 #00000b #000068",
+     "#000000 #000000 #000000 #000035 #000054",
+     "#00095d #00002f #00004c #00017a #000010",
+     "#01207a #00118b #000762 #000112 #000000"
+    ]
+   }
+  ],
+  "note": "measured on the lossless 2x PNG capture before JPEG conversion",
+  "file_now": "grainient-ecliptic-fold.jpg"
+ },
+ {
+  "file": "fuchsia-fold.png",
+  "w": 2880,
+  "h": 1800,
+  "rects": [
+   {
+    "label": "violet floor glow",
+    "px": [
+     0,
+     1080,
+     2880,
+     720
+    ],
+    "mean": "#201543",
+    "noiseStd": 6.8,
+    "grid": [
+     "#0d0921 #0b081b #191637 #070512 #0d0921",
+     "#1a0f3c #0f0925 #161126 #0f0925 #1a0f3c",
+     "#301a68 #201246 #1b103d #201246 #301a68",
+     "#492e8c #291d53 #23184a #261a50 #614e94"
+    ]
+   },
+   {
+    "label": "product top edge",
+    "px": [
+     288,
+     1530,
+     2304,
+     270
+    ],
+    "mean": "#291b54",
+    "noiseStd": 3.66,
+    "grid": [
+     "#2f1a65 #251550 #221449 #251550 #2f1a65",
+     "#2a1d56 #1f1543 #1c133f #1f1543 #271a52",
+     "#322361 #34285b #241a4b #25194d #392c64",
+     "#312164 #261953 #24184f #261953 #352666"
+    ]
+   }
+  ],
+  "note": "measured on the lossless 2x PNG capture before JPEG conversion",
+  "file_now": "fuchsia-fold.png"
+ },
+ {
+  "file": "dribbble-lowpro-landing-page-design.png",
+  "w": 2048,
+  "h": 1496,
+  "rects": [
+   {
+    "label": "lowpro bg",
+    "px": [
+     0,
+     75,
+     2048,
+     748
+    ],
+    "mean": "#d7d2df",
+    "noiseStd": 11.09,
+    "grid": [
+     "#d7d5db #d8d8db #d5d7d7 #e0e0e4 #e2e2e6",
+     "#d5d5dd #dad9d9 #c1c3c4 #dbd8e0 #e1e1e7",
+     "#d3d2e4 #dbd2dc #b5b3ba #dabfda #d0cce5",
+     "#c3c8e7 #ebe6f1 #e6e4e9 #f1e3f1 #c3a5e2"
+    ]
+   },
+   {
+    "label": "left blur shape",
+    "px": [
+     41,
+     449,
+     246,
+     299
+    ],
+    "mean": "#cbcde8",
+    "noiseStd": 0.4,
+    "grid": [
+     "#d7d8e1 #d5d6e3 #d6d8e3 #dccedc #d4d8e3",
+     "#d5d9e4 #c6c7e4 #d4d6e6 #ddbfe0 #d3d2e5",
+     "#c9d7e6 #a4bfed #cdcced #ddc6e8 #b5bbed",
+     "#aed1e5 #b9ccf6 #cdc0f2 #d6cbeb #c0c7f2"
+    ]
+   }
+  ],
+  "note": "measured on the lossless 2x PNG capture before JPEG conversion",
+  "file_now": "dribbble-lowpro-landing-page-design.jpg"
+ },
+ {
+  "file": "dribbble-tasker-landing-page-design.jpg",
+  "w": 2800,
+  "h": 2100,
+  "rects": [
+   {
+    "label": "tasker dark stage",
+    "px": [
+     168,
+     210,
+     2464,
+     945
+    ],
+    "mean": "#161616",
+    "noiseStd": 11.74,
+    "grid": [
+     "#181819 #232323 #272727 #252525 #2f2f2f",
+     "#0c0c0c #181818 #1d1d1d #161616 #0b0b0b",
+     "#060606 #181818 #2f2f2f #161616 #050505",
+     "#030303 #040404 #2e2e2e #040404 #030303"
+    ]
+   },
+   {
+    "label": "rim light over product",
+    "px": [
+     840,
+     1113,
+     1120,
+     105
+    ],
+    "mean": "#2b2b2b",
+    "noiseStd": 9.58,
+    "grid": [
+     "#040404 #090909 #121212 #090909 #050505",
+     "#131313 #3a3a3a #555555 #373737 #131313",
+     "#2f2f31 #565658 #646465 #565657 #2d2e2e",
+     "#252527 #2d2d2f #303032 #2d2d2f #232325"
+    ]
+   }
+  ],
+  "note": "measured on the lossless 2x PNG capture before JPEG conversion",
+  "file_now": "dribbble-tasker-landing-page-design.jpg"
+ },
+ {
+  "file": "dribbble-saas-product-landing-page-redesign.jpg",
+  "w": 2558,
+  "h": 1762,
+  "rects": [
+   {
+    "label": "equals bg",
+    "px": [
+     0,
+     0,
+     2558,
+     969
+    ],
+    "mean": "#d6dbe5",
+    "noiseStd": 13.51,
+    "grid": [
+     "#dfedf4 #e2dff2 #e2dff2 #c4c2d0 #e3e3e5",
+     "#d0ecf5 #c1c5d4 #c0c2d2 #c3c2d8 #eaeef3",
+     "#dfebf0 #c2cbd3 #c9cbd1 #c9ced4 #ebf0f4",
+     "#f3f3f6 #ebebee #bdbfc7 #d5e6ed #e7eff5"
+    ]
+   }
+  ],
+  "note": "measured on the lossless 2x PNG capture before JPEG conversion",
+  "file_now": "dribbble-saas-product-landing-page-redesign.jpg"
+ },
+ {
+  "file": "dribbble-landing-page-redesign-for-mpa.jpg",
+  "w": 2800,
+  "h": 2100,
+  "rects": [
+   {
+    "label": "mpa sky",
+    "px": [
+     0,
+     0,
+     2800,
+     1050
+    ],
+    "mean": "#8ec1e9",
+    "noiseStd": 6.87,
+    "grid": [
+     "#cce7fb #b5ccdc #b4cada #bcd3e3 #cce7fb",
+     "#7fc1f6 #3c7db5 #3a7bb1 #4285bd #7fc2f6",
+     "#8dc9fa #75b8ef #84bff0 #90c8f0 #90cbfa",
+     "#9cd3fc #7dc4f9 #95c7e5 #a3dcf9 #a6d9fc"
+    ]
+   }
+  ],
+  "note": "measured on the lossless 2x PNG capture before JPEG conversion",
+  "file_now": "dribbble-landing-page-redesign-for-mpa.jpg"
+ },
+ {
+  "file": "dribbble-landing-page-design-for-ai-app-builder.jpg",
+  "w": 2800,
+  "h": 2100,
+  "rects": [
+   {
+    "label": "table iridescent",
+    "px": [
+     84,
+     105,
+     2632,
+     1260
+    ],
+    "mean": "#cab6a9",
+    "noiseStd": 13.35,
+    "grid": [
+     "#b3b3b4 #cececf #cccdcb #bcb390 #b49750",
+     "#d0d0d1 #e4e5e6 #cdcdbe #e4cd8b #d2a468",
+     "#d0ced1 #e0d5da #b2a792 #e9cda8 #d49688",
+     "#d4beca #e1b8cc #3c3735 #e4c4c4 #d795a8"
+    ]
+   }
+  ],
+  "note": "measured on the lossless 2x PNG capture before JPEG conversion",
+  "file_now": "dribbble-landing-page-design-for-ai-app-builder.jpg"
+ }
+]

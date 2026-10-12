@@ -1,0 +1,1126 @@
+{
+ "id": "gaststatte",
+ "url": "https://gaststatte.framer.website/",
+ "date": "2026-10-11",
+ "hero": {
+  "bgImages": [
+   {
+    "n": "p",
+    "r": [
+     40,
+     37,
+     148,
+     14
+    ],
+    "bg": "linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 29%, rgba(14, 0, 5, 0.5) 50%, rgba(0, 0, 0, 0) 71%, rgba(0, 0, 0, 0) 100%)",
+    "size": "200% 200%",
+    "blend": "normal",
+    "op": "1",
+    "filter": "none"
+   }
+  ],
+  "filters": [
+   {
+    "n": "Desktop",
+    "r": [
+     40,
+     351,
+     189,
+     58
+    ],
+    "filter": "none",
+    "backdrop": "blur(20px)",
+    "bg": "rgba(255, 255, 255, 0.15)",
+    "op": "1"
+   }
+  ],
+  "blends": [],
+  "transforms": [
+   {
+    "n": "p",
+    "r": [
+     1350,
+     861,
+     0,
+     0
+    ],
+    "t": "matrix(0.001, 0, 0, 0.001, 0, 0)",
+    "persp": "none",
+    "op": "1"
+   }
+  ],
+  "perspective": [],
+  "media": [
+   {
+    "tag": "VIDEO",
+    "n": "div",
+    "r": [
+     0,
+     0,
+     1440,
+     900
+    ],
+    "src": "https://framerusercontent.com/assets/TiGJc56PMzCctcb8fsfSQXVlmR8.mp4",
+    "fit": "cover",
+    "radius": "0px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": null
+   }
+  ],
+  "svgNoise": 0,
+  "turb": [],
+  "canvas": [],
+  "radii": [
+   "div 200x20 r=10px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 0) sh=none",
+   "Desktop 189x58 r=50px bg=rgba(255, 255, 255, 0.15) bd=0px rgb(0, 0, 238) sh=none",
+   "div 1440x288 r=10px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 0) sh=none",
+   "Backdrop 138x36 r=10px bg=rgb(255, 255, 255) bd=0px rgb(0, 0, 238) sh=rgba(0, 0, 0, 0.17) 0px 0.602187px 1.56569px -1.5px, rgba(0, 0, 0, 0.14) 0px 2.28853px 5.95019px -3px, rgba(0, 0, 0, 0.02) 0px 10px 26px -4.",
+   "Bottom 140x38 r=11px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 238) sh=rgb(0, 0, 0) 0px 0px 0px 1px inset",
+   "Border 140x38 r=11px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 238) sh=rgb(0, 0, 0) 0px 0px 0px 1px inset"
+  ],
+  "texts": [
+   "Welcome to Gaststätte | \"Zalando Sans\" 14px/14px w400 ls=normal c=rgb(255, 255, 255) tt=none @40,37,148,14",
+   "Welcome to Gaststätte | \"Zalando Sans\" 14px/14px w400 ls=normal c=rgba(0, 0, 0, 0) tt=none @40,37,148,14",
+   "/ | \"Zalando Sans\" 14px/19.6px w400 ls=0.14px c=rgb(255, 255, 255) tt=none @193,34,7,20",
+   "A New Standard in Fine Dining - | \"Zalando Sans\" 14px/19.6px w400 ls=0.14px c=rgb(255, 255, 255) tt=none @427,34,211,20",
+   "A New Standard in Fine Dining - | \"Zalando Sans\" 14px/19.6px w400 ls=0.14px c=rgb(255, 255, 255) tt=none @207,34,211,20",
+   "About | \"Zalando Sans\" 14px/19.6px w400 ls=0.14px c=rgba(255, 255, 255, 0.5) tt=none @1054,34,40,20",
+   "About | \"Zalando Sans\" 14px/19.6px w400 ls=0.14px c=rgb(255, 255, 255) tt=none @1054,57,40,20",
+   "/ | \"Zalando Sans\" 14px/19.6px w400 ls=0.14px c=rgba(255, 255, 255, 0.5) tt=none @1099,34,7,20",
+   "Experience | \"Zalando Sans\" 14px/19.6px w400 ls=0.14px c=rgba(255, 255, 255, 0.5) tt=none @1111,34,74,20",
+   "Experience | \"Zalando Sans\" 14px/19.6px w400 ls=0.14px c=rgb(255, 255, 255) tt=none @1111,57,74,20",
+   "/ | \"Zalando Sans\" 14px/19.6px w400 ls=0.14px c=rgba(255, 255, 255, 0.5) tt=none @1190,34,7,20",
+   "Menu | \"Zalando Sans\" 14px/19.6px w400 ls=0.14px c=rgba(255, 255, 255, 0.5) tt=none @1203,34,37,20",
+   "Menu | \"Zalando Sans\" 14px/19.6px w400 ls=0.14px c=rgb(255, 255, 255) tt=none @1203,57,37,20",
+   "/ | \"Zalando Sans\" 14px/19.6px w400 ls=0.14px c=rgba(255, 255, 255, 0.5) tt=none @1245,34,7,20",
+   "Philosophy | \"Zalando Sans\" 14px/19.6px w400 ls=0.14px c=rgba(255, 255, 255, 0.5) tt=none @1257,34,73,20",
+   "Philosophy | \"Zalando Sans\" 14px/19.6px w400 ls=0.14px c=rgb(255, 255, 255) tt=none @1257,57,73,20",
+   "/ | \"Zalando Sans\" 14px/19.6px w400 ls=0.14px c=rgba(255, 255, 255, 0.5) tt=none @1335,34,7,20",
+   "Contact | \"Zalando Sans\" 14px/19.6px w400 ls=0.14px c=rgba(255, 255, 255, 0.5) tt=none @1347,34,53,20",
+   "Contact | \"Zalando Sans\" 14px/19.6px w400 ls=0.14px c=rgb(255, 255, 255) tt=none @1347,57,53,20",
+   "A | Aboreto 44px/52.8px w400 ls=-2.2px c=rgb(235, 234, 223) tt=none @40,173,27,53",
+   "r | Aboreto 44px/52.8px w400 ls=-2.2px c=rgb(235, 234, 223) tt=none @76,173,26,53",
+   "e | Aboreto 44px/52.8px w400 ls=-2.2px c=rgb(235, 234, 223) tt=none @103,173,21,53",
+   "f | Aboreto 44px/52.8px w400 ls=-2.2px c=rgb(235, 234, 223) tt=none @123,173,19,53",
+   "i | Aboreto 44px/52.8px w400 ls=-2.2px c=rgb(235, 234, 223) tt=none @142,173,12,53",
+   "n | Aboreto 44px/52.8px w400 ls=-2.2px c=rgb(235, 234, 223) tt=none @155,173,34,53",
+   "e | Aboreto 44px/52.8px w400 ls=-2.2px c=rgb(235, 234, 223) tt=none @189,173,21,53",
+   "d | Aboreto 44px/52.8px w400 ls=-2.2px c=rgb(235, 234, 223) tt=none @209,173,34,53",
+   "e | Aboreto 44px/52.8px w400 ls=-2.2px c=rgb(235, 234, 223) tt=none @253,173,21,53",
+   "x | Aboreto 44px/52.8px w400 ls=-2.2px c=rgb(235, 234, 223) tt=none @273,173,26,53",
+   "p | Aboreto 44px/52.8px w400 ls=-2.2px c=rgb(235, 234, 223) tt=none @299,173,23,53",
+   "r | Aboreto 44px/52.8px w400 ls=-2.2px c=rgb(235, 234, 223) tt=none @322,173,26,53",
+   "e | Aboreto 44px/52.8px w400 ls=-2.2px c=rgb(235, 234, 223) tt=none @348,173,21,53",
+   "s | Aboreto 44px/52.8px w400 ls=-2.2px c=rgb(235, 234, 223) tt=none @368,173,22,53",
+   "s | Aboreto 44px/52.8px w400 ls=-2.2px c=rgb(235, 234, 223) tt=none @390,173,22,53",
+   "i | Aboreto 44px/52.8px w400 ls=-2.2px c=rgb(235, 234, 223) tt=none @412,173,12,53",
+   "o | Aboreto 44px/52.8px w400 ls=-2.2px c=rgb(235, 234, 223) tt=none @424,173,37,53",
+   "n | Aboreto 44px/52.8px w400 ls=-2.2px c=rgb(235, 234, 223) tt=none @461,173,34,53",
+   "o | Aboreto 44px/52.8px w400 ls=-2.2px c=rgb(235, 234, 223) tt=none @504,173,37,53",
+   "f | Aboreto 44px/52.8px w400 ls=-2.2px c=rgb(235, 234, 223) tt=none @541,173,19,53",
+   "c | Aboreto 44px/52.8px w400 ls=-2.2px c=rgb(235, 234, 223) tt=none @40,225,31,53",
+   "o | Aboreto 44px/52.8px w400 ls=-2.2px c=rgb(235, 234, 223) tt=none @71,225,37,53",
+   "n | Aboreto 44px/52.8px w400 ls=-2.2px c=rgb(235, 234, 223) tt=none @108,225,34,53",
+   "t | Aboreto 44px/52.8px w400 ls=-2.2px c=rgb(235, 234, 223) tt=none @142,225,26,53",
+   "e | Aboreto 44px/52.8px w400 ls=-2.2px c=rgb(235, 234, 223) tt=none @168,225,21,53",
+   "m | Aboreto 44px/52.8px w400 ls=-2.2px c=rgb(235, 234, 223) tt=none @189,225,38,53",
+   "p | Aboreto 44px/52.8px w400 ls=-2.2px c=rgb(235, 234, 223) tt=none @227,225,23,53",
+   "o | Aboreto 44px/52.8px w400 ls=-2.2px c=rgb(235, 234, 223) tt=none @250,225,37,53",
+   "r | Aboreto 44px/52.8px w400 ls=-2.2px c=rgb(235, 234, 223) tt=none @287,225,26,53",
+   "a | Aboreto 44px/52.8px w400 ls=-2.2px c=rgb(235, 234, 223) tt=none @313,225,27,53",
+   "r | Aboreto 44px/52.8px w400 ls=-2.2px c=rgb(235, 234, 223) tt=none @340,225,26,53",
+   "y | Aboreto 44px/52.8px w400 ls=-2.2px c=rgb(235, 234, 223) tt=none @366,225,25,53",
+   "c | Aboreto 44px/52.8px w400 ls=-2.2px c=rgb(235, 234, 223) tt=none @400,225,31,53",
+   "u | Aboreto 44px/52.8px w400 ls=-2.2px c=rgb(235, 234, 223) tt=none @432,225,33,53",
+   "i | Aboreto 44px/52.8px w400 ls=-2.2px c=rgb(235, 234, 223) tt=none @465,225,12,53",
+   "s | Aboreto 44px/52.8px w400 ls=-2.2px c=rgb(235, 234, 223) tt=none @477,225,22,53",
+   "i | Aboreto 44px/52.8px w400 ls=-2.2px c=rgb(235, 234, 223) tt=none @498,225,12,53",
+   "n | Aboreto 44px/52.8px w400 ls=-2.2px c=rgb(235, 234, 223) tt=none @511,225,34,53",
+   "e | Aboreto 44px/52.8px w400 ls=-2.2px c=rgb(235, 234, 223) tt=none @545,225,21,53",
+   "a | Aboreto 44px/52.8px w400 ls=-2.2px c=rgb(235, 234, 223) tt=none @575,225,27,53",
+   "n | Aboreto 44px/52.8px w400 ls=-2.2px c=rgb(235, 234, 223) tt=none @602,225,34,53"
+  ],
+  "buttons": [
+   {
+    "t": "About About",
+    "r": [
+     1054,
+     34,
+     40,
+     20
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "Experience Experience",
+    "r": [
+     1111,
+     34,
+     74,
+     20
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "Menu Menu",
+    "r": [
+     1203,
+     34,
+     37,
+     20
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "Philosophy Philosophy",
+    "r": [
+     1257,
+     34,
+     73,
+     20
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "Contact Contact",
+    "r": [
+     1347,
+     34,
+     53,
+     20
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "Make reservation Make reservation",
+    "r": [
+     40,
+     351,
+     189,
+     58
+    ],
+    "bg": "rgba(255, 255, 255, 0.15)",
+    "bgi": "none",
+    "radius": "50px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   }
+  ],
+  "fonts": [
+   "Zalando Sans 400",
+   "Aboreto 400",
+   "Inter 400",
+   "Zalando Sans Placeholder normal",
+   "Inter Placeholder normal"
+  ],
+  "appear": "{\"1p1ynqq\":{\"default\":null},\"1hbjoos\":{\"default\":null},\"1573cyk\":{\"default\":null},\"1kzewxu\":{\"default\":null},\"2fvg6e\":{\"default\":null},\"1riblus\":{\"default\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":800},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0,\"delay\":0,\"duration\":2,\"type\":\"spring\"},\"x\":0,\"y\":0},\"transformTemplate\":\"translate(-50%, -50%) __Appear_Animation_Transform__\"}},\"fuuxif\":{\"default\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":20},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0,\"delay\":3.2,\"duration\":1,\"type\":\"spring\"},\"x\":0,\"y\":0}},\"17sbvpl\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":20},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0,\"delay\":3.2,\"duration\":1,\"type\":\"spring\"},\"x\":0,\"y\":0}},\"1o09raw\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":20},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0,\"delay\":3.2,\"duration\":1,\"type\":\"spring\"},\"x\":0,\"y\":0}}},\"foake2\":{\"default\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":20,\"y\":0},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0,\"delay\":3.4,\"duration\":1,\"type\":\"spring\"},\"x\":0,\"y\":0}}},\"sqepk0\":{\"default\":{},\"17sbvpl\":{},\"1o09raw\":{}}}",
+  "anims": [
+   {
+    "name": "shimmer-Rmmcqnkplop",
+    "tgt": "p",
+    "dur": 5000,
+    "delay": 0,
+    "ease": "linear",
+    "iter": null,
+    "kf": "[{\"offset\":0,\"easing\":\"linear\",\"composite\":\"auto\",\"backgroundPositionX\":\"200%\",\"backgroundPositionY\":\"50%\",\"computedOffset\":0},{\"offset\":1,\"easing\":\"linear\",\"composite\":\"auto\",\"backgroundPositionX\":\"-100%\",\"backgroundPositionY\":\"50%\",\"computedOffset\":1}]"
+   }
+  ]
+ },
+ "hover": [
+  {
+   "n": "P",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgi": "none",
+   "sh": "none",
+   "t": "none",
+   "r": "0px"
+  },
+  {
+   "n": "DIV",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgi": "none",
+   "sh": "none",
+   "t": "none",
+   "r": "0px"
+  },
+  {
+   "n": "text",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgi": "none",
+   "sh": "none",
+   "t": "none",
+   "r": "0px"
+  },
+  {
+   "n": "A",
+   "bg": "rgba(255, 255, 255, 0.15)",
+   "bgi": "none",
+   "sh": "none",
+   "t": "none",
+   "r": "50px"
+  }
+ ],
+ "page": {
+  "vw": 1440,
+  "pageHeight": 14765,
+  "title": "Gaststatte",
+  "htmlBg": "rgba(0, 0, 0, 0)",
+  "bodyBg": "rgb(255, 255, 255)",
+  "bodyColor": "rgb(0, 0, 0)",
+  "colorScheme": "normal",
+  "h1": {
+   "text": "Gaststätte",
+   "family": "Aboreto, sans-serif",
+   "size": "360px",
+   "weight": "400",
+   "lh": "288px",
+   "ls": "-18px",
+   "color": "rgb(235, 234, 223)",
+   "tt": "none",
+   "align": "start",
+   "w": 2046,
+   "h": 288,
+   "top": 612,
+   "left": -1345,
+   "tag": "h1",
+   "balance": "nowrap"
+  },
+  "largestHeroText": {
+   "text": "Gaststätte",
+   "family": "Aboreto, sans-serif",
+   "size": "360px",
+   "weight": "400",
+   "lh": "288px",
+   "ls": "-18px",
+   "color": "rgb(235, 234, 223)",
+   "tt": "none",
+   "align": "start",
+   "w": 2046,
+   "h": 288,
+   "top": 612,
+   "left": -1345,
+   "tag": "h1",
+   "balance": "nowrap"
+  },
+  "h2": [
+   {
+    "text": "A refined expression of contemporary cuisine and timeless sophisticati",
+    "family": "Aboreto, sans-serif",
+    "size": "44px",
+    "weight": "400",
+    "lh": "52.8px",
+    "ls": "-2.2px",
+    "color": "rgb(235, 234, 223)",
+    "tt": "none",
+    "align": "start",
+    "w": 640,
+    "h": 158,
+    "top": 173,
+    "left": 40,
+    "tag": "h2",
+    "balance": "wrap"
+   },
+   {
+    "text": "Our cuisine is shaped by the meeting of two worlds, the understated de",
+    "family": "Aboreto, sans-serif",
+    "size": "44px",
+    "weight": "400",
+    "lh": "52.8px",
+    "ls": "-2.2px",
+    "color": "rgb(235, 234, 223)",
+    "tt": "none",
+    "align": "center",
+    "w": 1300,
+    "h": 211,
+    "top": 1244,
+    "left": 70,
+    "tag": "h2",
+    "balance": "wrap"
+   },
+   {
+    "text": "Hospitality that feels natural",
+    "family": "Aboreto, sans-serif",
+    "size": "44px",
+    "weight": "400",
+    "lh": "52.8px",
+    "ls": "-2.2px",
+    "color": "rgb(14, 0, 5)",
+    "tt": "none",
+    "align": "start",
+    "w": 400,
+    "h": 106,
+    "top": 1950,
+    "left": 306,
+    "tag": "h2",
+    "balance": "wrap"
+   },
+   {
+    "text": "Rooted in tradition, crafted with precision, and served with care and ",
+    "family": "Aboreto, sans-serif",
+    "size": "44px",
+    "weight": "400",
+    "lh": "52.8px",
+    "ls": "-2.2px",
+    "color": "rgb(235, 234, 223)",
+    "tt": "none",
+    "align": "start",
+    "w": 800,
+    "h": 158,
+    "top": 2816,
+    "left": 40,
+    "tag": "h2",
+    "balance": "wrap"
+   }
+  ],
+  "h3": [
+   {
+    "text": "We believe exceptional dining begins with respect for tradition, hones",
+    "family": "\"Zalando Sans\", \"Zalando Sans Placeholder\", sans-serif",
+    "size": "36px",
+    "weight": "400",
+    "lh": "43.2px",
+    "ls": "-0.72px",
+    "color": "rgb(14, 0, 5)",
+    "tt": "none",
+    "align": "start",
+    "w": 825,
+    "h": 130,
+    "top": 12569,
+    "left": 575,
+    "tag": "h3",
+    "balance": "wrap"
+   },
+   {
+    "text": "Home",
+    "family": "\"Zalando Sans\", \"Zalando Sans Placeholder\", sans-serif",
+    "size": "36px",
+    "weight": "400",
+    "lh": "43.2px",
+    "ls": "-0.72px",
+    "color": "rgb(14, 0, 5)",
+    "tt": "none",
+    "align": "start",
+    "w": 95,
+    "h": 43,
+    "top": 13838,
+    "left": 761,
+    "tag": "h3",
+    "balance": "nowrap"
+   }
+  ],
+  "p": [
+   {
+    "text": "Discover a dining experience where refined flavors, impeccable service",
+    "family": "\"Zalando Sans\", \"Zalando Sans Placeholder\", sans-serif",
+    "size": "14px",
+    "weight": "400",
+    "lh": "19.6px",
+    "ls": "0.14px",
+    "color": "rgb(235, 234, 223)",
+    "tt": "none",
+    "align": "start",
+    "w": 390,
+    "h": 59,
+    "top": 494,
+    "left": 1010,
+    "tag": "p",
+    "balance": "wrap"
+   },
+   {
+    "text": "We blend European precision with modern American influence, shaping di",
+    "family": "\"Zalando Sans\", \"Zalando Sans Placeholder\", sans-serif",
+    "size": "14px",
+    "weight": "400",
+    "lh": "19.6px",
+    "ls": "0.14px",
+    "color": "rgb(14, 0, 5)",
+    "tt": "none",
+    "align": "start",
+    "w": 360,
+    "h": 59,
+    "top": 2186,
+    "left": 540,
+    "tag": "p",
+    "balance": "wrap"
+   },
+   {
+    "text": "We blend European precision with modern American influence, shaping di",
+    "family": "\"Zalando Sans\", \"Zalando Sans Placeholder\", sans-serif",
+    "size": "14px",
+    "weight": "400",
+    "lh": "19.6px",
+    "ls": "0.14px",
+    "color": "rgb(14, 0, 5)",
+    "tt": "none",
+    "align": "start",
+    "w": 360,
+    "h": 59,
+    "top": 2377,
+    "left": 540,
+    "tag": "p",
+    "balance": "wrap"
+   }
+  ],
+  "heroP": null,
+  "typeScale": [
+   [
+    "Zalando Sans|14|400",
+    3018
+   ],
+   [
+    "Aboreto|44|400",
+    872
+   ],
+   [
+    "Zalando Sans|12|400",
+    347
+   ],
+   [
+    "Zalando Sans|16|400",
+    214
+   ],
+   [
+    "Zalando Sans|36|400",
+    195
+   ],
+   [
+    "sans-serif|12|400",
+    97
+   ],
+   [
+    "Aboreto|360|400",
+    56
+   ],
+   [
+    "Inter|12|400",
+    28
+   ],
+   [
+    "Zalando Sans|20|400",
+    18
+   ]
+  ],
+  "fontFamiliesUsed": [
+   [
+    "Aboreto",
+    701
+   ],
+   [
+    "Zalando Sans",
+    202
+   ],
+   [
+    "Inter",
+    3
+   ],
+   [
+    "sans-serif",
+    1
+   ]
+  ],
+  "sizesDistinct": [
+   12,
+   14,
+   16,
+   20,
+   36,
+   44,
+   360
+  ],
+  "lsHist": [
+   [
+    "-0.050em",
+    701
+   ],
+   [
+    "-0.020em",
+    117
+   ],
+   [
+    "0.010em",
+    50
+   ],
+   [
+    "normal",
+    39
+   ]
+  ],
+  "nav": {
+   "tag": "NAV",
+   "h": 88,
+   "outerH": 88,
+   "top": -100,
+   "w": 1440,
+   "position": "fixed",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgHeader": "rgba(255, 255, 255, 0)",
+   "backdrop": "none",
+   "bb": "0px none rgb(0, 0, 0)",
+   "shadow": "none",
+   "contentLeft": 40,
+   "contentRight": 1400,
+   "nLinks": 6,
+   "linkTexts": [
+    "Welcome to Gaststätte Welcome to Gaststätte",
+    "About About",
+    "Experience Experience",
+    "Menu Menu",
+    "Philosophy Philosophy",
+    "Contact Contact"
+   ],
+   "linkTypo": [
+    {
+     "text": "Welcome to Gaststätte Welcome to Gaststätte",
+     "family": "sans-serif",
+     "size": "12px",
+     "weight": "400",
+     "lh": "normal",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "tt": "none",
+     "align": "start",
+     "w": 148,
+     "h": 14,
+     "top": -63,
+     "left": 40,
+     "tag": "a",
+     "balance": "wrap"
+    },
+    {
+     "text": "About About",
+     "family": "sans-serif",
+     "size": "12px",
+     "weight": "400",
+     "lh": "normal",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "tt": "none",
+     "align": "start",
+     "w": 40,
+     "h": 20,
+     "top": -66,
+     "left": 1054,
+     "tag": "a",
+     "balance": "wrap"
+    },
+    {
+     "text": "Experience Experience",
+     "family": "sans-serif",
+     "size": "12px",
+     "weight": "400",
+     "lh": "normal",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "tt": "none",
+     "align": "start",
+     "w": 74,
+     "h": 20,
+     "top": -66,
+     "left": 1111,
+     "tag": "a",
+     "balance": "wrap"
+    }
+   ],
+   "hasLogoSvgOrImg": false,
+   "px": "40px/40px"
+  },
+  "ctas": [],
+  "chain": [
+   {
+    "tag": "h1.framer-text",
+    "w": 2046,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "block",
+    "ta": "start"
+   },
+   {
+    "tag": "div.framer-bdgv3k",
+    "w": 2046,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "li.ticker-item",
+    "w": 2046,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "list-item",
+    "ta": "start"
+   },
+   {
+    "tag": "ul",
+    "w": 1440,
+    "maxW": "100%",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "div.framer-sqepk0",
+    "w": 1440,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "div.ssr-variant",
+    "w": 0,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "contents",
+    "ta": "start"
+   },
+   {
+    "tag": "div.framer-lkijbc",
+    "w": 1440,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "div.framer-15r2rfm",
+    "w": 1440,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "header.framer-17sxkps",
+    "w": 1440,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   }
+  ],
+  "sections": [
+   {
+    "cls": "framer-2e1y2d",
+    "tag": "section",
+    "top": 900,
+    "h": 900,
+    "pt": "100px",
+    "pb": "100px",
+    "effPt": 344,
+    "effPb": 344,
+    "contentW": 1300,
+    "contentL": 70,
+    "bg": "rgb(125, 148, 130)",
+    "heading": "Our cuisine is shaped by the meeting of two worlds",
+    "hSize": "44px",
+    "hAlign": "center"
+   },
+   {
+    "cls": "framer-14a8edl",
+    "tag": "section",
+    "top": 1800,
+    "h": 976,
+    "pt": "150px",
+    "pb": "150px",
+    "effPt": 150,
+    "effPb": 97,
+    "contentW": 1393,
+    "contentL": 40,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "Hospitality that feels natural",
+    "hSize": "44px",
+    "hAlign": "start"
+   },
+   {
+    "cls": "framer-1lfnnv2",
+    "tag": "section",
+    "top": 2776,
+    "h": 900,
+    "pt": "40px",
+    "pb": "40px",
+    "effPt": 40,
+    "effPb": 33,
+    "contentW": 1360,
+    "contentL": 40,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "Rooted in tradition, crafted with precision, and s",
+    "hSize": "44px",
+    "hAlign": "start"
+   },
+   {
+    "cls": "framer-fijw8a",
+    "tag": "section",
+    "top": 3676,
+    "h": 1084,
+    "pt": "150px",
+    "pb": "150px",
+    "effPt": 150,
+    "effPb": 143,
+    "contentW": 630,
+    "contentL": 40,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "Exceptional cuisine begins with exceptional ingred",
+    "hSize": "44px",
+    "hAlign": "start"
+   },
+   {
+    "cls": "framer-xjfwd7",
+    "tag": "section",
+    "top": 4760,
+    "h": 934,
+    "pt": "0px",
+    "pb": "150px",
+    "effPt": 0,
+    "effPb": 143,
+    "contentW": 630,
+    "contentL": 770,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "Discover the art of contemporary fine dining.",
+    "hSize": "44px",
+    "hAlign": "start"
+   },
+   {
+    "cls": "framer-9f2nn",
+    "tag": "section",
+    "top": 5694,
+    "h": 4502,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 424,
+    "effPb": -100,
+    "contentW": 3089,
+    "contentL": -824,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "Hospitality that",
+    "hSize": "44px",
+    "hAlign": "start"
+   },
+   {
+    "cls": "framer-unxp5f",
+    "tag": "section",
+    "top": 10197,
+    "h": 568,
+    "pt": "150px",
+    "pb": "150px",
+    "effPt": 150,
+    "effPb": 150,
+    "contentW": 1360,
+    "contentL": 40,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "Where the kitchen moves with the landscape. Discov",
+    "hSize": "44px",
+    "hAlign": "start"
+   },
+   {
+    "cls": "framer-al36gm",
+    "tag": "section",
+    "top": 10764,
+    "h": 900,
+    "pt": "40px",
+    "pb": "40px",
+    "effPt": 40,
+    "effPb": 33,
+    "contentW": 1360,
+    "contentL": 40,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "Rooted in tradition, crafted with precision, and s",
+    "hSize": "44px",
+    "hAlign": "start"
+   },
+   {
+    "cls": "framer-codfzk",
+    "tag": "section",
+    "top": 11664,
+    "h": 1184,
+    "pt": "150px",
+    "pb": "150px",
+    "effPt": 150,
+    "effPb": 150,
+    "contentW": 825,
+    "contentL": 575,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "Our philosophy",
+    "hSize": "44px",
+    "hAlign": "start"
+   },
+   {
+    "cls": "framer-r9wt6p",
+    "tag": "section",
+    "top": 12849,
+    "h": 900,
+    "pt": "40px",
+    "pb": "40px",
+    "effPt": 484,
+    "effPb": -116,
+    "contentW": 847,
+    "contentL": 296,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "Where Tradition Brings Us Together",
+    "hSize": "44px",
+    "hAlign": "start"
+   },
+   {
+    "cls": "framer-LWP2O",
+    "tag": "footer",
+    "top": 13749,
+    "h": 1016,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 3,
+    "effPb": 7,
+    "contentW": 1385,
+    "contentL": 15,
+    "bg": "rgb(255, 255, 255)",
+    "heading": "Gaststätte",
+    "hSize": "360px",
+    "hAlign": "start"
+   }
+  ],
+  "radiusAll": [
+   [
+    "50px",
+    9
+   ],
+   [
+    "10px",
+    1
+   ],
+   [
+    "11px",
+    1
+   ]
+  ],
+  "radiusCards": [],
+  "radiusMedia": [],
+  "radiusInputs": [
+   [
+    "0px",
+    2
+   ]
+  ],
+  "shadows": [
+   [
+    "rgba(0, 0, 0, 0.17) 0px 0.602187px 1.56569px -1.5px, rgba(0, 0, 0, 0.14) 0px 2.28853px 5.95019px -3px, rgba(0, 0, 0, 0.02) 0px 10px 26px -4.5px",
+    1
+   ],
+   [
+    "rgb(0, 0, 0) 0px 0px 0px 1px inset",
+    1
+   ]
+  ],
+  "borders": [],
+  "cardBgs": [],
+  "grids": [],
+  "flexGaps": [
+   [
+    "0px",
+    64
+   ],
+   [
+    "10px",
+    23
+   ],
+   [
+    "70px",
+    11
+   ],
+   [
+    "50px",
+    11
+   ],
+   [
+    "20px",
+    10
+   ],
+   [
+    "15px",
+    8
+   ],
+   [
+    "100px",
+    5
+   ],
+   [
+    "30px",
+    5
+   ]
+  ],
+  "bgByArea": [
+   [
+    "rgb(255, 255, 255)",
+    "85%"
+   ],
+   [
+    "rgb(125, 148, 130)",
+    "9%"
+   ],
+   [
+    "rgb(235, 234, 223)",
+    "1%"
+   ],
+   [
+    "rgb(14, 0, 5)",
+    "1%"
+   ],
+   [
+    "rgb(241, 232, 230)",
+    "0%"
+   ],
+   [
+    "rgb(0, 0, 0)",
+    "0%"
+   ]
+  ],
+  "textColors": [
+   [
+    "rgb(14, 0, 5)",
+    470
+   ],
+   [
+    "rgb(235, 234, 223)",
+    378
+   ],
+   [
+    "rgb(255, 255, 255)",
+    27
+   ],
+   [
+    "rgb(144, 132, 130)",
+    19
+   ],
+   [
+    "rgba(255, 255, 255, 0.5)",
+    9
+   ],
+   [
+    "rgb(125, 148, 130)",
+    2
+   ]
+  ],
+  "linkColors": [
+   [
+    "rgb(255, 255, 255)",
+    14
+   ],
+   [
+    "rgb(14, 0, 5)",
+    14
+   ],
+   [
+    "rgb(235, 234, 223)",
+    6
+   ]
+  ],
+  "counts": {
+   "video": 2,
+   "canvas": 0,
+   "iframe": 1,
+   "svg": 0,
+   "img": 20,
+   "picture": 0,
+   "spline": 0,
+   "lottie": 0
+  },
+  "heroMedia": {
+   "video": true,
+   "canvas": false,
+   "bigImg": 0
+  },
+  "libs": {
+   "gsap": false,
+   "lenis": true,
+   "locomotive": false,
+   "next": false,
+   "framer": true,
+   "webflow": false,
+   "three": false,
+   "astro": false,
+   "nuxt": false,
+   "tailwindish": false
+  },
+  "sticky": 2,
+  "fixed": 2,
+  "snap": 0
+ },
+ "pageHeight": 14765
+}

@@ -1,0 +1,815 @@
+{
+ "headline": {
+  "text": "Visionary spaces designed for sustainability, transforming urban living and enriching community experiences.",
+  "tag": "H1",
+  "fam": "Switzer, \"Switzer Placeholder\", sans-serif",
+  "size": "20px",
+  "lh": "26px",
+  "w": "500",
+  "ls": "normal",
+  "color": "rgb(0, 0, 0)",
+  "bgi": "none",
+  "clip": "border-box",
+  "fill": "rgb(0, 0, 0)",
+  "style": "normal",
+  "align": "start",
+  "r": [
+   40,
+   782,
+   370,
+   78
+  ],
+  "wrap": "wrap",
+  "feat": "normal"
+ },
+ "headlineSpans": [],
+ "sub": {
+  "text": "Create a free website with Framer, the website builder loved by startups, designers and agencies.",
+  "tag": "P",
+  "fam": "sans-serif",
+  "size": "12px",
+  "lh": "normal",
+  "w": "400",
+  "ls": "normal",
+  "color": "rgb(0, 0, 238)",
+  "bgi": "none",
+  "clip": "border-box",
+  "fill": "rgb(0, 0, 238)",
+  "style": "normal",
+  "align": "start",
+  "r": [
+   1350,
+   861,
+   0,
+   0
+  ],
+  "wrap": "wrap",
+  "feat": "normal"
+ },
+ "headToSub": 1,
+ "eyebrow": {
+  "text": "Find Dream Home",
+  "tag": "DIV",
+  "fam": "Switzer, \"Switzer Placeholder\", sans-serif",
+  "size": "16px",
+  "lh": "22.4px",
+  "w": "500",
+  "ls": "normal",
+  "color": "rgb(0, 0, 0)",
+  "bgi": "none",
+  "clip": "border-box",
+  "fill": "rgb(0, 0, 0)",
+  "style": "normal",
+  "align": "start",
+  "r": [
+   60,
+   718,
+   131,
+   22
+  ],
+  "wrap": "nowrap",
+  "feat": "normal"
+ },
+ "eyebrowPill": {
+  "r": [
+   40,
+   706,
+   171,
+   46
+  ],
+  "bg": "rgb(252, 230, 86)",
+  "bgi": "none",
+  "radius": "40px",
+  "border": "0px rgb(0, 0, 238)",
+  "sh": "none",
+  "pad": "12px 20px",
+  "backdrop": "none"
+ },
+ "eyebrowGap": 30,
+ "buttons": [
+  {
+   "t": "Find Dream Home Find Dream Home",
+   "r": [
+    40,
+    706,
+    171,
+    46
+   ],
+   "font": "Switzer 16px w500 ls=normal c=rgb(0, 0, 0)",
+   "layers": [
+    {
+     "n": "Desktop",
+     "r": [
+      40,
+      706,
+      171,
+      46
+     ],
+     "bg": "rgb(252, 230, 86)",
+     "bgi": "none",
+     "radius": "40px",
+     "border": "",
+     "sh": "",
+     "filter": "",
+     "backdrop": "",
+     "op": "1",
+     "blend": ""
+    }
+   ]
+  },
+  {
+   "t": "Buy Template Unlock for $99",
+   "r": [
+    1278,
+    802,
+    142,
+    36
+   ],
+   "font": "Inter 14px w500 ls=-0.7px c=rgb(255, 255, 255)",
+   "layers": [
+    {
+     "n": "Desktop",
+     "r": [
+      1278,
+      802,
+      142,
+      36
+     ],
+     "bg": "rgb(0, 0, 0)",
+     "bgi": "none",
+     "radius": "10px",
+     "border": "",
+     "sh": "",
+     "filter": "",
+     "backdrop": "",
+     "op": "1",
+     "blend": ""
+    },
+    {
+     "n": "div",
+     "r": [
+      1293,
+      814,
+      11,
+      12
+     ],
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 10.8 12%22 overflow=%22visible%22><path d=%22M 2.4 12 L 4.8 7.5 L 0 6.9 L 7.2 0 L 8.4 0 L ",
+     "radius": "0px",
+     "border": "",
+     "sh": "",
+     "filter": "",
+     "backdrop": "",
+     "op": "1",
+     "blend": ""
+    },
+    {
+     "n": "div",
+     "r": [
+      1292,
+      794,
+      11,
+      12
+     ],
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 10.8 12%22 overflow=%22visible%22><path d=%22M 2.4 12 L 4.8 7.5 L 0 6.9 L 7.2 0 L 8.4 0 L ",
+     "radius": "0px",
+     "border": "",
+     "sh": "",
+     "filter": "",
+     "backdrop": "",
+     "op": "1",
+     "blend": ""
+    },
+    {
+     "n": "div",
+     "r": [
+      1278,
+      852,
+      142,
+      36
+     ],
+     "bg": "rgb(255, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "border": "",
+     "sh": "",
+     "filter": "",
+     "backdrop": "",
+     "op": "1",
+     "blend": ""
+    }
+   ]
+  }
+ ],
+ "nav": {
+  "r": [
+   0,
+   0,
+   1440,
+   86
+  ],
+  "pos": "fixed",
+  "shells": [],
+  "links": []
+ },
+ "layers": [
+  {
+   "n": "div",
+   "tag": "DIV",
+   "r": [
+    0,
+    0,
+    1440,
+    11004
+   ],
+   "bg": "rgb(17, 17, 17)",
+   "bgi": "none",
+   "radius": "0px",
+   "border": "",
+   "sh": "",
+   "filter": "",
+   "backdrop": "",
+   "op": "1",
+   "blend": "",
+   "t": "",
+   "persp": "",
+   "mask": "none",
+   "src": "",
+   "overflow": "clip"
+  },
+  {
+   "n": "Main",
+   "tag": "MAIN",
+   "r": [
+    0,
+    0,
+    1440,
+    10211
+   ],
+   "bg": "rgb(255, 255, 255)",
+   "bgi": "none",
+   "radius": "0px",
+   "border": "",
+   "sh": "",
+   "filter": "",
+   "backdrop": "",
+   "op": "1",
+   "blend": "",
+   "t": "",
+   "persp": "",
+   "mask": "none",
+   "src": "",
+   "overflow": "hidden"
+  },
+  {
+   "n": "img",
+   "tag": "IMG",
+   "r": [
+    40,
+    86,
+    1360,
+    307
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgi": "none",
+   "radius": "0px",
+   "border": "",
+   "sh": "",
+   "filter": "",
+   "backdrop": "",
+   "op": "1",
+   "blend": "",
+   "t": "",
+   "persp": "",
+   "mask": "none",
+   "src": "ramerusercontent.com/images/0382IuuBR4oTn78kBwoYfKVvf0.svg?width=1656&height=374",
+   "overflow": "clip"
+  },
+  {
+   "n": "Section - About",
+   "tag": "SECTION",
+   "r": [
+    0,
+    900,
+    1440,
+    1672
+   ],
+   "bg": "rgb(47, 54, 66)",
+   "bgi": "none",
+   "radius": "0px",
+   "border": "",
+   "sh": "",
+   "filter": "",
+   "backdrop": "",
+   "op": "1",
+   "blend": "",
+   "t": "",
+   "persp": "",
+   "mask": "none",
+   "src": "",
+   "overflow": "hidden"
+  }
+ ],
+ "canvases": [],
+ "bodyBg": "rgb(17, 17, 17)",
+ "htmlBg": "rgba(0, 0, 0, 0)",
+ "appear": {
+  "1e3t5hj": {
+   "default": {
+    "initial": {
+     "opacity": 0.001,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "x": 0,
+     "y": -100
+    },
+    "animate": {
+     "opacity": 1,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "transition": {
+      "bounce": 0,
+      "delay": 0,
+      "duration": 1.5,
+      "type": "spring"
+     },
+     "x": 0,
+     "y": 0
+    }
+   }
+  },
+  "1ubjy91": {
+   "default": {
+    "initial": {
+     "opacity": 1,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "x": 0,
+     "y": -400
+    },
+    "animate": {
+     "opacity": 1,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "transition": {
+      "bounce": 0,
+      "delay": 0.1,
+      "duration": 2,
+      "type": "spring"
+     },
+     "x": 0,
+     "y": 0
+    }
+   },
+   "1acs7m4": {
+    "initial": {
+     "opacity": 1,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "x": 0,
+     "y": -400
+    },
+    "animate": {
+     "opacity": 1,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "transition": {
+      "bounce": 0,
+      "delay": 0.1,
+      "duration": 2,
+      "type": "spring"
+     },
+     "x": 0,
+     "y": 0
+    }
+   },
+   "1dlnarj": {
+    "initial": {
+     "opacity": 1,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "x": 0,
+     "y": -400
+    },
+    "animate": {
+     "opacity": 1,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "transition": {
+      "bounce": 0,
+      "delay": 0.1,
+      "duration": 2,
+      "type": "spring"
+     },
+     "x": 0,
+     "y": 0
+    }
+   }
+  },
+  "1n3d3b9": {
+   "default": {
+    "initial": {
+     "opacity": 0.001,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "x": -50,
+     "y": 0
+    },
+    "animate": {
+     "opacity": 1,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "transition": {
+      "bounce": 0,
+      "delay": 1,
+      "duration": 1,
+      "type": "spring"
+     },
+     "x": 0,
+     "y": 0
+    }
+   }
+  },
+  "g2i8r2": {
+   "default": {
+    "initial": {
+     "opacity": 0.001,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "x": 0,
+     "y": 400
+    },
+    "animate": {
+     "opacity": 1,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "transition": {
+      "bounce": 0,
+      "delay": 1.4,
+      "duration": 2,
+      "type": "spring"
+     },
+     "x": 0,
+     "y": 0
+    }
+   }
+  },
+  "ia6wez": {
+   "default": {
+    "initial": {
+     "opacity": 0.001,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "x": 0,
+     "y": 400
+    },
+    "animate": {
+     "opacity": 1,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "transition": {
+      "bounce": 0,
+      "delay": 1.8,
+      "duration": 2,
+      "type": "spring"
+     },
+     "x": 0,
+     "y": 0
+    }
+   }
+  },
+  "gk6l9y": {
+   "default": {
+    "initial": {
+     "opacity": 0.001,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "x": 0,
+     "y": 50
+    },
+    "animate": {
+     "opacity": 1,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "transition": {
+      "damping": 50,
+      "delay": 2,
+      "mass": 1,
+      "stiffness": 300,
+      "type": "spring"
+     },
+     "x": 0,
+     "y": 0
+    }
+   }
+  }
+ },
+ "appearTargets": [
+  {
+   "id": "1e3t5hj",
+   "n": "div",
+   "r": [
+    0,
+    0,
+    1440,
+    86
+   ],
+   "txt": ""
+  },
+  {
+   "id": "1ubjy91",
+   "n": "logo",
+   "r": [
+    40,
+    86,
+    1360,
+    307
+   ],
+   "txt": ""
+  },
+  {
+   "id": "1n3d3b9",
+   "n": "text wrapper",
+   "r": [
+    40,
+    706,
+    433,
+    154
+   ],
+   "txt": "Find Dream Home Find Dream Home Visionar"
+  },
+  {
+   "id": "g2i8r2",
+   "n": "div",
+   "r": [
+    503,
+    500,
+    433,
+    360
+   ],
+   "txt": ""
+  },
+  {
+   "id": "ia6wez",
+   "n": "img holder",
+   "r": [
+    967,
+    86,
+    433,
+    774
+   ],
+   "txt": ""
+  },
+  {
+   "id": "gk6l9y",
+   "n": "div",
+   "r": [
+    1278,
+    802,
+    142,
+    36
+   ],
+   "txt": "Buy Template Unlock for $99"
+  },
+  {
+   "id": "n0ccwk",
+   "n": "Light",
+   "r": [
+    1280,
+    842,
+    140,
+    38
+   ],
+   "txt": "Create a free website with Framer, the w"
+  }
+ ],
+ "sections": [
+  {
+   "n": "div",
+   "r": [
+    0,
+    0,
+    1440,
+    86
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "pt": "0px",
+   "pb": "0px",
+   "gap": "normal",
+   "radius": "0px"
+  },
+  {
+   "n": "div",
+   "r": [
+    1278,
+    802,
+    142,
+    36
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "pt": "0px",
+   "pb": "0px",
+   "gap": "normal",
+   "radius": "0px"
+  }
+ ],
+ "radiusHist": [
+  [
+   "40px",
+   6
+  ],
+  [
+   "100px",
+   5
+  ],
+  [
+   "50px",
+   3
+  ],
+  [
+   "10px",
+   2
+  ],
+  [
+   "11px",
+   2
+  ]
+ ],
+ "shadowHist": [
+  [
+   "rgb(0, 0, 0) 0px 0px 0px 1px inset",
+   2
+  ],
+  [
+   "rgba(0, 0, 0, 0.17) 0px 0.602187px 1.56569px -1.5px, rgba(0, 0, 0, 0.14) 0px 2.28853px 5.95019px -3px, rgba(0, 0, 0, 0.02) 0px 10px 26px -4.5px",
+   1
+  ]
+ ],
+ "backdropHist": [
+  [
+   "blur(0.078125px)",
+   3
+  ],
+  [
+   "blur(0.15625px)",
+   3
+  ],
+  [
+   "blur(0.3125px)",
+   3
+  ],
+  [
+   "blur(0.625px)",
+   3
+  ],
+  [
+   "blur(1.25px)",
+   3
+  ],
+  [
+   "blur(2.5px)",
+   3
+  ],
+  [
+   "blur(5px)",
+   3
+  ],
+  [
+   "blur(10px)",
+   3
+  ]
+ ],
+ "filterHist": [
+  [
+   "grayscale(1) invert(1)",
+   1
+  ]
+ ],
+ "fontHist": [
+  [
+   "Switzer 48px w500 ls-0.96px",
+   245
+  ],
+  [
+   "Switzer 16px w500 lsnormal",
+   41
+  ],
+  [
+   "Switzer 16px w300 lsnormal",
+   36
+  ],
+  [
+   "Switzer 20px w500 lsnormal",
+   31
+  ],
+  [
+   "Switzer 180px w400 ls-9px",
+   12
+  ],
+  [
+   "Switzer 60px w500 ls-1.8px",
+   3
+  ],
+  [
+   "Inter 14px w500 ls-0.7px",
+   2
+  ],
+  [
+   "sans-serif 12px w400 lsnormal",
+   1
+  ]
+ ],
+ "gradHist": [],
+ "scripts": [
+  "https://events.framer.com/script?v=2"
+ ],
+ "hover": [
+  {
+   "t": "Find Dream Home Find Dream Home",
+   "after": [
+    "A bg=rgb(252, 230, 86) bgi=none sh=none t=none op=1",
+    "text - holder bg=rgba(0, 0, 0, 0) bgi=none sh=none t=none op=1",
+    "DIV bg=rgba(0, 0, 0, 0) bgi=none sh=none t=none op=1",
+    "DIV bg=rgba(0, 0, 0, 0) bgi=none sh=none t=none op=1",
+    "DIV bg=rgba(0, 0, 0, 0) bgi=none sh=none t=matrix(1, 0, 0, 1, 0, -11.2031) op=1",
+    "DIV bg=rgba(0, 0, 0, 0) bgi=none sh=none t=none op=1"
+   ]
+  },
+  {
+   "t": "Buy Template Unlock for $99",
+   "after": [
+    "A bg=rgb(0, 0, 0) bgi=none sh=none t=none op=1",
+    "icon bg=rgba(0, 0, 0, 0) bgi=none sh=none t=none op=1",
+    "DIV bg=rgba(0, 0, 0, 0) bgi=none sh=none t=matrix(1, 0, 0, 1, -5.5, -6) op=1",
+    "DIV bg=rgba(0, 0, 0, 0) bgi=url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewB sh=none t=none op=1",
+    "DIV bg=rgba(0, 0, 0, 0) bgi=none sh=none t=none op=1",
+    "DIV bg=rgba(0, 0, 0, 0) bgi=url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewB sh=none t=none op=1"
+   ]
+  }
+ ]
+}

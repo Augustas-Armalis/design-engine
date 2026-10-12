@@ -1,0 +1,1310 @@
+{
+ "id": "troscan",
+ "url": "https://troscan.framer.website/",
+ "date": "2026-10-11",
+ "hero": {
+  "bgImages": [
+   {
+    "n": "div",
+    "r": [
+     1293,
+     814,
+     11,
+     12
+    ],
+    "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 10.8 12%22 overflow=%22visible%22><path d=%22M 2.4 12 L 4.8 7.5 L 0 6.9 L 7.2 0 L 8.4 0 L 6 4.5 L 10.8 5.1 L 3.6 12 Z%22 fill=%22rgb(255, 255, 255)%22></path></svg>\")",
+    "size": "100% 100%",
+    "blend": "normal",
+    "op": "1",
+    "filter": "none"
+   },
+   {
+    "n": "div",
+    "r": [
+     1292,
+     794,
+     11,
+     12
+    ],
+    "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 10.8 12%22 overflow=%22visible%22><path d=%22M 2.4 12 L 4.8 7.5 L 0 6.9 L 7.2 0 L 8.4 0 L 6 4.5 L 10.8 5.1 L 3.6 12 Z%22 fill=%22rgb(255, 255, 255)%22></path></svg>\")",
+    "size": "100% 100%",
+    "blend": "normal",
+    "op": "1",
+    "filter": "none"
+   }
+  ],
+  "filters": [
+   {
+    "n": "span",
+    "r": [
+     325,
+     320,
+     364,
+     96
+    ],
+    "filter": "blur(0px)",
+    "backdrop": "none",
+    "bg": "rgba(0, 0, 0, 0)",
+    "op": "1"
+   },
+   {
+    "n": "span",
+    "r": [
+     706,
+     320,
+     329,
+     96
+    ],
+    "filter": "blur(0px)",
+    "backdrop": "none",
+    "bg": "rgba(0, 0, 0, 0)",
+    "op": "1"
+   },
+   {
+    "n": "span",
+    "r": [
+     1052,
+     320,
+     64,
+     96
+    ],
+    "filter": "blur(0px)",
+    "backdrop": "none",
+    "bg": "rgba(0, 0, 0, 0)",
+    "op": "1"
+   },
+   {
+    "n": "span",
+    "r": [
+     413,
+     416,
+     325,
+     96
+    ],
+    "filter": "blur(0px)",
+    "backdrop": "none",
+    "bg": "rgba(0, 0, 0, 0)",
+    "op": "1"
+   },
+   {
+    "n": "span",
+    "r": [
+     756,
+     416,
+     272,
+     96
+    ],
+    "filter": "blur(0px)",
+    "backdrop": "none",
+    "bg": "rgba(0, 0, 0, 0)",
+    "op": "1"
+   }
+  ],
+  "blends": [],
+  "transforms": [
+   {
+    "n": "div",
+    "r": [
+     1397,
+     649,
+     6,
+     6
+    ],
+    "t": "matrix(0.707107, 0.707107, -0.707107, 0.707107, 0, 0)",
+    "persp": "none",
+    "op": "1"
+   },
+   {
+    "n": "div",
+    "r": [
+     1397,
+     649,
+     6,
+     6
+    ],
+    "t": "matrix(0.707107, -0.707107, 0.707107, 0.707107, 0, 0)",
+    "persp": "none",
+    "op": "1"
+   },
+   {
+    "n": "p",
+    "r": [
+     1350,
+     861,
+     0,
+     0
+    ],
+    "t": "matrix(0.001, 0, 0, 0.001, 0, 0)",
+    "persp": "none",
+    "op": "1"
+   }
+  ],
+  "perspective": [],
+  "media": [
+   {
+    "tag": "IMG",
+    "n": "div",
+    "r": [
+     0,
+     0,
+     1440,
+     900
+    ],
+    "src": "https://framerusercontent.com/images/I1KebQoYSXcDwvUsFzZRi0wIxE.jpeg",
+    "fit": "cover",
+    "radius": "0px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": [
+     1440,
+     807
+    ]
+   },
+   {
+    "tag": "IMG",
+    "n": "div",
+    "r": [
+     713,
+     1072,
+     710,
+     618
+    ],
+    "src": "https://framerusercontent.com/images/vJzsJOlbUK8qkA5xxZA18jSC6SI.jpeg",
+    "fit": "cover",
+    "radius": "0px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": [
+     644,
+     644
+    ]
+   },
+   {
+    "tag": "VIDEO",
+    "n": "div",
+    "r": [
+     1210,
+     632,
+     210,
+     158
+    ],
+    "src": "https://framerusercontent.com/assets/TNg2xfI1CEpQsOAJClKAFpU1XR4.mp4",
+    "fit": "cover",
+    "radius": "0px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": null
+   }
+  ],
+  "svgNoise": 0,
+  "turb": [],
+  "canvas": [],
+  "radii": [
+   "container 700x58 r=8px bg=rgb(248, 237, 227) bd=0px rgb(0, 0, 0) sh=rgba(0, 0, 0, 0.2) 0px 0px 50px 0px",
+   "Primary 131x48 r=5px bg=rgb(141, 73, 58) bd=0px rgb(0, 0, 238) sh=none",
+   "Light 129x48 r=5px bg=rgb(248, 237, 227) bd=0px rgb(0, 0, 238) sh=none",
+   "Border 183x48 r=5px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 238) sh=none",
+   "Desktop 210x158 r=5px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 238) sh=none",
+   "Desktop 142x36 r=10px bg=rgb(0, 0, 0) bd=0px rgb(0, 0, 238) sh=none",
+   "Backdrop 138x36 r=10px bg=rgb(255, 255, 255) bd=0px rgb(0, 0, 238) sh=rgba(0, 0, 0, 0.17) 0px 0.602187px 1.56569px -1.5px, rgba(0, 0, 0, 0.14) 0px 2.28853px 5.95019px -3px, rgba(0, 0, 0, 0.02) 0px 10px 26px -4.",
+   "Bottom 140x38 r=11px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 238) sh=rgb(0, 0, 0) 0px 0px 0px 1px inset",
+   "Border 140x38 r=11px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 238) sh=rgb(0, 0, 0) 0px 0px 0px 1px inset"
+  ],
+  "texts": [
+   "Troscán | Archivo 20px/24px w700 ls=-0.6px c=rgb(141, 73, 58) tt=none @390,37,73,24",
+   "About | Archivo 16px/16px w600 ls=normal c=rgb(141, 73, 58) tt=none @602,36,45,25",
+   "Projects | Archivo 16px/16px w600 ls=normal c=rgb(141, 73, 58) tt=none @677,36,61,25",
+   "News | Archivo 16px/16px w600 ls=normal c=rgb(141, 73, 58) tt=none @768,36,41,25",
+   "Contact us | Archivo 16px/16px w600 ls=normal c=rgb(248, 237, 227) tt=none @960,41,79,16",
+   "Timeless | Archivo 96px/96px w400 ls=-2.88px c=rgb(255, 255, 255) tt=none @325,320,364,96",
+   "Comfort | Archivo 96px/96px w400 ls=-2.88px c=rgb(255, 255, 255) tt=none @706,320,329,96",
+   "& | Archivo 96px/96px w400 ls=-2.88px c=rgb(255, 255, 255) tt=none @1052,320,64,96",
+   "Endless | Archivo 96px/96px w400 ls=-2.88px c=rgb(255, 255, 255) tt=none @413,416,325,96",
+   "Luxury | Archivo 96px/96px w400 ls=-2.88px c=rgb(255, 255, 255) tt=none @756,416,272,96",
+   "Our Vision | Archivo 16px/16px w600 ls=normal c=rgb(141, 73, 58) tt=none @585,548,77,16",
+   "Explore Expertise | Archivo 16px/16px w600 ls=normal c=rgb(248, 237, 227) tt=none @724,548,131,16",
+   "Monarque | Inter 22px/26.4px w600 ls=-0.88px c=rgb(255, 255, 255) tt=none @1264,736,101,26",
+   "Latest Template | Inter 14px/16.8px w400 ls=-0.56px c=rgb(255, 255, 255) tt=none @1267,765,97,17",
+   "Buy Template | Inter 14px/16.8px w500 ls=-0.7px c=rgb(255, 255, 255) tt=none @1314,812,83,17",
+   "Unlock for $99 | Inter 14px/16.8px w500 ls=-0.7px c=rgb(255, 255, 255) tt=none @1314,834,90,17",
+   "Create a free website with Framer, the website bui | sans-serif 12px/normal w400 ls=normal c=rgb(0, 0, 238) tt=none @1350,861,0,0"
+  ],
+  "buttons": [
+   {
+    "t": "Troscán",
+    "r": [
+     390,
+     37,
+     73,
+     24
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "About",
+    "r": [
+     602,
+     36,
+     45,
+     25
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "0px",
+    "border": "0px rgb(141, 73, 58)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(141, 73, 58)"
+    },
+    "font": "Archivo 16px w600"
+   },
+   {
+    "t": "Projects",
+    "r": [
+     677,
+     36,
+     61,
+     25
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "0px",
+    "border": "0px rgb(141, 73, 58)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(141, 73, 58)"
+    },
+    "font": "Archivo 16px w600"
+   },
+   {
+    "t": "News",
+    "r": [
+     768,
+     36,
+     41,
+     25
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "0px",
+    "border": "0px rgb(141, 73, 58)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(141, 73, 58)"
+    },
+    "font": "Archivo 16px w600"
+   },
+   {
+    "t": "Contact us",
+    "r": [
+     934,
+     25,
+     131,
+     48
+    ],
+    "bg": "rgb(141, 73, 58)",
+    "bgi": "none",
+    "radius": "5px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "Our Vision",
+    "r": [
+     559,
+     532,
+     129,
+     48
+    ],
+    "bg": "rgb(248, 237, 227)",
+    "bgi": "none",
+    "radius": "5px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "Explore Expertise",
+    "r": [
+     698,
+     532,
+     183,
+     48
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "5px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "Monarque Latest Template",
+    "r": [
+     1210,
+     632,
+     210,
+     158
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "5px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "Buy Template Unlock for $99",
+    "r": [
+     1278,
+     802,
+     142,
+     36
+    ],
+    "bg": "rgb(0, 0, 0)",
+    "bgi": "none",
+    "radius": "10px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   }
+  ],
+  "fonts": [
+   "Inter 600",
+   "Inter 400",
+   "Inter 500",
+   "Archivo 600",
+   "Archivo 400",
+   "Archivo 700",
+   "Inter Placeholder normal",
+   "Archivo Placeholder normal"
+  ],
+  "appear": "{\"w43niz\":{\"default\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":-30},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"delay\":0,\"duration\":0.7,\"ease\":[0.44,0,0.56,1],\"type\":\"tween\"},\"x\":0,\"y\":0},\"transformTemplate\":\"translateX(-50%) __Appear_Animation_Transform__\"},\"r4i37q\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":-30},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"delay\":0,\"duration\":0.7,\"ease\":[0.44,0,0.56,1],\"type\":\"tween\"},\"x\":0,\"y\":0},\"transformTemplate\":\"translateX(-50%) __Appear_Animation_Transform__\"},\"1ic32u2\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":-30},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"delay\":0,\"duration\":0.7,\"ease\":[0.44,0,0.56,1],\"type\":\"tween\"},\"x\":0,\"y\":0},\"transformTemplate\":\"translateX(-50%) __Appear_Animation_Transform__\"}},\"1jvemlg\":{\"default\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":20},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"delay\":1,\"duration\":0.5,\"ease\":[0,0,1,1],\"type\":\"tween\"},\"x\":0,\"y\":0}},\"e42dc8\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":20},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"delay\":1,\"duration\":0.5,\"ease\":[0,0,1,1],\"type\":\"tween\"},\"x\":0,\"y\":0}},\"qjz8sg\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":20},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"delay\":1,\"duration\":0.5,\"ease\":[0,0,1,1],\"type\":\"tween\"},\"x\":0,\"y\":0}}},\"1m1pbon\":{\"default\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":20},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"delay\":1.2,\"duration\":0.5,\"ease\":[0,0,1,1],\"type\":\"tween\"},\"x\":0,\"y\":0}},\"e42dc8\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":20},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"delay\":1.2,\"duration\":0.5,\"ease\":[0,0,1,1],\"type\":\"tween\"},\"x\":0,\"y\":0}},\"qjz8sg\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":20},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"delay\":1.2,\"duration\":0.5,\"ease\":[0,0,1,1],\"type\":\"tween\"},\"x\":0,\"y\":0}}},\"gk6l9y\":{\"default\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":50},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"damping\":50,\"delay\":2,\"mass\":1,\"stiffness\":300,\"type\":\"spring\"},\"x\":0,\"y\":0}}}}",
+  "anims": []
+ },
+ "hover": [
+  {
+   "n": "DIV",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgi": "none",
+   "sh": "none",
+   "t": "none",
+   "r": "0px"
+  },
+  {
+   "n": "DIV",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgi": "none",
+   "sh": "none",
+   "t": "none",
+   "r": "0px"
+  },
+  {
+   "n": "A",
+   "bg": "rgb(184, 88, 66)",
+   "bgi": "none",
+   "sh": "none",
+   "t": "none",
+   "r": "5px"
+  },
+  {
+   "n": "DIV",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgi": "none",
+   "sh": "none",
+   "t": "none",
+   "r": "0px"
+  }
+ ],
+ "page": {
+  "vw": 1440,
+  "pageHeight": 11747,
+  "title": "Troscán",
+  "htmlBg": "rgba(0, 0, 0, 0)",
+  "bodyBg": "rgb(248, 237, 227)",
+  "bodyColor": "rgb(0, 0, 0)",
+  "colorScheme": "normal",
+  "h1": {
+   "text": "Timeless Comfort & Endless Luxury",
+   "family": "Archivo, \"Archivo Placeholder\", sans-serif",
+   "size": "96px",
+   "weight": "400",
+   "lh": "96px",
+   "ls": "-2.88px",
+   "color": "rgb(255, 255, 255)",
+   "tt": "none",
+   "align": "center",
+   "w": 800,
+   "h": 192,
+   "top": 320,
+   "left": 320,
+   "tag": "h1",
+   "balance": "wrap"
+  },
+  "largestHeroText": {
+   "text": "Timeless",
+   "family": "Archivo, \"Archivo Placeholder\", sans-serif",
+   "size": "96px",
+   "weight": "400",
+   "lh": "96px",
+   "ls": "-2.88px",
+   "color": "rgb(255, 255, 255)",
+   "tt": "none",
+   "align": "center",
+   "w": 364,
+   "h": 96,
+   "top": 320,
+   "left": 325,
+   "tag": "span",
+   "balance": "wrap"
+  },
+  "h2": [
+   {
+    "text": "Where Spaces Inspire, and Design Comes Alive",
+    "family": "Archivo, \"Archivo Placeholder\", sans-serif",
+    "size": "64px",
+    "weight": "400",
+    "lh": "64px",
+    "ls": "-1.92px",
+    "color": "rgb(141, 73, 58)",
+    "tt": "none",
+    "align": "left",
+    "w": 550,
+    "h": 192,
+    "top": 1137,
+    "left": 50,
+    "tag": "h2",
+    "balance": "wrap"
+   },
+   {
+    "text": "Serene Urban Retreat",
+    "family": "Archivo, \"Archivo Placeholder\", sans-serif",
+    "size": "64px",
+    "weight": "400",
+    "lh": "64px",
+    "ls": "-1.92px",
+    "color": "rgb(255, 255, 255)",
+    "tt": "none",
+    "align": "center",
+    "w": 600,
+    "h": 64,
+    "top": 4700,
+    "left": 420,
+    "tag": "h2",
+    "balance": "wrap"
+   },
+   {
+    "text": "Luxurious Coastal Living",
+    "family": "Archivo, \"Archivo Placeholder\", sans-serif",
+    "size": "64px",
+    "weight": "400",
+    "lh": "64px",
+    "ls": "-1.92px",
+    "color": "rgb(255, 255, 255)",
+    "tt": "none",
+    "align": "center",
+    "w": 600,
+    "h": 128,
+    "top": 5568,
+    "left": 420,
+    "tag": "h2",
+    "balance": "wrap"
+   },
+   {
+    "text": "Modern Elegance in Every Room",
+    "family": "Archivo, \"Archivo Placeholder\", sans-serif",
+    "size": "64px",
+    "weight": "400",
+    "lh": "64px",
+    "ls": "-1.92px",
+    "color": "rgb(255, 255, 255)",
+    "tt": "none",
+    "align": "center",
+    "w": 600,
+    "h": 128,
+    "top": 6468,
+    "left": 420,
+    "tag": "h2",
+    "balance": "wrap"
+   }
+  ],
+  "h3": [
+   {
+    "text": "Transforming spaces with style, through Troscán's exquisite design exp",
+    "family": "Archivo, \"Archivo Placeholder\", sans-serif",
+    "size": "40px",
+    "weight": "400",
+    "lh": "48px",
+    "ls": "-0.8px",
+    "color": "rgb(141, 73, 58)",
+    "tt": "none",
+    "align": "center",
+    "w": 550,
+    "h": 144,
+    "top": 2259,
+    "left": 445,
+    "tag": "h3",
+    "balance": "wrap"
+   }
+  ],
+  "p": [
+   {
+    "text": "At Troscán, we believe that every space has a story to tell. As a prem",
+    "family": "Archivo, \"Archivo Placeholder\", sans-serif",
+    "size": "16px",
+    "weight": "400",
+    "lh": "22.4px",
+    "ls": "normal",
+    "color": "rgb(141, 73, 58)",
+    "tt": "none",
+    "align": "left",
+    "w": 550,
+    "h": 45,
+    "top": 1461,
+    "left": 50,
+    "tag": "p",
+    "balance": "wrap"
+   },
+   {
+    "text": "Our expert team blends timeless craftsmanship with innovative designs,",
+    "family": "Archivo, \"Archivo Placeholder\", sans-serif",
+    "size": "16px",
+    "weight": "400",
+    "lh": "22.4px",
+    "ls": "normal",
+    "color": "rgb(141, 73, 58)",
+    "tt": "none",
+    "align": "left",
+    "w": 550,
+    "h": 67,
+    "top": 1526,
+    "left": 50,
+    "tag": "p",
+    "balance": "wrap"
+   },
+   {
+    "text": "Create a free website with Framer, the website builder loved by startu",
+    "family": "sans-serif",
+    "size": "12px",
+    "weight": "400",
+    "lh": "normal",
+    "ls": "normal",
+    "color": "rgb(0, 0, 238)",
+    "tt": "none",
+    "align": "start",
+    "w": 0,
+    "h": 0,
+    "top": 861,
+    "left": 1350,
+    "tag": "p",
+    "balance": "wrap"
+   }
+  ],
+  "heroP": null,
+  "typeScale": [
+   [
+    "Archivo|16|400",
+    473
+   ],
+   [
+    "Archivo|28|400",
+    377
+   ],
+   [
+    "Archivo|14|400",
+    276
+   ],
+   [
+    "Archivo|64|400",
+    201
+   ],
+   [
+    "Archivo|16|600",
+    128
+   ],
+   [
+    "Archivo|22|400",
+    102
+   ],
+   [
+    "sans-serif|12|400",
+    97
+   ],
+   [
+    "Archivo|40|400",
+    77
+   ],
+   [
+    "Archivo|96|400",
+    29
+   ],
+   [
+    "Inter|14|500",
+    26
+   ],
+   [
+    "Inter|14|400",
+    15
+   ],
+   [
+    "Archivo|20|700",
+    14
+   ],
+   [
+    "Inter|22|600",
+    8
+   ]
+  ],
+  "fontFamiliesUsed": [
+   [
+    "Archivo",
+    75
+   ],
+   [
+    "Inter",
+    4
+   ],
+   [
+    "sans-serif",
+    1
+   ]
+  ],
+  "sizesDistinct": [
+   12,
+   14,
+   16,
+   20,
+   22,
+   28,
+   40,
+   64,
+   96
+  ],
+  "lsHist": [
+   [
+    "normal",
+    40
+   ],
+   [
+    "-0.020em",
+    20
+   ],
+   [
+    "-0.030em",
+    13
+   ],
+   [
+    "-0.010em",
+    3
+   ],
+   [
+    "-0.040em",
+    2
+   ],
+   [
+    "-0.050em",
+    2
+   ]
+  ],
+  "nav": {
+   "tag": "NAV",
+   "h": 58,
+   "outerH": 58,
+   "top": 20,
+   "w": 1440,
+   "position": "fixed",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgHeader": "rgba(0, 0, 0, 0)",
+   "backdrop": "none",
+   "bb": "0px none rgb(0, 0, 0)",
+   "shadow": "none",
+   "contentLeft": 390,
+   "contentRight": 1065,
+   "nLinks": 5,
+   "linkTexts": [
+    "Troscán",
+    "About",
+    "Projects",
+    "News",
+    "Contact us"
+   ],
+   "linkTypo": [
+    {
+     "text": "Troscán",
+     "family": "sans-serif",
+     "size": "12px",
+     "weight": "400",
+     "lh": "normal",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "tt": "none",
+     "align": "start",
+     "w": 73,
+     "h": 24,
+     "top": 37,
+     "left": 390,
+     "tag": "a",
+     "balance": "wrap"
+    },
+    {
+     "text": "About",
+     "family": "Archivo, \"Archivo Placeholder\", sans-serif",
+     "size": "16px",
+     "weight": "600",
+     "lh": "16px",
+     "ls": "normal",
+     "color": "rgb(141, 73, 58)",
+     "tt": "none",
+     "align": "start",
+     "w": 45,
+     "h": 25,
+     "top": 36,
+     "left": 602,
+     "tag": "a",
+     "balance": "nowrap"
+    },
+    {
+     "text": "Projects",
+     "family": "Archivo, \"Archivo Placeholder\", sans-serif",
+     "size": "16px",
+     "weight": "600",
+     "lh": "16px",
+     "ls": "normal",
+     "color": "rgb(141, 73, 58)",
+     "tt": "none",
+     "align": "start",
+     "w": 61,
+     "h": 25,
+     "top": 36,
+     "left": 677,
+     "tag": "a",
+     "balance": "nowrap"
+    }
+   ],
+   "hasLogoSvgOrImg": false,
+   "px": "16px/16px"
+  },
+  "ctas": [
+   {
+    "text": "Contact us",
+    "inHeader": true,
+    "kind": "filled",
+    "h": 48,
+    "w": 131,
+    "radius": "5px",
+    "bg": "rgb(141, 73, 58)",
+    "color": "rgb(0, 0, 238)",
+    "border": null,
+    "size": "12px",
+    "weight": "400",
+    "pad": "16px 26px",
+    "shadow": null,
+    "family": "sans-serif"
+   },
+   {
+    "text": "Our Vision",
+    "inHeader": false,
+    "kind": "filled",
+    "h": 48,
+    "w": 129,
+    "radius": "5px",
+    "bg": "rgb(248, 237, 227)",
+    "color": "rgb(0, 0, 238)",
+    "border": null,
+    "size": "12px",
+    "weight": "400",
+    "pad": "16px 26px",
+    "shadow": null,
+    "family": "sans-serif"
+   },
+   {
+    "text": "Buy Template Unlock for $99",
+    "inHeader": false,
+    "kind": "filled",
+    "h": 36,
+    "w": 142,
+    "radius": "10px",
+    "bg": "rgb(0, 0, 0)",
+    "color": "rgb(0, 0, 238)",
+    "border": null,
+    "size": "12px",
+    "weight": "400",
+    "pad": "0px 0px",
+    "shadow": null,
+    "family": "sans-serif"
+   }
+  ],
+  "chain": [
+   {
+    "tag": "h1.framer-text",
+    "w": 800,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "block",
+    "ta": "center"
+   },
+   {
+    "tag": "div.framer-lggi9p",
+    "w": 800,
+    "maxW": "800px",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "header.framer-1hf6hmk",
+    "w": 1440,
+    "maxW": "none",
+    "pl": "50px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "main.framer-lh0dfc",
+    "w": 1440,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "div.framer-DjKNf",
+    "w": 0,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "contents",
+    "ta": "start"
+   },
+   {
+    "tag": "div.framer-SP8vz",
+    "w": 1440,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "div",
+    "w": 1440,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "block",
+    "ta": "start"
+   },
+   {
+    "tag": "body",
+    "w": 1440,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "block",
+    "ta": "start"
+   }
+  ],
+  "sections": [
+   {
+    "cls": "framer-j9pzvy",
+    "tag": "section",
+    "top": 1100,
+    "h": 561,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": -28,
+    "effPb": -28,
+    "contentW": 1372,
+    "contentL": 50,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "Where Spaces Inspire, and Design Comes Alive",
+    "hSize": "64px",
+    "hAlign": "left"
+   },
+   {
+    "cls": "framer-1g5qjyr",
+    "tag": "section",
+    "top": 1861,
+    "h": 2250,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 217,
+    "effPb": 1603,
+    "contentW": 663,
+    "contentL": 385,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "",
+    "hSize": null,
+    "hAlign": null
+   },
+   {
+    "cls": "framer-uszmu5",
+    "tag": "section",
+    "top": 4311,
+    "h": 2700,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 337,
+    "effPb": 305,
+    "contentW": 1340,
+    "contentL": 50,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "Serene Urban Retreat",
+    "hSize": "64px",
+    "hAlign": "center"
+   },
+   {
+    "cls": "framer-u4dJj",
+    "tag": "section",
+    "top": 7211,
+    "h": 893,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 37,
+    "effPb": -614,
+    "contentW": 1340,
+    "contentL": 50,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "Selecting the ideal elements to elevate your space",
+    "hSize": "64px",
+    "hAlign": "left"
+   },
+   {
+    "cls": "framer-xhfSb",
+    "tag": "section",
+    "top": 8304,
+    "h": 1800,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 1249,
+    "effPb": 349,
+    "contentW": 500,
+    "contentL": 470,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "",
+    "hSize": null,
+    "hAlign": null
+   },
+   {
+    "cls": "framer-2mjPH",
+    "tag": "section",
+    "top": 10304,
+    "h": 715,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 37,
+    "effPb": 0,
+    "contentW": 1340,
+    "contentL": 50,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "Stay Inspired with Interior Trends",
+    "hSize": "64px",
+    "hAlign": "left"
+   },
+   {
+    "cls": "framer-F8UJh",
+    "tag": "footer",
+    "top": 11220,
+    "h": 527,
+    "pt": "100px",
+    "pb": "0px",
+    "effPt": 100,
+    "effPb": 30,
+    "contentW": 1340,
+    "contentL": 50,
+    "bg": "rgb(141, 73, 58)",
+    "heading": "",
+    "hSize": null,
+    "hAlign": null
+   }
+  ],
+  "radiusAll": [
+   [
+    "5px",
+    10
+   ],
+   [
+    "10px",
+    8
+   ],
+   [
+    "2.98507% 2.62699%",
+    3
+   ],
+   [
+    "1.86567% 2.73645%",
+    3
+   ],
+   [
+    "1.49254% 2.05233%",
+    3
+   ],
+   [
+    "1.86567% 2.46286%",
+    3
+   ],
+   [
+    "1.86567% 1.64187%",
+    3
+   ],
+   [
+    "1.69608% 2.79867%",
+    3
+   ],
+   [
+    "8px",
+    1
+   ],
+   [
+    "11px",
+    1
+   ]
+  ],
+  "radiusCards": [
+   [
+    "10px",
+    1
+   ]
+  ],
+  "radiusMedia": [
+   [
+    "2.98507% 2.62699%",
+    1
+   ],
+   [
+    "1.86567% 2.73645%",
+    1
+   ],
+   [
+    "1.49254% 2.05233%",
+    1
+   ],
+   [
+    "1.86567% 2.46286%",
+    1
+   ]
+  ],
+  "radiusInputs": [],
+  "shadows": [
+   [
+    "rgba(0, 0, 0, 0.2) 0px 0px 50px 0px",
+    1
+   ],
+   [
+    "rgba(0, 0, 0, 0.17) 0px 0.602187px 1.56569px -1.5px, rgba(0, 0, 0, 0.14) 0px 2.28853px 5.95019px -3px, rgba(0, 0, 0, 0.02) 0px 10px 26px -4.5px",
+    1
+   ],
+   [
+    "rgb(0, 0, 0) 0px 0px 0px 1px inset",
+    1
+   ]
+  ],
+  "borders": [],
+  "cardBgs": [
+   [
+    "rgb(248, 237, 227)",
+    1
+   ]
+  ],
+  "grids": [
+   [
+    "3col gap 10px/10px",
+    1
+   ]
+  ],
+  "flexGaps": [
+   [
+    "0px",
+    34
+   ],
+   [
+    "20px",
+    19
+   ],
+   [
+    "10px",
+    16
+   ],
+   [
+    "5px",
+    9
+   ],
+   [
+    "50px",
+    5
+   ],
+   [
+    "30px",
+    4
+   ],
+   [
+    "200px",
+    1
+   ],
+   [
+    "70px",
+    1
+   ]
+  ],
+  "bgByArea": [
+   [
+    "rgb(248, 237, 227)",
+    "54%"
+   ],
+   [
+    "rgb(117, 65, 13)",
+    "8%"
+   ],
+   [
+    "rgb(94, 77, 50)",
+    "8%"
+   ],
+   [
+    "rgb(36, 25, 24)",
+    "8%"
+   ],
+   [
+    "rgb(38, 38, 14)",
+    "8%"
+   ],
+   [
+    "rgb(141, 73, 58)",
+    "6%"
+   ]
+  ],
+  "textColors": [
+   [
+    "rgb(141, 73, 58)",
+    39
+   ],
+   [
+    "rgb(248, 237, 227)",
+    18
+   ],
+   [
+    "rgb(255, 255, 255)",
+    18
+   ],
+   [
+    "rgba(248, 237, 227, 0.7)",
+    4
+   ],
+   [
+    "rgb(0, 0, 238)",
+    1
+   ]
+  ],
+  "linkColors": [
+   [
+    "rgb(248, 237, 227)",
+    18
+   ],
+   [
+    "rgb(141, 73, 58)",
+    17
+   ],
+   [
+    "rgb(255, 255, 255)",
+    4
+   ]
+  ],
+  "counts": {
+   "video": 1,
+   "canvas": 0,
+   "iframe": 1,
+   "svg": 0,
+   "img": 21,
+   "picture": 0,
+   "spline": 0,
+   "lottie": 0
+  },
+  "heroMedia": {
+   "video": true,
+   "canvas": false,
+   "bigImg": 1
+  },
+  "libs": {
+   "gsap": false,
+   "lenis": true,
+   "locomotive": false,
+   "next": false,
+   "framer": true,
+   "webflow": false,
+   "three": false,
+   "astro": false,
+   "nuxt": false,
+   "tailwindish": false
+  },
+  "sticky": 5,
+  "fixed": 4,
+  "snap": 0
+ },
+ "pageHeight": 11747
+}

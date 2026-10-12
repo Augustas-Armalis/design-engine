@@ -1,0 +1,1369 @@
+{
+ "id": "fuchsia",
+ "url": "https://fuchsia.framer.ai/",
+ "date": "2026-10-11",
+ "hero": {
+  "bgImages": [
+   {
+    "n": "Dark Button",
+    "r": [
+     1181,
+     40,
+     114,
+     55
+    ],
+    "bg": "linear-gradient(rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.05) 100%)",
+    "size": "auto",
+    "blend": "normal",
+    "op": "1",
+    "filter": "none"
+   },
+   {
+    "n": "span",
+    "r": [
+     142,
+     281,
+     1156,
+     140
+    ],
+    "bg": "linear-gradient(110deg, rgb(255, 255, 255) 38.4594%, rgb(2, 2, 2) 100%)",
+    "size": "auto",
+    "blend": "normal",
+    "op": "1",
+    "filter": "none"
+   },
+   {
+    "n": "Primary Button",
+    "r": [
+     543,
+     517,
+     170,
+     55
+    ],
+    "bg": "linear-gradient(rgb(139, 85, 255) 0%, rgb(55, 63, 224) 100%)",
+    "size": "auto",
+    "blend": "normal",
+    "op": "1",
+    "filter": "none"
+   },
+   {
+    "n": "Dark Button",
+    "r": [
+     728,
+     517,
+     170,
+     55
+    ],
+    "bg": "linear-gradient(rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.05) 100%)",
+    "size": "auto",
+    "blend": "normal",
+    "op": "1",
+    "filter": "none"
+   },
+   {
+    "n": "madeinframer",
+    "r": [
+     1293,
+     854,
+     11,
+     16
+    ],
+    "bg": "url(\"data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20viewBox%3D%220%200%2011%2016%22%3E%3Cpath%20d%3D%22M%2011%200%20L%2011%205.333%20L%205.5%205.333%20L%200%200%20Z%20M%200%205.333%20L%205.5%205.333",
+    "size": "100% 100%",
+    "blend": "normal",
+    "op": "1",
+    "filter": "none"
+   },
+   {
+    "n": "div",
+    "r": [
+     1314,
+     857,
+     92,
+     11
+    ],
+    "bg": "url(\"data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20viewBox%3D%220%200%2092%2011%22%3E%3Cpath%20d%3D%22M%200%200.958%20L%202.393%200.958%20L%204.92%207.255%20L%205.028%207.255%20L%207.555%200.958%20",
+    "size": "100% 100%",
+    "blend": "normal",
+    "op": "1",
+    "filter": "none"
+   }
+  ],
+  "filters": [
+   {
+    "n": "links",
+    "r": [
+     404,
+     32,
+     629,
+     71
+    ],
+    "filter": "none",
+    "backdrop": "blur(22.7px)",
+    "bg": "rgba(0, 0, 0, 0.05)",
+    "op": "1"
+   },
+   {
+    "n": "Dark Button",
+    "r": [
+     1181,
+     40,
+     114,
+     55
+    ],
+    "filter": "none",
+    "backdrop": "blur(22.7px)",
+    "bg": "rgba(0, 0, 0, 0.05)",
+    "op": "1"
+   },
+   {
+    "n": "with tag",
+    "r": [
+     595,
+     240,
+     250,
+     30
+    ],
+    "filter": "none",
+    "backdrop": "blur(22.7px)",
+    "bg": "rgba(0, 0, 0, 0.05)",
+    "op": "1"
+   },
+   {
+    "n": "new",
+    "r": [
+     598,
+     243,
+     41,
+     24
+    ],
+    "filter": "none",
+    "backdrop": "blur(22.7px)",
+    "bg": "rgba(0, 0, 0, 0.05)",
+    "op": "1"
+   },
+   {
+    "n": "Primary Button",
+    "r": [
+     543,
+     517,
+     170,
+     55
+    ],
+    "filter": "none",
+    "backdrop": "blur(25.8px)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "op": "1"
+   },
+   {
+    "n": "Dark Button",
+    "r": [
+     728,
+     517,
+     170,
+     55
+    ],
+    "filter": "none",
+    "backdrop": "blur(22.7px)",
+    "bg": "rgba(0, 0, 0, 0.05)",
+    "op": "1"
+   },
+   {
+    "n": "image",
+    "r": [
+     145,
+     787,
+     1150,
+     771
+    ],
+    "filter": "none",
+    "backdrop": "blur(35px)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "op": "1"
+   }
+  ],
+  "blends": [],
+  "transforms": [],
+  "perspective": [],
+  "media": [
+   {
+    "tag": "IMG",
+    "n": "div",
+    "r": [
+     0,
+     0,
+     1440,
+     1072
+    ],
+    "src": "https://framerusercontent.com/images/kPSBJ1AWjMPAbETTDlQHQagWV4.png",
+    "fit": "cover",
+    "radius": "0px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": [
+     1440,
+     933
+    ]
+   },
+   {
+    "tag": "IMG",
+    "n": "div",
+    "r": [
+     145,
+     787,
+     1150,
+     771
+    ],
+    "src": "https://framerusercontent.com/images/o9rhIMSIT2LufTy4CmVemCryQ0.png",
+    "fit": "cover",
+    "radius": "0px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": [
+     1150,
+     770
+    ]
+   }
+  ],
+  "svgNoise": 0,
+  "turb": [],
+  "canvas": [],
+  "radii": [
+   "links 629x71 r=100px bg=rgba(0, 0, 0, 0.05) bd=0px rgb(0, 0, 0) sh=rgba(255, 255, 255, 0.18) 0px 4px 30px 0px inset",
+   "Dark Button 114x55 r=10px bg=rgba(0, 0, 0, 0.05) bd=0px rgb(0, 0, 238) sh=rgba(255, 255, 255, 0.18) 0px 4px 20px 0px inset",
+   "with tag 250x30 r=50px bg=rgba(0, 0, 0, 0.05) bd=0px rgb(0, 0, 0) sh=rgba(255, 255, 255, 0.18) 0px 4px 15.9px 0px inset",
+   "new 41x24 r=50px bg=rgba(0, 0, 0, 0.05) bd=0px rgb(0, 0, 0) sh=rgba(255, 255, 255, 0.18) 0px 4px 15.9px 0px inset",
+   "Primary Button 170x55 r=10px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 238) sh=rgba(255, 255, 255, 0.64) 0px 4px 20px 0px inset",
+   "Dark Button 170x55 r=10px bg=rgba(0, 0, 0, 0.05) bd=0px rgb(0, 0, 238) sh=rgba(255, 255, 255, 0.18) 0px 4px 20px 0px inset",
+   "image 1150x771 r=30px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 0) sh=none",
+   "Light 142x36 r=10px bg=rgb(255, 255, 255) bd=0px rgb(0, 0, 238) sh=rgba(0, 0, 0, 0.26) 0px 0.636953px 1.14652px -1.125px, rgba(0, 0, 0, 0.24) 0px 1.9316px 3.47689px -2.25px, rgba(0, 0, 0, 0.192) 0px 5.10612p"
+  ],
+  "texts": [
+   "Home | Inter 16px/19.2px w400 ls=normal c=rgb(255, 255, 255) tt=none @434,58,45,19",
+   "How it works | Inter 16px/19.2px w400 ls=normal c=rgba(255, 255, 255, 0.5) tt=none @509,58,98,19",
+   "Features | Inter 16px/19.2px w400 ls=normal c=rgba(255, 255, 255, 0.5) tt=none @637,58,66,19",
+   "Integrations | Inter 16px/19.2px w400 ls=normal c=rgba(255, 255, 255, 0.5) tt=none @733,58,90,19",
+   "Pricings | Inter 16px/19.2px w400 ls=normal c=rgba(255, 255, 255, 0.5) tt=none @853,58,61,19",
+   "Contact | Inter 16px/19.2px w400 ls=normal c=rgba(255, 255, 255, 0.5) tt=none @944,58,59,19",
+   "Try Demo | Inter 16px/19.2px w500 ls=-0.32px c=rgb(255, 255, 255) tt=none @1202,58,72,19",
+   "New | Inter 10px/12px w300 ls=normal c=rgb(255, 255, 255) tt=none @608,249,21,12",
+   "Fuchsia Automations is now live! 🎉 | Inter 12px/16.8px w300 ls=normal c=rgb(255, 255, 255) tt=none @642,248,200,17",
+   "Uncover Proven Tactics to Drive Your Audience's Pu | Inter 56px/67.2px w500 ls=-2.24px c=rgb(0, 0, 0) tt=none @142,281,1156,140",
+   "A | Inter 14px/22.4px w400 ls=normal c=rgba(255, 255, 255, 0.75) tt=none @397,432,10,22",
+   "u | Inter 14px/22.4px w400 ls=normal c=rgba(255, 255, 255, 0.75) tt=none @406,432,8,22",
+   "t | Inter 14px/22.4px w400 ls=normal c=rgba(255, 255, 255, 0.75) tt=none @415,432,5,22",
+   "o | Inter 14px/22.4px w400 ls=normal c=rgba(255, 255, 255, 0.75) tt=none @419,432,8,22",
+   "m | Inter 14px/22.4px w400 ls=normal c=rgba(255, 255, 255, 0.75) tt=none @428,432,12,22",
+   "a | Inter 14px/22.4px w400 ls=normal c=rgba(255, 255, 255, 0.75) tt=none @440,432,8,22",
+   "t | Inter 14px/22.4px w400 ls=normal c=rgba(255, 255, 255, 0.75) tt=none @448,432,5,22",
+   "e | Inter 14px/22.4px w400 ls=normal c=rgba(255, 255, 255, 0.75) tt=none @452,432,8,22",
+   "y | Inter 14px/22.4px w400 ls=normal c=rgba(255, 255, 255, 0.75) tt=none @465,432,8,22",
+   "o | Inter 14px/22.4px w400 ls=normal c=rgba(255, 255, 255, 0.75) tt=none @472,432,8,22",
+   "u | Inter 14px/22.4px w400 ls=normal c=rgba(255, 255, 255, 0.75) tt=none @481,432,8,22",
+   "r | Inter 14px/22.4px w400 ls=normal c=rgba(255, 255, 255, 0.75) tt=none @489,432,5,22",
+   "w | Inter 14px/22.4px w400 ls=normal c=rgba(255, 255, 255, 0.75) tt=none @498,432,11,22",
+   "o | Inter 14px/22.4px w400 ls=normal c=rgba(255, 255, 255, 0.75) tt=none @510,432,8,22",
+   "r | Inter 14px/22.4px w400 ls=normal c=rgba(255, 255, 255, 0.75) tt=none @518,432,5,22",
+   "k | Inter 14px/22.4px w400 ls=normal c=rgba(255, 255, 255, 0.75) tt=none @524,432,8,22",
+   "f | Inter 14px/22.4px w400 ls=normal c=rgba(255, 255, 255, 0.75) tt=none @531,432,5,22",
+   "l | Inter 14px/22.4px w400 ls=normal c=rgba(255, 255, 255, 0.75) tt=none @536,432,3,22",
+   "o | Inter 14px/22.4px w400 ls=normal c=rgba(255, 255, 255, 0.75) tt=none @540,432,8,22",
+   "w | Inter 14px/22.4px w400 ls=normal c=rgba(255, 255, 255, 0.75) tt=none @548,432,11,22",
+   "b | Inter 14px/22.4px w400 ls=normal c=rgba(255, 255, 255, 0.75) tt=none @564,432,9,22",
+   "y | Inter 14px/22.4px w400 ls=normal c=rgba(255, 255, 255, 0.75) tt=none @572,432,8,22",
+   "s | Inter 14px/22.4px w400 ls=normal c=rgba(255, 255, 255, 0.75) tt=none @584,432,7,22",
+   "c | Inter 14px/22.4px w400 ls=normal c=rgba(255, 255, 255, 0.75) tt=none @591,432,8,22",
+   "h | Inter 14px/22.4px w400 ls=normal c=rgba(255, 255, 255, 0.75) tt=none @599,432,8,22",
+   "e | Inter 14px/22.4px w400 ls=normal c=rgba(255, 255, 255, 0.75) tt=none @608,432,8,22",
+   "d | Inter 14px/22.4px w400 ls=normal c=rgba(255, 255, 255, 0.75) tt=none @616,432,9,22",
+   "u | Inter 14px/22.4px w400 ls=normal c=rgba(255, 255, 255, 0.75) tt=none @624,432,8,22",
+   "l | Inter 14px/22.4px w400 ls=normal c=rgba(255, 255, 255, 0.75) tt=none @633,432,3,22",
+   "i | Inter 14px/22.4px w400 ls=normal c=rgba(255, 255, 255, 0.75) tt=none @636,432,3,22",
+   "n | Inter 14px/22.4px w400 ls=normal c=rgba(255, 255, 255, 0.75) tt=none @639,432,8,22",
+   "g | Inter 14px/22.4px w400 ls=normal c=rgba(255, 255, 255, 0.75) tt=none @648,432,9,22",
+   "p | Inter 14px/22.4px w400 ls=normal c=rgba(255, 255, 255, 0.75) tt=none @660,432,9,22",
+   "o | Inter 14px/22.4px w400 ls=normal c=rgba(255, 255, 255, 0.75) tt=none @669,432,8,22",
+   "s | Inter 14px/22.4px w400 ls=normal c=rgba(255, 255, 255, 0.75) tt=none @677,432,7,22",
+   "t | Inter 14px/22.4px w400 ls=normal c=rgba(255, 255, 255, 0.75) tt=none @685,432,5,22",
+   "s | Inter 14px/22.4px w400 ls=normal c=rgba(255, 255, 255, 0.75) tt=none @689,432,7,22",
+   ", | Inter 14px/22.4px w400 ls=normal c=rgba(255, 255, 255, 0.75) tt=none @697,432,4,22",
+   "s | Inter 14px/22.4px w400 ls=normal c=rgba(255, 255, 255, 0.75) tt=none @705,432,7,22",
+   "e | Inter 14px/22.4px w400 ls=normal c=rgba(255, 255, 255, 0.75) tt=none @712,432,8,22",
+   "n | Inter 14px/22.4px w400 ls=normal c=rgba(255, 255, 255, 0.75) tt=none @720,432,8,22",
+   "d | Inter 14px/22.4px w400 ls=normal c=rgba(255, 255, 255, 0.75) tt=none @728,432,9,22",
+   "i | Inter 14px/22.4px w400 ls=normal c=rgba(255, 255, 255, 0.75) tt=none @737,432,3,22",
+   "n | Inter 14px/22.4px w400 ls=normal c=rgba(255, 255, 255, 0.75) tt=none @740,432,8,22",
+   "g | Inter 14px/22.4px w400 ls=normal c=rgba(255, 255, 255, 0.75) tt=none @749,432,9,22",
+   "c | Inter 14px/22.4px w400 ls=normal c=rgba(255, 255, 255, 0.75) tt=none @761,432,8,22",
+   "o | Inter 14px/22.4px w400 ls=normal c=rgba(255, 255, 255, 0.75) tt=none @769,432,8,22",
+   "l | Inter 14px/22.4px w400 ls=normal c=rgba(255, 255, 255, 0.75) tt=none @778,432,3,22",
+   "d | Inter 14px/22.4px w400 ls=normal c=rgba(255, 255, 255, 0.75) tt=none @781,432,9,22",
+   "D | Inter 14px/22.4px w400 ls=normal c=rgba(255, 255, 255, 0.75) tt=none @794,432,10,22"
+  ],
+  "buttons": [
+   {
+    "t": "Home",
+    "r": [
+     434,
+     58,
+     45,
+     19
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "How it works",
+    "r": [
+     509,
+     58,
+     98,
+     19
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "Features",
+    "r": [
+     637,
+     58,
+     66,
+     19
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "Integrations",
+    "r": [
+     733,
+     58,
+     90,
+     19
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "Pricings",
+    "r": [
+     853,
+     58,
+     61,
+     19
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "Contact",
+    "r": [
+     944,
+     58,
+     59,
+     19
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "Try Demo",
+    "r": [
+     1181,
+     40,
+     114,
+     55
+    ],
+    "bg": "rgba(0, 0, 0, 0.05)",
+    "bgi": "linear-gradient(rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.05) 100%)",
+    "radius": "10px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "rgba(255, 255, 255, 0.18) 0px 4px 20px 0px inset",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "Get started",
+    "r": [
+     543,
+     517,
+     170,
+     55
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "linear-gradient(rgb(139, 85, 255) 0%, rgb(55, 63, 224) 100%)",
+    "radius": "10px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "rgba(255, 255, 255, 0.64) 0px 4px 20px 0px inset",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "Learn more",
+    "r": [
+     728,
+     517,
+     170,
+     55
+    ],
+    "bg": "rgba(0, 0, 0, 0.05)",
+    "bgi": "linear-gradient(rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.05) 100%)",
+    "radius": "10px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "rgba(255, 255, 255, 0.18) 0px 4px 20px 0px inset",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   }
+  ],
+  "fonts": [
+   "Inter 400",
+   "Inter 500",
+   "Inter 300",
+   "Inter Placeholder normal"
+  ],
+  "appear": "{\"1q8lat0\":{\"default\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":-30},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"delay\":0,\"duration\":0.5,\"ease\":[0.44,0,0.56,1],\"type\":\"tween\"},\"x\":0,\"y\":0},\"transformTemplate\":\"translateX(-50%) __Appear_Animation_Transform__\"}},\"1c1tkof\":{\"default\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":20},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"delay\":0.1,\"duration\":0.5,\"ease\":[0.44,0,0.56,1],\"type\":\"tween\"},\"x\":0,\"y\":0}},\"f9ixif\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":20},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"delay\":0.1,\"duration\":0.5,\"ease\":[0.44,0,0.56,1],\"type\":\"tween\"},\"x\":0,\"y\":0}},\"wnz1vk\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":20},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"delay\":0.1,\"duration\":0.5,\"ease\":[0.44,0,0.56,1],\"type\":\"tween\"},\"x\":0,\"y\":0}}},\"1miam1q\":{\"default\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":30},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"delay\":0.4,\"duration\":0.7,\"ease\":[0.44,0,0.56,1],\"type\":\"tween\"},\"x\":0,\"y\":0}}},\"uw6001\":{\"default\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":30},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"delay\":0.9,\"duration\":0.5,\"ease\":[0.44,0,0.56,1],\"type\":\"tween\"},\"x\":0,\"y\":0}},\"f9ixif\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":30},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"delay\":0.9,\"duration\":0.5,\"ease\":[0.44,0,0.56,1],\"type\":\"tween\"},\"x\":0,\"y\":0}},\"wnz1vk\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":30},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"delay\":0.9,\"duration\":0.5,\"ease\":[0.44,0,0.56,1],\"type\":\"tween\"},\"x\":0,\"y\":0}}},\"wgojim\":{\"default\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":30},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"delay\":1.1,\"duration\":0.5,\"ease\":[0.44,0,0.56,1],\"type\":\"tween\"},\"x\":0,\"y\":0}},\"f9ixif\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":30},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"delay\":1.1,\"duration\":0.5,\"ease\":[0.44,0,0.56,1],\"type\":\"tween\"},\"x\":0,\"y\":0}},\"wnz1vk\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":30},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"delay\":1.1,\"duration\":0.5,\"ease\":[0.44,0,0.56,1],\"type\":\"tween\"},\"x\":0,\"y\":0}}},\"1x7k1dk\":{\"default\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":20},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"delay\":1.3,\"duration\":0.5,\"ease\":[0.44,0,0.56,1],\"type\":\"tween\"},\"x\":0,\"y\":0}},\"f9ixif\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":20},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"delay\":1.3,\"duration\":0.5,\"ease\":[0.44,0,0.56,1],\"type\":\"tween\"},\"x\":0,\"y\":0}},\"wnz1vk\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":20},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"delay\":1.3,\"duration\":0.5,\"ease\":[0.44,0,0.56,1],\"type\":\"tween\"},\"x\":0,\"y\":0}}},\"1cygvhl\":{\"default\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":50},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"delay\":1.7,\"duration\":0.7,\"ease\":[0.44,0,0.56,1],\"type\":\"tween\"},\"x\":0,\"y\":0}}}}",
+  "anims": [
+   {
+    "name": "Animation",
+    "tgt": "div",
+    "dur": 500,
+    "delay": 0,
+    "ease": "cubic-bezier(0.44, 0, 0.56, 1)",
+    "iter": 1,
+    "kf": "[{\"offset\":null,\"easing\":\"linear\",\"composite\":\"auto\",\"opacity\":\"0.001\",\"computedOffset\":0},{\"offset\":null,\"easing\":\"linear\",\"composite\":\"auto\",\"opacity\":\"1\",\"computedOffset\":1}]"
+   },
+   {
+    "name": "Animation",
+    "tgt": "div",
+    "dur": 500,
+    "delay": 0,
+    "ease": "cubic-bezier(0.44, 0, 0.56, 1)",
+    "iter": 1,
+    "kf": "[{\"offset\":null,\"easing\":\"linear\",\"composite\":\"auto\",\"transform\":\"translateX(-50%) translateY(-30px)\",\"computedOffset\":0},{\"offset\":null,\"easing\":\"linear\",\"composite\":\"auto\",\"transform\":\"translateX(-50%)\",\"computedOffset\":1}]"
+   },
+   {
+    "name": "Animation",
+    "tgt": "div",
+    "dur": 500,
+    "delay": 100,
+    "ease": "cubic-bezier(0.44, 0, 0.56, 1)",
+    "iter": 1,
+    "kf": "[{\"offset\":null,\"easing\":\"linear\",\"composite\":\"auto\",\"opacity\":\"0.001\",\"computedOffset\":0},{\"offset\":null,\"easing\":\"linear\",\"composite\":\"auto\",\"opacity\":\"1\",\"computedOffset\":1}]"
+   },
+   {
+    "name": "Animation",
+    "tgt": "div",
+    "dur": 500,
+    "delay": 100,
+    "ease": "cubic-bezier(0.44, 0, 0.56, 1)",
+    "iter": 1,
+    "kf": "[{\"offset\":null,\"easing\":\"linear\",\"composite\":\"auto\",\"transform\":\"translateY(20px)\",\"computedOffset\":0},{\"offset\":null,\"easing\":\"linear\",\"composite\":\"auto\",\"transform\":\"none\",\"computedOffset\":1}]"
+   },
+   {
+    "name": "Animation",
+    "tgt": "ul",
+    "dur": 36980,
+    "delay": 0,
+    "ease": "linear",
+    "iter": null,
+    "kf": "[{\"offset\":null,\"easing\":\"linear\",\"composite\":\"auto\",\"transform\":\"translateX(0px)\",\"computedOffset\":0},{\"offset\":null,\"easing\":\"linear\",\"composite\":\"auto\",\"transform\":\"translateX(-3698px)\",\"computedOffset\":1}]"
+   }
+  ]
+ },
+ "hover": [
+  {
+   "n": "P",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgi": "none",
+   "sh": "none",
+   "t": "none",
+   "r": "0px"
+  },
+  {
+   "n": "DIV",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgi": "none",
+   "sh": "none",
+   "t": "none",
+   "r": "0px"
+  },
+  {
+   "n": "A",
+   "bg": "rgba(0, 0, 0, 0.05)",
+   "bgi": "linear-gradient(rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.05) 100%)",
+   "sh": "rgba(255, 255, 255, 0.18) 0px 10px 30px 0px inset",
+   "t": "none",
+   "r": "10px"
+  },
+  {
+   "n": "DIV",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgi": "none",
+   "sh": "none",
+   "t": "none",
+   "r": "0px"
+  }
+ ],
+ "page": {
+  "vw": 1440,
+  "pageHeight": 8584,
+  "title": "Fuchsia",
+  "htmlBg": "rgba(0, 0, 0, 0)",
+  "bodyBg": "rgb(4, 0, 17)",
+  "bodyColor": "rgb(0, 0, 0)",
+  "colorScheme": "normal",
+  "h1": {
+   "text": "Uncover Proven Tactics to Drive Your Audience's Purchasing Behavior",
+   "family": "Inter, \"Inter Placeholder\", sans-serif",
+   "size": "56px",
+   "weight": "500",
+   "lh": "67.2px",
+   "ls": "-2.24px",
+   "color": "rgb(0, 0, 0)",
+   "tt": "none",
+   "align": "center",
+   "w": 1150,
+   "h": 134,
+   "top": 284,
+   "left": 145,
+   "tag": "h1",
+   "balance": "wrap"
+  },
+  "largestHeroText": {
+   "text": "Uncover Proven Tactics to Drive Your Audience's Purchasing Behavior",
+   "family": "Inter, \"Inter Placeholder\", sans-serif",
+   "size": "56px",
+   "weight": "500",
+   "lh": "67.2px",
+   "ls": "-2.24px",
+   "color": "rgb(0, 0, 0)",
+   "tt": "none",
+   "align": "center",
+   "w": 1156,
+   "h": 140,
+   "top": 281,
+   "left": 142,
+   "tag": "span",
+   "balance": "wrap"
+  },
+  "h2": [
+   {
+    "text": "It takes less than a minute to create automations",
+    "family": "Inter, \"Inter Placeholder\", sans-serif",
+    "size": "36px",
+    "weight": "500",
+    "lh": "36px",
+    "ls": "-1.08px",
+    "color": "rgba(255, 255, 255, 0.75)",
+    "tt": "none",
+    "align": "start",
+    "w": 350,
+    "h": 108,
+    "top": 2197,
+    "left": 145,
+    "tag": "h2",
+    "balance": "wrap"
+   },
+   {
+    "text": "The best way to use Fuchsia automation",
+    "family": "Inter, \"Inter Placeholder\", sans-serif",
+    "size": "36px",
+    "weight": "500",
+    "lh": "36px",
+    "ls": "-1.08px",
+    "color": "rgb(0, 0, 0)",
+    "tt": "none",
+    "align": "center",
+    "w": 350,
+    "h": 72,
+    "top": 3131,
+    "left": 545,
+    "tag": "h2",
+    "balance": "wrap"
+   },
+   {
+    "text": "Connect with the best stacks & boost your business performance",
+    "family": "Inter, \"Inter Placeholder\", sans-serif",
+    "size": "36px",
+    "weight": "500",
+    "lh": "36px",
+    "ls": "-1.08px",
+    "color": "rgb(0, 0, 0)",
+    "tt": "none",
+    "align": "center",
+    "w": 620,
+    "h": 72,
+    "top": 3831,
+    "left": 410,
+    "tag": "h2",
+    "balance": "wrap"
+   },
+   {
+    "text": "Fuchsia Pricing Plans",
+    "family": "Inter, \"Inter Placeholder\", sans-serif",
+    "size": "36px",
+    "weight": "500",
+    "lh": "36px",
+    "ls": "-1.08px",
+    "color": "rgb(0, 0, 0)",
+    "tt": "none",
+    "align": "center",
+    "w": 1150,
+    "h": 36,
+    "top": 4733,
+    "left": 145,
+    "tag": "h2",
+    "balance": "wrap"
+   }
+  ],
+  "h3": [
+   {
+    "text": "Re-Write with Smart AI Integration",
+    "family": "Inter, \"Inter Placeholder\", sans-serif",
+    "size": "20px",
+    "weight": "500",
+    "lh": "20px",
+    "ls": "normal",
+    "color": "rgba(255, 255, 255, 0.75)",
+    "tt": "none",
+    "align": "start",
+    "w": 264,
+    "h": 40,
+    "top": 3445,
+    "left": 185,
+    "tag": "h3",
+    "balance": "wrap"
+   },
+   {
+    "text": "Analyse & Track your Performance with Analytics",
+    "family": "Inter, \"Inter Placeholder\", sans-serif",
+    "size": "20px",
+    "weight": "500",
+    "lh": "20px",
+    "ls": "normal",
+    "color": "rgba(255, 255, 255, 0.75)",
+    "tt": "none",
+    "align": "start",
+    "w": 264,
+    "h": 40,
+    "top": 3445,
+    "left": 573,
+    "tag": "h3",
+    "balance": "wrap"
+   }
+  ],
+  "p": [
+   {
+    "text": "Automate your workflow by scheduling posts, sending cold DMs, and moni",
+    "family": "Inter, sans-serif",
+    "size": "14px",
+    "weight": "400",
+    "lh": "22.4px",
+    "ls": "normal",
+    "color": "rgba(255, 255, 255, 0.75)",
+    "tt": "none",
+    "align": "center",
+    "w": 650,
+    "h": 45,
+    "top": 432,
+    "left": 395,
+    "tag": "p",
+    "balance": "wrap"
+   },
+   {
+    "text": "See how you can setup a account within a few seconds and start your au",
+    "family": "Inter, sans-serif",
+    "size": "14px",
+    "weight": "400",
+    "lh": "22.4px",
+    "ls": "normal",
+    "color": "rgba(255, 255, 255, 0.75)",
+    "tt": "none",
+    "align": "left",
+    "w": 380,
+    "h": 45,
+    "top": 2323,
+    "left": 145,
+    "tag": "p",
+    "balance": "wrap"
+   },
+   {
+    "text": "Start automation and track your business improvement with Fuchsia affo",
+    "family": "Inter, sans-serif",
+    "size": "14px",
+    "weight": "400",
+    "lh": "22.4px",
+    "ls": "normal",
+    "color": "rgba(255, 255, 255, 0.5)",
+    "tt": "none",
+    "align": "center",
+    "w": 1150,
+    "h": 22,
+    "top": 4789,
+    "left": 145,
+    "tag": "p",
+    "balance": "wrap"
+   }
+  ],
+  "heroP": null,
+  "typeScale": [
+   [
+    "Inter|14|400",
+    2241
+   ],
+   [
+    "Inter|20|500",
+    389
+   ],
+   [
+    "Inter|12|300",
+    262
+   ],
+   [
+    "Inter|36|500",
+    259
+   ],
+   [
+    "Inter|16|400",
+    208
+   ],
+   [
+    "Inter|16|500",
+    85
+   ],
+   [
+    "Inter|56|500",
+    82
+   ],
+   [
+    "Inter|10|300",
+    3
+   ]
+  ],
+  "fontFamiliesUsed": [
+   [
+    "Inter",
+    699
+   ]
+  ],
+  "sizesDistinct": [
+   10,
+   12,
+   14,
+   16,
+   20,
+   36,
+   56
+  ],
+  "lsHist": [
+   [
+    "normal",
+    679
+   ],
+   [
+    "-0.020em",
+    8
+   ],
+   [
+    "-0.030em",
+    8
+   ],
+   [
+    "-0.040em",
+    4
+   ]
+  ],
+  "nav": {
+   "tag": "NAV",
+   "h": 71,
+   "outerH": 71,
+   "top": 32,
+   "w": 1440,
+   "position": "fixed",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgHeader": "rgba(0, 0, 0, 0)",
+   "backdrop": "none",
+   "bb": "0px none rgb(0, 0, 0)",
+   "shadow": "none",
+   "contentLeft": 434,
+   "contentRight": 1295,
+   "nLinks": 7,
+   "linkTexts": [
+    "Home",
+    "How it works",
+    "Features",
+    "Integrations",
+    "Pricings",
+    "Contact",
+    "Try Demo"
+   ],
+   "linkTypo": [
+    {
+     "text": "Home",
+     "family": "sans-serif",
+     "size": "12px",
+     "weight": "400",
+     "lh": "normal",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "tt": "none",
+     "align": "start",
+     "w": 45,
+     "h": 19,
+     "top": 58,
+     "left": 434,
+     "tag": "a",
+     "balance": "wrap"
+    },
+    {
+     "text": "How it works",
+     "family": "sans-serif",
+     "size": "12px",
+     "weight": "400",
+     "lh": "normal",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "tt": "none",
+     "align": "start",
+     "w": 98,
+     "h": 19,
+     "top": 58,
+     "left": 509,
+     "tag": "a",
+     "balance": "wrap"
+    },
+    {
+     "text": "Features",
+     "family": "sans-serif",
+     "size": "12px",
+     "weight": "400",
+     "lh": "normal",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "tt": "none",
+     "align": "start",
+     "w": 66,
+     "h": 19,
+     "top": 58,
+     "left": 637,
+     "tag": "a",
+     "balance": "wrap"
+    }
+   ],
+   "hasLogoSvgOrImg": true,
+   "px": "20px/20px"
+  },
+  "ctas": [],
+  "chain": [
+   {
+    "tag": "h1.framer-text",
+    "w": 1150,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "block",
+    "ta": "center"
+   },
+   {
+    "tag": "div.framer-1miam1q",
+    "w": 1150,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "section.framer-1v1e9xn",
+    "w": 1150,
+    "maxW": "1150px",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "main.framer-1irzbln",
+    "w": 1440,
+    "maxW": "none",
+    "pl": "20px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "div.framer-Nln18",
+    "w": 1440,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "div",
+    "w": 1440,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "block",
+    "ta": "start"
+   },
+   {
+    "tag": "body.framer-body-augiA20Il-fr",
+    "w": 1440,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "block",
+    "ta": "start"
+   }
+  ],
+  "sections": [
+   {
+    "cls": "framer-1v1e9xn",
+    "tag": "section",
+    "top": 0,
+    "h": 1558,
+    "pt": "240px",
+    "pb": "0px",
+    "effPt": 248,
+    "effPb": 0,
+    "contentW": 1156,
+    "contentL": 142,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "Uncover Proven Tactics to Drive Your Audience's Pu",
+    "hSize": "56px",
+    "hAlign": "center"
+   },
+   {
+    "cls": "framer-1w5irnk",
+    "tag": "section",
+    "top": 1558,
+    "h": 349,
+    "pt": "180px",
+    "pb": "0px",
+    "effPt": 179,
+    "effPb": 38,
+    "contentW": 7296,
+    "contentL": -893,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "",
+    "hSize": null,
+    "hAlign": null
+   },
+   {
+    "cls": "framer-1sykrax",
+    "tag": "section",
+    "top": 1908,
+    "h": 788,
+    "pt": "180px",
+    "pb": "180px",
+    "effPt": 180,
+    "effPb": 180,
+    "contentW": 1155,
+    "contentL": 140,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "It takes less than a minute to create automations",
+    "hSize": "36px",
+    "hAlign": "start"
+   },
+   {
+    "cls": "framer-1msbnyh",
+    "tag": "section",
+    "top": 2696,
+    "h": 904,
+    "pt": "435px",
+    "pb": "0px",
+    "effPt": 0,
+    "effPb": 50,
+    "contentW": 1150,
+    "contentL": 145,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "The best way to use Fuchsia automation",
+    "hSize": "36px",
+    "hAlign": "center"
+   },
+   {
+    "cls": "framer-vqlzqq",
+    "tag": "section",
+    "top": 3599,
+    "h": 902,
+    "pt": "180px",
+    "pb": "180px",
+    "effPt": 188,
+    "effPb": 230,
+    "contentW": 1150,
+    "contentL": 145,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "Connect with the best stacks & boost your business",
+    "hSize": "36px",
+    "hAlign": "center"
+   },
+   {
+    "cls": "framer-p8vuac",
+    "tag": "section",
+    "top": 4502,
+    "h": 943,
+    "pt": "180px",
+    "pb": "0px",
+    "effPt": 0,
+    "effPb": 37,
+    "contentW": 1400,
+    "contentL": 20,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "Fuchsia Pricing Plans",
+    "hSize": "36px",
+    "hAlign": "center"
+   },
+   {
+    "cls": "framer-1ppq4dz",
+    "tag": "section",
+    "top": 5445,
+    "h": 955,
+    "pt": "180px",
+    "pb": "0px",
+    "effPt": 188,
+    "effPb": 30,
+    "contentW": 1150,
+    "contentL": 145,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "What Our Customers Say",
+    "hSize": "36px",
+    "hAlign": "center"
+   },
+   {
+    "cls": "framer-1gt8zbo",
+    "tag": "section",
+    "top": 6400,
+    "h": 1164,
+    "pt": "180px",
+    "pb": "180px",
+    "effPt": 188,
+    "effPb": 221,
+    "contentW": 1150,
+    "contentL": 145,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "Frequently Asked Questions",
+    "hSize": "36px",
+    "hAlign": "center"
+   },
+   {
+    "cls": "framer-4ace0e",
+    "tag": "section",
+    "top": 7565,
+    "h": 650,
+    "pt": "435px",
+    "pb": "0px",
+    "effPt": 0,
+    "effPb": -24,
+    "contentW": 1150,
+    "contentL": 145,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "Ready to dive in? Start your journey today",
+    "hSize": "36px",
+    "hAlign": "center"
+   },
+   {
+    "cls": "framer-2cvRn",
+    "tag": "footer",
+    "top": 8315,
+    "h": 269,
+    "pt": "10px",
+    "pb": "10px",
+    "effPt": 70,
+    "effPb": 72,
+    "contentW": 1150,
+    "contentL": 145,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "",
+    "hSize": null,
+    "hAlign": null
+   }
+  ],
+  "radiusAll": [
+   [
+    "15px",
+    22
+   ],
+   [
+    "100px",
+    19
+   ],
+   [
+    "50px",
+    10
+   ],
+   [
+    "10px",
+    9
+   ],
+   [
+    "25px",
+    3
+   ],
+   [
+    "30px",
+    1
+   ],
+   [
+    "20px",
+    1
+   ]
+  ],
+  "radiusCards": [
+   [
+    "15px",
+    22
+   ],
+   [
+    "25px",
+    3
+   ]
+  ],
+  "radiusMedia": [
+   [
+    "100px",
+    6
+   ]
+  ],
+  "radiusInputs": [],
+  "shadows": [
+   [
+    "rgba(255, 255, 255, 0.1) 0px 6px 25px 0px inset",
+    20
+   ],
+   [
+    "rgba(255, 255, 255, 0.18) 0px 4px 15.9px 0px inset",
+    8
+   ],
+   [
+    "rgba(255, 255, 255, 0.18) 0px 4px 20px 0px inset",
+    4
+   ],
+   [
+    "rgba(255, 255, 255, 0.64) 0px 4px 20px 0px inset",
+    4
+   ],
+   [
+    "rgba(255, 255, 255, 0.18) 0px 4px 30px 0px inset",
+    1
+   ],
+   [
+    "rgba(255, 255, 255, 0.18) 0px 6px 24px 0px inset",
+    1
+   ]
+  ],
+  "borders": [],
+  "cardBgs": [
+   [
+    "rgb(13, 8, 29)",
+    25
+   ]
+  ],
+  "grids": [
+   [
+    "4col gap 10px/10px",
+    1
+   ],
+   [
+    "3col gap 15px/15px",
+    1
+   ]
+  ],
+  "flexGaps": [
+   [
+    "0px",
+    61
+   ],
+   [
+    "10px",
+    19
+   ],
+   [
+    "20px",
+    12
+   ],
+   [
+    "50px",
+    12
+   ],
+   [
+    "3px",
+    7
+   ],
+   [
+    "30px",
+    5
+   ],
+   [
+    "70px",
+    4
+   ],
+   [
+    "15px",
+    3
+   ]
+  ],
+  "bgByArea": [
+   [
+    "rgb(4, 0, 17)",
+    "47%"
+   ],
+   [
+    "rgb(13, 8, 29)",
+    "23%"
+   ],
+   [
+    "rgb(255, 255, 255)",
+    "0%"
+   ]
+  ],
+  "textColors": [
+   [
+    "rgba(255, 255, 255, 0.5)",
+    353
+   ],
+   [
+    "rgba(255, 255, 255, 0.75)",
+    291
+   ],
+   [
+    "rgb(255, 255, 255)",
+    32
+   ],
+   [
+    "rgb(0, 0, 0)",
+    23
+   ]
+  ],
+  "linkColors": [
+   [
+    "rgba(255, 255, 255, 0.5)",
+    11
+   ],
+   [
+    "rgb(255, 255, 255)",
+    10
+   ]
+  ],
+  "counts": {
+   "video": 0,
+   "canvas": 0,
+   "iframe": 0,
+   "svg": 6,
+   "img": 80,
+   "picture": 0,
+   "spline": 0,
+   "lottie": 0
+  },
+  "heroMedia": {
+   "video": false,
+   "canvas": false,
+   "bigImg": 2
+  },
+  "libs": {
+   "gsap": false,
+   "lenis": true,
+   "locomotive": false,
+   "next": false,
+   "framer": true,
+   "webflow": false,
+   "three": false,
+   "astro": false,
+   "nuxt": false,
+   "tailwindish": false
+  },
+  "sticky": 0,
+  "fixed": 2,
+  "snap": 0
+ },
+ "pageHeight": 8584
+}

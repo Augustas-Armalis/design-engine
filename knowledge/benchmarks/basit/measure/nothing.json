@@ -1,0 +1,1132 @@
+{
+ "id": "nothing",
+ "url": "https://nothingdesignstudio.framer.website/",
+ "date": "2026-10-11",
+ "hero": {
+  "bgImages": [
+   {
+    "n": "madeinframer",
+    "r": [
+     1293,
+     854,
+     11,
+     16
+    ],
+    "bg": "url(\"data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20viewBox%3D%220%200%2011%2016%22%3E%3Cpath%20d%3D%22M%2011%200%20L%2011%205.333%20L%205.5%205.333%20L%200%200%20Z%20M%200%205.333%20L%205.5%205.333",
+    "size": "100% 100%",
+    "blend": "normal",
+    "op": "1",
+    "filter": "none"
+   },
+   {
+    "n": "div",
+    "r": [
+     1314,
+     857,
+     92,
+     11
+    ],
+    "bg": "url(\"data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20viewBox%3D%220%200%2092%2011%22%3E%3Cpath%20d%3D%22M%200%200.958%20L%202.393%200.958%20L%204.92%207.255%20L%205.028%207.255%20L%207.555%200.958%20",
+    "size": "100% 100%",
+    "blend": "normal",
+    "op": "1",
+    "filter": "none"
+   }
+  ],
+  "filters": [],
+  "blends": [
+   {
+    "n": "nav-header",
+    "r": [
+     20,
+     20,
+     1400,
+     28
+    ],
+    "blend": "difference",
+    "op": "1"
+   },
+   {
+    "n": "Variant 1",
+    "r": [
+     20,
+     14,
+     12,
+     12
+    ],
+    "blend": "difference",
+    "op": "0"
+   }
+  ],
+  "transforms": [
+   {
+    "n": "div",
+    "r": [
+     13,
+     55,
+     192,
+     91
+    ],
+    "t": "matrix(0.939693, 0.34202, -0.34202, 0.939693, -97.2344, 0)",
+    "persp": "none",
+    "op": "1"
+   },
+   {
+    "n": "div",
+    "r": [
+     1327,
+     73,
+     90,
+     54
+    ],
+    "t": "matrix(0.939693, 0.34202, -0.34202, 0.939693, -42.9453, 0)",
+    "persp": "none",
+    "op": "1"
+   },
+   {
+    "n": "div",
+    "r": [
+     1146,
+     302,
+     257,
+     115
+    ],
+    "t": "matrix(0.939693, 0.34202, -0.34202, 0.939693, -131.781, 0)",
+    "persp": "none",
+    "op": "1"
+   },
+   {
+    "n": "div",
+    "r": [
+     1148,
+     350,
+     146,
+     74
+    ],
+    "t": "matrix(0.939693, 0.34202, -0.34202, 0.939693, -72.7969, 0)",
+    "persp": "none",
+    "op": "1"
+   },
+   {
+    "n": "div",
+    "r": [
+     13,
+     882,
+     162,
+     80
+    ],
+    "t": "matrix(0.939693, 0.34202, -0.34202, 0.939693, -81.6562, 0)",
+    "persp": "none",
+    "op": "1"
+   },
+   {
+    "n": "div",
+    "r": [
+     209,
+     883,
+     154,
+     77
+    ],
+    "t": "matrix(0.939693, 0.34202, -0.34202, 0.939693, -77.2969, 0)",
+    "persp": "none",
+    "op": "1"
+   },
+   {
+    "n": "div",
+    "r": [
+     1051,
+     895,
+     92,
+     55
+    ],
+    "t": "matrix(0.939693, 0.34202, -0.34202, 0.939693, -44.3516, 0)",
+    "persp": "none",
+    "op": "1"
+   },
+   {
+    "n": "div",
+    "r": [
+     1171,
+     894,
+     95,
+     56
+    ],
+    "t": "matrix(0.939693, 0.34202, -0.34202, 0.939693, -46.0469, 0)",
+    "persp": "none",
+    "op": "1"
+   },
+   {
+    "n": "div",
+    "r": [
+     1295,
+     890,
+     119,
+     65
+    ],
+    "t": "matrix(0.939693, 0.34202, -0.34202, 0.939693, -58.6328, 0)",
+    "persp": "none",
+    "op": "1"
+   }
+  ],
+  "perspective": [],
+  "media": [
+   {
+    "tag": "IMG",
+    "n": "div",
+    "r": [
+     20,
+     672,
+     453,
+     540
+    ],
+    "src": "https://framerusercontent.com/images/nQgPdbUxUoJC2RAgNnIRCINXWM.png?scale-down-to=1024",
+    "fit": "cover",
+    "radius": "0px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": [
+     453,
+     251
+    ]
+   },
+   {
+    "tag": "IMG",
+    "n": "div",
+    "r": [
+     493,
+     672,
+     453,
+     540
+    ],
+    "src": "https://framerusercontent.com/images/L99roZH2ZPk6hsDNPAzGULEu5ew.png?scale-down-to=1024",
+    "fit": "cover",
+    "radius": "0px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": [
+     453,
+     241
+    ]
+   },
+   {
+    "tag": "IMG",
+    "n": "div",
+    "r": [
+     967,
+     672,
+     453,
+     540
+    ],
+    "src": "https://framerusercontent.com/images/MYlW69SnUMfO6gRmwjmeQ5QrkHY.png?scale-down-to=1024",
+    "fit": "cover",
+    "radius": "0px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": [
+     453,
+     241
+    ]
+   },
+   {
+    "tag": "IMG",
+    "n": "div",
+    "r": [
+     20,
+     1232,
+     453,
+     540
+    ],
+    "src": "https://framerusercontent.com/images/IHTVodsNVk3AZZJTOUiVR23l8.png?scale-down-to=1024",
+    "fit": "cover",
+    "radius": "0px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": [
+     453,
+     241
+    ]
+   },
+   {
+    "tag": "IMG",
+    "n": "div",
+    "r": [
+     493,
+     1232,
+     453,
+     540
+    ],
+    "src": "https://framerusercontent.com/images/XOlMnJdtaeaco34LH7jCzxRbo8.png?scale-down-to=1024",
+    "fit": "cover",
+    "radius": "0px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": [
+     453,
+     241
+    ]
+   },
+   {
+    "tag": "IMG",
+    "n": "div",
+    "r": [
+     967,
+     1232,
+     453,
+     540
+    ],
+    "src": "https://framerusercontent.com/images/84Ucv7XvG877WNBWeKg3ZXXyNig.png?scale-down-to=1024",
+    "fit": "cover",
+    "radius": "0px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": [
+     453,
+     241
+    ]
+   }
+  ],
+  "svgNoise": 0,
+  "turb": [],
+  "canvas": [],
+  "radii": [
+   "Variant 1 453x540 r=30px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 238) sh=none",
+   "Variant 1 453x540 r=30px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 238) sh=none",
+   "Variant 1 453x540 r=30px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 238) sh=none",
+   "Light 142x36 r=10px bg=rgb(255, 255, 255) bd=0px rgb(0, 0, 238) sh=rgba(0, 0, 0, 0.26) 0px 0.636953px 1.14652px -1.125px, rgba(0, 0, 0, 0.24) 0px 1.9316px 3.47689px -2.25px, rgba(0, 0, 0, 0.192) 0px 5.10612p"
+  ],
+  "texts": [
+   "[ NOTHING STUDIO] | Inter 20px/26px w400 ls=normal c=rgb(217, 217, 217) tt=none @21,21,194,26",
+   "[ NOTHING STUDIO] | Inter 20px/26px w400 ls=normal c=rgb(217, 217, 217) tt=none @13,55,192,91",
+   "[ MENU ] | Inter 20px/26px w400 ls=normal c=rgb(217, 217, 217) tt=none @1333,21,86,26",
+   "[ MENU ] | Inter 20px/26px w400 ls=normal c=rgb(217, 217, 217) tt=none @1327,73,90,54",
+   "NOTHING | Inter 152px/136.8px w800 ls=-4.56px c=rgb(217, 217, 217) tt=none @376,130,688,137",
+   "DESIGN | Inter 152px/136.8px w800 ls=-4.56px c=rgb(217, 217, 217) tt=none @176,267,550,137",
+   "STUDO | Inter 152px/136.8px w800 ls=-4.56px c=rgb(217, 217, 217) tt=none @746,267,518,137",
+   "We are a creative studio based in Canada, We build | Inter 20px/26px w400 ls=normal c=rgb(217, 217, 217) tt=none @520,474,400,78",
+   "WE ARE NOTHING, BUT SOMETHING ELSE! | Inter 20px/26px w400 ls=normal c=rgb(217, 217, 217) tt=none @20,280,227,52",
+   "We strive for the extraordinary in every project f | Inter 20px/26px w400 ls=normal c=rgb(217, 217, 217) tt=none @300,280,370,78",
+   "HELLO@NOTHING.STUDIO | Inter 20px/26px w400 ls=normal c=rgb(217, 217, 217) tt=none @1155,281,264,26",
+   "HELLO@NOTHING.STUDIO | Inter 20px/26px w400 ls=normal c=rgb(217, 217, 217) tt=none @1146,302,257,115",
+   "+01 123456789 | Inter 20px/26px w400 ls=normal c=rgb(217, 217, 217) tt=none @1155,309,146,26",
+   "+01 123456789 | Inter 20px/26px w400 ls=normal c=rgb(217, 217, 217) tt=none @1148,350,146,74",
+   "NOTHING | Inter 325.601px/293.041px w900 ls=-9.76804px c=rgb(33, 33, 33) tt=none @20,537,1400,275",
+   "PRIVACY POLICY | Inter 20px/26px w400 ls=normal c=rgb(217, 217, 217) tt=none @21,843,163,26",
+   "PRIVACY POLICY | Inter 20px/26px w400 ls=normal c=rgb(217, 217, 217) tt=none @13,882,162,80",
+   "COOKIE POLICY | Inter 20px/26px w400 ls=normal c=rgb(217, 217, 217) tt=none @216,843,155,26",
+   "COOKIE POLICY | Inter 20px/26px w400 ls=normal c=rgb(217, 217, 217) tt=none @209,883,154,77",
+   "TWITTER | Inter 20px/26px w400 ls=normal c=rgb(217, 217, 217) tt=none @1057,843,89,26",
+   "TWITTER | Inter 20px/26px w400 ls=normal c=rgb(217, 217, 217) tt=none @1051,895,92,55",
+   "LINKEDIN | Inter 20px/26px w400 ls=normal c=rgb(217, 217, 217) tt=none @1178,843,92,26",
+   "LINKEDIN | Inter 20px/26px w400 ls=normal c=rgb(217, 217, 217) tt=none @1171,894,95,56",
+   "INSTAGRAM | Inter 20px/26px w400 ls=normal c=rgb(217, 217, 217) tt=none @1302,843,117,26",
+   "INSTAGRAM | Inter 20px/26px w400 ls=normal c=rgb(217, 217, 217) tt=none @1295,890,119,65"
+  ],
+  "buttons": [
+   {
+    "t": "[ NOTHING STUDIO] [ NOTHING STUDIO]",
+    "r": [
+     20,
+     20,
+     196,
+     28
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "ELLOS PROJECT",
+    "r": [
+     20,
+     672,
+     453,
+     540
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "30px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "WILLEY ROOTS",
+    "r": [
+     493,
+     672,
+     453,
+     540
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "30px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "KINETIC CAMPAIGN",
+    "r": [
+     967,
+     672,
+     453,
+     540
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "30px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "+01 123456789 +01 123456789",
+    "r": [
+     1154,
+     308,
+     148,
+     28
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "PRIVACY POLICY PRIVACY POLICY",
+    "r": [
+     20,
+     842,
+     165,
+     28
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "COOKIE POLICY COOKIE POLICY",
+    "r": [
+     215,
+     842,
+     157,
+     28
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "TWITTER TWITTER",
+    "r": [
+     1056,
+     842,
+     91,
+     28
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "LINKEDIN LINKEDIN",
+    "r": [
+     1177,
+     842,
+     94,
+     28
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "INSTAGRAM INSTAGRAM",
+    "r": [
+     1301,
+     842,
+     119,
+     28
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   }
+  ],
+  "fonts": [
+   "Inter 400",
+   "Inter 800",
+   "Inter 600",
+   "Inter 900",
+   "Inter 500",
+   "Inter Placeholder normal"
+  ],
+  "appear": "{\"1vex7av\":{\"default\":{\"initial\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":10,\"x\":0,\"y\":200},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"delay\":0,\"duration\":0.7,\"ease\":[0.44,0,0.56,1],\"type\":\"tween\"},\"x\":0,\"y\":0}},\"1qcjlmm\":{\"initial\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":10,\"x\":0,\"y\":200},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"delay\":0,\"duration\":0.7,\"ease\":[0.44,0,0.56,1],\"type\":\"tween\"},\"x\":0,\"y\":0}},\"14nkb37\":{\"initial\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":10,\"x\":0,\"y\":200},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"delay\":0,\"duration\":0.7,\"ease\":[0.44,0,0.56,1],\"type\":\"tween\"},\"x\":0,\"y\":0}},\"tbaqur\":{\"initial\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":10,\"x\":0,\"y\":200},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"delay\":0,\"duration\":0.7,\"ease\":[0.44,0,0.56,1],\"type\":\"tween\"},\"x\":0,\"y\":0}}},\"181ogjm\":{\"default\":{\"initial\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":10,\"x\":0,\"y\":200},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"delay\":0.2,\"duration\":0.7,\"ease\":[0.44,0,0.56,1],\"type\":\"tween\"},\"x\":0,\"y\":0}},\"1qcjlmm\":{\"initial\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":10,\"x\":0,\"y\":200},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"delay\":0.2,\"duration\":0.7,\"ease\":[0.44,0,0.56,1],\"type\":\"tween\"},\"x\":0,\"y\":0}},\"14nkb37\":{\"initial\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":10,\"x\":0,\"y\":200},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"delay\":0.2,\"duration\":0.7,\"ease\":[0.44,0,0.56,1],\"type\":\"tween\"},\"x\":0,\"y\":0}},\"tbaqur\":{\"initial\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":10,\"x\":0,\"y\":200},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"delay\":0.2,\"duration\":0.7,\"ease\":[0.44,0,0.56,1],\"type\":\"tween\"},\"x\":0,\"y\":0}}},\"1i2461s\":{\"default\":{\"initial\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":10,\"x\":0,\"y\":200},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"delay\":0.4,\"duration\":0.5,\"ease\":[0.44,0,0.56,1],\"type\":\"tween\"},\"x\":0,\"y\":0}},\"1qcjlmm\":{\"initial\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":10,\"x\":0,\"y\":200},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"delay\":0.4,\"duration\":0.5,\"ease\":[0.44,0,0.56,1],\"type\":\"tween\"},\"x\":0,\"y\":0}},\"14nkb37\":{\"initial\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":10,\"x\":0,\"y\":200},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"delay\":0.4,\"duration\":0.5,\"ease\":[0.44,0,0.56,1],\"type\":\"tween\"},\"x\":0,\"y\":0}},\"tbaqur\":{\"initial\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":10,\"x\":0,\"y\":200},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"delay\":0.4,\"duration\":0.5,\"ease\":[0.44,0,0.56,1],\"type\":\"tween\"},\"x\":0,\"y\":0}}},\"e6v1be\":{\"default\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":0},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"delay\":0.6,\"duration\":0.3,\"ease\":[0.44,0,0.56,1],\"type\":\"tween\"},\"x\":0,\"y\":0}},\"1qcjlmm\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":0},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"delay\":0.6,\"duration\":0.3,\"ease\":[0.44,0,0.56,1],\"type\":\"tween\"},\"x\":0,\"y\":0}},\"14nkb37\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":0},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"delay\":0.6,\"duration\":0.3,\"ease\":[0.44,0,0.56,1],\"type\":\"tween\"},\"x\":0,\"y\":0}},\"tbaqur\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":0},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"delay\":0.6,\"duration\":0.3,\"ease\":[0.44,0,0.56,1],\"type\":\"tween\"},\"x\":0,\"y\":0}}},\"l1hkdq\":{\"default\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":200},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"delay\":0.8,\"duration\":0.5,\"ease\":[0.44,0,0.56,1],\"type\":\"tween\"},\"x\":0,\"y\":0}},\"1qcjlmm\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":200},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"delay\":0.8,\"duration\":0.5,\"ease\":[0.44,0,0.56,1],\"type\":\"tween\"},\"x\":0,\"y\":0}},\"14nkb37\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":200},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"delay\":0.8,\"duration\":0.5,\"ease\":[0.44,0,0.56,1],\"type\":\"tween\"},\"x\":0,\"y\":0}},\"tbaqur\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":200},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"delay\":0.8,\"duration\":0.5,\"ease\":[0.44,0,0.56,1],\"type\":\"tween\"},\"x\":0,\"y\":0}}",
+  "anims": [
+   {
+    "name": "Animation",
+    "tgt": "ul",
+    "dur": 19760,
+    "delay": 0,
+    "ease": "linear",
+    "iter": null,
+    "kf": "[{\"offset\":null,\"easing\":\"linear\",\"composite\":\"auto\",\"transform\":\"translateX(0px)\",\"computedOffset\":0},{\"offset\":null,\"easing\":\"linear\",\"composite\":\"auto\",\"transform\":\"translateX(-1976px)\",\"computedOffset\":1}]"
+   }
+  ]
+ },
+ "page": {
+  "vw": 1440,
+  "pageHeight": 5395,
+  "title": "Nothing Studio",
+  "htmlBg": "rgba(0, 0, 0, 0)",
+  "bodyBg": "rgb(0, 0, 0)",
+  "bodyColor": "rgb(0, 0, 0)",
+  "colorScheme": "normal",
+  "h1": {
+   "text": "NOTHING",
+   "family": "Inter, \"Inter Placeholder\", sans-serif",
+   "size": "152px",
+   "weight": "800",
+   "lh": "136.8px",
+   "ls": "-4.56px",
+   "color": "rgb(217, 217, 217)",
+   "tt": "none",
+   "align": "center",
+   "w": 688,
+   "h": 137,
+   "top": 130,
+   "left": 376,
+   "tag": "h1",
+   "balance": "nowrap"
+  },
+  "largestHeroText": {
+   "text": "NOTHING",
+   "family": "Inter, \"Inter Placeholder\", sans-serif",
+   "size": "325.601px",
+   "weight": "900",
+   "lh": "293.041px",
+   "ls": "-9.76804px",
+   "color": "rgb(33, 33, 33)",
+   "tt": "none",
+   "align": "center",
+   "w": 1400,
+   "h": 275,
+   "top": 537,
+   "left": 20,
+   "tag": "h1",
+   "balance": "nowrap"
+  },
+  "h2": [],
+  "h3": [
+   {
+    "text": "Research",
+    "family": "Inter, \"Inter Placeholder\", sans-serif",
+    "size": "48px",
+    "weight": "500",
+    "lh": "57.6px",
+    "ls": "-0.96px",
+    "color": "rgb(217, 217, 217)",
+    "tt": "none",
+    "align": "start",
+    "w": 207,
+    "h": 58,
+    "top": 2300,
+    "left": 330,
+    "tag": "h3",
+    "balance": "nowrap"
+   },
+   {
+    "text": "Strategy",
+    "family": "Inter, \"Inter Placeholder\", sans-serif",
+    "size": "48px",
+    "weight": "500",
+    "lh": "57.6px",
+    "ls": "-0.96px",
+    "color": "rgb(217, 217, 217)",
+    "tt": "none",
+    "align": "start",
+    "w": 187,
+    "h": 58,
+    "top": 2300,
+    "left": 890,
+    "tag": "h3",
+    "balance": "nowrap"
+   }
+  ],
+  "p": [
+   {
+    "text": "We are a creative studio based in Canada, We build solid brands that n",
+    "family": "Inter, sans-serif",
+    "size": "20px",
+    "weight": "400",
+    "lh": "26px",
+    "ls": "normal",
+    "color": "rgb(217, 217, 217)",
+    "tt": "none",
+    "align": "center",
+    "w": 400,
+    "h": 78,
+    "top": 474,
+    "left": 520,
+    "tag": "p",
+    "balance": "wrap"
+   },
+   {
+    "text": "With a blend of creativity and technical prowess, we transform ideas i",
+    "family": "Inter, sans-serif",
+    "size": "20px",
+    "weight": "400",
+    "lh": "26px",
+    "ls": "normal",
+    "color": "rgb(217, 217, 217)",
+    "tt": "none",
+    "align": "start",
+    "w": 320,
+    "h": 78,
+    "top": 1892,
+    "left": 300,
+    "tag": "p",
+    "balance": "wrap"
+   },
+   {
+    "text": "We unearth valuable insights that inform strategic decisions, guiding ",
+    "family": "Inter, sans-serif",
+    "size": "20px",
+    "weight": "400",
+    "lh": "26px",
+    "ls": "normal",
+    "color": "rgb(119, 119, 119)",
+    "tt": "none",
+    "align": "start",
+    "w": 350,
+    "h": 104,
+    "top": 2532,
+    "left": 330,
+    "tag": "p",
+    "balance": "wrap"
+   }
+  ],
+  "heroP": {
+   "text": "We are a creative studio based in Canada, We build solid brands that n",
+   "family": "Inter, sans-serif",
+   "size": "20px",
+   "weight": "400",
+   "lh": "26px",
+   "ls": "normal",
+   "color": "rgb(217, 217, 217)",
+   "tt": "none",
+   "align": "center",
+   "w": 400,
+   "h": 78,
+   "top": 474,
+   "left": 520,
+   "tag": "p",
+   "balance": "wrap"
+  },
+  "typeScale": [
+   [
+    "Inter|20|400",
+    1071
+   ],
+   [
+    "Inter|24|600",
+    95
+   ],
+   [
+    "Inter|24|400",
+    68
+   ],
+   [
+    "Inter|48|500",
+    33
+   ],
+   [
+    "Inter|152|800",
+    18
+   ],
+   [
+    "Inter|326|900",
+    7
+   ]
+  ],
+  "fontFamiliesUsed": [
+   [
+    "Inter",
+    53
+   ]
+  ],
+  "sizesDistinct": [
+   20,
+   24,
+   48,
+   152,
+   325.601
+  ],
+  "lsHist": [
+   [
+    "normal",
+    37
+   ],
+   [
+    "-0.020em",
+    12
+   ],
+   [
+    "-0.030em",
+    4
+   ]
+  ],
+  "nav": {
+   "tag": "NAV",
+   "h": 48,
+   "outerH": 48,
+   "top": 0,
+   "w": 1440,
+   "position": "fixed",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgHeader": "rgba(0, 0, 0, 0)",
+   "backdrop": "none",
+   "bb": "0px none rgb(0, 0, 0)",
+   "shadow": "none",
+   "contentLeft": 20,
+   "contentRight": 216,
+   "nLinks": 1,
+   "linkTexts": [
+    "[ NOTHING STUDIO] [ NOTHING STUDIO]"
+   ],
+   "linkTypo": [
+    {
+     "text": "[ NOTHING STUDIO] [ NOTHING STUDIO]",
+     "family": "sans-serif",
+     "size": "12px",
+     "weight": "400",
+     "lh": "normal",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "tt": "none",
+     "align": "start",
+     "w": 196,
+     "h": 28,
+     "top": 20,
+     "left": 20,
+     "tag": "a",
+     "balance": "wrap"
+    }
+   ],
+   "hasLogoSvgOrImg": false,
+   "px": "20px/20px"
+  },
+  "ctas": [],
+  "chain": [
+   {
+    "tag": "h1.framer-text",
+    "w": 688,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "block",
+    "ta": "center"
+   },
+   {
+    "tag": "div.framer-1vex7av",
+    "w": 688,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "div.framer-14ynnvg",
+    "w": 1400,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "article.framer-x8210t",
+    "w": 1400,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "section.framer-1hpfh1b",
+    "w": 1440,
+    "maxW": "none",
+    "pl": "20px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "main.framer-89e0vx",
+    "w": 1440,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "div.framer-wFi9f",
+    "w": 1440,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "div.ssr-variant",
+    "w": 0,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "contents",
+    "ta": "start"
+   },
+   {
+    "tag": "div",
+    "w": 1440,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "block",
+    "ta": "start"
+   }
+  ],
+  "sections": [
+   {
+    "cls": "framer-1hpfh1b",
+    "tag": "section",
+    "top": 130,
+    "h": 422,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 0,
+    "effPb": 0,
+    "contentW": 1088,
+    "contentL": 176,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "NOTHING",
+    "hSize": "152px",
+    "hAlign": "center"
+   },
+   {
+    "cls": "framer-1to7h8t",
+    "tag": "section",
+    "top": 672,
+    "h": 1100,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 0,
+    "effPb": 0,
+    "contentW": 1400,
+    "contentL": 20,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "",
+    "hSize": null,
+    "hAlign": null
+   },
+   {
+    "cls": "framer-1lxb313",
+    "tag": "section",
+    "top": 1892,
+    "h": 1264,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 0,
+    "effPb": 0,
+    "contentW": 1120,
+    "contentL": 300,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "",
+    "hSize": null,
+    "hAlign": null
+   },
+   {
+    "cls": "framer-15z1hhz",
+    "tag": "section",
+    "top": 3276,
+    "h": 585,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 263,
+    "effPb": 265,
+    "contentW": 168,
+    "contentL": 300,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "",
+    "hSize": null,
+    "hAlign": null
+   },
+   {
+    "cls": "framer-1c3bcj8",
+    "tag": "section",
+    "top": 3981,
+    "h": 224,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 0,
+    "effPb": 0,
+    "contentW": 300,
+    "contentL": 300,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "",
+    "hSize": null,
+    "hAlign": null
+   },
+   {
+    "cls": "framer-ksI5s",
+    "tag": "footer",
+    "top": 0,
+    "h": 900,
+    "pt": "100px",
+    "pb": "30px",
+    "effPt": 280,
+    "effPb": -62,
+    "contentW": 1407,
+    "contentL": 13,
+    "bg": "rgb(13, 13, 13)",
+    "heading": "NOTHING",
+    "hSize": "325.601px",
+    "hAlign": "center"
+   }
+  ],
+  "radiusAll": [
+   [
+    "30px",
+    7
+   ],
+   [
+    "10px",
+    1
+   ]
+  ],
+  "radiusCards": [],
+  "radiusMedia": [],
+  "radiusInputs": [],
+  "shadows": [
+   [
+    "rgba(0, 0, 0, 0.26) 0px 0.636953px 1.14652px -1.125px, rgba(0, 0, 0, 0.24) 0px 1.9316px 3.47689px -2.25px, rgba(0, 0, 0, 0.192) 0px 5.10612px 9.19102px -3.375px, rgba(0, ",
+    1
+   ]
+  ],
+  "borders": [],
+  "cardBgs": [],
+  "grids": [
+   [
+    "3col gap 20px/20px",
+    1
+   ]
+  ],
+  "flexGaps": [
+   [
+    "40px",
+    25
+   ],
+   [
+    "0px",
+    24
+   ],
+   [
+    "10px",
+    14
+   ],
+   [
+    "20px",
+    5
+   ],
+   [
+    "30px",
+    4
+   ],
+   [
+    "120px",
+    3
+   ],
+   [
+    "70px",
+    2
+   ]
+  ],
+  "bgByArea": [
+   [
+    "rgb(0, 0, 0)",
+    "148%"
+   ],
+   [
+    "rgb(13, 13, 13)",
+    "17%"
+   ],
+   [
+    "rgb(255, 255, 255)",
+    "0%"
+   ]
+  ],
+  "textColors": [
+   [
+    "rgb(217, 217, 217)",
+    36
+   ],
+   [
+    "rgb(255, 255, 255)",
+    8
+   ],
+   [
+    "rgb(234, 72, 38)",
+    4
+   ],
+   [
+    "rgb(119, 119, 119)",
+    4
+   ],
+   [
+    "rgb(33, 33, 33)",
+    1
+   ]
+  ],
+  "linkColors": [
+   [
+    "rgb(217, 217, 217)",
+    16
+   ],
+   [
+    "rgb(255, 255, 255)",
+    6
+   ]
+  ],
+  "counts": {
+   "video": 1,
+   "canvas": 0,
+   "iframe": 0,
+   "svg": 7,
+   "img": 6,
+   "picture": 0,
+   "spline": 0,
+   "lottie": 0
+  },
+  "heroMedia": {
+   "video": false,
+   "canvas": false,
+   "bigImg": 4
+  },
+  "libs": {
+   "gsap": false,
+   "lenis": true,
+   "locomotive": false,
+   "next": false,
+   "framer": true,
+   "webflow": false,
+   "three": false,
+   "astro": false,
+   "nuxt": false,
+   "tailwindish": false
+  },
+  "sticky": 0,
+  "fixed": 3,
+  "snap": 0
+ },
+ "pageHeight": 5395
+}

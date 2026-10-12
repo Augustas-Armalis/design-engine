@@ -1,0 +1,1356 @@
+{
+ "id": "archform",
+ "url": "https://archform.framer.website/",
+ "date": "2026-10-11",
+ "hero": {
+  "bgImages": [],
+  "filters": [
+   {
+    "n": "div",
+    "r": [
+     0,
+     0,
+     1440,
+     900
+    ],
+    "filter": "brightness(0.7)",
+    "backdrop": "none",
+    "bg": "rgba(0, 0, 0, 0)",
+    "op": "1"
+   }
+  ],
+  "blends": [],
+  "transforms": [
+   {
+    "n": "div",
+    "r": [
+     1397,
+     700,
+     6,
+     6
+    ],
+    "t": "matrix(0.707107, 0.707107, -0.707107, 0.707107, 0, 0)",
+    "persp": "none",
+    "op": "1"
+   },
+   {
+    "n": "div",
+    "r": [
+     1397,
+     700,
+     6,
+     6
+    ],
+    "t": "matrix(0.707107, -0.707107, 0.707107, 0.707107, 0, 0)",
+    "persp": "none",
+    "op": "1"
+   },
+   {
+    "n": "p",
+    "r": [
+     1350,
+     861,
+     0,
+     0
+    ],
+    "t": "matrix(0.001, 0, 0, 0.001, 0, 0)",
+    "persp": "none",
+    "op": "1"
+   }
+  ],
+  "perspective": [],
+  "media": [
+   {
+    "tag": "IMG",
+    "n": "div",
+    "r": [
+     0,
+     0,
+     1440,
+     900
+    ],
+    "src": "https://framerusercontent.com/images/TAr75SUiSqw5HiaPyqnVQyBeqE.png?scale-down-to=4096&width=4800&height=3200",
+    "fit": "cover",
+    "radius": "0px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": [
+     1440,
+     960
+    ]
+   },
+   {
+    "tag": "IMG",
+    "n": "div",
+    "r": [
+     30,
+     1315,
+     343,
+     339
+    ],
+    "src": "https://framerusercontent.com/images/doZoqR7KksNcu3aswTZTcawiIU.png?scale-down-to=2048&width=1800&height=2400",
+    "fit": "cover",
+    "radius": "0px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": [
+     685,
+     913
+    ]
+   },
+   {
+    "tag": "VIDEO",
+    "n": "div",
+    "r": [
+     1278,
+     683,
+     142,
+     107
+    ],
+    "src": "https://framerusercontent.com/assets/TNg2xfI1CEpQsOAJClKAFpU1XR4.mp4",
+    "fit": "cover",
+    "radius": "0px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": null
+   }
+  ],
+  "svgNoise": 0,
+  "turb": [],
+  "canvas": [],
+  "radii": [
+   "Desktop 165x54 r=50px bg=rgb(0, 0, 0) bd=0px rgb(0, 0, 238) sh=none",
+   "Desktop 165x54 r=50px bg=rgb(0, 0, 0) bd=0px rgb(0, 0, 238) sh=none",
+   "Desktop - MENU 105x54 r=50px bg=rgb(237, 237, 237) bd=0px rgb(0, 0, 0) sh=none",
+   "Desktop 142x36 r=10px bg=rgb(0, 0, 0) bd=0px rgb(0, 0, 238) sh=rgba(0, 0, 0, 0.3) 0px 0px 20px 5px",
+   "Desktop 142x107 r=5px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 238) sh=none",
+   "Backdrop 138x36 r=10px bg=rgb(255, 255, 255) bd=0px rgb(0, 0, 238) sh=rgba(0, 0, 0, 0.17) 0px 0.602187px 1.56569px -1.5px, rgba(0, 0, 0, 0.14) 0px 2.28853px 5.95019px -3px, rgba(0, 0, 0, 0.02) 0px 10px 26px -4.",
+   "Bottom 140x38 r=11px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 238) sh=rgb(0, 0, 0) 0px 0px 0px 1px inset",
+   "Border 140x38 r=11px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 238) sh=rgb(0, 0, 0) 0px 0px 0px 1px inset"
+  ],
+  "texts": [
+   "ARCHFORM | \"Inter Display\" 32px/38.4px w600 ls=-0.96px c=rgb(255, 255, 255) tt=none @30,28,172,38",
+   "HOME | \"Inter Display\" 14px/14px w600 ls=normal c=rgb(255, 255, 255) tt=uppercase @725,40,41,14",
+   "HOME | \"Inter Display\" 14px/14px w600 ls=normal c=rgb(255, 255, 255) tt=uppercase @725,56,41,14",
+   "STUDIO | \"Inter Display\" 14px/14px w600 ls=normal c=rgb(255, 255, 255) tt=uppercase @780,40,51,14",
+   "STUDIO | \"Inter Display\" 14px/14px w600 ls=normal c=rgb(255, 255, 255) tt=uppercase @780,56,51,14",
+   "PROJECTS | \"Inter Display\" 14px/14px w600 ls=normal c=rgb(255, 255, 255) tt=uppercase @846,40,72,14",
+   "PROJECTS | \"Inter Display\" 14px/14px w600 ls=normal c=rgb(255, 255, 255) tt=uppercase @846,56,72,14",
+   "JOURNALS | \"Inter Display\" 14px/14px w600 ls=normal c=rgb(255, 255, 255) tt=uppercase @932,40,74,14",
+   "JOURNALS | \"Inter Display\" 14px/14px w600 ls=normal c=rgb(255, 255, 255) tt=uppercase @932,56,74,14",
+   "GALLERY | \"Inter Display\" 14px/14px w600 ls=normal c=rgb(255, 255, 255) tt=uppercase @1019,40,61,14",
+   "GALLERY | \"Inter Display\" 14px/14px w600 ls=normal c=rgb(255, 255, 255) tt=uppercase @1019,56,61,14",
+   "CONTACT US | \"Inter Display\" 14px/14px w600 ls=normal c=rgb(255, 255, 255) tt=uppercase @1292,40,88,14",
+   "CONTACT US | \"Inter Display\" 14px/14px w600 ls=normal c=rgb(255, 255, 255) tt=uppercase @1292,56,88,14",
+   "CONTACT US | \"Inter Display\" 14px/14px w600 ls=normal c=rgb(255, 255, 255) tt=uppercase @1177,100,88,14",
+   "CONTACT US | \"Inter Display\" 14px/14px w600 ls=normal c=rgb(255, 255, 255) tt=uppercase @1177,116,88,14",
+   "MENU | \"Inter Display\" 14px/14px w600 ls=normal c=rgb(0, 0, 0) tt=uppercase @1337,100,41,14",
+   "MENU | \"Inter Display\" 14px/14px w600 ls=normal c=rgb(0, 0, 0) tt=uppercase @1337,116,41,14",
+   "B | \"Inter Display\" 120px/114px w700 ls=-3.6px c=rgb(255, 255, 255) tt=uppercase @30,622,74,114",
+   "U | \"Inter Display\" 120px/114px w700 ls=-3.6px c=rgb(255, 255, 255) tt=uppercase @104,622,81,114",
+   "I | \"Inter Display\" 120px/114px w700 ls=-3.6px c=rgb(255, 255, 255) tt=uppercase @185,622,27,114",
+   "L | \"Inter Display\" 120px/114px w700 ls=-3.6px c=rgb(255, 255, 255) tt=uppercase @212,622,63,114",
+   "T | \"Inter Display\" 120px/114px w700 ls=-3.6px c=rgb(255, 255, 255) tt=uppercase @275,622,73,114",
+   "D | \"Inter Display\" 120px/114px w700 ls=-3.6px c=rgb(255, 255, 255) tt=uppercase @370,622,81,114",
+   "I | \"Inter Display\" 120px/114px w700 ls=-3.6px c=rgb(255, 255, 255) tt=uppercase @451,622,27,114",
+   "F | \"Inter Display\" 120px/114px w700 ls=-3.6px c=rgb(255, 255, 255) tt=uppercase @478,622,66,114",
+   "F | \"Inter Display\" 120px/114px w700 ls=-3.6px c=rgb(255, 255, 255) tt=uppercase @544,622,66,114",
+   "E | \"Inter Display\" 120px/114px w700 ls=-3.6px c=rgb(255, 255, 255) tt=uppercase @610,622,69,114",
+   "R | \"Inter Display\" 120px/114px w700 ls=-3.6px c=rgb(255, 255, 255) tt=uppercase @680,622,74,114",
+   "E | \"Inter Display\" 120px/114px w700 ls=-3.6px c=rgb(255, 255, 255) tt=uppercase @754,622,69,114",
+   "N | \"Inter Display\" 120px/114px w700 ls=-3.6px c=rgb(255, 255, 255) tt=uppercase @824,622,83,114",
+   "T | \"Inter Display\" 120px/114px w700 ls=-3.6px c=rgb(255, 255, 255) tt=uppercase @907,622,73,114",
+   ", | \"Inter Display\" 120px/114px w700 ls=-3.6px c=rgb(255, 255, 255) tt=uppercase @980,622,26,114",
+   "B | \"Inter Display\" 120px/114px w700 ls=-3.6px c=rgb(255, 255, 255) tt=uppercase @30,736,74,114",
+   "U | \"Inter Display\" 120px/114px w700 ls=-3.6px c=rgb(255, 255, 255) tt=uppercase @104,736,81,114",
+   "I | \"Inter Display\" 120px/114px w700 ls=-3.6px c=rgb(255, 255, 255) tt=uppercase @185,736,27,114",
+   "L | \"Inter Display\" 120px/114px w700 ls=-3.6px c=rgb(255, 255, 255) tt=uppercase @212,736,63,114",
+   "T | \"Inter Display\" 120px/114px w700 ls=-3.6px c=rgb(255, 255, 255) tt=uppercase @275,736,73,114",
+   "T | \"Inter Display\" 120px/114px w700 ls=-3.6px c=rgb(255, 255, 255) tt=uppercase @370,736,73,114",
+   "O | \"Inter Display\" 120px/114px w700 ls=-3.6px c=rgb(255, 255, 255) tt=uppercase @443,736,86,114",
+   "L | \"Inter Display\" 120px/114px w700 ls=-3.6px c=rgb(255, 255, 255) tt=uppercase @551,736,63,114",
+   "A | \"Inter Display\" 120px/114px w700 ls=-3.6px c=rgb(255, 255, 255) tt=uppercase @614,736,82,114",
+   "S | \"Inter Display\" 120px/114px w700 ls=-3.6px c=rgb(255, 255, 255) tt=uppercase @696,736,75,114",
+   "T | \"Inter Display\" 120px/114px w700 ls=-3.6px c=rgb(255, 255, 255) tt=uppercase @771,736,73,114",
+   "SCROLL DOWN | \"Inter Display\" 14px/14px w600 ls=normal c=rgb(255, 255, 255) tt=uppercase @1287,836,101,14",
+   "SCROLL DOWN | \"Inter Display\" 14px/14px w600 ls=normal c=rgb(255, 255, 255) tt=uppercase @1287,852,101,14",
+   "Get This Template | Switzer 14px/16.8px w600 ls=-0.28px c=rgb(255, 255, 255) tt=none @1293,809,111,17",
+   "Monarque | Inter 22px/26.4px w600 ls=-0.88px c=rgb(255, 255, 255) tt=none @1298,736,101,26",
+   "Latest Template | Inter 14px/16.8px w400 ls=-0.56px c=rgb(255, 255, 255) tt=none @1301,765,97,17",
+   "Create a free website with Framer, the website bui | sans-serif 12px/normal w400 ls=normal c=rgb(0, 0, 238) tt=none @1350,861,0,0"
+  ],
+  "buttons": [
+   {
+    "t": "ARCHFORM",
+    "r": [
+     30,
+     28,
+     172,
+     38
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "HOME HOME",
+    "r": [
+     725,
+     40,
+     41,
+     14
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "STUDIO STUDIO",
+    "r": [
+     780,
+     40,
+     51,
+     14
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "PROJECTS PROJECTS",
+    "r": [
+     846,
+     40,
+     72,
+     14
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "JOURNALS JOURNALS",
+    "r": [
+     932,
+     40,
+     74,
+     14
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "GALLERY GALLERY",
+    "r": [
+     1019,
+     40,
+     61,
+     14
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "CONTACT US CONTACT US",
+    "r": [
+     1245,
+     20,
+     165,
+     54
+    ],
+    "bg": "rgb(0, 0, 0)",
+    "bgi": "none",
+    "radius": "50px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "CONTACT US CONTACT US",
+    "r": [
+     1130,
+     80,
+     165,
+     54
+    ],
+    "bg": "rgb(0, 0, 0)",
+    "bgi": "none",
+    "radius": "50px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "SCROLL DOWN SCROLL DOWN",
+    "r": [
+     1287,
+     836,
+     101,
+     14
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "Get This Template",
+    "r": [
+     1278,
+     799,
+     142,
+     36
+    ],
+    "bg": "rgb(0, 0, 0)",
+    "bgi": "none",
+    "radius": "10px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "rgba(0, 0, 0, 0.3) 0px 0px 20px 5px",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "Monarque Latest Template",
+    "r": [
+     1278,
+     683,
+     142,
+     107
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "5px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   }
+  ],
+  "fonts": [
+   "Inter Display 600",
+   "Inter Display 700",
+   "Inter Display 500",
+   "Inter Display 400",
+   "Inter 400",
+   "Inter 600",
+   "Switzer 600",
+   "Inter Placeholder normal",
+   "Inter Display Placeholder normal",
+   "Switzer Placeholder normal"
+  ],
+  "appear": "{\"lo7s7h\":{\"default\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":0},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0,\"delay\":0.6,\"duration\":1,\"type\":\"spring\"},\"x\":0,\"y\":0}}},\"fd4o6x\":{\"default\":{\"initial\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1.2,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":0},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0,\"delay\":0,\"duration\":2,\"type\":\"spring\"},\"x\":0,\"y\":0}}}}",
+  "anims": [
+   {
+    "name": "Animation",
+    "tgt": "scroll down",
+    "dur": 1000,
+    "delay": 600,
+    "ease": "linear",
+    "iter": 1,
+    "kf": "[{\"offset\":null,\"easing\":\"linear\",\"composite\":\"auto\",\"transform\":\"none\",\"computedOffset\":0},{\"offset\":null,\"easing\":\"linear\",\"composite\":\"auto\",\"transform\":\"none\",\"computedOffset\":0.01},{\"offset\":null,\"easing\":\"linear\",\"composite\":\"auto\",\"transform\":\"none\",\"co"
+   }
+  ]
+ },
+ "hover": [
+  {
+   "n": "DIV",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgi": "none",
+   "sh": "none",
+   "t": "none",
+   "r": "0px"
+  },
+  {
+   "n": "DIV",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgi": "none",
+   "sh": "none",
+   "t": "none",
+   "r": "0px"
+  },
+  {
+   "n": "text",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgi": "none",
+   "sh": "none",
+   "t": "none",
+   "r": "0px"
+  },
+  {
+   "n": "A",
+   "bg": "rgb(0, 0, 0)",
+   "bgi": "none",
+   "sh": "none",
+   "t": "none",
+   "r": "50px"
+  }
+ ],
+ "page": {
+  "vw": 1440,
+  "pageHeight": 15320,
+  "title": "Archform",
+  "htmlBg": "rgba(0, 0, 0, 0)",
+  "bodyBg": "rgb(0, 0, 0)",
+  "bodyColor": "rgb(0, 0, 0)",
+  "colorScheme": "normal",
+  "h1": {
+   "text": "BUILT DIFFERENT, BUILT TO LAST",
+   "family": "\"Inter Display\", \"Inter Display Placeholder\", sans-serif",
+   "size": "120px",
+   "weight": "700",
+   "lh": "114px",
+   "ls": "-3.6px",
+   "color": "rgb(255, 255, 255)",
+   "tt": "uppercase",
+   "align": "start",
+   "w": 1000,
+   "h": 228,
+   "top": 622,
+   "left": 30,
+   "tag": "h1",
+   "balance": "wrap"
+  },
+  "largestHeroText": {
+   "text": "B",
+   "family": "\"Inter Display\", \"Inter Display Placeholder\", sans-serif",
+   "size": "120px",
+   "weight": "700",
+   "lh": "114px",
+   "ls": "-3.6px",
+   "color": "rgb(255, 255, 255)",
+   "tt": "uppercase",
+   "align": "start",
+   "w": 74,
+   "h": 114,
+   "top": 622,
+   "left": 30,
+   "tag": "span",
+   "balance": "nowrap"
+  },
+  "h2": [
+   {
+    "text": "DESIGN YOU CAN FEEL",
+    "family": "\"Inter Display\", \"Inter Display Placeholder\", sans-serif",
+    "size": "90px",
+    "weight": "700",
+    "lh": "85.5px",
+    "ls": "-3.6px",
+    "color": "rgb(0, 0, 0)",
+    "tt": "uppercase",
+    "align": "start",
+    "w": 700,
+    "h": 171,
+    "top": 1094,
+    "left": 30,
+    "tag": "h2",
+    "balance": "wrap"
+   },
+   {
+    "text": "SELECTED PROJECTS",
+    "family": "\"Inter Display\", \"Inter Display Placeholder\", sans-serif",
+    "size": "90px",
+    "weight": "700",
+    "lh": "85.5px",
+    "ls": "-3.6px",
+    "color": "rgb(0, 0, 0)",
+    "tt": "uppercase",
+    "align": "center",
+    "w": 700,
+    "h": 171,
+    "top": 3854,
+    "left": 370,
+    "tag": "h2",
+    "balance": "wrap"
+   },
+   {
+    "text": "CRAFTING FORM WITH PURPOSE",
+    "family": "\"Inter Display\", \"Inter Display Placeholder\", sans-serif",
+    "size": "90px",
+    "weight": "700",
+    "lh": "85.5px",
+    "ls": "-3.6px",
+    "color": "rgb(0, 0, 0)",
+    "tt": "uppercase",
+    "align": "start",
+    "w": 700,
+    "h": 171,
+    "top": 6787,
+    "left": 30,
+    "tag": "h2",
+    "balance": "wrap"
+   },
+   {
+    "text": "FROM VISION TO REALITY",
+    "family": "\"Inter Display\", \"Inter Display Placeholder\", sans-serif",
+    "size": "90px",
+    "weight": "700",
+    "lh": "85.5px",
+    "ls": "-3.6px",
+    "color": "rgb(0, 0, 0)",
+    "tt": "uppercase",
+    "align": "center",
+    "w": 650,
+    "h": 171,
+    "top": 8211,
+    "left": 395,
+    "tag": "h2",
+    "balance": "wrap"
+   }
+  ],
+  "h3": [
+   {
+    "text": "We",
+    "family": "\"Inter Display\", \"Inter Display Placeholder\", sans-serif",
+    "size": "64px",
+    "weight": "500",
+    "lh": "64px",
+    "ls": "-2.56px",
+    "color": "rgb(0, 0, 0)",
+    "tt": "none",
+    "align": "start",
+    "w": 88,
+    "h": 64,
+    "top": 1315,
+    "left": 725,
+    "tag": "h3",
+    "balance": "nowrap"
+   },
+   {
+    "text": "keep exploring. work together. grow brilliance. shape tomorrow.",
+    "family": "\"Inter Display\", \"Inter Display Placeholder\", sans-serif",
+    "size": "64px",
+    "weight": "500",
+    "lh": "64px",
+    "ls": "-2.56px",
+    "color": "rgb(0, 0, 0)",
+    "tt": "none",
+    "align": "start",
+    "w": 587,
+    "h": 256,
+    "top": 1315,
+    "left": 823,
+    "tag": "h3",
+    "balance": "wrap"
+   }
+  ],
+  "p": [
+   {
+    "text": "We partner with clients from day one, ensuring clear communication and",
+    "family": "\"Inter Display\", \"Inter Display Placeholder\", sans-serif",
+    "size": "20px",
+    "weight": "400",
+    "lh": "26px",
+    "ls": "-0.4px",
+    "color": "rgb(0, 0, 0)",
+    "tt": "none",
+    "align": "start",
+    "w": 500,
+    "h": 130,
+    "top": 1601,
+    "left": 725,
+    "tag": "p",
+    "balance": "wrap"
+   },
+   {
+    "text": "While our aesthetic remains distinct, every project is shaped by its o",
+    "family": "\"Inter Display\", \"Inter Display Placeholder\", sans-serif",
+    "size": "20px",
+    "weight": "400",
+    "lh": "26px",
+    "ls": "-0.4px",
+    "color": "rgb(0, 0, 0)",
+    "tt": "none",
+    "align": "start",
+    "w": 500,
+    "h": 104,
+    "top": 1761,
+    "left": 725,
+    "tag": "p",
+    "balance": "wrap"
+   },
+   {
+    "text": "Founded in 1998, Archform has grown to become one of Dubai’s largest a",
+    "family": "\"Inter Display\", \"Inter Display Placeholder\", sans-serif",
+    "size": "20px",
+    "weight": "400",
+    "lh": "26px",
+    "ls": "-0.4px",
+    "color": "rgb(0, 0, 0)",
+    "tt": "none",
+    "align": "start",
+    "w": 500,
+    "h": 182,
+    "top": 2795,
+    "left": 833,
+    "tag": "p",
+    "balance": "wrap"
+   }
+  ],
+  "heroP": {
+   "text": "Create a free website with Framer, the website builder loved by startu",
+   "family": "sans-serif",
+   "size": "12px",
+   "weight": "400",
+   "lh": "normal",
+   "ls": "normal",
+   "color": "rgb(0, 0, 238)",
+   "tt": "none",
+   "align": "start",
+   "w": 0,
+   "h": 0,
+   "top": 861,
+   "left": 1350,
+   "tag": "p",
+   "balance": "wrap"
+  },
+  "typeScale": [
+   [
+    "Inter Display|20|400",
+    2211
+   ],
+   [
+    "Inter Display|14|600",
+    615
+   ],
+   [
+    "Inter Display|32|600",
+    234
+   ],
+   [
+    "Inter Display|16|600",
+    149
+   ],
+   [
+    "Inter Display|90|700",
+    146
+   ],
+   [
+    "Inter Display|16|400",
+    145
+   ],
+   [
+    "sans-serif|12|400",
+    97
+   ],
+   [
+    "Inter Display|40|500",
+    86
+   ],
+   [
+    "Inter Display|64|500",
+    65
+   ],
+   [
+    "Inter Display|64|600",
+    64
+   ],
+   [
+    "Inter Display|120|700",
+    26
+   ],
+   [
+    "Switzer|14|600",
+    17
+   ],
+   [
+    "Inter|14|400",
+    15
+   ],
+   [
+    "Inter Display|100|600",
+    8
+   ]
+  ],
+  "fontFamiliesUsed": [
+   [
+    "Inter Display",
+    337
+   ],
+   [
+    "Inter",
+    2
+   ],
+   [
+    "Switzer",
+    1
+   ],
+   [
+    "sans-serif",
+    1
+   ]
+  ],
+  "sizesDistinct": [
+   12,
+   14,
+   16,
+   20,
+   22,
+   32,
+   40,
+   64,
+   90,
+   100,
+   120
+  ],
+  "lsHist": [
+   [
+    "-0.040em",
+    203
+   ],
+   [
+    "normal",
+    75
+   ],
+   [
+    "-0.030em",
+    48
+   ],
+   [
+    "-0.020em",
+    15
+   ]
+  ],
+  "nav": {
+   "tag": "NAV",
+   "h": 94,
+   "outerH": 94,
+   "top": 0,
+   "w": 1440,
+   "position": "fixed",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgHeader": "rgba(0, 0, 0, 0)",
+   "backdrop": "none",
+   "bb": "0px none rgb(0, 0, 0)",
+   "shadow": "none",
+   "contentLeft": 30,
+   "contentRight": 1410,
+   "nLinks": 8,
+   "linkTexts": [
+    "ARCHFORM",
+    "HOME HOME",
+    "STUDIO STUDIO",
+    "PROJECTS PROJECTS",
+    "JOURNALS JOURNALS",
+    "GALLERY GALLERY",
+    "CONTACT US CONTACT US",
+    "CONTACT US CONTACT US"
+   ],
+   "linkTypo": [
+    {
+     "text": "ARCHFORM",
+     "family": "sans-serif",
+     "size": "12px",
+     "weight": "400",
+     "lh": "normal",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "tt": "none",
+     "align": "start",
+     "w": 172,
+     "h": 38,
+     "top": 28,
+     "left": 30,
+     "tag": "a",
+     "balance": "wrap"
+    },
+    {
+     "text": "HOME HOME",
+     "family": "sans-serif",
+     "size": "12px",
+     "weight": "400",
+     "lh": "normal",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "tt": "none",
+     "align": "start",
+     "w": 41,
+     "h": 14,
+     "top": 40,
+     "left": 725,
+     "tag": "a",
+     "balance": "wrap"
+    },
+    {
+     "text": "STUDIO STUDIO",
+     "family": "sans-serif",
+     "size": "12px",
+     "weight": "400",
+     "lh": "normal",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "tt": "none",
+     "align": "start",
+     "w": 51,
+     "h": 14,
+     "top": 40,
+     "left": 780,
+     "tag": "a",
+     "balance": "wrap"
+    }
+   ],
+   "hasLogoSvgOrImg": false,
+   "px": "30px/30px"
+  },
+  "ctas": [
+   {
+    "text": "CONTACT US CONTACT US",
+    "inHeader": true,
+    "kind": "filled",
+    "h": 54,
+    "w": 165,
+    "radius": "50px",
+    "bg": "rgb(0, 0, 0)",
+    "color": "rgb(0, 0, 238)",
+    "border": null,
+    "size": "12px",
+    "weight": "400",
+    "pad": "20px 30px",
+    "shadow": null,
+    "family": "sans-serif"
+   },
+   {
+    "text": "CONTACT US CONTACT US",
+    "inHeader": true,
+    "kind": "filled",
+    "h": 54,
+    "w": 165,
+    "radius": "50px",
+    "bg": "rgb(0, 0, 0)",
+    "color": "rgb(0, 0, 238)",
+    "border": null,
+    "size": "12px",
+    "weight": "400",
+    "pad": "20px 30px",
+    "shadow": null,
+    "family": "sans-serif"
+   },
+   {
+    "text": "Get This Template",
+    "inHeader": false,
+    "kind": "filled",
+    "h": 36,
+    "w": 142,
+    "radius": "10px",
+    "bg": "rgb(0, 0, 0)",
+    "color": "rgb(0, 0, 238)",
+    "border": null,
+    "size": "12px",
+    "weight": "400",
+    "pad": "0px 0px",
+    "shadow": "rgba(0, 0, 0, 0.3) 0px 0px 20px 5px",
+    "family": "sans-serif"
+   }
+  ],
+  "chain": [
+   {
+    "tag": "h1.framer-text",
+    "w": 1000,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "block",
+    "ta": "start"
+   },
+   {
+    "tag": "div.framer-pfr95z",
+    "w": 1000,
+    "maxW": "1000px",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "div.framer-1ark7a8",
+    "w": 1247,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "div.framer-1adlrkc",
+    "w": 1380,
+    "maxW": "1920px",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "header.framer-930eve",
+    "w": 1440,
+    "maxW": "none",
+    "pl": "30px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "div.framer-7iWbO",
+    "w": 0,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "contents",
+    "ta": "start"
+   },
+   {
+    "tag": "div.framer-OY2lI",
+    "w": 1440,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "div",
+    "w": 1440,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "block",
+    "ta": "start"
+   },
+   {
+    "tag": "body",
+    "w": 1440,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "block",
+    "ta": "start"
+   }
+  ],
+  "sections": [
+   {
+    "cls": "framer-kfba7l",
+    "tag": "section",
+    "top": 1050,
+    "h": 899,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 32,
+    "effPb": 0,
+    "contentW": 1380,
+    "contentL": 30,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "DESIGN YOU CAN FEEL",
+    "hSize": "90px",
+    "hAlign": "start"
+   },
+   {
+    "cls": "framer-1mjb2lq",
+    "tag": "section",
+    "top": 2099,
+    "h": 1561,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 696,
+    "effPb": 472,
+    "contentW": 500,
+    "contentL": 833,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "",
+    "hSize": null,
+    "hAlign": null
+   },
+   {
+    "cls": "framer-1j0to1g",
+    "tag": "section",
+    "top": 3810,
+    "h": 2633,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 32,
+    "effPb": 0,
+    "contentW": 980,
+    "contentL": 230,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "SELECTED PROJECTS",
+    "hSize": "90px",
+    "hAlign": "center"
+   },
+   {
+    "cls": "framer-M3ImR",
+    "tag": "section",
+    "top": 6593,
+    "h": 1424,
+    "pt": "150px",
+    "pb": "150px",
+    "effPt": 182,
+    "effPb": 180,
+    "contentW": 1380,
+    "contentL": 30,
+    "bg": "rgb(245, 245, 245)",
+    "heading": "CRAFTING FORM WITH PURPOSE",
+    "hSize": "90px",
+    "hAlign": "start"
+   },
+   {
+    "cls": "framer-w3pgzd",
+    "tag": "section",
+    "top": 8167,
+    "h": 3393,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 32,
+    "effPb": 50,
+    "contentW": 1258,
+    "contentL": 30,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "FROM VISION TO REALITY",
+    "hSize": "90px",
+    "hAlign": "center"
+   },
+   {
+    "cls": "framer-XHIRm",
+    "tag": "section",
+    "top": 11710,
+    "h": 832,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 32,
+    "effPb": 0,
+    "contentW": 3081,
+    "contentL": -820,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "THE ARCFORM COLLECTION",
+    "hSize": "90px",
+    "hAlign": "center"
+   },
+   {
+    "cls": "framer-ulid4g",
+    "tag": "section",
+    "top": 12692,
+    "h": 813,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 32,
+    "effPb": 0,
+    "contentW": 1380,
+    "contentL": 30,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "BEYOND THE BLUEPRINT",
+    "hSize": "90px",
+    "hAlign": "start"
+   },
+   {
+    "cls": "framer-E0NVq",
+    "tag": "section",
+    "top": 13655,
+    "h": 840,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 302,
+    "effPb": 271,
+    "contentW": 700,
+    "contentL": 370,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "LET’S BUILD TOGETHER",
+    "hSize": "90px",
+    "hAlign": "center"
+   },
+   {
+    "cls": "framer-NP0m2",
+    "tag": "footer",
+    "top": 14295,
+    "h": 826,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 144,
+    "effPb": 0,
+    "contentW": 1380,
+    "contentL": 30,
+    "bg": "rgb(0, 0, 0)",
+    "heading": "",
+    "hSize": null,
+    "hAlign": null
+   }
+  ],
+  "radiusAll": [
+   [
+    "50px",
+    10
+   ],
+   [
+    "40px",
+    2
+   ],
+   [
+    "10px",
+    2
+   ],
+   [
+    "5px",
+    1
+   ],
+   [
+    "11px",
+    1
+   ]
+  ],
+  "radiusCards": [],
+  "radiusMedia": [],
+  "radiusInputs": [],
+  "shadows": [
+   [
+    "rgba(0, 0, 0, 0.3) 0px 0px 20px 5px",
+    1
+   ],
+   [
+    "rgba(0, 0, 0, 0.17) 0px 0.602187px 1.56569px -1.5px, rgba(0, 0, 0, 0.14) 0px 2.28853px 5.95019px -3px, rgba(0, 0, 0, 0.02) 0px 10px 26px -4.5px",
+    1
+   ],
+   [
+    "rgb(0, 0, 0) 0px 0px 0px 1px inset",
+    1
+   ]
+  ],
+  "borders": [],
+  "cardBgs": [],
+  "grids": [
+   [
+    "3col gap 20px/20px",
+    1
+   ],
+   [
+    "4col gap 10px/10px",
+    1
+   ]
+  ],
+  "flexGaps": [
+   [
+    "0px",
+    79
+   ],
+   [
+    "10px",
+    47
+   ],
+   [
+    "30px",
+    23
+   ],
+   [
+    "20px",
+    19
+   ],
+   [
+    "7px",
+    11
+   ],
+   [
+    "50px",
+    7
+   ],
+   [
+    "14px",
+    5
+   ],
+   [
+    "5px",
+    2
+   ]
+  ],
+  "bgByArea": [
+   [
+    "rgb(0, 0, 0)",
+    "73%"
+   ],
+   [
+    "rgb(255, 255, 255)",
+    "53%"
+   ],
+   [
+    "rgb(245, 245, 245)",
+    "9%"
+   ],
+   [
+    "rgb(255, 109, 16)",
+    "0%"
+   ],
+   [
+    "rgb(237, 237, 237)",
+    "0%"
+   ],
+   [
+    "rgb(161, 161, 161)",
+    "0%"
+   ]
+  ],
+  "textColors": [
+   [
+    "rgb(0, 0, 0)",
+    223
+   ],
+   [
+    "rgb(255, 255, 255)",
+    109
+   ],
+   [
+    "rgb(145, 145, 145)",
+    3
+   ],
+   [
+    "rgb(161, 161, 161)",
+    3
+   ],
+   [
+    "rgb(99, 99, 99)",
+    1
+   ],
+   [
+    "rgb(28, 28, 28)",
+    1
+   ]
+  ],
+  "linkColors": [
+   [
+    "rgb(255, 255, 255)",
+    62
+   ],
+   [
+    "rgb(0, 0, 0)",
+    13
+   ],
+   [
+    "rgb(145, 145, 145)",
+    3
+   ]
+  ],
+  "counts": {
+   "video": 1,
+   "canvas": 0,
+   "iframe": 1,
+   "svg": 1,
+   "img": 42,
+   "picture": 0,
+   "spline": 0,
+   "lottie": 0
+  },
+  "heroMedia": {
+   "video": true,
+   "canvas": false,
+   "bigImg": 1
+  },
+  "libs": {
+   "gsap": false,
+   "lenis": true,
+   "locomotive": false,
+   "next": false,
+   "framer": true,
+   "webflow": false,
+   "three": false,
+   "astro": false,
+   "nuxt": false,
+   "tailwindish": false
+  },
+  "sticky": 6,
+  "fixed": 4,
+  "snap": 0
+ },
+ "pageHeight": 15320
+}

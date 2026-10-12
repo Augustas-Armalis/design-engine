@@ -1,0 +1,1577 @@
+{
+ "id": "greenvest",
+ "url": "https://greenvest.framer.website/",
+ "date": "2026-10-11",
+ "hero": {
+  "bgImages": [
+   {
+    "n": "madeinframer",
+    "r": [
+     1293,
+     854,
+     11,
+     16
+    ],
+    "bg": "url(\"data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20viewBox%3D%220%200%2011%2016%22%3E%3Cpath%20d%3D%22M%2011%200%20L%2011%205.333%20L%205.5%205.333%20L%200%200%20Z%20M%200%205.333%20L%205.5%205.333",
+    "size": "100% 100%",
+    "blend": "normal",
+    "op": "1",
+    "filter": "none"
+   },
+   {
+    "n": "div",
+    "r": [
+     1314,
+     857,
+     92,
+     11
+    ],
+    "bg": "url(\"data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20viewBox%3D%220%200%2092%2011%22%3E%3Cpath%20d%3D%22M%200%200.958%20L%202.393%200.958%20L%204.92%207.255%20L%205.028%207.255%20L%207.555%200.958%20",
+    "size": "100% 100%",
+    "blend": "normal",
+    "op": "1",
+    "filter": "none"
+   }
+  ],
+  "filters": [
+   {
+    "n": "span",
+    "r": [
+     230,
+     150,
+     37,
+     72
+    ],
+    "filter": "blur(0px)",
+    "backdrop": "none",
+    "bg": "rgba(0, 0, 0, 0)",
+    "op": "1"
+   },
+   {
+    "n": "span",
+    "r": [
+     267,
+     150,
+     33,
+     72
+    ],
+    "filter": "blur(0px)",
+    "backdrop": "none",
+    "bg": "rgba(0, 0, 0, 0)",
+    "op": "1"
+   },
+   {
+    "n": "span",
+    "r": [
+     311,
+     150,
+     35,
+     72
+    ],
+    "filter": "blur(0px)",
+    "backdrop": "none",
+    "bg": "rgba(0, 0, 0, 0)",
+    "op": "1"
+   },
+   {
+    "n": "span",
+    "r": [
+     346,
+     150,
+     32,
+     72
+    ],
+    "filter": "blur(0px)",
+    "backdrop": "none",
+    "bg": "rgba(0, 0, 0, 0)",
+    "op": "1"
+   },
+   {
+    "n": "span",
+    "r": [
+     378,
+     150,
+     21,
+     72
+    ],
+    "filter": "blur(0px)",
+    "backdrop": "none",
+    "bg": "rgba(0, 0, 0, 0)",
+    "op": "1"
+   },
+   {
+    "n": "span",
+    "r": [
+     399,
+     150,
+     19,
+     72
+    ],
+    "filter": "blur(0px)",
+    "backdrop": "none",
+    "bg": "rgba(0, 0, 0, 0)",
+    "op": "1"
+   },
+   {
+    "n": "span",
+    "r": [
+     429,
+     150,
+     34,
+     72
+    ],
+    "filter": "blur(0px)",
+    "backdrop": "none",
+    "bg": "rgba(0, 0, 0, 0)",
+    "op": "1"
+   },
+   {
+    "n": "span",
+    "r": [
+     463,
+     150,
+     21,
+     72
+    ],
+    "filter": "blur(0px)",
+    "backdrop": "none",
+    "bg": "rgba(0, 0, 0, 0)",
+    "op": "1"
+   },
+   {
+    "n": "span",
+    "r": [
+     495,
+     150,
+     35,
+     72
+    ],
+    "filter": "blur(0px)",
+    "backdrop": "none",
+    "bg": "rgba(0, 0, 0, 0)",
+    "op": "1"
+   },
+   {
+    "n": "span",
+    "r": [
+     530,
+     150,
+     37,
+     72
+    ],
+    "filter": "blur(0px)",
+    "backdrop": "none",
+    "bg": "rgba(0, 0, 0, 0)",
+    "op": "1"
+   },
+   {
+    "n": "span",
+    "r": [
+     567,
+     150,
+     37,
+     72
+    ],
+    "filter": "blur(0px)",
+    "backdrop": "none",
+    "bg": "rgba(0, 0, 0, 0)",
+    "op": "1"
+   },
+   {
+    "n": "span",
+    "r": [
+     605,
+     150,
+     40,
+     72
+    ],
+    "filter": "blur(0px)",
+    "backdrop": "none",
+    "bg": "rgba(0, 0, 0, 0)",
+    "op": "1"
+   },
+   {
+    "n": "span",
+    "r": [
+     795,
+     150,
+     32,
+     72
+    ],
+    "filter": "blur(0px)",
+    "backdrop": "none",
+    "bg": "rgba(0, 0, 0, 0)",
+    "op": "1"
+   },
+   {
+    "n": "span",
+    "r": [
+     827,
+     150,
+     32,
+     72
+    ],
+    "filter": "blur(0px)",
+    "backdrop": "none",
+    "bg": "rgba(0, 0, 0, 0)",
+    "op": "1"
+   },
+   {
+    "n": "span",
+    "r": [
+     859,
+     150,
+     21,
+     72
+    ],
+    "filter": "blur(0px)",
+    "backdrop": "none",
+    "bg": "rgba(0, 0, 0, 0)",
+    "op": "1"
+   },
+   {
+    "n": "span",
+    "r": [
+     881,
+     150,
+     33,
+     72
+    ],
+    "filter": "blur(0px)",
+    "backdrop": "none",
+    "bg": "rgba(0, 0, 0, 0)",
+    "op": "1"
+   },
+   {
+    "n": "span",
+    "r": [
+     913,
+     150,
+     33,
+     72
+    ],
+    "filter": "blur(0px)",
+    "backdrop": "none",
+    "bg": "rgba(0, 0, 0, 0)",
+    "op": "1"
+   },
+   {
+    "n": "span",
+    "r": [
+     946,
+     150,
+     21,
+     72
+    ],
+    "filter": "blur(0px)",
+    "backdrop": "none",
+    "bg": "rgba(0, 0, 0, 0)",
+    "op": "1"
+   },
+   {
+    "n": "span",
+    "r": [
+     979,
+     150,
+     31,
+     72
+    ],
+    "filter": "blur(0px)",
+    "backdrop": "none",
+    "bg": "rgba(0, 0, 0, 0)",
+    "op": "1"
+   },
+   {
+    "n": "span",
+    "r": [
+     1009,
+     150,
+     33,
+     72
+    ],
+    "filter": "blur(0px)",
+    "backdrop": "none",
+    "bg": "rgba(0, 0, 0, 0)",
+    "op": "1"
+   },
+   {
+    "n": "span",
+    "r": [
+     1042,
+     150,
+     33,
+     72
+    ],
+    "filter": "blur(0px)",
+    "backdrop": "none",
+    "bg": "rgba(0, 0, 0, 0)",
+    "op": "1"
+   },
+   {
+    "n": "span",
+    "r": [
+     1075,
+     150,
+     32,
+     72
+    ],
+    "filter": "blur(0px)",
+    "backdrop": "none",
+    "bg": "rgba(0, 0, 0, 0)",
+    "op": "1"
+   },
+   {
+    "n": "span",
+    "r": [
+     1107,
+     150,
+     33,
+     72
+    ],
+    "filter": "blur(0px)",
+    "backdrop": "none",
+    "bg": "rgba(0, 0, 0, 0)",
+    "op": "1"
+   },
+   {
+    "n": "span",
+    "r": [
+     1139,
+     150,
+     21,
+     72
+    ],
+    "filter": "blur(0px)",
+    "backdrop": "none",
+    "bg": "rgba(0, 0, 0, 0)",
+    "op": "1"
+   },
+   {
+    "n": "span",
+    "r": [
+     1161,
+     150,
+     31,
+     72
+    ],
+    "filter": "blur(0px)",
+    "backdrop": "none",
+    "bg": "rgba(0, 0, 0, 0)",
+    "op": "1"
+   }
+  ],
+  "blends": [],
+  "transforms": [],
+  "perspective": [],
+  "media": [
+   {
+    "tag": "IMG",
+    "n": "div",
+    "r": [
+     650,
+     160,
+     140,
+     53
+    ],
+    "src": "https://framerusercontent.com/images/vSvslsGZFJUlpmZm8C4chcawNbc.png",
+    "fit": "cover",
+    "radius": "0px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": [
+     144,
+     54
+    ]
+   },
+   {
+    "tag": "IMG",
+    "n": "div",
+    "r": [
+     520,
+     513,
+     400,
+     757
+    ],
+    "src": "https://framerusercontent.com/images/muLzNuREVH3WeifQ8capmjbjps.png?scale-down-to=2048",
+    "fit": "cover",
+    "radius": "0px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": [
+     400,
+     757
+    ]
+   },
+   {
+    "tag": "IMG",
+    "n": "div",
+    "r": [
+     552,
+     568,
+     500,
+     330
+    ],
+    "src": "https://framerusercontent.com/images/FlS3r625gDU0e3tA5h60tDj2ujA.png?scale-down-to=1024",
+    "fit": "cover",
+    "radius": "0px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": [
+     499,
+     329
+    ]
+   }
+  ],
+  "svgNoise": 0,
+  "turb": [],
+  "canvas": [],
+  "radii": [
+   "Regular btn 115x47 r=50px bg=rgb(124, 242, 165) bd=0px rgb(0, 0, 238) sh=none",
+   "Arrow btn 192x48 r=50px bg=rgb(17, 17, 17) bd=0px rgb(0, 0, 238) sh=none",
+   "arrow 34x34 r=100px bg=rgb(255, 255, 255) bd=0px rgb(0, 0, 238) sh=none",
+   "Regular btn 188x47 r=50px bg=rgb(124, 242, 165) bd=0px rgb(0, 0, 238) sh=none",
+   "gradient blur 408x682 r=100px bg=rgb(124, 242, 165) bd=0px rgb(0, 0, 0) sh=none",
+   "Light 142x36 r=10px bg=rgb(255, 255, 255) bd=0px rgb(0, 0, 238) sh=rgba(0, 0, 0, 0.26) 0px 0.636953px 1.14652px -1.125px, rgba(0, 0, 0, 0.24) 0px 1.9316px 3.47689px -2.25px, rgba(0, 0, 0, 0.192) 0px 5.10612p"
+  ],
+  "texts": [
+   "Green Vest | Inter 22px/24.2px w600 ls=-0.66px c=rgb(17, 17, 17) tt=none @72,31,111,24",
+   "Home | Inter 16px/19.2px w500 ls=-0.48px c=rgb(17, 17, 17) tt=none @565,35,43,19",
+   "Home | Inter 16px/19.2px w500 ls=-0.48px c=rgb(17, 17, 17) tt=none @566,59,43,19",
+   "Features | Inter 16px/19.2px w500 ls=-0.48px c=rgb(17, 17, 17) tt=none @648,35,63,19",
+   "Features | Inter 16px/19.2px w500 ls=-0.48px c=rgb(17, 17, 17) tt=none @649,59,63,19",
+   "About | Inter 16px/19.2px w500 ls=-0.48px c=rgb(17, 17, 17) tt=none @751,35,44,19",
+   "About | Inter 16px/19.2px w500 ls=-0.48px c=rgb(17, 17, 17) tt=none @751,59,44,19",
+   "Blogs | Inter 16px/19.2px w500 ls=-0.48px c=rgb(17, 17, 17) tt=none @835,35,40,19",
+   "Blogs | Inter 16px/19.2px w500 ls=-0.48px c=rgb(17, 17, 17) tt=none @835,59,40,19",
+   "Contact | Inter 16px/19.2px w600 ls=-0.32px c=rgb(17, 17, 17) tt=none @1333,34,59,19",
+   "Contact | Inter 16px/19.2px w600 ls=-0.32px c=rgb(17, 17, 17) tt=none @1332,54,59,19",
+   "B | Inter 60px/72px w700 ls=-3px c=rgb(17, 17, 17) tt=none @230,150,37,72",
+   "e | Inter 60px/72px w700 ls=-3px c=rgb(17, 17, 17) tt=none @267,150,33,72",
+   "p | Inter 60px/72px w700 ls=-3px c=rgb(17, 17, 17) tt=none @311,150,35,72",
+   "a | Inter 60px/72px w700 ls=-3px c=rgb(17, 17, 17) tt=none @346,150,32,72",
+   "r | Inter 60px/72px w700 ls=-3px c=rgb(17, 17, 17) tt=none @378,150,21,72",
+   "t | Inter 60px/72px w700 ls=-3px c=rgb(17, 17, 17) tt=none @399,150,19,72",
+   "o | Inter 60px/72px w700 ls=-3px c=rgb(17, 17, 17) tt=none @429,150,34,72",
+   "f | Inter 60px/72px w700 ls=-3px c=rgb(17, 17, 17) tt=none @463,150,21,72",
+   "2 | Inter 60px/72px w700 ls=-3px c=rgb(17, 17, 17) tt=none @495,150,35,72",
+   "0 | Inter 60px/72px w700 ls=-3px c=rgb(17, 17, 17) tt=none @530,150,37,72",
+   "0 | Inter 60px/72px w700 ls=-3px c=rgb(17, 17, 17) tt=none @567,150,37,72",
+   "K | Inter 60px/72px w700 ls=-3px c=rgb(17, 17, 17) tt=none @605,150,40,72",
+   "c | Inter 60px/72px w700 ls=-3px c=rgb(17, 17, 17) tt=none @795,150,32,72",
+   "a | Inter 60px/72px w700 ls=-3px c=rgb(17, 17, 17) tt=none @827,150,32,72",
+   "r | Inter 60px/72px w700 ls=-3px c=rgb(17, 17, 17) tt=none @859,150,21,72",
+   "e | Inter 60px/72px w700 ls=-3px c=rgb(17, 17, 17) tt=none @881,150,33,72",
+   "e | Inter 60px/72px w700 ls=-3px c=rgb(17, 17, 17) tt=none @913,150,33,72",
+   "r | Inter 60px/72px w700 ls=-3px c=rgb(17, 17, 17) tt=none @946,150,21,72",
+   "s | Inter 60px/72px w700 ls=-3px c=rgb(17, 17, 17) tt=none @979,150,31,72",
+   "e | Inter 60px/72px w700 ls=-3px c=rgb(17, 17, 17) tt=none @1009,150,33,72",
+   "e | Inter 60px/72px w700 ls=-3px c=rgb(17, 17, 17) tt=none @1042,150,33,72",
+   "k | Inter 60px/72px w700 ls=-3px c=rgb(17, 17, 17) tt=none @1075,150,32,72",
+   "e | Inter 60px/72px w700 ls=-3px c=rgb(17, 17, 17) tt=none @1107,150,33,72",
+   "r | Inter 60px/72px w700 ls=-3px c=rgb(17, 17, 17) tt=none @1139,150,21,72",
+   "s | Inter 60px/72px w700 ls=-3px c=rgb(17, 17, 17) tt=none @1161,150,31,72",
+   "a | Inter 60px/72px w700 ls=-3px c=rgb(17, 17, 17) tt=none @255,222,32,72",
+   "c | Inter 60px/72px w700 ls=-3px c=rgb(17, 17, 17) tt=none @287,222,32,72",
+   "h | Inter 60px/72px w700 ls=-3px c=rgb(17, 17, 17) tt=none @319,222,34,72",
+   "i | Inter 60px/72px w700 ls=-3px c=rgb(17, 17, 17) tt=none @353,222,13,72",
+   "e | Inter 60px/72px w700 ls=-3px c=rgb(17, 17, 17) tt=none @366,222,33,72",
+   "v | Inter 60px/72px w700 ls=-3px c=rgb(17, 17, 17) tt=none @399,222,33,72",
+   "i | Inter 60px/72px w700 ls=-3px c=rgb(17, 17, 17) tt=none @432,222,13,72",
+   "n | Inter 60px/72px w700 ls=-3px c=rgb(17, 17, 17) tt=none @445,222,34,72",
+   "g | Inter 60px/72px w700 ls=-3px c=rgb(17, 17, 17) tt=none @480,222,35,72",
+   "s | Inter 60px/72px w700 ls=-3px c=rgb(17, 17, 17) tt=none @526,222,31,72",
+   "u | Inter 60px/72px w700 ls=-3px c=rgb(17, 17, 17) tt=none @557,222,34,72",
+   "c | Inter 60px/72px w700 ls=-3px c=rgb(17, 17, 17) tt=none @591,222,32,72",
+   "c | Inter 60px/72px w700 ls=-3px c=rgb(17, 17, 17) tt=none @623,222,32,72",
+   "e | Inter 60px/72px w700 ls=-3px c=rgb(17, 17, 17) tt=none @656,222,33,72",
+   "s | Inter 60px/72px w700 ls=-3px c=rgb(17, 17, 17) tt=none @688,222,31,72",
+   "s | Inter 60px/72px w700 ls=-3px c=rgb(17, 17, 17) tt=none @719,222,31,72",
+   "w | Inter 60px/72px w700 ls=-3px c=rgb(17, 17, 17) tt=none @761,222,48,72",
+   "i | Inter 60px/72px w700 ls=-3px c=rgb(17, 17, 17) tt=none @809,222,13,72",
+   "t | Inter 60px/72px w700 ls=-3px c=rgb(17, 17, 17) tt=none @822,222,19,72",
+   "h | Inter 60px/72px w700 ls=-3px c=rgb(17, 17, 17) tt=none @841,222,34,72",
+   "G | Inter 60px/72px w700 ls=-3px c=rgb(17, 17, 17) tt=none @887,222,42,72",
+   "r | Inter 60px/72px w700 ls=-3px c=rgb(17, 17, 17) tt=none @929,222,21,72",
+   "e | Inter 60px/72px w700 ls=-3px c=rgb(17, 17, 17) tt=none @950,222,33,72",
+   "e | Inter 60px/72px w700 ls=-3px c=rgb(17, 17, 17) tt=none @983,222,33,72"
+  ],
+  "buttons": [
+   {
+    "t": "Green Vest",
+    "r": [
+     20,
+     23,
+     163,
+     42
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "Home Home",
+    "r": [
+     565,
+     33,
+     43,
+     23
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "Features Features",
+    "r": [
+     648,
+     33,
+     63,
+     23
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "About About",
+    "r": [
+     751,
+     33,
+     44,
+     23
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "Blogs Blogs",
+    "r": [
+     835,
+     33,
+     40,
+     23
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "Contact Contact",
+    "r": [
+     1305,
+     20,
+     115,
+     47
+    ],
+    "bg": "rgb(124, 242, 165)",
+    "bgi": "none",
+    "radius": "50px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "Download Now Download Now",
+    "r": [
+     520,
+     360,
+     192,
+     48
+    ],
+    "bg": "rgb(17, 17, 17)",
+    "bgi": "none",
+    "radius": "50px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "Become a Partner Become a Partner",
+    "r": [
+     732,
+     360,
+     188,
+     47
+    ],
+    "bg": "rgb(124, 242, 165)",
+    "bgi": "none",
+    "radius": "50px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   }
+  ],
+  "fonts": [
+   "Inter 400",
+   "Inter 600",
+   "Inter 700",
+   "Inter 500",
+   "Inter Placeholder normal"
+  ],
+  "appear": "{\"1vh2gx0\":{\"default\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":10},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"delay\":0.1,\"duration\":0.5,\"ease\":[0.44,0,0.56,1],\"type\":\"tween\"},\"x\":0,\"y\":0}}},\"mufeax\":{\"default\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":20},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0.2,\"delay\":0.6,\"duration\":1,\"type\":\"spring\"},\"x\":0,\"y\":0}}},\"1a4uby0\":{\"default\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":20},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0.2,\"delay\":0.8,\"duration\":1,\"type\":\"spring\"},\"x\":0,\"y\":0}},\"18bmr5d\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":20},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0.2,\"delay\":0.8,\"duration\":1,\"type\":\"spring\"},\"x\":0,\"y\":0}},\"1ie9x3f\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":20},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0.2,\"delay\":0.8,\"duration\":1,\"type\":\"spring\"},\"x\":0,\"y\":0}}},\"ebv57v\":{\"default\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":20},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0.2,\"delay\":0.9,\"duration\":1,\"type\":\"spring\"},\"x\":0,\"y\":0}},\"18bmr5d\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":20},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0.2,\"delay\":0.9,\"duration\":1,\"type\":\"spring\"},\"x\":0,\"y\":0}},\"1ie9x3f\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":20},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0.2,\"delay\":0.9,\"duration\":1,\"type\":\"spring\"},\"x\":0,\"y\":0}}},\"11k45v2\":{\"default\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":10},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0.2,\"delay\":1.2,\"duration\":1,\"type\":\"spring\"},\"x\":0,\"y\":0}}},\"c1sj8e\":{\"default\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":40,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":0},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0.2,\"delay\":1.4,\"duration\":2,\"type\":\"spring\"},\"x\":0,\"y\":0}},\"1ie9x3f\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":40,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":0},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0.2,\"delay\":1.4,\"duration\":2,\"type\":\"spring\"},\"x\":0,\"y\":0}},\"18bmr5d\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":40,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":0},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0.2,\"delay\":1.4,\"duration\":2,\"type\":\"spring\"},\"x\":0,\"y\":0}}},\"uf3vmb\":{\"default\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":30,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":-50},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0.2,\"delay\":1.6,\"duration\":1.2,\"type\":\"spring\"},\"x\":0,\"y\":0},\"transformTemplate\":\"translate(-50%, -50%) __Appear_Animation_Transform__\"},\"1ie9x3f\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":30,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":-50},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0.2,\"delay\":1.6,\"duration\":1.2,\"type\":\"spring\"},\"x\":0,\"y\":0},\"transformTemplate\":\"translate(-50%, -50%) __Appear_Animation_Transform__\"},\"18bmr5d\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":30,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":-50},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0.2,\"delay\":1.6,\"duration\":1.2,\"type\":\"spring\"},\"x\":0,\"y\":0},\"transformTemplate\":\"translate(-50%, -50%) __Appear_Animation_Transform__\"}},\"3brese\":{\"default\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":0.5,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":0},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"delay\":1.8,\"duration\":1,\"ease\":[0.44,0,0.56,1],\"type\":\"tween\"},\"x\":0,\"y\":0}}}}",
+  "anims": [
+   {
+    "name": "Animation",
+    "tgt": "Profile",
+    "dur": 500,
+    "delay": 100,
+    "ease": "cubic-bezier(0.44, 0, 0.56, 1)",
+    "iter": 1,
+    "kf": "[{\"offset\":null,\"easing\":\"linear\",\"composite\":\"auto\",\"opacity\":\"0.001\",\"computedOffset\":0},{\"offset\":null,\"easing\":\"linear\",\"composite\":\"auto\",\"opacity\":\"1\",\"computedOffset\":1}]"
+   },
+   {
+    "name": "Animation",
+    "tgt": "Profile",
+    "dur": 500,
+    "delay": 100,
+    "ease": "cubic-bezier(0.44, 0, 0.56, 1)",
+    "iter": 1,
+    "kf": "[{\"offset\":null,\"easing\":\"linear\",\"composite\":\"auto\",\"transform\":\"translateY(10px)\",\"computedOffset\":0},{\"offset\":null,\"easing\":\"linear\",\"composite\":\"auto\",\"transform\":\"none\",\"computedOffset\":1}]"
+   },
+   {
+    "name": "Animation",
+    "tgt": "ul",
+    "dur": 24888.88888888889,
+    "delay": 0,
+    "ease": "linear",
+    "iter": null,
+    "kf": "[{\"offset\":null,\"easing\":\"linear\",\"composite\":\"auto\",\"transform\":\"translateX(0px)\",\"computedOffset\":0},{\"offset\":null,\"easing\":\"linear\",\"composite\":\"auto\",\"transform\":\"translateX(-2240px)\",\"computedOffset\":1}]"
+   }
+  ]
+ },
+ "hover": [
+  {
+   "n": "P",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgi": "none",
+   "sh": "none",
+   "t": "none",
+   "r": "0px"
+  },
+  {
+   "n": "DIV",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgi": "none",
+   "sh": "none",
+   "t": "matrix(1, 0, 0, 1, 0, -0.162768)",
+   "r": "0px"
+  },
+  {
+   "n": "link",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgi": "none",
+   "sh": "none",
+   "t": "none",
+   "r": "0px"
+  },
+  {
+   "n": "A",
+   "bg": "rgb(79, 255, 141)",
+   "bgi": "none",
+   "sh": "none",
+   "t": "none",
+   "r": "50px"
+  }
+ ],
+ "page": {
+  "vw": 1440,
+  "pageHeight": 8414,
+  "title": "Green Vest",
+  "htmlBg": "rgba(0, 0, 0, 0)",
+  "bodyBg": "rgb(255, 255, 255)",
+  "bodyColor": "rgb(0, 0, 0)",
+  "colorScheme": "normal",
+  "h1": {
+   "text": "Be part of 200K",
+   "family": "Inter, \"Inter Placeholder\", sans-serif",
+   "size": "60px",
+   "weight": "700",
+   "lh": "72px",
+   "ls": "-3px",
+   "color": "rgb(17, 17, 17)",
+   "tt": "none",
+   "align": "right",
+   "w": 605,
+   "h": 72,
+   "top": 150,
+   "left": 40,
+   "tag": "h1",
+   "balance": "wrap"
+  },
+  "largestHeroText": {
+   "text": "B",
+   "family": "Inter, \"Inter Placeholder\", sans-serif",
+   "size": "60px",
+   "weight": "700",
+   "lh": "72px",
+   "ls": "-3px",
+   "color": "rgb(17, 17, 17)",
+   "tt": "none",
+   "align": "right",
+   "w": 37,
+   "h": 72,
+   "top": 150,
+   "left": 230,
+   "tag": "span",
+   "balance": "nowrap"
+  },
+  "h2": [
+   {
+    "text": "Boost your earnings and elevate your career to new heights",
+    "family": "Inter, \"Inter Placeholder\", sans-serif",
+    "size": "40px",
+    "weight": "600",
+    "lh": "48px",
+    "ls": "-2px",
+    "color": "rgb(17, 17, 17)",
+    "tt": "none",
+    "align": "left",
+    "w": 685,
+    "h": 96,
+    "top": 2267,
+    "left": 20,
+    "tag": "h2",
+    "balance": "wrap"
+   },
+   {
+    "text": "Witness your growth in real-time and explore new opportunities",
+    "family": "Inter, \"Inter Placeholder\", sans-serif",
+    "size": "40px",
+    "weight": "600",
+    "lh": "48px",
+    "ls": "-2px",
+    "color": "rgb(17, 17, 17)",
+    "tt": "none",
+    "align": "left",
+    "w": 685,
+    "h": 96,
+    "top": 2267,
+    "left": 735,
+    "tag": "h2",
+    "balance": "wrap"
+   },
+   {
+    "text": "Exceptional Features, Unrivaled Advantages",
+    "family": "Inter, \"Inter Placeholder\", sans-serif",
+    "size": "40px",
+    "weight": "600",
+    "lh": "48px",
+    "ls": "-2px",
+    "color": "rgb(17, 17, 17)",
+    "tt": "none",
+    "align": "center",
+    "w": 500,
+    "h": 96,
+    "top": 2873,
+    "left": 470,
+    "tag": "h2",
+    "balance": "wrap"
+   },
+   {
+    "text": "Why GreenVest is Everyone's Favorite",
+    "family": "Inter, \"Inter Placeholder\", sans-serif",
+    "size": "40px",
+    "weight": "600",
+    "lh": "48px",
+    "ls": "-2px",
+    "color": "rgb(17, 17, 17)",
+    "tt": "none",
+    "align": "center",
+    "w": 1400,
+    "h": 48,
+    "top": 4014,
+    "left": 20,
+    "tag": "h2",
+    "balance": "wrap"
+   }
+  ],
+  "h3": [
+   {
+    "text": "Collaborative Workspace for Teams",
+    "family": "Inter, \"Inter Placeholder\", sans-serif",
+    "size": "28px",
+    "weight": "600",
+    "lh": "30.8px",
+    "ls": "-0.84px",
+    "color": "rgb(17, 17, 17)",
+    "tt": "none",
+    "align": "left",
+    "w": 625,
+    "h": 31,
+    "top": 3446,
+    "left": 50,
+    "tag": "h3",
+    "balance": "wrap"
+   },
+   {
+    "text": "Competency Mapping and Growth",
+    "family": "Inter, \"Inter Placeholder\", sans-serif",
+    "size": "28px",
+    "weight": "600",
+    "lh": "30.8px",
+    "ls": "-0.84px",
+    "color": "rgb(17, 17, 17)",
+    "tt": "none",
+    "align": "left",
+    "w": 625,
+    "h": 31,
+    "top": 3446,
+    "left": 765,
+    "tag": "h3",
+    "balance": "wrap"
+   }
+  ],
+  "p": [
+   {
+    "text": "Your Trusted Partner in Financial Growth – Simplifying Solutions, Maxi",
+    "family": "Inter, sans-serif",
+    "size": "16px",
+    "weight": "400",
+    "lh": "25.6px",
+    "ls": "-0.32px",
+    "color": "rgb(17, 17, 17)",
+    "tt": "none",
+    "align": "center",
+    "w": 1360,
+    "h": 26,
+    "top": 304,
+    "left": 40,
+    "tag": "p",
+    "balance": "wrap"
+   },
+   {
+    "text": "Take control of your finances with our expert tools and resources. Fro",
+    "family": "Inter, sans-serif",
+    "size": "16px",
+    "weight": "400",
+    "lh": "25.6px",
+    "ls": "-0.32px",
+    "color": "rgb(115, 115, 115)",
+    "tt": "none",
+    "align": "left",
+    "w": 685,
+    "h": 77,
+    "top": 2373,
+    "left": 20,
+    "tag": "p",
+    "balance": "wrap"
+   },
+   {
+    "text": "Master your finances with our powerful tools and expert resources. Whe",
+    "family": "Inter, sans-serif",
+    "size": "16px",
+    "weight": "400",
+    "lh": "25.6px",
+    "ls": "-0.32px",
+    "color": "rgb(115, 115, 115)",
+    "tt": "none",
+    "align": "left",
+    "w": 685,
+    "h": 102,
+    "top": 2373,
+    "left": 735,
+    "tag": "p",
+    "balance": "wrap"
+   }
+  ],
+  "heroP": {
+   "text": "Your Trusted Partner in Financial Growth – Simplifying Solutions, Maxi",
+   "family": "Inter, sans-serif",
+   "size": "16px",
+   "weight": "400",
+   "lh": "25.6px",
+   "ls": "-0.32px",
+   "color": "rgb(17, 17, 17)",
+   "tt": "none",
+   "align": "center",
+   "w": 1360,
+   "h": 26,
+   "top": 304,
+   "left": 40,
+   "tag": "p",
+   "balance": "wrap"
+  },
+  "typeScale": [
+   [
+    "Inter|16|400",
+    1908
+   ],
+   [
+    "Inter|14|400",
+    776
+   ],
+   [
+    "Inter|40|600",
+    300
+   ],
+   [
+    "Inter|16|600",
+    238
+   ],
+   [
+    "Inter|16|500",
+    232
+   ],
+   [
+    "Inter|22|600",
+    198
+   ],
+   [
+    "Inter|18|400",
+    194
+   ],
+   [
+    "Inter|60|700",
+    63
+   ],
+   [
+    "Inter|28|600",
+    62
+   ]
+  ],
+  "fontFamiliesUsed": [
+   [
+    "Inter",
+    179
+   ]
+  ],
+  "sizesDistinct": [
+   14,
+   16,
+   18,
+   22,
+   28,
+   40,
+   60
+  ],
+  "lsHist": [
+   [
+    "-0.050em",
+    64
+   ],
+   [
+    "-0.020em",
+    50
+   ],
+   [
+    "-0.030em",
+    40
+   ],
+   [
+    "normal",
+    25
+   ]
+  ],
+  "nav": {
+   "tag": "NAV",
+   "h": 87,
+   "outerH": 87,
+   "top": 0,
+   "w": 1440,
+   "position": "fixed",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgHeader": "rgb(255, 255, 255)",
+   "backdrop": "none",
+   "bb": "0px none rgb(0, 0, 0)",
+   "shadow": "none",
+   "contentLeft": 20,
+   "contentRight": 1420,
+   "nLinks": 6,
+   "linkTexts": [
+    "Green Vest",
+    "Home Home",
+    "Features Features",
+    "About About",
+    "Blogs Blogs",
+    "Contact Contact"
+   ],
+   "linkTypo": [
+    {
+     "text": "Green Vest",
+     "family": "sans-serif",
+     "size": "12px",
+     "weight": "400",
+     "lh": "normal",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "tt": "none",
+     "align": "start",
+     "w": 163,
+     "h": 42,
+     "top": -77,
+     "left": 20,
+     "tag": "a",
+     "balance": "wrap"
+    },
+    {
+     "text": "Home Home",
+     "family": "sans-serif",
+     "size": "12px",
+     "weight": "400",
+     "lh": "normal",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "tt": "none",
+     "align": "start",
+     "w": 43,
+     "h": 23,
+     "top": -67,
+     "left": 565,
+     "tag": "a",
+     "balance": "wrap"
+    },
+    {
+     "text": "Features Features",
+     "family": "sans-serif",
+     "size": "12px",
+     "weight": "400",
+     "lh": "normal",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "tt": "none",
+     "align": "start",
+     "w": 63,
+     "h": 23,
+     "top": -67,
+     "left": 648,
+     "tag": "a",
+     "balance": "wrap"
+    }
+   ],
+   "hasLogoSvgOrImg": true,
+   "px": "20px/20px"
+  },
+  "ctas": [
+   {
+    "text": "Contact Contact",
+    "inHeader": true,
+    "kind": "filled",
+    "h": 47,
+    "w": 115,
+    "radius": "50px",
+    "bg": "rgb(124, 242, 165)",
+    "color": "rgb(0, 0, 238)",
+    "border": null,
+    "size": "12px",
+    "weight": "400",
+    "pad": "14px 28px",
+    "shadow": null,
+    "family": "sans-serif"
+   },
+   {
+    "text": "Download Now Download Now",
+    "inHeader": false,
+    "kind": "filled",
+    "h": 48,
+    "w": 192,
+    "radius": "50px",
+    "bg": "rgb(17, 17, 17)",
+    "color": "rgb(0, 0, 238)",
+    "border": null,
+    "size": "12px",
+    "weight": "400",
+    "pad": "7px 7px",
+    "shadow": null,
+    "family": "sans-serif"
+   },
+   {
+    "text": "Become a Partner Become a Part",
+    "inHeader": false,
+    "kind": "filled",
+    "h": 47,
+    "w": 188,
+    "radius": "50px",
+    "bg": "rgb(124, 242, 165)",
+    "color": "rgb(0, 0, 238)",
+    "border": null,
+    "size": "12px",
+    "weight": "400",
+    "pad": "14px 28px",
+    "shadow": null,
+    "family": "sans-serif"
+   }
+  ],
+  "chain": [
+   {
+    "tag": "h1.framer-text",
+    "w": 605,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "block",
+    "ta": "right"
+   },
+   {
+    "tag": "div.framer-11ae81i",
+    "w": 605,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "div.ssr-variant",
+    "w": 0,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "contents",
+    "ta": "start"
+   },
+   {
+    "tag": "div.framer-1itke99",
+    "w": 1360,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "div.framer-1dwgcds",
+    "w": 1360,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "div.framer-1honpsf",
+    "w": 1360,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "header.framer-19ik9f6",
+    "w": 1360,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "section.framer-17pxa24",
+    "w": 1400,
+    "maxW": "1400px",
+    "pl": "20px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "main.framer-1ll5fty",
+    "w": 1440,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   }
+  ],
+  "sections": [
+   {
+    "cls": "framer-17pxa24",
+    "tag": "section",
+    "top": 150,
+    "h": 1221,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 0,
+    "effPb": 5,
+    "contentW": 4380,
+    "contentL": -662,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "Be part of 200K",
+    "hSize": "60px",
+    "hAlign": "right"
+   },
+   {
+    "cls": "framer-1di54tm",
+    "tag": "section",
+    "top": 1521,
+    "h": 1202,
+    "pt": "150px",
+    "pb": "150px",
+    "effPt": 150,
+    "effPb": 144,
+    "contentW": 1400,
+    "contentL": 20,
+    "bg": "rgb(249, 249, 249)",
+    "heading": "Boost your earnings and elevate your career to new",
+    "hSize": "40px",
+    "hAlign": "left"
+   },
+   {
+    "cls": "framer-1dku5z5",
+    "tag": "section",
+    "top": 2873,
+    "h": 841,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 0,
+    "effPb": 0,
+    "contentW": 1400,
+    "contentL": 20,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "Exceptional Features, Unrivaled Advantages",
+    "hSize": "40px",
+    "hAlign": "center"
+   },
+   {
+    "cls": "framer-1b5ezrv",
+    "tag": "section",
+    "top": 3864,
+    "h": 860,
+    "pt": "150px",
+    "pb": "150px",
+    "effPt": 150,
+    "effPb": 200,
+    "contentW": 1400,
+    "contentL": 20,
+    "bg": "rgb(249, 249, 249)",
+    "heading": "Why GreenVest is Everyone's Favorite",
+    "hSize": "40px",
+    "hAlign": "center"
+   },
+   {
+    "cls": "framer-1b6u6d9",
+    "tag": "section",
+    "top": 4874,
+    "h": 845,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 0,
+    "effPb": 34,
+    "contentW": 1320,
+    "contentL": 60,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "Customizable Plans Designed to Fit Your Needs",
+    "hSize": "40px",
+    "hAlign": "center"
+   },
+   {
+    "cls": "framer-17h2ew",
+    "tag": "section",
+    "top": 5869,
+    "h": 968,
+    "pt": "150px",
+    "pb": "150px",
+    "effPt": 150,
+    "effPb": 150,
+    "contentW": 1400,
+    "contentL": 20,
+    "bg": "rgb(249, 249, 249)",
+    "heading": "Updates & Insights",
+    "hSize": "40px",
+    "hAlign": "center"
+   },
+   {
+    "cls": "framer-120a65x",
+    "tag": "section",
+    "top": 6987,
+    "h": 767,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 100,
+    "effPb": 0,
+    "contentW": 1200,
+    "contentL": 120,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "Unleash the Potential for Future Growth",
+    "hSize": "40px",
+    "hAlign": "left"
+   },
+   {
+    "cls": "framer-PcR1C",
+    "tag": "footer",
+    "top": 7904,
+    "h": 510,
+    "pt": "150px",
+    "pb": "0px",
+    "effPt": 150,
+    "effPb": 30,
+    "contentW": 1400,
+    "contentL": 20,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "",
+    "hSize": null,
+    "hAlign": null
+   }
+  ],
+  "radiusAll": [
+   [
+    "20px",
+    16
+   ],
+   [
+    "50px",
+    12
+   ],
+   [
+    "30px",
+    4
+   ],
+   [
+    "5px",
+    3
+   ],
+   [
+    "100px",
+    2
+   ],
+   [
+    "8px",
+    2
+   ],
+   [
+    "10px",
+    1
+   ]
+  ],
+  "radiusCards": [
+   [
+    "20px",
+    3
+   ],
+   [
+    "100px",
+    1
+   ]
+  ],
+  "radiusMedia": [
+   [
+    "20px",
+    2
+   ]
+  ],
+  "radiusInputs": [
+   [
+    "8px",
+    2
+   ]
+  ],
+  "shadows": [
+   [
+    "rgba(0, 0, 0, 0.05) 0px 1px 20px 3px",
+    1
+   ],
+   [
+    "rgb(124, 242, 165) 0px 0px 0px 0px inset, rgba(0, 0, 0, 0.01) 0px 3px 4px 0px",
+    1
+   ],
+   [
+    "rgba(0, 0, 0, 0.26) 0px 0.636953px 1.14652px -1.125px, rgba(0, 0, 0, 0.24) 0px 1.9316px 3.47689px -2.25px, rgba(0, 0, 0, 0.192) 0px 5.10612px 9.19102px -3.375px, rgba(0, ",
+    1
+   ]
+  ],
+  "borders": [],
+  "cardBgs": [
+   [
+    "rgb(255, 255, 255)",
+    3
+   ],
+   [
+    "rgb(124, 242, 165)",
+    1
+   ]
+  ],
+  "grids": [
+   [
+    "3col gap 20px/20px",
+    2
+   ]
+  ],
+  "flexGaps": [
+   [
+    "10px",
+    119
+   ],
+   [
+    "0px",
+    33
+   ],
+   [
+    "50px",
+    11
+   ],
+   [
+    "30px",
+    11
+   ],
+   [
+    "20px",
+    10
+   ],
+   [
+    "12px",
+    3
+   ],
+   [
+    "16px",
+    3
+   ],
+   [
+    "5px",
+    2
+   ]
+  ],
+  "bgByArea": [
+   [
+    "rgb(255, 255, 255)",
+    "54%"
+   ],
+   [
+    "rgb(249, 249, 249)",
+    "36%"
+   ],
+   [
+    "rgb(124, 242, 165)",
+    "3%"
+   ],
+   [
+    "rgb(17, 17, 17)",
+    "1%"
+   ]
+  ],
+  "textColors": [
+   [
+    "rgb(17, 17, 17)",
+    159
+   ],
+   [
+    "rgb(115, 115, 115)",
+    12
+   ],
+   [
+    "rgb(255, 255, 255)",
+    8
+   ]
+  ],
+  "linkColors": [
+   [
+    "rgb(17, 17, 17)",
+    48
+   ],
+   [
+    "rgb(255, 255, 255)",
+    8
+   ],
+   [
+    "rgb(115, 115, 115)",
+    3
+   ]
+  ],
+  "counts": {
+   "video": 0,
+   "canvas": 0,
+   "iframe": 0,
+   "svg": 67,
+   "img": 31,
+   "picture": 0,
+   "spline": 0,
+   "lottie": 0
+  },
+  "heroMedia": {
+   "video": false,
+   "canvas": false,
+   "bigImg": 1
+  },
+  "libs": {
+   "gsap": false,
+   "lenis": true,
+   "locomotive": false,
+   "next": false,
+   "framer": true,
+   "webflow": false,
+   "three": false,
+   "astro": false,
+   "nuxt": false,
+   "tailwindish": false
+  },
+  "sticky": 0,
+  "fixed": 2,
+  "snap": 0
+ },
+ "pageHeight": 8414
+}

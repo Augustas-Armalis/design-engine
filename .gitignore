@@ -8,3 +8,6 @@ corpus/web/
 
 # third-party source studied for knowledge/web/kargul-source-study.md (not ours; workflow-editor and kanban have no licence)
 corpus/kargul-src/
+
+# Reel lossless masters (huge, regenerable with tools/record.mjs); the finished MP4s are tracked
+*.nut

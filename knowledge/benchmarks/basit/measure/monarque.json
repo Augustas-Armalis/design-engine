@@ -1,0 +1,1074 @@
+{
+ "id": "monarque",
+ "url": "https://monarque.framer.website/",
+ "date": "2026-10-11",
+ "hero": {
+  "bgImages": [
+   {
+    "n": "div",
+    "r": [
+     1293,
+     814,
+     11,
+     12
+    ],
+    "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 10.8 12%22 overflow=%22visible%22><path d=%22M 2.4 12 L 4.8 7.5 L 0 6.9 L 7.2 0 L 8.4 0 L 6 4.5 L 10.8 5.1 L 3.6 12 Z%22 fill=%22rgb(255, 255, 255)%22></path></svg>\")",
+    "size": "100% 100%",
+    "blend": "normal",
+    "op": "1",
+    "filter": "none"
+   },
+   {
+    "n": "div",
+    "r": [
+     1292,
+     794,
+     11,
+     12
+    ],
+    "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 10.8 12%22 overflow=%22visible%22><path d=%22M 2.4 12 L 4.8 7.5 L 0 6.9 L 7.2 0 L 8.4 0 L 6 4.5 L 10.8 5.1 L 3.6 12 Z%22 fill=%22rgb(255, 255, 255)%22></path></svg>\")",
+    "size": "100% 100%",
+    "blend": "normal",
+    "op": "1",
+    "filter": "none"
+   }
+  ],
+  "filters": [],
+  "blends": [
+   {
+    "n": "div",
+    "r": [
+     0,
+     0,
+     1440,
+     86
+    ],
+    "blend": "difference",
+    "op": "1"
+   },
+   {
+    "n": "Desktop",
+    "r": [
+     0,
+     0,
+     1440,
+     86
+    ],
+    "blend": "difference",
+    "op": "1"
+   },
+   {
+    "n": "big logo",
+    "r": [
+     40,
+     86,
+     1360,
+     307
+    ],
+    "blend": "difference",
+    "op": "1"
+   }
+  ],
+  "transforms": [
+   {
+    "n": "p",
+    "r": [
+     1350,
+     861,
+     0,
+     0
+    ],
+    "t": "matrix(0.001, 0, 0, 0.001, 0, 0)",
+    "persp": "none",
+    "op": "1"
+   }
+  ],
+  "perspective": [],
+  "media": [
+   {
+    "tag": "IMG",
+    "n": "div",
+    "r": [
+     40,
+     86,
+     1360,
+     307
+    ],
+    "src": "https://framerusercontent.com/images/0382IuuBR4oTn78kBwoYfKVvf0.svg?width=1656&height=374",
+    "fit": "cover",
+    "radius": "0px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": [
+     1360,
+     307
+    ]
+   },
+   {
+    "tag": "VIDEO",
+    "n": "div",
+    "r": [
+     503,
+     500,
+     433,
+     360
+    ],
+    "src": "https://framerusercontent.com/assets/NRm5GoSXHW0oKTHcIfnUKJomtY.mp4",
+    "fit": "cover",
+    "radius": "0px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": null
+   },
+   {
+    "tag": "IMG",
+    "n": "div",
+    "r": [
+     967,
+     86,
+     433,
+     774
+    ],
+    "src": "https://framerusercontent.com/images/XZ9vOh3iticFKKWY1PiayiAh6bo.png?width=511&height=1030",
+    "fit": "cover",
+    "radius": "0px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": [
+     433,
+     873
+    ]
+   },
+   {
+    "tag": "IMG",
+    "n": "div",
+    "r": [
+     40,
+     1048,
+     433,
+     324
+    ],
+    "src": "https://framerusercontent.com/images/jcZI0RIZo81h8rizs7OXVARx4.png?width=509&height=380",
+    "fit": "cover",
+    "radius": "0px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": [
+     509,
+     380
+    ]
+   }
+  ],
+  "svgNoise": 0,
+  "turb": [],
+  "canvas": [],
+  "radii": [
+   "Desktop 83x46 r=50px bg=rgb(255, 255, 255) bd=0px rgb(0, 0, 0) sh=none",
+   "Desktop 171x46 r=40px bg=rgb(252, 230, 86) bd=0px rgb(0, 0, 238) sh=none",
+   "Desktop 142x36 r=10px bg=rgb(0, 0, 0) bd=0px rgb(0, 0, 238) sh=none",
+   "Backdrop 138x36 r=10px bg=rgb(255, 255, 255) bd=0px rgb(0, 0, 238) sh=rgba(0, 0, 0, 0.17) 0px 0.602187px 1.56569px -1.5px, rgba(0, 0, 0, 0.14) 0px 2.28853px 5.95019px -3px, rgba(0, 0, 0, 0.02) 0px 10px 26px -4.",
+   "Bottom 140x38 r=11px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 238) sh=rgb(0, 0, 0) 0px 0px 0px 1px inset",
+   "Border 140x38 r=11px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 238) sh=rgb(0, 0, 0) 0px 0px 0px 1px inset"
+  ],
+  "texts": [
+   "Find Dream Home | Switzer 16px/22.4px w500 ls=normal c=rgb(0, 0, 0) tt=none @60,688,131,22",
+   "Find Dream Home | Switzer 16px/22.4px w500 ls=normal c=rgb(0, 0, 0) tt=none @60,718,131,22",
+   "Visionary spaces designed for sustainability, tran | Switzer 20px/26px w500 ls=normal c=rgb(0, 0, 0) tt=none @40,782,370,78",
+   "Buy Template | Inter 14px/16.8px w500 ls=-0.7px c=rgb(255, 255, 255) tt=none @1314,812,83,17",
+   "Unlock for $99 | Inter 14px/16.8px w500 ls=-0.7px c=rgb(255, 255, 255) tt=none @1314,834,90,17",
+   "Create a free website with Framer, the website bui | sans-serif 12px/normal w400 ls=normal c=rgb(0, 0, 238) tt=none @1350,861,0,0"
+  ],
+  "buttons": [
+   {
+    "t": "Find Dream Home Find Dream Home",
+    "r": [
+     40,
+     706,
+     171,
+     46
+    ],
+    "bg": "rgb(252, 230, 86)",
+    "bgi": "none",
+    "radius": "40px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "Buy Template Unlock for $99",
+    "r": [
+     1278,
+     802,
+     142,
+     36
+    ],
+    "bg": "rgb(0, 0, 0)",
+    "bgi": "none",
+    "radius": "10px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   }
+  ],
+  "fonts": [
+   "Inter 400",
+   "Inter 500",
+   "Switzer 500",
+   "Switzer 400",
+   "Switzer 300",
+   "Inter Placeholder normal",
+   "Switzer Placeholder normal"
+  ],
+  "appear": "{\"1e3t5hj\":{\"default\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":-100},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0,\"delay\":0,\"duration\":1.5,\"type\":\"spring\"},\"x\":0,\"y\":0}}},\"1ubjy91\":{\"default\":{\"initial\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":-400},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0,\"delay\":0.1,\"duration\":2,\"type\":\"spring\"},\"x\":0,\"y\":0}},\"1acs7m4\":{\"initial\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":-400},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0,\"delay\":0.1,\"duration\":2,\"type\":\"spring\"},\"x\":0,\"y\":0}},\"1dlnarj\":{\"initial\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":-400},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0,\"delay\":0.1,\"duration\":2,\"type\":\"spring\"},\"x\":0,\"y\":0}}},\"1n3d3b9\":{\"default\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":-50,\"y\":0},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0,\"delay\":1,\"duration\":1,\"type\":\"spring\"},\"x\":0,\"y\":0}}},\"g2i8r2\":{\"default\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":400},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0,\"delay\":1.4,\"duration\":2,\"type\":\"spring\"},\"x\":0,\"y\":0}}},\"ia6wez\":{\"default\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":400},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0,\"delay\":1.8,\"duration\":2,\"type\":\"spring\"},\"x\":0,\"y\":0}}},\"gk6l9y\":{\"default\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":50},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"damping\":50,\"delay\":2,\"mass\":1,\"stiffness\":300,\"type\":\"spring\"},\"x\":0,\"y\":0}}}}",
+  "anims": []
+ },
+ "hover": [
+  {
+   "n": "DIV",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgi": "none",
+   "sh": "none",
+   "t": "none",
+   "r": "0px"
+  },
+  {
+   "n": "DIV",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgi": "none",
+   "sh": "none",
+   "t": "matrix(1, 0, 0, 1, 0, 0.0123654)",
+   "r": "0px"
+  },
+  {
+   "n": "text - holder",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgi": "none",
+   "sh": "none",
+   "t": "none",
+   "r": "0px"
+  },
+  {
+   "n": "A",
+   "bg": "rgb(252, 230, 86)",
+   "bgi": "none",
+   "sh": "none",
+   "t": "none",
+   "r": "40px"
+  }
+ ],
+ "page": {
+  "vw": 1440,
+  "pageHeight": 11004,
+  "title": "Monarque",
+  "htmlBg": "rgba(0, 0, 0, 0)",
+  "bodyBg": "rgb(17, 17, 17)",
+  "bodyColor": "rgb(0, 0, 0)",
+  "colorScheme": "normal",
+  "h1": {
+   "text": "Visionary spaces designed for sustainability, transforming urban livin",
+   "family": "Switzer, \"Switzer Placeholder\", sans-serif",
+   "size": "20px",
+   "weight": "500",
+   "lh": "26px",
+   "ls": "normal",
+   "color": "rgb(0, 0, 0)",
+   "tt": "none",
+   "align": "start",
+   "w": 370,
+   "h": 78,
+   "top": 782,
+   "left": 40,
+   "tag": "h1",
+   "balance": "wrap"
+  },
+  "largestHeroText": {
+   "text": "Visionary spaces designed for sustainability, transforming urban livin",
+   "family": "Switzer, \"Switzer Placeholder\", sans-serif",
+   "size": "20px",
+   "weight": "500",
+   "lh": "26px",
+   "ls": "normal",
+   "color": "rgb(0, 0, 0)",
+   "tt": "none",
+   "align": "start",
+   "w": 370,
+   "h": 78,
+   "top": 782,
+   "left": 40,
+   "tag": "h1",
+   "balance": "wrap"
+  },
+  "h2": [
+   {
+    "text": "We create environments that inspire meaningful connections and fuel co",
+    "family": "Switzer, \"Switzer Placeholder\", sans-serif",
+    "size": "20px",
+    "weight": "500",
+    "lh": "26px",
+    "ls": "normal",
+    "color": "rgb(255, 255, 255)",
+    "tt": "none",
+    "align": "start",
+    "w": 324,
+    "h": 78,
+    "top": 1050,
+    "left": 503,
+    "tag": "h2",
+    "balance": "wrap"
+   },
+   {
+    "text": "Sustainable & Modern Serenity Villa",
+    "family": "Switzer, \"Switzer Placeholder\", sans-serif",
+    "size": "48px",
+    "weight": "500",
+    "lh": "52.8px",
+    "ls": "-0.96px",
+    "color": "rgb(255, 255, 255)",
+    "tt": "none",
+    "align": "start",
+    "w": 460,
+    "h": 106,
+    "top": 3179,
+    "left": 40,
+    "tag": "h2",
+    "balance": "wrap"
+   },
+   {
+    "text": "Find Your Dream Home",
+    "family": "Switzer, \"Switzer Placeholder\", sans-serif",
+    "size": "60px",
+    "weight": "500",
+    "lh": "60px",
+    "ls": "-1.8px",
+    "color": "rgb(0, 0, 0)",
+    "tt": "none",
+    "align": "center",
+    "w": 1360,
+    "h": 60,
+    "top": 3609,
+    "left": 40,
+    "tag": "h2",
+    "balance": "wrap"
+   },
+   {
+    "text": "— Monarque made finding my dream home effortless. Their expertise, car",
+    "family": "Switzer, \"Switzer Placeholder\", sans-serif",
+    "size": "48px",
+    "weight": "500",
+    "lh": "52.8px",
+    "ls": "-0.96px",
+    "color": "rgb(0, 0, 0)",
+    "tt": "none",
+    "align": "start",
+    "w": 897,
+    "h": 264,
+    "top": 5221,
+    "left": 40,
+    "tag": "h2",
+    "balance": "wrap"
+   }
+  ],
+  "h3": [
+   {
+    "text": "— Our master artisans blend traditional craftsmanship with cutting-edg",
+    "family": "Switzer, \"Switzer Placeholder\", sans-serif",
+    "size": "48px",
+    "weight": "500",
+    "lh": "52.8px",
+    "ls": "-0.96px",
+    "color": "rgb(255, 255, 255)",
+    "tt": "none",
+    "align": "start",
+    "w": 897,
+    "h": 211,
+    "top": 1754,
+    "left": 40,
+    "tag": "h3",
+    "balance": "wrap"
+   },
+   {
+    "text": "$557,000 / $3,150 per m²",
+    "family": "Switzer, \"Switzer Placeholder\", sans-serif",
+    "size": "48px",
+    "weight": "500",
+    "lh": "52.8px",
+    "ls": "-0.96px",
+    "color": "rgba(255, 255, 255, 0.8)",
+    "tt": "none",
+    "align": "right",
+    "w": 300,
+    "h": 106,
+    "top": 3313,
+    "left": 1100,
+    "tag": "h3",
+    "balance": "wrap"
+   }
+  ],
+  "p": [
+   {
+    "text": "With an unwavering commitment to precision, we transform your visions ",
+    "family": "Switzer, \"Switzer Placeholder\", sans-serif",
+    "size": "16px",
+    "weight": "500",
+    "lh": "22.4px",
+    "ls": "normal",
+    "color": "rgba(255, 255, 255, 0.7)",
+    "tt": "none",
+    "align": "start",
+    "w": 370,
+    "h": 67,
+    "top": 1524,
+    "left": 967,
+    "tag": "p",
+    "balance": "wrap"
+   },
+   {
+    "text": "Delivered 72 residential and commercial projects, enhancing urban land",
+    "family": "Switzer, \"Switzer Placeholder\", sans-serif",
+    "size": "16px",
+    "weight": "500",
+    "lh": "22.4px",
+    "ls": "normal",
+    "color": "rgba(255, 255, 255, 0.7)",
+    "tt": "none",
+    "align": "start",
+    "w": 240,
+    "h": 67,
+    "top": 2355,
+    "left": 40,
+    "tag": "p",
+    "balance": "wrap"
+   },
+   {
+    "text": "Honored with 24 prestigious awards for outstanding design and sustaina",
+    "family": "Switzer, \"Switzer Placeholder\", sans-serif",
+    "size": "16px",
+    "weight": "500",
+    "lh": "22.4px",
+    "ls": "normal",
+    "color": "rgba(255, 255, 255, 0.7)",
+    "tt": "none",
+    "align": "start",
+    "w": 240,
+    "h": 67,
+    "top": 2355,
+    "left": 503,
+    "tag": "p",
+    "balance": "wrap"
+   }
+  ],
+  "heroP": {
+   "text": "We create environments that inspire meaningful connections and fuel co",
+   "family": "Switzer, \"Switzer Placeholder\", sans-serif",
+   "size": "20px",
+   "weight": "500",
+   "lh": "26px",
+   "ls": "normal",
+   "color": "rgb(255, 255, 255)",
+   "tt": "none",
+   "align": "start",
+   "w": 324,
+   "h": 78,
+   "top": 1050,
+   "left": 503,
+   "tag": "h2",
+   "balance": "wrap"
+  },
+  "typeScale": [
+   [
+    "Switzer|16|500",
+    2042
+   ],
+   [
+    "Switzer|20|500",
+    1162
+   ],
+   [
+    "Switzer|16|300",
+    425
+   ],
+   [
+    "Switzer|48|500",
+    336
+   ],
+   [
+    "sans-serif|12|400",
+    97
+   ],
+   [
+    "Switzer|60|500",
+    61
+   ],
+   [
+    "Inter|14|500",
+    26
+   ],
+   [
+    "Switzer|180|400",
+    12
+   ]
+  ],
+  "fontFamiliesUsed": [
+   [
+    "Switzer",
+    362
+   ],
+   [
+    "Inter",
+    2
+   ],
+   [
+    "sans-serif",
+    1
+   ]
+  ],
+  "sizesDistinct": [
+   12,
+   14,
+   16,
+   20,
+   48,
+   60,
+   180
+  ],
+  "lsHist": [
+   [
+    "-0.020em",
+    245
+   ],
+   [
+    "normal",
+    109
+   ],
+   [
+    "-0.050em",
+    8
+   ],
+   [
+    "-0.030em",
+    3
+   ]
+  ],
+  "nav": {
+   "tag": "NAV",
+   "h": 86,
+   "outerH": 86,
+   "top": 0,
+   "w": 1440,
+   "position": "fixed",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgHeader": "rgba(0, 0, 0, 0)",
+   "backdrop": "none",
+   "bb": "0px none rgb(0, 0, 0)",
+   "shadow": "none",
+   "contentLeft": 40,
+   "contentRight": 156,
+   "nLinks": 1,
+   "linkTexts": [],
+   "linkTypo": [],
+   "hasLogoSvgOrImg": false,
+   "px": "40px/40px"
+  },
+  "ctas": [
+   {
+    "text": "Find Dream Home Find Dream Hom",
+    "inHeader": false,
+    "kind": "filled",
+    "h": 46,
+    "w": 171,
+    "radius": "40px",
+    "bg": "rgb(252, 230, 86)",
+    "color": "rgb(0, 0, 238)",
+    "border": null,
+    "size": "12px",
+    "weight": "400",
+    "pad": "12px 20px",
+    "shadow": null,
+    "family": "sans-serif"
+   },
+   {
+    "text": "Buy Template Unlock for $99",
+    "inHeader": false,
+    "kind": "filled",
+    "h": 36,
+    "w": 142,
+    "radius": "10px",
+    "bg": "rgb(0, 0, 0)",
+    "color": "rgb(0, 0, 238)",
+    "border": null,
+    "size": "12px",
+    "weight": "400",
+    "pad": "0px 0px",
+    "shadow": null,
+    "family": "sans-serif"
+   }
+  ],
+  "chain": [
+   {
+    "tag": "h1.framer-text",
+    "w": 370,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "block",
+    "ta": "start"
+   },
+   {
+    "tag": "div.framer-1hh3ki5",
+    "w": 370,
+    "maxW": "370px",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "div.framer-1n3d3b9",
+    "w": 433,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "div.framer-796noj",
+    "w": 1360,
+    "maxW": "1920px",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "section.framer-kv7bln",
+    "w": 1440,
+    "maxW": "none",
+    "pl": "40px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "main.framer-s3c5wh",
+    "w": 1440,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "div.framer-MYmJV",
+    "w": 0,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "contents",
+    "ta": "start"
+   },
+   {
+    "tag": "div.framer-gpllw",
+    "w": 1440,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "div",
+    "w": 1440,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "block",
+    "ta": "start"
+   }
+  ],
+  "sections": [
+   {
+    "cls": "framer-kv7bln",
+    "tag": "section",
+    "top": 0,
+    "h": 900,
+    "pt": "86px",
+    "pb": "40px",
+    "effPt": 86,
+    "effPb": 40,
+    "contentW": 1360,
+    "contentL": 40,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "Visionary spaces designed for sustainability, tran",
+    "hSize": "20px",
+    "hAlign": "start"
+   },
+   {
+    "cls": "framer-1206yiv",
+    "tag": "section",
+    "top": 900,
+    "h": 1672,
+    "pt": "150px",
+    "pb": "150px",
+    "effPt": 118,
+    "effPb": 150,
+    "contentW": 1360,
+    "contentL": 40,
+    "bg": "rgb(47, 54, 66)",
+    "heading": "We create environments that inspire meaningful con",
+    "hSize": "20px",
+    "hAlign": "start"
+   },
+   {
+    "cls": "framer-6iM0I",
+    "tag": "section",
+    "top": 2572,
+    "h": 887,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 607,
+    "effPb": 40,
+    "contentW": 1360,
+    "contentL": 40,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "Sustainable & Modern Serenity Villa",
+    "hSize": "48px",
+    "hAlign": "start"
+   },
+   {
+    "cls": "framer-c45kfs",
+    "tag": "section",
+    "top": 3459,
+    "h": 851,
+    "pt": "150px",
+    "pb": "0px",
+    "effPt": 150,
+    "effPb": 0,
+    "contentW": 1360,
+    "contentL": 40,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "Find Your Dream Home",
+    "hSize": "60px",
+    "hAlign": "center"
+   },
+   {
+    "cls": "framer-eg8i4f",
+    "tag": "section",
+    "top": 4309,
+    "h": 912,
+    "pt": "150px",
+    "pb": "150px",
+    "effPt": 96,
+    "effPb": 150,
+    "contentW": 1360,
+    "contentL": 40,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "",
+    "hSize": null,
+    "hAlign": null
+   },
+   {
+    "cls": "framer-wTfSz",
+    "tag": "section",
+    "top": 5221,
+    "h": 514,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": -51,
+    "effPb": 40,
+    "contentW": 1360,
+    "contentL": 40,
+    "bg": "rgb(255, 255, 255)",
+    "heading": "— Monarque made finding my dream home effortless. ",
+    "hSize": "48px",
+    "hAlign": "start"
+   },
+   {
+    "cls": "framer-1ultgt1",
+    "tag": "section",
+    "top": 5735,
+    "h": 2074,
+    "pt": "0px",
+    "pb": "150px",
+    "effPt": -57,
+    "effPb": 150,
+    "contentW": 1360,
+    "contentL": 40,
+    "bg": "rgb(17, 17, 17)",
+    "heading": "",
+    "hSize": null,
+    "hAlign": null
+   },
+   {
+    "cls": "framer-5gdBD",
+    "tag": "section",
+    "top": 7809,
+    "h": 900,
+    "pt": "40px",
+    "pb": "40px",
+    "effPt": 40,
+    "effPb": 40,
+    "contentW": 1234,
+    "contentL": 40,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "Join the Monarque experience today!",
+    "hSize": "48px",
+    "hAlign": "start"
+   },
+   {
+    "cls": "framer-a1C2F",
+    "tag": "section",
+    "top": 8709,
+    "h": 1208,
+    "pt": "150px",
+    "pb": "150px",
+    "effPt": 150,
+    "effPb": 150,
+    "contentW": 1360,
+    "contentL": 40,
+    "bg": "rgb(255, 255, 255)",
+    "heading": "Latest News From Monarque",
+    "hSize": "60px",
+    "hAlign": "left"
+   },
+   {
+    "cls": "framer-xySPs",
+    "tag": "section",
+    "top": 9917,
+    "h": 294,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 0,
+    "effPb": 107,
+    "contentW": 1227,
+    "contentL": 40,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "Contact Monarque",
+    "hSize": "60px",
+    "hAlign": "left"
+   },
+   {
+    "cls": "framer-k31kh",
+    "tag": "footer",
+    "top": 10061,
+    "h": 793,
+    "pt": "40px",
+    "pb": "40px",
+    "effPt": 40,
+    "effPb": 40,
+    "contentW": 1360,
+    "contentL": 40,
+    "bg": "rgb(17, 17, 17)",
+    "heading": "",
+    "hSize": null,
+    "hAlign": null
+   }
+  ],
+  "radiusAll": [
+   [
+    "40px",
+    6
+   ],
+   [
+    "100px",
+    5
+   ],
+   [
+    "50px",
+    3
+   ],
+   [
+    "10px",
+    2
+   ],
+   [
+    "11px",
+    1
+   ]
+  ],
+  "radiusCards": [],
+  "radiusMedia": [
+   [
+    "100px",
+    1
+   ]
+  ],
+  "radiusInputs": [
+   [
+    "0px",
+    1
+   ]
+  ],
+  "shadows": [
+   [
+    "rgba(0, 0, 0, 0.17) 0px 0.602187px 1.56569px -1.5px, rgba(0, 0, 0, 0.14) 0px 2.28853px 5.95019px -3px, rgba(0, 0, 0, 0.02) 0px 10px 26px -4.5px",
+    1
+   ],
+   [
+    "rgb(0, 0, 0) 0px 0px 0px 1px inset",
+    1
+   ]
+  ],
+  "borders": [],
+  "cardBgs": [],
+  "grids": [
+   [
+    "3col gap 30px/30px",
+    12
+   ],
+   [
+    "3col gap 30px/0px",
+    2
+   ]
+  ],
+  "flexGaps": [
+   [
+    "0px",
+    119
+   ],
+   [
+    "20px",
+    33
+   ],
+   [
+    "10px",
+    22
+   ],
+   [
+    "50px",
+    8
+   ],
+   [
+    "30px",
+    3
+   ],
+   [
+    "5px",
+    2
+   ],
+   [
+    "150px",
+    2
+   ],
+   [
+    "70px",
+    2
+   ]
+  ],
+  "bgByArea": [
+   [
+    "rgb(17, 17, 17)",
+    "62%"
+   ],
+   [
+    "rgb(255, 255, 255)",
+    "52%"
+   ],
+   [
+    "rgb(47, 54, 66)",
+    "15%"
+   ],
+   [
+    "rgb(0, 0, 0)",
+    "1%"
+   ],
+   [
+    "rgb(26, 26, 26)",
+    "0%"
+   ],
+   [
+    "rgb(252, 230, 86)",
+    "0%"
+   ]
+  ],
+  "textColors": [
+   [
+    "rgb(0, 0, 0)",
+    169
+   ],
+   [
+    "rgb(255, 255, 255)",
+    150
+   ],
+   [
+    "rgb(163, 163, 163)",
+    18
+   ],
+   [
+    "rgba(255, 255, 255, 0.7)",
+    9
+   ],
+   [
+    "rgb(207, 207, 207)",
+    5
+   ],
+   [
+    "rgb(138, 138, 138)",
+    5
+   ]
+  ],
+  "linkColors": [
+   [
+    "rgb(255, 255, 255)",
+    30
+   ],
+   [
+    "rgb(0, 0, 0)",
+    23
+   ],
+   [
+    "rgb(163, 163, 163)",
+    15
+   ]
+  ],
+  "counts": {
+   "video": 1,
+   "canvas": 0,
+   "iframe": 2,
+   "svg": 0,
+   "img": 18,
+   "picture": 0,
+   "spline": 0,
+   "lottie": 0
+  },
+  "heroMedia": {
+   "video": true,
+   "canvas": false,
+   "bigImg": 2
+  },
+  "libs": {
+   "gsap": false,
+   "lenis": true,
+   "locomotive": false,
+   "next": false,
+   "framer": true,
+   "webflow": false,
+   "three": false,
+   "astro": false,
+   "nuxt": false,
+   "tailwindish": false
+  },
+  "sticky": 0,
+  "fixed": 3,
+  "snap": 0
+ },
+ "pageHeight": 11004
+}

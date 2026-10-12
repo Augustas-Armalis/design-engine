@@ -1,0 +1,363 @@
+[
+ {
+  "family": "radial",
+  "p": {
+   "n": 4,
+   "petal": "circle",
+   "len": 0.4,
+   "width": 0.29,
+   "inner": 0.01,
+   "rot": 45
+  }
+ },
+ {
+  "family": "radial",
+  "p": {
+   "n": 4,
+   "petal": "pill",
+   "len": 0.31,
+   "width": 0.3,
+   "inner": 0.14,
+   "rot": 45
+  }
+ },
+ {
+  "family": "radial",
+  "p": {
+   "n": 5,
+   "petal": "drop",
+   "len": 0.4,
+   "width": 0.27,
+   "inner": 0.11,
+   "rot": 0
+  }
+ },
+ {
+  "family": "radial",
+  "p": {
+   "n": 5,
+   "petal": "circle",
+   "len": 0.36,
+   "width": 0.23,
+   "inner": 0.01,
+   "rot": 36
+  }
+ },
+ {
+  "family": "grid",
+  "p": {
+   "k": 3,
+   "cells": [
+    1,
+    0,
+    1,
+    0,
+    1,
+    1,
+    0,
+    0,
+    1
+   ],
+   "gap": 0.09,
+   "radius": 0.2,
+   "shapes": [
+    "q-br",
+    "sq",
+    "q-tr",
+    "q-bl",
+    "sq",
+    "q-tr",
+    "disc",
+    "disc",
+    "q-tl"
+   ]
+  }
+ },
+ {
+  "family": "grid",
+  "p": {
+   "k": 2,
+   "cells": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "gap": 0.08,
+   "radius": 0.3,
+   "shapes": [
+    "q-tl",
+    "sq",
+    "sq",
+    "q-bl"
+   ]
+  }
+ },
+ {
+  "family": "grid",
+  "p": {
+   "k": 2,
+   "cells": [
+    1,
+    0,
+    0,
+    1
+   ],
+   "gap": 0.09,
+   "radius": 0.3,
+   "shapes": [
+    "q-br",
+    "sq",
+    "q-tl",
+    "q-br"
+   ]
+  }
+ },
+ {
+  "family": "grid",
+  "p": {
+   "k": 2,
+   "cells": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "gap": 0.06,
+   "radius": 0.2,
+   "shapes": [
+    "q-br",
+    "q-bl",
+    "disc",
+    "q-bl"
+   ]
+  }
+ },
+ {
+  "family": "cut",
+  "p": {
+   "base": "square",
+   "hole": "square",
+   "hx": 0.55,
+   "hy": 0.29,
+   "hr": 0.22,
+   "baseR": 0.3
+  }
+ },
+ {
+  "family": "cut",
+  "p": {
+   "base": "square",
+   "hole": "circle",
+   "hx": 0.61,
+   "hy": 0.45,
+   "hr": 0.24,
+   "baseR": 0.24
+  }
+ },
+ {
+  "family": "cut",
+  "p": {
+   "base": "circle",
+   "hole": "circle",
+   "hx": 0.69,
+   "hy": 0.32,
+   "hr": 0.28,
+   "baseR": 0.3
+  }
+ },
+ {
+  "family": "cut",
+  "p": {
+   "base": "circle",
+   "hole": "circle",
+   "hx": 0.62,
+   "hy": 0.35,
+   "hr": 0.19,
+   "baseR": 0.24
+  }
+ },
+ {
+  "family": "orbit",
+  "p": {
+   "rings": 2,
+   "stroke": 0.14,
+   "gap": 0.08,
+   "sweep": 300,
+   "step": 45,
+   "cap": "butt",
+   "dot": true
+  }
+ },
+ {
+  "family": "orbit",
+  "p": {
+   "rings": 2,
+   "stroke": 0.14,
+   "gap": 0.08,
+   "sweep": 270,
+   "step": 180,
+   "cap": "round",
+   "dot": true
+  }
+ },
+ {
+  "family": "orbit",
+  "p": {
+   "rings": 2,
+   "stroke": 0.15,
+   "gap": 0.09,
+   "sweep": 180,
+   "step": 45,
+   "cap": "butt",
+   "dot": true
+  }
+ },
+ {
+  "family": "orbit",
+  "p": {
+   "rings": 3,
+   "stroke": 0.15,
+   "gap": 0.05,
+   "sweep": 300,
+   "step": 45,
+   "cap": "butt",
+   "dot": false
+  }
+ },
+ {
+  "family": "stack",
+  "p": {
+   "bars": [
+    1,
+    0.77,
+    0.43
+   ],
+   "h": 0.23,
+   "gap": 0.09,
+   "align": "left",
+   "skew": 0
+  }
+ },
+ {
+  "family": "stack",
+  "p": {
+   "bars": [
+    1,
+    0.48
+   ],
+   "h": 0.25,
+   "gap": 0.08,
+   "align": "center",
+   "skew": 0
+  }
+ },
+ {
+  "family": "stack",
+  "p": {
+   "bars": [
+    1,
+    0.64,
+    0.41
+   ],
+   "h": 0.23,
+   "gap": 0.1,
+   "align": "center",
+   "skew": 0
+  }
+ },
+ {
+  "family": "stack",
+  "p": {
+   "bars": [
+    1,
+    0.65,
+    0.39
+   ],
+   "h": 0.21,
+   "gap": 0.11,
+   "align": "right",
+   "skew": 0
+  }
+ },
+ {
+  "family": "link",
+  "p": {
+   "n": 2,
+   "r": 0.29,
+   "stroke": 0.09,
+   "spread": 0.37,
+   "angle": 0,
+   "cutw": 0.045
+  }
+ },
+ {
+  "family": "link",
+  "p": {
+   "n": 3,
+   "r": 0.25,
+   "stroke": 0.12,
+   "spread": 0.36,
+   "angle": 0,
+   "cutw": 0.045
+  }
+ },
+ {
+  "family": "link",
+  "p": {
+   "n": 2,
+   "r": 0.27,
+   "stroke": 0.1,
+   "spread": 0.3,
+   "angle": 45,
+   "cutw": 0.045
+  }
+ },
+ {
+  "family": "link",
+  "p": {
+   "n": 2,
+   "r": 0.27,
+   "stroke": 0.12,
+   "spread": 0.36,
+   "angle": 0,
+   "cutw": 0.045
+  }
+ },
+ {
+  "family": "fold",
+  "p": {
+   "w": 0.36,
+   "h": 0.85,
+   "shear": 0.27,
+   "tint": 0.35
+  }
+ },
+ {
+  "family": "fold",
+  "p": {
+   "w": 0.38,
+   "h": 0.76,
+   "shear": 0.15,
+   "tint": 0.5
+  }
+ },
+ {
+  "family": "fold",
+  "p": {
+   "w": 0.45,
+   "h": 0.75,
+   "shear": 0.29,
+   "tint": 0.35
+  }
+ },
+ {
+  "family": "fold",
+  "p": {
+   "w": 0.46,
+   "h": 0.71,
+   "shear": 0.21,
+   "tint": 0.65
+  }
+ }
+]

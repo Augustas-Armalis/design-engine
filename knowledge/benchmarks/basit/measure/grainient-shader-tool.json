@@ -1,0 +1,801 @@
+{
+ "id": "grainient-shader-tool",
+ "url": "https://shader.grainient.supply/",
+ "date": "2026-10-11",
+ "hero": {
+  "bgImages": [],
+  "filters": [
+   {
+    "n": "nav",
+    "r": [
+     496,
+     16,
+     433,
+     46
+    ],
+    "filter": "none",
+    "backdrop": "blur(20px)",
+    "bg": "rgba(255, 255, 255, 0.06)",
+    "op": "1"
+   }
+  ],
+  "blends": [],
+  "transforms": [],
+  "perspective": [],
+  "media": [
+   {
+    "tag": "CANVAS",
+    "n": "div",
+    "r": [
+     0,
+     0,
+     1440,
+     900
+    ],
+    "src": "",
+    "fit": "fill",
+    "radius": "0px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": null
+   }
+  ],
+  "svgNoise": 0,
+  "turb": [],
+  "canvas": [
+   {
+    "r": [
+     0,
+     0,
+     1440,
+     900
+    ],
+    "ctx": "three.js r169",
+    "parent": "div"
+   }
+  ],
+  "radii": [
+   "nav 433x46 r=9999px bg=rgba(255, 255, 255, 0.06) bd=1px rgba(255, 255, 255, 0.08) sh=none",
+   "a 100x32 r=9999px bg=rgba(0, 0, 0, 0) bd=0px rgb(229, 231, 235) sh=none",
+   "a 75x32 r=9999px bg=rgba(0, 0, 0, 0) bd=0px rgb(229, 231, 235) sh=none",
+   "a 85x32 r=9999px bg=rgba(0, 0, 0, 0) bd=0px rgb(229, 231, 235) sh=none",
+   "a 57x32 r=9999px bg=rgba(0, 0, 0, 0) bd=0px rgb(229, 231, 235) sh=none",
+   "a 82x32 r=9999px bg=rgba(0, 0, 0, 0) bd=0px rgb(229, 231, 235) sh=none",
+   "a 133x36 r=50px bg=rgb(194, 241, 60) bd=0px rgb(229, 231, 235) sh=none",
+   "button 173x51 r=50px bg=rgb(240, 240, 240) bd=0px rgb(229, 231, 235) sh=rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px",
+   "button 60x60 r=50% bg=rgb(19, 20, 21) bd=1px rgba(255, 255, 255, 0.1) sh=none"
+  ],
+  "texts": [
+   "Grainient. | __inter_53f2d8 18px/28px w700 ls=-0.45px c=rgb(255, 255, 255) tt=none @76,25,82,28",
+   "Collections | __inter_53f2d8 13px/19.5px w400 ls=normal c=rgba(255, 255, 255, 0.8) tt=none @505,23,100,32",
+   "Pricing | __inter_53f2d8 13px/19.5px w400 ls=normal c=rgba(255, 255, 255, 0.8) tt=none @610,23,75,32",
+   "Freebies | __inter_53f2d8 13px/19.5px w400 ls=normal c=rgba(255, 255, 255, 0.8) tt=none @688,23,85,32",
+   "FAQ | __inter_53f2d8 13px/19.5px w400 ls=normal c=rgba(255, 255, 255, 0.8) tt=none @777,23,57,32",
+   "Request | __inter_53f2d8 13px/19.5px w400 ls=normal c=rgba(255, 255, 255, 0.8) tt=none @838,23,82,32",
+   "Go Unlimited | __inter_53f2d8 13px/19.5px w600 ls=normal c=rgb(0, 0, 0) tt=none @1267,21,133,36",
+   "Goodbye 👋 Boring Designs, Hello Grainient! | __inter_53f2d8 60px/72px w500 ls=normal c=rgb(255, 255, 255) tt=none @320,309,800,144",
+   "Try Grainient's Shader gradient in Real-time for y | __inter_53f2d8 19px/28.5px w400 ls=normal c=rgb(255, 255, 255) tt=none @360,471,720,29",
+   "Get Started | __inter_53f2d8 18px/27px w500 ls=-0.45px c=rgb(17, 24, 39) tt=none @634,540,173,51",
+   "MENU | __inter_53f2d8 10px/15px w600 ls=0.5px c=rgb(255, 255, 255) tt=none @40,816,60,60"
+  ],
+  "buttons": [
+   {
+    "t": "Grainient.",
+    "r": [
+     40,
+     25,
+     118,
+     28
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "0px",
+    "border": "0px rgb(229, 231, 235)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(229, 231, 235)"
+    },
+    "font": "__inter_53f2d8 16px w400"
+   },
+   {
+    "t": "Collections",
+    "r": [
+     505,
+     23,
+     100,
+     32
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "9999px",
+    "border": "0px rgb(229, 231, 235)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "9999px",
+     "sh": "none",
+     "border": "0px rgb(229, 231, 235)"
+    },
+    "font": "__inter_53f2d8 13px w400"
+   },
+   {
+    "t": "Pricing",
+    "r": [
+     610,
+     23,
+     75,
+     32
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "9999px",
+    "border": "0px rgb(229, 231, 235)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "9999px",
+     "sh": "none",
+     "border": "0px rgb(229, 231, 235)"
+    },
+    "font": "__inter_53f2d8 13px w400"
+   },
+   {
+    "t": "Freebies",
+    "r": [
+     688,
+     23,
+     85,
+     32
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "9999px",
+    "border": "0px rgb(229, 231, 235)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "9999px",
+     "sh": "none",
+     "border": "0px rgb(229, 231, 235)"
+    },
+    "font": "__inter_53f2d8 13px w400"
+   },
+   {
+    "t": "FAQ",
+    "r": [
+     777,
+     23,
+     57,
+     32
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "9999px",
+    "border": "0px rgb(229, 231, 235)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "9999px",
+     "sh": "none",
+     "border": "0px rgb(229, 231, 235)"
+    },
+    "font": "__inter_53f2d8 13px w400"
+   },
+   {
+    "t": "Request",
+    "r": [
+     838,
+     23,
+     82,
+     32
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "9999px",
+    "border": "0px rgb(229, 231, 235)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "9999px",
+     "sh": "none",
+     "border": "0px rgb(229, 231, 235)"
+    },
+    "font": "__inter_53f2d8 13px w400"
+   },
+   {
+    "t": "Go Unlimited",
+    "r": [
+     1267,
+     21,
+     133,
+     36
+    ],
+    "bg": "rgb(194, 241, 60)",
+    "bgi": "none",
+    "radius": "50px",
+    "border": "0px rgb(229, 231, 235)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgb(194, 241, 60)",
+     "bgi": "none",
+     "radius": "50px",
+     "sh": "none",
+     "border": "0px rgb(229, 231, 235)"
+    },
+    "font": "__inter_53f2d8 13px w600"
+   },
+   {
+    "t": "Get Started",
+    "r": [
+     634,
+     540,
+     173,
+     51
+    ],
+    "bg": "rgb(240, 240, 240)",
+    "bgi": "none",
+    "radius": "50px",
+    "border": "0px rgb(229, 231, 235)",
+    "sh": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px",
+    "kid": {
+     "bg": "rgb(240, 240, 240)",
+     "bgi": "none",
+     "radius": "50px",
+     "sh": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px",
+     "border": "0px rgb(229, 231, 235)"
+    },
+    "font": "__inter_53f2d8 18px w500"
+   },
+   {
+    "t": "MENU",
+    "r": [
+     40,
+     816,
+     60,
+     60
+    ],
+    "bg": "rgb(19, 20, 21)",
+    "bgi": "none",
+    "radius": "50%",
+    "border": "1px rgba(255, 255, 255, 0.1)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgb(19, 20, 21)",
+     "bgi": "none",
+     "radius": "50%",
+     "sh": "none",
+     "border": "1px rgba(255, 255, 255, 0.1)"
+    },
+    "font": "__inter_53f2d8 10px w600"
+   }
+  ],
+  "fonts": [
+   "__inter_53f2d8 100 900",
+   "__inter_Fallback_53f2d8 normal"
+  ],
+  "appear": null,
+  "anims": [
+   {
+    "name": "pulse",
+    "tgt": "button",
+    "dur": 2000,
+    "delay": 0,
+    "ease": "linear",
+    "iter": null,
+    "kf": "[{\"offset\":0,\"easing\":\"ease-in-out\",\"composite\":\"auto\",\"transform\":\"scale(1)\",\"computedOffset\":0},{\"offset\":0.5,\"easing\":\"ease-in-out\",\"composite\":\"auto\",\"transform\":\"scale(1.1)\",\"computedOffset\":0.5},{\"offset\":1,\"easing\":\"ease-in-out\",\"composite\":\"auto\",\"tran"
+   }
+  ]
+ },
+ "hover": [
+  {
+   "n": "A",
+   "bg": "rgb(194, 241, 60)",
+   "bgi": "none",
+   "sh": "none",
+   "t": "none",
+   "r": "50px"
+  },
+  {
+   "n": "DIV",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgi": "none",
+   "sh": "none",
+   "t": "none",
+   "r": "0px"
+  },
+  {
+   "n": "HEADER",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgi": "none",
+   "sh": "none",
+   "t": "none",
+   "r": "0px"
+  },
+  {
+   "n": "DIV",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgi": "none",
+   "sh": "none",
+   "t": "none",
+   "r": "0px"
+  }
+ ],
+ "page": {
+  "vw": 1440,
+  "pageHeight": 900,
+  "title": "Grainient - Shader Gradient Editor",
+  "htmlBg": "rgba(0, 0, 0, 0)",
+  "bodyBg": "rgb(255, 255, 255)",
+  "bodyColor": "rgb(23, 23, 23)",
+  "colorScheme": "normal",
+  "h1": {
+   "text": "Goodbye 👋 Boring Designs, Hello Grainient!",
+   "family": "__inter_53f2d8, __inter_Fallback_53f2d8, system-ui, sans-serif",
+   "size": "60px",
+   "weight": "500",
+   "lh": "72px",
+   "ls": "normal",
+   "color": "rgb(255, 255, 255)",
+   "tt": "none",
+   "align": "center",
+   "w": 800,
+   "h": 144,
+   "top": 309,
+   "left": 320,
+   "tag": "h1",
+   "balance": "wrap"
+  },
+  "largestHeroText": {
+   "text": "Goodbye 👋 Boring Designs, Hello Grainient!",
+   "family": "__inter_53f2d8, __inter_Fallback_53f2d8, system-ui, sans-serif",
+   "size": "60px",
+   "weight": "500",
+   "lh": "72px",
+   "ls": "normal",
+   "color": "rgb(255, 255, 255)",
+   "tt": "none",
+   "align": "center",
+   "w": 800,
+   "h": 144,
+   "top": 309,
+   "left": 320,
+   "tag": "h1",
+   "balance": "wrap"
+  },
+  "h2": [],
+  "h3": [],
+  "p": [
+   {
+    "text": "Try Grainient's Shader gradient in Real-time for your next design proj",
+    "family": "__inter_53f2d8, __inter_Fallback_53f2d8, system-ui, sans-serif",
+    "size": "19px",
+    "weight": "400",
+    "lh": "28.5px",
+    "ls": "normal",
+    "color": "rgb(255, 255, 255)",
+    "tt": "none",
+    "align": "center",
+    "w": 720,
+    "h": 29,
+    "top": 471,
+    "left": 360,
+    "tag": "p",
+    "balance": "wrap"
+   }
+  ],
+  "heroP": {
+   "text": "Try Grainient's Shader gradient in Real-time for your next design proj",
+   "family": "__inter_53f2d8, __inter_Fallback_53f2d8, system-ui, sans-serif",
+   "size": "19px",
+   "weight": "400",
+   "lh": "28.5px",
+   "ls": "normal",
+   "color": "rgb(255, 255, 255)",
+   "tt": "none",
+   "align": "center",
+   "w": 720,
+   "h": 29,
+   "top": 471,
+   "left": 360,
+   "tag": "p",
+   "balance": "wrap"
+  },
+  "typeScale": [
+   [
+    "__inter_53f2d8|19|400",
+    74
+   ],
+   [
+    "__inter_53f2d8|60|500",
+    43
+   ],
+   [
+    "__inter_53f2d8|13|400",
+    36
+   ],
+   [
+    "__inter_53f2d8|13|600",
+    12
+   ],
+   [
+    "__inter_53f2d8|18|500",
+    11
+   ],
+   [
+    "__inter_53f2d8|18|700",
+    10
+   ],
+   [
+    "__inter_53f2d8|10|600",
+    4
+   ]
+  ],
+  "fontFamiliesUsed": [
+   [
+    "__inter_53f2d8",
+    11
+   ]
+  ],
+  "sizesDistinct": [
+   10,
+   13,
+   18,
+   19,
+   60
+  ],
+  "lsHist": [
+   [
+    "normal",
+    8
+   ],
+   [
+    "-0.025em",
+    2
+   ],
+   [
+    "0.050em",
+    1
+   ]
+  ],
+  "nav": {
+   "tag": "HEADER",
+   "h": 78,
+   "outerH": 78,
+   "top": 0,
+   "w": 1440,
+   "position": "fixed",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgHeader": "rgba(0, 0, 0, 0)",
+   "backdrop": "none",
+   "bb": "0px solid rgb(229, 231, 235)",
+   "shadow": "none",
+   "contentLeft": 40,
+   "contentRight": 1400,
+   "nLinks": 7,
+   "linkTexts": [
+    "Grainient.",
+    "Collections",
+    "Pricing",
+    "Freebies",
+    "FAQ",
+    "Request",
+    "Go Unlimited"
+   ],
+   "linkTypo": [
+    {
+     "text": "Grainient.",
+     "family": "__inter_53f2d8, __inter_Fallback_53f2d8, system-ui, sans-serif",
+     "size": "16px",
+     "weight": "400",
+     "lh": "24px",
+     "ls": "normal",
+     "color": "rgb(23, 23, 23)",
+     "tt": "none",
+     "align": "start",
+     "w": 118,
+     "h": 28,
+     "top": 25,
+     "left": 40,
+     "tag": "a",
+     "balance": "wrap"
+    },
+    {
+     "text": "Collections",
+     "family": "__inter_53f2d8, __inter_Fallback_53f2d8, system-ui, sans-serif",
+     "size": "13px",
+     "weight": "400",
+     "lh": "19.5px",
+     "ls": "normal",
+     "color": "rgba(255, 255, 255, 0.8)",
+     "tt": "none",
+     "align": "start",
+     "w": 100,
+     "h": 32,
+     "top": 23,
+     "left": 505,
+     "tag": "a",
+     "balance": "wrap"
+    },
+    {
+     "text": "Pricing",
+     "family": "__inter_53f2d8, __inter_Fallback_53f2d8, system-ui, sans-serif",
+     "size": "13px",
+     "weight": "400",
+     "lh": "19.5px",
+     "ls": "normal",
+     "color": "rgba(255, 255, 255, 0.8)",
+     "tt": "none",
+     "align": "start",
+     "w": 75,
+     "h": 32,
+     "top": 23,
+     "left": 610,
+     "tag": "a",
+     "balance": "wrap"
+    }
+   ],
+   "hasLogoSvgOrImg": true,
+   "px": "40px/40px"
+  },
+  "ctas": [
+   {
+    "text": "Go Unlimited",
+    "inHeader": true,
+    "kind": "filled",
+    "h": 36,
+    "w": 133,
+    "radius": "50px",
+    "bg": "rgb(194, 241, 60)",
+    "color": "rgb(0, 0, 0)",
+    "border": null,
+    "size": "13px",
+    "weight": "600",
+    "pad": "8px 16px",
+    "shadow": null,
+    "family": "__inter_53f2d8"
+   },
+   {
+    "text": "Get Started",
+    "inHeader": false,
+    "kind": "filled",
+    "h": 51,
+    "w": 173,
+    "radius": "50px",
+    "bg": "rgb(240, 240, 240)",
+    "color": "rgb(17, 24, 39)",
+    "border": null,
+    "size": "18px",
+    "weight": "500",
+    "pad": "12px 40px",
+    "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px",
+    "family": "__inter_53f2d8"
+   },
+   {
+    "text": "MENU",
+    "inHeader": false,
+    "kind": "filled",
+    "h": 60,
+    "w": 60,
+    "radius": "50%",
+    "bg": "rgb(19, 20, 21)",
+    "color": "rgb(255, 255, 255)",
+    "border": "1px solid rgba(255, 255, 255, 0.1)",
+    "size": "10px",
+    "weight": "600",
+    "pad": "0px 0px",
+    "shadow": null,
+    "family": "__inter_53f2d8"
+   }
+  ],
+  "chain": [
+   {
+    "tag": "h1.big",
+    "w": 800,
+    "maxW": "800px",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "center"
+   },
+   {
+    "tag": "div.inner",
+    "w": 1440,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "center"
+   },
+   {
+    "tag": "section.hero_content",
+    "w": 1440,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "center"
+   },
+   {
+    "tag": "div.relative",
+    "w": 1440,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "block",
+    "ta": "start"
+   },
+   {
+    "tag": "body.font-sans",
+    "w": 1440,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "block",
+    "ta": "start"
+   }
+  ],
+  "sections": [
+   {
+    "cls": "hero_content",
+    "tag": "section",
+    "top": 0,
+    "h": 900,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 309,
+    "effPb": 309,
+    "contentW": 800,
+    "contentL": 320,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "Goodbye 👋 Boring Designs, Hello Grainient!",
+    "hSize": "60px",
+    "hAlign": "center"
+   }
+  ],
+  "radiusAll": [
+   [
+    "9999px",
+    6
+   ],
+   [
+    "50px",
+    3
+   ],
+   [
+    "50%",
+    1
+   ]
+  ],
+  "radiusCards": [],
+  "radiusMedia": [
+   [
+    "50px",
+    1
+   ]
+  ],
+  "radiusInputs": [],
+  "shadows": [
+   [
+    "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px",
+    1
+   ]
+  ],
+  "borders": [
+   [
+    "1px solid rgba(255, 255, 255, 0.08)",
+    1
+   ],
+   [
+    "1px solid rgba(255, 255, 255, 0.1)",
+    1
+   ]
+  ],
+  "cardBgs": [],
+  "grids": [],
+  "flexGaps": [
+   [
+    "8px",
+    1
+   ],
+   [
+    "4px",
+    1
+   ],
+   [
+    "16px",
+    1
+   ],
+   [
+    "6px",
+    1
+   ]
+  ],
+  "bgByArea": [
+   [
+    "rgb(240, 240, 240)",
+    "1%"
+   ],
+   [
+    "rgb(194, 241, 60)",
+    "0%"
+   ],
+   [
+    "rgb(19, 20, 21)",
+    "0%"
+   ]
+  ],
+  "textColors": [
+   [
+    "rgba(255, 255, 255, 0.8)",
+    5
+   ],
+   [
+    "rgb(255, 255, 255)",
+    4
+   ],
+   [
+    "rgb(0, 0, 0)",
+    1
+   ],
+   [
+    "rgb(17, 24, 39)",
+    1
+   ]
+  ],
+  "linkColors": [
+   [
+    "rgba(255, 255, 255, 0.8)",
+    5
+   ],
+   [
+    "rgb(255, 255, 255)",
+    1
+   ],
+   [
+    "rgb(0, 0, 0)",
+    1
+   ]
+  ],
+  "counts": {
+   "video": 0,
+   "canvas": 1,
+   "iframe": 0,
+   "svg": 0,
+   "img": 3,
+   "picture": 0,
+   "spline": 0,
+   "lottie": 0
+  },
+  "heroMedia": {
+   "video": false,
+   "canvas": true,
+   "bigImg": 0
+  },
+  "libs": {
+   "gsap": false,
+   "lenis": false,
+   "locomotive": false,
+   "next": true,
+   "framer": false,
+   "webflow": false,
+   "three": false,
+   "astro": false,
+   "nuxt": false,
+   "tailwindish": true
+  },
+  "sticky": 0,
+  "fixed": 2,
+  "snap": 0
+ },
+ "pageHeight": 900
+}

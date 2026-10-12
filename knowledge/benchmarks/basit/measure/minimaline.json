@@ -1,0 +1,1528 @@
+{
+ "id": "minimaline",
+ "url": "https://minimaline.framer.website/",
+ "date": "2026-10-11",
+ "hero": {
+  "bgImages": [],
+  "filters": [],
+  "blends": [],
+  "transforms": [
+   {
+    "n": "div",
+    "r": [
+     1397,
+     649,
+     6,
+     6
+    ],
+    "t": "matrix(0.707107, 0.707107, -0.707107, 0.707107, 0, 0)",
+    "persp": "none",
+    "op": "1"
+   },
+   {
+    "n": "div",
+    "r": [
+     1397,
+     649,
+     6,
+     6
+    ],
+    "t": "matrix(0.707107, -0.707107, 0.707107, 0.707107, 0, 0)",
+    "persp": "none",
+    "op": "1"
+   },
+   {
+    "n": "p",
+    "r": [
+     1350,
+     861,
+     0,
+     0
+    ],
+    "t": "matrix(0.001, 0, 0, 0.001, 0, 0)",
+    "persp": "none",
+    "op": "1"
+   }
+  ],
+  "perspective": [],
+  "media": [
+   {
+    "tag": "IMG",
+    "n": "div",
+    "r": [
+     10,
+     53,
+     1420,
+     837
+    ],
+    "src": "https://framerusercontent.com/images/PhQLccbx0pYEOEXYe0RjcjyIJw.png?width=3416&height=2076",
+    "fit": "cover",
+    "radius": "10px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": [
+     1420,
+     862
+    ]
+   },
+   {
+    "tag": "IMG",
+    "n": "div",
+    "r": [
+     0,
+     1390,
+     1000,
+     670
+    ],
+    "src": "https://framerusercontent.com/images/QQRsJthTsD4pgyznLAbK8PzzvXw.png?width=1056&height=673",
+    "fit": "cover",
+    "radius": "0px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": [
+     1056,
+     673
+    ]
+   },
+   {
+    "tag": "IMG",
+    "n": "div",
+    "r": [
+     1010,
+     1390,
+     1000,
+     670
+    ],
+    "src": "https://framerusercontent.com/images/HI5f3GMVxQArmhU3FCcQvbcDenE.png?width=1056&height=673",
+    "fit": "cover",
+    "radius": "0px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": [
+     1056,
+     673
+    ]
+   },
+   {
+    "tag": "IMG",
+    "n": "div",
+    "r": [
+     2020,
+     1390,
+     1000,
+     670
+    ],
+    "src": "https://framerusercontent.com/images/9mFWPEbitQLaIX0HZwmDNcKQBmc.png?width=1056&height=673",
+    "fit": "cover",
+    "radius": "0px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": [
+     1056,
+     673
+    ]
+   },
+   {
+    "tag": "IMG",
+    "n": "div",
+    "r": [
+     3030,
+     1390,
+     1000,
+     670
+    ],
+    "src": "https://framerusercontent.com/images/niiClJXtAl9QtLAOAs5XP09DLc.png?width=1056&height=673",
+    "fit": "cover",
+    "radius": "0px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": [
+     1056,
+     673
+    ]
+   },
+   {
+    "tag": "IMG",
+    "n": "div",
+    "r": [
+     4040,
+     1390,
+     1000,
+     670
+    ],
+    "src": "https://framerusercontent.com/images/I5XGnEmuV8fDsViyidUKyIFUcnY.png?width=1056&height=673",
+    "fit": "cover",
+    "radius": "0px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": [
+     1056,
+     673
+    ]
+   },
+   {
+    "tag": "IMG",
+    "n": "div",
+    "r": [
+     5050,
+     1390,
+     1000,
+     670
+    ],
+    "src": "https://framerusercontent.com/images/QQRsJthTsD4pgyznLAbK8PzzvXw.png?width=1056&height=673",
+    "fit": "cover",
+    "radius": "0px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": [
+     1056,
+     673
+    ]
+   },
+   {
+    "tag": "IMG",
+    "n": "div",
+    "r": [
+     6060,
+     1390,
+     1000,
+     670
+    ],
+    "src": "https://framerusercontent.com/images/HI5f3GMVxQArmhU3FCcQvbcDenE.png?width=1056&height=673",
+    "fit": "cover",
+    "radius": "0px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": [
+     1056,
+     673
+    ]
+   },
+   {
+    "tag": "IMG",
+    "n": "div",
+    "r": [
+     7070,
+     1390,
+     1000,
+     670
+    ],
+    "src": "https://framerusercontent.com/images/9mFWPEbitQLaIX0HZwmDNcKQBmc.png?width=1056&height=673",
+    "fit": "cover",
+    "radius": "0px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": [
+     1056,
+     673
+    ]
+   },
+   {
+    "tag": "IMG",
+    "n": "div",
+    "r": [
+     8080,
+     1390,
+     1000,
+     670
+    ],
+    "src": "https://framerusercontent.com/images/niiClJXtAl9QtLAOAs5XP09DLc.png?width=1056&height=673",
+    "fit": "cover",
+    "radius": "0px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": [
+     1056,
+     673
+    ]
+   },
+   {
+    "tag": "IMG",
+    "n": "div",
+    "r": [
+     9090,
+     1390,
+     1000,
+     670
+    ],
+    "src": "https://framerusercontent.com/images/I5XGnEmuV8fDsViyidUKyIFUcnY.png?width=1056&height=673",
+    "fit": "cover",
+    "radius": "0px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": [
+     1056,
+     673
+    ]
+   },
+   {
+    "tag": "IMG",
+    "n": "div",
+    "r": [
+     10100,
+     1390,
+     1000,
+     670
+    ],
+    "src": "https://framerusercontent.com/images/QQRsJthTsD4pgyznLAbK8PzzvXw.png?width=1056&height=673",
+    "fit": "cover",
+    "radius": "0px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": [
+     1056,
+     673
+    ]
+   },
+   {
+    "tag": "IMG",
+    "n": "div",
+    "r": [
+     11110,
+     1390,
+     1000,
+     670
+    ],
+    "src": "https://framerusercontent.com/images/HI5f3GMVxQArmhU3FCcQvbcDenE.png?width=1056&height=673",
+    "fit": "cover",
+    "radius": "0px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": [
+     1056,
+     673
+    ]
+   },
+   {
+    "tag": "IMG",
+    "n": "div",
+    "r": [
+     12120,
+     1390,
+     1000,
+     670
+    ],
+    "src": "https://framerusercontent.com/images/9mFWPEbitQLaIX0HZwmDNcKQBmc.png?width=1056&height=673",
+    "fit": "cover",
+    "radius": "0px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": [
+     1056,
+     673
+    ]
+   },
+   {
+    "tag": "IMG",
+    "n": "div",
+    "r": [
+     13130,
+     1390,
+     1000,
+     670
+    ],
+    "src": "https://framerusercontent.com/images/niiClJXtAl9QtLAOAs5XP09DLc.png?width=1056&height=673",
+    "fit": "cover",
+    "radius": "0px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": [
+     1056,
+     673
+    ]
+   },
+   {
+    "tag": "IMG",
+    "n": "div",
+    "r": [
+     14140,
+     1390,
+     1000,
+     670
+    ],
+    "src": "https://framerusercontent.com/images/I5XGnEmuV8fDsViyidUKyIFUcnY.png?width=1056&height=673",
+    "fit": "cover",
+    "radius": "0px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": [
+     1056,
+     673
+    ]
+   },
+   {
+    "tag": "VIDEO",
+    "n": "div",
+    "r": [
+     1210,
+     632,
+     210,
+     158
+    ],
+    "src": "https://framerusercontent.com/assets/TNg2xfI1CEpQsOAJClKAFpU1XR4.mp4",
+    "fit": "cover",
+    "radius": "0px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": null
+   }
+  ],
+  "svgNoise": 0,
+  "turb": [],
+  "canvas": [],
+  "radii": [
+   "Desktop 99x33 r=50px bg=rgb(236, 236, 236) bd=0px rgb(0, 0, 238) sh=none",
+   "img holder 1420x837 r=10px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 0) sh=none",
+   "div 1420x837 r=10px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 0) sh=none",
+   "div 1420x837 r=10px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 0) sh=none",
+   "img 1420x837 r=10px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 0) sh=none",
+   "Desktop 142x36 r=10px bg=rgb(0, 0, 0) bd=0px rgb(0, 0, 238) sh=rgba(0, 0, 0, 0.3) 0px 0px 20px 5px",
+   "Desktop 210x158 r=5px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 238) sh=none",
+   "Backdrop 138x36 r=10px bg=rgb(255, 255, 255) bd=0px rgb(0, 0, 238) sh=rgba(0, 0, 0, 0.17) 0px 0.602187px 1.56569px -1.5px, rgba(0, 0, 0, 0.14) 0px 2.28853px 5.95019px -3px, rgba(0, 0, 0, 0.02) 0px 10px 26px -4.",
+   "Bottom 140x38 r=11px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 238) sh=rgb(0, 0, 0) 0px 0px 0px 1px inset",
+   "Border 140x38 r=11px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 238) sh=rgb(0, 0, 0) 0px 0px 0px 1px inset"
+  ],
+  "texts": [
+   "Light | Inter 14px/16.8px w400 ls=-0.28px c=rgb(186, 186, 186) tt=none @656,17,31,17",
+   "Light | Inter 14px/16.8px w400 ls=-0.28px c=rgb(0, 0, 0) tt=none @656,38,31,17",
+   "/ | Inter 14px/16.8px w400 ls=-0.28px c=rgb(186, 186, 186) tt=none @692,17,5,17",
+   "Dark | Inter 14px/16.8px w400 ls=-0.28px c=rgb(186, 186, 186) tt=none @702,17,30,17",
+   "Dark | Inter 14px/16.8px w400 ls=-0.28px c=rgb(0, 0, 0) tt=none @702,38,30,17",
+   "/ | Inter 14px/16.8px w400 ls=-0.28px c=rgb(186, 186, 186) tt=none @737,17,5,17",
+   "Mood | Inter 14px/16.8px w400 ls=-0.28px c=rgb(0, 0, 0) tt=none @747,17,37,17",
+   "Contact | Inter 14px/16.8px w400 ls=-0.28px c=rgb(0, 0, 0) tt=none @1261,18,50,17",
+   "Contact | Inter 14px/16.8px w400 ls=-0.28px c=rgb(0, 0, 0) tt=none @1261,38,50,17",
+   "Book a call | Inter 14px/16.8px w400 ls=-0.28px c=rgb(0, 0, 0) tt=none @1346,18,69,17",
+   "Book a call | Inter 14px/16.8px w400 ls=-0.28px c=rgb(255, 255, 255) tt=none @1346,38,69,17",
+   "K | Inter 16px/22.4px w500 ls=-0.32px c=rgb(255, 255, 255) tt=none @553,793,11,22",
+   "a | Inter 16px/22.4px w500 ls=-0.32px c=rgb(255, 255, 255) tt=none @563,793,9,22",
+   "i | Inter 16px/22.4px w500 ls=-0.32px c=rgb(255, 255, 255) tt=none @572,793,4,22",
+   "D | Inter 16px/22.4px w500 ls=-0.32px c=rgb(255, 255, 255) tt=none @580,793,11,22",
+   "u | Inter 16px/22.4px w500 ls=-0.32px c=rgb(255, 255, 255) tt=none @591,793,9,22",
+   "v | Inter 16px/22.4px w500 ls=-0.32px c=rgb(255, 255, 255) tt=none @600,793,9,22",
+   "a | Inter 16px/22.4px w500 ls=-0.32px c=rgb(255, 255, 255) tt=none @609,793,9,22",
+   "l | Inter 16px/22.4px w500 ls=-0.32px c=rgb(255, 255, 255) tt=none @618,793,4,22",
+   "l | Inter 16px/22.4px w500 ls=-0.32px c=rgb(255, 255, 255) tt=none @622,793,4,22",
+   "c | Inter 16px/22.4px w500 ls=-0.32px c=rgb(255, 255, 255) tt=none @629,793,9,22",
+   "r | Inter 16px/22.4px w500 ls=-0.32px c=rgb(255, 255, 255) tt=none @638,793,6,22",
+   "e | Inter 16px/22.4px w500 ls=-0.32px c=rgb(255, 255, 255) tt=none @644,793,9,22",
+   "a | Inter 16px/22.4px w500 ls=-0.32px c=rgb(255, 255, 255) tt=none @653,793,9,22",
+   "t | Inter 16px/22.4px w500 ls=-0.32px c=rgb(255, 255, 255) tt=none @662,793,5,22",
+   "e | Inter 16px/22.4px w500 ls=-0.32px c=rgb(255, 255, 255) tt=none @667,793,9,22",
+   "s | Inter 16px/22.4px w500 ls=-0.32px c=rgb(255, 255, 255) tt=none @676,793,8,22",
+   "b | Inter 16px/22.4px w500 ls=-0.32px c=rgb(255, 255, 255) tt=none @689,793,10,22",
+   "r | Inter 16px/22.4px w500 ls=-0.32px c=rgb(255, 255, 255) tt=none @698,793,6,22",
+   "a | Inter 16px/22.4px w500 ls=-0.32px c=rgb(255, 255, 255) tt=none @704,793,9,22",
+   "n | Inter 16px/22.4px w500 ls=-0.32px c=rgb(255, 255, 255) tt=none @713,793,9,22",
+   "d | Inter 16px/22.4px w500 ls=-0.32px c=rgb(255, 255, 255) tt=none @722,793,10,22",
+   "u | Inter 16px/22.4px w500 ls=-0.32px c=rgb(255, 255, 255) tt=none @736,793,9,22",
+   "n | Inter 16px/22.4px w500 ls=-0.32px c=rgb(255, 255, 255) tt=none @745,793,9,22",
+   "i | Inter 16px/22.4px w500 ls=-0.32px c=rgb(255, 255, 255) tt=none @754,793,4,22",
+   "v | Inter 16px/22.4px w500 ls=-0.32px c=rgb(255, 255, 255) tt=none @758,793,9,22",
+   "e | Inter 16px/22.4px w500 ls=-0.32px c=rgb(255, 255, 255) tt=none @767,793,9,22",
+   "r | Inter 16px/22.4px w500 ls=-0.32px c=rgb(255, 255, 255) tt=none @776,793,6,22",
+   "s | Inter 16px/22.4px w500 ls=-0.32px c=rgb(255, 255, 255) tt=none @782,793,8,22",
+   "e | Inter 16px/22.4px w500 ls=-0.32px c=rgb(255, 255, 255) tt=none @790,793,9,22",
+   "s | Inter 16px/22.4px w500 ls=-0.32px c=rgb(255, 255, 255) tt=none @799,793,8,22",
+   "a | Inter 16px/22.4px w500 ls=-0.32px c=rgb(255, 255, 255) tt=none @811,793,9,22",
+   "n | Inter 16px/22.4px w500 ls=-0.32px c=rgb(255, 255, 255) tt=none @820,793,9,22",
+   "d | Inter 16px/22.4px w500 ls=-0.32px c=rgb(255, 255, 255) tt=none @830,793,10,22",
+   "d | Inter 16px/22.4px w500 ls=-0.32px c=rgb(255, 255, 255) tt=none @843,793,10,22",
+   "i | Inter 16px/22.4px w500 ls=-0.32px c=rgb(255, 255, 255) tt=none @853,793,4,22",
+   "g | Inter 16px/22.4px w500 ls=-0.32px c=rgb(255, 255, 255) tt=none @856,793,10,22",
+   "i | Inter 16px/22.4px w500 ls=-0.32px c=rgb(255, 255, 255) tt=none @866,793,4,22",
+   "t | Inter 16px/22.4px w500 ls=-0.32px c=rgb(255, 255, 255) tt=none @870,793,5,22",
+   "a | Inter 16px/22.4px w500 ls=-0.32px c=rgb(255, 255, 255) tt=none @875,793,9,22",
+   "l | Inter 16px/22.4px w500 ls=-0.32px c=rgb(255, 255, 255) tt=none @884,793,4,22",
+   "n | Inter 16px/22.4px w500 ls=-0.32px c=rgb(255, 255, 255) tt=none @503,815,9,22",
+   "a | Inter 16px/22.4px w500 ls=-0.32px c=rgb(255, 255, 255) tt=none @512,815,9,22",
+   "r | Inter 16px/22.4px w500 ls=-0.32px c=rgb(255, 255, 255) tt=none @521,815,6,22",
+   "r | Inter 16px/22.4px w500 ls=-0.32px c=rgb(255, 255, 255) tt=none @527,815,6,22",
+   "a | Inter 16px/22.4px w500 ls=-0.32px c=rgb(255, 255, 255) tt=none @532,815,9,22",
+   "t | Inter 16px/22.4px w500 ls=-0.32px c=rgb(255, 255, 255) tt=none @541,815,5,22",
+   "i | Inter 16px/22.4px w500 ls=-0.32px c=rgb(255, 255, 255) tt=none @546,815,4,22",
+   "v | Inter 16px/22.4px w500 ls=-0.32px c=rgb(255, 255, 255) tt=none @550,815,9,22",
+   "e | Inter 16px/22.4px w500 ls=-0.32px c=rgb(255, 255, 255) tt=none @559,815,9,22"
+  ],
+  "buttons": [
+   {
+    "t": "Light Light",
+    "r": [
+     656,
+     17,
+     31,
+     17
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "Dark Dark",
+    "r": [
+     702,
+     17,
+     30,
+     17
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "Mood",
+    "r": [
+     747,
+     17,
+     37,
+     17
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "Contact Contact",
+    "r": [
+     1261,
+     18,
+     50,
+     17
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "Book a call Book a call",
+    "r": [
+     1331,
+     10,
+     99,
+     33
+    ],
+    "bg": "rgb(236, 236, 236)",
+    "bgi": "none",
+    "radius": "50px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "Get This Template",
+    "r": [
+     1278,
+     799,
+     142,
+     36
+    ],
+    "bg": "rgb(0, 0, 0)",
+    "bgi": "none",
+    "radius": "10px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "rgba(0, 0, 0, 0.3) 0px 0px 20px 5px",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "Monarque Latest Template",
+    "r": [
+     1210,
+     632,
+     210,
+     158
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "5px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   }
+  ],
+  "fonts": [
+   "Inter 500",
+   "Inter 400",
+   "Inter 600",
+   "Switzer 600",
+   "Inter Placeholder normal",
+   "Switzer Placeholder normal"
+  ],
+  "appear": "{\"1enrruw\":{\"default\":{\"initial\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1.1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":0},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0,\"delay\":0,\"duration\":1,\"type\":\"spring\"},\"x\":0,\"y\":0}},\"tzwpjo\":{\"initial\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1.1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":0},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0,\"delay\":0,\"duration\":1,\"type\":\"spring\"},\"x\":0,\"y\":0}},\"3x9xmo\":{\"initial\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1.1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":0},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0,\"delay\":0,\"duration\":1,\"type\":\"spring\"},\"x\":0,\"y\":0}}}}",
+  "anims": [
+   {
+    "name": "Animation",
+    "tgt": "ul",
+    "dur": 101000,
+    "delay": 0,
+    "ease": "linear",
+    "iter": null,
+    "kf": "[{\"offset\":null,\"easing\":\"linear\",\"composite\":\"auto\",\"transform\":\"translateX(0px)\",\"computedOffset\":0},{\"offset\":null,\"easing\":\"linear\",\"composite\":\"auto\",\"transform\":\"translateX(-5050px)\",\"computedOffset\":1}]"
+   },
+   {
+    "name": "Animation",
+    "tgt": "ul",
+    "dur": 101000,
+    "delay": 0,
+    "ease": "linear",
+    "iter": null,
+    "kf": "[{\"offset\":null,\"easing\":\"linear\",\"composite\":\"auto\",\"transform\":\"translateX(0px)\",\"computedOffset\":0},{\"offset\":null,\"easing\":\"linear\",\"composite\":\"auto\",\"transform\":\"translateX(5050px)\",\"computedOffset\":1}]"
+   },
+   {
+    "name": "Animation",
+    "tgt": "ul",
+    "dur": 101000,
+    "delay": 0,
+    "ease": "linear",
+    "iter": null,
+    "kf": "[{\"offset\":null,\"easing\":\"linear\",\"composite\":\"auto\",\"transform\":\"translateX(0px)\",\"computedOffset\":0},{\"offset\":null,\"easing\":\"linear\",\"composite\":\"auto\",\"transform\":\"translateX(-5050px)\",\"computedOffset\":1}]"
+   },
+   {
+    "name": "Animation",
+    "tgt": "ul",
+    "dur": 101000,
+    "delay": 0,
+    "ease": "linear",
+    "iter": null,
+    "kf": "[{\"offset\":null,\"easing\":\"linear\",\"composite\":\"auto\",\"transform\":\"translateX(0px)\",\"computedOffset\":0},{\"offset\":null,\"easing\":\"linear\",\"composite\":\"auto\",\"transform\":\"translateX(5050px)\",\"computedOffset\":1}]"
+   }
+  ]
+ },
+ "hover": [
+  {
+   "n": "DIV",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgi": "none",
+   "sh": "none",
+   "t": "none",
+   "r": "0px"
+  },
+  {
+   "n": "DIV",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgi": "none",
+   "sh": "none",
+   "t": "matrix(1, 0, 0, 1, 0, 0.762554)",
+   "r": "0px"
+  },
+  {
+   "n": "text",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgi": "none",
+   "sh": "none",
+   "t": "none",
+   "r": "0px"
+  },
+  {
+   "n": "A",
+   "bg": "rgb(45, 45, 45)",
+   "bgi": "none",
+   "sh": "none",
+   "t": "none",
+   "r": "50px"
+  }
+ ],
+ "page": {
+  "vw": 1440,
+  "pageHeight": 16448,
+  "title": "Minimaline - Mood",
+  "htmlBg": "rgba(0, 0, 0, 0)",
+  "bodyBg": "rgb(255, 255, 255)",
+  "bodyColor": "rgb(0, 0, 0)",
+  "colorScheme": "normal",
+  "h1": {
+   "text": "Kai Duvall creates brand universes and digital narratives that open li",
+   "family": "Inter, \"Inter Placeholder\", sans-serif",
+   "size": "16px",
+   "weight": "500",
+   "lh": "22.4px",
+   "ls": "-0.32px",
+   "color": "rgb(0, 0, 0)",
+   "tt": "none",
+   "align": "center",
+   "w": 1400,
+   "h": 67,
+   "top": 793,
+   "left": 20,
+   "tag": "h1",
+   "balance": "wrap"
+  },
+  "largestHeroText": {
+   "text": "Monarque",
+   "family": "Inter, \"Inter Placeholder\", sans-serif",
+   "size": "22px",
+   "weight": "600",
+   "lh": "26.4px",
+   "ls": "-0.88px",
+   "color": "rgb(255, 255, 255)",
+   "tt": "none",
+   "align": "start",
+   "w": 101,
+   "h": 26,
+   "top": 736,
+   "left": 1264,
+   "tag": "p",
+   "balance": "nowrap"
+  },
+  "h2": [
+   {
+    "text": "Qevlar AI",
+    "family": "Inter, \"Inter Placeholder\", sans-serif",
+    "size": "16px",
+    "weight": "500",
+    "lh": "22.4px",
+    "ls": "-0.32px",
+    "color": "rgb(0, 0, 0)",
+    "tt": "none",
+    "align": "start",
+    "w": 780,
+    "h": 22,
+    "top": 2052,
+    "left": 220,
+    "tag": "h2",
+    "balance": "wrap"
+   },
+   {
+    "text": "Even Realities",
+    "family": "Inter, \"Inter Placeholder\", sans-serif",
+    "size": "16px",
+    "weight": "500",
+    "lh": "22.4px",
+    "ls": "-0.32px",
+    "color": "rgb(0, 0, 0)",
+    "tt": "none",
+    "align": "start",
+    "w": 758,
+    "h": 22,
+    "top": 2858,
+    "left": 220,
+    "tag": "h2",
+    "balance": "wrap"
+   },
+   {
+    "text": "Watts®",
+    "family": "Inter, \"Inter Placeholder\", sans-serif",
+    "size": "16px",
+    "weight": "500",
+    "lh": "22.4px",
+    "ls": "-0.32px",
+    "color": "rgb(0, 0, 0)",
+    "tt": "none",
+    "align": "start",
+    "w": 780,
+    "h": 22,
+    "top": 3665,
+    "left": 220,
+    "tag": "h2",
+    "balance": "wrap"
+   },
+   {
+    "text": "Archform Framer Template",
+    "family": "Inter, \"Inter Placeholder\", sans-serif",
+    "size": "16px",
+    "weight": "500",
+    "lh": "22.4px",
+    "ls": "-0.32px",
+    "color": "rgb(0, 0, 0)",
+    "tt": "none",
+    "align": "start",
+    "w": 764,
+    "h": 22,
+    "top": 4472,
+    "left": 220,
+    "tag": "h2",
+    "balance": "wrap"
+   }
+  ],
+  "h3": [
+   {
+    "text": "Project Link",
+    "family": "Inter, \"Inter Placeholder\", sans-serif",
+    "size": "16px",
+    "weight": "500",
+    "lh": "22.4px",
+    "ls": "-0.32px",
+    "color": "rgb(0, 0, 0)",
+    "tt": "none",
+    "align": "start",
+    "w": 86,
+    "h": 22,
+    "top": 2052,
+    "left": 1050,
+    "tag": "h3",
+    "balance": "nowrap"
+   },
+   {
+    "text": "Project Link",
+    "family": "Inter, \"Inter Placeholder\", sans-serif",
+    "size": "16px",
+    "weight": "500",
+    "lh": "22.4px",
+    "ls": "-0.32px",
+    "color": "rgb(0, 0, 0)",
+    "tt": "none",
+    "align": "start",
+    "w": 86,
+    "h": 22,
+    "top": 2858,
+    "left": 1028,
+    "tag": "h3",
+    "balance": "nowrap"
+   }
+  ],
+  "p": [
+   {
+    "text": "Qevlar AI optimizes cybersecurity workflows with AI. I redesigned the ",
+    "family": "Inter, \"Inter Placeholder\", sans-serif",
+    "size": "13px",
+    "weight": "400",
+    "lh": "20.8px",
+    "ls": "normal",
+    "color": "rgb(76, 76, 76)",
+    "tt": "none",
+    "align": "start",
+    "w": 420,
+    "h": 62,
+    "top": 2084,
+    "left": 220,
+    "tag": "p",
+    "balance": "wrap"
+   },
+   {
+    "text": "Qevlar AI optimizes cybersecurity workflows with AI. I redesigned the ",
+    "family": "Inter, \"Inter Placeholder\", sans-serif",
+    "size": "13px",
+    "weight": "400",
+    "lh": "20.8px",
+    "ls": "normal",
+    "color": "rgb(76, 76, 76)",
+    "tt": "none",
+    "align": "start",
+    "w": 420,
+    "h": 62,
+    "top": 2891,
+    "left": 220,
+    "tag": "p",
+    "balance": "wrap"
+   },
+   {
+    "text": "Qevlar AI optimizes cybersecurity workflows with AI. I redesigned the ",
+    "family": "Inter, \"Inter Placeholder\", sans-serif",
+    "size": "13px",
+    "weight": "400",
+    "lh": "20.8px",
+    "ls": "normal",
+    "color": "rgb(76, 76, 76)",
+    "tt": "none",
+    "align": "start",
+    "w": 420,
+    "h": 62,
+    "top": 3698,
+    "left": 220,
+    "tag": "p",
+    "balance": "wrap"
+   }
+  ],
+  "heroP": {
+   "text": "Create a free website with Framer, the website builder loved by startu",
+   "family": "sans-serif",
+   "size": "12px",
+   "weight": "400",
+   "lh": "normal",
+   "ls": "normal",
+   "color": "rgb(0, 0, 238)",
+   "tt": "none",
+   "align": "start",
+   "w": 0,
+   "h": 0,
+   "top": 861,
+   "left": 1350,
+   "tag": "p",
+   "balance": "wrap"
+  },
+  "typeScale": [
+   [
+    "Inter|13|400",
+    2363
+   ],
+   [
+    "Inter|24|500",
+    372
+   ],
+   [
+    "Inter|14|400",
+    340
+   ],
+   [
+    "Inter|16|500",
+    301
+   ],
+   [
+    "Inter|36|500",
+    133
+   ],
+   [
+    "sans-serif|12|400",
+    97
+   ],
+   [
+    "Switzer|14|600",
+    17
+   ],
+   [
+    "Inter|22|600",
+    8
+   ]
+  ],
+  "fontFamiliesUsed": [
+   [
+    "Inter",
+    378
+   ],
+   [
+    "Switzer",
+    1
+   ],
+   [
+    "sans-serif",
+    1
+   ]
+  ],
+  "sizesDistinct": [
+   12,
+   13,
+   14,
+   16,
+   22,
+   24,
+   36
+  ],
+  "lsHist": [
+   [
+    "-0.020em",
+    320
+   ],
+   [
+    "normal",
+    58
+   ],
+   [
+    "-0.040em",
+    2
+   ]
+  ],
+  "nav": {
+   "tag": "NAV",
+   "h": 53,
+   "outerH": 53,
+   "top": 0,
+   "w": 1440,
+   "position": "relative",
+   "bg": "rgb(255, 255, 255)",
+   "bgHeader": "rgb(255, 255, 255)",
+   "backdrop": "none",
+   "bb": "0px none rgb(0, 0, 0)",
+   "shadow": "none",
+   "contentLeft": 656,
+   "contentRight": 1430,
+   "nLinks": 5,
+   "linkTexts": [
+    "Light Light",
+    "Dark Dark",
+    "Mood",
+    "Contact Contact",
+    "Book a call Book a call"
+   ],
+   "linkTypo": [
+    {
+     "text": "Light Light",
+     "family": "sans-serif",
+     "size": "12px",
+     "weight": "400",
+     "lh": "normal",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "tt": "none",
+     "align": "start",
+     "w": 31,
+     "h": 17,
+     "top": 17,
+     "left": 656,
+     "tag": "a",
+     "balance": "wrap"
+    },
+    {
+     "text": "Dark Dark",
+     "family": "sans-serif",
+     "size": "12px",
+     "weight": "400",
+     "lh": "normal",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "tt": "none",
+     "align": "start",
+     "w": 30,
+     "h": 17,
+     "top": 17,
+     "left": 702,
+     "tag": "a",
+     "balance": "wrap"
+    },
+    {
+     "text": "Mood",
+     "family": "sans-serif",
+     "size": "12px",
+     "weight": "400",
+     "lh": "normal",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "tt": "none",
+     "align": "start",
+     "w": 37,
+     "h": 17,
+     "top": 17,
+     "left": 747,
+     "tag": "a",
+     "balance": "wrap"
+    }
+   ],
+   "hasLogoSvgOrImg": false,
+   "px": "10px/10px"
+  },
+  "ctas": [
+   {
+    "text": "Book a call Book a call",
+    "inHeader": true,
+    "kind": "filled",
+    "h": 33,
+    "w": 99,
+    "radius": "50px",
+    "bg": "rgb(236, 236, 236)",
+    "color": "rgb(0, 0, 238)",
+    "border": null,
+    "size": "12px",
+    "weight": "400",
+    "pad": "8px 15px",
+    "shadow": null,
+    "family": "sans-serif"
+   },
+   {
+    "text": "Get This Template",
+    "inHeader": false,
+    "kind": "filled",
+    "h": 36,
+    "w": 142,
+    "radius": "10px",
+    "bg": "rgb(0, 0, 0)",
+    "color": "rgb(0, 0, 238)",
+    "border": null,
+    "size": "12px",
+    "weight": "400",
+    "pad": "0px 0px",
+    "shadow": "rgba(0, 0, 0, 0.3) 0px 0px 20px 5px",
+    "family": "sans-serif"
+   }
+  ],
+  "chain": [
+   {
+    "tag": "h1.framer-text",
+    "w": 1400,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "block",
+    "ta": "center"
+   },
+   {
+    "tag": "div.framer-12q4kf1",
+    "w": 1400,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "div.ssr-variant",
+    "w": 0,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "contents",
+    "ta": "start"
+   },
+   {
+    "tag": "div.framer-4f4oml",
+    "w": 1440,
+    "maxW": "none",
+    "pl": "20px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "section.framer-1g154hq",
+    "w": 1440,
+    "maxW": "none",
+    "pl": "10px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "main.framer-2rpp40",
+    "w": 1440,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "div.framer-H5brw",
+    "w": 0,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "contents",
+    "ta": "start"
+   },
+   {
+    "tag": "div.framer-TRVDU",
+    "w": 1440,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "div",
+    "w": 1440,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "block",
+    "ta": "start"
+   }
+  ],
+  "sections": [
+   {
+    "cls": "framer-1g154hq",
+    "tag": "section",
+    "top": 0,
+    "h": 900,
+    "pt": "53px",
+    "pb": "10px",
+    "effPt": 793,
+    "effPb": 40,
+    "contentW": 1400,
+    "contentL": 20,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "Kai Duvall creates brand universes and digital nar",
+    "hSize": "16px",
+    "hAlign": "center"
+   },
+   {
+    "cls": "framer-1nnpcx7",
+    "tag": "section",
+    "top": 1390,
+    "h": 3177,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 662,
+    "effPb": 0,
+    "contentW": 1000,
+    "contentL": 220,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "Qevlar AI",
+    "hSize": "16px",
+    "hAlign": "start"
+   },
+   {
+    "cls": "framer-159cuiy",
+    "tag": "section",
+    "top": 4747,
+    "h": 390,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 0,
+    "effPb": 0,
+    "contentW": 997,
+    "contentL": 220,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "I take care of design and development — no wasted ",
+    "hSize": "24px",
+    "hAlign": "start"
+   },
+   {
+    "cls": "framer-19q1y2v",
+    "tag": "section",
+    "top": 5595,
+    "h": 326,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 0,
+    "effPb": 0,
+    "contentW": 1000,
+    "contentL": 220,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "",
+    "hSize": null,
+    "hAlign": null
+   },
+   {
+    "cls": "framer-1kedwjr",
+    "tag": "section",
+    "top": 6101,
+    "h": 291,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 0,
+    "effPb": 0,
+    "contentW": 1000,
+    "contentL": 220,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "Designing the journey, not just the outcome",
+    "hSize": "24px",
+    "hAlign": "start"
+   },
+   {
+    "cls": "framer-8b5lqa",
+    "tag": "section",
+    "top": 6572,
+    "h": 188,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 0,
+    "effPb": 0,
+    "contentW": 1000,
+    "contentL": 220,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "Features & Recognitions",
+    "hSize": "24px",
+    "hAlign": "start"
+   },
+   {
+    "cls": "framer-jgz85x",
+    "tag": "section",
+    "top": 6940,
+    "h": 588,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 0,
+    "effPb": 0,
+    "contentW": 1000,
+    "contentL": 220,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "Genuine Testimonial",
+    "hSize": "13px",
+    "hAlign": "start"
+   },
+   {
+    "cls": "framer-ddgskk",
+    "tag": "section",
+    "top": 7707,
+    "h": 7400,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 439,
+    "effPb": 6939,
+    "contentW": 173,
+    "contentL": 634,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "",
+    "hSize": null,
+    "hAlign": null
+   },
+   {
+    "cls": "framer-jqzzu5",
+    "tag": "section",
+    "top": 15287,
+    "h": 630,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 142,
+    "effPb": 0,
+    "contentW": 225,
+    "contentL": 608,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "Ready to build something great together?",
+    "hSize": "24px",
+    "hAlign": "center"
+   },
+   {
+    "cls": "framer-Z2iJq",
+    "tag": "footer",
+    "top": 16097,
+    "h": 352,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 10,
+    "effPb": 20,
+    "contentW": 1420,
+    "contentL": 10,
+    "bg": "rgb(255, 255, 255)",
+    "heading": "",
+    "hSize": null,
+    "hAlign": null
+   }
+  ],
+  "radiusAll": [
+   [
+    "10px",
+    128
+   ],
+   [
+    "50px",
+    7
+   ],
+   [
+    "5px",
+    6
+   ],
+   [
+    "43px",
+    1
+   ],
+   [
+    "11px",
+    1
+   ]
+  ],
+  "radiusCards": [],
+  "radiusMedia": [
+   [
+    "10px",
+    2
+   ]
+  ],
+  "radiusInputs": [],
+  "shadows": [
+   [
+    "rgba(0, 0, 0, 0.3) 0px 0px 20px 5px",
+    1
+   ],
+   [
+    "rgba(0, 0, 0, 0.17) 0px 0.602187px 1.56569px -1.5px, rgba(0, 0, 0, 0.14) 0px 2.28853px 5.95019px -3px, rgba(0, 0, 0, 0.02) 0px 10px 26px -4.5px",
+    1
+   ],
+   [
+    "rgb(0, 0, 0) 0px 0px 0px 1px inset",
+    1
+   ]
+  ],
+  "borders": [],
+  "cardBgs": [],
+  "grids": [
+   [
+    "3col gap 0px/0px",
+    1
+   ]
+  ],
+  "flexGaps": [
+   [
+    "0px",
+    74
+   ],
+   [
+    "10px",
+    28
+   ],
+   [
+    "5px",
+    8
+   ],
+   [
+    "30px",
+    7
+   ],
+   [
+    "50px",
+    6
+   ],
+   [
+    "20px",
+    4
+   ],
+   [
+    "24px",
+    4
+   ],
+   [
+    "180px",
+    2
+   ]
+  ],
+  "bgByArea": [
+   [
+    "rgb(255, 255, 255)",
+    "27%"
+   ],
+   [
+    "rgb(0, 0, 0)",
+    "0%"
+   ],
+   [
+    "rgb(236, 236, 236)",
+    "0%"
+   ],
+   [
+    "rgb(255, 109, 16)",
+    "0%"
+   ],
+   [
+    "rgb(255, 197, 49)",
+    "0%"
+   ],
+   [
+    "rgb(79, 161, 255)",
+    "0%"
+   ]
+  ],
+  "textColors": [
+   [
+    "rgb(255, 255, 255)",
+    252
+   ],
+   [
+    "rgb(0, 0, 0)",
+    62
+   ],
+   [
+    "rgb(76, 76, 76)",
+    60
+   ],
+   [
+    "rgb(186, 186, 186)",
+    5
+   ],
+   [
+    "rgb(0, 0, 238)",
+    1
+   ]
+  ],
+  "linkColors": [
+   [
+    "rgb(0, 0, 0)",
+    17
+   ],
+   [
+    "rgb(76, 76, 76)",
+    12
+   ],
+   [
+    "rgb(255, 255, 255)",
+    7
+   ]
+  ],
+  "counts": {
+   "video": 2,
+   "canvas": 0,
+   "iframe": 1,
+   "svg": 1,
+   "img": 82,
+   "picture": 0,
+   "spline": 0,
+   "lottie": 0
+  },
+  "heroMedia": {
+   "video": true,
+   "canvas": false,
+   "bigImg": 1
+  },
+  "libs": {
+   "gsap": false,
+   "lenis": true,
+   "locomotive": false,
+   "next": false,
+   "framer": true,
+   "webflow": false,
+   "three": false,
+   "astro": false,
+   "nuxt": false,
+   "tailwindish": false
+  },
+  "sticky": 1,
+  "fixed": 4,
+  "snap": 0
+ },
+ "pageHeight": 16448
+}

@@ -1,0 +1,1398 @@
+{
+ "id": "oberion",
+ "url": "https://oberion.framer.ai/",
+ "date": "2026-10-11",
+ "hero": {
+  "bgImages": [],
+  "filters": [],
+  "blends": [
+   {
+    "n": "Bg",
+    "r": [
+     -105,
+     147,
+     1650,
+     1221
+    ],
+    "blend": "color",
+    "op": "1"
+   }
+  ],
+  "transforms": [
+   {
+    "n": "p",
+    "r": [
+     1350,
+     861,
+     0,
+     0
+    ],
+    "t": "matrix(0.001, 0, 0, 0.001, 0, 0)",
+    "persp": "none",
+    "op": "1"
+   }
+  ],
+  "perspective": [],
+  "media": [
+   {
+    "tag": "IMG",
+    "n": "div",
+    "r": [
+     200,
+     31,
+     130,
+     26
+    ],
+    "src": "https://framerusercontent.com/images/SncC7l2XZ0Unfirrgga6UWik.png?width=388&height=79",
+    "fit": "cover",
+    "radius": "0px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": [
+     388,
+     79
+    ]
+   },
+   {
+    "tag": "IMG",
+    "n": "div",
+    "r": [
+     -105,
+     147,
+     1650,
+     1221
+    ],
+    "src": "https://framerusercontent.com/images/lznLOrDrGS8nr7eO0OEKLzJnAbU.png?width=1116&height=826",
+    "fit": "cover",
+    "radius": "0px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": [
+     1650,
+     1221
+    ]
+   },
+   {
+    "tag": "IMG",
+    "n": "div",
+    "r": [
+     170,
+     531,
+     1100,
+     583
+    ],
+    "src": "https://framerusercontent.com/images/A4FxHYzJbELLvKBaLMRp79Nhc.png?width=3348&height=1773",
+    "fit": "cover",
+    "radius": "0px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": [
+     1100,
+     582
+    ]
+   },
+   {
+    "tag": "IMG",
+    "n": "div",
+    "r": [
+     509,
+     1286,
+     147,
+     22
+    ],
+    "src": "https://framerusercontent.com/images/7WkerEjwiegazatg1or2fb5CrKQ.png?width=407&height=61",
+    "fit": "cover",
+    "radius": "0px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": [
+     407,
+     61
+    ]
+   },
+   {
+    "tag": "IMG",
+    "n": "div",
+    "r": [
+     1072,
+     1286,
+     122,
+     22
+    ],
+    "src": "https://framerusercontent.com/images/thvtoKboQDzt44Ewu8Zhi2X2bYI.png?width=365&height=66",
+    "fit": "cover",
+    "radius": "0px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": [
+     365,
+     66
+    ]
+   },
+   {
+    "tag": "IMG",
+    "n": "div",
+    "r": [
+     170,
+     1359,
+     1100,
+     362
+    ],
+    "src": "https://framerusercontent.com/images/ASk83aX2CIRdYcUAWVKHgBDNQ.png?width=3345&height=1101",
+    "fit": "cover",
+    "radius": "0px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": [
+     1100,
+     362
+    ]
+   }
+  ],
+  "svgNoise": 0,
+  "turb": [],
+  "canvas": [
+   {
+    "r": [
+     170,
+     9702,
+     440,
+     320
+    ],
+    "ctx": "",
+    "parent": "div"
+   }
+  ],
+  "radii": [
+   "Desktop 142x36 r=10px bg=rgb(0, 0, 0) bd=0px rgb(0, 0, 238) sh=rgba(0, 0, 0, 0.3) 0px 0px 20px 5px",
+   "Backdrop 138x36 r=10px bg=rgb(255, 255, 255) bd=0px rgb(0, 0, 238) sh=rgba(0, 0, 0, 0.17) 0px 0.602187px 1.56569px -1.5px, rgba(0, 0, 0, 0.14) 0px 2.28853px 5.95019px -3px, rgba(0, 0, 0, 0.02) 0px 10px 26px -4.",
+   "Bottom 140x38 r=11px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 238) sh=rgb(0, 0, 0) 0px 0px 0px 1px inset",
+   "Border 140x38 r=11px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 238) sh=rgb(0, 0, 0) 0px 0px 0px 1px inset"
+  ],
+  "texts": [
+   "Home | Switzer 14px/19.6px w500 ls=normal c=rgb(99, 85, 87) tt=none @477,35,38,20",
+   "Home 02 | Switzer 14px/19.6px w500 ls=normal c=rgb(99, 85, 87) tt=none @551,35,57,20",
+   "Company | Switzer 14px/19.6px w500 ls=normal c=rgb(99, 85, 87) tt=none @644,35,61,20",
+   "Pricing | Switzer 14px/19.6px w500 ls=normal c=rgb(99, 85, 87) tt=none @742,35,45,20",
+   "Insights | Switzer 14px/19.6px w500 ls=normal c=rgb(99, 85, 87) tt=none @822,35,50,20",
+   "Careers | Switzer 14px/19.6px w500 ls=normal c=rgb(99, 85, 87) tt=none @908,35,52,20",
+   "Request Demo | Switzer 16px/22.4px w500 ls=-0.16px c=rgb(255, 255, 255) tt=none @1121,33,105,22",
+   "AI-powered finance infrastructure | Switzer 12px/16.8px w400 ls=normal c=rgb(35, 16, 20) tt=none @634,204,183,17",
+   "T | Switzer 54px/54px w500 ls=-2.7px c=rgb(35, 16, 20) tt=none @469,245,31,54",
+   "h | Switzer 54px/54px w500 ls=-2.7px c=rgb(35, 16, 20) tt=none @500,245,29,54",
+   "e | Switzer 54px/54px w500 ls=-2.7px c=rgb(35, 16, 20) tt=none @528,245,28,54",
+   "u | Switzer 54px/54px w500 ls=-2.7px c=rgb(35, 16, 20) tt=none @565,245,28,54",
+   "n | Switzer 54px/54px w500 ls=-2.7px c=rgb(35, 16, 20) tt=none @593,245,29,54",
+   "i | Switzer 54px/54px w500 ls=-2.7px c=rgb(35, 16, 20) tt=none @621,245,10,54",
+   "f | Switzer 54px/54px w500 ls=-2.7px c=rgb(35, 16, 20) tt=none @631,245,13,54",
+   "i | Switzer 54px/54px w500 ls=-2.7px c=rgb(35, 16, 20) tt=none @644,245,10,54",
+   "e | Switzer 54px/54px w500 ls=-2.7px c=rgb(35, 16, 20) tt=none @654,245,28,54",
+   "d | Switzer 54px/54px w500 ls=-2.7px c=rgb(35, 16, 20) tt=none @682,245,29,54",
+   "p | Switzer 54px/54px w500 ls=-2.7px c=rgb(35, 16, 20) tt=none @719,245,29,54",
+   "l | Switzer 54px/54px w500 ls=-2.7px c=rgb(35, 16, 20) tt=none @748,245,10,54",
+   "a | Switzer 54px/54px w500 ls=-2.7px c=rgb(35, 16, 20) tt=none @758,245,28,54",
+   "t | Switzer 54px/54px w500 ls=-2.7px c=rgb(35, 16, 20) tt=none @786,245,14,54",
+   "f | Switzer 54px/54px w500 ls=-2.7px c=rgb(35, 16, 20) tt=none @801,245,13,54",
+   "o | Switzer 54px/54px w500 ls=-2.7px c=rgb(35, 16, 20) tt=none @813,245,28,54",
+   "r | Switzer 54px/54px w500 ls=-2.7px c=rgb(35, 16, 20) tt=none @842,245,18,54",
+   "m | Switzer 54px/54px w500 ls=-2.7px c=rgb(35, 16, 20) tt=none @860,245,44,54",
+   "f | Switzer 54px/54px w500 ls=-2.7px c=rgb(35, 16, 20) tt=none @912,245,13,54",
+   "o | Switzer 54px/54px w500 ls=-2.7px c=rgb(35, 16, 20) tt=none @925,245,28,54",
+   "r | Switzer 54px/54px w500 ls=-2.7px c=rgb(35, 16, 20) tt=none @953,245,18,54",
+   "b | Switzer 54px/54px w500 ls=-2.7px c=rgb(35, 16, 20) tt=none @405,299,29,54",
+   "i | Switzer 54px/54px w500 ls=-2.7px c=rgb(35, 16, 20) tt=none @434,299,10,54",
+   "l | Switzer 54px/54px w500 ls=-2.7px c=rgb(35, 16, 20) tt=none @444,299,10,54",
+   "l | Switzer 54px/54px w500 ls=-2.7px c=rgb(35, 16, 20) tt=none @454,299,10,54",
+   "i | Switzer 54px/54px w500 ls=-2.7px c=rgb(35, 16, 20) tt=none @464,299,10,54",
+   "n | Switzer 54px/54px w500 ls=-2.7px c=rgb(35, 16, 20) tt=none @474,299,29,54",
+   "g | Switzer 54px/54px w500 ls=-2.7px c=rgb(35, 16, 20) tt=none @502,299,29,54",
+   "t | Switzer 54px/54px w500 ls=-2.7px c=rgb(35, 16, 20) tt=none @539,299,14,54",
+   "h | Switzer 54px/54px w500 ls=-2.7px c=rgb(35, 16, 20) tt=none @553,299,29,54",
+   "r | Switzer 54px/54px w500 ls=-2.7px c=rgb(35, 16, 20) tt=none @582,299,18,54",
+   "o | Switzer 54px/54px w500 ls=-2.7px c=rgb(35, 16, 20) tt=none @600,299,28,54",
+   "u | Switzer 54px/54px w500 ls=-2.7px c=rgb(35, 16, 20) tt=none @628,299,28,54",
+   "g | Switzer 54px/54px w500 ls=-2.7px c=rgb(35, 16, 20) tt=none @656,299,29,54",
+   "h | Switzer 54px/54px w500 ls=-2.7px c=rgb(35, 16, 20) tt=none @685,299,29,54",
+   "r | Switzer 54px/54px w500 ls=-2.7px c=rgb(35, 16, 20) tt=none @722,299,18,54",
+   "e | Switzer 54px/54px w500 ls=-2.7px c=rgb(35, 16, 20) tt=none @740,299,28,54",
+   "v | Switzer 54px/54px w500 ls=-2.7px c=rgb(35, 16, 20) tt=none @768,299,26,54",
+   "e | Switzer 54px/54px w500 ls=-2.7px c=rgb(35, 16, 20) tt=none @794,299,28,54",
+   "n | Switzer 54px/54px w500 ls=-2.7px c=rgb(35, 16, 20) tt=none @822,299,29,54",
+   "u | Switzer 54px/54px w500 ls=-2.7px c=rgb(35, 16, 20) tt=none @851,299,28,54",
+   "e | Switzer 54px/54px w500 ls=-2.7px c=rgb(35, 16, 20) tt=none @879,299,28,54",
+   "c | Switzer 54px/54px w500 ls=-2.7px c=rgb(35, 16, 20) tt=none @915,299,27,54",
+   "l | Switzer 54px/54px w500 ls=-2.7px c=rgb(35, 16, 20) tt=none @943,299,10,54",
+   "o | Switzer 54px/54px w500 ls=-2.7px c=rgb(35, 16, 20) tt=none @953,299,28,54",
+   "s | Switzer 54px/54px w500 ls=-2.7px c=rgb(35, 16, 20) tt=none @981,299,26,54",
+   "e | Switzer 54px/54px w500 ls=-2.7px c=rgb(35, 16, 20) tt=none @1007,299,28,54",
+   "Unify contracts, billing, collections, and revenue | Switzer 14px/19.6px w400 ls=normal c=rgb(99, 85, 87) tt=none @378,373,685,39",
+   "Get Started | Switzer 16px/22.4px w500 ls=-0.16px c=rgb(255, 255, 255) tt=none @587,455,81,22",
+   "See How it works | Switzer 16px/22.4px w500 ls=-0.16px c=rgb(35, 16, 20) tt=none @738,455,123,22",
+   "Get This Template | Switzer 14px/16.8px w600 ls=-0.28px c=rgb(255, 255, 255) tt=none @1293,809,111,17",
+   "Create a free website with Framer, the website bui | sans-serif 12px/normal w400 ls=normal c=rgb(0, 0, 238) tt=none @1350,861,0,0"
+  ],
+  "buttons": [
+   {
+    "t": "Home",
+    "r": [
+     477,
+     35,
+     38,
+     20
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "Home 02",
+    "r": [
+     551,
+     35,
+     57,
+     20
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "Company",
+    "r": [
+     644,
+     35,
+     62,
+     20
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "Pricing",
+    "r": [
+     742,
+     35,
+     44,
+     20
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "Insights",
+    "r": [
+     822,
+     35,
+     50,
+     20
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "Careers",
+    "r": [
+     908,
+     35,
+     52,
+     20
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "Request Demo",
+    "r": [
+     1107,
+     20,
+     133,
+     49
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgb(95, 23, 182)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "Get Started",
+    "r": [
+     553,
+     442,
+     149,
+     49
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgb(95, 23, 182)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "See How it works",
+    "r": [
+     712,
+     442,
+     175,
+     49
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgb(255, 255, 255)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "Get This Template",
+    "r": [
+     1278,
+     799,
+     142,
+     36
+    ],
+    "bg": "rgb(0, 0, 0)",
+    "bgi": "none",
+    "radius": "10px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "rgba(0, 0, 0, 0.3) 0px 0px 20px 5px",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   }
+  ],
+  "fonts": [
+   "Switzer 400",
+   "Switzer 500",
+   "Switzer 600",
+   "Switzer Placeholder normal"
+  ],
+  "appear": "{\"dupu8a\":{\"default\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":-20},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0,\"delay\":0,\"duration\":0.8,\"type\":\"spring\"},\"x\":0,\"y\":0},\"transformTemplate\":\"translateX(-50%) __Appear_Animation_Transform__\"}},\"1y0361i\":{\"default\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":5},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0,\"delay\":0.2,\"duration\":0.8,\"type\":\"spring\"},\"x\":0,\"y\":0}},\"1iz6pzz\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":5},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0,\"delay\":0.2,\"duration\":0.8,\"type\":\"spring\"},\"x\":0,\"y\":0}},\"msrxoo\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":5},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0,\"delay\":0.2,\"duration\":0.8,\"type\":\"spring\"},\"x\":0,\"y\":0}}},\"v1s8p9\":{\"default\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":10},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0,\"delay\":0.6,\"duration\":0.8,\"type\":\"spring\"},\"x\":0,\"y\":0}}},\"ilix90\":{\"default\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":20},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0.2,\"delay\":0.8,\"duration\":0.4,\"type\":\"spring\"},\"x\":0,\"y\":0}},\"1iz6pzz\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":20},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0.2,\"delay\":0.8,\"duration\":0.4,\"type\":\"spring\"},\"x\":0,\"y\":0}},\"msrxoo\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":20},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0.2,\"delay\":0.8,\"duration\":0.4,\"type\":\"spring\"},\"x\":0,\"y\":0}}},\"1punwjc\":{\"default\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":20},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0.2,\"delay\":1,\"duration\":0.4,\"type\":\"spring\"},\"x\":0,\"y\":0}},\"1iz6pzz\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":20},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0.2,\"delay\":1,\"duration\":0.4,\"type\":\"spring\"},\"x\":0,\"y\":0}},\"msrxoo\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":20},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0.2,\"delay\":1,\"duration\":0.4,\"type\":\"spring\"},\"x\":0,\"y\":0}}},\"12wi5n3\":{\"default\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":0},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0.2,\"delay\":1.4,\"duration\":0.8,\"type\":\"spring\"},\"x\":0,\"y\":0},\"transformTemplate\":\"translate(-50%, -50%) __Appear_Animation_Transform__\"},\"1iz6pzz\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":0},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0.2,\"delay\":1.4,\"duration\":0.8,\"type\":\"spring\"},\"x\":0,\"y\":0},\"transformTemplate\":\"translate(-50%, -50%) __Appear_Animation_Transform__\"},\"msrxoo\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":0},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0.2,\"delay\":1.4,\"duration\":0.8,\"type\":\"spring\"},\"x\":0,\"y\":0},\"transformTemplate\":\"translate(-50%, -50%) __Appear_Animation_Transform__\"}},\"1q2g76f\":{\"default\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":30},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0,\"delay\":1.2,\"duration\":0.8,\"type\":\"spring\"},\"x\":0,\"y\":0}},\"1iz6pzz\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":30},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0,\"delay\":1.2,\"duration\":0.8,\"type\":\"spring\"},\"x\":0,\"y\":0}},\"msrxoo\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":30},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0,\"delay\":1.2,\"duration\":0.8,\"type\":\"spring\"},\"x\":0,\"y\":0}}}}",
+  "anims": [
+   {
+    "name": "Animation",
+    "tgt": "Bg",
+    "dur": 800,
+    "delay": 1400,
+    "ease": "linear",
+    "iter": 1,
+    "kf": "[{\"offset\":null,\"easing\":\"linear\",\"composite\":\"auto\",\"transform\":\"translate(-50%, -50%)\",\"computedOffset\":0},{\"offset\":null,\"easing\":\"linear\",\"composite\":\"auto\",\"transform\":\"translate(-50%, -50%)\",\"computedOffset\":0.0125},{\"offset\":null,\"easing\":\"linear\",\"comp"
+   }
+  ]
+ },
+ "hover": [
+  {
+   "n": "DIV",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgi": "none",
+   "sh": "none",
+   "t": "none",
+   "r": "0px"
+  },
+  {
+   "n": "A",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgi": "none",
+   "sh": "none",
+   "t": "none",
+   "r": "0px"
+  },
+  {
+   "n": "DIV",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgi": "none",
+   "sh": "none",
+   "t": "none",
+   "r": "0px"
+  },
+  {
+   "n": "Container",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgi": "none",
+   "sh": "none",
+   "t": "none",
+   "r": "0px"
+  }
+ ],
+ "page": {
+  "vw": 1440,
+  "pageHeight": 10644,
+  "title": "Oberion",
+  "htmlBg": "rgba(0, 0, 0, 0)",
+  "bodyBg": "rgb(255, 255, 255)",
+  "bodyColor": "rgb(0, 0, 0)",
+  "colorScheme": "normal",
+  "h1": {
+   "text": "The unified platform for billing through revenue close",
+   "family": "Switzer, \"Switzer Placeholder\", sans-serif",
+   "size": "54px",
+   "weight": "500",
+   "lh": "54px",
+   "ls": "-2.7px",
+   "color": "rgb(35, 16, 20)",
+   "tt": "none",
+   "align": "center",
+   "w": 635,
+   "h": 108,
+   "top": 245,
+   "left": 403,
+   "tag": "h1",
+   "balance": "wrap"
+  },
+  "largestHeroText": {
+   "text": "T",
+   "family": "Switzer, \"Switzer Placeholder\", sans-serif",
+   "size": "54px",
+   "weight": "500",
+   "lh": "54px",
+   "ls": "-2.7px",
+   "color": "rgb(35, 16, 20)",
+   "tt": "none",
+   "align": "center",
+   "w": 31,
+   "h": 54,
+   "top": 245,
+   "left": 469,
+   "tag": "span",
+   "balance": "nowrap"
+  },
+  "h2": [
+   {
+    "text": "Finance stacks today don’t connect. So teams end up stitching workflow",
+    "family": "Switzer, \"Switzer Placeholder\", sans-serif",
+    "size": "36px",
+    "weight": "500",
+    "lh": "39.6px",
+    "ls": "-1.08px",
+    "color": "rgb(35, 16, 20)",
+    "tt": "none",
+    "align": "center",
+    "w": 860,
+    "h": 119,
+    "top": 1502,
+    "left": 290,
+    "tag": "h2",
+    "balance": "wrap"
+   },
+   {
+    "text": "Streamline Revenue Operations From Contract to Cash",
+    "family": "Switzer, \"Switzer Placeholder\", sans-serif",
+    "size": "36px",
+    "weight": "500",
+    "lh": "39.6px",
+    "ls": "-1.08px",
+    "color": "rgb(35, 16, 20)",
+    "tt": "none",
+    "align": "center",
+    "w": 550,
+    "h": 79,
+    "top": 3043,
+    "left": 445,
+    "tag": "h2",
+    "balance": "wrap"
+   },
+   {
+    "text": "Trusted by Teams. Built for Scale.",
+    "family": "Switzer, \"Switzer Placeholder\", sans-serif",
+    "size": "36px",
+    "weight": "500",
+    "lh": "39.6px",
+    "ls": "-1.08px",
+    "color": "rgb(35, 16, 20)",
+    "tt": "none",
+    "align": "center",
+    "w": 1040,
+    "h": 40,
+    "top": 5714,
+    "left": 200,
+    "tag": "h2",
+    "balance": "wrap"
+   },
+   {
+    "text": "Designed to handle growth and extend across your stack.",
+    "family": "Switzer, \"Switzer Placeholder\", sans-serif",
+    "size": "36px",
+    "weight": "500",
+    "lh": "39.6px",
+    "ls": "-1.08px",
+    "color": "rgb(255, 255, 255)",
+    "tt": "none",
+    "align": "center",
+    "w": 500,
+    "h": 79,
+    "top": 6140,
+    "left": 470,
+    "tag": "h2",
+    "balance": "wrap"
+   }
+  ],
+  "h3": [],
+  "p": [
+   {
+    "text": "Unify contracts, billing, collections, and revenue recognition into a ",
+    "family": "Switzer, \"Switzer Placeholder\", sans-serif",
+    "size": "14px",
+    "weight": "400",
+    "lh": "19.6px",
+    "ls": "normal",
+    "color": "rgb(99, 85, 87)",
+    "tt": "none",
+    "align": "center",
+    "w": 685,
+    "h": 39,
+    "top": 373,
+    "left": 378,
+    "tag": "p",
+    "balance": "wrap"
+   },
+   {
+    "text": "Manage your schedule, services, and client bookings with a fast, seaml",
+    "family": "Switzer, \"Switzer Placeholder\", sans-serif",
+    "size": "12px",
+    "weight": "400",
+    "lh": "16.8px",
+    "ls": "normal",
+    "color": "rgb(99, 85, 87)",
+    "tt": "none",
+    "align": "left",
+    "w": 300,
+    "h": 67,
+    "top": 2017,
+    "left": 824,
+    "tag": "p",
+    "balance": "wrap"
+   },
+   {
+    "text": "Generate clean, accurate invoices directly from your CRM. Billing is a",
+    "family": "Switzer, \"Switzer Placeholder\", sans-serif",
+    "size": "12px",
+    "weight": "400",
+    "lh": "16.8px",
+    "ls": "normal",
+    "color": "rgb(99, 85, 87)",
+    "tt": "none",
+    "align": "left",
+    "w": 340,
+    "h": 50,
+    "top": 3387,
+    "left": 200,
+    "tag": "p",
+    "balance": "wrap"
+   }
+  ],
+  "heroP": {
+   "text": "Unify contracts, billing, collections, and revenue recognition into a ",
+   "family": "Switzer, \"Switzer Placeholder\", sans-serif",
+   "size": "14px",
+   "weight": "400",
+   "lh": "19.6px",
+   "ls": "normal",
+   "color": "rgb(99, 85, 87)",
+   "tt": "none",
+   "align": "center",
+   "w": 685,
+   "h": 39,
+   "top": 373,
+   "left": 378,
+   "tag": "p",
+   "balance": "wrap"
+  },
+  "typeScale": [
+   [
+    "Switzer|12|400",
+    2836
+   ],
+   [
+    "Switzer|16|500",
+    979
+   ],
+   [
+    "Switzer|14|400",
+    823
+   ],
+   [
+    "Switzer|20|500",
+    440
+   ],
+   [
+    "Switzer|36|500",
+    433
+   ],
+   [
+    "Switzer|14|500",
+    192
+   ],
+   [
+    "Switzer|12|500",
+    137
+   ],
+   [
+    "sans-serif|12|400",
+    97
+   ],
+   [
+    "Switzer|54|500",
+    47
+   ],
+   [
+    "Switzer|14|600",
+    17
+   ],
+   [
+    "Switzer|56|500",
+    10
+   ]
+  ],
+  "fontFamiliesUsed": [
+   [
+    "Switzer",
+    532
+   ],
+   [
+    "sans-serif",
+    1
+   ]
+  ],
+  "sizesDistinct": [
+   12,
+   14,
+   16,
+   20,
+   36,
+   54,
+   56
+  ],
+  "lsHist": [
+   [
+    "-0.030em",
+    193
+   ],
+   [
+    "-0.010em",
+    185
+   ],
+   [
+    "normal",
+    107
+   ],
+   [
+    "-0.050em",
+    47
+   ],
+   [
+    "-0.020em",
+    1
+   ]
+  ],
+  "nav": {
+   "tag": "NAV",
+   "h": 89,
+   "outerH": 89,
+   "top": 0,
+   "w": 1440,
+   "position": "fixed",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgHeader": "rgb(247, 245, 243)",
+   "backdrop": "none",
+   "bb": "0px none rgb(0, 0, 0)",
+   "shadow": "none",
+   "contentLeft": 200,
+   "contentRight": 1240,
+   "nLinks": 8,
+   "linkTexts": [
+    "Home",
+    "Home 02",
+    "Company",
+    "Pricing",
+    "Insights",
+    "Careers",
+    "Request Demo"
+   ],
+   "linkTypo": [
+    {
+     "text": "Home",
+     "family": "sans-serif",
+     "size": "12px",
+     "weight": "400",
+     "lh": "normal",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "tt": "none",
+     "align": "start",
+     "w": 38,
+     "h": 20,
+     "top": 35,
+     "left": 477,
+     "tag": "a",
+     "balance": "wrap"
+    },
+    {
+     "text": "Home 02",
+     "family": "sans-serif",
+     "size": "12px",
+     "weight": "400",
+     "lh": "normal",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "tt": "none",
+     "align": "start",
+     "w": 57,
+     "h": 20,
+     "top": 35,
+     "left": 551,
+     "tag": "a",
+     "balance": "wrap"
+    },
+    {
+     "text": "Company",
+     "family": "sans-serif",
+     "size": "12px",
+     "weight": "400",
+     "lh": "normal",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "tt": "none",
+     "align": "start",
+     "w": 62,
+     "h": 20,
+     "top": 35,
+     "left": 644,
+     "tag": "a",
+     "balance": "wrap"
+    }
+   ],
+   "hasLogoSvgOrImg": true,
+   "px": "50px/50px"
+  },
+  "ctas": [
+   {
+    "text": "Get This Template",
+    "inHeader": false,
+    "kind": "filled",
+    "h": 36,
+    "w": 142,
+    "radius": "10px",
+    "bg": "rgb(0, 0, 0)",
+    "color": "rgb(0, 0, 238)",
+    "border": null,
+    "size": "12px",
+    "weight": "400",
+    "pad": "0px 0px",
+    "shadow": "rgba(0, 0, 0, 0.3) 0px 0px 20px 5px",
+    "family": "sans-serif"
+   }
+  ],
+  "chain": [
+   {
+    "tag": "h1.framer-text",
+    "w": 635,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "block",
+    "ta": "center"
+   },
+   {
+    "tag": "div.framer-sunjrh",
+    "w": 635,
+    "maxW": "635px",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "div.framer-gz2m7b",
+    "w": 1100,
+    "maxW": "none",
+    "pl": "20px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "div.framer-1c8dl1g",
+    "w": 1100,
+    "maxW": "1100px",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "section.framer-1y8gqm7",
+    "w": 1440,
+    "maxW": "none",
+    "pl": "50px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "main.framer-fhrdjq",
+    "w": 1440,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "div.framer-vgDay",
+    "w": 0,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "contents",
+    "ta": "start"
+   },
+   {
+    "tag": "div.framer-COHXo",
+    "w": 1440,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "div",
+    "w": 1440,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "block",
+    "ta": "start"
+   }
+  ],
+  "sections": [
+   {
+    "cls": "framer-1y8gqm7",
+    "tag": "section",
+    "top": 0,
+    "h": 1114,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 204,
+    "effPb": 0,
+    "contentW": 1100,
+    "contentL": 170,
+    "bg": "rgb(247, 245, 243)",
+    "heading": "The unified platform for billing through revenue c",
+    "hSize": "54px",
+    "hAlign": "center"
+   },
+   {
+    "cls": "framer-1jBEr",
+    "tag": "section",
+    "top": 1114,
+    "h": 244,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 50,
+    "effPb": 50,
+    "contentW": 943,
+    "contentL": 251,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "",
+    "hSize": null,
+    "hAlign": null
+   },
+   {
+    "cls": "framer-137tokw",
+    "tag": "section",
+    "top": 1358,
+    "h": 364,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 2,
+    "effPb": 0,
+    "contentW": 1100,
+    "contentL": 170,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "Finance stacks today don’t connect. So teams end u",
+    "hSize": "36px",
+    "hAlign": "center"
+   },
+   {
+    "cls": "framer-uxwxx5",
+    "tag": "section",
+    "top": 1721,
+    "h": 1177,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 54,
+    "effPb": 0,
+    "contentW": 1100,
+    "contentL": 170,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "",
+    "hSize": null,
+    "hAlign": null
+   },
+   {
+    "cls": "framer-1djhbey",
+    "tag": "section",
+    "top": 2898,
+    "h": 1059,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 104,
+    "effPb": 0,
+    "contentW": 2270,
+    "contentL": 200,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "Streamline Revenue Operations From Contract to Cas",
+    "hSize": "36px",
+    "hAlign": "center"
+   },
+   {
+    "cls": "framer-xqXQN",
+    "tag": "section",
+    "top": 3958,
+    "h": 779,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 54,
+    "effPb": 30,
+    "contentW": 1070,
+    "contentL": 170,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "",
+    "hSize": null,
+    "hAlign": null
+   },
+   {
+    "cls": "framer-oi2z2x",
+    "tag": "section",
+    "top": 4737,
+    "h": 883,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 14,
+    "effPb": 0,
+    "contentW": 1100,
+    "contentL": 170,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "",
+    "hSize": null,
+    "hAlign": null
+   },
+   {
+    "cls": "framer-eZ4e6",
+    "tag": "section",
+    "top": 5619,
+    "h": 376,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 54,
+    "effPb": 30,
+    "contentW": 1040,
+    "contentL": 200,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "Trusted by Teams. Built for Scale.",
+    "hSize": "36px",
+    "hAlign": "center"
+   },
+   {
+    "cls": "framer-p9ntwf",
+    "tag": "section",
+    "top": 5995,
+    "h": 706,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 104,
+    "effPb": 106,
+    "contentW": 1576,
+    "contentL": 223,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "Designed to handle growth and extend across your s",
+    "hSize": "36px",
+    "hAlign": "center"
+   },
+   {
+    "cls": "framer-1r7mzlg",
+    "tag": "section",
+    "top": 6701,
+    "h": 668,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 54,
+    "effPb": 30,
+    "contentW": 980,
+    "contentL": 230,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "See what Oberion builds.",
+    "hSize": "36px",
+    "hAlign": "center"
+   },
+   {
+    "cls": "framer-Ua1KO",
+    "tag": "section",
+    "top": 7369,
+    "h": 415,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 54,
+    "effPb": 50,
+    "contentW": 928,
+    "contentL": 200,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "Enterprise-Grade Protection from Day One",
+    "hSize": "36px",
+    "hAlign": "left"
+   },
+   {
+    "cls": "framer-DzuFe",
+    "tag": "section",
+    "top": 7783,
+    "h": 593,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 0,
+    "effPb": 0,
+    "contentW": 1100,
+    "contentL": 170,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "How Statsgig scaled to a $1 billion valuation with",
+    "hSize": "36px",
+    "hAlign": "left"
+   },
+   {
+    "cls": "framer-X90ro",
+    "tag": "section",
+    "top": 8376,
+    "h": 841,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 54,
+    "effPb": 50,
+    "contentW": 4039,
+    "contentL": -1299,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "Insights and events",
+    "hSize": "36px",
+    "hAlign": "left"
+   },
+   {
+    "cls": "framer-ZQ6i5",
+    "tag": "section",
+    "top": 9218,
+    "h": 486,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 104,
+    "effPb": 0,
+    "contentW": 1100,
+    "contentL": 170,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "Put revenue on autopilot",
+    "hSize": "36px",
+    "hAlign": "center"
+   },
+   {
+    "cls": "framer-tOABc",
+    "tag": "footer",
+    "top": 9704,
+    "h": 940,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": -1,
+    "effPb": 0,
+    "contentW": 1100,
+    "contentL": 170,
+    "bg": "rgb(35, 16, 20)",
+    "heading": "",
+    "hSize": null,
+    "hAlign": null
+   }
+  ],
+  "radiusAll": [
+   [
+    "100%",
+    2
+   ],
+   [
+    "10px",
+    2
+   ],
+   [
+    "11px",
+    1
+   ]
+  ],
+  "radiusCards": [
+   [
+    "100%",
+    2
+   ]
+  ],
+  "radiusMedia": [],
+  "radiusInputs": [
+   [
+    "0px",
+    2
+   ]
+  ],
+  "shadows": [
+   [
+    "rgba(0, 0, 0, 0.3) 0px 0px 20px 5px",
+    1
+   ],
+   [
+    "rgba(0, 0, 0, 0.17) 0px 0.602187px 1.56569px -1.5px, rgba(0, 0, 0, 0.14) 0px 2.28853px 5.95019px -3px, rgba(0, 0, 0, 0.02) 0px 10px 26px -4.5px",
+    1
+   ],
+   [
+    "rgb(0, 0, 0) 0px 0px 0px 1px inset",
+    1
+   ]
+  ],
+  "borders": [],
+  "cardBgs": [
+   [
+    "rgb(247, 245, 243)",
+    2
+   ]
+  ],
+  "grids": [
+   [
+    "3col gap 0px/0px",
+    3
+   ],
+   [
+    "4col gap 0px/0px",
+    2
+   ]
+  ],
+  "flexGaps": [
+   [
+    "0px",
+    149
+   ],
+   [
+    "10px",
+    58
+   ],
+   [
+    "5px",
+    49
+   ],
+   [
+    "14px",
+    30
+   ],
+   [
+    "20px",
+    14
+   ],
+   [
+    "8px",
+    7
+   ],
+   [
+    "6px",
+    3
+   ],
+   [
+    "2px",
+    3
+   ]
+  ],
+  "bgByArea": [
+   [
+    "rgb(255, 255, 255)",
+    "40%"
+   ],
+   [
+    "rgb(35, 16, 20)",
+    "14%"
+   ],
+   [
+    "rgb(247, 245, 243)",
+    "13%"
+   ],
+   [
+    "rgb(95, 23, 182)",
+    "9%"
+   ],
+   [
+    "rgb(221, 221, 221)",
+    "2%"
+   ],
+   [
+    "rgb(246, 238, 255)",
+    "0%"
+   ]
+  ],
+  "textColors": [
+   [
+    "rgb(35, 16, 20)",
+    372
+   ],
+   [
+    "rgb(255, 255, 255)",
+    83
+   ],
+   [
+    "rgb(99, 85, 87)",
+    25
+   ],
+   [
+    "rgb(219, 219, 219)",
+    25
+   ],
+   [
+    "rgb(148, 135, 137)",
+    9
+   ],
+   [
+    "rgb(95, 23, 182)",
+    9
+   ]
+  ],
+  "linkColors": [
+   [
+    "rgb(35, 16, 20)",
+    34
+   ],
+   [
+    "rgb(219, 219, 219)",
+    22
+   ],
+   [
+    "rgb(255, 255, 255)",
+    9
+   ]
+  ],
+  "counts": {
+   "video": 2,
+   "canvas": 1,
+   "iframe": 1,
+   "svg": 0,
+   "img": 69,
+   "picture": 0,
+   "spline": 0,
+   "lottie": 0
+  },
+  "heroMedia": {
+   "video": false,
+   "canvas": false,
+   "bigImg": 2
+  },
+  "libs": {
+   "gsap": false,
+   "lenis": true,
+   "locomotive": false,
+   "next": false,
+   "framer": true,
+   "webflow": false,
+   "three": false,
+   "astro": false,
+   "nuxt": false,
+   "tailwindish": false
+  },
+  "sticky": 0,
+  "fixed": 3,
+  "snap": 0
+ },
+ "pageHeight": 10644
+}

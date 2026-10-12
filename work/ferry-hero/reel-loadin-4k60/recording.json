@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "id": "reel-loadin-4k60",
+  "dir": "/Users/augustas/dev/design-engine/work/ferry-hero/reel-loadin-4k60",
+  "createdAt": "2026-10-09T16:51:58.610Z",
+  "settings": {
+    "url": "http://localhost:4326",
+    "width": 1440,
+    "height": 900,
+    "scale": 2.6666666666666665,
+    "scrollY": 0,
+    "fps": 60,
+    "startMs": 0,
+    "durationMs": 8000,
+    "holdMs": 500,
+    "region": {
+      "type": "viewport"
+    },
+    "actions": [],
+    "cursor": false,
+    "colorScheme": "light",
+    "seed": 24301,
+    "realRandom": false,
+    "keepFrames": false,
+    "presets": []
+  },
+  "size": {
+    "width": 3840,
+    "height": 2400
+  },
+  "frames": 480,
+  "browser": "153.0.8010.12",
+  "files": {
+    "master": "/Users/augustas/dev/design-engine/work/ferry-hero/reel-loadin-4k60/master.nut",
+    "proxy": "/Users/augustas/dev/design-engine/work/ferry-hero/reel-loadin-4k60/proxy.mp4",
+    "thumbs": "/Users/augustas/dev/design-engine/work/ferry-hero/reel-loadin-4k60/thumbs.jpg",
+    "poster": "/Users/augustas/dev/design-engine/work/ferry-hero/reel-loadin-4k60/poster.png"
+  },
+  "thumbs": {
+    "step": 12,
+    "count": 40
+  },
+  "edits": {
+    "holdLastMs": 500,
+    "fadeColor": "#f6f7f9"
+  },
+  "background": "#f6f7f9",
+  "exports": [
+    {
+      "preset": "h264",
+      "file": "/Users/augustas/dev/design-engine/work/ferry-hero/ferry-hero-loadin-4k60.mp4",
+      "bytes": 8105305,
+      "probe": {
+        "file": "/Users/augustas/dev/design-engine/work/ferry-hero/ferry-hero-loadin-4k60.mp4",
+        "bytes": 8105305,
+        "codec": "h264",
+        "profile": "High",
+        "pixFmt": "yuv420p",
+        "width": 3840,
+        "height": 2400,
+        "fps": "60/1",
+        "frames": 510,
+        "durationSec": 8.5,
+        "bitrateKbps": 6944,
+        "color": {
+          "space": "bt709",
+          "primaries": "bt709",
+          "transfer": "bt709",
+          "range": "tv"
+        },
+        "cover": "/Users/augustas/dev/design-engine/work/ferry-hero/ferry-hero-loadin-4k60-cover.png"
+      },
+      "ms": 34418
+    }
+  ],
+  "timings": {
+    "loadMs": 1493,
+    "captureMs": 251351,
+    "finishMs": 20494,
+    "exportMs": 0
+  }
+}

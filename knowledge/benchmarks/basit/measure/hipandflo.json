@@ -1,0 +1,511 @@
+{
+ "id": "hipandflo",
+ "url": "https://hipandflo.com/",
+ "date": "2026-10-11",
+ "hero": {
+  "bgImages": [],
+  "filters": [],
+  "blends": [],
+  "transforms": [],
+  "perspective": [],
+  "media": [
+   {
+    "tag": "IMG",
+    "n": "div",
+    "r": [
+     0,
+     85,
+     1440,
+     900
+    ],
+    "src": "https://framerusercontent.com/images/xduvCMjKyEaJ4WeSqRemj4Pz8Qc.jpg?width=1816&height=1014",
+    "fit": "cover",
+    "radius": "0px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": [
+     1440,
+     804
+    ]
+   },
+   {
+    "tag": "IMG",
+    "n": "div",
+    "r": [
+     0,
+     1185,
+     720,
+     1008
+    ],
+    "src": "https://framerusercontent.com/images/OIkP1mmjS5Jr7EfMbX7guZ2QHi4.jpg?width=936&height=1170",
+    "fit": "cover",
+    "radius": "0px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": [
+     936,
+     1170
+    ]
+   }
+  ],
+  "svgNoise": 0,
+  "turb": [],
+  "canvas": [],
+  "radii": [],
+  "texts": [],
+  "buttons": [],
+  "fonts": [
+   "Instrument Serif 400",
+   "Plus Jakarta Sans 400",
+   "Plus Jakarta Sans 600",
+   "Instrument Serif Placeholder normal",
+   "Plus Jakarta Sans Placeholder normal"
+  ],
+  "appear": "{\"1mqfmuz\":{\"default\":{\"initial\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1.2,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":0},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0,\"delay\":0.2,\"duration\":2,\"type\":\"spring\"},\"x\":0,\"y\":0}},\"23agko\":{\"initial\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1.2,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":0},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0,\"delay\":0.2,\"duration\":2,\"type\":\"spring\"},\"x\":0,\"y\":0}},\"1o6sdlh\":{\"initial\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1.2,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":0},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0,\"delay\":0.2,\"duration\":2,\"type\":\"spring\"},\"x\":0,\"y\":0}}}}",
+  "anims": []
+ },
+ "page": {
+  "vw": 1440,
+  "pageHeight": 10259,
+  "title": "HIP & FLO",
+  "htmlBg": "rgba(0, 0, 0, 0)",
+  "bodyBg": "rgb(237, 233, 228)",
+  "bodyColor": "rgb(0, 0, 0)",
+  "colorScheme": "normal",
+  "h1": null,
+  "largestHeroText": null,
+  "h2": [
+   {
+    "text": "Padel. Pickleball.",
+    "family": "\"Instrument Serif\", \"Instrument Serif Placeholder\", serif",
+    "size": "64px",
+    "weight": "400",
+    "lh": "70.4px",
+    "ls": "normal",
+    "color": "rgb(20, 20, 20)",
+    "tt": "none",
+    "align": "left",
+    "w": 460,
+    "h": 141,
+    "top": 1307,
+    "left": 850,
+    "tag": "h2",
+    "balance": "wrap"
+   },
+   {
+    "text": "Architecture",
+    "family": "\"Instrument Serif\", \"Instrument Serif Placeholder\", serif",
+    "size": "64px",
+    "weight": "400",
+    "lh": "70.4px",
+    "ls": "normal",
+    "color": "rgb(237, 233, 228)",
+    "tt": "none",
+    "align": "left",
+    "w": 350,
+    "h": 70,
+    "top": 3612,
+    "left": 185,
+    "tag": "h2",
+    "balance": "wrap"
+   },
+   {
+    "text": "Principles",
+    "family": "\"Instrument Serif\", \"Instrument Serif Placeholder\", serif",
+    "size": "64px",
+    "weight": "400",
+    "lh": "70.4px",
+    "ls": "normal",
+    "color": "rgb(20, 20, 20)",
+    "tt": "none",
+    "align": "center",
+    "w": 1340,
+    "h": 70,
+    "top": 4475,
+    "left": 50,
+    "tag": "h2",
+    "balance": "wrap"
+   },
+   {
+    "text": "Product",
+    "family": "\"Instrument Serif\", \"Instrument Serif Placeholder\", serif",
+    "size": "64px",
+    "weight": "400",
+    "lh": "70.4px",
+    "ls": "normal",
+    "color": "rgb(237, 233, 228)",
+    "tt": "none",
+    "align": "center",
+    "w": 1340,
+    "h": 70,
+    "top": 6499,
+    "left": 50,
+    "tag": "h2",
+    "balance": "wrap"
+   }
+  ],
+  "h3": [
+   {
+    "text": "Brand",
+    "family": "\"Instrument Serif\", \"Instrument Serif Placeholder\", serif",
+    "size": "60px",
+    "weight": "400",
+    "lh": "60px",
+    "ls": "normal",
+    "color": "rgb(20, 20, 20)",
+    "tt": "none",
+    "align": "left",
+    "w": 400,
+    "h": 60,
+    "top": 2582,
+    "left": 433,
+    "tag": "h3",
+    "balance": "wrap"
+   }
+  ],
+  "p": [
+   {
+    "text": "Hip & Flo is a modern luxury sports house built at the intersection of",
+    "family": "\"Plus Jakarta Sans\", \"Plus Jakarta Sans Placeholder\", sans-serif",
+    "size": "16px",
+    "weight": "400",
+    "lh": "25.6px",
+    "ls": "normal",
+    "color": "rgb(20, 20, 20)",
+    "tt": "none",
+    "align": "left",
+    "w": 460,
+    "h": 51,
+    "top": 1578,
+    "left": 850,
+    "tag": "p",
+    "balance": "wrap"
+   },
+   {
+    "text": "Created for the world's fastest-growing racquet sports, Hip & Flo brin",
+    "family": "\"Plus Jakarta Sans\", \"Plus Jakarta Sans Placeholder\", sans-serif",
+    "size": "16px",
+    "weight": "400",
+    "lh": "25.6px",
+    "ls": "normal",
+    "color": "rgb(20, 20, 20)",
+    "tt": "none",
+    "align": "left",
+    "w": 460,
+    "h": 102,
+    "top": 1649,
+    "left": 850,
+    "tag": "p",
+    "balance": "wrap"
+   },
+   {
+    "text": "Designed for life both on and off the court, the brand has been create",
+    "family": "\"Plus Jakarta Sans\", \"Plus Jakarta Sans Placeholder\", sans-serif",
+    "size": "16px",
+    "weight": "400",
+    "lh": "25.6px",
+    "ls": "normal",
+    "color": "rgb(20, 20, 20)",
+    "tt": "none",
+    "align": "left",
+    "w": 460,
+    "h": 77,
+    "top": 1772,
+    "left": 850,
+    "tag": "p",
+    "balance": "wrap"
+   }
+  ],
+  "heroP": null,
+  "typeScale": [
+   [
+    "Plus Jakarta Sans|16|400",
+    2782
+   ],
+   [
+    "Instrument Serif|40|400",
+    216
+   ],
+   [
+    "Plus Jakarta Sans|14|600",
+    70
+   ],
+   [
+    "Instrument Serif|64|400",
+    59
+   ],
+   [
+    "Plus Jakarta Sans|14|400",
+    52
+   ],
+   [
+    "Plus Jakarta Sans|13|400",
+    27
+   ],
+   [
+    "Instrument Serif|60|400",
+    5
+   ]
+  ],
+  "fontFamiliesUsed": [
+   [
+    "Plus Jakarta Sans",
+    33
+   ],
+   [
+    "Instrument Serif",
+    17
+   ]
+  ],
+  "sizesDistinct": [
+   13,
+   14,
+   16,
+   40,
+   60,
+   64
+  ],
+  "lsHist": [
+   [
+    "normal",
+    50
+   ]
+  ],
+  "nav": {
+   "tag": "NAV",
+   "h": 85,
+   "outerH": 85,
+   "top": -100,
+   "w": 1440,
+   "position": "relative",
+   "bg": "rgb(237, 233, 228)",
+   "bgHeader": "rgb(237, 233, 228)",
+   "backdrop": "none",
+   "bb": "0px none rgb(0, 0, 0)",
+   "shadow": "none",
+   "contentLeft": 580,
+   "contentRight": 860,
+   "nLinks": 1,
+   "linkTexts": [],
+   "linkTypo": [],
+   "hasLogoSvgOrImg": false,
+   "px": "50px/50px"
+  },
+  "ctas": [],
+  "sections": [
+   {
+    "cls": "framer-1qdnw4c",
+    "tag": "div",
+    "top": 1085,
+    "h": 8850,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 222,
+    "effPb": 209,
+    "contentW": 1344,
+    "contentL": 46,
+    "bg": "rgb(237, 233, 228)",
+    "heading": "Padel. Pickleball.",
+    "hSize": "64px",
+    "hAlign": "left"
+   },
+   {
+    "cls": "framer-1prmbhs",
+    "tag": "section",
+    "top": 2245,
+    "h": 970,
+    "pt": "100px",
+    "pb": "100px",
+    "effPt": 187,
+    "effPb": 167,
+    "contentW": 641,
+    "contentL": 191,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "",
+    "hSize": null,
+    "hAlign": null
+   },
+   {
+    "cls": "framer-sekk9r",
+    "tag": "section",
+    "top": 4375,
+    "h": 1182,
+    "pt": "100px",
+    "pb": "200px",
+    "effPt": 100,
+    "effPb": 367,
+    "contentW": 1344,
+    "contentL": 46,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "Principles",
+    "hSize": "64px",
+    "hAlign": "center"
+   },
+   {
+    "cls": "framer-1tyb2uj",
+    "tag": "section",
+    "top": 6369,
+    "h": 2606,
+    "pt": "130px",
+    "pb": "130px",
+    "effPt": 130,
+    "effPb": 194,
+    "contentW": 1340,
+    "contentL": 50,
+    "bg": "rgb(20, 20, 20)",
+    "heading": "Product",
+    "hSize": "64px",
+    "hAlign": "center"
+   },
+   {
+    "cls": "framer-dlrmra",
+    "tag": "section",
+    "top": 8975,
+    "h": 960,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 425,
+    "effPb": 209,
+    "contentW": 500,
+    "contentL": 470,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "Join our list",
+    "hSize": "64px",
+    "hAlign": "center"
+   },
+   {
+    "cls": "framer-X1up0",
+    "tag": "footer",
+    "top": 9735,
+    "h": 324,
+    "pt": "50px",
+    "pb": "0px",
+    "effPt": 74,
+    "effPb": 9,
+    "contentW": 1340,
+    "contentL": 50,
+    "bg": "rgb(20, 20, 20)",
+    "heading": "",
+    "hSize": null,
+    "hAlign": null
+   }
+  ],
+  "radiusAll": [],
+  "radiusCards": [],
+  "radiusMedia": [],
+  "radiusInputs": [],
+  "shadows": [],
+  "borders": [],
+  "cardBgs": [],
+  "grids": [],
+  "flexGaps": [
+   [
+    "0px",
+    59
+   ],
+   [
+    "50px",
+    28
+   ],
+   [
+    "30px",
+    5
+   ],
+   [
+    "20px",
+    5
+   ],
+   [
+    "10px",
+    4
+   ],
+   [
+    "100px",
+    2
+   ],
+   [
+    "70px",
+    1
+   ],
+   [
+    "63px",
+    1
+   ]
+  ],
+  "bgByArea": [
+   [
+    "rgb(237, 233, 228)",
+    "128%"
+   ],
+   [
+    "rgb(20, 20, 20)",
+    "57%"
+   ],
+   [
+    "rgb(37, 64, 53)",
+    "5%"
+   ],
+   [
+    "rgb(222, 216, 209)",
+    "0%"
+   ],
+   [
+    "rgb(199, 74, 40)",
+    "0%"
+   ]
+  ],
+  "textColors": [
+   [
+    "rgb(237, 233, 228)",
+    26
+   ],
+   [
+    "rgb(20, 20, 20)",
+    23
+   ],
+   [
+    "rgb(189, 180, 175)",
+    1
+   ]
+  ],
+  "linkColors": [
+   [
+    "rgb(237, 233, 228)",
+    9
+   ]
+  ],
+  "counts": {
+   "video": 0,
+   "canvas": 0,
+   "iframe": 1,
+   "svg": 1,
+   "img": 17,
+   "picture": 0,
+   "spline": 0,
+   "lottie": 0
+  },
+  "heroMedia": {
+   "video": false,
+   "canvas": false,
+   "bigImg": 1
+  },
+  "libs": {
+   "gsap": false,
+   "lenis": true,
+   "locomotive": false,
+   "next": false,
+   "framer": true,
+   "webflow": false,
+   "three": false,
+   "astro": false,
+   "nuxt": false,
+   "tailwindish": false
+  },
+  "sticky": 1,
+  "fixed": 0,
+  "snap": 0
+ },
+ "pageHeight": 10259
+}

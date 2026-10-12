@@ -1,0 +1,732 @@
+{
+ "headline": {
+  "text": "DISCOVER BELLAVISTA",
+  "tag": "H1",
+  "fam": "Geist, \"Geist Placeholder\", sans-serif",
+  "size": "120px",
+  "lh": "108px",
+  "w": "500",
+  "ls": "-7.2px",
+  "color": "rgb(217, 213, 197)",
+  "bgi": "none",
+  "clip": "border-box",
+  "fill": "rgb(217, 213, 197)",
+  "style": "normal",
+  "align": "center",
+  "r": [
+   20,
+   200,
+   1400,
+   216
+  ],
+  "wrap": "wrap",
+  "feat": "normal"
+ },
+ "headlineSpans": [
+  {
+   "text": "DISCOVER",
+   "tag": "SPAN",
+   "fam": "Geist, \"Geist Placeholder\", sans-serif",
+   "size": "120px",
+   "lh": "108px",
+   "w": "500",
+   "ls": "-7.2px",
+   "color": "rgb(217, 213, 197)",
+   "bgi": "none",
+   "clip": "border-box",
+   "fill": "rgb(217, 213, 197)",
+   "style": "normal",
+   "align": "center",
+   "r": [
+    444,
+    176,
+    552,
+    156
+   ],
+   "wrap": "nowrap",
+   "feat": "normal"
+  }
+ ],
+ "sub": null,
+ "headToSub": null,
+ "buttons": [
+  {
+   "t": "BELLAVISTA",
+   "r": [
+    20,
+    25,
+    199,
+    30
+   ],
+   "font": "Geist 30px w500 ls=-1.2px c=rgb(217, 213, 197)",
+   "layers": [
+    {
+     "n": "div",
+     "r": [
+      20,
+      25,
+      30,
+      30
+     ],
+     "bg": "rgb(217, 213, 197)",
+     "bgi": "none",
+     "radius": "0px",
+     "border": "",
+     "sh": "",
+     "filter": "",
+     "backdrop": "",
+     "op": "1",
+     "blend": ""
+    }
+   ]
+  },
+  {
+   "t": "Get This Template",
+   "r": [
+    1278,
+    799,
+    142,
+    36
+   ],
+   "font": "Switzer 14px w600 ls=-0.28px c=rgb(255, 255, 255)",
+   "layers": [
+    {
+     "n": "Desktop",
+     "r": [
+      1278,
+      799,
+      142,
+      36
+     ],
+     "bg": "rgb(0, 0, 0)",
+     "bgi": "none",
+     "radius": "10px",
+     "border": "",
+     "sh": "rgba(0, 0, 0, 0.3) 0px 0px 20px 5px",
+     "filter": "",
+     "backdrop": "",
+     "op": "1",
+     "blend": ""
+    },
+    {
+     "n": "overlay",
+     "r": [
+      1103,
+      796,
+      170,
+      43
+     ],
+     "bg": "rgb(255, 109, 16)",
+     "bgi": "none",
+     "radius": "0px",
+     "border": "",
+     "sh": "",
+     "filter": "",
+     "backdrop": "",
+     "op": "1",
+     "blend": ""
+    }
+   ]
+  },
+  {
+   "t": "Monarque Latest Template",
+   "r": [
+    1278,
+    680,
+    142,
+    110
+   ],
+   "font": "Inter 22px w600 ls=-0.88px c=rgb(255, 255, 255)",
+   "layers": [
+    {
+     "n": "div",
+     "r": [
+      1278,
+      680,
+      142,
+      110
+     ],
+     "bg": "rgba(0, 0, 0, 0.57)",
+     "bgi": "none",
+     "radius": "0px",
+     "border": "",
+     "sh": "",
+     "filter": "",
+     "backdrop": "",
+     "op": "0",
+     "blend": ""
+    },
+    {
+     "n": "div",
+     "r": [
+      1390,
+      690,
+      20,
+      20
+     ],
+     "bg": "rgb(255, 255, 255)",
+     "bgi": "none",
+     "radius": "100px",
+     "border": "",
+     "sh": "",
+     "filter": "",
+     "backdrop": "",
+     "op": "1",
+     "blend": ""
+    },
+    {
+     "n": "div",
+     "r": [
+      1397,
+      697,
+      6,
+      6
+     ],
+     "bg": "rgb(0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "border": "",
+     "sh": "",
+     "filter": "",
+     "backdrop": "",
+     "op": "1",
+     "blend": ""
+    },
+    {
+     "n": "div",
+     "r": [
+      1397,
+      697,
+      6,
+      6
+     ],
+     "bg": "rgb(0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "border": "",
+     "sh": "",
+     "filter": "",
+     "backdrop": "",
+     "op": "1",
+     "blend": ""
+    }
+   ]
+  }
+ ],
+ "nav": {
+  "r": [
+   0,
+   0,
+   1440,
+   80
+  ],
+  "pos": "fixed",
+  "shells": [
+   {
+    "n": "Desktop",
+    "r": [
+     1198,
+     10,
+     222,
+     60
+    ],
+    "bg": "rgb(217, 213, 197)",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 0)",
+    "bb": "0px rgb(0, 0, 0)",
+    "backdrop": "none",
+    "sh": "none",
+    "pos": "relative"
+   }
+  ],
+  "links": [
+   "BELLAVISTA",
+   "BOOK NOW"
+  ]
+ },
+ "layers": [
+  {
+   "n": "div",
+   "tag": "DIV",
+   "r": [
+    0,
+    0,
+    1440,
+    11058
+   ],
+   "bg": "rgb(113, 0, 23)",
+   "bgi": "none",
+   "radius": "0px",
+   "border": "",
+   "sh": "",
+   "filter": "",
+   "backdrop": "",
+   "op": "1",
+   "blend": "",
+   "t": "",
+   "persp": "",
+   "mask": "none",
+   "src": "",
+   "overflow": "clip"
+  },
+  {
+   "n": "Main",
+   "tag": "MAIN",
+   "r": [
+    0,
+    0,
+    1440,
+    9697
+   ],
+   "bg": "rgb(10, 18, 20)",
+   "bgi": "none",
+   "radius": "0px",
+   "border": "",
+   "sh": "",
+   "filter": "",
+   "backdrop": "",
+   "op": "1",
+   "blend": "",
+   "t": "",
+   "persp": "",
+   "mask": "none",
+   "src": "",
+   "overflow": "clip"
+  },
+  {
+   "n": "img",
+   "tag": "DIV",
+   "r": [
+    0,
+    0,
+    1440,
+    900
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgi": "none",
+   "radius": "0px",
+   "border": "",
+   "sh": "",
+   "filter": "brightness(0.7)",
+   "backdrop": "",
+   "op": "1",
+   "blend": "",
+   "t": "",
+   "persp": "",
+   "mask": "none",
+   "src": "",
+   "overflow": "visible"
+  },
+  {
+   "n": "img",
+   "tag": "IMG",
+   "r": [
+    0,
+    0,
+    1440,
+    900
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgi": "none",
+   "radius": "0px",
+   "border": "",
+   "sh": "",
+   "filter": "",
+   "backdrop": "",
+   "op": "1",
+   "blend": "",
+   "t": "",
+   "persp": "",
+   "mask": "none",
+   "src": "om/images/CuqtmnTZ5R7MUFjqqKLzxOuE.jpg?scale-down-to=2048&width=3117&height=2102",
+   "overflow": "clip"
+  },
+  {
+   "n": "div",
+   "tag": "DIV",
+   "r": [
+    0,
+    0,
+    1440,
+    900
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgi": "url(\"https://framerusercontent.com/images/Zc51XICRMXtLRbug4tGLcbo.gif\")",
+   "radius": "0px",
+   "border": "",
+   "sh": "",
+   "filter": "",
+   "backdrop": "",
+   "op": "0.1",
+   "blend": "",
+   "t": "",
+   "persp": "",
+   "mask": "none",
+   "src": "",
+   "overflow": "visible"
+  }
+ ],
+ "canvases": [],
+ "bodyBg": "rgb(113, 0, 23)",
+ "htmlBg": "rgba(0, 0, 0, 0)",
+ "appear": {
+  "aqhh4m": {
+   "default": {
+    "initial": {
+     "opacity": 0.001,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1.2,
+     "skewX": 0,
+     "skewY": 0,
+     "x": 0,
+     "y": 0
+    },
+    "animate": {
+     "opacity": 1,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "transition": {
+      "bounce": 0,
+      "delay": 0,
+      "duration": 1.5,
+      "type": "spring"
+     },
+     "x": 0,
+     "y": 0
+    }
+   }
+  },
+  "1j35up8": {
+   "default": {
+    "initial": {
+     "opacity": 0.001,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "x": 0,
+     "y": 20
+    },
+    "animate": {
+     "opacity": 1,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "transition": {
+      "bounce": 0,
+      "delay": 0.4,
+      "duration": 1,
+      "type": "spring"
+     },
+     "x": 0,
+     "y": 0
+    }
+   }
+  },
+  "fm49n": {
+   "default": {
+    "initial": {
+     "opacity": 0.001,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "x": 0,
+     "y": 0
+    },
+    "animate": {
+     "opacity": 1,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "transition": {
+      "bounce": 0,
+      "delay": 0.6,
+      "duration": 1,
+      "type": "spring"
+     },
+     "x": 0,
+     "y": 0
+    },
+    "transformTemplate": "translateX(-50%) __Appear_Animation_Transform__"
+   }
+  }
+ },
+ "appearTargets": [
+  {
+   "id": "aqhh4m",
+   "n": "img",
+   "r": [
+    0,
+    0,
+    1440,
+    900
+   ],
+   "txt": ""
+  },
+  {
+   "id": "1j35up8",
+   "n": "div",
+   "r": [
+    520,
+    683,
+    400,
+    67
+   ],
+   "txt": "Where flavor becomes art and every momen"
+  },
+  {
+   "id": "fm49n",
+   "n": "scroll down",
+   "r": [
+    663,
+    813,
+    115,
+    47
+   ],
+   "txt": "SCROLL DOWN"
+  },
+  {
+   "id": "n0ccwk",
+   "n": "Light",
+   "r": [
+    1280,
+    842,
+    140,
+    38
+   ],
+   "txt": "Create a free website with Framer, the w"
+  }
+ ],
+ "sections": [
+  {
+   "n": "div",
+   "r": [
+    0,
+    0,
+    1440,
+    80
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "pt": "0px",
+   "pb": "0px",
+   "gap": "normal",
+   "radius": "0px"
+  },
+  {
+   "n": "div",
+   "r": [
+    0,
+    9697,
+    1440,
+    1361
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "pt": "0px",
+   "pb": "0px",
+   "gap": "normal",
+   "radius": "0px"
+  },
+  {
+   "n": "div",
+   "r": [
+    1278,
+    799,
+    142,
+    36
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "pt": "0px",
+   "pb": "0px",
+   "gap": "normal",
+   "radius": "0px"
+  },
+  {
+   "n": "div",
+   "r": [
+    1278,
+    680,
+    142,
+    110
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "pt": "0px",
+   "pb": "0px",
+   "gap": "normal",
+   "radius": "0px"
+  }
+ ],
+ "radiusHist": [
+  [
+   "100px",
+   2
+  ],
+  [
+   "10px",
+   2
+  ],
+  [
+   "11px",
+   2
+  ],
+  [
+   "50px",
+   1
+  ],
+  [
+   "5px",
+   1
+  ]
+ ],
+ "shadowHist": [
+  [
+   "rgb(0, 0, 0) 0px 0px 0px 1px inset",
+   2
+  ],
+  [
+   "rgba(0, 0, 0, 0.3) 0px 0px 20px 5px",
+   1
+  ],
+  [
+   "rgba(0, 0, 0, 0.17) 0px 0.602187px 1.56569px -1.5px, rgba(0, 0, 0, 0.14) 0px 2.28853px 5.95019px -3px, rgba(0, 0, 0, 0.02) 0px 10px 26px -4.5px",
+   1
+  ]
+ ],
+ "backdropHist": [
+  [
+   "blur(10px)",
+   1
+  ]
+ ],
+ "filterHist": [
+  [
+   "blur(10px)",
+   91
+  ],
+  [
+   "brightness(0.7)",
+   8
+  ],
+  [
+   "brightness(0.9)",
+   8
+  ],
+  [
+   "brightness(0.8)",
+   3
+  ],
+  [
+   "brightness(0.5)",
+   1
+  ],
+  [
+   "brightness(0.6)",
+   1
+  ]
+ ],
+ "fontHist": [
+  [
+   "Geist 72px w500 ls-2.88px",
+   92
+  ],
+  [
+   "Geist 16px w400 lsnormal",
+   25
+  ],
+  [
+   "Geist 120px w500 ls-7.2px",
+   19
+  ],
+  [
+   "Geist 18px w500 lsnormal",
+   15
+  ],
+  [
+   "Geist 18px w400 lsnormal",
+   10
+  ],
+  [
+   "Geist 36px w400 ls-0.72px",
+   10
+  ],
+  [
+   "Geist 40px w500 ls-1.2px",
+   8
+  ],
+  [
+   "Geist 58px w500 ls-2.32px",
+   5
+  ],
+  [
+   "Geist 30px w500 ls-1.2px",
+   2
+  ],
+  [
+   "Switzer 14px w600 ls-0.28px",
+   1
+  ],
+  [
+   "Inter 22px w600 ls-0.88px",
+   1
+  ],
+  [
+   "Inter 14px w400 ls-0.56px",
+   1
+  ]
+ ],
+ "gradHist": [],
+ "scripts": [
+  "https://events.framer.com/script?v=2"
+ ],
+ "html": [
+  "noise background",
+  "noise background",
+  "noise background",
+  "noise background",
+  "noise background",
+  "noise background",
+  "noise background",
+  "noise background",
+  "noise background",
+  "noise background",
+  "noise background"
+ ],
+ "hover": [
+  {
+   "t": "Get This Template",
+   "after": [
+    "A bg=rgb(0, 0, 0) bgi=none sh=rgba(253, 108, 16, 0.498) 0px 0px 20px 5px t=none op=1",
+    "DIV bg=rgba(0, 0, 0, 0) bgi=none sh=none t=none op=1",
+    "P bg=rgba(0, 0, 0, 0) bgi=none sh=none t=none op=1",
+    "overlay bg=rgb(255, 109, 16) bgi=none sh=none t=matrix(1, 0, 0, 1, -1.49832, 0) op=1"
+   ]
+  },
+  {
+   "t": "Monarque Latest Template",
+   "after": [
+    "A bg=rgba(0, 0, 0, 0) bgi=none sh=none t=none op=1",
+    "DIV bg=rgba(0, 0, 0, 0) bgi=none sh=none t=none op=1",
+    "VIDEO bg=rgba(0, 0, 0, 0) bgi=none sh=none t=none op=1",
+    "DIV bg=rgba(0, 0, 0, 0.57) bgi=none sh=none t=none op=1",
+    "DIV bg=rgba(0, 0, 0, 0) bgi=none sh=none t=matrix(1, 0, 0, 1, -52.0234, 0) op=1",
+    "P bg=rgba(0, 0, 0, 0) bgi=none sh=none t=none op=1"
+   ]
+  }
+ ]
+}

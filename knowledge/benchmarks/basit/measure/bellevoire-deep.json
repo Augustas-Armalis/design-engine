@@ -1,0 +1,760 @@
+{
+ "headline": {
+  "text": "Bellovoire",
+  "tag": "DIV",
+  "fam": "sans-serif",
+  "size": "12px",
+  "lh": "normal",
+  "w": "400",
+  "ls": "normal",
+  "color": "rgb(0, 0, 0)",
+  "bgi": "none",
+  "clip": "border-box",
+  "fill": "rgb(0, 0, 0)",
+  "style": "normal",
+  "align": "start",
+  "r": [
+   0,
+   0,
+   1440,
+   100
+  ],
+  "wrap": "wrap",
+  "feat": "normal"
+ },
+ "headlineSpans": [],
+ "sub": null,
+ "headToSub": null,
+ "buttons": [
+  {
+   "t": "Bellovoire",
+   "r": [
+    50,
+    30,
+    195,
+    40
+   ],
+   "font": "\"Instrument Serif\" 40px w400 ls=normal c=rgb(237, 233, 228)",
+   "layers": [
+    {
+     "n": "logo",
+     "r": [
+      50,
+      30,
+      50,
+      40
+     ],
+     "bg": "rgb(237, 233, 228)",
+     "bgi": "none",
+     "radius": "0px",
+     "border": "",
+     "sh": "",
+     "filter": "",
+     "backdrop": "",
+     "op": "1",
+     "blend": ""
+    }
+   ]
+  },
+  {
+   "t": "Monarque Latest Template",
+   "r": [
+    1210,
+    632,
+    210,
+    158
+   ],
+   "font": "Inter 22px w600 ls=-0.88px c=rgb(255, 255, 255)",
+   "layers": [
+    {
+     "n": "div",
+     "r": [
+      1210,
+      632,
+      210,
+      158
+     ],
+     "bg": "rgba(0, 0, 0, 0.57)",
+     "bgi": "none",
+     "radius": "0px",
+     "border": "",
+     "sh": "",
+     "filter": "",
+     "backdrop": "",
+     "op": "0",
+     "blend": ""
+    },
+    {
+     "n": "div",
+     "r": [
+      1390,
+      642,
+      20,
+      20
+     ],
+     "bg": "rgb(255, 255, 255)",
+     "bgi": "none",
+     "radius": "100px",
+     "border": "",
+     "sh": "",
+     "filter": "",
+     "backdrop": "",
+     "op": "1",
+     "blend": ""
+    },
+    {
+     "n": "div",
+     "r": [
+      1397,
+      649,
+      6,
+      6
+     ],
+     "bg": "rgb(0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "border": "",
+     "sh": "",
+     "filter": "",
+     "backdrop": "",
+     "op": "1",
+     "blend": ""
+    },
+    {
+     "n": "div",
+     "r": [
+      1397,
+      649,
+      6,
+      6
+     ],
+     "bg": "rgb(0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "border": "",
+     "sh": "",
+     "filter": "",
+     "backdrop": "",
+     "op": "1",
+     "blend": ""
+    }
+   ]
+  },
+  {
+   "t": "Get This Template",
+   "r": [
+    1278,
+    799,
+    142,
+    36
+   ],
+   "font": "Switzer 14px w600 ls=-0.28px c=rgb(255, 255, 255)",
+   "layers": [
+    {
+     "n": "Desktop",
+     "r": [
+      1278,
+      799,
+      142,
+      36
+     ],
+     "bg": "rgb(0, 0, 0)",
+     "bgi": "none",
+     "radius": "10px",
+     "border": "",
+     "sh": "rgba(0, 0, 0, 0.3) 0px 0px 20px 5px",
+     "filter": "",
+     "backdrop": "",
+     "op": "1",
+     "blend": ""
+    },
+    {
+     "n": "overlay",
+     "r": [
+      1103,
+      796,
+      170,
+      43
+     ],
+     "bg": "rgb(255, 109, 16)",
+     "bgi": "none",
+     "radius": "0px",
+     "border": "",
+     "sh": "",
+     "filter": "",
+     "backdrop": "",
+     "op": "1",
+     "blend": ""
+    }
+   ]
+  }
+ ],
+ "nav": {
+  "r": [
+   0,
+   0,
+   1440,
+   100
+  ],
+  "pos": "fixed",
+  "shells": [],
+  "links": [
+   "Bellovoire"
+  ]
+ },
+ "layers": [
+  {
+   "n": "div",
+   "tag": "DIV",
+   "r": [
+    0,
+    0,
+    1440,
+    13677
+   ],
+   "bg": "rgb(237, 233, 228)",
+   "bgi": "none",
+   "radius": "0px",
+   "border": "",
+   "sh": "",
+   "filter": "",
+   "backdrop": "",
+   "op": "1",
+   "blend": "",
+   "t": "",
+   "persp": "",
+   "mask": "none",
+   "src": "",
+   "overflow": "visible"
+  },
+  {
+   "n": "main",
+   "tag": "MAIN",
+   "r": [
+    0,
+    0,
+    1440,
+    12801
+   ],
+   "bg": "rgb(237, 233, 228)",
+   "bgi": "none",
+   "radius": "0px",
+   "border": "",
+   "sh": "",
+   "filter": "",
+   "backdrop": "",
+   "op": "1",
+   "blend": "",
+   "t": "",
+   "persp": "",
+   "mask": "none",
+   "src": "",
+   "overflow": "visible"
+  },
+  {
+   "n": "Section - Hero",
+   "tag": "HEADER",
+   "r": [
+    0,
+    0,
+    1440,
+    900
+   ],
+   "bg": "rgb(23, 15, 11)",
+   "bgi": "none",
+   "radius": "0px",
+   "border": "",
+   "sh": "",
+   "filter": "",
+   "backdrop": "",
+   "op": "1",
+   "blend": "",
+   "t": "",
+   "persp": "",
+   "mask": "none",
+   "src": "",
+   "overflow": "hidden"
+  },
+  {
+   "n": "img",
+   "tag": "DIV",
+   "r": [
+    0,
+    0,
+    1440,
+    900
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgi": "none",
+   "radius": "0px",
+   "border": "",
+   "sh": "",
+   "filter": "",
+   "backdrop": "",
+   "op": "1",
+   "blend": "",
+   "t": "",
+   "persp": "",
+   "mask": "linear-gradient(rgb(0, 0, 0) 27%, rgba(0, 0, 0, 0.2) 100%)",
+   "src": "",
+   "overflow": "hidden"
+  },
+  {
+   "n": "img",
+   "tag": "IMG",
+   "r": [
+    0,
+    0,
+    1440,
+    900
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgi": "none",
+   "radius": "0px",
+   "border": "",
+   "sh": "",
+   "filter": "",
+   "backdrop": "",
+   "op": "1",
+   "blend": "",
+   "t": "",
+   "persp": "",
+   "mask": "none",
+   "src": "amerusercontent.com/images/bimyiU5RnafEI9aZIoQlMDyoE8.jpg?width=2000&height=1180",
+   "overflow": "clip"
+  },
+  {
+   "n": "Scroller",
+   "tag": "DIV",
+   "r": [
+    0,
+    900,
+    1440,
+    11901
+   ],
+   "bg": "rgb(237, 233, 228)",
+   "bgi": "none",
+   "radius": "0px",
+   "border": "",
+   "sh": "",
+   "filter": "",
+   "backdrop": "",
+   "op": "1",
+   "blend": "",
+   "t": "",
+   "persp": "",
+   "mask": "none",
+   "src": "",
+   "overflow": "visible"
+  },
+  {
+   "n": "shape",
+   "tag": "DIV",
+   "r": [
+    0,
+    1079,
+    1440,
+    1152
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgi": "none",
+   "radius": "0px",
+   "border": "",
+   "sh": "",
+   "filter": "",
+   "backdrop": "",
+   "op": "1",
+   "blend": "",
+   "t": "matrix(1, 0, 0, 1, -720, 0)",
+   "persp": "",
+   "mask": "linear-gradient(rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%)",
+   "src": "",
+   "overflow": "hidden"
+  },
+  {
+   "n": "div",
+   "tag": "DIV",
+   "r": [
+    0,
+    1079,
+    1440,
+    1152
+   ],
+   "bg": "rgb(189, 180, 175)",
+   "bgi": "none",
+   "radius": "0px",
+   "border": "",
+   "sh": "",
+   "filter": "",
+   "backdrop": "",
+   "op": "0.4",
+   "blend": "",
+   "t": "",
+   "persp": "",
+   "mask": "url(\"data:image/svg+xml,<svg display=\\\"block\\\" role=\\\"presentation\\\" viewBox=\\\"0 0 50 40\\\" xmlns=\\\"http://www.w3.org/2000/svg\\\"><g opacity=\\\"0.4\\\"><path d=\\\"M 24.769 41.012 C 24.685 40.984 24.587 40.9",
+   "src": "",
+   "overflow": "visible"
+  }
+ ],
+ "canvases": [],
+ "bodyBg": "rgb(237, 233, 228)",
+ "htmlBg": "rgba(0, 0, 0, 0)",
+ "appear": {
+  "ayotzz": {
+   "default": {
+    "initial": {
+     "opacity": 0.001,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "x": 0,
+     "y": -50
+    },
+    "animate": {
+     "opacity": 1,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "transition": {
+      "bounce": 0,
+      "delay": 0,
+      "duration": 1.5,
+      "type": "spring"
+     },
+     "x": 0,
+     "y": 0
+    },
+    "transformTemplate": "translateX(-50%) __Appear_Animation_Transform__"
+   }
+  },
+  "19ka5ap": {
+   "default": {
+    "initial": {
+     "opacity": 1,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1.2,
+     "skewX": 0,
+     "skewY": 0,
+     "x": 0,
+     "y": 0
+    },
+    "animate": {
+     "opacity": 1,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "transition": {
+      "bounce": 0,
+      "delay": 0.2,
+      "duration": 2,
+      "type": "spring"
+     },
+     "x": 0,
+     "y": 0
+    }
+   }
+  },
+  "1kdlnj0": {
+   "default": {
+    "initial": {
+     "opacity": 0.001,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "x": 0,
+     "y": 50
+    },
+    "animate": {
+     "opacity": 1,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "transition": {
+      "bounce": 0,
+      "delay": 0.8,
+      "duration": 1.5,
+      "type": "spring"
+     },
+     "x": 0,
+     "y": 0
+    }
+   }
+  }
+ },
+ "appearTargets": [
+  {
+   "id": "ayotzz",
+   "n": "div",
+   "r": [
+    0,
+    0,
+    1440,
+    100
+   ],
+   "txt": "Bellovoire"
+  },
+  {
+   "id": "19ka5ap",
+   "n": "img",
+   "r": [
+    0,
+    0,
+    1440,
+    900
+   ],
+   "txt": ""
+  },
+  {
+   "id": "1kdlnj0",
+   "n": "svg",
+   "r": [
+    50,
+    652,
+    1340,
+    268
+   ],
+   "txt": ""
+  },
+  {
+   "id": "n0ccwk",
+   "n": "Light",
+   "r": [
+    1280,
+    842,
+    140,
+    38
+   ],
+   "txt": "Create a free website with Framer, the w"
+  }
+ ],
+ "sections": [
+  {
+   "n": "div",
+   "r": [
+    0,
+    0,
+    1440,
+    100
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "pt": "0px",
+   "pb": "0px",
+   "gap": "normal",
+   "radius": "0px"
+  },
+  {
+   "n": "div",
+   "r": [
+    0,
+    12801,
+    1440,
+    877
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "pt": "0px",
+   "pb": "0px",
+   "gap": "normal",
+   "radius": "0px"
+  },
+  {
+   "n": "div",
+   "r": [
+    1210,
+    632,
+    210,
+    158
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "pt": "0px",
+   "pb": "0px",
+   "gap": "normal",
+   "radius": "0px"
+  },
+  {
+   "n": "div",
+   "r": [
+    1278,
+    799,
+    142,
+    36
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "pt": "0px",
+   "pb": "0px",
+   "gap": "normal",
+   "radius": "0px"
+  }
+ ],
+ "radiusHist": [
+  [
+   "10px",
+   2
+  ],
+  [
+   "11px",
+   2
+  ],
+  [
+   "5px",
+   1
+  ]
+ ],
+ "shadowHist": [
+  [
+   "rgb(0, 0, 0) 0px 0px 0px 1px inset",
+   2
+  ],
+  [
+   "rgba(0, 0, 0, 0.3) 0px 0px 20px 5px",
+   1
+  ],
+  [
+   "rgba(0, 0, 0, 0.17) 0px 0.602187px 1.56569px -1.5px, rgba(0, 0, 0, 0.14) 0px 2.28853px 5.95019px -3px, rgba(0, 0, 0, 0.02) 0px 10px 26px -4.5px",
+   1
+  ]
+ ],
+ "backdropHist": [
+  [
+   "blur(0.078125px)",
+   2
+  ],
+  [
+   "blur(0.15625px)",
+   2
+  ],
+  [
+   "blur(0.3125px)",
+   2
+  ],
+  [
+   "blur(0.625px)",
+   2
+  ],
+  [
+   "blur(1.25px)",
+   2
+  ],
+  [
+   "blur(2.5px)",
+   2
+  ],
+  [
+   "blur(5px)",
+   2
+  ],
+  [
+   "blur(10px)",
+   2
+  ]
+ ],
+ "filterHist": [
+  [
+   "blur(10px)",
+   36
+  ],
+  [
+   "brightness(0.9)",
+   2
+  ],
+  [
+   "brightness(0.8)",
+   1
+  ]
+ ],
+ "fontHist": [
+  [
+   "Instrument Serif 40px w400 lsnormal",
+   282
+  ],
+  [
+   "Inter 22px w400 ls-0.66px",
+   33
+  ],
+  [
+   "Instrument Serif 80px w400 lsnormal",
+   32
+  ],
+  [
+   "Inter 16px w600 ls-0.16px",
+   20
+  ],
+  [
+   "Instrument Serif 28px w400 ls-0.28px",
+   12
+  ],
+  [
+   "Instrument Serif 60px w400 ls-2.4px",
+   11
+  ],
+  [
+   "Inter 16px w400 ls-0.64px",
+   8
+  ],
+  [
+   "Inter 20px w500 ls-0.6px",
+   8
+  ],
+  [
+   "Instrument Serif 120px w400 lsnormal",
+   6
+  ],
+  [
+   "Instrument Serif 16px w400 lsnormal",
+   1
+  ],
+  [
+   "Inter 22px w600 ls-0.88px",
+   1
+  ],
+  [
+   "Inter 14px w400 ls-0.56px",
+   1
+  ]
+ ],
+ "gradHist": [],
+ "scripts": [
+  "https://events.framer.com/script?v=2"
+ ],
+ "html": [
+  "three distinguished hotels invites travelers from around the worl"
+ ],
+ "hover": [
+  {
+   "t": "Monarque Latest Template",
+   "after": [
+    "A bg=rgba(0, 0, 0, 0) bgi=none sh=none t=none op=1",
+    "DIV bg=rgba(0, 0, 0, 0) bgi=none sh=none t=none op=1",
+    "VIDEO bg=rgba(0, 0, 0, 0) bgi=none sh=none t=none op=1",
+    "DIV bg=rgba(0, 0, 0, 0.57) bgi=none sh=none t=none op=1",
+    "DIV bg=rgba(0, 0, 0, 0) bgi=none sh=none t=matrix(1, 0, 0, 1, -50.6016, 0) op=1",
+    "P bg=rgba(0, 0, 0, 0) bgi=none sh=none t=none op=1"
+   ]
+  },
+  {
+   "t": "Get This Template",
+   "after": [
+    "A bg=rgb(0, 0, 0) bgi=none sh=rgba(254, 109, 16, 0.498) 0px 0px 20px 5px t=none op=1",
+    "DIV bg=rgba(0, 0, 0, 0) bgi=none sh=none t=none op=1",
+    "P bg=rgba(0, 0, 0, 0) bgi=none sh=none t=none op=1",
+    "overlay bg=rgb(255, 109, 16) bgi=none sh=none t=matrix(1, 0, 0, 1, -1.4673, 0) op=1"
+   ]
+  }
+ ]
+}

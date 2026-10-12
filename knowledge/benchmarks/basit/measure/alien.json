@@ -1,0 +1,880 @@
+{
+ "id": "alien",
+ "url": "https://alienstudio.framer.website/",
+ "date": "2026-10-11",
+ "hero": {
+  "bgImages": [
+   {
+    "n": "madeinframer",
+    "r": [
+     1293,
+     854,
+     11,
+     16
+    ],
+    "bg": "url(\"data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20viewBox%3D%220%200%2011%2016%22%3E%3Cpath%20d%3D%22M%2011%200%20L%2011%205.333%20L%205.5%205.333%20L%200%200%20Z%20M%200%205.333%20L%205.5%205.333",
+    "size": "100% 100%",
+    "blend": "normal",
+    "op": "1",
+    "filter": "none"
+   },
+   {
+    "n": "div",
+    "r": [
+     1314,
+     857,
+     92,
+     11
+    ],
+    "bg": "url(\"data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20viewBox%3D%220%200%2092%2011%22%3E%3Cpath%20d%3D%22M%200%200.958%20L%202.393%200.958%20L%204.92%207.255%20L%205.028%207.255%20L%207.555%200.958%20",
+    "size": "100% 100%",
+    "blend": "normal",
+    "op": "1",
+    "filter": "none"
+   }
+  ],
+  "filters": [],
+  "blends": [],
+  "transforms": [],
+  "perspective": [],
+  "media": [
+   {
+    "tag": "IMG",
+    "n": "div",
+    "r": [
+     20,
+     680,
+     1400,
+     1304
+    ],
+    "src": "https://framerusercontent.com/images/LY5J2ZeuNMjex6Khe4eHPklt5lo.png",
+    "fit": "cover",
+    "radius": "0px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": [
+     1400,
+     1303
+    ]
+   }
+  ],
+  "svgNoise": 0,
+  "turb": [],
+  "canvas": [],
+  "radii": [
+   "get the template btn 155x38 r=10px bg=rgb(187, 53, 66) bd=0px rgb(0, 0, 238) sh=rgba(0, 0, 0, 0.2) 0px 0px 20px 0px",
+   "Cursor Hover 50x50 r=100px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 0) sh=none",
+   "Light 142x36 r=10px bg=rgb(255, 255, 255) bd=0px rgb(0, 0, 238) sh=rgba(0, 0, 0, 0.26) 0px 0.636953px 1.14652px -1.125px, rgba(0, 0, 0, 0.24) 0px 1.9316px 3.47689px -2.25px, rgba(0, 0, 0, 0.192) 0px 5.10612p"
+  ],
+  "texts": [
+   "GET THIS TEMPLATE | \"Martian Mono\" 10px/14px w300 ls=normal c=rgb(255, 255, 255) tt=uppercase @1283,808,119,14",
+   "Alien | Inter 365.63px/438.756px w700 ls=-21.9378px c=rgb(255, 255, 255) tt=none @20,5,619,328",
+   "studio | Inter 242.013px/290.416px w700 ls=-14.5208px c=rgb(187, 53, 66) tt=none @639,0,781,339",
+   "BOOK CALL | \"Martian Mono\" 12px/15.6px w300 ls=normal c=rgb(255, 255, 255) tt=uppercase @20,343,76,16",
+   "PLAYGROUND | \"Martian Mono\" 12px/15.6px w300 ls=normal c=rgb(255, 255, 255) tt=uppercase @580,343,84,16",
+   "OUR TIME | \"Martian Mono\" 12px/24px w300 ls=-0.24px c=rgb(255, 255, 255) tt=uppercase @1224,338,65,24",
+   "12:27:07 AM | \"Martian Mono\" 12px/16.8px w300 ls=normal c=rgb(255, 255, 255) tt=none @1328,342,92,17",
+   "SELECTED WORKS | \"Martian Mono\" 12px/15.6px w300 ls=normal c=rgb(255, 255, 255) tt=uppercase @20,614,118,16",
+   "ABOUT US | \"Martian Mono\" 12px/15.6px w300 ls=normal c=rgb(255, 255, 255) tt=uppercase @153,614,67,16",
+   "WE INTEGRATE BRAND, EXPERIENCE, AND TECHNOLOGY TO  | \"Martian Mono\" 12px/24px w300 ls=-0.24px c=rgb(255, 255, 255) tt=uppercase @580,462,380,168",
+   "WE INTEGRATE BRAND, EXPERIENCE, AND TECHNOLOGY TO  | \"Martian Mono\" 12px/24px w300 ls=-0.24px c=rgb(168, 168, 168) tt=uppercase @580,467,384,62",
+   "THAT HELPS YOU MAKE BEAUTIFUL, FUNCTIONAL, AND INN | \"Martian Mono\" 12px/24px w300 ls=-0.24px c=rgb(255, 255, 255) tt=uppercase @1015,558,286,72"
+  ],
+  "buttons": [
+   {
+    "t": "GET THIS TEMPLATE",
+    "r": [
+     1265,
+     796,
+     155,
+     38
+    ],
+    "bg": "rgb(187, 53, 66)",
+    "bgi": "none",
+    "radius": "10px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "rgba(0, 0, 0, 0.2) 0px 0px 20px 0px",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "Alien studio",
+    "r": [
+     0,
+     0,
+     1440,
+     338
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "BOOK CALL",
+    "r": [
+     20,
+     343,
+     76,
+     16
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "PLAYGROUND",
+    "r": [
+     580,
+     343,
+     84,
+     16
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "SELECTED WORKS",
+    "r": [
+     20,
+     614,
+     118,
+     16
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "ABOUT US",
+    "r": [
+     153,
+     614,
+     67,
+     16
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   }
+  ],
+  "fonts": [
+   "Martian Mono 300",
+   "Martian Mono 400",
+   "Inter 700",
+   "Inter Placeholder normal"
+  ],
+  "appear": "{\"ma6poy\":{\"default\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":100},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"delay\":0,\"duration\":0.8,\"ease\":[0.44,0,0.56,1],\"type\":\"tween\"},\"x\":0,\"y\":0}},\"1djyjzn\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":100},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"delay\":0,\"duration\":0.8,\"ease\":[0.44,0,0.56,1],\"type\":\"tween\"},\"x\":0,\"y\":0}},\"1rkaw2k\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":100},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"delay\":0,\"duration\":0.8,\"ease\":[0.44,0,0.56,1],\"type\":\"tween\"},\"x\":0,\"y\":0}}},\"1n1ii67\":{\"default\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":100},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"delay\":0.2,\"duration\":0.8,\"ease\":[0.44,0,0.56,1],\"type\":\"tween\"},\"x\":0,\"y\":0}},\"1djyjzn\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":100},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"delay\":0.2,\"duration\":0.8,\"ease\":[0.44,0,0.56,1],\"type\":\"tween\"},\"x\":0,\"y\":0}},\"1rkaw2k\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":100},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"delay\":0.2,\"duration\":0.8,\"ease\":[0.44,0,0.56,1],\"type\":\"tween\"},\"x\":0,\"y\":0}}},\"1pzqdpb\":{\"default\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":16},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"delay\":0.4,\"duration\":0.5,\"ease\":[0.44,0,0.56,1],\"type\":\"tween\"},\"x\":0,\"y\":0}},\"1djyjzn\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":16},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"delay\":0.4,\"duration\":0.5,\"ease\":[0.44,0,0.56,1],\"type\":\"tween\"},\"x\":0,\"y\":0}},\"1rkaw2k\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":16},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"delay\":0.4,\"duration\":0.5,\"ease\":[0.44,0,0.56,1],\"type\":\"tween\"},\"x\":0,\"y\":0}}},\"r76ait\":{\"default\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":16},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"delay\":0.6,\"duration\":0.5,\"ease\":[0.44,0,0.56,1],\"type\":\"tween\"},\"x\":0,\"y\":0}},\"1djyjzn\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":16},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"delay\":0.6,\"duration\":0.5,\"ease\":[0.44,0,0.56,1],\"type\":\"tween\"},\"x\":0,\"y\":0}},\"1rkaw2k\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":16},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"delay\":0.6,\"duration\":0.5,\"ease\":[0.44,0,0.56,1],\"type\":\"tween\"},\"x\":0,\"y\":0}}},\"1h15cwm\":{\"default\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":16},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"delay\":0.8,\"duration\":0.5,\"ease\":[0.44,0,0.56,1],\"type\":\"tween\"},\"x\":0,\"y\":0}},\"1djyjzn\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":16},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"delay\":0.8,\"duration\":0.5,\"ease\":[0.44,0,0.56,1],\"type\":\"tween\"},\"x\":0,\"y\":0}},\"1rkaw2k\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":16},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"delay\":0.8,\"duration\":0.5,\"ease\":[0.44,0,0.56,1],\"type\":\"tween\"},\"x\":0,\"y\":0}}},\"a2300m\":{\"default\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":10},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"delay\":1,\"duration\":0.5,\"ease\":[0.44,0,0.56,1],\"type\":\"tween\"},\"x\":0,\"y\":0}},\"1djyjzn\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":10},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"delay\":1,\"duration\":0.5,\"ease\":[0.44,0,0.56,1],\"type\":\"tween\"},\"x\":0,\"y\":0}},\"1rkaw2k\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":10},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"delay\":1,\"duration\":0.5,\"ease\":[0.44,0,0.56,1],\"type\":\"tween\"},\"x\":0,\"y\":0}}},\"g16vkk\":{\"default\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":10},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"delay\":1.2,\"duration\":0.5,\"ease\":[0.44,0,0.56,1],\"type\":\"tween\"},\"x\":0,\"y\":0}},\"1djyjzn\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":10},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"delay\":1.2,\"duration\":0.5",
+  "anims": []
+ },
+ "hover": [
+  {
+   "n": "P",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgi": "none",
+   "sh": "none",
+   "t": "none",
+   "r": "0px"
+  },
+  {
+   "n": "DIV",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgi": "none",
+   "sh": "none",
+   "t": "none",
+   "r": "0px"
+  },
+  {
+   "n": "get the template btn",
+   "bg": "rgb(187, 53, 66)",
+   "bgi": "none",
+   "sh": "rgba(0, 0, 0, 0.2) 0px 0px 20px 0px",
+   "t": "none",
+   "r": "10px"
+  },
+  {
+   "n": "DIV",
+   "bg": "rgb(0, 0, 0)",
+   "bgi": "none",
+   "sh": "none",
+   "t": "none",
+   "r": "0px"
+  }
+ ],
+ "page": {
+  "vw": 1440,
+  "pageHeight": 7528,
+  "title": "Alien Studio",
+  "htmlBg": "rgba(0, 0, 0, 0)",
+  "bodyBg": "rgb(0, 0, 0)",
+  "bodyColor": "rgb(0, 0, 0)",
+  "colorScheme": "normal",
+  "h1": {
+   "text": "Alien",
+   "family": "Inter, \"Inter Placeholder\", sans-serif",
+   "size": "365.63px",
+   "weight": "700",
+   "lh": "438.756px",
+   "ls": "-21.9378px",
+   "color": "rgb(255, 255, 255)",
+   "tt": "none",
+   "align": "start",
+   "w": 619,
+   "h": 328,
+   "top": 5,
+   "left": 20,
+   "tag": "h1",
+   "balance": "nowrap"
+  },
+  "largestHeroText": {
+   "text": "Alien",
+   "family": "Inter, \"Inter Placeholder\", sans-serif",
+   "size": "365.63px",
+   "weight": "700",
+   "lh": "438.756px",
+   "ls": "-21.9378px",
+   "color": "rgb(255, 255, 255)",
+   "tt": "none",
+   "align": "start",
+   "w": 619,
+   "h": 328,
+   "top": 5,
+   "left": 20,
+   "tag": "h1",
+   "balance": "nowrap"
+  },
+  "h2": [],
+  "h3": [
+   {
+    "text": "1",
+    "family": "\"Martian Mono\", monospace",
+    "size": "24px",
+    "weight": "300",
+    "lh": "28.8px",
+    "ls": "-0.48px",
+    "color": "rgb(255, 255, 255)",
+    "tt": "uppercase",
+    "align": "start",
+    "w": 16,
+    "h": 29,
+    "top": 2504,
+    "left": 516,
+    "tag": "h3",
+    "balance": "nowrap"
+   },
+   {
+    "text": "2",
+    "family": "\"Martian Mono\", monospace",
+    "size": "24px",
+    "weight": "300",
+    "lh": "28.8px",
+    "ls": "-0.48px",
+    "color": "rgb(255, 255, 255)",
+    "tt": "uppercase",
+    "align": "start",
+    "w": 16,
+    "h": 29,
+    "top": 3035,
+    "left": 516,
+    "tag": "h3",
+    "balance": "nowrap"
+   }
+  ],
+  "p": [
+   {
+    "text": "WE INTEGRATE BRAND, EXPERIENCE, AND TECHNOLOGY TO REALIZE THEIR VISION",
+    "family": "\"Martian Mono\", monospace",
+    "size": "12px",
+    "weight": "300",
+    "lh": "24px",
+    "ls": "-0.24px",
+    "color": "rgb(255, 255, 255)",
+    "tt": "uppercase",
+    "align": "start",
+    "w": 380,
+    "h": 168,
+    "top": 462,
+    "left": 580,
+    "tag": "p",
+    "balance": "wrap"
+   },
+   {
+    "text": "THAT HELPS YOU MAKE BEAUTIFUL, FUNCTIONAL, AND INNOVATIVE USER EXPERIE",
+    "family": "\"Martian Mono\", monospace",
+    "size": "12px",
+    "weight": "300",
+    "lh": "24px",
+    "ls": "-0.24px",
+    "color": "rgb(255, 255, 255)",
+    "tt": "uppercase",
+    "align": "start",
+    "w": 286,
+    "h": 72,
+    "top": 558,
+    "left": 1015,
+    "tag": "p",
+    "balance": "wrap"
+   },
+   {
+    "text": "DIGITAL PARTNER FOR BRANDS, STARTUPS AND FELLOW AGENCIES. WORKING WITH",
+    "family": "\"Martian Mono\", monospace",
+    "size": "12px",
+    "weight": "300",
+    "lh": "24px",
+    "ls": "-0.24px",
+    "color": "rgb(255, 255, 255)",
+    "tt": "uppercase",
+    "align": "start",
+    "w": 350,
+    "h": 96,
+    "top": 2084,
+    "left": 580,
+    "tag": "p",
+    "balance": "wrap"
+   }
+  ],
+  "heroP": {
+   "text": "WE INTEGRATE BRAND, EXPERIENCE, AND TECHNOLOGY TO REALIZE THEIR VISION",
+   "family": "\"Martian Mono\", monospace",
+   "size": "12px",
+   "weight": "300",
+   "lh": "24px",
+   "ls": "-0.24px",
+   "color": "rgb(255, 255, 255)",
+   "tt": "uppercase",
+   "align": "start",
+   "w": 380,
+   "h": 168,
+   "top": 462,
+   "left": 580,
+   "tag": "p",
+   "balance": "wrap"
+  },
+  "typeScale": [
+   [
+    "Martian Mono|12|300",
+    900
+   ],
+   [
+    "Martian Mono|16|300",
+    297
+   ],
+   [
+    "Martian Mono|10|300",
+    191
+   ],
+   [
+    "Martian Mono|14|400",
+    109
+   ],
+   [
+    "Martian Mono|20|300",
+    18
+   ],
+   [
+    "Inter|28|700",
+    11
+   ],
+   [
+    "Inter|242|700",
+    6
+   ],
+   [
+    "Inter|366|700",
+    5
+   ],
+   [
+    "Martian Mono|24|300",
+    5
+   ]
+  ],
+  "fontFamiliesUsed": [
+   [
+    "Martian Mono",
+    75
+   ],
+   [
+    "Inter",
+    3
+   ]
+  ],
+  "sizesDistinct": [
+   10,
+   12,
+   14,
+   16,
+   20,
+   24,
+   28,
+   242.013,
+   365.63
+  ],
+  "lsHist": [
+   [
+    "-0.020em",
+    51
+   ],
+   [
+    "normal",
+    25
+   ],
+   [
+    "-0.060em",
+    2
+   ]
+  ],
+  "nav": {
+   "tag": "NAV",
+   "h": 362,
+   "outerH": 362,
+   "top": 0,
+   "w": 1440,
+   "position": "relative",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgHeader": "rgba(0, 0, 0, 0)",
+   "backdrop": "none",
+   "bb": "0px none rgb(0, 0, 0)",
+   "shadow": "none",
+   "contentLeft": 0,
+   "contentRight": 1440,
+   "nLinks": 3,
+   "linkTexts": [
+    "Alien studio",
+    "BOOK CALL",
+    "PLAYGROUND"
+   ],
+   "linkTypo": [
+    {
+     "text": "Alien studio",
+     "family": "sans-serif",
+     "size": "12px",
+     "weight": "400",
+     "lh": "normal",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "tt": "none",
+     "align": "start",
+     "w": 1440,
+     "h": 338,
+     "top": 0,
+     "left": 0,
+     "tag": "a",
+     "balance": "wrap"
+    },
+    {
+     "text": "BOOK CALL",
+     "family": "sans-serif",
+     "size": "12px",
+     "weight": "400",
+     "lh": "normal",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "tt": "none",
+     "align": "start",
+     "w": 76,
+     "h": 16,
+     "top": 343,
+     "left": 20,
+     "tag": "a",
+     "balance": "wrap"
+    },
+    {
+     "text": "PLAYGROUND",
+     "family": "sans-serif",
+     "size": "12px",
+     "weight": "400",
+     "lh": "normal",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "tt": "none",
+     "align": "start",
+     "w": 84,
+     "h": 16,
+     "top": 343,
+     "left": 580,
+     "tag": "a",
+     "balance": "wrap"
+    }
+   ],
+   "hasLogoSvgOrImg": true,
+   "px": "0px/0px"
+  },
+  "ctas": [
+   {
+    "text": "GET THIS TEMPLATE",
+    "inHeader": false,
+    "kind": "filled",
+    "h": 38,
+    "w": 155,
+    "radius": "10px",
+    "bg": "rgb(187, 53, 66)",
+    "color": "rgb(0, 0, 238)",
+    "border": null,
+    "size": "12px",
+    "weight": "400",
+    "pad": "12px 18px",
+    "shadow": "rgba(0, 0, 0, 0.2) 0px 0px 20px 0px",
+    "family": "sans-serif"
+   }
+  ],
+  "chain": [
+   {
+    "tag": "h1.framer-text",
+    "w": 619,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "block",
+    "ta": "start"
+   },
+   {
+    "tag": "foreignobject",
+    "w": 619,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "block",
+    "ta": "start"
+   },
+   {
+    "tag": "svg",
+    "w": 619,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "a.framer-1ght8qd",
+    "w": 1440,
+    "maxW": "none",
+    "pl": "20px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "nav.framer-2Hr5S",
+    "w": 1440,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "div.ssr-variant",
+    "w": 0,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "contents",
+    "ta": "start"
+   },
+   {
+    "tag": "div.framer-1l8vhp6-container",
+    "w": 1440,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "block",
+    "ta": "start"
+   },
+   {
+    "tag": "div.framer-K0Jwd",
+    "w": 1440,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "div",
+    "w": 1440,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "block",
+    "ta": "start"
+   }
+  ],
+  "sections": [
+   {
+    "cls": "framer-dakeyw",
+    "tag": "section",
+    "top": 462,
+    "h": 1718,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 0,
+    "effPb": 0,
+    "contentW": 1400,
+    "contentL": 20,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "",
+    "hSize": null,
+    "hAlign": null
+   },
+   {
+    "cls": "framer-46l7uq",
+    "tag": "section",
+    "top": 2380,
+    "h": 2777,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 0,
+    "effPb": 0,
+    "contentW": 1482,
+    "contentL": 20,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "",
+    "hSize": null,
+    "hAlign": null
+   },
+   {
+    "cls": "framer-Dni1n",
+    "tag": "section",
+    "top": 5357,
+    "h": 428,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 0,
+    "effPb": 380,
+    "contentW": 1201,
+    "contentL": 40,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "",
+    "hSize": null,
+    "hAlign": null
+   },
+   {
+    "cls": "framer-1assers",
+    "tag": "section",
+    "top": 5985,
+    "h": 684,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 0,
+    "effPb": 305,
+    "contentW": 840,
+    "contentL": 580,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "",
+    "hSize": null,
+    "hAlign": null
+   },
+   {
+    "cls": "framer-prJzR",
+    "tag": "footer",
+    "top": 6869,
+    "h": 659,
+    "pt": "20px",
+    "pb": "20px",
+    "effPt": 20,
+    "effPb": 60,
+    "contentW": 1380,
+    "contentL": 40,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "",
+    "hSize": null,
+    "hAlign": null
+   }
+  ],
+  "radiusAll": [
+   [
+    "10px",
+    2
+   ],
+   [
+    "100px",
+    1
+   ],
+   [
+    "200%",
+    1
+   ]
+  ],
+  "radiusCards": [],
+  "radiusMedia": [],
+  "radiusInputs": [],
+  "shadows": [
+   [
+    "rgba(0, 0, 0, 0.2) 0px 0px 20px 0px",
+    1
+   ],
+   [
+    "rgba(0, 0, 0, 0.26) 0px 0.636953px 1.14652px -1.125px, rgba(0, 0, 0, 0.24) 0px 1.9316px 3.47689px -2.25px, rgba(0, 0, 0, 0.192) 0px 5.10612px 9.19102px -3.375px, rgba(0, ",
+    1
+   ]
+  ],
+  "borders": [],
+  "cardBgs": [],
+  "grids": [],
+  "flexGaps": [
+   [
+    "0px",
+    53
+   ],
+   [
+    "10px",
+    11
+   ],
+   [
+    "20px",
+    8
+   ],
+   [
+    "30px",
+    5
+   ],
+   [
+    "50px",
+    3
+   ],
+   [
+    "16px",
+    3
+   ],
+   [
+    "22px",
+    3
+   ],
+   [
+    "14px",
+    3
+   ]
+  ],
+  "bgByArea": [
+   [
+    "rgb(0, 0, 0)",
+    "65%"
+   ],
+   [
+    "rgb(187, 53, 66)",
+    "3%"
+   ],
+   [
+    "rgb(255, 255, 255)",
+    "0%"
+   ]
+  ],
+  "textColors": [
+   [
+    "rgb(255, 255, 255)",
+    58
+   ],
+   [
+    "rgb(168, 168, 168)",
+    19
+   ],
+   [
+    "rgb(187, 53, 66)",
+    1
+   ]
+  ],
+  "linkColors": [
+   [
+    "rgb(255, 255, 255)",
+    21
+   ],
+   [
+    "rgb(168, 168, 168)",
+    12
+   ],
+   [
+    "rgb(187, 53, 66)",
+    1
+   ]
+  ],
+  "counts": {
+   "video": 1,
+   "canvas": 0,
+   "iframe": 0,
+   "svg": 14,
+   "img": 6,
+   "picture": 0,
+   "spline": 0,
+   "lottie": 0
+  },
+  "heroMedia": {
+   "video": false,
+   "canvas": false,
+   "bigImg": 3
+  },
+  "libs": {
+   "gsap": false,
+   "lenis": true,
+   "locomotive": false,
+   "next": false,
+   "framer": true,
+   "webflow": false,
+   "three": false,
+   "astro": false,
+   "nuxt": false,
+   "tailwindish": false
+  },
+  "sticky": 0,
+  "fixed": 3,
+  "snap": 0
+ },
+ "pageHeight": 7528
+}

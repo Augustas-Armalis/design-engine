@@ -1,0 +1,1685 @@
+{
+ "id": "victor",
+ "url": "https://victorr.framer.website/",
+ "date": "2026-10-11",
+ "hero": {
+  "bgImages": [
+   {
+    "n": "container",
+    "r": [
+     320,
+     40,
+     800,
+     76
+    ],
+    "bg": "linear-gradient(rgb(250, 250, 250) 0%, rgb(240, 240, 240) 100%)",
+    "size": "auto",
+    "blend": "normal",
+    "op": "1",
+    "filter": "none"
+   },
+   {
+    "n": "div",
+    "r": [
+     661,
+     108,
+     10,
+     10
+    ],
+    "bg": "linear-gradient(359deg, rgb(255, 129, 19) 0%, rgb(255, 152, 56) 100%)",
+    "size": "auto",
+    "blend": "normal",
+    "op": "0",
+    "filter": "none"
+   },
+   {
+    "n": "div",
+    "r": [
+     737,
+     108,
+     10,
+     10
+    ],
+    "bg": "linear-gradient(359deg, rgb(255, 129, 19) 0%, rgb(255, 152, 56) 100%)",
+    "size": "auto",
+    "blend": "normal",
+    "op": "0",
+    "filter": "none"
+   },
+   {
+    "n": "div",
+    "r": [
+     822,
+     108,
+     10,
+     10
+    ],
+    "bg": "linear-gradient(359deg, rgb(255, 129, 19) 0%, rgb(255, 152, 56) 100%)",
+    "size": "auto",
+    "blend": "normal",
+    "op": "0",
+    "filter": "none"
+   },
+   {
+    "n": "div",
+    "r": [
+     926,
+     108,
+     10,
+     10
+    ],
+    "bg": "linear-gradient(359deg, rgb(255, 129, 19) 0%, rgb(255, 152, 56) 100%)",
+    "size": "auto",
+    "blend": "normal",
+    "op": "0",
+    "filter": "none"
+   },
+   {
+    "n": "div",
+    "r": [
+     1044,
+     108,
+     10,
+     10
+    ],
+    "bg": "linear-gradient(359deg, rgb(255, 129, 19) 0%, rgb(255, 152, 56) 100%)",
+    "size": "auto",
+    "blend": "normal",
+    "op": "0",
+    "filter": "none"
+   },
+   {
+    "n": "Section - Hero",
+    "r": [
+     20,
+     20,
+     1400,
+     834
+    ],
+    "bg": "linear-gradient(rgba(255, 255, 255, 0) 0%, rgb(240, 240, 240) 100%)",
+    "size": "auto",
+    "blend": "normal",
+    "op": "1",
+    "filter": "none"
+   },
+   {
+    "n": "Primary",
+    "r": [
+     545,
+     455,
+     174,
+     49
+    ],
+    "bg": "linear-gradient(rgb(255, 129, 19) 0%, rgb(255, 159, 56) 100%)",
+    "size": "auto",
+    "blend": "normal",
+    "op": "1",
+    "filter": "none"
+   },
+   {
+    "n": "dot",
+    "r": [
+     567,
+     473,
+     12,
+     12
+    ],
+    "bg": "linear-gradient(rgb(255, 255, 255) 0%, rgb(206, 206, 206) 100%)",
+    "size": "auto",
+    "blend": "normal",
+    "op": "1",
+    "filter": "none"
+   },
+   {
+    "n": "Dark",
+    "r": [
+     740,
+     455,
+     155,
+     49
+    ],
+    "bg": "linear-gradient(rgb(18, 18, 18) 0%, rgb(120, 120, 120) 100%)",
+    "size": "auto",
+    "blend": "normal",
+    "op": "1",
+    "filter": "none"
+   },
+   {
+    "n": "div",
+    "r": [
+     1293,
+     814,
+     11,
+     12
+    ],
+    "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 10.8 12%22 overflow=%22visible%22><path d=%22M 2.4 12 L 4.8 7.5 L 0 6.9 L 7.2 0 L 8.4 0 L 6 4.5 L 10.8 5.1 L 3.6 12 Z%22 fill=%22rgb(255, 255, 255)%22></path></svg>\")",
+    "size": "100% 100%",
+    "blend": "normal",
+    "op": "1",
+    "filter": "none"
+   },
+   {
+    "n": "div",
+    "r": [
+     1292,
+     794,
+     11,
+     12
+    ],
+    "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 10.8 12%22 overflow=%22visible%22><path d=%22M 2.4 12 L 4.8 7.5 L 0 6.9 L 7.2 0 L 8.4 0 L 6 4.5 L 10.8 5.1 L 3.6 12 Z%22 fill=%22rgb(255, 255, 255)%22></path></svg>\")",
+    "size": "100% 100%",
+    "blend": "normal",
+    "op": "1",
+    "filter": "none"
+   }
+  ],
+  "filters": [
+   {
+    "n": "g",
+    "r": [
+     755,
+     622,
+     195,
+     81
+    ],
+    "filter": "url(\"#filter0_d_3_52\")",
+    "backdrop": "none",
+    "bg": "rgba(0, 0, 0, 0)",
+    "op": "1"
+   },
+   {
+    "n": "g",
+    "r": [
+     755,
+     622,
+     194,
+     80
+    ],
+    "filter": "url(\"#filter1_ii_3_52\")",
+    "backdrop": "none",
+    "bg": "rgba(0, 0, 0, 0)",
+    "op": "1"
+   },
+   {
+    "n": "g",
+    "r": [
+     805,
+     639,
+     128,
+     46
+    ],
+    "filter": "url(\"#filter2_i_3_52\")",
+    "backdrop": "none",
+    "bg": "rgba(0, 0, 0, 0)",
+    "op": "1"
+   },
+   {
+    "n": "g",
+    "r": [
+     769,
+     654,
+     30,
+     30
+    ],
+    "filter": "url(\"#filter3_i_3_52\")",
+    "backdrop": "none",
+    "bg": "rgba(0, 0, 0, 0)",
+    "op": "1"
+   },
+   {
+    "n": "g",
+    "r": [
+     643,
+     562,
+     267,
+     98
+    ],
+    "filter": "url(\"#filter0_d_3_48\")",
+    "backdrop": "none",
+    "bg": "rgba(0, 0, 0, 0)",
+    "op": "1"
+   },
+   {
+    "n": "g",
+    "r": [
+     644,
+     562,
+     266,
+     97
+    ],
+    "filter": "url(\"#filter1_ii_3_48\")",
+    "backdrop": "none",
+    "bg": "rgba(0, 0, 0, 0)",
+    "op": "1"
+   },
+   {
+    "n": "g",
+    "r": [
+     692,
+     584,
+     202,
+     60
+    ],
+    "filter": "url(\"#filter2_i_3_48\")",
+    "backdrop": "none",
+    "bg": "rgba(0, 0, 0, 0)",
+    "op": "1"
+   },
+   {
+    "n": "g",
+    "r": [
+     658,
+     579,
+     32,
+     32
+    ],
+    "filter": "url(\"#filter3_i_3_48\")",
+    "backdrop": "none",
+    "bg": "rgba(0, 0, 0, 0)",
+    "op": "1"
+   },
+   {
+    "n": "g",
+    "r": [
+     482,
+     585,
+     195,
+     76
+    ],
+    "filter": "url(\"#filter0_ii_3_49\")",
+    "backdrop": "none",
+    "bg": "rgba(0, 0, 0, 0)",
+    "op": "1"
+   },
+   {
+    "n": "g",
+    "r": [
+     541,
+     601,
+     119,
+     35
+    ],
+    "filter": "url(\"#filter1_i_3_49\")",
+    "backdrop": "none",
+    "bg": "rgba(0, 0, 0, 0)",
+    "op": "1"
+   },
+   {
+    "n": "g",
+    "r": [
+     500,
+     608,
+     37,
+     37
+    ],
+    "filter": "url(\"#filter2_i_3_49\")",
+    "backdrop": "none",
+    "bg": "rgba(0, 0, 0, 0)",
+    "op": "1"
+   },
+   {
+    "n": "g",
+    "r": [
+     605,
+     653,
+     231,
+     96
+    ],
+    "filter": "url(\"#filter0_ii_3_50\")",
+    "backdrop": "none",
+    "bg": "rgba(0, 0, 0, 0)",
+    "op": "1"
+   },
+   {
+    "n": "g",
+    "r": [
+     655,
+     676,
+     162,
+     57
+    ],
+    "filter": "url(\"#filter1_i_3_50\")",
+    "backdrop": "none",
+    "bg": "rgba(0, 0, 0, 0)",
+    "op": "1"
+   },
+   {
+    "n": "g",
+    "r": [
+     625,
+     668,
+     29,
+     35
+    ],
+    "filter": "url(\"#filter2_i_3_50\")",
+    "backdrop": "none",
+    "bg": "rgba(0, 0, 0, 0)",
+    "op": "1"
+   },
+   {
+    "n": "g",
+    "r": [
+     534,
+     618,
+     246,
+     81
+    ],
+    "filter": "url(\"#filter0_d_3_51\")",
+    "backdrop": "none",
+    "bg": "rgba(0, 0, 0, 0)",
+    "op": "1"
+   },
+   {
+    "n": "g",
+    "r": [
+     534,
+     618,
+     245,
+     80
+    ],
+    "filter": "url(\"#filter1_ii_3_51\")",
+    "backdrop": "none",
+    "bg": "rgba(0, 0, 0, 0)",
+    "op": "1"
+   },
+   {
+    "n": "g",
+    "r": [
+     587,
+     635,
+     178,
+     47
+    ],
+    "filter": "url(\"#filter2_i_3_51\")",
+    "backdrop": "none",
+    "bg": "rgba(0, 0, 0, 0)",
+    "op": "1"
+   },
+   {
+    "n": "g",
+    "r": [
+     549,
+     648,
+     31,
+     31
+    ],
+    "filter": "url(\"#filter3_i_3_51\")",
+    "backdrop": "none",
+    "bg": "rgba(0, 0, 0, 0)",
+    "op": "1"
+   }
+  ],
+  "blends": [],
+  "transforms": [
+   {
+    "n": "div",
+    "r": [
+     750,
+     619,
+     206,
+     94
+    ],
+    "t": "matrix(0.994576, -0.104008, 0.104008, 0.994576, -99.5, -37)",
+    "persp": "none",
+    "op": "1"
+   },
+   {
+    "n": "div",
+    "r": [
+     637,
+     559,
+     278,
+     111
+    ],
+    "t": "matrix(0.990268, 0.139173, -0.139173, 0.990268, -135, -36.9922)",
+    "persp": "none",
+    "op": "1"
+   },
+   {
+    "n": "div",
+    "r": [
+     481,
+     584,
+     198,
+     81
+    ],
+    "t": "matrix(0.996931, -0.0782851, 0.0782851, 0.996931, -96.5, -33)",
+    "persp": "none",
+    "op": "1"
+   },
+   {
+    "n": "div",
+    "r": [
+     603,
+     652,
+     234,
+     101
+    ],
+    "t": "matrix(0.987386, 0.15833, -0.15833, 0.987386, -113, -33)",
+    "persp": "none",
+    "op": "1"
+   },
+   {
+    "n": "div",
+    "r": [
+     529,
+     615,
+     256,
+     94
+    ],
+    "t": "matrix(0.996723, -0.0808948, 0.0808948, 0.996723, -125.5, -37)",
+    "persp": "none",
+    "op": "1"
+   },
+   {
+    "n": "div",
+    "r": [
+     1397,
+     649,
+     6,
+     6
+    ],
+    "t": "matrix(0.707107, 0.707107, -0.707107, 0.707107, 0, 0)",
+    "persp": "none",
+    "op": "1"
+   },
+   {
+    "n": "div",
+    "r": [
+     1397,
+     649,
+     6,
+     6
+    ],
+    "t": "matrix(0.707107, -0.707107, 0.707107, 0.707107, 0, 0)",
+    "persp": "none",
+    "op": "1"
+   },
+   {
+    "n": "p",
+    "r": [
+     1350,
+     861,
+     0,
+     0
+    ],
+    "t": "matrix(0.001, 0, 0, 0.001, 0, 0)",
+    "persp": "none",
+    "op": "1"
+   }
+  ],
+  "perspective": [],
+  "media": [
+   {
+    "tag": "IMG",
+    "n": "div",
+    "r": [
+     -120,
+     -63,
+     1680,
+     1001
+    ],
+    "src": "https://framerusercontent.com/images/jsZyLtq1mmOBexZ6WrusocDKUIs.svg",
+    "fit": "contain",
+    "radius": "0px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": [
+     1680,
+     1122
+    ]
+   },
+   {
+    "tag": "IMG",
+    "n": "div",
+    "r": [
+     646,
+     1162,
+     328,
+     335
+    ],
+    "src": "https://framerusercontent.com/images/MzLHugGNcS9QpzwIXYLsrWiWSU.png",
+    "fit": "cover",
+    "radius": "11px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": [
+     267,
+     278
+    ]
+   },
+   {
+    "tag": "IMG",
+    "n": "div",
+    "r": [
+     466,
+     1056,
+     328,
+     335
+    ],
+    "src": "https://framerusercontent.com/images/GwacDOLnwOUtjFiLQUmSywY0mjw.png",
+    "fit": "cover",
+    "radius": "11px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": [
+     268,
+     279
+    ]
+   },
+   {
+    "tag": "VIDEO",
+    "n": "div",
+    "r": [
+     1210,
+     632,
+     210,
+     158
+    ],
+    "src": "https://framerusercontent.com/assets/TNg2xfI1CEpQsOAJClKAFpU1XR4.mp4",
+    "fit": "cover",
+    "radius": "0px",
+    "op": "1",
+    "filter": "none",
+    "blend": "normal",
+    "natural": null
+   }
+  ],
+  "svgNoise": 0,
+  "turb": [],
+  "canvas": [],
+  "radii": [
+   "container 800x76 r=20px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 0) sh=rgba(188, 188, 188, 0.3) 0px -5px 0.5px 0px inset",
+   "Section - Hero 1400x834 r=35px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 0) sh=rgba(188, 188, 188, 0.3) 0px -8px 0.5px 0px inset, rgb(255, 255, 255) 0px 2px 0.5px 0px inset",
+   "Primary 174x49 r=15px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 238) sh=rgba(255, 129, 19, 0.02) 0px 72px 29px 0px, rgba(255, 129, 19, 0.08) 0px 40px 24px 0px, rgba(255, 129, 19, 0.14) 0px 18px 18px 0px, rgba(255",
+   "Dark 155x49 r=15px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 238) sh=rgba(0, 0, 0, 0.02) 0px 72px 29px 0px, rgba(0, 0, 0, 0.08) 0px 40px 24px 0px, rgba(0, 0, 0, 0.14) 0px 18px 18px 0px, rgba(0, 0, 0, 0.17) 0px",
+   "Desktop 210x158 r=5px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 238) sh=none",
+   "Desktop 142x36 r=10px bg=rgb(0, 0, 0) bd=0px rgb(0, 0, 238) sh=none",
+   "Backdrop 138x36 r=10px bg=rgb(255, 255, 255) bd=0px rgb(0, 0, 238) sh=rgba(0, 0, 0, 0.17) 0px 0.602187px 1.56569px -1.5px, rgba(0, 0, 0, 0.14) 0px 2.28853px 5.95019px -3px, rgba(0, 0, 0, 0.02) 0px 10px 26px -4.",
+   "Bottom 140x38 r=11px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 238) sh=rgb(0, 0, 0) 0px 0px 0px 1px inset",
+   "Border 140x38 r=11px bg=rgba(0, 0, 0, 0) bd=0px rgb(0, 0, 238) sh=rgb(0, 0, 0) 0px 0px 0px 1px inset"
+  ],
+  "texts": [
+   "About | Inter 16px/19.2px w500 ls=-0.32px c=rgb(0, 0, 0) tt=none @644,68,44,19",
+   "Works | Inter 16px/19.2px w500 ls=-0.32px c=rgb(0, 0, 0) tt=none @718,68,47,19",
+   "Services | Inter 16px/19.2px w500 ls=-0.32px c=rgb(0, 0, 0) tt=none @795,68,64,19",
+   "Playground | Inter 16px/19.2px w500 ls=-0.32px c=rgb(0, 0, 0) tt=none @889,68,83,19",
+   "Testimonials | Inter 16px/19.2px w500 ls=-0.32px c=rgb(0, 0, 0) tt=none @1003,68,92,19",
+   "Heya! I’m Victor Hanford 👋 | Inter 20px/32px w400 ls=-0.8px c=rgb(0, 0, 0) tt=none @601,220,238,32",
+   "Product Designer | Inter 72px/86.4px w600 ls=-2.88px c=rgb(0, 0, 0) tt=none @441,252,559,86",
+   "+ Developer based in LA | Inter 72px/86.4px w600 ls=-2.88px c=rgb(0, 0, 0) tt=none @330,338,780,86",
+   "Book a call | Inter 16px/19.2px w700 ls=-0.32px c=rgb(255, 255, 255) tt=none @589,470,80,19",
+   "See Works | Inter 16px/19.2px w700 ls=-0.32px c=rgb(255, 255, 255) tt=none @777,470,81,19",
+   "Monarque | Inter 22px/26.4px w600 ls=-0.88px c=rgb(255, 255, 255) tt=none @1264,736,101,26",
+   "Latest Template | Inter 14px/16.8px w400 ls=-0.56px c=rgb(255, 255, 255) tt=none @1267,765,97,17",
+   "Buy Template | Inter 14px/16.8px w500 ls=-0.7px c=rgb(255, 255, 255) tt=none @1314,812,83,17",
+   "Unlock for $99 | Inter 14px/16.8px w500 ls=-0.7px c=rgb(255, 255, 255) tt=none @1314,834,90,17",
+   "Create a free website with Framer, the website bui | sans-serif 12px/normal w400 ls=normal c=rgb(0, 0, 238) tt=none @1350,861,0,0"
+  ],
+  "buttons": [
+   {
+    "t": "About",
+    "r": [
+     644,
+     68,
+     44,
+     19
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "Works",
+    "r": [
+     718,
+     68,
+     47,
+     19
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "Services",
+    "r": [
+     795,
+     68,
+     64,
+     19
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "Playground",
+    "r": [
+     889,
+     68,
+     83,
+     19
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "Testimonials",
+    "r": [
+     1003,
+     68,
+     92,
+     19
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "Book a call",
+    "r": [
+     545,
+     455,
+     174,
+     49
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "linear-gradient(rgb(255, 129, 19) 0%, rgb(255, 159, 56) 100%)",
+    "radius": "15px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "rgba(255, 129, 19, 0.02) 0px 72px 29px 0px, rgba(255, 129, 19, 0.08) 0px 40px 24px 0px, rgba(255, 129, 19, 0.14) 0px 18px 18px 0px, rgba(255, 129, 19, 0.17) 0px 4px 10px 0px",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "linear-gradient(rgb(255, 255, 255) 0%, rgb(206, 206, 206) 100%)",
+     "radius": "50px",
+     "sh": "rgb(195, 195, 195) 0px 1px 0.5px 0px inset",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "See Works",
+    "r": [
+     740,
+     455,
+     155,
+     49
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "linear-gradient(rgb(18, 18, 18) 0%, rgb(120, 120, 120) 100%)",
+    "radius": "15px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "rgba(0, 0, 0, 0.02) 0px 72px 29px 0px, rgba(0, 0, 0, 0.08) 0px 40px 24px 0px, rgba(0, 0, 0, 0.14) 0px 18px 18px 0px, rgba(0, 0, 0, 0.17) 0px 4px 10px 0px",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "Monarque Latest Template",
+    "r": [
+     1210,
+     632,
+     210,
+     158
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgi": "none",
+    "radius": "5px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   },
+   {
+    "t": "Buy Template Unlock for $99",
+    "r": [
+     1278,
+     802,
+     142,
+     36
+    ],
+    "bg": "rgb(0, 0, 0)",
+    "bgi": "none",
+    "radius": "10px",
+    "border": "0px rgb(0, 0, 238)",
+    "sh": "none",
+    "kid": {
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "none",
+     "radius": "0px",
+     "sh": "none",
+     "border": "0px rgb(0, 0, 238)"
+    },
+    "font": "sans-serif 12px w400"
+   }
+  ],
+  "fonts": [
+   "Inter 700",
+   "Inter 500",
+   "Inter 600",
+   "Inter 400",
+   "Inter Placeholder normal"
+  ],
+  "appear": "{\"1vx99hb\":{\"default\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":-40},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0.2,\"delay\":0,\"duration\":0.6,\"type\":\"spring\"},\"x\":0,\"y\":0},\"transformTemplate\":\"translateX(-50%) __Appear_Animation_Transform__\"},\"u3whil\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":-40},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0.2,\"delay\":0,\"duration\":0.6,\"type\":\"spring\"},\"x\":0,\"y\":0},\"transformTemplate\":\"translateX(-50%) __Appear_Animation_Transform__\"},\"1g7p5su\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":-40},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0.2,\"delay\":0,\"duration\":0.6,\"type\":\"spring\"},\"x\":0,\"y\":0},\"transformTemplate\":\"translateX(-50%) __Appear_Animation_Transform__\"}},\"ztudqo\":{\"default\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":20},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0.2,\"delay\":0.2,\"duration\":0.6,\"type\":\"spring\"},\"x\":0,\"y\":0}}},\"1p35nbm\":{\"default\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":20},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0.2,\"delay\":0.2,\"duration\":0.6,\"type\":\"spring\"},\"x\":0,\"y\":0}}},\"13b7p3s\":{\"default\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":20},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0.2,\"delay\":0.4,\"duration\":0.6,\"type\":\"spring\"},\"x\":0,\"y\":0}}},\"q73j72\":{\"default\":{\"initial\":{\"opacity\":0.001,\"rotate\":-30,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":0},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0.2,\"delay\":0.8,\"duration\":0.6,\"type\":\"spring\"},\"x\":0,\"y\":0}}},\"1wj23vk\":{\"default\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":20},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0.2,\"delay\":0.5,\"duration\":0.6,\"type\":\"spring\"},\"x\":0,\"y\":0}}},\"kvl84\":{\"default\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":0},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0.2,\"delay\":0.6,\"duration\":0.6,\"type\":\"spring\"},\"x\":0,\"y\":0}},\"1dhyc3e\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":0},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0.2,\"delay\":0.6,\"duration\":0.6,\"type\":\"spring\"},\"x\":0,\"y\":0}},\"1p35mbu\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":0},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":0.8,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0.2,\"delay\":0.6,\"duration\":0.6,\"type\":\"spring\"},\"x\":0,\"y\":0}}},\"qdoid\":{\"default\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":20},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0.2,\"delay\":0.6,\"duration\":0.6,\"type\":\"spring\"},\"x\":0,\"y\":0}},\"1p35mbu\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":20},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0.2,\"delay\":0.6,\"duration\":0.6,\"type\":\"spring\"},\"x\":0,\"y\":0}},\"1dhyc3e\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":20},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0.2,\"delay\":0.6,\"duration\":0.6,\"type\":\"spring\"},\"x\":0,\"y\":0}}},\"1tfoq97\":{\"default\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":20},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0.2,\"delay\":0.7,\"duration\":0.6,\"type\":\"spring\"},\"x\":0,\"y\":0}},\"1p35mbu\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":20},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0.2,\"delay\":0.7,\"duration\":0.6,\"type\":\"spring\"},\"x\":0,\"y\":0}},\"1dhyc3e\":{\"initial\":{\"opacity\":0.001,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":0,\"y\":20},\"animate\":{\"opacity\":1,\"rotate\":0,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0.2,\"delay\":0.7,\"duration\":0.6,\"type\":\"spring\"},\"x\":0,\"y\":0}}},\"1ukscx1\":{\"default\":{\"initial\":{\"opacity\":0.001,\"rotate\":30,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":100,\"y\":0},\"animate\":{\"opacity\":1,\"rotate\":-5.97,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0.2,\"delay\":1.3,\"duration\":0.6,\"type\":\"spring\"},\"x\":0,\"y\":0},\"transformTemplate\":\"translate(-50%, -50%) __Appear_Animation_Transform__\"},\"1p35mbu\":{\"initial\":{\"opacity\":0.001,\"rotate\":30,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"x\":100,\"y\":0},\"animate\":{\"opacity\":1,\"rotate\":-5.97,\"rotateX\":0,\"rotateY\":0,\"scale\":1,\"skewX\":0,\"skewY\":0,\"transition\":{\"bounce\":0.2,\"delay\":1.3,\"duration\":0.6,\"type\":\"spring\"},\"x\":0,\"y\":0},\"transformTemplate\":\"translate(-50%, -50%) __Appear_Animation_Transform__\"},\"1dhyc3e",
+  "anims": [
+   {
+    "name": "Animation",
+    "tgt": "div",
+    "dur": 600,
+    "delay": 0,
+    "ease": "linear",
+    "iter": 1,
+    "kf": "[{\"offset\":null,\"easing\":\"linear\",\"composite\":\"auto\",\"transform\":\"translateX(-50%) translateY(-40px)\",\"computedOffset\":0},{\"offset\":null,\"easing\":\"linear\",\"composite\":\"auto\",\"transform\":\"translateX(-50%) translateY(-39.5852px)\",\"computedOffset\":0.0166666666666"
+   },
+   {
+    "name": "Animation",
+    "tgt": "div",
+    "dur": 600,
+    "delay": 200,
+    "ease": "linear",
+    "iter": 1,
+    "kf": "[{\"offset\":null,\"easing\":\"linear\",\"composite\":\"auto\",\"transform\":\"translateY(20px)\",\"computedOffset\":0},{\"offset\":null,\"easing\":\"linear\",\"composite\":\"auto\",\"transform\":\"translateY(19.7926px)\",\"computedOffset\":0.016666666666666666},{\"offset\":null,\"easing\":\"line"
+   },
+   {
+    "name": "Animation",
+    "tgt": "div",
+    "dur": 600,
+    "delay": 600,
+    "ease": "linear",
+    "iter": 1,
+    "kf": "[{\"offset\":null,\"easing\":\"linear\",\"composite\":\"auto\",\"transform\":\"none\",\"computedOffset\":0},{\"offset\":null,\"easing\":\"linear\",\"composite\":\"auto\",\"transform\":\"none\",\"computedOffset\":0.016666666666666666},{\"offset\":null,\"easing\":\"linear\",\"composite\":\"auto\",\"trans"
+   },
+   {
+    "name": "Animation",
+    "tgt": "ul",
+    "dur": 41088.88888888889,
+    "delay": 0,
+    "ease": "linear",
+    "iter": null,
+    "kf": "[{\"offset\":null,\"easing\":\"linear\",\"composite\":\"auto\",\"transform\":\"translateX(0px)\",\"computedOffset\":0},{\"offset\":null,\"easing\":\"linear\",\"composite\":\"auto\",\"transform\":\"translateX(-3698px)\",\"computedOffset\":1}]"
+   },
+   {
+    "name": "Animation",
+    "tgt": "ul",
+    "dur": 63625,
+    "delay": 0,
+    "ease": "linear",
+    "iter": null,
+    "kf": "[{\"offset\":null,\"easing\":\"linear\",\"composite\":\"auto\",\"transform\":\"translateX(0px)\",\"computedOffset\":0},{\"offset\":null,\"easing\":\"linear\",\"composite\":\"auto\",\"transform\":\"translateX(-5090px)\",\"computedOffset\":1}]"
+   }
+  ]
+ },
+ "hover": [
+  {
+   "n": "P",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgi": "none",
+   "sh": "none",
+   "t": "none",
+   "r": "0px"
+  },
+  {
+   "n": "DIV",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgi": "none",
+   "sh": "none",
+   "t": "none",
+   "r": "0px"
+  },
+  {
+   "n": "text",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgi": "none",
+   "sh": "none",
+   "t": "none",
+   "r": "0px"
+  },
+  {
+   "n": "A",
+   "bg": "rgb(0, 0, 0)",
+   "bgi": "none",
+   "sh": "none",
+   "t": "none",
+   "r": "10px"
+  }
+ ],
+ "page": {
+  "vw": 1440,
+  "pageHeight": 12065,
+  "title": "Victor",
+  "htmlBg": "rgba(0, 0, 0, 0)",
+  "bodyBg": "rgb(255, 255, 255)",
+  "bodyColor": "rgb(0, 0, 0)",
+  "colorScheme": "normal",
+  "h1": {
+   "text": "Product Designer",
+   "family": "Inter, \"Inter Placeholder\", sans-serif",
+   "size": "72px",
+   "weight": "600",
+   "lh": "86.4px",
+   "ls": "-2.88px",
+   "color": "rgb(0, 0, 0)",
+   "tt": "none",
+   "align": "center",
+   "w": 559,
+   "h": 86,
+   "top": 252,
+   "left": 441,
+   "tag": "h1",
+   "balance": "nowrap"
+  },
+  "largestHeroText": {
+   "text": "Product Designer",
+   "family": "Inter, \"Inter Placeholder\", sans-serif",
+   "size": "72px",
+   "weight": "600",
+   "lh": "86.4px",
+   "ls": "-2.88px",
+   "color": "rgb(0, 0, 0)",
+   "tt": "none",
+   "align": "center",
+   "w": 559,
+   "h": 86,
+   "top": 252,
+   "left": 441,
+   "tag": "h1",
+   "balance": "nowrap"
+  },
+  "h2": [
+   {
+    "text": "Reserved,",
+    "family": "Inter, \"Inter Placeholder\", sans-serif",
+    "size": "72px",
+    "weight": "600",
+    "lh": "86.4px",
+    "ls": "-2.88px",
+    "color": "rgb(0, 0, 0)",
+    "tt": "none",
+    "align": "center",
+    "w": 326,
+    "h": 86,
+    "top": 1524,
+    "left": 557,
+    "tag": "h2",
+    "balance": "nowrap"
+   },
+   {
+    "text": "But Far From Ordinary!",
+    "family": "Inter, \"Inter Placeholder\", sans-serif",
+    "size": "72px",
+    "weight": "600",
+    "lh": "86.4px",
+    "ls": "-2.88px",
+    "color": "rgb(0, 0, 0)",
+    "tt": "none",
+    "align": "center",
+    "w": 1400,
+    "h": 86,
+    "top": 1610,
+    "left": 20,
+    "tag": "h2",
+    "balance": "wrap"
+   },
+   {
+    "text": "Showcase of My,",
+    "family": "Inter, \"Inter Placeholder\", sans-serif",
+    "size": "72px",
+    "weight": "600",
+    "lh": "86.4px",
+    "ls": "-2.88px",
+    "color": "rgb(0, 0, 0)",
+    "tt": "none",
+    "align": "center",
+    "w": 553,
+    "h": 86,
+    "top": 2711,
+    "left": 443,
+    "tag": "h2",
+    "balance": "nowrap"
+   },
+   {
+    "text": "Masterpieces",
+    "family": "Inter, \"Inter Placeholder\", sans-serif",
+    "size": "72px",
+    "weight": "600",
+    "lh": "86.4px",
+    "ls": "-2.88px",
+    "color": "rgb(0, 0, 0)",
+    "tt": "none",
+    "align": "center",
+    "w": 1400,
+    "h": 86,
+    "top": 2797,
+    "left": 20,
+    "tag": "h2",
+    "balance": "wrap"
+   }
+  ],
+  "h3": [],
+  "p": [
+   {
+    "text": "A secure platform for cryptocurrency users to earn interest, borrow, a",
+    "family": "Inter, sans-serif",
+    "size": "16px",
+    "weight": "400",
+    "lh": "25.6px",
+    "ls": "-0.32px",
+    "color": "rgb(0, 0, 0)",
+    "tt": "none",
+    "align": "start",
+    "w": 350,
+    "h": 128,
+    "top": 3291,
+    "left": 70,
+    "tag": "p",
+    "balance": "wrap"
+   },
+   {
+    "text": "Revolutionize how teams manage tasks and deadlines by integrating real",
+    "family": "Inter, sans-serif",
+    "size": "16px",
+    "weight": "400",
+    "lh": "25.6px",
+    "ls": "-0.32px",
+    "color": "rgb(0, 0, 0)",
+    "tt": "none",
+    "align": "start",
+    "w": 350,
+    "h": 154,
+    "top": 3971,
+    "left": 70,
+    "tag": "p",
+    "balance": "wrap"
+   },
+   {
+    "text": "A decentralized platform designed for secure crypto asset management, ",
+    "family": "Inter, sans-serif",
+    "size": "16px",
+    "weight": "400",
+    "lh": "25.6px",
+    "ls": "-0.32px",
+    "color": "rgb(0, 0, 0)",
+    "tt": "none",
+    "align": "start",
+    "w": 350,
+    "h": 128,
+    "top": 4677,
+    "left": 70,
+    "tag": "p",
+    "balance": "wrap"
+   }
+  ],
+  "heroP": null,
+  "typeScale": [
+   [
+    "Inter|24|400",
+    2788
+   ],
+   [
+    "Inter|16|400",
+    1520
+   ],
+   [
+    "Inter|72|600",
+    224
+   ],
+   [
+    "Inter|32|600",
+    217
+   ],
+   [
+    "Inter|16|700",
+    201
+   ],
+   [
+    "Inter|20|400",
+    179
+   ],
+   [
+    "Inter|16|500",
+    125
+   ],
+   [
+    "sans-serif|12|400",
+    97
+   ],
+   [
+    "Inter|14|500",
+    26
+   ],
+   [
+    "Inter|14|400",
+    15
+   ],
+   [
+    "Inter|22|600",
+    8
+   ]
+  ],
+  "fontFamiliesUsed": [
+   [
+    "Inter",
+    114
+   ],
+   [
+    "sans-serif",
+    1
+   ]
+  ],
+  "sizesDistinct": [
+   12,
+   14,
+   16,
+   20,
+   22,
+   24,
+   32,
+   72
+  ],
+  "lsHist": [
+   [
+    "-0.020em",
+    50
+   ],
+   [
+    "-0.010em",
+    38
+   ],
+   [
+    "-0.040em",
+    24
+   ],
+   [
+    "-0.050em",
+    2
+   ],
+   [
+    "normal",
+    1
+   ]
+  ],
+  "nav": {
+   "tag": "NAV",
+   "h": 76,
+   "outerH": 76,
+   "top": 40,
+   "w": 1440,
+   "position": "fixed",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgHeader": "rgba(0, 0, 0, 0)",
+   "backdrop": "none",
+   "bb": "0px none rgb(0, 0, 0)",
+   "shadow": "none",
+   "contentLeft": 345,
+   "contentRight": 1095,
+   "nLinks": 6,
+   "linkTexts": [
+    "About",
+    "Works",
+    "Services",
+    "Playground",
+    "Testimonials"
+   ],
+   "linkTypo": [
+    {
+     "text": "About",
+     "family": "sans-serif",
+     "size": "12px",
+     "weight": "400",
+     "lh": "normal",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "tt": "none",
+     "align": "start",
+     "w": 44,
+     "h": 19,
+     "top": 68,
+     "left": 644,
+     "tag": "a",
+     "balance": "wrap"
+    },
+    {
+     "text": "Works",
+     "family": "sans-serif",
+     "size": "12px",
+     "weight": "400",
+     "lh": "normal",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "tt": "none",
+     "align": "start",
+     "w": 47,
+     "h": 19,
+     "top": 68,
+     "left": 718,
+     "tag": "a",
+     "balance": "wrap"
+    },
+    {
+     "text": "Services",
+     "family": "sans-serif",
+     "size": "12px",
+     "weight": "400",
+     "lh": "normal",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "tt": "none",
+     "align": "start",
+     "w": 64,
+     "h": 19,
+     "top": 68,
+     "left": 795,
+     "tag": "a",
+     "balance": "wrap"
+    }
+   ],
+   "hasLogoSvgOrImg": true,
+   "px": "20px/20px"
+  },
+  "ctas": [
+   {
+    "text": "Buy Template Unlock for $99",
+    "inHeader": false,
+    "kind": "filled",
+    "h": 36,
+    "w": 142,
+    "radius": "10px",
+    "bg": "rgb(0, 0, 0)",
+    "color": "rgb(0, 0, 238)",
+    "border": null,
+    "size": "12px",
+    "weight": "400",
+    "pad": "0px 0px",
+    "shadow": null,
+    "family": "sans-serif"
+   }
+  ],
+  "chain": [
+   {
+    "tag": "h1.framer-text",
+    "w": 559,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "block",
+    "ta": "center"
+   },
+   {
+    "tag": "div.framer-13b7p3s",
+    "w": 559,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "div.framer-1nysc0b",
+    "w": 559,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "div.framer-1do8pkx",
+    "w": 1400,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "div.framer-1ukmf4x",
+    "w": 1400,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "div.framer-11d9j7t",
+    "w": 1400,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "header.framer-ztudqo",
+    "w": 1400,
+    "maxW": "1400px",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "main.framer-1t585y2",
+    "w": 1440,
+    "maxW": "none",
+    "pl": "20px",
+    "ml": "0px",
+    "disp": "flex",
+    "ta": "start"
+   },
+   {
+    "tag": "div.framer-Gbv8L",
+    "w": 0,
+    "maxW": "none",
+    "pl": "0px",
+    "ml": "0px",
+    "disp": "contents",
+    "ta": "start"
+   }
+  ],
+  "sections": [
+   {
+    "cls": "framer-aa82nu",
+    "tag": "section",
+    "top": 1054,
+    "h": 1038,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 8,
+    "effPb": 0,
+    "contentW": 1400,
+    "contentL": 20,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "Reserved,",
+    "hSize": "72px",
+    "hAlign": "center"
+   },
+   {
+    "cls": "framer-azoeh5",
+    "tag": "section",
+    "top": 2621,
+    "h": 3778,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": -12,
+    "effPb": -10,
+    "contentW": 1424,
+    "contentL": 20,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "Showcase of My,",
+    "hSize": "72px",
+    "hAlign": "center"
+   },
+   {
+    "cls": "framer-1rwocwm",
+    "tag": "section",
+    "top": 6599,
+    "h": 1255,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 0,
+    "effPb": 53,
+    "contentW": 1300,
+    "contentL": 70,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "Your needs, my Expertise",
+    "hSize": "72px",
+    "hAlign": "center"
+   },
+   {
+    "cls": "framer-k1ia4v",
+    "tag": "section",
+    "top": 8053,
+    "h": 1100,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": -424,
+    "effPb": -460,
+    "contentW": 2736,
+    "contentL": -628,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "Turning bold ideas into unforgettable digital expe",
+    "hSize": "32px",
+    "hAlign": "center"
+   },
+   {
+    "cls": "framer-10ysis5",
+    "tag": "section",
+    "top": 9353,
+    "h": 653,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": -38,
+    "effPb": -228,
+    "contentW": 7984,
+    "contentL": -200,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "Trusted by clients,",
+    "hSize": "72px",
+    "hAlign": "center"
+   },
+   {
+    "cls": "framer-ylvmrd",
+    "tag": "section",
+    "top": 10206,
+    "h": 893,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 0,
+    "effPb": 70,
+    "contentW": 1245,
+    "contentL": 100,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "Frequently Asked Questions",
+    "hSize": "72px",
+    "hAlign": "center"
+   },
+   {
+    "cls": "framer-yycFH",
+    "tag": "footer",
+    "top": 11299,
+    "h": 745,
+    "pt": "0px",
+    "pb": "0px",
+    "effPt": 106,
+    "effPb": 30,
+    "contentW": 1400,
+    "contentL": 20,
+    "bg": "rgba(0, 0, 0, 0)",
+    "heading": "",
+    "hSize": null,
+    "hAlign": null
+   }
+  ],
+  "radiusAll": [
+   [
+    "50px",
+    36
+   ],
+   [
+    "35px",
+    22
+   ],
+   [
+    "16px",
+    21
+   ],
+   [
+    "20px",
+    9
+   ],
+   [
+    "15px",
+    8
+   ],
+   [
+    "11px",
+    7
+   ],
+   [
+    "30px",
+    7
+   ],
+   [
+    "23px",
+    5
+   ],
+   [
+    "17px",
+    2
+   ],
+   [
+    "10px",
+    2
+   ]
+  ],
+  "radiusCards": [
+   [
+    "35px",
+    22
+   ],
+   [
+    "30px",
+    7
+   ],
+   [
+    "17px",
+    2
+   ],
+   [
+    "20px",
+    2
+   ]
+  ],
+  "radiusMedia": [
+   [
+    "50px",
+    12
+   ],
+   [
+    "16px",
+    7
+   ],
+   [
+    "11px",
+    2
+   ]
+  ],
+  "radiusInputs": [],
+  "shadows": [
+   [
+    "rgba(188, 188, 188, 0.3) 0px -8px 0.5px 0px inset, rgb(255, 255, 255) 0px 2px 0.5px 0px inset, rgba(0, 0, 0, 0.1) 0px 3px 3px 0px",
+    20
+   ],
+   [
+    "rgba(255, 129, 19, 0.02) 0px 72px 29px 0px, rgba(255, 129, 19, 0.08) 0px 40px 24px 0px, rgba(255, 129, 19, 0.14) 0px 18px 18px 0px, rgba(255, 129, 19, 0.17) 0px 4px 10px ",
+    7
+   ],
+   [
+    "rgba(0, 0, 0, 0.1) 0px 3px 3px 0px, rgba(188, 188, 188, 0.3) 0px -4.47px 0.45px 0px inset, rgb(255, 255, 255) 0px 1.79px 0.45px 0px",
+    7
+   ],
+   [
+    "rgba(188, 188, 188, 0.3) 0px -3.51px 0.35px 0px inset, rgb(255, 255, 255) 0px 1.4px 0.35px 0px, rgba(163, 163, 163, 0.24) 0px 1px 0px 0px inset",
+    2
+   ],
+   [
+    "rgba(188, 188, 188, 0.3) 0px -5px 0.5px 0px inset",
+    1
+   ],
+   [
+    "rgba(188, 188, 188, 0.3) 0px -8px 0.5px 0px inset, rgb(255, 255, 255) 0px 2px 0.5px 0px inset",
+    1
+   ]
+  ],
+  "borders": [],
+  "cardBgs": [
+   [
+    "rgba(0, 0, 0, 0)",
+    31
+   ],
+   [
+    "rgb(255, 255, 255)",
+    2
+   ]
+  ],
+  "grids": [],
+  "flexGaps": [
+   [
+    "0px",
+    83
+   ],
+   [
+    "10px",
+    37
+   ],
+   [
+    "20px",
+    24
+   ],
+   [
+    "50px",
+    23
+   ],
+   [
+    "12px",
+    12
+   ],
+   [
+    "30px",
+    9
+   ],
+   [
+    "100px",
+    6
+   ],
+   [
+    "5px",
+    5
+   ]
+  ],
+  "bgByArea": [
+   [
+    "rgb(255, 255, 255)",
+    "40%"
+   ],
+   [
+    "rgb(0, 0, 0)",
+    "0%"
+   ],
+   [
+    "rgb(255, 0, 0)",
+    "0%"
+   ]
+  ],
+  "textColors": [
+   [
+    "rgb(0, 0, 0)",
+    83
+   ],
+   [
+    "rgb(166, 166, 166)",
+    19
+   ],
+   [
+    "rgb(255, 255, 255)",
+    12
+   ],
+   [
+    "rgb(0, 0, 238)",
+    1
+   ]
+  ],
+  "linkColors": [
+   [
+    "rgb(255, 255, 255)",
+    12
+   ],
+   [
+    "rgb(0, 0, 0)",
+    9
+   ],
+   [
+    "rgb(0, 0, 238)",
+    1
+   ]
+  ],
+  "counts": {
+   "video": 1,
+   "canvas": 0,
+   "iframe": 1,
+   "svg": 110,
+   "img": 88,
+   "picture": 0,
+   "spline": 0,
+   "lottie": 0
+  },
+  "heroMedia": {
+   "video": true,
+   "canvas": false,
+   "bigImg": 1
+  },
+  "libs": {
+   "gsap": false,
+   "lenis": true,
+   "locomotive": false,
+   "next": false,
+   "framer": true,
+   "webflow": false,
+   "three": false,
+   "astro": false,
+   "nuxt": false,
+   "tailwindish": false
+  },
+  "sticky": 5,
+  "fixed": 4,
+  "snap": 0
+ },
+ "pageHeight": 12065
+}

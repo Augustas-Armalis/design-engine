@@ -1,0 +1,11 @@
+{
+  "slug": "murmur", "name": "Murmur",
+  "showcaseHeadline": "Record The Call. Keep What Matters.",
+  "signature": "Cinematic dark after Basit A. Khan: near-pure black, one volumetric blue light source with grain, one hero object (a tilted phone with the real app), a grotesk headline whose second half fades to grey, glossy white-to-ice pill buttons and a glass pill nav.",
+  "personality": { "brandHue": 255, "brandChroma": 0.17, "neutralTemperature": "cool", "radiusPreset": "default", "depthStyle": "soft", "density": "comfortable", "motionPersonality": "calm", "typeVoice": "Short, confident, two-tone headlines." },
+  "fonts": { "display": "'Inter Tight', 'Inter', sans-serif", "body": "'Inter', system-ui, sans-serif", "mono": "'Geist Mono', ui-monospace, monospace", "href": "https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400..700&family=Inter:wght@400;500;600&display=swap" },
+  "type": { "ratio": 1.25, "basePx": 16, "displayMaxPx": 76, "displayWeight": 500, "displayTracking": -0.04, "displayLeading": 1.0, "bodyLeading": 1.5 },
+  "bestFor": ["consumer and prosumer AI apps", "mobile-first products", "fintech"], "avoidFor": ["dense B2B dashboards"],
+  "owned": ["One volumetric light source with grain", "A single tilted device as the hero object", "Second half of the headline fades to grey"],
+  "never": ["more than one light source", "a dashboard in the fold", "beige or sepia fields"]
+}

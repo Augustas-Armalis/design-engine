@@ -1,0 +1,932 @@
+{
+ "headline": {
+  "text": "Intelligent",
+  "tag": "H1",
+  "fam": "\"Source Serif 4 Variable\", \"Source Serif 4 Variable Placehol",
+  "size": "120px",
+  "lh": "156px",
+  "w": "400",
+  "ls": "-6px",
+  "color": "rgb(255, 255, 255)",
+  "bgi": "none",
+  "clip": "border-box",
+  "fill": "rgb(255, 255, 255)",
+  "style": "italic",
+  "align": "start",
+  "r": [
+   245,
+   311,
+   450,
+   156
+  ],
+  "wrap": "nowrap",
+  "feat": "normal"
+ },
+ "headlineSpans": [],
+ "sub": {
+  "text": "Agentic AI that handles the entire patient journey: from referrals and scheduling, to eligibility checks and reminders.",
+  "tag": "P",
+  "fam": "\"Source Serif 4\", \"Source Serif 4 Placeholder\", serif",
+  "size": "16px",
+  "lh": "22.4px",
+  "w": "300",
+  "ls": "0.16px",
+  "color": "rgb(255, 255, 255)",
+  "bgi": "none",
+  "clip": "border-box",
+  "fill": "rgb(255, 255, 255)",
+  "style": "normal",
+  "align": "center",
+  "r": [
+   50,
+   481,
+   1340,
+   22
+  ],
+  "wrap": "wrap",
+  "feat": "normal"
+ },
+ "headToSub": 14,
+ "buttons": [
+  {
+   "t": "Request Demo",
+   "r": [
+    1075,
+    7,
+    176,
+    56
+   ],
+   "font": "\"Source Serif 4\" 16px w600 ls=normal c=rgb(8, 8, 8)",
+   "layers": [
+    {
+     "n": "Right",
+     "r": [
+      1075,
+      7,
+      176,
+      56
+     ],
+     "bg": "rgba(255, 255, 255, 0.1)",
+     "bgi": "none",
+     "radius": "118px",
+     "border": "",
+     "sh": "",
+     "filter": "",
+     "backdrop": "",
+     "op": "1",
+     "blend": ""
+    },
+    {
+     "n": "Glow",
+     "r": [
+      1075,
+      7,
+      176,
+      56
+     ],
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "radial-gradient(25% 38.4295% at 89.625% 39.625%, rgb(59, 128, 255) 0%, rgba(255, 255, 255, 0) 100%)",
+     "radius": "72px",
+     "border": "",
+     "sh": "",
+     "filter": "blur(15px)",
+     "backdrop": "",
+     "op": "1",
+     "blend": ""
+    },
+    {
+     "n": "Stroke",
+     "r": [
+      1075,
+      7,
+      176,
+      56
+     ],
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "radial-gradient(17.1337% 43.026% at 89.625% 39.625%, rgb(59, 128, 255) 0%, rgba(255, 255, 255, 0) 100%)",
+     "radius": "72px",
+     "border": "",
+     "sh": "",
+     "filter": "",
+     "backdrop": "",
+     "op": "1",
+     "blend": ""
+    },
+    {
+     "n": "Fill",
+     "r": [
+      1078,
+      10,
+      170,
+      50
+     ],
+     "bg": "rgb(255, 255, 255)",
+     "bgi": "none",
+     "radius": "114px",
+     "border": "",
+     "sh": "",
+     "filter": "",
+     "backdrop": "",
+     "op": "1",
+     "blend": ""
+    }
+   ]
+  },
+  {
+   "t": "Login",
+   "r": [
+    1256,
+    7,
+    134,
+    56
+   ],
+   "font": "\"Source Serif 4\" 16px w600 ls=normal c=rgb(8, 8, 8)",
+   "layers": [
+    {
+     "n": "Right",
+     "r": [
+      1256,
+      7,
+      134,
+      56
+     ],
+     "bg": "rgba(255, 255, 255, 0.1)",
+     "bgi": "none",
+     "radius": "118px",
+     "border": "",
+     "sh": "",
+     "filter": "",
+     "backdrop": "",
+     "op": "1",
+     "blend": ""
+    },
+    {
+     "n": "Glow",
+     "r": [
+      1256,
+      7,
+      134,
+      56
+     ],
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "radial-gradient(25% 38.4295% at 89.625% 39.625%, rgb(59, 128, 255) 0%, rgba(255, 255, 255, 0) 100%)",
+     "radius": "72px",
+     "border": "",
+     "sh": "",
+     "filter": "blur(15px)",
+     "backdrop": "",
+     "op": "1",
+     "blend": ""
+    },
+    {
+     "n": "Stroke",
+     "r": [
+      1256,
+      7,
+      134,
+      56
+     ],
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "radial-gradient(17.1337% 43.026% at 89.625% 39.625%, rgb(59, 128, 255) 0%, rgba(255, 255, 255, 0) 100%)",
+     "radius": "72px",
+     "border": "",
+     "sh": "",
+     "filter": "",
+     "backdrop": "",
+     "op": "1",
+     "blend": ""
+    },
+    {
+     "n": "Fill",
+     "r": [
+      1259,
+      10,
+      128,
+      50
+     ],
+     "bg": "rgb(255, 255, 255)",
+     "bgi": "none",
+     "radius": "114px",
+     "border": "",
+     "sh": "",
+     "filter": "",
+     "backdrop": "",
+     "op": "1",
+     "blend": ""
+    }
+   ]
+  },
+  {
+   "t": "Request Demo",
+   "r": [
+    632,
+    533,
+    176,
+    56
+   ],
+   "font": "\"Source Serif 4\" 16px w600 ls=normal c=rgb(8, 8, 8)",
+   "layers": [
+    {
+     "n": "Right",
+     "r": [
+      632,
+      533,
+      176,
+      56
+     ],
+     "bg": "rgba(255, 255, 255, 0.1)",
+     "bgi": "none",
+     "radius": "118px",
+     "border": "",
+     "sh": "",
+     "filter": "",
+     "backdrop": "",
+     "op": "1",
+     "blend": ""
+    },
+    {
+     "n": "Glow",
+     "r": [
+      632,
+      533,
+      176,
+      56
+     ],
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "radial-gradient(25% 38.4295% at 89.625% 39.625%, rgb(59, 128, 255) 0%, rgba(255, 255, 255, 0) 100%)",
+     "radius": "72px",
+     "border": "",
+     "sh": "",
+     "filter": "blur(15px)",
+     "backdrop": "",
+     "op": "1",
+     "blend": ""
+    },
+    {
+     "n": "Stroke",
+     "r": [
+      632,
+      533,
+      176,
+      56
+     ],
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgi": "radial-gradient(17.1337% 43.026% at 89.625% 39.625%, rgb(59, 128, 255) 0%, rgba(255, 255, 255, 0) 100%)",
+     "radius": "72px",
+     "border": "",
+     "sh": "",
+     "filter": "",
+     "backdrop": "",
+     "op": "1",
+     "blend": ""
+    },
+    {
+     "n": "Fill",
+     "r": [
+      635,
+      536,
+      170,
+      50
+     ],
+     "bg": "rgb(255, 255, 255)",
+     "bgi": "none",
+     "radius": "114px",
+     "border": "",
+     "sh": "",
+     "filter": "",
+     "backdrop": "",
+     "op": "1",
+     "blend": ""
+    }
+   ]
+  }
+ ],
+ "nav": {
+  "r": [
+   0,
+   0,
+   1440,
+   70
+  ],
+  "pos": "fixed",
+  "shells": [
+   {
+    "n": "Desktop",
+    "r": [
+     0,
+     0,
+     1440,
+     70
+    ],
+    "bg": "rgba(8, 8, 8, 0.7)",
+    "radius": "0px",
+    "border": "0px rgb(0, 0, 0)",
+    "bb": "0px rgb(0, 0, 0)",
+    "backdrop": "blur(20px)",
+    "sh": "none",
+    "pos": "relative"
+   },
+   {
+    "n": "Right",
+    "r": [
+     1075,
+     7,
+     176,
+     56
+    ],
+    "bg": "rgba(255, 255, 255, 0.1)",
+    "radius": "118px",
+    "border": "0px rgb(0, 0, 238)",
+    "bb": "0px rgb(0, 0, 238)",
+    "backdrop": "none",
+    "sh": "none",
+    "pos": "relative"
+   },
+   {
+    "n": "Fill",
+    "r": [
+     1078,
+     10,
+     170,
+     50
+    ],
+    "bg": "rgb(255, 255, 255)",
+    "radius": "114px",
+    "border": "0px rgb(0, 0, 238)",
+    "bb": "0px rgb(0, 0, 238)",
+    "backdrop": "none",
+    "sh": "none",
+    "pos": "absolute"
+   },
+   {
+    "n": "Right",
+    "r": [
+     1256,
+     7,
+     134,
+     56
+    ],
+    "bg": "rgba(255, 255, 255, 0.1)",
+    "radius": "118px",
+    "border": "0px rgb(0, 0, 238)",
+    "bb": "0px rgb(0, 0, 238)",
+    "backdrop": "none",
+    "sh": "none",
+    "pos": "relative"
+   },
+   {
+    "n": "Fill",
+    "r": [
+     1259,
+     10,
+     128,
+     50
+    ],
+    "bg": "rgb(255, 255, 255)",
+    "radius": "114px",
+    "border": "0px rgb(0, 0, 238)",
+    "bb": "0px rgb(0, 0, 238)",
+    "backdrop": "none",
+    "sh": "none",
+    "pos": "absolute"
+   }
+  ],
+  "links": [
+   "Solutions",
+   "Blog",
+   "Careers",
+   "Request Demo",
+   "Login"
+  ]
+ },
+ "layers": [
+  {
+   "n": "div",
+   "tag": "DIV",
+   "r": [
+    0,
+    0,
+    1440,
+    5863
+   ],
+   "bg": "rgb(8, 8, 8)",
+   "bgi": "none",
+   "radius": "0px",
+   "border": "",
+   "sh": "",
+   "filter": "",
+   "backdrop": "",
+   "op": "1",
+   "blend": "",
+   "t": "",
+   "persp": "",
+   "mask": "none",
+   "src": "",
+   "overflow": "clip"
+  },
+  {
+   "n": "Main",
+   "tag": "MAIN",
+   "r": [
+    0,
+    0,
+    1440,
+    5460
+   ],
+   "bg": "rgb(8, 8, 8)",
+   "bgi": "none",
+   "radius": "0px",
+   "border": "",
+   "sh": "",
+   "filter": "",
+   "backdrop": "",
+   "op": "1",
+   "blend": "",
+   "t": "",
+   "persp": "",
+   "mask": "none",
+   "src": "",
+   "overflow": "clip"
+  },
+  {
+   "n": "canvas",
+   "tag": "CANVAS",
+   "r": [
+    0,
+    0,
+    1440,
+    900
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgi": "none",
+   "radius": "0px",
+   "border": "",
+   "sh": "",
+   "filter": "",
+   "backdrop": "",
+   "op": "1",
+   "blend": "",
+   "t": "",
+   "persp": "",
+   "mask": "none",
+   "src": "",
+   "overflow": "clip"
+  }
+ ],
+ "canvases": [
+  {
+   "r": [
+    0,
+    0,
+    1440,
+    900
+   ],
+   "parent": "div",
+   "gp": "div",
+   "ggp": "div"
+  }
+ ],
+ "bodyBg": "rgb(8, 8, 8)",
+ "htmlBg": "rgba(0, 0, 0, 0)",
+ "appear": {
+  "g3uyaq": {
+   "default": {
+    "initial": {
+     "opacity": 1,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "x": 0,
+     "y": -80
+    },
+    "animate": {
+     "opacity": 1,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "transition": {
+      "bounce": 0,
+      "delay": 0,
+      "duration": 1.2,
+      "type": "spring"
+     },
+     "x": 0,
+     "y": 0
+    }
+   }
+  },
+  "1pnvo93": {
+   "default": {
+    "initial": {
+     "opacity": 0.001,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1.2,
+     "skewX": 0,
+     "skewY": 0,
+     "x": 0,
+     "y": 0
+    },
+    "animate": {
+     "opacity": 1,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "transition": {
+      "bounce": 0,
+      "delay": 1.5,
+      "duration": 1.5,
+      "type": "spring"
+     },
+     "x": 0,
+     "y": 0
+    }
+   }
+  },
+  "1fl7ga0": {
+   "default": {
+    "initial": {
+     "opacity": 0.001,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "x": 0,
+     "y": 120
+    },
+    "animate": {
+     "opacity": 1,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "transition": {
+      "bounce": 0,
+      "delay": 0.2,
+      "duration": 1.2,
+      "type": "spring"
+     },
+     "x": 0,
+     "y": 0
+    }
+   }
+  },
+  "2ttjn3": {
+   "default": {
+    "initial": {
+     "opacity": 0.001,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "x": 0,
+     "y": 120
+    },
+    "animate": {
+     "opacity": 1,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "transition": {
+      "bounce": 0,
+      "delay": 0.4,
+      "duration": 1.2,
+      "type": "spring"
+     },
+     "x": 0,
+     "y": 0
+    }
+   }
+  },
+  "b6dvk7": {
+   "default": {
+    "initial": {
+     "opacity": 0.001,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "x": 0,
+     "y": 20
+    },
+    "animate": {
+     "opacity": 1,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "transition": {
+      "bounce": 0,
+      "delay": 0.8,
+      "duration": 1.2,
+      "type": "spring"
+     },
+     "x": 0,
+     "y": 0
+    }
+   }
+  },
+  "15g04zr": {
+   "default": {
+    "initial": {
+     "opacity": 0.001,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "x": 0,
+     "y": 20
+    },
+    "animate": {
+     "opacity": 1,
+     "rotate": 0,
+     "rotateX": 0,
+     "rotateY": 0,
+     "scale": 1,
+     "skewX": 0,
+     "skewY": 0,
+     "transition": {
+      "bounce": 0,
+      "delay": 1,
+      "duration": 1.2,
+      "type": "spring"
+     },
+     "x": 0,
+     "y": 0
+    }
+   }
+  }
+ },
+ "appearTargets": [
+  {
+   "id": "g3uyaq",
+   "n": "div",
+   "r": [
+    0,
+    0,
+    1440,
+    70
+   ],
+   "txt": "Solutions Blog Careers Request Demo Logi"
+  },
+  {
+   "id": "1pnvo93",
+   "n": "webgl - holder",
+   "r": [
+    0,
+    0,
+    1440,
+    900
+   ],
+   "txt": ""
+  },
+  {
+   "id": "1fl7ga0",
+   "n": "div",
+   "r": [
+    245,
+    311,
+    450,
+    156
+   ],
+   "txt": "Intelligent"
+  },
+  {
+   "id": "2ttjn3",
+   "n": "div",
+   "r": [
+    725,
+    311,
+    469,
+    156
+   ],
+   "txt": "healthcare"
+  },
+  {
+   "id": "b6dvk7",
+   "n": "div",
+   "r": [
+    50,
+    481,
+    1340,
+    22
+   ],
+   "txt": "Agentic AI that handles the entire patie"
+  },
+  {
+   "id": "15g04zr",
+   "n": "cta holder",
+   "r": [
+    50,
+    517,
+    1340,
+    72
+   ],
+   "txt": "Request Demo"
+  }
+ ],
+ "sections": [
+  {
+   "n": "div",
+   "r": [
+    0,
+    0,
+    1440,
+    70
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "pt": "0px",
+   "pb": "0px",
+   "gap": "normal",
+   "radius": "0px"
+  },
+  {
+   "n": "div",
+   "r": [
+    0,
+    5460,
+    1440,
+    402
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "pt": "0px",
+   "pb": "0px",
+   "gap": "normal",
+   "radius": "0px"
+  },
+  {
+   "n": "div",
+   "r": [
+    1298,
+    852,
+    112,
+    18
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "pt": "0px",
+   "pb": "0px",
+   "gap": "normal",
+   "radius": "0px"
+  }
+ ],
+ "radiusHist": [
+  [
+   "72px",
+   6
+  ],
+  [
+   "15px",
+   4
+  ],
+  [
+   "118px",
+   3
+  ],
+  [
+   "114px",
+   3
+  ],
+  [
+   "50px",
+   2
+  ],
+  [
+   "20px",
+   1
+  ],
+  [
+   "10px",
+   1
+  ]
+ ],
+ "shadowHist": [
+  [
+   "rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset",
+   1
+  ]
+ ],
+ "backdropHist": [
+  [
+   "blur(20px)",
+   1
+  ]
+ ],
+ "filterHist": [
+  [
+   "blur(15px)",
+   3
+  ]
+ ],
+ "fontHist": [
+  [
+   "Source Serif 4 Variable 48px w400 lsnormal",
+   359
+  ],
+  [
+   "Source Serif 4 16px w300 ls0.16px",
+   18
+  ],
+  [
+   "Source Serif 4 14px w400 lsnormal",
+   12
+  ],
+  [
+   "Source Serif 4 Variable 24px w400 ls0.24px",
+   11
+  ],
+  [
+   "Times Now SemiLight 200px w400 ls-6px",
+   6
+  ],
+  [
+   "Source Serif 4 16px w600 lsnormal",
+   3
+  ],
+  [
+   "Source Serif 4 60px w700 lsnormal",
+   3
+  ],
+  [
+   "Inter 14px w400 lsnormal",
+   3
+  ],
+  [
+   "Source Serif 4 Variable 120px w400 ls-6px",
+   2
+  ],
+  [
+   "Source Serif 4 Variable 200px w400 ls-4px",
+   1
+  ],
+  [
+   "Source Serif 4 24px w300 ls0.24px",
+   1
+  ],
+  [
+   "Noto Serif Armenian 16px w700 lsnormal",
+   1
+  ]
+ ],
+ "gradHist": [
+  [
+   "radial-gradient(25% 38.4295% at 89.625% 39.625%, rgb(59, 128, 255) 0%, rgba(255, 255, 255, 0) 100%)",
+   3
+  ],
+  [
+   "radial-gradient(17.1337% 43.026% at 89.625% 39.625%, rgb(59, 128, 255) 0%, rgba(255, 255, 255, 0) 100%)",
+   3
+  ],
+  [
+   "radial-gradient(rgba(255, 255, 255, 0.05) 0.6px, rgba(0, 0, 0, 0) 1.4px)",
+   1
+  ]
+ ],
+ "scripts": [
+  "https://events.framer.com/script?v=2",
+  "https://cdn.jsdelivr.net/gh/hiunicornstudio/unicornstudio.js@v2.1.0/dist/unicornStudio.umd.js"
+ ],
+ "html": [
+  "webgl - holder",
+  "Unicorn Studio Scene",
+  "UnicornStudioEmbed_1.CXDJnPWG.mjs",
+  "unicornstudio/unicornstudio.js@v2.1.0/dist/unicornStudio.umd.js"
+ ],
+ "hover": [
+  {
+   "t": "Request Demo",
+   "after": [
+    "A bg=rgba(255, 255, 255, 0.1) bgi=none sh=none t=none op=1",
+    "Glow bg=rgba(0, 0, 0, 0) bgi=radial-gradient(42.7812% 81.3468% at 64.4375% 50%, rgb(59, 128, 255) 0%, rgba(255, 255, 255, 0) 100%) sh=none t=none op=1",
+    "Stroke bg=rgba(0, 0, 0, 0) bgi=radial-gradient(58.0215% 140.746% at 64.4375% 50%, rgb(59, 128, 255) 0%, rgba(255, 255, 255, 0) 100%) sh=none t=none op=1",
+    "Fill bg=rgb(255, 255, 255) bgi=none sh=none t=none op=1",
+    "Text bg=rgba(0, 0, 0, 0) bgi=none sh=none t=none op=1",
+    "DIV bg=rgba(0, 0, 0, 0) bgi=none sh=none t=none op=1"
+   ]
+  }
+ ]
+}
