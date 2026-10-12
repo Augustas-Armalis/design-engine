@@ -1,0 +1,221 @@
+{
+ "n": 517,
+ "designers": [
+  "FonsMans",
+  "Gavmn",
+  "MengTo",
+  "PixelJanitor",
+  "alex_barashkov",
+  "basit_designs",
+  "d__raptis",
+  "emilkowalski",
+  "flohoeller",
+  "jakubkrehel",
+  "jh3yy",
+  "joshpuckett",
+  "lochieaxon",
+  "marcelkargul",
+  "mrncst",
+  "oguzyagizkara",
+  "pacocoursey",
+  "raphaelsalaja",
+  "raunofreiberg",
+  "rogie",
+  "shadcn",
+  "steveschoger",
+  "uisabor"
+ ],
+ "byFormat": {
+  "video": {
+   "n": 285,
+   "medianRel": 1.03,
+   "meanRel": 1.76
+  },
+  "image x1": {
+   "n": 155,
+   "medianRel": 0.76,
+   "meanRel": 1.18
+  },
+  "image x4": {
+   "n": 31,
+   "medianRel": 1.19,
+   "meanRel": 1.66
+  },
+  "image x2": {
+   "n": 24,
+   "medianRel": 1.2,
+   "meanRel": 1.33
+  },
+  "image x3": {
+   "n": 13,
+   "medianRel": 1,
+   "meanRel": 1.13
+  },
+  "video-multi": {
+   "n": 9,
+   "medianRel": 1.78,
+   "meanRel": 1.81
+  }
+ },
+ "byLength": {
+  "6-15 words": {
+   "n": 173,
+   "medianRel": 1.02,
+   "meanRel": 1.63
+  },
+  "1-5 words": {
+   "n": 123,
+   "medianRel": 0.96,
+   "meanRel": 1.31
+  },
+  "16-40 words": {
+   "n": 122,
+   "medianRel": 0.95,
+   "meanRel": 1.61
+  },
+  "41+ words": {
+   "n": 91,
+   "medianRel": 1,
+   "meanRel": 1.63
+  },
+  "0 words": {
+   "n": 8,
+   "medianRel": 0.67,
+   "meanRel": 1.23
+  }
+ },
+ "byTag": {
+  "untagged": {
+   "n": 145,
+   "medianRel": 0.98,
+   "meanRel": 1.38
+  },
+  "ai-tool-mention": {
+   "n": 103,
+   "medianRel": 1.07,
+   "meanRel": 1.64
+  },
+  "emoji": {
+   "n": 96,
+   "medianRel": 0.94,
+   "meanRel": 1.39
+  },
+  "lowercase-start": {
+   "n": 86,
+   "medianRel": 0.99,
+   "meanRel": 1.5
+  },
+  "link": {
+   "n": 80,
+   "medianRel": 1.08,
+   "meanRel": 2.08
+  },
+  "wip/exploring": {
+   "n": 52,
+   "medianRel": 0.84,
+   "meanRel": 1.22
+  },
+  "detail/craft": {
+   "n": 47,
+   "medianRel": 1.07,
+   "meanRel": 1.34
+  },
+  "component-label": {
+   "n": 45,
+   "medianRel": 1.38,
+   "meanRel": 2.43
+  },
+  "lesson/tip": {
+   "n": 37,
+   "medianRel": 1.17,
+   "meanRel": 1.8
+  },
+  "made/built": {
+   "n": 36,
+   "medianRel": 1.2,
+   "meanRel": 2.38
+  },
+  "question": {
+   "n": 17,
+   "medianRel": 0.5,
+   "meanRel": 1.26
+  },
+  "from-brand (recreation)": {
+   "n": 13,
+   "medianRel": 1.23,
+   "meanRel": 1.48
+  },
+  "introducing/launch": {
+   "n": 11,
+   "medianRel": 1.1,
+   "meanRel": 2.54
+  },
+  "no-caption": {
+   "n": 8,
+   "medianRel": 0.67,
+   "meanRel": 1.23
+  },
+  "version/number": {
+   "n": 6,
+   "medianRel": 2.95,
+   "meanRel": 2.55
+  },
+  "before/after": {
+   "n": 4,
+   "medianRel": 3.34,
+   "meanRel": 3.44
+  }
+ },
+ "bmPerLike": {
+  "median": 0.45,
+  "p25": 0.25,
+  "p75": 0.71
+ },
+ "likePerView": {
+  "median": "1.57%",
+  "p25": "1.04%",
+  "p75": "2.25%"
+ },
+ "topRel": [
+  "PixelJanitor 2082151940478398497 x19.2 710♥ video | Built a quick little resizable elastic min/max width sidebar using @motiondotdev primitives.",
+  "joshpuckett 2107175379903594714 x14.9 4906♥ video | Introducing Graphical.\n\nIt's a simple, powerful, and fun tool to design visual languages, style components, an",
+  "steveschoger 2035077141050622173 x11.2 6283♥ video | I put together a one hour video on how I've been using Claude Code as my primary design tool. \n\nPacked with to",
+  "lochieaxon 2096954781004874150 x11.1 2714♥ video | https://torph.lochie.me is now doin' numbers",
+  "jakubkrehel 2082127924946223448 x9.8 4517♥ video | A couple of before / after examples of the skills I've added last week.",
+  "uisabor 2100871031879847970 x9.7 1182♥ image x4 | Everyone is talking about AI-generated designs.\n\nMeanwhile, I’m still designing UX for AI/SaaS startups.",
+  "basit_designs 2108867100395843811 x8.8 1708♥ video | Design like this minimal should be normalised.",
+  "jakubkrehel 2095536111804150211 x8.5 3921♥ video | It’s incredible that my skills have been installed more than 160,000 times.  \n\nI originally built them for mys",
+  "raphaelsalaja 2033945823973671283 x8.2 3456♥ image x1 | i've distilled everything i've written on http://userinterface.wiki into a single skill file.\n\n119 rules acros",
+  "flohoeller 2093992259742048758 x8.0 1106♥ video | Copy-paste components that you can directly use in Claude / Codex!\n\nhttp://beautifului.dev by @theShaneLevine\n",
+  "MengTo 2102760783344189761 x7.3 6577♥ video | Opus 5.5 is next level. I’m genuinely impressed by the three.js details.\n\nI generated a playable boat scene th",
+  "marcelkargul 2108960108147552273 x6.8 993♥ image x1 | Design websites that should be illegal to know:\n\nUI Components → https://pro.alignui.com\nBento → https://bento",
+  "MengTo 2097291240672993773 x6.6 5949♥ video | I asked Astra to create a Catan game in three.js and it came out incredibly well.\n\nI played it, and the animat",
+  "jakubkrehel 2076328529604612467 x6.3 2896♥ image x1 | In a recent article, I wrote about using skills to encode judgement and understanding into agents.\n\nI put toge",
+  "Gavmn 1981385435726434494 x6.2 3798♥ image x1 | what about... small icons, no labels",
+  "pacocoursey 1630425455235940352 x5.5 2913♥ video | ",
+  "mrncst 1791467029540573376 x5.3 1431♥ video | New component in the making.",
+  "MengTo 2089252548473688076 x5.3 4756♥ video | I’m blown away by the quality of the landing pages that Opus 5 can create in Three.js.\n\nPrompting it with \"orb",
+  "oguzyagizkara 2100171221493027080 x5.2 1395♥ video | Workflows but shadermaxxing.",
+  "d__raptis 2095071199747260608 x5.2 68♥ image x1 | I've migrate an old newsletter to http://Maillayer.com today.\n\nIt's a self-hosted email marketing platform tha",
+  "Gavmn 2082684629832884302 x5.1 3116♥ image x1 | the iOS dock should shrink to fit the number of apps in it",
+  "shadcn 2107750590742757427 x5.1 4251♥ video | We’ve made it. I just talked to someone who has no idea what shadcn/ui is. Their app is built with shadcn/ui.",
+  "mrncst 1766117470207647836 x5.1 1356♥ image x1 | I built a home for the components I’ve been sharing lately - you can play with them here: https://www.uilabs.d",
+  "PixelJanitor 2069998553112727779 x4.9 183♥ image x1 | Shopify, Vercel, Lovable, ShiftNudge, Coinbase, Supabase.\n\nCommunity is everything.",
+  "shadcn 2108574564586332615 x4.9 4091♥ video | Alright, I've made the shadcn/ui skills really good at 𝙳𝙴𝚂𝙸𝙶𝙽.𝚖𝚍.\n\nAsk for a design system and it pick",
+  "mrncst 1782416881900511621 x4.8 1287♥ video | Dynamic Settings component — production here https://www.uilabs.dev/",
+  "MengTo 2098027027760840864 x4.8 4322♥ video | I built StoryComet with Fable 5.1 in three days. 15 animated children's books in five languages, with translat",
+  "uisabor 2107031704783425765 x4.5 546♥ image x4 | One of my favourite landing page layouts lately.",
+  "flohoeller 2109230261858656727 x4.4 612♥ video | Project card component",
+  "shadcn 2104873649702387819 x4.4 3685♥ image x1 | Why horizontal tabs? \n\nVertical is navigation. Organizational. Hierarchical. A tree. It's \"history\". You don't",
+  "MengTo 2088117711868227765 x4.4 3949♥ video | I recorded a 40-min tutorial on how to create three.js landing pages using Claude Code and Opus 5",
+  "jh3yy 2108593170569175495 x4.4 2158♥ video | reminder: you can use css mix-blend-mode to create knockout text ↓ 🧑‍🍳\n\n.sticker {\n  background: #000;\n  col",
+  "Gavmn 2011564079824191881 x4.4 2645♥ video | AGI agents let anyone build anything\nMe:",
+  "d__raptis 2096930769306587364 x4.2 55♥ video | You can move mockups between slides in @BrandBirdApp.\n\nPerfect for App Store screenshots that need to flow tog",
+  "d__raptis 2096930769306587364 x4.2 55♥ video | You can move mockups between slides in @BrandBirdApp.\n\nPerfect for App Store screenshots that need to flow tog",
+  "lochieaxon 2107673625696641174 x4.2 1028♥ video | nice torph usage on https://graphicalui.com's landing page 👌",
+  "jh3yy 2107166904188338534 x4.1 2020♥ video | progressive blur > masked blur 🧑‍🍳\n\nmaskin' jus' fades it, layers can progress it ↓",
+  "mrncst 1804153273118577044 x4.0 1066♥ image x1 | This was my last week at @vercel 🖤\n\nI'm forever thankful for the opportunity to work with an incredibly talen",
+  "oguzyagizkara 2105694365922541784 x3.9 1049♥ video | Clouds that wiggle ♥︎",
+  "pacocoursey 1522562064639741954 x3.9 2065♥ video | Adjoined filters from Spotify"
+ ]
+}

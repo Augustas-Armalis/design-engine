@@ -308,3 +308,12 @@ Every rule here is a direct founder verdict on real output. It outranks books, w
 - **RULE** [founder] Deliver heroes as screenshots by default; record videos only when asked.
   **Why** Founder: "no videos tho, just screenshots get me".
   **Applies to** delivery. **Check** no .mp4 in the delivery folder unless requested. **Source** founder, 2026-10-11
+- **RULE** [founder] Hero subtitles run at most 2 lines and break properly: balanced lines (text-wrap: balance or a hand-set break), no orphan word on the last line, the max-width tuned to the copy, not a fixed 440-560px. If the copy needs 3 lines, cut the copy.
+  **Why** Founder on Murmur (subtitle ran 3 lines, last line "type up."): "for subtitle try to put proper text clipping to other line, max 2 lines".
+  **Applies to** hero and section subtitles. **Check** subtitle height <= 2 x line-height; last line >= 40% of the first line's width. **Source** founder, 2026-10-12, Murmur
+- **RULE** [founder] The announcement pill above the headline is allowed but must not be the same template every time: pick from the pill variants in `system/variety/buttons-2/` (or design a custom one for the brand) and never reuse the last build's pill. The stock "[New] text →" capsule is the AI tell, not the idea of a pill.
+  **Why** Founder: "that top card above heading is optional cuz it's often considered AI", then clarified: "not off by default, just have more variants and more custom".
+  **Applies to** heroes. **Check** pill construction differs from the previous build's; it says something specific. **Source** founder, 2026-10-12
+- **RULE** [founder] Buttons vary by their inner effect, not by their shape: keep the shape fully round (pill) or softly rounded with smooth corners (squircle-like, radius 12-18px at 44-52px tall); vary the clean effect inside (gloss, inner glow, gradient rim, rolling label, arrow tile, light sweep, spotlight, split segment, icon tile). Do not reuse the previous two builds' primary effect. Never go brutalist, square-cut or heavy offset-shadow.
+  **Why** Founder: "explore more button styles, so that all of our designs wouldn't be repetitive", then: "mostly fully round or like smoother corners, but the effects inside of them and stuff, just clean".
+  **Applies to** all builds. **Check** primary CTA radius is a pill or 12-18px smooth corner; its effect class differs from the last two builds (Murmur ice gloss, Weekline slide-swap). Catalogue: `system/variety/buttons-2/`. **Source** founder, 2026-10-12

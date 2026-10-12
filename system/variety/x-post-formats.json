@@ -1,0 +1,169 @@
+{
+  "schema": "x-post-formats/v1",
+  "updated": "2026-10-12",
+  "source": "knowledge/web/x-design-posts.md (29 design accounts, 1,161 original posts via api.fxtwitter.com; crops measured in X's public embed, knowledge/benchmarks/x-posts/embed-measure.json; X API media limits from docs.x.com; ranking weights from github.com/xai-org/x-algorithm home-mixer/params/param.rs)",
+  "about": "Post formats the engine can export so a build is 'worthy to be published on X'. Every canvas size is in device pixels (export at 2x). 'feed_tile' is what the X embed renders in its 514 CSS px media column; X centre-crops anything that does not match the tile ratio.",
+  "platform": {
+    "media_per_post": "up to 4 photos, or 1 GIF, or 1 video via the API; the web composer also mixes photos and videos (seen: 2-4 video posts by @oguzyagizkara, @flohoeller)",
+    "image_api_limit": "JPG/PNG/GIF/WEBP, 5 MB (API); X re-encodes most uploads to JPEG (411 of 444 served stills were .jpg)",
+    "gif_api_limit": "15 MB, 1280x1080 max, 350 frames max",
+    "video_api_limit": "post video 0.5 s to 20 min / 8 GB (default), up to 125 min / 16 GB (Premium); H.264 High, 30 or 60 fps max, AAC LC, aspect 1:3 to 3:1; 1080p playback for subscribers who upload 1080p, 720p otherwise",
+    "observed_uploads": "designers upload far above the API's 1280x1024 recommendation: median media width 2,160 px; Mariana Castilho and Raphael Salaja post 3840x2160 video, rico 5160x3300 stills",
+    "measured_feed_tiles": {
+      "single_landscape": "native ratio, full width 514 px (seen up to 3:1 for video)",
+      "single_portrait": "native ratio down to about 0.84 (w/h); a 0.79 image rendered at 514x612 with its top cut off",
+      "two_up": "two tiles 256x289 each (0.885, i.e. 7:8), 2 px gap",
+      "three_up": "left tile 256x289 (7:8) + right column of two 256x144 tiles (16:9)",
+      "four_up": "2x2 grid of 256x144 tiles (16:9 each); whole grid about 514x290",
+      "crop_anchor": "centre (uisabor's 4-up of 3:4 full-page shots shows each page's middle band, not its hero)"
+    },
+    "caption_fold": "about 280 characters before 'Show more' (seen on a Premium long post by @marcelkargul)",
+    "ranking_weights_2026": {
+      "share_via_copy_link": 20.0,
+      "share_via_dm": 5.0,
+      "reply": 5.0,
+      "quote": 5.0,
+      "follow_author": 4.0,
+      "share": 2.0,
+      "repost": 1.0,
+      "like": 0.5,
+      "click": 0.3,
+      "open_link": 0.2,
+      "video_open": 0.07,
+      "photo_expand": 0.05,
+      "dwell": 0.05,
+      "not_interested": -47.52,
+      "block_author": -31.2,
+      "mute_author": -58.8,
+      "report": -234.0,
+      "notes": "weights scale each viewer's predicted probability, not raw counts; each extra post by the same author in one feed is multiplied by a decaying author-diversity factor; out-of-network posts are discounted; bookmarks are not a weighted action"
+    }
+  },
+  "formats": [
+    {
+      "id": "component-loop",
+      "use_for": "one component or micro-interaction (card, meter, composer, dropzone, toast)",
+      "seen_on": ["@flohoeller", "@mrncst", "@raunofreiberg", "@raphaelsalaja", "@lochieaxon"],
+      "media": "1 video",
+      "canvas": [1800, 1200],
+      "alt_canvas": [[3840, 2160], [1920, 1320]],
+      "feed_tile": "514x343",
+      "duration_s": [8, 16],
+      "fps": 60,
+      "loop": "one full state cycle that ends where it began (idle -> act -> result -> reset)",
+      "background": {"light": "#fafafa solid", "dark": "#0b0b0c solid", "never": "gradient blobs, device frames, browser chrome, desktop wallpaper"},
+      "crop_distance": "component at 1.5-2x scale filling 35-55% of the frame width (Flo grammar), or 'tiny on big' 12-20% width dead centre at 4K (Mariana grammar); pick one",
+      "cursor": "real pointer (Lucide MousePointer2 or system arrow) that travels, presses (scale 0.9) and releases in sync with the component's phases",
+      "poster_frame": "the finished, most legible state: embeds and link previews do not autoplay",
+      "text_in_media": "none; the component's own labels only",
+      "caption_templates": ["{Thing} component", "{Thing} component design", "{Thing} exploration", "New {thing} in the making.", "{Thing} – light & dark mode"]
+    },
+    {
+      "id": "pair-7x8",
+      "use_for": "two states, light + dark, two components, or two screens side by side",
+      "seen_on": ["@flohoeller (1760x1996)", "@_heyrico (3456x3920)", "@FonsMans (posters)"],
+      "media": "2 images",
+      "canvas": [1760, 2000],
+      "feed_tile": "256x289 each",
+      "background": "same canvas colour on both tiles; the subject centred in each, with >= 8% margin because the tile is shown uncropped only at exactly 7:8",
+      "text_in_media": "none",
+      "caption_templates": ["{Thing} – light & dark mode", "{Thing} component design", "Recent product designs", "{Client} — {deliverable}"]
+    },
+    {
+      "id": "lead-plus-two",
+      "use_for": "one hero shot plus two close-up details of the same product",
+      "seen_on": ["@flohoeller", "@marcelkargul"],
+      "media": "3 images",
+      "canvas": {"lead": [1760, 2000], "details": [[2400, 1350], [2400, 1350]]},
+      "feed_tile": "lead 256x289 (7:8); details 256x144 each (16:9)",
+      "crop_rule": "uploading three equal 7:8 images (Flo) wastes the right column: details get centre-cropped to 16:9; size each image to its own tile",
+      "caption_templates": ["Product design details", "{Product} design that users love to use", "details."]
+    },
+    {
+      "id": "grid-4-16x9",
+      "use_for": "a set: four sections of one landing page, four screens of one product, four explorations",
+      "seen_on": ["@uisabor", "@oguzyagizkara", "@FonsMans", "@marcelkargul"],
+      "media": "4 images (or 4 short videos)",
+      "canvas": [2400, 1350],
+      "feed_tile": "256x144 each (2x2)",
+      "crop_rule": "X centre-crops every tile to 16:9; tall full-page screenshots show only their middle band in the feed (uisabor). Crop each image yourself to the 16:9 moment you want seen; keep the full page for the click-through only if the centre band is strong",
+      "background": "one shared canvas tone across all four so the grid reads as a set",
+      "caption_templates": ["A few {things} I've been working on lately.", "Four concepts, four different vibes.", "{Thing} explorations", "Product pages from the past work"]
+    },
+    {
+      "id": "detail-strip",
+      "use_for": "a single-row control: tabs, filters, an input, a nav bar, an underline",
+      "seen_on": ["@pacocoursey (1200x400 and 1768x856)"],
+      "media": "1 video",
+      "canvas": [2400, 800],
+      "alt_canvas": [[2000, 1000]],
+      "feed_tile": "514x171 (3:1) or 514x257 (2:1)",
+      "duration_s": [6, 12],
+      "background": "solid white or #111; the control at 1:1 or 1.5x, centred, no other UI",
+      "caption_templates": ["{Detail} from {Brand}", "{Detail} № {n} — {variant}", "{Detail}"]
+    },
+    {
+      "id": "before-after",
+      "use_for": "proving a fix: a skill, a type tweak, an animation timing change",
+      "seen_on": ["@jakubkrehel (2424x1604)", "@emilkowalski", "@marcelkargul (still)"],
+      "media": "1 video (toggle) or 2 images (pair-7x8)",
+      "canvas": [2400, 1600],
+      "duration_s": [12, 24],
+      "structure": "same frame, same content; a small 'Before / After' chip toggles; hold each state equally long (>= 3 s); the after state is last",
+      "caption_templates": ["A couple of before / after examples of {X}.", "before -> after", "Made a small {X} improvement at {Company}: {what changed}"]
+    },
+    {
+      "id": "lesson-square",
+      "use_for": "a technique or principle with code or a side-by-side",
+      "seen_on": ["@jh3yy (2160x2160)", "@PixelJanitor (1440x1440)", "@oguzyagizkara (1880x1880)"],
+      "media": "1 video",
+      "canvas": [2160, 2160],
+      "feed_tile": "514x514 (the tallest landscape-safe tile: 1.78x the height of a 16:9 post)",
+      "duration_s": [8, 22],
+      "caption_templates": ["reminder: you can use {feature} to {effect} ↓", "{A} > {B}", "Don't forget to {principle}. Here's the difference it makes:", "The bigger {X}, the {Y}. Notice how {evidence}."]
+    },
+    {
+      "id": "hero-reel",
+      "use_for": "a landing page or hero section, with its load-in or scroll",
+      "seen_on": ["@basit_designs (2452x1802, 2940x2160)", "@MengTo (2880x2160)", "@steveschoger"],
+      "media": "1 video (or 1 still)",
+      "canvas": [2880, 2160],
+      "alt_canvas": [[3840, 2160]],
+      "feed_tile": "514x386 (4:3)",
+      "duration_s": [10, 20],
+      "background": "the site itself edge to edge, or the site on a soft neutral margin (Basit); no browser chrome or a minimal one",
+      "poster_frame": "the hero fully loaded",
+      "caption_templates": ["Designed it. Built it. Shipped it.", "{Style claim} should be normalised.", "A fresh landing page we recently took from concept to launch.", "Spent a little extra time getting {detail} to line up with {Y}. Worth it."]
+    },
+    {
+      "id": "object-on-field",
+      "use_for": "an icon, a logo, an app tile, a brand mark",
+      "seen_on": ["@Gavmn (2048x1152)", "@FonsMans"],
+      "media": "1 image",
+      "canvas": [2048, 1152],
+      "feed_tile": "514x289",
+      "background": "soft brand-tinted gradient or white; object at 25-35% of frame height, centred, with its own shadow",
+      "caption_templates": ["{Name} icon for today's {Product} update", "{Client} — Logo Alternatives", "what about... {idea}"]
+    },
+    {
+      "id": "spec-poster",
+      "use_for": "an opinion backed by numbers (type scale, tracking, palette, spacing)",
+      "seen_on": ["@marcelkargul (3244x4096)", "@raunofreiberg (3840x2160)", "@shadcn"],
+      "media": "1 image",
+      "canvas": [1800, 2140],
+      "feed_tile": "514x612 (portrait 0.84: the largest single footprint in the feed)",
+      "crop_rule": "keep the portrait ratio >= 0.84 or put nothing important in the top/bottom 6%",
+      "text_in_media": "yes: the specimen and its values are the content",
+      "caption_templates": ["{Opinion}. This is what I use with {tool}: {value list}", "{Thing} secretly a really good {category} btw", "Why {choice}? {one-line reason}"]
+    }
+  ],
+  "caption_rules": {
+    "case": "sentence case by default (75% of posts); lowercase is a personal voice (Marcel 81%, rauno 67%, lochie 86%), not a default",
+    "length_words": {"showcase": [3, 8], "teaching": [15, 45], "launch": [10, 40]},
+    "hashtags": "none (1% of 1,161 posts)",
+    "emoji": "at most one, at the end (17% of posts use any)",
+    "links": "not in a showcase post; put the link, credits and process in the first self-reply (54% of 218 self-replies carry a link)",
+    "questions": "avoid as the hook: question captions ran at 0.5x the author's median likes (n=17)",
+    "fold": "the hook and the claim inside the first ~280 characters"
+  }
+}
