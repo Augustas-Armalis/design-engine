@@ -57,8 +57,8 @@ export default function App() {
           <Reveal at={T_CTA + STAGGER} className="mt-3.5 text-[13px] text-[#6e6e73]">Free for 14 days · macOS 14 or later · Apple silicon and Intel</Reveal>
 
         {/* the display: ≥64px under the CTAs, bleeds off the fold */}
-        <div role="img" aria-label="Perch's shelf open under a MacBook notch, a screenshot being dragged into a document (sample content)" className="absolute left-1/2 top-[548px] z-0 -translate-x-1/2 text-left" style={{ maskImage: 'linear-gradient(180deg,#000 62%,transparent 98%)', WebkitMaskImage: 'linear-gradient(180deg,#000 62%,transparent 98%)' }}>
-          <div style={{ zoom: 0.86 }}><Mac at={T.mac} /></div>
+        <div role="img" aria-label="Perch's shelf open under a MacBook notch, a screenshot being dragged into a document (sample content)" className="absolute left-1/2 top-[532px] z-0 -translate-x-1/2 text-left">
+          <div style={{ zoom: 0.8 }}><Mac at={T.mac} /></div>
         </div>
         </main>
       </div>

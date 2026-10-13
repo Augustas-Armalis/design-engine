@@ -2720,6 +2720,34 @@
   "origin": "founder"
  },
  {
+  "id": "founder.founder-taste#88",
+  "text": "[founder] Interaction moments inside a product visual (drag, drop, select, hover) are drawn in the platform's native grammar and polished to the same level as the visual itself: the drag image is the real item (a thumbnail of the actual content, opaque, soft lift shadow, a small copy badge, the cursor gripping its lower edge), the source slot dims, and the target shows a native indicator (an insertion line between paragraphs, a highlighted row), never a dashed placeholder box with \"Drop here\" text or a dark UI card dragged across a light app. Windows the moment lands in are fully visible and carry real content, not half-hidden under another layer.",
+  "why": "Founder on Perch v1 (a dark shelf card with a big green badge dragged into a pink dashed \"Drop to insert image\" box in a near-empty, half-covered window): \"where in the visual the mouse drags sth box is stupidly designed as well as what's going on in the visual, that should be more polished as the visual itself\".",
+  "applies": "product heroes and product visuals with a demonstrated action.",
+  "check": "crop the moment at 2x: would it pass as a real macOS/iOS/web screenshot? No dashed drop boxes, no placeholder copy, no overlapping half-hidden windows.",
+  "checkable": true,
+  "source": "founder, 2026-10-13, Perch",
+  "file": "founder/founder-taste.md",
+  "section": "5. Exceptions & judgement calls",
+  "tags": [
+   "founder",
+   "taste",
+   "hero",
+   "nav",
+   "typography",
+   "copy",
+   "icons",
+   "logo",
+   "layout",
+   "product-card",
+   "background",
+   "buttons",
+   "quality-bar"
+  ],
+  "kind": "source",
+  "origin": "founder"
+ },
+ {
   "id": "dos-and-donts.dos-and-donts#1",
   "text": "[T13] Use as few font sizes as possible in a form; differentiate size only between sections (labels/placeholders at one small size) and actions (the button label larger). The good mock uses 12 for both label and placeholder and 32 for the button label; the bad mock mixes 16 (label), 12 (placeholder), 32 (button).",
   "why": "Every extra size is another thing to decode, so the form takes longer to process.",
