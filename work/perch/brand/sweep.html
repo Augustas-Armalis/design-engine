@@ -1,0 +1,22 @@
+<!doctype html><meta charset=utf-8><body style="margin:0;background:#e6e6d4;font:12px Inter,sans-serif;color:#555">
+<div id=g style="display:grid;grid-template-columns:repeat(4,300px);gap:16px;padding:24px"></div>
+<script>
+// candidate blob marks in the reference grammar: leaning soft ellipses, unioned, a small notch cut where they meet
+const G='#52aa62';
+const C=[
+ {n:'A stem+bowl P', s:[[38,62,17,40,18],[58,38,27,22,-18]], notch:[[44,54,5]]},
+ {n:'B perched drop', s:[[34,64,15,34,22],[62,40,24,30,28]], notch:[[46,56,5.5]]},
+ {n:'C two leaves rising', s:[[34,62,16,30,30],[62,44,20,40,30]], notch:[[47,58,5]]},
+ {n:'D bowl over stem tall', s:[[36,58,14,44,14],[58,34,26,20,-24]], notch:[[42,44,4.5],[46,52,4]]},
+ {n:'E fat P', s:[[36,60,19,38,16],[57,40,28,25,-10]], notch:[[45,58,5.5]]},
+ {n:'F bird on branch', s:[[50,72,38,9,-6],[52,42,22,26,24]], notch:[[44,62,5]]},
+ {n:'G three rising (P-ish)', s:[[26,68,12,20,30],[46,56,15,28,30],[66,40,18,36,30]], notch:[[35,66,4.5],[55,56,4.5]]},
+ {n:'H loop P', s:[[38,64,15,36,20],[60,40,26,24,-20]], notch:[[48,47,4],[46,60,4.5]]},
+];
+for(const c of C){
+ const shapes=c.s.map(([x,y,rx,ry,r])=>`<ellipse cx="${x}" cy="${y}" rx="${rx}" ry="${ry}" transform="rotate(${r} ${x} ${y})"/>`).join('');
+ const notches=c.notch.map(([x,y,r])=>`<circle cx="${x}" cy="${y}" r="${r}" fill="#000"/>`).join('');
+ const svg=s=>`<svg viewBox="0 0 100 100" width="${s}" height="${s}"><defs><mask id="m${c.n[0]}"><rect width="100" height="100" fill="#fff"/>${notches}</mask></defs><g fill="${G}" mask="url(#m${c.n[0]})">${shapes}</g></svg>`;
+ g.insertAdjacentHTML('beforeend',`<div style="background:#ecebdc;border-radius:16px;padding:12px"><div>${c.n}</div>${svg(180)}<div style="display:flex;gap:12px;align-items:end">${svg(48)}${svg(24)}${svg(16)}<span style="font:600 22px Rubik,sans-serif;color:#1f241d;display:flex;gap:6px;align-items:center">${svg(26)}Perch</span></div></div>`);
+}
+</script>

@@ -1,0 +1,31 @@
+<!doctype html><meta charset=utf-8><body style="margin:0;background:#e6e6d4;font:12px Inter,sans-serif;color:#555">
+<div id=g style="display:grid;grid-template-columns:repeat(4,300px);gap:16px;padding:24px"></div>
+<script>
+const G='#52aa62';
+// egg stroke: centre, length, end radii (a = upper end, b = lower end), angle (deg, 0 = vertical up)
+function egg(cx,cy,L,a,b,ang){const pts=[],N=96,th=ang*Math.PI/180;for(let i=0;i<N;i++){const t=i/N*2*Math.PI;const u=Math.cos(t);const r=b+(a-b)*(u+1)/2;let x=Math.sin(t)*r, y=-u*L/2;
+ // bulge toward the fat end: pull points with a superellipse-ish profile
+ const k=Math.pow(Math.abs(Math.sin(t)),0.85)*Math.sign(Math.sin(t)); x=k*r;
+ pts.push([cx+x*Math.cos(th)-y*Math.sin(th), cy+x*Math.sin(th)+y*Math.cos(th)]);} return pts}
+const d=p=>{let s='';const n=p.length;for(let i=0;i<n;i++){const p0=p[(i-1+n)%n],p1=p[i],p2=p[(i+1)%n],p3=p[(i+2)%n];if(!i)s+=`M${p1[0].toFixed(2)} ${p1[1].toFixed(2)}`;const c1=[p1[0]+(p2[0]-p0[0])/6,p1[1]+(p2[1]-p0[1])/6],c2=[p2[0]-(p3[0]-p1[0])/6,p2[1]-(p3[1]-p1[1])/6];s+=`C${c1[0].toFixed(2)} ${c1[1].toFixed(2)} ${c2[0].toFixed(2)} ${c2[1].toFixed(2)} ${p2[0].toFixed(2)} ${p2[1].toFixed(2)}`}return s+'Z'}
+const inside=(pt,poly)=>{let c=false;for(let i=0,j=poly.length-1;i<poly.length;j=i++){const[xi,yi]=poly[i],[xj,yj]=poly[j];if(((yi>pt[1])!=(yj>pt[1]))&&(pt[0]<(xj-xi)*(pt[1]-yi)/(yj-yi)+xi))c=!c}return c};
+function junctions(A,B){const out=[];for(let i=0;i<A.length;i++){const p=A[i],q=A[(i+1)%A.length];if(inside(p,B)!=inside(q,B))out.push([(p[0]+q[0])/2,(p[1]+q[1])/2])}return out}
+const C=[
+ {n:'P1 stem + bowl', s:[[40,60,62,17,11,22],[60,38,40,22,20,62]], nick:'low'},
+ {n:'P2 heavy bowl', s:[[38,62,58,15,10,18],[58,40,46,25,22,58]], nick:'low'},
+ {n:'P3 lean drop', s:[[40,62,64,18,12,26],[62,36,36,20,17,40]], nick:'both'},
+ {n:'P4 short stem', s:[[38,64,50,16,12,24],[58,42,48,25,23,52]], nick:'low'},
+ {n:'B1 bird perched', s:[[50,74,74,8,8,96],[54,44,46,22,16,28]], nick:'low'},
+ {n:'B2 bird + tail', s:[[46,70,70,7,7,98],[56,42,44,21,15,32],[34,56,26,7,4,-58]], nick:'low'},
+ {n:'P5 two strokes', s:[[36,58,70,15,13,20],[60,40,42,19,19,70]], nick:'both'},
+ {n:'P6 bowl leaf', s:[[40,62,60,16,10,20],[60,40,52,24,10,56]], nick:'low'},
+];
+for(const c of C){
+ const polys=c.s.map(([x,y,L,a,b,an])=>egg(x,y,L,a,b,an));
+ let nicks=[]; for(let i=1;i<polys.length;i++){const j=junctions(polys[i],polys[0]).filter(p=>!polys.slice(0,i).some((P,k)=>k!==0&&false));j.sort((p,q)=>q[1]-p[1]); if(j.length){nicks.push(j[0]); if(c.nick==='both'&&j.length>1)nicks.push(j[j.length-1]);}}
+ const id='m'+Math.random().toString(36).slice(2);
+ const svg=s=>`<svg viewBox="0 0 100 100" width="${s}" height="${s}"><defs><mask id="${id}${s}"><rect width="100" height="100" fill="#fff"/>${nicks.map(([x,y])=>`<circle cx="${x}" cy="${y}" r="2.6" fill="#000"/>`).join('')}</mask></defs><g fill="${G}" mask="url(#${id}${s})">${polys.map(p=>`<path d="${d(p)}"/>`).join('')}</g></svg>`;
+ g.insertAdjacentHTML('beforeend',`<div style="background:#ecebdc;border-radius:16px;padding:12px"><div>${c.n}</div>${svg(180)}<div style="display:flex;gap:12px;align-items:end">${svg(48)}${svg(24)}${svg(16)}<span style="font:600 22px Rubik,sans-serif;color:#1f241d;display:flex;gap:4px;align-items:center">${svg(30)}Perch</span></div></div>`);
+ window['P_'+c.n.split(' ')[0]]={polys:polys.map(d),nicks};
+}
+</script>
