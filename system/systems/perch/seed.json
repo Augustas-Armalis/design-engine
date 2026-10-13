@@ -1,0 +1,11 @@
+{
+  "slug": "perch", "name": "Perch",
+  "showcaseHeadline": "Your Notch Is Now A Shelf.",
+  "signature": "Apple-light consumer utility: an #f5f5f7 page, one MacBook display tilted back in 3D as the only object, the product living in the notch as a black squircle shelf (Dynamic Island grammar), rounded-friendly display type, an ink keycap CTA that presses, everything else quiet.",
+  "personality": { "brandHue": 28, "brandChroma": 0.19, "neutralTemperature": "neutral", "radiusPreset": "soft", "depthStyle": "soft", "density": "comfortable", "motionPersonality": "springy", "typeVoice": "Short Title Case statements, friendly, concrete about the Mac." },
+  "fonts": { "display": "'Rubik Variable', 'Rubik', ui-rounded, system-ui, sans-serif", "body": "'Inter Variable', 'Inter', system-ui, sans-serif", "mono": "'Geist Mono Variable', ui-monospace, monospace", "href": "https://fonts.googleapis.com/css2?family=Rubik:wght@400..700&family=Inter:wght@400;500;600&display=swap" },
+  "type": { "ratio": 1.25, "basePx": 16, "displayMaxPx": 80, "displayWeight": 500, "displayTracking": -0.035, "displayLeading": 1.0, "bodyLeading": 1.5 },
+  "bestFor": ["Mac and desktop utilities", "consumer productivity apps", "creator tools"], "avoidFor": ["dense B2B dashboards", "regulated finance", "legal"],
+  "owned": ["The product lives in the notch: a black squircle shelf that grows out of it", "One tilted MacBook display as the hero object, bleeding off the fold", "Ink keycap CTA that presses 1px"],
+  "never": ["a second device in the fold", "coloured glows behind the type", "a warm or beige page", "more than one accent hue outside the wallpaper"]
+}

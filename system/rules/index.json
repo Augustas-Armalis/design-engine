@@ -2692,6 +2692,34 @@
   "origin": "founder"
  },
  {
+  "id": "founder.founder-taste#87",
+  "text": "[founder] Product frames sit straight-on at rest: no perspective tilt (rotateX/rotateY) on a laptop, browser or app window in the hero. A tilt may only be used as an entrance that settles to 0°. Dragged or floating objects inside the product tilt at most 1-2°.",
+  "why": "Founder on Perch v1 (MacBook display at rotateX 15°, sides slanting inward ~45px across the fold): \"the visual representation is a bit tilted and off bro wtf fix that\".",
+  "applies": "all product heroes; overrides the variety picker's `tilted-3d` layout (read it as \"3D entrance, flat rest\").",
+  "check": "computed transform of the product frame at rest is identity (no rotateX/Y); left and right edges are vertical in the fold screenshot.",
+  "checkable": true,
+  "source": "founder, 2026-10-13, Perch",
+  "file": "founder/founder-taste.md",
+  "section": "5. Exceptions & judgement calls",
+  "tags": [
+   "founder",
+   "taste",
+   "hero",
+   "nav",
+   "typography",
+   "copy",
+   "icons",
+   "logo",
+   "layout",
+   "product-card",
+   "background",
+   "buttons",
+   "quality-bar"
+  ],
+  "kind": "source",
+  "origin": "founder"
+ },
+ {
   "id": "dos-and-donts.dos-and-donts#1",
   "text": "[T13] Use as few font sizes as possible in a form; differentiate size only between sections (labels/placeholders at one small size) and actions (the button label larger). The good mock uses 12 for both label and placeholder and 32 for the button label; the bad mock mixes 16 (label), 12 (placeholder), 32 (button).",
   "why": "Every extra size is another thing to decode, so the form takes longer to process.",
