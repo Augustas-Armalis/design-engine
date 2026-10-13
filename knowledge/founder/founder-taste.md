@@ -356,3 +356,6 @@ Every rule here is a direct founder verdict on real output. It outranks books, w
 - **RULE** [founder] Deliver hero rounds as choices: at least 3 layouts and 4-5 display fonts on one switchable build (`?layout=`, `?font=`), plus a labelled contact sheet, so the founder picks instead of reacting to one take.
   **Why** Founder on Perch round 2: "provide more font variants and layout runs so I could choose which is best".
   **Applies to** hero and landing deliveries. **Check** delivery includes contact-sheet.png and the URL params. **Source** founder, 2026-10-13, Perch
+- **RULE** [founder] A reference image sent for one thing (a logo) changes only that thing. Never restyle the palette, page ground or wallpaper from it unless asked, and never touch an approved look while applying unrelated fixes.
+  **Why** Founder on Perch round 3, where the green palette was taken from his logo reference: "nouuu not green bro, the other design was better and all you did now is ass". Round 2 (Apple-light #f5f5f7 page, warm orange wallpaper) was restored, keeping only the fixes he had asked for.
+  **Applies to** every revision round. **Check** before shipping a round, diff palette tokens and the hero ground against the last version the founder liked; any change must trace to his words. **Source** founder, 2026-10-13, Perch round 3

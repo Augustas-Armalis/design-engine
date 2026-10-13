@@ -17,7 +17,7 @@
 }
 /* Brand layer (AlignUI ln- grammar): replace every value per brand; keep the names (kit.tsx reads them). */
 :root {
-  --canvas: #e6e9d4; --ink: #1b2116; --sub: #50574a; --soft: #737373; --line: #ebebeb; --rail: #e4e4e4; --weak: #f5f5f5; --track: #ededed;
+  --canvas: #f5f5f7; --ink: #1d1d1f; --sub: #5e5e63; --soft: #737373; --line: #ebebeb; --rail: #e4e4e4; --weak: #f5f5f5; --track: #ededed;
   --accent: #335cff;
   --shadow-ring: 0 0 0 1px rgba(23, 23, 23, 0.07), 0 1px 2px 0 rgba(10, 13, 20, 0.05);
   --shadow-tile: 0 0 0 1px rgba(23, 23, 23, 0.06), 0 1px 2px rgba(10, 13, 20, 0.04), 0 6px 14px -6px rgba(23, 23, 23, 0.10);
@@ -47,10 +47,10 @@ p { text-wrap: pretty; }
 [data-font=figtree] { --display: "Figtree Variable", sans-serif; --display-w: 620; --display-t: -0.045em; }
 [data-font=funnel] { --display: "Funnel Display Variable", sans-serif; --display-w: 560; --display-t: -0.035em; }
 [data-font=onest] { --display: "Onest Variable", sans-serif; --display-w: 560; --display-t: -0.05em; }
-.key-ink { color: #fff; background: linear-gradient(180deg, #34402c 0%, #1b2116 55%, #12170f 100%);
-  box-shadow: inset 0 1px 0 rgba(255,255,255,.16), inset 0 -2px 0 rgba(0,0,0,.35), 0 0 0 1px #0d110a, 0 2px 0 #0d110a, 0 10px 18px -8px rgba(20,30,10,.45);
+.key-ink { color: #fff; background: linear-gradient(180deg, #3a3a3d 0%, #1d1d1f 55%, #141415 100%);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.18), inset 0 -2px 0 rgba(0,0,0,.35), 0 0 0 1px #0b0b0c, 0 2px 0 #0b0b0c, 0 10px 18px -8px rgba(0,0,0,.45);
   transition: transform 140ms cubic-bezier(.22,1,.36,1), box-shadow 140ms cubic-bezier(.22,1,.36,1), background 200ms; }
-@media (hover: hover) { .key-ink:hover { background: linear-gradient(180deg, #3e4b35 0%, #232b1d 55%, #161c12 100%); } }
-.key-ink:active { transform: translateY(2px); box-shadow: inset 0 1px 0 rgba(255,255,255,.14), inset 0 -1px 0 rgba(0,0,0,.35), 0 0 0 1px #0d110a, 0 0 0 #0d110a, 0 4px 10px -6px rgba(0,0,0,.4); }
+@media (hover: hover) { .key-ink:hover { background: linear-gradient(180deg, #444448 0%, #262628 55%, #18181a 100%); } }
+.key-ink:active { transform: translateY(2px); box-shadow: inset 0 1px 0 rgba(255,255,255,.14), inset 0 -1px 0 rgba(0,0,0,.35), 0 0 0 1px #0b0b0c, 0 0 0 #0b0b0c, 0 4px 10px -6px rgba(0,0,0,.4); }
 .link-arrow svg { transition: transform 220ms cubic-bezier(.22,1,.36,1); }
 @media (hover: hover) { .link-arrow:hover svg { transform: translateX(3px); } .link-arrow:hover { color: var(--ink); } }

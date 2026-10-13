@@ -44,3 +44,9 @@ The drag is rebuilt in macOS's own drag grammar:
 - **Real images:** the screenshot clip, drag image and dropped image are a real capture of our Settle dashboard; the link preview is our Kestrel hero. The wallpaper is still generated (no rights-cleared photo on disk).
 - **Variants:** `?layout=centre|split|stage` and `?font=rubik|bricolage|figtree|funnel|onest`; contact sheet in `variants/contact-sheet.png`.
 - **Check:** 0 fail on all three layouts.
+
+## Round 4 (founder: "not green, the other design was better", supplied a star logo)
+- **Restored round 2:** #f5f5f7 page, warm orange wallpaper, ink keycap. Kept the asked-for fixes: no chip, roomier headline, 2-line hand-set subtitle, real screenshots, layout/font switches.
+- **Logo:** the founder's supplied star (two interlocking arcs), traced sub-pixel to `brand/star.svg` and `src/Star.tsx`. It sits as a macOS app icon (white mark on a black squircle) in the nav, and as a mono glyph in the menu bar. The green Matsuura placeholder is removed.
+- **Menu bar:** dark text on the light wallpaper top. The backdrop blur was removed (a Chromium artefact painted teal).
+- **Check:** 0 fail.

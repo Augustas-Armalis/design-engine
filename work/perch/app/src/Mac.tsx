@@ -7,7 +7,7 @@ import { AnimatePresence, motion, useReducedMotion } from 'motion/react'
 import { Battery, ClipboardList, Image, Layers, Pin, Search, Share, Wifi } from 'lucide-react'
 import { siApple } from 'simple-icons'
 import Wallpaper from './Wallpaper'
-import Mark from './Mark'
+import { Star } from './Star'
 import { ease } from './motion'
 
 const W = 1152, SHELF = 664, CARD = 112, GAP = 10
@@ -36,13 +36,13 @@ function Thumb({ i }: { i: number }) {
       <span className="absolute bottom-1.5 left-1.5 flex items-center gap-1 rounded-[6px] bg-black/60 py-[3px] pl-[3px] pr-1.5 text-[9.5px] font-[500] text-white backdrop-blur"><span className="grid size-3 place-items-center rounded-[3px] bg-white text-[7px] font-[800] text-[#1d1d1f]">K</span>kestrel.app</span>
     </div>
   )
-  if (i === 2) return <div className="relative size-full bg-[#1eaf5c]"><span className="absolute bottom-1.5 left-1.5 rounded-[5px] bg-white/90 px-1.5 py-[2px] font-mono text-[9.5px] font-[500] text-[#1d1d1f]">1EAF5C</span></div>
-  if (i === 3) return <div className="size-full bg-[#2a2a2e] px-2 py-1.5"><span className="font-display block text-[18px] leading-[14px] text-[#5fd08a]">“</span><span className="block text-[10.5px] leading-[13.5px] text-white/85">Ship pricing Friday. Copy from me Wed.</span></div>
+  if (i === 2) return <div className="relative size-full bg-[#ff6a3d]"><span className="absolute bottom-1.5 left-1.5 rounded-[5px] bg-white/90 px-1.5 py-[2px] font-mono text-[9.5px] font-[500] text-[#1d1d1f]">FF6A3D</span></div>
+  if (i === 3) return <div className="size-full bg-[#2a2a2e] px-2 py-1.5"><span className="font-display block text-[18px] leading-[14px] text-[#ff8a5c]">“</span><span className="block text-[10.5px] leading-[13.5px] text-white/85">Ship pricing Friday. Copy from me Wed.</span></div>
   return ( // pdf first page
     <div className="grid size-full place-items-center bg-[#3a3a3e]">
       <span className="relative block h-[58px] w-[46px] rounded-[3px] bg-white p-[5px] shadow-[0_2px_6px_rgba(0,0,0,0.35)]">
         <span className="block h-[3px] w-6 rounded-full bg-[#1d1d1f]" /><span className="mt-[3px] block h-[2px] w-8 rounded-full bg-[#d1d1d6]" />
-        <span className="mt-[5px] flex h-[16px] items-end gap-[2px]">{[6, 10, 8, 14, 11].map((h, k) => <span key={k} className={`w-[4px] rounded-[1px] ${k === 3 ? 'bg-[#1eaf5c]' : 'bg-[#c7c7cc]'}`} style={{ height: h }} />)}</span>
+        <span className="mt-[5px] flex h-[16px] items-end gap-[2px]">{[6, 10, 8, 14, 11].map((h, k) => <span key={k} className={`w-[4px] rounded-[1px] ${k === 3 ? 'bg-[#ff6a3d]' : 'bg-[#c7c7cc]'}`} style={{ height: h }} />)}</span>
         <span className="mt-[4px] block h-[2px] w-7 rounded-full bg-[#d1d1d6]" />
       </span>
     </div>
@@ -84,14 +84,14 @@ export default function Mac({ at }: { at: number }) {
       transition={{ rotateX: { delay: at, duration: 1.5, ease: ease.reveal }, y: { delay: at, duration: 1.5, ease: ease.reveal }, opacity: { delay: at, duration: 0.6 } }}>
       {/* lid: space-black bezel, aluminium rim, one soft floor shadow */}
       <div className="relative w-[1180px] rounded-[38px] bg-[linear-gradient(180deg,#141416,#0a0a0b)] p-[14px] shadow-[0_0_0_1.5px_#c3c3c8,0_0_0_2.5px_#8e8e93,inset_0_0_0_1px_rgba(255,255,255,0.06),0_50px_100px_-40px_rgba(30,20,40,0.45)]">
-        <div className="relative h-[740px] overflow-hidden rounded-[24px] bg-[#eef0dc]">
+        <div className="relative h-[740px] overflow-hidden rounded-[24px] bg-[#ffd9bf]">
           <Wallpaper />
 
           {/* menu bar */}
-          <div className="absolute inset-x-0 top-0 flex h-[30px] items-center gap-5 bg-white/[0.28] px-4 text-[13px] font-[500] text-[#1b2116] backdrop-blur-xl">
+          <div className="absolute inset-x-0 top-0 flex h-[30px] items-center gap-5 bg-white/[0.34] px-4 text-[13px] font-[500] text-[#1d1d1f]">
             <Apple /><span className="font-[650]">Draftboard</span><span>File</span><span>Edit</span>
             <span className="ml-auto flex items-center gap-4">
-              <Mark size={13} color="#1b2116" />
+              <Star size={14} color="#1d1d1f" />
               <Wifi size={15} strokeWidth={2.2} /><Battery size={19} strokeWidth={1.8} /><span className="tnum">Tue 13 Oct  9:41</span>
             </span>
           </div>

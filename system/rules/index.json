@@ -2832,6 +2832,34 @@
   "origin": "founder"
  },
  {
+  "id": "founder.founder-taste#92",
+  "text": "[founder] A reference image sent for one thing (a logo) changes only that thing. Never restyle the palette, page ground or wallpaper from it unless asked, and never touch an approved look while applying unrelated fixes.",
+  "why": "Founder on Perch round 3, where the green palette was taken from his logo reference: \"nouuu not green bro, the other design was better and all you did now is ass\". Round 2 (Apple-light #f5f5f7 page, warm orange wallpaper) was restored, keeping only the fixes he had asked for.",
+  "applies": "every revision round.",
+  "check": "before shipping a round, diff palette tokens and the hero ground against the last version the founder liked; any change must trace to his words.",
+  "checkable": true,
+  "source": "founder, 2026-10-13, Perch round 3",
+  "file": "founder/founder-taste.md",
+  "section": "5. Exceptions & judgement calls",
+  "tags": [
+   "founder",
+   "taste",
+   "hero",
+   "nav",
+   "typography",
+   "copy",
+   "icons",
+   "logo",
+   "layout",
+   "product-card",
+   "background",
+   "buttons",
+   "quality-bar"
+  ],
+  "kind": "source",
+  "origin": "founder"
+ },
+ {
   "id": "dos-and-donts.dos-and-donts#1",
   "text": "[T13] Use as few font sizes as possible in a form; differentiate size only between sections (labels/placeholders at one small size) and actions (the button label larger). The good mock uses 12 for both label and placeholder and 32 for the button label; the bad mock mixes 16 (label), 12 (placeholder), 32 (button).",
   "why": "Every extra size is another thing to decode, so the form takes longer to process.",

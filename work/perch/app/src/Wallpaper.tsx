@@ -4,10 +4,10 @@ export default function Wallpaper() {
   return (
     <svg viewBox="0 0 1200 760" preserveAspectRatio="xMidYMid slice" className="absolute inset-0 size-full" aria-hidden>
       <defs>
-        <linearGradient id="wp-bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stopColor="#eef0dc" /><stop offset="0.35" stopColor="#9fd39a" /><stop offset="0.68" stopColor="#1f9a57" /><stop offset="1" stopColor="#0c3a26" /></linearGradient>
-        <linearGradient id="wp-r1" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stopColor="#fbfbef" /><stop offset="0.5" stopColor="#c9e6b4" /><stop offset="1" stopColor="#5cc27a" /></linearGradient>
-        <linearGradient id="wp-r2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stopColor="#3fbf6e" /><stop offset="1" stopColor="#0f5a37" /></linearGradient>
-        <linearGradient id="wp-r3" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stopColor="#0a2e1e" /><stop offset="1" stopColor="#1b8a4f" /></linearGradient>
+        <linearGradient id="wp-bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stopColor="#ffb98a" /><stop offset="0.38" stopColor="#ff6b3d" /><stop offset="0.7" stopColor="#b8326a" /><stop offset="1" stopColor="#2b1450" /></linearGradient>
+        <linearGradient id="wp-r1" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stopColor="#ffe3c9" /><stop offset="0.5" stopColor="#ffa06a" /><stop offset="1" stopColor="#ff5a36" /></linearGradient>
+        <linearGradient id="wp-r2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stopColor="#ff7d4d" /><stop offset="1" stopColor="#7a1f63" /></linearGradient>
+        <linearGradient id="wp-r3" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stopColor="#3a1663" /><stop offset="1" stopColor="#d1406e" /></linearGradient>
         <filter id="wp-b1"><feGaussianBlur stdDeviation="28" /></filter>
         <filter id="wp-b2"><feGaussianBlur stdDeviation="10" /></filter>
         <filter id="wp-n"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" /><feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.09 0" /></filter>
