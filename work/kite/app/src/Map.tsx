@@ -3,7 +3,9 @@
 // around the degraded one; a radial mask fades the edges. Nodes are crisp white cores with soft light. Origin pulls from
 // iad1 are hairline arcs with a light travelling along them; the suggested reroute sin1 -> hkg1 is the one red arc.
 // Loops: travelling lights + the degraded node's pulse.
-import { useMemo } from 'react'
+import { useEffect, useMemo, useState } from 'react'
+import { motion, useReducedMotion } from 'motion/react'
+import { ease, SIN } from './anim'
 import { geoContains, geoEqualEarth } from 'd3-geo'
 import { feature } from 'topojson-client'
 import land110 from 'world-atlas/land-110m.json'
@@ -12,7 +14,16 @@ import { regions, series, fmtK } from './data'
 const W = 712, H = 336, STEP = 4.3
 const FLOWS: [string, string][] = [['iad1', 'fra1'], ['iad1', 'sfo1'], ['iad1', 'gru1'], ['fra1', 'bom1'], ['hnd1', 'hkg1'], ['hkg1', 'syd1'], ['lhr1', 'iad1']]
 
-export default function Map({ rerouted = false }: { rerouted?: boolean }) {
+export default function Map({ rerouted = false, at = 0 }: { rerouted?: boolean; at?: number }) {
+  const still = useReducedMotion()
+  // load-in stages: routes draw once the nodes have lit, their lights start after, then sin1 flares red
+  const [stage, setStage] = useState(still ? 3 : 0)
+  useEffect(() => {
+    if (still) return
+    const ids = [[1, at + 1.55], [2, at + 2.3], [3, SIN]].map(([s, t]) => window.setTimeout(() => setStage((p) => Math.max(p, s)), t * 1000))
+    return () => ids.forEach(clearTimeout)
+  }, [at, still])
+  const scan = (x: number) => at + 0.3 + (x / W) * 1.1 // when the beam passes x
   const { dots, P } = useMemo(() => {
     const land = feature(land110 as never, (land110 as never as { objects: { land: never } }).objects.land) as never
     const proj = geoEqualEarth().fitExtent([[-14, -46], [W + 14, H + 96]], { type: 'Sphere' } as never)
@@ -40,6 +51,7 @@ export default function Map({ rerouted = false }: { rerouted?: boolean }) {
   const sMax = Math.max(...sinSeries), sMin = Math.min(...sinSeries)
   const spark = sinSeries.map((v, i) => `${i ? 'L' : 'M'}${(i / (sinSeries.length - 1)) * 190} ${30 - ((v - sMin) / (sMax - sMin)) * 26}`).join(' ')
 
+  const flare = stage >= 3 && !rerouted
   return (
     <div className="relative" style={{ width: W, height: H }}>
       <svg width={W} height={H} className="absolute inset-0" role="img" aria-label="World map of requests per second by edge region, sample data">
@@ -52,60 +64,79 @@ export default function Map({ rerouted = false }: { rerouted?: boolean }) {
           {FLOWS.map(([a, b]) => <linearGradient key={a + b} id={`g-${a}-${b}`} gradientUnits="userSpaceOnUse" x1={P[a][0]} y1={P[a][1]} x2={P[b][0]} y2={P[b][1]}><stop offset="0" stopColor="#fff" stopOpacity="0.04" /><stop offset="0.5" stopColor="#fff" stopOpacity="0.32" /><stop offset="1" stopColor="#fff" stopOpacity="0.04" /></linearGradient>)}
           <linearGradient id="g-reroute" gradientUnits="userSpaceOnUse" x1={P.sin1[0]} y1={P.sin1[1]} x2={P.hkg1[0]} y2={P.hkg1[1]}><stop offset="0" stopColor="var(--red)" /><stop offset="1" stopColor="#fff" /></linearGradient>
         </defs>
+        {/* the dot field lights up behind the scanning beam */}
         <g mask="url(#edge)">
-          {dots.map((d, i) => <circle key={i} cx={d.x} cy={d.y} r={0.95} fill={!rerouted && d.red > 0.18 ? 'var(--red)' : '#fff'} fillOpacity={!rerouted && d.red > 0.18 ? Math.min(0.75, 0.2 + d.red * 0.6) : d.a} />)}
+          {dots.map((d, i) => {
+            const red = flare && d.red > 0.18
+            return <circle key={i} cx={d.x} cy={d.y} r={0.95} className="dot" fill={red ? 'var(--red)' : '#fff'} fillOpacity={red ? Math.min(0.75, 0.2 + d.red * 0.6) : d.a}
+              style={{ animationDelay: `${scan(d.x) + (d.y / H) * 0.12}s`, transitionDelay: red ? `${Math.hypot(d.x - sx, d.y - sy) / 140}s` : '0s' }} />
+          })}
         </g>
         {FLOWS.map(([a, b], i) => { const d = arc(P[a], P[b]); return (
           <g key={a + b}>
-            <path d={d} fill="none" stroke={`url(#g-${a}-${b})`} strokeWidth="1" />
-            <circle r="1.6" fill="#fff" filter="url(#soft)" className="pulse"><animateMotion dur={`${3.2 + (i % 3) * 0.7}s`} begin={`-${0.6 + i * 0.45}s`} repeatCount="indefinite" path={d} keyPoints="0;1" keyTimes="0;1" calcMode="spline" keySplines="0.45 0 0.25 1" /></circle>
-            <circle r="0.9" fill="#fff" className="pulse"><animateMotion dur={`${3.2 + (i % 3) * 0.7}s`} begin={`-${0.6 + i * 0.45}s`} repeatCount="indefinite" path={d} keyPoints="0;1" keyTimes="0;1" calcMode="spline" keySplines="0.45 0 0.25 1" /></circle>
+            <motion.path d={d} fill="none" stroke={`url(#g-${a}-${b})`} strokeWidth="1" initial={still ? false : { pathLength: 0, opacity: 0 }} animate={stage >= 1 ? { pathLength: 1, opacity: 1 } : undefined} transition={{ duration: 0.9, delay: i * 0.06, ease: ease.inOut }} />
+            {stage >= 2 && <>
+              <circle r="1.6" fill="#fff" filter="url(#soft)" className="pulse"><animateMotion dur={`${3.2 + (i % 3) * 0.7}s`} begin={`${i * 0.25}s`} repeatCount="indefinite" path={d} keyPoints="0;1" keyTimes="0;1" calcMode="spline" keySplines="0.45 0 0.25 1" /></circle>
+              <circle r="0.9" fill="#fff" className="pulse"><animateMotion dur={`${3.2 + (i % 3) * 0.7}s`} begin={`${i * 0.25}s`} repeatCount="indefinite" path={d} keyPoints="0;1" keyTimes="0;1" calcMode="spline" keySplines="0.45 0 0.25 1" /></circle>
+            </>}
           </g>) })}
-        {!rerouted && (
-          <g>
-            <path d={reroute} fill="none" stroke="url(#g-reroute)" strokeWidth="1.25" strokeDasharray="2 3.5" strokeLinecap="round" style={{ animation: 'dash 1.2s linear infinite' }} className="pulse" />
-          </g>
+        {flare && (
+          <motion.path d={reroute} fill="none" stroke="url(#g-reroute)" strokeWidth="1.25" strokeDasharray="2 3.5" strokeLinecap="round" style={{ animation: 'dash 1.2s linear infinite' }} className="pulse"
+            initial={still ? false : { pathLength: 0, opacity: 0 }} animate={{ pathLength: 1, opacity: 1 }} transition={{ delay: 0.3, duration: 0.8, ease: ease.inOut }} />
         )}
         {regions.map((r) => {
-          const [x, y] = P[r.code], rad = 2 + Math.sqrt(r.rps / max) * 1.6, hot = r.state === 'hot' && !rerouted
+          const [x, y] = P[r.code], rad = 2 + Math.sqrt(r.rps / max) * 1.6, hot = r.state === 'hot' && flare
           return (
-            <g key={r.code}>
-              <circle cx={x} cy={y} r={rad * 7} fill={`url(#${hot ? 'glow-red' : 'glow'})`} />
+            <motion.g key={r.code} style={{ transformBox: 'fill-box', transformOrigin: 'center' }} initial={still ? false : { opacity: 0, scale: 0.2 }} animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: scan(x) + 0.05, type: 'spring', stiffness: 420, damping: 18 }}>
+              <circle cx={x} cy={y} r={rad * 7} fill="url(#glow)" style={{ opacity: hot ? 0 : 1, transition: 'opacity .6s' }} />
+              <circle cx={x} cy={y} r={rad * 7} fill="url(#glow-red)" style={{ opacity: hot ? 1 : 0, transition: 'opacity .6s' }} />
               {hot && <circle cx={x} cy={y} r={rad + 2} fill="none" stroke="var(--red)" strokeWidth="1" className="pulse" style={{ transformBox: 'fill-box', transformOrigin: 'center', animation: 'pulse-ring 1.8s cubic-bezier(.22,1,.36,1) infinite' }} />}
-              <circle cx={x} cy={y} r={rad + 2.2} fill="#0a0a0b" fillOpacity="0.85" stroke={hot ? 'var(--red)' : '#fff'} strokeOpacity={hot ? 0.9 : 0.28} strokeWidth="1" />
-              <circle cx={x} cy={y} r={rad} fill={hot ? 'var(--red)' : '#fff'} />
-            </g>
+              <circle cx={x} cy={y} r={rad + 2.2} fill="#0a0a0b" fillOpacity="0.85" stroke={hot ? 'var(--red)' : '#fff'} strokeOpacity={hot ? 0.9 : 0.28} strokeWidth="1" style={{ transition: 'stroke .5s, stroke-opacity .5s' }} />
+              <circle cx={x} cy={y} r={rad} fill={hot ? 'var(--red)' : '#fff'} style={{ transition: 'fill .5s' }} />
+            </motion.g>
           )
         })}
       </svg>
-      {/* chip labels */}
+      {/* the scanning beam: a soft light bar with a bright core, crossing once */}
+      {!still && (
+        <motion.div aria-hidden className="pointer-events-none absolute inset-y-0 w-[120px]" initial={{ x: -140, opacity: 0 }} animate={{ x: [-140, W + 20], opacity: [0, 1, 1, 0] }}
+          transition={{ delay: at + 0.3, duration: 1.15, ease: ease.inOut, opacity: { delay: at + 0.3, duration: 1.15, times: [0, 0.1, 0.85, 1] } }}
+          style={{ background: 'linear-gradient(90deg, transparent, rgb(255 255 255 / 0.05) 70%, rgb(255 255 255 / 0.12) 96%, transparent)', maskImage: 'linear-gradient(180deg, transparent, #000 15%, #000 85%, transparent)' }}>
+          <span className="absolute inset-y-[10%] right-[4px] w-px bg-[linear-gradient(180deg,transparent,rgb(255_255_255/0.7),transparent)]" />
+        </motion.div>
+      )}
+      {/* chip labels arrive just after their node */}
       {regions.map((r) => {
-        const [x, y] = P[r.code], left = ['sfo1', 'lhr1', 'gru1', 'bom1'].includes(r.code), hot = r.state === 'hot' && !rerouted
+        const [x, y] = P[r.code], left = ['sfo1', 'lhr1', 'gru1', 'bom1'].includes(r.code), hot = r.state === 'hot' && flare
         return (
-          <span key={r.code} className={`pointer-events-none absolute flex h-[19px] -translate-y-1/2 items-center gap-1 rounded-full px-1.5 shadow-[0_0_0_1px_rgb(255_255_255/0.08),0_4px_10px_-2px_rgb(0_0_0/0.6)] backdrop-blur-sm ${hot ? 'bg-[rgb(60_22_20/0.85)]' : 'bg-[rgb(22_22_24/0.85)]'}`}
+          <motion.span key={r.code} initial={still ? false : { opacity: 0, x: left ? 6 : -6, filter: 'blur(4px)' }} animate={{ opacity: 1, x: 0, filter: 'blur(0px)' }} transition={{ delay: scan(x) + 0.16, duration: 0.5, ease: ease.out }}
+            className={`pointer-events-none absolute flex h-[19px] -translate-y-1/2 items-center gap-1 rounded-full px-1.5 shadow-[0_0_0_1px_rgb(255_255_255/0.08),0_4px_10px_-2px_rgb(0_0_0/0.6)] backdrop-blur-sm transition-colors duration-500 ${hot ? 'bg-[rgb(60_22_20/0.85)]' : 'bg-[rgb(22_22_24/0.85)]'}`}
             style={{ top: y, ...(left ? { right: W - x + 11 } : { left: x + 11 }) }}>
-            <span className={`mono text-[10.5px] ${hot ? 'text-[var(--red)]' : 'text-[var(--ink)]'}`}>{r.code}</span>
+            <span className={`mono text-[10.5px] transition-colors duration-500 ${hot ? 'text-[var(--red)]' : 'text-[var(--ink)]'}`}>{r.code}</span>
             <span className="tnum text-[10.5px] text-[var(--soft)]">{fmtK(r.rps)}</span>
-          </span>
+          </motion.span>
         )
       })}
-      {/* tactile read-out on the region that needs attention */}
-      {!rerouted && (
-        <div className="absolute w-[236px] rounded-[14px] p-1 shadow-[var(--pop)]" style={{ left: sx - 262, top: sy - 28, background: 'linear-gradient(180deg,#1d1d1f,#161618)' }}>
+      {/* tactile read-out springs in once sin1 flares; its sparkline draws */}
+      {flare && (
+        <motion.div className="absolute w-[236px] rounded-[14px] p-1 shadow-[var(--pop)]" style={{ left: sx - 262, top: sy - 28, background: 'linear-gradient(180deg,#1d1d1f,#161618)', transformOrigin: '100% 20%' }}
+          initial={still ? false : { opacity: 0, scale: 0.92, x: 14, filter: 'blur(6px)' }} animate={{ opacity: 1, scale: 1, x: 0, filter: 'blur(0px)' }} transition={{ delay: 0.45, type: 'spring', stiffness: 260, damping: 24, opacity: { delay: 0.45, duration: 0.3 } }}>
           <div className="flex items-center gap-2 px-2.5 pb-1 pt-2">
             <span className="relative grid size-2 place-items-center"><span className="absolute size-2 rounded-full bg-[var(--red)] opacity-40" /><span className="size-1.5 rounded-full bg-[var(--red)]" /></span>
             <span className="text-[13px] font-[600]">Singapore</span><span className="mono ml-auto text-[var(--soft)]">sin1 · p95</span>
           </div>
           <svg width="208" height="36" className="mx-2.5 my-1 block overflow-visible" aria-hidden>
             <defs><linearGradient id="sp" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stopColor="var(--red)" stopOpacity="0.28" /><stop offset="1" stopColor="var(--red)" stopOpacity="0" /></linearGradient></defs>
-            <path d={`${spark} L190 34 L0 34 Z`} fill="url(#sp)" /><path d={spark} fill="none" stroke="var(--red)" strokeWidth="1.5" strokeLinejoin="round" />
+            <motion.path d={`${spark} L190 34 L0 34 Z`} fill="url(#sp)" initial={still ? false : { opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.3, duration: 0.5 }} />
+            <motion.path d={spark} fill="none" stroke="var(--red)" strokeWidth="1.5" strokeLinejoin="round" initial={still ? false : { pathLength: 0 }} animate={{ pathLength: 1 }} transition={{ delay: 0.6, duration: 0.9, ease: ease.inOut }} />
           </svg>
           <div className="grid grid-cols-3 gap-px overflow-hidden rounded-[10px] bg-[rgb(255_255_255/0.06)]">
             {[['p95', '124', 'ms', true], ['req/s', fmtK(157800), '', false], ['5xx', '0.36', '%', true]].map(([k, v, u, bad]) => (
               <div key={k as string} className="bg-[#18181a] px-2.5 py-2"><div className="text-[11px] text-[var(--soft)]">{k}</div><div className={`tnum text-[15px] font-[600] ${bad ? 'text-[var(--red)]' : ''}`}>{v}<span className="text-[11px] font-[500] text-[var(--soft)]">{u}</span></div></div>
             ))}
           </div>
-        </div>
+        </motion.div>
       )}
     </div>
   )

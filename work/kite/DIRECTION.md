@@ -29,3 +29,12 @@ Operate (app UI), dark. Signature visual: a live dot-matrix world map with regio
 - **KPIs:** Rico-style mini bars (16 bars, the latest four lit, anomalies in red).
 - **Latency:** the p95 line has a glow, and its stroke gradient turns red through the incident window.
 - **Check:** 0 fail.
+
+## Load-in (founder: "make insanely cool load-in animations, fully animated and working")
+One timeline, T in `src/anim.tsx`, on Kaching easing:
+- **0.05-0.6s:** the sidebar slides in and its items stagger; the top bar drops; the title row blurs in.
+- **0.36s:** the KPI card rises; the numbers count up from 0, keeping their decimals; the mini bars spring up one by one.
+- **0.52s:** the map card rises. A light beam sweeps west to east and lights the dot field behind it; nodes spring in as it passes; chips slide in. At about 2.1s the routes draw themselves, then their travelling lights start.
+- **About 2.6s:** sin1 flares. Its node and heat dots turn red outward from Singapore, the pulse starts, the reroute arc draws, the regions alert drops in (the rows reflow), and the read-out springs up with its sparkline drawing.
+- **Latency:** the p50 and p95 lines draw left to right; the incident band, deploy ticks and time labels appear as the line reaches them.
+- **Verification:** checked frame by frame with Reel (virtual clock) in `loadin/strip.png`. Reduced motion shows the final state.

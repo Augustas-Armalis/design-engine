@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "kite",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["--prefix", "work/kite/app", "run", "dev", "--", "--port", "4361", "--strictPort"],
+      "port": 4361
+    }
+  ]
+}
