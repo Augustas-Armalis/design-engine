@@ -31,8 +31,10 @@ export default function HeroMap() {
   // clear the reading zone (headline + subtitle + CTAs) and fade before the product
   const mask = 'radial-gradient(40% 44% at 50% 49%, transparent 64%, #000 100%), linear-gradient(180deg, #000 78%, transparent 100%)'
   return (
-    <motion.div aria-hidden className="pointer-events-none absolute left-[120px] top-[73px] z-0" style={{ width: W, height: H, maskImage: mask, WebkitMaskImage: mask, maskComposite: 'intersect', WebkitMaskComposite: 'source-in' }}
+    <motion.div aria-hidden className="pointer-events-none absolute left-[120px] top-[73px] z-0" style={{ width: W, height: H }}
       initial={still ? false : { opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.2, duration: 1.6 }}>
+      {/* the faded map layer; labels live outside it so their backdrop blur can read the map */}
+      <div className="absolute inset-0" style={{ maskImage: mask, WebkitMaskImage: mask, maskComposite: 'intersect', WebkitMaskComposite: 'source-in' }}>
       <svg width={W} height={H} className="absolute inset-0">
         <defs>
           <radialGradient id="hm-glow"><stop offset="0" stopColor="#fff" stopOpacity="0.32" /><stop offset="0.45" stopColor="#fff" stopOpacity="0.08" /><stop offset="1" stopColor="#fff" stopOpacity="0" /></radialGradient>
@@ -47,6 +49,7 @@ export default function HeroMap() {
           <g key={r.code}><circle cx={x} cy={y} r={16} fill="url(#hm-glow)" /><circle cx={x} cy={y} r={4.6} fill="#0a0a0b" stroke="#fff" strokeOpacity="0.28" /><circle cx={x} cy={y} r={2.4} fill="#fff" /></g>
         ) })}
       </svg>
+      </div>
       {LABEL.map((c) => {
         const [x, y] = P[c], r = regions.find((q) => q.code === c)!
         // keep labels out of the reading zone (headline, subtitle, CTAs) and inside the rails
@@ -54,8 +57,8 @@ export default function HeroMap() {
         if (y > 400) return null
         const left = x > W / 2
         return (
-          <span key={c} className="absolute flex h-[24px] -translate-y-1/2 items-center gap-1.5 rounded-full px-2.5 backdrop-blur-md"
-            style={{ top: y, ...(left ? { right: W - x + 12 } : { left: x + 12 }), background: 'rgb(28 28 31 / 0.55)', boxShadow: '0 0 0 1px rgb(255 255 255 / 0.09), inset 0 1px 0 rgb(255 255 255 / 0.08), 0 6px 16px -6px rgb(0 0 0 / 0.7)' }}>
+          <span key={c} className="absolute flex h-[24px] -translate-y-1/2 items-center gap-1.5 rounded-full px-2.5 backdrop-blur-[6px]"
+            style={{ top: y, ...(left ? { right: W - x + 12 } : { left: x + 12 }), background: 'rgb(24 24 27 / 0.5)', boxShadow: '0 0 0 1px rgb(255 255 255 / 0.09), 0 6px 16px -6px rgb(0 0 0 / 0.7)' }}>
             <span className="font-mono text-[11px] text-[#ededed]">{c}</span>
             <span className="h-2.5 w-px bg-[rgb(255_255_255/0.14)]" />
             <span className="text-[11px] tabular-nums text-[#8b8b90]">{r.p95 > 100 ? 38 : r.p95} ms</span>

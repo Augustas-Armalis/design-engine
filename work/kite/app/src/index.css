@@ -21,13 +21,13 @@
   --accent: #ededed; --accent-ink: #0a0a0b; --accent-soft: rgb(255 255 255 / 0.07);
   --red: #ff6b5e; --red-soft: rgb(255 107 94 / 0.1);
   --hover: rgb(255 255 255 / 0.035); --select: rgb(255 255 255 / 0.06);
-  --card: 0 0 0 1px var(--line), inset 0 1px 0 rgb(255 255 255 / 0.045), 0 1px 2px rgb(0 0 0 / 0.4), 0 12px 32px -16px rgb(0 0 0 / 0.6);
-  --control: 0 0 0 1px rgb(0 0 0 / 0.6), inset 0 1px 0 rgb(255 255 255 / 0.07), inset 0 0 0 1px rgb(255 255 255 / 0.04);
-  --pop: 0 0 0 1px rgb(255 255 255 / 0.1), inset 0 1px 0 rgb(255 255 255 / 0.07), 0 24px 48px -12px rgb(0 0 0 / 0.8);
+  --card: 0 0 0 1px var(--line), 0 1px 2px rgb(0 0 0 / 0.4), 0 12px 32px -16px rgb(0 0 0 / 0.6);
+  --control: 0 0 0 1px rgb(255 255 255 / 0.09), 0 1px 2px rgb(0 0 0 / 0.4);
+  --pop: 0 0 0 1px rgb(255 255 255 / 0.1), 0 24px 48px -12px rgb(0 0 0 / 0.8);
   --tactile: linear-gradient(180deg, #1f1f21 0%, #171719 100%);
 }
 .card-surface { background: linear-gradient(180deg, #141415 0%, #111112 100%); }
-.tile { background: var(--tactile); box-shadow: 0 0 0 1px rgb(0 0 0 / 0.7), inset 0 1px 0 rgb(255 255 255 / 0.09), inset 0 0 0 1px rgb(255 255 255 / 0.03), 0 2px 4px rgb(0 0 0 / 0.35); }
+.tile { background: var(--tactile); box-shadow: 0 0 0 1px rgb(255 255 255 / 0.09), 0 1px 2px rgb(0 0 0 / 0.4); }
 .btn-tactile { background: var(--tactile); box-shadow: var(--control); }
 .btn-tactile:hover { background: linear-gradient(180deg, #252527 0%, #1b1b1d 100%); }
 html, body { background: var(--canvas); }

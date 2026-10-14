@@ -133,7 +133,7 @@ export default function App({ embedded = false }: { embedded?: boolean }) {
                 <Head icon={Globe} title="Regions" meta={<span className="tnum text-[13px] text-[var(--soft)]">10</span>} right={<a href="#" className="st flex h-7 items-center gap-1 rounded-[8px] px-2 text-[12px] font-[550] text-[var(--sub)] hover:bg-[var(--hover)]">All<ArrowUpRight size={12} /></a>} />
                 <AnimatePresence initial={false} mode="popLayout">
                 {!flared ? null : hot.length > 0 ? (
-                  <motion.div key="alert" initial={{ opacity: 0, height: 0, scale: 0.97 }} animate={{ opacity: 1, height: 'auto', scale: 1 }} exit={{ opacity: 0, height: 0 }} transition={{ duration: 0.7, ease: ease.out }} className="overflow-hidden"><div className="mx-3 mb-2 mt-3 rounded-[12px] bg-[linear-gradient(180deg,rgb(255_107_94/0.12),rgb(255_107_94/0.06))] p-3 shadow-[inset_0_0_0_1px_rgb(255_107_94/0.2),inset_0_1px_0_rgb(255_255_255/0.04)]">
+                  <motion.div key="alert" initial={{ opacity: 0, height: 0, scale: 0.97 }} animate={{ opacity: 1, height: 'auto', scale: 1 }} exit={{ opacity: 0, height: 0 }} transition={{ duration: 0.7, ease: ease.out }} className="overflow-hidden"><div className="mx-3 mb-2 mt-3 rounded-[12px] bg-[linear-gradient(180deg,rgb(255_107_94/0.12),rgb(255_107_94/0.06))] p-3 shadow-[inset_0_0_0_1px_rgb(255_107_94/0.2)]">
                     <div className="text-[13px] font-[600]">sin1 p95 is 3.3x its baseline</div>
                     <div className="mt-0.5 text-[12px] leading-[17px] text-[var(--sub)]">Since deploy #4127 at 13:52. hkg1 has 41% headroom at 36 ms.</div>
                     <div className="mt-2.5 flex gap-2">

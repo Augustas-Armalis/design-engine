@@ -3364,6 +3364,34 @@
   "origin": "founder"
  },
  {
+  "id": "founder.founder-taste#111",
+  "text": "[founder] Never stack a 1px outer ring and a 1px inset top highlight (or an inner ring) on the same dark box: at 1-2x they read as a double top border with a dark gap. Dark surfaces get ONE light ring (white 7-10%) plus soft drop shadows; tactile depth comes from the fill gradient, not extra edge lines (BN-04 enforced). Backdrop blur only works if the blurred element is not inside a masked/filtered layer: put glass chips on their own layer above the masked art.",
+  "why": "Founder on Kite's map chips (crop): \"no bg blur on them, plus wtf is with double top border and gap between it... saw it on dashboard too\".",
+  "applies": "every dark component.",
+  "check": "no box-shadow list on one element contains both `0 0 0 1px` and `inset 0 1px 0`; glass chips' parent has no mask-image/filter.",
+  "checkable": true,
+  "source": "founder, 2026-10-14, Kite",
+  "file": "founder/founder-taste.md",
+  "section": "5. Exceptions & judgement calls",
+  "tags": [
+   "founder",
+   "taste",
+   "hero",
+   "nav",
+   "typography",
+   "copy",
+   "icons",
+   "logo",
+   "layout",
+   "product-card",
+   "background",
+   "buttons",
+   "quality-bar"
+  ],
+  "kind": "source",
+  "origin": "founder"
+ },
+ {
   "id": "dos-and-donts.dos-and-donts#1",
   "text": "[T13] Use as few font sizes as possible in a form; differentiate size only between sections (labels/placeholders at one small size) and actions (the button label larger). The good mock uses 12 for both label and placeholder and 32 for the button label; the bad mock mixes 16 (label), 12 (placeholder), 32 (button).",
   "why": "Every extra size is another thing to decode, so the form takes longer to process.",
