@@ -3253,7 +3253,7 @@
  },
  {
   "id": "founder.founder-taste#107",
-  "text": "[founder] A hero background can borrow the product's own design elements (Kite: the dashboard's dot-matrix map, white nodes with soft light, chip labels, hairline routes), kept faint, between the rails, cleared behind the copy by a mask and fading before the product; labels never touch the headline, subtitle or CTAs. The subtitle is two hand-set balanced lines (~600px measure), never one 1000px line.",
+  "text": "[founder] A hero background can borrow the product's own design elements (Kite: the dashboard's dot-matrix map, white nodes with soft light, chip labels, hairline routes), clearly visible (dots up to ~50% white, not a whisper: founder rejected a 40% calmer pass as \"too minimal and stupid\"), set low so it wraps around the copy, between the rails, cleared behind the copy by a mask and fading before the product; labels never touch the headline, subtitle or CTAs. The subtitle is two hand-set balanced lines (~600px measure), never one 1000px line.",
   "why": "Founder on the Kite hero: \"the subtitle now wtf\" (one long line) and \"the background yes better, just maybe we could use some design elements as the dashboard did?\".",
   "applies": "product heroes.",
   "check": "subtitle width <= ~620px and 2 lines; no background label within 24px of a text box.",

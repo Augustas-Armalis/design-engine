@@ -14,7 +14,7 @@ const LABEL = ['sfo1', 'fra1', 'hnd1', 'syd1']
 export default function HeroMap() {
   const still = useReducedMotion()
   const { dots, P } = useMemo(() => {
-    const proj = geoEqualEarth().fitExtent([[-60, 30], [W - 60, H + 140]], { type: 'Sphere' } as never)
+    const proj = geoEqualEarth().fitExtent([[-40, 90], [W - 40, H + 210]], { type: 'Sphere' } as never)
     const isLand = landMask(proj, W, H)
     const P = Object.fromEntries(regions.map((r) => [r.code, proj([r.lon, r.lat])!])) as Record<string, [number, number]>
     const max = Math.max(...regions.map((r) => r.rps))
@@ -23,25 +23,25 @@ export default function HeroMap() {
       const ll = proj.invert!([x, y]); if (!ll || ll[1] < -56 || !isLand(x, y)) continue
       let heat = 0
       for (const r of regions) { const [rx, ry] = P[r.code]; heat += (0.35 + 0.65 * r.rps / max) * Math.exp(-((x - rx) ** 2 + (y - ry) ** 2) / (2 * 40 ** 2)) }
-      dots.push({ x, y, a: Math.min(0.26, 0.05 + heat * 0.18) })
+      dots.push({ x, y, a: Math.min(0.5, 0.1 + heat * 0.34) })
     }
     return { dots, P }
   }, [])
   const arc = (a: [number, number], b: [number, number]) => { const mx = (a[0] + b[0]) / 2, my = (a[1] + b[1]) / 2, len = Math.hypot(b[0] - a[0], b[1] - a[1]); return `M${a[0]} ${a[1]} Q${mx} ${my - len * 0.25} ${b[0]} ${b[1]}` }
   // clear the reading zone (headline + subtitle + CTAs) and fade before the product
-  const mask = 'radial-gradient(40% 52% at 50% 46%, transparent 55%, #000 100%), linear-gradient(180deg, #000 70%, transparent 100%)'
+  const mask = 'radial-gradient(34% 40% at 50% 49%, transparent 62%, #000 100%), linear-gradient(180deg, #000 78%, transparent 100%)'
   return (
     <motion.div aria-hidden className="pointer-events-none absolute left-[120px] top-[73px] z-0" style={{ width: W, height: H, maskImage: mask, WebkitMaskImage: mask, maskComposite: 'intersect', WebkitMaskComposite: 'source-in' }}
-      initial={still ? false : { opacity: 0 }} animate={{ opacity: 0.75 }} transition={{ delay: 0.2, duration: 1.6 }}>
+      initial={still ? false : { opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.2, duration: 1.6 }}>
       <svg width={W} height={H} className="absolute inset-0">
         <defs>
-          <radialGradient id="hm-glow"><stop offset="0" stopColor="#fff" stopOpacity="0.18" /><stop offset="0.45" stopColor="#fff" stopOpacity="0.04" /><stop offset="1" stopColor="#fff" stopOpacity="0" /></radialGradient>
-          {ROUTES.map(([a, b]) => <linearGradient key={a + b} id={`hm-${a}${b}`} gradientUnits="userSpaceOnUse" x1={P[a][0]} y1={P[a][1]} x2={P[b][0]} y2={P[b][1]}><stop offset="0" stopColor="#fff" stopOpacity="0.03" /><stop offset="0.5" stopColor="#fff" stopOpacity="0.16" /><stop offset="1" stopColor="#fff" stopOpacity="0.03" /></linearGradient>)}
+          <radialGradient id="hm-glow"><stop offset="0" stopColor="#fff" stopOpacity="0.32" /><stop offset="0.45" stopColor="#fff" stopOpacity="0.08" /><stop offset="1" stopColor="#fff" stopOpacity="0" /></radialGradient>
+          {ROUTES.map(([a, b]) => <linearGradient key={a + b} id={`hm-${a}${b}`} gradientUnits="userSpaceOnUse" x1={P[a][0]} y1={P[a][1]} x2={P[b][0]} y2={P[b][1]}><stop offset="0" stopColor="#fff" stopOpacity="0.03" /><stop offset="0.5" stopColor="#fff" stopOpacity="0.3" /><stop offset="1" stopColor="#fff" stopOpacity="0.03" /></linearGradient>)}
         </defs>
         {dots.map((d, i) => <circle key={i} cx={d.x} cy={d.y} r={0.95} fill="#fff" fillOpacity={d.a} />)}
         {ROUTES.map(([a, b]) => <path key={a + b} d={arc(P[a], P[b])} fill="none" stroke={`url(#hm-${a}${b})`} strokeWidth="1" />)}
         {regions.map((r) => { const [x, y] = P[r.code]; return (
-          <g key={r.code}><circle cx={x} cy={y} r={16} fill="url(#hm-glow)" /><circle cx={x} cy={y} r={4.6} fill="#0a0a0b" stroke="#fff" strokeOpacity="0.28" /><circle cx={x} cy={y} r={2.2} fill="#fff" fillOpacity="0.7" /></g>
+          <g key={r.code}><circle cx={x} cy={y} r={16} fill="url(#hm-glow)" /><circle cx={x} cy={y} r={4.6} fill="#0a0a0b" stroke="#fff" strokeOpacity="0.28" /><circle cx={x} cy={y} r={2.4} fill="#fff" /></g>
         ) })}
       </svg>
       {LABEL.map((c) => { const [x, y] = P[c], r = regions.find((q) => q.code === c)!, left = ['sfo1', 'gru1'].includes(c); return (
