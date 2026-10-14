@@ -2860,6 +2860,34 @@
   "origin": "founder"
  },
  {
+  "id": "founder.founder-taste#93",
+  "text": "[founder] Premium dark dashboards are neutral, not blue: graphite surfaces (no blue-tinted canvas or periwinkle everywhere); colour is reserved for state, and the polish comes from material (tactile surfaces, inner highlights, soft glows on data) rather than hue. Maps and signature visuals get the same finish as the product: fine dense dots with edge fade, crisp nodes with soft light, chip labels, an animated flow, never a sparse grid of flat dots.",
+  "why": "Founder on Kite v1 (blue-black recipe, periwinkle accent, 6px flat dot map): \"not bad, just the map is not polished, plus don't do it so blue please, do the map better and effects better, everything more polished and premium, Marcel / Rico style\".",
+  "applies": "dark product UI and dashboards.",
+  "check": "canvas and surfaces chroma < 0.01; accent pixels <= 2% of the fold; map dot pitch <= 5px with a radial edge fade.",
+  "checkable": true,
+  "source": "founder, 2026-10-14, Kite",
+  "file": "founder/founder-taste.md",
+  "section": "5. Exceptions & judgement calls",
+  "tags": [
+   "founder",
+   "taste",
+   "hero",
+   "nav",
+   "typography",
+   "copy",
+   "icons",
+   "logo",
+   "layout",
+   "product-card",
+   "background",
+   "buttons",
+   "quality-bar"
+  ],
+  "kind": "source",
+  "origin": "founder"
+ },
+ {
   "id": "dos-and-donts.dos-and-donts#1",
   "text": "[T13] Use as few font sizes as possible in a form; differentiate size only between sections (labels/placeholders at one small size) and actions (the button label larger). The good mock uses 12 for both label and placeholder and 32 for the button label; the bad mock mixes 16 (label), 12 (placeholder), 32 (button).",
   "why": "Every extra size is another thing to decode, so the form takes longer to process.",

@@ -21,3 +21,11 @@ Operate (app UI), dark. Signature visual: a live dot-matrix world map with regio
 - Two hue families only: periwinkle accent (live, healthy, primary data) and red (errors, the elevated region). No green, amber or violet.
 - One surface step: cards on the canvas; the sidebar is the canvas with a hairline.
 - Rings only on cards and controls; rows separate by hairlines.
+
+## v2 (founder: "map not polished, don't do it so blue, effects better, Marcel / Rico style")
+- **Palette:** graphite neutral (#0a0a0b canvas, #121213 to #141415 card gradient). White carries the data, and red is the only hue (the incident).
+- **Material:** tactile cards: 1px ring, inner top light and a deep soft drop (Marcel tactile dark). Each card has a header band with a raised icon tile and a hairline. Controls are tactile gradients, the segmented control is recessed, and the primary action is a white bevelled pill.
+- **Map:** a 4.3px dot field with an Equal Earth projection, heat-shaded by region traffic and warming to red around sin1, with a radial edge fade. Nodes are white cores with soft light; labels are chips showing req/s. Origin-pull arcs carry travelling lights, the reroute arc runs red to white, and the read-out is tactile with sin1's own p95 sparkline.
+- **KPIs:** Rico-style mini bars (16 bars, the latest four lit, anomalies in red).
+- **Latency:** the p95 line has a glow, and its stroke gradient turns red through the incident window.
+- **Check:** 0 fail.

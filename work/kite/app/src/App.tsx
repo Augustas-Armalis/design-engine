@@ -2,7 +2,7 @@
 // regions (problem first, with its fix), latency with deploy markers, recent deployments.
 import { useState } from 'react'
 import { motion, MotionConfig } from 'motion/react'
-import { Activity, ArrowUpRight, Bell, ChevronDown, ChevronsUpDown, Globe, LayoutGrid, Logs, Rocket, Search, Shield, SlidersHorizontal, Waypoints } from 'lucide-react'
+import { Activity, AlertTriangle, ArrowUpRight, Bell, ChevronDown, ChevronsUpDown, Database, Gauge, Globe, LayoutGrid, Logs, Map as MapIcon, Rocket, Search, Server, Shield, SlidersHorizontal, Timer, Waypoints } from 'lucide-react'
 import Map from './Map'
 import Chart from './Chart'
 import { deployments, kpis, regions, totalRps, fmtK } from './data'
@@ -13,26 +13,40 @@ const cx = (...c: (string | false | undefined)[]) => c.filter(Boolean).join(' ')
 
 function Card({ className, children, i = 0 }: { className?: string; children: React.ReactNode; i?: number }) {
   return <motion.section initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.08 + i * 0.06, duration: 0.6, ease }}
-    className={cx('rounded-[14px] bg-[var(--s1)] shadow-[var(--card)]', className)}>{children}</motion.section>
+    className={cx('card-surface rounded-[16px] shadow-[var(--card)]', className)}>{children}</motion.section>
 }
-function Head({ title, meta, right }: { title: string; meta?: React.ReactNode; right?: React.ReactNode }) {
-  return <div className="flex h-12 items-center gap-2.5 px-4"><h2 className="text-[14px] font-[600]">{title}</h2>{meta}<div className="ml-auto flex items-center gap-2">{right}</div></div>
+function Head({ title, meta, right, icon: Ic }: { title: string; meta?: React.ReactNode; right?: React.ReactNode; icon: typeof Activity }) {
+  return (
+    <div className="flex h-[54px] items-center gap-3 px-4 shadow-[inset_0_-1px_0_var(--div)]">
+      <span className="tile grid size-7 shrink-0 place-items-center rounded-[8px] text-[var(--sub)]"><Ic size={14} strokeWidth={1.9} /></span>
+      <h2 className="text-[14px] font-[600]">{title}</h2>{meta}<div className="ml-auto flex items-center gap-2">{right}</div>
+    </div>
+  )
 }
-function Spark({ s, bad }: { s: number[]; bad?: boolean }) {
-  const lo = Math.min(...s), hi = Math.max(...s), w = 76, h = 26
-  const d = s.map((v, i) => `${i ? 'L' : 'M'}${((i / (s.length - 1)) * w).toFixed(1)} ${(h - 2 - ((v - lo) / (hi - lo || 1)) * (h - 4)).toFixed(1)}`).join(' ')
-  return <svg width={w} height={h} aria-hidden><path d={d} fill="none" stroke={bad ? 'var(--red)' : 'var(--accent)'} strokeOpacity={bad ? 0.9 : 1} strokeWidth="1.5" strokeLinejoin="round" /></svg>
+/* Rico-style mini bars: 16 quiet bars, the latest four lit; on a bad KPI the anomalous bars light red */
+function Bars({ s, bad }: { s: number[]; bad?: boolean }) {
+  const v = s.slice(-16), lo = Math.min(...v), hi = Math.max(...v)
+  const med = [...v].sort((p, q) => p - q)[8]
+  return (
+    <div className="flex h-[30px] items-end gap-[3px]" aria-hidden>
+      {v.map((x, i) => {
+        const anomaly = bad && Math.abs(x - med) > 0.45 * (hi - lo)
+        return <span key={i} className="w-[4px] rounded-[1.5px]" style={{ height: 5 + ((x - lo) / (hi - lo || 1)) * 25, background: anomaly ? 'var(--red)' : i >= 12 ? 'rgb(255 255 255 / 0.62)' : 'rgb(255 255 255 / 0.14)' }} />
+      })}
+    </div>
+  )
 }
+
 function Avatar({ t }: { t: string }) {
   return <span className="grid size-5 shrink-0 place-items-center rounded-full bg-[var(--s3)] text-[10px] font-[650] text-[var(--sub)] shadow-[inset_0_0_0_1px_var(--line)]">{t}</span>
 }
 
-function Sidebar() {
+function Sidebar({ rerouted }: { rerouted: boolean }) {
   const nav = [['Overview', LayoutGrid, true], ['Deployments', Rocket], ['Analytics', Activity], ['Logs', Logs], ['Edge config', SlidersHorizontal], ['Firewall', Shield], ['Domains', Globe], ['Routing', Waypoints]] as const
   return (
     <aside className="flex w-[232px] shrink-0 flex-col px-3 pb-3 pt-3 shadow-[inset_-1px_0_0_var(--div)]">
       <button className="st flex h-11 items-center gap-2.5 rounded-[10px] px-2 text-left hover:bg-[var(--hover)]">
-        <span className="grid size-7 place-items-center rounded-[8px] bg-[linear-gradient(160deg,#c9d0ff,#7c8cff)] text-[12px] font-[750] text-[#0b0e1c] shadow-[inset_0_1px_0_rgba(255,255,255,0.5)]">S</span>
+        <span className="tile grid size-7 place-items-center rounded-[8px] text-[12px] font-[750] text-[var(--ink)]">S</span>
         <span className="min-w-0 flex-1 leading-[16px]"><span className="block text-[14px] font-[600]">Storefront</span><span className="block text-[12px] text-[var(--soft)]">Pro · sample team</span></span>
         <ChevronsUpDown size={14} className="text-[var(--faint)]" />
       </button>
@@ -47,14 +61,14 @@ function Sidebar() {
       <div className="mt-1.5 flex flex-col gap-0.5">
         {[['storefront-prod', true, true], ['storefront-staging', false], ['checkout-api', false], ['marketing-site', false]].map(([n, on, hot]) => (
           <a key={n as string} href="#" className={cx('st flex h-8 items-center gap-2.5 rounded-[9px] px-2 text-[14px] font-[500]', on ? 'text-[var(--ink)]' : 'text-[var(--sub)] hover:bg-[var(--hover)]')}>
-            <span className={cx('size-1.5 rounded-full', hot ? 'bg-[var(--red)]' : 'bg-[var(--accent)] opacity-70')} /><span className="truncate">{n as string}</span>
+            <span className={cx('size-1.5 rounded-full', hot && !rerouted ? 'bg-[var(--red)]' : 'bg-[var(--sub)] opacity-60')} /><span className="truncate">{n as string}</span>
           </a>
         ))}
       </div>
-      <div className="mt-auto rounded-[12px] bg-[var(--s1)] p-3 shadow-[var(--card)]">
+      <div className="card-surface mt-auto rounded-[12px] p-3 shadow-[var(--card)]">
         <div className="flex items-baseline justify-between text-[12px]"><span className="text-[var(--sub)]">Edge requests</span><span className="tnum text-[var(--soft)]">Oct</span></div>
         <div className="tnum mt-1 text-[14px] font-[600]">31.2B <span className="font-[450] text-[var(--soft)]">/ 50B</span></div>
-        <div className="mt-2.5 h-1 overflow-hidden rounded-full bg-[var(--s3)]"><div className="h-full w-[62%] rounded-full bg-[var(--accent)]" /></div>
+        <div className="mt-2.5 h-1 overflow-hidden rounded-full bg-[var(--s3)]"><div className="h-full w-[62%] rounded-full bg-[linear-gradient(90deg,rgb(255_255_255/0.35),#fff)]" /></div>
       </div>
     </aside>
   )
@@ -66,12 +80,12 @@ export default function App() {
   return (
     <MotionConfig reducedMotion="user">
       <div className="flex h-[900px] w-[1440px] overflow-hidden bg-[var(--canvas)]">
-        <Sidebar />
+        <Sidebar rerouted={rerouted} />
         <div className="flex min-w-0 flex-1 flex-col">
           <header className="flex h-[52px] shrink-0 items-center gap-3 px-6 shadow-[inset_0_-1px_0_var(--div)]">
             <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-[14px] font-[500]"><span className="text-[var(--soft)]">Storefront</span><span aria-hidden className="text-[var(--soft)]">/</span><span className="text-[var(--soft)]">storefront-prod</span><span aria-hidden className="text-[var(--soft)]">/</span><span aria-current="page">Overview</span></nav>
             <div className="ml-auto flex items-center gap-2">
-              <button className="st flex h-8 w-[220px] items-center gap-2 rounded-[9px] px-2.5 text-[13px] text-[var(--soft)] shadow-[var(--control)] hover:bg-[var(--hover)]"><Search size={14} />Search<kbd className="mono ml-auto rounded-[5px] px-1.5 text-[11px] text-[var(--soft)] shadow-[inset_0_0_0_1px_var(--line-2)]">⌘K</kbd></button>
+              <button className="st btn-tactile flex h-8 w-[220px] items-center gap-2 rounded-[10px] px-2.5 text-[13px] text-[var(--soft)]"><Search size={14} />Search<kbd className="mono ml-auto rounded-[5px] px-1.5 text-[11px] text-[var(--soft)] shadow-[inset_0_0_0_1px_var(--line-2)]">⌘K</kbd></button>
               <button aria-label="Notifications" className="st relative grid size-8 place-items-center rounded-[9px] text-[var(--sub)] hover:bg-[var(--hover)]"><Bell {...I} /><span className="absolute right-[7px] top-[7px] size-1.5 rounded-full bg-[var(--red)]" /></button>
             </div>
           </header>
@@ -79,14 +93,14 @@ export default function App() {
           <main className="min-h-0 flex-1 overflow-hidden px-6 pt-5">
             <div className="flex items-center gap-3">
               <h1 className="text-[22px] font-[650] tracking-[-0.02em]">storefront-prod</h1>
-              <span className="flex h-6 items-center gap-1.5 rounded-full bg-[var(--accent-soft)] px-2.5 text-[12px] font-[550] text-[var(--accent)] shadow-[inset_0_0_0_1px_rgb(140_155_255/0.22)]"><span className="size-1.5 rounded-full bg-[var(--accent)]" />Production</span>
+              <span className="flex h-6 items-center gap-1.5 rounded-full bg-[rgb(255_255_255/0.06)] px-2.5 text-[12px] font-[550] text-[var(--ink)] shadow-[inset_0_0_0_1px_rgb(255_255_255/0.08)]"><span className="size-1.5 rounded-full bg-[#ededed]" />Production</span>
               <a href="#" className="mono flex h-6 items-center gap-1 text-[var(--soft)] hover:text-[var(--sub)]">storefront.app<ArrowUpRight size={12} /></a>
               <div className="ml-auto flex items-center gap-2">
-                <div role="tablist" aria-label="Range" className="flex h-8 items-center rounded-[10px] bg-[var(--s1)] p-[3px] shadow-[var(--card)]">
-                  {['1h', '24h', '7d', '30d'].map((t) => <button key={t} role="tab" aria-selected={t === '24h'} className={cx('st h-[26px] rounded-[7px] px-2.5 text-[13px] font-[550]', t === '24h' ? 'bg-[var(--s3)] text-[var(--ink)] shadow-[inset_0_1px_0_rgb(255_255_255/0.06)]' : 'text-[var(--soft)] hover:text-[var(--ink)]')}>{t}</button>)}
+                <div role="tablist" aria-label="Range" className="flex h-8 items-center rounded-[11px] bg-[#0e0e0f] p-[3px] shadow-[inset_0_1px_2px_rgb(0_0_0/0.6),0_0_0_1px_rgb(255_255_255/0.06)]">
+                  {['1h', '24h', '7d', '30d'].map((t) => <button key={t} role="tab" aria-selected={t === '24h'} className={cx('st h-[26px] rounded-[7px] px-2.5 text-[13px] font-[550]', t === '24h' ? 'tile text-[var(--ink)]' : 'text-[var(--soft)] hover:text-[var(--ink)]')}>{t}</button>)}
                 </div>
-                <button className="st flex h-8 items-center gap-1.5 rounded-full px-3.5 text-[13px] font-[550] shadow-[var(--control)] hover:bg-[var(--hover)]">All regions<ChevronDown size={14} className="text-[var(--soft)]" /></button>
-                <button className="st flex h-8 items-center rounded-full bg-[var(--ink)] px-4 text-[13px] font-[600] text-[var(--canvas)] hover:bg-white">Deploy</button>
+                <button className="st btn-tactile flex h-8 items-center gap-1.5 rounded-full px-3.5 text-[13px] font-[550]">All regions<ChevronDown size={14} className="text-[var(--soft)]" /></button>
+                <button className="st flex h-8 items-center rounded-full bg-[linear-gradient(180deg,#fff,#dcdcde)] px-4 text-[13px] font-[600] text-[var(--canvas)] shadow-[0_0_0_1px_rgb(0_0_0/0.6),inset_0_1px_0_#fff] hover:bg-white">Deploy</button>
               </div>
             </div>
 
@@ -94,44 +108,44 @@ export default function App() {
               {kpis.map((k, i) => (
                 <div key={k.k} className={cx('flex items-end gap-3 px-5 py-4', i > 0 && 'shadow-[inset_1px_0_0_var(--div)]')}>
                   <div className="min-w-0 flex-1">
-                    <div className="text-[12px] font-[500] text-[var(--soft)]">{k.k}</div>
+                    <div className="flex items-center gap-1.5 text-[12px] font-[500] text-[var(--soft)]">{[<Server key="a" size={13} />, <Timer key="b" size={13} />, <AlertTriangle key="c" size={13} />, <Database key="d" size={13} />][i]}{k.k}</div>
                     <div className="tnum mt-1.5 text-[26px] font-[650] leading-[30px] tracking-[-0.03em]">{k.v}<span className="ml-0.5 text-[15px] font-[500] text-[var(--soft)]">{k.unit}</span></div>
-                    <div className="mt-1.5 flex items-center gap-1.5 text-[12px]"><span className={cx('tnum font-[550]', k.good ? 'text-[var(--accent)]' : 'text-[var(--red)]')}>{k.delta}</span><span className="text-[var(--soft)]">{k.note}</span></div>
+                    <div className="mt-1.5 flex items-center gap-1.5 text-[12px]"><span className={cx('tnum font-[550]', k.good ? 'text-[var(--ink)]' : 'text-[var(--red)]')}>{k.delta}</span><span className="text-[var(--soft)]">{k.note}</span></div>
                   </div>
-                  <Spark s={k.s} bad={!k.good} />
+                  <Bars s={k.s} bad={!k.good} />
                 </div>
               ))}
             </Card>
 
             <div className="mt-4 grid grid-cols-[744px_1fr] gap-4">
               <Card i={1}>
-                <Head title="Traffic by region" meta={<span className="flex items-center gap-1.5 text-[12px] text-[var(--soft)]"><span className="relative grid size-2 place-items-center"><span className="pulse absolute size-2 rounded-full bg-[var(--accent)] opacity-60" style={{ animation: 'pulse-ring 1.8s ease-out infinite' }} /><span className="size-1.5 rounded-full bg-[var(--accent)]" /></span>Live · {fmtK(totalRps)} req/s</span>}
-                  right={<span className="flex items-center gap-3 text-[12px] text-[var(--soft)]"><span className="flex items-center gap-1.5"><span className="size-1.5 rounded-full bg-[var(--accent)]" />Healthy</span><span className="flex items-center gap-1.5"><span className="size-1.5 rounded-full bg-[var(--red)]" />Elevated</span></span>} />
-                <div className="px-4 pb-3"><Map rerouted={rerouted} /></div>
+                <Head icon={MapIcon} title="Traffic by region" meta={<span className="flex items-center gap-1.5 text-[12px] text-[var(--soft)]"><span className="size-1.5 rounded-full bg-[#ededed] shadow-[0_0_6px_rgb(255_255_255/0.6)]" />Live · {fmtK(totalRps)} req/s</span>}
+                  right={<span className="flex items-center gap-3 text-[12px] text-[var(--soft)]"><span className="flex items-center gap-1.5"><span className="size-1.5 rounded-full bg-[#ededed]" />Healthy</span><span className="flex items-center gap-1.5"><span className="size-1.5 rounded-full bg-[var(--red)]" />Elevated</span></span>} />
+                <div className="px-4 pb-2 pt-1"><Map rerouted={rerouted} /></div>
               </Card>
 
               <Card i={2} className="flex flex-col">
-                <Head title="Regions" meta={<span className="tnum text-[13px] text-[var(--soft)]">10</span>} right={<a href="#" className="st flex h-7 items-center gap-1 rounded-[8px] px-2 text-[12px] font-[550] text-[var(--sub)] hover:bg-[var(--hover)]">All<ArrowUpRight size={12} /></a>} />
+                <Head icon={Globe} title="Regions" meta={<span className="tnum text-[13px] text-[var(--soft)]">10</span>} right={<a href="#" className="st flex h-7 items-center gap-1 rounded-[8px] px-2 text-[12px] font-[550] text-[var(--sub)] hover:bg-[var(--hover)]">All<ArrowUpRight size={12} /></a>} />
                 {hot.length > 0 ? (
-                  <div className="mx-3 mb-2 rounded-[10px] bg-[var(--red-soft)] p-3 shadow-[inset_0_0_0_1px_rgb(255_122_122/0.18)]">
+                  <div className="mx-3 mb-2 mt-3 rounded-[12px] bg-[linear-gradient(180deg,rgb(255_107_94/0.12),rgb(255_107_94/0.06))] p-3 shadow-[inset_0_0_0_1px_rgb(255_107_94/0.2),inset_0_1px_0_rgb(255_255_255/0.04)]">
                     <div className="text-[13px] font-[600]">sin1 p95 is 3.3x its baseline</div>
                     <div className="mt-0.5 text-[12px] leading-[17px] text-[var(--sub)]">Since deploy #4127 at 13:52. hkg1 has 41% headroom at 36 ms.</div>
                     <div className="mt-2.5 flex gap-2">
-                      <button onClick={() => setRerouted(true)} className="st h-7 rounded-full bg-[var(--ink)] px-3 text-[12px] font-[600] text-[var(--canvas)] hover:bg-white">Shift 30% to hkg1</button>
-                      <button className="st h-7 rounded-full px-3 text-[12px] font-[550] text-[var(--sub)] shadow-[var(--control)] hover:bg-[var(--hover)]">Open trace</button>
+                      <button onClick={() => setRerouted(true)} className="st h-7 rounded-full bg-[linear-gradient(180deg,#fff,#dcdcde)] px-3 text-[12px] font-[600] text-[var(--canvas)] shadow-[0_0_0_1px_rgb(0_0_0/0.6),inset_0_1px_0_#fff]">Shift 30% to hkg1</button>
+                      <button className="st btn-tactile h-7 rounded-full px-3 text-[12px] font-[550] text-[var(--sub)]">Open trace</button>
                     </div>
                   </div>
                 ) : (
-                  <div className="mx-3 mb-2 flex items-center justify-between rounded-[10px] bg-[var(--accent-soft)] p-3 text-[13px] font-[550] shadow-[inset_0_0_0_1px_rgb(140_155_255/0.2)]">30% of sin1 now served from hkg1<button onClick={() => setRerouted(false)} className="text-[12px] text-[var(--accent)]">Undo</button></div>
+                  <div className="mx-3 mb-2 mt-3 flex items-center justify-between rounded-[12px] bg-[rgb(255_255_255/0.05)] p-3 text-[13px] font-[550] shadow-[inset_0_0_0_1px_rgb(255_255_255/0.08)]">30% of sin1 now served from hkg1<button onClick={() => setRerouted(false)} className="text-[12px] text-[var(--sub)] underline decoration-[var(--faint)] underline-offset-4">Undo</button></div>
                 )}
-                <div className="flex-1 px-1.5">
+                <div className="flex-1 px-1.5 pb-1.5">
                   {[...regions].sort((a, b) => b.rps - a.rps).slice(0, 6).map((r) => {
                     const bad = r.state === 'hot' && !rerouted
                     return (
                       <div key={r.code} className="st grid h-9 grid-cols-[46px_1fr_92px_52px] items-center gap-2 rounded-[8px] px-2.5 hover:bg-[var(--hover)]">
                         <span className={cx('mono', bad ? 'text-[var(--red)]' : 'text-[var(--sub)]')}>{r.code}</span>
                         <span className="truncate text-[13px]">{r.city}</span>
-                        <span className="h-1 overflow-hidden rounded-full bg-[var(--s3)]"><span className={cx('block h-full rounded-full', bad ? 'bg-[var(--red)]' : 'bg-[var(--accent)]')} style={{ width: `${(r.rps / 420000) * 100}%`, opacity: 0.85 }} /></span>
+                        <span className="h-1 overflow-hidden rounded-full bg-[var(--s3)]"><span className={cx('block h-full rounded-full', bad ? 'bg-[var(--red)]' : 'bg-[linear-gradient(90deg,rgb(255_255_255/0.25),rgb(255_255_255/0.8))]')} style={{ width: `${(r.rps / 420000) * 100}%` }} /></span>
                         <span className={cx('tnum text-right text-[13px] font-[550]', bad && 'text-[var(--red)]')}>{bad ? r.p95 : r.state === 'hot' ? 44 : r.p95}<span className="text-[11px] font-[450] text-[var(--soft)]"> ms</span></span>
                       </div>
                     )
@@ -142,16 +156,16 @@ export default function App() {
 
             <div className="mt-4 grid grid-cols-[744px_1fr] gap-4">
               <Card i={3}>
-                <Head title="Latency" meta={<span className="text-[12px] text-[var(--soft)]">all regions · 24h</span>}
-                  right={<span className="flex items-center gap-3 text-[12px] text-[var(--soft)]"><span className="flex items-center gap-1.5"><span className="h-[2px] w-3 rounded-full bg-[var(--accent)]" />p95</span><span className="flex items-center gap-1.5"><span className="h-[2px] w-3 rounded-full bg-[var(--sub)] opacity-70" />p50</span><span className="flex items-center gap-1.5"><span className="h-px w-3 border-t border-dashed border-[var(--sub)] opacity-60" />p99</span></span>} />
-                <div className="px-4 pb-3"><Chart /></div>
+                <Head icon={Gauge} title="Latency" meta={<span className="text-[12px] text-[var(--soft)]">all regions · 24h</span>}
+                  right={<span className="flex items-center gap-3 text-[12px] text-[var(--soft)]"><span className="flex items-center gap-1.5"><span className="h-[2px] w-3 rounded-full bg-[#ededed]" />p95</span><span className="flex items-center gap-1.5"><span className="h-[2px] w-3 rounded-full bg-[var(--sub)] opacity-70" />p50</span><span className="flex items-center gap-1.5"><span className="h-px w-3 border-t border-dashed border-[var(--sub)] opacity-60" />p99</span></span>} />
+                <div className="px-4 pb-3 pt-3"><Chart /></div>
               </Card>
               <Card i={4}>
-                <Head title="Deployments" right={<a href="#" className="st flex h-7 items-center gap-1 rounded-[8px] px-2 text-[12px] font-[550] text-[var(--sub)] hover:bg-[var(--hover)]">All<ArrowUpRight size={12} /></a>} />
-                <div className="px-1.5 pb-2">
+                <Head icon={Rocket} title="Deployments" right={<a href="#" className="st flex h-7 items-center gap-1 rounded-[8px] px-2 text-[12px] font-[550] text-[var(--sub)] hover:bg-[var(--hover)]">All<ArrowUpRight size={12} /></a>} />
+                <div className="px-1.5 pb-2 pt-1.5">
                   {deployments.map((d) => (
                     <div key={d.id} className="st flex h-[52px] items-center gap-3 rounded-[8px] px-2.5 hover:bg-[var(--hover)]">
-                      <span className={cx('size-2 shrink-0 rounded-full', d.state === 'rolled-back' ? 'bg-[var(--red)]' : d.state === 'building' ? 'bg-[var(--accent)] shadow-[0_0_0_3px_rgb(140_155_255/0.2)]' : 'bg-[var(--sub)] opacity-60')} />
+                      <span className={cx('size-2 shrink-0 rounded-full', d.state === 'rolled-back' ? 'bg-[var(--red)]' : d.state === 'building' ? 'bg-[#ededed] shadow-[0_0_0_3px_rgb(255_255_255/0.12),0_0_8px_rgb(255_255_255/0.5)]' : 'bg-[var(--sub)] opacity-60')} />
                       <span className="min-w-0 flex-1 leading-[17px]"><span className="block truncate text-[13px] font-[550]">{d.msg}</span><span className="mono block truncate text-[11.5px] text-[var(--soft)]">{d.id} · {d.branch} · {d.sha}</span></span>
                       <span className="flex flex-col items-end gap-0.5"><Avatar t={d.who} /><span className="tnum text-[11.5px] text-[var(--soft)]">{d.ago}</span></span>
                     </div>
