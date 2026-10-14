@@ -3280,6 +3280,34 @@
   "origin": "founder"
  },
  {
+  "id": "founder.founder-taste#108",
+  "text": "[founder] Hero buttons are the product's own buttons scaled up, kept simple: full pills (rounded-full) like the dashboard's Deploy (white #fff->#dcdcde, 1px dark ring, inset white top) and its dark tactile pill; no arrow tiles, no extra bevel stacks, 44px.",
+  "why": "Founder on Kite's polished buttons (radius 14, arrow tile, layered bevel): \"the buttons still a bit more rounded or pills like the dashboard, and just simpler\".",
+  "applies": "heroes with product UI.",
+  "check": "hero CTA border-radius >= height/2 and construction matches the product's button tokens.",
+  "checkable": true,
+  "source": "founder, 2026-10-14, Kite hero",
+  "file": "founder/founder-taste.md",
+  "section": "5. Exceptions & judgement calls",
+  "tags": [
+   "founder",
+   "taste",
+   "hero",
+   "nav",
+   "typography",
+   "copy",
+   "icons",
+   "logo",
+   "layout",
+   "product-card",
+   "background",
+   "buttons",
+   "quality-bar"
+  ],
+  "kind": "source",
+  "origin": "founder"
+ },
+ {
   "id": "dos-and-donts.dos-and-donts#1",
   "text": "[T13] Use as few font sizes as possible in a form; differentiate size only between sections (labels/placeholders at one small size) and actions (the button label larger). The good mock uses 12 for both label and placeholder and 32 for the button label; the bad mock mixes 16 (label), 12 (placeholder), 32 (button).",
   "why": "Every extra size is another thing to decode, so the form takes longer to process.",

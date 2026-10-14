@@ -14,7 +14,7 @@ const LABEL = ['sfo1', 'fra1', 'hnd1', 'syd1']
 export default function HeroMap() {
   const still = useReducedMotion()
   const { dots, P } = useMemo(() => {
-    const proj = geoEqualEarth().fitExtent([[-230, 40], [W + 150, H + 330]], { type: 'Sphere' } as never)
+    const proj = geoEqualEarth().fitExtent([[-140, 62], [W + 60, H + 275]], { type: 'Sphere' } as never)
     const isLand = landMask(proj, W, H)
     const P = Object.fromEntries(regions.map((r) => [r.code, proj([r.lon, r.lat])!])) as Record<string, [number, number]>
     const max = Math.max(...regions.map((r) => r.rps))

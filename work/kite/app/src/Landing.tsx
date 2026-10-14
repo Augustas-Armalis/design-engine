@@ -4,7 +4,6 @@
 // product's real pieces, how it works, a closing CTA over the dot world, footer.
 import { useEffect, useState, type ReactNode } from 'react'
 import { motion, MotionConfig } from 'motion/react'
-import { ArrowRight } from 'lucide-react'
 import App from './App'
 import KiteLogo from './KiteLogo'
 import HeroMap from './HeroMap'
@@ -32,18 +31,12 @@ function Rails() {
     </div>
   )
 }
-/* hero buttons, polished: white bevel with a trailing arrow tile (inset 6 on every side, radius 14 - 6 = 8), and a
-   graphite tactile secondary with a lit top edge; both 46px, radius 14, press 0.98, no glow */
-const Primary = ({ children, h = 46, tile = true, className = '' }: { children: ReactNode; h?: number; tile?: boolean; className?: string }) => (
-  <a href="#" className={`st press group flex items-center gap-3 rounded-[14px] font-[550] tracking-[-0.01em] text-[#0a0a0b] ${tile ? 'pl-5 pr-[6px]' : 'px-4'} ${className}`}
-    style={{ height: h, background: 'linear-gradient(180deg, #ffffff 0%, #f1f1f2 55%, #e2e2e4 100%)', boxShadow: '0 0 0 1px rgb(0 0 0 / 0.7), inset 0 1px 0 #fff, inset 0 -1px 0 rgb(0 0 0 / 0.12), 0 1px 2px rgb(0 0 0 / 0.5), 0 8px 18px -8px rgb(0 0 0 / 0.7)' }}>
-    {children}
-    {tile && <span className="grid place-items-center rounded-[8px] bg-[linear-gradient(180deg,#2a2a2d,#141416)] text-white shadow-[inset_0_1px_0_rgb(255_255_255/0.14),0_0_0_1px_rgb(0_0_0/0.4)]" style={{ width: h - 12, height: h - 12 }}><ArrowRight size={16} strokeWidth={2.2} className="transition-transform duration-200 group-hover:translate-x-0.5" /></span>}
-  </a>
+/* hero buttons = the dashboard's own buttons, scaled up: white "Deploy" pill and dark tactile pill. Simple, no tiles. */
+const Primary = ({ children, h = 44, className = '' }: { children: ReactNode; h?: number; className?: string }) => (
+  <a href="#" className={`st press flex items-center rounded-full bg-[linear-gradient(180deg,#ffffff,#dcdcde)] px-6 font-[600] tracking-[-0.01em] text-[#0a0a0b] shadow-[0_0_0_1px_rgb(0_0_0/0.6),inset_0_1px_0_#fff] hover:bg-white ${className}`} style={{ height: h }}>{children}</a>
 )
-const Secondary = ({ children, h = 46, className = '' }: { children: ReactNode; h?: number; className?: string }) => (
-  <a href="#" className={`st press flex items-center rounded-[14px] px-5 font-[500] tracking-[-0.01em] text-[#f4f4f5] hover:brightness-125 ${className}`}
-    style={{ height: h, background: 'linear-gradient(180deg, #1f1f22 0%, #151517 100%)', boxShadow: '0 0 0 1px rgb(0 0 0 / 0.8), inset 0 0 0 1px rgb(255 255 255 / 0.07), inset 0 1px 0 rgb(255 255 255 / 0.12), 0 1px 2px rgb(0 0 0 / 0.5)' }}>{children}</a>
+const Secondary = ({ children, h = 44, className = '' }: { children: ReactNode; h?: number; className?: string }) => (
+  <a href="#" className={`st press btn-tactile flex items-center rounded-full px-6 font-[550] tracking-[-0.01em] text-[#f4f4f5] ${className}`} style={{ height: h }}>{children}</a>
 )
 const T0 = { nav: 0.1, h1: 0.25, sub: 0.62, cta: 0.72, frame: 0.85 }
 const W2 = ({ children, i }: { children: ReactNode; i: number }) => (
@@ -71,7 +64,7 @@ export default function Landing() {
           </nav>
           <Up at={T0.nav + 0.14} className="ml-auto flex items-center gap-2 text-[15px]">
             <a href="#" className="st flex h-10 items-center rounded-[12px] px-4 font-[500] text-[#a1a1a6] hover:text-[#f4f4f5]">Sign in</a>
-            <Primary h={40} tile={false} className="rounded-[12px]">Start deploying</Primary>
+            <Primary h={40} className="px-5">Start deploying</Primary>
           </Up>
         </header>
 
