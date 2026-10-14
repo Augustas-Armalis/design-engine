@@ -8,7 +8,6 @@ import { ArrowRight, ArrowUpRight, Check, GitBranch, Globe, Rocket, RotateCcw, S
 import App from './App'
 import Map from './Map'
 import Chart from './Chart'
-import Field from './Field'
 import Wordmark from './Wordmark'
 import { deployments } from './data'
 import { ease } from './anim'
@@ -50,6 +49,9 @@ export default function Landing() {
   return (
     <MotionConfig reducedMotion="user">
       <div className="relative mx-auto w-[1440px] overflow-hidden bg-[var(--canvas)]">
+        {/* rails: two hairlines that run the length of the page (structure, Kestrel grammar) */}
+        <div aria-hidden className="pointer-events-none absolute inset-y-0 left-[119px] z-0 w-px bg-[linear-gradient(180deg,transparent,rgb(255_255_255/0.06)_8%,rgb(255_255_255/0.06)_92%,transparent)]" />
+        <div aria-hidden className="pointer-events-none absolute inset-y-0 right-[119px] z-0 w-px bg-[linear-gradient(180deg,transparent,rgb(255_255_255/0.06)_8%,rgb(255_255_255/0.06)_92%,transparent)]" />
         {/* nav */}
         <header className="absolute inset-x-0 top-0 z-30 mx-auto flex h-[72px] max-w-[1200px] items-center">
           <Up at={0.05}><a href="#" className="flex h-10 items-center"><Wordmark size={24} /></a></Up>
@@ -63,22 +65,30 @@ export default function Landing() {
         </header>
 
         {/* hero */}
-        <section className="relative pt-[148px]">
-          <Field id="hero" opacity={0.11} />
+        <section className="relative pt-[118px]">
+          {/* minimal texture: a faint dot grid fading from the centre, grain, hairline rules with + marks where they cross the rails */}
+          <div aria-hidden className="pointer-events-none absolute inset-x-[120px] top-0 h-[560px]" style={{ backgroundImage: 'radial-gradient(rgb(255 255 255 / 0.13) 1px, transparent 1.2px)', backgroundSize: '24px 24px', backgroundPosition: '11px 11px', maskImage: 'radial-gradient(60% 70% at 50% 38%, #000 0%, transparent 100%)', WebkitMaskImage: 'radial-gradient(60% 70% at 50% 38%, #000 0%, transparent 100%)' }} />
+          <div aria-hidden className="pointer-events-none absolute inset-x-0 top-0 h-[760px] opacity-[0.05] mix-blend-soft-light" style={{ backgroundImage: "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>\")" }} />
+          {[72, 472].map((y) => (
+            <div key={y} aria-hidden className="pointer-events-none absolute inset-x-0" style={{ top: y }}>
+              <div className="h-px bg-[linear-gradient(90deg,transparent,rgb(255_255_255/0.07)_12%,rgb(255_255_255/0.07)_88%,transparent)]" />
+              {[119, 1320].map((x) => <span key={x} className="absolute -top-[5px] size-[11px]" style={{ left: x - 5 }}><span className="absolute left-[5px] top-0 h-[11px] w-px bg-[rgb(255_255_255/0.35)]" /><span className="absolute left-0 top-[5px] h-px w-[11px] bg-[rgb(255_255_255/0.35)]" /></span>)}
+            </div>
+          ))}
           <div className="relative z-10 flex flex-col items-center text-center">
-            <h1 className="text-[76px] font-[560] leading-[1.0] tracking-[-0.045em]" style={{ fontVariationSettings: '"wdth" 108' }}>
+            <h1 className="text-[68px] font-[560] leading-[1.0] tracking-[-0.045em]" style={{ fontVariationSettings: '"wdth" 108' }}>
               <Word i={0}>The</Word> <Word i={1}>Edge</Word> <Word i={2}>Network</Word><br />
               <span className="text-[var(--sub)]"><Word i={3}>That</Word> <Word i={4}>Tells</Word> <Word i={5}>You</Word> <Word i={6}>Why.</Word></span>
             </h1>
-            <Up at={0.6} className="mt-6"><p className="text-[19px] leading-[29px] text-[var(--sub)]">Kite runs your app in ten regions and points at the one<br />that needs you, with the fix one click away.</p></Up>
-            <Up at={0.72} className="mt-9 flex items-center gap-3">
+            <Up at={0.6} className="mt-5"><p className="text-[19px] leading-[29px] text-[var(--sub)]">Kite runs your app in ten regions and points at the one<br />that needs you, with the fix one click away.</p></Up>
+            <Up at={0.72} className="mt-7 flex items-center gap-3">
               <Primary className="h-12 px-6 text-[15px]">Start deploying<ArrowRight size={16} strokeWidth={2.2} /></Primary>
               <Secondary className="h-12 px-6 text-[15px]">See the live demo</Secondary>
             </Up>
-            <Up at={0.82} className="mt-4 text-[13px] text-[var(--soft)]">Free for hobby projects · No credit card</Up>
+            <Up at={0.82} className="mt-3 text-[13px] text-[var(--soft)]">Free for hobby projects · No credit card</Up>
           </div>
           {/* the product, straight-on, in a 3-edge frame; it plays its own load-in once the copy has landed */}
-          <motion.div className="relative z-10 mx-auto mt-[76px] w-[1180px] rounded-[26px] p-2" initial={{ opacity: 0, y: 60 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.5, duration: 1.4, ease: ease.out }}
+          <motion.div className="relative z-10 mx-auto mt-[64px] w-[1180px] rounded-[26px] p-2" initial={{ opacity: 0, y: 60 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.5, duration: 1.4, ease: ease.out }}
             style={{ background: 'linear-gradient(180deg, rgb(255 255 255 / 0.07), rgb(255 255 255 / 0.02))', boxShadow: '0 0 0 1px rgb(255 255 255 / 0.08), inset 0 1px 0 rgb(255 255 255 / 0.1), 0 40px 120px -30px rgb(0 0 0 / 0.9)' }}>
             <div role="img" aria-label="The Kite dashboard: traffic by region, latency and deployments, sample data" inert className="overflow-hidden rounded-[18px] shadow-[0_0_0_1px_rgb(0_0_0/0.6)]" style={{ height: 900 * (1164 / 1440) }}>
               <div style={{ zoom: 1164 / 1440 }}>{dash ? <App embedded /> : <div className="h-[900px] w-[1440px] bg-[var(--canvas)]" />}</div>
@@ -154,8 +164,8 @@ export default function Landing() {
         </section>
 
         {/* closing CTA */}
-        <section className="relative mt-[150px] h-[560px] overflow-hidden">
-          <Field id="cta" h={560} step={6.5} opacity={0.14} />
+        <section className="relative mt-[150px] h-[520px] overflow-hidden">
+          <div aria-hidden className="pointer-events-none absolute inset-x-[120px] inset-y-0" style={{ backgroundImage: 'radial-gradient(rgb(255 255 255 / 0.13) 1px, transparent 1.2px)', backgroundSize: '24px 24px', backgroundPosition: '11px 11px', maskImage: 'radial-gradient(55% 60% at 50% 50%, #000 0%, transparent 100%)', WebkitMaskImage: 'radial-gradient(55% 60% at 50% 50%, #000 0%, transparent 100%)' }} />
           <InView className="relative z-10 flex h-full flex-col items-center justify-center text-center">
             <h2 className="text-[64px] font-[560] leading-[1.02] tracking-[-0.045em]" style={{ fontVariationSettings: '"wdth" 108' }}>Deploy Once.<br /><span className="text-[var(--sub)]">Be Everywhere.</span></h2>
             <div className="mt-9 flex items-center gap-3"><Primary className="h-12 px-6 text-[15px]">Start deploying<ArrowRight size={16} strokeWidth={2.2} /></Primary><Secondary className="h-12 px-6 text-[15px]">Talk to us</Secondary></div>

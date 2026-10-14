@@ -2916,6 +2916,34 @@
   "origin": "founder"
  },
  {
+  "id": "founder.founder-taste#95",
+  "text": "[founder] Hero backgrounds stay minimal: a faint dot grid fading from the centre, fine grain, hairline rails and rules with small + marks where they cross. No big 3D objects (a rising dot-matrix globe was \"even worse\") and no busy texture. The product must show enough in the fold: frame top at or above ~510px on a 900px fold (64px under the CTAs), so the KPIs and the signature visual are visible.",
+  "why": "Founder on the Kite landing: v1 faint dot-map texture: \"we need better bg\"; v2 rotating globe horizon: \"even worse... do something simple, with borders or textures, minimal and cool\"; plus \"show enough of the product itself\".",
+  "applies": "SaaS heroes.",
+  "check": "product frame top <= 520px at 1440x900; background effects <= 2 layers, no canvas scene behind the hero.",
+  "checkable": true,
+  "source": "founder, 2026-10-14, Kite landing",
+  "file": "founder/founder-taste.md",
+  "section": "5. Exceptions & judgement calls",
+  "tags": [
+   "founder",
+   "taste",
+   "hero",
+   "nav",
+   "typography",
+   "copy",
+   "icons",
+   "logo",
+   "layout",
+   "product-card",
+   "background",
+   "buttons",
+   "quality-bar"
+  ],
+  "kind": "source",
+  "origin": "founder"
+ },
+ {
   "id": "dos-and-donts.dos-and-donts#1",
   "text": "[T13] Use as few font sizes as possible in a form; differentiate size only between sections (labels/placeholders at one small size) and actions (the button label larger). The good mock uses 12 for both label and placeholder and 32 for the button label; the bad mock mixes 16 (label), 12 (placeholder), 32 (button).",
   "why": "Every extra size is another thing to decode, so the form takes longer to process.",
