@@ -3196,6 +3196,34 @@
   "origin": "founder"
  },
  {
+  "id": "founder.founder-taste#105",
+  "text": "[founder] Dark hero type and controls, built properly: the headline is one colour (no grey second line), bold and tight (Inter 600, 60px, -0.04em, line-height 1.04, two short balanced lines); the subtitle is a real block (18/28, #a1a1a6, two hand-set lines under the headline); the hero buttons reuse the product's own button construction (white bevelled pill: #fff->#dedee0 gradient, 1px dark ring, inset white top; dark tactile pill), the same in the nav at 34px. Use the logo the founder supplies, traced to SVG, as mark + wordmark.",
+  "why": "Founder: \"your title font weight and letter spacing is so bad... it should be bolder and better built and probably one colour... subtitle properly built too, then proper buttons to match the design... make this [logo] into svg and use it better... no light mode, just dark\".",
+  "applies": "dark SaaS heroes.",
+  "check": "h1 one computed colour, weight >= 600; hero buttons share the product's button tokens.",
+  "checkable": true,
+  "source": "founder, 2026-10-14, Kite hero",
+  "file": "founder/founder-taste.md",
+  "section": "5. Exceptions & judgement calls",
+  "tags": [
+   "founder",
+   "taste",
+   "hero",
+   "nav",
+   "typography",
+   "copy",
+   "icons",
+   "logo",
+   "layout",
+   "product-card",
+   "background",
+   "buttons",
+   "quality-bar"
+  ],
+  "kind": "source",
+  "origin": "founder"
+ },
+ {
   "id": "dos-and-donts.dos-and-donts#1",
   "text": "[T13] Use as few font sizes as possible in a form; differentiate size only between sections (labels/placeholders at one small size) and actions (the button label larger). The good mock uses 12 for both label and placeholder and 32 for the button label; the bad mock mixes 16 (label), 12 (placeholder), 32 (button).",
   "why": "Every extra size is another thing to decode, so the form takes longer to process.",
