@@ -3308,6 +3308,34 @@
   "origin": "founder"
  },
  {
+  "id": "founder.founder-taste#109",
+  "text": "[founder] When the founder says a past version \"had it right\", restore that exact styling and change only what he named (here: position). For the Kite background map that is the soft version: dots 0.10 + heat 0.34 (max 0.5), r 0.95, a long soft cut-out around the copy (radial 40% x 44%, transparent 64% -> black 100%), bottom fade from 78%, no comets. Nav for a dark product hero: plain text links right after the logo (15px / 500 / grey, 28px gaps), no track or button styling; logo mark 26px + 23px wordmark; nav CTA a small 36px pill.",
+  "why": "Founder on the crisp map pass: \"too visible and too sharp of the blur around the title, you had it right in this [screenshot], just bad positions... nav simpler, not buttons, just text, to the right of the logo... the Kite name needs to be a bit bigger... nav Start deploying too big\".",
+  "applies": "Kite and similar dark heroes.",
+  "check": "compare with the founder's screenshot before shipping; nav links have no background.",
+  "checkable": true,
+  "source": "founder, 2026-10-14, Kite hero",
+  "file": "founder/founder-taste.md",
+  "section": "5. Exceptions & judgement calls",
+  "tags": [
+   "founder",
+   "taste",
+   "hero",
+   "nav",
+   "typography",
+   "copy",
+   "icons",
+   "logo",
+   "layout",
+   "product-card",
+   "background",
+   "buttons",
+   "quality-bar"
+  ],
+  "kind": "source",
+  "origin": "founder"
+ },
+ {
   "id": "dos-and-donts.dos-and-donts#1",
   "text": "[T13] Use as few font sizes as possible in a form; differentiate size only between sections (labels/placeholders at one small size) and actions (the button label larger). The good mock uses 12 for both label and placeholder and 32 for the button label; the bad mock mixes 16 (label), 12 (placeholder), 32 (button).",
   "why": "Every extra size is another thing to decode, so the form takes longer to process.",

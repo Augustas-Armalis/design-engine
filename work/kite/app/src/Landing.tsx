@@ -54,17 +54,17 @@ export default function Landing() {
         <Rails />
         <HeroMap />
         <header className="absolute inset-x-[144px] top-0 z-30 flex h-[72px] items-center">
-          <Up at={T0.nav}><a href="#" className="flex h-10 items-center"><KiteLogo size={22} /></a></Up>
-          <nav aria-label="Main" className="absolute left-1/2 -translate-x-1/2">
+          <Up at={T0.nav}><a href="#" className="flex h-10 items-center"><KiteLogo size={26} /></a></Up>
+          <nav aria-label="Main" className="ml-12">
             <Up at={T0.nav + 0.07}>
-              <ul className="flex h-11 items-center gap-0.5 rounded-[14px] bg-[#0e0e0f] p-1 text-[15px] font-[500] text-[#a1a1a6] shadow-[inset_0_1px_2px_rgb(0_0_0/0.7),0_0_0_1px_rgb(255_255_255/0.07)]">
-                {['Product', 'Regions', 'Pricing', 'Docs', 'Changelog'].map((l, i) => <li key={l}><a href="#" aria-current={i === 0 ? 'page' : undefined} className={`st flex h-9 items-center rounded-[10px] px-3.5 ${i === 0 ? 'tile text-[#f4f4f5]' : 'hover:text-[#f4f4f5]'}`}>{l}</a></li>)}
+              <ul className="flex items-center gap-7 text-[15px] font-[500] text-[#a1a1a6]">
+                {['Product', 'Regions', 'Pricing', 'Docs', 'Changelog'].map((l) => <li key={l}><a href="#" className="st flex h-10 items-center hover:text-[#f4f4f5]">{l}</a></li>)}
               </ul>
             </Up>
           </nav>
-          <Up at={T0.nav + 0.14} className="ml-auto flex items-center gap-2 text-[15px]">
-            <a href="#" className="st flex h-10 items-center rounded-[12px] px-4 font-[500] text-[#a1a1a6] hover:text-[#f4f4f5]">Sign in</a>
-            <Primary h={40} className="px-5">Start deploying</Primary>
+          <Up at={T0.nav + 0.14} className="ml-auto flex items-center gap-5 text-[14px]">
+            <a href="#" className="st flex h-10 items-center font-[500] text-[#a1a1a6] hover:text-[#f4f4f5]">Sign in</a>
+            <Primary h={36} className="px-4">Start deploying</Primary>
           </Up>
         </header>
 

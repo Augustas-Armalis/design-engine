@@ -10,9 +10,9 @@ export function KiteMark({ size = 22, color = "currentColor" }: { size?: number;
 
 export default function KiteLogo({ size = 20 }: { size?: number }) {
   return (
-    <span className="flex items-center gap-2 text-[#f4f4f5]" role="img" aria-label="Kite">
+    <span className="flex items-center gap-2.5 text-[#f4f4f5]" role="img" aria-label="Kite">
       <KiteMark size={size} />
-      <span aria-hidden className="text-[19px] font-[600] leading-none tracking-[-0.03em]">Kite</span>
+      <span aria-hidden className="text-[23px] font-[600] leading-none tracking-[-0.035em]">Kite</span>
     </span>
   )
 }
