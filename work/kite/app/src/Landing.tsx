@@ -7,6 +7,7 @@ import { motion, MotionConfig } from 'motion/react'
 import { ArrowRight } from 'lucide-react'
 import App from './App'
 import KiteLogo from './KiteLogo'
+import HeroMap from './HeroMap'
 import { ease } from './anim'
 
 const Up = ({ at, children, className = '' }: { at: number; children: ReactNode; className?: string }) => (
@@ -23,10 +24,8 @@ function Rails() {
   const plus = (x: number, y: number) => (
     <span key={`${x}${y}`} className="absolute size-[11px]" style={{ left: x - 5, top: y - 5 }}><span className="absolute left-[5px] top-0 h-[11px] w-px bg-[rgb(255_255_255/0.3)]" /><span className="absolute left-0 top-[5px] h-px w-[11px] bg-[rgb(255_255_255/0.3)]" /></span>
   )
-  const fade = 'radial-gradient(46% 38% at 50% 27%, transparent 0%, #000 100%)'
   return (
     <div aria-hidden className="pointer-events-none absolute inset-0 z-0">
-      <div className="absolute inset-y-[72px] left-[120px] right-[120px]" style={{ backgroundImage: 'radial-gradient(rgb(255 255 255 / 0.11) 1px, transparent 1.3px)', backgroundSize: '20px 20px', backgroundPosition: '-1px -1px', maskImage: fade, WebkitMaskImage: fade }} />
       {[120, 1320].map((x) => <div key={x} className="absolute inset-y-0 w-px" style={{ left: x, background: RAIL }} />)}
       <div className="absolute inset-x-0 top-[72px] h-px" style={{ background: RAIL }} />
       {[120, 1320].map((x) => plus(x, 72))}
@@ -53,6 +52,7 @@ export default function Landing() {
     <MotionConfig reducedMotion="user">
       <div className="relative mx-auto h-[900px] w-[1440px] overflow-hidden bg-[#0a0a0b] text-[#f4f4f5]" style={{ fontFamily: '"Inter Variable", system-ui, sans-serif', fontOpticalSizing: 'auto', fontFeatureSettings: '"cv11", "ss01"', ['--font-sans' as string]: '"Inter Variable", system-ui, sans-serif' }}>
         <Rails />
+        <HeroMap />
         <header className="absolute inset-x-[144px] top-0 z-30 flex h-[72px] items-center">
           <Up at={T0.nav}><a href="#" className="flex h-10 items-center"><KiteLogo size={22} /></a></Up>
           <nav aria-label="Main" className="absolute left-1/2 -translate-x-1/2">
@@ -73,7 +73,7 @@ export default function Landing() {
             <W2 i={0}>Every</W2> <W2 i={1}>Region,</W2> <W2 i={2}>Live</W2><br />
             <W2 i={3}>Every</W2> <W2 i={4}>Fix,</W2> <W2 i={5}>One</W2> <W2 i={6}>Click</W2>
           </h1>
-          <Up at={T0.sub} className="mt-5"><p className="text-[18px] font-[450] leading-[28px] tracking-[-0.011em] text-[#a1a1a6]">Kite runs your app in ten edge regions and hands you the fix the moment one slows down.</p></Up>
+          <Up at={T0.sub} className="mt-5"><p className="text-[18px] font-[450] leading-[28px] tracking-[-0.011em] text-[#a1a1a6]">Kite runs your app in ten edge regions and hands you<br />the fix the moment one of them slows down.</p></Up>
           <Up at={T0.cta} className="mt-8 flex items-center gap-3 text-[16px]">
             <Primary className="px-5">Start deploying<ArrowRight size={17} strokeWidth={2.2} /></Primary>
             <Secondary className="px-5">Book a demo</Secondary>
@@ -81,7 +81,7 @@ export default function Landing() {
         </section>
 
         {/* double-bezel frame, 64px under the CTAs, the full dashboard inside, dissolving at the fold */}
-        <motion.div className="absolute left-1/2 z-10 -translate-x-1/2" style={{ top: 485, width: FW, transformOrigin: '50% 0%' }}
+        <motion.div className="absolute left-1/2 z-10 -translate-x-1/2" style={{ top: 513, width: FW, transformOrigin: '50% 0%' }}
           initial={{ opacity: 0, y: 64, scale: 0.97 }} animate={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ y: { delay: T0.frame, duration: 1.4, ease: ease.reveal }, scale: { delay: T0.frame, duration: 1.4, ease: ease.out }, opacity: { delay: T0.frame, duration: 0.5 } }}>
           <div className="rounded-[22px]" style={{ padding: PAD, background: 'linear-gradient(180deg, rgb(255 255 255 / 0.06), rgb(255 255 255 / 0.02))', boxShadow: '0 0 0 1px rgb(255 255 255 / 0.08), inset 0 1px 0 rgb(255 255 255 / 0.07), 0 30px 70px -24px rgb(0 0 0 / 0.9)' }}>

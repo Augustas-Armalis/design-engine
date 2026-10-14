@@ -3252,6 +3252,34 @@
   "origin": "founder"
  },
  {
+  "id": "founder.founder-taste#107",
+  "text": "[founder] A hero background can borrow the product's own design elements (Kite: the dashboard's dot-matrix map, white nodes with soft light, chip labels, hairline routes), kept faint, between the rails, cleared behind the copy by a mask and fading before the product; labels never touch the headline, subtitle or CTAs. The subtitle is two hand-set balanced lines (~600px measure), never one 1000px line.",
+  "why": "Founder on the Kite hero: \"the subtitle now wtf\" (one long line) and \"the background yes better, just maybe we could use some design elements as the dashboard did?\".",
+  "applies": "product heroes.",
+  "check": "subtitle width <= ~620px and 2 lines; no background label within 24px of a text box.",
+  "checkable": true,
+  "source": "founder, 2026-10-14, Kite hero",
+  "file": "founder/founder-taste.md",
+  "section": "5. Exceptions & judgement calls",
+  "tags": [
+   "founder",
+   "taste",
+   "hero",
+   "nav",
+   "typography",
+   "copy",
+   "icons",
+   "logo",
+   "layout",
+   "product-card",
+   "background",
+   "buttons",
+   "quality-bar"
+  ],
+  "kind": "source",
+  "origin": "founder"
+ },
+ {
   "id": "dos-and-donts.dos-and-donts#1",
   "text": "[T13] Use as few font sizes as possible in a form; differentiate size only between sections (labels/placeholders at one small size) and actions (the button label larger). The good mock uses 12 for both label and placeholder and 32 for the button label; the bad mock mixes 16 (label), 12 (placeholder), 32 (button).",
   "why": "Every extra size is another thing to decode, so the form takes longer to process.",
