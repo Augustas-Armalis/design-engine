@@ -2,20 +2,20 @@
   "name": "kite-landing",
   "date": "2026-10-14",
   "verdict": "reject",
-  "why": "Founder on the Basit-grammar Kite hero (inset stage, soft warm sheen, glass capsule nav): 'rll bad'.",
+  "why": "Founder on the Supabase+Cursor Kite hero (dark): 'still asssss bro wtf'.",
   "summary": {
-    "pass": 25,
+    "pass": 27,
     "warn": 6,
     "fail": 0
   },
   "fingerprint": {
     "h1": {
-      "px": 60,
-      "lh": "63.6px",
-      "ls": "-3px",
-      "weight": "450",
+      "px": 56,
+      "lh": "59.36px",
+      "ls": "-1.96px",
+      "weight": "500",
       "family": "Inter Variable",
-      "text": "Ship To Every Region.Know Which One Needs You."
+      "text": "Ship to every regionSee the one that needs you"
     },
     "fonts": [
       "Inter Variable",
@@ -25,27 +25,25 @@
       0
     ],
     "radii": [
-      28,
-      "pill",
       1,
-      22,
-      16,
-      10,
       8,
-      9,
+      10,
+      16,
       12,
+      9,
+      "pill",
       5,
       11,
       7,
       2,
       14
     ],
-    "navHeight": 52,
-    "contentWidth": "828",
-    "sectionPad": null,
-    "sectionCount": 0,
-    "bodyPx": null,
-    "heroLayout": "integrated",
+    "navHeight": 64,
+    "contentWidth": "836",
+    "sectionPad": 150,
+    "sectionCount": 1,
+    "bodyPx": 17,
+    "heroLayout": "copy-above-visual",
     "navNumbered": false
   },
   "screenshot": "ledger/shots/2026-10-14-kite-landing-fold.png"
