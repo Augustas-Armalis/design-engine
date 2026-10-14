@@ -251,6 +251,8 @@ for (const vp of T.viewports) {
     await probe.close();
   }
   await page.goto(url, { waitUntil: 'networkidle', timeout: 45000 }).catch(() => {});
+  // JS-driven load-ins (motion/react) are not Web Animations, so finish() below cannot skip them: let them settle first
+  await page.waitForTimeout(3200);
   await page.evaluate(async () => {
     await document.fonts.ready;
     const h = document.documentElement.scrollHeight;
