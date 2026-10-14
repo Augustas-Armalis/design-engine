@@ -22,6 +22,10 @@ const Secondary = ({ children, className = '' }: { children: ReactNode; classNam
   <a href="#" className={`st btn-tactile flex items-center gap-2 rounded-full font-[550] text-[var(--ink)] ${className}`}>{children}</a>
 )
 
+function Wide({ centreY }: { centreY: number }) {
+  const m = `radial-gradient(42% 46% at 50% ${centreY}px, #000 0%, transparent 100%)`
+  return <div aria-hidden className="pointer-events-none absolute inset-0 z-0" style={{ backgroundImage: 'linear-gradient(rgb(255 255 255 / 0.05) 1px, transparent 1px), linear-gradient(90deg, rgb(255 255 255 / 0.05) 1px, transparent 1px)', backgroundSize: '120px 120px', backgroundPosition: '0 -48px', maskImage: m, WebkitMaskImage: m }} />
+}
 /* backgrounds to choose from (?bg=lines|hatch|grid): all hairline-level, no glow */
 const RAIL = 'rgb(255 255 255 / 0.07)'
 function Lines({ y2 }: { y2: number }) {
@@ -56,14 +60,14 @@ function Grid() {
 }
 
 const q = new URLSearchParams(location.search)
-const BG = (['lines', 'hatch', 'grid'] as const).find((b) => b === q.get('bg')) ?? 'lines'
+const BG = (['wide', 'lines', 'hatch', 'grid'] as const).find((b) => b === q.get('bg')) ?? 'wide'
 const LAYOUT = (['centre', 'split'] as const).find((l) => l === q.get('layout')) ?? 'centre'
 
 function Title({ align }: { align: 'center' | 'left' }) {
   return (
-    <h1 className={`text-[52px] font-[500] leading-[1.08] tracking-[-0.035em] text-[#f2f2f2] ${align === 'left' ? 'text-left' : 'text-center'}`} style={{ fontVariationSettings: '"wdth" 104' }}>
-      <Word i={0}>The</Word> <Word i={1}>Edge</Word> <Word i={2}>Network</Word><br />
-      <span className="text-[#8e8e93]"><Word i={3}>That</Word> <Word i={4}>Tells</Word> <Word i={5}>You</Word> <Word i={6}>Why.</Word></span>
+    <h1 className={`text-[60px] font-[500] leading-[1.02] tracking-[-0.04em] text-[#f2f2f2] ${align === 'left' ? 'text-left' : 'text-center'}`} style={{ fontVariationSettings: '"wdth" 104' }}>
+      <Word i={0}>Latency</Word> <Word i={1}>Has</Word><br />
+      <span className="text-[#8e8e93]"><Word i={2}>An</Word> <Word i={3}>Address.</Word></span>
     </h1>
   )
 }
@@ -80,7 +84,7 @@ export default function Landing() {
   return (
     <MotionConfig reducedMotion="user">
       <div className="relative mx-auto h-[900px] w-[1440px] overflow-hidden bg-[var(--canvas)]">
-        {BG === 'lines' ? <Lines y2={LAYOUT === 'centre' ? 444 : 378} /> : BG === 'hatch' ? <Hatch /> : <Grid />}
+        {BG === 'wide' ? <Wide centreY={LAYOUT === 'centre' ? 250 : 230} /> : BG === 'lines' ? <Lines y2={LAYOUT === 'centre' ? 444 : 378} /> : BG === 'hatch' ? <Hatch /> : <Grid />}
         {/* nav */}
         <header className="absolute inset-x-0 top-0 z-30 mx-auto flex h-[72px] max-w-[1200px] items-center px-6">
           <Up at={0.05}><a href="#" className="flex h-10 items-center"><Wordmark size={24} /></a></Up>
@@ -98,14 +102,14 @@ export default function Landing() {
           {LAYOUT === 'centre' ? (
             <div className="flex flex-col items-center pt-[148px] text-center">
               <Title align="center" />
-              <Up at={0.5} className="mt-5"><p className="text-[18px] leading-[28px] text-[var(--sub)]">Kite runs your app in ten regions and points at the one<br />that needs you, with the fix one click away.</p></Up>
+              <Up at={0.5} className="mt-5"><p className="text-[18px] leading-[28px] text-[var(--sub)]">Kite watches ten regions and points at the one slowing down,<br />with the fix one click away.</p></Up>
               <Ctas className="mt-8" />
             </div>
           ) : (
             <div className="mx-auto flex max-w-[1200px] items-end justify-between px-[40px] pt-[156px]">
               <div>
                 <Title align="left" />
-                <Up at={0.5} className="mt-5"><p className="text-[18px] leading-[28px] text-[var(--sub)]">Kite runs your app in ten regions and points at the one<br />that needs you, with the fix one click away.</p></Up>
+                <Up at={0.5} className="mt-5"><p className="text-[18px] leading-[28px] text-[var(--sub)]">Kite watches ten regions and points at the one slowing down,<br />with the fix one click away.</p></Up>
               </div>
               <Ctas className="pb-1" />
             </div>
@@ -117,7 +121,10 @@ export default function Landing() {
               <div style={{ zoom: 1164 / 1440 }}>{dash ? <App embedded /> : <div className="h-[900px] w-[1440px] bg-[var(--canvas)]" />}</div>
             </div>
           </motion.div>
+          {/* bottom fade: the product dissolves into the page instead of ending hard at the fold */}
         </section>
+        <div aria-hidden className="pointer-events-none absolute inset-x-0 bottom-0 z-20 h-[150px]" style={{ background: 'linear-gradient(180deg, transparent 0%, rgb(10 10 11 / 0.75) 60%, #0a0a0b 100%)' }} />
+        <div aria-hidden className="pointer-events-none absolute inset-x-0 bottom-0 z-20 h-[90px]" style={{ backdropFilter: 'blur(5px)', WebkitBackdropFilter: 'blur(6px)', maskImage: 'linear-gradient(180deg, transparent, #000)', WebkitMaskImage: 'linear-gradient(180deg, transparent, #000)' }} />
       </div>
     </MotionConfig>
   )

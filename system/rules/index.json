@@ -3056,6 +3056,34 @@
   "origin": "founder"
  },
  {
+  "id": "founder.founder-taste#100",
+  "text": "[founder] Hero titles are short and specific, 3-5 words with an idea in them (\"Latency Has An Address.\"), never a long category description (\"The Edge Network That Tells You Why.\" was \"too shallow and just long\"). Background structure is wide-spaced (120px grid cells, kept around the copy, away from the product), never dense patterns close to the content. The product dissolves into the page at the fold with a short fade + light blur (~150px), never a hard cut and never eating the signature visual.",
+  "why": "Founder on the Kite hero variants: \"layout good - copy ass, the title too shallow and just long, and bg a bit stupid and too close, and no bottom blur or something\".",
+  "applies": "SaaS heroes.",
+  "check": "h1 <= 5 words; background cell size >= 100px and masked off the product; bottom fade 120-180px.",
+  "checkable": true,
+  "source": "founder, 2026-10-14, Kite hero",
+  "file": "founder/founder-taste.md",
+  "section": "5. Exceptions & judgement calls",
+  "tags": [
+   "founder",
+   "taste",
+   "hero",
+   "nav",
+   "typography",
+   "copy",
+   "icons",
+   "logo",
+   "layout",
+   "product-card",
+   "background",
+   "buttons",
+   "quality-bar"
+  ],
+  "kind": "source",
+  "origin": "founder"
+ },
+ {
   "id": "dos-and-donts.dos-and-donts#1",
   "text": "[T13] Use as few font sizes as possible in a form; differentiate size only between sections (labels/placeholders at one small size) and actions (the button label larger). The good mock uses 12 for both label and placeholder and 32 for the button label; the bad mock mixes 16 (label), 12 (placeholder), 32 (button).",
   "why": "Every extra size is another thing to decode, so the form takes longer to process.",
