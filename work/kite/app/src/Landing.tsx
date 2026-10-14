@@ -56,7 +56,7 @@ export default function Landing() {
         <header className="absolute inset-x-0 top-0 z-30 mx-auto flex h-[72px] max-w-[1200px] items-center">
           <Up at={0.05}><a href="#" className="flex h-10 items-center"><Wordmark size={24} /></a></Up>
           <nav aria-label="Main" className="absolute left-1/2 -translate-x-1/2">
-            <Up at={0.1}><ul className="flex items-center gap-1 text-[14px] font-[500] text-[var(--sub)]">{['Product', 'Regions', 'Pricing', 'Docs', 'Changelog'].map((l) => <li key={l}><a href="#" className="st flex h-9 items-center rounded-[10px] px-3.5 hover:bg-[var(--hover)] hover:text-[var(--ink)]">{l}</a></li>)}</ul></Up>
+            <Up at={0.1}><ul className="flex h-10 items-center gap-0.5 rounded-full bg-[#0e0e0f] p-1 text-[14px] font-[500] text-[var(--sub)] shadow-[inset_0_1px_2px_rgb(0_0_0/0.7),0_0_0_1px_rgb(255_255_255/0.07)]">{['Product', 'Regions', 'Pricing', 'Docs', 'Changelog'].map((l, i) => <li key={l}><a href="#" aria-current={i === 0 ? 'page' : undefined} className={`st flex h-8 items-center rounded-full px-3.5 ${i === 0 ? 'tile text-[var(--ink)]' : 'hover:text-[var(--ink)]'}`}>{l}</a></li>)}</ul></Up>
           </nav>
           <Up at={0.15} className="ml-auto flex items-center gap-2">
             <a href="#" className="st flex h-9 items-center rounded-[10px] px-3.5 text-[14px] font-[500] text-[var(--sub)] hover:text-[var(--ink)]">Sign in</a>
@@ -65,31 +65,40 @@ export default function Landing() {
         </header>
 
         {/* hero */}
-        <section className="relative pt-[118px]">
+        <section className="relative pt-[104px]">
           {/* minimal texture: a faint dot grid fading from the centre, grain, hairline rules with + marks where they cross the rails */}
           <div aria-hidden className="pointer-events-none absolute inset-x-[120px] top-0 h-[560px]" style={{ backgroundImage: 'radial-gradient(rgb(255 255 255 / 0.13) 1px, transparent 1.2px)', backgroundSize: '24px 24px', backgroundPosition: '11px 11px', maskImage: 'radial-gradient(60% 70% at 50% 38%, #000 0%, transparent 100%)', WebkitMaskImage: 'radial-gradient(60% 70% at 50% 38%, #000 0%, transparent 100%)' }} />
           <div aria-hidden className="pointer-events-none absolute inset-x-0 top-0 h-[760px] opacity-[0.05] mix-blend-soft-light" style={{ backgroundImage: "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>\")" }} />
-          {[72, 472].map((y) => (
+          {[72, 481].map((y) => (
             <div key={y} aria-hidden className="pointer-events-none absolute inset-x-0" style={{ top: y }}>
               <div className="h-px bg-[linear-gradient(90deg,transparent,rgb(255_255_255/0.07)_12%,rgb(255_255_255/0.07)_88%,transparent)]" />
               {[119, 1320].map((x) => <span key={x} className="absolute -top-[5px] size-[11px]" style={{ left: x - 5 }}><span className="absolute left-[5px] top-0 h-[11px] w-px bg-[rgb(255_255_255/0.35)]" /><span className="absolute left-0 top-[5px] h-px w-[11px] bg-[rgb(255_255_255/0.35)]" /></span>)}
             </div>
           ))}
           <div className="relative z-10 flex flex-col items-center text-center">
-            <h1 className="text-[68px] font-[560] leading-[1.0] tracking-[-0.045em]" style={{ fontVariationSettings: '"wdth" 108' }}>
+            <Up at={0.08} className="mb-6">
+              <a href="#" className="st group flex h-8 items-center gap-2.5 rounded-full py-1 pl-1.5 pr-3.5 text-[13px] font-[500] text-[var(--sub)]" style={{ background: 'linear-gradient(180deg,#1c1c1e,#141415)', boxShadow: '0 0 0 1px rgb(0 0 0 / 0.7), inset 0 1px 0 rgb(255 255 255 / 0.08), inset 0 0 0 1px rgb(255 255 255 / 0.04)' }}>
+                <span className="flex h-6 items-center gap-1.5 rounded-full bg-[rgb(255_107_94/0.12)] px-2 text-[12px] font-[550] text-[var(--red)] shadow-[inset_0_0_0_1px_rgb(255_107_94/0.22)]"><span className="relative grid size-1.5 place-items-center"><span className="absolute size-1.5 animate-ping rounded-full bg-[var(--red)] opacity-60" /><span className="size-1.5 rounded-full bg-[var(--red)]" /></span>New</span>
+                <span className="group-hover:text-[var(--ink)]">One-click reroute when a region drifts</span><ArrowRight size={13} className="text-[var(--soft)] transition-transform group-hover:translate-x-0.5" />
+              </a>
+            </Up>
+            <h1 className="text-[66px] font-[500] leading-[1.02] tracking-[-0.045em] text-[#f2f2f2]" style={{ fontVariationSettings: '"wdth" 108' }}>
               <Word i={0}>The</Word> <Word i={1}>Edge</Word> <Word i={2}>Network</Word><br />
-              <span className="text-[var(--sub)]"><Word i={3}>That</Word> <Word i={4}>Tells</Word> <Word i={5}>You</Word> <Word i={6}>Why.</Word></span>
+              <span className="text-[#8e8e93]"><Word i={3}>That</Word> <Word i={4}>Tells</Word> <Word i={5}>You</Word> <Word i={6}>Why.</Word></span>
             </h1>
             <Up at={0.6} className="mt-5"><p className="text-[19px] leading-[29px] text-[var(--sub)]">Kite runs your app in ten regions and points at the one<br />that needs you, with the fix one click away.</p></Up>
             <Up at={0.72} className="mt-7 flex items-center gap-3">
-              <Primary className="h-12 px-6 text-[15px]">Start deploying<ArrowRight size={16} strokeWidth={2.2} /></Primary>
+              <Primary className="h-12 px-6 text-[15px]">Start deploying free<ArrowRight size={16} strokeWidth={2.2} /></Primary>
               <Secondary className="h-12 px-6 text-[15px]">See the live demo</Secondary>
             </Up>
-            <Up at={0.82} className="mt-3 text-[13px] text-[var(--soft)]">Free for hobby projects · No credit card</Up>
           </div>
           {/* the product, straight-on, in a 3-edge frame; it plays its own load-in once the copy has landed */}
-          <motion.div className="relative z-10 mx-auto mt-[64px] w-[1180px] rounded-[26px] p-2" initial={{ opacity: 0, y: 60 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.5, duration: 1.4, ease: ease.out }}
-            style={{ background: 'linear-gradient(180deg, rgb(255 255 255 / 0.07), rgb(255 255 255 / 0.02))', boxShadow: '0 0 0 1px rgb(255 255 255 / 0.08), inset 0 1px 0 rgb(255 255 255 / 0.1), 0 40px 120px -30px rgb(0 0 0 / 0.9)' }}>
+          {/* overhead light: one soft beam falling onto the product (the only light source in the hero) */}
+          <motion.div aria-hidden className="pointer-events-none absolute left-1/2 top-[300px] z-0 h-[520px] w-[1100px] -translate-x-1/2" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.7, duration: 1.6, ease: ease.out }}
+            style={{ background: 'radial-gradient(50% 60% at 50% 100%, rgb(255 255 255 / 0.10), rgb(255 255 255 / 0.03) 45%, transparent 75%)' }} />
+          <motion.div className="relative z-10 mx-auto mt-[64px] w-[1180px] rounded-[26px] p-[7px]" initial={{ opacity: 0, y: 60 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.5, duration: 1.4, ease: ease.out }}
+            style={{ background: 'linear-gradient(180deg, #2a2a2d 0%, #161618 18%, #0f0f10 100%)', boxShadow: '0 0 0 1px rgb(0 0 0 / 0.8), inset 0 1px 0 rgb(255 255 255 / 0.22), inset 0 0 0 1px rgb(255 255 255 / 0.05), 0 -20px 80px -30px rgb(255 255 255 / 0.18), 0 50px 120px -30px rgb(0 0 0 / 0.95)' }}>
+            <span aria-hidden className="pointer-events-none absolute inset-x-[18%] -top-px h-px bg-[linear-gradient(90deg,transparent,rgb(255_255_255/0.85),transparent)]" />
             <div role="img" aria-label="The Kite dashboard: traffic by region, latency and deployments, sample data" inert className="overflow-hidden rounded-[18px] shadow-[0_0_0_1px_rgb(0_0_0/0.6)]" style={{ height: 900 * (1164 / 1440) }}>
               <div style={{ zoom: 1164 / 1440 }}>{dash ? <App embedded /> : <div className="h-[900px] w-[1440px] bg-[var(--canvas)]" />}</div>
             </div>

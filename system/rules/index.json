@@ -2944,6 +2944,34 @@
   "origin": "founder"
  },
  {
+  "id": "founder.founder-taste#96",
+  "text": "[founder] A landing page for a dark product uses the product's own material, not a generic dark template: the nav as the product's recessed segmented track with a raised active tile, tactile chips and buttons with the product's bevels, a solid near-white headline at 500 (second line softer), one soft overhead beam lighting the product frame, and a tactile bezel that catches that light (gradient, 1px dark ring, bright top edge).",
+  "why": "Founder on the Kite landing (minimal grid hero): \"better, but not premium enough for our dashboard-like style\".",
+  "applies": "landing pages for dark products.",
+  "check": "nav, chip, CTAs and product frame reuse the product's shadow/gradient tokens; exactly one light source in the hero.",
+  "checkable": true,
+  "source": "founder, 2026-10-14, Kite landing",
+  "file": "founder/founder-taste.md",
+  "section": "5. Exceptions & judgement calls",
+  "tags": [
+   "founder",
+   "taste",
+   "hero",
+   "nav",
+   "typography",
+   "copy",
+   "icons",
+   "logo",
+   "layout",
+   "product-card",
+   "background",
+   "buttons",
+   "quality-bar"
+  ],
+  "kind": "source",
+  "origin": "founder"
+ },
+ {
   "id": "dos-and-donts.dos-and-donts#1",
   "text": "[T13] Use as few font sizes as possible in a form; differentiate size only between sections (labels/placeholders at one small size) and actions (the button label larger). The good mock uses 12 for both label and placeholder and 32 for the button label; the bad mock mixes 16 (label), 12 (placeholder), 32 (button).",
   "why": "Every extra size is another thing to decode, so the form takes longer to process.",
