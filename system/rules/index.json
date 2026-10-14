@@ -3028,6 +3028,34 @@
   "origin": "founder"
  },
  {
+  "id": "founder.founder-taste#99",
+  "text": "[founder] Between \"too much\" and \"too little\": hero headline about 52px at weight 500 (not 66-80px), no announcement chip by default (it has become our repeated tell), and one quiet structural background: hairline rails/rules with small square marks, diagonal hatching confined to the side gutters, or a fine square grid fading out downward. Structure, not light. Deliver these as switchable variants.",
+  "why": "Founder on the bare Kite hero: \"now too little... the title is a bit drastic and big, and that indicator above the title, let's remove it, it's too repetitive in our designs... we need some textures or borders in the bg, or try different layouts\".",
+  "applies": "SaaS heroes.",
+  "check": "h1 <= 56px; no chip unless asked; background = one hairline/texture layer at <= 7% white, zero glows.",
+  "checkable": true,
+  "source": "founder, 2026-10-14, Kite hero",
+  "file": "founder/founder-taste.md",
+  "section": "5. Exceptions & judgement calls",
+  "tags": [
+   "founder",
+   "taste",
+   "hero",
+   "nav",
+   "typography",
+   "copy",
+   "icons",
+   "logo",
+   "layout",
+   "product-card",
+   "background",
+   "buttons",
+   "quality-bar"
+  ],
+  "kind": "source",
+  "origin": "founder"
+ },
+ {
   "id": "dos-and-donts.dos-and-donts#1",
   "text": "[T13] Use as few font sizes as possible in a form; differentiate size only between sections (labels/placeholders at one small size) and actions (the button label larger). The good mock uses 12 for both label and placeholder and 32 for the button label; the bad mock mixes 16 (label), 12 (placeholder), 32 (button).",
   "why": "Every extra size is another thing to decode, so the form takes longer to process.",
