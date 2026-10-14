@@ -3168,6 +3168,34 @@
   "origin": "founder"
  },
  {
+  "id": "founder.founder-taste#104",
+  "text": "[founder] What the founder loves in our light builds (Kestrel) is type, lightness, spacing and professionalism, not effects; carry exactly that into dark. Default dark product hero = Supabase top half + Cursor product stage: full-width hairline nav (links left after the logo, Sign in outline + light CTA right), 1200 container, a calm two-line 56px / 500 / -0.035em Inter headline on the left (second line soft grey), the description in a right column (17/27, ~420px), compact 40px CTAs, then a full-width stage panel (#111113, hairline, faint 18px dot grid) with the product window floating inside it. The founder named Cursor and Supabase as the heroes he likes.",
+  "why": "Founder: \"look at the light designs I've loved, the way you did the font, lightness, spacing and professionalism... I like Cursor, Supabase\".",
+  "applies": "dark SaaS heroes.",
+  "check": "no glow/light field; headline <= 60px at 500; product stage top <= 430px.",
+  "checkable": true,
+  "source": "founder, 2026-10-14, Kite hero",
+  "file": "founder/founder-taste.md",
+  "section": "5. Exceptions & judgement calls",
+  "tags": [
+   "founder",
+   "taste",
+   "hero",
+   "nav",
+   "typography",
+   "copy",
+   "icons",
+   "logo",
+   "layout",
+   "product-card",
+   "background",
+   "buttons",
+   "quality-bar"
+  ],
+  "kind": "source",
+  "origin": "founder"
+ },
+ {
   "id": "dos-and-donts.dos-and-donts#1",
   "text": "[T13] Use as few font sizes as possible in a form; differentiate size only between sections (labels/placeholders at one small size) and actions (the button label larger). The good mock uses 12 for both label and placeholder and 32 for the button label; the bad mock mixes 16 (label), 12 (placeholder), 32 (button).",
   "why": "Every extra size is another thing to decode, so the form takes longer to process.",

@@ -2,18 +2,18 @@
   "name": "kite-landing",
   "date": "2026-10-14",
   "verdict": "reject",
-  "why": "Founder on the Kite hero across 8 rounds (glows, globe, dot grid/hatch/lines, chip, centred and split, 'Latency Has An Address.', then a Linear-grammar replica): 'so bad', 'replicate an example', then on the Linear replica: 'ass bro'.",
+  "why": "Founder on the Basit-grammar Kite hero (inset stage, soft warm sheen, glass capsule nav): 'rll bad'.",
   "summary": {
-    "pass": 27,
+    "pass": 25,
     "warn": 6,
     "fail": 0
   },
   "fingerprint": {
     "h1": {
-      "px": 64,
-      "lh": "64px",
-      "ls": "-1.4px",
-      "weight": "510",
+      "px": 60,
+      "lh": "63.6px",
+      "ls": "-3px",
+      "weight": "450",
       "family": "Inter Variable",
       "text": "Ship To Every Region.Know Which One Needs You."
     },
@@ -25,25 +25,27 @@
       0
     ],
     "radii": [
-      1,
+      28,
       "pill",
-      12,
+      1,
+      22,
+      16,
       10,
       8,
       9,
+      12,
       5,
       11,
       7,
-      16,
       2,
       14
     ],
-    "navHeight": 73,
-    "contentWidth": "677",
-    "sectionPad": 277,
-    "sectionCount": 1,
-    "bodyPx": 17,
-    "heroLayout": "copy-above-visual",
+    "navHeight": 52,
+    "contentWidth": "828",
+    "sectionPad": null,
+    "sectionCount": 0,
+    "bodyPx": null,
+    "heroLayout": "integrated",
     "navNumbered": false
   },
   "screenshot": "ledger/shots/2026-10-14-kite-landing-fold.png"
