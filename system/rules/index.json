@@ -3224,6 +3224,34 @@
   "origin": "founder"
  },
  {
+  "id": "founder.founder-taste#106",
+  "text": "[founder] Big Inter must be the display cut: import `@fontsource-variable/inter/opsz.css` (never plain `@fontsource-variable/inter`, which has no optical-size axis), set `font-optical-sizing: auto` and `font-feature-settings: \"cv11\",\"ss01\"`, and use Kestrel's headline tuple (68-72px / 550 / -0.045em / 1.04). One family across the hero and the product inside it; never Inter outside and another grotesk inside the frame.",
+  "why": "Founder on Kite with plain Inter 600 (text cut at 64px) and Mona Sans inside the dashboard: \"the title font still ass bro, and font usage and stuff just wtf\". Kestrel, the loved build, used the opsz import.",
+  "applies": "every build using Inter for display.",
+  "check": "computed `font-variation-settings`/opsz active on the h1 (the imported file is opsz.css); one font family in the fold.",
+  "checkable": true,
+  "source": "founder, 2026-10-14, Kite hero",
+  "file": "founder/founder-taste.md",
+  "section": "5. Exceptions & judgement calls",
+  "tags": [
+   "founder",
+   "taste",
+   "hero",
+   "nav",
+   "typography",
+   "copy",
+   "icons",
+   "logo",
+   "layout",
+   "product-card",
+   "background",
+   "buttons",
+   "quality-bar"
+  ],
+  "kind": "source",
+  "origin": "founder"
+ },
+ {
   "id": "dos-and-donts.dos-and-donts#1",
   "text": "[T13] Use as few font sizes as possible in a form; differentiate size only between sections (labels/placeholders at one small size) and actions (the button label larger). The good mock uses 12 for both label and placeholder and 32 for the button label; the bad mock mixes 16 (label), 12 (placeholder), 32 (button).",
   "why": "Every extra size is another thing to decode, so the form takes longer to process.",
