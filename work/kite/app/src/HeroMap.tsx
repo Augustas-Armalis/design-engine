@@ -14,7 +14,7 @@ const LABEL = ['sfo1', 'fra1', 'hnd1', 'syd1']
 export default function HeroMap() {
   const still = useReducedMotion()
   const { dots, P } = useMemo(() => {
-    const proj = geoEqualEarth().fitExtent([[-40, 90], [W - 40, H + 210]], { type: 'Sphere' } as never)
+    const proj = geoEqualEarth().fitExtent([[-230, 40], [W + 150, H + 330]], { type: 'Sphere' } as never)
     const isLand = landMask(proj, W, H)
     const P = Object.fromEntries(regions.map((r) => [r.code, proj([r.lon, r.lat])!])) as Record<string, [number, number]>
     const max = Math.max(...regions.map((r) => r.rps))
@@ -29,7 +29,7 @@ export default function HeroMap() {
   }, [])
   const arc = (a: [number, number], b: [number, number]) => { const mx = (a[0] + b[0]) / 2, my = (a[1] + b[1]) / 2, len = Math.hypot(b[0] - a[0], b[1] - a[1]); return `M${a[0]} ${a[1]} Q${mx} ${my - len * 0.25} ${b[0]} ${b[1]}` }
   // clear the reading zone (headline + subtitle + CTAs) and fade before the product
-  const mask = 'radial-gradient(34% 40% at 50% 49%, transparent 62%, #000 100%), linear-gradient(180deg, #000 78%, transparent 100%)'
+  const mask = 'radial-gradient(40% 44% at 50% 49%, transparent 64%, #000 100%), linear-gradient(180deg, #000 78%, transparent 100%)'
   return (
     <motion.div aria-hidden className="pointer-events-none absolute left-[120px] top-[73px] z-0" style={{ width: W, height: H, maskImage: mask, WebkitMaskImage: mask, maskComposite: 'intersect', WebkitMaskComposite: 'source-in' }}
       initial={still ? false : { opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.2, duration: 1.6 }}>

@@ -32,11 +32,18 @@ function Rails() {
     </div>
   )
 }
-const Primary = ({ children, h = 44, className = '' }: { children: ReactNode; h?: number; className?: string }) => (
-  <a href="#" className={`st press flex items-center gap-2 rounded-[14px] bg-[linear-gradient(180deg,#ffffff,#dedee0)] font-[550] text-[#0a0a0b] shadow-[0_0_0_1px_rgb(0_0_0/0.6),inset_0_1px_0_#fff,0_1px_2px_rgb(0_0_0/0.45)] hover:bg-white ${className}`} style={{ height: h }}>{children}</a>
+/* hero buttons, polished: white bevel with a trailing arrow tile (inset 6 on every side, radius 14 - 6 = 8), and a
+   graphite tactile secondary with a lit top edge; both 46px, radius 14, press 0.98, no glow */
+const Primary = ({ children, h = 46, tile = true, className = '' }: { children: ReactNode; h?: number; tile?: boolean; className?: string }) => (
+  <a href="#" className={`st press group flex items-center gap-3 rounded-[14px] font-[550] tracking-[-0.01em] text-[#0a0a0b] ${tile ? 'pl-5 pr-[6px]' : 'px-4'} ${className}`}
+    style={{ height: h, background: 'linear-gradient(180deg, #ffffff 0%, #f1f1f2 55%, #e2e2e4 100%)', boxShadow: '0 0 0 1px rgb(0 0 0 / 0.7), inset 0 1px 0 #fff, inset 0 -1px 0 rgb(0 0 0 / 0.12), 0 1px 2px rgb(0 0 0 / 0.5), 0 8px 18px -8px rgb(0 0 0 / 0.7)' }}>
+    {children}
+    {tile && <span className="grid place-items-center rounded-[8px] bg-[linear-gradient(180deg,#2a2a2d,#141416)] text-white shadow-[inset_0_1px_0_rgb(255_255_255/0.14),0_0_0_1px_rgb(0_0_0/0.4)]" style={{ width: h - 12, height: h - 12 }}><ArrowRight size={16} strokeWidth={2.2} className="transition-transform duration-200 group-hover:translate-x-0.5" /></span>}
+  </a>
 )
-const Secondary = ({ children, h = 44, className = '' }: { children: ReactNode; h?: number; className?: string }) => (
-  <a href="#" className={`st press btn-tactile flex items-center rounded-[14px] font-[500] text-[#f4f4f5] ${className}`} style={{ height: h }}>{children}</a>
+const Secondary = ({ children, h = 46, className = '' }: { children: ReactNode; h?: number; className?: string }) => (
+  <a href="#" className={`st press flex items-center rounded-[14px] px-5 font-[500] tracking-[-0.01em] text-[#f4f4f5] hover:brightness-125 ${className}`}
+    style={{ height: h, background: 'linear-gradient(180deg, #1f1f22 0%, #151517 100%)', boxShadow: '0 0 0 1px rgb(0 0 0 / 0.8), inset 0 0 0 1px rgb(255 255 255 / 0.07), inset 0 1px 0 rgb(255 255 255 / 0.12), 0 1px 2px rgb(0 0 0 / 0.5)' }}>{children}</a>
 )
 const T0 = { nav: 0.1, h1: 0.25, sub: 0.62, cta: 0.72, frame: 0.85 }
 const W2 = ({ children, i }: { children: ReactNode; i: number }) => (
@@ -64,7 +71,7 @@ export default function Landing() {
           </nav>
           <Up at={T0.nav + 0.14} className="ml-auto flex items-center gap-2 text-[15px]">
             <a href="#" className="st flex h-10 items-center rounded-[12px] px-4 font-[500] text-[#a1a1a6] hover:text-[#f4f4f5]">Sign in</a>
-            <Primary h={40} className="rounded-[12px] px-4">Start deploying</Primary>
+            <Primary h={40} tile={false} className="rounded-[12px]">Start deploying</Primary>
           </Up>
         </header>
 
@@ -75,13 +82,13 @@ export default function Landing() {
           </h1>
           <Up at={T0.sub} className="mt-5"><p className="text-[18px] font-[450] leading-[28px] tracking-[-0.011em] text-[#a1a1a6]">Kite runs your app in ten edge regions and hands you<br />the fix the moment one of them slows down.</p></Up>
           <Up at={T0.cta} className="mt-8 flex items-center gap-3 text-[16px]">
-            <Primary className="px-5">Start deploying<ArrowRight size={17} strokeWidth={2.2} /></Primary>
-            <Secondary className="px-5">Book a demo</Secondary>
+            <Primary>Start deploying</Primary>
+            <Secondary>Book a demo</Secondary>
           </Up>
         </section>
 
         {/* double-bezel frame, 64px under the CTAs, the full dashboard inside, dissolving at the fold */}
-        <motion.div className="absolute left-1/2 z-10 -translate-x-1/2" style={{ top: 513, width: FW, transformOrigin: '50% 0%' }}
+        <motion.div className="absolute left-1/2 z-10 -translate-x-1/2" style={{ top: 515, width: FW, transformOrigin: '50% 0%' }}
           initial={{ opacity: 0, y: 64, scale: 0.97 }} animate={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ y: { delay: T0.frame, duration: 1.4, ease: ease.reveal }, scale: { delay: T0.frame, duration: 1.4, ease: ease.out }, opacity: { delay: T0.frame, duration: 0.5 } }}>
           <div className="rounded-[22px]" style={{ padding: PAD, background: 'linear-gradient(180deg, rgb(255 255 255 / 0.06), rgb(255 255 255 / 0.02))', boxShadow: '0 0 0 1px rgb(255 255 255 / 0.08), inset 0 1px 0 rgb(255 255 255 / 0.07), 0 30px 70px -24px rgb(0 0 0 / 0.9)' }}>
