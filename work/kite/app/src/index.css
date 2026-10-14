@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import "@fontsource-variable/mona-sans";
+@import "@fontsource-variable/inter";
 @import "@fontsource-variable/geist-mono";
 /* Apple continuous corners on every rounded box (founder: squircles always); pills and circles stay round */
 @import "./squircle.css";
