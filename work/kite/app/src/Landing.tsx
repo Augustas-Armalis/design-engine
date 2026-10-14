@@ -55,7 +55,8 @@ export default function Landing() {
         <HeroMap />
         <header className="absolute inset-x-[144px] top-0 z-30 flex h-[72px] items-center">
           <Up at={T0.nav}><a href="#" className="flex h-10 items-center"><KiteLogo size={26} /></a></Up>
-          <nav aria-label="Main" className="ml-12">
+          <span aria-hidden className="ml-7 h-5 w-px bg-[rgb(255_255_255/0.14)]" />
+          <nav aria-label="Main" className="ml-7">
             <Up at={T0.nav + 0.07}>
               <ul className="flex items-center gap-7 text-[15px] font-[500] text-[#a1a1a6]">
                 {['Product', 'Regions', 'Pricing', 'Docs', 'Changelog'].map((l) => <li key={l}><a href="#" className="st flex h-10 items-center hover:text-[#f4f4f5]">{l}</a></li>)}
