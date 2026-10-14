@@ -12,9 +12,9 @@ const line = (k: 'p50' | 'p95' | 'p99') => series.map((d, i) => `${i ? 'L' : 'M'
 
 export default function Chart({ at = 0 }: { at?: number }) {
   const still = useReducedMotion()
-  const DRAW = 0.85, draw0 = at + 0.08
+  const DRAW = 1.3, draw0 = at + 0.15
   const passes = (i: number) => draw0 + DRAW * (i / (series.length - 1)) // when the line reaches point i
-  const fade = (delay: number) => (still ? {} : { initial: { opacity: 0 }, animate: { opacity: 1 }, transition: { delay, duration: 0.35 } })
+  const fade = (delay: number) => (still ? {} : { initial: { opacity: 0 }, animate: { opacity: 1 }, transition: { delay, duration: 0.6 } })
   const drawn = (delay: number) => (still ? {} : { initial: { pathLength: 0 }, animate: { pathLength: 1 }, transition: { delay, duration: DRAW, ease: ease.inOut } })
   const [h, setH] = useState<number | null>(null)
   const d = h != null ? series[h] : null
@@ -34,12 +34,12 @@ export default function Chart({ at = 0 }: { at?: number }) {
         <motion.rect x={x(57)} width={x(70) - x(57)} y={PT} height={H - PT - PB} fill="var(--red)" fillOpacity="0.045" {...fade(passes(57))} />
         <motion.text x={x(57) + 6} y={PT + 12} className="fill-[var(--red)] text-[11px] font-[500]" {...fade(passes(62))}>sin1 · p95 elevated</motion.text>
         <motion.path d={`${line('p95')} L${x(series.length - 1)} ${y(0)} L0 ${y(0)} Z`} fill="url(#p95f)" {...fade(draw0 + DRAW * 0.85)} />
-        <motion.path d={line('p99')} fill="none" stroke="var(--sub)" strokeOpacity="0.45" strokeWidth="1" strokeDasharray="2 3" {...fade(draw0 + 0.25)} />
-        <motion.path d={line('p50')} fill="none" stroke="var(--sub)" strokeOpacity="0.7" strokeWidth="1.25" {...drawn(draw0 + 0.06)} />
+        <motion.path d={line('p99')} fill="none" stroke="var(--sub)" strokeOpacity="0.45" strokeWidth="1" strokeDasharray="2 3" {...fade(draw0 + 0.4)} />
+        <motion.path d={line('p50')} fill="none" stroke="var(--sub)" strokeOpacity="0.7" strokeWidth="1.25" {...drawn(draw0 + 0.1)} />
         <motion.path d={line('p95')} fill="none" stroke="url(#p95s)" strokeWidth="4" strokeOpacity="0.55" filter="url(#lineglow)" {...drawn(draw0)} />
         <motion.path d={line('p95')} fill="none" stroke="url(#p95s)" strokeWidth="1.75" strokeLinejoin="round" {...drawn(draw0)} />
         {deploys.map((dp) => (
-          <motion.g key={dp.id} style={{ transformBox: 'fill-box', transformOrigin: 'bottom' }} {...(still ? {} : { initial: { opacity: 0, scaleY: 0 }, animate: { opacity: 1, scaleY: 1 }, transition: { delay: passes(dp.i), type: 'spring', stiffness: 600, damping: 28 } })}><line x1={x(dp.i)} x2={x(dp.i)} y1={H - PB - 8} y2={H - PB} stroke={dp.bad ? 'var(--red)' : 'var(--sub)'} strokeWidth="1.5" /><circle cx={x(dp.i)} cy={H - PB - 10} r={2.5} fill={dp.bad ? 'var(--red)' : 'var(--sub)'} /></motion.g>
+          <motion.g key={dp.id} style={{ transformBox: 'fill-box', transformOrigin: 'bottom' }} {...(still ? {} : { initial: { opacity: 0, scaleY: 0 }, animate: { opacity: 1, scaleY: 1 }, transition: { delay: passes(dp.i), duration: 0.5, ease: ease.out } })}><line x1={x(dp.i)} x2={x(dp.i)} y1={H - PB - 8} y2={H - PB} stroke={dp.bad ? 'var(--red)' : 'var(--sub)'} strokeWidth="1.5" /><circle cx={x(dp.i)} cy={H - PB - 10} r={2.5} fill={dp.bad ? 'var(--red)' : 'var(--sub)'} /></motion.g>
         ))}
         {[0, 16, 32, 48, 64, 80].map((i) => <motion.text key={i} {...fade(passes(i))} x={x(i)} y={H - 6} textAnchor={i ? 'middle' : 'start'} className="tnum fill-[var(--soft)] text-[11px]">{timeLabel(i)}</motion.text>)}
         {d && <g><line x1={x(h!)} x2={x(h!)} y1={PT} y2={H - PB} stroke="var(--ink)" strokeOpacity="0.2" /><circle cx={x(h!)} cy={y(d.p95)} r={4} fill={h! >= 57 && h! <= 70 ? 'var(--red)' : '#fff'} stroke="#121213" strokeWidth="2" /></g>}
