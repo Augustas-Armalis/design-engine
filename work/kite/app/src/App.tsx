@@ -145,10 +145,10 @@ export default function App() {
                 )}
                 </AnimatePresence>
                 <div className="flex-1 px-1.5 pb-1.5">
-                  {[...regions].sort((a, b) => b.rps - a.rps).slice(0, 6).map((r, ri) => {
+                  {[...regions].sort((a, b) => b.rps - a.rps).filter((r, _i, a) => r.state === "hot" || a.filter((q) => q.state !== "hot").indexOf(r) < 4).map((r, ri) => {
                     const bad = r.state === 'hot' && !rerouted && flared
                     return (
-                      <motion.div layout="position" initial={{ opacity: 0, x: 10 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: T.regions + 0.3 + ri * 0.055, duration: 0.55, ease: ease.out, layout: { duration: 0.5, ease: ease.out } }} key={r.code} className="st grid h-9 grid-cols-[46px_1fr_92px_52px] items-center gap-2 rounded-[8px] px-2.5 hover:bg-[var(--hover)]">
+                      <motion.div layout="position" initial={{ opacity: 0, x: 10 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: T.regions + 0.3 + ri * 0.055, duration: 0.55, ease: ease.out, layout: { duration: 0.5, ease: ease.out } }} key={r.code} className="st grid h-8 grid-cols-[46px_1fr_92px_52px] items-center gap-2 rounded-[8px] px-2.5 hover:bg-[var(--hover)]">
                         <span className={cx('mono transition-colors duration-500', bad ? 'text-[var(--red)]' : 'text-[var(--sub)]')}>{r.code}</span>
                         <span className="truncate text-[13px]">{r.city}</span>
                         <span className="h-1 overflow-hidden rounded-full bg-[var(--s3)]"><motion.span initial={{ width: 0 }} animate={{ width: `${(r.rps / 420000) * 100}%` }} transition={{ delay: T.regions + 0.45 + ri * 0.055, duration: 0.9, ease: ease.out }} className={cx('block h-full rounded-full transition-colors duration-500', bad ? 'bg-[var(--red)]' : 'bg-[linear-gradient(90deg,rgb(255_255_255/0.25),rgb(255_255_255/0.8))]')} /></span>
@@ -164,13 +164,13 @@ export default function App() {
               <Card at={T.latency}>
                 <Head icon={Gauge} title="Latency" meta={<span className="text-[12px] text-[var(--soft)]">all regions · 24h</span>}
                   right={<span className="flex items-center gap-3 text-[12px] text-[var(--soft)]"><span className="flex items-center gap-1.5"><span className="h-[2px] w-3 rounded-full bg-[#ededed]" />p95</span><span className="flex items-center gap-1.5"><span className="h-[2px] w-3 rounded-full bg-[var(--sub)] opacity-70" />p50</span><span className="flex items-center gap-1.5"><span className="h-px w-3 border-t border-dashed border-[var(--sub)] opacity-60" />p99</span></span>} />
-                <div className="px-4 pb-3 pt-3"><Chart at={T.latency} /></div>
+                <div className="px-4 pb-2 pt-2"><Chart at={T.latency} /></div>
               </Card>
               <Card at={T.deploys}>
                 <Head icon={Rocket} title="Deployments" right={<a href="#" className="st flex h-7 items-center gap-1 rounded-[8px] px-2 text-[12px] font-[550] text-[var(--sub)] hover:bg-[var(--hover)]">All<ArrowUpRight size={12} /></a>} />
                 <div className="px-1.5 pb-2 pt-1.5">
                   {deployments.map((d, di) => (
-                    <motion.div initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: T.deploys + 0.3 + di * 0.07, duration: 0.55, ease: ease.out }} key={d.id} className="st flex h-[52px] items-center gap-3 rounded-[8px] px-2.5 hover:bg-[var(--hover)]">
+                    <motion.div initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: T.deploys + 0.3 + di * 0.07, duration: 0.55, ease: ease.out }} key={d.id} className="st flex h-11 items-center gap-3 rounded-[8px] px-2.5 hover:bg-[var(--hover)]">
                       <span className={cx('size-2 shrink-0 rounded-full', d.state === 'rolled-back' ? 'bg-[var(--red)]' : d.state === 'building' ? 'bg-[#ededed] shadow-[0_0_0_3px_rgb(255_255_255/0.12),0_0_8px_rgb(255_255_255/0.5)]' : 'bg-[var(--sub)] opacity-60')} />
                       <span className="min-w-0 flex-1 leading-[17px]"><span className="block truncate text-[13px] font-[550]">{d.msg}</span><span className="mono block truncate text-[11.5px] text-[var(--soft)]">{d.id} · {d.branch} · {d.sha}</span></span>
                       <span className="flex flex-col items-end gap-0.5"><Avatar t={d.who} /><span className="tnum text-[11.5px] text-[var(--soft)]">{d.ago}</span></span>

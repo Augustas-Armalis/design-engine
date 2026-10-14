@@ -11,7 +11,7 @@ import { feature } from 'topojson-client'
 import land110 from 'world-atlas/land-110m.json'
 import { regions, series, fmtK } from './data'
 
-const W = 712, H = 336, STEP = 4.3
+const W = 712, H = 300, STEP = 4.3
 const FLOWS: [string, string][] = [['iad1', 'fra1'], ['iad1', 'sfo1'], ['iad1', 'gru1'], ['fra1', 'bom1'], ['hnd1', 'hkg1'], ['hkg1', 'syd1'], ['lhr1', 'iad1']]
 
 export default function Map({ rerouted = false, at = 0 }: { rerouted?: boolean; at?: number }) {

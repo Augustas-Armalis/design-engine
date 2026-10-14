@@ -5,7 +5,7 @@ import { motion, useReducedMotion } from 'motion/react'
 import { ease } from './anim'
 import { deploys, series, timeLabel } from './data'
 
-const W = 712, H = 210, PT = 14, PB = 26, PR = 40, MAX = 180
+const W = 712, H = 170, PT = 12, PB = 24, PR = 40, MAX = 180
 const x = (i: number) => (i / (series.length - 1)) * (W - PR)
 const y = (v: number) => PT + (1 - v / MAX) * (H - PT - PB)
 const line = (k: 'p50' | 'p95' | 'p99') => series.map((d, i) => `${i ? 'L' : 'M'}${x(i).toFixed(1)} ${y(d[k]).toFixed(1)}`).join(' ')
