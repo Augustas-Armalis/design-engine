@@ -3336,6 +3336,34 @@
   "origin": "founder"
  },
  {
+  "id": "founder.founder-taste#110",
+  "text": "[founder] Background product elements stay monochrome: no red state, pulses or extra chips in the hero backdrop (the story colour belongs inside the product); when the backdrop needs more presence, make the map bigger, not busier. Keep labels inside the rails.",
+  "why": "Founder on Kite's livelier map (red sin1, pulse, six chips, comets): \"even worse now, no red pills, just white... make map bigger\".",
+  "applies": "hero backgrounds.",
+  "check": "no chroma in the backdrop layer; labels fully inside the rail box.",
+  "checkable": true,
+  "source": "founder, 2026-10-14, Kite hero",
+  "file": "founder/founder-taste.md",
+  "section": "5. Exceptions & judgement calls",
+  "tags": [
+   "founder",
+   "taste",
+   "hero",
+   "nav",
+   "typography",
+   "copy",
+   "icons",
+   "logo",
+   "layout",
+   "product-card",
+   "background",
+   "buttons",
+   "quality-bar"
+  ],
+  "kind": "source",
+  "origin": "founder"
+ },
+ {
   "id": "dos-and-donts.dos-and-donts#1",
   "text": "[T13] Use as few font sizes as possible in a form; differentiate size only between sections (labels/placeholders at one small size) and actions (the button label larger). The good mock uses 12 for both label and placeholder and 32 for the button label; the bad mock mixes 16 (label), 12 (placeholder), 32 (button).",
   "why": "Every extra size is another thing to decode, so the form takes longer to process.",
