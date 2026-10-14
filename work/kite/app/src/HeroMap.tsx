@@ -5,11 +5,11 @@ import { useMemo } from 'react'
 import { motion, useReducedMotion } from 'motion/react'
 import { geoEqualEarth } from 'd3-geo'
 import { landMask } from './geo'
-import { regions, fmtK } from './data'
+import { regions } from './data'
 
 const W = 1200, H = 470, STEP = 4.6
 const ROUTES: [string, string][] = [['sfo1', 'iad1'], ['iad1', 'lhr1'], ['fra1', 'bom1'], ['hkg1', 'hnd1']]
-const LABEL = ['sfo1', 'hnd1']
+const LABEL = ['sfo1', 'iad1', 'gru1', 'lhr1', 'fra1', 'bom1', 'hnd1', 'hkg1', 'syd1']
 
 export default function HeroMap() {
   const still = useReducedMotion()
@@ -47,11 +47,21 @@ export default function HeroMap() {
           <g key={r.code}><circle cx={x} cy={y} r={16} fill="url(#hm-glow)" /><circle cx={x} cy={y} r={4.6} fill="#0a0a0b" stroke="#fff" strokeOpacity="0.28" /><circle cx={x} cy={y} r={2.4} fill="#fff" /></g>
         ) })}
       </svg>
-      {LABEL.map((c) => { const [x, y] = P[c], r = regions.find((q) => q.code === c)!, left = c === 'hnd1'; return (
-        <span key={c} className="absolute flex h-[19px] -translate-y-1/2 items-center gap-1 rounded-full bg-[rgb(22_22_24/0.85)] px-1.5 shadow-[0_0_0_1px_rgb(255_255_255/0.08)]" style={{ top: y, ...(left ? { right: W - x + 10 } : { left: x + 10 }) }}>
-          <span className="font-mono text-[10.5px] text-[#ededed]">{c}</span><span className="text-[10.5px] text-[#8b8b90]">{fmtK(r.rps)}</span>
-        </span>
-      ) })}
+      {LABEL.map((c) => {
+        const [x, y] = P[c], r = regions.find((q) => q.code === c)!
+        // keep labels out of the reading zone (headline, subtitle, CTAs) and inside the rails
+        if (x > 200 && x < 1000 && y < 420) return null
+        if (y > 400) return null
+        const left = x > W / 2
+        return (
+          <span key={c} className="absolute flex h-[24px] -translate-y-1/2 items-center gap-1.5 rounded-full px-2.5 backdrop-blur-md"
+            style={{ top: y, ...(left ? { right: W - x + 12 } : { left: x + 12 }), background: 'rgb(28 28 31 / 0.55)', boxShadow: '0 0 0 1px rgb(255 255 255 / 0.09), inset 0 1px 0 rgb(255 255 255 / 0.08), 0 6px 16px -6px rgb(0 0 0 / 0.7)' }}>
+            <span className="font-mono text-[11px] text-[#ededed]">{c}</span>
+            <span className="h-2.5 w-px bg-[rgb(255_255_255/0.14)]" />
+            <span className="text-[11px] tabular-nums text-[#8b8b90]">{r.p95 > 100 ? 38 : r.p95} ms</span>
+          </span>
+        )
+      })}
     </motion.div>
   )
 }
