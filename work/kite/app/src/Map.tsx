@@ -20,10 +20,10 @@ export default function Map({ rerouted = false, at = 0 }: { rerouted?: boolean; 
   const [stage, setStage] = useState(still ? 3 : 0)
   useEffect(() => {
     if (still) return
-    const ids = [[1, at + 1.55], [2, at + 2.3], [3, SIN]].map(([s, t]) => window.setTimeout(() => setStage((p) => Math.max(p, s)), t * 1000))
+    const ids = [[1, at + 0.62], [2, at + 0.98], [3, SIN]].map(([s, t]) => window.setTimeout(() => setStage((p) => Math.max(p, s)), t * 1000))
     return () => ids.forEach(clearTimeout)
   }, [at, still])
-  const scan = (x: number) => at + 0.3 + (x / W) * 1.1 // when the beam passes x
+  const scan = (x: number) => at + 0.1 + (x / W) * 0.55 // when the beam passes x
   const { dots, P } = useMemo(() => {
     const land = feature(land110 as never, (land110 as never as { objects: { land: never } }).objects.land) as never
     const proj = geoEqualEarth().fitExtent([[-14, -46], [W + 14, H + 96]], { type: 'Sphere' } as never)
@@ -38,6 +38,11 @@ export default function Map({ rerouted = false, at = 0 }: { rerouted?: boolean; 
       const [sx, sy] = P.sin1; const red = Math.exp(-((x - sx) ** 2 + (y - sy) ** 2) / (2 * 28 ** 2))
       dots.push({ x, y, a: Math.min(0.62, 0.075 + heat * 0.42), red })
     }
+    // centre the land in the card: measure the dot field's bounds and shift dots + nodes by the difference
+    const xs = dots.map((d) => d.x), ys = dots.map((d) => d.y)
+    const dx = Math.round((W - (Math.min(...xs) + Math.max(...xs))) / 2), dy = Math.round((H - (Math.min(...ys) + Math.max(...ys))) / 2)
+    for (const d of dots) { d.x += dx; d.y += dy }
+    for (const k of Object.keys(P)) P[k] = [P[k][0] + dx, P[k][1] + dy]
     return { dots, P }
   }, [])
   const max = Math.max(...regions.map((r) => r.rps))
@@ -69,12 +74,12 @@ export default function Map({ rerouted = false, at = 0 }: { rerouted?: boolean; 
           {dots.map((d, i) => {
             const red = flare && d.red > 0.18
             return <circle key={i} cx={d.x} cy={d.y} r={0.95} className="dot" fill={red ? 'var(--red)' : '#fff'} fillOpacity={red ? Math.min(0.75, 0.2 + d.red * 0.6) : d.a}
-              style={{ animationDelay: `${scan(d.x) + (d.y / H) * 0.12}s`, transitionDelay: red ? `${Math.hypot(d.x - sx, d.y - sy) / 140}s` : '0s' }} />
+              style={{ animationDelay: `${scan(d.x) + (d.y / H) * 0.12}s`, transitionDelay: red ? `${Math.hypot(d.x - sx, d.y - sy) / 320}s` : '0s' }} />
           })}
         </g>
         {FLOWS.map(([a, b], i) => { const d = arc(P[a], P[b]); return (
           <g key={a + b}>
-            <motion.path d={d} fill="none" stroke={`url(#g-${a}-${b})`} strokeWidth="1" initial={still ? false : { pathLength: 0, opacity: 0 }} animate={stage >= 1 ? { pathLength: 1, opacity: 1 } : undefined} transition={{ duration: 0.9, delay: i * 0.06, ease: ease.inOut }} />
+            <motion.path d={d} fill="none" stroke={`url(#g-${a}-${b})`} strokeWidth="1" initial={still ? false : { pathLength: 0, opacity: 0 }} animate={stage >= 1 ? { pathLength: 1, opacity: 1 } : undefined} transition={{ duration: 0.5, delay: i * 0.03, ease: ease.inOut }} />
             {stage >= 2 && <>
               <circle r="1.6" fill="#fff" filter="url(#soft)" className="pulse"><animateMotion dur={`${3.2 + (i % 3) * 0.7}s`} begin={`${i * 0.25}s`} repeatCount="indefinite" path={d} keyPoints="0;1" keyTimes="0;1" calcMode="spline" keySplines="0.45 0 0.25 1" /></circle>
               <circle r="0.9" fill="#fff" className="pulse"><animateMotion dur={`${3.2 + (i % 3) * 0.7}s`} begin={`${i * 0.25}s`} repeatCount="indefinite" path={d} keyPoints="0;1" keyTimes="0;1" calcMode="spline" keySplines="0.45 0 0.25 1" /></circle>
@@ -82,13 +87,13 @@ export default function Map({ rerouted = false, at = 0 }: { rerouted?: boolean; 
           </g>) })}
         {flare && (
           <motion.path d={reroute} fill="none" stroke="url(#g-reroute)" strokeWidth="1.25" strokeDasharray="2 3.5" strokeLinecap="round" style={{ animation: 'dash 1.2s linear infinite' }} className="pulse"
-            initial={still ? false : { pathLength: 0, opacity: 0 }} animate={{ pathLength: 1, opacity: 1 }} transition={{ delay: 0.3, duration: 0.8, ease: ease.inOut }} />
+            initial={still ? false : { pathLength: 0, opacity: 0 }} animate={{ pathLength: 1, opacity: 1 }} transition={{ delay: 0.1, duration: 0.45, ease: ease.inOut }} />
         )}
         {regions.map((r) => {
           const [x, y] = P[r.code], rad = 2 + Math.sqrt(r.rps / max) * 1.6, hot = r.state === 'hot' && flare
           return (
             <motion.g key={r.code} style={{ transformBox: 'fill-box', transformOrigin: 'center' }} initial={still ? false : { opacity: 0, scale: 0.2 }} animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: scan(x) + 0.05, type: 'spring', stiffness: 420, damping: 18 }}>
+              transition={{ delay: scan(x) + 0.03, type: 'spring', stiffness: 520, damping: 26 }}>
               <circle cx={x} cy={y} r={rad * 7} fill="url(#glow)" style={{ opacity: hot ? 0 : 1, transition: 'opacity .6s' }} />
               <circle cx={x} cy={y} r={rad * 7} fill="url(#glow-red)" style={{ opacity: hot ? 1 : 0, transition: 'opacity .6s' }} />
               {hot && <circle cx={x} cy={y} r={rad + 2} fill="none" stroke="var(--red)" strokeWidth="1" className="pulse" style={{ transformBox: 'fill-box', transformOrigin: 'center', animation: 'pulse-ring 1.8s cubic-bezier(.22,1,.36,1) infinite' }} />}
@@ -101,7 +106,7 @@ export default function Map({ rerouted = false, at = 0 }: { rerouted?: boolean; 
       {/* the scanning beam: a soft light bar with a bright core, crossing once */}
       {!still && (
         <motion.div aria-hidden className="pointer-events-none absolute inset-y-0 w-[120px]" initial={{ x: -140, opacity: 0 }} animate={{ x: [-140, W + 20], opacity: [0, 1, 1, 0] }}
-          transition={{ delay: at + 0.3, duration: 1.15, ease: ease.inOut, opacity: { delay: at + 0.3, duration: 1.15, times: [0, 0.1, 0.85, 1] } }}
+          transition={{ delay: at + 0.1, duration: 0.62, ease: ease.inOut, opacity: { delay: at + 0.1, duration: 0.62, times: [0, 0.1, 0.85, 1] } }}
           style={{ background: 'linear-gradient(90deg, transparent, rgb(255 255 255 / 0.05) 70%, rgb(255 255 255 / 0.12) 96%, transparent)', maskImage: 'linear-gradient(180deg, transparent, #000 15%, #000 85%, transparent)' }}>
           <span className="absolute inset-y-[10%] right-[4px] w-px bg-[linear-gradient(180deg,transparent,rgb(255_255_255/0.7),transparent)]" />
         </motion.div>
@@ -110,7 +115,7 @@ export default function Map({ rerouted = false, at = 0 }: { rerouted?: boolean; 
       {regions.map((r) => {
         const [x, y] = P[r.code], left = ['sfo1', 'lhr1', 'gru1', 'bom1'].includes(r.code), hot = r.state === 'hot' && flare
         return (
-          <motion.span key={r.code} initial={still ? false : { opacity: 0, x: left ? 6 : -6, filter: 'blur(4px)' }} animate={{ opacity: 1, x: 0, filter: 'blur(0px)' }} transition={{ delay: scan(x) + 0.16, duration: 0.5, ease: ease.out }}
+          <motion.span key={r.code} initial={still ? false : { opacity: 0, x: left ? 6 : -6, filter: 'blur(4px)' }} animate={{ opacity: 1, x: 0, filter: 'blur(0px)' }} transition={{ delay: scan(x) + 0.07, duration: 0.3, ease: ease.out }}
             className={`pointer-events-none absolute flex h-[19px] -translate-y-1/2 items-center gap-1 rounded-full px-1.5 shadow-[0_0_0_1px_rgb(255_255_255/0.08),0_4px_10px_-2px_rgb(0_0_0/0.6)] backdrop-blur-sm transition-colors duration-500 ${hot ? 'bg-[rgb(60_22_20/0.85)]' : 'bg-[rgb(22_22_24/0.85)]'}`}
             style={{ top: y, ...(left ? { right: W - x + 11 } : { left: x + 11 }) }}>
             <span className={`mono text-[10.5px] transition-colors duration-500 ${hot ? 'text-[var(--red)]' : 'text-[var(--ink)]'}`}>{r.code}</span>
@@ -121,15 +126,15 @@ export default function Map({ rerouted = false, at = 0 }: { rerouted?: boolean; 
       {/* tactile read-out springs in once sin1 flares; its sparkline draws */}
       {flare && (
         <motion.div className="absolute w-[236px] rounded-[14px] p-1 shadow-[var(--pop)]" style={{ left: sx - 262, top: sy - 28, background: 'linear-gradient(180deg,#1d1d1f,#161618)', transformOrigin: '100% 20%' }}
-          initial={still ? false : { opacity: 0, scale: 0.92, x: 14, filter: 'blur(6px)' }} animate={{ opacity: 1, scale: 1, x: 0, filter: 'blur(0px)' }} transition={{ delay: 0.45, type: 'spring', stiffness: 260, damping: 24, opacity: { delay: 0.45, duration: 0.3 } }}>
+          initial={still ? false : { opacity: 0, scale: 0.94, x: 12 }} animate={{ opacity: 1, scale: 1, x: 0 }} transition={{ delay: 0.18, type: 'spring', stiffness: 380, damping: 30, opacity: { delay: 0.18, duration: 0.22 } }}>
           <div className="flex items-center gap-2 px-2.5 pb-1 pt-2">
             <span className="relative grid size-2 place-items-center"><span className="absolute size-2 rounded-full bg-[var(--red)] opacity-40" /><span className="size-1.5 rounded-full bg-[var(--red)]" /></span>
             <span className="text-[13px] font-[600]">Singapore</span><span className="mono ml-auto text-[var(--soft)]">sin1 · p95</span>
           </div>
           <svg width="208" height="36" className="mx-2.5 my-1 block overflow-visible" aria-hidden>
             <defs><linearGradient id="sp" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stopColor="var(--red)" stopOpacity="0.28" /><stop offset="1" stopColor="var(--red)" stopOpacity="0" /></linearGradient></defs>
-            <motion.path d={`${spark} L190 34 L0 34 Z`} fill="url(#sp)" initial={still ? false : { opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.3, duration: 0.5 }} />
-            <motion.path d={spark} fill="none" stroke="var(--red)" strokeWidth="1.5" strokeLinejoin="round" initial={still ? false : { pathLength: 0 }} animate={{ pathLength: 1 }} transition={{ delay: 0.6, duration: 0.9, ease: ease.inOut }} />
+            <motion.path d={`${spark} L190 34 L0 34 Z`} fill="url(#sp)" initial={still ? false : { opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.62, duration: 0.35 }} />
+            <motion.path d={spark} fill="none" stroke="var(--red)" strokeWidth="1.5" strokeLinejoin="round" initial={still ? false : { pathLength: 0 }} animate={{ pathLength: 1 }} transition={{ delay: 0.26, duration: 0.5, ease: ease.inOut }} />
           </svg>
           <div className="grid grid-cols-3 gap-px overflow-hidden rounded-[10px] bg-[rgb(255_255_255/0.06)]">
             {[['p95', '124', 'ms', true], ['req/s', fmtK(157800), '', false], ['5xx', '0.36', '%', true]].map(([k, v, u, bad]) => (

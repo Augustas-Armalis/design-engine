@@ -5,18 +5,18 @@ import { useEffect, useState } from 'react'
 import { animate, motion, useReducedMotion } from 'motion/react'
 
 export const ease = { reveal: [0.26, 0.32, 0.14, 1], out: [0.22, 1, 0.36, 1], inOut: [0.65, 0, 0.35, 1] } as const
-export const T = { side: 0.05, top: 0.12, title: 0.22, kpi: 0.36, map: 0.52, regions: 0.66, latency: 0.84, deploys: 0.94 }
-export const SIN = T.map + 2.05 // the moment the degraded region flares
+export const T = { side: 0, top: 0.04, title: 0.08, kpi: 0.12, map: 0.18, regions: 0.24, latency: 0.3, deploys: 0.34 }
+export const SIN = T.map + 1.0 // the moment the degraded region flares
 
 /** rises in like a sheet of glass settling: y, a touch of scale and blur, Kaching reveal curve */
 export const rise = (at: number, y = 18) => ({
-  initial: { opacity: 0, y, scale: 0.985, filter: 'blur(6px)' },
-  animate: { opacity: 1, y: 0, scale: 1, filter: 'blur(0px)' },
-  transition: { delay: at, duration: 1.0, ease: ease.reveal, opacity: { delay: at, duration: 0.5, ease: ease.out } },
+  initial: { opacity: 0, y, scale: 0.99 },
+  animate: { opacity: 1, y: 0, scale: 1 },
+  transition: { delay: at, duration: 0.6, ease: ease.out, opacity: { delay: at, duration: 0.35, ease: ease.out } },
 })
 
 /** counts the number inside a formatted value ("1.84B", "0.021", "94.2") up from zero, keeping its decimals */
-export function CountUp({ value, at, dur = 1.1 }: { value: string; at: number; dur?: number }) {
+export function CountUp({ value, at, dur = 0.75 }: { value: string; at: number; dur?: number }) {
   const still = useReducedMotion()
   const m = value.match(/^([^\d]*)([\d.,]+)(.*)$/)
   const target = m ? parseFloat(m[2].replace(/,/g, '')) : 0
