@@ -47,7 +47,7 @@ const W2 = ({ children, i }: { children: ReactNode; i: number }) => (
 export default function Landing() {
   const [dash, setDash] = useState(false)
   useEffect(() => { const id = window.setTimeout(() => setDash(true), (T0.frame + 0.2) * 1000); return () => clearTimeout(id) }, [])
-  const FW = 1136, PAD = 6, ZOOM = (FW - PAD * 2) / 1440
+  const FW = 1136, PAD = 9, ZOOM = (FW - PAD * 2) / 1440
   return (
     <MotionConfig reducedMotion="user">
       <div className="relative mx-auto h-[900px] w-[1440px] overflow-hidden bg-[#0a0a0b] text-[#f4f4f5]" style={{ fontFamily: '"Inter Variable", system-ui, sans-serif', fontOpticalSizing: 'auto', fontFeatureSettings: '"cv11", "ss01"', ['--font-sans' as string]: '"Inter Variable", system-ui, sans-serif' }}>
@@ -84,7 +84,7 @@ export default function Landing() {
         <motion.div className="absolute left-1/2 z-10 -translate-x-1/2" style={{ top: 515, width: FW, transformOrigin: '50% 0%' }}
           initial={{ opacity: 0, y: 64, scale: 0.97 }} animate={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ y: { delay: T0.frame, duration: 1.4, ease: ease.reveal }, scale: { delay: T0.frame, duration: 1.4, ease: ease.out }, opacity: { delay: T0.frame, duration: 0.5 } }}>
-          <div className="rounded-[22px]" style={{ padding: PAD, background: 'linear-gradient(180deg, rgb(255 255 255 / 0.06), rgb(255 255 255 / 0.02))', boxShadow: '0 0 0 1px rgb(255 255 255 / 0.08), inset 0 1px 0 rgb(255 255 255 / 0.07), 0 30px 70px -24px rgb(0 0 0 / 0.9)' }}>
+          <div className="rounded-[25px]" style={{ padding: PAD, background: 'linear-gradient(180deg, rgb(255 255 255 / 0.075), rgb(255 255 255 / 0.025))', boxShadow: '0 0 0 1px rgb(255 255 255 / 0.08), inset 0 1px 0 rgb(255 255 255 / 0.07), 0 30px 70px -24px rgb(0 0 0 / 0.9)' }}>
             <div role="img" aria-label="The Kite dashboard: traffic by region, latency and deployments, sample data" inert className="overflow-hidden rounded-[16px] shadow-[0_0_0_1px_rgb(0_0_0/0.7)]" style={{ height: 900 * ZOOM, color: 'var(--ink)' }}>
               <div style={{ zoom: ZOOM }}>{dash ? <App embedded /> : <div className="h-[900px] w-[1440px] bg-[var(--canvas)]" />}</div>
             </div>
