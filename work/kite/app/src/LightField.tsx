@@ -16,11 +16,9 @@ export default function LightField({ w, h, className = '' }: { w: number; h: num
       ctx.strokeStyle = col.replace('A', String(a)); ctx.lineWidth = width; ctx.lineCap = 'round'
       ctx.beginPath(); ctx.moveTo(-200, h * 1.02 + off); ctx.bezierCurveTo(w * 0.3, h * 0.66 + off, w * 0.56, h * 0.56 + off, w + 240, h * 0.3 + off); ctx.stroke(); ctx.restore()
     }
-    ribbon(40, 260, 0.10, 'rgba(255,236,222,A)', 90)
-    ribbon(0, 120, 0.20, 'rgba(255,244,236,A)', 46)
-    ribbon(-26, 46, 0.34, 'rgba(255,250,246,A)', 18)
-    ribbon(-40, 10, 0.55, 'rgba(255,255,255,A)', 5)
-    ribbon(70, 70, 0.09, 'rgba(255,170,140,A)', 40)
+    ribbon(30, 320, 0.07, 'rgba(255,240,230,A)', 110)
+    ribbon(10, 160, 0.075, 'rgba(255,246,240,A)', 70)
+    ribbon(60, 120, 0.03, 'rgba(255,180,150,A)', 60)
     // fall to canvas before the reading zone (top) and toward the bottom corners
     const top = ctx.createLinearGradient(0, 0, 0, h)
     top.addColorStop(0, 'rgba(11,11,12,0.97)'); top.addColorStop(0.4, 'rgba(11,11,12,0.7)'); top.addColorStop(0.58, 'rgba(11,11,12,0)')
@@ -30,7 +28,7 @@ export default function LightField({ w, h, className = '' }: { w: number; h: num
     for (let i = 0; i < d.length; i += 4) {
       const l = (d[i] + d[i + 1] + d[i + 2]) / 765
       if (l < 0.06) continue
-      const n = (Math.random() - 0.5) * 34 * Math.min(1, l * 2.2)
+      const n = (Math.random() - 0.5) * 14 * Math.min(1, l * 3)
       d[i] += n; d[i + 1] += n; d[i + 2] += n
     }
     ctx.putImageData(img, 0, 0)
