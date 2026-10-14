@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "id": "reel-4k60",
+  "dir": "/Users/augustas/Documents/Larpo front-end engine/work/kite/reel-4k60",
+  "createdAt": "2026-10-14T15:43:42.288Z",
+  "settings": {
+    "url": "http://localhost:4360",
+    "width": 1440,
+    "height": 900,
+    "scale": 2.6666666666666665,
+    "scrollY": 0,
+    "fps": 60,
+    "startMs": 0,
+    "durationMs": 6000,
+    "holdMs": 500,
+    "region": {
+      "type": "viewport"
+    },
+    "actions": [],
+    "cursor": false,
+    "colorScheme": "light",
+    "seed": 24301,
+    "realRandom": false,
+    "keepFrames": false,
+    "presets": []
+  },
+  "size": {
+    "width": 3840,
+    "height": 2400
+  },
+  "frames": 360,
+  "browser": "153.0.8010.12",
+  "files": {
+    "master": "/Users/augustas/Documents/Larpo front-end engine/work/kite/reel-4k60/master.nut",
+    "proxy": "/Users/augustas/Documents/Larpo front-end engine/work/kite/reel-4k60/proxy.mp4",
+    "thumbs": "/Users/augustas/Documents/Larpo front-end engine/work/kite/reel-4k60/thumbs.jpg",
+    "poster": "/Users/augustas/Documents/Larpo front-end engine/work/kite/reel-4k60/poster.png"
+  },
+  "thumbs": {
+    "step": 9,
+    "count": 40
+  },
+  "edits": {
+    "holdLastMs": 500,
+    "fadeColor": "#0a0a0b"
+  },
+  "background": "#0a0a0b",
+  "exports": [
+    {
+      "preset": "h264",
+      "file": "/Users/augustas/Documents/Larpo front-end engine/work/kite/kite-loadin-4k60.mp4",
+      "bytes": 5148615,
+      "probe": {
+        "file": "/Users/augustas/Documents/Larpo front-end engine/work/kite/kite-loadin-4k60.mp4",
+        "bytes": 5148615,
+        "codec": "h264",
+        "profile": "High",
+        "pixFmt": "yuv420p",
+        "width": 3840,
+        "height": 2400,
+        "fps": "60/1",
+        "frames": 390,
+        "durationSec": 6.5,
+        "bitrateKbps": 5470,
+        "color": {
+          "space": "bt709",
+          "primaries": "bt709",
+          "transfer": "bt709",
+          "range": "tv"
+        },
+        "cover": "/Users/augustas/Documents/Larpo front-end engine/work/kite/kite-loadin-4k60-cover.png"
+      },
+      "ms": 14901
+    }
+  ],
+  "timings": {
+    "loadMs": 33197,
+    "captureMs": 224490,
+    "finishMs": 11427,
+    "exportMs": 0
+  }
+}

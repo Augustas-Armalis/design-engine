@@ -38,3 +38,18 @@ One timeline, T in `src/anim.tsx`, on Kaching easing:
 - **About 2.6s:** sin1 flares. Its node and heat dots turn red outward from Singapore, the pulse starts, the reroute arc draws, the regions alert drops in (the rows reflow), and the read-out springs up with its sparkline drawing.
 - **Latency:** the p50 and p95 lines draw left to right; the incident band, deploy ticks and time labels appear as the line reaches them.
 - **Verification:** checked frame by frame with Reel (virtual clock) in `loadin/strip.png`. Reduced motion shows the final state.
+
+## Hero, by the rules (founder: "you forgot all of the rules... use our knowledge")
+Each founder rule applied, with its measured value at 1440x900:
+- **Title Case, no full stop, 2 lines:** "Every Region, Live / Every Fix, One Click".
+- **One colour, bold:** h1 64px / 600 / -2.56px, #f4f4f5.
+- **No chip:** the h1 starts at 156px, 84px under the nav rule (rule: 80-90).
+- **Subtitle:** one line at 18/28 (rule: 2 lines max).
+- **Buttons:** 44px tall, radius 14. The primary is the product's white bevel; the secondary is tactile, text only, with no icon.
+- **Nav:** a 44px track with 36px links and 14px padding; Sign in is text, the primary is 40px at radius 12.
+- **CTA to product:** 64px from the CTAs to the frame (rule: >= 64, measured).
+- **Rails:** at 120/1320 with + marks on the nav rule. The dot grid sits only between the rails and fades behind the headline (Kestrel/Commslayer rule).
+- **Product:** the full dashboard in a double-bezel frame (r22 outer, 6px pad, r16 inner = concentric), dissolving at the fold. Squircles via squircle.css.
+- **Load-in:** one Kaching-token timeline (reveal ease 1.2s, 70ms word stagger, 6px blur on text only, frame lifts from 97%).
+- **Logo:** the supplied K-star, traced to SVG, as mark + wordmark (no container).
+- **Palette:** dark only, graphite neutral, no glows.

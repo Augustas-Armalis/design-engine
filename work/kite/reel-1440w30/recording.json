@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "id": "reel-1440w30",
+  "dir": "/Users/augustas/Documents/Larpo front-end engine/work/kite/reel-1440w30",
+  "createdAt": "2026-10-14T09:18:26.968Z",
+  "settings": {
+    "url": "http://localhost:4361",
+    "width": 1440,
+    "height": 900,
+    "scale": 1,
+    "scrollY": 0,
+    "fps": 30,
+    "startMs": 0,
+    "durationMs": 4500,
+    "holdMs": 500,
+    "region": {
+      "type": "viewport"
+    },
+    "actions": [],
+    "cursor": false,
+    "colorScheme": "light",
+    "seed": 24301,
+    "realRandom": false,
+    "keepFrames": false,
+    "presets": []
+  },
+  "size": {
+    "width": 1440,
+    "height": 900
+  },
+  "frames": 135,
+  "browser": "153.0.8010.12",
+  "files": {
+    "master": "/Users/augustas/Documents/Larpo front-end engine/work/kite/reel-1440w30/master.nut",
+    "proxy": "/Users/augustas/Documents/Larpo front-end engine/work/kite/reel-1440w30/proxy.mp4",
+    "thumbs": "/Users/augustas/Documents/Larpo front-end engine/work/kite/reel-1440w30/thumbs.jpg",
+    "poster": "/Users/augustas/Documents/Larpo front-end engine/work/kite/reel-1440w30/poster.png"
+  },
+  "thumbs": {
+    "step": 3,
+    "count": 40
+  },
+  "edits": {
+    "holdLastMs": 500,
+    "fadeColor": "#0a0a0b"
+  },
+  "background": "#0a0a0b",
+  "exports": [
+    {
+      "preset": "h264",
+      "file": "/Users/augustas/Documents/Larpo front-end engine/work/kite/loadin/check.mp4",
+      "bytes": 947667,
+      "probe": {
+        "file": "/Users/augustas/Documents/Larpo front-end engine/work/kite/loadin/check.mp4",
+        "bytes": 947667,
+        "codec": "h264",
+        "profile": "High",
+        "pixFmt": "yuv420p",
+        "width": 1440,
+        "height": 900,
+        "fps": "30/1",
+        "frames": 150,
+        "durationSec": 5,
+        "bitrateKbps": 1235,
+        "color": {
+          "space": "bt709",
+          "primaries": "bt709",
+          "transfer": "bt709",
+          "range": "tv"
+        },
+        "cover": "/Users/augustas/Documents/Larpo front-end engine/work/kite/loadin/check-cover.png"
+      },
+      "ms": 1204
+    }
+  ],
+  "timings": {
+    "loadMs": 36733,
+    "captureMs": 33088,
+    "finishMs": 4775,
+    "exportMs": 0
+  }
+}
