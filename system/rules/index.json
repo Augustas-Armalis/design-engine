@@ -2888,6 +2888,34 @@
   "origin": "founder"
  },
  {
+  "id": "founder.founder-taste#94",
+  "text": "[founder] Dashboard and hero load-ins settle in about 2.5 seconds: not 4 (\"faster\"), not 1.8 (\"too fast and not smooth\"). One expo-out curve (0.16, 1, 0.3, 1) everywhere, durations 0.6-1.2s that overlap, staggers 35-60ms, glides instead of bouncy springs, no blur on large surfaces. Heavy setup work (dot maps, geo tests) must never block the main thread at load: test land with a canvas mask, not per-dot polygon tests.",
+  "why": "Founder on Kite: v1 load-in (~3.8s) \"FASTER\"; v2 (~1.8s, springs, blur on cards) \"too fast and not smooth\". Measured: ~60k geoContains calls blocked the page for seconds and froze the load-in in a fresh browser.",
+  "applies": "every animated product hero and dashboard.",
+  "check": "the last element settles at 2.2-2.8s; the first frame after load paints within ~50ms (rAF probe).",
+  "checkable": true,
+  "source": "founder, 2026-10-14, Kite",
+  "file": "founder/founder-taste.md",
+  "section": "5. Exceptions & judgement calls",
+  "tags": [
+   "founder",
+   "taste",
+   "hero",
+   "nav",
+   "typography",
+   "copy",
+   "icons",
+   "logo",
+   "layout",
+   "product-card",
+   "background",
+   "buttons",
+   "quality-bar"
+  ],
+  "kind": "source",
+  "origin": "founder"
+ },
+ {
   "id": "dos-and-donts.dos-and-donts#1",
   "text": "[T13] Use as few font sizes as possible in a form; differentiate size only between sections (labels/placeholders at one small size) and actions (the button label larger). The good mock uses 12 for both label and placeholder and 32 for the button label; the bad mock mixes 16 (label), 12 (placeholder), 32 (button).",
   "why": "Every extra size is another thing to decode, so the form takes longer to process.",

@@ -6,9 +6,8 @@
 import { useEffect, useMemo, useState } from 'react'
 import { motion, useReducedMotion } from 'motion/react'
 import { ease, SIN } from './anim'
-import { geoContains, geoEqualEarth } from 'd3-geo'
-import { feature } from 'topojson-client'
-import land110 from 'world-atlas/land-110m.json'
+import { geoEqualEarth } from 'd3-geo'
+import { landMask } from './geo'
 import { regions, series, fmtK } from './data'
 
 const W = 712, H = 300, STEP = 4.3
@@ -25,14 +24,14 @@ export default function Map({ rerouted = false, at = 0 }: { rerouted?: boolean; 
   }, [at, still])
   const scan = (x: number) => at + 0.15 + (x / W) * 0.85 // when the beam passes x
   const { dots, P } = useMemo(() => {
-    const land = feature(land110 as never, (land110 as never as { objects: { land: never } }).objects.land) as never
     const proj = geoEqualEarth().fitExtent([[-14, -46], [W + 14, H + 96]], { type: 'Sphere' } as never)
+    const isLand = landMask(proj, W, H)
     const P = Object.fromEntries(regions.map((r) => [r.code, proj([r.lon, r.lat])!])) as Record<string, [number, number]>
     const max = Math.max(...regions.map((r) => r.rps))
     const dots: { x: number; y: number; a: number; red: number }[] = []
     for (let y = STEP / 2; y < H; y += STEP) for (let x = STEP / 2; x < W; x += STEP) {
       const ll = proj.invert!([x, y]); if (!ll || ll[1] < -56) continue
-      if (!geoContains(land, ll)) continue
+      if (!isLand(x, y)) continue
       let heat = 0
       for (const r of regions) { const [rx, ry] = P[r.code]; const d2 = (x - rx) ** 2 + (y - ry) ** 2; heat += (0.35 + 0.65 * r.rps / max) * Math.exp(-d2 / (2 * 34 ** 2)) }
       const [sx, sy] = P.sin1; const red = Math.exp(-((x - sx) ** 2 + (y - sy) ** 2) / (2 * 28 ** 2))

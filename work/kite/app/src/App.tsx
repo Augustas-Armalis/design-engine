@@ -75,7 +75,8 @@ function Sidebar({ rerouted, flared }: { rerouted: boolean; flared: boolean }) {
   )
 }
 
-export default function App() {
+export default function App({ embedded = false }: { embedded?: boolean }) {
+  const Title = embedded ? 'div' : 'h1'
   const [rerouted, setRerouted] = useState(false)
   const still = useReducedMotion()
   const [flared, setFlared] = useState(!!still)
@@ -96,7 +97,7 @@ export default function App() {
 
           <main className="min-h-0 flex-1 overflow-hidden px-6 pt-5">
             <motion.div {...rise(T.title, 10)} className="flex items-center gap-3">
-              <h1 className="text-[22px] font-[650] tracking-[-0.02em]">storefront-prod</h1>
+              <Title className="text-[22px] font-[650] tracking-[-0.02em]">storefront-prod</Title>
               <span className="flex h-6 items-center gap-1.5 rounded-full bg-[rgb(255_255_255/0.06)] px-2.5 text-[12px] font-[550] text-[var(--ink)] shadow-[inset_0_0_0_1px_rgb(255_255_255/0.08)]"><span className="size-1.5 rounded-full bg-[#ededed]" />Production</span>
               <a href="#" className="mono flex h-6 items-center gap-1 text-[var(--soft)] hover:text-[var(--sub)]">storefront.app<ArrowUpRight size={12} /></a>
               <div className="ml-auto flex items-center gap-2">
