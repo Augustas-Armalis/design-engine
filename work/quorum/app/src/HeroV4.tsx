@@ -14,9 +14,9 @@ const T = { nav: 0.1, panel: 0.15, ribbon: 0.35, node: 1.0, h1: 0.45, sub: 0.8, 
 const INK = '#101113', SUB = '#5d6167'
 const PANEL = { x: 16, y: 80, w: 1408, h: 804 }
 const LABELS = [
-  { i: 9, x: 352, lx: 250, ly: 150, side: 'r', text: <>Interviews <b className="font-mono font-[500] text-[#8a8e94]">12</b></> },
-  { i: 35, x: 760, lx: 668, ly: 96, side: 'r', text: <><span className="size-1.5 rounded-full" style={{ background: TAG.import.dot }} />Highlights <b className="font-mono font-[500] text-[#8a8e94]">148</b></> },
-  { i: 40, x: 1150, lx: 1060, ly: 470, side: 'r', text: <>Answer <b className="font-[500] text-[#8a8e94]">CSV import blocks onboarding</b></> },
+  { i: 12, x: 330, lx: 248, ly: 196, side: 'r', text: <>Interviews <b className="font-mono font-[500] text-[#8a8e94]">12</b></> },
+  { i: 38, x: 712, lx: 628, ly: 176, side: 'r', text: <><span className="size-1.5 rounded-full" style={{ background: TAG.import.dot }} />Highlights <b className="font-mono font-[500] text-[#8a8e94]">148</b></> },
+  { i: 81, x: 1180, lx: 1104, ly: 456, side: 'r', text: <>Answer <b className="font-[500] text-[#8a8e94]">CSV import blocks onboarding</b></> },
 ]
 
 const Up = ({ at, y = 16, className = '', children }: { at: number; y?: number; className?: string; children: ReactNode }) => (
@@ -29,13 +29,13 @@ const Wd = ({ i, children }: { i: number; children: ReactNode }) => (
 )
 
 function Nav() {
-  const links: [string, string][] = [['Product', TAG.import.dot], ['Method', TAG.pricing.dot], ['Research', TAG.delight.dot], ['Pricing', '#c8cbd0'], ['Docs', '#c8cbd0']]
+  const links = ['Product', 'Method', 'Research', 'Pricing', 'Docs']
   return (
     <header className="absolute inset-x-[40px] top-0 z-30 flex h-[80px] items-center">
       <Up at={T.nav} y={-8}><a href="#" aria-label="Quorum home" className="flex h-10 items-center"><QuorumLogo /></a></Up>
       <Up at={T.nav + 0.05} y={-8} className="ml-12">
-        <nav aria-label="Main"><ul className="flex items-center gap-7 text-[14px] font-[500]">
-          {links.map(([l, c], i) => <li key={l}><a href="#" className={`group flex h-10 items-center gap-2 transition-colors duration-200 ${i === 0 ? 'text-[#101113]' : 'text-[#5d6167] hover:text-[#101113]'}`}><span className="size-[6px] rounded-full transition-transform duration-200 group-hover:scale-125" style={{ background: c }} />{l}</a></li>)}
+        <nav aria-label="Main"><ul className="flex items-center gap-8 text-[14px] font-[500]">
+          {links.map((l, i) => <li key={l}><a href="#" className={`flex h-10 items-center transition-colors duration-200 ${i === 0 ? 'text-[#101113]' : 'text-[#5d6167] hover:text-[#101113]'}`}>{l}</a></li>)}
         </ul></nav>
       </Up>
       <Up at={T.nav + 0.1} y={-8} className="ml-auto flex items-center gap-6 text-[14px] font-[500]">

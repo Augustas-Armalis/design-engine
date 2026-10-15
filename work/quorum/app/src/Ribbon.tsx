@@ -5,21 +5,20 @@
 import { useEffect, useRef } from 'react'
 
 export const W = 1408, H = 560
-export const NODE = { x: 930, y: 290 }
-const N = 72, HOT = new Set([14, 35, 55])
+export const NODE = { x: 930, y: 300 }
+const N = 120, HOT = new Set([38, 81])
 const sm = (a: number, b: number, x: number) => { const t = Math.min(1, Math.max(0, (x - a) / (b - a))); return t * t * (3 - 2 * t) }
 
-/** y of strand i at x, time t (also used to anchor the label leaders) */
-export function strandY(i: number, x: number, t: number) {
-  const s = (i / (N - 1)) - 0.5
-  const L = 1 - sm(60, NODE.x, x)
-  const R = sm(NODE.x, W - 40, x)
-  const shared = Math.sin(x * 0.0062 - t * 0.35) * 54 * (0.35 + 0.65 * L) + Math.sin(x * 0.0021 + 1.2) * 40 * L
-  const own = Math.sin(x * (0.009 + (i % 7) * 0.0009) + i * 0.47 + t * 0.6) * 70 * Math.pow(L, 1.1)
-  const spread = s * 300 * Math.pow(L, 1.35) + s * (4 + 92 * R) * Math.cos(x * 0.0105 - t * 0.4 - 0.9)
-  const tail = Math.sin(x * 0.006 - t * 0.3) * 46 * R
-  return NODE.y + shared * (1 - R) + own + spread + tail
+/* one twisted sheet of hairlines: centre curve + width envelope + twist; s in [-.5,.5] picks the strand */
+const centre = (x: number, t: number) => NODE.y + 64 * Math.sin(x * 0.0042 + 0.5 - t * 0.12) * (1 - Math.exp(-Math.pow((x - NODE.x) / 260, 2)))
+const width = (x: number) => x < NODE.x ? 210 * Math.pow(1 - sm(120, NODE.x - 20, x), 0.85) : 112 * sm(NODE.x + 10, NODE.x + 300, x)
+const twist = (x: number, t: number) => (x < NODE.x ? x * 0.0105 : x * 0.0075 + 2.4) - t * 0.22
+export function strandY(i: number, x: number, t: number, echo = 0) {
+  const s = i / (N - 1) - 0.5
+  const tw = twist(x, t) + s * 0.55 + echo * 1.3
+  return centre(x, t) + echo * 34 * (width(x) / 210) + s * width(x) * (1 + echo * 0.15) * Math.cos(tw)
 }
+const shade = (i: number, x: number, t: number) => { const s = i / (N - 1) - 0.5; return Math.pow(0.5 + 0.5 * Math.sin(twist(x, t) + s * 0.55), 1.6) }
 
 export default function Ribbon({ at = 0.4, labels }: { at?: number; labels: { i: number; x: number; lx: number; ly: number }[] }) {
   const ref = useRef<HTMLCanvasElement>(null)
@@ -34,19 +33,20 @@ export default function Ribbon({ at = 0.4, labels }: { at?: number; labels: { i:
       const s = (now - t0) / 1000, t = still ? 2 : s
       const k = still ? 1 : Math.min(1, Math.max(0, (s - at) / 2.0)), reveal = 40 + (1 - Math.pow(1 - k, 3)) * (W + 40)
       g.clearRect(0, 0, W, H)
-      for (let pass = 0; pass < 2; pass++) {
-        for (let i = 0; i < N; i++) {
-          const hot = HOT.has(i)
-          if ((pass === 1) !== hot) continue
-          const sp = Math.abs(i / (N - 1) - 0.5) * 2
-          g.beginPath()
-          for (let x = 40; x <= Math.min(reveal, W - 20); x += 4) {
-            const y = strandY(i, x, t)
-            x === 40 ? g.moveTo(x, y) : g.lineTo(x, y)
+      const end = Math.min(reveal, W - 20)
+      // faint echo sheet behind, then the main sheet; each strand drawn in short runs so its alpha follows the twist (3D shading)
+      for (const echo of [1, 0]) {
+        for (let i = 0; i < N; i += echo ? 2 : 1) {
+          const hot = !echo && HOT.has(i)
+          let px = 40, py = strandY(i, 40, t, echo)
+          for (let x = 48; x <= end; x += 8) {
+            const y = strandY(i, x, t, echo)
+            const a = hot ? 0.85 : (echo ? 0.04 + 0.08 * shade(i, x, t) : 0.06 + 0.36 * shade(i, x, t))
+            g.beginPath(); g.moveTo(px, py); g.lineTo(x, y)
+            g.lineWidth = hot ? 1.1 : 0.6
+            g.strokeStyle = hot ? `rgba(226, 150, 22, ${a})` : `rgba(18, 20, 23, ${a})`
+            g.stroke(); px = x; py = y
           }
-          g.lineWidth = hot ? 1.25 : 0.75
-          g.strokeStyle = hot ? 'rgba(226, 150, 22, 0.95)' : `rgba(16, 17, 19, ${0.1 + 0.32 * (1 - sp)})`
-          g.stroke()
         }
       }
       g.save(); g.globalCompositeOperation = 'destination-out'
