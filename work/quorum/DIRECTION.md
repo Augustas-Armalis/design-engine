@@ -38,3 +38,11 @@ Founder on v1 (2026-10-15): "identical in style and everything to the other one.
 
 ## v3 (current): v2 with a professional visual
 Founder on v2: "not professional enough, especially the visual and the little three cards; the nav with circles is kinda cool". The art panel is now an engraved sound landscape (`Engraving.tsx`, five audio-envelope ridges hatched in slate on cream). On it sits one straight interview window: a scrubber whose highlight ranges sit at their real timestamps, a playhead in the import highlight, the transcript with marks, and a highlights list. One status bar ("Grouping highlights") floats above. The tilted sheet, flag chips and halftone are gone (`VoiceField.tsx` is kept as v2 evidence). The grain sits under the stage so the product stays pure white.
+
+## v4 (current): clean Marcel grammar
+Founder on v3: "do completely different stuff... clean modern simple, Marcel, Basit style". Built on Altrina (`knowledge/benchmarks/kargul-deep/gallery/altrina-01.jpg`):
+- **Page:** white, with one inset panel (#f3f4f5, r20).
+- **Art:** `Ribbon.tsx`, 72 hairline strands (one per voice) arriving loose from the left. They converge through the Quorum node (a white r16 tile) and leave as one twisting bundle, the answer. Three amber strands are the highlighted quotes, and three label chips sit on elbow leaders (Interviews 12, Highlights 148, Answer).
+- **Copy:** the h1 is bottom-left (Inter display 500/84/-0.045em). The subtitle and the r12 ink/white buttons sit on the node's x axis.
+- **Nav:** the dot nav is kept from v2.
+- **History:** `HeroV4.tsx` is current; `Hero.tsx` (v2/v3) is kept as history.

@@ -56,3 +56,8 @@ p { text-wrap: pretty; }
 .link-draw::after { content: ""; position: absolute; left: 0; right: 0; bottom: 9px; height: 1px; background: currentColor; opacity: .5; transform: scaleX(0); transform-origin: right; transition: transform 360ms cubic-bezier(.22,1,.36,1); }
 @media (hover: hover) { .link-draw:hover::after { transform: scaleX(1); transform-origin: left; } }
 @media (prefers-reduced-motion: reduce) { .k-ink::after, .link-draw::after { transition: none; } .k-ink:hover .arrow-cycle { animation: none; } }
+
+/* ---- hero v4 buttons (Marcel: flat ink with a 1px top light, white with a hairline ring; hover moves lightness only) ---- */
+.q-ink { background: #101113; box-shadow: inset 0 1px 0 rgb(255 255 255 / .14), 0 0 0 1px #101113, 0 1px 2px rgb(16 17 19 / .2), 0 6px 14px -6px rgb(16 17 19 / .4); transition: background-color 200ms; }
+.q-white { background: #fff; color: #101113; box-shadow: 0 0 0 1px rgb(16 17 19 / .12), 0 1px 2px rgb(16 17 19 / .05); transition: background-color 200ms; }
+@media (hover: hover) { .q-ink:hover { background: #26282b; } .q-white:hover { background: #f7f8f9; } }
