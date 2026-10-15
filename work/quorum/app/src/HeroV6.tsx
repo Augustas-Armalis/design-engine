@@ -132,18 +132,13 @@ function AgentStack() {
           </motion.div>
         </AnimatePresence>
       </div>
-      {/* square tiles: the calls feeding this study, one live */}
-      <div className="absolute left-[432px] top-0 flex gap-2">
-        {['MC', 'JR', 'LS'].map((a, i) => (
-          <motion.span key={a} className="relative grid size-11 place-items-center rounded-[12px] bg-white/90 backdrop-blur-md" style={{ boxShadow: '0 0 0 1px rgba(17,18,20,0.06), 0 6px 16px -8px rgba(40,44,120,0.25)' }}
-            initial={{ opacity: 0, scale: 0.85 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: T.bar + 0.15 + i * 0.08, duration: 0.6, ease: ease.outQuint }}>
-            <Av i={a} s={26} />
-            {i === 0 && <span className="absolute right-[5px] top-[5px] size-2 rounded-full bg-[#2fb174] shadow-[0_0_0_2px_#fff]" />}
-          </motion.span>
-        ))}
-        <motion.span className="grid size-11 place-items-center rounded-[12px] bg-white/60 text-[12px] font-[600] text-[#5d6168] backdrop-blur-md" style={{ boxShadow: '0 0 0 1px rgba(17,18,20,0.06)' }}
-          initial={{ opacity: 0, scale: 0.85 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: T.bar + 0.4, duration: 0.6, ease: ease.outQuint }}>+9</motion.span>
-      </div>
+      {/* who is feeding this study: rounded-square profile pictures, quiet */}
+      <motion.div className="absolute left-[436px] top-0 flex h-11 items-center gap-2.5" initial={{ opacity: 0, x: -6 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: T.bar + 0.2, duration: 0.6, ease: ease.outQuint }}>
+        <span className="flex -space-x-[3px]">
+          {['MC', 'JR', 'LS'].map((a) => <span key={a} className="grid size-8 place-items-center rounded-[9px] text-[10px] font-[650] tracking-[-0.02em] shadow-[0_0_0_2px_rgba(255,255,255,0.9)]" style={{ background: HUES[a][0], color: HUES[a][1] }}>{a}</span>)}
+        </span>
+        <span className="text-[12px] font-[500] text-[#5d6168]">+9</span>
+      </motion.div>
     </motion.div>
   )
 }
@@ -174,7 +169,7 @@ function AskBox() {
   const a0 = A.indexOf(cut), shown = A.slice(0, m)
   const answer = m <= a0 ? shown : <>{A.slice(0, a0)}<mark className="rounded-[3px] px-[2px] text-inherit" style={{ background: TAG.import.bg }}>{shown.slice(a0, a0 + cut.length)}</mark>{shown.slice(a0 + cut.length)}</>
   return (
-    <div className="w-[470px] rounded-[19px] p-px shadow-[0_1px_2px_rgba(17,18,20,0.05),0_18px_40px_-18px_rgba(30,34,90,0.3)]" style={{ background: 'linear-gradient(140deg, rgba(80,86,240,0.6), rgba(17,18,20,0.09) 36%, rgba(17,18,20,0.09) 68%, rgba(255,160,120,0.5))' }}>
+    <div className="w-[470px] rounded-[19px] p-px shadow-[0_1px_2px_rgba(17,18,20,0.04),0_10px_24px_-18px_rgba(30,34,90,0.16)]" style={{ background: 'linear-gradient(140deg, rgba(80,86,240,0.2), rgba(17,18,20,0.08) 40%, rgba(17,18,20,0.08))' }}>
       <div className="rounded-[18px] bg-white p-2">
         <div className="rounded-[12px] bg-[#fafafb] px-4 pb-4 pt-3.5 shadow-[inset_0_0_0_1px_rgba(17,18,20,0.05)]">
           <div className="flex items-center gap-2 text-[12px] font-[600]"><span className="grid size-5 place-items-center rounded-[6px] text-white" style={{ background: IND }}><Sparkles size={11} /></span>Ask Quorum<span className="ml-auto font-[500] text-[#9a9ea5]">Across 12 interviews</span></div>
@@ -234,7 +229,7 @@ export default function HeroV6() {
             <a href="#" className="b6-ink press group flex h-12 items-center gap-2 rounded-[12px] pl-5 pr-4 text-white">Start for free<ArrowRight size={16} strokeWidth={2} className="opacity-80 transition-transform duration-300 group-hover:translate-x-0.5" /></a>
             <a href="#" className="b6-ghost press flex h-12 items-center rounded-[12px] px-5">Book a demo</a>
           </Up>
-          <Up at={T.feats} className="mt-16"><AskBox /></Up>
+          <Up at={T.feats} className="mt-24"><AskBox /></Up>
         </section>
 
         <motion.div className="absolute z-10 overflow-hidden rounded-[24px]" style={{ left: STAGE.x, top: STAGE.y, width: STAGE.w, height: STAGE.h }}
