@@ -116,7 +116,7 @@ function App() {
 
 /* agent stack: what Quorum is doing right now, as a minimal toast stack that cycles (two ghost cards behind the front one) */
 const EVENTS: [string, string][] = [['Grouping new highlights', '3 calls added to Onboarding v3'], ['Tagged 21 quotes', 'Import · Pricing · Delight'], ['New insight found', 'Seat billing is unclear at checkout']]
-function AgentStack() {
+export function AgentStack() {
   const [k, setK] = useState(0)
   useEffect(() => {
     if (matchMedia('(prefers-reduced-motion: reduce)').matches) return
@@ -231,7 +231,7 @@ export default function HeroV6() {
           initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: T.stage, duration: 1.0 }}>
           <GrainGradient style={{ position: 'absolute', inset: -40, width: STAGE.w + 80, height: STAGE.h + 80, filter: 'blur(26px)' }} colorBack="#eef0fb" colors={['#aeb4ff', '#d4d7ff', '#f3e9ff', '#ffe9dc']} shape="corners" softness={0.85} intensity={0.22} noise={0} speed={0.25} />
           <div aria-hidden className="absolute inset-0 rounded-[24px] shadow-[inset_0_0_0_1px_rgba(17,18,20,0.06)]" />
-          <AgentStack />
+          {/* <AgentStack /> removed on request 2026-10-15 */}
           <motion.div className="absolute left-[44px] top-[96px] h-[760px] w-[900px] overflow-hidden rounded-[14px] bg-white" style={{ boxShadow: '0 0 0 1px rgba(17,18,20,0.08), 0 2px 6px rgba(17,18,20,0.04), 0 30px 60px -24px rgba(17,18,20,0.18)', WebkitMaskImage: FADE, maskImage: FADE, WebkitMaskComposite: 'source-in', maskComposite: 'intersect' }}
             initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: T.app, duration: 1.3, ease: ease.reveal, opacity: { delay: T.app, duration: 0.6 } }}>
             <App />
