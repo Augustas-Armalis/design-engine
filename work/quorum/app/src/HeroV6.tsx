@@ -4,6 +4,7 @@
 // a peek card with the source quote and clip straddling the stage edge, quiet substance under the CTAs, tactile buttons.
 import { type ReactNode, useEffect, useState } from 'react'
 import { AnimatePresence, motion, MotionConfig } from 'motion/react'
+import { GrainGradient } from '@paper-design/shaders-react'
 import { ArrowRight, ArrowUp, BarChart3, Check, ChevronsUpDown, Highlighter, Inbox, Lightbulb, Mic, MessageCircle, Search, Sparkles, Tag, Users, Folder, LayoutList, Columns3 } from 'lucide-react'
 import { ease } from './motion'
 import { TAG, type TagKey } from './Product'
@@ -13,7 +14,7 @@ const T = { nav: 0.1, h1: 0.25, sub: 0.55, cta: 0.66, feats: 0.8, stage: 0.2, ap
 const INK = '#111214', SUB = '#5d6168', IND = '#5056f0'
 const STAGE = { x: 572, y: 124, w: 856, h: 820 }
 // the product dissolves into the page: fades over its last ~200px at the bottom and ~140px at the right
-const FADE = 'linear-gradient(180deg, #000 62%, transparent 92%), linear-gradient(90deg, #000 78%, transparent 99%)'
+const FADE = 'linear-gradient(180deg, #000 74%, transparent 96%), linear-gradient(90deg, #000 84%, transparent 100%)'
 
 const Up = ({ at, y = 14, className = '', children }: { at: number; y?: number; className?: string; children: ReactNode }) => (
   <motion.div className={className} initial={{ opacity: 0.01, y, filter: 'blur(6px)' }} animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
@@ -226,8 +227,10 @@ export default function HeroV6() {
           <Up at={T.feats} className="mt-24"><AskBox /></Up>
         </section>
 
-        <motion.div className="absolute z-10" style={{ left: STAGE.x, top: STAGE.y, width: STAGE.w + 12, height: STAGE.h }}
+        <motion.div className="absolute z-10 overflow-hidden rounded-[24px]" style={{ left: STAGE.x, top: STAGE.y, width: STAGE.w, height: STAGE.h }}
           initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: T.stage, duration: 1.0 }}>
+          <GrainGradient style={{ position: 'absolute', inset: -40, width: STAGE.w + 80, height: STAGE.h + 80, filter: 'blur(26px)' }} colorBack="#eef0fb" colors={['#aeb4ff', '#d4d7ff', '#f3e9ff', '#ffe9dc']} shape="corners" softness={0.85} intensity={0.22} noise={0} speed={0.25} />
+          <div aria-hidden className="absolute inset-0 rounded-[24px] shadow-[inset_0_0_0_1px_rgba(17,18,20,0.06)]" />
           <AgentStack />
           <motion.div className="absolute left-[44px] top-[96px] h-[760px] w-[900px] overflow-hidden rounded-[14px] bg-white" style={{ boxShadow: '0 0 0 1px rgba(17,18,20,0.08), 0 2px 6px rgba(17,18,20,0.04), 0 30px 60px -24px rgba(17,18,20,0.18)', WebkitMaskImage: FADE, maskImage: FADE, WebkitMaskComposite: 'source-in', maskComposite: 'intersect' }}
             initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: T.app, duration: 1.3, ease: ease.reveal, opacity: { delay: T.app, duration: 0.6 } }}>
@@ -235,8 +238,8 @@ export default function HeroV6() {
           </motion.div>
         </motion.div>
         {/* progressive blur over the dissolving bottom of the product only (three stacked backdrop blurs, deeper bands blur more) */}
-        {([[2, '60%'], [5, '78%'], [10, '95%']] as const).map(([b, to]) => (
-          <div key={b} aria-hidden className="pointer-events-none absolute bottom-0 right-0 z-20 h-[230px]" style={{ left: STAGE.x, backdropFilter: `blur(${b}px)`, WebkitBackdropFilter: `blur(${b}px)`, WebkitMaskImage: `linear-gradient(180deg, transparent, #000 ${to})`, maskImage: `linear-gradient(180deg, transparent, #000 ${to})` }} />
+        {([[2, '60%'], [4, '80%'], [8, '98%']] as const).map(([b, to]) => (
+          <div key={b} aria-hidden className="pointer-events-none absolute bottom-0 right-0 z-20 h-[140px]" style={{ left: STAGE.x, backdropFilter: `blur(${b}px)`, WebkitBackdropFilter: `blur(${b}px)`, WebkitMaskImage: `linear-gradient(180deg, transparent, #000 ${to})`, maskImage: `linear-gradient(180deg, transparent, #000 ${to})` }} />
         ))}
       </div>
     </MotionConfig>
