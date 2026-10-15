@@ -22,7 +22,7 @@ const Up = ({ at, y = 14, className = '', children }: { at: number; y?: number; 
 )
 
 const HUES: Record<string, [string, string]> = { MC: ['#fdf0dc', '#9a5b00'], JR: ['#e6effe', '#2d55b5'], LS: ['#e5f5ec', '#1c7a49'], AK: ['#f6e8fb', '#8131a3'], TB: ['#fde8e6', '#b4372b'], DP: ['#e4f4f6', '#18727e'], RW: ['#eeeef0', '#4b4f56'] }
-const Av = ({ i, s = 22 }: { i: string; s?: number }) => <span className="grid shrink-0 place-items-center rounded-full font-[650] tracking-[-0.02em] shadow-[0_0_0_1.5px_#fff]" style={{ width: s, height: s, fontSize: s * 0.38, background: HUES[i][0], color: HUES[i][1] }}>{i}</span>
+const Av = ({ i, s = 22 }: { i: string; s?: number }) => <span className="grid shrink-0 place-items-center rounded-full font-[650] tracking-[-0.02em] shadow-[0_0_0_1.5px_#fff]" style={{ width: s, height: s, fontSize: Math.max(10, s * 0.4), background: HUES[i][0], color: HUES[i][1] }}>{i}</span>
 
 type TagLook = { label: string; bg: string; ink: string; dot: string }
 const XTAG: Record<string, TagLook> = { onboarding: { label: 'Onboarding', bg: 'rgba(130, 90, 240, 0.12)', ink: '#6538d1', dot: '#8b5cf6' }, security: { label: 'Security', bg: 'rgba(229, 72, 77, 0.11)', ink: '#b4372b', dot: '#e5484d' }, alerts: { label: 'Alerts', bg: 'rgba(240, 125, 43, 0.13)', ink: '#a8521a', dot: '#f07d2b' } }
@@ -47,24 +47,24 @@ function Sidebar() {
   const Item = ({ icon: Ic, label, on = false, n }: { icon: typeof Inbox; label: string; on?: boolean; n?: string }) => (
     <span className={`flex h-[30px] items-center gap-2.5 rounded-[8px] px-2 text-[13px] ${on ? 'bg-white font-[550] text-[#111214] shadow-[0_0_0_1px_rgba(17,18,20,0.07),0_1px_2px_rgba(17,18,20,0.06)]' : 'text-[#3d4046]'}`}>
       <Ic size={15} strokeWidth={1.75} className="shrink-0" style={{ color: on ? IND : '#73777e' }} /><span className="truncate">{label}</span>
-      {n && <span className="tnum ml-auto text-[11px] text-[#9a9ea5]">{n}</span>}
+      {n && <span className="tnum ml-auto text-[11px] text-[#6f737a]">{n}</span>}
     </span>
   )
   return (
     <aside className="flex w-[212px] shrink-0 flex-col gap-0.5 bg-[#fafafb] px-2.5 py-3 shadow-[inset_-1px_0_0_#ededf0]">
       <div className="mb-1.5 flex h-9 items-center gap-2 px-1.5">
         <span className="grid size-[22px] place-items-center rounded-[6px] bg-[#111214] text-white"><QuorumMark width={12} /></span>
-        <span className="text-[13px] font-[600]">Northwind</span><ChevronsUpDown size={13} className="ml-auto text-[#9a9ea5]" />
+        <span className="text-[13px] font-[600]">Northwind</span><ChevronsUpDown size={13} className="ml-auto text-[#6f737a]" />
       </div>
-      <div className="mb-2 flex h-[30px] items-center gap-2 rounded-[8px] bg-white px-2 text-[12px] text-[#9a9ea5] shadow-[0_0_0_1px_rgba(17,18,20,0.08)]"><Search size={13} />Search<span className="ml-auto rounded-[4px] px-1 text-[10px] shadow-[0_0_0_1px_rgba(17,18,20,0.08)]">⌘K</span></div>
+      <div className="mb-2 flex h-[30px] items-center gap-2 rounded-[8px] bg-white px-2 text-[12px] text-[#6f737a] shadow-[0_0_0_1px_rgba(17,18,20,0.08)]"><Search size={13} />Search<span className="ml-auto rounded-[4px] px-1 text-[10px] shadow-[0_0_0_1px_rgba(17,18,20,0.08)]">⌘K</span></div>
       <Item icon={Inbox} label="Inbox" n="3" />
       <Item icon={Mic} label="Interviews" n="12" />
       <Item icon={Highlighter} label="Highlights" n="148" />
       <Item icon={Lightbulb} label="Insights" on />
       <Item icon={Tag} label="Tags" />
-      <div className="mt-3 px-2 pb-1 text-[11px] font-[550] text-[#9a9ea5]">Ask Quorum</div>
+      <div className="mt-3 px-2 pb-1 text-[11px] font-[550] text-[#6f737a]">Ask Quorum</div>
       {['Why do trials stall?', 'Pricing by segment', 'What sells managers?'].map((q) => <Item key={q} icon={MessageCircle} label={q} />)}
-      <div className="mt-3 px-2 pb-1 text-[11px] font-[550] text-[#9a9ea5]">Studies</div>
+      <div className="mt-3 px-2 pb-1 text-[11px] font-[550] text-[#6f737a]">Studies</div>
       {[['Onboarding v3', '12'], ['Pricing page', '8'], ['Churn interviews', '15']].map(([q, n]) => <Item key={q} icon={Folder} label={q} n={n} />)}
     </aside>
   )
@@ -81,19 +81,19 @@ function App() {
           <span className="text-[14px] font-[600]">Insights</span>
           <span className="flex h-7 items-center gap-0.5 rounded-[8px] bg-[#f3f3f5] p-0.5 text-[12px] font-[500]">
             <span className="flex h-6 items-center gap-1.5 rounded-[6px] bg-white px-2 shadow-[0_0_0_1px_rgba(17,18,20,0.06),0_1px_2px_rgba(17,18,20,0.06)]"><LayoutList size={12} />Table</span>
-            <span className="flex h-6 items-center gap-1.5 px-2 text-[#73777e]"><Columns3 size={12} />Board</span>
+            <span className="flex h-6 items-center gap-1.5 px-2 text-[#5d6168]"><Columns3 size={12} />Board</span>
           </span>
-          <span className="text-[12px] text-[#9a9ea5]">All studies · sample data</span>
+          <span className="text-[12px] text-[#6f737a]">All studies · sample data</span>
         </div>
         <div className="mx-5 mt-4 grid grid-cols-4 rounded-[12px] bg-white shadow-[0_0_0_1px_rgba(17,18,20,0.07),0_1px_2px_rgba(17,18,20,0.04)]">
           {[['Interviews', '12', '+3 today'], ['Highlights', '148', '+21'], ['Insights', '11', '2 new'], ['On roadmap', '3', 'QRM-142']].map(([k, v, d], i) => (
             <div key={k} className={`px-4 py-3 ${i ? 'shadow-[inset_1px_0_0_#ededf0]' : ''}`}>
-              <div className="text-[11px] font-[500] text-[#8b8f96]">{k}</div>
-              <div className="mt-1 flex items-baseline gap-2"><span className="tnum text-[20px] font-[600] tracking-[-0.02em]">{v}</span><span className="text-[11px] text-[#9a9ea5]">{d}</span></div>
+              <div className="text-[11px] font-[500] text-[#6b6f76]">{k}</div>
+              <div className="mt-1 flex items-baseline gap-2"><span className="tnum text-[20px] font-[600] tracking-[-0.02em]">{v}</span><span className="text-[11px] text-[#6f737a]">{d}</span></div>
             </div>
           ))}
         </div>
-        <div className={`mt-4 grid ${cols} h-9 items-center px-5 text-[12px] font-[500] text-[#8b8f96] shadow-[inset_0_-1px_0_#ededf0,inset_0_1px_0_#ededf0]`}>
+        <div className={`mt-4 grid ${cols} h-9 items-center px-5 text-[12px] font-[500] text-[#6b6f76] shadow-[inset_0_-1px_0_#ededf0,inset_0_1px_0_#ededf0]`}>
           <span className="size-[14px] rounded-[4px] shadow-[inset_0_0_0_1px_#d6d7db]" /><H icon={Lightbulb}>Insight</H><H icon={BarChart3}>Mentions</H><H icon={Tag}>Tag</H><H icon={Users}>Sources</H>
         </div>
         {ROWS.map(([title, n, tag, src], i) => {
@@ -129,7 +129,7 @@ function AgentStack() {
         <AnimatePresence initial={false}>
           <motion.div key={k} className="absolute inset-0 flex items-center gap-2.5 pl-2.5 pr-3.5 text-[13px]" initial={{ y: 24, opacity: 0 }} animate={{ y: 0, opacity: 1 }} exit={{ y: -24, opacity: 0 }} transition={{ duration: 0.5, ease: ease.outQuint }}>
             <span className="grid size-6 place-items-center rounded-[7px] text-white" style={{ background: IND }}><Sparkles size={13} /></span>
-            <span className="font-[600]">{EVENTS[k][0]}</span><span className="truncate text-[#8b8f96]">{EVENTS[k][1]}</span>
+            <span className="font-[600]">{EVENTS[k][0]}</span><span className="truncate text-[#6b6f76]">{EVENTS[k][1]}</span>
             <motion.span className="ml-auto size-3.5 shrink-0 rounded-full border-[1.5px] border-[#d8daf0] border-t-[#5056f0]" animate={{ rotate: 360 }} transition={{ repeat: Infinity, duration: 1, ease: 'linear' }} />
           </motion.div>
         </AnimatePresence>
@@ -167,7 +167,7 @@ function AskBox() {
     <div className="w-[470px] rounded-[19px] p-px shadow-[0_1px_2px_rgba(17,18,20,0.04),0_10px_24px_-18px_rgba(30,34,90,0.16)]" style={{ background: 'linear-gradient(140deg, rgba(80,86,240,0.2), rgba(17,18,20,0.08) 40%, rgba(17,18,20,0.08))' }}>
       <div className="rounded-[18px] bg-white p-2">
         <div className="rounded-[12px] bg-[#fafafb] px-4 pb-4 pt-3.5 shadow-[inset_0_0_0_1px_rgba(17,18,20,0.05)]">
-          <div className="flex items-center gap-2 text-[12px] font-[600]"><span className="grid size-5 place-items-center rounded-[6px] text-white" style={{ background: IND }}><Sparkles size={11} /></span>Ask Quorum<span className="ml-auto font-[500] text-[#9a9ea5]">Across 12 interviews</span></div>
+          <div className="flex items-center gap-2 text-[12px] font-[600]"><span className="grid size-5 place-items-center rounded-[6px] text-white" style={{ background: IND }}><Sparkles size={11} /></span>Ask Quorum<span className="ml-auto font-[500] text-[#6f737a]">Across 12 interviews</span></div>
           <div className="mt-3 flex items-center gap-3">
             <span className="min-h-[26px] flex-1 text-[17px] font-[550] tracking-[-0.015em]">{Q.slice(0, n)}{!done && <span className="caret ml-[1px] inline-block h-[18px] w-[1.5px] translate-y-[3px] bg-[#5056f0]" />}</span>
             <span className="b6-ink grid size-9 shrink-0 place-items-center rounded-[10px] text-white"><ArrowUp size={16} strokeWidth={2.2} /></span>
@@ -181,7 +181,7 @@ function AskBox() {
             <p className="min-h-[46px] text-[14px] leading-[23px] text-[#3d4046]">{answer}{done && !answered && <span className="caret ml-[1px] inline-block h-[15px] w-[1.5px] translate-y-[2px] bg-[#5056f0]" />}</p>
             <motion.div className="mt-3 flex items-center gap-1.5" animate={{ opacity: answered ? 1 : 0, y: answered ? 0 : 4 }} transition={{ duration: 0.4 }}>
               {[['MC', '05:18'], ['JR', '12:40'], ['LS', '03:02']].map(([a, t]) => <span key={a} className="flex h-7 items-center gap-1.5 rounded-full bg-[#f3f3f5] pl-0.5 pr-2.5 text-[12px] text-[#4b4f56]"><Av i={a} s={24} /><span className="tnum">{t}</span></span>)}
-              <span className="ml-1 text-[12px] text-[#9a9ea5]">+11 sources</span>
+              <span className="ml-1 text-[12px] text-[#6f737a]">+11 sources</span>
             </motion.div>
           </motion.div>
         </div>
@@ -212,7 +212,7 @@ export default function HeroV6() {
     <MotionConfig reducedMotion="user">
       <div className="relative mx-auto h-[900px] w-[1440px] overflow-hidden bg-white" style={{ color: INK, fontFamily: '"Inter Variable", system-ui, sans-serif', fontOpticalSizing: 'auto', fontFeatureSettings: '"cv11", "ss01"' }}>
         <Nav />
-        <section className="absolute left-[64px] top-[207px] z-20 w-[470px]">
+        <main className="absolute left-[64px] top-[207px] z-20 w-[470px]">
           <h1 className="text-[58px] font-[550] leading-[1.03] tracking-[-0.045em]">
             {['Turn Interviews', 'Into Answers'].map((l, i) => (
               <motion.span key={l} className="block" initial={{ opacity: 0.01, y: 30, filter: 'blur(6px)' }} animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
@@ -225,7 +225,7 @@ export default function HeroV6() {
             <a href="#" className="b6-ghost press flex h-12 items-center rounded-[12px] px-5">Book a demo</a>
           </Up>
           <Up at={T.feats} className="mt-24"><AskBox /></Up>
-        </section>
+        </main>
 
         <motion.div className="absolute z-10 overflow-hidden rounded-[24px]" style={{ left: STAGE.x, top: STAGE.y, width: STAGE.w, height: STAGE.h }}
           initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: T.stage, duration: 1.0 }}>
