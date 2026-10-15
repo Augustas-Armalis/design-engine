@@ -69,3 +69,12 @@ The founder judges by eye, fast, in short messages, often with a cropped screens
 ## 7. Open questions
 
 - Whether "dots inside the borders" should become the default background for every light hero, or stay a Kestrel/Commslayer move. Ask on the next brand.
+
+## Kite hero (2026-10-14/15): ~20 rounds to "kinda not bad", and why
+The result was accepted, but most rounds were avoidable. What went wrong, in order:
+1. **I improvised effects instead of applying the rules.** Glows, globe, light ribbons, hatching, chips: each was invented in the moment and rejected. The rules already said no chip, Title Case, no full stop, 64px CTA gap, Kestrel type and the product's own buttons. The turning point was the founder's "use our knowledge" and a written checklist in DIRECTION.md, measured before showing.
+2. **I swung to extremes on feedback.** "Too much" became bare black; "less distracting" became nearly invisible; "too visible" was fixed by changing position, which was what he actually meant. Change one variable, a little, in the direction asked; when he points at a past version, restore it exactly.
+3. **I copied references wholesale** (Linear, Basit, Supabase+Cursor) instead of carrying over what he loves in our own builds: Kestrel's type (Inter display cut, 550, -0.045em), spacing and restraint.
+4. **I missed technical details he caught by eye:** plain Inter (no optical size) at 68px, two fonts in one fold, a 1000px one-line subtitle, ring + inset double edges, a backdrop blur inside a masked layer.
+
+**Default for the next hero, from round 1:** run select_rules, write the founder-rule checklist with target numbers into DIRECTION.md, build Kestrel's type system and the product's own buttons, use one background built from the product's own visual language (soft, monochrome, wrapping the copy), measure everything, check edges at 2x, then show.
