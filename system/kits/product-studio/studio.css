@@ -1,0 +1,1995 @@
+/* Product-studio kit: in-app product UI in the affectUI / AlignUI style.
+   Plain CSS, no build step, no Tailwind dependency. Generic class names
+   (`.studio-*`) and role tokens (`--studio-*`); map the tokens onto the host
+   app's own tokens (GUIDE.md, "Token contract").
+
+   One grammar everywhere (evidence: knowledge/web/affectui-product-kit.md):
+   - a section is a grey tray (radius 20, 4px inset, 1px ring) with its title
+     strip on the grey, one white card inside (radius 16, ring, no shadow) and
+     an optional footer strip for secondary info and actions        AK-02..04
+   - one control height (36) and radius (12) for fields, buttons, tracks AK-22/24
+   - three type sizes (12 / 14 / 18) at two weights (450 / 500)          AK-27
+   - one edge per box: a 1px ring; overlays get the shadow ring only     AK-25
+   - hover = 4% ink tint, selected = white pill / ring with a 2px gap,
+     focus = 2px ring, pressed = 0.97                                    AK-31
+   - media 3:4 (or 9:16), radius 12; row thumbs square, radius 10     AK-12/17
+   - motion: one ease, 150 / 220 / 240 / 300 / 400ms; loops only for
+     live work, all stopped under reduced motion                         AK-32 */
+
+/* ------------------------------------------------------------------------ */
+/* Tokens: light (default)                                                  */
+/* ------------------------------------------------------------------------ */
+:root,
+[data-theme="light"] {
+  /* surfaces: affectUI component palette (tray #f0f0f0, card #fff) */
+  --studio-canvas: #ffffff;
+  --studio-tray: #f0f0f0;
+  --studio-card: #ffffff;
+  /* fields inside white cards and dialogs: the tray grey mixed 55% toward
+     the card, so a field never matches the surface it sits on */
+  --studio-field: color-mix(in srgb, var(--studio-tray) 55%, var(--studio-card));
+
+  /* ink: primary / secondary / tertiary text */
+  --studio-ink: #171717;
+  /* affectUI measures #737373 / #8f8f8f (4.2:1 / 2.8:1 on the tray); the kit
+     darkens both so 12-14px meta passes 4.5:1 on tray and white (AK note s5) */
+  --studio-ink-2: #5f5f5f;
+  --studio-ink-3: #6b6b6b;
+
+  /* edges: ink at an alpha, three levels (BN-02) */
+  --studio-ring: color-mix(in srgb, var(--studio-ink) 8.5%, transparent);
+  --studio-edge: color-mix(in srgb, var(--studio-ink) 14%, transparent);
+  --studio-edge-field: color-mix(in srgb, var(--studio-ink) 10%, transparent);
+  --studio-edge-strong: color-mix(in srgb, var(--studio-ink) 18%, transparent);
+
+  /* tints */
+  --studio-hover: color-mix(in srgb, var(--studio-ink) 4%, transparent);
+  --studio-hover-row: color-mix(in srgb, var(--studio-ink) 2%, var(--studio-card));
+  --studio-track: color-mix(in srgb, var(--studio-ink) 5%, var(--studio-card));
+  --studio-progress-track: color-mix(in srgb, var(--studio-ink) 6%, var(--studio-tray));
+  --studio-done: color-mix(in srgb, var(--studio-ink) 7%, var(--studio-card));
+
+  /* accent: live work, current step, progress, checked items. One hue. */
+  --studio-accent: #2f6bff;
+  --studio-accent-soft: color-mix(in srgb, var(--studio-accent) 5.5%, transparent);
+  --studio-accent-edge: color-mix(in srgb, var(--studio-accent) 28%, transparent);
+  /* text in the accent/danger hue darkens to pass 4.5:1 at 12-14px (#2f6bff on its soft fill is 4.1:1, #e5484d on white 3.9:1) */
+  --studio-accent-text: #2458e0;
+  --studio-success: #2f9e5b;
+  --studio-danger: #e5484d;
+  --studio-danger-text: #c9353a;
+
+  /* focus: 2px ring that passes 3:1 (affectUI #1d93d2 = 3.4:1 on white) */
+  --studio-focus: #1d93d2;
+  /* selected media / picked rows: DIRECTION says ink; map to the brand if
+     the host's accepted kit uses it */
+  --studio-select: var(--studio-ink);
+
+  /* primary button: ink fill, lit top edge, contact drop */
+  --studio-primary: #171717;
+  --studio-primary-hover: #2c2d2f;
+  --studio-primary-fg: #ffffff;
+  --studio-primary-shadow:
+    inset 0 1px 0 rgb(255 255 255 / 10%),
+    0 1px 2px color-mix(in srgb, var(--studio-ink) 10%, transparent);
+
+  /* lifts */
+  --studio-pill-shadow:
+    0 0 0 0.5px color-mix(in srgb, var(--studio-ink) 8%, transparent),
+    0 1px 3px rgb(0 0 0 / 8%);
+  --studio-step-pill-shadow:
+    inset 0 0 0 1px var(--studio-ring),
+    0 1px 2px rgb(0 0 0 / 5%);
+  /* overlays: the ring is the only edge, then two soft drops */
+  --studio-overlay-shadow:
+    0 0 0 1px var(--studio-edge),
+    0 4px 12px -4px rgb(0 0 0 / 6%),
+    0 18px 40px -12px rgb(0 0 0 / 18%);
+  --studio-scrim: rgb(0 0 0 / 45%);
+  --studio-media-edge: rgb(0 0 0 / 6%);
+}
+
+/* Theme-independent tokens live on :root only, so a themed island never
+   resets them. */
+:root {
+  /* type: 12 / 14 / 18 at 450 / 500 */
+  --studio-font: inherit;
+  --studio-fs-12: 12px;
+  --studio-fs-14: 14px;
+  --studio-fs-18: 18px;
+  --studio-ls-12: 0;
+  --studio-ls-14: -0.01em;
+  --studio-ls-18: -0.02em;
+  --studio-fw-body: 450;
+  --studio-fw-strong: 500;
+
+  /* geometry */
+  --studio-control: 36px;
+  --studio-control-compact: 32px;
+  --studio-page-max: 1200px;
+  --studio-page-pad: 24px;
+  --studio-aside: 316px;
+  --studio-bar-pad-end: 24px; /* raise when host chrome (a launcher) sits bottom-right */
+  --studio-bar-pad-end-sm: 16px; /* the same at <= 860px */
+  --studio-chrome: 0px; /* height of host chrome above the scroll area */
+
+  /* radius ladder (AK-28); scaled by --studio-sq when continuous corners run */
+  --studio-sq: 1;
+  --studio-r-tray: calc(20px * var(--studio-sq));
+  --studio-r-dialog: calc(20px * var(--studio-sq));
+  --studio-r-card: calc(16px * var(--studio-sq));
+  --studio-r-control: calc(12px * var(--studio-sq));
+  --studio-r-media: calc(12px * var(--studio-sq));
+  --studio-r-thumb: calc(10px * var(--studio-sq));
+  --studio-r-option: calc(9px * var(--studio-sq));
+  --studio-r-chip: calc(8px * var(--studio-sq));
+  --studio-r-tag: calc(7px * var(--studio-sq));
+  --studio-r-small: calc(6px * var(--studio-sq));
+
+  /* motion */
+  --studio-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --studio-t-hover: 150ms;
+  --studio-t-state: 220ms;
+  --studio-t-in: 240ms;
+  --studio-t-disclosure: 300ms;
+  --studio-t-slide: 400ms;
+  --studio-t-progress: 600ms;
+}
+
+/* ------------------------------------------------------------------------ */
+/* Tokens: dark. Every token is restated (no derived values), so a dark     */
+/* island inside a light page resolves correctly. affectUI dark surfaces:   */
+/* canvas < tray < card < field; one light ring per box (white 7-10%).      */
+/* ------------------------------------------------------------------------ */
+:root[data-theme="dark"],
+[data-theme="dark"],
+.dark {
+  --studio-canvas: #0c0c0d;
+  --studio-tray: #121213;
+  --studio-card: #19191b;
+  --studio-field: #1f1f21;
+  --studio-ink: #ededed;
+  --studio-ink-2: #a1a1a1;
+  --studio-ink-3: #8f8f8f; /* white 40% measured ~4:1; solid grey passes 4.5:1 on every dark surface */
+  --studio-ring: rgb(255 255 255 / 7%);
+  --studio-edge: rgb(255 255 255 / 10%);
+  --studio-edge-field: rgb(255 255 255 / 10%);
+  --studio-edge-strong: rgb(255 255 255 / 12%);
+  --studio-hover: rgb(255 255 255 / 7%);
+  --studio-hover-row: color-mix(in srgb, #ffffff 2%, #19191b);
+  --studio-track: rgb(255 255 255 / 5%);
+  --studio-progress-track: rgb(255 255 255 / 7%);
+  --studio-done: rgb(255 255 255 / 7%);
+  --studio-accent: #2f6bff;
+  --studio-accent-soft: rgb(47 107 255 / 10%);
+  --studio-accent-edge: rgb(47 107 255 / 28%);
+  --studio-accent-text: #6b9bff;
+  --studio-success: #5ee5b5;
+  --studio-danger: #ff8a99;
+  --studio-danger-text: #ff8a99;
+  --studio-focus: #1d93d2;
+  --studio-select: #ededed;
+  --studio-primary: #ededed;
+  --studio-primary-hover: #e4e4e7;
+  --studio-primary-fg: #121213;
+  --studio-primary-shadow:
+    inset 0 0 0 1px rgb(255 255 255 / 7%),
+    0 1px 3px rgb(0 0 0 / 26%);
+  --studio-pill-shadow:
+    0 0 0 0.5px rgb(255 255 255 / 8%),
+    0 1px 3px rgb(0 0 0 / 26%);
+  --studio-step-pill-shadow:
+    inset 0 0 0 1px rgb(255 255 255 / 7%),
+    0 1px 2px rgb(0 0 0 / 26%);
+  --studio-overlay-shadow:
+    0 0 0 1px rgb(255 255 255 / 8%),
+    0 4px 42px rgb(0 0 0 / 40%);
+  --studio-scrim: rgb(0 0 0 / 60%);
+  --studio-media-edge: rgb(255 255 255 / 7%);
+  color-scheme: dark;
+}
+
+/* Follow the OS when the host has not chosen a theme. A light-only host sets
+   data-theme="light" (or .light) on <html> to opt out. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]):not(.light) {
+    --studio-canvas: #0c0c0d;
+    --studio-tray: #121213;
+    --studio-card: #19191b;
+    --studio-field: #1f1f21;
+    --studio-ink: #ededed;
+    --studio-ink-2: #a1a1a1;
+    --studio-ink-3: #8f8f8f;
+    --studio-ring: rgb(255 255 255 / 7%);
+    --studio-edge: rgb(255 255 255 / 10%);
+    --studio-edge-field: rgb(255 255 255 / 10%);
+    --studio-edge-strong: rgb(255 255 255 / 12%);
+    --studio-hover: rgb(255 255 255 / 7%);
+    --studio-hover-row: color-mix(in srgb, #ffffff 2%, #19191b);
+    --studio-track: rgb(255 255 255 / 5%);
+    --studio-progress-track: rgb(255 255 255 / 7%);
+    --studio-done: rgb(255 255 255 / 7%);
+    --studio-accent: #2f6bff;
+    --studio-accent-soft: rgb(47 107 255 / 10%);
+    --studio-accent-edge: rgb(47 107 255 / 28%);
+    --studio-accent-text: #6b9bff;
+    --studio-success: #5ee5b5;
+    --studio-danger: #ff8a99;
+    --studio-danger-text: #ff8a99;
+    --studio-focus: #1d93d2;
+    --studio-select: #ededed;
+    --studio-primary: #ededed;
+    --studio-primary-hover: #e4e4e7;
+    --studio-primary-fg: #121213;
+    --studio-primary-shadow:
+      inset 0 0 0 1px rgb(255 255 255 / 7%),
+      0 1px 3px rgb(0 0 0 / 26%);
+    --studio-pill-shadow:
+      0 0 0 0.5px rgb(255 255 255 / 8%),
+      0 1px 3px rgb(0 0 0 / 26%);
+    --studio-step-pill-shadow:
+      inset 0 0 0 1px rgb(255 255 255 / 7%),
+      0 1px 2px rgb(0 0 0 / 26%);
+    --studio-overlay-shadow:
+      0 0 0 1px rgb(255 255 255 / 8%),
+      0 4px 42px rgb(0 0 0 / 40%);
+    --studio-scrim: rgb(0 0 0 / 60%);
+    --studio-media-edge: rgb(255 255 255 / 7%);
+    color-scheme: dark;
+  }
+}
+
+/* ------------------------------------------------------------------------ */
+/* Page and canvas (AK-01)                                                   */
+/* ------------------------------------------------------------------------ */
+.studio {
+  /* fields on the page canvas use the full tray grey and the control edge;
+     cards and dialogs re-point these below */
+  --studio-field-fill: var(--studio-tray);
+  --studio-field-line: var(--studio-edge);
+  --studio-field-line-hover: var(--studio-edge-strong);
+  box-sizing: border-box;
+  width: 100%;
+  max-width: var(--studio-page-max);
+  margin: 0 auto;
+  padding: var(--studio-page-pad);
+  background: var(--studio-canvas);
+  color: var(--studio-ink);
+  font-family: var(--studio-font);
+  font-size: var(--studio-fs-14);
+  font-weight: var(--studio-fw-body);
+  letter-spacing: var(--studio-ls-14);
+  line-height: 20px;
+  -webkit-font-smoothing: antialiased;
+}
+.studio *,
+.studio *::before,
+.studio *::after {
+  box-sizing: border-box;
+}
+.studio-canvas {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) var(--studio-aside);
+  gap: 16px;
+  align-items: start;
+}
+.studio-work,
+.studio-stack {
+  min-width: 0;
+}
+.studio-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.studio-aside {
+  position: sticky;
+  top: 16px;
+  min-width: 0;
+}
+
+/* ------------------------------------------------------------------------ */
+/* Topbar (AK-05)                                                            */
+/* ------------------------------------------------------------------------ */
+.studio-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.studio-topbar-title {
+  display: flex;
+  flex: 1 1 220px;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+.studio-back {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: var(--studio-control);
+  height: var(--studio-control);
+  border-radius: var(--studio-r-control);
+  background: var(--studio-card);
+  box-shadow: inset 0 0 0 1px var(--studio-edge);
+  color: var(--studio-ink-2);
+  transition:
+    background-color var(--studio-t-hover) var(--studio-ease),
+    color var(--studio-t-hover) var(--studio-ease);
+}
+/* opaque hover: the 4% tint laid over the white fill */
+.studio-back:hover {
+  background-image: linear-gradient(var(--studio-hover), var(--studio-hover));
+  color: var(--studio-ink);
+}
+.studio-title-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  min-width: 0;
+}
+.studio-eyebrow {
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--studio-ink-3);
+  font-size: var(--studio-fs-12);
+  letter-spacing: var(--studio-ls-12);
+  line-height: 16px;
+}
+.studio-title {
+  margin: 0;
+  overflow: hidden;
+  font-size: var(--studio-fs-18);
+  font-weight: var(--studio-fw-strong);
+  letter-spacing: var(--studio-ls-18);
+  line-height: 24px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* editable title: text stays aligned with the eyebrow (pulled -6px) */
+.studio-title-input {
+  width: min(440px, 50vw);
+  height: 24px;
+  margin-left: -6px;
+  padding: 0 6px;
+  border: 0;
+  border-radius: var(--studio-r-small);
+  background: transparent;
+  color: var(--studio-ink);
+  font: inherit;
+  font-size: var(--studio-fs-18);
+  font-weight: var(--studio-fw-strong);
+  letter-spacing: var(--studio-ls-18);
+  text-overflow: ellipsis;
+  transition: background-color var(--studio-t-hover) var(--studio-ease);
+}
+.studio-title-input:hover {
+  background: var(--studio-hover);
+}
+.studio-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+/* ------------------------------------------------------------------------ */
+/* Tray + title strip + card + footer strip (AK-02..04)                      */
+/* ------------------------------------------------------------------------ */
+.studio-tray {
+  min-width: 0;
+  padding: 4px;
+  border-radius: var(--studio-r-tray);
+  background: var(--studio-tray);
+  box-shadow: inset 0 0 0 1px var(--studio-ring);
+}
+.studio-strip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 4px 4px 6px 16px;
+}
+.studio-strip-icon {
+  display: inline-flex;
+  flex-shrink: 0;
+  color: var(--studio-ink-2);
+}
+.studio-strip-icon > svg {
+  width: 16px;
+  height: 16px;
+}
+.studio-strip-title {
+  margin: 0;
+  font-size: var(--studio-fs-14);
+  font-weight: var(--studio-fw-strong);
+  letter-spacing: var(--studio-ls-14);
+  line-height: 20px;
+  white-space: nowrap;
+}
+.studio-strip-meta {
+  min-width: 0;
+  overflow: hidden;
+  color: var(--studio-ink-3);
+  font-size: var(--studio-fs-14);
+  letter-spacing: var(--studio-ls-14);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.studio-strip-action {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+  margin-left: auto;
+}
+.studio-card {
+  min-width: 0;
+  padding: 16px;
+  border-radius: var(--studio-r-card);
+  background: var(--studio-card);
+  box-shadow: inset 0 0 0 1px var(--studio-ring);
+}
+.studio-card[data-flush] {
+  padding: 0;
+  overflow: hidden;
+}
+.studio-tray-body {
+  min-width: 0;
+}
+.studio-footer-strip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 44px;
+  padding: 4px 4px 0 16px;
+  color: var(--studio-ink-2);
+  font-size: var(--studio-fs-12);
+  letter-spacing: var(--studio-ls-12);
+  line-height: 17px;
+}
+/* a footer that leads with a ghost button puts the icon on the 16px inset */
+.studio-footer-lead {
+  margin-left: -12px;
+}
+.studio-tray-note {
+  margin: 0;
+  padding: 0 16px 10px;
+  color: var(--studio-ink-2);
+  font-size: var(--studio-fs-12);
+  letter-spacing: var(--studio-ls-12);
+  line-height: 17px;
+}
+/* fields inside white cards and dialogs: lighter fill, quieter edge */
+.studio-card,
+.studio-dialog {
+  --studio-field-fill: var(--studio-field);
+  --studio-field-line: var(--studio-edge-field);
+  --studio-field-line-hover: var(--studio-edge-strong);
+}
+
+/* ------------------------------------------------------------------------ */
+/* Status chip (AK-06): dot + word from a closed vocabulary                  */
+/* ------------------------------------------------------------------------ */
+.studio-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 24px;
+  padding: 0 8px;
+  border-radius: var(--studio-r-chip);
+  background: var(--studio-card);
+  box-shadow: inset 0 0 0 1px var(--studio-edge);
+  color: var(--studio-ink-2);
+  font-size: var(--studio-fs-12);
+  font-weight: var(--studio-fw-strong);
+  letter-spacing: var(--studio-ls-12);
+  line-height: 16px;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.studio-status-dot {
+  flex-shrink: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background: var(--studio-ink-3);
+}
+.studio-status > svg {
+  flex-shrink: 0;
+  width: 14px;
+  height: 14px;
+  color: var(--studio-ink-3);
+}
+.studio-status[data-tone="success"] .studio-status-dot {
+  background: var(--studio-success);
+}
+.studio-status[data-tone="error"] .studio-status-dot {
+  background: var(--studio-danger);
+}
+.studio-status[data-tone="live"] .studio-status-dot {
+  background: var(--studio-accent);
+  animation: studio-pulse 1.4s ease-in-out infinite;
+}
+/* optional icon in place of the dot (host Badge grammar, see GUIDE) */
+.studio-status[data-tone="success"] > svg {
+  color: var(--studio-success);
+}
+.studio-status[data-tone="error"] > svg {
+  color: var(--studio-danger);
+}
+.studio-status[data-tone="live"] > svg {
+  color: var(--studio-accent);
+}
+
+/* ------------------------------------------------------------------------ */
+/* Step tray (AK-07, AK-08)                                                  */
+/* ------------------------------------------------------------------------ */
+.studio-steps {
+  margin: 20px 0 16px;
+  padding: 4px;
+  border-radius: var(--studio-r-card); /* 16 = step 12 + 4 inset */
+  background: var(--studio-tray);
+  box-shadow: inset 0 0 0 1px var(--studio-ring);
+}
+.studio-steps-list {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(0, 1fr);
+  gap: 4px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.studio-step {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  min-width: 0;
+  height: 52px;
+  padding: 0 14px 0 12px;
+  border: 0;
+  border-radius: var(--studio-r-control);
+  background: transparent;
+  color: var(--studio-ink-3);
+  font: inherit;
+  text-align: left;
+  transition:
+    background-color var(--studio-t-hover) var(--studio-ease),
+    color var(--studio-t-hover) var(--studio-ease);
+}
+.studio-step[data-state="done"] {
+  color: var(--studio-ink-2);
+}
+.studio-step[data-state="current"] {
+  color: var(--studio-ink);
+}
+button.studio-step:not(:disabled):not([data-state="current"]):hover {
+  background: var(--studio-hover);
+  color: var(--studio-ink);
+}
+.studio-step-pill {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  border-radius: inherit;
+  background: var(--studio-card);
+  box-shadow: var(--studio-step-pill-shadow);
+}
+.studio-step > :not(.studio-step-pill) {
+  position: relative;
+  z-index: 1;
+}
+.studio-step-index {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: var(--studio-r-chip);
+  background: var(--studio-card);
+  box-shadow: inset 0 0 0 1px var(--studio-edge);
+  color: var(--studio-ink-3);
+  font-size: var(--studio-fs-12);
+  font-weight: var(--studio-fw-strong);
+  letter-spacing: var(--studio-ls-12);
+  font-variant-numeric: tabular-nums;
+  transition:
+    background-color var(--studio-t-state) var(--studio-ease),
+    color var(--studio-t-state) var(--studio-ease),
+    box-shadow var(--studio-t-state) var(--studio-ease);
+}
+.studio-step[data-state="done"] .studio-step-index {
+  background: var(--studio-done);
+  box-shadow: none;
+  color: var(--studio-ink-2);
+}
+.studio-step[data-state="current"] .studio-step-index {
+  background: var(--studio-accent-soft);
+  box-shadow: inset 0 0 0 1px var(--studio-accent-edge);
+  color: var(--studio-accent-text);
+}
+/* min-width 0 + shrink lets the caption ellipsize instead of running under
+   the next step (kit issue seen at 1100px) */
+.studio-step-text {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 auto;
+  min-width: 0;
+}
+.studio-step-label {
+  overflow: hidden;
+  font-size: var(--studio-fs-14);
+  font-weight: var(--studio-fw-strong);
+  letter-spacing: var(--studio-ls-14);
+  line-height: 18px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.studio-step-caption {
+  overflow: hidden;
+  color: var(--studio-ink-3);
+  font-size: var(--studio-fs-12);
+  letter-spacing: var(--studio-ls-12);
+  line-height: 16px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* ------------------------------------------------------------------------ */
+/* Segmented control (AK-09..11)                                             */
+/* ------------------------------------------------------------------------ */
+.studio-segmented {
+  position: relative;
+  display: inline-flex;
+  gap: 2px;
+  height: var(--studio-control);
+  padding: 3px;
+  border-radius: var(--studio-r-control); /* 12 = option 9 + 3 inset */
+  background: var(--studio-track);
+}
+.studio-segmented[data-fill] {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(0, 1fr);
+  width: 100%;
+}
+.studio-segmented[data-wrap] {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+}
+.studio-segmented[data-wrap] > .studio-segmented-option {
+  flex: 1 1 140px;
+  min-width: 0;
+}
+.studio-segmented-option {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  height: 30px;
+  padding: 0 10px;
+  border: 0;
+  border-radius: var(--studio-r-option);
+  background: transparent;
+  color: var(--studio-ink-2);
+  font: inherit;
+  font-size: var(--studio-fs-14);
+  font-weight: var(--studio-fw-strong);
+  letter-spacing: var(--studio-ls-14);
+  white-space: nowrap;
+  cursor: pointer;
+  transition:
+    background-color var(--studio-t-hover) var(--studio-ease),
+    color var(--studio-t-hover) var(--studio-ease),
+    box-shadow var(--studio-t-hover) var(--studio-ease);
+}
+.studio-segmented-option > svg {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+}
+.studio-segmented-option[aria-checked="true"],
+.studio-segmented-option[aria-selected="true"],
+.studio-segmented-option:has(input:checked) {
+  background: var(--studio-card);
+  color: var(--studio-ink);
+  box-shadow: var(--studio-pill-shadow);
+}
+.studio-segmented-option:not([aria-checked="true"]):not([aria-selected="true"]):not(:has(input:checked)):not(:disabled):not([data-disabled]):hover {
+  background: var(--studio-hover);
+  color: var(--studio-ink);
+}
+.studio-segmented-option:disabled,
+.studio-segmented-option[data-disabled] {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+.studio-segmented-option > input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+/* tall options carry a hint or a price */
+.studio-segmented[data-tall] {
+  height: auto;
+}
+.studio-segmented[data-tall] > .studio-segmented-option {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1px;
+  height: auto;
+  min-height: 52px;
+  padding: 7px 12px;
+  text-align: left;
+  white-space: normal;
+}
+.studio-option-label {
+  font-size: var(--studio-fs-14);
+  font-weight: var(--studio-fw-strong);
+  letter-spacing: var(--studio-ls-14);
+  line-height: 20px;
+}
+.studio-option-hint {
+  color: var(--studio-ink-3);
+  font-size: var(--studio-fs-12);
+  font-weight: var(--studio-fw-body);
+  letter-spacing: var(--studio-ls-12);
+  line-height: 16px;
+  font-variant-numeric: tabular-nums;
+}
+.studio-segmented-option[aria-checked="true"] .studio-option-hint,
+.studio-segmented-option:has(input:checked) .studio-option-hint {
+  color: var(--studio-ink-2);
+}
+/* optional sliding pill (AK-10): add data-slide on the track and one
+   .studio-segmented-pill child; script sets --studio-pill-x / --studio-pill-w
+   from the checked option's offsetLeft / offsetWidth */
+.studio-segmented[data-slide] > .studio-segmented-option {
+  background: transparent;
+  box-shadow: none;
+}
+.studio-segmented-pill {
+  position: absolute;
+  top: 3px;
+  bottom: 3px;
+  left: 0;
+  z-index: 0;
+  width: var(--studio-pill-w, 0px);
+  border-radius: var(--studio-r-option);
+  background: var(--studio-card);
+  box-shadow: var(--studio-pill-shadow);
+  transform: translateX(var(--studio-pill-x, 0px));
+  transition:
+    transform var(--studio-t-slide) var(--studio-ease),
+    width var(--studio-t-slide) var(--studio-ease);
+}
+
+/* ------------------------------------------------------------------------ */
+/* Media (AK-12..14)                                                         */
+/* ------------------------------------------------------------------------ */
+.studio-media {
+  position: relative;
+  display: block;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  border-radius: var(--studio-r-media);
+  background: var(--studio-tray);
+  isolation: isolate;
+  transition: box-shadow 160ms var(--studio-ease);
+}
+.studio-media[data-ratio="tall"] {
+  aspect-ratio: 9 / 16;
+}
+.studio-media[data-size="xs"] {
+  width: 36px;
+  border-radius: calc(8px * var(--studio-sq));
+}
+.studio-media[data-size="sm"] {
+  width: 48px;
+  border-radius: var(--studio-r-thumb);
+}
+.studio-media img,
+.studio-media video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition:
+    transform 500ms var(--studio-ease),
+    filter 800ms var(--studio-ease),
+    opacity 600ms var(--studio-ease);
+}
+/* inner ring on top of the image so light images keep an edge */
+.studio-media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  border-radius: inherit;
+  box-shadow: inset 0 0 0 1px var(--studio-media-edge);
+  pointer-events: none;
+}
+.studio-media-shade {
+  position: absolute;
+  inset: 55% 0 0;
+  z-index: 1;
+  background: linear-gradient(to top, rgb(0 0 0 / 38%), transparent);
+  pointer-events: none;
+}
+/* overlays on imagery are fixed white-on-black in both themes */
+.studio-media-tag {
+  position: absolute;
+  left: 8px;
+  bottom: 8px;
+  z-index: 3;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  height: 22px;
+  padding: 0 7px;
+  border-radius: var(--studio-r-tag);
+  background: rgb(0 0 0 / 56%); /* 42% fails 4.5:1 for 12px white over a light frame */
+  color: #fff;
+  font-size: var(--studio-fs-12);
+  font-weight: var(--studio-fw-strong);
+  letter-spacing: var(--studio-ls-12);
+  font-variant-numeric: tabular-nums;
+  backdrop-filter: blur(8px);
+}
+.studio-media-chip {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 3;
+  max-width: calc(100% - 16px);
+}
+.studio-media-chip > .studio-status {
+  max-width: 100%;
+  overflow: hidden;
+}
+.studio-media[data-pending] img,
+.studio-media[data-pending] video {
+  filter: blur(10px) saturate(0.5);
+  transform: scale(1.15);
+  opacity: 0.6;
+}
+.studio-sweep {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background: linear-gradient(105deg, transparent 30%, rgb(255 255 255 / 40%) 50%, transparent 70%);
+  background-size: 250% 100%;
+  animation: studio-sweep 2.4s ease-in-out infinite;
+  pointer-events: none;
+}
+/* selected: 2px gap in the surface colour, then a 1.5px ring */
+.studio-media[data-selected],
+.studio-tile[aria-pressed="true"] .studio-media {
+  box-shadow:
+    0 0 0 2px var(--studio-card),
+    0 0 0 3.5px var(--studio-select);
+}
+
+/* clickable media tile (gallery item, template) */
+.studio-tile {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%; /* a button shrink-wraps; with inline-size containment it would collapse */
+  min-width: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  container-type: inline-size;
+}
+button.studio-tile:not(:disabled),
+a.studio-tile {
+  cursor: pointer;
+}
+.studio-tile:disabled {
+  cursor: not-allowed;
+}
+.studio-tile:disabled .studio-media img {
+  opacity: 0.45;
+  filter: saturate(0.4);
+}
+/* hover: a quiet 1px strong ring outside the same gap; never a zoom */
+.studio-tile:not(:disabled):not([aria-pressed="true"]):hover .studio-media,
+.studio-library-card:hover .studio-media {
+  box-shadow:
+    0 0 0 2px var(--studio-card),
+    0 0 0 3px var(--studio-edge-strong);
+}
+.studio-tile:not(:disabled):hover .studio-media img,
+.studio-library-card:hover .studio-media img {
+  filter: brightness(0.96);
+}
+.studio-tile:focus-visible {
+  outline: none;
+}
+.studio-tile:focus-visible .studio-media {
+  box-shadow:
+    0 0 0 2px var(--studio-card),
+    0 0 0 4px var(--studio-focus);
+}
+.studio-tile-name {
+  display: block;
+  overflow: hidden;
+  font-size: var(--studio-fs-14);
+  font-weight: var(--studio-fw-strong);
+  letter-spacing: var(--studio-ls-14);
+  line-height: 20px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.studio-tile-meta {
+  display: block;
+  overflow: hidden;
+  color: var(--studio-ink-2);
+  font-size: var(--studio-fs-12);
+  letter-spacing: var(--studio-ls-12);
+  line-height: 17px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.studio-tile-actions {
+  display: flex;
+  gap: 8px;
+}
+.studio-tile-actions > * {
+  flex: 1 1 0;
+  min-width: 0;
+}
+/* tiles stack their buttons under 280px of tile width (AK-18) */
+@container (max-width: 280px) {
+  .studio-tile-actions {
+    flex-direction: column;
+  }
+}
+
+/* ------------------------------------------------------------------------ */
+/* Library card (AK-15)                                                      */
+/* ------------------------------------------------------------------------ */
+.studio-library-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+}
+/* the whole card is one link; the menu sits above it */
+.studio-library-open {
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  border-radius: var(--studio-r-media);
+  cursor: pointer;
+}
+.studio-library-open:focus-visible {
+  outline: 2px solid var(--studio-focus);
+  outline-offset: 3px;
+}
+.studio-library-foot {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 4px;
+  min-width: 0;
+}
+.studio-library-text {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+.studio-library-menu {
+  position: relative;
+  z-index: 5;
+  flex-shrink: 0;
+  margin: -4px -4px 0 0;
+}
+/* the dashed create tile opens a library grid; same ratio as the covers */
+.studio-create-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  padding: 16px;
+  border: 1px dashed var(--studio-edge-strong);
+  border-radius: var(--studio-r-media);
+  background: var(--studio-field);
+  color: var(--studio-ink);
+  font: inherit;
+  text-align: center;
+  cursor: pointer;
+  transition:
+    background-color 160ms var(--studio-ease),
+    border-color 160ms var(--studio-ease);
+}
+.studio-create-tile:hover {
+  border-color: color-mix(in srgb, var(--studio-ink) 32%, transparent);
+  background: color-mix(in srgb, var(--studio-ink) 3%, var(--studio-card));
+}
+
+/* ------------------------------------------------------------------------ */
+/* Grids (AK-18): count-aware columns + auto-fill variants                   */
+/* ------------------------------------------------------------------------ */
+/* columns come from --studio-cols so breakpoints only lower the count and
+   never fight the count selectors on specificity */
+.studio-grid {
+  --studio-cols: 4;
+  display: grid;
+  grid-template-columns: repeat(var(--studio-cols), minmax(0, 1fr));
+  gap: 16px 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.studio-grid[data-count="1"] {
+  --studio-cols: 1;
+}
+.studio-grid[data-count="2"] {
+  --studio-cols: 2;
+}
+.studio-grid[data-count="3"] {
+  --studio-cols: 3;
+}
+.studio-grid[data-fill="library"] {
+  grid-template-columns: repeat(auto-fill, minmax(176px, 1fr));
+}
+.studio-grid[data-fill="tall"] {
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+}
+.studio-grid[data-fill="tile"] {
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+/* ------------------------------------------------------------------------ */
+/* Lists and rows (AK-16, AK-17)                                             */
+/* ------------------------------------------------------------------------ */
+.studio-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.studio-list > li:not(:first-child) {
+  box-shadow: inset 0 1px 0 var(--studio-ring);
+}
+.studio-list > li {
+  transition: background-color var(--studio-t-hover) var(--studio-ease);
+}
+.studio-list > li[data-interactive]:not([data-selected]):hover {
+  background: var(--studio-hover-row);
+}
+.studio-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 60px;
+  padding: 10px 16px;
+}
+.studio-row-main {
+  flex: 1;
+  min-width: 0;
+}
+.studio-row-title {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  min-width: 0;
+  margin: 0;
+  font-size: var(--studio-fs-14);
+  font-weight: var(--studio-fw-strong);
+  letter-spacing: var(--studio-ls-14);
+  line-height: 20px;
+}
+.studio-row-title > span:first-child {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.studio-row-meta {
+  display: block;
+  overflow: hidden;
+  color: var(--studio-ink-2);
+  font-size: var(--studio-fs-12);
+  letter-spacing: var(--studio-ls-12);
+  line-height: 17px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.studio-row-sub {
+  flex-shrink: 0;
+  color: var(--studio-ink-3);
+  font-size: var(--studio-fs-12);
+  font-weight: var(--studio-fw-body);
+  letter-spacing: var(--studio-ls-12);
+  font-variant-numeric: tabular-nums;
+}
+.studio-row-actions {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+}
+.studio-row-extra {
+  padding: 0 16px 12px 72px;
+}
+/* a row whose main area is one button */
+.studio-row-pick {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+  min-width: 0;
+  padding: 0;
+  border: 0;
+  border-radius: var(--studio-r-thumb);
+  background: none;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+.studio-row-pick:focus-visible {
+  outline: 2px solid var(--studio-focus);
+  outline-offset: 2px;
+}
+/* square thumbnails: never a 9:16 sliver in a row */
+.studio-thumb {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  overflow: hidden;
+  border-radius: var(--studio-r-thumb);
+  background: var(--studio-tray);
+  box-shadow: inset 0 0 0 1px var(--studio-ring);
+  color: var(--studio-ink-3);
+}
+.studio-thumb[data-size="lg"] {
+  width: 44px;
+  height: 44px;
+}
+.studio-thumb[data-size="xl"] {
+  width: 56px;
+  height: 56px;
+  border-radius: var(--studio-r-control);
+}
+.studio-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: filter 800ms var(--studio-ease);
+}
+.studio-thumb[data-pending] img {
+  filter: blur(6px) saturate(0.5);
+}
+.studio-list > li[data-selected] .studio-thumb {
+  box-shadow:
+    0 0 0 2px var(--studio-card),
+    0 0 0 3.5px var(--studio-select);
+}
+
+/* ------------------------------------------------------------------------ */
+/* Stat / summary tiles and progress                                         */
+/* ------------------------------------------------------------------------ */
+.studio-stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 4px;
+  margin: 0;
+}
+.studio-stats[data-cols="3"] {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.studio-stats > div {
+  min-width: 0;
+  padding: 10px 12px;
+  border-radius: var(--studio-r-control);
+  background: var(--studio-tray);
+  box-shadow: inset 0 0 0 1px var(--studio-ring);
+}
+.studio-stats dt {
+  color: var(--studio-ink-3);
+  font-size: var(--studio-fs-12);
+  letter-spacing: var(--studio-ls-12);
+  line-height: 16px;
+}
+.studio-stats dd {
+  margin: 2px 0 0;
+  overflow: hidden;
+  font-size: var(--studio-fs-14);
+  font-weight: var(--studio-fw-strong);
+  letter-spacing: var(--studio-ls-14);
+  line-height: 20px;
+  font-variant-numeric: tabular-nums;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.studio-progress {
+  position: relative;
+  height: 4px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: var(--studio-progress-track);
+}
+.studio-progress[data-size="lg"] {
+  height: 6px;
+}
+.studio-progress > span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--studio-accent);
+  transition: width var(--studio-t-progress) var(--studio-ease);
+}
+
+/* ------------------------------------------------------------------------ */
+/* Fields (AK-22, AK-23): 36 tall, radius 12, label 14/500 + 8 gap          */
+/* ------------------------------------------------------------------------ */
+.studio-fields {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px 12px;
+}
+.studio-fields > .studio-field-full {
+  grid-column: 1 / -1;
+}
+.studio-field-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.studio-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+}
+.studio-field-label-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+.studio-label {
+  display: block;
+  margin: 0;
+  color: var(--studio-ink);
+  font-size: var(--studio-fs-14);
+  font-weight: var(--studio-fw-strong);
+  letter-spacing: var(--studio-ls-14);
+  line-height: 20px;
+}
+.studio-required {
+  color: var(--studio-ink-3);
+  font-size: var(--studio-fs-12);
+  letter-spacing: var(--studio-ls-12);
+}
+.studio-hint {
+  margin: 0;
+  color: var(--studio-ink-3);
+  font-size: var(--studio-fs-12);
+  letter-spacing: var(--studio-ls-12);
+  line-height: 17px;
+}
+.studio-field > .studio-hint {
+  margin-top: -2px; /* 8 gap - 2 = 6px under the field */
+}
+.studio-field > .studio-hint[role="alert"] {
+  color: var(--studio-danger);
+}
+.studio-input,
+.studio-textarea,
+.studio-select {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  height: var(--studio-control);
+  padding: 0 12px;
+  border: 0;
+  border-radius: var(--studio-r-control);
+  background: var(--studio-field-fill);
+  box-shadow: inset 0 0 0 1px var(--studio-field-line);
+  color: var(--studio-ink);
+  font: inherit;
+  font-size: var(--studio-fs-14);
+  font-weight: var(--studio-fw-body);
+  letter-spacing: var(--studio-ls-14);
+  line-height: 20px;
+  transition: box-shadow var(--studio-t-hover) var(--studio-ease);
+}
+.studio-input::placeholder,
+.studio-textarea::placeholder {
+  color: var(--studio-ink-3);
+}
+.studio-input:hover,
+.studio-textarea:hover,
+.studio-select:hover,
+.studio-select[data-state="open"] {
+  box-shadow: inset 0 0 0 1px var(--studio-field-line-hover);
+}
+.studio-textarea {
+  height: auto;
+  min-height: 64px;
+  padding: 10px 12px;
+  resize: none;
+}
+.studio-dialog .studio-textarea {
+  min-height: 72px;
+}
+/* select / picker trigger: same box, a chevron slot at the end */
+.studio-select {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding-right: 10px;
+  text-align: left;
+  cursor: pointer;
+  appearance: none;
+}
+.studio-select > span:first-child {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.studio-select > svg {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  color: var(--studio-ink-3);
+}
+.studio-input[aria-invalid="true"],
+.studio-textarea[aria-invalid="true"],
+.studio-select[aria-invalid="true"] {
+  box-shadow: inset 0 0 0 1px var(--studio-danger);
+}
+.studio-input:disabled,
+.studio-textarea:disabled,
+.studio-select:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* drop zone */
+.studio-dropzone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  width: 100%;
+  min-height: 176px;
+  padding: 24px;
+  border: 1px dashed var(--studio-edge-strong);
+  border-radius: var(--studio-r-card);
+  background: var(--studio-field);
+  text-align: center;
+  transition:
+    background-color 160ms var(--studio-ease),
+    border-color 160ms var(--studio-ease);
+}
+.studio-dropzone:hover,
+.studio-dropzone[data-dragging] {
+  border-color: color-mix(in srgb, var(--studio-ink) 32%, transparent);
+  background: color-mix(in srgb, var(--studio-ink) 3%, var(--studio-card));
+}
+.studio-drop-icon {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 6px;
+  border-radius: var(--studio-r-control);
+  background: var(--studio-card);
+  box-shadow:
+    0 0 0 1px var(--studio-edge-field),
+    0 2px 6px -2px rgb(0 0 0 / 12%);
+  color: var(--studio-ink);
+  transition: transform var(--studio-t-state) var(--studio-ease);
+}
+.studio-dropzone:hover .studio-drop-icon,
+.studio-dropzone[data-dragging] .studio-drop-icon {
+  transform: translateY(-2px);
+}
+
+/* ------------------------------------------------------------------------ */
+/* Buttons (AK-24): one size per region; primary / secondary / ghost        */
+/* ------------------------------------------------------------------------ */
+.studio-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  flex-shrink: 0;
+  height: var(--studio-control);
+  padding: 0 16px;
+  border: 0;
+  border-radius: var(--studio-r-control);
+  /* secondary is the default look */
+  background: var(--studio-card);
+  box-shadow: inset 0 0 0 1px var(--studio-edge);
+  color: var(--studio-ink);
+  font: inherit;
+  font-size: var(--studio-fs-14);
+  font-weight: var(--studio-fw-strong);
+  letter-spacing: var(--studio-ls-14);
+  line-height: 1;
+  white-space: nowrap;
+  text-decoration: none;
+  cursor: pointer;
+  transition:
+    background-color var(--studio-t-hover) var(--studio-ease),
+    color var(--studio-t-hover) var(--studio-ease),
+    box-shadow var(--studio-t-hover) var(--studio-ease),
+    transform var(--studio-t-hover) var(--studio-ease);
+}
+.studio-btn > svg {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+}
+.studio-btn:has(> svg) {
+  padding: 0 12px;
+}
+.studio-btn:hover {
+  background-image: linear-gradient(var(--studio-hover), var(--studio-hover));
+}
+.studio-btn:active {
+  transform: scale(0.97);
+}
+.studio-btn[data-variant="primary"] {
+  background: var(--studio-primary);
+  box-shadow: var(--studio-primary-shadow);
+  color: var(--studio-primary-fg);
+}
+.studio-btn[data-variant="primary"]:hover {
+  background: var(--studio-primary-hover);
+}
+.studio-btn[data-variant="ghost"] {
+  background: transparent;
+  box-shadow: none;
+  color: var(--studio-ink-2);
+}
+.studio-btn[data-variant="ghost"]:hover {
+  background: var(--studio-hover);
+  color: var(--studio-ink);
+}
+.studio-btn[data-size="compact"] {
+  height: var(--studio-control-compact);
+  padding: 0 12px;
+}
+.studio-btn[data-size="compact"]:has(> svg) {
+  padding: 0 10px;
+}
+.studio-btn[data-icon-only] {
+  width: var(--studio-control);
+  padding: 0;
+}
+.studio-btn[data-icon-only][data-size="compact"] {
+  width: var(--studio-control-compact);
+  border-radius: var(--studio-r-thumb);
+}
+.studio-btn:disabled,
+.studio-btn[aria-disabled="true"] {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.studio-btn > .studio-btn-price {
+  color: inherit;
+  font-weight: var(--studio-fw-body);
+  font-variant-numeric: tabular-nums;
+  opacity: 0.72;
+}
+
+/* text link */
+.studio-link {
+  color: var(--studio-ink-2);
+  font-size: var(--studio-fs-12);
+  font-weight: var(--studio-fw-strong);
+  letter-spacing: var(--studio-ls-12);
+  text-decoration: underline;
+  text-decoration-color: var(--studio-edge);
+  text-underline-offset: 3px;
+  cursor: pointer;
+  transition: color var(--studio-t-hover) var(--studio-ease);
+}
+.studio-link:hover {
+  color: var(--studio-ink);
+}
+
+/* ------------------------------------------------------------------------ */
+/* Sticky footer bar (AK-20, AK-21)                                          */
+/* ------------------------------------------------------------------------ */
+/* a screen with a bar fills the scroll area, so a short page rests the bar
+   on the bottom edge and a long page keeps it stuck while content scrolls */
+.studio:has(> .studio-bar) {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100dvh - var(--studio-chrome));
+}
+.studio > :has(+ .studio-bar) {
+  margin-bottom: 16px;
+}
+.studio-bar {
+  position: sticky;
+  bottom: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  min-height: 60px;
+  margin: auto calc(var(--studio-page-pad) * -1) calc(var(--studio-page-pad) * -1);
+  padding: 12px max(var(--studio-bar-pad-end), env(safe-area-inset-right))
+    max(12px, env(safe-area-inset-bottom)) var(--studio-page-pad);
+  border-top: 1px solid var(--studio-ring);
+  background: var(--studio-canvas);
+}
+.studio-bar-side {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+  color: var(--studio-ink-2);
+  font-size: var(--studio-fs-14);
+  letter-spacing: var(--studio-ls-14);
+}
+.studio-cost {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--studio-ink-2);
+  font-size: var(--studio-fs-12);
+  letter-spacing: var(--studio-ls-12);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.studio-cost strong {
+  color: var(--studio-ink);
+  font-weight: var(--studio-fw-strong);
+}
+.studio-cost-divider {
+  width: 1px;
+  height: 12px;
+  background: var(--studio-edge);
+}
+
+/* ------------------------------------------------------------------------ */
+/* Overlays (AK-25, AK-26): one edge (the shadow ring), the flow's type     */
+/* ------------------------------------------------------------------------ */
+.studio-scrim {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  background: var(--studio-scrim);
+  backdrop-filter: blur(2px);
+}
+.studio-dialog {
+  position: relative;
+  display: grid;
+  gap: 18px;
+  width: min(480px, calc(100vw - 32px));
+  max-height: calc(100dvh - 32px);
+  overflow-y: auto;
+  padding: 24px;
+  border: 0;
+  border-radius: var(--studio-r-dialog);
+  background: var(--studio-card);
+  box-shadow: var(--studio-overlay-shadow);
+  color: var(--studio-ink);
+  animation: studio-pop-in 200ms var(--studio-ease) both;
+}
+.studio-dialog[data-size="wide"] {
+  width: min(560px, calc(100vw - 32px));
+}
+.studio-dialog-header {
+  display: grid;
+  gap: 7px;
+  padding-right: 32px; /* clear the close button */
+}
+.studio-dialog-title {
+  margin: 0;
+  font-size: var(--studio-fs-18);
+  font-weight: var(--studio-fw-strong);
+  letter-spacing: var(--studio-ls-18);
+  line-height: 24px;
+}
+.studio-dialog-description {
+  margin: 0;
+  color: var(--studio-ink-2);
+  font-size: var(--studio-fs-14);
+  font-weight: var(--studio-fw-body);
+  letter-spacing: var(--studio-ls-14);
+  line-height: 20px;
+}
+.studio-dialog-body {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+/* Cancel (ghost) sits left of the primary; no dividers between parts */
+.studio-dialog-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+.studio-dialog-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 0;
+  border-radius: var(--studio-r-thumb);
+  background: transparent;
+  color: var(--studio-ink-3);
+  cursor: pointer;
+  transition:
+    background-color var(--studio-t-hover) var(--studio-ease),
+    color var(--studio-t-hover) var(--studio-ease),
+    transform var(--studio-t-hover) var(--studio-ease);
+}
+.studio-dialog-close:hover {
+  background: var(--studio-hover);
+  color: var(--studio-ink);
+}
+.studio-dialog-close:active {
+  transform: scale(0.94);
+}
+.studio-dialog-close > svg {
+  width: 16px;
+  height: 16px;
+}
+/* menus, popovers, select lists */
+.studio-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  min-width: 176px;
+  max-width: calc(100vw - 24px);
+  max-height: min(420px, 60dvh);
+  overflow-y: auto;
+  padding: 5px;
+  border: 0;
+  border-radius: var(--studio-r-control);
+  background: var(--studio-card);
+  box-shadow: var(--studio-overlay-shadow);
+  color: var(--studio-ink);
+  animation: studio-pop-in var(--studio-t-hover) var(--studio-ease) both;
+}
+.studio-menu[data-kind="select"] {
+  max-height: min(320px, 50dvh);
+}
+.studio-menu-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 36px;
+  padding: 8px 10px;
+  border: 0;
+  border-radius: var(--studio-r-option);
+  background: transparent;
+  color: var(--studio-ink-2);
+  font: inherit;
+  font-size: var(--studio-fs-14);
+  font-weight: var(--studio-fw-body);
+  letter-spacing: var(--studio-ls-14);
+  text-align: left;
+  cursor: pointer;
+  transition:
+    background-color var(--studio-t-hover) var(--studio-ease),
+    color var(--studio-t-hover) var(--studio-ease);
+}
+.studio-menu-item[data-meta] {
+  min-height: 44px;
+  padding: 6px 8px 6px 10px;
+}
+.studio-menu-item > svg {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  color: var(--studio-ink-3);
+}
+.studio-menu-item:hover,
+.studio-menu-item[data-highlighted],
+.studio-menu-item:focus-visible {
+  background: var(--studio-hover);
+  color: var(--studio-ink);
+  outline: none;
+}
+.studio-menu-item[aria-checked="true"],
+.studio-menu-item[aria-selected="true"],
+.studio-menu-item[data-checked] {
+  color: var(--studio-ink);
+  font-weight: var(--studio-fw-strong);
+}
+.studio-menu-item[aria-checked="true"] > .studio-menu-check,
+.studio-menu-item[aria-selected="true"] > .studio-menu-check,
+.studio-menu-item[data-checked] > .studio-menu-check {
+  margin-left: auto;
+  color: var(--studio-accent);
+}
+.studio-menu-item[data-variant="danger"] {
+  color: var(--studio-danger-text);
+}
+.studio-menu-separator {
+  height: 1px;
+  margin: 4px;
+  background: var(--studio-ring);
+}
+.studio-menu-foot {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 4px;
+  padding-top: 4px;
+  box-shadow: inset 0 1px 0 var(--studio-ring);
+}
+
+/* ------------------------------------------------------------------------ */
+/* Focus, pointer, entrances (AK-31, AK-32)                                  */
+/* ------------------------------------------------------------------------ */
+.studio-btn:focus-visible,
+.studio-back:focus-visible,
+.studio-step:focus-visible,
+.studio-segmented-option:focus-visible,
+.studio-segmented-option:has(input:focus-visible),
+.studio-input:focus-visible,
+.studio-textarea:focus-visible,
+.studio-select:focus-visible,
+.studio-title-input:focus-visible,
+.studio-dialog-close:focus-visible {
+  outline: 2px solid var(--studio-focus);
+  outline-offset: 1px;
+}
+.studio-create-tile:focus-visible,
+.studio-dropzone:focus-visible,
+.studio-link:focus-visible {
+  outline: 2px solid var(--studio-focus);
+  outline-offset: 2px;
+}
+.studio-menu-item:focus-visible {
+  outline: 2px solid var(--studio-focus);
+  outline-offset: -2px;
+}
+.studio-back,
+button.studio-step:not(:disabled),
+.studio-segmented-option:not(:disabled):not([data-disabled]),
+.studio-library-open,
+.studio-row-pick,
+.studio-dropzone[role="button"] {
+  cursor: pointer;
+}
+
+/* content in: 240ms, 4px rise, no blur in product */
+.studio-in {
+  animation: studio-in var(--studio-t-in) var(--studio-ease) both;
+}
+/* step change: 220ms fade and 6px rise; no exit so the next step mounts at once */
+.studio-step-in {
+  animation: studio-step-in var(--studio-t-state) var(--studio-ease) both;
+}
+
+@keyframes studio-in {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+}
+@keyframes studio-step-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+}
+@keyframes studio-pop-in {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+}
+@keyframes studio-pulse {
+  50% {
+    transform: scale(0.6);
+    opacity: 0.5;
+  }
+}
+@keyframes studio-sweep {
+  from {
+    background-position: 120% 0;
+  }
+  to {
+    background-position: -120% 0;
+  }
+}
+
+/* ------------------------------------------------------------------------ */
+/* Breakpoints: 1100 / 860 / 520 (AK-01, AK-08, AK-18, AK-21)                */
+/* ------------------------------------------------------------------------ */
+@media (max-width: 1100px) {
+  .studio {
+    --studio-aside: 280px;
+  }
+  .studio-grid[data-count="4"],
+  .studio-grid:not([data-count]) {
+    --studio-cols: 3;
+  }
+}
+@media (max-width: 860px) {
+  .studio {
+    --studio-page-pad: 16px;
+  }
+  .studio-canvas {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .studio-canvas[data-aside-first] .studio-aside {
+    order: -1;
+  }
+  .studio-aside {
+    position: static;
+  }
+  .studio-step-caption {
+    display: none;
+  }
+  .studio-steps-list {
+    display: flex;
+  }
+  .studio-steps-list > li {
+    flex: 0 0 auto;
+  }
+  .studio-steps-list > li:has([data-state="current"]) {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+  .studio-step:not([data-state="current"]) .studio-step-text {
+    display: none;
+  }
+  .studio-fields,
+  .studio-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .studio-grid[data-count="3"],
+  .studio-grid[data-count="4"],
+  .studio-grid:not([data-count]) {
+    --studio-cols: 2;
+  }
+  .studio-row-extra {
+    padding-left: 16px;
+  }
+  .studio-bar {
+    flex-wrap: wrap;
+    gap: 8px 12px;
+    padding: 10px max(var(--studio-bar-pad-end-sm), env(safe-area-inset-right))
+      max(10px, env(safe-area-inset-bottom)) 16px;
+  }
+  .studio-bar > .studio-bar-side {
+    flex: 1 1 100%;
+  }
+  .studio-bar .studio-cost {
+    flex-wrap: wrap;
+    gap: 4px 8px;
+    white-space: normal;
+  }
+  .studio-bar > .studio-actions {
+    flex: 1 1 100%;
+    justify-content: flex-end;
+  }
+}
+@media (max-width: 520px) {
+  .studio-grid[data-count],
+  .studio-grid:not([data-count]) {
+    --studio-cols: 1;
+  }
+  .studio-fields {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  /* the title keeps at least 220px; actions drop under it */
+  .studio-topbar {
+    flex-wrap: wrap;
+  }
+}
+
+/* ------------------------------------------------------------------------ */
+/* Reduced motion: loops and entrances stop; state changes become instant    */
+/* ------------------------------------------------------------------------ */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --studio-t-hover: 0ms;
+    --studio-t-state: 0ms;
+    --studio-t-in: 0ms;
+    --studio-t-disclosure: 0ms;
+    --studio-t-slide: 0ms;
+    --studio-t-progress: 0ms;
+  }
+  .studio-status[data-tone="live"] .studio-status-dot,
+  .studio-sweep,
+  .studio-in,
+  .studio-step-in,
+  .studio-dialog,
+  .studio-menu {
+    animation: none;
+  }
+  .studio-media img,
+  .studio-media video,
+  .studio-thumb img,
+  .studio-media,
+  .studio-create-tile,
+  .studio-dropzone,
+  .studio-drop-icon {
+    transition: none;
+  }
+}
+
+/* ------------------------------------------------------------------------ */
+/* Continuous corners (founder 2026-10-12, BN-12; system/effects/squircle.css)
+   superellipse(1.32) at radius x1.2 matches Apple / Figma 60% smoothing.
+   Without corner-shape support the radii stay at their measured values.    */
+/* ------------------------------------------------------------------------ */
+@supports (corner-shape: superellipse(2)) {
+  :root {
+    --studio-sq: 1.2;
+  }
+  .studio-tray,
+  .studio-card,
+  .studio-steps,
+  .studio-step,
+  .studio-step-pill,
+  .studio-step-index,
+  .studio-back,
+  .studio-status,
+  .studio-segmented,
+  .studio-segmented-option,
+  .studio-segmented-pill,
+  .studio-media,
+  .studio-media::after,
+  .studio-media-tag,
+  .studio-library-open,
+  .studio-create-tile,
+  .studio-thumb,
+  .studio-stats > div,
+  .studio-input,
+  .studio-textarea,
+  .studio-select,
+  .studio-dropzone,
+  .studio-drop-icon,
+  .studio-btn,
+  .studio-dialog,
+  .studio-dialog-close,
+  .studio-menu,
+  .studio-menu-item {
+    corner-shape: superellipse(1.32);
+  }
+  .studio-status-dot,
+  .studio-progress,
+  .studio-progress > span {
+    corner-shape: round;
+  }
+}

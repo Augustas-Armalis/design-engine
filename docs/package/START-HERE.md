@@ -78,6 +78,7 @@ To preview any past build: `cd engine/work/<name>/app && npm install && npm run 
 | `system/systems/` | 18 house design systems (type, colour, radius, depth, motion), light + dark, contrast-checked. |
 | `system/variety/` | The variety system: button grammars, nav grammars, type voices, dark palettes, specimens. |
 | `system/kits/product-hero/` | The craft kit every hero starts from (motion tokens, frame, rolling numbers, reveals). |
+| `system/kits/product-studio/` | The kit every in-app product screen starts from (affectUI / AlignUI light + dark: tray, title strip, card, status, steps, segmented control, media tiles, library card, rows, sticky cost bar, 36px fields). Plain CSS + a React panel; read `GUIDE.md`. |
 | `ledger/` | Every accept/reject with the founder's words and a visual fingerprint (used to stop repetition). |
 | `work/` | Every build so far (source + screenshots + videos): Kestrel, Ferry, Margin, Strata, and the V1 set. |
 | `tools/` | `check.mjs` (render + measure + accessibility + consistency probes), `shot.mjs`, `record.mjs`, `compare.mjs` (side-by-side with a reference), `ledger.mjs`, `variety.mjs`, `new_build.mjs`, rule index tools. |

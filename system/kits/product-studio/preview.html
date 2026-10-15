@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Product studio kit</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..600&display=swap">
+<link rel="stylesheet" href="./studio.css">
+<style>
+  /* Specimen page only. Sample content; the tiles use gradients in place of images. */
+  body { margin: 0; background: #e9e9e9; }
+  :root { --studio-font: "Inter", ui-sans-serif, system-ui, sans-serif; }
+  .specimen { padding: 32px 0; }
+  .specimen + .specimen { border-top: 1px solid #d4d4d4; }
+  .specimen > .studio { border-radius: 20px; }
+  .row-2 { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 16px; align-items: start; }
+  .demo-overlays { display: flex; gap: 16px; align-items: flex-start; flex-wrap: wrap; }
+  .demo-overlays .studio-dialog, .demo-overlays .studio-menu { animation: none; }
+  .ph-a { background: linear-gradient(160deg, #d9c3a5, #8a6a4a); }
+  .ph-b { background: linear-gradient(160deg, #b7c6d9, #4d6380); }
+  .ph-c { background: linear-gradient(160deg, #c9d3c0, #5e7052); }
+  .ph-d { background: linear-gradient(160deg, #e0c0c8, #84505c); }
+  .studio-media > i { position: absolute; inset: 0; }
+  @media (max-width: 860px) { .row-2 { grid-template-columns: minmax(0, 1fr); } }
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-back" viewBox="0 0 16 16"><path d="M10 3 5 8l5 5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-box" viewBox="0 0 16 16"><rect x="2.5" y="2.5" width="11" height="11" rx="3" fill="none" stroke="currentColor" stroke-width="1.4"/></symbol>
+  <symbol id="i-image" viewBox="0 0 16 16"><rect x="2" y="3" width="12" height="10" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="m3.5 11 3-3 2.5 2.5L11 9l1.5 1.5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></symbol>
+  <symbol id="i-list" viewBox="0 0 16 16"><path d="M5.5 4h8M5.5 8h8M5.5 12h8M2.5 4h.01M2.5 8h.01M2.5 12h.01" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 16 16"><path d="M8 3v10M3 8h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+  <symbol id="i-dots" viewBox="0 0 16 16"><circle cx="3.5" cy="8" r="1.2" fill="currentColor"/><circle cx="8" cy="8" r="1.2" fill="currentColor"/><circle cx="12.5" cy="8" r="1.2" fill="currentColor"/></symbol>
+  <symbol id="i-chev" viewBox="0 0 16 16"><path d="m4.5 6.5 3.5 3.5 3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-check" viewBox="0 0 16 16"><path d="m3.5 8.5 3 3 6-7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-redo" viewBox="0 0 16 16"><path d="M12.5 6.5A5 5 0 1 0 13 9" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M12.5 3v3.5H9" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-x" viewBox="0 0 16 16"><path d="m4 4 8 8M12 4l-8 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+</svg>
+
+<template id="specimen">
+  <header class="studio-topbar">
+    <div class="studio-topbar-title">
+      <a class="studio-back" href="#" aria-label="Back to library" title="Back to library"><svg width="16" height="16"><use href="#i-back"/></svg></a>
+      <div class="studio-title-text">
+        <p class="studio-eyebrow">Sample flow</p>
+        <h1 class="studio-title">Spring launch set</h1>
+      </div>
+    </div>
+    <div class="studio-actions">
+      <span class="studio-status" data-tone="neutral"><span class="studio-status-dot"></span>3 of 4 approved</span>
+      <button class="studio-btn" data-variant="ghost" type="button">Save draft</button>
+    </div>
+  </header>
+
+  <nav class="studio-steps" aria-label="Steps">
+    <ol class="studio-steps-list">
+      <li><div class="studio-step" data-state="done"><span class="studio-step-index">1</span><span class="studio-step-text"><span class="studio-step-label">Brief</span><span class="studio-step-caption">Product and goal</span></span></div></li>
+      <li><div class="studio-step" data-state="done"><span class="studio-step-index">2</span><span class="studio-step-text"><span class="studio-step-label">Look</span><span class="studio-step-caption">Style, cast and setting</span></span></div></li>
+      <li><div class="studio-step" data-state="current" aria-current="step"><span class="studio-step-pill"></span><span class="studio-step-index">3</span><span class="studio-step-text"><span class="studio-step-label">Set</span><span class="studio-step-caption">Approve each image</span></span></div></li>
+      <li><div class="studio-step" data-state="todo"><span class="studio-step-index">4</span><span class="studio-step-text"><span class="studio-step-label">Scenes</span><span class="studio-step-caption">Order and timing</span></span></div></li>
+      <li><div class="studio-step" data-state="todo"><span class="studio-step-index">5</span><span class="studio-step-text"><span class="studio-step-label">Export</span><span class="studio-step-caption">Formats and sizes</span></span></div></li>
+    </ol>
+  </nav>
+
+  <div class="studio-stack">
+    <section class="studio-tray">
+      <header class="studio-strip">
+        <span class="studio-strip-icon"><svg><use href="#i-image"/></svg></span>
+        <h2 class="studio-strip-title">Set</h2>
+        <span class="studio-strip-meta">3 of 4 approved</span>
+        <div class="studio-strip-action"><button class="studio-btn" data-variant="ghost" data-size="compact" type="button">Change look</button></div>
+      </header>
+      <div class="studio-card">
+        <ul class="studio-grid" data-count="4">
+          <li><button class="studio-tile" type="button" aria-pressed="true"><span class="studio-media"><i class="ph-a"></i><span class="studio-media-chip"><span class="studio-status" data-tone="success"><span class="studio-status-dot"></span>Approved</span></span></span><span><span class="studio-tile-name">Kitchen counter, morning light</span><span class="studio-tile-meta">Image 1 · 3:4</span></span></button></li>
+          <li><button class="studio-tile" type="button"><span class="studio-media" data-pending><i class="ph-b"></i><span class="studio-sweep"></span><span class="studio-media-chip"><span class="studio-status" data-tone="live"><span class="studio-status-dot"></span>Generating</span></span></span><span><span class="studio-tile-name">Hand holding the bottle</span><span class="studio-tile-meta">Image 2 · 3:4</span></span></button></li>
+          <li><button class="studio-tile" type="button"><span class="studio-media"><i class="ph-c"></i><span class="studio-media-shade"></span><span class="studio-media-tag">0:04</span><span class="studio-media-chip"><span class="studio-status" data-tone="neutral"><span class="studio-status-dot"></span>Ready to review</span></span></span><span><span class="studio-tile-name">A very long scene name that keeps going past the tile width</span><span class="studio-tile-meta">Image 3 · 3:4</span></span></button></li>
+          <li><button class="studio-tile" type="button"><span class="studio-media"><i class="ph-d"></i><span class="studio-media-chip"><span class="studio-status" data-tone="error"><span class="studio-status-dot"></span>Failed</span></span></span><span><span class="studio-tile-name">Shelf close-up</span><span class="studio-tile-meta">We could not make this. Try a redo.</span></span></button></li>
+        </ul>
+      </div>
+      <div class="studio-footer-strip">
+        <span>Approve each image before the scenes are made.</span>
+        <button class="studio-btn studio-footer-lead" data-variant="ghost" data-size="compact" type="button"><svg><use href="#i-redo"/></svg>Redo failed</button>
+      </div>
+    </section>
+
+    <div class="row-2">
+      <section class="studio-tray">
+        <header class="studio-strip">
+          <span class="studio-strip-icon"><svg><use href="#i-box"/></svg></span>
+          <h2 class="studio-strip-title">Product</h2>
+        </header>
+        <div class="studio-card">
+          <div class="studio-fields">
+            <div class="studio-field studio-field-full">
+              <div class="studio-field-label-row"><label class="studio-label" for="name">Product name</label><span class="studio-required">Required</span></div>
+              <input class="studio-input" id="name" value="Cold brew concentrate, 1 L">
+              <p class="studio-hint">Shown on the end card.</p>
+            </div>
+            <div class="studio-field">
+              <label class="studio-label">Angle</label>
+              <button class="studio-select" type="button"><span>Morning routine</span><svg><use href="#i-chev"/></svg></button>
+            </div>
+            <div class="studio-field">
+              <label class="studio-label" for="price">Price</label>
+              <input class="studio-input" id="price" placeholder="e.g. 24.90">
+            </div>
+            <div class="studio-field studio-field-full">
+              <label class="studio-label">Mode</label>
+              <div class="studio-segmented" data-fill role="radiogroup" aria-label="Mode">
+                <button class="studio-segmented-option" role="radio" aria-checked="true" type="button">Guided</button>
+                <button class="studio-segmented-option" role="radio" aria-checked="false" type="button">Quick</button>
+                <button class="studio-segmented-option" role="radio" aria-checked="false" type="button" disabled>Custom</button>
+              </div>
+            </div>
+            <div class="studio-field studio-field-full">
+              <label class="studio-label">Length</label>
+              <div class="studio-segmented" data-fill data-tall role="radiogroup" aria-label="Length">
+                <button class="studio-segmented-option" role="radio" aria-checked="false" type="button"><span class="studio-option-label">15 seconds</span><span class="studio-option-hint">40 credits</span></button>
+                <button class="studio-segmented-option" role="radio" aria-checked="true" type="button"><span class="studio-option-label">30 seconds</span><span class="studio-option-hint">80 credits</span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="studio-tray">
+        <header class="studio-strip">
+          <span class="studio-strip-icon"><svg><use href="#i-list"/></svg></span>
+          <h2 class="studio-strip-title">Scenes</h2>
+          <span class="studio-strip-meta">3 scenes · 0:18</span>
+        </header>
+        <div class="studio-card" data-flush>
+          <ul class="studio-list">
+            <li data-interactive data-selected><div class="studio-row"><button class="studio-row-pick" type="button"><span class="studio-thumb" data-size="lg"><span class="ph-a" style="width:100%;height:100%"></span></span><span class="studio-row-main"><span class="studio-row-title"><span>Opening shot</span><span class="studio-row-sub">0:04</span></span><span class="studio-row-meta">Kitchen counter, morning light</span></span></button><div class="studio-row-actions"><button class="studio-btn" data-variant="ghost" data-icon-only aria-label="More" type="button"><svg><use href="#i-dots"/></svg></button></div></div></li>
+            <li data-interactive><div class="studio-row"><button class="studio-row-pick" type="button"><span class="studio-thumb" data-size="lg" data-pending><span class="ph-b" style="width:100%;height:100%;filter:blur(6px)"></span></span><span class="studio-row-main"><span class="studio-row-title"><span>Pour and stir</span><span class="studio-row-sub">0:06</span></span><span class="studio-row-meta">Generating a new take</span></span></button><div class="studio-row-actions"><button class="studio-btn" data-variant="ghost" data-icon-only aria-label="More" type="button"><svg><use href="#i-dots"/></svg></button></div></div></li>
+            <li data-interactive><div class="studio-row"><button class="studio-row-pick" type="button"><span class="studio-thumb" data-size="lg"><span class="ph-c" style="width:100%;height:100%"></span></span><span class="studio-row-main"><span class="studio-row-title"><span>End card with the product name and the price on it</span><span class="studio-row-sub">0:08</span></span><span class="studio-row-meta">Shelf close-up</span></span></button><div class="studio-row-actions"><button class="studio-btn" data-variant="ghost" data-icon-only aria-label="More" type="button"><svg><use href="#i-dots"/></svg></button></div></div></li>
+          </ul>
+        </div>
+        <div class="studio-footer-strip"><span>Drag to reorder.</span></div>
+      </section>
+    </div>
+
+    <section class="studio-tray">
+      <header class="studio-strip">
+        <span class="studio-strip-icon"><svg><use href="#i-image"/></svg></span>
+        <h2 class="studio-strip-title">Library</h2>
+        <span class="studio-strip-meta">4 saved</span>
+      </header>
+      <div class="studio-tray-body" style="padding: 4px 12px 12px">
+        <ul class="studio-grid" data-fill="library">
+          <li><button class="studio-create-tile" type="button"><span class="studio-drop-icon"><svg width="16" height="16"><use href="#i-plus"/></svg></span><span class="studio-option-label">New set</span><span class="studio-hint">Start from a brief</span></button></li>
+          <li><div class="studio-library-card"><span class="studio-media"><i class="ph-b"></i></span><a class="studio-library-open" href="#" aria-label="Open Studio portrait"></a><div class="studio-library-foot"><div class="studio-library-text"><span class="studio-tile-name">Studio portrait</span><span class="studio-tile-meta">Warm · 8 views</span></div><button class="studio-btn studio-library-menu" data-variant="ghost" data-icon-only aria-label="Actions" type="button"><svg><use href="#i-dots"/></svg></button></div></div></li>
+          <li><div class="studio-library-card"><span class="studio-media"><i class="ph-c"></i></span><a class="studio-library-open" href="#" aria-label="Open Garden table"></a><div class="studio-library-foot"><div class="studio-library-text"><span class="studio-tile-name">Garden table at golden hour, wide</span><span class="studio-tile-meta">Natural · 6 views</span></div><button class="studio-btn studio-library-menu" data-variant="ghost" data-icon-only aria-label="Actions" type="button"><svg><use href="#i-dots"/></svg></button></div></div></li>
+          <li><div class="studio-library-card"><span class="studio-media"><i class="ph-d"></i></span><a class="studio-library-open" href="#" aria-label="Open Night shelf"></a><div class="studio-library-foot"><div class="studio-library-text"><span class="studio-tile-name">Night shelf</span><span class="studio-tile-meta">Moody · 4 views</span></div><button class="studio-btn studio-library-menu" data-variant="ghost" data-icon-only aria-label="Actions" type="button"><svg><use href="#i-dots"/></svg></button></div></div></li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="demo-overlays">
+      <div class="studio-dialog" role="dialog" aria-label="Redo image">
+        <button class="studio-dialog-close" aria-label="Close" type="button"><svg><use href="#i-x"/></svg></button>
+        <div class="studio-dialog-header">
+          <h2 class="studio-dialog-title">Redo image 4</h2>
+          <p class="studio-dialog-description">Say what to change. The new image replaces this one and needs approval again.</p>
+        </div>
+        <div class="studio-dialog-body">
+          <div class="studio-field">
+            <label class="studio-label" for="note">What should change?</label>
+            <textarea class="studio-textarea" id="note" maxlength="300" placeholder="e.g. Lower angle, bottle label facing the camera"></textarea>
+            <p class="studio-hint">Up to 300 characters.</p>
+          </div>
+        </div>
+        <div class="studio-dialog-footer">
+          <button class="studio-btn" data-variant="ghost" type="button">Cancel</button>
+          <button class="studio-btn" data-variant="primary" type="button">Redo · 10 credits</button>
+        </div>
+      </div>
+      <div class="studio-menu" role="menu" aria-label="Angle">
+        <button class="studio-menu-item" role="menuitemradio" aria-checked="true" type="button">Morning routine<svg class="studio-menu-check"><use href="#i-check"/></svg></button>
+        <button class="studio-menu-item" role="menuitemradio" aria-checked="false" type="button" data-highlighted>Gift idea</button>
+        <button class="studio-menu-item" role="menuitemradio" aria-checked="false" type="button">Price drop</button>
+        <div class="studio-menu-separator"></div>
+        <button class="studio-menu-item" role="menuitem" data-variant="danger" type="button">Remove angle</button>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px;flex:1 1 320px;min-width:0">
+        <div class="studio-actions" style="flex-wrap: wrap">
+          <button class="studio-btn" data-variant="primary" type="button"><svg><use href="#i-plus"/></svg>Make the scenes</button>
+          <button class="studio-btn" type="button">Secondary</button>
+          <button class="studio-btn" data-variant="ghost" type="button">Ghost</button>
+          <button class="studio-btn" data-icon-only aria-label="More" type="button"><svg><use href="#i-dots"/></svg></button>
+        </div>
+        <dl class="studio-stats" data-cols="3">
+          <div><dt>Length</dt><dd>0:18</dd></div>
+          <div><dt>Scenes</dt><dd>3</dd></div>
+          <div><dt>Cost</dt><dd>80 credits</dd></div>
+        </dl>
+        <div class="studio-progress" data-size="lg"><span style="width: 62%"></span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="studio-bar" style="position: static">
+    <div class="studio-bar-side">
+      <span>Step 3 of 5</span>
+      <span class="studio-cost"><strong>80 credits</strong><span class="studio-cost-divider"></span><span>about 4 min</span></span>
+    </div>
+    <div class="studio-actions">
+      <button class="studio-btn" data-variant="ghost" type="button">Back</button>
+      <button class="studio-btn" data-variant="primary" type="button" disabled>Make the scenes</button>
+    </div>
+  </div>
+</template>
+
+<main>
+<div class="specimen"><section class="studio" data-theme="light" id="light" aria-label="Light"></section></div>
+<div class="specimen"><section class="studio" data-theme="dark" id="dark" aria-label="Dark"></section></div>
+</main>
+<script>
+  const tpl = document.getElementById('specimen')
+  for (const id of ['light', 'dark']) document.getElementById(id).append(tpl.content.cloneNode(true))
+  // one h1 per page: the dark copy demotes its title
+  document.querySelectorAll('#dark h1').forEach((h) => { const n = document.createElement('h2'); n.className = h.className; n.innerHTML = h.innerHTML; h.replaceWith(n) })
+</script>
+</body>
+</html>

@@ -221,6 +221,12 @@ function evaluate(m, vp, axe) {
   c.push(mk('shape.inset-tile', m.insetTiles?.length ? 'fail' : 'pass', m.insetTiles?.length ?? 0, 'leading tile: left inset = top = bottom (within 1.5px), radius concentric', (m.insetTiles || []).slice(0, 6).join('; ')));
   { const q = m.squircle || { total: 0, on: 0, miss: [] }; const share = q.total ? q.on / q.total : 1;
     c.push(mk('shape.squircle', share >= 0.9 ? 'pass' : 'warn', `${q.on}/${q.total}`, '>= 90% of rounded non-capsule boxes use continuous corners (import squircle.css)', q.miss.join('; '))); }
+  if (m.consistency) { const k = m.consistency; const list = (a) => a.map(([v, n, e]) => `${v}px x${n} (${e})`).join(', ');
+    c.push(mk('ui.field-heights', k.fieldHeights.length > 1 ? 'warn' : 'pass', k.fieldHeights.length, '1 height for single-line fields, selects and pickers (capsule search exempt)', list(k.fieldHeights)));
+    c.push(mk('ui.field-radii', k.fieldRadii.length > 1 ? 'warn' : 'pass', k.fieldRadii.length, '1 radius for every field, textarea, select and picker trigger', list(k.fieldRadii)));
+    c.push(mk('ui.clipped-labels', k.clippedLabels.length ? 'warn' : 'pass', k.clippedLabels.length, '0 controls whose label overflows or ellipsises without a title', k.clippedLabels.slice(0, 6).join('; ')));
+    c.push(mk('ui.pointer-cursor', k.noPointer.length ? 'warn' : 'pass', k.noPointer.length, 'every enabled clickable has cursor: pointer', k.noPointer.slice(0, 6).join('; ')));
+    c.push(mk('type.weight-count', 'info', k.fontWeights.length, 'product UI: 2 weights (e.g. 450/500); sizes in type.size-count', k.fontWeights.map(([w, n]) => `${w}(${n})`).join(', '))); }
   c.push(mk('shape.radius-ladder', 'info', m.radiusMixedBands.join(',') || 'consistent', '<= 2 radii per control-height band (21-48px)', m.radiusLadder.join(' | ')));
   if (m.loadIn) c.push(mk('motion.load-in', m.loadIn.earlyH1Opacity == null ? 'info' : m.loadIn.lateH1Opacity < 0.99 ? 'fail' : 'info', m.loadIn.earlyH1Opacity < 0.99 ? 'animated' : 'static', 'h1 fully visible after load; founder wants an orchestrated load-in', `h1 opacity at 350ms ${m.loadIn.earlyH1Opacity}, at 4.3s ${m.loadIn.lateH1Opacity}`));
   c.push(mk('ai.banned-phrases', 'info', m.bannedHits.length, '0 cliché phrases', m.bannedHits.join(', ')));
@@ -344,7 +350,34 @@ for (const vp of T.viewports) {
       if (/superellipse\((?!1\))|squircle/.test(cs.cornerTopLeftShape || '')) sqOn++;
       else if (sqMiss.length < 6) sqMiss.push(`${el.tagName.toLowerCase()}${el.className && typeof el.className === 'string' ? '.' + el.className.trim().split(/\s+/)[0] : ''} r${Math.round(rad)}`);
     }
-    return { blockedTargets: blocked, radiusLadder: ladder, radiusMixedBands: mixed, iconOffCentre: off, insetTiles: insets, squircle: { total: sqTotal, on: sqOn, miss: sqMiss } };
+    // product-UI consistency (founder 2026-10-14/15, Sellify: "WHY THE INPUT FIELD ROUNDNESS NOT THE SAME AS OTHERS... NOT DOING
+    // FINAL CHECKS"; "there may be a lot of content pieces so make sure they would not squish"). Whole page, visible elements only.
+    const seen = (el) => { const r = el.getBoundingClientRect(), cs = getComputedStyle(el); return r.width > 1 && r.height > 1 && cs.visibility !== 'hidden' && cs.display !== 'none'; };
+    const tag = (el) => `${el.tagName.toLowerCase()}${el.className && typeof el.className === 'string' && el.className.trim() ? '.' + el.className.trim().split(/\s+/)[0] : ''}`.slice(0, 40);
+    const fieldSel = 'input:not([type=checkbox]):not([type=radio]):not([type=range]):not([type=file]):not([type=hidden]):not([type=color]), select, [role=combobox], button[aria-haspopup=listbox]';
+    const fieldH = {}, fieldR = {};
+    for (const el of document.querySelectorAll(fieldSel)) {
+      if (!seen(el)) continue;
+      const h = Math.round(el.getBoundingClientRect().height * 2) / 2, rad = parseFloat(getComputedStyle(el).borderTopLeftRadius) || 0;
+      if (rad >= h / 2 - 0.5 && rad > 0) continue; // capsule search fields are their own family
+      (fieldH[h] ||= []).push(tag(el)); (fieldR[rad] ||= []).push(tag(el));
+    }
+    for (const el of document.querySelectorAll('textarea')) { if (seen(el)) { const rad = parseFloat(getComputedStyle(el).borderTopLeftRadius) || 0; (fieldR[rad] ||= []).push(tag(el)); } }
+    const clippedLabels = [], noPointer = [];
+    for (const el of document.querySelectorAll('button, a[href], [role=button], [role=tab], [role=option], [role=menuitem], summary, select')) {
+      if (!seen(el) || el.disabled || el.getAttribute('aria-disabled') === 'true') continue;
+      const cs = getComputedStyle(el), text = (el.textContent || '').trim();
+      if (text && el.scrollWidth > el.clientWidth + 1 && el.clientWidth > 0) clippedLabels.push(`${text.replace(/\s+/g, ' ').slice(0, 24)} (${el.scrollWidth}>${el.clientWidth})`);
+      else if (text && cs.textOverflow === 'ellipsis' && el.scrollWidth > el.clientWidth && !el.title) clippedLabels.push(`${text.replace(/\s+/g, ' ').slice(0, 24)} (ellipsis, no title)`);
+      if (cs.cursor !== 'pointer' && !el.closest('[inert]')) noPointer.push(`${tag(el)} "${text.replace(/\s+/g, ' ').slice(0, 18)}" ${cs.cursor}`);
+    }
+    const weights = {};
+    for (const el of document.querySelectorAll('body *')) {
+      if (!seen(el) || ![...el.childNodes].some((n) => n.nodeType === 3 && n.textContent.trim())) continue;
+      const w = getComputedStyle(el).fontWeight; weights[w] = (weights[w] || 0) + 1;
+    }
+    const consistency = { fieldHeights: Object.entries(fieldH).map(([h, l]) => [+h, l.length, l[0]]), fieldRadii: Object.entries(fieldR).map(([r, l]) => [+r, l.length, l[0]]), clippedLabels, noPointer, fontWeights: Object.entries(weights).sort((a, b) => b[1] - a[1]) };
+    return { blockedTargets: blocked, radiusLadder: ladder, radiusMixedBands: mixed, iconOffCentre: off, insetTiles: insets, squircle: { total: sqTotal, on: sqOn, miss: sqMiss }, consistency };
   }));
   await page.addScriptTag({ content: axeSource });
   const axe = await page.evaluate(async () => {
