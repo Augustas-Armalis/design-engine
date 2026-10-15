@@ -2,7 +2,7 @@
 // regions (problem first, with its fix), latency with deploy markers, recent deployments.
 import { useEffect, useState } from 'react'
 import { AnimatePresence, motion, MotionConfig, useReducedMotion } from 'motion/react'
-import { CountUp, ease, rise, SIN, T } from './anim'
+import { CountUp, ease, rise, T } from './anim'
 import { Activity, AlertTriangle, ArrowUpRight, Bell, ChevronDown, ChevronsUpDown, Database, Gauge, Globe, LayoutGrid, Logs, Map as MapIcon, Rocket, Search, Server, Shield, SlidersHorizontal, Timer, Waypoints } from 'lucide-react'
 import Map from './Map'
 import Chart from './Chart'
@@ -53,7 +53,7 @@ function Sidebar({ rerouted, flared }: { rerouted: boolean; flared: boolean }) {
       </button>
       <nav aria-label="Main" className="mt-4 flex flex-col gap-0.5">
         {nav.map(([l, Ic, on], i) => (
-          <motion.a initial={{ opacity: 0, x: -8 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: T.side + 0.1 + i * 0.035, duration: 0.7, ease: ease.out }} key={l} href="#" aria-current={on ? 'page' : undefined} className={cx('st flex h-8 items-center gap-2.5 rounded-[9px] px-2 text-[14px] font-[500]', on ? 'bg-[var(--select)] text-[var(--ink)]' : 'text-[var(--sub)] hover:bg-[var(--hover)] hover:text-[var(--ink)]')}>
+          <motion.a initial={{ opacity: 0, x: -8 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: T.side + 0.1 + i * T.step, duration: 0.7, ease: ease.out }} key={l} href="#" aria-current={on ? 'page' : undefined} className={cx('st flex h-8 items-center gap-2.5 rounded-[9px] px-2 text-[14px] font-[500]', on ? 'bg-[var(--select)] text-[var(--ink)]' : 'text-[var(--sub)] hover:bg-[var(--hover)] hover:text-[var(--ink)]')}>
             <Ic {...I} className={on ? 'text-[var(--ink)]' : 'text-[var(--soft)]'} />{l}
           </motion.a>
         ))}
@@ -61,7 +61,7 @@ function Sidebar({ rerouted, flared }: { rerouted: boolean; flared: boolean }) {
       <div className="mt-6 px-2 text-[12px] font-[500] text-[var(--soft)]">Projects</div>
       <div className="mt-1.5 flex flex-col gap-0.5">
         {[['storefront-prod', true, true], ['storefront-staging', false], ['checkout-api', false], ['marketing-site', false]].map(([n, on, hot], i) => (
-          <motion.a initial={{ opacity: 0, x: -8 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: T.side + 0.4 + i * 0.035, duration: 0.7, ease: ease.out }} key={n as string} href="#" className={cx('st flex h-8 items-center gap-2.5 rounded-[9px] px-2 text-[14px] font-[500]', on ? 'text-[var(--ink)]' : 'text-[var(--sub)] hover:bg-[var(--hover)]')}>
+          <motion.a initial={{ opacity: 0, x: -8 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: T.side + 0.1 + (i + 8) * T.step, duration: 0.7, ease: ease.out }} key={n as string} href="#" className={cx('st flex h-8 items-center gap-2.5 rounded-[9px] px-2 text-[14px] font-[500]', on ? 'text-[var(--ink)]' : 'text-[var(--sub)] hover:bg-[var(--hover)]')}>
             <span className={cx('size-1.5 rounded-full transition-colors duration-500', hot && flared && !rerouted ? 'bg-[var(--red)]' : 'bg-[var(--sub)] opacity-60')} /><span className="truncate">{n as string}</span>
           </motion.a>
         ))}
@@ -80,7 +80,7 @@ export default function App({ embedded = false }: { embedded?: boolean }) {
   const [rerouted, setRerouted] = useState(false)
   const still = useReducedMotion()
   const [flared, setFlared] = useState(!!still)
-  useEffect(() => { if (still) return; const id = window.setTimeout(() => setFlared(true), SIN * 1000); return () => clearTimeout(id) }, [still])
+  useEffect(() => { if (still) return; const id = window.setTimeout(() => setFlared(true), T.sin * 1000); return () => clearTimeout(id) }, [still])
   const hot = regions.filter((r) => r.state === 'hot' && !rerouted && flared)
   return (
     <MotionConfig reducedMotion="user">

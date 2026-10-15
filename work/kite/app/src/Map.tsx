@@ -5,7 +5,7 @@
 // Loops: travelling lights + the degraded node's pulse.
 import { useEffect, useMemo, useState } from 'react'
 import { motion, useReducedMotion } from 'motion/react'
-import { ease, SIN } from './anim'
+import { ease, T } from './anim'
 import { geoEqualEarth } from 'd3-geo'
 import { landMask } from './geo'
 import { regions, series, fmtK } from './data'
@@ -19,10 +19,13 @@ export default function Map({ rerouted = false, at = 0 }: { rerouted?: boolean; 
   const [stage, setStage] = useState(still ? 3 : 0)
   useEffect(() => {
     if (still) return
-    const ids = [[1, at + 0.95], [2, at + 1.5], [3, SIN]].map(([s, t]) => window.setTimeout(() => setStage((p) => Math.max(p, s)), t * 1000))
+    const ids = [[1, at + (T.beam ? 0.95 : 0.85)], [2, at + (T.beam ? 1.5 : 1.45)], [3, T.sin]].map(([s, t]) => window.setTimeout(() => setStage((p) => Math.max(p, s)), t * 1000))
     return () => ids.forEach(clearTimeout)
   }, [at, still])
-  const scan = (x: number) => at + 0.15 + (x / W) * 0.85 // when the beam passes x
+  // when a point appears: behind the scan beam (left to right), or, without the beam, a soft bloom out from the centre
+  // without the beam the map resolves like pixels: a diagonal sweep with per-dot jitter (j), each dot stepping in
+  const scan = (x: number, y = H / 2, j = 0) => T.beam ? at + 0.15 + (x / W) * 0.85 + (y / H) * 0.12 : at + 0.05 + ((x / W) * 0.8 + (y / H) * 0.2) * 0.85 + j * 0.4
+  const jit = (i: number) => { const s = Math.sin(i * 12.9898) * 43758.5453; return s - Math.floor(s) }
   const { dots, P } = useMemo(() => {
     const proj = geoEqualEarth().fitExtent([[-14, -46], [W + 14, H + 96]], { type: 'Sphere' } as never)
     const isLand = landMask(proj, W, H)
@@ -73,7 +76,7 @@ export default function Map({ rerouted = false, at = 0 }: { rerouted?: boolean; 
           {dots.map((d, i) => {
             const red = flare && d.red > 0.18
             return <circle key={i} cx={d.x} cy={d.y} r={0.95} className="dot" fill={red ? 'var(--red)' : '#fff'} fillOpacity={red ? Math.min(0.75, 0.2 + d.red * 0.6) : d.a}
-              style={{ animationDelay: `${scan(d.x) + (d.y / H) * 0.12}s`, transitionDelay: red ? `${Math.hypot(d.x - sx, d.y - sy) / 200}s` : '0s' }} />
+              style={{ animationDelay: `${scan(d.x, d.y, jit(i))}s`, ...(T.beam ? {} : { animationName: 'dot-px', animationDuration: '0.5s', animationTimingFunction: 'steps(3, end)' }), transitionDelay: red ? `${Math.hypot(d.x - sx, d.y - sy) / 200}s` : '0s' }} />
           })}
         </g>
         {FLOWS.map(([a, b], i) => { const d = arc(P[a], P[b]); return (
@@ -92,7 +95,7 @@ export default function Map({ rerouted = false, at = 0 }: { rerouted?: boolean; 
           const [x, y] = P[r.code], rad = 2 + Math.sqrt(r.rps / max) * 1.6, hot = r.state === 'hot' && flare
           return (
             <motion.g key={r.code} style={{ transformBox: 'fill-box', transformOrigin: 'center' }} initial={still ? false : { opacity: 0, scale: 0.5 }} animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: scan(x) + 0.02, duration: 0.7, ease: ease.out }}>
+              transition={{ delay: scan(x, T.beam ? 0 : y) + (T.beam ? 0.02 : 0.25), duration: T.beam ? 0.7 : 1.0, ease: ease.out }}>
               <circle cx={x} cy={y} r={rad * 7} fill="url(#glow)" style={{ opacity: hot ? 0 : 1, transition: 'opacity .6s' }} />
               <circle cx={x} cy={y} r={rad * 7} fill="url(#glow-red)" style={{ opacity: hot ? 1 : 0, transition: 'opacity .6s' }} />
               {hot && <circle cx={x} cy={y} r={rad + 2} fill="none" stroke="var(--red)" strokeWidth="1" className="pulse" style={{ transformBox: 'fill-box', transformOrigin: 'center', animation: 'pulse-ring 1.8s cubic-bezier(.22,1,.36,1) infinite' }} />}
@@ -103,7 +106,7 @@ export default function Map({ rerouted = false, at = 0 }: { rerouted?: boolean; 
         })}
       </svg>
       {/* the scanning beam: a soft light bar with a bright core, crossing once */}
-      {!still && (
+      {!still && T.beam && (
         <motion.div aria-hidden className="pointer-events-none absolute inset-y-0 w-[120px]" initial={{ x: -140, opacity: 0 }} animate={{ x: [-140, W + 20], opacity: [0, 1, 1, 0] }}
           transition={{ delay: at + 0.15, duration: 0.95, ease: ease.inOut, opacity: { delay: at + 0.15, duration: 0.95, times: [0, 0.12, 0.8, 1] } }}
           style={{ background: 'linear-gradient(90deg, transparent, rgb(255 255 255 / 0.05) 70%, rgb(255 255 255 / 0.12) 96%, transparent)', maskImage: 'linear-gradient(180deg, transparent, #000 15%, #000 85%, transparent)' }}>
@@ -114,7 +117,7 @@ export default function Map({ rerouted = false, at = 0 }: { rerouted?: boolean; 
       {regions.map((r) => {
         const [x, y] = P[r.code], left = ['sfo1', 'lhr1', 'gru1', 'bom1'].includes(r.code), hot = r.state === 'hot' && flare
         return (
-          <motion.span key={r.code} initial={still ? false : { opacity: 0, x: left ? 6 : -6, filter: 'blur(4px)' }} animate={{ opacity: 1, x: 0, filter: 'blur(0px)' }} transition={{ delay: scan(x) + 0.1, duration: 0.6, ease: ease.out }}
+          <motion.span key={r.code} initial={still ? false : { opacity: 0, x: left ? 6 : -6, filter: 'blur(4px)' }} animate={{ opacity: 1, x: 0, filter: 'blur(0px)' }} transition={{ delay: scan(x, T.beam ? 0 : y) + (T.beam ? 0.1 : 0.4), duration: 0.6, ease: ease.out }}
             className={`pointer-events-none absolute flex h-[19px] -translate-y-1/2 items-center gap-1 rounded-full px-1.5 shadow-[0_0_0_1px_rgb(255_255_255/0.08),0_4px_10px_-2px_rgb(0_0_0/0.6)] backdrop-blur-sm transition-colors duration-500 ${hot ? 'bg-[rgb(60_22_20/0.85)]' : 'bg-[rgb(22_22_24/0.85)]'}`}
             style={{ top: y, ...(left ? { right: W - x + 11 } : { left: x + 11 }) }}>
             <span className={`mono text-[10.5px] transition-colors duration-500 ${hot ? 'text-[var(--red)]' : 'text-[var(--ink)]'}`}>{r.code}</span>
