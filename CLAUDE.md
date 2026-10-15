@@ -91,6 +91,7 @@ Two jobs, one brain: (1) **design** client websites and product UI from a brief,
 - Tune `tools/thresholds.json` when a check proves too strict or too lax; note why in the commit.
 - After any change to knowledge/system/skills, re-run the eval set (see `evals/` and `docs/HOWTO.md`).
 - Commit with a message saying what the brain now knows or does differently.
+- **Client research lands here too** (founder, 2026-10-15: "is your research and studies ... updated to our design engine folder too?"). Any competitor research, UX study or design review done for a client is studied into `knowledge/` in SCHEMA form (general rules, client and competitor evidence in Source, "not documented" kept as open questions) and added to the folder INDEX in the same session, then the index is rebuilt. A study that only lives in a client folder is lost to the engine. Example: `knowledge/web/ai-video-ad-creator-flows.md`, `ad-intelligence-flows.md`, `approval-and-generation-ui.md` from the Sellify research.
 
 ## Hard stops
 

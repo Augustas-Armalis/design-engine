@@ -38,3 +38,13 @@ Pick a fresh combination across these with `node tools/variety.mjs pick --mode d
 - `footers.md`: 49 footers: 5 layouts + 17 features with frequencies (logo column + link columns 19/43, giant wordmark 12%, live status pill 19%, CTA merged 7), link type and pitch, dark/light switch; FT-01..20.
 - `x-design-posts.md`: how design is posted on X, measured on 29 designers / 1,161 posts + 40 embeds: one artifact per post, video 55% (9-16 s), X crops (1: own ratio; 2: 7:8 each; 3: 7:8 + two 16:9; 4: four 16:9), solid near-white/near-black canvases, captions (median 14 words, no hashtags, link in first reply), engagement by caption type and format, X ranking weights; XP-01..28. Formats + caption templates in `system/variety/x-post-formats.json`.
 - `basit-craft.md`: Basit A. Khan measured (59 pieces): rendered light field from one corner, grain only in the light, -0.05em display, 48-56px lit buttons, product cropped at 48-66% of the fold in the light; BA-01..27. Numbers in `system/variety/basit-tokens.json`.
+
+## AI generation products and ad research (studied 2026-10-15, from Sellify client research)
+
+Desk research only (docs, help centres, reviews; no hands-on competitor screens), plus Sellify's own code and studio kit spec. Open questions keep every "not documented" and VERIFY item.
+
+| File | What it covers | Status |
+|---|---|---|
+| `ai-video-ad-creator-flows.md` | AI generation flows (Creatify, Arcads, HeyGen, Higgsfield vs Sellify): cheapest preview before spend, anchor view first, cost on the primary button, link-fill brief, hover-playing templates, one-photo characters, demo autofill, name after approval, no review gate, dedicated library + picker reuse, owning the wait, failure states, finished screen that continues the job; AV-01..19 | studied |
+| `ad-intelligence-flows.md` | Ad libraries and swipe files (Foreplay, Atria, Motion vs Sellify Ad Spy): user-vocabulary filters + starter presets, explained winning signals, curated cold start, one-click follow + expectations + unseen counts, brand page summary and launch cohorts, save with note and tags, inline boards, private-by-default sharing, extension save states, recreate from the card and save toast; ADI-01..19 | studied |
+| `approval-and-generation-ui.md` | The reusable approve-what-AI-made screen (Sellify studio kit, ENG-2105 round 2, founder 2026-10-14/15): tile anatomy, closed status vocabulary, blur + sweep pending, redo with note and price, n of N gate, sticky cost footer, grid breakpoints and content volume, tile-level failure, 36px r12 controls, 12/14/18 at 450/500, media ratios, motion tokens, pre-handoff audit; APR-01..18 | studied |
