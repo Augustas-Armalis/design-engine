@@ -1,0 +1,161 @@
+{
+ "title": "uilabs",
+ "vw": 1440,
+ "vh": 900,
+ "docH": 10100,
+ "bodyBg": "rgb(250, 250, 250)",
+ "htmlBg": "rgba(0, 0, 0, 0)",
+ "bodyFont": "Times",
+ "paragraph": {
+  "size": 14,
+  "lh": "22.75px",
+  "color": "rgb(100, 100, 102)",
+  "family": "__Inter_9d7907, __Inter_Fallback_9d7907",
+  "ls": "normal"
+ },
+ "nav": {
+  "box": {
+   "x": 40,
+   "y": 48,
+   "w": 1360,
+   "h": 135
+  },
+  "shell": {
+   "x": 40,
+   "y": 48,
+   "w": 1360,
+   "h": 135
+  },
+  "position": "static",
+  "bg": "rgba(0, 0, 0, 0)",
+  "backdrop": "none",
+  "radius": "0px",
+  "borderB": "0px solid rgb(229, 231, 235)",
+  "border": "0px solid rgb(229, 231, 235)",
+  "shadow": "none",
+  "linkCount": 1,
+  "links": [
+   {
+    "t": "mrncst",
+    "x": 1288,
+    "y": 143,
+    "w": 112,
+    "h": 40,
+    "size": 36,
+    "weight": "400",
+    "ls": "normal",
+    "color": "color(display-p3 1 0.144 0.4521)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "0px",
+    "pad": "0px"
+   }
+  ]
+ },
+ "navBottom": 183,
+ "head": {
+  "tag": "H1",
+  "text": "Small laboratory of fine UI",
+  "chars": 27,
+  "x": 458,
+  "y": 48,
+  "w": 942,
+  "h": 91,
+  "lines": 1,
+  "family": "__redaction_323bc8, __redaction_Fallback_323bc8",
+  "size": 73,
+  "weight": "400",
+  "ls": "normal",
+  "lsEm": 0,
+  "lh": 1.25,
+  "color": "rgb(17, 17, 16)",
+  "transform": "none",
+  "feat": "normal",
+  "num": "normal",
+  "opsz": "auto",
+  "var": "normal",
+  "align": "right",
+  "wrap": "balance",
+  "spanColors": [],
+  "bgClip": false,
+  "above": []
+ },
+ "sub": null,
+ "heroBtns": [],
+ "navBtns": [],
+ "allBtnCount": 1,
+ "media": 0,
+ "largestMedia": null,
+ "frames": [
+  {
+   "tag": "DIV",
+   "x": 456,
+   "y": 407,
+   "w": 944,
+   "h": 640,
+   "radius": "8px",
+   "shadow": "none",
+   "border": "1px solid rgb(237, 237, 237)",
+   "bg": "rgba(0, 0, 0, 0)",
+   "pad": "0px"
+  }
+ ],
+ "fold": {
+  "textLeaves": 6,
+  "words": 34,
+  "interactive": 0,
+  "sizes": {
+   "12": 3,
+   "14": 3
+  },
+  "weights": {
+   "400": 5,
+   "500": 1
+  },
+  "colorCount": 2,
+  "colors": {
+   "rgb(17, 17, 16)": 1,
+   "rgb(100, 100, 102)": 5
+  }
+ },
+ "families": {
+  "__redaction_323bc8": 3,
+  "__Inter_9d7907": 6
+ },
+ "fonts": [
+  "__redaction_323bc8 400",
+  "__mondwest_fb5c98 700",
+  "__geist_8417f5 400",
+  "__geist_8417f5 500",
+  "__neuemontrealmono_19d2e6 400",
+  "__neuemontrealmono_19d2e6 500",
+  "__Inter_9d7907 100 900",
+  "__Inter_Fallback_9d7907 normal"
+ ],
+ "radii": {
+  "6px": 4,
+  "8px": 2,
+  "9999px": 7
+ },
+ "shadows": [
+  [
+   "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px, rgba(0, 0, 0, 0.04) 0px 2px 2px 0px, rgba(0, 0, 0, 0.04) 0px 8px 16px -4px",
+   1
+  ],
+  [
+   "rgba(0, 0, 0, 0.08) 0px 0px 0px 1px, rgba(0, 0, 0, 0.02) 0px 1px 1px 0px, rgba(0, 0, 0, 0.04) 0px 4px 8px 0px",
+   1
+  ]
+ ],
+ "tabularEls": 0,
+ "sections": [],
+ "pixels": {
+  "modeColor": "rgb(248,248,248)",
+  "modeShare": 0.969,
+  "nearBgShare": 0.974,
+  "quietBlockShare": 0.901,
+  "saturatedShare": 0.0008
+ },
+ "url": "https://www.uilabs.dev/",
+ "slug": "uilabs",
+ "captured": "2026-10-15T17:29:44.357Z"
+}

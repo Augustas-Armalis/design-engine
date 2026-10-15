@@ -132,6 +132,16 @@ Page convention: `p.NN` = PDF page (printed = PDF - 2). Interference (stop/proac
   **Why** Perceived effort drives adoption as much as actual effort (p.81).
   **Applies to** landing page (above the fold), SaaS signup. **Check** visual: first screen shows the job and one clear entry step; required fields at signup minimised (no number in the book). **Source** (p.81)
 
+### Audit additions: page images (audit 2026-10-15)
+
+Found by viewing the page images of p.59-60 and p.73-81.
+
+- **RULE [PU-LOD-04]** Name and budget performance load as one quantity, the "principle of least effort" (also "principle of least resistance", Lidwell et al., 2003): for every flow, write the cognitive load (what must be remembered, read, decided) and the kinematic load (clicks, keystrokes, pointer travel) and reduce whichever is larger first.
+  **Why** The book gives these as three names for the same principle and splits it into exactly two loads (p.79-80); naming it lets the critique step cite it.
+  **Applies to** all. **Check** process: critique lists both loads per core flow. **Source** (p.79-80) (audit 2026-10-15)
+
+Viewed, nothing new: p.59-60 (Miller, Koyani, Laguna and Babcock, 5-30 s; the image confirms "7 2" has no plus-minus glyph), p.73-74 (mental models; the image confirms the caveat paragraph is printed twice on p.74, a layout error in the book, not an OCR artefact), p.75-76 (Fitts callout box), p.77-78 (the p.78 box "design consistency / detailed and timely feedback / is phased" is a free-standing sidebar box with no lead-in in print, which explains the cut sentence flagged in section 7), p.80 (cognitive/kinematic callout box, covered by PU-LOD-01/02), p.81 (rejection; covered by PU-LOD-03).
+
 ## 3. Numbers & scales
 
 | Item | Value | Page |
@@ -146,6 +156,7 @@ Page convention: `p.NN` = PDF page (printed = PDF - 2). Interference (stop/proac
 | Edge "pinning" gap that hurts | one-pixel non-clickable border | p.76 |
 | Performance load types | 2 (cognitive, kinematic) | p.79-80 |
 | Memory-load reduction methods listed | 7 (organise/structure/familiarise/present meaningfully; user control of presentation; keep needed info close; compare items adjacent; no extra memory tasks when reading speed matters; make significant items unusual/highlight) | p.62-63 |
+| Other names for performance load | principle of least resistance; principle of least effort (Lidwell et al., 2003) (audit 2026-10-15, page images) | p.79 |
 
 No numeric minimum for target size is given anywhere in this book.
 
@@ -183,3 +194,4 @@ None in this range; checked p.59 (text only) and p.75 (text with a callout box f
 - p.78-79: sentence on skill ("better ... ") is cut at the page break; remainder on p.79 reads "Many fundamental abilities..." with no loss of rule content.
 - p.81: no figure; short page.
 - p.63: second half covers sensory storage (see perception-and-attention.md).
+- (audit 2026-10-15, page images) Every page image in this note's range (p.59-63, p.73-81) has now been viewed (p.59-60 and p.73-81 in this pass, p.61-63 earlier). Added PU-LOD-04 (least-effort naming, p.79-80). Resolved: the p.74 duplicate paragraph is printed twice in the book; the p.78 "consistency / feedback / phased" list is a sidebar box without a lead-in. Viewed, no new content: p.59-60, p.73-78, p.80-81.

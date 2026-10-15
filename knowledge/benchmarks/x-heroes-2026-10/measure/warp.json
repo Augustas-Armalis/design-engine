@@ -1,0 +1,388 @@
+{
+ "title": "Warp — Open Infrastructure for Cloud Software Factories",
+ "vw": 1440,
+ "vh": 900,
+ "docH": 9363,
+ "bodyBg": "rgba(0, 0, 0, 0)",
+ "htmlBg": "oklch(0.992495 0.00178735 220)",
+ "bodyFont": "Matter, system-ui, sans-serif",
+ "paragraph": {
+  "size": 16,
+  "lh": "26.4px",
+  "color": "rgba(26, 21, 34, 0.62)",
+  "family": "azeretSemiMono, \"azeretSemiMono Fallback\", \"Azeret",
+  "ls": "normal"
+ },
+ "nav": {
+  "box": {
+   "x": 0,
+   "y": 0,
+   "w": 1440,
+   "h": 64
+  },
+  "shell": {
+   "x": 0,
+   "y": 0,
+   "w": 1440,
+   "h": 64
+  },
+  "position": "relative",
+  "bg": "rgb(255, 255, 255)",
+  "backdrop": "none",
+  "radius": "0px",
+  "borderB": "0px solid rgb(26, 21, 34)",
+  "border": "0px solid rgb(26, 21, 34)",
+  "shadow": "none",
+  "linkCount": 3,
+  "links": [
+   {
+    "t": "PRICING",
+    "x": 759,
+    "y": 18,
+    "w": 72,
+    "h": 28,
+    "size": 12,
+    "weight": "600",
+    "ls": "0.6px",
+    "color": "rgb(26, 21, 34)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "4px",
+    "pad": "4px 8px"
+   },
+   {
+    "t": "SIGN IN",
+    "x": 921,
+    "y": 22,
+    "w": 70,
+    "h": 20,
+    "size": 12,
+    "weight": "600",
+    "ls": "0.6px",
+    "color": "rgb(26, 21, 34)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "0px",
+    "pad": "0px"
+   },
+   {
+    "t": "BOOK A DEMO",
+    "x": 1008,
+    "y": 16,
+    "w": 123,
+    "h": 32,
+    "size": 12,
+    "weight": "500",
+    "ls": "0.6px",
+    "color": "rgb(26, 21, 34)",
+    "bg": "rgb(238, 241, 124)",
+    "radius": "4px",
+    "pad": "6px 16px"
+   }
+  ]
+ },
+ "navBottom": 64,
+ "head": {
+  "tag": "H1",
+  "text": "Open infrastructure for cloud software factories",
+  "chars": 48,
+  "x": 154,
+  "y": 148,
+  "w": 1132,
+  "h": 113,
+  "lines": 2,
+  "family": "azeretSemiMono, \"azeretSemiMono Fallback\", \"Azeret SemiMono\", ui-monospace, mono",
+  "size": 54,
+  "weight": "400",
+  "ls": "-2px",
+  "lsEm": -0.037,
+  "lh": 1.05,
+  "color": "rgb(26, 21, 34)",
+  "transform": "none",
+  "feat": "normal",
+  "num": "normal",
+  "opsz": "auto",
+  "var": "normal",
+  "align": "start",
+  "wrap": "balance",
+  "spanColors": [],
+  "bgClip": false,
+  "above": []
+ },
+ "sub": {
+  "text": "Build on Warp: factories as code, any model or harness, with evals, benchmarks, and self-improvement built in.",
+  "chars": 110,
+  "x": 154,
+  "y": 279,
+  "w": 1132,
+  "h": 26,
+  "lines": 1,
+  "gapFromH1": 18,
+  "family": "azeretSemiMono, \"azeretSemiMono Fallback\", \"Azeret SemiMono\", ui-monospace, mono",
+  "size": 16,
+  "weight": "400",
+  "ls": "normal",
+  "lsEm": 0,
+  "lh": 1.65,
+  "color": "rgba(26, 21, 34, 0.62)",
+  "transform": "none",
+  "feat": "normal",
+  "num": "normal",
+  "opsz": "auto",
+  "var": "normal",
+  "align": "start",
+  "wrap": "balance"
+ },
+ "heroBtns": [
+  {
+   "id": "mb2",
+   "inNav": false,
+   "text": "REQUEST EARLY ACCESS",
+   "x": 154,
+   "y": 332,
+   "w": 193,
+   "h": 34,
+   "boxed": true,
+   "radius": "4px",
+   "pad": "6px 16px",
+   "bg": "rgb(26, 21, 34)",
+   "bgImg": "none",
+   "border": "1px solid rgb(26, 21, 34)",
+   "shadow": "none",
+   "color": "rgb(255, 255, 255)",
+   "size": 12,
+   "weight": "500",
+   "ls": "0.6px",
+   "family": "azeretSemiMono, \"azeretSemiMono Fallback",
+   "transform": "uppercase",
+   "transition": "border-color 0.15s, color 0.15s, background 0.15s",
+   "hasIcon": false
+  },
+  {
+   "id": "mb3",
+   "inNav": false,
+   "text": "DOWNLOAD WARP TERMINAL",
+   "x": 363,
+   "y": 332,
+   "w": 218,
+   "h": 34,
+   "boxed": true,
+   "radius": "4px",
+   "pad": "6px 16px",
+   "bg": "rgb(255, 255, 255)",
+   "bgImg": "none",
+   "border": "1px solid rgba(26, 21, 34, 0.16)",
+   "shadow": "none",
+   "color": "rgb(26, 21, 34)",
+   "size": 12,
+   "weight": "500",
+   "ls": "0.6px",
+   "family": "azeretSemiMono, \"azeretSemiMono Fallback",
+   "transform": "uppercase",
+   "transition": "border-color 0.15s, color 0.15s, background 0.15s",
+   "hasIcon": false
+  }
+ ],
+ "navBtns": [
+  {
+   "id": "mb1",
+   "inNav": true,
+   "text": "BOOK A DEMO",
+   "x": 1008,
+   "y": 16,
+   "w": 123,
+   "h": 32,
+   "boxed": true,
+   "radius": "4px",
+   "pad": "6px 16px",
+   "bg": "rgb(238, 241, 124)",
+   "bgImg": "none",
+   "border": "0px solid rgb(26, 21, 34)",
+   "shadow": "none",
+   "color": "rgb(26, 21, 34)",
+   "size": 12,
+   "weight": "500",
+   "ls": "0.6px",
+   "family": "azeretSemiMono, \"azeretSemiMono Fallback",
+   "transform": "uppercase",
+   "transition": "background 0.15s, color 0.15s",
+   "hasIcon": false
+  }
+ ],
+ "allBtnCount": 228,
+ "media": 1,
+ "largestMedia": {
+  "tag": "CANVAS",
+  "x": 0,
+  "y": 64,
+  "w": 1440,
+  "h": 908
+ },
+ "frames": [
+  {
+   "tag": "DIV",
+   "x": 188,
+   "y": 462,
+   "w": 1064,
+   "h": 447,
+   "radius": "6px",
+   "shadow": "none",
+   "border": "1px solid oklab(0 0 0 / 0.1)",
+   "bg": "rgb(255, 255, 255)",
+   "pad": "32px"
+  }
+ ],
+ "fold": {
+  "textLeaves": 244,
+  "words": 301,
+  "interactive": 226,
+  "sizes": {
+   "0": 2,
+   "9": 8,
+   "10": 1,
+   "11": 1,
+   "12": 6,
+   "15": 224,
+   "16": 1,
+   "54": 1
+  },
+  "weights": {
+   "400": 242,
+   "500": 2
+  },
+  "colorCount": 9,
+  "colors": {
+   "rgba(26, 21, 34, 0.4)": 2,
+   "rgb(26, 21, 34)": 5,
+   "rgba(26, 21, 34, 0.62)": 2,
+   "rgb(255, 255, 255)": 1,
+   "lab(66.128 -0.0000298023 0.0000119209)": 6,
+   "rgb(42, 30, 255)": 41,
+   "oklab(0.20813 0.0138587 -0.0223372 / 0.2)": 179,
+   "oklab(0.475033 -0.00706279 -0.29743 / 0.7)": 6,
+   "oklab(0.475033 -0.00706279 -0.29743 / 0.55)": 2
+  }
+ },
+ "families": {
+  "azeretSemiMono": 252
+ },
+ "fonts": [
+  "theFuture 400",
+  "theFuture 500",
+  "theFuture 700",
+  "azeretSemiMono 400",
+  "azeretSemiMono 500",
+  "azeretSemiMono Fallback normal",
+  "Matter 400"
+ ],
+ "radii": {
+  "4px": 9,
+  "6px": 1
+ },
+ "shadows": [],
+ "tabularEls": 0,
+ "sections": [
+  {
+   "tag": "DIV",
+   "y": 0,
+   "h": 9363,
+   "pt": "0px",
+   "pb": "0px",
+   "bg": "rgb(251, 249, 254)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 64,
+   "h": 909,
+   "pt": "56px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 1132,
+   "h": 1164,
+   "pt": "56px",
+   "pb": "56px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 2295,
+   "h": 1034,
+   "pt": "56px",
+   "pb": "56px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 3329,
+   "h": 806,
+   "pt": "56px",
+   "pb": "56px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 4135,
+   "h": 471,
+   "pt": "64px",
+   "pb": "64px",
+   "bg": "rgb(42, 30, 255)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 4606,
+   "h": 979,
+   "pt": "56px",
+   "pb": "56px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 5585,
+   "h": 714,
+   "pt": "56px",
+   "pb": "56px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 6299,
+   "h": 1230,
+   "pt": "56px",
+   "pb": "56px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 7530,
+   "h": 839,
+   "pt": "56px",
+   "pb": "56px",
+   "bg": "rgba(0, 0, 0, 0)"
+  }
+ ],
+ "hover": {
+  "before": [
+   "rgb(26, 21, 34) | none | none | none | rgb(255, 255, 255) | 1 | rgb(26, 21, 34)"
+  ],
+  "after": [
+   "rgb(42, 30, 255) | none | none | none | rgb(255, 255, 255) | 1 | rgb(42, 30, 255)"
+  ],
+  "changed": [
+   "rgb(42, 30, 255) | none | none | none | rgb(255, 255, 255) | 1 | rgb(42, 30, 255)"
+  ]
+ },
+ "press": [
+  "rgb(42, 30, 255) | none | none | none | rgb(255, 255, 255) | 1 | rgb(42, 30, 255)"
+ ],
+ "pixels": {
+  "modeColor": "rgb(248,248,248)",
+  "modeShare": 0.891,
+  "nearBgShare": 0.937,
+  "quietBlockShare": 0.691,
+  "saturatedShare": 0.0053
+ },
+ "url": "https://www.warp.dev/",
+ "slug": "warp",
+ "captured": "2026-10-15T17:28:13.299Z"
+}

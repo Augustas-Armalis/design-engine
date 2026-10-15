@@ -1,0 +1,418 @@
+{
+ "title": "Antimetal",
+ "vw": 1440,
+ "vh": 900,
+ "docH": 9702,
+ "bodyBg": "rgb(215, 215, 208)",
+ "htmlBg": "rgb(215, 215, 208)",
+ "bodyFont": "Geist, ui-sans-serif, system-ui, sans-serif",
+ "paragraph": {
+  "size": 24,
+  "lh": "28.8px",
+  "color": "rgb(26, 22, 20)",
+  "family": "\"Test Signifier\", \"Noto Serif\", Georgia, serif",
+  "ls": "normal"
+ },
+ "nav": {
+  "box": {
+   "x": 0,
+   "y": 0,
+   "w": 1425,
+   "h": 76
+  },
+  "shell": {
+   "x": 35,
+   "y": 35,
+   "w": 273,
+   "h": 45
+  },
+  "position": "sticky",
+  "bg": "rgba(232, 232, 232, 0.67)",
+  "backdrop": "blur(2.6px) saturate(1.8) brightness(1.1) url(\"#antimetal-liquid-glass\")",
+  "radius": "82px",
+  "borderB": "0px solid rgb(26, 22, 20)",
+  "border": "0px solid rgb(26, 22, 20)",
+  "shadow": "rgba(0, 0, 0, 0.08) 0px 0px 10px 0px inset, rgba(0, 0, 0, 0) 0px 6px 24px 0px",
+  "linkCount": 6,
+  "links": [
+   {
+    "t": "Blog",
+    "x": 41,
+    "y": 41,
+    "w": 58,
+    "h": 33,
+    "size": 14,
+    "weight": "500",
+    "ls": "normal",
+    "color": "oklab(0.204184 0.00504173 0.00565831 / 0.6)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "0px",
+    "pad": "6px 14px"
+   },
+   {
+    "t": "Careers",
+    "x": 107,
+    "y": 41,
+    "w": 79,
+    "h": 33,
+    "size": 14,
+    "weight": "500",
+    "ls": "normal",
+    "color": "oklab(0.204184 0.00504173 0.00565831 / 0.6)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "0px",
+    "pad": "6px 14px"
+   },
+   {
+    "t": "Government",
+    "x": 194,
+    "y": 41,
+    "w": 108,
+    "h": 33,
+    "size": 14,
+    "weight": "500",
+    "ls": "normal",
+    "color": "oklab(0.204184 0.00504173 0.00565831 / 0.6)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "0px",
+    "pad": "6px 14px"
+   },
+   {
+    "t": "Antimetal",
+    "x": 663,
+    "y": 41,
+    "w": 99,
+    "h": 28,
+    "size": 16,
+    "weight": "400",
+    "ls": "normal",
+    "color": "rgb(26, 22, 20)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "0px",
+    "pad": "6px 0px"
+   },
+   {
+    "t": "Sign In",
+    "x": 1189,
+    "y": 41,
+    "w": 73,
+    "h": 33,
+    "size": 14,
+    "weight": "500",
+    "ls": "normal",
+    "color": "oklab(0.204184 0.00504173 0.00565831 / 0.6)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "0px",
+    "pad": "6px 14px"
+   },
+   {
+    "t": "Book a demo",
+    "x": 1270,
+    "y": 41,
+    "w": 114,
+    "h": 33,
+    "size": 14,
+    "weight": "500",
+    "ls": "normal",
+    "color": "rgb(244, 244, 231)",
+    "bg": "rgb(26, 22, 20)",
+    "radius": "3.35544e+07px",
+    "pad": "6px 14px"
+   }
+  ]
+ },
+ "navBottom": 76,
+ "head": {
+  "tag": "H1",
+  "text": "Production that runs itself.",
+  "chars": 28,
+  "x": 120,
+  "y": 256,
+  "w": 720,
+  "h": 59,
+  "lines": 1,
+  "family": "\"Test Signifier\", \"Noto Serif\", Georgia, serif",
+  "size": 54,
+  "weight": "400",
+  "ls": "-1.998px",
+  "lsEm": -0.037,
+  "lh": 1.1,
+  "color": "rgb(26, 22, 20)",
+  "transform": "none",
+  "feat": "normal",
+  "num": "normal",
+  "opsz": "auto",
+  "var": "normal",
+  "align": "start",
+  "wrap": "wrap",
+  "spanColors": [],
+  "bgClip": false,
+  "above": []
+ },
+ "sub": {
+  "text": "Antimetal is the autonomous system for production. Continuously understanding, operating, and improving your environment.",
+  "chars": 121,
+  "x": 120,
+  "y": 347,
+  "w": 600,
+  "h": 86,
+  "lines": 3,
+  "gapFromH1": 32,
+  "family": "\"Test Signifier\", \"Noto Serif\", Georgia, serif",
+  "size": 24,
+  "weight": "400",
+  "ls": "normal",
+  "lsEm": 0,
+  "lh": 1.2,
+  "color": "oklab(0.204184 0.00504173 0.00565831 / 0.7)",
+  "transform": "none",
+  "feat": "normal",
+  "num": "normal",
+  "opsz": "auto",
+  "var": "normal",
+  "align": "start",
+  "wrap": "wrap"
+ },
+ "heroBtns": [
+  {
+   "id": "mb6",
+   "inNav": false,
+   "text": "Book a demo",
+   "x": 120,
+   "y": 515,
+   "w": 135,
+   "h": 46,
+   "boxed": true,
+   "radius": "3.35544e+07px",
+   "pad": "12.5px 24.5px",
+   "bg": "rgb(26, 22, 20)",
+   "bgImg": "none",
+   "border": "0px solid rgb(244, 244, 231)",
+   "shadow": "none",
+   "color": "rgb(244, 244, 231)",
+   "size": 14,
+   "weight": "500",
+   "ls": "normal",
+   "family": "Geist, ui-sans-serif, system-ui, sans-se",
+   "transform": "none",
+   "transition": "color 0.2s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.2s cubic-bez",
+   "hasIcon": false
+  },
+  {
+   "id": "mb7",
+   "inNav": false,
+   "text": "Explore the research",
+   "x": 271,
+   "y": 514,
+   "w": 186,
+   "h": 48,
+   "boxed": true,
+   "radius": "3.35544e+07px",
+   "pad": "12.5px 24.5px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgImg": "none",
+   "border": "1px dashed rgba(26, 22, 20, 0.1)",
+   "shadow": "none",
+   "color": "rgb(26, 22, 20)",
+   "size": 16,
+   "weight": "400",
+   "ls": "normal",
+   "family": "Geist, ui-sans-serif, system-ui, sans-se",
+   "transform": "none",
+   "transition": "color 0.2s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.2s cubic-bez",
+   "hasIcon": true
+  }
+ ],
+ "navBtns": [
+  {
+   "id": "mb5",
+   "inNav": true,
+   "text": "Book a demo",
+   "x": 1270,
+   "y": 41,
+   "w": 114,
+   "h": 33,
+   "boxed": true,
+   "radius": "3.35544e+07px",
+   "pad": "6px 14px",
+   "bg": "rgb(26, 22, 20)",
+   "bgImg": "none",
+   "border": "0px solid rgb(244, 244, 231)",
+   "shadow": "none",
+   "color": "rgb(244, 244, 231)",
+   "size": 14,
+   "weight": "500",
+   "ls": "normal",
+   "family": "Geist, ui-sans-serif, system-ui, sans-se",
+   "transform": "none",
+   "transition": "opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1)",
+   "hasIcon": false
+  }
+ ],
+ "allBtnCount": 8,
+ "media": 1,
+ "largestMedia": {
+  "tag": "CANVAS",
+  "x": 0,
+  "y": 76,
+  "w": 2193,
+  "h": 784
+ },
+ "frames": [],
+ "fold": {
+  "textLeaves": 4,
+  "words": 24,
+  "interactive": 2,
+  "sizes": {
+   "14": 2,
+   "24": 1,
+   "54": 1
+  },
+  "weights": {
+   "400": 2,
+   "500": 2
+  },
+  "colorCount": 3,
+  "colors": {
+   "rgb(26, 22, 20)": 2,
+   "oklab(0.204184 0.00504173 0.00565831 / 0.7)": 1,
+   "rgb(244, 244, 231)": 1
+  }
+ },
+ "families": {
+  "Geist": 8,
+  "Test Signifier": 2
+ },
+ "fonts": [
+  "Test Signifier 400",
+  "Geist 400",
+  "Geist 500",
+  "Geist Mono 400 700"
+ ],
+ "radii": {
+  "82px": 9,
+  "3.35544e+07px": 6,
+  "999px": 6
+ },
+ "shadows": [
+  [
+   "rgba(0, 0, 0, 0.08) 0px 0px 10px 0px inset, rgba(0, 0, 0, 0) 0px 6px 24px 0px",
+   3
+  ],
+  [
+   "rgba(0, 0, 0, 0.08) 0px 1px 10px 0px inset",
+   2
+  ]
+ ],
+ "tabularEls": 0,
+ "sections": [
+  {
+   "tag": "SECTION",
+   "y": 76,
+   "h": 780,
+   "pt": "0px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 857,
+   "h": 490,
+   "pt": "0px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 1348,
+   "h": 628,
+   "pt": "0px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "DIV",
+   "y": 1977,
+   "h": 255,
+   "pt": "80px",
+   "pb": "80px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 2231,
+   "h": 2892,
+   "pt": "0px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 5123,
+   "h": 940,
+   "pt": "0px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 6063,
+   "h": 1115,
+   "pt": "0px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 7178,
+   "h": 679,
+   "pt": "0px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 7857,
+   "h": 833,
+   "pt": "0px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 8690,
+   "h": 725,
+   "pt": "0px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  }
+ ],
+ "hover": {
+  "before": [
+   "rgb(26, 22, 20) | none | none | none | rgb(244, 244, 231) | 1 | rgb(244, 244, 231)",
+   "rgba(0, 0, 0, 0) | none | none | none | rgb(244, 244, 231) | 1 | rgb(244, 244, 231)"
+  ],
+  "after": [
+   "oklab(0.204184 0.00504173 0.00565831 / 0.86) | none | none | none | rgb(244, 244, 231) | 1 | rgb(244, 244, 231)",
+   "rgba(0, 0, 0, 0) | none | none | none | rgb(244, 244, 231) | 1 | rgb(244, 244, 231)"
+  ],
+  "changed": [
+   "oklab(0.204184 0.00504173 0.00565831 / 0.86) | none | none | none | rgb(244, 244, 231) | 1 | rgb(244, 244, 231)",
+   null
+  ]
+ },
+ "press": [
+  "oklab(0.204184 0.00504173 0.00565831 / 0.86) | none | none | none | rgb(244, 244, 231) | 1 | rgb(244, 244, 231)",
+  "rgba(0, 0, 0, 0) | none | none | none | rgb(244, 244, 231) | 1 | rgb(244, 244, 231)"
+ ],
+ "pixels": {
+  "modeColor": "rgb(208,208,208)",
+  "modeShare": 0.939,
+  "nearBgShare": 0.943,
+  "quietBlockShare": 0.856,
+  "saturatedShare": 0
+ },
+ "url": "https://antimetal.com/",
+ "slug": "antimetal",
+ "captured": "2026-10-15T17:27:28.135Z"
+}

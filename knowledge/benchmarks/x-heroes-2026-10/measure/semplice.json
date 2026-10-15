@@ -1,0 +1,323 @@
+{
+ "title": "Semplice 7 — Build your portfolio with pride",
+ "vw": 1440,
+ "vh": 900,
+ "docH": 14867,
+ "bodyBg": "rgba(0, 0, 0, 0)",
+ "htmlBg": "rgba(0, 0, 0, 0)",
+ "bodyFont": "Inter, sans-serif",
+ "paragraph": {
+  "size": 23.994,
+  "lh": "33.325px",
+  "color": "rgb(0, 0, 0)",
+  "family": "AvenirNextLTW01-Regular, sans-serif",
+  "ls": "normal"
+ },
+ "nav": {
+  "box": {
+   "x": 495,
+   "y": 20,
+   "w": 426,
+   "h": 70
+  },
+  "shell": {
+   "x": 577,
+   "y": 37,
+   "w": 28,
+   "h": 13
+  },
+  "position": "static",
+  "bg": "rgb(229, 73, 39)",
+  "backdrop": "none",
+  "radius": "6px",
+  "borderB": "0px none rgb(255, 255, 255)",
+  "border": "0px none rgb(255, 255, 255)",
+  "shadow": "none",
+  "linkCount": 4,
+  "links": [
+   {
+    "t": "SEMPLICE 7\nNEW",
+    "x": 495,
+    "y": 20,
+    "w": 81,
+    "h": 70,
+    "size": 18,
+    "weight": "400",
+    "ls": "normal",
+    "color": "rgb(21, 115, 221)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "0px",
+    "pad": "0px"
+   },
+   {
+    "t": "SHOWCASE",
+    "x": 616,
+    "y": 20,
+    "w": 75,
+    "h": 70,
+    "size": 18,
+    "weight": "400",
+    "ls": "normal",
+    "color": "rgb(21, 115, 221)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "0px",
+    "pad": "0px"
+   },
+   {
+    "t": "FEATURES",
+    "x": 731,
+    "y": 20,
+    "w": 69,
+    "h": 70,
+    "size": 18,
+    "weight": "400",
+    "ls": "normal",
+    "color": "rgb(21, 115, 221)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "0px",
+    "pad": "0px"
+   },
+   {
+    "t": "RESOURCES",
+    "x": 840,
+    "y": 20,
+    "w": 81,
+    "h": 70,
+    "size": 18,
+    "weight": "400",
+    "ls": "normal",
+    "color": "rgb(21, 115, 221)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "0px",
+    "pad": "0px"
+   }
+  ]
+ },
+ "navBottom": 90,
+ "head": {
+  "tag": "SPAN",
+  "text": "For the best of the best, and everyone who wants to be.",
+  "chars": 55,
+  "x": 60,
+  "y": 430,
+  "w": 1136,
+  "h": 387,
+  "lines": 3,
+  "family": "MaisonNeue-Medium, sans-serif",
+  "size": 145,
+  "weight": "400",
+  "ls": "-7.4px",
+  "lsEm": -0.051,
+  "lh": 0.76,
+  "color": "rgb(0, 0, 0)",
+  "transform": "none",
+  "feat": "normal",
+  "num": "normal",
+  "opsz": "auto",
+  "var": "normal",
+  "align": "start",
+  "wrap": "wrap",
+  "spanColors": [],
+  "bgClip": false,
+  "above": [
+   {
+    "t": "06Get Support",
+    "x": 0,
+    "y": 300,
+    "w": 123,
+    "h": 21,
+    "size": 18,
+    "gapToH1": 109
+   },
+   {
+    "t": "06",
+    "x": 0,
+    "y": 300,
+    "w": 23,
+    "h": 21,
+    "size": 18,
+    "gapToH1": 109
+   },
+   {
+    "t": "Tips & Tricks",
+    "x": 0,
+    "y": 326,
+    "w": 1440,
+    "h": 30,
+    "size": 18,
+    "gapToH1": 74
+   }
+  ]
+ },
+ "sub": {
+  "text": "Semplice 7 is a WordPress-based portfolio tool and community of the world’s leading designers.",
+  "chars": 94,
+  "x": 60,
+  "y": 884,
+  "w": 388,
+  "h": 98,
+  "lines": 3,
+  "gapFromH1": 66,
+  "family": "\"Maison Neue Book\", sans-serif",
+  "size": 23.994,
+  "weight": "400",
+  "ls": "normal",
+  "lsEm": 0,
+  "lh": 1.389,
+  "color": "rgb(0, 0, 0)",
+  "transform": "none",
+  "feat": "normal",
+  "num": "normal",
+  "opsz": "auto",
+  "var": "normal",
+  "align": "start",
+  "wrap": "wrap"
+ },
+ "heroBtns": [
+  {
+   "id": "mb6",
+   "inNav": false,
+   "text": "Watch the trailer",
+   "x": 1094,
+   "y": 891,
+   "w": 286,
+   "h": 65,
+   "boxed": true,
+   "radius": "40px",
+   "pad": "0px 30px 0px 0px",
+   "bg": "rgb(255, 255, 255)",
+   "bgImg": "url(\"https://www.semplice.com/wp-content/themes/semplice7-child/images/homepage/play_button.svg\")",
+   "border": "4px solid rgb(255, 255, 255)",
+   "shadow": "rgba(0, 0, 0, 0) 8px 8px 30px 0px",
+   "color": "rgb(0, 0, 0)",
+   "size": 22,
+   "weight": "400",
+   "ls": "normal",
+   "family": "MaisonNeue-Medium, sans-serif",
+   "transform": "none",
+   "transition": "0.7s cubic-bezier(0.19, 1, 0.22, 1)",
+   "hasIcon": false
+  }
+ ],
+ "navBtns": [
+  {
+   "id": "mb4",
+   "inNav": true,
+   "text": "GET SEMPLICE",
+   "x": 1227,
+   "y": 35,
+   "w": 173,
+   "h": 40,
+   "boxed": true,
+   "radius": "8px",
+   "pad": "12px 24px 8px 32px",
+   "bg": "rgb(229, 73, 39)",
+   "bgImg": "none",
+   "border": "0px solid rgb(0, 0, 0)",
+   "shadow": "none",
+   "color": "rgb(255, 255, 255)",
+   "size": 12,
+   "weight": "400",
+   "ls": "1px",
+   "family": "\"Maison Neue Demi\", sans-serif",
+   "transform": "uppercase",
+   "transition": "0.2s ease-out, --smp-gradient-1 0.7s cubic-bezier(0.19, 1, 0.22, 1), --smp-gradient-2 0.7s cubic-bezier(0.19, 1, 0.22, 1",
+   "hasIcon": true
+  }
+ ],
+ "allBtnCount": 7,
+ "media": 0,
+ "largestMedia": null,
+ "frames": [],
+ "fold": {
+  "textLeaves": 34,
+  "words": 108,
+  "interactive": 2,
+  "sizes": {
+   "18": 29,
+   "22": 1,
+   "24": 3,
+   "145": 1
+  },
+  "weights": {
+   "400": 34
+  },
+  "colorCount": 2,
+  "colors": {
+   "rgb(0, 0, 0)": 6,
+   "rgb(21, 115, 221)": 28
+  }
+ },
+ "families": {
+  "Maison Neue Demi": 5,
+  "Maison Neue Bold": 10,
+  "MaisonNeue-Medium": 2,
+  "Maison Neue Book": 23
+ },
+ "fonts": [
+  "AvenirNextLTW01-Regular normal",
+  "Maison Neue Demi normal",
+  "Maison Neue Bold normal",
+  "Maison Neue Book normal",
+  "Maison Neue Light normal",
+  "MaisonNeue-Medium normal"
+ ],
+ "radii": {
+  "6px": 2,
+  "8px": 1,
+  "40px": 1
+ },
+ "shadows": [
+  [
+   "rgba(0, 0, 0, 0.15) 0px 1px 32px 0px",
+   1
+  ],
+  [
+   "rgba(0, 0, 0, 0.15) 0px 0px 120px 0px",
+   1
+  ],
+  [
+   "rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+   1
+  ],
+  [
+   "rgba(0, 0, 0, 0) 8px 8px 30px 0px",
+   1
+  ]
+ ],
+ "tabularEls": 0,
+ "sections": [
+  {
+   "tag": "DIV",
+   "y": 0,
+   "h": 900,
+   "pt": "0px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  }
+ ],
+ "hover": {
+  "before": [
+   "rgb(255, 255, 255) | url(\"https://www.semplice.com/wp-content/themes/semplice7-child/images/homepage/ | none | rgba(0, 0, 0, 0) 8px 8px 30px 0px | rgb(0, 0, 0) | 1 | rgb(255, 255, 255)"
+  ],
+  "after": [
+   "rgb(255, 255, 255) | url(\"https://www.semplice.com/wp-content/themes/semplice7-child/images/homepage/ | none | rgba(0, 0, 0, 0.15) 8px 8px 30px 0px | rgb(0, 0, 0) | 1 | rgb(255, 255, 255)"
+  ],
+  "changed": [
+   "rgb(255, 255, 255) | url(\"https://www.semplice.com/wp-content/themes/semplice7-child/images/homepage/ | none | rgba(0, 0, 0, 0.15) 8px 8px 30px 0px | rgb(0, 0, 0) | 1 | rgb(255, 255, 255)"
+  ]
+ },
+ "press": [
+  "rgb(255, 255, 255) | url(\"https://www.semplice.com/wp-content/themes/semplice7-child/images/homepage/ | none | rgba(0, 0, 0, 0.15) 8px 8px 30px 0px | rgb(0, 0, 0) | 1 | rgb(255, 255, 255)"
+ ],
+ "pixels": {
+  "modeColor": "rgb(248,208,0)",
+  "modeShare": 0.79,
+  "nearBgShare": 0.829,
+  "quietBlockShare": 0.738,
+  "saturatedShare": 0.8463
+ },
+ "url": "https://www.semplice.com/",
+ "slug": "semplice",
+ "captured": "2026-10-15T17:29:06.102Z"
+}

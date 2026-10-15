@@ -6,12 +6,12 @@ IMPORTANT for users of this folder: this book is a career follow-up to a UI desi
 
 | File | Pages | Contents | Rules |
 |---|---|---|---|
-| brief-scope-and-delivery-process.md | 9-25, 43-44, 52, 81-89 | brief restatement, questions, scope, schedule/buffer, chunking, staged delivery, saying no, comms etiquette | 18 |
-| presenting-work-portfolio-and-case-studies.md | 13-20, 26, 46-47, 105-119 | mock-up context, resume/portfolio design restraint, case-study structure, explaining decisions | 14 |
-| freelance-business-and-agency.md | 6-8, 30-57, 58-90 | pricing, proposals, invoicing, niche, agency setup | 19 |
-| career-skills-and-positioning.md | 3-5, 9-12, 26, 43-57, 91-120 | skill depth, tool switching, job boards, red flags, interviews | 14 |
+| brief-scope-and-delivery-process.md | 9-25, 43-44, 52, 81-89 | brief restatement, questions, scope, schedule/buffer, chunking, staged delivery, saying no, comms etiquette | 19 |
+| presenting-work-portfolio-and-case-studies.md | 13-20, 26, 46-47, 105-119 | mock-up context, resume/portfolio design restraint, case-study structure, explaining decisions | 17 (1 added in audit 2026-10-15, 2 from page images) |
+| freelance-business-and-agency.md | 6-8, 30-57, 58-90 | pricing, proposals, invoicing, niche, agency setup | 24 |
+| career-skills-and-positioning.md | 3-5, 9-12, 26, 43-57, 91-120 | skill depth, tool switching, job boards, red flags, interviews | 16 |
 
-Total rules: 65 (many overlap in intent; roughly 25 are directly usable by an agent, the rest are human-only career/business items tagged "human-only" or "agency").
+Total rules: 76 (1 added in the text audit 2026-10-15, 10 more in the page-image pass the same day) (many overlap in intent; roughly 25 are directly usable by an agent, the rest are human-only career/business items tagged "human-only" or "agency").
 
 ## Page coverage (PDF pages 1-120)
 
@@ -35,7 +35,7 @@ Total rules: 65 (many overlap in intent; roughly 25 are directly usable by an ag
 | 114-119 | five interview questions | career file |
 | 120 | closing | no rule content |
 
-Pages with images opened: 20, 49, 106, 112 (all others text-extractable; diagrams on 103, 106-111 contain only text).
+Pages with images opened: all 120 (final pass 2026-10-15: p.1-18, 25-102, 115-120; earlier: p.19-24, 103-114). See `knowledge/FREEBIES-COVERAGE-2026-10-15.md`.
 
 ## Skipped (pure motivation or promotion), by range
 - p.3-5 intro; p.8 (what to expect); p.12 tree metaphor tail; p.16-17 English-listening/grammar tips (personal advice); p.57; p.120.

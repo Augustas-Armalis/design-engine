@@ -1,0 +1,377 @@
+{
+ "title": "Interfaces › Design Engineering Magazine",
+ "vw": 1440,
+ "vh": 900,
+ "docH": 12783,
+ "bodyBg": "rgb(252, 252, 252)",
+ "htmlBg": "rgba(0, 0, 0, 0)",
+ "bodyFont": "interVariable, \"interVariable Fallback\", system-ui, arial",
+ "paragraph": {
+  "size": 60,
+  "lh": "60px",
+  "color": "lab(28.08 0 -0.00000596046)",
+  "family": "interVariable, \"interVariable Fallback\", system-ui",
+  "ls": "-1.5px"
+ },
+ "nav": {
+  "box": {
+   "x": 0,
+   "y": 0,
+   "w": 1440,
+   "h": 64
+  },
+  "shell": {
+   "x": 1252,
+   "y": 16,
+   "w": 65,
+   "h": 32
+  },
+  "position": "sticky",
+  "bg": "lab(100 0 0)",
+  "backdrop": "none",
+  "radius": "9999px",
+  "borderB": "0px solid lab(96.752 0 0)",
+  "border": "0px solid lab(96.752 0 0)",
+  "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.06) 0px ",
+  "linkCount": 2,
+  "links": [
+   {
+    "t": "Log in",
+    "x": 1252,
+    "y": 16,
+    "w": 65,
+    "h": 32,
+    "size": 14,
+    "weight": "500",
+    "ls": "normal",
+    "color": "lab(12.304 -0.00000745058 0)",
+    "bg": "lab(100 0 0)",
+    "radius": "9999px",
+    "pad": "0px 12px"
+   },
+   {
+    "t": "Subscribe",
+    "x": 1324,
+    "y": 16,
+    "w": 92,
+    "h": 32,
+    "size": 14,
+    "weight": "500",
+    "ls": "normal",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "9999px",
+    "pad": "0px 12px"
+   }
+  ]
+ },
+ "navBottom": 64,
+ "head": {
+  "tag": "H1",
+  "text": "Interfaces",
+  "chars": 10,
+  "x": 360,
+  "y": 168,
+  "w": 251,
+  "h": 60,
+  "lines": 1,
+  "family": "interVariable, \"interVariable Fallback\", system-ui, arial",
+  "size": 60,
+  "weight": "500",
+  "ls": "-1.5px",
+  "lsEm": -0.025,
+  "lh": 1,
+  "color": "lab(12.304 -0.00000745058 0)",
+  "transform": "none",
+  "feat": "\"cv01\", \"ss03\"",
+  "num": "normal",
+  "opsz": "auto",
+  "var": "normal",
+  "align": "start",
+  "wrap": "wrap",
+  "spanColors": [],
+  "bgClip": false,
+  "above": [
+   {
+    "t": "x-height",
+    "x": 581,
+    "y": 138,
+    "w": 70,
+    "h": 24,
+    "size": 12,
+    "gapToH1": 6
+   },
+   {
+    "t": "oklch(0.991 0 0)",
+    "x": 386,
+    "y": 124,
+    "w": 115,
+    "h": 16,
+    "size": 12,
+    "gapToH1": 28
+   }
+  ]
+ },
+ "sub": null,
+ "heroBtns": [
+  {
+   "id": "mb2",
+   "inNav": false,
+   "text": "by Jakub Krehel",
+   "x": 360,
+   "y": 381,
+   "w": 178,
+   "h": 42,
+   "boxed": true,
+   "radius": "3.35544e+07px",
+   "pad": "4px",
+   "bg": "rgb(252, 252, 252)",
+   "bgImg": "none",
+   "border": "0px solid lab(96.752 0 0)",
+   "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px, rgba(0, 0, 0, 0.06) 0px 1px 2px -1px, rgba(0, 0",
+   "color": "lab(12.304 -0.00000745058 0)",
+   "size": 16,
+   "weight": "400",
+   "ls": "normal",
+   "family": "interVariable, \"interVariable Fallback\",",
+   "transform": "none",
+   "transition": "all",
+   "hasIcon": true
+  },
+  {
+   "id": "mb3",
+   "inNav": false,
+   "text": "Subscribe Now",
+   "x": 360,
+   "y": 455,
+   "w": 256,
+   "h": 48,
+   "boxed": true,
+   "radius": "9999px",
+   "pad": "0px 24px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgImg": "linear-gradient(lab(70.687 -23.6078 -45.9483) 0%, lab(63.3038 -18.433 -51.0407) 100%)",
+   "border": "0px solid lab(96.752 0 0)",
+   "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(255, 255, 255, 0.06) 0px 0px 1px 1px inset, rgba(0, 0, 0, 0.1) 0px 1.5px 2px 0p",
+   "color": "rgb(255, 255, 255)",
+   "size": 16,
+   "weight": "500",
+   "ls": "normal",
+   "family": "interVariable, \"interVariable Fallback\",",
+   "transform": "none",
+   "transition": "scale 0.2s ease-out, color 0.2s ease-out, background-color 0.2s ease-out, box-shadow 0.2s ease-out",
+   "hasIcon": false
+  }
+ ],
+ "navBtns": [
+  {
+   "id": "mb0",
+   "inNav": true,
+   "text": "Log in",
+   "x": 1252,
+   "y": 16,
+   "w": 65,
+   "h": 32,
+   "boxed": true,
+   "radius": "9999px",
+   "pad": "0px 12px",
+   "bg": "lab(100 0 0)",
+   "bgImg": "none",
+   "border": "0px solid lab(96.752 0 0)",
+   "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px, rgba(0, 0, 0, 0.06) 0px 1px 2px -1px, rgba(0, 0",
+   "color": "lab(12.304 -0.00000745058 0)",
+   "size": 14,
+   "weight": "500",
+   "ls": "normal",
+   "family": "interVariable, \"interVariable Fallback\",",
+   "transform": "none",
+   "transition": "scale 0.2s ease-out, color 0.2s ease-out, background-color 0.2s ease-out, box-shadow 0.2s ease-out",
+   "hasIcon": false
+  },
+  {
+   "id": "mb1",
+   "inNav": true,
+   "text": "Subscribe",
+   "x": 1324,
+   "y": 16,
+   "w": 92,
+   "h": 32,
+   "boxed": true,
+   "radius": "9999px",
+   "pad": "0px 12px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgImg": "linear-gradient(lab(70.687 -23.6078 -45.9483) 0%, lab(63.3038 -18.433 -51.0407) 100%)",
+   "border": "0px solid lab(96.752 0 0)",
+   "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(255, 255, 255, 0.06) 0px 0px 1px 1px inset, rgba(0, 0, 0, 0.1) 0px 1.5px 2px 0p",
+   "color": "rgb(255, 255, 255)",
+   "size": 14,
+   "weight": "500",
+   "ls": "normal",
+   "family": "interVariable, \"interVariable Fallback\",",
+   "transform": "none",
+   "transition": "scale 0.2s ease-out, color 0.2s ease-out, background-color 0.2s ease-out, box-shadow 0.2s ease-out",
+   "hasIcon": false
+  }
+ ],
+ "allBtnCount": 4,
+ "media": 0,
+ "largestMedia": null,
+ "frames": [
+  {
+   "tag": "DIV",
+   "x": 360,
+   "y": 867,
+   "w": 720,
+   "h": 400,
+   "radius": "16px",
+   "shadow": "rgba(0, 0, 0, 0.06) 0px 0px 0px 1px, rgba(0, 0, 0, 0.06) 0px 1px 2px -1px, rgba(0, 0, 0, 0.04) 0px 2px 4px 0px",
+   "border": "0px solid lab(96.752 0 0)",
+   "bg": "lab(100 0 0)",
+   "pad": "0px"
+  },
+  {
+   "tag": "DIV",
+   "x": 1100,
+   "y": 867,
+   "w": 720,
+   "h": 400,
+   "radius": "16px",
+   "shadow": "rgba(0, 0, 0, 0.06) 0px 0px 0px 1px, rgba(0, 0, 0, 0.06) 0px 1px 2px -1px, rgba(0, 0, 0, 0.04) 0px 2px 4px 0px",
+   "border": "0px solid lab(96.752 0 0)",
+   "bg": "lab(100 0 0)",
+   "pad": "0px"
+  },
+  {
+   "tag": "DIV",
+   "x": -380,
+   "y": 867,
+   "w": 720,
+   "h": 400,
+   "radius": "16px",
+   "shadow": "rgba(0, 0, 0, 0.06) 0px 0px 0px 1px, rgba(0, 0, 0, 0.06) 0px 1px 2px -1px, rgba(0, 0, 0, 0.04) 0px 2px 4px 0px",
+   "border": "0px solid lab(96.752 0 0)",
+   "bg": "lab(100 0 0)",
+   "pad": "0px"
+  }
+ ],
+ "fold": {
+  "textLeaves": 17,
+  "words": 82,
+  "interactive": 2,
+  "sizes": {
+   "12": 6,
+   "16": 1,
+   "18": 5,
+   "24": 1,
+   "60": 4
+  },
+  "weights": {
+   "400": 9,
+   "500": 8
+  },
+  "colorCount": 4,
+  "colors": {
+   "lab(12.304 -0.00000745058 0)": 2,
+   "lab(42.348 0 0)": 6,
+   "lab(28.08 0 -0.00000596046)": 8,
+   "lab(56.9303 76.8162 -8.07021)": 1
+  }
+ },
+ "families": {
+  "interVariable": 8,
+  "berkeleyMono": 6,
+  "libreBaskerville": 3
+ },
+ "fonts": [
+  "interVariable 100 900",
+  "interVariable Fallback normal",
+  "libreBaskerville 400",
+  "libreBaskerville Fallback normal",
+  "berkeleyMono 400",
+  "berkeleyMono 700",
+  "berkeleyMono Fallback normal",
+  "openRunde 500",
+  "openRunde 600",
+  "openRunde Fallback normal",
+  "mondwest 400",
+  "mondwest Fallback normal",
+  "heldane 400",
+  "heldane Fallback normal"
+ ],
+ "radii": {
+  "9999px": 3,
+  "8px": 5,
+  "3.35544e+07px": 13,
+  "4px": 1,
+  "16px": 3
+ },
+ "shadows": [
+  [
+   "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px, rgba(0, 0, 0, 0.06) 0px 1px",
+   8
+  ],
+  [
+   "rgba(0, 0, 0, 0.06) 0px 0px 0px 1px, rgba(0, 0, 0, 0.06) 0px 1px 2px -1px, rgba(0, 0, 0, 0.04) 0px 2px 4px 0px",
+   3
+  ],
+  [
+   "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(255, 255, 255, 0.06) 0px 0px 1px 1px inset, rgba(0, 0, 0, 0",
+   2
+  ]
+ ],
+ "tabularEls": 36,
+ "sections": [
+  {
+   "tag": "FOOTER",
+   "y": 12318,
+   "h": 465,
+   "pt": "64px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  }
+ ],
+ "hover": {
+  "before": [
+   "rgba(0, 0, 0, 0) | none | none | none | lab(12.304 -0.00000745058 0) | 1 | lab(96.752 0 0)",
+   "rgb(252, 252, 252) | none | none | rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px | lab(12.304 -0.00000745058 0) | 1 | lab(96.752 0 0)",
+   "lab(100 0 0) | none | none | rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px | lab(42.348 0 0) | 1 | lab(96.752 0 0)",
+   "rgba(0, 0, 0, 0) | none | none | none | lab(42.348 0 0) | 1 | lab(96.752 0 0)",
+   "rgba(0, 0, 0, 0) | none | none | none | lab(42.348 0 0) | 0.03 | lab(96.752 0 0)",
+   "rgba(0, 0, 0, 0) | none | none | none | lab(42.348 0 0) | 0.05 | lab(96.752 0 0)"
+  ],
+  "after": [
+   "rgba(0, 0, 0, 0) | none | none | none | lab(12.304 -0.00000745058 0) | 1 | lab(96.752 0 0)",
+   "rgb(252, 252, 252) | none | none | rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px | lab(12.304 -0.00000745058 0) | 1 | lab(96.752 0 0)",
+   "lab(100 0 0) | none | none | rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px | lab(12.304 -0.00000745058 0) | 1 | lab(96.752 0 0)",
+   "rgba(0, 0, 0, 0) | none | none | none | lab(42.348 0 0) | 1 | lab(96.752 0 0)",
+   "rgba(0, 0, 0, 0) | none | none | none | lab(42.348 0 0) | 0.03 | lab(96.752 0 0)",
+   "rgba(0, 0, 0, 0) | none | none | none | lab(42.348 0 0) | 0.05 | lab(96.752 0 0)"
+  ],
+  "changed": [
+   null,
+   null,
+   "lab(100 0 0) | none | none | rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px | lab(12.304 -0.00000745058 0) | 1 | lab(96.752 0 0)",
+   null,
+   null,
+   null
+  ]
+ },
+ "press": [
+  "rgba(0, 0, 0, 0) | none | none | none | lab(12.304 -0.00000745058 0) | 1 | lab(96.752 0 0)",
+  "rgb(252, 252, 252) | none | none | rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px | lab(12.304 -0.00000745058 0) | 1 | lab(96.752 0 0)",
+  "lab(100 0 0) | none | none | rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px | lab(12.304 -0.00000745058 0) | 1 | lab(96.752 0 0)",
+  "rgba(0, 0, 0, 0) | none | none | none | lab(42.348 0 0) | 1 | lab(96.752 0 0)",
+  "rgba(0, 0, 0, 0) | none | none | none | lab(42.348 0 0) | 0.03 | lab(96.752 0 0)",
+  "rgba(0, 0, 0, 0) | none | none | none | lab(42.348 0 0) | 0.05 | lab(96.752 0 0)"
+ ],
+ "pixels": {
+  "modeColor": "rgb(248,248,248)",
+  "modeShare": 0.938,
+  "nearBgShare": 0.952,
+  "quietBlockShare": 0.852,
+  "saturatedShare": 0.0128
+ },
+ "url": "https://interfaces.dev/",
+ "slug": "interfaces",
+ "captured": "2026-10-15T17:29:25.553Z"
+}

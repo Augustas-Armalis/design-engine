@@ -54,6 +54,9 @@ Second half of the Bonus chapter (PDF 615-626). The practice exercises (584-615)
 - Figure p.621 (printed 620): hand-sketch style wireframe: a phone screen with hamburger, search field, user and cart icons, image carousel with arrows and dots, heart, title/text lines, colour dropdown, quantity stepper and ADD TO TROLLEY button; beside it a kit of sketched components: nav bar, search field, checkbox/radio/dropdown, button, two toggles, slider, an icon row (image, search, user, cart, bin, pencil, pin) and a second row (arrows, chevrons, plus, minus, x, star, heart, thumbs up, mail, download).
 - Figure p.622 (printed 621): two panels. "User Testing / Do Users Need My App..?": four user avatars with marks (tick, cross, tick, tick from left to right). "Usability Testing / Can Users Use my App..?": a person with a laptop and a "We're hiring" sign-holder (illustrative).
 
+- **Do** (p.621 wireframe figure) keep the wireframe greyscale line art and spend a single accent colour (blue) only on what carries hierarchy or interaction: the title bar line in the content block, the slider knob and the dropdown chevron. Everything else (image placeholder, text lines, buttons, icons) stays outline-only. (audit 2026-10-15)
+- **Do** (p.617 process figure) the first stage, Product Definition, is drawn darker and separated from the other four by a vertical dashed divider, marking it as the client-facing setup stage before the research-to-validation loop. (audit 2026-10-15)
+
 ## 5. Exceptions & judgement calls
 - The author says the process is personal and brains differ (p.615-616): treat as one valid process, not the only one (opinion).
 - "Research" and "Analysis" claims "hypothetical personas" are built from research; no method (interviews, sample size) is given. The book offers no numbers for testing (e.g. how many users).
@@ -75,3 +78,6 @@ Copied to `examples/ui-pedia/bonus-design-process/`:
 - p.616: sentence "we may find ourselves having to remodel ourselves on a regular basis" is likely a slip for "remodel the product".
 - "User Testing" panel (PDF p.622): tick/cross arrangement is decorative; the exact count is not meaningful.
 - Coverage: PDF 615-626 all read; images viewed for 617, 618, 619, 620, 621, 622, 623; 615, 616, 624-626 read as OCR text only (no figures expected).
+
+- (audit 2026-10-15) Re-read p.615-626 text in full; every teachable point is already captured in sections 1-4. No rules added.
+- (audit 2026-10-15) Pages viewed as images this pass: p.617, 621, 622, 624 ("The End" divider: purple-to-periwinkle gradient with a ghosted "06" numeral; no rule content). The original study also viewed p.618-620 and p.623. Text-only: p.615, 616, 625, 626 (prose; closing matter).

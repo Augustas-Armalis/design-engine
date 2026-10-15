@@ -109,6 +109,20 @@ Page numbering: all cites are PDF pages (printed page = PDF page - 1). The book 
   **Why** Single-type compositions are static.
   **Applies to** all. **Check** visual. **Source** (p.85)
 
+### Audit additions (audit 2026-10-15)
+
+- **RULE** When shapes of different geometry must carry equal weight (icon sets, logo rows, shape bullets), draw the circle, triangle and diamond larger than the square so they overshoot the square's top and bottom guides (diamond overshoots most); shapes set to the same nominal height read as unequal, with the pointed and round ones looking lighter (read from the "Unbalanced / Balanced" figure).
+  **Why** A square fills its bounding box; circles, triangles and diamonds leave empty corners, so equal boxes give unequal visual mass.
+  **Applies to** all (icons, logo walls, feature bullets). **Check** visual; compare ink area per shape, not bounding-box height. **Source** (p.71) (audit 2026-10-15)
+
+- **RULE** Keep paired buttons identical in width, height, corner radius and label size; change only fill, outline and text colour when tuning the primary/secondary relationship (all three button pairs in the figure share the same box).
+  **Why** With geometry held constant, the weight difference comes only from the lever being tuned (color/density), so the pair stays balanced.
+  **Applies to** all (CTA pairs, dialog footers). **Check** computed width/height/border-radius equal across the pair. **Source** (p.78) (audit 2026-10-15)
+
+- **RULE** A borderless solid-white secondary button on a light page separates from the background with a soft neutral drop shadow rather than an outline; the solid primary carries a soft shadow tinted in its own fill colour (the "Balance & Tension" row).
+  **Why** The shadow gives the white button edge and density without the thin dark outline that made the earlier pairs unbalanced.
+  **Applies to** all. **Check** secondary has `border: none` and a low-opacity neutral `box-shadow`; primary shadow hue matches its fill. **Source** (p.78) (audit 2026-10-15)
+
 ## 3. Numbers & scales
 
 The chapter contains no numeric thresholds (no px, ratios or percentages). Values below are only counts/structure from figures.
@@ -122,6 +136,9 @@ The chapter contains no numeric thresholds (no px, ratios or percentages). Value
 | Size demo | large square ~ 2x the side of the small square (approx., from figure) | p.73 |
 | Asymmetry demo | 1 large square vs 2x2 cluster of 4 circles across a dashed axis | p.81 |
 | Symmetry demo | 3 squares / tall bar / 3 squares across a dashed axis | p.80 |
+| Optical-weight demo | 2 rows x 4 shapes (square, circle, triangle, diamond); balanced row enlarges circle/triangle/diamond past the square's guides (audit 2026-10-15) | p.71 |
+| Button-pair demo | 3 rows x 2 buttons, all six the same width/height/radius; only fill/outline/text colour vary (audit 2026-10-15) | p.78 |
+| Asymmetry UI demo | 1 large single-hue chat bubble (left) vs 4 small multi-hue bubbles (orange, cyan, green, pink) stacked right (audit 2026-10-15) | p.82 |
 
 ## 4. Dos and Don'ts
 
@@ -134,6 +151,8 @@ The chapter contains no numeric thresholds (no px, ratios or percentages). Value
 | Large block on left balanced by a cluster of 4 smaller shapes on the right (seesaw) | Two unrelated unequal masses with no compensating position | p.81, p.82 |
 | Open the gaps of a dense element to reduce its weight | Same size and color but one element packed solid, the other airy (heavier looks dominant) | p.75 |
 | Use background change to rebalance (dark panel sinks the pink, lifts yellow) | Assume a color keeps the same weight on every background | p.74, p.75 |
+| Enlarge round/pointed shapes past the square's guides so a mixed row reads even (audit 2026-10-15) | Set square, circle, triangle and diamond to the same height (the round and pointed ones look smaller) (audit 2026-10-15) | p.71 |
+| One large calm block on one side vs a cluster of small, more saturated multi-colour items on the other; a slight lean toward the large side is accepted as balanced (audit 2026-10-15) | Matching the two sides exactly in an asymmetric layout (the book says it cannot be done; tune by eye) (audit 2026-10-15) | p.82 |
 
 ## 5. Exceptions & judgement calls
 
@@ -165,3 +184,4 @@ Copied to `examples/ui-pedia/balance/`:
 - p.79: "perfectly balanced design" text says "same visual rate" (typo for weight).
 - p.71: figure labelled "Unbalanced / Balanced" but the page text does not explain what differs (read from the image: shapes of equal nominal size look unequal; the balanced row enlarges circle/triangle/diamond relative to the square). Interpretation, not stated by the book.
 - Pages with no extractable rule content: p.72 (basketball/bowling ball illustration only; idea captured in section 1, no further rule), p.79 first half (definitions), p.84 (Jackson Pollock image only; no rule), p.85 (summary, rules captured).
+- (audit 2026-10-15) Lighter-pass audit: every page p.71-85 text read and every page image viewed (p.72 and p.79 included). Pages with no further rule content: p.72 (ball illustration), p.79 (definitions; figure is on p.80), p.84 (Pollock painting only), p.85 (summary). No numeric errors found; no corrections.

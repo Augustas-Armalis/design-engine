@@ -1,0 +1,462 @@
+{
+ "title": "affectUI · Agent-ready React UI for AI products",
+ "vw": 1440,
+ "vh": 900,
+ "docH": 7219,
+ "bodyBg": "rgb(255, 255, 255)",
+ "htmlBg": "rgb(255, 255, 255)",
+ "bodyFont": "Inter, ui-sans-serif, system-ui, -apple-system, sans-serif",
+ "paragraph": {
+  "size": 16,
+  "lh": "24px",
+  "color": "rgb(115, 115, 115)",
+  "family": "Inter, ui-sans-serif, system-ui, -apple-system, sa",
+  "ls": "normal"
+ },
+ "nav": {
+  "box": {
+   "x": 192,
+   "y": 32,
+   "w": 1056,
+   "h": 68
+  },
+  "shell": {
+   "x": 933,
+   "y": 52,
+   "w": 54,
+   "h": 28
+  },
+  "position": "relative",
+  "bg": "rgba(0, 0, 0, 0.04)",
+  "backdrop": "none",
+  "radius": "999px",
+  "borderB": "0px none rgb(10, 10, 10)",
+  "border": "0px none rgb(10, 10, 10)",
+  "shadow": "none",
+  "linkCount": 7,
+  "links": [
+   {
+    "t": "affectUI",
+    "x": 216,
+    "y": 57,
+    "w": 79,
+    "h": 19,
+    "size": 13,
+    "weight": "400",
+    "ls": "normal",
+    "color": "rgb(10, 10, 10)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "0px",
+    "pad": "0px"
+   },
+   {
+    "t": "Library",
+    "x": 325,
+    "y": 50,
+    "w": 82,
+    "h": 32,
+    "size": 13,
+    "weight": "500",
+    "ls": "normal",
+    "color": "rgb(115, 115, 115)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "999px",
+    "pad": "0px 11px"
+   },
+   {
+    "t": "Docs",
+    "x": 409,
+    "y": 50,
+    "w": 54,
+    "h": 32,
+    "size": 13,
+    "weight": "500",
+    "ls": "normal",
+    "color": "rgb(115, 115, 115)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "999px",
+    "pad": "0px 11px"
+   },
+   {
+    "t": "Pricing",
+    "x": 465,
+    "y": 50,
+    "w": 65,
+    "h": 32,
+    "size": 13,
+    "weight": "500",
+    "ls": "normal",
+    "color": "rgb(115, 115, 115)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "999px",
+    "pad": "0px 11px"
+   },
+   {
+    "t": "34",
+    "x": 991,
+    "y": 52,
+    "w": 55,
+    "h": 28,
+    "size": 13,
+    "weight": "500",
+    "ls": "normal",
+    "color": "rgb(10, 10, 10)",
+    "bg": "rgba(0, 0, 0, 0.04)",
+    "radius": "999px",
+    "pad": "0px 10px 0px 8px"
+   },
+   {
+    "t": "Log In",
+    "x": 1049,
+    "y": 52,
+    "w": 59,
+    "h": 28,
+    "size": 13,
+    "weight": "500",
+    "ls": "normal",
+    "color": "rgb(10, 10, 10)",
+    "bg": "rgba(0, 0, 0, 0.04)",
+    "radius": "999px",
+    "pad": "0px 10.5px"
+   },
+   {
+    "t": "Browse library",
+    "x": 1112,
+    "y": 52,
+    "w": 112,
+    "h": 28,
+    "size": 13,
+    "weight": "500",
+    "ls": "normal",
+    "color": "rgb(250, 250, 250)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "999px",
+    "pad": "0px 10.5px"
+   }
+  ]
+ },
+ "navBottom": 100,
+ "head": {
+  "tag": "H1",
+  "text": "Agent-ready UI for AI products",
+  "chars": 30,
+  "x": 562,
+  "y": 296,
+  "w": 316,
+  "h": 104,
+  "lines": 2,
+  "family": "Inter, ui-sans-serif, system-ui, -apple-system, sans-serif",
+  "size": 46,
+  "weight": "500",
+  "ls": "-1.4px",
+  "lsEm": -0.0304,
+  "lh": 1.13,
+  "color": "rgb(10, 10, 10)",
+  "transform": "none",
+  "feat": "normal",
+  "num": "normal",
+  "opsz": "auto",
+  "var": "normal",
+  "align": "center",
+  "wrap": "balance",
+  "spanColors": [
+   "rgb(10, 10, 10)"
+  ],
+  "bgClip": false,
+  "above": []
+ },
+ "sub": {
+  "text": "103+ React components, screens and blocks. No dependencies. Add them yourself, or let Claude, Cursor or v0 do it.",
+  "chars": 113,
+  "x": 477,
+  "y": 400,
+  "w": 486,
+  "h": 62,
+  "lines": 2,
+  "gapFromH1": 0,
+  "family": "Inter, ui-sans-serif, system-ui, -apple-system, sans-serif",
+  "size": 16,
+  "weight": "400",
+  "ls": "normal",
+  "lsEm": 0,
+  "lh": 1.5,
+  "color": "rgb(115, 115, 115)",
+  "transform": "none",
+  "feat": "normal",
+  "num": "normal",
+  "opsz": "auto",
+  "var": "normal",
+  "align": "center",
+  "wrap": "pretty"
+ },
+ "heroBtns": [
+  {
+   "id": "mb6",
+   "inNav": false,
+   "text": "Browse library",
+   "x": 589,
+   "y": 490,
+   "w": 138,
+   "h": 42,
+   "boxed": true,
+   "radius": "999px",
+   "pad": "0px 20px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgImg": "linear-gradient(rgb(50, 49, 55), rgb(32, 30, 37)), linear-gradient(rgb(75, 73, 81), rgb(49, 48, 58), rgb(24, 23, 27))",
+   "border": "1px solid rgba(0, 0, 0, 0)",
+   "shadow": "rgb(13, 13, 13) 0px 0px 0px 1px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px",
+   "color": "rgb(250, 250, 250)",
+   "size": 14,
+   "weight": "500",
+   "ls": "normal",
+   "family": "Inter, ui-sans-serif, system-ui, -apple-",
+   "transform": "none",
+   "transition": "background-color 0.18s, color 0.18s, transform 0.18s cubic-bezier(0.22, 1, 0.36, 1)",
+   "hasIcon": false
+  },
+  {
+   "id": "mb7",
+   "inNav": false,
+   "text": "Get started",
+   "x": 736,
+   "y": 490,
+   "w": 115,
+   "h": 42,
+   "boxed": true,
+   "radius": "999px",
+   "pad": "0px 20px",
+   "bg": "rgba(0, 0, 0, 0.04)",
+   "bgImg": "none",
+   "border": "0px none rgb(10, 10, 10)",
+   "shadow": "none",
+   "color": "rgb(10, 10, 10)",
+   "size": 14,
+   "weight": "500",
+   "ls": "normal",
+   "family": "Inter, ui-sans-serif, system-ui, -apple-",
+   "transform": "none",
+   "transition": "background-color 0.18s, color 0.18s, transform 0.18s cubic-bezier(0.22, 1, 0.36, 1)",
+   "hasIcon": false
+  }
+ ],
+ "navBtns": [
+  {
+   "id": "mb3",
+   "inNav": true,
+   "text": "34",
+   "x": 991,
+   "y": 52,
+   "w": 55,
+   "h": 28,
+   "boxed": true,
+   "radius": "999px",
+   "pad": "0px 10px 0px 8px",
+   "bg": "rgba(0, 0, 0, 0.04)",
+   "bgImg": "none",
+   "border": "0px none rgb(10, 10, 10)",
+   "shadow": "none",
+   "color": "rgb(10, 10, 10)",
+   "size": 13,
+   "weight": "500",
+   "ls": "normal",
+   "family": "Inter, ui-sans-serif, system-ui, -apple-",
+   "transform": "none",
+   "transition": "background-color 0.18s, color 0.18s, transform 0.18s cubic-bezier(0.22, 1, 0.36, 1)",
+   "hasIcon": true
+  },
+  {
+   "id": "mb4",
+   "inNav": true,
+   "text": "Log In",
+   "x": 1049,
+   "y": 52,
+   "w": 59,
+   "h": 28,
+   "boxed": true,
+   "radius": "999px",
+   "pad": "0px 10.5px",
+   "bg": "rgba(0, 0, 0, 0.04)",
+   "bgImg": "none",
+   "border": "0px none rgb(10, 10, 10)",
+   "shadow": "none",
+   "color": "rgb(10, 10, 10)",
+   "size": 13,
+   "weight": "500",
+   "ls": "normal",
+   "family": "Inter, ui-sans-serif, system-ui, -apple-",
+   "transform": "none",
+   "transition": "background-color 0.18s, color 0.18s, transform 0.18s cubic-bezier(0.22, 1, 0.36, 1)",
+   "hasIcon": false
+  },
+  {
+   "id": "mb5",
+   "inNav": true,
+   "text": "Browse library",
+   "x": 1112,
+   "y": 52,
+   "w": 112,
+   "h": 28,
+   "boxed": true,
+   "radius": "999px",
+   "pad": "0px 10.5px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgImg": "linear-gradient(rgb(50, 49, 55), rgb(32, 30, 37)), linear-gradient(rgb(75, 73, 81), rgb(49, 48, 58), rgb(24, 23, 27))",
+   "border": "1px solid rgba(0, 0, 0, 0)",
+   "shadow": "rgb(13, 13, 13) 0px 0px 0px 1px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px",
+   "color": "rgb(250, 250, 250)",
+   "size": 13,
+   "weight": "500",
+   "ls": "normal",
+   "family": "Inter, ui-sans-serif, system-ui, -apple-",
+   "transform": "none",
+   "transition": "background-color 0.18s, color 0.18s, transform 0.18s cubic-bezier(0.22, 1, 0.36, 1)",
+   "hasIcon": false
+  }
+ ],
+ "allBtnCount": 14,
+ "media": 18,
+ "largestMedia": {
+  "tag": "IMG",
+  "x": 1353,
+  "y": 771,
+  "w": 439,
+  "h": 307
+ },
+ "frames": [],
+ "fold": {
+  "textLeaves": 12,
+  "words": 53,
+  "interactive": 8,
+  "sizes": {
+   "13": 6,
+   "14": 2,
+   "15": 1,
+   "16": 1,
+   "28": 1,
+   "46": 1
+  },
+  "weights": {
+   "400": 2,
+   "500": 10
+  },
+  "colorCount": 3,
+  "colors": {
+   "rgb(10, 10, 10)": 4,
+   "rgb(115, 115, 115)": 7,
+   "rgb(250, 250, 250)": 1
+  }
+ },
+ "families": {
+  "Inter": 22
+ },
+ "fonts": [
+  "Inter 400",
+  "Inter 500",
+  "Inter 600",
+  "Inter 700"
+ ],
+ "radii": {
+  "999px": 11
+ },
+ "shadows": [
+  [
+   "rgb(13, 13, 13) 0px 0px 0px 1px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px",
+   2
+  ],
+  [
+   "color(srgb 0.866667 0.0235294 0.454902 / 0.14) 0px -1px 0px 0px inset",
+   1
+  ],
+  [
+   "rgb(229, 229, 229) 0px 0px 0px 1px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px",
+   1
+  ],
+  [
+   "rgb(229, 229, 229) 0px -1px 0px 0px inset",
+   1
+  ]
+ ],
+ "tabularEls": 5,
+ "sections": [
+  {
+   "tag": "SECTION",
+   "y": 100,
+   "h": 620,
+   "pt": "120px",
+   "pb": "112px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 720,
+   "h": 1031,
+   "pt": "0px",
+   "pb": "112px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 1751,
+   "h": 1006,
+   "pt": "0px",
+   "pb": "112px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 2757,
+   "h": 1012,
+   "pt": "0px",
+   "pb": "112px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 3769,
+   "h": 1012,
+   "pt": "0px",
+   "pb": "112px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 4781,
+   "h": 1012,
+   "pt": "0px",
+   "pb": "112px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "FOOTER",
+   "y": 6861,
+   "h": 358,
+   "pt": "24px",
+   "pb": "80px",
+   "bg": "rgba(0, 0, 0, 0)"
+  }
+ ],
+ "hover": {
+  "before": [
+   "rgba(0, 0, 0, 0) | linear-gradient(rgb(50, 49, 55), rgb(32, 30, 37)), linear-gradient(rgb(75, 73, 8 | none | rgb(13, 13, 13) 0px 0px 0px 1px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px | rgb(250, 250, 250) | 1 | rgba(0, 0, 0, 0)"
+  ],
+  "after": [
+   "rgba(0, 0, 0, 0) | linear-gradient(rgb(60, 59, 66), rgb(41, 39, 47)), linear-gradient(rgb(75, 73, 8 | none | rgb(13, 13, 13) 0px 0px 0px 1px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px | rgb(250, 250, 250) | 1 | rgba(0, 0, 0, 0)"
+  ],
+  "changed": [
+   "rgba(0, 0, 0, 0) | linear-gradient(rgb(60, 59, 66), rgb(41, 39, 47)), linear-gradient(rgb(75, 73, 8 | none | rgb(13, 13, 13) 0px 0px 0px 1px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px | rgb(250, 250, 250) | 1 | rgba(0, 0, 0, 0)"
+  ]
+ },
+ "press": [
+  "rgba(0, 0, 0, 0) | linear-gradient(rgb(60, 59, 66), rgb(41, 39, 47)), linear-gradient(rgb(75, 73, 8 | matrix(0.991955, 0, 0, 0.991955, 0, 0) | rgb(13, 13, 13) 0px 0px 0px 1px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px | rgb(250, 250, 250) | 1 | rgba(0, 0, 0, 0)"
+ ],
+ "pixels": {
+  "modeColor": "rgb(248,248,248)",
+  "modeShare": 0.88,
+  "nearBgShare": 0.943,
+  "quietBlockShare": 0.817,
+  "saturatedShare": 0.0013
+ },
+ "url": "https://www.affectui.com/",
+ "slug": "affectui",
+ "captured": "2026-10-15T17:30:25.568Z"
+}

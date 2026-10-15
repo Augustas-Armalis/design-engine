@@ -22,5 +22,8 @@ Rule groups inside dos-and-donts.md (section 2):
 | 2.10 Icons, imagery, illustration | 7, 46, 66, 69, 70, 71, 78 |
 | 2.11 Feedback, states, loading, errors | 10, 27, 52, 60, 62, 63, 97 |
 | 2.12 Process | 101 |
+| Audit additions (audit 2026-10-15) | 4 drawn conventions: dialog button order (p.12, p.16), red required asterisk (p.95, p.97), stacked full-width mobile action pair (p.64, p.102), filled multi-select row tiles (p.56). All 101 tips verified present. |
 
 No rule content: p.1 cover, p.2-3 intro, p.4 divider, p.106 closing.
+
+Spot check 2026-10-15: 15 random tip pages (T2, 4, 6, 25, 26, 28, 51, 55, 57, 62, 68, 74, 79, 84, 89) re-viewed as images against dos-and-donts.md; all numbers and visuals matched, no fixes needed.

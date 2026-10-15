@@ -78,6 +78,22 @@ Only three parts of the book touch design craft: mock-up presentation (p.19-20),
   **Why** "How quickly you get work depends on how unique and experienced your profile is"; new projects fix a thin profile (p.54-56).
   **Applies to** landing page (portfolio). **Check** latest entry date. **Source** (p.55-56)
 
+### Audit additions (audit 2026-10-15)
+
+- **RULE** Lay out a case-study page in the order the book's example shows: a hero with client mark, project title and a one-line summary beside product renders; then a short narrative section led by a plain-language headline ("Everybody knows how to chat.") with one supporting illustration; then a two-column block in a tinted panel with "My role" (a short paragraph) on the left and "What I did" (a bullet list of activities) on the right; then process sections with real screens and captions ("Leveraging what we've learned").
+  **Why** The role and activity list answer the reader's first question (what did this person do) before the process detail, which carries the five case-study questions (p.113 list).
+  **Applies to** landing page (portfolio and case-study templates). **Check** case-study page has a hero with title + summary, and a "My role"/"What I did" pair above the first process section; visual. **Source** (p.113 figure) (audit 2026-10-15)
+
+### Audit additions: page images (audit 2026-10-15)
+
+- **RULE** Use your success stories (past project outcomes) as the main material for winning new work, and build "a beautiful and informative professional profile" that lists every important quality you have.
+  **Why** The Experience section ends with this as its last practical point (p.46); the platform chapter closes with the same advice for marketplace profiles (p.42).
+  **Applies to** landing page (portfolio, agency and case-study pages). **Check** portfolio/landing page leads with concrete outcomes (project, result) rather than a skills list; visual. **Source** (p.42, p.46) (audit 2026-10-15)
+
+- **RULE** For pages people read for long periods (listings, dashboards, docs), avoid a small body font and avoid vivid, saturated colour across large surfaces.
+  **Why** The book's own reviews of job boards: Ideate Labs "can be difficult to see for long periods of time owing to the small font"; Design Jobs Board "might get visually heavy after a time" because of its vivid colours (the screenshot shows full-width cyan and teal row fills) (p.96-97).
+  **Applies to** SaaS app UI, long-form and listing pages. **Check** body `font-size` >= 14px (see dos-and-donts T86); saturated fills limited to accents, not whole rows or panels; visual. **Source** (p.96-97, screenshots p.97) (audit 2026-10-15)
+
 ## 3. Numbers & scales
 
 | Item | Value | Source |
@@ -110,6 +126,7 @@ Only three parts of the book touch design craft: mock-up presentation (p.19-20),
 - p.106 (PDF) / printed 105: thumbnail of a plain single-column CV beside four tick-list bullets. Useful as a "restrained content-first document" example.
 - p.103: red-flag diagram of six labelled items (text captured above).
 - p.108-111 callout diagrams (resume tailoring; background -> experience -> empathy -> achievement). Content captured as text.
+- p.113: example case-study page ("Conversational UI for Cortana"): hero with renders, narrative headline, tinted "My role" / "What I did" two-column block, process screens with captions. The only figure in the book that shows a page layout (audit 2026-10-15).
 
 ## 7. Open questions
 
@@ -117,3 +134,5 @@ Only three parts of the book touch design craft: mock-up presentation (p.19-20),
 - Numbering in diagrams (01-04) does not match the five bullet labels on p.107; I list them as given.
 - No numbers anywhere on layout, type, colour for resume/portfolio; the engine must source those from the UI books.
 - No page in this range contains a concrete mock-up image of an app on a phone despite p.20 text promising "look below"; image on p.20 shows only Envato search. Flag: example missing.
+- (audit 2026-10-15) Light gap pass over all 120 pages of text, with contact-sheet views of p.19-24 and p.103-114 and the full p.113 image. Every teachable point in the other three notes was already present; the only gap was the p.113 case-study layout figure, added above. Not added (personal tips, no design or process rule): p.18 "smile and keep a positive attitude", p.59 Seth Godin entrepreneur-vs-freelancer quote.
+- (audit 2026-10-15, page images) Every page image of the book (p.1-120) has now been viewed: p.1-18, p.25-102 and p.115-120 in this pass, p.19-24 and p.103-114 in the earlier pass. New points from this pass are in the section 2 block "Audit additions: page images"; the book-wide list of pages viewed with no new content is in `knowledge/FREEBIES-COVERAGE-2026-10-15.md`.

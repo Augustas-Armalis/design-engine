@@ -1,0 +1,433 @@
+{
+ "title": "Rork — create mobile and web apps using AI in minutes",
+ "vw": 1440,
+ "vh": 900,
+ "docH": 2590,
+ "bodyBg": "rgb(23, 23, 23)",
+ "htmlBg": "rgba(0, 0, 0, 0)",
+ "bodyFont": "-apple-system, \"system-ui\", \"SF Pro Display\", \"SF Pro Text\", system-ui, \"Britti ",
+ "paragraph": {
+  "size": 20,
+  "lh": "28px",
+  "color": "oklab(0.999994 0.0000455678 0.0000200868 / 0.5)",
+  "family": "-apple-system, \"system-ui\", \"SF Pro Display\", \"SF ",
+  "ls": "normal"
+ },
+ "nav": {
+  "box": {
+   "x": 553,
+   "y": 28,
+   "w": 334,
+   "h": 40
+  },
+  "shell": {
+   "x": 0,
+   "y": 0,
+   "w": 0,
+   "h": 0
+  },
+  "position": "relative",
+  "bg": "rgb(38, 38, 38)",
+  "backdrop": "none",
+  "radius": "32px",
+  "borderB": "1px solid oklab(0.999994 0.0000455678 0.0000200868 / 0.1)",
+  "border": "1px solid oklab(0.999994 0.0000455678 0.0000200868 / 0.1)",
+  "shadow": "none",
+  "linkCount": 4,
+  "links": [
+   {
+    "t": "Products",
+    "x": 553,
+    "y": 28,
+    "w": 99,
+    "h": 40,
+    "size": 16,
+    "weight": "400",
+    "ls": "normal",
+    "color": "oklab(0.999994 0.0000455678 0.0000200868 / 0.5)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "6px",
+    "pad": "8px"
+   },
+   {
+    "t": "Resources",
+    "x": 656,
+    "y": 28,
+    "w": 110,
+    "h": 40,
+    "size": 16,
+    "weight": "400",
+    "ls": "normal",
+    "color": "oklab(0.999994 0.0000455678 0.0000200868 / 0.5)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "6px",
+    "pad": "8px"
+   },
+   {
+    "t": "Pricing",
+    "x": 770,
+    "y": 28,
+    "w": 66,
+    "h": 40,
+    "size": 16,
+    "weight": "400",
+    "ls": "normal",
+    "color": "oklab(0.999994 0.0000455678 0.0000200868 / 0.5)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "6px",
+    "pad": "8px"
+   },
+   {
+    "t": "App",
+    "x": 840,
+    "y": 30,
+    "w": 47,
+    "h": 36,
+    "size": 16,
+    "weight": "600",
+    "ls": "normal",
+    "color": "rgba(0, 0, 0, 0)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "0px",
+    "pad": "0px 8px"
+   }
+  ]
+ },
+ "navBottom": 68,
+ "head": {
+  "tag": "H1",
+  "text": "Be the next app founder Be the next Kevin Systrom Be the next Zach Yadegari Be the next Nikita Bier Be the next George Be the next Sam Altma",
+  "chars": 195,
+  "x": 303,
+  "y": 276,
+  "w": 834,
+  "h": 62,
+  "lines": 2,
+  "family": "-apple-system, \"system-ui\", \"SF Pro Display\", \"SF Pro Text\", system-ui, \"Britti ",
+  "size": 60,
+  "weight": "600",
+  "ls": "normal",
+  "lsEm": 0,
+  "lh": 1,
+  "color": "rgb(255, 255, 255)",
+  "transform": "none",
+  "feat": "normal",
+  "num": "normal",
+  "opsz": "auto",
+  "var": "normal",
+  "align": "center",
+  "wrap": "wrap",
+  "spanColors": [
+   "rgb(255, 255, 255)",
+   "rgba(0, 0, 0, 0)"
+  ],
+  "bgClip": false,
+  "above": []
+ },
+ "sub": {
+  "text": "Create mobile apps by chatting with AI, ship to App Store and start making money.",
+  "chars": 81,
+  "x": 362,
+  "y": 350,
+  "w": 716,
+  "h": 28,
+  "lines": 1,
+  "gapFromH1": 12,
+  "family": "-apple-system, \"system-ui\", \"SF Pro Display\", \"SF Pro Text\", system-ui, \"Britti ",
+  "size": 20,
+  "weight": "400",
+  "ls": "normal",
+  "lsEm": 0,
+  "lh": 1.4,
+  "color": "oklab(0.999994 0.0000455678 0.0000200868 / 0.5)",
+  "transform": "none",
+  "feat": "normal",
+  "num": "normal",
+  "opsz": "auto",
+  "var": "normal",
+  "align": "center",
+  "wrap": "balance"
+ },
+ "heroBtns": [
+  {
+   "id": "mb7",
+   "inNav": false,
+   "text": "iPhone",
+   "x": 566,
+   "y": 550,
+   "w": 95,
+   "h": 32,
+   "boxed": true,
+   "radius": "3.35544e+07px",
+   "pad": "0px",
+   "bg": "oklab(0.999994 0.0000455678 0.0000200868 / 0.1)",
+   "bgImg": "none",
+   "border": "0px solid rgb(46, 46, 46)",
+   "shadow": "none",
+   "color": "rgb(255, 255, 255)",
+   "size": 14,
+   "weight": "500",
+   "ls": "normal",
+   "family": "-apple-system, \"system-ui\", \"SF Pro Disp",
+   "transform": "none",
+   "transition": "all",
+   "hasIcon": true
+  },
+  {
+   "id": "mb10",
+   "inNav": false,
+   "text": "Customize",
+   "x": 29,
+   "y": 839,
+   "w": 96,
+   "h": 32,
+   "boxed": true,
+   "radius": "12px",
+   "pad": "0px 12px",
+   "bg": "oklab(0.999994 0.0000455678 0.0000200868 / 0.03)",
+   "bgImg": "none",
+   "border": "1px solid oklab(0.999994 0.0000455678 0.0000200868",
+   "shadow": "none",
+   "color": "rgb(255, 255, 255)",
+   "size": 14,
+   "weight": "500",
+   "ls": "normal",
+   "family": "-apple-system, \"system-ui\", \"SF Pro Disp",
+   "transform": "none",
+   "transition": "color 0.15s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.15s cubic-",
+   "hasIcon": false
+  },
+  {
+   "id": "mb11",
+   "inNav": false,
+   "text": "Decline",
+   "x": 205,
+   "y": 839,
+   "w": 75,
+   "h": 32,
+   "boxed": true,
+   "radius": "12px",
+   "pad": "0px 12px",
+   "bg": "oklab(0.999994 0.0000455678 0.0000200868 / 0.03)",
+   "bgImg": "none",
+   "border": "1px solid oklab(0.999994 0.0000455678 0.0000200868",
+   "shadow": "none",
+   "color": "rgb(255, 255, 255)",
+   "size": 14,
+   "weight": "500",
+   "ls": "normal",
+   "family": "-apple-system, \"system-ui\", \"SF Pro Disp",
+   "transform": "none",
+   "transition": "color 0.15s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.15s cubic-",
+   "hasIcon": false
+  },
+  {
+   "id": "mb12",
+   "inNav": false,
+   "text": "Accept all",
+   "x": 288,
+   "y": 839,
+   "w": 91,
+   "h": 32,
+   "boxed": true,
+   "radius": "12px",
+   "pad": "0px 12px",
+   "bg": "oklab(0.999994 0.0000455678 0.0000200868 / 0.03)",
+   "bgImg": "none",
+   "border": "1px solid oklab(0.999994 0.0000455678 0.0000200868",
+   "shadow": "none",
+   "color": "rgb(255, 255, 255)",
+   "size": 14,
+   "weight": "500",
+   "ls": "normal",
+   "family": "-apple-system, \"system-ui\", \"SF Pro Disp",
+   "transform": "none",
+   "transition": "color 0.15s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.15s cubic-",
+   "hasIcon": false
+  }
+ ],
+ "navBtns": [
+  {
+   "id": "mb3",
+   "inNav": true,
+   "text": "App",
+   "x": 840,
+   "y": 30,
+   "w": 47,
+   "h": 36,
+   "boxed": true,
+   "radius": "0px",
+   "pad": "0px 8px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgImg": "linear-gradient(to right, lab(86.4156 6.13147 78.3961) 0%, lab(64.272 57.1788 90.3583) 100%)",
+   "border": "0px solid rgb(46, 46, 46)",
+   "shadow": "none",
+   "color": "rgba(0, 0, 0, 0)",
+   "size": 16,
+   "weight": "600",
+   "ls": "normal",
+   "family": "-apple-system, \"system-ui\", \"SF Pro Disp",
+   "transform": "none",
+   "transition": "color 0.15s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.15s cubic-",
+   "hasIcon": false
+  },
+  {
+   "id": "mb4",
+   "inNav": true,
+   "text": "Sign in",
+   "x": 1155,
+   "y": 30,
+   "w": 77,
+   "h": 36,
+   "boxed": true,
+   "radius": "3.35544e+07px",
+   "pad": "0px 16px",
+   "bg": "rgb(255, 255, 255)",
+   "bgImg": "none",
+   "border": "0px solid oklab(0.999994 0.0000455678 0.0000200868",
+   "shadow": "none",
+   "color": "rgb(0, 0, 0)",
+   "size": 14,
+   "weight": "500",
+   "ls": "normal",
+   "family": "-apple-system, \"system-ui\", \"SF Pro Disp",
+   "transform": "none",
+   "transition": "color 0.15s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.15s cubic-",
+   "hasIcon": false
+  }
+ ],
+ "allBtnCount": 13,
+ "media": 8,
+ "largestMedia": {
+  "tag": "IMG",
+  "x": 480,
+  "y": 650,
+  "w": 480,
+  "h": 300
+ },
+ "frames": [],
+ "fold": {
+  "textLeaves": 27,
+  "words": 74,
+  "interactive": 8,
+  "sizes": {
+   "10": 1,
+   "12": 2,
+   "14": 11,
+   "15": 2,
+   "16": 1,
+   "20": 1,
+   "60": 9
+  },
+  "weights": {
+   "400": 7,
+   "500": 8,
+   "600": 10,
+   "700": 2
+  },
+  "colorCount": 5,
+  "colors": {
+   "rgb(255, 255, 255)": 15,
+   "oklab(0.999994 0.0000455678 0.0000200868 / 0.5)": 2,
+   "rgb(166, 166, 166)": 7,
+   "oklab(0.999994 0.0000455677 0.0000200868 / 0.6)": 2,
+   "rgba(0, 0, 0, 0)": 1
+  }
+ },
+ "families": {
+  "-apple-system": 32
+ },
+ "fonts": [],
+ "radii": {
+  "6px": 11,
+  "3.35544e+07px": 17,
+  "28px": 1,
+  "12px": 4,
+  "32px": 1
+ },
+ "shadows": [
+  [
+   "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.1) 0px 1px 2",
+   14
+  ],
+  [
+   "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.1) 0px 4p",
+   1
+  ]
+ ],
+ "tabularEls": 0,
+ "sections": [
+  {
+   "tag": "DIV",
+   "y": 0,
+   "h": 2590,
+   "pt": "0px",
+   "pb": "0px",
+   "bg": "rgb(23, 23, 23)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 650,
+   "h": 471,
+   "pt": "0px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 1185,
+   "h": 766,
+   "pt": "48px",
+   "pb": "48px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "FOOTER",
+   "y": 2202,
+   "h": 388,
+   "pt": "0px",
+   "pb": "16px",
+   "bg": "rgba(0, 0, 0, 0)"
+  }
+ ],
+ "hover": {
+  "before": [
+   "rgba(0, 0, 0, 0) | none | none | none | rgb(255, 255, 255) | 1 | rgb(46, 46, 46)",
+   "oklab(0.999994 0.0000455678 0.0000200868 / 0.1) | none | none | none | rgb(255, 255, 255) | 1 | rgb(46, 46, 46)",
+   "rgba(0, 0, 0, 0) | none | none | none | rgb(255, 255, 255) | 1 | rgb(46, 46, 46)",
+   "rgba(0, 0, 0, 0) | none | none | none | rgb(255, 255, 255) | 1 | rgb(46, 46, 46)",
+   "rgba(0, 0, 0, 0) | none | none | none | rgb(255, 255, 255) | 1 | rgb(46, 46, 46)"
+  ],
+  "after": [
+   "rgba(0, 0, 0, 0) | none | none | none | rgb(255, 255, 255) | 1 | rgb(46, 46, 46)",
+   "oklab(0.999994 0.0000455678 0.0000200868 / 0.1) | none | none | none | rgb(255, 255, 255) | 1 | rgb(46, 46, 46)",
+   "rgba(0, 0, 0, 0) | none | none | none | rgb(255, 255, 255) | 1 | rgb(46, 46, 46)",
+   "rgba(0, 0, 0, 0) | none | none | none | rgb(255, 255, 255) | 1 | rgb(46, 46, 46)",
+   "rgba(0, 0, 0, 0) | none | none | none | rgb(255, 255, 255) | 1 | rgb(46, 46, 46)"
+  ],
+  "changed": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "press": [
+  "rgba(0, 0, 0, 0) | none | none | none | rgb(255, 255, 255) | 1 | rgb(46, 46, 46)",
+  "oklab(0.999994 0.0000455678 0.0000200868 / 0.1) | none | none | none | rgb(255, 255, 255) | 1 | rgb(46, 46, 46)",
+  "rgba(0, 0, 0, 0) | none | none | none | rgb(255, 255, 255) | 1 | rgb(46, 46, 46)",
+  "rgba(0, 0, 0, 0) | none | none | none | rgb(255, 255, 255) | 1 | rgb(46, 46, 46)",
+  "rgba(0, 0, 0, 0) | none | none | none | rgb(255, 255, 255) | 1 | rgb(46, 46, 46)"
+ ],
+ "pixels": {
+  "modeColor": "rgb(16,16,16)",
+  "modeShare": 0.812,
+  "nearBgShare": 0.815,
+  "quietBlockShare": 0.849,
+  "saturatedShare": 0.045
+ },
+ "url": "https://rork.com/",
+ "slug": "rork",
+ "captured": "2026-10-15T17:28:46.070Z"
+}

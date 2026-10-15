@@ -1,0 +1,576 @@
+{
+ "title": "All In One Cold Email Platform for B2B Companies | ListKit",
+ "vw": 1440,
+ "vh": 900,
+ "docH": 17366,
+ "bodyBg": "rgba(0, 0, 0, 0)",
+ "htmlBg": "rgba(0, 0, 0, 0)",
+ "bodyFont": "\"DM Sans\", sans-serif",
+ "paragraph": {
+  "size": 15,
+  "lh": "24px",
+  "color": "rgb(20, 20, 20)",
+  "family": "sans-serif",
+  "ls": "0.1px"
+ },
+ "nav": {
+  "box": {
+   "x": 0,
+   "y": 0,
+   "w": 1425,
+   "h": 109
+  },
+  "shell": {
+   "x": 0,
+   "y": 0,
+   "w": 1425,
+   "h": 109
+  },
+  "position": "sticky",
+  "bg": "oklab(0.999994 0.0000455678 0.0000200868 / 0.92)",
+  "backdrop": "blur(12px)",
+  "radius": "0px",
+  "borderB": "0px solid rgb(7, 21, 38)",
+  "border": "0px solid rgb(7, 21, 38)",
+  "shadow": "none",
+  "linkCount": 2,
+  "links": [
+   {
+    "t": "Log In",
+    "x": 1095,
+    "y": 50,
+    "w": 78,
+    "h": 48,
+    "size": 16,
+    "weight": "600",
+    "ls": "-0.48px",
+    "color": "rgb(13, 42, 76)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "3.35544e+07px",
+    "pad": "12px 18px"
+   },
+   {
+    "t": "Book a Demo",
+    "x": 1189,
+    "y": 50,
+    "w": 131,
+    "h": 48,
+    "size": 16,
+    "weight": "600",
+    "ls": "-0.48px",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(42, 141, 255)",
+    "radius": "3.35544e+07px",
+    "pad": "12px 18px"
+   }
+  ]
+ },
+ "navBottom": 109,
+ "head": {
+  "tag": "H1",
+  "text": "Send 5,000 1,000 cold emails per day, immediately.",
+  "chars": 50,
+  "x": 223,
+  "y": 239,
+  "w": 980,
+  "h": 151,
+  "lines": 3,
+  "family": "\"DM Sans\", \"DM Sans Fallback\"",
+  "size": 72,
+  "weight": "600",
+  "ls": "-4.32px",
+  "lsEm": -0.06,
+  "lh": 1.05,
+  "color": "rgb(13, 42, 76)",
+  "transform": "none",
+  "feat": "normal",
+  "num": "normal",
+  "opsz": "auto",
+  "var": "normal",
+  "align": "center",
+  "wrap": "balance",
+  "spanColors": [
+   "rgb(13, 42, 76)",
+   "rgb(42, 141, 255)"
+  ],
+  "bgClip": false,
+  "above": [
+   {
+    "t": "All in one Cold Email Platform for B2B Companies",
+    "x": 538,
+    "y": 189,
+    "w": 349,
+    "h": 34,
+    "size": 14,
+    "gapToH1": 16
+   }
+  ]
+ },
+ "sub": {
+  "text": "See how ListKit handles your entire cold email stack - leads, inboxes, warmup, scripting and sending.",
+  "chars": 101,
+  "x": 1026,
+  "y": 393,
+  "w": 358,
+  "h": 39,
+  "lines": 2,
+  "gapFromH1": 3,
+  "family": "\"DM Sans\", sans-serif",
+  "size": 14,
+  "weight": "400",
+  "ls": "normal",
+  "lsEm": 0,
+  "lh": 1.375,
+  "color": "lab(16.4419 -0.178665 -24.6205 / 0.6)",
+  "transform": "none",
+  "feat": "normal",
+  "num": "normal",
+  "opsz": "auto",
+  "var": "normal",
+  "align": "start",
+  "wrap": "wrap"
+ },
+ "heroBtns": [
+  {
+   "id": "mb2",
+   "inNav": false,
+   "text": "Book a Demo",
+   "x": 534,
+   "y": 563,
+   "w": 173,
+   "h": 56,
+   "boxed": true,
+   "radius": "3.35544e+07px",
+   "pad": "18px 32px",
+   "bg": "rgb(40, 141, 255)",
+   "bgImg": "none",
+   "border": "1px solid rgb(40, 141, 255)",
+   "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(40, 141, 255, 0.35) 0px 4px 12px -2px",
+   "color": "rgb(255, 255, 255)",
+   "size": 18,
+   "weight": "600",
+   "ls": "-0.54px",
+   "family": "\"DM Sans\", \"DM Sans Fallback\"",
+   "transform": "none",
+   "transition": "color 0.15s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.15s cubic-",
+   "hasIcon": false
+  },
+  {
+   "id": "mb3",
+   "inNav": false,
+   "text": "Explore Plans",
+   "x": 717,
+   "y": 563,
+   "w": 174,
+   "h": 56,
+   "boxed": true,
+   "radius": "3.35544e+07px",
+   "pad": "18px 32px",
+   "bg": "rgb(248, 249, 250)",
+   "bgImg": "none",
+   "border": "1px solid rgba(13, 42, 76, 0.03)",
+   "shadow": "none",
+   "color": "rgb(13, 42, 76)",
+   "size": 18,
+   "weight": "600",
+   "ls": "-0.54px",
+   "family": "\"DM Sans\", \"DM Sans Fallback\"",
+   "transform": "none",
+   "transition": "color 0.15s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.15s cubic-",
+   "hasIcon": false
+  },
+  {
+   "id": "mb6",
+   "inNav": false,
+   "text": "Thu 15",
+   "x": 1026,
+   "y": 506,
+   "w": 65,
+   "h": 68,
+   "boxed": true,
+   "radius": "10px",
+   "pad": "10px 0px",
+   "bg": "rgb(255, 255, 255)",
+   "bgImg": "none",
+   "border": "1px solid rgb(40, 141, 255)",
+   "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(40, 141, 255) 0px 0px 0px 1px inset",
+   "color": "rgb(13, 42, 76)",
+   "size": 16,
+   "weight": "400",
+   "ls": "normal",
+   "family": "\"DM Sans\", sans-serif",
+   "transform": "none",
+   "transition": "0.15s cubic-bezier(0.4, 0, 0.2, 1)",
+   "hasIcon": false
+  },
+  {
+   "id": "mb7",
+   "inNav": false,
+   "text": "Fri 16",
+   "x": 1099,
+   "y": 506,
+   "w": 65,
+   "h": 68,
+   "boxed": true,
+   "radius": "10px",
+   "pad": "10px 0px",
+   "bg": "rgb(255, 255, 255)",
+   "bgImg": "none",
+   "border": "1px solid rgba(13, 42, 76, 0.1)",
+   "shadow": "none",
+   "color": "rgb(13, 42, 76)",
+   "size": 16,
+   "weight": "400",
+   "ls": "normal",
+   "family": "\"DM Sans\", sans-serif",
+   "transform": "none",
+   "transition": "0.15s cubic-bezier(0.4, 0, 0.2, 1)",
+   "hasIcon": false
+  },
+  {
+   "id": "mb8",
+   "inNav": false,
+   "text": "Mon 19",
+   "x": 1172,
+   "y": 506,
+   "w": 65,
+   "h": 68,
+   "boxed": true,
+   "radius": "10px",
+   "pad": "10px 0px",
+   "bg": "rgb(255, 255, 255)",
+   "bgImg": "none",
+   "border": "1px solid rgba(13, 42, 76, 0.1)",
+   "shadow": "none",
+   "color": "rgb(13, 42, 76)",
+   "size": 16,
+   "weight": "400",
+   "ls": "normal",
+   "family": "\"DM Sans\", sans-serif",
+   "transform": "none",
+   "transition": "0.15s cubic-bezier(0.4, 0, 0.2, 1)",
+   "hasIcon": false
+  },
+  {
+   "id": "mb9",
+   "inNav": false,
+   "text": "Tue 20",
+   "x": 1246,
+   "y": 506,
+   "w": 65,
+   "h": 68,
+   "boxed": true,
+   "radius": "10px",
+   "pad": "10px 0px",
+   "bg": "rgb(255, 255, 255)",
+   "bgImg": "none",
+   "border": "1px solid rgba(13, 42, 76, 0.1)",
+   "shadow": "none",
+   "color": "rgb(13, 42, 76)",
+   "size": 16,
+   "weight": "400",
+   "ls": "normal",
+   "family": "\"DM Sans\", sans-serif",
+   "transform": "none",
+   "transition": "0.15s cubic-bezier(0.4, 0, 0.2, 1)",
+   "hasIcon": false
+  },
+  {
+   "id": "mb10",
+   "inNav": false,
+   "text": "Wed 21",
+   "x": 1319,
+   "y": 506,
+   "w": 65,
+   "h": 68,
+   "boxed": true,
+   "radius": "10px",
+   "pad": "10px 0px",
+   "bg": "rgb(255, 255, 255)",
+   "bgImg": "none",
+   "border": "1px solid rgba(13, 42, 76, 0.1)",
+   "shadow": "none",
+   "color": "rgb(13, 42, 76)",
+   "size": 16,
+   "weight": "400",
+   "ls": "normal",
+   "family": "\"DM Sans\", sans-serif",
+   "transform": "none",
+   "transition": "0.15s cubic-bezier(0.4, 0, 0.2, 1)",
+   "hasIcon": false
+  },
+  {
+   "id": "mb11",
+   "inNav": false,
+   "text": "Schedule a demo",
+   "x": 1026,
+   "y": 589,
+   "w": 358,
+   "h": 51,
+   "boxed": true,
+   "radius": "10px",
+   "pad": "14px 16px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgImg": "linear-gradient(in oklab, rgb(40, 141, 255) 0%, rgb(30, 106, 191) 100%)",
+   "border": "0px solid rgb(255, 255, 255)",
+   "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(42, 141, 255, 0.45) 0px 8px 20px -6px",
+   "color": "rgb(255, 255, 255)",
+   "size": 15,
+   "weight": "600",
+   "ls": "normal",
+   "family": "\"DM Sans\", sans-serif",
+   "transform": "none",
+   "transition": "all",
+   "hasIcon": false
+  },
+  {
+   "id": "mb12",
+   "inNav": false,
+   "text": "Send us an iMessage",
+   "x": 1026,
+   "y": 648,
+   "w": 358,
+   "h": 53,
+   "boxed": true,
+   "radius": "10px",
+   "pad": "14px 16px",
+   "bg": "rgb(255, 255, 255)",
+   "bgImg": "none",
+   "border": "1px solid rgba(13, 42, 76, 0.12)",
+   "shadow": "none",
+   "color": "rgb(13, 42, 76)",
+   "size": 15,
+   "weight": "600",
+   "ls": "normal",
+   "family": "\"DM Sans\", sans-serif",
+   "transform": "none",
+   "transition": "all",
+   "hasIcon": false
+  }
+ ],
+ "navBtns": [
+  {
+   "id": "mb1",
+   "inNav": true,
+   "text": "Book a Demo",
+   "x": 1189,
+   "y": 50,
+   "w": 131,
+   "h": 48,
+   "boxed": true,
+   "radius": "3.35544e+07px",
+   "pad": "12px 18px",
+   "bg": "rgb(42, 141, 255)",
+   "bgImg": "none",
+   "border": "0px solid rgb(255, 255, 255)",
+   "shadow": "none",
+   "color": "rgb(255, 255, 255)",
+   "size": 16,
+   "weight": "600",
+   "ls": "-0.48px",
+   "family": "\"DM Sans\", \"DM Sans Fallback\"",
+   "transform": "none",
+   "transition": "color 0.15s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.15s cubic-",
+   "hasIcon": false
+  }
+ ],
+ "allBtnCount": 13,
+ "media": 0,
+ "largestMedia": null,
+ "frames": [
+  {
+   "tag": "DIV",
+   "x": 1005,
+   "y": 282,
+   "w": 400,
+   "h": 466,
+   "radius": "16px",
+   "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(13, 42, 76, 0.25) 0px 24px 56px -16px, rgba(13, 42, 76, 0.0",
+   "border": "1px solid rgba(13, 42, 76, 0.06)",
+   "bg": "rgb(255, 255, 255)",
+   "pad": "20px 20px 16px"
+  }
+ ],
+ "fold": {
+  "textLeaves": 42,
+  "words": 185,
+  "interactive": 11,
+  "sizes": {
+   "13": 7,
+   "14": 14,
+   "15": 4,
+   "16": 7,
+   "17": 1,
+   "18": 2,
+   "20": 1,
+   "24": 3,
+   "72": 3
+  },
+  "weights": {
+   "400": 8,
+   "500": 11,
+   "600": 23
+  },
+  "colorCount": 9,
+  "colors": {
+   "rgb(43, 127, 255)": 1,
+   "rgb(13, 42, 76)": 22,
+   "rgb(42, 141, 255)": 4,
+   "rgba(13, 42, 76, 0.6)": 3,
+   "rgb(255, 255, 255)": 3,
+   "rgba(13, 42, 76, 0.55)": 1,
+   "lab(16.4419 -0.178665 -24.6205 / 0.55)": 1,
+   "lab(16.4419 -0.178665 -24.6205 / 0.5)": 1,
+   "lab(16.4419 -0.178665 -24.6205 / 0.6)": 6
+  }
+ },
+ "families": {
+  "DM Sans": 46
+ },
+ "fonts": [
+  "DM Sans 400",
+  "DM Sans 500",
+  "DM Sans 600",
+  "DM Sans 700",
+  "DM Sans Fallback normal"
+ ],
+ "radii": {
+  "3.35544e+07px": 10,
+  "4px": 1,
+  "16px": 1,
+  "10px": 8
+ },
+ "shadows": [
+  [
+   "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(40, 141, 255, 0.35) 0px 4px 12px -2px",
+   1
+  ],
+  [
+   "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(40, 141, 255, 0.18) 0px 4px 12px -2px",
+   1
+  ],
+  [
+   "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(13, 42, 76, 0.25) 0px 24px 56px -16px, rgba(13, 42, 76, 0.0",
+   1
+  ],
+  [
+   "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(40, 141, 255) 0px 0px 0px 1px inset",
+   1
+  ],
+  [
+   "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(42, 141, 255, 0.45) 0px 8px 20px -6px",
+   1
+  ],
+  [
+   "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(42, 141, 255, 0.55) 0px 10px 24px -6px",
+   1
+  ]
+ ],
+ "tabularEls": 15,
+ "sections": [
+  {
+   "tag": "SECTION",
+   "y": 109,
+   "h": 790,
+   "pt": "80px",
+   "pb": "80px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "DIV",
+   "y": 924,
+   "h": 2214,
+   "pt": "0px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 924,
+   "h": 2214,
+   "pt": "80px",
+   "pb": "48px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "DIV",
+   "y": 3138,
+   "h": 797,
+   "pt": "0px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 3138,
+   "h": 797,
+   "pt": "80px",
+   "pb": "80px",
+   "bg": "rgb(255, 255, 255)"
+  },
+  {
+   "tag": "DIV",
+   "y": 3935,
+   "h": 1026,
+   "pt": "0px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 3935,
+   "h": 1026,
+   "pt": "80px",
+   "pb": "80px",
+   "bg": "rgb(255, 255, 255)"
+  },
+  {
+   "tag": "DIV",
+   "y": 4961,
+   "h": 1457,
+   "pt": "0px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 4961,
+   "h": 1457,
+   "pt": "80px",
+   "pb": "80px",
+   "bg": "rgb(255, 255, 255)"
+  },
+  {
+   "tag": "DIV",
+   "y": 6419,
+   "h": 1620,
+   "pt": "0px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  }
+ ],
+ "hover": {
+  "before": [
+   "rgb(40, 141, 255) | none | none | rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px | rgb(255, 255, 255) | 1 | rgb(40, 141, 255)"
+  ],
+  "after": [
+   "rgb(30, 106, 191) | none | none | rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px | rgb(255, 255, 255) | 1 | rgb(30, 106, 191)"
+  ],
+  "changed": [
+   "rgb(30, 106, 191) | none | none | rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px | rgb(255, 255, 255) | 1 | rgb(30, 106, 191)"
+  ]
+ },
+ "press": [
+  "rgb(30, 106, 191) | none | none | rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px | rgb(255, 255, 255) | 1 | rgb(30, 106, 191)"
+ ],
+ "pixels": {
+  "modeColor": "rgb(248,248,248)",
+  "modeShare": 0.682,
+  "nearBgShare": 0.784,
+  "quietBlockShare": 0.675,
+  "saturatedShare": 0.0987
+ },
+ "url": "https://www.listkit.io/",
+ "slug": "listkit",
+ "captured": "2026-10-15T17:28:35.183Z"
+}

@@ -177,6 +177,52 @@ Book-wide note: this chapter is almost entirely qualitative. It gives **no pixel
   **Why** The book's "after" version of a login form removes name, mobile number and date of birth from a login (those belong in sign-up) and moves social options below a labelled divider.
   **Applies to** login. **Check** login form has at most the credentials fields. **Source** (p.398, p.417)
 
+### Audit additions (audit 2026-10-15)
+
+- **RULE** Put each label above its field, left-aligned flush with the field's left edge, and place it closer to its own field than to the field above: in the book's figures the label-to-field gap is about 11-15px and the field-to-next-label gap about 18px at page scale (roughly 1:1.3 to 1:1.6), i.e. about a quarter versus two fifths of the field height.
+  **Why** Proximity binds each label to the field it names; the "before" login (p.398) with labels to the left of short fields is the version the book replaces.
+  **Applies to** forms. **Check** label bottom-to-field top gap < field bottom-to-next-label gap; label x == field x. **Source** (p.393, p.398, p.403, p.404, p.417) (audit 2026-10-15)
+
+- **RULE** On a single-screen form, make the primary button the full width of the fields and about the same height (0.85-1.0x field height: about 49 vs 48px on p.393, 40 vs 45px on p.403, 39 vs 44px on p.413 at page scale), and open a larger gap above it than between fields (about 28-30px vs 18px, roughly 1.5x).
+  **Why** The book's improved forms all end in one full-width button aligned to the field column; the extra gap separates "answer" from "act". The "before" login (p.398) uses a small centred button instead.
+  **Applies to** forms. **Check** button width == field width; button height / field height 0.85-1.0; gap above button > inter-field gap. **Source** (p.391, p.393, p.398, p.403, p.413, p.417) (audit 2026-10-15)
+
+- **RULE** Place the validation icon inside the field at the trailing edge, vertically centred, about 0.4x field height (about 19-20px in a 45px field at page scale). Show invalid by turning the whole field fill pale red/pink plus a red circle-x; show valid by keeping the field's normal fill and adding a check in a dark brand-colour (navy) circle, not green.
+  **Why** The icon sits where the eye ends the entry, the fill change marks the whole field, and the symbol (not the colour) carries the meaning, per the book's no-colour-alone rule.
+  **Applies to** forms. **Check** icon right-aligned inside the input, vertical centre == input centre; invalid state changes background, not only border. **Source** (p.403, p.407, p.411, p.419) (audit 2026-10-15)
+
+- **RULE** Write the form-level error banner for the specific case: name the failing fields and the cause (the book's p.411 banner: "Please check ... your mail and mobile number are not registered to Pixsel.com"), shown as a red info-circle icon plus red text above the form title, with no box around it; mark every field it names as invalid.
+  **Why** The banner and the field markers must agree so the user can find and fix each problem; generic "one of fields is incorrect" (p.407) is the weaker variant.
+  **Applies to** forms. **Check** banner text references the same fields that carry invalid markers. **Source** (p.407, p.411, p.419) (audit 2026-10-15)
+
+- **RULE** Use the placeholder to state the expected value or requirement, not the label (the book's improved form puts "Strong Password" in the password field), and render placeholder/example text visibly lighter (grey) than an entered value (dark).
+  **Why** The user must tell "hint" from "my answer" at a glance; on p.413 the faded example e-mail is what tells you the field is still empty.
+  **Applies to** forms. **Check** placeholder colour lighter than value colour; placeholder text differs from the label. **Source** (p.413, p.415, p.421, p.423) (audit 2026-10-15)
+
+- **RULE** Give each multi-step screen a small "Step N" eyebrow above a question-style heading ("What's Your Name..?", "Fill The Personal Details"), with the progress indicator at the top of the card.
+  **Why** The heading asks the question, so the fields underneath read as one small group (the book's "questions in small groups" annotation).
+  **Applies to** multi-step forms, onboarding. **Check** visual: step indicator above heading above fields on every step. **Source** (p.400, p.403, p.404) (audit 2026-10-15)
+
+- **RULE** Draw step navigation in one of the book's two grammars: (a) a compact pair, equal widths (about 108x40px at page scale, about 19px apart), centred or right-aligned under the fields, outlined "< Previous" and filled "Next >" with chevrons pointing the travel direction; or (b) a full-width filled "Next >" with "< Previous" as a centred underlined accent-colour text link below it.
+  **Why** Chevrons make direction readable before the label; the filled/outlined (or button/link) contrast keeps the forward action dominant.
+  **Applies to** multi-step forms. **Check** Previous carries a left chevron, Next a right chevron; Previous never filled. **Source** (p.400, p.403, p.404) (audit 2026-10-15)
+
+- **RULE** For a stepper, put step labels ("Step 1".."Step 4") above evenly spaced circular nodes joined by a thin line across the form width; for a progress bar, use a thin full-width pill (about 7px at page scale) under the header, accent fill on a pale track of the same hue, growing each screen (about 35% on the first screen, about 62% on the next in the book's two-screen example).
+  **Why** The bar's fill answers "how much is left" without reading; even spacing makes steps feel equal-sized.
+  **Applies to** multi-step forms, checkout, onboarding. **Check** bar fill width increases monotonically per step; nodes evenly spaced. **Source** (p.400, p.403, p.404) (audit 2026-10-15)
+
+- **RULE** Separate topic groups inside one form with a full-width hairline divider and a small group heading that is larger than the field labels (book: "Choose Payment Type" | divider | "Fill Details" > "Card Number:", "Valid Date:", "CVV:", "Holder Name:").
+  **Why** The divider and heading turn a list of fields into two visible packs, which is the book's main tool against perceived complexity.
+  **Applies to** forms, checkout. **Check** visual; group headings outrank labels in size/weight; one divider between groups. **Source** (p.405, p.423, p.427) (audit 2026-10-15)
+
+- **RULE** Give typed fields their trailing affordance icon inside the field: calendar icon on date fields, chevron on selects (payment type, expiry, member count), card-network logo on the card number; a counter field can lead with a people icon.
+  **Why** The icon tells the user which control they are dealing with (pick vs type) before they touch it.
+  **Applies to** forms, booking, checkout. **Check** `select`/date inputs render a trailing icon. **Source** (p.396, p.397, p.405, p.423, p.427) (audit 2026-10-15)
+
+- **RULE** Make the primary button's label echo the screen's headline outcome and change it per step: "Create a New Account" heading > "Create New Account" button (was "Sign Up"); Airbnb's steps end in "Agree and continue", "Continue", "Request to Book".
+  **Why** The book's microcopy rule (state the user's purpose) applied per screen; the button is a reminder of what this click does.
+  **Applies to** forms, multi-step flows, checkout. **Check** button text on each step is a verb phrase matching that step. **Source** (p.393, p.431) (audit 2026-10-15)
+
 ## 3. Numbers & scales
 
 | Item | Value | Source |
@@ -186,7 +232,7 @@ Book-wide note: this chapter is almost entirely qualitative. It gives **no pixel
 | Terrifying field count | "20 field entries all jumbled together, in no particular order" | p.398 |
 | Book's sign-up reduction | 5 fields (name, email, contact number, designation, company) to 3 (name, email, designation) | p.393 |
 | Book's login reduction | 5 fields (name, Gmail name, mobile, date of birth, password) to 2 (email, password) | p.398, p.417 |
-| Step indicators shown | 4 steps (p.400); 3 steps (p.403); thin progress bars at roughly one quarter and roughly three fifths filled (p.404) | p.400, 403, 404 |
+| Step indicators shown | 4 steps (p.400); 3 steps (p.403); thin progress bars at about 35% (roughly one third) and about 62% (roughly three fifths) filled (p.404) | p.400, 403, 404 |
 | Date field split | 3 dropdowns: day, month, year (or one field + format placeholder) | p.426 |
 | Time to first impression | "within a second of the user opening the form" | p.423 |
 | Stepper node states | complete = filled dark circle + check; current = hollow ring; upcoming = filled muted circle; connector line between | p.400, 403 |
@@ -195,13 +241,32 @@ Book-wide note: this chapter is almost entirely qualitative. It gives **no pixel
 
 Colours seen in the book's mockups (approximate, from the images, not specified in text): primary buttons slate navy; accent/links periwinkle blue (~#7B8CFF); inputs either outlined with 1px-ish slate border and rounded corners or filled pale blue; invalid fields pale red tint; disabled button flat mid-grey. No pixel dimensions are given.
 
+Figure geometry measured from the page images (audit 2026-10-15). The text gives no sizes; these are measured at page-image scale (1056px-wide page), so use the **ratios**, not the px:
+
+| Item | Measured | Ratio / reading | Source |
+|---|---|---|---|
+| Outlined field (sign-up) | h ~48, w ~305, radius ~9, text inset ~18 | w:h ~6.3:1; radius ~0.19h; inset ~0.37h | p.393 (audit 2026-10-15) |
+| Filled field (stepper form) | h ~45, radius ~8, text inset ~27 | filled fields use a deeper inset than outlined | p.403 (audit 2026-10-15) |
+| Label to own field / field to next label | ~11 / ~18 (p.393); ~15 / ~18 (p.403); ~8-10 / ~12-14 (p.404) | label is always nearer its own field | p.393, 403, 404 (audit 2026-10-15) |
+| Field pitch (top to top) | ~89 | ~1.85x field height | p.393 (audit 2026-10-15) |
+| Primary button vs field height | 49/48 (p.393); 40/45 (p.403); 39/44 (p.413); 38/44 (p.415) | button 0.85-1.0x field height, full field width | p.393, 403, 413, 415 (audit 2026-10-15) |
+| Gap last field to primary button | ~30 (p.393); ~28 (p.403); ~27 (p.413) | ~1.5x the inter-field gap | p.393, 403, 413 (audit 2026-10-15) |
+| Validation icon | ~19-20 diameter, centre ~26 from field's right edge | ~0.43x field height, vertically centred | p.403, 407 (audit 2026-10-15) |
+| Step nav pair | each ~108x40, gap ~19; fields on same screen ~52 tall | nav buttons shorter (~0.75x) than fields | p.404 (audit 2026-10-15) |
+| Segmented First/Last name fields | h ~58; nav buttons h ~40; gap between halves ~28 | — | p.400 (audit 2026-10-15) |
+| Paired short fields (Valid Date + CVV) | two equal halves, gutter ~42 | 50/50 split | p.405 (audit 2026-10-15) |
+| Progress bar | ~7 tall pill, full card width; fill ~35% then ~62% | accent on same-hue pale track | p.404 (audit 2026-10-15) |
+| Stepper node | ~30 diameter circles, thin connector, labels above | 3-4 nodes evenly spaced | p.400, 403 (audit 2026-10-15) |
+| "Before" login (label-left) | fields ~30 tall, small centred button ~108 wide | the version the book rejects | p.398, 417 (audit 2026-10-15) |
+| Social login buttons (after) | ~26px outlined squares with brand glyph, 3 in a row, centred under "Or" hairline divider | — | p.398, 417 (audit 2026-10-15) |
+
 ## 4. Dos and Don'ts
 
 **Do (book's "Follow the right path", p.416-423)**
 1. Keep it short and sweet: leave out everything not absolutely necessary (p.416-417). Figure p.417 (Before/After): "Before" login has 5 label-left fields (name, email, mobile, DOB, password), centred small Login button, "Or" with text-only Google/Facebook/Apple, "Create a new account" link. "After" has email + password only, Remember me left and Forgot password right, full-width Login button, "Or" rule, three icon buttons, "Not a member? Register".
 2. Context is king: logical order, similar questions grouped (p.417-418).
 3. Validation is non-negotiable: tell users as soon as possible and say why (p.419). Figure p.419: banner error with red i icon at top of the card; e-mail and mobile fields red-tinted with red x icons; username field valid with check; full-width Next button.
-4. Add value to copy: specific labels and errors (p.420-422). Figure p.420: left = empty fields, black labels, grey disabled button; right = coloured labels, filled sample values, "Forgot password?", saturated blue button.
+4. Add value to copy: specific labels and errors (p.420-422). Figure p.421: left = empty fields, black labels, grey disabled button; right = coloured labels, filled sample values, "Forgot password?", saturated blue button.
 
 **Don't (book's "Things that can get you wrong", p.422-432)**
 1. Set the form up to fail: long/complicated-looking first impression (p.422-425). Figure p.423: left = login-style card, right = a checkout card that is short and clearly sectioned (payment type select, card number with VISA, validity select + CVV side by side, holder name, total + black Pay Now): "Notice how simple the checkout form is, you could check out in mere seconds."
@@ -215,6 +280,18 @@ Colours seen in the book's mockups (approximate, from the images, not specified 
 - Button state (p.413): Left: "Confirm" button flat grey, example e-mail in the field is faded (disabled/not yet filled). Right: field has real e-mail, button dark navy (enabled). Lesson: button state follows form completeness.
 - Label/Placeholder/Mask annotation (p.405): Label = "Choose Payment Type"; Placeholder = "Debit Card" inside a select; Mask = `XXXX XXXX XXXX 9870` with VISA mark at right; Valid date select + CVV in one row; Holder name below.
 - Booking widget A/B (p.396-397): version A is a horizontal bar docked under the hero (Location, Arrival, Leave, Members + black Book Now, offer card floating at right of hero image); version B is a vertical stack of the same four fields + Book Now in a frosted card at the left of the hero, offer strip moved to the bottom. The book only says the two copies differ "with only one difference" and gives no verdict.
+
+**Audit additions (audit 2026-10-15)**
+- Sign-up reduction, second change (p.393): besides cutting 2 fields, the "after" card changes the button from "Sign Up" to "Create New Account", matching its two-line heading "Create a New Account", and gives the shorter form more air (larger heading, fields start lower). Lesson: trimming fields and naming the outcome happen together. (audit 2026-10-15)
+- Login before/after geometry (p.398, p.417): "before" = labels left of the fields, short fields (~30px at page scale) packed ~14px apart, a small centred Login button, text-only Google/Facebook/Apple; "after" = labels above, taller fields, Remember me (left) and Forget password (right) on one row between the password field and a full-width Login, an "Or" with hairlines both sides, three outlined icon squares, "Your not a member? Register" with Register in the accent colour. What was wrong: label-left rows plus a small button read as a dense table with no clear end. (audit 2026-10-15)
+- Booking bar detail (p.396-397): even in the horizontal bar every field keeps its own label above it; date fields carry a trailing calendar icon; Members is a narrower select with a leading people icon and a trailing chevron; the black Book Now matches the field height and aligns with the field row. (audit 2026-10-15)
+- Multi-step nav, two variants on adjacent pages: p.403 full-width "Next >" with "< Previous" as a centred underlined accent link below; p.400 and p.404 compact equal-width "< Previous" (outline) + "Next >" (filled) pair. Both keep Previous visually weaker. (audit 2026-10-15)
+- Validation states side by side (p.403 vs p.407 vs p.411): p.403 shows icons only (fields stay pale blue, one red x); p.407 adds a pink fill on the invalid field, an annotation "This Mobile Number Invalid" and a generic red banner; p.411 has two invalid fields (pink + red x), one valid (blue + navy check), a banner that names both failing fields, and a helper line under the title ("Login And Enjoy the UI Book, Read Daily"). The p.411 version is the most complete. (audit 2026-10-15)
+- Enabled-vs-disabled (p.413): both cards are white on a grey panel; the disabled one has a grey example value in the outlined field and a flat mid-grey Confirm; the enabled one has the dark real value and a navy Confirm. Only the value colour and the button fill change; layout is identical. (audit 2026-10-15)
+- Vs pair (p.415, p.421): good side colours the heading and the field labels in the accent periwinkle, fills the e-mail with a value, puts "Strong Password" as the password placeholder, adds "Forget Password...?" right-aligned on the Remember-me row and makes the button a saturated accent; bad side has two empty outlined fields, black labels, no forgot-password link and a grey-blue Login. (audit 2026-10-15)
+- Omada Health contact form (p.425), readable on zoom: tabs with icons at the top choose the enquiry type (Sales Support / User Support / Something Else) before any field; labels sit right-aligned to the LEFT of the fields with an asterisk on required ones (Name*, Title*, Company*, Type*, Email*, Phone*; Message optional); Name is split into two inputs ("Jane" / "Doe" placeholders); Type is a 3-way segmented choice (Employer / Consultant / Health Plan); placeholders are realistic examples ("VP of HR Benefits", "Example Company", "jane@example.com", "(123) 456-7890"); a multi-line Message textarea; a pale "GET IN TOUCH" button right-aligned under the fields; contact details sit outside the card on the right. The book only cites the name split; the left-label layout here contradicts the book's own above-label figures and is not endorsed. (audit 2026-10-15)
+- Airbnb flow (p.431), readable on zoom: the breadcrumb "1. Review house rules > 2. Who's coming? > 3. Confirm and pay" sits top-centre with completed and current steps darker than upcoming ones; each step ends in one left-aligned primary with a step-specific label ("Agree and continue", "Continue", red "Request to Book"); the pay step uses a selected-card radio ("Pay in full", outlined and filled dot) vs "Pay less upfront", and a booking summary card on the right (listing, dates, guest count, price breakdown, Total). (audit 2026-10-15)
+- Checkout ending (p.423, p.427): the last row places "Total Amount: $..." on the left and a black content-width "Pay Now" on the right, so the price is read just before the action. (audit 2026-10-15)
 
 ## 5. Exceptions & judgement calls
 
@@ -250,6 +327,8 @@ Copied to `examples/ui-pedia/forms/`:
 - p.423: complex-looking card vs the short, well-sectioned checkout.
 - p.427: Spotify payment form with specific button microcopy.
 - p.431: Airbnb 3-step booking flow with step breadcrumb.
+- p.425: Omada Health contact form: enquiry-type tabs, asterisk-marked required fields, split name, segmented Type control, example placeholders (legible when zoomed). (audit 2026-10-15)
+- p.411: specific error banner that names the failing fields, two invalid + one valid field, helper line under the title, split image/form card. (audit 2026-10-15)
 
 ## 7. Open questions
 
@@ -265,6 +344,13 @@ Copied to `examples/ui-pedia/forms/`:
 - p.390: chapter title page with login mock-up (Hello...! Welcome; email, password, Remember me, Forget password, Login + Signup buttons, social icons); no rule content beyond intro. p.391: intro and a clean login form figure (title, email, password, Remember me / Forget password, full-width Login, "Not a member? Register"); no rule content.
 - p.392: definition of a form and key principles intro (short forms vs complex forms; designers have freedom but must keep usability criteria): background only, folded into section 1.
 - p.432: closing summary ("Points to be noted"); no rule content.
+
+- (audit 2026-10-15) corrected: section 3 progress-bar fill, was "roughly one quarter and roughly three fifths", page shows about 35% (one third) and about 62% (p.404).
+- (audit 2026-10-15) corrected: section 4 Do item 4 figure citation, was "Figure p.420", page shows the Vs figure on p.421 (p.420 is text only) (p.421).
+- (audit 2026-10-15) The earlier note that p.425 is illegible is too strong: zoomed, the Omada form's labels, placeholders, tabs and button are readable (captured in section 4). Its left-aligned labels with asterisks are a third-party screenshot, not book guidance.
+- (audit 2026-10-15) Two-column check: the Airbnb "Confirm and pay" step (p.431) puts a summary card beside the payment form. Together with the Valid Date/CVV and First/Last name pairs this supports the section 5 reading: no two parallel columns of questions, but a read-only summary or a short related pair beside the main column appears in the book's own figures.
+- (audit 2026-10-15) All figure geometry in section 3 is measured from the page images at 1056px page width (page scale, not CSS px); the book states no sizes. Use the ratios.
+- (audit 2026-10-15) Coverage: p.395 and p.430 are pull-quote pages; p.392, p.394, p.399, p.401, p.402, p.406, p.408, p.410, p.412, p.414, p.416, p.418, p.420, p.422, p.424, p.426, p.428, p.429 and p.432 are text-only (no figure); their text points were already in the note. p.390 and p.391 are intro pages whose login figures repeat the "after" login grammar (labels above, Remember me / Forget password row, full-width button on p.391; p.390 shows Login + Signup side by side, which the later figures drop).
 
 ### Page coverage map (390-432)
 390 intro/title; 391 intro + login figure; 392 definition, principles; 393 data gathering (+ figure); 394 data integrity, ambiguity; 395 pull quote; 396 conversion (+ booking bar); 397 A/B tests, perception of complexity, interaction cost intro (+ vertical variant); 398 perception of complexity (+ before/after); 399 abandonment, interaction cost; 400 interaction cost anatomy figure + list; 401 lowering interaction cost; 402 short and simple; 403 segmenting (+ figure); 404 logical order (+ figure); 405 order, labels etc. (+ annotated figure); 406 labels, placeholders, masks; 407 validation (+ figure); 408 inline validation, input controls; 409 checkboxes (+ figure); 410 autofill, errors; 411 actionable errors (+ figure); 412 non-colour alerts, buttons; 413 button considerations (+ figure); 414 micro-animation, enable state, microcopy; 415 microcopy, labels (+ figure); 416 do's: short; 417 do's: short (+ before/after), context; 418 context, order; 419 validation do (+ figure); 420 validation details, copy; 421 copy examples (+ figure); 422 error copy, don'ts: set up to fail; 423 first impression (+ figure); 424 perception of complexity fixes; 425 make data entry difficult (+ Omada); 426 split fields, two columns; 427 two columns, details (+ Spotify); 428 details list; 429 update user; 430 pull quote; 431 feedback, navigation (+ Airbnb flow); 432 closing.

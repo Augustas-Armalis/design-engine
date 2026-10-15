@@ -99,6 +99,30 @@ Business content with limited bearing on how an agent designs. Captured for comp
   **Why** Legal/tax exposure.
   **Applies to** human-only. **Check** n/a. **Source** (p.50, 56, 81)
 
+### Audit additions: page images (audit 2026-10-15)
+
+- **RULE** Start an agency offering the service you already supplied as a freelancer, then expand the offer as the business and team grow (a writer starts a content agency, a designer a web design or branding firm).
+  **Why** Transitioning into an agency built on talents you already have is "a simple but effective strategy" for deciding what to offer (p.63).
+  **Applies to** agency. **Check** n/a. **Source** (p.63) (audit 2026-10-15)
+
+- **RULE** Build a referral network with partner agencies before hiring in-house for adjacent services; pass work you could do in-house to someone who does it better.
+  **Why** Catapult Creative's early misstep, per creative director Daniel Rizer, was "employing in-house instead of creating a professional network"; partners bring new work, which employees have little motivation to do (p.64). Extends the existing referral rule.
+  **Applies to** agency. **Check** n/a. **Source** (p.64) (audit 2026-10-15)
+
+- **RULE** Decide the headquarters early (US company law is mostly state-level; a remote agency is governed by its home state), check names in the USPTO Trademark Electronic Search System and the state filing office, and outside the US study local law or ask a business attorney.
+  **Why** Location sets the governing law; trademark violation brings "significant legal fees and penalties"; the book notes its trademark and incorporation advice is US-only (p.69, p.74-75).
+  **Applies to** agency (human-only). **Check** n/a. **Source** (p.69, p.74-75) (audit 2026-10-15)
+
+- **RULE** Keep a new agency simple at first: you will not run at full capacity right away, so save money (the authors worked from a flat and met clients at the clients' offices before renting a studio).
+  **Why** "Make your Goals Attractive" (p.81).
+  **Applies to** agency. **Check** n/a. **Source** (p.81) (audit 2026-10-15)
+
+- **RULE** If talking about money makes you uncomfortable, ask other freelancers how they handle it and practise speaking (the book points to TED.com).
+  **Why** Money talk is "where several freelancers have the most difficulty" and is critical when something goes wrong mid-project (p.47, p.50, p.56).
+  **Applies to** human-only. **Check** n/a. **Source** (p.47, p.50, p.56) (audit 2026-10-15)
+
+Platform facts read from the page images (p.31-41), kept as data, no rules: Kimp pairs a client with a team of three designers specialised in print, illustration or digital, with full ownership of the work and up to three jobs at once (p.31-32); Fiverr was named after its original all-services-for-$5 offer (p.32); Upwork was founded under the name "Elance Desk" (as printed; [engine note] the real predecessor was Elance-oDesk) (p.33); ManyPixels costs a little more than Kimp and finishes fewer projects a month, but is "the place to go for online and mobile app design" (p.36); Onlinejobs.ph was founded in 2008 by John Jonas (p.37); Freelancer.com was founded in 2009 (p.38); DesignCrowd sits between low-cost design and high-ticket 99designs (p.40). Each platform page carries a homepage screenshot (decorative).
+
 ## 3. Numbers & scales
 
 | Item | Value | Source |
@@ -138,3 +162,4 @@ Business content with limited bearing on how an agent designs. Captured for comp
 - p.49 survey data are from 2014; stale for a 2026 engine.
 - p.38 and p.40 have page-number lines missing in text extraction (printed numbers 37/39 appear misplaced); no content lost.
 - Skipped as no rule content: p.6-8 (what freelancing is), p.30-42 platform marketing copy (summarised above), p.57 closing line, p.58-62 agency definitions, p.67-68 digital marketing demand pitch, p.79 collaboration remark.
+- (audit 2026-10-15, page images) Every page image of the book (p.1-120) has now been viewed: p.1-18, p.25-102 and p.115-120 in this pass, p.19-24 and p.103-114 in the earlier pass. New points from this pass are in the section 2 block "Audit additions: page images"; the book-wide list of pages viewed with no new content is in `knowledge/FREEBIES-COVERAGE-2026-10-15.md`.

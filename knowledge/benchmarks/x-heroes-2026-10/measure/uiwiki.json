@@ -1,0 +1,197 @@
+{
+ "title": "userinterface.wiki",
+ "vw": 1440,
+ "vh": 900,
+ "docH": 2098,
+ "bodyBg": "rgba(0, 0, 0, 0)",
+ "htmlBg": "rgb(249, 249, 249)",
+ "bodyFont": "Inter, \"Inter Fallback\"",
+ "paragraph": {
+  "size": 14,
+  "lh": "24px",
+  "color": "rgb(131, 131, 131)",
+  "family": "Inter, \"Inter Fallback\"",
+  "ls": "-0.087px"
+ },
+ "nav": {
+  "box": {
+   "x": 0,
+   "y": 0,
+   "w": 1440,
+   "h": 137
+  },
+  "shell": {
+   "x": 0,
+   "y": 0,
+   "w": 1440,
+   "h": 41
+  },
+  "position": "fixed",
+  "bg": "rgb(32, 32, 32)",
+  "backdrop": "none",
+  "radius": "0px",
+  "borderB": "1px solid rgba(0, 0, 0, 0.06)",
+  "border": "",
+  "shadow": "none",
+  "linkCount": 5,
+  "links": [
+   {
+    "t": "U",
+    "x": 424,
+    "y": 77,
+    "w": 12,
+    "h": 24,
+    "size": 16,
+    "weight": "700",
+    "ls": "-0.087px",
+    "color": "rgb(187, 187, 187)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "0px",
+    "pad": "0px"
+   },
+   {
+    "t": "Demos",
+    "x": 790,
+    "y": 77,
+    "w": 46,
+    "h": 24,
+    "size": 14,
+    "weight": "450",
+    "ls": "-0.087px",
+    "color": "rgb(187, 187, 187)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "0px",
+    "pad": "0px"
+   },
+   {
+    "t": "Skill",
+    "x": 845,
+    "y": 77,
+    "w": 27,
+    "h": 24,
+    "size": 14,
+    "weight": "450",
+    "ls": "-0.087px",
+    "color": "rgb(187, 187, 187)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "0px",
+    "pad": "0px"
+   },
+   {
+    "t": "Twitter",
+    "x": 879,
+    "y": 77,
+    "w": 45,
+    "h": 24,
+    "size": 14,
+    "weight": "450",
+    "ls": "-0.087px",
+    "color": "rgb(187, 187, 187)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "0px",
+    "pad": "0px"
+   },
+   {
+    "t": "Github",
+    "x": 933,
+    "y": 77,
+    "w": 43,
+    "h": 24,
+    "size": 14,
+    "weight": "450",
+    "ls": "-0.087px",
+    "color": "rgb(187, 187, 187)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "0px",
+    "pad": "0px"
+   }
+  ]
+ },
+ "navBottom": 137,
+ "head": {
+  "tag": "H1",
+  "text": "A Living Manual for Better Interfaces.",
+  "chars": 38,
+  "x": 424,
+  "y": 256,
+  "w": 414,
+  "h": 24,
+  "lines": 1,
+  "family": "Inter, \"Inter Fallback\"",
+  "size": 24,
+  "weight": "600",
+  "ls": "-0.47px",
+  "lsEm": -0.0196,
+  "lh": 1,
+  "color": "rgb(32, 32, 32)",
+  "transform": "none",
+  "feat": "\"calt\", \"ccmp\", \"kern\", \"locl\"",
+  "num": "normal",
+  "opsz": "auto",
+  "var": "normal",
+  "align": "start",
+  "wrap": "pretty",
+  "spanColors": [],
+  "bgClip": false,
+  "above": []
+ },
+ "sub": null,
+ "heroBtns": [],
+ "navBtns": [],
+ "allBtnCount": 5,
+ "media": 3,
+ "largestMedia": {
+  "tag": "svg",
+  "x": 424,
+  "y": 496,
+  "w": 40,
+  "h": 50
+ },
+ "frames": [],
+ "fold": {
+  "textLeaves": 12,
+  "words": 75,
+  "interactive": 0,
+  "sizes": {
+   "14": 8,
+   "16": 3,
+   "24": 1
+  },
+  "weights": {
+   "450": 8,
+   "550": 3,
+   "600": 1
+  },
+  "colorCount": 2,
+  "colors": {
+   "rgb(32, 32, 32)": 4,
+   "rgb(131, 131, 131)": 8
+  }
+ },
+ "families": {
+  "Inter": 17,
+  "newYork": 1
+ },
+ "fonts": [
+  "Inter 100 900",
+  "newYork normal"
+ ],
+ "radii": {
+  "8px": 1,
+  "6px": 2,
+  "100px": 3
+ },
+ "shadows": [],
+ "tabularEls": 9,
+ "sections": [],
+ "pixels": {
+  "modeColor": "rgb(248,248,248)",
+  "modeShare": 0.934,
+  "nearBgShare": 0.938,
+  "quietBlockShare": 0.9,
+  "saturatedShare": 0.0001
+ },
+ "url": "https://www.userinterface.wiki/",
+ "slug": "uiwiki",
+ "captured": "2026-10-15T17:27:53.414Z"
+}

@@ -20,7 +20,7 @@ PDF page = printed page + 1. All citations are PDF pages. Image files are `corpu
 6. Every icon set sits on a master grid with a container, padding, keylines (square, circle, portrait and landscape rectangle) and a consistent corner radius, so that icons of different shapes look the same size (p.183-186). The grid is a recommendation, not a restriction: optical balance beats the metric grid (p.187-189), and a grid should be reviewed and dropped or revised when it stops helping (p.187, p.193-194).
 7. Grids are not enough; pair them with written principles and technical rules (Phosphor example: Clarity, Brevity, Character; 48px canvas, 1.5px stroke, ...) (p.191-193).
 8. Seven principles of icon design: Clarity, Readability, Alignment, Brevity, Consistency, Personality, Ease of use (p.194-212).
-9. Test icons in their real context (real screen, real sizes, next to siblings, light and dark), not only in the design tool (p.190, p.212).
+9. Test icons in their real context (real screen, real sizes, next to siblings, on more than one background tint), not only in the design tool (p.190, p.212).
 10. Closing claim: poor icons make products harder to use, irritate users and reduce brand loyalty; good icons help users sort the noise and decide (p.214).
 
 ## 2. Rules
@@ -99,7 +99,7 @@ PDF page = printed page + 1. All citations are PDF pages. Image files are `corpu
   **Why** Context reveals clarity, readability and stylistic-fit problems that the artboard hides.
   **Applies to** all. **Check** a screenshot at real device size. **Source** (p.190)
 
-- **RULE** Use test sheets: place each new icon next to its sibling icons in various sizes and colours (light and dark backgrounds in the Phosphor sheets) and proof for clarity, readability and stylistic fit directly on a phone.
+- **RULE** Use test sheets: place each new icon next to its sibling icons in various sizes and colours (two tinted backgrounds, pink and slate-blue, in the Phosphor sheets) and proof for clarity, readability and stylistic fit directly on a phone.
   **Why** Side-by-side comparison exposes outliers in weight, size and detail.
   **Applies to** all. **Check** sheet exists per new icon; visual. **Source** (p.190, p.212)
 
@@ -182,10 +182,44 @@ PDF page = printed page + 1. All citations are PDF pages. Image files are `corpu
   **Applies to** all. **Check** repo has icon naming convention, master file, usage doc, export pipeline. **Source** (p.211)
 - **RULE** Organised: keep a clean master file, give assets meaningful names, store in a convenient location, pick the categorisation (alphabetical? by size? by type?).
   **Why** Findability. **Applies to** all. **Check** file/layer naming. **Source** (p.211)
-- **RULE** Tested: check icons work in context and at the proper sizes, and that they are in sync with the rest of the visual system; place icons close together to proof for clarity, readability, alignment, brevity, consistency and personality (arrow set figure p.212 shows 66 arrow/chevron/refresh icons side by side as a proofing sheet).
+- **RULE** Tested: check icons work in context and at the proper sizes, and that they are in sync with the rest of the visual system; place icons close together to proof for clarity, readability, alignment, brevity, consistency and personality (arrow set figure p.212 shows 65 arrow/chevron/refresh icons side by side as a proofing sheet).
   **Why** Proximity makes violations visible. **Applies to** all. **Check** visual proof sheet. **Source** (p.212)
 - **RULE** Custom tools: if resources allow, provide tooling that makes icons easy to find and export (Material's icon library lets you pick an icon and download different styles/themes, colours and sizes in your preferred file format).
   **Why** Lowers friction for designers and engineers. **Applies to** all. **Check** n/a. **Source** (p.213-214)
+
+### Audit additions (audit 2026-10-15)
+
+- **RULE** Before adopting an existing third-party icon set, audit it against the icon anatomy: one standard container, per-icon padding, keyshape sizes (square, circle, portrait, landscape) and one corner-radius style; reject or patch a set that fails.
+  **Why** The anatomy is as useful for judging the compatibility of a set you are considering as for drawing your own.
+  **Applies to** all. **Check** sample 20 icons from the set at one size: same viewBox, circle icons larger than square icons, consistent corners (visual + SVG bbox). **Source** (p.183) (audit 2026-10-15)
+
+- **RULE** Size keyshapes to equal area, not equal width: circle diameter about 1.11x the square side (90 vs 81 on a 154 canvas; 28 vs 25 on a 48 canvas) and the rectangle short side about 0.79x its long side (22 x 28 at 48); this ratio set ports to any canvas size.
+  **Why** The book states the Phosphor keyshapes are based on area calculations so that every silhouette reads equally large.
+  **Applies to** all (icon design). **Check** per icon class: circle-icon bbox / square-icon bbox ~1.1; rectangle-icon short/long side ~0.8. **Source** (p.186, p.192) (audit 2026-10-15)
+
+- **RULE** When an open or protruding glyph (the "G" with its crossbar) fills the circle keyshape edge to edge and looks big, scale it down by roughly 8-10%: in the Balanced figure the corrected "G" measures about 91% of the 90px keyshape that the closed Wi-Fi ring still fills (figure-measured, not stated in text).
+  **Why** "A little" is the size of the correction; closed rings and open letterforms carry different optical mass at the same metric size.
+  **Applies to** all (icon design). **Check** compare bbox of the corrected glyph to the keyshape: 0.88-0.94 for open forms that looked oversized. **Source** (p.188-189) (audit 2026-10-15)
+
+- **RULE** Optically centre a play triangle inside a circle by moving its centroid, not its bounding box, to the circle centre: in the corrected figure the triangle's bbox shifts right about 1/8 of the triangle width (about 3% of the circle diameter) and the triangle is also drawn about 18% smaller (44 vs 54 px tall in a 135px circle) (figure-measured, not stated in text).
+  **Why** A triangle's mass sits one third from its flat side, so a bbox-centred triangle reads left-heavy; the smaller triangle restores breathing room to the ring.
+  **Applies to** all. **Check** triangle centroid x (bbox left + width/3) within ~1% of circle centre x; triangle height ~0.33x circle diameter. **Source** (p.200-201) (audit 2026-10-15)
+
+- **RULE** In icon + label lists and menus, put every icon in a fixed-width slot so all labels share one left edge, whatever the glyph width (Telegram menu: icons 26-31 px wide, every label starts at the same x; same in the Apple and Amtrak lists) (figure-observed).
+  **Why** A ragged label edge makes the column look misaligned and slows scanning; the standard container from the anatomy section does this job.
+  **Applies to** SaaS app UI, mobile. **Check** `getBoundingClientRect().left` of each label in a menu/list is identical; icon wrappers share one width. **Source** (p.198, p.204, p.206) (audit 2026-10-15)
+
+- **RULE** Icon-to-label gap as shown in the book's figures: about 1.0-1.2x the icon width in list rows and menus (Amtrak gap 31 / icon 30; Telegram 31-37 / 28-30; Apple 31-35 / 15-27), about 0.65-0.8x in compact chips (Google Maps transit chips gap 18-21 / icon 23-29); the icon is about 2x the label's cap height (27-30 vs 13-14) (figure-measured in page-image px, ratios only; the text gives no number).
+  **Why** Rows have room to separate icon and label; chips pack icon and value as one unit.
+  **Applies to** SaaS app UI, mobile. **Check** computed `gap`/`margin` between icon and label / icon width: 1.0-1.2 in list rows, 0.65-0.8 in chips. **Source** (p.198, p.200, p.204, p.206) (audit 2026-10-15)
+
+- **RULE** Build each test sheet at three sizes (densities) and on two background tints, and place the new icon in two or three different neighbourhoods (among brand marks and among plain UI glyphs such as trash, toggle, plus, minus, close), marked with a ring so it can be found.
+  **Why** An icon can sit well next to one group and stand out next to another; one size or one neighbour hides the outlier.
+  **Applies to** all (icon design). **Check** proof sheet has 3 sizes x 2 tints and the candidate appears in >= 2 groups (visual). **Source** (p.190, p.213) (audit 2026-10-15)
+
+- **RULE** Prefer an icon family drawn as a companion to the UI typeface and offered in several weights and scales (SF Symbols: companion to San Francisco, 9 weights, 3 scales, fill and outline variants consistent), so icon weight can follow the text it sits beside.
+  **Why** A companion family is drawn to sit with the type; a single-weight set next to multi-weight text looks bolted on.
+  **Applies to** SaaS app UI, mobile. **Check** icon library exposes weight and size variants; the weight used beside 600-weight labels is heavier than beside 400-weight labels (visual). **Source** (p.207) (audit 2026-10-15)
 
 ## 3. Numbers & scales
 
@@ -234,6 +268,17 @@ Keyshape usage examples (p.186): circle = Daylio, New York Times; square = Linke
 ### SF Symbols (p.207)
 9 weights and three scales; fill and outline variants consistent.
 
+### Audit additions: numbers (audit 2026-10-15)
+
+- Keyshape ratios (derived from the book's numbers): circle / square = 90/81 = 1.11 (28/25 = 1.12); rectangle short / long = 22/28 = 0.79; at 48px the circle (pi x 14^2 = 616), square (625) and rectangle (616) have near-equal area, matching the book's "based on area calculations" (p.186, p.192) (audit 2026-10-15)
+- Live area inside the trim (derived): 154 - 2 x 18 = 118px (77% of canvas); 48 - 2 x 6 = 36px (75%); trim is about 12% of the canvas per side (p.186, p.192) (audit 2026-10-15)
+- Optical scale correction, figure-measured: "Not Balanced" G = 116 x 116 image px, same as the Wi-Fi ring (117 x 116); "Balanced" G = 106 x 107, i.e. ~91% of the keyshape; in the app tiles G drops from 35 to 31 px while Wi-Fi stays 34-35 (p.188-189) (audit 2026-10-15)
+- Play-icon optical alignment, figure-measured: bad = circle 134 px, triangle 37 x 54 px with bbox centre on circle centre (centroid 6 px left); good = circle 135 px, triangle 34 x 44 px, bbox centre 3.5 px right of circle centre (centroid within ~2 px of centre) (p.200-201) (audit 2026-10-15)
+- Icon + label spacing, figure-measured (page images are 1056 px wide; use ratios): Amtrak list icon 30, gap 31-33, row pitch ~65 (p.198); Transit pill icon 20-21, gap 26-29 (p.199); Google Maps chips icon 23-29, gap 18-21, value cap height 13 (p.200); Telegram menu icon 28-30, gap 31-37, label ascender height 14, row pitch 75 (p.204); Apple pre-iOS 13 list icon 15-28, gap 31-35, label column fixed (p.206) (audit 2026-10-15)
+- Test sheets: 6 panels = 3 sizes x 2 tints (pink, slate-blue) with the Curiosity icon ringed in blue at 2 positions per panel (p.190); second sheet 3 sizes, candidate at 3 positions incl. a UI-utility group (p.213) (audit 2026-10-15)
+- Proof sheet p.212: 65 arrow/chevron/refresh icons, 11 per row x 6 rows (last row 10), each direction drawn bare, in a circle and in a rounded square (audit 2026-10-15)
+- Pre-iOS 13 Apple set p.206: 21 icons (7 rows x 3); SF Symbols figure p.207: 28 tiles (4 x 7) in outline/fill pairs (audit 2026-10-15)
+
 ### History numbers (p.175-177; background, no design rule)
 Pictographs/ideographs about 100,000 years ago; Chinese writing around 6000 B.C.; Egyptian hieroglyphics around 3000 B.C.; cuneiform about 1900 B.C.; Chinese vocabulary about 50,000 characters around 1500 B.C.; Phoenician 22-sign alphabet 1000 B.C.; Greeks adopted it 800-600 B.C.; Romans 23-character alphabet around 400 B.C.; Marcus (1984) icon classification; Susan Kare designed Apple's command-key icon in 1984.
 
@@ -250,7 +295,9 @@ Pictographs/ideographs about 100,000 years ago; Chinese writing around 6000 B.C.
 | Icon + visible label when icon is unique (logo of Mailchimp, Sketch, Snapchat) (p.181) | Unique icon with no label | First-timers cannot decode it |
 | Lighter/heavier visual weight comparisons controlled (heart: 75% size, lighter stroke, original, filled, rounder) (p.206) | Mixing those variations within one set | Weight depends on fill, stroke, size, shape |
 | Car dashboard "clear to hazy" ordering: clear = seat-belt reminder; hazy = electric power steering (steering wheel in a circle) per the book's opinion (p.195-196) | Symbols built on unexpected metaphors | Hazy symbols need a guidebook |
-
+| One glyph per concept inside a set (audit 2026-10-15) | Pre-iOS 13 Apple set (p.206) uses two different glyphs for "Location" (thin pushpin in column 3, filled map pin in column 2), a download arrow for "Invitation", and both a star ("Favourite") and a heart ("Love") (audit 2026-10-15) | Duplicate or mismatched metaphors inside one family break consistency and clarity at once (audit 2026-10-15) |
+| Labelled or expected-metaphor nav icons (the book shows no fixed version) (audit 2026-10-15) | VSCO bottom nav (p.196): five unlabelled filled glyphs, doc lines = Feed, globe = Discover, smiling camera = Studio, head silhouette = Profile, people under a roof = Members (audit 2026-10-15) | Readers cannot decode them; acceptable only because a few taps reveal the meaning (low cost of confusion) (audit 2026-10-15) |
+| Station icon simplified so it survives at list size (book shows only the bad case) (audit 2026-10-15) | Amtrak "Station" list icon (p.198, first row): a building with many fine windows and lines at ~30 px beside "Train Number" and "03 Dec / Monday" rows (audit 2026-10-15) | Fine interior detail turns to noise at UI size (audit 2026-10-15) |
 ## 5. Exceptions & judgement calls
 
 - Glyph vs outlined vs duotone vs colored is taste, balanced against size: the book gives qualitative trade-offs only (no pixel thresholds). (opinion)
@@ -261,6 +308,9 @@ Pictographs/ideographs about 100,000 years ago; Chinese writing around 6000 B.C.
 - The clarity ordering of car symbols is explicitly "in my opinion" (p.195).
 - Cost-of-confusion framing (p.196): low in a navigation row where a couple of taps reveal the meaning, high in driving; the book does not say nav icons can skip labels, only that VSCO's cost is minimal. Do not generalise to "icon-only nav is fine".
 - [engine note] Common practice (not in this book): pair icon-only buttons with accessible names/tooltips; stroke width should match adjacent text weight; icons sit on the same optical size as the text cap height. Kept out of the rules above because the book does not state them.
+- The Phosphor author (quoted p.191) treats grids as "more of a background reference" while principles and guidelines stay top of mind: for a seasoned designer the written principles outrank the grid; for a new set the grid still comes first (audit 2026-10-15)
+- Figure-measured numbers (optical G correction, play-triangle shift, icon-label gaps) are measurements of the book's illustrations in page-image pixels, not values the author states; use the ratios as defaults and override freely (audit 2026-10-15)
+- [engine note] SF Symbols' 9 weights correspond to the 9 weights of the San Francisco typeface (Ultralight to Black), which is why the book can call it a "companion"; matching icon weight to the adjacent label weight is engine knowledge, not stated on p.207 (audit 2026-10-15)
 
 ## 6. Figures worth keeping
 
@@ -278,16 +328,24 @@ Copied to `examples/ui-pedia/icons/` (file name = PDF page).
 - p.187: grid evolution 116x116 -> 154x154 -> 154x154 with trim area; start of Optics > Grids.
 - p.188: Not Balanced: "G" at full 90px circle keyshape in a 4x3 sheet of coin/brand icons.
 - p.189: Balanced: the same "G" scaled slightly down, sheet now even.
-- p.190: test sheets: six pale pink/slate panels showing the Curiosity icon beside siblings at several sizes on light/dark.
+- p.190: test sheets: six pale pink/slate panels showing the Curiosity icon beside siblings at several sizes on pink and slate-blue tints.
 - p.195: car dashboard symbol flurry and a Clear <-> Hazy scale of eight warning icons.
 - p.196: VSCO nav icons (Feed, Discover, Studio, Profile, Members): perplexing metaphors.
 - p.199: Transit-app clipboard: blob (bad) vs adjusted gap (good).
 - p.200: Google Maps transit mode icons (readable small) and play-icon bad alignment case.
 - p.201: optical alignment: "i"/"j" dots, "O" overshoot, corrected play icon.
-- p.206: pre-iOS 13 Apple set (20 labelled icons) and the heart visual-weight ladder.
+- p.206: pre-iOS 13 Apple set (21 labelled icons) and the heart visual-weight ladder.
 - p.207: SF Symbols grid (Command, Option, Alt, Delete, Shift, Capslock, Power, Globe, Sun, Keyboard, Eject, Control...) in fill/outline pairs.
 
-Not copied (still instructive, text covers them): p.194 (principles diagram on three sample icons), p.198 (Amtrak Station/Train Number/date rows, fine-detail icons), p.203 (detailed sailboat vs simple ship), p.204 (Telegram menu, Yelp cuisine icons), p.205 (Safari/Netflix/Firefox app icons), p.208-210 (personality collections), p.212 (66-icon arrow proofing sheet).
+Audit additions (audit 2026-10-15):
+- p.175: chapter opener panel of 15 outline UI icons where the one active icon sits in a filled brand-violet rounded-square tile with a white glyph and a soft coloured glow; a selected-state convention the book shows but does not discuss (audit 2026-10-15)
+- p.188-189: both test icons also shown inside dark navy rounded-square app tiles in the 4 x 3 sheet, so the optical check is done in the tile at small size, not only on the big grid (audit 2026-10-15)
+- p.194: principles diagram: a dashed horizontal "Alignment" line runs through three sample icons' optical centres, "Brevity" shows a crossed-out more detailed version of the first icon, "Readability" points at a gap inside the third icon, "Personality" points at a single unique detail (a dot) (audit 2026-10-15)
+- p.200: Google Maps transit chips on a slate bar; the selected mode (car) is a chip with a tinted fill and a 1px light-blue ring around icon + value, unselected modes have no container (audit 2026-10-15)
+- p.212: the arrow family draws each direction three ways, bare, in a circle and in a rounded square, with one stroke weight and one corner style across all enclosures (audit 2026-10-15)
+- p.213: second Phosphor test sheet, 3 sizes on pink, candidate ringed in blue among brand marks and among UI-utility glyphs (trash, toggle, plus, minus, close, send) (audit 2026-10-15)
+
+Not copied (still instructive, text covers them): p.194 (principles diagram on three sample icons), p.198 (Amtrak Station/Train Number/date rows, fine-detail icons), p.203 (detailed sailboat vs simple ship), p.204 (Telegram menu, Yelp cuisine icons), p.205 (Safari/Netflix/Firefox app icons), p.208-210 (personality collections), p.212 (65-icon arrow proofing sheet).
 
 ## 7. Open questions
 
@@ -301,3 +359,12 @@ Not copied (still instructive, text covers them): p.194 (principles diagram on t
 - No numeric icon sizes for UI use (16/20/24/32px), no touch-target size and no icon-to-text spacing rules appear in this chapter. Those belong elsewhere or to engine notes.
 
 Page coverage (all 40 pages accounted for): 175 intro; 176 history (no rule content); 177 types preface; 178 glyph/colored; 179 colored/duotone; 180 duotone/outlined/universal; 181 universal/unique; 182 unique/conflicting; 183 conflicting/anatomy; 184 container/grid/padding; 185 keylines/radius; 186 Phosphor grid; 187 grid evolution/optics; 188 not balanced; 189 balanced/testing; 190 test sheets; 191-193 principles and technical rules; 194 principles intro/clarity; 195-197 clarity; 198 clarity/readability; 199-200 readability/alignment; 201-202 alignment/brevity; 203-205 brevity/consistency; 206-208 consistency/personality; 209-211 personality/ease of use; 212 tested/custom tools; 213 custom tools; 214 conclusion.
+
+Audit 2026-10-15:
+- (audit 2026-10-15) corrected: test-sheet backgrounds, was "light and dark backgrounds" (rule, core idea 9, figure list), page shows two light tinted backgrounds, pink and slate-blue, no dark background (p.190, p.213)
+- (audit 2026-10-15) corrected: arrow proofing sheet count, was 66 icons, page shows 65 (11 per row x 5 rows + 10) (p.212)
+- (audit 2026-10-15) corrected: pre-iOS 13 Apple set, was "20 labelled icons", page shows 21 (7 x 3); "Location" appears twice with two different glyphs (p.206)
+- The "no icon-to-text spacing" line above stays true for the text; the icon-label gaps now in sections 2-3 are measured from figures (p.198, p.200, p.204, p.206) and labelled as such (audit 2026-10-15)
+- p.196 says the electric-power-steering light is "substantially brighter"; in context (Clear <-> Hazy scale) it almost certainly means hazier/less clear. Treat as a wording slip (audit 2026-10-15)
+- p.201 "overshoot on O": at page-image resolution the O and H measure the same height (710-814 px); the overshoot is only indicated by red highlights, so no overshoot ratio can be taken from this figure (audit 2026-10-15)
+- Coverage: no rule content on p.176 (history dates), p.177 (Marcus reference, transition), p.202 upper half (Heinlein brevity analogy, illustrative only), p.209-210 (personality image collections: emoji, Freemojis, Android abstract/pixel/bubbly/neon packs; decorative examples of the adjectives), p.214 (conclusion: icons help sort noise, poor icons cost brand loyalty) (audit 2026-10-15)

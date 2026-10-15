@@ -84,6 +84,20 @@ Proximity is the Gestalt grouping principle: things that sit close together are 
   **Why** Groups cut scanning cost.
   **Applies to** all. **Check** visual squint test: with text blurred or replaced by bars, the groups should still be countable (p.133 right panel). **Source** (p.133, p.140)
 
+### Audit additions (audit 2026-10-15)
+
+- **RULE** Make the gap that separates groups clearly multiple, not marginal: in the book's own figures the between-group edge gap is about 2.5x the within-group gap in the form (about 49px vs 19px), about 3x in the dot grid (about 64px vs 22px, roughly one dot diameter) and about 7x in the header (about 145px between "About Us" and Search vs 18-20px between nav items). Aim for at least about 2.5x between sibling groups.
+  **Why** The book never states a ratio, but every example that "reads as two groups" uses a gap at least 2.5 times the inner gap; a 1.2-1.5x step is easy to miss when scanning.
+  **Applies to** all (nav rows, forms, card grids, button bars). **Check** for sibling groups, min(inter-group edge gap) / max(intra-group edge gap) >= 2.5. **Source** (p.130, p.131, p.134 figures, measured) (audit 2026-10-15)
+
+- **RULE** Let spacing, not shape or colour, define group membership: items of different kinds may share a group as long as they sit at the group's inner spacing, and identical items will split into two groups if one gap is widened.
+  **Why** The book states the two dot groups "remain distinct even when different forms are included within each category"; proximity overrides similarity of shape.
+  **Applies to** all (toolbars mixing icon and text buttons, filter rows, card grids). **Check** mixed-type groups use one inner gap value; group boundaries coincide with the larger gaps, not with changes of component type. **Source** (p.130-131) (audit 2026-10-15)
+
+- **RULE** In text, step the gaps in a fixed order: line gap < heading-to-its-paragraph gap <= paragraph-to-paragraph gap < space above the next heading. The book's bar figure measures about 10px between lines, about 20px under a heading, about 26px between paragraphs (one empty line: line pitch 17px -> 34px across the break) and about 31px above the next heading (about 1.5x the space under it).
+  **Why** Each step up in gap marks a bigger unit (line, paragraph, section), which is why the groups stay readable with the text replaced by bars.
+  **Applies to** all text, docs, settings descriptions, marketing sections. **Check** computed margins: heading `margin-top` >= 1.5 x heading `margin-bottom`; paragraph gap >= one line-height. **Source** (p.133 figure, measured) (audit 2026-10-15)
+
 ## 3. Numbers & scales
 
 The chapter has no pixel values, line-heights or ratios. Only counts that matter:
@@ -95,6 +109,12 @@ The chapter has no pixel values, line-heights or ratios. Only counts that matter
 | Form figure | left: 12 label+input rows evenly spaced with heading above; right: 4 rows, bigger gap, 4 rows, bigger gap, 4 rows (the gap between groups is roughly 2x the gap between rows in the drawing; derived) | p.134 |
 | Gestalt principles named | proximity, similarity, closure, common region | p.129 |
 | Responsive nav states | desktop: Search same line as nav with big gap; smaller screens: Search moved up | p.131-132 |
+| Dot grid gaps, measured | dot diameter about 65px; gap within a group about 22px; gap between groups about 64px (about 3x, about one diameter) | p.130 image (audit 2026-10-15) |
+| Header nav gaps, measured | gap between nav items about 18-20px; gap from last item ("About Us") to the Search field about 145px (about 7x); in the field, "Search" placeholder at the left end and the round purple icon button at the right end, about 160px apart (the label/icon split the book criticises) | p.131 image (audit 2026-10-15) |
+| Form chunking, measured | field height about 20px; row pitch about 39px (edge gap about 19px) inside a group; pitch about 69px (edge gap about 49px) across a group break, about 2.5x the inner gap. Labels in the figure sit to the left of the fields, not above | p.134 image (audit 2026-10-15) |
+| Text grouping, measured (bar panel) | gap between lines about 10px (pitch 17px); heading -> first line about 20px; paragraph -> paragraph about 26px (pitch 34px, one empty line); last line -> next heading about 31px | p.133 image (audit 2026-10-15) |
+| Kayak distance | "Skip" at the top-left at about 4% of screen height; "Sign in with Apple" at about 74%; about 70% of the screen height apart, in the opposite corner region | p.137 image, measured (audit 2026-10-15) |
+| TfL mobile stacking | Ultra Low Emission Zone is the 1st list item; Low Emission Zone appears 7th, after 5 unrelated items (Direct Vision Standard, Rotherhithe Tunnel, Hammersmith Bridge, Red routes, Major works) | p.139 image (audit 2026-10-15) |
 
 ## 4. Dos and Don'ts
 
@@ -107,6 +127,10 @@ The chapter has no pixel values, line-heights or ratios. Only counts that matter
 - **Kayak (p.137):** dark mobile screen; tiny "Skip" text in top-left, logo, orange globe, headline "Sign in to track prices...", white "Sign in with Apple" button, "View other sign in options" below. Skip is far from the CTAs.
 - **Hulu on Apple TV (p.138):** menu at top, show info (Homeland, "Watch next episode", S6 E3 summary) at left, large photo at right; "Click: Select" and "Click and hold: Details" hints tiny in the lower right over the photo.
 - **Transport for London (p.139):** desktop two-column; ULEZ and LEZ links side by side; mobile shows one narrow column with ULEZ near the top and LEZ much further down after other links.
+- **EDD buttons, styling detail (p.135):** all five buttons share one treatment (same slate fill, white bold label, same height), and the four on the right touch with only a few px between them, so similarity and proximity together fuse Next | Add | Save as Draft | Cancel into one "navigation" group. The instruction "Please click the Add button..." sits several rows above, and the empty "No Results Found" list the Add button populates sits between them. Fix implied by the book: take Add out of the footer bar and attach it to the employer list; pair Previous with Next. (audit 2026-10-15)
+- **Desktop header utility links (p.131):** the four utility links (Service A-Z, Do it online, Contact us/Fix it, Maps) are set in small type stacked in the top-right of the dark brand band, separate in both band and size from the primary nav row below, so they read as a different group without any divider. (audit 2026-10-15)
+- **Hulu hints, detail (p.138):** the two hints are tiny uppercase labels each preceded by a small round remote-button glyph, set at the bottom-right edge over the busy photo, in the opposite corner from the show title and "Watch next episode" block at top-left. (audit 2026-10-15)
+- **TfL desktop (p.139):** ULEZ and LEZ are adjacent, equal-size image tiles in one row directly under the hero tile, i.e. drawn as a comparable pair; on mobile the single column puts five other links between them. (audit 2026-10-15)
 
 ## 5. Exceptions & judgement calls
 
@@ -139,3 +163,5 @@ Copied to examples/ui-pedia/proximity/.
 - p.133 OCR: the figure's embedded text (headings "Brightness", "Contrast" and lorem-like sentences about colour variation) is an irrelevant sample; no rule content.
 - Coverage: all pages p.129-140 read. p.129 (title, definition, Gestalt history), p.136 (tunnel vision text), p.140 (closing note) have rule content only as summarised above; p.140 is the "Point to Be Noted" summary with no new rule.
 - No numeric spacing values anywhere in this chapter.
+- (audit 2026-10-15) Coverage re-check: all 12 page images p.129-140 viewed. "No numeric spacing values" is true of the text only: the figures on p.130, p.131, p.133 and p.134 carry measurable gap ratios (2.5x to 7x), now in section 3 and the audit rules, labelled measured. Pages with no new rule content: p.129 (title, Gestalt history, bracketed header/list/card-row illustration), p.136 (tunnel-vision text, covered), p.140 (summary).
+- (audit 2026-10-15) The existing engine heuristic in section 5 (inter-group gap about 1.5-2x intra) is lower than every ratio the book's figures actually use (2.5x form, 3x dots, 7x header); prefer the measured floor of about 2.5x.

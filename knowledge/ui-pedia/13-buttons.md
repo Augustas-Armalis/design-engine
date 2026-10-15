@@ -129,7 +129,7 @@ All page numbers are PDF pages (printed page = PDF page - 1). The book's example
 ### Shape, radius, padding
 - **RULE** Default shape: rectangle with rounded corners; users recognise it immediately and it complements the input field.
   **Why** Studies cited: rounded corners boost data processing, and the element's centre attracts attention. **Applies to** all. **Check** visual. **Source** (p.291, 317)
-- **RULE** If using unusual button shapes (circle, parallelogram/skewed, one-corner-cut rectangle shown in the p.317 figure), usability-test them and keep UI controls consistent so users can still distinguish buttons.
+- **RULE** If using unusual button shapes (circle, parallelogram/skewed, rectangle with only two diagonally opposite corners rounded (top-right and bottom-left) shown in the p.317 figure), usability-test them and keep UI controls consistent so users can still distinguish buttons.
   **Why** Unusual shapes risk non-recognition. **Applies to** all. **Check** n/a. **Source** (p.317)
 - **RULE** Choose corner radius to match the brand and the other on-screen objects. Sharp corners fit brands with similar shapes in logo and elements; slightly rounded corners are likely the most popular and most user-friendly; larger radius makes it harder to align text above and below the button; pill (max radius) works well for CTAs.
   **Why** Mixed radii without intent break consistency and readability, and "margin imbalances" appear if the same radius is applied to everything blindly.
@@ -180,6 +180,83 @@ All page numbers are PDF pages (printed page = PDF page - 1). The book's example
 - **RULE** Placement: use common UI patterns and traditional layouts; standard placement improves discoverability, and works even for a button with few visual cues. Combine with ample whitespace and clean visual design.
   **Why** Learned conventions. **Applies to** all. **Check** primary action in conventional position (e.g. bottom-right of dialogs/forms). **Source** (p.318)
 
+### Audit additions (audit 2026-10-15)
+- **RULE** Measure vertical padding to the glyphs, not the line box: top padding runs from the button's top edge to the label's cap height, bottom padding from the baseline to the bottom edge, and the two are equal. When an icon leads the label, the left padding is measured to the icon (icon + label form one content block) and left padding = right padding.
+  **Why** The anatomy figure draws top/bottom padding brackets ending at cap height and baseline, and the left bracket ending at the download icon; this is what makes the label look optically centred rather than line-box centred.
+  **Applies to** all. **Check** render the button, measure cap-top-to-top-edge vs baseline-to-bottom-edge (equal within 1px); with a leading icon, edge-to-icon = label-end-to-edge. **Source** (p.286, p.323) (audit 2026-10-15)
+
+- **RULE** Put the icon before the label in icon + label buttons (Download, Edit, Send, Accept/Reject, Add To Cart, Delete, Share are all icon-left in this chapter), with the icon-to-label gap clearly smaller than the side padding so icon and label read as one unit.
+  **Why** Every icon + label button in the chapter's figures uses a leading icon; in the p.286 anatomy the gap is visibly a fraction of the side padding (book gives no number).
+  **Applies to** all. **Check** icon precedes label in DOM order and visually; `gap` < `padding-inline`. **Source** (p.286, p.292, p.294, p.298, p.314-315) (audit 2026-10-15)
+
+- **RULE** Specify every button through six build properties, chosen from the brand book: corner radius; font family, colour, weight and style; safe area (margin); fill style (solid colour or gradient); inner margin (padding); shadow.
+  **Why** The "Building a Button" anatomy labels exactly these six; a button spec missing one leaves it to chance and drifts across screens.
+  **Applies to** all. **Check** the button token set defines radius, font tuple, padding, margin/gap, fill and shadow for each variant. **Source** (p.322) (audit 2026-10-15)
+
+- **RULE** Draw a safe area (margin) around each button as its own zone that follows the button's shape (the figure shows it as a lighter rounded rectangle concentric with the button), and size it from the grid base numbers like the padding.
+  **Why** The safe area is part of the button, not leftover page space; it reserves the clearance that keeps neighbours from crowding or overlapping it.
+  **Applies to** all. **Check** spacing tokens: button margin/gap is a grid multiple; neighbouring buttons' safe areas do not overlap. **Source** (p.322, p.324) (audit 2026-10-15)
+
+- **RULE** Hover = the same hue made darker and deeper (violet to deep indigo in the figure) with size and label kept (the figure also deepens the drop shadow); Disabled = the whole button paled (light lavender fill, label also faded to low contrast) and the coloured drop shadow removed; Progressing keeps the normal look.
+  **Why** Each state changes one visual property family so the component stays recognisable (p.290 text) while still being distinguishable.
+  **Applies to** all. **Check** `:hover` changes background lightness of the same hue only; `:disabled` lowers fill and label contrast and sets `box-shadow: none`; no width/height change between states. **Source** (p.290) (audit 2026-10-15)
+
+- **RULE** Keep every variant in one action group at the same height: filled, outlined and text-with-icon versions share one height; widths may hug their labels (Cancel wider than Ok, Don't Allow wider than Allow), but in style sheets the variants are drawn at identical size so only fill and border carry the hierarchy.
+  **Why** In p.292 the icon + contained, contained and outlined buttons are the same box; in p.293 primary and secondary are the same box; in p.300-301 dialog pairs share a height but hug their labels. Hierarchy comes from fill, not from size within a group.
+  **Applies to** all. **Check** buttons sharing a row: equal computed `height`; filled vs outlined differ only in background/border. **Source** (p.292-293, p.300-301, p.315, p.327-328) (audit 2026-10-15)
+
+- **RULE** Group the secondary and primary actions together at one edge and push the tertiary or destructive action to the opposite edge: composer = red-text "Delete" alone at the far left, "Save Draft" (outlined) + "Send" (filled) together at the right; dialog = text link "Learn More" at the left, "Don't Allow" + "Allow" at the right.
+  **Why** Physical separation keeps a low-importance or destructive action from being hit while aiming for the primary.
+  **Applies to** dialogs, forms, SaaS app UI. **Check** destructive/tertiary button is not adjacent to the primary; secondary + primary share a container with a small gap. **Source** (p.293, p.300) (audit 2026-10-15)
+
+- **RULE** In a stacked form card (login), make the primary a full-width filled button and put the tertiary "Cancel" as centred brand-coloured text below it.
+  **Why** The figure's login form uses this pattern in both the bad and good versions; full width makes the one primary unmistakable and the text Cancel cannot compete.
+  **Applies to** forms, mobile. **Check** primary width = field width; Cancel has no fill/border. **Source** (p.302) (audit 2026-10-15)
+
+- **RULE** When two text buttons sit together, mark the main one with the accent colour and leave the other in neutral dark text (figure: "ADD TO CART" dark, "BUY BOOK" accent blue, both uppercase, right-aligned under the dialog text).
+  **Why** Without containers, colour is the only hierarchy cue left between text buttons.
+  **Applies to** all. **Check** paired text buttons: exactly one uses the accent colour. **Source** (p.305) (audit 2026-10-15)
+
+- **RULE** Make links look like links: underlined accent-coloured text (the figure adds a chain-link icon), never a filled container; buttons get the container.
+  **Why** The button-vs-link figure contrasts a filled gradient "Button" with an underlined blue "Link"; the visual promise must match the behaviour.
+  **Applies to** all. **Check** `<a>` used for navigation inside text is underlined or otherwise not button-styled. **Source** (p.289) (audit 2026-10-15)
+
+- **RULE** Render selection inside grouped buttons with a tinted fill, not a different colour family: toggle group (single choice, e.g. text alignment) = one bordered container with the selected item on a light-tint square; multiselect (B / I / U) = adjacent segments where every selected segment is tint-filled and unselected ones stay white; split button = outlined button with label plus a caret.
+  **Why** One tint for "selected" keeps the group readable as one control with clear current state.
+  **Applies to** SaaS app UI. **Check** selected segment uses the brand tint background; `aria-pressed`/`aria-checked` set; group shares one border. **Source** (p.292) (audit 2026-10-15)
+
+- **RULE** Dropdown button: attach the option list directly under the trigger at the trigger's width, as a white panel with hairline separators between options; the trigger itself is a filled brand bar with the label left and the affordance at the right.
+  **Why** The attached, same-width panel makes it obvious which control the list belongs to.
+  **Applies to** SaaS app UI. **Check** menu panel left/right edges align with the trigger; separators 1px. **Source** (p.304) (audit 2026-10-15)
+
+- **RULE** Use the same CTA style in the nav and the hero, scaled up in the hero: the nav "Login" is a small filled button paired with a same-height dark square menu icon button; the hero "Get Started" is the same filled style with larger label and padding, placed directly under the headline.
+  **Why** One CTA style keeps the action recognisable; size, not a new style, gives the hero CTA its priority.
+  **Applies to** landing page. **Check** nav and hero CTA share fill, radius family and font; hero CTA height > nav CTA height. **Source** (p.308) (audit 2026-10-15)
+
+- **RULE** FAB: on press, show an ink reaction and lift (ripple plus elevation increase); place it floating over the bottom-right corner of the content it acts on.
+  **Why** Material's press feedback confirms the tap; the corner float keeps it reachable without covering content.
+  **Applies to** mobile. **Check** `:active` adds ripple and higher shadow; FAB fixed bottom-right. **Source** (p.292, p.308) (audit 2026-10-15)
+
+- **RULE** Expandable button: the main round button morphs its icon (+ to x) when open, and the revealed options are smaller round buttons in a contrasting colour (teal against the violet main button) fanned in an arc above it.
+  **Why** The morph shows how to close; smaller, differently coloured satellites read as children of the main action.
+  **Applies to** mobile. **Check** open state swaps icon; satellite diameter < main diameter. **Source** (p.312) (audit 2026-10-15)
+
+- **RULE** Animated delete button: build it as two joined segments; the icon segment keeps the brand colour while the label segment changes colour and text per step (red "Delete", cyan "Are You Sure", teal "Deleted"), and the icon swaps with it (trash, ?, check). The resting state is a compact icon-only square.
+  **Why** Holding the icon segment constant keeps the control recognisable while the changing segment carries the state; confirmation lives inside the button.
+  **Applies to** SaaS app UI. **Check** visual; each step changes label + colour, not position or height. **Source** (p.314) (audit 2026-10-15)
+
+- **RULE** Swipe-revealed row actions are square tinted icon tiles at row height, coloured by meaning (blue tint for send, red tint for delete); long-press menus list the label on the left and the icon right-aligned.
+  **Why** Tinted tiles keep hidden actions consistent with the colour semantics of visible buttons.
+  **Applies to** mobile. **Check** visual. **Source** (p.299) (audit 2026-10-15)
+
+- **RULE** Size an icon button to fill its touch target. The size figure keeps one fixed target box and grows the visible button inside it: about half the box = too small for anyone; about three quarters = fine for laptop/desktop only; filling the box = right for mobile and desktop.
+  **Why** The target, not the drawn glyph, is what the finger hits; a small visible button inside a big hit area still reads as hard to hit.
+  **Applies to** mobile, all. **Check** icon button visible box >= 44px on touch; desktop >= 32px. **Source** (p.325-326) (audit 2026-10-15)
+
+- **RULE** Keep filled and outlined variants on the same radius and size at every radius step; the book's outline variant uses a 1px brand-colour border, white/transparent fill and dark (black) uppercase label, while the filled variant carries the soft coloured drop shadow.
+  **Why** The radius sheet always pairs NORMAL and OUTLINE at identical box and corner, so the pair reads as one family.
+  **Applies to** all. **Check** filled and outlined `border-radius` and `height` equal; outline `border-width` 1px. **Source** (p.327-328) (audit 2026-10-15)
+
 ## 3. Numbers & scales
 
 | Item | Value | Page |
@@ -204,6 +281,15 @@ All page numbers are PDF pages (printed page = PDF page - 1). The book's example
 
 The book gives no pixel values for radius or exact paddings; the radius figures (p.327-328) show four steps (sharp, slightly rounded, larger, pill) without numbers.
 
+Audit additions (the first three rows are measured from the page images; the book prints no number for them):
+- Radius steps as a fraction of button height, measured on the p.327-328 sheet (button about 58px tall at page scale): sharp = 0; slightly rounded about 0.1 x height; larger about 0.2 x height; pill = 0.5 x height. Measured from figure, not stated (audit 2026-10-15)
+- Icon-button size series (p.325-326): one fixed target box; visible button about 1/2 of it = too small; about 3/4 = desktop only; 1/1 = mobile and desktop. Measured from figure (audit 2026-10-15)
+- Vertical padding reference points (p.286): top padding = top edge to cap height, bottom padding = baseline to bottom edge, top = bottom (audit 2026-10-15)
+- Build properties per button: 6 (corner radius; font family/colour/weight/style; safe area; fill style colour or gradient; inner margin; shadow) (p.322) (audit 2026-10-15)
+- Outline variant border: 1px brand colour, same radius and box as the filled variant (p.327-328) (audit 2026-10-15)
+- Delete-button state sequence: 4 steps (icon-only, Delete, Are You Sure, Deleted) (p.314) (audit 2026-10-15)
+- Expandable button: 1 main round button + 3 smaller satellite buttons in the figure (p.312) (audit 2026-10-15)
+
 ## 4. Dos and Don'ts
 
 | Topic | Bad | Good | Page |
@@ -219,6 +305,14 @@ The book gives no pixel values for radius or exact paddings; the radius figures 
 | Padding | Cramped label | 2W sides, 1W top/bottom | 323 |
 | Spacing | Adjacent buttons with overlapping safe areas | Separate non-overlapping safe areas | 324 |
 | Size | Tiny heart icon (frustrating); slightly larger (OK for desktop only) | Larger (works on mobile and desktop) | 325-326 |
+| Disabled rendering (audit 2026-10-15) | p.302 bad: neutral mid-grey fill with dark-grey label, off the brand hue, no reason given | p.290: disabled shown as the brand hue paled to light lavender with faded label and no shadow (and p.302 prefers no disabled state at all) | 290, 302 |
+| Field error instead of disabled (audit 2026-10-15) | Submit greyed, empty field looks normal | Password field gets a red 1px outline plus a red filled circle-x icon at its right end; Login stays live and full-width | 302 |
+| Button vs link (audit 2026-10-15) | n/a | Button = filled gradient container; Link = underlined blue text with chain icon, no container | 289 |
+| Tertiary placement (audit 2026-10-15) | n/a | Red "Delete" text isolated at far left; "Save Draft" outlined + "Send" filled with leading plane icon grouped at right | 293 |
+| Text-button pair (audit 2026-10-15) | n/a | "ADD TO CART" neutral dark + "BUY BOOK" accent blue, uppercase, no containers, right-aligned | 305 |
+| Shape variants (audit 2026-10-15) | Untested unusual shapes: circle, skewed parallelogram, rectangle with only top-right and bottom-left corners rounded | Rounded rectangle or pill, consistent across controls (unusual shapes only after usability testing) | 317 |
+| Radius pairs (audit 2026-10-15) | Filled and outline variants on different radii (implied by the sheet's consistency) | Each step pairs NORMAL (filled, shadow) and OUTLINE (1px brand border, black label) at the same box and radius | 327-328 |
+| Share button (audit 2026-10-15) | Styled share button when sharing is secondary | Bare brand icons; when it is the main action, a filled "Share" button with the share icon on a white inset tile at its left | 311-312 |
 
 ## 5. Exceptions & judgement calls
 
@@ -251,7 +345,7 @@ Copied to examples/ui-pedia/buttons/:
 - p.302: disabled login button vs live button with field error.
 - p.310: CTA size note plus ghost button figure.
 - p.314: animated delete button sequence.
-- p.317: button shape variants (circle, skewed, cut corner, pill).
+- p.317: button shape variants (circle, skewed, diagonal-corners-rounded rectangle, pill).
 - p.322: padding model (2X / 1X) and DOWNLOAD label.
 - p.323: guides for X / Y centring.
 - p.324: 2W / 1W padding with W glyphs; CANCEL/SAVE non-overlapping safe areas.
@@ -259,6 +353,10 @@ Copied to examples/ui-pedia/buttons/:
 - p.326: final big-enough button, corner-radius intro.
 - p.327: sharp / slight / larger radius samples (NORMAL + OUTLINE).
 - p.328: pill radius sample.
+- p.289: button vs link pair (filled container vs underlined link with chain icon). (audit 2026-10-15)
+- p.304: dropdown button with attached same-width option panel and hairline separators. (audit 2026-10-15)
+- p.308: nav "Login" (small filled + square menu icon button) vs hero "Get Started" (same style, larger). (audit 2026-10-15)
+- p.322 top: "Building a Button" six-property anatomy (radius, font tuple, safe area, fill style, inner margin, shadow). (audit 2026-10-15)
 
 ## 7. Open questions
 
@@ -269,9 +367,16 @@ Copied to examples/ui-pedia/buttons/:
 - p.316: "Flat Button ... fills with a rainbow of colours" does not match the figure (outlined vs solid blue "Add To Cart"); treat as author's loose wording.
 - p.312: the OCR "Expendable"/"disposable" button is the Expandable button (heading in image is spelled "Expendable"); figure shows plus morphing to x with three satellite icons.
 - p.303: text claims buttons are "typically themed links"; conflicts in spirit with the p.289 button-vs-link rule. Flagged.
-- p.317 shape figure: two shapes (skewed parallelogram, cut-corner rectangle) are shown as examples of unusual shapes; the book does not say they are bad, only to test them.
+- p.317 shape figure: two shapes (skewed parallelogram, rectangle with two diagonal corners rounded) are shown as examples of unusual shapes; the book does not say they are bad, only to test them.
 - p.325 "50p": unit not explained.
+- (audit 2026-10-15) corrected: p.317 unusual-shape figure, was "one-corner-cut rectangle" / "cut corner" (rule, section 6 and the open question above), page shows a rectangle with only the top-right and bottom-left corners rounded and the other two square (p.317)
+- (audit 2026-10-15) corrected: coverage line listed p.304 and p.312 as text-only, page shows p.304 carries the dropdown-button figure and p.312 the expandable-button figure (p.304, p.312)
+- (audit 2026-10-15) p.316 open question above: the Flat Button figure (outlined vs filled "Add To Cart", basket icon leading) is on p.315; p.316 holds only the text.
+- (audit 2026-10-15) Radius fractions and icon-button size ratios in section 3 are measured from the page images at page scale; the book states no pixel values. Treat them as proportions, not specs.
+- (audit 2026-10-15) p.290 Hover figure also shows the drop shadow turning darker/greyer; whether that is intentional or a render artefact is unclear.
 
 Pages with no rule content: p.287 (history of push buttons, Plotnick "Power Button"), p.288 (Kodak quote "You press the button, we do the rest"), p.295 (Nielsen consistency quote, full-bleed violet quote page), p.303 (intro to types, no rules beyond CTA framing), p.320 (summary "Points to Be Noted": buttons are the most effective way to get users to take actions, plan around the factors above; intro to the design guide), p.321 (full-bleed quote: the best way to indicate a button is to use visual cues; carried into the recognisability rule).
 
-Coverage: pages 286-328 all read (text and image). Pages 291, 304, 309, 312, 316, 318, 319 are text-only content; their rules are included above.
+Coverage: pages 286-328 all read (text and image). Pages 291, 309, 316, 318, 319 are text-only content; their rules are included above.
+
+Audit coverage (audit 2026-10-15): all 43 page images p.286-328 viewed plus OCR text. No-rule pages confirmed: p.287 (history text), p.288 (Kodak quote page), p.295 (Nielsen quote page), p.303 (types intro prose), p.320 (summary box + guide intro), p.321 (visual-cues quote page). Figures re-read for image-only detail: p.286, 289, 290, 292, 293, 296, 297, 299, 300, 301, 302, 304, 305, 306, 308, 310, 311, 312, 314, 315, 317, 322, 323, 324, 325, 326, 327, 328.

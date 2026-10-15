@@ -41,40 +41,40 @@ All page numbers are PDF pages (printed = PDF - 1). The chapter is two halves: (
 
 ### 2.2 Weight-giving properties (each is a rule: more of it = heavier)
 
-- **RULE (Size)** Larger width x height = heavier. Size is always measured on the smallest rectangle (bounding box) that holds the object, even for irregular shapes.
+- **RULE** Larger width x height = heavier. Size is always measured on the smallest rectangle (bounding box) that holds the object, even for irregular shapes. (Size)
   **Why** Bigger area claims more of the visual field. **Applies to** all. **Check** element bounding-box area (`getBoundingClientRect`). **Source** (p.336-337)
 
-- **RULE (Shape regularity)** Regular shapes (circle, square) look heavier than irregular shapes (star).
+- **RULE** Regular shapes (circle, square) look heavier than irregular shapes (star). (Shape regularity)
   **Why** Irregular shapes read as if parts of the object had been removed, so they feel lighter. **Applies to** all (icon/illustration choice). **Check** visual. **Source** (p.340-341; figure: solid dark circle vs solid dark star, same colour, similar bounding size)
 
-- **RULE (Orientation)** Vertical objects look heavier than horizontal ones; diagonal orientation is heavier than both vertical and horizontal.
+- **RULE** Vertical objects look heavier than horizontal ones; diagonal orientation is heavier than both vertical and horizontal. (Orientation)
   **Why** Book states it as an observation; no mechanism given. **Applies to** all. **Check** visual; for a script, the rotation transform on the element (non-0/90 multiple = diagonal). **Source** (p.341; figure: same-size rounded rect, tall vertical vs wide horizontal, then tall vertical vs a diagonal copy rotated roughly 40-45 degrees)
 
-- **RULE (Hue)** Hues differ in intensity. Book order "from darkest to lightest": red, blue, green, orange, yellow. Reds and blues pull more than yellows and oranges at comparable saturation.
+- **RULE** Hues differ in intensity. Book order "from darkest to lightest": red, blue, green, orange, yellow. Reds and blues pull more than yellows and oranges at comparable saturation. (Hue)
   **Why** Perceived intensity. **Applies to** all. **Check** compute relative luminance / lightness of the CTA colour versus neighbours; swatches below. **Source** (p.342)
 
-- **RULE (Saturation)** More saturated colour attracts more attention than a desaturated version of the same hue.
+- **RULE** More saturated colour attracts more attention than a desaturated version of the same hue. (Saturation)
   **Why** Intensity of stimulus. **Applies to** all. **Check** HSL/OKLCH chroma of candidate vs surroundings. **Source** (p.342; figure pairs, pastel on top and saturated below)
 
-- **RULE (Colour splash)** One splash of colour in an otherwise neutral layout adds weight to that object.
+- **RULE** One splash of colour in an otherwise neutral layout adds weight to that object. (Colour splash)
   **Why** The neutral field makes the single chromatic item the outlier. **Applies to** all (this is the classic single-accent-CTA move). **Check** count of distinct chromatic hues/accent elements vs neutral elements. **Source** (p.343)
 
-- **RULE (Contrast)** An element that appears visibly heavier (darker/lighter) than its surroundings is "in contrast" and pulls attention. Use contrast as the natural way to point at one element.
+- **RULE** An element that appears visibly heavier (darker/lighter) than its surroundings is "in contrast" and pulls attention. Use contrast as the natural way to point at one element. (Contrast)
   **Why** Difference from surroundings is what the eye detects. **Applies to** all. **Check** contrast ratio of element vs its local background and neighbours. **Source** (p.343; figure: light grey-blue #ACB4C6 swatch next to dark slate #495A7C swatch)
 
-- **RULE (Texture)** Textured elements look heavier than flat/untextured ones.
+- **RULE** Textured elements look heavier than flat/untextured ones. (Texture)
   **Why** Texture gives a pseudo-3D impression, which reads heavier. **Applies to** all. **Check** visual. **Source** (p.343; figure: flat slate square next to black-and-white checkerboard square, same size and corner radius)
 
-- **RULE (Z-depth)** Foreground objects are heavier than background objects; elevation (shadow, overlap) adds weight.
+- **RULE** Foreground objects are heavier than background objects; elevation (shadow, overlap) adds weight. (Z-depth)
   **Why** Nearer things command attention. **Applies to** all. **Check** presence of shadow/overlap/z-index on the intended focal element. **Source** (p.344; figure: a flat dark card with a blue circle vs the same card drawn in perspective with the blue circle lifted by a drop shadow)
 
-- **RULE (Personal interest)** Do not assume everyone looks at the same thing; subject matter the viewer cares about (the book's example: trains vs cars) wins attention for that viewer. Choose imagery matching the target audience's interests.
+- **RULE** Do not assume everyone looks at the same thing; subject matter the viewer cares about (the book's example: trains vs cars) wins attention for that viewer. Choose imagery matching the target audience's interests. (Personal interest)
   **Why** Interest modulates attention; two people viewing the same page can fixate differently. **Applies to** landing page (imagery selection). **Check** visual / audience review. **Source** (p.344-345; figure: a car vs a train illustration)
 
-- **RULE (Faces)** Eyes and faces are visually heavy; an image with a human face wins attention over text. Place a face image where you want the first fixation, and expect the headline to be read second.
+- **RULE** Eyes and faces are visually heavy; an image with a human face wins attention over text. Place a face image where you want the first fixation, and expect the headline to be read second. (Faces)
   **Why** Faces are privileged stimuli. **Applies to** landing page hero, cards. **Check** visual. **Source** (p.345-346; figure: "YOUR SUCCESS IS OUR BUSINESS." headline block at left, photo of a smiling woman on a phone at right; the book says the eye goes to the photo first, the message second; credited to BestBuy)
 
-- **RULE (Movement)** Moving things naturally draw attention and can direct visitors to the next place to look; use motion deliberately to lead the eye. The book cites Google's sustainability site (yourplanyourplanet.sustainability.google) as the example (not reproduced in the book).
+- **RULE** Moving things naturally draw attention and can direct visitors to the next place to look; use motion deliberately to lead the eye. The book cites Google's sustainability site (yourplanyourplanet.sustainability.google) as the example (not reproduced in the book). (Movement)
   **Why** Motion is a strong attention capture. **Applies to** landing page. **Check** presence of animated elements and where they point. **Source** (p.346)
 
 ### 2.3 Box model
@@ -118,26 +118,64 @@ All page numbers are PDF pages (printed = PDF - 1). The chapter is two halves: (
 
 ### 2.6 Shape families
 
-- **RULE (Curves)** Use curves (circles, ellipses, arcs, waves, blobs) on modern, user-friendly sites to signal new, fresh, welcoming, but "use them with caution" and do not overdo them.
+- **RULE** Use curves (circles, ellipses, arcs, waves, blobs) on modern, user-friendly sites to signal new, fresh, welcoming, but "use them with caution" and do not overdo them. (Curves)
   **Why** Curves feel friendly (wavy graphics signal "everything is new, fresh, and welcoming here"). **Applies to** landing page. **Check** visual; count of decorative wave/blob graphics per page (suggest <= 1-2, my number). **Source** (p.348-349; figure p.349: hero with nav "Pixsel / Home / About / Your Books / Help", headline "A Problem well Stated Half Solved..?" in black with the last words in blue, a small light-blue "Read More" button, 3D bell and papers illustration at the right, and two overlapping sine waves in lavender and dark slate forming the bottom third)
 
-- **RULE (Lines and points)** Lines and points are the most fundamental shapes and convey serenity and minimalism; they work best in a clean, well-balanced arrangement. Line weight and style carry meaning: thin vs thick differ, curved vs straight differ, solid/dotted/dashed differ.
+- **RULE** Lines and points are the most fundamental shapes and convey serenity and minimalism; they work best in a clean, well-balanced arrangement. Line weight and style carry meaning: thin vs thick differ, curved vs straight differ, solid/dotted/dashed differ. (Lines and points)
   **Why** Each line property is a different signal. **Applies to** charts, dividers, minimal layouts. **Check** visual. **Source** (p.349-350; figure p.350: a line chart with two series, one blue and one dark slate, with ring-shaped point markers, dashed axes with tick labels 0-50 and 0-130)
 
-- **RULE (Circles)** Use circles/ovals for: backdrop decoration, introducing features, and isolating buttons (play buttons, avatars). Circles read as trustworthy, complete, harmonious, in motion (wheels, balls); they "clean up your hierarchy" if used correctly.
+- **RULE** Use circles/ovals for: backdrop decoration, introducing features, and isolating buttons (play buttons, avatars). Circles read as trustworthy, complete, harmonious, in motion (wheels, balls); they "clean up your hierarchy" if used correctly. (Circles)
   **Why** A circle is a perfect shape, same from every angle. **Applies to** all. **Check** visual; avatar and icon-button elements use `border-radius: 50%`. **Source** (p.351-352; figure p.352: a dark slate profile card with a circular avatar ringed in blue, name "Oliver's Jon Son", role "UI/UX Designer"; next to it a video card with a "Circle Use Play" circular blue play button at bottom-right over the title "The Polis Mask Short Film")
 
-- **RULE (Diagonals)** Use diagonal backdrops and slanted lines to create an off-center, dynamic, gridless feel, natural "breaks" in the page content, a sense of speed; pair with photos or graphics that move. Offer tags (e.g. "10% OFF") are a good diagonal use. Use sparingly: excessive diagonals turn a design from amazing to "unworkable".
+- **RULE** Use diagonal backdrops and slanted lines to create an off-center, dynamic, gridless feel, natural "breaks" in the page content, a sense of speed; pair with photos or graphics that move. Offer tags (e.g. "10% OFF") are a good diagonal use. Use sparingly: excessive diagonals turn a design from amazing to "unworkable". (Diagonals)
   **Why** Diagonal = motion; it also breaks the monotony of the rectilinear grid. **Applies to** landing page hero/section dividers, promo tags. **Check** visual; count of skewed/rotated blocks per viewport. **Source** (p.352-353; figure p.353: "pixselacademy" mock with headline "The line of life is a Ragged DIAGONAL Between duty and Desire." (DIAGONAL in blue), a parallelogram-shaped image panel pair (orange plant and a burger photo) skewed, and a rotated dark "10 % OFF" tag overlapping the panel)
 
-- **RULE (Triangles)** Thin triangles can replace arrows or pointers. Small triangles can form mosaic/interlocking collages. Large triangles stand out, so analyse their significance before using them big. Triangles sitting on a base, or with the point facing right (message of progress), are "always the finest choice". Ideal for modern and abstract interfaces.
-  **Why** A triangle conveys direction like a diagonal but with a fixed angle, so it fits specific contexts better. **Applies to** landing page, abstract/modern brands. **Check** visual. **Source** (p.353-354; figure p.354: three downward-pointing inverted triangles (dog on blue, pancakes, headphones on yellow) interlock as a mosaic under the line "There is a very good saying that if triangles invented a god, they would make him three-sided" with a "May I Help...!" speech bubble)
+- **RULE** Thin triangles can replace arrows or pointers. Small triangles can form mosaic/interlocking collages. Large triangles stand out, so analyse their significance before using them big. Triangles sitting on a base, or with the point facing right (message of progress), are "always the finest choice". Ideal for modern and abstract interfaces. (Triangles)
+  **Why** A triangle conveys direction like a diagonal but with a fixed angle, so it fits specific contexts better. **Applies to** landing page, abstract/modern brands. **Check** visual. **Source** (p.353-354; figure p.354: two downward-pointing triangles (dog on blue, headphones on yellow) with an upward-pointing triangle (pancakes) between them interlock as a mosaic under the line "There is a very good saying that if triangles invented a god, they would make him three-sided" with a "May I Help...!" speech bubble)
 
-- **RULE (Squares and rectangles)** Use squares/rectangles as the foundation or frame of a design. They signal security and confinement; they are familiar, fade into the background quickly, and their emotional effect is mostly subliminal. They form the grid layout of every webpage and hold most text because the eye comprehends them easily. Squares fit corporate and serious interfaces while staying modern; play with stroke and fill to get strong results. 
+- **RULE** Use squares/rectangles as the foundation or frame of a design. They signal security and confinement; they are familiar, fade into the background quickly, and their emotional effect is mostly subliminal. They form the grid layout of every webpage and hold most text because the eye comprehends them easily. Squares fit corporate and serious interfaces while staying modern; play with stroke and fill to get strong results. (Squares and rectangles)
   **Why** Familiar, easily parsed. **Applies to** all (default container). **Check** visual. **Source** (p.355-356; figure p.356: three square video thumbnails ("Lions Day Out", "Butterfly Mom", "GENE") with a two-line caption under each, separated by thin vertical dividers)
 
-- **RULE (Experiment)** Shape has no well-defined standards in UI (unlike type and colour): test shape alone or combined with established UI patterns to find what works for your users.
+- **RULE** Shape has no well-defined standards in UI (unlike type and colour): test shape alone or combined with established UI patterns to find what works for your users. (Experiment)
   **Why** No codified system exists. **Applies to** all. **Check** n/a. **Source** (p.356)
+
+### Audit additions (audit 2026-10-15)
+
+- **RULE** When an object uses different radii per corner, pair them diagonally: top-left and bottom-right large (figure: 60), top-right and bottom-left near-sharp (figure: 02), giving a leaf/tab silhouette that reads as one deliberate shape.
+  **Why** Figure p.347 (zoomed): TL and BR carry the large curve, TR and BL the tiny one; a diagonal pairing keeps the shape rotationally balanced, which is what makes the "wonderful button" the text promises (the pairing is shown, not stated).
+  **Applies to** brand-led buttons, tags, cards. **Check** `border-radius` with 4 values where value1 == value3 and value2 == value4 (CSS order TL TR BR BL). **Source** (p.347) (audit 2026-10-15)
+
+- **RULE** To get a pill/stadium end, set the radius to half the box's short side: in the radius demo the radius-40 box (drawn about 80 units high) has full semicircular ends, while radius 10 and 15 on the same box only soften the corners.
+  **Why** Figure p.346: the four boxes are drawn roughly 1.85:1 wide (not the 100 x 100 the caption says); 40 is about half the drawn height, so its ends close into semicircles.
+  **Applies to** buttons, chips, tags, toggles. **Check** pill elements: computed `border-radius` >= `height / 2`; non-pill elements: radius clearly below `height / 2`, not hovering just under it. **Source** (p.346) (audit 2026-10-15)
+
+- **RULE** Isolate a circular avatar or circular play button with a thin (about 1-2 px) concentric accent ring separated from the circle by a gap of roughly 9% of the inner circle's diameter.
+  **Why** Figure p.352 (measured): avatar about 93 px with its ring at about 110 px (gap about 8.5 px), play button about 58 px with ring at about 68 px (gap about 5 px): the same proportion on both, so the ring reads as one system; the gap is what "isolates" the button the text talks about (proportion measured from the figure, not stated).
+  **Applies to** avatars, play/record buttons, selected states of circular controls. **Check** ring element (outline or box-shadow) diameter minus inner diameter about 0.18 x inner diameter; `outline-offset` > 0 with a 1-2 px outline. **Source** (p.351, p.352) (audit 2026-10-15)
+
+- **RULE** Media that sits flush against a card's top and sides takes the card's corner radius on those corners; give sibling cards in one row the same corner radius.
+  **Why** Figure p.352: the film still runs edge to edge at the top of the video card and its top corners follow the card's curve; the profile card beside it uses the same radius, so the two read as one family.
+  **Applies to** cards with media, video tiles, product cards. **Check** flush child's top radii == parent radii (or parent `overflow: hidden` clips it); sibling cards share one `border-radius` value. **Source** (p.352) (audit 2026-10-15)
+
+- **RULE** Give every diagonal element in a composition one shared slant: skewed image panels, their offset outline frame and the offer tag (including its text) all run at the same angle, about 20 degrees in the figure.
+  **Why** Figure p.353 (measured): the panels' top edge and the "10 % OFF" tag text both rise at roughly 20-21 degrees, and the tag overlaps the panel edge to link text and image; one angle keeps the "dynamic" look ordered instead of crooked everywhere.
+  **Applies to** landing page sections with diagonal treatments, promo tags. **Check** all `skew()` / `rotate()` values on diagonal elements in a section are equal (within 1 degree). **Source** (p.352, p.353) (audit 2026-10-15)
+
+- **RULE** Build a triangle mosaic by alternating orientation (down / up / down) so the slanted edges interlock, with one equal narrow gutter between every pair of pieces.
+  **Why** Figure p.354: dog (pointing down), pancakes (pointing up), headphones (pointing down), each a photo masked to a triangle, separated by equal light gutters; alternating is what makes the pieces "interlocking" rather than a row of loose triangles.
+  **Applies to** landing page image collages, editorial sections. **Check** visual; perpendicular gap between adjacent triangle edges constant. **Source** (p.353, p.354) (audit 2026-10-15)
+
+- **RULE** In a row of square media thumbnails, keep every thumb the same size and radius, left-align a two-line caption under each (truncate with an ellipsis rather than growing a third line), and separate columns with full-height 1 px dividers.
+  **Why** Figure p.356: three equal square posters with small rounded corners, captions such as "Watch The Movie For / Lions Day Out..." clipped at two lines, left edge of caption == left edge of thumb, thin vertical rules between columns; the square repeats calmly and "fades into the background", leaving the content to speak.
+  **Applies to** media grids, course/video libraries. **Check** thumbnails equal width == height; caption `-webkit-line-clamp: 2`; caption `left` == thumb `left`. **Source** (p.355, p.356) (audit 2026-10-15)
+
+- **RULE** Draw UI shapes and icons as vectors (defined by numbers) so they can be enlarged without losing quality; never ship rasterised shapes that will be scaled.
+  **Why** Every current UI tool uses vector shapes: scaling only changes the numbers and redraws the object (p.331-332, p.348).
+  **Applies to** all. **Check** icons and decorative shapes are SVG/CSS, not PNG/JPG; no raster asset rendered above its intrinsic size. **Source** (p.331, p.332, p.348) (audit 2026-10-15)
+
+- **RULE** Use a short centred hairline divider, lighter than the text, to separate a name from its role in a compact profile card, instead of extra spacing or a full-width rule.
+  **Why** Figure p.352: "Oliver's Jon Son" and "UI/UX Designer" are split by a thin divider about 40% of the card width, which groups the two lines while keeping the card quiet.
+  **Applies to** profile cards, team cards, testimonial attributions. **Check** divider width < 50% of card content width, 1 px, low-contrast colour. **Source** (p.352) (audit 2026-10-15)
 
 ## 3. Numbers & scales
 
@@ -155,6 +193,13 @@ All page numbers are PDF pages (printed = PDF - 1). The chapter is two halves: (
 | Saturation pairs (pale / saturated) | red #FEC0C1 / #FC111E; orange #FED489 / #FD9827; green #ADF79B / #2BFD2F; blue #9DDBFD / #1CA5FC | p.342 |
 | Contrast demo | #ACB4C6 (light) vs #495A7C (dark) | p.343 |
 | Recall test | look "a few seconds", close eyes | p.331 |
+| Radius demo, as drawn | boxes drawn about 1.85:1 (about 150 x 80 units) despite the "100 x 100" caption; radius 40 = half the height = full pill; 10 and 15 = about 12% and 19% of the height (audit 2026-10-15) | p.346 |
+| Per-corner pattern | TL 60 and BR large; TR 02 and BL near-sharp (diagonal pairing, read from zoomed figure) (audit 2026-10-15) | p.347 |
+| Ring around circular controls (measured) | avatar about 93 px, ring about 110 px; play button about 58 px, ring about 68 px; gap about 9% of inner diameter; ring about 1-2 px (audit 2026-10-15) | p.352 |
+| Diagonal slant (measured) | panels, frame and "10 % OFF" tag all about 20-21 degrees (audit 2026-10-15) | p.353 |
+| Box model figure (measured) | outer margin == inner margin, about 42 px on all four sides at page scale; margin and padding drawn as rounded dashed boxes concentric with the object (audit 2026-10-15) | p.334 |
+| Orientation demo (measured) | vertical bar about 83 x 240 page px; diagonal copy rotated about 40 degrees clockwise (audit 2026-10-15) | p.341 |
+| Card radius in circle figure (measured) | profile and video cards share one radius, about 18 page px (audit 2026-10-15) | p.352 |
 
 Visual-weight property table (higher = heavier):
 
@@ -201,8 +246,13 @@ The chapter has no explicit good/bad pairs; the figures are paired comparisons t
 - **Curves in a hero (p.349):** wave background used as a graphic base with the headline above and the CTA on the wave's edge. (Observation: the "Read More" button overlaps the wave edge; the book presents it as a good example, not as a collision.)
 - **Circles in UI (p.352):** avatars and play buttons as circles, reading as isolated, tappable, friendly objects.
 - **Diagonals (p.353):** skewed image panels plus a rotated discount tag. Rotated text and tags carry energy.
-- **Triangles (p.354):** inverted triangles as image masks forming an interlocking strip.
+- **Triangles (p.354):** triangle image masks alternating down / up / down, forming an interlocking strip.
 - **Squares (p.356):** uniform square thumbnails in a row, captions underneath.
+- **Per-corner radius, full reading (p.347) (audit 2026-10-15):** do pair large radii on opposite corners (TL + BR) and small on the other two (TR + BL); don't mix one large corner with three random ones, which reads as a rendering error rather than a brand shape.
+- **Avatar ring (p.352) (audit 2026-10-15):** do separate the ring from the photo with a visible gap (about 9% of the diameter); a ring touching the photo reads as a thick border and loses the "isolated" effect the book attributes to circles.
+- **Diagonal treatment (p.353) (audit 2026-10-15):** do run every slanted element at one angle (about 20 degrees); don't mix slants, which turns "dynamic" into the "unworkable" the book warns about.
+- **Triangle mosaic (p.354) (audit 2026-10-15):** do alternate down / up / down with equal gutters; don't line up same-direction triangles with uneven gaps (no interlock).
+- **Drag/target placeholder (p.332) (audit 2026-10-15):** the "This > Goes > Here" figure shows the object as a solid slate rounded rectangle with a soft shadow and the destination as the same shape in a pale fill with a dashed outline and pale label: a ready visual grammar for drop targets and empty slots (figure only, no rule stated).
 
 ## 5. Exceptions & judgement calls
 
@@ -243,6 +293,8 @@ All copied to `examples/ui-pedia/objects-and-shapes/`:
 - p.353: diagonals (skewed image panels, rotated offer tag).
 - p.354: triangles (inverted-triangle image mosaic).
 - p.356: square video thumbnails.
+- p.332 (audit 2026-10-15): solid object vs dashed ghost target ("This > Goes > Here").
+- p.352 zoomed (audit 2026-10-15): ring-with-gap on both a 93 px avatar and a 58 px play button, and flush media taking the card's top radii.
 
 ## 7. Open questions
 
@@ -256,3 +308,11 @@ All copied to `examples/ui-pedia/objects-and-shapes/`:
 - **p.346 Movement:** relies on an external Google URL that is not visible in the book; no specifics on motion type or duration.
 - **Pages with no rule content:** p.333 (pull quote only: "UI design is about moving rectangles around. And the skill is all in knowing HOW to move them, WHERE and most importantly WHY."); p.332 (rectangle statement plus a decorative "This > Goes > Here" figure: a solid slate rounded rectangle, a squiggle arrow, a dashed ghost rectangle; illustrates moving rectangles, no rule); p.329 (chapter title, intro, hero art of four gradient shapes: square, circle, triangle, pentagon); p.330 (definition text already captured in rules); p.331 (vector shapes remark: UI tools use vector shapes defined by numbers, scale without quality loss; no rule beyond that); p.348 (how-to-use-shapes preamble, vector/curve definitions; the only actionable line is "use curves with caution").
 - **Coverage:** all pages 329-356 reviewed in text and image; none skipped.
+- (audit 2026-10-15) corrected: p.354 triangle mosaic, was "three downward-pointing inverted triangles", page shows two downward-pointing triangles (dog, headphones) with an upward-pointing one (pancakes) between them (p.354).
+- (audit 2026-10-15) p.347 lower corners are readable on a zoomed crop: bottom-right is large (matches top-left), bottom-left is near-sharp (matches top-right). The exact values of the lower corners are not labelled; only "60" and "02" are.
+- (audit 2026-10-15) p.338 position figure: the "(70,160)" label sits at the second rectangle's bottom-right corner, which is at ruler x=160, y=70; the caption appears to swap X and Y and to reference the far corner instead of the origin corner. Do not use this figure to learn the coordinate convention.
+- (audit 2026-10-15) p.335 text says the outer margin is "the blue space" and the inner margin "the darker area inside our colorful rectangle", but the p.334 figure is slate with dashed outlines and no blue or darker band: the text describes a different illustration.
+- (audit 2026-10-15) p.331: "use Keynote or PowerPoint to familiarise yourself with forms and their relationships before moving on to Sketch, Figma, Adobe XD": learning advice, no design rule.
+- (audit 2026-10-15) p.350 chart: hollow ring point markers (white fill, coloured stroke) on both series; the y-axis "0" label sits above the x-axis line, a figure error, not a rule.
+- (audit 2026-10-15) coverage: all 28 page images p.329-356 viewed (p.346, p.347, p.352, p.354 also zoomed). Pages with no rule content beyond what is captured: p.329 (title/intro/hero art), p.330 (definitions), p.333 (pull quote), p.348 (curve definition preamble), p.350-351 (shape-meaning prose; the p.350 chart only illustrates lines). Measured values added above are labelled as measured; the book itself gives no radius, ring, gap or angle numbers beyond 2-6p, 0/10/15/40 and 60/02.
+- (audit 2026-10-15) Format fix: rules written as `**RULE (qualifier)**` were invisible to `tools/build_index.py` (its opener regex does not accept a parenthesised qualifier inside the bold), so they never reached `system/rules/index.json`. Normalised to `**RULE** <text> (qualifier)`; wording unchanged.

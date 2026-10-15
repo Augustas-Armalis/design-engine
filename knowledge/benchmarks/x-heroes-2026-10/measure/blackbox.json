@@ -1,0 +1,448 @@
+{
+ "title": "Blackbox: The high-trust platform for frontier inference",
+ "vw": 1440,
+ "vh": 900,
+ "docH": 5558,
+ "bodyBg": "lab(1.98454 0 0)",
+ "htmlBg": "rgba(0, 0, 0, 0)",
+ "bodyFont": "berkeleyMono, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace, ",
+ "paragraph": {
+  "size": 21,
+  "lh": "26.25px",
+  "color": "rgb(102, 102, 100)",
+  "family": "berkeleyMonoNumeralsDisplay, darkerGrotesque, \"dar",
+  "ls": "normal"
+ },
+ "nav": {
+  "box": {
+   "x": 0,
+   "y": 0,
+   "w": 1440,
+   "h": 65
+  },
+  "shell": {
+   "x": 0,
+   "y": 0,
+   "w": 1440,
+   "h": 65
+  },
+  "position": "fixed",
+  "bg": "rgb(8, 8, 8)",
+  "backdrop": "none",
+  "radius": "0px",
+  "borderB": "1px solid rgba(255, 255, 255, 0.07)",
+  "border": "",
+  "shadow": "none",
+  "linkCount": 4,
+  "links": [
+   {
+    "t": "PLATFORM",
+    "x": 844,
+    "y": 21,
+    "w": 78,
+    "h": 23,
+    "size": 12,
+    "weight": "400",
+    "ls": "0.72px",
+    "color": "rgb(242, 242, 240)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "0px",
+    "pad": "0px 0px 3px"
+   },
+   {
+    "t": "RESOURCES",
+    "x": 947,
+    "y": 21,
+    "w": 86,
+    "h": 23,
+    "size": 12,
+    "weight": "400",
+    "ls": "0.72px",
+    "color": "rgb(242, 242, 240)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "0px",
+    "pad": "0px 0px 3px"
+   },
+   {
+    "t": "LOGIN",
+    "x": 1059,
+    "y": 14,
+    "w": 82,
+    "h": 36,
+    "size": 12,
+    "weight": "700",
+    "ls": "0.72px",
+    "color": "rgb(242, 242, 240)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "15984px",
+    "pad": "8px 20px"
+   },
+   {
+    "t": "GET STARTED",
+    "x": 1166,
+    "y": 14,
+    "w": 127,
+    "h": 36,
+    "size": 12,
+    "weight": "700",
+    "ls": "0.72px",
+    "color": "rgb(12, 12, 12)",
+    "bg": "rgb(242, 242, 240)",
+    "radius": "15984px",
+    "pad": "9px 20px"
+   }
+  ]
+ },
+ "navBottom": 65,
+ "head": {
+  "tag": "H1",
+  "text": "End-to-endencryptedinference foreverymodel.",
+  "chars": 43,
+  "x": 88,
+  "y": 149,
+  "w": 1264,
+  "h": 152,
+  "lines": 2,
+  "family": "berkeleyMonoNumerals, archivo, \"archivo Fallback\", sans-serif",
+  "size": 80,
+  "weight": "500",
+  "ls": "-1.2px",
+  "lsEm": -0.015,
+  "lh": 0.95,
+  "color": "rgb(242, 242, 240)",
+  "transform": "none",
+  "feat": "normal",
+  "num": "tabular-nums",
+  "opsz": "auto",
+  "var": "normal",
+  "align": "start",
+  "wrap": "nowrap",
+  "spanColors": [
+   "rgb(242, 242, 240)"
+  ],
+  "bgClip": false,
+  "above": [
+   {
+    "t": "SECURE INFERENCE FOR ENTERPRISE",
+    "x": 107,
+    "y": 108,
+    "w": 298,
+    "h": 20,
+    "size": 13,
+    "gapToH1": 22
+   }
+  ]
+ },
+ "sub": {
+  "text": "Sealed in the client. The proxy, the host, and the operator never hold the key.",
+  "chars": 79,
+  "x": 387,
+  "y": 447,
+  "w": 395,
+  "h": 20,
+  "lines": 1,
+  "gapFromH1": 146,
+  "family": "darkerGrotesque, \"darkerGrotesque Fallback\", sans-serif",
+  "size": 14,
+  "weight": "500",
+  "ls": "normal",
+  "lsEm": 0,
+  "lh": 1.4,
+  "color": "rgb(207, 207, 203)",
+  "transform": "none",
+  "feat": "normal",
+  "num": "tabular-nums",
+  "opsz": "auto",
+  "var": "normal",
+  "align": "start",
+  "wrap": "balance"
+ },
+ "heroBtns": [
+  {
+   "id": "mb2",
+   "inNav": false,
+   "text": "GET A DEMO",
+   "x": 88,
+   "y": 329,
+   "w": 158,
+   "h": 50,
+   "boxed": true,
+   "radius": "15984px",
+   "pad": "15px 22px",
+   "bg": "rgb(242, 242, 240)",
+   "bgImg": "none",
+   "border": "0px solid lab(100 0 0 / 0.12)",
+   "shadow": "none",
+   "color": "rgb(12, 12, 12)",
+   "size": 13,
+   "weight": "700",
+   "ls": "0.78px",
+   "family": "berkeleyMono, ui-monospace, SFMono-Regul",
+   "transform": "none",
+   "transition": "filter 0.2s",
+   "hasIcon": true
+  },
+  {
+   "id": "mb3",
+   "inNav": false,
+   "text": "ENCRYPTED",
+   "x": 111,
+   "y": 442,
+   "w": 112,
+   "h": 31,
+   "boxed": true,
+   "radius": "15984px",
+   "pad": "7px 14px",
+   "bg": "rgba(255, 255, 255, 0.07)",
+   "bgImg": "none",
+   "border": "0px none rgb(242, 242, 240)",
+   "shadow": "none",
+   "color": "rgb(242, 242, 240)",
+   "size": 11,
+   "weight": "700",
+   "ls": "1.32px",
+   "family": "berkeleyMono, ui-monospace, SFMono-Regul",
+   "transform": "none",
+   "transition": "color 0.18s, background 0.18s",
+   "hasIcon": false
+  }
+ ],
+ "navBtns": [
+  {
+   "id": "mb0",
+   "inNav": true,
+   "text": "LOGIN",
+   "x": 1059,
+   "y": 14,
+   "w": 82,
+   "h": 36,
+   "boxed": true,
+   "radius": "15984px",
+   "pad": "8px 20px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgImg": "none",
+   "border": "1px solid rgba(255, 255, 255, 0.1)",
+   "shadow": "none",
+   "color": "rgb(242, 242, 240)",
+   "size": 12,
+   "weight": "700",
+   "ls": "0.72px",
+   "family": "berkeleyMono, ui-monospace, SFMono-Regul",
+   "transform": "none",
+   "transition": "border-color 0.2s",
+   "hasIcon": false
+  },
+  {
+   "id": "mb1",
+   "inNav": true,
+   "text": "GET STARTED",
+   "x": 1166,
+   "y": 14,
+   "w": 127,
+   "h": 36,
+   "boxed": true,
+   "radius": "15984px",
+   "pad": "9px 20px",
+   "bg": "rgb(242, 242, 240)",
+   "bgImg": "none",
+   "border": "0px solid lab(100 0 0 / 0.12)",
+   "shadow": "none",
+   "color": "rgb(12, 12, 12)",
+   "size": 12,
+   "weight": "700",
+   "ls": "0.72px",
+   "family": "berkeleyMono, ui-monospace, SFMono-Regul",
+   "transform": "none",
+   "transition": "filter 0.2s",
+   "hasIcon": false
+  }
+ ],
+ "allBtnCount": 5,
+ "media": 0,
+ "largestMedia": null,
+ "frames": [
+  {
+   "tag": "DIV",
+   "x": 88,
+   "y": 419,
+   "w": 1264,
+   "h": 608,
+   "radius": "12px",
+   "shadow": "none",
+   "border": "1px solid rgb(26, 26, 26)",
+   "bg": "rgb(12, 12, 12)",
+   "pad": "18px"
+  },
+  {
+   "tag": "DIV",
+   "x": 107,
+   "y": 486,
+   "w": 1226,
+   "h": 522,
+   "radius": "10px",
+   "shadow": "rgba(0, 0, 0, 0.8) 0px 30px 70px -20px",
+   "border": "1px solid rgba(255, 255, 255, 0.14)",
+   "bg": "rgb(9, 9, 9)",
+   "pad": "0px"
+  }
+ ],
+ "fold": {
+  "textLeaves": 90,
+  "words": 240,
+  "interactive": 3,
+  "sizes": {
+   "10": 4,
+   "11": 2,
+   "12": 75,
+   "13": 2,
+   "14": 1,
+   "80": 6
+  },
+  "weights": {
+   "400": 64,
+   "500": 7,
+   "700": 19
+  },
+  "colorCount": 7,
+  "colors": {
+   "rgb(102, 102, 100)": 3,
+   "rgb(242, 242, 240)": 11,
+   "rgb(12, 12, 12)": 1,
+   "rgb(207, 207, 203)": 60,
+   "rgb(74, 74, 73)": 5,
+   "rgb(122, 122, 120)": 2,
+   "rgb(255, 105, 1)": 8
+  }
+ },
+ "families": {
+  "berkeleyMono": 88,
+  "berkeleyMonoNumerals": 6,
+  "darkerGrotesque": 1
+ },
+ "fonts": [
+  "darkerGrotesque 500 700",
+  "archivo 500 700",
+  "berkeleyMono 400",
+  "berkeleyMono 700",
+  "berkeleyMonoNumerals 400",
+  "berkeleyMonoNumerals 700",
+  "berkeleyMonoNumeralsDisplay 400",
+  "berkeleyMonoNumeralsDisplay 700"
+ ],
+ "radii": {
+  "15984px": 6,
+  "999px": 1,
+  "12px": 1,
+  "50%": 5,
+  "10px": 1
+ },
+ "shadows": [
+  [
+   "rgba(0, 0, 0, 0.8) 0px 30px 70px -20px",
+   1
+  ]
+ ],
+ "tabularEls": 1515,
+ "sections": [
+  {
+   "tag": "DIV",
+   "y": 0,
+   "h": 1199,
+   "pt": "0px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 0,
+   "h": 1067,
+   "pt": "65px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 1199,
+   "h": 970,
+   "pt": "112px",
+   "pb": "112px",
+   "bg": "rgb(8, 8, 8)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 2169,
+   "h": 1327,
+   "pt": "112px",
+   "pb": "112px",
+   "bg": "rgb(10, 10, 10)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 3496,
+   "h": 936,
+   "pt": "112px",
+   "pb": "112px",
+   "bg": "rgb(8, 8, 8)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 4432,
+   "h": 624,
+   "pt": "130px",
+   "pb": "130px",
+   "bg": "rgb(255, 105, 1)"
+  },
+  {
+   "tag": "FOOTER",
+   "y": 5056,
+   "h": 502,
+   "pt": "90px",
+   "pb": "44px",
+   "bg": "rgb(12, 12, 12)"
+  }
+ ],
+ "hover": {
+  "before": [
+   "rgb(242, 242, 240) | none | none | none | rgb(12, 12, 12) | 1 | lab(100 0 0 / 0.12)",
+   "rgba(0, 0, 0, 0) | none | none | none | rgb(12, 12, 12) | 1 | lab(100 0 0 / 0.12)",
+   "rgba(0, 0, 0, 0) | none | none | none | rgb(12, 12, 12) | 1 | lab(100 0 0 / 0.12)",
+   "rgba(0, 0, 0, 0) | none | none | none | rgb(12, 12, 12) | 1 | lab(100 0 0 / 0.12)",
+   "rgba(0, 0, 0, 0) | none | none | none | rgb(12, 12, 12) | 1 | lab(100 0 0 / 0.12)",
+   "rgba(0, 0, 0, 0) | none | none | none | rgb(12, 12, 12) | 1 | lab(100 0 0 / 0.12)"
+  ],
+  "after": [
+   "rgb(242, 242, 240) | none | none | none | rgb(12, 12, 12) | 1 | lab(100 0 0 / 0.12)",
+   "rgba(0, 0, 0, 0) | none | none | none | rgb(12, 12, 12) | 1 | lab(100 0 0 / 0.12)",
+   "rgba(0, 0, 0, 0) | none | none | none | rgb(12, 12, 12) | 1 | lab(100 0 0 / 0.12)",
+   "rgba(0, 0, 0, 0) | none | none | none | rgb(12, 12, 12) | 1 | lab(100 0 0 / 0.12)",
+   "rgba(0, 0, 0, 0) | none | none | none | rgb(12, 12, 12) | 1 | lab(100 0 0 / 0.12)",
+   "rgba(0, 0, 0, 0) | none | none | none | rgb(12, 12, 12) | 1 | lab(100 0 0 / 0.12)"
+  ],
+  "changed": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "press": [
+  "rgb(242, 242, 240) | none | none | none | rgb(12, 12, 12) | 1 | lab(100 0 0 / 0.12)",
+  "rgba(0, 0, 0, 0) | none | none | none | rgb(12, 12, 12) | 1 | lab(100 0 0 / 0.12)",
+  "rgba(0, 0, 0, 0) | none | none | none | rgb(12, 12, 12) | 1 | lab(100 0 0 / 0.12)",
+  "rgba(0, 0, 0, 0) | none | none | none | rgb(12, 12, 12) | 1 | lab(100 0 0 / 0.12)",
+  "rgba(0, 0, 0, 0) | none | none | none | rgb(12, 12, 12) | 1 | lab(100 0 0 / 0.12)",
+  "rgba(0, 0, 0, 0) | none | none | none | rgb(12, 12, 12) | 1 | lab(100 0 0 / 0.12)"
+ ],
+ "pixels": {
+  "modeColor": "rgb(8,8,8)",
+  "modeShare": 0.843,
+  "nearBgShare": 0.844,
+  "quietBlockShare": 0.576,
+  "saturatedShare": 0.0007
+ },
+ "url": "https://www.blackbox.ai/",
+ "slug": "blackbox",
+ "captured": "2026-10-15T17:29:10.426Z"
+}

@@ -1,0 +1,383 @@
+{
+ "title": "SF Tensor",
+ "vw": 1440,
+ "vh": 900,
+ "docH": 5332,
+ "bodyBg": "rgb(255, 255, 255)",
+ "htmlBg": "rgba(0, 0, 0, 0)",
+ "bodyFont": "inter, \"inter Fallback\"",
+ "paragraph": {
+  "size": 16,
+  "lh": "28px",
+  "color": "rgb(98, 98, 98)",
+  "family": "inter, \"inter Fallback\"",
+  "ls": "normal"
+ },
+ "nav": {
+  "box": {
+   "x": 0,
+   "y": 0,
+   "w": 1440,
+   "h": 81
+  },
+  "shell": {
+   "x": 0,
+   "y": 0,
+   "w": 1440,
+   "h": 81
+  },
+  "position": "sticky",
+  "bg": "rgba(255, 255, 255, 0.98)",
+  "backdrop": "none",
+  "radius": "0px",
+  "borderB": "1px solid rgb(241, 241, 241)",
+  "border": "",
+  "shadow": "none",
+  "linkCount": 4,
+  "links": [
+   {
+    "t": "Solutions",
+    "x": 554,
+    "y": 24,
+    "w": 99,
+    "h": 32,
+    "size": 15,
+    "weight": "510",
+    "ls": "normal",
+    "color": "rgb(81, 81, 81)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "9px",
+    "pad": "12px 16px"
+   },
+   {
+    "t": "Products",
+    "x": 671,
+    "y": 24,
+    "w": 96,
+    "h": 32,
+    "size": 15,
+    "weight": "510",
+    "ls": "normal",
+    "color": "rgb(81, 81, 81)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "9px",
+    "pad": "12px 16px"
+   },
+   {
+    "t": "Company",
+    "x": 785,
+    "y": 24,
+    "w": 101,
+    "h": 32,
+    "size": 15,
+    "weight": "510",
+    "ls": "normal",
+    "color": "rgb(81, 81, 81)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "9px",
+    "pad": "12px 16px"
+   },
+   {
+    "t": "Plan a training run",
+    "x": 1207,
+    "y": 20,
+    "w": 153,
+    "h": 40,
+    "size": 14,
+    "weight": "510",
+    "ls": "normal",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "10px",
+    "pad": "0px 16px"
+   }
+  ]
+ },
+ "navBottom": 81,
+ "head": {
+  "tag": "H1",
+  "text": "Train what doesn't exist yet.",
+  "chars": 29,
+  "x": 410,
+  "y": 137,
+  "w": 620,
+  "h": 118,
+  "lines": 2,
+  "family": "Georgia, \"Times New Roman\", serif",
+  "size": 56,
+  "weight": "400",
+  "ls": "-1.96px",
+  "lsEm": -0.035,
+  "lh": 1.055,
+  "color": "rgb(37, 37, 35)",
+  "transform": "none",
+  "feat": "normal",
+  "num": "normal",
+  "opsz": "auto",
+  "var": "normal",
+  "align": "center",
+  "wrap": "balance",
+  "spanColors": [],
+  "bgClip": false,
+  "above": []
+ },
+ "sub": {
+  "text": "Novel architectures, proprietary data, frontier scale. We handle everything between your idea and the silicon to let you iterate at the speed of light.",
+  "chars": 151,
+  "x": 410,
+  "y": 271,
+  "w": 620,
+  "h": 56,
+  "lines": 2,
+  "gapFromH1": 16,
+  "family": "inter, \"inter Fallback\"",
+  "size": 16,
+  "weight": "420",
+  "ls": "normal",
+  "lsEm": 0,
+  "lh": 1.75,
+  "color": "rgb(98, 98, 98)",
+  "transform": "none",
+  "feat": "normal",
+  "num": "normal",
+  "opsz": "auto",
+  "var": "normal",
+  "align": "center",
+  "wrap": "wrap"
+ },
+ "heroBtns": [
+  {
+   "id": "mb4",
+   "inNav": false,
+   "text": "Plan a training run",
+   "x": 556,
+   "y": 355,
+   "w": 153,
+   "h": 40,
+   "boxed": true,
+   "radius": "10px",
+   "pad": "0px 16px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgImg": "linear-gradient(in oklab, rgb(74, 130, 252) 0%, rgb(3, 78, 242) 100%)",
+   "border": "0px solid rgba(0, 0, 0, 0)",
+   "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.2) 0px 1px 4px 0px, rgba(255, 255, 255, 0.1) 0px 4px 8px 0px inset, ",
+   "color": "rgb(255, 255, 255)",
+   "size": 14,
+   "weight": "510",
+   "ls": "normal",
+   "family": "inter, \"inter Fallback\"",
+   "transform": "none",
+   "transition": "0.15s cubic-bezier(0.4, 0, 0.2, 1)",
+   "hasIcon": false
+  },
+  {
+   "id": "mb5",
+   "inNav": false,
+   "text": "Talk to an engineer",
+   "x": 725,
+   "y": 355,
+   "w": 159,
+   "h": 40,
+   "boxed": true,
+   "radius": "10px",
+   "pad": "0px 16px",
+   "bg": "lab(100 0 0)",
+   "bgImg": "none",
+   "border": "0px solid rgba(0, 0, 0, 0)",
+   "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1.5px, rgba(0, 0, 0, 0.12) 0px 1px 2px -0.5px, rgba",
+   "color": "lab(2.75381 0 0)",
+   "size": 14,
+   "weight": "510",
+   "ls": "normal",
+   "family": "inter, \"inter Fallback\"",
+   "transform": "none",
+   "transition": "0.15s cubic-bezier(0.4, 0, 0.2, 1)",
+   "hasIcon": false
+  }
+ ],
+ "navBtns": [
+  {
+   "id": "mb3",
+   "inNav": true,
+   "text": "Plan a training run",
+   "x": 1207,
+   "y": 20,
+   "w": 153,
+   "h": 40,
+   "boxed": true,
+   "radius": "10px",
+   "pad": "0px 16px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgImg": "linear-gradient(in oklab, rgb(74, 130, 252) 0%, rgb(3, 78, 242) 100%)",
+   "border": "0px solid rgba(0, 0, 0, 0)",
+   "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.2) 0px 1px 4px 0px, rgba(255, 255, 255, 0.1) 0px 4px 8px 0px inset, ",
+   "color": "rgb(255, 255, 255)",
+   "size": 14,
+   "weight": "510",
+   "ls": "normal",
+   "family": "inter, \"inter Fallback\"",
+   "transform": "none",
+   "transition": "0.15s cubic-bezier(0.4, 0, 0.2, 1)",
+   "hasIcon": false
+  }
+ ],
+ "allBtnCount": 6,
+ "media": 3,
+ "largestMedia": {
+  "tag": "IMG",
+  "x": 209,
+  "y": 527,
+  "w": 1022,
+  "h": 727
+ },
+ "frames": [
+  {
+   "tag": "DIV",
+   "x": 208,
+   "y": 526,
+   "w": 1024,
+   "h": 728,
+   "radius": "4px",
+   "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.133) 0px 20px 50px 0px",
+   "border": "1px solid rgb(232, 232, 232)",
+   "bg": "rgb(255, 255, 255)",
+   "pad": "0px"
+  }
+ ],
+ "fold": {
+  "textLeaves": 6,
+  "words": 39,
+  "interactive": 2,
+  "sizes": {
+   "14": 2,
+   "16": 1,
+   "24": 1,
+   "28": 1,
+   "56": 1
+  },
+  "weights": {
+   "400": 1,
+   "420": 3,
+   "510": 2
+  },
+  "colorCount": 4,
+  "colors": {
+   "rgb(37, 37, 35)": 3,
+   "rgb(98, 98, 98)": 1,
+   "rgb(255, 255, 255)": 1,
+   "lab(2.75381 0 0)": 1
+  }
+ },
+ "families": {
+  "inter": 7,
+  "Georgia": 1,
+  "geistMono": 2
+ },
+ "fonts": [
+  "inter 100 900",
+  "inter Fallback normal",
+  "geistMono 100 900"
+ ],
+ "radii": {
+  "9px": 3,
+  "10px": 3,
+  "4px": 1
+ },
+ "shadows": [
+  [
+   "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.2) 0px 1px 4px 0px, rgba(255, 255, 255, 0.1) 0px",
+   2
+  ],
+  [
+   "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1.5px, rgba(0, 0, 0, 0.12) 0px ",
+   1
+  ],
+  [
+   "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.133) 0px 20px 50px 0px",
+   1
+  ]
+ ],
+ "tabularEls": 2,
+ "sections": [
+  {
+   "tag": "DIV",
+   "y": 81,
+   "h": 4870,
+   "pt": "0px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 81,
+   "h": 1064,
+   "pt": "56px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 1293,
+   "h": 958,
+   "pt": "0px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 2399,
+   "h": 737,
+   "pt": "80px",
+   "pb": "0px",
+   "bg": "rgb(37, 37, 35)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 3283,
+   "h": 1116,
+   "pt": "0px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 4547,
+   "h": 404,
+   "pt": "0px",
+   "pb": "0px",
+   "bg": "rgb(54, 116, 252)"
+  },
+  {
+   "tag": "FOOTER",
+   "y": 4951,
+   "h": 381,
+   "pt": "64px",
+   "pb": "64px",
+   "bg": "rgb(37, 37, 35)"
+  }
+ ],
+ "pixels": {
+  "modeColor": "rgb(248,248,248)",
+  "modeShare": 0.847,
+  "nearBgShare": 0.862,
+  "quietBlockShare": 0.689,
+  "saturatedShare": 0.0504
+ },
+ "hover": {
+  "before": [
+   "rgba(0, 0, 0, 0) | linear-gradient(in oklab, rgb(74, 130, 252) 0%, rgb(3, 78, 242) 100%) | none | rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px | rgb(255, 255, 255) | 1 | rgba(0, 0, 0, 0)"
+  ],
+  "after": [
+   "rgba(0, 0, 0, 0) | linear-gradient(in oklab, rgb(74, 130, 252) 0%, rgb(3, 78, 242) 100%) | none | rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px | rgb(255, 255, 255) | 1 | rgba(0, 0, 0, 0)"
+  ],
+  "changed": [
+   null
+  ]
+ },
+ "press": [
+  "rgba(0, 0, 0, 0) | linear-gradient(in oklab, rgb(74, 130, 252) 0%, rgb(3, 78, 242) 100%) | none | rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px | rgb(255, 255, 255) | 1 | rgba(0, 0, 0, 0)"
+ ],
+ "url": "https://sf-tensor.com/",
+ "slug": "sftensor",
+ "captured": "2026-10-15T17:33:57.909Z"
+}

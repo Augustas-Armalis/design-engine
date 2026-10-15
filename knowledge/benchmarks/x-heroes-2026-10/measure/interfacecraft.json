@@ -1,0 +1,246 @@
+{
+ "title": "Interface Craft: a working library for those committed to designing with uncommon care.",
+ "vw": 1440,
+ "vh": 900,
+ "docH": 5972,
+ "bodyBg": "rgb(255, 255, 255)",
+ "htmlBg": "rgb(255, 255, 255)",
+ "bodyFont": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, sans-serif",
+ "paragraph": {
+  "size": 18,
+  "lh": "26px",
+  "color": "lab(48.1164 2.35701 4.26852)",
+  "family": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\",",
+  "ls": "normal"
+ },
+ "nav": {
+  "box": {
+   "x": 0,
+   "y": 0,
+   "w": 1440,
+   "h": 64
+  },
+  "shell": {
+   "x": 24,
+   "y": 16,
+   "w": 16,
+   "h": 8
+  },
+  "position": "fixed",
+  "bg": "rgb(1, 1, 1)",
+  "backdrop": "none",
+  "radius": "0px",
+  "borderB": "0px solid rgb(23, 23, 23)",
+  "border": "0px solid rgb(23, 23, 23)",
+  "shadow": "none",
+  "linkCount": 1,
+  "links": [
+   {
+    "t": "Login",
+    "x": 1356,
+    "y": 16,
+    "w": 60,
+    "h": 32,
+    "size": 14,
+    "weight": "500",
+    "ls": "normal",
+    "color": "lab(35.5168 1.08604 4.07829)",
+    "bg": "lab(96.5286 -0.0991821 0.364268)",
+    "radius": "8px",
+    "pad": "6px 12px"
+   }
+  ]
+ },
+ "navBottom": 64,
+ "head": {
+  "tag": "H1",
+  "text": "Interface Craft",
+  "chars": 15,
+  "x": 384,
+  "y": 194,
+  "w": 672,
+  "h": 50,
+  "lines": 1,
+  "family": "Signifier, serif",
+  "size": 50,
+  "weight": "400",
+  "ls": "-1.25px",
+  "lsEm": -0.025,
+  "lh": 1,
+  "color": "lab(9.03835 1.15298 1.92955)",
+  "transform": "none",
+  "feat": "normal",
+  "num": "normal",
+  "opsz": "auto",
+  "var": "normal",
+  "align": "center",
+  "wrap": "wrap",
+  "spanColors": [],
+  "bgClip": false,
+  "above": []
+ },
+ "sub": {
+  "text": "A working library for those committed to designing with uncommon care.",
+  "chars": 70,
+  "x": 520,
+  "y": 268,
+  "w": 400,
+  "h": 52,
+  "lines": 2,
+  "gapFromH1": 24,
+  "family": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, sans-serif",
+  "size": 18,
+  "weight": "400",
+  "ls": "normal",
+  "lsEm": 0,
+  "lh": 1.444,
+  "color": "lab(48.1164 2.35701 4.26852)",
+  "transform": "none",
+  "feat": "normal",
+  "num": "normal",
+  "opsz": "auto",
+  "var": "normal",
+  "align": "center",
+  "wrap": "wrap"
+ },
+ "heroBtns": [],
+ "navBtns": [
+  {
+   "id": "mb0",
+   "inNav": true,
+   "text": "Login",
+   "x": 1356,
+   "y": 16,
+   "w": 60,
+   "h": 32,
+   "boxed": true,
+   "radius": "8px",
+   "pad": "6px 12px",
+   "bg": "lab(96.5286 -0.0991821 0.364268)",
+   "bgImg": "none",
+   "border": "0px solid lab(35.5168 1.08604 4.07829)",
+   "shadow": "none",
+   "color": "lab(35.5168 1.08604 4.07829)",
+   "size": 14,
+   "weight": "500",
+   "ls": "normal",
+   "family": "system-ui, -apple-system, \"system-ui\", \"",
+   "transform": "none",
+   "transition": "all",
+   "hasIcon": false
+  }
+ ],
+ "allBtnCount": 2,
+ "media": 5,
+ "largestMedia": {
+  "tag": "CANVAS",
+  "x": 299,
+  "y": 517,
+  "w": 211,
+  "h": 147
+ },
+ "frames": [],
+ "fold": {
+  "textLeaves": 13,
+  "words": 111,
+  "interactive": 1,
+  "sizes": {
+   "16": 6,
+   "18": 1,
+   "28": 5,
+   "50": 1
+  },
+  "weights": {
+   "400": 13
+  },
+  "colorCount": 12,
+  "colors": {
+   "lab(9.03835 1.15298 1.92955)": 1,
+   "lab(48.1164 2.35701 4.26852)": 1,
+   "rgb(255, 255, 194)": 1,
+   "rgba(255, 255, 194, 0.7)": 1,
+   "rgb(82, 71, 51)": 1,
+   "rgba(82, 71, 51, 0.8)": 1,
+   "rgb(174, 255, 255)": 1,
+   "rgba(174, 255, 255, 0.8)": 1,
+   "rgb(0, 77, 0)": 1,
+   "rgba(0, 77, 0, 0.7)": 1,
+   "rgb(246, 235, 217)": 1,
+   "rgba(246, 235, 217, 0.7)": 2
+  }
+ },
+ "families": {
+  "system-ui": 8,
+  "Signifier": 6
+ },
+ "fonts": [
+  "Signifier 400"
+ ],
+ "radii": {
+  "4px": 1,
+  "8px": 1,
+  "16px": 5
+ },
+ "shadows": [],
+ "tabularEls": 0,
+ "sections": [
+  {
+   "tag": "SECTION",
+   "y": 0,
+   "h": 320,
+   "pt": "160px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 320,
+   "h": 680,
+   "pt": "48px",
+   "pb": "32px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 1000,
+   "h": 2667,
+   "pt": "40px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 3763,
+   "h": 291,
+   "pt": "0px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 4150,
+   "h": 427,
+   "pt": "0px",
+   "pb": "144px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 4576,
+   "h": 1332,
+   "pt": "0px",
+   "pb": "144px",
+   "bg": "rgba(0, 0, 0, 0)"
+  }
+ ],
+ "pixels": {
+  "modeColor": "rgb(248,248,248)",
+  "modeShare": 0.794,
+  "nearBgShare": 0.796,
+  "quietBlockShare": 0.838,
+  "saturatedShare": 0.1065
+ },
+ "url": "https://www.interfacecraft.dev/",
+ "slug": "interfacecraft",
+ "captured": "2026-10-15T17:30:01.375Z"
+}

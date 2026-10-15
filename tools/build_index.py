@@ -11,9 +11,9 @@ ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
 KNOW = os.path.join(ROOT, "knowledge")
 OUT = os.path.join(ROOT, "system", "rules", "index.json")
 
-# Accepted rule openers (studies write them three ways): **RULE** text, **RULE [ID]** text, **RULE ID** text, **ID RULE** text.
+# Accepted rule openers (IDs may be multi-part, e.g. T-SC-01; studies write them three ways): **RULE** text, **RULE [ID]** text, **RULE ID** text, **ID RULE** text.
 # Group 1 = id (bracketed, after RULE, or before RULE), group 2 = the rule text.
-START = re.compile(r"^\s*(?:[-*]|\d+\.)?\s*\*\*(?:([A-Z]{1,5}-\d+[a-z]?)\s+)?RULE(?:\s*\[([^\]]+)\]|\s+([A-Z]{1,5}-\d+[a-z]?))?\*\*\s*(.*)")
+START = re.compile(r"^\s*(?:[-*]|\d+\.)?\s*\*\*(?:([A-Z]{1,5}(?:-[A-Z]{1,5})*-\d+[a-z]?)\s+)?RULE(?:\s*\[([^\]]+)\]|\s+([A-Z]{1,5}(?:-[A-Z]{1,5})*-\d+[a-z]?))?\*\*\s*(.*)")
 FIELD = re.compile(r"\*\*(Why|Applies to|Check|Source|Severity|Applies)\*\*\s*:?\s*")
 
 

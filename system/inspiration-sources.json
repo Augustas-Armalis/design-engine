@@ -1,0 +1,1158 @@
+{
+ "schema": "inspiration-sources/v1",
+ "updated": "2026-10-15",
+ "source": "knowledge/web/inspiration-and-tools.md (robots.txt, llms.txt, homepages and category URLs fetched 2026-10-15 with curl/WebFetch; X handles resolved through api.fxtwitter.com; earlier ToS reads in knowledge/ecosystem/reference-sources.md, 2026-10-08)",
+ "legend": {
+  "automatable": {
+   "mcp": "official MCP server for agents; use interactively per brief, never loop it to mirror the library",
+   "api": "official JSON API (key or no key as noted)",
+   "rss": "official feed or sitemap; poll at most daily",
+   "fetch-polite": "robots.txt allows the path for agents and no ToS clause found against it: one human-picked page per brief, <=1 req/s, descriptive UA, store pointers only",
+   "manual": "bot challenge, 403/429, robots or ToS disallows agents, or login wall: a human browses; the engine only receives URLs",
+   "founder-account": "needs the founder's paid login (OAuth MCP or browser); the engine prepares the exact queries",
+   "local-tool": "an app, plugin or extension a human runs; the engine replicates the function in code",
+   "package": "npm/pip package or open-source code the engine can install and run"
+  },
+  "free": "true = core content free to view; 'freemium' = partial; false = paid",
+  "loginNeeded": "true = content not visible without login; 'partial' = list visible, detail or filters gated",
+  "evidence": "F fetched 2026-10-15 | R robots.txt read 2026-10-15 | P prior note (knowledge/ecosystem/reference-sources.md, 2026-10-08) | S secondary | M memory, verify"
+ },
+ "sources": [
+  {
+   "name": "Recent (ex-Godly)",
+   "type": "gallery-sites",
+   "url": "https://recent.design/websites",
+   "categoryUrlPattern": "/websites | /launch-videos | /og-images | /app-icons | /app-store-screenshots | /tools | /skills ; item /i/<id>-<slug>",
+   "free": true,
+   "loginNeeded": false,
+   "automatable": "fetch-polite",
+   "notes": "godly.website 301 -> recent.design/?ref=godly. Revived 2026 as a broader feed (X, Instagram, sites, tools). robots: User-agent * Allow /. No terms or llms.txt found. Highest motion/craft taste among free galleries; no category filter URLs for SaaS. [F,R]"
+  },
+  {
+   "name": "Land-book",
+   "type": "gallery-sites",
+   "url": "https://land-book.com/",
+   "categoryUrlPattern": "item /websites/<id>-<slug>; filters are query params (?industry= ?style= ?color= ?platform=) and are DISALLOWED in robots",
+   "free": "freemium",
+   "loginNeeded": "partial",
+   "automatable": "rss",
+   "notes": "robots explicitly welcomes ClaudeBot/Claude-User but disallows /api/ and every filter/sort/search param. rss.xml returned 200 (latest 50); homepage and sitemap.xml returned a Cloudflare challenge (403) to curl on 2026-10-15: do not solve it, browse by hand. Credit designer + link back. [F,R,P]"
+  },
+  {
+   "name": "SaaSFrame",
+   "type": "gallery-sections",
+   "url": "https://www.saasframe.io/",
+   "categoryUrlPattern": "/categories/<slug> (pricing-page, landing-page, features-page, comparison-page, ai-page, dashboard, onboarding, settings, changelog, 404-page...) | /patterns/<slug> (bento-grid, call-to-action, ai-chat, ai-generation-state, clients-logo...) | /brands | /best-landing-pages",
+   "free": "freemium",
+   "loginNeeded": "partial",
+   "automatable": "fetch-polite",
+   "notes": "SaaS-only, best category fit for marketing sections and product screens. robots changed since 2026-10-08: now User-agent * with no disallow, 'Content-Signal: ai-train=no, search=yes, ai-input=yes', GPTBot disallowed. Agent reading for a brief is signalled OK; never train or store images. Pro ~$18/mo for full browse + Figma files [P]. [F,R]"
+  },
+  {
+   "name": "Mobbin",
+   "type": "gallery-product-ui",
+   "url": "https://mobbin.com/explore/web",
+   "categoryUrlPattern": "/explore/web/screens | /explore/web/flows | /explore/web/ui-elements | /explore/web/app-categories | /explore/sites ; MCP tools search_screens, search_flows, search_sections",
+   "free": "freemium",
+   "loginNeeded": true,
+   "automatable": "founder-account",
+   "notes": "MCP (OAuth, Pro $10/mo yearly or $15/mo quarterly) and REST (Team+), 60 req/60 s, honour Retry-After. llms.txt + llms-full.txt + .md pages for agents. ToS: no caching/archiving, no AI train/test/benchmark, no repository from MCP output; keep product name + Mobbin URL. Website sections cover heroes, pricing, nav, testimonials, footers. [F,P]"
+  },
+  {
+   "name": "Refero",
+   "type": "gallery-product-ui",
+   "url": "https://refero.design/",
+   "categoryUrlPattern": "/search?order=trending | /search/flows | /pagetypes | /patterns | /elements | /apps/... ; MCP https://api.refero.design/mcp",
+   "free": false,
+   "loginNeeded": true,
+   "automatable": "founder-account",
+   "notes": "Paid MCP (8,000 calls/month/user [P]) with styles, screens, flows; Refero Skill at github.com/referodesign/refero_skill; Figma plugin. ToS forbids training/evaluating ML with content and storing results. robots: all allowed except GPTBot. [F,R,P]"
+  },
+  {
+   "name": "Page Flows",
+   "type": "gallery-product-ui",
+   "url": "https://pageflows.com/web/",
+   "categoryUrlPattern": "/web/ | /ios/ | /android/ ; /<platform>/flows/<flow-slug>/ ; /<platform>/elements/<element>/",
+   "free": "freemium",
+   "loginNeeded": "partial",
+   "automatable": "manual",
+   "notes": "Recorded onboarding/checkout/upgrade flows. robots allows / (disallows /search and ?next= ?flow_slug ?number=); most recordings paid. Use for flow structure notes only. screenlane.com redirects here [P]. [F,R]"
+  },
+  {
+   "name": "Lapa Ninja",
+   "type": "gallery-sites",
+   "url": "https://www.lapa.ninja/",
+   "categoryUrlPattern": "/category/<slug>/ (e.g. /category/saas/)",
+   "free": true,
+   "loginNeeded": false,
+   "automatable": "manual",
+   "notes": "Cloudflare 403 to curl and WebFetch; Browser pane blocked by site permissions (2026-10-15). Human browsing only. Volume-driven, mixed quality. [F]"
+  },
+  {
+   "name": "Awwwards",
+   "type": "gallery-sites",
+   "url": "https://www.awwwards.com/websites/",
+   "categoryUrlPattern": "/websites/<slug>/ (saas, web-interactive, business-corporate, data-visualization, 3d, animation, clean, about-page, 404-pages...)",
+   "free": true,
+   "loginNeeded": false,
+   "automatable": "manual",
+   "notes": "Path categories return 200 and are not disallowed, but /websites/? filters, /tag/, /gallery/, /feed, /elements/* are. ToS: all rights reserved, no commercial use without authorisation [S]. Creative/studio bias, not SaaS; use for motion ambition. [F,R]"
+  },
+  {
+   "name": "Siteinspire",
+   "type": "gallery-sites",
+   "url": "https://www.siteinspire.com/",
+   "categoryUrlPattern": "/websites/category/<slug> (e.g. technology) ; MCP https://www.siteinspire.com/api/mcp ; REST /api/websites/explore?categories=",
+   "free": true,
+   "loginNeeded": false,
+   "automatable": "mcp",
+   "notes": "robots allows Claude-User/Claude-SearchBot and /api/mcp, blocks ClaudeBot/anthropic-ai and (for *) /websites/categories/. curl got a 429 Vercel checkpoint on 2026-10-15: use the MCP, never crawl. Index data usable for non-commercial research with attribution [P]. Editorial/type-led taste. [F,R,P]"
+  },
+  {
+   "name": "Minimal Gallery",
+   "type": "gallery-sites",
+   "url": "https://minimal.gallery/",
+   "categoryUrlPattern": "/tag/<slug>/ (saas, agency, ...) | /platform/<framer|webflow|tailwind|astro|...>/ | /<site-slug>/",
+   "free": true,
+   "loginNeeded": false,
+   "automatable": "fetch-polite",
+   "notes": "WordPress; robots allows all but /wp-admin/. Restrained, whitespace-led sites; good for light editorial grammars. Terms at /legal not read. [F,R]"
+  },
+  {
+   "name": "Dark",
+   "type": "gallery-sites",
+   "url": "https://www.dark.design/",
+   "categoryUrlPattern": "/site/<slug> ; client-side filters All, Agency, AI, Culture, Education, Hardware, Personal, Software, Web3 (no URL) ; /templates",
+   "free": true,
+   "loginNeeded": false,
+   "automatable": "fetch-polite",
+   "notes": "~247 hand-picked dark sites (WebFetch count). robots: Allow /. No terms visible; product by Y5K LLC. First stop for premium dark folds. [F,R]"
+  },
+  {
+   "name": "Dark Mode Design",
+   "type": "gallery-sites",
+   "url": "https://www.darkmodedesign.com/",
+   "categoryUrlPattern": "Webflow pagination ?<id>_page=N; no category URLs",
+   "free": true,
+   "loginNeeded": false,
+   "automatable": "fetch-polite",
+   "notes": "robots lists only a sitemap (no rules). Older, broader dark gallery; lower SaaS density than dark.design. [F,R]"
+  },
+  {
+   "name": "Layers",
+   "type": "community",
+   "url": "https://layers.to/explore",
+   "categoryUrlPattern": "/explore (Hot | All) ; /jobs",
+   "free": true,
+   "loginNeeded": "partial",
+   "automatable": "manual",
+   "notes": "Designer portfolio/posts community. robots.txt 404; explore renders client-side (no designs in fetched HTML). Browse by hand; follow designers found here on X. [F]"
+  },
+  {
+   "name": "Cosmos",
+   "type": "moodboard",
+   "url": "https://www.cosmos.so/",
+   "categoryUrlPattern": "/explore | /<user> | /search/elements/<query> | /brand/<slug>",
+   "free": "freemium",
+   "loginNeeded": "partial",
+   "automatable": "manual",
+   "notes": "Pinterest alternative for creatives; search by hex colour and visual similarity; AI attribution captions. robots: Claude-User allowed, * disallows /*?* and /api/. Premium $8/mo. Best used as the founder's own taste board. [F,R]"
+  },
+  {
+   "name": "Savee",
+   "type": "moodboard",
+   "url": "https://savee.com/",
+   "categoryUrlPattern": "MCP https://mcp.savee.com/mcp (read-only, OAuth 2.1) ; REST https://api.savee.com/v1/ (personal token)",
+   "free": "freemium",
+   "loginNeeded": true,
+   "automatable": "founder-account",
+   "notes": "MCP and API read the member's own saves/boards and search the public library; subscription needed. ToS forbids scraping and AI training/evaluation; keep IDs/links only [P]. robots disallows /search/, /feed/, /api/. [F,R,P]"
+  },
+  {
+   "name": "Footer",
+   "type": "gallery-sections",
+   "url": "https://www.footer.design/browse",
+   "categoryUrlPattern": "/styles/<typographic|small-type|illustrative|grid|flat|animated|cards|bright|dark|large-type|bold> ; /sites/<slug>",
+   "free": true,
+   "loginNeeded": false,
+   "automatable": "fetch-polite",
+   "notes": "By NOOON Studio; llms.txt present; robots allows all. Pair with knowledge/web/footers.md (49 measured). [F,R]"
+  },
+  {
+   "name": "Navbar Gallery",
+   "type": "gallery-sections",
+   "url": "https://www.navbar.gallery/browse",
+   "categoryUrlPattern": "/type/<static|dropdowns|mega-menu|side-bar|search-bar|announcement|full-screen|breadcrumbs> ; /style/<dark|minimal|animated|gradient|brutalist|blurred|saas|...> (118 style tags) ; /navbar/<slug> ; /mobile-navigation",
+   "free": true,
+   "loginNeeded": false,
+   "automatable": "fetch-polite",
+   "notes": "450+ navbars from live sites by Christina Liubynska; llms.txt; robots lists only a sitemap. Pair with knowledge/web/nav-grammars.md. [F,R]"
+  },
+  {
+   "name": "CTA Gallery",
+   "type": "gallery-sections",
+   "url": "https://www.cta.gallery/",
+   "categoryUrlPattern": "/categories/<button|call-to-buy|download|form|modal-pop-up|navigation|newsletter|pricing> ; /cta/<slug>",
+   "free": true,
+   "loginNeeded": false,
+   "automatable": "fetch-polite",
+   "notes": "robots Allow /. Section crops of closing CTAs; template-heavy, check for Framer/Webflow template sources. [F,R]"
+  },
+  {
+   "name": "Supahero",
+   "type": "gallery-sections",
+   "url": "https://supahero.io/",
+   "categoryUrlPattern": "/hero/<slug> ; /templates ; /tools ; search only, no filter URLs",
+   "free": "freemium",
+   "loginNeeded": false,
+   "automatable": "manual",
+   "notes": "Hero-section library, now part of screensdesign.com. robots.txt 404; Browser pane blocked by site permissions. Pricing page exists; terms not read. [F]"
+  },
+  {
+   "name": "Hero Gallery",
+   "type": "gallery-sections",
+   "url": "https://hero.gallery/",
+   "categoryUrlPattern": "/hero-gallery/<brand> ; tags SaaS, Fintech, Productivity, Creative Tools, Built with Framer/Webflow; filters by layout, copy, CTA type, tone, trust signals",
+   "free": true,
+   "loginNeeded": false,
+   "automatable": "fetch-polite",
+   "notes": "Heroes 'tagged, audited' with written opinions on copy/CTA; strong for hero copy and CTA grammar audits. robots Allow /. Terms not read. [F,R]"
+  },
+  {
+   "name": "herosection.design",
+   "type": "gallery-sections",
+   "url": "https://www.herosection.design/",
+   "categoryUrlPattern": "n/a",
+   "free": null,
+   "loginNeeded": null,
+   "automatable": "manual",
+   "notes": "Homepage redirects to /lander (looks parked) on 2026-10-15; not a working gallery. Re-check later. [F]"
+  },
+  {
+   "name": "Landing.Gallery",
+   "type": "gallery-sites",
+   "url": "https://www.landing.gallery/",
+   "categoryUrlPattern": "/inspiration/<pricing_page|about_page|careers_page|contact_page|not_found_page> ; /website-builder/<framer|webflow|...> ; /framework/<next-js|astro|...> ; /websites/<slug> ; MCP https://www.landing.gallery/api/mcp",
+   "free": true,
+   "loginNeeded": false,
+   "automatable": "mcp",
+   "notes": "Public no-auth MCP: search_inspiration (max 4 results) and get_website(slug). ToS: no bulk download; automated tools need written consent beyond the MCP [P]. robots disallows /api/ (the MCP is the sanctioned route). [F,R,P]"
+  },
+  {
+   "name": "Curated",
+   "type": "gallery-sections",
+   "url": "https://curated.design/sections/",
+   "categoryUrlPattern": "/sites/s/<id>/ ; /sections/ ; /inspiration/ ; MCP https://curated.design/api/mcp/ ; REST /api/v1/search/, /api/v1/plan/, /api/v1/sites/:id/design/, /api/v1/sections/:id/",
+   "free": "freemium",
+   "loginNeeded": "partial",
+   "automatable": "founder-account",
+   "notes": "MCP tools plan_page, search_sections, get_section, get_design_system, search_sites, get_site, list_facets, whoami; Pro $9/mo or $84/yr (OAuth or crd_ key). Terms: reference/study allowed; wholesale scraping, redistribution and republishing forbidden. Closest gallery to the engine's own pipeline (brief -> section plan -> design system). [F,R]"
+  },
+  {
+   "name": "One Page Love",
+   "type": "gallery-sites",
+   "url": "https://onepagelove.com/inspiration",
+   "categoryUrlPattern": "/inspiration/<genre> (app, saas, landing-page, finance, announcement, ...) ; /sections ; API https://onepagelove.com/api",
+   "free": true,
+   "loginNeeded": false,
+   "automatable": "api",
+   "notes": "9,000+ human-curated entries; acquired 2026 by Piet Terheyden. robots and llms.txt tell agents to use the API (filters genre, style, platform, tech, typeface, colour, section; Retina screenshots; free tier, key in seconds). Status changed from waitlist (2026-10-08) to open. [F,R]"
+  },
+  {
+   "name": "maxibestof.one",
+   "type": "gallery-sites",
+   "url": "https://maxibestof.one/",
+   "categoryUrlPattern": "unknown (Cloudflare challenge)",
+   "free": null,
+   "loginNeeded": null,
+   "automatable": "manual",
+   "notes": "robots allows / (disallows /go/, /api/), but curl and WebFetch got a Cloudflare challenge (403). Content not verified this pass. Human browsing only. [F,R]"
+  },
+  {
+   "name": "Httpster",
+   "type": "gallery-sites",
+   "url": "https://httpster.net/",
+   "categoryUrlPattern": "/style/<brutalist|dark|minimal|typographic|interactive|scrolling-behaviour|non-standard-layout|...>/ ; /type/<application-or-software|finance|...>/",
+   "free": true,
+   "loginNeeded": false,
+   "automatable": "fetch-polite",
+   "notes": "~3,116 hand-selected sites [P], type-led identity. robots.txt returns 404 (no rules). [F]"
+  },
+  {
+   "name": "SaaS Landing Page",
+   "type": "gallery-sections",
+   "url": "https://saaslandingpage.com/",
+   "categoryUrlPattern": "/pricing/ | /faq/ | /testimonials/ | /features/",
+   "free": true,
+   "loginNeeded": false,
+   "automatable": "fetch-polite",
+   "notes": "Section-level SaaS crops; robots allows all. Already in knowledge/benchmarks/sections/targets-galleries.json. [F,R]"
+  },
+  {
+   "name": "Saaspo",
+   "type": "gallery-sites",
+   "url": "https://saaspo.com/",
+   "categoryUrlPattern": "unknown (Cloudflare challenge)",
+   "free": null,
+   "loginNeeded": null,
+   "automatable": "manual",
+   "notes": "403 challenge to curl and robots.txt. Human only. [F]"
+  },
+  {
+   "name": "Framer Marketplace",
+   "type": "templates",
+   "url": "https://www.framer.com/marketplace/templates/",
+   "categoryUrlPattern": "/marketplace/templates/categories/<saas|ai|startup|agents|fintech|apps|...>/ ; /marketplace/templates/<slug>/ (live preview on *.framer.website)",
+   "free": "freemium",
+   "loginNeeded": false,
+   "automatable": "fetch-polite",
+   "notes": "robots allows paths (disallows ?sort= ?query= etc.); 'Content-Signal: ai-train=yes, search=yes, ai-input=yes'; llms.txt. The commodity baseline: what a $79 template already does. Measure previews, never copy. [F,R]"
+  },
+  {
+   "name": "Dribbble",
+   "type": "community",
+   "url": "https://dribbble.com/",
+   "categoryUrlPattern": "/tags/<tag> (e.g. saas_landing_page) | /search/<query>",
+   "free": true,
+   "loginNeeded": false,
+   "automatable": "manual",
+   "notes": "Concept shots, not shipped pages. robots allows /tags/ and /search/ but disallows /shots/day|week|month, /*/tags/*, colors; curl got 202 (challenge). Illustration and mood only. [F,R]"
+  },
+  {
+   "name": "Behance",
+   "type": "community",
+   "url": "https://www.behance.net/",
+   "categoryUrlPattern": "/search/projects/<query>",
+   "free": true,
+   "loginNeeded": false,
+   "automatable": "manual",
+   "notes": "robots disallows ClaudeBot, anthropic-ai, Claude-Web and other AI agents site-wide; search returned 403. Human browsing only; brand case studies. [F,R]"
+  },
+  {
+   "name": "v0 templates",
+   "type": "ai-showcase",
+   "url": "https://v0.app/templates",
+   "categoryUrlPattern": "/templates/<category> (e.g. landing-pages) ; /templates/<id> ; /@<author>",
+   "free": true,
+   "loginNeeded": "partial",
+   "automatable": "fetch-polite",
+   "notes": "robots has no disallows. Community templates on shadcn/Tailwind: shows what an AI default looks like (anti-reference) and occasionally a good component. [F,R]"
+  },
+  {
+   "name": "Lovable templates",
+   "type": "ai-showcase",
+   "url": "https://lovable.dev/templates",
+   "categoryUrlPattern": "/templates/websites | /templates/apps ; filter refinements with & are disallowed",
+   "free": true,
+   "loginNeeded": "partial",
+   "automatable": "fetch-polite",
+   "notes": "robots allows Claude-User on / except /auth, /projects/, /@*, /landing. AI-default baseline, as v0. [F,R]"
+  },
+  {
+   "name": "Fonts In Use",
+   "type": "type-reference",
+   "url": "https://fontsinuse.com/",
+   "categoryUrlPattern": "/typefaces/<id>/<slug> | /formats/<format> | /industries/<industry> [M]",
+   "free": true,
+   "loginNeeded": false,
+   "automatable": "manual",
+   "notes": "Archive of typography in real work. robots blocks GPTBot, SiteSucker and some AI agents; treat as human reading. [F,R]"
+  },
+  {
+   "name": "Typewolf",
+   "type": "type-reference",
+   "url": "https://www.typewolf.com/",
+   "categoryUrlPattern": "/site-of-the-day | /<font-slug> | /google-fonts [M]",
+   "free": true,
+   "loginNeeded": false,
+   "automatable": "manual",
+   "notes": "Jeremiah Shoaf's type-trend site and pairing lists. robots disallows /sites-using-free-fonts and /all-sites. Read by hand for pairings and trend names. [F,R]"
+  }
+ ],
+ "fonts": [
+  {
+   "name": "Fontsource API",
+   "type": "font-source",
+   "url": "https://api.fontsource.org/v1/fonts",
+   "categoryUrlPattern": "/v1/fonts?family=<name> | /v1/fonts/<id>",
+   "free": true,
+   "loginNeeded": false,
+   "automatable": "api",
+   "notes": "No key; returns subsets, weights, variable, category, license (e.g. Geist OFL-1.1). npm @fontsource/<id> and @fontsource-variable/<id>. robots: Content-Signal ai-train=yes, ai-input=yes. [F]"
+  },
+  {
+   "name": "Fontshare API",
+   "type": "font-source",
+   "url": "https://api.fontshare.com/v2/fonts",
+   "categoryUrlPattern": "/v2/fonts?limit=N ; CSS https://api.fontshare.com/v2/css?f[]=<slug>@<weights>&display=swap [M]",
+   "free": true,
+   "loginNeeded": false,
+   "automatable": "api",
+   "notes": "No key; returns per-font OpenType feature tags (aalt, ss01, tnum, frac...). Satoshi, General Sans, Switzer, Cabinet Grotesk, Clash Display/Grotesk. Mostly ITF Free Font License: commercial use OK, no redistribution of files [S]: never commit them to a public repo. [F]"
+  },
+  {
+   "name": "Google Fonts",
+   "type": "font-source",
+   "url": "https://fonts.google.com/",
+   "categoryUrlPattern": "/specimen/<Family+Name> ; Developer API https://www.googleapis.com/webfonts/v1/webfonts?key=",
+   "free": true,
+   "loginNeeded": false,
+   "automatable": "api",
+   "notes": "OFL/Apache. Official API needs a free key. fonts.google.com/metadata/fonts answered 200 (2.7 MB) but is undocumented: prefer Fontsource. robots disallows /license/. [F,R,P]"
+  },
+  {
+   "name": "Pangram Pangram",
+   "type": "font-source",
+   "url": "https://pangrampangram.com/",
+   "categoryUrlPattern": "/products/<font>",
+   "free": "freemium",
+   "loginNeeded": false,
+   "automatable": "manual",
+   "notes": "Free trial fonts are personal, non-commercial only; client work needs a paid licence (Desktop/Web/App sold separately) [S]. Mockups only, never ship trial files. [S]"
+  },
+  {
+   "name": "Velvetyne",
+   "type": "font-source",
+   "url": "https://velvetyne.fr/",
+   "categoryUrlPattern": "/fonts/<slug>/ [M]",
+   "free": true,
+   "loginNeeded": false,
+   "automatable": "fetch-polite",
+   "notes": "Libre display faces, typically OFL, per-font GitHub repos [M]. Verify licence per font. [F]"
+  },
+  {
+   "name": "Collletttivo",
+   "type": "font-source",
+   "url": "https://collletttivo.it/",
+   "categoryUrlPattern": "/typefaces/<slug> [M]",
+   "free": true,
+   "loginNeeded": false,
+   "automatable": "fetch-polite",
+   "notes": "Italian open-source type collective; robots allows *. Licence per font (mostly OFL) [M]. [F,R]"
+  },
+  {
+   "name": "Uncut",
+   "type": "font-source",
+   "url": "https://uncut.wtf/",
+   "categoryUrlPattern": "/<category>/<font>/ [M]",
+   "free": true,
+   "loginNeeded": false,
+   "automatable": "manual",
+   "notes": "Curated catalogue of free/libre typefaces (links to the designers' own licences). Returned 'Checking your browser' (454); robots disallows ?queries and /downloads/*. Human only. [F,R]"
+  },
+  {
+   "name": "Wakamai Fondue",
+   "type": "type-tool",
+   "url": "https://wakamaifondue.com/",
+   "categoryUrlPattern": "n/a (drop a font file)",
+   "free": true,
+   "loginNeeded": false,
+   "automatable": "local-tool",
+   "notes": "Shows a font's OpenType features, axes, glyph coverage and generates CSS. Engine equivalent: opentype.js (already pinned for logo tools) or fontTools; Fontshare API lists features directly. [M]"
+  },
+  {
+   "name": "Fontpair / Fontjoy / Typescale",
+   "type": "type-tool",
+   "url": "https://www.fontpair.co/",
+   "categoryUrlPattern": "n/a",
+   "free": true,
+   "loginNeeded": false,
+   "automatable": "manual",
+   "notes": "Pairing and scale generators for Google Fonts. Low taste ceiling; system/variety/type-voices.json is the engine's pairing source. [F]"
+  }
+ ],
+ "colour": [
+  {
+   "name": "tints.dev",
+   "type": "colour-tool",
+   "url": "https://www.tints.dev/",
+   "categoryUrlPattern": "API GET https://www.tints.dev/api/<name>/<hex>",
+   "free": true,
+   "loginNeeded": false,
+   "automatable": "api",
+   "notes": "Returns a Tailwind 50-950 scale in oklch() as JSON, no key (verified with blue/3b82f6). Fastest programmatic ramp; still check contrast. [F]"
+  },
+  {
+   "name": "Radix Colors",
+   "type": "colour-tool",
+   "url": "https://www.radix-ui.com/colors",
+   "categoryUrlPattern": "npm @radix-ui/colors ; /colors/custom",
+   "free": true,
+   "loginNeeded": false,
+   "automatable": "package",
+   "notes": "12-step light/dark scales with defined roles (1-2 bg, 3-5 component, 6-8 border, 9-10 solid, 11-12 text); MIT. Already used by knowledge/web/_color-tools/radix.py. [M]"
+  },
+  {
+   "name": "UI Colors",
+   "type": "colour-tool",
+   "url": "https://uicolors.app/",
+   "categoryUrlPattern": "/generate/<hex> [M]",
+   "free": "freemium",
+   "loginNeeded": false,
+   "automatable": "manual",
+   "notes": "Tailwind palette generator with in-context previews and Figma plugin. No public API found. [F]"
+  },
+  {
+   "name": "OKLCH Color Picker",
+   "type": "colour-tool",
+   "url": "https://oklch.com/",
+   "categoryUrlPattern": "/#<l>,<c>,<h>,<alpha> [M]",
+   "free": true,
+   "loginNeeded": false,
+   "automatable": "package",
+   "notes": "Evil Martians' picker showing gamut (sRGB/P3/Rec2020). Engine equivalent: culori in Node. [F]"
+  },
+  {
+   "name": "Huetone",
+   "type": "colour-tool",
+   "url": "https://huetone.ardov.me/",
+   "categoryUrlPattern": "n/a",
+   "free": true,
+   "loginNeeded": false,
+   "automatable": "local-tool",
+   "notes": "Builds accessible palettes on LCH/OKLCH with APCA/WCAG contrast grids; open source [M]. robots allows all. [F,R]"
+  },
+  {
+   "name": "Coolors",
+   "type": "colour-tool",
+   "url": "https://coolors.co/",
+   "categoryUrlPattern": "/<hex>-<hex>-<hex>-<hex>-<hex> ; /palettes/trending",
+   "free": "freemium",
+   "loginNeeded": false,
+   "automatable": "manual",
+   "notes": "No public API; trending palettes are crowd taste, not SaaS taste. By hand only. [F,R,P]"
+  },
+  {
+   "name": "Realtime Colors",
+   "type": "colour-tool",
+   "url": "https://www.realtimecolors.com/",
+   "categoryUrlPattern": "share link (format not documented)",
+   "free": true,
+   "loginNeeded": false,
+   "automatable": "manual",
+   "notes": "Previews 5 colours + Google Font pair on a sample site, exports CSS/Tailwind. Repo CC BY-NC-ND: never fork or embed [P]. [F]"
+  },
+  {
+   "name": "Grainient",
+   "type": "texture-tool",
+   "url": "https://grainient.supply/",
+   "categoryUrlPattern": "n/a",
+   "free": "freemium",
+   "loginNeeded": true,
+   "automatable": "manual",
+   "notes": "Basit A. Khan's library of 1,000+ grainy/animated gradient backgrounds up to 8K; subscription [S]. Licence on site not read: check before a client ships one. Engine recreates the look in code (system/variety/basit-tokens.json). [F,S]"
+  },
+  {
+   "name": "gradient.page",
+   "type": "texture-tool",
+   "url": "https://gradient.page/",
+   "categoryUrlPattern": "unknown",
+   "free": null,
+   "loginNeeded": null,
+   "automatable": "manual",
+   "notes": "Vercel security checkpoint (429) to curl on 2026-10-15; content not verified. [F]"
+  },
+  {
+   "name": "Paper Shaders",
+   "type": "texture-tool",
+   "url": "https://shaders.paper.design/",
+   "categoryUrlPattern": "/<shader-slug> (mesh-gradient, grain-gradient, paper-texture, dithering, ...)",
+   "free": true,
+   "loginNeeded": false,
+   "automatable": "package",
+   "notes": "Open-source WebGL2 shaders, npm @paper-design/shaders and @paper-design/shaders-react (28 shaders, pre-1.0: pin exact version); speed 0 = static zero-cost render; needs a WebGL2 fallback. [F,S]"
+  },
+  {
+   "name": "fffuel",
+   "type": "texture-tool",
+   "url": "https://www.fffuel.co/",
+   "categoryUrlPattern": "/<tool>/ (nnnoise, gggrain, bbblurry, llline, ssscribble, hhholographic, pppixelate, rrrasterize, tttexture, ...)",
+   "free": true,
+   "loginNeeded": false,
+   "automatable": "manual",
+   "notes": "70+ SVG generators by Sébastien Noël. Licence: commercial OK, no attribution needed, no resale/redistribution of the images. Engine copies the technique (feTurbulence noise, blur blobs) into code. [F]"
+  },
+  {
+   "name": "Haikei",
+   "type": "texture-tool",
+   "url": "https://haikei.app/",
+   "categoryUrlPattern": "n/a",
+   "free": "freemium",
+   "loginNeeded": "partial",
+   "automatable": "manual",
+   "notes": "SVG blobs, waves, layered steps, low-poly. robots allows all. Easy to look 2021-template; use sparingly. [F,R]"
+  },
+  {
+   "name": "Mesh",
+   "type": "texture-tool",
+   "url": "https://www.meshgradient.com/",
+   "categoryUrlPattern": "n/a",
+   "free": true,
+   "loginNeeded": false,
+   "automatable": "manual",
+   "notes": "Mesh-gradient generator. Prefer Paper Shaders MeshGradient in code. [F]"
+  }
+ ],
+ "people": [
+  {
+   "handle": "marcelkargul",
+   "who": "Marcel, Kargul Studio (founder)",
+   "followers": 60300,
+   "bestAt": "Full product screens, banking/mobile UI, client-roast redesigns; ~9 posts/day",
+   "verified": "fxtwitter 2026-10-12"
+  },
+  {
+   "handle": "kargulstudio",
+   "who": "Kargul Studio",
+   "followers": 6312,
+   "bestAt": "Studio launches and client work",
+   "verified": "fxtwitter 2026-10-15"
+  },
+  {
+   "handle": "dariusdan",
+   "who": "Darius Dan, illustrator at Kargul Studio",
+   "followers": 25924,
+   "bestAt": "Icon and illustration systems for SaaS",
+   "verified": "fxtwitter 2026-10-15"
+  },
+  {
+   "handle": "basit_designs",
+   "who": "Basit A. Khan (Inspirux, Grainient)",
+   "followers": 24800,
+   "bestAt": "Hero sections, rendered light fields, shader/gradient cards",
+   "verified": "fxtwitter 2026-10-12"
+  },
+  {
+   "handle": "_heyrico",
+   "who": "Rico, Ace Studio",
+   "followers": 27100,
+   "bestAt": "Light and dark agentic product UI, CRMs, dashboards in fullview",
+   "verified": "fxtwitter 2026-10-12"
+  },
+  {
+   "handle": "flohoeller",
+   "who": "Flo Hoeller, affectUI",
+   "followers": 5300,
+   "bestAt": "AI-agent product components in grey trays (meters, composers, tables)",
+   "verified": "fxtwitter 2026-10-12"
+  },
+  {
+   "handle": "karrisaarinen",
+   "who": "Karri Saarinen, CEO and designer, Linear",
+   "followers": 93865,
+   "bestAt": "Linear's design philosophy, quality-of-craft opinions",
+   "verified": "fxtwitter 2026-10-15"
+  },
+  {
+   "handle": "emilkowalski",
+   "who": "Emil Kowalski, Linear",
+   "followers": 108000,
+   "bestAt": "Animation lessons, stagger/easing details, Base UI",
+   "verified": "fxtwitter 2026-10-12"
+  },
+  {
+   "handle": "pacocoursey",
+   "who": "Paco Coursey, Linear",
+   "followers": 41400,
+   "bestAt": "Micro-interactions, cmdk, recreated details",
+   "verified": "fxtwitter 2026-10-12"
+  },
+  {
+   "handle": "raunofreiberg",
+   "who": "Rauno Freiberg, Vercel",
+   "followers": 95400,
+   "bestAt": "Interaction details, focus rings, design-system craft",
+   "verified": "fxtwitter 2026-10-12"
+  },
+  {
+   "handle": "rauchg",
+   "who": "Guillermo Rauch, CEO Vercel",
+   "followers": 911055,
+   "bestAt": "Vercel/v0 launches, what ships in Geist",
+   "verified": "fxtwitter 2026-10-15"
+  },
+  {
+   "handle": "glennui",
+   "who": "Glenn Hitchcock (prev Vercel, Poolside, Sketch)",
+   "followers": 8957,
+   "bestAt": "Dark product marketing and brand UI",
+   "verified": "fxtwitter 2026-10-15"
+  },
+  {
+   "handle": "mrncst",
+   "who": "Mariana Castilho, Profound (ex Vercel)",
+   "followers": 18700,
+   "bestAt": "Tiny components centred on white, onboarding flows",
+   "verified": "fxtwitter 2026-10-12"
+  },
+  {
+   "handle": "shadcn",
+   "who": "shadcn, Vercel",
+   "followers": 245000,
+   "bestAt": "Component library opinions; what the default looks like",
+   "verified": "fxtwitter 2026-10-12"
+  },
+  {
+   "handle": "peduarte",
+   "who": "Pedro Duarte, Raycast (ex Radix/Modulz)",
+   "followers": 39403,
+   "bestAt": "Raycast product polish, primitives",
+   "verified": "fxtwitter 2026-10-15"
+  },
+  {
+   "handle": "thomaspaulmann",
+   "who": "Thomas Paul Mann, CEO Raycast",
+   "followers": 18753,
+   "bestAt": "Raycast launches and release craft",
+   "verified": "fxtwitter 2026-10-15"
+  },
+  {
+   "handle": "benjitaylor",
+   "who": "Benji Taylor, head of design at X (co-founder, Family)",
+   "followers": 225000,
+   "bestAt": "Family's fluid motion lineage; X/Grok launches",
+   "verified": "fxtwitter 2026-10-12"
+  },
+  {
+   "handle": "lochieaxon",
+   "who": "Lochie Axon, Aave/Family",
+   "followers": 12700,
+   "bestAt": "Text morphs (torph), motion details on black",
+   "verified": "fxtwitter 2026-10-12"
+  },
+  {
+   "handle": "browsercompany",
+   "who": "The Browser Company (Arc, Dia)",
+   "followers": 144947,
+   "bestAt": "Arc/Dia launch films and playful brand UI",
+   "verified": "fxtwitter 2026-10-15"
+  },
+  {
+   "handle": "attio",
+   "who": "Attio (company)",
+   "followers": 17366,
+   "bestAt": "CRM product UI drops; individual designers not identified",
+   "verified": "fxtwitter 2026-10-15"
+  },
+  {
+   "handle": "jakubkrehel",
+   "who": "Jakub Krehel, Interfere",
+   "followers": 24000,
+   "bestAt": "Before/after detail fixes, agent skills for UI",
+   "verified": "fxtwitter 2026-10-12"
+  },
+  {
+   "handle": "raphaelsalaja",
+   "who": "Raphael Salaja, Warp",
+   "followers": 14400,
+   "bestAt": "Text-animation components, userinterface.wiki",
+   "verified": "fxtwitter 2026-10-12"
+  },
+  {
+   "handle": "jh3yy",
+   "who": "Jhey, Shopify",
+   "followers": 148000,
+   "bestAt": "CSS techniques with code (progressive blur, scroll-driven)",
+   "verified": "fxtwitter 2026-10-12"
+  },
+  {
+   "handle": "oguzyagizkara",
+   "who": "Oğuz Yağız Kara, Lue Studio",
+   "followers": 80700,
+   "bestAt": "Shader and generative visuals for product sections",
+   "verified": "fxtwitter 2026-10-12"
+  },
+  {
+   "handle": "steveschoger",
+   "who": "Steve Schoger, Refactoring UI",
+   "followers": 128000,
+   "bestAt": "Dashboards and landing pages built in Claude Code; greys and type",
+   "verified": "fxtwitter 2026-10-12"
+  },
+  {
+   "handle": "mds",
+   "who": "Matt D. Smith, Shift Nudge",
+   "followers": 89548,
+   "bestAt": "Interface-craft teaching, before/after critiques",
+   "verified": "fxtwitter 2026-10-15"
+  },
+  {
+   "handle": "rsms",
+   "who": "Rasmus Andersson, designer of Inter",
+   "followers": 93379,
+   "bestAt": "Type engineering, UI typography",
+   "verified": "fxtwitter 2026-10-15"
+  },
+  {
+   "handle": "uisabor",
+   "who": "Abdul Saboor",
+   "followers": 900,
+   "bestAt": "AI/SaaS landing-page 4-ups (trend scouting)",
+   "verified": "fxtwitter 2026-10-12"
+  },
+  {
+   "handle": "Gavmn",
+   "who": "Gavin Nelson, OpenAI",
+   "followers": 147000,
+   "bestAt": "App icons, iOS concepts",
+   "verified": "fxtwitter 2026-10-12"
+  },
+  {
+   "handle": "FonsMans",
+   "who": "Fons Mans, Offgrid",
+   "followers": 232000,
+   "bestAt": "Brand identity, pictograms, posters",
+   "verified": "fxtwitter 2026-10-12"
+  },
+  {
+   "handle": "emilwidlund",
+   "who": "Emil Widlund, design lead at Polar",
+   "followers": 13587,
+   "bestAt": "Developer-tool product and brand UI",
+   "verified": "fxtwitter 2026-10-15"
+  },
+  {
+   "handle": "dannpetty",
+   "who": "Dann Petty, Quiver AI",
+   "followers": 175736,
+   "bestAt": "Visual design, AI design workflows",
+   "verified": "fxtwitter 2026-10-15"
+  },
+  {
+   "handle": "MengTo",
+   "who": "Meng To, Design+Code, Aura",
+   "followers": 189000,
+   "bestAt": "AI-generated three.js sites, prompt tutorials",
+   "verified": "fxtwitter 2026-10-12"
+  },
+  {
+   "handle": "footrdesign",
+   "who": "footer.design gallery",
+   "followers": 3604,
+   "bestAt": "Daily footer picks",
+   "verified": "fxtwitter 2026-10-15"
+  }
+ ],
+ "tools": [
+  {
+   "name": "v0",
+   "type": "ai-design-tool",
+   "url": "https://v0.app/",
+   "categoryUrlPattern": "n/a",
+   "free": "freemium",
+   "loginNeeded": true,
+   "automatable": "founder-account",
+   "notes": "Prompt-to-React on shadcn/Tailwind; good for component scaffolds; output defaults to the shadcn look. Learn: registry blocks, iterate-by-diff. [F]"
+  },
+  {
+   "name": "Lovable",
+   "type": "ai-design-tool",
+   "url": "https://lovable.dev/",
+   "categoryUrlPattern": "n/a",
+   "free": "freemium",
+   "loginNeeded": true,
+   "automatable": "founder-account",
+   "notes": "Prompt-to-full-stack app (Supabase). Learn: plan-then-build, visual edit mode. Output is the AI-default baseline. [F]"
+  },
+  {
+   "name": "Bolt",
+   "type": "ai-design-tool",
+   "url": "https://bolt.new/",
+   "categoryUrlPattern": "n/a",
+   "free": "freemium",
+   "loginNeeded": true,
+   "automatable": "founder-account",
+   "notes": "StackBlitz WebContainer builder; fast prototypes, weak taste. [F]"
+  },
+  {
+   "name": "Google Stitch (ex Galileo AI)",
+   "type": "ai-design-tool",
+   "url": "https://stitch.withgoogle.com/",
+   "categoryUrlPattern": "n/a",
+   "free": true,
+   "loginNeeded": true,
+   "automatable": "founder-account",
+   "notes": "Galileo acquired by Google mid-2025; Stitch 2.0 (March 2026) adds multi-screen generation (up to 5 linked screens), infinite canvas, prototyping; free in beta with daily credits; exports Figma/HTML; generic without heavy prompting [S]."
+  },
+  {
+   "name": "Magic Patterns",
+   "type": "ai-design-tool",
+   "url": "https://www.magicpatterns.com/",
+   "categoryUrlPattern": "n/a",
+   "free": "freemium",
+   "loginNeeded": true,
+   "automatable": "founder-account",
+   "notes": "AI prototyping for product teams with design-system import. Learn: generate inside the team's component library. [F]"
+  },
+  {
+   "name": "Relume",
+   "type": "ai-design-tool",
+   "url": "https://www.relume.io/",
+   "categoryUrlPattern": "n/a",
+   "free": "freemium",
+   "loginNeeded": true,
+   "automatable": "founder-account",
+   "notes": "Sitemap -> wireframe -> style guide -> Figma/Webflow/React. Learn: sitemap-first section planning (cf. curated.design plan_page). Output is wireframe-generic. [F,M]"
+  },
+  {
+   "name": "Framer AI / Wireframer",
+   "type": "ai-design-tool",
+   "url": "https://www.framer.com/",
+   "categoryUrlPattern": "n/a",
+   "free": "freemium",
+   "loginNeeded": true,
+   "automatable": "founder-account",
+   "notes": "Prompt-to-Framer layouts; result reads as a template. Learn: responsive breakpoints and CMS-backed sections. [M]"
+  },
+  {
+   "name": "Subframe",
+   "type": "ai-design-tool",
+   "url": "https://www.subframe.com/",
+   "categoryUrlPattern": "n/a",
+   "free": "freemium",
+   "loginNeeded": true,
+   "automatable": "founder-account",
+   "notes": "Visual editor that outputs React + Tailwind tied to a component library. Learn: design and code share one source. [F]"
+  },
+  {
+   "name": "Paper",
+   "type": "ai-design-tool",
+   "url": "https://paper.design/",
+   "categoryUrlPattern": "n/a",
+   "free": "freemium",
+   "loginNeeded": true,
+   "automatable": "founder-account",
+   "notes": "Design canvas built on real HTML/CSS with shaders and agent (MCP) access; Kargul Studio lists Paper in its toolset. Learn: code-native canvas, shader export (Paper Shaders). [F]"
+  },
+  {
+   "name": "Figma MCP (Dev Mode / remote)",
+   "type": "figma-plugin",
+   "url": "https://www.figma.com/",
+   "categoryUrlPattern": "get_design_context, get_screenshot, get_variable_defs, send_code_to_figma",
+   "free": false,
+   "loginNeeded": true,
+   "automatable": "founder-account",
+   "notes": "Already listed in this session's deferred tools; the design plugin MCP needs the founder to authorise. Lets the engine read frames as specs and push built pages into Figma. [F]"
+  },
+  {
+   "name": "Autoflow",
+   "type": "figma-plugin",
+   "url": "https://www.figma.com/community/search?resource_type=plugins&query=autoflow",
+   "categoryUrlPattern": "n/a",
+   "free": "freemium",
+   "loginNeeded": true,
+   "automatable": "local-tool",
+   "notes": "Draws flow arrows between frames. Engine equivalent: SVG connectors in a flow page. [M]"
+  },
+  {
+   "name": "Stark",
+   "type": "figma-plugin",
+   "url": "https://www.getstark.co/",
+   "categoryUrlPattern": "n/a",
+   "free": "freemium",
+   "loginNeeded": true,
+   "automatable": "local-tool",
+   "notes": "Contrast, vision simulation, focus order. Engine equivalent: check.mjs contrast + axe. [M]"
+  },
+  {
+   "name": "Contrast (plugin)",
+   "type": "figma-plugin",
+   "url": "https://www.figma.com/community/search?resource_type=plugins&query=contrast",
+   "categoryUrlPattern": "n/a",
+   "free": true,
+   "loginNeeded": true,
+   "automatable": "local-tool",
+   "notes": "Live WCAG contrast while designing. Engine equivalent: check.mjs. [M]"
+  },
+  {
+   "name": "Iconify",
+   "type": "figma-plugin",
+   "url": "https://iconify.design/",
+   "categoryUrlPattern": "API https://api.iconify.design/<prefix>/<icon>.svg",
+   "free": true,
+   "loginNeeded": false,
+   "automatable": "api",
+   "notes": "200k+ open icons; API exposes per-set licence (Lucide ISC, Phosphor MIT, Tabler MIT) [P]."
+  },
+  {
+   "name": "Unsplash",
+   "type": "figma-plugin",
+   "url": "https://unsplash.com/",
+   "categoryUrlPattern": "API https://api.unsplash.com/ (key)",
+   "free": true,
+   "loginNeeded": false,
+   "automatable": "api",
+   "notes": "Hotlink API URLs, credit photographer, no ML/dataset use [P]."
+  },
+  {
+   "name": "Content Reel",
+   "type": "figma-plugin",
+   "url": "https://www.figma.com/community/search?resource_type=plugins&query=content%20reel",
+   "categoryUrlPattern": "n/a",
+   "free": true,
+   "loginNeeded": true,
+   "automatable": "local-tool",
+   "notes": "Realistic names, avatars, text strings. Engine equivalent: internally coherent sample data labelled sample. [M]"
+  },
+  {
+   "name": "html.to.design / Builder.io Visual Copilot / Anima / Locofy",
+   "type": "figma-plugin",
+   "url": "https://www.figma.com/community",
+   "categoryUrlPattern": "n/a",
+   "free": "freemium",
+   "loginNeeded": true,
+   "automatable": "local-tool",
+   "notes": "Web->Figma and Figma->code converters. Engine: prefer the Figma MCP send_code_to_figma for handoff. [M]"
+  },
+  {
+   "name": "VisBug",
+   "type": "browser-extension",
+   "url": "https://chromewebstore.google.com/",
+   "categoryUrlPattern": "n/a",
+   "free": true,
+   "loginNeeded": false,
+   "automatable": "local-tool",
+   "notes": "Point-and-edit any page: spacing, type, alignment. Engine equivalent: Playwright evaluate + check.mjs probes. [M]"
+  },
+  {
+   "name": "CSS Peeper",
+   "type": "browser-extension",
+   "url": "https://www.csspeeper.com/",
+   "categoryUrlPattern": "n/a",
+   "free": "freemium",
+   "loginNeeded": false,
+   "automatable": "local-tool",
+   "notes": "Extracts colours, fonts, assets from a page. Engine equivalent: extract-design-system skill / teardown-measure.js. [F]"
+  },
+  {
+   "name": "WhatFont / Fontanello",
+   "type": "browser-extension",
+   "url": "https://chromewebstore.google.com/",
+   "categoryUrlPattern": "n/a",
+   "free": true,
+   "loginNeeded": false,
+   "automatable": "local-tool",
+   "notes": "Identify font family, size, weight, OpenType features on hover. Engine equivalent: getComputedStyle + document.fonts. [M]"
+  },
+  {
+   "name": "ColorZilla",
+   "type": "browser-extension",
+   "url": "https://www.colorzilla.com/",
+   "categoryUrlPattern": "n/a",
+   "free": true,
+   "loginNeeded": false,
+   "automatable": "local-tool",
+   "notes": "Eyedropper, gradient generator, page colour analyser. Engine equivalent: computed colours by area weight. [F]"
+  },
+  {
+   "name": "Page Ruler",
+   "type": "browser-extension",
+   "url": "https://chromewebstore.google.com/",
+   "categoryUrlPattern": "n/a",
+   "free": true,
+   "loginNeeded": false,
+   "automatable": "local-tool",
+   "notes": "Measure px distances on a page. Engine equivalent: getBoundingClientRect diffs in check.mjs. [M]"
+  },
+  {
+   "name": "Responsively",
+   "type": "browser-extension",
+   "url": "https://responsively.app/",
+   "categoryUrlPattern": "n/a",
+   "free": true,
+   "loginNeeded": false,
+   "automatable": "local-tool",
+   "notes": "Open-source multi-viewport browser. Engine equivalent: shot.mjs at 390/768/1440. [F]"
+  },
+  {
+   "name": "Polypane",
+   "type": "browser-extension",
+   "url": "https://polypane.app/",
+   "categoryUrlPattern": "n/a",
+   "free": false,
+   "loginNeeded": false,
+   "automatable": "local-tool",
+   "notes": "Paid multi-pane dev browser with a11y overlays. Engine equivalent: check.mjs + multi-viewport shots. [F]"
+  },
+  {
+   "name": "CleanShot X",
+   "type": "mac-app",
+   "url": "https://cleanshot.com/",
+   "categoryUrlPattern": "n/a",
+   "free": false,
+   "loginNeeded": false,
+   "automatable": "local-tool",
+   "notes": "Screenshots, scrolling capture, annotations. Engine equivalent: shot.mjs --full. [F]"
+  },
+  {
+   "name": "Raycast",
+   "type": "mac-app",
+   "url": "https://www.raycast.com/",
+   "categoryUrlPattern": "n/a",
+   "free": "freemium",
+   "loginNeeded": false,
+   "automatable": "local-tool",
+   "notes": "Launcher with colour picker, snippets, AI; also a design reference itself. [M]"
+  },
+  {
+   "name": "ColorSlurp",
+   "type": "mac-app",
+   "url": "https://colorslurp.com/",
+   "categoryUrlPattern": "n/a",
+   "free": "freemium",
+   "loginNeeded": false,
+   "automatable": "local-tool",
+   "notes": "Screen colour picker with contrast checker. [F]"
+  },
+  {
+   "name": "xScope",
+   "type": "mac-app",
+   "url": "https://iconfactory.com/",
+   "categoryUrlPattern": "n/a",
+   "free": false,
+   "loginNeeded": false,
+   "automatable": "local-tool",
+   "notes": "Rulers, loupe, guides, overlays on screen. Engine equivalent: compare.mjs onion-skin overlay. [F,M]"
+  },
+  {
+   "name": "Rotato",
+   "type": "mac-app",
+   "url": "https://rotato.app/",
+   "categoryUrlPattern": "n/a",
+   "free": "freemium",
+   "loginNeeded": false,
+   "automatable": "local-tool",
+   "notes": "3D device mockups and camera-move animations. Engine replica: CSS 3D transform rig or three.js device frame rendered by record.mjs. [F]"
+  },
+  {
+   "name": "Screen Studio",
+   "type": "mac-app",
+   "url": "https://screen.studio/",
+   "categoryUrlPattern": "n/a",
+   "free": false,
+   "loginNeeded": false,
+   "automatable": "local-tool",
+   "notes": "Screen recordings with auto-zoom on clicks, smoothed cursor, padded gradient background. Engine replica: Playwright scripted cursor path + CSS scale/translate zoom keyed to clicks, recorded with tools/record.mjs. [F]"
+  },
+  {
+   "name": "Shots",
+   "type": "mac-app",
+   "url": "https://shots.so/",
+   "categoryUrlPattern": "n/a",
+   "free": "freemium",
+   "loginNeeded": false,
+   "automatable": "local-tool",
+   "notes": "Screenshot-in-mockup compositions for posts. robots disallows all bots. [F,R]"
+  },
+  {
+   "name": "Pika",
+   "type": "mac-app",
+   "url": "https://pika.style/",
+   "categoryUrlPattern": "n/a",
+   "free": "freemium",
+   "loginNeeded": false,
+   "automatable": "local-tool",
+   "notes": "Screenshot on a styled background (padding, radius, shadow, gradient) for X posts. Engine replica: an HTML frame template sized to system/variety/x-post-formats.json, exported by shot.mjs. [F]"
+  }
+ ]
+}

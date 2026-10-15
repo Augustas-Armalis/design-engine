@@ -95,6 +95,28 @@ Page convention: `p.NN` = PDF page (printed = PDF - 2). The material is adapted 
   **Why** "He or she would rather use a computer than learn how to utilise one" (p.53). Many people also now expect a certain amount of design expertise (p.53).
   **Applies to** all. **Check** visual: primary task visible without scrolling/explanation. **Source** (p.53)
 
+### Audit additions: page images (audit 2026-10-15)
+
+Found by viewing the page images of p.40-53.
+
+- **RULE [PU-ACT-04]** For each user goal, write down the evaluation questions the user will ask of the outcome, and make the result screen answer them at a glance. The book's worked examples: for "type and print a letter", "Is the letter well formatted, with accurate and complete content?" then "Has the letter been accurately printed?"; for "find a good deal on an electrical device" (comparison shopping, searching sources, comparing prices), "Are the costs for the correct equipment displayed?" then "Is the price reasonable?".
+  **Why** Evaluation has three steps (perceive, interpret against expectation, compare to the goal); each example shows that the user checks the outcome against a concrete expectation, so the screen must show that evidence (p.41-42).
+  **Applies to** all (confirmation screens, search results, pricing, checkout). **Check** process: each primary flow lists its 1-2 evaluation questions; visual: the success/result state shows the data that answers them (what was saved, the price, the item). **Source** (p.41-42) (audit 2026-10-15)
+
+- **RULE [PU-RES-06]** Keep the structure perceivable above the detail: show the overall model (sections, steps, hierarchy) before or alongside the detail so users can find meaningful patterns.
+  **Why** The book defines Confusion as "the perceived structure is overwhelmed by detail"; the conceptual model "cannot be grasped", so meaningful patterns are hard to find (p.48).
+  **Applies to** SaaS app UI, landing page, long forms. **Check** visual/blur test: section structure is visible at a squint; every long view has headings or a step indicator. **Source** (p.48) (audit 2026-10-15)
+
+- **RULE [PU-RES-07]** Do not make the system rigid and harsh (no way around a blocked path, curt or punitive responses).
+  **Why** "Systems that are rigid and harsh are a primary source of annoyance" (p.49); frustration rises when an unanticipated response cannot be reversed or explained (PU-RES-02).
+  **Applies to** all. **Check** blocked states offer an alternative route or an explanation; error and refusal copy is neutral (see PU-ERR-05). **Source** (p.49) (audit 2026-10-15)
+
+- **RULE [PU-RES-08]** Assume abandonment costs the user nothing on the web: when effort outweighs reward, people use other sources of information instead, and "almost all people can use this option thanks to the Internet". Treat every extra step as a chance to lose the visitor to an alternative.
+  **Why** Abandonment used to need an available alternative and the authority to reject the system (managers in corporate systems); the Internet removed both conditions (p.50).
+  **Applies to** landing page, signup, onboarding. **Check** process: count steps and fields before the first reward; visual: the first screen shows the reward (PU-LOD-03). **Source** (p.50) (audit 2026-10-15)
+
+Viewed, nothing new beyond the rules above: p.40 (action-cycle intro, Norman 1988, Stone et al. 2005), p.43-47 (designer intuition, six difficulty factors, error prevention vs error correcting, inconsistency; image confirms the printed wording "Is this a last-ditch effort? Restart the computer after turning it off." on p.47), p.48-49 remaining reactions, p.51-53 (other bodily responses; People and Their Tasks).
+
 ## 3. Numbers & scales
 
 | Item | Value | Page |
@@ -106,6 +128,7 @@ Page convention: `p.NN` = PDF page (printed = PDF - 2). The material is adapted 
 | Difficulty factors | 6 (too much flexibility, jargon, unexpected design, exceptional differences, differences in problem-solving approach, inconsistency) | p.44-47 |
 | Psychological reactions | 5 (confusion, annoyance, frustration, panic/anxiety, boredom) | p.48-50 |
 | Behavioural responses | 7 (abandonment, partial use, indirect use, task modification, compensatory activity, abuse, direct programming) | p.50-52 |
+| Worked action-cycle examples | 2 (type and print a letter; find a good deal on an electrical device) (audit 2026-10-15, page images) | p.41-42 |
 
 ## 4. Dos and Don'ts
 
@@ -133,3 +156,4 @@ None. Pages 40-53 carry no figures (p.48 image checked; the others have no figur
 - p.52: the heading "People and Their Tasks" is followed by a sentence fragment ("understanding of the problems that the computer can help solve...") so the opening is truncated; the sense is that users lack understanding of what computers can solve for them.
 - p.40: the book attributes the model to Norman (1988) and Stone et al. (2005); no figure is included.
 - Pages with no extractable rule content: p.38 and p.39 (HCI/UX motivation, a Drexel alumnus quote) are covered in process-and-research.md.
+- (audit 2026-10-15, page images) Every page image p.40-53 has now been viewed. Added PU-ACT-04 (p.41-42), PU-RES-06 (p.48), PU-RES-07 (p.49), PU-RES-08 (p.50). Viewed, no new content: p.40, p.43-47, p.51-53. The p.47 "last-ditch effort" sentence is printed exactly as quoted above (not an OCR fault).

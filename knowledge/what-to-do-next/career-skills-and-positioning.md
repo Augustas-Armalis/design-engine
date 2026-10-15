@@ -78,6 +78,16 @@ Mostly career content for a human. Included are the learning/tooling rules (rele
   **Why** Book's own summary.
   **Applies to** all. **Check** n/a. **Source** (p.54-56) (opinion)
 
+### Audit additions: page images (audit 2026-10-15)
+
+- **RULE** When asked to explain your design process, cover the three points in the book's p.115 diagram: (1) make it clear you know what you are talking about (a broad overview of the UX/UI process), (2) share your work process and how you address issues, (3) share your thought process; and show you are not intimidated by challenges and deal with them calmly.
+  **Why** The recruiter uses this question to verify theory and practice; "they genuinely want to know about your thought process" (p.115-116, printed 113-114).
+  **Applies to** all (an agent presenting a design: overview, steps taken, problems met and how they were handled, reasoning). **Check** delivery notes contain process, issues handled and rationale; visual/manual. **Source** (p.115 diagram, p.116) (audit 2026-10-15)
+
+- **RULE** Before going independent, answer the three Experience questions in writing: "Do I have the necessary experience to venture out alone?", "Do I have a good name yet?", "Will my work be valued?"; then keep expanding services, because experience "does not happen overnight".
+  **Why** The book frames these as the questions that block most new freelancers; the Cowper and McDerment quote says you grow by pushing yourself to find new ways to help clients (p.44-45).
+  **Applies to** human-only. **Check** n/a. **Source** (p.44-45) (audit 2026-10-15)
+
 ## 3. Numbers & scales
 
 | Item | Value | Source |
@@ -111,3 +121,5 @@ Mostly career content for a human. Included are the learning/tooling rules (rele
 - p.14 and p.27 contain doubled text blocks in extraction (OCR/layout artefact).
 - p.11 chapter bullet "Allocate daily time for learning" sits mid-sentence in extraction; treated as a sidebar caption.
 - Skipped as no rule content: p.1-2 (cover, contents), p.3-5 (intro motivation; the teacher/music-friend anecdotes), p.12 (tree metaphor end), p.57 (closing pep-talk), p.58-62 agency definitions (see agency file), p.120 (closing).
+- (audit 2026-10-15, page images) Every page image of the book (p.1-120) has now been viewed: p.1-18, p.25-102 and p.115-120 in this pass, p.19-24 and p.103-114 in the earlier pass. New points from this pass are in the section 2 block "Audit additions: page images"; the book-wide list of pages viewed with no new content is in `knowledge/FREEBIES-COVERAGE-2026-10-15.md`.
+- (audit 2026-10-15, page images) The printed-page offset changes near the end: printed = PDF - 1 up to p.112; printed number 111 is used twice (PDF p.112 and p.113), so from p.113 on printed = PDF - 2 (PDF p.115 is printed 113, p.120 is printed 118). Page refs in this folder are PDF pages throughout.

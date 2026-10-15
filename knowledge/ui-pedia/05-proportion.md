@@ -52,9 +52,23 @@ The whole chapter is about one proportional system, the golden ratio (phi, about
   **Why** Responsive layouts cannot keep fixed ratios across viewports.
   **Applies to** all. **Check** visual at desktop width; do not fail breakpoints below it. **Source** (p.111)
 
-- **RULE (opinion)** Treat the golden ratio as a reference for beginners or for designers who want a mathematical approach, not as superior to other sizing/proportion methods.
+- **RULE** Treat the golden ratio as a reference for beginners or for designers who want a mathematical approach, not as superior to other sizing/proportion methods. (opinion)
   **Why** Book: some designers are fascinated, others consider it "just as legitimate as any other approach".
   **Applies to** all. **Check** n/a. **Source** (p.113)
+
+### Audit additions (audit 2026-10-15)
+
+- **RULE** In a two-part hero, give the copy block (headline, paragraph, CTA pair) the large square, 61.8% of the hero width, and put the illustration in the remaining 38.2% column, with the visual's focal action (in the book: the ball and hoop) where the spiral tightens near the top of that column. The book's opening hero measures 631 x 390 drawn px with the split at 390 px (390/631 = 0.618).
+  **Why** The page's own demo of the system on a real hero: text gets the calm, big field, and the image's focal point sits at the spiral eye, off-centre.
+  **Applies to** landing page. **Check** copy column width / hero width about 0.62 (tolerance +-0.03) at desktop; visual focal point in the narrow column's upper half. **Source** (p.103 figure) (audit 2026-10-15)
+
+- **RULE** Derive the header band from the smallest cell of the golden grid: the logo cell and the global-navigation bar share one row height, the last subdivision of the sidebar. In the book's 1024 x 633 window the cuts run 633 -> 391 -> 242 -> 149 -> 92, giving a logo cell of about 149 x 92 and a 92px global-nav band across the top (derived from the drawn step 3 and step 4 figures, not stated in text).
+  **Why** Step 4 aligns Logo and Global Navigation to the same small-cell row, so the header height is a member of the same ratio series as the columns.
+  **Applies to** landing page, SaaS app UI. **Check** header height / window height about 0.146 (92/633) when the golden grid is used; logo cell bottom == nav bar bottom. **Source** (p.112 figure) (audit 2026-10-15)
+
+- **RULE** Keep the main content area one undivided square and do all further subdivision inside the sidebar (logo cell, global-nav row, local navigation in the sidebar's lower square).
+  **Why** In every figure (p.111 and p.112 steps 2-4) the recursion only ever cuts the sidebar rectangle; the main square stays whole as the content field.
+  **Applies to** landing page, SaaS app UI (sidebar + content). **Check** visual: no grid lines from the ratio construction cross the main content square. **Source** (p.111, p.112) (audit 2026-10-15)
 
 ## 3. Numbers & scales
 
@@ -71,6 +85,11 @@ The whole chapter is about one proportional system, the golden ratio (phi, about
 | Browser-window golden rectangle | roughly 1024px x 633px (1024 / 1.618 = 632.9) | p.112 |
 | Derived 2-col split of 1024 x 633 window | main = square 633px; sidebar = portrait golden rect, 633 tall x about 391 wide (633 / 1.618). Derived from p.112 steps, not stated in text | p.112 |
 | Reading study | University of Reading, 2004: long lines need more leading | p.110 |
+| Line height (definition) | line height = font height + the white space between lines; it sets how densely lines are packed (p.108 diagram: "line height" bracket spans the outer dashed lines, "font size" bracket the inner ones) | p.108 (audit 2026-10-15) |
+| Opening hero split | drawn hero 631 x 390 px; copy square 390 px wide = 61.8%; illustration column 241 px = 38.2% | p.103 figure, measured (audit 2026-10-15) |
+| Golden grid cut series in a 1024 x 633 window | 633 -> 391 -> 242 -> 149 -> 92 (each = previous / 1.618); main square 633, lower sidebar square 391, upper sidebar square 242, small cells about 149 x 149 and 149 x 92 | p.112 step 3 figure, measured at scale 1024/355 (audit 2026-10-15) |
+| Header band (step 4) | logo cell about 149 x 92; Global Navigation band about 92 px tall, same height as the logo cell (about 14.6% of 633) | p.112 step 4 figure, derived (audit 2026-10-15) |
+| Spiral crop example | small figure (person) sits about 66% across and 73% down the frame, inside the spiral's innermost squares; tree crown fills the upper-right square | p.110 figure, measured (audit 2026-10-15) |
 
 The book's multiplication gives 25.88, but 16 x 1.618 = 25.888 (would round to 25.89). Immaterial, the book rounds to 26px.
 
@@ -80,6 +99,8 @@ The book's multiplication gives 25.88, but 16 x 1.618 = 25.888 (would round to 2
 - **Do (p.110, p.112 figure):** two-column layout with the square as main area and a narrower golden-rectangle sidebar that itself subdivides into squares (small cells at its top, usable for logo and nav). Final wireframe (p.112 step 4): Logo in the top-left small cell, Global Navigation across the top over the main area, Local Navigation in the lower sidebar, Main Content Area filling the square.
 - **Do (p.103 opening figure):** a landing hero where the spiral overlay shows the headline and CTAs in the large left square, and the illustration (basketball player) in the right-hand column where the spiral tightens, with the dunking arm/hoop at the spiral eye. Shows the system applied to a real hero, not just theory.
 - **Do (p.110):** crop an image so the focal subject lies in the small end of the spiral. No explicit bad crop is shown.
+- **Do (p.112 step 4 figure):** the header row is one band: a narrow Logo cell at far left and a Global Navigation bar continuing to the right edge at the same height; the sidebar below the band carries Local Navigation (tinted, full sidebar width) and the main square stays empty for content. Shows the logo and global nav sharing one grid row rather than the logo sitting above the nav. (audit 2026-10-15)
+- **Do / Don't (p.109 figure, visual treatment):** the golden version is shown as the emphasised card (tinted, accent border) and the non-golden one in plain grey; both use the same column width and copy, so the only variables are heading size (26 vs 18) and line height (26 vs 19). The Don't heading at 18px over 16px body is a 1.125 step, which reads as a bold sentence rather than a heading. (audit 2026-10-15)
 
 ## 5. Exceptions & judgement calls
 
@@ -105,3 +126,6 @@ Copied to examples/ui-pedia/proportion/.
 - The p.109 figure text repeats "16 = 16 x 1.618" with the phi glyph dropped; the p.108 text shows it is 16phi = 16 x 1.618. Also the figure labels "line-hieght" (typo in the book's image).
 - The book does not say whether the spiral should open to the left or right for the crop, or how to handle portrait crops. Not specified.
 - The book does not say what to do with sidebar vs main ordering at narrow widths (stacking order) beyond "hard to support across viewports".
+- (audit 2026-10-15) Coverage re-check: all 11 page images p.103-113 viewed. Pages with no rule content: p.104 (formula and Rizzolatti/Di Dio study; the a/b bar diagram only illustrates a > b), p.105 (Giza, Parthenon, Mona Lisa examples), p.106 (golden rectangle construction), p.107 (spiral construction ABCD/ABEF/EFDC, flora and hurricanes), p.113 (closing hedge). The low rule count (7 + 1 opinion before audit) reflects the chapter: only p.108-112 carry applicable guidance; the figure-only content missed before was the 61.8/38.2 hero split (p.103), the 92px header-band cell and undivided main square (p.112), and the line-height definition (p.108).
+- (audit 2026-10-15) Citation note: section 4's "Do (p.110, p.112 figure)" two-column bullet refers to the figure on p.111 (sidebar + main content), not p.110 (p.110 is the photo crop). Text left as written.
+- (audit 2026-10-15) Format fix: rules written as `**RULE (qualifier)**` were invisible to `tools/build_index.py` (its opener regex does not accept a parenthesised qualifier inside the bold), so they never reached `system/rules/index.json`. Normalised to `**RULE** <text> (qualifier)`; wording unchanged.

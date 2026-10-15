@@ -65,6 +65,20 @@ All rules here are process/scope guidance extracted from prose; none is numeric.
   **Why** Scope diagram, p.13.
   **Applies to** all. **Check** process: review a design against each ring. **Source** (p.13)
 
+### Audit additions (audit 2026-10-15)
+
+- **RULE** Illustrate design ideas as storyboards, process flows and sitemaps before high-fidelity screens, and gather/evaluate user requirements together with product managers and engineers.
+  **Why** Listed as UI/UX role responsibilities; structure and flow are agreed before visual polish.
+  **Applies to** all (process). **Check** process: a flow or sitemap artefact exists for multi-screen work. **Source** (p.11) (audit 2026-10-15)
+
+- **RULE** Treat responsiveness problems as UX defects the designer must identify and troubleshoot, not as developer clean-up.
+  **Why** "Identifying and troubleshooting UX problems (e.g., responsiveness)" is in the role list.
+  **Applies to** all. **Check** render at mobile and desktop widths before hand-off. **Source** (p.12) (audit 2026-10-15)
+
+- **RULE** Design the "no results" state of a search: keep the search field (with the query and a clear X) and the filter chips visible, and show an illustration, a short title ("Not Found") and one sentence that states the cause and the recovery ("Sorry, the keyword you entered cannot be found, please check again or search with another keyword") (read from the music-app figure).
+  **Why** The empty state is a UI deliverable shown next to the results list and the action sheet; it tells the user what happened and what to do next.
+  **Applies to** SaaS app UI | mobile. **Check** a zero-result query renders title + cause/recovery sentence, and the query and filters stay editable. **Source** (p.12) (audit 2026-10-15)
+
 ## 3. Numbers & scales
 
 None given in this chapter. No sizes, ratios, spacing, contrast values, durations or breakpoints. Only incidental facts:
@@ -132,3 +146,4 @@ Pages with no rule content (accounted for, read, no extractable design rule):
 - p.28: CX vs UX figure (section 6).
 - p.29-31: CX definition and responsibilities (section 1, 5); no design rule.
 - p.32-33: how to get started; principles come first (section 1).
+- (audit 2026-10-15) Lighter-pass audit: every page p.4-33 text read. Page images viewed: p.4 (chapter divider "01 Introduction" on a purple gradient), p.7, p.12, p.13, p.15, p.25, p.28; all other pages are plain prose, text read only. p.12 figure also shows a row of pill filter chips (first one filled orange; labels too small to read reliably, roughly Songs/Artists/Albums/Folders) above search results and a bottom action sheet (Play Next / Add to Playing Queue); captured in the audit rules. No numeric content; no corrections.

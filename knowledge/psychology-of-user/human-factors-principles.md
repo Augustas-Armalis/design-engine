@@ -111,6 +111,15 @@ Page convention: `p.NN` = PDF page (printed = PDF - 2). Section 2 is the book's 
   **Why** User-centered design: it is not the users' fault but design defects that cause mistakes (p.90).
   **Applies to** all (copy). **Check** copy lint on error text: no "you entered an invalid", "you failed", "your mistake"; phrase as what the system needs. **Source** (p.90)
 
+### Audit additions: page images (audit 2026-10-15)
+
+Viewed p.82-90 as images. No new rule. Findings:
+- p.83: the book describes human factors as "a synthesis of a variety of disciplines, such as psychology, sociology, engineering, and industrial design". Framing only; it supports PU-PRO-21 (ethics and context-of-use research) in process-and-research.md.
+- p.84: the image shows the three ergonomics variables in a callout box under their lead-in sentence; the order in PU-ERG-01 matches the print (resolves the p.84 item in section 7).
+- p.86: Jakob's Law is printed under the name "Law of Internet User Experience". Covered by PU-MOD-02.
+
+Viewed, nothing new: p.82 (military/aviation roots), p.85 (consistency internal/external), p.87 (sense of control), p.88-89 (efficiency list), p.90 (error management).
+
 ## 3. Numbers & scales
 
 | Item | Value | Page |
@@ -171,3 +180,4 @@ None in this range. Page 87 checked: text only with a bullet list. No UI example
 - Gap: the book contains no coverage of motivation, persuasion, trust, social proof, scarcity, Hick's Law, Hick-Hyman, Doherty, Von Restorff, Zeigarnik, peak-end rule, Postel's law, dark patterns, colour psychology, reading patterns (F or Z), or accessibility standards. Anything on these in this folder is marked [engine note].
 - p.91: Wizard of Oz description appears on p.91 and cognitive walkthrough on p.92 (reversed order with its heading "Cognitive Walkthrough"); content mapped by text.
 - p.93: "Points To Remember" paragraph restates the thesis; no rule content.
+- (audit 2026-10-15, page images) Every page image p.82-93 has now been viewed (p.82-90 in this pass, p.91-93 earlier). No new rules. Resolved: the p.84 ergonomics variables sit in a callout box under their lead-in; the order in PU-ERG-01 matches the print. Viewed, no new content: p.82-90 (details in the section 2 audit block).

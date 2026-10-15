@@ -101,7 +101,7 @@ The chapter is mostly qualitative. It gives a terminology layer (anatomy, famili
   **Why** Scalable type across screen sizes requires one agreed scale.
   **Applies to** all (process). **Check** presence of a documented scale. **Source** (p.278-279)
 
-- **RULE** Worked scale shown: H1 Heavy, H2 Bold, H3 Bold, Subtitle Regular, Body 1 Regular, Button Medium (sizes decrease down the list; no px values given). Replicate that structure: weight steps down from Heavy to Regular as size steps down, with Medium reserved for button labels.
+- **RULE** Worked scale shown: H1 Heavy, H2 Bold, H3 Bold, Subtitle Regular, Body 1 Regular, Button Medium (H1 > H2 > H3 > Subtitle in size; Subtitle, Body 1 and Button are drawn at about the same size; no px values given). Replicate that structure: weight steps down from Heavy to Regular as size steps down, with Medium reserved for button labels.
   **Why** Weight plus size together make the levels distinct.
   **Applies to** all. **Check** computed weight order h1 >= h2 >= h3 >= body; button weight 500-ish. **Source** (p.279)
 
@@ -192,6 +192,36 @@ The chapter is mostly qualitative. It gives a terminology layer (anatomy, famili
   **Why** Saves time and money; catches typographic problems early.
   **Applies to** all (process). **Check** n/a. **Source** (p.283-285)
 
+### Audit additions (audit 2026-10-15)
+
+- **RULE** Below the heading levels, let the small roles share one size and separate them by weight and role instead: in the type-scale card only H1, H2, H3 and Subtitle step down in size, while Subtitle, Body 1 and Button are drawn at about the same size, with Button set apart by Medium weight against Regular body (figure-derived; the text does not say this).
+  **Why** Extra sizes near body size are hard to tell apart; a weight change separates a button label from body copy more cleanly than a 1-2px size step.
+  **Applies to** all. **Check** computed `font-size` of subtitle/body/button roles equal or within 1px; button `font-weight` one step above body (e.g. 500 vs 400). **Source** (p.279) (audit 2026-10-15)
+
+- **RULE** Give headings a different colour from body copy as well as a larger size: the text says "A different color enhances the visual effect" of hierarchical headings, and in the example the headline is near-black while the subtitle under it is mid-grey.
+  **Why** Colour difference adds a second cue, so the heading stands out faster when scanning.
+  **Applies to** all. **Check** computed `color` of `h1`-`h3` differs from `p` (heading darker or brand-coloured); `visual`. **Source** (p.275-276) (audit 2026-10-15)
+
+- **RULE** When a novelty, script, ink or pixel face carries the display word, set the supporting line under or beside it in a plain sans: "INK BANDITS" and "Milkshake" each sit over a small bold sans tagline "Time Stop the working"; "Butterflu Kids" (script) has a small sans label "Way to Schhol" in the corner; "Mac Book M2 Chip" (heavy slab) has a plain sans subline "A1 Faster Machine In world".
+  **Why** The plain line keeps the readable content legible while the novelty face carries only the mood (figure pattern repeated across four examples).
+  **Applies to** landing page. **Check** the element following a novelty/script display element uses the body/UI sans family; `visual`. **Source** (p.261, p.267-268) (audit 2026-10-15)
+
+- **RULE** For a "current of total" index counter, emphasise the current number and mute the total: "02/04" and "09/08" with the "/04" and "/08" in light grey; "09/22" with "09" in accent blue and "/22" in grey; a hero slider counter "01/12" sits centred between two short hairlines (figure-derived).
+  **Why** Two tones let the eye read position first and range second without a label.
+  **Applies to** landing page. **Check** counter markup has two spans with different `color`, current darker or accent; `visual`. **Source** (p.253, p.282) (audit 2026-10-15)
+
+- **RULE** In a card text stack, order the type as the example does: a small muted-grey category label ("Computers", "Desktop") above a medium-weight two-line title ("Create Design Portfolio"), then tiny body text, then a hairline rule, then the large counter (figure-derived).
+  **Why** Each level differs in size, weight or colour, so the card scans top to bottom with one dominant line (the title).
+  **Applies to** landing page | SaaS app UI. **Check** label `color` lighter and `font-size` smaller than card title; `visual`. **Source** (p.253) (audit 2026-10-15)
+
+- **RULE** For a centred uppercase/lowercase contrast block, use this stack: a mixed-case eyebrow line ("Be me you are UI designer") flanked left and right by short horizontal hairlines that fade out at their outer ends, then a bold all-caps heading with very wide tracking in the brand slate, then mixed-case centred body directly beneath (figure-derived).
+  **Why** Case change plus tracking marks the heading as a different role without a second font; the hairlines frame the eyebrow as a label.
+  **Applies to** landing page. **Check** caps heading `text-transform: uppercase` or caps text with `letter-spacing` clearly positive (~0.2em+ by eye); `visual`. **Source** (p.281) (audit 2026-10-15)
+
+- **RULE** In form validation, keep the valid fields in their normal fill and add only a green check icon inside the right end of the field; switch the invalid field's fill to a pink/red tint with a red cross icon in the same position; put the error summary at the top of the form as red text beside a filled red circular "i" icon. Field labels sit above each field in small bold dark text.
+  **Why** Only the broken field changes surface colour, so the eye goes straight to it; the icon carries the state as well as the colour.
+  **Applies to** forms. **Check** valid input `background-color` equals default; invalid input background differs and has an icon; error summary precedes the first field; `visual`. **Source** (p.280) (audit 2026-10-15)
+
 ## 3. Numbers & scales
 
 | Item | Value | Source |
@@ -205,6 +235,15 @@ The chapter is mostly qualitative. It gives a terminology layer (anatomy, famili
 | Anatomy terms in figure | Ascender line, X-height, Base line, Descender line; ear, bar, shoulder, closed/open counter, stem (spelled "Steam"), loop, bowl (spelled "Bowel"), link, serif, ascender (spelled "Acender"), descender (spelled "Decender") | (p.251) |
 
 (No px sizes, ratios, measure widths or contrast ratios are given in this chapter.)
+
+Figure measurements (estimated from the page images by eye or by pixel counting; NOT stated in the text, so treat as approximate evidence, not book rules):
+- Type-scale card cap heights: H1 : H2 ≈ 1.4, H2 : H3 ≈ 1.28, H3 : Subtitle ≈ 1.2; Subtitle, Body 1 and Button ≈ equal; H1 ≈ 2.1x Body 1. The weight labels (HEAVY, BOLD, REGULAR, MEDIUM) are set right-aligned in caps at one size. "Body 1" implies numbered body styles (no Body 2 shown). (p.279) (audit 2026-10-15)
+- Leading figure: same font size and same line breaks in both cards; line pitch ≈ 18 vs ≈ 25 image px (open ≈ 1.4x tight). If the open card is the book's 1.5 default, the tight card is ≈ 1.05-1.1. (p.265) (audit 2026-10-15)
+- "Which one is easier to read" figure: right paragraph type ≈ 1.28x larger than left, line pitch ≈ 1.6x (≈ 22 vs ≈ 14 image px); both hold about 41-45 characters per line, so the difference is size + leading + tracking, not measure. (p.274) (audit 2026-10-15)
+- "Less vs More White Space" cards: same font size in both; the good card has slightly more leading (≈ 19.5 vs 18 image px pitch, ≈ 1.08x), a larger heading-to-body gap (≈ 31 vs 23 image px), the copy split into three paragraphs, and less copy; the text-to-image gutter is about the same. (p.273) (audit 2026-10-15)
+- Hero headline vs its subtitle/body, by character width: ≈ 1.65x on the "How Become a UI Designer..?" page; ≈ 1.8x on the "All in one solution to your Finance problems" hero (title there is medium weight in the figure, though the caption calls it "big, bold"). Section label "UI New Books" ≈ 1.7x the card captions. (p.275, p.277) (audit 2026-10-15)
+- All-caps heading tracking on the case-contrast example: very wide, roughly 0.2-0.3em by eye; small all-caps lines in the Futura poster are also widely tracked. (p.259, p.281) (audit 2026-10-15)
+- Cultural faces: "far fewer options than novelty styles". Novelty faces: "hundreds" of styles beyond bold/italic. (p.260, p.262) (audit 2026-10-15)
 
 ## 4. Dos and Don'ts
 
@@ -224,6 +263,22 @@ Observed flaws in the book's own figures (useful as negative lessons, not endors
 - p.281 italic/bold example: the script word "Graphical" overlaps the line "THE MOST COMMON CUI IS A" above it; collisions like that hurt legibility (engine note: visible in the image only; the text does not criticise it).
 - p.280 invalid-field label and field text are small, low-contrast grey on pale tint (visible in figure); the error message at top is small red text.
 - Several demo screens use very small caption and body text (nav items, card captions) relative to headlines.
+
+Audit additions (audit 2026-10-15):
+
+| Do | Don't | Source |
+|---|---|---|
+| Single sans in one regular-to-medium weight for the whole quote | Bold "Happiness" + regular "is a" + thin script "not" + condensed caps "PLACE": four style changes in eight words (adds weight mixing within the sans, not only three families) (audit 2026-10-15) | (p.270) |
+| Open leading at the same size and same line breaks (line pitch ≈ 1.4x the tight card) | Identical paragraph with lines almost touching; only leading differs, proving leading alone changes the paragraph (audit 2026-10-15) | (p.265) |
+| Same text split into short paragraphs with a bigger gap under the heading and less copy | One unbroken 17-line block running from heading to card bottom (audit 2026-10-15) | (p.273) |
+| Novelty display word + plain sans tagline under it ("INK BANDITS" / "Time Stop the working") | n/a (positive pattern repeated on p.261, p.267, p.268) (audit 2026-10-15) | (p.261, p.267-268) |
+| Primary filled CTA ("Get Started", dark slate) left, secondary outlined CTA ("Watch Demo") right, both the same height and width under a two-line title | n/a (positive example only) (audit 2026-10-15) | (p.277) |
+| Valid field: normal light fill + green check; invalid field: pink fill + red cross; red "i" summary at top | n/a (positive example; see figure flaws below) (audit 2026-10-15) | (p.280) |
+
+Further figure flaws seen in the audit (not criticised by the text) (audit 2026-10-15):
+- p.280 error summary is written in Title Case On Every Word and misspells "Invaild"; sentence case would read faster. Labels use a space before the colon ("Mail Address :").
+- p.281 the centred body line under the caps heading runs about 95 characters on one line, much wider than the heading above it.
+- p.279 the type-scale figure does not render its own labels faithfully: "H 3" is drawn visibly lighter than "H 2" although both are labelled BOLD.
 
 ## 5. Exceptions & judgement calls
 
@@ -257,6 +312,9 @@ Copied to `examples/ui-pedia/typography/`:
 - p.279: type scale card (H1 Heavy ... Button Medium).
 - p.280: form with red error message, green/red field states.
 - p.281: uppercase/lowercase contrast and italic/bold emphasis examples.
+- p.253: card text stack (muted category label, two-line title, tiny body, hairline, two-tone "02/04" counter) and hero slider counter "01/12" between hairlines. (audit 2026-10-15)
+- p.282: two-tone "09/22" counter (accent current, grey total) above a two-line title and tiny deck; active nav item marked by a dot under the label. (audit 2026-10-15)
+- p.261: novelty display words ("INK BANDITS", "Milkshake") each paired with a plain bold sans tagline. (audit 2026-10-15)
 
 ## 7. Open questions
 
@@ -303,3 +361,11 @@ Page accounting (PDF pages):
 - p.283 practices 8-10
 - p.284 prototyping figure and checklist
 - p.285 final sentence on user testing
+
+Audit notes (audit 2026-10-15):
+- (audit 2026-10-15) corrected: type-scale rule said "sizes decrease down the list", was that; page shows H1 > H2 > H3 > Subtitle with Subtitle, Body 1 and Button drawn at about the same size (p.279)
+- (audit 2026-10-15) observation, not corrected: the white-space rule and Dos row describe the good card as having "a wider gutter"; measured on the image, the text-to-image gutter is about the same in both cards (≈ 11-13 image px); the real differences are paragraph breaks, heading gap, slightly more leading and less copy (p.273).
+- (audit 2026-10-15) p.270 prints a stray placeholder sentence under "Do not use too many typefaces and fonts" ("This page could not be loaded. If you have cookies disabled ... please try enabling."); it is a copy error in the book, not content.
+- (audit 2026-10-15) p.276 pull-quote is not empty of content: its last sentence "A different color enhances the visual effect" is now captured as a rule.
+- (audit 2026-10-15) no rule content: p.252 (chapter intro, "additional swashes" teaser), p.254 and p.257 (pull-quotes restating earlier text), p.255 (benefit 1 restated in core ideas), p.258 (benefits 3-4, already in core ideas), p.269 poster (decorative), p.284-285 prototyping tool mention (Mockplus, Figma) beyond the checklist already captured.
+- (audit 2026-10-15) all 35 page images (p.251-285) were viewed; page-image measurements in section 3 are estimates from the rendered pages at 1056 px width.

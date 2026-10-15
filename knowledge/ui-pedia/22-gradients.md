@@ -89,6 +89,24 @@ Chapter of "UI Pedia" (Design Basics). Mostly qualitative and trend-driven (2018
   **Why** The type determines the visual effect: direction, focal glow, or enclosure.
   **Applies to** all. **Check** CSS `linear-gradient` / `radial-gradient`; reflected = symmetrical stops (A, B, A). **Source** (p.541-543)
 
+### Audit additions (audit 2026-10-15)
+
+- **RULE** For a gradient logo, build it from the brand palette and choose intensity by intent: strong colours for an overt impression, softer hues for a subdued one. Keep the gradient in the mark and set the wordmark in a flat solid colour (the MASHEL example: violet-to-lavender gradient glyph over a solid dark-slate wordmark).
+  **Why** The logo is "the public face of your business", so it is the most visible place to carry the brand palette; a solid wordmark keeps the name legible.
+  **Applies to** landing page (brand). **Check** visual: gradient only on the mark; wordmark is one solid fill. **Source** (p.545) (audit 2026-10-15)
+
+- **RULE** For UI surfaces (cards, buttons, panels), put the light end of a gradient at the top or top-left (or the centre, for radial) and the dark end at the bottom or bottom-right. All of the book's own type-demonstration swatches follow this: linear light periwinkle top-left to dark slate bottom-right (p.538, p.540, p.541), radial light centre to dark edges (p.540, p.542), reflected light top to dark bottom (p.542). Brand marks are free to differ: the Instagram logo figure is warmest and lightest at the bottom-left (orange) and darkest at the top (purple) (p.539).
+  **Why** It matches a light source from above, which is how the chapter frames gradients as light and shadow giving depth (p.544). The orientation is a consistent pattern in the figures; the text does not state it.
+  **Applies to** all. **Check** for each `linear-gradient`, the first (top/top-left) stop has the higher OKLCH L; radial centre stop is lightest. **Source** (p.538, p.540-542, p.544) (audit 2026-10-15)
+
+- **RULE** In product UI, confine gradients to small accent surfaces (content cards, chart lines, one upgrade CTA) and keep the shell flat. The p.548 dashboard uses a solid dark-navy sidebar and a flat white canvas; gradients appear only on three illustrated "Word Sets" cards, the two chart lines (cyan and magenta) and the "Try now" upgrade button.
+  **Why** Striking gradients on design elements make "a significant effect without being overpowering visually" (p.547).
+  **Applies to** SaaS app UI. **Check** sidebar, header and page background have no gradient fill; count gradient surfaces per screen. **Source** (p.547-548) (audit 2026-10-15)
+
+- **RULE** On a full-bleed gradient page background, keep what sits on it calm: a translucent frosted card with a faint lighter edge, outlined inputs, and a solid (non-gradient) primary button. The p.547 login keeps the "Login" button solid dark slate on a teal-green-yellow diagonal gradient.
+  **Why** One gradient surface per composition keeps the controls readable and the gradient as the mood layer.
+  **Applies to** landing page | forms. **Check** the CTA on a gradient background has a solid fill; card uses translucency, not a second gradient. **Source** (p.547) (audit 2026-10-15)
+
 ## 3. Numbers & scales
 
 The chapter has no measured values (no angles, stop positions, opacities, hex values for gradients). The only quantities:
@@ -105,6 +123,10 @@ The chapter has no measured values (no angles, stop positions, opacities, hex va
 Figure colour observations (approximate, from the images, not stated in text):
 - p.538 swatch: diagonal periwinkle-blue (#758EFE-like, matches the #758EFE used on p.573) at top-left, through a teal-blue, to dark slate (#495A7C, matches p.573) bottom-right.
 - p.573 gradient spec card: #758EFE 100% opacity to #495A7C 100% opacity (this appears in the shadows chapter but is the same gradient as the Linear example).
+
+- p.538 swatch is a three-stop diagonal: periwinkle (top-left), a lighter, more saturated sky/teal-blue band placed nearer the light end, dark slate (bottom-right). The middle stop is not a muddy average of the two ends (figure observation, positions approximate) (audit 2026-10-15)
+- p.547 login background: diagonal from dark teal-blue (bottom-left) through green (middle) to warm yellow (top-right) (audit 2026-10-15)
+- Gradient types figure p.540 has 4 swatches in this order: linear, radial, a near-flat mid-blue (reflected or flat mid-tone), flat dark slate reference (audit 2026-10-15)
 
 ## 4. Dos and Don'ts
 
@@ -126,6 +148,10 @@ Figure colour observations (approximate, from the images, not stated in text):
 - DON'T: vibrant pink and yellow gradient for established-entrepreneur audiences (p.555).
 - DON'T: gradients "used improperly" look unprofessional and uninspired (p.553).
 - DON'T: complicate the design, go too far (p.554).
+
+- **Do** (p.548 apps) Shoe-store grid: each product tile gets its own vivid gradient tied to the shoe's colour name label (Black on blue-cyan, Red on cyan, Blue on yellow, White on pink-violet); the detail screen uses a solid saturated blue hero with a white bottom sheet and a solid blue "Add to cart" button. Gradient as per-item colour coding; solid colour on the decision screen. (audit 2026-10-15)
+- **Do** (p.536) the mash gradient carries visible fine grain/noise over the blend and uses an outline (stroke-only) display title so the type does not compete with the colour field. (audit 2026-10-15)
+- **Do** (p.549 print) dark teal card with a gold-to-bronze gradient used only on the logo mark and a hexagon badge: gradient as a metallic accent on an otherwise flat dark surface. (audit 2026-10-15)
 
 ## 5. Exceptions & judgement calls
 
@@ -160,3 +186,7 @@ Copied to examples/ui-pedia/gradients/.
 - p.556: conclusion sentence "unlike other throwbacks from the." is truncated in the source.
 - Pages with little or no extractable rule content: p.536 and p.537 (intro and definitions only, restated in section 1), p.538-540 (descriptive and trend history, no rules beyond section 1), p.544 (logo/light-and-shadow prose, covered), p.545-550 (use-case showcases, covered in rules and section 4), p.556 (conclusion; restates "don't be scared of gradients", gradients are one more tool, shading/highlights give dimension as flat UI declines).
 - The book gives no numeric guidance for stops, angles, opacity or overlay strength.
+
+- (audit 2026-10-15) Reflected gradient text vs figure: p.542-543 text says a reflected gradient has "the same colour at its beginning and conclusion" with a different shade in the middle, but the p.542 figure runs periwinkle (top) -> lavender-grey band (middle) -> dark slate (bottom), so its two ends differ. The rule above keeps the text definition (A, B, A); the figure is not a clean example of it.
+- (audit 2026-10-15) Linear text vs figure: p.541 text says the classic linear gradient runs "horizontally or vertically", while its own figure and the Apple Music example are diagonal (top-left to bottom-right).
+- (audit 2026-10-15) Pages viewed as images: p.536, 537, 538, 539, 540, 541, 542, 545, 546, 547, 548, 549, 550, 552. Text-only (prose, no figures): p.543, 544, 551, 553, 554, 555, 556.

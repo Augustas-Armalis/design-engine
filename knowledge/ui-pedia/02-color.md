@@ -202,6 +202,60 @@ Wheel basis: Isaac Newton's colour wheel (1666) with primary red/blue/yellow, se
   **Why** Used to justify care in logo, brand and packaging colour (p.36, p.57). No primary source given.
   **Applies to** brand decisions. **Check** n/a (motivation only). **Source** (p.36, p.57)
 
+### Audit additions (audit 2026-10-15)
+
+- **RULE** (figure-derived) In a dark UI, build the surfaces from two values of one hue and keep one bright accent for action and selection. The p.37 travel app uses #272343 for the page and #443D72 for every raised surface (the stat card and the sticky bottom price bar). Yellow #FFD803 marks the primary CTA ("Book Now"), the active tab (yellow label with a short underline narrower than the word), the rating stars, the inline "Continue reading" link and the location pin. Light blue #82C6FE marks the secondary text link ("Show on Maps", underlined) and two of the stat icons. Headings and body text are white, and meta labels (Duration, Distance, Sunny) are a muted lavender.
+  **Why** Two surface steps of the same hue give depth without adding hues, and a single accent gives the eye one route to the action (p.37 figure).
+  **Applies to** mobile | SaaS app UI. **Check** dark-theme surface tokens share one hue; the accent hue appears only on the CTA, the selected state, links and ratings. **Source** (p.37) (audit 2026-10-15)
+
+- **RULE** (figure-derived) When the button fill is a light, high-luminance hue such as yellow, set the label in a dark colour, never white. Examples: "Book Now" is dark navy on #FFD803 (p.37), "CHECKOUT" is dark grey on yellow (p.64), the triad secondary is navy on yellow #FDF01F (p.51), and the monochromatic secondary is dark text on light pink #FFCECE (p.50).
+  **Why** A light fill only stays readable with a dark label; white on yellow nearly disappears (see the p.53 counter-example in section 4).
+  **Applies to** all. **Check** computed contrast of the button label against its fill. **Source** (p.37, p.50, p.51, p.64) (audit 2026-10-15)
+
+- **RULE** Generate shades by mixing the base colour with black at the book's steps of 17%, 34%, 51%, 63% and 75% (100% = black). Generate tints by mixing the pure hue with white at 46%, 54%, 62%, 70% and 78% (100% = white). Sampling the p.62 swatches shows these are plain linear sRGB mixes. Shades of base #758BFD: 17% #6174D3, 34% #4D5CA8, 51% #39447C, 63% #2B335E, 75% #1E243E. Tints of pure #002AFF: 46% #758BFD, 54% #899CFD, 62% #9DADFD, 70% #B1BEFD, 78% #C6CFFD.
+  **Why** Mixing with one fixed partner keeps every step on the same hue, so the ramp stays harmonious (p.62, p.63).
+  **Applies to** token generation. **Check** recompute each token as mix(base, black or white, p) and compare the hex values. **Source** (p.62) (audit 2026-10-15)
+
+- **RULE** (figure-derived) Take the UI base colour as a tint of the fully saturated hue, not the pure hue itself. On p.62, "Base Color" #758BFD (HSB 230 deg, S 54%, B 99%) is exactly pure #002AFF (S 100%) mixed with 46% white, and the hue, shade and tone rows all start from that tint.
+  **Why** The pure 100%-saturation hue is kept only as the tint row's starting point. The working colour is a softer step that leaves room for darker and lighter variants on both sides (p.62).
+  **Applies to** token generation. **Check** the brand base token is not a 100%-saturation primary; HSB S of the base is below 100. **Source** (p.62) (audit 2026-10-15)
+
+- **RULE** For neighbouring hue variants, rotate the hue in 5-degree steps up to +/-15 degrees from the base while holding saturation and brightness. The p.62 hue row measures #74ACFB (-15, about 215 deg), #74A1FB (-10), #7495FB (-5), #758BFD (base, about 230 deg), #747FFB (+5), #7474FB (+10) and #7F74FB (+15, about 245 deg), all at S about 54% and B about 98%. The p.64 default SIGN UP gradient uses the same move: #7F64FC (251 deg) to #5E6AF5 (235 deg), roughly a 15-degree span at about the same S and B.
+  **Why** A small hue rotation at constant S and B gives related colours that stay in one family (p.62).
+  **Applies to** token generation | gradients. **Check** HSB of the variants: H differs from the base by multiples of 5 deg up to 15 deg; S and B equal the base's within a few points. **Source** (p.62, p.64) (audit 2026-10-15)
+
+- **RULE** (figure-derived) Make the hover/pressed state by lowering brightness by about 30 points at the same hue and saturation. Make the disabled and loading states by dropping saturation to about 25% at the same brightness. Measured on p.64: default SIGN UP #7F64FC to #5E6AF5 (S about 60%, B 96-99%); hover #5A46B1 to #4349AC (S about 60%, B 67-69%); disabled #C8BDFD (S 25%, B 99%); Submit #1C71F0 (S 88%, B 94%) becomes "Submitting..." #B9CFF6 (S 25%, B 96%).
+  **Why** The user reads the state as the same control turning darker (engaged) or washing out (unavailable) with no change of hue (p.64, p.65).
+  **Applies to** buttons | links. **Check** HSB of each state token compared with the default: hover lowers B and keeps H and S; disabled lowers S and keeps H and B. **Source** (p.64) (audit 2026-10-15)
+
+- **RULE** (figure-derived) For a loading state, change the label to the progressive verb with an ellipsis ("Submit" -> "Submitting..."), fade the button body to the light tint, and draw the progress indicator in the full-strength hue. The indicator is either a spinner placed before the label or a progress bar along the button's top edge (bar about #1870F2, the same blue as the default fill, shown about 70% complete).
+  **Why** The faded body says "not clickable now", while the full-strength indicator shows the action is still running (p.64).
+  **Applies to** buttons | forms. **Check** each submit button has a loading state; the indicator colour equals the default fill; the label text changes. **Source** (p.64) (audit 2026-10-15)
+
+- **RULE** (figure-derived) Give solid filled buttons a soft drop shadow tinted with their own fill hue: a violet glow under SIGN UP and a blue glow under Submit (p.64), and a red-tinted shadow under the red Primary in the scheme kits (pp.50-53). Outline and text-only tiers have no coloured glow.
+  **Why** The tinted shadow lifts the primary fill off a light page without adding a new colour (pp.50-56, p.64 figures).
+  **Applies to** landing page | SaaS app UI (light themes; see section 5 for dark). **Check** `box-shadow` colour of the primary button shares the fill's hue; outline buttons have no coloured shadow. **Source** (pp.50-53, p.64) (audit 2026-10-15)
+
+- **RULE** (figure-derived) Keep the primary, secondary and tertiary buttons the same width, height and corner radius, and change only the fill treatment (solid fill > second hue or tint fill > outline > text-only). Every scheme kit on pp.50-56 stacks three identical boxes that differ only in fill.
+  **Why** With size held constant, fill weight alone carries the rank, so the group reads as one family.
+  **Applies to** SaaS app UI | landing page. **Check** computed width, height and border-radius are equal across button tiers within one group. **Source** (pp.50-56) (audit 2026-10-15)
+
+- **RULE** (figure-derived) In status alerts, put the status hue only on the icon disc, a very light background tint and a slightly stronger border. Keep the title dark navy and bold, keep the message neutral grey, and style an inline action ("Check status") as an underlined link in the same message grey, not in the status colour. Each status also gets its own glyph: truck = success, i = info, ! = warning, triangle = error. Sampled icon discs: success #4FD869, info #3185E8, warning #FDBF21, error #FB5657. The close X is a neutral grey (about #80808A) on all four.
+  **Why** Glyph plus hue identify the status, while neutral text stays readable on every tint; the layout is identical across all four alerts, so only colour and glyph change (p.65).
+  **Applies to** SaaS app UI | forms | toasts/alerts. **Check** alert title and body text colours are not the status hue; each status uses a distinct icon glyph. **Source** (p.65) (audit 2026-10-15)
+
+- **RULE** (figure-derived) Read the 30% "secondary brand colour" as a dark, low-saturation brand neutral and the 10% "main brand colour" as the one saturated accent. Both of the book's 60/30/10 donuts do this. The 30% is a near-black slate: #344259 (HSB S 42%, B 35%) on p.59 and #202C3A (S 45%, B 23%) on p.61. The 10% is saturated: violet #7A68F2 on p.59 and orange #FA9B43 on p.61. The 60% is near-white: #F5F5FF and #FBFBFB.
+  **Why** This keeps saturated colour to about a tenth of the area, in line with "saturation overload kills color vibrancy" (p.64).
+  **Applies to** all. **Check** sampled saturated-pixel area of about 10% of the page; the 30% role has low chroma and low lightness. **Source** (p.59, p.61) (audit 2026-10-15)
+
+- **RULE** (figure-derived) A black/grey/white site can take its only colour from the product photograph. The Mercedes page shown on p.45 keeps the navigation, chrome and search bar in black, grey and white. The only colour is the green light in the hero image of the car.
+  **Why** With neutral chrome, the photograph becomes the single colour event and the focal point (p.45 figure).
+  **Applies to** landing page. **Check** in the fold, non-neutral hues come only from imagery, not from UI fills. **Source** (p.45) (audit 2026-10-15)
+
+- **RULE** Check contrast for non-text UI components as well as text. The WebAIM checker the book shows reports Normal Text, Large Text and a third section, "Graphical Objects and User Interface Components".
+  **Why** Borders, icons and control fills also have to be seen by low-vision and colour-blind users (p.66, p.67).
+  **Applies to** all. **Check** contrast of control borders, icons and focus indicators against adjacent colours. **Source** (p.67) (audit 2026-10-15)
+
 ## 3. Numbers & scales
 
 | Item | Value | Source |
@@ -246,6 +300,20 @@ Colour meaning (brand-example mapping the book gives):
 | White | wholesomeness, clarity, purity, innocence | | p.46 |
 | Red + blue | most popular combination among adults (claim) | Pepsi | p.47 |
 
+Audit additions (hex values sampled from the PDF render; HSB computed from them):
+
+- p.62 measured ramps: Hue row #74ACFB, #74A1FB, #7495FB, **#758BFD**, #747FFB, #7474FB, #7F74FB (215 to 245 deg in 5-deg steps, S 54%, B 98%). Tint row from pure #002AFF: #758BFD (46%), #899CFD, #9DADFD, #B1BEFD, #C6CFFD (78%), #FFFFFF. Shade row from #758BFD: #6174D3, #4D5CA8, #39447C, #2B335E, #1E243E, #000000; HSB S stays 54% while B falls 99 -> 49% at 51%. Tone row from #758BFD: #5D75EF, #6B7EDF, #7987CF, #8790C1, #9599B1, #9F9F9F (end grey). (audit 2026-10-15)
+- p.62 hue-row unit: degrees, confirmed by measurement (-15 = 215 deg, base = 230 deg, +15 = 245 deg). (audit 2026-10-15)
+- p.59 donut: 10% #7A68F2 violet, 30% #344259 slate, 60% #F5F5FF. p.61 donut: 10% #FA9B43 orange, 30% #202C3A near-black, 60% #FBFBFB. (audit 2026-10-15)
+- p.64 button states: SIGN UP default gradient #7F64FC -> #5E6AF5 (251 -> 235 deg); hover #5A46B1 -> #4349AC (B about 68%); disabled #C8BDFD (S 25%) with a white label. ADD TO CART #404040 fill with a yellow label. CHECKOUT/PayPal #F3E600 fill with dark labels. Submit #1C71F0; Submitting... #B9CFF6 (S 25%) with a white label; top-edge progress bar #1870F2. Shapes: the SIGN UP column uses rounded rectangles, while the cart/checkout/submit columns use full pills. (audit 2026-10-15)
+- p.65 status icon discs: success #4FD869, info #3185E8, warning #FDBF21, error #FB5657; close X about #80808A; fills and borders are very light tints of each hue (e.g. success fill about #E4EFF3, border about #D6E8E0). (audit 2026-10-15)
+- p.66 greyscale test: bad pair Skip #F05B9A (pink) and Continue #31AED0 (teal) become #909090 and #808080 in greyscale, a contrast of only 1.24:1 between the two fills. (audit 2026-10-15)
+- p.68 simplicity figure: DON'T nav CTA #79A2FE, orange #FE7C4A, teal #47CAB7 (three hue families). DO nav CTA #79A1FE, secondary #B3C9FD, bottom button #8FB1FD (three lightness steps of one blue). Placeholder tint about #D8EDFF. (audit 2026-10-15)
+- Scheme kits sampled: monochromatic (p.50) primary #FF3D26, secondary #FFCECE, tertiary outline #F61C1C; triad (p.51) primary #FF3D26, secondary #FDF01F, tertiary outline #1879C1; analogous (p.53) primary #FF2626, secondary gradient #FDC627 -> #FEB526 with a white label, tertiary outline/text #FFA526. (audit 2026-10-15)
+- p.49 wheel construction: primary ring = 3 segments, secondary ring = 6, tertiary ring = 12, labelled P/S/T. (audit 2026-10-15)
+- p.37 surfaces confirmed by sampling: page #272342 (#272343), raised card and bottom bar #433D71 (#443D72), CTA #FED706 (#FFD803). (audit 2026-10-15)
+- p.67 WebAIM screenshot sections: Normal Text (AA Pass, AAA Fail), Large Text (AA Pass, AAA Pass), Graphical Objects and User Interface Components (result cut off). 4.83:1 matches #9095FE on #323232 exactly. (audit 2026-10-15)
+
 ## 4. Dos and Don'ts
 
 - **DO / DON'T: greyscale test of button hierarchy (p.66).** Four phone mockups "Drink Water" (cyan glass, cyan wave footer, two buttons "Skip" and "Continue"), each shown in colour and in greyscale.
@@ -278,6 +346,12 @@ Colour meaning (brand-example mapping the book gives):
 
 - **DO / DON'T: brand colour selection by anecdote.** McDonald's: red = ingredients/beef, yellow = joy (p.58). Home Depot: orange + white signals excitement and expectation of "top-of-the-line" gear (p.58). Mercedes site: black, grey, white (p.45). Evian: natural colours and natural mountain imagery (p.69).
 
+- **DON'T (the book's own figure): white label on a light warm fill (p.53).** The analogous kit's "Secondary Button" puts a white label on an amber gradient (#FDC627 -> #FEB526), and the outline "Tertiary Button" sets amber text #FFA526 on the near-white card. Both read washed out. Compare the triad kit (p.51), where the yellow secondary #FDF01F has a navy label and stays legible. Lesson: light, warm fills take dark labels, and light-hue outline buttons need a darker shade for border and text. (audit 2026-10-15)
+
+- **DO: dark-mode role mapping (p.37).** Two-step dark surfaces (#272343 page, #443D72 card and bottom bar), one yellow accent for every action and selection (Book Now with a dark label, the active tab with a short underline, stars, the "Continue reading" link), light blue for the secondary link "Show on Maps", white text, muted lavender meta labels. No other hues; the photograph supplies the remaining colour. (audit 2026-10-15)
+
+- **DO: loading state anatomy (p.64).** "Submit" (solid #1C71F0, blue glow) becomes "Submitting..." on a 25%-saturation tint (#B9CFF6), with either a full-blue spinner before the label or a full-blue progress bar along the top edge. Both variants are shown as alternatives ("OR"). (audit 2026-10-15)
+
 ## 5. Exceptions & judgement calls
 
 Source hedges and tensions found in the pages:
@@ -293,6 +367,11 @@ Source hedges and tensions found in the pages:
 - [engine note] The wheel here is the traditional red-yellow-blue (RYB) artist wheel, while the chapter opens (p.35) with the digital models RGB, HSB, CMYK. Hue offsets for digital implementation (for example complementary = 180 degrees) differ on an RGB/HSL wheel; verify against the digital hue angle rather than the RYB picture.
 - [engine note] The chapter gives no numeric contrast thresholds in text. WCAG AA is 4.5:1 for normal text and 3:1 for large text and UI components; AAA is 7:1 and 4.5:1. The only number in the chapter is the 4.83:1 WebAIM screenshot (p.67), which passes AA and fails AAA for normal text, consistent with those thresholds.
 - [engine note] The proportion rule is about visual area, not number of colours: a page can be 60% white, 30% a dark neutral, 10% brand accent and still be "monochrome plus accent". Most strong SaaS/landing pages are exactly that; the three roles do not require three hues.
+- (audit 2026-10-15) The text says dark variants need more saturation and less brightness (p.63), but the book's own figures do not raise saturation. The p.62 shade row is a linear mix with black, which keeps HSB S at 54% while B falls, and the p.64 hover state keeps S at about 60% while B drops by about 30 points. [engine note] Follow the figures, and treat "raise saturation" as optional seasoning. In perceptual spaces (OKLCH), a pure black mix also lowers chroma, so a slight chroma boost on deep shades is what the text's advice amounts to.
+- (audit 2026-10-15) [engine note] Contrast of the book's own examples, computed from the sampled hexes (WCAG formula): disabled SIGN UP white on #C8BDFD = 1.73:1, "Submitting..." white on #B9CFF6 = 1.58:1, analogous secondary white on #FDC627 = 1.58:1 and on #FEB526 = 1.77:1. All fail even the 3:1 large-text threshold, which contradicts the book's own "disabled must be readable" rule (p.66). Default SIGN UP white on #7F64FC = 4.09:1 (fails AA normal text, passes large text/UI). Hover #5A46B1 = 7.13:1. Submit white on #1C71F0 = 4.50:1 (exactly at AA). ADD TO CART #F3E600 on #404040 = 7.96:1. The p.37 dark example passes comfortably: #FFD803 on #272343 = 10.71:1, #82C6FE on #272343 = 8.14:1, white on #443D72 = 9.74:1. White glyphs on the status discs are low (warning #FDBF21 1.66:1, success #4FD869 1.85:1), so those icons work by shape, not contrast.
+- (audit 2026-10-15) [engine note] The coloured glow under resting primary buttons (pp.50-53, p.64) is a light-theme device. In dark themes the founder's dark-mode rule ("no glow on a resting button", see CLAUDE.md and `knowledge/web/dark-mode-premium.md`) wins.
+- (audit 2026-10-15) [engine note] The p.66 greyscale failure measures 1.24:1 between the two fills (#909090 vs #808080). As a working check, if two tiers' greyscale fills are within about 1.5:1 of each other, give them a form difference (fill vs outline) rather than relying on hue.
+- (audit 2026-10-15) Inconsistent button shapes in one figure: p.64 shows SIGN UP as rounded rectangles and every other button as a full pill. The figure is a colour demo, not a shape rule; do not read radius guidance from it.
 
 ## 6. Figures worth keeping
 
@@ -314,6 +393,8 @@ Source hedges and tensions found in the pages:
 - p.66: greyscale accessibility comparison (bad vs good button hierarchy).
 - p.67: WebAIM contrast checker screenshot (4.83:1).
 - p.68: bad vs good simplicity wireframes.
+- p.45: Mercedes site screenshot: black/grey/white chrome, with colour only from the green-lit hero photograph. (audit 2026-10-15)
+- p.53: analogous kit as a negative example: white label on amber, amber outline text on near-white. (audit 2026-10-15)
 
 ## 7. Open questions
 
@@ -321,7 +402,14 @@ Source hedges and tensions found in the pages:
 - Tone row last label on p.62 reads "100% of White" for a grey end swatch; probably a copy/paste error (should be 100% grey). The 17/34/51/63/75 steps are identical to the shade row.
 - p.65 "red, black, and green" for status colours: image confirms the text. Probably should read yellow/amber; confirm only with another source.
 - p.67 WebAIM hex values are low-resolution in the image (foreground about #9095FE, background about #323232); only the 4.83:1 ratio and pass/fail table are legible with confidence.
-- p.44 phrase "men prefer grey, white, or black to women" is garbled in the source; the intended claim is that men prefer those neutrals more than women do.
-- p.45 OCR "innocenyce", p.43 "coloyr", p.52 "overlooky", p.65 "statey": stray characters from OCR/typesetting; text meaning unaffected.
+- p.45 phrase "men prefer grey, white, or black to women" is garbled in the source; the intended claim is that men prefer those neutrals more than women do.
+- p.46 OCR "innocenyce", p.43 "coloyr", p.52 "overlooky", p.65 "statey": stray characters from OCR/typesetting; text meaning unaffected.
 - p.35: the colour-model graphic (CMYK, RGB, HSB, grey scale) has no accompanying explanation; nothing to extract beyond the model names.
 - Coverage: every page 35-70 was read (text and image). Pages with no or minimal rule content: p.35 (colour-model graphic and intro; only the model names CMYK, RGB, HSB, grey scale), p.38 (introduction to "UI color fundamentals": audience and goal framing, no numbers), p.41 (continuation of the yellow/Snapchat line from p.40), p.44 (purple/Asprey, one line), p.48 (pull-quote divider: "keep the meaning of the colors in mind"), p.70 (closing paragraph; the only rule is client validation). Pages that are brand-example illustration of the connotations table in section 3: pp.39-47.
+- (audit 2026-10-15) corrected: page citation for the gender-colour phrase, was p.44, page shows it on p.45 (p.45).
+- (audit 2026-10-15) corrected: page citation for the OCR typo "innocenyce", was p.45, page shows it on p.46 (p.46).
+- (audit 2026-10-15) Resolved: the p.62 hue-row unit is hue degrees. Measured -15 = 215 deg, base = 230 deg, +15 = 245 deg, at constant S and B. The first open question above can be treated as closed.
+- (audit 2026-10-15) The p.62 tone row is not a linear grey mix. The 17% swatch (#5D75EF, S 61%, B 94%) is darker and more saturated than the base (#758BFD, S 54%, B 99%), and the steps only converge on grey #9F9F9F later. Do not derive tone percentages from this row; the shade and tint rows are exact linear mixes.
+- (audit 2026-10-15) The p.67 WebAIM foreground hex reads like "#9096FE" in the blurred screenshot, but 4.83:1 on #323232 matches #9095FE exactly (#9096FE gives 4.87:1). Keep #9095FE.
+- (audit 2026-10-15) The gender claim on p.45 is attributed to Natalia Khouw, "The Meaning of Color for Gender"; no further citation is given.
+- (audit 2026-10-15) Coverage: all 36 page images from p.35 to p.70 were viewed, and figure colours were sampled from the PDF render. No rule content beyond what is already captured: p.35 (colour-model graphic), p.36 (logo hue wheel), p.38 (framing), p.39-p.44, p.46, p.47 (brand-logo connotation pages; logos on tinted strips of their own colour, decorative), p.48 (quote divider), p.69-p.70 (closing). Image-only material newly captured: p.37 role mapping, p.45 Mercedes, pp.50-56 kit sizing and glows, p.59/p.61 donut hexes, p.62 measured ramps, p.64 state HSB and loading anatomy, p.65 alert anatomy, p.66 greyscale values, p.68 hexes.

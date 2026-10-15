@@ -1,0 +1,457 @@
+{
+ "title": "Opero - Your WhatsApp on Autopilot",
+ "vw": 1440,
+ "vh": 900,
+ "docH": 5419,
+ "bodyBg": "oklch(0.965 0.003 260)",
+ "htmlBg": "rgba(0, 0, 0, 0)",
+ "bodyFont": "-apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+ "paragraph": {
+  "size": 18,
+  "lh": "29.25px",
+  "color": "oklch(0.551 0.027 264.364)",
+  "family": "-apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+  "ls": "normal"
+ },
+ "nav": {
+  "box": {
+   "x": 0,
+   "y": 0,
+   "w": 1440,
+   "h": 69
+  },
+  "shell": {
+   "x": 0,
+   "y": 0,
+   "w": 1440,
+   "h": 69
+  },
+  "position": "sticky",
+  "bg": "oklab(0.999994 0.0000455677 0.0000200868 / 0.8)",
+  "backdrop": "blur(24px)",
+  "radius": "0px",
+  "borderB": "1px solid oklab(0.928 -0.000571842 -0.00597269 / 0.7)",
+  "border": "",
+  "shadow": "none",
+  "linkCount": 7,
+  "links": [
+   {
+    "t": "Opero",
+    "x": 168,
+    "y": 16,
+    "w": 101,
+    "h": 36,
+    "size": 15,
+    "weight": "400",
+    "ls": "normal",
+    "color": "oklch(0.21 0.034 264.665)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "0px",
+    "pad": "0px"
+   },
+   {
+    "t": "Features",
+    "x": 843,
+    "y": 24,
+    "w": 56,
+    "h": 20,
+    "size": 14,
+    "weight": "400",
+    "ls": "normal",
+    "color": "oklch(0.551 0.027 264.364)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "0px",
+    "pad": "0px"
+   },
+   {
+    "t": "Pricing",
+    "x": 923,
+    "y": 24,
+    "w": 45,
+    "h": 20,
+    "size": 14,
+    "weight": "400",
+    "ls": "normal",
+    "color": "oklch(0.551 0.027 264.364)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "0px",
+    "pad": "0px"
+   },
+   {
+    "t": "Docs",
+    "x": 992,
+    "y": 24,
+    "w": 33,
+    "h": 20,
+    "size": 14,
+    "weight": "400",
+    "ls": "normal",
+    "color": "oklch(0.551 0.027 264.364)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "0px",
+    "pad": "0px"
+   },
+   {
+    "t": "Blog",
+    "x": 1049,
+    "y": 24,
+    "w": 29,
+    "h": 20,
+    "size": 14,
+    "weight": "400",
+    "ls": "normal",
+    "color": "oklch(0.551 0.027 264.364)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "0px",
+    "pad": "0px"
+   },
+   {
+    "t": "EN",
+    "x": 1102,
+    "y": 24,
+    "w": 36,
+    "h": 20,
+    "size": 14,
+    "weight": "400",
+    "ls": "normal",
+    "color": "oklch(0.551 0.027 264.364)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "0px",
+    "pad": "0px"
+   },
+   {
+    "t": "Get Started",
+    "x": 1162,
+    "y": 16,
+    "w": 110,
+    "h": 36,
+    "size": 14,
+    "weight": "600",
+    "ls": "normal",
+    "color": "rgb(255, 255, 255)",
+    "bg": "oklch(0.696 0.17 162.48)",
+    "radius": "10px",
+    "pad": "8px 16px"
+   }
+  ]
+ },
+ "navBottom": 69,
+ "head": {
+  "tag": "H1",
+  "text": "The WhatsApp AI agent that gets smarter.",
+  "chars": 40,
+  "x": 168,
+  "y": 232,
+  "w": 512,
+  "h": 185,
+  "lines": 3,
+  "family": "-apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+  "size": 56,
+  "weight": "700",
+  "ls": "-1.4px",
+  "lsEm": -0.025,
+  "lh": 1.1,
+  "color": "oklch(0.21 0.034 264.665)",
+  "transform": "none",
+  "feat": "normal",
+  "num": "normal",
+  "opsz": "auto",
+  "var": "normal",
+  "align": "left",
+  "wrap": "wrap",
+  "spanColors": [
+   "oklch(0.21 0.034 264.665)",
+   "oklch(0.596 0.145 163.225)"
+  ],
+  "bgClip": false,
+  "above": [
+   {
+    "t": "Learns your business. Remembers every customer.",
+    "x": 168,
+    "y": 182,
+    "w": 320,
+    "h": 26,
+    "size": 12,
+    "gapToH1": 24
+   }
+  ]
+ },
+ "sub": {
+  "text": "Every conversation teaches Opero about your products, your customers, and the way you work. The longer it runs, the more it feels like talking to someone who's been at your business for years.",
+  "chars": 192,
+  "x": 168,
+  "y": 441,
+  "w": 512,
+  "h": 117,
+  "lines": 4,
+  "gapFromH1": 24,
+  "family": "-apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+  "size": 18,
+  "weight": "400",
+  "ls": "normal",
+  "lsEm": 0,
+  "lh": 1.625,
+  "color": "oklch(0.551 0.027 264.364)",
+  "transform": "none",
+  "feat": "normal",
+  "num": "normal",
+  "opsz": "auto",
+  "var": "normal",
+  "align": "left",
+  "wrap": "wrap"
+ },
+ "heroBtns": [
+  {
+   "id": "mb2",
+   "inNav": false,
+   "text": "Teach it your business",
+   "x": 168,
+   "y": 590,
+   "w": 238,
+   "h": 50,
+   "boxed": true,
+   "radius": "14px",
+   "pad": "14px 32px",
+   "bg": "oklch(0.696 0.17 162.48)",
+   "bgImg": "none",
+   "border": "0px solid oklch(0.905 0.008 260)",
+   "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklab(0.696 -0.162114 0.0511766 / 0.25) 0px 10px 15px -3px, oklab(0.696 -0.162114 0.",
+   "color": "rgb(255, 255, 255)",
+   "size": 14,
+   "weight": "600",
+   "ls": "normal",
+   "family": "-apple-system, \"system-ui\", \"Segoe UI\", ",
+   "transform": "none",
+   "transition": "color 0.15s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.15s cubic-",
+   "hasIcon": true
+  },
+  {
+   "id": "mb3",
+   "inNav": false,
+   "text": "See how it learns",
+   "x": 418,
+   "y": 590,
+   "w": 205,
+   "h": 50,
+   "boxed": true,
+   "radius": "14px",
+   "pad": "14px 32px",
+   "bg": "rgb(255, 255, 255)",
+   "bgImg": "none",
+   "border": "1px solid oklch(0.928 0.006 264.531)",
+   "shadow": "none",
+   "color": "oklch(0.373 0.034 259.733)",
+   "size": 14,
+   "weight": "600",
+   "ls": "normal",
+   "family": "-apple-system, \"system-ui\", \"Segoe UI\", ",
+   "transform": "none",
+   "transition": "color 0.15s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.15s cubic-",
+   "hasIcon": true
+  }
+ ],
+ "navBtns": [
+  {
+   "id": "mb1",
+   "inNav": true,
+   "text": "Get Started",
+   "x": 1162,
+   "y": 16,
+   "w": 110,
+   "h": 36,
+   "boxed": true,
+   "radius": "10px",
+   "pad": "8px 16px",
+   "bg": "oklch(0.696 0.17 162.48)",
+   "bgImg": "none",
+   "border": "0px solid oklch(0.905 0.008 260)",
+   "shadow": "none",
+   "color": "rgb(255, 255, 255)",
+   "size": 14,
+   "weight": "600",
+   "ls": "normal",
+   "family": "-apple-system, \"system-ui\", \"Segoe UI\", ",
+   "transform": "none",
+   "transition": "color 0.15s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.15s cubic-",
+   "hasIcon": false
+  }
+ ],
+ "allBtnCount": 4,
+ "media": 0,
+ "largestMedia": null,
+ "frames": [
+  {
+   "tag": "DIV",
+   "x": 1040,
+   "y": 160,
+   "w": 400,
+   "h": 400,
+   "radius": "3.35544e+07px",
+   "shadow": "none",
+   "border": "0px solid oklch(0.905 0.008 260)",
+   "bg": "oklab(0.696 -0.162114 0.0511766 / 0.06)",
+   "pad": "0px"
+  }
+ ],
+ "fold": {
+  "textLeaves": 34,
+  "words": 140,
+  "interactive": 2,
+  "sizes": {
+   "9": 6,
+   "10": 6,
+   "11": 5,
+   "12": 11,
+   "13": 1,
+   "14": 2,
+   "18": 1,
+   "56": 2
+  },
+  "weights": {
+   "400": 23,
+   "500": 3,
+   "600": 6,
+   "700": 2
+  },
+  "colorCount": 9,
+  "colors": {
+   "oklch(0.596 0.145 163.225)": 2,
+   "oklch(0.21 0.034 264.665)": 1,
+   "oklch(0.551 0.027 264.364)": 4,
+   "rgb(255, 255, 255)": 2,
+   "oklch(0.373 0.034 259.733)": 1,
+   "oklch(0.707 0.022 261.325)": 12,
+   "oklab(0.999994 0.0000455677 0.0000200868 / 0.6)": 1,
+   "oklch(0.905 0.093 164.15)": 1,
+   "oklch(0.278 0.033 256.848)": 10
+  }
+ },
+ "families": {
+  "-apple-system": 41
+ },
+ "fonts": [],
+ "radii": {
+  "3.35544e+07px": 7,
+  "10px": 12,
+  "14px": 6,
+  "40px": 1,
+  "35.2px": 1
+ },
+ "shadows": [
+  [
+   "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.1) 0px 1px 2",
+   6
+  ],
+  [
+   "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.1) 0px 4p",
+   4
+  ],
+  [
+   "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklab(0.696 -0.162114 0.0511766 / 0.25) 0px 10px 15px -3px, okla",
+   1
+  ],
+  [
+   "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklab(0.373 -0.00606001 -0.0334556 / 0.2) 0px 25px 50px -12px",
+   1
+  ]
+ ],
+ "tabularEls": 0,
+ "sections": [
+  {
+   "tag": "SECTION",
+   "y": 69,
+   "h": 752,
+   "pt": "96px",
+   "pb": "80px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 821,
+   "h": 578,
+   "pt": "80px",
+   "pb": "80px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 1399,
+   "h": 451,
+   "pt": "80px",
+   "pb": "80px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 1849,
+   "h": 532,
+   "pt": "80px",
+   "pb": "80px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 2381,
+   "h": 471,
+   "pt": "80px",
+   "pb": "80px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 2852,
+   "h": 491,
+   "pt": "80px",
+   "pb": "80px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 3343,
+   "h": 511,
+   "pt": "80px",
+   "pb": "80px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 4346,
+   "h": 559,
+   "pt": "80px",
+   "pb": "80px",
+   "bg": "rgba(0, 0, 0, 0)"
+  }
+ ],
+ "hover": {
+  "before": [
+   "oklch(0.696 0.17 162.48) | none | none | rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px | rgb(255, 255, 255) | 1 | oklch(0.905 0.008 260)",
+   "rgba(0, 0, 0, 0) | none | none | none | rgb(255, 255, 255) | 1 | oklch(0.905 0.008 260)",
+   "rgba(0, 0, 0, 0) | none | none | none | rgb(255, 255, 255) | 1 | oklch(0.905 0.008 260)"
+  ],
+  "after": [
+   "oklch(0.596 0.145 163.225) | none | none | rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px | rgb(255, 255, 255) | 1 | oklch(0.905 0.008 260)",
+   "rgba(0, 0, 0, 0) | none | none | none | rgb(255, 255, 255) | 1 | oklch(0.905 0.008 260)",
+   "rgba(0, 0, 0, 0) | none | none | none | rgb(255, 255, 255) | 1 | oklch(0.905 0.008 260)"
+  ],
+  "changed": [
+   "oklch(0.596 0.145 163.225) | none | none | rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px | rgb(255, 255, 255) | 1 | oklch(0.905 0.008 260)",
+   null,
+   null
+  ]
+ },
+ "press": [
+  "oklch(0.596 0.145 163.225) | none | none | rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px | rgb(255, 255, 255) | 1 | oklch(0.905 0.008 260)",
+  "rgba(0, 0, 0, 0) | none | none | none | rgb(255, 255, 255) | 1 | oklch(0.905 0.008 260)",
+  "rgba(0, 0, 0, 0) | none | none | none | rgb(255, 255, 255) | 1 | oklch(0.905 0.008 260)"
+ ],
+ "pixels": {
+  "modeColor": "rgb(240,240,240)",
+  "modeShare": 0.321,
+  "nearBgShare": 0.732,
+  "quietBlockShare": 0.753,
+  "saturatedShare": 0.0399
+ },
+ "url": "https://opero.so/",
+ "slug": "opero",
+ "captured": "2026-10-15T17:30:09.377Z"
+}

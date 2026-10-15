@@ -85,6 +85,28 @@ Page numbering: all (p.NN) are PDF pages (printed page = PDF page - 1). This cha
   **Why** Slack's "Security at Slack" page uses a full-width flat illustration of people at a network diagram with padlock/shield/check nodes to show the team cares about security.
   **Applies to** landing page. **Check** visual. **Source** (p.490)
 
+### Audit additions (audit 2026-10-15)
+
+- **RULE** Use an illustration to steer attention: place it so it strengthens the visual hierarchy and pulls the eye to a specific screen zone, an essential detail, or the key message.
+  **Why** The book lists improving visual hierarchy and engaging users "towards screen zones, essential details, or visual messages" as benefits, alongside activating the psychology of shapes, colours and visual metaphors.
+  **Applies to** landing page | SaaS app UI. **Check** visual: the illustration sits beside or points toward the primary message or CTA, not in an unrelated zone. **Source** (p.481) (audit 2026-10-15)
+
+- **RULE** Lead the eye through a narrative by sequencing illustrated scenes in reading order toward the point you want. HubSpot's hero runs, from left to right away from the copy, a small house, a mid-rise shop and a tall office building, so the illustration itself tells "grow".
+  **Why** HubSpot's style guide (as cited) says illustration is used "to lead visitors, users, or other viewers to a certain point in the narrative".
+  **Applies to** landing page. **Check** visual: scene elements progress in size or state along the reading direction. **Source** (p.499) (audit 2026-10-15)
+
+- **RULE** When the product is the story, put real product UI inside the illustrated world rather than replacing it. Salesforce sets real dashboard screenshots on a laptop, tablet and phone inside an illustrated landscape with the mascot hang-gliding above; Trello's hero shows illustrated people (and the husky) working at abstracted product boards.
+  **Why** The illustration carries mood and brand while the screenshot carries proof of the product.
+  **Applies to** landing page. **Check** visual: hero illustration contains a recognisable product surface. **Source** (p.497, p.500) (audit 2026-10-15)
+
+- **RULE** Re-stage the same mascot in the target segment's own setting to signal fit: TunnelBear's teams page puts the bears in office cubicles, at a water cooler and a photocopier, so visitors "see right away" that the product suits groups.
+  **Why** Same character keeps brand memory; the new setting carries the segment message.
+  **Applies to** landing page. **Check** visual: segment pages reuse the mascot in a segment-specific scene. **Source** (p.498) (audit 2026-10-15)
+
+- **RULE** Treat the mascot as a brand asset separate from the logo: GitHub publishes three distinct assets (wordmark logo, mark, Octocat), and the Octocat appears in many costumes and poses (six variants shown) while its silhouette stays recognisable. Mailchimp always pairs the company name with the Freddie icon and keeps both a stacked and a horizontal lockup.
+  **Why** Separation lets the mascot flex in tone and context without weakening the logo.
+  **Applies to** landing page | SaaS app UI (brand assets). **Check** brand kit lists logo, mark and mascot as separate files; mascot variants keep the same head/body silhouette. **Source** (p.495-496) (audit 2026-10-15)
+
 ## 3. Numbers & scales
 
 The chapter gives no measurements. The only quantitative statements are:
@@ -108,6 +130,10 @@ The list of UI illustration roles named in text:
 
 Explicit list of what drawings can better explain: pricing tiers, what an error message implies, items included in the product plan (p.485).
 
+- GitHub brand assets shown: 3 separate downloads (logo, mark, Octocat) plus a grid of 6 Octocat costume variants (p.496) (audit 2026-10-15)
+- Mailchimp logo lockups shown: 2 (stacked mascot over wordmark; horizontal mascot left of wordmark), both black on light grey (p.495) (audit 2026-10-15)
+- Trello mascots: 3 (Taco the husky, Chorizo the cat, Pete the computer), shown as three flat face illustrations (p.496-497) (audit 2026-10-15)
+
 ## 4. Dos and Don'ts
 
 There are no explicit good/bad pairs in this chapter. Everything is a positive example. Implicit contrasts:
@@ -117,6 +143,11 @@ There are no explicit good/bad pairs in this chapter. Everything is a positive e
 - **Do** place illustration beside a short headline and CTA in the hero (Trello: left text block "Organize anything, with anyone" plus green "Get Started - It's Free!", right illustration of people at boards; HubSpot: heading plus white CTA left, buildings and people right) (p.497, p.499).
 - **Don't** use illustrations purely as filler without checking the audience or purpose (implied by "functional element despite a decoration") (p.482).
 - **Don't** use an ambiguous detail in a tutorial illustration (p.484).
+
+- **Do** (p.491) ReadMe hero: centred small headline "Say Goodbye to Static Documentation" with an outlined button below it, then an animated graphic of stacked documentation cards (red centre card with "yourlogo", side cards in green and yellow), then a row of customer logos on white beneath the blue hero. The illustration sits between the claim and the proof row. (audit 2026-10-15)
+- **Do** (p.499) HubSpot: left-aligned white headline, short paragraph and a white rectangular CTA on a teal-to-green hero; illustration of buildings growing in size fills the right two-thirds. (audit 2026-10-15)
+- **Do** (p.500) Salesforce: left vertical menu panel ("Solutions for", "Our products") over the illustrated sky-and-hills scene; two small dark buttons under a light headline; real product screenshots on devices sit in the landscape. (audit 2026-10-15)
+- **Do** (p.498) TunnelBear: centred serif headline, one dark rectangular CTA ("Get Started, It's Free" / "Try free for 7 days"), mascot scene directly below the CTA on a pale aqua field. (audit 2026-10-15)
 
 ## 5. Exceptions & judgement calls
 
@@ -145,3 +176,7 @@ There are no explicit good/bad pairs in this chapter. Everything is a positive e
 - OCR damage was corrected in this note (for example "ottract", "Illustr1tions"). The OCR for p.494 mangles "Pitch" and "Moonfarmer" text. The images were used instead.
 - No rule content (title or pure intro or filler): p.479 (chapter intro, cover figure of a person at a laptop with five topic bubbles), p.480 (definition only), p.481 (benefits list only, generic), p.485 (generic "why use" list only).
 - All other pages in 479-500 were covered above: p.482-484 (roles), p.486-488 (tip 1 and Duolingo), p.488-491 (journey and brand experiences), p.491-492 (gamification, aesthetics), p.493-500 (theme, mascot, entertainment examples and conclusion).
+
+- (audit 2026-10-15) Pages viewed as images: p.479, 487, 489, 490, 491, 492, 493, 494, 495, 496, 497, 498, 499, 500. Text-only (prose, no figures): p.480, 481, 482, 483, 484, 485, 486, 488.
+- (audit 2026-10-15) p.482 states the stylistic range of UI illustration runs "from vector images and icons to the elaboration and full-screen digital artworks"; no guidance on choosing within that range is given.
+- (audit 2026-10-15) p.479 cover image is a 3D-rendered character at a laptop with five question chips; decorative, no rule content.

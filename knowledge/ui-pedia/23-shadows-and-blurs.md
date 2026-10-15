@@ -125,6 +125,36 @@ Chapter of "UI Pedia" (Design Basics). Anatomy of a shadow (offset, blur, spread
   **Why** Decorative but must not damage usability.
   **Applies to** landing page. **Check** visual. **Source** (p.570)
 
+### Audit additions (audit 2026-10-15)
+
+- **RULE** Pick the shadow's form by its job: a narrow, light (white) shadow to separate an item from the area around it, or a dark, diffuse shadow to add depth. Do not use one shadow style for both jobs.
+  **Why** The book opens the chapter with these two roles: a thin white line-shadow is an edge, and a dark diffuse shadow is elevation.
+  **Applies to** all. **Check** light-coloured shadows have a small blur (edge role); dark shadows used for elevation have a large blur. **Source** (p.557) (audit 2026-10-15)
+
+- **RULE** An inset shadow appears on the inner edges opposite its offset. The book's inner shadow (X -7, Y -8, Blur 13, #FFFFFF 25%) lights the bottom and right inner edges of the card, not the top-left. Set the offset sign from the edge you want lit.
+  **Why** An inset shadow is drawn inside the element and moved by its offset, so a negative offset leaves the visible band on the bottom/right inside edges. Getting the sign wrong lights the wrong edge against the light source.
+  **Applies to** forms | SaaS app UI. **Check** for an `inset` box-shadow, the lit edge = the side opposite the offset sign; it matches the page's light direction. **Source** (p.557) (audit 2026-10-15)
+
+- **RULE** When stacking several hard shadows, step their offsets evenly (Y 4, 8, 12, so each band is 4px thick) and order them nearest-first: the smallest offset sits directly under the element (periwinkle at Y 4), then the next (light blue at Y 8), with the largest outermost (orange at Y 12).
+  **Why** Even steps give equal-width bands and a clean extruded edge; the nearest layer must paint on top or the outer colours cover it.
+  **Applies to** landing page | mobile. **Check** `box-shadow` list ordered by ascending offset (CSS paints the first shadow on top); offset differences are equal. **Source** (p.561) (audit 2026-10-15)
+
+- **RULE** In a layered stack, make each higher layer lighter in value as well as shadowed: the "Natural Layer Stack" goes from dark slate at the base through mid grey and light grey to a near-white top layer, each with a soft outer shadow. A stack whose inner layers get darker and use inner shadows reads as a hole.
+  **Why** Lighter-is-closer plus an outer shadow reads as rising toward the viewer; darker-is-deeper plus an inset reads as sinking.
+  **Applies to** all. **Check** surface lightness increases with z-index across nested layers. **Source** (p.562) (audit 2026-10-15)
+
+- **RULE** Give every surface a fixed depth plane, as in the mobile screen diagram: Background at the back, the Content Card above it, the Floating Button above the content card, and the System Status Bar and System Navigation on their own planes. Shadow each layer by its plane.
+  **Why** The book's exploded view shows that hierarchy comes from assigning each component a plane, not from styling each one ad hoc.
+  **Applies to** mobile | SaaS app UI. **Check** a floating action button's shadow is stronger than the content card's shadow beneath it. **Source** (p.566) (audit 2026-10-15)
+
+- **RULE** Build a decorative glass card from a translucent fill, a thin light border, white text, and saturated shapes behind it that both overlap and stick out past the card's edges. In the credit-card example, violet-to-blue circles sit partly behind the card and partly outside it on a slate panel.
+  **Why** The blur only reads as glass when sharp versions of the same shapes are visible next to the blurred part.
+  **Applies to** landing page. **Check** `backdrop-filter: blur()` on the card, background alpha < 1, a light 1px border, and at least one background shape crossing the card edge. **Source** (p.570) (audit 2026-10-15)
+
+- **RULE** When shading an object with a material gradient, put the lighter stop at the light-source corner: #758EFE at the top-left fading to #495A7C at the bottom-right, matching the chapter's upper-left light.
+  **Why** The gradient is the object's own lighting, so it has to agree with the shadow direction used everywhere else.
+  **Applies to** landing page | mobile. **Check** the gradient angle runs from top-left (light) to bottom-right (dark) when shadows fall bottom-right. **Source** (p.574, p.563-564) (audit 2026-10-15)
+
 ## 3. Numbers & scales
 
 Values taken from the figures (X / Y / Blur / colour / opacity):
@@ -153,9 +183,17 @@ Vocabulary: Z-axis = depth; X = horizontal offset, Y = vertical offset (the book
 
 Other fixed items: 6 tips for stunning shadows (p.571-574); 2 blur types for UI (background, layer) (p.567-568); 3 jobs of shadow (interactivity, depth, hierarchy) (p.564-566); gaussian, motion, radial blur types are mentioned but not taught (p.567).
 
+Audit additions (audit 2026-10-15):
+
+- Computed from the chapter's own values, blur / Y-offset ratio: BAD default 4/2 = 2x at 50%; GOOD soft 24/8 = 3x at 25%; tinted 40/16 = 2.5x at 20%; z-axis card 13/11 ≈ 1.2x at 42%. The recommended soft shadows sit at 2.5-3x blur-to-offset with 20-25% opacity; the harsh ones are at 2x or less with 42-50%. (p.558, p.572, p.573) (audit 2026-10-15)
+- Every drop shadow the chapter recommends for elevation uses X = 0 (light straight above): 0/11/13, 0/8/24, 0/16/40. Non-zero X appears only in the intro demo (5, 6), the hard-offset tiles (±2) and neumorphism (±4). (p.557-574) (audit 2026-10-15)
+- Stacked hard shadow bands: 3 bands, each 4px thick (Y 4, 8, 12, all Blur 0). The text says "each 3 points down", but the labels show 4px steps. (p.561) (audit 2026-10-15)
+- Tinted shadow (p.573): with Blur 40 against Y 16, the periwinkle glow is visible on all four sides of the slate square, strongest below it. (audit 2026-10-15)
+- Neumorphic pair (p.564, p.574): both layers use the same |offset| 4 and Blur 10; the light layer is 3 points more opaque (13%) than the dark layer (10%). (audit 2026-10-15)
+
 ## 4. Dos and Don'ts
 
-- Intro figure (p.557): two identical slate rounded rectangles with a periwinkle circle. Left has an outer drop shadow (5, 6, blur 15, black 25%); right has an inner shadow (-7, -8, blur 13, white 25%) that reads as a light inset edge on the top-left. Spec chips sit under each.
+- Intro figure (p.557): two identical slate rounded rectangles with a periwinkle circle. Left has an outer drop shadow (5, 6, blur 15, black 25%); right has an inner shadow (-7, -8, blur 13, white 25%) that reads as a faint light inset edge along the bottom and right inner edges (the inset shadow shows on the side opposite its negative offset). Spec chips sit under each.
 - Z-axis figure (p.558): isometric slate card with a soft, moderate shadow below on a light background, with X/Y/Z axes arrows and the spec chip (0, 11, 13, #495A7C, 42%).
 - Spread demo (p.560): two circles, Y 20, Blur 0. Spread -10 leaves only a slim lilac crescent below the circle; Spread 0 shows a fuller lilac crescent with the same offset. Text says the left is blurred and the right un-blurred, but both labels say Blur = 0 (see section 7).
 - Hard offset tiles (p.561): six slate rounded rectangles, each with a thin periwinkle edge appearing only on the sides implied by the offset.
@@ -170,6 +208,10 @@ Other fixed items: 6 tips for stunning shadows (p.571-574); 2 blur types for UI 
 - Shadow as style vs layer (p.573): two identical slate squares labelled "Shadow As Style" and "Shadow As Layer"; the layer version has a slightly wider, softer, more controllable glow.
 - Tinted shadow (p.573): slate rounded square with a faint periwinkle glow under it (#758EFE at 20%, Y 16, Blur 40).
 - Material gradient (p.574): rounded square filled with #758EFE to #495A7C diagonal, spec chip with both stops at 100%.
+
+- (audit 2026-10-15) iOS Control Center (p.569), detail: the opened module (connectivity) also grows to a larger panel and the other controls disappear; only the module stays sharp over a blurred, darkened wallpaper.
+- (audit 2026-10-15) Weather panel (p.568): a macOS Weather window whose sub-panels (Forecast, Details, Sun & Moon, Map) are darker translucent tiles with hairline dividers over a blurred red-brown wallpaper, with a large soft drop shadow under the whole window.
+- (audit 2026-10-15) Material gradient (p.574): the lighter #758EFE corner is top-left and the darker #495A7C corner is bottom-right, which agrees with the neumorphism light source (upper-left) shown just below it.
 
 ## 5. Exceptions & judgement calls
 
@@ -213,3 +255,5 @@ Copied to examples/ui-pedia/shadows-and-blurs/.
 - p.567 notes gaussian, motion, radial blur types exist online; not taught.
 - p.571 "6 simple steps" are numbered 1-6 across p.571-574; all captured.
 - Pages with little or no rule content: p.565 (interactivity continued and depth; covered), p.567 (blur intro), p.571 (opening paragraph; covered under mood rule).
+- (audit 2026-10-15) corrected: section 4 intro-figure description of the inner shadow, was "reads as a light inset edge on the top-left", page shows the faint white inset band along the bottom and right inner edges (offset -7, -8 pushes the inset shadow toward the bottom-right inside edges) (p.557).
+- (audit 2026-10-15) Coverage: all 18 page images p.557-574 viewed. Text-only pages: p.559 (spread, blur definitions), p.563 (neumorphism intro), p.565 (interactivity, depth), p.567 (blur intro, background blur), p.571 (Point to be noted, tip 1). Their rules were already captured; p.563's claim that neumorphism's "main goal is to entirely alter the hue" has no teachable rule.

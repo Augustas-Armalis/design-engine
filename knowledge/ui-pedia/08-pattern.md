@@ -69,6 +69,28 @@ The chapter is conceptual and process-oriented: it has almost no numbers. Its va
   **Why** Understanding why a solution works or fails is what makes a library useful.
   **Applies to** all (process). **Check** n/a. **Source** (p.151, p.153)
 
+### Audit additions (audit 2026-10-15)
+
+- **RULE** Draw a multi-step flow (checkout) as a stepper with three node states: completed = filled dark node with a check mark, current = filled dark node with its number, upcoming = grey node with its number; the connector is solid up to the current step and dashed after it; each node has a short 1-2 line label beneath it.
+  **Why** Node fill plus line style tells the user where they are and how much is left, without reading the labels (checkout figure).
+  **Applies to** SaaS app UI | forms | mobile. **Check** three distinct node styles; connector `border-style` solid before current, dashed after. **Source** (p.141) (audit 2026-10-15)
+
+- **RULE** In a card-payment step, offer the payment method as a 2-option segmented tab (PayPal | Card, selected segment filled in the accent colour with white text); put Card Number full width, pair the short fields Expires on + CVV side by side on one row, Cardholder Name full width, and finish with one full-width primary button ("Pay Now").
+  **Why** Short related fields share a row, long ones get the full width; one primary action per step (checkout figure).
+  **Applies to** forms | mobile. **Check** expiry and CVV inputs on the same row at about half width each; exactly one primary button in the card. **Source** (p.141) (audit 2026-10-15)
+
+- **RULE** After "Add To Cart", give two pieces of feedback at once: update the cart icon with an item-count badge and show an "Item added to cart" popover anchored to the cart with two next steps (Continue Shopping / Checkout); the cart page then lists items with qty steppers and a summary (subtotal, shipping, taxes, total) above a Checkout button.
+  **Why** The user sees that the action worked and gets an immediate choice of next step (balsamiq flow figure).
+  **Applies to** landing page | mobile (e-commerce). **Check** badge count increments; popover with two actions appears on add. **Source** (p.150) (audit 2026-10-15)
+
+- **RULE** Sign-in pattern: put social providers (Google, Facebook, Apple) as full-width buttons, separate them from the email/username + password fields with an "Or" divider, add a "Forgot password?" link next to the password field, one primary submit button, and a sign-up link ("No account? Sign up" / "Not a member? Sign up now") at the bottom.
+  **Why** All three examples (Pinterest, Behance, Dribbble) share this structure; only order (social first or email first) and skin differ.
+  **Applies to** forms | SaaS app UI | mobile. **Check** presence of divider, forgot-password link, single primary submit and sign-up link. **Source** (p.146) (audit 2026-10-15)
+
+- **RULE** On consent and opt-in choices, do not give the option the company prefers the high-emphasis style while styling the user's real choice as a low-emphasis outline; label both options in plain positive words.
+  **Why** In the dark-pattern figure the double-negative "Don't not opt in" is the filled, high-emphasis button and "Opt in" is the faint outline, so styling and wording both steer the user.
+  **Applies to** all (modals, cookie/consent, newsletter). **Check** accept/decline buttons on consent dialogs use equal emphasis or emphasis matching the user's likely intent; no negated labels. **Source** (p.148) (audit 2026-10-15)
+
 ## 3. Numbers & scales
 
 The chapter gives almost no hard numbers. Figures present in mockups (illustrative, not rules):
@@ -81,6 +103,9 @@ The chapter gives almost no hard numbers. Figures present in mockups (illustrati
 | Recommended libraries | 4: Mobbin, UI Garage, UI Patterns, Pttrns | p.150 |
 | Checkout mockup (illustrative) | 3 steps: Shipping Details -> Shipping Details & Payment -> Thank You page; payment tabs PayPal / Card; fields Card Number, Expires on, CVV, Cardholder Name; button labels "Add to Cart", "Pay Now", "Order Details"; sample VAT (15%) $5.00, shipping $5.00, sub total $249.00 | p.141 |
 | Dark-pattern sample | 30% off coupon, "SIGN UP + GET COUPON" | p.148 |
+| Checkout stepper | 3 nodes: completed (check), current (2), upcoming (3, grey); solid line to current, dashed after (audit 2026-10-15) | p.141 |
+| Payment form rows | Card Number (full) / Expires on + CVV (one row, half each) / Cardholder Name (full) / Pay Now (full width) (audit 2026-10-15) | p.141 |
+| Cart summary (illustrative) | subtotal $159.99, taxes $12.78, total $162.77; "Item added to cart" popover with 2 actions (audit 2026-10-15) | p.150 |
 
 Library recommendation: start with UI Patterns because the others "lack the documentation" it provides (opinion). (p.151) Note: OCR of p.151 reads "lock"; page image confirms "lack".
 
@@ -91,6 +116,8 @@ Library recommendation: start with UI Patterns because the others "lack the docu
 - **DO** (p.150 figure) Document a flow as a 3-frame wireframe storyboard: (1) user selects Add To Cart button (red numbered marker 1 plus hand cursor on the button), (2) cart icon updates and shows an item count, with an "Item added to cart" popover with Continue Shopping / Checkout, (3) full cart page displayed with line items, price, qty, and a summary (subtotal $159.99, shipping, taxes $12.78, total $162.77) with a Checkout button. Arrows connect frames; numbered red pins tie annotation to place. Lesson: a pattern entry is a numbered sequence with captioned states (source: balsamiq).
 - **DON'T** (p.148 figure, top) Use word-play on a decline option: a dark dialog "Want to opt-in?" with two buttons, "Opt in" (outlined, low emphasis) and "Don't not opt in" (filled white, high emphasis); annotation "Use of word play to get you tricked". Wrong because the double negative inverts meaning and the emphasis steers users to the option the company wants.
 - **DON'T** (p.148 figure, bottom) The orange gradient "Sign Up + Save" popup: a "SALE 30%" badge, "Sign up for our newsletter and get an exclusive coupon for 30% off your next order" (typo "foe" in the book's mock), email field and "SIGN UP + GET COUPON" button. The book calls this an example of a lesser dark pattern (luring users into e-mail sign-ups); the more dangerous ones obfuscate details so customers get tied into memberships or automatic payments.
+- **DO** (p.141 figure) Pair short related payment fields (Expires on + CVV) on one row and keep long ones (Card Number, Cardholder Name) full width; the payment method is a 2-segment tab with the selected segment filled in the accent colour. (audit 2026-10-15)
+- **DON'T** (p.148 figure) Style the option the company wants as the filled, high-emphasis button and the user's real choice as a faint outline on a consent dialog. (audit 2026-10-15)
 
 ## 5. Exceptions & judgement calls
 
@@ -115,3 +142,4 @@ Library recommendation: start with UI Patterns because the others "lack the docu
 - p.153: closing summary only, no rule content ("Points to be noted": patterns make the process smoother).
 - The pattern-library website names (Mobbin, UI Garage, UI Patterns, Pttrns) are as printed; their current availability is not verified.
 - The p.148 sale popup mock contains a typo ("foe 30% off"), which looks like a figure artefact, not intentional teaching.
+- (audit 2026-10-15) Lighter-pass audit: every page p.141-153 text read and every page image viewed. p.144: decorative photo of a hand holding a phone with a weather/air-quality dashboard ("Hey Balazs!"), no rule content. p.142, p.143, p.147, p.149, p.151, p.152, p.153: text-only (boxed list on p.147 and p.152), all content already captured. No numeric errors found; no corrections.

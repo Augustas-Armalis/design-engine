@@ -36,13 +36,13 @@ It is a learning method, not a rule set. The design lessons it embeds (pastel pa
   **Why** Principles generalise, opinions do not. **Applies to** all. **Check** visual. **Source** (p.593)
 
 Worked observations from the example, labelled as the author's taste (opinion):
-- **RULE (opinion)** Pastel colour schemes feel more relaxing than dark/saturated ones. Example figure on p.593: same hue pairs, only saturation and brightness changed (caption on p.594 "Each of these swatches has the same hue between devices - it's merely the saturation and brightness that have changed").
+- **RULE** Pastel colour schemes feel more relaxing than dark/saturated ones. Example figure on p.593: same hue pairs, only saturation and brightness changed (caption on p.594 "Each of these swatches has the same hue between devices - it's merely the saturation and brightness that have changed"). (opinion)
   **Why** Lower saturation/higher lightness reduces visual intensity. **Applies to** landing page | mobile. **Check** compare S and L in HSL/OKLCH between candidate palettes. **Source** (p.593-594)
-- **RULE (opinion)** Add playfulness with randomness and "grid-breaking" in the layout (overlapping a card-like image over a dark panel; "scattered assortment of books lend playful feel").
+- **RULE** Add playfulness with randomness and "grid-breaking" in the layout (overlapping a card-like image over a dark panel; "scattered assortment of books lend playful feel"). (opinion)
   **Why** Deliberate irregularity reads as whimsical. **Applies to** landing page. **Check** visual: some elements overlap or break the column grid. **Source** (p.594)
-- **RULE (opinion)** Sans-serif fonts with unusual stroke weights or kerning give a slightly untamed look; an old, imperfectly-spaced Century Schoolbook gives "quirky charm" fitting a studio's vibe (MSDS Studio example).
+- **RULE** Sans-serif fonts with unusual stroke weights or kerning give a slightly untamed look; an old, imperfectly-spaced Century Schoolbook gives "quirky charm" fitting a studio's vibe (MSDS Studio example). (opinion)
   **Why** Imperfect type carries personality. **Applies to** landing page (brand/portfolio). **Check** visual. **Source** (p.594-595)
-- **RULE (opinion)** Infuse features of the brand into all elements: logo, layout, colours and so on.
+- **RULE** Infuse features of the brand into all elements: logo, layout, colours and so on. (opinion)
   **Why** Consistency across elements makes the brand coherent (the Abstract example: logo, name and scattered shapes support the brand). **Applies to** all. **Check** visual: the same shape/colour motifs recur in logo, layout and graphics. **Source** (p.593, p.595)
 - Abstract site observations (p.592-593): pastel palette is enjoyable and relaxing; a haphazard sprinkling of rounded rectangles has a whimsical sense; the typeface "Euclid Circular B" gives a clean, plain vibe (OCR "Euclid Circulor B"; image reads "Euclid Circular B"); brand supported by logo, name and scattering of shapes.
 
@@ -55,9 +55,9 @@ Worked observations from the example, labelled as the author's taste (opinion):
   **Why** Writing the techniques down converts copied pixels into transferable vocabulary. **Applies to** all. **Check** a written list of techniques exists. **Source** (p.601)
 - Historical precedent cited to legitimise copywork: Jack London copying Kipling's passages, Robert Louis Stevenson reciting lovely passages from memory, Ben Franklin taking notes on each sentence then rebuilding the essay days later, Leonardo da Vinci prescribing reproducing a good master's drawings first (p.597). Copywork is now seen as "routine, unimaginative, and plagiarised" (p.597-598); the author expects a reversal (opinion).
 - Observations from copying Dann Petty's Oahu Epicurrence site (the book gives these as "what I noticed in the header alone"), each a design technique to keep:
-  - **RULE (opinion)** Font size can be absurdly huge when used as a visual element: the "HI" letters were **size 365** in the copy; the large text is aligned with other header elements, with an image inserted in the space between the letters. **Why** Oversized type becomes a graphic, not just a label. **Applies to** landing page (hero). **Check** computed font-size of hero display text vs viewport; visual. **Source** (p.599-600)
-  - **RULE (opinion)** Use a paint stroke / watercolour smudge as the "shadow": under the seal, the header and the pineapple, where a shadow would normally go, as if painted on the page. **Why** A painted smudge gives depth with brand character instead of a generic drop shadow. **Applies to** landing page. **Check** visual. **Source** (p.600)
-  - **RULE (opinion)** Letter-spacing is generous in uppercase type; all text on the site is capitalised and almost all has altered letter-spacing. **Why** Tracked uppercase gives a strong sense of alignment and "classiness" (the author notes he feels self-conscious doing it often). **Applies to** landing page. **Check** `text-transform: uppercase` elements have positive `letter-spacing`. **Source** (p.600)
+  - **RULE** Font size can be absurdly huge when used as a visual element: the "HI" letters were **size 365** in the copy; the large text is aligned with other header elements, with an image inserted in the space between the letters. (opinion) **Why** Oversized type becomes a graphic, not just a label. **Applies to** landing page (hero). **Check** computed font-size of hero display text vs viewport; visual. **Source** (p.599-600)
+  - **RULE** Use a paint stroke / watercolour smudge as the "shadow": under the seal, the header and the pineapple, where a shadow would normally go, as if painted on the page. (opinion) **Why** A painted smudge gives depth with brand character instead of a generic drop shadow. **Applies to** landing page. **Check** visual. **Source** (p.600)
+  - **RULE** Letter-spacing is generous in uppercase type; all text on the site is capitalised and almost all has altered letter-spacing. (opinion) **Why** Tracked uppercase gives a strong sense of alignment and "classiness" (the author notes he feels self-conscious doing it often). **Applies to** landing page. **Check** `text-transform: uppercase` elements have positive `letter-spacing`. **Source** (p.600)
 - Meta-lesson: the author had seen the design and thought it looked fantastic but did not internalise its techniques until replicating it (p.600-601).
 
 ### Exercise 3: fonts database (p.601-605)
@@ -103,6 +103,20 @@ Worked observations from the example, labelled as the author's taste (opinion):
   **Why** Ties together noted design details, lessons from copywork, collected fonts and styles. **Applies to** all. **Check** 1-3 screens exist. **Source** (p.614-615)
 - Closing: practise each exercise weekly; practice is the key (p.615).
 
+### Audit additions (audit 2026-10-15)
+
+- **RULE** Spend more effort styling type (size, weight, leading, letter-spacing, case) than choosing the typeface: picking from thousands of fonts is "the easy part"; styling them correctly is "far more difficult - and much more important".
+  **Why** A good face set badly still reads as amateur; the book ranks styling above selection.
+  **Applies to** all. **Check** visual: every text style has a deliberate size/leading/tracking tuple, not tool defaults. **Source** (p.602) (audit 2026-10-15)
+
+- **RULE** When exploring a direction and the ideal font is too expensive, test it with "a nice free replacement" rather than dropping the idea; keep candidate fonts installed so you can compare a paragraph of body text in font A vs font B at once.
+  **Why** You only know if a font fits by trying it in place; cost should not block the experiment.
+  **Applies to** all. **Check** process. **Source** (p.604-605, p.610) (audit 2026-10-15)
+
+- **RULE** Show self-study work to more experienced designers for comments even when it is not meant for anyone else.
+  **Why** The self-study project skips real-world constraints, so outside critique is the remaining feedback loop.
+  **Applies to** all. **Check** process. **Source** (p.613) (audit 2026-10-15)
+
 ## 3. Numbers & scales
 | Value | Context | Source |
 |---|---|---|
@@ -119,11 +133,17 @@ Worked observations from the example, labelled as the author's taste (opinion):
 | 32% / 45% / 70% | "Get Discount On" labels in the pastel vs saturated swatch demo (content, not a design value) | p.593 |
 | Museo bold; PT Sans; Euclid Circular B; GT America (Bold Italic, size 15, line-height 28, letter-spacing 24%, fill #FFFFFF 100%, as shown in the Figma-style text panel); Century Schoolbook (MSDS) | Typefaces named | p.592, p.603, p.607, p.609, p.595 |
 
+- GT America specimen panel (p.603), full set of visible values: Bold Italic, size 15, line-height 28 (ratio 28/15 = about 1.87, derived), letter-spacing 24%, paragraph spacing 0, left aligned, top vertical alignment, fill FFFFFF at 100%; the specimen card is white wide-tracked type on a dark slate rounded card (audit 2026-10-15)
+- Pastel vs saturated demo (p.593): 3 tiles per phone, labels "Get Discount On" + 32% / 45% / 70%; white text on all six tiles, including the lightest pastel sky-blue tile (audit 2026-10-15)
+
 ## 4. Dos and Don'ts
 - Pastel vs dark/saturated (p.593 figure, caption p.594): two phone mockups each with three tiles "Get Discount On 32% / 45% / 70%". Left phone: muted slate-blue, periwinkle, light sky blue (pastel, relaxed). Right phone: dark navy, strong royal blue, steel blue (dark/saturated, heavier). Same hues; only saturation and brightness differ. Lesson: pastel reads relaxed.
 - Neat vs dirty cards (p.608 text): the author's "dirty tan" card colour is the example of what to avoid; "cards should be neat".
 - Blue-by-default finance (p.607-608): six financial logos all blue = predictable; choosing euro-note colours is the differentiator. Do not copy the category default if the brief says stand out.
 - Real-vs-learning constraint: personal project must be judged by "looks beautiful", not by pleasing a partner (p.612).
+
+- **Do** (p.594 grid-breaking figure) stack a headline in mixed colour and size per line: "YOUR SUCCESS" in slate-blue caps, "IS OUR" smaller in black caps, "BUSINESS." larger in black caps; on the right an iridescent image card overlaps the left edge of a black rounded panel (about a third of the card hangs outside the panel) and casts a soft coloured glow. (audit 2026-10-15)
+- **Do** (p.606 style tile mock) small details worth keeping: text-link nav followed by one filled periwinkle "Login" button and a black square icon button; a "01/12" slide counter flanked by thin rules under the hero copy; cards with a small grey category label above a two-line title, a short description and a hairline rule beneath; a vertical rotated side label "Pixselacademy UI Book" along the right edge. (audit 2026-10-15)
 
 ## 5. Exceptions & judgement calls
 - Every design "rule" here comes from one example and is the author's taste ("I'd explain why in the following way"); the book explicitly says readers may appreciate the same design for different reasons (p.592). Do not hard-code them as universal rules.
@@ -132,6 +152,8 @@ Worked observations from the example, labelled as the author's taste (opinion):
 - Copywork is pitched as plagiarism-free learning (private practice); it is not advice to ship copies. [engine note] The engine must keep copywork out of client output; use it only for studying references.
 - [engine note] The "tan card" regret and "cards should be neat" is the only explicit negative design rule in the chapter; the book gives no definition of neat.
 - [engine note] The 60/30/10 figure is a proportion illustration, not tied to a stated rule here. If the engine uses 60-30-10, cite another chapter or mark as engine-added.
+
+- [engine note] (audit 2026-10-15) The p.593 pastel demo puts white text on the lightest pastel tile (sky blue). The "pastel is relaxing" lesson does not excuse contrast: pastel fills usually need dark text, or the white label fails WCAG. The book does not discuss this.
 
 ## 6. Figures worth keeping
 Copied to `examples/ui-pedia/bonus-exercises/`:
@@ -155,3 +177,6 @@ Copied to `examples/ui-pedia/bonus-exercises/`:
 - p.598 OCR of "Dann Petty" vs "Dan Petty": the page shows "Dan Petty" once and "Dann Petty" once; same person.
 - Typos in the source: "Euclid Circulor/Circular B", "Museo bold", "mop of the dreg" (= "map of the region", p.591), "starts with 'Exercise 1: An1lyze'". "a third of a dozen" read as 4.
 - Whether the 365 number is px or pt is not stated.
+
+- (audit 2026-10-15) Pages viewed as images: p.584 (section divider: purple-to-periwinkle gradient, ghosted "05" numeral behind "Bonus Content"; no rule content), 585, 592, 593, 594, 595, 599, 603, 604, 606, 608. Text-only (prose): p.586, 587, 588, 589, 590, 591, 596, 597, 598, 600, 601, 602, 605, 607, 609, 610, 611, 612, 613, 614, 615. p.590 carries a small decorative card ("YOUR SUCCESS IS OUR BUSINESS") already described in section 7; not re-viewed.
+- (audit 2026-10-15) Format fix: rules written as `**RULE (qualifier)**` were invisible to `tools/build_index.py` (its opener regex does not accept a parenthesised qualifier inside the bold), so they never reached `system/rules/index.json`. Normalised to `**RULE** <text> (qualifier)`; wording unchanged.

@@ -1,0 +1,214 @@
+{
+ "title": "ui.sh — Agent skills for interface builders",
+ "vw": 1440,
+ "vh": 900,
+ "docH": 1673,
+ "bodyBg": "rgba(0, 0, 0, 0)",
+ "htmlBg": "rgb(255, 255, 255)",
+ "bodyFont": "InterVariable, system-ui, sans-serif",
+ "paragraph": {
+  "size": 20,
+  "lh": "28px",
+  "color": "rgb(255, 255, 255)",
+  "family": "InterVariable, system-ui, sans-serif",
+  "ls": "normal"
+ },
+ "nav": {
+  "box": {
+   "x": 0,
+   "y": 0,
+   "w": 1440,
+   "h": 69
+  },
+  "shell": {
+   "x": 248,
+   "y": 0,
+   "w": 944,
+   "h": 69
+  },
+  "position": "static",
+  "bg": "rgba(0, 0, 0, 0)",
+  "backdrop": "none",
+  "radius": "0px",
+  "borderB": "1px solid oklab(0 0 0 / 0.1)",
+  "border": "",
+  "shadow": "none",
+  "linkCount": 1,
+  "links": [
+   {
+    "t": "Sign in",
+    "x": 1106,
+    "y": 20,
+    "w": 86,
+    "h": 28,
+    "size": 13,
+    "weight": "500",
+    "ls": "normal",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(0, 0, 0)",
+    "radius": "3.35544e+07px",
+    "pad": "0px 4px 0px 12px"
+   }
+  ]
+ },
+ "navBottom": 69,
+ "head": {
+  "tag": "H1",
+  "text": "Agent skills for interface builders. A collection of expertly crafted, task-oriented prompts and workflows for building UIs that don't suck.",
+  "chars": 140,
+  "x": 248,
+  "y": 149,
+  "w": 944,
+  "h": 132,
+  "lines": 3,
+  "family": "InterVariable, system-ui, sans-serif",
+  "size": 36,
+  "weight": "500",
+  "ls": "-0.9px",
+  "lsEm": -0.025,
+  "lh": 1.222,
+  "color": "oklch(0.145 0 0)",
+  "transform": "none",
+  "feat": "normal",
+  "num": "normal",
+  "opsz": "auto",
+  "var": "normal",
+  "align": "start",
+  "wrap": "wrap",
+  "spanColors": [
+   "oklch(0.145 0 0)",
+   "oklch(0.556 0 0)"
+  ],
+  "bgClip": false,
+  "above": []
+ },
+ "sub": null,
+ "heroBtns": [],
+ "navBtns": [
+  {
+   "id": "mb0",
+   "inNav": true,
+   "text": "Sign in",
+   "x": 1106,
+   "y": 20,
+   "w": 86,
+   "h": 28,
+   "boxed": true,
+   "radius": "3.35544e+07px",
+   "pad": "0px 4px 0px 12px",
+   "bg": "rgb(0, 0, 0)",
+   "bgImg": "none",
+   "border": "0px solid rgb(255, 255, 255)",
+   "shadow": "none",
+   "color": "rgb(255, 255, 255)",
+   "size": 13,
+   "weight": "500",
+   "ls": "normal",
+   "family": "InterVariable, system-ui, sans-serif",
+   "transform": "none",
+   "transition": "all",
+   "hasIcon": true
+  }
+ ],
+ "allBtnCount": 1,
+ "media": 6,
+ "largestMedia": {
+  "tag": "IMG",
+  "x": 73,
+  "y": 447,
+  "w": 654,
+  "h": 378
+ },
+ "frames": [
+  {
+   "tag": "A",
+   "x": 248,
+   "y": 361,
+   "w": 304,
+   "h": 384,
+   "radius": "16px",
+   "shadow": "none",
+   "border": "0px solid oklch(0.145 0 0)",
+   "bg": "rgb(0, 0, 0)",
+   "pad": "0px"
+  },
+  {
+   "tag": "A",
+   "x": 568,
+   "y": 361,
+   "w": 304,
+   "h": 384,
+   "radius": "16px",
+   "shadow": "none",
+   "border": "0px solid oklch(0.145 0 0)",
+   "bg": "rgb(0, 0, 0)",
+   "pad": "0px"
+  },
+  {
+   "tag": "A",
+   "x": 888,
+   "y": 361,
+   "w": 304,
+   "h": 384,
+   "radius": "16px",
+   "shadow": "none",
+   "border": "0px solid oklch(0.145 0 0)",
+   "bg": "rgb(0, 0, 0)",
+   "pad": "0px"
+  }
+ ],
+ "fold": {
+  "textLeaves": 14,
+  "words": 88,
+  "interactive": 0,
+  "sizes": {
+   "11": 6,
+   "20": 6,
+   "36": 2
+  },
+  "weights": {
+   "500": 14
+  },
+  "colorCount": 4,
+  "colors": {
+   "oklch(0.145 0 0)": 1,
+   "oklch(0.556 0 0)": 1,
+   "rgb(189, 255, 35)": 6,
+   "rgb(255, 255, 255)": 6
+  }
+ },
+ "families": {
+  "InterVariable": 9,
+  "Geist Mono": 6
+ },
+ "fonts": [
+  "InterVariable 100 900",
+  "Geist Mono 100 900"
+ ],
+ "radii": {
+  "3.35544e+07px": 2,
+  "16px": 6
+ },
+ "shadows": [],
+ "tabularEls": 0,
+ "sections": [
+  {
+   "tag": "DIV",
+   "y": 69,
+   "h": 1604,
+   "pt": "80px",
+   "pb": "128px",
+   "bg": "rgba(0, 0, 0, 0)"
+  }
+ ],
+ "pixels": {
+  "modeColor": "rgb(248,248,248)",
+  "modeShare": 0.618,
+  "nearBgShare": 0.619,
+  "quietBlockShare": 0.651,
+  "saturatedShare": 0.002
+ },
+ "url": "https://ui.sh/",
+ "slug": "uish",
+ "captured": "2026-10-15T17:28:30.596Z"
+}

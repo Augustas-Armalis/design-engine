@@ -1,0 +1,128 @@
+{
+ "title": "Lué Studio® · Design & Development",
+ "vw": 1440,
+ "vh": 900,
+ "docH": 12503,
+ "bodyBg": "rgb(255, 255, 255)",
+ "htmlBg": "rgba(0, 0, 0, 0)",
+ "bodyFont": "PPNeueMontreal, ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Sego",
+ "paragraph": null,
+ "nav": null,
+ "navBottom": 0,
+ "head": {
+  "tag": "DIV",
+  "text": "Lué Studio®",
+  "chars": 11,
+  "x": 88,
+  "y": 72,
+  "w": 77,
+  "h": 20,
+  "lines": 1,
+  "family": "PPNeueMontreal, ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Sego",
+  "size": 14,
+  "weight": "400",
+  "ls": "0.28px",
+  "lsEm": 0.02,
+  "lh": 1.429,
+  "color": "color(display-p3 1 1 1)",
+  "transform": "none",
+  "feat": "normal",
+  "num": "normal",
+  "opsz": "auto",
+  "var": "normal",
+  "align": "start",
+  "wrap": "wrap",
+  "spanColors": [],
+  "bgClip": false,
+  "above": []
+ },
+ "sub": null,
+ "heroBtns": [
+  {
+   "id": "mb0",
+   "inNav": false,
+   "text": "Get in touch",
+   "x": 1236,
+   "y": 62,
+   "w": 116,
+   "h": 40,
+   "boxed": true,
+   "radius": "999px",
+   "pad": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgImg": "linear-gradient(rgb(196, 195, 255) 0%, rgba(96, 63, 169, 0) 10%)",
+   "border": "0px solid rgb(229, 231, 235)",
+   "shadow": "none",
+   "color": "color(display-p3 1 1 1 / 0.898039)",
+   "size": 14,
+   "weight": "400",
+   "ls": "0.28px",
+   "family": "PPNeueMontreal, ui-sans-serif, system-ui",
+   "transform": "none",
+   "transition": "color 0.4s, background-color 0.4s, border-color 0.4s, text-decoration-color 0.4s, fill 0.4s, stroke 0.4s, opacity 0.4s, ",
+   "hasIcon": false
+  }
+ ],
+ "navBtns": [],
+ "allBtnCount": 1,
+ "media": 6,
+ "largestMedia": {
+  "tag": "CANVAS",
+  "x": 0,
+  "y": 0,
+  "w": 1440,
+  "h": 1460
+ },
+ "frames": [],
+ "fold": {
+  "textLeaves": 40,
+  "words": 46,
+  "interactive": 1,
+  "sizes": {
+   "14": 40
+  },
+  "weights": {
+   "400": 40
+  },
+  "colorCount": 4,
+  "colors": {
+   "color(display-p3 1 1 1)": 2,
+   "color(display-p3 1 1 1 / 0.478431)": 1,
+   "color(display-p3 1 1 1 / 0.898039)": 1,
+   "rgba(255, 255, 255, 0.24)": 36
+  }
+ },
+ "families": {
+  "PPNeueMontreal": 40
+ },
+ "fonts": [
+  "PPNeueMontreal 400",
+  "PPNeueMontreal 500",
+  "EBGaramond 400"
+ ],
+ "radii": {
+  "999px": 93,
+  "17px": 1
+ },
+ "shadows": [
+  [
+   "rgba(210, 194, 255, 0.06) 0px 10px 8px -3px, rgba(210, 194, 255, 0.05) 0px 6px 3.5px -3px, rgba(210, 194, 255, 0.05) 0px 5px 3px -3px, rgba(210, 194, 255, 0.08) 0px 4px 1.5px -3px, rgba(48, 22, 121, 0",
+   4
+  ]
+ ],
+ "tabularEls": 0,
+ "sections": [],
+ "hover": {
+  "err": "page.hover: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator('[data-mb"
+ },
+ "pixels": {
+  "modeColor": "rgb(64,32,144)",
+  "modeShare": 0.035,
+  "nearBgShare": 0.044,
+  "quietBlockShare": 0.627,
+  "saturatedShare": 0.3751
+ },
+ "url": "https://lue.studio/",
+ "slug": "lue",
+ "captured": "2026-10-15T17:28:43.249Z"
+}

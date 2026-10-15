@@ -132,6 +132,28 @@ PDF page = printed page + 1. All citations are PDF pages. Images: `corpus/ui-ped
 - **RULE** Learn easing types in depth in your design tool (Figma, Adobe XD); advanced interactions need more tools and are "an unique field".
   **Why** Linear, ease in and ease out are the most popular and widely supported. **Applies to** prototyping. **Check** process. **Source** (p.473-474)
 
+### Audit additions (audit 2026-10-15)
+
+- **RULE** Give every interactive element a microinteraction that signals it is interactive before use (hover/press change), and answer every completed action with immediate, visible feedback that says whether the action was right and was accepted by the system.
+  **Why** The book lists "convey information about specific features, such as whether or not it is interactive" and "immediate and relevant feedback on completed actions" as core jobs; instant visible feedback is how the product teaches the user to interact with it.
+  **Applies to** all. **Check** every `button`, `a`, form control has `:hover`, `:active` and `:focus-visible` styles that differ from rest; every submit/save shows a success or error state. **Source** (p.463-464) (audit 2026-10-15)
+
+- **RULE** Beyond confirming actions, use microinteractions to make navigation easier, deliver tips, draw attention to specific content, and prompt sharing/liking/commenting (the book's list of jobs beyond feedback).
+  **Why** Well-designed microinteractions "show that the user is being taken care of".
+  **Applies to** all. **Check** visual: tag each microinteraction with one job from the list. **Source** (p.463-464) (audit 2026-10-15)
+
+- **RULE** Start with the small, frequent moments: toggling between screens, emphasising a feature, and flashing a new notice are the book's named examples of small interactions that make a big difference.
+  **Why** "The devil is in the details"; users are "hardwired to want immediate gratification".
+  **Applies to** all. **Check** visual: screen switches, new-feature highlights and new notices each have a defined transition or flash. **Source** (p.472) (audit 2026-10-15)
+
+- **RULE** Animate a tab bar's active state as ONE indicator that travels continuously from the old item to the new one (the figure's middle frame shows the notch and dot between Home and the next icon); keep the icons themselves unchanged (same outline style and colour in every frame) so the indicator alone marks the active item. The indicator is a notch cut into the bar's top edge with a small blue dot in it.
+  **Why** A single moving indicator shows the relationship between the two states; the book calls it "very subtle and short" and "lovely".
+  **Applies to** mobile | SaaS app UI. **Check** one indicator node animated with `transform: translateX()`, not a per-item show/hide; icon colour identical across states in the figure. **Source** (p.465, p.477) (audit 2026-10-15)
+
+- **RULE** Animate binary controls through an interpolated in-between state rather than snapping: the switch knob travels while the track darkens from pale grey through a mid-tone to dark slate; the checkbox goes empty outline, then a mid-tone fill with a small chevron, then a dark fill with a white tick.
+  **Why** The book's switch and checkbox examples are drawn as three frames, so the change of colour and position is gradual; "these animations are little and subtle".
+  **Applies to** forms | SaaS app UI. **Check** `transition` on the track `background-color` and knob `transform` together; checkbox fill and tick are both transitioned. **Source** (p.476) (audit 2026-10-15)
+
 ## 3. Numbers & scales
 
 | Item | Value | Source |
@@ -152,6 +174,11 @@ PDF page = printed page + 1. All citations are PDF pages. Images: `corpus/ui-ped
 | Progress figure | bar at 26 %, 3 steps | p.467 |
 | Animation categories | heading says "four", list shows five (see section 7) | p.465-468 |
 
+- Reasons microinteractions are "so awesome" listed on p.463-464: 9 (easier navigation; easier to connect with the site; immediate and relevant feedback on completed actions; tips; convey whether a feature is interactive; enhance UX; encourage share/like/comment; draw attention to content; add an emotional component) (audit 2026-10-15)
+- Small-interaction examples named on p.472: 3 (toggling between screens, emphasising a feature, flashing a new notice) (audit 2026-10-15)
+- Tab-bar figure (p.477): 3 frames, 5 icons (home, add-to-collection, search, heart, people); indicator moves Home -> 2nd icon, passing through a between-icons position in frame 2 (audit 2026-10-15)
+- Loading-bar figure (p.467): the "26%" label is white text centred in the bar, sitting on the unfilled dark track; the filled part is light periwinkle on the left (audit 2026-10-15)
+
 ## 4. Dos and Don'ts
 
 - **Do** (p.460 figure) switch/radio/checkbox cluster with a primary `Continue` button as the example of a microinteraction: radio selected vs unselected, toggle on (dark track, knob right) vs off (pale track, knob left), checkbox checked (filled dark with tick) vs empty (outline).
@@ -163,6 +190,10 @@ PDF page = printed page + 1. All citations are PDF pages. Images: `corpus/ui-ped
 - **Don't** pack the interface with "animated trinkets and bright, flashing colours" (p.458).
 - **Don't** use many different animations at once; and don't use animation that delays the user or distracts from the site's aim (p.470, p.473, p.469).
 - **Don't** let logo animation divert attention from the site's purpose (p.469).
+
+- **Do** (p.465, p.477) keep tab-bar icons visually identical between states; only the notch-and-dot indicator moves. The p.465 frame shows the same mechanism jumping Home -> Heart (4th icon), with an arrow labelled "Navigation Bar Animation { One Icon To Another Icon }". (audit 2026-10-15)
+- **Do** (p.457) tie a screen transition to the element tapped: the figure links a product card's small round button on the home screen to the product detail screen with a curved arrow labelled "Interaction" (the book does not specify the motion). (audit 2026-10-15)
+- **Do** (p.460) the opening example card puts the three control pairs (radio, switch, checkbox: on row above off row) above a full-width periwinkle "Continue" button inside one light rounded panel. (audit 2026-10-15)
 
 ## 5. Exceptions & judgement calls
 
@@ -196,3 +227,6 @@ PDF page = printed page + 1. All citations are PDF pages. Images: `corpus/ui-ped
 - p.472: "How to design Microinteraction?" has five bullets across p.472-473; the first bullet starts at the bottom of p.472.
 - p.474: Ease In/Ease Out are named by tool convention; the book gives no curves.
 - Coverage: p.457-478 all read. Pages with limited rule content: p.457-458 (definitions/history), p.461-464 (importance arguments, listed benefits), p.469 (logo caution plus start of uses list), p.478 (closing summary; no new rules beyond "subtle", "feedback through subtle elegant state changes improves usability").
+
+- (audit 2026-10-15) Pages viewed as images: p.457, 460, 465, 467, 468, 474, 475, 476, 477. Text-only (no figures, prose pages): p.458, 459, 461, 462, 463, 464, 466, 469, 470, 471, 472, 473, 478. No numeric values were found in images beyond those already recorded (0 s / 1 s / 2 s, 26 %, 1-3 s).
+- (audit 2026-10-15) Pages with no rule content beyond section 1: p.458-459 (history, definitions), p.461-462 (importance argument, spice metaphor), p.478 (closing summary).

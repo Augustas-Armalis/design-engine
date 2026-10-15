@@ -595,6 +595,26 @@ Numbering: Tip N sits on PDF page N+4 (Tip 1 = p.5 ... Tip 101 = p.105). Printed
   **Check** n/a
   **Source** (p.17, p.47, p.55, p.90, p.97, p.98)
 
+### Audit additions (audit 2026-10-15)
+
+Gap pass result: all 101 tips (T1-T101) were already present as rules; nothing was missing at tip level. The additions below are secondary conventions that every relevant mock draws consistently but no caption names, recovered by re-viewing all 106 page images.
+
+- **RULE** In a two-button confirmation dialog, set both buttons the same size side by side, the dismissive/neutral option on the left in a light grey fill and the emphasised option on the right; the emphasised slot holds the safe recommended answer in primary colour ("Don't Cancel", T8) or the destructive answer in red ("Yes, Delete", T12). Inside an inline form the order flips: the filled primary ("Login") sits first, left-aligned under the fields, with grey "Cancel" to its right (as drawn on p.14, p.67, p.103).
+  **Why** One fixed slot for the emphasised action lets users find it without reading; the colour of that slot (primary vs red) then carries the safe-vs-destructive meaning.
+  **Applies to** SaaS app UI, forms. **Check** dialog footer: last button is the emphasised one and only it has a non-neutral fill; form footer: primary button's left edge equals the inputs' left edge. **Source** (p.12, p.14, p.16, p.67, p.103) (audit 2026-10-15)
+
+- **RULE** Mark required fields with a red asterisk placed immediately after the label text ("First Name *"), the asterisk in the error/red colour and the label in normal text colour.
+  **Why** Every form mock that shows required fields uses this one convention, so required state is read from the label line without extra helper text.
+  **Applies to** forms. **Check** required inputs have a label ending in `*` (or `aria-required` plus visible marker) whose colour is the destructive/red token. **Source** (p.95, p.97) (audit 2026-10-15)
+
+- **RULE** On a mobile error/offline screen stack the action pair vertically, both full width within the margins: primary on top in the brand fill, secondary below in a neutral grey fill, each with a leading icon (refresh icon on "Retry", exit icon on "Exit").
+  **Why** Stacked full-width buttons keep both targets large and in thumb reach while fill colour alone ranks them.
+  **Applies to** mobile. **Check** at viewport < ~480px the two buttons share the container's inner width, primary DOM-first and visually above; secondary uses a neutral fill, not outline. **Source** (p.64, p.102) (audit 2026-10-15)
+
+- **RULE** In a multi-select list where selection must be obvious, render each option as its own bordered full-width row tile with the checkbox inside the tile; the selected tile fills with the primary colour and its label and check turn white (unselected tiles stay white with grey label).
+  **Why** Filling the whole tile turns a tiny checkbox change into a large state change users cannot miss, and the tile doubles as the hit area (T48).
+  **Applies to** forms, onboarding. **Check** `:checked` row container background changes to the primary token; label colour on selected row is white with >= 4.5:1 contrast. **Source** (p.56) (audit 2026-10-15)
+
 ## 3. Numbers and scales
 
 | Value | Rule | Source |
@@ -700,7 +720,7 @@ Format: Tip / page / what the BAD mock shows / what the GOOD mock shows.
 | 72 | 76 | Uniform 2x3 image grid | Hero tile, two halves, wide tile |
 | 73 | 77 | Uniform 3x4 grid | Mosaic with large tile and varied sizes |
 | 74 | 78 | Names only as placeholders | Labels above filled values |
-| 75 | 79 | Status in plain grey text | Coloured status pills + alternating row tint |
+| 75 | 79 | Status in plain grey text (rows already alternate tint) | Coloured status pills; the alternating row tint is the same in both mocks |
 | 76 | 80 | "#1" labels, bare progress bar, uniform "Downloaded" | "Episode #1", progress with "42%" and cancel |
 | 77 | 81 | Stacked cards all same grey, shadows only | Lighter front card, darker back cards |
 | 78 | 82 | Wallet photo for pay bills | Credit-card 3D artwork |
@@ -782,6 +802,9 @@ Format: Tip / page / what the BAD mock shows / what the GOOD mock shows.
 - p.97: 16px/8px spacing annotations in a form.
 - p.98: 120 vs 55-65 characters per line with annotation bars.
 - p.99: numeric table alignment.
+- p.12 and p.16 together: dialog footer order, grey dismissive left, emphasised right (primary for the safe choice, red for the destructive one) (audit 2026-10-15).
+- p.97: red asterisk required markers next to the 16px/8px spacing annotations (audit 2026-10-15).
+- p.102: stacked full-width Retry/Exit pair with leading icons, primary fill over grey fill (audit 2026-10-15).
 
 ## 7. Open questions
 
@@ -795,3 +818,7 @@ Format: Tip / page / what the BAD mock shows / what the GOOD mock shows.
 - **p.85 (T81)** and **p.7 (T3 "most people prefer light")**: unsupported claims; flagged as opinion.
 - **Printed page numbers** show "103" on both p.104 and p.105 (Tip 100 and Tip 101); the page-to-tip mapping (page = tip + 4) holds throughout.
 - **Typos in the source** ("Priciple" p.53, "Adress" p.63, "Untill" p.23, "Informaton" p.101) were not corrected in rules.
+- (audit 2026-10-15) Tip coverage check: every tip T1-T101 has a `[T<n>]` rule in section 2; no tip number was missing. All 106 page images were re-viewed (p.1-4 and p.106 have no rule content; p.105 is process advice).
+- (audit 2026-10-15) corrected: section 4 row for Tip 75 implied the alternating row tint was part of the fix, was "Coloured status pills + alternating row tint", page shows both the bad and the good table already alternate row tints; the only change is the coloured status pills (p.79). The T75 rule in 2.3 should be read the same way.
+- (audit 2026-10-15) The dialog-order and required-asterisk rules in the audit additions are conventions drawn consistently in the mocks, not captioned tips; treat them as the book's house style, lower authority than the numbered tips.
+- (audit 2026-10-15, spot check) 15 tip pages picked at random (seed 20261015) were re-opened as images and compared with this note: T2 (p.6), T4 (p.8), T6 (p.10), T25 (p.29), T26 (p.30), T28 (p.32), T51 (p.55), T55 (p.59), T57 (p.61), T62 (p.66), T68 (p.72), T74 (p.78), T79 (p.83), T84 (p.88), T89 (p.93). Page = tip + 4 held for all 15; every number (200-500 tone levels; x / 2x button padding; shadow 0/2/4 #000000 50% vs 0/8/24 #000000 15%) and every described visual matched. No mismatch to fix. One source detail recorded: in the T74 good mock the field labelled "Address:" contains "joegreen@gmail.com" (sample-data slip in the book; the rule is unaffected).

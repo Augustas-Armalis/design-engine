@@ -1,0 +1,443 @@
+{
+ "title": "Langdock | The Platform for AI Adoption",
+ "vw": 1440,
+ "vh": 900,
+ "docH": 7276,
+ "bodyBg": "rgb(244, 244, 245)",
+ "htmlBg": "rgba(0, 0, 0, 0)",
+ "bodyFont": "\"STK Bureau Sans\", Arial, sans-serif",
+ "paragraph": {
+  "size": 18,
+  "lh": "27px",
+  "color": "rgb(26, 28, 33)",
+  "family": "\"STK Bureau Sans\", Arial, sans-serif",
+  "ls": "-0.16px"
+ },
+ "nav": {
+  "box": {
+   "x": 0,
+   "y": 0,
+   "w": 1440,
+   "h": 52
+  },
+  "shell": {
+   "x": 0,
+   "y": 0,
+   "w": 1440,
+   "h": 52
+  },
+  "position": "relative",
+  "bg": "oklab(0.967428 0.000417888 -0.00125271 / 0.9)",
+  "backdrop": "blur(16px)",
+  "radius": "0px",
+  "borderB": "0px none rgb(26, 28, 33)",
+  "border": "0px none rgb(26, 28, 33)",
+  "shadow": "none",
+  "linkCount": 6,
+  "links": [
+   {
+    "t": "Security",
+    "x": 462,
+    "y": 0,
+    "w": 71,
+    "h": 52,
+    "size": 14,
+    "weight": "400",
+    "ls": "-0.16px",
+    "color": "rgb(26, 28, 33)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "0px",
+    "pad": "0px 10px"
+   },
+   {
+    "t": "Enterprise",
+    "x": 533,
+    "y": 0,
+    "w": 84,
+    "h": 52,
+    "size": 14,
+    "weight": "400",
+    "ls": "-0.16px",
+    "color": "rgb(26, 28, 33)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "0px",
+    "pad": "0px 10px"
+   },
+   {
+    "t": "Pricing",
+    "x": 617,
+    "y": 0,
+    "w": 63,
+    "h": 52,
+    "size": 14,
+    "weight": "400",
+    "ls": "-0.16px",
+    "color": "rgb(26, 28, 33)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "0px",
+    "pad": "0px 10px"
+   },
+   {
+    "t": "Sign in",
+    "x": 1057,
+    "y": 9,
+    "w": 67,
+    "h": 35,
+    "size": 14,
+    "weight": "400",
+    "ls": "-0.16px",
+    "color": "rgb(26, 28, 33)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "3.35544e+07px",
+    "pad": "6px 12px"
+   },
+   {
+    "t": "Talk to sales",
+    "x": 1133,
+    "y": 9,
+    "w": 100,
+    "h": 35,
+    "size": 14,
+    "weight": "400",
+    "ls": "-0.16px",
+    "color": "rgb(26, 28, 33)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "3.35544e+07px",
+    "pad": "6px 12px"
+   },
+   {
+    "t": "Get started",
+    "x": 1240,
+    "y": 9,
+    "w": 96,
+    "h": 35,
+    "size": 14,
+    "weight": "400",
+    "ls": "-0.16px",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(26, 28, 33)",
+    "radius": "3.35544e+07px",
+    "pad": "6px 12px"
+   }
+  ]
+ },
+ "navBottom": 52,
+ "head": {
+  "tag": "H1",
+  "text": "The Platform for AI Adoption",
+  "chars": 28,
+  "x": 400,
+  "y": 172,
+  "w": 640,
+  "h": 57,
+  "lines": 1,
+  "family": "\"STK Bureau Sans\", Arial, sans-serif",
+  "size": 52,
+  "weight": "500",
+  "ls": "-2.08px",
+  "lsEm": -0.04,
+  "lh": 1.1,
+  "color": "rgb(26, 28, 33)",
+  "transform": "none",
+  "feat": "normal",
+  "num": "normal",
+  "opsz": "auto",
+  "var": "normal",
+  "align": "center",
+  "wrap": "wrap",
+  "spanColors": [],
+  "bgClip": false,
+  "above": [
+   {
+    "t": "From Europe, for the world. Langdock’s next chapter.",
+    "x": 512,
+    "y": 62,
+    "w": 321,
+    "h": 20,
+    "size": 14,
+    "gapToH1": 90
+   },
+   {
+    "t": "Read more",
+    "x": 841,
+    "y": 62,
+    "w": 67,
+    "h": 20,
+    "size": 14,
+    "gapToH1": 90
+   }
+  ]
+ },
+ "sub": {
+  "text": "Langdock enables you to roll out AI across your entire organization in a safe and flexible way.",
+  "chars": 95,
+  "x": 512,
+  "y": 241,
+  "w": 416,
+  "h": 54,
+  "lines": 2,
+  "gapFromH1": 12,
+  "family": "\"STK Bureau Sans\", Arial, sans-serif",
+  "size": 18,
+  "weight": "300",
+  "ls": "-0.16px",
+  "lsEm": -0.0089,
+  "lh": 1.5,
+  "color": "rgb(26, 28, 33)",
+  "transform": "none",
+  "feat": "normal",
+  "num": "normal",
+  "opsz": "auto",
+  "var": "normal",
+  "align": "center",
+  "wrap": "wrap"
+ },
+ "heroBtns": [
+  {
+   "id": "mb9",
+   "inNav": false,
+   "text": "Start free trial",
+   "x": 597,
+   "y": 327,
+   "w": 122,
+   "h": 43,
+   "boxed": true,
+   "radius": "3.35544e+07px",
+   "pad": "10px 18px",
+   "bg": "rgb(26, 28, 33)",
+   "bgImg": "none",
+   "border": "1px solid rgba(0, 0, 0, 0)",
+   "shadow": "none",
+   "color": "rgb(255, 255, 255)",
+   "size": 14,
+   "weight": "400",
+   "ls": "-0.16px",
+   "family": "\"STK Bureau Sans\", Arial, sans-serif",
+   "transform": "none",
+   "transition": "0.25s",
+   "hasIcon": false
+  },
+  {
+   "id": "mb10",
+   "inNav": false,
+   "text": "Talk to sales",
+   "x": 731,
+   "y": 327,
+   "w": 112,
+   "h": 43,
+   "boxed": true,
+   "radius": "3.35544e+07px",
+   "pad": "10px 18px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgImg": "none",
+   "border": "1px solid oklab(0.226508 -0.000303261 -0.0101522 /",
+   "shadow": "none",
+   "color": "rgb(26, 28, 33)",
+   "size": 14,
+   "weight": "400",
+   "ls": "-0.16px",
+   "family": "\"STK Bureau Sans\", Arial, sans-serif",
+   "transform": "none",
+   "transition": "0.25s",
+   "hasIcon": false
+  }
+ ],
+ "navBtns": [
+  {
+   "id": "mb6",
+   "inNav": true,
+   "text": "Sign in",
+   "x": 1057,
+   "y": 9,
+   "w": 67,
+   "h": 35,
+   "boxed": true,
+   "radius": "3.35544e+07px",
+   "pad": "6px 12px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgImg": "none",
+   "border": "1px solid rgba(0, 0, 0, 0)",
+   "shadow": "none",
+   "color": "rgb(26, 28, 33)",
+   "size": 14,
+   "weight": "400",
+   "ls": "-0.16px",
+   "family": "\"STK Bureau Sans\", Arial, sans-serif",
+   "transform": "none",
+   "transition": "0.25s",
+   "hasIcon": false
+  },
+  {
+   "id": "mb7",
+   "inNav": true,
+   "text": "Talk to sales",
+   "x": 1133,
+   "y": 9,
+   "w": 100,
+   "h": 35,
+   "boxed": true,
+   "radius": "3.35544e+07px",
+   "pad": "6px 12px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgImg": "none",
+   "border": "1px solid oklab(0.226508 -0.000303261 -0.0101522 /",
+   "shadow": "none",
+   "color": "rgb(26, 28, 33)",
+   "size": 14,
+   "weight": "400",
+   "ls": "-0.16px",
+   "family": "\"STK Bureau Sans\", Arial, sans-serif",
+   "transform": "none",
+   "transition": "0.25s",
+   "hasIcon": false
+  },
+  {
+   "id": "mb8",
+   "inNav": true,
+   "text": "Get started",
+   "x": 1240,
+   "y": 9,
+   "w": 96,
+   "h": 35,
+   "boxed": true,
+   "radius": "3.35544e+07px",
+   "pad": "6px 12px",
+   "bg": "rgb(26, 28, 33)",
+   "bgImg": "none",
+   "border": "1px solid rgba(0, 0, 0, 0)",
+   "shadow": "none",
+   "color": "rgb(255, 255, 255)",
+   "size": 14,
+   "weight": "400",
+   "ls": "-0.16px",
+   "family": "\"STK Bureau Sans\", Arial, sans-serif",
+   "transform": "none",
+   "transition": "0.25s",
+   "hasIcon": false
+  }
+ ],
+ "allBtnCount": 11,
+ "media": 2,
+ "largestMedia": {
+  "tag": "VIDEO",
+  "x": 153,
+  "y": 446,
+  "w": 1133,
+  "h": 638
+ },
+ "frames": [],
+ "fold": {
+  "textLeaves": 8,
+  "words": 43,
+  "interactive": 2,
+  "sizes": {
+   "14": 6,
+   "18": 1,
+   "52": 1
+  },
+  "weights": {
+   "300": 1,
+   "400": 5,
+   "500": 2
+  },
+  "colorCount": 3,
+  "colors": {
+   "rgb(47, 47, 47)": 2,
+   "rgb(26, 28, 33)": 3,
+   "rgb(255, 255, 255)": 3
+  }
+ },
+ "families": {
+  "STK Bureau Sans": 17
+ },
+ "fonts": [
+  "STK Bureau Sans 300",
+  "STK Bureau Sans 400",
+  "STK Bureau Sans 500"
+ ],
+ "radii": {
+  "3.35544e+07px": 6,
+  "12px": 1
+ },
+ "shadows": [],
+ "tabularEls": 0,
+ "sections": [
+  {
+   "tag": "SECTION",
+   "y": 92,
+   "h": 326,
+   "pt": "0px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 418,
+   "h": 693,
+   "pt": "0px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 1111,
+   "h": 686,
+   "pt": "0px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 1797,
+   "h": 850,
+   "pt": "0px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 2647,
+   "h": 1973,
+   "pt": "0px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 4620,
+   "h": 890,
+   "pt": "0px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 5511,
+   "h": 730,
+   "pt": "0px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "FOOTER",
+   "y": 6241,
+   "h": 1036,
+   "pt": "0px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  }
+ ],
+ "hover": {
+  "err": "page.hover: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator('[data-mb"
+ },
+ "pixels": {
+  "modeColor": "rgb(128,128,128)",
+  "modeShare": 0.628,
+  "nearBgShare": 0.761,
+  "quietBlockShare": 0.812,
+  "saturatedShare": 0.0012
+ },
+ "url": "https://langdock.com/",
+ "slug": "langdock",
+ "captured": "2026-10-15T17:28:53.839Z"
+}

@@ -54,7 +54,7 @@ The chapter defines whitespace, splits it two ways (macro vs micro; active vs pa
   **Why** "There is no rule of thumb to apply consistently between audiences"; "They are the only ones who can tell you how they feel about your creations".
   **Applies to** all. **Check** n/a (process). **Source** (p.121-122, p.126)
 
-- **RULE (opinion)** Use generous whitespace when the brand should signal quality or high budget (the book cites Apple, Mercedes-Benz, IKEA).
+- **RULE** Use generous whitespace when the brand should signal quality or high budget (the book cites Apple, Mercedes-Benz, IKEA). (opinion)
   **Why** Whitespace use can indicate a company's budget and thus perceived product quality. The book asks "what evidence do they have" rather than proving it.
   **Applies to** landing page. **Check** visual. **Source** (p.122)
 
@@ -86,6 +86,28 @@ The chapter defines whitespace, splits it two ways (macro vs micro; active vs pa
   **Why** Definition.
   **Applies to** all. **Check** n/a. **Source** (p.116, p.127)
 
+### Audit additions (audit 2026-10-15)
+
+- **RULE** When a card feels cramped, keep the card size and buy whitespace by scaling the content down rather than enlarging the card: the book's good card shrinks the image height, label, heading and body all to about 86% of the bad card's (image 175 -> 151 drawn px, heading line 292 -> 252 px wide) and spends the freed space on a text inset of about 28px on a 334px card (about 8%), with the image left full-bleed to the card edges and only the text block inset.
+  **Why** Same card, same copy: the only change is type/image scale versus padding, and the padded version reads calmer and easier to scan.
+  **Applies to** cards, landing page, SaaS app UI. **Check** card text inset >= about 8% of card width; image edge-to-edge inside the card while text is inset; label/heading/body sizes reduced before the card is enlarged. **Source** (p.114 figure, measured) (audit 2026-10-15)
+
+- **RULE** Inside a card, make the gap below the image equal to the side padding (about 28px in the good card), keep label -> heading (about 22px) larger than heading -> body (about 15px), and leave a slightly larger bottom padding (about 33px).
+  **Why** Equal top/side inset makes the text block read as one framed unit; the decreasing inner gaps bind the heading to its body more tightly than to the category label.
+  **Applies to** cards. **Check** `padding-left` == gap image-bottom -> label top (+-4px); gap(label, heading) > gap(heading, body); padding-bottom >= padding-left. **Source** (p.114 figure, measured, not stated in text) (audit 2026-10-15)
+
+- **RULE** Set the gaps between stacked text elements (label -> heading, heading -> body) at about twice the gap between lines inside an element: in the book's micro-whitespace figure the label -> heading and heading -> body bands are both about 19px, while the bands between heading lines (about 11px) and body lines (about 8px) are roughly half that.
+  **Why** Element gaps must read as separations and line gaps as continuations; if they are equal, label, heading and body merge into one block.
+  **Applies to** all (cards, list items, hero copy stacks). **Check** for each text stack, gap between elements >= 1.7 x the leading gap (line-height minus font-size) inside the larger element. **Source** (p.119 figure, measured) (audit 2026-10-15)
+
+- **RULE** In a horizontal media card, let the image take a full-height block of about 43% of the card width and surround the text block with a roughly even field of macro whitespace: about 40px from the image edge, about 40px top, about 43px right, about 50px bottom on a 285px-tall card.
+  **Why** The book highlights this even field (light blue) as the macro whitespace that contains the card's content; uneven insets would push the text against one edge.
+  **Applies to** cards, list rows with media, landing page feature rows. **Check** text-block insets within +-25% of each other; image width / card width about 0.4-0.45. **Source** (p.118 figure, measured) (audit 2026-10-15)
+
+- **RULE** Give single-purpose pages (search, a single-input start page) extensive macro whitespace so the one task is the only thing in view; the book credits Google's homepage simplicity with "less work for your eyes and mind" so users can "concentrate on the purpose" (to find something).
+  **Why** Less clutter lowers visual effort and keeps attention on the one action; pair with the completion cue rule above so the sparse page does not look unfinished.
+  **Applies to** landing page, search/home screens, onboarding steps. **Check** visual: one focal control, no competing blocks in the first viewport. **Source** (p.118, p.120) (audit 2026-10-15)
+
 ## 3. Numbers & scales
 
 The chapter gives no pixel values. The only numbers are:
@@ -98,6 +120,10 @@ The chapter gives no pixel values. The only numbers are:
 | Whitespace taxonomies | 2 (macro/micro; active/passive) | p.117, p.123 |
 | Design considerations for negative space | 3 (legibility; tone and branding; focus and attention) | p.125-126 |
 | Figure-derived (not in text) | good card padding about 8-9% of card width (about 28px on 335px-wide drawn card); bad card padding about 2% | p.114 image |
+| Good card spacing (p.114, measured on a 334px-wide drawn card) | side inset about 28px; image bottom -> label about 28px; label -> heading about 22px; heading -> body about 15px; bottom padding about 33px. Bad card: side inset about 5px, image -> label about 5px | p.114 image (audit 2026-10-15) |
+| Good vs bad card scale (p.114) | image height 175 -> 151 drawn px; label, heading and body widths all about 0.86 x the bad card's (type about 14% smaller) | p.114 image (audit 2026-10-15) |
+| Micro whitespace bands (p.119, measured) | label -> heading about 19px; heading line 1 -> line 2 about 11px; heading -> body about 19px; body line -> body line about 8px. Element gap about 2x line gap | p.119 image (audit 2026-10-15) |
+| Macro whitespace card (p.118, measured) | card about 825 x 285 drawn px; image about 352px wide (about 43%); text insets about 40 left (from image), 40 top, 43 right, 50 bottom | p.118 image (audit 2026-10-15) |
 
 ## 4. Dos and Don'ts
 
@@ -105,7 +131,10 @@ The chapter gives no pixel values. The only numbers are:
 - **Macro example (p.118):** horizontal card; photo left (about 42%), text on the right. The macro whitespace, shown highlighted in light blue, is the empty field around the text block: padding to the right and above/below the text inside the card (macro = the space around/between the main pieces).
 - **Micro example (p.119):** same card with pink bands marking the small gaps: between the "Travelling" label and headline, between the two lines of the headline, between headline and body, and between body lines.
 - **Twitter web UI (p.122):** light blue highlights = macro: empty gutters left of the left nav, between left nav / feed / right column, and outer margins around the page; pink highlights = micro: space between nav items, between rows in the feed, between tweet text lines and metadata. Shows both layers coexisting on a dense interface.
-- **Text treatments (p.123, three columns of lorem ipsum):** left "No white space applied": tiny, dense single block, hard to read; middle "Passive white space applied": normal leading, paragraph breaks and margins, much easier; right "Passive & active white space applied": same plus a bold side-heading column (pull-out headings), an italic pull quote, and indentation, giving the reader entry points. Lesson: each layer of whitespace adds legibility, the last adds navigation.
+- **Text treatments (p.123, three columns of lorem ipsum):** left "No white space applied": tiny, dense single block, hard to read; middle "Passive white space applied": normal leading, paragraph breaks and margins, much easier; right "Passive & active white space applied": same plus a bold side-heading column (pull-out headings), an italic pull quote, and blank-line gaps between paragraphs, giving the reader entry points. Lesson: each layer of whitespace adds legibility, the last adds navigation.
+- **Card figure, finer detail (p.114):** the good card does not simply add padding; it shortens the image (about 151 vs 175 drawn px) and sets every text element about 14% smaller, so the same card height holds the same copy with roughly 28px of air on the sides and under the image. In the bad card the purple label sits about 5px under the image and about 5px from the card edge, reading as a caption glued to the photo. (audit 2026-10-15)
+- **Twitter overlay, module gaps (p.122):** besides outer margins and column gutters, the blue (macro) bands also mark the gap between stacked modules inside one column: under the "Welcome back / Get started" module before the first tweet, and between the "What's happening" and "Who to follow" boxes in the right column. Pink (micro) bands sit between left-nav items, between the composer field and its icon row, and between the Welcome title and its description. Lesson: macro vs micro is decided by what the gap separates (modules vs parts of one module), not by which column it is in. (audit 2026-10-15)
+- **No-whitespace column, precisely (p.123):** the left column's leading is below the font size, so ascenders and descenders of adjacent lines overlap, and the bold heading sits directly on the first body line with no gap; tracking is also tight. This is the "crushed and compressed" failure (p.124). The middle column restores normal leading and line breaks per paragraph but still has no blank-line paragraph gaps; the right column adds blank-line gaps, a narrower main measure with a large bold pull-out set in the freed side column, and an italic pull quote isolated by space above and below. (audit 2026-10-15)
 
 ## 5. Exceptions & judgement calls
 
@@ -132,3 +161,6 @@ Copied to examples/ui-pedia/whitespace/.
 - p.118 says macro whitespace is "easier to detect" and cites Google.com as the best macro example but the page shows no Google screenshot; no values given.
 - The book never quantifies margins, gaps, or ratios (no px/rem or ratio values anywhere in this chapter).
 - p.114 is the chapter title page and also carries the bad/good card figure plus the canvas intro text (the chapter spans PDF 114-128).
+- (audit 2026-10-15) corrected: section 4 p.123 right-column description said the active version adds "indentation", was "and indentation", page shows no first-line or block indents; the active additions are blank-line paragraph gaps, a bold pull-out in a side column and an italic pull quote (p.123). The section 2 rule's word "indents" is left as written but is not supported by the figure.
+- (audit 2026-10-15) Coverage re-check: all 15 page images p.114-128 viewed. The chapter text has no px values; every number added in this audit is measured from the figures on p.114, p.118 and p.119 (drawn px at page scale) and is labelled measured. Pages with no rule content: p.115 (full-page Soegaard quote on a gradient), p.116 (definition and client objection, covered), p.117 (manual example, covered), p.121-122 text (four factors, covered), p.124-127 (recap of figure and three considerations, covered), p.128 (two-line tail of the recap).
+- (audit 2026-10-15) Format fix: rules written as `**RULE (qualifier)**` were invisible to `tools/build_index.py` (its opener regex does not accept a parenthesised qualifier inside the bold), so they never reached `system/rules/index.json`. Normalised to `**RULE** <text> (qualifier)`; wording unchanged.

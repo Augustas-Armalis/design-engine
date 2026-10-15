@@ -78,6 +78,16 @@ Chapter of "UI Pedia" (Design Basics). Short, practical: which canvas size to de
   **Why** Thumbs reach on all sides when the tablet is held with both hands; split keyboards and game controllers suit that arrangement.
   **Applies to** tablet. **Check** visual. **Source** (p.534-535)
 
+### Audit additions (audit 2026-10-15)
+
+- **RULE** Treat the phone thumb zone as side-dependent, not centred: in the figure the "easily thumb accessible" circle is anchored at the bottom corner on the holding hand's side (bottom-left for L, bottom-right for R), a light-blue band above and across it needs a hand shift, and the full top band (roughly the top third) needs both hands. Mirror-check layouts for left- and right-handed use; the bottom-centre is the area green in both.
+  **Why** One hand holds the phone and its own thumb does most taps; the opposite bottom corner is already a stretch.
+  **Applies to** mobile. **Check** overlay both mirrored reach maps; primary action falls in the green area of both (bottom-centre) or is duplicated per side. The "top third" and "bottom-centre overlap" are read from the figure, not stated in text. **Source** (p.533) (audit 2026-10-15)
+
+- **RULE** On a tablet held in one hand and operated with the other, expect the easy zone to cover roughly the lower half of the screen, with a reach ring above it and only the top band hard to reach, in both portrait and landscape.
+  **Why** The free hand can travel over the screen, so "the range is significantly increased".
+  **Applies to** mobile (tablet). **Check** visual against the p.534 one-handed tablet figure. **Source** (p.534) (audit 2026-10-15)
+
 ## 3. Numbers & scales
 
 Most commonly used resolutions, Worldwide Screen Resolution Stats, Dec 2020 - Dec 2021 (p.529):
@@ -110,12 +120,19 @@ Unit illustrations (p.525-527): 1080 x 2340 pixels (px); 375 x 812 points (pt); 
 
 Thumb-reach colour key (p.533): purple-blue = requires both hands; light blue = requires a position shift of the hand; green = easily thumb accessible.
 
+- Derived arithmetic from the book's own unit figures (not stated in the text): 476 ppi / 163 = about 2.92 px per pt; 1080 px / 375 pt = 2.88 and 2340 px / 812 pt = about 2.88, so the p.526-527 example device is roughly a 3x screen (audit 2026-10-15)
+- PPI direction (p.527): higher PPI = more detail; lower PPI = lower resolution (audit 2026-10-15)
+- Reach legend (p.533) has exactly 3 tiers: requires both hands / requires a position shift of the hand / easily thumb accessible (audit 2026-10-15)
+
 ## 4. Dos and Don'ts
 
 - DO: pick a base frame per platform (Android 360x640, iOS 375x667, desktop 1440x1024), check it also fits larger devices. DON'T: design only on a large flagship canvas and hope it shrinks (p.528-530).
 - DO: bottom tab bar (figure p.534: phone with four icon tiles along the bottom, menu icon top-left). DON'T: rely on a top-left hamburger as the primary nav, it sits outside the thumb arc (p.533-534).
 - Figure p.533: two phones (L and R hand). Green circle at bottom (thumb sweep) is easy; light-blue ring above it needs a hand shift; the top band is purple and needs both hands. The arc is mirrored for left/right-handed holding.
 - Figure p.534: tablet one-handed (green mass at the bottom, light blue ring above, purple top) versus tablet two-handed (green/blue crescents at the left and right edges with "L" and "R" markers, purple centre).
+
+- Figure p.534 (bottom-tab phone): the four tab icons span the full bottom edge, so the outer icon on the far side of the holding thumb sits in the light-blue "shift" area while the inner ones sit in green; the hamburger icon at top-left sits in the purple both-hands band. Bottom tabs are better than the hamburger, not perfect. (audit 2026-10-15)
+- Figure p.525: blank phone frame -> phone with wallpaper, captioned by the idea that everything comes down to the pixel; decorative. (audit 2026-10-15)
 
 ## 5. Exceptions & judgement calls
 
@@ -146,3 +163,6 @@ Copied to examples/ui-pedia/screens/.
 - Watch values 292x320 vs 330x364: OCR on p.531 read only "330 x 364"; the left pair read from the image on p.532 at zoom.
 - p.531 OCR "360 x 840" is wrong; image shows 360 x 800 (checked on p.531 and p.528).
 - No numbers are given for tap-target size or the radius of the thumb zone; the book is qualitative on reach.
+
+- (audit 2026-10-15) The book contradicts itself on tablet holding: p.534 says "the most typical method involves holding the device in one hand while using the other to manipulate the user interface"; p.535 says "Using both hands is the most typical tablet usage behaviour" and then calls thumb reach on all sides with both hands "an unusual occurrence". Core idea 7 above follows p.535; treat which hold is most common as unresolved and design for both.
+- (audit 2026-10-15) Pages viewed as images: p.525, 527, 528, 530, 531, 532, 533, 534, 535. Text-only: p.526 (px definition and 1080 x 2340 px figure label, OCR clean), p.529 (stats list, OCR clean). p.530 image confirms the iPhone frames are labelled 370 x 667 and 370 x 812.

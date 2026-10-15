@@ -94,6 +94,16 @@ Conceptual chapter: it teaches how the brain groups and ranks what it sees, then
   **Why** Perception is shaped by material culture (carpentered-world example).
   **Applies to** all (especially international products). **Check** n/a (user test). **Source** (p.155-156)
 
+### Audit additions (audit 2026-10-15)
+
+- **RULE** Make the focal element differ from its neighbours in more than one attribute at once: in the figure the one element seen first is a different colour (saturated red vs navy), a different shape (square vs circle) and a different angle (rotated about 10-15 degrees) inside a regular 6x3 grid; in the Twilio hero the focal CTA is solid red while its sibling is a ghost outline on the dark photo.
+  **Why** Each extra difference adds contrast against the surroundings, so the focal point wins at a glance (read from figures).
+  **Applies to** all (primary CTA, alerts, highlighted plan). **Check** the focal element differs from siblings in at least 2 of: hue/saturation, shape/fill, size, orientation. **Source** (p.169) (audit 2026-10-15)
+
+- **RULE** When splitting a set into groups by spacing, make the gap between groups several times the gap inside a group; the proximity figure splits a 4x4 dot set into two groups with a gutter about 3-4x the inter-dot gap, and the colour-vs-proximity figure uses a gutter many times wider still.
+  **Why** A clearly larger gutter makes the grouping unambiguous; a gap only slightly larger than the internal gap reads as uneven spacing, not as two groups (ratio measured from the page render, the book gives no number).
+  **Applies to** all (card grids, form sections, footers, nav clusters). **Check** inter-group gap / intra-group gap >= 3 where grouping is meant. **Source** (p.164) (audit 2026-10-15)
+
 ## 3. Numbers & scales
 
 The chapter gives no measurements. Reference facts and figure parameters:
@@ -111,6 +121,9 @@ The chapter gives no measurements. Reference facts and figure parameters:
 | Proximity figure 2 | 3 pairs of 4 rows (navy column adjacent to purple column), wide gap between pairs = three groups | p.164 |
 | Common-region figure | 5x3 dots in one bordered box beside 3x3 dots in another, same dot size and gaps | p.165 |
 | Focal-point figure | 6x3 navy circles, 1 red square | p.169 |
+| Proximity figure 1, measured | dot about 45px, inter-dot gap about 15px, split gutter about 55px (about 3-4x the gap), page render at 1056px width; approximate (audit 2026-10-15) | p.164 |
+| Focal-point square rotation | about 10-15 degrees, read from figure (audit 2026-10-15) | p.169 |
+| Common-region figure, measured | the two bordered boxes nearly touch (gap about 6px) yet read as two groups (audit 2026-10-15) | p.165 |
 
 ## 4. Dos and Don'ts
 
@@ -122,6 +135,8 @@ The chapter gives no measurements. Reference facts and figure parameters:
 - **DO** Continuity (p.166 figure): a curve of purple dots descending from top-left crosses a horizontal line of dots (navy on the left, purple on the right) and continues into navy dots at the lower right; the eye follows each line through the colour change, so the curve's purple dots associate with the curve's navy dots rather than with the purple dots on the horizontal line.
 - **DO** Closure (p.157 figure): three dark navy discs, each with a wedge removed, positioned at triangle vertices, produce a perceived white triangle. (p.155 version adds a faint purple outline triangle to reveal the illusory shape.)
 - **DON'T** Rely on colour alone (p.172 text).
+- **DO** Focal point (p.169 figure): one saturated red square, rotated, among 17 identical navy circles; it is seen first because it differs in colour, shape and angle at once. (audit 2026-10-15)
+- **DO** Figure-ground (p.161 figure): Basecamp puts the headline and illustration on one white panel and the sign-up form in a separate white card on the right, both on a cream backdrop, with a hand-drawn arrow from the panel toward the form. (audit 2026-10-15)
 
 ## 5. Exceptions & judgement calls
 
@@ -157,3 +172,5 @@ The chapter gives no measurements. Reference facts and figure parameters:
 - p.166/167: the Amazon carousel image sits on the page after the Continuity text ("products below"), at the top of p.167.
 - p.171 and p.172: text-only pages (h1/h4, colour constancy; tetrachromacy and the colour-accessibility point); images checked, no figures; captured above.
 - No quantified contrast or spacing ratios are given anywhere in this chapter; any numeric thresholds must come from other sources.
+- (audit 2026-10-15) Lighter-pass audit: every page p.154-173 text read and every page image viewed. Text-only pages (no figure): p.154, p.156, p.158, p.159, p.160, p.171, p.172, p.173. No numeric errors found; no corrections.
+- (audit 2026-10-15) Cross-chapter tension: the Twilio focal-point example (p.169) pairs a ghost outline secondary with a solid red primary, which is the 'Too Much Tension' pairing that 03-balance (p.78) warns against. The two chapters optimise for different goals (focal pull vs balance); the book does not reconcile them.

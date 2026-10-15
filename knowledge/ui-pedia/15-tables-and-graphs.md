@@ -172,6 +172,32 @@ Printed page = PDF page - 1. All citations below are PDF pages. Despite the titl
   **Why** User needs to know the change was committed.
   **Applies to** SaaS app UI | forms. **Check** Save/confirm affordance present; Enter submits; Esc/Cancel reverts. **Source** (p.389, 387-388)
 
+### Audit additions (audit 2026-10-15)
+
+- **RULE** Let users reorder columns by dragging the column header; while dragging, lift the whole column (header plus cells) as one rounded, accent-tinted floating strip under a grab cursor, next to the same header menu that offers Freeze and Hide.
+  **Why** Section "Record & Hide" (figure: "Book Name" column lifted in lavender with a hand cursor on its header) pairs reordering with hiding as the way users shape the view to their role.
+  **Applies to** SaaS app UI. **Check** header is draggable (`draggable`/drag handle) and the dragged column renders as one floating unit. **Source** (p.373) (audit 2026-10-15)
+
+- **RULE** Draw the column-resize handle as a full-height accent-coloured line on the hovered column separator, with small left/right arrow nubs at the header row.
+  **Why** The line shows exactly which boundary moves and how far it runs; the arrows tell the user it drags sideways (resize figure).
+  **Applies to** SaaS app UI. **Check** on separator hover: accent 1-2px line spans header to last row, `cursor: col-resize`. **Source** (p.374) (audit 2026-10-15)
+
+- **RULE** Put per-column filter controls in a control row directly under the header row, each control sitting inside its own column (date picker "2022" under the name column, comparison select "> 2022" under a number column, "All" select under price); keep this row inside the sticky header, and the same row may repeat at the bottom as a sticky footer carrying a column total (50,203).
+  **Why** A filter placed in its column needs no label and stays visible while scrolling.
+  **Applies to** SaaS app UI. **Check** filter inputs share x-range with their column; control row is within the `position: sticky` header. **Source** (p.377, p.378) (audit 2026-10-15)
+
+- **RULE** Lay an inline expanded row's details out on the same column grid as its parent row (e.g. "Credit Total : 12,998,098" under Subscribed, "Total refund : 3298" under UnSubscribed, a row label under Plans), as "Label : value" pairs, on a surface lighter (white) than the table body.
+  **Why** Keeping the column grid preserves context; the lighter surface separates detail from data rows (expanded-row figure).
+  **Applies to** SaaS app UI. **Check** detail cells align to parent column x-positions; detail row background differs from data rows. **Source** (p.383) (audit 2026-10-15)
+
+- **RULE** Give every row-detail overlay (modal card or quick-view sidebar) a title at the top, a divider under it, and a small circular close (X) button in the top-right corner; the sidebar can carry extra sections (e.g. "Attach File" with a dark filled "Download File" button) separated by dividers.
+  **Why** The user must always see what record they are looking at and how to get back to the table (modal and sidebar figures).
+  **Applies to** SaaS app UI. **Check** overlay has a heading and a close button with an accessible name in the top-right. **Source** (p.384, p.385) (audit 2026-10-15)
+
+- **RULE** In an expanded row, show a small accent-coloured pencil icon button at the row's bottom-right as the entry to edit mode; in edit mode turn each editable value into a white input field and replace the pencil with a pair of small square buttons, red X (cancel) and green check (confirm).
+  **Why** Editing behind a click adds the friction wanted for high-stakes data, and the paired buttons give explicit commit or cancel (edit-row figure).
+  **Applies to** SaaS app UI. **Check** read mode shows an edit trigger; edit mode shows cancel and confirm, and Enter/Escape map to them. **Source** (p.388) (audit 2026-10-15)
+
 ## 3. Numbers & scales
 
 | Item | Value | Source |
@@ -182,6 +208,8 @@ Printed page = PDF page - 1. All citations below are PDF pages. Despite the titl
 | Vertical-centre limit | up to 3 lines of cell text | p.370 |
 | Top-align threshold | row height varies by more than "three or four lines" | p.370 |
 | Decimal alignment | same number of decimal digits in a column | p.363 |
+| Filter row values (figure) | date select "2022", comparison "> 2022", select "All"; footer total 50,203 (audit 2026-10-15) | p.377-378 |
+| Trend chips in price cells (figure) | mini area chart with "+20%" (teal/green) and "-34%" (red) (audit 2026-10-15) | p.377-378 |
 | Number grouping in figures | "6,99,308.00", "2,34,456", also "12,323,345" (mixed Indian/Western grouping, mock data) | p.364, 380 |
 
 Colours seen in figures (approximate, read from images, not stated in text):
@@ -202,6 +230,10 @@ Colours seen in figures (approximate, read from images, not stated in text):
 | Column separators | Near-black 1px+ vertical lines between all columns | Faint light-grey separators, or none | p.366 |
 | Multi-line cells | Bottom-aligned text in cells, "Pixsel 2" label also bottom; red X | Top-aligned multi-line text (tall rows); vertical centre when only 1-3 lines | p.370-371 |
 | Sort icon | Chevron after the label in right-aligned numeric headers pushes the label away from the numbers' right edge; red X | Chevron placed before (left of) the label so text stays flush right; green check | p.380 |
+| Sort icon form (audit 2026-10-15) | (not shown as bad) | Stacked up/down caret pair in the accent colour, header labels in the accent/grey-blue; left-aligned text column ("Plans") has no sort icon | p.380-386 |
+| Column reorder (audit 2026-10-15) | (not shown as bad) | Dragged column lifted as one rounded lavender strip, grab cursor on its header, Freeze/Hide menu beside it | p.373 |
+| Trend in a numeric cell (audit 2026-10-15) | (not discussed) | Small mini-chart chip after the price with a coloured % change (+20% green, -34% red); figure only, no text rule | p.377-378 |
+| Selection bar (audit 2026-10-15) | (not shown as bad) | Grey band above the header; right-aligned "1 Selected" count and an action select; checkboxes in a left column; header checkbox shows the indeterminate minus | p.386 |
 
 ## 5. Exceptions & judgement calls
 
@@ -249,3 +281,6 @@ Copied to `examples/ui-pedia/tables-and-graphs/`:
 - Graphs/charts: no content in this range. The p.357 hero shows a stacked bar chart (dark navy "Stock Books" plus periwinkle "Selling Books" series, y-axis 0-70, dashed axes, legend top right) with no commentary. A chart chapter may live elsewhere in the book.
 - OCR noise confirmed as harmless: "1" for "a" in many figure labels ("Gr1phic", "Le1rn"), "Enterprice" and "Attech File"/"Premimum Plan" are actual typos inside the book's mockups.
 - Pages with no rule content: p.357 (title, intro, decorative figure; only the statement that tables should provide clarity and assist decisions), p.360 (section heading "Elements of Table" and "Types of data" intro only; ideas captured in section 1).
+- (audit 2026-10-15) The p.373 sub-heading reads "Record & Hide" on the page image (not an OCR error); the figure shows a column being dragged, so it most likely means "Reorder & Hide". Recorded as reorder in the audit rule.
+- (audit 2026-10-15) p.373 freeze figure: the frozen left columns (Sr.No, Profile Name) appear on a plain white surface with a shadow on their right edge, while the scrolling area looks slightly tinted; the existing rule's "frozen column is shown with a tinted background" may have the tint reversed. Not corrected; check the full-size image before relying on it.
+- (audit 2026-10-15) Lighter-pass audit: every page p.357-389 text read and every page image viewed. Text-only pages (no figure): p.358, p.359, p.360, p.365, p.372, p.379, p.381. No numeric errors found; no corrections.

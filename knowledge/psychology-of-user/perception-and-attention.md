@@ -109,6 +109,14 @@ Page convention: `p.NN` = PDF page (printed = PDF - 2). Source material is Galit
   **Why** Prior interaction procedures hamper learning new ones; learning a new system disturbs a learned one (p.71-72).
   **Applies to** all. **Check** compare controls (icons, gestures, shortcuts) against platform/industry convention; flag reuse of a standard icon for a nonstandard action. **Source** (p.71-72)
 
+### Audit additions: page images (audit 2026-10-15)
+
+Viewed p.54-58 and p.67-72 as images. No new rule. Two findings:
+- p.54 lists "individual variances" among the human characteristics that matter in design, next to perception, memory, acuity, vision, sensory storage, processing, learning and skill. The book never treats it in any later section (gap in the source; see section 7).
+- p.72 callout box ("Avoid code combinations that cause distraction, such as colour and iconography"; "Understand and apply a person's taught mental models") restates PU-PER-17 and PU-MOD-01. Covered.
+
+Viewed, nothing new: p.55-56 (gestalt list), p.57-58 (expectancies, context, signal/noise, hidden-word puzzle analogy), p.67-68 (tremor shimmer; foveal vs peripheral; Mori and Hayashi), p.69-70 (two processing levels, Lind et al. 1992), p.71 (Lidwell interference).
+
 ## 3. Numbers & scales
 
 | Item | Value | Page |
@@ -158,3 +166,4 @@ Printed figure (p.65): a diamond of digits 0-7 radiating from a central 0, rows 
 - p.66-67: page text continues across pages with the printed page number embedded in the extraction (64, 65, 66); no content missing.
 - p.70: "Interference is a phenomena that can stymie higher-level processing." is a lead-in to p.71.
 - No page in this range has rule-free content except that p.63 first half belongs to memory (see memory-models-learning-effort.md).
+- (audit 2026-10-15, page images) Every page image in this note's range (p.54-58, p.63-72) has now been viewed (p.54-58 and p.67-72 in this pass, p.63-66 earlier). No new rules. Gap in the source: p.54 names "individual variances" as an important human characteristic in design, but no section of the book covers it; do not cite this book for individual differences (age is mentioned only for working memory, p.60).

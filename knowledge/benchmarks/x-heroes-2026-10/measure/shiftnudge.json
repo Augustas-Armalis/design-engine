@@ -1,0 +1,513 @@
+{
+ "title": "Shift Nudge - Professional Interface Design Training",
+ "vw": 1440,
+ "vh": 900,
+ "docH": 7790,
+ "bodyBg": "rgb(14, 14, 14)",
+ "htmlBg": "rgb(14, 14, 14)",
+ "bodyFont": "soehne, \"soehne Fallback\"",
+ "paragraph": {
+  "size": 24,
+  "lh": "27.36px",
+  "color": "rgb(201, 201, 201)",
+  "family": "soehne, \"soehne Fallback\"",
+  "ls": "-0.24px"
+ },
+ "nav": {
+  "box": {
+   "x": 21,
+   "y": 0,
+   "w": 1398,
+   "h": 49
+  },
+  "shell": {
+   "x": 0,
+   "y": 0,
+   "w": 0,
+   "h": 0
+  },
+  "position": "sticky",
+  "bg": "color(srgb 0.843137 0.513726 0.627451 / 0.05)",
+  "backdrop": "none",
+  "radius": "4px",
+  "borderB": "1px solid color(srgb 0.843137 0.513726 0.627451 / 0.05)",
+  "border": "1px solid color(srgb 0.843137 0.513726 0.627451 / 0.05)",
+  "shadow": "none",
+  "linkCount": 13,
+  "links": [
+   {
+    "t": "Training",
+    "x": 73,
+    "y": 12,
+    "w": 77,
+    "h": 25,
+    "size": 12,
+    "weight": "400",
+    "ls": "-0.24px",
+    "color": "rgb(124, 124, 124)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "0px",
+    "pad": "4px 10px"
+   },
+   {
+    "t": "Teams",
+    "x": 150,
+    "y": 12,
+    "w": 54,
+    "h": 25,
+    "size": 12,
+    "weight": "400",
+    "ls": "-0.24px",
+    "color": "rgb(124, 124, 124)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "0px",
+    "pad": "4px 10px"
+   },
+   {
+    "t": "Reviews",
+    "x": 204,
+    "y": 12,
+    "w": 62,
+    "h": 25,
+    "size": 12,
+    "weight": "400",
+    "ls": "-0.24px",
+    "color": "rgb(124, 124, 124)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "0px",
+    "pad": "4px 10px"
+   },
+   {
+    "t": "FAQs",
+    "x": 267,
+    "y": 12,
+    "w": 47,
+    "h": 25,
+    "size": 12,
+    "weight": "400",
+    "ls": "-0.24px",
+    "color": "rgb(124, 124, 124)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "0px",
+    "pad": "4px 10px"
+   },
+   {
+    "t": "Contact",
+    "x": 314,
+    "y": 12,
+    "w": 60,
+    "h": 25,
+    "size": 12,
+    "weight": "400",
+    "ls": "-0.24px",
+    "color": "rgb(124, 124, 124)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "0px",
+    "pad": "4px 10px"
+   },
+   {
+    "t": "AI\nAdvisor",
+    "x": 1309,
+    "y": 9,
+    "w": 94,
+    "h": 31,
+    "size": 12,
+    "weight": "400",
+    "ls": "-0.24px",
+    "color": "rgb(215, 131, 160)",
+    "bg": "color(srgb 0.843137 0.513726 0.627451 / 0.05)",
+    "radius": "4px",
+    "pad": "6px 14px 6px 10px"
+   },
+   {
+    "t": "Apply",
+    "x": 1435,
+    "y": 9,
+    "w": 61,
+    "h": 31,
+    "size": 12,
+    "weight": "700",
+    "ls": "-0.24px",
+    "color": "rgb(14, 14, 14)",
+    "bg": "rgb(201, 201, 201)",
+    "radius": "4px",
+    "pad": "6px 14px"
+   },
+   {
+    "t": "Shift Nudge AI\nNEW",
+    "x": 37,
+    "y": 14,
+    "w": 675,
+    "h": 28,
+    "size": 24,
+    "weight": "400",
+    "ls": "-0.24px",
+    "color": "rgb(201, 201, 201)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "0px",
+    "pad": "0px"
+   },
+   {
+    "t": "Claude Code\nNEW",
+    "x": 37,
+    "y": 43,
+    "w": 675,
+    "h": 28,
+    "size": 24,
+    "weight": "400",
+    "ls": "-0.24px",
+    "color": "rgb(201, 201, 201)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "0px",
+    "pad": "0px"
+   },
+   {
+    "t": "Interface Design",
+    "x": 37,
+    "y": 71,
+    "w": 675,
+    "h": 28,
+    "size": 24,
+    "weight": "400",
+    "ls": "-0.24px",
+    "color": "rgb(201, 201, 201)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "0px",
+    "pad": "0px"
+   },
+   {
+    "t": "Portfolio",
+    "x": 37,
+    "y": 100,
+    "w": 675,
+    "h": 28,
+    "size": 24,
+    "weight": "400",
+    "ls": "-0.24px",
+    "color": "rgb(201, 201, 201)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "0px",
+    "pad": "0px"
+   },
+   {
+    "t": "Figma 101",
+    "x": 37,
+    "y": 128,
+    "w": 675,
+    "h": 28,
+    "size": 24,
+    "weight": "400",
+    "ls": "-0.24px",
+    "color": "rgb(201, 201, 201)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "0px",
+    "pad": "0px"
+   }
+  ]
+ },
+ "navBottom": 49,
+ "head": {
+  "tag": "H1",
+  "text": "Design and ship work you’re proud of. The modern standard in interface design training.",
+  "chars": 87,
+  "x": 37,
+  "y": 289,
+  "w": 720,
+  "h": 82,
+  "lines": 2,
+  "family": "soehne, \"soehne Fallback\"",
+  "size": 36,
+  "weight": "400",
+  "ls": "-0.72px",
+  "lsEm": -0.02,
+  "lh": 1.14,
+  "color": "rgb(201, 201, 201)",
+  "transform": "none",
+  "feat": "normal",
+  "num": "normal",
+  "opsz": "auto",
+  "var": "normal",
+  "align": "start",
+  "wrap": "wrap",
+  "spanColors": [
+   "rgb(95, 95, 95)"
+  ],
+  "bgClip": false,
+  "above": [
+   {
+    "t": "L",
+    "x": 37,
+    "y": 150,
+    "w": 13,
+    "h": 38,
+    "size": 24,
+    "gapToH1": 100
+   },
+   {
+    "t": "i",
+    "x": 50,
+    "y": 150,
+    "w": 6,
+    "h": 38,
+    "size": 24,
+    "gapToH1": 100
+   },
+   {
+    "t": "v",
+    "x": 56,
+    "y": 155,
+    "w": 13,
+    "h": 30,
+    "size": 24,
+    "gapToH1": 103
+   }
+  ]
+ },
+ "sub": null,
+ "heroBtns": [
+  {
+   "id": "mb7",
+   "inNav": false,
+   "text": "INSIDE A",
+   "x": 663,
+   "y": 395,
+   "w": 51,
+   "h": 51,
+   "boxed": true,
+   "radius": "4px",
+   "pad": "16px",
+   "bg": "color(srgb 0.788235 0.788235 0.788235 / 0.03)",
+   "bgImg": "none",
+   "border": "1px solid color(srgb 0.788235 0.788235 0.788235 / ",
+   "shadow": "none",
+   "color": "rgb(201, 201, 201)",
+   "size": 12,
+   "weight": "700",
+   "ls": "-0.24px",
+   "family": "soehne, \"soehne Fallback\"",
+   "transform": "uppercase",
+   "transition": "color 0.15s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.15s cubic-",
+   "hasIcon": true
+  }
+ ],
+ "navBtns": [
+  {
+   "id": "mb5",
+   "inNav": true,
+   "text": "AI Advisor",
+   "x": 1309,
+   "y": 9,
+   "w": 94,
+   "h": 31,
+   "boxed": true,
+   "radius": "4px",
+   "pad": "6px 14px 6px 10px",
+   "bg": "color(srgb 0.843137 0.513726 0.627451 / 0.05)",
+   "bgImg": "none",
+   "border": "1px solid color(srgb 0.843137 0.513726 0.627451 / ",
+   "shadow": "none",
+   "color": "rgb(215, 131, 160)",
+   "size": 12,
+   "weight": "400",
+   "ls": "-0.24px",
+   "family": "soehne, \"soehne Fallback\"",
+   "transform": "none",
+   "transition": "color 0.15s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.15s cubic-",
+   "hasIcon": false
+  },
+  {
+   "id": "mb6",
+   "inNav": true,
+   "text": "Apply",
+   "x": 1435,
+   "y": 9,
+   "w": 61,
+   "h": 31,
+   "boxed": true,
+   "radius": "4px",
+   "pad": "6px 14px",
+   "bg": "rgb(201, 201, 201)",
+   "bgImg": "none",
+   "border": "1px solid rgba(255, 255, 255, 0.5)",
+   "shadow": "none",
+   "color": "rgb(14, 14, 14)",
+   "size": 12,
+   "weight": "700",
+   "ls": "-0.24px",
+   "family": "soehne, \"soehne Fallback\"",
+   "transform": "none",
+   "transition": "transform 0.2s cubic-bezier(0.16, 1, 0.3, 1)",
+   "hasIcon": true
+  }
+ ],
+ "allBtnCount": 8,
+ "media": 4,
+ "largestMedia": {
+  "tag": "CANVAS",
+  "x": 37,
+  "y": 738,
+  "w": 330,
+  "h": 330
+ },
+ "frames": [],
+ "fold": {
+  "textLeaves": 53,
+  "words": 70,
+  "interactive": 1,
+  "sizes": {
+   "11": 2,
+   "12": 2,
+   "24": 47,
+   "36": 2
+  },
+  "weights": {
+   "400": 49,
+   "500": 2,
+   "700": 2
+  },
+  "colorCount": 3,
+  "colors": {
+   "rgb(201, 201, 201)": 50,
+   "rgb(14, 14, 14)": 2,
+   "rgb(95, 95, 95)": 1
+  }
+ },
+ "families": {
+  "soehne": 73,
+  "soehneMono": 4,
+  "alphalyrae": 6
+ },
+ "fonts": [
+  "soehne 400",
+  "soehne 500",
+  "soehne 600",
+  "soehne Fallback normal",
+  "alphalyrae 500",
+  "alphalyrae Fallback normal",
+  "soehneMono 500",
+  "soehneMono Fallback normal"
+ ],
+ "radii": {
+  "4px": 9
+ },
+ "shadows": [],
+ "tabularEls": 2,
+ "sections": [
+  {
+   "tag": "SECTION",
+   "y": 49,
+   "h": 644,
+   "pt": "160px",
+   "pb": "168px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "DIV",
+   "y": 738,
+   "h": 711,
+   "pt": "0px",
+   "pb": "0px",
+   "bg": "rgb(14, 14, 14)"
+  },
+  {
+   "tag": "DIV",
+   "y": 1449,
+   "h": 5720,
+   "pt": "0px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 1536,
+   "h": 303,
+   "pt": "32px",
+   "pb": "32px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 3412,
+   "h": 1629,
+   "pt": "0px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 5885,
+   "h": 243,
+   "pt": "0px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 6368,
+   "h": 234,
+   "pt": "0px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 6842,
+   "h": 327,
+   "pt": "0px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "FOOTER",
+   "y": 7409,
+   "h": 380,
+   "pt": "16px",
+   "pb": "16px",
+   "bg": "rgba(0, 0, 0, 0)"
+  }
+ ],
+ "hover": {
+  "before": [
+   "color(srgb 0.788235 0.788235 0.788235 / 0.03) | none | none | none | rgb(201, 201, 201) | 1 | color(srgb 0.788235 0.788235 0.788235 / 0.04)",
+   "rgba(0, 0, 0, 0) | none | none | none | rgb(201, 201, 201) | 1 | rgb(201, 201, 201)",
+   "rgba(0, 0, 0, 0) | none | none | none | rgb(201, 201, 201) | 0 | rgb(201, 201, 201)",
+   "rgba(0, 0, 0, 0) | none | none | none | rgb(201, 201, 201) | 1 | rgb(201, 201, 201)",
+   "rgba(0, 0, 0, 0) | none | none | none | rgb(201, 201, 201) | 1 | rgb(201, 201, 201)",
+   "rgba(0, 0, 0, 0) | none | matrix(0, 1, -1, 0, 0, 0) | none | rgb(201, 201, 201) | 1 | rgb(201, 201, 201)"
+  ],
+  "after": [
+   "color(srgb 0.788235 0.788235 0.788235 / 0.1) | none | none | none | rgb(201, 201, 201) | 1 | color(srgb 0.788235 0.788235 0.788235 / 0.04)",
+   "rgba(0, 0, 0, 0) | none | none | none | rgb(201, 201, 201) | 1 | rgb(201, 201, 201)",
+   "rgba(0, 0, 0, 0) | none | none | none | rgb(201, 201, 201) | 0 | rgb(201, 201, 201)",
+   "rgba(0, 0, 0, 0) | none | none | none | rgb(201, 201, 201) | 1 | rgb(201, 201, 201)",
+   "rgba(0, 0, 0, 0) | none | none | none | rgb(201, 201, 201) | 1 | rgb(201, 201, 201)",
+   "rgba(0, 0, 0, 0) | none | matrix(0, 1, -1, 0, 0, 0) | none | rgb(201, 201, 201) | 1 | rgb(201, 201, 201)"
+  ],
+  "changed": [
+   "color(srgb 0.788235 0.788235 0.788235 / 0.1) | none | none | none | rgb(201, 201, 201) | 1 | color(srgb 0.788235 0.788235 0.788235 / 0.04)",
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "press": [
+  "color(srgb 0.788235 0.788235 0.788235 / 0.1) | none | none | none | rgb(201, 201, 201) | 1 | color(srgb 0.788235 0.788235 0.788235 / 0.04)",
+  "rgba(0, 0, 0, 0) | none | none | none | rgb(201, 201, 201) | 1 | rgb(201, 201, 201)",
+  "rgba(0, 0, 0, 0) | none | none | none | rgb(201, 201, 201) | 0 | rgb(201, 201, 201)",
+  "rgba(0, 0, 0, 0) | none | none | none | rgb(201, 201, 201) | 1 | rgb(201, 201, 201)",
+  "rgba(0, 0, 0, 0) | none | none | none | rgb(201, 201, 201) | 1 | rgb(201, 201, 201)",
+  "rgba(0, 0, 0, 0) | none | matrix(0, 1, -1, 0, 0, 0) | none | rgb(201, 201, 201) | 1 | rgb(201, 201, 201)"
+ ],
+ "pixels": {
+  "modeColor": "rgb(8,8,8)",
+  "modeShare": 0.822,
+  "nearBgShare": 0.822,
+  "quietBlockShare": 0.887,
+  "saturatedShare": 0.1054
+ },
+ "url": "https://www.shiftnudge.com/",
+ "slug": "shiftnudge",
+ "captured": "2026-10-15T17:29:15.439Z"
+}

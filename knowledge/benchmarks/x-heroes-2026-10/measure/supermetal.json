@@ -1,0 +1,357 @@
+{
+ "title": "Supermetal - High Performance Data Replication Platform Built in Rust",
+ "vw": 1440,
+ "vh": 900,
+ "docH": 6137,
+ "bodyBg": "lab(5.06344 0.000156462 -0.00561476)",
+ "htmlBg": "rgba(0, 0, 0, 0)",
+ "bodyFont": "\"Chakra Petch\", \"Chakra Petch Fallback\"",
+ "paragraph": {
+  "size": 17,
+  "lh": "22px",
+  "color": "lab(99.9994 0.00113249 -0.0418425 / 0.6)",
+  "family": "\"Chakra Petch\", \"Chakra Petch Fallback\"",
+  "ls": "normal"
+ },
+ "nav": {
+  "box": {
+   "x": 0,
+   "y": 0,
+   "w": 1440,
+   "h": 72
+  },
+  "shell": {
+   "x": 0,
+   "y": 0,
+   "w": 1440,
+   "h": 72
+  },
+  "position": "sticky",
+  "bg": "lab(5.06344 0.000156462 -0.00561476)",
+  "backdrop": "none",
+  "radius": "0px",
+  "borderB": "1px solid lab(9.76692 0.000305474 -0.0114083)",
+  "border": "",
+  "shadow": "none",
+  "linkCount": 5,
+  "links": [
+   {
+    "t": "Blog",
+    "x": 342,
+    "y": 27,
+    "w": 29,
+    "h": 18,
+    "size": 14,
+    "weight": "500",
+    "ls": "normal",
+    "color": "lab(99.9994 0.00113249 -0.0418425 / 0.6)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "0px",
+    "pad": "0px"
+   },
+   {
+    "t": "Customers",
+    "x": 391,
+    "y": 27,
+    "w": 70,
+    "h": 18,
+    "size": 14,
+    "weight": "500",
+    "ls": "normal",
+    "color": "lab(99.9994 0.00113249 -0.0418425 / 0.6)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "0px",
+    "pad": "0px"
+   },
+   {
+    "t": "Pricing",
+    "x": 481,
+    "y": 27,
+    "w": 45,
+    "h": 18,
+    "size": 14,
+    "weight": "500",
+    "ls": "normal",
+    "color": "lab(99.9994 0.00113249 -0.0418425 / 0.6)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "0px",
+    "pad": "0px"
+   },
+   {
+    "t": "Join Us",
+    "x": 546,
+    "y": 27,
+    "w": 48,
+    "h": 18,
+    "size": 14,
+    "weight": "500",
+    "ls": "normal",
+    "color": "lab(99.9994 0.00113249 -0.0418425 / 0.6)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "0px",
+    "pad": "0px"
+   },
+   {
+    "t": "Explore the Docs",
+    "x": 1117,
+    "y": 17,
+    "w": 151,
+    "h": 38,
+    "size": 16,
+    "weight": "500",
+    "ls": "normal",
+    "color": "lab(99.9994 0.00113249 -0.0418425)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "0px",
+    "pad": "0px"
+   }
+  ]
+ },
+ "navBottom": 72,
+ "head": {
+  "tag": "H1",
+  "text": "Sync Data at The Speed of Light",
+  "chars": 31,
+  "x": 481,
+  "y": 127,
+  "w": 478,
+  "h": 120,
+  "lines": 2,
+  "family": "\"Chakra Petch\", \"Chakra Petch Fallback\"",
+  "size": 64,
+  "weight": "500",
+  "ls": "-1.92px",
+  "lsEm": -0.03,
+  "lh": 0.938,
+  "color": "lab(99.9994 0.00113249 -0.0418425)",
+  "transform": "none",
+  "feat": "normal",
+  "num": "normal",
+  "opsz": "auto",
+  "var": "normal",
+  "align": "center",
+  "wrap": "wrap",
+  "spanColors": [],
+  "bgClip": false,
+  "above": []
+ },
+ "sub": {
+  "text": "Self-hosted, turnkey CDC for batch and real-time. Runs in your cloud, on-prem datacenter, or air-gapped network.",
+  "chars": 112,
+  "x": 462,
+  "y": 267,
+  "w": 516,
+  "h": 44,
+  "lines": 2,
+  "gapFromH1": 20,
+  "family": "\"Chakra Petch\", \"Chakra Petch Fallback\"",
+  "size": 17,
+  "weight": "500",
+  "ls": "normal",
+  "lsEm": 0,
+  "lh": 1.294,
+  "color": "lab(99.9994 0.00113249 -0.0418425 / 0.6)",
+  "transform": "none",
+  "feat": "normal",
+  "num": "normal",
+  "opsz": "auto",
+  "var": "normal",
+  "align": "center",
+  "wrap": "wrap"
+ },
+ "heroBtns": [
+  {
+   "id": "mb1",
+   "inNav": false,
+   "text": "Try Supermetal",
+   "x": 573,
+   "y": 349,
+   "w": 160,
+   "h": 52,
+   "boxed": true,
+   "radius": "0px",
+   "pad": "13px 21.5px",
+   "bg": "lab(57.3877 55.5897 65.3675)",
+   "bgImg": "none",
+   "border": "1px solid rgb(238, 121, 61)",
+   "shadow": "none",
+   "color": "lab(99.9994 0.00113249 -0.0418425)",
+   "size": 16,
+   "weight": "500",
+   "ls": "normal",
+   "family": "\"Chakra Petch\", \"Chakra Petch Fallback\"",
+   "transform": "none",
+   "transition": "0.4s cubic-bezier(0.7, 0, 0, 1)",
+   "hasIcon": false
+  },
+  {
+   "id": "mb2",
+   "inNav": false,
+   "text": "Talk to Us",
+   "x": 748,
+   "y": 349,
+   "w": 118,
+   "h": 52,
+   "boxed": true,
+   "radius": "0px",
+   "pad": "13px 21.5px",
+   "bg": "rgba(255, 255, 255, 0.05)",
+   "bgImg": "none",
+   "border": "1px solid rgb(41, 41, 41)",
+   "shadow": "none",
+   "color": "lab(99.9994 0.00113249 -0.0418425)",
+   "size": 16,
+   "weight": "500",
+   "ls": "normal",
+   "family": "\"Chakra Petch\", \"Chakra Petch Fallback\"",
+   "transform": "none",
+   "transition": "0.4s cubic-bezier(0.7, 0, 0, 1)",
+   "hasIcon": false
+  }
+ ],
+ "navBtns": [
+  {
+   "id": "mb0",
+   "inNav": true,
+   "text": "Explore the Docs",
+   "x": 1117,
+   "y": 17,
+   "w": 151,
+   "h": 38,
+   "boxed": true,
+   "radius": "0px",
+   "pad": "7.5px 19px",
+   "bg": "rgba(255, 255, 255, 0.05)",
+   "bgImg": "none",
+   "border": "1px solid rgb(41, 41, 41)",
+   "shadow": "none",
+   "color": "lab(99.9994 0.00113249 -0.0418425)",
+   "size": 16,
+   "weight": "500",
+   "ls": "normal",
+   "family": "\"Chakra Petch\", \"Chakra Petch Fallback\"",
+   "transform": "none",
+   "transition": "0.4s cubic-bezier(0.7, 0, 0, 1)",
+   "hasIcon": false
+  }
+ ],
+ "allBtnCount": 3,
+ "media": 2,
+ "largestMedia": {
+  "tag": "svg",
+  "x": 140,
+  "y": 401,
+  "w": 1160,
+  "h": 564
+ },
+ "frames": [],
+ "fold": {
+  "textLeaves": 5,
+  "words": 34,
+  "interactive": 2,
+  "sizes": {
+   "16": 3,
+   "17": 1,
+   "64": 1
+  },
+  "weights": {
+   "500": 2,
+   "600": 3
+  },
+  "colorCount": 3,
+  "colors": {
+   "lab(99.9994 0.00113249 -0.0418425)": 3,
+   "lab(99.9994 0.00113249 -0.0418425 / 0.6)": 1,
+   "rgb(255, 255, 255)": 1
+  }
+ },
+ "families": {
+  "Chakra Petch": 10
+ },
+ "fonts": [
+  "Chakra Petch 500",
+  "Chakra Petch 600",
+  "Chakra Petch 700"
+ ],
+ "radii": {},
+ "shadows": [],
+ "tabularEls": 0,
+ "sections": [
+  {
+   "tag": "SECTION",
+   "y": 72,
+   "h": 893,
+   "pt": "0px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "DIV",
+   "y": 965,
+   "h": 2058,
+   "pt": "0px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "DIV",
+   "y": 3023,
+   "h": 824,
+   "pt": "0px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "DIV",
+   "y": 3847,
+   "h": 740,
+   "pt": "0px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "DIV",
+   "y": 4587,
+   "h": 807,
+   "pt": "0px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "DIV",
+   "y": 5394,
+   "h": 743,
+   "pt": "0px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  }
+ ],
+ "hover": {
+  "before": [
+   "rgba(0, 0, 0, 0) | none | none | none | lab(99.9994 0.00113249 -0.0418425) | 1 | lab(9.76692 0.000305474 -0.0114083)",
+   "lab(57.3877 55.5897 65.3675) | none | none | none | rgb(255, 255, 255) | 1 | rgb(238, 121, 61)"
+  ],
+  "after": [
+   "rgba(0, 0, 0, 0) | none | none | none | lab(99.9994 0.00113249 -0.0418425) | 1 | lab(9.76692 0.000305474 -0.0114083)",
+   "rgb(255, 104, 17) | none | none | none | rgb(255, 255, 255) | 1 | rgb(238, 121, 61)"
+  ],
+  "changed": [
+   null,
+   "rgb(255, 104, 17) | none | none | none | rgb(255, 255, 255) | 1 | rgb(238, 121, 61)"
+  ]
+ },
+ "press": [
+  "rgba(0, 0, 0, 0) | none | none | none | lab(99.9994 0.00113249 -0.0418425) | 1 | lab(9.76692 0.000305474 -0.0114083)",
+  "rgb(255, 104, 17) | none | none | none | rgb(255, 255, 255) | 1 | rgb(238, 121, 61)"
+ ],
+ "pixels": {
+  "modeColor": "rgb(16,16,16)",
+  "modeShare": 0.817,
+  "nearBgShare": 0.868,
+  "quietBlockShare": 0.839,
+  "saturatedShare": 0.0151
+ },
+ "url": "https://supermetal.io/",
+ "slug": "supermetal",
+ "captured": "2026-10-15T17:27:30.168Z"
+}

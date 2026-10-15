@@ -96,6 +96,12 @@ The book has no visual-design rules. Its process content is freelance-client adv
   **Why** Protects brand, client relationship and sanity.
   **Applies to** all. **Check** explicit accept/decline decision with reason. **Source** (p.89-90)
 
+### Audit additions: page images (audit 2026-10-15)
+
+- **RULE** When capacity is full, ask the client whether they are willing to wait before declining or overextending; if there is no urgent deadline, book the work ahead.
+  **Why** Taking on more while swamped "will only disappoint your clients"; a client without an urgent deadline who wants to work with you lets you schedule ahead (p.89).
+  **Applies to** all. **Check** process: an over-capacity request gets a proposed later start date, not a silent yes. [engine note: for an agent, say what is queued and when it will start instead of interleaving half-finished work] **Source** (p.89) (audit 2026-10-15)
+
 ## 3. Numbers & scales
 
 | Item | Value | Source |
@@ -132,3 +138,4 @@ The book has no visual-design rules. Its process content is freelance-client adv
 - p.23: the "trick to get higher ratings" is introduced on p.23 and given on p.24.
 - p.14 text is duplicated in the extraction (OCR artifact); no content lost.
 - p.9-12 (skills advice) is covered in `career-skills-and-positioning.md`, not here. Cover/contents/intro p.1-8: no rule content (see INDEX).
+- (audit 2026-10-15, page images) Every page image of the book (p.1-120) has now been viewed: p.1-18, p.25-102 and p.115-120 in this pass, p.19-24 and p.103-114 in the earlier pass. New points from this pass are in the section 2 block "Audit additions: page images"; the book-wide list of pages viewed with no new content is in `knowledge/FREEBIES-COVERAGE-2026-10-15.md`.

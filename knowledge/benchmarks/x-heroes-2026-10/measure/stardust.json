@@ -1,0 +1,352 @@
+{
+ "title": "Stardust",
+ "vw": 1440,
+ "vh": 900,
+ "docH": 7220,
+ "bodyBg": "rgb(8, 8, 10)",
+ "htmlBg": "rgba(0, 0, 0, 0)",
+ "bodyFont": "Manrope, sans-serif",
+ "paragraph": null,
+ "nav": {
+  "box": {
+   "x": 0,
+   "y": 0,
+   "w": 1440,
+   "h": 73
+  },
+  "shell": {
+   "x": 0,
+   "y": 0,
+   "w": 1440,
+   "h": 73
+  },
+  "position": "absolute",
+  "bg": "rgba(0, 0, 0, 0)",
+  "backdrop": "none",
+  "radius": "0px",
+  "borderB": "1px solid rgba(0, 0, 0, 0)",
+  "border": "",
+  "shadow": "none",
+  "linkCount": 1,
+  "links": [
+   {
+    "t": "Request Invite",
+    "x": 1155,
+    "y": 20,
+    "w": 126,
+    "h": 32,
+    "size": 16,
+    "weight": "400",
+    "ls": "normal",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "8px",
+    "pad": "0px"
+   }
+  ]
+ },
+ "navBottom": 73,
+ "head": {
+  "tag": "DIV",
+  "text": "Scale",
+  "chars": 5,
+  "x": 445,
+  "y": 176,
+  "w": 154,
+  "h": 66,
+  "lines": 1,
+  "family": "Manrope, sans-serif",
+  "size": 63,
+  "weight": "400",
+  "ls": "-1.26px",
+  "lsEm": -0.02,
+  "lh": 1.05,
+  "color": "rgb(255, 255, 255)",
+  "transform": "none",
+  "feat": "normal",
+  "num": "normal",
+  "opsz": "auto",
+  "var": "normal",
+  "align": "center",
+  "wrap": "wrap",
+  "spanColors": [],
+  "bgClip": false,
+  "above": [
+   {
+    "t": "Invite‑only beta—apply now for up to $20K in credits",
+    "x": 561,
+    "y": 137,
+    "w": 339,
+    "h": 23,
+    "size": 14,
+    "gapToH1": 17
+   }
+  ]
+ },
+ "sub": {
+  "text": "Stardust runs automated campaigns to find high-value",
+  "chars": 52,
+  "x": 494,
+  "y": 324,
+  "w": 451,
+  "h": 25,
+  "lines": 1,
+  "gapFromH1": 82,
+  "family": "Manrope, sans-serif",
+  "size": 18,
+  "weight": "400",
+  "ls": "normal",
+  "lsEm": 0,
+  "lh": 1.4,
+  "color": "rgba(255, 255, 255, 0.6)",
+  "transform": "none",
+  "feat": "normal",
+  "num": "normal",
+  "opsz": "auto",
+  "var": "normal",
+  "align": "center",
+  "wrap": "wrap"
+ },
+ "heroBtns": [
+  {
+   "id": "mb1",
+   "inNav": false,
+   "text": "Request Invite",
+   "x": 552,
+   "y": 423,
+   "w": 161,
+   "h": 40,
+   "boxed": true,
+   "radius": "8px",
+   "pad": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgImg": "linear-gradient(rgb(204, 101, 255), rgb(53, 25, 122))",
+   "border": "0px none rgb(255, 255, 255)",
+   "shadow": "rgba(204, 101, 255, 0.16) 0px -8px 16px 0px inset, rgba(238, 195, 255, 0.6) 0px 1px 0px 0px inset, rgba(204, 101, 255, 0.4) 0px 0px 0px 0.5px inset, rgba(80, 22, 255, 0.12) 0px 6px 24px 0px, rgba(80, 22, 255, 0.16) 0px 3",
+   "color": "rgb(255, 255, 255)",
+   "size": 16,
+   "weight": "400",
+   "ls": "normal",
+   "family": "Manrope, sans-serif",
+   "transform": "none",
+   "transition": "filter 0.25s cubic-bezier(0.645, 0.045, 0.355, 1)",
+   "hasIcon": false
+  },
+  {
+   "id": "mb2",
+   "inNav": false,
+   "text": "View Case Study",
+   "x": 727,
+   "y": 423,
+   "w": 161,
+   "h": 40,
+   "boxed": true,
+   "radius": "8px",
+   "pad": "0px 18px",
+   "bg": "rgba(255, 255, 255, 0.01)",
+   "bgImg": "none",
+   "border": "0px none rgb(255, 255, 255)",
+   "shadow": "rgba(204, 101, 255, 0.12) 0px 0px 0px 0px inset, rgba(204, 101, 255, 0.12) 0px 1.08262px 0px 0px inset, rgba(204, 101, 255, 0.11) 0px -7px 12px 0px inset",
+   "color": "rgb(255, 255, 255)",
+   "size": 16,
+   "weight": "400",
+   "ls": "normal",
+   "family": "Manrope, sans-serif",
+   "transform": "none",
+   "transition": "background-color 0.25s cubic-bezier(0.645, 0.045, 0.355, 1)",
+   "hasIcon": false
+  }
+ ],
+ "navBtns": [
+  {
+   "id": "mb0",
+   "inNav": true,
+   "text": "Request Invite",
+   "x": 1155,
+   "y": 20,
+   "w": 126,
+   "h": 32,
+   "boxed": true,
+   "radius": "8px",
+   "pad": "0px",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgImg": "linear-gradient(rgb(204, 101, 255), rgb(53, 25, 122))",
+   "border": "0px none rgb(255, 255, 255)",
+   "shadow": "rgba(204, 101, 255, 0.16) 0px -8px 16px 0px inset, rgba(238, 195, 255, 0.6) 0px 1px 0px 0px inset, rgba(204, 101, 255, 0.4) 0px 0px 0px 0.5px inset, rgba(80, 22, 255, 0.12) 0px 6px 24px 0px, rgba(80, 22, 255, 0.16) 0px 3",
+   "color": "rgb(255, 255, 255)",
+   "size": 16,
+   "weight": "400",
+   "ls": "normal",
+   "family": "Manrope, sans-serif",
+   "transform": "none",
+   "transition": "filter 0.25s cubic-bezier(0.645, 0.045, 0.355, 1)",
+   "hasIcon": false
+  }
+ ],
+ "allBtnCount": 3,
+ "media": 1,
+ "largestMedia": {
+  "tag": "VIDEO",
+  "x": 188,
+  "y": 396,
+  "w": 1064,
+  "h": 629
+ },
+ "frames": [],
+ "fold": {
+  "textLeaves": 15,
+  "words": 47,
+  "interactive": 2,
+  "sizes": {
+   "14": 1,
+   "16": 3,
+   "17": 1,
+   "18": 2,
+   "56": 1,
+   "63": 7
+  },
+  "weights": {
+   "400": 12,
+   "500": 3
+  },
+  "colorCount": 2,
+  "colors": {
+   "rgb(255, 255, 255)": 13,
+   "rgba(255, 255, 255, 0.6)": 2
+  }
+ },
+ "families": {
+  "Manrope": 19
+ },
+ "fonts": [
+  "Manrope 400",
+  "Manrope 500"
+ ],
+ "radii": {
+  "6px": 7,
+  "8px": 10,
+  "10px": 3,
+  "58px": 1
+ },
+ "shadows": [
+  [
+   "rgba(204, 101, 255, 0.06) 0px 0px 0px 0px inset, rgba(204, 101, 255, 0.06) 0px 1.08262px 0px 0px inset, rgba(204, 101, 255, 0.05) 0px -3.5px 6px 0px inset",
+   7
+  ],
+  [
+   "rgba(204, 101, 255, 0.16) 0px -8px 16px 0px inset, rgba(238, 195, 255, 0.6) 0px 1px 0px 0px inset, rgba(204, 101, 255, 0.4) 0px 0px 0px 0.5px inset, rgba(80, 22, 255, 0.12) 0px 6px 24px 0px, rgba(80, ",
+   3
+  ],
+  [
+   "rgba(255, 255, 255, 0.7) 0px 0px 0px 1px inset",
+   3
+  ],
+  [
+   "rgba(204, 101, 255, 0.12) 0px 0px 0px 0px inset, rgba(204, 101, 255, 0.12) 0px 1.08262px 0px 0px inset, rgba(204, 101, 255, 0.11) 0px -7px 12px 0px inset",
+   2
+  ]
+ ],
+ "tabularEls": 0,
+ "sections": [
+  {
+   "tag": "SECTION",
+   "y": 0,
+   "h": 1089,
+   "pt": "60px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "DIV",
+   "y": 1089,
+   "h": 4158,
+   "pt": "0px",
+   "pb": "1500px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 1089,
+   "h": 1115,
+   "pt": "0px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 2204,
+   "h": 900,
+   "pt": "0px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 3104,
+   "h": 643,
+   "pt": "0px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 5358,
+   "h": 992,
+   "pt": "0px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 6350,
+   "h": 472,
+   "pt": "0px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "FOOTER",
+   "y": 6822,
+   "h": 398,
+   "pt": "0px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  }
+ ],
+ "hover": {
+  "before": [
+   "rgba(0, 0, 0, 0) | linear-gradient(rgb(204, 101, 255), rgb(53, 25, 122)) | none | rgba(204, 101, 255, 0.16) 0px -8px 16px 0px inset, rgba(238, 195, 255, 0.6) 0px 1px 0px 0px inset, r | rgb(255, 255, 255) | 1 | rgb(255, 255, 255)",
+   "rgba(0, 0, 0, 0) | none | none | none | rgb(255, 255, 255) | 1 | rgb(255, 255, 255)",
+   "rgba(0, 0, 0, 0) | none | none | rgba(255, 255, 255, 0.7) 0px 0px 0px 1px inset | rgb(255, 255, 255) | 1 | rgb(255, 255, 255)",
+   "rgb(80, 22, 255) | none | matrix(1, 0, 0, 1, 0, -11) | none | rgb(255, 255, 255) | 1 | rgb(255, 255, 255)"
+  ],
+  "after": [
+   "rgba(0, 0, 0, 0) | linear-gradient(rgb(204, 101, 255), rgb(53, 25, 122)) | none | rgba(204, 101, 255, 0.16) 0px -8px 16px 0px inset, rgba(238, 195, 255, 0.6) 0px 1px 0px 0px inset, r | rgb(255, 255, 255) | 1 | rgb(255, 255, 255)",
+   "rgba(0, 0, 0, 0) | none | none | none | rgb(255, 255, 255) | 1 | rgb(255, 255, 255)",
+   "rgba(0, 0, 0, 0) | none | none | rgba(255, 255, 255, 0.7) 0px 0px 0px 1px inset | rgb(255, 255, 255) | 1 | rgb(255, 255, 255)",
+   "rgb(80, 22, 255) | none | matrix(1, 0, 0, 1, 0, -11) | none | rgb(255, 255, 255) | 1 | rgb(255, 255, 255)"
+  ],
+  "changed": [
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "press": [
+  "rgba(0, 0, 0, 0) | linear-gradient(rgb(204, 101, 255), rgb(53, 25, 122)) | none | rgba(204, 101, 255, 0.16) 0px -8px 16px 0px inset, rgba(238, 195, 255, 0.6) 0px 1px 0px 0px inset, r | rgb(255, 255, 255) | 1 | rgb(255, 255, 255)",
+  "rgba(0, 0, 0, 0) | none | none | none | rgb(255, 255, 255) | 1 | rgb(255, 255, 255)",
+  "rgba(0, 0, 0, 0) | none | none | rgba(255, 255, 255, 0.7) 0px 0px 0px 1px inset | rgb(255, 255, 255) | 1 | rgb(255, 255, 255)",
+  "rgb(80, 22, 255) | none | matrix(1, 0, 0, 1, 0, -11) | none | rgb(255, 255, 255) | 1 | rgb(255, 255, 255)"
+ ],
+ "pixels": {
+  "modeColor": "rgb(8,8,8)",
+  "modeShare": 0.358,
+  "nearBgShare": 0.462,
+  "quietBlockShare": 0.787,
+  "saturatedShare": 0.1369
+ },
+ "url": "https://stardust.gg/",
+ "slug": "stardust",
+ "captured": "2026-10-15T17:30:18.977Z"
+}

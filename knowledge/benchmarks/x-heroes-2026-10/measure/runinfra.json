@@ -1,0 +1,394 @@
+{
+ "title": "Open models, built for agents | RunInfra",
+ "vw": 1440,
+ "vh": 900,
+ "docH": 4817,
+ "bodyBg": "rgba(0, 0, 0, 0)",
+ "htmlBg": "rgba(0, 0, 0, 0)",
+ "bodyFont": "Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+ "paragraph": {
+  "size": 16,
+  "lh": "24px",
+  "color": "rgb(82, 82, 76)",
+  "family": "Inter, \"Inter Fallback\", Arial, \"Helvetica Neue\", ",
+  "ls": "-0.16px"
+ },
+ "nav": {
+  "box": {
+   "x": 0,
+   "y": 0,
+   "w": 1440,
+   "h": 60
+  },
+  "shell": {
+   "x": 0,
+   "y": 0,
+   "w": 1440,
+   "h": 60
+  },
+  "position": "sticky",
+  "bg": "rgb(255, 255, 255)",
+  "backdrop": "none",
+  "radius": "0px",
+  "borderB": "0px solid rgb(15, 15, 14)",
+  "border": "0px solid rgb(15, 15, 14)",
+  "shadow": "none",
+  "linkCount": 8,
+  "links": [
+   {
+    "t": "RunInfra",
+    "x": 164,
+    "y": 15,
+    "w": 137,
+    "h": 30,
+    "size": 16,
+    "weight": "400",
+    "ls": "normal",
+    "color": "rgb(15, 15, 14)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "0px",
+    "pad": "0px"
+   },
+   {
+    "t": "Model APIs",
+    "x": 473,
+    "y": 12,
+    "w": 101,
+    "h": 36,
+    "size": 13,
+    "weight": "500",
+    "ls": "-0.13px",
+    "color": "rgb(15, 15, 14)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "0px",
+    "pad": "8px 12px"
+   },
+   {
+    "t": "Pricing",
+    "x": 576,
+    "y": 12,
+    "w": 75,
+    "h": 36,
+    "size": 13,
+    "weight": "500",
+    "ls": "-0.13px",
+    "color": "rgb(15, 15, 14)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "0px",
+    "pad": "8px 12px"
+   },
+   {
+    "t": "Research",
+    "x": 653,
+    "y": 12,
+    "w": 89,
+    "h": 36,
+    "size": 13,
+    "weight": "500",
+    "ls": "-0.13px",
+    "color": "rgb(15, 15, 14)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "0px",
+    "pad": "8px 12px"
+   },
+   {
+    "t": "Resources",
+    "x": 744,
+    "y": 12,
+    "w": 114,
+    "h": 36,
+    "size": 13,
+    "weight": "500",
+    "ls": "-0.13px",
+    "color": "rgb(15, 15, 14)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "0px",
+    "pad": "8px 12px"
+   },
+   {
+    "t": "Contact",
+    "x": 860,
+    "y": 12,
+    "w": 80,
+    "h": 36,
+    "size": 13,
+    "weight": "500",
+    "ls": "-0.13px",
+    "color": "rgb(15, 15, 14)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "0px",
+    "pad": "8px 12px"
+   },
+   {
+    "t": "Sign in",
+    "x": 1035,
+    "y": 10,
+    "w": 99,
+    "h": 40,
+    "size": 13,
+    "weight": "500",
+    "ls": "-0.13px",
+    "color": "rgb(82, 82, 76)",
+    "bg": "rgb(247, 247, 246)",
+    "radius": "0px",
+    "pad": "6px 20px"
+   },
+   {
+    "t": "Get started",
+    "x": 1150,
+    "y": 10,
+    "w": 126,
+    "h": 40,
+    "size": 13,
+    "weight": "500",
+    "ls": "-0.13px",
+    "color": "rgb(15, 15, 14)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "0px",
+    "pad": "6px 20px"
+   }
+  ]
+ },
+ "navBottom": 60,
+ "head": {
+  "tag": "H1",
+  "text": "Open models, built for agents",
+  "chars": 29,
+  "x": 164,
+  "y": 223,
+  "w": 435,
+  "h": 121,
+  "lines": 2,
+  "family": "Inter, \"Inter Fallback\"",
+  "size": 56,
+  "weight": "500",
+  "ls": "-1.4px",
+  "lsEm": -0.025,
+  "lh": 1.08,
+  "color": "rgb(15, 15, 14)",
+  "transform": "none",
+  "feat": "\"calt\", \"kern\", \"liga\"",
+  "num": "normal",
+  "opsz": "auto",
+  "var": "normal",
+  "align": "left",
+  "wrap": "balance",
+  "spanColors": [
+   "rgb(15, 15, 14)"
+  ],
+  "bgClip": false,
+  "above": [
+   {
+    "t": "Backed by",
+    "x": 164,
+    "y": 183,
+    "w": 64,
+    "h": 20,
+    "size": 13,
+    "gapToH1": 20
+   },
+   {
+    "t": "Y\nCombinator",
+    "x": 252,
+    "y": 183,
+    "w": 72,
+    "h": 20,
+    "size": 13,
+    "gapToH1": 20
+   },
+   {
+    "t": "Y",
+    "x": 251,
+    "y": 182,
+    "w": 1,
+    "h": 1,
+    "size": 13,
+    "gapToH1": 40
+   }
+  ]
+ },
+ "sub": {
+  "text": "Fast responses. Lower-cost cached context. One API key for the OpenAI and Anthropic SDKs.",
+  "chars": 89,
+  "x": 164,
+  "y": 371,
+  "w": 430,
+  "h": 48,
+  "lines": 2,
+  "gapFromH1": 28,
+  "family": "Inter, \"Inter Fallback\", Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+  "size": 16,
+  "weight": "400",
+  "ls": "-0.16px",
+  "lsEm": -0.01,
+  "lh": 1.5,
+  "color": "rgb(82, 82, 76)",
+  "transform": "none",
+  "feat": "\"calt\", \"kern\", \"liga\"",
+  "num": "normal",
+  "opsz": "auto",
+  "var": "normal",
+  "align": "left",
+  "wrap": "pretty"
+ },
+ "heroBtns": [],
+ "navBtns": [
+  {
+   "id": "mb6",
+   "inNav": true,
+   "text": "Sign in",
+   "x": 1035,
+   "y": 10,
+   "w": 99,
+   "h": 40,
+   "boxed": true,
+   "radius": "0px",
+   "pad": "6px 20px",
+   "bg": "rgb(247, 247, 246)",
+   "bgImg": "none",
+   "border": "0px solid rgb(82, 82, 76)",
+   "shadow": "none",
+   "color": "rgb(82, 82, 76)",
+   "size": 13,
+   "weight": "500",
+   "ls": "-0.13px",
+   "family": "Inter, \"Inter Fallback\", Arial, \"Helveti",
+   "transform": "none",
+   "transition": "color 0.15s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.15s cubic-",
+   "hasIcon": true
+  }
+ ],
+ "allBtnCount": 10,
+ "media": 2,
+ "largestMedia": {
+  "tag": "svg",
+  "x": 716,
+  "y": 125,
+  "w": 560,
+  "h": 280
+ },
+ "frames": [],
+ "fold": {
+  "textLeaves": 54,
+  "words": 141,
+  "interactive": 2,
+  "sizes": {
+   "11": 18,
+   "12": 8,
+   "13": 14,
+   "16": 4,
+   "20": 5,
+   "38": 2,
+   "56": 3
+  },
+  "weights": {
+   "400": 39,
+   "500": 15
+  },
+  "colorCount": 5,
+  "colors": {
+   "rgb(110, 109, 100)": 15,
+   "rgb(15, 15, 14)": 31,
+   "rgb(82, 82, 76)": 4,
+   "rgb(71, 114, 0)": 3,
+   "rgb(28, 28, 25)": 1
+  }
+ },
+ "families": {
+  "Arial": 1,
+  "Inter": 62
+ },
+ "fonts": [
+  "Inter 100 900",
+  "Inter Fallback normal"
+ ],
+ "radii": {
+  "3.35544e+07px": 1
+ },
+ "shadows": [],
+ "tabularEls": 72,
+ "sections": [
+  {
+   "tag": "DIV",
+   "y": 60,
+   "h": 4757,
+   "pt": "0px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 60,
+   "h": 549,
+   "pt": "0px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 609,
+   "h": 527,
+   "pt": "0px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 1136,
+   "h": 731,
+   "pt": "0px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 1867,
+   "h": 979,
+   "pt": "0px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 2846,
+   "h": 677,
+   "pt": "0px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 3523,
+   "h": 437,
+   "pt": "0px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 3960,
+   "h": 419,
+   "pt": "0px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "FOOTER",
+   "y": 4380,
+   "h": 437,
+   "pt": "0px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  }
+ ],
+ "pixels": {
+  "modeColor": "rgb(248,248,248)",
+  "modeShare": 0.897,
+  "nearBgShare": 0.934,
+  "quietBlockShare": 0.766,
+  "saturatedShare": 0.0202
+ },
+ "url": "https://runinfra.ai/",
+ "slug": "runinfra",
+ "captured": "2026-10-15T17:31:20.412Z"
+}

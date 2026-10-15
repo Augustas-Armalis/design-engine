@@ -1,0 +1,470 @@
+{
+ "title": "Aave — Onchain Savings, Lending and Borrowing",
+ "vw": 1440,
+ "vh": 900,
+ "docH": 8138,
+ "bodyBg": "color(display-p3 1 1 1)",
+ "htmlBg": "color(display-p3 1 1 1)",
+ "bodyFont": "\"Aave Repro\", ui-sans-serif, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", ",
+ "paragraph": {
+  "size": 14,
+  "lh": "21px",
+  "color": "rgb(34, 29, 29)",
+  "family": "\"Aave Repro\", ui-sans-serif, system-ui, -apple-sys",
+  "ls": "-0.09px"
+ },
+ "nav": {
+  "box": {
+   "x": 0,
+   "y": 0,
+   "w": 1440,
+   "h": 82
+  },
+  "shell": {
+   "x": 1119,
+   "y": 25,
+   "w": 94,
+   "h": 32
+  },
+  "position": "fixed",
+  "bg": "rgb(37, 34, 40)",
+  "backdrop": "none",
+  "radius": "99px",
+  "borderB": "0px none rgb(255, 255, 255)",
+  "border": "0px none rgb(255, 255, 255)",
+  "shadow": "none",
+  "linkCount": 5,
+  "links": [
+   {
+    "t": "Products",
+    "x": 713,
+    "y": 25,
+    "w": 93,
+    "h": 32,
+    "size": 14,
+    "weight": "450",
+    "ls": "normal",
+    "color": "rgba(39, 34, 40, 0.65)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "50px",
+    "pad": "0px 16px"
+   },
+   {
+    "t": "Solutions",
+    "x": 814,
+    "y": 25,
+    "w": 95,
+    "h": 32,
+    "size": 14,
+    "weight": "450",
+    "ls": "normal",
+    "color": "rgba(39, 34, 40, 0.65)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "50px",
+    "pad": "0px 16px"
+   },
+   {
+    "t": "Resources",
+    "x": 918,
+    "y": 25,
+    "w": 103,
+    "h": 32,
+    "size": 14,
+    "weight": "450",
+    "ls": "normal",
+    "color": "rgba(39, 34, 40, 0.65)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "50px",
+    "pad": "0px 16px"
+   },
+   {
+    "t": "About",
+    "x": 1029,
+    "y": 25,
+    "w": 74,
+    "h": 32,
+    "size": 14,
+    "weight": "450",
+    "ls": "normal",
+    "color": "rgba(39, 34, 40, 0.65)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "50px",
+    "pad": "0px 16px"
+   },
+   {
+    "t": "Use Aave",
+    "x": 1119,
+    "y": 25,
+    "w": 94,
+    "h": 32,
+    "size": 14,
+    "weight": "450",
+    "ls": "-0.14px",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(37, 34, 40)",
+    "radius": "99px",
+    "pad": "0px 16px"
+   }
+  ]
+ },
+ "navBottom": 82,
+ "head": {
+  "tag": "H1",
+  "text": "The World's Savings App",
+  "chars": 23,
+  "x": 227,
+  "y": 232,
+  "w": 986,
+  "h": 79,
+  "lines": 1,
+  "family": "\"Aave Repro\", ui-sans-serif, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", ",
+  "size": 72,
+  "weight": "550",
+  "ls": "-3.6px",
+  "lsEm": -0.05,
+  "lh": 1.1,
+  "color": "color(display-p3 0.152941 0.133333 0.156863 / 0.9)",
+  "transform": "none",
+  "feat": "\"cv11\"",
+  "num": "normal",
+  "opsz": "auto",
+  "var": "normal",
+  "align": "center",
+  "wrap": "pretty",
+  "spanColors": [
+   "color(display-p3 0.152941 0.133333 0.156863 / 0.9)"
+  ],
+  "bgClip": false,
+  "above": [
+   {
+    "t": "Aave App",
+    "x": 227,
+    "y": 184,
+    "w": 986,
+    "h": 28,
+    "size": 20,
+    "gapToH1": 20
+   }
+  ]
+ },
+ "sub": {
+  "text": "Get paid every second with global rates and Balance Protection.",
+  "chars": 63,
+  "x": 418,
+  "y": 323,
+  "w": 604,
+  "h": 27,
+  "lines": 1,
+  "gapFromH1": 12,
+  "family": "\"Aave Repro\", ui-sans-serif, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", ",
+  "size": 20,
+  "weight": "400",
+  "ls": "-0.2px",
+  "lsEm": -0.01,
+  "lh": 1.36,
+  "color": "color(display-p3 0.152941 0.133333 0.156863 / 0.65)",
+  "transform": "none",
+  "feat": "\"cv11\"",
+  "num": "normal",
+  "opsz": "auto",
+  "var": "normal",
+  "align": "center",
+  "wrap": "pretty"
+ },
+ "heroBtns": [
+  {
+   "id": "mb0",
+   "inNav": false,
+   "text": "Accept All",
+   "x": 968,
+   "y": 800,
+   "w": 101,
+   "h": 32,
+   "boxed": true,
+   "radius": "99px",
+   "pad": "0px 16px",
+   "bg": "rgb(37, 34, 40)",
+   "bgImg": "none",
+   "border": "0px none rgb(255, 255, 255)",
+   "shadow": "none",
+   "color": "rgb(255, 255, 255)",
+   "size": 14,
+   "weight": "450",
+   "ls": "-0.14px",
+   "family": "\"Aave Repro\", ui-sans-serif, system-ui, ",
+   "transform": "none",
+   "transition": "transform 0.15s, background-color 0.15s, color 0.15s, opacity 0.15s",
+   "hasIcon": false
+  },
+  {
+   "id": "mb1",
+   "inNav": false,
+   "text": "Deny All",
+   "x": 1081,
+   "y": 800,
+   "w": 87,
+   "h": 32,
+   "boxed": true,
+   "radius": "99px",
+   "pad": "0px 16px",
+   "bg": "rgba(37, 34, 40, 0.05)",
+   "bgImg": "none",
+   "border": "0px none rgb(37, 34, 40)",
+   "shadow": "none",
+   "color": "rgb(37, 34, 40)",
+   "size": 14,
+   "weight": "450",
+   "ls": "-0.14px",
+   "family": "\"Aave Repro\", ui-sans-serif, system-ui, ",
+   "transform": "none",
+   "transition": "transform 0.15s, background-color 0.15s, color 0.15s, opacity 0.15s",
+   "hasIcon": false
+  },
+  {
+   "id": "mb7",
+   "inNav": false,
+   "text": "Download on iOS",
+   "x": 534,
+   "y": 382,
+   "w": 215,
+   "h": 48,
+   "boxed": true,
+   "radius": "99px",
+   "pad": "0px 24px",
+   "bg": "color(display-p3 0.592157 0.556863 1)",
+   "bgImg": "none",
+   "border": "0px none rgb(255, 255, 255)",
+   "shadow": "none",
+   "color": "rgb(255, 255, 255)",
+   "size": 17,
+   "weight": "500",
+   "ls": "-0.17px",
+   "family": "\"Aave Repro\", ui-sans-serif, system-ui, ",
+   "transform": "none",
+   "transition": "transform 0.15s, background-color 0.15s, color 0.15s, opacity 0.15s",
+   "hasIcon": true
+  },
+  {
+   "id": "mb8",
+   "inNav": false,
+   "text": "Learn More",
+   "x": 764,
+   "y": 382,
+   "w": 142,
+   "h": 48,
+   "boxed": true,
+   "radius": "99px",
+   "pad": "0px 24px",
+   "bg": "rgba(151, 142, 255, 0.1)",
+   "bgImg": "none",
+   "border": "0px none color(display-p3 0.52 0.47 1)",
+   "shadow": "none",
+   "color": "color(display-p3 0.52 0.47 1)",
+   "size": 17,
+   "weight": "500",
+   "ls": "-0.17px",
+   "family": "\"Aave Repro\", ui-sans-serif, system-ui, ",
+   "transform": "none",
+   "transition": "transform 0.15s, background-color 0.15s, color 0.15s, opacity 0.15s",
+   "hasIcon": false
+  }
+ ],
+ "navBtns": [
+  {
+   "id": "mb6",
+   "inNav": true,
+   "text": "Use Aave",
+   "x": 1119,
+   "y": 25,
+   "w": 94,
+   "h": 32,
+   "boxed": true,
+   "radius": "99px",
+   "pad": "0px 16px",
+   "bg": "rgb(37, 34, 40)",
+   "bgImg": "none",
+   "border": "0px none rgb(255, 255, 255)",
+   "shadow": "none",
+   "color": "rgb(255, 255, 255)",
+   "size": 14,
+   "weight": "450",
+   "ls": "-0.14px",
+   "family": "\"Aave Repro\", ui-sans-serif, system-ui, ",
+   "transform": "none",
+   "transition": "transform 0.15s, background-color 0.15s, color 0.15s, opacity 0.15s",
+   "hasIcon": false
+  }
+ ],
+ "allBtnCount": 9,
+ "media": 3,
+ "largestMedia": {
+  "tag": "IMG",
+  "x": 558,
+  "y": 502,
+  "w": 323,
+  "h": 554
+ },
+ "frames": [],
+ "fold": {
+  "textLeaves": 82,
+  "words": 113,
+  "interactive": 4,
+  "sizes": {
+   "12": 64,
+   "14": 10,
+   "17": 2,
+   "20": 2,
+   "72": 4
+  },
+  "weights": {
+   "400": 3,
+   "450": 3,
+   "500": 6,
+   "550": 4,
+   "600": 66
+  },
+  "colorCount": 11,
+  "colors": {
+   "rgb(34, 29, 29)": 1,
+   "rgb(104, 102, 102)": 1,
+   "rgb(255, 255, 255)": 2,
+   "rgb(37, 34, 40)": 1,
+   "color(display-p3 0.152941 0.133333 0.156863 / 0.65)": 2,
+   "color(display-p3 0.152941 0.133333 0.156863 / 0.9)": 4,
+   "color(display-p3 0.52 0.47 1)": 1,
+   "rgba(0, 0, 0, 0.5)": 4,
+   "color(display-p3 0.00392157 0.815686 0.384314)": 63,
+   "rgb(133, 133, 133)": 1,
+   "rgba(255, 255, 255, 0.5)": 2
+  }
+ },
+ "families": {
+  "Aave Repro": 17,
+  "-apple-system": 70
+ },
+ "fonts": [
+  "Inter Variable 100 900",
+  "Aave Repro normal"
+ ],
+ "radii": {
+  "24px": 1,
+  "99px": 5,
+  "50px": 4,
+  "32px": 1,
+  "8.2106px": 1,
+  "50%": 1
+ },
+ "shadows": [
+  [
+   "rgba(33, 29, 29, 0.05) 0px 8px 20px 0px, rgba(0, 0, 0, 0.08) 0px 0px 6px 0px",
+   1
+  ]
+ ],
+ "tabularEls": 86,
+ "sections": [
+  {
+   "tag": "DIV",
+   "y": 0,
+   "h": 1079,
+   "pt": "0px",
+   "pb": "24px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 0,
+   "h": 1055,
+   "pt": "184px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 1079,
+   "h": 490,
+   "pt": "0px",
+   "pb": "24px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "DIV",
+   "y": 1569,
+   "h": 1765,
+   "pt": "0px",
+   "pb": "24px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 1569,
+   "h": 1741,
+   "pt": "120px",
+   "pb": "56px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "DIV",
+   "y": 3334,
+   "h": 1264,
+   "pt": "0px",
+   "pb": "24px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 3334,
+   "h": 1240,
+   "pt": "108px",
+   "pb": "56px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "DIV",
+   "y": 4598,
+   "h": 1892,
+   "pt": "0px",
+   "pb": "24px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 4598,
+   "h": 1868,
+   "pt": "184px",
+   "pb": "56px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 6490,
+   "h": 569,
+   "pt": "120px",
+   "pb": "120px",
+   "bg": "rgba(0, 0, 0, 0)"
+  }
+ ],
+ "hover": {
+  "before": [
+   "rgb(37, 34, 40) | none | none | none | rgb(255, 255, 255) | 1 | rgb(255, 255, 255)"
+  ],
+  "after": [
+   "rgb(59, 56, 62) | none | none | none | rgb(255, 255, 255) | 1 | rgb(255, 255, 255)"
+  ],
+  "changed": [
+   "rgb(59, 56, 62) | none | none | none | rgb(255, 255, 255) | 1 | rgb(255, 255, 255)"
+  ]
+ },
+ "press": [
+  "rgb(59, 56, 62) | none | matrix(0.991479, 0, 0, 0.991479, 0, 0) | none | rgb(255, 255, 255) | 1 | rgb(255, 255, 255)"
+ ],
+ "pixels": {
+  "modeColor": "rgb(248,248,248)",
+  "modeShare": 0.556,
+  "nearBgShare": 0.701,
+  "quietBlockShare": 0.773,
+  "saturatedShare": 0.0019
+ },
+ "url": "https://aave.com/",
+ "slug": "aave",
+ "captured": "2026-10-15T17:30:09.985Z"
+}

@@ -1,0 +1,465 @@
+{
+ "title": "Official site of AM Trades",
+ "vw": 1440,
+ "vh": 900,
+ "docH": 13772,
+ "bodyBg": "rgb(18, 18, 18)",
+ "htmlBg": "rgba(0, 0, 0, 0)",
+ "bodyFont": "sans-serif",
+ "paragraph": {
+  "size": 18,
+  "lh": "24px",
+  "color": "rgb(163, 163, 163)",
+  "family": "\"Inter Variable\", \"Inter Variable Placeholder\", sa",
+  "ls": "normal"
+ },
+ "nav": {
+  "box": {
+   "x": 208,
+   "y": 0,
+   "w": 1024,
+   "h": 72
+  },
+  "shell": {
+   "x": 997,
+   "y": 16,
+   "w": 73,
+   "h": 40
+  },
+  "position": "relative",
+  "bg": "rgb(18, 18, 18)",
+  "backdrop": "none",
+  "radius": "10px",
+  "borderB": "0px none rgb(0, 0, 238)",
+  "border": "0px none rgb(0, 0, 238)",
+  "shadow": "none",
+  "linkCount": 7,
+  "links": [
+   {
+    "t": "Platform",
+    "x": 262,
+    "y": 18,
+    "w": 70,
+    "h": 36,
+    "size": 12,
+    "weight": "400",
+    "ls": "normal",
+    "color": "rgb(0, 0, 238)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "0px",
+    "pad": "8px 10px"
+   },
+   {
+    "t": "Membership",
+    "x": 336,
+    "y": 18,
+    "w": 96,
+    "h": 36,
+    "size": 12,
+    "weight": "400",
+    "ls": "normal",
+    "color": "rgb(0, 0, 238)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "0px",
+    "pad": "8px 10px"
+   },
+   {
+    "t": "Pricing",
+    "x": 436,
+    "y": 18,
+    "w": 62,
+    "h": 36,
+    "size": 12,
+    "weight": "400",
+    "ls": "normal",
+    "color": "rgb(0, 0, 238)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "0px",
+    "pad": "8px 10px"
+   },
+   {
+    "t": "Testimonials",
+    "x": 502,
+    "y": 18,
+    "w": 95,
+    "h": 36,
+    "size": 12,
+    "weight": "400",
+    "ls": "normal",
+    "color": "rgb(0, 0, 238)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "0px",
+    "pad": "8px 10px"
+   },
+   {
+    "t": "FAQ",
+    "x": 601,
+    "y": 18,
+    "w": 45,
+    "h": 36,
+    "size": 12,
+    "weight": "400",
+    "ls": "normal",
+    "color": "rgb(0, 0, 238)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "0px",
+    "pad": "8px 10px"
+   },
+   {
+    "t": "Sign In",
+    "x": 997,
+    "y": 16,
+    "w": 73,
+    "h": 40,
+    "size": 12,
+    "weight": "400",
+    "ls": "normal",
+    "color": "rgb(0, 0, 238)",
+    "bg": "rgb(18, 18, 18)",
+    "radius": "10px",
+    "pad": "10px 16px"
+   },
+   {
+    "t": "Create free account",
+    "x": 1080,
+    "y": 16,
+    "w": 152,
+    "h": 40,
+    "size": 12,
+    "weight": "400",
+    "ls": "normal",
+    "color": "rgb(0, 0, 238)",
+    "bg": "rgb(71, 133, 255)",
+    "radius": "10px",
+    "pad": "10px 16px"
+   }
+  ]
+ },
+ "navBottom": 72,
+ "head": {
+  "tag": "H2",
+  "text": "Where traders end their search for consistency.",
+  "chars": 47,
+  "x": 208,
+  "y": 192,
+  "w": 1024,
+  "h": 128,
+  "lines": 2,
+  "family": "\"Inter Variable\", \"Inter Variable Placeholder\", sans-serif",
+  "size": 56,
+  "weight": "400",
+  "ls": "-3px",
+  "lsEm": -0.0536,
+  "lh": 1.143,
+  "color": "rgb(255, 255, 255)",
+  "transform": "none",
+  "feat": "normal",
+  "num": "normal",
+  "opsz": "auto",
+  "var": "\"opsz\" 14, \"wght\" 400",
+  "align": "center",
+  "wrap": "balance",
+  "spanColors": [],
+  "bgClip": false,
+  "above": []
+ },
+ "sub": {
+  "text": "Learn the trading system refined by AM through years of market experience, with structured lessons and tools built for application",
+  "chars": 130,
+  "x": 448,
+  "y": 332,
+  "w": 544,
+  "h": 48,
+  "lines": 2,
+  "gapFromH1": 12,
+  "family": "\"Inter Variable\", \"Inter Variable Placeholder\", sans-serif",
+  "size": 18,
+  "weight": "400",
+  "ls": "normal",
+  "lsEm": 0,
+  "lh": 1.333,
+  "color": "rgb(163, 163, 163)",
+  "transform": "none",
+  "feat": "normal",
+  "num": "normal",
+  "opsz": "auto",
+  "var": "\"opsz\" 20, \"wght\" 350",
+  "align": "center",
+  "wrap": "balance"
+ },
+ "heroBtns": [
+  {
+   "id": "mb7",
+   "inNav": false,
+   "text": "Create free account",
+   "x": 566,
+   "y": 412,
+   "w": 152,
+   "h": 40,
+   "boxed": true,
+   "radius": "10px",
+   "pad": "10px 16px",
+   "bg": "rgb(71, 133, 255)",
+   "bgImg": "none",
+   "border": "0px none rgb(0, 0, 238)",
+   "shadow": "none",
+   "color": "rgb(0, 0, 238)",
+   "size": 12,
+   "weight": "400",
+   "ls": "normal",
+   "family": "sans-serif",
+   "transform": "none",
+   "transition": "all",
+   "hasIcon": false
+  },
+  {
+   "id": "mb8",
+   "inNav": false,
+   "text": "Become a member",
+   "x": 728,
+   "y": 412,
+   "w": 146,
+   "h": 40,
+   "boxed": true,
+   "radius": "10px",
+   "pad": "10px 16px",
+   "bg": "rgb(18, 18, 18)",
+   "bgImg": "none",
+   "border": "0px none rgb(0, 0, 238)",
+   "shadow": "none",
+   "color": "rgb(0, 0, 238)",
+   "size": 12,
+   "weight": "400",
+   "ls": "normal",
+   "family": "sans-serif",
+   "transform": "none",
+   "transition": "all",
+   "hasIcon": false
+  }
+ ],
+ "navBtns": [
+  {
+   "id": "mb5",
+   "inNav": true,
+   "text": "Sign In",
+   "x": 997,
+   "y": 16,
+   "w": 73,
+   "h": 40,
+   "boxed": true,
+   "radius": "10px",
+   "pad": "10px 16px",
+   "bg": "rgb(18, 18, 18)",
+   "bgImg": "none",
+   "border": "0px none rgb(0, 0, 238)",
+   "shadow": "none",
+   "color": "rgb(0, 0, 238)",
+   "size": 12,
+   "weight": "400",
+   "ls": "normal",
+   "family": "sans-serif",
+   "transform": "none",
+   "transition": "all",
+   "hasIcon": false
+  },
+  {
+   "id": "mb6",
+   "inNav": true,
+   "text": "Create free account",
+   "x": 1080,
+   "y": 16,
+   "w": 152,
+   "h": 40,
+   "boxed": true,
+   "radius": "10px",
+   "pad": "10px 16px",
+   "bg": "rgb(71, 133, 255)",
+   "bgImg": "none",
+   "border": "0px none rgb(0, 0, 238)",
+   "shadow": "none",
+   "color": "rgb(0, 0, 238)",
+   "size": 12,
+   "weight": "400",
+   "ls": "normal",
+   "family": "sans-serif",
+   "transform": "none",
+   "transition": "all",
+   "hasIcon": false
+  }
+ ],
+ "allBtnCount": 9,
+ "media": 1,
+ "largestMedia": {
+  "tag": "VIDEO",
+  "x": 151,
+  "y": 558,
+  "w": 1138,
+  "h": 640
+ },
+ "frames": [
+  {
+   "tag": "DIV",
+   "x": 145,
+   "y": 552,
+   "w": 1150,
+   "h": 652,
+   "radius": "26px",
+   "shadow": "none",
+   "border": "0px none rgb(0, 0, 0)",
+   "bg": "rgba(255, 255, 255, 0.03)",
+   "pad": "6px"
+  }
+ ],
+ "fold": {
+  "textLeaves": 4,
+  "words": 33,
+  "interactive": 2,
+  "sizes": {
+   "13": 2,
+   "18": 1,
+   "56": 1
+  },
+  "weights": {
+   "400": 4
+  },
+  "colorCount": 2,
+  "colors": {
+   "rgb(255, 255, 255)": 3,
+   "rgb(163, 163, 163)": 1
+  }
+ },
+ "families": {
+  "Inter Variable": 11
+ },
+ "fonts": [
+  "Geist 500",
+  "Inter Variable 400",
+  "Inter 400",
+  "Inter 500",
+  "Inter 600",
+  "Geist Placeholder normal",
+  "Inter Variable Placeholder normal",
+  "Inter Placeholder normal"
+ ],
+ "radii": {
+  "10px": 4,
+  "26px": 1,
+  "20px": 1
+ },
+ "shadows": [],
+ "tabularEls": 0,
+ "sections": [
+  {
+   "tag": "SECTION",
+   "y": 72,
+   "h": 380,
+   "pt": "120px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 452,
+   "h": 752,
+   "pt": "100px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 4328,
+   "h": 300,
+   "pt": "0px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 4628,
+   "h": 1336,
+   "pt": "200px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 5964,
+   "h": 1114,
+   "pt": "180px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 7278,
+   "h": 1204,
+   "pt": "0px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 8482,
+   "h": 2195,
+   "pt": "200px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 10677,
+   "h": 1020,
+   "pt": "160px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "y": 11697,
+   "h": 964,
+   "pt": "200px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "FOOTER",
+   "y": 13408,
+   "h": 364,
+   "pt": "48px",
+   "pb": "48px",
+   "bg": "rgb(18, 18, 18)"
+  }
+ ],
+ "pixels": {
+  "modeColor": "rgb(16,16,16)",
+  "modeShare": 0.704,
+  "nearBgShare": 0.806,
+  "quietBlockShare": 0.821,
+  "saturatedShare": 0.011
+ },
+ "hover": {
+  "before": [
+   "rgb(71, 133, 255) | none | none | none | rgb(0, 0, 238) | 1 | rgb(0, 0, 238)",
+   "rgba(0, 0, 0, 0) | none | none | none | rgb(0, 0, 238) | 1 | rgb(0, 0, 238)",
+   "rgba(0, 0, 0, 0) | none | none | none | rgb(255, 255, 255) | 1 | rgb(255, 255, 255)"
+  ],
+  "after": [
+   "rgb(58, 116, 235) | none | none | none | rgb(0, 0, 238) | 1 | rgb(0, 0, 238)",
+   "rgba(0, 0, 0, 0) | none | none | none | rgb(0, 0, 238) | 1 | rgb(0, 0, 238)",
+   "rgba(0, 0, 0, 0) | none | none | none | rgb(255, 255, 255) | 1 | rgb(255, 255, 255)"
+  ],
+  "changed": [
+   "rgb(58, 116, 235) | none | none | none | rgb(0, 0, 238) | 1 | rgb(0, 0, 238)",
+   null,
+   null
+  ]
+ },
+ "press": [
+  "rgb(49, 108, 228) | none | none | none | rgb(255, 0, 0) | 1 | rgb(255, 0, 0)",
+  "rgba(0, 0, 0, 0) | none | none | none | rgb(255, 0, 0) | 1 | rgb(255, 0, 0)",
+  "rgba(0, 0, 0, 0) | none | none | none | rgb(255, 255, 255) | 1 | rgb(255, 255, 255)"
+ ],
+ "url": "https://amtrades.com/",
+ "slug": "amtrades",
+ "captured": "2026-10-15T17:33:11.191Z"
+}

@@ -76,3 +76,6 @@ None. All pages in this chapter are text only.
 - p.583 (PDF): last page has the "Points to be noted" summary (soft talents as vital as technical; mix of hard, soft and "questioning" abilities). The word "questioning" is likely an editorial slip for a skill category; unclear what it means.
 - OCR damage noted and corrected from images: "ottract"-type errors only; no numbers were affected. "Flexile" on p.581 = "Flexible".
 - Coverage: PDF pages 575-583 all read. Pages with no rule content beyond the above: p.575 (title), p.576 (intro and stat), p.583 (summary).
+
+- (audit 2026-10-15) Re-read all text for p.575-583 against the rules above; every teachable point (4 hard skills, 7 soft skills, the interview/usability-testing/survey/observation methods, the Icons8 92 percent stat, "a flawless design is a fiction") is already captured. No rules added.
+- (audit 2026-10-15) Pages viewed as images: p.575 (section divider: full-bleed purple-to-periwinkle vertical gradient, a huge ghosted "04" numeral behind a centred white bold "Soft Skills"; decorative, no rule content) and p.578 (plain text page, confirms OCR and the "4. Proficiency in visual communication" numbering residue). Text-only: p.576, 577, 579, 580, 581, 582, 583 (prose, no figures, OCR legible).
