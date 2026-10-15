@@ -3,9 +3,9 @@
 // rendered grain light field (one indigo hue, lit from the top right), the Insights app framed inside it and bleeding out,
 // a peek card with the source quote and clip straddling the stage edge, quiet substance under the CTAs, tactile buttons.
 import { type ReactNode, useEffect, useState } from 'react'
-import { motion, MotionConfig } from 'motion/react'
+import { AnimatePresence, motion, MotionConfig } from 'motion/react'
 import { GrainGradient } from '@paper-design/shaders-react'
-import { ArrowRight, ArrowUp, BarChart3, Check, ChevronsUpDown, Highlighter, Inbox, Lightbulb, Mic, MessageCircle, Play, Search, Sparkles, Tag, Users, Folder, LayoutList, Columns3 } from 'lucide-react'
+import { ArrowRight, ArrowUp, BarChart3, Check, ChevronsUpDown, Highlighter, Inbox, Lightbulb, Mic, MessageCircle, Search, Sparkles, Tag, Users, Folder, LayoutList, Columns3 } from 'lucide-react'
 import { ease } from './motion'
 import { TAG, type TagKey } from './Product'
 import QuorumLogo, { QuorumMark } from './QuorumLogo'
@@ -112,18 +112,27 @@ function App() {
   )
 }
 
-const BARS = Array.from({ length: 44 }, (_, i) => 0.25 + 0.75 * Math.abs(Math.sin(i * 0.7) * Math.cos(i * 0.23 + 1)))
-function Peek() {
+/* agent stack: what Quorum is doing right now, as a minimal toast stack that cycles (two ghost cards behind the front one) */
+const EVENTS: [string, string][] = [['Grouping new highlights', '3 calls added to Onboarding v3'], ['Tagged 21 quotes', 'Import · Pricing · Delight'], ['New insight found', 'Seat billing is unclear at checkout']]
+function AgentStack() {
+  const [k, setK] = useState(0)
+  useEffect(() => {
+    if (matchMedia('(prefers-reduced-motion: reduce)').matches) return
+    const id = window.setInterval(() => setK((v) => (v + 1) % EVENTS.length), 2600)
+    return () => window.clearInterval(id)
+  }, [])
   return (
-    <motion.div className="absolute z-30 w-[312px] rounded-[16px] bg-white p-4" style={{ left: 548, top: 636, boxShadow: '0 0 0 1px rgba(17,18,20,0.07), 0 2px 4px rgba(17,18,20,0.04), 0 24px 48px -16px rgba(17,18,20,0.24)' }}
-      initial={{ opacity: 0, y: 18, scale: 0.97 }} animate={{ opacity: 1, y: 0, scale: 1 }} transition={{ delay: T.peek, duration: 1.0, ease: ease.reveal, opacity: { delay: T.peek, duration: 0.5 } }}>
-      <div className="flex items-center gap-2"><span className="inline-flex h-[22px] items-center gap-1.5 rounded-[6px] px-1.5 text-[12px] font-[500]" style={{ background: TAG.import.bg, color: TAG.import.ink }}><span className="size-1.5 rounded-full" style={{ background: TAG.import.dot }} />Import</span><span className="ml-auto text-[11px] text-[#9a9ea5]">Source 1 of 14</span></div>
-      <p className="mt-3 text-[14px] font-[500] leading-[21px] tracking-[-0.01em]">“We got stuck on the CSV import for two days. Our columns never matched.”</p>
-      <div className="mt-3 flex items-center gap-2 text-[12px] text-[#5d6168]"><Av i="MC" s={20} /><span className="font-[550] text-[#111214]">Maya Chen</span>Lumio · Interview 04</div>
-      <div className="mt-3 flex items-center gap-2.5 rounded-[10px] bg-[#f6f6f8] p-1.5 pr-3">
-        <span className="grid size-7 place-items-center rounded-full bg-[#111214] text-white"><Play size={11} fill="#fff" strokeWidth={0} /></span>
-        <span className="flex h-6 flex-1 items-center gap-[2px]">{BARS.map((b, i) => <span key={i} className="w-[2px] flex-1 rounded-full" style={{ height: `${b * 100}%`, background: i < 14 ? IND : '#cfd1d6' }} />)}</span>
-        <span className="tnum text-[11px] text-[#5d6168]">05:18</span>
+    <motion.div className="absolute left-[44px] top-[40px] h-11 w-[420px]" initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: T.bar, duration: 0.7, ease: ease.outQuint }}>
+      <span className="absolute inset-x-6 -top-[14px] h-11 rounded-[12px] bg-white/40 shadow-[0_0_0_1px_rgba(17,18,20,0.05)]" />
+      <span className="absolute inset-x-3 -top-[7px] h-11 rounded-[12px] bg-white/65 shadow-[0_0_0_1px_rgba(17,18,20,0.05)]" />
+      <div className="absolute inset-0 overflow-hidden rounded-[12px] bg-white/90 backdrop-blur-md" style={{ boxShadow: '0 0 0 1px rgba(17,18,20,0.06), 0 6px 16px -8px rgba(40,44,120,0.25)' }}>
+        <AnimatePresence initial={false}>
+          <motion.div key={k} className="absolute inset-0 flex items-center gap-2.5 pl-2.5 pr-3.5 text-[13px]" initial={{ y: 24, opacity: 0 }} animate={{ y: 0, opacity: 1 }} exit={{ y: -24, opacity: 0 }} transition={{ duration: 0.5, ease: ease.outQuint }}>
+            <span className="grid size-6 place-items-center rounded-[7px] text-white" style={{ background: IND }}><Sparkles size={13} /></span>
+            <span className="font-[600]">{EVENTS[k][0]}</span><span className="truncate text-[#8b8f96]">{EVENTS[k][1]}</span>
+            <motion.span className="ml-auto size-3.5 shrink-0 rounded-full border-[1.5px] border-[#d8daf0] border-t-[#5056f0]" animate={{ rotate: 360 }} transition={{ repeat: Infinity, duration: 1, ease: 'linear' }} />
+          </motion.div>
+        </AnimatePresence>
       </div>
     </motion.div>
   )
@@ -133,6 +142,7 @@ function Peek() {
 const Q = 'Why do trials stall in the first week?'
 function AskBox() {
   const [n, setN] = useState(0)
+  const done = n >= Q.length
   useEffect(() => {
     if (matchMedia('(prefers-reduced-motion: reduce)').matches) { setN(Q.length); return }
     let id = 0
@@ -140,7 +150,8 @@ function AskBox() {
     return () => { window.clearTimeout(start); window.clearInterval(id) }
   }, [])
   return (
-    <div className="w-[440px] rounded-[16px] bg-white p-1.5 shadow-[0_0_0_1px_rgba(17,18,20,0.08),0_1px_2px_rgba(17,18,20,0.05),0_12px_28px_-14px_rgba(30,34,90,0.22)]">
+    <div className="w-[440px] rounded-[17px] p-px shadow-[0_1px_2px_rgba(17,18,20,0.05),0_14px_30px_-14px_rgba(30,34,90,0.25)]" style={{ background: 'linear-gradient(140deg, rgba(80,86,240,0.55), rgba(17,18,20,0.09) 38%, rgba(17,18,20,0.09) 70%, rgba(255,160,120,0.45))' }}>
+    <div className="rounded-[16px] bg-white p-1.5">
       <div className="rounded-[11px] bg-[#fbfbfc] px-3.5 pb-3 pt-3 shadow-[inset_0_0_0_1px_rgba(17,18,20,0.05)]">
         <div className="flex items-center gap-2 text-[12px] font-[600]"><span className="grid size-5 place-items-center rounded-[6px] text-white" style={{ background: IND }}><Sparkles size={11} /></span>Ask Quorum<span className="ml-auto font-[500] text-[#9a9ea5]">Across 12 interviews</span></div>
         <div className="mt-3 flex items-center gap-3">
@@ -148,9 +159,16 @@ function AskBox() {
           <span className="b6-ink grid size-8 shrink-0 place-items-center rounded-[9px] text-white"><ArrowUp size={15} strokeWidth={2.2} /></span>
         </div>
       </div>
-      <div className="flex gap-1.5 px-1.5 pb-1 pt-2">
-        {['Top pricing objections', 'What do admins ask for?', 'Q2 vs Q3'].map((c) => <span key={c} className="flex h-7 items-center rounded-[8px] bg-[#f3f3f5] px-2.5 text-[12px] font-[500] text-[#4b4f56]">{c}</span>)}
+      <div className="relative h-9 px-1.5 pt-2">
+        <motion.div className="absolute inset-x-1.5 top-2 flex gap-1.5" animate={{ opacity: done ? 0 : 1, y: done ? -6 : 0 }} transition={{ duration: 0.35 }}>
+          {['Top pricing objections', 'What do admins ask for?', 'Q2 vs Q3'].map((c) => <span key={c} className="flex h-7 items-center rounded-[8px] bg-[#f3f3f5] px-2.5 text-[12px] font-[500] text-[#4b4f56]">{c}</span>)}
+        </motion.div>
+        <motion.div className="absolute inset-x-2.5 top-2 flex h-7 items-center gap-2 text-[12px] text-[#5d6168]" initial={{ opacity: 0, y: 6 }} animate={{ opacity: done ? 1 : 0, y: done ? 0 : 6 }} transition={{ duration: 0.45, delay: done ? 0.2 : 0 }}>
+          <span className="flex -space-x-[3px]">{['MC', 'JR', 'LS', 'AK'].map((a) => <Av key={a} i={a} s={20} />)}</span>
+          <span className="shimmer font-[500]">Answering from 14 quotes in 9 interviews</span>
+        </motion.div>
       </div>
+    </div>
     </div>
   )
 }
@@ -177,7 +195,7 @@ export default function HeroV6() {
     <MotionConfig reducedMotion="user">
       <div className="relative mx-auto h-[900px] w-[1440px] overflow-hidden bg-white" style={{ color: INK, fontFamily: '"Inter Variable", system-ui, sans-serif', fontOpticalSizing: 'auto', fontFeatureSettings: '"cv11", "ss01"' }}>
         <Nav />
-        <section className="absolute left-[64px] top-[268px] z-20 w-[470px]">
+        <section className="absolute left-[64px] top-[206px] z-20 w-[470px]">
           <h1 className="text-[58px] font-[550] leading-[1.03] tracking-[-0.045em]">
             {['Turn Interviews', 'Into Answers'].map((l, i) => (
               <motion.span key={l} className="block" initial={{ opacity: 0.01, y: 30, filter: 'blur(6px)' }} animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
@@ -189,25 +207,19 @@ export default function HeroV6() {
             <a href="#" className="b6-ink press group flex h-12 items-center gap-2 rounded-[12px] pl-5 pr-4 text-white">Start for free<ArrowRight size={16} strokeWidth={2} className="opacity-80 transition-transform duration-300 group-hover:translate-x-0.5" /></a>
             <a href="#" className="b6-ghost press flex h-12 items-center rounded-[12px] px-5">Book a demo</a>
           </Up>
-          <Up at={T.feats} className="mt-14"><AskBox /></Up>
+          <Up at={T.feats} className="mt-11"><AskBox /></Up>
         </section>
 
         <motion.div className="absolute z-10 overflow-hidden rounded-[24px]" style={{ left: STAGE.x, top: STAGE.y, width: STAGE.w, height: STAGE.h }}
           initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: T.stage, duration: 1.0 }}>
           <GrainGradient style={{ position: 'absolute', inset: 0, width: STAGE.w, height: STAGE.h }} colorBack="#eef0fb" colors={['#aeb4ff', '#d4d7ff', '#f3e9ff', '#ffe9dc']} shape="corners" softness={0.85} intensity={0.22} noise={0.28} speed={0.25} />
           <div aria-hidden className="absolute inset-0 rounded-[24px] shadow-[inset_0_0_0_1px_rgba(17,18,20,0.06)]" />
-          <motion.div className="absolute left-[44px] top-[36px] flex h-11 items-center gap-2.5 rounded-[12px] bg-white/85 pl-2.5 pr-3.5 text-[13px] backdrop-blur-md" style={{ boxShadow: '0 0 0 1px rgba(17,18,20,0.06), 0 6px 16px -8px rgba(40,44,120,0.25)' }}
-            initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: T.bar, duration: 0.7, ease: ease.outQuint }}>
-            <span className="grid size-6 place-items-center rounded-[7px] text-white" style={{ background: IND }}><Sparkles size={13} /></span>
-            <span className="font-[600]">Grouping new highlights</span><span className="text-[#8b8f96]">3 calls added to Onboarding v3</span>
-            <motion.span className="ml-1 size-3.5 rounded-full border-[1.5px] border-[#d8daf0] border-t-[#5056f0]" animate={{ rotate: 360 }} transition={{ repeat: Infinity, duration: 1, ease: 'linear' }} />
-          </motion.div>
+          <AgentStack />
           <motion.div className="absolute left-[44px] top-[96px] h-[760px] w-[900px] overflow-hidden rounded-[14px] bg-white" style={{ boxShadow: '0 0 0 1px rgba(17,18,20,0.08), 0 2px 6px rgba(30,34,90,0.06), 0 30px 60px -24px rgba(30,34,90,0.28)' }}
             initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: T.app, duration: 1.3, ease: ease.reveal, opacity: { delay: T.app, duration: 0.6 } }}>
             <App />
           </motion.div>
         </motion.div>
-        <Peek />
       </div>
     </MotionConfig>
   )

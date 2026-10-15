@@ -2196,6 +2196,34 @@
  },
  {
   "id": "founder.founder-taste#67",
+  "text": "[founder] Don't stack floaters over the product: a popover with its own visual (waveform, chart) on top of a dense dashboard competes with it, so cut it. Above the product, use one minimal live element: a status bar as a small toast stack (two ghost cards behind the front one, the front message cycling every ~2.6s). The composer under the CTAs earns its place by acting (the question types itself, then the chips swap for an \"Answering from N quotes\" line with source avatars), with a gradient hairline edge (accent to neutral to warm).",
+  "why": "Founder on Quorum v6.1: \"the title needs to be more up and the visual a bit higher or cooler... that little popover box with a voice visual... is too much and just interferes... above the dashboard something cooler with that line or stack, something more there minimally\".",
+  "applies": "split product heroes.",
+  "check": "at most one floating element over the product; the h1 top sits at about 200-210 on a 900 fold.",
+  "checkable": true,
+  "source": "founder, Quorum v6.1, 2026-10-15",
+  "file": "founder/founder-taste.md",
+  "section": "2. Rules",
+  "tags": [
+   "founder",
+   "taste",
+   "hero",
+   "nav",
+   "typography",
+   "copy",
+   "icons",
+   "logo",
+   "layout",
+   "product-card",
+   "background",
+   "buttons",
+   "quality-bar"
+  ],
+  "kind": "source",
+  "origin": "founder"
+ },
+ {
+  "id": "founder.founder-taste#68",
   "text": "[founder] An app sidebar follows Attio: one refined outline icon family (Phosphor regular, 16px, grey #7c7f85; the active row's icon goes fill), record types as 16px solid colour tiles (radius 4.5) with a white filled glyph, and enough real pages to feel like a product (workspace pages, Favorites, Records, Lists, Agents), grouped under small sentence-case headers. The whole nav fits a 1440x900 viewport without a clipped group; secondary actions (invite, help, settings) collapse into icon buttons in the user footer. White buttons get a crisp 1px ring plus a soft 1-2px lift (`.btn-white`), never a blurred halo.",
   "why": "Founder on Acquisity v3 (renamed Ferry): \"not bad actually, you're getting better... I'd just improve the sidebar and the white buttons a tiny bit.. the sidebar icons look trash... overall sidebar itself should look more like attio and have more pages\".",
   "applies": "SaaS app UI and hero dashboards.",
@@ -2223,7 +2251,7 @@
   "origin": "founder"
  },
  {
-  "id": "founder.founder-taste#68",
+  "id": "founder.founder-taste#69",
   "text": "[founder] The last 5% to Marcel/Rico level is tiny effects plus consistency, so finish every product screen with this pass: one icon family across sidebar and canvas (state = fill weight, never a second library); one card-header grammar everywhere (16px solid tile + white glyph, 14/600 title, soft meta, actions right, same 48px band); micro-visuals that carry data (KPI micro-bar sparks with the latest period in the accent, segmented meters for rates, dotted underline on metric labels); charts compare against something (previous period dotted grey under a 1.5px accent line, monotone smoothing that never overshoots a real value, dashed gridlines, a hover crosshair + tooltip, an end-point dot); only one attribute per row is a filled chip, other statuses are icon + text; table edge cells share the card's 16px inset; dense cells use compact values (\"12m\", \"1d\") so nothing clips.",
   "why": "Founder on Ferry: \"we're so close but not marcel or rico quality by a tiny bit, which comes down to tiny effects and consistencies\"; while studying Rico's analytics, Attio's charts and Kargul's CRM: \"you're looking at fire examples tho\".",
   "applies": "dashboards and hero product UI.",
@@ -2251,7 +2279,7 @@
   "origin": "founder"
  },
  {
-  "id": "founder.founder-taste#69",
+  "id": "founder.founder-taste#70",
   "text": "[founder] A split product hero stays clean: plain canvas behind the copy (Lightfield, Attio), the copy block vertically centred and the product doing the visual work. The copy side still needs quiet substance (founder round 3: \"titles subtitle and buttons and that's all??? ... too empty\"): one row of three stats under the CTAs (big display number + one-line soft label, hairline dividers, product specs not invented results) and a minimal texture such as the fine dot grid, cleared behind the type and stopping before the product stage. If the hero needs art, confine it to one stage panel directly behind the product (Folk's grain gradient, Cursor's painting, Granola's collage); never a full-page pattern, contour field or scattered decorative numbers, and never a \"how it works\" step list in the hero.",
   "why": "Founder on the Ferry hero: kept \"the title subtitle buttons nav bar the product nice\", rejected the live sea-chart contour background and the three lit-up steps: \"BG WITH THOSE LIKE THREE STEPS LIKE WTF IS SO STUPID... find better cleaner examples of this and do it better\".",
   "applies": "split and left-aligned product heroes.",
@@ -2279,7 +2307,7 @@
   "origin": "founder"
  },
  {
-  "id": "founder.founder-taste#70",
+  "id": "founder.founder-taste#71",
   "text": "[founder] A product hero must feel alive and show enough of the product: render the dashboard at hero scale (about 0.8 zoom, ~11-12px text) so sidebar, KPIs and a full table read at once, and let the story play inside the product (rows arrive, AI states change, a cursor acts inline, numbers tick) with at most one narrating chip above the window (Lightfield's agent pill). No pop-up cards floating over the copy side; a static 1:1 crop of one table reads \"empty... too simple\". A soft blue stage panel behind the product was \"not bad\".",
   "why": "Founder on Ferry hero round 2: \"the bluish not bad just idk about second card like popping up nor the size of the dashboard... it's just empty and no stuff going on, it's not good... too simple\".",
   "applies": "product heroes.",
@@ -2307,7 +2335,7 @@
   "origin": "founder"
  },
  {
-  "id": "founder.founder-taste#71",
+  "id": "founder.founder-taste#72",
   "text": "[founder] Hero products build in fully and in order, and numbers roll: after the frame lands, every part of the product enters on a top-to-bottom stagger (sidebar items, header, tabs, KPI cards, table rows), and every number rolls up digit by digit in its own slot (kit `RollingNumber`), never a plain fade or a whole-number count. The live story starts only after the build completes.",
   "why": "Founder on Ferry hero round 4: \"product should like load in with stagger and fully load in plus like the numbers to count up professionally by sliding up each number... more professional\".",
   "applies": "product heroes and product visuals in sections.",
@@ -2335,7 +2363,7 @@
   "origin": "founder"
  },
  {
-  "id": "founder.founder-taste#72",
+  "id": "founder.founder-taste#73",
   "text": "[founder] Dark heroes must be premium dark (Linear, Vercel, Raycast grade), never \"dev-tool template\" dark: no neo-brutalist hard offset-block buttons, no muddy coloured glow on graphite, no flat dark product slab that sinks into the canvas, no random pastel data colours, no heavy 700 headline with crushed tracking. The product window in dark needs light: a defined edge (1px top highlight + hairline ring), a surface step above the canvas, and one controlled key light; data colours come from one tuned ramp. The split band layout (headline left, subtitle + CTAs right on the headline baseline, full-width product below) is good and reusable.",
   "why": "Founder on Tracewell (V1 dark hero #1): \"straight up dogshit\"; \"the app and the buttons and everything else about it (except layout, I know that layout is good to use)... those buttons... looking ass and in general the dark design of the SaaS ass as well\".",
   "applies": "every dark hero and dark product UI.",
@@ -2363,7 +2391,7 @@
   "origin": "founder"
  },
  {
-  "id": "founder.founder-taste#73",
+  "id": "founder.founder-taste#74",
   "text": "[founder] Florian Hoeller (@flohoeller; affectui.com, adfects.com) is the top quality bar for product UI, components and light SaaS heroes, alongside Kargul, Rico and Attio. Study his work before building those: calm Inter 500 headlines at modest size (46-52px, about -0.03em), muted #666-#737373 copy, a dark pill built from two stacked gradients with a 1px ring plus a 4% grey ghost twin, card-in-card showcase frames (r24 outer, r18 grey inner stage), believable content in every pixel (real-feeling names, numbers, sources), product states that move (thinking timers, steps landing one by one, morphs into success), and his depth-of-field collage hero (tilted UI fragments at different blur depths around a clean centre).",
   "why": "Founder: \"STUDY THIS GUY FULLY I WANT HIS QUALITY EVERYTHING LIKE HIM... HE'S THE BEST\".",
   "applies": "components, product UI, light SaaS heroes.",
@@ -2391,7 +2419,7 @@
   "origin": "founder"
  },
  {
-  "id": "founder.founder-taste#74",
+  "id": "founder.founder-taste#75",
   "text": "[founder] In a minimal (Flo Hoeller) hero, the composition must be calm and balanced: one clear focal object, symmetric or deliberately weighted supporting pieces, consistent tilt direction and focus logic, lots of white. A scattered collage of UI fragments with mixed tilts, random blur and one big sharp card off to the side reads \"badly designed for this minimalism\". Prefer the product moment as the centred focal object with a few ghosted siblings behind it, or his very faint, evenly distributed collage.",
   "why": "Founder on Tandem hero v1: \"hero is a bit like badly designed idk for this minimalism\"; same round: approval request and product \"kinda cool\".",
   "applies": "light minimal heroes.",
@@ -2419,7 +2447,7 @@
   "origin": "founder"
  },
  {
-  "id": "founder.founder-taste#75",
+  "id": "founder.founder-taste#76",
   "text": "[founder] Product UI icons: use Lucide (stroke 1.5-1.75 at 16px) for app chrome unless the build says otherwise; and place things properly: one left edge for icons, one for labels, counts in one right column, section labels aligned to item text, no orphan icon lines.",
   "why": "Founder on Tandem product: \"product just use lucide icons and just better sidebar and properly placed stuff\".",
   "applies": "product UI.",
@@ -2447,7 +2475,7 @@
   "origin": "founder"
  },
  {
-  "id": "founder.founder-taste#76",
+  "id": "founder.founder-taste#77",
   "text": "[founder] The top of a product sidebar is quiet and clean: one workspace tile (a solid rounded square with a letter or glyph, padded, never a clipped or overlapping mark at the edge), the workspace name, a chevron, a collapse icon; under it at most one light search field (white, hairline ring, kbd hint). The primary \"New\" action is a normal nav row or a ghost button, never a heavy dark pill with a kbd chip crammed into the sidebar.",
   "why": "Founder on Tandem product round 2: \"sidebar top wtf???\" (crop: clipped two-square logo, heavy dark \"New run\" pill with an N kbd, separate search square).",
   "applies": "product UI sidebars.",
@@ -2475,7 +2503,7 @@
   "origin": "founder"
  },
  {
-  "id": "founder.founder-taste#77",
+  "id": "founder.founder-taste#78",
   "text": "[founder] Depth-of-field side cards fall off gently: each depth step loses little. Near siblings stay almost sharp (blur <= 0.6px, opacity >= 0.85); the far ones stay legible (blur <= 1.2px, opacity >= 0.7). The fade comes from the white edge mask and the tilt, not from heavy blur.",
   "why": "Founder on Tandem hero round 2: \"the ones to the sides blur out too fast\" (they were 1.5px/0.7 and 6px/0.32).",
   "applies": "heroes with ghost or collage cards.",
@@ -2503,7 +2531,7 @@
   "origin": "founder"
  },
  {
-  "id": "founder.founder-taste#78",
+  "id": "founder.founder-taste#79",
   "text": "[founder] Side and ghost cards in a hero are real, designed mini-components, never filler: each one shows a different kind of UI (a chart with real bars, a list with avatars, switches, a step log with app tiles), built in the same anatomy as the focal card (Flo's grey tray with a status strip holding a white card), with matched heights per depth pair and coherent sample content from the same story. No empty gradient bars, no lone big number, no plain text lists.",
   "why": "Founder on Tandem hero round 3: \"the hero visuals form the very sides are too noob and in general should be better designed and showcases like not bad now just like do it better\" (crop: far-left \"312h\" card with an empty gradient bar, far-right three-line inbox, near cards as plain text lists).",
   "applies": "heroes with side, ghost or collage cards.",
@@ -2531,7 +2559,7 @@
   "origin": "founder"
  },
  {
-  "id": "founder.founder-taste#79",
+  "id": "founder.founder-taste#80",
   "text": "[founder] Component posts (the X / social format) follow Flo: one component alone on the #fafafa preview canvas, scaled up (~1.5x) inside its grey tray, the tray strip narrating the state, and a real cursor (Lucide MousePointer2) that travels, presses and lets go in sync with the component's own phases. Record the full loop at 4K60 plus an X-preset upload.",
   "why": "Founder: \"get me a high quality of the approval request component just like he does on X and animate it too\".",
   "applies": "component showcases for social.",
@@ -2559,7 +2587,7 @@
   "origin": "founder"
  },
  {
-  "id": "founder.founder-taste#80",
+  "id": "founder.founder-taste#81",
   "text": "[founder] Present logos the way studios do before asking for a verdict: each finalist on white, on the brand colour and on ink, at 32/24/16 px, in the real nav lockup (mark 1.43x cap height, gap 0.28x mark, wordmark >= 20px), with its one-sentence idea; then drop the chosen mark into the live build (nav, favicon, the agent avatar) so it is judged in place, never only on a white artboard.",
   "why": "Founder: \"the logo is the last piece that's still shitty\". The references (logosystem.co, svgl.app) show marks on brand fields and in lockups; a mark judged alone at 256px hides every small-size and pairing failure.",
   "applies": "brand marks.",
@@ -2587,7 +2615,7 @@
   "origin": "founder"
  },
  {
-  "id": "founder.founder-taste#81",
+  "id": "founder.founder-taste#82",
   "text": "[founder] A logo built only from textbook primitives (a disc with slits, two half discs, circles in a row) reads as a road sign or clip art, not a brand, even when it passes every measured check. Marks the founder will accept look drawn: custom curves with controlled tension, a distinctive silhouette, an optical refinement pass, and a presentation on a brand field the way studios show them (logosystem.co level). Passing logo_measure is the floor, never the evidence.",
   "why": "Founder on the Tandem T-cut and Halves finalists (constructed from primitives, 0 fails): \"yeah it's pretty awful, continue on researching how logos are done\".",
   "applies": "brand marks.",
@@ -2615,7 +2643,7 @@
   "origin": "founder"
  },
  {
-  "id": "founder.founder-taste#82",
+  "id": "founder.founder-taste#83",
   "text": "[founder] A hero shows the product, not the whole product. Show one view at a readable size with fewer, larger elements (about 6-10 rows or items, one panel, one moment of AI), not a full multi-panel workspace with a thread, chart, approval, inspector and timeline at once. Unique structure is welcome, but the product density should match what shipped premium heroes show.",
   "why": "Founder on Halyard (Marcel grid + Rico workspace): \"not bad for uniqueness... just yeah nobody shows that much or high product design\", then asked for heroes \"a bit more normal, like ours\".",
   "applies": "product heroes.",
@@ -2643,7 +2671,7 @@
   "origin": "founder"
  },
  {
-  "id": "founder.founder-taste#83",
+  "id": "founder.founder-taste#84",
   "text": "[founder] No \"editorial luxury\" SaaS heroes: a poster-size didone serif (Bodoni-class) over a brown warm-black field, a lamp vignette and a tilted paper document reads as a template for a law firm or a perfume, not a software product. Dark SaaS heroes stay in the polished modern grammar (Kestrel, Linear, Basit-level craft: grotesk display, crisp product UI, controlled light), and a \"brand campaign\" variant still needs a product-grade visual, not a beige sheet of paper.",
   "why": "Founder on Quillwork (hero B: Bodoni Moda 84px, #120e0a warm black, grain + lamp spotlight, a tilted contract sheet with tracked changes): \"if this is what you're designing now - straight up dogshit\". Same round, Weekline (Kestrel composition made dark) was not called out.",
   "applies": "SaaS and AI-SaaS heroes.",
@@ -2671,7 +2699,7 @@
   "origin": "founder"
  },
  {
-  "id": "founder.founder-taste#84",
+  "id": "founder.founder-taste#85",
   "text": "[founder] Deliver heroes as screenshots by default; record videos only when asked.",
   "why": "Founder: \"no videos tho, just screenshots get me\".",
   "applies": "delivery.",
@@ -2699,7 +2727,7 @@
   "origin": "founder"
  },
  {
-  "id": "founder.founder-taste#85",
+  "id": "founder.founder-taste#86",
   "text": "[founder] Hero subtitles run at most 2 lines and break properly: balanced lines (text-wrap: balance or a hand-set break), no orphan word on the last line, the max-width tuned to the copy, not a fixed 440-560px. If the copy needs 3 lines, cut the copy.",
   "why": "Founder on Murmur (subtitle ran 3 lines, last line \"type up.\"): \"for subtitle try to put proper text clipping to other line, max 2 lines\".",
   "applies": "hero and section subtitles.",
@@ -2727,7 +2755,7 @@
   "origin": "founder"
  },
  {
-  "id": "founder.founder-taste#86",
+  "id": "founder.founder-taste#87",
   "text": "[founder] The announcement pill above the headline is allowed but must not be the same template every time: pick from the pill variants in `system/variety/buttons-2/` (or design a custom one for the brand) and never reuse the last build's pill. The stock \"[New] text →\" capsule is the AI tell, not the idea of a pill.",
   "why": "Founder: \"that top card above heading is optional cuz it's often considered AI\", then clarified: \"not off by default, just have more variants and more custom\".",
   "applies": "heroes.",
@@ -2755,7 +2783,7 @@
   "origin": "founder"
  },
  {
-  "id": "founder.founder-taste#87",
+  "id": "founder.founder-taste#88",
   "text": "[founder] Buttons vary by their inner effect, not by their shape: keep the shape fully round (pill) or softly rounded with smooth corners (squircle-like, radius 12-18px at 44-52px tall); vary the clean effect inside (gloss, inner glow, gradient rim, rolling label, arrow tile, light sweep, spotlight, split segment, icon tile). Do not reuse the previous two builds' primary effect. Never go brutalist, square-cut or heavy offset-shadow.",
   "why": "Founder: \"explore more button styles, so that all of our designs wouldn't be repetitive\", then: \"mostly fully round or like smoother corners, but the effects inside of them and stuff, just clean\".",
   "applies": "all builds.",
@@ -2783,7 +2811,7 @@
   "origin": "founder"
  },
  {
-  "id": "founder.founder-taste#88",
+  "id": "founder.founder-taste#89",
   "text": "[founder] When a button, row or card leads with a tile (icon square, app icon, avatar box), the tile's left inset equals its top and bottom insets, exactly. The tile's radius is concentric with the container (outer radius - inset) when there is room; otherwise it stays smaller than the outer radius. Size controls with `box-sizing: border-box` so padding never inflates the height and doubles the vertical inset.",
   "why": "Founder on the Buttons II app-tile button (left inset 6px, top/bottom 12px because padding was added on top of a fixed height): \"WTF IS THE LEFT SPACING FOR THE CARD WITH RECTANGULAR BOX OR ICONS ON LEFT???? IT SHOULD BE SAME AS TOP AND BOTTOM PADDINGS\". The new probe then found the same fault shipped in Halyard's bento lanes (10 left vs 8 top/bottom).",
   "applies": "all buttons, list rows, cards and chips with a leading tile.",
@@ -2811,7 +2839,7 @@
   "origin": "founder"
  },
  {
-  "id": "founder.founder-taste#89",
+  "id": "founder.founder-taste#90",
   "text": "[founder] Every rounded box uses Apple continuous corners (squircles): cards, windows, panels, inputs, menus, tiles, square-ish buttons. Capsules, circles and dots stay true round. Builds import `squircle.css` (in the kit template; copy `system/effects/squircle.css` into coss/Next apps and import it in globals.css), which sets `corner-shape: superellipse(1.32)` where supported and keeps the old border-radius elsewhere; author radii about 1.2x larger than a circular-arc radius so the visible curve stays the same size. Hero objects that must be squircle in every browser (app icons, device frames, the product window) use the SVG path from `squircle.ts`.",
   "why": "Founder: \"could we create designs with apple soothing squircles always??? cuz like the way it makes everything look more premium\".",
   "applies": "all builds.",
@@ -2839,7 +2867,7 @@
   "origin": "founder"
  },
  {
-  "id": "founder.founder-taste#90",
+  "id": "founder.founder-taste#91",
   "text": "[founder] Borders are learned, not defaulted: 1px rings at ink 6-10% (light) or white 6-12% (dark) drawn as box-shadow rings, one edge treatment per box, nested radius = outer - inset, padding inside < gap between < section gap, no dividers inside a card. Read `knowledge/web/borders-and-nesting.md` (BN-01..12, UI Pedia principles + measured numbers) before building product UI.",
   "why": "Founder: \"have you learned about borders, like the gap between and then what border size to get that professionalism? ... apply in action and understand why from the book UI Pedia\".",
   "applies": "all product UI and components.",
@@ -2867,7 +2895,7 @@
   "origin": "founder"
  },
  {
-  "id": "founder.founder-taste#91",
+  "id": "founder.founder-taste#92",
   "text": "[founder] A divider inside a bordered card runs edge to edge: no transparent 1px border that stops the line 1-2px short of the visible ring.",
   "why": "Founder, 2026-10-12, Kaching Email card: \"the bottom border of that not full width like 2px spacing from sides wtf\".",
   "applies": "product UI cards.",
@@ -2895,7 +2923,7 @@
   "origin": "founder"
  },
  {
-  "id": "founder.founder-taste#92",
+  "id": "founder.founder-taste#93",
   "text": "[founder] A wide visual box is a brief for a wide, cinematic composition: use the full width with a left-to-right story built from real product UI fragments and real brand marks (the client's logo, real app icons, real assistant marks). Never a small centred node-and-line diagram floating in a big empty box. Before building any non-trivial visual, research 8+ real references and show 2-3 concept stills for a pick before animating.",
   "why": "Founder, 2026-10-12, Kaching MCP \"Connect once. Ask away.\" v1 (busy node diagram, dither blob instead of the logo): \"looks a bit ugly... we have a logo bro... just not busy, just simple and quality... not AI shit\". v2 (calm centred column in a wide box): \"this visual is super shit bro... we have a long visual for a reason to have something cooler, way smoother and just better in all ways... did you use larpo engine or find any examples online?\".",
   "applies": "marketing visuals and section art.",
@@ -2923,7 +2951,7 @@
   "origin": "founder"
  },
  {
-  "id": "founder.founder-taste#93",
+  "id": "founder.founder-taste#94",
   "text": "[founder] Busy is a defect: at most one moving element at a time in a looping section visual, no box-in-box-in-box, no redundant labels, and app/brand colour only on the brand's own marks and data.",
   "why": "Founder, 2026-10-12, on the Kaching MCP connection v1: \"in general just not busy just simple and quality and using our styles colors and ideology not to be AI shit\".",
   "applies": "section visuals.",
@@ -2951,7 +2979,7 @@
   "origin": "founder"
  },
  {
-  "id": "founder.founder-taste#94",
+  "id": "founder.founder-taste#95",
   "text": "[founder] Product UI must read clean: one accent at most (ink is the default accent), colour only where it carries meaning (late = red, needs action = one warm dot), monochrome vendor logos and neutral monogram tiles, avatars on a neutral ground, and no more than one surface step (page + cards, or sidebar + page, never canvas + panel + cards). Separate with space before edges: count the ringed boxes in the fold and cut every ring that a gap could replace (checkboxes appear on hover, row actions are ghost, keycaps only on the search field).",
   "why": "Founder on Settle v1 (Kargul-style dense AP dashboard, 0 check fails): \"with those colors and layouts it's looking a bit dirty you know... I'm not a fan of this style... I think you could do better and cleaner\". Measured in that fold: 5 accent hue families plus coloured logos, faces and monograms, 55 ringed boxes, 3 surface layers on a warm grey canvas.",
   "applies": "product UI, dashboards, app screens in heroes.",
@@ -2979,7 +3007,7 @@
   "origin": "founder"
  },
  {
-  "id": "founder.founder-taste#95",
+  "id": "founder.founder-taste#96",
   "text": "[founder] Product frames sit straight-on at rest: no perspective tilt (rotateX/rotateY) on a laptop, browser or app window in the hero. A tilt may only be used as an entrance that settles to 0°. Dragged or floating objects inside the product tilt at most 1-2°.",
   "why": "Founder on Perch v1 (MacBook display at rotateX 15°, sides slanting inward ~45px across the fold): \"the visual representation is a bit tilted and off bro wtf fix that\".",
   "applies": "all product heroes; overrides the variety picker's `tilted-3d` layout (read it as \"3D entrance, flat rest\").",
@@ -3007,7 +3035,7 @@
   "origin": "founder"
  },
  {
-  "id": "founder.founder-taste#96",
+  "id": "founder.founder-taste#97",
   "text": "[founder] Interaction moments inside a product visual (drag, drop, select, hover) are drawn in the platform's native grammar and polished to the same level as the visual itself: the drag image is the real item (a thumbnail of the actual content, opaque, soft lift shadow, a small copy badge, the cursor gripping its lower edge), the source slot dims, and the target shows a native indicator (an insertion line between paragraphs, a highlighted row), never a dashed placeholder box with \"Drop here\" text or a dark UI card dragged across a light app. Windows the moment lands in are fully visible and carry real content, not half-hidden under another layer.",
   "why": "Founder on Perch v1 (a dark shelf card with a big green badge dragged into a pink dashed \"Drop to insert image\" box in a near-empty, half-covered window): \"where in the visual the mouse drags sth box is stupidly designed as well as what's going on in the visual, that should be more polished as the visual itself\".",
   "applies": "product heroes and product visuals with a demonstrated action.",
@@ -3035,7 +3063,7 @@
   "origin": "founder"
  },
  {
-  "id": "founder.founder-taste#97",
+  "id": "founder.founder-taste#98",
   "text": "[founder] Give the hero headline room before anything else: when the fold is tight, drop the announcement pill first, then tighten the product's position; never squeeze the title. The subtitle is set by hand into two phrase-lines (break at a phrase boundary, each line 32-45 characters, near-equal length), and it is short: cut words before letting it wrap.",
   "why": "Founder on Perch round 2: \"a bit too tight the title and stuff, if stuff doesn't fit then no top bar, and the subtitle looks badly formatted and a bit too long. I'm trying to get that nice clipping to the other line as I've taught you\".",
   "applies": "heroes.",
@@ -3063,7 +3091,7 @@
   "origin": "founder"
  },
  {
-  "id": "founder.founder-taste#98",
+  "id": "founder.founder-taste#99",
   "text": "[founder] Product visuals use real images: actual screenshots (our own builds are fair game), photos with clear rights, real link previews; never grey bars standing in for an image. When no rights-cleared photo exists, ask the founder before downloading or generating (credits).",
   "why": "Founder on Perch round 2: \"use real images or something in the visual\".",
   "applies": "product heroes, mockups, bento visuals.",
@@ -3091,7 +3119,7 @@
   "origin": "founder"
  },
  {
-  "id": "founder.founder-taste#99",
+  "id": "founder.founder-taste#100",
   "text": "[founder] Deliver hero rounds as choices: at least 3 layouts and 4-5 display fonts on one switchable build (`?layout=`, `?font=`), plus a labelled contact sheet, so the founder picks instead of reacting to one take.",
   "why": "Founder on Perch round 2: \"provide more font variants and layout runs so I could choose which is best\".",
   "applies": "hero and landing deliveries.",
@@ -3119,7 +3147,7 @@
   "origin": "founder"
  },
  {
-  "id": "founder.founder-taste#100",
+  "id": "founder.founder-taste#101",
   "text": "[founder] A reference image sent for one thing (a logo) changes only that thing. Never restyle the palette, page ground or wallpaper from it unless asked, and never touch an approved look while applying unrelated fixes.",
   "why": "Founder on Perch round 3, where the green palette was taken from his logo reference: \"nouuu not green bro, the other design was better and all you did now is ass\". Round 2 (Apple-light #f5f5f7 page, warm orange wallpaper) was restored, keeping only the fixes he had asked for.",
   "applies": "every revision round.",
@@ -3147,7 +3175,7 @@
   "origin": "founder"
  },
  {
-  "id": "founder.founder-taste#101",
+  "id": "founder.founder-taste#102",
   "text": "[founder] Premium dark dashboards are neutral, not blue: graphite surfaces (no blue-tinted canvas or periwinkle everywhere); colour is reserved for state, and the polish comes from material (tactile surfaces, inner highlights, soft glows on data) rather than hue. Maps and signature visuals get the same finish as the product: fine dense dots with edge fade, crisp nodes with soft light, chip labels, an animated flow, never a sparse grid of flat dots.",
   "why": "Founder on Kite v1 (blue-black recipe, periwinkle accent, 6px flat dot map): \"not bad, just the map is not polished, plus don't do it so blue please, do the map better and effects better, everything more polished and premium, Marcel / Rico style\".",
   "applies": "dark product UI and dashboards.",
@@ -3175,7 +3203,7 @@
   "origin": "founder"
  },
  {
-  "id": "founder.founder-taste#102",
+  "id": "founder.founder-taste#103",
   "text": "[founder] Dashboard and hero load-ins settle in about 2.5 seconds: not 4 (\"faster\"), not 1.8 (\"too fast and not smooth\"). One expo-out curve (0.16, 1, 0.3, 1) everywhere, durations 0.6-1.2s that overlap, staggers 35-60ms, glides instead of bouncy springs, no blur on large surfaces. Heavy setup work (dot maps, geo tests) must never block the main thread at load: test land with a canvas mask, not per-dot polygon tests.",
   "why": "Founder on Kite: v1 load-in (~3.8s) \"FASTER\"; v2 (~1.8s, springs, blur on cards) \"too fast and not smooth\". Measured: ~60k geoContains calls blocked the page for seconds and froze the load-in in a fresh browser.",
   "applies": "every animated product hero and dashboard.",
@@ -3203,7 +3231,7 @@
   "origin": "founder"
  },
  {
-  "id": "founder.founder-taste#103",
+  "id": "founder.founder-taste#104",
   "text": "[founder] Hero backgrounds stay minimal: a faint dot grid fading from the centre, fine grain, hairline rails and rules with small + marks where they cross. No big 3D objects (a rising dot-matrix globe was \"even worse\") and no busy texture. The product must show enough in the fold: frame top at or above ~510px on a 900px fold (64px under the CTAs), so the KPIs and the signature visual are visible.",
   "why": "Founder on the Kite landing: v1 faint dot-map texture: \"we need better bg\"; v2 rotating globe horizon: \"even worse... do something simple, with borders or textures, minimal and cool\"; plus \"show enough of the product itself\".",
   "applies": "SaaS heroes.",
@@ -3231,7 +3259,7 @@
   "origin": "founder"
  },
  {
-  "id": "founder.founder-taste#104",
+  "id": "founder.founder-taste#105",
   "text": "[founder] A landing page for a dark product uses the product's own material, not a generic dark template: the nav as the product's recessed segmented track with a raised active tile, tactile chips and buttons with the product's bevels, a solid near-white headline at 500 (second line softer), one soft overhead beam lighting the product frame, and a tactile bezel that catches that light (gradient, 1px dark ring, bright top edge).",
   "why": "Founder on the Kite landing (minimal grid hero): \"better, but not premium enough for our dashboard-like style\".",
   "applies": "landing pages for dark products.",
@@ -3259,7 +3287,7 @@
   "origin": "founder"
  },
  {
-  "id": "founder.founder-taste#105",
+  "id": "founder.founder-taste#106",
   "text": "[founder] Build exactly the scope asked for. \"Build a cool landing page\" after a hero round means the hero (one 1440x900 fold), not a full multi-section site; add sections only when they are named.",
   "why": "Founder on the Kite landing (full page with bento, steps, CTA, footer): \"just hero bro, not entire web\".",
   "applies": "every brief.",
@@ -3287,7 +3315,7 @@
   "origin": "founder"
  },
  {
-  "id": "founder.founder-taste#106",
+  "id": "founder.founder-taste#107",
   "text": "[founder] Less is more on dark heroes: no glows at all (no overhead beams, halos around the product, light streaks on bezels, glows under buttons), no background texture, no decorative rules. A flat near-black page, the type, two buttons and the product in a plain frame (1px light ring, faint top highlight, dark drop). Polish lives in the type and the product, not in effects.",
   "why": "Founder on the Kite hero with overhead beam, lit bezel, dot grid and rules: \"still not premium, especially the glows and stuff wtf\" then \"less is more\".",
   "applies": "dark SaaS heroes.",
@@ -3315,7 +3343,7 @@
   "origin": "founder"
  },
  {
-  "id": "founder.founder-taste#107",
+  "id": "founder.founder-taste#108",
   "text": "[founder] Between \"too much\" and \"too little\": hero headline about 52px at weight 500 (not 66-80px), no announcement chip by default (it has become our repeated tell), and one quiet structural background: hairline rails/rules with small square marks, diagonal hatching confined to the side gutters, or a fine square grid fading out downward. Structure, not light. Deliver these as switchable variants.",
   "why": "Founder on the bare Kite hero: \"now too little... the title is a bit drastic and big, and that indicator above the title, let's remove it, it's too repetitive in our designs... we need some textures or borders in the bg, or try different layouts\".",
   "applies": "SaaS heroes.",
@@ -3343,7 +3371,7 @@
   "origin": "founder"
  },
  {
-  "id": "founder.founder-taste#108",
+  "id": "founder.founder-taste#109",
   "text": "[founder] Hero titles are short and specific, 3-5 words with an idea in them (\"Latency Has An Address.\"), never a long category description (\"The Edge Network That Tells You Why.\" was \"too shallow and just long\"). Background structure is wide-spaced (120px grid cells, kept around the copy, away from the product), never dense patterns close to the content. The product dissolves into the page at the fold with a short fade + light blur (~150px), never a hard cut and never eating the signature visual.",
   "why": "Founder on the Kite hero variants: \"layout good - copy ass, the title too shallow and just long, and bg a bit stupid and too close, and no bottom blur or something\".",
   "applies": "SaaS heroes.",
@@ -3371,7 +3399,7 @@
   "origin": "founder"
  },
  {
-  "id": "founder.founder-taste#109",
+  "id": "founder.founder-taste#110",
   "text": "[founder] Product flows inside an existing app (Sellify Video Ad Creator, 2026-10-14) use ONE container grammar on every screen: a grey tray (radius 20, 4px inset, ring) with its title strip on the grey (plain 16px secondary icon + title + soft meta + action right; never a black icon tile), white cards inside (radius 16, 1px ink-alpha ring, no shadow), secondary info and actions on a tray footer strip; fields inside white cards use the app's own grey \"work\" input surface via the component's prop (never white inputs on white, never `!important` overrides); type only from the app's tuned scale (Geist 12/14/18 at 450/500, the app's letter-spacing tokens, no 13px/600 off-scale sizes); video media is 9:16 in galleries and the preview, but list-row thumbnails are square crops (a narrow 9:16 sliver reads as a capsule); status is an outlined chip with a coloured dot, never a coloured icon tile or check badge.",
   "why": "Founder on rounds 1-4: \"out of place not nice nor consistent\", \"wtf is with aspect ratios\", \"those little black icon boxes don't look good enough nor geist... configured good enough\", \"white bg then gray input box... like we have in our design language\", \"entire flow, containers everything properly consistently built\". Reference: affectUI blocks (knowledge/benchmarks/flohoeller/affectui-blocks-*).",
   "applies": "product UI built inside a client app.",
@@ -3399,7 +3427,7 @@
   "origin": "founder"
  },
  {
-  "id": "founder.founder-taste#110",
+  "id": "founder.founder-taste#111",
   "text": "[founder] When a hero keeps missing, stop iterating blind: pick a measured reference (knowledge/benchmarks/dark/*.measure.json + fold png) and replicate its grammar exactly (positions, type tuple, nav, frame), then swap in our content and judge with `tools/compare.mjs` side by side. For dark product heroes the default reference is Linear: 73px nav + full-width 8% hairline, 1280 container, left-aligned 64/64 Inter 510 -1.4px #f7f8f8 headline at y=277, one muted subtitle line at y=445 with a quiet \"New → link\" right, no hero buttons, product frame #0f1011 + 8% hairline r12 at y=530 bleeding off the fold.",
   "why": "Founder after six Kite hero rounds (glows, globe, textures, chips, centred stacks): \"so bad now I have no words bro... find some example online and replicate\".",
   "applies": "heroes after two rejected rounds.",
@@ -3427,7 +3455,7 @@
   "origin": "founder"
  },
  {
-  "id": "founder.founder-taste#111",
+  "id": "founder.founder-taste#112",
   "text": "[founder] A dark hero needs exactly one strong, tasteful visual moment, or it reads \"flat and empty\"; glows scattered around (\"wtf\") and bare black (\"too little\") both fail. Use Basit's cinematic grammar: an inset framed stage (r28, 14px from the viewport), one rendered light field kept SOFT: a wide, blurred, low-contrast sheen (peak alpha <= ~0.08, blur >= 60px, light grain), neutral silver with a faint warm cast, never a thin bright streak or laser line (founder: \"be careful with bg elements, now it looks cheap and ugly\") whose brightest band crests just behind the product's top edge and falls to black before the copy, a floating glass capsule nav, a centred 60px / 450 / -0.05em two-line headline with the second line at ~50% value, 16px sub-copy close under it, 48px CTAs (white lit from inside + glass), and the product ~72% wide in a glass frame dissolving at the bottom.",
   "why": "Founder after the Linear replica: \"it's flat and empty... what didn't [work] is everything from font styling to layout and colors and effects... you cooked with the dashboard, best thing in the world\". Murmur (same grammar) was accepted.",
   "applies": "dark product heroes.",
@@ -3455,7 +3483,7 @@
   "origin": "founder"
  },
  {
-  "id": "founder.founder-taste#112",
+  "id": "founder.founder-taste#113",
   "text": "[founder] What the founder loves in our light builds (Kestrel) is type, lightness, spacing and professionalism, not effects; carry exactly that into dark. Default dark product hero = Supabase top half + Cursor product stage: full-width hairline nav (links left after the logo, Sign in outline + light CTA right), 1200 container, a calm two-line 56px / 500 / -0.035em Inter headline on the left (second line soft grey), the description in a right column (17/27, ~420px), compact 40px CTAs, then a full-width stage panel (#111113, hairline, faint 18px dot grid) with the product window floating inside it. The founder named Cursor and Supabase as the heroes he likes.",
   "why": "Founder: \"look at the light designs I've loved, the way you did the font, lightness, spacing and professionalism... I like Cursor, Supabase\".",
   "applies": "dark SaaS heroes.",
@@ -3483,7 +3511,7 @@
   "origin": "founder"
  },
  {
-  "id": "founder.founder-taste#113",
+  "id": "founder.founder-taste#114",
   "text": "[founder] Dark hero type and controls, built properly: the headline is one colour (no grey second line), bold and tight (Inter 600, 60px, -0.04em, line-height 1.04, two short balanced lines); the subtitle is a real block (18/28, #a1a1a6, two hand-set lines under the headline); the hero buttons reuse the product's own button construction (white bevelled pill: #fff->#dedee0 gradient, 1px dark ring, inset white top; dark tactile pill), the same in the nav at 34px. Use the logo the founder supplies, traced to SVG, as mark + wordmark.",
   "why": "Founder: \"your title font weight and letter spacing is so bad... it should be bolder and better built and probably one colour... subtitle properly built too, then proper buttons to match the design... make this [logo] into svg and use it better... no light mode, just dark\".",
   "applies": "dark SaaS heroes.",
@@ -3511,7 +3539,7 @@
   "origin": "founder"
  },
  {
-  "id": "founder.founder-taste#114",
+  "id": "founder.founder-taste#115",
   "text": "[founder] Big Inter must be the display cut: import `@fontsource-variable/inter/opsz.css` (never plain `@fontsource-variable/inter`, which has no optical-size axis), set `font-optical-sizing: auto` and `font-feature-settings: \"cv11\",\"ss01\"`, and use Kestrel's headline tuple (68-72px / 550 / -0.045em / 1.04). One family across the hero and the product inside it; never Inter outside and another grotesk inside the frame.",
   "why": "Founder on Kite with plain Inter 600 (text cut at 64px) and Mona Sans inside the dashboard: \"the title font still ass bro, and font usage and stuff just wtf\". Kestrel, the loved build, used the opsz import.",
   "applies": "every build using Inter for display.",
@@ -3539,7 +3567,7 @@
   "origin": "founder"
  },
  {
-  "id": "founder.founder-taste#115",
+  "id": "founder.founder-taste#116",
   "text": "[founder] A hero background can borrow the product's own design elements (Kite: the dashboard's dot-matrix map, white nodes with soft light, chip labels, hairline routes), clearly visible (dots up to ~50% white, not a whisper: founder rejected a 40% calmer pass as \"too minimal and stupid\"), set low so it wraps around the copy, between the rails, cleared behind the copy by a mask and fading before the product; labels never touch the headline, subtitle or CTAs. The subtitle is two hand-set balanced lines (~600px measure), never one 1000px line.",
   "why": "Founder on the Kite hero: \"the subtitle now wtf\" (one long line) and \"the background yes better, just maybe we could use some design elements as the dashboard did?\".",
   "applies": "product heroes.",
@@ -3567,7 +3595,7 @@
   "origin": "founder"
  },
  {
-  "id": "founder.founder-taste#116",
+  "id": "founder.founder-taste#117",
   "text": "[founder] Hero buttons are the product's own buttons scaled up, kept simple: full pills (rounded-full) like the dashboard's Deploy (white #fff->#dcdcde, 1px dark ring, inset white top) and its dark tactile pill; no arrow tiles, no extra bevel stacks, 44px.",
   "why": "Founder on Kite's polished buttons (radius 14, arrow tile, layered bevel): \"the buttons still a bit more rounded or pills like the dashboard, and just simpler\".",
   "applies": "heroes with product UI.",
@@ -3595,7 +3623,7 @@
   "origin": "founder"
  },
  {
-  "id": "founder.founder-taste#117",
+  "id": "founder.founder-taste#118",
   "text": "[founder] When the founder says a past version \"had it right\", restore that exact styling and change only what he named (here: position). For the Kite background map that is the soft version: dots 0.10 + heat 0.34 (max 0.5), r 0.95, a long soft cut-out around the copy (radial 40% x 44%, transparent 64% -> black 100%), bottom fade from 78%, no comets. Nav for a dark product hero: plain text links right after the logo (15px / 500 / grey, 28px gaps), no track or button styling; logo mark 26px + 23px wordmark; nav CTA a small 36px pill.",
   "why": "Founder on the crisp map pass: \"too visible and too sharp of the blur around the title, you had it right in this [screenshot], just bad positions... nav simpler, not buttons, just text, to the right of the logo... the Kite name needs to be a bit bigger... nav Start deploying too big\".",
   "applies": "Kite and similar dark heroes.",
@@ -3623,7 +3651,7 @@
   "origin": "founder"
  },
  {
-  "id": "founder.founder-taste#118",
+  "id": "founder.founder-taste#119",
   "text": "[founder] Background product elements stay monochrome: no red state, pulses or extra chips in the hero backdrop (the story colour belongs inside the product); when the backdrop needs more presence, make the map bigger, not busier. Keep labels inside the rails.",
   "why": "Founder on Kite's livelier map (red sin1, pulse, six chips, comets): \"even worse now, no red pills, just white... make map bigger\".",
   "applies": "hero backgrounds.",
@@ -3651,7 +3679,7 @@
   "origin": "founder"
  },
  {
-  "id": "founder.founder-taste#119",
+  "id": "founder.founder-taste#120",
   "text": "[founder] Never stack a 1px outer ring and a 1px inset top highlight (or an inner ring) on the same dark box: at 1-2x they read as a double top border with a dark gap. Dark surfaces get ONE light ring (white 7-10%) plus soft drop shadows; tactile depth comes from the fill gradient, not extra edge lines (BN-04 enforced). Backdrop blur only works if the blurred element is not inside a masked/filtered layer: put glass chips on their own layer above the masked art.",
   "why": "Founder on Kite's map chips (crop): \"no bg blur on them, plus wtf is with double top border and gap between it... saw it on dashboard too\".",
   "applies": "every dark component.",
@@ -3679,7 +3707,7 @@
   "origin": "founder"
  },
  {
-  "id": "founder.founder-taste#120",
+  "id": "founder.founder-taste#121",
   "text": "[founder] Inside an existing client app, every new screen (a new step, a new feature such as avatars) is built from that app's established component kit, never from a fresh stylesheet. For Sellify that kit is the Video Ad Creator studio: `StudioPanel` (grey tray, title strip, white card, footer strip), `StudioStatus`, the step tray, `.gallery` / `.tile9` / `.libraryCard` with 3:4 or 9:16 media, the segmented control, list rows, the sticky footer bar and the owner components (Button system sizes, Input/Textarea density default, Select/Popover/Dialog appearance system). A screen that invents its own tray, card, badge, step strip or choice tile reads as a different product even when each part is tidy.",
   "why": "Founder on the ENG-2105 guided set + avatars pass (own CSS module, 13px/600 type, filled badges, padded section boxes, bordered choice tiles): \"what you designed right now is super super bad and incosistent and jsut the ugliest sheeet in the world... do it in our new after effects alignui style bro please cmon... just nice and sleek\".",
   "applies": "product UI inside an existing app.",
@@ -3707,7 +3735,7 @@
   "origin": "founder"
  },
  {
-  "id": "founder.founder-taste#121",
+  "id": "founder.founder-taste#122",
   "text": "[founder] Design for content volume, not the happy-path sample: more items wrap into more rows (columns never shrink below ~200px and buttons never shrink or clip); names and meta cut off with an ellipsis (or clamp to 2 lines) and keep a title tooltip; long lists, option menus and popovers get a max-height (about 60dvh) with their own scroll; a row of cards keeps equal heights with actions pinned to the bottom; sticky bars never cover the last row (pad the scroll area by the bar height); test every grid with 1, 4, 12 and 40 items and every label with a 60-character string.",
   "why": "Founder: \"have in mind that there may be a lot of ocntent pieces so make sure they woudl now squich... be prepared for that scroll bars or heights\".",
   "applies": "all product UI.",
@@ -3735,7 +3763,7 @@
   "origin": "founder"
  },
  {
-  "id": "founder.founder-taste#122",
+  "id": "founder.founder-taste#123",
   "text": "[founder] Final checks are part of the job, not optional: before any handoff measure computed styles across the whole flow (every text field, textarea, select trigger and custom picker trigger shares one height and one radius; one edge per box and per overlay; hover, selected and focus follow one language) and fix every mismatch before showing it. The founder should never be the one who finds a mismatched field.",
   "why": "Founder on the Video Ad Creator voice field (2026-10-14): \"WHY THE INPUT FIELD ROUDNESS NOT THE SMAE AS OTHERS... WHY YOU KEEP ON MESSING SUTFF UP AND NOT DOING IFNAL CHECKS\"; same rounds: dropdowns with double borders, an upload dialog not built from our components, and \"especially on hover and selected like visuals ... just ass\".",
   "applies": "every product UI delivery.",
@@ -3763,7 +3791,7 @@
   "origin": "founder"
  },
  {
-  "id": "founder.founder-taste#123",
+  "id": "founder.founder-taste#124",
   "text": "[founder] In a client app, data and highlight colour is the brand accent, not a new semantic colour: Sellify charts, \"running/active\" markers, survivor or winner call-outs and selected/followed states use the brand orange (`--ds-brand-signal`, soft fills `--ds-brand-signal-soft`), exactly like the app's existing charts (the brand page's launch-trends line). Green stays only for success feedback (saved, copied, approved status badge). Chart marks share the app's softness: bars get rounded caps (about 6px on a ~30px bar), legend swatches are dots, gridlines dashed and quiet. Before shipping a new chart or status, find its nearest sibling in the app and match colour, radius and stroke.",
   "why": "Founder on the Ad Spy brand page Tests chart (green stacked bars with 3px square tops, green dots and green Survivor badges): \"usually our color would be orange yk not green and stuff a bit more rounded cuz that's everywhere else seen with consistency and you fuck it up and all EVERYWHERE check for this cmon each single small detail\".",
   "applies": "charts, status markers and selected states inside an existing app.",
@@ -3791,7 +3819,7 @@
   "origin": "founder"
  },
  {
-  "id": "founder.founder-taste#124",
+  "id": "founder.founder-taste#125",
   "text": "[founder] Sweep the whole diff, not the screen you were asked about: after any feedback, grep every changed file for the same class of drift (off-accent colours, hex values, one-off radii, off-scale sizes and weights, stray shadows) and fix all of them, including ones inherited from older code on the same screen, in the same round. The founder reads one crop as a symptom of a habit.",
   "why": "Same message: \"and all EVERYWHERE check for this cmon each single small detail\".",
   "applies": "every revision round.",
@@ -3819,7 +3847,7 @@
   "origin": "founder"
  },
  {
-  "id": "founder.founder-taste#125",
+  "id": "founder.founder-taste#126",
   "text": "[founder] No dead white space between related things. When one item in a row grows (a redo note opens, an error appears, a video card has an extra row), its siblings must not open empty gaps inside their content: transient inputs open as an overlay or popover on the item itself, equal-height cards keep their content stacked top-down with normal gaps and put the flexible space only above the action row, and two-column modals keep both columns filled or make the short one sticky.",
   "why": "Founder on the avatar review (one open redo note stretched every view in the row), Ad Spy cards (the link floating far under the text) and the ad detail modal (an empty left column): \"at some places there is so much white space to other components that it looks just stupid... cmon and proper spacing\".",
   "applies": "grids, card rows, tiles, modals.",
@@ -3847,7 +3875,7 @@
   "origin": "founder"
  },
  {
-  "id": "founder.founder-taste#126",
+  "id": "founder.founder-taste#127",
   "text": "[founder] Every popup is rebuilt from the app's own dialog grammar, never shipped as an ad-hoc layout: header (title + one-line description), plain stacked fields (label 14/500, 8px to the control, 16px between groups), lists as option rows like the app's Select menu (hover tint, check on the selected row, own max-height scroll, ellipsis for long names), no boxed grey container inside the dialog, no uppercase section labels, no tinted selected rows, no focus ring visible on open, footer with Cancel (ghost) left of the primary. Test it with long names, many items and empty.",
   "why": "Founder on the Ad Spy \"Save to boards\" dialog (boxed grey board list, uppercase BOARDS, checkboxes with an orange-tinted row, orange focus ring on open, cramped tags, overflow with long names): \"found a popup which I don't even want to talk about how bad it is and needs full redesign using our components, design language and all\".",
   "applies": "dialogs, popovers, sheets.",
@@ -3875,7 +3903,7 @@
   "origin": "founder"
  },
  {
-  "id": "founder.founder-taste#127",
+  "id": "founder.founder-taste#128",
   "text": "[founder] Product showcase frames for video: the product sits on a near-black stage (#0C0C0D) with the same gap on the left, top and bottom (about 56px at 1220x900, 150px at 4K), the product's full height visible and only the right edge cropped (about 90% shown); generous corner radius (~22px), a 1px alpha ring and a soft low shadow (no heavy drop). State gaps in output pixels when talking 4K: 192px at 4K is 72 CSS px, not 192.",
   "why": "Founder on the Kite showcase (2026-10-15): \"why is 192px so huge\", \"why the bottom is not shown\", \"wtf is left gap not the same as from top and bottom\", \"shadows a bit too strong\", then \"yess, this is correct... gaps a bit smaller... show a bit more of the right side\", bg \"use 0C0C0D\".",
   "applies": "product showcase stills and load-in videos.",
@@ -3903,7 +3931,7 @@
   "origin": "founder"
  },
  {
-  "id": "founder.founder-taste#128",
+  "id": "founder.founder-taste#129",
   "text": "[founder] Showcase load-ins move as one slow wave, not a sequence: every component rises together (start offsets ~80ms, each settling over ~1.6s on expo-out, ~28px travel), the signature visual resolves inside its card while it rises (Kite: the dot map dithers in pixel by pixel, a left-to-right sweep with per-dot jitter and 3-step opacity), and the payoff state (alert, flare, tooltip) lands as the wave settles (~1.6-2s), never after a wait. No light bars or scan flashes across the product; no single component appearing alone first.",
   "why": "Founder on Kite showcase rounds: map-first order \"not smooth nor normal... everything similarly same time\", the scan beam was a \"flash slide\", the fast wave \"happens too fast and not premium\", \"you must wait too long for notifications to appear\"; the slow wave + pixel map was \"amazing\".",
   "applies": "product load-in animations for showcase videos and heroes.",

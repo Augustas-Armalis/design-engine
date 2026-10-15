@@ -70,3 +70,7 @@ p { text-wrap: pretty; }
 .caret { animation: caret 1s steps(1) infinite; }
 @keyframes caret { 50% { opacity: 0; } }
 @media (prefers-reduced-motion: reduce) { .caret { animation: none; } }
+
+.shimmer { background: linear-gradient(90deg, #5d6168 30%, #b9bcff 50%, #5d6168 70%) 0 0 / 220% 100%; -webkit-background-clip: text; background-clip: text; color: transparent; animation: shimmer 2.2s linear infinite; }
+@keyframes shimmer { to { background-position: -220% 0; } }
+@media (prefers-reduced-motion: reduce) { .shimmer { animation: none; color: #5d6168; } }
