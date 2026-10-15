@@ -4,8 +4,32 @@
     {
       "name": "kite",
       "runtimeExecutable": "npm",
-      "runtimeArgs": ["--prefix", "work/kite/app", "run", "dev", "--", "--port", "4361", "--strictPort"],
+      "runtimeArgs": [
+        "--prefix",
+        "work/kite/app",
+        "run",
+        "dev",
+        "--",
+        "--port",
+        "4361",
+        "--strictPort"
+      ],
       "port": 4361
+    },
+    {
+      "name": "quorum",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "--prefix",
+        "work/quorum/app",
+        "run",
+        "dev",
+        "--",
+        "--port",
+        "4370",
+        "--strictPort"
+      ],
+      "port": 4370
     }
   ]
 }
