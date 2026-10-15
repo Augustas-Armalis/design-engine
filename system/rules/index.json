@@ -3904,6 +3904,34 @@
  },
  {
   "id": "founder.founder-taste#128",
+  "text": "[founder] Overlays (dialogs, popovers, menus, selects, sheets, toasts) have exactly one edge and a clean shadow: the edge lives in one place (a 1px ring at ~8% ink inside the overlay shadow token, border transparent), the shadow is tight (about 0 2px 4px -1px at 6% plus 0 12px 28px -8px at 14%), never a visible border plus a ring and never a wide 50px haze. Fix it in the shared owner components and the token, not per screen. Nothing inside an overlay is cut off: max-height calc(100dvh - 32px) with one inner scroll area. Nesting alternates surfaces: a box inside a white overlay is grey (work surface) and fields inside that grey box are white; fields directly on the white overlay keep the app field fill.",
+  "why": "Founder on the Ad Spy detail modal and follow popover: \"still with popups stuff cut off... the boxes are white bg, they should be gray and input fields on gray to be white... all popups or popovers feature ugly double border and just not good styled shadow... you didn't go through everything and fix stuff\".",
+  "applies": "every overlay in an app.",
+  "check": "for each overlay: computed border is 0 or transparent while box-shadow carries the ring; bottom edge of content visible at 900px tall; nested box fill differs from its parent and from its fields.",
+  "checkable": true,
+  "source": "founder, Sellify, 2026-10-15",
+  "file": "founder/founder-taste.md",
+  "section": "5. Exceptions & judgement calls",
+  "tags": [
+   "founder",
+   "taste",
+   "hero",
+   "nav",
+   "typography",
+   "copy",
+   "icons",
+   "logo",
+   "layout",
+   "product-card",
+   "background",
+   "buttons",
+   "quality-bar"
+  ],
+  "kind": "source",
+  "origin": "founder"
+ },
+ {
+  "id": "founder.founder-taste#129",
   "text": "[founder] Product showcase frames for video: the product sits on a near-black stage (#0C0C0D) with the same gap on the left, top and bottom (about 56px at 1220x900, 150px at 4K), the product's full height visible and only the right edge cropped (about 90% shown); generous corner radius (~22px), a 1px alpha ring and a soft low shadow (no heavy drop). State gaps in output pixels when talking 4K: 192px at 4K is 72 CSS px, not 192.",
   "why": "Founder on the Kite showcase (2026-10-15): \"why is 192px so huge\", \"why the bottom is not shown\", \"wtf is left gap not the same as from top and bottom\", \"shadows a bit too strong\", then \"yess, this is correct... gaps a bit smaller... show a bit more of the right side\", bg \"use 0C0C0D\".",
   "applies": "product showcase stills and load-in videos.",
@@ -3931,7 +3959,7 @@
   "origin": "founder"
  },
  {
-  "id": "founder.founder-taste#129",
+  "id": "founder.founder-taste#130",
   "text": "[founder] Showcase load-ins move as one slow wave, not a sequence: every component rises together (start offsets ~80ms, each settling over ~1.6s on expo-out, ~28px travel), the signature visual resolves inside its card while it rises (Kite: the dot map dithers in pixel by pixel, a left-to-right sweep with per-dot jitter and 3-step opacity), and the payoff state (alert, flare, tooltip) lands as the wave settles (~1.6-2s), never after a wait. No light bars or scan flashes across the product; no single component appearing alone first.",
   "why": "Founder on Kite showcase rounds: map-first order \"not smooth nor normal... everything similarly same time\", the scan beam was a \"flash slide\", the fast wave \"happens too fast and not premium\", \"you must wait too long for notifications to appear\"; the slow wave + pixel map was \"amazing\".",
   "applies": "product load-in animations for showcase videos and heroes.",
