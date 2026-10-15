@@ -53,6 +53,7 @@ Two jobs, one brain: (1) **design** client websites and product UI from a brief,
 
 1. **Understand.** Restate the brief in one line: product, audience, the one action, the proof the visitor needs. If any of these is guessable-wrong, ask one sharp question; otherwise state your assumption.
 2. **Load context.** `ledger/entries/` (last 8, all rejects). Then select rules: `.venv/bin/python tools/select_rules.py --name <name> --type <hero|landing|pricing|funnel|form|section|app-ui> --brief "<one line>"` and read `work/<name>/RULES.md`; trim it to the 20-50 that apply and say which you dropped. Use `build_index.py query <words>` just-in-time while building. Read only what applies.
+   - **Before any hero or landing**, read `knowledge/engine-accepted/quorum/README.md` (light SaaS recipe + less-is-more ledger) and `knowledge/web/hero-craft-study-2026-10.md` (51 measured heroes: gaps 17/32/96, about 78% empty fold, 5 elements default / 7 max, 46px buttons, 56/500 headline). Run the 25-minute pre-brief routine in `knowledge/web/inspiration-and-tools.md` (sources in `system/inspiration-sources.json`). Pick libraries from `knowledge/web/libraries-catalogue.md` / `system/libraries.json` (pinned versions, licence traps), never ad hoc. `knowledge/web/craft-articles-2026-10.md` holds the article rules; founder-taste wins every conflict.
 3. **Write `work/<name>/DIRECTION.md`** before any code:
    - hero class (product proof | brand campaign | editorial | interactive) and why
    - the concept in one sentence: what world is this product in?

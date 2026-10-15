@@ -8,7 +8,7 @@ Founder verdict: "ok this is now perfected nicely to look... see how clean and p
 | Part | Value |
 |---|---|
 | Canvas | 1440x900, page `#fff`, Inter Variable with opsz, `cv11` `ss01` |
-| Nav | 88px tall, inset 64px. Wordmark left; 5 plain text links 14/500 #5d6168, 32px apart, starting 48px after the logo (no pills, no dots). Right: raised white "Sign in" and ink "Start free", 40px tall, r11 |
+| Nav | 88px tall, inset 64px. Wordmark left; 5 plain text links 14/500 #5d6168, 32px apart, starting 48px after the logo (no pills, no dots). Right: text links only. "Sign in" grey and "Start free →" ink with a draw-in underline, so they never repeat the hero buttons |
 
 **Copy column (`<main>`, x 64, w 470, top 207)**
 | Part | Value |
@@ -22,8 +22,8 @@ Founder verdict: "ok this is now perfected nicely to look... see how clean and p
 | Part | Value |
 |---|---|
 | Field | Paper `GrainGradient`, `corners`, colours `#aeb4ff #d4d7ff #f3e9ff #ffe9dc` on `#eef0fb`, softness .85, intensity .22, **noise 0**, layer blurred 26px at inset -40 (smooth, no texture) |
-| Agent bar | One white/90 bar, 44px, r12, at stage (44, 40). Indigo sparkle tile; the message cycles every 2.6s |
-| App window | At stage (44, 96), 900x760, r14, ring plus a soft drop. Masked to fade out over the bottom (#000 74% to transparent 96%) and the right (84% to 100%) |
+| Agent bar | Removed in the final version (founder asked). Earlier: one white/90 bar, 44px, r12, at stage (44, 40), message cycling every 2.6s. Still exported as `AgentStack` |
+| App window | At stage (44, 44), the same inset on top and left, 900x812, r14, ring plus a soft drop. Masked to fade out over the bottom (#000 74% to transparent 96%) and the right (84% to 100%) |
 | Progressive blur | Over the dissolving band only: 140px tall, three stacked backdrop blurs (2/4/8px) |
 
 **App contents (Kargul detail level)**
@@ -66,7 +66,7 @@ Founder verdict: "ok this is now perfected nicely to look... see how clean and p
 | v6.6 | Smooth gradient, shorter blur | "perfected" | Done |
 
 **Less is more, operationally:**
-- **Element budget:** the fold holds four things. Nav, copy (h1 + subtitle + CTAs), one composer, and one product stage with one status bar.
+- **Element budget:** the fold holds four things. Nav, copy (h1 + subtitle + CTAs), one composer, and one product stage. The status bar was cut too in the end.
 - **Remove first:** cut accessories first (avatar rows, stacks, popovers, bullets, dots).
 - **Clarity before decoration:** keep anything that explains the product, and keep anything that proves it (sample data, sources, the selected row).
 - **Every accessory sits at about 20% intensity:** hairline gradient edges at alpha .2, shadows at alpha .14-.18, muted text two steps lighter than body.
