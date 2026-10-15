@@ -265,6 +265,14 @@ Every rule here is a direct founder verdict on real output. It outranks books, w
 - **RULE** [founder] Line art must read as one coherent object. Use a ribbon of parallel hairlines (one centre curve, a width envelope, a twist) with 3D shading (strand alpha follows sin(twist), about 0.06-0.42), plus a fainter echo sheet behind. Never a tangle of independent random-phase strands; that reads as a scribble. Keep nav links plain: no coloured dots beside them.
   **Why** Founder on Quorum v4 (a ribbon of 72 random-phase strands, a nav with tag-colour dots): "cool idea... ass visual and execution... no dots nearby the nav bar".
   **Applies to** generative line art and nav links. **Check** strands never cross outside the twist points; one silhouette is readable at thumbnail size; nav links have no decorative markers. **Source** founder, Quorum v4, 2026-10-15
+- **RULE** [founder] The hero must say what the product is in one glance. If the visual needs explaining (abstract ribbons, sound landscapes, metaphors), it fails. The default for "clean SaaS" is the Lightfield split:
+  - a plain light canvas (#f6f6f7);
+  - copy on the left: Inter display 52/500/-0.04em Title Case h1, a two-line subtitle, an ink button and a grey button at r10;
+  - the real app's core screen on the right, bleeding off the right and bottom edges. For Quorum that's the Insights table: ranked answers with mention strength, tag, sources and status;
+  - one agent bar above the app showing it working;
+  - at most one small "New" link bottom-left.
+  **Why** Founder on Quorum v4.1 (a twisted line-art ribbon through the logo): "the visual ass. like wtf even is this hero??? what it's about.. just design a SaaS product as clean as you can please".
+  **Applies to** SaaS heroes. **Check** a stranger can name the product category from the fold in 3 seconds; the visual is product UI, not illustration. **Source** founder, Quorum v4.1, 2026-10-15
 ## 5. Exceptions & judgement calls
 
 - The split layout (copy left, visual right) was rejected by Larpo when the right side was a decorative dashboard. With a real product world on the right (the payout globe) the founder accepted it.

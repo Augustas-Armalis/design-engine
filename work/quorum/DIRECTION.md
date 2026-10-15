@@ -46,3 +46,9 @@ Founder on v3: "do completely different stuff... clean modern simple, Marcel, Ba
 - **Copy:** the h1 is bottom-left (Inter display 500/84/-0.045em). The subtitle and the r12 ink/white buttons sit on the node's x axis.
 - **Nav:** the dot nav is kept from v2.
 - **History:** `HeroV4.tsx` is current; `Hero.tsx` (v2/v3) is kept as history.
+
+## v5 (current): clean SaaS, product first
+Founder on v4.1: "what even is this hero... what it's about... just design a SaaS product as clean as you can". This is the Lightfield split (`HeroV5.tsx`):
+- **Copy (left):** a 52/500 h1, a two-line subtitle, ink and grey r10 buttons, and a "New: Ask Quorum" link bottom-left.
+- **Product (right):** the Insights app bleeding off the edges. The sidebar has Inbox, Interviews, Highlights, Insights, Tags, Ask Quorum chats and Studies. The table shows insight, mention dashes, tag, tinted-initial sources and status.
+- **Agent bar:** one bar above the app.
