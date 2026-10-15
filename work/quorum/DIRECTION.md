@@ -35,3 +35,6 @@ Founder on v1 (2026-10-15): "identical in style and everything to the other one.
 - **Logo:** a traced Pinterest mark (`brand/ref/SOURCE.txt`, `brand/quorum-mark.svg`).
 - **Research:** `knowledge/web/light-hero-grammars.md`.
 - **Stills:** `shots/quorum-hero-x-2x.png` (2880x1800) and `shots/quorum-hero-x-4k.png` (3840x2400), via `node work/quorum/fold.mjs`.
+
+## v3 (current): v2 with a professional visual
+Founder on v2: "not professional enough, especially the visual and the little three cards; the nav with circles is kinda cool". The art panel is now an engraved sound landscape (`Engraving.tsx`, five audio-envelope ridges hatched in slate on cream). On it sits one straight interview window: a scrubber whose highlight ranges sit at their real timestamps, a playhead in the import highlight, the transcript with marks, and a highlights list. One status bar ("Grouping highlights") floats above. The tilted sheet, flag chips and halftone are gone (`VoiceField.tsx` is kept as v2 evidence). The grain sits under the stage so the product stays pure white.
