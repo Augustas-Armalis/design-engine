@@ -52,3 +52,11 @@ Founder on v4.1: "what even is this hero... what it's about... just design a Saa
 - **Copy (left):** a 52/500 h1, a two-line subtitle, ink and grey r10 buttons, and a "New: Ask Quorum" link bottom-left.
 - **Product (right):** the Insights app bleeding off the edges. The sidebar has Inbox, Interviews, Highlights, Insights, Tags, Ask Quorum chats and Studies. The table shows insight, mention dashes, tag, tinted-initial sources and status.
 - **Agent bar:** one bar above the app.
+
+## v6 (current): v5 executed properly
+Founder on v5: "good idea... too simple and bad executed: buttons, colors, background too empty, layout, the product". `HeroV6.tsx` fixes each point:
+- **Stage:** an inset r24 stage with a Paper `GrainGradient` (corners shape, indigo/lavender/peach on #eef0fb, noise .28).
+- **Product:** the Insights app at Kargul detail; the indigo #5056f0 accent marks selection and the high mention bars.
+- **Peek card:** the quote, its speaker and the clip.
+- **Buttons:** tactile ink and raised white.
+- **Copy column:** three feature rows under the CTAs.

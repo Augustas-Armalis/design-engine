@@ -273,6 +273,14 @@ Every rule here is a direct founder verdict on real output. It outranks books, w
   - at most one small "New" link bottom-left.
   **Why** Founder on Quorum v4.1 (a twisted line-art ribbon through the logo): "the visual ass. like wtf even is this hero??? what it's about.. just design a SaaS product as clean as you can please".
   **Applies to** SaaS heroes. **Check** a stranger can name the product category from the fold in 3 seconds; the visual is product UI, not illustration. **Source** founder, Quorum v4.1, 2026-10-15
+- **RULE** [founder] "Clean" never means bare. A clean SaaS split still needs:
+  - a framed stage behind the product (an inset r24 panel with a rendered grain light field in one hue family, lit from a corner);
+  - the product at Kargul detail density: a white active nav item, counts, a one-card summary strip with hairline cells, column-header icons, a selected row with a checked box, tinted tag chips, tinted-initial avatars, mention bars;
+  - one peek card straddling the stage edge that proves the claim (the source quote and its clip);
+  - tactile buttons (a gradient ink body with a top light and a crisp rim, and a raised white secondary), not flat fills;
+  - quiet substance under the CTAs (three icon-tile feature rows below a hairline).
+  **Why** Founder on Quorum v5 (plain grey canvas, a flat table, flat black/grey buttons): "good idea... just too simple and bad executed from buttons to colors and then bg... too empty... the product itself everything a bit just better done".
+  **Applies to** product-first SaaS heroes. **Check** no flat-filled buttons; the stage has a rendered field; the product shows at least five of the Kargul micro-details; empty canvas under 35% of the copy column. **Source** founder, Quorum v5, 2026-10-15
 ## 5. Exceptions & judgement calls
 
 - The split layout (copy left, visual right) was rejected by Larpo when the right side was a decorative dashboard. With a real product world on the right (the payout globe) the founder accepted it.
