@@ -123,8 +123,6 @@ function AgentStack() {
   }, [])
   return (
     <motion.div className="absolute left-[44px] top-[40px] h-11 w-[420px]" initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: T.bar, duration: 0.7, ease: ease.outQuint }}>
-      <span className="absolute inset-x-6 -top-[14px] h-11 rounded-[12px] bg-white/40 shadow-[0_0_0_1px_rgba(17,18,20,0.05)]" />
-      <span className="absolute inset-x-3 -top-[7px] h-11 rounded-[12px] bg-white/65 shadow-[0_0_0_1px_rgba(17,18,20,0.05)]" />
       <div className="absolute inset-0 overflow-hidden rounded-[12px] bg-white/90 backdrop-blur-md" style={{ boxShadow: '0 0 0 1px rgba(17,18,20,0.06), 0 6px 16px -8px rgba(40,44,120,0.25)' }}>
         <AnimatePresence initial={false}>
           <motion.div key={k} className="absolute inset-0 flex items-center gap-2.5 pl-2.5 pr-3.5 text-[13px]" initial={{ y: 24, opacity: 0 }} animate={{ y: 0, opacity: 1 }} exit={{ y: -24, opacity: 0 }} transition={{ duration: 0.5, ease: ease.outQuint }}>
@@ -134,41 +132,70 @@ function AgentStack() {
           </motion.div>
         </AnimatePresence>
       </div>
+      {/* square tiles: the calls feeding this study, one live */}
+      <div className="absolute left-[432px] top-0 flex gap-2">
+        {['MC', 'JR', 'LS'].map((a, i) => (
+          <motion.span key={a} className="relative grid size-11 place-items-center rounded-[12px] bg-white/90 backdrop-blur-md" style={{ boxShadow: '0 0 0 1px rgba(17,18,20,0.06), 0 6px 16px -8px rgba(40,44,120,0.25)' }}
+            initial={{ opacity: 0, scale: 0.85 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: T.bar + 0.15 + i * 0.08, duration: 0.6, ease: ease.outQuint }}>
+            <Av i={a} s={26} />
+            {i === 0 && <span className="absolute right-[5px] top-[5px] size-2 rounded-full bg-[#2fb174] shadow-[0_0_0_2px_#fff]" />}
+          </motion.span>
+        ))}
+        <motion.span className="grid size-11 place-items-center rounded-[12px] bg-white/60 text-[12px] font-[600] text-[#5d6168] backdrop-blur-md" style={{ boxShadow: '0 0 0 1px rgba(17,18,20,0.06)' }}
+          initial={{ opacity: 0, scale: 0.85 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: T.bar + 0.4, duration: 0.6, ease: ease.outQuint }}>+9</motion.span>
+      </div>
     </motion.div>
   )
 }
 
-/* Ask Quorum prompt: the question types itself in, suggestions underneath (the product's own composer, not bullet points) */
+/* Ask Quorum composer: the question types itself, then the answer streams in with a highlighted finding and citations */
 const Q = 'Why do trials stall in the first week?'
+const A = 'Most teams stall at the CSV import: 9 of 12 hit it before they saw a single report, and 4 gave up.'
 function AskBox() {
   const [n, setN] = useState(0)
-  const done = n >= Q.length
+  const [m, setM] = useState(0)
+  const done = n >= Q.length, answered = m >= A.length
   useEffect(() => {
-    if (matchMedia('(prefers-reduced-motion: reduce)').matches) { setN(Q.length); return }
-    let id = 0
-    const start = window.setTimeout(() => { id = window.setInterval(() => setN((v) => (v >= Q.length ? (window.clearInterval(id), v) : v + 1)), 38) }, (T.feats + 0.6) * 1000)
-    return () => { window.clearTimeout(start); window.clearInterval(id) }
+    if (matchMedia('(prefers-reduced-motion: reduce)').matches) { setN(Q.length); setM(A.length); return }
+    let id = 0, id2 = 0
+    const start = window.setTimeout(() => {
+      id = window.setInterval(() => setN((v) => {
+        if (v >= Q.length) {
+          window.clearInterval(id)
+          window.setTimeout(() => { id2 = window.setInterval(() => setM((w) => (w >= A.length ? (window.clearInterval(id2), w) : w + 2)), 22) }, 450)
+          return v
+        }
+        return v + 1
+      }), 34)
+    }, (T.feats + 0.5) * 1000)
+    return () => { window.clearTimeout(start); window.clearInterval(id); window.clearInterval(id2) }
   }, [])
+  const cut = 'stall at the CSV import'
+  const a0 = A.indexOf(cut), shown = A.slice(0, m)
+  const answer = m <= a0 ? shown : <>{A.slice(0, a0)}<mark className="rounded-[3px] px-[2px] text-inherit" style={{ background: TAG.import.bg }}>{shown.slice(a0, a0 + cut.length)}</mark>{shown.slice(a0 + cut.length)}</>
   return (
-    <div className="w-[440px] rounded-[17px] p-px shadow-[0_1px_2px_rgba(17,18,20,0.05),0_14px_30px_-14px_rgba(30,34,90,0.25)]" style={{ background: 'linear-gradient(140deg, rgba(80,86,240,0.55), rgba(17,18,20,0.09) 38%, rgba(17,18,20,0.09) 70%, rgba(255,160,120,0.45))' }}>
-    <div className="rounded-[16px] bg-white p-1.5">
-      <div className="rounded-[11px] bg-[#fbfbfc] px-3.5 pb-3 pt-3 shadow-[inset_0_0_0_1px_rgba(17,18,20,0.05)]">
-        <div className="flex items-center gap-2 text-[12px] font-[600]"><span className="grid size-5 place-items-center rounded-[6px] text-white" style={{ background: IND }}><Sparkles size={11} /></span>Ask Quorum<span className="ml-auto font-[500] text-[#9a9ea5]">Across 12 interviews</span></div>
-        <div className="mt-3 flex items-center gap-3">
-          <span className="min-h-[24px] flex-1 text-[15px] font-[500] tracking-[-0.01em]">{Q.slice(0, n)}<span className="caret ml-[1px] inline-block h-[17px] w-[1.5px] translate-y-[3px] bg-[#5056f0]" /></span>
-          <span className="b6-ink grid size-8 shrink-0 place-items-center rounded-[9px] text-white"><ArrowUp size={15} strokeWidth={2.2} /></span>
+    <div className="w-[470px] rounded-[19px] p-px shadow-[0_1px_2px_rgba(17,18,20,0.05),0_18px_40px_-18px_rgba(30,34,90,0.3)]" style={{ background: 'linear-gradient(140deg, rgba(80,86,240,0.6), rgba(17,18,20,0.09) 36%, rgba(17,18,20,0.09) 68%, rgba(255,160,120,0.5))' }}>
+      <div className="rounded-[18px] bg-white p-2">
+        <div className="rounded-[12px] bg-[#fafafb] px-4 pb-4 pt-3.5 shadow-[inset_0_0_0_1px_rgba(17,18,20,0.05)]">
+          <div className="flex items-center gap-2 text-[12px] font-[600]"><span className="grid size-5 place-items-center rounded-[6px] text-white" style={{ background: IND }}><Sparkles size={11} /></span>Ask Quorum<span className="ml-auto font-[500] text-[#9a9ea5]">Across 12 interviews</span></div>
+          <div className="mt-3 flex items-center gap-3">
+            <span className="min-h-[26px] flex-1 text-[17px] font-[550] tracking-[-0.015em]">{Q.slice(0, n)}{!done && <span className="caret ml-[1px] inline-block h-[18px] w-[1.5px] translate-y-[3px] bg-[#5056f0]" />}</span>
+            <span className="b6-ink grid size-9 shrink-0 place-items-center rounded-[10px] text-white"><ArrowUp size={16} strokeWidth={2.2} /></span>
+          </div>
+        </div>
+        <div className="relative min-h-[112px] px-3 pb-2 pt-3">
+          <motion.div className="absolute inset-x-3 top-3 flex flex-wrap gap-1.5" animate={{ opacity: done ? 0 : 1, y: done ? -6 : 0 }} transition={{ duration: 0.35 }}>
+            {['Top pricing objections', 'What do admins ask for?', 'Compare Q2 vs Q3', 'Why do teams churn?'].map((c) => <span key={c} className="flex h-8 items-center rounded-[9px] bg-[#f3f3f5] px-3 text-[13px] font-[500] text-[#4b4f56]">{c}</span>)}
+          </motion.div>
+          <motion.div initial={{ opacity: 0 }} animate={{ opacity: done ? 1 : 0 }} transition={{ duration: 0.3 }}>
+            <p className="min-h-[46px] text-[14px] leading-[23px] text-[#3d4046]">{answer}{done && !answered && <span className="caret ml-[1px] inline-block h-[15px] w-[1.5px] translate-y-[2px] bg-[#5056f0]" />}</p>
+            <motion.div className="mt-3 flex items-center gap-1.5" animate={{ opacity: answered ? 1 : 0, y: answered ? 0 : 4 }} transition={{ duration: 0.4 }}>
+              {[['MC', '05:18'], ['JR', '12:40'], ['LS', '03:02']].map(([a, t]) => <span key={a} className="flex h-7 items-center gap-1.5 rounded-full bg-[#f3f3f5] pl-0.5 pr-2.5 text-[12px] text-[#4b4f56]"><Av i={a} s={24} /><span className="tnum">{t}</span></span>)}
+              <span className="ml-1 text-[12px] text-[#9a9ea5]">+11 sources</span>
+            </motion.div>
+          </motion.div>
         </div>
       </div>
-      <div className="relative h-9 px-1.5 pt-2">
-        <motion.div className="absolute inset-x-1.5 top-2 flex gap-1.5" animate={{ opacity: done ? 0 : 1, y: done ? -6 : 0 }} transition={{ duration: 0.35 }}>
-          {['Top pricing objections', 'What do admins ask for?', 'Q2 vs Q3'].map((c) => <span key={c} className="flex h-7 items-center rounded-[8px] bg-[#f3f3f5] px-2.5 text-[12px] font-[500] text-[#4b4f56]">{c}</span>)}
-        </motion.div>
-        <motion.div className="absolute inset-x-2.5 top-2 flex h-7 items-center gap-2 text-[12px] text-[#5d6168]" initial={{ opacity: 0, y: 6 }} animate={{ opacity: done ? 1 : 0, y: done ? 0 : 6 }} transition={{ duration: 0.45, delay: done ? 0.2 : 0 }}>
-          <span className="flex -space-x-[3px]">{['MC', 'JR', 'LS', 'AK'].map((a) => <Av key={a} i={a} s={20} />)}</span>
-          <span className="shimmer font-[500]">Answering from 14 quotes in 9 interviews</span>
-        </motion.div>
-      </div>
-    </div>
     </div>
   )
 }
@@ -195,7 +222,7 @@ export default function HeroV6() {
     <MotionConfig reducedMotion="user">
       <div className="relative mx-auto h-[900px] w-[1440px] overflow-hidden bg-white" style={{ color: INK, fontFamily: '"Inter Variable", system-ui, sans-serif', fontOpticalSizing: 'auto', fontFeatureSettings: '"cv11", "ss01"' }}>
         <Nav />
-        <section className="absolute left-[64px] top-[206px] z-20 w-[470px]">
+        <section className="absolute left-[64px] top-[176px] z-20 w-[470px]">
           <h1 className="text-[58px] font-[550] leading-[1.03] tracking-[-0.045em]">
             {['Turn Interviews', 'Into Answers'].map((l, i) => (
               <motion.span key={l} className="block" initial={{ opacity: 0.01, y: 30, filter: 'blur(6px)' }} animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
@@ -207,7 +234,7 @@ export default function HeroV6() {
             <a href="#" className="b6-ink press group flex h-12 items-center gap-2 rounded-[12px] pl-5 pr-4 text-white">Start for free<ArrowRight size={16} strokeWidth={2} className="opacity-80 transition-transform duration-300 group-hover:translate-x-0.5" /></a>
             <a href="#" className="b6-ghost press flex h-12 items-center rounded-[12px] px-5">Book a demo</a>
           </Up>
-          <Up at={T.feats} className="mt-11"><AskBox /></Up>
+          <Up at={T.feats} className="mt-16"><AskBox /></Up>
         </section>
 
         <motion.div className="absolute z-10 overflow-hidden rounded-[24px]" style={{ left: STAGE.x, top: STAGE.y, width: STAGE.w, height: STAGE.h }}
