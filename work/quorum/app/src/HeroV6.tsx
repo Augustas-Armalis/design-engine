@@ -2,17 +2,17 @@
 // product itself, everything better done"). Same product-first split, raised to Basit/Kargul finish: an inset stage with a
 // rendered grain light field (one indigo hue, lit from the top right), the Insights app framed inside it and bleeding out,
 // a peek card with the source quote and clip straddling the stage edge, quiet substance under the CTAs, tactile buttons.
-import type { ReactNode } from 'react'
+import { type ReactNode, useEffect, useState } from 'react'
 import { motion, MotionConfig } from 'motion/react'
 import { GrainGradient } from '@paper-design/shaders-react'
-import { ArrowRight, BarChart3, Check, ChevronsUpDown, Highlighter, Inbox, Lightbulb, Mic, MessageCircle, Play, Search, Sparkles, Tag, Users, Folder, LayoutList, Columns3 } from 'lucide-react'
+import { ArrowRight, ArrowUp, BarChart3, Check, ChevronsUpDown, Highlighter, Inbox, Lightbulb, Mic, MessageCircle, Play, Search, Sparkles, Tag, Users, Folder, LayoutList, Columns3 } from 'lucide-react'
 import { ease } from './motion'
 import { TAG, type TagKey } from './Product'
 import QuorumLogo, { QuorumMark } from './QuorumLogo'
 
 const T = { nav: 0.1, h1: 0.25, sub: 0.55, cta: 0.66, feats: 0.8, stage: 0.2, app: 0.55, rows: 0.95, bar: 1.4, peek: 1.7 }
 const INK = '#111214', SUB = '#5d6168', IND = '#5056f0'
-const STAGE = { x: 572, y: 88, w: 856, h: 800 }
+const STAGE = { x: 572, y: 124, w: 856, h: 820 }
 
 const Up = ({ at, y = 14, className = '', children }: { at: number; y?: number; className?: string; children: ReactNode }) => (
   <motion.div className={className} initial={{ opacity: 0.01, y, filter: 'blur(6px)' }} animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
@@ -35,6 +35,10 @@ const ROWS: [string, number, TagKey | keyof typeof XTAG, string[]][] = [
   ['Slack alerts get muted within a week', 3, 'alerts', ['JR', 'TB']],
   ['Exports need a PDF option for execs', 2, 'delight', ['LS']],
   ['Search misses calls older than 90 days', 2, 'pricing', ['DP']],
+  ['Tag names drift between researchers', 2, 'onboarding', ['AK', 'RW']],
+  ['Mobile app is only used for reviews', 2, 'delight', ['MC']],
+  ['Invoices lack a cost-centre field', 1, 'pricing', ['TB']],
+  ['Calendar sync misses recurring calls', 1, 'alerts', ['JR']],
 ]
 
 function Sidebar() {
@@ -94,7 +98,7 @@ function App() {
           const tg = tagOf(tag), sel = i === 0
           return (
             <motion.div key={title} className={`grid ${cols} h-10 items-center px-5 text-[13px] shadow-[inset_0_-1px_0_#f2f2f4] ${sel ? 'bg-[#f5f5ff]' : ''}`}
-              initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1 - Math.max(0, i - 6) * 0.28, y: 0 }} transition={{ delay: T.rows + i * 0.045, duration: 0.6, ease: ease.outQuint }}>
+              initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: T.rows + i * 0.045, duration: 0.6, ease: ease.outQuint }}>
               {sel ? <span className="grid size-[14px] place-items-center rounded-[4px] text-white" style={{ background: IND }}><Check size={10} strokeWidth={3} /></span> : <span className="size-[14px] rounded-[4px] shadow-[inset_0_0_0_1px_#d6d7db]" />}
               <span className={`truncate pr-4 ${sel ? 'font-[600]' : 'font-[500]'}`}>{title}</span>
               <span className="flex items-center gap-2.5"><span className="h-[6px] w-[60px] overflow-hidden rounded-full bg-[#eeeff2]"><span className="block h-full rounded-full" style={{ width: `${(n / 12) * 100}%`, background: n >= 7 ? IND : '#a9adf7' }} /></span><span className="tnum text-[12px] text-[#5d6168]">{n}/12</span></span>
@@ -111,7 +115,7 @@ function App() {
 const BARS = Array.from({ length: 44 }, (_, i) => 0.25 + 0.75 * Math.abs(Math.sin(i * 0.7) * Math.cos(i * 0.23 + 1)))
 function Peek() {
   return (
-    <motion.div className="absolute z-30 w-[312px] rounded-[16px] bg-white p-4" style={{ left: 548, top: 572, boxShadow: '0 0 0 1px rgba(17,18,20,0.07), 0 2px 4px rgba(17,18,20,0.04), 0 24px 48px -16px rgba(17,18,20,0.24)' }}
+    <motion.div className="absolute z-30 w-[312px] rounded-[16px] bg-white p-4" style={{ left: 548, top: 636, boxShadow: '0 0 0 1px rgba(17,18,20,0.07), 0 2px 4px rgba(17,18,20,0.04), 0 24px 48px -16px rgba(17,18,20,0.24)' }}
       initial={{ opacity: 0, y: 18, scale: 0.97 }} animate={{ opacity: 1, y: 0, scale: 1 }} transition={{ delay: T.peek, duration: 1.0, ease: ease.reveal, opacity: { delay: T.peek, duration: 0.5 } }}>
       <div className="flex items-center gap-2"><span className="inline-flex h-[22px] items-center gap-1.5 rounded-[6px] px-1.5 text-[12px] font-[500]" style={{ background: TAG.import.bg, color: TAG.import.ink }}><span className="size-1.5 rounded-full" style={{ background: TAG.import.dot }} />Import</span><span className="ml-auto text-[11px] text-[#9a9ea5]">Source 1 of 14</span></div>
       <p className="mt-3 text-[14px] font-[500] leading-[21px] tracking-[-0.01em]">“We got stuck on the CSV import for two days. Our columns never matched.”</p>
@@ -122,6 +126,32 @@ function Peek() {
         <span className="tnum text-[11px] text-[#5d6168]">05:18</span>
       </div>
     </motion.div>
+  )
+}
+
+/* Ask Quorum prompt: the question types itself in, suggestions underneath (the product's own composer, not bullet points) */
+const Q = 'Why do trials stall in the first week?'
+function AskBox() {
+  const [n, setN] = useState(0)
+  useEffect(() => {
+    if (matchMedia('(prefers-reduced-motion: reduce)').matches) { setN(Q.length); return }
+    let id = 0
+    const start = window.setTimeout(() => { id = window.setInterval(() => setN((v) => (v >= Q.length ? (window.clearInterval(id), v) : v + 1)), 38) }, (T.feats + 0.6) * 1000)
+    return () => { window.clearTimeout(start); window.clearInterval(id) }
+  }, [])
+  return (
+    <div className="w-[440px] rounded-[16px] bg-white p-1.5 shadow-[0_0_0_1px_rgba(17,18,20,0.08),0_1px_2px_rgba(17,18,20,0.05),0_12px_28px_-14px_rgba(30,34,90,0.22)]">
+      <div className="rounded-[11px] bg-[#fbfbfc] px-3.5 pb-3 pt-3 shadow-[inset_0_0_0_1px_rgba(17,18,20,0.05)]">
+        <div className="flex items-center gap-2 text-[12px] font-[600]"><span className="grid size-5 place-items-center rounded-[6px] text-white" style={{ background: IND }}><Sparkles size={11} /></span>Ask Quorum<span className="ml-auto font-[500] text-[#9a9ea5]">Across 12 interviews</span></div>
+        <div className="mt-3 flex items-center gap-3">
+          <span className="min-h-[24px] flex-1 text-[15px] font-[500] tracking-[-0.01em]">{Q.slice(0, n)}<span className="caret ml-[1px] inline-block h-[17px] w-[1.5px] translate-y-[3px] bg-[#5056f0]" /></span>
+          <span className="b6-ink grid size-8 shrink-0 place-items-center rounded-[9px] text-white"><ArrowUp size={15} strokeWidth={2.2} /></span>
+        </div>
+      </div>
+      <div className="flex gap-1.5 px-1.5 pb-1 pt-2">
+        {['Top pricing objections', 'What do admins ask for?', 'Q2 vs Q3'].map((c) => <span key={c} className="flex h-7 items-center rounded-[8px] bg-[#f3f3f5] px-2.5 text-[12px] font-[500] text-[#4b4f56]">{c}</span>)}
+      </div>
+    </div>
   )
 }
 
@@ -143,12 +173,11 @@ function Nav() {
 }
 
 export default function HeroV6() {
-  const feats: [typeof Mic, string, string][] = [[Mic, 'Records every call', 'Zoom, Meet and Teams, or drop in a file'], [Highlighter, 'Highlights as you listen', 'Every quote keeps its clip and speaker'], [Sparkles, 'Answers with sources', 'Ask across all calls, cite every quote']]
   return (
     <MotionConfig reducedMotion="user">
       <div className="relative mx-auto h-[900px] w-[1440px] overflow-hidden bg-white" style={{ color: INK, fontFamily: '"Inter Variable", system-ui, sans-serif', fontOpticalSizing: 'auto', fontFeatureSettings: '"cv11", "ss01"' }}>
         <Nav />
-        <section className="absolute left-[64px] top-[212px] z-20 w-[470px]">
+        <section className="absolute left-[64px] top-[268px] z-20 w-[470px]">
           <h1 className="text-[58px] font-[550] leading-[1.03] tracking-[-0.045em]">
             {['Turn Interviews', 'Into Answers'].map((l, i) => (
               <motion.span key={l} className="block" initial={{ opacity: 0.01, y: 30, filter: 'blur(6px)' }} animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
@@ -160,14 +189,7 @@ export default function HeroV6() {
             <a href="#" className="b6-ink press group flex h-12 items-center gap-2 rounded-[12px] pl-5 pr-4 text-white">Start for free<ArrowRight size={16} strokeWidth={2} className="opacity-80 transition-transform duration-300 group-hover:translate-x-0.5" /></a>
             <a href="#" className="b6-ghost press flex h-12 items-center rounded-[12px] px-5">Book a demo</a>
           </Up>
-          <Up at={T.feats} className="mt-[72px] w-[440px] space-y-4 border-t border-[#ededf0] pt-6">
-            {feats.map(([Ic, t, d]) => (
-              <div key={t} className="flex items-center gap-3.5">
-                <span className="grid size-9 shrink-0 place-items-center rounded-[10px] bg-white text-[#111214] shadow-[0_0_0_1px_rgba(17,18,20,0.08),0_1px_2px_rgba(17,18,20,0.06)]"><Ic size={16} strokeWidth={1.8} /></span>
-                <span className="leading-tight"><span className="block text-[14px] font-[600]">{t}</span><span className="block text-[13px] text-[#8b8f96]">{d}</span></span>
-              </div>
-            ))}
-          </Up>
+          <Up at={T.feats} className="mt-14"><AskBox /></Up>
         </section>
 
         <motion.div className="absolute z-10 overflow-hidden rounded-[24px]" style={{ left: STAGE.x, top: STAGE.y, width: STAGE.w, height: STAGE.h }}

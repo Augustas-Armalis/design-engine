@@ -278,9 +278,16 @@ Every rule here is a direct founder verdict on real output. It outranks books, w
   - the product at Kargul detail density: a white active nav item, counts, a one-card summary strip with hairline cells, column-header icons, a selected row with a checked box, tinted tag chips, tinted-initial avatars, mention bars;
   - one peek card straddling the stage edge that proves the claim (the source quote and its clip);
   - tactile buttons (a gradient ink body with a top light and a crisp rim, and a raised white secondary), not flat fills;
-  - quiet substance under the CTAs (three icon-tile feature rows below a hairline).
+  - quiet substance under the CTAs: a real product element such as an Ask box (three icon-tile bullet rows were rejected in v6).
   **Why** Founder on Quorum v5 (plain grey canvas, a flat table, flat black/grey buttons): "good idea... just too simple and bad executed from buttons to colors and then bg... too empty... the product itself everything a bit just better done".
   **Applies to** product-first SaaS heroes. **Check** no flat-filled buttons; the stage has a rendered field; the product shows at least five of the Kargul micro-details; empty canvas under 35% of the copy column. **Source** founder, Quorum v5, 2026-10-15
+- **RULE** [founder] On a split hero, line the product stage up with the copy and fill the product to the edge:
+  - the stage's top sits about 40px above the h1's cap line, and the stage bleeds off the bottom;
+  - the copy block is centred against the visible stage;
+  - tables and lists run full to the bleed with no fade-to-white;
+  - fill space under the CTAs with a real product element (an Ask/composer box typing a question, with suggestion chips), never a stack of icon + text bullet points.
+  **Why** Founder on Quorum v6 ("ouuu this is cool"): "the right box is a bit up and then the left side looks strange... the bottom right corner just white... need the full list in the dashboard... those 3 points below... do some sort of visual or box but not like that".
+  **Applies to** split heroes. **Check** no rows fade before the viewport edge; nothing under the CTAs is a bullet list; the stage top is within 60px of the h1 top. **Source** founder, Quorum v6, 2026-10-15
 ## 5. Exceptions & judgement calls
 
 - The split layout (copy left, visual right) was rejected by Larpo when the right side was a decorative dashboard. With a real product world on the right (the payout globe) the founder accepted it.
