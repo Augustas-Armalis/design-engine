@@ -199,9 +199,9 @@ function Nav() {
           {['Product', 'Method', 'Pricing', 'Docs', 'Changelog'].map((l, i) => <li key={l}><a href="#" className={`flex h-10 items-center transition-colors duration-200 hover:text-[#111214] ${i === 0 ? 'text-[#111214]' : ''}`}>{l}</a></li>)}
         </ul></nav>
       </Up>
-      <Up at={T.nav + 0.1} y={-8} className="ml-auto flex items-center gap-3 text-[14px] font-[550]">
-        <a href="#" className="b6-ghost press flex h-10 items-center rounded-[11px] px-4">Sign in</a>
-        <a href="#" className="b6-ink press flex h-10 items-center rounded-[11px] px-4 text-white">Start free</a>
+      <Up at={T.nav + 0.1} y={-8} className="ml-auto flex items-center gap-7 text-[14px] font-[550]">
+        <a href="#" className="flex h-10 items-center text-[#5d6168] transition-colors duration-200 hover:text-[#111214]">Sign in</a>
+        <a href="#" className="link-draw group flex h-10 items-center gap-1.5 text-[#111214]">Start free<ArrowRight size={15} strokeWidth={2} className="transition-transform duration-300 group-hover:translate-x-0.5" /></a>
       </Up>
     </header>
   )
@@ -232,7 +232,7 @@ export default function HeroV6() {
           <GrainGradient style={{ position: 'absolute', inset: -40, width: STAGE.w + 80, height: STAGE.h + 80, filter: 'blur(26px)' }} colorBack="#eef0fb" colors={['#aeb4ff', '#d4d7ff', '#f3e9ff', '#ffe9dc']} shape="corners" softness={0.85} intensity={0.22} noise={0} speed={0.25} />
           <div aria-hidden className="absolute inset-0 rounded-[24px] shadow-[inset_0_0_0_1px_rgba(17,18,20,0.06)]" />
           {/* <AgentStack /> removed on request 2026-10-15 */}
-          <motion.div className="absolute left-[44px] top-[96px] h-[760px] w-[900px] overflow-hidden rounded-[14px] bg-white" style={{ boxShadow: '0 0 0 1px rgba(17,18,20,0.08), 0 2px 6px rgba(17,18,20,0.04), 0 30px 60px -24px rgba(17,18,20,0.18)', WebkitMaskImage: FADE, maskImage: FADE, WebkitMaskComposite: 'source-in', maskComposite: 'intersect' }}
+          <motion.div className="absolute left-[44px] top-[44px] h-[812px] w-[900px] overflow-hidden rounded-[14px] bg-white" style={{ boxShadow: '0 0 0 1px rgba(17,18,20,0.08), 0 2px 6px rgba(17,18,20,0.04), 0 30px 60px -24px rgba(17,18,20,0.18)', WebkitMaskImage: FADE, maskImage: FADE, WebkitMaskComposite: 'source-in', maskComposite: 'intersect' }}
             initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: T.app, duration: 1.3, ease: ease.reveal, opacity: { delay: T.app, duration: 0.6 } }}>
             <App />
           </motion.div>
