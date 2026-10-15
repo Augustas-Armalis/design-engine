@@ -1,0 +1,596 @@
+{
+ "name": "kaching-app-sections",
+ "brief": "Kaching app pages: an Ask-Claude MCP conversation visual per app (light grey box) and a dark migration/switch visual (rebuilt by a real person, checked before live, same deals from day one)",
+ "type": "section",
+ "generated": "2026-10-12T21:58:43",
+ "rules": [
+  {
+   "id": "systems-research.tailwind-catalyst#4",
+   "slot": "core",
+   "score": 37.63,
+   "tier": "T1"
+  },
+  {
+   "id": "WCSS-39",
+   "slot": "core",
+   "score": 36.37,
+   "tier": "T1"
+  },
+  {
+   "id": "systems-research.magic-ui#5",
+   "slot": "core",
+   "score": 33.21,
+   "tier": "T1"
+  },
+  {
+   "id": "AH-CO-19",
+   "slot": "core",
+   "score": 32.27,
+   "tier": "T1"
+  },
+  {
+   "id": "web.attio-product-ui#55",
+   "slot": "core",
+   "score": 30.45,
+   "tier": "T2"
+  },
+  {
+   "id": "web-sources.a11y-project-checklist#54",
+   "slot": "core",
+   "score": 30.06,
+   "tier": "T1"
+  },
+  {
+   "id": "systems-research.magic-ui#1",
+   "slot": "core",
+   "score": 29.73,
+   "tier": "T1"
+  },
+  {
+   "id": "web.courses-and-curricula#62",
+   "slot": "core",
+   "score": 29.34,
+   "tier": "T2"
+  },
+  {
+   "id": "web-sources.craft-rauno-freiberg#8",
+   "slot": "core",
+   "score": 28.75,
+   "tier": "T2"
+  },
+  {
+   "id": "systems-research.supabase#3",
+   "slot": "core",
+   "score": 28.14,
+   "tier": "T1"
+  },
+  {
+   "id": "LDP-16",
+   "slot": "core",
+   "score": 27.72,
+   "tier": "T2"
+  },
+  {
+   "id": "web.type-hierarchy-buttons-shadows#10",
+   "slot": "core",
+   "score": 24.04,
+   "tier": "T2"
+  },
+  {
+   "id": "AH-TY-01",
+   "slot": "core",
+   "score": 22.54,
+   "tier": "T1"
+  },
+  {
+   "id": "PT-SZ-08",
+   "slot": "core",
+   "score": 21.02,
+   "tier": "T2"
+  },
+  {
+   "id": "dos-and-donts.dos-and-donts#4",
+   "slot": "core",
+   "score": 19.3,
+   "tier": "T2"
+  },
+  {
+   "id": "founder.founder-taste#46",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#51",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#10",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#56",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#45",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#48",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#57",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#58",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#50",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#59",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#29",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#70",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.feedback-playbook#1",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "T2"
+  },
+  {
+   "id": "founder.feedback-playbook#2",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "T2"
+  },
+  {
+   "id": "founder.feedback-playbook#3",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "T2"
+  },
+  {
+   "id": "founder.feedback-playbook#4",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "T2"
+  },
+  {
+   "id": "founder.founder-taste#1",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#2",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#3",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#4",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#5",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#6",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#7",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#8",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#9",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#11",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#12",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#13",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#14",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#15",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#16",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#17",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#18",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#19",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#20",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#21",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#22",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#23",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#24",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#25",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#26",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#27",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#28",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#30",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#31",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#32",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#33",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#34",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#35",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#36",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#37",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#38",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#39",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#40",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#41",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#42",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#43",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#44",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#47",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#49",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#52",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#53",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#54",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#55",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#60",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#61",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#62",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#63",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#64",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#65",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#66",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#67",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#68",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#69",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#71",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#72",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#73",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#74",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#75",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#76",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#77",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#78",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#79",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  }
+ ]
+}

@@ -53,3 +53,17 @@ Each founder rule applied, with its measured value at 1440x900:
 - **Load-in:** one Kaching-token timeline (reveal ease 1.2s, 70ms word stagger, 6px blur on text only, frame lifts from 97%).
 - **Logo:** the supplied K-star, traced to SVG, as mark + wordmark (no container).
 - **Palette:** dark only, graphite neutral, no glows.
+
+## Kite hero: current spec (2026-10-14/15, after ~20 founder rounds; latest feedback: "now we're talking")
+- **Canvas:** #0a0a0b, dark only. Rails at x 120/1320 with + marks on the 72px nav rule.
+- **Nav:**
+  - Supplied K-star logo (traced SVG, mark 26px) + "Kite" 23/600, then a 20px hairline divider.
+  - Plain text links 15/500 #a1a1a6 with 28px gaps.
+  - Right side: "Sign in" as text, plus a 36px white pill CTA.
+- **Headline:** Inter display cut (opsz.css, cv11 + ss01) 68/550/-0.045em, one colour, Title Case, no full stop: "Every Region, Live / Every Fix, One Click". Top at 156px.
+- **Subtitle:** 18/28/450 #a1a1a6, two hand-set balanced lines.
+- **CTAs:** 44px full pills, built from the dashboard's own buttons (white Deploy pill + dark tactile pill). No arrow tile.
+- **Background:** the dashboard's dot-matrix map, soft (dots 0.10 + heat 0.34, max 0.5), enlarged (fitExtent -250..W+170), with a long soft cut-out behind the copy. All white, no comets, no red. Frosted-glass labels ("sfo1 | 34 ms") sit on their own layer, auto-placed outside the reading zone.
+- **Product:** full dashboard in a double-bezel frame (9px pad, r25 outer / r16 inner), 64px under the CTAs, dissolving at the fold.
+- **Edges:** one light ring per box everywhere (no ring + inset highlight doubles).
+- **Motion:** one Kaching-token load-in (~2.5s, expo-out).

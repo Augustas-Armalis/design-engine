@@ -71,7 +71,7 @@ export default function App() {
             <span className="block">{l1.map((w, i) => <span key={w}><Word i={i} start={T.h1}>{w}</Word>{i < l1.length - 1 ? ' ' : ''}</span>)}</span>
             <span className="block bg-[linear-gradient(90deg,#d3d9ec_0%,#5f6785_90%)] bg-clip-text pb-[0.06em] text-transparent">{l2.map((w, i) => <span key={w}><Word i={i + 3} start={T.h1}>{w}</Word>{i < l2.length - 1 ? ' ' : ''}</span>)}</span>
           </h1>
-          <Reveal at={T_SUB} blur className="mt-5"><p className="max-w-[430px] text-[16px] leading-[25px] text-[var(--sub)]">Murmur listens to your calls, writes the notes and pulls out who owes what by when. Nothing to rewatch, nothing to type up.</p></Reveal>
+          <Reveal at={T_SUB} blur className="mt-5"><p className="max-w-[540px] text-balance text-[16px] leading-[25px] text-[var(--sub)]">Murmur listens to your calls, writes the notes and pulls out who owes what by when. Nothing to rewatch, nothing to type up.</p></Reveal>
           <Reveal at={T_SUB + STAGGER} className="mt-9 flex items-center gap-3">
             <a href="#" className="btn-ice press flex h-[52px] items-center rounded-full px-8 text-[16px] font-[600]">Download free</a>
             <a href="#" className="btn-ink flex h-[52px] items-center gap-2 rounded-full px-7 text-[16px]">See how it works<ArrowRight size={16} strokeWidth={1.75} /></a>
