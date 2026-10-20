@@ -1,12 +1,11 @@
-// Weft post (square 1000x1000, export at 2x): the live run card, big, on the halftone field, caught mid-decision
+// Weft post (square 1000x1000, export at 2x): the live run card, big and pin-sharp, over an out-of-focus glass field (Basit), caught mid-decision
 // with the cursor on Approve. Same product pieces as the hero (sample data).
 import { motion, MotionConfig } from 'motion/react'
 import { Sparkles } from 'lucide-react'
-import Halftone from './Halftone'
+import Field from './Field'
 import { Approval, ease, Logo, STEPS, StepRow } from './flow'
 
 const S = 1000
-const BLOBS = [{ x: 0, y: 0, r: 620, k: 1.25 }, { x: S, y: S, r: 680, k: 1.25 }, { x: S, y: 60, r: 300, k: 0.45 }, { x: 40, y: S - 40, r: 260, k: 0.35 }]
 
 function Cursor() {
   return (
@@ -19,8 +18,11 @@ function Cursor() {
 export default function Post() {
   return (
     <MotionConfig reducedMotion="user">
-      <div className="relative overflow-hidden" style={{ width: S, height: S }}>
-        <Halftone w={S} h={S} cell={8} blobs={BLOBS} />
+      <div className="relative overflow-hidden bg-[#eef0f4]" style={{ width: S, height: S }}>
+        <motion.div className="absolute inset-0" initial={{ opacity: 0, scale: 1.12 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 1.8, ease: ease.out, opacity: { duration: 1 } }}>
+          <div className="absolute -left-[260px] -top-[100px] h-[1200px] w-[760px]" style={{ maskImage: 'linear-gradient(90deg, #000 50%, transparent 95%)' }}><Field w={760} h={1200} colors={['#6f5bff', '#ff6fae', '#4cb3ff', '#ffb36b']} blur={8} scale={1.2} rotation={100} density={1.5} frame={2400} /></div>
+          <div className="absolute -right-[260px] -top-[60px] h-[1200px] w-[760px]" style={{ maskImage: 'linear-gradient(270deg, #000 50%, transparent 95%)' }}><Field w={760} h={1200} colors={['#4cb3ff', '#8a6cff', '#ff6fae', '#ffc46b']} blur={9} scale={1.2} rotation={124} density={1.5} frame={5200} /></div>
+        </motion.div>
         <motion.section aria-label="Weft run card, sample data" className="absolute left-1/2 top-1/2 w-[580px] -translate-x-1/2 -translate-y-1/2 rounded-[26px] bg-white p-2 shadow-[0_0_0_1px_rgb(15_16_19/0.06),0_2px_4px_rgb(15_16_19/0.04),0_50px_100px_-30px_rgb(40_14_120/0.45)]"
           initial={{ opacity: 0, y: 24, scale: 0.98 }} animate={{ opacity: 1, y: 0, scale: 1 }} transition={{ duration: 1.3, ease: ease.out, opacity: { duration: 0.5 } }}>
           <div className="px-4 pb-3 pt-4">
