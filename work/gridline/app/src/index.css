@@ -1,0 +1,35 @@
+@import "tailwindcss";
+@import "@fontsource-variable/inter/opsz.css";
+@import "@fontsource-variable/geist-mono";
+/* Apple continuous corners on every rounded box (founder: squircles always); pills and circles stay round */
+@import "./squircle.css";
+/* Bind a house system: copy system/systems/<slug>/theme.css next to this file and import it here.
+   WARNING: theme.css redefines --radius-sm/md/lg/xl (6/8/12/16), so Tailwind rounded-md renders 8px. Measure rendered radii. */
+@import "./theme.css";
+@theme {
+  --font-sans: "Inter Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Geist Mono Variable", ui-monospace, monospace;
+}
+/* Brand layer (AlignUI ln- grammar): replace every value per brand; keep the names (kit.tsx reads them). */
+:root {
+  --canvas: #f7f7f7; --ink: #171717; --sub: #5c5c5c; --soft: #737373; --line: #ebebeb; --rail: #e4e4e4; --weak: #f5f5f5; --track: #ededed;
+  --accent: #335cff;
+  --shadow-ring: 0 0 0 1px rgba(23, 23, 23, 0.07), 0 1px 2px 0 rgba(10, 13, 20, 0.05);
+  --shadow-tile: 0 0 0 1px rgba(23, 23, 23, 0.06), 0 1px 2px rgba(10, 13, 20, 0.04), 0 6px 14px -6px rgba(23, 23, 23, 0.10);
+  --shadow-frame: 0 0 0 1px rgba(23, 23, 23, 0.06), 0 2px 4px rgba(10, 13, 20, 0.03), 0 24px 56px -20px rgba(23, 23, 23, 0.16);
+}
+body { background: var(--canvas); color: var(--ink); font-family: var(--font-sans); font-optical-sizing: auto; -webkit-font-smoothing: antialiased; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+/* Button grammar from Kestrel (fancy ink + white). Change per brand if the CTA grammar changes. */
+.btn-ink { background: linear-gradient(180deg, rgba(255,255,255,0.14) 0%, rgba(255,255,255,0) 100%), var(--ink); color: #fff; box-shadow: 0 0 0 1px var(--ink), inset 0 1px 0 rgba(255,255,255,0.18), 0 1px 2px rgba(10,13,20,0.2), 0 6px 12px -4px rgba(23,23,23,0.28); transition: background-color 220ms, box-shadow 220ms; }
+.btn-white { background: #fff; color: var(--ink); box-shadow: var(--shadow-ring); transition: background-color 220ms; }
+@media (hover: hover) { .btn-white:hover { background: var(--weak); } }
+
+/* polish layer (better-ui / emil-design-eng): press feedback, wrapping, numerals, hit areas */
+.press { transition: transform 160ms cubic-bezier(.22,1,.36,1); }
+.press:active { transform: scale(0.98); }
+@media (prefers-reduced-motion: reduce) { .press:active { transform: none; } }
+h1, h2, h3 { text-wrap: balance; }
+p { text-wrap: pretty; }
+.tnum, [data-numeric] { font-variant-numeric: tabular-nums; }
+.hit { position: relative; } .hit::after { content: ""; position: absolute; inset: 50% auto auto 50%; width: max(100%, 44px); height: max(100%, 44px); transform: translate(-50%, -50%); }
