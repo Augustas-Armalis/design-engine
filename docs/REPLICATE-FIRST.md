@@ -11,4 +11,6 @@ Founder after a run of rejects (Overlap, Weft x3, Share, Expense x2): "just try 
 6. **Deliver** our render beside the reference and the overlay. Build only what was asked: no animation unless asked, no extra sections.
 
 ## Done so far
+- `#/clokora`: Kargul Clokora overview (clokora-01.jpg, 1800x1294). Own touches: weekend bars use the legend grey, a live cap on today, one warm dot.
+- `#/decision`: affectUI Decision Inbox (stage 894x520 at 2x). Own touch: a "Due Fri" chip.
 - `work/replicas` #/finance: AlignUI Finance "Transactions" (finance-1.png, 1600x1200). Own touches: Harbor green accent, signed in/out amounts, an "On hold" status.
