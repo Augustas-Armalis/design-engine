@@ -4155,6 +4155,34 @@
   "origin": "founder"
  },
  {
+  "id": "founder.founder-taste#137",
+  "text": "[founder] Component posts run lighter than affectUI's measured greys and are built to be shared: tray #f6f6f6 (not #f0f0f0), rings at 6-6.5% ink, tiles #f8f8f8, canvas #fbfbfb, and one short line of copy where a paragraph would go. A still card is not a post; ship the component as an 8-12s loop where it does its one job (cursor travels, presses, the control works, morphs into its result, the strip's status chip rolls to the new state, then resets), with the first frame as the money frame.",
+  "why": "Founder on the expense card v2 (Flo tray grammar, #f0f0f0): \"ehhh grays a bit dark and just not clean and interesting viral.. not\". X data agrees: single images 0.76x median engagement, component loops the most-posted format.",
+  "applies": "component posts.",
+  "check": "tray luminance >= #f5f5f5; a loop video exists next to the still; caption-free media.",
+  "checkable": true,
+  "source": "founder, Weft expense v2, 2026-10-20",
+  "file": "founder/founder-taste.md",
+  "section": "5. Exceptions & judgement calls",
+  "tags": [
+   "founder",
+   "taste",
+   "hero",
+   "nav",
+   "typography",
+   "copy",
+   "icons",
+   "logo",
+   "layout",
+   "product-card",
+   "background",
+   "buttons",
+   "quality-bar"
+  ],
+  "kind": "source",
+  "origin": "founder"
+ },
+ {
   "id": "founder.sellify-design-pass#1",
   "text": "[founder-process] Start every Sellify UI task by fetching `origin/main`, merging it into the local design branch, and listing teammates' commits in the area; adopt their logic and naming before touching visuals.",
   "why": "\"have you got the latest versions and updated what we designed to them... if christian did anything\" (2026-10-20). Our Ad Spy Tests tab duplicated Aaron's ENG-2232 because the branch was a day stale.",
