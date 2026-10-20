@@ -4239,6 +4239,34 @@
   "origin": "founder"
  },
  {
+  "id": "founder.founder-taste#140",
+  "text": "[founder] The bento style the founder loves: Kargul's services-bento grammar, one monochrome isometric line drawing per cell of the product's own object (iso plates, stacked layers, extruded towers) with shared hatching, dot fills, diamond nodes, dashed guide lines and a faint perspective grid; title top-left, short body, caps chip row; one accent only on the answer. It must be drawn with precision and detail (uniform strokes, true projection, crisp joins), never as loose shapes. Learn from `knowledge/web/isometric-line-art.md` and build with `system/iso/`.",
+  "why": "Founder on Cadence bento v3: \"nowww we talking, yess this style is amazing, yet ... it needs incredible precision and you could do wayyy better and more in detail ... marcel is goated at this too\". Earlier v1/v2 (white cards, mixed lit objects) were \"noobish\".",
+  "applies": "bento and feature sections.",
+  "check": "every cell uses the same iso system and stroke ladder; one accent per cell.",
+  "checkable": true,
+  "source": "founder, Cadence bento v3, 2026-10-21",
+  "file": "founder/founder-taste.md",
+  "section": "5. Exceptions & judgement calls",
+  "tags": [
+   "founder",
+   "taste",
+   "hero",
+   "nav",
+   "typography",
+   "copy",
+   "icons",
+   "logo",
+   "layout",
+   "product-card",
+   "background",
+   "buttons",
+   "quality-bar"
+  ],
+  "kind": "source",
+  "origin": "founder"
+ },
+ {
   "id": "founder.sellify-design-pass#1",
   "text": "[founder-process] Start every Sellify UI task by fetching `origin/main`, merging it into the local design branch, and listing teammates' commits in the area; adopt their logic and naming before touching visuals.",
   "why": "\"have you got the latest versions and updated what we designed to them... if christian did anything\" (2026-10-20). Our Ad Spy Tests tab duplicated Aaron's ENG-2232 because the branch was a day stale.",
