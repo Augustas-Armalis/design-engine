@@ -33,7 +33,8 @@ await page.screenshot({ path: shot, timeout: 90000 })
 const dom = await page.evaluate(({ isPost, W, H }) => {
   const R = (el) => { const r = el.getBoundingClientRect(); return { x: r.x, y: r.y, w: r.width, h: r.height, b: r.bottom, r: r.right } }
   const texts = [...document.querySelectorAll('body *')].filter((e) => [...e.childNodes].some((n) => n.nodeType === 3 && n.textContent.trim()) && e.getBoundingClientRect().width > 0)
-  const fs = (e) => parseFloat(getComputedStyle(e).fontSize)
+  // effective font size: computed size times every ancestor's CSS zoom (Chromium reports font-size before zoom)
+  const fs = (e) => { let z = 1; for (let a = e; a; a = a.parentElement) z *= parseFloat(getComputedStyle(a).zoom) || 1; return parseFloat(getComputedStyle(e).fontSize) * z }
   if (isPost) {
     const subj = document.querySelector('[data-subject]')
     const sr = subj ? R(subj) : null
