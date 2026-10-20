@@ -4211,6 +4211,34 @@
   "origin": "founder"
  },
  {
+  "id": "founder.founder-taste#139",
+  "text": "[founder] Bento cells and component posts need styling, not just UI in a white box: build each bento cell as a lit object scene (Clerk/Raycast grammar in light mode): a soft spotlight from above over a faint dot grid on a #fbfbfb to #f4f4f5 cell, one tactile object made from the product (white objects with ring + inner top highlight + contact + soft drop; the hero element raised in the accent with a gradient fill, inner shade and a tinted drop), staggered-opacity lists, a little depth (one tilt, one lifted card), and the copy small at the bottom (15/500 title + 14 muted). Component posts get the same lit canvas and at least one crafted object (date tile, raised accent button).",
+  "why": "Founder on the first Cadence bento and event card (flat white cards with UI inside): \"the component and bento straight up ass, nothing cool about them, no cool stylings or stuff\".",
+  "applies": "bento sections and component posts.",
+  "check": "every cell has one tactile object with the 4-part shadow and a spotlight; no cell is only a white card with rows.",
+  "checkable": true,
+  "source": "founder, Cadence, 2026-10-20",
+  "file": "founder/founder-taste.md",
+  "section": "5. Exceptions & judgement calls",
+  "tags": [
+   "founder",
+   "taste",
+   "hero",
+   "nav",
+   "typography",
+   "copy",
+   "icons",
+   "logo",
+   "layout",
+   "product-card",
+   "background",
+   "buttons",
+   "quality-bar"
+  ],
+  "kind": "source",
+  "origin": "founder"
+ },
+ {
   "id": "founder.sellify-design-pass#1",
   "text": "[founder-process] Start every Sellify UI task by fetching `origin/main`, merging it into the local design branch, and listing teammates' commits in the area; adopt their logic and naming before touching visuals.",
   "why": "\"have you got the latest versions and updated what we designed to them... if christian did anything\" (2026-10-20). Our Ad Spy Tests tab duplicated Aaron's ENG-2232 because the branch was a day stale.",

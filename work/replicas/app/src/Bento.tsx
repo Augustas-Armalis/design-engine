@@ -1,44 +1,47 @@
-// Cadence landing: the bento section (1440 wide). Each cell = muted kicker (13) + 2-line statement (20/500) + a real
-// mini-UI built from the calendar's own components, fading toward the cell edge (Kuleszo AKZ-17, Kargul micro-tokens:
-// cells are ring-only, r24; inner UI ring + control shadow). One violet accent; tones only where they carry meaning.
-// Sample data.
+// Cadence bento v2 in the Clerk/Raycast object-scene grammar (knowledge/benchmarks/bento/clerk-bento-a.png,
+// raycast-bento.png), carried to light mode: each cell is a lit scene (spotlight from above on a faint dot grid) holding
+// ONE tactile object built from the product (gradient fills, inner top highlight, layered contact + drop shadows),
+// lists fade by staggered opacity, copy sits small at the bottom (15/500 title + 14 muted). One violet accent. Sample data.
 import type { ReactNode } from 'react'
-import { RiTimeFill, RiSparkling2Fill, RiErrorWarningFill, RiArrowRightLine, RiCheckLine, RiLink, RiCalendar2Line, RiVideoOnLine } from '@remixicon/react'
+import { RiSparkling2Fill, RiLockFill, RiArrowRightLine, RiLink, RiCheckLine, RiTimeFill, RiCalendar2Line } from '@remixicon/react'
 
-const C = { ink: '#171717', sub: '#5c5c5c', soft: '#a3a3a3', line: '#ebebeb', violet: '#6e3ff3' }
-const ring = `0 0 0 1px ${C.line}`, lift = `0 0 0 1px ${C.line}, 0 4.5px 13px rgb(0 0 0 / 0.055)`
-const Face = ({ n, hue, s = 24 }: { n: string; hue: number; s?: number }) => <span className="grid shrink-0 place-items-center rounded-full font-[500] ring-2 ring-white" style={{ width: s, height: s, fontSize: s * 0.4, background: `oklch(0.93 0.04 ${hue})`, color: `oklch(0.4 0.09 ${hue})` }}>{n}</span>
+const C = { ink: '#171717', sub: '#5c5c5c', soft: '#a3a3a3', line: '#ebebeb', v: '#6e3ff3' }
+// tactile white object: ring, top highlight, contact shadow, soft drop
+const obj = '0 0 0 1px rgb(0 0 0 / 0.06), inset 0 1px 0 #fff, 0 1px 2px rgb(0 0 0 / 0.06), 0 10px 24px -10px rgb(0 0 0 / 0.16)'
+const raised = '0 0 0 1px #5b2fd9, inset 0 1px 0 rgb(255 255 255 / 0.28), inset 0 -2px 4px rgb(40 0 120 / 0.25), 0 2px 4px rgb(68 27 180 / 0.25), 0 14px 28px -10px rgb(110 63 243 / 0.55)'
+const Face = ({ n, hue, s = 30 }: { n: string; hue: number; s?: number }) => <span className="grid shrink-0 place-items-center rounded-full font-[500]" style={{ width: s, height: s, fontSize: s * 0.36, background: `linear-gradient(180deg, oklch(0.95 0.035 ${hue}), oklch(0.9 0.05 ${hue}))`, color: `oklch(0.4 0.09 ${hue})`, boxShadow: '0 0 0 2px #fff, 0 2px 6px -2px rgb(0 0 0 / 0.2)' }}>{n}</span>
 
-function Cell({ kicker, title, children, className = '', fade = true }: { kicker: string; title: ReactNode; children: ReactNode; className?: string; fade?: boolean }) {
+function Cell({ title, body, children, className = '', h }: { title: string; body: string; children: ReactNode; className?: string; h: number }) {
   return (
-    <div className={`relative flex flex-col overflow-hidden rounded-[24px] bg-white ${className}`} style={{ boxShadow: ring }}>
-      <div className="px-7 pt-7"><div className="text-[13px]" style={{ color: C.soft }}>{kicker}</div><div className="mt-2 text-[20px] font-[500] leading-[26px] tracking-[-0.02em]">{title}</div></div>
-      <div className="relative mt-6 flex-1" style={fade ? { maskImage: 'linear-gradient(180deg, #000 72%, transparent)' } : undefined}>{children}</div>
+    <div className={`relative overflow-hidden rounded-[24px] ${className}`} style={{ height: h, background: 'linear-gradient(180deg, #fbfbfb, #f4f4f5)', boxShadow: '0 0 0 1px rgb(0 0 0 / 0.05), inset 0 1px 0 #fff' }}>
+      <div aria-hidden className="absolute inset-0" style={{ backgroundImage: 'radial-gradient(rgb(0 0 0 / 0.07) 1px, transparent 1.3px)', backgroundSize: '16px 16px', maskImage: 'radial-gradient(70% 60% at 50% 30%, #000, transparent 80%)' }} />
+      <div aria-hidden className="absolute inset-x-0 top-0 h-[70%]" style={{ background: 'radial-gradient(50% 70% at 50% 0%, rgb(255 255 255 / 0.95), transparent 70%)' }} />
+      <div className="absolute inset-x-0 top-0" style={{ height: h - 118 }}>{children}</div>
+      <div className="absolute inset-x-7 bottom-7"><div className="text-[15px] font-[500] tracking-[-0.01em]">{title}</div><div className="mt-1.5 text-[14px] leading-[21px]" style={{ color: C.sub }}>{body}</div></div>
     </div>
   )
 }
 
 function FindTime() {
-  const P: [string, number, [number, number][]][] = [['MC', 250, [[0, 2], [6, 8]]], ['TP', 150, [[1, 3], [7, 9]]], ['AR', 25, [[0, 1], [3, 4], [8, 9]]], ['JW', 200, [[2, 4]]], ['LV', 60, [[0, 2], [7, 10]]]]
-  const col = (i: number) => `${(i / 10) * 100}%`
+  const H = ['10', '11', '12', '1', '2', '3', '4']
   return (
-    <div className="mx-7 rounded-[16px] bg-[#fafafa] p-4" style={{ boxShadow: `inset 0 0 0 1px ${C.line}` }}>
-      <div className="relative mb-3 ml-9 h-4 text-[11px] tabular-nums" style={{ color: C.soft }}>{['9', '10', '11', '12', '1', '2', '3', '4', '5', '6'].map((h, i) => <span key={h} className="absolute" style={{ left: col(i) }}>{h}</span>)}</div>
-      <div className="relative space-y-2">
-        <div className="absolute bottom-[-6px] top-[-6px] z-10 rounded-[10px]" style={{ left: `calc(36px + (100% - 36px) * 0.5)`, width: `calc((100% - 36px) * 0.1)`, boxShadow: `inset 0 0 0 1.5px ${C.violet}`, background: 'rgb(110 63 243 / 0.06)' }} />
-        {P.map(([n, hue, busy]) => (
-          <div key={n} className="flex items-center gap-3">
-            <Face n={n} hue={hue} />
-            <div className="relative h-6 flex-1 rounded-[7px]" style={{ background: '#fff', boxShadow: `inset 0 0 0 1px ${C.line}` }}>
-              {busy.map(([a, b], i) => <span key={i} className="absolute inset-y-[3px] rounded-[5px]" style={{ left: `calc(${col(a)} + 2px)`, width: `calc(${col(b - a)} - 4px)`, background: '#ececec' }} />)}
-            </div>
-          </div>
-        ))}
-      </div>
-      <div className="mt-4 flex items-center gap-2 rounded-[12px] bg-white px-3 py-2.5" style={{ boxShadow: lift }}>
-        <span className="grid size-7 place-items-center rounded-[8px]" style={{ background: '#f1edff', color: C.violet }}><RiSparkling2Fill size={15} /></span>
-        <span className="text-[13px] font-[500]">Wed 2:00 – 3:00 PM</span><span className="text-[12.5px]" style={{ color: C.sub }}>· all 5 free, no focus time touched</span>
-        <span className="ml-auto flex h-8 items-center gap-1 rounded-[9px] px-3 text-[13px] font-[500] text-white" style={{ background: C.violet, boxShadow: '0 0 0 1px #5b2fd9, inset 0 1px 0 rgb(255 255 255 / 0.18)' }}>Book<RiArrowRightLine size={14} /></span>
+    <div className="grid h-full place-items-center">
+      <div className="relative">
+        <div className="flex gap-3">
+          {H.map((h) => {
+            const on = h === '2', busy = ['11', '3'].includes(h)
+            return (
+              <div key={h} className="grid h-[86px] w-[72px] place-items-center rounded-[18px] text-[24px] tracking-[-0.02em] tabular-nums" style={on ? { background: 'linear-gradient(180deg, #8a63ff, #6e3ff3)', color: '#fff', boxShadow: raised, transform: 'translateY(-10px)' } : { background: 'linear-gradient(180deg, #fff, #f6f6f6)', color: busy ? '#cfcfcf' : C.ink, boxShadow: obj }}>
+                <span className="leading-none">{h}<span className="block pt-1 text-center text-[11px] tracking-normal" style={{ color: on ? 'rgb(255 255 255 / 0.75)' : C.soft }}>{busy ? 'busy' : Number(h) < 9 ? 'PM' : 'AM'}</span></span>
+              </div>
+            )
+          })}
+        </div>
+        <div className="absolute -top-[74px] left-[372px] flex -translate-x-1/2 -space-x-1.5">{[['M', 250], ['T', 150], ['A', 25], ['J', 200], ['L', 60]].map(([n, h]) => <Face key={n} n={n as string} hue={h as number} />)}</div>
+        <svg className="pointer-events-none absolute -top-[42px] left-[336px]" width="72" height="34" aria-hidden><path d="M36 0V30" stroke={C.v} strokeWidth="1.5" strokeDasharray="2 4" strokeLinecap="round" /></svg>
+        <div className="absolute -bottom-[62px] left-1/2 flex -translate-x-1/2 items-center gap-2 whitespace-nowrap rounded-full bg-white py-1.5 pl-1.5 pr-3 text-[13px] font-[500]" style={{ boxShadow: obj }}>
+          <span className="grid size-6 place-items-center rounded-full" style={{ background: '#f1edff', color: C.v }}><RiSparkling2Fill size={13} /></span>Wed 2:00 PM · all 5 free
+        </div>
       </div>
     </div>
   )
@@ -46,32 +49,35 @@ function FindTime() {
 
 function Focus() {
   return (
-    <div className="mx-7 space-y-2">
-      <div className="rounded-[14px] px-4 py-3.5" style={{ backgroundImage: 'repeating-linear-gradient(135deg, rgb(110 63 243 / 0.08) 0 1px, transparent 1px 7px)', boxShadow: 'inset 0 0 0 1px rgb(110 63 243 / 0.2)' }}>
-        <div className="flex items-center gap-1.5 text-[13px] font-[500]" style={{ color: C.violet }}><RiTimeFill size={15} />Focus time · 9:00 – 11:00</div>
-        <div className="mt-0.5 text-[12px]" style={{ color: C.sub }}>Protected for 3 weeks running</div>
+    <div className="flex h-full flex-col items-center pt-12">
+      <div className="relative grid h-[96px] w-[230px] place-items-center rounded-[22px]" style={{ backgroundImage: 'repeating-linear-gradient(135deg, rgb(110 63 243 / 0.12) 0 1.2px, rgb(110 63 243 / 0.03) 1.2px 8px)', boxShadow: 'inset 0 0 0 1px rgb(110 63 243 / 0.22), 0 10px 24px -14px rgb(110 63 243 / 0.5)' }}>
+        <span className="grid size-[58px] place-items-center rounded-full text-white" style={{ background: 'linear-gradient(180deg, #8a63ff, #6e3ff3)', boxShadow: raised }}><RiLockFill size={24} /></span>
+        <span className="absolute -bottom-3 rounded-full bg-white px-2.5 py-1 text-[12px] font-[500] tabular-nums" style={{ color: C.v, boxShadow: obj }}>9:00 – 11:00</span>
       </div>
-      {[['Vendor call: Halo', 'Declined · offered Thu 4 PM'], ['Quick sync?', 'Declined · moved to async thread'], ['Design review', 'Moved to 2:00 PM']].map(([t, s]) => (
-        <div key={t} className="flex items-center gap-2.5 rounded-[12px] bg-white px-3 py-2.5" style={{ boxShadow: lift }}>
-          <span className="grid size-6 place-items-center rounded-full" style={{ background: '#f5f5f5', color: C.sub }}><RiCheckLine size={13} /></span>
-          <div className="leading-tight"><div className="text-[13px] font-[500]">{t}</div><div className="mt-0.5 text-[12px]" style={{ color: C.soft }}>{s}</div></div>
-        </div>
-      ))}
+      <div className="mt-8 w-[250px] space-y-2">
+        {[['Vendor call: Halo', 1], ['Quick sync?', 0.55], ['Design review', 0.25]].map(([t, o]) => (
+          <div key={t as string} className="flex items-center gap-2.5 rounded-[12px] bg-white px-3 py-2" style={{ boxShadow: obj, opacity: o as number }}>
+            <span className="grid size-5 place-items-center rounded-full" style={{ background: '#f5f5f5', color: C.sub }}><RiCheckLine size={12} /></span>
+            <span className="text-[13px] font-[500]">{t as string}</span><span className="ml-auto text-[12px]" style={{ color: C.soft }}>Declined</span>
+          </div>
+        ))}
+      </div>
     </div>
   )
 }
 
 function Conflict() {
   return (
-    <div className="mx-7">
-      <div className="relative h-[112px]">
-        <div className="absolute left-0 top-0 h-[76px] w-[64%] rounded-[12px] px-3 py-2.5" style={{ background: '#f4f0ff', boxShadow: 'inset 0 0 0 1px #e6dcff' }}><div className="text-[12.5px] font-[500]">Onboarding kickoff</div><div className="text-[11.5px]" style={{ color: '#5b2fd9' }}>10:00 – 11:30</div></div>
-        <div className="absolute right-0 top-[36px] h-[60px] w-[54%] rounded-[12px] px-3 py-2.5" style={{ background: '#eef4ff', boxShadow: 'inset 0 0 0 1px #dce8ff, 0 4px 10px -4px rgb(0 0 0 / 0.08)' }}><div className="text-[12.5px] font-[500]">Hiring sync</div><div className="text-[11.5px]" style={{ color: '#1d4fb8' }}>10:30 – 11:00</div></div>
-        <span className="absolute left-[46%] top-[24px] grid size-6 -translate-x-1/2 place-items-center rounded-full bg-white" style={{ boxShadow: lift, color: '#e8742b' }}><RiErrorWarningFill size={15} /></span>
-      </div>
-      <div className="flex items-center gap-2.5 rounded-[12px] bg-white px-3 py-2.5" style={{ boxShadow: lift }}>
-        <span className="grid size-7 place-items-center rounded-[8px]" style={{ background: '#f1edff', color: C.violet }}><RiSparkling2Fill size={14} /></span>
-        <div className="leading-tight"><div className="text-[13px] font-[500]">Move kickoff to 1:00 PM</div><div className="mt-0.5 text-[12px]" style={{ color: C.sub }}>All 9 guests free</div></div>
+    <div className="grid h-full place-items-center" style={{ perspective: 900 }}>
+      <div className="relative h-[200px] w-[300px]" style={{ transform: 'rotateX(28deg) rotateZ(-10deg)', transformStyle: 'preserve-3d' }}>
+        <div className="absolute inset-0 rounded-[20px]" style={{ background: 'linear-gradient(180deg, #fff, #f6f6f6)', boxShadow: obj }}>
+          {[0, 1, 2, 3].map((i) => <div key={i} className="absolute inset-x-4 h-px" style={{ top: 30 + i * 46, background: C.line }} />)}
+        </div>
+        <div className="absolute left-5 top-9 h-[70px] w-[150px] rounded-[12px] px-3 py-2" style={{ background: '#f4f0ff', boxShadow: 'inset 0 0 0 1px #e1d6ff' }}><div className="text-[12px] font-[500]">Hiring sync</div><div className="text-[11px]" style={{ color: '#5b2fd9' }}>10:30</div></div>
+        <div className="absolute left-[132px] top-[96px] h-[70px] w-[150px] rounded-[12px] px-3 py-2" style={{ background: '#fff', boxShadow: '0 0 0 1.5px #6e3ff3, 0 18px 30px -12px rgb(110 63 243 / 0.5)', transform: 'translateZ(36px)' }}>
+          <div className="text-[12px] font-[500]">Kickoff</div><div className="text-[11px]" style={{ color: C.v }}>moved to 1:00 PM</div>
+        </div>
+        <svg className="absolute left-[110px] top-[60px]" width="80" height="60" aria-hidden><path d="M4 6C30 6 48 20 60 50" fill="none" stroke={C.v} strokeWidth="1.5" strokeDasharray="2 4" strokeLinecap="round" /></svg>
       </div>
     </div>
   )
@@ -79,34 +85,36 @@ function Conflict() {
 
 function Booking() {
   return (
-    <div className="mx-7 rounded-[16px] bg-white p-4" style={{ boxShadow: lift }}>
-      <div className="flex items-center gap-2.5"><Face n="MC" hue={250} s={30} /><div className="leading-tight"><div className="text-[13px] font-[500]">Intro with Maya</div><div className="mt-0.5 flex items-center gap-1 text-[12px]" style={{ color: C.soft }}><RiVideoOnLine size={13} />30 min · Meet</div></div></div>
-      <div className="mt-3.5 text-[12px] font-[500]" style={{ color: C.sub }}>Thu, Oct 22</div>
-      <div className="mt-2 grid grid-cols-3 gap-1.5">{['9:30', '10:00', '1:30', '2:00', '3:30', '4:00'].map((t, i) => <span key={t} className="grid h-8 place-items-center rounded-[9px] text-[12.5px] font-[500] tabular-nums" style={i === 3 ? { background: C.violet, color: '#fff', boxShadow: '0 0 0 1px #5b2fd9' } : { boxShadow: ring, color: C.ink }}>{t}</span>)}</div>
-      <div className="mt-3 flex items-center gap-1.5 text-[12px]" style={{ color: C.soft }}><RiLink size={13} />cadence.so/maya/intro</div>
+    <div className="flex h-full flex-col items-center pt-14">
+      <div className="flex items-center gap-2 rounded-full bg-white py-2 pl-2 pr-4 text-[14px] font-[500]" style={{ boxShadow: `${obj}, 0 0 0 6px rgb(110 63 243 / 0.06)` }}>
+        <span className="grid size-8 place-items-center rounded-full text-white" style={{ background: 'linear-gradient(180deg, #8a63ff, #6e3ff3)', boxShadow: raised }}><RiLink size={15} /></span>cadence.so/maya
+      </div>
+      <div className="mt-9 flex gap-2">
+        {['9:30', '1:30', '2:00', '3:30'].map((t, i) => (
+          <span key={t} className="grid h-11 w-[64px] place-items-center rounded-[13px] text-[14px] font-[500] tabular-nums" style={i === 2 ? { background: 'linear-gradient(180deg, #8a63ff, #6e3ff3)', color: '#fff', boxShadow: raised, transform: 'translateY(-6px)' } : { background: 'linear-gradient(180deg, #fff, #f6f6f6)', boxShadow: obj, opacity: [0.5, 0.8, 1, 0.8][i] }}>{t}</span>
+        ))}
+      </div>
+      <div className="mt-5 flex items-center gap-1.5 text-[12.5px]" style={{ color: C.sub }}><RiCalendar2Line size={14} />Thu, Oct 22 · 30 min</div>
     </div>
   )
 }
 
 function Insight() {
-  const D: [string, number, number][] = [['Mon', 4.5, 2], ['Tue', 3, 3.5], ['Wed', 5, 1], ['Thu', 2, 4], ['Fri', 1.5, 4.5]]
+  const D: [string, number, number][] = [['M', 4.5, 2], ['T', 3, 3.5], ['W', 5, 1], ['T', 2, 4], ['F', 1.5, 4.5]]
   return (
-    <div className="mx-7">
-      <div className="flex items-baseline gap-2"><span className="text-[28px] tracking-[-0.02em] tabular-nums" style={{ color: C.violet }}>15h</span><span className="text-[13px]" style={{ color: C.sub }}>focus time · +4h vs last week</span></div>
-      <div className="mt-4 flex items-end gap-3" style={{ height: 150 }}>
-        {D.map(([d, m, f]) => (
-          <div key={d} className="flex flex-1 flex-col items-center gap-2">
-            <div className="flex w-full flex-col gap-1">
-              <span className="w-full rounded-[6px]" style={{ height: f * 15, backgroundImage: 'repeating-linear-gradient(135deg, rgb(110 63 243 / 0.22) 0 1px, rgb(110 63 243 / 0.08) 1px 6px)', boxShadow: 'inset 0 0 0 1px rgb(110 63 243 / 0.25)' }} />
-              <span className="w-full rounded-[6px] bg-[#171717]" style={{ height: m * 15, opacity: 0.85 }} />
-            </div>
-            <span className="text-[11.5px]" style={{ color: C.soft }}>{d}</span>
+    <div className="flex h-full items-end justify-center gap-3.5 pb-6">
+      {D.map(([d, m, f], i) => (
+        <div key={i} className="flex flex-col items-center gap-2">
+          <div className="flex w-[46px] flex-col gap-1">
+            <span className="w-full rounded-[10px]" style={{ height: f * 22, backgroundImage: 'repeating-linear-gradient(135deg, rgb(110 63 243 / 0.28) 0 1.2px, rgb(110 63 243 / 0.08) 1.2px 7px)', boxShadow: `inset 0 0 0 1px rgb(110 63 243 / ${i === 4 ? 0.6 : 0.25})${i === 4 ? ', 0 10px 20px -10px rgb(110 63 243 / 0.6)' : ''}` }} />
+            <span className="w-full rounded-[10px]" style={{ height: m * 22, background: 'linear-gradient(180deg, #3a3a3d, #1c1c1e)', boxShadow: '0 0 0 1px #111, inset 0 1px 0 rgb(255 255 255 / 0.15), 0 6px 14px -8px rgb(0 0 0 / 0.5)' }} />
           </div>
-        ))}
-      </div>
-      <div className="mt-3 flex items-center gap-4 text-[12px]" style={{ color: C.sub }}>
-        <span className="flex items-center gap-1.5"><span className="size-2 rounded-[2px] bg-[#171717] opacity-85" />Meetings</span>
-        <span className="flex items-center gap-1.5"><span className="size-2 rounded-[2px]" style={{ background: 'rgb(110 63 243 / 0.35)' }} />Focus</span>
+          <span className="text-[12px] font-[500]" style={{ color: C.soft }}>{d}</span>
+        </div>
+      ))}
+      <div className="absolute left-7 top-7 rounded-[14px] bg-white px-3 py-2" style={{ boxShadow: obj }}>
+        <div className="flex items-center gap-1 text-[12px]" style={{ color: C.sub }}><RiTimeFill size={13} style={{ color: C.v }} />Focus</div>
+        <div className="text-[22px] tracking-[-0.02em] tabular-nums" style={{ color: C.v }}>15h</div>
       </div>
     </div>
   )
@@ -114,21 +122,19 @@ function Insight() {
 
 export default function Bento() {
   return (
-    <div className="relative" style={{ width: 1440, height: 1180, background: '#f7f7f7', fontFamily: '"Inter Variable", system-ui, sans-serif', fontFeatureSettings: '"cv11", "ss01"', color: C.ink }}>
+    <div className="relative" style={{ width: 1440, height: 1220, background: '#ffffff', fontFamily: '"Inter Variable", system-ui, sans-serif', fontFeatureSettings: '"cv11", "ss01"', color: C.ink }}>
       <div className="absolute inset-x-[120px] top-[112px]">
-        <div className="flex items-end justify-between">
-          <div>
-            <div className="flex h-7 w-fit items-center gap-1.5 rounded-full bg-white px-2.5 text-[12.5px] font-[500]" style={{ boxShadow: ring, color: C.sub }}><RiCalendar2Line size={14} style={{ color: C.violet }} />How Cadence works</div>
-            <h2 className="mt-5 text-[44px] font-[550] leading-[1.06] tracking-[-0.04em]">Every Hour, Accounted For</h2>
-          </div>
-          <p className="w-[400px] pb-1 text-[16px] leading-[25px]" style={{ color: C.sub }}>Cadence finds the time, guards the focus and settles the conflicts, so your week arrives already arranged.</p>
+        <div className="text-center">
+          <h2 className="text-[44px] font-[550] leading-[1.06] tracking-[-0.04em]">Every Hour, Accounted For</h2>
+          <p className="mx-auto mt-4 w-[520px] text-[17px] leading-[26px]" style={{ color: C.sub }}>Cadence finds the time, guards the focus and settles<br />the conflicts, so your week arrives already arranged.</p>
+          <span className="mt-6 inline-flex items-center gap-1 text-[14px] font-[500]">See how it works<RiArrowRightLine size={15} /></span>
         </div>
-        <div className="mt-12 grid grid-cols-3 gap-4" style={{ gridTemplateRows: '430px 400px' }}>
-          <Cell className="col-span-2" kicker="Find a time" title={<>One hour that works for everyone,<br />found across every calendar</>}><FindTime /></Cell>
-          <Cell kicker="Focus time" title={<>Deep work that stays<br />on the calendar</>}><Focus /></Cell>
-          <Cell kicker="Conflicts" title={<>Double bookings settle<br />before you see them</>}><Conflict /></Cell>
-          <Cell kicker="Scheduling links" title={<>Let people book you<br />on your terms</>}><Booking /></Cell>
-          <Cell kicker="Weekly insight" title={<>See where<br />the week went</>} fade={false}><Insight /></Cell>
+        <div className="mt-14 grid grid-cols-3 gap-4">
+          <Cell className="col-span-2" h={420} title="Find a time" body="The one hour that works for every guest, found across all their calendars."><FindTime /></Cell>
+          <Cell h={420} title="Focus time" body="Deep work stays on the calendar. Cadence declines what would break it."><Focus /></Cell>
+          <Cell h={400} title="Conflicts settle themselves" body="Double bookings move to the next slot everyone has free."><Conflict /></Cell>
+          <Cell h={400} title="Scheduling links" body="Share a link, let people pick a slot you actually have."><Booking /></Cell>
+          <Cell h={400} title="Weekly insight" body="See how much of the week went to meetings and how much to work."><Insight /></Cell>
         </div>
       </div>
     </div>

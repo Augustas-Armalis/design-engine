@@ -15,12 +15,17 @@ const PEOPLE: [string, string, number, 'yes' | 'maybe' | 'no' | 'org'][] = [['Ma
 
 export default function EventCard() {
   return (
-    <div className="grid place-items-center overflow-hidden" style={{ width: 1000, height: 1000, background: '#f5f5f5', fontFamily: '"Inter Variable", system-ui, sans-serif', fontFeatureSettings: '"cv11", "ss01"', color: C.ink }}>
-      <div style={{ zoom: 1.5 }}>
+    <div className="relative grid place-items-center overflow-hidden" style={{ width: 1000, height: 1000, background: 'linear-gradient(180deg, #fbfbfb, #f2f2f3)', fontFamily: '"Inter Variable", system-ui, sans-serif', fontFeatureSettings: '"cv11", "ss01"', color: C.ink }}>
+      <div aria-hidden className="absolute inset-0" style={{ backgroundImage: 'radial-gradient(rgb(0 0 0 / 0.07) 1px, transparent 1.3px)', backgroundSize: '18px 18px', maskImage: 'radial-gradient(60% 55% at 50% 45%, #000, transparent 85%)' }} />
+      <div aria-hidden className="absolute inset-x-0 top-0 h-[60%]" style={{ background: 'radial-gradient(45% 70% at 50% 0%, rgb(255 255 255 / 0.95), transparent 70%)' }} />
+      <div className="relative" style={{ zoom: 1.5 }}>
         <section data-subject aria-label="Event details, sample content" className="w-[420px] rounded-[18px] bg-white" style={{ boxShadow: `0 0 0 1px ${C.line}, 0 4.5px 13px rgb(0 0 0 / 0.055), 0 24px 48px -24px rgb(0 0 0 / 0.12)` }}>
           {/* header */}
           <div className="flex items-start gap-3 px-5 pb-4 pt-5">
-            <span className="mt-[5px] size-2.5 shrink-0 rounded-[3px]" style={{ background: C.violet }} />
+            <span className="w-[44px] shrink-0 overflow-hidden rounded-[11px] bg-white text-center" style={{ boxShadow: '0 0 0 1px rgb(0 0 0 / 0.07), inset 0 1px 0 #fff, 0 1px 2px rgb(0 0 0 / 0.06), 0 8px 16px -8px rgb(0 0 0 / 0.18)' }}>
+              <span className="block py-[2px] text-[9.5px] font-[600] tracking-[0.06em] text-white" style={{ background: 'linear-gradient(180deg, #8a63ff, #6e3ff3)' }}>OCT</span>
+              <span className="block pb-1 pt-0.5 text-[19px] font-[500] leading-[22px] tracking-[-0.02em] tabular-nums">20</span>
+            </span>
             <div className="min-w-0 flex-1 leading-tight">
               <div className="text-[16px] font-[500] tracking-[-0.01em]">Onboarding redesign kickoff</div>
               <div className="mt-1.5 text-[13px] tabular-nums" style={{ color: C.sub }}>Tue, Oct 20 · 10:00 – 11:30 AM</div>
@@ -55,12 +60,12 @@ export default function EventCard() {
             <div className="rounded-[14px] p-1" style={{ background: '#fff6ee', boxShadow: 'inset 0 0 0 1px #ffe4d1' }}>
               <div className="flex items-center gap-2 px-3 pb-2 pt-2 text-[12.5px] font-[500]" style={{ color: '#b4430f' }}><RiErrorWarningFill size={15} />Overlaps Hiring sync for Theo and Ana</div>
               <div className="flex items-center gap-3 rounded-[11px] bg-white px-3 py-2.5" style={{ boxShadow: `0 0 0 1px #ffe4d1, 0 1px 2px rgb(0 0 0 / 0.04)` }}>
-                <span className="grid size-8 shrink-0 place-items-center rounded-[9px]" style={{ background: '#f1edff', color: C.violet }}><RiSparkling2Fill size={16} /></span>
+                <span className="grid size-8 shrink-0 place-items-center rounded-full text-white" style={{ background: 'linear-gradient(180deg, #8a63ff, #6e3ff3)', boxShadow: '0 0 0 1px #5b2fd9, inset 0 1px 0 rgb(255 255 255 / 0.28), 0 6px 12px -6px rgb(110 63 243 / 0.6)' }}><RiSparkling2Fill size={15} /></span>
                 <div className="min-w-0 flex-1 leading-tight">
                   <div className="text-[13px] font-[500]">Move to 1:00 – 2:30 PM</div>
                   <div className="mt-0.5 text-[12px]" style={{ color: C.sub }}>All 9 guests are free · keeps focus time</div>
                 </div>
-                <span className="flex h-8 items-center gap-1 rounded-[9px] px-3 text-[13px] font-[500] text-white" style={{ background: C.violet, boxShadow: '0 0 0 1px #5b2fd9, inset 0 1px 0 rgb(255 255 255 / 0.18)' }}>Move<RiArrowRightLine size={14} /></span>
+                <span className="flex h-8 items-center gap-1 rounded-[10px] px-3 text-[13px] font-[500] text-white" style={{ background: 'linear-gradient(180deg, #8a63ff, #6e3ff3)', boxShadow: '0 0 0 1px #5b2fd9, inset 0 1px 0 rgb(255 255 255 / 0.28), inset 0 -2px 4px rgb(40 0 120 / 0.25), 0 2px 4px rgb(68 27 180 / 0.25), 0 10px 20px -8px rgb(110 63 243 / 0.55)' }}>Move<RiArrowRightLine size={14} /></span>
               </div>
             </div>
           </div>
