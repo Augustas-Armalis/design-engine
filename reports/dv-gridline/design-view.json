@@ -37,9 +37,9 @@
  "px": {
   "bandMeanL": 242,
   "bandStdL": 0,
-  "bandChroma": 0.1,
-  "colourShare": 0.003,
-  "quietShare": 0.72
+  "bandChroma": 0.3,
+  "colourShare": 0.002,
+  "quietShare": 0.74
  },
  "checks": [
   {
@@ -136,14 +136,14 @@
   {
    "id": "fold.quiet",
    "status": "pass",
-   "value": 0.72,
+   "value": 0.74,
    "want": ">= 0.40 of 16px blocks quiet (Kestrel 0.46 accepted; premium median 0.78)",
    "rule": "HC-03"
   },
   {
    "id": "fold.colour",
    "status": "info",
-   "value": 0.003,
+   "value": 0.002,
    "want": "info",
    "rule": "dark-mode-premium"
   }
