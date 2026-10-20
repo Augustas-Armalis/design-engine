@@ -2,7 +2,7 @@
   "name": "weft",
   "date": "2026-10-20",
   "verdict": "reject",
-  "why": "dither is ass... the style everywhere boring, monotonic... check Basit designs and make something in his style; everything is the same shitty quality",
+  "why": "so bad, the bg and the product; titles and buttons getting there but still what is this",
   "summary": {
     "pass": 39,
     "warn": 2,
@@ -10,12 +10,12 @@
   },
   "fingerprint": {
     "h1": {
-      "px": 58,
-      "lh": "59.16px",
-      "ls": "-2.61px",
-      "weight": "560",
+      "px": 76,
+      "lh": "76px",
+      "ls": "-3.8px",
+      "weight": "500",
       "family": "Geist Variable",
-      "text": "Workflows ThatThink First"
+      "text": "Workflows that think,then act for you."
     },
     "fonts": [
       "Geist Variable",
@@ -27,22 +27,20 @@
       255
     ],
     "radii": [
-      7,
-      10,
-      12,
-      28,
-      18,
       "pill",
+      7,
+      18,
+      10,
       8,
       5,
       14
     ],
-    "navHeight": 76,
-    "contentWidth": "1296",
+    "navHeight": 46,
+    "contentWidth": "860",
     "sectionPad": null,
     "sectionCount": 0,
-    "bodyPx": 18,
-    "heroLayout": "copy-above-visual",
+    "bodyPx": 16,
+    "heroLayout": "integrated",
     "navNumbered": false
   },
   "screenshot": "ledger/shots/2026-10-20-weft-fold.png"
