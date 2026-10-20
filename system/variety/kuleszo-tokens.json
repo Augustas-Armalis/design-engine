@@ -1,0 +1,66 @@
+{
+  "schema": "benchmark-tokens/v1",
+  "updated": "2026-10-20",
+  "credit": "Measured from Adrian Kuleszo / DesignMe public work (X @adriankuleszo via api.fxtwitter.com; designme.agency home, about-us, pricing, our-process, projects/ballogy; ballogy.com; seamless.ai) with Playwright getComputedStyle and document.getAnimations(); X images pixel-sampled. Study material only: never ship his or his clients' assets, fonts (Saans is commercial), copy or layouts. See knowledge/web/kuleszo-craft.md (AKZ-01..30) and knowledge/benchmarks/kuleszo-x/CREDITS.md.",
+  "about": "Kuleszo's register: a quiet, fast skeleton (one display face at 600/-0.02em, Inter body, 1280 container, 128 section padding, 1px 10% ink borders, near-zero shadows, flat compact controls) under brand-specific skins (serif or grotesk per client, a world visual that is the product's subject, dense typed product data). Values are CSS px at 1440x900 unless marked.",
+  "studio_frame": {
+    "fonts": {"display": "Saans 600 (commercial; stand-in Inter Display / Geist 600, unverified)", "body": "Inter 400/500", "annotation": "Caveat 20/400, one use"},
+    "type_scale": [
+      {"role": "hero", "size": 77.76, "lh": 1.0, "weight": 600, "ls_em": -0.02},
+      {"role": "h1", "size": 72, "lh": 1.1, "weight": 600, "ls_em": -0.02},
+      {"role": "h2-lg", "size": 56, "lh": 1.15, "weight": 600, "ls_em": -0.02},
+      {"role": "h2", "size": 42, "lh": 1.15, "weight": 600, "ls_em": -0.02},
+      {"role": "h3", "size": 32, "weight": 600},
+      {"role": "h4", "size": 24, "weight": 600, "ls_em": -0.01},
+      {"role": "sub", "size": 18, "lh": 27, "weight": 400, "color": "ink/.75"},
+      {"role": "body", "size": 16, "weight": "400|500"},
+      {"role": "nav", "size": 14, "weight": 500},
+      {"role": "meta", "size": 13, "weight": 400},
+      {"role": "label", "size": 11, "weight": 500, "case": "upper"}
+    ],
+    "hero_gaps": {"eyebrow_to_h1": 30, "h1_to_sub": 16, "sub_to_cta": 32},
+    "ink": {"light": "#03111c", "text_alpha": [1, 0.75, 0.62], "border_alpha": [0.10, 0.20], "dark_text": "#f5f5f5", "dark_text_alpha": [1, 0.75, 0.62], "dark_border_alpha": [0.12, 0.24]},
+    "accent": {"base": "#116ff8", "hover": "#0f62da", "link": "#004fe6"},
+    "surfaces": {"light": ["#ffffff", "#fafafa", "#f5f5f5", "rgba(3,17,28,.05)"], "dark_ladder": ["#000000", "#0f0f0f", "#181818", "#1a1a1a", "#242424", "#383838"]},
+    "buttons": {
+      "nav": {"h": 36, "pad": "0 16", "font": "14/500", "radius": 2},
+      "hero": {"h": 40, "pad": "0 24", "font": "16/500", "radius": 2},
+      "chip": {"h": 32, "pad": "0 14", "font": "13/500", "radius": 999, "shadow": "0 1px 2px rgba(0,0,0,.04)"},
+      "secondary_fill": "#f5f5f5",
+      "resting_shadow": "none",
+      "hover": "fill ~12% darker, same hue",
+      "transition": "150-320ms cubic-bezier(0.22,1,0.36,1)"
+    },
+    "radius_ladder": {"control": 2, "small": 4, "card": 12, "sheet": 24, "chip": 999, "avatar": "50%"},
+    "shadows": ["0 1px 2px rgba(0,0,0,.04)", "0 1px 2px rgba(3,17,28,.06)", "0 4px 16px rgba(3,17,28,.08)", "0 8px 28px rgba(0,0,0,.10)", "0 28px 70px rgba(0,0,0,.16)"],
+    "layout": {"container": 1280, "gutter_at_1440": 120, "section_pad": 128, "closing_band_pad": 252, "case_chapter_pad": "128 / 80"},
+    "nav": {"position": "sticky", "announcement_bar": 32, "bar": 75, "bg": "transparent", "links": "6 x 14/500 with + disclosure", "right": ["sound toggle", "theme toggle", "one filled CTA 36px"]},
+    "load_in_ms": [
+      {"el": "preloader mark", "dur": 260, "delay": 0}, {"el": "preloader lift (clip-path)", "dur": 480, "delay": 380},
+      {"el": "eyebrow rise", "dur": 640, "delay": 540}, {"el": "h1 line 1 glide", "dur": 760, "delay": 610}, {"el": "h1 line 2 glide", "dur": 760, "delay": 680},
+      {"el": "sub rise", "dur": 640, "delay": 680}, {"el": "ctas rise", "dur": 640, "delay": 750}, {"el": "aside glide", "dur": 760, "delay": 820},
+      {"el": "proof rise", "dur": 640, "delay": 890}, {"el": "logo roll rise", "dur": 640, "delay": 960}
+    ],
+    "stagger_ms": 70,
+    "loops": {"announcement_flow": 26000, "glint_shine": 6000, "stack_float": 3000}
+  },
+  "client_skins": {
+    "ballogy": {"display": "Instrument Sans 72/600 normal tracking", "sub": "16/500", "cta": "pill 40/48 #f4f4f4 on photo", "cards": "r20 / r16", "ring": "0 0 0 1px rgba(255,255,255,.08)", "hero": "B&W gym photo, centred logo nav, 3 audience cards at fold bottom"},
+    "seamless": {"display": "PS Times 80/400 lh 1.0", "ui": "FT System 14-18", "controls": "r4, 40-50px", "accent": "#c2008b -> hover #880763", "hero": "centred serif, email capture + SSO, neon tube ribbon"},
+    "zeal": {"display": "serif, two-tone (line 2 grey)", "hero": "grid rails + giant brand shape, green ~#308048 (8-level quantised pixel sample)"},
+    "atlas": {"display": "grotesk, selection-box word", "hero": "dark, centred logo nav, corner violet glow, route map"},
+    "quotient": {"display": "grotesk, glow on line 2", "hero": "light shaft, perspective app planes or tabs over window", "dark_base": "#02000e"}
+  },
+  "x_posts": {
+    "canvas_light": ["#eeeeee", "#f5f5f5", "#fafafa", "#f7f6fb"],
+    "canvas_mid": ["#d0d0d0", "#d6d6d6"],
+    "canvas_dark": ["#161616", "#1a1a1a", "#1c1c1c", "#3d3d3d"],
+    "component_width_share": [0.55, 0.75],
+    "app_bleed_crop": {"inset_pct": 6.5, "corner": "about r24 at export", "edges_cropped": ["right", "bottom"]},
+    "ratios_count": {"16:9": 70, "16:10": 42, "1:1": 38, "4:3": 21, "9:16": 19},
+    "median_width_px": 2305,
+    "caption_words_median": 7,
+    "video_share": 0.32,
+    "grid_posts": {"single": 141, "two_up": 24, "three_up": 3, "four_up": 27}
+  }
+}

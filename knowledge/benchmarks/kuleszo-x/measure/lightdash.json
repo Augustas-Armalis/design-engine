@@ -1,0 +1,213 @@
+{
+ "title": "Lightdash | Build Intelligence, not just dashboards.",
+ "docH": 900,
+ "bodyBg": "rgb(255, 255, 255)",
+ "bodyFont": "sans-serif",
+ "h1": [],
+ "sub": null,
+ "h2": [],
+ "btns": [
+  {
+   "text": "Talk to our team",
+   "rect": {
+    "x": 1064,
+    "y": 32,
+    "w": 155,
+    "h": 42
+   },
+   "radius": "6px",
+   "pad": "0px 20px",
+   "bg": "rgb(248, 250, 251)",
+   "bgImg": "none",
+   "color": "rgb(0, 0, 0)",
+   "border": "0px none rgb(0, 0, 0)",
+   "shadow": "none",
+   "font": "12px/400 sans-serif",
+   "ls": "normal",
+   "transition": "all"
+  },
+  {
+   "text": "Start for free",
+   "rect": {
+    "x": 1233,
+    "y": 32,
+    "w": 127,
+    "h": 42
+   },
+   "radius": "6px",
+   "pad": "12px 20px",
+   "bg": "rgb(94, 76, 255)",
+   "bgImg": "none",
+   "color": "rgb(0, 0, 238)",
+   "border": "0px none rgb(0, 0, 238)",
+   "shadow": "none",
+   "font": "12px/400 sans-serif",
+   "ls": "normal",
+   "transition": "all"
+  }
+ ],
+ "nav": {
+  "rect": {
+   "x": 0,
+   "y": 0,
+   "w": 1440,
+   "h": 1080
+  },
+  "position": "relative",
+  "bg": "rgba(0, 0, 0, 0)",
+  "backdrop": "none",
+  "border": "0px none rgb(0, 0, 0)",
+  "links": [
+   {
+    "t": "",
+    "size": "12px",
+    "weight": "400",
+    "color": "rgb(0, 0, 238)",
+    "x": 80,
+    "w": 119,
+    "h": 28
+   },
+   {
+    "t": "Pricing",
+    "size": "12px",
+    "weight": "400",
+    "color": "rgb(0, 0, 238)",
+    "x": 326,
+    "w": 75,
+    "h": 42
+   },
+   {
+    "t": "Login",
+    "size": "16px",
+    "weight": "500",
+    "color": "rgb(255, 255, 255)",
+    "x": 1011,
+    "w": 39,
+    "h": 16
+   },
+   {
+    "t": "Talk to our team",
+    "size": "12px",
+    "weight": "400",
+    "color": "rgb(0, 0, 0)",
+    "x": 1064,
+    "w": 155,
+    "h": 42
+   },
+   {
+    "t": "Start for free",
+    "size": "12px",
+    "weight": "400",
+    "color": "rgb(0, 0, 238)",
+    "x": 1233,
+    "w": 127,
+    "h": 42
+   }
+  ]
+ },
+ "radii": [
+  [
+   "6px",
+   2
+  ]
+ ],
+ "shadows": [],
+ "bgs": [
+  [
+   "rgb(255, 255, 255)",
+   1
+  ],
+  [
+   "rgb(8, 8, 8)",
+   1
+  ],
+  [
+   "rgb(248, 250, 251)",
+   1
+  ],
+  [
+   "rgb(94, 76, 255)",
+   1
+  ],
+  [
+   "rgba(0, 0, 0, 0.65)",
+   1
+  ],
+  [
+   "rgb(12, 12, 12)",
+   1
+  ],
+  [
+   "rgb(7, 6, 15)",
+   1
+  ],
+  [
+   "rgb(68, 204, 255)",
+   1
+  ]
+ ],
+ "colors": [
+  [
+   "rgb(255, 255, 255)",
+   6
+  ],
+  [
+   "rgb(0, 0, 0)",
+   5
+  ],
+  [
+   "rgb(39, 40, 53)",
+   1
+  ]
+ ],
+ "fonts": [
+  [
+   "sans-serif 12px/400",
+   5
+  ],
+  [
+   "\"Britti Sans Medium\" 16px/500",
+   5
+  ],
+  [
+   "Inter 15px/500",
+   2
+  ]
+ ],
+ "borders": [
+  [
+   " ",
+   1
+  ]
+ ],
+ "containers": [
+  [
+   "1280px (w1280)",
+   1
+  ]
+ ],
+ "sections": [],
+ "links": [
+  "https://www.lightdash.com/",
+  "https://www.lightdash.com/pricing",
+  "https://app.lightdash.cloud/login",
+  "https://www.lightdash.com/start"
+ ],
+ "hover": [
+  {
+   "text": "Talk to our team",
+   "diff": {
+    "bg": [
+     "rgb(248, 250, 251)",
+     "rgb(236, 239, 243)"
+    ]
+   }
+  },
+  {
+   "text": "Start for free",
+   "diff": {}
+  }
+ ],
+ "animationsOnLoad": [],
+ "animationsAfter3s": 0
+}

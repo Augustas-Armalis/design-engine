@@ -1,0 +1,81 @@
+{
+  "$about": "Design view references: what a good result looks like per kind, shown next to every candidate at the same size. Paths are repo-relative. Add a reference only when a founder accepted it or it is a measured benchmark he rates (Kargul, Basit, Rico, Kestrel, Quorum, Kaching, Capto).",
+  "post-component": {
+    "label": "X post: one component (still)",
+    "spec": "knowledge/web/x-design-posts.md XP-01, XP-07, XP-08, XP-09, XP-11, XP-12, XP-20, XP-28; system/variety/x-post-formats.json; knowledge/web/kuleszo-craft.md AKZ-01..30",
+    "refs": [
+      {
+        "path": "knowledge/benchmarks/kargul-x/kx-036-0-2107505914345603127.jpg",
+        "why": "Marcel: one dark component, ~40% of the frame, one item mid-drag, solid dark canvas with a faint light"
+      },
+      {
+        "path": "knowledge/benchmarks/x-posts/flohoeller-2up-7x8-chatbox.png",
+        "why": "Flo: 7:8 pair, component at 1.5-2x on a solid warm canvas with a faint grid, no text in media"
+      },
+      {
+        "path": "knowledge/benchmarks/kuleszo-x/kz-172-0-2098158327763283994.jpg",
+        "why": "Kuleszo: one component centred on a flat canvas at 55-75% width"
+      },
+      {
+        "path": "knowledge/benchmarks/kuleszo-x/kz-129-0-2103386528345113052.jpg",
+        "why": "Kuleszo: app window cropped off right and bottom on a mid-grey canvas"
+      },
+      {
+        "path": "knowledge/benchmarks/x-posts/mrncst-image-components-home.png",
+        "why": "mrncst: components close-cropped on solid light canvas"
+      },
+      {
+        "path": "knowledge/benchmarks/x-posts/gavmn-image-small-icons.png",
+        "why": "Gavmn: object centred at 25-35% height, solid field"
+      }
+    ]
+  },
+  "hero-light": {
+    "label": "Light SaaS hero",
+    "spec": "knowledge/engine-accepted/quorum/README.md; knowledge/web/hero-craft-study-2026-10.md HC-01..06; founder-taste hero rules; knowledge/web/kuleszo-craft.md",
+    "refs": [
+      {
+        "path": "knowledge/engine-accepted/kestrel/kestrel-fold@2x.png",
+        "why": "ACCEPTED: centred copy over a full product dashboard"
+      },
+      {
+        "path": "knowledge/engine-accepted/quorum/quorum-fold@2x.png",
+        "why": "ACCEPTED: copy column + gradient stage holding the real app"
+      },
+      {
+        "path": "knowledge/benchmarks/kuleszo-x/kz-143-1-2101057446718648370.jpg",
+        "why": "Kuleszo: centred stack with tabs over a product window that runs off the fold"
+      },
+      {
+        "path": "knowledge/benchmarks/basit/dribbble-lowpro-landing-page-design.jpg",
+        "why": "Basit: product cropped by the fold, two-tone headline, rendered 3D field"
+      },
+      {
+        "path": "knowledge/benchmarks/basit/oberion-fold.png",
+        "why": "Basit: light hero with a real dashboard at 58%"
+      }
+    ]
+  },
+  "hero-dark": {
+    "label": "Dark SaaS hero",
+    "spec": "knowledge/web/dark-mode-premium.md; founder-taste dark hero rules; knowledge/web/basit-craft.md",
+    "refs": [
+      {
+        "path": "knowledge/benchmarks/dark/linear-fold-1440x900@2x.png",
+        "why": "Linear: the dark bar"
+      },
+      {
+        "path": "knowledge/benchmarks/basit/dribbble-tasker-landing-page-design.jpg",
+        "why": "Basit: dark product lit from behind, cropped by the fold"
+      },
+      {
+        "path": "knowledge/benchmarks/basit/fuchsia-fold.png",
+        "why": "Basit: violet floor light rising behind the product"
+      },
+      {
+        "path": "work/kite/landing/hero-4k.png",
+        "why": "ACCEPTED: Kite hero"
+      }
+    ]
+  }
+}

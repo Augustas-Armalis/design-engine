@@ -1,0 +1,1761 @@
+{
+ "title": "Ballogy case study: app design for 300K+ athletes | DesignMe",
+ "docH": 53288,
+ "bodyBg": "rgb(255, 255, 255)",
+ "bodyFont": "Inter, \"Inter Fallback\", system-ui, -apple-system, \"Segoe UI\", sans-serif",
+ "h1": [
+  {
+   "text": "Redesigning and rebuilding Ballogy’s 300K+ user sports app",
+   "family": "Saans, \"Saans Fallback\", Inter, \"Inter Fallback\", system-ui,",
+   "size": "56px",
+   "weight": "600",
+   "lh": "64.4px",
+   "ls": "-1.12px",
+   "color": "rgb(245, 245, 245)",
+   "feat": "normal",
+   "rect": {
+    "x": 120,
+    "y": 197,
+    "w": 993,
+    "h": 129
+   }
+  }
+ ],
+ "sub": {
+  "text": "We’ve partnered with Ballogy for 9+ months to overhaul the full mobile product experience,",
+  "family": "Inter, \"Inter Fallback\", system-ui, -apple-system, \"Segoe UI",
+  "size": "18px",
+  "weight": "600",
+  "lh": "25.2px",
+  "ls": "normal",
+  "color": "rgb(245, 245, 245)",
+  "feat": "normal",
+  "rect": {
+   "x": 120,
+   "y": 346,
+   "w": 900,
+   "h": 50
+  }
+ },
+ "h2": [
+  {
+   "text": "About the project",
+   "family": "Saans, \"Saans Fallback\", Inter, \"Inter Fallback\", system-ui,",
+   "size": "24px",
+   "weight": "600",
+   "lh": "31.2px",
+   "ls": "-0.24px",
+   "color": "rgb(245, 245, 245)",
+   "feat": "normal",
+   "rect": {
+    "x": 151,
+    "y": 1087,
+    "w": 188,
+    "h": 31
+   }
+  },
+  {
+   "text": "The challenge",
+   "family": "Saans, \"Saans Fallback\", Inter, \"Inter Fallback\", system-ui,",
+   "size": "24px",
+   "weight": "600",
+   "lh": "31.2px",
+   "ls": "-0.24px",
+   "color": "rgb(245, 245, 245)",
+   "feat": "normal",
+   "rect": {
+    "x": 153,
+    "y": 2582,
+    "w": 150,
+    "h": 31
+   }
+  },
+  {
+   "text": "Our approach",
+   "family": "Saans, \"Saans Fallback\", Inter, \"Inter Fallback\", system-ui,",
+   "size": "24px",
+   "weight": "600",
+   "lh": "31.2px",
+   "ls": "-0.24px",
+   "color": "rgb(245, 245, 245)",
+   "feat": "normal",
+   "rect": {
+    "x": 154,
+    "y": 4676,
+    "w": 149,
+    "h": 31
+   }
+  },
+  {
+   "text": "UX rework",
+   "family": "Saans, \"Saans Fallback\", Inter, \"Inter Fallback\", system-ui,",
+   "size": "24px",
+   "weight": "600",
+   "lh": "31.2px",
+   "ls": "-0.24px",
+   "color": "rgb(245, 245, 245)",
+   "feat": "normal",
+   "rect": {
+    "x": 154,
+    "y": 9466,
+    "w": 109,
+    "h": 31
+   }
+  },
+  {
+   "text": "Solution",
+   "family": "Saans, \"Saans Fallback\", Inter, \"Inter Fallback\", system-ui,",
+   "size": "24px",
+   "weight": "600",
+   "lh": "31.2px",
+   "ls": "-0.24px",
+   "color": "rgb(245, 245, 245)",
+   "feat": "normal",
+   "rect": {
+    "x": 154,
+    "y": 10654,
+    "w": 89,
+    "h": 31
+   }
+  },
+  {
+   "text": "Players",
+   "family": "Saans, \"Saans Fallback\", Inter, \"Inter Fallback\", system-ui,",
+   "size": "118.4px",
+   "weight": "600",
+   "lh": "130.24px",
+   "ls": "-3.552px",
+   "color": "rgb(245, 245, 245)",
+   "feat": "normal",
+   "rect": {
+    "x": 120,
+    "y": 11759,
+    "w": 1200,
+    "h": 130
+   }
+  },
+  {
+   "text": "New athlete experience",
+   "family": "Saans, \"Saans Fallback\", Inter, \"Inter Fallback\", system-ui,",
+   "size": "24px",
+   "weight": "600",
+   "lh": "31.2px",
+   "ls": "-0.24px",
+   "color": "rgb(245, 245, 245)",
+   "feat": "normal",
+   "rect": {
+    "x": 154,
+    "y": 12045,
+    "w": 251,
+    "h": 31
+   }
+  },
+  {
+   "text": "Demo-first experience",
+   "family": "Saans, \"Saans Fallback\", Inter, \"Inter Fallback\", system-ui,",
+   "size": "24px",
+   "weight": "600",
+   "lh": "31.2px",
+   "ls": "-0.24px",
+   "color": "rgb(245, 245, 245)",
+   "feat": "normal",
+   "rect": {
+    "x": 153,
+    "y": 13308,
+    "w": 240,
+    "h": 31
+   }
+  },
+  {
+   "text": "Clearer home base",
+   "family": "Saans, \"Saans Fallback\", Inter, \"Inter Fallback\", system-ui,",
+   "size": "24px",
+   "weight": "600",
+   "lh": "31.2px",
+   "ls": "-0.24px",
+   "color": "rgb(245, 245, 245)",
+   "feat": "normal",
+   "rect": {
+    "x": 154,
+    "y": 15964,
+    "w": 202,
+    "h": 31
+   }
+  },
+  {
+   "text": "Daily progress tracking",
+   "family": "Saans, \"Saans Fallback\", Inter, \"Inter Fallback\", system-ui,",
+   "size": "24px",
+   "weight": "600",
+   "lh": "31.2px",
+   "ls": "-0.24px",
+   "color": "rgb(245, 245, 245)",
+   "feat": "normal",
+   "rect": {
+    "x": 154,
+    "y": 18448,
+    "w": 245,
+    "h": 31
+   }
+  },
+  {
+   "text": "Training tools",
+   "family": "Saans, \"Saans Fallback\", Inter, \"Inter Fallback\", system-ui,",
+   "size": "24px",
+   "weight": "600",
+   "lh": "31.2px",
+   "ls": "-0.24px",
+   "color": "rgb(245, 245, 245)",
+   "feat": "normal",
+   "rect": {
+    "x": 151,
+    "y": 21790,
+    "w": 142,
+    "h": 31
+   }
+  },
+  {
+   "text": "Gamification",
+   "family": "Saans, \"Saans Fallback\", Inter, \"Inter Fallback\", system-ui,",
+   "size": "24px",
+   "weight": "600",
+   "lh": "31.2px",
+   "ls": "-0.24px",
+   "color": "rgb(245, 245, 245)",
+   "feat": "normal",
+   "rect": {
+    "x": 148,
+    "y": 25462,
+    "w": 138,
+    "h": 31
+   }
+  }
+ ],
+ "btns": [
+  {
+   "text": "Skip to content",
+   "rect": {
+    "x": 8,
+    "y": -66,
+    "w": 131,
+    "h": 37
+   },
+   "radius": "0px",
+   "pad": "8px 16px",
+   "bg": "rgb(17, 111, 248)",
+   "bgImg": "none",
+   "color": "rgb(255, 255, 255)",
+   "border": "0px none rgb(255, 255, 255)",
+   "shadow": "none",
+   "font": "14px/400 Inter, \"Inter Fallback\", syste",
+   "ls": "normal",
+   "transition": "color 0.15s cubic-bezier(0.22, 1, 0.36, 1)"
+  },
+  {
+   "text": "Accept all",
+   "rect": {
+    "x": 61,
+    "y": 803,
+    "w": 98,
+    "h": 36
+   },
+   "radius": "2px",
+   "pad": "0px 16px",
+   "bg": "rgb(17, 111, 248)",
+   "bgImg": "none",
+   "color": "rgb(255, 255, 255)",
+   "border": "0px none rgb(255, 255, 255)",
+   "shadow": "none",
+   "font": "14px/500 Inter, \"Inter Fallback\", syste",
+   "ls": "normal",
+   "transition": "color 0.32s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.32s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.32s cubic-bezie"
+  },
+  {
+   "text": "Reject all",
+   "rect": {
+    "x": 171,
+    "y": 803,
+    "w": 92,
+    "h": 36
+   },
+   "radius": "2px",
+   "pad": "0px 16px",
+   "bg": "rgb(17, 111, 248)",
+   "bgImg": "none",
+   "color": "rgb(255, 255, 255)",
+   "border": "0px none rgb(255, 255, 255)",
+   "shadow": "none",
+   "font": "14px/500 Inter, \"Inter Fallback\", syste",
+   "ls": "normal",
+   "transition": "color 0.32s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.32s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.32s cubic-bezie"
+  },
+  {
+   "text": "Our work",
+   "rect": {
+    "x": 483,
+    "y": 51,
+    "w": 99,
+    "h": 36
+   },
+   "radius": "2px",
+   "pad": "0px 12px",
+   "bg": "color(srgb 0.960784 0.960784 0.960784 / 0.033)",
+   "bgImg": "none",
+   "color": "rgb(245, 245, 245)",
+   "border": "0px none rgb(245, 245, 245)",
+   "shadow": "none",
+   "font": "14px/500 Inter, \"Inter Fallback\", syste",
+   "ls": "normal",
+   "transition": "all"
+  },
+  {
+   "text": "Book a call",
+   "rect": {
+    "x": 1221,
+    "y": 51,
+    "w": 99,
+    "h": 36
+   },
+   "radius": "2px",
+   "pad": "0px 16px",
+   "bg": "rgb(17, 111, 248)",
+   "bgImg": "none",
+   "color": "rgb(255, 255, 255)",
+   "border": "0px none rgb(255, 255, 255)",
+   "shadow": "none",
+   "font": "14px/500 Inter, \"Inter Fallback\", syste",
+   "ls": "normal",
+   "transition": "color 0.32s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.32s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.32s cubic-bezie"
+  },
+  {
+   "text": "Book an intro call",
+   "rect": {
+    "x": 593,
+    "y": 852,
+    "w": 147,
+    "h": 36
+   },
+   "radius": "2px",
+   "pad": "0px 16px",
+   "bg": "rgb(245, 245, 245)",
+   "bgImg": "none",
+   "color": "rgb(15, 15, 15)",
+   "border": "0px none rgb(15, 15, 15)",
+   "shadow": "none",
+   "font": "14px/500 Inter, \"Inter Fallback\", syste",
+   "ls": "normal",
+   "transition": "color 0.32s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.32s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.32s cubic-bezie"
+  },
+  {
+   "text": "Send email",
+   "rect": {
+    "x": 740,
+    "y": 852,
+    "w": 108,
+    "h": 36
+   },
+   "radius": "2px",
+   "pad": "0px 16px",
+   "bg": "rgb(36, 36, 36)",
+   "bgImg": "none",
+   "color": "rgb(245, 245, 245)",
+   "border": "1px solid rgba(245, 245, 245, 0.12)",
+   "shadow": "none",
+   "font": "14px/500 Inter, \"Inter Fallback\", syste",
+   "ls": "normal",
+   "transition": "color 0.32s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.32s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.32s cubic-bezie"
+  },
+  {
+   "text": "",
+   "rect": {
+    "x": 401,
+    "y": 695,
+    "w": 73,
+    "h": 32
+   },
+   "radius": "999px",
+   "pad": "0px 14px",
+   "bg": "rgb(255, 255, 255)",
+   "bgImg": "none",
+   "color": "rgb(3, 17, 28)",
+   "border": "1px solid rgba(3, 17, 28, 0.2)",
+   "shadow": "rgba(0, 0, 0, 0.04) 0px 1px 2px 0px",
+   "font": "13px/500 Inter, \"Inter Fallback\", syste",
+   "ls": "normal",
+   "transition": "border-color 0.2s cubic-bezier(0.22, 1, 0.36, 1), background 0.2s cubic-bezier(0.22, 1, 0.36, 1), transform 0.2s cubic-b"
+  },
+  {
+   "text": "",
+   "rect": {
+    "x": 480,
+    "y": 695,
+    "w": 177,
+    "h": 32
+   },
+   "radius": "999px",
+   "pad": "0px 14px",
+   "bg": "rgb(255, 255, 255)",
+   "bgImg": "none",
+   "color": "rgb(3, 17, 28)",
+   "border": "1px solid rgba(3, 17, 28, 0.2)",
+   "shadow": "rgba(0, 0, 0, 0.04) 0px 1px 2px 0px",
+   "font": "13px/500 Inter, \"Inter Fallback\", syste",
+   "ls": "normal",
+   "transition": "border-color 0.2s cubic-bezier(0.22, 1, 0.36, 1), background 0.2s cubic-bezier(0.22, 1, 0.36, 1), transform 0.2s cubic-b"
+  },
+  {
+   "text": "",
+   "rect": {
+    "x": 663,
+    "y": 695,
+    "w": 160,
+    "h": 32
+   },
+   "radius": "999px",
+   "pad": "0px 14px",
+   "bg": "rgb(255, 255, 255)",
+   "bgImg": "none",
+   "color": "rgb(3, 17, 28)",
+   "border": "1px solid rgba(3, 17, 28, 0.2)",
+   "shadow": "rgba(0, 0, 0, 0.04) 0px 1px 2px 0px",
+   "font": "13px/500 Inter, \"Inter Fallback\", syste",
+   "ls": "normal",
+   "transition": "border-color 0.2s cubic-bezier(0.22, 1, 0.36, 1), background 0.2s cubic-bezier(0.22, 1, 0.36, 1), transform 0.2s cubic-b"
+  },
+  {
+   "text": "",
+   "rect": {
+    "x": 829,
+    "y": 695,
+    "w": 144,
+    "h": 32
+   },
+   "radius": "999px",
+   "pad": "0px 14px",
+   "bg": "rgb(255, 255, 255)",
+   "bgImg": "none",
+   "color": "rgb(3, 17, 28)",
+   "border": "1px solid rgba(3, 17, 28, 0.2)",
+   "shadow": "rgba(0, 0, 0, 0.04) 0px 1px 2px 0px",
+   "font": "13px/500 Inter, \"Inter Fallback\", syste",
+   "ls": "normal",
+   "transition": "border-color 0.2s cubic-bezier(0.22, 1, 0.36, 1), background 0.2s cubic-bezier(0.22, 1, 0.36, 1), transform 0.2s cubic-b"
+  },
+  {
+   "text": "",
+   "rect": {
+    "x": 979,
+    "y": 695,
+    "w": 97,
+    "h": 32
+   },
+   "radius": "999px",
+   "pad": "0px 14px",
+   "bg": "rgb(255, 255, 255)",
+   "bgImg": "none",
+   "color": "rgb(3, 17, 28)",
+   "border": "1px solid rgba(3, 17, 28, 0.2)",
+   "shadow": "rgba(0, 0, 0, 0.04) 0px 1px 2px 0px",
+   "font": "13px/500 Inter, \"Inter Fallback\", syste",
+   "ls": "normal",
+   "transition": "border-color 0.2s cubic-bezier(0.22, 1, 0.36, 1), background 0.2s cubic-bezier(0.22, 1, 0.36, 1), transform 0.2s cubic-b"
+  },
+  {
+   "text": "z\nz\nZ\nAsk Tidy",
+   "rect": {
+    "x": 658,
+    "y": 775,
+    "w": 124,
+    "h": 44
+   },
+   "radius": "999px",
+   "pad": "0px 18px 0px 14px",
+   "bg": "color(srgb 1 1 1 / 0.92)",
+   "bgImg": "none",
+   "color": "rgb(3, 17, 28)",
+   "border": "1px solid rgba(3, 17, 28, 0.1)",
+   "shadow": "rgba(0, 0, 0, 0.1) 0px 8px 28px 0px",
+   "font": "14px/500 Inter, \"Inter Fallback\", syste",
+   "ls": "normal",
+   "transition": "opacity 0.2s cubic-bezier(0.22, 1, 0.36, 1) 0.28s, transform 0.3s cubic-bezier(0.22, 1, 0.36, 1)"
+  }
+ ],
+ "nav": {
+  "rect": {
+   "x": 0,
+   "y": 0,
+   "w": 1440,
+   "h": 107
+  },
+  "position": "sticky",
+  "bg": "rgba(0, 0, 0, 0)",
+  "backdrop": "none",
+  "border": "0px none rgb(3, 17, 28)",
+  "links": [
+   {
+    "t": "NEW\n:\nAI-native design s",
+    "size": "14px",
+    "weight": "400",
+    "color": "rgba(245, 245, 245, 0.75)",
+    "x": 0,
+    "w": 1440,
+    "h": 32
+   },
+   {
+    "t": "",
+    "size": "16px",
+    "weight": "400",
+    "color": "rgb(245, 245, 245)",
+    "x": 120,
+    "w": 117,
+    "h": 40
+   },
+   {
+    "t": "Services",
+    "size": "14px",
+    "weight": "500",
+    "color": "rgb(245, 245, 245)",
+    "x": 384,
+    "w": 96,
+    "h": 36
+   },
+   {
+    "t": "Our work",
+    "size": "14px",
+    "weight": "500",
+    "color": "rgb(245, 245, 245)",
+    "x": 483,
+    "w": 99,
+    "h": 36
+   },
+   {
+    "t": "Company",
+    "size": "14px",
+    "weight": "500",
+    "color": "rgb(245, 245, 245)",
+    "x": 586,
+    "w": 102,
+    "h": 36
+   },
+   {
+    "t": "Free tools\nNEW",
+    "size": "14px",
+    "weight": "500",
+    "color": "rgb(245, 245, 245)",
+    "x": 693,
+    "w": 139,
+    "h": 36
+   },
+   {
+    "t": "Contact",
+    "size": "14px",
+    "weight": "500",
+    "color": "rgb(245, 245, 245)",
+    "x": 836,
+    "w": 74,
+    "h": 36
+   },
+   {
+    "t": "Insights",
+    "size": "14px",
+    "weight": "500",
+    "color": "rgb(245, 245, 245)",
+    "x": 914,
+    "w": 72,
+    "h": 36
+   },
+   {
+    "t": "",
+    "size": "16px",
+    "weight": "400",
+    "color": "rgba(245, 245, 245, 0.75)",
+    "x": 1133,
+    "w": 36,
+    "h": 36
+   },
+   {
+    "t": "",
+    "size": "16px",
+    "weight": "400",
+    "color": "rgba(245, 245, 245, 0.75)",
+    "x": 1177,
+    "w": 36,
+    "h": 36
+   },
+   {
+    "t": "Book a call",
+    "size": "14px",
+    "weight": "500",
+    "color": "rgb(255, 255, 255)",
+    "x": 1221,
+    "w": 99,
+    "h": 36
+   }
+  ]
+ },
+ "radii": [
+  [
+   "2px",
+   14
+  ],
+  [
+   "999px",
+   12
+  ],
+  [
+   "1px",
+   8
+  ],
+  [
+   "4px",
+   2
+  ],
+  [
+   "24px",
+   1
+  ],
+  [
+   "8.5px",
+   1
+  ],
+  [
+   "0px 0px 8.5px 8.5px",
+   1
+  ],
+  [
+   "5.5px",
+   1
+  ]
+ ],
+ "shadows": [
+  [
+   "rgba(0, 0, 0, 0.04) 0px 1px 2px 0px",
+   5
+  ],
+  [
+   "rgba(3, 17, 28, 0.08) 0px 4px 16px 0px",
+   1
+  ],
+  [
+   "rgba(0, 0, 0, 0.5) 0px 4px 16px 0px",
+   1
+  ],
+  [
+   "rgba(0, 0, 0, 0.16) 0px 28px 70px 0px",
+   1
+  ],
+  [
+   "rgba(0, 0, 0, 0.1) 0px 8px 28px 0px",
+   1
+  ]
+ ],
+ "bgs": [
+  [
+   "rgb(15, 15, 15)",
+   89
+  ],
+  [
+   "rgb(26, 26, 26)",
+   77
+  ],
+  [
+   "rgb(245, 245, 245)",
+   32
+  ],
+  [
+   "rgb(24, 24, 24)",
+   30
+  ],
+  [
+   "rgb(36, 36, 36)",
+   24
+  ],
+  [
+   "rgb(56, 56, 56)",
+   23
+  ],
+  [
+   "rgb(255, 255, 255)",
+   18
+  ],
+  [
+   "color(srgb 0.141176 0.141176 0.141176 / 0.88)",
+   11
+  ],
+  [
+   "rgba(245, 245, 245, 0.06)",
+   9
+  ],
+  [
+   "rgb(40, 40, 40)",
+   9
+  ],
+  [
+   "color(srgb 0.960784 0.960784 0.960784 / 0.45)",
+   8
+  ],
+  [
+   "rgba(34, 197, 94, 0.16)",
+   7
+  ],
+  [
+   "rgb(17, 111, 248)",
+   6
+  ],
+  [
+   "rgba(245, 245, 245, 0.24)",
+   6
+  ],
+  [
+   "rgb(248, 248, 248)",
+   6
+  ],
+  [
+   "rgb(3, 17, 28)",
+   4
+  ],
+  [
+   "rgb(57, 57, 57)",
+   4
+  ],
+  [
+   "rgb(0, 0, 0)",
+   3
+  ],
+  [
+   "rgba(3, 17, 28, 0.05)",
+   2
+  ],
+  [
+   "rgb(17, 17, 17)",
+   2
+  ],
+  [
+   "rgb(75, 75, 75)",
+   2
+  ],
+  [
+   "rgba(249, 115, 22, 0.16)",
+   2
+  ],
+  [
+   "color(srgb 0.960784 0.960784 0.960784 / 0.033)",
+   1
+  ],
+  [
+   "rgba(0, 0, 0, 0.45)",
+   1
+  ],
+  [
+   "color(srgb 0.0588235 0.0588235 0.0588235 / 0.82)",
+   1
+  ]
+ ],
+ "colors": [
+  [
+   "rgb(245, 245, 245)",
+   282
+  ],
+  [
+   "rgba(245, 245, 245, 0.62)",
+   86
+  ],
+  [
+   "rgba(245, 245, 245, 0.75)",
+   59
+  ],
+  [
+   "rgb(3, 17, 28)",
+   25
+  ],
+  [
+   "rgb(15, 15, 15)",
+   7
+  ],
+  [
+   "rgb(134, 217, 127)",
+   7
+  ],
+  [
+   "rgb(255, 255, 255)",
+   6
+  ],
+  [
+   "rgba(3, 17, 28, 0.75)",
+   4
+  ],
+  [
+   "rgba(3, 17, 28, 0.62)",
+   4
+  ],
+  [
+   "rgb(246, 167, 107)",
+   2
+  ],
+  [
+   "rgb(143, 180, 255)",
+   1
+  ],
+  [
+   "rgb(255, 106, 51)",
+   1
+  ]
+ ],
+ "fonts": [
+  [
+   "Inter 14px/500",
+   75
+  ],
+  [
+   "Inter 16px/500",
+   70
+  ],
+  [
+   "Inter 11px/500",
+   52
+  ],
+  [
+   "Inter 13px/400",
+   48
+  ],
+  [
+   "Inter 16px/400",
+   45
+  ],
+  [
+   "Inter 14px/400",
+   35
+  ],
+  [
+   "Saans 24px/600",
+   30
+  ],
+  [
+   "Saans 20px/600",
+   27
+  ],
+  [
+   "Inter 18px/600",
+   26
+  ],
+  [
+   "Inter 11px/400",
+   22
+  ],
+  [
+   "Inter 16px/600",
+   20
+  ],
+  [
+   "Saans 32px/600",
+   8
+  ],
+  [
+   "Inter 13px/500",
+   5
+  ],
+  [
+   "Saans 118.4px/600",
+   3
+  ],
+  [
+   "Inter 18px/400",
+   3
+  ],
+  [
+   "Saans 56px/600",
+   2
+  ],
+  [
+   "Inter 14px/600",
+   2
+  ],
+  [
+   "Saans 18px/600",
+   1
+  ],
+  [
+   "Saans 72px/600",
+   1
+  ],
+  [
+   "Inter 18px/500",
+   1
+  ],
+  [
+   "Inter 10px/400",
+   1
+  ],
+  [
+   "Inter 12.8px/400",
+   1
+  ],
+  [
+   "Inter 8.5px/700",
+   1
+  ],
+  [
+   "Inter 10.625px/700",
+   1
+  ],
+  [
+   "Inter 13.175px/700",
+   1
+  ]
+ ],
+ "borders": [
+  [
+   "1px rgba(245, 245, 245, 0.12)",
+   140
+  ],
+  [
+   "1px rgba(0, 0, 0, 0)",
+   12
+  ],
+  [
+   "1px rgba(245, 245, 245, 0.24)",
+   9
+  ],
+  [
+   "1px rgba(3, 17, 28, 0.2)",
+   8
+  ],
+  [
+   "1px rgba(3, 17, 28, 0.1)",
+   4
+  ],
+  [
+   "1px rgb(245, 245, 245)",
+   2
+  ],
+  [
+   "1px rgb(3, 17, 28)",
+   1
+  ],
+  [
+   "1px rgb(255, 255, 255)",
+   1
+  ],
+  [
+   "1px rgba(255, 255, 255, 0.06)",
+   1
+  ]
+ ],
+ "containers": [
+  [
+   "100% (w674)",
+   36
+  ],
+  [
+   "1280px (w1280)",
+   32
+  ],
+  [
+   "100% (w1360)",
+   31
+  ],
+  [
+   "100% (w1414)",
+   26
+  ],
+  [
+   "672px (w672)",
+   22
+  ],
+  [
+   "100% (w991)",
+   5
+  ],
+  [
+   "100% (w1020)",
+   4
+  ],
+  [
+   "100% (w974)",
+   2
+  ],
+  [
+   "100% (w904)",
+   2
+  ],
+  [
+   "993.384px (w993)",
+   1
+  ],
+  [
+   "75% (w900)",
+   1
+  ],
+  [
+   "100% (w995)",
+   1
+  ]
+ ],
+ "sections": [
+  {
+   "tag": "SECTION",
+   "cls": "overview",
+   "y": 107,
+   "h": 835,
+   "pt": "64px",
+   "pb": "96px",
+   "bg": "rgb(17, 17, 17)"
+  },
+  {
+   "tag": "SECTION",
+   "cls": "chapter container",
+   "y": 942,
+   "h": 733,
+   "pt": "128px",
+   "pb": "80px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "DIV",
+   "cls": "media cols-1 full",
+   "y": 1675,
+   "h": 762,
+   "pt": "0px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "cls": "chapter container",
+   "y": 2436,
+   "h": 1378,
+   "pt": "128px",
+   "pb": "80px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "DIV",
+   "cls": "media cols-1 full",
+   "y": 3815,
+   "h": 716,
+   "pt": "0px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "cls": "chapter container",
+   "y": 4531,
+   "h": 368,
+   "pt": "128px",
+   "pb": "80px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "DIV",
+   "cls": "media cols-1 full",
+   "y": 4899,
+   "h": 776,
+   "pt": "0px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "DIV",
+   "cls": "media cols-2 full",
+   "y": 5687,
+   "h": 674,
+   "pt": "0px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "DIV",
+   "cls": "media cols-1 full",
+   "y": 6373,
+   "h": 918,
+   "pt": "0px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "DIV",
+   "cls": "media cols-1 full",
+   "y": 7303,
+   "h": 2018,
+   "pt": "0px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "cls": "chapter container",
+   "y": 9321,
+   "h": 386,
+   "pt": "128px",
+   "pb": "80px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "DIV",
+   "cls": "media cols-1 full",
+   "y": 9707,
+   "h": 802,
+   "pt": "0px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "cls": "chapter container",
+   "y": 10509,
+   "h": 406,
+   "pt": "128px",
+   "pb": "80px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "DIV",
+   "cls": "media cols-1 full",
+   "y": 10915,
+   "h": 701,
+   "pt": "0px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "DIV",
+   "cls": "section-title container",
+   "y": 11631,
+   "h": 283,
+   "pt": "128px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "cls": "chapter container",
+   "y": 11900,
+   "h": 438,
+   "pt": "128px",
+   "pb": "80px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "DIV",
+   "cls": "media cols-1 full",
+   "y": 12338,
+   "h": 825,
+   "pt": "0px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "cls": "chapter container",
+   "y": 13163,
+   "h": 344,
+   "pt": "128px",
+   "pb": "80px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "DIV",
+   "cls": "media cols-1 full",
+   "y": 13507,
+   "h": 762,
+   "pt": "0px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "DIV",
+   "cls": "media cols-1 full",
+   "y": 14280,
+   "h": 765,
+   "pt": "0px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "DIV",
+   "cls": "media cols-1 full",
+   "y": 15057,
+   "h": 762,
+   "pt": "0px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "cls": "chapter container",
+   "y": 15819,
+   "h": 318,
+   "pt": "128px",
+   "pb": "80px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "DIV",
+   "cls": "media cols-1 full",
+   "y": 16137,
+   "h": 1133,
+   "pt": "0px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "DIV",
+   "cls": "media framed fcols-1 tone-auto full",
+   "y": 17282,
+   "h": 1020,
+   "pt": "0px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "cls": "chapter container",
+   "y": 18302,
+   "h": 320,
+   "pt": "128px",
+   "pb": "80px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "DIV",
+   "cls": "media cols-1 full",
+   "y": 18623,
+   "h": 723,
+   "pt": "0px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "DIV",
+   "cls": "media cols-2 full",
+   "y": 19357,
+   "h": 412,
+   "pt": "0px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "DIV",
+   "cls": "media cols-1 full",
+   "y": 19781,
+   "h": 831,
+   "pt": "0px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "DIV",
+   "cls": "media framed fcols-1 tone-auto full",
+   "y": 20624,
+   "h": 1020,
+   "pt": "0px",
+   "pb": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "tag": "SECTION",
+   "cls": "chapter container",
+   "y": 21644,
+   "h": 318,
+   "pt": "128px",
+   "pb": "80px",
+   "bg": "rgba(0, 0, 0, 0)"
+  }
+ ],
+ "links": [
+  "https://www.designme.agency/projects/ballogy#content",
+  "https://www.designme.agency/legal/privacy-policy",
+  "https://www.designme.agency/design-subscription",
+  "https://www.designme.agency/",
+  "https://www.designme.agency/services/product-design",
+  "https://www.designme.agency/services/website-design",
+  "https://www.designme.agency/services/motion-design",
+  "https://www.designme.agency/services/brand-identity",
+  "https://www.designme.agency/services/pitch-deck-design",
+  "https://www.designme.agency/services/framer-agency",
+  "https://www.designme.agency/services/webflow-agency",
+  "https://www.designme.agency/services/astro-development",
+  "https://www.designme.agency/services/nextjs-development",
+  "https://www.designme.agency/services/ai-mvp-cleanup",
+  "https://www.designme.agency/migrations",
+  "https://www.designme.agency/services/cro",
+  "https://www.designme.agency/services/seo-aeo",
+  "https://www.designme.agency/ux-audit",
+  "https://www.designme.agency/services/ai-workflows",
+  "https://www.designme.agency/services",
+  "https://www.designme.agency/pricing",
+  "https://www.designme.agency/startups",
+  "https://www.designme.agency/compare",
+  "https://www.designme.agency/integrations",
+  "https://www.designme.agency/tools",
+  "https://www.designme.agency/projects",
+  "https://www.designme.agency/our-process",
+  "https://www.designme.agency/clients",
+  "https://www.designme.agency/reviews",
+  "https://www.designme.agency/fundraising",
+  "https://www.designme.agency/projects/hint",
+  "https://www.designme.agency/projects/ballogy",
+  "https://www.designme.agency/projects/lightdash",
+  "https://www.designme.agency/projects/datawizz",
+  "https://www.designme.agency/projects/seamless-ai",
+  "https://www.designme.agency/projects/n3xt",
+  "https://www.designme.agency/about-us",
+  "https://www.designme.agency/careers",
+  "https://www.designme.agency/faq",
+  "https://www.designme.agency/referrals",
+  "https://www.designme.agency/careers/motion-designer",
+  "https://www.designme.agency/careers/brand-designer",
+  "https://www.designme.agency/careers/senior-website-designer",
+  "https://www.designme.agency/contact",
+  "https://www.designme.agency/insights",
+  "https://www.designme.agency/intro",
+  "mailto:hello@designme.agency",
+  "https://www.designme.agency/projects/ballogy#about-the-project",
+  "https://www.designme.agency/projects/ballogy#ux-rework",
+  "https://www.designme.agency/projects/ballogy#new-athlete-experience",
+  "https://www.designme.agency/projects/ballogy#everything-in-one-place",
+  "https://www.designme.agency/projects/ballogy#different-purpose-entirely",
+  "https://www.designme.agency/projects/ballogy#sharper-visual-system",
+  "https://www.designme.agency/projects/ballogy#launch-film-concept",
+  "https://www.designme.agency/projects/ballogy#the-website",
+  "https://www.ballogy.com/",
+  "https://www.designme.agency/industries/d2c",
+  "https://www.designme.agency/projects/iclosed",
+  "https://www.designme.agency/projects/droxy-ai",
+  "https://www.designme.agency/projects/gan-ai",
+  "https://www.designme.agency/projects/travelwith",
+  "https://www.designme.agency/projects/workamajig",
+  "https://www.designme.agency/projects/quotient",
+  "https://www.designme.agency/projects/zaveit",
+  "https://www.designme.agency/projects/devarmor",
+  "https://www.designme.agency/projects/superadvisor",
+  "https://www.designme.agency/projects/zinqai",
+  "https://www.designme.agency/projects/parkbee",
+  "https://www.designme.agency/projects/spatialinc",
+  "https://www.designme.agency/projects/adalat",
+  "https://www.designme.agency/projects/viakonnect",
+  "https://gemini.google.com/app?q=Evaluate%20DesignMe%20as%20a%20potential%20design%20and%20development%20partner%20for%20a%20B2B%20SaaS%20or%20AI%20company.%20Use%20public%20information%20from%20https%3A%2F%2Fdesignme.agency%20and%20summarize%20their%20positioning%2C%20services%2C%20case%20studies%2C%20proof%2C%20strengths%2C%20potential%20concerns%2C%20and%20ideal%20client%20fit",
+  "https://chatgpt.com/?q=Evaluate%20DesignMe%20as%20a%20potential%20design%20and%20development%20partner%20for%20a%20B2B%20SaaS%20or%20AI%20company.%20Use%20public%20information%20from%20https%3A%2F%2Fdesignme.agency%20and%20summarize%20their%20positioning%2C%20services%2C%20case%20studies%2C%20proof%2C%20strengths%2C%20potential%20concerns%2C%20and%20ideal%20client%20fit",
+  "https://www.perplexity.ai/search?q=Evaluate%20DesignMe%20as%20a%20potential%20design%20and%20development%20partner%20for%20a%20B2B%20SaaS%20or%20AI%20company.%20Use%20public%20information%20from%20https%3A%2F%2Fdesignme.agency%20and%20summarize%20their%20positioning%2C%20services%2C%20case%20studies%2C%20proof%2C%20strengths%2C%20potential%20concerns%2C%20and%20ideal%20client%20fit",
+  "https://claude.ai/new?q=Evaluate%20DesignMe%20as%20a%20potential%20design%20and%20development%20partner%20for%20a%20B2B%20SaaS%20or%20AI%20company.%20Use%20public%20information%20from%20https%3A%2F%2Fdesignme.agency%20and%20summarize%20their%20positioning%2C%20services%2C%20case%20studies%2C%20proof%2C%20strengths%2C%20potential%20concerns%2C%20and%20ideal%20client%20fit",
+  "https://grok.com/?q=Evaluate%20DesignMe%20as%20a%20potential%20design%20and%20development%20partner%20for%20a%20B2B%20SaaS%20or%20AI%20company.%20Use%20public%20information%20from%20https%3A%2F%2Fdesignme.agency%20and%20summarize%20their%20positioning%2C%20services%2C%20case%20studies%2C%20proof%2C%20strengths%2C%20potential%20concerns%2C%20and%20ideal%20client%20fit",
+  "https://www.designme.agency/industries",
+  "https://www.designme.agency/glossary",
+  "https://www.designme.agency/security",
+  "https://www.designme.agency/sitemap",
+  "https://clutch.co/profile/designme-design-no-code-experts",
+  "https://www.designme.agency/legal/terms-of-service",
+  "https://www.designme.agency/llms.txt",
+  "https://dribbble.com/designmeagency",
+  "https://x.com/designme",
+  "https://www.linkedin.com/company/designmeagency/"
+ ],
+ "hover": [
+  {
+   "text": "Skip to content",
+   "err": "locator.hover: Timeout 3000ms exceeded.\nCall log:\n  - waitin"
+  },
+  {
+   "text": "Accept all",
+   "diff": {
+    "bg": [
+     "rgb(17, 111, 248)",
+     "color(srgb 0.0586667 0.383059 0.855843)"
+    ]
+   }
+  },
+  {
+   "text": "Reject all",
+   "diff": {
+    "bg": [
+     "rgb(17, 111, 248)",
+     "color(srgb 0.0586667 0.383059 0.855843)"
+    ]
+   }
+  },
+  {
+   "text": "Our work",
+   "diff": {}
+  }
+ ],
+ "animationsOnLoad": [
+  {
+   "name": "ann-flow",
+   "target": "A.announcement announcement--ink",
+   "dur": 26000,
+   "delay": 0,
+   "easing": "linear",
+   "iter": null,
+   "props": [
+    "transform"
+   ]
+  },
+  {
+   "name": "ann-glint",
+   "target": "A.announcement announcement--ink",
+   "dur": 6000,
+   "delay": 1400,
+   "easing": "linear",
+   "iter": null,
+   "props": [
+    "transform"
+   ]
+  },
+  {
+   "name": "ann-shine",
+   "target": "SPAN.ann-text",
+   "dur": 6000,
+   "delay": 1400,
+   "easing": "linear",
+   "iter": null,
+   "props": [
+    "backgroundPositionX",
+    "backgroundPositionY"
+   ]
+  },
+  {
+   "name": "case-drift",
+   "target": "IMG.media-item",
+   "dur": "auto",
+   "delay": 0,
+   "easing": "linear",
+   "iter": 1,
+   "props": [
+    "translate"
+   ]
+  },
+  {
+   "name": "case-drift",
+   "target": "IMG.media-item",
+   "dur": "auto",
+   "delay": 0,
+   "easing": "linear",
+   "iter": 1,
+   "props": [
+    "translate"
+   ]
+  },
+  {
+   "name": "case-drift",
+   "target": "IMG.media-item",
+   "dur": "auto",
+   "delay": 0,
+   "easing": "linear",
+   "iter": 1,
+   "props": [
+    "translate"
+   ]
+  },
+  {
+   "name": "case-drift",
+   "target": "IMG.media-item",
+   "dur": "auto",
+   "delay": 0,
+   "easing": "linear",
+   "iter": 1,
+   "props": [
+    "translate"
+   ]
+  },
+  {
+   "name": "case-drift",
+   "target": "IMG.media-item",
+   "dur": "auto",
+   "delay": 0,
+   "easing": "linear",
+   "iter": 1,
+   "props": [
+    "translate"
+   ]
+  },
+  {
+   "name": "case-drift",
+   "target": "IMG.media-item",
+   "dur": "auto",
+   "delay": 0,
+   "easing": "linear",
+   "iter": 1,
+   "props": [
+    "translate"
+   ]
+  },
+  {
+   "name": "case-drift",
+   "target": "IMG.media-item",
+   "dur": "auto",
+   "delay": 0,
+   "easing": "linear",
+   "iter": 1,
+   "props": [
+    "translate"
+   ]
+  },
+  {
+   "name": "case-drift",
+   "target": "IMG.media-item",
+   "dur": "auto",
+   "delay": 0,
+   "easing": "linear",
+   "iter": 1,
+   "props": [
+    "translate"
+   ]
+  },
+  {
+   "name": "case-drift",
+   "target": "IMG.media-item",
+   "dur": "auto",
+   "delay": 0,
+   "easing": "linear",
+   "iter": 1,
+   "props": [
+    "translate"
+   ]
+  },
+  {
+   "name": "case-drift",
+   "target": "IMG.media-item",
+   "dur": "auto",
+   "delay": 0,
+   "easing": "linear",
+   "iter": 1,
+   "props": [
+    "translate"
+   ]
+  },
+  {
+   "name": "case-drift",
+   "target": "IMG.media-item",
+   "dur": "auto",
+   "delay": 0,
+   "easing": "linear",
+   "iter": 1,
+   "props": [
+    "translate"
+   ]
+  },
+  {
+   "name": "case-drift",
+   "target": "IMG.media-item",
+   "dur": "auto",
+   "delay": 0,
+   "easing": "linear",
+   "iter": 1,
+   "props": [
+    "translate"
+   ]
+  },
+  {
+   "name": "case-drift",
+   "target": "IMG.media-item",
+   "dur": "auto",
+   "delay": 0,
+   "easing": "linear",
+   "iter": 1,
+   "props": [
+    "translate"
+   ]
+  },
+  {
+   "name": "case-drift",
+   "target": "IMG.media-item",
+   "dur": "auto",
+   "delay": 0,
+   "easing": "linear",
+   "iter": 1,
+   "props": [
+    "translate"
+   ]
+  },
+  {
+   "name": "case-drift",
+   "target": "IMG.media-item",
+   "dur": "auto",
+   "delay": 0,
+   "easing": "linear",
+   "iter": 1,
+   "props": [
+    "translate"
+   ]
+  },
+  {
+   "name": "case-drift",
+   "target": "IMG.media-item",
+   "dur": "auto",
+   "delay": 0,
+   "easing": "linear",
+   "iter": 1,
+   "props": [
+    "translate"
+   ]
+  },
+  {
+   "name": "case-drift",
+   "target": "IMG.media-item",
+   "dur": "auto",
+   "delay": 0,
+   "easing": "linear",
+   "iter": 1,
+   "props": [
+    "translate"
+   ]
+  },
+  {
+   "name": "case-drift",
+   "target": "IMG.media-item",
+   "dur": "auto",
+   "delay": 0,
+   "easing": "linear",
+   "iter": 1,
+   "props": [
+    "translate"
+   ]
+  },
+  {
+   "name": "case-drift",
+   "target": "IMG.media-item",
+   "dur": "auto",
+   "delay": 0,
+   "easing": "linear",
+   "iter": 1,
+   "props": [
+    "translate"
+   ]
+  },
+  {
+   "name": "case-drift",
+   "target": "IMG.media-item",
+   "dur": "auto",
+   "delay": 0,
+   "easing": "linear",
+   "iter": 1,
+   "props": [
+    "translate"
+   ]
+  },
+  {
+   "name": "case-drift",
+   "target": "IMG.media-item",
+   "dur": "auto",
+   "delay": 0,
+   "easing": "linear",
+   "iter": 1,
+   "props": [
+    "translate"
+   ]
+  },
+  {
+   "name": "case-drift",
+   "target": "IMG.media-item",
+   "dur": "auto",
+   "delay": 0,
+   "easing": "linear",
+   "iter": 1,
+   "props": [
+    "translate"
+   ]
+  },
+  {
+   "name": "case-drift",
+   "target": "IMG.media-item",
+   "dur": "auto",
+   "delay": 0,
+   "easing": "linear",
+   "iter": 1,
+   "props": [
+    "translate"
+   ]
+  },
+  {
+   "name": "case-drift",
+   "target": "IMG.media-item",
+   "dur": "auto",
+   "delay": 0,
+   "easing": "linear",
+   "iter": 1,
+   "props": [
+    "translate"
+   ]
+  },
+  {
+   "name": "case-drift",
+   "target": "IMG.media-item",
+   "dur": "auto",
+   "delay": 0,
+   "easing": "linear",
+   "iter": 1,
+   "props": [
+    "translate"
+   ]
+  },
+  {
+   "name": "case-drift",
+   "target": "IMG.media-item",
+   "dur": "auto",
+   "delay": 0,
+   "easing": "linear",
+   "iter": 1,
+   "props": [
+    "translate"
+   ]
+  },
+  {
+   "name": "ask-blink",
+   "target": "I.",
+   "dur": 5200,
+   "delay": 0,
+   "easing": "linear",
+   "iter": null,
+   "props": [
+    "scale"
+   ]
+  },
+  {
+   "name": "ask-blink",
+   "target": "I.",
+   "dur": 5200,
+   "delay": 40,
+   "easing": "linear",
+   "iter": null,
+   "props": [
+    "scale"
+   ]
+  },
+  {
+   "name": "ask-flow",
+   "target": "DIV.ask-field",
+   "dur": 4500,
+   "delay": 0,
+   "easing": "linear",
+   "iter": null,
+   "props": [
+    "backgroundPositionX",
+    "backgroundPositionY"
+   ]
+  },
+  {
+   "name": "ask-blink",
+   "target": "I.",
+   "dur": 5200,
+   "delay": 0,
+   "easing": "linear",
+   "iter": null,
+   "props": [
+    "scale"
+   ]
+  },
+  {
+   "name": "ask-blink",
+   "target": "I.",
+   "dur": 5200,
+   "delay": 40,
+   "easing": "linear",
+   "iter": null,
+   "props": [
+    "scale"
+   ]
+  }
+ ],
+ "animationsAfter3s": 45
+}
