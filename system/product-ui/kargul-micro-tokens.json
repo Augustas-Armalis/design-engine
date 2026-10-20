@@ -1,0 +1,197 @@
+{
+  "$description": "Kargul Studio micro-details as CSS-ready values, pixel-measured on 2880x2070 case originals and X originals (2026-10-20). CSS px at 1x. Tags: P = pixel-measured (arc fit, shadow fit, colour sample), V = eyeballed, M = repo CSS. Spec and evidence (file + crop per value): knowledge/web/kargul-micro-details.md (rules KMD-01..23). Companion: kargul-tokens.json (repo-measured). Study values only; never copy client work.",
+  "$version": "2026-10-20",
+  "$evidence": [
+    "knowledge/benchmarks/kargul-studio-2026-10/ (clokora-00/06, uniops-02, am-trades-01/02/06/07/11, copecart-00, zeroleaks-00, listkit-00, plunio-02)",
+    "knowledge/benchmarks/kargul-x/latest/ (kxl-003, kxl-014-1, kxl-020-0, kxl-031-0, kxl-032-1, kxl-043-0, kxl-046-0..2)"
+  ],
+
+  "inkAlphaLadder": {
+    "$doc": "Text level as share of ink over the surface; identical rungs in light and dark (P clokora-00, am-trades-07).",
+    "primary": 1.0, "secondary": 0.70, "tertiary": 0.52, "quaternary": 0.38, "icon": 0.19, "separator": 0.12
+  },
+
+  "palettes": {
+    "lightNeutral": {
+      "$src": "P clokora-00/06, am-trades-11; matches the AlignUI neutral ladder (verify)",
+      "page": "#fafafa", "card": "#ffffff", "weak": "#f7f7f7", "navActive": "#ededed", "tile": "#e8e8e8",
+      "border": "#ececec", "borderAlt": "#ebebeb", "divider": "#f0f0f0", "faint": "#d1d1d1",
+      "textTertiary": "#a3a3a3", "textSecondary": "#5c5c5c", "ink": "#171717", "bar": "#1f1f1f",
+      "darkBar": "#171717", "darkBarButton": "#3c3c3c"
+    },
+    "lightWarm": {
+      "$src": "P uniops-02 (scale 2.0 assumed)",
+      "page": "#f7f7f7", "navActive": "#ebebeb", "border": "#e6e6e6", "borderAlt": "#e9e9e9", "iconButton": "#f2f2f2",
+      "ink": "#2e2e2e", "inkAlt": "#303030", "secondary": "#8b8b8b", "label": "#8a8a8a", "link": "#4785ff"
+    },
+    "lightNavyInk": {
+      "$src": "P listkit-00",
+      "sidebar": "#f8fafb", "border": "#e2e4e9", "borderAlt": "#e5e7eb", "kbd": "#f3f4f6",
+      "ink": "#0d2a4c", "secondary": "#536880", "accent": "#288dff", "navActive": "#e5f2ff", "tabActive": "#ebf5ff", "badge": "#ff2056"
+    },
+    "lightCrm": {
+      "$src": "P kxl-046-0..2 (3x)",
+      "page": "#ffffff", "headerBand": "#fbfbfb", "chip": "#f7f7f7", "border": "#eaeaea", "chipBorder": "#e7e7e7",
+      "ink": "#191919", "nav": "#5b5b5b", "th": "#585858", "chipText": "#5e5e5e", "placeholder": "#939393", "icon": "#969696",
+      "accent": "#4526ff", "accentMid": "#482df4", "accentTop": "#5e48f3", "accentBottom": "#4e35f1", "accentRim": "#341dc7",
+      "railActive": "#f1effd", "overdue": "#de2342"
+    },
+    "darkNeutral": {
+      "$src": "P am-trades-01/02/06/07",
+      "canvas": "#2e2e2e", "sidebar": "#121212", "panel": "#0a0a0a", "raised": "#121212", "card": "#0f0f10",
+      "border": "#1c1c1c", "navActive": "#1c1c1c", "chipFill": "#1c1c1c",
+      "text": "#e2e2e2", "textNav": "#a3a3a3", "textTertiary": "#7b7b7b", "textQuaternary": "#5c5c5c", "textSub": "#6d6d6d",
+      "icon": "#333333", "iconAction": "#525252", "separatorDot": "#242424", "avatarInk": "#939393",
+      "accent": "#4785ff", "success": "#1daf61", "orange": "#fa7319"
+    },
+    "darkNavy": {
+      "$src": "P copecart-00; matches the AlignUI gray ladder (verify)",
+      "surface": "#0e121b", "raised": "#181b25", "gridH": "#181b25", "border": "#222530", "gridV": "#222530",
+      "text": "#ffffff", "secondary": "#99a0ae", "tertiary": "#717784", "line": "#405bfb", "success": "#1daf61"
+    },
+    "darkBlack": {
+      "$src": "P zeroleaks-00",
+      "surface": "#000000", "line": "#141414", "navActive": "#141414", "crosshair": "#525252",
+      "text": "#e0e0e0", "secondary": "#7a7a7a", "meta": "#666666", "quaternary": "#3d3d3d", "barFill": "#a3a3a3",
+      "successText": "#00aa4f", "successFill": "#001409"
+    },
+    "darkUniops": {
+      "$src": "P kxl-032-1 (JPEG, +-2 per channel)",
+      "canvas": "#2e2e2e", "window": "#151515", "border": "#232323", "divider": "#262626", "iconCircle": "#1e1e1e",
+      "menu": "#141414", "menuBorder": "#222222", "menuHover": "#1d1d1d",
+      "text": "#ffffff", "nav": "#c4c4c4", "sub": "#a8a8a8", "rowSub": "#9d9d9d", "tabIdle": "#929292",
+      "focusRing": "#5782e1", "focusFill": "#181d23"
+    },
+    "codeEditor": {
+      "$src": "P kxl-003-0",
+      "bg": "#111216", "activeLine": "#181d23", "tabIdle": "#15181f", "lineNumber": "#575a63", "lineNumberActive": "#b3bac4",
+      "keyword": "#8ca0db", "string": "#b0d09f", "type": "#76d4bc", "function": "#dccb86", "warning": "#af8a5d",
+      "sidebarActive": "#343d46", "sidebarActiveTop": "#3b444b", "sidebarText": "#adb4bc", "sidebarTextActive": "#f5fcff"
+    },
+    "amTokenSheet": {
+      "$src": "P am-trades-11 (AlignUI-style token names)",
+      "text-strong-950": "#0f0f0f", "text-sub-600": "#5c5c5c", "text-soft-400": "#a3a3a3", "text-disabled-300": "#d1d1d1", "text-white-0": "#ffffff",
+      "bg-strong-950": "#0f0f0f", "bg-surface-800": "#242424", "bg-sub-300": "#d1d1d1", "bg-soft-200": "#ebebeb", "bg-weak-50": "#f7f7f7", "bg-white-0": "#ffffff",
+      "primary-dark": "#2c61c9", "primary-base": "#4785ff", "primary-alpha-24": "#d3e2ff", "primary-alpha-16": "#e2ebff",
+      "blue": ["#223eae", "#2849d1"], "orange": ["#b85613", "#cf6015", "#e16715", "#ffdac1", "#ffe6d6"],
+      "red": ["#ae222e", "#d12836", "#e93644", "#ffc1c6", "#ffd6d8"], "green": ["#1d7747", "#1a8e50", "#1eaf62", "#c3f5db", "#d1fbe9"]
+    }
+  },
+
+  "pairs": {
+    "$doc": "Same-hue tint fill + deep text (light) or outline / near-black tint (dark). P.",
+    "urgent": { "bg": "#ffebec", "fg": "#681219" },
+    "medium": { "bg": "#fff3eb", "fg": "#71330a" },
+    "waiting": { "bg": "#f4eee6", "fg": "#b36100" },
+    "avatarRed": { "bg": "#ffc0c5", "fg": "#681219" },
+    "avatarMint": { "bg": "#d9f6f1", "fg": "#0b4340" },
+    "avatarMintAlt": { "bg": "#def2f1", "fg": "#0d4749" },
+    "destructiveTile": { "bg": "#fef1f1", "fg": "#eb4747" },
+    "orangeTile": { "bg": "#ffe9e1", "fg": "#ff5d11" },
+    "calendarBlue": { "bg": "#c5e3ff", "fg": "#173857" },
+    "calendarPink": { "bg": "#ffcade", "fg": "#5f283f" },
+    "calendarSelected": { "bg": "#fde6a0", "border": "#645629" },
+    "darkOutlineBlue": { "border": "#4785ff", "fg": "#4785ff", "bg": "transparent" },
+    "darkOutlineOrange": { "border": "#fa7319", "fg": "#fa7319", "bg": "transparent" },
+    "darkDelta": { "bg": "#001409", "fg": "#00aa4f" },
+    "darkBanner": {
+      "success": { "bg": "#0d2016", "border": "#0e2b1b", "title": "#c2f5da", "body": "#9ecbb3", "button": "#1daf61" },
+      "info": { "bg": "#121628", "border": "#151b36", "title": "#c0d5ff", "body": "#9dafd4", "button": "#4785ff" },
+      "warning": { "bg": "#27170c", "border": "#351d0d", "title": "#ffd9c0", "body": "#d4b29c" },
+      "danger": { "bg": "#250f11", "border": "#321214" }
+    }
+  },
+
+  "shadows": {
+    "light": {
+      "ring": "0 0 0 1px #ececec",
+      "card": "0 0 0 1px #ececec, 0 1px 0 rgb(0 0 0 / 0.03)",
+      "control": "0 0 0 1px #ebebeb, 0 1px 2px rgb(0 0 0 / 0.045)",
+      "controlCool": "0 0 0 1px #e2e4e9, 0 1.5px 3px rgb(13 42 76 / 0.055)",
+      "chipLip": "0 0 0 1px #e7e7e7, 0 1px 0 rgb(0 0 0 / 0.05)",
+      "popover": "0 0 0 1px #e6e6e6, 0 4.5px 13px rgb(0 0 0 / 0.055)",
+      "hoverCard": "0 0 0 1px #e8e8e8, 0 2px 1px rgb(0 0 0 / 0.05), 0 10px 8px rgb(0 0 0 / 0.07)",
+      "modal": "0 0 0 1px rgb(0 0 0 / 0.07), 0 2px 1px rgb(0 0 0 / 0.08), 0 10px 8px rgb(0 0 0 / 0.06)",
+      "segmentActive": "0 0 0 1px #ededed, 0 1px 1px rgb(0 0 0 / 0.04)",
+      "primaryBrand": "0 0 0 1px #341dc7, 0 3px 4px rgb(69 38 255 / 0.09), 0 6px 16px rgb(69 38 255 / 0.04)",
+      "primaryBrandFill": "linear-gradient(180deg, #5e48f3 0%, #482df4 55%, #4e35f1 100%)",
+      "inkButtonFill": "linear-gradient(180deg, #6a6a6a 0%, #424242 12%, #313131 100%)",
+      "scrim": "rgb(0 0 0 / 0.22) with backdrop-filter: blur(4px)",
+      "$fit": "P shadowfit.py; rms .0011-.0161; tails: popover 13px, hover card 17px, modal 16px"
+    },
+    "dark": {
+      "resting": "none (1px border one ladder step above the surface)",
+      "primaryFlat": "none (flat #4785ff)",
+      "primaryGlowException": "0 0 0 1px #0b203f, 0 2px 8px rgb(72 134 253 / 0.25) (UniOps Save; V fit, contradicts founder dark rule)",
+      "focusSelect": "0 0 0 1px #5782e1",
+      "tooltipEcho": "0 0 0 1px #222530, 0 3px 0 -1px #181b25 (V: faint second line 2px under the border)"
+    }
+  },
+
+  "radius": {
+    "$doc": "Arc-fitted, CSS px. Pick ONE family per product (KMD-10).",
+    "families": {
+      "sharp": { "$src": "P Clokora", "chip": 0, "bar": 3, "tile": 3.5, "button": 4, "tab": 4.6, "timerBar": 7.6, "card": 8.75 },
+      "medium": { "$src": "P AM Trades", "chip": 4.5, "filter": 6, "search": 7, "button": 8, "table": 10, "nav": 10.5, "heroCard": 12, "listCard": 15 },
+      "soft": { "$src": "P UniOps (2.0x)", "chip": 6, "iconButton": 6.7, "filter": 10, "listCard": 16, "kpiStrip": 20, "navRow": "pill" }
+    },
+    "components": {
+      "crmButton": 8, "crmSearch": 8.6, "crmChip": 5.6, "crmBadge": 5.6, "crmTableFrame": 10, "crmRailTile": 8, "crmWindow": 20,
+      "settingsInput": 8.4, "settingsButton": 7.3, "settingsCard": 14.8,
+      "popover": 12, "hoverCard": 11.5, "searchBar": 16, "searchPanel": 16, "segmentTrack": 7, "resultTile": 4.4,
+      "modal": 29, "modalButton": 10,
+      "copecartFilter": 8.6, "copecartNav": 8.6, "copecartChartCard": 20,
+      "zeroleaksNav": 6.6, "zeroleaksDelta": 1.5, "listkitKbd": 4.5, "listkitNav": 6, "listkitTab": 8
+    }
+  },
+
+  "sizes": {
+    "controlHeight": { "amDark": 32, "crm": 30, "uniops": 33, "copecart": 34, "plunio": 36, "uniopsSave": 36, "formInput": 40, "searchBar": 55 },
+    "chipHeight": { "outlineDark": 18, "filledDark": 20, "clokora": 20, "priority": 21, "crmSource": 24, "bannerButton": 24 },
+    "navRow": { "listkit": 30, "am": 32, "copecart": 32, "zeroleaks": 32, "uniops": 34 },
+    "rowPitch": { "listkit": 38, "crm": 40, "searchResult": 56, "uniopsList": 57, "invoice": 60, "amUser": 76 },
+    "tableHeader": { "crm": 37, "am": 37, "listkit": 42 },
+    "avatar": { "table": 20, "list": 25, "row": 40, "profile": 44 },
+    "iconTile": { "result": 17, "rail": 33, "invoice": 48, "modal": 56 },
+    "icon": { "default": 16, "withText14": 16 },
+    "radio": { "size": 16, "ring": 1.5, "dot": 4.5, "on": "#4785ff", "off": "#aeaeae" },
+    "progressDash": { "width": 35, "height": 4.5, "gap": 4, "done": "#1daf61", "todo": "#e6e6e6" },
+    "bars": { "width": 64, "gap": 20, "radius": 3, "fill": "#1f1f1f" },
+    "tabUnderline": { "height": 1, "width": "label text width", "color": "#4785ff" },
+    "banner": { "height": 103, "gap": 14 },
+    "crosshair": { "arm": 11, "color": "#525252" }
+  },
+
+  "spacing": {
+    "container": 1200, "cardGap": 14, "cardGapDarkList": 12, "searchBarToPanel": 16, "blockGap": 36, "labelToCard": 17,
+    "cardPadding": { "y": 20, "x": 24 }, "popoverPadding": 16, "modalPaddingX": 24, "topNavHeight": 72,
+    "kpiCard": { "width": 290, "height": 134 }
+  },
+
+  "type": {
+    "$doc": "Sizes from cap height (Inter cap .727em). Weights V.",
+    "greeting": { "size": 24, "weight": 400, "color": "ink" },
+    "pageTitle": { "size": 24, "weight": 500 },
+    "kpiValue": { "size": 28, "weight": 400, "numeric": "tabular-nums" },
+    "bigValue": { "size": 32, "weight": 500 },
+    "title": { "size": 16, "weight": 500 },
+    "body": { "size": 14, "weight": 400 },
+    "secondary": { "size": 14, "weight": 400, "color": "secondary" },
+    "tableHeader": { "size": 12.5, "weight": 450, "color": "secondary" },
+    "capsLabel": { "size": 11, "weight": 500, "transform": "uppercase", "tracking": "0.02em (V)" },
+    "monoEyebrow": { "size": 12, "family": "Geist Mono (V)", "transform": "uppercase", "color": "#666666" },
+    "axis": { "size": 12, "transform": "uppercase", "colors": ["#a3a3a3", "#d1d1d1"] },
+    "faces": { "inter": ["UniOps", "AM Trades", "ListKit", "CRM", "settings"], "geistLike": ["Clokora", "ZeroLeaks"], "mono": "Geist Mono" }
+  },
+
+  "replicationSet": [
+    { "id": 1, "kind": "light dashboard", "file": "knowledge/benchmarks/kargul-studio-2026-10/clokora/clokora-00.png", "size": [2880, 2070], "scale": 2 },
+    { "id": 2, "kind": "light dashboard", "file": "knowledge/benchmarks/kargul-studio-2026-10/uniops/uniops-02.png", "size": [2880, 2070], "scale": 2, "scaleAlt": 1.81 },
+    { "id": 3, "kind": "dark dashboard", "file": "knowledge/benchmarks/kargul-studio-2026-10/copecart/copecart-00.png", "size": [2880, 2070], "scale": 2 },
+    { "id": 4, "kind": "table/list", "file": "knowledge/benchmarks/kargul-studio-2026-10/am-trades/am-trades-07.png", "size": [2880, 2070], "scale": 2 },
+    { "id": 5, "kind": "settings/form", "file": "knowledge/benchmarks/kargul-x/latest/kxl-031-0-2110484440866582618.jpg", "size": [4096, 2877], "scale": 2.844 },
+    { "id": 6, "kind": "modal", "file": "knowledge/benchmarks/kargul-studio-2026-10/plunio/plunio-02.png", "size": [2880, 2070], "scale": 2, "alt": "knowledge/benchmarks/kargul-x/latest/kxl-014-1-2111515571179122856.jpg" },
+    { "id": 7, "kind": "detail", "file": "knowledge/benchmarks/kargul-studio-2026-10/clokora/clokora-06.png", "size": [2880, 2070], "scale": 2 },
+    { "id": 8, "kind": "latest X component", "file": "knowledge/benchmarks/kargul-x/latest/kxl-020-0-2111131955404128683.jpg", "size": [2880, 2048], "scale": 2, "alt": "knowledge/benchmarks/kargul-x/latest/kxl-046-0-2109779159274721437.jpg (3x)" }
+  ]
+}

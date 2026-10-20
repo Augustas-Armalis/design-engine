@@ -55,3 +55,12 @@ Desk research only (docs, help centres, reviews; no hands-on competitor screens)
 - `craft-articles-2026-10.md`: 34 free craft articles (Kennedy, Hobday, Refactoring UI palette, Ström-Awn density + palettes, Verou, Argyle, Evil Martians OKLCH, Shadeed, NN/g button states/flat UI/homepage/false floors, Baymard buttons, Smashing, Schöndorfer, Sticka tracking, WWDC20 UI typography, Shu Ding, Harry Dry): 75 rules in CA-S/T/C/B/D/L/M/P/W, numbers tables, conflicts ranked with founder taste winning.
 - `libraries-catalogue.md`: 79 libraries in 7 families (component primitives and styled kits, effect collections, motion, shaders/3D, data viz, micro-UI, icons/fonts) with verdicts, pinned versions (14-day rule), licences (coss AGPL/MIT split, Commons Clause, GSAP, Fontshare FFL 2.0), measured gzip sizes, default stacks for heroes and product apps, and a never-use list; LIB-01..20. Data in `system/libraries.json`.
 - `inspiration-and-tools.md`: where pros find inspiration and which tools they use, with automation status per source (robots/llms.txt/MCP/API checked 2026-10-15): 35 galleries with category URLs, 34 X handles, Figma plugins/extensions/Mac apps mapped to engine scripts, AI design tools, font sources and licences, colour/texture tools; IR-01..21, a daily research routine and an automation map. Data in `system/inspiration-sources.json`.
+
+## Kargul Studio (studied 2026-10-09 to 2026-10-20)
+
+| File | What it covers | Status |
+|---|---|---|
+| `kargul-micro-details.md` | Pixel-level micro-details from 2880x2070 case originals (32 cases re-crawled, AM Trades + Rork new) and 49 X posts to 20 Oct: arc-fitted radius families per product, fitted shadow tiers (ring-only resting cards, control 0 1px 2px .045, popover 0 4.5px 13px .055, hover card and modal two-layer, hue-tinted primary glow, flat border-lit dark), ink-alpha text ladder identical in light and dark, palettes matching AlignUI neutral/gray, same-hue chip/avatar pairs, control heights, row pitches, type tuples, 25 tiny details with file + crop, 8-screen replication set with build specs; KMD-01..23. Tokens `system/product-ui/kargul-micro-tokens.json`, evidence `knowledge/benchmarks/kargul-studio-2026-10/` | studied |
+| `kargul-saas-playbook.md` | dashboard playbook, 8 layouts, gallery + X study; KS-01..32 | studied |
+| `kargul-source-study.md` / `kargul-crm-teardown.md` | the MIT sales-crm, workflow-editor and kanban read from source and measured live | studied |
+| `kargul-deep-study.md` | kargul.studio shell, case template, bento breakdown | studied |
