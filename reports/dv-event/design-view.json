@@ -1,0 +1,77 @@
+{
+ "url": "http://localhost:4395/#/event",
+ "kind": "post-component",
+ "W": 1000,
+ "H": 1000,
+ "dom": {
+  "subject": {
+   "x": 185,
+   "y": 81.3125,
+   "w": 630,
+   "h": 837.375,
+   "b": 918.6875,
+   "r": 815
+  },
+  "minText": 15.96,
+  "outsideBig": []
+ },
+ "px": {
+  "bandMeanL": 245,
+  "bandStdL": 0,
+  "bandChroma": 0,
+  "colourShare": 0.01,
+  "quietShare": 0.82
+ },
+ "checks": [
+  {
+   "id": "format.ratio",
+   "status": "pass",
+   "value": "1.000",
+   "want": "0.84-1.78 (square 1:1 is normal for one component: Marcel kx-036, Kuleszo kz-129/274; 16:9-3:2 for screens; 7:8 for pairs)",
+   "rule": "XP-07 / XP-04, measured refs"
+  },
+  {
+   "id": "format.export-px",
+   "status": "pass",
+   "value": "2000x2000",
+   "want": ">= 2000 px wide",
+   "rule": "XP-11"
+  },
+  {
+   "id": "canvas.solid",
+   "status": "pass",
+   "value": "corner std 0, chroma 0",
+   "want": "solid canvas (cleanest corner std <= 5: Marcel streak 4.3, Kuleszo 0.0; chroma <= 14): no gradient blobs, glass, dither, wallpapers",
+   "rule": "XP-08, measured refs"
+  },
+  {
+   "id": "subject.marked",
+   "status": "pass",
+   "value": "yes",
+   "want": "mark the component with data-subject",
+   "rule": "design view"
+  },
+  {
+   "id": "subject.crop",
+   "status": "pass",
+   "value": "0.63",
+   "want": "close crop 35-75% of frame width (component at 1.5-2x; Kuleszo 55-75%), or far 12-20%",
+   "rule": "XP-09, AKZ"
+  },
+  {
+   "id": "subject.feed-legible",
+   "status": "pass",
+   "value": "8.2px at 514px feed",
+   "want": "smallest component text >= 6.5px in the 514px feed tile (scale the component up, not the text down)",
+   "rule": "XP-28"
+  },
+  {
+   "id": "media.no-headline",
+   "status": "pass",
+   "value": "none",
+   "want": "no headline text in the media; the caption carries the words",
+   "rule": "XP-12"
+  }
+ ],
+ "fails": 0
+}
