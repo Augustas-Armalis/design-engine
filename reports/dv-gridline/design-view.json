@@ -37,9 +37,9 @@
  "px": {
   "bandMeanL": 242,
   "bandStdL": 0,
-  "bandChroma": 0.2,
+  "bandChroma": 0.1,
   "colourShare": 0.003,
-  "quietShare": 0.76
+  "quietShare": 0.72
  },
  "checks": [
   {
@@ -136,7 +136,7 @@
   {
    "id": "fold.quiet",
    "status": "pass",
-   "value": 0.76,
+   "value": 0.72,
    "want": ">= 0.40 of 16px blocks quiet (Kestrel 0.46 accepted; premium median 0.78)",
    "rule": "HC-03"
   },

@@ -13,6 +13,10 @@ const ROWS: [typeof RiHome5Line, string, string, string, string, string, string]
   [RiMailSendLine, '#2f9e5b', 'Weekly ops digest', 'Weft → Slack', '42', '100%', 'Paused'],
   [RiFileTextLine, '#0ea5a4', 'Policy Q&A', 'Notion → Intercom', '3,318', '96.1%', 'Live'],
   [RiRefund2Line, '#346eda', 'Chargeback evidence', 'Stripe → Drive', '208', '94.7%', 'Draft'],
+  [RiCustomerService2Line, '#7c5cf0', 'VIP escalation', 'Intercom → Slack', '96', '100%', 'Live'],
+  [RiTruckLine, '#f08a24', 'Address correction', 'Shopify → Zendesk', '1,204', '98.9%', 'Live'],
+  [RiMailSendLine, '#2f9e5b', 'Renewal reminders', 'Stripe → Gmail', '2,870', '99.8%', 'Live'],
+  [RiShieldCheckLine, '#e5484d', 'Account takeover alert', 'Auth0 → PagerDuty', '18', '100%', 'Waiting'],
 ]
 const STATE: Record<string, [string, string]> = { Waiting: ['#fff4e5', '#b45309'], Live: ['#e9f8ef', '#15803d'], Paused: ['#f2f2f2', '#5c5c5c'], Draft: ['#f2f2f2', '#5c5c5c'] }
 

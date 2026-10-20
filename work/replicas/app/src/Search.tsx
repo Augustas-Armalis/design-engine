@@ -29,8 +29,8 @@ export default function Search() {
   return (
     <div className="relative overflow-hidden" style={{ width: 1440, height: 1024, background: '#f4f4f4', fontFamily: '"Inter Variable", system-ui, sans-serif', fontFeatureSettings: '"cv11"', color: ink }}>
       {/* the app behind, blurred: a real Weft screen */}
-      <div aria-hidden className="absolute inset-0" style={{ filter: 'blur(3px)' }}><WeftApp /></div>
-      <div className="absolute inset-0" style={{ background: 'rgb(0 0 0 / 0.22)' }} />
+      <div aria-hidden className="absolute inset-0" style={{ filter: 'blur(1.6px)' }}><WeftApp /></div>
+      <div className="absolute inset-0" style={{ background: 'rgb(18 18 18 / 0.16)' }} />
 
       {/* bar */}
       <div data-subject className="absolute" style={{ left: 350, top: 156, width: 779 }}>

@@ -59,7 +59,7 @@ function Dashboard() {
             <div className="relative" style={{ background: 'radial-gradient(120% 90% at 40% 50%, #fff, #fafafa)' }}>
               <GridMap w={700} h={430} at={T.map} />
               {/* the one narrating chip: what Gridline suggests */}
-              <motion.div className="absolute left-4 top-[16px] flex w-[236px] items-start gap-2.5 rounded-[14px] bg-white p-3" style={{ boxShadow: `0 0 0 1px ${line}, 0 4.5px 13px rgb(0 0 0 / 0.055)` }}
+              <motion.div className="absolute right-4 top-[16px] flex w-[272px] items-start gap-2.5 rounded-[14px] bg-white p-3" style={{ boxShadow: `0 0 0 1px ${line}, 0 4.5px 13px rgb(0 0 0 / 0.055)` }}
                 initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: T.map + 1.4, duration: 0.8, ease: E }}>
                 <span className="grid size-7 shrink-0 place-items-center rounded-[8px]" style={{ background: '#fff4e5', color: AMBER }}><RiAlertFill size={15} /></span>
                 <div className="min-w-0 flex-1 leading-tight">
@@ -103,7 +103,7 @@ export default function Hero() {
     <MotionConfig reducedMotion="user">
       <div className="relative mx-auto h-[900px] w-[1440px] overflow-hidden" style={{ background: '#f7f7f7', fontFamily: '"Inter Variable", system-ui, sans-serif', fontFeatureSettings: '"cv11", "ss01"', color: ink }}>
         {/* quiet structure: a fine dot grid between the rails, faded behind the copy */}
-        <div aria-hidden className="absolute inset-y-0 left-[120px] right-[120px]" style={{ backgroundImage: 'radial-gradient(rgb(0 0 0 / 0.07) 1px, transparent 1.3px)', backgroundSize: '20px 20px', maskImage: 'radial-gradient(60% 50% at 50% 28%, transparent 30%, #000 100%)' }} />
+        <div aria-hidden className="absolute inset-y-0 left-[120px] right-[120px]" style={{ backgroundImage: 'radial-gradient(rgb(0 0 0 / 0.16) 1.1px, transparent 1.5px)', backgroundSize: '22px 22px', maskImage: 'radial-gradient(46% 34% at 50% 30%, rgb(0 0 0 / 0.15) 40%, #000 100%)' }} />
         {[120, 1320].map((x) => <div key={x} aria-hidden className="absolute inset-y-0 w-px" style={{ left: x, background: 'rgb(0 0 0 / 0.06)' }} />)}
 
         <header className="absolute inset-x-[144px] top-0 z-20 flex h-[72px] items-center">

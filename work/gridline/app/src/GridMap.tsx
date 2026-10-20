@@ -35,10 +35,10 @@ function landMask(proj: GeoProjection, w: number, h: number) {
 
 const AMBER = '#e8890c', INK = '17 17 17'
 
-export default function GridMap({ w, h, step = 4.2, at = 0 }: { w: number; h: number; step?: number; at?: number }) {
+export default function GridMap({ w, h, step = 3.8, at = 0 }: { w: number; h: number; step?: number; at?: number }) {
   const { dots, P } = useMemo(() => {
     const proj = geoConicConformal().rotate([-9, 0]).parallels([38, 60])
-      .fitExtent([[10, 22], [w - 10, 300]], { type: 'MultiPoint', coordinates: [[-10, 36.5], [25, 36.5], [-10, 61.5], [25, 61.5]] } as never)
+      .fitExtent([[-40, 22], [w - 170, 300]], { type: 'MultiPoint', coordinates: [[-10, 36.5], [25, 36.5], [-10, 61.5], [25, 61.5]] } as never)
     const isLand = landMask(proj, w, h)
     const P = Object.fromEntries(NODES.map((n) => [n.code, proj([n.lon, n.lat])!])) as Record<string, [number, number]>
     const dots: { x: number; y: number; a: number; hot: number }[] = []
@@ -50,7 +50,7 @@ export default function GridMap({ w, h, step = 4.2, at = 0 }: { w: number; h: nu
       const hot = Math.exp(-((x - hx) ** 2 + (y - hy) ** 2) / (2 * 30 ** 2))
       // edge fade so the map dissolves into the card
       const edge = Math.min(1, x / 50, (w - x) / 50, y / 24, (300 - y) / 40)
-      dots.push({ x, y, a: (0.16 + Math.min(1, heat) * 0.46) * Math.max(0, edge), hot })
+      dots.push({ x, y, a: (0.26 + Math.min(1, heat) * 0.5) * Math.max(0, edge), hot })
     }
     return { dots, P }
   }, [w, h, step])
@@ -68,14 +68,14 @@ export default function GridMap({ w, h, step = 4.2, at = 0 }: { w: number; h: nu
       </defs>
       <g>
         {dots.map((d, i) => (
-          <circle key={i} cx={d.x} cy={d.y} r={1.05} fill={d.hot > 0.25 ? AMBER : `rgb(${INK})`} fillOpacity={d.hot > 0.25 ? Math.min(0.9, d.a + d.hot * 0.5) : d.a} />
+          <circle key={i} cx={d.x} cy={d.y} r={1.15} fill={d.hot > 0.25 ? AMBER : `rgb(${INK})`} fillOpacity={d.hot > 0.25 ? Math.min(0.9, d.a + d.hot * 0.5) : d.a} />
         ))}
       </g>
       {FLOWS.map(([a, b, mw, bad], i) => {
         const p = arc(P[a], P[b]), dur = 3.4 - (mw / max) * 1.4
         return (
           <g key={a + b}>
-            <motion.path d={p} fill="none" stroke={bad ? AMBER : `rgb(${INK})`} strokeOpacity={bad ? 0.9 : 0.28} strokeWidth={bad ? 1.6 : 0.6 + (mw / max) * 0.9}
+            <motion.path d={p} fill="none" stroke={bad ? AMBER : `rgb(${INK})`} strokeOpacity={bad ? 0.95 : 0.42} strokeWidth={bad ? 1.8 : 0.8 + (mw / max) * 1}
               initial={{ pathLength: 0 }} animate={{ pathLength: 1 }} transition={{ delay: at + 0.2 + i * 0.05, duration: 1.1, ease: [0.16, 1, 0.3, 1] }} />
             <circle r={bad ? 2.4 : 1.8} fill={bad ? AMBER : `rgb(${INK})`} opacity="0">
               <set attributeName="opacity" to={bad ? '1' : '0.7'} begin={`${at + 1.2 + i * 0.2}s`} />
