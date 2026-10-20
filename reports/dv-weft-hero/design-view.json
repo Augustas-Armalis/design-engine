@@ -1,0 +1,148 @@
+{
+ "url": "http://localhost:4382/",
+ "kind": "hero-dark",
+ "W": 1440,
+ "H": 900,
+ "dom": {
+  "h1": {
+   "text": "Thoughtful automation",
+   "size": 120,
+   "weight": 400,
+   "track": -0.05,
+   "lines": 1,
+   "words": 2,
+   "family": "\"Source Serif 4 Variable\"",
+   "top": 311,
+   "bottom": 467,
+   "titleCase": false
+  },
+  "sub": {
+   "size": 16,
+   "lines": 1,
+   "width": 677.28125,
+   "top": 481,
+   "bottom": 503.40625
+  },
+  "ctas": [
+   56
+  ],
+  "ctaTop": 539.40625,
+  "ctaBottom": 595.40625,
+  "product": null
+ },
+ "px": {
+  "bandMeanL": 57,
+  "bandStdL": 67.5,
+  "bandChroma": 27.8,
+  "colourShare": 0.426,
+  "quietShare": 0.72
+ },
+ "checks": [
+  {
+   "id": "product.visible",
+   "status": "FAIL",
+   "value": "none",
+   "want": "the real product is in the fold (>= 20% of it): the hero must say what the product is in 3 seconds; abstract art fails",
+   "rule": "founder: Quorum v4.1, Kestrel, \"clean never means sparse\""
+  },
+  {
+   "id": "product.top",
+   "status": "FAIL",
+   "value": "-",
+   "want": "product top <= 600px",
+   "rule": "founder Kite hero; Basit 48-66%"
+  },
+  {
+   "id": "h1.size",
+   "status": "FAIL",
+   "value": 120,
+   "want": "52-72px (lean 52-60)",
+   "rule": "Kestrel 72 accepted; founder Kite \"about 52, not 66-80\"; HC median 56"
+  },
+  {
+   "id": "h1.weight",
+   "status": "FAIL",
+   "value": 400,
+   "want": "450-600",
+   "rule": "founder hero rules; type-voices"
+  },
+  {
+   "id": "h1.tracking",
+   "status": "pass",
+   "value": "-0.050em",
+   "want": "-0.03 to -0.055em",
+   "rule": "BA-04; Kestrel/Quorum -0.045"
+  },
+  {
+   "id": "h1.lines",
+   "status": "FAIL",
+   "value": 1,
+   "want": "2 balanced lines",
+   "rule": "founder Kite/Quorum"
+  },
+  {
+   "id": "h1.words",
+   "status": "FAIL",
+   "value": 2,
+   "want": "3-6 words with an idea in them",
+   "rule": "founder: \"short and specific\""
+  },
+  {
+   "id": "h1.case",
+   "status": "FAIL",
+   "value": "sentence/other",
+   "want": "Title Case, no full stop (founder default for SaaS heroes)",
+   "rule": "founder Kite hero"
+  },
+  {
+   "id": "sub.width",
+   "status": "FAIL",
+   "value": "677px, 1 lines",
+   "want": "<= 640px wide (2 hand-set lines preferred)",
+   "rule": "founder: \"the subtitle now wtf\" (a 1000px line)"
+  },
+  {
+   "id": "gap.h1-sub",
+   "status": "pass",
+   "value": 14,
+   "want": "12-26px",
+   "rule": "HC-01"
+  },
+  {
+   "id": "gap.sub-cta",
+   "status": "pass",
+   "value": 36,
+   "want": "24-40px",
+   "rule": "HC-01"
+  },
+  {
+   "id": "gap.cta-product",
+   "status": "info",
+   "value": "-",
+   "want": "48-120px below the CTAs, or a side stage (split)",
+   "rule": "HC-01; Kestrel 54 accepted"
+  },
+  {
+   "id": "cta.height",
+   "status": "pass",
+   "value": "56",
+   "want": "40-56px",
+   "rule": "HC 46 median; founder 44-48"
+  },
+  {
+   "id": "fold.quiet",
+   "status": "pass",
+   "value": 0.72,
+   "want": ">= 0.40 of 16px blocks quiet (Kestrel 0.46 accepted; premium median 0.78)",
+   "rule": "HC-03"
+  },
+  {
+   "id": "fold.colour",
+   "status": "FAIL",
+   "value": 0.426,
+   "want": "<= 8% saturated pixels in dark",
+   "rule": "dark-mode-premium"
+  }
+ ],
+ "fails": 9
+}

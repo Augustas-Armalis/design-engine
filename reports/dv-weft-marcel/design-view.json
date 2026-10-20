@@ -1,0 +1,69 @@
+{
+ "url": "http://localhost:4382/#/marcel",
+ "kind": "post-component",
+ "W": 1000,
+ "H": 1000,
+ "dom": {
+  "subject": null,
+  "minText": null,
+  "outsideBig": []
+ },
+ "px": {
+  "bandMeanL": 20,
+  "bandStdL": 0.2,
+  "bandChroma": 5.7,
+  "colourShare": 0.001,
+  "quietShare": 0.91
+ },
+ "checks": [
+  {
+   "id": "format.ratio",
+   "status": "pass",
+   "value": "1.000",
+   "want": "0.84-1.78 (square 1:1 is normal for one component: Marcel kx-036, Kuleszo kz-129/274; 16:9-3:2 for screens; 7:8 for pairs)",
+   "rule": "XP-07 / XP-04, measured refs"
+  },
+  {
+   "id": "format.export-px",
+   "status": "pass",
+   "value": "2000x2000",
+   "want": ">= 2000 px wide",
+   "rule": "XP-11"
+  },
+  {
+   "id": "canvas.solid",
+   "status": "pass",
+   "value": "corner std 0.2, chroma 5.7",
+   "want": "solid canvas (cleanest corner std <= 5: Marcel streak 4.3, Kuleszo 0.0; chroma <= 14): no gradient blobs, glass, dither, wallpapers",
+   "rule": "XP-08, measured refs"
+  },
+  {
+   "id": "subject.marked",
+   "status": "FAIL",
+   "value": "no",
+   "want": "mark the component with data-subject",
+   "rule": "design view"
+  },
+  {
+   "id": "subject.crop",
+   "status": "FAIL",
+   "want": "close crop 35-75% of frame width (component at 1.5-2x; Kuleszo 55-75%), or far 12-20%",
+   "rule": "XP-09, AKZ"
+  },
+  {
+   "id": "subject.feed-legible",
+   "status": "FAIL",
+   "value": "undefinedpx at 514px feed",
+   "want": "smallest component text >= 6.5px in the 514px feed tile (scale the component up, not the text down)",
+   "rule": "XP-28"
+  },
+  {
+   "id": "media.no-headline",
+   "status": "pass",
+   "value": "none",
+   "want": "no headline text in the media; the caption carries the words",
+   "rule": "XP-12"
+  }
+ ],
+ "fails": 3
+}
