@@ -4183,6 +4183,34 @@
   "origin": "founder"
  },
  {
+  "id": "founder.founder-taste#138",
+  "text": "[founder] Work replicate-first (docs/REPLICATE-FIRST.md): every new piece starts from one named reference the founder rates (AlignUI, affectUI/Flo, Kargul, Rico, Attio), rebuilt at its pixel size, overlaid with `tools/compare.mjs` until rows, columns, dividers and edges register within ~4px, then given our content and 1-3 owned touches. Build only what was asked: no animation, extra states or sections unless named.",
+  "why": "Founder after the Share and Expense rejects: \"I did not ask to animate... the spacing the roundness the components the colors everything is just not good... form not being centered... just try replicating a few works of theirs (in terms of style with your own touch that would be backed up by the book and your checks)... create a way to work like we used to\".",
+  "applies": "every design delivery.",
+  "check": "`work/<name>/cmp-*-overlay.png` exists and registers; DIRECTION.md names the reference and lists the owned touches.",
+  "checkable": true,
+  "source": "founder, 2026-10-20",
+  "file": "founder/founder-taste.md",
+  "section": "5. Exceptions & judgement calls",
+  "tags": [
+   "founder",
+   "taste",
+   "hero",
+   "nav",
+   "typography",
+   "copy",
+   "icons",
+   "logo",
+   "layout",
+   "product-card",
+   "background",
+   "buttons",
+   "quality-bar"
+  ],
+  "kind": "source",
+  "origin": "founder"
+ },
+ {
   "id": "founder.sellify-design-pass#1",
   "text": "[founder-process] Start every Sellify UI task by fetching `origin/main`, merging it into the local design branch, and listing teammates' commits in the area; adopt their logic and naming before touching visuals.",
   "why": "\"have you got the latest versions and updated what we designed to them... if christian did anything\" (2026-10-20). Our Ad Spy Tests tab duplicated Aaron's ENG-2232 because the branch was a day stale.",
