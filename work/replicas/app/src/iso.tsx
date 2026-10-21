@@ -179,7 +179,7 @@ export function routePath(P: Projector, pts: V3[], radius = 6): string {
 
 /* ------------------------------------------------------------------------------------------------ theme */
 
-export type IsoMode = "dark" | "light";
+export type IsoMode = "dark" | "light" | "hairline";
 
 /** Measured stroke/fill ladder (see isometric-line-art.md section 3). Dark ranks by alpha at one weight; light by weight + grey. */
 export interface IsoTheme {
@@ -207,6 +207,18 @@ export interface IsoTheme {
 }
 
 export function isoTheme(mode: IsoMode, accent?: string): IsoTheme {
+  if (mode === "hairline") {
+    // Linear grammar (knowledge/benchmarks/bento/linear-fig-triptych.png): one 1px hairline weight for every edge,
+    // white faces, no hatch or grain, no nodes; depth comes only from stacking, offsets and rounded slab sides.
+    const h = { c: "rgba(17,17,17,0.36)", w: 1 };
+    return {
+      mode, bg: "#ffffff", top: "#ffffff", topFocal: "#ffffff", left: "#ffffff", right: "#ffffff",
+      shadow: "rgba(17,17,17,0)", hatch: "rgba(17,17,17,0)", grain: 0, ink: "#111111",
+      focal: { c: "rgba(17,17,17,0.55)", w: 1 }, primary: h, secondary: { c: "rgba(17,17,17,0.26)", w: 1 }, detail: { c: "rgba(17,17,17,0.26)", w: 1 },
+      guide: { c: "rgba(17,17,17,0.18)", w: 1, dash: "2 3" }, grid: { c: "rgba(17,17,17,0.1)", w: 1, dash: "1 4" },
+      nodeOn: "rgba(17,17,17,0.5)", nodeOff: "rgba(17,17,17,0.2)", accent: accent ?? "#111111", label: "#737373", labelBg: "#ffffff",
+    };
+  }
   if (mode === "dark") {
     return {
       mode,

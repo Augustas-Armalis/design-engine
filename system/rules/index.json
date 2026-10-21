@@ -4267,6 +4267,34 @@
   "origin": "founder"
  },
  {
+  "id": "founder.founder-taste#141",
+  "text": "[founder] For feature/bento line art, Linear is the bar (\"check linear, they do it good enough\"): a two-tone statement headline, columns split by 1px hairlines with mono FIG labels, ONE quiet object per column in 2:1 dimetric, every edge the same 1px hairline (~36% ink on white), white faces, no hatch, grain, nodes, guides, callouts or colour; the idea is told by geometry alone (the raised or lifted piece is the answer); small title + muted line at the bottom. Kit: `system/iso` with `mode=\"hairline\" kind=\"dimetric\"`.",
+  "why": "Founder after the Kargul-grammar v4 with callouts, hatch and violet: \"check linear cmon they do it good enough, not u\".",
+  "applies": "feature sections and bentos with iso art.",
+  "check": "one stroke weight in the art; zero fills other than white; no accent colour.",
+  "checkable": true,
+  "source": "founder, Cadence, 2026-10-21",
+  "file": "founder/founder-taste.md",
+  "section": "5. Exceptions & judgement calls",
+  "tags": [
+   "founder",
+   "taste",
+   "hero",
+   "nav",
+   "typography",
+   "copy",
+   "icons",
+   "logo",
+   "layout",
+   "product-card",
+   "background",
+   "buttons",
+   "quality-bar"
+  ],
+  "kind": "source",
+  "origin": "founder"
+ },
+ {
   "id": "founder.sellify-design-pass#1",
   "text": "[founder-process] Start every Sellify UI task by fetching `origin/main`, merging it into the local design branch, and listing teammates' commits in the area; adopt their logic and naming before touching visuals.",
   "why": "\"have you got the latest versions and updated what we designed to them... if christian did anything\" (2026-10-20). Our Ad Spy Tests tab duplicated Aaron's ENG-2232 because the branch was a day stale.",

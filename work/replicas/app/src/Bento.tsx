@@ -1,181 +1,128 @@
-// Cadence bento v4: Kargul's services-bento grammar drawn with the engine's iso kit (system/iso, rules ISO-01..18 in
-// knowledge/web/isometric-line-art.md): true 30deg isometric, every point projected in code so strokes stay exact,
-// one stroke ladder (focal / primary / secondary / detail / guide), hatched shade faces, grain lit faces, diamond
-// nodes, dotted leaders with mono-caps pills, guides fading to the cell edge. One violet fill per cell, on the answer.
+// Cadence feature section v5, replicate-first from Linear's figure triptych
+// (knowledge/benchmarks/bento/linear-fig-triptych.png): a two-tone statement headline, then columns split by 1px
+// hairlines, each with a mono FIG label, ONE quiet object drawn in 2:1 dimetric with a single hairline weight and white
+// faces (no fills, hatch, nodes, guides or colour), and a small title + muted line at the bottom. The idea is carried by
+// the geometry alone: the raised piece is the answer. Light mode. Sample content.
 import type { ReactNode } from 'react'
-import { IsoScene, IsoGrid, GuideLines, Plate, Stack, Tower, Node, Callout, Connector, Card, Texture, useIso, useStroke, topPlane, planeRoundRect, planeCircle, polyPath, type Plane } from './iso'
+import { IsoScene, Plate, useIso, useStroke, topPlane, planeRoundRect, polyPath } from './iso'
 
-const INK = '#171717', V = '#6e3ff3'
+const INK = '#171717'
+const Scene = ({ children, y = 150 }: { children: ReactNode; y?: number }) => (
+  <IsoScene width={400} height={360} mode="hairline" kind="dimetric" scale={1.3} origin={{ x: 200, y: y * 1.25 }}>{children}</IsoScene>
+)
 
-/** event rows on a calendar face: grain title bar + n hairline rows, one row optionally violet */
-function CalFace({ pl, w, d, cols = 5, accentCol }: { pl: Plane; w: number; d: number; cols?: number; accentCol?: number }) {
-  const { P, T } = useIso()
-  const s = useStroke('detail')
-  const cw = (w - 16) / cols
-  const out: ReactNode[] = []
-  out.push(<Texture key="bar" d={planeRoundRect(P, pl, 8, 8, w * 0.4, 6, 0)} kind="grain" opacity={0.6} />)
-  for (let c = 0; c <= cols; c++) out.push(<path key={'v' + c} d={polyPath(P, [[pl.o[0] + 8 + c * cw, pl.o[1] + 20, pl.o[2]], [pl.o[0] + 8 + c * cw, pl.o[1] + d - 8, pl.o[2]]])} {...s} />)
-  // busy blocks: deterministic pattern
-  const busy = [[0, 0, 2], [1, 2, 3], [2, 1, 2], [3, 0, 1], [3, 3, 2], [4, 1, 3]]
-  busy.forEach(([c, r, len], i) => {
-    if (c === accentCol) return
-    out.push(<path key={'b' + i} d={planeRoundRect(P, pl, 8 + c * cw + 2.5, 24 + r * 14, cw - 5, len * 12, 2.5)} {...s} fill={T.top} />)
-  })
-  if (accentCol !== undefined) out.push(<path key="acc" d={planeRoundRect(P, pl, 8 + accentCol * cw + 2, 22, cw - 4, d - 32, 3)} fill={V} fillOpacity={0.14} stroke={V} strokeWidth={1.25} />)
-  return <g>{out}</g>
-}
-
-function ArtFind() {
-  return (
-    <IsoScene width={392} height={262} mode="light" accent={V} origin={{ x: 196, y: 140 }} edgeFade={0}>
-      <IsoGrid cells={10} step={30} style="dotted" />
-      <GuideLines through={[[-75, -55, 0], [75, 55, 0]]} reach={170} />
-      <Stack at={[-75, -55, 0]} w={150} d={110} layers={3} gap={26} thickness={0} connectors
-        content={(i) => (i === 2 ? <CalFace pl={topPlane(-75, -55, 52)} w={150} d={110} accentCol={3} /> : null)} />
-      <Callout at={[75, -10, 52]} dx={40} dy={60} label="WED 2 PM" tone="accent" />
-    </IsoScene>
-  )
-}
-
-function Lock({ at }: { at: [number, number, number] }) {
-  const { P } = useIso()
-  const [x, y, z] = at
-  return (
-    <g>
-      <path d={planeRoundRect(P, topPlane(x - 14, y - 11, z), 0, 0, 28, 22, 4)} fill={V} />
-      <path d={planeCircle(P, topPlane(x, y + 3, z), 0, 0, 3)} fill="#fff" />
-    </g>
-  )
-}
-function ArtFocus() {
-  return (
-    <IsoScene width={392} height={262} mode="light" accent={V} origin={{ x: 196, y: 128 }} edgeFade={0}>
-      <IsoGrid cells={10} step={30} style="dotted" />
-      <GuideLines through={[[-60, -45, 0], [60, 45, 0]]} reach={170} />
-      <Connector points={[[60, -10, 0], [120, -10, 0]]} level="secondary" endNodes />
-      <Connector points={[[-10, 45, 0], [-10, 105, 0]]} level="secondary" endNodes />
-      <Plate at={[122, -30, 0]} w={46} d={40} h={4} r={6} level="secondary" />
-      <Plate at={[-32, 107, 0]} w={46} d={40} h={4} r={6} level="secondary" />
-      <Plate at={[-60, -45, 0]} w={120} d={90} h={26} r={10} level="focal" shadow={6}>
-        <FocusFace />
-      </Plate>
-      <Callout at={[60, 45, 26]} dx={30} dy={48} label="9–11 AM" />
-    </IsoScene>
-  )
-}
-function FocusFace() {
-  const { P } = useIso()
-  const pl = topPlane(-60, -45, 26)
-  return (
-    <g>
-      <path d={planeRoundRect(P, pl, 12, 12, 96, 66, 6)} fill={V} fillOpacity={0.1} stroke={V} strokeWidth={1.25} />
-      <Lock at={[0, 0, 26]} />
-    </g>
-  )
-}
-
-function ArtConflict() {
-  return (
-    <IsoScene width={392} height={262} mode="light" accent={V} origin={{ x: 196, y: 134 }} edgeFade={0}>
-      <IsoGrid cells={10} step={30} style="dotted" />
-      <GuideLines through={[[-70, -10, 0], [70, 40, 0]]} reach={170} />
-      <Plate at={[-110, -50, 0]} w={110} d={58} h={6} r={7} level="secondary">
-        <SlotLines x={-110} y={-50} z={6} w={110} />
-      </Plate>
-      {/* the moved one, lifted, dashed drops to its old footprint */}
-      <path d="" />
-      <Drops />
-      <Plate at={[-30, 18, 46]} w={110} d={58} h={6} r={7} level="focal" shadow={0}>
-        <SlotLines x={-30} y={18} z={52} w={110} accent />
-      </Plate>
-      <Node at={[-30, 18, 52]} tone="accent" />
-      <Callout at={[80, 76, 52]} dx={24} dy={44} label="1:00 PM" tone="accent" />
-    </IsoScene>
-  )
-}
-function Drops() {
-  const { P } = useIso()
-  const s = useStroke('secondary')
-  const c: [number, number][] = [[-30, 18], [80, 18], [80, 76], [-30, 76]]
-  return <path d={c.map(([x, y]) => polyPath(P, [[x, y, 0], [x, y, 46]])).join(' ')} {...s} stroke={V} strokeOpacity={0.55} strokeDasharray="2 3" />
-}
-function SlotLines({ x, y, z, w, accent }: { x: number; y: number; z: number; w: number; accent?: boolean }) {
-  const { P } = useIso()
-  const s = useStroke('detail')
+function Lines({ x, y, z, w, n = 2 }: { x: number; y: number; z: number; w: number; n?: number }) {
+  const { P } = useIso(); const s = useStroke('detail')
   const pl = topPlane(x, y, z)
+  return <g><path d={planeRoundRect(P, pl, 10, 10, w * 0.4, 6, 3)} {...s} />{Array.from({ length: n }, (_, i) => <path key={i} d={polyPath(P, [[x + 10, y + 26 + i * 8, z], [x + 10 + w * (i ? 0.45 : 0.65), y + 26 + i * 8, z]])} {...s} />)}</g>
+}
+
+function FigFind() {
+  const W = 120, D = 120
   return (
-    <g>
-      <path d={planeRoundRect(P, pl, 10, 12, w * 0.45, 7, 3.5)} fill={accent ? V : undefined} fillOpacity={accent ? 0.85 : undefined} {...(accent ? {} : s)} />
-      <path d={polyPath(P, [[x + 10, y + 30, z], [x + w * 0.7, y + 30, z]])} {...s} />
-      <path d={polyPath(P, [[x + 10, y + 38, z], [x + w * 0.5, y + 38, z]])} {...s} />
-    </g>
+    <Scene y={140}>
+      {[0, 1, 2, 3, 4].map((i) => <Plate key={i} at={[-W / 2, -D / 2, i * 9]} w={W} d={D} h={6} r={10} level={i === 4 ? 'primary' : 'secondary'} sides="flat" />)}
+      <WeekGrid z={42} />
+      <Plate at={[-6, -48, 62]} w={20} d={44} h={6} r={5} level="focal" sides="flat" />
+    </Scene>
+  )
+}
+function WeekGrid({ z }: { z: number }) {
+  const { P } = useIso(); const s = useStroke('detail')
+  return <g>{[1, 2, 3, 4].map((c) => <path key={c} d={polyPath(P, [[-60 + c * 24, -48, z], [-60 + c * 24, 48, z]])} {...s} />)}</g>
+}
+
+function FigFocus() {
+  return (
+    <Scene y={150}>
+      <Plate at={[-70, -70, 0]} w={140} d={140} h={10} r={14} level="secondary" sides="flat" />
+      {[[-70, -70, 140, 8], [-70, 62, 140, 8], [-70, -62, 8, 124], [62, -62, 8, 124]].map(([x, y, w, d], i) => <Plate key={i} at={[x, y, 10]} w={w} d={d} h={22} r={3} level="secondary" sides="flat" />)}
+      <Plate at={[-34, -34, 10]} w={68} d={68} h={48} r={8} level="focal" sides="flat" />
+    </Scene>
   )
 }
 
-function ArtLink() {
+function FigConflict() {
   return (
-    <IsoScene width={600} height={240} mode="light" accent={V} origin={{ x: 300, y: 70 }} edgeFade={0}>
-      <IsoGrid cells={14} step={30} style="dotted" />
-      <GuideLines through={[[-70, -50, 0], [70, 50, 0]]} reach={230} />
-      <Card at={[-70, -50, 0]} w={140} d={110} rows={3} highlight={1} chips={2} />
-      <Connector points={[[70, 0, 0], [140, 0, 0], [140, 40, 0]]} radius={8} level="primary" endNodes />
-      <Plate at={[120, 40, 0]} w={44} d={44} h={10} r={6} level="primary">
-        <CalTile />
-      </Plate>
-      <Callout at={[-70, 60, 4]} dx={-60} dy={30} label="CADENCE.SO/MAYA" />
-    </IsoScene>
+    <Scene y={150}>
+      <Plate at={[-90, -60, 0]} w={180} d={120} h={8} r={12} level="secondary" sides="flat" />
+      <Plate at={[-70, -40, 8]} w={60} d={80} h={10} r={8} level="primary" sides="flat" />
+      <Ghost />
+      <Plate at={[10, -40, 38]} w={60} d={80} h={10} r={8} level="focal" sides="flat"><Lines x={10} y={-40} z={48} w={60} n={2} /></Plate>
+    </Scene>
   )
 }
-function CalTile() {
+function Ghost() {
   const { P } = useIso()
-  const pl = topPlane(120, 40, 10)
-  return <g><path d={planeRoundRect(P, pl, 0, 0, 44, 11, 0)} fill={V} fillOpacity={0.9} /><Texture d={planeRoundRect(P, pl, 10, 18, 24, 18, 3)} kind="dots" /></g>
+  return <path d={planeRoundRect(P, topPlane(10, -40, 8), 0, 0, 60, 80, 8)} fill="none" stroke="rgba(17,17,17,0.22)" strokeDasharray="2 3" />
 }
 
-function ArtInsight() {
-  const days: [number, number][] = [[50, 0], [70, 0], [96, 0], [58, 0], [104, 1]]
+function FigLinks() {
   return (
-    <IsoScene width={600} height={240} mode="light" accent={V} origin={{ x: 300, y: 150 }} edgeFade={0}>
-      <IsoGrid cells={14} step={30} style="dotted" />
-      <GuideLines through={[[-100, -40, 0], [100, 40, 0]]} reach={230} />
-      <Plate at={[-110, -50, 0]} w={220} d={100} h={0} r={8} level="secondary" />
-      {days.map(([h, on], i) => <Tower key={i} at={[-90 + i * 40, -12, 0]} size={26} h={h} level={on ? 'focal' : i === 2 ? 'primary' : 'secondary'} topFill={on ? V : undefined} />)}
-      <Callout at={[83, 1, 104]} dx={56} dy={-20} label="FOCUS 15H" tone="accent" />
-    </IsoScene>
+    <Scene y={160}>
+      {[0, 1, 2, 3, 4, 5].map((i) => {
+        const on = i === 3
+        return <Plate key={i} at={[-110 + i * 38, -18, on ? 18 : 0]} w={30} d={36} h={on ? 14 : 8} r={6} level={on ? 'focal' : 'secondary'} sides="flat" />
+      })}
+    </Scene>
   )
 }
 
-function Cell({ w, h, title, body, chips, art, artTop = 44 }: { w: number; h: number; title: string; body: string; chips: string[]; art: ReactNode; artTop?: number }) {
+function FigInsight() {
+  const H = [26, 34, 22, 46, 64, 82, 58, 40, 30, 20]
   return (
-    <div className="relative overflow-hidden rounded-[24px]" style={{ width: w, height: h, background: '#f6f6f6', boxShadow: '0 0 0 1px rgb(0 0 0 / 0.05)' }}>
-      <div className="absolute left-6 top-6 text-[18px] font-[600] tracking-[-0.02em]">{title}</div>
-      <div className="absolute inset-x-0 flex justify-center" style={{ top: artTop }}>{art}</div>
-      <div className="absolute inset-x-6 bottom-6">
-        <p className="text-[14px] leading-[22px]" style={{ color: '#5c5c5c' }}>{body}</p>
-        <div className="mt-4 flex flex-wrap gap-1.5">{chips.map((c) => <span key={c} className="flex h-[26px] items-center rounded-full bg-white px-3 text-[11px] font-[600] tracking-[0.02em]" style={{ boxShadow: '0 0 0 1px rgb(0 0 0 / 0.07)', color: '#2a2a2a' }}>{c}</span>)}</div>
-      </div>
-    </div>
+    <Scene y={190}>
+      {H.map((h, i) => <Plate key={i} at={[-100 + i * 18, -40, 0]} w={7} d={80} h={h} r={2.5} level={i === 5 ? 'focal' : 'secondary'} sides="flat" />)}
+    </Scene>
   )
 }
+
+function FigZones() {
+  return (
+    <Scene y={150}>
+      {[0, 1, 2, 3, 4].map((i) => <Plate key={i} at={[-80 + (i - 2) * 22, -60 + i * 26, 0]} w={150} d={18} h={10} r={5} level="secondary" sides="flat" />)}
+      <Plate at={[-6, -64, 10]} w={22} d={136} h={0} r={6} level="focal" sides="flat" />
+    </Scene>
+  )
+}
+
+const FIGS: [string, string, string, () => React.JSX.Element][] = [
+  ['0.1', 'Find a time', 'Every guest’s calendar, read at once. The free hour lifts out.', FigFind],
+  ['0.2', 'Focus time', 'Deep work becomes a walled block nothing else can book.', FigFocus],
+  ['0.3', 'Conflicts', 'Double bookings slide to the next slot everyone has free.', FigConflict],
+  ['0.4', 'Scheduling links', 'One link, only the slots you actually have.', FigLinks],
+  ['0.5', 'Weekly insight', 'See where the week went, day by day.', FigInsight],
+  ['0.6', 'Time zones', 'Five cities, one shared hour, lined up for you.', FigZones],
+]
 
 export default function Bento() {
+  const col = (i: number) => {
+    const [n, t, b, F] = FIGS[i]
+    return (
+      <div key={n} className="relative w-[400px] pt-8" style={{ height: 520 }}>
+        <div className="font-mono text-[11px] tracking-[0.06em]" style={{ color: '#a3a3a3' }}>FIG {n}</div>
+        <div className="absolute inset-x-0 top-[70px] -ml-5 flex justify-center"><F /></div>
+        <div className="absolute bottom-10 left-0 w-[340px]">
+          <div className="text-[15px] font-[500] tracking-[-0.01em]">{t}</div>
+          <div className="mt-2 text-[15px] leading-[23px]" style={{ color: '#737373' }}>{b}</div>
+        </div>
+      </div>
+    )
+  }
   return (
-    <div className="relative" style={{ width: 1440, height: 1180, background: '#ffffff', fontFamily: '"Inter Variable", system-ui, sans-serif', fontFeatureSettings: '"cv11", "ss01"', color: INK }}>
-      <div className="absolute inset-x-0 top-[96px] text-center">
-        <h2 className="text-[44px] font-[550] leading-[1.06] tracking-[-0.04em]">Every Hour, Accounted For</h2>
-        <p className="mx-auto mt-4 text-[17px] leading-[26px]" style={{ color: '#5c5c5c' }}>Cadence finds the time, guards the focus and settles the conflicts,<br />so your week arrives already arranged.</p>
-      </div>
-      <div className="absolute left-[108px] top-[300px] flex flex-col gap-6">
-        <div className="flex gap-6">
-          <Cell w={392} h={434} title="Find a time" art={<ArtFind />} body="Cadence reads every guest's calendar and puts the one hour that works for all of them on the table." chips={['GOOGLE', 'OUTLOOK', 'TIME ZONES']} />
-          <Cell w={392} h={434} title="Focus time" art={<ArtFocus />} body="Deep work is a real block on the calendar. Requests that would break it get a polite later slot." chips={['FOCUS BLOCKS', 'AUTO DECLINE']} />
-          <Cell w={392} h={434} title="Conflicts" art={<ArtConflict />} body="When two meetings collide, Cadence moves the one with the most flexible guests to their next shared slot." chips={['OVERLAPS', 'RESCHEDULE', 'NOTIFY']} />
+    <div className="relative" style={{ width: 1440, height: 1420, background: '#ffffff', fontFamily: '"Inter Variable", system-ui, sans-serif', fontFeatureSettings: '"cv11", "ss01"', color: INK }}>
+      <h2 className="absolute left-[80px] top-[96px] w-[1180px] text-[48px] font-[500] leading-[1.08] tracking-[-0.035em]">
+        Every hour, accounted for. <span style={{ color: '#9a9a9a' }}>Cadence reads every calendar on the team, finds the time, guards the focus and settles the conflicts before you open your week.</span>
+      </h2>
+      {[0, 1].map((r) => (
+        <div key={r} className="absolute left-[80px] flex" style={{ top: 360 + r * 520, boxShadow: r ? 'inset 0 1px 0 #ececec' : undefined }}>
+          {[0, 1, 2].map((c) => (
+            <div key={c} className="flex" style={{ paddingLeft: c ? 40 : 0, boxShadow: c ? 'inset 1px 0 0 #ececec' : undefined }}>
+              {col(r * 3 + c)}
+            </div>
+          ))}
         </div>
-        <div className="flex gap-6">
-          <Cell w={600} h={387} title="Scheduling links" art={<ArtLink />} artTop={40} body="Share one link. People pick from the slots you actually have, and the event lands on both calendars." chips={['BOOKING PAGES', 'ROUND ROBIN', 'BUFFERS', 'ZOOM', 'MEET']} />
-          <Cell w={600} h={387} title="Weekly insight" art={<ArtInsight />} artTop={40} body="See how much of the week went to meetings and how much to work, per person and per team." chips={['FOCUS HOURS', 'MEETING LOAD', 'TEAM REPORTS']} />
-        </div>
-      </div>
+      ))}
     </div>
   )
 }
