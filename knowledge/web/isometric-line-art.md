@@ -253,3 +253,55 @@ Kit: `isoTheme("shaded-light" | "shaded-dark", accent)`, `accentFamily(hex, mode
 1. No primary source was found for how Kargul builds the ChatSheet / Boomtax gradients (Rive vs Figma exports); numbers are rendered results from 1800px JPEG captures (compression adds about +-2 levels).
 2. Linear, Vercel, Stripe, Supabase and Raycast pages captured on 2026-10-21 had no shaded isometric art (their bento visuals are product UI or flat line art), so they are not in the shading table.
 3. Light direction differs by source (IBM shades the left face darker, as the kit does; pixel-art guides make the lit side brighter than the top). The kit keeps top > lit > shade; test the other order only with a founder verdict.
+
+## 11. Kargul cell replica: what pixel registration proved (ISO-31..38), 2026-10-21
+
+Rebuilt the Branding cell of `knowledge/benchmarks/bento/kargul-services-bento.png` in `work/replicas/app/src/KargulIso.tsx` (route `#/kiso`) and overlaid it with `tools/compare.mjs` until plates, nodes, marks and guides registered within ~2px (`work/replicas/cmp-kargul-iso-overlay.png`). Every number below was solved back from his pixels into plane coordinates, not eyeballed.
+
+### ISO-31: Flat sheets, not boxes
+- **Rule:** his objects are zero-thickness sheets in true 30° iso. They have no side faces and no shading. Depth comes only from stacking: a lower sheet sits a fixed drop below (36 css under a 133x98 sheet, about 0.37 of the short side).
+- **Why:** our versions extruded slabs and shaded faces, which reads as 3D-model clip art. His reads as a drafted diagram.
+- **Check:** count the polygons per object. It should be one quad per layer and no side faces.
+- **Source:** Kargul services bento, Branding cell, measured 2026-10-21.
+
+### ISO-32: Occlusion by fill, hierarchy by stroke
+- **Rule:** the top sheet is filled slightly darker than the cell (`#2a2a2a` on `#313131`), so it hides what lies beneath.
+- **Stroke ladder:** the top edge is about 62% white, the lower and satellite edges about 30%, the guides about 14%. All strokes are 1px and no stroke is thicker.
+- **Why:** the ladder lives in alpha, not width.
+- **Check:** every stroke is 1px and there are three alpha steps.
+- **Source:** same cell.
+
+### ISO-33: Diamond nodes on corners only
+- **Rule:** nodes are small iso diamonds (half-width 4.5, height ratio 0.58) and sit only on sheet corners. They are light (`#e2e2e2`) on the focal sheet and mid-grey (`#6b6b6b`) below.
+- **Never:** circles, dots on edge midpoints, or coloured nodes.
+- **Why:** our circles and points were the "generic points" the founder named.
+- **Source:** same cell.
+
+### ISO-34: One solid white mark per scene
+- **Rule:** exactly one fully white shape per cell: the subject, laid flat on the focal sheet in plane coordinates. A second copy on a satellite sheet sits at about 36% white and 0.78 scale.
+- **Everything else is grey line or texture.**
+- **Source:** same cell.
+
+### ISO-35: Marks are drawn in the plane
+- **Rule:** the subject shape is built in plane units, then projected with the same matrix as the sheets. Stadium pills keep their long axis on the plane x axis.
+- **His mark solved into the plane:** two short pills (length 15.4) on the middle row, one long pill (29.4) above and one below, all radius 5.5.
+- **Never:** draw a screen-space icon and skew it, or drop in a Remix or lucide icon.
+- **Check:** every arc point goes through `pr()`.
+- **Source:** same cell.
+
+### ISO-36: Textures live on the hidden layer
+- **Rule:** the lower sheet carries the texture. That means a hatch of 1px lines at 2.2-unit pitch clipped to a plane quad, a fractal-noise grain clipped to a plane quad (clip it, or the filter region leaks as a screen rectangle), a big outlined letter at 4.5px stroke and about 32% alpha, and 1px text rows.
+- **Most of it stays hidden** under the top sheet, and only the edges peek out.
+- **Why:** detail you glimpse reads richer than detail you are shown.
+- **Source:** same cell.
+
+### ISO-37: Guides extend every sheet edge
+- **Rule:** each edge of the focal and lower sheets is extended in both directions as a dashed `3 3` line at about 14% white, running to the cell edge.
+- **Why:** this builds the perspective grid the scene sits in. Guides from a few corners are not enough.
+- **Source:** same cell.
+
+### ISO-38: Palette is greys only
+- **Rule:** the full cell uses page `#232323`, cell `#313131`, sheet `#2a2a2a`/`#303030`, strokes at white alpha, and one white mark. There is no hue at all.
+- **Colour, if any, is a later owned touch on one element.**
+- **Why:** our violet glows and tints were the "colors" the founder called off.
+- **Source:** same cell.
