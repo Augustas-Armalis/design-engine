@@ -13,14 +13,16 @@
     ]
   },
   "maxShadowStrings": 3,
-  "maxFontFamilies": 1,
-  "maxFontSizes": 5,
+  "maxFontFamilies": 2,
+  "maxFontSizes": 8,
   "weights": [
     400,
+    500,
+    510,
     550,
     600
   ],
-  "maxAccentHues": 1,
+  "maxAccentHues": 2,
   "canvas": {
     "maxChroma": 0.01
   },

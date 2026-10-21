@@ -1,5 +1,16 @@
 # Kargul hero replica: Chatsheet (study only)
 
+> **CORRECTION 2026-10-21:** this replica was measured from a compressed video frame, which plays the page at about 0.88. Several values below are wrong:
+> - every token is 12-14% small;
+> - the page is `#f5f6f7`, not lilac;
+> - the coin is true isometric 0.577, not 0.43;
+> - the buttons are pills;
+> - the closest free headline font is Lora.
+>
+> The authoritative measurements are the 2880x2070 design originals and `knowledge/web/chatsheet-live-study.md` (CSL-01..17).
+>
+> Lesson: never measure from video or a social-media recompression when an original exists. Find the source asset first (case page, CDN originals), and check the scale against a known dimension.
+
 Source: Marcel Kargul's X post 2112674079891227129 (20 Oct 2026, "this is what a $15,000 landing page looks like"), video frame at `work/replicas/ref-chatsheet-hero.png` (1252x900). Replica: `work/replicas/app/src/KargulHero.tsx` (route `#/khero`), overlay `work/replicas/cmp-khero-overlay.png`. Measured with `tools/probe.mjs`.
 
 ## Registered (measured, ours vs his)

@@ -72,13 +72,14 @@ The canon is the decided default for that kind and outranks every other doc. `fo
 
 ## Mode C: from references (find, replicate, in-the-style-of, combine)
 1. **Find** at most 6 candidates (`system/inspiration-sources.json`, `knowledge/benchmarks/`, the live web) and show them as a contact sheet. If the founder named a person or studio, pull their latest posts (`knowledge/benchmarks/kargul-x/CREDITS.md` has the public no-login method).
-2. **Replicate first** (`docs/REPLICATE-FIRST.md`):
+2. **Get the original before measuring anything.** Use the studio's case page or CDN originals, a live 2x capture, or the Figma export. Never measure a video frame or an X/social recompression when an original exists. Check the scale against a known dimension; viewport recordings often play the page at about 0.88. The Chatsheet replica measured the compression and got 10 tokens wrong (`knowledge/web/chatsheet-live-study.md`).
+3. **Replicate first** (`docs/REPLICATE-FIRST.md`):
    - Rebuild one reference at its pixel size.
    - Probe it, overlay it with `compare.mjs`, and repeat until type boxes and edges are within about 2px. This is a calibration study, not the deliverable.
    - Write `work/replicas/<NAME>-NOTES.md` with the measured tokens and the rules learnt, and fold any new general rule into `knowledge/`.
-3. **Combine:** one reference per axis (structure from A, type and colour from B, material and effects from C), never mixed inside one component.
-4. **Build our content** on the canon floor with 1-3 owned touches. Never ship their structure box for box, nor their copy, logos or assets.
-5. **Gate** as in Mode A, plus `compare.mjs` against each reference used. Deliver with the matrix and the side-by-side.
+4. **Combine:** one reference per axis (structure from A, type and colour from B, material and effects from C), never mixed inside one component.
+5. **Build our content** on the canon floor with 1-3 owned touches. Never ship their structure box for box, nor their copy, logos or assets.
+6. **Gate** as in Mode A, plus `compare.mjs` against each reference used. Deliver with the matrix and the side-by-side.
 
 ## Replica library (studied, measured)
 - **Kargul:** `work/replicas/KARGUL-HERO-NOTES.md` (Chatsheet), plus ISO-31..38 in `knowledge/web/isometric-line-art.md`.

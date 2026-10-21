@@ -131,7 +131,8 @@ const census = (cfg) => {
     const big = (a, b) => { const A = a.getBoundingClientRect(), B = b.getBoundingClientRect(); return B.width * Math.min(B.height, H) - A.width * Math.min(A.height, H) }
     product = below.filter((e) => dense(e) >= 15).sort(big)[0] || below.filter(media).sort(big)[0] || null
   }
-  const inProd = (el) => !!product && product.contains(el)
+  // every [data-product] element is product (a bento has one per cell), plus the guessed product when untagged
+  const inProd = (el) => !!el.closest?.('[data-product]') || (!!product && product.contains(el))
   // rendered lines of a block: cluster the client rects of its text nodes by vertical centre
   const lineBoxes = (el) => {
     const rs = []; const w = document.createTreeWalker(el, NodeFilter.SHOW_TEXT)
@@ -456,7 +457,9 @@ for (const b of m.boxes) {
   if (!inR(b.rad, band[1])) (b.control && !b.product ? offCtl : offBoxes).push(`${b.el} "${b.text}" h${b.h} r${b.rad} (band ${band[0]}: ${band[1].join('-')})${b.product ? ' [product]' : ''}`)
 }
 add('radius', 'radius.ladder.controls', ok(!offCtl.length), offCtl.length, `page controls sit in their height band${srcOf('radiusLadder')}; pills/circles exempt`, offCtl.slice(0, 6))
-add('radius', 'radius.ladder.boxes', okW(!offBoxes.length), `${offBoxes.length}/${m.boxes.filter((b) => !b.pill).length}`, `boxes sit in their height band ${JSON.stringify(ladder)}`, offBoxes.slice(0, 6))
+// founder cadence-glass r1 "roudness": off-ladder boxes FAIL when more than a quarter of the fold's boxes miss their band
+const boxTotal = m.boxes.filter((b) => !b.pill).length, boxShare = boxTotal ? offBoxes.length / boxTotal : 0
+add('radius', 'radius.ladder.boxes', boxShare > 0.25 ? 'FAIL' : okW(!offBoxes.length), `${offBoxes.length}/${m.boxes.filter((b) => !b.pill).length}`, `boxes sit in their height band ${JSON.stringify(ladder)}`, offBoxes.slice(0, 6))
 add('radius', 'radius.nested', okW(!m.nestedRadius.length), m.nestedRadius.length, 'a child radius never exceeds its parent (concentric: inner = outer - inset)', m.nestedRadius.slice(0, 6))
 
 // type
@@ -506,7 +509,7 @@ const maxCol = val('maxColourfulPixelShare')
 add('colour', 'colour.colourful-pixels', dark && maxCol != null ? ok(px.colourfulShare <= maxCol) : 'INFO', `${(px.colourfulShare * 100).toFixed(2)}%`, dark && maxCol != null ? `<= ${(maxCol * 100).toFixed(1)}% of fold pixels with OKLCH C > 0.08${srcOf('maxColourfulPixelShare')}` : 'share of colourful pixels (gated on dark kinds)')
 
 // button grammar
-const ctaCfg = { heightPx: val('cta', 'heightPx'), radiusPx: val('cta', 'radiusPx'), maxPrimary: val('cta', 'maxPrimary') }
+const ctaCfg = { heightPx: val('cta', 'heightPx'), radiusPx: val('cta', 'radiusPx'), maxPrimary: val('cta', 'maxPrimary'), minPrimary: canon?.cta?.minPrimary }
 const census_buttons = (list, label, regionTest = () => true) => {
   const prim = list.filter((b) => b.role === 'primary' && !b.nav && regionTest(b))
   const recipes = [...new Set(prim.map((b) => b.recipe))]
@@ -519,8 +522,8 @@ const navPrim = m.buttons.filter((b) => b.role === 'primary' && b.nav)
 if (navPrim.length && foldPrim.length) add('buttons', 'nav-vs-hero', foldPrim.some((b) => navPrim.some((n) => n.recipe === b.recipe)) ? 'WARN' : 'PASS', `${navPrim.length} nav primary`, 'the nav CTA must not repeat the hero CTA recipe (L300)', navPrim.map((b) => `${b.text}: ${b.recipe}`))
 if (isHero) {
   const heroBtns = m.buttons.filter((b) => !b.nav && b.role !== 'text' && (!m.h1 || b.top > m.h1.top - 4))
-  add('buttons', 'hero.primary-count', ok(foldPrim.length <= ctaCfg.maxPrimary && foldPrim.length >= 1), foldPrim.length, `1-${ctaCfg.maxPrimary} primary CTA in the hero${srcOf('cta', 'maxPrimary')}`, foldPrim.map((b) => b.text))
-  add('buttons', 'hero.cta-height', ok(heroBtns.length > 0 && heroBtns.every((b) => inR(b.h, ctaCfg.heightPx))), heroBtns.map((b) => b.h).join(',') || 'none', `${ctaCfg.heightPx.join('-')}px${srcOf('cta', 'heightPx')}`, heroBtns.map((b) => `${b.text} h${b.h}`))
+  add('buttons', 'hero.primary-count', ok(foldPrim.length <= ctaCfg.maxPrimary && foldPrim.length >= (ctaCfg.minPrimary ?? 1)), foldPrim.length, `${ctaCfg.minPrimary ?? 1}-${ctaCfg.maxPrimary} primary CTA in the hero (0 allowed only when the canon sets minPrimary 0: Linear puts its CTA in the nav)${srcOf('cta', 'maxPrimary')}`, foldPrim.map((b) => b.text))
+  add('buttons', 'hero.cta-height', (ctaCfg.minPrimary === 0 && !heroBtns.length) ? 'PASS' : ok(heroBtns.length > 0 && heroBtns.every((b) => inR(b.h, ctaCfg.heightPx))), heroBtns.map((b) => b.h).join(',') || 'none', `${ctaCfg.heightPx.join('-')}px${srcOf('cta', 'heightPx')}`, heroBtns.map((b) => `${b.text} h${b.h}`))
   const radBad = heroBtns.filter((b) => (ctaCfg.radiusPx ? !inR(b.rad, ctaCfg.radiusPx) && b.rad < b.h / 2 - 0.75 : b.rad < Math.min(12, 0.3 * b.h) - 0.25))
   add('buttons', 'hero.cta-radius', ok(!radBad.length), heroBtns.map((b) => b.rad).join(','), ctaCfg.radiusPx ? `${ctaCfg.radiusPx.join('-')}px or a pill [canon]` : 'radius >= min(12px, 0.3 x height), or a pill (L156 + L367: 12-18px at 44-52px)', radBad.map((b) => `${b.text} r${b.rad} h${b.h}`))
   const leadSec = m.buttons.filter((b) => !b.nav && b.role !== 'primary' && b.leadIcon)
@@ -542,7 +545,8 @@ if (isHero) {
   if (!p) add('hero', 'hero.product', 'FAIL', 'none', 'a product in the fold: mark it [data-product]')
   else {
     const side = m.h1 && p.top < m.h1.bottom
-    const gap = ctaBottom != null ? p.top - ctaBottom : null
+    // no hero CTA (Linear keeps its CTA in the nav): measure from the subtitle's bottom instead
+    const gap = ctaBottom != null ? p.top - ctaBottom : (ctaCfg.minPrimary === 0 && s?.bottom != null) ? p.top - s.bottom : null
     add('hero', 'hero.cta-product-gap', side ? 'PASS' : ok(gap != null && inR(gap, hc.gap)), side ? 'side stage' : gap != null ? `${Math.round(gap)}px` : 'no CTA', `${hc.gap.join('-')}px from CTA bottom to product top, or a side stage${srcOf('hero', 'ctaProductGapPx')}`, `product ${p.tagged ? '[data-product]' : '(guessed: tag it)'} ${p.el} top ${Math.round(p.top)}`)
     add('hero', 'hero.product-share', ok(p.share >= hc.share), `${Math.round(p.share * 100)}%`, `product >= ${Math.round(hc.share * 100)}% of the fold${srcOf('hero', 'productMinFoldShare')}`)
     add('hero', 'hero.product-transform', ok(!p.tilted), p.tilted ? 'tilted' : 'straight', 'product frame straight-on at rest, no rotate/perspective (L394)', p.transforms)

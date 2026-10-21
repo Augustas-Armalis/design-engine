@@ -74,3 +74,11 @@ Decided defaults, 2026-10-21. Evidence: `founder-taste L<n>` and the accepted Ki
 ## Open
 - Light hero CTA effect library for dark (gloss, inner glow) beyond the Kite bevel pill: no dark accept yet.
 - Whether a split layout (copy left, product right) works in dark: Tracewell's band layout was called "good" (L322) but no dark split has been accepted.
+
+## Round lesson: cadence-glass r1 (reject, 2026-10-21)
+Founder: "broken buttons backgourn d blurrs roudness.. components and like everythign about it spacings i bad wtf". What was measured wrong (`reports/cadence-glass/gate.json`), against the Linear fold replica (`work/replicas/LINEAR-NOTES.md`):
+- **Buttons.** I shipped a white gradient pill with an inset highlight, a glass blur pill, and a purple gradient with a glow. The decision: the dark CTA is flat and inverse. A `#e5e5e6` (or `#fff`) fill with ink text, 32-44px, hover to `#fff`, a contact shadow at most .08 alpha. The secondary is text only or a 1px white/12% ring with no fill and no blur. Never `backdrop-filter` on a button. Never a gradient on a button. No glow on any resting control.
+- **Background blurs.** Bloom filters and a frosted backdrop behind the product read as mush. When light is asked for, it is one crisp rendered source. Product surfaces are solid alpha steps on the canvas hue (Linear's frame `#131516`, panel `#17181a`), not blur.
+- **Roundness.** I used r32/21/20/12/10/9 with no ladder. The decision: one ladder for the whole fold, set by control height (pill 9999 for CTAs, 12 for the frame and panels, 8 for rows and inputs, 4-6 for chips). Nested insets keep the inner radius at most the outer radius.
+- **Spacing.** I used 10px outer padding, 8px gaps and a 6px footer padding inside a 328px slab. The decision: product chrome sits on an 8/12/16/24 scale, inner padding at least 12, and the same gap between siblings everywhere. Copy gaps follow Linear: h1 to sub 32, sub to product 64-96.
+- **Composition.** A floating whole slab under the CTAs looks like a mock-up. The product is cropped by the fold edge (Linear, Kite), wide (at least 75% of the content width).

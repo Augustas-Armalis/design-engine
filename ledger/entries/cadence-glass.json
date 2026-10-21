@@ -1,0 +1,72 @@
+{
+  "name": "cadence-glass",
+  "format": "rounds/1",
+  "rounds": [
+    {
+      "round": 1,
+      "date": "2026-10-21",
+      "recorded": "2026-10-21T14:43:50.352Z",
+      "verdict": "reject",
+      "why": "the purple hero you gave me has broken buttons backgourn d blurrs roudness.. components and like everythign about it spacings i bad wtf",
+      "canonKind": "hero-dark",
+      "source": {
+        "type": "check",
+        "path": "reports/cadence-glass/report.json"
+      },
+      "summary": {
+        "pass": 39,
+        "warn": 2,
+        "fail": 0
+      },
+      "fingerprint": {
+        "h1": {
+          "px": 68,
+          "lh": "68px",
+          "ls": "-3.06px",
+          "weight": "550",
+          "family": "Inter Variable",
+          "text": "Your Week, ArrangedBefore It Starts"
+        },
+        "fonts": [
+          "Inter Variable",
+          "Geist Mono Variable"
+        ],
+        "accentHues": [
+          135,
+          210,
+          255,
+          270
+        ],
+        "radii": [
+          10,
+          22,
+          32,
+          21,
+          9,
+          6,
+          3,
+          20,
+          2,
+          11,
+          99,
+          12
+        ],
+        "navHeight": 72,
+        "contentWidth": "840",
+        "sectionPad": null,
+        "sectionCount": 0,
+        "bodyPx": 17,
+        "heroLayout": "copy-above-visual",
+        "navNumbered": false,
+        "button": {
+          "radii": [
+            22
+          ],
+          "band": "37-48px",
+          "from": "check shape.radius-ladder"
+        }
+      },
+      "screenshot": "ledger/shots/2026-10-21-cadence-glass-r1-fold.png"
+    }
+  ]
+}

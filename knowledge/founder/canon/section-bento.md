@@ -66,3 +66,10 @@ Decided defaults, 2026-10-21. Evidence: `founder-taste L<n>`, Cadence bento v3 (
 ## Open
 - Dark-mode feature bento in our own builds: only the Kargul reference (dark) and Kaching dark sections exist; no dark bento of ours has a verdict.
 - Cadence v6 (five Kargul constructions via SVG plane matrices) has no founder verdict; do not treat it as the floor until it does.
+
+## Grammars beyond Kargul iso (2026-10-21)
+The bento canon above decides the Kargul iso grammar. Two more measured grammars are allowed as alternatives, both built from pixel replicas:
+- **Linear FIG triptych (dark):** `work/replicas/LINEAR-BENTO-NOTES.md`, LA-01..15, kit `work/replicas/app/src/lineart.tsx`. Mono FIG labels are allowed as a second family. Weight 510 is allowed.
+- **Attio ruled sheet (light):** `work/replicas/ATTIO-BENTO-NOTES.md`, AB-01..15. Tinted signal chips may add a second hue family. Product cells are tagged `data-product`.
+
+Both references' own secondary text fails AA: Attio's `#8f99a8` at about 2.8:1 and Linear's FIG labels at 40%. We darken ours to pass; we never copy an accessibility bug.
