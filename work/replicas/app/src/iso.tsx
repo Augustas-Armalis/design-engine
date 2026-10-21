@@ -13,6 +13,13 @@
  * Projections: "iso" = true isometric, axes at 30deg, 1.732:1 diamonds (Kargul, Opero, ChatSheet, Boomtax).
  *              "dimetric" = 2:1 pixel dimetric, axes at 26.565deg (Linear FIG triptych), crisper 1px diagonals.
  *
+ * Modes: "dark" (Kargul services), "light" (Opero / Boomtax line), "hairline" (Linear), and the shaded pair
+ *        "shaded-light" / "shaded-dark" (ISO-19..30): face ramps (top / lit right / shade left), side gradients,
+ *        1px edge highlight, soft contact shadows, and colour families derived from one accent hex:
+ *        <Plate tone="tint" | "solid" | "ink" accent="#3e7afd" glow />, accentFamily(hex, mode, strength),
+ *        <Stack layerTone={(i) => ...} />, <Glow />, <ContactShadow />, oklch() / hexToOklch().
+ *        All new props are optional; old scenes render exactly as before.
+ *
  * Erasable TypeScript only (no enums/namespaces).
  */
 import * as React from "react";
@@ -179,7 +186,117 @@ export function routePath(P: Projector, pts: V3[], radius = 6): string {
 
 /* ------------------------------------------------------------------------------------------------ theme */
 
-export type IsoMode = "dark" | "light" | "hairline";
+export type IsoMode = "dark" | "light" | "hairline" | "shaded-light" | "shaded-dark";
+
+/** true for every mode drawn on a dark ground */
+export const isDarkMode = (m: IsoMode) => m === "dark" || m === "shaded-dark";
+export const isShadedMode = (m: IsoMode) => m === "shaded-light" || m === "shaded-dark";
+
+/* ---------------------------------------------------------------------- OKLCH colour math (no deps) */
+
+export type Oklch = { l: number; c: number; h: number };
+const srgbToLin = (v: number) => (v <= 0.04045 ? v / 12.92 : ((v + 0.055) / 1.055) ** 2.4);
+const linToSrgb = (v: number) => (v <= 0.0031308 ? 12.92 * v : 1.055 * v ** (1 / 2.4) - 0.055);
+
+export function hexToOklch(hex: string): Oklch {
+  const h = hex.replace("#", "");
+  const full = h.length === 3 ? h.split("").map((c) => c + c).join("") : h;
+  const [r, g, b] = [0, 2, 4].map((i) => srgbToLin(parseInt(full.slice(i, i + 2), 16) / 255));
+  const l_ = Math.cbrt(0.4122214708 * r + 0.5363325363 * g + 0.0514459929 * b);
+  const m_ = Math.cbrt(0.2119034982 * r + 0.6806995451 * g + 0.1073969566 * b);
+  const s_ = Math.cbrt(0.0883024619 * r + 0.2817188376 * g + 0.6299787005 * b);
+  const L = 0.2104542553 * l_ + 0.793617785 * m_ - 0.0040720468 * s_;
+  const A = 1.9779984951 * l_ - 2.428592205 * m_ + 0.4505937099 * s_;
+  const B = 0.0259040371 * l_ + 0.7827717662 * m_ - 0.808675766 * s_;
+  return { l: L, c: Math.hypot(A, B), h: ((Math.atan2(B, A) * 180) / Math.PI + 360) % 360 };
+}
+
+function oklchToRgb(l: number, c: number, h: number): [number, number, number] {
+  const a = c * Math.cos((h * Math.PI) / 180), b = c * Math.sin((h * Math.PI) / 180);
+  const l_ = (l + 0.3963377774 * a + 0.2158037573 * b) ** 3;
+  const m_ = (l - 0.1055613458 * a - 0.0638541728 * b) ** 3;
+  const s_ = (l - 0.0894841775 * a - 1.291485548 * b) ** 3;
+  return [
+    4.0767416621 * l_ - 3.3077115913 * m_ + 0.2309699292 * s_,
+    -1.2684380046 * l_ + 2.6097574011 * m_ - 0.3413193965 * s_,
+    -0.0041960863 * l_ - 0.7034186147 * m_ + 1.707614701 * s_,
+  ];
+}
+
+/** OKLCH -> hex, reducing chroma until the colour fits sRGB (keeps lightness and hue exact). alpha < 1 returns rgba(). */
+export function oklch(l: number, c: number, h: number, alpha = 1): string {
+  const L = Math.max(0, Math.min(1, l));
+  let C = Math.max(0, c);
+  let rgb = oklchToRgb(L, C, h);
+  for (let i = 0; i < 24 && rgb.some((v) => v < -0.0005 || v > 1.0005); i++) {
+    C *= 0.9;
+    rgb = oklchToRgb(L, C, h);
+  }
+  const s = rgb.map((v) => Math.round(Math.max(0, Math.min(1, linToSrgb(Math.max(0, v)))) * 255));
+  if (alpha < 1) return `rgba(${s[0]},${s[1]},${s[2]},${alpha})`;
+  return "#" + s.map((v) => v.toString(16).padStart(2, "0")).join("");
+}
+
+/**
+ * FaceSet: everything one object needs to be shaded as a single colour family (ISO-19..). Side faces carry a
+ * gradient from the face colour to its B colour: "vertical" = top edge -> bottom edge, "front" = back silhouette
+ * (B) -> front vertical edge (face colour), the ChatSheet / IBM fade.
+ */
+export interface FaceSet {
+  top: string;
+  left: string; // shade face (screen-left)
+  right: string; // lit face (screen-right)
+  leftB: string;
+  rightB: string;
+  grad: "none" | "vertical" | "front";
+  stroke: string; // outline of this object (replaces the level colour when the family is not neutral)
+  edgeHi: string; // 1px highlight just under the front top edge ("" = none)
+  contact: string; // soft contact shadow fill ("" = none)
+  glow: string; // emitted glow colour at full strength
+  solid: string; // the family's solid accent (inlays, payload, nodes)
+}
+
+export type FamilyStrength = "tint" | "solid" | "ink";
+
+/**
+ * Derive a whole object family from one hex (measured recipe, isometric-line-art.md section 10):
+ *  tint  = a light object in the accent family (ChatSheet tiles, Boomtax glow plates; dark: Uplinq teal-tinted slabs)
+ *  solid = the one focal accent object (IBM volumes: top L+0.14, lit L+0.05, shade L-0.02 -> L-0.13 at the back)
+ *  ink   = light top + near-black accent sides (ChatSheet hub disc), only in light mode; in dark it maps to solid.
+ */
+export function accentFamily(hex: string, mode: IsoMode, strength: FamilyStrength = "tint"): FaceSet {
+  const { l: La, c, h } = hexToOklch(hex);
+  const dark = isDarkMode(mode);
+  if (!dark && strength === "tint")
+    return {
+      top: oklch(0.985, c * 0.06, h), right: oklch(0.935, c * 0.26, h), left: oklch(0.865, c * 0.36, h),
+      rightB: oklch(0.975, c * 0.08, h), leftB: oklch(0.83, c * 0.42, h), grad: "front",
+      stroke: oklch(0.7, c * 0.5, h), edgeHi: "rgba(255,255,255,0.85)", contact: oklch(0.9, c * 0.25, h, 0.6), glow: hex, solid: hex,
+    };
+  if (!dark && strength === "ink")
+    return {
+      top: oklch(0.87, c * 0.3, h), right: oklch(0.24, c * 0.3, h), left: oklch(0.2, c * 0.28, h),
+      rightB: oklch(0.21, c * 0.28, h), leftB: oklch(0.17, c * 0.26, h), grad: "vertical",
+      stroke: oklch(0.18, c * 0.25, h), edgeHi: oklch(0.95, c * 0.15, h, 0.9), contact: oklch(0.9, c * 0.25, h, 0.7), glow: hex, solid: hex,
+    };
+  if (!dark)
+    return {
+      top: oklch(La + 0.14, c * 0.7, h), right: oklch(La + 0.05, c, h), left: oklch(La - 0.02, c, h),
+      rightB: oklch(La, c, h), leftB: oklch(La - 0.13, c, h), grad: "front",
+      stroke: oklch(La - 0.22, c * 0.9, h), edgeHi: oklch(Math.min(0.97, La + 0.25), c * 0.4, h), contact: oklch(0.88, c * 0.3, h, 0.6), glow: hex, solid: hex,
+    };
+  if (strength === "tint")
+    return {
+      top: oklch(0.27, c * 0.3, h), right: oklch(0.235, c * 0.26, h), left: oklch(0.19, c * 0.22, h),
+      rightB: oklch(0.205, c * 0.22, h), leftB: oklch(0.16, c * 0.2, h), grad: "vertical",
+      stroke: oklch(0.75, c * 0.75, h), edgeHi: oklch(0.85, c * 0.5, h, 0.5), contact: "rgba(0,0,0,0.6)", glow: hex, solid: hex,
+    };
+  return {
+    top: oklch(La + 0.06, c, h), right: oklch(La - 0.08, c, h), left: oklch(La - 0.18, c, h),
+    rightB: oklch(La - 0.14, c, h), leftB: oklch(La - 0.26, c, h), grad: "vertical",
+    stroke: oklch(Math.min(0.95, La + 0.15), c * 0.6, h), edgeHi: oklch(0.95, c * 0.3, h, 0.8), contact: "rgba(0,0,0,0.6)", glow: hex, solid: hex,
+  };
+}
 
 /** Measured stroke/fill ladder (see isometric-line-art.md section 3). Dark ranks by alpha at one weight; light by weight + grey. */
 export interface IsoTheme {
@@ -204,9 +321,52 @@ export interface IsoTheme {
   accent: string;
   label: string;
   labelBg: string;
+  /** shaded modes only: the neutral face family (face ramp, side gradient, edge highlight, contact shadow) */
+  faces?: FaceSet;
+  /** shaded modes only: contact shadow blur in px and the default glow strength (0..1) */
+  contactBlur?: number;
+  glowAlpha?: number;
 }
 
 export function isoTheme(mode: IsoMode, accent?: string): IsoTheme {
+  if (mode === "shaded-light") {
+    // Measured: Boomtax neutral sides L0.90 under white tops (-0.10), 1px edge highlight +0.02, soft contact
+    // shadows; ChatSheet cool-tinted neutrals (H265, C<=0.006) on a #f5f6f8 ground; IBM flat tops.
+    const h = 265;
+    return {
+      mode, bg: "#f7f8fa", top: "#ffffff", topFocal: "#ffffff", left: oklch(0.905, 0.006, h), right: oklch(0.955, 0.004, h),
+      shadow: "rgba(30,41,59,0.07)", hatch: "rgba(30,41,59,0.12)", grain: 0.12, ink: "#0f172a",
+      focal: { c: "rgba(15,23,42,0.56)", w: 1.25 }, primary: { c: "rgba(15,23,42,0.38)", w: 1 },
+      secondary: { c: "rgba(15,23,42,0.26)", w: 1 }, detail: { c: "rgba(15,23,42,0.24)", w: 1 },
+      guide: { c: "rgba(15,23,42,0.22)", w: 1, dash: "4 4" }, grid: { c: "rgba(15,23,42,0.12)", w: 1, dash: "1 4" },
+      nodeOn: "#1e293b", nodeOff: "rgba(15,23,42,0.28)", accent: accent ?? "#3e7afd", label: "#1e293b", labelBg: "#ffffff",
+      faces: {
+        top: "#ffffff", right: oklch(0.955, 0.004, h), left: oklch(0.905, 0.006, h),
+        rightB: oklch(0.975, 0.003, h), leftB: oklch(0.93, 0.005, h), grad: "vertical",
+        stroke: "", edgeHi: "rgba(255,255,255,0.9)", contact: "rgba(30,41,59,0.13)", glow: accent ?? "#3e7afd", solid: accent ?? "#3e7afd",
+      },
+      contactBlur: 7, glowAlpha: 0.3,
+    };
+  }
+  if (mode === "shaded-dark") {
+    // Measured: Uplinq sides +0.014 L over a L0.16 ground with the payload as the only colour; Clerk objects with a
+    // dark rim and a +0.03 inner highlight; IBM dark hard drops -0.08 L. Light from above: side faces darken downward.
+    const h = 270;
+    return {
+      mode, bg: "#111113", top: oklch(0.255, 0.004, h), topFocal: oklch(0.275, 0.004, h), left: oklch(0.175, 0.004, h), right: oklch(0.215, 0.004, h),
+      shadow: "rgba(0,0,0,0.35)", hatch: "rgba(0,0,0,0.3)", grain: 0.12, ink: "#ffffff",
+      focal: { c: "rgba(255,255,255,0.5)", w: 1 }, primary: { c: "rgba(255,255,255,0.3)", w: 1 },
+      secondary: { c: "rgba(255,255,255,0.2)", w: 1 }, detail: { c: "rgba(255,255,255,0.18)", w: 1 },
+      guide: { c: "rgba(255,255,255,0.14)", w: 1, dash: "4 2" }, grid: { c: "rgba(255,255,255,0.09)", w: 1, dash: "1 4" },
+      nodeOn: "#e5e5e5", nodeOff: "rgba(255,255,255,0.24)", accent: accent ?? "#3ee0e6", label: "rgba(255,255,255,0.72)", labelBg: "#18181b",
+      faces: {
+        top: oklch(0.255, 0.004, h), right: oklch(0.215, 0.004, h), left: oklch(0.175, 0.004, h),
+        rightB: oklch(0.19, 0.004, h), leftB: oklch(0.15, 0.004, h), grad: "vertical",
+        stroke: "", edgeHi: "rgba(255,255,255,0.2)", contact: "rgba(0,0,0,0.62)", glow: accent ?? "#3ee0e6", solid: accent ?? "#3ee0e6",
+      },
+      contactBlur: 9, glowAlpha: 0.24,
+    };
+  }
   if (mode === "hairline") {
     // Linear grammar (knowledge/benchmarks/bento/linear-fig-triptych.png): one 1px hairline weight for every edge,
     // white faces, no hatch or grain, no nodes; depth comes only from stacking, offsets and rounded slab sides.
@@ -353,11 +513,15 @@ export function IsoScene(props: IsoSceneProps) {
             in="n"
             type="matrix"
             values={
-              mode === "dark"
+              isDarkMode(mode)
                 ? "0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 2.2 -1.1"
                 : "0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 2.2 -1.1"
             }
           />
+        </filter>
+        {/* soft contact shadow (shaded modes): blurred projected footprint, ISO-22 */}
+        <filter id={id("soft")} x="-60%" y="-60%" width="220%" height="220%">
+          <feGaussianBlur stdDeviation={T.contactBlur ?? 7} />
         </filter>
         {/* square 1px dots, 5px pitch, screen space */}
         <pattern id={id("dots")} width={5} height={5} patternUnits="userSpaceOnUse">
@@ -439,6 +603,8 @@ export function Texture(props: { d: string; kind?: "grain" | "dots" | "dots3"; o
 
 /* ------------------------------------------------------------------------------------------------ primitives */
 
+export type PlateTone = "neutral" | FamilyStrength | FaceSet;
+
 export interface PlateProps {
   /** world position of the plate's min corner (bottom of the slab) */
   at: V3;
@@ -452,15 +618,70 @@ export interface PlateProps {
   level?: Level;
   /** top-face fill override, e.g. the accent for the one answer object (ISO-12) */
   topFill?: string;
-  /** side treatment: hatch the shade face and grain the lit face (Kargul); flat = plain fills */
-  sides?: "kargul" | "flat";
+  /** side treatment: hatch the shade face and grain the lit face (Kargul); flat = plain fills; shaded = face ramp +
+   *  side gradient (default in shaded modes) */
+  sides?: "kargul" | "flat" | "shaded";
   /** draw diamond nodes on the four top corners (only meaningful with r = 0) */
   cornerNodes?: boolean | "on" | "off";
   /** dashed vertical corner edges instead of solid (Kargul exploded layer look) */
   dashedEdges?: boolean;
   /** flat cast shadow offset (light mode), in world units along +x/+y on the ground (z = 0) */
   shadow?: number;
+  /** colour family (ISO-20): neutral (theme faces), tint / solid / ink derived from `accent`, or a custom FaceSet */
+  tone?: PlateTone;
+  /** hex the family is derived from; default the scene accent */
+  accent?: string;
+  /** soft elliptical contact shadow on the ground (ISO-22). Default on in shaded modes for grounded objects */
+  contact?: boolean;
+  /** ground height for the contact shadow / glow (default 0) */
+  ground?: number;
+  /** emitted glow pool on the ground in the family colour (ISO-24); number = strength 0..1 */
+  glow?: boolean | number;
+  /** 1px edge highlight under the front top edge (ISO-23). Default on in shaded modes */
+  edgeHighlight?: boolean;
   children?: React.ReactNode;
+}
+
+/** Resolve the colour family for an object (theme neutrals, or derived from one accent hex). */
+export function useFamily(tone: PlateTone = "neutral", accent?: string): FaceSet | null {
+  const { T } = useIso();
+  return React.useMemo(() => {
+    if (typeof tone === "object") return tone;
+    if (tone === "neutral") return T.faces ?? null;
+    return accentFamily(accent ?? T.accent, T.mode, tone);
+  }, [tone, accent, T]);
+}
+
+/** ContactShadow: blurred projected footprint on the ground, offset toward the shadow side (+y = screen-left-down). */
+export function ContactShadow(props: { at: V3; w: number; d: number; r?: number; lift?: number; color?: string; spread?: number; opacity?: number }) {
+  const { P, T, id } = useIso();
+  const [x, y, z] = props.at;
+  const sp = props.spread ?? 2;
+  const lift = props.lift ?? 0;
+  const off = 3 + lift * 0.12;
+  const op = (props.opacity ?? 1) * Math.max(0.3, 1 - lift / 140);
+  const d = planeRoundRect(P, topPlane(x - sp, y - sp + off, z), 0, 0, props.w + sp * 2, props.d + sp * 2, (props.r ?? 0) + sp);
+  return <path d={d} fill={props.color ?? T.faces?.contact ?? T.shadow} filter={`url(#${id("soft")})`} opacity={op} />;
+}
+
+/** Glow: an emitted light pool on a plane, radial falloff in the projected ellipse (Uplinq, Boomtax, IBM). */
+export function Glow(props: { at: V3; radius: number; color?: string; strength?: number; plane?: "top" | "left" | "right" }) {
+  const { P, T, id } = useIso();
+  const [x, y, z] = props.at;
+  const c = props.color ?? T.accent;
+  const a = Math.max(0, Math.min(1, props.strength ?? T.glowAlpha ?? 0.25));
+  const gid = id("glow" + hash(`${x},${y},${z},${props.radius},${c}`));
+  const pl = props.plane === "left" ? leftPlane(x, y, z) : props.plane === "right" ? rightPlane(x, y, z) : topPlane(x, y, z);
+  return (
+    <g style={{ mixBlendMode: isDarkMode(T.mode) ? "screen" : "normal" }}>
+      <radialGradient id={gid}>
+        <stop offset={0} stopColor={c} stopOpacity={a} />
+        <stop offset={0.45} stopColor={c} stopOpacity={a * 0.45} />
+        <stop offset={1} stopColor={c} stopOpacity={0} />
+      </radialGradient>
+      <path d={planeCircle(P, pl, 0, 0, props.radius)} fill={`url(#${gid})`} />
+    </g>
+  );
 }
 
 /**
@@ -469,12 +690,17 @@ export interface PlateProps {
  * into a shade face (screen-left) and a lit face (screen-right).
  */
 export function Plate(props: PlateProps) {
-  const { P, T } = useIso();
-  const { at, w, d, h = 0, r = 0, level = "primary", sides = "kargul" } = props;
+  const { P, T, id } = useIso();
+  const shaded = isShadedMode(T.mode);
+  const { at, w, d, h = 0, r = 0, level = "primary" } = props;
+  const sides = props.sides ?? (shaded ? "shaded" : "kargul");
+  const fam = useFamily(props.tone ?? "neutral", props.accent);
+  const coloured = props.tone !== undefined && props.tone !== "neutral";
   const [x, y, z] = at;
   const topPl = topPlane(x, y, z + h);
   const topD = planeRoundRect(P, topPl, 0, 0, w, d, r);
-  let leftD = "", rightD = "", bottomD = "";
+  let leftD = "", rightD = "", bottomD = "", hiD = "";
+  let lBox = [0, 0, 0, 0], rBox = [0, 0, 0, 0];
   let edges: string[] = [];
   if (h > 0) {
     const ring = sampleRoundRect(topPl, 0, 0, w, d, r).map((v) => P.pv(v));
@@ -497,23 +723,70 @@ export function Plate(props: PlateProps) {
     };
     const band = (chain: Pt[]) =>
       "M" + chain.map(ptStr).join(" L") + " L" + chain.slice().reverse().map((p) => ptStr({ x: p.x + drop.x, y: p.y + drop.y })).join(" L") + " Z";
+    const box = (chain: Pt[]) => {
+      const xs = chain.map((p) => p.x), ys = chain.map((p) => p.y);
+      return [Math.min(...xs), Math.min(...ys), Math.max(...xs), Math.max(...ys) + drop.y];
+    };
     const lChain = walk(li, fi), rChain = walk(fi, ri);
     leftD = band(lChain);
     rightD = band(rChain);
+    lBox = box(lChain);
+    rBox = box(rChain);
     const full = walk(li, ri);
     bottomD = "M" + full.map((p) => ptStr({ x: p.x + drop.x, y: p.y + drop.y })).join(" L");
+    if (h >= 2) hiD = "M" + full.map((p) => ptStr({ x: p.x, y: p.y + 1 })).join(" L");
     const vert = (p: Pt) => `M${ptStr(p)} L${ptStr({ x: p.x + drop.x, y: p.y + drop.y })}`;
     edges = [vert(ring[li]), vert(ring[ri])];
     if (r <= 1) edges.push(vert(ring[fi]));
   }
-  const s = strokeOf(T, level);
+  const lv = T[level];
+  const s = coloured && fam?.stroke ? { ...strokeOf(T, level), stroke: fam.stroke, strokeWidth: lv.w } : strokeOf(T, level);
+  const bottomS = coloured && fam?.stroke
+    ? { ...strokeOf(T, "secondary"), stroke: fam.stroke, strokeOpacity: 0.7 }
+    : strokeOf(T, level === "focal" ? "primary" : "secondary");
   const nodes = props.cornerNodes
     ? ([[0, 0], [w, 0], [w, d], [0, d]] as const).map(([a, b], i) => (
         <Node key={i} at={[x + a, y + b, z + h]} tone={props.cornerNodes === "off" ? "off" : "on"} />
       ))
     : null;
+  // side fills: a face ramp with an optional gradient (ISO-21)
+  const useFam = fam && (sides === "shaded" || coloured);
+  const gk = hash(leftD + rightD + (fam ? fam.left + fam.right : ""));
+  const grad = useFam ? fam!.grad : "none";
+  const faceFill = (side: "l" | "r") => {
+    if (!useFam) return side === "l" ? T.left : T.right;
+    return grad === "none" ? (side === "l" ? fam!.left : fam!.right) : `url(#${id(side + gk)})`;
+  };
+  const gradDefs = useFam && grad !== "none" && h > 0 ? (
+    <>
+      {(["l", "r"] as const).map((side) => {
+        const b = side === "l" ? lBox : rBox;
+        const a = side === "l" ? fam!.left : fam!.right;
+        const bb = side === "l" ? fam!.leftB : fam!.rightB;
+        // vertical: face colour at the top edge -> B at the bottom; front: B at the back silhouette -> face at the front edge
+        const v = grad === "vertical";
+        const x1 = v ? 0 : side === "l" ? b[0] : b[2], x2 = v ? 0 : side === "l" ? b[2] : b[0];
+        const y1 = v ? b[1] : 0, y2 = v ? b[3] : 0;
+        return (
+          <linearGradient key={side} id={id(side + gk)} gradientUnits="userSpaceOnUse" x1={x1} y1={y1} x2={x2} y2={y2}>
+            <stop offset={0} stopColor={v ? a : bb} />
+            <stop offset={1} stopColor={v ? bb : a} />
+          </linearGradient>
+        );
+      })}
+    </>
+  ) : null;
+  const gz = props.ground ?? 0;
+  const contactOn = props.contact ?? (shaded && z - gz < 1);
+  const glowA = props.glow === true ? undefined : typeof props.glow === "number" ? props.glow : null;
+  const edgeHiOn = (props.edgeHighlight ?? shaded) && hiD && fam?.edgeHi;
+  const topFill = props.topFill ?? (coloured && fam ? fam.top : useFam && fam ? (level === "focal" ? T.topFocal : fam.top) : level === "focal" ? T.topFocal : T.top);
   return (
     <g>
+      {props.glow !== undefined && props.glow !== false && (
+        <Glow at={[x + w / 2, y + d / 2, gz]} radius={Math.max(w, d) * 1.1} color={fam?.glow ?? T.accent} strength={glowA ?? undefined} />
+      )}
+      {contactOn && <ContactShadow at={[x, y, gz]} w={w} d={d} r={r} lift={z - gz} color={fam?.contact || undefined} />}
       {props.shadow ? (
         <path
           d={planeRoundRect(P, topPlane(x + props.shadow * 0.35, y + props.shadow, 0), 0, 0, w, d, r)}
@@ -522,21 +795,23 @@ export function Plate(props: PlateProps) {
       ) : null}
       {h > 0 && (
         <>
-          <path d={leftD} fill={T.left} />
-          <path d={rightD} fill={T.right} />
+          {gradDefs}
+          <path d={leftD} fill={faceFill("l")} />
+          <path d={rightD} fill={faceFill("r")} />
           {sides === "kargul" && (
             <>
               <Hatch d={leftD} angle={P.angle} spacing={3} />
               <Texture d={rightD} kind="grain" />
             </>
           )}
-          <path d={bottomD} {...strokeOf(T, level === "focal" ? "primary" : "secondary")} />
+          {edgeHiOn && <path d={hiD} fill="none" stroke={fam!.edgeHi} strokeWidth={1} strokeLinecap="round" strokeLinejoin="round" vectorEffect="non-scaling-stroke" />}
+          <path d={bottomD} {...bottomS} />
           {edges.map((e, i) => (
             <path key={i} d={e} {...s} strokeDasharray={props.dashedEdges ? "2 1" : undefined} strokeLinecap={props.dashedEdges ? "butt" : "round"} />
           ))}
         </>
       )}
-      <path d={topD} fill={props.topFill ?? (level === "focal" ? T.topFocal : T.top)} />
+      <path d={topD} fill={topFill} />
       {props.children}
       <path d={topD} {...s} />
       {nodes}
@@ -548,9 +823,10 @@ export function Plate(props: PlateProps) {
 export function Box(props: Omit<PlateProps, "h"> & { h: number }) {
   return <Plate r={2} {...props} />;
 }
-export function Tower(props: { at: V3; size?: number; h: number; level?: Level; topFill?: string; sides?: "kargul" | "flat" }) {
-  const s = props.size ?? 24;
-  return <Plate at={props.at} w={s} d={s} h={props.h} r={2.5} level={props.level} topFill={props.topFill} sides={props.sides} />;
+export function Tower(props: { at: V3; size?: number; h: number; level?: Level; topFill?: string; sides?: PlateProps["sides"] } & Pick<PlateProps, "tone" | "accent" | "contact" | "glow" | "edgeHighlight" | "ground" | "children">) {
+  const { size, ...rest } = props;
+  const s = size ?? 24;
+  return <Plate {...rest} w={s} d={s} r={2.5} />;
 }
 
 /** Node: a square drawn in a plane (diamond on the top plane). size = side in world units (Kargul: 6 -> 10.4x6px). */
@@ -594,6 +870,12 @@ export interface StackProps {
   connectors?: boolean;
   /** render callback for the top face content of layer i */
   content?: (i: number) => React.ReactNode;
+  /** colour family per layer (ISO-25: one coloured layer in an exploded stack), e.g. i => (i === 1 ? "tint" : "neutral") */
+  layerTone?: (i: number) => PlateTone;
+  /** accent hex for coloured layers (default scene accent) */
+  accent?: string;
+  /** glow pool under the stack in the accent (dark: the payload layer emits) */
+  glow?: boolean | number;
 }
 
 /** Stack: exploded layers (bottom first) with dashed vertical connectors and corner nodes, focal layer brightest. */
@@ -620,7 +902,21 @@ export function Stack(props: StackProps) {
     }
     const lvl: Level = i === focal ? "focal" : i > focal ? "primary" : "secondary";
     out.push(
-      <Plate key={i} at={[x, y, zi]} w={w} d={d} h={thickness} r={r} level={lvl} cornerNodes={r <= 1 ? (i === focal ? "on" : "off") : false}>
+      <Plate
+        key={i}
+        at={[x, y, zi]}
+        w={w}
+        d={d}
+        h={thickness}
+        r={r}
+        level={lvl}
+        tone={props.layerTone?.(i)}
+        accent={props.accent}
+        glow={i === 0 ? props.glow : undefined}
+        ground={z}
+        contact={i === 0 ? undefined : false}
+        cornerNodes={r <= 1 ? (i === focal ? "on" : "off") : false}
+      >
         {props.content?.(i)}
       </Plate>,
     );
@@ -652,7 +948,7 @@ export function Card(props: CardProps) {
   let b = pad;
   if (props.title !== false) {
     const bar = planeRoundRect(P, pl, pad, b, w * 0.42, 6, 1.5);
-    items.push(<Texture key="tb" d={bar} kind="grain" opacity={T.mode === "dark" ? 0.5 : 0.4} />, <path key="tbs" d={bar} {...strokeOf(T, "detail")} />);
+    items.push(<Texture key="tb" d={bar} kind="grain" opacity={isDarkMode(T.mode) ? 0.5 : 0.4} />, <path key="tbs" d={bar} {...strokeOf(T, "detail")} />);
     b += 16;
   }
   const rowH = (d - b - pad - (chips ? 14 : 0)) / rows;
@@ -809,20 +1105,22 @@ export function Connector(props: { points: V3[]; radius?: number; dashed?: boole
  * Wall: upright UI sheet standing on z. facing "left" = constant y, runs along +x (Kargul's exploded Product UI/UX
  * layers, stacked by stepping y); facing "right" = constant x, runs along +y. `at` is the sheet's bottom-start corner.
  */
-export function Wall(props: { at: V3; w: number; h: number; r?: number; facing?: "left" | "right"; level?: Level; fill?: string; texture?: "grain" | "hatch" | "dots"; children?: (pl: Plane) => React.ReactNode }) {
+export function Wall(props: { at: V3; w: number; h: number; r?: number; facing?: "left" | "right"; level?: Level; fill?: string; texture?: "grain" | "hatch" | "dots"; tone?: PlateTone; accent?: string; children?: (pl: Plane) => React.ReactNode }) {
   const { P, T } = useIso();
+  const fam = useFamily(props.tone ?? "neutral", props.accent);
+  const coloured = props.tone !== undefined && props.tone !== "neutral";
   const [x, y, z] = props.at;
   const pl = props.facing === "right" ? wallPlane(x, y, z + props.h) : leftPlane(x, y, z + props.h);
   const d = planeRoundRect(P, pl, 0, 0, props.w, props.h, props.r ?? 4);
   const lv = props.level ?? "primary";
   return (
     <g>
-      <path d={d} fill={props.fill ?? T.top} />
+      <path d={d} fill={props.fill ?? (coloured && fam ? (props.facing === "right" ? fam.right : fam.left) : T.top)} />
       {props.texture === "grain" && <Texture d={d} kind="grain" />}
       {props.texture === "dots" && <Texture d={d} kind="dots3" />}
       {props.texture === "hatch" && <Hatch d={d} angle={90} spacing={3} color={lv === "focal" ? T.secondary.c : T.hatch} />}
       {props.children?.(pl)}
-      <path d={d} {...strokeOf(T, lv)} />
+      <path d={d} {...strokeOf(T, lv)} {...(coloured && fam?.stroke ? { stroke: fam.stroke } : {})} />
     </g>
   );
 }

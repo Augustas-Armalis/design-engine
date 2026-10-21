@@ -8,6 +8,9 @@
 import * as React from "react";
 import {
   Box,
+  ContactShadow,
+  Glow,
+  isDarkMode,
   Callout,
   Card,
   Connector,
@@ -26,6 +29,7 @@ import {
   planeRoundRect,
   polyPath,
   topPlane,
+  useFamily,
   useIso,
   useStroke,
 } from "./iso";
@@ -34,16 +38,18 @@ import type { IsoMode, Plane } from "./iso";
 const W = 360;
 const H = 280;
 
+const CELL_BG: Record<IsoMode, string> = { dark: "#313131", light: "#ffffff", hairline: "#ffffff", "shaded-light": "#f7f8fa", "shaded-dark": "#111113" };
+
 function Cell(props: { title: string; mode: IsoMode; note: string; children: React.ReactNode }) {
-  const dark = props.mode === "dark";
+  const dark = isDarkMode(props.mode);
   return (
     <figure
       style={{
         margin: 0,
         borderRadius: 18,
         overflow: "hidden",
-        background: dark ? "#313131" : "#ffffff",
-        boxShadow: dark ? "none" : "0 0 0 1px rgba(17,17,17,0.08)",
+        background: CELL_BG[props.mode],
+        boxShadow: dark ? (props.mode === "shaded-dark" ? "0 0 0 1px rgba(255,255,255,0.06)" : "none") : "0 0 0 1px rgba(17,17,17,0.08)",
         color: dark ? "#fff" : "#111",
       }}
     >
@@ -256,6 +262,143 @@ function WallUI(props: { pl: Plane }) {
   );
 }
 
+
+/* ------------------------------------------------------------------------------------------------ shaded modes */
+
+const BLUE = "#3e7afd"; // ChatSheet blue (light accent)
+const CYAN = "#3ee0e6"; // Uplinq cyan (dark accent)
+
+function ShadedCells(props: { mode: "shaded-light" | "shaded-dark" }) {
+  const m = props.mode;
+  const acc = m === "shaded-light" ? BLUE : CYAN;
+  return (
+    <>
+      <Cell mode={m} title="Face ramps" note="One family per object: neutral, tint, solid, ink. Top lightest, lit right, shade left.">
+        <IsoScene width={W} height={H} mode={m} origin={{ x: W / 2, y: 150 }} accent={acc}>
+          <GuideLines through={[[-110, -40, 0]]} reach={260} />
+          <Box at={[-110, -40, 0]} w={44} d={44} h={30} r={6} level="secondary" />
+          <Box at={[-50, -40, 0]} w={44} d={44} h={30} r={6} level="primary" tone="tint" />
+          <Box at={[10, -40, 0]} w={44} d={44} h={30} r={6} level="focal" tone="solid" />
+          <Box at={[70, -40, 0]} w={44} d={44} h={30} r={6} level="primary" tone={m === "shaded-light" ? "ink" : "tint"} />
+        </IsoScene>
+      </Cell>
+      <Cell mode={m} title="Contact + edge highlight" note="Soft blurred footprint under grounded objects; 1px highlight under the front top edge.">
+        <IsoScene width={W} height={H} mode={m} origin={{ x: W / 2, y: 110 }} accent={acc}>
+          <IsoGrid cells={8} step={30} style="dotted" />
+          <Plate at={[-70, -50, 0]} w={140} d={100} h={14} r={12} level="focal">
+            <TileFace a={-70} b={-50} z={14} />
+          </Plate>
+        </IsoScene>
+      </Cell>
+      <Cell mode={m} title="Coloured layer in a stack" note="Exploded stack: neutral layers, the payload layer in the tint family, glow under the stack.">
+        <IsoScene width={W} height={H} mode={m} origin={{ x: W / 2, y: 150 }} accent={acc}>
+          <GuideLines through={[[-55, -55, 0]]} reach={240} />
+          <Stack at={[-55, -55, 0]} w={110} d={110} layers={3} gap={32} thickness={8} r={8} connectors layerTone={(i) => (i === 1 ? "tint" : "neutral")} glow={m === "shaded-dark" ? 0.3 : 0.22} />
+        </IsoScene>
+      </Cell>
+      <Cell mode={m} title="Glow emitter" note="Towers in neutrals; the answer tower in the solid family with a ground glow and an accent path.">
+        <IsoScene width={W} height={H} mode={m} origin={{ x: W / 2, y: 190 }} accent={acc}>
+          <IsoGrid cells={8} step={30} style="dotted" />
+          <Glow at={[45, 5, 0]} radius={80} />
+          <Connector points={[[-120, 5, 0], [-40, 5, 0]]} level="secondary" dashed />
+          <Tower at={[-80, -10, 0]} size={30} h={36} level="secondary" />
+          <Tower at={[-25, -10, 0]} size={30} h={64} level="primary" />
+          <Tower at={[30, -10, 0]} size={30} h={104} level="focal" tone="solid" />
+        </IsoScene>
+      </Cell>
+    </>
+  );
+}
+
+/** In-plane UI on a shaded plate: one tinted chip row (the accent), the rest neutral hairlines (ISO-26). */
+function TileFace(props: { a: number; b: number; z: number }) {
+  const { P, T } = useIso();
+  const s = useStroke("detail");
+  const pl = topPlane(props.a, props.b, props.z);
+  return (
+    <g>
+      <path d={planeRoundRect(P, pl, 12, 12, 40, 9, 4.5)} fill={T.accent} />
+      <path d={planeRoundRect(P, pl, 58, 12, 34, 9, 4.5)} {...s} />
+      <path d={planeRoundRect(P, pl, 12, 30, 116, 58, 6)} {...s} />
+      <TextBars pl={pl} a={22} b={40} w={70} lines={3} />
+    </g>
+  );
+}
+
+/** Composed (shaded light): ChatSheet integrations grammar: neutral tiles on a dashed floor, one tinted hub. */
+function ComposedShadedLight() {
+  return (
+    <Cell mode="shaded-light" title="Composed: tinted hub" note="Neutral tiles with contact shadows; the hub in the tint family with a solid inlay and a blue glow pool.">
+      <IsoScene width={W * 2 + 16} height={320} mode="shaded-light" origin={{ x: 380, y: 140 }} accent={BLUE} edgeFade={0.3}>
+        <IsoGrid cells={10} step={44} style="dashed" />
+        <Connector points={[[-150, 30, 0], [-60, 30, 0]]} level="secondary" dashed />
+        <Connector points={[[30, -150, 0], [30, -60, 0]]} level="secondary" dashed />
+        <Box at={[-230, 0, 0]} w={60} d={60} h={14} r={10} level="secondary" />
+        <Box at={[0, -230, 0]} w={60} d={60} h={14} r={10} level="secondary" />
+        <Box at={[120, 40, 0]} w={60} d={60} h={14} r={10} level="secondary" />
+        <Plate at={[-60, -60, 0]} w={120} d={120} h={22} r={60} level="focal" tone="tint" glow={0.28}>
+          <HubInlay />
+        </Plate>
+        <Callout at={[60, 0, 22]} dx={110} dy={-40} label="Automation" tone="accent" />
+      </IsoScene>
+    </Cell>
+  );
+}
+
+function HubInlay() {
+  const { P, T } = useIso();
+  const pl = topPlane(0, 0, 22);
+  return (
+    <g>
+      <path d={planeCircle(P, pl, 0, 0, 44)} fill={T.accent} />
+      <path d={planeCircle(P, pl, 0, 0, 30)} fill="#ffffff" fillOpacity={0.35} />
+      <path d={planeCircle(P, pl, 0, 0, 14)} fill={T.accent} />
+    </g>
+  );
+}
+
+/** Composed (shaded dark): Uplinq grammar: two dark slabs exploded, cyan payload on the lower one, glow, guides. */
+function ComposedShadedDark() {
+  return (
+    <Cell mode="shaded-dark" title="Composed: emitted payload" note="Neutral dark slabs (sides lighter than ground), the payload is the only colour; glow pool + contact shadow.">
+      <IsoScene width={W * 2 + 16} height={320} mode="shaded-dark" origin={{ x: 380, y: 215 }} accent={CYAN} edgeFade={0.35}>
+        <IsoGrid cells={12} step={40} style="dotted" />
+        <GuideLines through={[[-80, -80, 0], [80, 80, 0]]} reach={420} />
+        <ContactShadow at={[-80, -80, 0]} w={160} d={160} r={6} />
+        <Glow at={[0, 0, 0]} radius={170} strength={0.2} />
+        <Plate at={[-80, -80, 0]} w={160} d={160} h={14} r={6} level="primary" contact={false}>
+          <Payload z={14} />
+        </Plate>
+        <Plate at={[-60, -60, 96]} w={120} d={120} h={12} r={6} level="focal" contact={false}>
+          <PayloadFrame z={108} />
+        </Plate>
+        <Callout at={[80, 80, 14]} dx={110} dy={10} label="Payload" tone="accent" />
+      </IsoScene>
+    </Cell>
+  );
+}
+
+function Payload(props: { z: number }) {
+  const { P, T } = useIso();
+  const pl = topPlane(0, 0, props.z);
+  const dots: [number, number, number][] = [[-20, -10, 6], [8, -18, 5], [22, 6, 7], [-6, 16, 6], [-30, 18, 3.5], [30, -24, 3.5], [0, 0, 4]];
+  return (
+    <g>
+      <Glow at={[30, 30, props.z]} radius={56} strength={0.35} />
+      {dots.map(([a, b, r], i) => (
+        <path key={i} d={planeCircle(P, pl, a + 30, b + 30, r)} fill={T.accent} />
+      ))}
+    </g>
+  );
+}
+
+function PayloadFrame(props: { z: number }) {
+  const { P } = useIso();
+  const pl = topPlane(-60, -60, props.z);
+  const fam = useFamily("tint");
+  return <path d={planeRoundRect(P, pl, 30, 30, 60, 60, 0)} fill="none" stroke={fam?.stroke} strokeWidth={1} vectorEffect="non-scaling-stroke" />;
+}
+
 export default function Demo() {
   return (
     <main style={{ padding: 32, background: "#232323", minHeight: "100vh" }}>
@@ -263,10 +406,14 @@ export default function Demo() {
       <div style={{ display: "grid", gridTemplateColumns: `repeat(4, ${W}px)`, gap: 16 }}>
         <PrimitiveCells mode="dark" />
         <PrimitiveCells mode="light" />
+        <ShadedCells mode="shaded-light" />
+        <ShadedCells mode="shaded-dark" />
       </div>
       <div style={{ display: "grid", gridTemplateColumns: `repeat(2, ${W * 2 + 16}px)`, gap: 16, marginTop: 16 }}>
         <ComposedDark />
         <ComposedLight />
+        <ComposedShadedLight />
+        <ComposedShadedDark />
       </div>
     </main>
   );

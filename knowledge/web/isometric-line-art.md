@@ -1,8 +1,8 @@
 ---
-source: measured (Playwright canvas crops and pixel profiles, 2026-10-21) on knowledge/benchmarks/bento/kargul-services-bento.png (2880x1920 @2x), kargul-deep/gallery boomtax-01/02, chatsheet-02/04, opero-labs-01/02, uplinq-12/14, lemon-01, gopher-06, defendlab-05, bento/linear-fig-triptych.png; web:https://www.ibm.com/design/language/illustration/isometric-style/design ; web:https://en.wikipedia.org/wiki/Isometric_projection ; web:https://en.wikipedia.org/wiki/Isometric_video_game_graphics ; web:https://pixelparmesan.com/fundamentals-of-isometric-pixel-art/ ; web:https://developer.mozilla.org/en-US/docs/Web/SVG/Reference/Attribute/vector-effect ; founder verdict 2026-10-21 (founder-taste.md, Cadence bento v3)
-chapter: Isometric line art for SaaS bento and feature cells: projection, stroke ladder, fills, nodes, composition, SVG construction
+source: measured (Playwright canvas crops and pixel profiles, 2026-10-21) on knowledge/benchmarks/bento/kargul-services-bento.png (2880x1920 @2x), kargul-deep/gallery boomtax-01/02, chatsheet-02/04, opero-labs-01/02, uplinq-12/14, lemon-01, gopher-06, defendlab-05, bento/linear-fig-triptych.png; web:https://www.ibm.com/design/language/illustration/isometric-style/design ; web:https://en.wikipedia.org/wiki/Isometric_projection ; web:https://en.wikipedia.org/wiki/Isometric_video_game_graphics ; web:https://pixelparmesan.com/fundamentals-of-isometric-pixel-art/ ; web:https://developer.mozilla.org/en-US/docs/Web/SVG/Reference/Attribute/vector-effect ; founder verdict 2026-10-21 (founder-taste.md, Cadence bento v3); shading study 2026-10-21 (section 10): web:https://www.ibm.com/design/language/illustration/isometric-style/design volumes + examples, web:https://workos.com, kargul-deep/gallery chatsheet-01/04, boomtax-02/03, lemon-01, uplinq-12/14, bento/clerk-bento-a.png; benchmarks in knowledge/benchmarks/iso-shading/
+chapter: Isometric line art for SaaS bento and feature cells: projection, stroke ladder, fills, nodes, composition, SVG construction, shading and colour
 pages: n/a (web + measured)
-topic_tags: [isometric, line-art, illustration, bento, svg, stroke, hatch, dots, grain, projection, dark-mode, light-mode, kargul, linear]
+topic_tags: [isometric, line-art, shading, colour, face-ramp, gradient, glow, contact-shadow, oklch, illustration, bento, svg, stroke, hatch, dots, grain, projection, dark-mode, light-mode, kargul, linear]
 status: studied
 ---
 
@@ -189,3 +189,67 @@ Projection constants: iso axis angle 30deg, cos 0.8660, sin 0.5, diamond 1.732:1
 8. **Order**: grid, guides, connectors, back objects, front objects, callouts. Fade with a mask on the scene group.
 
 Kit API: see `system/iso/iso.tsx` header and `Demo.tsx` (IsoScene, makeProjector/project, planes + planeRoundRect/planeCircle/routePath/polyPath, Plate, Box, Tower, Stack, Card, Wall, Node, Plus, Callout, Connector, GuideLines, IsoGrid, Hatch, Texture, isoTheme, useIso, useStroke).
+
+## 10. Shading and colour (ISO-19..30), measured 2026-10-21
+
+**Answer.** The studios add colour to iso line art without losing the clean read by keeping the *construction* monochrome and putting colour into **one object family**: a three-face ramp in one hue (top lightest, lit side mid, shade side darkest), a gentle gradient across each side face, a 1px edge highlight under the front top edge, a soft tinted contact shadow, and, for the one focal object, an emitted glow pool. Guides, grids, connectors and neutral objects stay grey (cool-tinted at C <= 0.006). Light mode lifts colour by tinting (accent at 6-40% chroma on near-white faces); dark mode keeps objects within +-0.04 L of the ground and lets only the payload and its glow carry hue. Kit: `system/iso/iso.tsx` modes `shaded-light` / `shaded-dark`, `<Plate tone accent glow>` (specimen rows 3-4 and the last two cells of `system/iso/demo.png`).
+
+### 10.1 Measured faces (OKLCH L / C, hue in brackets)
+
+| Source | Ground | Top | Lit side (right) | Shade side (left) | Gradient | Edge / outline | Shadow / glow |
+|---|---|---|---|---|---|---|---|
+| IBM volumes, purple cube | white | 0.75 / 0.15 | 0.66 / 0.22 | 0.59 front -> 0.48 back / 0.22 | horizontal, darker toward the back silhouette (-0.11) | none (faces meet) | flat |
+| IBM translucent cubes | white | 0.93 / 0.03 | 0.83 / 0.08 | ~0.80 | none | none | flat grey cast shadow on plate: 0.80 -> 0.73 (-0.07), hard edge |
+| IBM dark scene | 0.345 (H243) | 0.88 sheet | 0.67 edges (-0.22) | - | - | - | hard drop -0.08 L; emitter disc rings white -> 0.75 accent, disc side 0.40 accent, beam column = ground + 3% accent |
+| ChatSheet tiles (light) | 0.973 (H265, #f5f6f8) | white + 1px dot grain | band 0.96 / 0.02 at the front | band 0.86 / 0.07 at the back silhouette | horizontal fade back -> front, plus +0.02 L top -> bottom (bounce) | outline 0.76 / 0.08 same hue; bottom edge 0.60 | contact = tinted band 0.95 / 0.02 just below the base, ~20px; halo +0.02 L around the hub |
+| ChatSheet hub disc | 0.973 | rim 0.87 / 0.06 | side 0.22 / 0.06 (navy ink) | same | none | - | blue-tinted contact under the side |
+| Boomtax neutral disc | white | 1.00 | 0.90 (-0.10, H275 C0.006) | 0.90 | none | top edge 0.76; **1px highlight just below it 0.92 (+0.02 over the face)** | soft long grey shadow |
+| Boomtax glow plates | white | 0.925 / 0.12 (green) | - | - | radial: pale at the rim, stronger toward the hub | stroke 0.775 / 0.19 | bloom = accent radial behind/under the plates |
+| Lemon box (cream) | 0.96 warm | plate 0.95 -> white toward the front (+0.005) | 0.41 / 0.035 green | 0.41 (left vs right only 3/255 apart) | thin left rim +0.05 | plate side band white, brighter downward | contact plate outline 0.80, fill -0.02 |
+| Uplinq slabs (dark) | 0.159 neutral | **0.142 (darker than ground)**, 0.217 / 0.02 where the hologram tints it | 0.173 | 0.173 | none | cyan outline only on the payload frame | teal glow around the payload; cyan dots are the only saturated pixels |
+| Clerk objects (dark) | 0.25 (H286) | - | - | - | light cone from above: 0.46 at source -> ground over ~300 CSS px | outer rim 0.19 (-0.06), inner highlight 0.28 (+0.03) | - |
+| Kargul services (dark mono) | #313131 | -3 levels | +2 levels + grain | -7 levels + hatch | none | alpha ladder | none |
+
+### 10.2 Rules
+
+- **ISO-19 RULE** Shade with a three-face ramp in one hue: top lightest, lit side next, shade side darkest. Solid accent object: top = L_a + 0.14 at 0.7 x chroma, lit = L_a + 0.05, shade = L_a - 0.02 (front) -> L_a - 0.13 (back). Neutral light: top 1.00, lit 0.955, shade 0.905. Neutral dark: top 0.255, lit 0.215, shade 0.175 on a 0.17-0.19 ground.
+  **Why** One consistent ramp is what makes a set read as lit by one sun (IBM, pixel-art convention: lit side, then top, then shade; for UI art the top leads because the light is high). **Check** sample three faces: top > lit > shade, steps 0.04-0.10 L, hue within +-5deg. **Source** [M] IBM volumes; Boomtax; ChatSheet; web:IBM isometric style (one light source).
+- **ISO-20 RULE** Colour lives in families, not in strokes: derive every colour of an object (top, sides, outline, edge highlight, contact shadow, glow, inlay) from one hex in OKLCH, keep the hue fixed and move only L and C. At most one accent family plus one semantic signal (e.g. one green check) per cell.
+  **Why** Mixed hues per object read as clip art; one family keeps colour clean. **Check** all coloured pixels of an object within +-6deg hue. **Source** [M] ChatSheet (blue family incl. outline 0.76/0.08 and navy side), Boomtax (blue + one green), Uplinq (cyan only).
+- **ISO-21 RULE** Side faces get a gentle gradient, never the top: light mode fades the side from the back silhouette (darker, more chroma) to the front edge (lighter), 0.03-0.11 L; dark mode darkens downward (light from above) by 0.02-0.03 L. Tops stay flat (<= 0.005 L drift).
+  **Why** A side gradient gives volume without banding; a gradient top looks like a 2014 icon. **Check** top face L range <= 0.01; side face range 0.02-0.12. **Source** [M] IBM left face 0.59 -> 0.48, ChatSheet band 0.86 -> 0.96, Lemon plate top +0.005.
+- **ISO-22 RULE** Grounded objects get a soft contact shadow: the projected footprint +2 units, offset 3 units toward the shadow side (+y), blurred 6-9px; light = slate at 10-14% (or the family tint at L0.90-0.95), dark = black 55-65%. Floating layers: no contact under them (or fade it by height); pick soft contact *or* the flat cast shadow (ISO-18) per set.
+  **Why** The contact shadow seats the object on the drawing; a hard drop shadow belongs to the flat-cast family. **Check** shadow alpha falls to 0 within ~10px of the footprint; one shadow style per section. **Source** [M] ChatSheet tinted contact band; Boomtax soft shadows; IBM flat shadow -0.07 L (the other family).
+- **ISO-23 RULE** Add one 1px edge highlight just under the front top edge of every extruded object: white 85-90% in light, white 18-22% (or the family at L0.85, 50%) in dark. Never a glow on the edge.
+  **Why** It separates top from side at small sizes the way light catches a bevel; it is the cheapest premium cue. **Check** a 1px line 1px below the front chain, +0.02-0.03 L over the side face. **Source** [M] Boomtax 0.92 over 0.90; Clerk inner highlight +0.03.
+- **ISO-24 RULE** Glow only from the focal object, only on the ground (or its own top) as a radial pool in the family colour: light 22-30% at the centre, dark 20-35% with screen blend, radius 1.0-1.7 x the footprint. In dark mode coloured pixels stay <= ~3% of the cell (dark-mode-premium).
+  **Why** Light must come from an object (founder dark rule); a pool under the answer pulls the eye without colouring the scene. **Check** glow centred under one object; no glow behind type. **Source** [M] Uplinq payload, Boomtax green bloom, WorkOS chip, IBM emitter.
+- **ISO-25 RULE** In exploded stacks colour exactly one layer (the payload or the brand layer) in the tint family; the others stay neutral, connectors stay grey.
+  **Why** The coloured layer is the story ("this is the part we add"); colouring all layers flattens the explosion. **Check** count coloured layers = 1. **Source** [M] Uplinq (cyan payload layer), Lemon (green box under a white plate).
+- **ISO-26 RULE** Inside faces, colour goes to one solid inlay (brand mark, chip, answer row) at the full accent; everything else on the face is hairline or grain at neutral alpha.
+  **Why** ISO-12 still holds: one solid per cell. **Check** one element at L_a/C_a per cell. **Source** [M] ChatSheet hub inlay, Boomtax check button, Opero logo block.
+- **ISO-27 RULE** Light-mode tint family: top 0.985 / 0.06C, lit 0.935 / 0.26C, shade 0.865 / 0.36C (back end 0.83 / 0.42C), outline 0.70 / 0.5C, contact 0.90 / 0.25C at 60%. Dark tint family: top 0.27 / 0.30C, lit 0.235, shade 0.19 (bottoms -0.03), outline 0.75 / 0.75C. (C = the accent's chroma.)
+  **Why** These reproduce ChatSheet's blue tiles and Uplinq's teal slabs from one hex. **Check** `accentFamily(hex, mode, "tint")`. **Source** [M] ChatSheet band 0.856/0.071 on accent C0.205 (=0.35C); Uplinq tinted top 0.217/0.021.
+- **ISO-28 RULE** Ink variant (light only): a near-black side in the accent hue (L0.20-0.24, 0.28C) under a tinted top, for the one hub object that must out-weigh a field of white tiles.
+  **Why** The darkest mass in a light scene is the focal point without needing saturation. **Check** only one ink object per section. **Source** [M] ChatSheet hub side 0.22/0.06; Lemon dark-green box.
+- **ISO-29 RULE** Dark mode objects sit within +-0.04 L of the ground: sides may be lighter than the ground and the top darker (Uplinq) or the top lighter (Clerk/engine default); edge them with the alpha ladder and the edge highlight rather than with bright fills.
+  **Why** Bright fills in dark scenes turn line art into a render; low-contrast volumes keep the payload the only light. **Check** neutral face L in ground +-0.05. **Source** [M] Uplinq top 0.142 / sides 0.173 on 0.159; Clerk rim -0.06 / highlight +0.03.
+- **ISO-30 RULE** Where colour may not go: guides, grids, dimension leaders, neutral satellites, text bars and the cell background. Connectors may take the accent only for the one active path (dashed, primary alpha). Never two glows, never a gradient on a stroke, never blend-mode lighting on faces (IBM).
+  **Why** Coloured construction lines are what makes iso art look busy. **Check** grep the art: accent hex only on the focal family, one connector and inlays. **Source** web:IBM (avoid screen/multiply/overlay effects); [M] all references keep guides grey.
+
+### 10.3 Palette recipe (one hex in, a full scene out)
+
+1. Convert the accent to OKLCH (L_a, C, h). Keep h fixed for the whole family.
+2. Neutrals: light faces 1.00 / 0.955 / 0.905 with C 0.003-0.006 at h (or the system's neutral hue); dark faces 0.255 / 0.215 / 0.175 on a 0.17-0.19 ground.
+3. Pick the focal object's strength: `solid` (IBM ramp from L_a), `tint` (light pastel family / dark tinted slab), or `ink` (light only).
+4. Outline: family stroke (tint 0.70 / 0.5C light, 0.75 / 0.75C dark; solid L_a - 0.22). Neutral objects keep the grey alpha ladder.
+5. Highlight: 1px under the front top edge (ISO-23). Contact: blurred footprint (ISO-22). Glow: one pool under the focal (ISO-24).
+6. Budget: one accent family + at most one semantic colour; dark coloured pixels <= 3%; light accent-tinted area <= ~15% of the cell, full-chroma pixels <= 3%.
+
+Kit: `isoTheme("shaded-light" | "shaded-dark", accent)`, `accentFamily(hex, mode, "tint" | "solid" | "ink")` -> `FaceSet`, `<Plate|Box|Tower tone accent glow contact edgeHighlight ground>`, `<Stack layerTone accent glow>`, `<Wall tone>`, `<Glow at radius strength>`, `<ContactShadow at w d>`, `useFamily()`, `oklch()`, `hexToOklch()`.
+
+### 10.4 Open questions
+
+1. No primary source was found for how Kargul builds the ChatSheet / Boomtax gradients (Rive vs Figma exports); numbers are rendered results from 1800px JPEG captures (compression adds about +-2 levels).
+2. Linear, Vercel, Stripe, Supabase and Raycast pages captured on 2026-10-21 had no shaded isometric art (their bento visuals are product UI or flat line art), so they are not in the shading table.
+3. Light direction differs by source (IBM shades the left face darker, as the kit does; pixel-art guides make the lit side brighter than the top). The kit keeps top > lit > shade; test the other order only with a founder verdict.

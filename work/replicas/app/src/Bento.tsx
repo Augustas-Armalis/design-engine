@@ -1,14 +1,14 @@
 // Cadence feature section v5, replicate-first from Linear's figure triptych
 // (knowledge/benchmarks/bento/linear-fig-triptych.png): a two-tone statement headline, then columns split by 1px
 // hairlines, each with a mono FIG label, ONE quiet object drawn in 2:1 dimetric with a single hairline weight and white
-// faces (no fills, hatch, nodes, guides or colour), and a small title + muted line at the bottom. The idea is carried by
+// faces shaded by the measured ramp (ISO-19..30), the answer in a violet tint family with a soft glow, and a small title + muted line at the bottom. The idea is carried by
 // the geometry alone: the raised piece is the answer. Light mode. Sample content.
 import type { ReactNode } from 'react'
 import { IsoScene, Plate, useIso, useStroke, topPlane, planeRoundRect, polyPath } from './iso'
 
 const INK = '#171717'
 const Scene = ({ children, y = 150 }: { children: ReactNode; y?: number }) => (
-  <IsoScene width={400} height={360} mode="hairline" kind="dimetric" scale={1.3} origin={{ x: 200, y: y * 1.25 }}>{children}</IsoScene>
+  <IsoScene width={400} height={360} mode="shaded-light" kind="dimetric" scale={1.3} accent="#6e3ff3" origin={{ x: 200, y: y * 1.25 }}>{children}</IsoScene>
 )
 
 function Lines({ x, y, z, w, n = 2 }: { x: number; y: number; z: number; w: number; n?: number }) {
@@ -21,9 +21,9 @@ function FigFind() {
   const W = 120, D = 120
   return (
     <Scene y={140}>
-      {[0, 1, 2, 3, 4].map((i) => <Plate key={i} at={[-W / 2, -D / 2, i * 9]} w={W} d={D} h={6} r={10} level={i === 4 ? 'primary' : 'secondary'} sides="flat" />)}
+      {[0, 1, 2, 3, 4].map((i) => <Plate key={i} at={[-W / 2, -D / 2, i * 9]} w={W} d={D} h={6} r={10} level={i === 4 ? 'primary' : 'secondary'} sides="shaded" edgeHighlight />)}
       <WeekGrid z={42} />
-      <Plate at={[-6, -48, 62]} w={20} d={44} h={6} r={5} level="focal" sides="flat" />
+      <Plate at={[-6, -48, 62]} w={20} d={44} h={6} r={5} level="focal" sides="shaded" edgeHighlight tone="tint" />
     </Scene>
   )
 }
@@ -35,9 +35,9 @@ function WeekGrid({ z }: { z: number }) {
 function FigFocus() {
   return (
     <Scene y={150}>
-      <Plate at={[-70, -70, 0]} w={140} d={140} h={10} r={14} level="secondary" sides="flat" />
-      {[[-70, -70, 140, 8], [-70, 62, 140, 8], [-70, -62, 8, 124], [62, -62, 8, 124]].map(([x, y, w, d], i) => <Plate key={i} at={[x, y, 10]} w={w} d={d} h={22} r={3} level="secondary" sides="flat" />)}
-      <Plate at={[-34, -34, 10]} w={68} d={68} h={48} r={8} level="focal" sides="flat" />
+      <Plate at={[-70, -70, 0]} w={140} d={140} h={10} r={14} level="secondary" sides="shaded" edgeHighlight />
+      {[[-70, -70, 140, 8], [-70, 62, 140, 8], [-70, -62, 8, 124], [62, -62, 8, 124]].map(([x, y, w, d], i) => <Plate key={i} at={[x, y, 10]} w={w} d={d} h={22} r={3} level="secondary" sides="shaded" edgeHighlight />)}
+      <Plate at={[-34, -34, 10]} w={68} d={68} h={48} r={8} level="focal" sides="shaded" edgeHighlight tone="tint" glow={0.25} />
     </Scene>
   )
 }
@@ -45,10 +45,10 @@ function FigFocus() {
 function FigConflict() {
   return (
     <Scene y={150}>
-      <Plate at={[-90, -60, 0]} w={180} d={120} h={8} r={12} level="secondary" sides="flat" />
-      <Plate at={[-70, -40, 8]} w={60} d={80} h={10} r={8} level="primary" sides="flat" />
+      <Plate at={[-90, -60, 0]} w={180} d={120} h={8} r={12} level="secondary" sides="shaded" edgeHighlight />
+      <Plate at={[-70, -40, 8]} w={60} d={80} h={10} r={8} level="primary" sides="shaded" edgeHighlight />
       <Ghost />
-      <Plate at={[10, -40, 38]} w={60} d={80} h={10} r={8} level="focal" sides="flat"><Lines x={10} y={-40} z={48} w={60} n={2} /></Plate>
+      <Plate at={[10, -40, 38]} w={60} d={80} h={10} r={8} level="focal" sides="shaded" edgeHighlight tone="tint" glow={0.25}><Lines x={10} y={-40} z={48} w={60} n={2} /></Plate>
     </Scene>
   )
 }
@@ -62,7 +62,7 @@ function FigLinks() {
     <Scene y={160}>
       {[0, 1, 2, 3, 4, 5].map((i) => {
         const on = i === 3
-        return <Plate key={i} at={[-110 + i * 38, -18, on ? 18 : 0]} w={30} d={36} h={on ? 14 : 8} r={6} level={on ? 'focal' : 'secondary'} sides="flat" />
+        return <Plate key={i} at={[-110 + i * 38, -18, on ? 18 : 0]} w={30} d={36} h={on ? 14 : 8} r={6} level={on ? 'focal' : 'secondary'} tone={on ? 'tint' : 'neutral'} glow={on ? 0.25 : undefined} sides="shaded" edgeHighlight />
       })}
     </Scene>
   )
@@ -72,7 +72,7 @@ function FigInsight() {
   const H = [26, 34, 22, 46, 64, 82, 58, 40, 30, 20]
   return (
     <Scene y={190}>
-      {H.map((h, i) => <Plate key={i} at={[-100 + i * 18, -40, 0]} w={7} d={80} h={h} r={2.5} level={i === 5 ? 'focal' : 'secondary'} sides="flat" />)}
+      {H.map((h, i) => <Plate key={i} at={[-100 + i * 18, -40, 0]} w={7} d={80} h={h} r={2.5} level={i === 5 ? 'focal' : 'secondary'} tone={i === 5 ? 'tint' : 'neutral'} sides="shaded" edgeHighlight />)}
     </Scene>
   )
 }
@@ -80,8 +80,8 @@ function FigInsight() {
 function FigZones() {
   return (
     <Scene y={150}>
-      {[0, 1, 2, 3, 4].map((i) => <Plate key={i} at={[-80 + (i - 2) * 22, -60 + i * 26, 0]} w={150} d={18} h={10} r={5} level="secondary" sides="flat" />)}
-      <Plate at={[-6, -64, 10]} w={22} d={136} h={0} r={6} level="focal" sides="flat" />
+      {[0, 1, 2, 3, 4].map((i) => <Plate key={i} at={[-80 + (i - 2) * 22, -60 + i * 26, 0]} w={150} d={18} h={10} r={5} level="secondary" sides="shaded" edgeHighlight />)}
+      <Plate at={[-6, -64, 10]} w={22} d={136} h={0} r={6} level="focal" sides="shaded" edgeHighlight tone="tint" />
     </Scene>
   )
 }
