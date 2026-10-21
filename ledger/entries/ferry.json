@@ -1,0 +1,61 @@
+{
+  "name": "ferry",
+  "format": "rounds/1",
+  "rounds": [
+    {
+      "round": null,
+      "date": "2026-10-09",
+      "verdict": "accept",
+      "why": "this is not bad actually, you're getting better... I'd just improve the sidebar and the white buttons a tiny bit (sidebar icons, more Attio-like, more pages); renamed from Acquisity",
+      "summary": {
+        "pass": 22,
+        "warn": 6,
+        "fail": 1
+      },
+      "fingerprint": {
+        "h1": {
+          "px": 14,
+          "lh": "20px",
+          "ls": "-0.28px",
+          "weight": "500",
+          "family": "Inter Variable",
+          "text": "Home"
+        },
+        "fonts": [
+          "Inter Variable"
+        ],
+        "accentHues": [
+          30,
+          45,
+          150,
+          165,
+          195,
+          225,
+          240,
+          255,
+          360
+        ],
+        "radii": [
+          8,
+          7,
+          5,
+          3,
+          "pill",
+          12,
+          4,
+          6,
+          10
+        ],
+        "navHeight": 753,
+        "contentWidth": "1192",
+        "sectionPad": 16,
+        "sectionCount": 2,
+        "bodyPx": 14,
+        "heroLayout": "integrated",
+        "navNumbered": false
+      },
+      "screenshot": "ledger/shots/2026-10-09-ferry-fold.png",
+      "legacyFile": "2026-10-09-ferry.json"
+    }
+  ]
+}

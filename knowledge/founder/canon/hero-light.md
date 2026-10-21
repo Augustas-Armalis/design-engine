@@ -1,0 +1,82 @@
+# Canon: light SaaS hero
+
+Decided defaults, 2026-10-21. Every value below traces to a founder verdict (`founder-taste L<n>`, the line of the RULE bullet) or to an accepted build. The log in `founder-taste.md` is the evidence; this page is the answer. Gate numbers: `system/canon/hero-light.json`.
+
+## Floor references
+- **Default (split, product-first):** Quorum v6.6, `knowledge/engine-accepted/quorum/quorum-fold@2x.png` + `README.md` (ledger `2026-10-15-quorum`, "perfected... see how clean and professional this looks").
+- **Alternate (centred over product):** Kestrel, `knowledge/engine-accepted/kestrel/kestrel-fold@2x.png` (ledger `2026-10-08-kestrel`, "fucking amazing... top tier"); numbers in `system/kits/product-hero/GUIDE.md`.
+
+## Reading set (5 files, nothing else is mandatory)
+1. this page
+2. `knowledge/engine-accepted/quorum/README.md`
+3. `system/kits/product-hero/GUIDE.md` (Kestrel numbers, timeline discipline)
+4. `knowledge/founder/canon/product-ui.md` (the app inside the hero)
+5. the last 5 ledger rounds (`ledger/entries/`, newest first)
+
+## Decided numbers
+
+| Part | Default | Source |
+|---|---|---|
+| Canvas | 1440x900 fold, page `#fff` (split) or `#f7f7f7` (centred); neutral, chroma < 0.01 | Quorum, Kestrel; L391 |
+| Type family | Inter Variable **display cut** (`@fontsource-variable/inter/opsz.css`), `font-optical-sizing:auto`, `cv11` `ss01`; one family in the fold, hero and product alike | L452 |
+| h1, split | 58 / 550 / -0.045em / lh 1.03, top ~207px | Quorum; L293 (top 200-210) |
+| h1, centred | 68-72 / 550 / -0.045em / lh 1.04, top ~150px (80-90px under the nav) | Kestrel 72; L122, L142, L452 |
+| h1 copy | Title Case, 2 lines max, no full stop, <= 5 words with an idea in them | L30, L98, L433 |
+| Subtitle | 17/27 (split) or 18/28, colour `#5d6168`-class sub grey, 2 hand-set balanced phrase lines, last line >= 40% of the first, measure <= 620px | Quorum; L361, L400, L455 |
+| Rhythm | h1 -> sub 20; sub -> CTA 32; CTA -> next element 96 (split composer) or 64-96 (frame top, centred) | Quorum 20/32/96; L186-189, L297; HC-01 |
+| CTAs | 2: primary + secondary. Primary 44-48 tall, radius 12-14 (squircle), **tactile ink**: gradient body, 1px top light, crisp rim. Secondary raised white with a hairline ring, **text only**. Hover moves lightness only; press scale 0.98; no lift | Quorum 48/r12, Kestrel 44/r14; L154, L170, L280, L367 |
+| Nav | plain text: wordmark left, 5 links 14/500 sub grey, 32px apart, 48px after the logo; right side text only ("Sign in" grey, "Start free →" ink with draw-in underline). Nav 72-88 tall, inset 64 | Quorum; L300 |
+| Above the h1 | nothing (no chip, no eyebrow) | L142, L430 |
+| Product | the real app's core screen at Kargul detail: <= 3 regions, >= 10 meaningful data points, >= 8 rows visible (Quorum 13), running to the bleed or dissolving (mask + 140px progressive blur 2/4/8px) | L276, L284, L297, L316, L352, L503 |
+| Product placement | split: stage x572 y124 856 wide, r24, stage top ~40px above the h1 cap line, bleeds off the bottom; centred: frame >= 1000 wide, top <= 520px, cut by the fold | Quorum; L130, L284, L418 |
+| Background | ONE quiet layer: split = smooth gradient stage behind the product only (Paper GrainGradient at noise 0, blurred 26px); centred = 16px dot grid inside the rails, faded behind the headline | Quorum; L150, L297, L313 |
+| Floaters | at most one, and only if it says what the product is doing now; default zero (Quorum final cut the status bar) | L291, L294, Quorum README |
+| Copy-side substance | split: one real product element under the CTAs (the Ask composer, 470 wide, 17/550 question), never bullets or icon rows | L281, L288, L294 |
+| Colour | ink `#111214`, one accent (Quorum indigo `#5056f0`) for selection and strong data; tag colours only on tags | Quorum README |
+| Edges and depth | 1px ink-alpha rings (6-10%), one edge per box, <= 3 shadow recipes on the page, accessories at ~20% intensity (edge alpha .2, shadows .14-.18) | L199, L376, L467; Quorum README |
+| Corners | squircle on every rounded non-capsule box; ladder in the JSON | L373, L166 |
+| Element budget | nav, copy (h1 + sub + CTAs), one composer or proof element, one product stage. 5 units, 7 max | Quorum README; HC-05 |
+| Motion | none. Deliver screenshots. If motion is asked, `canon/motion.md` | L358, L512 |
+| Delivery | 2x still, a localhost URL, a change list mapped to the founder's words; on a fresh hero brief also the switchable `?layout=` / `?font=` build | L406; playbook |
+
+## Contradictions resolved (audit 4.1)
+
+| Topic | Default | Alternative only when | Superseded lines |
+|---|---|---|---|
+| Headline tuple | 58/550/-0.045 split, 68-72/550/-0.045 centred, Inter display | 52/500 only when the brief says "minimal" and the founder confirms; never 84px | L262 (84/500), L268 (52/500), L270, L430 (~52, <= 56), L443 (60/450), L446 (56/500 two-tone); CLAUDE.md "56/500" |
+| Chip above h1 | off | the brief names an announcement: then a custom pill from `system/variety/buttons-2/`, never the stock "[New] text →" capsule, and drop it first when the fold is tight | L364 ("not off by default") |
+| Hero button | tactile ink r12-14 + raised white text-only, 44-48 | full pill only when the product's own buttons are pills (dark Kite) | L58 (Kaching 18px label: Kaching brand only), L262 (flat ink r12), L270 (r10 grey) |
+| Nav | plain text links, text-only nav CTAs | Kaching pill nav (L94) only on Kaching work or when DIRECTION declares the pill as an owned decision | L38 (divided pill), L94 as default, L146 (44 track: Kestrel only) |
+| Default layout | Quorum split | Kestrel centred when the previous light build was a split (range rule, L182/L253); Altrina panel never by default | L130 (centred as THE default), L262 (Altrina), L268 (Lightfield numbers; the layout survives as Quorum) |
+| Product density | one view at Kargul detail (<= 3 regions, >= 10 data points, >= 8 rows) | none | L18 / L54 (simple card: Tideline-era hero card only) |
+| Background | one quiet layer (stage or rail dot grid) | a bespoke generative field only when DIRECTION names it as the signature AND it sits behind the product only | L62 (signature field >= 30% of fold), L430 hatch/grid variants as defaults |
+| Motion | none | `motion: asked` in DIRECTION | L174 (every hero animated word by word) |
+| Diversity vs floor | the floor above is fixed; divergence = layout alternation + at most 3 owned decisions (button effect, product world, stage material) | — | L182/L253 read as "change type voice and everything" |
+
+## Never (rejected, with evidence)
+- Abstract art as the main visual: ribbons, sound landscapes, line sheets (Quorum v4/v4.1, L265, L268 "what even is this hero").
+- Tilted product frames at rest (Perch, L394); stacked floaters or popovers over the product (L291).
+- Bullet or icon-row lists under the CTAs; "how it works" steps in the hero (Ferry hero, L288, L313).
+- Contour, globe or busy patterns behind the copy (Ferry, Kite landing, L313, L418).
+- Heavy 600-700 h1 with crushed tracking; poster didone serif (Tracewell, Quillwork, L322, L355).
+- Plain `@fontsource-variable/inter` at display size; two grotesks in one fold (L452).
+- Hard white corners where the product stops (Quorum v6, L284).
+- A full page when a hero was asked (Quorum v1, Kite landing, L253, L424).
+- Nav dots or markers beside links (Quorum v4, L265).
+
+## Pre-delivery checklist (measure, do not eyeball)
+1. Scope matches the words: one 1440x900 fold, no video, no animation unless asked.
+2. `node tools/design_view.mjs <url> --kind hero-light --name <name>`: 0 FAIL; read the PNG next to Quorum and Kestrel.
+3. h1 computed size/weight/tracking in range, opsz file loaded, one family, Title Case, no full stop, <= 2 lines.
+4. Subtitle 2 lines, last line >= 40%, width <= 620.
+5. Gaps measured with getBoundingClientRect: 20 / 32 / 64-96.
+6. Nothing between nav and h1; nav CTAs differ from hero CTAs.
+7. Box-shadow census <= 3 strings; no element with ring + inset top highlight; no border + ring.
+8. Radii per height band match the ladder; squircle share >= 90%.
+9. Product frame transform is identity; product >= 20% of the fold; no fade-to-white before the bleed.
+10. Round 2+: computed-style diff against the last liked version, only named properties changed (playbook rule 2, L409).
+
+## Open (no founder evidence yet; not in the JSON)
+- Light-hero colourful-pixel budget: the Quorum stage is a lavender gradient and was never measured; no cap is set.
+- Font-size count in a hero fold: not measured on Quorum or Kestrel.
+- Whether the rail dot grid is the default for every centred light hero (playbook open question 7).

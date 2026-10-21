@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "id": "reel-preview",
+  "dir": "/Users/augustas/Documents/Larpo front-end engine/work/kite/showcase/reel-preview",
+  "createdAt": "2026-10-15T15:05:02.283Z",
+  "settings": {
+    "url": "http://localhost:4361/#/showcase",
+    "width": 1220,
+    "height": 900,
+    "scale": 1,
+    "scrollY": 0,
+    "fps": 30,
+    "startMs": 0,
+    "durationMs": 4500,
+    "holdMs": 800,
+    "region": {
+      "type": "viewport"
+    },
+    "actions": [],
+    "cursor": false,
+    "colorScheme": "light",
+    "seed": 24301,
+    "realRandom": false,
+    "keepFrames": false,
+    "presets": []
+  },
+  "size": {
+    "width": 1220,
+    "height": 900
+  },
+  "frames": 135,
+  "browser": "153.0.8010.12",
+  "files": {
+    "master": "/Users/augustas/Documents/Larpo front-end engine/work/kite/showcase/reel-preview/master.nut",
+    "proxy": "/Users/augustas/Documents/Larpo front-end engine/work/kite/showcase/reel-preview/proxy.mp4",
+    "thumbs": "/Users/augustas/Documents/Larpo front-end engine/work/kite/showcase/reel-preview/thumbs.jpg",
+    "poster": "/Users/augustas/Documents/Larpo front-end engine/work/kite/showcase/reel-preview/poster.png"
+  },
+  "thumbs": {
+    "step": 3,
+    "count": 40
+  },
+  "edits": {
+    "holdLastMs": 800,
+    "fadeColor": "#0a0a0b"
+  },
+  "background": "#0a0a0b",
+  "exports": [
+    {
+      "preset": "h264",
+      "file": "/Users/augustas/Documents/Larpo front-end engine/work/kite/showcase/preview-raw.mp4",
+      "bytes": 950154,
+      "probe": {
+        "file": "/Users/augustas/Documents/Larpo front-end engine/work/kite/showcase/preview-raw.mp4",
+        "bytes": 950154,
+        "codec": "h264",
+        "profile": "High",
+        "pixFmt": "yuv420p",
+        "width": 1220,
+        "height": 900,
+        "fps": "30/1",
+        "frames": 159,
+        "durationSec": 5.3,
+        "bitrateKbps": 1223,
+        "color": {
+          "space": "bt709",
+          "primaries": "bt709",
+          "transfer": "bt709",
+          "range": "tv"
+        },
+        "cover": "/Users/augustas/Documents/Larpo front-end engine/work/kite/showcase/preview-raw-cover.png"
+      },
+      "ms": 1254
+    }
+  ],
+  "timings": {
+    "loadMs": 1575,
+    "captureMs": 55412,
+    "finishMs": 1939,
+    "exportMs": 0
+  }
+}

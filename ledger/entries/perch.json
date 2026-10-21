@@ -1,0 +1,58 @@
+{
+  "name": "perch",
+  "format": "rounds/1",
+  "rounds": [
+    {
+      "round": null,
+      "date": "2026-10-13",
+      "verdict": "reject",
+      "why": "Founder on Perch round 3 (green palette from his logo reference, Matsuura mark): 'nouuu not green bro the other design was better and all you did now is ass'. Round 4 restores the round-2 look with his supplied star mark.",
+      "summary": {
+        "pass": 30,
+        "warn": 3,
+        "fail": 0
+      },
+      "fingerprint": {
+        "h1": {
+          "px": 80,
+          "lh": "78.4px",
+          "ls": "-3.2px",
+          "weight": "460",
+          "family": "Rubik Variable",
+          "text": "Your Notch,Now A Shelf."
+        },
+        "fonts": [
+          "Inter Variable",
+          "Rubik Variable"
+        ],
+        "accentHues": [
+          0,
+          30,
+          45,
+          135,
+          210,
+          225
+        ],
+        "radii": [
+          8,
+          10,
+          11,
+          15,
+          38,
+          24,
+          12,
+          "pill"
+        ],
+        "navHeight": 52,
+        "contentWidth": "944",
+        "sectionPad": null,
+        "sectionCount": 0,
+        "bodyPx": 14,
+        "heroLayout": "copy-above-visual",
+        "navNumbered": false
+      },
+      "screenshot": "ledger/shots/2026-10-13-perch-fold.png",
+      "legacyFile": "2026-10-13-perch.json"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "name": "gridline",
+  "format": "rounds/1",
+  "rounds": [
+    {
+      "round": 3,
+      "date": "2026-10-21",
+      "recorded": "2026-10-21T13:57:45.296Z",
+      "verdict": "partial",
+      "why": "yeah but the left side why so empty... plus the logo of the gridline could be better that's not how logos are made",
+      "canonKind": "hero-light",
+      "source": {
+        "type": "design-view",
+        "path": "reports/dv-gridline/design-view.json"
+      },
+      "summary": {
+        "pass": 14,
+        "warn": 0,
+        "fail": 0
+      },
+      "fingerprint": {
+        "h1": {
+          "px": 58,
+          "weight": "550",
+          "ls": "-0.045em",
+          "family": "Inter Variable",
+          "text": "See Every MegawattBefore It Moves"
+        },
+        "fonts": [
+          "Inter Variable"
+        ],
+        "button": {
+          "height": 44,
+          "from": "design-view cta.height"
+        },
+        "from": "design-view"
+      },
+      "screenshot": "ledger/shots/2026-10-21-gridline-r3-fold.png"
+    }
+  ]
+}

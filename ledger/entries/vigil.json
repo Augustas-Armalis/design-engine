@@ -1,0 +1,70 @@
+{
+  "name": "vigil",
+  "format": "rounds/1",
+  "rounds": [
+    {
+      "round": null,
+      "date": "2026-10-08",
+      "verdict": "reject",
+      "why": "Founder: 'this looks ass... I need something clean centre layout and like SaaS with full dashboard visual, clean smooth and aesthetic, cool and clean visuals like Commslayer, the AlignUI aesthetic I love most'",
+      "summary": {
+        "pass": 23,
+        "warn": 2,
+        "fail": 0
+      },
+      "fingerprint": {
+        "h1": {
+          "px": 74,
+          "lh": "75.48px",
+          "ls": "-4.44px",
+          "weight": "600",
+          "family": "Geist Mono Variable",
+          "text": "Every Alert ReadSix Need You"
+        },
+        "fonts": [
+          "Geist Variable",
+          "Geist Mono Variable"
+        ],
+        "accentHues": [
+          90
+        ],
+        "radii": [
+          14,
+          10,
+          12
+        ],
+        "navHeight": 72,
+        "contentWidth": "1128",
+        "sectionPad": null,
+        "sectionCount": 0,
+        "bodyPx": 18,
+        "heroLayout": "integrated",
+        "navNumbered": false
+      },
+      "direction": {
+        "axes": {
+          "hero_class": "product-proof",
+          "structure": "centered-type-field",
+          "type_voice": "geometric-display",
+          "palette_temperature": "paper-and-ink",
+          "cta_grammar": "two-step-split",
+          "nav_grammar": "index-list-nav",
+          "motion_signature": "layout-morph",
+          "proof_artifact": "map-or-diagram"
+        },
+        "moves": [
+          {
+            "id": "M33",
+            "title": "Motion identity as one verb"
+          },
+          {
+            "id": "M47",
+            "title": "Interactive product viewer with CMS ingestion pipeline"
+          }
+        ]
+      },
+      "screenshot": "ledger/shots/2026-10-08-vigil-fold.png",
+      "legacyFile": "2026-10-08-vigil.json"
+    }
+  ]
+}

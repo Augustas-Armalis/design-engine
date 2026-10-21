@@ -1,0 +1,63 @@
+{
+  "name": "quorum",
+  "format": "rounds/1",
+  "rounds": [
+    {
+      "round": null,
+      "date": "2026-10-15",
+      "verdict": "accept",
+      "why": "ok this is now perfected nicely to look... see how clean and professional this looks (Quorum v6.6: product-first split, smooth gradient stage, Insights app, Ask composer, after 12 rounds)",
+      "summary": {
+        "pass": 39,
+        "warn": 2,
+        "fail": 0
+      },
+      "fingerprint": {
+        "h1": {
+          "px": 58,
+          "lh": "59.74px",
+          "ls": "-2.61px",
+          "weight": "550",
+          "family": "Inter Variable",
+          "text": "Turn InterviewsInto Answers"
+        },
+        "fonts": [
+          "Inter Variable"
+        ],
+        "accentHues": [
+          30,
+          45,
+          150,
+          225,
+          240,
+          255,
+          360
+        ],
+        "radii": [
+          11,
+          12,
+          19,
+          18,
+          6,
+          10,
+          9,
+          "pill",
+          24,
+          7,
+          14,
+          8,
+          4
+        ],
+        "navHeight": 88,
+        "contentWidth": "688",
+        "sectionPad": null,
+        "sectionCount": 0,
+        "bodyPx": 17,
+        "heroLayout": "split-left-copy",
+        "navNumbered": false
+      },
+      "screenshot": "ledger/shots/2026-10-15-quorum-fold.png",
+      "legacyFile": "2026-10-15-quorum.json"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "name": "larpo-baton",
+  "format": "rounds/1",
+  "rounds": [
+    {
+      "round": null,
+      "date": "2026-10-08",
+      "verdict": "reject",
+      "why": "[larpo seed, 2026-08-30 founder feedback] sterile monochrome product proof; publisher identity incorrectly imposed on the fictional subject",
+      "summary": {
+        "pass": 33,
+        "warn": 6,
+        "fail": 6
+      },
+      "fingerprint": {
+        "h1": {
+          "px": 73.44,
+          "lh": "69.0336px",
+          "ls": "-4.0392px",
+          "weight": "530",
+          "family": "Geist",
+          "text": "every launchhas an owner."
+        },
+        "fonts": [
+          "Geist"
+        ],
+        "accentHues": [],
+        "radii": [
+          2,
+          4,
+          5,
+          50
+        ],
+        "navHeight": 72,
+        "contentWidth": "733",
+        "sectionPad": 50,
+        "sectionCount": 1,
+        "bodyPx": 17
+      },
+      "screenshot": "ledger/shots/2026-10-08-larpo-baton-fold.png",
+      "legacyFile": "2026-10-08-larpo-baton.json"
+    }
+  ]
+}

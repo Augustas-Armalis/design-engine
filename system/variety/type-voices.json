@@ -1,12 +1,66 @@
 {
   "$id": "design-engine/type-voices",
-  "version": "2026-10-09",
+  "version": "2026-10-21",
   "doc": "knowledge/web/type-voices.md",
   "specimen": "system/variety/type-specimen.html",
   "evidence": "knowledge/benchmarks/variety/type/measurements.json (50 premium SaaS/AI hero h1s measured at 1440) + <site>.png crops",
   "units": "size px at 1440 viewport; tracking em (letter-spacing / font-size); leading unitless line-height; mobileSize px at 390; wordSpacing em (null = font default)",
   "usage": "Pick ONE voice per brand. Record the slug in DIRECTION.md. Do not reuse the voice of any of the last 4 ledger entries. Display face only for h1/h2/big numbers; body face for everything else; mono for code, meta, IDs. Hero headline: Title Case, max two lines at 1440, no full stop (founder rules).",
   "voices": [
+    {
+      "slug": "inter-display",
+      "floor": true,
+      "class": "neo-grotesque display cut (Inter opsz)",
+      "display": {
+        "family": "Inter",
+        "fontsource": "@fontsource-variable/inter",
+        "import": "@fontsource-variable/inter/opsz.css",
+        "weights": [
+          500,
+          550,
+          600
+        ],
+        "size": 58,
+        "mobileSize": null,
+        "weight": 550,
+        "tracking": -0.045,
+        "leading": 1.04,
+        "axes": "opsz (font-optical-sizing: auto)",
+        "features": [
+          "cv11",
+          "ss01"
+        ],
+        "wordSpacing": null
+      },
+      "body": {
+        "family": "Inter",
+        "fontsource": "@fontsource-variable/inter",
+        "size": 17,
+        "weight": 400,
+        "tracking": null,
+        "leading": null
+      },
+      "mono": null,
+      "personality": "The floor for SaaS and AI-SaaS heroes and landings: AlignUI-clean, light and smooth; one family across the hero and the product inside it",
+      "bestFor": [
+        "every SaaS and AI-SaaS hero and landing unless the brand owns a face"
+      ],
+      "neverFor": [
+        "mixing with another grotesk inside the product"
+      ],
+      "analog": {
+        "site": "accepted engine builds",
+        "measured": "Quorum 58px / 550 / -0.045em (2026-10-15-quorum accept); Kestrel 72px / 550 (2026-10-08-kestrel accept); Kite 68px / 550 (2026-10-15-kite-landing accept)"
+      },
+      "specimen": {
+        "line1": "Turn Interviews",
+        "line2": "Into Answers",
+        "sub": "Sample headline from the accepted Quorum hero.",
+        "label": "Sample · Quorum (accepted)"
+      },
+      "googleFontsCss": "https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..600&display=swap",
+      "evidence": "founder rule (founder-taste): big Inter must be the display cut, opsz.css, cv11 + ss01, 550 weight, -0.045em; accepted Quorum, Kestrel and Kite heroes all measure Inter 550"
+    },
     {
       "slug": "geometric-studio",
       "class": "geometric sans",
@@ -295,7 +349,8 @@
         "sub": "Requests, roadmap and releases in one loop, so nothing gets lost.",
         "label": "Sample · product management"
       },
-      "googleFontsCss": "https://fonts.googleapis.com/css2?family=Special+Gothic:wdth,wght@75..100,400..700&family=Public+Sans:wght@400..600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      "googleFontsCss": "https://fonts.googleapis.com/css2?family=Special+Gothic:wdth,wght@75..100,400..700&family=Public+Sans:wght@400..600&family=IBM+Plex+Mono:wght@400;500&display=swap",
+      "blocked": "heavy 700 headline: 2026-10-09-tracewell (86px/700 with crushed tracking): \"straight up dogshit\"; founder rule: no heavy 700 headline with crushed tracking"
     },
     {
       "slug": "humanist-warm",
@@ -470,7 +525,8 @@
         "sub": "Contracts, memos and diligence grounded in your firm's documents, cited to the clause.",
         "label": "Sample · legal AI"
       },
-      "googleFontsCss": "https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400..500&family=IBM+Plex+Sans:wght@400..600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      "googleFontsCss": "https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400..500&family=IBM+Plex+Sans:wght@400..600&family=IBM+Plex+Mono:wght@400;500&display=swap",
+      "blocked": "2026-10-20-weft (Source Serif 4 120px hero): \"so trash, especially the basit type hero... from the size to the style\""
     },
     {
       "slug": "soft-serif",
@@ -648,7 +704,8 @@
         "label": "Sample · private wealth"
       },
       "googleFontsCss": "https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400..500&family=Hanken+Grotesk:wght@400..600&family=IBM+Plex+Mono:wght@400;500&display=swap",
-      "tuningNote": "opsz 96 at 88px gives hairlines that vanish on retina-less screens and a gappy W-e pair; opsz 72 and -0.025em hold together. Bodoni Moda kerns W/V against lowercase loosely (a visible gap in \"Wealth\"): avoid a leading W/V word or kern that pair by hand (-0.06em on the capital)."
+      "tuningNote": "opsz 96 at 88px gives hairlines that vanish on retina-less screens and a gappy W-e pair; opsz 72 and -0.025em hold together. Bodoni Moda kerns W/V against lowercase loosely (a visible gap in \"Wealth\"): avoid a leading W/V word or kern that pair by hand (-0.06em on the capital).",
+      "blocked": "2026-10-10-quillwork (Bodoni Moda 84px over warm black): \"if this is what you're designing now - straight up dogshit\""
     },
     {
       "slug": "mono-terminal",
@@ -705,7 +762,8 @@
         "label": "Sample · coding agent"
       },
       "googleFontsCss": "https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@400..500&family=Geist:wght@400..600&display=swap",
-      "tuningNote": "Mono spaces are a full cell wide; without word-spacing -0.25em the headline reads as four separate words per line."
+      "tuningNote": "Mono spaces are a full cell wide; without word-spacing -0.25em the headline reads as four separate words per line.",
+      "blocked": "mono poster headline: 2026-10-08-vigil (Geist Mono 74px poster h1): \"this looks ass\""
     },
     {
       "slug": "wide-extended",
@@ -826,7 +884,8 @@
         "sub": "Tracking data from 40 leagues, streamed to analysts within two seconds.",
         "label": "Sample · sports data"
       },
-      "googleFontsCss": "https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..700&family=JetBrains+Mono:wght@400;500&display=swap"
+      "googleFontsCss": "https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..700&family=JetBrains+Mono:wght@400;500&display=swap",
+      "blocked": "heavy 700 headline: 2026-10-09-tracewell: \"straight up dogshit\"; founder rule: no heavy 700 headline with crushed tracking"
     },
     {
       "slug": "rounded-friendly",
@@ -945,7 +1004,8 @@
         "label": "Sample · creator audio"
       },
       "googleFontsCss": "https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Instrument+Sans:wght@400..600&family=Geist+Mono:wght@400;500&display=swap",
-      "tuningNote": "wdth 85 at -0.035em made letters collide (Launch, Podcast); opsz 96 already tightens, so use wdth 92 and only -0.02em."
+      "tuningNote": "wdth 85 at -0.035em made letters collide (Launch, Podcast); opsz 96 already tightens, so use wdth 92 and only -0.02em.",
+      "blocked": "heavy 700 headline: 2026-10-09-tracewell: \"straight up dogshit\"; founder rule: no heavy 700 headline with crushed tracking"
     }
   ]
 }

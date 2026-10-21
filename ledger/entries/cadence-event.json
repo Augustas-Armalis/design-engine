@@ -1,0 +1,25 @@
+{
+  "name": "cadence-event",
+  "format": "rounds/1",
+  "rounds": [
+    {
+      "round": 1,
+      "date": "2026-10-21",
+      "recorded": "2026-10-21T13:57:44.417Z",
+      "verdict": "reject",
+      "why": "the component and bento straight up ass, nothing cool about them, no cool stylings",
+      "canonKind": "post-component",
+      "source": {
+        "type": "design-view",
+        "path": "reports/dv-event/design-view.json"
+      },
+      "summary": {
+        "pass": 7,
+        "warn": 0,
+        "fail": 0
+      },
+      "fingerprint": null,
+      "screenshot": "ledger/shots/2026-10-21-cadence-event-r1-fold.png"
+    }
+  ]
+}

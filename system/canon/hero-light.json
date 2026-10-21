@@ -1,0 +1,87 @@
+{
+  "kind": "hero-light",
+  "floor": [
+    "knowledge/engine-accepted/quorum/quorum-fold@2x.png",
+    "knowledge/engine-accepted/quorum/README.md",
+    "knowledge/engine-accepted/kestrel/kestrel-fold@2x.png"
+  ],
+  "h1": {
+    "sizePx": [
+      56,
+      72
+    ],
+    "weight": [
+      500,
+      550
+    ],
+    "trackingEm": [
+      -0.05,
+      -0.04
+    ],
+    "maxWords": 5,
+    "maxLines": 2
+  },
+  "subtitle": {
+    "maxLines": 2,
+    "lastLineMinShare": 0.4
+  },
+  "cta": {
+    "heightPx": [
+      44,
+      48
+    ],
+    "radiusPx": [
+      12,
+      24
+    ],
+    "maxPrimary": 1
+  },
+  "radiusLadder": {
+    "0-24": [
+      4,
+      8
+    ],
+    "24-32": [
+      6,
+      8
+    ],
+    "32-40": [
+      10,
+      12
+    ],
+    "40-48": [
+      12,
+      14
+    ],
+    "48-80": [
+      12,
+      16
+    ],
+    "80-9999": [
+      14,
+      24
+    ]
+  },
+  "maxShadowStrings": 3,
+  "maxFontFamilies": 1,
+  "weights": [
+    400,
+    450,
+    500,
+    550,
+    600
+  ],
+  "maxAccentHues": 2,
+  "canvas": {
+    "maxChroma": 0.01
+  },
+  "hero": {
+    "ctaProductGapPx": [
+      64,
+      96
+    ],
+    "productMinFoldShare": 0.2,
+    "nothingBetweenNavAndH1": true
+  },
+  "motionDefault": "none"
+}

@@ -89,3 +89,47 @@ First baseline: `eval-t0-hero-ai-devtool` (0 fail, 1 warn after two fix passes; 
 - **Unverified items** flagged by the research agents: coss `Slider` value shape; whether coss remaps `--radius-lg`; Fontshare self-hosting licence; some Material/Apple numbers are secondary.
 - **Sources not reachable by agents** (paywalled books, Refactoring UI, etc.): paste them in and they get studied the same way.
 - **Larpo's own design research** (`larpo-knowledge-base/inbox/`) is not yet merged into `knowledge/`; its feedback ledger should seed `ledger/`.
+
+## 6. Delivery gate and style diff (2026-10-21)
+
+Two tools from `docs/PROCESS-AUDIT-2026-10-21.md` 3.2 and 5.3. Mark the hero product with `data-product` and a post subject with `data-subject`; untagged heroes fall back to a guess and warn.
+
+**`tools/gate.mjs`**: one command per kind. FAIL blocks delivery (exit 1).
+
+```bash
+node tools/gate.mjs <url> --kind hero-light|hero-dark|section-bento|product-ui|client-app|post-component|full-website|audit \
+  --name <name> [--direction work/<name>/DIRECTION.md] [--dark] [--w 1440 --h 900] [--wait 4500] [--verbose]
+```
+
+- It renders the fold at 1440x900 @2x. `full-website` and `audit` also scroll the whole page and render 390x844.
+- Thresholds come from `system/canon/<kind>.json`. Any key missing there falls back to a built-in value, and lines that used the canon are tagged `[canon]`.
+- It writes `reports/<name>/gate.json`, `gate-fold.png` and `report.json`. That `report.json` has the shape `ledger.mjs add/similar` reads, so pieces gated only by `gate.mjs` can now be recorded. Its fingerprint includes `button`, the primary CTA's computed height, radius, background and shadow. A `report.json` written by `check.mjs` is kept unless you pass `--force-report`.
+
+What it checks:
+- **Correctness:** overflow, one h1 (for hero and site kinds), AA contrast (FAIL outside the product, WARN inside it), and 24px targets with the WCAG 2.5.8 spacing exception.
+- **Edges:** elevation shadows (the blurred outset layers of boxes; rings, insets and button materials are not counted) up to `maxShadowStrings`. Border plus ring on one box is a FAIL. Ring plus inset highlight on one box is a WARN.
+- **Radius:** each box's rendered radius against `radiusLadder` (bands are `[a, b)`). Pills and circles are exempt. A child radius larger than its parent is a WARN.
+- **Type:**
+  - font families, with mono ignored inside the product;
+  - distinct whole-pixel sizes, counted in the product view when one exists;
+  - weights, where an off-canon weight is a FAIL on the page and a WARN inside the product;
+  - the h1 tuple, plus no full stop.
+- **Colour:**
+  - OKLCH accent hue families with chroma above 0.06. Red, amber and green status hues are counted apart. The product's own categorical colours are a WARN above `maxAccentHues + 2`.
+  - Canvas chroma and colourful-pixel share, for dark kinds or when the canon sets them.
+- **Buttons:** every primary CTA has one computed recipe, the nav CTA differs from the hero CTA, and the hero has 1 to `maxPrimary` primaries. CTA height and radius must be at least min(12, 0.3h). A secondary button with a leading icon is a WARN.
+- **Hero:** nothing between the nav and the h1 (unless DIRECTION says `chip: yes`), at most 2 subtitle lines with the last line at least 40% of the first, the CTA-to-product gap, the product's share of the fold, and the product frame straight-on.
+- **Scope and motion** (with `--direction`): DIRECTION must have `scope:` and `motion:` lines. With `motion: none`, these all FAIL: running animations in the fold, more than 0.2% of fold pixels changing over 800ms, or a `<video>`. A video FAILs unless scope or motion asks for one.
+
+**`tools/style_diff.mjs`**: run it every revision round to prove that only the intended properties changed.
+
+```bash
+node tools/style_diff.mjs <approved-url> <candidate-url> [--selector main] [--out reports/<name>/style-diff.json] \
+  [--allow font-size,color] [--wait 4500] [--top 30] [--svg]
+```
+
+- Both pages are rendered at 1440x900. It waits until the layout holds still (motion/react timelines and count-ups included), finishes entrance animations, and rewinds loops.
+- Elements are paired by DOM path plus own text. When that fails it tries unique text plus tag, then the same path.
+- It reports changes in font size, weight and family, letter-spacing, line-height, colour, background, border, radius, shadow, padding, gap, and size changes over 1px. Identical change sets are grouped, and added or removed elements are listed.
+- `--allow` takes the groups named in DIRECTION `changes:`, plus `text` and `structure`. Anything else changing exits 1.
+- A self-diff of Kestrel comes back empty.

@@ -1,0 +1,61 @@
+{
+  "name": "settle",
+  "format": "rounds/1",
+  "rounds": [
+    {
+      "round": null,
+      "date": "2026-10-12",
+      "verdict": "reject",
+      "why": "Founder on Settle v1 (Kargul-style AP dashboard): 'with those colors and layouts it's looking a bit dirty you know... not bad for the design, although I'm not a fan of this style but in general it's quite nice yeah, but I think you could do better and cleaner'. Measured: 5 accent hue families + coloured logos/faces/monograms in one fold, 55 ringed boxes, 3 surface layers (warm canvas, panel, cards).",
+      "summary": {
+        "pass": 27,
+        "warn": 6,
+        "fail": 0
+      },
+      "fingerprint": {
+        "h1": {
+          "px": 24,
+          "lh": "30px",
+          "ls": "-0.48px",
+          "weight": "600",
+          "family": "Geist Variable",
+          "text": "Overview"
+        },
+        "fonts": [
+          "Geist Variable",
+          "Geist Mono Variable"
+        ],
+        "accentHues": [
+          0,
+          30,
+          150,
+          165,
+          225,
+          255
+        ],
+        "radii": [
+          11,
+          8,
+          9,
+          5,
+          "pill",
+          14,
+          10,
+          16,
+          6,
+          7,
+          2
+        ],
+        "navHeight": 254,
+        "contentWidth": "1096",
+        "sectionPad": null,
+        "sectionCount": 0,
+        "bodyPx": 14,
+        "heroLayout": "copy-above-visual",
+        "navNumbered": false
+      },
+      "screenshot": "ledger/shots/2026-10-12-settle-fold.png",
+      "legacyFile": "2026-10-12-settle.json"
+    }
+  ]
+}

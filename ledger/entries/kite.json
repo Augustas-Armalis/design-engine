@@ -1,0 +1,56 @@
+{
+  "name": "kite",
+  "format": "rounds/1",
+  "rounds": [
+    {
+      "round": null,
+      "date": "2026-10-14",
+      "verdict": "reject",
+      "why": "Founder on Kite v1 (blue-black, periwinkle accent, 6px flat dot map): 'not bad, just the map is not polished, plus don't do it so blue please, do the map better and effects better, everything more polished and premium, Marcel / Rico style'. v2: graphite neutral, tactile surfaces, heat-shaded fine dot map with flows.",
+      "summary": {
+        "pass": 29,
+        "warn": 2,
+        "fail": 0
+      },
+      "fingerprint": {
+        "h1": {
+          "px": 22,
+          "lh": "20px",
+          "ls": "-0.44px",
+          "weight": "650",
+          "family": "Mona Sans Variable",
+          "text": "storefront-prod"
+        },
+        "fonts": [
+          "Mona Sans Variable",
+          "Geist Mono Variable"
+        ],
+        "accentHues": [
+          0
+        ],
+        "radii": [
+          10,
+          8,
+          9,
+          "pill",
+          12,
+          5,
+          11,
+          7,
+          16,
+          2,
+          14
+        ],
+        "navHeight": 270,
+        "contentWidth": "744",
+        "sectionPad": null,
+        "sectionCount": 0,
+        "bodyPx": null,
+        "heroLayout": "integrated",
+        "navNumbered": false
+      },
+      "screenshot": "ledger/shots/2026-10-14-kite-fold.png",
+      "legacyFile": "2026-10-14-kite.json"
+    }
+  ]
+}

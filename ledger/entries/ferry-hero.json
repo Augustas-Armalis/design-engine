@@ -1,0 +1,65 @@
+{
+  "name": "ferry-hero",
+  "format": "rounds/1",
+  "rounds": [
+    {
+      "round": null,
+      "date": "2026-10-09",
+      "verdict": "reject",
+      "why": "kept: title, subtitle, buttons, nav, product ('nice'); rejected: the sea-chart contour background and the three how-it-works steps ('so stupid'); asked for cleaner split-hero examples done better",
+      "summary": {
+        "pass": 23,
+        "warn": 6,
+        "fail": 0
+      },
+      "fingerprint": {
+        "h1": {
+          "px": 74,
+          "lh": "72.52px",
+          "ls": "-3.848px",
+          "weight": "600",
+          "family": "Geist Variable",
+          "text": "Turn RepliesInto Meetings"
+        },
+        "fonts": [
+          "Inter Variable",
+          "Geist Mono Variable",
+          "Geist Variable"
+        ],
+        "accentHues": [
+          30,
+          45,
+          150,
+          165,
+          195,
+          225,
+          240,
+          255,
+          360
+        ],
+        "radii": [
+          14,
+          10,
+          12,
+          "pill",
+          22,
+          16,
+          8,
+          7,
+          5,
+          3,
+          1
+        ],
+        "navHeight": 44,
+        "contentWidth": "920",
+        "sectionPad": null,
+        "sectionCount": 0,
+        "bodyPx": 18,
+        "heroLayout": "integrated",
+        "navNumbered": false
+      },
+      "screenshot": "ledger/shots/2026-10-09-ferry-hero-fold.png",
+      "legacyFile": "2026-10-09-ferry-hero.json"
+    }
+  ]
+}

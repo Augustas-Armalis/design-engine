@@ -1,0 +1,212 @@
+{
+  "$id": "design-engine/variety-approved",
+  "updated": "2026-10-21",
+  "doc": "docs/PROCESS-AUDIT-2026-10-21.md sections 3.4 and 5.4. tools/variety.mjs deals ONLY options listed under `approved` (filtered by `modes`), never an option under `blocked`, and never anything unlisted. Evidence is a ledger id (`node tools/ledger.mjs show <id>`) or the founder's own words from knowledge/founder/founder-taste.md. Type voices and dark recipes also carry `blocked` on their own entries in type-voices.json / dark-recipes.json; the picker reads both. To approve an option, add it here with the founder verdict that approved it; to block one, add the reject. A canon page's numbers (system/canon/<kind>.json, key `variety`: {axis: [ids]}) narrow these pools further when present.",
+  "floor": {
+    "type": {
+      "kinds": [
+        "hero",
+        "landing",
+        "hero-light",
+        "hero-dark",
+        "saas"
+      ],
+      "voice": "inter-display",
+      "why": "Type voice is not randomised for SaaS heroes and landings: Inter display (opsz) or the brand's own face is the floor (audit 5.4; founder rule: big Inter must be the display cut with opsz; accepted Quorum 58/550, Kestrel 72/550, Kite 68/550). Use --brand-face \"<Family>\" when the brand owns a face."
+    }
+  },
+  "axes": {
+    "layout": {
+      "approved": {
+        "centred-over-product": {
+          "modes": [
+            "light",
+            "dark"
+          ],
+          "evidence": "2026-10-08-kestrel accept (\"fucking awesome\"); founder on Vigil v2: \"clean centre layout and like SaaS with full dashboard visual\""
+        },
+        "split-bleed": {
+          "modes": [
+            "light"
+          ],
+          "evidence": "2026-10-15-quorum accept (\"see how clean and professional this looks\"): copy column beside a stage holding the app, dissolving into it"
+        },
+        "left-over-product": {
+          "modes": [
+            "light",
+            "dark"
+          ],
+          "evidence": "2026-10-10-halyard accept (\"not bad for uniqueness\"); founder default dark hero: calm two-line headline on the left, product stage below"
+        },
+        "band": {
+          "modes": [
+            "light",
+            "dark"
+          ],
+          "evidence": "founder on Tracewell: \"except layout, I know that layout is good to use\" (split band: headline left, subtitle + CTAs right, full-width product below)"
+        },
+        "altrina-panel": {
+          "modes": [
+            "light"
+          ],
+          "evidence": "founder rule: \"clean, modern, simple, Marcel/Basit style\" = Kargul's Altrina grammar (one inset light panel, fine-line art across its top)"
+        },
+        "cinematic-stage": {
+          "modes": [
+            "dark"
+          ],
+          "evidence": "founder rule: a dark hero needs exactly one strong, tasteful visual moment; Basit's cinematic grammar (inset framed stage, one soft rendered light field)"
+        }
+      },
+      "blocked": {
+        "tilted-3d": "2026-10-13-perch: \"the visual representation is a bit tilted and off bro wtf fix that\" (product frames sit straight-on at rest)",
+        "art-led": "2026-10-08-vigil (v2 overcorrected into an art piece): \"this looks ass\"",
+        "split-object": "2026-10-10-quillwork (tilted contract sheet as the hero object): \"straight up dogshit\""
+      }
+    },
+    "nav": {
+      "approved": {
+        "G02": {
+          "modes": [
+            "light",
+            "dark"
+          ],
+          "evidence": "founder default nav: Kaching's exact spec, one pill 43px tall, actions on the right"
+        },
+        "G03": {
+          "modes": [
+            "light",
+            "dark"
+          ],
+          "evidence": "2026-10-08-kestrel accept and tandem accept (both G03 in their variety rows)"
+        },
+        "G05": {
+          "modes": [
+            "dark"
+          ],
+          "evidence": "2026-10-10-halyard accept (G05 in its variety row)"
+        },
+        "G01": {
+          "modes": [
+            "dark"
+          ],
+          "evidence": "founder default dark product hero: full-width hairline nav (Linear 73px + 8% hairline; Supabase top half)"
+        },
+        "G14": {
+          "modes": [
+            "dark",
+            "light"
+          ],
+          "evidence": "2026-10-15-kite-landing accept; founder: nav for a dark product hero is plain text links"
+        }
+      },
+      "blocked": {}
+    },
+    "button": {
+      "approved": {
+        "flat": {
+          "evidence": "tandem accept (variety row button=flat); full pill"
+        },
+        "lamp": {
+          "evidence": "2026-10-08-kestrel accept (variety row button=lamp)"
+        },
+        "slide": {
+          "evidence": "founder button rule names the Weekline slide-swap as a valid effect (\"rolling label\")"
+        },
+        "b2-gloss": {
+          "evidence": "2026-10-12-murmur accept (\"yeah nice\"); founder list: gloss"
+        },
+        "b2-glow": {
+          "evidence": "founder button rule list: inner glow"
+        },
+        "b2-rim": {
+          "evidence": "founder button rule list: gradient rim"
+        },
+        "b2-roll": {
+          "evidence": "founder button rule list: rolling label"
+        },
+        "b2-tile": {
+          "evidence": "founder button rule list: arrow tile"
+        },
+        "b2-sweep": {
+          "evidence": "founder button rule list: light sweep"
+        },
+        "b2-spot": {
+          "evidence": "founder button rule list: spotlight"
+        },
+        "b2-split": {
+          "evidence": "founder button rule list: split segment"
+        },
+        "b2-app": {
+          "evidence": "founder button rule list: icon tile"
+        }
+      },
+      "blocked": {
+        "push": "2026-10-09-tracewell (brutalist amber offset-block buttons): \"straight up dogshit\"; 2026-10-08-vigil (3D push button): \"this looks ass\"; founder rule 2026-10-12: never brutalist, square-cut or heavy offset-shadow",
+        "mono": "founder rule 2026-10-12: never brutalist or square-cut (founder: \"mostly fully round or like smoother corners\"); mono caps square is r4; supersedes the Halyard row of 2026-10-10"
+      },
+      "note": "Shape is fixed by the founder (\"mostly fully round or like smoother corners, but the effects inside of them\"): pill or 12-18px smooth corner at 44-52px. Effects come from system/variety/buttons-2/ (b2-*) or the v1 grammars listed. Gated v1 grammars (spot, glass, edge, push, chip, stack) stay gated as before."
+    },
+    "type": {
+      "approved": {
+        "light-grotesk": {
+          "evidence": "2026-10-09-strata accept (Hanken Grotesk 66px/500, the voice's own face; set at 500, not the voice's 300). Only dealt for non-hero kinds; heroes use the floor."
+        }
+      },
+      "blocked": {}
+    },
+    "palette": {
+      "approved": {
+        "light": {
+          "modes": [
+            "light"
+          ],
+          "evidence": "2026-10-15-quorum and 2026-10-08-kestrel accepts; founder rule: light canvas by default for SaaS"
+        },
+        "graphite": {
+          "modes": [
+            "dark"
+          ],
+          "evidence": "2026-10-15-kite-landing accept (graphite, glow-free final)"
+        }
+      },
+      "blocked": {}
+    },
+    "system": {
+      "approved": {
+        "kestrel": {
+          "modes": [
+            "light"
+          ],
+          "evidence": "2026-10-08-kestrel accept; tandem accept; Quorum's accepted build uses the Kestrel light kit tokens"
+        },
+        "strata": {
+          "modes": [
+            "light"
+          ],
+          "evidence": "2026-10-09-strata accept (\"the background interesting style choice, really unique\")"
+        },
+        "watchfloor": {
+          "modes": [
+            "dark"
+          ],
+          "evidence": "2026-10-10-halyard accept (\"not bad for uniqueness\")"
+        },
+        "murmur": {
+          "modes": [
+            "dark"
+          ],
+          "evidence": "2026-10-12-murmur accept (\"yeah nice\")"
+        }
+      },
+      "blocked": {
+        "quillwork": "2026-10-10-quillwork: \"straight up dogshit\"",
+        "perch": "2026-10-13-perch: \"nouuu not green bro... all you did now is ass\" (and its tilted MacBook)",
+        "vigil": "2026-10-08-vigil: \"this looks ass\"",
+        "nocturne": "2026-10-09-nocturne: \"not up to our quality levels... a bit noobish\"",
+        "signal": "2026-10-09-tracewell (bound system signal: offset block shadows): \"straight up dogshit\"",
+        "linework": "2026-10-08-flagship-linework: \"in one word - dogshit\""
+      }
+    }
+  }
+}

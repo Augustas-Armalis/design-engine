@@ -1,0 +1,45 @@
+{
+  "name": "flagship-linework",
+  "format": "rounds/1",
+  "rounds": [
+    {
+      "round": null,
+      "date": "2026-10-08",
+      "verdict": "reject",
+      "why": "Founder 2026-10-08: 'in one word - dogshit'. Below the shipped Larpo bar (Kaching, Capto): flat diagram/wireframe look, no premium polish, no imagery or depth, rules-correct but not beautiful; ignored the team's own accepted references.",
+      "summary": {
+        "pass": 45,
+        "warn": 0,
+        "fail": 0
+      },
+      "fingerprint": {
+        "h1": {
+          "px": 76.32,
+          "lh": "74.7936px",
+          "ls": "-0.91584px",
+          "weight": "400",
+          "family": "Libre Caslon Display",
+          "text": "Your sketch, measured."
+        },
+        "fonts": [
+          "Red Hat Mono",
+          "Mona Sans",
+          "Libre Caslon Display"
+        ],
+        "accentHues": [
+          15
+        ],
+        "radii": [],
+        "navHeight": 64,
+        "contentWidth": "1302",
+        "sectionPad": 28,
+        "sectionCount": 1,
+        "bodyPx": 17,
+        "heroLayout": "split-right-copy",
+        "navNumbered": false
+      },
+      "screenshot": "ledger/shots/2026-10-08-flagship-linework-fold.png",
+      "legacyFile": "2026-10-08-flagship-linework.json"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "name": "strata",
+  "format": "rounds/1",
+  "rounds": [
+    {
+      "round": null,
+      "date": "2026-10-09",
+      "verdict": "accept",
+      "why": "Founder: 'not bad, just the product is too close to the buttons; the background interesting style choice, really unique... need something cooler now'",
+      "summary": {
+        "pass": 26,
+        "warn": 1,
+        "fail": 0
+      },
+      "fingerprint": {
+        "h1": {
+          "px": 66,
+          "lh": "67.98px",
+          "ls": "-2.31px",
+          "weight": "500",
+          "family": "Hanken Grotesk Variable",
+          "text": "Automations Your WholeTeam Can Actually Read"
+        },
+        "fonts": [
+          "Hanken Grotesk Variable",
+          "JetBrains Mono Variable"
+        ],
+        "accentHues": [
+          150
+        ],
+        "radii": [
+          20,
+          4,
+          10,
+          6,
+          "pill",
+          8,
+          5,
+          12,
+          14
+        ],
+        "navHeight": 44,
+        "contentWidth": "1216",
+        "sectionPad": 128,
+        "sectionCount": 2,
+        "bodyPx": 17,
+        "heroLayout": "integrated",
+        "navNumbered": false
+      },
+      "screenshot": "ledger/shots/2026-10-09-strata-fold.png",
+      "legacyFile": "2026-10-09-strata.json"
+    }
+  ]
+}

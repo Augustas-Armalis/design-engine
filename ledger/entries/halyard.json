@@ -1,0 +1,58 @@
+{
+  "name": "halyard",
+  "format": "rounds/1",
+  "rounds": [
+    {
+      "round": null,
+      "date": "2026-10-10",
+      "verdict": "accept",
+      "why": "not bad for uniqueness... nobody shows that much or high product design",
+      "summary": {
+        "pass": 28,
+        "warn": 1,
+        "fail": 0
+      },
+      "fingerprint": {
+        "h1": {
+          "px": 60,
+          "lh": "61.2px",
+          "ls": "-1.92px",
+          "weight": "500",
+          "family": "Instrument Sans",
+          "text": "Incidents FixedBefore You Wake"
+        },
+        "fonts": [
+          "Instrument Sans",
+          "IBM Plex Mono"
+        ],
+        "accentHues": [
+          30,
+          135
+        ],
+        "radii": [
+          6,
+          4,
+          "pill",
+          3,
+          16,
+          7,
+          8,
+          12,
+          5,
+          14,
+          10,
+          9
+        ],
+        "navHeight": 64,
+        "contentWidth": "1200",
+        "sectionPad": 24,
+        "sectionCount": 1,
+        "bodyPx": 16,
+        "heroLayout": "copy-above-visual",
+        "navNumbered": true
+      },
+      "screenshot": "ledger/shots/2026-10-10-halyard-fold.png",
+      "legacyFile": "2026-10-10-halyard.json"
+    }
+  ]
+}

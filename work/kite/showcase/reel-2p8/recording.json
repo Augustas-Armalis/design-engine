@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "id": "reel-2p8",
+  "dir": "/Users/augustas/Documents/Larpo front-end engine/work/kite/showcase/reel-2p8",
+  "createdAt": "2026-10-15T15:32:57.173Z",
+  "settings": {
+    "url": "http://localhost:4361/#/showcase",
+    "width": 1220,
+    "height": 900,
+    "scale": 2.8,
+    "scrollY": 0,
+    "fps": 60,
+    "startMs": 0,
+    "durationMs": 5000,
+    "holdMs": 800,
+    "region": {
+      "type": "viewport"
+    },
+    "actions": [],
+    "cursor": false,
+    "colorScheme": "light",
+    "seed": 24301,
+    "realRandom": false,
+    "keepFrames": false,
+    "presets": []
+  },
+  "size": {
+    "width": 3416,
+    "height": 2520
+  },
+  "frames": 300,
+  "browser": "153.0.8010.12",
+  "files": {
+    "master": "/Users/augustas/Documents/Larpo front-end engine/work/kite/showcase/reel-2p8/master.nut",
+    "proxy": "/Users/augustas/Documents/Larpo front-end engine/work/kite/showcase/reel-2p8/proxy.mp4",
+    "thumbs": "/Users/augustas/Documents/Larpo front-end engine/work/kite/showcase/reel-2p8/thumbs.jpg",
+    "poster": "/Users/augustas/Documents/Larpo front-end engine/work/kite/showcase/reel-2p8/poster.png"
+  },
+  "thumbs": {
+    "step": 7,
+    "count": 40
+  },
+  "edits": {
+    "holdLastMs": 800,
+    "fadeColor": "#0a0a0b"
+  },
+  "background": "#0a0a0b",
+  "exports": [
+    {
+      "preset": "h264",
+      "file": "/Users/augustas/Documents/Larpo front-end engine/work/kite/showcase/kite-showcase-raw-2p8.mp4",
+      "bytes": 5385107,
+      "probe": {
+        "file": "/Users/augustas/Documents/Larpo front-end engine/work/kite/showcase/kite-showcase-raw-2p8.mp4",
+        "bytes": 5385107,
+        "codec": "h264",
+        "profile": "High",
+        "pixFmt": "yuv420p",
+        "width": 3416,
+        "height": 2520,
+        "fps": "60/1",
+        "frames": 348,
+        "durationSec": 5.8,
+        "bitrateKbps": 6772,
+        "color": {
+          "space": "bt709",
+          "primaries": "bt709",
+          "transfer": "bt709",
+          "range": "tv"
+        },
+        "cover": "/Users/augustas/Documents/Larpo front-end engine/work/kite/showcase/kite-showcase-raw-2p8-cover.png"
+      },
+      "ms": 13583
+    }
+  ],
+  "timings": {
+    "loadMs": 33734,
+    "captureMs": 517132,
+    "finishMs": 8616,
+    "exportMs": 0
+  }
+}

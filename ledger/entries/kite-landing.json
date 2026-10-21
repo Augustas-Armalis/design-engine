@@ -1,0 +1,108 @@
+{
+  "name": "kite-landing",
+  "format": "rounds/1",
+  "rounds": [
+    {
+      "round": null,
+      "date": "2026-10-14",
+      "verdict": "reject",
+      "why": "Founder on the Supabase+Cursor Kite hero (dark): 'still asssss bro wtf'.",
+      "summary": {
+        "pass": 27,
+        "warn": 6,
+        "fail": 0
+      },
+      "fingerprint": {
+        "h1": {
+          "px": 56,
+          "lh": "59.36px",
+          "ls": "-1.96px",
+          "weight": "500",
+          "family": "Inter Variable",
+          "text": "Ship to every regionSee the one that needs you"
+        },
+        "fonts": [
+          "Inter Variable",
+          "Geist Mono Variable"
+        ],
+        "accentHues": [
+          0
+        ],
+        "radii": [
+          1,
+          8,
+          10,
+          16,
+          12,
+          9,
+          "pill",
+          5,
+          11,
+          7,
+          2,
+          14
+        ],
+        "navHeight": 64,
+        "contentWidth": "836",
+        "sectionPad": 150,
+        "sectionCount": 1,
+        "bodyPx": 17,
+        "heroLayout": "copy-above-visual",
+        "navNumbered": false
+      },
+      "screenshot": "ledger/shots/2026-10-14-kite-landing-fold.png",
+      "legacyFile": "2026-10-14-kite-landing.json"
+    },
+    {
+      "round": null,
+      "date": "2026-10-15",
+      "verdict": "accept",
+      "why": "Founder on the final Kite hero (after ~20 rounds): 'what we created is kinda not bad actually yeah... but needed a lot to perfect, to look and be proper as I've mentioned'. Accepted as a reference with the caveat that it took too many correction rounds.",
+      "summary": {
+        "pass": 27,
+        "warn": 6,
+        "fail": 0
+      },
+      "fingerprint": {
+        "h1": {
+          "px": 68,
+          "lh": "70.72px",
+          "ls": "-3.06px",
+          "weight": "550",
+          "family": "Inter Variable",
+          "text": "Every Region, LiveEvery Fix, One Click"
+        },
+        "fonts": [
+          "Inter Variable",
+          "Geist Mono Variable"
+        ],
+        "accentHues": [
+          0
+        ],
+        "radii": [
+          "pill",
+          25,
+          16,
+          10,
+          8,
+          9,
+          12,
+          5,
+          11,
+          7,
+          2,
+          14
+        ],
+        "navHeight": 72,
+        "contentWidth": "901",
+        "sectionPad": 156,
+        "sectionCount": 1,
+        "bodyPx": 18,
+        "heroLayout": "integrated",
+        "navNumbered": false
+      },
+      "screenshot": "ledger/shots/2026-10-15-kite-landing-fold.png",
+      "legacyFile": "2026-10-15-kite-landing.json"
+    }
+  ]
+}

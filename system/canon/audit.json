@@ -1,0 +1,45 @@
+{
+  "kind": "audit",
+  "floor": [
+    "work/kaching-landing-review/REVIEW.md",
+    "knowledge/web/consistency-mechanics.md"
+  ],
+  "radiusLadder": {
+    "0-24": [
+      4,
+      8
+    ],
+    "24-32": [
+      6,
+      8
+    ],
+    "32-40": [
+      10,
+      12
+    ],
+    "40-48": [
+      12,
+      14
+    ],
+    "48-80": [
+      14,
+      16
+    ],
+    "80-9999": [
+      14,
+      25
+    ]
+  },
+  "maxShadowStrings": 3,
+  "maxFontFamilies": 2,
+  "maxFontSizes": 4,
+  "weights": [
+    500,
+    600
+  ],
+  "maxAccentHues": 2,
+  "canvas": {
+    "maxChroma": 0.01
+  },
+  "motionDefault": "none"
+}

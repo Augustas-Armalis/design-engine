@@ -1,0 +1,18 @@
+{
+  "name": "sellify-guided-avatars-r1",
+  "format": "rounds/1",
+  "rounds": [
+    {
+      "round": null,
+      "date": "2026-10-15",
+      "verdict": "reject",
+      "why": "Founder on the ENG-2105 guided set + avatars pass built from a fresh CSS module: 'what you designed right now is super super bad and incosistent and jsut the ugliest sheeet in the world... do it in our new after effects alignui style bro please cmon... just nice and sleek'. Also: 'there may be a lot of content pieces so make sure they would not squish... be prepared for scroll bars or heights'.",
+      "kind": "pattern",
+      "source": "Augustas, Claude session 2026-10-15 (Sellify ENG-2105)",
+      "note": "Product UI inside an existing app (Sellify Video Ad Creator). Rejected for inventing its own tray/card/badge/step-strip/choice-tile recipes instead of the app's studio kit, plus off-scale 13px/600 type. Round 2 rebuilt every screen from StudioPanel/StudioStatus/StudioSteps/StudioFooter; verdict pending.",
+      "fingerprint": null,
+      "screenshot": "ledger/shots/2026-10-15-sellify-guided-avatars-r1.png",
+      "legacyFile": "2026-10-15-sellify-guided-avatars-r1.json"
+    }
+  ]
+}

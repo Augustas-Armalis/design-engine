@@ -1,0 +1,88 @@
+{
+  "kind": "hero-dark",
+  "floor": [
+    "work/kite/landing/hero-2x.png",
+    "work/kite/landing/hero-4k.png",
+    "work/kite/DIRECTION.md"
+  ],
+  "h1": {
+    "sizePx": [
+      68,
+      72
+    ],
+    "weight": [
+      550,
+      550
+    ],
+    "trackingEm": [
+      -0.05,
+      -0.04
+    ],
+    "maxWords": 7,
+    "maxLines": 2
+  },
+  "subtitle": {
+    "maxLines": 2,
+    "lastLineMinShare": 0.4
+  },
+  "cta": {
+    "heightPx": [
+      44,
+      48
+    ],
+    "radiusPx": [
+      22,
+      24
+    ],
+    "maxPrimary": 1
+  },
+  "radiusLadder": {
+    "0-24": [
+      4,
+      8
+    ],
+    "24-32": [
+      6,
+      8
+    ],
+    "32-40": [
+      10,
+      12
+    ],
+    "40-48": [
+      12,
+      14
+    ],
+    "48-80": [
+      14,
+      16
+    ],
+    "80-9999": [
+      16,
+      25
+    ]
+  },
+  "maxShadowStrings": 3,
+  "maxFontFamilies": 2,
+  "weights": [
+    400,
+    450,
+    500,
+    550,
+    600
+  ],
+  "maxAccentHues": 2,
+  "canvas": {
+    "maxChroma": 0.01
+  },
+  "maxColourfulPixelShare": 0.03,
+  "hero": {
+    "ctaProductGapPx": [
+      64,
+      96
+    ],
+    "productMinFoldShare": 0.2,
+    "nothingBetweenNavAndH1": true
+  },
+  "motionDefault": "none"
+}

@@ -1,0 +1,48 @@
+{
+  "kind": "client-app",
+  "floor": [
+    "work/sellify-video-ad-creator/DIRECTION.md",
+    "system/kits/product-studio/GUIDE.md"
+  ],
+  "cta": {
+    "heightPx": [
+      36,
+      36
+    ],
+    "radiusPx": [
+      12,
+      12
+    ],
+    "maxPrimary": 1
+  },
+  "radiusLadder": {
+    "32-40": [
+      9,
+      12
+    ],
+    "40-48": [
+      10,
+      12
+    ],
+    "48-80": [
+      12,
+      16
+    ],
+    "80-9999": [
+      12,
+      20
+    ]
+  },
+  "maxShadowStrings": 3,
+  "maxFontFamilies": 1,
+  "maxFontSizes": 3,
+  "weights": [
+    450,
+    500
+  ],
+  "maxAccentHues": 2,
+  "canvas": {
+    "maxChroma": 0.01
+  },
+  "motionDefault": "none"
+}

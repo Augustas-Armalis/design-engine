@@ -1,0 +1,51 @@
+{
+  "name": "flagship-tideline",
+  "format": "rounds/1",
+  "rounds": [
+    {
+      "round": null,
+      "date": "2026-10-08",
+      "verdict": "accept",
+      "why": "Founder 2026-10-08 round 6: brighter New orange (#ea580c, accepted AA trade-off), content block lower, globe further right, flowing gradient routes with comets.",
+      "summary": {
+        "pass": 19,
+        "warn": 2,
+        "fail": 4
+      },
+      "fingerprint": {
+        "h1": {
+          "px": 70,
+          "lh": "71.4px",
+          "ls": "-3.85px",
+          "weight": "600",
+          "family": "Geist Variable",
+          "text": "Payroll For TeamsIn Every Timezone"
+        },
+        "fonts": [
+          "Geist Variable",
+          "Geist Mono Variable"
+        ],
+        "accentHues": [
+          15
+        ],
+        "radii": [
+          12,
+          14,
+          "pill",
+          10,
+          18,
+          2
+        ],
+        "navHeight": 43,
+        "contentWidth": "840",
+        "sectionPad": 20,
+        "sectionCount": 1,
+        "bodyPx": 18,
+        "heroLayout": "integrated",
+        "navNumbered": false
+      },
+      "screenshot": "ledger/shots/2026-10-08-flagship-tideline-fold.png",
+      "legacyFile": "2026-10-08-flagship-tideline.json"
+    }
+  ]
+}

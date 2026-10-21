@@ -1,0 +1,51 @@
+{
+  "name": "tandem",
+  "format": "rounds/1",
+  "rounds": [
+    {
+      "round": null,
+      "date": "2026-10-09",
+      "verdict": "accept",
+      "why": "hero now good (round 2); fix: product visuals too close to the CTAs again, side cards blur out too fast, sidebar top wtf",
+      "summary": {
+        "pass": 27,
+        "warn": 2,
+        "fail": 0
+      },
+      "fingerprint": {
+        "h1": {
+          "px": 40,
+          "lh": "46px",
+          "ls": "-1.2px",
+          "weight": "500",
+          "family": "Inter Variable",
+          "text": "Approval Request"
+        },
+        "fonts": [
+          "Inter Variable",
+          "Geist Mono Variable"
+        ],
+        "accentHues": [
+          240
+        ],
+        "radii": [
+          24,
+          18,
+          "pill",
+          16,
+          10,
+          5
+        ],
+        "navHeight": null,
+        "contentWidth": null,
+        "sectionPad": null,
+        "sectionCount": 0,
+        "bodyPx": 17,
+        "heroLayout": "integrated",
+        "navNumbered": false
+      },
+      "screenshot": "ledger/shots/2026-10-09-tandem-fold.png",
+      "legacyFile": "2026-10-09-tandem.json"
+    }
+  ]
+}

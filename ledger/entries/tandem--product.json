@@ -1,0 +1,57 @@
+{
+  "name": "tandem--product",
+  "format": "rounds/1",
+  "rounds": [
+    {
+      "round": null,
+      "date": "2026-10-09",
+      "verdict": "accept",
+      "why": "product kinda cool; but use lucide icons, a better sidebar and properly placed stuff",
+      "summary": {
+        "pass": 23,
+        "warn": 4,
+        "fail": 0
+      },
+      "fingerprint": {
+        "h1": {
+          "px": 14,
+          "lh": "21px",
+          "ls": "normal",
+          "weight": "500",
+          "family": "Inter Variable",
+          "text": "Morning refunds"
+        },
+        "fonts": [
+          "Inter Variable",
+          "Geist Mono Variable"
+        ],
+        "accentHues": [
+          45,
+          165,
+          225,
+          240
+        ],
+        "radii": [
+          4,
+          8,
+          5,
+          "pill",
+          14,
+          16,
+          18,
+          9,
+          12
+        ],
+        "navHeight": 202,
+        "contentWidth": "640",
+        "sectionPad": null,
+        "sectionCount": 0,
+        "bodyPx": null,
+        "heroLayout": "integrated",
+        "navNumbered": false
+      },
+      "screenshot": "ledger/shots/2026-10-09-tandem--product-fold.png",
+      "legacyFile": "2026-10-09-tandem--product.json"
+    }
+  ]
+}

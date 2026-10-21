@@ -51,24 +51,19 @@ Two jobs, one brain: (1) **design** client websites and product UI from a brief,
 
 ## Pipeline for every brief
 
-1. **Understand.** Restate the brief in one line: product, audience, the one action, the proof the visitor needs. If any of these is guessable-wrong, ask one sharp question; otherwise state your assumption.
-2. **Load context.** `ledger/entries/` (last 8, all rejects). Then select rules: `.venv/bin/python tools/select_rules.py --name <name> --type <hero|landing|pricing|funnel|form|section|app-ui> --brief "<one line>"` and read `work/<name>/RULES.md`; trim it to the 20-50 that apply and say which you dropped. Use `build_index.py query <words>` just-in-time while building. Read only what applies.
-   - **Before any hero or landing**, read `knowledge/engine-accepted/quorum/README.md` (light SaaS recipe + less-is-more ledger) and `knowledge/web/hero-craft-study-2026-10.md` (51 measured heroes: gaps 17/32/96, about 78% empty fold, 5 elements default / 7 max, 46px buttons, 56/500 headline). Run the 25-minute pre-brief routine in `knowledge/web/inspiration-and-tools.md` (sources in `system/inspiration-sources.json`). Pick libraries from `knowledge/web/libraries-catalogue.md` / `system/libraries.json` (pinned versions, licence traps), never ad hoc. `knowledge/web/craft-articles-2026-10.md` holds the article rules; founder-taste wins every conflict.
-3. **Write `work/<name>/DIRECTION.md`** before any code:
-   - hero class (product proof | brand campaign | editorial | interactive) and why
-   - the concept in one sentence: what world is this product in?
-   - reference triad: one structural, one type/identity, one proof/material/motion reference (from `system/directions/` or the web), and the single rule taken from each
-   - divergence row: structure, type voice, palette temperature, CTA grammar, nav grammar, motion signature, and how each differs from the last 8 ledger entries
-   - **bound system**: pick one house system from `system/systems/<slug>/GUIDE.md` that fits the brief (or write a new `seed.json` and run `node tools/compile_system.mjs <slug>`; it must report "contract met"). Link its `theme.css`, use only its role tokens, keep its owned decisions and never-rules. A client project stays bound to one system across every page.
-   - **variety row**: run `node tools/variety.mjs pick --mode dark|light --seed <name>` and paste its `<!-- variety: layout=… nav=… button=… type=… palette=… system=… -->` line into DIRECTION.md. It proposes a layout, nav grammar, button grammar, type voice, dark palette and house system that none of the last six builds used. Read the matching sections before building: `knowledge/web/button-grammars.md` (+ `system/variety/buttons.css`), `nav-grammars.md`, `type-voices.md` (+ `system/variety/type-voices.json`), and for dark `dark-mode-premium.md` (+ `system/variety/dark-recipes.json`). Override an axis only on purpose and say why. The founder's standing complaint is "same font, button styling, roundness, nav and ideas every time".
-   - overrides: any rule being broken and why
-4. **Replicate first, then build** (founder 2026-10-20, `docs/REPLICATE-FIRST.md`): pick one rated reference, rebuild it at its pixel size, overlay with `tools/compare.mjs` until it registers, then add our content and 1-3 owned touches. Build only what was asked.
-   **Build.** Heroes and landing pages: `node tools/new_build.mjs <name> --system <slug>` (Vite + React + `motion` + Tailwind v4 + the product-hero kit; one `T` timeline, Kaching motion tokens, see `system/kits/product-hero/GUIDE.md`). Product apps: Next.js + Tailwind v4 + coss ui (Base UI) per `docs/coss-ui.md`. Research for product sites: `knowledge/web/product-heroes.md`, `product-site-anatomy.md`, `product-motion-patterns.md`, `product-ui-in-marketing.md`. Use real structure (landmarks, one h1, semantic controls). Implement all states that apply.
-5. **Check.** `node tools/check.mjs <url or file> --name <name>` (also fails controls covered by a transparent layer, reports the radius ladder per control height and whether the h1 has a load-in). Fix every FAIL. Treat every WARN as a question: fix it or justify it in DIRECTION.md. Then Read `reports/<name>/*-fold.png` and `*-full.png` and critique: focal point, rhythm, type, colour, "could another company reuse this skeleton by swapping the logo?", what looks assembled rather than designed.
-   **Design view (mandatory before any delivery).** `node tools/design_view.mjs <url> --kind post-component|hero-light|hero-dark --name <name>` puts the candidate next to the accepted and benchmark references (`system/design-view/refs.json`), previews posts at X's 514px feed size, and measures the format, canvas, crop, h1 tuple, rhythm, CTAs and product presence against the founder rules, x-design-posts XP-xx, the hero-craft study and Kuleszo AKZ-xx. Read `reports/<name>/design-view.png`. Any FAIL means do not deliver. Calibrated 2026-10-20: accepted Quorum and Kestrel pass 0 fail; the rejected Weft heroes fail 9. Mark the post component `data-subject` and the hero product `data-product`.
-6. **Diversity gate.** `node tools/ledger.mjs similar reports/<name>`. Exit 1 means too close to recent work: change structure, not surface.
-7. **Deliver** with the report summary, screenshots, and the overrides. Ask for a verdict.
-8. **Record.** `node tools/ledger.mjs add reports/<name> --verdict accept|reject --why "<their words>"`. Only record verdicts a founder actually gave. Never invent ledger entries.
+**One entry point:** `.claude/skills/design-engine/SKILL.md` (the router). It has one card per mode:
+- **A:** from scratch.
+- **B:** review and fix.
+- **C:** from references.
+
+The router also sets the kinds and their canon pages in `knowledge/founder/canon/`, the 5-file reading limit, and the gates that must pass before delivery (`tools/gate.mjs`, `tools/design_view.mjs`, `tools/check.mjs`). It also covers the verdict loop (`tools/verdict.mjs`). Follow it every time. The canon page for the kind is the decided default; `knowledge/founder/founder-taste.md` is the evidence log behind it. When a verdict reverses a canon value, edit the canon in place (never stack rules).
+
+Measuring tools:
+- `tools/probe.mjs`: pixel colours, edges, text boxes in a reference.
+- `tools/compare.mjs`: overlay against a reference.
+- `tools/style_diff.mjs`: computed-style diff between two builds, used every revision round.
+
+Process audit and its rationale: `docs/PROCESS-AUDIT-2026-10-21.md`.
 
 ## Craft reminders
 

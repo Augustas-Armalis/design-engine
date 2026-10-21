@@ -1,0 +1,46 @@
+{
+  "name": "larpo-linecheck",
+  "format": "rounds/1",
+  "rounds": [
+    {
+      "round": null,
+      "date": "2026-10-08",
+      "verdict": "reject",
+      "why": "[larpo seed, 2026-08-30 founder feedback] overall hero rejected: industrial photograph, giant headline and right-side inspection panel formed a familiar template",
+      "summary": {
+        "pass": 34,
+        "warn": 5,
+        "fail": 6
+      },
+      "fingerprint": {
+        "h1": {
+          "px": 73.44,
+          "lh": "69.768px",
+          "ls": "-4.7736px",
+          "weight": "500",
+          "family": "Geologica",
+          "text": "Catch the defectbefore the next shift."
+        },
+        "fonts": [
+          "Geologica",
+          "IBM Plex Mono"
+        ],
+        "accentHues": [
+          15,
+          225
+        ],
+        "radii": [
+          18,
+          50
+        ],
+        "navHeight": 88,
+        "contentWidth": "1372",
+        "sectionPad": null,
+        "sectionCount": 0,
+        "bodyPx": 16
+      },
+      "screenshot": "ledger/shots/2026-10-08-larpo-linecheck-fold.png",
+      "legacyFile": "2026-10-08-larpo-linecheck.json"
+    }
+  ]
+}

@@ -38,7 +38,7 @@ const AMBER = '#e8890c', INK = '17 17 17'
 export default function GridMap({ w, h, step = 3.8, at = 0 }: { w: number; h: number; step?: number; at?: number }) {
   const { dots, P } = useMemo(() => {
     const proj = geoConicConformal().rotate([-9, 0]).parallels([38, 60])
-      .fitExtent([[0, 0], [w, 236]], { type: 'MultiPoint', coordinates: [[-9.5, 38.5], [21, 38.5], [-9.5, 59], [21, 59]] } as never)
+      .fitExtent([[0, 18], [w, 254]], { type: 'MultiPoint', coordinates: [[-11, 38.5], [23, 38.5], [-11, 59], [23, 59]] } as never)
     const isLand = landMask(proj, w, h)
     const P = Object.fromEntries(NODES.map((n) => [n.code, proj([n.lon, n.lat])!])) as Record<string, [number, number]>
     const dots: { x: number; y: number; a: number; hot: number }[] = []
@@ -52,6 +52,11 @@ export default function GridMap({ w, h, step = 3.8, at = 0 }: { w: number; h: nu
       const edge = Math.min(1, x / 50, (w - x) / 50, y / 24, (330 - y) / 60)
       dots.push({ x, y, a: (0.15 + Math.min(1, heat) * 0.36) * Math.max(0, edge), hot })
     }
+    // centre the land horizontally in the card (Kite): measure the dot field and shift dots + nodes
+    const xs = dots.filter((d) => d.a > 0.05).map((d) => d.x)
+    const dx = Math.round((w - (Math.min(...xs) + Math.max(...xs))) / 2)
+    for (const d of dots) d.x += dx
+    for (const k of Object.keys(P)) P[k] = [P[k][0] + dx, P[k][1]]
     return { dots, P }
   }, [w, h, step])
 

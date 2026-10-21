@@ -1,0 +1,49 @@
+{
+  "name": "quillwork",
+  "format": "rounds/1",
+  "rounds": [
+    {
+      "round": null,
+      "date": "2026-10-10",
+      "verdict": "reject",
+      "why": "if this is what you're designing now - straight up dogshit",
+      "summary": {
+        "pass": 26,
+        "warn": 3,
+        "fail": 0
+      },
+      "fingerprint": {
+        "h1": {
+          "px": 84,
+          "lh": "84px",
+          "ls": "-2.1px",
+          "weight": "500",
+          "family": "Bodoni Moda Variable",
+          "text": "Write The DraftYou Meant"
+        },
+        "fonts": [
+          "Inter",
+          "Bodoni Moda Variable"
+        ],
+        "accentHues": [
+          15
+        ],
+        "radii": [
+          "pill",
+          22,
+          28,
+          8
+        ],
+        "navHeight": 56,
+        "contentWidth": "700",
+        "sectionPad": null,
+        "sectionCount": 0,
+        "bodyPx": 14.5,
+        "heroLayout": "integrated",
+        "navNumbered": false
+      },
+      "screenshot": "ledger/shots/2026-10-10-quillwork-fold.png",
+      "legacyFile": "2026-10-10-quillwork.json"
+    }
+  ]
+}

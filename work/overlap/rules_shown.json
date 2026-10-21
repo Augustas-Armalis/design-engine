@@ -1,0 +1,980 @@
+{
+ "name": "overlap",
+ "brief": "Overlap: scheduling for distributed teams that finds the hours everyone is awake; light, data-viz hero with a 24h timezone timeline",
+ "type": "hero",
+ "generated": "2026-10-19T23:36:18",
+ "rules": [
+  {
+   "id": "systems-research.tailwind-catalyst#4",
+   "slot": "core",
+   "score": 50.74,
+   "tier": "T1"
+  },
+  {
+   "id": "CW-16",
+   "slot": "core",
+   "score": 38.99,
+   "tier": "T2"
+  },
+  {
+   "id": "VWI-04",
+   "slot": "core",
+   "score": 36.26,
+   "tier": "T2"
+  },
+  {
+   "id": "LDP-16",
+   "slot": "core",
+   "score": 33.9,
+   "tier": "T2"
+  },
+  {
+   "id": "web-sources.a11y-project-checklist#54",
+   "slot": "core",
+   "score": 30.1,
+   "tier": "T1"
+  },
+  {
+   "id": "AH-LA-37",
+   "slot": "core",
+   "score": 29.14,
+   "tier": "T1"
+  },
+  {
+   "id": "web-sources.a11y-project-checklist#41",
+   "slot": "core",
+   "score": 28.99,
+   "tier": "T1"
+  },
+  {
+   "id": "AH-LA-32",
+   "slot": "core",
+   "score": 28.55,
+   "tier": "T1"
+  },
+  {
+   "id": "web-sources.a11y-project-checklist#27",
+   "slot": "core",
+   "score": 25.49,
+   "tier": "T1"
+  },
+  {
+   "id": "ui-pedia.14-objects-and-shapes#13",
+   "slot": "core",
+   "score": 24.5,
+   "tier": "T2"
+  },
+  {
+   "id": "ui-pedia.18-animation-and-microinteraction#6",
+   "slot": "core",
+   "score": 24.45,
+   "tier": "T2"
+  },
+  {
+   "id": "web-sources.a11y-project-checklist#19",
+   "slot": "core",
+   "score": 23.88,
+   "tier": "T1"
+  },
+  {
+   "id": "AH-TY-01",
+   "slot": "core",
+   "score": 20.59,
+   "tier": "T1"
+  },
+  {
+   "id": "PT-SZ-11",
+   "slot": "core",
+   "score": 19.89,
+   "tier": "T2"
+  },
+  {
+   "id": "AV-13",
+   "slot": "core",
+   "score": 19.25,
+   "tier": "T2"
+  },
+  {
+   "id": "web.color-and-surfaces#15",
+   "slot": "core",
+   "score": 15.99,
+   "tier": "T2"
+  },
+  {
+   "id": "founder.founder-taste#78",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#17",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.feedback-playbook#1",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "T2"
+  },
+  {
+   "id": "founder.feedback-playbook#2",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "T2"
+  },
+  {
+   "id": "founder.feedback-playbook#3",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "T2"
+  },
+  {
+   "id": "founder.feedback-playbook#4",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "T2"
+  },
+  {
+   "id": "founder.feedback-playbook#5",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "T2"
+  },
+  {
+   "id": "founder.feedback-playbook#6",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "T2"
+  },
+  {
+   "id": "founder.feedback-playbook#7",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "T2"
+  },
+  {
+   "id": "founder.founder-taste#1",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#2",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#3",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#4",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#5",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#6",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#7",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#8",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#9",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#10",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#11",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#12",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#13",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#14",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#15",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#16",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#18",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#19",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#20",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#21",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#22",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#23",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#24",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#25",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#26",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#27",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#28",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#29",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#30",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#31",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#32",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#33",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#34",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#35",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#36",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#37",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#38",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#39",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#40",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#41",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#42",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#43",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#44",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#45",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#46",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#47",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#48",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#49",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#50",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#51",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#52",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#53",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#54",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#55",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#56",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#57",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#58",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#59",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#60",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#61",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#62",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#63",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#64",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#65",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#66",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#67",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#68",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#69",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#70",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#71",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#72",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#73",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#74",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#75",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#76",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#77",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#79",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#80",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#81",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#82",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#83",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#84",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#85",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#86",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#87",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#88",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#89",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#90",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#91",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#92",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#93",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#94",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#95",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#96",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#97",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#98",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#99",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#100",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#101",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#102",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#103",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#104",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#105",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#106",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#107",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#108",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#109",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#110",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#111",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#112",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#113",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#114",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#115",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#116",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#117",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#118",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#119",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#120",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#121",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#122",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#123",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#124",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#125",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#126",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#127",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#128",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#129",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#130",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#131",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#132",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#133",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "founder.founder-taste#134",
+   "slot": "founder",
+   "score": 100.0,
+   "tier": "L"
+  },
+  {
+   "id": "LHS-07",
+   "slot": "founder",
+   "score": 33.31,
+   "tier": "L"
+  },
+  {
+   "id": "LHS-20",
+   "slot": "founder",
+   "score": 31.52,
+   "tier": "L"
+  },
+  {
+   "id": "LHS-13",
+   "slot": "founder",
+   "score": 31.42,
+   "tier": "L"
+  },
+  {
+   "id": "LHS-19",
+   "slot": "founder",
+   "score": 28.11,
+   "tier": "L"
+  },
+  {
+   "id": "LHS-04",
+   "slot": "founder",
+   "score": 27.32,
+   "tier": "L"
+  }
+ ]
+}

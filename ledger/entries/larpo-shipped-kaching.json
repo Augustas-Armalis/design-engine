@@ -1,0 +1,63 @@
+{
+  "name": "larpo-shipped-kaching",
+  "format": "rounds/1",
+  "rounds": [
+    {
+      "round": null,
+      "date": "2026-10-08",
+      "verdict": "accept",
+      "why": "Founder 2026-10-08: shipped Larpo work, cited as the bar. Geist 600 -0.06em, 1200px rails, live app-coloured pixel dither signature, compact 16px controls, centred hero with app switcher; see knowledge/larpo-shipped/kaching-DESIGN-SYSTEM.md",
+      "summary": {
+        "pass": 27,
+        "warn": 13,
+        "fail": 5
+      },
+      "fingerprint": {
+        "h1": {
+          "px": 42,
+          "lh": "50px",
+          "ls": "-2.52px",
+          "weight": "600",
+          "family": "Geist Variable",
+          "text": "BundlesCart To IncreaseYour Average Order Value"
+        },
+        "fonts": [
+          "Geist Variable"
+        ],
+        "accentHues": [
+          15,
+          45,
+          150,
+          210
+        ],
+        "radii": [
+          8,
+          14,
+          11,
+          12,
+          9,
+          24,
+          18,
+          22,
+          19,
+          13,
+          23,
+          15,
+          10,
+          2,
+          4,
+          36
+        ],
+        "navHeight": 43,
+        "contentWidth": "1200",
+        "sectionPad": 151,
+        "sectionCount": 2,
+        "bodyPx": 18,
+        "heroLayout": "copy-above-visual",
+        "navNumbered": false
+      },
+      "screenshot": "ledger/shots/2026-10-08-larpo-shipped-kaching-fold.png",
+      "legacyFile": "2026-10-08-larpo-shipped-kaching.json"
+    }
+  ]
+}

@@ -15,3 +15,13 @@ Founder after a run of rejects (Overlap, Weft x3, Share, Expense x2): "just try 
 - `#/clokora`: Kargul Clokora overview (clokora-01.jpg, 1800x1294). Own touches: weekend bars use the legend grey, a live cap on today, one warm dot.
 - `#/decision`: affectUI Decision Inbox (stage 894x520 at 2x). Own touch: a "Due Fri" chip.
 - `work/replicas` #/finance: AlignUI Finance "Transactions" (finance-1.png, 1600x1200). Own touches: Harbor green accent, signed in/out amounts, an "On hold" status.
+
+## Measuring step (2026-10-21)
+
+Before writing any code, probe the reference: `node tools/probe.mjs <ref.png> box x y w h` gives the exact ink box of a text block (solve font size from the width, line-height from the baseline pitch), `row`/`col` give edges and fills, and `px` gives exact colours. Re-probe our render with the same boxes and compare numbers, not impressions. A narrower substitute font is fixed by matching the measured line width, not the cap height. Perspective scenes: fit each prop to its measured screen corners with an affine transform instead of forcing one iso matrix.
+
+Replicas built 2026-10-21 (all registered):
+- **Kargul Chatsheet hero:** `#/khero`, `work/replicas/KARGUL-HERO-NOTES.md`. The h1 is within 1-3px.
+- **Kargul Branding bento cell:** `#/kiso`, ISO-31..38.
+- **Attio home fold:** `#/attio`, `work/replicas/ATTIO-NOTES.md`. 0-0.5px marketing, 1px window.
+- **Linear home fold:** `#/linear`, `work/replicas/LINEAR-NOTES.md`. The h1 is pixel-identical and the window edges are exact.

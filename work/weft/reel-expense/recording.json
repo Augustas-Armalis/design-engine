@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "id": "reel-expense",
+  "dir": "/Users/augustas/Documents/Larpo front-end engine/work/weft/reel-expense",
+  "createdAt": "2026-10-20T15:30:49.429Z",
+  "settings": {
+    "url": "http://localhost:4382/#/expense",
+    "width": 1000,
+    "height": 1000,
+    "scale": 1,
+    "scrollY": 0,
+    "fps": 30,
+    "startMs": 0,
+    "durationMs": 8000,
+    "holdMs": 0,
+    "region": {
+      "type": "viewport"
+    },
+    "actions": [],
+    "cursor": false,
+    "colorScheme": "light",
+    "seed": 24301,
+    "realRandom": false,
+    "keepFrames": false,
+    "presets": []
+  },
+  "size": {
+    "width": 1000,
+    "height": 1000
+  },
+  "frames": 240,
+  "browser": "153.0.8010.12",
+  "files": {
+    "master": "/Users/augustas/Documents/Larpo front-end engine/work/weft/reel-expense/master.nut",
+    "proxy": "/Users/augustas/Documents/Larpo front-end engine/work/weft/reel-expense/proxy.mp4",
+    "thumbs": "/Users/augustas/Documents/Larpo front-end engine/work/weft/reel-expense/thumbs.jpg",
+    "poster": "/Users/augustas/Documents/Larpo front-end engine/work/weft/reel-expense/poster.png"
+  },
+  "thumbs": {
+    "step": 6,
+    "count": 40
+  },
+  "edits": {
+    "holdLastMs": 0,
+    "fadeColor": "#f8f8f9"
+  },
+  "background": "#f8f8f9",
+  "exports": [
+    {
+      "preset": "h264",
+      "file": "/Users/augustas/Documents/Larpo front-end engine/work/weft/expense-loop-preview.mp4",
+      "bytes": 234867,
+      "probe": {
+        "file": "/Users/augustas/Documents/Larpo front-end engine/work/weft/expense-loop-preview.mp4",
+        "bytes": 234867,
+        "codec": "h264",
+        "profile": "High",
+        "pixFmt": "yuv420p",
+        "width": 1000,
+        "height": 1000,
+        "fps": "30/1",
+        "frames": 240,
+        "durationSec": 8,
+        "bitrateKbps": 149,
+        "color": {
+          "space": "bt709",
+          "primaries": "bt709",
+          "transfer": "bt709",
+          "range": "tv"
+        },
+        "cover": "/Users/augustas/Documents/Larpo front-end engine/work/weft/expense-loop-preview-cover.png"
+      },
+      "ms": 1050
+    }
+  ],
+  "timings": {
+    "loadMs": 1355,
+    "captureMs": 8985,
+    "finishMs": 1379,
+    "exportMs": 0
+  }
+}

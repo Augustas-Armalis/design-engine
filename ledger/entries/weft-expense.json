@@ -1,0 +1,44 @@
+{
+  "name": "weft-expense",
+  "format": "rounds/1",
+  "rounds": [
+    {
+      "round": null,
+      "date": "2026-10-20",
+      "verdict": "reject",
+      "why": "did not ask to animate; spacing, roundness, components, colours not good; form not centered; study kargul fully and replicate affectui/alignui/kargul works in style",
+      "summary": {
+        "pass": 35,
+        "warn": 2,
+        "fail": 2
+      },
+      "fingerprint": {
+        "fonts": [
+          "Inter Variable"
+        ],
+        "accentHues": [
+          45,
+          150
+        ],
+        "radii": [
+          20,
+          8,
+          "pill",
+          16,
+          10,
+          6,
+          12
+        ],
+        "navHeight": null,
+        "contentWidth": "648",
+        "sectionPad": 4,
+        "sectionCount": 1,
+        "bodyPx": null,
+        "heroLayout": "unknown",
+        "navNumbered": false
+      },
+      "screenshot": "ledger/shots/2026-10-20-weft-expense-fold.png",
+      "legacyFile": "2026-10-20-weft-expense.json"
+    }
+  ]
+}

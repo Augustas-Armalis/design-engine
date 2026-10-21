@@ -1,0 +1,54 @@
+{
+  "name": "kestrel",
+  "format": "rounds/1",
+  "rounds": [
+    {
+      "round": null,
+      "date": "2026-10-08",
+      "verdict": "accept",
+      "why": "Founder: 'not bad not bad... other than that it's fucking awesome what you did'. Fixes asked: taller nav, no chip above title, dotted texture inside rails only, founder's flower logo, sidebar less rounded, CTAs softer to match the product, no blue outline on KPI cards | Round 2: \"fucking amazing bro, love it sooo much\"; fixes: remove the See it answer icon, dashboard radii consistent and controls centred",
+      "summary": {
+        "pass": 23,
+        "warn": 0,
+        "fail": 0
+      },
+      "fingerprint": {
+        "h1": {
+          "px": 72,
+          "lh": "74.88px",
+          "ls": "-3.24px",
+          "weight": "550",
+          "family": "Inter Variable",
+          "text": "Product AnalyticsThatAnswers Back"
+        },
+        "fonts": [
+          "Inter Variable"
+        ],
+        "accentHues": [
+          225
+        ],
+        "radii": [
+          2,
+          14,
+          10,
+          12,
+          18,
+          22,
+          16,
+          8,
+          4,
+          "pill"
+        ],
+        "navHeight": 44,
+        "contentWidth": "1136",
+        "sectionPad": 20,
+        "sectionCount": 2,
+        "bodyPx": null,
+        "heroLayout": "integrated",
+        "navNumbered": false
+      },
+      "screenshot": "ledger/shots/2026-10-08-kestrel-fold.png",
+      "legacyFile": "2026-10-08-kestrel.json"
+    }
+  ]
+}

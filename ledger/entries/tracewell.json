@@ -1,0 +1,48 @@
+{
+  "name": "tracewell",
+  "format": "rounds/1",
+  "rounds": [
+    {
+      "round": null,
+      "date": "2026-10-09",
+      "verdict": "reject",
+      "why": "straight up dogshit (founder on the first V1 dark hero: brutalist amber offset-block buttons, heavy 86px/700 headline with crushed tracking, muddy amber glow, flat dark product slab with no light or depth, random pastel span bars; reads as a dev-tool template, not studio-grade dark)",
+      "summary": {
+        "pass": 23,
+        "warn": 4,
+        "fail": 2
+      },
+      "fingerprint": {
+        "h1": {
+          "px": 86,
+          "lh": "80.84px",
+          "ls": "-4.128px",
+          "weight": "700",
+          "family": "Schibsted Grotesk",
+          "text": "See Every StepYour Agents Take"
+        },
+        "fonts": [
+          "JetBrains Mono",
+          "Schibsted Grotesk"
+        ],
+        "accentHues": [
+          0,
+          30,
+          135
+        ],
+        "radii": [
+          "pill"
+        ],
+        "navHeight": 56,
+        "contentWidth": "854",
+        "sectionPad": null,
+        "sectionCount": 0,
+        "bodyPx": 17,
+        "heroLayout": "integrated",
+        "navNumbered": false
+      },
+      "screenshot": "ledger/shots/2026-10-09-tracewell-fold.png",
+      "legacyFile": "2026-10-09-tracewell.json"
+    }
+  ]
+}

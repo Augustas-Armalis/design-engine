@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "id": "reel-4k60",
+  "dir": "/Users/augustas/Documents/Larpo front-end engine/work/kite/showcase/reel-4k60",
+  "createdAt": "2026-10-15T15:22:18.344Z",
+  "settings": {
+    "url": "http://localhost:4361/#/showcase",
+    "width": 1220,
+    "height": 900,
+    "scale": 3.2,
+    "scrollY": 0,
+    "fps": 60,
+    "startMs": 0,
+    "durationMs": 5000,
+    "holdMs": 800,
+    "region": {
+      "type": "viewport"
+    },
+    "actions": [],
+    "cursor": false,
+    "colorScheme": "light",
+    "seed": 24301,
+    "realRandom": false,
+    "keepFrames": false,
+    "presets": []
+  },
+  "size": {
+    "width": 3904,
+    "height": 2880
+  },
+  "frames": 300,
+  "browser": "153.0.8010.12",
+  "files": {
+    "master": "/Users/augustas/Documents/Larpo front-end engine/work/kite/showcase/reel-4k60/master.nut",
+    "proxy": "/Users/augustas/Documents/Larpo front-end engine/work/kite/showcase/reel-4k60/proxy.mp4",
+    "thumbs": "/Users/augustas/Documents/Larpo front-end engine/work/kite/showcase/reel-4k60/thumbs.jpg",
+    "poster": "/Users/augustas/Documents/Larpo front-end engine/work/kite/showcase/reel-4k60/poster.png"
+  },
+  "thumbs": {
+    "step": 7,
+    "count": 40
+  },
+  "edits": {
+    "holdLastMs": 800,
+    "fadeColor": "#0a0a0b"
+  },
+  "background": "#0a0a0b",
+  "exports": [
+    {
+      "preset": "h264",
+      "file": "/Users/augustas/Documents/Larpo front-end engine/work/kite/showcase/kite-showcase-4k60.mp4",
+      "bytes": 6347537,
+      "probe": {
+        "file": "/Users/augustas/Documents/Larpo front-end engine/work/kite/showcase/kite-showcase-4k60.mp4",
+        "bytes": 6347537,
+        "codec": "h264",
+        "profile": "High",
+        "pixFmt": "yuv420p",
+        "width": 3904,
+        "height": 2880,
+        "fps": "60/1",
+        "frames": 348,
+        "durationSec": 5.8,
+        "bitrateKbps": 7997,
+        "color": {
+          "space": "bt709",
+          "primaries": "bt709",
+          "transfer": "bt709",
+          "range": "tv"
+        },
+        "cover": "/Users/augustas/Documents/Larpo front-end engine/work/kite/showcase/kite-showcase-4k60-cover.png"
+      },
+      "ms": 27730
+    }
+  ],
+  "timings": {
+    "loadMs": 1383,
+    "captureMs": 573165,
+    "finishMs": 15707,
+    "exportMs": 0
+  }
+}

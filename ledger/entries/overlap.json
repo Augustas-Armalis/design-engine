@@ -1,0 +1,51 @@
+{
+  "name": "overlap",
+  "format": "rounds/1",
+  "rounds": [
+    {
+      "round": null,
+      "date": "2026-10-20",
+      "verdict": "reject",
+      "why": "interesting style but not even close to being correct nor professional... just feels too hollow and stupid, retry from scratch",
+      "summary": {
+        "pass": 39,
+        "warn": 2,
+        "fail": 0
+      },
+      "fingerprint": {
+        "h1": {
+          "px": 58,
+          "lh": "59.16px",
+          "ls": "-2.32px",
+          "weight": "450",
+          "family": "Host Grotesk Variable",
+          "text": "Find The HourEveryone’s Awake"
+        },
+        "fonts": [
+          "Host Grotesk Variable",
+          "Geist Mono Variable"
+        ],
+        "accentHues": [
+          225
+        ],
+        "radii": [
+          14,
+          18,
+          9,
+          7,
+          10,
+          "pill"
+        ],
+        "navHeight": 84,
+        "contentWidth": "1036",
+        "sectionPad": null,
+        "sectionCount": 0,
+        "bodyPx": 17,
+        "heroLayout": "copy-above-visual",
+        "navNumbered": false
+      },
+      "screenshot": "ledger/shots/2026-10-20-overlap-fold.png",
+      "legacyFile": "2026-10-20-overlap.json"
+    }
+  ]
+}

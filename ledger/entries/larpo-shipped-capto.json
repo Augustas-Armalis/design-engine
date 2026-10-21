@@ -1,0 +1,59 @@
+{
+  "name": "larpo-shipped-capto",
+  "format": "rounds/1",
+  "rounds": [
+    {
+      "round": null,
+      "date": "2026-10-08",
+      "verdict": "accept",
+      "why": "Founder 2026-10-08: 'that was fucking awesome'. Dark Geist, huge tight headline with grey gradient, purple pixel-dither band, real editor UI with a real photo, monospace meta line, white primary + outline secondary.",
+      "summary": {
+        "pass": 17,
+        "warn": 23,
+        "fail": 5
+      },
+      "fingerprint": {
+        "h1": {
+          "px": 84,
+          "lh": "85.68px",
+          "ls": "-3.36px",
+          "weight": "560",
+          "family": "Geist",
+          "text": "Your captions are losing you views."
+        },
+        "fonts": [
+          "Geist",
+          "Geist Mono"
+        ],
+        "accentHues": [
+          45,
+          135,
+          150,
+          255
+        ],
+        "radii": [
+          6,
+          8,
+          999,
+          12,
+          4,
+          "pill",
+          10,
+          5,
+          3,
+          1,
+          2
+        ],
+        "navHeight": 65,
+        "contentWidth": "1088",
+        "sectionPad": 128,
+        "sectionCount": 13,
+        "bodyPx": 14,
+        "heroLayout": "copy-above-visual",
+        "navNumbered": false
+      },
+      "screenshot": "ledger/shots/2026-10-08-larpo-shipped-capto-fold.png",
+      "legacyFile": "2026-10-08-larpo-shipped-capto.json"
+    }
+  ]
+}

@@ -527,3 +527,12 @@ Every rule here is a direct founder verdict on real output. It outranks books, w
 - **RULE** [founder] Iso bento art is not done until one reference cell is replicated pixel for pixel: before drawing our own scenes, rebuild one Kargul services-bento cell (knowledge/benchmarks/bento/kargul-services-bento.png) at its exact scale and overlay it with `tools/compare.mjs` until the plates, nodes, hatch, dot fills, icon glyphs and labels register within ~2px. Our marks (invented icons, circles, random colours, dot nodes) read generic; only measured copies of his construction carry the craft.
   **Why** Founder on bento v4-shaded: "stuff is just very very much off... from icons you drew to circles to colors to points and how everything looks, it's generic and not good at all".
   **Applies to** iso art. **Check** `work/replicas/cmp-kargul-iso-overlay.png` registers before new scenes ship. **Source** founder, Cadence, 2026-10-21
+
+## Verdict log
+
+One line per founder verdict, appended by tools/verdict.mjs. The quoted words are exactly what was passed with --why.
+
+- 2026-10-21 · cadence-bento r5 · reject: "yeah but stuff is just very very much off the way you did... from icons like you drew to circles to colors to points and how everything looks, it's generic and not good at all" (ledger: ledger/entries/cadence-bento.json r5; canon: section-bento; shot: ledger/shots/2026-10-21-cadence-bento-r5-fold.png)
+- 2026-10-21 · cadence-event r1 · reject: "the component and bento straight up ass, nothing cool about them, no cool stylings" (ledger: ledger/entries/cadence-event.json r1; canon: post-component; shot: ledger/shots/2026-10-21-cadence-event-r1-fold.png)
+- 2026-10-21 · cadence-calendar r1 · partial: "product not bad" (ledger: ledger/entries/cadence-calendar.json r1; canon: product-ui; shot: ledger/shots/2026-10-21-cadence-calendar-r1-fold.png)
+- 2026-10-21 · gridline r3 · partial: "yeah but the left side why so empty... plus the logo of the gridline could be better that's not how logos are made" (ledger: ledger/entries/gridline.json r3; canon: hero-light; shot: ledger/shots/2026-10-21-gridline-r3-fold.png)
