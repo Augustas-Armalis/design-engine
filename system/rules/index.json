@@ -4295,6 +4295,34 @@
   "origin": "founder"
  },
  {
+  "id": "founder.founder-taste#142",
+  "text": "[founder] Do not abstract the bento into meaningless geometry: Linear-style slabs, combs and bars with shading (\"interesting yet stupid and not nice at all\") lose to the Kargul-grammar cells that draw the product's own objects (calendar layers, the focus block, the moved meeting, the booking card, the day towers) with callouts that name the answer. Take precision and restraint from Linear, but keep the subject from the product; shading stays subtle (tint families, low glow), never a saturated solid block.",
+  "why": "Founder on the shaded Linear-style figures, 2026-10-21.",
+  "applies": "bento and feature art.",
+  "check": "every figure is recognisably the product's own object and names its answer.",
+  "checkable": true,
+  "source": "founder, Cadence, 2026-10-21",
+  "file": "founder/founder-taste.md",
+  "section": "5. Exceptions & judgement calls",
+  "tags": [
+   "founder",
+   "taste",
+   "hero",
+   "nav",
+   "typography",
+   "copy",
+   "icons",
+   "logo",
+   "layout",
+   "product-card",
+   "background",
+   "buttons",
+   "quality-bar"
+  ],
+  "kind": "source",
+  "origin": "founder"
+ },
+ {
   "id": "founder.sellify-design-pass#1",
   "text": "[founder-process] Start every Sellify UI task by fetching `origin/main`, merging it into the local design branch, and listing teammates' commits in the area; adopt their logic and naming before touching visuals.",
   "why": "\"have you got the latest versions and updated what we designed to them... if christian did anything\" (2026-10-20). Our Ad Spy Tests tab duplicated Aaron's ENG-2232 because the branch was a day stale.",
