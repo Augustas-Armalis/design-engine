@@ -91,3 +91,28 @@ Decided now (these replace the matching rows above):
 - **Roundness:** ONE ladder for the whole fold, derived from the product's scale. If the product is zoomed by z, hero chrome radii = product radii x z: frame = window radius x z, CTAs and composer = card radius x z, inner = outer - inset. Measure every box (gate `radius.*` + `nested`).
 - **Nav:** sits on the same content edges as the h1 block and the product frame (one grid). Size is proportionate: logo mark 22-24, links 15, nav CTAs 36 tall. Check that the nav's left/right x equals the frame's left/right x within 1px.
 - **Delivery:** give 2-3 variants that differ in font, layout, background colour and roundness, all on the same consistency rules, so the founder can pick.
+
+## Founder verdict 2026-10-22 (cadence-hero r2, reject all three variants)
+- **Repetition:** "identically looking" to past builds, so a new hero must not reuse a past fold's composition.
+- **Spacing:** the gaps pill → h1 and CTAs → proof were wrong. The founder's own hero spacing must be measured from lunor.design and Marcel's heroes and set from that measurement, never invented.
+- **Missing visual:** "no extra visual or proper layout or proper font with bg ideas". A product screenshot plus a gradient is not a visual idea. Every hero needs a signature visual concept of its own.
+- **The editorial variant:** "ugly" even with a good layout. Type and colour taste fails are fails, whatever the structure.
+- **Process:** study lunor.design (the founder's and Rico's work) and Marcel's hundreds of heroes before the next hero, and build from them.
+
+## Applied 2026-10-22 from the founder's own library (lunor.design, 98 founder heroes measured, LN-01..36)
+These replace the numbers above wherever they conflict. Source: `knowledge/web/lunor-founder-style.md`.
+- **h1:** 50-60 (54 default), weight 450-500, tracking -0.02 to -0.04em, line height 1.1-1.2, 2 lines, up to 8 words. Sentence case is allowed.
+- **Gaps grow in order:** pill → h1 (~12-16 CSS) ≈ h1 → sub (12-16) < sub → CTAs (40-48) < CTAs → fourth element (80-100).
+- **Sub:** 17-18px, 2 lines, ≤ 440 wide.
+- **CTAs:** 38-44 tall, radius 9-11 or a pill, 9 apart. Light primary is tactile ink; the secondary is white, text only.
+- **Nav:** links 15-16, plus a 36-tall "Log in" + "Sign up" pair.
+- **Composition:** every fold has a fourth element (product, scene, logos or stats) 80-100 below the CTAs. One named background idea per hero.
+- **Fonts:** rotate per brief (Inter, Manrope, Aspekta, Inter Tight, Geist, Jakarta, Switzer); size and spacing stay fixed.
+- **Open (founder to decide):** the pill above the h1 appears in only 32 of 98 founder heroes, while the r1 verdict asked for something above the title. Use it when the brief has news, otherwise put the weight on the fourth element.
+
+## Applied 2026-10-22 from Marcel's 55 heroes (KH-01..33, `knowledge/web/kargul-heroes.md`)
+- **The cause of "empty" was the missing signature visual,** not the space above the h1 (KH-01). Every hero turns the product's name or headline verb into a picture. A screenshot on a gradient does not count.
+- **Above the h1:** OPTIONAL, and only for a real fact (Marcel 15/55, founder 32/98). This supersedes the r1 "required" line.
+- **Below the CTAs:** proof or a product action only (KH-10).
+- **Layout:** pick the family first and never repeat the last build's family or visual world (KH-02). Recipes: `kargul-heroes.md`.
+- **Light and colour:** in dark heroes the light comes from the visual itself; in light heroes colour rises from the bottom or sides, and copy sits on near-white (KH-12/13). One accent, in ≤ 3 places.

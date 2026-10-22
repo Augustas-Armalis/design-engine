@@ -80,3 +80,6 @@ On the Linear FIG, AlignUI Features-04 and affectUI 3-up pixel replicas, the fou
 2. The replicate-to-registration-first method is the confirmed way to reach the bar.
 
 Build new bentos on a replica's own primitives (`work/replicas/app/src/{LinearBento,AlignBento,AffectBento,lineart}.tsx`), never from memory.
+
+## Founder verdict 2026-10-22 (cadence-bento-rico r1, partial)
+"Not bad, just meh. I like more rounded stuff." The Rico-grammar replicas were "cool". Bentos lean rounder: outer cards 24-32, inner wells concentric. Measure lunor.design's bentos (the founder's own style) and use them as the floor.
