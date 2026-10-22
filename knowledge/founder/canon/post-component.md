@@ -58,3 +58,7 @@ Decided defaults, 2026-10-21. Evidence: `founder-taste L<n>`, the accepted Tande
 ## Open
 - No founder-accepted post since Tandem (2026-10-09). The Flo-tray floor is a benchmark, not an accept of ours.
 - Dark component posts: only Marcel's reference; no verdict on ours.
+
+## Founder verdict 2026-10-22 (cadence-xpost r1, partial: "cool")
+- **Framing:** a post's crop insets are equal on the left and top, and the window bleeds off BOTH the right and bottom edges. No bottom margin.
+- **Content:** "too monotonic, too little". A calm screen still needs colour accents (calendar/team colours, avatars) and enough content to read as a real product, at least one secondary object (a preview, a chart) besides the list.

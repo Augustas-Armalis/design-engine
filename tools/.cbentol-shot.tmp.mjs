@@ -1,0 +1,11 @@
+import { chromium } from 'playwright'
+const [url, out] = process.argv.slice(2)
+const b = await chromium.launch()
+const p = await b.newPage({ viewport: { width: 1440, height: 1200 }, deviceScaleFactor: 2 })
+p.on('pageerror', (e) => console.log('ERR', e.message))
+await p.goto(url, { waitUntil: 'networkidle' })
+await p.evaluate(() => document.fonts.ready)
+await p.waitForTimeout(500)
+console.log(await p.evaluate(() => getComputedStyle(document.querySelector('h2')).fontFamily))
+await p.screenshot({ path: out })
+await b.close()

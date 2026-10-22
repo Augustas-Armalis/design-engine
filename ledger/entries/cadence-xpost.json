@@ -1,0 +1,36 @@
+{
+  "name": "cadence-xpost",
+  "format": "rounds/1",
+  "rounds": [
+    {
+      "round": 1,
+      "date": "2026-10-22",
+      "recorded": "2026-10-22T15:25:37.228Z",
+      "verdict": "partial",
+      "why": "ok that's cool but the design is too monotonic plus like too little and why not equal gaps from the left and top... and why a gap from bottom it should cut off",
+      "canonKind": "post-component",
+      "source": {
+        "type": "png",
+        "path": "work/cadence-app/x-post@3x.png"
+      },
+      "summary": null,
+      "fingerprint": null,
+      "screenshot": "ledger/shots/2026-10-22-cadence-xpost-r1-fold.png"
+    },
+    {
+      "round": 2,
+      "date": "2026-10-22",
+      "recorded": "2026-10-22T15:27:36.036Z",
+      "verdict": "reject",
+      "why": "bro the design got even stupider like just remake completely new",
+      "canonKind": "post-component",
+      "source": {
+        "type": "png",
+        "path": "work/cadence-app/x-post@3x.png"
+      },
+      "summary": null,
+      "fingerprint": null,
+      "screenshot": "ledger/shots/2026-10-22-cadence-xpost-r2-fold.png"
+    }
+  ]
+}
