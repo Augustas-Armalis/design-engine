@@ -62,3 +62,6 @@ Decided defaults, 2026-10-21. Evidence: `founder-taste L<n>`, the accepted Tande
 ## Founder verdict 2026-10-22 (cadence-xpost r1, partial: "cool")
 - **Framing:** a post's crop insets are equal on the left and top, and the window bleeds off BOTH the right and bottom edges. No bottom margin.
 - **Content:** "too monotonic, too little". A calm screen still needs colour accents (calendar/team colours, avatars) and enough content to read as a real product, at least one secondary object (a preview, a chart) besides the list.
+
+## Founder verdict 2026-10-22 (cxslices r1 and the recent X-post heroes, reject)
+"hero sections by random for X post - you're getting worse and just been creating bullshit straight... study more create more actually good shit". Random one-off heroes made for X posts are rejected as a practice. An X post starts from a replicated, rated reference (Marcel or Rico post, or a lunor hero). Its content must be a real product moment, not a filler composition. Volume only after one passes the founder.

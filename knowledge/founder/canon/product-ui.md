@@ -76,3 +76,25 @@ On the Cadence calendar built in Tanjim's post system, the founder said: "his st
 
 ## Correction 2026-10-22, from the Rico and Kargul pixel replicas (RD-05, KMD-27/28)
 Both founder-named masters' own screens failed our product gate. They use body weight 400 (60-80% of text) and 6-10 type sizes in 0.5-1px steps (13.5, 17.5), with hierarchy carried by ink against one grey and by half-step sizes, not by bold. The canon now allows weights {400, 450, 500, 550, 600} and up to 10 sizes in a product view (`system/canon/product-ui.json`). The 500/600-only rule and the 4-size cap are superseded. Contrast stays at 4.5:1 even though both use roughly 3:1 secondary greys (KMD-32, RD-10).
+
+## Founder verdict 2026-10-22 (cprodk r1, reject) and r2 floor
+On the Cadence week in Marcel's grammar: "too similar to marcel and stupid looking at the top, no apple like stuff... too little rounded, I don't like very edgy designs... too little small details or shadows or nifty stuff... lacks proper dashboard sidebar and components - redo completely in the style of alignui and affectui".
+Decided, replacing the Kargul-sharp option as a default:
+- **No OS or browser chrome** on our own product shots (no traffic lights, no URL bar). The frame is the AlignUI double bezel: frame r36 on a weak grey, 8px inset, white main panel r28.
+- **Rounder ladder:** tray 20, cards 16, controls and icon tiles 10, segmented option 8, chips 6-7, avatars and pills round. The Kargul family (KMD-10/31) is now only for a brand whose DIRECTION binds it.
+- **A proper dashboard sidebar:**
+  - workspace switcher (logo tile and a selector button) and a search field with a kbd;
+  - uppercase group labels, nav rows 36 tall r10, a white ringed active row with an accent icon, and count badges;
+  - teams with kbd shortcuts, and calendars or filters with coloured checkboxes;
+  - a plan or trial card, and a user row with an avatar, online dot and verified mark.
+- **Nifty details are required**, at least 8 kinds per screen:
+  - icon tiles, delta badges, mini visuals in KPI cards (bars, ring, sparkline, avatar stack);
+  - stroke status badges with a dot, avatar stacks with a +N;
+  - a segmented control, kbd chips, a switch, a copy button;
+  - a live dot, an availability strip, and the affectUI decision tray with tactile ink buttons.
+- **Nothing runs behind an element:**
+  - rails stop short of their markers;
+  - a highlight never covers a rail;
+  - a chart tooltip sits outside the plot, and the active column is an opaque band over the gridlines;
+  - selected fills are solid, never alpha over gridlines.
+- Floor: `work/cadence-app/product-align@2x.png` (`#/cproda`, r2, awaiting verdict).

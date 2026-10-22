@@ -83,3 +83,8 @@ Build new bentos on a replica's own primitives (`work/replicas/app/src/{LinearBe
 
 ## Founder verdict 2026-10-22 (cadence-bento-rico r1, partial)
 "Not bad, just meh. I like more rounded stuff." The Rico-grammar replicas were "cool". Bentos lean rounder: outer cards 24-32, inner wells concentric. Measure lunor.design's bentos (the founder's own style) and use them as the floor.
+
+## Founder verdict 2026-10-22 (cbentol r2, partial: "not bad... looking nice")
+- **No stray lines:** a connector, rule or gridline never crosses or touches another element. Break the gridline around a connector (panel-coloured backing). Selected or tinted fills are pre-blended solid colours, never alpha over rules ("in the maya like the line crosses over like cmonnnn").
+- **The section header is the heading alone.** No 5-word subtitle or sample note on the right of a bento header. Sample labelling lives in aria labels and DIRECTION.
+- Dark lunor grammar kept: r24 hero cell / r20 cells, 12px gap, product fragments cropped by the cell.
