@@ -16,7 +16,8 @@
 // nested radius), type (families, sizes, weights, h1 tuple), colour (OKLCH accent hue families, dark canvas chroma and
 // colourful pixel share), button grammar (one primary recipe, primaries in the hero, CTA height/radius, icon-led secondary),
 // hero composition (nothing between nav and h1, subtitle lines, CTA->product gap, product share and transform), scope & motion
-// (DIRECTION scope:/motion:/changes:/chip: lines; no running animation, loop or video when motion is none).
+// (DIRECTION scope:/motion:/changes:/chip: lines; no running animation, loop or video when motion is none), crop & fade
+// (text lines crossing a crop edge or half-faded by a mask; knowledge/founder/canon/designers-eye.md DE-01/DE-07).
 //
 // Thresholds: system/canon/<kind>.json (every key optional, ranges are [min,max]); FALLBACK below fills any missing key.
 // Calibration (2026-10-21). The aim was that accepted builds do not FAIL on measurement artefacts:
@@ -416,6 +417,93 @@ const diffShots = async (page, a, b, { W, H }) => page.evaluate(async ({ a, b, W
   return +(ch / n).toFixed(4)
 }, { a: 'data:image/png;base64,' + a.toString('base64'), b: 'data:image/png;base64,' + b.toString('base64'), W, H })
 
+// ---- crop & fade probe (knowledge/founder/canon/designers-eye.md DE-01, DE-07; founder 2026-10-22: "develop a designer's
+// eye for random clipping and half-visible things"). Works on TEXT LINES (Range client rects), because a visual bleeding
+// off the frame is a decision while a word cut by an edge or a fade is an accident.
+//  - crossing: a text line partly outside the viewport's left/right/top edge or a clipping ancestor's box (overflow not
+//    visible). Visible share between 2% and 98% counts; the fold bottom is exempt (products are meant to run off it),
+//    and lines fully hidden (< 2%) are ignored (scrollers, carousels).
+//  - half-faded: a text line under a mask-image ancestor whose effective mask alpha, measured from three screenshots
+//    (as is, mask removed, layer hidden: alpha = |as-is - hidden| / |unmasked - hidden| over ink pixels), either changes
+//    by > 0.35 across the line (a fade edge runs through the words) or averages 0.12-0.6 (the line is visibly half there).
+//    A gentle fold fade (Tempra h4a: alpha 1 -> 0.7 across 55px) varies < 0.1 per line and passes.
+const cropProbe = async (page, { W, H }) => {
+  const info = await page.evaluate(({ W, H }) => {
+    const tag = (el) => `${el.tagName.toLowerCase()}${typeof el.className === 'string' && el.className.trim() ? '.' + el.className.trim().split(/\s+/)[0] : ''}`.slice(0, 40)
+    const masked = [], crossing = [], lines = []
+    const tw = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT)
+    let n
+    while ((n = tw.nextNode())) {
+      const txt = n.textContent.replace(/\s+/g, ' ').trim(); if (!txt) continue
+      const el = n.parentElement; if (!el) continue
+      const cs = getComputedStyle(el); if (cs.visibility === 'hidden' || cs.display === 'none') continue
+      let op = 1; for (let a = el; a; a = a.parentElement) op *= +getComputedStyle(a).opacity; if (op < 0.05) continue
+      const rg = document.createRange(); rg.selectNodeContents(n)
+      for (const r of rg.getClientRects()) {
+        if (r.width < 2 || r.height < 2 || r.bottom <= 0 || r.top >= H || r.right <= 0 || r.left >= W) continue
+        let L = Math.max(r.left, 0), R = Math.min(r.right, W), T = Math.max(r.top, 0), B = r.bottom
+        const edges = []
+        if (r.left < -0.5) edges.push('viewport-left'); if (r.right > W + 0.5) edges.push('viewport-right'); if (r.top < -0.5) edges.push('viewport-top')
+        let mk = null
+        for (let a = el; a && a !== document.documentElement; a = a.parentElement) {
+          const s = getComputedStyle(a)
+          if (!mk && ((s.maskImage && s.maskImage !== 'none') || (s.webkitMaskImage && s.webkitMaskImage !== 'none'))) mk = a
+          if (a === el && s.overflow === 'visible') continue
+          const ox = s.overflowX !== 'visible', oy = s.overflowY !== 'visible'
+          if (!ox && !oy) continue
+          const b = a.getBoundingClientRect()
+          // an ellipsis truncation is a deliberate cut: clip it, do not report it
+          if (ox) { if (s.textOverflow !== 'ellipsis') { if (r.left < b.left - 0.5) edges.push(`${tag(a)} left`); if (r.right > b.right + 0.5) edges.push(`${tag(a)} right`) } L = Math.max(L, b.left); R = Math.min(R, b.right) }
+          if (oy) { if (r.top < b.top - 0.5) edges.push(`${tag(a)} top`); if (r.bottom > b.bottom + 0.5 && b.bottom < H - 0.5) edges.push(`${tag(a)} bottom`); T = Math.max(T, b.top); if (b.bottom < H - 0.5) B = Math.min(B, b.bottom) }
+        }
+        const share = Math.max(0, R - L) * Math.max(0, B - T) / (r.width * r.height)
+        const line = { text: txt.slice(0, 28), x: +r.left.toFixed(1), y: +r.top.toFixed(1), w: +r.width.toFixed(1), h: +r.height.toFixed(1) }
+        if (share > 0.02 && share < 0.98 && edges.length) crossing.push({ ...line, share: +share.toFixed(2), edge: edges[0] })
+        if (mk && share > 0.02) {
+          let k = masked.indexOf(mk); if (k < 0) { masked.push(mk); k = masked.length - 1 }
+          lines.push({ ...line, k, x: Math.max(0, line.x), w: Math.min(W, r.right) - Math.max(0, r.left), h: Math.min(H, r.bottom) - Math.max(0, r.top), y: Math.max(0, line.y) })
+        }
+      }
+    }
+    masked.forEach((m, i) => m.setAttribute('data-gate-mask', String(i)))
+    return { crossing, lines, nMasked: masked.length }
+  }, { W, H })
+  const faded = []
+  for (let k = 0; k < Math.min(info.nMasked, 8); k++) {
+    const ls = info.lines.filter((l) => l.k === k && l.w > 2 && l.h > 2); if (!ls.length) continue
+    const sel = `[data-gate-mask="${k}"]`
+    const shot = async () => (await page.screenshot({ scale: 'css' })).toString('base64')
+    const A = await shot()
+    const saved = await page.evaluate((sel) => { const e = document.querySelector(sel); const o = [e.style.maskImage, e.style.webkitMaskImage, e.style.opacity]; e.style.maskImage = 'none'; e.style.webkitMaskImage = 'none'; return o }, sel)
+    const Bs = await shot()
+    await page.evaluate((sel) => { document.querySelector(sel).style.opacity = '0' }, sel)
+    const Cs = await shot()
+    await page.evaluate(({ sel, saved }) => { const e = document.querySelector(sel); [e.style.maskImage, e.style.webkitMaskImage, e.style.opacity] = saved }, { sel, saved })
+    const res = await page.evaluate(async ({ A, Bs, Cs, ls, W, H }) => {
+      const load = async (s) => { const i = new Image(); i.src = 'data:image/png;base64,' + s; await i.decode(); const c = new OffscreenCanvas(W, H); const g = c.getContext('2d'); g.drawImage(i, 0, 0, W, H); return g.getImageData(0, 0, W, H).data }
+      const a = await load(A), b = await load(Bs), c = await load(Cs)
+      return ls.map((l) => {
+        const rows = []
+        for (let y = Math.floor(l.y); y < Math.min(H, Math.ceil(l.y + l.h)); y++) {
+          const al = []
+          for (let x = Math.floor(l.x); x < Math.min(W, Math.ceil(l.x + l.w)); x++) {
+            const i = (y * W + x) * 4; let num = 0, den = 0
+            for (let ch = 0; ch < 3; ch++) { num += Math.abs(a[i + ch] - c[i + ch]); den += Math.abs(b[i + ch] - c[i + ch]) }
+            if (den > 60) al.push(Math.min(1, num / den))
+          }
+          if (al.length >= 2) rows.push(al.reduce((s, v) => s + v, 0) / al.length)
+        }
+        if (rows.length < 2) return null
+        const mean = rows.reduce((s, v) => s + v, 0) / rows.length
+        return { ...l, min: +Math.min(...rows).toFixed(2), max: +Math.max(...rows).toFixed(2), mean: +mean.toFixed(2) }
+      }).filter(Boolean)
+    }, { A, Bs, Cs, ls, W, H })
+    for (const r of res) if (r.max - r.min > 0.35 || (r.mean > 0.12 && r.mean < 0.6)) faded.push(r)
+  }
+  await page.evaluate(() => document.querySelectorAll('[data-gate-mask]').forEach((e) => e.removeAttribute('data-gate-mask')))
+  return { crossing: info.crossing, faded, maskedLines: info.lines.length }
+}
+
 // ================= run =================
 const browser = await chromium.launch({ args: ['--use-angle=swiftshader', '--enable-unsafe-swiftshader'] })
 const ctx = await browser.newContext({ viewport: { width: W, height: H }, deviceScaleFactor: 2 })
@@ -443,6 +531,7 @@ await page.screenshot({ path: foldPng, timeout: 45000 }).catch((e) => { console.
 const cfgBase = { W, H, guessProduct: isHero || isSite, appKind: kind === 'product-ui' || kind === 'client-app' }
 const m = await page.evaluate(census, { ...cfgBase, wholePage: false })
 const px = await pixels(page, cssPng, { W, H })
+const crop = await cropProbe(page, { W, H })
 let fullPng = null, site = null, mobile = null
 if (isSite) {
   await page.evaluate(async () => { const h = document.documentElement.scrollHeight; for (let y = 0; y < h; y += innerHeight * 0.8) { scrollTo(0, y); await new Promise((r) => setTimeout(r, 140)) } scrollTo(0, 0); await new Promise((r) => setTimeout(r, 400)); document.getAnimations().forEach((a) => { try { if (a.effect.getComputedTiming().iterations !== Infinity) a.finish() } catch {} }) })
@@ -565,6 +654,8 @@ const census_buttons = (list, label, regionTest = () => true) => {
 add('align', 'align.vertical-centre', ok(!m.centring.off.length), `${m.centring.off.length}/${m.centring.checked}`, 'content of every control, pill, chip, badge and avatar sits vertically centred (<= 1px)', m.centring.off.slice(0, 8))
 add('align', 'align.horizontal-centre', ok(!m.centring.offX.length), `${m.centring.offX.length}/${m.centring.checked}`, 'centred boxes (icon-only, square, circle, justify/text-align centre) centre their content horizontally (<= 1px)', m.centring.offX.slice(0, 8))
 add('align', 'align.clipped', ok(!m.centring.clipped.length), m.centring.clipped.length, 'no content clipped by its own box (initials, labels)', m.centring.clipped.slice(0, 8))
+add('align', 'crop.text-crossing', ok(!crop.crossing.length), crop.crossing.length, 'no text line crosses a crop edge (viewport left/right/top, or a clipping box); the fold bottom is exempt (designers-eye DE-07)', crop.crossing.slice(0, 8).map((c) => `"${c.text}" ${Math.round(c.share * 100)}% visible at ${c.edge} (${c.x},${c.y})`))
+add('align', 'crop.text-half-faded', ok(!crop.faded.length), `${crop.faded.length}/${crop.maskedLines}`, 'no text line half-faded by a mask: alpha varies < 0.35 across the line and its mean is not 0.12-0.6 (designers-eye DE-01)', crop.faded.slice(0, 8).map((f) => `"${f.text}" alpha ${f.min}-${f.max} mean ${f.mean} at (${f.x},${f.y})`))
 const foldPrim = census_buttons(m.buttons, 'fold')
 if (site?.pageButtons) census_buttons(site.pageButtons, 'page')
 const navPrim = m.buttons.filter((b) => b.role === 'primary' && b.nav)
