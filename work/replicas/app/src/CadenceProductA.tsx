@@ -10,6 +10,7 @@ import {
   RiErrorWarningFill, RiShieldCheckLine, RiFileCopyLine, RiArrowDownSLine, RiGlobalLine, RiSunLine, RiCalendarCheckLine,
   RiArrowGoForwardLine, RiSettings3Line, RiQuestionLine, RiTimeLine, RiFlashlightLine,
 } from '@remixicon/react'
+import { Mark } from './TempraLogo'
 
 // ---- role tokens (AlignUI slate, light) ----
 const T = {
@@ -46,10 +47,12 @@ function Stack({ ids, s = 22, more }: { ids: string[]; s?: number; more?: number
 }
 
 // ---- controls (AlignUI 36 / r10; compact 32 / r10) ----
-function Btn({ kind = 'stroke', h = 36, icon, children, kbd }: { kind?: 'stroke' | 'primary' | 'ink'; h?: number; icon?: ReactNode; children?: ReactNode; kbd?: string }) {
+function Btn({ kind = 'stroke', h = 36, icon, children, kbd }: { kind?: 'stroke' | 'primary' | 'ink' | 'soft'; h?: number; icon?: ReactNode; children?: ReactNode; kbd?: string }) {
   const base: CSSProperties = { ...row, gap: 6, height: h, padding: `0 ${h === 36 ? 14 : 12}px 0 ${icon ? (h === 36 ? 10 : 9) : h === 36 ? 14 : 12}px`, borderRadius: 10, fontSize: 14, fontWeight: 500, letterSpacing: '-0.006em', whiteSpace: 'nowrap', boxSizing: 'border-box', flex: 'none' }
   const look: Record<string, CSSProperties> = {
     stroke: { background: T.white, color: T.strong, boxShadow: ringXs() },
+    // Tempra's own suggestions: the violet 'lighter' material, so the page keeps one ink primary
+    soft: { background: T.v50, color: T.vInk, boxShadow: `inset 0 0 0 1px ${T.v100}` },
     primary: { background: `linear-gradient(180deg, rgba(255,255,255,0.14), rgba(255,255,255,0)) ${T.v}`, color: '#fff', boxShadow: `0 0 0 1px #6B3FE8, inset 0 1px 0 rgba(255,255,255,0.20), 0 1px 2px rgba(77,36,196,0.30), 0 4px 10px -3px rgba(77,36,196,0.28)` },
     ink: { background: 'linear-gradient(#323137, #201e25) padding-box, linear-gradient(#4b4951, #31303a, #18171b) border-box', border: '1px solid transparent', color: '#fafafa', boxShadow: '0 0 0 1px #0d0d0d, 0 2px 4px rgb(0 0 0 / 0.10)' },
   }
@@ -105,9 +108,9 @@ function Sidebar() {
     <aside style={{ width: 264, flex: 'none', boxSizing: 'border-box', padding: '20px 16px 16px', display: 'flex', flexDirection: 'column' }}>
       {/* workspace switcher */}
       <div style={{ ...row, gap: 12, padding: '0 4px 0 6px' }}>
-        <span style={{ display: 'grid', placeItems: 'center', width: 40, height: 40, borderRadius: 12, background: `linear-gradient(160deg, #9B7BFF, ${T.v} 55%, #5B2CC9)`, boxShadow: `inset 0 0 0 1px rgba(255,255,255,0.18), 0 1px 2px rgba(77,36,196,0.3), 0 4px 10px -4px rgba(77,36,196,0.4)`, color: '#fff' }}><RiCalendarCheckLine size={20} /></span>
+        <span style={{ display: 'grid', placeItems: 'center', width: 40, height: 40, borderRadius: 12, background: 'linear-gradient(#2f2f33, #18181b)', boxShadow: '0 0 0 1px #0d0d0f, inset 0 1px 0 rgba(255,255,255,0.12), 0 1px 2px rgba(14,18,27,0.2)', color: '#fff' }}><Mark size={19} /></span>
         <span style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: 2 }}>
-          <span style={{ fontSize: 14, fontWeight: 500, lineHeight: '20px' }}>Cadence</span>
+          <span style={{ fontSize: 14, fontWeight: 500, lineHeight: '20px' }}>Tempra</span>
           <span style={{ fontSize: 12, lineHeight: '16px', color: T.soft6 }}>Fernhill · Team plan</span>
         </span>
         <span style={{ display: 'grid', placeItems: 'center', width: 28, height: 28, borderRadius: 8, background: T.white, boxShadow: ringXs(), color: T.soft6 }}><RiExpandUpDownLine size={16} /></span>
@@ -251,7 +254,7 @@ const DAY: Ev[] = [
   { t: '09:00', dur: '15 min', title: 'Standup', meta: 'Product design · Meet', state: 'done', people: ['L', 'A', 'M'], more: 3 },
   { t: '10:00', dur: '30 min', title: '1:1 Maya / Leo', meta: 'Room 4B', state: 'done', people: ['M', 'L'] },
   { t: '10:30', dur: '45 min', title: 'Design crit · v2.4', meta: 'Meet · started 12 min ago', state: 'now', people: ['T', 'A', 'J'], more: 2, join: true },
-  { t: '13:00', dur: '45 min', title: 'Customer interview', meta: 'Zoom · notes by Cadence', state: 'next', people: ['S', 'L'] },
+  { t: '13:00', dur: '45 min', title: 'Customer interview', meta: 'Zoom · notes by Tempra', state: 'next', people: ['S', 'L'] },
   { t: '14:30', dur: '1 h', title: 'Roadmap review', meta: 'Room 2A', state: 'next', people: ['R', 'M', 'L'], chip: <Chip icon={<RiArrowGoForwardLine size={13} />}>Moved from 11:00</Chip> },
   { t: '16:00', dur: '2 h', title: 'Prototype pass', meta: 'Focus block · notifications off', state: 'next', people: ['L'], chip: <Chip icon={<RiLockLine size={13} />} grey>Protected</Chip> },
 ]
@@ -311,7 +314,7 @@ function Today() {
               </div>
               <div style={{ marginLeft: 'auto', ...row, gap: 12 }}>
                 <Stack ids={e.people} more={e.more} />
-                {e.join ? <Btn kind="ink" h={32} icon={<RiVideoOnLine size={16} />}>Join</Btn> : <span style={{ width: 32, height: 32, display: 'grid', placeItems: 'center', color: T.faint }}><RiMore2Line size={18} /></span>}
+                {e.join ? <Btn h={32} icon={<RiVideoOnLine size={16} />}>Join</Btn> : <span style={{ width: 32, height: 32, display: 'grid', placeItems: 'center', color: T.faint }}><RiMore2Line size={18} /></span>}
               </div>
             </div>
           </div>
@@ -327,7 +330,7 @@ function Decision({ title, sub, due, a, b }: { title: string; sub: string; due?:
     <div style={{ padding: '16px 16px 16px' }}>
       <div style={{ ...row, gap: 8, fontSize: 14, lineHeight: '20px', fontWeight: 500 }}>{title}{due && <span style={{ height: 20, padding: '0 6px', borderRadius: 6, background: T.weak, boxShadow: `inset 0 0 0 1px ${T.line}`, display: 'grid', placeItems: 'center', fontSize: 12, fontWeight: 500, color: T.sub }}>{due}</span>}</div>
       <div style={{ fontSize: 13, lineHeight: '18px', color: T.soft6, marginTop: 4 }}>{sub}</div>
-      <div style={{ ...row, gap: 8, marginTop: 14 }}><Btn kind="ink" h={32}>{a}</Btn><Btn h={32}>{b}</Btn></div>
+      <div style={{ ...row, gap: 8, marginTop: 14 }}><Btn kind="soft" h={32}>{a}</Btn><Btn h={32}>{b}</Btn></div>
     </div>
   )
 }
@@ -342,7 +345,7 @@ function Side() {
         <div style={{ borderRadius: 16, background: T.white, boxShadow: `0 0 0 1px ${T.line}, 0 1px 2px rgba(10,13,20,0.04)` }}>
           <Decision title="Move Hiring sync to Friday?" sub="Sam is out Thursday. Friday 11:00 is free for all five." a="Move it" b="Keep Thursday" />
           <div style={{ height: 1, background: T.line }} />
-          <Decision title="Ana wants 45 min next week" due="Due Fri" sub="Cadence picked Tue 14:00. No focus block moves." a="Accept" b="Other times" />
+          <Decision title="Ana wants 45 min next week" due="Due Fri" sub="Tempra picked Tue 14:00. No focus block moves." a="Accept" b="Other times" />
         </div>
         <div style={{ ...row, gap: 6, height: 36, padding: '0 12px', fontSize: 12, color: T.soft6 }}><RiShieldCheckLine size={15} />Nothing with an external guest moves without you</div>
       </section>
@@ -351,7 +354,7 @@ function Side() {
           <Tile><RiLinksLine size={18} /></Tile>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 2, flex: 1 }}>
             <span style={{ fontSize: 14, fontWeight: 500, lineHeight: '20px' }}>45 min intro</span>
-            <span style={{ fontSize: 12, lineHeight: '16px', color: T.soft6, fontFamily: '"Geist Mono Variable", ui-monospace, monospace' }}>cadence.so/leo/intro</span>
+            <span style={{ fontSize: 12, lineHeight: '16px', color: T.soft6, fontFamily: '"Geist Mono Variable", ui-monospace, monospace' }}>tempra.so/leo/intro</span>
           </div>
           <span style={{ display: 'grid', placeItems: 'center', width: 32, height: 32, borderRadius: 10, background: T.white, boxShadow: ringXs(), color: T.sub }}><RiFileCopyLine size={16} /></span>
         </div>
@@ -469,14 +472,14 @@ export function CadenceAppFrame({ style, inHero }: { style?: CSSProperties; inHe
   return (
   <div data-product style={{ position: 'relative', width: 1472, height: 1072, ...style, borderRadius: 36, background: T.frame, boxShadow: '0 0 0 1px rgba(14,18,27,0.07), 0 1px 2px rgba(14,18,27,0.04), 0 24px 56px -16px rgba(14,18,27,0.16), 0 8px 20px -8px rgba(14,18,27,0.06)', display: 'flex' }}>
     <Sidebar />
-    <Main aria-label="Cadence overview, sample data" style={{ position: 'relative', margin: '8px 8px 8px 0', flex: 1, borderRadius: 28, background: T.white, boxShadow: `0 0 0 1px ${T.line}, 0 1px 3px rgba(14,18,27,0.04)`, padding: '20px 28px 24px', boxSizing: 'border-box', display: 'flex', flexDirection: 'column' }}>
+    <Main aria-label="Tempra overview, sample data" style={{ position: 'relative', margin: '8px 8px 8px 0', flex: 1, borderRadius: 28, background: T.white, boxShadow: `0 0 0 1px ${T.line}, 0 1px 3px rgba(14,18,27,0.04)`, padding: '20px 28px 24px', boxSizing: 'border-box', display: 'flex', flexDirection: 'column' }}>
       <Header inHero={inHero} />
       <div style={{ height: 1, background: T.line, margin: '20px 0' }} />
       <div style={{ display: 'flex', gap: 16 }}>
         <Kpi icon={<RiCalendarCheckLine size={18} />} label="Meetings this week" value="18" delta="−3" note="vs last week" viz={<MiniBars v={[18, 24, 14, 28, 20, 10, 6]} hi={3} />} />
         <Kpi icon={<RiFocus3Line size={18} />} label="Focus kept" value="11h 30m" delta="+2h" note="77% of goal" viz={<Ring pct={0.77} />} />
         <Kpi icon={<RiTimeLine size={18} />} label="Time to book" value="4" unit=" min" delta="−6 min" note="median" viz={<Spark />} />
-        <Kpi icon={<RiSparkling2Fill size={18} />} label="Conflicts settled" value="7" delta="7 of 7" note="by Cadence" viz={<Stack ids={['A', 'M', 'R']} s={24} more={4} />} />
+        <Kpi icon={<RiSparkling2Fill size={18} />} label="Conflicts settled" value="7" delta="7 of 7" note="by Tempra" viz={<Stack ids={['A', 'M', 'R']} s={24} more={4} />} />
       </div>
       <div style={{ display: 'flex', gap: 16, marginTop: 16 }}><Today /><Side /></div>
       <div style={{ display: 'flex', gap: 16, marginTop: 16 }}><FocusChart /><Team /></div>

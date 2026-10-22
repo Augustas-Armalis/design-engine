@@ -131,7 +131,7 @@ function WeekFragment() {
       <div style={abs(GUT + COL + 2, 92, 2 * COL - 4, 200, { borderRadius: 12, background: '#1d1d21', boxShadow: '0 0 0 1px #303036, 0 18px 40px -10px rgba(0,0,0,0.7)' })}>
         <div style={abs(16, 14, 284, 20, { display: 'flex', alignItems: 'center', gap: 8 })}>
           <div style={{ width: 10, height: 10, borderRadius: 3, background: V }} />
-          <span style={{ fontSize: 12.5, color: SUB, flex: 1 }}>Suggested by Cadence</span>
+          <span style={{ fontSize: 12.5, color: SUB, flex: 1 }}>Suggested by Tempra</span>
           <RiCloseLine size={14} color={MUTE} />
         </div>
         <div style={abs(16, 44, 284, 20, { fontSize: 14.5, lineHeight: '20px', fontWeight: 500, color: INK, letterSpacing: '-0.01em' })}>Roadmap review</div>
@@ -169,7 +169,7 @@ function AskFragment() {
       <div style={abs(0, 116, 344, 260, { borderRadius: 14, background: PANEL, boxShadow: ring() })}>
         <div style={abs(14, 14, 316, 22, { display: 'flex', alignItems: 'center', gap: 8 })}>
           <div style={{ width: 22, height: 22, borderRadius: 7, background: STEP2, display: 'flex', alignItems: 'center', justifyContent: 'center' }}><RiSparkling2Fill size={12} color={INK} /></div>
-          <span style={{ fontSize: 13, fontWeight: 500, color: INK }}>Cadence</span>
+          <span style={{ fontSize: 13, fontWeight: 500, color: INK }}>Tempra</span>
           <span style={{ fontSize: 12.5, color: MUTE }}>found 3 times</span>
         </div>
         <div style={abs(14, 46, 316, 40, { fontSize: 13.5, lineHeight: '20px', color: SUB })}>Thursday works for all four, and nobody's focus block has to move.</div>
@@ -261,7 +261,7 @@ function ConflictFragment() {
       </div>
       {/* the reason */}
       <div style={abs(56, 160, 298, 66, { borderRadius: 10, background: STEP, boxShadow: `inset 0 0 0 1px ${STEP2}` })}>
-        <div style={abs(10, 9, 270, 16, { display: 'flex', alignItems: 'center', gap: 6, fontSize: 12, lineHeight: '16px', fontWeight: 500, color: INK })}><RiSparkling2Fill size={11} color={V} />Why Cadence moved it</div>
+        <div style={abs(10, 9, 270, 16, { display: 'flex', alignItems: 'center', gap: 6, fontSize: 12, lineHeight: '16px', fontWeight: 500, color: INK })}><RiSparkling2Fill size={11} color={V} />Why Tempra moved it</div>
         <div style={abs(10, 29, 280, 34, { fontSize: 12, lineHeight: '17px', color: SUB })}>Hiring sync has an external guest. 15:30 is free for Maya and Theo.</div>
       </div>
     </div>
@@ -299,19 +299,19 @@ export function CadenceBentoSection() {
       <h2 id="cbl-h2" style={abs(GX, 120, 640, undefined, { margin: 0, fontSize: 40, lineHeight: '46px', fontWeight: 500, letterSpacing: '-0.03em', color: INK })}>A Calendar That Finds<br />The Hour For Everyone</h2>
 
       <Cell x={GX} y={GY} w={796} h={440} r={24} label="Sample week view: Thursday 13:00 to 13:45 is the one slot all four guests have free"
-        title="The Hour That Suits Everyone" desc="Cadence reads every guest's calendar and time zone, then holds the one slot free for all.">
+        title="The Hour That Suits Everyone" desc="Tempra reads every guest's calendar and time zone, then holds the one slot free for all.">
         <WeekFragment />
       </Cell>
-      <Cell x={GX + 808} y={GY} w={392} h={440} r={20} label="Sample request typed in plain words and Cadence's answer with three ranked times"
-        title="Ask In Plain Words" desc="Type who and how long. Cadence answers with a time, not a list of maybes.">
+      <Cell x={GX + 808} y={GY} w={392} h={440} r={20} label="Sample request typed in plain words and Tempra's answer with three ranked times"
+        title="Ask In Plain Words" desc="Type who and how long. Tempra answers with a time, not a list of maybes.">
         <AskFragment />
       </Cell>
       <Cell x={GX} y={GY + 452} w={392} h={360} r={20} fade={0} label="Sample focus chart: meetings and protected focus hours for each day of the week"
-        title="Focus Time, Protected" desc="Mornings stay blocked. Cadence books around them and shows the hours you kept.">
+        title="Focus Time, Protected" desc="Mornings stay blocked. Tempra books around them and shows the hours you kept.">
         <FocusFragment />
       </Cell>
       <Cell x={GX + 404} y={GY + 452} w={392} h={360} r={20} fade={0} label="Sample conflict: a 1:1 clashing with a fixed hiring sync is moved to 15:30, with the reason"
-        title="Conflicts Settle Themselves" desc="When two meetings collide, Cadence moves the flexible one and says why.">
+        title="Conflicts Settle Themselves" desc="When two meetings collide, Tempra moves the flexible one and says why.">
         <ConflictFragment />
       </Cell>
       <Cell x={GX + 808} y={GY + 452} w={392} h={360} r={20} fade={72} label="Sample availability settings: work, personal and team calendars merged with working hours and time zone"
@@ -327,7 +327,7 @@ const srOnly: CSSProperties = { position: 'absolute', width: 1, height: 1, paddi
 export default function CadenceBentoL() {
   return (
     <main style={{ background: PAGE, width: 1440 }}>
-      <h1 style={srOnly}>Cadence, an AI team calendar (concept, sample data)</h1>
+      <h1 style={srOnly}>Tempra, an AI team calendar (concept, sample data)</h1>
       <CadenceBentoSection />
     </main>
   )
