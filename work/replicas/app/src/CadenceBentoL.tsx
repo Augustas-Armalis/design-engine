@@ -36,7 +36,7 @@ function Cell({ x, y, w, h, r, title, desc, label, children, fade = 56 }: { x: n
 }
 
 const Avatar = ({ t, bg, s = 20 }: { t: string; bg: string; s?: number }) => (
-  <div style={{ width: s, height: s, borderRadius: 999, background: bg, boxShadow: `0 0 0 1.5px ${PANEL}`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: s * 0.46, fontWeight: 500, color: INK, lineHeight: 1 }}>{t}</div>
+  <div style={{ width: s, height: s, borderRadius: 999, background: bg, boxShadow: `0 0 0 1.5px ${PANEL}`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 10, fontWeight: 500, color: INK, lineHeight: 1 }}>{t}</div>
 )
 const Chip = ({ children, h = 24, style }: { children: ReactNode; h?: number; style?: CSSProperties }) => (
   <div style={{ height: h, padding: '0 8px', borderRadius: 8, background: STEP, display: 'inline-flex', alignItems: 'center', gap: 5, fontSize: 12, color: SUB, whiteSpace: 'nowrap', ...style }}>{children}</div>
@@ -86,7 +86,7 @@ function WeekFragment() {
       </div>
       <div style={abs(316, 10, undefined, 28, { borderRadius: 999, background: STEP, display: 'flex', alignItems: 'center', gap: 8, padding: '0 11px 0 5px', whiteSpace: 'nowrap' })}>
         <div style={{ display: 'flex' }}>
-          {([['M', '#3b3b41'], ['T', '#34343a'], ['A', '#2f2f35'], ['Y', '#45454c']] as const).map(([t, bg], i) => <div key={t} style={{ marginLeft: i ? -5 : 0 }}><Avatar t={t} bg={bg} s={18} /></div>)}
+          {([['M', '#3b3b41'], ['T', '#34343a'], ['A', '#2f2f35'], ['Y', '#45454c']] as const).map(([t, bg], i) => <div key={t} style={{ marginLeft: i ? -5 : 0 }}><Avatar t={t} bg={bg} s={20} /></div>)}
         </div>
         <span style={{ fontSize: 12.5, color: SUB }}>Finding 45 min for 4</span>
       </div>
@@ -273,10 +273,10 @@ function AvailabilityFragment() {
     [RiTimeLine, 'Working hours', '09:00 – 17:30'], [RiGlobalLine, 'Time zone', 'London'], [RiMoonLine, 'Never book', 'After 18:00'],
   ]
   return (
-    <div data-product style={abs(44, 118, 380, 300, { transform: 'perspective(900px) rotateX(22deg) rotateZ(9deg)', transformOrigin: '0 0' })}>
-      <div style={abs(0, 0, 380, 300, { borderRadius: 14, background: PANEL, boxShadow: ring() })} />
+    <div data-product style={abs(34, 118, 318, 300, { transform: 'perspective(900px) rotateX(22deg) rotateZ(9deg)', transformOrigin: '0 0' })}>
+      <div style={abs(0, 0, 318, 300, { borderRadius: 14, background: PANEL, boxShadow: ring() })} />
       {rows.map(([I, l, v], i) => (
-        <div key={l} style={abs(8, 8 + i * 44, 364, 40, {
+        <div key={l} style={abs(8, 8 + i * 44, 302, 40, {
           borderRadius: 9, display: 'flex', alignItems: 'center', gap: 10, padding: '0 12px 0 8px', boxSizing: 'border-box',
           background: i === 1 ? STEP : 'transparent', boxShadow: i === 1 ? `inset 0 0 0 1px ${STEP2}` : 'none',
         })}>
@@ -289,7 +289,8 @@ function AvailabilityFragment() {
   )
 }
 
-export default function CadenceBentoL() {
+// The section alone, for composing into a landing page (the page's hero owns the h1).
+export function CadenceBentoSection() {
   const GX = 120, GY = 268
   return (
     <section data-subject aria-labelledby="cbl-h2" style={{ ...font, position: 'relative', width: 1440, height: 1200, background: PAGE, color: INK, overflow: 'hidden' }}>
@@ -317,5 +318,16 @@ export default function CadenceBentoL() {
         <AvailabilityFragment />
       </Cell>
     </section>
+  )
+}
+
+// Standalone route (#/cbentol): a page needs one main landmark and one h1; the h1 is visually hidden so the section renders as designed.
+const srOnly: CSSProperties = { position: 'absolute', width: 1, height: 1, padding: 0, margin: -1, overflow: 'hidden', clip: 'rect(0 0 0 0)', whiteSpace: 'nowrap', border: 0, color: INK, fontSize: 16, lineHeight: 1.2 }
+export default function CadenceBentoL() {
+  return (
+    <main style={{ background: PAGE, width: 1440 }}>
+      <h1 style={srOnly}>Cadence, an AI team calendar (concept, sample data)</h1>
+      <CadenceBentoSection />
+    </main>
   )
 }
