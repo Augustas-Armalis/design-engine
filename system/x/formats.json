@@ -185,7 +185,8 @@
       "feed": "3-up: strip 1 shows as a 7:8 tile (its middle 56%), strips 2-3 as 16:9 tiles (their middle 28%); the lightbox shows each whole. Lead with the strongest strip",
       "crop": "equal thirds of the full canvas; seams fall in gutters where they can (post.seams WARN)",
       "seriesStage": "strips",
-      "multiplierKey": "carousel-3-vertical-thirds"
+      "multiplierKey": "carousel-3-vertical-thirds",
+      "note": "Marcel cuts at exact thirds, 1:2 strips on #dddddd (dark #3c3c3c) with the window inset L=R 5.6%, T=B 2.6% of the composite (canon post-component, KC-22); ours use the product's own grey canvas at 56px insets"
     },
     {
       "id": "full-plus-strips",
@@ -421,6 +422,36 @@
       "crop": "four 1200x675 section crops sharing one canvas tone",
       "seriesStage": "site",
       "multiplierKey": "carousel-4-mixed-crops"
+    },
+    {
+      "id": "desktop-composite",
+      "title": "the app window on a desktop wallpaper with menu bar and dock",
+      "media": 1,
+      "canvas": [
+        4096,
+        2660
+      ],
+      "ratioRange": [
+        1.5,
+        1.6
+      ],
+      "kinds": [
+        "product-ui"
+      ],
+      "render": {
+        "via": "to build: a #/desktop?src=<route> frame (wallpaper, menu bar, dock) like #/xframe",
+        "scale": 2.1
+      },
+      "preflight": {
+        "kind": "product-ui",
+        "artboard": true
+      },
+      "xEngineFormat": "single-still",
+      "multiplierKey": "single-landscape",
+      "feed": "single landscape 1.54:1",
+      "crop": "the 1440 window at ~2.1x, 74% of the width; insets L=R 12.8%, T 6.1%, B 12.4%; window radius 15-18 CSS, no added shadow (canon post-component, KC-21)",
+      "seriesStage": "full",
+      "note": "Marcel's best product-screen format (43.2k median views, knowledge/web/kargul-corpus-2026-10.md KC-21); not rendered yet: no asset carries it until the frame route exists"
     }
   ]
 }

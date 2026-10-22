@@ -26,7 +26,7 @@ Decided defaults, 2026-10-21. Evidence: `founder-taste L<n>`, the accepted Tande
 | Canvas | solid near-white `#fbfbfb` (corners std <= 5, chroma <= 14 on 0-255); a soft spotlight centred over the component is allowed if the corners stay solid; dark work on `#0a`-`#111` | L509, L515; XP-08 |
 | Tray and greys | tray `#f6f6f6` (never `#f0f0f0`), rings at 6-6.5% ink, tiles `#f8f8f8`; tray strip narrates the state; card-in-tray inset 4-8px, tray radius = card radius + inset | L509; BN-08 |
 | Crafted object | at least one tactile object (date tile, raised accent button: ring + inner top highlight + contact + soft drop) | L515 |
-| Copy | one short line where a paragraph would go; no headline text in the media; caption carries the words (3-8 words, sentence case) | L509; XP-12, XP-13 |
+| Copy | one short line where a paragraph would go; no headline text in the media; the caption carries the words: lowercase, 4-9 words, one move in the studio register (`knowledge/x/caption-patterns.md`: name the thing, a "this {part} is ..." callout, a standard or principle line, a superlative only on the founder's own account), never an explanation of what the design does, never a question; "concept" and any link go in the first reply | L509; XP-12; ledger `x-captions` r1; CP-01..16 |
 | Content | believable, coherent names and numbers; labelled sample where it could be mistaken | XP-20 |
 | Cursor | real Lucide `MousePointer2`, travels with intent, presses and releases in sync with the component's phases | L343; XP-10 |
 | Type and edges | one family (Inter display cut), one edge per box, <= 3 shadow recipes, concentric radii, squircles | L373, L452, L467 |
@@ -50,6 +50,7 @@ Decided defaults, 2026-10-21. Evidence: `founder-taste L<n>`, the accepted Tande
 | Motion (audit 4.1 "post: loop-only-if-asked") | still | loop when motion is named in the request | L509 ("ship the component as an 8-12s loop"), L343 ("animate it too" was that brief's ask, not a default) |
 | Canvas | solid `#fbfbfb` (+ optional centred spotlight, corners solid) | none | L503 ("sits on a rich field": halftone/dither/grain fields fail XP-08 and the design view) |
 | Greys | `#f6f6f6` tray, 6-6.5% rings | — | affectUI's measured `#f0f0f0` (L509 "grays a bit dark") |
+| Captions | lowercase studio register, one move, 4-9 words (founder 2026-10-22 on our explanatory captions: "you didn't study like normal marcel rico basit other style ones... it's just ass") | — | XP-13 "3-8 words, sentence case" for the founders' accounts; the four explanatory "voices" of the first caption-voice.md |
 
 ## Never (rejected, with evidence)
 - A small card on flat grey with a few big empty bars (Overlap post, L503 "too hollow").
@@ -58,6 +59,8 @@ Decided defaults, 2026-10-21. Evidence: `founder-taste L<n>`, the accepted Tande
 - Off-centre forms, mixed roundness, dark greys (Expense v1/v2, L509, L512).
 - Gradient blobs, wallpapers, device frames or browser chrome behind a **component** (XP-08). A full product-screen post may use the desktop-wallpaper composite (KC-21): it is Marcel's best format at a 43.2k median, and the founder's L509/L515 canvas rules concern component posts.
 - Flat white cards with UI inside and no styling (Cadence event card v1, L515).
+- Captions that explain the design ("each cell shows one thing the product does. no filler cells.": ledger `x-captions` r1).
+- Anything learned from the larpo-x-engine's own auto-made posts: their concept heroes, title formats ("landing page concept for ...", "a or b?", "... light or dark?") and 16:9 template layouts (ledger `x-engine-posts` r1: "stupid as fuck and shall never be like that"). They are negative evidence only.
 
 ## Pre-delivery checklist
 1. Scope: one component, still unless motion was asked.
