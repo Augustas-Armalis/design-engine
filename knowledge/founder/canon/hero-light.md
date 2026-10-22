@@ -116,3 +116,9 @@ These replace the numbers above wherever they conflict. Source: `knowledge/web/l
 - **Below the CTAs:** proof or a product action only (KH-10).
 - **Layout:** pick the family first and never repeat the last build's family or visual world (KH-02). Recipes: `kargul-heroes.md`.
 - **Light and colour:** in dark heroes the light comes from the visual itself; in light heroes colour rises from the bottom or sides, and copy sits on near-white (KH-12/13). One accent, in ≤ 3 places.
+
+## Founder verdict 2026-10-22 (h4a r1, partial: "finally sth new and getting somewhere")
+- **The fold ends on purpose.** The product either dissolves into the field (a mask fade over its last ~190px) or is cut on a deliberate line. Never an accidental hard crop ("no fade bottom or if not then proper cut off").
+- **Whole or absent:** no element may be half-faded by a mask, clipped by the page edge, or partly hidden ("random stuff visible"). Decorative chips sit outside every mask, in inner columns, at least 16px from the page edge. A designer's-eye pass before delivery hunts for exactly this.
+- **Replicate to learn, then move away.** Take one structure and the numbers from a reference. The field, signature visual, brand, mark, name and copy are ours. Never a 1:1 layout with a re-skin ("DONT MAKE IT ONE TO ONE COPY CUZ IT THEN GETS CAUGHT").
+- **Product in a hero:** one ink primary per view. The product's AI-suggested actions use a soft accent material, and the colour budget stays calm (founder: "buttons and colorways... sth is off" when four black buttons and several hues met in one view).
