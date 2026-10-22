@@ -130,7 +130,7 @@ These replace the numbers above wherever they conflict. Source: `knowledge/web/l
 - **h1:** 56/500/-0.032em, lh 62.
 
 ## Founder verdict 2026-10-22 (h4a r5-r6: "okay now it's wayy better... but now good")
-- **No gimmick pill above the h1.** An avatar-stack "fact" pill read "too AI and stupid". When the product in the fold proves the point, the nav sits straight over the h1 (canon rule 6 holds).
+- **Above the h1: an announcement pill, never a gimmick.** The avatar-stack pill read "too AI and stupid", but the fold read "empty" without any element (r6). So use a plain announcement: 32px pill, a soft accent "New" tag inset 4px, one product-fact line, an arrow. No avatars, no metrics. The gap to the h1 equals h1 to subtitle (16).
 - **Optical centring:** button labels are lifted 1px (Inter's ink sits low in a centred line box). The founder caught the geometric version: "top padding looks bigger than the bottom".
 - **Rounder controls:** 36px nav buttons r13, 46px CTAs r16 (bands widened in `system/canon/hero-light.json`).
 - **Avatar stacks** overlap by 17% of their size, so no initial is half-covered.
