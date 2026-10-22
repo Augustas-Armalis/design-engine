@@ -122,3 +122,9 @@ These replace the numbers above wherever they conflict. Source: `knowledge/web/l
 - **Whole or absent:** no element may be half-faded by a mask, clipped by the page edge, or partly hidden ("random stuff visible"). Decorative chips sit outside every mask, in inner columns, at least 16px from the page edge. A designer's-eye pass before delivery hunts for exactly this.
 - **Replicate to learn, then move away.** Take one structure and the numbers from a reference. The field, signature visual, brand, mark, name and copy are ours. Never a 1:1 layout with a re-skin ("DONT MAKE IT ONE TO ONE COPY CUZ IT THEN GETS CAUGHT").
 - **Product in a hero:** one ink primary per view. The product's AI-suggested actions use a soft accent material, and the colour budget stays calm (founder: "buttons and colorways... sth is off" when four black buttons and several hues met in one view).
+
+## Founder verdict 2026-10-22 (h4a r2, partial)
+- **Fold exit = progressive blur, no colour:** four backdrop-blur bands (2/4/8/14px), each masked to start lower, then a fade to the page colour. Never a saturated glow under the product ("so stupid and vibrant... either blur fade out or none").
+- **Background visual stays quiet:** a fine 20px dot lattice at the sides only, masked clear of the copy and the nav, with at most four lit points carrying meaning. No grids of chips around the copy ("shouldn't be so distracting... I liked the points or bubbles").
+- **Nav:** a 72px band on the product frame's edges. Wordmark left, links centred 15/450, and a 36px "Log in" ghost + "Sign up" white pair on the right. No full-width rule.
+- **h1:** 56/500/-0.032em, lh 62.
