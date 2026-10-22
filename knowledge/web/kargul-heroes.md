@@ -9,6 +9,8 @@ replicas: work/replicas/KARGUL-HEROES-NOTES.md (#/kheroa..#/kherod; Gopher, Volc
 companions: kargul-micro-details.md (KMD, product UI), chatsheet-live-study.md (CSL), lunor-founder-style.md (LN), hero-craft-study-2026-10.md (HC), ../founder/canon/hero-light.md
 ---
 
+> **Corrected 2026-10-22 by the full corpus.** See `kargul-corpus-2026-10.md` §8. The bigger sample corrects KH-03/04/08/09/19/29 and families; use the corrected numbers there.
+
 # Kargul heroes: what he actually does in the first fold
 
 **Why this note exists.** The founder rejected cadence-hero r1 and r2 (2026-10-22) as empty, repetitive and visually idea-less. His instruction was "Marcel heroes are what you should take inspiration from and actually build on ... Marcel has hundreds of designs ... you didn't do any research". This is that research. Every hero fold that Kargul Studio has published is here: case studies, the swipe file, X and live client sites. Each was measured from the best original available and sorted into a family, then four were rebuilt to registration.

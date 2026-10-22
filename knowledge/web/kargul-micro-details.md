@@ -9,6 +9,8 @@ tokens: system/product-ui/kargul-micro-tokens.json
 evidence: knowledge/benchmarks/kargul-studio-2026-10/ (CREDITS.md, cases.json, _scripts/), knowledge/benchmarks/kargul-x/latest/ + posts-latest.json
 ---
 
+> **Corrected 2026-10-22 by the full corpus.** See `kargul-corpus-2026-10.md` §8. The bigger sample corrects KMD-01/03/10/11/16/18 and several element values; use the corrected numbers there.
+
 # Kargul Studio micro-details, measured
 
 **The answer in one paragraph.** His screens look professional because the small values come from one closed system, not from taste per component. The greys are a published palette (they match the AlignUI neutral and gray ladders hex for hex: `#171717 #5c5c5c #7b7b7b #a3a3a3 #d1d1d1 #ebebeb #f7f7f7`, navy `#0e121b #181b25 #222530 #717784 #99a0ae`), and the text ladder is the same in light and dark when written as ink alpha (1 / .70 / .52 / .38 / .19). Separation is a 1px ring almost everywhere: a resting light card has no blur shadow at all, only a `#ececec` ring whose bottom edge is about 3% darker; a control adds a 2px-blur drop at 4-5%; only floating layers (popover 13px blur at 5.5%, hover card two layers, modal on a scrim) get real shadow, and dark mode gets none. Colour lives in pairs: a tint fill plus very dark text of the same hue (`#ffebec`/`#681219`), mint avatars with deep-teal initials, outlined status chips in dark. Each product owns one radius family (Clokora 3-9px, UniOps 6-20px and pill nav, AM Trades 4.5-16px) and one control height (32px in AM, 30 in the CRM, 34 in CopeCart). Icons sit one step dimmer than the label next to them. Numbers are regular weight at 28px, not bold. Those are the "tiny stuff" the founder means; every value below has a file and a crop.

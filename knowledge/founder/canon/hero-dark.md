@@ -73,7 +73,23 @@ Decided defaults, 2026-10-21. Evidence: `founder-taste L<n>` and the accepted Ki
 
 ## Open
 - Light hero CTA effect library for dark (gloss, inner glow) beyond the Kite bevel pill: no dark accept yet.
-- Whether a split layout (copy left, product right) works in dark: Tracewell's band layout was called "good" (L322) but no dark split has been accepted.
+- Whether a split layout works in dark. Tracewell's band layout was called "good" (L322), but no dark split has been accepted. Marcel's evidence says yes (KC-01, `knowledge/web/kargul-corpus-2026-10.md`):
+  - **Layout:** 22 of his 34 dark heroes put the copy beside or under the visual. That is F3 split 13, F4 visual-first 6 and F5 split-header 3. Only 12 are centred.
+  - **Light:** it comes from an object on the far side of the copy (KH-28).
+  - **Canvas:** it stays `#000`-`#121212`.
+
+  Until the founder accepts one, the Kite centred stack stays the default. The split is the first alternative to offer in a 2-3 variant round.
+
+## Marcel corpus numbers for dark heroes (2026-10-22, KC-01..07)
+These are measurements, not founder verdicts. Where they differ from the table above, the table wins.
+- **Type:** h1 64 / 500 / -0.03em median (KC-02). Rhythm about 20 / 38 / 89 (KC-03). CTA 47 (37-52) (KC-05).
+- **Colour:** dark heroes run 2.7% saturated pixels, and 62% hold one hue family. That is inside this canon's ≤ 3% colour budget.
+- **Signature visuals:** pick one per category from corpus §5:
+  - hex-dot maps with glowing nodes (security);
+  - a system diagram converging on a core (data);
+  - pixel / voxel art (dev tools);
+  - fibre streaks (voice);
+  - cinematic key art (crypto, VC).
 
 ## Round lesson: cadence-glass r1 (reject, 2026-10-21)
 Founder: "broken buttons backgourn d blurrs roudness.. components and like everythign about it spacings i bad wtf". What was measured wrong (`reports/cadence-glass/gate.json`), against the Linear fold replica (`work/replicas/LINEAR-NOTES.md`):

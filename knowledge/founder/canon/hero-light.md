@@ -110,11 +110,14 @@ These replace the numbers above wherever they conflict. Source: `knowledge/web/l
 - **Fonts:** rotate per brief (Inter, Manrope, Aspekta, Inter Tight, Geist, Jakarta, Switzer); size and spacing stay fixed.
 - **Open (founder to decide):** the pill above the h1 appears in only 32 of 98 founder heroes, while the r1 verdict asked for something above the title. Use it when the brief has news, otherwise put the weight on the fourth element.
 
-## Applied 2026-10-22 from Marcel's 55 heroes (KH-01..33, `knowledge/web/kargul-heroes.md`)
-- **The cause of "empty" was the missing signature visual,** not the space above the h1 (KH-01). Every hero turns the product's name or headline verb into a picture. A screenshot on a gradient does not count.
-- **Above the h1:** OPTIONAL, and only for a real fact (Marcel 15/55, founder 32/98). This supersedes the r1 "required" line.
+## Applied 2026-10-22 from Marcel's heroes (KH-01..33, `knowledge/web/kargul-heroes.md`; numbers re-measured on 75 unique heroes, KC-01..07, `knowledge/web/kargul-corpus-2026-10.md`)
+- **The cause of "empty" was the missing signature visual,** not the space above the h1 (KH-01). Every hero turns the product's name or headline verb into a picture. A screenshot on a gradient does not count. Pick the mechanism from the category recipe table (KC-07, corpus §5).
+- **Above the h1:** OPTIONAL. Marcel uses it in 15/55 (KH) and 4/13 (new folds); the founder uses it in 32/98. When it is used, it sits 16-31 above the h1 ink (26 median), not 34.5 (KC-04). This supersedes the r1 "required" line.
+- **Copy rhythm (Marcel's measured medians, KC-03):** h1 → sub ~20, sub → CTA ~38, CTA → next element ~89. The h1 → sub value agrees with the Quorum 20 in the table above. Where sub → CTA differs (Quorum 32, lunor 40-48), the founder-accepted rows above win.
+- **CTA:** 40-52 tall (47 median), pill, square or r6-15 in equal thirds (KC-05). The canon's tactile ink 44-48 sits inside this range.
+- **Nav:** a 54-73 bar, or a floating centred pill nav 37-40 tall, optionally under a 36-38 announcement bar (KC-06). The nav CTA is always smaller than the hero CTA.
 - **Below the CTAs:** proof or a product action only (KH-10).
-- **Layout:** pick the family first and never repeat the last build's family or visual world (KH-02). Recipes: `kargul-heroes.md`.
+- **Layout:** pick the family first and never repeat the last build's family or visual world (KH-02). For a light hero, default to a centred family (F1, F2, F7): Marcel's light heroes are centred in 30/41 (KC-01). Recipes: `kargul-heroes.md` §6.
 - **Light and colour:** in dark heroes the light comes from the visual itself; in light heroes colour rises from the bottom or sides, and copy sits on near-white (KH-12/13). One accent, in ≤ 3 places.
 
 ## Founder verdict 2026-10-22 (h4a r1, partial: "finally sth new and getting somewhere")

@@ -19,7 +19,7 @@ Decided defaults, 2026-10-21. For screens inside an existing client app, `client
 
 | Part | Default | Source |
 |---|---|---|
-| Grammar | compact and calm, one size smaller than instinct: rows 28-30 on a 30-32 pitch (table rows 38-40), controls 28-32, one control height per toolbar, labels 13-14, icons 14-16 at text size | L230; KMD-11, KMD-16 |
+| Grammar | compact and calm, one size smaller than instinct: rows 28-30 on a 30-32 pitch (table rows 38-40 when one line; 52-60 when a row carries an avatar, logo or second line, KC-11), controls 28-32 (form inputs 40-48, KC-10), one control height per toolbar, labels 13-14, icons 14-16 at text size | L230; KMD-11, KMD-16; KC-10, KC-11 |
 | Sidebar | Attio: 212-260 wide, one outline icon family (Phosphor regular 16 or Lucide 16 at stroke 1.5-1.75), record types as 16px solid tiles r4.5 with a white glyph, real pages grouped under sentence-case headers, fits 900px tall, quiet top (one workspace tile >= 8px inset, name, chevron; at most one light search field with kbd) | L307, L331, L334 |
 | Active row | a quiet fill step (grey on a white sidebar, or a white ringed tile on a grey sidebar) + darker text + the icon in its fill weight; no accent bar, chevron or accent outline | L230, L307; Quorum |
 | Type | one sans (Inter display cut) for the whole product, plus one mono only for IDs and times; <= 4 sizes in the main view; weights 500/600; hierarchy from two text greys, not size | L86, L199, L230, L452 |
@@ -43,7 +43,7 @@ Decided defaults, 2026-10-21. For screens inside an existing client app, `client
 | Topic | Default | Alternative only when | Superseded lines |
 |---|---|---|---|
 | Product density (audit 4.1) | one view at Kargul detail: sidebar + one main view + one AI/decision moment, >= 10 data points, >= 8 rows | none | L18 / L54 (simple hero card, Tideline era) |
-| KPI weight | 18-20 / 600 tabular | 28 / 400 only when the floor is Kargul's roomy overview page (Clokora) and DIRECTION says so | KMD-18 as a default |
+| KPI weight | 18-20 / 600 tabular (Marcel also sets KPIs at ~600 in several products, KC-14) | 28 / 400 only when the floor is Kargul's roomy overview page (Clokora) and DIRECTION says so; one weight per product | KMD-18 as a default |
 | Small-control radius | 8 for sidebar items and badges (Kestrel r2, loved) | a sharp Kargul family (KMD-10) only for a brand whose DIRECTION binds it | L158 ("sidebar item radius <= 6") |
 | Dark depth | ring + soft drop + fill gradient | flat dark (no drops, one-step lines, KMD-06) for an operator / technical brand | Kite v2 "inner top light + ring" recipe (L467) |
 
@@ -68,8 +68,9 @@ Decided defaults, 2026-10-21. For screens inside an existing client app, `client
 8. Every state captured: hover, selected, focus, empty, loading, error, long content.
 
 ## Open
-- One fixed control height for our own apps (Kargul ranges 29-36 by product); the canon gives 28-32 until a founder verdict picks one.
-- Light-mode table row pitch for hero dashboards at 0.8 zoom vs full apps: not measured on Ferry.
+- One fixed control height for our own apps. Across 58 measured screens (KC-10), Kargul's toolbar controls are 32-36: 33 light and 32 dark at precise scale. The canon gives 28-32 until a founder verdict picks one.
+- Light-mode table row pitch for hero dashboards at 0.8 zoom vs full apps: not measured on Ferry. Kargul's full-app tables run 52-61 (KC-11).
+- **Chart hues (for the founder, KC-13).** Kargul dashboards keep the chrome to one accent but let the chart carry 3-5 categorical hues inside the plot. Dashboards run 2.6% saturated pixels, against 0.8% for app screens. The canon's ≤ 2 hue families (L391) stays until the founder rules on charts.
 
 ## Founder verdict 2026-10-22 (cadence-app r8, partial)
 On the Cadence calendar built in Tanjim's post system, the founder said: "his style is not my favorite... it's good for variety yet I wouldn't use it". So the Tanjim/gr8r system (Manrope 400, warm wells, 0.5px hairlines; TG-01..38) is a variety option only, never the default product floor. The default product floor stays Rico/Kargul/AlignUI detail (see this page). Take from him only the method (post system vs code system, solving the font from line widths, centring discipline), not the look.

@@ -14,3 +14,14 @@ corpus/kargul-src/
 
 # Tanjim X study videos: large, local only
 knowledge/benchmarks/tanjim-x/vid/
+
+# Kargul corpus originals (full-res study evidence, regenerable from kargul-corpus/manifest.tsv URLs; never published)
+knowledge/benchmarks/kargul-corpus/_originals/
+
+# Kargul corpus images (study evidence, third-party work; kept local, never pushed to the public repo). Regenerate from manifest.tsv URLs.
+knowledge/benchmarks/kargul-corpus/**/*.png
+knowledge/benchmarks/kargul-corpus/**/*.jpg
+knowledge/benchmarks/kargul-corpus/**/*.jpeg
+knowledge/benchmarks/kargul-corpus/**/*.webp
+knowledge/benchmarks/kargul-corpus/**/*.gif
+knowledge/benchmarks/kargul-corpus/**/*.mp4

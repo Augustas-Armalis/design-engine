@@ -42,6 +42,7 @@ Decided defaults, 2026-10-21. Evidence: `founder-taste L<n>`, Cadence bento v3 (
 | Callouts | at most one per cell, naming the answer | none | L521 |
 | Shading | flat sheets | subtle tint on one focal object (above) | L524's shading as a default, ISO-19..30 face ramps as a default |
 | Replication | done once (`cmp-kargul-iso-overlay.png` registered); re-run when a new construction (towers, extrusions) is introduced | — | — (L527 stands) |
+| Kargul's own numbers (38 bento and section images measured, KC-16..19) | Cadence v3 values above (founder-accepted) | when the brief asks for Kargul's grammar itself: gap 12-18 light or 16-18 dark, or a 0-gap ruled hairline table (his most common light construction, 13/32); cell r10-14 or 0; padding 24; one edge per cell (a `#f7f7f7` fill with no ring, or a white cell with a ring on `#fafafa`); title ~19 / 400-500; heading ~50 / 500, ~54 above the grid | none; the measured corpus contradicts r24 / gap 24 / fill + ring as *his* numbers, but they are the founder-accepted floor |
 
 ## Never (rejected, with evidence)
 - White cards with UI rows inside and no styling (Cadence v1, L515-516 "nothing cool about them").
@@ -64,7 +65,11 @@ Decided defaults, 2026-10-21. Evidence: `founder-taste L<n>`, Cadence bento v3 (
 8. Tablet and phone: equal cell heights; sibling pages identical rects (L203).
 
 ## Open
-- Dark-mode feature bento in our own builds: only the Kargul reference (dark) and Kaching dark sections exist; no dark bento of ours has a verdict.
+- Dark-mode feature bento in our own builds: no dark bento of ours has a verdict. Marcel's 22 measured dark bentos and sections (KC-19):
+  - **Canvas:** the page is `#000`-`#111`, with cells 5-11 L above it.
+  - **Light:** it comes only from objects in the cells (glass product UI, glossy 3D, a glowing shield or orb) and from a 1px ring that is brighter on the top edge. There are no page blobs.
+  - **Cells:** a big number ('89%', '$27B', '24/7') carries one cell in 4 of the 22.
+  - **Canvas tone:** none of these dark bentos sits on `#313131`.
 - Cadence v6 (five Kargul constructions via SVG plane matrices) has no founder verdict; do not treat it as the floor until it does.
 
 ## Grammars beyond Kargul iso (2026-10-21)

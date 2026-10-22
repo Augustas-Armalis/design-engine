@@ -90,7 +90,7 @@ const C = []
 const add = (id, ok, value, want, rule) => C.push({ id, status: ok === null ? 'info' : ok ? 'pass' : 'FAIL', value, want, rule })
 if (isPost) {
   const ratio = W / H
-  add('format.ratio', ratio >= 0.84 && ratio <= 1.78, ratio.toFixed(3), '0.84-1.78 (square 1:1 is normal for one component: Marcel kx-036, Kuleszo kz-129/274; 16:9-3:2 for screens; 7:8 for pairs)', 'XP-07 / XP-04, measured refs')
+  add('format.ratio', ratio >= 0.79 && ratio <= 1.78, ratio.toFixed(3), '0.79-1.78 (one slot of X\'s table, KC-24: 4:5 1080x1350, 1:1, 7:8 pairs, 8:9, 16:9; square is normal for one component: Marcel kx-036, Kuleszo kz-129/274)', 'XP-07 / XP-04 / KC-24, measured refs')
   add('format.export-px', W * 2 >= 2000, `${W * 2}x${H * 2}`, '>= 2000 px wide', 'XP-11')
   add('canvas.solid', px.bandStdL <= 5 && px.bandChroma <= 14, `corner std ${px.bandStdL}, chroma ${px.bandChroma}`, 'solid canvas (cleanest corner std <= 5: Marcel streak 4.3, Kuleszo 0.0; chroma <= 14): no gradient blobs, glass, dither, wallpapers', 'XP-08, measured refs')
   const share = dom.subject ? dom.subject.w / W : null
