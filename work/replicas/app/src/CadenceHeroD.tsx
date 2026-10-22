@@ -14,7 +14,7 @@ const abs = (x: number, y: number, s: CSSProperties = {}): CSSProperties => ({ p
 
 // ---- the points: a 20px dot lattice kept to the sides (clear around the copy, gone before the product) ----
 const DOTS_MASK = 'radial-gradient(460px 310px at 50% 250px, transparent 58%, #000 100%), linear-gradient(transparent 0, #000 18%, #000 52%, transparent 86%)'
-const LIT: [number, number][] = [[200, 220], [140, 360], [1240, 200], [1300, 340]]
+const LIT: [number, number][] = []
 function Points() {
   return (
     <div aria-hidden style={abs(0, 72, { width: W, height: 520 })}>

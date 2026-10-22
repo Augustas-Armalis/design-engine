@@ -106,3 +106,9 @@ Decided, replacing the Kargul-sharp option as a default:
 - **Numbers:** at most one slim joined strip of 3, never a row of KPI cards.
 - **Everything else** goes in overlays, never on the page.
 - Floor: `work/cadence-app/product-b@2x.png` (`#/cprodb`, r3, awaiting verdict).
+- **cprodb r1 (partial: "too little detail... no affectUI feel")**: calm structure is not enough; every region needs affectUI-grade detail.
+  - AI rail: a settled thought row ("Checked 5 calendars in 4s") with source chips, inline citation chips in the answer, date-tile options, and a composer in a tray (a scope picker, a mic, ink send, a synced-status strip).
+  - Header: a people filter and a segmented week nav.
+  - Number strip: one mini visual per number.
+  - Sidebar: tinted count badges, team avatar stacks, a Next-up tray card and a live user status.
+  - Data agrees everywhere: the now-line, "next up in N min" and the user's status tell the same time.
