@@ -35,7 +35,7 @@ function Item({ icon, label, active, count }: { icon: ReactNode; label: string; 
     <div style={{ ...row, gap: 9, height: 32, padding: '0 10px', borderRadius: 10, background: active ? '#fff' : 'transparent', boxShadow: active ? `inset 0 0 0 1px ${T.line}, 0 1px 2px rgba(14,18,27,0.04)` : 'none', fontSize: 13.5, fontWeight: active ? 500 : 450, color: active ? T.ink : T.sub }}>
       <span style={{ display: 'flex', color: active ? T.v : T.mute }}>{icon}</span>
       <span style={{ flex: 1 }}>{label}</span>
-      {count && <span className="round" style={{ height: 18, minWidth: 18, padding: '0 5px', boxSizing: 'border-box', borderRadius: 999, background: T.vFill, color: T.vInk, fontSize: 11, fontWeight: 600, display: 'grid', placeItems: 'center', ...tnum }}>{count}</span>}
+      {count && <span className="round" style={{ height: 18, minWidth: 18, padding: '0 5px', boxSizing: 'border-box', borderRadius: 999, background: T.vFill, color: T.vInk, fontSize: 11.5, fontWeight: 600, display: 'grid', placeItems: 'center', ...tnum }}>{count}</span>}
     </div>
   )
 }
@@ -53,7 +53,7 @@ function Sidebar() {
       </div>
       <div style={{ ...row, gap: 8, height: 32, marginTop: 12, padding: '0 6px 0 10px', borderRadius: 10, background: '#fff', boxShadow: `inset 0 0 0 1px ${T.line}`, fontSize: 13, color: T.mute }}>
         <RiSearch2Line size={15} /><span style={{ flex: 1 }}>Search</span>
-        <span style={{ height: 20, padding: '0 5px', borderRadius: 6, background: T.weak, display: 'grid', placeItems: 'center', fontSize: 11, color: T.mute }}>⌘K</span>
+        <span style={{ height: 20, padding: '0 5px', borderRadius: 6, background: T.weak, display: 'grid', placeItems: 'center', fontSize: 11.5, color: T.mute }}>⌘K</span>
       </div>
       <div style={{ marginTop: 14 }}><Group>Schedule</Group></div>
       <div style={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
@@ -154,7 +154,7 @@ function Week({ w, h }: { w: number; h: number }) {
 }
 
 // ================= Ask Tempra (affectUI AI-answer grammar: thought row + sources, cited answer, date-tile options, tray composer) =================
-const Cite = ({ children }: { children: ReactNode }) => <span style={{ display: 'inline-flex', alignItems: 'center', height: 18, padding: '0 6px', margin: '0 2px', borderRadius: 6, background: T.weak, boxShadow: `inset 0 0 0 1px ${T.line}`, fontSize: 11, fontWeight: 500, color: T.sub, verticalAlign: 1 }}>{children}</span>
+const Cite = ({ children }: { children: ReactNode }) => <span style={{ display: 'inline-flex', alignItems: 'center', height: 18, padding: '0 6px', margin: '0 2px', borderRadius: 6, background: T.weak, boxShadow: `inset 0 0 0 1px ${T.line}`, fontSize: 11.5, fontWeight: 500, color: T.sub, verticalAlign: 1 }}>{children}</span>
 function Rail({ compact }: { compact?: boolean }) {
   // compact (in the hero): no source chips and two options, so the answer and Book end above the fold's blur
   const opts: [string, string, string, string, string[], boolean][] = [
@@ -183,11 +183,11 @@ function Rail({ compact }: { compact?: boolean }) {
         {(compact ? opts.slice(0, 2) : opts).map(([dw, dn, when, why, ids, best], k) => (
           <div key={dn} style={{ ...row, gap: 10, height: 58, padding: '0 12px', borderTop: k ? `1px solid ${T.hair}` : 'none' }}>
             <span style={{ width: 36, height: 38, borderRadius: 9, flex: 'none', boxShadow: `inset 0 0 0 1px ${best ? T.vRing : T.line}`, background: best ? T.vFill : '#fff', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 0 }}>
-              <span style={{ fontSize: 9.5, fontWeight: 600, letterSpacing: '0.04em', color: best ? T.vInk : T.mute, lineHeight: '12px' }}>{dw}</span>
+              <span style={{ fontSize: 10, fontWeight: 600, letterSpacing: '0.04em', color: best ? T.vInk : T.mute, lineHeight: '12px' }}>{dw}</span>
               <span style={{ fontSize: 14, fontWeight: 600, lineHeight: '17px', color: best ? T.vInk : T.ink, ...tnum }}>{dn}</span>
             </span>
             <span style={{ display: 'flex', flexDirection: 'column', gap: 2, flex: 1 }}>
-              <span style={{ ...row, gap: 6, fontSize: 13, fontWeight: 500, ...tnum }}>{when}{best && <span style={{ height: 18, padding: '0 6px', borderRadius: 6, background: T.greenFill, color: T.green, fontSize: 11, fontWeight: 500, display: 'grid', placeItems: 'center' }}>Best</span>}</span>
+              <span style={{ ...row, gap: 6, fontSize: 13, fontWeight: 500, ...tnum }}>{when}{best && <span style={{ height: 18, padding: '0 6px', borderRadius: 6, background: T.greenFill, color: T.green, fontSize: 11.5, fontWeight: 500, display: 'grid', placeItems: 'center' }}>Best</span>}</span>
               <span style={{ fontSize: 12, color: T.mute }}>{why}</span>
             </span>
             <Stack ids={ids} s={18} />
