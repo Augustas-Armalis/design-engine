@@ -1,0 +1,139 @@
+{
+  "schema": "design-engine.x-posted/v1",
+  "about": "What actually went out, one entry per post per account. tools/x_plan.mjs reads it to continue series and avoid repeats; `node tools/x_plan.mjs posted --day <date>` appends a day's plan here once the founder confirms the posts went live (the design engine never posts). url and metrics are filled from the X engine's receipts when they exist.",
+  "posts": [
+    {
+      "postId": "2108266979748401242",
+      "date": "2026-10-08",
+      "time": "18:43",
+      "account": "augustasdesign",
+      "platform": "x",
+      "assetId": "kestrel-hero",
+      "project": "kestrel",
+      "format": "hero-still",
+      "series": null,
+      "quotes": null,
+      "caption": "daily hero design inspiration",
+      "url": "https://x.com/augustasdesign/status/2108266979748401242",
+      "metrics": {
+        "likes": 24,
+        "views": 2013,
+        "bookmarks": 9,
+        "capturedAt": "2026-10-22"
+      },
+      "recorded": "2026-10-22T21:30:00+03:00",
+      "source": "knowledge/benchmarks/x-strategy-2026-10/data/augustasdesign.json (public FixTweet capture 2026-10-22), identified by thumbnail"
+    },
+    {
+      "postId": "2108270755364651394",
+      "date": "2026-10-08",
+      "time": "18:58",
+      "account": "augustasdesign",
+      "platform": "x",
+      "assetId": null,
+      "project": "kestrel",
+      "format": "hero-reel",
+      "series": null,
+      "quotes": "2108266979748401242",
+      "caption": "animated 👀",
+      "url": "https://x.com/augustasdesign/status/2108270755364651394",
+      "metrics": {
+        "likes": 22,
+        "views": 1090,
+        "bookmarks": 6,
+        "capturedAt": "2026-10-22"
+      },
+      "recorded": "2026-10-22T21:30:00+03:00",
+      "source": "knowledge/benchmarks/x-strategy-2026-10/data/augustasdesign.json (public FixTweet capture 2026-10-22), identified by thumbnail"
+    },
+    {
+      "postId": "2110393766754341153",
+      "date": "2026-10-14",
+      "time": "15:34",
+      "account": "augustasdesign",
+      "platform": "x",
+      "assetId": null,
+      "project": "kite",
+      "format": "dashboard-strips-3",
+      "series": null,
+      "quotes": null,
+      "caption": "the most detailed dashboard I’ve ever built 👀",
+      "url": "https://x.com/augustasdesign/status/2110393766754341153",
+      "metrics": {
+        "likes": 819,
+        "views": 37574,
+        "bookmarks": 706,
+        "capturedAt": "2026-10-22"
+      },
+      "recorded": "2026-10-22T21:30:00+03:00",
+      "source": "knowledge/benchmarks/x-strategy-2026-10/data/augustasdesign.json (public FixTweet capture 2026-10-22), identified by thumbnail"
+    },
+    {
+      "postId": "2110739524724609353",
+      "date": "2026-10-15",
+      "time": "14:28",
+      "account": "augustasdesign",
+      "platform": "x",
+      "assetId": null,
+      "project": "kite",
+      "format": "hero-still",
+      "series": null,
+      "quotes": null,
+      "caption": "incredibly detailed hero design",
+      "url": "https://x.com/augustasdesign/status/2110739524724609353",
+      "metrics": {
+        "likes": 157,
+        "views": 5187,
+        "bookmarks": 103,
+        "capturedAt": "2026-10-22"
+      },
+      "recorded": "2026-10-22T21:30:00+03:00",
+      "source": "knowledge/benchmarks/x-strategy-2026-10/data/augustasdesign.json (public FixTweet capture 2026-10-22), identified by thumbnail"
+    },
+    {
+      "postId": "2110795842458448087",
+      "date": "2026-10-15",
+      "time": "18:12",
+      "account": "augustasdesign",
+      "platform": "x",
+      "assetId": "quorum-hero",
+      "project": "quorum",
+      "format": "hero-still",
+      "series": null,
+      "quotes": null,
+      "caption": "this hero is too clean",
+      "url": "https://x.com/augustasdesign/status/2110795842458448087",
+      "metrics": {
+        "likes": 81,
+        "views": 2647,
+        "bookmarks": 40,
+        "capturedAt": "2026-10-22"
+      },
+      "recorded": "2026-10-22T21:30:00+03:00",
+      "source": "knowledge/benchmarks/x-strategy-2026-10/data/augustasdesign.json (public FixTweet capture 2026-10-22), identified by thumbnail"
+    },
+    {
+      "postId": "2110944321184620815",
+      "date": "2026-10-16",
+      "time": "04:02",
+      "account": "augustasdesign",
+      "platform": "x",
+      "assetId": null,
+      "project": "kite",
+      "format": "hero-reel",
+      "series": null,
+      "quotes": "2110393766754341153",
+      "caption": "animated it's even cooler 🔥",
+      "url": "https://x.com/augustasdesign/status/2110944321184620815",
+      "metrics": {
+        "likes": 359,
+        "views": 11804,
+        "bookmarks": 352,
+        "capturedAt": "2026-10-22"
+      },
+      "recorded": "2026-10-22T21:30:00+03:00",
+      "source": "knowledge/benchmarks/x-strategy-2026-10/data/augustasdesign.json (public FixTweet capture 2026-10-22), identified by thumbnail"
+    }
+  ],
+  "note": "Seeded 2026-10-22 with the real posts of engine work found in the public capture (Kestrel, Quorum, Kite). Kite is not in the library yet (assetId null); its posts still count for project history. Captions are the founder's own words, kept verbatim as history."
+}

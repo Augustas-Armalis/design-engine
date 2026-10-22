@@ -1,6 +1,6 @@
 ---
 name: design-engine
-description: The single entry point for the design engine. Use for any design brief or design work: SaaS/AI-SaaS heroes, landing pages, full websites, bento/sections, product UI, client apps, branding and logos, X/social design posts; for reviewing and fixing existing work (a URL, repo or screenshot); and for designing from references (find, replicate, design in a style, combine). Routes to one mode card, reads at most 5 files, builds, gates, delivers, records the verdict.
+description: The single entry point for the design engine. Use for any design brief or design work: SaaS/AI-SaaS heroes, landing pages, full websites, bento/sections, product UI, client apps, branding and logos, X/social design posts; for "designs for the day" (planning 3-5 X posts across the founders' accounts from the asset library); for reviewing and fixing existing work (a URL, repo or screenshot); and for designing from references (find, replicate, design in a style, combine). Routes to one mode card, reads at most 5 files, builds, runs the preflight, delivers, records the verdict.
 ---
 
 # design-engine (router)
@@ -21,6 +21,8 @@ The canon is the decided default for that kind and outranks every other doc. `fo
   - Use `node tools/compare.mjs <url> <ref.png> <out> --w --h --scale` for the overlay.
   - Use `getComputedStyle` for rendered radii and fonts. Class names lie: `theme.css` remaps radii.
 - **Never invent proof.** Sample data is labelled. Logos and copy from references stay in studies, never in a deliverable.
+- **Preflight before every delivery, every mode:** `nice -n 19 node tools/preflight.mjs <url> --kind <kind> --name <name> --w <W> --h <H> [--direction work/<name>/DIRECTION.md] [--anchor ...]` at the work's real size. It runs `gate.mjs`, `design_view.mjs`, `check.mjs`, `clipscan.cjs` and the probes (font fallback, optical label and icon centring, grey twins, one heavy primary per view, small things cut at an edge, the fold ends on purpose, post insets, reference names) and writes `reports/<name>/preflight.md`. **0 FAIL or it does not ship.** Attach the summary line to the delivery. Checks and calibration: `docs/PREFLIGHT.md`.
+- **Finals go to the library:** every piece the founder accepts (and every X post) lives in `library/<project>/<asset>/` with its manifest, renders, captions and preflight (`docs/LIBRARY.md`, `node tools/library.mjs render|index|check`).
 - **Every founder message is a verdict.** Run `node tools/verdict.mjs <name> --round N --verdict ... --why "<his words>"` and edit the canon value it changes in the same turn. Never record words he didn't say.
 
 ## Kinds (canon pages)
@@ -48,14 +50,15 @@ The canon is the decided default for that kind and outranks every other doc. `fo
    - Apps: Next.js + Tailwind v4 + coss ui (`docs/coss-ui.md`).
    - Use real landmarks (`main`, a single `h1`) and real buttons and links.
    - Mark the hero product `data-product` and a post subject `data-subject`.
-6. **Gate (all must pass, 0 FAIL):**
-   - `node tools/gate.mjs <url> --kind <kind> --name <name> --direction work/<name>/DIRECTION.md`. This covers the consistency censuses: edges and shadows, radius ladder, type, colour, button grammar, hero composition, scope and motion.
-   - `node tools/design_view.mjs <url> --kind <hero-light|hero-dark|post-component> --name <name>`, which shows it beside the references.
-   - `node tools/check.mjs <url> --name <name>` for correctness and contrast.
-   - Read the screenshots and compare them honestly with the floor reference: is this as rich, as polished and as finished? If not, keep going.
+6. **Preflight (0 FAIL):** `nice -n 19 node tools/preflight.mjs <url> --kind <kind> --name <name> --w <W> --h <H> --direction work/<name>/DIRECTION.md`. One command runs:
+   - `gate.mjs`, the consistency censuses (edges and shadows, radius ladder, type, colour, button grammar, hero composition, crop and fade, scope and motion);
+   - `design_view.mjs` for heroes and posts, which shows it beside the references;
+   - `check.mjs` for correctness and contrast, and `clipscan.cjs` for things cut off;
+   - the probes in `docs/PREFLIGHT.md`.
+   Then read the screenshots and compare them honestly with the floor reference: is this as rich, as polished and as finished? If not, keep going.
 7. **Deliver:**
    - the fold PNG next to its floor reference;
-   - the gate summary;
+   - the preflight summary line (`reports/<name>/preflight.md`);
    - the owned decisions and overrides;
    - one verdict question.
 8. **Record:** `verdict.mjs`.
@@ -67,7 +70,7 @@ The canon is the decided default for that kind and outranks every other doc. `fo
    - the app's own kit or tokens, if it is a client codebase.
 3. **Write `work/<name>/REVIEW.md`:** findings ranked by severity, each with the selector, the computed value, a screenshot crop and the exact fix.
 4. **Fix in source.** Then sweep for the same class of drift everywhere, not only where it was spotted.
-5. **Prove:** `node tools/style_diff.mjs <before-url> <after-url> --out reports/<name>/style-diff.json` shows only the intended properties changed, and the gate passes.
+5. **Prove:** `node tools/style_diff.mjs <before-url> <after-url> --out reports/<name>/style-diff.json` shows only the intended properties changed, and `tools/preflight.mjs --kind audit` passes (0 FAIL).
 6. **Deliver** before/after crops plus the sweep list. Record.
 
 ## Mode C: from references (find, replicate, in-the-style-of, combine)
@@ -79,7 +82,15 @@ The canon is the decided default for that kind and outranks every other doc. `fo
    - Write `work/replicas/<NAME>-NOTES.md` with the measured tokens and the rules learnt, and fold any new general rule into `knowledge/`.
 4. **Combine:** one reference per axis (structure from A, type and colour from B, material and effects from C), never mixed inside one component.
 5. **Build our content** on the canon floor with 1-3 owned touches. Never ship their structure box for box, nor their copy, logos or assets.
-6. **Gate** as in Mode A, plus `compare.mjs` against each reference used. Deliver with the matrix and the side-by-side.
+6. **Preflight** as in Mode A, plus `compare.mjs` against each reference used. Deliver with the matrix and the side-by-side.
+
+## Mode X: designs for the day (X posts)
+Trigger: "give me designs for the day", "what do we post today", "plan the X week". The engine plans; it never posts, schedules or sends.
+1. **Read (3 files):** `knowledge/x/x-strategy.md` section 0 (the plan rules XS-01..27), `knowledge/x/caption-voice.md` section 4 (the four voices), `library/x-days/posted.json` (what already went out; add any posts the founder made outside the engine first).
+2. **Plan:** `node tools/x_plan.mjs plan --date <YYYY-MM-DD>`. It continues open series first (close-up, then the full view, then the thirds, then motion as a quote: XS-15), fills the rotation (one family a day, product UI or a hero leads at 08:00 on @augustasdesign, bento never leads), keeps each account under its cap (2 for Augustas, 1 per co-founder, 6 h apart), assigns the five Vilnius slots, drafts every caption in that account's voice from `caption.md` or the templates, and checks it (our rules + the X engine's own `checkCaption`). Output: `library/x-days/<date>/plan.md`, `plan.json`, `x-handoff.json`.
+3. **Make what the plan asks for:** its "To make" list names the missing asset per series step (a crop, a motion, a component post). Build it with the kind's canon card (A or C), crop through `#/xframe` with `node tools/library.mjs snap` so every edge lands in a gutter, add a manifest and `caption.md`, then `node tools/library.mjs render <project>/<asset>` (renders at 3840 wide, runs the preflight, records sizes and hashes). Re-run the plan.
+4. **Show the day:** `node tools/x_plan.mjs sheet --date <date>` renders `day.png`, every post at X's 514px feed tile with its account, time, caption and checks. Deliver that sheet, the plan table and one verdict question. Formats and crops: `system/x/formats.json`; accounts and voices: `system/x/accounts.json`, `system/x/captions.json`.
+5. **After the founder confirms what went out:** `node tools/x_plan.mjs posted --date <date>` (the ledger the next plan reads). The X engine imports `x-handoff.json` (`system/x/x-handoff.schema.json`, `knowledge/x/x-engine-audit.md` section 4); its Telegram confirm and Buffer stay theirs.
 
 ## Replica library (studied, measured)
 - **Kargul:** `work/replicas/KARGUL-HERO-NOTES.md` (Chatsheet), plus ISO-31..38 in `knowledge/web/isometric-line-art.md`.
@@ -91,8 +102,8 @@ The canon is the decided default for that kind and outranks every other doc. `fo
 
 ## Never
 - Build what wasn't asked: animation, extra sections, video.
-- Ship with a gate FAIL.
+- Ship with a preflight FAIL (any gate, design-view, check, clipscan or probe FAIL).
 - Stack a new rule on a contradicting old one: edit the canon in place.
 - Deliver without a side-by-side against a rated reference.
-- Publish or post anything externally.
+- Publish, post, schedule or send anything externally (X posts included: the engine hands off a file, people post).
 - Change Larpo's own brand system from here.

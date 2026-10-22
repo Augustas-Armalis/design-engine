@@ -1,0 +1,90 @@
+{
+  "schema": "design-engine.library-asset/v1",
+  "id": "quorum-hero",
+  "project": "quorum",
+  "title": "Quorum product-first split hero",
+  "kind": "hero-light",
+  "status": "accepted",
+  "postable": false,
+  "verdict": {
+    "latest": "accept",
+    "round": null,
+    "date": "2026-10-15",
+    "words": "ok this is now perfected nicely to look... see how clean and professional this looks",
+    "ledger": "ledger/entries/quorum.json"
+  },
+  "source": {
+    "app": "work/quorum/app",
+    "route": "/",
+    "component": "work/quorum/app/src/HeroV6.tsx",
+    "viewport": [
+      1440,
+      900
+    ],
+    "devServer": "main checkout :4391",
+    "base": "http://localhost:4391/"
+  },
+  "renders": [
+    {
+      "file": "renders/hero.png",
+      "role": "single",
+      "format": "hero-still",
+      "from": "knowledge/engine-accepted/quorum/quorum-fold@2x.png",
+      "w": 2880,
+      "h": 1800,
+      "bytes": 589014,
+      "sha256": "b2915fadcf306873aa4937adca4f4f50c16ef19368e40815f00611076ec6dc80"
+    }
+  ],
+  "series": [],
+  "conceptName": "Quorum",
+  "sample": true,
+  "alt": "Landing page hero for Quorum, a fictional research tool: title, subtitle, two buttons and an ask box on the left, the product on a soft gradient stage on the right. Sample data, concept.",
+  "dates": {
+    "created": "2026-10-15",
+    "migrated": "2026-10-22",
+    "rendered": "2026-10-22"
+  },
+  "tags": [
+    "light",
+    "hero",
+    "accepted-floor"
+  ],
+  "subject": "hero",
+  "captionVars": {
+    "domain": "research",
+    "ui": "hero",
+    "category": "research"
+  },
+  "checks": [
+    {
+      "label": "hero",
+      "route": "/",
+      "kind": "hero-light",
+      "w": 1440,
+      "h": 900,
+      "format": "hero-still",
+      "renders": [
+        "renders/hero.png"
+      ]
+    }
+  ],
+  "preflight": {
+    "ran": "2026-10-22T18:01:37.391Z",
+    "fail": 9,
+    "warn": 5,
+    "results": [
+      {
+        "label": "hero",
+        "route": "/",
+        "size": "1440x900",
+        "pass": 12,
+        "warn": 5,
+        "fail": 9,
+        "report": "preflight/1-hero.md",
+        "ran": "2026-10-22T18:01:37.382Z"
+      }
+    ]
+  },
+  "blockedBy": "9 preflight FAIL under the 2026-10-22 canon: h1 58/550/-0.045em against today's 400-500 band (canon drift), plus real items: the stock name 'Northwind' in the product, two half-faded lines at the stage's fade, one avatar label crossing a clip edge. Already posted 2026-10-15. Re-show only after a fix pass."
+}

@@ -1,0 +1,40 @@
+{
+  "schema": "design-engine.x-captions/v1",
+  "updated": "2026-10-22",
+  "source": "knowledge/x/caption-voice.md section 5 (T01-T14, engine phrasing written from the founders' own patterns; never copied from Marcel or rico). A hand-written line in library/<project>/<asset>/caption.md always wins over a template. {vars} come from the asset manifest's captionVars; a caption with an unfilled {var} is flagged 'needs words', never posted.",
+  "relations": {
+    "first": "the first post of an asset, or a series start",
+    "follow": "a series step 2+ that quotes the previous step (CV-13, XS-16)",
+    "second": "the same image again after 7-60 days (T12, XS-18)"
+  },
+  "templates": {
+    "dashboard-closeup": { "first": { "augustas": "{detail}, up close 👀", "faulkner": "the {detail} does the work. everything around it stays quiet.", "rokas": "i drew the {detail} so it reads at a glance. concept.", "marius": "most {domain} tools bury the {detail} two clicks deep. this one leaves it in plain sight." }, "id": "T01" },
+    "bento-cell": { "first": { "augustas": "{detail}, up close 👀", "faulkner": "the {detail} does the work. everything around it stays quiet.", "rokas": "i drew the {detail} so it reads at a glance. concept.", "marius": "most {domain} tools bury the {detail} two clicks deep. this one leaves it in plain sight." }, "id": "T01" },
+    "dashboard-full": { "first": { "augustas": "{domain} dashboard, all of it", "faulkner": "{n} panels, one question: {question}.", "rokas": "{domain} dashboard, full view. concept.", "marius": "most {domain} dashboards start with totals. this one starts with {difference}." }, "follow": { "augustas": "the whole {ui} behind yesterday's close-up", "faulkner": "the close-up was one panel. here is the system around it.", "rokas": "zoomed out: the full {domain} {ui}. concept.", "marius": "the detail makes sense once you see the whole {ui} it lives in." }, "id": "T02/T11" },
+    "dashboard-strips-3": { "first": { "augustas": "one {domain} dashboard, in thirds 👀", "faulkner": "left to right: {a}, {b}, {c}. read in that order.", "rokas": "the {domain} dashboard cut in three. concept.", "marius": "split into thirds you can see the order it is read in: {a}, then {b}, then {c}." }, "id": "T03" },
+    "full-plus-strips": { "first": { "augustas": "one {domain} dashboard, in thirds 👀", "faulkner": "left to right: {a}, {b}, {c}. read in that order.", "rokas": "the {domain} dashboard cut in three. concept.", "marius": "split into thirds you can see the order it is read in: {a}, then {b}, then {c}." }, "id": "T03" },
+    "hero-still": { "first": { "augustas": "{judgement} {domain} hero", "faulkner": "{layout} hero. the product sits {where}, the headline stays short.", "rokas": "{domain} hero, {variant} version. concept.", "marius": "most {category} heroes open with a slogan. this one opens with the product doing its job." }, "id": "T04" },
+    "pair-7x8": { "first": { "augustas": "{domain} {ui}, light and dark", "faulkner": "two modes, one layout. the {detail} holds in both.", "rokas": "same {ui}, two color fields. concept.", "marius": "dark mode is usually an afterthought. here both modes were drawn from the same grid." }, "id": "T05" },
+    "bento-still": { "first": { "augustas": "{n} bento cells for a {domain} tool", "faulkner": "each cell shows one thing the product does. no filler cells.", "rokas": "i built each bento cell around one object. concept.", "marius": "most bento grids repeat the same card {n} times. this one gives every cell its own object." }, "id": "T06" },
+    "component-still": { "first": { "augustas": "{ui} component, small details 🫠", "faulkner": "the {component} has one job: {job}.", "rokas": "i made the {component} {behaviour}.", "marius": "a {component} is usually a form. this one finishes the task in a single step." }, "id": "T07" },
+    "section-still": { "first": { "augustas": "{section} for a {domain} site", "faulkner": "the {section} answers {n} questions before anyone books a call.", "rokas": "{section}, set like a {object}. concept.", "marius": "most {section}s are an afterthought at the bottom of the page. this one carries real product news." }, "id": "T08/T09" },
+    "grid-4-16x9": { "first": { "augustas": "four sections of one {domain} site", "faulkner": "{n} sections, one grid. nothing on the page repeats.", "rokas": "four cuts of the {domain} site. concept.", "marius": "most landing pages stack the same block four times. here every section has its own job." }, "id": "engine" },
+    "hero-reel": { "first": { "augustas": "{domain} {ui}, animated", "faulkner": "{n} seconds, one state change: {from} to {to}.", "rokas": "i animated the {detail} from {from} to {to}. concept.", "marius": "motion here explains the product, it does not decorate it: {from} becomes {to}." }, "follow": { "augustas": "same {ui}, now moving 🔥", "faulkner": "the motion shows the order: {a} first, then {b}.", "rokas": "the {detail} now {verb}s in {n} steps.", "marius": "a still hides the sequence. moving, you see {a} lead into {b}." }, "id": "T13/T10" },
+    "component-loop": { "first": { "augustas": "{domain} {ui}, animated", "faulkner": "{n} seconds, one state change: {from} to {to}.", "rokas": "i animated the {detail} from {from} to {to}. concept.", "marius": "motion here explains the product, it does not decorate it: {from} becomes {to}." }, "follow": { "augustas": "same {ui}, now moving 🔥", "faulkner": "the motion shows the order: {a} first, then {b}.", "rokas": "the {detail} now {verb}s in {n} steps.", "marius": "a still hides the sequence. moving, you see {a} lead into {b}." }, "id": "T13/T10" },
+    "_second": { "second": { "augustas": "still one of my favorite {ui}s", "faulkner": "{weeks} weeks on, the {decision} still holds.", "rokas": "back to the {domain} {ui}. still the {detail} i like most.", "marius": "weeks later the {category} habit is the same. this one still breaks it." }, "id": "T12" }
+  },
+  "replies": {
+    "augustas": "made at larpo.studio, concept",
+    "faulkner": "concept for a {domain} tool. made at larpo.studio",
+    "rokas": "built in {tool}. larpo.studio",
+    "marius": "concept for a {domain} tool. larpo.studio"
+  },
+  "voices": {
+    "augustas": { "words": [4, 8], "emoji": "<= 1 at the end from 👀 🔥 😍 🫠 🥹", "judgement": true },
+    "faulkner": { "words": [6, 14], "emoji": "none", "judgement": false },
+    "rokas": { "words": [6, 10], "emoji": "none", "judgement": false },
+    "marius": { "words": [12, 25], "emoji": "none", "judgement": false }
+  },
+  "banned": ["world-class", "world class", "premium", "innovative", "immersive", "full-service", "full service", "transformational", "transformative", "cutting-edge", "cutting edge", "bespoke", "seamless", "seamlessly", "elevate", "elevated", "elevates", "digital experiences", "digital experience", "visionary founders", "product design studio", "crafted", "crafting", "crafts"],
+  "judgementWords": ["clean", "cleanest", "best", "most", "perfect", "perfection", "insane", "next level", "ever"]
+}

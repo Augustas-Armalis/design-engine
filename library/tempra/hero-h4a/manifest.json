@@ -1,0 +1,114 @@
+{
+  "schema": "design-engine.library-asset/v1",
+  "id": "tempra-hero-h4a",
+  "project": "tempra",
+  "title": "Tempra hero: every meeting finds its own hour",
+  "kind": "hero-light",
+  "status": "awaiting-verdict",
+  "postable": true,
+  "verdict": {
+    "latest": "partial",
+    "round": 6,
+    "date": "2026-10-22",
+    "words": "without the top pill it seems empty...",
+    "ledger": "ledger/entries/h4a.json",
+    "after": "45db223 added a plain announcement pill (New tag + one product fact); r5 said 'okay now it's wayy better... but now good'. Next look is r7."
+  },
+  "source": {
+    "app": "work/replicas/app",
+    "route": "#/h4a",
+    "component": "work/replicas/app/src/CadenceHeroD.tsx",
+    "viewport": [
+      1440,
+      1035
+    ],
+    "direction": "work/cadence-app/H4A-DIRECTION.md"
+  },
+  "renders": [
+    {
+      "file": "renders/hero.png",
+      "role": "single",
+      "format": "hero-still",
+      "recipe": {
+        "route": "#/h4a",
+        "viewport": [
+          1440,
+          1035
+        ],
+        "scale": 2.6667,
+        "wait": 4500
+      },
+      "w": 3840,
+      "h": 2760,
+      "bytes": 769987,
+      "sha256": "44fbb3d049b3b1247f71ebbdca25f2d183bdc5b3932086c8b8d06b1f67b255cf",
+      "rendered": "2026-10-22T17:58:14.844Z",
+      "commit": "ca138c2"
+    }
+  ],
+  "checks": [
+    {
+      "label": "hero",
+      "route": "#/h4a",
+      "kind": "hero-light",
+      "w": 1440,
+      "h": 1035,
+      "format": "hero-still",
+      "renders": [
+        "renders/hero.png"
+      ],
+      "direction": "work/cadence-app/H4A-DIRECTION.md"
+    }
+  ],
+  "series": [
+    {
+      "id": "tempra-hero",
+      "stage": "hero"
+    }
+  ],
+  "related": [
+    "tempra-product-week",
+    "tempra-bento-dark"
+  ],
+  "conceptName": "Tempra, Fernhill",
+  "sample": true,
+  "alt": "Landing page hero for Tempra, a fictional team calendar: a two line title, a short subtitle, a dark start button and a white secondary, and below them the product, a week view with an ask panel that found a slot for five people. Sample data, concept.",
+  "dates": {
+    "created": "2026-10-22",
+    "migrated": "2026-10-22",
+    "rendered": "2026-10-22"
+  },
+  "tags": [
+    "light",
+    "hero",
+    "calendar",
+    "ai-answer"
+  ],
+  "preflight": {
+    "ran": "2026-10-22T17:58:46.347Z",
+    "fail": 0,
+    "warn": 7,
+    "results": [
+      {
+        "label": "hero",
+        "route": "#/h4a",
+        "size": "1440x1035",
+        "pass": 16,
+        "warn": 7,
+        "fail": 0,
+        "report": "preflight/1-hero.md",
+        "ran": "2026-10-22T17:58:46.342Z"
+      }
+    ]
+  },
+  "subject": "hero",
+  "captionVars": {
+    "domain": "team calendar",
+    "ui": "hero",
+    "judgement": "detailed",
+    "layout": "centred",
+    "where": "right under the buttons",
+    "variant": "light",
+    "category": "calendar"
+  }
+}

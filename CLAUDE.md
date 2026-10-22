@@ -47,6 +47,7 @@ Two jobs, one brain: (1) **design** client websites and product UI from a brief,
 | `evals/` | Fixed briefs. Re-run after changing knowledge/system/skills; compare with `tools/score.mjs`. |
 | `tools/` | `check.mjs` (render + measure), `ledger.mjs` (record + diversity), `score.mjs` (eval compare), ingestion scripts. |
 | `work/<name>/` | One folder per project: `DIRECTION.md`, source, screenshots. |
+| `library/` | Final versions only: `<project>/<asset>/` with manifest, renders, captions, preflight; `x-days/` holds the posted ledger and each planned X day (`docs/LIBRARY.md`). |
 | `corpus/` | Raw book text and page images (images gitignored). Go here only to verify a source claim. |
 
 ## Pipeline for every brief
@@ -55,8 +56,9 @@ Two jobs, one brain: (1) **design** client websites and product UI from a brief,
 - **A:** from scratch.
 - **B:** review and fix.
 - **C:** from references.
+- **X:** designs for the day: 3-5 X posts planned from the library across the four founder accounts (`tools/x_plan.mjs`, `docs/X-PLANNER.md`, `knowledge/x/`).
 
-The router also sets the kinds and their canon pages in `knowledge/founder/canon/`, the 5-file reading limit, and the gates that must pass before delivery (`tools/gate.mjs`, `tools/design_view.mjs`, `tools/check.mjs`). It also covers the verdict loop (`tools/verdict.mjs`). Follow it every time. The canon page for the kind is the decided default; `knowledge/founder/founder-taste.md` is the evidence log behind it. When a verdict reverses a canon value, edit the canon in place (never stack rules).
+The router also sets the kinds and their canon pages in `knowledge/founder/canon/`, the 5-file reading limit, and the one gate that must pass before any delivery: `tools/preflight.mjs` (it runs `gate.mjs`, `design_view.mjs`, `check.mjs`, `clipscan.cjs` and the centring, grey, primary, edge, fold and copy probes; 0 FAIL; `docs/PREFLIGHT.md`). It also covers the verdict loop (`tools/verdict.mjs`). Follow it every time. The canon page for the kind is the decided default; `knowledge/founder/founder-taste.md` is the evidence log behind it. When a verdict reverses a canon value, edit the canon in place (never stack rules).
 
 Measuring tools:
 - `tools/probe.mjs`: pixel colours, edges, text boxes in a reference.

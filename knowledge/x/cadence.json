@@ -1,0 +1,708 @@
+{
+  "generated": "2026-10-22",
+  "timezone": "Europe/Vilnius",
+  "source": "knowledge/x/x-strategy.md (XS-01..27), knowledge/x/caption-voice.md; data in knowledge/benchmarks/x-strategy-2026-10/data/",
+  "tzNote": "Vilnius is UTC+3 until 2026-10-25 03:00, then UTC+2. US Eastern is UTC-4 until 2026-11-01, then UTC-5. Vilnius - ET = 7 h, except 25 Oct - 1 Nov 2026 = 6 h. Keep slots in Vilnius local time.",
+  "accounts": {
+    "marcelkargul": {
+      "role": "benchmark",
+      "followers": 60768,
+      "window": "2026-09-23..2026-10-22 (last 30 days)",
+      "originalsPerDay": 6.2,
+      "mediaPerDay": 4.61,
+      "mediaShare": 0.74,
+      "daysWithPostShare": 1,
+      "medianLikes": 134,
+      "medianViews": 10812.5,
+      "medianBookmarks": 57,
+      "hoursLocal": {
+        "0": 9,
+        "1": 4,
+        "2": 4,
+        "3": 1,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "10": 0,
+        "11": 0,
+        "12": 0,
+        "13": 11,
+        "14": 18,
+        "15": 22,
+        "16": 9,
+        "17": 14,
+        "18": 16,
+        "19": 19,
+        "20": 13,
+        "21": 17,
+        "22": 11,
+        "23": 15
+      },
+      "bestHoursLocal": [
+        19,
+        20,
+        1
+      ],
+      "bestHoursNote": "later posts 18-21 Vilnius 1.40x likes / 1.69x views (n=39); 00-03 views 2.0x (n=11).",
+      "formatMix": {
+        "single": 0.45,
+        "2up": 0.04,
+        "3up": 0.03,
+        "4up": 0.06,
+        "video": 0.16,
+        "text": 0.26
+      },
+      "captionCase": "mostly lowercase",
+      "lowercaseShare": 0.82,
+      "medianCaptionWords": 9,
+      "emojiShare": 0.5,
+      "questionShare": 0.11
+    },
+    "kargulstudio": {
+      "role": "benchmark",
+      "followers": 6361,
+      "window": "2026-09-08..2026-10-22 (last 365 days)",
+      "originalsPerDay": 0.88,
+      "mediaPerDay": 0.88,
+      "mediaShare": 1,
+      "daysWithPostShare": 0.82,
+      "medianLikes": 25,
+      "medianViews": 1747,
+      "medianBookmarks": 7,
+      "hoursLocal": {
+        "0": 1,
+        "1": 1,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "10": 0,
+        "11": 0,
+        "12": 1,
+        "13": 3,
+        "14": 11,
+        "15": 8,
+        "16": 5,
+        "17": 2,
+        "18": 2,
+        "19": 3,
+        "20": 0,
+        "21": 1,
+        "22": 0,
+        "23": 1
+      },
+      "bestHoursLocal": [
+        16,
+        19
+      ],
+      "bestHoursNote": "weak: n=5 and n=3.",
+      "formatMix": {
+        "single": 0.97,
+        "2up": 0,
+        "3up": 0,
+        "4up": 0,
+        "video": 0.03,
+        "text": 0
+      },
+      "captionCase": "no caption",
+      "lowercaseShare": 0,
+      "medianCaptionWords": 0,
+      "emojiShare": 0,
+      "questionShare": 0
+    },
+    "_heyrico": {
+      "role": "benchmark",
+      "followers": 27164,
+      "window": "2026-08-24..2026-10-22 (last 60 days)",
+      "originalsPerDay": 2.14,
+      "mediaPerDay": 2.04,
+      "mediaShare": 0.95,
+      "daysWithPostShare": 0.93,
+      "medianLikes": 162,
+      "medianViews": 9535,
+      "medianBookmarks": 131,
+      "hoursLocal": {
+        "0": 3,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 1,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "10": 0,
+        "11": 0,
+        "12": 0,
+        "13": 4,
+        "14": 8,
+        "15": 10,
+        "16": 15,
+        "17": 11,
+        "18": 15,
+        "19": 41,
+        "20": 12,
+        "21": 2,
+        "22": 5,
+        "23": 0
+      },
+      "bestHoursLocal": [
+        14,
+        15,
+        16
+      ],
+      "bestHoursNote": "first posts 12-15 1.22x likes / 1.82x views (n=11); 15-18 1.22x (n=26).",
+      "formatMix": {
+        "single": 0.47,
+        "2up": 0.34,
+        "3up": 0.04,
+        "4up": 0.09,
+        "video": 0.01,
+        "text": 0.05
+      },
+      "captionCase": "mostly lowercase",
+      "lowercaseShare": 0.65,
+      "medianCaptionWords": 4,
+      "emojiShare": 0.5,
+      "questionShare": 0.08
+    },
+    "augustasdesign": {
+      "role": "founder",
+      "followers": 10007,
+      "window": "2026-08-23..2026-10-22 (current era)",
+      "originalsPerDay": 0.42,
+      "mediaPerDay": 0.4,
+      "mediaShare": 0.96,
+      "daysWithPostShare": 0.26,
+      "medianLikes": 46.5,
+      "medianViews": 2068.5,
+      "medianBookmarks": 16.5,
+      "hoursLocal": {
+        "0": 2,
+        "1": 0,
+        "2": 1,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 4,
+        "7": 2,
+        "8": 0,
+        "9": 0,
+        "10": 0,
+        "11": 0,
+        "12": 0,
+        "13": 0,
+        "14": 0,
+        "15": 0,
+        "16": 2,
+        "17": 1,
+        "18": 2,
+        "19": 1,
+        "20": 1,
+        "21": 8,
+        "22": 0,
+        "23": 1
+      },
+      "bestHoursLocal": [
+        6,
+        9
+      ],
+      "bestHoursNote": "first post of the day at 06:45-09:59 ran 1.15x (n=191, 06:59 slot) and 1.39x (n=8) in era 1; current era 06-09 block 1.74x (n=5). Confounded with first-of-day; later posts underperform at every hour.",
+      "formatMix": {
+        "single": 0.68,
+        "2up": 0.04,
+        "3up": 0.04,
+        "4up": 0.04,
+        "video": 0.16,
+        "text": 0.04
+      },
+      "captionCase": "lowercase",
+      "lowercaseShare": 0.96,
+      "medianCaptionWords": 4,
+      "emojiShare": 0.24,
+      "questionShare": 0.28,
+      "era1": {
+        "window": "2025-07-19..2026-03-03",
+        "originalsPerDay": 1.46,
+        "mediaShare": 0.96,
+        "medianLikes": 121,
+        "medianViews": 5868,
+        "hourBlocksRelLikes": {
+          "0": 0.54,
+          "6": 1.14,
+          "9": 1.39,
+          "12": 0.75,
+          "15": 0.35,
+          "18": 0.57,
+          "21": 0.26
+        },
+        "nthPostOfDayRelLikes": {
+          "first": 1.12,
+          "second": 0.71,
+          "third": 0.45,
+          "fourth+": 0.12
+        },
+        "captionCase": "sentence case (2% lowercase)",
+        "note": "self-reply with a link on 239 of 251 replies; scheduled 06:59 and 13:30 Vilnius"
+      }
+    },
+    "faulkner_Design": {
+      "role": "founder",
+      "followers": 4,
+      "window": "2026-08-30..2026-10-22 (current era)",
+      "originalsPerDay": 0.45,
+      "mediaPerDay": 0.45,
+      "mediaShare": 1,
+      "daysWithPostShare": 0.24,
+      "medianLikes": 3,
+      "medianViews": 26.5,
+      "medianBookmarks": 0,
+      "hoursLocal": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 6,
+        "9": 0,
+        "10": 1,
+        "11": 0,
+        "12": 0,
+        "13": 5,
+        "14": 0,
+        "15": 2,
+        "16": 0,
+        "17": 0,
+        "18": 8,
+        "19": 0,
+        "20": 0,
+        "21": 1,
+        "22": 0,
+        "23": 1
+      },
+      "bestHoursLocal": [],
+      "bestHoursNote": "4 followers, median 3 likes / 26.5 views: no hour signal. Use benchmark slots.",
+      "formatMix": {
+        "single": 1,
+        "2up": 0,
+        "3up": 0,
+        "4up": 0,
+        "video": 0,
+        "text": 0
+      },
+      "captionCase": "mostly lowercase",
+      "lowercaseShare": 0.75,
+      "medianCaptionWords": 6.5,
+      "emojiShare": 0,
+      "questionShare": 0.08
+    },
+    "marius_vanagas": {
+      "role": "founder",
+      "followers": 4,
+      "window": "2026-08-31..2026-10-22 (current era)",
+      "originalsPerDay": 0.02,
+      "mediaPerDay": 0.02,
+      "mediaShare": 1,
+      "daysWithPostShare": 0.02,
+      "medianLikes": 3,
+      "medianViews": 80,
+      "medianBookmarks": 0,
+      "hoursLocal": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 1,
+        "10": 0,
+        "11": 0,
+        "12": 0,
+        "13": 0,
+        "14": 0,
+        "15": 0,
+        "16": 0,
+        "17": 0,
+        "18": 0,
+        "19": 0,
+        "20": 0,
+        "21": 0,
+        "22": 0,
+        "23": 0
+      },
+      "bestHoursLocal": [],
+      "bestHoursNote": "1 post this year: no signal.",
+      "formatMix": {
+        "single": 1,
+        "2up": 0,
+        "3up": 0,
+        "4up": 0,
+        "video": 0,
+        "text": 0
+      },
+      "captionCase": "lowercase",
+      "lowercaseShare": 1,
+      "medianCaptionWords": 28,
+      "emojiShare": 0,
+      "questionShare": 0
+    },
+    "rokasrem": {
+      "role": "founder",
+      "followers": 4,
+      "window": "2026-10-07..2026-10-22 (current era)",
+      "originalsPerDay": 1.94,
+      "mediaPerDay": 1.88,
+      "mediaShare": 0.97,
+      "daysWithPostShare": 1,
+      "medianLikes": 1,
+      "medianViews": 10,
+      "medianBookmarks": 0,
+      "hoursLocal": {
+        "0": 0,
+        "1": 1,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "10": 0,
+        "11": 0,
+        "12": 0,
+        "13": 0,
+        "14": 0,
+        "15": 13,
+        "16": 1,
+        "17": 0,
+        "18": 0,
+        "19": 0,
+        "20": 0,
+        "21": 15,
+        "22": 0,
+        "23": 0
+      },
+      "bestHoursLocal": [],
+      "bestHoursNote": "4 followers, median 1 like / 10 views: no hour signal. Scheduled at 15:00 and 21:00.",
+      "formatMix": {
+        "single": 0.7,
+        "2up": 0.27,
+        "3up": 0,
+        "4up": 0,
+        "video": 0,
+        "text": 0.03
+      },
+      "captionCase": "lowercase",
+      "lowercaseShare": 1,
+      "medianCaptionWords": 8,
+      "emojiShare": 0,
+      "questionShare": 0.2
+    }
+  },
+  "founderAccounts": [
+    "augustasdesign",
+    "faulkner_Design",
+    "marius_vanagas",
+    "rokasrem"
+  ],
+  "formatMultipliers": {
+    "single-still": 0.95,
+    "carousel-2": 1.2,
+    "carousel-3": 1.33,
+    "carousel-4": 0.85,
+    "video-loop": 0.88,
+    "text": 0.5,
+    "carousel-2-portrait-pair": 1.21,
+    "carousel-2-landscape": 0.79,
+    "carousel-3-vertical-thirds": 1.33,
+    "carousel-4-mixed-crops": 1.12,
+    "carousel-4-same-size": 0.85,
+    "single-landscape": 1,
+    "single-portrait": 0.92,
+    "single-square": 0.91,
+    "video-followup-quote": 1.5,
+    "quote-only-text": 0.67,
+    "note": "Likes relative to each author median, pooled over Marcel (30 d), @kargulstudio, rico (60 d), Augustas (current era) and the co-founders (n: single-landscape 392, portrait pair 36, 2-up landscape 32, thirds 9, 4-up mixed 32, 4-up same size 23, video 56). The six schema keys are rounded planning values: carousel-2 assumes a 4:5-7:8 pair (landscape pairs 0.79); carousel-4 assumes same-size images (1.12 when the four crops differ); video-loop is a cold lead (as a quote of a still that worked, Marcel 1.51x the still, n=10, hence video-followup-quote 1.5); text is a planning penalty for 10k and 4-follower accounts (rico text 0.19, Augustas quote-text 0.19-0.30; Marcel text 1.07 on 60k followers). Cross-check with the 29-account study: 2-up 1.20, 4-up 1.19, video 1.03, 3-up 1.00, single 0.76 (knowledge/web/x-design-posts.md 6.1)."
+  },
+  "subjectMultipliers": {
+    "dashboard": 2.05,
+    "sidebar": 2.49,
+    "crm-table": 3.12,
+    "calendar": 1.93,
+    "hero": 1.21,
+    "footer": 0.98,
+    "bento-card": 0.73,
+    "pricing": 0.36,
+    "branding-illustration": 0.6,
+    "spec-cheatsheet": 2.72,
+    "note": "Augustas era 1 (n: dashboard 20, sidebar 11, hero 39, footer 9, bento/card 29, pricing 5); crm-table and calendar from Marcel (n=4, 2); branding 0.60 Marcel (n=15), 0.80 rico; spec 2.72 rico (n=6), 6.93 Marcel (n=4). Use to choose the lead subject, not as exact forecasts."
+  },
+  "weeklyFormatMix": {
+    "single": [
+      0.35,
+      0.4
+    ],
+    "3up-vertical-thirds": [
+      0.15,
+      0.2
+    ],
+    "2up-portrait-pair": [
+      0.15,
+      0.2
+    ],
+    "video-followup": [
+      0.1,
+      0.15
+    ],
+    "4up-mixed-crops": [
+      0.05,
+      0.1
+    ],
+    "text-spec": [
+      0,
+      0.05
+    ],
+    "why": "XS-07: anchor on the strongest measured formats (thirds 1.33x, portrait pairs 1.21x) while keeping singles as the series full view and hero format; motion mostly as follow-ups."
+  },
+  "slotsLocal": [
+    {
+      "time": "08:00",
+      "etUntil25Oct": "01:00",
+      "role": "lead",
+      "accounts": [
+        "augustasdesign"
+      ],
+      "why": "Augustas's first post of the day: 06:45-09:59 ran 1.15x (n=191) and 1.39x (n=8) in era 1, 1.74x (n=5) now. Strongest product-UI asset of the day goes here."
+    },
+    {
+      "time": "14:30",
+      "etUntil25Oct": "07:30",
+      "role": "second",
+      "accounts": [
+        "augustasdesign",
+        "faulkner_Design"
+      ],
+      "why": "6.5 h after the lead (XS-02: Augustas's later posts 2-6 h after the previous earned 0.36x). Era-1 13:30 slot 0.78x likes / 1.01x views (n=75); rico's best window 13:00-17:00 (1.22x, 1.82x views); US East start of day."
+    },
+    {
+      "time": "16:00",
+      "etUntil25Oct": "09:00",
+      "role": "co-founder",
+      "accounts": [
+        "rokasrem",
+        "faulkner_Design"
+      ],
+      "why": "rico's 16:00 slot, first posts 15-18 1.22x (n=26), later 15-18 1.20x likes / 1.93x views (n=7); @kargulstudio posts 14:00-17:00."
+    },
+    {
+      "time": "19:30",
+      "etUntil25Oct": "12:30",
+      "role": "co-founder or series follow-up",
+      "accounts": [
+        "faulkner_Design",
+        "rokasrem",
+        "augustasdesign"
+      ],
+      "why": "Marcel's later posts 18-21 1.40x likes / 1.69x views (n=39); rico's most used slot (n=31, 0.90x). Augustas only for a quote follow-up whose still is already performing (his era-1 later posts at 18-21: 0.55x)."
+    },
+    {
+      "time": "22:00",
+      "etUntil25Oct": "15:00",
+      "role": "optional",
+      "accounts": [
+        "marius_vanagas",
+        "rokasrem"
+      ],
+      "why": "US East afternoon; Marcel's late posts drew 2.0x views (00-03, n=11). Optional fifth post, never a third media post for one account."
+    }
+  ],
+  "dailyPosts": {
+    "min": 3,
+    "max": 5,
+    "perAccountMaxMedia": 2,
+    "coFounderMaxPerDay": 1,
+    "augustasMaxPerDay": 2,
+    "minGapSameAccountHours": 6,
+    "why": "Augustas era 1 (n=321): 1st post of a day 1.12x, 2nd 0.71x, 3rd 0.45x, 4th 0.12x; days with 2 posts 1.27x, with 3 posts 0.55x. Co-founder accounts (4 followers) get 10-26 median views, so a second daily post adds little. X decays each further post by one author in a viewer's feed (XP-26). Big accounts flatten this (Marcel 6.2/day at 60k).",
+    "defaultDay": [
+      {
+        "slot": "08:00",
+        "account": "augustasdesign",
+        "content": "lead: product UI (dashboard, crm, calendar, inbox, sidebar) or the series step due today",
+        "formats": [
+          "3up-vertical-thirds",
+          "single-still",
+          "carousel-2-portrait-pair"
+        ]
+      },
+      {
+        "slot": "14:30",
+        "account": "augustasdesign",
+        "content": "second: another cut or a second project; or a motion quote of yesterday's best still",
+        "formats": [
+          "single-still",
+          "video-followup",
+          "carousel-2-portrait-pair"
+        ]
+      },
+      {
+        "slot": "16:00",
+        "account": "rokasrem",
+        "content": "a different cut of a series in his detail voice (pair, hero variant, section)",
+        "formats": [
+          "carousel-2-portrait-pair",
+          "single-still"
+        ]
+      },
+      {
+        "slot": "19:30",
+        "account": "faulkner_Design",
+        "content": "a different cut in his decision voice (close-up, thirds, bento, section)",
+        "formats": [
+          "single-still",
+          "3up-vertical-thirds",
+          "carousel-4-mixed-crops"
+        ]
+      },
+      {
+        "slot": "22:00",
+        "account": "marius_vanagas",
+        "optional": true,
+        "content": "a section or hero in his contrast voice",
+        "formats": [
+          "single-still"
+        ]
+      }
+    ],
+    "rotation": "Swap the 16:00 and 19:30 co-founders daily; when Marius is inactive, the 22:00 slot stays empty (3-4 posts a day)."
+  },
+  "series": {
+    "closeupToFullDays": [
+      1,
+      2
+    ],
+    "fullToStripsDays": [
+      0,
+      3
+    ],
+    "stillToMotionDays": [
+      1,
+      9
+    ],
+    "stillToMotionQuoteDays": [
+      1,
+      2
+    ],
+    "stillToMotionStandaloneDays": [
+      5,
+      9
+    ],
+    "secondShowingDays": [
+      [
+        7,
+        14
+      ],
+      [
+        30,
+        60
+      ]
+    ],
+    "sameAssetCooldownDays": 7,
+    "maxShowingsPerAsset": 3,
+    "sameFormatMaxPerDay": 2,
+    "sameFormatMaxPerAccountPerDay": 1,
+    "projectSeries": {
+      "appearances": [
+        3,
+        6
+      ],
+      "spanDays": [
+        7,
+        21
+      ],
+      "maxParallel": 2,
+      "maxAppearancesPerAccountPerDay": 1
+    },
+    "followUpsQuotePrevious": true,
+    "why": "Measured gaps: close-up/full within 0.1-1 d (rico fullview -> closer view 8 h later 1.12x; Augustas thirds -> hero 0.95 d); full -> thirds 2.8-4.2 h (Marcel, 1.64x and 1.11x); still -> motion quote median 0.61 d (Marcel n=10, 1.51x the still) and 1.52 d (Augustas, 7.7x his median); motion quotes 7-15 d later 0.14-0.30x of the still, so later motion goes standalone. Image reuse (rico n=129): <=3 d 0.49x, 4-14 d 1.15x, 15-30 d 0.88x, 31-60 d 1.06x, >60 d 0.53x; 3rd showing 0.61x. Own-quote share 49-51% of originals (Marcel, rico). Project series: Marcel 5 posts / 17 d, rico Alpaca 14 / 132 d (median gap 6 d).",
+    "note": "closeupToFullDays follows the founder plan (close-up day 1, full day 2); the data allows the same day if the two posts are on one account >= 6 h apart. sameFormatMaxPerDay is network-wide."
+  },
+  "replies": {
+    "linkInFirstReply": true,
+    "firstReplyMinutes": [
+      30,
+      150
+    ],
+    "why": "Augustas era 1: link in post 0.33x likes / 0.53x views (n=14) vs link in a self-reply 1.02x / 1.07x (n=223); rico replies with a link a median 155 min later on 117 of 117 posts; Marcel link-in-reply 1.31x vs link-in-post 0.97x."
+  },
+  "captions": {
+    "case": "lowercase",
+    "maxEmoji": {
+      "augustasdesign": 1,
+      "faulkner_Design": 0,
+      "rokasrem": 0,
+      "marius_vanagas": 0
+    },
+    "hashtags": 0,
+    "questions": 0,
+    "wordsBand": {
+      "augustasdesign": [
+        4,
+        8
+      ],
+      "rokasrem": [
+        6,
+        10
+      ],
+      "faulkner_Design": [
+        6,
+        14
+      ],
+      "marius_vanagas": [
+        12,
+        25
+      ]
+    },
+    "voice": {
+      "augustasdesign": "reaction",
+      "faulkner_Design": "decision",
+      "rokasrem": "detail",
+      "marius_vanagas": "contrast"
+    },
+    "templates": "knowledge/x/caption-voice.md section 5 (T01-T14, R1-R4)",
+    "why": "Augustas: 7-10 words 1.16x (n=79), 1-3 words 0.72x (n=65), UI noun 1.22x vs 0.85x, questions 0.69x now, @mentions 0.53x."
+  },
+  "never": [
+    "a third media post on one account in one day",
+    "two posts from one account less than 6 h apart",
+    "the same image on any founder account within 7 days, or more than 3 showings",
+    "the same caption, or a shared three-word run, on two accounts the same day",
+    "a question, poll or \"which one\" caption",
+    "an external link or @mention in the main post",
+    "a text-only quote post",
+    "a fictional brand name in the caption, or work from a fiction presented as a client",
+    "money, client or outcome claims on concept work",
+    "bento, pricing or branding as the 08:00 lead",
+    "promotion of another product (Lunor promos 0.33x)"
+  ],
+  "dataThin": {
+    "coFounders": "faulkner_Design, rokasrem, marius_vanagas have 4 followers; their hours and formats carry no performance signal. Defaults come from @augustasdesign and the benchmarks; re-rank after 20 posts per cell (XS-26).",
+    "hours": "Hour effects are confounded with first-post-of-day; test the lead at 14:30 on two days a week for three weeks before moving it.",
+    "thirds": "Vertical thirds n=9 pooled (1 Augustas post at 17.6x); strong direction, small n."
+  }
+}

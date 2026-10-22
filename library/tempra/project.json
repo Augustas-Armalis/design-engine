@@ -1,0 +1,64 @@
+{
+  "schema": "design-engine.library-project/v1",
+  "id": "tempra",
+  "name": "Tempra",
+  "fictional": true,
+  "about": "Fictional team-calendar product (invented name; mark traced from a Pinterest reference, work/replicas/app/src/TempraLogo.tsx). Sample workspace Fernhill, sample people and times. Never a client.",
+  "app": "work/replicas/app",
+  "devServer": "npm --prefix work/replicas/app run dev (main checkout :4395, worktrees :4396 via .claude/launch.json replicas-x)",
+  "brand": {
+    "accent": "#7D52F4 violet",
+    "ink": "#0E121B",
+    "type": "Inter Variable (light), Geist (dark bento)",
+    "logo": "work/replicas/app/src/TempraLogo.tsx"
+  },
+  "conceptNames": [
+    "Tempra",
+    "Fernhill"
+  ],
+  "series": [
+    {
+      "id": "tempra-week",
+      "title": "the Tempra week view: one answer up close, the whole product, in thirds, then moving",
+      "stages": [
+        "closeup",
+        "full",
+        "strips",
+        "motion"
+      ],
+      "assets": {
+        "closeup": "tempra-ask-closeup",
+        "full": "tempra-product-week",
+        "strips": "tempra-product-week",
+        "motion": null
+      },
+      "motionToMake": "a load-in of #/cprodb (window, KPI digits roll, the week fills, the Ask answer types) recorded with tools/record.mjs --preset x; build the motion first (canon/motion.md)"
+    },
+    {
+      "id": "tempra-hero",
+      "title": "the Tempra hero, then its load-in",
+      "stages": [
+        "hero",
+        "motion"
+      ],
+      "assets": {
+        "hero": "tempra-hero-h4a",
+        "motion": null
+      },
+      "motionToMake": "tools/record.mjs on #/h4a once a load-in is built (hero-reel)"
+    },
+    {
+      "id": "tempra-bento",
+      "title": "the Tempra dark bento, then one cell up close",
+      "stages": [
+        "section",
+        "closeup"
+      ],
+      "assets": {
+        "section": "tempra-bento-dark",
+        "closeup": null
+      },
+      "closeupToMake": "one cell of #/cbentol through #/xframe at 2x+ with equal margins (bento-cell), e.g. the 'conflicts settle themselves' cell"
+    }
+  ]
+}

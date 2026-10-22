@@ -1,0 +1,68 @@
+{
+  "schema": "design-engine.library-asset/v1",
+  "id": "tempra-x-calendar-carousel",
+  "project": "tempra",
+  "title": "Cadence week as a 3-strip X carousel (rejected)",
+  "kind": "post-component",
+  "status": "rejected",
+  "postable": false,
+  "verdict": {
+    "latest": "reject",
+    "round": 1,
+    "date": "2026-10-22",
+    "words": "hero sections by random for X post - you're getting worse and just been creating bullshit straight, cmon.... study more create more actually good shit",
+    "ledger": "ledger/entries/cxslices.json",
+    "after": "kept as negative evidence: an X post made as a one-off composition instead of a real product moment. Also predates the Tempra rename (shows the earlier Cadence name)."
+  },
+  "source": {
+    "app": "work/replicas/app",
+    "route": "#/cxslices",
+    "component": "work/replicas/app/src/CadenceXSlices.tsx",
+    "direction": "work/cadence-app/XSLICES-DIRECTION.md",
+    "commit": "2d7d811"
+  },
+  "renders": [
+    {
+      "file": "renders/full.png",
+      "role": "full",
+      "format": "dashboard-full",
+      "from": "work/cadence-app/x-cal-full@2x.png"
+    },
+    {
+      "file": "renders/strip-1.png",
+      "role": "strip",
+      "index": 1,
+      "of": 3,
+      "format": "dashboard-strips-3",
+      "from": "work/cadence-app/x-cal-1@2x.png"
+    },
+    {
+      "file": "renders/strip-2.png",
+      "role": "strip",
+      "index": 2,
+      "of": 3,
+      "format": "dashboard-strips-3",
+      "from": "work/cadence-app/x-cal-2@2x.png"
+    },
+    {
+      "file": "renders/strip-3.png",
+      "role": "strip",
+      "index": 3,
+      "of": 3,
+      "format": "dashboard-strips-3",
+      "from": "work/cadence-app/x-cal-3@2x.png"
+    }
+  ],
+  "series": [],
+  "conceptName": "Cadence",
+  "sample": true,
+  "dates": {
+    "created": "2026-10-22",
+    "migrated": "2026-10-22"
+  },
+  "tags": [
+    "rejected",
+    "carousel"
+  ],
+  "subject": "calendar"
+}

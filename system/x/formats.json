@@ -1,0 +1,426 @@
+{
+  "schema": "design-engine.x-formats/v1",
+  "updated": "2026-10-22",
+  "about": "The post formats the X planner (tools/x_plan.mjs) rotates and the library renderer (tools/library.mjs) exports. Sizes are device pixels. Each format names the canon kind it accepts, how it is cut, the preflight kind and anchor, the X-engine designFormat it hands off as (system/x/x-handoff.schema.json), and its series stage. Built on system/variety/x-post-formats.json (the 29-account benchmark) and the post canon (knowledge/founder/canon/post-component.md: equal left/top insets, bleed right and bottom, no bottom margin; 3 strips + one full image from the cprodb verdict).",
+  "rules": {
+    "exportLongSideMin": 2000,
+    "maxImageMB": 5,
+    "mediaPerPostMax": 4,
+    "insetsEqual": "a crop's canvas insets are equal on its anchored corner (+-2px); the window bleeds off the other two edges by >= 5% (founder, cadence-xpost r1)",
+    "cutAtGutter": "every crop edge falls in a gutter: no text line, chip, avatar or button cut (designers-eye DE-02, DE-07); tools/library.mjs snaps crop edges to the nearest gutter",
+    "feedCheck": "look at every media item at X's 514px feed tile before planning it (XP-28)",
+    "noTextInMedia": "no headline text added to the media; the caption carries the words (XP-12)",
+    "exportWidthPreferred": 3840,
+    "exportNote": "single stills export at 3840 px wide (XS-12); everything >= 2000 px on the long side (XP-11)"
+  },
+  "formats": [
+    {
+      "id": "hero-still",
+      "title": "hero section, one still",
+      "media": 1,
+      "canvas": [
+        3840,
+        2400
+      ],
+      "kinds": [
+        "hero-light",
+        "hero-dark"
+      ],
+      "render": {
+        "viewport": [
+          1440,
+          900
+        ],
+        "scale": 2.6667
+      },
+      "preflight": {
+        "kind": "<asset kind>",
+        "artboard": true
+      },
+      "xEngineFormat": "single-still",
+      "feed": "single landscape at native 16:10, full width 514x321",
+      "crop": "the whole 1440x900 fold; the fold already ends on a progressive blur or a deliberate cut (fold.end)",
+      "seriesStage": "hero",
+      "ratioRange": [
+        1.33,
+        1.78
+      ],
+      "note": "the hero renders at its own frame (h4a: 1440x1035 at 2x = 2880x2070, 1.39); 16:10 is the default fold",
+      "multiplierKey": "single-landscape"
+    },
+    {
+      "id": "hero-reel",
+      "title": "hero load-in, video",
+      "media": 1,
+      "canvas": [
+        2880,
+        1800
+      ],
+      "video": {
+        "fps": 60,
+        "seconds": [
+          8,
+          12
+        ],
+        "tool": "node tools/record.mjs <url> --name <asset> --scale 2 --duration 10 --preset x"
+      },
+      "kinds": [
+        "hero-light",
+        "hero-dark"
+      ],
+      "preflight": {
+        "kind": "<asset kind>",
+        "artboard": true
+      },
+      "xEngineFormat": "hero-reel",
+      "feed": "16:10 video, poster frame = the settled hero (XP-03)",
+      "crop": "the fold; first frame is the money frame",
+      "seriesStage": "motion",
+      "phase2": "the X engine needs object storage for MP4 before it can post this (knowledge/x/x-engine-audit.md 4.6)",
+      "ratioRange": [
+        1.33,
+        1.78
+      ],
+      "note": "the hero renders at its own frame (h4a: 1440x1035 at 2x = 2880x2070, 1.39); 16:10 is the default fold",
+      "multiplierKey": "video-loop",
+      "multiplierKeyFollow": "video-followup-quote"
+    },
+    {
+      "id": "dashboard-closeup",
+      "title": "one region of a product view, close",
+      "media": 1,
+      "canvas": [
+        2160,
+        2592
+      ],
+      "alt_canvas": [
+        [
+          2160,
+          2160
+        ]
+      ],
+      "ratio": "5:6 portrait (the tallest X shows uncut, XP-07) or 1:1",
+      "kinds": [
+        "product-ui"
+      ],
+      "render": {
+        "via": "#/xframe",
+        "scaleTo": "long side >= 2160"
+      },
+      "preflight": {
+        "kind": "product-ui",
+        "artboard": true,
+        "anchor": "the corner shown (tl|tr|bl|br)"
+      },
+      "xEngineFormat": "single-still",
+      "feed": "single portrait at native 5:6, 514x617",
+      "crop": "the window's anchored corner with equal canvas insets on its two edges (40-56px at 1x); the window bleeds off the other two; every edge snapped to a gutter. 2-3x the scale of the full shot in the feed",
+      "seriesStage": "closeup",
+      "ratioRange": [
+        0.8,
+        1.0
+      ],
+      "multiplierKey": "single-portrait"
+    },
+    {
+      "id": "dashboard-full",
+      "title": "the whole product view on its canvas",
+      "media": 1,
+      "canvas": [
+        3840,
+        2571
+      ],
+      "ratio": "the source canvas (cprodb: 1392x932 at 2.7587x = 3840x2571, about 3:2)",
+      "kinds": [
+        "product-ui"
+      ],
+      "render": {
+        "viewport": "<source>",
+        "scale": 2.7587
+      },
+      "preflight": {
+        "kind": "product-ui",
+        "artboard": true,
+        "anchor": "all"
+      },
+      "xEngineFormat": "single-still",
+      "feed": "single landscape at native 3:2, 514x343",
+      "crop": "equal canvas margin on all four sides (56px at 1x on cprodb)",
+      "seriesStage": "full",
+      "ratioRange": [
+        1.3,
+        1.6
+      ],
+      "multiplierKey": "single-landscape"
+    },
+    {
+      "id": "dashboard-strips-3",
+      "title": "the full view cut into thirds, a swipeable carousel",
+      "media": 3,
+      "canvas": [
+        1280,
+        2571
+      ],
+      "strip": [
+        1280,
+        2571
+      ],
+      "ratio": "one third of the full canvas each (464x932 at 2.7587x = 1280x2571)",
+      "kinds": [
+        "product-ui",
+        "section-bento"
+      ],
+      "render": {
+        "from": "dashboard-full",
+        "cut": "thirds",
+        "scale": 2.7587
+      },
+      "preflight": {
+        "kind": "product-ui",
+        "artboard": true,
+        "anchor": "all",
+        "seams": "thirds"
+      },
+      "xEngineFormat": "strips-3",
+      "feed": "3-up: strip 1 shows as a 7:8 tile (its middle 56%), strips 2-3 as 16:9 tiles (their middle 28%); the lightbox shows each whole. Lead with the strongest strip",
+      "crop": "equal thirds of the full canvas; seams fall in gutters where they can (post.seams WARN)",
+      "seriesStage": "strips",
+      "multiplierKey": "carousel-3-vertical-thirds"
+    },
+    {
+      "id": "full-plus-strips",
+      "title": "the full view first, then its three strips",
+      "media": 4,
+      "canvas": [
+        3840,
+        2571
+      ],
+      "strip": [
+        1280,
+        2571
+      ],
+      "kinds": [
+        "product-ui"
+      ],
+      "render": {
+        "from": [
+          "dashboard-full",
+          "dashboard-strips-3"
+        ]
+      },
+      "preflight": {
+        "kind": "product-ui",
+        "artboard": true,
+        "anchor": "all",
+        "seams": "thirds"
+      },
+      "xEngineFormat": "full-plus-strips",
+      "feed": "4-up: four 16:9 tiles (the full shows almost whole, strips show their middle band)",
+      "crop": "as dashboard-full + dashboard-strips-3",
+      "seriesStage": "strips",
+      "multiplierKey": "carousel-4-mixed-crops"
+    },
+    {
+      "id": "bento-still",
+      "title": "a bento or feature section, one still",
+      "media": 1,
+      "canvas": [
+        3840,
+        3200
+      ],
+      "kinds": [
+        "section-bento"
+      ],
+      "render": {
+        "viewport": "<source>",
+        "scale": 2.6667
+      },
+      "preflight": {
+        "kind": "section-bento",
+        "artboard": true
+      },
+      "xEngineFormat": "single-still",
+      "feed": "single landscape at native 6:5, 514x428",
+      "crop": "the whole section with its own margins",
+      "seriesStage": "section",
+      "ratioRange": [
+        1.1,
+        1.78
+      ],
+      "multiplierKey": "single-landscape"
+    },
+    {
+      "id": "bento-cell",
+      "title": "one bento cell, close",
+      "media": 1,
+      "canvas": [
+        2400,
+        2160
+      ],
+      "kinds": [
+        "section-bento"
+      ],
+      "render": {
+        "via": "#/xframe",
+        "scaleTo": "long side >= 2160"
+      },
+      "preflight": {
+        "kind": "section-bento",
+        "artboard": true,
+        "anchor": "all"
+      },
+      "xEngineFormat": "single-still",
+      "feed": "single landscape about 10:9",
+      "crop": "the cell with equal page margin on all four sides",
+      "seriesStage": "closeup",
+      "multiplierKey": "single-landscape"
+    },
+    {
+      "id": "section-still",
+      "title": "another section alone: pricing, FAQ, footer, testimonials, changelog, CTA",
+      "media": 1,
+      "canvas": [
+        2880,
+        1800
+      ],
+      "kinds": [
+        "full-website",
+        "section-bento"
+      ],
+      "render": {
+        "viewport": "<source>",
+        "scale": 2
+      },
+      "preflight": {
+        "kind": "<asset kind>",
+        "artboard": true
+      },
+      "xEngineFormat": "single-still",
+      "feed": "single landscape 16:10",
+      "crop": "the section with its own margins; never a tall full page (XP-23)",
+      "seriesStage": "section",
+      "ratioRange": [
+        1.1,
+        1.78
+      ],
+      "multiplierKey": "single-landscape"
+    },
+    {
+      "id": "component-still",
+      "title": "one component mid-interaction (post canon)",
+      "media": 1,
+      "canvas": [
+        2400,
+        2400
+      ],
+      "alt_canvas": [
+        [
+          2400,
+          1600
+        ]
+      ],
+      "kinds": [
+        "post-component"
+      ],
+      "render": {
+        "viewport": [
+          1200,
+          1200
+        ],
+        "scale": 2
+      },
+      "preflight": {
+        "kind": "post-component",
+        "artboard": true
+      },
+      "xEngineFormat": "single-still",
+      "feed": "single square 514x514",
+      "crop": "the component at ~1.5x in its tray, 50-70% of the frame, on #fbfbfb (post-component canon)",
+      "seriesStage": "component",
+      "multiplierKey": "single-square"
+    },
+    {
+      "id": "component-loop",
+      "title": "one component doing its one job, video",
+      "media": 1,
+      "canvas": [
+        2400,
+        2400
+      ],
+      "video": {
+        "fps": 60,
+        "seconds": [
+          8,
+          12
+        ],
+        "tool": "node tools/record.mjs <url> --name <asset> --preset x"
+      },
+      "kinds": [
+        "post-component"
+      ],
+      "preflight": {
+        "kind": "post-component",
+        "artboard": true
+      },
+      "xEngineFormat": "component-loop",
+      "feed": "square video, poster = the finished state",
+      "crop": "as component-still",
+      "seriesStage": "motion",
+      "phase2": "MP4 hand-off needs the X engine's phase 2",
+      "multiplierKey": "video-loop",
+      "multiplierKeyFollow": "video-followup-quote"
+    },
+    {
+      "id": "pair-7x8",
+      "title": "light and dark (or two states) side by side",
+      "media": 2,
+      "canvas": [
+        1760,
+        2000
+      ],
+      "kinds": [
+        "product-ui",
+        "post-component",
+        "section-bento"
+      ],
+      "render": {
+        "via": "#/xframe",
+        "scale": 2
+      },
+      "preflight": {
+        "kind": "<asset kind>",
+        "artboard": true
+      },
+      "xEngineFormat": "pair-7x8",
+      "feed": "two 7:8 tiles 256x289, shown uncut",
+      "crop": "the subject centred in each tile with >= 8% margin (XP-04, XP-24)",
+      "seriesStage": "variant",
+      "multiplierKey": "carousel-2-portrait-pair"
+    },
+    {
+      "id": "grid-4-16x9",
+      "title": "four sections of one site",
+      "media": 4,
+      "canvas": [
+        2400,
+        1350
+      ],
+      "kinds": [
+        "full-website"
+      ],
+      "render": {
+        "via": "#/xframe",
+        "scale": 2
+      },
+      "preflight": {
+        "kind": "full-website",
+        "artboard": true
+      },
+      "xEngineFormat": "grid-4-16x9",
+      "feed": "2x2 grid of 16:9 tiles, centre-cropped; crop each to its moment (XP-06)",
+      "crop": "four 1200x675 section crops sharing one canvas tone",
+      "seriesStage": "site",
+      "multiplierKey": "carousel-4-mixed-crops"
+    }
+  ]
+}

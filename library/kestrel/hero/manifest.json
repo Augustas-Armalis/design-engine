@@ -1,0 +1,91 @@
+{
+  "schema": "design-engine.library-asset/v1",
+  "id": "kestrel-hero",
+  "project": "kestrel",
+  "title": "Kestrel hero over its full dashboard",
+  "kind": "hero-light",
+  "status": "accepted",
+  "postable": false,
+  "verdict": {
+    "latest": "accept",
+    "round": null,
+    "date": "2026-10-08",
+    "words": "not bad not bad... other than that it's fucking awesome what you did",
+    "ledger": "ledger/entries/kestrel.json"
+  },
+  "source": {
+    "app": "work/kestrel/app",
+    "route": "/",
+    "component": "work/kestrel/app/src/App.tsx",
+    "viewport": [
+      1440,
+      900
+    ],
+    "direction": "work/kestrel/DIRECTION.md",
+    "devServer": "main checkout :4392",
+    "base": "http://localhost:4392/"
+  },
+  "renders": [
+    {
+      "file": "renders/hero.png",
+      "role": "single",
+      "format": "hero-still",
+      "from": "knowledge/engine-accepted/kestrel/kestrel-fold@2x.png",
+      "w": 2880,
+      "h": 1800,
+      "bytes": 443645,
+      "sha256": "5712519f8512eeea709c146cecbf5a4d495b22ec396ae0a10fe4684b8de473fb"
+    }
+  ],
+  "series": [],
+  "conceptName": "Kestrel",
+  "sample": true,
+  "alt": "Landing page hero for Kestrel, a fictional product: a centred title and buttons above a full product dashboard. Sample data, concept.",
+  "dates": {
+    "created": "2026-10-08",
+    "migrated": "2026-10-22",
+    "rendered": "2026-10-22"
+  },
+  "tags": [
+    "light",
+    "hero",
+    "accepted-floor"
+  ],
+  "subject": "hero",
+  "captionVars": {
+    "domain": "product analytics",
+    "ui": "hero",
+    "category": "analytics"
+  },
+  "checks": [
+    {
+      "label": "hero",
+      "route": "/",
+      "kind": "hero-light",
+      "w": 1440,
+      "h": 900,
+      "format": "hero-still",
+      "renders": [
+        "renders/hero.png"
+      ]
+    }
+  ],
+  "preflight": {
+    "ran": "2026-10-22T18:02:28.499Z",
+    "fail": 9,
+    "warn": 5,
+    "results": [
+      {
+        "label": "hero",
+        "route": "/",
+        "size": "1440x900",
+        "pass": 11,
+        "warn": 5,
+        "fail": 9,
+        "report": "preflight/1-hero.md",
+        "ran": "2026-10-22T18:02:28.493Z"
+      }
+    ]
+  },
+  "blockedBy": "9 preflight FAIL under the 2026-10-22 canon: h1 72/550/-0.045em against today's 50-60 / 400-500 band and a 54px CTA-to-product gap (canon drift since the accept), plus real items: the stock name 'Northwind' in the product, three heavy primaries, three labels off the optical band. Already posted 2026-10-08. Re-show only after a fix pass (rename the workspace, one ink primary)."
+}

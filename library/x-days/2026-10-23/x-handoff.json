@@ -1,0 +1,163 @@
+{
+  "schema": "larpo.x-handoff/v1",
+  "handoffId": "de-2026-10-23-sample",
+  "createdAt": "2026-10-22T18:06:54.770Z",
+  "day": "2026-10-23",
+  "timezone": "Europe/Vilnius",
+  "producer": {
+    "name": "design-engine",
+    "version": "ca138c2",
+    "operator": "augustas"
+  },
+  "assets": [
+    {
+      "assetId": "tempra-ask-closeup",
+      "designFormat": "single-still",
+      "kind": "product-ui",
+      "conceptName": "Tempra, Fernhill",
+      "sample": true,
+      "ledgerId": null,
+      "gate": {
+        "preflight": "pass",
+        "ranAt": "2026-10-22T17:48:00.912Z"
+      },
+      "series": {
+        "seriesId": "tempra-week",
+        "label": "closeup",
+        "index": 1
+      },
+      "media": [
+        {
+          "path": "../../tempra/ask-closeup/renders/closeup.png",
+          "name": "post-1.png",
+          "mime": "image/png",
+          "width": 2154,
+          "height": 2562,
+          "bytes": 464682,
+          "sha256": "77bf6bb5a8b6785b8e2c052ef50e7b4c384946ce173e0d92b320f7a0789904e1",
+          "role": "single",
+          "altText": "Close up of an ask panel in a fictional calendar app: a request to find 45 minutes with the design team next week, a note that five calendars were checked in four seconds, the answer that Friday 11:00 works for all five with no focus block moved, and the two best times ranked. Sample data, concept."
+        }
+      ]
+    },
+    {
+      "assetId": "tempra-hero-h4a",
+      "designFormat": "single-still",
+      "kind": "hero-light",
+      "conceptName": "Tempra, Fernhill",
+      "sample": true,
+      "ledgerId": "h4a",
+      "gate": {
+        "preflight": "pass",
+        "ranAt": "2026-10-22T17:58:46.347Z"
+      },
+      "series": {
+        "seriesId": "tempra-hero",
+        "label": "hero",
+        "index": 1
+      },
+      "media": [
+        {
+          "path": "../../tempra/hero-h4a/renders/hero.png",
+          "name": "post-1.png",
+          "mime": "image/png",
+          "width": 3840,
+          "height": 2760,
+          "bytes": 769987,
+          "sha256": "44fbb3d049b3b1247f71ebbdca25f2d183bdc5b3932086c8b8d06b1f67b255cf",
+          "role": "single",
+          "altText": "Landing page hero for Tempra, a fictional team calendar: a two line title, a short subtitle, a dark start button and a white secondary, and below them the product, a week view with an ask panel that found a slot for five people. Sample data, concept."
+        }
+      ]
+    },
+    {
+      "assetId": "tempra-bento-dark",
+      "designFormat": "single-still",
+      "kind": "section-bento",
+      "conceptName": "Tempra, Fernhill",
+      "sample": true,
+      "ledgerId": "cbentol",
+      "gate": {
+        "preflight": "pass",
+        "ranAt": "2026-10-22T18:00:03.656Z"
+      },
+      "series": {
+        "seriesId": "tempra-bento",
+        "label": "section",
+        "index": 1
+      },
+      "media": [
+        {
+          "path": "../../tempra/bento-dark/renders/bento.png",
+          "name": "post-1.png",
+          "mime": "image/png",
+          "width": 3840,
+          "height": 3200,
+          "bytes": 859519,
+          "sha256": "9e14ce7eb8a18929f0e035e8bae27b077fab777d8aa108029abd431e567bb426",
+          "role": "single",
+          "altText": "Dark feature section for Tempra, a fictional team calendar, in five cells: a week grid with a suggested meeting, a plain language request answered with ranked times, a focus time chart, a meeting moved with the reason, and a tilted list of connected calendars. Sample data, concept."
+        }
+      ]
+    }
+  ],
+  "posts": [
+    {
+      "postId": "augustasdesign-2026-10-23-0800",
+      "assetId": "tempra-ask-closeup",
+      "account": {
+        "profileId": "augustas",
+        "handle": "augustasdesign",
+        "channelId": null
+      },
+      "platform": "x",
+      "scheduledAt": "2026-10-23T08:00:00+03:00",
+      "caption": "ai scheduling panel, up close 👀",
+      "reply": "made at larpo.studio, concept",
+      "quotesPostId": null,
+      "approval": {
+        "state": "draft",
+        "designVerdict": "none",
+        "requireConfirm": true
+      }
+    },
+    {
+      "postId": "augustasdesign-2026-10-23-1430",
+      "assetId": "tempra-hero-h4a",
+      "account": {
+        "profileId": "augustas",
+        "handle": "augustasdesign",
+        "channelId": null
+      },
+      "platform": "x",
+      "scheduledAt": "2026-10-23T14:30:00+03:00",
+      "caption": "detailed hero for a team calendar 👀",
+      "reply": "made at larpo.studio, concept",
+      "quotesPostId": null,
+      "approval": {
+        "state": "draft",
+        "designVerdict": "partial",
+        "requireConfirm": true
+      }
+    },
+    {
+      "postId": "faulknerdesign-2026-10-23-1600",
+      "assetId": "tempra-bento-dark",
+      "account": {
+        "profileId": "faulkner",
+        "handle": "faulkner_Design",
+        "channelId": null
+      },
+      "platform": "x",
+      "scheduledAt": "2026-10-23T16:00:00+03:00",
+      "caption": "each cell shows one thing the product does. no filler cells.",
+      "reply": "concept for a team calendar. made at larpo.studio",
+      "quotesPostId": null,
+      "approval": {
+        "state": "draft",
+        "designVerdict": "accepted",
+        "requireConfirm": true
+      }
+    }
+  ]
+}

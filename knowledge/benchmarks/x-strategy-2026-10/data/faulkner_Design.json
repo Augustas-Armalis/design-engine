@@ -1,0 +1,791 @@
+{
+ "handle": "faulkner_Design",
+ "source": "https://api.fxtwitter.com/2/profile/faulkner_Design/statuses (public FixTweet mirror, cursor pages, no login)",
+ "fetched": "2026-10-22",
+ "author": {
+  "name": "Faulkner",
+  "followers": 4,
+  "following": 13,
+  "statuses": 42,
+  "media_count": 24,
+  "description": "co-founder @larpostudio / a full-stack web partner for SaaS and AI teams / web designer",
+  "joined": "Mon Oct 19 22:06:29 +0000 2020"
+ },
+ "count": 24,
+ "reposts_of_others": [
+  {
+   "id": "2107828128856867310",
+   "author": "rokasrem",
+   "created": "2026-10-07T13:39:22.000Z",
+   "media_n": 1
+  },
+  {
+   "id": "2099251049131303142",
+   "author": "augustasdesign",
+   "created": "2026-09-13T21:37:06.000Z",
+   "media_n": 1
+  },
+  {
+   "id": "2098067034537939298",
+   "author": "augustasdesign",
+   "created": "2026-09-10T15:12:15.000Z",
+   "media_n": 1
+  }
+ ],
+ "range": [
+  "2026-08-30T20:53:54.000Z",
+  "2026-10-15T05:00:21.000Z"
+ ],
+ "statuses": [
+  {
+   "id": "2110596617002725578",
+   "url": "https://x.com/Faulkner_Design/status/2110596617002725578",
+   "created": "2026-10-15T05:00:21.000Z",
+   "ts": 1792040421,
+   "author": "Faulkner_Design",
+   "text": "118 controls, one number. Too reductive?",
+   "lang": "en",
+   "is_reply": false,
+   "reply_to": null,
+   "self_reply": false,
+   "quote": null,
+   "likes": 2,
+   "reposts": 0,
+   "replies": 0,
+   "quotes": 0,
+   "bookmarks": 0,
+   "views": 22,
+   "media": [
+    {
+     "type": "photo",
+     "w": 3840,
+     "h": 2400,
+     "url": "https://pbs.twimg.com/media/HUpYcAvWwAAzB5d.jpg?name=orig"
+    }
+   ],
+   "links": [],
+   "note_tweet": false,
+   "src": "fixtweet-2026-10-22"
+  },
+  {
+   "id": "2110385285259203005",
+   "url": "https://x.com/Faulkner_Design/status/2110385285259203005",
+   "created": "2026-10-14T15:00:35.000Z",
+   "ts": 1791990035,
+   "author": "Faulkner_Design",
+   "text": "Every claim wired to its source. Overkill?",
+   "lang": "en",
+   "is_reply": false,
+   "reply_to": null,
+   "self_reply": false,
+   "quote": null,
+   "likes": 1,
+   "reposts": 0,
+   "replies": 0,
+   "quotes": 0,
+   "bookmarks": 0,
+   "views": 8,
+   "media": [
+    {
+     "type": "photo",
+     "w": 3840,
+     "h": 2400,
+     "url": "https://pbs.twimg.com/media/HUmYO2XXYAA4zuf.jpg?name=orig"
+    }
+   ],
+   "links": [],
+   "note_tweet": false,
+   "src": "fixtweet-2026-10-22"
+  },
+  {
+   "id": "2110022932885840321",
+   "url": "https://x.com/Faulkner_Design/status/2110022932885840321",
+   "created": "2026-10-13T15:00:44.000Z",
+   "ts": 1791903644,
+   "author": "Faulkner_Design",
+   "text": "Centered heroes are the safe choice. I didn’t take it.",
+   "lang": "en",
+   "is_reply": false,
+   "reply_to": null,
+   "self_reply": false,
+   "quote": null,
+   "likes": 2,
+   "reposts": 1,
+   "replies": 0,
+   "quotes": 0,
+   "bookmarks": 0,
+   "views": 10,
+   "media": [
+    {
+     "type": "photo",
+     "w": 3840,
+     "h": 2400,
+     "url": "https://pbs.twimg.com/media/HUhOrJJXcAAM_PV.jpg?name=orig"
+    }
+   ],
+   "links": [],
+   "note_tweet": false,
+   "src": "fixtweet-2026-10-22"
+  },
+  {
+   "id": "2109947342862328223",
+   "url": "https://x.com/Faulkner_Design/status/2109947342862328223",
+   "created": "2026-10-13T10:00:22.000Z",
+   "ts": 1791885622,
+   "author": "Faulkner_Design",
+   "text": "Revenue Analytics Landing",
+   "lang": "en",
+   "is_reply": false,
+   "reply_to": null,
+   "self_reply": false,
+   "quote": null,
+   "likes": 3,
+   "reposts": 1,
+   "replies": 0,
+   "quotes": 0,
+   "bookmarks": 0,
+   "views": 13,
+   "media": [
+    {
+     "type": "photo",
+     "w": 3840,
+     "h": 2400,
+     "url": "https://pbs.twimg.com/media/HUgJ7R6XIAAjdsv.jpg?name=orig"
+    }
+   ],
+   "links": [],
+   "note_tweet": false,
+   "src": "fixtweet-2026-10-22"
+  },
+  {
+   "id": "2104909912878751821",
+   "url": "https://x.com/Faulkner_Design/status/2104909912878751821",
+   "created": "2026-09-29T12:23:25.000Z",
+   "ts": 1790684605,
+   "author": "Faulkner_Design",
+   "text": "day 1 learning auto layout properly. rebuilt a hero from scratch: nav, hero, logo row. everything hugs, nothing is nudged by hand",
+   "lang": "en",
+   "is_reply": false,
+   "reply_to": null,
+   "self_reply": false,
+   "quote": null,
+   "likes": 2,
+   "reposts": 1,
+   "replies": 0,
+   "quotes": 0,
+   "bookmarks": 0,
+   "views": 19,
+   "media": [
+    {
+     "type": "photo",
+     "w": 2880,
+     "h": 1780,
+     "url": "https://pbs.twimg.com/media/HTYkZVrWAAAYMOL.png?name=orig"
+    }
+   ],
+   "links": [],
+   "note_tweet": false,
+   "src": "fixtweet-2026-10-22"
+  },
+  {
+   "id": "2102634724447404330",
+   "url": "https://x.com/Faulkner_Design/status/2102634724447404330",
+   "created": "2026-09-23T05:42:38.000Z",
+   "ts": 1790142158,
+   "author": "Faulkner_Design",
+   "text": "A dark mode SaaS hero concept.",
+   "lang": "es",
+   "is_reply": false,
+   "reply_to": null,
+   "self_reply": false,
+   "quote": null,
+   "likes": 2,
+   "reposts": 1,
+   "replies": 0,
+   "quotes": 0,
+   "bookmarks": 0,
+   "views": 36,
+   "media": [
+    {
+     "type": "photo",
+     "w": 2880,
+     "h": 2000,
+     "url": "https://pbs.twimg.com/media/HS4PGYHXkAAgWjM.jpg?name=orig"
+    }
+   ],
+   "links": [],
+   "note_tweet": false,
+   "src": "fixtweet-2026-10-22"
+  },
+  {
+   "id": "2102412735292039303",
+   "url": "https://x.com/Faulkner_Design/status/2102412735292039303",
+   "created": "2026-09-22T15:00:31.000Z",
+   "ts": 1790089231,
+   "author": "Faulkner_Design",
+   "text": "hero section concept, business os",
+   "lang": "en",
+   "is_reply": false,
+   "reply_to": null,
+   "self_reply": false,
+   "quote": null,
+   "likes": 3,
+   "reposts": 1,
+   "replies": 0,
+   "quotes": 0,
+   "bookmarks": 0,
+   "views": 33,
+   "media": [
+    {
+     "type": "photo",
+     "w": 2880,
+     "h": 1780,
+     "url": "https://pbs.twimg.com/media/HS1FPbNW0AAt3mh.jpg?name=orig"
+    }
+   ],
+   "links": [],
+   "note_tweet": false,
+   "src": "fixtweet-2026-10-22"
+  },
+  {
+   "id": "2102050722510405837",
+   "url": "https://x.com/Faulkner_Design/status/2102050722510405837",
+   "created": "2026-09-21T15:02:01.000Z",
+   "ts": 1790002921,
+   "author": "Faulkner_Design",
+   "text": "hero section concept, ai image search",
+   "lang": "fr",
+   "is_reply": false,
+   "reply_to": null,
+   "self_reply": false,
+   "quote": null,
+   "likes": 4,
+   "reposts": 2,
+   "replies": 0,
+   "quotes": 0,
+   "bookmarks": 0,
+   "views": 38,
+   "media": [
+    {
+     "type": "photo",
+     "w": 2880,
+     "h": 1780,
+     "url": "https://pbs.twimg.com/media/HSv7_Y_XYAEOOz6.jpg?name=orig"
+    }
+   ],
+   "links": [],
+   "note_tweet": false,
+   "src": "fixtweet-2026-10-22",
+   "self_reposted": true,
+   "bump_lag_hours": [
+    0,
+    24
+   ]
+  },
+  {
+   "id": "2101974939108618312",
+   "url": "https://x.com/Faulkner_Design/status/2101974939108618312",
+   "created": "2026-09-21T10:00:52.000Z",
+   "ts": 1789984852,
+   "author": "Faulkner_Design",
+   "text": "same product, different structure. concept.",
+   "lang": "en",
+   "is_reply": false,
+   "reply_to": null,
+   "self_reply": false,
+   "quote": null,
+   "likes": 3,
+   "reposts": 2,
+   "replies": 0,
+   "quotes": 0,
+   "bookmarks": 0,
+   "views": 24,
+   "media": [
+    {
+     "type": "photo",
+     "w": 2880,
+     "h": 1780,
+     "url": "https://pbs.twimg.com/media/HSu3EPbWwAQXWWY.jpg?name=orig"
+    }
+   ],
+   "links": [],
+   "note_tweet": false,
+   "src": "fixtweet-2026-10-22"
+  },
+  {
+   "id": "2101899272127942976",
+   "url": "https://x.com/Faulkner_Design/status/2101899272127942976",
+   "created": "2026-09-21T05:00:12.000Z",
+   "ts": 1789966812,
+   "author": "Faulkner_Design",
+   "text": "hero section concept",
+   "lang": "en",
+   "is_reply": false,
+   "reply_to": null,
+   "self_reply": false,
+   "quote": null,
+   "likes": 3,
+   "reposts": 1,
+   "replies": 0,
+   "quotes": 0,
+   "bookmarks": 0,
+   "views": 27,
+   "media": [
+    {
+     "type": "photo",
+     "w": 2880,
+     "h": 1780,
+     "url": "https://pbs.twimg.com/media/HStyP6EXUAAlDqa.jpg?name=orig"
+    }
+   ],
+   "links": [],
+   "note_tweet": false,
+   "src": "fixtweet-2026-10-22"
+  },
+  {
+   "id": "2099883081922416753",
+   "url": "https://x.com/Faulkner_Design/status/2099883081922416753",
+   "created": "2026-09-15T15:28:35.000Z",
+   "ts": 1789486115,
+   "author": "Faulkner_Design",
+   "text": "A great dashboard tells you what needs to happen next",
+   "lang": "en",
+   "is_reply": false,
+   "reply_to": null,
+   "self_reply": false,
+   "quote": null,
+   "likes": 4,
+   "reposts": 2,
+   "replies": 1,
+   "quotes": 0,
+   "bookmarks": 0,
+   "views": 50,
+   "media": [
+    {
+     "type": "photo",
+     "w": 3420,
+     "h": 2126,
+     "url": "https://pbs.twimg.com/media/HSRIgzcW8AIP46u.jpg?name=orig"
+    }
+   ],
+   "links": [],
+   "note_tweet": false,
+   "src": "fixtweet-2026-10-22",
+   "self_reposted": true,
+   "bump_lag_hours": [
+    0,
+    133.5
+   ]
+  },
+  {
+   "id": "2095527689226506271",
+   "url": "https://x.com/Faulkner_Design/status/2095527689226506271",
+   "created": "2026-09-03T15:01:48.000Z",
+   "ts": 1788447708,
+   "author": "Faulkner_Design",
+   "text": "hero section concept, split layout",
+   "lang": "en",
+   "is_reply": false,
+   "reply_to": null,
+   "self_reply": false,
+   "quote": null,
+   "likes": 4,
+   "reposts": 1,
+   "replies": 0,
+   "quotes": 0,
+   "bookmarks": 0,
+   "views": 43,
+   "media": [
+    {
+     "type": "photo",
+     "w": 1440,
+     "h": 890,
+     "url": "https://pbs.twimg.com/media/HRTPVC0WYAI4o3V.jpg?name=orig"
+    }
+   ],
+   "links": [],
+   "note_tweet": false,
+   "src": "fixtweet-2026-10-22"
+  },
+  {
+   "id": "2095451953622810711",
+   "url": "https://x.com/Faulkner_Design/status/2095451953622810711",
+   "created": "2026-09-03T10:00:52.000Z",
+   "ts": 1788429652,
+   "author": "Faulkner_Design",
+   "text": "landing page concept for a writing tool",
+   "lang": "en",
+   "is_reply": false,
+   "reply_to": null,
+   "self_reply": false,
+   "quote": null,
+   "likes": 4,
+   "reposts": 1,
+   "replies": 0,
+   "quotes": 0,
+   "bookmarks": 0,
+   "views": 24,
+   "media": [
+    {
+     "type": "photo",
+     "w": 1440,
+     "h": 890,
+     "url": "https://pbs.twimg.com/media/HRSKcnbXUAQMR4P.jpg?name=orig"
+    }
+   ],
+   "links": [],
+   "note_tweet": false,
+   "src": "fixtweet-2026-10-22"
+  },
+  {
+   "id": "2095376325070495852",
+   "url": "https://x.com/Faulkner_Design/status/2095376325070495852",
+   "created": "2026-09-03T05:00:20.000Z",
+   "ts": 1788411620,
+   "author": "Faulkner_Design",
+   "text": "dark hero concept for a field ops tool",
+   "lang": "en",
+   "is_reply": false,
+   "reply_to": null,
+   "self_reply": false,
+   "quote": null,
+   "likes": 5,
+   "reposts": 1,
+   "replies": 1,
+   "quotes": 0,
+   "bookmarks": 0,
+   "views": 26,
+   "media": [
+    {
+     "type": "photo",
+     "w": 1440,
+     "h": 890,
+     "url": "https://pbs.twimg.com/media/HRRFqeuWkAI7L2C.jpg?name=orig"
+    }
+   ],
+   "links": [],
+   "note_tweet": false,
+   "src": "fixtweet-2026-10-22"
+  },
+  {
+   "id": "2095165148797219099",
+   "url": "https://x.com/Faulkner_Design/status/2095165148797219099",
+   "created": "2026-09-02T15:01:12.000Z",
+   "ts": 1788361272,
+   "author": "Faulkner_Design",
+   "text": "hero concept for event operations",
+   "lang": "en",
+   "is_reply": false,
+   "reply_to": null,
+   "self_reply": false,
+   "quote": null,
+   "likes": 3,
+   "reposts": 1,
+   "replies": 0,
+   "quotes": 0,
+   "bookmarks": 0,
+   "views": 20,
+   "media": [
+    {
+     "type": "photo",
+     "w": 1440,
+     "h": 890,
+     "url": "https://pbs.twimg.com/media/HROFmYpXYAImROv.jpg?name=orig"
+    }
+   ],
+   "links": [],
+   "note_tweet": false,
+   "src": "fixtweet-2026-10-22"
+  },
+  {
+   "id": "2095089529870770276",
+   "url": "https://x.com/Faulkner_Design/status/2095089529870770276",
+   "created": "2026-09-02T10:00:43.000Z",
+   "ts": 1788343243,
+   "author": "Faulkner_Design",
+   "text": "landing page concept for a reference archive",
+   "lang": "en",
+   "is_reply": false,
+   "reply_to": null,
+   "self_reply": false,
+   "quote": null,
+   "likes": 3,
+   "reposts": 1,
+   "replies": 0,
+   "quotes": 0,
+   "bookmarks": 0,
+   "views": 18,
+   "media": [
+    {
+     "type": "photo",
+     "w": 1440,
+     "h": 890,
+     "url": "https://pbs.twimg.com/media/HRNA0zeXYAIjTpy.jpg?name=orig"
+    }
+   ],
+   "links": [],
+   "note_tweet": false,
+   "src": "fixtweet-2026-10-22"
+  },
+  {
+   "id": "2095013893156262061",
+   "url": "https://x.com/Faulkner_Design/status/2095013893156262061",
+   "created": "2026-09-02T05:00:10.000Z",
+   "ts": 1788325210,
+   "author": "Faulkner_Design",
+   "text": "hero section concept for outdoor work planning",
+   "lang": "en",
+   "is_reply": false,
+   "reply_to": null,
+   "self_reply": false,
+   "quote": null,
+   "likes": 4,
+   "reposts": 1,
+   "replies": 0,
+   "quotes": 0,
+   "bookmarks": 0,
+   "views": 24,
+   "media": [
+    {
+     "type": "photo",
+     "w": 1440,
+     "h": 890,
+     "url": "https://pbs.twimg.com/media/HRL8CFNW8AEypmE.jpg?name=orig"
+    }
+   ],
+   "links": [],
+   "note_tweet": false,
+   "src": "fixtweet-2026-10-22"
+  },
+  {
+   "id": "2094802854976356421",
+   "url": "https://x.com/Faulkner_Design/status/2094802854976356421",
+   "created": "2026-09-01T15:01:34.000Z",
+   "ts": 1788274894,
+   "author": "Faulkner_Design",
+   "text": "recent hero exploration",
+   "lang": "es",
+   "is_reply": false,
+   "reply_to": null,
+   "self_reply": false,
+   "quote": null,
+   "likes": 6,
+   "reposts": 2,
+   "replies": 1,
+   "quotes": 0,
+   "bookmarks": 0,
+   "views": 41,
+   "media": [
+    {
+     "type": "photo",
+     "w": 1440,
+     "h": 890,
+     "url": "https://pbs.twimg.com/media/HRI8F_wWgAATfNs.jpg?name=orig"
+    }
+   ],
+   "links": [],
+   "note_tweet": false,
+   "src": "fixtweet-2026-10-22",
+   "self_reposted": true,
+   "bump_lag_hours": [
+    14,
+    19
+   ]
+  },
+  {
+   "id": "2094727079463927879",
+   "url": "https://x.com/Faulkner_Design/status/2094727079463927879",
+   "created": "2026-09-01T10:00:28.000Z",
+   "ts": 1788256828,
+   "author": "Faulkner_Design",
+   "text": "landing page concept for a team tool",
+   "lang": "en",
+   "is_reply": false,
+   "reply_to": null,
+   "self_reply": false,
+   "quote": null,
+   "likes": 5,
+   "reposts": 1,
+   "replies": 0,
+   "quotes": 0,
+   "bookmarks": 0,
+   "views": 25,
+   "media": [
+    {
+     "type": "photo",
+     "w": 1440,
+     "h": 890,
+     "url": "https://pbs.twimg.com/media/HRH3LajW8AA_QZG.jpg?name=orig"
+    }
+   ],
+   "links": [],
+   "note_tweet": false,
+   "src": "fixtweet-2026-10-22"
+  },
+  {
+   "id": "2094651503508136195",
+   "url": "https://x.com/Faulkner_Design/status/2094651503508136195",
+   "created": "2026-09-01T05:00:09.000Z",
+   "ts": 1788238809,
+   "author": "Faulkner_Design",
+   "text": "hero section concept",
+   "lang": "en",
+   "is_reply": false,
+   "reply_to": null,
+   "self_reply": false,
+   "quote": null,
+   "likes": 5,
+   "reposts": 1,
+   "replies": 1,
+   "quotes": 0,
+   "bookmarks": 0,
+   "views": 57,
+   "media": [
+    {
+     "type": "photo",
+     "w": 1440,
+     "h": 890,
+     "url": "https://pbs.twimg.com/media/HRGycS-WkAA-3H5.jpg?name=orig"
+    }
+   ],
+   "links": [],
+   "note_tweet": false,
+   "src": "fixtweet-2026-10-22"
+  },
+  {
+   "id": "2094490953704681526",
+   "url": "https://x.com/Faulkner_Design/status/2094490953704681526",
+   "created": "2026-08-31T18:22:11.000Z",
+   "ts": 1788200531,
+   "author": "Faulkner_Design",
+   "text": "hero section concept, warm palette",
+   "lang": "en",
+   "is_reply": false,
+   "reply_to": null,
+   "self_reply": false,
+   "quote": null,
+   "likes": 3,
+   "reposts": 1,
+   "replies": 0,
+   "quotes": 0,
+   "bookmarks": 0,
+   "views": 115,
+   "media": [
+    {
+     "type": "photo",
+     "w": 1440,
+     "h": 890,
+     "url": "https://pbs.twimg.com/media/HREgaVKXkAA42SN.jpg?name=orig"
+    }
+   ],
+   "links": [],
+   "note_tweet": false,
+   "src": "fixtweet-2026-10-22"
+  },
+  {
+   "id": "2094397979029365189",
+   "url": "https://x.com/Faulkner_Design/status/2094397979029365189",
+   "created": "2026-08-31T12:12:44.000Z",
+   "ts": 1788178364,
+   "author": "Faulkner_Design",
+   "text": "the price sits in the hero. most furniture sites make you click twice to find it.",
+   "lang": "en",
+   "is_reply": false,
+   "reply_to": null,
+   "self_reply": false,
+   "quote": null,
+   "likes": 3,
+   "reposts": 2,
+   "replies": 0,
+   "quotes": 0,
+   "bookmarks": 0,
+   "views": 60,
+   "media": [
+    {
+     "type": "photo",
+     "w": 1440,
+     "h": 890,
+     "url": "https://pbs.twimg.com/media/HRDL1EtWcAAc3e5.jpg?name=orig"
+    }
+   ],
+   "links": [],
+   "note_tweet": false,
+   "src": "fixtweet-2026-10-22",
+   "self_reposted": true,
+   "bump_lag_hours": [
+    6.2,
+    16.8
+   ]
+  },
+  {
+   "id": "2094319394490875955",
+   "url": "https://x.com/Faulkner_Design/status/2094319394490875955",
+   "created": "2026-08-31T07:00:28.000Z",
+   "ts": 1788159628,
+   "author": "Faulkner_Design",
+   "text": "you can sell a camera without naming a single spec.",
+   "lang": "en",
+   "is_reply": false,
+   "reply_to": null,
+   "self_reply": false,
+   "quote": null,
+   "likes": 3,
+   "reposts": 2,
+   "replies": 0,
+   "quotes": 0,
+   "bookmarks": 0,
+   "views": 81,
+   "media": [
+    {
+     "type": "photo",
+     "w": 1440,
+     "h": 890,
+     "url": "https://pbs.twimg.com/media/HRCD9CsWUAEOqqe.jpg?name=orig"
+    }
+   ],
+   "links": [],
+   "note_tweet": false,
+   "src": "fixtweet-2026-10-22",
+   "self_reposted": true,
+   "bump_lag_hours": [
+    0,
+    5.2
+   ]
+  },
+  {
+   "id": "2094166746898776368",
+   "url": "https://x.com/Faulkner_Design/status/2094166746898776368",
+   "created": "2026-08-30T20:53:54.000Z",
+   "ts": 1788123234,
+   "author": "Faulkner_Design",
+   "text": "most cabin sites sell the room. this one sells the drive out.",
+   "lang": "en",
+   "is_reply": false,
+   "reply_to": null,
+   "self_reply": false,
+   "quote": null,
+   "likes": 3,
+   "reposts": 2,
+   "replies": 0,
+   "quotes": 0,
+   "bookmarks": 0,
+   "views": 133,
+   "media": [
+    {
+     "type": "photo",
+     "w": 1920,
+     "h": 1080,
+     "url": "https://pbs.twimg.com/media/HQ_4zrJWIAAQ1wa.jpg?name=orig"
+    }
+   ],
+   "links": [],
+   "note_tweet": false,
+   "src": "fixtweet-2026-10-22",
+   "self_reposted": true,
+   "bump_lag_hours": [
+    0,
+    10.1
+   ]
+  }
+ ]
+}

@@ -1,0 +1,305 @@
+{
+  "schema": "design-engine.library-index/v1",
+  "generated": "2026-10-22T18:06:54.491Z",
+  "projects": [
+    {
+      "id": "kestrel",
+      "name": "Kestrel",
+      "fictional": true,
+      "series": []
+    },
+    {
+      "id": "quorum",
+      "name": "Quorum",
+      "fictional": true,
+      "series": []
+    },
+    {
+      "id": "tempra",
+      "name": "Tempra",
+      "fictional": true,
+      "series": [
+        {
+          "id": "tempra-week",
+          "title": "the Tempra week view: one answer up close, the whole product, in thirds, then moving",
+          "stages": [
+            "closeup",
+            "full",
+            "strips",
+            "motion"
+          ],
+          "assets": {
+            "closeup": "tempra-ask-closeup",
+            "full": "tempra-product-week",
+            "strips": "tempra-product-week",
+            "motion": null
+          },
+          "motionToMake": "a load-in of #/cprodb (window, KPI digits roll, the week fills, the Ask answer types) recorded with tools/record.mjs --preset x; build the motion first (canon/motion.md)"
+        },
+        {
+          "id": "tempra-hero",
+          "title": "the Tempra hero, then its load-in",
+          "stages": [
+            "hero",
+            "motion"
+          ],
+          "assets": {
+            "hero": "tempra-hero-h4a",
+            "motion": null
+          },
+          "motionToMake": "tools/record.mjs on #/h4a once a load-in is built (hero-reel)"
+        },
+        {
+          "id": "tempra-bento",
+          "title": "the Tempra dark bento, then one cell up close",
+          "stages": [
+            "section",
+            "closeup"
+          ],
+          "assets": {
+            "section": "tempra-bento-dark",
+            "closeup": null
+          },
+          "closeupToMake": "one cell of #/cbentol through #/xframe at 2x+ with equal margins (bento-cell), e.g. the 'conflicts settle themselves' cell"
+        }
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "id": "kestrel-hero",
+      "project": "kestrel",
+      "title": "Kestrel hero over its full dashboard",
+      "kind": "hero-light",
+      "status": "accepted",
+      "postable": false,
+      "verdict": "accept",
+      "formats": [
+        "hero-still"
+      ],
+      "series": [],
+      "sampleDay": null,
+      "preflightFail": 9,
+      "dir": "library/kestrel/hero",
+      "renders": [
+        {
+          "file": "library/kestrel/hero/renders/hero.png",
+          "role": "single",
+          "format": "hero-still",
+          "w": 2880,
+          "h": 1800
+        }
+      ]
+    },
+    {
+      "id": "quorum-hero",
+      "project": "quorum",
+      "title": "Quorum product-first split hero",
+      "kind": "hero-light",
+      "status": "accepted",
+      "postable": false,
+      "verdict": "accept",
+      "formats": [
+        "hero-still"
+      ],
+      "series": [],
+      "sampleDay": null,
+      "preflightFail": 9,
+      "dir": "library/quorum/hero",
+      "renders": [
+        {
+          "file": "library/quorum/hero/renders/hero.png",
+          "role": "single",
+          "format": "hero-still",
+          "w": 2880,
+          "h": 1800
+        }
+      ]
+    },
+    {
+      "id": "tempra-ask-closeup",
+      "project": "tempra",
+      "title": "Tempra Ask rail, close: the answer for five calendars",
+      "kind": "product-ui",
+      "status": "awaiting-verdict",
+      "postable": true,
+      "verdict": null,
+      "formats": [
+        "dashboard-closeup"
+      ],
+      "series": [
+        {
+          "id": "tempra-week",
+          "stage": "closeup"
+        }
+      ],
+      "sampleDay": "2026-10-23",
+      "preflightFail": 0,
+      "dir": "library/tempra/ask-closeup",
+      "renders": [
+        {
+          "file": "library/tempra/ask-closeup/renders/closeup.png",
+          "role": "single",
+          "format": "dashboard-closeup",
+          "w": 2154,
+          "h": 2562
+        }
+      ]
+    },
+    {
+      "id": "tempra-bento-dark",
+      "project": "tempra",
+      "title": "Tempra dark feature bento",
+      "kind": "section-bento",
+      "status": "accepted",
+      "postable": true,
+      "verdict": "accept",
+      "formats": [
+        "bento-still"
+      ],
+      "series": [
+        {
+          "id": "tempra-bento",
+          "stage": "section"
+        }
+      ],
+      "sampleDay": null,
+      "preflightFail": 0,
+      "dir": "library/tempra/bento-dark",
+      "renders": [
+        {
+          "file": "library/tempra/bento-dark/renders/bento.png",
+          "role": "single",
+          "format": "bento-still",
+          "w": 3840,
+          "h": 3200
+        }
+      ]
+    },
+    {
+      "id": "tempra-hero-h4a",
+      "project": "tempra",
+      "title": "Tempra hero: every meeting finds its own hour",
+      "kind": "hero-light",
+      "status": "awaiting-verdict",
+      "postable": true,
+      "verdict": "partial",
+      "formats": [
+        "hero-still"
+      ],
+      "series": [
+        {
+          "id": "tempra-hero",
+          "stage": "hero"
+        }
+      ],
+      "sampleDay": null,
+      "preflightFail": 0,
+      "dir": "library/tempra/hero-h4a",
+      "renders": [
+        {
+          "file": "library/tempra/hero-h4a/renders/hero.png",
+          "role": "single",
+          "format": "hero-still",
+          "w": 3840,
+          "h": 2760
+        }
+      ]
+    },
+    {
+      "id": "tempra-product-week",
+      "project": "tempra",
+      "title": "Tempra week view with the Ask rail, full and in thirds",
+      "kind": "product-ui",
+      "status": "awaiting-verdict",
+      "postable": true,
+      "verdict": "partial",
+      "formats": [
+        "dashboard-full",
+        "dashboard-strips-3"
+      ],
+      "series": [
+        {
+          "id": "tempra-week",
+          "stage": "full"
+        },
+        {
+          "id": "tempra-week",
+          "stage": "strips"
+        }
+      ],
+      "sampleDay": null,
+      "preflightFail": 0,
+      "dir": "library/tempra/product-week",
+      "renders": [
+        {
+          "file": "library/tempra/product-week/renders/full.png",
+          "role": "full",
+          "format": "dashboard-full",
+          "w": 3840,
+          "h": 2571
+        },
+        {
+          "file": "library/tempra/product-week/renders/strip-1.png",
+          "role": "strip",
+          "format": "dashboard-strips-3",
+          "w": 1280,
+          "h": 2571
+        },
+        {
+          "file": "library/tempra/product-week/renders/strip-2.png",
+          "role": "strip",
+          "format": "dashboard-strips-3",
+          "w": 1280,
+          "h": 2571
+        },
+        {
+          "file": "library/tempra/product-week/renders/strip-3.png",
+          "role": "strip",
+          "format": "dashboard-strips-3",
+          "w": 1280,
+          "h": 2571
+        }
+      ]
+    },
+    {
+      "id": "tempra-x-calendar-carousel",
+      "project": "tempra",
+      "title": "Cadence week as a 3-strip X carousel (rejected)",
+      "kind": "post-component",
+      "status": "rejected",
+      "postable": false,
+      "verdict": "reject",
+      "formats": [
+        "dashboard-full",
+        "dashboard-strips-3"
+      ],
+      "series": [],
+      "sampleDay": null,
+      "preflightFail": null,
+      "dir": "library/tempra/x-calendar-carousel",
+      "renders": [
+        {
+          "file": "library/tempra/x-calendar-carousel/renders/full.png",
+          "role": "full",
+          "format": "dashboard-full"
+        },
+        {
+          "file": "library/tempra/x-calendar-carousel/renders/strip-1.png",
+          "role": "strip",
+          "format": "dashboard-strips-3"
+        },
+        {
+          "file": "library/tempra/x-calendar-carousel/renders/strip-2.png",
+          "role": "strip",
+          "format": "dashboard-strips-3"
+        },
+        {
+          "file": "library/tempra/x-calendar-carousel/renders/strip-3.png",
+          "role": "strip",
+          "format": "dashboard-strips-3"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,476 @@
+{
+ "marcelkargul": {
+  "originals": 224,
+  "media": 175,
+  "ownQuotes": 109,
+  "ownQuoteShareOfOriginals": 0.49,
+  "ownQuoteMedia": 87,
+  "chainShare": 0.18,
+  "gapDays": {
+   "median": 0.8,
+   "p25": 0.21,
+   "p75": 1.95,
+   "under1": 68,
+   "d1to3": 25,
+   "over3": 16
+  },
+  "relLikesQuotingMedia": 0.96,
+  "relLikesNotQuotingMedia": 1.11,
+  "relViewsQuotingMedia": 1.26,
+  "relViewsNotQuotingMedia": 0.88,
+  "transitions": {
+   "text->video": {
+    "n": 2,
+    "relLikes": 0.82,
+    "relViews": 0.66,
+    "likesVsQuoted": 1.6,
+    "gapDaysMedian": 1.14
+   },
+   "still->still": {
+    "n": 57,
+    "relLikes": 0.96,
+    "relViews": 1.34,
+    "likesVsQuoted": 0.73,
+    "gapDaysMedian": 0.87
+   },
+   "video->still": {
+    "n": 7,
+    "relLikes": 0.93,
+    "relViews": 1.48,
+    "likesVsQuoted": 0.25,
+    "gapDaysMedian": 2.18
+   },
+   "text->text": {
+    "n": 5,
+    "relLikes": 0.67,
+    "relViews": 1.17,
+    "likesVsQuoted": 1.09,
+    "gapDaysMedian": 0.18
+   },
+   "video->text": {
+    "n": 5,
+    "relLikes": 1.21,
+    "relViews": 2.27,
+    "likesVsQuoted": 0.34,
+    "gapDaysMedian": 0.62
+   },
+   "still->video": {
+    "n": 10,
+    "relLikes": 1.02,
+    "relViews": 0.9,
+    "likesVsQuoted": 1.51,
+    "gapDaysMedian": 0.61
+   },
+   "video->video": {
+    "n": 10,
+    "relLikes": 1.25,
+    "relViews": 1.41,
+    "likesVsQuoted": 0.63,
+    "gapDaysMedian": 0.85
+   },
+   "still->text": {
+    "n": 12,
+    "relLikes": 0.68,
+    "relViews": 0.79,
+    "likesVsQuoted": 0.33,
+    "gapDaysMedian": 0.21
+   },
+   "text->still": {
+    "n": 1,
+    "relLikes": 1.31,
+    "relViews": 11.2,
+    "likesVsQuoted": 1.08,
+    "gapDaysMedian": 0
+   }
+  },
+  "motionFollowUps": [
+   {
+    "id": "2113284408086065316",
+    "gap": 0.02,
+    "likes": 69,
+    "quotedLikes": 27,
+    "quotedFmt": "text",
+    "text": "branding work for folk (YC S25)."
+   },
+   {
+    "id": "2112162787963130298",
+    "gap": 2.9,
+    "likes": 59,
+    "quotedLikes": 20,
+    "quotedFmt": "single",
+    "text": "our new site is too damn clean 🤩"
+   },
+   {
+    "id": "2111521400666091981",
+    "gap": 0.01,
+    "likes": 137,
+    "quotedLikes": 37,
+    "quotedFmt": "video",
+    "text": "this case study alone has brought us multiple 6 fi"
+   },
+   {
+    "id": "2110810426095337743",
+    "gap": 0.95,
+    "likes": 164,
+    "quotedLikes": 135,
+    "quotedFmt": "4up",
+    "text": "project showreel 😍\n\ndamn we cooked on this one."
+   },
+   {
+    "id": "2110419079261454540",
+    "gap": 0.01,
+    "likes": 80,
+    "quotedLikes": 70,
+    "quotedFmt": "single",
+    "text": "here is how to apply the rounded effect 🔖\n\nthis f"
+   },
+   {
+    "id": "2109999554414383441",
+    "gap": 0.61,
+    "likes": 244,
+    "quotedLikes": 136,
+    "quotedFmt": "3up",
+    "text": "this is one of my favorite websites on the interne"
+   },
+   {
+    "id": "2108589760247664808",
+    "gap": 0.01,
+    "likes": 667,
+    "quotedLikes": 224,
+    "quotedFmt": "single",
+    "text": "a lot of you have been asking for design tutorials"
+   },
+   {
+    "id": "2108332825535508589",
+    "gap": 8.13,
+    "likes": 131,
+    "quotedLikes": 143,
+    "quotedFmt": "single",
+    "text": "every website needs this level of animation."
+   },
+   {
+    "id": "2108234688271958191",
+    "gap": 2.26,
+    "likes": 168,
+    "quotedLikes": 263,
+    "quotedFmt": "text",
+    "text": "just look how easy it is to design a dashboard wit"
+   },
+   {
+    "id": "2107112139605618920",
+    "gap": 17.84,
+    "likes": 657,
+    "quotedLikes": 673,
+    "quotedFmt": "video",
+    "text": "another treat is here!\n\nenjoy 😉\n\nhttps://github.c"
+   },
+   {
+    "id": "2107080727862915120",
+    "gap": 0.06,
+    "likes": 69,
+    "quotedLikes": 117,
+    "quotedFmt": "video",
+    "text": "our case studies page is just getting started.\n\nth"
+   },
+   {
+    "id": "2106706492317671503",
+    "gap": null,
+    "likes": 5726,
+    "text": "finally made it open-source!\n\nenjoy 😉 \n\nhttps://g"
+   },
+   {
+    "id": "2105745247473148131",
+    "gap": null,
+    "likes": 41,
+    "text": "we branded and built Altrina from the ground up.\n\n"
+   },
+   {
+    "id": "2105335966282256552",
+    "gap": 0.18,
+    "likes": 105,
+    "quotedLikes": 73,
+    "quotedFmt": "single",
+    "text": "getting a standing desk was my best investment eve"
+   },
+   {
+    "id": "2104905402886537672",
+    "gap": 0.02,
+    "likes": 68,
+    "quotedLikes": 45,
+    "quotedFmt": "single",
+    "text": "everything is better animated btw"
+   },
+   {
+    "id": "2102728876044795969",
+    "gap": 0.85,
+    "likes": 82,
+    "quotedLikes": 222,
+    "quotedFmt": "video",
+    "text": "the amount of design work we have done in the last"
+   },
+   {
+    "id": "2102419124169359789",
+    "gap": 0.95,
+    "likes": 222,
+    "quotedLikes": 641,
+    "quotedFmt": "video",
+    "text": "the footer is even better 🤤\n\nsee it live: https:/"
+   },
+   {
+    "id": "2102074495951315148",
+    "gap": 4.17,
+    "likes": 641,
+    "quotedLikes": 196,
+    "quotedFmt": "video",
+    "text": "the rive animations are just next-level 🔍"
+   },
+   {
+    "id": "2102007802596061554",
+    "gap": 0.84,
+    "likes": 90,
+    "quotedLikes": 135,
+    "quotedFmt": "video",
+    "text": "recent work 😁\n\nhttps://kargul.studio/work"
+   },
+   {
+    "id": "2100648747210317834",
+    "gap": 1.08,
+    "likes": 673,
+    "quotedLikes": 274,
+    "quotedFmt": "single",
+    "text": "most beautiful kanban dashboard you’ll ever see.\n\n"
+   },
+   {
+    "id": "2100222708046762145",
+    "gap": null,
+    "likes": 614,
+    "text": "built the functional workflow editor in a SINGLE D"
+   },
+   {
+    "id": "2099829909434630285",
+    "gap": 0.76,
+    "likes": 528,
+    "quotedLikes": 975,
+    "quotedFmt": "video",
+    "text": "here is what the pdf version looks like 🤩"
+   }
+  ]
+ },
+ "kargulstudio": {
+  "originals": 40,
+  "media": 40,
+  "ownQuotes": 0,
+  "ownQuoteShareOfOriginals": 0,
+  "ownQuoteMedia": 0,
+  "chainShare": 0,
+  "gapDays": {
+   "median": null,
+   "p25": null,
+   "p75": null,
+   "under1": 0,
+   "d1to3": 0,
+   "over3": 0
+  },
+  "relLikesQuotingMedia": null,
+  "relLikesNotQuotingMedia": 1,
+  "relViewsQuotingMedia": null,
+  "relViewsNotQuotingMedia": 1,
+  "transitions": {},
+  "motionFollowUps": []
+ },
+ "_heyrico": {
+  "originals": 327,
+  "media": 311,
+  "ownQuotes": 168,
+  "ownQuoteShareOfOriginals": 0.51,
+  "ownQuoteMedia": 166,
+  "chainShare": 0.08,
+  "gapDays": {
+   "median": 2.56,
+   "p25": 1.26,
+   "p75": 7.05,
+   "under1": 21,
+   "d1to3": 71,
+   "over3": 76
+  },
+  "relLikesQuotingMedia": 0.87,
+  "relLikesNotQuotingMedia": 1.03,
+  "relViewsQuotingMedia": 0.91,
+  "relViewsNotQuotingMedia": 0.78,
+  "transitions": {
+   "still->still": {
+    "n": 166,
+    "relLikes": 0.87,
+    "relViews": 0.91,
+    "likesVsQuoted": 0.44,
+    "gapDaysMedian": 2.56
+   },
+   "still->text": {
+    "n": 2,
+    "relLikes": 0.31,
+    "relViews": 0.53,
+    "likesVsQuoted": 0.08,
+    "gapDaysMedian": 2.43
+   }
+  },
+  "motionFollowUps": []
+ },
+ "augustasdesign": {
+  "originals": 358,
+  "media": 345,
+  "ownQuotes": 19,
+  "ownQuoteShareOfOriginals": 0.05,
+  "ownQuoteMedia": 16,
+  "chainShare": 0.11,
+  "gapDays": {
+   "median": 3.73,
+   "p25": 1.86,
+   "p75": 7,
+   "under1": 3,
+   "d1to3": 6,
+   "over3": 10
+  },
+  "relLikesQuotingMedia": 0.61,
+  "relLikesNotQuotingMedia": 1.01,
+  "relViewsQuotingMedia": 0.86,
+  "relViewsNotQuotingMedia": 1.01,
+  "transitions": {
+   "still->video": {
+    "n": 5,
+    "relLikes": 0.24,
+    "relViews": 0.36,
+    "likesVsQuoted": 0.44,
+    "gapDaysMedian": 1.52
+   },
+   "video->text": {
+    "n": 2,
+    "relLikes": 0.2,
+    "relViews": 0.4,
+    "likesVsQuoted": 0.22,
+    "gapDaysMedian": 1.48
+   },
+   "still->still": {
+    "n": 11,
+    "relLikes": 0.75,
+    "relViews": 1.22,
+    "likesVsQuoted": 0.43,
+    "gapDaysMedian": 4.05
+   },
+   "still->text": {
+    "n": 1,
+    "relLikes": 0.25,
+    "relViews": 0.57,
+    "likesVsQuoted": 0.08,
+    "gapDaysMedian": 8.3
+   }
+  },
+  "motionFollowUps": [
+   {
+    "id": "2110944321184620815",
+    "gap": 1.52,
+    "likes": 359,
+    "quotedLikes": 819,
+    "quotedFmt": "3up",
+    "text": "animated it's even cooler 🔥\nhttps://x.com/augusta"
+   },
+   {
+    "id": "2108611700685438980",
+    "gap": 0.04,
+    "likes": 22,
+    "quotedLikes": 13,
+    "quotedFmt": "single",
+    "text": "always animating my heroes 😍\n\nhttps://x.com/augus"
+   },
+   {
+    "id": "2108270755364651394",
+    "gap": 0.01,
+    "likes": 22,
+    "quotedLikes": 24,
+    "quotedFmt": "single",
+    "text": "animated 👀\nhttps://x.com/augustasdesign/status/21"
+   },
+   {
+    "id": "1971522454590755309",
+    "gap": 15.27,
+    "likes": 84,
+    "quotedLikes": 281,
+    "quotedFmt": "single",
+    "text": "Animated ✨ \nhttps://x.com/AugustasDesign/status/19"
+   },
+   {
+    "id": "1956566381240934521",
+    "gap": 7,
+    "likes": 27,
+    "quotedLikes": 193,
+    "quotedFmt": "single",
+    "text": "Pricing animated 🤌\nhttps://x.com/AugustasDesign/s"
+   }
+  ]
+ },
+ "faulkner_Design": {
+  "originals": 24,
+  "media": 24,
+  "ownQuotes": 0,
+  "ownQuoteShareOfOriginals": 0,
+  "ownQuoteMedia": 0,
+  "chainShare": 0,
+  "gapDays": {
+   "median": null,
+   "p25": null,
+   "p75": null,
+   "under1": 0,
+   "d1to3": 0,
+   "over3": 0
+  },
+  "relLikesQuotingMedia": null,
+  "relLikesNotQuotingMedia": 1,
+  "relViewsQuotingMedia": null,
+  "relViewsNotQuotingMedia": 1,
+  "transitions": {},
+  "motionFollowUps": []
+ },
+ "marius_vanagas": {
+  "originals": 1,
+  "media": 1,
+  "ownQuotes": 0,
+  "ownQuoteShareOfOriginals": 0,
+  "ownQuoteMedia": 0,
+  "chainShare": 0,
+  "gapDays": {
+   "median": null,
+   "p25": null,
+   "p75": null,
+   "under1": 0,
+   "d1to3": 0,
+   "over3": 0
+  },
+  "relLikesQuotingMedia": null,
+  "relLikesNotQuotingMedia": 1,
+  "relViewsQuotingMedia": null,
+  "relViewsNotQuotingMedia": 1,
+  "transitions": {},
+  "motionFollowUps": []
+ },
+ "rokasrem": {
+  "originals": 30,
+  "media": 29,
+  "ownQuotes": 0,
+  "ownQuoteShareOfOriginals": 0,
+  "ownQuoteMedia": 0,
+  "chainShare": 0,
+  "gapDays": {
+   "median": null,
+   "p25": null,
+   "p75": null,
+   "under1": 0,
+   "d1to3": 0,
+   "over3": 0
+  },
+  "relLikesQuotingMedia": null,
+  "relLikesNotQuotingMedia": 1,
+  "relViewsQuotingMedia": null,
+  "relViewsNotQuotingMedia": 1,
+  "transitions": {},
+  "motionFollowUps": []
+ }
+}

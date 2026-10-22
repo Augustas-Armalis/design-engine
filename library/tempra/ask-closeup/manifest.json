@@ -1,0 +1,121 @@
+{
+  "schema": "design-engine.library-asset/v1",
+  "id": "tempra-ask-closeup",
+  "project": "tempra",
+  "title": "Tempra Ask rail, close: the answer for five calendars",
+  "kind": "product-ui",
+  "status": "awaiting-verdict",
+  "postable": true,
+  "sampleDay": "2026-10-23",
+  "verdict": {
+    "latest": null,
+    "round": null,
+    "date": null,
+    "words": null,
+    "ledger": null,
+    "after": "new crop for sample day 1 (2026-10-23), awaiting the founder's verdict"
+  },
+  "source": {
+    "app": "work/replicas/app",
+    "route": "#/xframe?src=cprodb&x=1017&y=16",
+    "component": "work/replicas/app/src/CadenceProductB.tsx",
+    "viewport": [
+      359,
+      427
+    ],
+    "crop": {
+      "src": "#/cprodb",
+      "rect": [
+        1017,
+        16,
+        359,
+        427
+      ],
+      "anchor": "tr",
+      "insets": {
+        "top": 40,
+        "right": 40
+      },
+      "snapped": "left and bottom edges in gutters (tools/library.mjs snap moved 0px): the left edge runs inside the rail just past its divider, the bottom on the divider between the 2nd and 3rd answer rows"
+    }
+  },
+  "renders": [
+    {
+      "file": "renders/closeup.png",
+      "role": "single",
+      "format": "dashboard-closeup",
+      "recipe": {
+        "route": "#/xframe?src=cprodb&x=1017&y=16",
+        "viewport": [
+          359,
+          427
+        ],
+        "scale": 6
+      },
+      "w": 2154,
+      "h": 2562,
+      "bytes": 464682,
+      "sha256": "77bf6bb5a8b6785b8e2c052ef50e7b4c384946ce173e0d92b320f7a0789904e1",
+      "rendered": "2026-10-22T17:47:37.678Z",
+      "commit": "ca138c2"
+    }
+  ],
+  "checks": [
+    {
+      "label": "closeup",
+      "route": "#/xframe?src=cprodb&x=1017&y=16",
+      "kind": "product-ui",
+      "w": 359,
+      "h": 427,
+      "anchor": "tr",
+      "format": "dashboard-closeup",
+      "renders": [
+        "renders/closeup.png"
+      ]
+    }
+  ],
+  "series": [
+    {
+      "id": "tempra-week",
+      "stage": "closeup"
+    }
+  ],
+  "related": [
+    "tempra-product-week"
+  ],
+  "conceptName": "Tempra",
+  "sample": true,
+  "alt": "Close up of an ask panel in a fictional calendar app: a request to find 45 minutes with the design team next week, a note that five calendars were checked in four seconds, the answer that Friday 11:00 works for all five with no focus block moved, and the two best times ranked. Sample data, concept.",
+  "dates": {
+    "created": "2026-10-22",
+    "rendered": "2026-10-22"
+  },
+  "tags": [
+    "light",
+    "closeup",
+    "ai-answer"
+  ],
+  "preflight": {
+    "ran": "2026-10-22T17:48:00.912Z",
+    "fail": 0,
+    "warn": 5,
+    "results": [
+      {
+        "label": "closeup",
+        "route": "#/xframe?src=cprodb&x=1017&y=16",
+        "size": "359x427",
+        "pass": 17,
+        "warn": 5,
+        "fail": 0,
+        "report": "preflight/1-closeup.md",
+        "ran": "2026-10-22T17:48:00.905Z"
+      }
+    ]
+  },
+  "subject": "calendar",
+  "captionVars": {
+    "domain": "team calendar",
+    "ui": "calendar",
+    "detail": "answer panel"
+  }
+}

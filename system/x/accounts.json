@@ -1,0 +1,11 @@
+{
+  "schema": "design-engine.x-accounts/v1",
+  "updated": "2026-10-22",
+  "about": "The four Larpo founder accounts the planner assigns posts to. Voices are summarised from knowledge/x/caption-voice.md; captions are written per account and never copied between accounts (team brain, content pillar). profileId is the X engine profile id (not the handle); the values here are placeholders until each founder confirms theirs from `larpo-x-engine` settings (knowledge/x/x-engine-audit.md section 5).",
+  "accounts": [
+    { "handle": "augustasdesign", "name": "Augustas", "profileId": "augustas", "profileIdVerified": false, "platforms": ["x"], "voice": "augustas", "maxPerDay": 2, "lead": true },
+    { "handle": "faulkner_Design", "name": "Faulkner", "profileId": "faulkner", "profileIdVerified": false, "platforms": ["x"], "voice": "faulkner", "maxPerDay": 1 },
+    { "handle": "marius_vanagas", "name": "Marius", "profileId": "marius", "profileIdVerified": false, "platforms": ["x"], "voice": "marius", "maxPerDay": 1 },
+    { "handle": "rokasrem", "name": "Rokas", "profileId": "rokas", "profileIdVerified": false, "platforms": ["x"], "voice": "rokas", "maxPerDay": 1 }
+  ]
+}

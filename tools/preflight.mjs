@@ -281,7 +281,11 @@ const probe = (cfg) => {
   }
   // bottom edge: text lines and boxes crossing it (the gate exempts the fold bottom; this decides if the fold ends on purpose)
   const rng = document.createRange()
-  const coveredAt = (x, y, p) => document.elementsFromPoint(x, y).some((e) => e !== p && !p.contains(e) && !e.contains(p) && (/blur/.test(getComputedStyle(e).backdropFilter || '') || /gradient/.test(getComputedStyle(e).backgroundImage)))
+  // a fade over the edge: a backdrop blur, or a linear gradient with a transparent stop (a colour field behind is not a fade)
+  const fadeLayer = (e) => { const cs = getComputedStyle(e); return /blur/.test(cs.backdropFilter || '') || (/linear-gradient/.test(cs.backgroundImage) && /transparent|rgba\([^)]*,\s*0(\.0+)?\)/.test(cs.backgroundImage)) }
+  // by geometry, not elementsFromPoint: blur overlays are pointer-events:none, which elementsFromPoint skips
+  const fades = all.filter((e) => fadeLayer(e) && shown(e))
+  const coveredAt = (x, y, p) => fades.some((e) => { if (e === p || p.contains(e) || e.contains(p)) return false; const q = e.getBoundingClientRect(); return x >= q.left && x <= q.right && y >= q.top && y <= q.bottom })
   for (const t of textNodes(document.body)) {
     const p = t.parentElement; if (!p || !shown(p)) continue
     rng.selectNodeContents(t)
@@ -428,7 +432,8 @@ if (pngs.length) {
     let ratioOk = true, ratioWant = 'any ratio'
     if (fmt && w) {
       const c = /strip/.test(path.basename(f)) && fmt.strip ? fmt.strip : fmt.canvas
-      if (Array.isArray(c)) { const want = c[0] / c[1]; ratioOk = Math.abs(w / h - want) / want <= 0.02; ratioWant = `ratio ${c[0]}:${c[1]} (+-2%)` }
+      if (fmt.ratioRange && !/strip/.test(path.basename(f))) { ratioOk = w / h >= fmt.ratioRange[0] - 0.01 && w / h <= fmt.ratioRange[1] + 0.01; ratioWant = `ratio ${fmt.ratioRange.join('-')}` }
+      else if (Array.isArray(c)) { const want = c[0] / c[1]; ratioOk = Math.abs(w / h - want) / want <= 0.02; ratioWant = `ratio ${c[0]}:${c[1]} (+-2%)` }
     }
     const st = !isPng ? 'WARN' : Math.max(w, h) < 2000 || !ratioOk || mb > 5 ? 'FAIL' : 'PASS'
     add('export', `export.${path.basename(f)}`, st, isPng ? `${w}x${h} ${mb.toFixed(2)}MB` : 'not a PNG', `long side >= 2000px (XP-11), ${ratioWant}, <= 5 MB (X API image limit)`, path.relative(root, p))

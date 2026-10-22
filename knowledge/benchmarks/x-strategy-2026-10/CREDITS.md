@@ -1,0 +1,41 @@
+# X strategy study 2026-10: credits and capture notes
+
+Study evidence only. Every post belongs to its author: Marcel Kargul (@marcelkargul) and Kargul Studio (@kargulstudio, kargul.studio, and the studio's clients for client screens), rico (@_heyrico, Ace Studio, acedesign.io, and his clients), and the four Larpo founders (@augustasdesign, @faulkner_Design, @marius_vanagas, @rokasrem). Nothing here is to be reposted, copied, traced or presented as engine or Larpo work, and other people's captions are quoted in the notes only briefly as evidence. The notes that use this evidence: `knowledge/x/x-strategy.md` (XS-01..), `knowledge/x/caption-voice.md`, `knowledge/x/cadence.json`.
+
+## How it was captured (2026-10-22)
+
+- **Timelines**: `https://api.fxtwitter.com/2/profile/<handle>/statuses?cursor=<bottom>`, the public FixTweet mirror (same method as `../kargul-x/CREDITS.md`, `../heyrico-x/CREDITS.md`, `../x-posts/CREDITS.md`). Node `fetch` with a browser user agent, one request at a time, 2.5 s between pages, up to 7 retries with backoff (the mirror answers 404 intermittently for valid handles: `augustasdesign` returned 404 on the first call and 200 on the next). Run under `nice -n 19`. No login, x.com never opened, nothing liked, followed, posted or submitted.
+- **Raw pages** were kept in the session scratchpad, not in the repo. `data/<handle>.json` is the slim study file:
+  - id, url, created (ISO UTC), ts, text, lang;
+  - is_reply, reply_to {handle, id}, self_reply, thread_root (self-reply chains);
+  - quote {id, author, text (160 chars), created, media};
+  - likes, reposts, replies, quotes, bookmarks, views;
+  - media [{type, w, h, dur (s), url for photos, thumb for video}], links;
+  - self_reposted (the author reposted their own post: a "bump") and bump_lag_hours ([lower, upper] bound on the bump time, from the timeline position);
+  - `reposts_of_others`: who the account reposted.
+- **Merges** (posts the fresh run did not return; counts are from the earlier capture, marked by `src`):
+  - `marcelkargul`: the fresh run stalled around 3 Oct (pages 11-26 returned 3-12 items) and reached back to 7 Sep; 49 statuses from `../kargul-x/posts.json` (22 Sep - 12 Oct) were merged.
+  - `_heyrico`: the fresh run reached 13 Sep; 408 older statuses from `../heyrico-x/posts.json` (captured earlier the same day, back to 16 May 2026) were merged.
+- **Derived**: `data/_analysis.json` (per-account cadence, hours in Europe/Vilnius and US Eastern, formats, aspect ratios, normalised engagement, captions, eras for the founders, pooled tables, quote series, caption cues, threads, same-size media series, rico image-reuse clusters from `../heyrico-x/img-classification.tsv`), `data/_series.json` (own-quote chains and still -> motion follow-ups), `data/_extra.json` (multi-image subtypes, US Eastern blocks, scheduling slots, nth post of the day, first self-reply timing, link placement).
+- **Scripts** (`_scripts/`, node .mjs, no dependencies): `harvest.mjs` (fetch pages), `slim.mjs` (slim + merge + bump timing), `analyze.mjs` (main tables), `series.mjs` (own-quote chains; `--log <handle>` prints a one-line-per-post media log), `extra.mjs` (subtypes, ET blocks, slots, nth-post-of-day). Re-run: `node harvest.mjs <rawDir> <handle> [maxPages] [stopBeforeISO]`, then `node slim.mjs <rawDir> ../data <handle> [mergeFiles...]`, then `node analyze.mjs ../data ../../heyrico-x/img-classification.tsv`, `node series.mjs ../data`, `node extra.mjs ../data`.
+- **Founder thumbnails** (`founders/`, 8 files, `?name=small`, the founders' own posts only): used to see what format they post (Augustas's 3-up is the vertical thirds of one dashboard; Rokas's A/B posts put both variants in one 16:9 image).
+
+## Accounts
+
+| Handle | Followers (2026-10-22) | Statuses in file | Range | Originals in analysis window | Note |
+|---|---|---|---|---|---|
+| @marcelkargul | 60,768 | 382 | 7 Sep - 22 Oct 2026 | 183 (last 30 days) | fresh + merged |
+| @kargulstudio | 6,361 | 40 | 4 Aug 2025 (pinned) - 21 Oct 2026 | 39 (8 Sep - 21 Oct) | the whole timeline (73 statuses on the profile) |
+| @_heyrico | 27,164 | 576 | 16 May - 22 Oct 2026 (+ pinned 25 Sep 2025) | 127 (last 60 days) | fresh + merged |
+| @augustasdesign | 10,007 | 612 | 19 Jul 2025 - 20 Oct 2026 | 25 (current era from 23 Aug 2026); 333 (era 1, 19 Jul 2025 - 3 Mar 2026) | the mirror ends at 19 Jul 2025 (page 41) |
+| @faulkner_Design | 4 | 24 | 30 Aug - 15 Oct 2026 | 24 | profile shows 42 statuses; the mirror returned 33 entries (9 reposts) |
+| @marius_vanagas | 4 | 5 | 2015 - 31 Aug 2026 | 1 | profile shows 20 statuses; 4 are personal 2015-2016 self-replies; bio names `@larpo_studio`, the other founders' bios name `@larpostudio` |
+| @rokasrem | 4 | 30 | 7 - 22 Oct 2026 | 30 | profile shows 49 statuses |
+
+## Limits
+
+- Counts are a snapshot at capture; posts from the last 24 h are still growing (excluded from nothing, so the newest posts read low).
+- Views exist only for posts the mirror reports; all posts here have them.
+- Repost ("bump") times are bounded, not exact: a repost sits in the timeline at the time of the repost, between two dated posts.
+- The three co-founder accounts have 4 followers each and medians of 1-3 likes and 10-80 views per post; their data cannot rank formats, hours or captions, only describe what they post.
+- Hour effects are confounded with "first post of the day" (see XS-03); stated per account.

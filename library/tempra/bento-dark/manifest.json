@@ -1,0 +1,107 @@
+{
+  "schema": "design-engine.library-asset/v1",
+  "id": "tempra-bento-dark",
+  "project": "tempra",
+  "title": "Tempra dark feature bento",
+  "kind": "section-bento",
+  "status": "accepted",
+  "postable": true,
+  "verdict": {
+    "latest": "accept",
+    "round": 3,
+    "date": "2026-10-22",
+    "words": "The bento is good, will do",
+    "ledger": "ledger/entries/cbentol.json",
+    "after": "preflight calibration (2026-10-22) fixed three half-visible texts: Friday's time labels cut by the hero cell edge (now 30-min title-only blocks), a third answer row peeking at the Ask cell bottom, a 'London' value peeking at the calendars cell bottom."
+  },
+  "source": {
+    "app": "work/replicas/app",
+    "route": "#/cbentol",
+    "component": "work/replicas/app/src/CadenceBentoL.tsx",
+    "viewport": [
+      1440,
+      1200
+    ],
+    "direction": "work/cadence-app/BENTOL-DIRECTION.md"
+  },
+  "renders": [
+    {
+      "file": "renders/bento.png",
+      "role": "single",
+      "format": "bento-still",
+      "recipe": {
+        "route": "#/cbentol",
+        "viewport": [
+          1440,
+          1200
+        ],
+        "scale": 2.6667
+      },
+      "w": 3840,
+      "h": 3200,
+      "bytes": 859519,
+      "sha256": "9e14ce7eb8a18929f0e035e8bae27b077fab777d8aa108029abd431e567bb426",
+      "rendered": "2026-10-22T17:59:37.788Z",
+      "commit": "ca138c2"
+    }
+  ],
+  "checks": [
+    {
+      "label": "bento",
+      "route": "#/cbentol",
+      "kind": "section-bento",
+      "w": 1440,
+      "h": 1200,
+      "format": "bento-still",
+      "renders": [
+        "renders/bento.png"
+      ],
+      "direction": "work/cadence-app/BENTOL-DIRECTION.md"
+    }
+  ],
+  "series": [
+    {
+      "id": "tempra-bento",
+      "stage": "section"
+    }
+  ],
+  "related": [
+    "tempra-hero-h4a"
+  ],
+  "conceptName": "Tempra",
+  "sample": true,
+  "alt": "Dark feature section for Tempra, a fictional team calendar, in five cells: a week grid with a suggested meeting, a plain language request answered with ranked times, a focus time chart, a meeting moved with the reason, and a tilted list of connected calendars. Sample data, concept.",
+  "dates": {
+    "created": "2026-10-22",
+    "migrated": "2026-10-22",
+    "rendered": "2026-10-22"
+  },
+  "tags": [
+    "dark",
+    "bento",
+    "calendar"
+  ],
+  "preflight": {
+    "ran": "2026-10-22T18:00:03.656Z",
+    "fail": 0,
+    "warn": 1,
+    "results": [
+      {
+        "label": "bento",
+        "route": "#/cbentol",
+        "size": "1440x1200",
+        "pass": 16,
+        "warn": 1,
+        "fail": 0,
+        "report": "preflight/1-bento.md",
+        "ran": "2026-10-22T18:00:03.628Z"
+      }
+    ]
+  },
+  "subject": "bento-card",
+  "captionVars": {
+    "domain": "team calendar",
+    "ui": "bento",
+    "n": "five"
+  }
+}

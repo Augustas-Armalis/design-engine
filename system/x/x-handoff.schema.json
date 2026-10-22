@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:larpo:x-handoff:v1",
+  "title": "x-handoff v1: design engine to larpo-x-engine",
+  "description": "What tools/x_plan.mjs writes to library/x-days/<date>/x-handoff.json. Proposed in knowledge/x/x-engine-audit.md section 4 (rules HO-01..07); this file is the producer's copy with the fields the design engine adds: designFormat strips-3 and full-plus-strips (vertical thirds are the anchor format, XS-09, so HO-04's 7:8 + 16:9 rule does not apply to them), gate.preflight (tools/preflight.mjs replaces design-view + check as one result), post.reply (the first self-reply, posted 30-150 min later, XS-22) and post.quotesPostId (series steps quote the previous step, XS-16). The X engine's importer is not built yet; until it is, it should ignore unknown fields rather than refuse them. Nothing in the design engine sends this file anywhere.",
+  "type": "object",
+  "required": ["schema", "handoffId", "createdAt", "producer", "timezone", "assets", "posts"],
+  "properties": {
+    "schema": { "const": "larpo.x-handoff/v1" },
+    "handoffId": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]{7,63}$" },
+    "createdAt": { "type": "string", "format": "date-time" },
+    "day": { "type": "string", "format": "date" },
+    "timezone": { "type": "string", "description": "IANA zone the day was planned in (Europe/Vilnius); scheduledAt carries its own offset" },
+    "producer": {
+      "type": "object", "required": ["name", "version"],
+      "properties": { "name": { "const": "design-engine" }, "version": { "type": "string", "description": "design engine git commit" }, "operator": { "type": "string" } }
+    },
+    "assets": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/asset" } },
+    "posts": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/post" } }
+  },
+  "$defs": {
+    "asset": {
+      "type": "object", "required": ["assetId", "designFormat", "kind", "conceptName", "media"],
+      "properties": {
+        "assetId": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]{2,63}$", "description": "the id in library/<project>/<asset>/manifest.json" },
+        "designFormat": { "enum": ["single-still", "component-loop", "pair-7x8", "lead-plus-two", "grid-4-16x9", "detail-strip", "before-after", "lesson-square", "hero-reel", "object-on-field", "spec-poster", "strips-3", "full-plus-strips"] },
+        "kind": { "enum": ["hero-light", "hero-dark", "section-bento", "product-ui", "post-component", "logo", "branding", "full-website"] },
+        "conceptName": { "type": "string", "maxLength": 60, "description": "fictional brand and workspace names visible in the media; the caption gate refuses a caption that contains one" },
+        "sample": { "type": "boolean" },
+        "ledgerId": { "type": ["string", "null"] },
+        "gate": {
+          "type": "object",
+          "properties": {
+            "preflight": { "enum": ["pass", "fail", "skipped"] },
+            "designView": { "enum": ["pass", "fail", "skipped"] },
+            "check": { "enum": ["pass", "fail", "skipped"] },
+            "ranAt": { "type": ["string", "null"], "format": "date-time" }
+          }
+        },
+        "series": {
+          "type": ["object", "null"], "required": ["seriesId", "index"],
+          "properties": { "seriesId": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]{1,47}$" }, "label": { "type": "string" }, "index": { "type": "integer", "minimum": 1 } }
+        },
+        "media": { "type": "array", "minItems": 1, "maxItems": 4, "items": { "$ref": "#/$defs/media" } }
+      }
+    },
+    "media": {
+      "type": "object", "required": ["path", "name", "mime", "width", "height", "bytes", "sha256", "altText"],
+      "properties": {
+        "path": { "type": "string", "description": "relative to the directory holding x-handoff.json" },
+        "name": { "type": "string", "pattern": "^[a-z0-9-]{1,40}\\.(jpg|jpeg|png|mp4)$" },
+        "mime": { "enum": ["image/jpeg", "image/png", "video/mp4"] },
+        "width": { "type": "integer", "minimum": 1 },
+        "height": { "type": "integer", "minimum": 1 },
+        "bytes": { "type": "integer", "minimum": 1, "maximum": 5242880 },
+        "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+        "durationMs": { "type": "integer", "minimum": 500 },
+        "role": { "enum": ["single", "lead", "detail", "before", "after", "light", "dark"] },
+        "altText": { "type": "string", "minLength": 1, "maxLength": 1000 }
+      }
+    },
+    "post": {
+      "type": "object", "required": ["postId", "assetId", "account", "platform", "scheduledAt", "caption", "approval"],
+      "properties": {
+        "postId": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]{2,63}$" },
+        "assetId": { "type": "string" },
+        "account": {
+          "type": "object", "required": ["profileId", "handle"],
+          "properties": { "profileId": { "type": "string", "pattern": "^[a-z0-9-]{2,24}$", "description": "X engine profile id, not the handle (system/x/accounts.json; unverified placeholders until each founder confirms)" }, "handle": { "type": "string" }, "channelId": { "type": ["string", "null"] } }
+        },
+        "platform": { "enum": ["x", "linkedin"] },
+        "scheduledAt": { "type": "string", "format": "date-time", "pattern": "(Z|[+-][0-9]{2}:[0-9]{2})$" },
+        "caption": { "type": "string", "minLength": 1, "maxLength": 3000 },
+        "reply": { "type": ["string", "null"], "description": "first self-reply, 30-150 min after the post; the only place a link goes (XS-22, CV-07)" },
+        "quotesPostId": { "type": ["string", "null"], "description": "the post this one quotes: the previous step of its series (XS-16)" },
+        "approval": {
+          "type": "object", "required": ["state"],
+          "properties": { "state": { "enum": ["draft", "ready", "hold"] }, "designVerdict": { "enum": ["accepted", "partial", "none"] }, "approvedBy": { "type": ["string", "null"] }, "requireConfirm": { "type": "boolean" } }
+        }
+      }
+    }
+  }
+}

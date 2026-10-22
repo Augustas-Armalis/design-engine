@@ -1,0 +1,207 @@
+{
+  "schema": "design-engine.library-asset/v1",
+  "id": "tempra-product-week",
+  "project": "tempra",
+  "title": "Tempra week view with the Ask rail, full and in thirds",
+  "kind": "product-ui",
+  "status": "awaiting-verdict",
+  "postable": true,
+  "verdict": {
+    "latest": "partial",
+    "round": 1,
+    "date": "2026-10-22",
+    "words": "the product itself why so little detail or proper affectui feel or something... just like it's too stupid now a bit",
+    "ledger": "ledger/entries/cprodb.json",
+    "after": "r3.1 added affectUI-grade detail (fe0029c) and the polish pass (342b29c); preflight calibration lifted the Join label 1.2px back to centre (2026-10-22). Not yet seen by the founder."
+  },
+  "source": {
+    "app": "work/replicas/app",
+    "route": "#/cprodb",
+    "component": "work/replicas/app/src/CadenceProductB.tsx",
+    "viewport": [
+      1392,
+      932
+    ],
+    "direction": "work/cadence-app/PRODB-DIRECTION.md"
+  },
+  "renders": [
+    {
+      "file": "renders/full.png",
+      "role": "full",
+      "format": "dashboard-full",
+      "recipe": {
+        "route": "#/cprodb",
+        "viewport": [
+          1392,
+          932
+        ],
+        "scale": 2.7587
+      },
+      "w": 3840,
+      "h": 2571,
+      "bytes": 867320,
+      "sha256": "53075ca3a1153b4ad24e0abcbbcc9bf42e7a807c250f05b823b58690bc83eb64",
+      "rendered": "2026-10-22T17:58:52.801Z",
+      "commit": "ca138c2"
+    },
+    {
+      "file": "renders/strip-1.png",
+      "role": "strip",
+      "index": 1,
+      "of": 3,
+      "format": "dashboard-strips-3",
+      "recipe": {
+        "route": "#/cprodb",
+        "viewport": [
+          1392,
+          932
+        ],
+        "scale": 2.7587,
+        "clip": [
+          0,
+          0,
+          464,
+          932
+        ]
+      },
+      "w": 1280,
+      "h": 2571,
+      "bytes": 272431,
+      "sha256": "8a3ae9a6ef368e6f9332e25d57e0d169bbf513fc4bd885665b024d168a749bcc",
+      "rendered": "2026-10-22T17:58:57.448Z",
+      "commit": "ca138c2"
+    },
+    {
+      "file": "renders/strip-2.png",
+      "role": "strip",
+      "index": 2,
+      "of": 3,
+      "format": "dashboard-strips-3",
+      "recipe": {
+        "route": "#/cprodb",
+        "viewport": [
+          1392,
+          932
+        ],
+        "scale": 2.7587,
+        "clip": [
+          464,
+          0,
+          464,
+          932
+        ]
+      },
+      "w": 1280,
+      "h": 2571,
+      "bytes": 209600,
+      "sha256": "6a9d27413346c1e1dc1c9e05928a1f1a43b7ee85d84960096442b73b9fa72dab",
+      "rendered": "2026-10-22T17:59:02.375Z",
+      "commit": "ca138c2"
+    },
+    {
+      "file": "renders/strip-3.png",
+      "role": "strip",
+      "index": 3,
+      "of": 3,
+      "format": "dashboard-strips-3",
+      "recipe": {
+        "route": "#/cprodb",
+        "viewport": [
+          1392,
+          932
+        ],
+        "scale": 2.7587,
+        "clip": [
+          928,
+          0,
+          464,
+          932
+        ]
+      },
+      "w": 1280,
+      "h": 2571,
+      "bytes": 352312,
+      "sha256": "227d65994cd5e772197c337d8c781f2356d14d710c9ccb7dfaa58ae9abc81718",
+      "rendered": "2026-10-22T17:59:07.127Z",
+      "commit": "ca138c2"
+    }
+  ],
+  "checks": [
+    {
+      "label": "full-and-strips",
+      "route": "#/cprodb",
+      "kind": "product-ui",
+      "w": 1392,
+      "h": 932,
+      "anchor": "all",
+      "seams": [
+        464,
+        928
+      ],
+      "format": "full-plus-strips",
+      "renders": [
+        "renders/full.png",
+        "renders/strip-1.png",
+        "renders/strip-2.png",
+        "renders/strip-3.png"
+      ],
+      "direction": "work/cadence-app/PRODB-DIRECTION.md"
+    }
+  ],
+  "series": [
+    {
+      "id": "tempra-week",
+      "stage": "full"
+    },
+    {
+      "id": "tempra-week",
+      "stage": "strips"
+    }
+  ],
+  "related": [
+    "tempra-ask-closeup",
+    "tempra-hero-h4a"
+  ],
+  "conceptName": "Tempra, Fernhill",
+  "sample": true,
+  "alt": "Product screen of Tempra, a fictional team calendar: a sidebar with teams, a week view with a three number strip and colour coded meetings, and an ask panel that answers 'find 45 min with the design team' with three ranked times and a book button. Sample data, concept.",
+  "dates": {
+    "created": "2026-10-22",
+    "migrated": "2026-10-22",
+    "rendered": "2026-10-22"
+  },
+  "tags": [
+    "light",
+    "dashboard",
+    "calendar",
+    "ai-answer"
+  ],
+  "preflight": {
+    "ran": "2026-10-22T17:59:31.424Z",
+    "fail": 0,
+    "warn": 7,
+    "results": [
+      {
+        "label": "full-and-strips",
+        "route": "#/cprodb",
+        "size": "1392x932",
+        "pass": 20,
+        "warn": 7,
+        "fail": 0,
+        "report": "preflight/1-full-and-strips.md",
+        "ran": "2026-10-22T17:59:31.418Z"
+      }
+    ]
+  },
+  "subject": "calendar",
+  "captionVars": {
+    "domain": "team calendar",
+    "ui": "calendar",
+    "n": "three",
+    "a": "teams",
+    "b": "the week",
+    "c": "the answer",
+    "question": "when can five people meet",
+    "difference": "the time that works for everyone"
+  }
+}
