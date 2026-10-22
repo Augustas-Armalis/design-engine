@@ -1,0 +1,710 @@
+{
+ "title": "Get Gradients — Gradient Visual Engine",
+ "url": "https://getgradients.com/",
+ "viewport": [
+  1440,
+  900
+ ],
+ "scrollHeight": 900,
+ "bodyBg": "rgb(11, 11, 12)",
+ "htmlBg": "rgba(0, 0, 0, 0)",
+ "framework": {
+  "next": false,
+  "react": true,
+  "framer": false,
+  "nuxt": false,
+  "svelte": false,
+  "astro": false,
+  "vite": true,
+  "tailwind": true,
+  "webflow": false,
+  "canvas": 1,
+  "video": 0,
+  "svg": 71,
+  "motionAttrs": 29,
+  "generator": null
+ },
+ "scripts": [
+  "/assets/index-B3tNx_ED.js"
+ ],
+ "loadedFonts": [
+  "Inter Variable 100 900 normal"
+ ],
+ "fontTuples": [
+  [
+   "\"Inter Variable\" 11px 400",
+   39
+  ],
+  [
+   "\"Inter Variable\" 12px 400",
+   32
+  ],
+  [
+   "\"Inter Variable\" 12px 500",
+   15
+  ],
+  [
+   "\"Inter Variable\" 10px 400",
+   5
+  ],
+  [
+   "\"Inter Variable\" 10px 500",
+   2
+  ],
+  [
+   "\"Inter Variable\" 13px 500",
+   1
+  ]
+ ],
+ "radii": [
+  [
+   "5px",
+   51
+  ],
+  [
+   "6px",
+   45
+  ],
+  [
+   "8px",
+   19
+  ],
+  [
+   "3.35544e+07px",
+   14
+  ],
+  [
+   "4px",
+   5
+  ],
+  [
+   "2px",
+   1
+  ],
+  [
+   "10px",
+   1
+  ]
+ ],
+ "shadows": [
+  [
+   "rgb(255, 255, 255) 0px 0px 0px 2px, rgba(0, 0, 0, 0.35) 0px 0px 0px 3px, rgba(0, 0, 0, 0.4) 0px 3px 10px 0px",
+   5
+  ],
+  [
+   "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset",
+   5
+  ],
+  [
+   "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.4) 0px 1px 4px 0px",
+   3
+  ],
+  [
+   "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(255, 255, 255, 0.12) 0px 0px 0px 1px inset",
+   1
+  ],
+  [
+   "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(255, 255, 255, 0.11) 0px 0px 0px 1px inset",
+   1
+  ],
+  [
+   "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.9) 0px 40px 100px -30px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px",
+   1
+  ],
+  [
+   "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(255, 255, 255, 0.07) 0px 0px 0px 1px, rgba(0, 0, 0, 0.75) 0px 12px 32px -8px",
+   1
+  ],
+  [
+   "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(255, 255, 255, 0.067) 0px 0px 0px 1px inset",
+   1
+  ],
+  [
+   "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(236, 236, 238) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+   1
+  ],
+  [
+   "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.12) 0px 1px 2px 0px, rgba(255, 255, 255, 0.067) 0px 0px 0px 1px",
+   1
+  ]
+ ],
+ "foldColours": [
+  [
+   "rgb(236, 236, 238)",
+   264
+  ],
+  [
+   "rgb(163, 163, 170)",
+   95
+  ],
+  [
+   "rgb(104, 104, 111)",
+   93
+  ],
+  [
+   "rgb(25, 25, 27)",
+   28
+  ],
+  [
+   "rgb(11, 11, 12)",
+   9
+  ],
+  [
+   "rgb(42, 42, 46)",
+   7
+  ],
+  [
+   "rgb(26, 26, 28)",
+   6
+  ],
+  [
+   "rgba(255, 255, 255, 0.07)",
+   3
+  ],
+  [
+   "oklab(0.51968 0.00302854 -0.0104584 / 0.5)",
+   3
+  ],
+  [
+   "oklab(0.999994 0.0000455678 0.0000200868 / 0.9)",
+   3
+  ],
+  [
+   "rgb(241, 241, 242)",
+   2
+  ],
+  [
+   "rgb(15, 15, 16)",
+   2
+  ],
+  [
+   "rgb(11, 10, 31)",
+   2
+  ],
+  [
+   "rgb(59, 29, 143)",
+   2
+  ],
+  [
+   "rgb(255, 77, 141)",
+   2
+  ],
+  [
+   "rgb(255, 158, 94)",
+   2
+  ],
+  [
+   "rgb(27, 108, 255)",
+   2
+  ],
+  [
+   "oklab(0.51968 0.00302854 -0.0104584 / 0.6)",
+   1
+  ],
+  [
+   "oklab(0.150034 0.000596076 -0.00203293 / 0.9)",
+   1
+  ],
+  [
+   "rgb(6, 6, 7)",
+   1
+  ]
+ ],
+ "headings": [],
+ "buttons": [
+  {
+   "tag": "button",
+   "cls": "group/button inline-flex shrink-0 items-center justify-center border border-tran",
+   "text": "",
+   "x": 215,
+   "y": 11.5,
+   "w": 24,
+   "h": 24,
+   "fontFamily": "\"Inter Variable\", system-ui, sans-serif",
+   "fontSize": "12px",
+   "fontWeight": "500",
+   "lineHeight": "16px",
+   "color": "rgb(163, 163, 170)",
+   "borderRadius": "5px",
+   "border": "1px solid rgba(0, 0, 0, 0)",
+   "transition": "background-color 0.15s cubic-bezier(0.22, 1, 0.36, 1), color 0.15s cubic-bezier(0.22, 1, 0.36, 1), transform 0.15s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.15s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.15s cubic-bezi…"
+  },
+  {
+   "tag": "button",
+   "cls": "group/button inline-flex shrink-0 items-center justify-center rounded-md border ",
+   "text": "",
+   "x": 528.9,
+   "y": 9.5,
+   "w": 28,
+   "h": 28,
+   "fontFamily": "\"Inter Variable\", system-ui, sans-serif",
+   "fontSize": "12px",
+   "fontWeight": "500",
+   "lineHeight": "16px",
+   "color": "rgb(163, 163, 170)",
+   "borderRadius": "6px",
+   "border": "1px solid rgba(0, 0, 0, 0)",
+   "transition": "background-color 0.15s cubic-bezier(0.22, 1, 0.36, 1), color 0.15s cubic-bezier(0.22, 1, 0.36, 1), transform 0.15s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.15s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.15s cubic-bezi…"
+  },
+  {
+   "tag": "button",
+   "cls": "group/button inline-flex shrink-0 items-center justify-center rounded-md border ",
+   "text": "",
+   "x": 558.9,
+   "y": 9.5,
+   "w": 28,
+   "h": 28,
+   "fontFamily": "\"Inter Variable\", system-ui, sans-serif",
+   "fontSize": "12px",
+   "fontWeight": "500",
+   "lineHeight": "16px",
+   "color": "rgb(163, 163, 170)",
+   "borderRadius": "6px",
+   "border": "1px solid rgba(0, 0, 0, 0)",
+   "transition": "background-color 0.15s cubic-bezier(0.22, 1, 0.36, 1), color 0.15s cubic-bezier(0.22, 1, 0.36, 1), transform 0.15s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.15s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.15s cubic-bezi…"
+  },
+  {
+   "tag": "button",
+   "cls": "group/button inline-flex items-center justify-center rounded-md border border-tr",
+   "text": "Reset",
+   "x": 588.9,
+   "y": 9.5,
+   "w": 72.3,
+   "h": 28,
+   "fontFamily": "\"Inter Variable\", system-ui, sans-serif",
+   "fontSize": "12px",
+   "fontWeight": "500",
+   "lineHeight": "16px",
+   "color": "rgb(163, 163, 170)",
+   "borderRadius": "6px",
+   "border": "1px solid rgba(0, 0, 0, 0)",
+   "padding": "0px 8px",
+   "transition": "background-color 0.15s cubic-bezier(0.22, 1, 0.36, 1), color 0.15s cubic-bezier(0.22, 1, 0.36, 1), transform 0.15s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.15s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.15s cubic-bezi…"
+  },
+  {
+   "tag": "button",
+   "cls": "ml-2 flex h-7 w-60 min-w-24 shrink items-center gap-2 rounded-md bg-field px-2 t",
+   "text": "Search generators, effects…\n⌘K",
+   "x": 671.1,
+   "y": 9.5,
+   "w": 240,
+   "h": 28,
+   "fontFamily": "\"Inter Variable\", system-ui, sans-serif",
+   "fontSize": "12px",
+   "fontWeight": "400",
+   "lineHeight": "16px",
+   "color": "rgb(104, 104, 111)",
+   "backgroundColor": "rgb(25, 25, 27)",
+   "borderRadius": "6px",
+   "border": "0px solid rgba(255, 255, 255, 0.067)",
+   "padding": "0px 8px",
+   "transition": "color 0.15s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), outline-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), text-decoration-color 0.15…"
+  },
+  {
+   "tag": "button",
+   "cls": "group/button inline-flex items-center justify-center rounded-md border border-tr",
+   "text": "Surprise me\nR",
+   "x": 991.4,
+   "y": 9.5,
+   "w": 133.4,
+   "h": 28,
+   "fontFamily": "\"Inter Variable\", system-ui, sans-serif",
+   "fontSize": "12px",
+   "fontWeight": "500",
+   "lineHeight": "16px",
+   "color": "rgb(236, 236, 238)",
+   "backgroundColor": "rgb(25, 25, 27)",
+   "borderRadius": "6px",
+   "border": "1px solid rgba(0, 0, 0, 0)",
+   "padding": "0px 6px 0px 10px",
+   "transition": "background-color 0.15s cubic-bezier(0.22, 1, 0.36, 1), color 0.15s cubic-bezier(0.22, 1, 0.36, 1), transform 0.15s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.15s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.15s cubic-bezi…"
+  },
+  {
+   "tag": "button",
+   "cls": "group/button inline-flex shrink-0 items-center justify-center rounded-md border ",
+   "text": "",
+   "x": 1288.5,
+   "y": 9.5,
+   "w": 28,
+   "h": 28,
+   "fontFamily": "\"Inter Variable\", system-ui, sans-serif",
+   "fontSize": "12px",
+   "fontWeight": "500",
+   "lineHeight": "16px",
+   "color": "rgb(163, 163, 170)",
+   "borderRadius": "6px",
+   "border": "1px solid rgba(0, 0, 0, 0)",
+   "transition": "background-color 0.15s cubic-bezier(0.22, 1, 0.36, 1), color 0.15s cubic-bezier(0.22, 1, 0.36, 1), transform 0.15s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.15s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.15s cubic-bezi…"
+  },
+  {
+   "tag": "button",
+   "cls": "group/button inline-flex shrink-0 items-center justify-center rounded-md border ",
+   "text": "",
+   "x": 1322.5,
+   "y": 9.5,
+   "w": 28,
+   "h": 28,
+   "fontFamily": "\"Inter Variable\", system-ui, sans-serif",
+   "fontSize": "12px",
+   "fontWeight": "500",
+   "lineHeight": "16px",
+   "color": "rgb(163, 163, 170)",
+   "borderRadius": "6px",
+   "border": "1px solid rgba(0, 0, 0, 0)",
+   "transition": "background-color 0.15s cubic-bezier(0.22, 1, 0.36, 1), color 0.15s cubic-bezier(0.22, 1, 0.36, 1), transform 0.15s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.15s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.15s cubic-bezi…"
+  },
+  {
+   "tag": "button",
+   "cls": "group/button inline-flex shrink-0 items-center justify-center rounded-md border ",
+   "text": "Export",
+   "x": 1360.5,
+   "y": 9.5,
+   "w": 67.5,
+   "h": 28,
+   "fontFamily": "\"Inter Variable\", system-ui, sans-serif",
+   "fontSize": "12px",
+   "fontWeight": "500",
+   "lineHeight": "16px",
+   "color": "rgb(11, 11, 12)",
+   "backgroundColor": "rgb(241, 241, 242)",
+   "borderRadius": "6px",
+   "border": "1px solid rgba(0, 0, 0, 0)",
+   "padding": "0px 14px",
+   "transition": "background-color 0.15s cubic-bezier(0.22, 1, 0.36, 1), color 0.15s cubic-bezier(0.22, 1, 0.36, 1), transform 0.15s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.15s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.15s cubic-bezi…"
+  },
+  {
+   "tag": "button",
+   "cls": "relative flex size-8 items-center justify-center rounded-md transition-colors te",
+   "text": "",
+   "x": 5.5,
+   "y": 56,
+   "w": 32,
+   "h": 32,
+   "fontFamily": "\"Inter Variable\", system-ui, sans-serif",
+   "fontSize": "12px",
+   "fontWeight": "400",
+   "lineHeight": "16px",
+   "color": "rgb(236, 236, 238)",
+   "borderRadius": "6px",
+   "border": "0px solid rgba(255, 255, 255, 0.067)",
+   "transition": "color 0.15s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), outline-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), text-decoration-color 0.15…"
+  },
+  {
+   "tag": "button",
+   "cls": "relative flex size-8 items-center justify-center rounded-md transition-colors te",
+   "text": "",
+   "x": 5.5,
+   "y": 92,
+   "w": 32,
+   "h": 32,
+   "fontFamily": "\"Inter Variable\", system-ui, sans-serif",
+   "fontSize": "12px",
+   "fontWeight": "400",
+   "lineHeight": "16px",
+   "color": "rgb(104, 104, 111)",
+   "borderRadius": "6px",
+   "border": "0px solid rgba(255, 255, 255, 0.067)",
+   "transition": "color 0.15s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), outline-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), text-decoration-color 0.15…"
+  },
+  {
+   "tag": "button",
+   "cls": "relative flex size-8 items-center justify-center rounded-md transition-colors te",
+   "text": "",
+   "x": 5.5,
+   "y": 128,
+   "w": 32,
+   "h": 32,
+   "fontFamily": "\"Inter Variable\", system-ui, sans-serif",
+   "fontSize": "12px",
+   "fontWeight": "400",
+   "lineHeight": "16px",
+   "color": "rgb(104, 104, 111)",
+   "borderRadius": "6px",
+   "border": "0px solid rgba(255, 255, 255, 0.067)",
+   "transition": "color 0.15s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), outline-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), text-decoration-color 0.15…"
+  },
+  {
+   "tag": "button",
+   "cls": "relative flex size-8 items-center justify-center rounded-md transition-colors te",
+   "text": "",
+   "x": 5.5,
+   "y": 164,
+   "w": 32,
+   "h": 32,
+   "fontFamily": "\"Inter Variable\", system-ui, sans-serif",
+   "fontSize": "12px",
+   "fontWeight": "400",
+   "lineHeight": "16px",
+   "color": "rgb(104, 104, 111)",
+   "borderRadius": "6px",
+   "border": "0px solid rgba(255, 255, 255, 0.067)",
+   "transition": "color 0.15s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), outline-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), text-decoration-color 0.15…"
+  },
+  {
+   "tag": "button",
+   "cls": "group/button inline-flex shrink-0 items-center justify-center rounded-md border ",
+   "text": "",
+   "x": 441,
+   "y": 856,
+   "w": 28,
+   "h": 28,
+   "fontFamily": "\"Inter Variable\", system-ui, sans-serif",
+   "fontSize": "12px",
+   "fontWeight": "500",
+   "lineHeight": "16px",
+   "color": "rgb(236, 236, 238)",
+   "backgroundColor": "rgba(255, 255, 255, 0.07)",
+   "borderRadius": "6px",
+   "border": "1px solid rgba(0, 0, 0, 0)",
+   "transition": "background-color 0.15s cubic-bezier(0.22, 1, 0.36, 1), color 0.15s cubic-bezier(0.22, 1, 0.36, 1), transform 0.15s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.15s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.15s cubic-bezi…"
+  }
+ ],
+ "cards": [],
+ "gradients": [
+  {
+   "tag": "div",
+   "cls": "absolute inset-0 transition-[background] duration-700",
+   "text": "",
+   "x": 12,
+   "y": 14.5,
+   "w": 18,
+   "h": 18,
+   "backgroundImage": "conic-gradient(from 210deg at 30% 70%, rgb(11, 10, 31), rgb(59, 29, 143), rgb(255, 77, 141), rgb(255, 158, 94), rgb(27, 108, 255), rgb(11, 10, 31))"
+  },
+  {
+   "tag": "div",
+   "cls": "absolute inset-0 bg-[radial-gradient(circle_at_70%_25%,rgba(255,255,255,0.45),tr",
+   "text": "",
+   "x": 12,
+   "y": 14.5,
+   "w": 18,
+   "h": 18,
+   "backgroundImage": "radial-gradient(circle at 70% 25%, rgba(255, 255, 255, 0.45), rgba(0, 0, 0, 0) 55%)"
+  },
+  {
+   "tag": "span",
+   "cls": "absolute top-1/2 left-1/2 -z-20 aspect-square w-[160%] -translate-x-1/2 -transla",
+   "text": "",
+   "x": 1078.9,
+   "y": -96.7,
+   "w": 240.4,
+   "h": 240.4,
+   "backgroundImage": "conic-gradient(rgb(11, 10, 31), rgb(59, 29, 143), rgb(255, 77, 141), rgb(255, 158, 94), rgb(27, 108, 255), rgb(11, 10, 31))"
+  },
+  {
+   "tag": "div",
+   "cls": "select-none stage-grid relative h-full w-full overflow-hidden select-none",
+   "text": "1600 × 1000\n·\n45%\n45%\n2.8s",
+   "x": 293,
+   "y": 48,
+   "w": 834,
+   "h": 852,
+   "backgroundImage": "radial-gradient(rgba(255, 255, 255, 0.05) 1px, rgba(0, 0, 0, 0) 1.2px)"
+  },
+  {
+   "tag": "div",
+   "cls": "checker h-6 overflow-hidden rounded-md",
+   "text": "",
+   "x": 1140,
+   "y": 277,
+   "w": 288,
+   "h": 24,
+   "backgroundImage": "linear-gradient(45deg, rgb(35, 35, 38) 25%, rgba(0, 0, 0, 0) 25%), linear-gradient(-45deg, rgb(35, 35, 38) 25%, rgba(0, 0, 0, 0) 25%), linear-gradient(45deg, rgba(0, 0, 0, 0) 75%, rgb(35, 35, 38) 75%), linear-gradient(-4…",
+   "borderRadius": "6px"
+  },
+  {
+   "tag": "div",
+   "cls": "size-full",
+   "text": "",
+   "x": 1140,
+   "y": 277,
+   "w": 288,
+   "h": 24,
+   "backgroundImage": "linear-gradient(90deg, rgb(11, 10, 31) 0%, rgb(18, 14, 48) 4.2%, rgb(26, 18, 65) 8.3%, rgb(33, 21, 84) 12.5%, rgb(42, 24, 103) 16.7%, rgb(50, 27, 123) 20.8%, rgb(59, 29, 143) 25%, rgb(88, 46, 145) 29.2%, rgb(119, 57, 146…"
+  },
+  {
+   "tag": "button",
+   "cls": "checker size-5 shrink-0 overflow-hidden rounded-[4px] shadow-[inset_0_0_0_1px_rg",
+   "text": "",
+   "x": 1164,
+   "y": 347,
+   "w": 20,
+   "h": 20,
+   "backgroundImage": "linear-gradient(45deg, rgb(35, 35, 38) 25%, rgba(0, 0, 0, 0) 25%), linear-gradient(-45deg, rgb(35, 35, 38) 25%, rgba(0, 0, 0, 0) 25%), linear-gradient(45deg, rgba(0, 0, 0, 0) 75%, rgb(35, 35, 38) 75%), linear-gradient(-4…",
+   "borderRadius": "4px"
+  },
+  {
+   "tag": "button",
+   "cls": "checker size-5 shrink-0 overflow-hidden rounded-[4px] shadow-[inset_0_0_0_1px_rg",
+   "text": "",
+   "x": 1164,
+   "y": 383,
+   "w": 20,
+   "h": 20,
+   "backgroundImage": "linear-gradient(45deg, rgb(35, 35, 38) 25%, rgba(0, 0, 0, 0) 25%), linear-gradient(-45deg, rgb(35, 35, 38) 25%, rgba(0, 0, 0, 0) 25%), linear-gradient(45deg, rgba(0, 0, 0, 0) 75%, rgb(35, 35, 38) 75%), linear-gradient(-4…",
+   "borderRadius": "4px"
+  },
+  {
+   "tag": "button",
+   "cls": "checker size-5 shrink-0 overflow-hidden rounded-[4px] shadow-[inset_0_0_0_1px_rg",
+   "text": "",
+   "x": 1164,
+   "y": 419,
+   "w": 20,
+   "h": 20,
+   "backgroundImage": "linear-gradient(45deg, rgb(35, 35, 38) 25%, rgba(0, 0, 0, 0) 25%), linear-gradient(-45deg, rgb(35, 35, 38) 25%, rgba(0, 0, 0, 0) 25%), linear-gradient(45deg, rgba(0, 0, 0, 0) 75%, rgb(35, 35, 38) 75%), linear-gradient(-4…",
+   "borderRadius": "4px"
+  },
+  {
+   "tag": "button",
+   "cls": "checker size-5 shrink-0 overflow-hidden rounded-[4px] shadow-[inset_0_0_0_1px_rg",
+   "text": "",
+   "x": 1164,
+   "y": 455,
+   "w": 20,
+   "h": 20,
+   "backgroundImage": "linear-gradient(45deg, rgb(35, 35, 38) 25%, rgba(0, 0, 0, 0) 25%), linear-gradient(-45deg, rgb(35, 35, 38) 25%, rgba(0, 0, 0, 0) 25%), linear-gradient(45deg, rgba(0, 0, 0, 0) 75%, rgb(35, 35, 38) 75%), linear-gradient(-4…",
+   "borderRadius": "4px"
+  },
+  {
+   "tag": "button",
+   "cls": "checker size-5 shrink-0 overflow-hidden rounded-[4px] shadow-[inset_0_0_0_1px_rg",
+   "text": "",
+   "x": 1164,
+   "y": 491,
+   "w": 20,
+   "h": 20,
+   "backgroundImage": "linear-gradient(45deg, rgb(35, 35, 38) 25%, rgba(0, 0, 0, 0) 25%), linear-gradient(-45deg, rgb(35, 35, 38) 25%, rgba(0, 0, 0, 0) 25%), linear-gradient(45deg, rgba(0, 0, 0, 0) 75%, rgb(35, 35, 38) 75%), linear-gradient(-4…",
+   "borderRadius": "4px"
+  }
+ ],
+ "rootVars": {
+  ":root --app": "#f5f5f6",
+  ":root --panel": "#fbfbfc",
+  ":root --raised": "#fff",
+  ":root --field": "#eeeef0",
+  ":root --field-hover": "#e7e7ea",
+  ":root --field-fill": "#d9d9de",
+  ":root --field-fill-active": "#c9c9cf",
+  ":root --line": "#00000013",
+  ":root --line-strong": "#00000021",
+  ":root --ink": "#141416",
+  ":root --ink-2": "#57575e",
+  ":root --ink-3": "#8c8c94",
+  ":root --stage": "#e6e6e9",
+  ":root --stage-dot": "#00000013",
+  ":root --accent-bg": "#141416",
+  ":root --accent-ink": "#fff",
+  ":root --sel": "#0000000e",
+  ":root --handle-ring": "#141416",
+  ":root --shadow-pop": "0 0 0 1px #0000000f, 0 10px 30px -8px #0000002e",
+  ":root --shadow-float": "0 0 0 1px #0000000f, 0 8px 24px -6px #00000029",
+  ":root --shadow-artboard": "0 30px 80px -30px #00000059, 0 0 0 1px #0000000f",
+  ":root --checker-a": "#fff",
+  ":root --checker-b": "#e4e4e7",
+  ":root --ease-out": "cubic-bezier(.22, 1, .36, 1)",
+  ":root --ease-spring": "cubic-bezier(.34, 1.56, .64, 1)",
+  ":root --background": "var(--app)",
+  ":root --foreground": "var(--ink)",
+  ":root --card": "var(--panel)",
+  ":root --card-foreground": "var(--ink)",
+  ":root --popover": "var(--raised)",
+  ":root --popover-foreground": "var(--ink)",
+  ":root --primary": "var(--accent-bg)",
+  ":root --primary-foreground": "var(--accent-ink)",
+  ":root --secondary": "var(--field)",
+  ":root --secondary-foreground": "var(--ink)",
+  ":root --muted": "var(--field)",
+  ":root --muted-foreground": "var(--ink-3)",
+  ":root --accent": "var(--field-hover)",
+  ":root --accent-foreground": "var(--ink)",
+  ":root --destructive": "#d4493f",
+  ":root --border": "var(--line)",
+  ":root --input": "var(--line-strong)",
+  ":root --ring": "var(--ink-3)",
+  ":root --radius": "8px",
+  ".dark --app": "#0b0b0c",
+  ".dark --panel": "#0f0f10",
+  ".dark --raised": "#18181a",
+  ".dark --field": "#19191b",
+  ".dark --field-hover": "#202023",
+  ".dark --field-fill": "#2a2a2e",
+  ".dark --field-fill-active": "#36363b",
+  ".dark --line": "#fff1",
+  ".dark --line-strong": "#ffffff1c",
+  ".dark --ink": "#ececee",
+  ".dark --ink-2": "#a3a3aa",
+  ".dark --ink-3": "#68686f",
+  ".dark --stage": "#060607",
+  ".dark --stage-dot": "#ffffff0d",
+  ".dark --accent-bg": "#f1f1f2",
+  ".dark --accent-ink": "#0b0b0c",
+  ".dark --sel": "#ffffff12",
+  ".dark --handle-ring": "#fff",
+  ".dark --shadow-pop": "0 0 0 1px #ffffff12, 0 16px 40px -10px #000c",
+  ".dark --shadow-float": "0 0 0 1px #ffffff12, 0 12px 32px -8px #000000bf",
+  ".dark --shadow-artboard": "0 40px 100px -30px #000000e6, 0 0 0 1px #ffffff0d",
+  ".dark --checker-a": "#1a1a1c",
+  ".dark --checker-b": "#232326",
+  ".dark --destructive": "#ff6b5f"
+ },
+ "hover": [
+  {
+   "text": "",
+   "transition": "background-color 0.15s cubic-bezier(0.22, 1, 0.36, 1), color 0.15s cubic-bezier(0.22, 1, 0.36, 1), transform 0.15s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.",
+   "changed": {
+    "bg": [
+     "rgba(0, 0, 0, 0)",
+     "rgb(32, 32, 35)"
+    ],
+    "c": [
+     "rgb(163, 163, 170)",
+     "rgb(236, 236, 238)"
+    ]
+   }
+  },
+  {
+   "text": "Reset",
+   "transition": "background-color 0.15s cubic-bezier(0.22, 1, 0.36, 1), color 0.15s cubic-bezier(0.22, 1, 0.36, 1), transform 0.15s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.",
+   "changed": {
+    "bg": [
+     "rgba(0, 0, 0, 0)",
+     "rgb(32, 32, 35)"
+    ],
+    "c": [
+     "rgb(163, 163, 170)",
+     "rgb(236, 236, 238)"
+    ]
+   }
+  },
+  {
+   "text": "Search generators, effects…\n⌘K",
+   "transition": "color 0.15s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), outline-color 0.",
+   "changed": {
+    "bg": [
+     "rgb(25, 25, 27)",
+     "rgb(32, 32, 35)"
+    ],
+    "c": [
+     "rgb(104, 104, 111)",
+     "rgb(163, 163, 170)"
+    ]
+   }
+  },
+  {
+   "text": "Surprise me\nR",
+   "transition": "background-color 0.15s cubic-bezier(0.22, 1, 0.36, 1), color 0.15s cubic-bezier(0.22, 1, 0.36, 1), transform 0.15s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.",
+   "changed": {
+    "bg": [
+     "rgb(25, 25, 27)",
+     "rgb(32, 32, 35)"
+    ]
+   }
+  },
+  {
+   "text": "Buy me a coffee",
+   "transition": "transform 0.15s cubic-bezier(0.4, 0, 0.2, 1), translate 0.15s cubic-bezier(0.4, 0, 0.2, 1), scale 0.15s cubic-bezier(0.4, 0, 0.2, 1), rotate 0.15s cubic-bezier(",
+   "changed": {}
+  }
+ ]
+}

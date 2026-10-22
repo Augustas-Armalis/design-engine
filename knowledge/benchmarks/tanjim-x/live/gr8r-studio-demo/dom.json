@@ -1,0 +1,889 @@
+{
+ "title": "Home · Gr8r Studio",
+ "url": "https://gr8r-studio.vercel.app/",
+ "viewport": [
+  1440,
+  900
+ ],
+ "scrollHeight": 900,
+ "bodyBg": "rgb(251, 250, 248)",
+ "htmlBg": "rgba(0, 0, 0, 0)",
+ "framework": {
+  "next": false,
+  "react": false,
+  "framer": false,
+  "nuxt": false,
+  "svelte": false,
+  "astro": false,
+  "vite": false,
+  "tailwind": false,
+  "webflow": false,
+  "canvas": 0,
+  "video": 0,
+  "svg": 117,
+  "motionAttrs": 0,
+  "generator": null
+ },
+ "scripts": [],
+ "loadedFonts": [
+  "Geist 400 normal",
+  "Geist 500 normal",
+  "Geist 600 normal",
+  "Geist Mono 400 normal"
+ ],
+ "fontTuples": [
+  [
+   "Geist 8px 600",
+   35
+  ],
+  [
+   "Geist 13.5px 450",
+   29
+  ],
+  [
+   "Geist 12.5px 400",
+   28
+  ],
+  [
+   "Geist 12.5px 500",
+   24
+  ],
+  [
+   "Geist 12px 400",
+   24
+  ],
+  [
+   "Geist 12px 500",
+   20
+  ],
+  [
+   "Geist 13px 400",
+   9
+  ],
+  [
+   "Geist 13.5px 400",
+   8
+  ],
+  [
+   "Geist 11.5px 400",
+   6
+  ],
+  [
+   "Geist 13.5px 600",
+   5
+  ],
+  [
+   "Geist 11px 600",
+   4
+  ],
+  [
+   "Geist 22px 600",
+   4
+  ],
+  [
+   "Geist 11.5px 600",
+   3
+  ],
+  [
+   "Geist 11.5px 500",
+   3
+  ],
+  [
+   "Geist 13.5px 500",
+   2
+  ],
+  [
+   "Geist 11px 450",
+   2
+  ],
+  [
+   "\"Geist Mono\" 11px 450",
+   1
+  ],
+  [
+   "Geist 8.8px 600",
+   1
+  ],
+  [
+   "\"Geist Mono\" 11px 400",
+   1
+  ],
+  [
+   "Geist 10.4px 600",
+   1
+  ],
+  [
+   "Geist 23px 600",
+   1
+  ]
+ ],
+ "radii": [
+  [
+   "50%",
+   55
+  ],
+  [
+   "6px",
+   46
+  ],
+  [
+   "5px",
+   16
+  ],
+  [
+   "3px",
+   15
+  ],
+  [
+   "10px",
+   5
+  ],
+  [
+   "7px",
+   5
+  ],
+  [
+   "28%",
+   2
+  ],
+  [
+   "4px",
+   2
+  ],
+  [
+   "8px",
+   1
+  ]
+ ],
+ "shadows": [
+  [
+   "rgb(255, 255, 255) 0px 0px 0px 1.5px",
+   37
+  ],
+  [
+   "rgba(28, 25, 20, 0.05) 0px 1px 2px 0px",
+   3
+  ],
+  [
+   "rgba(0, 0, 0, 0.05) 0px 1px 2px 0px, rgb(233, 231, 226) 0px 0px 0px 1px",
+   1
+  ],
+  [
+   "rgb(255, 255, 255) 0px 0px 0px 2px",
+   1
+  ],
+  [
+   "rgba(0, 0, 0, 0.12) 0px -1px 0px 0px inset",
+   1
+  ],
+  [
+   "rgba(0, 0, 0, 0.08) 0px 1px 2px 0px, rgb(233, 231, 226) 0px 0px 0px 1px",
+   1
+  ]
+ ],
+ "foldColours": [
+  [
+   "rgb(29, 28, 26)",
+   244
+  ],
+  [
+   "rgb(87, 84, 78)",
+   139
+  ],
+  [
+   "rgb(140, 136, 128)",
+   48
+  ],
+  [
+   "rgb(107, 103, 96)",
+   36
+  ],
+  [
+   "rgb(255, 255, 255)",
+   23
+  ],
+  [
+   "color(srgb 0.245294 0.271569 0.511765)",
+   8
+  ],
+  [
+   "color(srgb 0.89 0.898667 0.974)",
+   8
+  ],
+  [
+   "color(srgb 0.178431 0.329804 0.468627)",
+   8
+  ],
+  [
+   "color(srgb 0.869333 0.916667 0.960667)",
+   8
+  ],
+  [
+   "color(srgb 0.352941 0.403922 0.847059)",
+   7
+  ],
+  [
+   "rgb(251, 250, 248)",
+   6
+  ],
+  [
+   "rgb(53, 112, 196)",
+   6
+  ],
+  [
+   "color(srgb 0.231373 0.509804 0.768627)",
+   6
+  ],
+  [
+   "color(srgb 0.772549 0.294118 0.470588)",
+   6
+  ],
+  [
+   "color(srgb 0.768627 0.541176 0.117647)",
+   6
+  ],
+  [
+   "rgb(59, 130, 196)",
+   6
+  ],
+  [
+   "color(srgb 0.476078 0.211176 0.304706)",
+   5
+  ],
+  [
+   "color(srgb 0.961333 0.88 0.91)",
+   5
+  ],
+  [
+   "color(srgb 0.126667 0.362157 0.343529)",
+   5
+  ],
+  [
+   "color(srgb 0.853333 0.926667 0.922)",
+   5
+  ]
+ ],
+ "headings": [
+  {
+   "tag": "h1",
+   "cls": "",
+   "text": "Good morning, Alex",
+   "x": 298,
+   "y": 74,
+   "w": 439.2,
+   "h": 27.6,
+   "fontFamily": "Geist, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+   "fontSize": "23px",
+   "fontWeight": "600",
+   "letterSpacing": "-0.506px",
+   "lineHeight": "27.6px",
+   "color": "rgb(29, 28, 26)"
+  },
+  {
+   "tag": "h2",
+   "cls": "",
+   "text": "My tasks",
+   "x": 313,
+   "y": 280.1,
+   "w": 58.7,
+   "h": 19.6,
+   "fontFamily": "Geist, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+   "fontSize": "13.5px",
+   "fontWeight": "600",
+   "lineHeight": "19.575px",
+   "color": "rgb(29, 28, 26)"
+  },
+  {
+   "tag": "h2",
+   "cls": "",
+   "text": "Project progress",
+   "x": 313,
+   "y": 575.1,
+   "w": 107.2,
+   "h": 19.6,
+   "fontFamily": "Geist, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+   "fontSize": "13.5px",
+   "fontWeight": "600",
+   "lineHeight": "19.575px",
+   "color": "rgb(29, 28, 26)"
+  },
+  {
+   "tag": "h2",
+   "cls": "",
+   "text": "Upcoming deadlines",
+   "x": 985.5,
+   "y": 279.1,
+   "w": 131.6,
+   "h": 19.6,
+   "fontFamily": "Geist, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+   "fontSize": "13.5px",
+   "fontWeight": "600",
+   "lineHeight": "19.575px",
+   "color": "rgb(29, 28, 26)"
+  },
+  {
+   "tag": "h2",
+   "cls": "",
+   "text": "Recent activity",
+   "x": 985.5,
+   "y": 729.8,
+   "w": 97.5,
+   "h": 19.6,
+   "fontFamily": "Geist, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+   "fontSize": "13.5px",
+   "fontWeight": "600",
+   "lineHeight": "19.575px",
+   "color": "rgb(29, 28, 26)"
+  }
+ ],
+ "buttons": [
+  {
+   "tag": "button",
+   "cls": "skip",
+   "text": "Skip to content",
+   "x": 12,
+   "y": -60,
+   "w": 113.6,
+   "h": 34.1,
+   "fontFamily": "Geist, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+   "fontSize": "12.5px",
+   "fontWeight": "500",
+   "lineHeight": "18.125px",
+   "color": "rgb(255, 255, 255)",
+   "backgroundColor": "rgb(29, 28, 26)",
+   "borderRadius": "6px",
+   "border": "0px none rgb(255, 255, 255)",
+   "padding": "8px 12px",
+   "transition": "top 0.15s cubic-bezier(0.23, 1, 0.32, 1)"
+  },
+  {
+   "tag": "button",
+   "cls": "ws grow",
+   "text": "Gr8r Studio",
+   "x": 8,
+   "y": 8,
+   "w": 207,
+   "h": 32,
+   "fontFamily": "Geist, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+   "fontSize": "13.5px",
+   "fontWeight": "400",
+   "lineHeight": "19.575px",
+   "color": "rgb(29, 28, 26)",
+   "borderRadius": "6px",
+   "border": "0px none rgb(29, 28, 26)",
+   "padding": "5px 6px",
+   "transition": "background 0.14s"
+  },
+  {
+   "tag": "button",
+   "cls": "ibtn ibtn-sm hide-m",
+   "text": "",
+   "x": 217,
+   "y": 11,
+   "w": 26,
+   "h": 26,
+   "fontFamily": "Geist, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+   "fontSize": "13.5px",
+   "fontWeight": "400",
+   "lineHeight": "19.575px",
+   "color": "rgb(87, 84, 78)",
+   "borderRadius": "6px",
+   "border": "0px none rgb(87, 84, 78)",
+   "transition": "background 0.14s, color 0.14s"
+  },
+  {
+   "tag": "button",
+   "cls": "sitem on",
+   "text": "Home",
+   "x": 8,
+   "y": 48,
+   "w": 235,
+   "h": 30,
+   "fontFamily": "Geist, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+   "fontSize": "13.5px",
+   "fontWeight": "500",
+   "lineHeight": "19.575px",
+   "color": "rgb(29, 28, 26)",
+   "backgroundColor": "rgb(255, 255, 255)",
+   "borderRadius": "6px",
+   "boxShadow": "rgba(0, 0, 0, 0.05) 0px 1px 2px 0px, rgb(233, 231, 226) 0px 0px 0px 1px",
+   "border": "0px none rgb(29, 28, 26)",
+   "padding": "0px 8px",
+   "transition": "background 0.14s, color 0.14s"
+  },
+  {
+   "tag": "button",
+   "cls": "sitem ",
+   "text": "Inbox\n4",
+   "x": 8,
+   "y": 78,
+   "w": 235,
+   "h": 30,
+   "fontFamily": "Geist, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+   "fontSize": "13.5px",
+   "fontWeight": "450",
+   "lineHeight": "19.575px",
+   "color": "rgb(87, 84, 78)",
+   "borderRadius": "6px",
+   "border": "0px none rgb(87, 84, 78)",
+   "padding": "0px 8px",
+   "transition": "background 0.14s, color 0.14s"
+  },
+  {
+   "tag": "button",
+   "cls": "sitem ",
+   "text": "My Tasks\n2",
+   "x": 8,
+   "y": 108,
+   "w": 235,
+   "h": 30,
+   "fontFamily": "Geist, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+   "fontSize": "13.5px",
+   "fontWeight": "450",
+   "lineHeight": "19.575px",
+   "color": "rgb(87, 84, 78)",
+   "borderRadius": "6px",
+   "border": "0px none rgb(87, 84, 78)",
+   "padding": "0px 8px",
+   "transition": "background 0.14s, color 0.14s"
+  },
+  {
+   "tag": "button",
+   "cls": "sitem ",
+   "text": "Favorites",
+   "x": 8,
+   "y": 138,
+   "w": 235,
+   "h": 30,
+   "fontFamily": "Geist, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+   "fontSize": "13.5px",
+   "fontWeight": "450",
+   "lineHeight": "19.575px",
+   "color": "rgb(87, 84, 78)",
+   "borderRadius": "6px",
+   "border": "0px none rgb(87, 84, 78)",
+   "padding": "0px 8px",
+   "transition": "background 0.14s, color 0.14s"
+  },
+  {
+   "tag": "button",
+   "cls": "sitem ",
+   "text": "Search\n/",
+   "x": 8,
+   "y": 168,
+   "w": 235,
+   "h": 30,
+   "fontFamily": "Geist, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+   "fontSize": "13.5px",
+   "fontWeight": "450",
+   "lineHeight": "19.575px",
+   "color": "rgb(87, 84, 78)",
+   "borderRadius": "6px",
+   "border": "0px none rgb(87, 84, 78)",
+   "padding": "0px 8px",
+   "transition": "background 0.14s, color 0.14s"
+  },
+  {
+   "tag": "button",
+   "cls": "sitem ",
+   "text": "Notifications\n6",
+   "x": 8,
+   "y": 198,
+   "w": 235,
+   "h": 30,
+   "fontFamily": "Geist, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+   "fontSize": "13.5px",
+   "fontWeight": "450",
+   "lineHeight": "19.575px",
+   "color": "rgb(87, 84, 78)",
+   "borderRadius": "6px",
+   "border": "0px none rgb(87, 84, 78)",
+   "padding": "0px 8px",
+   "transition": "background 0.14s, color 0.14s"
+  },
+  {
+   "tag": "button",
+   "cls": "sitem ",
+   "text": "Overview",
+   "x": 8,
+   "y": 266,
+   "w": 235,
+   "h": 30,
+   "fontFamily": "Geist, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+   "fontSize": "13.5px",
+   "fontWeight": "450",
+   "lineHeight": "19.575px",
+   "color": "rgb(87, 84, 78)",
+   "borderRadius": "6px",
+   "border": "0px none rgb(87, 84, 78)",
+   "padding": "0px 8px",
+   "transition": "background 0.14s, color 0.14s"
+  },
+  {
+   "tag": "button",
+   "cls": "sitem ",
+   "text": "Projects",
+   "x": 8,
+   "y": 296,
+   "w": 235,
+   "h": 30,
+   "fontFamily": "Geist, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+   "fontSize": "13.5px",
+   "fontWeight": "450",
+   "lineHeight": "19.575px",
+   "color": "rgb(87, 84, 78)",
+   "borderRadius": "6px",
+   "border": "0px none rgb(87, 84, 78)",
+   "padding": "0px 8px",
+   "transition": "background 0.14s, color 0.14s"
+  },
+  {
+   "tag": "button",
+   "cls": "sitem ",
+   "text": "Tasks",
+   "x": 8,
+   "y": 326,
+   "w": 235,
+   "h": 30,
+   "fontFamily": "Geist, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+   "fontSize": "13.5px",
+   "fontWeight": "450",
+   "lineHeight": "19.575px",
+   "color": "rgb(87, 84, 78)",
+   "borderRadius": "6px",
+   "border": "0px none rgb(87, 84, 78)",
+   "padding": "0px 8px",
+   "transition": "background 0.14s, color 0.14s"
+  },
+  {
+   "tag": "button",
+   "cls": "sitem ",
+   "text": "Calendar",
+   "x": 8,
+   "y": 356,
+   "w": 235,
+   "h": 30,
+   "fontFamily": "Geist, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+   "fontSize": "13.5px",
+   "fontWeight": "450",
+   "lineHeight": "19.575px",
+   "color": "rgb(87, 84, 78)",
+   "borderRadius": "6px",
+   "border": "0px none rgb(87, 84, 78)",
+   "padding": "0px 8px",
+   "transition": "background 0.14s, color 0.14s"
+  },
+  {
+   "tag": "button",
+   "cls": "sitem ",
+   "text": "Timeline",
+   "x": 8,
+   "y": 386,
+   "w": 235,
+   "h": 30,
+   "fontFamily": "Geist, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+   "fontSize": "13.5px",
+   "fontWeight": "450",
+   "lineHeight": "19.575px",
+   "color": "rgb(87, 84, 78)",
+   "borderRadius": "6px",
+   "border": "0px none rgb(87, 84, 78)",
+   "padding": "0px 8px",
+   "transition": "background 0.14s, color 0.14s"
+  }
+ ],
+ "cards": [
+  {
+   "tag": "div",
+   "cls": "stats",
+   "text": "Active projects\n5\n1 at risk\nOpen tasks\n39\n7 assign",
+   "x": 298,
+   "y": 145.2,
+   "w": 1096,
+   "h": 101.7,
+   "fontFamily": "Geist, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+   "fontSize": "13.5px",
+   "fontWeight": "400",
+   "lineHeight": "19.575px",
+   "color": "rgb(29, 28, 26)",
+   "borderRadius": "10px",
+   "border": "1px solid rgb(233, 231, 226)",
+   "transition": "all"
+  },
+  {
+   "tag": "section",
+   "cls": "panel",
+   "text": "My tasks\nUpcoming\n6\nOverdue\n1\nCompleted\n1\nTriage b",
+   "x": 298,
+   "y": 262.9,
+   "w": 656.5,
+   "h": 280,
+   "fontFamily": "Geist, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+   "fontSize": "13.5px",
+   "fontWeight": "400",
+   "lineHeight": "19.575px",
+   "color": "rgb(29, 28, 26)",
+   "backgroundColor": "rgb(255, 255, 255)",
+   "borderRadius": "10px",
+   "border": "1px solid rgb(233, 231, 226)",
+   "transition": "all"
+  },
+  {
+   "tag": "section",
+   "cls": "panel",
+   "text": "Project progress\nAll projects\nProject\tStatus\tProgr",
+   "x": 298,
+   "y": 558.9,
+   "w": 656.5,
+   "h": 320,
+   "fontFamily": "Geist, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+   "fontSize": "13.5px",
+   "fontWeight": "400",
+   "lineHeight": "19.575px",
+   "color": "rgb(29, 28, 26)",
+   "backgroundColor": "rgb(255, 255, 255)",
+   "borderRadius": "10px",
+   "border": "1px solid rgb(233, 231, 226)",
+   "transition": "all"
+  },
+  {
+   "tag": "section",
+   "cls": "panel",
+   "text": "Upcoming deadlines\nCalendar\nToday\n2\nFinalize navig",
+   "x": 970.5,
+   "y": 262.9,
+   "w": 423.5,
+   "h": 434.7,
+   "fontFamily": "Geist, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+   "fontSize": "13.5px",
+   "fontWeight": "400",
+   "lineHeight": "19.575px",
+   "color": "rgb(29, 28, 26)",
+   "backgroundColor": "rgb(255, 255, 255)",
+   "borderRadius": "10px",
+   "border": "1px solid rgb(233, 231, 226)",
+   "transition": "all"
+  },
+  {
+   "tag": "section",
+   "cls": "panel",
+   "text": "Recent activity\nView all\nSC\nSarah Chen moved Creat",
+   "x": 970.5,
+   "y": 713.5,
+   "w": 423.5,
+   "h": 443.8,
+   "fontFamily": "Geist, ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+   "fontSize": "13.5px",
+   "fontWeight": "400",
+   "lineHeight": "19.575px",
+   "color": "rgb(29, 28, 26)",
+   "backgroundColor": "rgb(255, 255, 255)",
+   "borderRadius": "10px",
+   "border": "1px solid rgb(233, 231, 226)",
+   "transition": "all"
+  }
+ ],
+ "gradients": [],
+ "rootVars": {
+  ":root --bg": "#FBFAF8",
+  ":root --bg-side": "#F4F3F0",
+  ":root --surface": "#FFFFFF",
+  ":root --surface-2": "#F6F5F2",
+  ":root --surface-3": "#EEEDE9",
+  ":root --sunken": "#F7F6F3",
+  ":root --overlay": "rgba(24,22,19,.28)",
+  ":root --border": "#E9E7E2",
+  ":root --border-strong": "#DAD7D0",
+  ":root --divider": "#F0EEEA",
+  ":root --text": "#1D1C1A",
+  ":root --text-2": "#57544E",
+  ":root --text-3": "#6B6760",
+  ":root --text-4": "#8C8880",
+  ":root --text-inv": "#FFFFFF",
+  ":root --acc-l": "#4B5BD6",
+  ":root --acc-d": "#8E9AF3",
+  ":root --accent": "var(--acc-l)",
+  ":root --on-accent": "#FFFFFF",
+  ":root --accent-soft": "color-mix(in srgb, var(--accent) 10%, transparent)",
+  ":root --accent-line": "color-mix(in srgb, var(--accent) 38%, transparent)",
+  ":root --green": "#25754B",
+  ":root --amber": "#8F5E0E",
+  ":root --red": "#B23C30",
+  ":root --blue": "#3570C4",
+  ":root --violet": "#7652C2",
+  ":root --teal": "#1E8580",
+  ":root --rose": "#BC4270",
+  ":root --orange": "#C0612B",
+  ":root --gray": "#8A867E",
+  ":root --green-soft": "color-mix(in srgb, var(--green) 11%, transparent)",
+  ":root --amber-soft": "color-mix(in srgb, var(--amber) 12%, transparent)",
+  ":root --red-soft": "color-mix(in srgb, var(--red) 10%, transparent)",
+  ":root --st-backlog": "#A29E96",
+  ":root --st-todo": "#7C7870",
+  ":root --st-progress": "#C88A14",
+  ":root --st-review": "#7652C2",
+  ":root --st-done": "#2E8456",
+  ":root --shadow-sm": "0 1px 2px rgba(28,25,20,.05)",
+  ":root --shadow-card": "0 1px 2px rgba(28,25,20,.04), 0 0 0 1px var(--border)",
+  ":root --shadow-pop": "0 12px 32px -8px rgba(28,25,20,.16), 0 2px 6px -2px rgba(28,25,20,.06), 0 0 0 1px var(--border)",
+  ":root --shadow-drag": "0 16px 36px -10px rgba(28,25,20,.28), 0 0 0 1px var(--border-strong)",
+  ":root --r-xs": "4px",
+  ":root --r-sm": "6px",
+  ":root --r": "8px",
+  ":root --r-lg": "10px",
+  ":root --r-full": "999px",
+  ":root --s-1": "4px",
+  ":root --s-2": "8px",
+  ":root --s-3": "12px",
+  ":root --s-4": "16px",
+  ":root --s-5": "20px",
+  ":root --s-6": "24px",
+  ":root --s-8": "32px",
+  ":root --s-10": "40px",
+  ":root --s-12": "48px",
+  ":root --font": "\"Geist\", ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+  ":root --mono": "\"Geist Mono\", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace",
+  ":root --fs-2xs": "11px",
+  ":root --fs-xs": "12px",
+  ":root --fs-sm": "12.5px",
+  ":root --fs": "13.5px",
+  ":root --fs-md": "14.5px",
+  ":root --fs-lg": "16px",
+  ":root --fs-xl": "19px",
+  ":root --fs-2xl": "23px",
+  ":root --h-xs": "22px",
+  ":root --h-sm": "26px",
+  ":root --h-md": "30px",
+  ":root --h-lg": "36px",
+  ":root --side-w": "252px",
+  ":root --side-row": "30px",
+  ":root --row-h": "40px",
+  ":root --card-pad": "10px",
+  ":root --topbar-h": "46px",
+  ":root --ease": "cubic-bezier(.23,1,.32,1)",
+  ":root --spring": "cubic-bezier(.34,1.56,.64,1)",
+  ":root --ease-drawer": "cubic-bezier(.32,.72,0,1)",
+  ":root --dur": "140ms",
+  ":root[data-theme=\"da --bg": "#1A1A19",
+  ":root[data-theme=\"da --bg-side": "#151514",
+  ":root[data-theme=\"da --surface": "#1D1D1C",
+  ":root[data-theme=\"da --surface-2": "#252524",
+  ":root[data-theme=\"da --surface-3": "#2D2D2B",
+  ":root[data-theme=\"da --sunken": "#181817",
+  ":root[data-theme=\"da --overlay": "rgba(0,0,0,.55)",
+  ":root[data-theme=\"da --border": "#2C2B29",
+  ":root[data-theme=\"da --border-strong": "#3A3936",
+  ":root[data-theme=\"da --divider": "#252523",
+  ":root[data-theme=\"da --text": "#ECEAE5",
+  ":root[data-theme=\"da --text-2": "#B5B2AB",
+  ":root[data-theme=\"da --text-3": "#9A968F",
+  ":root[data-theme=\"da --text-4": "#6F6C66",
+  ":root[data-theme=\"da --text-inv": "#151514",
+  ":root[data-theme=\"da --accent": "var(--acc-d)",
+  ":root[data-theme=\"da --on-accent": "#12131C",
+  ":root[data-theme=\"da --green": "#5CBA86",
+  ":root[data-theme=\"da --amber": "#D8A443",
+  ":root[data-theme=\"da --red": "#E57D70",
+  ":root[data-theme=\"da --blue": "#72A5EA",
+  ":root[data-theme=\"da --violet": "#A98DEB",
+  ":root[data-theme=\"da --teal": "#58C0B6",
+  ":root[data-theme=\"da --rose": "#E68AAB",
+  ":root[data-theme=\"da --orange": "#E3925F",
+  ":root[data-theme=\"da --gray": "#8F8B84",
+  ":root[data-theme=\"da --pc-mix": "72%",
+  ":root[data-theme=\"da --st-backlog": "#6F6C66",
+  ":root[data-theme=\"da --st-todo": "#A6A39C",
+  ":root[data-theme=\"da --st-progress": "#D8A443",
+  ":root[data-theme=\"da --st-review": "#A98DEB",
+  ":root[data-theme=\"da --st-done": "#5CBA86",
+  ":root[data-theme=\"da --shadow-sm": "0 1px 2px rgba(0,0,0,.3)",
+  ":root[data-theme=\"da --shadow-card": "0 0 0 1px var(--border)",
+  ":root[data-theme=\"da --shadow-pop": "0 16px 40px -10px rgba(0,0,0,.6), 0 0 0 1px var(--border-strong)",
+  ":root[data-theme=\"da --shadow-drag": "0 18px 40px -10px rgba(0,0,0,.7), 0 0 0 1px var(--border-strong)",
+  ":root[data-accent=\"b --acc-l": "#2F6CD4",
+  ":root[data-accent=\"b --acc-d": "#74A7F0",
+  ":root[data-accent=\"v --acc-l": "#7348CC",
+  ":root[data-accent=\"v --acc-d": "#AE93F0",
+  ":root[data-accent=\"t --acc-l": "#1A7F7A",
+  ":root[data-accent=\"t --acc-d": "#5CC4BA",
+  ":root[data-accent=\"r --acc-l": "#B93D68",
+  ":root[data-accent=\"r --acc-d": "#EC8DAE",
+  ":root[data-accent=\"g --acc-l": "#34332F",
+  ":root[data-accent=\"g --acc-d": "#D9D6CF",
+  ":root[data-side=\"com --side-row": "26px",
+  ":root[data-density=\" --row-h": "34px",
+  ":root[data-density=\" --card-pad": "8px",
+  ":root[data-motion=\"r --reduce": "1"
+ },
+ "hover": [
+  {
+   "text": "Gr8r Studio",
+   "transition": "background 0.14s",
+   "changed": {
+    "bg": [
+     "rgba(0, 0, 0, 0)",
+     "rgb(238, 237, 233)"
+    ]
+   }
+  },
+  {
+   "text": "",
+   "transition": "background 0.14s, color 0.14s",
+   "changed": {
+    "bg": [
+     "rgba(0, 0, 0, 0)",
+     "rgb(246, 245, 242)"
+    ],
+    "c": [
+     "rgb(87, 84, 78)",
+     "rgb(29, 28, 26)"
+    ],
+    "bd": [
+     "rgb(87, 84, 78)",
+     "rgb(29, 28, 26)"
+    ]
+   }
+  },
+  {
+   "text": "Home",
+   "transition": "background 0.14s, color 0.14s",
+   "changed": {}
+  },
+  {
+   "text": "Inbox\n4",
+   "transition": "background 0.14s, color 0.14s",
+   "changed": {
+    "bg": [
+     "rgba(0, 0, 0, 0)",
+     "rgb(238, 237, 233)"
+    ],
+    "c": [
+     "rgb(87, 84, 78)",
+     "rgb(29, 28, 26)"
+    ],
+    "bd": [
+     "rgb(87, 84, 78)",
+     "rgb(29, 28, 26)"
+    ]
+   }
+  },
+  {
+   "text": "My Tasks\n2",
+   "transition": "background 0.14s, color 0.14s",
+   "changed": {
+    "bg": [
+     "rgba(0, 0, 0, 0)",
+     "rgb(238, 237, 233)"
+    ],
+    "c": [
+     "rgb(87, 84, 78)",
+     "rgb(29, 28, 26)"
+    ],
+    "bd": [
+     "rgb(87, 84, 78)",
+     "rgb(29, 28, 26)"
+    ]
+   }
+  }
+ ]
+}

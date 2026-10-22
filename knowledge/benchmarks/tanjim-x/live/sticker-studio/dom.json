@@ -1,0 +1,847 @@
+{
+ "title": "Gr8r Sticker Studio",
+ "url": "https://gr8r-sticker-studio.vercel.app/",
+ "viewport": [
+  1440,
+  900
+ ],
+ "scrollHeight": 1057,
+ "bodyBg": "rgb(244, 244, 244)",
+ "htmlBg": "rgba(0, 0, 0, 0)",
+ "framework": {
+  "next": false,
+  "react": true,
+  "framer": false,
+  "nuxt": false,
+  "svelte": false,
+  "astro": false,
+  "vite": true,
+  "tailwind": false,
+  "webflow": false,
+  "canvas": 0,
+  "video": 0,
+  "svg": 18,
+  "motionAttrs": 0,
+  "generator": null
+ },
+ "scripts": [
+  "/assets/index-B4qrgXqG.js"
+ ],
+ "loadedFonts": [
+  "Geist Variable 100 900 normal",
+  "Geist Mono Variable 100 900 normal",
+  "SS Archivo 400 normal",
+  "SS Fredoka 300 700 normal",
+  "SS Caveat 400 700 normal",
+  "SS Fraunces 100 900 normal",
+  "SS Bangers 400 normal",
+  "SS Pacifico 400 normal",
+  "SS Grotesk 300 700 normal",
+  "SS Geist 100 900 normal"
+ ],
+ "fontTuples": [
+  [
+   "\"Geist Mono Variable\" 11.5px 400",
+   15
+  ],
+  [
+   "\"Geist Variable\" 15px 550",
+   8
+  ],
+  [
+   "\"Geist Variable\" 15px 500",
+   5
+  ],
+  [
+   "\"Geist Mono Variable\" 11px 500",
+   5
+  ],
+  [
+   "\"Geist Variable\" 13px 400",
+   4
+  ],
+  [
+   "\"Geist Mono Variable\" 12px 400",
+   3
+  ],
+  [
+   "\"Geist Variable\" 17px 650",
+   1
+  ],
+  [
+   "\"Geist Variable\" 13px 600",
+   1
+  ],
+  [
+   "\"Geist Variable\" 11px 700",
+   1
+  ],
+  [
+   "\"Geist Variable\" 13.5px 500",
+   1
+  ],
+  [
+   "\"Geist Variable\" 54px 650",
+   1
+  ],
+  [
+   "\"Geist Variable\" 16px 400",
+   1
+  ],
+  [
+   "\"Geist Variable\" 15px 600",
+   1
+  ],
+  [
+   "\"Geist Variable\" 19px 600",
+   1
+  ],
+  [
+   "\"Geist Variable\" 13px 500",
+   1
+  ]
+ ],
+ "radii": [
+  [
+   "18px",
+   10
+  ],
+  [
+   "8px",
+   9
+  ],
+  [
+   "12px",
+   6
+  ],
+  [
+   "5px",
+   5
+  ],
+  [
+   "10px",
+   4
+  ],
+  [
+   "2px",
+   4
+  ],
+  [
+   "50%",
+   2
+  ],
+  [
+   "6px",
+   2
+  ]
+ ],
+ "shadows": [
+  [
+   "rgba(0, 0, 0, 0.06) 0px 0px 0px 1px, rgba(0, 0, 0, 0.03) 0px 1px 2px 0px, rgba(0, 0, 0, 0.14) 0px 10px 30px -18px",
+   10
+  ],
+  [
+   "rgba(255, 255, 255, 0.22) 0px 1px 0px 0px inset, rgba(0, 60, 100, 0.2) 0px 1px 2px 0px, rgba(0, 137, 214, 0.55) 0px 6px 14px -6px",
+   2
+  ],
+  [
+   "rgb(255, 255, 255) 0px 0px 0px 2px, rgb(230, 230, 230) 0px 0px 0px 3px",
+   1
+  ],
+  [
+   "rgba(0, 0, 0, 0.25) 0px 20px 50px -28px",
+   1
+  ],
+  [
+   "rgb(229, 245, 255) 0px 0px 0px 3px",
+   1
+  ]
+ ],
+ "foldColours": [
+  [
+   "rgb(23, 23, 23)",
+   81
+  ],
+  [
+   "rgb(255, 255, 255)",
+   25
+  ],
+  [
+   "rgb(107, 107, 107)",
+   10
+  ],
+  [
+   "rgb(245, 245, 245)",
+   9
+  ],
+  [
+   "rgb(155, 155, 155)",
+   8
+  ],
+  [
+   "rgb(0, 114, 181)",
+   4
+  ],
+  [
+   "rgba(255, 255, 255, 0.92)",
+   2
+  ],
+  [
+   "rgb(244, 244, 244)",
+   1
+  ],
+  [
+   "rgb(0, 137, 214)",
+   1
+  ],
+  [
+   "rgb(0, 163, 255)",
+   1
+  ]
+ ],
+ "headings": [
+  {
+   "tag": "h1",
+   "cls": "",
+   "text": "Create a new sticker",
+   "x": 476.4,
+   "y": 247.6,
+   "w": 487.1,
+   "h": 55.1,
+   "fontFamily": "\"Geist Variable\", Geist, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+   "fontSize": "54px",
+   "fontWeight": "650",
+   "letterSpacing": "-2.43px",
+   "lineHeight": "55.08px",
+   "color": "rgb(23, 23, 23)"
+  },
+  {
+   "tag": "h2",
+   "cls": "",
+   "text": "Recent projects",
+   "x": 128,
+   "y": 713.6,
+   "w": 137,
+   "h": 27.5,
+   "fontFamily": "\"Geist Variable\", Geist, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+   "fontSize": "19px",
+   "fontWeight": "600",
+   "letterSpacing": "-0.475px",
+   "lineHeight": "27.55px",
+   "color": "rgb(23, 23, 23)"
+  },
+  {
+   "tag": "h3",
+   "cls": "pcard-name",
+   "text": "Cat Sticker",
+   "x": 142,
+   "y": 936.3,
+   "w": 169.6,
+   "h": 21.8,
+   "fontFamily": "\"Geist Variable\", Geist, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+   "fontSize": "15px",
+   "fontWeight": "550",
+   "letterSpacing": "-0.225px",
+   "lineHeight": "21.75px",
+   "color": "rgb(23, 23, 23)"
+  },
+  {
+   "tag": "h3",
+   "cls": "pcard-name",
+   "text": "Coffee Brand Stickers",
+   "x": 381.6,
+   "y": 936.3,
+   "w": 169.6,
+   "h": 21.8,
+   "fontFamily": "\"Geist Variable\", Geist, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+   "fontSize": "15px",
+   "fontWeight": "550",
+   "letterSpacing": "-0.225px",
+   "lineHeight": "21.75px",
+   "color": "rgb(23, 23, 23)"
+  },
+  {
+   "tag": "h3",
+   "cls": "pcard-name",
+   "text": "Summer Pack",
+   "x": 621.2,
+   "y": 936.3,
+   "w": 169.6,
+   "h": 21.8,
+   "fontFamily": "\"Geist Variable\", Geist, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+   "fontSize": "15px",
+   "fontWeight": "550",
+   "letterSpacing": "-0.225px",
+   "lineHeight": "21.75px",
+   "color": "rgb(23, 23, 23)"
+  },
+  {
+   "tag": "h3",
+   "cls": "pcard-name",
+   "text": "Character Pack",
+   "x": 860.8,
+   "y": 936.3,
+   "w": 169.6,
+   "h": 21.8,
+   "fontFamily": "\"Geist Variable\", Geist, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+   "fontSize": "15px",
+   "fontWeight": "550",
+   "letterSpacing": "-0.225px",
+   "lineHeight": "21.75px",
+   "color": "rgb(23, 23, 23)"
+  },
+  {
+   "tag": "h3",
+   "cls": "pcard-name",
+   "text": "Product Labels",
+   "x": 1100.4,
+   "y": 936.3,
+   "w": 169.6,
+   "h": 21.8,
+   "fontFamily": "\"Geist Variable\", Geist, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+   "fontSize": "15px",
+   "fontWeight": "550",
+   "letterSpacing": "-0.225px",
+   "lineHeight": "21.75px",
+   "color": "rgb(23, 23, 23)"
+  }
+ ],
+ "buttons": [
+  {
+   "tag": "button",
+   "cls": "app-logo",
+   "text": "Gr8r Sticker Studio",
+   "x": 20,
+   "y": 19,
+   "w": 197.6,
+   "h": 38,
+   "fontFamily": "\"Geist Variable\", Geist, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+   "fontSize": "14px",
+   "fontWeight": "400",
+   "lineHeight": "20.3px",
+   "color": "rgb(23, 23, 23)",
+   "borderRadius": "12px",
+   "border": "0px none rgb(23, 23, 23)",
+   "padding": "0px 10px 0px 8px",
+   "transition": "background 0.12s"
+  },
+  {
+   "tag": "button",
+   "cls": "app-nav-item ",
+   "text": "Projects",
+   "x": 238.6,
+   "y": 20,
+   "w": 82.2,
+   "h": 36,
+   "fontFamily": "\"Geist Variable\", Geist, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+   "fontSize": "15px",
+   "fontWeight": "500",
+   "lineHeight": "21.75px",
+   "color": "rgb(107, 107, 107)",
+   "borderRadius": "10px",
+   "border": "0px none rgb(107, 107, 107)",
+   "padding": "0px 12px",
+   "transition": "background 0.12s, color 0.12s"
+  },
+  {
+   "tag": "button",
+   "cls": "app-nav-item ",
+   "text": "Templates",
+   "x": 322.8,
+   "y": 20,
+   "w": 96.3,
+   "h": 36,
+   "fontFamily": "\"Geist Variable\", Geist, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+   "fontSize": "15px",
+   "fontWeight": "500",
+   "lineHeight": "21.75px",
+   "color": "rgb(107, 107, 107)",
+   "borderRadius": "10px",
+   "border": "0px none rgb(107, 107, 107)",
+   "padding": "0px 12px",
+   "transition": "background 0.12s, color 0.12s"
+  },
+  {
+   "tag": "button",
+   "cls": "app-nav-item ",
+   "text": "Sticker Packs",
+   "x": 421,
+   "y": 20,
+   "w": 120.2,
+   "h": 36,
+   "fontFamily": "\"Geist Variable\", Geist, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+   "fontSize": "15px",
+   "fontWeight": "500",
+   "lineHeight": "21.75px",
+   "color": "rgb(107, 107, 107)",
+   "borderRadius": "10px",
+   "border": "0px none rgb(107, 107, 107)",
+   "padding": "0px 12px",
+   "transition": "background 0.12s, color 0.12s"
+  },
+  {
+   "tag": "button",
+   "cls": "app-nav-item ",
+   "text": "Sticker Sheets",
+   "x": 543.3,
+   "y": 20,
+   "w": 127,
+   "h": 36,
+   "fontFamily": "\"Geist Variable\", Geist, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+   "fontSize": "15px",
+   "fontWeight": "500",
+   "lineHeight": "21.75px",
+   "color": "rgb(107, 107, 107)",
+   "borderRadius": "10px",
+   "border": "0px none rgb(107, 107, 107)",
+   "padding": "0px 12px",
+   "transition": "background 0.12s, color 0.12s"
+  },
+  {
+   "tag": "button",
+   "cls": "btn btn-primary btn-sm   ",
+   "text": "New sticker",
+   "x": 1184.3,
+   "y": 22,
+   "w": 115.7,
+   "h": 32,
+   "fontFamily": "\"Geist Variable\", Geist, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+   "fontSize": "13px",
+   "fontWeight": "600",
+   "letterSpacing": "-0.13px",
+   "lineHeight": "18.85px",
+   "color": "rgb(255, 255, 255)",
+   "backgroundImage": "linear-gradient(rgb(0, 163, 255) 0%, rgb(0, 163, 255) 100%)",
+   "borderRadius": "8px",
+   "boxShadow": "rgba(255, 255, 255, 0.22) 0px 1px 0px 0px inset, rgba(0, 60, 100, 0.2) 0px 1px 2px 0px, rgba(0, 137, 214, 0.55) 0px 6px 14px -6px",
+   "border": "0px none rgb(255, 255, 255)",
+   "padding": "0px 11px",
+   "transition": "background 0.12s cubic-bezier(0.2, 0.7, 0.2, 1), border-color 0.12s cubic-bezier(0.2, 0.7, 0.2, 1), box-shadow 0.12s cubic-bezier(0.2, 0.7, 0.2, 1), transform 0.12s cubic-bezier(0.2, 0.7, 0.2, 1), color 0.12s"
+  },
+  {
+   "tag": "button",
+   "cls": "icon-btn icon-btn-md icon-btn-ghost  ",
+   "text": "",
+   "x": 1308,
+   "y": 21,
+   "w": 34,
+   "h": 34,
+   "fontFamily": "\"Geist Variable\", Geist, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+   "fontSize": "14px",
+   "fontWeight": "400",
+   "lineHeight": "20.3px",
+   "color": "rgb(23, 23, 23)",
+   "borderRadius": "8px",
+   "border": "0px none rgb(23, 23, 23)",
+   "transition": "background 0.12s cubic-bezier(0.2, 0.7, 0.2, 1), color 0.12s, box-shadow 0.12s, transform 0.12s"
+  },
+  {
+   "tag": "button",
+   "cls": "icon-btn icon-btn-md icon-btn-ghost  ",
+   "text": "",
+   "x": 1346,
+   "y": 21,
+   "w": 34,
+   "h": 34,
+   "fontFamily": "\"Geist Variable\", Geist, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+   "fontSize": "14px",
+   "fontWeight": "400",
+   "lineHeight": "20.3px",
+   "color": "rgb(23, 23, 23)",
+   "borderRadius": "8px",
+   "border": "0px none rgb(23, 23, 23)",
+   "transition": "background 0.12s cubic-bezier(0.2, 0.7, 0.2, 1), color 0.12s, box-shadow 0.12s, transform 0.12s"
+  },
+  {
+   "tag": "button",
+   "cls": "avatar",
+   "text": "SS",
+   "x": 1388,
+   "y": 22,
+   "w": 32,
+   "h": 32,
+   "fontFamily": "\"Geist Variable\", Geist, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+   "fontSize": "11px",
+   "fontWeight": "700",
+   "letterSpacing": "0.44px",
+   "lineHeight": "15.95px",
+   "color": "rgb(255, 255, 255)",
+   "backgroundImage": "linear-gradient(rgb(0, 163, 255) 0%, rgb(0, 163, 255) 100%)",
+   "borderRadius": "50%",
+   "boxShadow": "rgb(255, 255, 255) 0px 0px 0px 2px, rgb(230, 230, 230) 0px 0px 0px 3px",
+   "border": "0px none rgb(255, 255, 255)",
+   "transition": "all"
+  },
+  {
+   "tag": "button",
+   "cls": "btn btn-primary btn-lg   ",
+   "text": "Upload image",
+   "x": 533.3,
+   "y": 386.3,
+   "w": 161.6,
+   "h": 46,
+   "fontFamily": "\"Geist Variable\", Geist, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+   "fontSize": "15px",
+   "fontWeight": "600",
+   "letterSpacing": "-0.15px",
+   "lineHeight": "21.75px",
+   "color": "rgb(255, 255, 255)",
+   "backgroundImage": "linear-gradient(rgb(0, 163, 255) 0%, rgb(0, 163, 255) 100%)",
+   "borderRadius": "12px",
+   "boxShadow": "rgba(255, 255, 255, 0.22) 0px 1px 0px 0px inset, rgba(0, 60, 100, 0.2) 0px 1px 2px 0px, rgba(0, 137, 214, 0.55) 0px 6px 14px -6px",
+   "border": "0px none rgb(255, 255, 255)",
+   "padding": "0px 20px",
+   "transition": "background 0.12s cubic-bezier(0.2, 0.7, 0.2, 1), border-color 0.12s cubic-bezier(0.2, 0.7, 0.2, 1), box-shadow 0.12s cubic-bezier(0.2, 0.7, 0.2, 1), transform 0.12s cubic-bezier(0.2, 0.7, 0.2, 1), color 0.12s"
+  },
+  {
+   "tag": "button",
+   "cls": "btn btn-secondary btn-lg   ",
+   "text": "Start from template",
+   "x": 704.9,
+   "y": 386.3,
+   "w": 201.7,
+   "h": 46,
+   "fontFamily": "\"Geist Variable\", Geist, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+   "fontSize": "15px",
+   "fontWeight": "500",
+   "letterSpacing": "-0.15px",
+   "lineHeight": "21.75px",
+   "color": "rgb(23, 23, 23)",
+   "backgroundColor": "rgb(255, 255, 255)",
+   "borderRadius": "12px",
+   "border": "1px solid rgb(230, 230, 230)",
+   "padding": "0px 20px",
+   "transition": "background 0.12s cubic-bezier(0.2, 0.7, 0.2, 1), border-color 0.12s cubic-bezier(0.2, 0.7, 0.2, 1), box-shadow 0.12s cubic-bezier(0.2, 0.7, 0.2, 1), transform 0.12s cubic-bezier(0.2, 0.7, 0.2, 1), color 0.12s"
+  },
+  {
+   "tag": "button",
+   "cls": "icon-btn icon-btn-sm pcard-more",
+   "text": "",
+   "x": 317.6,
+   "y": 936.3,
+   "w": 28,
+   "h": 28,
+   "fontFamily": "\"Geist Variable\", Geist, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+   "fontSize": "14px",
+   "fontWeight": "400",
+   "lineHeight": "20.3px",
+   "color": "rgb(23, 23, 23)",
+   "borderRadius": "8px",
+   "border": "0px none rgb(23, 23, 23)",
+   "transition": "background 0.12s cubic-bezier(0.2, 0.7, 0.2, 1), color 0.12s, box-shadow 0.12s, transform 0.12s"
+  },
+  {
+   "tag": "button",
+   "cls": "icon-btn icon-btn-sm pcard-more",
+   "text": "",
+   "x": 557.2,
+   "y": 936.3,
+   "w": 28,
+   "h": 28,
+   "fontFamily": "\"Geist Variable\", Geist, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+   "fontSize": "14px",
+   "fontWeight": "400",
+   "lineHeight": "20.3px",
+   "color": "rgb(23, 23, 23)",
+   "borderRadius": "8px",
+   "border": "0px none rgb(23, 23, 23)",
+   "transition": "background 0.12s cubic-bezier(0.2, 0.7, 0.2, 1), color 0.12s, box-shadow 0.12s, transform 0.12s"
+  },
+  {
+   "tag": "button",
+   "cls": "icon-btn icon-btn-sm pcard-more",
+   "text": "",
+   "x": 796.8,
+   "y": 936.3,
+   "w": 28,
+   "h": 28,
+   "fontFamily": "\"Geist Variable\", Geist, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+   "fontSize": "14px",
+   "fontWeight": "400",
+   "lineHeight": "20.3px",
+   "color": "rgb(23, 23, 23)",
+   "borderRadius": "8px",
+   "border": "0px none rgb(23, 23, 23)",
+   "transition": "background 0.12s cubic-bezier(0.2, 0.7, 0.2, 1), color 0.12s, box-shadow 0.12s, transform 0.12s"
+  }
+ ],
+ "cards": [
+  {
+   "tag": "article",
+   "cls": "pcard pcard-md",
+   "text": "Cat Sticker\nSticker\n1 item\n·\n24 min ago",
+   "x": 128,
+   "y": 755.1,
+   "w": 225.6,
+   "h": 237.9,
+   "fontFamily": "\"Geist Variable\", Geist, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+   "fontSize": "14px",
+   "fontWeight": "400",
+   "lineHeight": "20.3px",
+   "color": "rgb(23, 23, 23)",
+   "backgroundColor": "rgb(255, 255, 255)",
+   "borderRadius": "18px",
+   "boxShadow": "rgba(0, 0, 0, 0.06) 0px 0px 0px 1px, rgba(0, 0, 0, 0.03) 0px 1px 2px 0px, rgba(0, 0, 0, 0.14) 0px 10px 30px -18px",
+   "border": "0px none rgb(23, 23, 23)",
+   "transition": "box-shadow 0.2s, transform 0.2s cubic-bezier(0.16, 1, 0.3, 1)"
+  },
+  {
+   "tag": "article",
+   "cls": "pcard pcard-md",
+   "text": "Coffee Brand Stickers\nPack\n4 items\n·\n2 h ago",
+   "x": 367.6,
+   "y": 755.1,
+   "w": 225.6,
+   "h": 237.9,
+   "fontFamily": "\"Geist Variable\", Geist, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+   "fontSize": "14px",
+   "fontWeight": "400",
+   "lineHeight": "20.3px",
+   "color": "rgb(23, 23, 23)",
+   "backgroundColor": "rgb(255, 255, 255)",
+   "borderRadius": "18px",
+   "boxShadow": "rgba(0, 0, 0, 0.06) 0px 0px 0px 1px, rgba(0, 0, 0, 0.03) 0px 1px 2px 0px, rgba(0, 0, 0, 0.14) 0px 10px 30px -18px",
+   "border": "0px none rgb(23, 23, 23)",
+   "transition": "box-shadow 0.2s, transform 0.2s cubic-bezier(0.16, 1, 0.3, 1)"
+  },
+  {
+   "tag": "article",
+   "cls": "pcard pcard-md",
+   "text": "Summer Pack\nPack\n5 items\n·\nyesterday",
+   "x": 607.2,
+   "y": 755.1,
+   "w": 225.6,
+   "h": 237.9,
+   "fontFamily": "\"Geist Variable\", Geist, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+   "fontSize": "14px",
+   "fontWeight": "400",
+   "lineHeight": "20.3px",
+   "color": "rgb(23, 23, 23)",
+   "backgroundColor": "rgb(255, 255, 255)",
+   "borderRadius": "18px",
+   "boxShadow": "rgba(0, 0, 0, 0.06) 0px 0px 0px 1px, rgba(0, 0, 0, 0.03) 0px 1px 2px 0px, rgba(0, 0, 0, 0.14) 0px 10px 30px -18px",
+   "border": "0px none rgb(23, 23, 23)",
+   "transition": "box-shadow 0.2s, transform 0.2s cubic-bezier(0.16, 1, 0.3, 1)"
+  },
+  {
+   "tag": "article",
+   "cls": "pcard pcard-md",
+   "text": "Character Pack\nPack\n4 items\n·\n2 days ago",
+   "x": 846.8,
+   "y": 755.1,
+   "w": 225.6,
+   "h": 237.9,
+   "fontFamily": "\"Geist Variable\", Geist, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+   "fontSize": "14px",
+   "fontWeight": "400",
+   "lineHeight": "20.3px",
+   "color": "rgb(23, 23, 23)",
+   "backgroundColor": "rgb(255, 255, 255)",
+   "borderRadius": "18px",
+   "boxShadow": "rgba(0, 0, 0, 0.06) 0px 0px 0px 1px, rgba(0, 0, 0, 0.03) 0px 1px 2px 0px, rgba(0, 0, 0, 0.14) 0px 10px 30px -18px",
+   "border": "0px none rgb(23, 23, 23)",
+   "transition": "box-shadow 0.2s, transform 0.2s cubic-bezier(0.16, 1, 0.3, 1)"
+  },
+  {
+   "tag": "article",
+   "cls": "pcard pcard-md",
+   "text": "Product Labels\nSticker\n3 items\n·\n5 days ago",
+   "x": 1086.4,
+   "y": 755.1,
+   "w": 225.6,
+   "h": 237.9,
+   "fontFamily": "\"Geist Variable\", Geist, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+   "fontSize": "14px",
+   "fontWeight": "400",
+   "lineHeight": "20.3px",
+   "color": "rgb(23, 23, 23)",
+   "backgroundColor": "rgb(255, 255, 255)",
+   "borderRadius": "18px",
+   "boxShadow": "rgba(0, 0, 0, 0.06) 0px 0px 0px 1px, rgba(0, 0, 0, 0.03) 0px 1px 2px 0px, rgba(0, 0, 0, 0.14) 0px 10px 30px -18px",
+   "border": "0px none rgb(23, 23, 23)",
+   "transition": "box-shadow 0.2s, transform 0.2s cubic-bezier(0.16, 1, 0.3, 1)"
+  }
+ ],
+ "gradients": [
+  {
+   "tag": "button",
+   "cls": "btn btn-primary btn-sm   ",
+   "text": "New sticker",
+   "x": 1184.3,
+   "y": 22,
+   "w": 115.7,
+   "h": 32,
+   "backgroundImage": "linear-gradient(rgb(0, 163, 255) 0%, rgb(0, 163, 255) 100%)",
+   "borderRadius": "8px"
+  },
+  {
+   "tag": "button",
+   "cls": "avatar",
+   "text": "SS",
+   "x": 1388,
+   "y": 22,
+   "w": 32,
+   "h": 32,
+   "backgroundImage": "linear-gradient(rgb(0, 163, 255) 0%, rgb(0, 163, 255) 100%)",
+   "borderRadius": "50%"
+  },
+  {
+   "tag": "button",
+   "cls": "btn btn-primary btn-lg   ",
+   "text": "Upload image",
+   "x": 533.3,
+   "y": 386.3,
+   "w": 161.6,
+   "h": 46,
+   "backgroundImage": "linear-gradient(rgb(0, 163, 255) 0%, rgb(0, 163, 255) 100%)",
+   "borderRadius": "12px"
+  }
+ ],
+ "rootVars": {
+  ":root --brand-gradient": "linear-gradient(#00a3ff 0%, #00a3ff 100%)",
+  ":root --brand": "#00a3ff",
+  ":root --brand-deep": "#0089d6",
+  ":root --brand-ink": "#0072b5",
+  ":root --brand-soft": "#e5f5ff",
+  ":root --brand-pale": "#f2faff",
+  ":root --brand-line": "#b3e1fd",
+  ":root --brand-ring": "#00a3ff4d",
+  ":root --bg": "#f4f4f4",
+  ":root --white": "#fff",
+  ":root --ink": "#171717",
+  ":root --ink-2": "#6b6b6b",
+  ":root --ink-3": "#9b9b9b",
+  ":root --ink-4": "#c9c9c9",
+  ":root --line": "#e6e6e6",
+  ":root --line-2": "#efefef",
+  ":root --surface": "#f5f5f5",
+  ":root --hover": "#f1f1f1",
+  ":root --selected": "#e5f5ff",
+  ":root --canvas-bg": "#f4f4f4",
+  ":root --success": "#2f8f5b",
+  ":root --success-soft": "#e7f5ec",
+  ":root --warning": "#b97a22",
+  ":root --warning-soft": "#fbf1e1",
+  ":root --error": "#c0513c",
+  ":root --error-soft": "#fbebe7",
+  ":root --info": "#3b6fb6",
+  ":root --info-soft": "#ebf2fb",
+  ":root --guide": "#f2557a",
+  ":root --r-xs": "6px",
+  ":root --r-sm": "8px",
+  ":root --r-md": "10px",
+  ":root --r-lg": "14px",
+  ":root --r-xl": "20px",
+  ":root --r-2xl": "24px",
+  ":root --r-panel": "20px",
+  ":root --r-pill": "999px",
+  ":root --sh-1": "0 1px 2px #0000000a",
+  ":root --sh-2": "0 1px 2px #0000000a, 0 8px 24px -12px #0000001f",
+  ":root --sh-3": "0 2px 6px #0000000d, 0 24px 48px -20px #00000038",
+  ":root --sh-raise": "0 1px 1px #0000000d, 0 2px 6px -2px #0000001a",
+  ":root --sh-inset": "inset 0 1px 2px #0000000a",
+  ":root --sh-panel": "0 0 0 1px #0000000f, 0 1px 2px #00000008, 0 10px 30px -18px #00000024",
+  ":root --font": "\"Geist Variable\", \"Geist\", ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+  ":root --font-mono": "\"Geist Mono Variable\", \"Geist Mono\", ui-monospace, \"SF Mono\", Menlo, monospace",
+  ":root --fs-micro": "11.5px",
+  ":root --fs-xs": "12px",
+  ":root --fs-sm": "13px",
+  ":root --fs-md": "14px",
+  ":root --fs-lg": "15px",
+  ":root --fs-title": "15px",
+  ":root --ease": "cubic-bezier(.2, .7, .2, 1)",
+  ":root --ease-out": "cubic-bezier(.16, 1, .3, 1)",
+  ":root --t-fast": ".12s",
+  ":root --t-mid": ".2s",
+  ":root --t-slow": ".32s",
+  ":root --gap": "12px",
+  ":root --bar-h": "52px",
+  ":root --panel-top": "calc(var(--gap) * 2 + var(--bar-h))",
+  ":root --left-w": "296px",
+  ":root --rail-w": "48px"
+ },
+ "hover": [
+  {
+   "text": "Gr8r Sticker Studio",
+   "transition": "background 0.12s",
+   "changed": {
+    "bg": [
+     "rgba(0, 0, 0, 0)",
+     "rgb(241, 241, 241)"
+    ]
+   }
+  },
+  {
+   "text": "Projects",
+   "transition": "background 0.12s, color 0.12s",
+   "changed": {
+    "bg": [
+     "rgba(0, 0, 0, 0)",
+     "rgb(241, 241, 241)"
+    ],
+    "c": [
+     "rgb(107, 107, 107)",
+     "rgb(23, 23, 23)"
+    ],
+    "bd": [
+     "rgb(107, 107, 107)",
+     "rgb(23, 23, 23)"
+    ]
+   }
+  },
+  {
+   "text": "Templates",
+   "transition": "background 0.12s, color 0.12s",
+   "changed": {
+    "bg": [
+     "rgba(0, 0, 0, 0)",
+     "rgb(241, 241, 241)"
+    ],
+    "c": [
+     "rgb(107, 107, 107)",
+     "rgb(23, 23, 23)"
+    ],
+    "bd": [
+     "rgb(107, 107, 107)",
+     "rgb(23, 23, 23)"
+    ]
+   }
+  },
+  {
+   "text": "Sticker Packs",
+   "transition": "background 0.12s, color 0.12s",
+   "changed": {
+    "bg": [
+     "rgba(0, 0, 0, 0)",
+     "rgb(241, 241, 241)"
+    ],
+    "c": [
+     "rgb(107, 107, 107)",
+     "rgb(23, 23, 23)"
+    ],
+    "bd": [
+     "rgb(107, 107, 107)",
+     "rgb(23, 23, 23)"
+    ]
+   }
+  },
+  {
+   "text": "Sticker Sheets",
+   "transition": "background 0.12s, color 0.12s",
+   "changed": {
+    "bg": [
+     "rgba(0, 0, 0, 0)",
+     "rgb(241, 241, 241)"
+    ],
+    "c": [
+     "rgb(107, 107, 107)",
+     "rgb(23, 23, 23)"
+    ],
+    "bd": [
+     "rgb(107, 107, 107)",
+     "rgb(23, 23, 23)"
+    ]
+   }
+  }
+ ]
+}

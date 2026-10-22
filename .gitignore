@@ -11,3 +11,6 @@ corpus/kargul-src/
 
 # Reel lossless masters (huge, regenerable with tools/record.mjs); the finished MP4s are tracked
 *.nut
+
+# Tanjim X study videos: large, local only
+knowledge/benchmarks/tanjim-x/vid/

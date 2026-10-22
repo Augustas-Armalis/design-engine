@@ -1,0 +1,761 @@
+{
+ "title": "AETHER — Planetary Operations",
+ "url": "https://aether-planetary-ops.vercel.app/",
+ "viewport": [
+  1440,
+  900
+ ],
+ "scrollHeight": 900,
+ "bodyBg": "rgb(12, 11, 10)",
+ "htmlBg": "rgba(0, 0, 0, 0)",
+ "framework": {
+  "next": false,
+  "react": true,
+  "framer": false,
+  "nuxt": false,
+  "svelte": false,
+  "astro": false,
+  "vite": true,
+  "tailwind": false,
+  "webflow": false,
+  "canvas": 2,
+  "video": 0,
+  "svg": 19,
+  "motionAttrs": 23,
+  "generator": null
+ },
+ "scripts": [
+  "/assets/index-BAWrPGD6.js"
+ ],
+ "loadedFonts": [
+  "Inter Variable 100 900 normal"
+ ],
+ "fontTuples": [
+  [
+   "\"Inter Variable\" 10px 500",
+   22
+  ],
+  [
+   "\"Inter Variable\" 10.5px 400",
+   15
+  ],
+  [
+   "\"Inter Variable\" 12.5px 400",
+   11
+  ],
+  [
+   "\"Inter Variable\" 11px 400",
+   7
+  ],
+  [
+   "\"Inter Variable\" 15px 400",
+   6
+  ],
+  [
+   "\"Inter Variable\" 12px 400",
+   5
+  ],
+  [
+   "\"Inter Variable\" 11px 550",
+   5
+  ],
+  [
+   "\"Inter Variable\" 12.5px 600",
+   4
+  ],
+  [
+   "\"Inter Variable\" 11px 600",
+   4
+  ],
+  [
+   "\"Inter Variable\" 9.3px 400",
+   4
+  ],
+  [
+   "\"Inter Variable\" 22px 300",
+   4
+  ],
+  [
+   "\"Inter Variable\" 13.64px 400",
+   4
+  ],
+  [
+   "\"Inter Variable\" 10.5px 650",
+   3
+  ],
+  [
+   "\"Inter Variable\" 10px 400",
+   3
+  ],
+  [
+   "\"Inter Variable\" 10.5px 550",
+   3
+  ],
+  [
+   "\"Inter Variable\" 12px 650",
+   2
+  ],
+  [
+   "\"Inter Variable\" 13px 400",
+   2
+  ],
+  [
+   "\"Inter Variable\" 12.5px 650",
+   1
+  ],
+  [
+   "\"Inter Variable\" 10.5px 500",
+   1
+  ],
+  [
+   "\"Inter Variable\" 26px 300",
+   1
+  ],
+  [
+   "\"Inter Variable\" 26px 550",
+   1
+  ]
+ ],
+ "radii": [
+  [
+   "50%",
+   23
+  ],
+  [
+   "16px",
+   5
+  ],
+  [
+   "12px",
+   5
+  ],
+  [
+   "9px",
+   4
+  ],
+  [
+   "999px",
+   2
+  ],
+  [
+   "30px",
+   1
+  ],
+  [
+   "6px",
+   1
+  ],
+  [
+   "10px",
+   1
+  ]
+ ],
+ "shadows": [
+  [
+   "rgba(255, 255, 255, 0.12) 0px 1px 0px 0px inset, rgba(255, 255, 255, 0.08) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.6) 0px 24px 48px -24px",
+   7
+  ],
+  [
+   "rgba(255, 255, 255, 0.18) 0px 0px 0px 3px, rgba(0, 0, 0, 0.4) 0px 0px 12px 0px",
+   5
+  ],
+  [
+   "rgba(146, 220, 174, 0.16) 0px 0px 0px 3px",
+   3
+  ],
+  [
+   "rgba(255, 255, 255, 0.08) 0px 1px 0px 0px inset",
+   2
+  ],
+  [
+   "rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset",
+   2
+  ]
+ ],
+ "foldColours": [
+  [
+   "rgba(248, 246, 242, 0.97)",
+   141
+  ],
+  [
+   "rgba(248, 246, 242, 0.72)",
+   70
+  ],
+  [
+   "rgba(248, 246, 242, 0.55)",
+   34
+  ],
+  [
+   "rgba(248, 246, 242, 0.85)",
+   31
+  ],
+  [
+   "rgb(255, 255, 255)",
+   5
+  ],
+  [
+   "rgb(146, 220, 174)",
+   5
+  ],
+  [
+   "rgba(255, 255, 255, 0.16)",
+   2
+  ],
+  [
+   "rgb(245, 168, 87)",
+   1
+  ],
+  [
+   "rgba(255, 255, 255, 0.09)",
+   1
+  ],
+  [
+   "rgba(255, 255, 255, 0.05)",
+   1
+  ]
+ ],
+ "headings": [],
+ "buttons": [
+  {
+   "tag": "button",
+   "cls": "icon-btn",
+   "text": "",
+   "x": 1332,
+   "y": 11,
+   "w": 34,
+   "h": 34,
+   "fontFamily": "\"Inter Variable\", \"SF Pro Text\", -apple-system, \"system-ui\", \"Helvetica Neue\", sans-serif",
+   "fontSize": "13px",
+   "fontWeight": "400",
+   "lineHeight": "18.2px",
+   "color": "rgba(248, 246, 242, 0.85)",
+   "borderRadius": "50%",
+   "border": "0px none rgba(248, 246, 242, 0.85)",
+   "transition": "background 0.2s, color 0.2s"
+  },
+  {
+   "tag": "button",
+   "cls": "icon-btn",
+   "text": "",
+   "x": 1384,
+   "y": 11,
+   "w": 34,
+   "h": 34,
+   "fontFamily": "\"Inter Variable\", \"SF Pro Text\", -apple-system, \"system-ui\", \"Helvetica Neue\", sans-serif",
+   "fontSize": "13px",
+   "fontWeight": "400",
+   "lineHeight": "18.2px",
+   "color": "rgba(248, 246, 242, 0.85)",
+   "borderRadius": "50%",
+   "border": "0px none rgba(248, 246, 242, 0.85)",
+   "transition": "background 0.2s, color 0.2s"
+  },
+  {
+   "tag": "button",
+   "cls": "nav__item is-on",
+   "text": "OVERVIEW1",
+   "x": 26,
+   "y": 315.5,
+   "w": 48,
+   "h": 48,
+   "fontFamily": "\"Inter Variable\", \"SF Pro Text\", -apple-system, \"system-ui\", \"Helvetica Neue\", sans-serif",
+   "fontSize": "13px",
+   "fontWeight": "400",
+   "lineHeight": "18.2px",
+   "color": "rgba(248, 246, 242, 0.97)",
+   "borderRadius": "50%",
+   "border": "0px none rgba(248, 246, 242, 0.97)",
+   "transition": "color 0.3s cubic-bezier(0.22, 1, 0.36, 1)"
+  },
+  {
+   "tag": "button",
+   "cls": "nav__item ",
+   "text": "SPACECRAFT2",
+   "x": 26,
+   "y": 367.5,
+   "w": 48,
+   "h": 48,
+   "fontFamily": "\"Inter Variable\", \"SF Pro Text\", -apple-system, \"system-ui\", \"Helvetica Neue\", sans-serif",
+   "fontSize": "13px",
+   "fontWeight": "400",
+   "lineHeight": "18.2px",
+   "color": "rgba(248, 246, 242, 0.72)",
+   "borderRadius": "50%",
+   "border": "0px none rgba(248, 246, 242, 0.72)",
+   "transition": "color 0.3s cubic-bezier(0.22, 1, 0.36, 1)"
+  },
+  {
+   "tag": "button",
+   "cls": "nav__item ",
+   "text": "ROVER OPS3",
+   "x": 26,
+   "y": 419.5,
+   "w": 48,
+   "h": 48,
+   "fontFamily": "\"Inter Variable\", \"SF Pro Text\", -apple-system, \"system-ui\", \"Helvetica Neue\", sans-serif",
+   "fontSize": "13px",
+   "fontWeight": "400",
+   "lineHeight": "18.2px",
+   "color": "rgba(248, 246, 242, 0.72)",
+   "borderRadius": "50%",
+   "border": "0px none rgba(248, 246, 242, 0.72)",
+   "transition": "color 0.3s cubic-bezier(0.22, 1, 0.36, 1)"
+  },
+  {
+   "tag": "button",
+   "cls": "nav__item ",
+   "text": "SYSTEMS4",
+   "x": 26,
+   "y": 484.5,
+   "w": 48,
+   "h": 48,
+   "fontFamily": "\"Inter Variable\", \"SF Pro Text\", -apple-system, \"system-ui\", \"Helvetica Neue\", sans-serif",
+   "fontSize": "13px",
+   "fontWeight": "400",
+   "lineHeight": "18.2px",
+   "color": "rgba(248, 246, 242, 0.72)",
+   "borderRadius": "50%",
+   "border": "0px none rgba(248, 246, 242, 0.72)",
+   "transition": "color 0.3s cubic-bezier(0.22, 1, 0.36, 1)"
+  },
+  {
+   "tag": "button",
+   "cls": "nav__item ",
+   "text": "JOURNAL5",
+   "x": 26,
+   "y": 536.5,
+   "w": 48,
+   "h": 48,
+   "fontFamily": "\"Inter Variable\", \"SF Pro Text\", -apple-system, \"system-ui\", \"Helvetica Neue\", sans-serif",
+   "fontSize": "13px",
+   "fontWeight": "400",
+   "lineHeight": "18.2px",
+   "color": "rgba(248, 246, 242, 0.72)",
+   "borderRadius": "50%",
+   "border": "0px none rgba(248, 246, 242, 0.72)",
+   "transition": "color 0.3s cubic-bezier(0.22, 1, 0.36, 1)"
+  },
+  {
+   "tag": "button",
+   "cls": "fleet__row",
+   "text": "IX-7Lander\nStandby\n78%",
+   "x": 116,
+   "y": 272,
+   "w": 288,
+   "h": 55.9,
+   "fontFamily": "\"Inter Variable\", \"SF Pro Text\", -apple-system, \"system-ui\", \"Helvetica Neue\", sans-serif",
+   "fontSize": "13px",
+   "fontWeight": "400",
+   "lineHeight": "18.2px",
+   "color": "rgba(248, 246, 242, 0.97)",
+   "borderRadius": "12px",
+   "border": "0px none rgba(248, 246, 242, 0.97)",
+   "padding": "10px",
+   "transition": "background 0.25s cubic-bezier(0.22, 1, 0.36, 1)"
+  },
+  {
+   "tag": "button",
+   "cls": "fleet__row",
+   "text": "ATLAS-01Rover\nDocked\n94%",
+   "x": 116,
+   "y": 327.9,
+   "w": 288,
+   "h": 55.9,
+   "fontFamily": "\"Inter Variable\", \"SF Pro Text\", -apple-system, \"system-ui\", \"Helvetica Neue\", sans-serif",
+   "fontSize": "13px",
+   "fontWeight": "400",
+   "lineHeight": "18.2px",
+   "color": "rgba(248, 246, 242, 0.97)",
+   "borderRadius": "12px",
+   "border": "0px none rgba(248, 246, 242, 0.97)",
+   "padding": "10px",
+   "transition": "background 0.25s cubic-bezier(0.22, 1, 0.36, 1)"
+  },
+  {
+   "tag": "button",
+   "cls": "fleet__row",
+   "text": "CARGO-03Hauler\nTransit · 2.3 m/s",
+   "x": 116,
+   "y": 383.8,
+   "w": 288,
+   "h": 55.9,
+   "fontFamily": "\"Inter Variable\", \"SF Pro Text\", -apple-system, \"system-ui\", \"Helvetica Neue\", sans-serif",
+   "fontSize": "13px",
+   "fontWeight": "400",
+   "lineHeight": "18.2px",
+   "color": "rgba(248, 246, 242, 0.97)",
+   "borderRadius": "12px",
+   "border": "0px none rgba(248, 246, 242, 0.97)",
+   "padding": "10px",
+   "transition": "background 0.25s cubic-bezier(0.22, 1, 0.36, 1)"
+  },
+  {
+   "tag": "button",
+   "cls": "fleet__row",
+   "text": "EXPLORER-12Survey\nRidge traverse",
+   "x": 116,
+   "y": 439.7,
+   "w": 288,
+   "h": 55.9,
+   "fontFamily": "\"Inter Variable\", \"SF Pro Text\", -apple-system, \"system-ui\", \"Helvetica Neue\", sans-serif",
+   "fontSize": "13px",
+   "fontWeight": "400",
+   "lineHeight": "18.2px",
+   "color": "rgba(248, 246, 242, 0.97)",
+   "borderRadius": "12px",
+   "border": "0px none rgba(248, 246, 242, 0.97)",
+   "padding": "10px",
+   "transition": "background 0.25s cubic-bezier(0.22, 1, 0.36, 1)"
+  },
+  {
+   "tag": "button",
+   "cls": "obj__state",
+   "text": "",
+   "x": 1380,
+   "y": 491.8,
+   "w": 20,
+   "h": 20,
+   "fontFamily": "\"Inter Variable\", \"SF Pro Text\", -apple-system, \"system-ui\", \"Helvetica Neue\", sans-serif",
+   "fontSize": "13px",
+   "fontWeight": "400",
+   "lineHeight": "18.2px",
+   "color": "rgba(248, 246, 242, 0.55)",
+   "border": "0px none rgba(248, 246, 242, 0.55)",
+   "transition": "all"
+  },
+  {
+   "tag": "button",
+   "cls": "obj__state",
+   "text": "",
+   "x": 1380,
+   "y": 546.7,
+   "w": 20,
+   "h": 20,
+   "fontFamily": "\"Inter Variable\", \"SF Pro Text\", -apple-system, \"system-ui\", \"Helvetica Neue\", sans-serif",
+   "fontSize": "13px",
+   "fontWeight": "400",
+   "lineHeight": "18.2px",
+   "color": "rgba(248, 246, 242, 0.55)",
+   "border": "0px none rgba(248, 246, 242, 0.55)",
+   "transition": "all"
+  },
+  {
+   "tag": "button",
+   "cls": "obj__state",
+   "text": "",
+   "x": 1380,
+   "y": 601.7,
+   "w": 20,
+   "h": 20,
+   "fontFamily": "\"Inter Variable\", \"SF Pro Text\", -apple-system, \"system-ui\", \"Helvetica Neue\", sans-serif",
+   "fontSize": "13px",
+   "fontWeight": "400",
+   "lineHeight": "18.2px",
+   "color": "rgba(248, 246, 242, 0.55)",
+   "border": "0px none rgba(248, 246, 242, 0.55)",
+   "transition": "all"
+  }
+ ],
+ "cards": [
+  {
+   "tag": "div",
+   "cls": "glass fleet",
+   "text": "IX-7Lander\nStandby\n78%\nATLAS-01Rover\nDocked\n94%\nCA",
+   "x": 110,
+   "y": 266,
+   "w": 300,
+   "h": 235.6,
+   "fontFamily": "\"Inter Variable\", \"SF Pro Text\", -apple-system, \"system-ui\", \"Helvetica Neue\", sans-serif",
+   "fontSize": "13px",
+   "fontWeight": "400",
+   "lineHeight": "18.2px",
+   "color": "rgba(248, 246, 242, 0.97)",
+   "backgroundImage": "radial-gradient(120% 70% at 0% 0%, rgba(255, 255, 255, 0.08), rgba(0, 0, 0, 0) 55%), linear-gradient(rgba(30, 28, 26, 0.76), rgba(17, 16, 15, 0.72))",
+   "borderRadius": "16px",
+   "boxShadow": "rgba(255, 255, 255, 0.12) 0px 1px 0px 0px inset, rgba(255, 255, 255, 0.08) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.6) 0px 24px 48px -24px",
+   "border": "0px none rgba(248, 246, 242, 0.97)",
+   "padding": "6px",
+   "transition": "all",
+   "backdropFilter": "blur(28px) saturate(1.4) brightness(0.82)"
+  },
+  {
+   "tag": "div",
+   "cls": "glass sitemap",
+   "text": "HESPER BASIN · SITE 2\nORBITAL · HIRES\n22.61°S · 31",
+   "x": 1118,
+   "y": 76,
+   "w": 300,
+   "h": 349.4,
+   "fontFamily": "\"Inter Variable\", \"SF Pro Text\", -apple-system, \"system-ui\", \"Helvetica Neue\", sans-serif",
+   "fontSize": "13px",
+   "fontWeight": "400",
+   "lineHeight": "18.2px",
+   "color": "rgba(248, 246, 242, 0.97)",
+   "backgroundImage": "radial-gradient(120% 70% at 0% 0%, rgba(255, 255, 255, 0.08), rgba(0, 0, 0, 0) 55%), linear-gradient(rgba(30, 28, 26, 0.76), rgba(17, 16, 15, 0.72))",
+   "borderRadius": "16px",
+   "boxShadow": "rgba(255, 255, 255, 0.12) 0px 1px 0px 0px inset, rgba(255, 255, 255, 0.08) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.6) 0px 24px 48px -24px",
+   "border": "0px none rgba(248, 246, 242, 0.97)",
+   "padding": "12px",
+   "transition": "all",
+   "backdropFilter": "blur(28px) saturate(1.4) brightness(0.82)"
+  },
+  {
+   "tag": "div",
+   "cls": "glass panel objectives",
+   "text": "OBJECTIVES\n0 / 5\n01\nComplete systems check\nIX-7 · ",
+   "x": 1118,
+   "y": 437.4,
+   "w": 300,
+   "h": 332.1,
+   "fontFamily": "\"Inter Variable\", \"SF Pro Text\", -apple-system, \"system-ui\", \"Helvetica Neue\", sans-serif",
+   "fontSize": "13px",
+   "fontWeight": "400",
+   "lineHeight": "18.2px",
+   "color": "rgba(248, 246, 242, 0.97)",
+   "backgroundImage": "radial-gradient(120% 70% at 0% 0%, rgba(255, 255, 255, 0.08), rgba(0, 0, 0, 0) 55%), linear-gradient(rgba(30, 28, 26, 0.76), rgba(17, 16, 15, 0.72))",
+   "borderRadius": "16px",
+   "boxShadow": "rgba(255, 255, 255, 0.12) 0px 1px 0px 0px inset, rgba(255, 255, 255, 0.08) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.6) 0px 24px 48px -24px",
+   "border": "0px none rgba(248, 246, 242, 0.97)",
+   "padding": "16px 16px 14px",
+   "transition": "all",
+   "backdropFilter": "blur(28px) saturate(1.4) brightness(0.82)"
+  },
+  {
+   "tag": "div",
+   "cls": "glass resources",
+   "text": "POWER\n78.4%\n-0.45 kW net\nPROPELLANT\n61.0%\n19.5 t C",
+   "x": 110,
+   "y": 777.2,
+   "w": 524,
+   "h": 100.8,
+   "fontFamily": "\"Inter Variable\", \"SF Pro Text\", -apple-system, \"system-ui\", \"Helvetica Neue\", sans-serif",
+   "fontSize": "13px",
+   "fontWeight": "400",
+   "lineHeight": "18.2px",
+   "color": "rgba(248, 246, 242, 0.97)",
+   "backgroundImage": "radial-gradient(120% 70% at 0% 0%, rgba(255, 255, 255, 0.08), rgba(0, 0, 0, 0) 55%), linear-gradient(rgba(30, 28, 26, 0.76), rgba(17, 16, 15, 0.72))",
+   "borderRadius": "16px",
+   "boxShadow": "rgba(255, 255, 255, 0.12) 0px 1px 0px 0px inset, rgba(255, 255, 255, 0.08) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.6) 0px 24px 48px -24px",
+   "border": "0px none rgba(248, 246, 242, 0.97)",
+   "padding": "14px 6px",
+   "transition": "all",
+   "backdropFilter": "blur(28px) saturate(1.4) brightness(0.82)"
+  }
+ ],
+ "gradients": [
+  {
+   "tag": "div",
+   "cls": "scrim-top",
+   "text": "",
+   "x": 0,
+   "y": 0,
+   "w": 1440,
+   "h": 120,
+   "backgroundImage": "linear-gradient(rgba(12, 10, 9, 0.55), rgba(12, 10, 9, 0))"
+  },
+  {
+   "tag": "div",
+   "cls": "scrim-bottom",
+   "text": "",
+   "x": 0,
+   "y": 700,
+   "w": 1440,
+   "h": 200,
+   "backgroundImage": "linear-gradient(rgba(12, 10, 9, 0), rgba(12, 10, 9, 0.5))"
+  },
+  {
+   "tag": "div",
+   "cls": "glass progress-chip",
+   "text": "MISSION PROGRESS\n0%\n0/5",
+   "x": 500.8,
+   "y": 12.6,
+   "w": 381.1,
+   "h": 30.8,
+   "backgroundImage": "radial-gradient(120% 70% at 0% 0%, rgba(255, 255, 255, 0.08), rgba(0, 0, 0, 0) 55%), linear-gradient(rgba(30, 28, 26, 0.76), rgba(17, 16, 15, 0.72))",
+   "borderRadius": "999px"
+  },
+  {
+   "tag": "nav",
+   "cls": "glass nav",
+   "text": "OVERVIEW1\nSPACECRAFT2\nROVER OPS3\nSYSTEMS4\nJOURNAL5",
+   "x": 18,
+   "y": 307.5,
+   "w": 64,
+   "h": 285,
+   "backgroundImage": "radial-gradient(120% 70% at 0% 0%, rgba(255, 255, 255, 0.08), rgba(0, 0, 0, 0) 55%), linear-gradient(rgba(30, 28, 26, 0.76), rgba(17, 16, 15, 0.72))",
+   "borderRadius": "30px"
+  },
+  {
+   "tag": "div",
+   "cls": "glass fleet",
+   "text": "IX-7Lander\nStandby\n78%\nATLAS-01Rover\nDocked\n94%\nCA",
+   "x": 110,
+   "y": 266,
+   "w": 300,
+   "h": 235.6,
+   "backgroundImage": "radial-gradient(120% 70% at 0% 0%, rgba(255, 255, 255, 0.08), rgba(0, 0, 0, 0) 55%), linear-gradient(rgba(30, 28, 26, 0.76), rgba(17, 16, 15, 0.72))",
+   "borderRadius": "16px"
+  },
+  {
+   "tag": "div",
+   "cls": "glass sitemap",
+   "text": "HESPER BASIN · SITE 2\nORBITAL · HIRES\n22.61°S · 31",
+   "x": 1118,
+   "y": 76,
+   "w": 300,
+   "h": 349.4,
+   "backgroundImage": "radial-gradient(120% 70% at 0% 0%, rgba(255, 255, 255, 0.08), rgba(0, 0, 0, 0) 55%), linear-gradient(rgba(30, 28, 26, 0.76), rgba(17, 16, 15, 0.72))",
+   "borderRadius": "16px"
+  },
+  {
+   "tag": "div",
+   "cls": "glass panel objectives",
+   "text": "OBJECTIVES\n0 / 5\n01\nComplete systems check\nIX-7 · ",
+   "x": 1118,
+   "y": 437.4,
+   "w": 300,
+   "h": 332.1,
+   "backgroundImage": "radial-gradient(120% 70% at 0% 0%, rgba(255, 255, 255, 0.08), rgba(0, 0, 0, 0) 55%), linear-gradient(rgba(30, 28, 26, 0.76), rgba(17, 16, 15, 0.72))",
+   "borderRadius": "16px"
+  },
+  {
+   "tag": "div",
+   "cls": "glass resources",
+   "text": "POWER\n78.4%\n-0.45 kW net\nPROPELLANT\n61.0%\n19.5 t C",
+   "x": 110,
+   "y": 777.2,
+   "w": 524,
+   "h": 100.8,
+   "backgroundImage": "radial-gradient(120% 70% at 0% 0%, rgba(255, 255, 255, 0.08), rgba(0, 0, 0, 0) 55%), linear-gradient(rgba(30, 28, 26, 0.76), rgba(17, 16, 15, 0.72))",
+   "borderRadius": "16px"
+  },
+  {
+   "tag": "div",
+   "cls": "glass camdock",
+   "text": "CAMERA\nSITE\nTACTICAL\nATLAS",
+   "x": 1043.7,
+   "y": 832,
+   "w": 374.3,
+   "h": 46,
+   "backgroundImage": "radial-gradient(120% 70% at 0% 0%, rgba(255, 255, 255, 0.08), rgba(0, 0, 0, 0) 55%), linear-gradient(rgba(30, 28, 26, 0.76), rgba(17, 16, 15, 0.72))",
+   "borderRadius": "16px"
+  }
+ ],
+ "rootVars": {
+  ":root --font": "\"Inter Variable\", \"SF Pro Text\", -apple-system, BlinkMacSystemFont, \"Helvetica Neue\", sans-serif",
+  ":root --ink": "#f8f6f2f7",
+  ":root --ink-2": "#f8f6f2d9",
+  ":root --ink-3": "#f8f6f2b8",
+  ":root --ink-4": "#f8f6f28c",
+  ":root --ink-5": "#f8f6f22e",
+  ":root --inv": "#161412",
+  ":root --solid": "#f4f1ec",
+  ":root --line": "#ffffff1a",
+  ":root --line-2": "#ffffff2e",
+  ":root --fill-1": "#ffffff0d",
+  ":root --fill-2": "#ffffff17",
+  ":root --fill-3": "#ffffff29",
+  ":root --track": "#ffffff2e",
+  ":root --sheen": "#ffffff14",
+  ":root --tip": "#121110f0",
+  ":root --glass": "linear-gradient(180deg, #1e1c1ac2, #11100fb8)",
+  ":root --glass-strong": "linear-gradient(180deg, #1e1c1ae6, #100f0ee0)",
+  ":root --glass-blur": "blur(28px) saturate(140%) brightness(.82)",
+  ":root --edge": "inset 0 1px 0 #ffffff1f, inset 0 0 0 1px #ffffff14",
+  ":root --lift": "0 24px 48px -24px #0009",
+  ":root --float-shadow": "0 1px 2px #0000008c, 0 0 18px #00000073",
+  ":root --amber": "#f5a857",
+  ":root --amber-2": "#f5a8572e",
+  ":root --amber-ink": "#ffd9ae",
+  ":root --green": "#92dcae",
+  ":root --green-2": "#92dcae29",
+  ":root --red": "#ff7a6b",
+  ":root --red-2": "#ff7a6b2e",
+  ":root --red-ink": "#ffc8c1",
+  ":root --blue": "#9cc2f0",
+  ":root --blue-2": "#9cc2f029",
+  ":root --c-ink": "240, 236, 230",
+  ":root --c-ink2": "178, 172, 164",
+  ":root --c-amber": "245, 168, 87",
+  ":root --c-green": "146, 220, 174",
+  ":root --c-blue": "156, 194, 240",
+  ":root --c-red": "255, 122, 107",
+  ":root --c-grid": "255, 255, 255",
+  ":root --r-xl": "22px",
+  ":root --r-lg": "16px",
+  ":root --r-md": "11px",
+  ":root --r-sm": "7px",
+  ":root --ease": "cubic-bezier(.22, 1, .36, 1)",
+  ":root --ease-in": "cubic-bezier(.55, 0, .9, .3)",
+  ":root --gutter": "22px",
+  ":root --nav-w": "64px",
+  ":root[data-theme=\"li --ink": "#141210f2",
+  ":root[data-theme=\"li --ink-2": "#141210cc",
+  ":root[data-theme=\"li --ink-3": "#141210a8",
+  ":root[data-theme=\"li --ink-4": "#14121099",
+  ":root[data-theme=\"li --ink-5": "#14121029",
+  ":root[data-theme=\"li --inv": "#fbfaf8",
+  ":root[data-theme=\"li --solid": "#1c1a18",
+  ":root[data-theme=\"li --line": "#1412101a",
+  ":root[data-theme=\"li --line-2": "#1412102e",
+  ":root[data-theme=\"li --fill-1": "#14121009",
+  ":root[data-theme=\"li --fill-2": "#14121011",
+  ":root[data-theme=\"li --fill-3": "#1412101c",
+  ":root[data-theme=\"li --track": "#14121024",
+  ":root[data-theme=\"li --sheen": "#ffffff8c",
+  ":root[data-theme=\"li --tip": "#fcfaf7f7",
+  ":root[data-theme=\"li --glass": "linear-gradient(180deg, #fdfcfacc, #f4f1edbd)",
+  ":root[data-theme=\"li --glass-strong": "linear-gradient(180deg, #fdfcfaed, #f5f2eee6)",
+  ":root[data-theme=\"li --glass-blur": "blur(28px) saturate(150%) brightness(1.12)",
+  ":root[data-theme=\"li --edge": "inset 0 1px 0 #ffffffd9, inset 0 0 0 1px #ffffff73",
+  ":root[data-theme=\"li --lift": "0 24px 48px -22px #28180c61",
+  ":root[data-theme=\"li --float-shadow": "none",
+  ":root[data-theme=\"li --amber": "#a85608",
+  ":root[data-theme=\"li --amber-2": "#c86e1424",
+  ":root[data-theme=\"li --amber-ink": "#7c3f05",
+  ":root[data-theme=\"li --green": "#1b7446",
+  ":root[data-theme=\"li --green-2": "#1b74461f",
+  ":root[data-theme=\"li --red": "#b3261e",
+  ":root[data-theme=\"li --red-2": "#b3261e1a",
+  ":root[data-theme=\"li --red-ink": "#8f1d17",
+  ":root[data-theme=\"li --blue": "#245fa8",
+  ":root[data-theme=\"li --blue-2": "#245fa81c",
+  ":root[data-theme=\"li --c-ink": "30, 27, 24",
+  ":root[data-theme=\"li --c-ink2": "110, 104, 97",
+  ":root[data-theme=\"li --c-amber": "190, 98, 12",
+  ":root[data-theme=\"li --c-green": "27, 128, 78",
+  ":root[data-theme=\"li --c-blue": "36, 95, 168",
+  ":root[data-theme=\"li --c-red": "179, 38, 30",
+  ":root[data-theme=\"li --c-grid": "20, 18, 16"
+ },
+ "hover": [
+  {
+   "text": "CARGO-03Hauler\nLoading · depot",
+   "transition": "background 0.25s cubic-bezier(0.22, 1, 0.36, 1)",
+   "changed": {
+    "bg": [
+     "rgba(0, 0, 0, 0)",
+     "rgba(255, 255, 255, 0.09)"
+    ]
+   }
+  },
+  {
+   "text": "",
+   "transition": "background 0.2s, color 0.2s",
+   "changed": {
+    "bg": [
+     "rgba(0, 0, 0, 0)",
+     "rgba(255, 255, 255, 0.09)"
+    ],
+    "c": [
+     "rgba(248, 246, 242, 0.85)",
+     "rgba(248, 246, 242, 0.97)"
+    ],
+    "bd": [
+     "rgba(248, 246, 242, 0.85)",
+     "rgba(248, 246, 242, 0.97)"
+    ]
+   }
+  }
+ ]
+}

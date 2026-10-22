@@ -1,0 +1,742 @@
+{
+ "title": "Orbit Agent Workspace",
+ "url": "https://orbit-agent-workspace.vercel.app/",
+ "viewport": [
+  1440,
+  900
+ ],
+ "scrollHeight": 900,
+ "bodyBg": "rgb(5, 5, 5)",
+ "htmlBg": "rgba(0, 0, 0, 0)",
+ "framework": {
+  "next": false,
+  "react": false,
+  "framer": false,
+  "nuxt": false,
+  "svelte": false,
+  "astro": false,
+  "vite": false,
+  "tailwind": false,
+  "webflow": false,
+  "canvas": 0,
+  "video": 0,
+  "svg": 115,
+  "motionAttrs": 49,
+  "generator": null
+ },
+ "scripts": [],
+ "loadedFonts": [
+  "Geist 300 600 normal",
+  "Geist Mono 400 normal",
+  "Geist Mono 500 normal"
+ ],
+ "fontTuples": [
+  [
+   "Geist 13px 400",
+   32
+  ],
+  [
+   "Geist 11.5px 400",
+   31
+  ],
+  [
+   "Geist 12.5px 400",
+   23
+  ],
+  [
+   "Geist 11px 500",
+   10
+  ],
+  [
+   "Geist 11px 400",
+   7
+  ],
+  [
+   "Geist 10.5px 400",
+   5
+  ],
+  [
+   "Geist 12px 400",
+   4
+  ],
+  [
+   "\"Geist Mono\" 11px 400",
+   4
+  ],
+  [
+   "\"Geist Mono\" 12px 400",
+   4
+  ],
+  [
+   "\"Geist Mono\" 11.5px 400",
+   3
+  ],
+  [
+   "\"Geist Mono\" 12.5px 500",
+   3
+  ],
+  [
+   "Geist 12.5px 500",
+   1
+  ],
+  [
+   "\"Geist Mono\" 10.5px 500",
+   1
+  ],
+  [
+   "Geist 10px 600",
+   1
+  ],
+  [
+   "Geist 7.5px 600",
+   1
+  ],
+  [
+   "Geist 13px 500",
+   1
+  ]
+ ],
+ "radii": [
+  [
+   "50%",
+   43
+  ],
+  [
+   "6px",
+   23
+  ],
+  [
+   "8px",
+   14
+  ],
+  [
+   "4px",
+   9
+  ],
+  [
+   "10px",
+   6
+  ],
+  [
+   "5px",
+   5
+  ],
+  [
+   "14px",
+   4
+  ],
+  [
+   "7px",
+   1
+  ]
+ ],
+ "shadows": [
+  [
+   "rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset",
+   2
+  ],
+  [
+   "rgba(255, 255, 255, 0.12) 0px 0px 0px 1px inset",
+   1
+  ],
+  [
+   "rgb(10, 10, 11) 0px 0px 0px 2px, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset",
+   1
+  ]
+ ],
+ "foldColours": [
+  [
+   "rgb(237, 237, 239)",
+   188
+  ],
+  [
+   "rgb(109, 109, 118)",
+   187
+  ],
+  [
+   "rgb(160, 160, 168)",
+   137
+  ],
+  [
+   "rgb(70, 70, 77)",
+   26
+  ],
+  [
+   "rgb(110, 190, 141)",
+   9
+  ],
+  [
+   "rgb(10, 10, 11)",
+   5
+  ],
+  [
+   "rgba(255, 255, 255, 0.02)",
+   4
+  ],
+  [
+   "rgb(5, 5, 5)",
+   3
+  ],
+  [
+   "rgba(255, 255, 255, 0.06)",
+   2
+  ],
+  [
+   "rgb(223, 192, 102)",
+   2
+  ],
+  [
+   "rgb(99, 173, 205)",
+   2
+  ],
+  [
+   "rgb(143, 152, 213)",
+   2
+  ],
+  [
+   "rgb(213, 130, 175)",
+   2
+  ],
+  [
+   "rgb(113, 189, 144)",
+   2
+  ],
+  [
+   "rgb(219, 150, 101)",
+   2
+  ],
+  [
+   "rgb(187, 168, 211)",
+   2
+  ],
+  [
+   "rgb(7, 7, 8)",
+   2
+  ],
+  [
+   "rgba(255, 255, 255, 0.024)",
+   1
+  ],
+  [
+   "rgba(255, 255, 255, 0.03)",
+   1
+  ],
+  [
+   "rgb(22, 23, 26)",
+   1
+  ]
+ ],
+ "headings": [],
+ "buttons": [
+  {
+   "tag": "button",
+   "cls": "ib",
+   "text": "",
+   "x": 10,
+   "y": 5.5,
+   "w": 28,
+   "h": 28,
+   "fontFamily": "Geist, -apple-system, \"system-ui\", \"SF Pro Text\", Inter, system-ui, sans-serif",
+   "fontSize": "13px",
+   "fontWeight": "400",
+   "letterSpacing": "-0.039px",
+   "lineHeight": "19.5px",
+   "color": "rgb(109, 109, 118)",
+   "borderRadius": "6px",
+   "border": "0px none rgb(109, 109, 118)",
+   "transition": "background 0.12s, color 0.12s"
+  },
+  {
+   "tag": "button",
+   "cls": "pillbtn",
+   "text": "Opus 5.5",
+   "x": 1265,
+   "y": 6.5,
+   "w": 103,
+   "h": 26,
+   "fontFamily": "Geist, -apple-system, \"system-ui\", \"SF Pro Text\", Inter, system-ui, sans-serif",
+   "fontSize": "12px",
+   "fontWeight": "400",
+   "letterSpacing": "-0.039px",
+   "lineHeight": "18px",
+   "color": "rgb(160, 160, 168)",
+   "borderRadius": "6px",
+   "border": "0px none rgb(160, 160, 168)",
+   "padding": "0px 8px",
+   "transition": "background 0.12s, color 0.12s"
+  },
+  {
+   "tag": "button",
+   "cls": "ib",
+   "text": "",
+   "x": 1372,
+   "y": 5.5,
+   "w": 28,
+   "h": 28,
+   "fontFamily": "Geist, -apple-system, \"system-ui\", \"SF Pro Text\", Inter, system-ui, sans-serif",
+   "fontSize": "13px",
+   "fontWeight": "400",
+   "letterSpacing": "-0.039px",
+   "lineHeight": "19.5px",
+   "color": "rgb(160, 160, 168)",
+   "borderRadius": "6px",
+   "border": "0px none rgb(160, 160, 168)",
+   "transition": "background 0.12s, color 0.12s"
+  },
+  {
+   "tag": "button",
+   "cls": "me",
+   "text": "SD",
+   "x": 1408,
+   "y": 7.5,
+   "w": 24,
+   "h": 24,
+   "fontFamily": "Geist, -apple-system, \"system-ui\", \"SF Pro Text\", Inter, system-ui, sans-serif",
+   "fontSize": "10px",
+   "fontWeight": "600",
+   "letterSpacing": "-0.039px",
+   "lineHeight": "15px",
+   "color": "rgb(160, 160, 168)",
+   "backgroundImage": "linear-gradient(rgb(38, 39, 43), rgb(24, 25, 28))",
+   "borderRadius": "50%",
+   "boxShadow": "rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset",
+   "border": "0px none rgb(160, 160, 168)",
+   "transition": "all"
+  },
+  {
+   "tag": "button",
+   "cls": "ni",
+   "text": "Home",
+   "x": 8,
+   "y": 74,
+   "w": 208,
+   "h": 28,
+   "fontFamily": "Geist, -apple-system, \"system-ui\", \"SF Pro Text\", Inter, system-ui, sans-serif",
+   "fontSize": "13px",
+   "fontWeight": "400",
+   "letterSpacing": "-0.039px",
+   "lineHeight": "19.5px",
+   "color": "rgb(237, 237, 239)",
+   "backgroundColor": "rgba(255, 255, 255, 0.06)",
+   "borderRadius": "6px",
+   "border": "0px none rgb(237, 237, 239)",
+   "padding": "0px 8px",
+   "transition": "background 0.12s, color 0.12s"
+  },
+  {
+   "tag": "button",
+   "cls": "ni",
+   "text": "Projects",
+   "x": 8,
+   "y": 102,
+   "w": 208,
+   "h": 28,
+   "fontFamily": "Geist, -apple-system, \"system-ui\", \"SF Pro Text\", Inter, system-ui, sans-serif",
+   "fontSize": "13px",
+   "fontWeight": "400",
+   "letterSpacing": "-0.039px",
+   "lineHeight": "19.5px",
+   "color": "rgb(160, 160, 168)",
+   "borderRadius": "6px",
+   "border": "0px none rgb(160, 160, 168)",
+   "padding": "0px 8px",
+   "transition": "background 0.12s, color 0.12s"
+  },
+  {
+   "tag": "button",
+   "cls": "ni",
+   "text": "Agents",
+   "x": 8,
+   "y": 130,
+   "w": 208,
+   "h": 28,
+   "fontFamily": "Geist, -apple-system, \"system-ui\", \"SF Pro Text\", Inter, system-ui, sans-serif",
+   "fontSize": "13px",
+   "fontWeight": "400",
+   "letterSpacing": "-0.039px",
+   "lineHeight": "19.5px",
+   "color": "rgb(160, 160, 168)",
+   "borderRadius": "6px",
+   "border": "0px none rgb(160, 160, 168)",
+   "padding": "0px 8px",
+   "transition": "background 0.12s, color 0.12s"
+  },
+  {
+   "tag": "button",
+   "cls": "ni",
+   "text": "Tasks",
+   "x": 8,
+   "y": 158,
+   "w": 208,
+   "h": 28,
+   "fontFamily": "Geist, -apple-system, \"system-ui\", \"SF Pro Text\", Inter, system-ui, sans-serif",
+   "fontSize": "13px",
+   "fontWeight": "400",
+   "letterSpacing": "-0.039px",
+   "lineHeight": "19.5px",
+   "color": "rgb(160, 160, 168)",
+   "borderRadius": "6px",
+   "border": "0px none rgb(160, 160, 168)",
+   "padding": "0px 8px",
+   "transition": "background 0.12s, color 0.12s"
+  },
+  {
+   "tag": "button",
+   "cls": "ni",
+   "text": "Workflows",
+   "x": 8,
+   "y": 186,
+   "w": 208,
+   "h": 28,
+   "fontFamily": "Geist, -apple-system, \"system-ui\", \"SF Pro Text\", Inter, system-ui, sans-serif",
+   "fontSize": "13px",
+   "fontWeight": "400",
+   "letterSpacing": "-0.039px",
+   "lineHeight": "19.5px",
+   "color": "rgb(160, 160, 168)",
+   "borderRadius": "6px",
+   "border": "0px none rgb(160, 160, 168)",
+   "padding": "0px 8px",
+   "transition": "background 0.12s, color 0.12s"
+  },
+  {
+   "tag": "button",
+   "cls": "ni",
+   "text": "Files",
+   "x": 8,
+   "y": 248,
+   "w": 208,
+   "h": 28,
+   "fontFamily": "Geist, -apple-system, \"system-ui\", \"SF Pro Text\", Inter, system-ui, sans-serif",
+   "fontSize": "13px",
+   "fontWeight": "400",
+   "letterSpacing": "-0.039px",
+   "lineHeight": "19.5px",
+   "color": "rgb(160, 160, 168)",
+   "borderRadius": "6px",
+   "border": "0px none rgb(160, 160, 168)",
+   "padding": "0px 8px",
+   "transition": "background 0.12s, color 0.12s"
+  },
+  {
+   "tag": "button",
+   "cls": "ni",
+   "text": "Conversations",
+   "x": 8,
+   "y": 276,
+   "w": 208,
+   "h": 28,
+   "fontFamily": "Geist, -apple-system, \"system-ui\", \"SF Pro Text\", Inter, system-ui, sans-serif",
+   "fontSize": "13px",
+   "fontWeight": "400",
+   "letterSpacing": "-0.039px",
+   "lineHeight": "19.5px",
+   "color": "rgb(160, 160, 168)",
+   "borderRadius": "6px",
+   "border": "0px none rgb(160, 160, 168)",
+   "padding": "0px 8px",
+   "transition": "background 0.12s, color 0.12s"
+  },
+  {
+   "tag": "button",
+   "cls": "ni",
+   "text": "Runs",
+   "x": 8,
+   "y": 304,
+   "w": 208,
+   "h": 28,
+   "fontFamily": "Geist, -apple-system, \"system-ui\", \"SF Pro Text\", Inter, system-ui, sans-serif",
+   "fontSize": "13px",
+   "fontWeight": "400",
+   "letterSpacing": "-0.039px",
+   "lineHeight": "19.5px",
+   "color": "rgb(160, 160, 168)",
+   "borderRadius": "6px",
+   "border": "0px none rgb(160, 160, 168)",
+   "padding": "0px 8px",
+   "transition": "background 0.12s, color 0.12s"
+  },
+  {
+   "tag": "button",
+   "cls": "ni",
+   "text": "Activity",
+   "x": 8,
+   "y": 332,
+   "w": 208,
+   "h": 28,
+   "fontFamily": "Geist, -apple-system, \"system-ui\", \"SF Pro Text\", Inter, system-ui, sans-serif",
+   "fontSize": "13px",
+   "fontWeight": "400",
+   "letterSpacing": "-0.039px",
+   "lineHeight": "19.5px",
+   "color": "rgb(160, 160, 168)",
+   "borderRadius": "6px",
+   "border": "0px none rgb(160, 160, 168)",
+   "padding": "0px 8px",
+   "transition": "background 0.12s, color 0.12s"
+  },
+  {
+   "tag": "button",
+   "cls": "ra",
+   "text": "Atlas\nThinking",
+   "x": 8,
+   "y": 394,
+   "w": 208,
+   "h": 28,
+   "fontFamily": "Geist, -apple-system, \"system-ui\", \"SF Pro Text\", Inter, system-ui, sans-serif",
+   "fontSize": "13px",
+   "fontWeight": "400",
+   "letterSpacing": "-0.039px",
+   "lineHeight": "19.5px",
+   "color": "rgb(237, 237, 239)",
+   "borderRadius": "6px",
+   "border": "0px none rgb(237, 237, 239)",
+   "padding": "0px 8px",
+   "transition": "background 0.12s"
+  }
+ ],
+ "cards": [
+  {
+   "tag": "form",
+   "cls": "comp home-comp",
+   "text": "Ask Atlas\nAtlas routes it to the right agent\n↵ to ",
+   "x": 364,
+   "y": 300,
+   "w": 620,
+   "h": 84,
+   "fontFamily": "Geist, -apple-system, \"system-ui\", \"SF Pro Text\", Inter, system-ui, sans-serif",
+   "fontSize": "13px",
+   "fontWeight": "400",
+   "letterSpacing": "-0.039px",
+   "lineHeight": "19.5px",
+   "color": "rgb(237, 237, 239)",
+   "backgroundColor": "rgb(15, 16, 17)",
+   "borderRadius": "10px",
+   "border": "1px solid rgba(255, 255, 255, 0.094)",
+   "transition": "border-color 0.15s, box-shadow 0.15s"
+  }
+ ],
+ "gradients": [
+  {
+   "tag": "span",
+   "cls": "ws-mark",
+   "text": "",
+   "x": 44,
+   "y": 11.5,
+   "w": 16,
+   "h": 16,
+   "backgroundImage": "radial-gradient(circle at 30% 30%, rgb(42, 43, 48), rgb(17, 18, 20))",
+   "borderRadius": "5px"
+  },
+  {
+   "tag": "button",
+   "cls": "me",
+   "text": "SD",
+   "x": 1408,
+   "y": 7.5,
+   "w": 24,
+   "h": 24,
+   "backgroundImage": "linear-gradient(rgb(38, 39, 43), rgb(24, 25, 28))",
+   "borderRadius": "50%"
+  },
+  {
+   "tag": "span",
+   "cls": "av-glow",
+   "text": "",
+   "x": 10.3,
+   "y": 393.3,
+   "w": 29.4,
+   "h": 29.4,
+   "backgroundImage": "radial-gradient(closest-side, color(srgb 0.87451 0.752941 0.4 / 0.7), rgba(0, 0, 0, 0) 100%)",
+   "borderRadius": "50%"
+  },
+  {
+   "tag": "span",
+   "cls": "av-ball",
+   "text": "",
+   "x": 16,
+   "y": 398.9,
+   "w": 18,
+   "h": 17.9,
+   "backgroundImage": "radial-gradient(56% 40% at 50% 21%, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0) 75%), radial-gradient(80% 58% at 50% 100%, rgb(192, 157, 64), rgba(0, 0, 0, 0) 78%), linear-gradient(rgb(242, 227, 174) 0%, rgb(223, 19…",
+   "borderRadius": "50%"
+  },
+  {
+   "tag": "span",
+   "cls": "av-ball",
+   "text": "",
+   "x": 15.7,
+   "y": 427.1,
+   "w": 18.2,
+   "h": 18.3,
+   "backgroundImage": "radial-gradient(56% 40% at 50% 21%, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0) 75%), radial-gradient(80% 58% at 50% 100%, rgb(59, 134, 168), rgba(0, 0, 0, 0) 78%), linear-gradient(rgb(170, 213, 230) 0%, rgb(99, 173…",
+   "borderRadius": "50%"
+  },
+  {
+   "tag": "span",
+   "cls": "av-ball",
+   "text": "",
+   "x": 15.9,
+   "y": 455.2,
+   "w": 18,
+   "h": 18,
+   "backgroundImage": "radial-gradient(56% 40% at 50% 21%, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0) 75%), radial-gradient(80% 58% at 50% 100%, rgb(100, 110, 179), rgba(0, 0, 0, 0) 78%), linear-gradient(rgb(197, 201, 236) 0%, rgb(143, 1…",
+   "borderRadius": "50%"
+  },
+  {
+   "tag": "span",
+   "cls": "av-ball",
+   "text": "",
+   "x": 16.1,
+   "y": 482.7,
+   "w": 18.2,
+   "h": 18.1,
+   "backgroundImage": "radial-gradient(56% 40% at 50% 21%, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0) 75%), radial-gradient(80% 58% at 50% 100%, rgb(182, 94, 143), rgba(0, 0, 0, 0) 78%), linear-gradient(rgb(237, 185, 212) 0%, rgb(213, 13…",
+   "borderRadius": "50%"
+  },
+  {
+   "tag": "span",
+   "cls": "av-ball",
+   "text": "",
+   "x": 16,
+   "y": 511.2,
+   "w": 18,
+   "h": 18,
+   "backgroundImage": "radial-gradient(56% 40% at 50% 21%, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0) 75%), radial-gradient(80% 58% at 50% 100%, rgb(70, 151, 107), rgba(0, 0, 0, 0) 78%), linear-gradient(rgb(184, 224, 198) 0%, rgb(113, 18…",
+   "borderRadius": "50%"
+  },
+  {
+   "tag": "span",
+   "cls": "av-ball",
+   "text": "",
+   "x": 15.9,
+   "y": 538.6,
+   "w": 18.2,
+   "h": 18.2,
+   "backgroundImage": "radial-gradient(56% 40% at 50% 21%, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0) 75%), radial-gradient(80% 58% at 50% 100%, rgb(189, 117, 66), rgba(0, 0, 0, 0) 78%), linear-gradient(rgb(240, 198, 166) 0%, rgb(219, 15…",
+   "borderRadius": "50%"
+  },
+  {
+   "tag": "span",
+   "cls": "av-ball",
+   "text": "",
+   "x": 16,
+   "y": 567,
+   "w": 18,
+   "h": 18,
+   "backgroundImage": "radial-gradient(56% 40% at 50% 21%, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0) 75%), radial-gradient(80% 58% at 50% 100%, rgb(153, 131, 186), rgba(0, 0, 0, 0) 78%), linear-gradient(rgb(227, 218, 236) 0%, rgb(187, 1…",
+   "borderRadius": "50%"
+  },
+  {
+   "tag": "div",
+   "cls": "hero-aura",
+   "text": "",
+   "x": 506.7,
+   "y": 67.7,
+   "w": 334.6,
+   "h": 240.5,
+   "backgroundImage": "radial-gradient(closest-side, color(srgb 0.87451 0.752941 0.4 / 0.18), color(srgb 0.87451 0.752941 0.4 / 0.05) 58%, rgba(0, 0, 0, 0))",
+   "borderRadius": "50%"
+  },
+  {
+   "tag": "span",
+   "cls": "av-ball",
+   "text": "",
+   "x": 791.1,
+   "y": 199,
+   "w": 26.9,
+   "h": 27,
+   "backgroundImage": "radial-gradient(56% 40% at 50% 21%, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0) 75%), radial-gradient(80% 58% at 50% 100%, rgb(59, 134, 168), rgba(0, 0, 0, 0) 78%), linear-gradient(rgb(170, 213, 230) 0%, rgb(99, 173…",
+   "borderRadius": "50%"
+  }
+ ],
+ "rootVars": {
+  ":root --bg": "#050505",
+  ":root --panel": "#0A0A0B",
+  ":root --surface": "#070708",
+  ":root --raised": "#0F1011",
+  ":root --raised-2": "#141517",
+  ":root --hover": "rgba(255,255,255,.035)",
+  ":root --press": "rgba(255,255,255,.065)",
+  ":root --line": "rgba(255,255,255,.06)",
+  ":root --line-2": "rgba(255,255,255,.095)",
+  ":root --line-3": "rgba(255,255,255,.15)",
+  ":root --fg": "#EDEDEF",
+  ":root --fg-t": "#D6D6DB",
+  ":root --fg-2": "#A0A0A8",
+  ":root --fg-3": "#6D6D76",
+  ":root --fg-4": "#46464D",
+  ":root --accent": "#AAB9FF",
+  ":root --sel": "rgba(170,185,255,.10)",
+  ":root --ok": "#6EBE8D",
+  ":root --warn": "#D5A259",
+  ":root --err": "#E0685F",
+  ":root --face": "#121216",
+  ":root --f": "\"Geist\",-apple-system,BlinkMacSystemFont,\"SF Pro Text\",\"Inter\",system-ui,sans-serif",
+  ":root --mono": "\"Geist Mono\",ui-monospace,\"SF Mono\",Menlo,Consolas,monospace",
+  ":root --ease": "cubic-bezier(.2,.8,.2,1)",
+  ":root --ease-io": "cubic-bezier(.6,0,.3,1)",
+  ":root --spring": "cubic-bezier(.3,1.2,.5,1)",
+  ":root --nav-w": "224px",
+  ":root --insp-w": "316px",
+  ":root --bp-h": "min(208px,30vh)"
+ },
+ "hover": [
+  {
+   "text": "",
+   "transition": "background 0.12s, color 0.12s",
+   "changed": {
+    "bg": [
+     "rgba(0, 0, 0, 0)",
+     "rgba(255, 255, 255, 0.035)"
+    ],
+    "c": [
+     "rgb(109, 109, 118)",
+     "rgb(237, 237, 239)"
+    ],
+    "bd": [
+     "rgb(109, 109, 118)",
+     "rgb(237, 237, 239)"
+    ]
+   }
+  },
+  {
+   "text": "Opus 5.5",
+   "transition": "background 0.12s, color 0.12s",
+   "changed": {
+    "bg": [
+     "rgba(0, 0, 0, 0)",
+     "rgba(255, 255, 255, 0.035)"
+    ],
+    "c": [
+     "rgb(160, 160, 168)",
+     "rgb(237, 237, 239)"
+    ],
+    "bd": [
+     "rgb(160, 160, 168)",
+     "rgb(237, 237, 239)"
+    ]
+   }
+  },
+  {
+   "text": "",
+   "transition": "background 0.12s, color 0.12s",
+   "changed": {
+    "bg": [
+     "rgba(0, 0, 0, 0)",
+     "rgba(255, 255, 255, 0.035)"
+    ]
+   }
+  },
+  {
+   "text": "SD",
+   "transition": "all",
+   "changed": {}
+  },
+  {
+   "text": "Home",
+   "transition": "background 0.12s, color 0.12s",
+   "changed": {}
+  }
+ ]
+}

@@ -113,8 +113,8 @@ This is the order every Sellify UI task follows. It was distilled from the 14-20
 - **RULE** [founder] Hint and error text sits a small consistent gap (about 6px) below its field, never touching it.
   **Why** "below input fields there should be a little gap, not literally nothing".
   **Applies to** all. **Check** gap between a field's bottom and its hint is 4-8px. **Source** founder, 2026-10-21
-- **RULE** [founder] Media review grids show images at their real aspect ratio and are designed for volume (1, 3, 12, 20+), with aligned actions, a counter and bulk approve; long status or error messages live in one bordered status box and never shift the actions.
-  **Why** "the image reviews with their size and what if there would be more and aspect ratio... the layout with errors, it fucks it up".
+- **RULE** [founder] (REVISED 2026-10-22) Media review grids use ONE standard tile ratio per grid (the kit 9:16 for video frames, 3:4 for set or sheet images), object-fit cover, full image only in the enlarge lightbox; empty, failed and making tiles are the same size. Grids are designed for volume (1, 3, 12, 20+), with aligned actions, a counter and bulk approve; long status or error messages live in one bordered status box and never shift the actions.
+  **Why** "the image reviews with their size and what if there would be more and aspect ratio... the layout with errors, it fucks it up"; then on avatars: "real aspect ratio feels stupid... have a normal aspect ratio like as we have for videos" (mixed real ratios made ragged rows).
   **Applies to** Sellify. **Check** grid screenshots at 3, 12 and 20 items, plus a tile with a long error. **Source** founder, 2026-10-21
 - **RULE** [founder] No native, unstyled media controls: audio and video players use the kit player (round play button, thin progress, tabular time).
   **Why** "is there a way to style that audio too?".
@@ -125,3 +125,7 @@ This is the order every Sellify UI task follows. It was distilled from the 14-20
 - **RULE** [founder] Fields are never white on white: a field on a white surface (card, table, dialog) is grey with a 1px border.
   **Why** "the input fields white on white is not our thing" (the shot-plan model selects).
   **Applies to** Sellify. **Check** a field's background differs from its parent surface. **Source** founder, 2026-10-21
+
+- **RULE** [founder] No double borders: every frame, placeholder, tile and box draws exactly one 1px edge (never an outer ring plus an inner border or inset shadow).
+  **Why** "check your double borders, they're a bit fucked up on some components - no double borders" (the avatar placeholder frame, 2026-10-22).
+  **Applies to** all. **Check** a computed scan for elements where border and box-shadow ring, or a nested element's border, coincide. **Source** founder, 2026-10-22

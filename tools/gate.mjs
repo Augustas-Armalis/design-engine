@@ -349,6 +349,46 @@ const census = (cfg) => {
   res.videos = [...document.querySelectorAll('video')].map((v) => { const r = v.getBoundingClientRect(); return { src: (v.currentSrc || v.querySelector('source')?.src || '').split('/').pop(), inFold: r.bottom > 0 && r.top < H && r.width > 0, playing: !v.paused } })
   const bodyP = [...document.querySelectorAll('p, li')].filter((e) => e.getBoundingClientRect().width > 0 && e.textContent.trim().length > 90).map((e) => parseFloat(getComputedStyle(e).fontSize)).sort((a, b) => a - b)
   res.bodyPx = bodyP.length ? bodyP[Math.floor(bodyP.length / 2)] : null
+  // ---- centring (founder 2026-10-22: "you miss that always centering"): content of every control, pill, chip, badge and
+  // avatar must sit centred in its box. Content box = union of text Range rects (font content area) + svg/img boxes.
+  // Vertical: always. Horizontal: when the box intends centring (justify/text-align centre, icon-only, square/circle).
+  // Clipped: content spilling outside an overflow-hidden box (the clipped avatar initials). ----
+  const cands = all.filter((el) => {
+    if (el.closest('[inert], [aria-hidden="true"]') || el.matches('input, textarea, select, svg *, [role=switch], [role=slider], [aria-checked]')) return false // switches/sliders place their knob by state, not centred
+    const r = el.getBoundingClientRect(); if (!(r.width > 0 && r.top < H && r.bottom > 0 && r.height >= 12 && r.height <= 64 && r.width <= 420)) return false
+    const st = getComputedStyle(el), bgA = rgba(st.backgroundColor)[3], ring = parseShadow(st.boxShadow).some((l) => !l.blur && l.spread > 0) || borderPx(st) >= 0.5
+    const boxed = bgA > 0.04 || st.backgroundImage !== 'none' || ring
+    return boxed && (el.matches('button, a, [role=button], [role=tab]') || parseFloat(st.borderTopLeftRadius) >= 3)
+  })
+  const off = [], offX = [], clipped = []
+  for (const el of cands) {
+    const r = el.getBoundingClientRect(), st = getComputedStyle(el)
+    let x0 = 1e9, y0 = 1e9, x1 = -1e9, y1 = -1e9, n = 0, onlyIcon = true
+    const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT)
+    for (let t = walker.nextNode(); t; t = walker.nextNode()) {
+      if (!t.textContent.trim() || t.parentElement.closest('svg')) continue
+      const rg = document.createRange(); rg.selectNodeContents(t)
+      for (const q of rg.getClientRects()) if (q.width > 0) { x0 = Math.min(x0, q.left); y0 = Math.min(y0, q.top); x1 = Math.max(x1, q.right); y1 = Math.max(y1, q.bottom); n++; onlyIcon = false }
+    }
+    // small solid dots/swatches (status dots, legend marks) count as content
+    for (const g of el.querySelectorAll('*')) { if (g.children.length || g.closest('svg')) continue; const q = g.getBoundingClientRect(), gs = getComputedStyle(g); if (q.width > 0 && q.width <= 12 && q.height <= 12 && rgba(gs.backgroundColor)[3] > 0.3) { x0 = Math.min(x0, q.left); y0 = Math.min(y0, q.top); x1 = Math.max(x1, q.right); y1 = Math.max(y1, q.bottom); n++ } }
+    for (const g of el.querySelectorAll('svg, img')) { if (g.parentElement.closest('svg')) continue; const q = g.getBoundingClientRect(); if (q.width > 0 && q.width < r.width + 1) { x0 = Math.min(x0, q.left); y0 = Math.min(y0, q.top); x1 = Math.max(x1, q.right); y1 = Math.max(y1, q.bottom); n++ } }
+    if (!n) continue
+    // nested boxed children own their own centring: skip parents whose content is mostly another candidate
+    if (cands.some((c) => c !== el && el.contains(c))) continue // a box holding other checked boxes is a container, not a control
+    const dy = (y0 + y1) / 2 - (r.top + r.height / 2), dx = (x0 + x1) / 2 - (r.left + r.width / 2)
+    const name = `${tag(el)} "${txt(el).slice(0, 16)}" h${Math.round(r.height)}`
+    const grid = st.display.includes('grid'), flex = st.display.includes('flex'), col = flex && st.flexDirection.startsWith('column')
+    // multi-line blocks laid out top-down (event cards, list items) are top-aligned on purpose: judge them only when they ask for centring
+    const wantY = !col || st.justifyContent === 'center'
+    const wantX = onlyIcon || (flex && !col && st.justifyContent === 'center') || (col && st.alignItems === 'center') || (grid && (st.justifyItems.includes('center') || st.justifyContent === 'center')) || (!flex && !grid && st.textAlign === 'center') || Math.abs(r.width - r.height) < 2
+    if (wantY && Math.abs(dy) > 1.01) off.push(`${name} dy ${dy.toFixed(1)}px`)
+    if (wantX && Math.abs(dx) > 1.01) offX.push(`${name} dx ${dx.toFixed(1)}px`)
+    // ellipsis truncation reports the full text width: judge clipping horizontally only where nothing truncates on purpose
+    const ellip = [el, ...el.querySelectorAll('*')].some((d) => getComputedStyle(d).textOverflow === 'ellipsis')
+    if (st.overflow !== 'visible' && ((!ellip && (x0 < r.left - 0.5 || x1 > r.right + 0.5)) || y0 < r.top - 0.5 || y1 > r.bottom + 0.5)) clipped.push(name)
+  }
+  res.centring = { checked: cands.length, off, offX, clipped }
   return res
 }
 
@@ -516,6 +556,10 @@ const census_buttons = (list, label, regionTest = () => true) => {
   add('buttons', `${label}.primary-recipe`, ok(recipes.length <= 1), recipes.length, 'every primary CTA shares one computed recipe (radius, height, background, shadow)', recipes.slice(0, 4).map((r) => `${r} (${prim.find((b) => b.recipe === r).text})`))
   return prim
 }
+// centring census runs for every kind
+add('align', 'align.vertical-centre', ok(!m.centring.off.length), `${m.centring.off.length}/${m.centring.checked}`, 'content of every control, pill, chip, badge and avatar sits vertically centred (<= 1px)', m.centring.off.slice(0, 8))
+add('align', 'align.horizontal-centre', ok(!m.centring.offX.length), `${m.centring.offX.length}/${m.centring.checked}`, 'centred boxes (icon-only, square, circle, justify/text-align centre) centre their content horizontally (<= 1px)', m.centring.offX.slice(0, 8))
+add('align', 'align.clipped', ok(!m.centring.clipped.length), m.centring.clipped.length, 'no content clipped by its own box (initials, labels)', m.centring.clipped.slice(0, 8))
 const foldPrim = census_buttons(m.buttons, 'fold')
 if (site?.pageButtons) census_buttons(site.pageButtons, 'page')
 const navPrim = m.buttons.filter((b) => b.role === 'primary' && b.nav)

@@ -1,0 +1,805 @@
+{
+ "title": "Knowspace",
+ "url": "https://knowspace.si/",
+ "viewport": [
+  1440,
+  900
+ ],
+ "scrollHeight": 900,
+ "bodyBg": "rgb(248, 248, 246)",
+ "htmlBg": "rgba(0, 0, 0, 0)",
+ "framework": {
+  "next": false,
+  "react": true,
+  "framer": false,
+  "nuxt": false,
+  "svelte": false,
+  "astro": false,
+  "vite": true,
+  "tailwind": false,
+  "webflow": false,
+  "canvas": 0,
+  "video": 0,
+  "svg": 41,
+  "motionAttrs": 185,
+  "generator": null
+ },
+ "scripts": [
+  "/assets/index-Ghx5aQb-.js"
+ ],
+ "loadedFonts": [
+  "Geist Variable 100 900 normal",
+  "Newsreader Variable 200 800 normal",
+  "Newsreader Variable 200 800 italic"
+ ],
+ "fontTuples": [
+  [
+   "\"Newsreader Variable\" 150px 380",
+   24
+  ],
+  [
+   "\"Geist Variable\" 26px 500",
+   24
+  ],
+  [
+   "\"Geist Variable\" 23.856px 600",
+   13
+  ],
+  [
+   "\"Geist Variable\" 15px 560",
+   11
+  ],
+  [
+   "\"Newsreader Variable\" 63.7313px 380",
+   9
+  ],
+  [
+   "\"Geist Variable\" 13px 500",
+   3
+  ],
+  [
+   "\"Geist Variable\" 19.88px 620",
+   2
+  ],
+  [
+   "\"Geist Variable\" 16.898px 400",
+   2
+  ],
+  [
+   "\"Geist Variable\" 12.5px 500",
+   2
+  ],
+  [
+   "\"Geist Variable\" 13.5px 560",
+   2
+  ],
+  [
+   "\"Newsreader Variable\" 60px 360",
+   2
+  ],
+  [
+   "\"Geist Variable\" 18.5831px 460",
+   1
+  ],
+  [
+   "\"Geist Variable\" 15.0186px 600",
+   1
+  ],
+  [
+   "\"Newsreader Variable\" 68.4074px 360",
+   1
+  ],
+  [
+   "\"Geist Variable\" 15.5471px 600",
+   1
+  ],
+  [
+   "\"Newsreader Variable\" 74.3624px 360",
+   1
+  ],
+  [
+   "\"Geist Variable\" 16.9005px 600",
+   1
+  ],
+  [
+   "\"Newsreader Variable\" 70.1609px 360",
+   1
+  ],
+  [
+   "\"Geist Variable\" 15.9457px 600",
+   1
+  ],
+  [
+   "\"Geist Variable\" 16.2711px 600",
+   1
+  ],
+  [
+   "\"Geist Variable\" 20.0504px 640",
+   1
+  ],
+  [
+   "\"Geist Variable\" 18.46px 400",
+   1
+  ],
+  [
+   "\"Geist Variable\" 17.04px 560",
+   1
+  ],
+  [
+   "\"Geist Variable\" 19.4024px 640",
+   1
+  ]
+ ],
+ "radii": [
+  [
+   "99px",
+   19
+  ],
+  [
+   "3px",
+   17
+  ],
+  [
+   "50%",
+   13
+  ],
+  [
+   "1485px",
+   10
+  ],
+  [
+   "999px",
+   9
+  ],
+  [
+   "31.808px",
+   4
+  ],
+  [
+   "36.352px",
+   2
+  ],
+  [
+   "26.128px",
+   2
+  ],
+  [
+   "26.8879px",
+   2
+  ],
+  [
+   "22.1903px",
+   2
+  ],
+  [
+   "24.0662px",
+   2
+  ],
+  [
+   "23.1791px",
+   2
+  ],
+  [
+   "26.4729px",
+   2
+  ],
+  [
+   "23.6878px",
+   2
+  ],
+  [
+   "24.5411px",
+   2
+  ],
+  [
+   "21.5731px",
+   2
+  ],
+  [
+   "21.5812px",
+   2
+  ],
+  [
+   "26.9642px",
+   2
+  ]
+ ],
+ "shadows": [
+  [
+   "rgba(20, 20, 19, 0.1) 0px 0px 0px 0.5px, rgba(30, 28, 22, 0.04) 0px 1px 2px 0px, rgba(30, 28, 22, 0.06) 0px 6px 16px 0px, rgba(30, 28, 22, 0.05) 0px 18px 40px 0px",
+   94
+  ],
+  [
+   "rgba(20, 20, 19, 0.1) 0px 0px 0px 0.5px, rgba(30, 28, 22, 0.04) 0px 1px 1px 0px, rgba(30, 28, 22, 0.04) 0px 2px 6px 0px",
+   14
+  ],
+  [
+   "rgba(20, 20, 19, 0.16) 0px 0px 0px 0.5px, rgba(30, 28, 22, 0.04) 0px 1px 1px 0px, rgba(30, 28, 22, 0.04) 0px 2px 6px 0px",
+   10
+  ],
+  [
+   "rgba(20, 20, 19, 0.1) 0px 0px 0px 0.5px inset",
+   7
+  ],
+  [
+   "rgba(20, 20, 19, 0.1) 0px 0px 0px 0.5px, rgba(30, 28, 22, 0.03) 0px 1px 1px 0px, rgba(30, 28, 22, 0.07) 0px 8px 24px 0px, rgba(30, 28, 22, 0.06) 0px 24px 60px 0px",
+   5
+  ],
+  [
+   "rgba(0, 0, 0, 0.12) 0px 9.088px 27.264px 0px",
+   2
+  ],
+  [
+   "rgb(255, 255, 255) 0px 0px 0px 8.52px, rgba(20, 20, 19, 0.1) 0px 0px 0px 9.02px, rgba(30, 28, 22, 0.04) 0px 1px 2px 0px, rgba(30, 28, 22, 0.06) 0px 6px 16px 0px, rgba(30, 28, 22, 0.05) 0px 18px 40px 0px",
+   2
+  ],
+  [
+   "rgba(255, 255, 255, 0.55) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.14) 0px -2.40298px 5.60696px 0px inset, oklab(0.665568 0.13726 0.0551457 / 0.7) 0px 7.20895px 14.4179px -4.80597px, rgba(0, 0, 0, 0.08) 0px 1.92239px 3.20398px 0px",
+   1
+  ],
+  [
+   "rgb(255, 255, 255) 0px 0px 0px 6.10166px, rgba(20, 20, 19, 0.1) 0px 0px 0px 6.60166px, rgba(30, 28, 22, 0.04) 0px 1px 2px 0px, rgba(30, 28, 22, 0.06) 0px 6px 16px 0px, rgba(30, 28, 22, 0.05) 0px 18px 40px 0px",
+   1
+  ],
+  [
+   "rgba(0, 0, 0, 0.12) 0px 6.816px 20.448px 0px",
+   1
+  ],
+  [
+   "rgb(255, 255, 255) 0px 0px 0px 5.06624px, rgba(20, 20, 19, 0.1) 0px 0px 0px 5.56624px, rgba(30, 28, 22, 0.04) 0px 1px 2px 0px, rgba(30, 28, 22, 0.06) 0px 6px 16px 0px, rgba(30, 28, 22, 0.05) 0px 18px 40px 0px",
+   1
+  ],
+  [
+   "rgba(255, 255, 255, 0.55) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.14) 0px -2.39637px 5.59153px 0px inset, oklab(0.588447 0.0120504 -0.198098 / 0.7) 0px 7.1891px 14.3782px -4.79274px, rgba(0, 0, 0, 0.08) 0px 1.91709px 3.19516px 0px",
+   1
+  ]
+ ],
+ "foldColours": [
+  [
+   "rgb(20, 20, 19)",
+   1194
+  ],
+  [
+   "rgb(255, 255, 255)",
+   113
+  ],
+  [
+   "rgb(95, 94, 89)",
+   64
+  ],
+  [
+   "rgb(243, 242, 238)",
+   59
+  ],
+  [
+   "rgb(58, 58, 55)",
+   32
+  ],
+  [
+   "rgb(247, 245, 240)",
+   8
+  ],
+  [
+   "rgb(244, 239, 230)",
+   8
+  ],
+  [
+   "rgba(255, 255, 255, 0.72)",
+   8
+  ],
+  [
+   "rgb(249, 0, 0)",
+   4
+  ],
+  [
+   "rgb(251, 250, 248)",
+   2
+  ],
+  [
+   "rgb(41, 39, 39)",
+   2
+  ],
+  [
+   "rgb(188, 188, 188)",
+   1
+  ],
+  [
+   "rgb(77, 61, 55)",
+   1
+  ],
+  [
+   "rgb(196, 196, 198)",
+   1
+  ],
+  [
+   "rgb(171, 181, 180)",
+   1
+  ],
+  [
+   "rgb(106, 53, 27)",
+   1
+  ],
+  [
+   "rgb(118, 125, 114)",
+   1
+  ],
+  [
+   "rgb(116, 93, 72)",
+   1
+  ],
+  [
+   "rgb(112, 97, 111)",
+   1
+  ],
+  [
+   "rgb(44, 84, 100)",
+   1
+  ]
+ ],
+ "headings": [
+  {
+   "tag": "h1",
+   "cls": "greeting-title",
+   "text": "Good morning.",
+   "x": 672.8,
+   "y": 429.4,
+   "w": 94.4,
+   "h": 14.8,
+   "fontFamily": "\"Newsreader Variable\", \"Iowan Old Style\", Georgia, serif",
+   "fontSize": "73.6px",
+   "fontWeight": "360",
+   "letterSpacing": "-2.576px",
+   "lineHeight": "72.128px",
+   "color": "rgb(20, 20, 19)"
+  },
+  {
+   "tag": "h1",
+   "cls": "intro-title",
+   "text": "There is always something\nworth knowing.",
+   "x": 406.6,
+   "y": 365.3,
+   "w": 626.8,
+   "h": 124.8,
+   "fontFamily": "\"Newsreader Variable\", \"Iowan Old Style\", Georgia, serif",
+   "fontSize": "60px",
+   "fontWeight": "360",
+   "letterSpacing": "-2.1px",
+   "lineHeight": "62.4px",
+   "color": "rgb(20, 20, 19)"
+  }
+ ],
+ "buttons": [
+  {
+   "tag": "button",
+   "cls": "ko ko--fact",
+   "text": "Something interesting\nRed blood cells eject their ",
+   "x": -300.4,
+   "y": -345.9,
+   "w": 66,
+   "h": 61.9,
+   "fontFamily": "\"Geist Variable\", \"SF Pro Text\", system-ui, -apple-system, sans-serif",
+   "fontSize": "16.0199px",
+   "fontWeight": "400",
+   "lineHeight": "23.2288px",
+   "color": "rgb(20, 20, 19)",
+   "border": "0px none rgb(20, 20, 19)",
+   "transition": "transform 0.5s cubic-bezier(0.22, 1, 0.36, 1)"
+  },
+  {
+   "tag": "button",
+   "cls": "ko ko--question",
+   "text": "Space\nWhy we only ever see one side of the Moon\nFi",
+   "x": 699.1,
+   "y": -295.4,
+   "w": 68.4,
+   "h": 44.2,
+   "fontFamily": "\"Geist Variable\", \"SF Pro Text\", system-ui, -apple-system, sans-serif",
+   "fontSize": "14.6442px",
+   "fontWeight": "400",
+   "lineHeight": "21.2341px",
+   "color": "rgb(20, 20, 19)",
+   "border": "0px none rgb(20, 20, 19)",
+   "transition": "transform 0.5s cubic-bezier(0.22, 1, 0.36, 1)"
+  },
+  {
+   "tag": "button",
+   "cls": "ko ko--question",
+   "text": "Science\nWhy does the ocean look blue?\nFind out",
+   "x": 1191.9,
+   "y": -411.4,
+   "w": 76.7,
+   "h": 49.1,
+   "fontFamily": "\"Geist Variable\", \"SF Pro Text\", system-ui, -apple-system, sans-serif",
+   "fontSize": "16.5357px",
+   "fontWeight": "400",
+   "lineHeight": "23.9768px",
+   "color": "rgb(20, 20, 19)",
+   "border": "0px none rgb(20, 20, 19)",
+   "transition": "transform 0.5s cubic-bezier(0.22, 1, 0.36, 1)"
+  },
+  {
+   "tag": "button",
+   "cls": "ko ko--circle",
+   "text": "Science\nWhy the sky turns red at sunset",
+   "x": 1091.1,
+   "y": -332.3,
+   "w": 42.5,
+   "h": 53.3,
+   "fontFamily": "\"Geist Variable\", \"SF Pro Text\", system-ui, -apple-system, sans-serif",
+   "fontSize": "13.51px",
+   "fontWeight": "400",
+   "lineHeight": "19.5895px",
+   "color": "rgb(20, 20, 19)",
+   "border": "0px none rgb(20, 20, 19)",
+   "transition": "transform 0.5s cubic-bezier(0.22, 1, 0.36, 1)"
+  },
+  {
+   "tag": "button",
+   "cls": "ko ko--fact",
+   "text": "Something interesting\nIn a 2021 Google study, only",
+   "x": 1756,
+   "y": -303,
+   "w": 67.3,
+   "h": 63.3,
+   "fontFamily": "\"Geist Variable\", \"SF Pro Text\", system-ui, -apple-system, sans-serif",
+   "fontSize": "15.9758px",
+   "fontWeight": "400",
+   "lineHeight": "23.1649px",
+   "color": "rgb(20, 20, 19)",
+   "border": "0px none rgb(20, 20, 19)",
+   "transition": "transform 0.5s cubic-bezier(0.22, 1, 0.36, 1)"
+  },
+  {
+   "tag": "button",
+   "cls": "ko ko--object",
+   "text": "Animals\nThe salamander that regrows its own legs\nL",
+   "x": -181.2,
+   "y": 102.8,
+   "w": 72,
+   "h": 56.9,
+   "fontFamily": "\"Geist Variable\", \"SF Pro Text\", system-ui, -apple-system, sans-serif",
+   "fontSize": "14.7098px",
+   "fontWeight": "400",
+   "lineHeight": "21.3292px",
+   "color": "rgb(20, 20, 19)",
+   "border": "0px none rgb(20, 20, 19)",
+   "transition": "transform 0.5s cubic-bezier(0.22, 1, 0.36, 1)"
+  },
+  {
+   "tag": "button",
+   "cls": "ko ko--type",
+   "text": "2–4 million\nSweat glands\nHuman body\nFresh sweat ha",
+   "x": 225,
+   "y": -40.9,
+   "w": 77.9,
+   "h": 61.7,
+   "fontFamily": "\"Geist Variable\", \"SF Pro Text\", system-ui, -apple-system, sans-serif",
+   "fontSize": "14.2648px",
+   "fontWeight": "400",
+   "lineHeight": "20.684px",
+   "color": "rgb(20, 20, 19)",
+   "border": "0px none rgb(20, 20, 19)",
+   "transition": "transform 0.5s cubic-bezier(0.22, 1, 0.36, 1)"
+  },
+  {
+   "tag": "button",
+   "cls": "ko ko--question",
+   "text": "Space\nThe planet closest to the Sun has ice\nFind o",
+   "x": 685.9,
+   "y": -38.6,
+   "w": 74.4,
+   "h": 48.1,
+   "fontFamily": "\"Geist Variable\", \"SF Pro Text\", system-ui, -apple-system, sans-serif",
+   "fontSize": "15.9474px",
+   "fontWeight": "400",
+   "lineHeight": "23.1237px",
+   "color": "rgb(20, 20, 19)",
+   "border": "0px none rgb(20, 20, 19)",
+   "transition": "transform 0.5s cubic-bezier(0.22, 1, 0.36, 1)"
+  },
+  {
+   "tag": "button",
+   "cls": "ko ko--question",
+   "text": "Science\nJiggling specks in water helped prove atom",
+   "x": 1172.9,
+   "y": -62.5,
+   "w": 71.6,
+   "h": 46.3,
+   "fontFamily": "\"Geist Variable\", \"SF Pro Text\", system-ui, -apple-system, sans-serif",
+   "fontSize": "15.3217px",
+   "fontWeight": "400",
+   "lineHeight": "22.2164px",
+   "color": "rgb(20, 20, 19)",
+   "border": "0px none rgb(20, 20, 19)",
+   "transition": "transform 0.5s cubic-bezier(0.22, 1, 0.36, 1)"
+  },
+  {
+   "tag": "button",
+   "cls": "ko ko--tile",
+   "text": "Technology\nThe first commercial microprocessor had",
+   "x": 1752.5,
+   "y": -33.2,
+   "w": 68.6,
+   "h": 38.4,
+   "fontFamily": "\"Geist Variable\", \"SF Pro Text\", system-ui, -apple-system, sans-serif",
+   "fontSize": "13.9442px",
+   "fontWeight": "400",
+   "lineHeight": "20.2191px",
+   "color": "rgb(20, 20, 19)",
+   "border": "0px none rgb(20, 20, 19)",
+   "transition": "transform 0.5s cubic-bezier(0.22, 1, 0.36, 1)"
+  },
+  {
+   "tag": "button",
+   "cls": "ko ko--polaroid",
+   "text": "Trilobites looked out through crystal lenses",
+   "x": -183.4,
+   "y": 392.3,
+   "w": 49.3,
+   "h": 57.9,
+   "fontFamily": "\"Geist Variable\", \"SF Pro Text\", system-ui, -apple-system, sans-serif",
+   "fontSize": "13.5644px",
+   "fontWeight": "400",
+   "lineHeight": "19.6684px",
+   "color": "rgb(20, 20, 19)",
+   "border": "0px none rgb(20, 20, 19)",
+   "transition": "transform 0.5s cubic-bezier(0.22, 1, 0.36, 1)"
+  },
+  {
+   "tag": "button",
+   "cls": "ko ko--fact",
+   "text": "One small thing\nMost sea stars have a small compou",
+   "x": -231.8,
+   "y": 490.6,
+   "w": 63.1,
+   "h": 59.1,
+   "fontFamily": "\"Geist Variable\", \"SF Pro Text\", system-ui, -apple-system, sans-serif",
+   "fontSize": "15.324px",
+   "fontWeight": "400",
+   "lineHeight": "22.2198px",
+   "color": "rgb(20, 20, 19)",
+   "border": "0px none rgb(20, 20, 19)",
+   "transition": "transform 0.5s cubic-bezier(0.22, 1, 0.36, 1)"
+  },
+  {
+   "tag": "button",
+   "cls": "ko ko--polaroid",
+   "text": "Tree rings keep a climate diary 12,000 years long",
+   "x": 73.1,
+   "y": 406.3,
+   "w": 50.1,
+   "h": 58.6,
+   "fontFamily": "\"Geist Variable\", \"SF Pro Text\", system-ui, -apple-system, sans-serif",
+   "fontSize": "13.5247px",
+   "fontWeight": "400",
+   "lineHeight": "19.6108px",
+   "color": "rgb(20, 20, 19)",
+   "border": "0px none rgb(20, 20, 19)",
+   "transition": "transform 0.5s cubic-bezier(0.22, 1, 0.36, 1)"
+  },
+  {
+   "tag": "button",
+   "cls": "ko ko--fact",
+   "text": "Keep this one\nThe largest hailstone recorded in th",
+   "x": 116.2,
+   "y": 276.5,
+   "w": 63.5,
+   "h": 59.6,
+   "fontFamily": "\"Geist Variable\", \"SF Pro Text\", system-ui, -apple-system, sans-serif",
+   "fontSize": "15.2366px",
+   "fontWeight": "400",
+   "lineHeight": "22.0931px",
+   "color": "rgb(20, 20, 19)",
+   "border": "0px none rgb(20, 20, 19)",
+   "transition": "transform 0.5s cubic-bezier(0.22, 1, 0.36, 1)"
+  }
+ ],
+ "cards": [],
+ "gradients": [
+  {
+   "tag": "span",
+   "cls": "candy",
+   "text": "",
+   "x": -295.8,
+   "y": -298.1,
+   "w": 9.9,
+   "h": 9.9,
+   "backgroundImage": "radial-gradient(120% 90% at 30% 0%, rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0) 55%), linear-gradient(165deg, oklab(0.739142 0.107073 0.0430181) 0%, rgb(224, 106, 106) 52%, oklab(0.545766 0.112553 0.0452195) 100%)",
+   "borderRadius": "15.2189px"
+  },
+  {
+   "tag": "span",
+   "cls": "notif",
+   "text": "Why did I come in here?\nnow\nYour brain would like ",
+   "x": 148.4,
+   "y": -343.3,
+   "w": 119.8,
+   "h": 66.6,
+   "backgroundImage": "linear-gradient(rgb(246, 246, 247), rgb(236, 236, 238))"
+  },
+  {
+   "tag": "span",
+   "cls": "notif-card notif-1",
+   "text": "Why did I come in here?\nnow\nYour brain would like ",
+   "x": 155.6,
+   "y": -328.3,
+   "w": 105.4,
+   "h": 18.5,
+   "backgroundImage": "linear-gradient(rgb(138, 138, 140), rgb(121, 121, 123))",
+   "borderRadius": "26.128px"
+  },
+  {
+   "tag": "span",
+   "cls": "notif-card notif-2",
+   "text": "Walked through a doorway\n4s ago",
+   "x": 160.4,
+   "y": -317.8,
+   "w": 95.9,
+   "h": 18.1,
+   "backgroundImage": "linear-gradient(rgb(163, 163, 165), rgb(148, 148, 150))",
+   "borderRadius": "26.128px"
+  },
+  {
+   "tag": "span",
+   "cls": "ko-ed-media is-object",
+   "text": "Psychology",
+   "x": 51,
+   "y": -335.5,
+   "w": 61.1,
+   "h": 42.8,
+   "backgroundImage": "radial-gradient(circle at 50% 45%, rgb(255, 255, 255), rgb(243, 242, 238) 85%)"
+  },
+  {
+   "tag": "span",
+   "cls": "candy",
+   "text": "",
+   "x": 1760.7,
+   "y": -255.3,
+   "w": 10.1,
+   "h": 10.1,
+   "backgroundImage": "radial-gradient(120% 90% at 30% 0%, rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0) 55%), linear-gradient(165deg, oklab(0.678987 0.00940938 -0.154512) 0%, rgb(91, 107, 240) 52%, oklab(0.482527 0.00988137 -0.16244) 100%…",
+   "borderRadius": "15.177px"
+  },
+  {
+   "tag": "span",
+   "cls": "ko-panel-art",
+   "text": "",
+   "x": -262.7,
+   "y": 59.1,
+   "w": 52.9,
+   "h": 50.4,
+   "backgroundImage": "radial-gradient(circle at 50% 42%, rgb(255, 255, 255), rgb(244, 243, 239) 80%)",
+   "borderRadius": "15.9923px"
+  },
+  {
+   "tag": "span",
+   "cls": "ta ta-bh",
+   "text": "Black holes",
+   "x": 689,
+   "y": 34.3,
+   "w": 108.9,
+   "h": 72.7,
+   "backgroundImage": "radial-gradient(circle at 50% 45%, rgb(35, 35, 32), rgb(18, 18, 17) 70%)"
+  },
+  {
+   "tag": "span",
+   "cls": "candy",
+   "text": "",
+   "x": -227.4,
+   "y": 536.3,
+   "w": 9.5,
+   "h": 9.5,
+   "backgroundImage": "radial-gradient(120% 90% at 30% 0%, rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0) 55%), linear-gradient(165deg, oklab(0.723953 -0.0730103 0.083108) 0%, rgb(110, 159, 58) 52%, oklab(0.529798 -0.076765 0.0873653) 100%)",
+   "borderRadius": "14.5578px"
+  },
+  {
+   "tag": "span",
+   "cls": "candy",
+   "text": "",
+   "x": 121.2,
+   "y": 322.6,
+   "w": 9.5,
+   "h": 9.5,
+   "backgroundImage": "radial-gradient(120% 90% at 30% 0%, rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0) 55%), linear-gradient(165deg, oklab(0.699746 -0.0876377 0.0487724) 0%, rgb(63, 154, 91) 52%, oklab(0.504349 -0.0921424 0.0512689) 100%…",
+   "borderRadius": "14.4748px"
+  },
+  {
+   "tag": "span",
+   "cls": "ko-ed-media is-object",
+   "text": "Everyday things",
+   "x": 1178.7,
+   "y": 277.2,
+   "w": 50.3,
+   "h": 35.1,
+   "backgroundImage": "radial-gradient(circle at 50% 45%, rgb(255, 255, 255), rgb(243, 242, 238) 85%)"
+  },
+  {
+   "tag": "span",
+   "cls": "candy",
+   "text": "",
+   "x": 1641.9,
+   "y": 567.4,
+   "w": 9.2,
+   "h": 9.2,
+   "backgroundImage": "radial-gradient(120% 90% at 30% 0%, rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0) 55%), linear-gradient(165deg, oklab(0.668046 -0.00635958 -0.0218177) 0%, rgb(109, 122, 138) 52%, oklab(0.471024 -0.00669625 -0.0229412…",
+   "borderRadius": "13.8972px"
+  }
+ ],
+ "rootVars": {
+  ":root --canvas": "#f8f8f6",
+  ":root --canvas-warm": "#f6f4f0",
+  ":root --paper": "#fff",
+  ":root --sunk": "#f3f2ee",
+  ":root --sunk-2": "#ecebe6",
+  ":root --ink": "#141413",
+  ":root --ink-2": "#3a3a37",
+  ":root --ink-3": "#5f5e59",
+  ":root --ink-4": "#74736d",
+  ":root --ink-5": "#c6c5bf",
+  ":root --line": "#1414131a",
+  ":root --line-2": "#14141329",
+  ":root --hair": ".5px",
+  ":root --blue": "#3b6fe0",
+  ":root --violet": "#7d5be0",
+  ":root --green": "#3f9a5b",
+  ":root --warm": "#d0683a",
+  ":root --jade": "#1d8667",
+  ":root --jade-hover": "#166b52",
+  ":root --jade-line": "#1d866752",
+  ":root --gr8r": "#f90000",
+  ":root --gr8r-hover": "#d40000",
+  ":root --glass": "#ffffffb8",
+  ":root --glass-strong": "#ffffffdb",
+  ":root --glass-blur": "saturate(1.6) blur(22px)",
+  ":root --r-12": "12px",
+  ":root --r-16": "16px",
+  ":root --r-24": "24px",
+  ":root --r-32": "32px",
+  ":root --r-pill": "999px",
+  ":root --s-4": "4px",
+  ":root --s-8": "8px",
+  ":root --s-12": "12px",
+  ":root --s-16": "16px",
+  ":root --s-24": "24px",
+  ":root --s-32": "32px",
+  ":root --s-48": "48px",
+  ":root --s-64": "64px",
+  ":root --s-96": "96px",
+  ":root --shadow-1": "0 1px 1px #1e1c160a, 0 2px 6px #1e1c160a",
+  ":root --shadow-2": "0 1px 2px #1e1c160a, 0 6px 16px #1e1c160f, 0 18px 40px #1e1c160d",
+  ":root --shadow-3": "0 2px 4px #1e1c160a, 0 12px 28px #1e1c1614, 0 32px 72px #1e1c1614",
+  ":root --shadow-float": "0 1px 1px #1e1c1608, 0 8px 24px #1e1c1612, 0 24px 60px #1e1c160f",
+  ":root --sans": "\"Geist Variable\", \"SF Pro Text\", system-ui, -apple-system, sans-serif",
+  ":root --serif": "\"Newsreader Variable\", \"Iowan Old Style\", Georgia, serif",
+  ":root --mono": "var(--sans)",
+  ":root --ease-out": "cubic-bezier(.22, 1, .36, 1)",
+  ":root --ease-spring": "cubic-bezier(.34, 1.36, .64, 1)",
+  ":root --ease-in-out": "cubic-bezier(.65, 0, .35, 1)"
+ },
+ "hover": [
+  {
+   "text": "Start exploring",
+   "transition": "background-color 0.2s, transform 0.25s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.25s",
+   "changed": {
+    "bg": [
+     "rgb(20, 20, 19)",
+     "rgb(43, 43, 41)"
+    ]
+   }
+  },
+  {
+   "text": "A product by\nGr8r Studio\n(opens in a new",
+   "transition": "all",
+   "changed": {
+    "c": [
+     "rgb(95, 94, 89)",
+     "rgb(22, 107, 82)"
+    ],
+    "bd": [
+     "rgb(95, 94, 89)",
+     "rgb(22, 107, 82)"
+    ]
+   }
+  }
+ ]
+}

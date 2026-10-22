@@ -1,0 +1,587 @@
+{
+ "title": "Savari – Transport & Workshop Management Platform",
+ "url": "https://savari.io/",
+ "viewport": [
+  1440,
+  900
+ ],
+ "scrollHeight": 10241,
+ "bodyBg": "rgb(253, 253, 253)",
+ "htmlBg": "rgba(0, 0, 0, 0)",
+ "framework": {
+  "next": false,
+  "react": true,
+  "framer": true,
+  "nuxt": false,
+  "svelte": false,
+  "astro": false,
+  "vite": false,
+  "tailwind": false,
+  "webflow": false,
+  "canvas": 7,
+  "video": 0,
+  "svg": 6,
+  "motionAttrs": 212,
+  "generator": "Framer 0da2bc6"
+ },
+ "scripts": [
+  "/script?v=2",
+  "/sites/591riuno5cwl7b67VfDOJ2/script_main.B5PXJKUO.mjs"
+ ],
+ "loadedFonts": [
+  "Geist 600 normal",
+  "Inter 400 normal",
+  "Inter 500 normal",
+  "Inter 600 normal",
+  "Geist Placeholder normal normal",
+  "Inter Placeholder normal normal"
+ ],
+ "fontTuples": [
+  [
+   "Inter 18px 500",
+   47
+  ],
+  [
+   "Inter 14px 500",
+   35
+  ],
+  [
+   "Inter 16px 400",
+   17
+  ],
+  [
+   "Inter 16px 500",
+   11
+  ],
+  [
+   "Inter 16px 600",
+   8
+  ],
+  [
+   "Geist 64px 600",
+   7
+  ],
+  [
+   "Inter 40px 500",
+   7
+  ],
+  [
+   "Inter 14px 400",
+   6
+  ],
+  [
+   "Inter 32px 500",
+   5
+  ],
+  [
+   "Inter 18px 400",
+   4
+  ],
+  [
+   "Inter 24px 500",
+   3
+  ]
+ ],
+ "radii": [
+  [
+   "8px",
+   24
+  ],
+  [
+   "19px",
+   15
+  ],
+  [
+   "20px",
+   11
+  ],
+  [
+   "16px",
+   9
+  ],
+  [
+   "2px",
+   8
+  ],
+  [
+   "10px",
+   6
+  ],
+  [
+   "4px",
+   4
+  ],
+  [
+   "12px",
+   2
+  ]
+ ],
+ "shadows": [],
+ "foldColours": [
+  [
+   "rgb(0, 0, 0)",
+   59
+  ],
+  [
+   "rgb(76, 76, 76)",
+   31
+  ],
+  [
+   "rgb(0, 0, 238)",
+   16
+  ],
+  [
+   "rgb(17, 22, 33)",
+   9
+  ],
+  [
+   "rgb(255, 255, 255)",
+   5
+  ],
+  [
+   "rgb(51, 51, 51)",
+   3
+  ],
+  [
+   "rgb(253, 253, 253)",
+   2
+  ],
+  [
+   "rgb(248, 51, 80)",
+   2
+  ],
+  [
+   "rgb(250, 248, 247)",
+   2
+  ],
+  [
+   "rgb(242, 242, 242)",
+   1
+  ],
+  [
+   "rgb(102, 102, 102)",
+   1
+  ]
+ ],
+ "headings": [
+  {
+   "tag": "h1",
+   "cls": "framer-text framer-styles-preset-1yzaykp",
+   "text": "The control centre for your coach operation.",
+   "x": 391.5,
+   "y": 207.6,
+   "w": 657,
+   "h": 128,
+   "fontFamily": "Geist, \"Geist Placeholder\", sans-serif",
+   "fontSize": "64px",
+   "fontWeight": "600",
+   "letterSpacing": "-1.28px",
+   "lineHeight": "64px",
+   "color": "rgb(17, 22, 33)"
+  },
+  {
+   "tag": "h2",
+   "cls": "framer-text framer-styles-preset-ppiahd",
+   "text": "The office side and the workshop side connected.",
+   "x": 425,
+   "y": 1546.4,
+   "w": 590,
+   "h": 96,
+   "fontFamily": "Inter, \"Inter Placeholder\", sans-serif",
+   "fontSize": "40px",
+   "fontWeight": "500",
+   "letterSpacing": "-1.2px",
+   "lineHeight": "48px",
+   "color": "rgb(0, 0, 0)"
+  },
+  {
+   "tag": "h2",
+   "cls": "framer-text framer-styles-preset-ppiahd",
+   "text": "Built for the way coach operators work.",
+   "x": 80,
+   "y": 3597,
+   "w": 509,
+   "h": 96,
+   "fontFamily": "Inter, \"Inter Placeholder\", sans-serif",
+   "fontSize": "40px",
+   "fontWeight": "500",
+   "letterSpacing": "-1.2px",
+   "lineHeight": "48px",
+   "color": "rgb(0, 0, 0)"
+  },
+  {
+   "tag": "h2",
+   "cls": "framer-text framer-styles-preset-ppiahd",
+   "text": "This is what running on savari looks like.",
+   "x": 340,
+   "y": 5440.6,
+   "w": 760,
+   "h": 48,
+   "fontFamily": "Inter, \"Inter Placeholder\", sans-serif",
+   "fontSize": "40px",
+   "fontWeight": "500",
+   "letterSpacing": "-1.2px",
+   "lineHeight": "48px",
+   "color": "rgb(0, 0, 0)"
+  },
+  {
+   "tag": "h2",
+   "cls": "framer-text framer-styles-preset-ppiahd",
+   "text": "Works with the tools you already use.",
+   "x": 340,
+   "y": 6454.2,
+   "w": 760,
+   "h": 48,
+   "fontFamily": "Inter, \"Inter Placeholder\", sans-serif",
+   "fontSize": "40px",
+   "fontWeight": "500",
+   "letterSpacing": "-1.2px",
+   "lineHeight": "48px",
+   "color": "rgb(0, 0, 0)"
+  },
+  {
+   "tag": "h2",
+   "cls": "framer-text framer-styles-preset-ppiahd",
+   "text": "Coach software, built by people who get the job.",
+   "x": 275,
+   "y": 7423.8,
+   "w": 890,
+   "h": 48,
+   "fontFamily": "Inter, \"Inter Placeholder\", sans-serif",
+   "fontSize": "40px",
+   "fontWeight": "500",
+   "letterSpacing": "-1.2px",
+   "lineHeight": "48px",
+   "color": "rgb(0, 0, 0)"
+  },
+  {
+   "tag": "h2",
+   "cls": "framer-text framer-styles-preset-ppiahd",
+   "text": "Real operations. Real results.",
+   "x": 80,
+   "y": 8409.7,
+   "w": 760,
+   "h": 48,
+   "fontFamily": "Inter, \"Inter Placeholder\", sans-serif",
+   "fontSize": "40px",
+   "fontWeight": "500",
+   "letterSpacing": "-1.2px",
+   "lineHeight": "48px",
+   "color": "rgb(0, 0, 0)"
+  },
+  {
+   "tag": "h2",
+   "cls": "framer-text framer-styles-preset-ppiahd",
+   "text": "Frequently asked questions",
+   "x": 154,
+   "y": 9162.3,
+   "w": 420,
+   "h": 96,
+   "fontFamily": "Inter, \"Inter Placeholder\", sans-serif",
+   "fontSize": "40px",
+   "fontWeight": "500",
+   "letterSpacing": "-1.2px",
+   "lineHeight": "48px",
+   "color": "rgb(0, 0, 0)"
+  }
+ ],
+ "buttons": [],
+ "cards": [
+  {
+   "tag": "div",
+   "cls": "framer-uox64b",
+   "text": "AI e-mail\n\nTurn email enquires to quotes",
+   "x": 80,
+   "y": 3753,
+   "w": 550,
+   "h": 467,
+   "fontFamily": "sans-serif",
+   "fontSize": "12px",
+   "fontWeight": "400",
+   "color": "rgb(0, 0, 0)",
+   "backgroundColor": "rgb(255, 255, 255)",
+   "borderRadius": "10px",
+   "border": "0px none rgb(0, 0, 0)",
+   "transition": "all"
+  },
+  {
+   "tag": "div",
+   "cls": "framer-fp1e66",
+   "text": "AI voice\n\nLet AI make and receive calls, confirm b",
+   "x": 642,
+   "y": 3753,
+   "w": 718,
+   "h": 467,
+   "fontFamily": "sans-serif",
+   "fontSize": "12px",
+   "fontWeight": "400",
+   "color": "rgb(0, 0, 0)",
+   "backgroundColor": "rgb(255, 255, 255)",
+   "borderRadius": "10px",
+   "border": "0px none rgb(0, 0, 0)",
+   "padding": "0px 0px 17px",
+   "transition": "all"
+  },
+  {
+   "tag": "div",
+   "cls": "framer-hdu7qu",
+   "text": "Auto allocations\n\nAssign the right driver and vehi",
+   "x": 80,
+   "y": 4232,
+   "w": 718,
+   "h": 467,
+   "fontFamily": "sans-serif",
+   "fontSize": "12px",
+   "fontWeight": "400",
+   "color": "rgb(0, 0, 0)",
+   "backgroundColor": "rgb(255, 255, 255)",
+   "borderRadius": "10px",
+   "border": "0px none rgb(0, 0, 0)",
+   "padding": "0px 0px 40px",
+   "transition": "all"
+  },
+  {
+   "tag": "div",
+   "cls": "framer-zg2yqd",
+   "text": "Routing & live tracking\n\nCoach-friendly routes, re",
+   "x": 810,
+   "y": 4232,
+   "w": 550,
+   "h": 467,
+   "fontFamily": "sans-serif",
+   "fontSize": "12px",
+   "fontWeight": "400",
+   "color": "rgb(0, 0, 0)",
+   "backgroundColor": "rgb(255, 255, 255)",
+   "borderRadius": "10px",
+   "border": "0px none rgb(0, 0, 0)",
+   "transition": "all"
+  },
+  {
+   "tag": "div",
+   "cls": "framer-23kban",
+   "text": "Quote radar\n\nFind the quotes worth winning",
+   "x": 80,
+   "y": 4711,
+   "w": 550,
+   "h": 488,
+   "fontFamily": "sans-serif",
+   "fontSize": "12px",
+   "fontWeight": "400",
+   "color": "rgb(0, 0, 0)",
+   "backgroundColor": "rgb(255, 255, 255)",
+   "borderRadius": "10px",
+   "border": "0px none rgb(0, 0, 0)",
+   "transition": "all"
+  },
+  {
+   "tag": "div",
+   "cls": "framer-14kbwsw",
+   "text": "Fleet health & compliance\n\nMOT reminders, defect r",
+   "x": 642,
+   "y": 4711,
+   "w": 718,
+   "h": 488,
+   "fontFamily": "sans-serif",
+   "fontSize": "12px",
+   "fontWeight": "400",
+   "color": "rgb(0, 0, 0)",
+   "backgroundColor": "rgb(255, 255, 255)",
+   "borderRadius": "10px",
+   "border": "0px none rgb(0, 0, 0)",
+   "transition": "all"
+  },
+  {
+   "tag": "div",
+   "cls": "framer-1x7hahp",
+   "text": "We know this industry. We built Savari from inside",
+   "x": 80,
+   "y": 7680.2,
+   "w": 1280,
+   "h": 488,
+   "fontFamily": "sans-serif",
+   "fontSize": "12px",
+   "fontWeight": "400",
+   "color": "rgb(0, 0, 0)",
+   "backgroundColor": "rgb(255, 255, 255)",
+   "borderRadius": "20px",
+   "border": "0px none rgb(0, 0, 0)",
+   "transition": "all"
+  },
+  {
+   "tag": "div",
+   "cls": "framer-GXnDU framer-Ql9YZ framer-rLJdF framer-SiY8J framer-1g0yo5y framer-v-1g0y",
+   "text": "Having worked with a number of transport managemen",
+   "x": -29,
+   "y": 8560.7,
+   "w": 478,
+   "h": 360,
+   "fontFamily": "sans-serif",
+   "fontSize": "12px",
+   "fontWeight": "400",
+   "color": "rgb(0, 0, 0)",
+   "backgroundColor": "rgb(242, 242, 242)",
+   "borderRadius": "16px",
+   "border": "0px none rgb(0, 0, 0)",
+   "padding": "20px",
+   "transition": "all"
+  },
+  {
+   "tag": "div",
+   "cls": "framer-GXnDU framer-Ql9YZ framer-rLJdF framer-SiY8J framer-1g0yo5y framer-v-1g0y",
+   "text": "Since switching to Savari, we have significantly r",
+   "x": 465,
+   "y": 8560.7,
+   "w": 478,
+   "h": 360,
+   "fontFamily": "sans-serif",
+   "fontSize": "12px",
+   "fontWeight": "400",
+   "color": "rgb(0, 0, 0)",
+   "backgroundColor": "rgb(242, 242, 242)",
+   "borderRadius": "16px",
+   "border": "0px none rgb(0, 0, 0)",
+   "padding": "20px",
+   "transition": "all"
+  },
+  {
+   "tag": "div",
+   "cls": "framer-GXnDU framer-Ql9YZ framer-rLJdF framer-SiY8J framer-1g0yo5y framer-v-1g0y",
+   "text": "Savari has been a breath of fresh air for our busi",
+   "x": 959,
+   "y": 8560.7,
+   "w": 478,
+   "h": 360,
+   "fontFamily": "sans-serif",
+   "fontSize": "12px",
+   "fontWeight": "400",
+   "color": "rgb(0, 0, 0)",
+   "backgroundColor": "rgb(242, 242, 242)",
+   "borderRadius": "16px",
+   "border": "0px none rgb(0, 0, 0)",
+   "padding": "20px",
+   "transition": "all"
+  },
+  {
+   "tag": "div",
+   "cls": "framer-1a24be5",
+   "text": "Have more questions?\n\nContact our support team\n\nCo",
+   "x": 154,
+   "y": 9464.3,
+   "w": 420,
+   "h": 87.2,
+   "fontFamily": "sans-serif",
+   "fontSize": "12px",
+   "fontWeight": "400",
+   "color": "rgb(0, 0, 0)",
+   "backgroundColor": "rgb(242, 242, 242)",
+   "borderRadius": "16px",
+   "border": "0px none rgb(0, 0, 0)",
+   "padding": "20px",
+   "transition": "all"
+  },
+  {
+   "tag": "div",
+   "cls": "framer-qH5yo framer-rLJdF framer-SiY8J framer-1wr2gk8 framer-v-1wr2gk8",
+   "text": "How long does it take to get started with Savari?\n",
+   "x": 674,
+   "y": 9120.7,
+   "w": 612,
+   "h": 142.8,
+   "fontFamily": "sans-serif",
+   "fontSize": "12px",
+   "fontWeight": "400",
+   "color": "rgb(0, 0, 0)",
+   "backgroundColor": "rgb(255, 255, 255)",
+   "borderRadius": "16px",
+   "border": "0px none rgb(0, 0, 0)",
+   "padding": "20px",
+   "transition": "all"
+  },
+  {
+   "tag": "div",
+   "cls": "framer-13u5eqz",
+   "text": "Company\n\nAbout\n\nContact\n\nProduct\n\nTMS\n\nWMS\n\nResour",
+   "x": 20,
+   "y": 9671.5,
+   "w": 1400,
+   "h": 549.6,
+   "fontFamily": "sans-serif",
+   "fontSize": "12px",
+   "fontWeight": "400",
+   "color": "rgb(0, 0, 0)",
+   "backgroundColor": "rgb(0, 0, 0)",
+   "borderRadius": "20px",
+   "border": "0px none rgb(0, 0, 0)",
+   "padding": "46px 60px 0px",
+   "transition": "all"
+  }
+ ],
+ "gradients": [
+  {
+   "tag": "div",
+   "cls": "framer-11trdmy",
+   "text": "",
+   "x": 80,
+   "y": 4607,
+   "w": 718,
+   "h": 92,
+   "backgroundImage": "linear-gradient(rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%)"
+  }
+ ],
+ "rootVars": {
+  "body --token-2f7e8351-6037-4eae-b4bb-0bd93d050d2a": "#fdfdfd",
+  "body --token-9e45acc7-837a-4dee-8acc-90cb49588937": "#333",
+  "body --token-ba635ff1-8ae9-42c0-b444-bed6db8f0119": "#111621",
+  "body --token-2025a2bc-7ec0-4914-9c91-27f7655c34da": "#4c4c4c",
+  "body --token-dbe80cae-8754-4559-87a3-40bce26bf3e4": "#f83350",
+  "body --token-51d38e9e-c5d0-4f39-98b8-bf8d05a9cf5e": "#fff",
+  "body --token-269ead95-81a6-419c-bd91-51878bb141d7": "#000",
+  "body --token-83a23f33-0184-4d17-9721-78414b7a6529": "#f2f2f2",
+  "body --token-3e0285fd-4a85-479f-9c05-6286ae1211c6": "#191919",
+  "body --token-82e2399d-77b2-4ee8-8954-5980bc37df43": "#faf8f7",
+  "body --token-344bc179-87b7-4125-a33a-1da8c5acfd6c": "#ebf3fe",
+  "body --token-8a76fffa-6eeb-46b2-99c8-12fcb7eb284f": "#ebf3fe",
+  "body --token-2d4d80cc-dff1-404f-8145-4cfb58c60fce": "#ebf3fecc",
+  "body --token-a7c196a5-83ad-4c80-9da7-3ea8eb60e72c": "#0073ff",
+  "body --framer-will-change-override": "none",
+  "body --framer-will-change-filter-override": "none"
+ },
+ "hover": [
+  {
+   "text": "",
+   "transition": "all",
+   "changed": {}
+  },
+  {
+   "text": "Book a demo",
+   "transition": "all",
+   "changed": {
+    "bg": [
+     "rgb(0, 0, 0)",
+     "rgba(0, 0, 0, 0.66)"
+    ]
+   }
+  },
+  {
+   "text": "Book a demo",
+   "transition": "all",
+   "changed": {
+    "bg": [
+     "rgb(248, 51, 80)",
+     "rgba(248, 51, 80, 0.75)"
+    ]
+   }
+  },
+  {
+   "text": "Watch the video",
+   "transition": "all",
+   "changed": {
+    "bg": [
+     "rgb(255, 255, 255)",
+     "rgba(255, 255, 255, 0.6)"
+    ]
+   }
+  }
+ ]
+}

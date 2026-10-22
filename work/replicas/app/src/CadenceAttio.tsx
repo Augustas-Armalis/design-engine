@@ -81,7 +81,7 @@ function CalendarCard() {
         </div>
         {[{ c: BLUE, f: '#5b6ee8', l: 'M' }, { c: '#9b69ff', f: '#2f9e6e', l: 'T' }, { c: '#f97514', f: '#8d7f74', l: 'A' }].map((a, i) => (
           <div key={i} style={abs(410.4 + i * 18, 12.5, { width: 24, height: 24, boxSizing: 'border-box', borderRadius: 999, background: '#fff', border: `1px solid ${a.c}` })}>
-            <div style={abs(1, 1, { width: 20, height: 20, boxSizing: 'border-box', borderRadius: 999, background: a.f, border: '1px solid rgba(0,0,0,0.1)', display: 'grid', placeItems: 'center' })}><span style={txt(10, 500, 20, -0.16, '#fff')}>{a.l}</span></div>
+            <div style={abs(1, 1, { width: 20, height: 20, boxSizing: 'border-box', borderRadius: 999, background: a.f, border: '1px solid rgba(0,0,0,0.1)', display: 'grid', placeItems: 'center' })}><span style={{ fontFamily: F, fontSize: 10, fontWeight: 500, lineHeight: '12px', color: '#fff' }}>{a.l}</span></div>
           </div>
         ))}
         <div style={abs(464.4, 13.5, { width: 22, height: 22, boxSizing: 'border-box', borderRadius: 999, background: '#f8f9fa', border: '1px solid #e6e7ea', display: 'grid', placeItems: 'center' })}><span style={txt(10, 500, 14, -0.16, MUT)}>+4</span></div>

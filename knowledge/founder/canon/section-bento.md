@@ -73,3 +73,10 @@ The bento canon above decides the Kargul iso grammar. Two more measured grammars
 - **Attio ruled sheet (light):** `work/replicas/ATTIO-BENTO-NOTES.md`, AB-01..15. Tinted signal chips may add a second hue family. Product cells are tagged `data-product`.
 
 Both references' own secondary text fails AA: Attio's `#8f99a8` at about 2.8:1 and Linear's FIG labels at 40%. We darken ours to pass; we never copy an accessibility bug.
+
+## Founder verdict 2026-10-22: the replicas land
+On the Linear FIG, AlignUI Features-04 and affectUI 3-up pixel replicas, the founder said: "plus those were cool" (ledger `replica-linear-fig`, `replica-alignui-features04`, `replica-affectui-3up`). Two decisions follow:
+1. These three grammars are approved bento floors.
+2. The replicate-to-registration-first method is the confirmed way to reach the bar.
+
+Build new bentos on a replica's own primitives (`work/replicas/app/src/{LinearBento,AlignBento,AffectBento,lineart}.tsx`), never from memory.

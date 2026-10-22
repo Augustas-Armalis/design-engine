@@ -22,8 +22,10 @@ import CadenceFig from './CadenceFig'
 import CadenceAttio from './CadenceAttio'
 import CadenceAlign from './CadenceAlign'
 import CadenceAffect from './CadenceAffect'
+import TanjimKanban from './TanjimKanban'
+import CadenceApp from './CadenceApp'
 
 // replicas: #/finance (AlignUI Transactions); more references are added as routes
-const ROUTES: Record<string, () => React.JSX.Element> = { '#/finance': Finance, '#/clokora': Clokora, '#/decision': Decision, '#/search': Search, '#/calendar': Calendar, '#/event': EventCard, '#/bento': Bento, '#/kiso': KargulIso, '#/bentok': BentoK, '#/khero': KargulHero, '#/attio': AttioHero, '#/linear': LinearHero, '#/glass': CadenceGlass, '#/lbento': LinearBento, '#/abento': AttioBento, '#/alignbento': AlignBento, '#/affectbento': AffectBento, '#/cfig': CadenceFig, '#/cattio': CadenceAttio, '#/calign': CadenceAlign, '#/caffect': CadenceAffect }
+const ROUTES: Record<string, () => React.JSX.Element> = { '#/finance': Finance, '#/clokora': Clokora, '#/decision': Decision, '#/search': Search, '#/calendar': Calendar, '#/event': EventCard, '#/bento': Bento, '#/kiso': KargulIso, '#/bentok': BentoK, '#/khero': KargulHero, '#/attio': AttioHero, '#/linear': LinearHero, '#/glass': CadenceGlass, '#/lbento': LinearBento, '#/abento': AttioBento, '#/alignbento': AlignBento, '#/affectbento': AffectBento, '#/cfig': CadenceFig, '#/cattio': CadenceAttio, '#/calign': CadenceAlign, '#/caffect': CadenceAffect, '#/tkanban': TanjimKanban, '#/capp': CadenceApp }
 const View = ROUTES[location.hash] ?? Finance
 createRoot(document.getElementById('root')!).render(<StrictMode><View /></StrictMode>)

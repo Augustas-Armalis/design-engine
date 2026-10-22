@@ -1,0 +1,231 @@
+{
+  "$meta": {
+    "name": "gr8r-studio (Tanjim, @Tanjim38, gr8r studio)",
+    "studied": "2026-10-22",
+    "source_root": "corpus/tanjim-src/gr8r-studio/src",
+    "licence": "repo has NO licence: study and measure only, never copy code or assets into a deliverable",
+    "stack": "Vite 6 + vanilla ES modules + plain CSS, Lucide subset via a virtual:icons plugin (vite.config.js:9-48), no UI framework, no runtime deps",
+    "file_note": "the token file header still says QUIRE (tokens.css:2): the system was renamed, the tokens were not",
+    "how_to_read": "values are as written in source; `src` is file:line relative to source_root. Rendered checks live in knowledge/benchmarks/tanjim-x/app/computed.json"
+  },
+  "colour": {
+    "model": "warm-neutral greys (hue ~40-50, yellow-brown), light on bare :root, dark REDEFINED not inverted, one swappable accent, semantic hues tuned separately per theme",
+    "light": {
+      "bg": { "v": "#fbfaf8", "src": "styles/tokens.css:7" },
+      "bg-side": { "v": "#f4f3f0", "src": "styles/tokens.css:8", "note": "sidebar is darker than page; main area is --surface white" },
+      "surface": { "v": "#ffffff", "src": "styles/tokens.css:9" },
+      "surface-2": { "v": "#f6f5f2", "src": "styles/tokens.css:10", "role": "hover fill" },
+      "surface-3": { "v": "#eeede9", "src": "styles/tokens.css:11", "role": "active/pressed fill, seg track, progress track" },
+      "sunken": { "v": "#f7f6f3", "src": "styles/tokens.css:12", "role": "board columns, out-of-month days, group rows, weekends" },
+      "overlay": { "v": "rgba(24,22,19,0.28)", "src": "styles/tokens.css:13" },
+      "border": { "v": "#e9e7e2", "src": "styles/tokens.css:15" },
+      "border-strong": { "v": "#dad7d0", "src": "styles/tokens.css:16", "role": "inputs, secondary buttons, hovered cards" },
+      "divider": { "v": "#f0eeea", "src": "styles/tokens.css:17", "role": "row separators inside a container (lighter than border)" },
+      "text": { "v": "#1d1c1a", "src": "styles/tokens.css:19" },
+      "text-2": { "v": "#57544e", "src": "styles/tokens.css:20" },
+      "text-3": { "v": "#6b6760", "src": "styles/tokens.css:21" },
+      "text-4": { "v": "#8c8880", "src": "styles/tokens.css:22", "role": "resting icons only" },
+      "accent": { "v": "#4b5bd6", "src": "styles/tokens.css:25", "note": "indigo; --accent-soft = 10% mix, --accent-line = 38% mix (tokens.css:29-30)" },
+      "on-accent": { "v": "#ffffff", "src": "styles/tokens.css:28" },
+      "semantic": { "green": "#25754b", "amber": "#8f5e0e", "red": "#b23c30", "blue": "#3570c4", "violet": "#7652c2", "teal": "#1e8580", "rose": "#bc4270", "orange": "#c0612b", "gray": "#8a867e", "src": "styles/tokens.css:32-40", "soft": "green 11%, amber 12%, red 10% color-mix to transparent (tokens.css:41-43)" },
+      "status": { "backlog": "#a29e96", "todo": "#7c7870", "progress": "#c88a14", "review": "#7652c2", "done": "#2e8456", "src": "styles/tokens.css:45-49" }
+    },
+    "dark": {
+      "bg": { "v": "#1a1a19", "src": "styles/tokens.css:142" },
+      "bg-side": { "v": "#151514", "src": "styles/tokens.css:143", "note": "sidebar darker than page in dark too" },
+      "surface": { "v": "#1d1d1c", "src": "styles/tokens.css:144" },
+      "surface-2": { "v": "#252524", "src": "styles/tokens.css:145" },
+      "surface-3": { "v": "#2d2d2b", "src": "styles/tokens.css:146" },
+      "sunken": { "v": "#181817", "src": "styles/tokens.css:147" },
+      "overlay": { "v": "rgba(0,0,0,0.55)", "src": "styles/tokens.css:148" },
+      "border": { "v": "#2c2b29", "src": "styles/tokens.css:149" },
+      "border-strong": { "v": "#3a3936", "src": "styles/tokens.css:150" },
+      "divider": { "v": "#252523", "src": "styles/tokens.css:151" },
+      "text": { "v": "#eceae5", "src": "styles/tokens.css:152" },
+      "text-2": { "v": "#b5b2ab", "src": "styles/tokens.css:153" },
+      "text-3": { "v": "#9a968f", "src": "styles/tokens.css:154" },
+      "text-4": { "v": "#6f6c66", "src": "styles/tokens.css:155" },
+      "accent": { "v": "#8e9af3", "src": "styles/tokens.css:26,157", "note": "lighter indigo; on-accent becomes near-black #12131c (tokens.css:158)" },
+      "semantic": { "green": "#5cba86", "amber": "#d8a443", "red": "#e57d70", "blue": "#72a5ea", "violet": "#a98deb", "teal": "#58c0b6", "rose": "#e68aab", "orange": "#e3925f", "gray": "#8f8b84", "src": "styles/tokens.css:159-167" },
+      "pc-mix": { "v": "72%", "src": "styles/tokens.css:168", "note": "project-icon glyph colour is mixed 72% hue + 28% text in dark so saturated hues do not buzz (shell.css:187-190)" },
+      "surface_step_L": "bg 1a -> surface 1d -> s2 25 -> s3 2d: ~3-8 L steps, all one warm hue"
+    },
+    "accent_variants": { "indigo": ["#4b5bd6", "#8e9af3"], "blue": ["#2f6cd4", "#74a7f0"], "violet": ["#7348cc", "#ae93f0"], "teal": ["#1a7f7a", "#5cc4ba"], "rose": ["#b93d68", "#ec8dae"], "graphite": ["#34332f", "#d9d6cf"], "src": "styles/tokens.css:181-200", "note": "each accent is a light/dark PAIR, never one value" },
+    "project_colours": { "indigo": "#5A67D8", "blue": "#3B82C4", "violet": "#8662C9", "teal": "#23918A", "rose": "#C54B78", "amber": "#C48A1E", "green": "#3D8E5F", "slate": "#6B7280", "src": "core/constants.js:36-45", "use": "always as color-mix tints: pico 16% bg (shell.css:180), picon 14% (projects-files.css:54), cal event 11% bg + 22% border (calendar.css:82-86), timeline bar 16% bg + 45% border + 26% progress fill (timeline.css:147-169)" },
+    "selection": { "v": "accent 22%", "src": "styles/base.css:45-47" }
+  },
+  "elevation": {
+    "philosophy": "one edge per box: cards are drawn by a 0 0 0 1px ring INSIDE the shadow stack, not a border; dark mode drops the drop shadows and keeps only the ring",
+    "light": {
+      "shadow-sm": { "v": "0 1px 2px rgba(28,25,20,.05)", "src": "styles/tokens.css:51", "use": "secondary button" },
+      "shadow-card": { "v": "0 1px 2px rgba(28,25,20,.04), 0 0 0 1px var(--border)", "src": "styles/tokens.css:52", "use": "kanban card" },
+      "shadow-pop": { "v": "0 12px 32px -8px rgba(28,25,20,.16), 0 2px 6px -2px rgba(28,25,20,.06), 0 0 0 1px var(--border)", "src": "styles/tokens.css:53", "use": "popover, modal, palette, toast, bulkbar" },
+      "shadow-drag": { "v": "0 16px 36px -10px rgba(28,25,20,.28), 0 0 0 1px var(--border-strong)", "src": "styles/tokens.css:54" },
+      "kcard-hover": { "v": "0 2px 6px -2px rgba(0,0,0,.08), 0 0 0 1px var(--border-strong)", "src": "styles/views/board.css:92-96", "note": "hover strengthens the RING, adds a 2px lift shadow" },
+      "pcard-hover": { "v": "border-strong + 0 4px 12px -6px rgba(0,0,0,.1) + translateY(-2px)", "src": "styles/views/projects-files.css:24-27, styles/motion.css:249-251" },
+      "drawer": { "v": "-18px 0 40px -24px rgba(0,0,0,.25) + border-left", "src": "styles/overlays.css:98-99" }
+    },
+    "dark": {
+      "shadow-sm": { "v": "0 1px 2px rgba(0,0,0,.3)", "src": "styles/tokens.css:174" },
+      "shadow-card": { "v": "0 0 0 1px var(--border)", "src": "styles/tokens.css:175", "note": "ring only" },
+      "shadow-pop": { "v": "0 16px 40px -10px rgba(0,0,0,.6), 0 0 0 1px var(--border-strong)", "src": "styles/tokens.css:176" },
+      "shadow-drag": { "v": "0 18px 40px -10px rgba(0,0,0,.7), 0 0 0 1px var(--border-strong)", "src": "styles/tokens.css:177" }
+    },
+    "tint_shadow_hue": "light shadows use rgba(28,25,20) (warm near-black) not pure black (tokens.css:51-54)"
+  },
+  "radius": {
+    "scale": { "r-xs": 4, "r-sm": 6, "r": 8, "r-lg": 10, "r-full": 999, "src": "styles/tokens.css:56-60" },
+    "off_scale": { "5px": "badge, lbl, seg button, cal event, tooltip, pico, skeleton (components.css:414,502,550; calendar.css:80; shell.css:177)", "7px": "picon 28px (projects-files.css:51)", "9px": "picon.lg 36px (projects-files.css:60)", "12px": "modal, palette, full drawer (overlays.css:27,626,125)", "28%": "brand app-icon tile (shell.css:58)" },
+    "ladder_by_height": [
+      { "h": 15, "r": 4, "what": "checkbox", "src": "components.css:309-311" },
+      { "h": 18, "r": 4, "what": "kbd", "src": "base.css:126-131" },
+      { "h": 18, "r": 5, "what": "sidebar project icon (pico)", "src": "shell.css:175-177" },
+      { "h": 20, "r": 5, "what": "badge / label / project status", "src": "components.css:500-502, 548-550" },
+      { "h": 22, "r": 4, "what": "ibtn-xs", "src": "components.css:146-150" },
+      { "h": 22, "r": 5, "what": "calendar event chip", "src": "calendar.css:78-80" },
+      { "h": 24, "r": 5, "what": "seg button (26-2)", "src": "components.css:412-414" },
+      { "h": 24, "r": 6, "what": "timeline bar", "src": "timeline.css:144-146" },
+      { "h": 26, "r": 6, "what": "btn-sm, ibtn-sm, chip, pillbtn, topsearch", "src": "components.css:34-38,142-145; shell.css:323-325" },
+      { "h": 28, "r": 7, "what": "project icon tile (picon)", "src": "projects-files.css:48-51" },
+      { "h": 30, "r": 6, "what": "btn, ibtn, input, select, sidebar row, menu item", "src": "components.css:5,12,231-233; shell.css:115-117; overlays.css:491-493" },
+      { "h": 36, "r": 6, "what": "btn-lg, input-lg", "src": "components.css:39-43, 241-243" },
+      { "h": 36, "r": 9, "what": "picon.lg", "src": "projects-files.css:58-61" },
+      { "h": 38, "r": 6, "what": "palette item (inside 12px palette)", "src": "overlays.css:701-703" },
+      { "h": "card", "r": 8, "what": "kanban card, attachment card, alert, comment box", "src": "board.css:80; overlays.css:308,401; states.css:58" },
+      { "h": "container", "r": 10, "what": "panel, stats strip, board column, popover, project card, file card, bulkbar", "src": "panels.css:7,33; board.css:23; overlays.css:451; projects-files.css:11" },
+      { "h": "overlay", "r": 12, "what": "modal, palette, full drawer", "src": "overlays.css:27,626,125" }
+    ],
+    "nesting": "popover 10 with 4px padding -> menu item 6 (10-4=6, concentric; overlays.css:451-453, 491-493). Board column 10 with 8px body padding -> card 8 (not strictly concentric, reads fine at that size). Palette 12, 6px list padding -> item 6 (overlays.css:626,675,703)."
+  },
+  "spacing": {
+    "scale": { "s-1": 4, "s-2": 8, "s-3": 12, "s-4": 16, "s-5": 20, "s-6": 24, "s-8": 32, "s-10": 40, "s-12": 48, "src": "styles/tokens.css:62-70" },
+    "real_usage_note": "the scale is declared but most components hard-code odd values: btn pad 0 11px (components.css:11), panel-h 12px 14px 10px (panels.css:13), stat 14px 16px (panels.css:37), kcard pad 10px/12px (board.css:82), mini row 0 14px (list.css:218), nrow 11px 14px (panels.css:92). The working inset is 14px for panels and 8px for menus/rows",
+    "gutter": { "v": 24, "mobile": 16, "src": "styles/tokens.css:93, responsive.css:47-49", "rule": "breadcrumb, page header, toolbar, list checkbox, table first cell and board all start on var(--gutter)" },
+    "page": { "max_width": 1160, "padding": "28px var(--gutter) 72px", "src": "styles/shell.css:360-364" },
+    "gaps": { "button_icon_gap": 6, "sidebar_icon_gap": 9, "menu_icon_gap": 9, "palette_icon_gap": 10, "grid2_gap": 16, "pgrid_gap": 12, "board_col_gap": 12, "kcard_internal_gap": 8, "bcol_card_gap": 6, "src": "components.css:10; shell.css:113; overlays.css:489,700; panels.css:77; projects-files.css:7; board.css:6,86,69" },
+    "page_header_to_content": { "v": 20, "src": "styles/shell.css:383" }
+  },
+  "type": {
+    "families": { "sans": "Geist (400/500/600 from Google Fonts)", "mono": "Geist Mono 400", "src": "styles/tokens.css:72-73, index.html:11-16", "features": "font-feature-settings 'ss01','cv11' on body (base.css:22)", "load": "font stylesheet loaded with media=print then swapped (index.html:14), so the system stack shows first" },
+    "base": { "size": 13.5, "line_height": 1.45, "src": "styles/base.css:18-19", "smoothing": "antialiased" },
+    "scale": { "fs-2xs": 11, "fs-xs": 12, "fs-sm": 12.5, "fs": 13.5, "fs-md": 14.5, "fs-lg": 16, "fs-xl": 19, "fs-2xl": 23, "src": "styles/tokens.css:74-81", "note": "half-pixel steps (12.5, 13.5, 14.5): a dense desktop UI scale, ~1.07 ratio in the body range, ~1.2 above" },
+    "roles": [
+      { "role": "page title h1", "size": 23, "weight": 600, "tracking": "-0.022em", "lh": 1.2, "wrap": "balance", "src": "styles/shell.css:386-393" },
+      { "role": "project title / settings h1 / drawer title", "size": 19, "weight": 600, "tracking": "-0.018em / -0.015em", "lh": 1.3, "src": "projects-files.css:101-106; settings.css:33-38; overlays.css:170-178" },
+      { "role": "KPI value", "size": 22, "weight": 600, "tracking": "-0.02em", "lh": 1.1, "numeric": "tabular-nums", "src": "styles/panels.css:57-63" },
+      { "role": "section h2.sec / modal title / empty-state title", "size": 14.5, "weight": 600, "tracking": "-0.01em", "src": "shell.css:406-411; overlays.css:48-52; states.css:22-26" },
+      { "role": "panel title", "size": 13.5, "weight": 600, "src": "panels.css:15-19" },
+      { "role": "body / sidebar row / menu item / task title", "size": 13.5, "weight": "400; sidebar 450, active 500; kcard title 450", "src": "base.css:18; shell.css:119-120,138; board.css:110-112" },
+      { "role": "buttons, labels, crumbs, tabs", "size": 12.5, "weight": 500, "src": "components.css:13-14,212-213,453-454; shell.css:296" },
+      { "role": "metadata, badges, table header, hint", "size": 12, "weight": "400-500", "src": "components.css:218,503; table.css:25" },
+      { "role": "eyebrow / sidebar group / menu header", "size": 11, "weight": 600, "tracking": "0.06-0.07em", "case": "uppercase", "colour": "text-3", "src": "shell.css:91-101,417-423; overlays.css:535-542" },
+      { "role": "task key / kbd / file ext", "family": "mono", "size": 11, "src": "list.css:92-96; base.css:123-124; board.css:162-166" },
+      { "role": "mono inline", "size": "0.92em", "tracking": "-0.01em", "src": "base.css:77-81" },
+      { "role": "auth h1", "size": 23, "weight": 600, "tracking": "-0.022em", "align": "center", "src": "pages/auth.css:40-46" }
+    ],
+    "numerals": "tabular-nums on stats, due dates, counts, calendar day numbers, timeline days (panels.css:61; list.css:259; shell.css:161; calendar.css:59; timeline.css:101)",
+    "max_weight": 600, "no_bold_700_in_ui": "700 appears only on social glyph placeholders (auth.css:82)"
+  },
+  "icons": {
+    "library": "Lucide 0.460, inlined subset", "src": "vite.config.js:9-48, core/icons.js:6-12",
+    "stroke": { "v": 1.8, "src": "core/icons.js:11", "note": "not Lucide's default 2: a hair lighter so 16px glyphs match 13.5px text weight" },
+    "sizes": { "sidebar": 16, "sidebar_sub": 14, "button": "14 (btn), 13 (btn-sm), 15-16 (ibtn)", "meta": 12, "pico_glyph": 12, "empty_state": "20-22", "bottomnav": 19, "design_system_note": "Lucide · 1.8px stroke · 12-18px (pages/design-system.js:140)" },
+    "resting_colour": { "sidebar": "text-4, hover/active text-2 (shell.css:150-156)", "button": "opacity .9 (components.css:25-27)", "menu": "text-2 (overlays.css:505-507)" },
+    "custom_glyphs": { "status": "14px circles: dashed ring (backlog), ring (todo), half pie (progress), three-quarter pie (review), filled check (done), r 5.4, stroke 1.5 (ui/helpers.js:21-34)", "priority": "3 rising bars 2.6 wide rx1, urgent = red 12px rounded square with ! (ui/helpers.js:35-43)", "note": "Linear-grammar status pies instead of coloured pills" }
+  },
+  "controls": {
+    "heights": { "h-xs": 22, "h-sm": 26, "h-md": 30, "h-lg": 36, "src": "styles/tokens.css:83-86" },
+    "button": { "default": "30h, 0 11px, r6, 12.5/500, gap 6", "sm": "26h, 0 8px, 12px", "lg": "36h, 0 14px, 13.5px", "src": "components.css:4-43" },
+    "button_variants": {
+      "primary": { "bg": "accent", "fg": "on-accent", "edge": "inset 0 -1px 0 rgba(0,0,0,.12) (bottom bevel)", "hover": "accent 88% + text 12%", "active": "accent 78% + text", "src": "components.css:47-57" },
+      "secondary": { "bg": "surface", "border": "1px border-strong", "shadow": "shadow-sm", "hover": "surface-2", "active": "surface-3", "src": "components.css:58-69" },
+      "ghost": { "fg": "text-2", "hover": "surface-2 + text", "active/on": "surface-3", "src": "components.css:70-81" },
+      "danger": { "bg": "red", "hover": "red 88% + black", "src": "components.css:82-94" },
+      "press": "transform scale(.97) on :active (components.css:28-30)",
+      "disabled": "opacity .45, no pointer, no shadow (components.css:95-100)",
+      "loading": "text transparent + 14px 2px spinner .7s linear (components.css:101-118)"
+    },
+    "icon_button": { "md": 30, "sm": 26, "xs": "22 r4", "r": 6, "src": "components.css:119-154" },
+    "input": { "h": 30, "lg": 36, "pad": "0 10px", "r": 6, "border": "border-strong", "font": 13.5, "hover": "border-strong 60% + text-3", "focus": "border accent + 0 0 0 3px accent-soft", "error": "border red + 3px red-soft", "src": "components.css:227-275" },
+    "search_input_icon": "absolute left 9px, input padding-left 30px, kbd right 7px (components.css:289-301)",
+    "select": "native select restyled as menu by ui/select.js; chevron 12px svg at right 9px (components.css:276-283, 710-736)",
+    "checkbox": "15px r4 1.5px border, checked accent, tick 8x5 drawn with borders (components.css:307-344)",
+    "toggle": "30x18, knob 14 white with 0 1px 2px shadow, travel 12px, knob spring .28s (components.css:350-379; motion.css:240-242)",
+    "segmented": "track surface-3 pad 2 gap 2 r6; button 24h 0 9px r5 12/500; on = surface + 0 1px 2px rgba(0,0,0,.08) + 1px ring (components.css:404-434)",
+    "tabs": "36h, 0 10px, 12.5/500, underline 2px text colour inset 8px each side, r2; tabIn scaleX .4->1 .26s (components.css:437-493)",
+    "badge": "20h 0 7px r5 12/500 surface-2 + border; tinted variants drop the border (components.css:496-543)",
+    "label_chip": "20h, 6px square r2 colour swatch + text-2 on surface with border (components.css:544-562)",
+    "filter_chip": "26h r6, accent-soft bg, accent-line border, 18px ibtn close (components.css:563-583)",
+    "avatar": "22 default (sm 20, md 26, lg 36, xl 64), initials at 40% size 600, bg hue 17% on surface, fg hue 55% + text, 1.5px surface ring to separate stacks, stack overlap -5px (components.css:611-651)",
+    "presence_dot": "30% of avatar, green, 2px surface ring (components.css:655-668)",
+    "progress": "4h r4 track surface-3, fill scaleX(var(--p)) .3s ease (components.css:671-697)",
+    "kbd": "18h min-w 18 mono 11 r4, border with 1.5px bottom (key-cap) (base.css:121-137)",
+    "tooltip": "text bg / text-inv fg, 11/500, 5px 7px, r5, 6px offset, fades in after .35s delay over .12s (components.css:162-201)",
+    "focus_ring": "2px solid accent, offset 1px, r4 (base.css:72-76); inputs use the 3px soft halo instead"
+  },
+  "density": {
+    "row_h": { "comfortable": 40, "compact": 34, "src": "tokens.css:89, 204-207" },
+    "side_row": { "comfortable": 30, "compact": 26, "src": "tokens.css:88, 201-203" },
+    "card_pad": { "comfortable": 10, "compact": 8, "src": "tokens.css:90, 206" },
+    "rows": { "list_head": 32, "list_row": "40 (var)", "group_header": 36, "add_row": 34, "subrow": 32, "mini_dashboard_row": 38, "table_th": 34, "table_td": 36, "table_group_row": 32, "timeline_row": 36, "timeline_head": 52, "menu_item": 30, "palette_item": 38, "palette_input": 50, "calendar_cell_min": 112, "kv_row": 30, "settings_row_pad": "14px 0", "src": "list.css:17,13,109,147,134,217; table.css:21,56,96; timeline.css:42,22; overlays.css:491,701,639; calendar.css:24; projects-files.css:172" }
+  },
+  "layout": {
+    "sidebar_w": { "v": 252, "collapsed": 52, "mobile_drawer": 280, "src": "tokens.css:87; shell.css:13; responsive.css:26" },
+    "topbar_h": { "v": 46, "mobile": 50, "src": "tokens.css:91; responsive.css:98" },
+    "topbar_padding": "0 12px 0 var(--gutter) (shell.css:285)",
+    "topsearch": "220w 26h, sunken bg, border, kbd at right (shell.css:319-332)",
+    "breakpoints": { "1100": "grid2 stacks, search collapses to icon", "900": "sidebar becomes off-canvas, gutter 16, stats 2-up", "640": "bottom nav 48px tap targets, topbar 50", "src": "responsive.css:4-120" },
+    "home_grid": "stats strip of 4 joined cells (one outer border, internal dividers), then grid2 1.55fr / 1fr, gap 16 (panels.css:29-35,74-78)",
+    "board_col_w": { "v": 284, "collapsed": 44, "src": "board.css:18,28" },
+    "timeline_left_w": { "v": 300, "mobile": 170, "src": "timeline.css:6; responsive.css:87" },
+    "drawer_w": { "v": 620, "full": "min(980, 100vw-48) inset 24 r12", "src": "overlays.css:96,119-127" },
+    "modal": { "w": 560, "sm": 420, "lg": 720, "top": "10vh", "r": 12, "pad": "14px 16px", "src": "overlays.css:13-69" },
+    "palette": { "w": 640, "top": "12vh", "r": 12, "src": "overlays.css:619-633" },
+    "popover": { "min_w": 200, "max_w": 320, "pad": 4, "r": 10, "max_h": "min(420px,70vh)", "src": "overlays.css:445-458" },
+    "settings": { "nav_w": 220, "content_max": 720, "content_pad": "32px 40px 80px", "src": "settings.css:6,30-31" },
+    "auth_card": { "max_w": 380, "gap": 16, "top": "6vh", "src": "auth.css:31-39" },
+    "toast": { "pos": "bottom 20 right 20", "min_h": 40, "r": 8, "bg": "text (inverted)", "src": "overlays.css:751-777" },
+    "bulkbar": { "pos": "fixed bottom 24 centred", "bg": "text (inverted)", "r": 10, "src": "list.css:168-183" }
+  },
+  "state_language": {
+    "hover": "fill one step up (surface -> surface-2); text-2 -> text; icons text-4 -> text-2. Never a colour change on neutral controls (components.css:73-76, shell.css:128-131)",
+    "active_pressed": "fill two steps (surface-3) + scale(.97) on buttons, scale(.88) on checkboxes (components.css:28-30, 77-81; motion.css:231-233)",
+    "selected_nav": "light: white surface + 1px ring + 0 1px 2px shadow, weight 500 (a raised tab). dark: surface-3 fill, NO ring or shadow (shell.css:132-149)",
+    "selected_row": "accent-soft fill (list.css:42-44)",
+    "selected_option": "accent border + 3px accent-soft halo (auth.css:152-155; settings.css:90-93,171-174)",
+    "focus": "focus-visible only: 2px accent outline offset 1 (base.css:69-76); form fields: accent border + 3px soft halo (components.css:260-266)",
+    "disabled": "opacity .45 (buttons, menu items) or .4 (ibtn), pointer-events none (components.css:95-100,151-154; overlays.css:526-529)",
+    "error": "red border + 3px red-soft halo + 12px red message with 12px icon (components.css:220-226,267-270)",
+    "done": "text-3 + line-through; calendar chips .55 opacity; timeline bars .6 (list.css:87-91; calendar.css:96-101; timeline.css:172-174)",
+    "drop_target": "2px accent line (list.css:45-50; board.css:167-173; shell.css:212-221) or accent 6% wash + accent-line border on column (board.css:74-77)",
+    "dragging": "source opacity .35-.4, ghost rotate(1.5deg) + shadow-drag (board.css:97-103)",
+    "hover_reveal": "row handles, column actions, card quick actions, attachment remove and sgroup + buttons are opacity 0 / display none until hover (list.css:61-71; board.css:121-134; shell.css:102-109)",
+    "unread": "accent 3.5% row wash (panels.css:98-100); 7px accent dot with 2px surface ring on the bell (shell/layout.js:197)"
+  },
+  "motion": {
+    "tokens": { "dur": "140ms", "ease": "cubic-bezier(0.23, 1, 0.32, 1)", "spring": "cubic-bezier(0.34, 1.56, 0.64, 1)", "ease-drawer": "cubic-bezier(0.32, 0.72, 0, 1)", "src": "styles/tokens.css:94-97" },
+    "micro": { "hover_colour": "140ms (var --dur)", "press": "transform on btn transition list (components.css:31-33)", "tooltip": ".12s after .35s delay", "toggle_knob": ".28s spring", "check": ".12s ease scale" },
+    "entrances": [
+      { "what": "route change", "kf": "riseIn translateY(8px)+fade", "dur": ".36s ease", "stagger": "0, 35, 70, 100ms (cap at 4th child)", "src": "motion.css:4-13, 92-104" },
+      { "what": "project tab switch", "kf": "riseIn", "dur": ".26s; board cards .32s staggered 30ms per column", "src": "motion.css:125-139" },
+      { "what": "progress bars", "kf": "growX scaleX 0->1", "dur": ".8s delay .12s", "src": "motion.css:109-115" },
+      { "what": "KPI numbers", "kf": "JS count-up 0->n", "dur": "520ms cubic-out, skipped under 2 and under reduced motion", "src": "shell/render.js:207-226" },
+      { "what": "modal / full drawer", "kf": "modalIn translateY(8px) scale(.97)", "dur": ".26s ease", "src": "overlays.css:33-35,73-82" },
+      { "what": "drawer", "kf": "drawerIn translateX(48px)+fade", "dur": ".34s ease-drawer; body children riseIn .38s staggered 40/70/100ms", "src": "overlays.css:104-118,143-152" },
+      { "what": "popover", "kf": "popIn translateY(-4px) scale(.97)", "dur": ".16s", "origin": "top left", "src": "overlays.css:454,459-471" },
+      { "what": "toast", "kf": "toastIn translateY(14px) scale(.96)", "dur": ".2s spring; out .16s", "src": "overlays.css:762-812" },
+      { "what": "bulk bar", "kf": "popUp translate(-50%,8px)", "dur": ".28s spring", "src": "list.css:184-210" },
+      { "what": "scrim", "kf": "fade", "dur": ".18s", "src": "overlays.css:10-12" },
+      { "what": "onboarding step", "kf": "slideInR translateX(18px)", "dur": ".36s; ready rows .12s stagger with popCheck", "src": "motion.css:193-229" }
+    ],
+    "feedback": [
+      { "what": "task done", "fx": "row green wash 1s, card green 2px ring 1s, check popCheck .55->1.2->1 .42s spring, title strike drawn left-to-right .38s at 58% height", "src": "motion.css:140-157" },
+      { "what": "card dropped", "fx": "land: from scale 1.04 rotate -1.2deg + drag shadow to rest, .5s spring", "src": "motion.css:63-72,159-161" },
+      { "what": "item added", "fx": "riseIn .3s + accent wash/ring 1.4s", "src": "motion.css:166-179" },
+      { "what": "card hover", "fx": "translateY(-1px) kcard, -2px pcard, .18-.2s", "src": "motion.css:243-259" }
+    ],
+    "gating": "one-shot fx flags set for the render that owns them, cleared after, so full re-renders never replay animations (shell/render.js:79-84, 186-188)",
+    "reduced_motion": "every entrance collapses to a .12s fade; bars and count-up skipped; strike becomes plain line-through; app-level data-motion=reduce override (motion.css:263-314)",
+    "skeleton": "shimmer 1.3s ease-in-out infinite, 220% gradient s3->s2->s3, r5 (states.css:39-53)"
+  }
+}

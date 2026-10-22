@@ -1,0 +1,92 @@
+{
+ "title": "404: NOT_FOUND",
+ "url": "https://tint-storefront-download.vercel.app/",
+ "viewport": [
+  1440,
+  900
+ ],
+ "scrollHeight": 900,
+ "bodyBg": "rgb(255, 255, 255)",
+ "htmlBg": "rgba(0, 0, 0, 0)",
+ "framework": {
+  "next": false,
+  "react": false,
+  "framer": false,
+  "nuxt": false,
+  "svelte": false,
+  "astro": false,
+  "vite": false,
+  "tailwind": false,
+  "webflow": false,
+  "canvas": 0,
+  "video": 0,
+  "svg": 2,
+  "motionAttrs": 0,
+  "generator": null
+ },
+ "scripts": [],
+ "loadedFonts": [],
+ "fontTuples": [
+  [
+   "\"geist mono\" 12px 400",
+   4
+  ],
+  [
+   "geist 24px 600",
+   1
+  ],
+  [
+   "geist 16px 400",
+   1
+  ]
+ ],
+ "radii": [],
+ "shadows": [],
+ "foldColours": [
+  [
+   "rgb(77, 77, 77)",
+   8
+  ],
+  [
+   "rgb(23, 23, 23)",
+   5
+  ],
+  [
+   "rgb(168, 168, 168)",
+   2
+  ]
+ ],
+ "headings": [
+  {
+   "tag": "h1",
+   "cls": "",
+   "text": "This page doesn’t exist",
+   "x": 578.5,
+   "y": 376,
+   "w": 283,
+   "h": 32,
+   "fontFamily": "geist, -apple-system, \"system-ui\", \"segoe ui\", \"helvetica neue\", Arial, sans-serif",
+   "fontSize": "24px",
+   "fontWeight": "600",
+   "letterSpacing": "-0.96px",
+   "lineHeight": "32px",
+   "color": "rgb(23, 23, 23)"
+  }
+ ],
+ "buttons": [],
+ "cards": [],
+ "gradients": [],
+ "rootVars": {
+  ":root --content-width": "283px",
+  ":root --background": "#0a0a0a",
+  ":root --foreground": "#ededed",
+  ":root --copy": "#ffffff",
+  ":root --secondary": "#a0a0a0",
+  ":root --button-background": "#ededed",
+  ":root --button-background-hover": "#d8d8d8",
+  ":root --button-foreground": "#0a0a0a",
+  ":root --divider": "#878787",
+  ":root --focus": "#0070f3"
+ },
+ "hover": []
+}

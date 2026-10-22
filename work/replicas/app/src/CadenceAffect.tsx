@@ -45,7 +45,7 @@ function Ask() {
   )
   return (
     <div className="flex flex-col" style={{ width: 250, gap: 8 }}>
-      <Tray head="Cadence" meta={<span style={{ fontFamily: mono, fontSize: 9 }}>⌘K</span>} icon={<span className="grid" style={{ gridTemplateColumns: '5px 5px', gap: 1.5 }}>{[0, 1, 2, 3].map((i) => <i key={i} style={{ width: 5, height: 5, borderRadius: i === 3 ? 3 : 1.5, background: i === 3 ? T.proTo : T.text }} />)}</span>}>
+      <Tray head="Cadence" meta={<span style={{ fontFamily: mono, fontSize: 9 }}>⌘K</span>} icon={<span style={{ display: 'grid', gridTemplateColumns: '5px 5px', gridAutoRows: '5px', gap: 1.5, width: 11.5, height: 11.5 }}>{[0, 1, 2, 3].map((i) => <i key={i} style={{ display: 'block', width: 5, height: 5, borderRadius: i === 3 ? 3 : 1.5, background: i === 3 ? T.proTo : T.text }} />)}</span>}>
         <TrayCard style={{ padding: '8px 10px', display: 'flex', flexDirection: 'column', gap: 4, fontSize: 10.5, lineHeight: '15px' }}>
           <span style={{ color: T.text, borderRight: `1.5px solid ${T.text}`, width: 'fit-content', paddingRight: 1, whiteSpace: 'nowrap' }}>45 min with Maya and Theo, next week</span>
           <span style={{ color: T.green, fontSize: 10 }}>✓ Checked 6 calendars</span>
@@ -95,7 +95,7 @@ function Tune() {
         </Tray>
         <Tray head="Focus" meta="Mornings" style={tray({ width: 158, left: 132, top: 124 })}>
           <TrayCard style={{ ...row, justifyContent: 'space-between', fontSize: 9.5, color: T.muted }}>Protect deep work
-            <span style={{ position: 'relative', width: 24, height: 14, borderRadius: 999, background: T.green }}>
+            <span role="switch" aria-checked="true" aria-label="Protect deep work" style={{ position: 'relative', width: 24, height: 14, borderRadius: 999, background: T.green }}>
               <i style={A({ width: 10, height: 10, top: 2, left: 2, translate: '10px', borderRadius: '50%', background: '#fff', boxShadow: 'rgba(0,0,0,0.2) 0px 1px 2px' })} />
             </span>
           </TrayCard>
