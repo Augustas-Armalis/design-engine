@@ -17,6 +17,7 @@ The canon is the settled answer per kind of work. `knowledge/founder/founder-tas
 | `motion.md` | motion, only when asked | Kite showcase wave, Kite dashboard load-in, Kestrel | `system/canon/motion.json` |
 | `full-website.md` | multi-section landing or site | Kaching homepage, Capto | `system/canon/full-website.json` |
 | `branding.md` | brand system: mark, palette, type pair, voice, application sheet | Kaching identity; traced fictional brands | `system/canon/branding.json` |
+| `designers-eye.md` | every kind, before delivery: the hunt list for half-faded, clipped, crossed and leaking things (DE-01..10) | the eight FX effect replicas (FX-16), Tempra h4a | gate checks `align/crop.text-crossing`, `align/crop.text-half-faded` |
 
 Every page has the same shape: floor references, a 5-file reading set, decided numbers, contradictions resolved (with superseded lines), a never list, a pre-delivery checklist, and an "Open" list for questions the founder has not settled. Open questions are left out of the JSON on purpose.
 

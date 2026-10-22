@@ -85,6 +85,8 @@ The canon is the decided default for that kind and outranks every other doc. `fo
 - **Kargul:** `work/replicas/KARGUL-HERO-NOTES.md` (Chatsheet), plus ISO-31..38 in `knowledge/web/isometric-line-art.md`.
 - **Attio:** `work/replicas/ATTIO-NOTES.md`.
 - **Linear:** `work/replicas/LINEAR-NOTES.md`.
+- **Effects (light, glow, rim, grain, halftone, line-waves, card materials):** `system/effects/fx-recipes.md` (R1-R11, measured) + `knowledge/web/effects-replicas-2026-10.md` (FX-01..16); replicas `#/fxr1..8`.
+- **Designer's eye (every kind, before delivery):** `knowledge/founder/canon/designers-eye.md` (DE-01..10); the gate's `crop.text-crossing` and `crop.text-half-faded` must PASS.
 - **Accepted engine builds:** `knowledge/engine-accepted/` (Kestrel, Quorum and others as they are accepted).
 
 ## Never
