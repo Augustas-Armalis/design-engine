@@ -32,17 +32,16 @@ const white: CSSProperties = { background: 'linear-gradient(#FFFFFF, #FBFBFC)', 
 const TINT: Record<string, [string, string]> = { L: ['#C0D5FF', '#122368'], A: ['#FFC0DF', '#71133E'], M: ['#C2F5DA', '#0B4627'], J: ['#C2F5EE', '#0B463E'], T: ['#CAC0FF', '#351A75'] }
 
 function FoundPill() {
-  // a fact, not a decoration: the slot Tempra found in the sample week (the same slot the product's decision tray offers)
+  // a fact, not a decoration: the slot Tempra found (the product's own answer). Equal 4px insets around the avatar row.
   const ids = ['L', 'A', 'M', 'J', 'T']
   return (
-    <div style={abs(0, 132, { width: W, display: 'flex', justifyContent: 'center' })}>
-      <span className="round" style={{ display: 'flex', alignItems: 'center', gap: 10, height: 34, padding: '0 14px 0 5px', borderRadius: 999, background: '#fff', boxShadow: '0 0 0 1px #E9E9EE, 0 1px 2px rgb(14 18 27 / .05)', fontSize: 14, whiteSpace: 'nowrap' }}>
+    <div style={abs(0, 130, { width: W, display: 'flex', justifyContent: 'center' })}>
+      <span className="round" style={{ display: 'flex', alignItems: 'center', gap: 10, height: 32, padding: '0 12px 0 4px', borderRadius: 999, background: '#fff', boxShadow: '0 0 0 1px #E9E9EE, 0 1px 2px rgb(14 18 27 / .05)', fontSize: 13.5, fontWeight: 500, whiteSpace: 'nowrap' }}>
         <span style={{ display: 'flex' }}>{ids.map((i, k) => (
-          <span key={i} className="round" style={{ marginLeft: k ? -6 : 0, width: 24, height: 24, borderRadius: 999, background: TINT[i][0], color: TINT[i][1], boxShadow: '0 0 0 2px #fff', display: 'grid', placeItems: 'center', fontSize: 10.5, fontWeight: 500 }}>{i}</span>
+          <span key={i} className="round" style={{ marginLeft: k ? -5 : 0, width: 24, height: 24, borderRadius: 999, background: TINT[i][0], color: TINT[i][1], boxShadow: '0 0 0 2px #fff', display: 'grid', placeItems: 'center', fontSize: 10.5, fontWeight: 500 }}>{i}</span>
         ))}</span>
-        <span style={{ fontWeight: 500 }}>Fri 11:00 works for all five</span>
-        <span style={{ width: 1, height: 14, background: '#E6E7EB' }} />
-        <span style={{ color: '#5B2CC9', fontWeight: 500, display: 'flex', alignItems: 'center', gap: 4 }}>Book it<RiArrowRightLine size={15} /></span>
+        <span style={{ paddingBottom: 1 }}>Fri 11:00 works for all five</span>
+        <RiArrowRightLine size={15} color="#62636B" />
       </span>
     </div>
   )
@@ -76,24 +75,23 @@ export default function CadenceHeroD() {
           {['Product', 'How it works', 'Pricing', 'Changelog'].map((t) => <a key={t} href="#/h4a" style={{ color: 'inherit', textDecoration: 'none' }}>{t}</a>)}
         </nav>
         <div style={{ marginLeft: 'auto', display: 'flex', gap: 8 }}>
-          <a href="#/h4a" style={{ height: 36, padding: '0 14px', borderRadius: 11, display: 'flex', alignItems: 'center', fontSize: 14, fontWeight: 500, color: INK, textDecoration: 'none' }}>Log in</a>
-          <a href="#/h4a" style={{ height: 36, padding: '0 14px', borderRadius: 11, display: 'flex', alignItems: 'center', fontSize: 14, fontWeight: 500, textDecoration: 'none', ...white }}>Sign up</a>
+          <a href="#/h4a" style={{ height: 36, padding: '0 14px 1px', borderRadius: 13, display: 'flex', alignItems: 'center', fontSize: 14, fontWeight: 500, color: INK, textDecoration: 'none' }}>Log in</a>
+          <a href="#/h4a" style={{ height: 36, padding: '0 14px 1px', borderRadius: 13, display: 'flex', alignItems: 'center', fontSize: 14, fontWeight: 500, textDecoration: 'none', ...white }}>Sign up</a>
         </div>
       </header>
 
-      <FoundPill />
-      <h1 style={{ margin: 0, position: 'absolute', left: 0, top: 182, width: W, textAlign: 'center', fontSize: 56, fontWeight: 500, letterSpacing: '-0.032em', lineHeight: '62px' }}>Every Meeting Finds<br />Its Own Hour</h1>
-      <p style={{ margin: 0, position: 'absolute', left: (W - 640) / 2, top: 322, width: 640, textAlign: 'center', fontSize: 18, lineHeight: '27px', color: '#62636B' }}>Tempra reads your team's calendars, guards focus time<br />and books the one slot that works for everyone.</p>
-      <div style={abs(0, 416, { width: W, display: 'flex', justifyContent: 'center', gap: 12 })}>
-        <a href="#/h4a" style={{ height: 46, padding: '0 20px 0 22px', borderRadius: 14, display: 'flex', alignItems: 'center', gap: 6, fontSize: 16, fontWeight: 500, letterSpacing: '-0.01em', textDecoration: 'none', ...ink }}>Start free<RiArrowRightLine size={17} /></a>
-        <a href="#/h4a" style={{ height: 46, padding: '0 22px', borderRadius: 14, display: 'flex', alignItems: 'center', fontSize: 16, fontWeight: 500, letterSpacing: '-0.01em', textDecoration: 'none', ...white }}>See how it works</a>
+      <h1 style={{ margin: 0, position: 'absolute', left: 0, top: 150, width: W, textAlign: 'center', fontSize: 56, fontWeight: 500, letterSpacing: '-0.03em', lineHeight: '64px' }}>Every Meeting Finds<br />Its Own Hour</h1>
+      <p style={{ margin: 0, position: 'absolute', left: (W - 640) / 2, top: 296, width: 640, textAlign: 'center', fontSize: 18, lineHeight: '27px', color: '#62636B' }}>Tempra reads your team's calendars, guards focus time<br />and books the one slot that works for everyone.</p>
+      <div style={abs(0, 388, { width: W, display: 'flex', justifyContent: 'center', gap: 12 })}>
+        <a href="#/h4a" style={{ height: 46, padding: '0 20px 1px 22px', borderRadius: 16, display: 'flex', alignItems: 'center', gap: 6, fontSize: 16, fontWeight: 500, letterSpacing: '-0.01em', textDecoration: 'none', ...ink }}>Start free<RiArrowRightLine size={17} /></a>
+        <a href="#/h4a" style={{ height: 46, padding: '0 22px 1px', borderRadius: 16, display: 'flex', alignItems: 'center', fontSize: 16, fontWeight: 500, letterSpacing: '-0.01em', textDecoration: 'none', ...white }}>See how it works</a>
       </div>
 
       {/* product: the app window alone, one hairline + one soft drop, on the same 80px edges as the nav (r3 verdict: no bezel) */}
-      <div style={abs(EDGE, 548, { width: APP_W, height: 820 })}>
+      <div style={abs(EDGE, 520, { width: APP_W, height: 820 })}>
         <TempraApp inHero />
       </div>
-      <BlurOut top={930} />
+      <BlurOut top={902} />
     </main>
   )
 }

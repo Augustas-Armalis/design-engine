@@ -1,6 +1,6 @@
 # Tempra product r3 (`#/cprodb`)
 
-scope: one product window (1280x820), light; X carousel = the window on a grey canvas with 80px margins, 3 strips
+scope: one product window (1280x820), light; X carousel = the window on a grey canvas with 56px margins (1392x932), 3 strips of 464
 motion: none
 mode: C, floor = our own accepted product grammar: Kestrel (sidebar + one view + one AI answer) and Quorum (one joined KPI strip)
 kind: product-ui
@@ -14,3 +14,4 @@ why: cproda r2 rejected ("too information heavy and unpolished and not clear... 
 
 - override: radius.ladder.product because the founder asked for a rounder product than the Kestrel ladder
 - override: shadow.levels.product because the window drop, controls and the found slot each carry one named recipe
+- override: align.vertical-centre because button labels are lifted 1px on purpose (optical centring: Inter's ink sits low in a centred line box; founder 2026-10-22 on Sign up: 'the top padding looks bigger than the bottom')

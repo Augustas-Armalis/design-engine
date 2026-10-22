@@ -128,3 +128,10 @@ These replace the numbers above wherever they conflict. Source: `knowledge/web/l
 - **Background visual stays quiet:** a fine 20px dot lattice at the sides only, masked clear of the copy and the nav, with at most four lit points carrying meaning. No grids of chips around the copy ("shouldn't be so distracting... I liked the points or bubbles").
 - **Nav:** a 72px band on the product frame's edges. Wordmark left, links centred 15/450, and a 36px "Log in" ghost + "Sign up" white pair on the right. No full-width rule.
 - **h1:** 56/500/-0.032em, lh 62.
+
+## Founder verdict 2026-10-22 (h4a r5-r6: "okay now it's wayy better... but now good")
+- **No gimmick pill above the h1.** An avatar-stack "fact" pill read "too AI and stupid". When the product in the fold proves the point, the nav sits straight over the h1 (canon rule 6 holds).
+- **Optical centring:** button labels are lifted 1px (Inter's ink sits low in a centred line box). The founder caught the geometric version: "top padding looks bigger than the bottom".
+- **Rounder controls:** 36px nav buttons r13, 46px CTAs r16 (bands widened in `system/canon/hero-light.json`).
+- **Avatar stacks** overlap by 17% of their size, so no initial is half-covered.
+- `tools/clipscan.cjs <url> <w> <h>` runs before delivery. It catches text cut by its box, SVG shapes outside their viewBox (the sparkline end dot), and children leaving a clipped parent.
