@@ -9,10 +9,10 @@ import {
   RiVideoOnLine, RiMapPinLine, RiErrorWarningFill, RiCheckboxCircleFill, RiCloseCircleFill, RiTimeFill, RiVerifiedBadgeFill, RiExpandUpDownLine,
 } from '@remixicon/react'
 
-const C = { ink: '#171717', sub: '#5c5c5c', soft: '#a3a3a3', line: '#ebebeb', weak: '#f7f7f7', violet: '#6e3ff3', red: '#e5484d' }
+const C = { ink: '#171717', sub: '#5c5c5c', soft: '#6b6b6b', line: '#ebebeb', weak: '#f7f7f7', violet: '#6e3ff3', red: '#e5484d' }
 const ring = `0 0 0 1px ${C.line}`, ctl = `0 0 0 1px ${C.line}, 0 1px 2px rgb(0 0 0 / 0.045)`
 const Face = ({ n, hue, s = 22 }: { n: string; hue: number; s?: number }) => (
-  <span className="grid shrink-0 place-items-center rounded-full font-[500] ring-2 ring-white" style={{ width: s, height: s, fontSize: s * 0.4, background: `oklch(0.92 0.045 ${hue})`, color: `oklch(0.4 0.09 ${hue})` }}>{n}</span>
+  <span className="grid shrink-0 place-items-center rounded-full font-[500] ring-2 ring-white" style={{ width: s, height: s, fontSize: Math.max(10, s * 0.45), background: `oklch(0.92 0.045 ${hue})`, color: `oklch(0.4 0.09 ${hue})` }}>{n}</span>
 )
 const Stack = ({ p, more }: { p: [string, number][]; more?: number }) => (
   <span className="flex items-center"><span className="flex -space-x-1">{p.map(([n, h]) => <Face key={n} n={n[0]} hue={h} s={22} />)}</span>{more && <span className="ml-1.5 text-[11px] font-[500]" style={{ color: C.sub }}>+{more}</span>}</span>
@@ -47,7 +47,7 @@ const EVENTS: Ev[] = [
 function Event({ v }: { v: Ev }) {
   const [bg, edge, fg] = TONE[v.tone], h = (v.e - v.s) * HH - 8, p = at(v.d, v.s)
   return (
-    <div className="absolute overflow-hidden rounded-[12px] px-3 py-2.5" style={{ ...p, width: DW - 16, height: h, background: bg, boxShadow: `inset 0 0 0 1px ${edge}` }}>
+    <div className="absolute overflow-hidden rounded-[12px] px-3 py-2.5" style={{ ...p, width: DW - 16, height: h, background: bg, boxShadow: `inset 0 0 0 1px ${edge}`, ...(h < 72 ? { display: 'flex', flexDirection: 'column', justifyContent: 'center', paddingTop: 0, paddingBottom: 0 } : {}) }}>
       <span className="absolute inset-y-2 left-0 w-[3px] rounded-r-full" style={{ background: fg, opacity: 0.85 }} />
       <div className="truncate text-[13px] font-[500] leading-[17px]" style={{ color: C.ink }}>{v.t}</div>
       <div className="mt-0.5 text-[12px] tabular-nums" style={{ color: fg }}>{fmt(v.s)} – {fmt(v.e)}</div>
@@ -68,10 +68,10 @@ const Summary = ({ t, time, tone, icon: I, label, right }: { t: string; time: st
   </div>
 )
 
-export default function Calendar() {
+export default function Calendar({ font = '"Inter Variable", system-ui, sans-serif', windowRadius = 44 }: { font?: string; windowRadius?: number } = {}) {
   return (
-    <div className="relative overflow-hidden" style={{ width: 1600, height: 1200, background: '#e8e8e8', fontFamily: '"Inter Variable", system-ui, sans-serif', fontFeatureSettings: '"cv11", "ss01"', color: C.ink }}>
-      <div data-subject className="absolute overflow-hidden rounded-[44px] bg-white" style={{ left: 76, top: 146, width: 1448, height: 908, boxShadow: '0 0 0 1px rgb(0 0 0 / 0.04), 0 16px 40px -16px rgb(0 0 0 / 0.12)' }}>
+    <div className="relative overflow-hidden" style={{ width: 1600, height: 1200, background: '#e8e8e8', fontFamily: font, fontFeatureSettings: '"cv11", "ss01"', color: C.ink }}>
+      <div data-subject className="absolute overflow-hidden bg-white" style={{ borderRadius: windowRadius, left: 76, top: 146, width: 1448, height: 908, boxShadow: '0 0 0 1px rgb(0 0 0 / 0.04), 0 16px 40px -16px rgb(0 0 0 / 0.12)' }}>
         {/* sidebar */}
         <aside className="absolute inset-y-0 left-0 flex w-[276px] flex-col px-6 pb-6 pt-7" style={{ boxShadow: `inset -1px 0 0 ${C.line}` }}>
           <div className="flex items-center gap-3 pb-6" style={{ boxShadow: `inset 0 -1px 0 ${C.line}` }}>
@@ -81,7 +81,7 @@ export default function Calendar() {
             <div className="min-w-0 flex-1 leading-tight"><div className="text-[14px] font-[500]">Cadence</div><div className="mt-0.5 text-[12px]" style={{ color: C.sub }}>Northwind Design</div></div>
             <span className="grid size-6 place-items-center rounded-[7px] bg-white" style={{ boxShadow: ctl, color: C.sub }}><RiExpandUpDownLine size={15} /></span>
           </div>
-          <div className="pt-6 text-[12px] font-[500] tracking-[0.04em]" style={{ color: '#99a0ae' }}>MAIN</div>
+          <div className="pt-6 text-[12px] font-[500] tracking-[0.04em]" style={{ color: '#6b7280' }}>MAIN</div>
           <nav className="mt-2 flex flex-col gap-1">
             {NAV.map(([I, l, n]) => {
               const on = l === 'Calendar'
@@ -94,7 +94,7 @@ export default function Calendar() {
               )
             })}
           </nav>
-          <div className="pt-6 text-[12px] font-[500] tracking-[0.04em]" style={{ color: '#99a0ae' }}>CALENDARS</div>
+          <div className="pt-6 text-[12px] font-[500] tracking-[0.04em]" style={{ color: '#6b7280' }}>CALENDARS</div>
           <nav className="mt-2 flex flex-col gap-1">
             {([['#6e3ff3', 'Product design', true], ['#e8742b', 'Research', true], ['#2f7cf6', 'Engineering', true], ['#22a35a', 'Events', false]] as const).map(([c, l, on]) => (
               <div key={l} className="flex h-9 items-center gap-2.5 px-3 text-[14px] font-[500]" style={{ color: C.sub }}>
@@ -174,7 +174,7 @@ export default function Calendar() {
               <div className="flex items-center gap-1.5 text-[13px] font-[500]" style={{ color: C.violet }}><RiTimeFill size={14} />Focus time</div>
               <div className="mt-0.5 text-[12px]" style={{ color: C.sub }}>Protected · 2 requests declined</div>
             </div>
-            <div className="absolute rounded-[12px] px-3 py-2.5" style={{ left: 104 + DW * 2 + 8, top: 72 + HH * 3 + 4, width: DW - 16, height: 52, boxShadow: `inset 0 0 0 1.5px rgb(110 63 243 / 0.5)`, background: 'rgb(255 255 255 / 0.6)' }}>
+            <div className="absolute rounded-[12px] px-3" style={{ display: 'flex', alignItems: 'center', left: 104 + DW * 2 + 8, top: 72 + HH * 3 + 4, width: DW - 16, height: 52, boxShadow: `inset 0 0 0 1.5px rgb(110 63 243 / 0.5)`, background: 'rgb(255 255 255 / 0.6)' }}>
               <div className="flex items-center gap-1.5 text-[12.5px] font-[500]" style={{ color: C.violet }}><RiSparkling2Line size={14} />Suggested: 1:1 with Theo</div>
             </div>
           </div>
@@ -182,7 +182,7 @@ export default function Calendar() {
         {/* events and now-line, in page coords */}
         <div className="absolute" style={{ left: -76, top: -146 }}>
           <div className="absolute flex -translate-y-1/2 items-center" style={{ left: X0 - 44, top: Y0 + HH * 0.3, width: 44 + DW * 5 }}>
-            <span className="rounded-[5px] px-1 text-[11px] font-[600] tabular-nums text-white" style={{ background: C.red }}>9:18</span>
+            <span className="rounded-[5px] px-1 text-[11px] font-[600] tabular-nums text-white" style={{ background: '#c9353a' }}>9:18</span>
             <span className="h-px flex-1" style={{ background: 'rgb(229 72 77 / 0.25)' }} />
           </div>
           <div className="absolute h-[2px] -translate-y-1/2" style={{ left: X0 + DW, top: Y0 + HH * 0.3, width: DW, background: C.red }}><span className="absolute -left-1 -top-[3px] size-2 rounded-full" style={{ background: C.red }} /></div>

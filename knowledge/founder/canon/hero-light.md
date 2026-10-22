@@ -80,3 +80,14 @@ Decided defaults, 2026-10-21. Every value below traces to a founder verdict (`fo
 - Light-hero colourful-pixel budget: the Quorum stage is a lavender gradient and was never measured; no cap is set.
 - Font-size count in a hero fold: not measured on Quorum or Kestrel.
 - Whether the rail dot grid is the default for every centred light hero (playbook open question 7).
+
+## Founder verdict 2026-10-22 (cadence-hero r1, reject): supersedes "nothing above the h1" and "one quiet layer"
+Founder: "this feels empty... no stuff below the buttons, none above the title and nothing in the background happening... inconsistent roundness... nav bar out of place and size... generic... not polished... you don't double check... mostly playing with fonts, layouts, bg colours, roundness, but always professional, sleek and consistent".
+
+Decided now (these replace the matching rows above):
+- **Above the h1:** one element is REQUIRED: an announcement pill, an eyebrow or a small product-proof pill. It is always custom (from `system/variety/buttons-2/`), never the stock capsule. Supersedes L142 and L430.
+- **Below the CTAs:** one product element is REQUIRED: the Ask composer, a live mini-result, or factual metadata (free tier, setup time). Never fake logos or customer counts.
+- **Background:** a living signature layer, still allowed: a gradient stage behind the product, a tinted canvas with a light field, or product-element texture. A plain dot grid alone fails.
+- **Roundness:** ONE ladder for the whole fold, derived from the product's scale. If the product is zoomed by z, hero chrome radii = product radii x z: frame = window radius x z, CTAs and composer = card radius x z, inner = outer - inset. Measure every box (gate `radius.*` + `nested`).
+- **Nav:** sits on the same content edges as the h1 block and the product frame (one grid). Size is proportionate: logo mark 22-24, links 15, nav CTAs 36 tall. Check that the nav's left/right x equals the frame's left/right x within 1px.
+- **Delivery:** give 2-3 variants that differ in font, layout, background colour and roundness, all on the same consistency rules, so the founder can pick.

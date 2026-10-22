@@ -119,7 +119,8 @@ const census = (cfg) => {
   const txt = (el) => (el.getAttribute?.('aria-label') || el.textContent || '').trim().replace(/\s+/g, ' ').slice(0, 32)
   const ownText = (el) => [...el.childNodes].some((n) => n.nodeType === 3 && n.textContent.trim())
   const tagged = [...document.querySelectorAll('[data-product]')].find((e) => e.getBoundingClientRect().width > 0) || null
-  const subject = document.querySelector('[data-subject]')
+  // a data-subject nested inside the product (an embedded component post) is not the page's subject
+  const subject = [...document.querySelectorAll('[data-subject]')].find((e) => !e.parentElement?.closest('[data-product]')) || null
   const h1 = [...document.querySelectorAll('h1')].find((h) => h.getBoundingClientRect().width > 0)
   // the product: tagged, else (with an h1) the largest dense block below the headline (design_view's rule)
   let product = tagged
@@ -498,8 +499,11 @@ for (const b of m.boxes) {
 }
 add('radius', 'radius.ladder.controls', ok(!offCtl.length), offCtl.length, `page controls sit in their height band${srcOf('radiusLadder')}; pills/circles exempt`, offCtl.slice(0, 6))
 // founder cadence-glass r1 "roudness": off-ladder boxes FAIL when more than a quarter of the fold's boxes miss their band
-const boxTotal = m.boxes.filter((b) => !b.pill).length, boxShare = boxTotal ? offBoxes.length / boxTotal : 0
-add('radius', 'radius.ladder.boxes', boxShare > 0.25 ? 'FAIL' : okW(!offBoxes.length), `${offBoxes.length}/${m.boxes.filter((b) => !b.pill).length}`, `boxes sit in their height band ${JSON.stringify(ladder)}`, offBoxes.slice(0, 6))
+// share is judged on the page's own boxes; boxes inside the product follow the product canon and are reported apart
+const pageBoxes = m.boxes.filter((b) => !b.pill && !b.product), offPage = offBoxes.filter((t) => !t.endsWith('[product]')), offProd = offBoxes.filter((t) => t.endsWith('[product]'))
+const boxTotal = pageBoxes.length, boxShare = boxTotal ? offPage.length / boxTotal : 0
+if (offProd.length) add('radius', 'radius.ladder.product', 'WARN', `${offProd.length}`, 'boxes inside [data-product] off the hero ladder (judge them with --kind product-ui)', offProd.slice(0, 6))
+add('radius', 'radius.ladder.boxes', boxShare > 0.25 ? 'FAIL' : okW(!offPage.length), `${offPage.length}/${boxTotal}`, `boxes sit in their height band ${JSON.stringify(ladder)}`, offBoxes.slice(0, 6))
 add('radius', 'radius.nested', okW(!m.nestedRadius.length), m.nestedRadius.length, 'a child radius never exceeds its parent (concentric: inner = outer - inset)', m.nestedRadius.slice(0, 6))
 
 // type
@@ -517,7 +521,8 @@ if (m.hasProduct) add('type', 'type.weights.product', okW(!badProd.length), badP
 if (m.h1) {
   const h = m.h1, hc = { sizePx: val('h1', 'sizePx'), weight: val('h1', 'weight'), trackingEm: val('h1', 'trackingEm'), maxWords: val('h1', 'maxWords'), maxLines: val('h1', 'maxLines') }
   const st = (b) => (isHero ? ok(b) : b ? 'PASS' : 'INFO')
-  add('type', 'h1.size', st(inR(h.px, hc.sizePx)), `${h.px.toFixed(1)}px`, `${hc.sizePx?.join('-')}px${srcOf('h1', 'sizePx')}`, `${h.family} "${h.text.slice(0, 50)}"`)
+  // h1 size: +-0.25px tolerance for line-metric rounding
+  add('type', 'h1.size', st(inR(h.px, hc.sizePx && [hc.sizePx[0] - 0.25, hc.sizePx[1] + 0.25])), `${h.px.toFixed(1)}px`, `${hc.sizePx?.join('-')}px${srcOf('h1', 'sizePx')}`, `${h.family} "${h.text.slice(0, 50)}"`)
   add('type', 'h1.weight', st(inR(h.weight, hc.weight)), h.weight, `${hc.weight?.join('-')}${srcOf('h1', 'weight')}`)
   add('type', 'h1.tracking', st(inR(h.trackingEm, hc.trackingEm)), `${h.trackingEm.toFixed(3)}em`, `${hc.trackingEm?.join(' to ')}em${srcOf('h1', 'trackingEm')}`)
   add('type', 'h1.words', st(h.words <= hc.maxWords), h.words, `<= ${hc.maxWords} words${srcOf('h1', 'maxWords')}`)
