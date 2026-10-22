@@ -14,7 +14,8 @@ import {
 const PAGE = '#0c0c0d', CELL = '#131315', CELL_RING = '#222226'
 const PANEL = '#18181b', PANEL_RING = '#27272c', STEP = '#202024', STEP2 = '#2a2a2f', RULE = '#232327'
 const INK = '#f4f4f5', SUB = '#a3a3ab', MUTE = '#8f8f97'
-const V = '#8b8cf0', V_FILL = 'rgba(139,140,240,0.14)', V_RING = 'rgba(139,140,240,0.62)', V_INK = '#dedeff', V_SUB = '#b9baf6'
+// V_FILL is the 14% violet tint pre-blended onto PANEL, so gridlines never show through a selected event
+const V = '#8b8cf0', V_FILL = '#282839', V_RING = 'rgba(139,140,240,0.62)', V_INK = '#dedeff', V_SUB = '#b9baf6'
 const font: CSSProperties = { fontFamily: '"Geist Variable", ui-sans-serif, system-ui, sans-serif', WebkitFontSmoothing: 'antialiased', fontFeatureSettings: '"tnum" 1' }
 
 const abs = (x: number, y: number, w?: number, h?: number, s: CSSProperties = {}): CSSProperties => ({ position: 'absolute', left: x, top: y, width: w, height: h, ...s })
@@ -245,12 +246,13 @@ function ConflictFragment() {
         <div style={{ fontSize: 11.5, lineHeight: '15px', color: MUTE, whiteSpace: 'nowrap' }}>External guest</div>
       </div>
       {/* where the 1:1 was */}
-      <div style={abs(204, hy2(14) + 2, 150, P / 2 - 3, { borderRadius: 7, border: '1px dashed #44444b', boxSizing: 'border-box', display: 'flex', alignItems: 'center', padding: '0 8px' })}>
+      <div style={abs(204, hy2(14) + 2, 150, P / 2 - 3, { borderRadius: 7, border: '1px dashed #44444b', background: PANEL, boxSizing: 'border-box', display: 'flex', alignItems: 'center', padding: '0 8px' })}>
         <span style={{ fontSize: 12, lineHeight: '16px', color: MUTE, textDecoration: 'line-through', textDecorationColor: '#5a5a62', whiteSpace: 'nowrap' }}>1:1 Maya / Theo</span>
       </div>
-      <svg style={abs(272, hy2(14.5) + 2, 14, 30)} viewBox="0 0 14 30" fill="none" aria-hidden>
-        <path d="M7 1v24" stroke="#5a5a62" strokeWidth={1.25} strokeDasharray="2 3" strokeLinecap="round" />
-        <path d="M3.5 22 7 26l3.5-4" stroke={V} strokeWidth={1.4} strokeLinecap="round" strokeLinejoin="round" />
+      {/* connector sits on a panel-coloured strip so the 15:00 rule breaks around it instead of crossing it */}
+      <svg style={abs(270, hy2(14.5) + 4, 18, 40, { background: PANEL })} viewBox="0 0 18 40" fill="none" aria-hidden>
+        <path d="M9 2v30" stroke="#5a5a62" strokeWidth={1.25} strokeDasharray="2 3" strokeLinecap="round" />
+        <path d="M5.5 33 9 37l3.5-4" stroke={V} strokeWidth={1.4} strokeLinecap="round" strokeLinejoin="round" />
       </svg>
       {/* where it went */}
       <div style={abs(204, hy2(15.5) + 2, 150, P * 0.75 + 4, { borderRadius: 8, background: V_FILL, boxShadow: `inset 0 0 0 1.5px ${V_RING}`, display: 'flex', flexDirection: 'column', gap: 1, padding: '3px 8px', boxSizing: 'border-box' })}>
@@ -295,7 +297,6 @@ export function CadenceBentoSection() {
   return (
     <section data-subject aria-labelledby="cbl-h2" style={{ ...font, position: 'relative', width: 1440, height: 1200, background: PAGE, color: INK, overflow: 'hidden' }}>
       <h2 id="cbl-h2" style={abs(GX, 120, 640, undefined, { margin: 0, fontSize: 40, lineHeight: '46px', fontWeight: 500, letterSpacing: '-0.03em', color: INK })}>A Calendar That Finds<br />The Hour For Everyone</h2>
-      <p style={abs(GX + 1200 - 360, 120 + 46 + 21, 360, undefined, { margin: 0, fontSize: 13, lineHeight: '20px', color: MUTE, textAlign: 'right' })}>Sample team, calendars and hours</p>
 
       <Cell x={GX} y={GY} w={796} h={440} r={24} label="Sample week view: Thursday 13:00 to 13:45 is the one slot all four guests have free"
         title="The Hour That Suits Everyone" desc="Cadence reads every guest's calendar and time zone, then holds the one slot free for all.">
