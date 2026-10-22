@@ -203,7 +203,8 @@ const CARDS: [string, string, string, 'Strong yes' | 'Yes' | 'Lean yes', string]
 const VERDICT: Record<string, [string, string, string]> = { 'Strong yes': [T.greenFill, T.greenRing, T.green], Yes: ['#F2FBF6', '#D4F1E1', T.green], 'Lean yes': [T.amberFill, T.amberRing, T.amber] }
 function Drawer() {
   return (
-    <aside aria-label="Candidate, sample" style={{ width: 392, flex: 'none', boxShadow: `inset 1px 0 0 ${T.line}`, display: 'flex', flexDirection: 'column', padding: '0 20px 20px', boxSizing: 'border-box' }}>
+    <aside aria-label="Candidate, sample" className="drawer" style={{ width: 392, flex: 'none', boxShadow: `inset 1px 0 0 ${T.line}`, display: 'flex', flexDirection: 'column', padding: '0 20px 20px', boxSizing: 'border-box' }}>
+      <style>{'.drawer > * { flex-shrink: 0 }'}</style>
       <div style={{ ...row, height: 56, gap: 6, color: T.mute }}>
         <span style={{ display: 'grid', placeItems: 'center', width: 28, height: 28, borderRadius: 10, boxShadow: RING }} role="img" aria-label="Close"><X size={14} /></span>
         <span style={{ display: 'grid', placeItems: 'center', width: 28, height: 28, borderRadius: 10, boxShadow: RING }} role="img" aria-label="Expand"><ArrowsOutSimple size={14} /></span>
@@ -226,7 +227,7 @@ function Drawer() {
           <span key={l} style={{ ...row, gap: 5, height: 24, padding: '0 8px', borderRadius: 9, background: T.weak, boxShadow: RING, fontSize: 12, color: T.sub, whiteSpace: 'nowrap', ...OPTICAL }}>{ic}{l}{l === 'Portfolio' && <ArrowUpRight size={11} />}</span>
         ))}
       </div>
-      <div style={{ ...row, gap: 18, marginTop: 14, height: 34, boxShadow: `inset 0 -1px 0 ${T.line}`, fontSize: 13, color: T.mute }}>
+      <div style={{ ...row, gap: 18, marginTop: 12, height: 34, boxShadow: `inset 0 -1px 0 ${T.line}`, fontSize: 13, color: T.mute }}>
         {['Overview', 'Scorecards', 'Activity', 'Files'].map((t) => (
           <span key={t} style={{ position: 'relative', height: 34, ...row, gap: 5, color: t === 'Overview' ? T.ink : T.mute, fontWeight: t === 'Overview' ? 500 : 400 }}>
             {t}{t === 'Scorecards' && <span style={{ fontSize: 11.5, color: T.mute, ...tnum }}>4</span>}
@@ -236,7 +237,7 @@ function Drawer() {
       </div>
 
       {/* the debrief in a tray: the strip says what was read, the card holds the call and the one open question */}
-      <div style={{ marginTop: 16, borderRadius: 20, background: T.weak, boxShadow: RING, padding: 4 }}>
+      <div style={{ marginTop: 14, borderRadius: 20, background: T.weak, boxShadow: RING, padding: 4 }}>
         <div style={{ ...row, gap: 6, height: 28, padding: '0 10px 0 9px', fontSize: 12, fontWeight: 500, color: T.sub }}>
           <span style={{ display: 'flex', color: T.o }}><Sparkle size={13} weight="fill" /></span>Panel debrief
           <span style={{ color: T.mute, fontWeight: 400 }}>· 4 of 4 scorecards</span>
@@ -264,16 +265,16 @@ function Drawer() {
           </div>
           <div style={{ marginTop: 14, borderRadius: 12, background: T.weak, boxShadow: RING, padding: '10px 12px' }}>
             <div style={{ ...row, gap: 6, fontSize: 12, fontWeight: 500, color: T.mute }}><ChatCircleText size={13} />Ask in the onsite</div>
-            <div style={{ fontSize: 13, lineHeight: '19px', marginTop: 4 }}>How would you grow the library past one product?</div>
+            <div style={{ fontSize: 13, lineHeight: '19px', marginTop: 4, textWrap: 'balance' }}>How would you grow the library past one product?</div>
             <div style={{ ...row, gap: 5, marginTop: 7, fontSize: 11.5, color: T.mute }}><Av i="DC" s={16} />From Dana's systems notes</div>
           </div>
         </div>
       </div>
 
-      <div style={{ ...row, marginTop: 16, fontSize: 12, fontWeight: 500, color: T.mute }}>Scorecards<span style={{ marginLeft: 'auto', fontWeight: 400 }}>avg 4.3</span></div>
+      <div style={{ ...row, marginTop: 12, fontSize: 12, fontWeight: 500, color: T.mute }}>Scorecards<span style={{ marginLeft: 'auto', fontWeight: 400 }}>avg 4.3</span></div>
       <div style={{ display: 'flex', flexDirection: 'column', marginTop: 4 }}>
         {CARDS.map(([id, n, round, v, s], k) => (
-          <div key={id} style={{ ...row, gap: 10, height: 42, boxShadow: k ? `inset 0 1px 0 ${T.hair}` : 'none' }}>
+          <div key={id} style={{ ...row, gap: 10, height: 40, boxShadow: k ? `inset 0 1px 0 ${T.hair}` : 'none' }}>
             <Av i={id} s={26} />
             <span style={{ display: 'flex', flexDirection: 'column', flex: 1 }}>
               <span style={{ fontSize: 13, fontWeight: 500, lineHeight: '17px' }}>{n}</span>
@@ -285,7 +286,7 @@ function Drawer() {
         ))}
       </div>
 
-      <div style={{ ...row, gap: 8, marginTop: 'auto', paddingTop: 16 }}>
+      <div style={{ ...row, gap: 8, marginTop: 'auto', paddingTop: 12 }}>
         <span style={{ ...row, gap: 7, height: 38, padding: '0 16px 0 18px', borderRadius: 14, fontSize: 14, fontWeight: 500, ...ink }}>Move to onsite<ArrowRight size={15} /></span>
         <span style={{ ...row, gap: 6, height: 38, padding: '0 14px', borderRadius: 14, fontSize: 14, fontWeight: 500, ...stroke }}><CalendarCheck size={15} />Schedule</span>
         <span style={{ marginLeft: 'auto', display: 'grid', placeItems: 'center', width: 38, height: 38, borderRadius: 14, ...stroke, paddingBottom: 0, color: T.sub }} role="img" aria-label="More actions"><DotsThree size={18} weight="bold" /></span>

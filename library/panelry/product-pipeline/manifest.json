@@ -42,10 +42,10 @@
       },
       "w": 3840,
       "h": 2571,
-      "bytes": 958793,
-      "sha256": "49b63fac756b9bda967e9de3fac27e372b7c3d5c675d51c015976931f1f8d159",
-      "rendered": "2026-10-22T18:31:10.841Z",
-      "commit": "a15f83e+dirty"
+      "bytes": 957201,
+      "sha256": "e3e02f05913313866d146141c5a606e6c4e76f4bc486c6b19b73308efd375777",
+      "rendered": "2026-10-22T18:42:39.854Z",
+      "commit": "6a05496+dirty"
     },
     {
       "file": "renders/strip-1.png",
@@ -69,10 +69,10 @@
       },
       "w": 1280,
       "h": 2571,
-      "bytes": 338847,
-      "sha256": "cef4f24c836b0ad09c178139df4944b1749aab1a8a9a586fe3192a8b44c0e521",
-      "rendered": "2026-10-22T18:31:15.634Z",
-      "commit": "a15f83e+dirty"
+      "bytes": 340718,
+      "sha256": "d9ad6016ab117736367d7ddcba2cbd1c474afe0936100f848fb2d38ad0fb32ca",
+      "rendered": "2026-10-22T18:42:45.081Z",
+      "commit": "6a05496+dirty"
     },
     {
       "file": "renders/strip-2.png",
@@ -98,8 +98,8 @@
       "h": 2571,
       "bytes": 255157,
       "sha256": "e2d925ef0f9806253e1ee96bf15a90ebf16980bd75a19f16ea5f73bf544983f1",
-      "rendered": "2026-10-22T18:31:20.559Z",
-      "commit": "a15f83e+dirty"
+      "rendered": "2026-10-22T18:42:49.912Z",
+      "commit": "6a05496+dirty"
     },
     {
       "file": "renders/strip-3.png",
@@ -123,10 +123,10 @@
       },
       "w": 1280,
       "h": 2571,
-      "bytes": 331376,
-      "sha256": "9fc817dee15f45bdaa3078e05e956e0776ae48051b28664e38708c8c9d01fddb",
-      "rendered": "2026-10-22T18:31:25.426Z",
-      "commit": "a15f83e+dirty"
+      "bytes": 331871,
+      "sha256": "1025beeafff4decb9c5aff67a91c633913e3c74de3ed2e1c8209d024bd1b3b03",
+      "rendered": "2026-10-22T18:42:54.639Z",
+      "commit": "6a05496+dirty"
     }
   ],
   "checks": [
@@ -181,7 +181,7 @@
     "hiring"
   ],
   "preflight": {
-    "ran": "2026-10-22T18:31:51.688Z",
+    "ran": "2026-10-22T18:43:20.795Z",
     "fail": 0,
     "warn": 7,
     "results": [
@@ -189,11 +189,11 @@
         "label": "full-and-strips",
         "route": "#/panelry",
         "size": "1392x932",
-        "pass": 20,
+        "pass": 22,
         "warn": 7,
         "fail": 0,
         "report": "preflight/1-full-and-strips.md",
-        "ran": "2026-10-22T18:31:51.682Z"
+        "ran": "2026-10-22T18:43:20.787Z"
       }
     ]
   }

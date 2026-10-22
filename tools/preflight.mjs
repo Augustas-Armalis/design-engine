@@ -183,7 +183,7 @@ const probe = (cfg) => {
     return (fillOf(el)[3] > 0.04 || hasRing(cs)) && parseFloat(cs.borderTopLeftRadius) >= 3
   }
   const textNodes = (el) => { const w = document.createTreeWalker(el, NodeFilter.SHOW_TEXT); const a = []; let n; while ((n = w.nextNode())) if (n.textContent.trim()) a.push(n); return a }
-  const res = { fonts: [], labels: [], icons: [], fills: {}, rings: {}, primaries: [], edge: [], bottom: [], window: null, alpha: [], banned: [], placeholder: [], seamText: [] }
+  const res = { fonts: [], labels: [], icons: [], fills: {}, rings: {}, primaries: [], edge: [], bottom: [], window: null, alpha: [], banned: [], placeholder: [], seamText: [], squeezed: [], ctlCut: [] }
 
   // fonts: the first family of every text element must be available, or it silently renders in a fallback face
   const fams = new Map()
@@ -328,6 +328,28 @@ const probe = (cfg) => {
     if (pattern) res.alpha.push({ text: txt(el), alpha: +bg[3].toFixed(2), over: pattern.tagName.toLowerCase(), x: Math.round(r.left), y: Math.round(r.top) })
   }
 
+  // squeezed: a box rendered shorter than the fixed height it declares (inline px). A flex column whose content overflows
+  // shrinks its fixed rows silently; Panelry r1's drawer header (56 declared, 41 rendered) pushed its buttons into the edge
+  for (const el of all) {
+    const want = el.style && /^\d+(\.\d+)?px$/.test(el.style.height) ? parseFloat(el.style.height) : null
+    if (want == null || want < 8) continue
+    const r = shown(el); if (!r || !inView(r)) continue
+    const cs = getComputedStyle(el); if (cs.transform !== 'none' || el.closest('svg')) continue
+    let scaled = false; for (let a = el.parentElement; a; a = a.parentElement) if (getComputedStyle(a).transform !== 'none' || +getComputedStyle(a).zoom !== 1) { scaled = true; break }
+    if (scaled) continue
+    if (want - r.height > 1) res.squeezed.push({ text: txt(el) || el.tagName.toLowerCase(), want, got: +r.height.toFixed(1), x: Math.round(r.left), y: Math.round(r.top) })
+  }
+  // controls cut by their own container: icon-only buttons and avatars (no text, 14-64px, painted) partly outside a clipping
+  // ancestor; text controls are the gate's crop census, frame edges are edge.small-cut
+  for (const el of all) {
+    const r = shown(el); if (!r || !inView(r) || r.width < 14 || r.height < 14 || r.width > 64 || r.height > 64) continue
+    const cs = getComputedStyle(el); if (!(fillOf(el)[3] > 0.04 || hasRing(cs)) || parseFloat(cs.borderTopLeftRadius) < 3) continue
+    if (textNodes(el).some((t) => t.textContent.trim().length > 2) || el.closest('svg')) continue
+    const k = clipRect(el); if (!Number.isFinite(k.t) && !Number.isFinite(k.l)) continue
+    const iw = Math.max(0, Math.min(r.right, k.r) - Math.max(r.left, k.l)), ih = Math.max(0, Math.min(r.bottom, k.b) - Math.max(r.top, k.t)), sh = (iw * ih) / (r.width * r.height)
+    const fx = Math.min(Math.max(r.left + r.width / 2, 1), W - 1), fy = Math.min(Math.max(Math.min(r.bottom, k.b) - 2, 1), H - 1)
+    if (sh > 0.02 && sh < 0.98 && !masked(el) && !coveredAt(fx, fy, el)) res.ctlCut.push({ aria: el.getAttribute('aria-label') || txt(el) || el.tagName.toLowerCase(), share: +sh.toFixed(2), w: Math.round(r.width), h: Math.round(r.height), x: Math.round(r.left), y: Math.round(r.top) })
+  }
   // copy: reference names (no-copy rule) and placeholder text in the visible page
   const body = document.body.innerText || ''
   const re = (n, f) => new RegExp(`\\b${n.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, f)
@@ -385,6 +407,9 @@ if (!skip.has('probes')) {
   for (const p of P.primaries) (regions[p.region] ||= []).push(p)
   const heavy = Object.entries(regions).filter(([, l]) => l.length > 1)
   add('primary', 'primary.per-view', heavy.length ? 'FAIL' : 'PASS', Object.entries(regions).map(([k, l]) => `${k}:${l.length}`).join(' ') || '0', '<= 1 heavy filled control (fill >= 3:1 off its surface) per view: the page, and each [data-product] (DE-06, "one ink primary")', heavy.flatMap(([k, l]) => l.map((p) => `${k} "${p.text}" ${p.fill} ${p.contrast}:1`)))
+
+  add('layout', 'layout.squeezed', P.squeezed.length ? 'FAIL' : 'PASS', P.squeezed.length, 'no box rendered shorter than its declared fixed height (a flex column that overflows squashes its fixed rows; Panelry r1 drawer header 56 -> 41)', P.squeezed.slice(0, 8).map((q) => `"${q.text}" ${q.want}px declared, ${q.got}px rendered at ${q.x},${q.y}`))
+  add('layout', 'clip.control-cut', P.ctlCut.length ? 'FAIL' : 'PASS', P.ctlCut.length, 'no icon button or avatar partly cut by its own clipping container (DE-02 inside the frame)', P.ctlCut.slice(0, 8).map((q) => `${q.aria} ${q.w}x${q.h} ${Math.round(q.share * 100)}% visible at ${q.x},${q.y}`))
 
   // edges and the fold
   const edgeBad = P.edge.filter((e) => !e.faded)

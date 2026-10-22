@@ -25,7 +25,7 @@
     "component": "work/replicas/app/src/PanelryProduct.tsx",
     "viewport": [
       431,
-      455
+      462
     ],
     "crop": {
       "src": "#/panelry",
@@ -33,14 +33,14 @@
         945,
         16,
         431,
-        455
+        462
       ],
       "anchor": "tr",
       "insets": {
         "top": 40,
         "right": 40
       },
-      "snapped": "left and bottom edges in gutters (tools/library.mjs snap moved 0px): the left edge runs just inside the drawer, the bottom in the gap under the four signal bars, so the debrief card bleeds off the bottom"
+      "snapped": "left and bottom edges in gutters (tools/library.mjs snap moved 0px): the left edge runs just inside the drawer, the bottom in the gap under the four signal bars (471-485 after the r1b drawer fix), so the debrief card bleeds off the bottom"
     }
   },
   "renders": [
@@ -52,16 +52,16 @@
         "route": "#/xframe?src=panelry&x=945&y=16",
         "viewport": [
           431,
-          455
+          462
         ],
         "scale": 5.2
       },
       "w": 2241,
-      "h": 2366,
-      "bytes": 401206,
-      "sha256": "543cebb33553a5385f03696868c7357df7afe9d39e7b732e60c93b52cbfc40c5",
-      "rendered": "2026-10-22T18:30:37.917Z",
-      "commit": "a15f83e+dirty"
+      "h": 2402,
+      "bytes": 396073,
+      "sha256": "403018f9a7ef16dc8ce726bb6db7e558fcc6596f71710b3ec942edfbab3d3015",
+      "rendered": "2026-10-22T18:43:27.141Z",
+      "commit": "6a05496+dirty"
     }
   ],
   "checks": [
@@ -70,7 +70,7 @@
       "route": "#/xframe?src=panelry&x=945&y=16",
       "kind": "product-ui",
       "w": 431,
-      "h": 455,
+      "h": 462,
       "anchor": "tr",
       "format": "dashboard-closeup",
       "renders": [
@@ -104,19 +104,19 @@
     "hiring"
   ],
   "preflight": {
-    "ran": "2026-10-22T18:31:03.660Z",
+    "ran": "2026-10-22T18:43:52.865Z",
     "fail": 0,
     "warn": 4,
     "results": [
       {
         "label": "closeup",
         "route": "#/xframe?src=panelry&x=945&y=16",
-        "size": "431x455",
-        "pass": 17,
+        "size": "431x462",
+        "pass": 19,
         "warn": 4,
         "fail": 0,
         "report": "preflight/1-closeup.md",
-        "ran": "2026-10-22T18:31:03.651Z"
+        "ran": "2026-10-22T18:43:52.857Z"
       }
     ]
   }

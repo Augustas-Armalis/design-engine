@@ -30,6 +30,15 @@ export default function PreflightNegative() {
       <p style={{ position: 'absolute', left: 48, top: 420, margin: 0, fontSize: 15 }}>Synced with Chatsheet last night.</p>
       {/* load.fonts: a family that is not loaded */}
       <p style={{ position: 'absolute', left: 48, top: 460, margin: 0, fontSize: 15, fontFamily: '"Nonexistent Sans", serif' }}>This line falls back to another face.</p>
+      {/* layout.squeezed + clip.control-cut: a 160px column holding 196px of fixed rows (its 48px header shrinks), and an
+          icon button pushed half out of its clipping card */}
+      <div style={{ position: 'absolute', left: 760, top: 230, width: 220, height: 160, display: 'flex', flexDirection: 'column', borderRadius: 16, background: '#fff', boxShadow: 'inset 0 0 0 1px #ECEDF1', overflow: 'hidden' }}>
+        <div style={{ height: 48, display: 'flex', alignItems: 'center', padding: '0 12px', fontSize: 13 }}>Squeezed header</div>
+        <div style={{ height: 148, background: '#F4F5F7' }} />
+      </div>
+      <div style={{ position: 'absolute', left: 1000, top: 230, width: 120, height: 80, borderRadius: 16, background: '#fff', boxShadow: 'inset 0 0 0 1px #ECEDF1', overflow: 'hidden' }}>
+        <span role="img" aria-label="Cut icon button" style={{ position: 'absolute', left: 100, top: 20, width: 32, height: 32, borderRadius: 10, background: '#fff', boxShadow: 'inset 0 0 0 1px #DDE0E6', display: 'grid', placeItems: 'center' }}><RiAddLine size={16} /></span>
+      </div>
       {/* fold.end: a text line and a small card cut by the bottom edge, no fade */}
       <div style={{ position: 'absolute', left: 48, top: 760, width: 240, height: 70, borderRadius: 12, background: '#fff', boxShadow: 'inset 0 0 0 1px #ECEDF1', padding: '22px 14px', boxSizing: 'border-box', fontSize: 15 }}>Cut by the bottom</div>
     </main>
