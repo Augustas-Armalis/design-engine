@@ -1,12 +1,10 @@
 # Captions: tempra-bento-dark
 
-## bento-still first
-- augustasdesign: dark bento for a team calendar, five cells 🔥
-- faulkner_Design: each cell shows one thing the product does. no filler cells.
-- rokasrem: i built each bento cell around one object. concept.
-- marius_vanagas: most bento grids repeat the same card five times. this one gives every cell its own object.
+Reserved for @augustasdesign to post by hand (founder 2026-10-22); no co-founder lines. Register and rules: knowledge/x/caption-patterns.md (CP-01..16) and caption-voice.md (CV-01..14). The `- augustasdesign:` line is the default the planner reads; `(b)` and `(c)` are options for him to pick (the planner ignores them).
 
-reply augustas: made at larpo.studio, concept
-reply faulkner: concept for a team calendar. made at larpo.studio
-reply rokas: built in react, one route per screen. larpo.studio
-reply marius: concept for a team calendar. larpo.studio
+## bento-still first
+- augustasdesign: this dark bento turned out way too clean 🔥
+- augustasdesign (b): probably my favorite bento i've made so far 🫠
+- augustasdesign (c): feature sections deserve this much detail
+
+reply augustas: concept, made at larpo.studio

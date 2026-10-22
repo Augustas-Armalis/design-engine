@@ -1,30 +1,25 @@
 # Captions: tempra-product-week
 
-## dashboard-full follow
-- augustasdesign: the whole calendar behind yesterday's close-up
-- faulkner_Design: the close-up was one panel. here is the system around it.
-- rokasrem: zoomed out: the full team calendar dashboard. concept.
-- marius_vanagas: the answer makes sense once you see the whole week it was found in.
+Reserved for @augustasdesign to post by hand (founder 2026-10-22); no co-founder lines. Register and rules: knowledge/x/caption-patterns.md (CP-01..16) and caption-voice.md (CV-01..14). The `- augustasdesign:` line is the default the planner reads; `(b)` and `(c)` are options for him to pick (the planner ignores them). Thirds are captioned as the whole work, never the cut (CP-10); a follow-up carries a comparative cue (CP-09).
 
 ## dashboard-full first
-- augustasdesign: team calendar dashboard, all of it 👀
-- faulkner_Design: three panels, one question: when can five people meet.
-- rokasrem: team calendar dashboard, full view. concept.
-- marius_vanagas: most calendar dashboards start with totals. this one starts with the time that works for everyone.
+- augustasdesign: the most detailed calendar i've designed so far 👀
+- augustasdesign (b): this week view turned out way too clean
+- augustasdesign (c): scheduling software can look like this
+
+## dashboard-full follow
+- augustasdesign: and the full week view is even better 👀
+- augustasdesign (b): zoomed out, it gets even better
+- augustasdesign (c): here's the whole calendar behind that panel 👀
 
 ## dashboard-strips-3 follow
-- augustasdesign: one calendar dashboard, in thirds 👀
-- faulkner_Design: left to right: teams, the week, the answer. read in that order.
-- rokasrem: the team calendar dashboard cut in three. concept.
-- marius_vanagas: split into thirds you can see the order it is read in: teams, then the week, then the answer.
+- augustasdesign: could look at this week view all day 😍
+- augustasdesign (b): my favorite product screen i've built this year
+- augustasdesign (c): every calendar app should get this much care
 
 ## full-plus-strips follow
-- augustasdesign: one calendar dashboard, whole and in thirds 👀
-- faulkner_Design: the full week first, then each panel on its own.
-- rokasrem: the full dashboard, then the same screen in three. concept.
-- marius_vanagas: most dashboard shots stop at the overview. here the overview comes first and each panel follows.
+- augustasdesign: honestly in love with this calendar 😍
+- augustasdesign (b): the most detailed product screen i've made this year
+- augustasdesign (c): this calendar is the cleanest thing i've made 👀
 
-reply augustas: made at larpo.studio, concept
-reply faulkner: concept for a team calendar. made at larpo.studio
-reply rokas: built in react, one route per screen. larpo.studio
-reply marius: concept for a team calendar. larpo.studio
+reply augustas: concept, made at larpo.studio

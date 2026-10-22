@@ -1,175 +1,149 @@
 ---
-source: web:x.com via api.fxtwitter.com (public FixTweet mirror, no login): the four Larpo founders @augustasdesign (358 originals, Jul 2025 - Oct 2026), @faulkner_Design (24), @rokasrem (30), @marius_vanagas (1), with @marcelkargul and @_heyrico as the comparison set + knowledge/larpo/larpo-brand-and-constraints.md (LBC-04, 07, 27, 40-46) + knowledge/web/x-design-posts.md (XP-13, 14, 18, 19)
-chapter: Caption voice for the founders' X accounts: one lowercase voice per founder, rules, Augustas's own patterns, and 14 caption templates per format
+source: knowledge/x/caption-patterns.md (CP-01..16: 1,375 design captions of @marcelkargul, @_heyrico, @basit_designs, @uisabor, @kargulstudio, @flohoeller, @mrncst, @oguzyagizkara, @pacocoursey, @raunofreiberg, @steveschoger, @d__raptis and @augustasdesign, via the public FixTweet mirror, no login) + @augustasdesign's own posts (358 originals, Jul 2025 - Oct 2026) + knowledge/larpo/larpo-brand-and-constraints.md (LBC-04, 07, 27, 40-46) + founder verdicts ledger x-engine-posts r1 and x-captions r1 (2026-10-22). The @rokasrem, @faulkner_Design and @marius_vanagas timelines are X-engine output and appear here only as negative evidence
+chapter: Caption voice for the founders' X accounts: one studio register for every account, lanes by pattern rotation, the house rules, and Augustas's own captions
 pages: n/a (web; captured 2026-10-22; evidence in knowledge/benchmarks/x-strategy-2026-10/)
-topic_tags: [x, captions, copywriting, voice, lowercase, founders, larpo, augustasdesign, templates, series, concept-disclosure]
+topic_tags: [x, captions, copywriting, voice, lowercase, studio-register, founders, larpo, augustasdesign, concept-disclosure, negative-evidence]
 status: studied
 ---
 
-# Caption voice: how each founder writes, and what to write under each format
+# Caption voice: one studio register, four accounts, house rules
 
-Credits: the captions quoted here are the founders' own posts on their own accounts (Augustas, Faulkner, Rokas, Marius). Marcel Kargul and rico are the comparison set and are summarised, not quoted. The templates in section 5 are the engine's own phrasing, written from the patterns, not copied from anyone. Data: `knowledge/benchmarks/x-strategy-2026-10/data/`; strategy: `knowledge/x/x-strategy.md` (XS-20..24).
+Credits: the captions quoted here are Augustas's own posts on his own account, plus our own rejected drafts and the X engine's rejected titles as negative examples. Benchmark captions are quoted only in `caption-patterns.md`, briefly and attributed. The templates live in `caption-patterns.md` section 5 and `system/x/captions.json`. Strategy: `x-strategy.md` (XS-20..24, XS-28).
 
 "rel" = likes divided by the account's median likes on media posts in the same era.
 
 ## 0. The one-paragraph answer
 
-Every founder account writes **lowercase, short, and concrete**, but each has its own job so the same project never reads the same twice. **@augustasdesign is the maker's reaction**: the UI part plus one feeling, 4-8 words, at most one emoji at the end ("the most detailed dashboard I've ever built 👀", his best design post since August at 17.6x). **@faulkner_Design is the decision**: what the design chose and what it gave up, two short statements, no emoji. **@rokasrem is the detail**: one concrete thing he made, in first person, plus the plain concept label. **@marius_vanagas is the category contrast**: what most products in the category do, and what this one does instead, in one longer line. Shared rules: name the UI part, never the fictional brand; "concept" on fictional work; no questions, links, @mentions or hashtags in the caption; no money or outcome claims on concepts; one line break at most; never the same caption or the same three-word run on two accounts.
+Every founder account writes in **one register: the studio register of Marcel, rico and Basit, in Augustas's all-lowercase voice**. A caption is one measured move in 5-9 words (a superlative about a named part, a "this {part} ..." callout, a first-person reaction, a view label, a standard line, a comparative follow-up, a plain label; `caption-patterns.md`), names the UI part, and never explains the design. **Accounts do not have explanatory "voices"**: the old reaction / decision / detail / contrast split produced copywriter lines that explain what the design does or gave up, and the founder rejected them ("you didn't study like normal marcel rico basit", ledger `x-captions` r1). Accounts now differ only by **which patterns they rotate and which subjects they post**: @augustasdesign leads with superlatives, callouts and reactions and may end with one emoji; @rokasrem (scheduled by the X engine, emoji off) posts plain labels, view labels and pair labels with no verdict words; @faulkner_Design and @marius_vanagas are not scheduled for now. **The posts the X engine generated on the co-founder accounts, their titles and their formats are negative evidence** (ledger `x-engine-posts` r1, XS-28): never a source for a template, a title or a format. House rules that still hold: lowercase, no questions, no links, @mentions or hashtags in the post, "concept" and larpo.studio in the first reply, no fictional brand names, no banned words, no shared three-word run between same-day captions.
 
 ## 1. Method and limits
 
-- Every original post of the four founder accounts the mirror returned (Augustas from 19 Jul 2025; the co-founders from their first post of this run), with likes, views and bookmarks. Augustas has two eras: era 1 (19 Jul 2025 - 3 Mar 2026, 333 originals, sentence case with growth hooks and a link reply on every post) and the current era (23 Aug - 20 Oct 2026, 25 originals, lowercase).
-- Only Augustas's account has enough reach to rank captions (era 1 n=321 media posts, median 121 likes; now n=24, median 46.5). The co-founders (4 followers, medians 1-3 likes) give voice evidence, not performance evidence.
-- Hook classes are regexes (`_scripts/analyze.mjs`, the era-1 cut in `x-strategy.md`); a caption can sit in several classes.
+- Patterns, numbers and templates: `caption-patterns.md` (script `benchmarks/x-strategy-2026-10/_scripts/captions.mjs`, data `data/_captions.json`).
+- Augustas's account is the only founder account with reach to rank captions: era 1 (19 Jul 2025 - 5 Mar 2026, 301 design posts, median 121 likes, sentence case with growth hooks) and the current era (20 Aug - 20 Oct 2026, 22 design posts, median 46.5 likes, lowercase).
+- The co-founder accounts (4 followers, medians 1-3 likes) never had performance signal, and their posts are X-engine output. Nothing in this note is learned from them.
 
 ## 2. Core ideas
 
-1. **Augustas already writes the right register now.** Current era: 96% lowercase, median 4 words / 28 characters, 24% with one emoji, 0 hashtags, 4% with a link. Era 1 was the opposite (2% lowercase, 22% questions, a CTA link reply on 239 of 251 replies) and Larpo's doctrine has since moved to plain labels (LBC-40..44). [D][LBC]
-2. **Naming the UI part is the strongest caption move on his account.** Era 1: captions naming a UI part 1.22x vs 0.85x without (n=118); dashboard 2.05x (bookmarks 3.58x), sidebar 2.49x, hero 1.21x, footer 0.98x, bento/card 0.73x, pricing 0.36x. [D]
-3. **One judgement word helps; a bare label does not.** Superlatives ("cleanest", "most", "ever", "perfection") 1.22x (n=43); 1-3 word captions 0.72x (n=65) and 0.74x now (n=8); 7-10 words 1.16x (n=79) and 1.18x now (n=5); over 20 words 0.60x. [D]
-4. **Questions, recaps, mentions and promos cost him reach.** Current-era questions 0.69x (n=6, e.g. "clean dark hero / thoughts?" 0.32x); @mentions 0.53x (n=17); Lunor promos 0.33x (n=14); link in the caption 0.33x (n=14). [D]
-5. **Follow-up captions point back.** His animated quote "animated it's even cooler 🔥" (7.7x) works because the quoted still is right under it; the bare "animated 👀" on a weak still did 0.47x. The caption of a follow-up names the relation (now moving, the full view, in thirds), never re-describes the whole thing. [D]
-6. **The co-founders already have distinct voices; they drift toward each other.** Faulkner moved from teardown lines to plain labels to sentence-case opinion + one-word question within six weeks; Rokas rotates eight templates, three of them questions. Without a fixed voice each account would collapse into "hero section concept". [D]
+1. **One register, not four voices.** Design X has no "decision" or "contrast" voice among the accounts that grow; Marcel, rico and Basit each write one move per post (`caption-patterns.md` CP-01). Explanation is what sinks: long describing statements 0.91x and the top bottom-20% pattern alongside work-log fillers. [D]
+2. **Augustas already writes the register.** Current era: 100% lowercase, median 4 words, emoji on 27% (all at the end), no hashtags; his best design captions are a superlative (17.61x), a callout (1.74x) and a judged label in a sentence-like rhythm (3.38x). What to add from the benchmarks: 5-9 words instead of 3-4 (his 3-4 word captions 0.84x, 7-9 words 1.21x), a comparative on follow-ups, a view label on close-ups. [D]
+3. **Lanes keep the network from sounding like a ring.** Four accounts calling the same work "the cleanest" read as coordinated (XP section 6.2); so only @augustasdesign carries verdict words, @rokasrem labels the thing, and the same project never gets two judgement captions in a day. [D][XP]
+4. **The X engine's output is the anti-example.** Its titles ("landing page concept for a ...", "a or b? same hero, different color field", "{domain} hero, light or dark?", "if {technical thing} had a landing page") break CP-01, CP-14 and CP-15 at once; its format (two variants side by side in one 16:9 image) reads small at 514 px (XS-10). [F]
 
 ## 3. Rules
 
-- **RULE CV-01** Write every caption fully lowercase, acronyms included (saas, ai, ui, crm), "i" included; real proper nouns of tools keep their case only in the reply.
-  **Why** Larpo copy is lowercase with acronyms (LBC lowercase rule, 2026-08-26); Augustas's current voice is 96% lowercase and the founder asked for an all-lowercase voice; his two capital "I"s are the only drift.
-  **Applies to** all four accounts. **Check** caption matches `^[^A-Z]*$`. **Source** `augustasdesign.json` current era; LBC lowercase-acronyms decision.
+- **RULE CV-01** Write every caption fully lowercase, acronyms included (ui, ai, saas, crm), "i" and "i've" included; proper names of real tools keep their case only in the reply.
+  **Why** Larpo copy is lowercase with lowercase acronyms (LBC lowercase decision 2026-08-26) and the X engine gate flags any capital outside its proper-name list; Augustas's current voice is 100% lowercase in design posts; casing itself has no measured effect (lowercase 1.01x, sentence 1.05x, CP numbers).
+  **Applies to** all accounts. **Check** caption matches `^[^A-Z]*$`; X engine `checkCaption` passes. **Source** `data/_captions.json` casing; larpo-x-engine shared/gate.mjs.
 
-- **RULE CV-02** Name the UI part and the plain product domain ("payroll dashboard", "edge hosting hero"); never the fictional brand name, never the client's name unless the work is real and approved.
-  **Why** UI-part captions 1.22x vs 0.85x; dashboards 2.05x, sidebars 2.49x; LBC-41 (no fictional brand name).
-  **Applies to** all accounts. **Check** caption contains a UI noun from the template list; no proper name from the build's brand. **Source** era-1 caption cut; LBC-41.
+- **RULE CV-02** Write in the studio register: one move from `caption-patterns.md` section 5 per caption, naming the UI part; never explanatory product copy (what the design does, decided, gave up, how it is read, what each part shows, what "most products" do instead).
+  **Why** Explanatory statements 0.91x pooled (n=164) and over-represented in the bottom 20%; Flo's explanatory captions 0.36-0.65x vs 1.07x for his labels; the founder rejected the decision / detail / contrast voices ("it's just ass", ledger `x-captions` r1).
+  **Applies to** all accounts. **Check** the caption maps to a template id T01-T41; none of `system/x/captions.json.rejectedPhrasings.markers`. **Source** CP-01; ledger/entries/x-captions.json r1.
 
-- **RULE CV-03** Keep each voice's length: Augustas 4-8 words, Rokas 6-10, Faulkner 6-14 (two statements), Marius 12-25 (one contrast line).
-  **Why** Augustas: 7-10 words 1.16-1.18x, 1-3 words 0.72-0.74x, 21+ 0.60x; the co-founders' measured medians are 8 (Rokas), 6.5 (Faulkner) and 28 (Marius) and their roles need the room.
-  **Applies to** all accounts. **Check** word count inside the voice's band. **Source** `_analysis.json.*.captions`.
+- **RULE CV-03** Keep 5-9 words; 3-10 is the hard band for every account (12 for the unscheduled accounts).
+  **Why** 7-9 words 1.19x pooled, 1.20x in the short studio register, 1.21x on Augustas's account; 1-2 words 0.50x on his account; no caption 0.71x.
+  **Applies to** all accounts. **Check** `captions.json.voices.<voice>.words`. **Source** CP-05.
 
-- **RULE CV-04** Allow at most one judgement word per caption, and only on Augustas's account ("clean", "detailed", "cute", "too clean", "next level", "the most ... i've built"); the co-founders state decisions and details, not verdicts.
-  **Why** Superlatives 1.22x on Augustas's era 1 (n=43), but a feed where four accounts call the same work "the cleanest" reads as a ring; separate jobs keep the accounts credible.
-  **Applies to** all accounts. **Check** co-founder captions contain no word from {clean, cleanest, best, most, perfect, perfection, insane, next level, ever}. **Source** era-1 hook cut; XS-19.
+- **RULE CV-04** Give verdict words (clean, cleanest, best, most, ever, unreal, too clean, my favorite) to @augustasdesign only; @rokasrem and the unscheduled accounts label, frame and relate, and never praise; never two judgement captions on one project in one day.
+  **Why** The lead account's superlatives and callouts are its strongest moves (CP-02); a network where every account calls the same work "the cleanest" reads as a ring (XP section 6.2); rico's and Flo's labels show the plain lane works on its own (labels 1.03x, Flo's top five 2.7-4.4x).
+  **Applies to** cross-account plans. **Check** planner verdict check (`captions.json.voices.<voice>.judgement` false for non-lead voices); per project per day at most one caption with a word from `judgementWords`. **Source** CP-02, CP-03.
 
-- **RULE CV-05** Never end with a question or offer a choice ("a or b?", "light or dark?", "thoughts?", "overkill?"); state both options as a fact instead ("same hero, two color fields").
-  **Why** Current-era questions 0.69x; X-wide 0.5x (XP-14); binary questions and recaps at the bottom of Larpo's reach table (LBC-44).
-  **Applies to** all accounts. **Check** no "?" in the caption. **Source** XS-21; XP-14; LBC-44.
+- **RULE CV-05** Never end with a question or offer a choice ("a or b", "light or dark", "which one", "thoughts", "clean?"); state the thing.
+  **Why** Binary-choice questions 0.83x, open questions 0.93x, Augustas's current-era questions 0.61-0.69x; LBC-44; the X engine's "a or b?" titles were rejected (XS-28). Verdict tails scored well only in the old sentence-case growth voice (CP-14).
+  **Applies to** all accounts. **Check** no "?". **Source** CP-14; XS-21.
 
-- **RULE CV-06** Augustas may end with one emoji from his own set (👀 🔥 😍 🫠 🥹); the co-founders use none; no hashtags anywhere.
-  **Why** Emoji is neutral on his account (0.86-1.01x) and part of his voice; the co-founders have used none in 55 posts, which keeps the voices apart.
-  **Applies to** all accounts. **Check** emoji count <= 1 and last for Augustas, 0 for the others; `#` count 0. **Source** `_analysis.json.*.captions.emojiFreq`; XS-23.
+- **RULE CV-06** Only @augustasdesign uses emoji: at most one, at the end, chosen by role (👀 reveal or close-up, 🔥 motion or dark, 😍 reaction, 🫠 small detail, 🥹 older work); no hashtags anywhere.
+  **Why** Emoji has no lift either way (1.00x vs 1.03x) and is a personal signature on every studio account; Rokas's X engine profile has emoji off; hashtags appear on 1% of design captions.
+  **Applies to** all accounts. **Check** emoji count <= 1 and last on Augustas, 0 elsewhere; `#` count 0. **Source** CP-06.
 
-- **RULE CV-07** Keep links, credits and "made with" out of the caption; the first self-reply carries them, 30-150 minutes later, in the same voice (templates R1-R4 below).
-  **Why** Link in the caption 0.33x vs link in a reply 1.02x; @mentions 0.53x (Augustas era 1). XP-18.
-  **Applies to** all accounts. **Check** no url, no "@" in the caption; reply present. **Source** XS-22.
+- **RULE CV-07** Keep links, credits, tools and "made with" out of the caption; the first self-reply carries "concept, made at larpo.studio" (and credits if wanted), 30-150 minutes after the post.
+  **Why** Link in the post 0.33x vs link in a self-reply 1.02x, @mentions 0.53x (Augustas era 1, XS-22); process and tool credits in the caption 0.90x likes and 0.71x bookmarks (CP-13).
+  **Applies to** all accounts. **Check** no url, no "@" in the caption; reply present with "concept" for fictional work. **Source** XS-22; CP-13.
 
-- **RULE CV-08** Mark fictional work with the word "concept" in the caption (or, for Augustas's single-word-label posts, in the first reply), and never write from inside the fiction ("we launched", "our users").
-  **Why** LBC-27 (concept disclosure), LBC-42 (no caption from inside the fiction); the label did not cost reach: Augustas "hero section concept" 1.74x, Faulkner's concept captions 1.17x vs 1.00x.
-  **Applies to** concept work on all accounts. **Check** "concept" in caption or first reply; no first-person-plural product claims. **Source** LBC-27, LBC-42; `faulkner_Design.json`.
+- **RULE CV-08** Disclose fictional work in the first reply, never in the post: no "concept." tacked onto the caption, no fictional brand name, no writing from inside the fiction ("we launched", "our users"), no client tag, price or outcome on a concept.
+  **Why** LBC-27 (disclosure), LBC-41 (no fictional brand name), LBC-42 (no caption from inside the fiction), LBC-45 (no unevidenced money or client claims); the X engine's "{x} concept" titles were rejected (XS-28); the reply keeps the caption to one move (CP-15).
+  **Applies to** concept work on all accounts. **Check** "concept" absent from the caption (`captions.json.banned`) and present in the reply; the X engine gate's concept-name check passes with the project's `conceptNames`. **Source** CP-15; LBC-27, 41, 42, 45.
 
-- **RULE CV-09** No money, client or outcome claims on concept work; on real client work, one true client line a week at most and only on Augustas's account.
-  **Why** Money and client captions scored 1.35x and 1.19x in era 1 (n=22, 20), and they are what Larpo forbids when unevidenced (LBC-45).
-  **Applies to** all accounts. **Check** no "$", "€", "k/mo", "client" on concept posts. **Source** era-1 hook cut; LBC-45.
+- **RULE CV-09** On real, approved client work, one true client line a week is allowed on @augustasdesign ("dashboard for a client", a true figure); never on concepts, never on co-founder accounts.
+  **Why** Client tags ran 1.75x on Augustas's era 1 (n=6) and money lines 1.36x pooled, which is exactly why they need a true source (LBC-45).
+  **Applies to** real client work. **Check** the asset's project is not `fictional`; the client approved the name (LBC-23). **Source** CP-15; LBC-23, LBC-45.
 
-- **RULE CV-10** Never copy a caption between accounts: the same project gets a different template per account, and two captions posted on the same day share no three-word run.
-  **Why** Identical captions across a small network read as coordinated and earn "not interested" signals (XP section 6.2); voices exist so the series can travel through four accounts.
-  **Applies to** cross-account plans. **Check** no shared word trigram between any two same-day captions; template ids differ per account for one project. **Source** XS-19.
+- **RULE CV-10** Never copy a caption between accounts or reuse one on an account within 30 days; two captions posted the same day share no three-word run.
+  **Why** Identical captions across a small network read as coordinated (XP section 6.2); verbatim reuse decays (rico 3.89x -> 0.82x, CP-16).
+  **Applies to** cross-account plans. **Check** planner trigram check and "caption used in the last 30 days". **Source** CP-16; XS-19.
 
-- **RULE CV-11** Use at most one line break, to split the label from a second beat ("another day,\n\nanother clean hero design"); no bullet lists except a spec post (template T14).
-  **Why** Augustas's line-broken captions are his own rhythm; list captions are the spec format (rico cheatsheets RD-36), not a showcase caption.
-  **Applies to** all accounts. **Check** newline count <= 2 characters (one blank line); lists only in T14. **Source** `augustasdesign.json`.
+- **RULE CV-11** Use at most one blank line, splitting a label from one short second beat; no lists except a spec post (T41).
+  **Why** Two beats 1.17x, three or more 0.70x (CP-07).
+  **Applies to** all accounts. **Check** at most one "\n\n"; list lines only in T41. **Source** CP-07.
 
-- **RULE CV-12** Keep Larpo's banned words and punctuation out: no em dashes, no "world-class", "premium", "innovative", "immersive", "full-service", "product design studio".
-  **Why** LBC-04 and LBC-07; era 1 used "world-class" and "premium" in its giveaway posts.
-  **Applies to** all accounts. **Check** regex for the word list and "—" returns 0. **Source** LBC-04, LBC-07.
+- **RULE CV-12** Keep Larpo's banned words and punctuation out: no em dashes, no exclamation marks, no "world-class", "premium", "innovative", "immersive", "seamless", "elevate", "crafted", "product design studio".
+  **Why** LBC-04 and LBC-07; the X engine gate blocks the same list (shared/brand-rules.mjs).
+  **Applies to** all accounts. **Check** `captions.json.banned`; X engine `checkCaption`. **Source** LBC-04, LBC-07.
 
-- **RULE CV-13** Follow-up captions name the relation to the earlier post in 2-5 words (now moving, the full view, in thirds, up close, two weeks on) and quote it, instead of describing the work again or numbering it "part 2".
-  **Why** "animated it's even cooler 🔥" as a quote ran 7.7x; series quotes are the benchmarks' default (XS-16); a numbered series label works on X (XP-19, 2.95x, n=6) but the relation words carry the same cue in the founders' voice.
-  **Applies to** series steps 2+. **Check** caption contains a relation phrase from T10-T13 and the post quotes an earlier series post. **Source** `_series.json`; XS-16; XP-19.
+- **RULE CV-13** Caption a follow-up with a comparative and the relation ("moving, it's even better", "and the full {ui} is even better"), quoting the earlier post; never a bare relation ("animated", "dark mode version") and never a "part 2".
+  **Why** Augustas "animated it's even cooler 🔥" 7.72x vs "animated 👀" 0.47x (CP-09); quotes are the benchmarks' series default (XS-16).
+  **Applies to** series steps 2+. **Check** follow templates T11, T12, T33, T35; the post quotes an earlier series post. **Source** CP-09; XS-16.
 
-## 4. The four voices
+- **RULE CV-14** Never study, imitate, template or pool the X engine's generated posts on @rokasrem, @faulkner_Design or @marius_vanagas, their titles or their formats.
+  **Why** Founder verdict 2026-10-22: "do not study the designs that were made by the engine before ... plus the entire title writing of the post and format" (ledger `x-engine-posts` r1); the captions drafted from them were rejected the same day (ledger `x-captions` r1).
+  **Applies to** studies, templates, caption.md lines. **Check** `captions.mjs` and `cadence.mjs` exclude the three handles; no template shares a non-generic three-word run with their posts (check run 2026-10-22: 0 of 163 captions). **Source** XS-28; ledger/entries/x-engine-posts.json r1, x-captions.json r1.
 
-### 4.1 Voice table
+## 4. Lanes (same register, different rotation)
 
-| Account | Role in a series | Register | Length | Emoji | Never |
+| Account | Status | Lane: patterns it rotates | Words | Emoji | Never |
 |---|---|---|---|---|---|
-| @augustasdesign | the reaction: shows the piece and says how it feels | "{judgement} {ui part}" or "this {ui part} is {judgement}" | 4-8 words | <= 1 at the end (👀 🔥 😍 🫠 🥹) | questions, recaps, links, @, brand names |
-| @faulkner_Design | the decision: what the design chose and what it gave up | two short statements, first the choice, then the trade | 6-14 words | none | verdict words, questions ("overkill?") |
-| @rokasrem | the detail: one concrete thing he made, first person | "i {verb} the {element} {how}" or "{domain} {ui part}, {variant}. concept." | 6-10 words | none | a/b and light-or-dark questions, verdict words |
-| @marius_vanagas | the contrast: the category habit vs this design | "most {category} {habit}. this one {difference}." | 12-25 words | none | verdict words, first person |
+| @augustasdesign | posts by hand; the Tempra, Kestrel and Quorum assets are reserved for him | superlative about a named part, "this {part} ..." callout, first-person reaction, view label on close-ups, comparative follow-up, a standard line at most twice a week | 3-10 (aim 5-9) | <= 1 at the end | questions, explanations, brand names, "concept" in the post |
+| @rokasrem | scheduled by the X engine (emoji off) | plain label, view label, pair label, category tag ("for a {domain} app"), plain series relation; work-log only on 4-ups | 3-10 (aim 4-8) | none | verdict words, questions, the X engine's old title formats |
+| @faulkner_Design | not scheduled (founder 2026-10-22) | standard lines and view labels when active | 3-12 | none | as above |
+| @marius_vanagas | not scheduled | plain labels and series relations when active | 3-12 | none | as above |
 
-### 4.2 Augustas's own posts (his words) and how they did
+### 4.1 Augustas's own posts (his words) and how they did
 
 Current era (lowercase; median 46.5 likes):
 
-| Caption | Format | Likes / views / bookmarks | rel |
-|---|---|---|---|
-| "the most detailed dashboard I've ever built 👀" | 3-up vertical thirds | 819 / 37,574 / 706 | 17.6x |
-| "animated it's even cooler 🔥" (quote of the above, 1.5 days later) | 5 s video | 359 / 11,804 / 352 | 7.7x |
-| "incredibly detailed hero design" | single 16:10 | 157 / 5,187 / 103 | 3.4x |
-| "light dashboard design" | 2-up 4:5 pair | 106 / 5,071 / 98 | 2.3x |
-| "hero section concept" | single | 81 / 2,544 / 23 | 1.7x |
-| "this hero is too clean" | single | 81 / 2,647 / 40 | 1.7x |
-| "another design session / on 5-fig client work" | single portrait | 74 / 2,274 / 26 | 1.6x |
-| "the detail in this hero is next level" | single | 47 / 1,451 / 14 | 1.0x |
-| "cute component design" | single 1:1 | 37 / 1,033 / 16 | 0.8x |
-| "always animating my heroes 😍" (quote, same hour) | video | 22 / 1,650 / 8 | 0.5x |
-| "minimal card design" | single | 21 / 953 / 7 | 0.5x |
-| "clean dark hero / thoughts?" | single | 15 / 1,119 / 4 | 0.3x |
-| "hero section design" | single | 13 / 2,106 / 1 | 0.3x |
+| Caption | Format | Likes / views / bookmarks | rel | Pattern |
+|---|---|---|---|---|
+| "the most detailed dashboard I've ever built 👀" | 3-up vertical thirds | 819 / 37,574 / 706 | 17.6x | superlative |
+| "animated it's even cooler 🔥" (quote of the above, 1.5 days later) | 5 s video | 359 / 11,804 / 352 | 7.7x | comparative follow-up |
+| "incredibly detailed hero design" | single 16:10 | 157 / 5,187 / 103 | 3.4x | judged label |
+| "light dashboard design" | 2-up 4:5 pair | 106 / 5,071 / 98 | 2.3x | pair label |
+| "hero section concept" | single | 81 / 2,544 / 23 | 1.7x | label |
+| "this hero is too clean" | single | 81 / 2,647 / 40 | 1.7x | callout |
+| "another design session / on 5-fig client work" | single portrait | 74 / 2,274 / 26 | 1.6x | money (real client) |
+| "the detail in this hero is next level" | single | 47 / 1,451 / 14 | 1.0x | callout |
+| "cute component design" | single 1:1 | 37 / 1,033 / 16 | 0.8x | judged label |
+| "always animating my heroes 😍" (quote, same hour) | video | 22 / 1,650 / 8 | 0.5x | bare relation |
+| "minimal card design" | single | 21 / 953 / 7 | 0.5x | judged label |
+| "clean dark hero / thoughts?" | single | 15 / 1,119 / 4 | 0.3x | question tail |
+| "hero section design" | single | 13 / 2,106 / 1 | 0.3x | bare label |
 
-Era 1 (sentence case; median 121 likes), the patterns that carried: "Just built the cleanest dashboard ever" (1,299 likes), "The cleanest sidebar design ever!" (693 likes, 384k views), "This sidebar is too clean" (455), "glassmorphic AI chat design / clean?" (814), "The coolest dashboard design I've ever done 👀" (647). The ones that sank: Lunor promos, @-credits in the caption, "Before → After" redesigns of his own old work (0.57x, n=16), long story posts over 20 words (0.60x).
+Era 1 (sentence case; median 121 likes), the moves that carried: "Just built the cleanest dashboard ever" (10.7x), "The cleanest sidebar design ever!" (5.7x), "The coolest dashboard design I've ever done 👀" (5.4x), "This sidebar is too clean" (3.8x), "Closer look 👀" (2.2x), "Still one of my best hero designs" (2.4x). The ones that sank: Lunor promos and giveaways, @-credits, "Animated" labels on their own (0.27-1.26x), long story posts over 15 words (0.55x).
 
-What to keep from him: the UI noun up front; "too clean", "detailed", "the most ... i've built" as the one judgement; 👀 for a reveal, 🔥 for motion; the line break before a second beat. What to drop: the question tail, "another day, another hero design" and "daily hero design inspiration" as daily fillers (1.01x era 1; 0.99x and 0.52x now), bare two-word labels.
+What to keep from him: the UI noun, "the most ... i've ...", "this {part} is too clean", "closer look 👀", "even cooler" on a follow-up, 👀 for a reveal and 🔥 for motion. What to drop: two-word labels, "daily hero design inspiration", the question tail, the bare "animated".
 
-### 4.3 The co-founders (their words)
+## 5. Reply templates (first self-reply, 30-150 min later)
 
-- **@faulkner_Design** (24 posts, median 6.5 words, 75% lowercase, 0 emoji): started with teardown lines ("you can sell a camera without naming a single spec."), moved to plain labels ("hero section concept, ai image search", "landing page concept for a writing tool"), then to sentence-case opinions with a one-word question ("Every claim wired to its source. Overkill?"). Keep the first two moves; drop the question tail and the capitals. His strongest material is the decision: "same product, different structure. concept."
-- **@rokasrem** (30 posts, median 8 words, 100% lowercase, 0 emoji, 20% questions): rotates templates on a fixed 15:00 / 21:00 schedule: "landing page concept for a {domain} tool", "if {technical thing} had a landing page. concept.", "our hero, rebuilt as a {object}", "i set the headline as {thing}", "a or b? same hero, different color field", "{domain} hero, light or dark?". Keep the first-person detail ("i hung the cta on the key cabinet as the next tag to review") and the playful "if ... had a landing page"; retire the a/b and light-or-dark questions.
-- **@marius_vanagas** (1 post this year, 28 words, lowercase): "most saas heroes open by showing the interface. this one shows nothing of the product at all..." This is the contrast voice; give it to him alone so it does not overlap with Faulkner's decision voice.
-
-## 5. Caption templates (engine phrasing)
-
-Placeholders: `{ui}` the UI part (dashboard, sidebar, inbox, calendar, onboarding, settings, hero, pricing, faq, footer, changelog, testimonials), `{domain}` the plain product domain (payroll, edge hosting, lab results, field ops), `{detail}` one concrete element (the latency chart, the region map, the approval chip), `{n}` a true count from the design. Add "concept" where CV-08 asks. Pick one row per post; one account per column.
-
-| # | Format | @augustasdesign | @faulkner_Design | @rokasrem | @marius_vanagas |
-|---|---|---|---|---|---|
-| T01 | close-up (component or region, day 0) | "{detail}, up close 👀" | "the {detail} does the work. everything around it stays quiet." | "i drew the {detail} so it reads at a glance. concept." | "most {domain} tools bury the {detail} two clicks deep. this one leaves it in plain sight." |
-| T02 | full dashboard (single) | "{domain} dashboard, all of it" | "{n} panels, one question: {question as a statement}." | "{domain} dashboard, full view. concept." | "most {domain} dashboards start with totals. this one starts with what changed since yesterday." |
-| T03 | 3-strip carousel (vertical thirds) | "one {domain} dashboard, in thirds 👀" | "left to right: {a}, {b}, {c}. read in that order." | "the {domain} dashboard cut in three. concept." | "split into thirds you can see the order it is read in: {a}, then {b}, then {c}." |
-| T04 | hero (single) | "{judgement} {domain} hero" (e.g. "detailed edge hosting hero") | "{layout} hero. the product sits {where}, the headline stays short." | "{domain} hero, {variant} version. concept." | "most {category} heroes open with a slogan. this one opens with the product doing its job." |
-| T05 | hero, light and dark pair | "{domain} hero, light and dark" | "two modes, one layout. the {detail} holds in both." | "same hero, two color fields. concept." | "dark mode is usually an afterthought. here both modes were drawn from the same grid." |
-| T06 | bento section | "{n} bento cells for a {domain} tool" | "each cell shows one thing the product does. no filler cells." | "i built each bento cell around one object. concept." | "most bento grids repeat the same card {n} times. this one gives every cell its own object." |
-| T07 | component (still or loop) | "{ui} component, small details 🫠" | "the {component} has one job: {job}." | "i made the {component} {behaviour}." | "a {component} is usually a form. this one finishes the task in a single step." |
-| T08 | pricing section | "{judgement} pricing section" | "{n} plans. the one most teams need sits in the middle." | "pricing for a {domain} tool, set like a {object}. concept." | "most pricing tables make you compare twelve rows. this one answers who each plan is for." |
-| T09 | faq, footer, testimonials or changelog section | "{section} for a {domain} site" | "the {section} answers {n} questions before anyone books a call." | "{section}, set like a {object}. concept." | "most {section}s are an afterthought at the bottom of the page. this one carries real product news." |
-| T10 | motion follow-up (quote of the still, day 1-2) | "same {ui}, now moving 🔥" | "the motion shows the order: {a} first, then {b}." | "the {detail} now {verb}s in {n} steps." | "a still hides the sequence. moving, you see {a} lead into {b}." |
-| T11 | full view after a close-up (quote, day 1) | "the whole {ui} behind yesterday's close-up" | "the close-up was one panel. here is the system around it." | "zoomed out: the full {domain} {ui}. concept." | "the detail makes sense once you see the whole {ui} it lives in." |
-| T12 | second showing (same image, 7-14 or 30-60 days later) | "still one of my favorite {ui}s" | "{n} weeks on, the {decision} still holds." | "back to the {domain} {ui}. still the {detail} i like most." | "weeks later the {category} habit is the same. this one still breaks it." |
-| T13 | motion as a standalone post (day 5-9, not a quote) | "{domain} {ui}, animated" | "{n} seconds, one state change: {from} to {to}." | "i animated the {detail} from {from} to {to}. concept." | "motion here explains the product, it does not decorate it: {from} becomes {to}." |
-| T14 | spec post (text list over one screen) | "{ui} spec:\n- type {font} {sizes}\n- radius {r}\n- rows {h}px\n- greys {hex list}" | the same list, opened with "what this {ui} is built on:" | the same list, opened with "the numbers behind this {ui}:" | (not used) |
-
-Reply templates (first self-reply, 30-150 min later, CV-07):
-- **R1 (Augustas)**: "more at larpo.studio" or "made at larpo.studio, concept".
-- **R2 (Faulkner)**: "concept for a {domain} tool. made at larpo.studio".
-- **R3 (Rokas)**: "built in {tool}. larpo.studio".
-- **R4 (any, credits)**: "type: {font}. icons: {set}. inspired by @{who}" (the only place an @mention goes).
+- **@augustasdesign**: "concept, made at larpo.studio".
+- **@rokasrem**: "concept work for a {domain} app. made at larpo.studio".
+- **@faulkner_Design** / **@marius_vanagas** (when active): "concept for a {domain} app, made at larpo.studio" / "concept. larpo.studio".
+- Credits, when wanted, join the same reply: "type: {font}. icons: {set}." The only place an @mention goes.
 
 ## 6. Dos and Don'ts
 
-- **Do** "one payroll dashboard, in thirds 👀" (UI noun, one beat, one emoji). **Don't** "dashboard design" (bare label, 0.72x class) or "which dashboard is better?" (question).
-- **Do** give Faulkner "two modes, one layout. the region map holds in both." on the day Augustas posts the dark hero. **Don't** let both accounts say "clean dark hero".
-- **Do** "same {ui}, now moving 🔥" as a quote the day after the still. **Don't** "animated 👀" on a still nobody saw (0.47x).
-- **Do** keep "concept" on fictional work. **Don't** name the fictional brand or write "our users love it".
-- **Do** put "made at larpo.studio" in the reply. **Don't** put the url or "@" in the caption (0.33x, 0.53x).
+- **Do** "the most detailed {ui} i've designed so far 👀". **Don't** "{domain} dashboard, all of it" or "detailed hero for a team calendar 👀" (labels that ask the image to do all the work, CP-02, CP-04).
+- **Do** "this bento turned out way too clean 🔥". **Don't** "each cell shows one thing the product does. no filler cells." (our own rejected draft: an explanation, ledger `x-captions` r1).
+- **Do** give @rokasrem "{detail}, up close" or "feature bento for a {domain} app". **Don't** give him "i drew the {detail} so it reads at a glance. concept." or "a or b? same hero, different color field" (the X engine's register, XS-28).
+- **Do** "and the full {ui} is even better 👀" as the quote the next day. **Don't** "the close-up was one panel. here is the system around it." (explanation) or "animated 👀" (0.47x).
+- **Do** put "concept, made at larpo.studio" in the reply. **Don't** end the caption with "concept." or name the fictional brand.
 
 ## 7. Exceptions & judgement calls
 
-- **Real client work** may name the client in Augustas's caption when the client has approved the logo and name (LBC-23); co-founders still use the domain.
-- **A genuinely odd detail** (LBC-43, the "name the strange thing" move) is Rokas's lane; on the other accounts use it only when something genuinely strange was made.
-- **Emoji choice** is Augustas's taste; the set above is what he used in the last two months, not a fixed list.
-- **Canon conflict**: `knowledge/founder/canon/post-component.md` says captions are "3-8 words, sentence case" (from XP-13). For the founders' accounts the founder asked for lowercase and Augustas's current data supports it; the canon page is left unchanged here and should be reconciled by whoever owns canon.
+- **Real client work** may name the client on Augustas's account when the client approved it (LBC-23); co-founder accounts still use the domain.
+- **A genuinely odd detail** may lead as a callout ("the {detail} steals the show"), on any account, only when the detail is real and visible in the image.
+- **Emoji choice** is Augustas's taste; the set is what he used in the last two months, not a fixed list.
+- **Canon conflict**: `knowledge/founder/canon/post-component.md` says captions are 3-8 words in sentence case (from XP-13). The founder asked for lowercase and the caption study supports 5-9 words; the canon page is owned by another helper and is left unchanged here, to be reconciled there.
 
 ## 8. Open questions
 
-- Whether Faulkner's and Rokas's voices perform, once their accounts have an audience; re-rank after 20 posts per template (XS-26).
-- Whether "concept" in Augustas's main caption (rather than the reply) changes his reach; one observation (1.74x) is not enough.
-- Whether Marius will post; the plan treats his slot as optional until he does.
+- Whether @rokasrem's label lane earns anything once the account has an audience; re-rank after 20 posts per template (XS-26).
+- Whether the planner should read the `(b)` and `(c)` options in `library/*/*/caption.md` and let the founder pick in the day sheet; today it reads only the first `- <handle>:` line.
+- Whether @faulkner_Design and @marius_vanagas return; until then their slots stay empty.

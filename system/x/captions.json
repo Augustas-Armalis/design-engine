@@ -1,40 +1,461 @@
 {
   "schema": "design-engine.x-captions/v1",
   "updated": "2026-10-22",
-  "source": "knowledge/x/caption-voice.md section 5 (T01-T14, engine phrasing written from the founders' own patterns; never copied from Marcel or rico). A hand-written line in library/<project>/<asset>/caption.md always wins over a template. {vars} come from the asset manifest's captionVars; a caption with an unfilled {var} is flagged 'needs words', never posted.",
+  "source": "knowledge/x/caption-patterns.md (CP-01..16, templates T01-T41: our own phrasing of the patterns measured in 1,375 design captions of Marcel Kargul, rico, Basit, uisabor, Flo, Mariana, Oguz, Paco, rauno, Steve Schoger, Jim Raptis and Augustas's own posts; data knowledge/benchmarks/x-strategy-2026-10/data/_captions.json) and knowledge/x/caption-voice.md (CV-01..14, the house rules). The X-engine posts on @rokasrem, @faulkner_Design and @marius_vanagas are negative evidence and were never used (XS-28). A hand-written line in library/<project>/<asset>/caption.md always wins over a template. {vars} come from the asset manifest's captionVars; a caption with an unfilled {var} is flagged 'needs words', never posted.",
+  "register": "Studio register for every account: lowercase, 5-9 words (3-10 allowed), one measured pattern per caption (superlative about a named part, 'this {part} ...' callout, first-person reaction, view label, standard line, comparative follow-up, named label), never explanatory product copy (what the design does, decided or gave up), never a question, never the fictional brand name, never 'concept' in the post (it goes in the first reply). Accounts differ by pattern rotation and subject lane, not by writing explanations.",
   "relations": {
     "first": "the first post of an asset, or a series start",
-    "follow": "a series step 2+ that quotes the previous step (CV-13, XS-16)",
-    "second": "the same image again after 7-60 days (T12, XS-18)"
+    "follow": "a series step 2+ that quotes the previous step (CV-13, XS-16); the caption carries a comparative relation cue (CP-09)",
+    "second": "the same image again after 7-60 days (XS-18); new words, same or a stronger pattern (CP-16)"
   },
   "templates": {
-    "dashboard-closeup": { "first": { "augustas": "{detail}, up close 👀", "faulkner": "the {detail} does the work. everything around it stays quiet.", "rokas": "i drew the {detail} so it reads at a glance. concept.", "marius": "most {domain} tools bury the {detail} two clicks deep. this one leaves it in plain sight." }, "id": "T01" },
-    "bento-cell": { "first": { "augustas": "{detail}, up close 👀", "faulkner": "the {detail} does the work. everything around it stays quiet.", "rokas": "i drew the {detail} so it reads at a glance. concept.", "marius": "most {domain} tools bury the {detail} two clicks deep. this one leaves it in plain sight." }, "id": "T01" },
-    "dashboard-full": { "first": { "augustas": "{domain} dashboard, all of it", "faulkner": "{n} panels, one question: {question}.", "rokas": "{domain} dashboard, full view. concept.", "marius": "most {domain} dashboards start with totals. this one starts with {difference}." }, "follow": { "augustas": "the whole {ui} behind yesterday's close-up", "faulkner": "the close-up was one panel. here is the system around it.", "rokas": "zoomed out: the full {domain} {ui}. concept.", "marius": "the detail makes sense once you see the whole {ui} it lives in." }, "id": "T02/T11" },
-    "dashboard-strips-3": { "first": { "augustas": "one {domain} dashboard, in thirds 👀", "faulkner": "left to right: {a}, {b}, {c}. read in that order.", "rokas": "the {domain} dashboard cut in three. concept.", "marius": "split into thirds you can see the order it is read in: {a}, then {b}, then {c}." }, "id": "T03" },
-    "full-plus-strips": { "first": { "augustas": "one {domain} dashboard, in thirds 👀", "faulkner": "left to right: {a}, {b}, {c}. read in that order.", "rokas": "the {domain} dashboard cut in three. concept.", "marius": "split into thirds you can see the order it is read in: {a}, then {b}, then {c}." }, "id": "T03" },
-    "hero-still": { "first": { "augustas": "{judgement} {domain} hero", "faulkner": "{layout} hero. the product sits {where}, the headline stays short.", "rokas": "{domain} hero, {variant} version. concept.", "marius": "most {category} heroes open with a slogan. this one opens with the product doing its job." }, "id": "T04" },
-    "pair-7x8": { "first": { "augustas": "{domain} {ui}, light and dark", "faulkner": "two modes, one layout. the {detail} holds in both.", "rokas": "same {ui}, two color fields. concept.", "marius": "dark mode is usually an afterthought. here both modes were drawn from the same grid." }, "id": "T05" },
-    "bento-still": { "first": { "augustas": "{n} bento cells for a {domain} tool", "faulkner": "each cell shows one thing the product does. no filler cells.", "rokas": "i built each bento cell around one object. concept.", "marius": "most bento grids repeat the same card {n} times. this one gives every cell its own object." }, "id": "T06" },
-    "component-still": { "first": { "augustas": "{ui} component, small details 🫠", "faulkner": "the {component} has one job: {job}.", "rokas": "i made the {component} {behaviour}.", "marius": "a {component} is usually a form. this one finishes the task in a single step." }, "id": "T07" },
-    "section-still": { "first": { "augustas": "{section} for a {domain} site", "faulkner": "the {section} answers {n} questions before anyone books a call.", "rokas": "{section}, set like a {object}. concept.", "marius": "most {section}s are an afterthought at the bottom of the page. this one carries real product news." }, "id": "T08/T09" },
-    "grid-4-16x9": { "first": { "augustas": "four sections of one {domain} site", "faulkner": "{n} sections, one grid. nothing on the page repeats.", "rokas": "four cuts of the {domain} site. concept.", "marius": "most landing pages stack the same block four times. here every section has its own job." }, "id": "engine" },
-    "hero-reel": { "first": { "augustas": "{domain} {ui}, animated", "faulkner": "{n} seconds, one state change: {from} to {to}.", "rokas": "i animated the {detail} from {from} to {to}. concept.", "marius": "motion here explains the product, it does not decorate it: {from} becomes {to}." }, "follow": { "augustas": "same {ui}, now moving 🔥", "faulkner": "the motion shows the order: {a} first, then {b}.", "rokas": "the {detail} now {verb}s in {n} steps.", "marius": "a still hides the sequence. moving, you see {a} lead into {b}." }, "id": "T13/T10" },
-    "component-loop": { "first": { "augustas": "{domain} {ui}, animated", "faulkner": "{n} seconds, one state change: {from} to {to}.", "rokas": "i animated the {detail} from {from} to {to}. concept.", "marius": "motion here explains the product, it does not decorate it: {from} becomes {to}." }, "follow": { "augustas": "same {ui}, now moving 🔥", "faulkner": "the motion shows the order: {a} first, then {b}.", "rokas": "the {detail} now {verb}s in {n} steps.", "marius": "a still hides the sequence. moving, you see {a} lead into {b}." }, "id": "T13/T10" },
-    "_second": { "second": { "augustas": "still one of my favorite {ui}s", "faulkner": "{weeks} weeks on, the {decision} still holds.", "rokas": "back to the {domain} {ui}. still the {detail} i like most.", "marius": "weeks later the {category} habit is the same. this one still breaks it." }, "id": "T12" }
+    "dashboard-closeup": {
+      "first": {
+        "augustas": "closer look at the {detail} 👀",
+        "rokas": "{detail}, up close",
+        "faulkner": "the {detail} is where the work went",
+        "marius": "{detail} from a {domain} app"
+      },
+      "id": "T01/T04",
+      "patterns": {
+        "augustas": "view-label",
+        "rokas": "view-label",
+        "faulkner": "callout",
+        "marius": "named-thing"
+      }
+    },
+    "bento-cell": {
+      "first": {
+        "augustas": "the detail in this one cell is unreal",
+        "rokas": "one bento cell, up close",
+        "faulkner": "a single bento cell, closer",
+        "marius": "bento cell from a {domain} app"
+      },
+      "id": "T02/T04",
+      "patterns": {
+        "augustas": "callout",
+        "rokas": "view-label",
+        "faulkner": "view-label",
+        "marius": "named-thing"
+      }
+    },
+    "dashboard-full": {
+      "first": {
+        "augustas": "the most detailed {ui} i've designed so far 👀",
+        "rokas": "{domain} dashboard, full view",
+        "faulkner": "no reason {domain} software can't look like this",
+        "marius": "the whole {domain} workspace on one screen"
+      },
+      "follow": {
+        "augustas": "and the full {ui} is even better 👀",
+        "rokas": "zoomed out: the whole {ui}",
+        "faulkner": "the full screen behind the close-up",
+        "marius": "same {ui}, all of it this time"
+      },
+      "id": "T06/T09 (first), T11/T12 (follow)",
+      "patterns": {
+        "augustas": "superlative / series-follow (comparative)",
+        "rokas": "named-thing + view / view-label",
+        "faulkner": "normalise-standard",
+        "marius": "named-thing"
+      }
+    },
+    "dashboard-strips-3": {
+      "first": {
+        "augustas": "could look at this {ui} all day 😍",
+        "rokas": "{domain} dashboard in light mode",
+        "faulkner": "every {domain} tool deserves this much care",
+        "marius": "{domain} dashboard, start to finish"
+      },
+      "id": "T13/T15",
+      "patterns": {
+        "augustas": "reaction (whole work, never the cut, CP-10)",
+        "rokas": "named-thing",
+        "faulkner": "normalise-standard",
+        "marius": "named-thing"
+      }
+    },
+    "full-plus-strips": {
+      "first": {
+        "augustas": "my favorite {ui} i've built this year",
+        "rokas": "{domain} dashboard, whole and up close",
+        "faulkner": "every {domain} tool deserves this much care",
+        "marius": "{domain} dashboard, start to finish"
+      },
+      "id": "T14/T15",
+      "patterns": {
+        "augustas": "superlative",
+        "rokas": "named-thing + view",
+        "faulkner": "normalise-standard",
+        "marius": "named-thing"
+      }
+    },
+    "hero-still": {
+      "first": {
+        "augustas": "probably the cleanest {domain} hero i've made 👀",
+        "rokas": "{domain} landing page, product first",
+        "faulkner": "{category} sites can look this good",
+        "marius": "hero for a {domain} tool"
+      },
+      "id": "T16/T20",
+      "patterns": {
+        "augustas": "superlative",
+        "rokas": "named-thing",
+        "faulkner": "normalise-standard",
+        "marius": "category tag"
+      }
+    },
+    "pair-7x8": {
+      "first": {
+        "augustas": "honestly can't pick a mode on this {ui} 😍",
+        "rokas": "the {ui}, dark mode and light mode",
+        "faulkner": "both modes of one {ui}",
+        "marius": "the {ui}, two modes"
+      },
+      "id": "T21/T23",
+      "patterns": {
+        "augustas": "reaction",
+        "rokas": "named-thing (pair label)",
+        "faulkner": "named-thing",
+        "marius": "named-thing"
+      }
+    },
+    "bento-still": {
+      "first": {
+        "augustas": "this bento turned out way too clean 🔥",
+        "rokas": "feature bento for a {domain} app",
+        "faulkner": "feature sections deserve this much detail",
+        "marius": "{domain} features, bento style"
+      },
+      "id": "T24/T27",
+      "patterns": {
+        "augustas": "callout",
+        "rokas": "named-thing + category tag",
+        "faulkner": "normalise-standard",
+        "marius": "named-thing"
+      }
+    },
+    "component-still": {
+      "first": {
+        "augustas": "tiny {ui}, way too much detail 🫠",
+        "rokas": "{ui} component for a {domain} app",
+        "faulkner": "the {ui} component, a little closer",
+        "marius": "{domain} app, the {ui} component"
+      },
+      "id": "T29/T30",
+      "patterns": {
+        "augustas": "callout",
+        "rokas": "named-thing",
+        "faulkner": "view-label",
+        "marius": "named-thing"
+      }
+    },
+    "section-still": {
+      "first": {
+        "augustas": "the {ui} might be better than the hero",
+        "rokas": "{ui} section for a {domain} app",
+        "faulkner": "sections like this {ui} deserve the same care",
+        "marius": "{domain} site, the {ui} section"
+      },
+      "id": "T25/T28",
+      "patterns": {
+        "augustas": "callout (comparative)",
+        "rokas": "named-thing + category tag",
+        "faulkner": "normalise-standard",
+        "marius": "named-thing"
+      }
+    },
+    "grid-4-16x9": {
+      "first": {
+        "augustas": "my favorite screens from this {domain} build 😍",
+        "rokas": "a few {domain} screens from this week",
+        "faulkner": "four screens from one {domain} app",
+        "marius": "{domain} app, four screens"
+      },
+      "id": "T31/T32",
+      "patterns": {
+        "augustas": "superlative (1.65x on 4-ups)",
+        "rokas": "work-log (only on 4-ups, CP-12)",
+        "faulkner": "named-thing",
+        "marius": "named-thing"
+      }
+    },
+    "hero-reel": {
+      "first": {
+        "augustas": "the load-in might be my favorite part 🔥",
+        "rokas": "the {ui}, with its load-in",
+        "faulkner": "{ui} for a {domain} app, in motion",
+        "marius": "the whole {ui}, animated"
+      },
+      "follow": {
+        "augustas": "moving, it's even better 🔥",
+        "rokas": "same {ui}, now moving",
+        "faulkner": "the {ui} again, this time moving",
+        "marius": "now with the load-in"
+      },
+      "id": "T34/T36 (first), T33/T35 (follow)",
+      "patterns": {
+        "augustas": "superlative / series-follow (comparative)",
+        "rokas": "named-thing / series-follow",
+        "faulkner": "named-thing / series-follow",
+        "marius": "named-thing / series-follow"
+      }
+    },
+    "component-loop": {
+      "first": {
+        "augustas": "this little {ui} interaction feels way too smooth 🫠",
+        "rokas": "{ui} interaction for a {domain} app",
+        "faulkner": "{domain} app, the {ui} interaction",
+        "marius": "the {ui}, animated"
+      },
+      "follow": {
+        "augustas": "even better once it moves 🔥",
+        "rokas": "same {ui}, now animated",
+        "faulkner": "the {ui}, this time in motion",
+        "marius": "now it moves"
+      },
+      "id": "T29m/T30m (first), T33/T35 (follow)",
+      "patterns": {
+        "augustas": "callout / series-follow (comparative)",
+        "rokas": "named-thing / series-follow",
+        "faulkner": "named-thing / series-follow",
+        "marius": "named-thing / series-follow"
+      }
+    },
+    "_second": {
+      "second": {
+        "augustas": "still my favorite {ui} from this year 🥹",
+        "rokas": "coming back to this {ui}",
+        "faulkner": "{domain} apps still rarely look like this",
+        "marius": "this {ui}, one more time"
+      },
+      "id": "T37/T39/T40",
+      "patterns": {
+        "augustas": "superlative (re-show)",
+        "rokas": "named-thing (re-show)",
+        "faulkner": "normalise-standard (re-show, 2.38x)",
+        "marius": "named-thing (re-show)"
+      }
+    }
+  },
+  "alternates": {
+    "about": "Further options per format for a human picking by hand (the planner reads templates only). Same rules; pick one that shares no three-word run with the day's other captions.",
+    "dashboard-closeup": {
+      "first": {
+        "augustas": [
+          "the detail in this {detail} is unreal",
+          "my favorite little {detail} in the whole app 🫠"
+        ],
+        "rokas": [
+          "{detail} from a {domain} app"
+        ]
+      }
+    },
+    "dashboard-full": {
+      "first": {
+        "augustas": [
+          "this {ui} turned out way too clean",
+          "{domain} software can look like this"
+        ],
+        "rokas": [
+          "the whole {domain} workspace on one screen"
+        ]
+      }
+    },
+    "dashboard-strips-3": {
+      "first": {
+        "augustas": [
+          "my favorite {ui} i've built this year",
+          "{domain} software can look like this"
+        ]
+      }
+    },
+    "hero-still": {
+      "first": {
+        "augustas": [
+          "the product shot in this hero is unreal",
+          "{category} sites can look this good"
+        ],
+        "rokas": [
+          "hero for a {domain} app"
+        ]
+      }
+    },
+    "pair-7x8": {
+      "first": {
+        "augustas": [
+          "dark mode might be even better on this one 😍"
+        ]
+      }
+    },
+    "bento-still": {
+      "first": {
+        "augustas": [
+          "probably my favorite bento i've made 🫠",
+          "feature sections deserve this much detail"
+        ],
+        "rokas": [
+          "{domain} bento, dark mode"
+        ]
+      }
+    },
+    "section-still": {
+      "first": {
+        "augustas": [
+          "this {ui} turned out even better than the hero"
+        ]
+      }
+    },
+    "_second": {
+      "second": {
+        "augustas": [
+          "this {ui} still holds up 🥹",
+          "{domain} apps still rarely look like this"
+        ]
+      }
+    }
   },
   "replies": {
-    "augustas": "made at larpo.studio, concept",
-    "faulkner": "concept for a {domain} tool. made at larpo.studio",
-    "rokas": "built in {tool}. larpo.studio",
-    "marius": "concept for a {domain} tool. larpo.studio"
+    "augustas": "concept, made at larpo.studio",
+    "rokas": "concept work for a {domain} app. made at larpo.studio",
+    "faulkner": "concept for a {domain} app, made at larpo.studio",
+    "marius": "concept. larpo.studio"
   },
   "voices": {
-    "augustas": { "words": [4, 8], "emoji": "<= 1 at the end from 👀 🔥 😍 🫠 🥹", "judgement": true },
-    "faulkner": { "words": [6, 14], "emoji": "none", "judgement": false },
-    "rokas": { "words": [6, 10], "emoji": "none", "judgement": false },
-    "marius": { "words": [12, 25], "emoji": "none", "judgement": false }
+    "augustas": {
+      "words": [
+        3,
+        10
+      ],
+      "target": [
+        5,
+        9
+      ],
+      "emoji": "<= 1 at the end: 👀 reveal or close-up, 🔥 motion or dark, 😍 reaction, 🫠 small detail, 🥹 older work",
+      "judgement": true,
+      "lane": "lead: superlative about a named part, 'this {part} ...' callout, first-person reaction, view label, comparative follow-up; a standard line at most twice a week (CP-08)",
+      "patterns": [
+        "superlative",
+        "callout",
+        "reaction",
+        "view-label",
+        "series-follow",
+        "normalise-standard"
+      ]
+    },
+    "rokas": {
+      "words": [
+        3,
+        10
+      ],
+      "target": [
+        4,
+        8
+      ],
+      "emoji": "none (X engine profile has emoji off)",
+      "judgement": false,
+      "lane": "product lane: named label, view label, pair label, category tag; no verdict words so the network never praises one project twice in a day",
+      "patterns": [
+        "named-thing",
+        "view-label",
+        "series-follow",
+        "work-log (4-ups only)"
+      ]
+    },
+    "faulkner": {
+      "words": [
+        3,
+        12
+      ],
+      "target": [
+        5,
+        9
+      ],
+      "emoji": "none",
+      "judgement": false,
+      "lane": "not scheduled (founder 2026-10-22); when active: standard lines and view labels in the studio register",
+      "patterns": [
+        "normalise-standard",
+        "view-label",
+        "named-thing"
+      ]
+    },
+    "marius": {
+      "words": [
+        3,
+        12
+      ],
+      "target": [
+        4,
+        8
+      ],
+      "emoji": "none",
+      "judgement": false,
+      "lane": "not scheduled (founder 2026-10-22); when active: named labels in the studio register",
+      "patterns": [
+        "named-thing",
+        "series-follow"
+      ]
+    }
   },
-  "banned": ["world-class", "world class", "premium", "innovative", "immersive", "full-service", "full service", "transformational", "transformative", "cutting-edge", "cutting edge", "bespoke", "seamless", "seamlessly", "elevate", "elevated", "elevates", "digital experiences", "digital experience", "visionary founders", "product design studio", "crafted", "crafting", "crafts"],
-  "judgementWords": ["clean", "cleanest", "best", "most", "perfect", "perfection", "insane", "next level", "ever"]
+  "banned": [
+    "world-class",
+    "world class",
+    "premium",
+    "innovative",
+    "immersive",
+    "full-service",
+    "full service",
+    "transformational",
+    "transformative",
+    "cutting-edge",
+    "cutting edge",
+    "bespoke",
+    "seamless",
+    "seamlessly",
+    "elevate",
+    "elevated",
+    "elevates",
+    "digital experiences",
+    "digital experience",
+    "visionary founders",
+    "product design studio",
+    "crafted",
+    "crafting",
+    "crafts",
+    "concept"
+  ],
+  "rejectedPhrasings": {
+    "about": "Phrasings the founder rejected (ledger x-captions r1, x-engine-posts r1): explanatory product copy and the X engine's title formats. Enforced by tools/x_plan.mjs: a caption containing any marker gets a finding and is not handed off.",
+    "markers": [
+      "each cell",
+      "every cell",
+      "shows one thing",
+      "no filler",
+      "read in that order",
+      "the product sits",
+      "the headline stays",
+      "what most",
+      "this one does",
+      "this one opens",
+      "instead of",
+      "landing page concept for",
+      "a or b",
+      "light or dark",
+      "had a landing page",
+      "rebuilt as a",
+      "same hero, different"
+    ]
+  },
+  "judgementWords": [
+    "clean",
+    "cleanest",
+    "best",
+    "most",
+    "perfect",
+    "perfection",
+    "insane",
+    "next level",
+    "ever"
+  ]
 }

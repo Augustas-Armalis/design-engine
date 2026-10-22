@@ -1,14 +1,10 @@
 # Captions: tempra-ask-closeup
 
-Voices: knowledge/x/caption-voice.md (CV-01..13). Lowercase, never the brand name, "concept" in the caption or the reply.
+Reserved for @augustasdesign to post by hand (founder 2026-10-22); no co-founder lines. Register and rules: knowledge/x/caption-patterns.md (CP-01..16) and caption-voice.md (CV-01..14). The `- augustasdesign:` line is the default the planner reads; `(b)` and `(c)` are options for him to pick (the planner ignores them).
 
 ## dashboard-closeup first
-- augustasdesign: ai scheduling panel, up close 👀
-- faulkner_Design: the answer comes first. the calendars it checked stay one click away.
-- rokasrem: i ranked the free slots so friday leads. concept.
-- marius_vanagas: most calendar tools hand you a grid of free slots. this one answers with a time and says why.
+- augustasdesign: closer look at the ask panel 👀
+- augustasdesign (b): the detail in this little answer card is unreal
+- augustasdesign (c): my favorite panel in the whole calendar 🫠
 
-reply augustas: made at larpo.studio, concept
-reply faulkner: concept for a team calendar. made at larpo.studio
-reply rokas: built in react, one route per screen. larpo.studio
-reply marius: concept for a team calendar. larpo.studio
+reply augustas: concept, made at larpo.studio

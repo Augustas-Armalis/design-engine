@@ -1,7 +1,7 @@
 {
   "generated": "2026-10-22",
   "timezone": "Europe/Vilnius",
-  "source": "knowledge/x/x-strategy.md (XS-01..27), knowledge/x/caption-voice.md; data in knowledge/benchmarks/x-strategy-2026-10/data/",
+  "source": "knowledge/x/x-strategy.md (XS-01..28), knowledge/x/caption-patterns.md (CP-01..), knowledge/x/caption-voice.md (CV-01..); data in knowledge/benchmarks/x-strategy-2026-10/data/. The co-founder accounts are X-engine output: their numbers below describe what they posted, never what to post (XS-28).",
   "tzNote": "Vilnius is UTC+3 until 2026-10-25 03:00, then UTC+2. US Eastern is UTC-4 until 2026-11-01, then UTC-5. Vilnius - ET = 7 h, except 25 Oct - 1 Nov 2026 = 6 h. Keep slots in Vilnius local time.",
   "accounts": {
     "marcelkargul": {
@@ -305,7 +305,8 @@
       "lowercaseShare": 0.75,
       "medianCaptionWords": 6.5,
       "emojiShare": 0,
-      "questionShare": 0.08
+      "questionShare": 0.08,
+      "evidence": "negative: X-engine generated posts (XS-28; ledger x-engine-posts r1, x-captions r1). Cadence facts only; never a source for captions, titles, formats or voice."
     },
     "marius_vanagas": {
       "role": "founder",
@@ -358,7 +359,8 @@
       "lowercaseShare": 1,
       "medianCaptionWords": 28,
       "emojiShare": 0,
-      "questionShare": 0
+      "questionShare": 0,
+      "evidence": "negative: X-engine generated posts (XS-28; ledger x-engine-posts r1, x-captions r1). Cadence facts only; never a source for captions, titles, formats or voice."
     },
     "rokasrem": {
       "role": "founder",
@@ -411,7 +413,8 @@
       "lowercaseShare": 1,
       "medianCaptionWords": 8,
       "emojiShare": 0,
-      "questionShare": 0.2
+      "questionShare": 0.2,
+      "evidence": "negative: X-engine generated posts (XS-28; ledger x-engine-posts r1, x-captions r1). Cadence facts only; never a source for captions, titles, formats or voice."
     }
   },
   "founderAccounts": [
@@ -421,23 +424,23 @@
     "rokasrem"
   ],
   "formatMultipliers": {
-    "single-still": 0.95,
-    "carousel-2": 1.2,
+    "single-still": 0.98,
+    "carousel-2": 1.21,
     "carousel-3": 1.33,
     "carousel-4": 0.85,
     "video-loop": 0.88,
     "text": 0.5,
     "carousel-2-portrait-pair": 1.21,
-    "carousel-2-landscape": 0.79,
+    "carousel-2-landscape": 0.91,
     "carousel-3-vertical-thirds": 1.33,
     "carousel-4-mixed-crops": 1.12,
     "carousel-4-same-size": 0.85,
-    "single-landscape": 1,
+    "single-landscape": 0.98,
     "single-portrait": 0.92,
     "single-square": 0.91,
     "video-followup-quote": 1.5,
     "quote-only-text": 0.67,
-    "note": "Likes relative to each author median, pooled over Marcel (30 d), @kargulstudio, rico (60 d), Augustas (current era) and the co-founders (n: single-landscape 392, portrait pair 36, 2-up landscape 32, thirds 9, 4-up mixed 32, 4-up same size 23, video 56). The six schema keys are rounded planning values: carousel-2 assumes a 4:5-7:8 pair (landscape pairs 0.79); carousel-4 assumes same-size images (1.12 when the four crops differ); video-loop is a cold lead (as a quote of a still that worked, Marcel 1.51x the still, n=10, hence video-followup-quote 1.5); text is a planning penalty for 10k and 4-follower accounts (rico text 0.19, Augustas quote-text 0.19-0.30; Marcel text 1.07 on 60k followers). Cross-check with the 29-account study: 2-up 1.20, 4-up 1.19, video 1.03, 3-up 1.00, single 0.76 (knowledge/web/x-design-posts.md 6.1)."
+    "note": "Likes relative to each author median, pooled over Marcel (30 d), @kargulstudio, rico (60 d) and Augustas (current era and era 1, each against its own median); the co-founder accounts are excluded (X-engine output, negative evidence, XS-28) (n: single-landscape 347, portrait pair 36, 2-up landscape 24, thirds 9, 4-up mixed 32, 4-up same size 23, video 56). The six schema keys take the pooled values of their default subtype: single-still = single landscape, carousel-2 = a 4:5-7:8 pair (landscape pairs 0.91), carousel-3 = vertical thirds, carousel-4 = same-size images (1.12 when the four crops differ), video-loop = a cold video lead; video-loop is a cold lead (as a quote of a still that worked, Marcel 1.51x the still, n=10, hence video-followup-quote 1.5); text 0.5 is a planning penalty for 10k and 4-follower accounts (rico text 0.19, Augustas quote-text 0.19-0.30; Marcel text 1.07 on 60k followers). Cross-check with the 29-account study: 2-up 1.20, 4-up 1.19, video 1.03, 3-up 1.00, single 0.76 (knowledge/web/x-design-posts.md 6.1)."
   },
   "subjectMultipliers": {
     "dashboard": 2.05,
@@ -563,7 +566,7 @@
       {
         "slot": "16:00",
         "account": "rokasrem",
-        "content": "a different cut of a series in his detail voice (pair, hero variant, section)",
+        "content": "a different cut of a series in the studio register, his pattern rotation (caption-voice.md): pair, hero, section",
         "formats": [
           "carousel-2-portrait-pair",
           "single-still"
@@ -572,7 +575,7 @@
       {
         "slot": "19:30",
         "account": "faulkner_Design",
-        "content": "a different cut in his decision voice (close-up, thirds, bento, section)",
+        "content": "not scheduled for now (founder 2026-10-22); when active: a different cut in the studio register (close-up, thirds, bento, section)",
         "formats": [
           "single-still",
           "3up-vertical-thirds",
@@ -583,7 +586,7 @@
         "slot": "22:00",
         "account": "marius_vanagas",
         "optional": true,
-        "content": "a section or hero in his contrast voice",
+        "content": "not scheduled for now (founder 2026-10-22); when active: a section or hero in the studio register",
         "formats": [
           "single-still"
         ]
@@ -662,30 +665,34 @@
     "questions": 0,
     "wordsBand": {
       "augustasdesign": [
-        4,
-        8
+        3,
+        10
       ],
       "rokasrem": [
-        6,
+        3,
         10
       ],
       "faulkner_Design": [
-        6,
-        14
+        3,
+        12
       ],
       "marius_vanagas": [
-        12,
-        25
+        3,
+        12
       ]
     },
+    "wordsTarget": [
+      5,
+      9
+    ],
     "voice": {
-      "augustasdesign": "reaction",
-      "faulkner_Design": "decision",
-      "rokasrem": "detail",
-      "marius_vanagas": "contrast"
+      "augustasdesign": "studio register; lead lane: superlative, callout, reaction, view label, comparative follow-up",
+      "rokasrem": "studio register; product lane: named thing, view label, standard line, principle, pair label",
+      "faulkner_Design": "studio register (not scheduled)",
+      "marius_vanagas": "studio register (not scheduled)"
     },
-    "templates": "knowledge/x/caption-voice.md section 5 (T01-T14, R1-R4)",
-    "why": "Augustas: 7-10 words 1.16x (n=79), 1-3 words 0.72x (n=65), UI noun 1.22x vs 0.85x, questions 0.69x now, @mentions 0.53x."
+    "templates": "knowledge/x/caption-patterns.md section 6 (T01-T36) -> system/x/captions.json",
+    "why": "Design captions of 11 benchmark accounts and Augustas (1,375 posts, co-founders excluded): 7-9 words 1.19x, 1-2 words 0.95x, no caption 0.71x; short studio register (Marcel, rico, Augustas, <= 12 words, n=671): standard line 2.11x, superlative 1.36x, callout 1.38x, view label 1.14x, named thing 1.00x, work log 1.01x, stacked-adjective label 0.77x, bare 0.75x; two beats 1.14x vs one 1.00x; emoji 1.02x vs 0.99x (signature, not lift). caption-patterns.md CP-01.."
   },
   "never": [
     "a third media post on one account in one day",

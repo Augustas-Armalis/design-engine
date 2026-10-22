@@ -1,18 +1,15 @@
 # Captions: kestrel-hero
 
+Reserved for @augustasdesign to post by hand (founder 2026-10-22); no co-founder lines. Register and rules: knowledge/x/caption-patterns.md (CP-01..16) and caption-voice.md (CV-01..14). The `- augustasdesign:` line is the default the planner reads; `(b)` and `(c)` are options for him to pick (the planner ignores them).
+
 ## hero-still first
-- augustasdesign: analytics hero with the whole dashboard in it 👀
-- faulkner_Design: centred copy, then the full dashboard. the chart answers before you scroll.
-- rokasrem: product analytics hero, dashboard first. concept.
-- marius_vanagas: most analytics heroes show a chart with no story. this one shows the dip and the reason next to it.
+- augustasdesign: the dashboard inside this hero is unreal 👀
+- augustasdesign (b): probably the most detailed analytics hero i've made
+- augustasdesign (c): analytics sites can look like this
 
 ## hero-still second
-- augustasdesign: still one of my favorite heroes
-- faulkner_Design: weeks on, putting the full dashboard under the headline still holds.
-- rokasrem: back to the analytics hero. still the reason panel i like most.
-- marius_vanagas: weeks later analytics heroes still open on a chart. this one still opens on the answer.
+- augustasdesign: still my favorite hero from this year 🥹
+- augustasdesign (b): this analytics hero still holds up
+- augustasdesign (c): analytics tools still rarely look like this
 
-reply augustas: made at larpo.studio, concept
-reply faulkner: concept for a product analytics tool. made at larpo.studio
-reply rokas: built in react with motion. larpo.studio
-reply marius: concept for a product analytics tool. larpo.studio
+reply augustas: concept, made at larpo.studio

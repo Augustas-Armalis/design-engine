@@ -51,7 +51,7 @@ An X crop is a route, not a cut PNG: `#/xframe?src=<route>&x=<left>&y=<top>` (`w
 ## Adding a final
 
 1. The founder accepts it, or it is the deliverable of a passed preflight that awaits his verdict.
-2. Create `library/<project>/<asset>/manifest.json` (copy a sibling), `caption.md` (all four voices, `knowledge/x/caption-voice.md`), and the project's `project.json` and series if new.
+2. Create `library/<project>/<asset>/manifest.json` (copy a sibling), `caption.md` (lines per account in the studio register, `knowledge/x/caption-patterns.md` templates and `caption-voice.md` lanes; reserved assets carry only the `- augustasdesign:` line plus `(b)`/`(c)` options the planner ignores), and the project's `project.json` and series if new.
 3. `nice -n 19 node tools/library.mjs render <project>/<asset>`: 0 preflight FAIL, or it is not postable.
 4. `node tools/library.mjs check`, commit.
 

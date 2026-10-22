@@ -131148,13 +131148,573 @@
   "origin": "ui-pedia"
  },
  {
-  "id": "CV-01",
-  "text": "Write every caption fully lowercase, acronyms included (saas, ai, ui, crm), \"i\" included; real proper nouns of tools keep their case only in the reply.",
-  "why": "Larpo copy is lowercase with acronyms (LBC lowercase rule, 2026-08-26); Augustas's current voice is 96% lowercase and the founder asked for an all-lowercase voice; his two capital \"I\"s are the only drift.",
-  "applies": "all four accounts.",
-  "check": "caption matches `^[^A-Z]*$`.",
+  "id": "CP-01",
+  "text": "Write each caption as one studied move from section 5 (superlative, callout, reaction, view label, standard line, principle, comparative follow-up, plain label); never write explanatory product copy (what the design does, decided, chose or gave up, how it is read, what each part shows).",
+  "why": "Long describing statements run 0.91x (n=164) and are 14% of the bottom 20% vs 9% of the top 10%; Flo's three explanatory captions ran 0.36-0.65x against 1.07x for his labels; the founder rejected our explanatory drafts (\"each cell shows one thing the product does. no filler cells.\": ledger `x-captions` r1).",
+  "applies": "every caption.",
+  "check": "the caption maps to a template id (T01-T41); none of `system/x/captions.json.rejectedPhrasings.markers` appears.",
   "checkable": true,
-  "source": "`augustasdesign.json` current era; LBC lowercase-acronyms decision.",
+  "source": "`data/_captions.json` patternsPrimary, extremes; ledger/entries/x-captions.json r1.",
+  "file": "x/caption-patterns.md",
+  "section": "4. Rules",
+  "tags": [
+   "x",
+   "captions",
+   "copywriting",
+   "patterns",
+   "lowercase",
+   "studio-register",
+   "marcelkargul",
+   "heyrico",
+   "basit",
+   "flohoeller",
+   "augustasdesign",
+   "templates",
+   "close-up",
+   "vertical-thirds",
+   "bento",
+   "hero",
+   "motion",
+   "re-show",
+   "founders",
+   "larpo"
+  ],
+  "kind": "source",
+  "origin": "web:x.com via api.fxtwitter.com (public FixTweet mirror, no login): the design-post captions of @marcelkargul, @_heyrico, @basit_designs, @uisabor, @kargulstudio, @flohoeller, @mrncst, @oguzyagizkara, @pacocoursey, @raunofreiberg, @steveschoger, @d__raptis and @augustasdesign (era 1 and the current era); 1,527 original media posts, 1,375 of them design posts. Excluded on purpose: @rokasrem, @faulkner_Design, @marius_vanagas (X-engine output, negative evidence, XS-28)"
+ },
+ {
+  "id": "CP-02",
+  "text": "Lead @augustasdesign's posts with a superlative about a named part or a \"this {part} ...\" callout; first person is fine (\"i've made\", \"i've designed\").",
+  "why": "Augustas's superlatives 1.21x (n=42, bookmarks 1.50x) with his best design post ever at 17.61x; callouts 1.74x on his account (n=5) and 1.83x pooled (n=10); superlatives 1.36x in the short studio register (n=54).",
+  "applies": "@augustasdesign.",
+  "check": "template pattern superlative or callout on at least half of his posts in a week.",
+  "checkable": true,
+  "source": "`data/_captions.json` authors.augustasdesign-*, shortStudio.",
+  "file": "x/caption-patterns.md",
+  "section": "4. Rules",
+  "tags": [
+   "x",
+   "captions",
+   "copywriting",
+   "patterns",
+   "lowercase",
+   "studio-register",
+   "marcelkargul",
+   "heyrico",
+   "basit",
+   "flohoeller",
+   "augustasdesign",
+   "templates",
+   "close-up",
+   "vertical-thirds",
+   "bento",
+   "hero",
+   "motion",
+   "re-show",
+   "founders",
+   "larpo"
+  ],
+  "kind": "source",
+  "origin": "web:x.com via api.fxtwitter.com (public FixTweet mirror, no login): the design-post captions of @marcelkargul, @_heyrico, @basit_designs, @uisabor, @kargulstudio, @flohoeller, @mrncst, @oguzyagizkara, @pacocoursey, @raunofreiberg, @steveschoger, @d__raptis and @augustasdesign (era 1 and the current era); 1,527 original media posts, 1,375 of them design posts. Excluded on purpose: @rokasrem, @faulkner_Design, @marius_vanagas (X-engine output, negative evidence, XS-28)"
+ },
+ {
+  "id": "CP-03",
+  "text": "Name the UI part (dashboard, week view, panel, bento, hero, footer, sidebar); never caption with only \"product design\", \"design\" or \"ui\".",
+  "why": "UI noun 1.10x vs 0.95x pooled (n=745 / 630); generic category labels 0.90x (n=93), 8% of the bottom 20% vs 1% of the top 10%.",
+  "applies": "every caption except standard lines and principles.",
+  "check": "the caption contains a noun from `captions.mjs` UI_NOUN or a {ui}/{detail} var.",
+  "checkable": true,
+  "source": "pools.all.uiNoun; extremes.",
+  "file": "x/caption-patterns.md",
+  "section": "4. Rules",
+  "tags": [
+   "x",
+   "captions",
+   "copywriting",
+   "patterns",
+   "lowercase",
+   "studio-register",
+   "marcelkargul",
+   "heyrico",
+   "basit",
+   "flohoeller",
+   "augustasdesign",
+   "templates",
+   "close-up",
+   "vertical-thirds",
+   "bento",
+   "hero",
+   "motion",
+   "re-show",
+   "founders",
+   "larpo"
+  ],
+  "kind": "source",
+  "origin": "web:x.com via api.fxtwitter.com (public FixTweet mirror, no login): the design-post captions of @marcelkargul, @_heyrico, @basit_designs, @uisabor, @kargulstudio, @flohoeller, @mrncst, @oguzyagizkara, @pacocoursey, @raunofreiberg, @steveschoger, @d__raptis and @augustasdesign (era 1 and the current era); 1,527 original media posts, 1,375 of them design posts. Excluded on purpose: @rokasrem, @faulkner_Design, @marius_vanagas (X-engine output, negative evidence, XS-28)"
+ },
+ {
+  "id": "CP-04",
+  "text": "Put the judgement in a sentence (\"this bento turned out way too clean\"), never stack it as an adjective in front of a label (\"clean dark bento design\").",
+  "why": "Stacked judgement labels 0.82x pooled (n=28), 0.77x short studio (n=20) and 0.77x on Augustas's account (n=13: \"minimal card design\" 0.45x); the same words as a callout 1.83x, as a reaction 1.15x.",
+  "applies": "captions with a judgement word.",
+  "check": "no judgement word directly before a UI noun in a caption of 5 words or fewer.",
+  "checkable": true,
+  "source": "patternsPrimary named-judged, callout, reaction.",
+  "file": "x/caption-patterns.md",
+  "section": "4. Rules",
+  "tags": [
+   "x",
+   "captions",
+   "copywriting",
+   "patterns",
+   "lowercase",
+   "studio-register",
+   "marcelkargul",
+   "heyrico",
+   "basit",
+   "flohoeller",
+   "augustasdesign",
+   "templates",
+   "close-up",
+   "vertical-thirds",
+   "bento",
+   "hero",
+   "motion",
+   "re-show",
+   "founders",
+   "larpo"
+  ],
+  "kind": "source",
+  "origin": "web:x.com via api.fxtwitter.com (public FixTweet mirror, no login): the design-post captions of @marcelkargul, @_heyrico, @basit_designs, @uisabor, @kargulstudio, @flohoeller, @mrncst, @oguzyagizkara, @pacocoursey, @raunofreiberg, @steveschoger, @d__raptis and @augustasdesign (era 1 and the current era); 1,527 original media posts, 1,375 of them design posts. Excluded on purpose: @rokasrem, @faulkner_Design, @marius_vanagas (X-engine output, negative evidence, XS-28)"
+ },
+ {
+  "id": "CP-05",
+  "text": "Write 5-9 words; 3-10 is the hard band; never 1-2 words, never an empty caption, never more than 12 words outside a spec list.",
+  "why": "7-9 words 1.19x pooled (n=222), 1.20x short studio (n=137), 1.21x Augustas (n=71); 5-6 words 1.04-1.07x; 1-2 words 0.95x pooled and 0.50x on Augustas's account (n=29); no caption 0.71x (n=34); 16-40 words 0.95x.",
+  "applies": "every caption.",
+  "check": "word count (emoji excluded) in `captions.json.voices.<voice>.words`.",
+  "checkable": true,
+  "source": "byWords tables.",
+  "file": "x/caption-patterns.md",
+  "section": "4. Rules",
+  "tags": [
+   "x",
+   "captions",
+   "copywriting",
+   "patterns",
+   "lowercase",
+   "studio-register",
+   "marcelkargul",
+   "heyrico",
+   "basit",
+   "flohoeller",
+   "augustasdesign",
+   "templates",
+   "close-up",
+   "vertical-thirds",
+   "bento",
+   "hero",
+   "motion",
+   "re-show",
+   "founders",
+   "larpo"
+  ],
+  "kind": "source",
+  "origin": "web:x.com via api.fxtwitter.com (public FixTweet mirror, no login): the design-post captions of @marcelkargul, @_heyrico, @basit_designs, @uisabor, @kargulstudio, @flohoeller, @mrncst, @oguzyagizkara, @pacocoursey, @raunofreiberg, @steveschoger, @d__raptis and @augustasdesign (era 1 and the current era); 1,527 original media posts, 1,375 of them design posts. Excluded on purpose: @rokasrem, @faulkner_Design, @marius_vanagas (X-engine output, negative evidence, XS-28)"
+ },
+ {
+  "id": "CP-06",
+  "text": "Use emoji as a signature only: at most one, at the end, on @augustasdesign only, picked by role (👀 reveal or close-up, 🔥 motion or dark, 😍 reaction, 🫠 small detail, 🥹 older work); leave it off half the time.",
+  "why": "No lift either way (pooled 1.00x vs 1.03x; short studio 1.02x vs 0.99x; Augustas now 0.86x vs 1.00x); every studio account places it at the end (Marcel 76 of 90, rico 144 of 155) and keeps a small personal set; Rokas's X engine profile has emoji off.",
+  "applies": "every caption.",
+  "check": "emoji count <= 1, last character, from the set; 0 on other accounts.",
+  "checkable": true,
+  "source": "emoji tables per author.",
+  "file": "x/caption-patterns.md",
+  "section": "4. Rules",
+  "tags": [
+   "x",
+   "captions",
+   "copywriting",
+   "patterns",
+   "lowercase",
+   "studio-register",
+   "marcelkargul",
+   "heyrico",
+   "basit",
+   "flohoeller",
+   "augustasdesign",
+   "templates",
+   "close-up",
+   "vertical-thirds",
+   "bento",
+   "hero",
+   "motion",
+   "re-show",
+   "founders",
+   "larpo"
+  ],
+  "kind": "source",
+  "origin": "web:x.com via api.fxtwitter.com (public FixTweet mirror, no login): the design-post captions of @marcelkargul, @_heyrico, @basit_designs, @uisabor, @kargulstudio, @flohoeller, @mrncst, @oguzyagizkara, @pacocoursey, @raunofreiberg, @steveschoger, @d__raptis and @augustasdesign (era 1 and the current era); 1,527 original media posts, 1,375 of them design posts. Excluded on purpose: @rokasrem, @faulkner_Design, @marius_vanagas (X-engine output, negative evidence, XS-28)"
+ },
+ {
+  "id": "CP-07",
+  "text": "Allow one blank line to split a label from one short second beat; never three beats, never a list outside a spec post.",
+  "why": "Two beats 1.17x (n=249), Marcel 1.42x (n=39), short studio 1.14x (n=107); three or more 0.70x (n=119).",
+  "applies": "every caption.",
+  "check": "at most one \"\\n\\n\"; no \"- \" lines unless the template is T41.",
+  "checkable": true,
+  "source": "lineBreaks.byBeats.",
+  "file": "x/caption-patterns.md",
+  "section": "4. Rules",
+  "tags": [
+   "x",
+   "captions",
+   "copywriting",
+   "patterns",
+   "lowercase",
+   "studio-register",
+   "marcelkargul",
+   "heyrico",
+   "basit",
+   "flohoeller",
+   "augustasdesign",
+   "templates",
+   "close-up",
+   "vertical-thirds",
+   "bento",
+   "hero",
+   "motion",
+   "re-show",
+   "founders",
+   "larpo"
+  ],
+  "kind": "source",
+  "origin": "web:x.com via api.fxtwitter.com (public FixTweet mirror, no login): the design-post captions of @marcelkargul, @_heyrico, @basit_designs, @uisabor, @kargulstudio, @flohoeller, @mrncst, @oguzyagizkara, @pacocoursey, @raunofreiberg, @steveschoger, @d__raptis and @augustasdesign (era 1 and the current era); 1,527 original media posts, 1,375 of them design posts. Excluded on purpose: @rokasrem, @faulkner_Design, @marius_vanagas (X-engine output, negative evidence, XS-28)"
+ },
+ {
+  "id": "CP-08",
+  "text": "Use a standard line or principle at most twice a week per account, only over the strongest asset, with new words each time; never self-promotion (\"no one designs {x} cleaner than {studio}\").",
+  "why": "Standard lines 2.14x (n=25) and principles 2.06x (n=35) are the strongest caption moves that need no resource; rico's verbatim standard line decayed from 3.89x to 0.82x over five uses; Marcel's \"no one designs apps cleaner than ...\" with his studio link 0.37x.",
+  "applies": "every account.",
+  "check": "pattern count per account per 7 days <= 2; no studio name or url in the line.",
+  "checkable": true,
+  "source": "patternsPrimary normalise-standard, principle; repeats.",
+  "file": "x/caption-patterns.md",
+  "section": "4. Rules",
+  "tags": [
+   "x",
+   "captions",
+   "copywriting",
+   "patterns",
+   "lowercase",
+   "studio-register",
+   "marcelkargul",
+   "heyrico",
+   "basit",
+   "flohoeller",
+   "augustasdesign",
+   "templates",
+   "close-up",
+   "vertical-thirds",
+   "bento",
+   "hero",
+   "motion",
+   "re-show",
+   "founders",
+   "larpo"
+  ],
+  "kind": "source",
+  "origin": "web:x.com via api.fxtwitter.com (public FixTweet mirror, no login): the design-post captions of @marcelkargul, @_heyrico, @basit_designs, @uisabor, @kargulstudio, @flohoeller, @mrncst, @oguzyagizkara, @pacocoursey, @raunofreiberg, @steveschoger, @d__raptis and @augustasdesign (era 1 and the current era); 1,527 original media posts, 1,375 of them design posts. Excluded on purpose: @rokasrem, @faulkner_Design, @marius_vanagas (X-engine output, negative evidence, XS-28)"
+ },
+ {
+  "id": "CP-09",
+  "text": "Caption a follow-up with a comparative and the relation (\"moving, it's even better\", \"the full week view is even better\"), never a bare relation label (\"animated\", \"dark mode version\").",
+  "why": "Augustas \"animated it's even cooler 🔥\" 7.72x vs \"animated 👀\" 0.47x and \"always animating my heroes 😍\" 0.47x; his series labels overall 0.47x (n=7); Marcel's comparatives 1.54x and 3.67x; Flo's \"Dark mode version\" 0.77x.",
+  "applies": "series steps 2+ (XS-15, XS-16).",
+  "check": "follow captions contain \"even\", \"better\", \"full\" or \"whole\" plus the relation.",
+  "checkable": true,
+  "source": "patternsPrimary series-follow; roleExamples motion-followup.",
+  "file": "x/caption-patterns.md",
+  "section": "4. Rules",
+  "tags": [
+   "x",
+   "captions",
+   "copywriting",
+   "patterns",
+   "lowercase",
+   "studio-register",
+   "marcelkargul",
+   "heyrico",
+   "basit",
+   "flohoeller",
+   "augustasdesign",
+   "templates",
+   "close-up",
+   "vertical-thirds",
+   "bento",
+   "hero",
+   "motion",
+   "re-show",
+   "founders",
+   "larpo"
+  ],
+  "kind": "source",
+  "origin": "web:x.com via api.fxtwitter.com (public FixTweet mirror, no login): the design-post captions of @marcelkargul, @_heyrico, @basit_designs, @uisabor, @kargulstudio, @flohoeller, @mrncst, @oguzyagizkara, @pacocoursey, @raunofreiberg, @steveschoger, @d__raptis and @augustasdesign (era 1 and the current era); 1,527 original media posts, 1,375 of them design posts. Excluded on purpose: @rokasrem, @faulkner_Design, @marius_vanagas (X-engine output, negative evidence, XS-28)"
+ },
+ {
+  "id": "CP-10",
+  "text": "Caption thirds and other multi-image posts as the whole work (a reaction or superlative), never by the cut (\"in thirds\", \"three panels\", \"left to right\").",
+  "why": "All 10 thirds captions studied name the work, not the cut: Marcel \"i'm in love with this UI\" 4.97x, \"designing the cleanest product ever\" 2.76x; Augustas 17.61x; benchmark thirds 0.96x overall.",
+  "applies": "3-up and 4-up posts.",
+  "check": "no \"third\", \"panel by panel\", \"left to right\", \"cut in\" in the caption.",
+  "checkable": true,
+  "source": "roleExamples vertical-thirds.",
+  "file": "x/caption-patterns.md",
+  "section": "4. Rules",
+  "tags": [
+   "x",
+   "captions",
+   "copywriting",
+   "patterns",
+   "lowercase",
+   "studio-register",
+   "marcelkargul",
+   "heyrico",
+   "basit",
+   "flohoeller",
+   "augustasdesign",
+   "templates",
+   "close-up",
+   "vertical-thirds",
+   "bento",
+   "hero",
+   "motion",
+   "re-show",
+   "founders",
+   "larpo"
+  ],
+  "kind": "source",
+  "origin": "web:x.com via api.fxtwitter.com (public FixTweet mirror, no login): the design-post captions of @marcelkargul, @_heyrico, @basit_designs, @uisabor, @kargulstudio, @flohoeller, @mrncst, @oguzyagizkara, @pacocoursey, @raunofreiberg, @steveschoger, @d__raptis and @augustasdesign (era 1 and the current era); 1,527 original media posts, 1,375 of them design posts. Excluded on purpose: @rokasrem, @faulkner_Design, @marius_vanagas (X-engine output, negative evidence, XS-28)"
+ },
+ {
+  "id": "CP-11",
+  "text": "Caption a close-up with a view label (and 👀 on Augustas) or a callout naming the detail.",
+  "why": "View labels 1.14x pooled (n=32) and 1.22x on Augustas's account (n=16: \"Closer look 👀\" 2.21x, \"Close up 👀\" 2.16x); Flo \"Component details\" 2.33x; callouts 1.83x.",
+  "applies": "close-ups and bento cells.",
+  "check": "template T01-T05.",
+  "checkable": true,
+  "source": "roleExamples closeup-detail.",
+  "file": "x/caption-patterns.md",
+  "section": "4. Rules",
+  "tags": [
+   "x",
+   "captions",
+   "copywriting",
+   "patterns",
+   "lowercase",
+   "studio-register",
+   "marcelkargul",
+   "heyrico",
+   "basit",
+   "flohoeller",
+   "augustasdesign",
+   "templates",
+   "close-up",
+   "vertical-thirds",
+   "bento",
+   "hero",
+   "motion",
+   "re-show",
+   "founders",
+   "larpo"
+  ],
+  "kind": "source",
+  "origin": "web:x.com via api.fxtwitter.com (public FixTweet mirror, no login): the design-post captions of @marcelkargul, @_heyrico, @basit_designs, @uisabor, @kargulstudio, @flohoeller, @mrncst, @oguzyagizkara, @pacocoursey, @raunofreiberg, @steveschoger, @d__raptis and @augustasdesign (era 1 and the current era); 1,527 original media posts, 1,375 of them design posts. Excluded on purpose: @rokasrem, @faulkner_Design, @marius_vanagas (X-engine output, negative evidence, XS-28)"
+ },
+ {
+  "id": "CP-12",
+  "text": "Keep work-log and daily fillers (\"recent work\", \"current project\", \"another day, another {x}\", \"daily {x} inspiration\") off single stills; use them only on a 4-image collection.",
+  "why": "Work-log 0.94x pooled and the largest pattern in the bottom 20% (15% vs 9%); Basit 0.63x (n=61); \"another day\" 0.94x (n=37), Augustas \"daily hero design inspiration\" 0.52x; on 4-ups work-log holds 1.01x (n=31; uisabor 3.29x).",
+  "applies": "every caption.",
+  "check": "work-log words only with format grid-4.",
+  "checkable": true,
+  "source": "patternsPrimary work-log, another-daily; roleExamples four-up.",
+  "file": "x/caption-patterns.md",
+  "section": "4. Rules",
+  "tags": [
+   "x",
+   "captions",
+   "copywriting",
+   "patterns",
+   "lowercase",
+   "studio-register",
+   "marcelkargul",
+   "heyrico",
+   "basit",
+   "flohoeller",
+   "augustasdesign",
+   "templates",
+   "close-up",
+   "vertical-thirds",
+   "bento",
+   "hero",
+   "motion",
+   "re-show",
+   "founders",
+   "larpo"
+  ],
+  "kind": "source",
+  "origin": "web:x.com via api.fxtwitter.com (public FixTweet mirror, no login): the design-post captions of @marcelkargul, @_heyrico, @basit_designs, @uisabor, @kargulstudio, @flohoeller, @mrncst, @oguzyagizkara, @pacocoursey, @raunofreiberg, @steveschoger, @d__raptis and @augustasdesign (era 1 and the current era); 1,527 original media posts, 1,375 of them design posts. Excluded on purpose: @rokasrem, @faulkner_Design, @marius_vanagas (X-engine output, negative evidence, XS-28)"
+ },
+ {
+  "id": "CP-13",
+  "text": "Keep tools, credits and effort out of the caption (\"made in figma\", \"built with claude\", \"spent 5 hours\"); they go in the first reply if anywhere.",
+  "why": "Process claims 0.90x likes, 0.71x bookmarks (n=50); Augustas 0.62x (n=13); Marcel's made-with credit 0.28x; @mentions in Augustas's era-1 captions 0.53x (XS-22).",
+  "applies": "every caption.",
+  "check": "no \"made in\", \"built with\", \"designed in\", \"hours\", \"@\".",
+  "checkable": true,
+  "source": "patternsPrimary process-claim.",
+  "file": "x/caption-patterns.md",
+  "section": "4. Rules",
+  "tags": [
+   "x",
+   "captions",
+   "copywriting",
+   "patterns",
+   "lowercase",
+   "studio-register",
+   "marcelkargul",
+   "heyrico",
+   "basit",
+   "flohoeller",
+   "augustasdesign",
+   "templates",
+   "close-up",
+   "vertical-thirds",
+   "bento",
+   "hero",
+   "motion",
+   "re-show",
+   "founders",
+   "larpo"
+  ],
+  "kind": "source",
+  "origin": "web:x.com via api.fxtwitter.com (public FixTweet mirror, no login): the design-post captions of @marcelkargul, @_heyrico, @basit_designs, @uisabor, @kargulstudio, @flohoeller, @mrncst, @oguzyagizkara, @pacocoursey, @raunofreiberg, @steveschoger, @d__raptis and @augustasdesign (era 1 and the current era); 1,527 original media posts, 1,375 of them design posts. Excluded on purpose: @rokasrem, @faulkner_Design, @marius_vanagas (X-engine output, negative evidence, XS-28)"
+ },
+ {
+  "id": "CP-14",
+  "text": "Never end with a question, and never offer a choice (\"a or b\", \"light or dark\", \"which one\"); say the thing.",
+  "why": "Binary-choice questions 0.83x (n=32), open questions 0.93x (n=103), question-only captions 0.79x in the short studio register (n=25); verdict tails (\"clean?\") pool at 1.56x but only in sentence-case growth voices (Augustas era 1, Basit) and ran 0.61x in Augustas's current era (n=2); Larpo's own reach data puts binary questions at 0.2-0.26x (LBC-44); the X engine's \"a or b?\" titles were rejected (XS-28).",
+  "applies": "every caption.",
+  "check": "no \"?\".",
+  "checkable": true,
+  "source": "questions tables; LBC-44; XS-21.",
+  "file": "x/caption-patterns.md",
+  "section": "4. Rules",
+  "tags": [
+   "x",
+   "captions",
+   "copywriting",
+   "patterns",
+   "lowercase",
+   "studio-register",
+   "marcelkargul",
+   "heyrico",
+   "basit",
+   "flohoeller",
+   "augustasdesign",
+   "templates",
+   "close-up",
+   "vertical-thirds",
+   "bento",
+   "hero",
+   "motion",
+   "re-show",
+   "founders",
+   "larpo"
+  ],
+  "kind": "source",
+  "origin": "web:x.com via api.fxtwitter.com (public FixTweet mirror, no login): the design-post captions of @marcelkargul, @_heyrico, @basit_designs, @uisabor, @kargulstudio, @flohoeller, @mrncst, @oguzyagizkara, @pacocoursey, @raunofreiberg, @steveschoger, @d__raptis and @augustasdesign (era 1 and the current era); 1,527 original media posts, 1,375 of them design posts. Excluded on purpose: @rokasrem, @faulkner_Design, @marius_vanagas (X-engine output, negative evidence, XS-28)"
+ },
+ {
+  "id": "CP-15",
+  "text": "Never name the fictional brand, never tag a client or a price on concept work, and never put \"concept\" in the post; the first reply says \"concept, made at larpo.studio\".",
+  "why": "Client tags (1.15x pooled, Augustas \"for a client\" 1.75x, n=6) and money (1.36x) are exactly the hooks that are off-limits on fiction (LBC-41, LBC-45); disclosure is required (LBC-27) and lives in the reply so the caption keeps its one move; the founder rejected \"concept.\" tacked onto titles (XS-28).",
+  "applies": "concept work.",
+  "check": "the X engine gate's concept-name check passes with `conceptNames`; \"concept\" is in `captions.json.banned` for the post and present in the reply.",
+  "checkable": true,
+  "source": "patternsPrimary client-tag, money-brag; LBC-27, LBC-41, LBC-45.",
+  "file": "x/caption-patterns.md",
+  "section": "4. Rules",
+  "tags": [
+   "x",
+   "captions",
+   "copywriting",
+   "patterns",
+   "lowercase",
+   "studio-register",
+   "marcelkargul",
+   "heyrico",
+   "basit",
+   "flohoeller",
+   "augustasdesign",
+   "templates",
+   "close-up",
+   "vertical-thirds",
+   "bento",
+   "hero",
+   "motion",
+   "re-show",
+   "founders",
+   "larpo"
+  ],
+  "kind": "source",
+  "origin": "web:x.com via api.fxtwitter.com (public FixTweet mirror, no login): the design-post captions of @marcelkargul, @_heyrico, @basit_designs, @uisabor, @kargulstudio, @flohoeller, @mrncst, @oguzyagizkara, @pacocoursey, @raunofreiberg, @steveschoger, @d__raptis and @augustasdesign (era 1 and the current era); 1,527 original media posts, 1,375 of them design posts. Excluded on purpose: @rokasrem, @faulkner_Design, @marius_vanagas (X-engine output, negative evidence, XS-28)"
+ },
+ {
+  "id": "CP-16",
+  "text": "Never reuse a caption verbatim on one account within 30 days; bring a winning pattern back with new words, and give a re-show a new caption with the same or a stronger pattern.",
+  "why": "rico re-uses 12% of captions verbatim (1.05x) and his top standard line decayed 3.89x -> 0.82x; Marcel's \"cleanest {x} you'll ever see\" ran 1.44x -> 0.94x -> 0.88x; 84% of rico's re-shown images got new words, and re-shows carrying a standard line or principle earned 2.38x and 2.12x vs 0.58x for a category label.",
+  "applies": "every account.",
+  "check": "planner \"caption used in the last 30 days\"; re-show caption differs from the first showing.",
+  "checkable": true,
+  "source": "repeats; ricoReshows.",
+  "file": "x/caption-patterns.md",
+  "section": "4. Rules",
+  "tags": [
+   "x",
+   "captions",
+   "copywriting",
+   "patterns",
+   "lowercase",
+   "studio-register",
+   "marcelkargul",
+   "heyrico",
+   "basit",
+   "flohoeller",
+   "augustasdesign",
+   "templates",
+   "close-up",
+   "vertical-thirds",
+   "bento",
+   "hero",
+   "motion",
+   "re-show",
+   "founders",
+   "larpo"
+  ],
+  "kind": "source",
+  "origin": "web:x.com via api.fxtwitter.com (public FixTweet mirror, no login): the design-post captions of @marcelkargul, @_heyrico, @basit_designs, @uisabor, @kargulstudio, @flohoeller, @mrncst, @oguzyagizkara, @pacocoursey, @raunofreiberg, @steveschoger, @d__raptis and @augustasdesign (era 1 and the current era); 1,527 original media posts, 1,375 of them design posts. Excluded on purpose: @rokasrem, @faulkner_Design, @marius_vanagas (X-engine output, negative evidence, XS-28)"
+ },
+ {
+  "id": "CV-01",
+  "text": "Write every caption fully lowercase, acronyms included (ui, ai, saas, crm), \"i\" and \"i've\" included; proper names of real tools keep their case only in the reply.",
+  "why": "Larpo copy is lowercase with lowercase acronyms (LBC lowercase decision 2026-08-26) and the X engine gate flags any capital outside its proper-name list; Augustas's current voice is 100% lowercase in design posts; casing itself has no measured effect (lowercase 1.01x, sentence 1.05x, CP numbers).",
+  "applies": "all accounts.",
+  "check": "caption matches `^[^A-Z]*$`; X engine `checkCaption` passes.",
+  "checkable": true,
+  "source": "`data/_captions.json` casing; larpo-x-engine shared/gate.mjs.",
   "file": "x/caption-voice.md",
   "section": "3. Rules",
   "tags": [
@@ -131163,24 +131723,24 @@
    "copywriting",
    "voice",
    "lowercase",
+   "studio-register",
    "founders",
    "larpo",
    "augustasdesign",
-   "templates",
-   "series",
-   "concept-disclosure"
+   "concept-disclosure",
+   "negative-evidence"
   ],
   "kind": "source",
-  "origin": "web:x.com via api.fxtwitter.com (public FixTweet mirror, no login): the four Larpo founders @augustasdesign (358 originals, Jul 2025 - Oct 2026), @faulkner_Design (24), @rokasrem (30), @marius_vanagas (1), with @marcelkargul and @_heyrico as the comparison set + knowledge/larpo/larpo-brand-and-constraints.md (LBC-04, 07, 27, 40-46) + knowledge/web/x-design-posts.md (XP-13, 14, 18, 19)"
+  "origin": "knowledge/x/caption-patterns.md (CP-01..16: 1,375 design captions of @marcelkargul, @_heyrico, @basit_designs, @uisabor, @kargulstudio, @flohoeller, @mrncst, @oguzyagizkara, @pacocoursey, @raunofreiberg, @steveschoger, @d__raptis and @augustasdesign, via the public FixTweet mirror, no login) + @augustasdesign's own posts (358 originals, Jul 2025 - Oct 2026) + knowledge/larpo/larpo-brand-and-constraints.md (LBC-04, 07, 27, 40-46) + founder verdicts ledger x-engine-posts r1 and x-captions r1 (2026-10-22). The @rokasrem, @faulkner_Design and @marius_vanagas timelines are X-engine output and appear here only as negative evidence"
  },
  {
   "id": "CV-02",
-  "text": "Name the UI part and the plain product domain (\"payroll dashboard\", \"edge hosting hero\"); never the fictional brand name, never the client's name unless the work is real and approved.",
-  "why": "UI-part captions 1.22x vs 0.85x; dashboards 2.05x, sidebars 2.49x; LBC-41 (no fictional brand name).",
+  "text": "Write in the studio register: one move from `caption-patterns.md` section 5 per caption, naming the UI part; never explanatory product copy (what the design does, decided, gave up, how it is read, what each part shows, what \"most products\" do instead).",
+  "why": "Explanatory statements 0.91x pooled (n=164) and over-represented in the bottom 20%; Flo's explanatory captions 0.36-0.65x vs 1.07x for his labels; the founder rejected the decision / detail / contrast voices (\"it's just ass\", ledger `x-captions` r1).",
   "applies": "all accounts.",
-  "check": "caption contains a UI noun from the template list; no proper name from the build's brand.",
+  "check": "the caption maps to a template id T01-T41; none of `system/x/captions.json.rejectedPhrasings.markers`.",
   "checkable": true,
-  "source": "era-1 caption cut; LBC-41.",
+  "source": "CP-01; ledger/entries/x-captions.json r1.",
   "file": "x/caption-voice.md",
   "section": "3. Rules",
   "tags": [
@@ -131189,24 +131749,24 @@
    "copywriting",
    "voice",
    "lowercase",
+   "studio-register",
    "founders",
    "larpo",
    "augustasdesign",
-   "templates",
-   "series",
-   "concept-disclosure"
+   "concept-disclosure",
+   "negative-evidence"
   ],
   "kind": "source",
-  "origin": "web:x.com via api.fxtwitter.com (public FixTweet mirror, no login): the four Larpo founders @augustasdesign (358 originals, Jul 2025 - Oct 2026), @faulkner_Design (24), @rokasrem (30), @marius_vanagas (1), with @marcelkargul and @_heyrico as the comparison set + knowledge/larpo/larpo-brand-and-constraints.md (LBC-04, 07, 27, 40-46) + knowledge/web/x-design-posts.md (XP-13, 14, 18, 19)"
+  "origin": "knowledge/x/caption-patterns.md (CP-01..16: 1,375 design captions of @marcelkargul, @_heyrico, @basit_designs, @uisabor, @kargulstudio, @flohoeller, @mrncst, @oguzyagizkara, @pacocoursey, @raunofreiberg, @steveschoger, @d__raptis and @augustasdesign, via the public FixTweet mirror, no login) + @augustasdesign's own posts (358 originals, Jul 2025 - Oct 2026) + knowledge/larpo/larpo-brand-and-constraints.md (LBC-04, 07, 27, 40-46) + founder verdicts ledger x-engine-posts r1 and x-captions r1 (2026-10-22). The @rokasrem, @faulkner_Design and @marius_vanagas timelines are X-engine output and appear here only as negative evidence"
  },
  {
   "id": "CV-03",
-  "text": "Keep each voice's length: Augustas 4-8 words, Rokas 6-10, Faulkner 6-14 (two statements), Marius 12-25 (one contrast line).",
-  "why": "Augustas: 7-10 words 1.16-1.18x, 1-3 words 0.72-0.74x, 21+ 0.60x; the co-founders' measured medians are 8 (Rokas), 6.5 (Faulkner) and 28 (Marius) and their roles need the room.",
+  "text": "Keep 5-9 words; 3-10 is the hard band for every account (12 for the unscheduled accounts).",
+  "why": "7-9 words 1.19x pooled, 1.20x in the short studio register, 1.21x on Augustas's account; 1-2 words 0.50x on his account; no caption 0.71x.",
   "applies": "all accounts.",
-  "check": "word count inside the voice's band.",
+  "check": "`captions.json.voices.<voice>.words`.",
   "checkable": true,
-  "source": "`_analysis.json.*.captions`.",
+  "source": "CP-05.",
   "file": "x/caption-voice.md",
   "section": "3. Rules",
   "tags": [
@@ -131215,24 +131775,24 @@
    "copywriting",
    "voice",
    "lowercase",
+   "studio-register",
    "founders",
    "larpo",
    "augustasdesign",
-   "templates",
-   "series",
-   "concept-disclosure"
+   "concept-disclosure",
+   "negative-evidence"
   ],
   "kind": "source",
-  "origin": "web:x.com via api.fxtwitter.com (public FixTweet mirror, no login): the four Larpo founders @augustasdesign (358 originals, Jul 2025 - Oct 2026), @faulkner_Design (24), @rokasrem (30), @marius_vanagas (1), with @marcelkargul and @_heyrico as the comparison set + knowledge/larpo/larpo-brand-and-constraints.md (LBC-04, 07, 27, 40-46) + knowledge/web/x-design-posts.md (XP-13, 14, 18, 19)"
+  "origin": "knowledge/x/caption-patterns.md (CP-01..16: 1,375 design captions of @marcelkargul, @_heyrico, @basit_designs, @uisabor, @kargulstudio, @flohoeller, @mrncst, @oguzyagizkara, @pacocoursey, @raunofreiberg, @steveschoger, @d__raptis and @augustasdesign, via the public FixTweet mirror, no login) + @augustasdesign's own posts (358 originals, Jul 2025 - Oct 2026) + knowledge/larpo/larpo-brand-and-constraints.md (LBC-04, 07, 27, 40-46) + founder verdicts ledger x-engine-posts r1 and x-captions r1 (2026-10-22). The @rokasrem, @faulkner_Design and @marius_vanagas timelines are X-engine output and appear here only as negative evidence"
  },
  {
   "id": "CV-04",
-  "text": "Allow at most one judgement word per caption, and only on Augustas's account (\"clean\", \"detailed\", \"cute\", \"too clean\", \"next level\", \"the most ... i've built\"); the co-founders state decisions and details, not verdicts.",
-  "why": "Superlatives 1.22x on Augustas's era 1 (n=43), but a feed where four accounts call the same work \"the cleanest\" reads as a ring; separate jobs keep the accounts credible.",
-  "applies": "all accounts.",
-  "check": "co-founder captions contain no word from {clean, cleanest, best, most, perfect, perfection, insane, next level, ever}.",
+  "text": "Give verdict words (clean, cleanest, best, most, ever, unreal, too clean, my favorite) to @augustasdesign only; @rokasrem and the unscheduled accounts label, frame and relate, and never praise; never two judgement captions on one project in one day.",
+  "why": "The lead account's superlatives and callouts are its strongest moves (CP-02); a network where every account calls the same work \"the cleanest\" reads as a ring (XP section 6.2); rico's and Flo's labels show the plain lane works on its own (labels 1.03x, Flo's top five 2.7-4.4x).",
+  "applies": "cross-account plans.",
+  "check": "planner verdict check (`captions.json.voices.<voice>.judgement` false for non-lead voices); per project per day at most one caption with a word from `judgementWords`.",
   "checkable": true,
-  "source": "era-1 hook cut; XS-19.",
+  "source": "CP-02, CP-03.",
   "file": "x/caption-voice.md",
   "section": "3. Rules",
   "tags": [
@@ -131241,24 +131801,24 @@
    "copywriting",
    "voice",
    "lowercase",
+   "studio-register",
    "founders",
    "larpo",
    "augustasdesign",
-   "templates",
-   "series",
-   "concept-disclosure"
+   "concept-disclosure",
+   "negative-evidence"
   ],
   "kind": "source",
-  "origin": "web:x.com via api.fxtwitter.com (public FixTweet mirror, no login): the four Larpo founders @augustasdesign (358 originals, Jul 2025 - Oct 2026), @faulkner_Design (24), @rokasrem (30), @marius_vanagas (1), with @marcelkargul and @_heyrico as the comparison set + knowledge/larpo/larpo-brand-and-constraints.md (LBC-04, 07, 27, 40-46) + knowledge/web/x-design-posts.md (XP-13, 14, 18, 19)"
+  "origin": "knowledge/x/caption-patterns.md (CP-01..16: 1,375 design captions of @marcelkargul, @_heyrico, @basit_designs, @uisabor, @kargulstudio, @flohoeller, @mrncst, @oguzyagizkara, @pacocoursey, @raunofreiberg, @steveschoger, @d__raptis and @augustasdesign, via the public FixTweet mirror, no login) + @augustasdesign's own posts (358 originals, Jul 2025 - Oct 2026) + knowledge/larpo/larpo-brand-and-constraints.md (LBC-04, 07, 27, 40-46) + founder verdicts ledger x-engine-posts r1 and x-captions r1 (2026-10-22). The @rokasrem, @faulkner_Design and @marius_vanagas timelines are X-engine output and appear here only as negative evidence"
  },
  {
   "id": "CV-05",
-  "text": "Never end with a question or offer a choice (\"a or b?\", \"light or dark?\", \"thoughts?\", \"overkill?\"); state both options as a fact instead (\"same hero, two color fields\").",
-  "why": "Current-era questions 0.69x; X-wide 0.5x (XP-14); binary questions and recaps at the bottom of Larpo's reach table (LBC-44).",
+  "text": "Never end with a question or offer a choice (\"a or b\", \"light or dark\", \"which one\", \"thoughts\", \"clean?\"); state the thing.",
+  "why": "Binary-choice questions 0.83x, open questions 0.93x, Augustas's current-era questions 0.61-0.69x; LBC-44; the X engine's \"a or b?\" titles were rejected (XS-28). Verdict tails scored well only in the old sentence-case growth voice (CP-14).",
   "applies": "all accounts.",
-  "check": "no \"?\" in the caption.",
+  "check": "no \"?\".",
   "checkable": true,
-  "source": "XS-21; XP-14; LBC-44.",
+  "source": "CP-14; XS-21.",
   "file": "x/caption-voice.md",
   "section": "3. Rules",
   "tags": [
@@ -131267,24 +131827,24 @@
    "copywriting",
    "voice",
    "lowercase",
+   "studio-register",
    "founders",
    "larpo",
    "augustasdesign",
-   "templates",
-   "series",
-   "concept-disclosure"
+   "concept-disclosure",
+   "negative-evidence"
   ],
   "kind": "source",
-  "origin": "web:x.com via api.fxtwitter.com (public FixTweet mirror, no login): the four Larpo founders @augustasdesign (358 originals, Jul 2025 - Oct 2026), @faulkner_Design (24), @rokasrem (30), @marius_vanagas (1), with @marcelkargul and @_heyrico as the comparison set + knowledge/larpo/larpo-brand-and-constraints.md (LBC-04, 07, 27, 40-46) + knowledge/web/x-design-posts.md (XP-13, 14, 18, 19)"
+  "origin": "knowledge/x/caption-patterns.md (CP-01..16: 1,375 design captions of @marcelkargul, @_heyrico, @basit_designs, @uisabor, @kargulstudio, @flohoeller, @mrncst, @oguzyagizkara, @pacocoursey, @raunofreiberg, @steveschoger, @d__raptis and @augustasdesign, via the public FixTweet mirror, no login) + @augustasdesign's own posts (358 originals, Jul 2025 - Oct 2026) + knowledge/larpo/larpo-brand-and-constraints.md (LBC-04, 07, 27, 40-46) + founder verdicts ledger x-engine-posts r1 and x-captions r1 (2026-10-22). The @rokasrem, @faulkner_Design and @marius_vanagas timelines are X-engine output and appear here only as negative evidence"
  },
  {
   "id": "CV-06",
-  "text": "Augustas may end with one emoji from his own set (👀 🔥 😍 🫠 🥹); the co-founders use none; no hashtags anywhere.",
-  "why": "Emoji is neutral on his account (0.86-1.01x) and part of his voice; the co-founders have used none in 55 posts, which keeps the voices apart.",
+  "text": "Only @augustasdesign uses emoji: at most one, at the end, chosen by role (👀 reveal or close-up, 🔥 motion or dark, 😍 reaction, 🫠 small detail, 🥹 older work); no hashtags anywhere.",
+  "why": "Emoji has no lift either way (1.00x vs 1.03x) and is a personal signature on every studio account; Rokas's X engine profile has emoji off; hashtags appear on 1% of design captions.",
   "applies": "all accounts.",
-  "check": "emoji count <= 1 and last for Augustas, 0 for the others; `#` count 0.",
+  "check": "emoji count <= 1 and last on Augustas, 0 elsewhere; `#` count 0.",
   "checkable": true,
-  "source": "`_analysis.json.*.captions.emojiFreq`; XS-23.",
+  "source": "CP-06.",
   "file": "x/caption-voice.md",
   "section": "3. Rules",
   "tags": [
@@ -131293,24 +131853,24 @@
    "copywriting",
    "voice",
    "lowercase",
+   "studio-register",
    "founders",
    "larpo",
    "augustasdesign",
-   "templates",
-   "series",
-   "concept-disclosure"
+   "concept-disclosure",
+   "negative-evidence"
   ],
   "kind": "source",
-  "origin": "web:x.com via api.fxtwitter.com (public FixTweet mirror, no login): the four Larpo founders @augustasdesign (358 originals, Jul 2025 - Oct 2026), @faulkner_Design (24), @rokasrem (30), @marius_vanagas (1), with @marcelkargul and @_heyrico as the comparison set + knowledge/larpo/larpo-brand-and-constraints.md (LBC-04, 07, 27, 40-46) + knowledge/web/x-design-posts.md (XP-13, 14, 18, 19)"
+  "origin": "knowledge/x/caption-patterns.md (CP-01..16: 1,375 design captions of @marcelkargul, @_heyrico, @basit_designs, @uisabor, @kargulstudio, @flohoeller, @mrncst, @oguzyagizkara, @pacocoursey, @raunofreiberg, @steveschoger, @d__raptis and @augustasdesign, via the public FixTweet mirror, no login) + @augustasdesign's own posts (358 originals, Jul 2025 - Oct 2026) + knowledge/larpo/larpo-brand-and-constraints.md (LBC-04, 07, 27, 40-46) + founder verdicts ledger x-engine-posts r1 and x-captions r1 (2026-10-22). The @rokasrem, @faulkner_Design and @marius_vanagas timelines are X-engine output and appear here only as negative evidence"
  },
  {
   "id": "CV-07",
-  "text": "Keep links, credits and \"made with\" out of the caption; the first self-reply carries them, 30-150 minutes later, in the same voice (templates R1-R4 below).",
-  "why": "Link in the caption 0.33x vs link in a reply 1.02x; @mentions 0.53x (Augustas era 1). XP-18.",
+  "text": "Keep links, credits, tools and \"made with\" out of the caption; the first self-reply carries \"concept, made at larpo.studio\" (and credits if wanted), 30-150 minutes after the post.",
+  "why": "Link in the post 0.33x vs link in a self-reply 1.02x, @mentions 0.53x (Augustas era 1, XS-22); process and tool credits in the caption 0.90x likes and 0.71x bookmarks (CP-13).",
   "applies": "all accounts.",
-  "check": "no url, no \"@\" in the caption; reply present.",
+  "check": "no url, no \"@\" in the caption; reply present with \"concept\" for fictional work.",
   "checkable": true,
-  "source": "XS-22.",
+  "source": "XS-22; CP-13.",
   "file": "x/caption-voice.md",
   "section": "3. Rules",
   "tags": [
@@ -131319,24 +131879,24 @@
    "copywriting",
    "voice",
    "lowercase",
+   "studio-register",
    "founders",
    "larpo",
    "augustasdesign",
-   "templates",
-   "series",
-   "concept-disclosure"
+   "concept-disclosure",
+   "negative-evidence"
   ],
   "kind": "source",
-  "origin": "web:x.com via api.fxtwitter.com (public FixTweet mirror, no login): the four Larpo founders @augustasdesign (358 originals, Jul 2025 - Oct 2026), @faulkner_Design (24), @rokasrem (30), @marius_vanagas (1), with @marcelkargul and @_heyrico as the comparison set + knowledge/larpo/larpo-brand-and-constraints.md (LBC-04, 07, 27, 40-46) + knowledge/web/x-design-posts.md (XP-13, 14, 18, 19)"
+  "origin": "knowledge/x/caption-patterns.md (CP-01..16: 1,375 design captions of @marcelkargul, @_heyrico, @basit_designs, @uisabor, @kargulstudio, @flohoeller, @mrncst, @oguzyagizkara, @pacocoursey, @raunofreiberg, @steveschoger, @d__raptis and @augustasdesign, via the public FixTweet mirror, no login) + @augustasdesign's own posts (358 originals, Jul 2025 - Oct 2026) + knowledge/larpo/larpo-brand-and-constraints.md (LBC-04, 07, 27, 40-46) + founder verdicts ledger x-engine-posts r1 and x-captions r1 (2026-10-22). The @rokasrem, @faulkner_Design and @marius_vanagas timelines are X-engine output and appear here only as negative evidence"
  },
  {
   "id": "CV-08",
-  "text": "Mark fictional work with the word \"concept\" in the caption (or, for Augustas's single-word-label posts, in the first reply), and never write from inside the fiction (\"we launched\", \"our users\").",
-  "why": "LBC-27 (concept disclosure), LBC-42 (no caption from inside the fiction); the label did not cost reach: Augustas \"hero section concept\" 1.74x, Faulkner's concept captions 1.17x vs 1.00x.",
+  "text": "Disclose fictional work in the first reply, never in the post: no \"concept.\" tacked onto the caption, no fictional brand name, no writing from inside the fiction (\"we launched\", \"our users\"), no client tag, price or outcome on a concept.",
+  "why": "LBC-27 (disclosure), LBC-41 (no fictional brand name), LBC-42 (no caption from inside the fiction), LBC-45 (no unevidenced money or client claims); the X engine's \"{x} concept\" titles were rejected (XS-28); the reply keeps the caption to one move (CP-15).",
   "applies": "concept work on all accounts.",
-  "check": "\"concept\" in caption or first reply; no first-person-plural product claims.",
+  "check": "\"concept\" absent from the caption (`captions.json.banned`) and present in the reply; the X engine gate's concept-name check passes with the project's `conceptNames`.",
   "checkable": true,
-  "source": "LBC-27, LBC-42; `faulkner_Design.json`.",
+  "source": "CP-15; LBC-27, 41, 42, 45.",
   "file": "x/caption-voice.md",
   "section": "3. Rules",
   "tags": [
@@ -131345,24 +131905,24 @@
    "copywriting",
    "voice",
    "lowercase",
+   "studio-register",
    "founders",
    "larpo",
    "augustasdesign",
-   "templates",
-   "series",
-   "concept-disclosure"
+   "concept-disclosure",
+   "negative-evidence"
   ],
   "kind": "source",
-  "origin": "web:x.com via api.fxtwitter.com (public FixTweet mirror, no login): the four Larpo founders @augustasdesign (358 originals, Jul 2025 - Oct 2026), @faulkner_Design (24), @rokasrem (30), @marius_vanagas (1), with @marcelkargul and @_heyrico as the comparison set + knowledge/larpo/larpo-brand-and-constraints.md (LBC-04, 07, 27, 40-46) + knowledge/web/x-design-posts.md (XP-13, 14, 18, 19)"
+  "origin": "knowledge/x/caption-patterns.md (CP-01..16: 1,375 design captions of @marcelkargul, @_heyrico, @basit_designs, @uisabor, @kargulstudio, @flohoeller, @mrncst, @oguzyagizkara, @pacocoursey, @raunofreiberg, @steveschoger, @d__raptis and @augustasdesign, via the public FixTweet mirror, no login) + @augustasdesign's own posts (358 originals, Jul 2025 - Oct 2026) + knowledge/larpo/larpo-brand-and-constraints.md (LBC-04, 07, 27, 40-46) + founder verdicts ledger x-engine-posts r1 and x-captions r1 (2026-10-22). The @rokasrem, @faulkner_Design and @marius_vanagas timelines are X-engine output and appear here only as negative evidence"
  },
  {
   "id": "CV-09",
-  "text": "No money, client or outcome claims on concept work; on real client work, one true client line a week at most and only on Augustas's account.",
-  "why": "Money and client captions scored 1.35x and 1.19x in era 1 (n=22, 20), and they are what Larpo forbids when unevidenced (LBC-45).",
-  "applies": "all accounts.",
-  "check": "no \"$\", \"€\", \"k/mo\", \"client\" on concept posts.",
+  "text": "On real, approved client work, one true client line a week is allowed on @augustasdesign (\"dashboard for a client\", a true figure); never on concepts, never on co-founder accounts.",
+  "why": "Client tags ran 1.75x on Augustas's era 1 (n=6) and money lines 1.36x pooled, which is exactly why they need a true source (LBC-45).",
+  "applies": "real client work.",
+  "check": "the asset's project is not `fictional`; the client approved the name (LBC-23).",
   "checkable": true,
-  "source": "era-1 hook cut; LBC-45.",
+  "source": "CP-15; LBC-23, LBC-45.",
   "file": "x/caption-voice.md",
   "section": "3. Rules",
   "tags": [
@@ -131371,24 +131931,24 @@
    "copywriting",
    "voice",
    "lowercase",
+   "studio-register",
    "founders",
    "larpo",
    "augustasdesign",
-   "templates",
-   "series",
-   "concept-disclosure"
+   "concept-disclosure",
+   "negative-evidence"
   ],
   "kind": "source",
-  "origin": "web:x.com via api.fxtwitter.com (public FixTweet mirror, no login): the four Larpo founders @augustasdesign (358 originals, Jul 2025 - Oct 2026), @faulkner_Design (24), @rokasrem (30), @marius_vanagas (1), with @marcelkargul and @_heyrico as the comparison set + knowledge/larpo/larpo-brand-and-constraints.md (LBC-04, 07, 27, 40-46) + knowledge/web/x-design-posts.md (XP-13, 14, 18, 19)"
+  "origin": "knowledge/x/caption-patterns.md (CP-01..16: 1,375 design captions of @marcelkargul, @_heyrico, @basit_designs, @uisabor, @kargulstudio, @flohoeller, @mrncst, @oguzyagizkara, @pacocoursey, @raunofreiberg, @steveschoger, @d__raptis and @augustasdesign, via the public FixTweet mirror, no login) + @augustasdesign's own posts (358 originals, Jul 2025 - Oct 2026) + knowledge/larpo/larpo-brand-and-constraints.md (LBC-04, 07, 27, 40-46) + founder verdicts ledger x-engine-posts r1 and x-captions r1 (2026-10-22). The @rokasrem, @faulkner_Design and @marius_vanagas timelines are X-engine output and appear here only as negative evidence"
  },
  {
   "id": "CV-10",
-  "text": "Never copy a caption between accounts: the same project gets a different template per account, and two captions posted on the same day share no three-word run.",
-  "why": "Identical captions across a small network read as coordinated and earn \"not interested\" signals (XP section 6.2); voices exist so the series can travel through four accounts.",
+  "text": "Never copy a caption between accounts or reuse one on an account within 30 days; two captions posted the same day share no three-word run.",
+  "why": "Identical captions across a small network read as coordinated (XP section 6.2); verbatim reuse decays (rico 3.89x -> 0.82x, CP-16).",
   "applies": "cross-account plans.",
-  "check": "no shared word trigram between any two same-day captions; template ids differ per account for one project.",
+  "check": "planner trigram check and \"caption used in the last 30 days\".",
   "checkable": true,
-  "source": "XS-19.",
+  "source": "CP-16; XS-19.",
   "file": "x/caption-voice.md",
   "section": "3. Rules",
   "tags": [
@@ -131397,24 +131957,24 @@
    "copywriting",
    "voice",
    "lowercase",
+   "studio-register",
    "founders",
    "larpo",
    "augustasdesign",
-   "templates",
-   "series",
-   "concept-disclosure"
+   "concept-disclosure",
+   "negative-evidence"
   ],
   "kind": "source",
-  "origin": "web:x.com via api.fxtwitter.com (public FixTweet mirror, no login): the four Larpo founders @augustasdesign (358 originals, Jul 2025 - Oct 2026), @faulkner_Design (24), @rokasrem (30), @marius_vanagas (1), with @marcelkargul and @_heyrico as the comparison set + knowledge/larpo/larpo-brand-and-constraints.md (LBC-04, 07, 27, 40-46) + knowledge/web/x-design-posts.md (XP-13, 14, 18, 19)"
+  "origin": "knowledge/x/caption-patterns.md (CP-01..16: 1,375 design captions of @marcelkargul, @_heyrico, @basit_designs, @uisabor, @kargulstudio, @flohoeller, @mrncst, @oguzyagizkara, @pacocoursey, @raunofreiberg, @steveschoger, @d__raptis and @augustasdesign, via the public FixTweet mirror, no login) + @augustasdesign's own posts (358 originals, Jul 2025 - Oct 2026) + knowledge/larpo/larpo-brand-and-constraints.md (LBC-04, 07, 27, 40-46) + founder verdicts ledger x-engine-posts r1 and x-captions r1 (2026-10-22). The @rokasrem, @faulkner_Design and @marius_vanagas timelines are X-engine output and appear here only as negative evidence"
  },
  {
   "id": "CV-11",
-  "text": "Use at most one line break, to split the label from a second beat (\"another day,\\n\\nanother clean hero design\"); no bullet lists except a spec post (template T14).",
-  "why": "Augustas's line-broken captions are his own rhythm; list captions are the spec format (rico cheatsheets RD-36), not a showcase caption.",
+  "text": "Use at most one blank line, splitting a label from one short second beat; no lists except a spec post (T41).",
+  "why": "Two beats 1.17x, three or more 0.70x (CP-07).",
   "applies": "all accounts.",
-  "check": "newline count <= 2 characters (one blank line); lists only in T14.",
+  "check": "at most one \"\\n\\n\"; list lines only in T41.",
   "checkable": true,
-  "source": "`augustasdesign.json`.",
+  "source": "CP-07.",
   "file": "x/caption-voice.md",
   "section": "3. Rules",
   "tags": [
@@ -131423,22 +131983,22 @@
    "copywriting",
    "voice",
    "lowercase",
+   "studio-register",
    "founders",
    "larpo",
    "augustasdesign",
-   "templates",
-   "series",
-   "concept-disclosure"
+   "concept-disclosure",
+   "negative-evidence"
   ],
   "kind": "source",
-  "origin": "web:x.com via api.fxtwitter.com (public FixTweet mirror, no login): the four Larpo founders @augustasdesign (358 originals, Jul 2025 - Oct 2026), @faulkner_Design (24), @rokasrem (30), @marius_vanagas (1), with @marcelkargul and @_heyrico as the comparison set + knowledge/larpo/larpo-brand-and-constraints.md (LBC-04, 07, 27, 40-46) + knowledge/web/x-design-posts.md (XP-13, 14, 18, 19)"
+  "origin": "knowledge/x/caption-patterns.md (CP-01..16: 1,375 design captions of @marcelkargul, @_heyrico, @basit_designs, @uisabor, @kargulstudio, @flohoeller, @mrncst, @oguzyagizkara, @pacocoursey, @raunofreiberg, @steveschoger, @d__raptis and @augustasdesign, via the public FixTweet mirror, no login) + @augustasdesign's own posts (358 originals, Jul 2025 - Oct 2026) + knowledge/larpo/larpo-brand-and-constraints.md (LBC-04, 07, 27, 40-46) + founder verdicts ledger x-engine-posts r1 and x-captions r1 (2026-10-22). The @rokasrem, @faulkner_Design and @marius_vanagas timelines are X-engine output and appear here only as negative evidence"
  },
  {
   "id": "CV-12",
-  "text": "Keep Larpo's banned words and punctuation out: no em dashes, no \"world-class\", \"premium\", \"innovative\", \"immersive\", \"full-service\", \"product design studio\".",
-  "why": "LBC-04 and LBC-07; era 1 used \"world-class\" and \"premium\" in its giveaway posts.",
+  "text": "Keep Larpo's banned words and punctuation out: no em dashes, no exclamation marks, no \"world-class\", \"premium\", \"innovative\", \"immersive\", \"seamless\", \"elevate\", \"crafted\", \"product design studio\".",
+  "why": "LBC-04 and LBC-07; the X engine gate blocks the same list (shared/brand-rules.mjs).",
   "applies": "all accounts.",
-  "check": "regex for the word list and \"—\" returns 0.",
+  "check": "`captions.json.banned`; X engine `checkCaption`.",
   "checkable": true,
   "source": "LBC-04, LBC-07.",
   "file": "x/caption-voice.md",
@@ -131449,24 +132009,24 @@
    "copywriting",
    "voice",
    "lowercase",
+   "studio-register",
    "founders",
    "larpo",
    "augustasdesign",
-   "templates",
-   "series",
-   "concept-disclosure"
+   "concept-disclosure",
+   "negative-evidence"
   ],
   "kind": "source",
-  "origin": "web:x.com via api.fxtwitter.com (public FixTweet mirror, no login): the four Larpo founders @augustasdesign (358 originals, Jul 2025 - Oct 2026), @faulkner_Design (24), @rokasrem (30), @marius_vanagas (1), with @marcelkargul and @_heyrico as the comparison set + knowledge/larpo/larpo-brand-and-constraints.md (LBC-04, 07, 27, 40-46) + knowledge/web/x-design-posts.md (XP-13, 14, 18, 19)"
+  "origin": "knowledge/x/caption-patterns.md (CP-01..16: 1,375 design captions of @marcelkargul, @_heyrico, @basit_designs, @uisabor, @kargulstudio, @flohoeller, @mrncst, @oguzyagizkara, @pacocoursey, @raunofreiberg, @steveschoger, @d__raptis and @augustasdesign, via the public FixTweet mirror, no login) + @augustasdesign's own posts (358 originals, Jul 2025 - Oct 2026) + knowledge/larpo/larpo-brand-and-constraints.md (LBC-04, 07, 27, 40-46) + founder verdicts ledger x-engine-posts r1 and x-captions r1 (2026-10-22). The @rokasrem, @faulkner_Design and @marius_vanagas timelines are X-engine output and appear here only as negative evidence"
  },
  {
   "id": "CV-13",
-  "text": "Follow-up captions name the relation to the earlier post in 2-5 words (now moving, the full view, in thirds, up close, two weeks on) and quote it, instead of describing the work again or numbering it \"part 2\".",
-  "why": "\"animated it's even cooler 🔥\" as a quote ran 7.7x; series quotes are the benchmarks' default (XS-16); a numbered series label works on X (XP-19, 2.95x, n=6) but the relation words carry the same cue in the founders' voice.",
+  "text": "Caption a follow-up with a comparative and the relation (\"moving, it's even better\", \"and the full {ui} is even better\"), quoting the earlier post; never a bare relation (\"animated\", \"dark mode version\") and never a \"part 2\".",
+  "why": "Augustas \"animated it's even cooler 🔥\" 7.72x vs \"animated 👀\" 0.47x (CP-09); quotes are the benchmarks' series default (XS-16).",
   "applies": "series steps 2+.",
-  "check": "caption contains a relation phrase from T10-T13 and the post quotes an earlier series post.",
+  "check": "follow templates T11, T12, T33, T35; the post quotes an earlier series post.",
   "checkable": true,
-  "source": "`_series.json`; XS-16; XP-19.",
+  "source": "CP-09; XS-16.",
   "file": "x/caption-voice.md",
   "section": "3. Rules",
   "tags": [
@@ -131475,15 +132035,41 @@
    "copywriting",
    "voice",
    "lowercase",
+   "studio-register",
    "founders",
    "larpo",
    "augustasdesign",
-   "templates",
-   "series",
-   "concept-disclosure"
+   "concept-disclosure",
+   "negative-evidence"
   ],
   "kind": "source",
-  "origin": "web:x.com via api.fxtwitter.com (public FixTweet mirror, no login): the four Larpo founders @augustasdesign (358 originals, Jul 2025 - Oct 2026), @faulkner_Design (24), @rokasrem (30), @marius_vanagas (1), with @marcelkargul and @_heyrico as the comparison set + knowledge/larpo/larpo-brand-and-constraints.md (LBC-04, 07, 27, 40-46) + knowledge/web/x-design-posts.md (XP-13, 14, 18, 19)"
+  "origin": "knowledge/x/caption-patterns.md (CP-01..16: 1,375 design captions of @marcelkargul, @_heyrico, @basit_designs, @uisabor, @kargulstudio, @flohoeller, @mrncst, @oguzyagizkara, @pacocoursey, @raunofreiberg, @steveschoger, @d__raptis and @augustasdesign, via the public FixTweet mirror, no login) + @augustasdesign's own posts (358 originals, Jul 2025 - Oct 2026) + knowledge/larpo/larpo-brand-and-constraints.md (LBC-04, 07, 27, 40-46) + founder verdicts ledger x-engine-posts r1 and x-captions r1 (2026-10-22). The @rokasrem, @faulkner_Design and @marius_vanagas timelines are X-engine output and appear here only as negative evidence"
+ },
+ {
+  "id": "CV-14",
+  "text": "Never study, imitate, template or pool the X engine's generated posts on @rokasrem, @faulkner_Design or @marius_vanagas, their titles or their formats.",
+  "why": "Founder verdict 2026-10-22: \"do not study the designs that were made by the engine before ... plus the entire title writing of the post and format\" (ledger `x-engine-posts` r1); the captions drafted from them were rejected the same day (ledger `x-captions` r1).",
+  "applies": "studies, templates, caption.md lines.",
+  "check": "`captions.mjs` and `cadence.mjs` exclude the three handles; no template shares a non-generic three-word run with their posts (check run 2026-10-22: 0 of 163 captions).",
+  "checkable": true,
+  "source": "XS-28; ledger/entries/x-engine-posts.json r1, x-captions.json r1.",
+  "file": "x/caption-voice.md",
+  "section": "3. Rules",
+  "tags": [
+   "x",
+   "captions",
+   "copywriting",
+   "voice",
+   "lowercase",
+   "studio-register",
+   "founders",
+   "larpo",
+   "augustasdesign",
+   "concept-disclosure",
+   "negative-evidence"
+  ],
+  "kind": "source",
+  "origin": "knowledge/x/caption-patterns.md (CP-01..16: 1,375 design captions of @marcelkargul, @_heyrico, @basit_designs, @uisabor, @kargulstudio, @flohoeller, @mrncst, @oguzyagizkara, @pacocoursey, @raunofreiberg, @steveschoger, @d__raptis and @augustasdesign, via the public FixTweet mirror, no login) + @augustasdesign's own posts (358 originals, Jul 2025 - Oct 2026) + knowledge/larpo/larpo-brand-and-constraints.md (LBC-04, 07, 27, 40-46) + founder verdicts ledger x-engine-posts r1 and x-captions r1 (2026-10-22). The @rokasrem, @faulkner_Design and @marius_vanagas timelines are X-engine output and appear here only as negative evidence"
  },
  {
   "id": "x.x-engine-audit#1",
@@ -131787,7 +132373,7 @@
    "heyrico"
   ],
   "kind": "source",
-  "origin": "web:x.com via api.fxtwitter.com/2/profile/<handle>/statuses (public FixTweet mirror, no login): @marcelkargul, @kargulstudio, @_heyrico, and the four Larpo founders @augustasdesign, @faulkner_Design, @marius_vanagas, @rokasrem (1,669 statuses, 2026-10-22) + knowledge/web/x-design-posts.md (29-account study, XP-01..28) + knowledge/web/heyrico-deep-2026-10.md (RD-36..38) + knowledge/larpo/larpo-brand-and-constraints.md (LBC-27, 40-48) + knowledge/founder/canon/post-component.md"
+  "origin": "web:x.com via api.fxtwitter.com/2/profile/<handle>/statuses (public FixTweet mirror, no login): @marcelkargul, @kargulstudio, @_heyrico, and the four Larpo founders @augustasdesign, @faulkner_Design, @marius_vanagas, @rokasrem (1,669 statuses, 2026-10-22) + knowledge/web/x-design-posts.md (29-account study, XP-01..28) + knowledge/web/heyrico-deep-2026-10.md (RD-36..38) + knowledge/larpo/larpo-brand-and-constraints.md (LBC-27, 40-48) + knowledge/founder/canon/post-component.md. The three co-founder timelines are X-engine output and count as negative evidence only (XS-28)"
  },
  {
   "id": "XS-02",
@@ -131825,7 +132411,7 @@
    "heyrico"
   ],
   "kind": "source",
-  "origin": "web:x.com via api.fxtwitter.com/2/profile/<handle>/statuses (public FixTweet mirror, no login): @marcelkargul, @kargulstudio, @_heyrico, and the four Larpo founders @augustasdesign, @faulkner_Design, @marius_vanagas, @rokasrem (1,669 statuses, 2026-10-22) + knowledge/web/x-design-posts.md (29-account study, XP-01..28) + knowledge/web/heyrico-deep-2026-10.md (RD-36..38) + knowledge/larpo/larpo-brand-and-constraints.md (LBC-27, 40-48) + knowledge/founder/canon/post-component.md"
+  "origin": "web:x.com via api.fxtwitter.com/2/profile/<handle>/statuses (public FixTweet mirror, no login): @marcelkargul, @kargulstudio, @_heyrico, and the four Larpo founders @augustasdesign, @faulkner_Design, @marius_vanagas, @rokasrem (1,669 statuses, 2026-10-22) + knowledge/web/x-design-posts.md (29-account study, XP-01..28) + knowledge/web/heyrico-deep-2026-10.md (RD-36..38) + knowledge/larpo/larpo-brand-and-constraints.md (LBC-27, 40-48) + knowledge/founder/canon/post-component.md. The three co-founder timelines are X-engine output and count as negative evidence only (XS-28)"
  },
  {
   "id": "XS-03",
@@ -131863,7 +132449,7 @@
    "heyrico"
   ],
   "kind": "source",
-  "origin": "web:x.com via api.fxtwitter.com/2/profile/<handle>/statuses (public FixTweet mirror, no login): @marcelkargul, @kargulstudio, @_heyrico, and the four Larpo founders @augustasdesign, @faulkner_Design, @marius_vanagas, @rokasrem (1,669 statuses, 2026-10-22) + knowledge/web/x-design-posts.md (29-account study, XP-01..28) + knowledge/web/heyrico-deep-2026-10.md (RD-36..38) + knowledge/larpo/larpo-brand-and-constraints.md (LBC-27, 40-48) + knowledge/founder/canon/post-component.md"
+  "origin": "web:x.com via api.fxtwitter.com/2/profile/<handle>/statuses (public FixTweet mirror, no login): @marcelkargul, @kargulstudio, @_heyrico, and the four Larpo founders @augustasdesign, @faulkner_Design, @marius_vanagas, @rokasrem (1,669 statuses, 2026-10-22) + knowledge/web/x-design-posts.md (29-account study, XP-01..28) + knowledge/web/heyrico-deep-2026-10.md (RD-36..38) + knowledge/larpo/larpo-brand-and-constraints.md (LBC-27, 40-48) + knowledge/founder/canon/post-component.md. The three co-founder timelines are X-engine output and count as negative evidence only (XS-28)"
  },
  {
   "id": "XS-04",
@@ -131901,7 +132487,7 @@
    "heyrico"
   ],
   "kind": "source",
-  "origin": "web:x.com via api.fxtwitter.com/2/profile/<handle>/statuses (public FixTweet mirror, no login): @marcelkargul, @kargulstudio, @_heyrico, and the four Larpo founders @augustasdesign, @faulkner_Design, @marius_vanagas, @rokasrem (1,669 statuses, 2026-10-22) + knowledge/web/x-design-posts.md (29-account study, XP-01..28) + knowledge/web/heyrico-deep-2026-10.md (RD-36..38) + knowledge/larpo/larpo-brand-and-constraints.md (LBC-27, 40-48) + knowledge/founder/canon/post-component.md"
+  "origin": "web:x.com via api.fxtwitter.com/2/profile/<handle>/statuses (public FixTweet mirror, no login): @marcelkargul, @kargulstudio, @_heyrico, and the four Larpo founders @augustasdesign, @faulkner_Design, @marius_vanagas, @rokasrem (1,669 statuses, 2026-10-22) + knowledge/web/x-design-posts.md (29-account study, XP-01..28) + knowledge/web/heyrico-deep-2026-10.md (RD-36..38) + knowledge/larpo/larpo-brand-and-constraints.md (LBC-27, 40-48) + knowledge/founder/canon/post-component.md. The three co-founder timelines are X-engine output and count as negative evidence only (XS-28)"
  },
  {
   "id": "XS-05",
@@ -131939,7 +132525,7 @@
    "heyrico"
   ],
   "kind": "source",
-  "origin": "web:x.com via api.fxtwitter.com/2/profile/<handle>/statuses (public FixTweet mirror, no login): @marcelkargul, @kargulstudio, @_heyrico, and the four Larpo founders @augustasdesign, @faulkner_Design, @marius_vanagas, @rokasrem (1,669 statuses, 2026-10-22) + knowledge/web/x-design-posts.md (29-account study, XP-01..28) + knowledge/web/heyrico-deep-2026-10.md (RD-36..38) + knowledge/larpo/larpo-brand-and-constraints.md (LBC-27, 40-48) + knowledge/founder/canon/post-component.md"
+  "origin": "web:x.com via api.fxtwitter.com/2/profile/<handle>/statuses (public FixTweet mirror, no login): @marcelkargul, @kargulstudio, @_heyrico, and the four Larpo founders @augustasdesign, @faulkner_Design, @marius_vanagas, @rokasrem (1,669 statuses, 2026-10-22) + knowledge/web/x-design-posts.md (29-account study, XP-01..28) + knowledge/web/heyrico-deep-2026-10.md (RD-36..38) + knowledge/larpo/larpo-brand-and-constraints.md (LBC-27, 40-48) + knowledge/founder/canon/post-component.md. The three co-founder timelines are X-engine output and count as negative evidence only (XS-28)"
  },
  {
   "id": "XS-06",
@@ -131977,12 +132563,12 @@
    "heyrico"
   ],
   "kind": "source",
-  "origin": "web:x.com via api.fxtwitter.com/2/profile/<handle>/statuses (public FixTweet mirror, no login): @marcelkargul, @kargulstudio, @_heyrico, and the four Larpo founders @augustasdesign, @faulkner_Design, @marius_vanagas, @rokasrem (1,669 statuses, 2026-10-22) + knowledge/web/x-design-posts.md (29-account study, XP-01..28) + knowledge/web/heyrico-deep-2026-10.md (RD-36..38) + knowledge/larpo/larpo-brand-and-constraints.md (LBC-27, 40-48) + knowledge/founder/canon/post-component.md"
+  "origin": "web:x.com via api.fxtwitter.com/2/profile/<handle>/statuses (public FixTweet mirror, no login): @marcelkargul, @kargulstudio, @_heyrico, and the four Larpo founders @augustasdesign, @faulkner_Design, @marius_vanagas, @rokasrem (1,669 statuses, 2026-10-22) + knowledge/web/x-design-posts.md (29-account study, XP-01..28) + knowledge/web/heyrico-deep-2026-10.md (RD-36..38) + knowledge/larpo/larpo-brand-and-constraints.md (LBC-27, 40-48) + knowledge/founder/canon/post-component.md. The three co-founder timelines are X-engine output and count as negative evidence only (XS-28)"
  },
  {
   "id": "XS-07",
   "text": "Rotate formats to these weekly shares across the network: single stills 35-40%, vertical-thirds carousels 15-20%, portrait pairs 15-20%, motion follow-ups 10-15%, 4-ups of mixed crops 5-10%, text-only 0-5%.",
-  "why": "Format multipliers (likes / views): vertical thirds 1.33 / 1.12 pooled (Augustas 17.6, Marcel 2.0); portrait pairs 1.21 / 1.28; mixed 4-ups 1.12 / 1.26; single landscape 1.00 / 0.95; video 0.88 / 0.80 (bookmarks 1.26); same-size 4-ups 0.85 / 0.85; quote-only text 0.67 / 1.00. Singles stay the base because a series needs a full view and a hero is one image. The benchmarks' own mixes: rico single 47%, 2-up 34%, 4-up 9%, 3-up 4%; Marcel single 45%, video 16%, text 13%, 4-up 6%, 2-up 4%, 3-up 3%.",
+  "why": "Format multipliers (likes / views): vertical thirds 1.33 / 1.12 pooled (Augustas 17.6, Marcel 2.0); portrait pairs 1.21 / 1.28; mixed 4-ups 1.12 / 1.26; single landscape 0.98 / 0.95; video 0.88 / 0.80 (bookmarks 1.26); same-size 4-ups 0.85 / 0.85; quote-only text 0.67 / 1.00. Singles stay the base because a series needs a full view and a hero is one image. The benchmarks' own mixes: rico single 47%, 2-up 34%, 4-up 9%, 3-up 4%; Marcel single 45%, video 16%, text 13%, 4-up 6%, 2-up 4%, 3-up 3%.",
   "applies": "posting plans.",
   "check": "rolling 7-day shares within the bands; no format above 50%.",
   "checkable": true,
@@ -132015,7 +132601,7 @@
    "heyrico"
   ],
   "kind": "source",
-  "origin": "web:x.com via api.fxtwitter.com/2/profile/<handle>/statuses (public FixTweet mirror, no login): @marcelkargul, @kargulstudio, @_heyrico, and the four Larpo founders @augustasdesign, @faulkner_Design, @marius_vanagas, @rokasrem (1,669 statuses, 2026-10-22) + knowledge/web/x-design-posts.md (29-account study, XP-01..28) + knowledge/web/heyrico-deep-2026-10.md (RD-36..38) + knowledge/larpo/larpo-brand-and-constraints.md (LBC-27, 40-48) + knowledge/founder/canon/post-component.md"
+  "origin": "web:x.com via api.fxtwitter.com/2/profile/<handle>/statuses (public FixTweet mirror, no login): @marcelkargul, @kargulstudio, @_heyrico, and the four Larpo founders @augustasdesign, @faulkner_Design, @marius_vanagas, @rokasrem (1,669 statuses, 2026-10-22) + knowledge/web/x-design-posts.md (29-account study, XP-01..28) + knowledge/web/heyrico-deep-2026-10.md (RD-36..38) + knowledge/larpo/larpo-brand-and-constraints.md (LBC-27, 40-48) + knowledge/founder/canon/post-component.md. The three co-founder timelines are X-engine output and count as negative evidence only (XS-28)"
  },
  {
   "id": "XS-08",
@@ -132053,7 +132639,7 @@
    "heyrico"
   ],
   "kind": "source",
-  "origin": "web:x.com via api.fxtwitter.com/2/profile/<handle>/statuses (public FixTweet mirror, no login): @marcelkargul, @kargulstudio, @_heyrico, and the four Larpo founders @augustasdesign, @faulkner_Design, @marius_vanagas, @rokasrem (1,669 statuses, 2026-10-22) + knowledge/web/x-design-posts.md (29-account study, XP-01..28) + knowledge/web/heyrico-deep-2026-10.md (RD-36..38) + knowledge/larpo/larpo-brand-and-constraints.md (LBC-27, 40-48) + knowledge/founder/canon/post-component.md"
+  "origin": "web:x.com via api.fxtwitter.com/2/profile/<handle>/statuses (public FixTweet mirror, no login): @marcelkargul, @kargulstudio, @_heyrico, and the four Larpo founders @augustasdesign, @faulkner_Design, @marius_vanagas, @rokasrem (1,669 statuses, 2026-10-22) + knowledge/web/x-design-posts.md (29-account study, XP-01..28) + knowledge/web/heyrico-deep-2026-10.md (RD-36..38) + knowledge/larpo/larpo-brand-and-constraints.md (LBC-27, 40-48) + knowledge/founder/canon/post-component.md. The three co-founder timelines are X-engine output and count as negative evidence only (XS-28)"
  },
  {
   "id": "XS-09",
@@ -132091,12 +132677,12 @@
    "heyrico"
   ],
   "kind": "source",
-  "origin": "web:x.com via api.fxtwitter.com/2/profile/<handle>/statuses (public FixTweet mirror, no login): @marcelkargul, @kargulstudio, @_heyrico, and the four Larpo founders @augustasdesign, @faulkner_Design, @marius_vanagas, @rokasrem (1,669 statuses, 2026-10-22) + knowledge/web/x-design-posts.md (29-account study, XP-01..28) + knowledge/web/heyrico-deep-2026-10.md (RD-36..38) + knowledge/larpo/larpo-brand-and-constraints.md (LBC-27, 40-48) + knowledge/founder/canon/post-component.md"
+  "origin": "web:x.com via api.fxtwitter.com/2/profile/<handle>/statuses (public FixTweet mirror, no login): @marcelkargul, @kargulstudio, @_heyrico, and the four Larpo founders @augustasdesign, @faulkner_Design, @marius_vanagas, @rokasrem (1,669 statuses, 2026-10-22) + knowledge/web/x-design-posts.md (29-account study, XP-01..28) + knowledge/web/heyrico-deep-2026-10.md (RD-36..38) + knowledge/larpo/larpo-brand-and-constraints.md (LBC-27, 40-48) + knowledge/founder/canon/post-component.md. The three co-founder timelines are X-engine output and count as negative evidence only (XS-28)"
  },
  {
   "id": "XS-10",
   "text": "Show two states or two modes as a portrait pair: two images at 4:5 to 7:8 (1760x2000 per XP-04), same crop, one post.",
-  "why": "Pooled portrait pairs 1.21x likes / 1.28x views (n=36; rico 1.21x, n=32); Augustas's \"light dashboard design\" pair 2.28x. Rokas's A/B posts put both variants side by side inside one 16:9 image, which reads small at 514 px.",
+  "why": "Pooled portrait pairs 1.21x likes / 1.28x views (n=36; rico 1.21x, n=32); Augustas's \"light dashboard design\" pair 2.28x. Negative example (XS-28): the X engine's A/B posts on @rokasrem put both variants side by side inside one 16:9 image, which reads small at 514 px.",
   "applies": "light/dark, before/after, two states, two screens of one product.",
   "check": "2 images, w/h 0.78-0.90 each, identical crop box.",
   "checkable": true,
@@ -132129,7 +132715,7 @@
    "heyrico"
   ],
   "kind": "source",
-  "origin": "web:x.com via api.fxtwitter.com/2/profile/<handle>/statuses (public FixTweet mirror, no login): @marcelkargul, @kargulstudio, @_heyrico, and the four Larpo founders @augustasdesign, @faulkner_Design, @marius_vanagas, @rokasrem (1,669 statuses, 2026-10-22) + knowledge/web/x-design-posts.md (29-account study, XP-01..28) + knowledge/web/heyrico-deep-2026-10.md (RD-36..38) + knowledge/larpo/larpo-brand-and-constraints.md (LBC-27, 40-48) + knowledge/founder/canon/post-component.md"
+  "origin": "web:x.com via api.fxtwitter.com/2/profile/<handle>/statuses (public FixTweet mirror, no login): @marcelkargul, @kargulstudio, @_heyrico, and the four Larpo founders @augustasdesign, @faulkner_Design, @marius_vanagas, @rokasrem (1,669 statuses, 2026-10-22) + knowledge/web/x-design-posts.md (29-account study, XP-01..28) + knowledge/web/heyrico-deep-2026-10.md (RD-36..38) + knowledge/larpo/larpo-brand-and-constraints.md (LBC-27, 40-48) + knowledge/founder/canon/post-component.md. The three co-founder timelines are X-engine output and count as negative evidence only (XS-28)"
  },
  {
   "id": "XS-11",
@@ -132167,7 +132753,7 @@
    "heyrico"
   ],
   "kind": "source",
-  "origin": "web:x.com via api.fxtwitter.com/2/profile/<handle>/statuses (public FixTweet mirror, no login): @marcelkargul, @kargulstudio, @_heyrico, and the four Larpo founders @augustasdesign, @faulkner_Design, @marius_vanagas, @rokasrem (1,669 statuses, 2026-10-22) + knowledge/web/x-design-posts.md (29-account study, XP-01..28) + knowledge/web/heyrico-deep-2026-10.md (RD-36..38) + knowledge/larpo/larpo-brand-and-constraints.md (LBC-27, 40-48) + knowledge/founder/canon/post-component.md"
+  "origin": "web:x.com via api.fxtwitter.com/2/profile/<handle>/statuses (public FixTweet mirror, no login): @marcelkargul, @kargulstudio, @_heyrico, and the four Larpo founders @augustasdesign, @faulkner_Design, @marius_vanagas, @rokasrem (1,669 statuses, 2026-10-22) + knowledge/web/x-design-posts.md (29-account study, XP-01..28) + knowledge/web/heyrico-deep-2026-10.md (RD-36..38) + knowledge/larpo/larpo-brand-and-constraints.md (LBC-27, 40-48) + knowledge/founder/canon/post-component.md. The three co-founder timelines are X-engine output and count as negative evidence only (XS-28)"
  },
  {
   "id": "XS-12",
@@ -132205,7 +132791,7 @@
    "heyrico"
   ],
   "kind": "source",
-  "origin": "web:x.com via api.fxtwitter.com/2/profile/<handle>/statuses (public FixTweet mirror, no login): @marcelkargul, @kargulstudio, @_heyrico, and the four Larpo founders @augustasdesign, @faulkner_Design, @marius_vanagas, @rokasrem (1,669 statuses, 2026-10-22) + knowledge/web/x-design-posts.md (29-account study, XP-01..28) + knowledge/web/heyrico-deep-2026-10.md (RD-36..38) + knowledge/larpo/larpo-brand-and-constraints.md (LBC-27, 40-48) + knowledge/founder/canon/post-component.md"
+  "origin": "web:x.com via api.fxtwitter.com/2/profile/<handle>/statuses (public FixTweet mirror, no login): @marcelkargul, @kargulstudio, @_heyrico, and the four Larpo founders @augustasdesign, @faulkner_Design, @marius_vanagas, @rokasrem (1,669 statuses, 2026-10-22) + knowledge/web/x-design-posts.md (29-account study, XP-01..28) + knowledge/web/heyrico-deep-2026-10.md (RD-36..38) + knowledge/larpo/larpo-brand-and-constraints.md (LBC-27, 40-48) + knowledge/founder/canon/post-component.md. The three co-founder timelines are X-engine output and count as negative evidence only (XS-28)"
  },
  {
   "id": "XS-13",
@@ -132243,7 +132829,7 @@
    "heyrico"
   ],
   "kind": "source",
-  "origin": "web:x.com via api.fxtwitter.com/2/profile/<handle>/statuses (public FixTweet mirror, no login): @marcelkargul, @kargulstudio, @_heyrico, and the four Larpo founders @augustasdesign, @faulkner_Design, @marius_vanagas, @rokasrem (1,669 statuses, 2026-10-22) + knowledge/web/x-design-posts.md (29-account study, XP-01..28) + knowledge/web/heyrico-deep-2026-10.md (RD-36..38) + knowledge/larpo/larpo-brand-and-constraints.md (LBC-27, 40-48) + knowledge/founder/canon/post-component.md"
+  "origin": "web:x.com via api.fxtwitter.com/2/profile/<handle>/statuses (public FixTweet mirror, no login): @marcelkargul, @kargulstudio, @_heyrico, and the four Larpo founders @augustasdesign, @faulkner_Design, @marius_vanagas, @rokasrem (1,669 statuses, 2026-10-22) + knowledge/web/x-design-posts.md (29-account study, XP-01..28) + knowledge/web/heyrico-deep-2026-10.md (RD-36..38) + knowledge/larpo/larpo-brand-and-constraints.md (LBC-27, 40-48) + knowledge/founder/canon/post-component.md. The three co-founder timelines are X-engine output and count as negative evidence only (XS-28)"
  },
  {
   "id": "XS-14",
@@ -132281,7 +132867,7 @@
    "heyrico"
   ],
   "kind": "source",
-  "origin": "web:x.com via api.fxtwitter.com/2/profile/<handle>/statuses (public FixTweet mirror, no login): @marcelkargul, @kargulstudio, @_heyrico, and the four Larpo founders @augustasdesign, @faulkner_Design, @marius_vanagas, @rokasrem (1,669 statuses, 2026-10-22) + knowledge/web/x-design-posts.md (29-account study, XP-01..28) + knowledge/web/heyrico-deep-2026-10.md (RD-36..38) + knowledge/larpo/larpo-brand-and-constraints.md (LBC-27, 40-48) + knowledge/founder/canon/post-component.md"
+  "origin": "web:x.com via api.fxtwitter.com/2/profile/<handle>/statuses (public FixTweet mirror, no login): @marcelkargul, @kargulstudio, @_heyrico, and the four Larpo founders @augustasdesign, @faulkner_Design, @marius_vanagas, @rokasrem (1,669 statuses, 2026-10-22) + knowledge/web/x-design-posts.md (29-account study, XP-01..28) + knowledge/web/heyrico-deep-2026-10.md (RD-36..38) + knowledge/larpo/larpo-brand-and-constraints.md (LBC-27, 40-48) + knowledge/founder/canon/post-component.md. The three co-founder timelines are X-engine output and count as negative evidence only (XS-28)"
  },
  {
   "id": "XS-15",
@@ -132319,7 +132905,7 @@
    "heyrico"
   ],
   "kind": "source",
-  "origin": "web:x.com via api.fxtwitter.com/2/profile/<handle>/statuses (public FixTweet mirror, no login): @marcelkargul, @kargulstudio, @_heyrico, and the four Larpo founders @augustasdesign, @faulkner_Design, @marius_vanagas, @rokasrem (1,669 statuses, 2026-10-22) + knowledge/web/x-design-posts.md (29-account study, XP-01..28) + knowledge/web/heyrico-deep-2026-10.md (RD-36..38) + knowledge/larpo/larpo-brand-and-constraints.md (LBC-27, 40-48) + knowledge/founder/canon/post-component.md"
+  "origin": "web:x.com via api.fxtwitter.com/2/profile/<handle>/statuses (public FixTweet mirror, no login): @marcelkargul, @kargulstudio, @_heyrico, and the four Larpo founders @augustasdesign, @faulkner_Design, @marius_vanagas, @rokasrem (1,669 statuses, 2026-10-22) + knowledge/web/x-design-posts.md (29-account study, XP-01..28) + knowledge/web/heyrico-deep-2026-10.md (RD-36..38) + knowledge/larpo/larpo-brand-and-constraints.md (LBC-27, 40-48) + knowledge/founder/canon/post-component.md. The three co-founder timelines are X-engine output and count as negative evidence only (XS-28)"
  },
  {
   "id": "XS-16",
@@ -132357,7 +132943,7 @@
    "heyrico"
   ],
   "kind": "source",
-  "origin": "web:x.com via api.fxtwitter.com/2/profile/<handle>/statuses (public FixTweet mirror, no login): @marcelkargul, @kargulstudio, @_heyrico, and the four Larpo founders @augustasdesign, @faulkner_Design, @marius_vanagas, @rokasrem (1,669 statuses, 2026-10-22) + knowledge/web/x-design-posts.md (29-account study, XP-01..28) + knowledge/web/heyrico-deep-2026-10.md (RD-36..38) + knowledge/larpo/larpo-brand-and-constraints.md (LBC-27, 40-48) + knowledge/founder/canon/post-component.md"
+  "origin": "web:x.com via api.fxtwitter.com/2/profile/<handle>/statuses (public FixTweet mirror, no login): @marcelkargul, @kargulstudio, @_heyrico, and the four Larpo founders @augustasdesign, @faulkner_Design, @marius_vanagas, @rokasrem (1,669 statuses, 2026-10-22) + knowledge/web/x-design-posts.md (29-account study, XP-01..28) + knowledge/web/heyrico-deep-2026-10.md (RD-36..38) + knowledge/larpo/larpo-brand-and-constraints.md (LBC-27, 40-48) + knowledge/founder/canon/post-component.md. The three co-founder timelines are X-engine output and count as negative evidence only (XS-28)"
  },
  {
   "id": "XS-17",
@@ -132395,7 +132981,7 @@
    "heyrico"
   ],
   "kind": "source",
-  "origin": "web:x.com via api.fxtwitter.com/2/profile/<handle>/statuses (public FixTweet mirror, no login): @marcelkargul, @kargulstudio, @_heyrico, and the four Larpo founders @augustasdesign, @faulkner_Design, @marius_vanagas, @rokasrem (1,669 statuses, 2026-10-22) + knowledge/web/x-design-posts.md (29-account study, XP-01..28) + knowledge/web/heyrico-deep-2026-10.md (RD-36..38) + knowledge/larpo/larpo-brand-and-constraints.md (LBC-27, 40-48) + knowledge/founder/canon/post-component.md"
+  "origin": "web:x.com via api.fxtwitter.com/2/profile/<handle>/statuses (public FixTweet mirror, no login): @marcelkargul, @kargulstudio, @_heyrico, and the four Larpo founders @augustasdesign, @faulkner_Design, @marius_vanagas, @rokasrem (1,669 statuses, 2026-10-22) + knowledge/web/x-design-posts.md (29-account study, XP-01..28) + knowledge/web/heyrico-deep-2026-10.md (RD-36..38) + knowledge/larpo/larpo-brand-and-constraints.md (LBC-27, 40-48) + knowledge/founder/canon/post-component.md. The three co-founder timelines are X-engine output and count as negative evidence only (XS-28)"
  },
  {
   "id": "XS-18",
@@ -132433,12 +133019,12 @@
    "heyrico"
   ],
   "kind": "source",
-  "origin": "web:x.com via api.fxtwitter.com/2/profile/<handle>/statuses (public FixTweet mirror, no login): @marcelkargul, @kargulstudio, @_heyrico, and the four Larpo founders @augustasdesign, @faulkner_Design, @marius_vanagas, @rokasrem (1,669 statuses, 2026-10-22) + knowledge/web/x-design-posts.md (29-account study, XP-01..28) + knowledge/web/heyrico-deep-2026-10.md (RD-36..38) + knowledge/larpo/larpo-brand-and-constraints.md (LBC-27, 40-48) + knowledge/founder/canon/post-component.md"
+  "origin": "web:x.com via api.fxtwitter.com/2/profile/<handle>/statuses (public FixTweet mirror, no login): @marcelkargul, @kargulstudio, @_heyrico, and the four Larpo founders @augustasdesign, @faulkner_Design, @marius_vanagas, @rokasrem (1,669 statuses, 2026-10-22) + knowledge/web/x-design-posts.md (29-account study, XP-01..28) + knowledge/web/heyrico-deep-2026-10.md (RD-36..38) + knowledge/larpo/larpo-brand-and-constraints.md (LBC-27, 40-48) + knowledge/founder/canon/post-component.md. The three co-founder timelines are X-engine output and count as negative evidence only (XS-28)"
  },
  {
   "id": "XS-19",
   "text": "Across the four accounts, split one project into different cuts (one account the full view, another the thirds, another the light/dark pair, another the close-up), never the same image on two accounts within 7 days and never the same caption.",
-  "why": "Identical media from several accounts in one feed reads as coordinated and gets the author-diversity and \"not interested\" penalties [XP section 6.2]; different cuts let each account post the series in its own voice (caption-voice.md).",
+  "why": "Identical media from several accounts in one feed reads as coordinated and gets the author-diversity and \"not interested\" penalties [XP section 6.2]; different cuts let each account post the series with its own pattern rotation (caption-voice.md, caption-patterns.md).",
   "applies": "cross-account plans.",
   "check": "asset id unique per 7 days across accounts; caption strings unique.",
   "checkable": true,
@@ -132471,16 +133057,16 @@
    "heyrico"
   ],
   "kind": "source",
-  "origin": "web:x.com via api.fxtwitter.com/2/profile/<handle>/statuses (public FixTweet mirror, no login): @marcelkargul, @kargulstudio, @_heyrico, and the four Larpo founders @augustasdesign, @faulkner_Design, @marius_vanagas, @rokasrem (1,669 statuses, 2026-10-22) + knowledge/web/x-design-posts.md (29-account study, XP-01..28) + knowledge/web/heyrico-deep-2026-10.md (RD-36..38) + knowledge/larpo/larpo-brand-and-constraints.md (LBC-27, 40-48) + knowledge/founder/canon/post-component.md"
+  "origin": "web:x.com via api.fxtwitter.com/2/profile/<handle>/statuses (public FixTweet mirror, no login): @marcelkargul, @kargulstudio, @_heyrico, and the four Larpo founders @augustasdesign, @faulkner_Design, @marius_vanagas, @rokasrem (1,669 statuses, 2026-10-22) + knowledge/web/x-design-posts.md (29-account study, XP-01..28) + knowledge/web/heyrico-deep-2026-10.md (RD-36..38) + knowledge/larpo/larpo-brand-and-constraints.md (LBC-27, 40-48) + knowledge/founder/canon/post-component.md. The three co-founder timelines are X-engine output and count as negative evidence only (XS-28)"
  },
  {
   "id": "XS-20",
-  "text": "Write captions lowercase, 4-10 words, naming the UI part (dashboard, sidebar, hero, calendar, onboarding) plus at most one plain judgement; per-account voice in `caption-voice.md`.",
-  "why": "Naming a UI part 1.22x vs 0.85x without (Augustas era 1, n=118); 7-10 words 1.16x, 1-3 words 0.72x; superlatives 1.22x (n=43) and Larpo's plain-label doctrine (LBC-40, LBC-44: plain labels 3-15x reach). Augustas's current era is 96% lowercase at a median 4 words; Marcel median 9 words (82% lowercase), rico 4 words.",
+  "text": "Write captions lowercase, 5-9 words (3-10 allowed), in the studio register: one measured pattern from `caption-patterns.md` (superlative about a named part, callout, standard line, view label, comparative follow-up), naming the UI part; never explanatory product copy.",
+  "why": "Across 1,375 design captions of 11 benchmark accounts and Augustas (co-founders excluded): 7-9 words 1.19x, 1-2 words 0.95x, no caption 0.71x; naming a UI part 1.10x vs 0.95x; a judgement word 1.16x vs 0.97x. Augustas both eras: 7-9 words 1.21x (n=71), 1-2 words 0.50x (n=29). Explanatory decision/detail/contrast lines were rejected by the founder (ledger `x-captions` r1). Marcel is 88% lowercase at a median 7 words, rico 69% at 4, Augustas now 100% at 4.",
   "applies": "every caption.",
-  "check": "lowercase except proper names; 4-10 words; contains a UI noun.",
+  "check": "lowercase except proper names; 3-10 words; the pattern id is one of CP's templates.",
   "checkable": true,
-  "source": "era-1 caption cuts; `_analysis.json.*.captions`; LBC-40, LBC-44.",
+  "source": "`data/_captions.json` (captions.mjs); caption-patterns.md CP-01..; LBC-40, LBC-44.",
   "file": "x/x-strategy.md",
   "section": "3.4 Captions",
   "tags": [
@@ -132509,7 +133095,7 @@
    "heyrico"
   ],
   "kind": "source",
-  "origin": "web:x.com via api.fxtwitter.com/2/profile/<handle>/statuses (public FixTweet mirror, no login): @marcelkargul, @kargulstudio, @_heyrico, and the four Larpo founders @augustasdesign, @faulkner_Design, @marius_vanagas, @rokasrem (1,669 statuses, 2026-10-22) + knowledge/web/x-design-posts.md (29-account study, XP-01..28) + knowledge/web/heyrico-deep-2026-10.md (RD-36..38) + knowledge/larpo/larpo-brand-and-constraints.md (LBC-27, 40-48) + knowledge/founder/canon/post-component.md"
+  "origin": "web:x.com via api.fxtwitter.com/2/profile/<handle>/statuses (public FixTweet mirror, no login): @marcelkargul, @kargulstudio, @_heyrico, and the four Larpo founders @augustasdesign, @faulkner_Design, @marius_vanagas, @rokasrem (1,669 statuses, 2026-10-22) + knowledge/web/x-design-posts.md (29-account study, XP-01..28) + knowledge/web/heyrico-deep-2026-10.md (RD-36..38) + knowledge/larpo/larpo-brand-and-constraints.md (LBC-27, 40-48) + knowledge/founder/canon/post-component.md. The three co-founder timelines are X-engine output and count as negative evidence only (XS-28)"
  },
  {
   "id": "XS-21",
@@ -132547,7 +133133,7 @@
    "heyrico"
   ],
   "kind": "source",
-  "origin": "web:x.com via api.fxtwitter.com/2/profile/<handle>/statuses (public FixTweet mirror, no login): @marcelkargul, @kargulstudio, @_heyrico, and the four Larpo founders @augustasdesign, @faulkner_Design, @marius_vanagas, @rokasrem (1,669 statuses, 2026-10-22) + knowledge/web/x-design-posts.md (29-account study, XP-01..28) + knowledge/web/heyrico-deep-2026-10.md (RD-36..38) + knowledge/larpo/larpo-brand-and-constraints.md (LBC-27, 40-48) + knowledge/founder/canon/post-component.md"
+  "origin": "web:x.com via api.fxtwitter.com/2/profile/<handle>/statuses (public FixTweet mirror, no login): @marcelkargul, @kargulstudio, @_heyrico, and the four Larpo founders @augustasdesign, @faulkner_Design, @marius_vanagas, @rokasrem (1,669 statuses, 2026-10-22) + knowledge/web/x-design-posts.md (29-account study, XP-01..28) + knowledge/web/heyrico-deep-2026-10.md (RD-36..38) + knowledge/larpo/larpo-brand-and-constraints.md (LBC-27, 40-48) + knowledge/founder/canon/post-component.md. The three co-founder timelines are X-engine output and count as negative evidence only (XS-28)"
  },
  {
   "id": "XS-22",
@@ -132585,12 +133171,12 @@
    "heyrico"
   ],
   "kind": "source",
-  "origin": "web:x.com via api.fxtwitter.com/2/profile/<handle>/statuses (public FixTweet mirror, no login): @marcelkargul, @kargulstudio, @_heyrico, and the four Larpo founders @augustasdesign, @faulkner_Design, @marius_vanagas, @rokasrem (1,669 statuses, 2026-10-22) + knowledge/web/x-design-posts.md (29-account study, XP-01..28) + knowledge/web/heyrico-deep-2026-10.md (RD-36..38) + knowledge/larpo/larpo-brand-and-constraints.md (LBC-27, 40-48) + knowledge/founder/canon/post-component.md"
+  "origin": "web:x.com via api.fxtwitter.com/2/profile/<handle>/statuses (public FixTweet mirror, no login): @marcelkargul, @kargulstudio, @_heyrico, and the four Larpo founders @augustasdesign, @faulkner_Design, @marius_vanagas, @rokasrem (1,669 statuses, 2026-10-22) + knowledge/web/x-design-posts.md (29-account study, XP-01..28) + knowledge/web/heyrico-deep-2026-10.md (RD-36..38) + knowledge/larpo/larpo-brand-and-constraints.md (LBC-27, 40-48) + knowledge/founder/canon/post-component.md. The three co-founder timelines are X-engine output and count as negative evidence only (XS-28)"
  },
  {
   "id": "XS-23",
   "text": "Use at most one emoji, at the end, and only in Augustas's voice.",
-  "why": "Emoji effect is neutral to mixed: Augustas 0.86x (now) and 1.01x (era 1), Marcel 1.15x, rico 0.91x; hashtags appear on 0% of the founders' posts and 1% across design X [XP-13]. The co-founders use none (0 of 55 posts), which keeps their voices distinct.",
+  "why": "Emoji effect is neutral to mixed: Augustas 0.86x (now) and 1.01x (era 1), Marcel 1.17x vs 0.96x, rico 0.97x vs 1.07x, pooled 1.00x vs 1.03x (caption-patterns.md CP-06); hashtags appear on 0% of the founders' posts and 1% across design X [XP-13]. Emoji is Augustas's signature, and the X engine profile for @rokasrem has emoji off.",
   "applies": "every caption.",
   "check": "emoji count <= 1 and last; co-founder captions 0 emoji; hashtags 0.",
   "checkable": true,
@@ -132623,7 +133209,7 @@
    "heyrico"
   ],
   "kind": "source",
-  "origin": "web:x.com via api.fxtwitter.com/2/profile/<handle>/statuses (public FixTweet mirror, no login): @marcelkargul, @kargulstudio, @_heyrico, and the four Larpo founders @augustasdesign, @faulkner_Design, @marius_vanagas, @rokasrem (1,669 statuses, 2026-10-22) + knowledge/web/x-design-posts.md (29-account study, XP-01..28) + knowledge/web/heyrico-deep-2026-10.md (RD-36..38) + knowledge/larpo/larpo-brand-and-constraints.md (LBC-27, 40-48) + knowledge/founder/canon/post-component.md"
+  "origin": "web:x.com via api.fxtwitter.com/2/profile/<handle>/statuses (public FixTweet mirror, no login): @marcelkargul, @kargulstudio, @_heyrico, and the four Larpo founders @augustasdesign, @faulkner_Design, @marius_vanagas, @rokasrem (1,669 statuses, 2026-10-22) + knowledge/web/x-design-posts.md (29-account study, XP-01..28) + knowledge/web/heyrico-deep-2026-10.md (RD-36..38) + knowledge/larpo/larpo-brand-and-constraints.md (LBC-27, 40-48) + knowledge/founder/canon/post-component.md. The three co-founder timelines are X-engine output and count as negative evidence only (XS-28)"
  },
  {
   "id": "XS-24",
@@ -132661,7 +133247,7 @@
    "heyrico"
   ],
   "kind": "source",
-  "origin": "web:x.com via api.fxtwitter.com/2/profile/<handle>/statuses (public FixTweet mirror, no login): @marcelkargul, @kargulstudio, @_heyrico, and the four Larpo founders @augustasdesign, @faulkner_Design, @marius_vanagas, @rokasrem (1,669 statuses, 2026-10-22) + knowledge/web/x-design-posts.md (29-account study, XP-01..28) + knowledge/web/heyrico-deep-2026-10.md (RD-36..38) + knowledge/larpo/larpo-brand-and-constraints.md (LBC-27, 40-48) + knowledge/founder/canon/post-component.md"
+  "origin": "web:x.com via api.fxtwitter.com/2/profile/<handle>/statuses (public FixTweet mirror, no login): @marcelkargul, @kargulstudio, @_heyrico, and the four Larpo founders @augustasdesign, @faulkner_Design, @marius_vanagas, @rokasrem (1,669 statuses, 2026-10-22) + knowledge/web/x-design-posts.md (29-account study, XP-01..28) + knowledge/web/heyrico-deep-2026-10.md (RD-36..38) + knowledge/larpo/larpo-brand-and-constraints.md (LBC-27, 40-48) + knowledge/founder/canon/post-component.md. The three co-founder timelines are X-engine output and count as negative evidence only (XS-28)"
  },
  {
   "id": "XS-25",
@@ -132699,7 +133285,7 @@
    "heyrico"
   ],
   "kind": "source",
-  "origin": "web:x.com via api.fxtwitter.com/2/profile/<handle>/statuses (public FixTweet mirror, no login): @marcelkargul, @kargulstudio, @_heyrico, and the four Larpo founders @augustasdesign, @faulkner_Design, @marius_vanagas, @rokasrem (1,669 statuses, 2026-10-22) + knowledge/web/x-design-posts.md (29-account study, XP-01..28) + knowledge/web/heyrico-deep-2026-10.md (RD-36..38) + knowledge/larpo/larpo-brand-and-constraints.md (LBC-27, 40-48) + knowledge/founder/canon/post-component.md"
+  "origin": "web:x.com via api.fxtwitter.com/2/profile/<handle>/statuses (public FixTweet mirror, no login): @marcelkargul, @kargulstudio, @_heyrico, and the four Larpo founders @augustasdesign, @faulkner_Design, @marius_vanagas, @rokasrem (1,669 statuses, 2026-10-22) + knowledge/web/x-design-posts.md (29-account study, XP-01..28) + knowledge/web/heyrico-deep-2026-10.md (RD-36..38) + knowledge/larpo/larpo-brand-and-constraints.md (LBC-27, 40-48) + knowledge/founder/canon/post-component.md. The three co-founder timelines are X-engine output and count as negative evidence only (XS-28)"
  },
  {
   "id": "XS-26",
@@ -132737,7 +133323,7 @@
    "heyrico"
   ],
   "kind": "source",
-  "origin": "web:x.com via api.fxtwitter.com/2/profile/<handle>/statuses (public FixTweet mirror, no login): @marcelkargul, @kargulstudio, @_heyrico, and the four Larpo founders @augustasdesign, @faulkner_Design, @marius_vanagas, @rokasrem (1,669 statuses, 2026-10-22) + knowledge/web/x-design-posts.md (29-account study, XP-01..28) + knowledge/web/heyrico-deep-2026-10.md (RD-36..38) + knowledge/larpo/larpo-brand-and-constraints.md (LBC-27, 40-48) + knowledge/founder/canon/post-component.md"
+  "origin": "web:x.com via api.fxtwitter.com/2/profile/<handle>/statuses (public FixTweet mirror, no login): @marcelkargul, @kargulstudio, @_heyrico, and the four Larpo founders @augustasdesign, @faulkner_Design, @marius_vanagas, @rokasrem (1,669 statuses, 2026-10-22) + knowledge/web/x-design-posts.md (29-account study, XP-01..28) + knowledge/web/heyrico-deep-2026-10.md (RD-36..38) + knowledge/larpo/larpo-brand-and-constraints.md (LBC-27, 40-48) + knowledge/founder/canon/post-component.md. The three co-founder timelines are X-engine output and count as negative evidence only (XS-28)"
  },
  {
   "id": "XS-27",
@@ -132775,7 +133361,45 @@
    "heyrico"
   ],
   "kind": "source",
-  "origin": "web:x.com via api.fxtwitter.com/2/profile/<handle>/statuses (public FixTweet mirror, no login): @marcelkargul, @kargulstudio, @_heyrico, and the four Larpo founders @augustasdesign, @faulkner_Design, @marius_vanagas, @rokasrem (1,669 statuses, 2026-10-22) + knowledge/web/x-design-posts.md (29-account study, XP-01..28) + knowledge/web/heyrico-deep-2026-10.md (RD-36..38) + knowledge/larpo/larpo-brand-and-constraints.md (LBC-27, 40-48) + knowledge/founder/canon/post-component.md"
+  "origin": "web:x.com via api.fxtwitter.com/2/profile/<handle>/statuses (public FixTweet mirror, no login): @marcelkargul, @kargulstudio, @_heyrico, and the four Larpo founders @augustasdesign, @faulkner_Design, @marius_vanagas, @rokasrem (1,669 statuses, 2026-10-22) + knowledge/web/x-design-posts.md (29-account study, XP-01..28) + knowledge/web/heyrico-deep-2026-10.md (RD-36..38) + knowledge/larpo/larpo-brand-and-constraints.md (LBC-27, 40-48) + knowledge/founder/canon/post-component.md. The three co-founder timelines are X-engine output and count as negative evidence only (XS-28)"
+ },
+ {
+  "id": "XS-28",
+  "text": "Treat every post the X engine generated on the co-founder accounts (@rokasrem, @faulkner_Design, @marius_vanagas: the auto-made concept heroes, their titles such as \"landing page concept for a ...\", \"a or b? same hero, different color field\", \"{domain} hero, light or dark?\", \"if {technical thing} had a landing page\", and their formats such as two variants side by side in one 16:9 image) as negative evidence: never study, imitate, template or pool them; study the benchmark accounts and Augustas's own posts instead.",
+  "why": "Founder verdicts 2026-10-22: \"do not study the designs that were made by the engine before ... they were stupid ... plus the entire title writing of the post and format ... it's all ass\" (ledger `x-engine-posts` r1) and, on the captions drafted from them, \"you didn't study like normal marcel rico basit\" (ledger `x-captions` r1). Their accounts have 4 followers and medians of 1-3 likes, so they never carried positive signal either.",
+  "applies": "studies, templates, pooled numbers and the planner.",
+  "check": "`cadence.mjs` and `captions.mjs` exclude the three handles (`EXCLUDED`); no template in `system/x/captions.json` or line in `library/*/*/caption.md` shares a three-word run with a co-founder post in `data/rokasrem.json`, `faulkner_Design.json`, `marius_vanagas.json`.",
+  "checkable": true,
+  "source": "ledger/entries/x-engine-posts.json r1, x-captions.json r1; knowledge/founder/founder-taste.md (2026-10-22 entries).",
+  "file": "x/x-strategy.md",
+  "section": "3.5 What never to post, and how to learn",
+  "tags": [
+   "x",
+   "twitter",
+   "posting-plan",
+   "cadence",
+   "schedule",
+   "time-of-day",
+   "timezone",
+   "format-mix",
+   "carousel",
+   "vertical-thirds",
+   "video",
+   "series",
+   "sequencing",
+   "quote-tweet",
+   "repost",
+   "cooldown",
+   "captions",
+   "lowercase",
+   "links",
+   "founders",
+   "larpo",
+   "marcelkargul",
+   "heyrico"
+  ],
+  "kind": "source",
+  "origin": "web:x.com via api.fxtwitter.com/2/profile/<handle>/statuses (public FixTweet mirror, no login): @marcelkargul, @kargulstudio, @_heyrico, and the four Larpo founders @augustasdesign, @faulkner_Design, @marius_vanagas, @rokasrem (1,669 statuses, 2026-10-22) + knowledge/web/x-design-posts.md (29-account study, XP-01..28) + knowledge/web/heyrico-deep-2026-10.md (RD-36..38) + knowledge/larpo/larpo-brand-and-constraints.md (LBC-27, 40-48) + knowledge/founder/canon/post-component.md. The three co-founder timelines are X-engine output and count as negative evidence only (XS-28)"
  },
  {
   "id": "web-sources.a11y-project-checklist#1",

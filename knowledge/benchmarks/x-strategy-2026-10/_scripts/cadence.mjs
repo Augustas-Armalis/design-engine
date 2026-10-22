@@ -6,6 +6,8 @@ import path from 'node:path';
 const [dataDir, outFile] = process.argv.slice(2);
 const A = JSON.parse(fs.readFileSync(path.join(dataDir, '_analysis.json')));
 const X = JSON.parse(fs.readFileSync(path.join(dataDir, '_extra.json')));
+// X-engine generated accounts: negative evidence only (XS-28)
+const EXCLUDED = ['faulkner_Design', 'rokasrem', 'marius_vanagas'];
 const r2 = x => x == null ? null : Math.round(x * 100) / 100;
 const med = a => { const b = a.filter(Number.isFinite).sort((x, y) => x - y); if (!b.length) return null; const m = b.length >> 1; return b.length % 2 ? b[m] : (b[m - 1] + b[m]) / 2; };
 // true median bookmarks per media post in the analysis window (_analysis.json floors medians at 1 to avoid division by zero)
@@ -42,6 +44,7 @@ for (const [h, a] of Object.entries(A.accounts)) {
     formatMix: mix(a.formats.share),
     captionCase: lc >= 0.9 ? 'lowercase' : (cs.none || 0) > (a.counts.originals / 2) ? 'no caption' : lc >= 0.6 ? 'mostly lowercase' : 'mixed',
     lowercaseShare: lc, medianCaptionWords: a.captions.medianWords, emojiShare: a.captions.emojiShare, questionShare: a.captions.questionShare,
+    ...(EXCLUDED.includes(h) && { evidence: 'negative: X-engine generated posts (XS-28; ledger x-engine-posts r1, x-captions r1). Cadence facts only; never a source for captions, titles, formats or voice.' }),
   };
 }
 // Augustas era 1 as a second record (the reference for what his account did at 1.4 posts/day)
@@ -53,21 +56,49 @@ if (era1) accounts.augustasdesign.era1 = {
   captionCase: 'sentence case (2% lowercase)', note: 'self-reply with a link on 239 of 251 replies; scheduled 06:59 and 13:30 Vilnius',
 };
 
-const P = X._pooledSubtypes;
+// Pooled format multipliers. The co-founder accounts (@faulkner_Design, @rokasrem, @marius_vanagas) are
+// X-engine output and negative evidence only (XS-28; founder verdicts ledger/entries/x-engine-posts.json r1,
+// x-captions.json r1), so they are left out of every pooled number here. _extra.json._pooledSubtypes still
+// includes them (extra.mjs is a description of all accounts); this recomputes the pool without them.
+// same accounts, windows and eras as extra.mjs (Augustas pooled per era, each against its own median), minus the co-founders
+const POOL_WINDOW = { marcelkargul: ['marcelkargul', '2026-09-23', '2026-10-23'], kargulstudio: ['kargulstudio', '2026-09-01', '2026-10-23'], _heyrico: ['_heyrico', '2026-08-24', '2026-10-23'], augustasdesign: ['augustasdesign', '2026-08-20', '2026-10-23'], 'augustasdesign-era1': ['augustasdesign', '2025-07-19', '2026-03-05'] };
+function sub(s) {
+  const ph = s.media.filter(m => m.type === 'photo'), v = s.media.filter(m => m.type !== 'photo');
+  if (v.length) return v.length > 1 || ph.length ? 'video+' : 'video';
+  if (!ph.length) return s.quote ? 'quote-text' : 'text';
+  const r = ph.map(m => m.w / m.h);
+  const same = ph.every(m => m.w === ph[0].w && m.h === ph[0].h);
+  if (ph.length === 1) return r[0] < 0.95 ? 'single-portrait' : r[0] <= 1.05 ? 'single-square' : 'single-landscape';
+  if (ph.length === 3) return r.every(x => x < 0.62) ? '3up-vertical-thirds' : '3up-other';
+  if (ph.length === 2) return r.every(x => x >= 0.78 && x <= 0.92) ? '2up-portrait-pair(4:5-7:8)' : r.every(x => x < 0.78) ? '2up-tall' : '2up-landscape';
+  if (ph.length === 4) return same ? '4up-same-size' : '4up-mixed';
+  return ph.length + 'up';
+}
+const pool = {};
+for (const [key, [h, from, to]] of Object.entries(POOL_WINDOW)) {
+  if (EXCLUDED.includes(h)) continue;
+  const f = path.join(dataDir, `${h}.json`); if (!fs.existsSync(f)) continue;
+  const d = JSON.parse(fs.readFileSync(f));
+  const media = d.statuses.filter(s => !s.is_reply && s.media.length && s.created.slice(0, 10) >= from && s.created.slice(0, 10) < to);
+  const base = med(media.map(s => s.likes)) || 1, baseV = med(media.map(s => s.views)) || 1;
+  for (const s of media) (pool[sub(s)] ||= []).push({ rel: s.likes / base, relV: s.views / baseV, h });
+}
+const P = Object.fromEntries(Object.entries(pool).map(([k, v]) => [k, { n: v.length, accounts: [...new Set(v.map(x => x.h))].length, relLikes: r2(med(v.map(x => x.rel))), relViews: r2(med(v.map(x => x.relV))) }]));
+const PN = (k) => P[k]?.n ?? 0;
 const out = {
   generated: '2026-10-22',
   timezone: 'Europe/Vilnius',
-  source: 'knowledge/x/x-strategy.md (XS-01..27), knowledge/x/caption-voice.md; data in knowledge/benchmarks/x-strategy-2026-10/data/',
+  source: 'knowledge/x/x-strategy.md (XS-01..28), knowledge/x/caption-patterns.md (CP-01..), knowledge/x/caption-voice.md (CV-01..); data in knowledge/benchmarks/x-strategy-2026-10/data/. The co-founder accounts are X-engine output: their numbers below describe what they posted, never what to post (XS-28).',
   tzNote: 'Vilnius is UTC+3 until 2026-10-25 03:00, then UTC+2. US Eastern is UTC-4 until 2026-11-01, then UTC-5. Vilnius - ET = 7 h, except 25 Oct - 1 Nov 2026 = 6 h. Keep slots in Vilnius local time.',
   accounts,
   founderAccounts: ['augustasdesign', 'faulkner_Design', 'marius_vanagas', 'rokasrem'],
   formatMultipliers: {
-    'single-still': 0.95, 'carousel-2': 1.2, 'carousel-3': 1.33, 'carousel-4': 0.85, 'video-loop': 0.88, text: 0.5,
+    'single-still': P['single-landscape']?.relLikes ?? 0.95, 'carousel-2': P['2up-portrait-pair(4:5-7:8)']?.relLikes ?? 1.2, 'carousel-3': P['3up-vertical-thirds']?.relLikes ?? 1.33, 'carousel-4': P['4up-same-size']?.relLikes ?? 0.85, 'video-loop': P['video']?.relLikes ?? 0.88, text: 0.5,
     'carousel-2-portrait-pair': P['2up-portrait-pair(4:5-7:8)']?.relLikes, 'carousel-2-landscape': P['2up-landscape']?.relLikes,
     'carousel-3-vertical-thirds': P['3up-vertical-thirds']?.relLikes, 'carousel-4-mixed-crops': P['4up-mixed']?.relLikes, 'carousel-4-same-size': P['4up-same-size']?.relLikes,
     'single-landscape': P['single-landscape']?.relLikes, 'single-portrait': P['single-portrait']?.relLikes, 'single-square': P['single-square']?.relLikes,
     'video-followup-quote': 1.5, 'quote-only-text': 0.67,
-    note: 'Likes relative to each author median, pooled over Marcel (30 d), @kargulstudio, rico (60 d), Augustas (current era) and the co-founders (n: single-landscape 392, portrait pair 36, 2-up landscape 32, thirds 9, 4-up mixed 32, 4-up same size 23, video 56). The six schema keys are rounded planning values: carousel-2 assumes a 4:5-7:8 pair (landscape pairs 0.79); carousel-4 assumes same-size images (1.12 when the four crops differ); video-loop is a cold lead (as a quote of a still that worked, Marcel 1.51x the still, n=10, hence video-followup-quote 1.5); text is a planning penalty for 10k and 4-follower accounts (rico text 0.19, Augustas quote-text 0.19-0.30; Marcel text 1.07 on 60k followers). Cross-check with the 29-account study: 2-up 1.20, 4-up 1.19, video 1.03, 3-up 1.00, single 0.76 (knowledge/web/x-design-posts.md 6.1).',
+    note: `Likes relative to each author median, pooled over Marcel (30 d), @kargulstudio, rico (60 d) and Augustas (current era and era 1, each against its own median); the co-founder accounts are excluded (X-engine output, negative evidence, XS-28) (n: single-landscape ${PN('single-landscape')}, portrait pair ${PN('2up-portrait-pair(4:5-7:8)')}, 2-up landscape ${PN('2up-landscape')}, thirds ${PN('3up-vertical-thirds')}, 4-up mixed ${PN('4up-mixed')}, 4-up same size ${PN('4up-same-size')}, video ${PN('video')}). The six schema keys take the pooled values of their default subtype: single-still = single landscape, carousel-2 = a 4:5-7:8 pair (landscape pairs ${P['2up-landscape']?.relLikes}), carousel-3 = vertical thirds, carousel-4 = same-size images (${P['4up-mixed']?.relLikes} when the four crops differ), video-loop = a cold video lead; video-loop is a cold lead (as a quote of a still that worked, Marcel 1.51x the still, n=10, hence video-followup-quote 1.5); text 0.5 is a planning penalty for 10k and 4-follower accounts (rico text 0.19, Augustas quote-text 0.19-0.30; Marcel text 1.07 on 60k followers). Cross-check with the 29-account study: 2-up 1.20, 4-up 1.19, video 1.03, 3-up 1.00, single 0.76 (knowledge/web/x-design-posts.md 6.1).`,
   },
   subjectMultipliers: {
     dashboard: 2.05, sidebar: 2.49, 'crm-table': 3.12, calendar: 1.93, hero: 1.21, footer: 0.98, 'bento-card': 0.73, pricing: 0.36, 'branding-illustration': 0.6, 'spec-cheatsheet': 2.72,
@@ -90,9 +121,9 @@ const out = {
     defaultDay: [
       { slot: '08:00', account: 'augustasdesign', content: 'lead: product UI (dashboard, crm, calendar, inbox, sidebar) or the series step due today', formats: ['3up-vertical-thirds', 'single-still', 'carousel-2-portrait-pair'] },
       { slot: '14:30', account: 'augustasdesign', content: "second: another cut or a second project; or a motion quote of yesterday's best still", formats: ['single-still', 'video-followup', 'carousel-2-portrait-pair'] },
-      { slot: '16:00', account: 'rokasrem', content: 'a different cut of a series in his detail voice (pair, hero variant, section)', formats: ['carousel-2-portrait-pair', 'single-still'] },
-      { slot: '19:30', account: 'faulkner_Design', content: 'a different cut in his decision voice (close-up, thirds, bento, section)', formats: ['single-still', '3up-vertical-thirds', 'carousel-4-mixed-crops'] },
-      { slot: '22:00', account: 'marius_vanagas', optional: true, content: 'a section or hero in his contrast voice', formats: ['single-still'] },
+      { slot: '16:00', account: 'rokasrem', content: 'a different cut of a series in the studio register, his pattern rotation (caption-voice.md): pair, hero, section', formats: ['carousel-2-portrait-pair', 'single-still'] },
+      { slot: '19:30', account: 'faulkner_Design', content: 'not scheduled for now (founder 2026-10-22); when active: a different cut in the studio register (close-up, thirds, bento, section)', formats: ['single-still', '3up-vertical-thirds', 'carousel-4-mixed-crops'] },
+      { slot: '22:00', account: 'marius_vanagas', optional: true, content: 'not scheduled for now (founder 2026-10-22); when active: a section or hero in the studio register', formats: ['single-still'] },
     ],
     rotation: 'Swap the 16:00 and 19:30 co-founders daily; when Marius is inactive, the 22:00 slot stays empty (3-4 posts a day).',
   },
@@ -115,10 +146,11 @@ const out = {
   replies: { linkInFirstReply: true, firstReplyMinutes: [30, 150], why: 'Augustas era 1: link in post 0.33x likes / 0.53x views (n=14) vs link in a self-reply 1.02x / 1.07x (n=223); rico replies with a link a median 155 min later on 117 of 117 posts; Marcel link-in-reply 1.31x vs link-in-post 0.97x.' },
   captions: {
     case: 'lowercase', maxEmoji: { augustasdesign: 1, faulkner_Design: 0, rokasrem: 0, marius_vanagas: 0 }, hashtags: 0, questions: 0,
-    wordsBand: { augustasdesign: [4, 8], rokasrem: [6, 10], faulkner_Design: [6, 14], marius_vanagas: [12, 25] },
-    voice: { augustasdesign: 'reaction', faulkner_Design: 'decision', rokasrem: 'detail', marius_vanagas: 'contrast' },
-    templates: 'knowledge/x/caption-voice.md section 5 (T01-T14, R1-R4)',
-    why: 'Augustas: 7-10 words 1.16x (n=79), 1-3 words 0.72x (n=65), UI noun 1.22x vs 0.85x, questions 0.69x now, @mentions 0.53x.',
+    wordsBand: { augustasdesign: [3, 10], rokasrem: [3, 10], faulkner_Design: [3, 12], marius_vanagas: [3, 12] },
+    wordsTarget: [5, 9],
+    voice: { augustasdesign: 'studio register; lead lane: superlative, callout, reaction, view label, comparative follow-up', rokasrem: 'studio register; product lane: named thing, view label, standard line, principle, pair label', faulkner_Design: 'studio register (not scheduled)', marius_vanagas: 'studio register (not scheduled)' },
+    templates: 'knowledge/x/caption-patterns.md section 6 (T01-T36) -> system/x/captions.json',
+    why: 'Design captions of 11 benchmark accounts and Augustas (1,375 posts, co-founders excluded): 7-9 words 1.19x, 1-2 words 0.95x, no caption 0.71x; short studio register (Marcel, rico, Augustas, <= 12 words, n=671): standard line 2.11x, superlative 1.36x, callout 1.38x, view label 1.14x, named thing 1.00x, work log 1.01x, stacked-adjective label 0.77x, bare 0.75x; two beats 1.14x vs one 1.00x; emoji 1.02x vs 0.99x (signature, not lift). caption-patterns.md CP-01..',
   },
   never: [
     'a third media post on one account in one day',

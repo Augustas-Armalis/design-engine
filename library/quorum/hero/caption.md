@@ -1,18 +1,15 @@
 # Captions: quorum-hero
 
+Reserved for @augustasdesign to post by hand (founder 2026-10-22); no co-founder lines. Register and rules: knowledge/x/caption-patterns.md (CP-01..16) and caption-voice.md (CV-01..14). The `- augustasdesign:` line is the default the planner reads; `(b)` and `(c)` are options for him to pick (the planner ignores them).
+
 ## hero-still first
-- augustasdesign: research tool hero, product on the right 😍
-- faulkner_Design: copy on the left, the app on the right. one ask box under the buttons.
-- rokasrem: i put an ask box right under the buttons. concept.
-- marius_vanagas: most research tools lead with a dashboard of charts. this one leads with a question you can type.
+- augustasdesign: probably the calmest hero i've ever made 😍
+- augustasdesign (b): the app on the right of this hero is unreal
+- augustasdesign (c): research tools can look this good
 
 ## hero-still second
-- augustasdesign: still one of my favorite split heroes
-- faulkner_Design: a week on, the ask box under the buttons still earns its place.
-- rokasrem: back to the research hero, ask box first. concept.
-- marius_vanagas: a week later research tools still lead with charts. this one still leads with a question.
+- augustasdesign: still one of my favorite split heroes 🥹
+- augustasdesign (b): this research hero still holds up
+- augustasdesign (c): research tools still rarely look like this
 
-reply augustas: made at larpo.studio, concept
-reply faulkner: concept for a research tool. made at larpo.studio
-reply rokas: built in react. larpo.studio
-reply marius: concept for a research tool. larpo.studio
+reply augustas: concept, made at larpo.studio

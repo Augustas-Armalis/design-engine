@@ -79,7 +79,8 @@ const captionMd = (a) => {
   const lines = {}, replies = {}; let sec = null
   for (const l of fs.readFileSync(p, 'utf8').split('\n')) {
     const h = l.match(/^##\s+([\w-]+)(?:\s+(first|follow|second))?\s*$/); if (h) { sec = `${h[1]}:${h[2] || 'first'}`; continue }
-    const c = l.match(/^-\s+@?(\w+):\s+(.+)$/); if (c && sec) { ((lines[sec] ||= {})[c[1]] ||= []).push(c[2].trim()); continue }
+    // "- handle: caption" is the default; "- handle (b): ..." lines are further options, kept in order
+    const c = l.match(/^-\s+@?(\w+)(?:\s*\([a-z]\))?:\s+(.+)$/); if (c && sec) { ((lines[sec] ||= {})[c[1]] ||= []).push(c[2].trim()); continue }
     const r = l.match(/^reply\s+(\w+):\s+(.+)$/); if (r) replies[r[1]] = r[2].trim()
   }
   return { lines, replies }
@@ -110,6 +111,7 @@ const checkCaption = (text, voice, conceptNames, allowEmoji) => {
   if (band && (words < band[0] || words > band[1])) f.push(`${words} words, ${voice} writes ${band[0]}-${band[1]} (CV-03)`)
   for (const b of captions.banned) if (new RegExp(`(^|[^\\w-])${b}(?![\\w-])`, 'i').test(text)) f.push(`banned word "${b}" (CV-12)`)
   for (const n of conceptNames) if (new RegExp(`\\b${n}\\b`, 'i').test(text)) f.push(`names the fictional brand "${n}" (CV-02, XS-24)`)
+  for (const m of captions.rejectedPhrasings?.markers || []) if (text.toLowerCase().includes(m)) f.push(`rejected phrasing "${m}" (ledger x-captions r1, x-engine-posts r1)`)
   if (!captions.voices[voice]?.judgement) for (const w of captions.judgementWords) if (new RegExp(`\\b${w}\\b`, 'i').test(text)) f.push(`verdict word "${w}" on a co-founder account (CV-04)`)
   if (xGate) { const r = xGate(text, { conceptName: conceptNames.join(', '), allowEmoji }); for (const x of r.findings) f.push(`x-engine gate: ${x.rule}`) }
   return f
@@ -348,7 +350,7 @@ async function sheet() {
     return { h: 290, html: media.slice(0, 4).map((m, i) => img(m, 256, 144, (i % 2) * 258, Math.floor(i / 2) * 146)).join('') }
   }
   const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;')
-  const card = (x) => { const t = tiles(x.media); return `<section><header><b>${x.time}</b> <span>${x.et} ET</span> · @${x.account}</header><p class="cap">${esc(x.caption)}</p><div class="tile" style="height:${t.h}px">${t.html}</div><p class="meta">${x.format}${x.series ? ` · ${x.series.id} step ${x.series.step}/${x.series.of}` : ''} · ${x.size}${x.quotes ? ` · quotes ${x.quotes}` : ''}</p><p class="meta">first reply: ${esc(x.reply)}</p><p class="meta ${x.captionFindings.length ? 'bad' : 'ok'}">${x.captionFindings.length ? esc(x.captionFindings.join('; ')) : 'caption checks pass'} · preflight ${x.preflight ? `${x.preflight.fail} fail` : 'n/a'}</p></section>` }
+  const card = (x) => { const t = tiles(x.media); return `<section><header><b>${x.time}</b>${x.et ? ` <span>${x.et} ET</span>` : ''} · @${x.account}</header><p class="cap">${esc(x.caption)}</p><div class="tile" style="height:${t.h}px">${t.html}</div><p class="meta">${x.format}${x.series ? ` · ${x.series.id} step ${x.series.step}/${x.series.of}` : ''} · ${x.size}${x.quotes ? ` · quotes ${x.quotes}` : ''}</p><p class="meta">first reply: ${esc(x.reply)}</p><p class="meta ${x.captionFindings.length ? 'bad' : 'ok'}">${x.captionFindings.length ? esc(x.captionFindings.join('; ')) : 'caption checks pass'} · preflight ${x.preflight ? `${x.preflight.fail} fail` : 'n/a'}</p></section>` }
   const kitCards = (p.manual || []).flatMap((m) => m.kit.map((k) => { const f = k.formats[0]; return card({ time: 'by hand', et: '', account: m.account, caption: f.captions[0] || '(captions in plan.md)', media: f.media, format: f.format, series: null, size: f.media.map((x) => `${x.w}x${x.h}`).join(' + '), quotes: null, reply: k.reply || '', captionFindings: [], preflight: k.preflight }) }))
   const html = `<!doctype html><meta charset="utf-8"><style>body{margin:0;padding:40px;background:#f4f4f5;font:14px/1.45 "Inter",system-ui,sans-serif;color:#0e121b;width:${Math.max(p.posts.length, Math.min(4, (p.manual || []).reduce((n, m) => n + m.kit.length, 0)), 1) * 554 + 40}px}h1{font-size:20px;margin:0 0 4px}.sub{color:#6b7180;margin:0 0 24px}main{display:flex;gap:40px;align-items:flex-start}section{width:514px;background:#fff;border-radius:16px;box-shadow:0 0 0 1px #e9eaee;padding:16px}header{color:#525866}header span{color:#a3a9b6}.cap{font-size:15px;margin:8px 0 10px}.tile{position:relative;width:514px;border-radius:14px;overflow:hidden;box-shadow:0 0 0 1px #e9eaee}.meta{color:#6b7180;font-size:12px;margin:8px 0 0}.bad{color:#b42318}.ok{color:#178c4e}</style><h1>${p.weekday} ${p.date}${p.label ? `: ${esc(p.label)}` : ''}</h1><p class="sub">${esc(p.status)}. Each post as X's feed shows it (514px wide, tiles centre-cropped). Concept work, sample data. Nothing here is posted.</p><main>${p.posts.map(card).join('')}</main>${kitCards.length ? `<h1 style="margin-top:40px">Yours to post by hand</h1><p class="sub">Reserved for the account owner, never scheduled. Caption options in plan.md.</p><main style="flex-wrap:wrap">${kitCards.join('')}</main>` : ''}`
   const htmlPath = path.join(root, dir, 'day.html'); fs.writeFileSync(htmlPath, html)
