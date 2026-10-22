@@ -1,0 +1,123 @@
+{
+  "schema": "design-engine.library-asset/v1",
+  "id": "panelry-debrief-closeup",
+  "title": "Panelry panel debrief, close: four scorecards, one call",
+  "project": "panelry",
+  "kind": "product-ui",
+  "status": "awaiting-verdict",
+  "postable": true,
+  "reservedFor": "rokasrem",
+  "subject": "crm-table",
+  "conceptName": "Panelry, Orchard Health",
+  "sample": true,
+  "verdict": {
+    "latest": null,
+    "round": null,
+    "date": null,
+    "words": null,
+    "ledger": null,
+    "after": "new for Rokas sample day 1 (2026-10-23), awaiting the founder's verdict"
+  },
+  "sampleDay": "2026-10-23",
+  "source": {
+    "app": "work/replicas/app",
+    "route": "#/xframe?src=panelry&x=945&y=16",
+    "component": "work/replicas/app/src/PanelryProduct.tsx",
+    "viewport": [
+      431,
+      455
+    ],
+    "crop": {
+      "src": "#/panelry",
+      "rect": [
+        945,
+        16,
+        431,
+        455
+      ],
+      "anchor": "tr",
+      "insets": {
+        "top": 40,
+        "right": 40
+      },
+      "snapped": "left and bottom edges in gutters (tools/library.mjs snap moved 0px): the left edge runs just inside the drawer, the bottom in the gap under the four signal bars, so the debrief card bleeds off the bottom"
+    }
+  },
+  "renders": [
+    {
+      "file": "renders/closeup.png",
+      "role": "single",
+      "format": "dashboard-closeup",
+      "recipe": {
+        "route": "#/xframe?src=panelry&x=945&y=16",
+        "viewport": [
+          431,
+          455
+        ],
+        "scale": 5.2
+      },
+      "w": 2241,
+      "h": 2366,
+      "bytes": 401206,
+      "sha256": "543cebb33553a5385f03696868c7357df7afe9d39e7b732e60c93b52cbfc40c5",
+      "rendered": "2026-10-22T18:30:37.917Z",
+      "commit": "a15f83e+dirty"
+    }
+  ],
+  "checks": [
+    {
+      "label": "closeup",
+      "route": "#/xframe?src=panelry&x=945&y=16",
+      "kind": "product-ui",
+      "w": 431,
+      "h": 455,
+      "anchor": "tr",
+      "format": "dashboard-closeup",
+      "renders": [
+        "renders/closeup.png"
+      ]
+    }
+  ],
+  "series": [
+    {
+      "id": "panelry-pipeline",
+      "stage": "closeup"
+    }
+  ],
+  "related": [
+    "panelry-product-pipeline"
+  ],
+  "alt": "Close up of a candidate panel in a fictional hiring tool: Hana Kowalczyk, product designer, and a panel debrief that reads move her to onsite, three of four interviewers say yes, with four signal bars: craft 4.6, communication 4.5, product sense 4.3 and systems thinking 3.4 marked as the soft spot. Sample data, concept.",
+  "captionVars": {
+    "domain": "hiring",
+    "ui": "debrief panel",
+    "detail": "panel debrief"
+  },
+  "dates": {
+    "created": "2026-10-22",
+    "rendered": "2026-10-22"
+  },
+  "tags": [
+    "light",
+    "closeup",
+    "ai-answer",
+    "hiring"
+  ],
+  "preflight": {
+    "ran": "2026-10-22T18:31:03.660Z",
+    "fail": 0,
+    "warn": 4,
+    "results": [
+      {
+        "label": "closeup",
+        "route": "#/xframe?src=panelry&x=945&y=16",
+        "size": "431x455",
+        "pass": 17,
+        "warn": 4,
+        "fail": 0,
+        "report": "preflight/1-closeup.md",
+        "ran": "2026-10-22T18:31:03.651Z"
+      }
+    ]
+  }
+}

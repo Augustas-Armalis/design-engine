@@ -1,12 +1,36 @@
 {
   "schema": "design-engine.library-index/v1",
-  "generated": "2026-10-22T18:06:54.491Z",
+  "generated": "2026-10-22T18:31:51.691Z",
   "projects": [
     {
       "id": "kestrel",
       "name": "Kestrel",
       "fictional": true,
       "series": []
+    },
+    {
+      "id": "panelry",
+      "name": "Panelry",
+      "fictional": true,
+      "series": [
+        {
+          "id": "panelry-pipeline",
+          "title": "the Panelry hiring pipeline: the panel debrief up close, the whole job view, in thirds, then moving",
+          "stages": [
+            "closeup",
+            "full",
+            "strips",
+            "motion"
+          ],
+          "assets": {
+            "closeup": "panelry-debrief-closeup",
+            "full": "panelry-product-pipeline",
+            "strips": "panelry-product-pipeline",
+            "motion": null
+          },
+          "motionToMake": "a load-in of #/panelry (window, funnel counts roll, rows stagger in, the debrief bars fill, the verdict chip lands) recorded with tools/record.mjs --preset x, once a load-in is built and asked for"
+        }
+      ]
     },
     {
       "id": "quorum",
@@ -79,6 +103,7 @@
       ],
       "series": [],
       "sampleDay": null,
+      "reservedFor": "augustasdesign",
       "preflightFail": 9,
       "dir": "library/kestrel/hero",
       "renders": [
@@ -88,6 +113,94 @@
           "format": "hero-still",
           "w": 2880,
           "h": 1800
+        }
+      ]
+    },
+    {
+      "id": "panelry-debrief-closeup",
+      "project": "panelry",
+      "title": "Panelry panel debrief, close: four scorecards, one call",
+      "kind": "product-ui",
+      "status": "awaiting-verdict",
+      "postable": true,
+      "verdict": null,
+      "formats": [
+        "dashboard-closeup"
+      ],
+      "series": [
+        {
+          "id": "panelry-pipeline",
+          "stage": "closeup"
+        }
+      ],
+      "sampleDay": "2026-10-23",
+      "reservedFor": "rokasrem",
+      "preflightFail": 0,
+      "dir": "library/panelry/debrief-closeup",
+      "renders": [
+        {
+          "file": "library/panelry/debrief-closeup/renders/closeup.png",
+          "role": "single",
+          "format": "dashboard-closeup",
+          "w": 2241,
+          "h": 2366
+        }
+      ]
+    },
+    {
+      "id": "panelry-product-pipeline",
+      "project": "panelry",
+      "title": "Panelry job view: pipeline table and the candidate debrief, full and in thirds",
+      "kind": "product-ui",
+      "status": "awaiting-verdict",
+      "postable": true,
+      "verdict": null,
+      "formats": [
+        "dashboard-full",
+        "dashboard-strips-3"
+      ],
+      "series": [
+        {
+          "id": "panelry-pipeline",
+          "stage": "full"
+        },
+        {
+          "id": "panelry-pipeline",
+          "stage": "strips"
+        }
+      ],
+      "sampleDay": null,
+      "reservedFor": "rokasrem",
+      "preflightFail": 0,
+      "dir": "library/panelry/product-pipeline",
+      "renders": [
+        {
+          "file": "library/panelry/product-pipeline/renders/full.png",
+          "role": "full",
+          "format": "dashboard-full",
+          "w": 3840,
+          "h": 2571
+        },
+        {
+          "file": "library/panelry/product-pipeline/renders/strip-1.png",
+          "role": "strip",
+          "format": "dashboard-strips-3",
+          "w": 1280,
+          "h": 2571
+        },
+        {
+          "file": "library/panelry/product-pipeline/renders/strip-2.png",
+          "role": "strip",
+          "format": "dashboard-strips-3",
+          "w": 1280,
+          "h": 2571
+        },
+        {
+          "file": "library/panelry/product-pipeline/renders/strip-3.png",
+          "role": "strip",
+          "format": "dashboard-strips-3",
+          "w": 1280,
+          "h": 2571
         }
       ]
     },
@@ -104,6 +217,7 @@
       ],
       "series": [],
       "sampleDay": null,
+      "reservedFor": "augustasdesign",
       "preflightFail": 9,
       "dir": "library/quorum/hero",
       "renders": [
@@ -134,6 +248,7 @@
         }
       ],
       "sampleDay": "2026-10-23",
+      "reservedFor": "augustasdesign",
       "preflightFail": 0,
       "dir": "library/tempra/ask-closeup",
       "renders": [
@@ -164,6 +279,7 @@
         }
       ],
       "sampleDay": null,
+      "reservedFor": "augustasdesign",
       "preflightFail": 0,
       "dir": "library/tempra/bento-dark",
       "renders": [
@@ -194,6 +310,7 @@
         }
       ],
       "sampleDay": null,
+      "reservedFor": "augustasdesign",
       "preflightFail": 0,
       "dir": "library/tempra/hero-h4a",
       "renders": [
@@ -229,6 +346,7 @@
         }
       ],
       "sampleDay": null,
+      "reservedFor": "augustasdesign",
       "preflightFail": 0,
       "dir": "library/tempra/product-week",
       "renders": [
@@ -276,6 +394,7 @@
       ],
       "series": [],
       "sampleDay": null,
+      "reservedFor": null,
       "preflightFail": null,
       "dir": "library/tempra/x-calendar-carousel",
       "renders": [

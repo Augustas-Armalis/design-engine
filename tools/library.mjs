@@ -126,7 +126,7 @@ function index() {
     return {
       id: m.id, project: m.project, title: m.title, kind: m.kind, status: m.status, postable: m.postable !== false && !['rejected', 'reference'].includes(m.status) && !m.preflight?.fail,
       verdict: m.verdict?.latest ?? null, formats: [...new Set(m.renders.map((r) => r.format).filter(Boolean))], series: m.series || [],
-      sampleDay: m.sampleDay ?? null, preflightFail: m.preflight?.fail ?? null, dir: path.relative(root, d),
+      sampleDay: m.sampleDay ?? null, reservedFor: m.reservedFor ?? null, preflightFail: m.preflight?.fail ?? null, dir: path.relative(root, d),
       renders: m.renders.map((r) => ({ file: path.relative(root, path.join(d, r.file)), role: r.role, format: r.format, w: r.w, h: r.h })),
     }
   })

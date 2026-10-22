@@ -1,11 +1,15 @@
 {
   "schema": "design-engine.x-accounts/v1",
   "updated": "2026-10-22",
-  "about": "The four Larpo founder accounts the planner assigns posts to. Voices are summarised from knowledge/x/caption-voice.md; captions are written per account and never copied between accounts (team brain, content pillar). profileId is the X engine profile id (not the handle); the values here are placeholders until each founder confirms theirs from `larpo-x-engine` settings (knowledge/x/x-engine-audit.md section 5).",
+  "about": "The four Larpo founder accounts. `scheduled: false` = the planner never schedules a post there. `manual: true` = the owner posts by hand: assets reserved for him are listed in the day plan as 'yours to post', with caption options, never scheduled. `freshOnly: true` = only designs that were never posted anywhere and are not reserved for someone else. `lane` = the subject world this account's new designs come from, so the four feeds never look alike (proposal, change freely). profileId is the X engine profile id (not the handle); placeholders until each founder confirms theirs (knowledge/x/x-engine-audit.md section 5).",
+  "decisions": [
+    "2026-10-22 founder: 'for augustasdesign do not set any scheduled posts bro yet, please none for me... these the bentos and this I'll post by myself like cuz my account is precious'",
+    "2026-10-22 founder: 'for Rokas do and design completely new and not used designs for him please... push this new engine and everything logic and design stuff daily for rokas'"
+  ],
   "accounts": [
-    { "handle": "augustasdesign", "name": "Augustas", "profileId": "augustas", "profileIdVerified": false, "platforms": ["x"], "voice": "augustas", "maxPerDay": 2, "lead": true },
-    { "handle": "faulkner_Design", "name": "Faulkner", "profileId": "faulkner", "profileIdVerified": false, "platforms": ["x"], "voice": "faulkner", "maxPerDay": 1 },
-    { "handle": "marius_vanagas", "name": "Marius", "profileId": "marius", "profileIdVerified": false, "platforms": ["x"], "voice": "marius", "maxPerDay": 1 },
-    { "handle": "rokasrem", "name": "Rokas", "profileId": "rokas", "profileIdVerified": false, "platforms": ["x"], "voice": "rokas", "maxPerDay": 1 }
+    { "handle": "augustasdesign", "name": "Augustas", "profileId": "augustas", "profileIdVerified": false, "platforms": ["x"], "voice": "augustas", "scheduled": false, "manual": true, "maxPerDay": 2, "lane": "his own pick from the library: the engine's best finals, reserved for him" },
+    { "handle": "rokasrem", "name": "Rokas", "profileId": "rokas", "profileIdVerified": false, "platforms": ["x"], "voice": "rokas", "scheduled": true, "freshOnly": true, "maxPerDay": 1, "slots": ["16:00"], "lane": "product UI for operations and people tools (hiring, finance ops, support), light and dark, one new project at a time run as a series" },
+    { "handle": "faulkner_Design", "name": "Faulkner", "profileId": "faulkner", "profileIdVerified": false, "platforms": ["x"], "voice": "faulkner", "scheduled": false, "freshOnly": true, "maxPerDay": 1, "lane": "proposal: analytics and data-heavy dashboards" },
+    { "handle": "marius_vanagas", "name": "Marius", "profileId": "marius", "profileIdVerified": false, "platforms": ["x"], "voice": "marius", "scheduled": false, "freshOnly": true, "maxPerDay": 1, "lane": "proposal: landing pages and marketing sections (pricing, changelog, testimonials)" }
   ]
 }

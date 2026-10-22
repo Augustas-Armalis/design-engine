@@ -57,12 +57,16 @@ An X crop is a route, not a cut PNG: `#/xframe?src=<route>&x=<left>&y=<top>` (`w
 
 ## What is in it (2026-10-22)
 
+`reservedFor` routes an asset: the Tempra finals, Kestrel and Quorum are reserved for @augustasdesign (he posts by hand, never scheduled); Panelry is reserved for @rokasrem's daily series. A scheduled account only ever gets assets that were never posted anywhere.
+
 | Asset | Status | Renders | Preflight |
 |---|---|---|---|
 | `tempra-hero-h4a` | awaiting verdict (r7: the announcement pill) | hero 3840x2760 | 0 FAIL |
 | `tempra-product-week` | awaiting verdict (r3.1 + polish since r1) | full 3840x2571 + 3 strips 1280x2571 | 0 FAIL (seam WARN at x=928) |
 | `tempra-bento-dark` | accepted r3 (+3 half-visible texts fixed) | bento 3840x3200 | 0 FAIL |
 | `tempra-ask-closeup` | sample day 1, awaiting verdict | close-up 2154x2562 | 0 FAIL |
+| `panelry-debrief-closeup` | new for @rokasrem, sample day 1, awaiting verdict | close-up 2241x2366 | 0 FAIL |
+| `panelry-product-pipeline` | new for @rokasrem (series step 2-3), awaiting verdict | full 3840x2571 + 3 strips 1280x2571 | 0 FAIL (seam WARN) |
 | `tempra-x-calendar-carousel` | rejected (cxslices r1), evidence only | full + 3 strips, as posted for review | not run |
 | `kestrel-hero` | accepted 10-08, posted 10-08 | fold 2880x1800 | 9 FAIL under today's canon: not postable until a fix pass |
 | `quorum-hero` | accepted 10-15, posted 10-15 | fold 2880x1800 | 9 FAIL under today's canon: not postable until a fix pass |

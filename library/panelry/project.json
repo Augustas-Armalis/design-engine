@@ -1,0 +1,33 @@
+{
+  "schema": "design-engine.library-project/v1",
+  "id": "panelry",
+  "name": "Panelry",
+  "fictional": true,
+  "about": "Fictional hiring tool (invented name, drawn two-panel mark, sample company Orchard Health, invented candidates and interviewers). The first never-posted project designed for @rokasrem's daily series (founder 2026-10-22).",
+  "app": "work/replicas/app",
+  "devServer": "replicas-x :4396 (worktree) / :4395 (main)",
+  "conceptNames": [
+    "Panelry",
+    "Orchard Health"
+  ],
+  "owner": "rokasrem",
+  "series": [
+    {
+      "id": "panelry-pipeline",
+      "title": "the Panelry hiring pipeline: the panel debrief up close, the whole job view, in thirds, then moving",
+      "stages": [
+        "closeup",
+        "full",
+        "strips",
+        "motion"
+      ],
+      "assets": {
+        "closeup": "panelry-debrief-closeup",
+        "full": "panelry-product-pipeline",
+        "strips": "panelry-product-pipeline",
+        "motion": null
+      },
+      "motionToMake": "a load-in of #/panelry (window, funnel counts roll, rows stagger in, the debrief bars fill, the verdict chip lands) recorded with tools/record.mjs --preset x, once a load-in is built and asked for"
+    }
+  ]
+}
