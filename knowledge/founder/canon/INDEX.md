@@ -59,3 +59,12 @@ Every page has the same shape: floor references, a 5-file reading set, decided n
 | 13 | Diversity vs floor | the canon floor is fixed (type tuple, spacing, edges, button construction); divergence = layout-family alternation between accepted families + at most 3 owned decisions (button effect, product world, stage material, nav construction); type voice is never randomised for SaaS; rejected options (didone-luxe, warm-black, tilted-3d at rest, offset/brutal buttons, mono poster, 700 headlines) are never dealt | a new layout family once the founder asks for "something completely different", still on the floor | all (L138, L182, L253, L506) |
 
 Superseded lines per decision are listed on each page under "Contradictions resolved".
+
+## Hard rule (founder 2026-10-22): never copy names, logos or copy
+"NEVER EVER COPY THE SAME LOGO OR LIKE COPY OR EVEN NAME... that's plagiatory, especially getting stuff from Marcel... that's why it's important to make ur own stuff". Replicas are study only and stay out of deliverables. Every deliverable invents its own:
+- brand name and workspace or company names;
+- logo mark;
+- headline and every line of copy;
+- people and sample data.
+
+Names come from nowhere near a reference: no client names from Marcel, Rico or lunor shots, and no stock sample brands (Northwind, Acme, Contoso). Take the structure and numbers from a reference, never its words or marks.

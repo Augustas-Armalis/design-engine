@@ -14,8 +14,8 @@ import {
 // ---- role tokens (AlignUI slate, light) ----
 const T = {
   canvas: '#E9EAEC', frame: '#F5F7FA', white: '#FFFFFF', weak: '#F5F7FA', soft: '#E1E4EA', line: '#EBEDF1',
-  strong: '#0E121B', sub: '#525866', soft6: '#5F6573', faint: '#99A0AE',
-  v: '#7D52F4', v50: '#EFEBFF', v100: '#DCD5FF', v200: '#CAC0FF', vInk: '#5B2CC9',
+  strong: '#0E121B', sub: '#525866', soft6: '#646B79', faint: '#99A0AE',
+  v: '#7D52F4', v25: '#F7F5FF', v50: '#EFEBFF', v300: '#B9A6FB', v100: '#DCD5FF', v200: '#CAC0FF', vInk: '#5B2CC9',
   green: '#1FC16B', greenInk: '#147A43', green50: '#E0FAEC',
   red: '#FB3748', redInk: '#C2202E', orange: '#FA7319', orangeInk: '#A84A0E',
 }
@@ -74,7 +74,7 @@ type Tone = 'green' | 'red' | 'violet' | 'grey' | 'orange'
 const TONE: Record<Tone, [string, string]> = { green: [T.green, T.greenInk], red: [T.red, T.redInk], violet: [T.v, T.vInk], grey: [T.faint, T.sub], orange: [T.orange, T.orangeInk] }
 // AlignUI stroke status badge: 24 tall, r6, a 6px dot and 12/500 text in the tone's ink
 const Status = ({ tone, children }: { tone: Tone; children: ReactNode }) => (
-  <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6, height: 24, padding: '0 8px 0 7px', borderRadius: 7, background: T.white, boxShadow: `inset 0 0 0 1px ${T.soft}`, fontSize: 12, fontWeight: 500, color: TONE[tone][1], whiteSpace: 'nowrap', flex: 'none' }}>
+  <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6, height: 24, padding: '0 8px 0 7px', borderRadius: 6, background: T.white, boxShadow: `inset 0 0 0 1px ${T.soft}`, fontSize: 12, fontWeight: 500, color: TONE[tone][1], whiteSpace: 'nowrap', flex: 'none' }}>
     <span className="round" style={{ width: 6, height: 6, borderRadius: 999, background: TONE[tone][0] }} />{children}
   </span>
 )
@@ -97,7 +97,7 @@ function NavItem({ icon, label, active, badge }: { icon: ReactNode; label: strin
   )
 }
 const Label = ({ children }: { children: ReactNode }) => (
-  <div style={{ height: 28, padding: '0 10px', display: 'flex', alignItems: 'center', fontSize: 11.5, fontWeight: 500, letterSpacing: '0.06em', textTransform: 'uppercase', color: T.soft6 }}>{children}</div>
+  <div style={{ height: 28, padding: '0 10px', display: 'flex', alignItems: 'center', fontSize: 12, fontWeight: 500, letterSpacing: '0.04em', textTransform: 'uppercase', color: T.soft6 }}>{children}</div>
 )
 
 function Sidebar() {
@@ -108,7 +108,7 @@ function Sidebar() {
         <span style={{ display: 'grid', placeItems: 'center', width: 40, height: 40, borderRadius: 12, background: `linear-gradient(160deg, #9B7BFF, ${T.v} 55%, #5B2CC9)`, boxShadow: `inset 0 0 0 1px rgba(255,255,255,0.18), 0 1px 2px rgba(77,36,196,0.3), 0 4px 10px -4px rgba(77,36,196,0.4)`, color: '#fff' }}><RiCalendarCheckLine size={20} /></span>
         <span style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: 2 }}>
           <span style={{ fontSize: 14, fontWeight: 500, lineHeight: '20px' }}>Cadence</span>
-          <span style={{ fontSize: 12, lineHeight: '16px', color: T.soft6 }}>Northwind · Team plan</span>
+          <span style={{ fontSize: 12, lineHeight: '16px', color: T.soft6 }}>Fernhill · Team plan</span>
         </span>
         <span style={{ display: 'grid', placeItems: 'center', width: 28, height: 28, borderRadius: 8, background: T.white, boxShadow: ringXs(), color: T.soft6 }}><RiExpandUpDownLine size={16} /></span>
       </div>
@@ -153,7 +153,7 @@ function Sidebar() {
       <div style={{ marginTop: 'auto', borderRadius: 16, background: T.white, boxShadow: CARD, padding: 14 }}>
         <div style={{ ...row, gap: 8, fontSize: 14, fontWeight: 500 }}><RiFlashlightLine size={16} color={T.v} />Pro trial<span style={{ marginLeft: 'auto', fontSize: 12, fontWeight: 450, color: T.soft6, ...tnum }}>9 days left</span></div>
         <div style={{ height: 6, borderRadius: 999, background: T.weak, boxShadow: `inset 0 0 0 1px ${T.line}`, marginTop: 12, overflow: 'hidden' }} className="round">
-          <div className="round" style={{ width: '70%', height: '100%', borderRadius: 999, background: `linear-gradient(90deg, #A68BFF, ${T.v})` }} />
+          <div className="round" style={{ width: '70%', height: '100%', borderRadius: 999, background: `linear-gradient(90deg, ${T.v300}, ${T.v})` }} />
         </div>
         <div style={{ fontSize: 12, lineHeight: '17px', color: T.soft6, marginTop: 10 }}>Smart rescheduling stays on after the trial with Pro.</div>
       </div>
@@ -169,7 +169,7 @@ function Sidebar() {
         </span>
         <span style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: 2, minWidth: 0 }}>
           <span style={{ ...row, gap: 4, fontSize: 14, fontWeight: 500, lineHeight: '20px' }}>Leo Park<RiVerifiedBadgeFill size={16} color={T.v} /></span>
-          <span style={{ fontSize: 12, lineHeight: '16px', color: T.soft6 }}>leo@northwind.co</span>
+          <span style={{ fontSize: 12, lineHeight: '16px', color: T.soft6 }}>leo@fernhill.co</span>
         </span>
         <RiArrowRightSLine size={20} color={T.faint} />
       </div>
@@ -178,12 +178,13 @@ function Sidebar() {
 }
 
 // ================= header + KPIs =================
-function Header() {
+function Header({ inHero }: { inHero?: boolean }) {
+  const H1 = inHero ? 'p' : 'h1'
   return (
     <div style={{ ...row, gap: 14, height: 48 }}>
       <span className="round" style={{ display: 'grid', placeItems: 'center', width: 48, height: 48, borderRadius: 999, background: T.white, boxShadow: ringXs(), color: T.orange }}><RiSunLine size={22} /></span>
       <div style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
-        <h1 style={{ margin: 0, fontSize: 18, lineHeight: '24px', fontWeight: 500, letterSpacing: '-0.015em' }}>Good morning, Leo</h1>
+        <H1 style={{ margin: 0, fontSize: 18, lineHeight: '24px', fontWeight: 500, letterSpacing: '-0.015em' }}>Good morning, Leo</H1>
         <span style={{ fontSize: 14, lineHeight: '20px', color: T.sub }}>Thursday, Oct 22 · 6 meetings and 3h 15m of focus today</span>
       </div>
       <div style={{ marginLeft: 'auto', ...row, gap: 10 }}>
@@ -191,7 +192,7 @@ function Header() {
         <IconBtn dot><RiNotification3Line size={18} /></IconBtn>
         <span style={{ width: 1, height: 20, background: T.soft, margin: '0 4px' }} />
         <Btn icon={<RiLinksLine size={18} />}>Share availability</Btn>
-        <Btn kind="primary" icon={<RiSparkling2Fill size={18} />}>Find a time</Btn>
+        <Btn kind="ink" icon={<RiSparkling2Fill size={18} />}>Find a time</Btn>
       </div>
     </div>
   )
@@ -300,7 +301,7 @@ function Today() {
             <Rail state={e.state} first={i === 0} last={i === DAY.length - 1} />
             {/* the highlight covers the content column only, never the rail */}
             <div style={{ flex: 1, height: ROW_H - 8, marginLeft: 10, padding: '0 12px 0 14px', borderRadius: 12, boxSizing: 'border-box', ...row, gap: 12,
-              background: e.state === 'now' ? `linear-gradient(90deg, ${T.v50}, #F7F5FF)` : 'transparent', boxShadow: e.state === 'now' ? `inset 0 0 0 1px ${T.v100}` : 'none' }}>
+              background: e.state === 'now' ? `linear-gradient(90deg, ${T.v50}, ${T.v25})` : 'transparent', boxShadow: e.state === 'now' ? `inset 0 0 0 1px ${T.v100}` : 'none' }}>
               <div style={{ display: 'flex', flexDirection: 'column', gap: 2, minWidth: 0 }}>
                 <span style={{ ...row, gap: 8, fontSize: 14, lineHeight: '20px', fontWeight: 500, color: e.state === 'done' ? T.sub : T.strong }}>{e.title}{e.chip}</span>
                 <span style={{ ...row, gap: 6, fontSize: 12, lineHeight: '16px', color: e.state === 'now' ? T.vInk : T.soft6 }}>
@@ -333,7 +334,7 @@ function Decision({ title, sub, due, a, b }: { title: string; sub: string; due?:
 function Side() {
   return (
     <div style={{ width: 372, height: 446, display: 'flex', flexDirection: 'column', gap: 16 }}>
-      <section aria-label="Decisions waiting, sample" style={{ borderRadius: 20, background: '#F0F1F3', boxShadow: `inset 0 0 0 1px ${T.line}`, padding: 4 }}>
+      <section aria-label="Decisions waiting, sample" style={{ borderRadius: 20, background: T.weak, boxShadow: `inset 0 0 0 1px ${T.line}`, padding: 4 }}>
         <div style={{ ...row, gap: 8, height: 40, padding: '0 12px', fontSize: 14, fontWeight: 500, color: T.orangeInk }}>
           <RiErrorWarningFill size={18} color={T.orange} />2 need your input
           <span style={{ marginLeft: 'auto', fontSize: 12, fontWeight: 500, color: T.sub }}>View all</span>
@@ -397,12 +398,12 @@ function FocusChart() {
           {days.map(([d, f, m], i) => (
             <div key={d} style={{ position: 'relative', display: 'flex', gap: 4, alignItems: 'flex-end', height: '100%', padding: '0 8px' }}>
               {/* today: an opaque column band sits over the gridlines, so no line runs behind the tooltip or the bars */}
-              {i === 3 && <span style={{ position: 'absolute', left: 0, right: 0, top: 0, bottom: 1, borderRadius: '10px 10px 0 0', background: '#F8F6FF' }} />}
-              <span style={{ position: 'relative', width: bw, height: (f / max) * H, borderRadius: '6px 6px 2px 2px', background: i === 3 ? T.v : '#B9A6FB' }} />
+              {i === 3 && <span style={{ position: 'absolute', left: 0, right: 0, top: 0, bottom: 1, borderRadius: '10px 10px 0 0', background: T.v25 }} />}
+              <span style={{ position: 'relative', width: bw, height: (f / max) * H, borderRadius: '6px 6px 2px 2px', background: i === 3 ? T.v : T.v300 }} />
               <span style={{ position: 'relative', width: bw, height: (m / max) * H, borderRadius: '6px 6px 2px 2px', background: T.soft }} />
               <span style={{ position: 'absolute', left: 0, right: 0, top: H + 16, textAlign: 'center', fontSize: 12, fontWeight: i === 3 ? 500 : 400, color: i === 3 ? T.strong : T.soft6 }}>{d}</span>
               {i === 3 && (
-                <span style={{ position: 'absolute', left: '50%', bottom: 'calc(100% + 8px)', transform: 'translateX(-50%)', height: 28, padding: '0 10px', borderRadius: 9, background: T.white, boxShadow: FLOAT, whiteSpace: 'nowrap', ...row, gap: 6, fontSize: 12, zIndex: 2, ...tnum }}>
+                <span style={{ position: 'absolute', left: '50%', bottom: 'calc(100% + 8px)', transform: 'translateX(-50%)', height: 28, padding: '0 10px', borderRadius: 8, background: T.white, boxShadow: FLOAT, whiteSpace: 'nowrap', ...row, gap: 6, fontSize: 12, zIndex: 2, ...tnum }}>
                   <span style={{ color: T.soft6 }}>Today</span><span style={{ fontWeight: 500 }}>3h 15m focus</span>
                 </span>
               )}
@@ -438,7 +439,7 @@ function Team() {
     <section aria-label="Team today, sample" style={{ width: 568, height: 312, boxSizing: 'border-box', borderRadius: 16, background: T.white, boxShadow: CARD, padding: '0 12px', display: 'flex', flexDirection: 'column' }}>
       <div style={{ ...row, gap: 8, height: 60, padding: '0 8px', flex: 'none' }}>
         <h2 style={{ margin: 0, fontSize: 16, lineHeight: '24px', fontWeight: 500, letterSpacing: '-0.011em' }}>Team today</h2>
-        <span style={{ marginLeft: 'auto', ...row, gap: 6, height: 32, padding: '0 10px', borderRadius: 10, background: T.weak, boxShadow: `inset 0 0 0 1px ${T.line}`, fontSize: 13, fontWeight: 500, color: T.sub }}><RiGlobalLine size={15} />Berlin · CEST</span>
+        <span style={{ marginLeft: 'auto' }}><Btn h={32} icon={<RiGlobalLine size={16} />}>Berlin · CEST</Btn></span>
       </div>
       <div style={{ display: 'grid', gridTemplateColumns: cols, columnGap: 0, alignItems: 'center', height: 32, padding: '0 12px', borderRadius: 8, background: T.weak, fontSize: 12, fontWeight: 500, color: T.soft6 }}>
         <span>Person</span><span>Status</span><span>Next free</span><span style={{ ...row, justifyContent: 'space-between', ...tnum }}><span>9</span><span>12</span><span>15</span><span>18</span></span>
@@ -461,24 +462,45 @@ function Team() {
   )
 }
 
+// The app frame alone (1472x1072), reused by the Cadence hero at a smaller scale.
+// frame r36, inset 8, main panel r28 (concentric). In a hero the page owns the h1, so the greeting becomes a plain line.
+export function CadenceAppFrame({ style, inHero }: { style?: CSSProperties; inHero?: boolean }) {
+  const Main = inHero ? 'div' : 'main'
+  return (
+  <div data-product style={{ position: 'relative', width: 1472, height: 1072, ...style, borderRadius: 36, background: T.frame, boxShadow: '0 0 0 1px rgba(14,18,27,0.07), 0 1px 2px rgba(14,18,27,0.04), 0 24px 56px -16px rgba(14,18,27,0.16), 0 8px 20px -8px rgba(14,18,27,0.06)', display: 'flex' }}>
+    <Sidebar />
+    <Main aria-label="Cadence overview, sample data" style={{ position: 'relative', margin: '8px 8px 8px 0', flex: 1, borderRadius: 28, background: T.white, boxShadow: `0 0 0 1px ${T.line}, 0 1px 3px rgba(14,18,27,0.04)`, padding: '20px 28px 24px', boxSizing: 'border-box', display: 'flex', flexDirection: 'column' }}>
+      <Header inHero={inHero} />
+      <div style={{ height: 1, background: T.line, margin: '20px 0' }} />
+      <div style={{ display: 'flex', gap: 16 }}>
+        <Kpi icon={<RiCalendarCheckLine size={18} />} label="Meetings this week" value="18" delta="−3" note="vs last week" viz={<MiniBars v={[18, 24, 14, 28, 20, 10, 6]} hi={3} />} />
+        <Kpi icon={<RiFocus3Line size={18} />} label="Focus kept" value="11h 30m" delta="+2h" note="77% of goal" viz={<Ring pct={0.77} />} />
+        <Kpi icon={<RiTimeLine size={18} />} label="Time to book" value="4" unit=" min" delta="−6 min" note="median" viz={<Spark />} />
+        <Kpi icon={<RiSparkling2Fill size={18} />} label="Conflicts settled" value="7" delta="7 of 7" note="by Cadence" viz={<Stack ids={['A', 'M', 'R']} s={24} more={4} />} />
+      </div>
+      <div style={{ display: 'flex', gap: 16, marginTop: 16 }}><Today /><Side /></div>
+      <div style={{ display: 'flex', gap: 16, marginTop: 16 }}><FocusChart /><Team /></div>
+    </Main>
+  </div>
+  )
+}
+
 export default function CadenceProductA() {
   return (
     <div style={{ ...font, width: 1600, height: 1200, background: `radial-gradient(1200px 700px at 50% 0%, #F3F3F5, ${T.canvas})`, position: 'relative', overflow: 'hidden' }}>
-      {/* app frame: frame r36, inset 8, main panel r28 (concentric) */}
-      <div data-product style={{ position: 'absolute', left: 64, top: 64, width: 1472, height: 1072, borderRadius: 36, background: T.frame, boxShadow: '0 0 0 1px rgba(14,18,27,0.07), 0 1px 2px rgba(14,18,27,0.04), 0 24px 56px -16px rgba(14,18,27,0.16), 0 8px 20px -8px rgba(14,18,27,0.06)', display: 'flex' }}>
-        <Sidebar />
-        <main aria-label="Cadence overview, sample data" style={{ position: 'relative', margin: '8px 8px 8px 0', flex: 1, borderRadius: 28, background: T.white, boxShadow: `0 0 0 1px ${T.line}, 0 1px 3px rgba(14,18,27,0.04)`, padding: '20px 28px 24px', boxSizing: 'border-box', display: 'flex', flexDirection: 'column' }}>
-          <Header />
-          <div style={{ height: 1, background: T.line, margin: '20px 0' }} />
-          <div style={{ display: 'flex', gap: 16 }}>
-            <Kpi icon={<RiCalendarCheckLine size={18} />} label="Meetings this week" value="18" delta="−3" note="vs last week" viz={<MiniBars v={[18, 24, 14, 28, 20, 10, 6]} hi={3} />} />
-            <Kpi icon={<RiFocus3Line size={18} />} label="Focus kept" value="11h 30m" delta="+2h" note="77% of goal" viz={<Ring pct={0.77} />} />
-            <Kpi icon={<RiTimeLine size={18} />} label="Time to book" value="4" unit=" min" delta="−6 min" note="median" viz={<Spark />} />
-            <Kpi icon={<RiSparkling2Fill size={18} />} label="Conflicts settled" value="7" delta="7 of 7" note="by Cadence" viz={<Stack ids={['A', 'M', 'R']} s={24} more={4} />} />
-          </div>
-          <div style={{ display: 'flex', gap: 16, marginTop: 16 }}><Today /><Side /></div>
-          <div style={{ display: 'flex', gap: 16, marginTop: 16 }}><FocusChart /><Team /></div>
-        </main>
+      <CadenceAppFrame style={{ position: 'absolute', left: 64, top: 64 }} />
+    </div>
+  )
+}
+
+// X carousel cut (#/cprodax): AlignUI's presentation, the whole app frame on a grey canvas with equal 56px margins on all
+// four sides (no crop through text), cut into three 480-wide strips. Canvas 1440x1080, frame scaled to 1328 wide.
+export function CadenceProductAX() {
+  const s = (1440 - 112) / 1472
+  return (
+    <div style={{ ...font, width: 1440, height: 1080, background: `radial-gradient(1100px 640px at 30% 0%, #F3F3F5, ${T.canvas})`, position: 'relative', overflow: 'hidden' }}>
+      <div style={{ position: 'absolute', left: 56, top: (1080 - 1072 * s) / 2, width: 1472, height: 1072, transform: `scale(${s})`, transformOrigin: '0 0' }}>
+        <CadenceAppFrame />
       </div>
     </div>
   )

@@ -16,3 +16,12 @@ why r2: cprodk r1 rejected ("too similar to marcel... no apple like stuff at the
 - override: radius.ladder.product because the founder asked for rounder than the Kestrel/Kargul ladder; the ladder above is AlignUI's, scaled up one step
 - override: shadow.levels.product because AlignUI layers many named recipes (ALN-13: xs controls, card, floating, primary, ink, switch thumb); every one comes from the six constants at the top of the file
 - override: edge.ring+inset because the "+N" pills in avatar stacks need a 2px white cut-out ring plus their own hairline, and the primary is a button material (AlignUI button-primary)
+
+## r2 polish (cproda r1 partial: "check your grays and colors... same as buttons... that gray box with alert is not the same gray as the sidebar")
+- One weak grey (`#F5F7FA`) for every grey fill: frame, sidebar, tray, table header, segmented track, chips. Two hairlines: `#E1E4EA` on controls and on grey, `#EBEDF1` on white.
+- Three text greys plus one icon grey: `#0E121B`, `#525866`, `#646B79` (4.5:1 on white and on the weak grey); icons `#99A0AE`.
+- One primary material: the tactile ink button (Find a time, Join, Move it, Accept). Violet is only for data and for Cadence's own marks.
+- One chip radius (6), one control radius (10), cards 16, tray 20, frame 36 / 28.
+- Violet tints tokenised (25 / 50 / 100 / 200 / 300); no stray hex values.
+- Invented workspace name (Fernhill), no stock sample brands.
+- X carousel (`#/cprodax`): the whole frame on the canvas with equal 56px margins, cut into 3 strips of 1200x2700.
