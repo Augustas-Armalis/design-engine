@@ -34,12 +34,12 @@
 
 `node tools/x_plan.mjs posted --date <date> [--ids ...]` appends what actually went out to `posted.json` (fill `url` and `metrics` from the X engine's receipts when they exist). The next day's plan continues from there. Posts made outside the engine go in by hand with the same fields.
 
-## Sample day 1 (Friday 2026-10-23, awaiting the founder's verdict)
+## The first planned days (@rokasrem, auto-approved)
 
-| Time (ET) | Account | Format | Asset | Caption |
-|---|---|---|---|---|
-| 08:00 (01:00) | @augustasdesign | dashboard-closeup, tempra-week 1/4 | `tempra-ask-closeup` 2154x2562 | ai scheduling panel, up close 👀 |
-| 14:30 (07:30) | @augustasdesign | hero-still, tempra-hero 1/2 | `tempra-hero-h4a` 3840x2760 | detailed hero for a team calendar 👀 |
-| 16:00 (09:00) | @faulkner_Design | bento-still, tempra-bento 1/2 | `tempra-bento-dark` 3840x3200 | each cell shows one thing the product does. no filler cells. |
+| Day | 09:30 | 15:30 | 21:30 |
+|---|---|---|---|
+| Fri 23 Oct | Panelry full view: "the whole hiring pipeline on one screen" | Requa review close-up: "three checks before anyone clicks approve" | Requa hero: "approval software should feel this calm" |
+| Sat 24 Oct | Panelry debrief close-up | Requa full view | designed by the daily run |
+| Sun 25 Oct | Panelry thirds | designed by the daily run | designed by the daily run |
 
-Held to three: Kestrel was shown 15 days ago (outside both re-show windows) and Kestrel and Quorum fail today's preflight; the component and motion families have no asset yet, so the plan's "To make" asks for one. The series continue on their own: 10-24 brings the full week view (quoting the close-up, on another account), then the thirds, then the motion once it is built.
+Plan several days ahead with `--assume-planned` (planned days count as going out). The daily run (scheduled task "Rokas X posts", 07:11) keeps the next two days at three posts by designing new projects.

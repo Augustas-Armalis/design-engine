@@ -52,6 +52,7 @@ Decided defaults, 2026-10-21. For screens inside an existing client app, `client
 - Re-skinning the reference layout box for box (L234, L238).
 - 5 accent hue families, coloured logos and monograms, 55 ringed boxes, 3 surface layers (Settle, L391).
 - A second icon library; hand-drawn SVG icons (L22, L310, L331).
+- Icons everywhere (founder 2026-10-22, ledger `x-closeups` r1: "use not that much icons.. use them but not often"). Icons go on navigation, icon-only controls, at most one AI marker and the primary's arrow; never inside chips, tags, meta lines or ordinary text buttons. Preflight `icons.density` counts text controls that carry an icon.
 - Clipped workspace marks, a dark "New" pill with a kbd chip in the sidebar (Tandem, L334).
 - Dashed "Drop here" boxes or dark cards dragged across a light app (Perch, L397).
 - Three competing box-shadow recipes; border + 1px ring on one element; double pixel strokes (Kaching visuals, L199, L467).

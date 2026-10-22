@@ -103,7 +103,8 @@ async function snap() {
     while ((n = w.nextNode())) { if (!n.textContent.trim()) continue; rng.selectNodeContents(n); for (const q of rng.getClientRects()) if (q.width > 0.5) out.push([q.left, q.top, q.right, q.bottom]) }
     for (const el of document.querySelectorAll('body *')) {
       const r = el.getBoundingClientRect(), cs = getComputedStyle(el)
-      if (r.width < 1 || Math.min(r.width, r.height) >= 120 || (el.closest('svg') && !el.matches('svg'))) continue
+      // small = short side < 120 and long side < 300: a full-width row or strip is a band a crop runs through, not a thing it cuts
+      if (r.width < 1 || Math.min(r.width, r.height) >= 120 || Math.max(r.width, r.height) >= 300 || (el.closest('svg') && !el.matches('svg'))) continue
       if (cs.backgroundColor !== 'rgba(0, 0, 0, 0)' || /0px 0px 0px (0\.5|1|1\.5)px/.test(cs.boxShadow) || el.matches('svg, img')) out.push([r.left, r.top, r.right, r.bottom])
     }
     return out

@@ -1,0 +1,106 @@
+{
+  "schema": "design-engine.library-asset/v1",
+  "id": "requa-hero",
+  "title": "Requa split hero: spend, approved before noon",
+  "kind": "hero-light",
+  "subject": "hero",
+  "project": "requa",
+  "status": "awaiting-verdict",
+  "postable": true,
+  "reservedFor": "rokasrem",
+  "conceptName": "Requa, Fieldhouse Co.",
+  "sample": true,
+  "verdict": {
+    "latest": null,
+    "round": null,
+    "date": null,
+    "words": null,
+    "ledger": null,
+    "after": "new for Rokas's batch (2026-10-22), awaiting the founder's verdict"
+  },
+  "dates": {
+    "created": "2026-10-22",
+    "rendered": "2026-10-22"
+  },
+  "source": {
+    "app": "work/replicas/app",
+    "route": "#/requahero",
+    "component": "work/replicas/app/src/RequaHero.tsx",
+    "viewport": [
+      1440,
+      900
+    ]
+  },
+  "renders": [
+    {
+      "file": "renders/hero.png",
+      "role": "single",
+      "format": "hero-still",
+      "recipe": {
+        "route": "#/requahero",
+        "viewport": [
+          1440,
+          900
+        ],
+        "scale": 2.6667,
+        "wait": 3500
+      },
+      "w": 3840,
+      "h": 2400,
+      "bytes": 789614,
+      "sha256": "15306534db0f6c52ecf3fdc58f61856acb12f5c27598a9258b5b3993a591ea52",
+      "rendered": "2026-10-22T19:16:45.761Z",
+      "commit": "6256a97+dirty"
+    }
+  ],
+  "checks": [
+    {
+      "label": "hero",
+      "route": "#/requahero",
+      "kind": "hero-light",
+      "w": 1440,
+      "h": 900,
+      "format": "hero-still",
+      "renders": [
+        "renders/hero.png"
+      ]
+    }
+  ],
+  "series": [
+    {
+      "id": "requa-site",
+      "stage": "hero"
+    }
+  ],
+  "related": [
+    "requa-product-approvals"
+  ],
+  "alt": "Landing page hero for Requa, a fictional purchase approvals tool: a two line title, spend approved before noon, a short subtitle, a dark start button and a white demo button, a new request being written, and the app on a soft blue stage showing a request for twelve chairs with three automated checks and its budget. Sample data, concept.",
+  "captionVars": {
+    "domain": "spend",
+    "ui": "hero"
+  },
+  "tags": [
+    "light",
+    "hero",
+    "split",
+    "approvals"
+  ],
+  "preflight": {
+    "ran": "2026-10-22T19:17:20.275Z",
+    "fail": 0,
+    "warn": 5,
+    "results": [
+      {
+        "label": "hero",
+        "route": "#/requahero",
+        "size": "1440x900",
+        "pass": 20,
+        "warn": 5,
+        "fail": 0,
+        "report": "preflight/1-hero.md",
+        "ran": "2026-10-22T19:17:20.268Z"
+      }
+    ]
+  }
+}

@@ -24,11 +24,13 @@ Then `node tools/x_plan.mjs plan --date <day>` places their posts, and the daily
 
 The X engine cannot read our hand-off yet. It needs the importer described in `knowledge/x/x-engine-audit.md` section 4.6: a `client/import.mjs` command (about 150 lines) and a small Worker change (about 40 lines) so a post can carry our images, time and caption, and stay out of its own hero rotation. Until that lands, the owner posts from `library/x-days/<date>/plan.md` by hand, or pauses the X engine's own generation (`paused: true`) and imports once it exists. LinkedIn needs a schema change there too.
 
+For the other team members (Faulkner, Marius and anyone new): each one does steps 1-4 on their own Mac and sends the profile id; then add them to `system/x/accounts.json` with `scheduled: true`, a `lane` of their own (a different product world from Rokas) and their slots. The daily run then designs for them too, in their own lane, never reusing another account's designs or captions.
+
 ## Who is on now (2026-10-22)
 
 | Account | State |
 |---|---|
 | @augustasdesign | manual only: never scheduled; the best finals are listed for him to post by hand |
-| @rokasrem | scheduled daily, 16:00, never-posted designs only (first project: Panelry) |
+| @rokasrem | scheduled 3 a day (09:30, 15:30, 21:30), auto-approved, never-posted designs only (Panelry, Requa; a daily run designs the next) |
 | @faulkner_Design | not scheduled; needs steps 1-4 and a yes from the founder |
 | @marius_vanagas | not scheduled; needs steps 1-4 and a yes from the founder |

@@ -247,10 +247,10 @@ const probe = (cfg) => {
     const r = shown(el); if (!r || !inView(r)) continue
     const cs = getComputedStyle(el), area = Math.max(0, Math.min(r.right, W) - Math.max(r.left, 0)) * Math.max(0, Math.min(r.bottom, H) - Math.max(r.top, 0))
     const bg = rgba(cs.backgroundColor)
-    if (bg[3] >= 0.9 && area >= 300 && !/gradient|url\(/.test(cs.backgroundImage)) { const o = oklch(bg); if (o.C <= 0.012) { const h = hex(bg); (res.fills[h] ||= { L: +o.L.toFixed(4), area: 0, n: 0, at: txt(el) || el.tagName.toLowerCase() }); res.fills[h].area += area; res.fills[h].n++ } }
+    if (bg[3] >= 0.9 && area >= 300 && !/gradient|url\(/.test(cs.backgroundImage)) { const o = oklch(bg); if (o.C <= 0.008) { const h = hex(bg); (res.fills[h] ||= { L: +o.L.toFixed(4), area: 0, n: 0, at: txt(el) || el.tagName.toLowerCase() }); res.fills[h].area += area; res.fills[h].n++ } }
     const ring = cs.boxShadow.match(/(rgba?\([^)]*\)|#[0-9a-f]{3,8})\s+0(px)?\s+0(px)?\s+0(px)?\s+1px/i)
     const edge = ring ? ring[1] : parseFloat(cs.borderTopWidth) >= 0.5 && cs.borderTopStyle !== 'none' ? cs.borderTopColor : null
-    if (edge) { const e = rgba(edge); if (e[3] > 0.02) { const comp = over(e, surfaceUnder(el)); const o = oklch(comp); if (o.C <= 0.012) { const h = hex(comp); (res.rings[h] ||= { L: +o.L.toFixed(4), n: 0, at: txt(el) || el.tagName.toLowerCase() }); res.rings[h].n++ } } }
+    if (edge) { const e = rgba(edge); if (e[3] > 0.02) { const comp = over(e, surfaceUnder(el)); const o = oklch(comp); if (o.C <= 0.008) { const h = hex(comp); (res.rings[h] ||= { L: +o.L.toFixed(4), n: 0, at: txt(el) || el.tagName.toLowerCase() }); res.rings[h].n++ } } }
   }
 
   // heavy primaries: one-line text controls whose fill stands >= 3:1 off the surface under them (ink on light, white on dark)
@@ -328,6 +328,9 @@ const probe = (cfg) => {
     if (pattern) res.alpha.push({ text: txt(el), alpha: +bg[3].toFixed(2), over: pattern.tagName.toLowerCase(), x: Math.round(r.left), y: Math.round(r.top) })
   }
 
+  // icons inside text controls (chips, tags, text buttons): the founder wants them used, "but not often" (x-closeups r1)
+  res.iconCtl = { total: 0, withIcon: [] }
+  for (const [ctl] of byControl) { const r = ctl.getBoundingClientRect(); if (!inView(r)) continue; const s = txt(ctl); if (s.length <= 2) continue; res.iconCtl.total++; if (ctl.querySelector('svg')) res.iconCtl.withIcon.push(s) }
   // squeezed: a box rendered shorter than the fixed height it declares (inline px). A flex column whose content overflows
   // shrinks its fixed rows silently; Panelry r1's drawer header (56 declared, 41 rendered) pushed its buttons into the edge
   for (const el of all) {
@@ -408,6 +411,8 @@ if (!skip.has('probes')) {
   const heavy = Object.entries(regions).filter(([, l]) => l.length > 1)
   add('primary', 'primary.per-view', heavy.length ? 'FAIL' : 'PASS', Object.entries(regions).map(([k, l]) => `${k}:${l.length}`).join(' ') || '0', '<= 1 heavy filled control (fill >= 3:1 off its surface) per view: the page, and each [data-product] (DE-06, "one ink primary")', heavy.flatMap(([k, l]) => l.map((p) => `${k} "${p.text}" ${p.fill} ${p.contrast}:1`)))
 
+  const ic = P.iconCtl, icShare = ic.total ? ic.withIcon.length / ic.total : 0
+  add('layout', 'icons.density', icShare > 0.25 && ic.withIcon.length > 3 ? 'WARN' : 'PASS', `${ic.withIcon.length}/${ic.total}`, '<= 25% of text controls (chips, tags, text buttons) carry an icon; icons belong on navigation, icon-only controls, one AI marker and the primary arrow (x-closeups r1)', ic.withIcon.slice(0, 10))
   add('layout', 'layout.squeezed', P.squeezed.length ? 'FAIL' : 'PASS', P.squeezed.length, 'no box rendered shorter than its declared fixed height (a flex column that overflows squashes its fixed rows; Panelry r1 drawer header 56 -> 41)', P.squeezed.slice(0, 8).map((q) => `"${q.text}" ${q.want}px declared, ${q.got}px rendered at ${q.x},${q.y}`))
   add('layout', 'clip.control-cut', P.ctlCut.length ? 'FAIL' : 'PASS', P.ctlCut.length, 'no icon button or avatar partly cut by its own clipping container (DE-02 inside the frame)', P.ctlCut.slice(0, 8).map((q) => `${q.aria} ${q.w}x${q.h} ${Math.round(q.share * 100)}% visible at ${q.x},${q.y}`))
 

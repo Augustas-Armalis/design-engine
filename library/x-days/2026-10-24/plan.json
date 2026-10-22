@@ -1,0 +1,354 @@
+{
+  "schema": "design-engine.x-day-plan/v1",
+  "date": "2026-10-24",
+  "weekday": "Saturday",
+  "timezone": "Europe/Vilnius",
+  "label": null,
+  "status": "planned, awaiting founder approval",
+  "generated": "2026-10-22T19:19:23.167Z",
+  "engine": "6256a97",
+  "target": 3,
+  "posts": [
+    {
+      "n": 1,
+      "postId": "rokasrem-2026-10-24-0930",
+      "account": "rokasrem",
+      "platform": "x",
+      "time": "09:30",
+      "scheduledAt": "2026-10-24T09:30:00+03:00",
+      "et": "02:30",
+      "slotRole": "account slot",
+      "optional": false,
+      "assetId": "panelry-debrief-closeup",
+      "project": "panelry",
+      "title": "Panelry pipeline and panel debrief, close: the call next to the candidates",
+      "kind": "product-ui",
+      "status": "awaiting-verdict",
+      "verdict": null,
+      "format": "dashboard-closeup",
+      "family": "product",
+      "xEngineFormat": "single-still",
+      "size": "2413x2501",
+      "feed": "single at native ratio, 514 wide",
+      "crop": "tr corner of #/panelry at [610, 16, 766, 794] (x, y, w, h), insets top 40px, right 40px; a region, not a detail (60% of the window, ratio 1.09; founder x-closeups r1 'some are too close and cuts not nicely'): the left edge sits on the funnel's Onsite divider and in the gap after the score pips and before the search field; the bottom under the whole table and its footer and above the drawer's buttons, so only the window bleeds (a cut at the table's last row read as accidental: fold.end)",
+      "media": [
+        {
+          "path": "library/panelry/debrief-closeup/renders/closeup.png",
+          "w": 2413,
+          "h": 2501,
+          "bytes": 570246,
+          "sha256": "c4d49a2a29e7b450d908a2cfae01df8b59b3cb70c27e0e148ee63222ccdcd732",
+          "role": "single",
+          "name": "post-1.png"
+        }
+      ],
+      "alt": "Close up of a hiring tool's job view, a fictional concept: the right half of the candidate table with stages and next steps, Hana Kowalczyk's row selected with debrief ready, and her panel debrief: move her to onsite, three of four interviewers say yes, four signal bars with systems thinking as the soft spot, one question to ask in the onsite, and the first two scorecards. Sample data.",
+      "series": {
+        "id": "panelry-pipeline",
+        "stage": "closeup",
+        "step": 2,
+        "of": 4
+      },
+      "relation": "follow",
+      "quotes": "rokasrem-2026-10-23-0930",
+      "caption": "hiring tools should sum up the interview panel like this",
+      "captionSource": "caption.md",
+      "reply": "concept work for a hiring app. made at larpo.studio",
+      "replyAfterMinutes": [
+        30,
+        150
+      ],
+      "captionFindings": [],
+      "score": 1.819,
+      "why": "awaiting-verdict 0.75 x single-portrait 0.92 x sqrt(crm-table 3.12) + 0.60 (series panelry-pipeline step 2/4), project in series (XS-17 focus)",
+      "preflight": {
+        "fail": 0,
+        "warn": 4,
+        "reports": [
+          "library/panelry/debrief-closeup/preflight/1-closeup.md"
+        ]
+      },
+      "approval": {
+        "state": "ready",
+        "designVerdict": "none",
+        "approvedBy": "augustas (auto-approve for this account, 2026-10-22)",
+        "requireConfirm": false
+      }
+    },
+    {
+      "n": 2,
+      "postId": "rokasrem-2026-10-24-1530",
+      "account": "rokasrem",
+      "platform": "x",
+      "time": "15:30",
+      "scheduledAt": "2026-10-24T15:30:00+03:00",
+      "et": "08:30",
+      "slotRole": "account slot",
+      "optional": false,
+      "assetId": "requa-product-approvals",
+      "project": "requa",
+      "title": "Requa approvals inbox and request review, full and in thirds",
+      "kind": "product-ui",
+      "status": "awaiting-verdict",
+      "verdict": null,
+      "format": "dashboard-full",
+      "family": "product",
+      "xEngineFormat": "single-still",
+      "size": "3840x2571",
+      "feed": "single landscape at native 3:2, 514x343",
+      "crop": "equal canvas margin on all four sides (56px at 1x on cprodb)",
+      "media": [
+        {
+          "path": "library/requa/product-approvals/renders/full.png",
+          "w": 3840,
+          "h": 2571,
+          "bytes": 803430,
+          "sha256": "9da41cde337b5adb273f4552acf01913a84ebf241bae24ace7b0e1b9cac705ff",
+          "role": "full",
+          "name": "post-1.png"
+        }
+      ],
+      "alt": "Product screen of Requa, a fictional purchase approvals tool: a sidebar with Q4 budgets, an inbox of nine purchase requests with amounts and statuses, and one request under review with automated checks, its budget, line items, the approval chain, notes and an approve button. Sample data, concept.",
+      "series": {
+        "id": "requa-app",
+        "stage": "full",
+        "step": 2,
+        "of": 4
+      },
+      "relation": "follow",
+      "quotes": "rokasrem-2026-10-23-1530",
+      "caption": "zoomed out: the whole approvals inbox behind the review",
+      "captionSource": "caption.md",
+      "reply": "concept work for a spend app. made at larpo.studio",
+      "replyAfterMinutes": [
+        30,
+        150
+      ],
+      "captionFindings": [],
+      "score": 1.652,
+      "why": "awaiting-verdict 0.75 x single-landscape 0.98 x sqrt(dashboard 2.05) + 0.60 (series requa-app step 2/4), project in series (XS-17 focus)",
+      "preflight": {
+        "fail": 0,
+        "warn": 7,
+        "reports": [
+          "library/requa/product-approvals/preflight/1-full-and-strips.md"
+        ]
+      },
+      "approval": {
+        "state": "ready",
+        "designVerdict": "none",
+        "approvedBy": "augustas (auto-approve for this account, 2026-10-22)",
+        "requireConfirm": false
+      }
+    }
+  ],
+  "manual": [
+    {
+      "account": "augustasdesign",
+      "kit": [
+        {
+          "assetId": "tempra-ask-closeup",
+          "title": "Tempra Ask rail, close: the answer for five calendars",
+          "status": "awaiting-verdict",
+          "verdict": null,
+          "series": [
+            {
+              "id": "tempra-week",
+              "stage": "closeup"
+            }
+          ],
+          "preflight": {
+            "fail": 0,
+            "warn": 5
+          },
+          "reply": "concept, made at larpo.studio",
+          "formats": [
+            {
+              "format": "dashboard-closeup",
+              "media": [
+                {
+                  "path": "library/tempra/ask-closeup/renders/closeup.png",
+                  "w": 2154,
+                  "h": 2562
+                }
+              ],
+              "captions": [
+                "closer look at the ask panel 👀",
+                "the detail in this little answer card is unreal",
+                "my favorite panel in the whole calendar 🫠"
+              ]
+            }
+          ]
+        },
+        {
+          "assetId": "tempra-hero-h4a",
+          "title": "Tempra hero: every meeting finds its own hour",
+          "status": "awaiting-verdict",
+          "verdict": "partial",
+          "series": [
+            {
+              "id": "tempra-hero",
+              "stage": "hero"
+            }
+          ],
+          "preflight": {
+            "fail": 0,
+            "warn": 7
+          },
+          "reply": "concept, made at larpo.studio",
+          "formats": [
+            {
+              "format": "hero-still",
+              "media": [
+                {
+                  "path": "library/tempra/hero-h4a/renders/hero.png",
+                  "w": 3840,
+                  "h": 2760
+                }
+              ],
+              "captions": [
+                "probably the cleanest calendar hero i've made 👀",
+                "the product shot under this hero is unreal",
+                "scheduling sites can look this calm"
+              ]
+            }
+          ]
+        },
+        {
+          "assetId": "tempra-product-week",
+          "title": "Tempra week view with the Ask rail, full and in thirds",
+          "status": "awaiting-verdict",
+          "verdict": "partial",
+          "series": [
+            {
+              "id": "tempra-week",
+              "stage": "full"
+            },
+            {
+              "id": "tempra-week",
+              "stage": "strips"
+            }
+          ],
+          "preflight": {
+            "fail": 0,
+            "warn": 7
+          },
+          "reply": "concept, made at larpo.studio",
+          "formats": [
+            {
+              "format": "dashboard-full",
+              "media": [
+                {
+                  "path": "library/tempra/product-week/renders/full.png",
+                  "w": 3840,
+                  "h": 2571
+                }
+              ],
+              "captions": [
+                "the most detailed calendar i've designed so far 👀",
+                "this week view turned out way too clean",
+                "scheduling software can look like this"
+              ]
+            },
+            {
+              "format": "dashboard-strips-3",
+              "media": [
+                {
+                  "path": "library/tempra/product-week/renders/strip-1.png",
+                  "w": 1280,
+                  "h": 2571
+                },
+                {
+                  "path": "library/tempra/product-week/renders/strip-2.png",
+                  "w": 1280,
+                  "h": 2571
+                },
+                {
+                  "path": "library/tempra/product-week/renders/strip-3.png",
+                  "w": 1280,
+                  "h": 2571
+                }
+              ],
+              "captions": [
+                "could look at this week view all day 😍",
+                "my favorite product screen i've built this year",
+                "every calendar app should get this much care"
+              ]
+            }
+          ]
+        },
+        {
+          "assetId": "tempra-bento-dark",
+          "title": "Tempra dark feature bento",
+          "status": "accepted",
+          "verdict": "accept",
+          "series": [
+            {
+              "id": "tempra-bento",
+              "stage": "section"
+            }
+          ],
+          "preflight": {
+            "fail": 0,
+            "warn": 1
+          },
+          "reply": "concept, made at larpo.studio",
+          "formats": [
+            {
+              "format": "bento-still",
+              "media": [
+                {
+                  "path": "library/tempra/bento-dark/renders/bento.png",
+                  "w": 3840,
+                  "h": 3200
+                }
+              ],
+              "captions": [
+                "this dark bento turned out way too clean 🔥",
+                "probably my favorite bento i've made so far 🫠",
+                "feature sections deserve this much detail"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "toMake": [
+    {
+      "series": "requa-site",
+      "stage": "motion",
+      "due": "due (1 d after hero)",
+      "how": "a load-in of #/requahero once motion is asked for"
+    },
+    {
+      "series": null,
+      "stage": "any",
+      "due": "1 more post(s) to reach 3",
+      "how": "nothing postable left in the hero, section, component, motion families without repeating one today; design one (a component post, a pricing or changelog section, a light/dark pair) and add it to the library"
+    }
+  ],
+  "skipped": [],
+  "notes": [
+    "daily volume from knowledge/x/cadence.json: 3-5 posts, <= 2 on @augustasdesign, <= 1 per co-founder, >= 6 h apart on one account (XS-01, XS-02)",
+    "scheduled accounts: @rokasrem (<= 3/day, never-posted designs only); by hand only: @augustasdesign (system/x/accounts.json)",
+    "captions also pass the X engine's own checkCaption (~/dev/larpo-x-engine/shared/gate.mjs), the check its Worker runs before Buffer",
+    "assumed going out (planned, not yet in posted.json): 2026-10-23 panelry-product-pipeline, 2026-10-23 requa-review-closeup, 2026-10-23 requa-hero"
+  ],
+  "candidates": [
+    {
+      "asset": "panelry-debrief-closeup",
+      "format": "dashboard-closeup",
+      "relation": "follow",
+      "score": 1.819,
+      "picked": true
+    },
+    {
+      "asset": "requa-product-approvals",
+      "format": "dashboard-full",
+      "relation": "follow",
+      "score": 1.652,
+      "picked": true
+    }
+  ]
+}

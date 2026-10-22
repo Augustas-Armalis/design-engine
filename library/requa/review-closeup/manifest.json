@@ -1,0 +1,122 @@
+{
+  "schema": "design-engine.library-asset/v1",
+  "id": "requa-review-closeup",
+  "title": "Requa request review, close: three checks, the budget, the chain",
+  "kind": "product-ui",
+  "subject": "dashboard",
+  "project": "requa",
+  "status": "awaiting-verdict",
+  "postable": true,
+  "reservedFor": "rokasrem",
+  "conceptName": "Requa, Fieldhouse Co.",
+  "sample": true,
+  "verdict": {
+    "latest": null,
+    "round": null,
+    "date": null,
+    "words": null,
+    "ledger": null,
+    "after": "new for Rokas's batch (2026-10-22), awaiting the founder's verdict"
+  },
+  "dates": {
+    "created": "2026-10-22",
+    "rendered": "2026-10-22"
+  },
+  "source": {
+    "app": "work/replicas/app",
+    "route": "#/xframe?src=requa&x=625&y=16",
+    "component": "work/replicas/app/src/RequaProduct.tsx",
+    "viewport": [
+      751,
+      779
+    ],
+    "crop": {
+      "src": "#/requa",
+      "rect": [
+        625,
+        16,
+        751,
+        779
+      ],
+      "anchor": "tr",
+      "insets": {
+        "top": 40,
+        "right": 40
+      },
+      "snapped": "a region (59% of the window, ratio 0.96): the left edge just past the inbox divider, the bottom under the notes and above the buttons, so only the window bleeds"
+    }
+  },
+  "renders": [
+    {
+      "file": "renders/closeup.png",
+      "role": "single",
+      "format": "dashboard-closeup",
+      "recipe": {
+        "route": "#/xframe?src=requa&x=625&y=16",
+        "viewport": [
+          751,
+          779
+        ],
+        "scale": 3.2
+      },
+      "w": 2403,
+      "h": 2493,
+      "bytes": 407999,
+      "sha256": "3213792c75c57632825b9ce6bdff692a4287efd3a4ec89675bb39393f126148e",
+      "rendered": "2026-10-22T19:17:26.505Z",
+      "commit": "6256a97+dirty"
+    }
+  ],
+  "checks": [
+    {
+      "label": "closeup",
+      "route": "#/xframe?src=requa&x=625&y=16",
+      "kind": "product-ui",
+      "w": 751,
+      "h": 779,
+      "anchor": "tr",
+      "format": "dashboard-closeup",
+      "renders": [
+        "renders/closeup.png"
+      ]
+    }
+  ],
+  "series": [
+    {
+      "id": "requa-app",
+      "stage": "closeup"
+    }
+  ],
+  "related": [
+    "requa-product-approvals"
+  ],
+  "alt": "Close up of a purchase request in a fictional approvals tool: twelve ergonomic chairs for €4,680, three automated checks (within budget, vendor on contract, a similar order in July), the Q4 office budget bar with this request highlighted, the approval chain with the team lead done and finance next, and two notes. Sample data, concept.",
+  "captionVars": {
+    "domain": "spend",
+    "ui": "review",
+    "detail": "request review"
+  },
+  "tags": [
+    "light",
+    "closeup",
+    "ai-answer",
+    "approvals"
+  ],
+  "preflight": {
+    "ran": "2026-10-22T19:17:51.413Z",
+    "fail": 0,
+    "warn": 4,
+    "results": [
+      {
+        "label": "closeup",
+        "route": "#/xframe?src=requa&x=625&y=16",
+        "size": "751x779",
+        "pass": 20,
+        "warn": 4,
+        "fail": 0,
+        "report": "preflight/1-closeup.md",
+        "ran": "2026-10-22T19:17:51.407Z"
+      }
+    ]
+  }
+}

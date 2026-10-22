@@ -1,6 +1,6 @@
 {
   "schema": "design-engine.library-index/v1",
-  "generated": "2026-10-22T18:46:11.704Z",
+  "generated": "2026-10-22T19:19:23.050Z",
   "projects": [
     {
       "id": "kestrel",
@@ -15,10 +15,10 @@
       "series": [
         {
           "id": "panelry-pipeline",
-          "title": "the Panelry hiring pipeline: the panel debrief up close, the whole job view, in thirds, then moving",
+          "title": "the Panelry hiring pipeline: the whole job view, then the debrief region up close, then the thirds, then moving",
           "stages": [
-            "closeup",
             "full",
+            "closeup",
             "strips",
             "motion"
           ],
@@ -37,6 +37,43 @@
       "name": "Quorum",
       "fictional": true,
       "series": []
+    },
+    {
+      "id": "requa",
+      "name": "Requa",
+      "fictional": true,
+      "series": [
+        {
+          "id": "requa-site",
+          "title": "the Requa landing hero, then its load-in",
+          "stages": [
+            "hero",
+            "motion"
+          ],
+          "assets": {
+            "hero": "requa-hero",
+            "motion": null
+          },
+          "motionToMake": "a load-in of #/requahero once motion is asked for"
+        },
+        {
+          "id": "requa-app",
+          "title": "the Requa approval review: a region close, the whole app, in thirds",
+          "stages": [
+            "closeup",
+            "full",
+            "strips",
+            "motion"
+          ],
+          "assets": {
+            "closeup": "requa-review-closeup",
+            "full": "requa-product-approvals",
+            "strips": "requa-product-approvals",
+            "motion": null
+          },
+          "motionToMake": "a load-in of #/requa once motion is asked for"
+        }
+      ]
     },
     {
       "id": "tempra",
@@ -119,7 +156,7 @@
     {
       "id": "panelry-debrief-closeup",
       "project": "panelry",
-      "title": "Panelry panel debrief, close: four scorecards, one call",
+      "title": "Panelry pipeline and panel debrief, close: the call next to the candidates",
       "kind": "product-ui",
       "status": "awaiting-verdict",
       "postable": true,
@@ -142,8 +179,8 @@
           "file": "library/panelry/debrief-closeup/renders/closeup.png",
           "role": "single",
           "format": "dashboard-closeup",
-          "w": 2241,
-          "h": 2402
+          "w": 2413,
+          "h": 2501
         }
       ]
     },
@@ -227,6 +264,125 @@
           "format": "hero-still",
           "w": 2880,
           "h": 1800
+        }
+      ]
+    },
+    {
+      "id": "requa-hero",
+      "project": "requa",
+      "title": "Requa split hero: spend, approved before noon",
+      "kind": "hero-light",
+      "status": "awaiting-verdict",
+      "postable": true,
+      "verdict": null,
+      "formats": [
+        "hero-still"
+      ],
+      "series": [
+        {
+          "id": "requa-site",
+          "stage": "hero"
+        }
+      ],
+      "sampleDay": null,
+      "reservedFor": "rokasrem",
+      "preflightFail": 0,
+      "dir": "library/requa/hero",
+      "renders": [
+        {
+          "file": "library/requa/hero/renders/hero.png",
+          "role": "single",
+          "format": "hero-still",
+          "w": 3840,
+          "h": 2400
+        }
+      ]
+    },
+    {
+      "id": "requa-product-approvals",
+      "project": "requa",
+      "title": "Requa approvals inbox and request review, full and in thirds",
+      "kind": "product-ui",
+      "status": "awaiting-verdict",
+      "postable": true,
+      "verdict": null,
+      "formats": [
+        "dashboard-full",
+        "dashboard-strips-3"
+      ],
+      "series": [
+        {
+          "id": "requa-app",
+          "stage": "full"
+        },
+        {
+          "id": "requa-app",
+          "stage": "strips"
+        }
+      ],
+      "sampleDay": null,
+      "reservedFor": "rokasrem",
+      "preflightFail": 0,
+      "dir": "library/requa/product-approvals",
+      "renders": [
+        {
+          "file": "library/requa/product-approvals/renders/full.png",
+          "role": "full",
+          "format": "dashboard-full",
+          "w": 3840,
+          "h": 2571
+        },
+        {
+          "file": "library/requa/product-approvals/renders/strip-1.png",
+          "role": "strip",
+          "format": "dashboard-strips-3",
+          "w": 1280,
+          "h": 2571
+        },
+        {
+          "file": "library/requa/product-approvals/renders/strip-2.png",
+          "role": "strip",
+          "format": "dashboard-strips-3",
+          "w": 1280,
+          "h": 2571
+        },
+        {
+          "file": "library/requa/product-approvals/renders/strip-3.png",
+          "role": "strip",
+          "format": "dashboard-strips-3",
+          "w": 1280,
+          "h": 2571
+        }
+      ]
+    },
+    {
+      "id": "requa-review-closeup",
+      "project": "requa",
+      "title": "Requa request review, close: three checks, the budget, the chain",
+      "kind": "product-ui",
+      "status": "awaiting-verdict",
+      "postable": true,
+      "verdict": null,
+      "formats": [
+        "dashboard-closeup"
+      ],
+      "series": [
+        {
+          "id": "requa-app",
+          "stage": "closeup"
+        }
+      ],
+      "sampleDay": null,
+      "reservedFor": "rokasrem",
+      "preflightFail": 0,
+      "dir": "library/requa/review-closeup",
+      "renders": [
+        {
+          "file": "library/requa/review-closeup/renders/closeup.png",
+          "role": "single",
+          "format": "dashboard-closeup",
+          "w": 2403,
+          "h": 2493
         }
       ]
     },

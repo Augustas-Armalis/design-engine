@@ -1,0 +1,198 @@
+{
+  "schema": "design-engine.library-asset/v1",
+  "id": "requa-product-approvals",
+  "title": "Requa approvals inbox and request review, full and in thirds",
+  "kind": "product-ui",
+  "subject": "dashboard",
+  "project": "requa",
+  "status": "awaiting-verdict",
+  "postable": true,
+  "reservedFor": "rokasrem",
+  "conceptName": "Requa, Fieldhouse Co.",
+  "sample": true,
+  "verdict": {
+    "latest": null,
+    "round": null,
+    "date": null,
+    "words": null,
+    "ledger": null,
+    "after": "new for Rokas's batch (2026-10-22), awaiting the founder's verdict"
+  },
+  "dates": {
+    "created": "2026-10-22",
+    "rendered": "2026-10-22"
+  },
+  "source": {
+    "app": "work/replicas/app",
+    "route": "#/requa",
+    "component": "work/replicas/app/src/RequaProduct.tsx",
+    "viewport": [
+      1392,
+      932
+    ]
+  },
+  "renders": [
+    {
+      "file": "renders/full.png",
+      "role": "full",
+      "format": "dashboard-full",
+      "recipe": {
+        "route": "#/requa",
+        "viewport": [
+          1392,
+          932
+        ],
+        "scale": 2.7587
+      },
+      "w": 3840,
+      "h": 2571,
+      "bytes": 803430,
+      "sha256": "9da41cde337b5adb273f4552acf01913a84ebf241bae24ace7b0e1b9cac705ff",
+      "rendered": "2026-10-22T19:17:57.711Z",
+      "commit": "6256a97+dirty"
+    },
+    {
+      "file": "renders/strip-1.png",
+      "role": "strip",
+      "index": 1,
+      "of": 3,
+      "format": "dashboard-strips-3",
+      "recipe": {
+        "route": "#/requa",
+        "viewport": [
+          1392,
+          932
+        ],
+        "scale": 2.7587,
+        "clip": [
+          0,
+          0,
+          464,
+          932
+        ]
+      },
+      "w": 1280,
+      "h": 2571,
+      "bytes": 286048,
+      "sha256": "08b722506f363c26efdac0dce2173c1cf5f4e7efc81f4fbc92206555d0dce02a",
+      "rendered": "2026-10-22T19:18:02.341Z",
+      "commit": "6256a97+dirty"
+    },
+    {
+      "file": "renders/strip-2.png",
+      "role": "strip",
+      "index": 2,
+      "of": 3,
+      "format": "dashboard-strips-3",
+      "recipe": {
+        "route": "#/requa",
+        "viewport": [
+          1392,
+          932
+        ],
+        "scale": 2.7587,
+        "clip": [
+          464,
+          0,
+          464,
+          932
+        ]
+      },
+      "w": 1280,
+      "h": 2571,
+      "bytes": 320059,
+      "sha256": "1032ac04e9bbf9e224b97ac8600f077298b43ef7af3777147792db6268e5b95c",
+      "rendered": "2026-10-22T19:18:07.137Z",
+      "commit": "6256a97+dirty"
+    },
+    {
+      "file": "renders/strip-3.png",
+      "role": "strip",
+      "index": 3,
+      "of": 3,
+      "format": "dashboard-strips-3",
+      "recipe": {
+        "route": "#/requa",
+        "viewport": [
+          1392,
+          932
+        ],
+        "scale": 2.7587,
+        "clip": [
+          928,
+          0,
+          464,
+          932
+        ]
+      },
+      "w": 1280,
+      "h": 2571,
+      "bytes": 162145,
+      "sha256": "f004c558d9d32dbdd009cc33a1785cac384e0fc4b46a7d564a5dee522cc7fbb3",
+      "rendered": "2026-10-22T19:18:12.358Z",
+      "commit": "6256a97+dirty"
+    }
+  ],
+  "checks": [
+    {
+      "label": "full-and-strips",
+      "route": "#/requa",
+      "kind": "product-ui",
+      "w": 1392,
+      "h": 932,
+      "anchor": "all",
+      "seams": [
+        464,
+        928
+      ],
+      "format": "full-plus-strips",
+      "renders": [
+        "renders/full.png",
+        "renders/strip-1.png",
+        "renders/strip-2.png",
+        "renders/strip-3.png"
+      ]
+    }
+  ],
+  "series": [
+    {
+      "id": "requa-app",
+      "stage": "full"
+    },
+    {
+      "id": "requa-app",
+      "stage": "strips"
+    }
+  ],
+  "related": [
+    "requa-review-closeup",
+    "requa-hero"
+  ],
+  "alt": "Product screen of Requa, a fictional purchase approvals tool: a sidebar with Q4 budgets, an inbox of nine purchase requests with amounts and statuses, and one request under review with automated checks, its budget, line items, the approval chain, notes and an approve button. Sample data, concept.",
+  "captionVars": {
+    "domain": "spend",
+    "ui": "app"
+  },
+  "tags": [
+    "light",
+    "dashboard",
+    "approvals"
+  ],
+  "preflight": {
+    "ran": "2026-10-22T19:18:38.482Z",
+    "fail": 0,
+    "warn": 7,
+    "results": [
+      {
+        "label": "full-and-strips",
+        "route": "#/requa",
+        "size": "1392x932",
+        "pass": 23,
+        "warn": 7,
+        "fail": 0,
+        "report": "preflight/1-full-and-strips.md",
+        "ran": "2026-10-22T19:18:38.475Z"
+      }
+    ]
+  }
+}

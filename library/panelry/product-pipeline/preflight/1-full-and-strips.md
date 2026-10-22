@@ -1,16 +1,16 @@
 # Preflight: lib-panelry-product-pipeline-1
 
 http://localhost:4396/#/panelry  
-kind `product-ui`, 1392x932 artboard, anchor all, 2026-10-22 18:43 UTC
+kind `product-ui`, 1392x932 artboard, anchor all, 2026-10-22 19:06 UTC
 
-**PASS: 0 fail, 7 warn, 22 pass**
+**PASS: 0 fail, 7 warn, 23 pass**
 
 | step | status | fail | warn | seconds |
 |---|---|---|---|---|
 | gate | PASS | 0 | 4 | 7.5 |
-| check | PASS | 0 | 2 | 9.7 |
-| clipscan | PASS | 0 | 0 | 2.5 |
-| probes | done | 0 | 0 | 6.3 |
+| check | PASS | 0 | 2 | 10.1 |
+| clipscan | PASS | 0 | 0 | 2.4 |
+| probes | done | 0 | 0 | 6.7 |
 
 | status | check | value | want | detail |
 |---|---|---|---|---|
@@ -20,7 +20,7 @@ kind `product-ui`, 1392x932 artboard, anchor all, 2026-10-22 18:43 UTC
 | WARN | gate/radius/radius.ladder.product | 25 | boxes inside [data-product] off the hero ladder (judge them with --kind product-ui) | span "" h36 r13 (band 32-40: 10-12) [product]; span "Open · day 18" h24 r9 (band 24-32: 6-8) [product]; div "All205Interview14N" h32 r13 (band 32-40: 10-12) [product]; span "All205" h28 r11 (band 24-32: 6-8) [product]; span "Filter" h32 r12.1 (band 32-40: 10-12) [product]; span "Table view" h28 r10 (band 24-32: 6-8) [product] |
 | WARN | check/desktop/color.contrast | 21 | body >= 4.5:1, large >= 3:1 (text on gradients/images not measured) | judged by gate contrast census (product text is WARN there) \| span 2.36:1 (13px) "/"; span 3.88:1 (12px) "Open · day 18"; span 4.48:1 (13px) "Interview14"; span 4.48:1 (12px) "14"; span 4.48:1 (13px) "Needs feedback3"; span 4.48:1 (12px) "3"; span 3.88:1 (12px) "Offer"; span 4.45:1 (12px) "Gdańsk · 6 yrs"; span 4.45:1 (12px) "4 of 4 in"; span 2.36:1 (12.5px) "Not scored"; span 2.36:1 (12.5px) "No |
 | WARN | check/desktop/a11y.axe-serious | 1 | 0 serious/critical | judged by gate contrast census (product text is WARN there) \| color-contrast×5 |
-| WARN | post/post.seams | 7 | strip seams fall in gutters (text across a seam is split between two carousel images) | x464 "Open · day 18" y121; x464 "Design · Remote, EU · Hi" y147; x464 "Interview" y413; x464 "Interview" y459; x464 "Interview" y505; x464 "Applied" y689 |
+| WARN | post/post.seams | 7 | strip seams fall in gutters (text across a seam is split between two carousel images) | x464 "Open · day 18" y122; x464 "Design · Remote, EU · Hi" y150; x464 "Interview" y416; x464 "Interview" y462; x464 "Interview" y508; x464 "Applied" y692 |
 | PASS | gate/gate.summary | 0 fail, 4 warn, 25 pass | 0 FAIL | reports/lib-panelry-product-pipeline-1/gate.json |
 | PASS | check/check.summary | 0 fail, 2 warn | 0 FAIL | one 1392x932 viewport (artboard); reports/lib-panelry-product-pipeline-1/check/report.md |
 | PASS | clipscan/clip.cut-off | 0 | 0 things cut off (text past its clip box, svg outside its viewBox, children past overflow:hidden) |  |
@@ -32,6 +32,7 @@ kind `product-ui`, 1392x932 artboard, anchor all, 2026-10-22 18:43 UTC
 | PASS | grey/grey.fill-twins | 0 | no two neutral fills (each >= 0.2% of the frame) within OKLCH dL 0.008 of each other: one weak grey per role (DE-05) |  |
 | PASS | grey/grey.edge-twins | 0 | no two neutral 1px edges within dL 0.006 (composited on their surface) |  |
 | PASS | primary/primary.per-view | product1:1 | <= 1 heavy filled control (fill >= 3:1 off its surface) per view: the page, and each [data-product] (DE-06, "one ink primary") |  |
+| PASS | layout/icons.density | 2/25 | <= 25% of text controls (chips, tags, text buttons) carry an icon; icons belong on navigation, icon-only controls, one AI marker and the primary arrow (x-closeups r1) | Search candidates; Move to onsite |
 | PASS | layout/layout.squeezed | 0 | no box rendered shorter than its declared fixed height (a flex column that overflows squashes its fixed rows; Panelry r1 drawer header 56 -> 41) |  |
 | PASS | layout/clip.control-cut | 0 | no icon button or avatar partly cut by its own clipping container (DE-02 inside the frame) |  |
 | PASS | edge/edge.small-cut | 0 | no chip, avatar, button or icon (< 120px) cut by the left, right or top frame edge (the bottom is fold.end): bring it in, or bleed one big visual by >= 25% (DE-02) |  |
@@ -39,8 +40,8 @@ kind `product-ui`, 1392x932 artboard, anchor all, 2026-10-22 18:43 UTC
 | PASS | post/post.insets | l 56 t 56 r 56 b 56 | equal canvas inset on all four sides (+-2px) | div 1280x820 |
 | PASS | copy/copy.reference-names | 0 | no name from a studied reference in visible text (hard no-copy rule, system/canon/no-copy-names.json) |  |
 | PASS | copy/copy.placeholder | 0 | no stock brand or placeholder text (Acme, Lorem ipsum, TODO...) |  |
-| PASS | export/export.full.png | 3840x2571 0.91MB | long side >= 2000px (XP-11), ratio 3840:2571 (+-2%), <= 5 MB (X API image limit) | library/panelry/product-pipeline/renders/full.png |
+| PASS | export/export.full.png | 3840x2571 0.92MB | long side >= 2000px (XP-11), ratio 3840:2571 (+-2%), <= 5 MB (X API image limit) | library/panelry/product-pipeline/renders/full.png |
 | PASS | export/export.strip-1.png | 1280x2571 0.32MB | long side >= 2000px (XP-11), ratio 1280:2571 (+-2%), <= 5 MB (X API image limit) | library/panelry/product-pipeline/renders/strip-1.png |
-| PASS | export/export.strip-2.png | 1280x2571 0.24MB | long side >= 2000px (XP-11), ratio 1280:2571 (+-2%), <= 5 MB (X API image limit) | library/panelry/product-pipeline/renders/strip-2.png |
-| PASS | export/export.strip-3.png | 1280x2571 0.32MB | long side >= 2000px (XP-11), ratio 1280:2571 (+-2%), <= 5 MB (X API image limit) | library/panelry/product-pipeline/renders/strip-3.png |
-| INFO | grey/grey.census | 7 fills, 4 edges | neutral greys in use | #ffffff L1 142.6%; #f4f5f7 L0.97 13.8%; #fafafb L0.9854 6.2%; #f1f2f5 L0.9612 0.5%; #f2fbf6 L0.98 0.1%; #e2e4e9 L0.9188 0.1%; #d3d7de L0.8781 0% |
+| PASS | export/export.strip-2.png | 1280x2571 0.25MB | long side >= 2000px (XP-11), ratio 1280:2571 (+-2%), <= 5 MB (X API image limit) | library/panelry/product-pipeline/renders/strip-2.png |
+| PASS | export/export.strip-3.png | 1280x2571 0.31MB | long side >= 2000px (XP-11), ratio 1280:2571 (+-2%), <= 5 MB (X API image limit) | library/panelry/product-pipeline/renders/strip-3.png |
+| INFO | grey/grey.census | 5 fills, 3 edges | neutral greys in use | #ffffff L1 142.6%; #f4f5f7 L0.97 13.7%; #fafafb L0.9854 6.2%; #f1f2f5 L0.9612 0.5%; #e2e4e9 L0.9188 0.1% |

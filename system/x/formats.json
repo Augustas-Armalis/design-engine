@@ -90,8 +90,8 @@
       "title": "one region of a product view, close",
       "media": 1,
       "canvas": [
-        2160,
-        2592
+        2400,
+        2160
       ],
       "alt_canvas": [
         [
@@ -113,12 +113,12 @@
         "anchor": "the corner shown (tl|tr|bl|br)"
       },
       "xEngineFormat": "single-still",
-      "feed": "single portrait at native 5:6, 514x617",
-      "crop": "the window's anchored corner with equal canvas insets on its two edges (40-56px at 1x); the window bleeds off the other two; every edge snapped to a gutter. 2-3x the scale of the full shot in the feed",
+      "feed": "single at native ratio, 514 wide",
+      "crop": "a region, not a detail: 50-60% of the window width (700-800 CSS px of 1280), ratio 0.85-1.3; the window's anchored corner with equal 40px canvas insets, bleeding off the other two edges; every edge in a gutter that runs through the whole crop (between columns, cells, cards or rows), never through text, a chip, a control or a small card (canon post-component, x-closeups r1)",
       "seriesStage": "closeup",
       "ratioRange": [
-        0.8,
-        1.0
+        0.85,
+        1.3
       ],
       "multiplierKey": "single-portrait"
     },

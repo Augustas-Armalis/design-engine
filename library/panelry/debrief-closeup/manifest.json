@@ -1,7 +1,7 @@
 {
   "schema": "design-engine.library-asset/v1",
   "id": "panelry-debrief-closeup",
-  "title": "Panelry panel debrief, close: four scorecards, one call",
+  "title": "Panelry pipeline and panel debrief, close: the call next to the candidates",
   "project": "panelry",
   "kind": "product-ui",
   "status": "awaiting-verdict",
@@ -21,26 +21,26 @@
   "sampleDay": "2026-10-23",
   "source": {
     "app": "work/replicas/app",
-    "route": "#/xframe?src=panelry&x=945&y=16",
+    "route": "#/xframe?src=panelry&x=610&y=16",
     "component": "work/replicas/app/src/PanelryProduct.tsx",
     "viewport": [
-      431,
-      462
+      766,
+      794
     ],
     "crop": {
       "src": "#/panelry",
       "rect": [
-        945,
+        610,
         16,
-        431,
-        462
+        766,
+        794
       ],
       "anchor": "tr",
       "insets": {
         "top": 40,
         "right": 40
       },
-      "snapped": "left and bottom edges in gutters (tools/library.mjs snap moved 0px): the left edge runs just inside the drawer, the bottom in the gap under the four signal bars (471-485 after the r1b drawer fix), so the debrief card bleeds off the bottom"
+      "snapped": "a region, not a detail (60% of the window, ratio 1.09; founder x-closeups r1 'some are too close and cuts not nicely'): the left edge sits on the funnel's Onsite divider and in the gap after the score pips and before the search field; the bottom under the whole table and its footer and above the drawer's buttons, so only the window bleeds (a cut at the table's last row read as accidental: fold.end)"
     }
   },
   "renders": [
@@ -49,28 +49,28 @@
       "role": "single",
       "format": "dashboard-closeup",
       "recipe": {
-        "route": "#/xframe?src=panelry&x=945&y=16",
+        "route": "#/xframe?src=panelry&x=610&y=16",
         "viewport": [
-          431,
-          462
+          766,
+          794
         ],
-        "scale": 5.2
+        "scale": 3.15
       },
-      "w": 2241,
-      "h": 2402,
-      "bytes": 396073,
-      "sha256": "403018f9a7ef16dc8ce726bb6db7e558fcc6596f71710b3ec942edfbab3d3015",
-      "rendered": "2026-10-22T18:43:27.141Z",
-      "commit": "6a05496+dirty"
+      "w": 2413,
+      "h": 2501,
+      "bytes": 570246,
+      "sha256": "c4d49a2a29e7b450d908a2cfae01df8b59b3cb70c27e0e148ee63222ccdcd732",
+      "rendered": "2026-10-22T19:05:08.674Z",
+      "commit": "6256a97+dirty"
     }
   ],
   "checks": [
     {
       "label": "closeup",
-      "route": "#/xframe?src=panelry&x=945&y=16",
+      "route": "#/xframe?src=panelry&x=610&y=16",
       "kind": "product-ui",
-      "w": 431,
-      "h": 462,
+      "w": 766,
+      "h": 794,
       "anchor": "tr",
       "format": "dashboard-closeup",
       "renders": [
@@ -87,7 +87,7 @@
   "related": [
     "panelry-product-pipeline"
   ],
-  "alt": "Close up of a candidate panel in a fictional hiring tool: Hana Kowalczyk, product designer, and a panel debrief that reads move her to onsite, three of four interviewers say yes, with four signal bars: craft 4.6, communication 4.5, product sense 4.3 and systems thinking 3.4 marked as the soft spot. Sample data, concept.",
+  "alt": "Close up of a hiring tool's job view, a fictional concept: the right half of the candidate table with stages and next steps, Hana Kowalczyk's row selected with debrief ready, and her panel debrief: move her to onsite, three of four interviewers say yes, four signal bars with systems thinking as the soft spot, one question to ask in the onsite, and the first two scorecards. Sample data.",
   "captionVars": {
     "domain": "hiring",
     "ui": "debrief panel",
@@ -104,19 +104,19 @@
     "hiring"
   ],
   "preflight": {
-    "ran": "2026-10-22T18:43:52.865Z",
+    "ran": "2026-10-22T19:05:33.577Z",
     "fail": 0,
     "warn": 4,
     "results": [
       {
         "label": "closeup",
-        "route": "#/xframe?src=panelry&x=945&y=16",
-        "size": "431x462",
-        "pass": 19,
+        "route": "#/xframe?src=panelry&x=610&y=16",
+        "size": "766x794",
+        "pass": 20,
         "warn": 4,
         "fail": 0,
         "report": "preflight/1-closeup.md",
-        "ran": "2026-10-22T18:43:52.857Z"
+        "ran": "2026-10-22T19:05:33.571Z"
       }
     ]
   }

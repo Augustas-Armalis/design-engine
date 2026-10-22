@@ -7,8 +7,8 @@
 // Sample data: invented company, people and numbers.
 import type { CSSProperties, ReactNode } from 'react'
 import {
-  House, Briefcase, UsersThree, CalendarCheck, Handshake, ChartBar, Gear, MagnifyingGlass, Funnel, Sparkle, ArrowRight, Check,
-  CaretDown, CaretUp, DotsThree, X, ArrowsOutSimple, ShareNetwork, Rows, SquaresFour, ArrowUpRight, Paperclip, Clock, ChatCircleText,
+  House, Briefcase, UsersThree, CalendarCheck, Handshake, ChartBar, Gear, MagnifyingGlass, Sparkle, ArrowRight, Check,
+  CaretDown, CaretUp, DotsThree, X, ArrowsOutSimple, Rows, SquaresFour,
 } from '@phosphor-icons/react'
 
 export const APP_W = 1280, APP_H = 820
@@ -33,7 +33,7 @@ const TINT: Record<string, [string, string]> = {
 const Av = ({ i, s = 24 }: { i: string; s?: number }) => (
   <span className="round" style={{ width: s, height: s, borderRadius: 999, background: TINT[i][0], color: TINT[i][1], boxShadow: '0 0 0 1.5px #fff', display: 'grid', placeItems: 'center', fontSize: Math.max(10, s * 0.38), fontWeight: 500, letterSpacing: '-0.01em', flex: 'none' }}>{i}</span>
 )
-const Stack = ({ ids, s = 22 }: { ids: string[]; s?: number }) => <span style={{ ...row }}>{ids.map((i, k) => <span key={i} style={{ marginLeft: k ? -Math.round(s * 0.2) : 0, display: 'flex' }}><Av i={i} s={s} /></span>)}</span>
+const Stack = ({ ids, s = 22 }: { ids: string[]; s?: number }) => <span style={{ ...row }}>{ids.map((i, k) => <span key={i} style={{ marginLeft: k ? -Math.round(s * 0.08) : 0, display: 'flex' }}><Av i={i} s={s} /></span>)}</span>
 
 // the mark: two panels, the front one cut on a diagonal where it overlaps the back one (drawn, white on the ink tile)
 const Mark = ({ size = 14 }: { size?: number }) => (
@@ -124,7 +124,7 @@ function Table() {
             <span style={{ width: COLS[3], flex: 'none', padding: '0 10px', boxSizing: 'border-box', display: 'flex' }}><Score v={score} /></span>
             <span style={{ width: COLS[4], flex: 'none', padding: '0 10px', boxSizing: 'border-box', fontSize: 13, color: T.sub }}>{src}</span>
             <span style={{ width: COLS[5], flex: 'none', padding: '0 10px', boxSizing: 'border-box', display: 'flex', flexDirection: 'column' }}>
-              <span style={{ ...row, gap: 5, fontSize: 13, fontWeight: sel ? 500 : 400, color: sel ? T.oInk : T.ink, lineHeight: '18px', whiteSpace: 'nowrap' }}>{sel && <Sparkle size={12} weight="fill" />}{next}</span>
+              <span style={{ ...row, gap: 5, fontSize: 13, fontWeight: sel ? 500 : 400, color: sel ? T.oInk : T.ink, lineHeight: '18px', whiteSpace: 'nowrap' }}>{next}</span>
               <span style={{ fontSize: 12, color: T.mute, lineHeight: '16px', whiteSpace: 'nowrap', ...tnum }}>{when}</span>
             </span>
             <span style={{ width: COLS[6], flex: 'none', display: 'flex', justifyContent: 'center' }}><Av i={owner} s={22} /></span>
@@ -164,14 +164,18 @@ function Pipeline() {
       <div style={{ ...row, height: 56, gap: 8, fontSize: 13, color: T.mute }}>
         <span>Jobs</span><span style={{ color: T.faint }}>/</span><span style={{ color: T.ink, fontWeight: 500 }}>Senior Product Designer</span>
         <span style={{ marginLeft: 'auto', ...row, gap: 10 }}>
-          <Stack ids={['IM', 'MB', 'DC', 'FH']} s={24} />
-          <span style={{ ...row, gap: 6, height: 32, padding: '0 12px 0 10px', borderRadius: 12, fontSize: 13, fontWeight: 500, ...stroke, paddingBottom: 0 }}><ShareNetwork size={15} />Share</span>
+          <Stack ids={['IM', 'MB', 'DC', 'FH']} s={26} />
+          <span style={{ ...row, height: 32, padding: '0 12px', borderRadius: 12, fontSize: 13, fontWeight: 500, ...stroke, paddingBottom: 0 }}>Share</span>
           <span style={{ display: 'grid', placeItems: 'center', width: 32, height: 32, borderRadius: 12, ...stroke, paddingBottom: 0, color: T.sub }} role="img" aria-label="More"><DotsThree size={18} weight="bold" /></span>
         </span>
       </div>
       <div style={{ ...row, gap: 10, marginTop: 4 }}>
         <h1 style={{ margin: 0, fontSize: 20, lineHeight: '26px', fontWeight: 600, letterSpacing: '-0.02em' }}>Senior Product Designer</h1>
         <span style={{ ...row, gap: 6, height: 24, padding: '0 9px 0 8px', borderRadius: 9, background: T.greenFill, boxShadow: `inset 0 0 0 1px ${T.greenRing}`, color: T.green, fontSize: 12, fontWeight: 500, ...OPTICAL }}><span className="round" style={{ width: 6, height: 6, borderRadius: 99, background: T.green }} />Open · day 18</span>
+        <span style={{ marginLeft: 'auto', display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: 6 }}>
+          <span style={{ fontSize: 12.5, color: T.mute, ...tnum }}><b style={{ color: T.ink, fontWeight: 500 }}>1 of 2 hired</b> · goal by 30 Nov</span>
+          <span style={{ position: 'relative', width: 148, height: 4, borderRadius: 99, background: T.hair }}><span style={{ position: 'absolute', left: 0, top: 0, bottom: 0, width: '50%', borderRadius: 99, background: T.ink }} /></span>
+        </span>
       </div>
       <div style={{ fontSize: 12.5, color: T.mute, marginTop: 4 }}>Design · Remote, EU · Hiring manager Ines Moreau · Orchard Health</div>
       <div style={{ marginTop: 16 }}><FunnelStrip /></div>
@@ -181,8 +185,8 @@ function Pipeline() {
             <span key={l} style={{ ...row, gap: 6, height: 28, padding: '0 11px', borderRadius: 11, fontSize: 13, fontWeight: 500, color: l === 'All' ? T.ink : T.mute, background: l === 'All' ? '#fff' : 'transparent', boxShadow: l === 'All' ? `0 0 0 1px ${T.line}, 0 1px 2px rgba(14,18,27,0.06)` : 'none' }}>{l}<span style={{ fontSize: 12, color: T.mute, fontWeight: 400, ...tnum }}>{n}</span></span>
           ))}
         </div>
-        <span style={{ marginLeft: 'auto', ...row, gap: 8, width: 196, height: 32, padding: '0 10px', boxSizing: 'border-box', borderRadius: 12, background: '#fff', boxShadow: RING, fontSize: 13, color: T.mute }}><MagnifyingGlass size={15} />Search candidates</span>
-        <span style={{ ...row, gap: 6, height: 32, padding: '0 12px 0 10px', borderRadius: 12, fontSize: 13, fontWeight: 500, ...stroke, paddingBottom: 0 }}><Funnel size={15} />Filter</span>
+        <span style={{ marginLeft: 'auto', ...row, gap: 8, width: 168, height: 32, padding: '0 10px', boxSizing: 'border-box', borderRadius: 12, background: '#fff', boxShadow: RING, fontSize: 13, color: T.mute }}><MagnifyingGlass size={15} />Search candidates</span>
+        <span style={{ ...row, height: 32, padding: '0 12px', borderRadius: 12, fontSize: 13, fontWeight: 500, ...stroke, paddingBottom: 0 }}>Filter</span>
         <span style={{ ...row, height: 32, padding: 2, boxSizing: 'border-box', borderRadius: 12, background: T.weak, boxShadow: RING }}>
           <span style={{ display: 'grid', placeItems: 'center', width: 28, height: 28, borderRadius: 10, background: '#fff', boxShadow: `0 0 0 1px ${T.line}, 0 1px 2px rgba(14,18,27,0.06)` }} role="img" aria-label="Table view"><Rows size={15} /></span>
           <span style={{ display: 'grid', placeItems: 'center', width: 28, height: 28, borderRadius: 10, color: T.mute }} role="img" aria-label="Board view"><SquaresFour size={15} /></span>
@@ -223,8 +227,8 @@ function Drawer() {
         </span>
       </div>
       <div style={{ ...row, gap: 6, marginTop: 12 }}>
-        {([[<Handshake size={13} />, 'Referral · Ade'], [<Paperclip size={13} />, 'Portfolio'], [<Clock size={13} />, 'Notice 1 month']] as const).map(([ic, l]) => (
-          <span key={l} style={{ ...row, gap: 5, height: 24, padding: '0 8px', borderRadius: 9, background: T.weak, boxShadow: RING, fontSize: 12, color: T.sub, whiteSpace: 'nowrap', ...OPTICAL }}>{ic}{l}{l === 'Portfolio' && <ArrowUpRight size={11} />}</span>
+        {['Referral · Ade', 'Portfolio', 'Notice 1 month'].map((l) => (
+          <span key={l} style={{ ...row, height: 24, padding: '0 9px', borderRadius: 9, background: T.weak, boxShadow: RING, fontSize: 12, color: T.sub, whiteSpace: 'nowrap', ...OPTICAL }}>{l}</span>
         ))}
       </div>
       <div style={{ ...row, gap: 18, marginTop: 12, height: 34, boxShadow: `inset 0 -1px 0 ${T.line}`, fontSize: 13, color: T.mute }}>
@@ -264,7 +268,7 @@ function Drawer() {
             })}
           </div>
           <div style={{ marginTop: 14, borderRadius: 12, background: T.weak, boxShadow: RING, padding: '10px 12px' }}>
-            <div style={{ ...row, gap: 6, fontSize: 12, fontWeight: 500, color: T.mute }}><ChatCircleText size={13} />Ask in the onsite</div>
+            <div style={{ fontSize: 12, fontWeight: 500, color: T.mute }}>Ask in the onsite</div>
             <div style={{ fontSize: 13, lineHeight: '19px', marginTop: 4, textWrap: 'balance' }}>How would you grow the library past one product?</div>
             <div style={{ ...row, gap: 5, marginTop: 7, fontSize: 11.5, color: T.mute }}><Av i="DC" s={16} />From Dana's systems notes</div>
           </div>
@@ -288,7 +292,7 @@ function Drawer() {
 
       <div style={{ ...row, gap: 8, marginTop: 'auto', paddingTop: 12 }}>
         <span style={{ ...row, gap: 7, height: 38, padding: '0 16px 0 18px', borderRadius: 14, fontSize: 14, fontWeight: 500, ...ink }}>Move to onsite<ArrowRight size={15} /></span>
-        <span style={{ ...row, gap: 6, height: 38, padding: '0 14px', borderRadius: 14, fontSize: 14, fontWeight: 500, ...stroke }}><CalendarCheck size={15} />Schedule</span>
+        <span style={{ ...row, height: 38, padding: '0 16px', borderRadius: 14, fontSize: 14, fontWeight: 500, ...stroke }}>Schedule</span>
         <span style={{ marginLeft: 'auto', display: 'grid', placeItems: 'center', width: 38, height: 38, borderRadius: 14, ...stroke, paddingBottom: 0, color: T.sub }} role="img" aria-label="More actions"><DotsThree size={18} weight="bold" /></span>
       </div>
     </aside>

@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // "Designs for the day": plans 3-5 X posts across the four founder accounts from the asset library and what already went out.
 //
-//   node tools/x_plan.mjs plan --date 2026-10-23 [--count 4] [--label "sample day 1"]
+//   node tools/x_plan.mjs plan --date 2026-10-23 [--count 4] [--label "sample day 1"] [--assume-planned]
 //       picks the day's posts (open series first, then the rotation), assigns account + Vilnius slot, drafts each caption in
 //       that account's voice, checks it, and writes library/x-days/<date>/plan.json, plan.md and x-handoff.json
 //   node tools/x_plan.mjs sheet --date 2026-10-23     renders library/x-days/<date>/day.png: every post at X's 514px feed
@@ -56,7 +56,9 @@ const slots = slotTimes.map((t) => {
 }).filter((s) => s.accounts.length)
 const S = cadence.series || {}
 const gapOf = (prev, stage) => ({ 'closeup>full': S.closeupToFullDays, 'full>strips': S.fullToStripsDays, 'strips>motion': S.stillToMotionQuoteDays, 'hero>motion': S.stillToMotionQuoteDays, 'section>closeup': S.closeupToFullDays })[`${prev}>${stage}`] || rotation.series.gapsDays[stage] || [1, 3]
-const maxShowings = S.maxShowingsPerAsset ?? 3, maxParallel = S.projectSeries?.maxParallel ?? 2
+const maxShowings = S.maxShowingsPerAsset ?? 3
+// projects in series at once: the study's 2, or more when the scheduled accounts post more a day (Rokas: 3 a day, 3 projects)
+const maxParallel = Math.max(S.projectSeries?.maxParallel ?? 2, accounts.filter((a) => a.scheduled !== false).reduce((n, a) => n + (a.maxPerDay ?? 1), 0))
 const mult = (key) => cadence.formatMultipliers?.[key] ?? 1
 const subj = (s) => cadence.subjectMultipliers?.[s] ?? 1
 
@@ -124,7 +126,12 @@ function plan() {
   const capacity = scheduled.reduce((n, a) => n + maxFor(a.handle), 0)
   const target = Math.min(capacity, Math.max(D.min, Math.min(D.max, +flag('count', D.default ?? 4))))
 
-  const before = posted.filter((p) => p.date < date)
+  // --assume-planned: days already planned (not posted yet) count as going out, so a plan can run several days ahead
+  const planned = rest.includes('--assume-planned')
+    ? fs.readdirSync(path.join(root, 'library/x-days')).filter((d) => /^\d{4}-\d{2}-\d{2}$/.test(d) && d < date).flatMap((d) => { const p = rj(`library/x-days/${d}/plan.json`); return p && !p.label ? p.posts.map((x) => ({ postId: x.postId, date: d, time: x.time, account: x.account, assetId: x.assetId, project: x.project, format: x.format, series: x.series && { id: x.series.id, stage: x.series.stage }, caption: x.caption, planned: true })) : [] }).filter((x) => !posted.some((y) => y.postId === x.postId))
+    : []
+  if (planned.length) notes.push(`assumed going out (planned, not yet in posted.json): ${planned.map((x) => `${x.date} ${x.assetId}`).join(', ')}`)
+  const before = [...posted, ...planned].filter((p) => p.date < date)
   const cands = [], toMake = [], skipped = []
 
   // 1. open and new series, per project (XS-15..17)
@@ -249,7 +256,10 @@ function plan() {
       media, alt: c.m.alt, series: c.series && { id: c.series.id, stage: c.series.stage, step: c.series.index, of: c.series.of }, relation: c.relation, quotes: c.series?.prevPost?.postId || null,
       caption, captionSource: src, reply, replyAfterMinutes: [30, 150], captionFindings: findings, score: c.score, why: c.why,
       preflight: c.m.preflight ? { fail: c.m.preflight.fail, warn: c.m.preflight.warn, reports: c.m.preflight.results.map((r) => path.join(c.a.dir, r.report)) } : null,
-      approval: { state: label ? 'draft' : c.a.status === 'accepted' ? 'ready' : 'hold', designVerdict: c.a.status === 'accepted' ? 'accepted' : c.a.verdict === 'partial' ? 'partial' : 'none', requireConfirm: true },
+      // auto-approve accounts (founder 2026-10-22 for @rokasrem) go out ready, without the Telegram confirm; sample days stay drafts
+      approval: label ? { state: 'draft', designVerdict: c.a.status === 'accepted' ? 'accepted' : 'none', requireConfirm: true }
+        : acct(account)?.autoApprove ? { state: 'ready', designVerdict: c.a.status === 'accepted' ? 'accepted' : 'none', approvedBy: 'augustas (auto-approve for this account, 2026-10-22)', requireConfirm: false }
+        : { state: c.a.status === 'accepted' ? 'ready' : 'hold', designVerdict: c.a.status === 'accepted' ? 'accepted' : c.a.verdict === 'partial' ? 'partial' : 'none', requireConfirm: true },
     }
   })
   for (let i = 0; i < items.length; i++) for (let j = i + 1; j < items.length; j++) {
@@ -316,7 +326,7 @@ function planMd(p) {
       `- **Caption** (${x.captionSource}): "${x.caption}"`, `- **First reply** (${x.replyAfterMinutes.join('-')} min later): "${x.reply}"`,
       x.quotes ? `- **Quotes:** ${x.quotes} (the previous step of the series, XS-16)` : `- **Quotes:** none (${x.series ? 'series start' : 'standalone'})`,
       `- **Why this, why now:** ${x.why}`,
-      `- **Verdict:** ${x.status}${x.verdict ? ` (last: ${x.verdict})` : ''}; approval \`${x.approval.state}\`, Telegram confirm required`,
+      `- **Verdict:** ${x.status}${x.verdict ? ` (last: ${x.verdict})` : ''}; approval \`${x.approval.state}\`${x.approval.requireConfirm ? ', Telegram confirm required' : ', auto-approved (no Telegram confirm)'}`,
       `- **Preflight:** ${x.preflight ? `${x.preflight.fail} FAIL, ${x.preflight.warn} WARN (${x.preflight.reports.map((r) => `\`${r}\``).join(', ')})` : 'not run'}`, '')
   }
   for (const m of p.manual || []) {

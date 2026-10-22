@@ -1,9 +1,17 @@
 # For the X engine dev (Rokas): what changed on 2026-10-22
 
+## Do now (on your Mac, in `larpo-x-engine`)
+Augustas asked for every old X-engine design queued on @rokasrem to go ("they're trash") and for 3 new posts a day, auto-approved:
+1. `npm run status`: lists the open slots and the scheduled posts.
+2. `npm run withdraw -- <postId>` for each queued post (or the Telegram withdraw button); delete anything left in your Buffer queue for that channel.
+3. `npm run uninstall`: removes the hourly job, so the engine stops generating its own designs (your config stays).
+4. `npm run init -- --non-interactive --set approval=auto --set post-times=09:30,15:30,21:30` once the importer below exists, then send Augustas your profile id.
+Until the importer exists, the day's posts are in `library/x-days/<date>/plan.md` with their images and captions.
+
 ## What happened
 - Augustas reviewed the posts the X engine generated on the co-founder accounts (the auto-made concept heroes and their titles: "landing page concept for ...", "a or b? same hero, different color field", "... light or dark?"). Verdict: "they were stupid as fuck and shall never be like that... plus the entire title writing of the post and format... it's all ass". The design engine is told never to study or imitate them (ledger `x-engine-posts` r1).
 - From now on the **design engine designs the posts**. Your engine keeps what it does well: Telegram approval, Buffer scheduling, media hosting, metrics.
-- @augustasdesign is **never scheduled**: he posts by hand. **@rokasrem gets one post a day** (16:00 Vilnius), always a design never posted anywhere. A daily scheduled run designs it, checks it, and pushes it to the design-engine repo.
+- @augustasdesign is **never scheduled**: he posts by hand. **@rokasrem gets three posts a day** (09:30, 15:30, 21:30 Vilnius, auto-approved, `requireConfirm: false`), always designs never posted anywhere. A daily scheduled run designs it, checks it, and pushes it to the design-engine repo.
 
 ## What the design engine produces each day
 `library/x-days/<YYYY-MM-DD>/` in `Augustas-Armalis/design-engine`:

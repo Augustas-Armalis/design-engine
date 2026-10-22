@@ -3,55 +3,55 @@
   "date": "2026-10-23",
   "weekday": "Friday",
   "timezone": "Europe/Vilnius",
-  "label": "sample day 1",
-  "status": "sample day 1, awaiting founder verdict",
-  "generated": "2026-10-22T18:46:27.005Z",
-  "engine": "1c8bed0",
-  "target": 1,
+  "label": null,
+  "status": "planned, awaiting founder approval",
+  "generated": "2026-10-22T19:19:23.109Z",
+  "engine": "6256a97",
+  "target": 3,
   "posts": [
     {
       "n": 1,
-      "postId": "rokasrem-2026-10-23-1600",
+      "postId": "rokasrem-2026-10-23-0930",
       "account": "rokasrem",
       "platform": "x",
-      "time": "16:00",
-      "scheduledAt": "2026-10-23T16:00:00+03:00",
-      "et": "09:00",
-      "slotRole": "co-founder",
+      "time": "09:30",
+      "scheduledAt": "2026-10-23T09:30:00+03:00",
+      "et": "02:30",
+      "slotRole": "account slot",
       "optional": false,
-      "assetId": "panelry-debrief-closeup",
+      "assetId": "panelry-product-pipeline",
       "project": "panelry",
-      "title": "Panelry panel debrief, close: four scorecards, one call",
+      "title": "Panelry job view: pipeline table and the candidate debrief, full and in thirds",
       "kind": "product-ui",
       "status": "awaiting-verdict",
       "verdict": null,
-      "format": "dashboard-closeup",
+      "format": "dashboard-full",
       "family": "product",
       "xEngineFormat": "single-still",
-      "size": "2241x2402",
-      "feed": "single portrait at native 5:6, 514x617",
-      "crop": "tr corner of #/panelry at [945, 16, 431, 462] (x, y, w, h), insets top 40px, right 40px; left and bottom edges in gutters (tools/library.mjs snap moved 0px): the left edge runs just inside the drawer, the bottom in the gap under the four signal bars (471-485 after the r1b drawer fix), so the debrief card bleeds off the bottom",
+      "size": "3840x2571",
+      "feed": "single landscape at native 3:2, 514x343",
+      "crop": "equal canvas margin on all four sides (56px at 1x on cprodb)",
       "media": [
         {
-          "path": "library/panelry/debrief-closeup/renders/closeup.png",
-          "w": 2241,
-          "h": 2402,
-          "bytes": 396073,
-          "sha256": "403018f9a7ef16dc8ce726bb6db7e558fcc6596f71710b3ec942edfbab3d3015",
-          "role": "single",
+          "path": "library/panelry/product-pipeline/renders/full.png",
+          "w": 3840,
+          "h": 2571,
+          "bytes": 960760,
+          "sha256": "92b1f8dddea3616b0484cd5c0e3ca156695b1da815ca2177174719857d83261c",
+          "role": "full",
           "name": "post-1.png"
         }
       ],
-      "alt": "Close up of a candidate panel in a fictional hiring tool: Hana Kowalczyk, product designer, and a panel debrief that reads move her to onsite, three of four interviewers say yes, with four signal bars: craft 4.6, communication 4.5, product sense 4.3 and systems thinking 3.4 marked as the soft spot. Sample data, concept.",
+      "alt": "Product screen of Panelry, a fictional hiring tool: an icon rail, a job pipeline with a five stage funnel and a table of nine candidates with stages and scores, and a candidate panel that sums four interview scorecards into one call, move to onsite, with one open question. Sample data, concept.",
       "series": {
         "id": "panelry-pipeline",
-        "stage": "closeup",
+        "stage": "full",
         "step": 1,
         "of": 4
       },
       "relation": "first",
       "quotes": null,
-      "caption": "hiring tools should sum up the interview panel like this",
+      "caption": "the whole hiring pipeline on one screen",
       "captionSource": "caption.md",
       "reply": "concept work for a hiring app. made at larpo.studio",
       "replyAfterMinutes": [
@@ -59,19 +59,152 @@
         150
       ],
       "captionFindings": [],
-      "score": 1.369,
-      "why": "awaiting-verdict 0.75 x single-portrait 0.92 x sqrt(crm-table 3.12) + 0.15 (series panelry-pipeline step 1/4)",
+      "score": 1.448,
+      "why": "awaiting-verdict 0.75 x single-landscape 0.98 x sqrt(crm-table 3.12) + 0.15 (series panelry-pipeline step 1/4)",
+      "preflight": {
+        "fail": 0,
+        "warn": 7,
+        "reports": [
+          "library/panelry/product-pipeline/preflight/1-full-and-strips.md"
+        ]
+      },
+      "approval": {
+        "state": "ready",
+        "designVerdict": "none",
+        "approvedBy": "augustas (auto-approve for this account, 2026-10-22)",
+        "requireConfirm": false
+      }
+    },
+    {
+      "n": 2,
+      "postId": "rokasrem-2026-10-23-1530",
+      "account": "rokasrem",
+      "platform": "x",
+      "time": "15:30",
+      "scheduledAt": "2026-10-23T15:30:00+03:00",
+      "et": "08:30",
+      "slotRole": "account slot",
+      "optional": false,
+      "assetId": "requa-review-closeup",
+      "project": "requa",
+      "title": "Requa request review, close: three checks, the budget, the chain",
+      "kind": "product-ui",
+      "status": "awaiting-verdict",
+      "verdict": null,
+      "format": "dashboard-closeup",
+      "family": "product",
+      "xEngineFormat": "single-still",
+      "size": "2403x2493",
+      "feed": "single at native ratio, 514 wide",
+      "crop": "tr corner of #/requa at [625, 16, 751, 779] (x, y, w, h), insets top 40px, right 40px; a region (59% of the window, ratio 0.96): the left edge just past the inbox divider, the bottom under the notes and above the buttons, so only the window bleeds",
+      "media": [
+        {
+          "path": "library/requa/review-closeup/renders/closeup.png",
+          "w": 2403,
+          "h": 2493,
+          "bytes": 407999,
+          "sha256": "3213792c75c57632825b9ce6bdff692a4287efd3a4ec89675bb39393f126148e",
+          "role": "single",
+          "name": "post-1.png"
+        }
+      ],
+      "alt": "Close up of a purchase request in a fictional approvals tool: twelve ergonomic chairs for €4,680, three automated checks (within budget, vendor on contract, a similar order in July), the Q4 office budget bar with this request highlighted, the approval chain with the team lead done and finance next, and two notes. Sample data, concept.",
+      "series": {
+        "id": "requa-app",
+        "stage": "closeup",
+        "step": 1,
+        "of": 4
+      },
+      "relation": "first",
+      "quotes": null,
+      "caption": "three checks before anyone clicks approve",
+      "captionSource": "caption.md",
+      "reply": "concept work for a spend app. made at larpo.studio",
+      "replyAfterMinutes": [
+        30,
+        150
+      ],
+      "captionFindings": [],
+      "score": 1.438,
+      "why": "awaiting-verdict 0.75 x single-portrait 0.92 x sqrt(dashboard 2.05) + 0.45 (series requa-app step 1/4), project in series (XS-17 focus)",
       "preflight": {
         "fail": 0,
         "warn": 4,
         "reports": [
-          "library/panelry/debrief-closeup/preflight/1-closeup.md"
+          "library/requa/review-closeup/preflight/1-closeup.md"
         ]
       },
       "approval": {
-        "state": "draft",
+        "state": "ready",
         "designVerdict": "none",
-        "requireConfirm": true
+        "approvedBy": "augustas (auto-approve for this account, 2026-10-22)",
+        "requireConfirm": false
+      }
+    },
+    {
+      "n": 3,
+      "postId": "rokasrem-2026-10-23-2130",
+      "account": "rokasrem",
+      "platform": "x",
+      "time": "21:30",
+      "scheduledAt": "2026-10-23T21:30:00+03:00",
+      "et": "14:30",
+      "slotRole": "account slot",
+      "optional": false,
+      "assetId": "requa-hero",
+      "project": "requa",
+      "title": "Requa split hero: spend, approved before noon",
+      "kind": "hero-light",
+      "status": "awaiting-verdict",
+      "verdict": null,
+      "format": "hero-still",
+      "family": "hero",
+      "xEngineFormat": "single-still",
+      "size": "3840x2400",
+      "feed": "single landscape at native 16:10, full width 514x321",
+      "crop": "the whole 1440x900 fold; the fold already ends on a progressive blur or a deliberate cut (fold.end)",
+      "media": [
+        {
+          "path": "library/requa/hero/renders/hero.png",
+          "w": 3840,
+          "h": 2400,
+          "bytes": 789614,
+          "sha256": "15306534db0f6c52ecf3fdc58f61856acb12f5c27598a9258b5b3993a591ea52",
+          "role": "single",
+          "name": "post-1.png"
+        }
+      ],
+      "alt": "Landing page hero for Requa, a fictional purchase approvals tool: a two line title, spend approved before noon, a short subtitle, a dark start button and a white demo button, a new request being written, and the app on a soft blue stage showing a request for twelve chairs with three automated checks and its budget. Sample data, concept.",
+      "series": {
+        "id": "requa-site",
+        "stage": "hero",
+        "step": 1,
+        "of": 2
+      },
+      "relation": "first",
+      "quotes": null,
+      "caption": "approval software should feel this calm",
+      "captionSource": "caption.md",
+      "reply": "concept work for a spend app. made at larpo.studio",
+      "replyAfterMinutes": [
+        30,
+        150
+      ],
+      "captionFindings": [],
+      "score": 1.258,
+      "why": "awaiting-verdict 0.75 x single-landscape 0.98 x sqrt(hero 1.21) + 0.45 (series requa-site step 1/2), project in series (XS-17 focus)",
+      "preflight": {
+        "fail": 0,
+        "warn": 5,
+        "reports": [
+          "library/requa/hero/preflight/1-hero.md"
+        ]
+      },
+      "approval": {
+        "state": "ready",
+        "designVerdict": "none",
+        "approvedBy": "augustas (auto-approve for this account, 2026-10-22)",
+        "requireConfirm": false
       }
     }
   ],
@@ -251,15 +384,29 @@
   "skipped": [],
   "notes": [
     "daily volume from knowledge/x/cadence.json: 3-5 posts, <= 2 on @augustasdesign, <= 1 per co-founder, >= 6 h apart on one account (XS-01, XS-02)",
-    "scheduled accounts: @rokasrem (<= 1/day, never-posted designs only); by hand only: @augustasdesign (system/x/accounts.json)",
+    "scheduled accounts: @rokasrem (<= 3/day, never-posted designs only); by hand only: @augustasdesign (system/x/accounts.json)",
     "captions also pass the X engine's own checkCaption (~/dev/larpo-x-engine/shared/gate.mjs), the check its Worker runs before Buffer"
   ],
   "candidates": [
     {
-      "asset": "panelry-debrief-closeup",
+      "asset": "panelry-product-pipeline",
+      "format": "dashboard-full",
+      "relation": "first",
+      "score": 1.448,
+      "picked": true
+    },
+    {
+      "asset": "requa-review-closeup",
       "format": "dashboard-closeup",
       "relation": "first",
-      "score": 1.369,
+      "score": 1.438,
+      "picked": true
+    },
+    {
+      "asset": "requa-hero",
+      "format": "hero-still",
+      "relation": "first",
+      "score": 1.258,
       "picked": true
     }
   ]

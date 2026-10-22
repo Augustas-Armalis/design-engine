@@ -32,6 +32,11 @@ Decided defaults, 2026-10-21. Evidence: `founder-taste L<n>`, the accepted Tande
 | Type and edges | one family (Inter display cut), one edge per box, <= 3 shadow recipes, concentric radii, squircles | L373, L452, L467 |
 | Motion | a still by default. When the founder asks for motion: an 8-12s loop of one complete state cycle at 60fps, first frame = money frame, recorded with `tools/record.mjs` (4K60 + `--preset x`) | L512; L509, L343; XP-02, XP-03 |
 
+### Close-ups of a product screen (founder 2026-10-22, ledger `x-closeups` r1: "some are too close and cuts not nicely")
+- Show a region, not a detail: the crop is 50-60% of the window's width (about 700-800 CSS px of a 1280 window), ratio 0.85-1.3, so the decision moment reads with its context; never a single panel at 2x+.
+- Cut only in gutters that run through the whole crop: between table columns and funnel cells, between cards, between rows. No edge crosses text, a chip, a control or a small card (`tools/library.mjs snap`; preflight `edge.small-cut`, `fold.end`, gate `crop.text-crossing`). Move a layout element by a few px in the source when that makes a clean gutter.
+- Equal canvas insets on the anchored corner, the window bleeding off the other two edges (cadence-xpost r1).
+
 ### Product-screen formats (Marcel, measured; KC-21, KC-22, KC-26)
 - **Desktop composite** (43.2k median views):
   - 4096x2660 canvas with the menu bar and dock;

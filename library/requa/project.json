@@ -1,0 +1,47 @@
+{
+  "schema": "design-engine.library-project/v1",
+  "id": "requa",
+  "name": "Requa",
+  "fictional": true,
+  "owner": "rokasrem",
+  "about": "Fictional purchase-approvals tool (invented name, drawn check-in-quarter-round mark, sample company Fieldhouse Co., invented vendors and people). Second project of @rokasrem's batch (founder 2026-10-22: 'replace with new batch of latest and best').",
+  "app": "work/replicas/app",
+  "conceptNames": [
+    "Requa",
+    "Fieldhouse Co.",
+    "Seatwell",
+    "Pixelbay"
+  ],
+  "series": [
+    {
+      "id": "requa-site",
+      "title": "the Requa landing hero, then its load-in",
+      "stages": [
+        "hero",
+        "motion"
+      ],
+      "assets": {
+        "hero": "requa-hero",
+        "motion": null
+      },
+      "motionToMake": "a load-in of #/requahero once motion is asked for"
+    },
+    {
+      "id": "requa-app",
+      "title": "the Requa approval review: a region close, the whole app, in thirds",
+      "stages": [
+        "closeup",
+        "full",
+        "strips",
+        "motion"
+      ],
+      "assets": {
+        "closeup": "requa-review-closeup",
+        "full": "requa-product-approvals",
+        "strips": "requa-product-approvals",
+        "motion": null
+      },
+      "motionToMake": "a load-in of #/requa once motion is asked for"
+    }
+  ]
+}

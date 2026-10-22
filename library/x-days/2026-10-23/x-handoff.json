@@ -1,17 +1,17 @@
 {
   "schema": "larpo.x-handoff/v1",
-  "handoffId": "de-2026-10-23-sample",
-  "createdAt": "2026-10-22T18:46:27.005Z",
+  "handoffId": "de-2026-10-23-01",
+  "createdAt": "2026-10-22T19:19:23.109Z",
   "day": "2026-10-23",
   "timezone": "Europe/Vilnius",
   "producer": {
     "name": "design-engine",
-    "version": "1c8bed0",
+    "version": "6256a97",
     "operator": "augustas"
   },
   "assets": [
     {
-      "assetId": "panelry-debrief-closeup",
+      "assetId": "panelry-product-pipeline",
       "designFormat": "single-still",
       "kind": "product-ui",
       "conceptName": "Panelry, Orchard Health",
@@ -19,46 +19,147 @@
       "ledgerId": null,
       "gate": {
         "preflight": "pass",
-        "ranAt": "2026-10-22T18:43:52.865Z"
+        "ranAt": "2026-10-22T19:06:21.477Z"
       },
       "series": {
         "seriesId": "panelry-pipeline",
+        "label": "full",
+        "index": 1
+      },
+      "media": [
+        {
+          "path": "../../panelry/product-pipeline/renders/full.png",
+          "name": "post-1.png",
+          "mime": "image/png",
+          "width": 3840,
+          "height": 2571,
+          "bytes": 960760,
+          "sha256": "92b1f8dddea3616b0484cd5c0e3ca156695b1da815ca2177174719857d83261c",
+          "role": "single",
+          "altText": "Product screen of Panelry, a fictional hiring tool: an icon rail, a job pipeline with a five stage funnel and a table of nine candidates with stages and scores, and a candidate panel that sums four interview scorecards into one call, move to onsite, with one open question. Sample data, concept."
+        }
+      ]
+    },
+    {
+      "assetId": "requa-review-closeup",
+      "designFormat": "single-still",
+      "kind": "product-ui",
+      "conceptName": "Requa, Fieldhouse Co., Seatwell, Pixelbay",
+      "sample": true,
+      "ledgerId": null,
+      "gate": {
+        "preflight": "pass",
+        "ranAt": "2026-10-22T19:17:51.413Z"
+      },
+      "series": {
+        "seriesId": "requa-app",
         "label": "closeup",
         "index": 1
       },
       "media": [
         {
-          "path": "../../panelry/debrief-closeup/renders/closeup.png",
+          "path": "../../requa/review-closeup/renders/closeup.png",
           "name": "post-1.png",
           "mime": "image/png",
-          "width": 2241,
-          "height": 2402,
-          "bytes": 396073,
-          "sha256": "403018f9a7ef16dc8ce726bb6db7e558fcc6596f71710b3ec942edfbab3d3015",
+          "width": 2403,
+          "height": 2493,
+          "bytes": 407999,
+          "sha256": "3213792c75c57632825b9ce6bdff692a4287efd3a4ec89675bb39393f126148e",
           "role": "single",
-          "altText": "Close up of a candidate panel in a fictional hiring tool: Hana Kowalczyk, product designer, and a panel debrief that reads move her to onsite, three of four interviewers say yes, with four signal bars: craft 4.6, communication 4.5, product sense 4.3 and systems thinking 3.4 marked as the soft spot. Sample data, concept."
+          "altText": "Close up of a purchase request in a fictional approvals tool: twelve ergonomic chairs for €4,680, three automated checks (within budget, vendor on contract, a similar order in July), the Q4 office budget bar with this request highlighted, the approval chain with the team lead done and finance next, and two notes. Sample data, concept."
+        }
+      ]
+    },
+    {
+      "assetId": "requa-hero",
+      "designFormat": "single-still",
+      "kind": "hero-light",
+      "conceptName": "Requa, Fieldhouse Co., Seatwell, Pixelbay",
+      "sample": true,
+      "ledgerId": null,
+      "gate": {
+        "preflight": "pass",
+        "ranAt": "2026-10-22T19:17:20.275Z"
+      },
+      "series": {
+        "seriesId": "requa-site",
+        "label": "hero",
+        "index": 1
+      },
+      "media": [
+        {
+          "path": "../../requa/hero/renders/hero.png",
+          "name": "post-1.png",
+          "mime": "image/png",
+          "width": 3840,
+          "height": 2400,
+          "bytes": 789614,
+          "sha256": "15306534db0f6c52ecf3fdc58f61856acb12f5c27598a9258b5b3993a591ea52",
+          "role": "single",
+          "altText": "Landing page hero for Requa, a fictional purchase approvals tool: a two line title, spend approved before noon, a short subtitle, a dark start button and a white demo button, a new request being written, and the app on a soft blue stage showing a request for twelve chairs with three automated checks and its budget. Sample data, concept."
         }
       ]
     }
   ],
   "posts": [
     {
-      "postId": "rokasrem-2026-10-23-1600",
-      "assetId": "panelry-debrief-closeup",
+      "postId": "rokasrem-2026-10-23-0930",
+      "assetId": "panelry-product-pipeline",
       "account": {
         "profileId": "rokas",
         "handle": "rokasrem",
         "channelId": null
       },
       "platform": "x",
-      "scheduledAt": "2026-10-23T16:00:00+03:00",
-      "caption": "hiring tools should sum up the interview panel like this",
+      "scheduledAt": "2026-10-23T09:30:00+03:00",
+      "caption": "the whole hiring pipeline on one screen",
       "reply": "concept work for a hiring app. made at larpo.studio",
       "quotesPostId": null,
       "approval": {
-        "state": "draft",
+        "state": "ready",
         "designVerdict": "none",
-        "requireConfirm": true
+        "approvedBy": "augustas (auto-approve for this account, 2026-10-22)",
+        "requireConfirm": false
+      }
+    },
+    {
+      "postId": "rokasrem-2026-10-23-1530",
+      "assetId": "requa-review-closeup",
+      "account": {
+        "profileId": "rokas",
+        "handle": "rokasrem",
+        "channelId": null
+      },
+      "platform": "x",
+      "scheduledAt": "2026-10-23T15:30:00+03:00",
+      "caption": "three checks before anyone clicks approve",
+      "reply": "concept work for a spend app. made at larpo.studio",
+      "quotesPostId": null,
+      "approval": {
+        "state": "ready",
+        "designVerdict": "none",
+        "approvedBy": "augustas (auto-approve for this account, 2026-10-22)",
+        "requireConfirm": false
+      }
+    },
+    {
+      "postId": "rokasrem-2026-10-23-2130",
+      "assetId": "requa-hero",
+      "account": {
+        "profileId": "rokas",
+        "handle": "rokasrem",
+        "channelId": null
+      },
+      "platform": "x",
+      "scheduledAt": "2026-10-23T21:30:00+03:00",
+      "caption": "approval software should feel this calm",
+      "reply": "concept work for a spend app. made at larpo.studio",
+      "quotesPostId": null,
+      "approval": {
+        "state": "ready",
+        "designVerdict": "none",
+        "approvedBy": "augustas (auto-approve for this account, 2026-10-22)",
+        "requireConfirm": false
       }
     }
   ]

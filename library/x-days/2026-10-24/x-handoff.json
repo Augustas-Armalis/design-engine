@@ -1,0 +1,116 @@
+{
+  "schema": "larpo.x-handoff/v1",
+  "handoffId": "de-2026-10-24-01",
+  "createdAt": "2026-10-22T19:19:23.167Z",
+  "day": "2026-10-24",
+  "timezone": "Europe/Vilnius",
+  "producer": {
+    "name": "design-engine",
+    "version": "6256a97",
+    "operator": "augustas"
+  },
+  "assets": [
+    {
+      "assetId": "panelry-debrief-closeup",
+      "designFormat": "single-still",
+      "kind": "product-ui",
+      "conceptName": "Panelry, Orchard Health",
+      "sample": true,
+      "ledgerId": null,
+      "gate": {
+        "preflight": "pass",
+        "ranAt": "2026-10-22T19:05:33.577Z"
+      },
+      "series": {
+        "seriesId": "panelry-pipeline",
+        "label": "closeup",
+        "index": 2
+      },
+      "media": [
+        {
+          "path": "../../panelry/debrief-closeup/renders/closeup.png",
+          "name": "post-1.png",
+          "mime": "image/png",
+          "width": 2413,
+          "height": 2501,
+          "bytes": 570246,
+          "sha256": "c4d49a2a29e7b450d908a2cfae01df8b59b3cb70c27e0e148ee63222ccdcd732",
+          "role": "single",
+          "altText": "Close up of a hiring tool's job view, a fictional concept: the right half of the candidate table with stages and next steps, Hana Kowalczyk's row selected with debrief ready, and her panel debrief: move her to onsite, three of four interviewers say yes, four signal bars with systems thinking as the soft spot, one question to ask in the onsite, and the first two scorecards. Sample data."
+        }
+      ]
+    },
+    {
+      "assetId": "requa-product-approvals",
+      "designFormat": "single-still",
+      "kind": "product-ui",
+      "conceptName": "Requa, Fieldhouse Co., Seatwell, Pixelbay",
+      "sample": true,
+      "ledgerId": null,
+      "gate": {
+        "preflight": "pass",
+        "ranAt": "2026-10-22T19:18:38.482Z"
+      },
+      "series": {
+        "seriesId": "requa-app",
+        "label": "full",
+        "index": 2
+      },
+      "media": [
+        {
+          "path": "../../requa/product-approvals/renders/full.png",
+          "name": "post-1.png",
+          "mime": "image/png",
+          "width": 3840,
+          "height": 2571,
+          "bytes": 803430,
+          "sha256": "9da41cde337b5adb273f4552acf01913a84ebf241bae24ace7b0e1b9cac705ff",
+          "role": "single",
+          "altText": "Product screen of Requa, a fictional purchase approvals tool: a sidebar with Q4 budgets, an inbox of nine purchase requests with amounts and statuses, and one request under review with automated checks, its budget, line items, the approval chain, notes and an approve button. Sample data, concept."
+        }
+      ]
+    }
+  ],
+  "posts": [
+    {
+      "postId": "rokasrem-2026-10-24-0930",
+      "assetId": "panelry-debrief-closeup",
+      "account": {
+        "profileId": "rokas",
+        "handle": "rokasrem",
+        "channelId": null
+      },
+      "platform": "x",
+      "scheduledAt": "2026-10-24T09:30:00+03:00",
+      "caption": "hiring tools should sum up the interview panel like this",
+      "reply": "concept work for a hiring app. made at larpo.studio",
+      "quotesPostId": "rokasrem-2026-10-23-0930",
+      "approval": {
+        "state": "ready",
+        "designVerdict": "none",
+        "approvedBy": "augustas (auto-approve for this account, 2026-10-22)",
+        "requireConfirm": false
+      }
+    },
+    {
+      "postId": "rokasrem-2026-10-24-1530",
+      "assetId": "requa-product-approvals",
+      "account": {
+        "profileId": "rokas",
+        "handle": "rokasrem",
+        "channelId": null
+      },
+      "platform": "x",
+      "scheduledAt": "2026-10-24T15:30:00+03:00",
+      "caption": "zoomed out: the whole approvals inbox behind the review",
+      "reply": "concept work for a spend app. made at larpo.studio",
+      "quotesPostId": "rokasrem-2026-10-23-1530",
+      "approval": {
+        "state": "ready",
+        "designVerdict": "none",
+        "approvedBy": "augustas (auto-approve for this account, 2026-10-22)",
+        "requireConfirm": false
+      }
+    }
+  ]
+}

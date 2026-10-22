@@ -1,0 +1,88 @@
+{
+  "schema": "larpo.x-handoff/v1",
+  "handoffId": "de-2026-10-25-01",
+  "createdAt": "2026-10-22T19:19:23.220Z",
+  "day": "2026-10-25",
+  "timezone": "Europe/Vilnius",
+  "producer": {
+    "name": "design-engine",
+    "version": "6256a97",
+    "operator": "augustas"
+  },
+  "assets": [
+    {
+      "assetId": "panelry-product-pipeline",
+      "designFormat": "strips-3",
+      "kind": "product-ui",
+      "conceptName": "Panelry, Orchard Health",
+      "sample": true,
+      "ledgerId": null,
+      "gate": {
+        "preflight": "pass",
+        "ranAt": "2026-10-22T19:06:21.477Z"
+      },
+      "series": {
+        "seriesId": "panelry-pipeline",
+        "label": "strips",
+        "index": 3
+      },
+      "media": [
+        {
+          "path": "../../panelry/product-pipeline/renders/strip-1.png",
+          "name": "post-1.png",
+          "mime": "image/png",
+          "width": 1280,
+          "height": 2571,
+          "bytes": 338225,
+          "sha256": "e1156384d7286ff4ac4b755eb9c06f2112fdb101d5c6e57d7a5465fd9bae1b37",
+          "role": "detail",
+          "altText": "Product screen of Panelry, a fictional hiring tool: an icon rail, a job pipeline with a five stage funnel and a table of nine candidates with stages and scores, and a candidate panel that sums four interview scorecards into one call, move to onsite, with one open question. Sample data, concept."
+        },
+        {
+          "path": "../../panelry/product-pipeline/renders/strip-2.png",
+          "name": "post-2.png",
+          "mime": "image/png",
+          "width": 1280,
+          "height": 2571,
+          "bytes": 263725,
+          "sha256": "5227ddf562484b16c218a9bd653ba66511b3a332db31e0456694eaeab2d37deb",
+          "role": "detail",
+          "altText": "Product screen of Panelry, a fictional hiring tool: an icon rail, a job pipeline with a five stage funnel and a table of nine candidates with stages and scores, and a candidate panel that sums four interview scorecards into one call, move to onsite, with one open question. Sample data, concept."
+        },
+        {
+          "path": "../../panelry/product-pipeline/renders/strip-3.png",
+          "name": "post-3.png",
+          "mime": "image/png",
+          "width": 1280,
+          "height": 2571,
+          "bytes": 328647,
+          "sha256": "c92dcf5a7403528e699d2b532a3b61ef81d05cf4faec8ae7b216a196cd85ee08",
+          "role": "detail",
+          "altText": "Product screen of Panelry, a fictional hiring tool: an icon rail, a job pipeline with a five stage funnel and a table of nine candidates with stages and scores, and a candidate panel that sums four interview scorecards into one call, move to onsite, with one open question. Sample data, concept."
+        }
+      ]
+    }
+  ],
+  "posts": [
+    {
+      "postId": "rokasrem-2026-10-25-0930",
+      "assetId": "panelry-product-pipeline",
+      "account": {
+        "profileId": "rokas",
+        "handle": "rokasrem",
+        "channelId": null
+      },
+      "platform": "x",
+      "scheduledAt": "2026-10-25T09:30:00+02:00",
+      "caption": "applicant tracking can look this considered",
+      "reply": "concept work for a hiring app. made at larpo.studio",
+      "quotesPostId": "rokasrem-2026-10-24-0930",
+      "approval": {
+        "state": "ready",
+        "designVerdict": "none",
+        "approvedBy": "augustas (auto-approve for this account, 2026-10-22)",
+        "requireConfirm": false
+      }
+    }
+  ]
+}
