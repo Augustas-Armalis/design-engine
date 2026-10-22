@@ -98,3 +98,11 @@ Decided, replacing the Kargul-sharp option as a default:
   - a chart tooltip sits outside the plot, and the active column is an opaque band over the gridlines;
   - selected fills are solid, never alpha over gridlines.
 - Floor: `work/cadence-app/product-align@2x.png` (`#/cproda`, r2, awaiting verdict).
+
+## Founder verdict 2026-10-22 (cproda r2, reject) and r3 floor
+"too information heavy and unpolished and not clear nor nicely styled... everything is a little mess". The six-block dashboard (KPI cards, timeline, decision tray, link card, chart, team table) inside a frame + bezel + panel is the failure. The default for our own product shots is now:
+- **One window:** one hairline and one soft drop. No grey bezels, no double frames.
+- **Three regions at most:** a quiet sidebar, ONE primary view, and one AI rail that answers one question and offers one action (ink).
+- **Numbers:** at most one slim joined strip of 3, never a row of KPI cards.
+- **Everything else** goes in overlays, never on the page.
+- Floor: `work/cadence-app/product-b@2x.png` (`#/cprodb`, r3, awaiting verdict).

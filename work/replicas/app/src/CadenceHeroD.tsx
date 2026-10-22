@@ -1,4 +1,5 @@
-// Tempra hero r6 (#/h4a). r2 verdict: rounder product, "the background visual needs better polishing", the violet bottom glow
+// Tempra hero r7 (#/h4a): r3 rejected the bezel and the busy product; the hero now holds the r3 product window alone.
+// r6 notes: r2 verdict: rounder product, "the background visual needs better polishing", the violet bottom glow
 // was "stupid and vibrant, either blur fade out or none", "nav bar ugly", "title too", the grid and chips were distracting,
 // "I liked the points or bubbles... sth cleaner". So: a neutral page, a fine dot field (points) that lives only at the sides
 // and fades away from the copy, a handful of availability points lit in violet, a calmer h1, a nav on the frame's edges with a
@@ -6,9 +7,9 @@
 import type { CSSProperties } from 'react'
 import { RiArrowRightLine } from '@remixicon/react'
 import TempraLockup from './TempraLogo'
-import { CadenceAppFrame } from './CadenceProductA'
+import { TempraApp, APP_W } from './CadenceProductB'
 
-const W = 1440, H = 1035, INK = '#0E121B', PAGE = '#FAFAFB', EDGE = 48
+const W = 1440, H = 1035, INK = '#0E121B', PAGE = '#FAFAFB', EDGE = 80
 const abs = (x: number, y: number, s: CSSProperties = {}): CSSProperties => ({ position: 'absolute', left: x, top: y, ...s })
 
 // ---- the points: a 20px dot lattice kept to the sides (clear around the copy, gone before the product) ----
@@ -50,7 +51,7 @@ function FoundPill() {
 // ---- progressive blur: four backdrop-blur bands, each masked to start lower, then a fade to the page colour ----
 function BlurOut({ top }: { top: number }) {
   const h = H - top
-  const bands = [[2, 0], [4, 0.25], [8, 0.5], [14, 0.72]]
+  const bands = [[2, 0], [4, 0.2], [8, 0.42], [14, 0.64]]
   return (
     <div aria-hidden style={abs(0, top, { width: W, height: h, pointerEvents: 'none' })}>
       {bands.map(([b, from]) => {
@@ -63,8 +64,7 @@ function BlurOut({ top }: { top: number }) {
 }
 
 export default function CadenceHeroD() {
-  const S = (W - 2 * EDGE - 20) / 1472, TOP = 548
-  return (
+    return (
     <main style={{ position: 'relative', width: W, height: H, overflow: 'hidden', background: PAGE, fontFamily: '"Inter Variable", Inter, sans-serif', fontOpticalSizing: 'auto', WebkitFontSmoothing: 'antialiased', color: INK }}>
       <div aria-hidden style={{ position: 'absolute', inset: 0, background: 'radial-gradient(900px 420px at 50% -80px, #FFFFFF, rgba(255,255,255,0) 70%)' }} />
       <Points />
@@ -89,12 +89,11 @@ export default function CadenceHeroD() {
         <a href="#/h4a" style={{ height: 46, padding: '0 22px', borderRadius: 14, display: 'flex', alignItems: 'center', fontSize: 16, fontWeight: 500, letterSpacing: '-0.01em', textDecoration: 'none', ...white }}>See how it works</a>
       </div>
 
-      {/* product: a quiet grey bezel (r42) holding the app at a 10px inset; the app's own frame is r36 x S (concentric) */}
-      <div style={abs(EDGE, TOP, { width: W - 2 * EDGE, height: H - TOP + 40, borderRadius: 42, background: 'rgba(14,18,27,0.025)', boxShadow: 'inset 0 0 0 1px rgba(14,18,27,0.06)' })} />
-      <div style={abs(EDGE + 10, TOP + 10, { width: 1472, height: 1072, transform: `scale(${S})`, transformOrigin: '0 0' })}>
-        <CadenceAppFrame inHero />
+      {/* product: the app window alone, one hairline + one soft drop, on the same 80px edges as the nav (r3 verdict: no bezel) */}
+      <div style={abs(EDGE, 548, { width: APP_W, height: 820 })}>
+        <TempraApp inHero />
       </div>
-      <BlurOut top={870} />
+      <BlurOut top={930} />
     </main>
   )
 }
