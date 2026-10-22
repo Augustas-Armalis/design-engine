@@ -70,3 +70,6 @@ Decided defaults, 2026-10-21. For screens inside an existing client app, `client
 ## Open
 - One fixed control height for our own apps (Kargul ranges 29-36 by product); the canon gives 28-32 until a founder verdict picks one.
 - Light-mode table row pitch for hero dashboards at 0.8 zoom vs full apps: not measured on Ferry.
+
+## Founder verdict 2026-10-22 (cadence-app r8, partial)
+On the Cadence calendar built in Tanjim's post system, the founder said: "his style is not my favorite... it's good for variety yet I wouldn't use it". So the Tanjim/gr8r system (Manrope 400, warm wells, 0.5px hairlines; TG-01..38) is a variety option only, never the default product floor. The default product floor stays Rico/Kargul/AlignUI detail (see this page). Take from him only the method (post system vs code system, solving the font from line widths, centring discipline), not the look.

@@ -540,3 +540,4 @@ One line per founder verdict, appended by tools/verdict.mjs. The quoted words ar
 - 2026-10-22 · replica-linear-fig r1 · accept: "plus those were cool" (ledger: ledger/entries/replica-linear-fig.json r1; canon: section-bento; shot: ledger/shots/2026-10-22-replica-linear-fig-r1-fold.png)
 - 2026-10-22 · replica-alignui-features04 r1 · accept: "plus those were cool" (ledger: ledger/entries/replica-alignui-features04.json r1; canon: section-bento; shot: ledger/shots/2026-10-22-replica-alignui-features04-r1-fold.png)
 - 2026-10-22 · replica-affectui-3up r1 · accept: "plus those were cool" (ledger: ledger/entries/replica-affectui-3up.json r1; canon: section-bento; shot: ledger/shots/2026-10-22-replica-affectui-3up-r1-fold.png)
+- 2026-10-22 · cadence-app r8 · partial: "yeah his style is not my favorite... it's good for variety tyet I wouldn use it" (ledger: ledger/entries/cadence-app.json r8; canon: product-ui; shot: ledger/shots/2026-10-22-cadence-app-r8-fold.png)
