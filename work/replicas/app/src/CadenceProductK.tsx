@@ -47,8 +47,10 @@ const EVENTS: Ev[] = [
   // Tue 20
   { d: 1, h0: 9, h1: 11, kind: 'focus', title: 'Focus time', time: '09:00 – 11:00', extra: 'Design system audit' },
   { d: 1, h0: 11, h1: 12, kind: 'purple', title: 'Design sync', time: '11:00 – 12:00' },
-  { d: 1, h0: 14, h1: 15, kind: 'purple', title: '1:1 with Ana', time: '14:00 – 15:00' },
-  { d: 1, h0: 16, h1: 17, kind: 'pink', title: 'Partner demo', time: '16:00 – 17:00' },
+  { d: 1, h0: 18.5, h1: 19.5, kind: 'purple', title: '1:1 with Ana', time: '18:30 – 19:30' },
+  { d: 1, h0: 19.75, h1: 20.75, kind: 'pink', title: 'Partner demo', time: '19:45 – 20:45', extra: 'Sydney team' },
+  { d: 0, h0: 18.5, h1: 19.5, kind: 'pink', title: 'Investor update', time: '18:30 – 19:30' },
+  { d: 2, h0: 19, h1: 20, kind: 'purple', title: 'APAC sync', time: '19:00 – 20:00' },
   // Wed 21
   { d: 2, h0: 10, h1: 11, kind: 'purple', title: 'Research readout', time: '10:00 – 11:00' },
   { d: 2, h0: 11.5, h1: 12.5, kind: 'pink', title: 'Team lunch', time: '11:30 – 12:30' },
@@ -94,7 +96,7 @@ function Event({ e }: { e: Ev }) {
 }
 
 /* ---------------- controls (UniOps grammar) ---------------- */
-const ctl: CSSProperties = { ...row, height: 32, borderRadius: 12, background: '#fff', boxShadow: `0 0 0 1px ${RING}, 0 1px 2px rgba(0,0,0,.05)`, fontSize: 14, whiteSpace: 'nowrap', boxSizing: 'border-box', border: 0, color: INK, fontFamily: 'inherit' }
+const ctl: CSSProperties = { ...row, height: 32, borderRadius: 12, background: '#fff', boxShadow: `0 0 0 1px ${RING}, 0 1px 2px rgba(0,0,0,.05)`, fontSize: 14, whiteSpace: 'nowrap', boxSizing: 'border-box', border: 0, color: INK, fontFamily: 'inherit', cursor: 'pointer' }
 function Pill({ icon, label, value }: { icon: ReactNode; label: string; value: string }) {
   return (
     <button style={{ ...ctl, gap: 9, padding: '0 11px 0 12px' }}>
@@ -109,14 +111,14 @@ const Caps = ({ y, children }: { y: number; children: ReactNode }) => <div style
 function Nav({ y, icon, label, active }: { y: number; icon: typeof RiAddLine; label: string; active?: boolean }) {
   const I = icon
   return (
-    <a style={{ ...abs(13, y), ...row, width: 200, height: 35, boxSizing: 'border-box', padding: '0 13px 0 13.5px', gap: 10.5, borderRadius: 999, background: active ? '#ebebeb' : undefined, fontSize: 14, fontWeight: 450, color: '#2e2e2e', textDecoration: 'none' }}>
+    <a style={{ ...abs(13, y), ...row, width: 200, height: 35, boxSizing: 'border-box', padding: '0 13px 0 13.5px', gap: 10.5, borderRadius: 999, background: active ? '#ebebeb' : undefined, fontSize: 14, fontWeight: 450, color: '#2e2e2e', textDecoration: 'none', cursor: 'pointer' }}>
       <I size={16} color={active ? ACC : '#7a7a7a'} style={{ flex: 'none' }} />{label}
       {active && <RiArrowRightSLine size={15} color="#858585" style={{ marginLeft: 'auto' }} />}
     </a>
   )
 }
 const Face = ({ t, bg, fg, s = 20, ring }: { t: string; bg: string; fg: string; s?: number; ring?: boolean }) => (
-  <span style={{ display: 'grid', placeItems: 'center', flex: 'none', width: s, height: s, borderRadius: 999, background: bg, color: fg, fontSize: s * 0.5, fontWeight: 500, lineHeight: 1, boxShadow: ring ? '0 0 0 1.5px #fff' : undefined }}>{t}</span>
+  <span style={{ display: 'grid', placeItems: 'center', flex: 'none', width: s, height: s, borderRadius: 999, background: bg, color: fg, fontSize: Math.max(10, s * 0.5), fontWeight: 500, lineHeight: 1, boxShadow: ring ? '0 0 0 1.5px #fff' : undefined }}>{t}</span>
 )
 const PEOPLE: [string, string, string, string, string][] = [
   ['Leo Park', 'L', '#c0d5ff', '#122368', 'You'],
@@ -166,7 +168,7 @@ function Popover({ left, top }: { left: number; top: number }) {
     [RiShieldCheckLine, 'No focus block moved'],
   ]
   const Act = ({ x, I, s = 15, label }: { x: number; I: typeof RiAddLine; s?: number; label: string }) => (
-    <button aria-label={label} style={{ ...abs(x - (24 - s) / 2, 18), width: 24, height: 24, display: 'grid', placeItems: 'center', background: 'none', border: 0, padding: 0 }}><I size={s} color="#6f6f6f" /></button>
+    <button aria-label={label} style={{ ...abs(x - (24 - s) / 2, 18), width: 24, height: 24, display: 'grid', placeItems: 'center', background: 'none', border: 0, padding: 0, cursor: 'pointer' }}><I size={s} color="#6f6f6f" /></button>
   )
   return (
     <div role="dialog" aria-label="Suggested slot" style={{ ...abs(left, top), width: W, height: 316, borderRadius: 14.5, background: '#fff', boxShadow: `0 0 0 1px ${RING}, 0 4px 14px rgba(0,0,0,.05)` }}>
@@ -279,7 +281,7 @@ export default function CadenceProductK() {
         {/* main panel */}
         <section style={{ ...abs(216.5, 99.5), width: WW - 216.5 - 5.5, height: 1100, borderRadius: '25px 25px 0 0', background: BG, boxShadow: '0 0 0 1px #e9e9e9' }}>
           <div style={{ ...abs(28, 23.5), ...row, gap: 10, height: 20 }}>
-            <h1 style={{ margin: 0, fontSize: 15, lineHeight: '20px', fontWeight: 500, color: '#2f2f2f' }}>Calendar</h1>
+            <h1 style={{ margin: 0, fontSize: 15, lineHeight: '19px', fontWeight: 500, color: '#2f2f2f' }}>Calendar</h1>
             <span style={{ width: 3, height: 3, borderRadius: 9, background: '#c4c4c4' }} />
             <span style={{ fontSize: 14, color: SUB }}>Oct 19 – 23, 2026 · 15 meetings, 8h of focus held</span>
           </div>
@@ -291,14 +293,14 @@ export default function CadenceProductK() {
           <div style={{ ...abs(0, 60.5), right: 26, left: 'auto', ...row, gap: 9.5 }}>
             <button style={{ ...ctl, padding: '0 14px', fontWeight: 450 }}>Today</button>
             <div style={{ ...ctl, width: 66, justifyContent: 'space-between', padding: '0 0' }}>
-              <button aria-label="Previous week" style={{ width: 32, height: 32, display: 'grid', placeItems: 'center', background: 'none', border: 0, padding: 0 }}><RiArrowLeftSLine size={16} color="#1c1c1c" /></button>
+              <button aria-label="Previous week" style={{ width: 32, height: 32, display: 'grid', placeItems: 'center', background: 'none', border: 0, padding: 0, cursor: 'pointer' }}><RiArrowLeftSLine size={16} color="#1c1c1c" /></button>
               <span style={{ width: 1, height: 16, background: RING }} />
-              <button aria-label="Next week" style={{ width: 32, height: 32, display: 'grid', placeItems: 'center', background: 'none', border: 0, padding: 0 }}><RiArrowRightSLine size={16} color="#1c1c1c" /></button>
+              <button aria-label="Next week" style={{ width: 32, height: 32, display: 'grid', placeItems: 'center', background: 'none', border: 0, padding: 0, cursor: 'pointer' }}><RiArrowRightSLine size={16} color="#1c1c1c" /></button>
             </div>
             <div role="tablist" style={{ ...row, height: 32, boxSizing: 'border-box', padding: 3, borderRadius: 12, background: '#ededed', fontSize: 14 }}>
-              <button role="tab" style={{ height: 26, padding: '0 14px', border: 0, background: 'none', color: SUB, fontSize: 14, fontFamily: 'inherit' }}>Day</button>
-              <button role="tab" aria-selected style={{ height: 26, padding: '0 14px', border: 0, borderRadius: 8, background: '#fff', boxShadow: '0 0 0 1px rgba(0,0,0,.04), 0 1px 2px rgba(0,0,0,.06)', color: INK, fontWeight: 500, fontSize: 14, fontFamily: 'inherit', display: 'grid', placeItems: 'center' }}>Week</button>
-              <button role="tab" style={{ height: 26, padding: '0 14px', border: 0, background: 'none', color: SUB, fontSize: 14, fontFamily: 'inherit' }}>Month</button>
+              <button role="tab" style={{ height: 26, padding: '0 14px', border: 0, background: 'none', color: SUB, fontSize: 14, fontFamily: 'inherit', cursor: 'pointer' }}>Day</button>
+              <button role="tab" aria-selected style={{ height: 26, padding: '0 14px', border: 0, borderRadius: 8, background: '#fff', boxShadow: '0 0 0 1px rgba(0,0,0,.04), 0 1px 2px rgba(0,0,0,.06)', color: INK, fontWeight: 500, fontSize: 14, fontFamily: 'inherit', display: 'grid', placeItems: 'center', cursor: 'pointer' }}>Week</button>
+              <button role="tab" style={{ height: 26, padding: '0 14px', border: 0, background: 'none', color: SUB, fontSize: 14, fontFamily: 'inherit', cursor: 'pointer' }}>Month</button>
             </div>
             <button style={primary}><RiSparkling2Line size={16} color="#fff" />Find a time</button>
           </div>
