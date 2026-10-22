@@ -7,7 +7,7 @@ kind: product-ui
 why r2: cprodk r1 rejected ("too similar to marcel... no apple like stuff at the top... too little rounded... too little small details or shadows... lacks proper dashboard sidebar and components").
 
 - **No browser or OS chrome.** No traffic lights, no URL bar. The app sits in a double-bezel frame: frame r36 on `#F5F7FA`, an 8px inset, then the white main panel r28 (concentric).
-- **Rounder ladder (founder):** frame 36 / panel 28 / tray 20 / cards 16 / controls and tiles 10 / segmented option 8 / chips 6-7 / pills and avatars round.
+- **Rounder ladder (founder, twice):** frame 36 / panel 28 / tray 24 / cards 20 / controls and tiles 12 / segmented option 10 / chips 8 / pills and avatars round.
 - **AlignUI parts:** slate role tokens, Inter, 14/500 labels + 14/400 copy + 12 meta, 36 controls, Remix icons. Workspace switcher with a selector button, search with a ⌘K kbd, MAIN / TEAMS / CALENDARS labels, nav badge, team kbd shortcuts, coloured calendar checkboxes, trial card with progress, verified user row with an online dot. Stroke status badges with a dot, avatar tints (200 fill / 950 ink).
 - **affectUI parts:** "2 need your input" tray (grey r20, white card r16, tactile ink buttons, footer strip), the segmented control.
 - **Details:** KPI cards with an icon tile, a delta badge and a mini visual (bars, progress ring, sparkline, avatar stack). The timeline rail is drawn in segments that stop short of every marker, and the live-row highlight covers only the content column. The chart's today column is an opaque band over the gridlines, with the tooltip above the plot, so no line runs behind it. Availability strip per person; booking link with a copy button and a switch.

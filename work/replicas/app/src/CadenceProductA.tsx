@@ -2,7 +2,7 @@
 // ("too similar to marcel... too little rounded... too little small details or shadows... lacks proper dashboard sidebar and components").
 // AlignUI: slate role tokens, Inter, label-sm 14/500 + paragraph 14/400 + 12 meta, 36px controls at r10, double-bezel app frame,
 // stroke status badges with a dot, avatar tints (200 fill / 950 ink), Remix icons. affectUI: the decision tray (grey r20, white card r16,
-// tactile ink buttons). Rounder than Kargul by design: frame 36, panel 28, tray 20, cards 16, controls 10, chips 6. Sample data.
+// tactile ink buttons). Rounder ladder (founder): frame 36, panel 28, tray 24, cards 20, controls and tiles 12, segmented option 10, chips 8. Sample data.
 import type { CSSProperties, ReactNode } from 'react'
 import {
   RiHome5Fill, RiCalendarLine, RiLinksLine, RiFocus3Line, RiBarChartBoxLine, RiInboxLine, RiSearch2Line, RiNotification3Line,
@@ -46,13 +46,13 @@ function Stack({ ids, s = 22, more }: { ids: string[]; s?: number; more?: number
   )
 }
 
-// ---- controls (AlignUI 36 / r10; compact 32 / r10) ----
+// ---- controls (36 and 32 tall, r12; founder 2026-10-22: rounder everywhere) ----
 function Btn({ kind = 'stroke', h = 36, icon, children, kbd }: { kind?: 'stroke' | 'primary' | 'ink' | 'soft'; h?: number; icon?: ReactNode; children?: ReactNode; kbd?: string }) {
-  const base: CSSProperties = { ...row, gap: 6, height: h, padding: `0 ${h === 36 ? 14 : 12}px 0 ${icon ? (h === 36 ? 10 : 9) : h === 36 ? 14 : 12}px`, borderRadius: 10, fontSize: 14, fontWeight: 500, letterSpacing: '-0.006em', whiteSpace: 'nowrap', boxSizing: 'border-box', flex: 'none' }
+  const base: CSSProperties = { ...row, gap: 6, height: h, padding: `0 ${h === 36 ? 14 : 12}px 0 ${icon ? (h === 36 ? 10 : 9) : h === 36 ? 14 : 12}px`, borderRadius: 12, fontSize: 14, fontWeight: 500, letterSpacing: '-0.006em', whiteSpace: 'nowrap', boxSizing: 'border-box', flex: 'none' }
   const look: Record<string, CSSProperties> = {
-    stroke: { background: T.white, color: T.strong, boxShadow: ringXs() },
+    stroke: { background: 'linear-gradient(#FFFFFF, #FBFBFC)', color: T.strong, boxShadow: `inset 0 0 0 1px ${T.soft}, 0 1px 2px rgba(10,13,20,0.05), 0 2px 4px -2px rgba(10,13,20,0.04)` },
     // Tempra's own suggestions: the violet 'lighter' material, so the page keeps one ink primary
-    soft: { background: T.v50, color: T.vInk, boxShadow: `inset 0 0 0 1px ${T.v100}` },
+    soft: { background: `linear-gradient(${T.v25}, ${T.v50})`, color: T.vInk, boxShadow: `inset 0 0 0 1px ${T.v100}, 0 1px 2px rgba(77,36,196,0.06)` },
     primary: { background: `linear-gradient(180deg, rgba(255,255,255,0.14), rgba(255,255,255,0)) ${T.v}`, color: '#fff', boxShadow: `0 0 0 1px #6B3FE8, inset 0 1px 0 rgba(255,255,255,0.20), 0 1px 2px rgba(77,36,196,0.30), 0 4px 10px -3px rgba(77,36,196,0.28)` },
     ink: { background: 'linear-gradient(#323137, #201e25) padding-box, linear-gradient(#4b4951, #31303a, #18171b) border-box', border: '1px solid transparent', color: '#fafafa', boxShadow: '0 0 0 1px #0d0d0d, 0 2px 4px rgb(0 0 0 / 0.10)' },
   }
@@ -60,29 +60,29 @@ function Btn({ kind = 'stroke', h = 36, icon, children, kbd }: { kind?: 'stroke'
     <span style={{ ...base, ...look[kind] }}>
       {icon && <span style={{ display: 'flex', opacity: kind === 'stroke' ? 0.72 : 1 }}>{icon}</span>}
       {children}
-      {kbd && <span style={{ marginLeft: 4, height: 20, padding: '0 6px', borderRadius: 6, background: 'rgba(255,255,255,0.16)', fontSize: 12, fontWeight: 500, display: 'grid', placeItems: 'center' }}>{kbd}</span>}
+      {kbd && <span style={{ marginLeft: 4, height: 20, padding: '0 6px', borderRadius: 8, background: 'rgba(255,255,255,0.16)', fontSize: 12, fontWeight: 500, display: 'grid', placeItems: 'center' }}>{kbd}</span>}
     </span>
   )
 }
 const IconBtn = ({ children, dot }: { children: ReactNode; dot?: boolean }) => (
-  <span style={{ position: 'relative', display: 'grid', placeItems: 'center', width: 36, height: 36, borderRadius: 10, background: T.white, boxShadow: ringXs(), color: T.sub, flex: 'none' }}>
+  <span style={{ position: 'relative', display: 'grid', placeItems: 'center', width: 36, height: 36, borderRadius: 12, background: T.white, boxShadow: ringXs(), color: T.sub, flex: 'none' }}>
     {children}
     {dot && <span className="round" style={{ position: 'absolute', top: 8, right: 9, width: 7, height: 7, borderRadius: 999, background: T.red, boxShadow: `0 0 0 2px ${T.white}` }} />}
   </span>
 )
 const Kbd = ({ children }: { children: ReactNode }) => (
-  <span style={{ height: 20, minWidth: 20, padding: '0 5px', boxSizing: 'border-box', borderRadius: 6, background: T.white, boxShadow: `inset 0 0 0 1px ${T.soft}, 0 1px 0 ${T.soft}`, display: 'grid', placeItems: 'center', fontSize: 11, fontWeight: 500, color: T.soft6 }}>{children}</span>
+  <span style={{ height: 20, minWidth: 20, padding: '0 5px', boxSizing: 'border-box', borderRadius: 8, background: T.white, boxShadow: `inset 0 0 0 1px ${T.soft}, 0 1px 0 ${T.soft}`, display: 'grid', placeItems: 'center', fontSize: 11, fontWeight: 500, color: T.soft6 }}>{children}</span>
 )
 type Tone = 'green' | 'red' | 'violet' | 'grey' | 'orange'
 const TONE: Record<Tone, [string, string]> = { green: [T.green, T.greenInk], red: [T.red, T.redInk], violet: [T.v, T.vInk], grey: [T.faint, T.sub], orange: [T.orange, T.orangeInk] }
 // AlignUI stroke status badge: 24 tall, r6, a 6px dot and 12/500 text in the tone's ink
 const Status = ({ tone, children }: { tone: Tone; children: ReactNode }) => (
-  <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6, height: 24, padding: '0 8px 0 7px', borderRadius: 6, background: T.white, boxShadow: `inset 0 0 0 1px ${T.soft}`, fontSize: 12, fontWeight: 500, color: TONE[tone][1], whiteSpace: 'nowrap', flex: 'none' }}>
+  <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6, height: 24, padding: '0 8px 0 7px', borderRadius: 8, background: T.white, boxShadow: `inset 0 0 0 1px ${T.soft}`, fontSize: 12, fontWeight: 500, color: TONE[tone][1], whiteSpace: 'nowrap', flex: 'none' }}>
     <span className="round" style={{ width: 6, height: 6, borderRadius: 999, background: TONE[tone][0] }} />{children}
   </span>
 )
 const Delta = ({ children }: { children: ReactNode }) => (
-  <span style={{ ...row, height: 20, padding: '0 6px', borderRadius: 6, background: T.green50, color: T.greenInk, fontSize: 12, fontWeight: 500, ...tnum }}>{children}</span>
+  <span style={{ ...row, height: 20, padding: '0 6px', borderRadius: 8, background: T.green50, color: T.greenInk, fontSize: 12, fontWeight: 500, ...tnum }}>{children}</span>
 )
 const Tile = ({ children, s = 32, r = 10 }: { children: ReactNode; s?: number; r?: number }) => (
   <span style={{ display: 'grid', placeItems: 'center', width: s, height: s, borderRadius: r, background: T.white, boxShadow: ringXs(), color: T.v, flex: 'none' }}>{children}</span>
@@ -91,7 +91,7 @@ const Tile = ({ children, s = 32, r = 10 }: { children: ReactNode; s?: number; r
 // ================= sidebar =================
 function NavItem({ icon, label, active, badge }: { icon: ReactNode; label: string; active?: boolean; badge?: string }) {
   return (
-    <div style={{ ...row, gap: 10, height: 36, padding: '0 10px', borderRadius: 10, boxSizing: 'border-box', background: active ? T.white : 'transparent', boxShadow: active ? ringXs(T.line) : 'none', color: active ? T.strong : T.sub, fontSize: 14, fontWeight: active ? 500 : 450 }}>
+    <div style={{ ...row, gap: 10, height: 36, padding: '0 10px', borderRadius: 12, boxSizing: 'border-box', background: active ? T.white : 'transparent', boxShadow: active ? ringXs(T.line) : 'none', color: active ? T.strong : T.sub, fontSize: 14, fontWeight: active ? 500 : 450 }}>
       <span style={{ display: 'flex', color: active ? T.v : T.soft6 }}>{icon}</span>
       <span style={{ flex: 1 }}>{label}</span>
       {badge && <span className="round" style={{ height: 20, minWidth: 20, padding: '0 6px', boxSizing: 'border-box', borderRadius: 999, background: T.v, color: '#fff', fontSize: 11, fontWeight: 600, display: 'grid', placeItems: 'center', ...tnum }}>{badge}</span>}
@@ -108,15 +108,15 @@ function Sidebar() {
     <aside style={{ width: 264, flex: 'none', boxSizing: 'border-box', padding: '20px 16px 16px', display: 'flex', flexDirection: 'column' }}>
       {/* workspace switcher */}
       <div style={{ ...row, gap: 12, padding: '0 4px 0 6px' }}>
-        <span style={{ display: 'grid', placeItems: 'center', width: 40, height: 40, borderRadius: 12, background: 'linear-gradient(#2f2f33, #18181b)', boxShadow: '0 0 0 1px #0d0d0f, inset 0 1px 0 rgba(255,255,255,0.12), 0 1px 2px rgba(14,18,27,0.2)', color: '#fff' }}><Mark size={19} /></span>
+        <span style={{ display: 'grid', placeItems: 'center', width: 40, height: 40, borderRadius: 14, background: 'linear-gradient(#2f2f33, #18181b)', boxShadow: '0 0 0 1px #0d0d0f, inset 0 1px 0 rgba(255,255,255,0.12), 0 1px 2px rgba(14,18,27,0.2)', color: '#fff' }}><Mark size={19} /></span>
         <span style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: 2 }}>
           <span style={{ fontSize: 14, fontWeight: 500, lineHeight: '20px' }}>Tempra</span>
           <span style={{ fontSize: 12, lineHeight: '16px', color: T.soft6 }}>Fernhill · Team plan</span>
         </span>
-        <span style={{ display: 'grid', placeItems: 'center', width: 28, height: 28, borderRadius: 8, background: T.white, boxShadow: ringXs(), color: T.soft6 }}><RiExpandUpDownLine size={16} /></span>
+        <span style={{ display: 'grid', placeItems: 'center', width: 28, height: 28, borderRadius: 10, background: T.white, boxShadow: ringXs(), color: T.soft6 }}><RiExpandUpDownLine size={16} /></span>
       </div>
       {/* search */}
-      <div style={{ ...row, gap: 8, height: 36, marginTop: 20, padding: '0 8px 0 10px', borderRadius: 10, background: T.white, boxShadow: ringXs(), color: T.soft6, fontSize: 14 }}>
+      <div style={{ ...row, gap: 8, height: 36, marginTop: 20, padding: '0 8px 0 10px', borderRadius: 12, background: T.white, boxShadow: ringXs(), color: T.soft6, fontSize: 14 }}>
         <RiSearch2Line size={18} /><span style={{ flex: 1 }}>Search</span><Kbd>⌘K</Kbd>
       </div>
 
@@ -153,7 +153,7 @@ function Sidebar() {
       </div>
 
       {/* plan card: tray + white card (affectUI container grammar) */}
-      <div style={{ marginTop: 'auto', borderRadius: 16, background: T.white, boxShadow: CARD, padding: 14 }}>
+      <div style={{ marginTop: 'auto', borderRadius: 20, background: T.white, boxShadow: CARD, padding: 14 }}>
         <div style={{ ...row, gap: 8, fontSize: 14, fontWeight: 500 }}><RiFlashlightLine size={16} color={T.v} />Pro trial<span style={{ marginLeft: 'auto', fontSize: 12, fontWeight: 450, color: T.soft6, ...tnum }}>9 days left</span></div>
         <div style={{ height: 6, borderRadius: 999, background: T.weak, boxShadow: `inset 0 0 0 1px ${T.line}`, marginTop: 12, overflow: 'hidden' }} className="round">
           <div className="round" style={{ width: '70%', height: '100%', borderRadius: 999, background: `linear-gradient(90deg, ${T.v300}, ${T.v})` }} />
@@ -231,7 +231,7 @@ function Ring({ pct }: { pct: number }) {
 }
 function Kpi({ icon, label, value, unit, delta, note, viz }: { icon: ReactNode; label: string; value: string; unit?: string; delta: string; note: string; viz: ReactNode }) {
   return (
-    <div style={{ flex: 1, height: 128, boxSizing: 'border-box', borderRadius: 16, background: T.white, boxShadow: CARD, padding: 16, display: 'flex', flexDirection: 'column' }}>
+    <div style={{ flex: 1, height: 128, boxSizing: 'border-box', borderRadius: 20, background: T.white, boxShadow: CARD, padding: 16, display: 'flex', flexDirection: 'column' }}>
       <div style={{ ...row, gap: 10 }}>
         <Tile>{icon}</Tile>
         <span style={{ fontSize: 14, fontWeight: 500, color: T.sub }}>{label}</span>
@@ -259,7 +259,7 @@ const DAY: Ev[] = [
   { t: '16:00', dur: '2 h', title: 'Prototype pass', meta: 'Focus block · notifications off', state: 'next', people: ['L'], chip: <Chip icon={<RiLockLine size={13} />} grey>Protected</Chip> },
 ]
 function Chip({ icon, children, grey }: { icon: ReactNode; children: ReactNode; grey?: boolean }) {
-  return <span style={{ ...row, gap: 4, height: 22, padding: '0 7px 0 6px', borderRadius: 6, background: grey ? T.weak : T.v50, color: grey ? T.sub : T.vInk, boxShadow: `inset 0 0 0 1px ${grey ? T.line : T.v100}`, fontSize: 12, fontWeight: 500, whiteSpace: 'nowrap' }}>{icon}{children}</span>
+  return <span style={{ ...row, gap: 4, height: 22, padding: '0 7px 0 6px', borderRadius: 8, background: grey ? T.weak : T.v50, color: grey ? T.sub : T.vInk, boxShadow: `inset 0 0 0 1px ${grey ? T.line : T.v100}`, fontSize: 12, fontWeight: 500, whiteSpace: 'nowrap' }}>{icon}{children}</span>
 }
 
 const ROW_H = 62, DOT_Y = 31
@@ -279,15 +279,15 @@ function Rail({ state, first, last }: { state: Ev['state']; first: boolean; last
 }
 function Today() {
   return (
-    <section aria-label="Today, sample schedule" style={{ width: 756, height: 446, boxSizing: 'border-box', borderRadius: 16, background: T.white, boxShadow: CARD, display: 'flex', flexDirection: 'column' }}>
+    <section aria-label="Today, sample schedule" style={{ width: 756, height: 446, boxSizing: 'border-box', borderRadius: 20, background: T.white, boxShadow: CARD, display: 'flex', flexDirection: 'column' }}>
       <div style={{ ...row, gap: 8, height: 60, padding: '0 16px 0 20px', flex: 'none' }}>
         <h2 style={{ margin: 0, fontSize: 16, lineHeight: '24px', fontWeight: 500, letterSpacing: '-0.011em' }}>Today</h2>
-        <span style={{ height: 22, padding: '0 7px', borderRadius: 6, background: T.weak, boxShadow: `inset 0 0 0 1px ${T.line}`, display: 'grid', placeItems: 'center', fontSize: 12, fontWeight: 500, color: T.sub, ...tnum }}>6</span>
+        <span style={{ height: 22, padding: '0 7px', borderRadius: 8, background: T.weak, boxShadow: `inset 0 0 0 1px ${T.line}`, display: 'grid', placeItems: 'center', fontSize: 12, fontWeight: 500, color: T.sub, ...tnum }}>6</span>
         <div style={{ marginLeft: 'auto', ...row, gap: 10 }}>
           {/* segmented: track r10 pad 2, options r8 */}
-          <div style={{ ...row, height: 32, padding: 2, boxSizing: 'border-box', borderRadius: 10, background: T.weak, boxShadow: `inset 0 0 0 1px ${T.line}` }}>
+          <div style={{ ...row, height: 32, padding: 2, boxSizing: 'border-box', borderRadius: 12, background: T.weak, boxShadow: `inset 0 0 0 1px ${T.line}` }}>
             {['Mine', 'Team', 'Rooms'].map((o, i) => (
-              <span key={o} style={{ height: 28, padding: '0 12px', borderRadius: 8, display: 'grid', placeItems: 'center', fontSize: 13, fontWeight: 500, color: i === 0 ? T.strong : T.soft6, background: i === 0 ? T.white : 'transparent', boxShadow: i === 0 ? `0 0 0 1px ${T.line}, 0 1px 2px rgba(10,13,20,0.06)` : 'none' }}>{o}</span>
+              <span key={o} style={{ height: 28, padding: '0 12px', borderRadius: 10, display: 'grid', placeItems: 'center', fontSize: 13, fontWeight: 500, color: i === 0 ? T.strong : T.soft6, background: i === 0 ? T.white : 'transparent', boxShadow: i === 0 ? `0 0 0 1px ${T.line}, 0 1px 2px rgba(10,13,20,0.06)` : 'none' }}>{o}</span>
             ))}
           </div>
           <Btn h={32} icon={<RiCalendarLine size={16} />}>Open calendar</Btn>
@@ -303,7 +303,7 @@ function Today() {
             </div>
             <Rail state={e.state} first={i === 0} last={i === DAY.length - 1} />
             {/* the highlight covers the content column only, never the rail */}
-            <div style={{ flex: 1, height: ROW_H - 8, marginLeft: 10, padding: '0 12px 0 14px', borderRadius: 12, boxSizing: 'border-box', ...row, gap: 12,
+            <div style={{ flex: 1, height: ROW_H - 8, marginLeft: 10, padding: '0 12px 0 14px', borderRadius: 14, boxSizing: 'border-box', ...row, gap: 12,
               background: e.state === 'now' ? `linear-gradient(90deg, ${T.v50}, ${T.v25})` : 'transparent', boxShadow: e.state === 'now' ? `inset 0 0 0 1px ${T.v100}` : 'none' }}>
               <div style={{ display: 'flex', flexDirection: 'column', gap: 2, minWidth: 0 }}>
                 <span style={{ ...row, gap: 8, fontSize: 14, lineHeight: '20px', fontWeight: 500, color: e.state === 'done' ? T.sub : T.strong }}>{e.title}{e.chip}</span>
@@ -328,7 +328,7 @@ function Today() {
 function Decision({ title, sub, due, a, b }: { title: string; sub: string; due?: string; a: string; b: string }) {
   return (
     <div style={{ padding: '16px 16px 16px' }}>
-      <div style={{ ...row, gap: 8, fontSize: 14, lineHeight: '20px', fontWeight: 500 }}>{title}{due && <span style={{ height: 20, padding: '0 6px', borderRadius: 6, background: T.weak, boxShadow: `inset 0 0 0 1px ${T.line}`, display: 'grid', placeItems: 'center', fontSize: 12, fontWeight: 500, color: T.sub }}>{due}</span>}</div>
+      <div style={{ ...row, gap: 8, fontSize: 14, lineHeight: '20px', fontWeight: 500 }}>{title}{due && <span style={{ height: 20, padding: '0 6px', borderRadius: 8, background: T.weak, boxShadow: `inset 0 0 0 1px ${T.line}`, display: 'grid', placeItems: 'center', fontSize: 12, fontWeight: 500, color: T.sub }}>{due}</span>}</div>
       <div style={{ fontSize: 13, lineHeight: '18px', color: T.soft6, marginTop: 4 }}>{sub}</div>
       <div style={{ ...row, gap: 8, marginTop: 14 }}><Btn kind="soft" h={32}>{a}</Btn><Btn h={32}>{b}</Btn></div>
     </div>
@@ -337,26 +337,26 @@ function Decision({ title, sub, due, a, b }: { title: string; sub: string; due?:
 function Side() {
   return (
     <div style={{ width: 372, height: 446, display: 'flex', flexDirection: 'column', gap: 16 }}>
-      <section aria-label="Decisions waiting, sample" style={{ borderRadius: 20, background: T.weak, boxShadow: `inset 0 0 0 1px ${T.line}`, padding: 4 }}>
+      <section aria-label="Decisions waiting, sample" style={{ borderRadius: 24, background: T.weak, boxShadow: `inset 0 0 0 1px ${T.line}`, padding: 4 }}>
         <div style={{ ...row, gap: 8, height: 40, padding: '0 12px', fontSize: 14, fontWeight: 500, color: T.orangeInk }}>
           <RiErrorWarningFill size={18} color={T.orange} />2 need your input
           <span style={{ marginLeft: 'auto', fontSize: 12, fontWeight: 500, color: T.sub }}>View all</span>
         </div>
-        <div style={{ borderRadius: 16, background: T.white, boxShadow: `0 0 0 1px ${T.line}, 0 1px 2px rgba(10,13,20,0.04)` }}>
+        <div style={{ borderRadius: 20, background: T.white, boxShadow: `0 0 0 1px ${T.line}, 0 1px 2px rgba(10,13,20,0.04)` }}>
           <Decision title="Move Hiring sync to Friday?" sub="Sam is out Thursday. Friday 11:00 is free for all five." a="Move it" b="Keep Thursday" />
           <div style={{ height: 1, background: T.line }} />
           <Decision title="Ana wants 45 min next week" due="Due Fri" sub="Tempra picked Tue 14:00. No focus block moves." a="Accept" b="Other times" />
         </div>
         <div style={{ ...row, gap: 6, height: 36, padding: '0 12px', fontSize: 12, color: T.soft6 }}><RiShieldCheckLine size={15} />Nothing with an external guest moves without you</div>
       </section>
-      <section aria-label="Booking link" style={{ flex: 1, borderRadius: 16, background: T.white, boxShadow: CARD, padding: '0 16px', display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: 12 }}>
+      <section aria-label="Booking link" style={{ flex: 1, borderRadius: 20, background: T.white, boxShadow: CARD, padding: '0 16px', display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: 12 }}>
         <div style={{ ...row, gap: 12 }}>
           <Tile><RiLinksLine size={18} /></Tile>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 2, flex: 1 }}>
             <span style={{ fontSize: 14, fontWeight: 500, lineHeight: '20px' }}>45 min intro</span>
             <span style={{ fontSize: 12, lineHeight: '16px', color: T.soft6, fontFamily: '"Geist Mono Variable", ui-monospace, monospace' }}>tempra.so/leo/intro</span>
           </div>
-          <span style={{ display: 'grid', placeItems: 'center', width: 32, height: 32, borderRadius: 10, background: T.white, boxShadow: ringXs(), color: T.sub }}><RiFileCopyLine size={16} /></span>
+          <span style={{ display: 'grid', placeItems: 'center', width: 32, height: 32, borderRadius: 12, background: T.white, boxShadow: ringXs(), color: T.sub }}><RiFileCopyLine size={16} /></span>
         </div>
         <div style={{ height: 1, background: T.line }} />
         <div style={{ ...row, gap: 10, fontSize: 13, color: T.sub }}>
@@ -376,7 +376,7 @@ function FocusChart() {
   const H = 132, max = 4.5, bw = 18
   const y = (h: number) => H - (h / max) * H
   return (
-    <section aria-label="Focus this week, sample chart" style={{ width: 560, height: 312, boxSizing: 'border-box', borderRadius: 16, background: T.white, boxShadow: CARD, padding: '0 20px', display: 'flex', flexDirection: 'column' }}>
+    <section aria-label="Focus this week, sample chart" style={{ width: 560, height: 312, boxSizing: 'border-box', borderRadius: 20, background: T.white, boxShadow: CARD, padding: '0 20px', display: 'flex', flexDirection: 'column' }}>
       <div style={{ ...row, gap: 8, height: 60, flex: 'none' }}>
         <h2 style={{ margin: 0, fontSize: 16, lineHeight: '24px', fontWeight: 500, letterSpacing: '-0.011em' }}>Focus this week</h2>
         <span style={{ marginLeft: 'auto', ...row, gap: 14, fontSize: 12, color: T.sub }}>
@@ -406,7 +406,7 @@ function FocusChart() {
               <span style={{ position: 'relative', width: bw, height: (m / max) * H, borderRadius: '6px 6px 2px 2px', background: T.soft }} />
               <span style={{ position: 'absolute', left: 0, right: 0, top: H + 16, textAlign: 'center', fontSize: 12, fontWeight: i === 3 ? 500 : 400, color: i === 3 ? T.strong : T.soft6 }}>{d}</span>
               {i === 3 && (
-                <span style={{ position: 'absolute', left: '50%', bottom: 'calc(100% + 8px)', transform: 'translateX(-50%)', height: 28, padding: '0 10px', borderRadius: 8, background: T.white, boxShadow: FLOAT, whiteSpace: 'nowrap', ...row, gap: 6, fontSize: 12, zIndex: 2, ...tnum }}>
+                <span style={{ position: 'absolute', left: '50%', bottom: 'calc(100% + 8px)', transform: 'translateX(-50%)', height: 28, padding: '0 10px', borderRadius: 10, background: T.white, boxShadow: FLOAT, whiteSpace: 'nowrap', ...row, gap: 6, fontSize: 12, zIndex: 2, ...tnum }}>
                   <span style={{ color: T.soft6 }}>Today</span><span style={{ fontWeight: 500 }}>3h 15m focus</span>
                 </span>
               )}
@@ -439,12 +439,12 @@ function Strip({ busy }: { busy: number[] }) {
 function Team() {
   const cols = '1fr 112px 76px 106px'
   return (
-    <section aria-label="Team today, sample" style={{ width: 568, height: 312, boxSizing: 'border-box', borderRadius: 16, background: T.white, boxShadow: CARD, padding: '0 12px', display: 'flex', flexDirection: 'column' }}>
+    <section aria-label="Team today, sample" style={{ width: 568, height: 312, boxSizing: 'border-box', borderRadius: 20, background: T.white, boxShadow: CARD, padding: '0 12px', display: 'flex', flexDirection: 'column' }}>
       <div style={{ ...row, gap: 8, height: 60, padding: '0 8px', flex: 'none' }}>
         <h2 style={{ margin: 0, fontSize: 16, lineHeight: '24px', fontWeight: 500, letterSpacing: '-0.011em' }}>Team today</h2>
         <span style={{ marginLeft: 'auto' }}><Btn h={32} icon={<RiGlobalLine size={16} />}>Berlin · CEST</Btn></span>
       </div>
-      <div style={{ display: 'grid', gridTemplateColumns: cols, columnGap: 0, alignItems: 'center', height: 32, padding: '0 12px', borderRadius: 8, background: T.weak, fontSize: 12, fontWeight: 500, color: T.soft6 }}>
+      <div style={{ display: 'grid', gridTemplateColumns: cols, columnGap: 0, alignItems: 'center', height: 32, padding: '0 12px', borderRadius: 10, background: T.weak, fontSize: 12, fontWeight: 500, color: T.soft6 }}>
         <span>Person</span><span>Status</span><span>Next free</span><span style={{ ...row, justifyContent: 'space-between', ...tnum }}><span>9</span><span>12</span><span>15</span><span>18</span></span>
       </div>
       {TEAM.map((p, k) => (
