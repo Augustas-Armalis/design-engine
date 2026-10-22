@@ -323,7 +323,181 @@ Studio paths are under `knowledge/benchmarks/kargul-studio-2026-10/`, X paths un
 
 - AlignUI palette match: confirm the recalled AlignUI hexes against the live kit before encoding "AlignUI neutral" as a named system.
 - Font identity: Clokora and ZeroLeaks look Geist-like but this was not verified glyph by glyph; tracking was not measured (needs a known string at a known size).
-- uniops-02 scale (2.0 vs 1.81) is not fully resolved: 14px caps and the 2796px visible frame (1398 CSS at 2.0x) favour 2.0, the 22px traffic lights favour 1.81; hairlines render about 2.5px wide.
+- (resolved 2026-10-22, KMD-24: exactly 2.0) uniops-02 scale (2.0 vs 1.81) was not fully resolved: 14px caps and the 2796px visible frame (1398 CSS at 2.0x) favour 2.0, the 22px traffic lights favour 1.81; hairlines render about 2.5px wide.
 - Hover and pressed states are only visible in two places (UniOps menu hover `#1d1d1d`, focused select); no light hover state was captured.
 - Weights are [V]; stem-width measurement on JPEG X files was too noisy to separate 400 from 450.
 - Videos in the latest posts (showreel, ZeroLeaks, AM Trades, sideshift app-store) were not frame-sampled; thumbnails only.
+
+## 11. Replica pass 2026-10-22: six more screens rebuilt to registration (new and corrected rules)
+
+Evidence: `work/replicas/KARGUL-REPLICAS-NOTES.md`, the replicas `work/replicas/app/src/KargulR1..R6.tsx` (`#/kargulr1..6`) and the overlays `work/replicas/cmp-kargulr<N>-side.png` / `-overlay.png`. The references are:
+- `kargul-studio-2026-10/uniops/uniops-02.png` (R1);
+- `listkit/listkit-00.png` (R2);
+- `kargul-x/latest/kxl-014-1-...jpg` (R3, 716 likes);
+- `copecart/copecart-00.png` (R4);
+- `sideshift/sideshift-07.png` (R5);
+- `rork/rork-00.png` (R6).
+
+All are exact 2x. Values are CSS px. [R] means measured on the original and confirmed by a registered replica: the overlay agrees within about 1px. This section corrects §1-§3 where they disagree.
+
+- **RULE KMD-24** Treat studio case originals as exact 2x and solve the scale from a label set, not from OS chrome.
+  **Why** uniops-02 is 2.0: eight sidebar labels fit Inter 14/450 within 0.5px each. The 22px traffic lights were 11.5px chrome, not a 1.81x clue. This closes the §6/§10 open question.
+  **Check** fit 6-8 strings with the fonttest before taking any size. **Source** [R] R1
+
+- **RULE KMD-25** Fit radii on the outer edge of a ring-edged card. Corrected UniOps values:
+  - KPI and time strips: r22.5;
+  - setup card: r22;
+  - list cards: r18;
+  - app panel: r21;
+  - window: r25.
+  **Why** The §3.2 fits (20.6, 16.4) read about 10% low because they started inside the 1px ring. The replica only registered at the corrected values.
+  **Check** a corner-offset fit from the first ring pixel, rms < 0.8px. **Source** [R] R1 (619,554), (619,1446), (567,329), (134,130) @2x
+
+- **RULE KMD-26** Identify the kit per product before naming tokens. ListKit is stock Tailwind v4 plus one navy ink:
+  - chips are 50 fill / 100 ring / 500-600 text triples: emerald `#ecfdf5/#d0fae5/#00bc7d`, orange `#fff7ed/#ffedd4/#ff6900`, indigo `#eef2ff/#e0e7ff/#4f39f6`, yellow `#fefce8/#fef9c2/#d08700`, red `#fef2f2/#ffe2e2/#fb2c36`, lime `#7ccf00`;
+  - the badge is rose-500 `#ff2056`;
+  - ink `#0d2a4c`, accent `#288dff`.
+  CopeCart is AlignUI gray; UniOps and Clokora are AlignUI neutral.
+  **Why** It corrects KMD-01's "always AlignUI". He uses whatever stock ladder the product's kit ships, verbatim.
+  **Check** every status hex in a view is one ladder's step. **Source** [R] R2 chips row 1-20; R4
+
+- **RULE KMD-27** Set app-view body text at weight 400 (60-80% of all text). Reserve 450-500 for titles, values and the active nav item, and 600 only for mobile titles.
+  **Why** All six screens measure this way. The product-ui canon check "weights in {500,600}" fails every one of his screens.
+  **Applies to** product UI, not heroes. **Check** the weight census share of 400 >= 0.6. **Source** [R] R1-R5 gate `type.weights`
+
+- **RULE KMD-28** Allow 6-10 type sizes in an app view, stepping 0.5-1px around 13-15. Carry hierarchy by ink vs one grey, and make list-row titles larger than the card titles above them:
+  - UniOps: card title 14, row title 15/450, sub 13;
+  - ListKit: name 13.5, job 12.4.
+  **Why** Measured on every app screen. The "<= 4 sizes" canon is a hero rule.
+  **Check** adjacent text roles differ by <= 1px or by ink. **Source** [R] R1, R2, R4
+
+- **RULE KMD-29** Keep fractional sizes when replicating: 13.5px body (ListKit, SideShift), 17.5px titles (CopeCart), 22.5px compound values (UniOps).
+  **Why** At exact 2x the ink widths only fit at the half-pixel. Rounding to 14 or 18 put every line end 2-5px off.
+  **Source** [R] R2, R4, R1
+
+- **RULE KMD-30** Do not copy his secondary greys for contrast. They sit at about 3:1:
+  - `#717784` on `#0e121b`: 3.0;
+  - `#8b8b8b` on `#f7f7f7`: 3.2;
+  - `#8d8d8d` on `#f4fcf4`: 3.3.
+  Our builds keep 4.5:1 and take his structure only.
+  **Why** The gate's `contrast.page` FAILs the reference itself. The premium read comes from the ink/grey split, not from the exact grey.
+  **Source** [R] R1, R4, R5
+
+- **RULE KMD-31** Choose card radius by card size, not by the control-height band:
+  - r8: 62px calendar events;
+  - r10: tables;
+  - r16-18: list cards;
+  - r21-22.5: strips and panels;
+  - r32.5-35: phones and bento cards.
+  **Why** The canon's `radius.ladder.boxes` bands (cap 25) FAIL all six references.
+  **Check** radius grows with the box's short side. **Source** [R] R1-R6
+
+- **RULE KMD-32** Give illustration and app tiles a radius proportional to the side, about 0.19 x side, with circular corners: 23/126, 33/186, 45.5/240, 74/381.
+  **Why** The four Rork tiles fit within 1px, rms 0.5-0.75; not squircles.
+  **Source** [R] R6 cell 4
+
+- **RULE KMD-33** Keep an inset well's radius close to its card's, not concentric: a well r29 inside a card r35 at a 10.5 side / 13 top inset (concentric would be 24.5).
+  **Why** It reads as an even rim. A strictly concentric inner corner looks pinched at that inset.
+  **Source** [R] R6
+
+- **RULE KMD-34** Build dark product UI from one surface, one raised step and one rule, with no blur:
+  - surface `#0e121b` (rail, sidebar, page, cards);
+  - raised `#181b25` (active nav, segmented track, footer strip, icon discs);
+  - rule `#222530`.
+  A floating tooltip gets a solid second edge `0 3px 0 #181b25` instead of a shadow.
+  **Why** Registered to 1.9 mean diff, with no shadow anywhere. It extends KMD-06 with the tooltip construction.
+  **Source** [R] R4
+
+- **RULE KMD-35** Draw line charts as straight segments with mitre joins (no curve smoothing):
+  - about 35px sampling, a 1.3px line in the one accent `#405bfb`;
+  - a 4px dot on the selected point;
+  - solid horizontals one step up, dashed 4/4 verticals at category centres;
+  - axis labels 13 in the third grey under the plot.
+  Bars come in pairs, 15 wide with a 4 gap at a 50 pitch, rounded on top only and sitting on the card edge.
+  **Source** [R] R4 main, small and step lines traced column by column
+
+- **RULE KMD-36** Calendar geometry:
+  - hour 64px;
+  - event top = slot + 4 and height = duration x 64 - 2, r8;
+  - title 14/480 at a 7.6px inset, time 13 at -0.03em on an 18px pitch;
+  - half-hour events centre their one line;
+  - the selected event gets an inset 1.5px dark same-hue ring, and its content shifts 2px inward.
+  **Why** All 14 events registered within 1px. **Source** [R] R3
+
+- **RULE KMD-37** Draw the "now" indicator in three parts, all under the events, in one warm colour (`#e0735a`):
+  - a 1px hairline across every day;
+  - a 2px bar through today only;
+  - a 9px dot on today's left day line.
+  **Source** [R] R3
+
+- **RULE KMD-38** Build popover detail rows as:
+  - rows at a 30px pitch;
+  - 15px icons one rung lighter than the text (`#8a8a8a` beside ink);
+  - a 13px icon-to-text gap;
+  - text 14 at -0.012em;
+  - a 14/500 title.
+  The header is a 10px colour swatch (r2.5) + a 14 grey category + three 15px icon actions. The popover is 304x256, r12, ring `#e6e6e6` + `0 4px 14px rgb(0 0 0/.05)`.
+  **Source** [R] R3 (confirms and tightens KMD-05 L2)
+
+- **RULE KMD-39** Put a grey label and an ink value at one size inside one filter control ("Range **Last 30 days**", "Scope **All tools**"). Pills are 32.5h r10, white on `#f7f7f7`, ring `#e6e6e6` + `0 1px 2px .05`.
+  **Source** [R] R1
+
+- **RULE KMD-40** Prefer one strip card split by 1px rules over separate KPI cards:
+  - icon at a 22px inset, text column at 52 (icon 16 + 14 gap);
+  - title 14, sub 13 grey;
+  - value 24/400, with a grey 13.5 qualifier on the value's baseline.
+  **Source** [R] R1 (four 257px cells)
+
+- **RULE KMD-41** Keep compound values at one size and grey only the unit words: "42 *hour* 18 *minutes*" at 22.5 with the units in `#7b7b7b`; "16*/50*" with the "/50" in `#a3a3a3`.
+  **Source** [R] R1
+
+- **RULE KMD-42** Build table hierarchy in one ink:
+  - size steps (13.5 name, 12.4 role);
+  - links shown by a pale underline (`#d5dae1`, offset 3), not colour;
+  - a 42h header band only 1-2% off the body (`#f8fafb`) with 13/500 labels and 14px icons;
+  - 38px rows split by `#ebecf0`;
+  - the free-text column truncated at a fixed width (308px).
+  **Source** [R] R2 (tightens KMD-15/16)
+
+- **RULE KMD-43** Mobile frames:
+  - 430x932 at r32.5, 32px apart;
+  - SF Pro at the iOS ladder 24/600, 20/600, 17/500, 15, 13-13.5, 13/500;
+  - status time 17/600.
+  His caption says "SF Pro Rounded", but the shipped frame is SF Pro: terminals are flat and the widths fit SF Pro within 0.5px.
+  **Source** [R] R5; X post 2112914617944998068
+
+- **RULE KMD-44** Show progress by structure:
+  - completed items get a 1px saturated ring on their 50 tint (`#0bbb46` on `#f4fcf4`);
+  - not-started items stay white with a `#e6e6e6` ring;
+  - a 3px connector runs through the 22px gaps;
+  - a 44px ring with a 3.5 stroke carries the count.
+  The only drop shadow on the screen sits under the round primary action (44px play, gradient `#4acc76` → `#15bd4d`, 1px darker rim, 8px drop).
+  **Source** [R] R5
+
+- **RULE KMD-45** Marketing illustrations use one 4-step grey ladder (`#303030` `#383838` `#504e4e` `#656262`) + white for the single focal object per cell + one brand hue per section, built from primitives: 6px round strokes, pills, rounded rects, arcs. Titles are Helvetica Neue 500 36/-0.02em, centred in the narrow row and left-aligned at 43px in the wide row.
+  **Source** [R] R6 (0.9 mean diff)
+
+- **RULE KMD-46** Centre control labels on the cap: cap centre = box centre within 0.5px. Calendar event blocks are the exception: top-aligned at 7.6px.
+  **Why** UniOps pill labels registered only after moving down 1.5px to his cap position. The gate's `align.vertical-centre` then passed; it still flags the event blocks, a known false positive for multi-line blocks.
+  **Source** [R] R1, R3
+
+- **RULE KMD-47** Read his X design posts for type and colour, and take grid behaviour from case originals. In the calendar post, events drift 18-30px off the day lines (composed, not computed): never copy that offset into product code.
+  **Source** [R] R3
+
+- **RULE KMD-48** Solve the face per product from a 6-8 string width set before building:
+  - Inter: UniOps, CopeCart, the calendar post;
+  - SF Pro: SideShift, and the closest fit for ListKit (about 1px per string, still unidentified);
+  - Helvetica Neue 500: Rork marketing titles.
+  **Why** One wrong face makes every inner word drift 2-6px even when line ends register (ListKit overlay).
+  **Source** [R] R1-R6
+
+- **RULE KMD-49** Rank his work's premium read by these measured constants, in order:
+  - one family at 400 with ink/grey hierarchy;
+  - flat surfaces with 1px one-step rules, blur only on floating layers and the round primary;
+  - one accent, with status only as 50/100/600 triples;
+  - exact repeated pitches (38 / 57.5 / 64 / 120 / 30);
+  - radii scaled to box size;
+  - labels on the cap centre.
+  **Source** [R] R1-R6 synthesis (KARGUL-REPLICAS-NOTES.md)
+
+Canon corrections these rules imply (for `system/canon/product-ui.json` when the founder confirms): `type.weights` should allow 400 as the app body weight, `type.sizes` should allow 6-10 in app views, `radius.ladder.boxes` should scale with box size above 80px, and `align.vertical-centre` should exempt multi-line event blocks.

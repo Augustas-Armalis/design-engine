@@ -92,41 +92,41 @@ export default function KargulR1() {
         <div style={box(567, 329, 2166, 1800, { borderRadius: '21px 21px 0 0', background: BG, boxShadow: '0 0 0 1px #e9e9e9' })} />
         {T(623, 385, 15, 500, INK, 'Dashboard')}
         <div style={box(797, 397, 6, 6, { borderRadius: 9, background: '#c4c4c4' })} />
-        {T(823, 385, 14.5, 400, SUB, 'Lorem ipsum dolor sit amet dummy')}
-        <Pill x={619} w={398}><Ico I={RiCalendarLine} x={645 - 619} y={469 - 450} s={14} c="#8a8a8a" />{T(691 - 619, 470 - 450, 14, 400, '#8a8a8a', <>Range <span style={{ color: INK, marginLeft: 1 }}>Last 30 days</span></>)}<Ico I={RiArrowDownSLine} x={964 - 619} y={467 - 450} s={14} c="#8a8a8a" /></Pill>
-        <Pill x={1036} w={331}><Ico I={RiFilter3Line} x={1061 - 1036} y={469 - 450} s={14} c="#8a8a8a" />{T(1107 - 1036, 470 - 450, 14, 400, '#8a8a8a', <>Scope <span style={{ color: INK, marginLeft: 1 }}>All tools</span></>)}<Ico I={RiArrowDownSLine} x={1315 - 1036} y={467 - 450} s={14} c="#8a8a8a" /></Pill>
-        <Pill x={1387} w={304}><Ico I={RiContactsBook2Line} x={1412 - 1387} y={469 - 450} s={14} c="#8a8a8a" />{T(1459 - 1387, 470 - 450, 14, 400, '#8a8a8a', <>Role <span style={{ color: INK, marginLeft: 1 }}>All roles</span></>)}<Ico I={RiArrowDownSLine} x={1640 - 1387} y={467 - 450} s={14} c="#8a8a8a" /></Pill>
-        <Pill x={2170} w={212}><Ico I={RiRefreshLine} x={2201 - 2170} y={467 - 450} s={15} c="#8a8a8a" />{T(2253 - 2170, 470 - 450, 14.5, 400, INK, 'Refresh')}</Pill>
+        {T(823, 385, 14, 400, SUB, 'Lorem ipsum dolor sit amet dummy')}
+        <Pill x={619} w={398}><Ico I={RiCalendarLine} x={645 - 619} y={469 - 450} s={14} c="#8a8a8a" />{T(691 - 619, 473 - 450, 14, 400, '#8a8a8a', <>Range <span style={{ color: INK, marginLeft: 1 }}>Last 30 days</span></>)}<Ico I={RiArrowDownSLine} x={964 - 619} y={467 - 450} s={14} c="#8a8a8a" /></Pill>
+        <Pill x={1036} w={331}><Ico I={RiFilter3Line} x={1061 - 1036} y={469 - 450} s={14} c="#8a8a8a" />{T(1107 - 1036, 473 - 450, 14, 400, '#8a8a8a', <>Scope <span style={{ color: INK, marginLeft: 1 }}>All tools</span></>)}<Ico I={RiArrowDownSLine} x={1315 - 1036} y={467 - 450} s={14} c="#8a8a8a" /></Pill>
+        <Pill x={1387} w={304}><Ico I={RiContactsBook2Line} x={1412 - 1387} y={469 - 450} s={14} c="#8a8a8a" />{T(1459 - 1387, 473 - 450, 14, 400, '#8a8a8a', <>Role <span style={{ color: INK, marginLeft: 1 }}>All roles</span></>)}<Ico I={RiArrowDownSLine} x={1640 - 1387} y={467 - 450} s={14} c="#8a8a8a" /></Pill>
+        <Pill x={2170} w={212}><Ico I={RiRefreshLine} x={2201 - 2170} y={467 - 450} s={15} c="#8a8a8a" />{T(2253 - 2170, 473 - 450, 14.5, 400, INK, 'Refresh')}</Pill>
         <div style={box(2404, 449, 277, 67, { borderRadius: 10, background: 'linear-gradient(180deg, #4ea9ff 0%, #4b9aff 30%, #4886fd 100%)', boxShadow: 'inset 0 1px 0 #70c7ff, 0 0 0 1px #4682fb, 0 4px 8px rgba(30,100,240,.18)', color: '#fff' })}>
           <Ico I={RiAddLine} x={2432 - 2404} y={466 - 449} s={16} c="#fff" />
-          {T(2477 - 2404, 470 - 449, 14.5, 450, '#fff', 'Connect tool')}
+          {T(2477 - 2404, 473 - 449, 14.5, 450, '#fff', 'Connect tool')}
         </div>
 
         {/* KPI strip: one card, 4 cells split by 1px rules */}
         <Card x={619} y={554} w={2061} h={242} r={22.5} />
         {[1134, 1648, 2162].map((x) => <div key={x} style={box(x, 555, 2, 240, { background: LINE })} />)}
-        {kpi.map(([I, t, s, x]) => (<div key={t}><Ico I={I} x={x + 44} y={597} s={16} c="#6f6f6f" />{T(x + 104, 600, 14.5, 400, INK, t)}{T(x + 103, 647, 13.5, 400, SUB, s)}</div>))}
+        {kpi.map(([I, t, s, x]) => (<div key={t}><Ico I={I} x={x + 44} y={597} s={16} c="#6f6f6f" />{T(x + 104, 600, 14, 400, INK, t)}{T(x + 103, 647, 13, 400, SUB, s)}</div>))}
         {T(723, 711, 24, 400, INK, '15')}
-        <Av x={787} y={704} s={50} bg="#ffc0c5" fg="#681219" t="S" ring /><Av x={821} y={704} s={50} bg="#c5d8ff" fg="#122368" t="J" ring /><Av x={855} y={704} s={50} bg="#d5c8ff" fg="#2b1468" t="A" ring />
-        {T(916, 714, 14.5, 400, SUB, '+12 others')}
-        {T(1238, 711, 24, 400, INK, '8')}{T(1283, 714, 14.5, 400, SUB, '+2 this month')}
-        {T(1752, 711, 24, 400, INK, <>16<span style={{ color: '#a3a3a3' }}>/50</span></>)}{T(1888, 714, 14.5, 400, SUB, '+24 available')}
-        {T(2267, 711, 24, 400, INK, '3')}{T(2312, 714, 14.5, 400, SUB, 'to review')}
+        <Av x={789} y={712} s={33} bg="#ffc0c5" fg="#681219" t="S" ring /><Av x={822} y={712} s={33} bg="#c0d5ff" fg="#122368" t="J" ring /><Av x={855} y={712} s={33} bg="#cac0ff" fg="#351a75" t="A" ring />
+        {T(904, 713, 13.5, 400, SUB, '+12 others')}
+        {T(1238, 711, 24, 400, INK, '8')}{T(1283, 713, 13.5, 400, SUB, '+2 this month')}
+        {T(1752, 711, 24, 400, INK, <>16<span style={{ color: '#a3a3a3' }}>/50</span></>)}{T(1888, 713, 13.5, 400, SUB, '+24 available')}
+        {T(2267, 711, 24, 400, INK, '3')}{T(2312, 713, 13.5, 400, SUB, 'to review')}
 
         {/* time strip */}
         <Card x={619} y={824} w={2061} h={241} r={22.5} />
         <div style={box(1648, 825, 2, 239, { background: LINE })} />
-        <Ico I={RiTimeLine} x={662} y={866} s={16} c="#6f6f6f" />{T(722, 869, 14.5, 400, INK, 'Time in tools')}{T(722, 917, 13.5, 400, SUB, 'Across 96 sessions')}
-        <Ico I={RiPlayCircleLine} x={1691} y={866} s={16} c="#6f6f6f" />{T(1751, 869, 14.5, 400, INK, 'Time in UniOps')}{T(1751, 917, 13.5, 400, SUB, 'Shared and personal tools combined')}
-        {T(723, 982, 24, 400, INK, <>42 <span style={{ color: '#7b7b7b' }}>hour</span> 18 <span style={{ color: '#7b7b7b' }}>minutes</span></>)}{T(1133, 989, 13, 400, '#a3a3a3', '(last 30 days)')}
-        {T(1753, 982, 24, 400, INK, <>36 <span style={{ color: '#7b7b7b' }}>hour</span> 15 <span style={{ color: '#7b7b7b' }}>minutes</span></>)}{T(2162, 989, 13, 400, '#a3a3a3', '(last 30 days)')}
+        <Ico I={RiTimeLine} x={662} y={866} s={16} c="#6f6f6f" />{T(722, 869, 14, 400, INK, 'Time in tools')}{T(722, 917, 13, 400, SUB, 'Across 96 sessions')}
+        <Ico I={RiPlayCircleLine} x={1691} y={866} s={16} c="#6f6f6f" />{T(1751, 869, 14, 400, INK, 'Time in UniOps')}{T(1751, 917, 13, 400, SUB, 'Shared and personal tools combined')}
+        {T(723, 983, 22.5, 400, INK, <>42 <span style={{ color: '#7b7b7b' }}>hour</span> 18 <span style={{ color: '#7b7b7b' }}>minutes</span></>)}{T(1133, 987, 13, 400, '#a3a3a3', '(last 30 days)')}
+        {T(1753, 983, 22.5, 400, INK, <>36 <span style={{ color: '#7b7b7b' }}>hour</span> 15 <span style={{ color: '#7b7b7b' }}>minutes</span></>)}{T(2162, 987, 13, 400, '#a3a3a3', '(last 30 days)')}
 
         {/* workspace setup */}
         <Card x={619} y={1094} w={2061} h={316} r={22} />
         <div style={box(619, 1252, 2061, 2, { background: LINE })} />
         {[1134, 1648, 2162].map((x) => <div key={x} style={box(x, 1254, 2, 155, { background: LINE })} />)}
-        {T(656, 1143, 14.5, 450, INK, 'Workspace setup')}
-        {T(657, 1191, 13.5, 400, SUB, 'Complete the steps below to get the most out of UniOps.')}
+        {T(656, 1143, 14, 450, INK, 'Workspace setup')}
+        {T(657, 1191, 13, 400, SUB, 'Complete the steps below to get the most out of UniOps.')}
         {[2200, 2279].map((x) => <div key={x} style={box(x, 1170, 70, 10, { borderRadius: 9, background: '#1daf61' })} />)}
         {[2357, 2436].map((x) => <div key={x} style={box(x, 1170, 70, 10, { borderRadius: 9, background: '#e6e6e6' })} />)}
         {T(2523, 1157, 13.5, 400, SUB, '2/4')}
@@ -135,16 +135,16 @@ export default function KargulR1() {
           <div key={t as string}>
             {st === 'done' ? <div style={box(x as number, 1293, 34, 34, { borderRadius: 99, background: '#c2f5da', display: 'grid', placeItems: 'center' })}><RiCheckLine size={11} color="#225c3e" /></div>
               : <div style={box(x as number, 1293, 34, 34, { borderRadius: 99, boxShadow: `inset 0 0 0 1.5px ${st === 'on' ? '#4785ff' : '#aeaeae'}` })}>{st === 'on' && <div style={{ position: 'absolute', left: 6.25, top: 6.25, width: 4.5, height: 4.5, borderRadius: 9, background: '#4785ff' }} />}</div>}
-            {T((x as number) + 62, 1295, 14.5, 400, INK, t)}{T((x as number) + 62, 1345, 13.5, 400, SUB, s)}
+            {T((x as number) + 62, 1295, 14, 400, INK, t)}{T((x as number) + 62, 1345, 13, 400, SUB, s)}
           </div>
         ))}
 
         {/* three list cards */}
         {[619, 1320, 2020].map((x) => <Card key={x} x={x} y={1446} w={661} h={700} r={18} />)}
         {[656, 1357, 2057].map((x) => sepY.map((y) => <div key={`${x}${y}`} style={box(x, y, 588, 2, { background: '#e9e9e9' })} />))}
-        {T(658, 1495, 14.5, 400, INK, 'Usage by tool')}<Dot x={850} y={1505} />{T(874, 1497, 13.5, 400, SUB, 'last 7 days')}
-        {T(1358, 1495, 14.5, 400, INK, 'Usage by member')}{T(2059, 1495, 14.5, 400, INK, 'Needs attention')}
-        {[1111, 1811, 2512].map((x) => (<div key={x}>{T(x, 1497, 14, 400, '#4785ff', 'View all')}<Ico I={RiArrowRightUpLine} x={x + 106} y={1494} s={14} c="#4785ff" /></div>))}
+        {T(658, 1495, 14, 400, INK, 'Usage by tool')}<Dot x={850} y={1505} />{T(874, 1497, 13.5, 400, SUB, 'last 7 days')}
+        {T(1358, 1495, 14, 400, INK, 'Usage by member')}{T(2059, 1495, 14, 400, INK, 'Needs attention')}
+        {[1111, 1811, 2512].map((x) => (<div key={x}>{T(x, 1497, 13, 400, '#4785ff', 'View all')}<Ico I={RiArrowRightUpLine} x={x + 109} y={1494} s={14} c="#4785ff" /></div>))}
         {([['Higgsfield', '9 users', '9h 47m', '#d7ff17'], ['Frame.io', '7 users', '7h 36m', '#6e5bff'], ['Claude', '5 users', '5h 12m', '#e9673f'], ['Fal.ai', '3 users', '3h 58m', '#1c1c1c'], ['Kalodata', '2 users', '3h 45m', '#2a93ff']] as const).map(([n, u, t, c], i) => (
           <div key={n}><Tile x={654} y={rows[i]} bg={c} />{T(723, rows[i] + 14, 15, 450, INK, n)}{T(1033, rows[i] + 8, 13.5, 400, SUB, <>{u} <span style={{ color: '#c8c8c8' }}>·</span> {t}</>)}</div>
         ))}

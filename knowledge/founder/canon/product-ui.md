@@ -73,3 +73,6 @@ Decided defaults, 2026-10-21. For screens inside an existing client app, `client
 
 ## Founder verdict 2026-10-22 (cadence-app r8, partial)
 On the Cadence calendar built in Tanjim's post system, the founder said: "his style is not my favorite... it's good for variety yet I wouldn't use it". So the Tanjim/gr8r system (Manrope 400, warm wells, 0.5px hairlines; TG-01..38) is a variety option only, never the default product floor. The default product floor stays Rico/Kargul/AlignUI detail (see this page). Take from him only the method (post system vs code system, solving the font from line widths, centring discipline), not the look.
+
+## Correction 2026-10-22, from the Rico and Kargul pixel replicas (RD-05, KMD-27/28)
+Both founder-named masters' own screens failed our product gate. They use body weight 400 (60-80% of text) and 6-10 type sizes in 0.5-1px steps (13.5, 17.5), with hierarchy carried by ink against one grey and by half-step sizes, not by bold. The canon now allows weights {400, 450, 500, 550, 600} and up to 10 sizes in a product view (`system/canon/product-ui.json`). The 500/600-only rule and the 4-size cap are superseded. Contrast stays at 4.5:1 even though both use roughly 3:1 secondary greys (KMD-32, RD-10).

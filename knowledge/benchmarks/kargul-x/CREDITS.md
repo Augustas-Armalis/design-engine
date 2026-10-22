@@ -33,3 +33,14 @@ Study evidence only. Every post and image here belongs to Marcel Kargul / Kargul
 - `latest/kxl-<postIndex>-<n>-<postId>.<ext>`: 39 files, photos at `?name=orig`, video posts as `-thumb` stills; `<postIndex>` is the index in `posts-latest.json`. Removed after download as not his design work or personal: LinkedIn profile screenshots (008), desk photo (010), third-party sites (016 bentogrids, 017 deadsimplesites, 041 gradient site), X-post screenshots (018), a Lighthouse score (045), laptop photo (048).
 - Design posts kept and what they show: 003 dark code editor; 004 light project UI; 005 mobile onboarding (6 screens); 009 partner cards; 011 manage team members; 014-0..2 calendar week view + event popover (90.7k views); 015 calendar on desktop; 019 onboarding; 020 search modal; 021 audit funnel page; 023 new kargul.studio; 026 comments screen; 029 calculator mobile; 030 project detail; 031 profile settings; 032-0..3 UniOps mac app (light dashboard, dark settings with open select, team table, dark invite); 033/034/038 SF Pro Rounded vs Google Sans Flex tracking cards; 035 leaderboard; 039 mobile inbox; 040 site on mobile; 043 analytics dashboard; 044-0/1 gradient before/after; 046-0..2 CRM people list (3 slices); video stills 007, 012, 013, 024, 028, 037.
 - Measured in `knowledge/web/kargul-micro-details.md`.
+
+## Newest posts (captured 2026-10-22)
+
+- `new-2026-10-22/page1.json`, `page2.json`: the same public FixTweet endpoint, 2 pages with the cursor and a 3s pause; page 2 overlaps the 2026-10-21 capture. `media.txt` lists every media item.
+- Kept, at `name=orig`:
+  - `kxn-2112998823715103027-0.jpg`: "mac app UI", Lemon; 2880x2070, the same frame as case `lemon-06`.
+  - `kxn-2112998516767281562-0..3`: "recent branding work".
+  - `kxn-2112914617944998068-0.jpg`: "How to design the perfect mobile app ... 430px width, 932px height"; the SideShift frame, the same as case `sideshift-07`.
+- Removed as not his work: `2112941742991532471` (a mindcloud.co screenshot).
+- Video posts were not downloaded.
+- Used by `work/replicas/KARGUL-REPLICAS-NOTES.md` (R5 confirms the 430x932 claim; the face is SF Pro, not SF Pro Rounded).

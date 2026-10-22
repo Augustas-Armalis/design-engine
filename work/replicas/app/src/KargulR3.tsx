@@ -59,9 +59,9 @@ export default function KargulR3() {
         {/* toolbar */}
         <div style={{ position: 'absolute', left: d(342), top: d(147), width: 65, height: 32, borderRadius: 8, boxShadow: 'inset 0 0 0 1px #dcdcda', display: 'grid', placeItems: 'center', fontSize: 14, fontWeight: 500, letterSpacing: '-0.01em' }}>Today</div>
         <div style={{ position: 'absolute', left: d(488), top: d(147), width: 67, height: 32, borderRadius: 8, boxShadow: 'inset 0 0 0 1px #dcdcda' }}>
-          <svg style={{ position: 'absolute', left: d(510 - 488), top: d(168 - 147) }} width={9} height={14} viewBox="0 0 9 14" aria-hidden><path d="M6.8 2.2 2.2 7l4.6 4.8" fill="none" stroke="#1c1c1c" strokeWidth={1.7} strokeLinecap="round" strokeLinejoin="round" /></svg>
+          <svg style={{ position: 'absolute', left: d(510 - 488) + 1.25, top: d(168 - 147) - 1.5 }} width={9} height={14} viewBox="0 0 9 14" aria-hidden><path d="M6.8 2.2 2.2 7l4.6 4.8" fill="none" stroke="#1c1c1c" strokeWidth={1.7} strokeLinecap="round" strokeLinejoin="round" /></svg>
           <div style={{ position: 'absolute', left: d(554 - 488), top: 8, width: 1, height: 16, background: '#dcdcda' }} />
-          <svg style={{ position: 'absolute', left: d(576 - 488), top: d(168 - 147) }} width={9} height={14} viewBox="0 0 9 14" aria-hidden><path d="M2.2 2.2 6.8 7l-4.6 4.8" fill="none" stroke="#1c1c1c" strokeWidth={1.7} strokeLinecap="round" strokeLinejoin="round" /></svg>
+          <svg style={{ position: 'absolute', left: d(576 - 488) + 1.25, top: d(168 - 147) - 1.5 }} width={9} height={14} viewBox="0 0 9 14" aria-hidden><path d="M2.2 2.2 6.8 7l-4.6 4.8" fill="none" stroke="#1c1c1c" strokeWidth={1.7} strokeLinecap="round" strokeLinejoin="round" /></svg>
         </div>
         <div style={{ position: 'absolute', left: d(638), top: d(147), width: 200, height: 32, borderRadius: 9, background: '#ededed' }}>
           <span style={{ position: 'absolute', left: d(668 - 638), top: 0, lineHeight: '32px', fontSize: 14, color: SUB }}>Day</span>

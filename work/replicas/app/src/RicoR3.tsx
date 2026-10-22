@@ -23,8 +23,8 @@ const Box = (p: { x: number; y: number; w: number; h: number; style?: CSSPropert
   <div style={{ position: 'absolute', left: p.x, top: p.y, width: p.w, height: p.h, boxSizing: 'border-box', ...p.style }}>{p.children}</div>
 
 // paper plane with two speed lines (his Super Computer mark), drawn at the measured footprint
-function Plane({ x, y, s, c, sw }: { x: number; y: number; s: number; c: string; sw: number }) {
-  return <svg width={s} height={s} viewBox="0 0 24 24" fill="none" stroke={c} strokeWidth={sw} strokeLinecap="round" strokeLinejoin="round" style={{ position: 'absolute', left: x, top: y }}>
+function Plane({ x, y, s, c, sw, fill }: { x: number; y: number; s: number; c: string; sw: number; fill?: boolean }) {
+  return <svg width={s} height={s} viewBox="0 0 24 24" fill={fill ? c : 'none'} stroke={c} strokeWidth={sw} strokeLinecap="round" strokeLinejoin="round" style={{ position: 'absolute', left: x, top: y }}>
     <path d="M21.5 2.5 8.6 9.2l4.3 3.1 3.1 4.3Z" /><path d="M21.5 2.5 12.9 12.3" /><path d="M6.6 15.4 4 18M8.9 17.9 4.6 22.2" />
   </svg>
 }
@@ -34,7 +34,7 @@ function Workflow2({ cx, cy }: { cx: number; cy: number }) {
   </svg>
 }
 function GlobeCursor({ cx, cy }: { cx: number; cy: number }) {
-  return <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke={C.sub} strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" style={{ position: 'absolute', left: cx - 9, top: cy - 9 }}>
+  return <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke={C.def} strokeWidth="1.1" strokeLinecap="round" strokeLinejoin="round" style={{ position: 'absolute', left: cx - 9, top: cy - 9 }}>
     <path d="M14.6 8.2A6.6 6.6 0 1 0 8.3 14.8" /><path d="M1.8 8.2h12.8M8.2 1.6c-1.9 1.9-2.8 4.1-2.8 6.6s.9 4.7 2.8 6.6M8.2 1.6c1.6 1.6 2.6 3.6 2.8 5.8" /><path d="m10.4 10.4 5.6 2.2-2.5 1-1 2.5Z" />
   </svg>
 }
@@ -49,7 +49,7 @@ function Pixels() {
     const ex = Math.min(1, (x - 56) / 90, (664 - x) / 90), ey = Math.min(1, (r + 1) / 3, (12 - r) / 3)
     const a = rnd() * Math.max(0, ex) * ey
     if (a < 0.12) continue
-    cells.push(<rect key={`${r}-${c}`} x={x} y={y} width="2.4" height="2.4" fill={a > 0.55 ? '#f1f1f2' : '#f7f7f8'} />)
+    cells.push(<rect key={`${r}-${c}`} x={x} y={y} width="2.4" height="2.4" fill={a > 0.6 ? '#f3f3f4' : '#f8f8f9'} />)
   }
   return <svg width="720" height="60" style={{ position: 'absolute', left: 0, top: 0 }}>{cells}</svg>
 }
@@ -64,20 +64,20 @@ export default function RicoR3() {
     <style>{'.rr, .rr * { corner-shape: round !important; }'}</style>
     <Pixels />
     {/* heading */}
-    <Plane x={248.5} y={59.5} s={17} c={C.strong} sw={1.35} />
-    <Tx x={279.5} cap={61.5} fs={19} ls={-0.2}>Alpaca Super Computer</Tx>
+    <Plane x={246.6} y={58.9} s={18} c={C.strong} sw={1.7} fill />
+    <Tx x={279.5} cap={62.3} fs={19} ls={-0.2}>Alpaca Super Computer</Tx>
     {/* composer */}
     <Box x={120} y={106} w={480} h={124} style={{ background: '#fff', borderRadius: 19.5, boxShadow: `0 0 0 .7px ${C.ring}, 0 1px 2px rgba(0,0,0,.05)` }} />
     <Tx x={134.7} cap={123.6} fs={14} c={C.sub}>What should we work on next?</Tx>
     <Box x={134} y={194} w={24} h={24} style={{ background: '#fff', borderRadius: 8, boxShadow: soft }} />
-    <Ic I={Plus} cx={146} cy={206} s={13} sw={0.95} />
+    <Ic I={Plus} cx={146} cy={206} s={15.5} sw={0.85} />
     <Box x={166} y={194} w={24} h={24} style={{ background: '#fff', borderRadius: 8, boxShadow: soft }} />
     <Workflow2 cx={178} cy={206} />
     <Box x={198} y={194} w={168} h={24} style={{ background: C.well, borderRadius: 8 }} />
-    <Plane x={205.5} y={200} s={11.5} c={C.strong} sw={1.5} />
+    <Plane x={203.9} y={199.1} s={13.4} c={C.strong} sw={1.35} />
     <Tx x={224.7} cap={201.6} fs={13} ls={-0.1}>Super Computer</Tx>
     <Tx x={333.9} cap={202.2} fs={11} c={C.blue}>New</Tx>
-    <Ic I={Mic} cx={541.6} cy={206} s={12} sw={1.05} />
+    <Ic I={Mic} cx={542} cy={206} s={15.5} sw={0.85} />
     <Box x={562} y={194} w={24} h={24} style={{ background: C.send, borderRadius: 12 }} />
     <Ic I={ArrowUp} cx={574} cy={206} s={12} sw={1.2} c="#fff" />
     {/* suggestion cards */}
@@ -86,8 +86,8 @@ export default function RicoR3() {
       <Tx x={x + 14.7} cap={304.6} fs={13} w={500}>{t}</Tx>
       <Tx x={x + 14.5} cap={326.2} fs={12} c={C.def}>{s}</Tx>
     </div>)}
-    <Ic I={Plus} cx={143} cy={277} s={15} sw={1.0} />
-    <Ic I={ScanSearch} cx={307} cy={277} s={15} sw={1.0} />
-    <GlobeCursor cx={471.5} cy={277.5} />
+    <Ic I={Plus} cx={143} cy={277} s={20} sw={0.75} />
+    <Ic I={ScanSearch} cx={307} cy={277} s={17.3} sw={1.05} c={C.def} />
+    <div style={{ position: 'absolute', left: 0, top: 0, transform: 'scale(1.07)', transformOrigin: '471.25px 277.5px' }}><GlobeCursor cx={471.25} cy={277.5} /></div>
   </div>
 }

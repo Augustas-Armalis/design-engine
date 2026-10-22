@@ -25,6 +25,7 @@ import CadenceAffect from './CadenceAffect'
 import TanjimKanban from './TanjimKanban'
 import CadenceApp from './CadenceApp'
 import CadenceHero from './CadenceHero'
+import CadenceRico from './CadenceRico'
 import { CadenceHeroV1, CadenceHeroV2, CadenceHeroV3 } from './CadenceHeroes'
 import RicoR1 from './RicoR1'
 import RicoR2 from './RicoR2'
@@ -40,6 +41,6 @@ import KargulR5 from './KargulR5'
 import KargulR6 from './KargulR6'
 
 // replicas: #/finance (AlignUI Transactions); more references are added as routes
-const ROUTES: Record<string, () => React.JSX.Element> = { '#/finance': Finance, '#/clokora': Clokora, '#/decision': Decision, '#/search': Search, '#/calendar': Calendar, '#/event': EventCard, '#/bento': Bento, '#/kiso': KargulIso, '#/bentok': BentoK, '#/khero': KargulHero, '#/attio': AttioHero, '#/linear': LinearHero, '#/glass': CadenceGlass, '#/lbento': LinearBento, '#/abento': AttioBento, '#/alignbento': AlignBento, '#/affectbento': AffectBento, '#/cfig': CadenceFig, '#/cattio': CadenceAttio, '#/calign': CadenceAlign, '#/caffect': CadenceAffect, '#/tkanban': TanjimKanban, '#/capp': CadenceApp, '#/chero': CadenceHero, '#/chv1': CadenceHeroV1, '#/chv2': CadenceHeroV2, '#/chv3': CadenceHeroV3, '#/ricor1': RicoR1, '#/ricor2': RicoR2, '#/ricor3': RicoR3, '#/ricor4': RicoR4, '#/ricor5': RicoR5, '#/ricor6': RicoR6, '#/kargulr1': KargulR1, '#/kargulr2': KargulR2, '#/kargulr3': KargulR3, '#/kargulr4': KargulR4, '#/kargulr5': KargulR5, '#/kargulr6': KargulR6 }
+const ROUTES: Record<string, () => React.JSX.Element> = { '#/finance': Finance, '#/clokora': Clokora, '#/decision': Decision, '#/search': Search, '#/calendar': Calendar, '#/event': EventCard, '#/bento': Bento, '#/kiso': KargulIso, '#/bentok': BentoK, '#/khero': KargulHero, '#/attio': AttioHero, '#/linear': LinearHero, '#/glass': CadenceGlass, '#/lbento': LinearBento, '#/abento': AttioBento, '#/alignbento': AlignBento, '#/affectbento': AffectBento, '#/cfig': CadenceFig, '#/cattio': CadenceAttio, '#/calign': CadenceAlign, '#/caffect': CadenceAffect, '#/tkanban': TanjimKanban, '#/capp': CadenceApp, '#/chero': CadenceHero, '#/crico': CadenceRico, '#/chv1': CadenceHeroV1, '#/chv2': CadenceHeroV2, '#/chv3': CadenceHeroV3, '#/ricor1': RicoR1, '#/ricor2': RicoR2, '#/ricor3': RicoR3, '#/ricor4': RicoR4, '#/ricor5': RicoR5, '#/ricor6': RicoR6, '#/kargulr1': KargulR1, '#/kargulr2': KargulR2, '#/kargulr3': KargulR3, '#/kargulr4': KargulR4, '#/kargulr5': KargulR5, '#/kargulr6': KargulR6 }
 const View = ROUTES[location.hash] ?? Finance
 createRoot(document.getElementById('root')!).render(<StrictMode><View /></StrictMode>)
