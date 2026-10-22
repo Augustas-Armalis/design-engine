@@ -1,6 +1,8 @@
 #!/usr/bin/env node
 // Render-and-check: load a page at desktop + mobile, screenshot it, measure it, report.
-// usage: node tools/check.mjs <url | path/to/file.html> [--name label] [--out reports]
+// usage: node tools/check.mjs <url | path/to/file.html> [--name label] [--out reports] [--w 1392 --h 932]
+// --w/--h: one fixed viewport instead of thresholds.json's desktop + mobile, for artboards that are not pages
+// (a product shot, an X-post crop, a bento render); tools/preflight.mjs passes them for those kinds.
 import { chromium } from 'playwright';
 import fs from 'node:fs';
 import path from 'node:path';
@@ -242,7 +244,8 @@ function evaluate(m, vp, axe) {
 // ---- run ----
 const browser = await chromium.launch();
 const report = { target: url, name, generated: new Date().toISOString(), viewports: [], summary: { pass: 0, warn: 0, fail: 0 }, fingerprint: {} };
-for (const vp of T.viewports) {
+const VPS = flag('w') && flag('h') ? [{ name: 'desktop', width: +flag('w'), height: +flag('h') }] : T.viewports;
+for (const vp of VPS) {
   const ctx = await browser.newContext({ viewport: { width: vp.width, height: vp.height }, deviceScaleFactor: 1, isMobile: vp.width < 600, hasTouch: vp.width < 600 });
   const page = await ctx.newPage();
   let loadIn = null;

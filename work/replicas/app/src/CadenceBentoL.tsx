@@ -7,7 +7,7 @@ import '@fontsource-variable/geist'
 import type { CSSProperties, ReactNode } from 'react'
 import {
   RiArrowLeftSLine, RiArrowRightSLine, RiArrowUpLine, RiCloseLine, RiTimeLine, RiGroupLine, RiShieldCheckLine,
-  RiSparkling2Fill, RiLockLine, RiBriefcase4Line, RiHome4Line, RiTeamLine, RiGlobalLine, RiMoonLine, RiFocus3Line,
+  RiSparkling2Fill, RiLockLine, RiBriefcase4Line, RiHome4Line, RiTeamLine, RiFocus3Line,
 } from '@remixicon/react'
 
 // ---- tokens (LN-25 dark cell: +3 L over the page, ring about +12 L; R4: one raised step, one rule) ----
@@ -121,8 +121,9 @@ function WeekFragment() {
       <Ev day={3} h0={12} h1={12.5} title="Standup" />
       <Ev day={3} h0={13} h1={13.75} title="Roadmap review" sub="13:00 – 13:45 · all free" kind="found" />
       <Ev day={3} h0={14} h1={15} title="Customer call" sub="14:00 – 15:00" />
-      <Ev day={4} h0={10} h1={11} title="Retro" sub="10:00 – 11:00" />
-      <Ev day={4} h0={12.5} h1={13.5} title="Lunch" sub="12:30 – 13:30" />
+      {/* Friday bleeds off the cell edge: 30-min title-only blocks (like Standup) so no time label is cut (designers-eye DE-07) */}
+      <Ev day={4} h0={10} h1={10.5} title="Retro" />
+      <Ev day={4} h0={12.5} h1={13} title="Lunch" />
 
       {/* the one accent light: lifts the grid around the answer (LN-28) */}
       <div style={abs(380, 120, 520, 300, { background: 'radial-gradient(50% 50% at 50% 50%, rgba(139,140,240,0.13) 0%, rgba(139,140,240,0) 100%)', pointerEvents: 'none' })} />
@@ -173,7 +174,8 @@ function AskFragment() {
           <span style={{ fontSize: 12.5, color: MUTE }}>found 3 times</span>
         </div>
         <div style={abs(14, 46, 316, 40, { fontSize: 13.5, lineHeight: '20px', color: SUB })}>Thursday works for all four, and nobody's focus block has to move.</div>
-        {opts.map(([d, t, note, best], i) => (
+        {/* the third time sits below the cell's cut, not half-visible on it (DE-01) */}
+        {opts.slice(0, 2).map(([d, t, note, best], i) => (
           <div key={t} style={abs(12, 98 + i * 46, 320, 40, {
             borderRadius: 10, display: 'flex', alignItems: 'center', gap: 10, padding: '0 10px 0 12px', boxSizing: 'border-box',
             background: best ? V_FILL : STEP, boxShadow: best ? `inset 0 0 0 1px ${V_RING}` : 'none',
@@ -272,8 +274,8 @@ function ConflictFragment() {
 function AvailabilityFragment() {
   const rows: [typeof RiHome4Line, string, string][] = [
     [RiBriefcase4Line, 'Work calendar', 'Synced'], [RiHome4Line, 'Personal calendar', 'Busy only'], [RiTeamLine, 'Team rota', 'Synced'],
-    [RiTimeLine, 'Working hours', '09:00 – 17:30'], [RiGlobalLine, 'Time zone', 'London'], [RiMoonLine, 'Never book', 'After 18:00'],
-  ]
+    [RiTimeLine, 'Working hours', '09:00 – 17:30'],
+  ] // ends on a whole row: a fifth row was cut diagonally by the cell bottom ("London" 14% visible, DE-01)
   return (
     <div data-product style={abs(34, 118, 318, 300, { transform: 'perspective(900px) rotateX(22deg) rotateZ(9deg)', transformOrigin: '0 0' })}>
       <div style={abs(0, 0, 318, 300, { borderRadius: 14, background: PANEL, boxShadow: ring() })} />

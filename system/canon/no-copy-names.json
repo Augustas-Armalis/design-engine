@@ -1,0 +1,17 @@
+{
+  "updated": "2026-10-22",
+  "source": "Hard rule, founder 2026-10-22 (knowledge/founder/canon/INDEX.md): never copy names, logos or copy from references. Names below come from the studied reference corpora (knowledge/benchmarks/kargul-studio-2026-10 case folders, the replica routes, the studios themselves) and the stock sample brands the canon bans. tools/preflight.mjs fails a deliverable whose visible text contains any of them (whole word, case-insensitive). Generic words among Kargul's client names (home, hunt, lemon, folk, volcano, stardust, breez, gopher) are left out on purpose: they would flag ordinary copy.",
+  "names": [
+    { "name": "Kargul", "from": "studio" }, { "name": "Marcel Kargul", "from": "studio" }, { "name": "heyrico", "from": "studio" },
+    { "name": "affectUI", "from": "studio" }, { "name": "AlignUI", "from": "studio" }, { "name": "Lunor", "from": "studio" },
+    { "name": "Agent Arcade", "from": "kargul case" }, { "name": "Altrina", "from": "kargul case" }, { "name": "AM Trades", "from": "kargul case" },
+    { "name": "BoomTax", "from": "kargul case" }, { "name": "Chatsheet", "from": "kargul case" }, { "name": "Clokora", "from": "kargul case" },
+    { "name": "CopeCart", "from": "kargul case" }, { "name": "DefendLab", "from": "kargul case" }, { "name": "Ecom Jobs", "from": "kargul case" },
+    { "name": "Listkit", "from": "kargul case" }, { "name": "Opero Labs", "from": "kargul case" }, { "name": "Opsis Partners", "from": "kargul case" },
+    { "name": "Ostium", "from": "kargul case" }, { "name": "Plunio", "from": "kargul case" }, { "name": "Rork", "from": "kargul case" },
+    { "name": "RunInfra", "from": "kargul case" }, { "name": "SF Tensor", "from": "kargul case" }, { "name": "SideShift", "from": "kargul case" },
+    { "name": "Supermetal", "from": "kargul case" }, { "name": "TxtCart", "from": "kargul case" }, { "name": "UniOps", "from": "kargul case" },
+    { "name": "Uplinq", "from": "kargul case" }, { "name": "ZeroLeaks", "from": "kargul case" }
+  ],
+  "stock": ["Acme", "Northwind", "Contoso", "Initech", "Globex", "Lorem ipsum", "Your Logo", "Company Name", "Placeholder", "TODO", "FIXME"]
+}

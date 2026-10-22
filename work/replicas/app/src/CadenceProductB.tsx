@@ -79,7 +79,7 @@ function Sidebar() {
           <div style={{ fontSize: 12, color: T.mute, marginTop: 2, ...tnum }}>10:15 – 11:15 · Meet</div>
           <div style={{ ...row, marginTop: 10 }}>
             <Stack ids={['A', 'M', 'T']} s={20} />
-            <span style={{ marginLeft: 'auto', ...row, gap: 5, height: 28, padding: '0 10px 0 8px', borderRadius: 11, fontSize: 12.5, fontWeight: 500, ...stroke }}><RiVideoOnLine size={14} />Join</span>
+            <span style={{ marginLeft: 'auto', ...row, gap: 5, height: 28, padding: '1px 10px 0 8px', borderRadius: 11, fontSize: 12.5, fontWeight: 500, ...stroke }}><RiVideoOnLine size={14} />Join</span>
           </div>
         </div>
       </div>
