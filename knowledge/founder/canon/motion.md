@@ -63,3 +63,9 @@ Decided defaults, 2026-10-21. **Default for every deliverable: no animation, scr
 
 ## Open
 - Motion for full multi-section sites (scroll reveals beyond Kaching's tokens) has no verdict on our own builds.
+
+## Recorded Tempra motion (2026-10-23, Reel 4K60, frame-exact)
+- **One clock** (`work/replicas/app/src/TempraMotion.tsx`) drives every video. Routes wrap the page in `<Clock mode>` and every delay comes from one table: H (hero), S (product story), L (dashboard load-in), C (chat component). Without a clock the stills render unchanged.
+- **Dashboard load-in (`#/cprodbl`):** the frame, then sidebar rows 35ms apart, then the header. Numbers roll digit by digit (`Roll`, 45ms per column, the space kept with `white-space: pre`). Bars grow, the line draws (pathLength dash), dots arrive. The week assembles by column (60ms) and row (40ms); the now-line draws; the rail; the found slot lands last (~2.4s).
+- **Chat component (`#/xaskv`):** the ask lands, then "Checking 5 calendars…" with a spinner while the source chips land. The answer streams word by word at 22 words/s, each word fading in over 180ms; citations land whole. Options rise, Book is pressed (scale 0.97), then Booked. Hidden words keep their space, so nothing below jumps.
+- **Recording rule:** never edit a file the recorded route imports while Reel is capturing. A Vite hot reload kills the capture ("Execution context was destroyed").

@@ -1,0 +1,121 @@
+{
+  "schema": "design-engine.library-asset/v1",
+  "id": "tempra-ask-component",
+  "project": "tempra",
+  "title": "Ask Tempra, standalone: the answer streams in",
+  "kind": "post-component",
+  "status": "awaiting-verdict",
+  "postable": true,
+  "verdict": {
+    "latest": null,
+    "round": null,
+    "date": null,
+    "words": null,
+    "ledger": "ledger/entries/tempra-x-weekend.json",
+    "after": "made after tempra-x-weekend r1 (2026-10-23), awaiting the founder's verdict"
+  },
+  "source": {
+    "app": "work/replicas/app",
+    "route": "#/xaskv",
+    "component": "work/replicas/app/src/AskTempraCard.tsx",
+    "viewport": [
+      1200,
+      1200
+    ],
+    "direction": "work/tempra-x/DIRECTION.md"
+  },
+  "renders": [
+    {
+      "file": "renders/ask-x.mp4",
+      "role": "single",
+      "format": "component-loop",
+      "recipe": {
+        "route": "#/xaskv",
+        "viewport": [
+          1200,
+          1200
+        ],
+        "scale": 3,
+        "fps": 60,
+        "duration": 7.2,
+        "tool": "Reel --preset x"
+      },
+      "w": 1200,
+      "h": 1200,
+      "bytes": 17883253,
+      "sha256": "b91bbe2c392262d8144fa08373cf3c3c47ebe8354f14442afe5d480227fe1573",
+      "rendered": "2026-10-23T14:04:43Z"
+    },
+    {
+      "file": "renders/ask-4k.mp4",
+      "role": "master",
+      "format": "component-loop",
+      "recipe": {
+        "route": "#/xaskv",
+        "viewport": [
+          1200,
+          1200
+        ],
+        "scale": 3,
+        "fps": 60,
+        "duration": 7.2,
+        "tool": "Reel --preset h264"
+      },
+      "w": 3600,
+      "h": 3600,
+      "bytes": 2456408,
+      "sha256": "4b0b4c0709cd29d8c1bb4d11322a81a913562431c03dc5ae122e396d0a7fa436",
+      "rendered": "2026-10-23T14:04:43Z"
+    },
+    {
+      "file": "renders/still.png",
+      "role": "still",
+      "format": "component-still",
+      "recipe": {
+        "route": "#/xask",
+        "viewport": [
+          1200,
+          1200
+        ],
+        "scale": 3
+      },
+      "w": 3600,
+      "h": 3600,
+      "bytes": 1539658,
+      "sha256": "7c968ea6f32bd8a59fb8fa876df6f154a860f001dd826dc12c406251d53de5c2",
+      "rendered": "2026-10-23T14:04:43Z"
+    }
+  ],
+  "checks": [
+    {
+      "label": "ask",
+      "route": "#/xask",
+      "kind": "post-component",
+      "w": 1200,
+      "h": 1200,
+      "format": "component-still",
+      "renders": [
+        "renders/still.png"
+      ],
+      "direction": "work/tempra-x/DIRECTION.md"
+    }
+  ],
+  "series": [
+    {
+      "id": "tempra-ask",
+      "stage": "component"
+    }
+  ],
+  "related": [
+    "tempra-product-week",
+    "tempra-ask-closeup"
+  ],
+  "conceptName": "Tempra, Fernhill",
+  "sample": true,
+  "alt": "The Ask Tempra panel on its own in a grey tray: a request to find 45 minutes, a spinner while five calendars are checked, an answer that streams in with small citation chips, three ranked times and a Book button that turns to Booked. Sample data, concept.",
+  "dates": {
+    "created": "2026-10-23",
+    "rendered": "2026-10-23"
+  },
+  "reservedFor": "augustasdesign"
+}

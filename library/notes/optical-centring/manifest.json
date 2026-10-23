@@ -2,7 +2,7 @@
   "schema": "design-engine.library-asset/v1",
   "id": "notes-optical-centring",
   "project": "notes",
-  "title": "Teaching card: centre the ink, not the line box",
+  "title": "Teaching card: centre the capitals, nudge once per font",
   "kind": "post-component",
   "status": "awaiting-verdict",
   "postable": true,
@@ -12,7 +12,7 @@
     "date": null,
     "words": null,
     "ledger": null,
-    "after": "made for the 24-25 Oct weekend, awaiting the founder's verdict"
+    "after": "v2 after tempra-x-weekend r1: \"the bottom button is bad cuz it has equal top and bottom gaps... depending on the font\""
   },
   "source": {
     "app": "work/replicas/app",
@@ -39,9 +39,9 @@
       },
       "w": 3240,
       "h": 4050,
-      "bytes": 1246541,
-      "sha256": "79e8cc64a2c5796d4f1ccc8d8aae1e23488be4cca7ffbd2840dcebe6fbb4232c",
-      "rendered": "2026-10-23T13:36:33Z"
+      "bytes": 1322896,
+      "sha256": "387f5d5eaa5788cb290c07d78e92bc28def53f9f9dd0a6bc8329245e7a265122",
+      "rendered": "2026-10-23T14:04:43Z"
     }
   ],
   "checks": [
@@ -67,7 +67,7 @@
   "related": [],
   "conceptName": null,
   "sample": true,
-  "alt": "Two dark Sign up buttons with measurement brackets: geometrically centred the label has 67.3 px above the capitals and 54.0 below the descenders; lifted 6 px it has 61.3 and 60.0. Below: a line box centres the font, not the letters; centre the ink, then nudge the label until the gaps match.",
+  "alt": "Four dark Sign up buttons. Flex centred, Geist capitals sit high (48.0 px above, 50.7 below) and Manrope capitals sit low (49.7 above, 48.3 below). Nudged once per font, both match (49.3 and 49.3, 49.0 and 49.0). Below: centre the capitals, not the line box; measure each font once and keep the nudge in your button token.",
   "dates": {
     "created": "2026-10-23",
     "rendered": "2026-10-23"

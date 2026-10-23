@@ -134,7 +134,14 @@ These replace the numbers above wherever they conflict. Source: `knowledge/web/l
 
 ## Founder verdict 2026-10-22 (h4a r5-r6: "okay now it's wayy better... but now good")
 - **Above the h1: an announcement pill, never a gimmick.** The avatar-stack pill read "too AI and stupid", but the fold read "empty" without any element (r6). So use a plain announcement: 32px pill, a soft accent "New" tag inset 4px, one product-fact line, an arrow. No avatars, no metrics. The gap to the h1 equals h1 to subtitle (16).
-- **Optical centring:** button labels are lifted 1px (Inter's ink sits low in a centred line box). The founder caught the geometric version: "top padding looks bigger than the bottom".
+- **Optical centring (corrected 2026-10-23, measured):** centre the capitals, not the line box and not the whole ink.
+  - **Target:** the cap top to the button top equals the baseline to the button bottom. Descenders (g, p) hang below.
+  - **Not equal ink:** equal ink gaps (cap top vs descender bottom) was rejected ("the bottom button is bad cuz it has equal top and bottom gaps").
+  - **Flex centring depends on the font.** Measured on a 132px button at 46px: Inter caps sit 0.35px high (fine as is); Geist 1.3px high; Manrope 0.7px low.
+  - **Nudge once per font in the button token** (translateY of half the drift), then verify with `tools/capgap.cjs` (cap and baseline gaps of every `[data-btn]`).
+  - **text-box trim:** CSS `text-box: trim-both cap alphabetic` fixed Manrope but not Geist, so it is not the default.
+  - **Inter labels:** the 1px lift on Inter labels stays only as the founder's taste call. The probe `optical.label-centre` allows -2.5..+0.6px.
+  - Founder on Sign up: "top padding looks bigger than the bottom".
 - **Rounder controls:** 36px nav buttons r13, 46px CTAs r16 (bands widened in `system/canon/hero-light.json`).
 - **Avatar stacks** overlap by 17% of their size, so no initial is half-covered.
 - `tools/clipscan.cjs <url> <w> <h>` runs before delivery. It catches text cut by its box, SVG shapes outside their viewBox (the sparkline end dot), and children leaving a clipped parent.

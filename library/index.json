@@ -1,6 +1,6 @@
 {
   "schema": "design-engine.library-index/v1",
-  "generated": "2026-10-23T13:36:57.248Z",
+  "generated": "2026-10-23T14:04:43.589Z",
   "projects": [
     {
       "id": "kestrel",
@@ -160,7 +160,7 @@
     {
       "id": "notes-optical-centring",
       "project": "notes",
-      "title": "Teaching card: centre the ink, not the line box",
+      "title": "Teaching card: centre the capitals, nudge once per font",
       "kind": "post-component",
       "status": "awaiting-verdict",
       "postable": true,
@@ -453,6 +453,52 @@
       ]
     },
     {
+      "id": "tempra-ask-component",
+      "project": "tempra",
+      "title": "Ask Tempra, standalone: the answer streams in",
+      "kind": "post-component",
+      "status": "awaiting-verdict",
+      "postable": true,
+      "verdict": null,
+      "formats": [
+        "component-loop",
+        "component-still"
+      ],
+      "series": [
+        {
+          "id": "tempra-ask",
+          "stage": "component"
+        }
+      ],
+      "sampleDay": null,
+      "reservedFor": "augustasdesign",
+      "preflightFail": null,
+      "dir": "library/tempra/ask-component",
+      "renders": [
+        {
+          "file": "library/tempra/ask-component/renders/ask-x.mp4",
+          "role": "single",
+          "format": "component-loop",
+          "w": 1200,
+          "h": 1200
+        },
+        {
+          "file": "library/tempra/ask-component/renders/ask-4k.mp4",
+          "role": "master",
+          "format": "component-loop",
+          "w": 3600,
+          "h": 3600
+        },
+        {
+          "file": "library/tempra/ask-component/renders/still.png",
+          "role": "still",
+          "format": "component-still",
+          "w": 3600,
+          "h": 3600
+        }
+      ]
+    },
+    {
       "id": "tempra-bento-dark",
       "project": "tempra",
       "title": "Tempra dark feature bento",
@@ -480,6 +526,51 @@
           "format": "bento-still",
           "w": 3840,
           "h": 3200
+        }
+      ]
+    },
+    {
+      "id": "tempra-dashboard-loadin",
+      "project": "tempra",
+      "title": "Tempra dashboard load-in: everything staggers, numbers roll",
+      "kind": "product-ui",
+      "status": "awaiting-verdict",
+      "postable": true,
+      "verdict": null,
+      "formats": [
+        "dashboard-motion"
+      ],
+      "series": [
+        {
+          "id": "tempra-product",
+          "stage": "motion"
+        }
+      ],
+      "sampleDay": null,
+      "reservedFor": "augustasdesign",
+      "preflightFail": null,
+      "dir": "library/tempra/dashboard-loadin",
+      "renders": [
+        {
+          "file": "library/tempra/dashboard-loadin/renders/loadin-x.mp4",
+          "role": "single",
+          "format": "dashboard-motion",
+          "w": 1792,
+          "h": 1200
+        },
+        {
+          "file": "library/tempra/dashboard-loadin/renders/loadin-4k.mp4",
+          "role": "master",
+          "format": "dashboard-motion",
+          "w": 3480,
+          "h": 2330
+        },
+        {
+          "file": "library/tempra/dashboard-loadin/renders/poster.png",
+          "role": "poster",
+          "format": "dashboard-motion",
+          "w": 3480,
+          "h": 2330
         }
       ]
     },

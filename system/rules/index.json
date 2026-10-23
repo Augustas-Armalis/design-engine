@@ -4904,6 +4904,29 @@
  },
  {
   "id": "founder.sellify-design-pass#25",
+  "text": "[founder] A rebrand recomposes every page, dialog and popover into the studio grammar, not just tokens and buttons. The page header holds the title, a one-line description and actions on the right (selector, black primary, icon button). Every content block is a grey tray (radius 20, 1px edge): an icon plus title strip with tray controls on the right, ONE white card inside (radius 16, hairline rows or the grid), and an optional grey note line under the card. Fields are grey with a 1px edge. Toolbars (search, filters, segmented controls) live in the tray strip or the card's top row, never as loose rows on the page. Choices with descriptions use option cards, flows use the step tray, and action bars use the sticky pill plus primary. The references are the Facebook Ads Manager dashboard and campaign wizard (PR #2343) and the Video Ad Creator studio (`video-ad-studio.module.css`).",
+  "why": "\"the ad spy or whatever doesnt feature our new affectui alignui style and logic and consistency\" (Discovery before and after looked identical after a \"rule pass\" that only swapped buttons and tokens).",
+  "applies": "Sellify.",
+  "check": "put each after screen next to a reference studio screen. If the before and after of a page are hard to tell apart, the pass was not done.",
+  "checkable": true,
+  "source": "founder, 2026-10-23",
+  "file": "founder/sellify-design-pass.md",
+  "section": "6. Rules from the ENG-2080 Ad Spy review (2026-10-23)",
+  "tags": [
+   "founder",
+   "sellify",
+   "process",
+   "checklist",
+   "alignui",
+   "affectui",
+   "consistency",
+   "handoff"
+  ],
+  "kind": "source",
+  "origin": "founder"
+ },
+ {
+  "id": "founder.sellify-design-pass#26",
   "text": "[founder] No double borders: every frame, placeholder, tile and box draws exactly one 1px edge (never an outer ring plus an inner border or inset shadow).",
   "why": "\"check your double borders, they're a bit fucked up on some components - no double borders\" (the avatar placeholder frame, 2026-10-22).",
   "applies": "all.",
@@ -4911,7 +4934,7 @@
   "checkable": true,
   "source": "founder, 2026-10-22",
   "file": "founder/sellify-design-pass.md",
-  "section": "5. Rules from the ENG-2079 round-3 review (2026-10-21)",
+  "section": "6. Rules from the ENG-2080 Ad Spy review (2026-10-23)",
   "tags": [
    "founder",
    "sellify",

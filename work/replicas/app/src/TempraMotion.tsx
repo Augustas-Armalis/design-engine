@@ -4,7 +4,7 @@
 // The clock runs on requestAnimationFrame + performance.now, which Reel's virtual clock steps frame by frame.
 import { createContext, useContext, useEffect, useState, type CSSProperties, type ReactNode } from 'react'
 
-export type Mode = 'hero' | 'story'
+export type Mode = 'hero' | 'story' | 'load' | 'chat'
 export type Anim = { t: number; mode: Mode } | null
 const AnimCtx = createContext<Anim>(null)
 export const useAnim = () => useContext(AnimCtx)
@@ -35,15 +35,44 @@ export const H = { nav: 0, pill: 0.1, h1: 0.16, sub: 0.26, cta: 0.34, win: 0.55,
 export const S = { type0: 0.5, typeRate: 38, send: 2.0, bubble: 2.12, check: 2.35, chips: 2.45, checked: 3.05, ans: 3.2, opt: 3.45,
   slot: 3.8, btn: 4.0, handled: 4.2, press: 4.7, booked: 4.85 }
 
+// the dashboard load-in: window -> sidebar rows 35ms apart -> header -> numbers roll -> the week assembles by column ->
+// the ask rail -> the found slot lands last (settles ~2.5s; motion canon: <= 3 groups + one payoff, staggers 35-60ms)
+export const L = { win: 0, ws: 0.12, search: 0.16, nav: 0.2, teams: 0.42, next: 0.62, user: 0.68, head: 0.16, kpi: 0.26, roll: 0.34,
+  spark: 0.46, week: 0.34, days: 0.4, ev: 0.54, now: 1.15, rail: 0.24, bubble: 0.46, check: 0.58, chips: 0.64, ans: 0.76,
+  opt: 0.92, btn: 1.14, handled: 1.24, comp: 0.4, slot: 1.55 }
+// the standalone Ask Tempra component (chat): the ask arrives, Tempra reads, the answer streams in words, the slot is booked
+export const C = { bubble: 0.35, check: 0.8, chips: 0.92, checked: 1.7, ans: 1.85, wordRate: 22, opt: 3.35, btn: 3.75, press: 4.55, booked: 4.7 }
+
 // an entrance: rise + fade on the shared curve, only in the given mode; {} otherwise (final state)
 export function rise(a: Anim, mode: Mode, d: number, y = 10, dur = 0.9): CSSProperties {
   if (!a || a.mode !== mode) return {}
   const p = prog(a.t, d, dur)
   return { opacity: clamp(p * 1.2), transform: `translateY(${((1 - p) * y).toFixed(2)}px)` }
 }
-// the same entrance in either mode, each with its own delay
-export function enter(a: Anim, hd: number | null, sd: number | null, y = 8): CSSProperties {
+// the same entrance in any mode, each with its own delay (story and chat share the story beat unless chat is given)
+export function enter(a: Anim, hd: number | null, sd: number | null, y = 8, ld: number | null = null, cd: number | null = sd): CSSProperties {
   if (!a) return {}
-  if (a.mode === 'hero') return hd == null ? {} : rise(a, 'hero', hd, y)
-  return sd == null ? {} : rise(a, 'story', sd, y)
+  const d = a.mode === 'hero' ? hd : a.mode === 'story' ? sd : a.mode === 'load' ? ld : cd
+  return d == null ? {} : rise(a, a.mode, d, y)
+}
+
+// digits roll in masked slots, each column from 0 to its digit, 45ms apart (motion canon: never a fade or a whole-number count)
+export function Roll({ value, a, d, h = 26 }: { value: string; a: Anim; d: number; h?: number }) {
+  if (!a || a.mode !== 'load') return <>{value}</>
+  let k = 0
+  return (
+    <span style={{ display: 'inline-flex' }}>
+      {value.split('').map((ch, i) => {
+        if (!/[0-9]/.test(ch)) return <span key={i} style={{ opacity: prog(a.t, d + 0.1, 0.5), whiteSpace: 'pre' }}>{ch}</span>
+        const dd = d + k++ * 0.045, p = prog(a.t, dd, 1.0), n = Number(ch)
+        return (
+          <span key={i} style={{ display: 'inline-block', height: h, overflow: 'hidden', verticalAlign: 'top' }}>
+            <span style={{ display: 'flex', flexDirection: 'column', transform: `translateY(${(-n * p * h).toFixed(2)}px)` }}>
+              {Array.from({ length: 10 }, (_, j) => <span key={j} style={{ height: h, lineHeight: `${h}px` }}>{j}</span>)}
+            </span>
+          </span>
+        )
+      })}
+    </span>
+  )
 }

@@ -1,0 +1,115 @@
+{
+  "schema": "design-engine.library-asset/v1",
+  "id": "tempra-dashboard-loadin",
+  "project": "tempra",
+  "title": "Tempra dashboard load-in: everything staggers, numbers roll",
+  "kind": "product-ui",
+  "status": "awaiting-verdict",
+  "postable": true,
+  "verdict": {
+    "latest": null,
+    "round": null,
+    "date": null,
+    "words": null,
+    "ledger": "ledger/entries/tempra-x-weekend.json",
+    "after": "made after tempra-x-weekend r1 (2026-10-23), awaiting the founder's verdict"
+  },
+  "source": {
+    "app": "work/replicas/app",
+    "route": "#/cprodbl",
+    "component": "work/replicas/app/src/CadenceProductB.tsx",
+    "viewport": [
+      1392,
+      932
+    ],
+    "direction": "work/tempra-x/DIRECTION.md"
+  },
+  "renders": [
+    {
+      "file": "renders/loadin-x.mp4",
+      "role": "single",
+      "format": "dashboard-motion",
+      "recipe": {
+        "route": "#/cprodbl",
+        "viewport": [
+          1392,
+          932
+        ],
+        "scale": 2.5,
+        "fps": 60,
+        "duration": 4.8,
+        "tool": "Reel --preset x"
+      },
+      "w": 1792,
+      "h": 1200,
+      "bytes": 12050688,
+      "sha256": "7f50844a5a64433bbdafcea9f57546ce067a903d9691e0d23a49c55ebbb9ec24",
+      "rendered": "2026-10-23T14:04:43Z"
+    },
+    {
+      "file": "renders/loadin-4k.mp4",
+      "role": "master",
+      "format": "dashboard-motion",
+      "recipe": {
+        "route": "#/cprodbl",
+        "viewport": [
+          1392,
+          932
+        ],
+        "scale": 2.5,
+        "fps": 60,
+        "duration": 4.8,
+        "tool": "Reel --preset h264"
+      },
+      "w": 3480,
+      "h": 2330,
+      "bytes": 3435377,
+      "sha256": "93b97109498fb73b9a915fe485352ba4ff3260d73530e441dda47b6c2248ec96",
+      "rendered": "2026-10-23T14:04:43Z"
+    },
+    {
+      "file": "renders/poster.png",
+      "role": "poster",
+      "format": "dashboard-motion",
+      "recipe": {
+        "from": "last frame of loadin-4k.mp4"
+      },
+      "w": 3480,
+      "h": 2330,
+      "bytes": 1197676,
+      "sha256": "ee57cee1349d38a4e051e4fd81ca2a2972a1a41c6b2b8800ebb933b7268ac909",
+      "rendered": "2026-10-23T14:04:43Z"
+    }
+  ],
+  "checks": [
+    {
+      "label": "loadin",
+      "route": "#/cprodb",
+      "kind": "product-ui",
+      "w": 1392,
+      "h": 932,
+      "format": "dashboard-motion",
+      "renders": [
+        "renders/poster.png"
+      ],
+      "direction": "work/cadence-app/PRODB-DIRECTION.md"
+    }
+  ],
+  "series": [
+    {
+      "id": "tempra-product",
+      "stage": "motion"
+    }
+  ],
+  "related": [
+    "tempra-product-week"
+  ],
+  "conceptName": "Tempra, Fernhill",
+  "sample": true,
+  "alt": "Load-in of the Tempra dashboard: the window rises, sidebar rows arrive one by one, the three numbers roll digit by digit, the small charts draw, the week fills by column and the slot Tempra found lands last. Sample data, concept.",
+  "dates": {
+    "created": "2026-10-23",
+    "rendered": "2026-10-23"
+  },
+  "reservedFor": "augustasdesign"
+}

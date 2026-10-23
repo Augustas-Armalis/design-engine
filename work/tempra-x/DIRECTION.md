@@ -10,6 +10,7 @@ owned decisions:
 2. Motion is the product's own story (type the ask -> read 5 calendars -> answer -> the slot lands -> book), one clock, one T table (`TempraMotion.tsx`).
 3. Teaching card from our own measured finding (optical centring), numbers probed from the render itself; no claim the render does not show.
 
-teaching card (`#/xoptical`, 1080x1350, button 180 tall): geometric 67.3 above caps / 54.0 below descenders; label up 6px -> 61.3 / 60.0 (probe, 3x).
+teaching card (`#/xoptical`, 1080x1350, v2): flex-centred Geist caps 48.0 above / 50.7 below (high), Manrope 49.7 / 48.3 (low); nudged per font (Geist +1.33px, Manrope -0.67px) -> 49.3/49.3 and 49.0/49.0 (tools/capgap.cjs at 3x).
 
 - override: radius.ladder.boxes because the teaching card shows our 46px CTA at 3x (r16 at 3.9x = r62); the radius is the real button's, scaled
+- override: type.families because the teaching card compares two fonts on purpose (Geist and Manrope); Inter carries every label

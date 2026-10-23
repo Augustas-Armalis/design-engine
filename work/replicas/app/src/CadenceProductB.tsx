@@ -10,7 +10,7 @@ import {
   RiArrowLeftSLine, RiArrowRightSLine, RiVideoOnLine, RiArrowGoForwardLine, RiShieldCheckLine, RiCheckLine,
 } from '@remixicon/react'
 import { Mark } from './TempraLogo'
-import { useAnim, rise, enter, prog, bump, H, S } from './TempraMotion'
+import { useAnim, rise, enter, prog, bump, H, S, L, Roll, type Anim } from './TempraMotion'
 
 export const APP_W = 1280, APP_H = 820
 const T = {
@@ -32,9 +32,10 @@ const Stack = ({ ids, s = 18 }: { ids: string[]; s?: number }) => <span style={{
 
 // ================= sidebar =================
 const TEAM_IDS: Record<string, string[]> = { Design: ['A', 'M'], Product: ['J', 'S'], Engineering: ['T', 'L'] }
-function Item({ icon, label, active, count }: { icon: ReactNode; label: string; active?: boolean; count?: string }) {
+function Item({ icon, label, active, count, d }: { icon: ReactNode; label: string; active?: boolean; count?: string; d?: number }) {
+  const a = useAnim()
   return (
-    <div style={{ ...row, gap: 9, height: 32, padding: '0 10px', borderRadius: 12, background: active ? '#fff' : 'transparent', boxShadow: active ? `inset 0 0 0 1px ${T.line}, 0 1px 2px rgba(14,18,27,0.04)` : 'none', fontSize: 13.5, fontWeight: active ? 500 : 450, color: active ? T.ink : T.sub }}>
+    <div style={{ ...rise(a, 'load', d ?? 0, 6), ...row, gap: 9, height: 32, padding: '0 10px', borderRadius: 12, background: active ? '#fff' : 'transparent', boxShadow: active ? `inset 0 0 0 1px ${T.line}, 0 1px 2px rgba(14,18,27,0.04)` : 'none', fontSize: 13.5, fontWeight: active ? 500 : 450, color: active ? T.ink : T.sub }}>
       <span style={{ display: 'flex', color: active ? T.v : T.mute }}>{icon}</span>
       <span style={{ flex: 1 }}>{label}</span>
       {count && <span className="round" style={{ height: 18, minWidth: 18, padding: '0 5px', boxSizing: 'border-box', borderRadius: 999, background: T.vFill, color: T.vInk, fontSize: 11.5, fontWeight: 600, display: 'grid', placeItems: 'center', ...tnum }}>{count}</span>}
@@ -45,8 +46,8 @@ const Group = ({ children }: { children: ReactNode }) => <div style={{ height: 2
 function Sidebar() {
   const a = useAnim()
   return (
-    <aside style={{ ...rise(a, 'hero', H.side, 10), width: 232, flex: 'none', background: T.side, boxShadow: `inset -1px 0 0 ${T.line}`, padding: '14px 12px', boxSizing: 'border-box', display: 'flex', flexDirection: 'column' }}>
-      <div style={{ ...row, gap: 10, height: 40, padding: '0 6px' }}>
+    <aside style={{ ...rise(a, 'hero', H.side, 10), ...rise(a, 'load', 0.12, 0, 0.6), width: 232, flex: 'none', background: T.side, boxShadow: `inset -1px 0 0 ${T.line}`, padding: '14px 12px', boxSizing: 'border-box', display: 'flex', flexDirection: 'column' }}>
+      <div style={{ ...rise(a, 'load', L.ws, 6), ...row, gap: 10, height: 40, padding: '0 6px' }}>
         <span style={{ display: 'grid', placeItems: 'center', width: 28, height: 28, borderRadius: 10, ...ink }}><Mark size={14} /></span>
         <span style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
           <span style={{ fontSize: 13.5, fontWeight: 600, lineHeight: '18px', letterSpacing: '-0.01em' }}>Fernhill</span>
@@ -54,27 +55,27 @@ function Sidebar() {
         </span>
         <RiExpandUpDownLine size={16} color={T.faint} />
       </div>
-      <div style={{ ...row, gap: 8, height: 32, marginTop: 12, padding: '0 6px 0 10px', borderRadius: 12, background: '#fff', boxShadow: `inset 0 0 0 1px ${T.line}`, fontSize: 13, color: T.mute }}>
+      <div style={{ ...rise(a, 'load', L.search, 6), ...row, gap: 8, height: 32, marginTop: 12, padding: '0 6px 0 10px', borderRadius: 12, background: '#fff', boxShadow: `inset 0 0 0 1px ${T.line}`, fontSize: 13, color: T.mute }}>
         <RiSearch2Line size={15} /><span style={{ flex: 1 }}>Search</span>
         <span style={{ height: 20, padding: '0 5px', borderRadius: 8, background: T.weak, display: 'grid', placeItems: 'center', fontSize: 11.5, color: T.mute }}>⌘K</span>
       </div>
-      <div style={{ marginTop: 14 }}><Group>Schedule</Group></div>
+      <div style={{ ...rise(a, 'load', L.nav, 6), marginTop: 14 }}><Group>Schedule</Group></div>
       <div style={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
-        <Item icon={<RiSunLine size={16} />} label="Today" />
-        <Item icon={<RiCalendarLine size={16} />} label="Week" active />
-        <Item icon={<RiInboxLine size={16} />} label="Requests" count="2" />
-        <Item icon={<RiLinksLine size={16} />} label="Booking links" />
-        <Item icon={<RiFocus3Line size={16} />} label="Focus time" />
+        <Item d={L.nav + 0.035} icon={<RiSunLine size={16} />} label="Today" />
+        <Item d={L.nav + 0.07} icon={<RiCalendarLine size={16} />} label="Week" active />
+        <Item d={L.nav + 0.105} icon={<RiInboxLine size={16} />} label="Requests" count="2" />
+        <Item d={L.nav + 0.14} icon={<RiLinksLine size={16} />} label="Booking links" />
+        <Item d={L.nav + 0.175} icon={<RiFocus3Line size={16} />} label="Focus time" />
       </div>
-      <div style={{ marginTop: 14 }}><Group>Teams</Group></div>
+      <div style={{ ...rise(a, 'load', L.teams, 6), marginTop: 14 }}><Group>Teams</Group></div>
       <div style={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
-        {([['Design', T.v, '6'], ['Product', '#F2994A', '4'], ['Engineering', '#22B8A6', '9']] as const).map(([n, c, k]) => (
-          <div key={n} style={{ ...row, gap: 10, height: 32, padding: '0 10px 0 14px', fontSize: 13.5, color: T.sub }}>
+        {([['Design', T.v, '6'], ['Product', '#F2994A', '4'], ['Engineering', '#22B8A6', '9']] as const).map(([n, c, k], i) => (
+          <div key={n} style={{ ...rise(a, 'load', L.teams + 0.035 * (i + 1), 6), ...row, gap: 10, height: 32, padding: '0 10px 0 14px', fontSize: 13.5, color: T.sub }}>
             <span className="round" style={{ width: 7, height: 7, borderRadius: 999, background: c }} /><span style={{ flex: 1 }}>{n}</span><Stack ids={TEAM_IDS[n]} s={16} /><span style={{ fontSize: 11.5, color: T.mute, marginLeft: 2, ...tnum }}>{k}</span>
           </div>
         ))}
       </div>
-      <div style={{ marginTop: 'auto', marginBottom: 12, borderRadius: 18, background: T.weak, boxShadow: `inset 0 0 0 1px ${T.line}`, padding: 3 }}>
+      <div style={{ ...rise(a, 'load', L.next, 8), marginTop: 'auto', marginBottom: 12, borderRadius: 18, background: T.weak, boxShadow: `inset 0 0 0 1px ${T.line}`, padding: 3 }}>
         <div style={{ ...row, height: 26, padding: '0 9px', gap: 6, fontSize: 11.5, fontWeight: 500, color: T.mute }}><span className="round" style={{ width: 6, height: 6, borderRadius: 999, background: T.red }} />Next up · in 8 min</div>
         <div style={{ borderRadius: 15, background: '#fff', boxShadow: `0 0 0 1px ${T.line}, 0 1px 2px rgba(14,18,27,0.04)`, padding: '10px 10px 10px 12px' }}>
           <div style={{ fontSize: 13, fontWeight: 500 }}>Design crit · v2.4</div>
@@ -85,7 +86,7 @@ function Sidebar() {
           </div>
         </div>
       </div>
-      <div style={{ ...row, gap: 10, height: 44, padding: '0 6px', borderTop: `1px solid ${T.line}`, paddingTop: 10 }}>
+      <div style={{ ...rise(a, 'load', L.user, 6), ...row, gap: 10, height: 44, padding: '0 6px', borderTop: `1px solid ${T.line}`, paddingTop: 10 }}>
         <Av i="L" s={28} />
         <span style={{ display: 'flex', flexDirection: 'column', flex: 1 }}>
           <span style={{ fontSize: 13, fontWeight: 500, lineHeight: '17px' }}>Leo Park</span>
@@ -117,7 +118,7 @@ function Week({ w, h }: { w: number; h: number }) {
       {days.map((d, i) => {
         const [dn, num] = d.split(' ')
         return (
-          <div key={d} style={abs(G + i * cw, 0, cw, HEAD, { ...row, gap: 6, padding: '0 12px', boxSizing: 'border-box', fontSize: 12.5, color: T.mute })}>
+          <div key={d} style={abs(G + i * cw, 0, cw, HEAD, { ...rise(a0, 'load', L.days + i * 0.035, 6), ...row, gap: 6, padding: '0 12px', boxSizing: 'border-box', fontSize: 12.5, color: T.mute })}>
             {dn}
             {i === 3
               ? <span className="round" style={{ width: 22, height: 22, borderRadius: 999, background: T.ink, color: '#fff', display: 'grid', placeItems: 'center', fontSize: 12, fontWeight: 500, ...tnum }}>{num}</span>
@@ -140,7 +141,7 @@ function Week({ w, h }: { w: number; h: number }) {
           : k === 'p' ? { background: T.pFill, boxShadow: `inset 0 0 0 1px ${T.pRing}`, color: T.pInk }
           : { background: `repeating-linear-gradient(135deg, #F6F7F9 0 6px, #EFF1F4 6px 7px)`, boxShadow: `inset 0 0 0 1px #E7E9EE`, color: T.sub }
         return (
-          <div key={`${d}${a}`} style={abs(G + d * cw + 4, top, cw - 8, height, { ...rise(anim, 'hero', H.ev + d * 0.05 + (a - 9) * 0.035, 8), borderRadius: 12, boxSizing: 'border-box', padding: short ? '0 9px' : '7px 9px', display: 'flex', flexDirection: short ? 'row' : 'column', alignItems: short ? 'center' : 'stretch', gap: short ? 6 : 1, overflow: 'hidden', ...look })}>
+          <div key={`${d}${a}`} style={abs(G + d * cw + 4, top, cw - 8, height, { ...rise(anim, 'hero', H.ev + d * 0.05 + (a - 9) * 0.035, 8), ...rise(anim, 'load', L.ev + d * 0.06 + (a - 9) * 0.04, 10, 1.0), borderRadius: 12, boxSizing: 'border-box', padding: short ? '0 9px' : '7px 9px', display: 'flex', flexDirection: short ? 'row' : 'column', alignItems: short ? 'center' : 'stretch', gap: short ? 6 : 1, overflow: 'hidden', ...look })}>
             <span style={{ ...row, gap: 4, fontSize: 12.5, fontWeight: 500, lineHeight: '16px', whiteSpace: 'nowrap' }}>{k === 'focus' && <RiLockLine size={12} />}{title}</span>
             <span style={{ fontSize: 11.5, lineHeight: '15px', opacity: 0.85, whiteSpace: 'nowrap', ...tnum }}>{fmt(a)}{short ? '' : ` – ${fmt(b)}`}</span>
           </div>
@@ -149,7 +150,7 @@ function Week({ w, h }: { w: number; h: number }) {
       {/* the slot Tempra found: Fri 11:00-11:45, free for all five. Story: it lands at S.slot, then Book turns it into a real event */}
       {(() => {
         const story = a0?.mode === 'story', booked = story ? prog(a0!.t, S.booked, 0.5) : 0
-        const land = a0?.mode === 'hero' ? prog(a0.t, H.slot, 0.9) : story ? prog(a0!.t, S.slot, 0.9) : 1
+        const land = a0?.mode === 'hero' ? prog(a0.t, H.slot, 0.9) : a0?.mode === 'load' ? prog(a0.t, L.slot, 0.9) : story ? prog(a0!.t, S.slot, 0.9) : 1
         const box = abs(G + 4 * cw + 4, y(11) + 2, cw - 8, 0.75 * HR - 4, { borderRadius: 12, boxSizing: 'border-box', padding: '6px 9px', display: 'flex', flexDirection: 'column', gap: 1 })
         return (
           <div style={{ position: 'absolute', inset: 0, opacity: Math.min(1, land * 1.2), transform: `translateY(${((1 - land) * 10).toFixed(2)}px) scale(${(0.97 + 0.03 * land).toFixed(4)})`, transformOrigin: `${G + 4.5 * cw}px ${y(11.4)}px`, pointerEvents: 'none' }}>
@@ -167,8 +168,10 @@ function Week({ w, h }: { w: number; h: number }) {
         )
       })()}
       {/* now (10:07): Thursday column only, in the free gap before Design crit, so it crosses no event */}
-      <div style={abs(G + 3 * cw, y(10.12), cw, 2, { background: T.red, borderRadius: 1 })} />
-      <span className="round" style={abs(G + 3 * cw - 4, y(10.12) - 3, 8, 8, { borderRadius: 999, background: T.red })} />
+      {(() => { const n = a0?.mode === 'load' ? prog(a0.t, L.now, 0.8) : 1; return (<>
+        <div style={abs(G + 3 * cw, y(10.12), cw, 2, { background: T.red, borderRadius: 1, transform: `scaleX(${n.toFixed(4)})`, transformOrigin: '0 50%' })} />
+        <span className="round" style={abs(G + 3 * cw - 4, y(10.12) - 3, 8, 8, { borderRadius: 999, background: T.red, opacity: Math.min(1, n * 3) })} />
+      </>) })()}
     </section>
   )
 }
@@ -194,15 +197,15 @@ function Rail({ compact }: { compact?: boolean }) {
   const sendPress = story ? bump(t, S.send - 0.06, 0.16) : 0, bookPress = story ? bump(t, S.press, 0.16) : 0
   const spin = (t * 420) % 360
   return (
-    <aside aria-label="Ask Tempra, sample answer" style={{ ...rise(a, 'hero', H.rail, 10), width: 320, flex: 'none', boxShadow: `inset 1px 0 0 ${T.line}`, display: 'flex', flexDirection: 'column', padding: '0 16px 16px', boxSizing: 'border-box' }}>
+    <aside aria-label="Ask Tempra, sample answer" style={{ ...rise(a, 'hero', H.rail, 10), ...rise(a, 'load', L.rail, 0, 0.6), width: 320, flex: 'none', boxShadow: `inset 1px 0 0 ${T.line}`, display: 'flex', flexDirection: 'column', padding: '0 16px 16px', boxSizing: 'border-box' }}>
       <div style={{ ...row, gap: 9, height: 56 }}>
         <span style={{ display: 'grid', placeItems: 'center', width: 24, height: 24, borderRadius: 9, ...ink }}><Mark size={12} /></span>
         <span style={{ fontSize: 14, fontWeight: 600, letterSpacing: '-0.01em' }}>Ask Tempra</span>
         <span style={{ marginLeft: 'auto', ...row, gap: 2, height: 24, padding: '0 6px 0 8px', borderRadius: 10, fontSize: 12, fontWeight: 500, color: T.sub, boxShadow: `inset 0 0 0 1px ${T.line}` }}>This week<RiArrowDownSLine size={14} /></span>
       </div>
-      <div style={{ ...enter(a, H.bubble, S.bubble), alignSelf: 'flex-end', maxWidth: 236, padding: '9px 12px', borderRadius: 16, borderBottomRightRadius: 8, background: T.weak, fontSize: 13.5, lineHeight: '20px' }}>{ASK}</div>
+      <div style={{ ...enter(a, H.bubble, S.bubble, 8, L.bubble), alignSelf: 'flex-end', maxWidth: 236, padding: '9px 12px', borderRadius: 16, borderBottomRightRadius: 8, background: T.weak, fontSize: 13.5, lineHeight: '20px' }}>{ASK}</div>
       {/* the thought: "Checking" with a spinner while the chips land, then settled with a check */}
-      <div style={{ ...enter(a, H.check, S.check), marginTop: 14, display: 'grid' }}>
+      <div style={{ ...enter(a, H.check, S.check, 8, L.check), marginTop: 14, display: 'grid' }}>
         <div style={{ gridArea: '1 / 1', ...row, gap: 6, fontSize: 12.5, color: T.mute, opacity: 1 - checking }}><RiCheckboxCircleLine size={14} color={T.green} />Checked 5 calendars in 4s<RiArrowDownSLine size={14} /></div>
         {story && <div style={{ gridArea: '1 / 1', ...row, gap: 6, fontSize: 12.5, color: T.mute, opacity: checking }}>
           <svg width={14} height={14} viewBox="0 0 14 14" style={{ transform: `rotate(${spin}deg)` }} aria-hidden><circle cx={7} cy={7} r={5.5} fill="none" stroke={T.line} strokeWidth={1.6} /><path d="M7 1.5a5.5 5.5 0 0 1 5.5 5.5" fill="none" stroke={T.v} strokeWidth={1.6} strokeLinecap="round" /></svg>
@@ -210,13 +213,13 @@ function Rail({ compact }: { compact?: boolean }) {
       </div>
       {!compact && <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6, marginTop: 8, paddingLeft: 20 }}>
         {people.map(([i, n], k) => (
-          <span key={i} style={{ ...enter(a, null, S.chips + k * 0.12, 6), ...row, gap: 5, height: 24, padding: '0 8px 0 3px', borderRadius: 10, background: '#fff', boxShadow: `inset 0 0 0 1px ${T.line}, 0 1px 1px rgba(14,18,27,0.03)`, fontSize: 12, color: T.sub }}><Av i={i} s={18} />{n}</span>
+          <span key={i} style={{ ...enter(a, null, S.chips + k * 0.12, 6, L.chips + k * 0.05), ...row, gap: 5, height: 24, padding: '0 8px 0 3px', borderRadius: 10, background: '#fff', boxShadow: `inset 0 0 0 1px ${T.line}, 0 1px 1px rgba(14,18,27,0.03)`, fontSize: 12, color: T.sub }}><Av i={i} s={18} />{n}</span>
         ))}
       </div>}
-      <p style={{ ...enter(a, H.ans, S.ans), margin: '14px 0 0', fontSize: 13.5, lineHeight: '22px', color: T.sub }}><b style={{ color: T.ink, fontWeight: 600 }}>Friday 11:00</b> works for all five<Cite>5 calendars</Cite>. No focus block moves<Cite>Focus · 4</Cite> and Sam is back by then<Cite>Sam · OOO</Cite>.</p>
-      <div style={{ marginTop: 12, borderRadius: 16, background: '#fff', boxShadow: `${RING}, 0 1px 2px rgba(14,18,27,0.04)`, ...enter(a, H.opt, S.opt) }}>
+      <p style={{ ...enter(a, H.ans, S.ans, 8, L.ans), margin: '14px 0 0', fontSize: 13.5, lineHeight: '22px', color: T.sub }}><b style={{ color: T.ink, fontWeight: 600 }}>Friday 11:00</b> works for all five<Cite>5 calendars</Cite>. No focus block moves<Cite>Focus · 4</Cite> and Sam is back by then<Cite>Sam · OOO</Cite>.</p>
+      <div style={{ marginTop: 12, borderRadius: 16, background: '#fff', boxShadow: `${RING}, 0 1px 2px rgba(14,18,27,0.04)`, ...enter(a, H.opt, S.opt, 8, L.opt) }}>
         {(compact ? opts.slice(0, 2) : opts).map(([dw, dn, when, why, ids, best], k) => (
-          <div key={dn} style={{ ...enter(a, H.opt + k * 0.06, S.opt + k * 0.08, 6), ...row, gap: 10, height: 58, padding: '0 12px', borderTop: k ? `1px solid ${T.hair}` : 'none' }}>
+          <div key={dn} style={{ ...enter(a, H.opt + k * 0.06, S.opt + k * 0.08, 6, L.opt + k * 0.07), ...row, gap: 10, height: 58, padding: '0 12px', borderTop: k ? `1px solid ${T.hair}` : 'none' }}>
             <span style={{ width: 36, height: 38, borderRadius: 11, flex: 'none', boxShadow: `inset 0 0 0 1px ${best ? T.vRing : T.line}`, background: best ? T.vFill : '#fff', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 0 }}>
               <span style={{ fontSize: 10, fontWeight: 600, letterSpacing: '0.04em', color: best ? T.vInk : T.mute, lineHeight: '12px' }}>{dw}</span>
               <span style={{ fontSize: 14, fontWeight: 600, lineHeight: '17px', color: best ? T.vInk : T.ink, ...tnum }}>{dn}</span>
@@ -229,7 +232,7 @@ function Rail({ compact }: { compact?: boolean }) {
           </div>
         ))}
       </div>
-      <div style={{ ...enter(a, H.btn, S.btn), ...row, gap: 8, marginTop: 12 }}>
+      <div style={{ ...enter(a, H.btn, S.btn, 8, L.btn), ...row, gap: 8, marginTop: 12 }}>
         {/* Book: pressed at S.press, then "Booked"; both labels share one grid cell so the button never changes width */}
         <span style={{ display: 'grid', height: 34, padding: '0 14px 0 12px', borderRadius: 13, fontSize: 13.5, fontWeight: 500, ...ink, transform: `scale(${(1 - 0.03 * bookPress).toFixed(4)})` }}>
           <span style={{ gridArea: '1 / 1', ...row, gap: 6, opacity: 1 - booked }}><RiCalendarCheckLine size={15} />Book Fri 11:00</span>
@@ -237,7 +240,7 @@ function Rail({ compact }: { compact?: boolean }) {
         </span>
         <span style={{ ...row, height: 34, padding: '0 14px', borderRadius: 13, fontSize: 13.5, fontWeight: 500, ...stroke, opacity: 1 - 0.4 * booked }}>Other times</span>
       </div>
-      <div style={{ ...enter(a, H.handled, S.handled), marginTop: 20, paddingTop: 14, borderTop: `1px solid ${T.hair}` }}>
+      <div style={{ ...enter(a, H.handled, S.handled, 8, L.handled), marginTop: 20, paddingTop: 14, borderTop: `1px solid ${T.hair}` }}>
         <div style={{ fontSize: 12, fontWeight: 500, color: T.mute, marginBottom: 2 }}>Handled this week</div>
         {([[<RiArrowGoForwardLine size={14} />, 'Moved Roadmap review to Wed', "Clashed with Ana's focus"], [<RiShieldCheckLine size={14} />, 'Protected 4 focus blocks', 'Mornings, Mon to Thu']] as const).map(([ic, tt, d]) => (
           <div key={tt} style={{ ...row, gap: 10, height: 46 }}>
@@ -250,7 +253,7 @@ function Rail({ compact }: { compact?: boolean }) {
         ))}
       </div>
       {/* composer in a tray: the card holds the input, the tray's strip says what is connected */}
-      <div style={{ ...rise(a, 'hero', H.comp, 8), marginTop: 'auto', borderRadius: 20, background: T.weak, boxShadow: `inset 0 0 0 1px ${T.line}`, padding: 4 }}>
+      <div style={{ ...rise(a, 'hero', H.comp, 8), ...rise(a, 'load', L.comp, 8), marginTop: 'auto', borderRadius: 20, background: T.weak, boxShadow: `inset 0 0 0 1px ${T.line}`, padding: 4 }}>
         <div style={{ borderRadius: 16, background: '#fff', boxShadow: `0 0 0 1px ${typing ? T.vRing : T.line}, 0 1px 2px rgba(14,18,27,0.04)${typing ? ', 0 0 0 4px rgba(125,82,244,0.10)' : ''}`, padding: '11px 8px 8px 12px' }}>
           <div style={{ fontSize: 13.5, color: typing ? T.ink : T.mute, minHeight: 20, lineHeight: '20px' }}>
             {typing ? <>{typed}<span style={{ display: 'inline-block', width: 1.5, height: 16, marginLeft: 1, verticalAlign: -3, background: T.v }} /></> : 'Ask about your week…'}
@@ -268,12 +271,15 @@ function Rail({ compact }: { compact?: boolean }) {
   )
 }
 
-// one small visual per number: meeting bars by day, a focus line, settled-conflict dots
-const SPARK: ReactNode[] = [
-  <svg key="b" width={52} height={22} viewBox="0 0 52 22" aria-hidden>{[14, 20, 9, 17, 12].map((h, i) => <rect key={i} x={i * 11} y={22 - h} width={7} height={h} rx={2} fill={i === 3 ? T.v : T.vRing} />)}</svg>,
-  <svg key="l" width={60} height={22} viewBox="-1 -2 60 26" aria-hidden><path d="M1 17 L12 15 L23 16 L34 10 L45 8 L55 4" fill="none" stroke={T.v} strokeWidth={1.6} strokeLinecap="round" strokeLinejoin="round" /><circle cx={55} cy={4} r={2.4} fill="#fff" stroke={T.v} strokeWidth={1.5} /></svg>,
-  <svg key="d" width={52} height={22} viewBox="0 0 52 22" aria-hidden>{Array.from({ length: 7 }, (_, i) => <circle key={i} cx={4 + i * 7.4} cy={11} r={3} fill={T.v} opacity={0.35 + i * 0.1} />)}</svg>,
-]
+// one small visual per number: meeting bars by day, a focus line, settled-conflict dots; in the load-in the bars grow,
+// the line draws and the dots arrive left to right
+function Spark({ k, a }: { k: number; a: Anim }) {
+  const ld = a?.mode === 'load', t = a?.t ?? 0
+  const p = (d: number, dur = 0.8) => (ld ? prog(t, d, dur) : 1)
+  if (k === 0) return <svg width={52} height={22} viewBox="0 0 52 22" aria-hidden>{[14, 20, 9, 17, 12].map((h, i) => { const hh = h * p(L.spark + i * 0.05); return <rect key={i} x={i * 11} y={22 - hh} width={7} height={hh} rx={2} fill={i === 3 ? T.v : T.vRing} /> })}</svg>
+  if (k === 1) return <svg width={60} height={22} viewBox="-1 -2 60 26" aria-hidden><path d="M1 17 L12 15 L23 16 L34 10 L45 8 L55 4" pathLength={1} strokeDasharray="1 1" strokeDashoffset={(1 - p(L.spark + 0.08, 1.1)).toFixed(4)} fill="none" stroke={T.v} strokeWidth={1.6} strokeLinecap="round" strokeLinejoin="round" /><circle cx={55} cy={4} r={2.4} fill="#fff" stroke={T.v} strokeWidth={1.5} opacity={p(L.spark + 0.9, 0.4)} /></svg>
+  return <svg width={52} height={22} viewBox="0 0 52 22" aria-hidden>{Array.from({ length: 7 }, (_, i) => <circle key={i} cx={4 + i * 7.4} cy={11} r={3 * p(L.spark + 0.12 + i * 0.04, 0.5)} fill={T.v} opacity={0.35 + i * 0.1} />)}</svg>
+}
 
 // ================= the window =================
 export function TempraApp({ inHero, style }: { inHero?: boolean; style?: CSSProperties }) {
@@ -283,10 +289,10 @@ export function TempraApp({ inHero, style }: { inHero?: boolean; style?: CSSProp
   const Main = inHero ? 'div' : 'main'
   const kpis: [string, string, string][] = [['Meetings', booked > 0.5 ? '19' : '18', booked > 0.5 ? '−2' : '−3'], ['Focus kept', '11h 30m', '+2h'], ['Conflicts settled', '7', 'all by Tempra']]
   return (
-    <div data-product style={{ ...font, ...rise(a, 'hero', H.win, 48, 1.2), position: 'relative', width: APP_W, height: APP_H, borderRadius: 22, background: '#fff', overflow: 'hidden', display: 'flex', boxShadow: '0 0 0 1px rgba(14,18,27,0.08), 0 1px 2px rgba(14,18,27,0.04), 0 24px 60px -24px rgba(14,18,27,0.22)', ...style }}>
+    <div data-product style={{ ...font, ...rise(a, 'hero', H.win, 48, 1.2), ...rise(a, 'load', L.win, 36, 1.1), position: 'relative', width: APP_W, height: APP_H, borderRadius: 22, background: '#fff', overflow: 'hidden', display: 'flex', boxShadow: '0 0 0 1px rgba(14,18,27,0.08), 0 1px 2px rgba(14,18,27,0.04), 0 24px 60px -24px rgba(14,18,27,0.22)', ...style }}>
       <Sidebar />
       <Main aria-label="Tempra week, sample data" style={{ flex: 1, padding: '0 24px 24px', boxSizing: 'border-box', display: 'flex', flexDirection: 'column' }}>
-        <div style={{ ...rise(a, 'hero', H.head, 8), ...row, height: 68 }}>
+        <div style={{ ...rise(a, 'hero', H.head, 8), ...rise(a, 'load', L.head, 8), ...row, height: 68 }}>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
             <H1 style={{ margin: 0, fontSize: 17, lineHeight: '22px', fontWeight: 600, letterSpacing: '-0.015em' }}>This week</H1>
             <span style={{ fontSize: 12.5, color: T.mute, ...tnum }}>Oct 19 – 23 · Berlin</span>
@@ -307,19 +313,19 @@ export function TempraApp({ inHero, style }: { inHero?: boolean; style?: CSSProp
           </div>
           </div>
         </div>
-        <div style={{ ...rise(a, 'hero', H.kpi, 8), display: 'flex', borderRadius: 16, boxShadow: RING, height: 72, flex: 'none' }}>
+        <div style={{ ...rise(a, 'hero', H.kpi, 8), ...rise(a, 'load', L.kpi, 8), display: 'flex', borderRadius: 16, boxShadow: RING, height: 72, flex: 'none' }}>
           {kpis.map(([l, v, d], k) => (
             <div key={l} style={{ position: 'relative', flex: 1, padding: '12px 16px', boxShadow: k ? `inset 1px 0 0 ${T.line}` : 'none', display: 'flex', flexDirection: 'column', gap: 4 }}>
               <span style={{ fontSize: 12.5, color: T.mute }}>{l}</span>
               <span style={{ ...row, gap: 8 }}>
-                <span style={{ fontSize: 20, lineHeight: '26px', fontWeight: 600, letterSpacing: '-0.02em', ...tnum }}>{v}</span>
-                <span style={{ height: 20, padding: '0 6px', borderRadius: 8, display: 'grid', placeItems: 'center', fontSize: 11.5, fontWeight: 500, background: k === 2 ? T.vFill : T.greenFill, color: k === 2 ? T.vInk : T.green, ...tnum }}>{d}</span>
+                <span style={{ fontSize: 20, lineHeight: '26px', fontWeight: 600, letterSpacing: '-0.02em', ...tnum }}><Roll value={v} a={a} d={L.roll + k * 0.08} /></span>
+                <span style={{ ...rise(a, 'load', L.roll + 0.35 + k * 0.08, 4), height: 20, padding: '0 6px', borderRadius: 8, display: 'grid', placeItems: 'center', fontSize: 11.5, fontWeight: 500, background: k === 2 ? T.vFill : T.greenFill, color: k === 2 ? T.vInk : T.green, ...tnum }}>{d}</span>
               </span>
-              <span style={{ position: 'absolute', right: 16, bottom: 14, display: 'flex' }}>{SPARK[k]}</span>
+              <span style={{ position: 'absolute', right: 16, bottom: 14, display: 'flex' }}><Spark k={k} a={a} /></span>
             </div>
           ))}
         </div>
-        <div style={{ ...rise(a, 'hero', H.week, 10), marginTop: 16 }}><Week w={APP_W - 232 - 320 - 48} h={APP_H - 68 - 72 - 16 - 24} /></div>
+        <div style={{ ...rise(a, 'hero', H.week, 10), ...rise(a, 'load', L.week, 12), marginTop: 16 }}><Week w={APP_W - 232 - 320 - 48} h={APP_H - 68 - 72 - 16 - 24} /></div>
       </Main>
       <Rail compact={inHero} />
     </div>
