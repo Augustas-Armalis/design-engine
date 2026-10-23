@@ -1,0 +1,57 @@
+{
+  "schema": "design-engine.library-asset/v1",
+  "id": "lintel-hero",
+  "title": "Lintel dark split hero: the break three files away",
+  "kind": "hero-dark",
+  "subject": "hero",
+  "project": "lintel",
+  "status": "awaiting-verdict",
+  "postable": true,
+  "reservedFor": "augustasdesign",
+  "conceptName": "Lintel",
+  "sample": true,
+  "verdict": {
+    "latest": "partial",
+    "round": 1,
+    "date": "2026-10-23",
+    "words": "interesting... try maybe something different with bg and rihgt visual in this layout or visuals cmon",
+    "ledger": "ledger/entries/lintel.json",
+    "after": "r2 made after lintel r1: the right side became the repo as a dithered pixel map with the review on it"
+  },
+  "dates": {
+    "created": "2026-10-23",
+    "rendered": "2026-10-23"
+  },
+  "source": {
+    "app": "work/replicas/app",
+    "route": "#/lintel",
+    "component": "work/replicas/app/src/LintelHero.tsx",
+    "viewport": [
+      1440,
+      900
+    ],
+    "direction": "work/lintel/DIRECTION.md"
+  },
+  "renders": [
+    {
+      "file": "renders/hero.png",
+      "role": "single",
+      "format": "hero-still",
+      "recipe": {
+        "route": "#/lintel",
+        "viewport": [
+          1440,
+          900
+        ],
+        "scale": 2.6667,
+        "wait": 3500
+      },
+      "w": 3840,
+      "h": 2400,
+      "bytes": 433176,
+      "sha256": "d01b0774adc640abcf48075b2a33840821361a9f89b220e155291ddabe1effaa",
+      "rendered": "2026-10-23T18:27:16.232Z",
+      "commit": "eda77d9+dirty"
+    }
+  ]
+}

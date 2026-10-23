@@ -26,6 +26,7 @@ const Spinner = ({ t }: { t: number }) => (
   <svg width={15} height={15} viewBox="0 0 14 14" style={{ transform: `rotate(${(t * 420) % 360}deg)` }} aria-hidden><circle cx={7} cy={7} r={5.5} fill="none" stroke={T.line} strokeWidth={1.6} /><path d="M7 1.5a5.5 5.5 0 0 1 5.5 5.5" fill="none" stroke={T.v} strokeWidth={1.6} strokeLinecap="round" /></svg>
 )
 
+const VIEW = 522
 const ASK1 = 'Find 45 min with the design team next week, not Monday.'
 const ASK2 = 'Remind everyone an hour before.'
 // the answers as tokens: words stream, a citation lands whole when the stream reaches it
@@ -62,8 +63,13 @@ export function AskCard() {
   const booked = live ? prog(t, C.booked, 0.45) : 0
   const fold = live ? prog(t, C.fold, 0.75) : 0
   const on = live ? prog(t, C.on, 0.5) : 0
-  const typed = !live ? '' : t >= C.type2 && t < C.send2 ? ASK2.slice(0, Math.max(0, Math.floor((t - C.type2) * C.typeRate))) : t >= C.type1 && t < C.send1 ? ASK1.slice(0, Math.max(0, Math.floor((t - C.type1) * C.typeRate))) : ''
+  const typed = !live ? '' : t >= C.send2 && t < C.send2 + 0.3 ? ASK2 : t >= C.send1 && t < C.send1 + 0.3 ? ASK1 : t >= C.type2 && t < C.send2 ? ASK2.slice(0, Math.max(0, Math.floor((t - C.type2) * C.typeRate))) : t >= C.type1 && t < C.send1 ? ASK1.slice(0, Math.max(0, Math.floor((t - C.type1) * C.typeRate))) : ''
   const typing = live && ((t >= C.type1 && t < C.send1) || (t >= C.type2 && t < C.send2))
+  // the 0.3s after a send: the whole ask lifts out of the input while its bubble rises in the thread; the placeholder returns
+  const lastSend = t >= C.send2 ? C.send2 : C.send1
+  const leaving = live && t >= lastSend && t < lastSend + 0.3
+  const leave = leaving ? prog(t, lastSend, 0.3) : 0
+  const placeholder = !live ? 1 : typing || leaving ? 0 : t < C.type1 ? 1 : prog(t, lastSend + 0.15, 0.5)
   const sendPress = live ? Math.max(bump(t, C.send1 - 0.08, 0.18), bump(t, C.send2 - 0.08, 0.18)) : 0
   const opts: [string, string, string, string, string[], boolean][] = [
     ['FRI', '23', '11:00 – 11:45', 'All five free', ['L', 'A', 'M', 'J', 'T'], true],
@@ -91,16 +97,18 @@ export function AskCard() {
   )
 
   // the thread glides to its newest line: target = overflow, followed exponentially (deterministic under the virtual clock)
-  const view = useRef<HTMLDivElement>(null), body = useRef<HTMLDivElement>(null), sc = useRef({ y: 0, t: -1 })
+  const view = useRef<HTMLDivElement>(null), body = useRef<HTMLDivElement>(null), sc = useRef({ y: 0, h: 0, t: -1 })
   // the cursor: from the lower right to Book on a slight arc, pressed with Book, gone once the options fold
   const wrap = useRef<HTMLDivElement>(null), card = useRef<HTMLDivElement>(null), book = useRef<HTMLSpanElement>(null), cur = useRef<HTMLDivElement>(null)
   useLayoutEffect(() => {
     const v = view.current, b = body.current
     if (v && b) {
-      const target = Math.max(0, b.offsetHeight - v.clientHeight), s = sc.current
-      if (!live || s.t < 0) s.y = target
-      else s.y += (target - s.y) * (1 - Math.exp(-Math.max(0, t - s.t) * 7))
+      // the view's height follows the content (capped at VIEW) and the scroll follows the overflow, both exponentially
+      const H = b.offsetHeight, hT = Math.min(H, VIEW), yT = Math.max(0, H - VIEW), s = sc.current
+      if (!live || s.t < 0) { s.h = hT; s.y = yT }
+      else { const f = 1 - Math.exp(-Math.max(0, t - s.t) * 6); s.h += (hT - s.h) * f; s.y += (yT - s.y) * f }
       s.t = t
+      v.style.height = `${s.h.toFixed(2)}px`
       b.style.transform = `translateY(${(-s.y).toFixed(2)}px)`
     }
     const w = wrap.current, c = card.current, bk = book.current, cu = cur.current
@@ -115,20 +123,21 @@ export function AskCard() {
     cu.style.transform = `translate(${x.toFixed(2)}px, ${y.toFixed(2)}px) scale(${(1 - 0.14 * press).toFixed(4)})`
   })
 
-  const kIn = live ? prog(t, C.in, 1.1) : 1
-  const enterCard: CSSProperties = live ? { opacity: Math.min(1, prog(t, C.in, 0.6) * 1.1), transform: `translateY(${((1 - kIn) * 24).toFixed(2)}px) scale(${(0.955 + 0.045 * kIn).toFixed(4)})`, filter: kIn < 0.995 ? `blur(${((1 - kIn) * 10).toFixed(2)}px)` : undefined } : {}
+  // the load-in: the card flies up out of a blur (48px, 14px blur, 0.97 scale) over a long 1.8s settle, its header and composer follow
+  const kIn = live ? prog(t, C.in, 1.8) : 1
+  const enterCard: CSSProperties = live ? { opacity: Math.min(1, prog(t, C.in, 1.0) * 1.1), transform: `translateY(${((1 - kIn) * 48).toFixed(2)}px) scale(${(0.97 + 0.03 * kIn).toFixed(4)})`, filter: kIn < 0.995 ? `blur(${((1 - kIn) * 14).toFixed(2)}px)` : undefined } : {}
 
   return (
     <div ref={wrap} style={{ position: 'relative' }}>
       <div ref={card} data-product style={{ ...enterCard, width: 420, borderRadius: 28, background: '#fff', boxShadow: `0 0 0 1px ${T.line}, 0 1px 2px rgba(14,18,27,0.04), 0 16px 40px -18px rgba(14,18,27,0.18)`, overflow: 'hidden', display: 'flex', flexDirection: 'column' }}>
-        <div style={{ ...row, gap: 10, height: 58, padding: '0 16px 0 18px', boxShadow: `inset 0 -1px 0 ${T.hair}`, ...inn(C.in + 0.18, 6, 0.8, 0) }}>
+        <div style={{ ...row, gap: 10, height: 58, padding: '0 16px 0 18px', boxShadow: `inset 0 -1px 0 ${T.hair}`, ...inn(C.in + 0.22, 14, 1.4, 8) }}>
           <span style={{ display: 'grid', placeItems: 'center', width: 28, height: 28, borderRadius: 10, ...ink, paddingBottom: 0 }}><Mark size={13} /></span>
           <h1 style={{ margin: 0, fontSize: 15, lineHeight: '20px', fontWeight: 600, letterSpacing: '-0.01em' }}>Ask Tempra</h1>
           <span style={{ marginLeft: 'auto', ...row, gap: 2, height: 28, padding: '0 8px 0 10px', borderRadius: 10, fontSize: 12.5, fontWeight: 500, color: T.sub, boxShadow: RING }}>This week<RiArrowDownSLine size={15} /></span>
         </div>
 
-        <div ref={view} style={{ height: 522, overflow: 'hidden', WebkitMaskImage: 'linear-gradient(transparent, #000 18px)', maskImage: 'linear-gradient(transparent, #000 18px)' }}>
-          <div ref={body} style={{ padding: '18px 18px 16px', display: 'flex', flexDirection: 'column' }}>
+        <div ref={view} style={{ overflow: 'hidden', WebkitMaskImage: 'linear-gradient(transparent, #000 18px)', maskImage: 'linear-gradient(transparent, #000 18px)' }}>
+          <div ref={body} style={{ padding: at(C.send1) ? '18px 18px 16px' : 0, display: 'flex', flexDirection: 'column' }}>
             {at(C.send1) && bubble(ASK1, C.send1 + 0.02)}
             {at(C.think1) && <div style={{ marginTop: 16 }}>{thought(C.think1, C.checked1, 'Checking 5 calendars…', 'Checked 5 calendars in 4s')}</div>}
             {at(C.chips) && <div style={{ display: 'flex', gap: 6, marginTop: 9, paddingLeft: 21 }}>
@@ -187,10 +196,13 @@ export function AskCard() {
         </div>
 
         {/* the composer, the dashboard rail's: a grey tray holding the white input card, the connected strip at its foot */}
-        <div style={{ ...inn(C.in + 0.3, 8, 0.9, 0), margin: '0 12px 12px', borderRadius: 20, background: T.weak, boxShadow: RING, padding: 4 }}>
-          <div style={{ borderRadius: 16, background: '#fff', boxShadow: `0 0 0 1px ${typing ? T.vRing : T.line}, 0 1px 2px rgba(14,18,27,0.04)${typing ? ', 0 0 0 4px rgba(125,82,244,0.10)' : ''}`, padding: '11px 8px 8px 12px' }}>
-            <div style={{ fontSize: 14, color: typing ? T.ink : T.mute, minHeight: 42, lineHeight: '21px' }}>
-              {typing ? <>{typed}<span style={{ display: 'inline-block', width: 1.5, height: 16, marginLeft: 1, verticalAlign: -3, background: T.v }} /></> : 'Ask about your week…'}
+        <div style={{ ...inn(C.in + 0.34, 14, 1.4, 8), margin: '0 12px 12px', borderRadius: 20, background: T.weak, boxShadow: RING, padding: 4 }}>
+          <div style={{ borderRadius: 16, background: '#fff', boxShadow: `0 0 0 1px ${T.line}, 0 1px 2px rgba(14,18,27,0.04)`, padding: '11px 8px 8px 12px' }}>
+            <div style={{ display: 'grid', fontSize: 14, minHeight: 42, lineHeight: '21px' }}>
+              <span style={{ gridArea: '1 / 1', color: T.mute, opacity: placeholder }}>Ask about your week…</span>
+              {(typing || leaving) && <span style={{ gridArea: '1 / 1', color: T.ink, opacity: 1 - leave, transform: leaving ? `translateY(${(-8 * leave).toFixed(2)}px)` : undefined, filter: leaving ? `blur(${(3 * leave).toFixed(2)}px)` : undefined }}>
+                {typed}{typing && <span style={{ display: 'inline-block', width: 1.5, height: 16, marginLeft: 1, verticalAlign: -3, background: T.v }} />}
+              </span>}
             </div>
             <div style={{ ...row, gap: 6, marginTop: 10 }}>
               <span style={{ display: 'grid', placeItems: 'center', width: 28, height: 28, borderRadius: 10, boxShadow: RING, color: T.sub }}><RiAddLine size={15} /></span>

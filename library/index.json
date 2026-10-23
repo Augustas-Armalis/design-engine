@@ -1,12 +1,26 @@
 {
   "schema": "design-engine.library-index/v1",
-  "generated": "2026-10-23T14:04:43.589Z",
+  "generated": "2026-10-23T18:27:16.254Z",
   "projects": [
     {
       "id": "kestrel",
       "name": "Kestrel",
       "fictional": true,
       "series": []
+    },
+    {
+      "id": "lintel",
+      "name": "Lintel",
+      "fictional": true,
+      "series": [
+        {
+          "id": "lintel-site",
+          "title": "the Lintel dark split hero",
+          "stages": [
+            "hero"
+          ]
+        }
+      ]
     },
     {
       "id": "notes",
@@ -158,9 +172,35 @@
       ]
     },
     {
+      "id": "lintel-hero",
+      "project": "lintel",
+      "title": "Lintel dark split hero: the break three files away",
+      "kind": "hero-dark",
+      "status": "awaiting-verdict",
+      "postable": true,
+      "verdict": "partial",
+      "formats": [
+        "hero-still"
+      ],
+      "series": [],
+      "sampleDay": null,
+      "reservedFor": "augustasdesign",
+      "preflightFail": null,
+      "dir": "library/lintel/hero",
+      "renders": [
+        {
+          "file": "library/lintel/hero/renders/hero.png",
+          "role": "single",
+          "format": "hero-still",
+          "w": 3840,
+          "h": 2400
+        }
+      ]
+    },
+    {
       "id": "notes-optical-centring",
       "project": "notes",
-      "title": "Teaching card: centre the capitals, nudge once per font",
+      "title": "Pad what you see, not the font height",
       "kind": "post-component",
       "status": "awaiting-verdict",
       "postable": true,
@@ -455,7 +495,7 @@
     {
       "id": "tempra-ask-component",
       "project": "tempra",
-      "title": "Ask Tempra, standalone: the answer streams in",
+      "title": "Ask Tempra, standalone: a two-ask conversation",
       "kind": "post-component",
       "status": "awaiting-verdict",
       "postable": true,

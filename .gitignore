@@ -28,3 +28,8 @@ knowledge/benchmarks/kargul-corpus/**/*.mp4
 
 # Reel recording folders (lossless FFV1 masters, 200+ MB; the exports live in library/)
 work/**/reel-*/
+
+# third-party reference images (Pinterest pins behind placeholder marks) stay local
+work/*/brand/ref/*.jpg
+work/*/brand/ref/*.png
+work/*/brand/ref/*.webp

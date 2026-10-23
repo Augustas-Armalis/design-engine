@@ -43,7 +43,7 @@ export const L = { win: 0, ws: 0.12, search: 0.16, nav: 0.2, teams: 0.42, next: 
 // the standalone Ask Tempra component (chat), r2: the component scales in -> the ask is typed and sent -> five calendars are read ->
 // the answer streams in words -> the options rise -> a cursor books Friday -> the other options fold away -> a second ask is typed ->
 // the reminder is set and its switch turns on (settles ~12.2s)
-export const C = { in: 0, type1: 1.1, typeRate: 32, send1: 3.05, think1: 3.3, chips: 3.45, checked1: 4.4, ans1: 4.5, wordRate: 18,
+export const C = { in: 0, type1: 1.3, typeRate: 34, send1: 3.05, think1: 3.3, chips: 3.45, checked1: 4.4, ans1: 4.5, wordRate: 18,
   opt: 5.7, btn: 6.05, cur: 6.4, press: 7.3, booked: 7.42, fold: 7.85, type2: 8.6, send2: 9.7, think2: 9.95, checked2: 10.55,
   ans2: 10.65, rem: 11.3, on: 11.85 }
 
