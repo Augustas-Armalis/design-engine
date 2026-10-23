@@ -1,0 +1,116 @@
+{
+  "schema": "design-engine.library-asset/v1",
+  "id": "tempra-product-story",
+  "project": "tempra",
+  "title": "Tempra product story: the ask, five calendars, the slot, booked",
+  "kind": "product-ui",
+  "status": "awaiting-verdict",
+  "postable": true,
+  "verdict": {
+    "latest": null,
+    "round": null,
+    "date": null,
+    "words": null,
+    "ledger": null,
+    "after": "made for the 24-25 Oct weekend, awaiting the founder's verdict"
+  },
+  "source": {
+    "app": "work/replicas/app",
+    "route": "#/cprodbv",
+    "component": "work/replicas/app/src/CadenceProductB.tsx",
+    "viewport": [
+      1392,
+      932
+    ],
+    "direction": "work/tempra-x/DIRECTION.md"
+  },
+  "renders": [
+    {
+      "file": "renders/story-x.mp4",
+      "role": "single",
+      "format": "dashboard-motion",
+      "recipe": {
+        "route": "#/cprodbv",
+        "viewport": [
+          1392,
+          932
+        ],
+        "scale": 2.5,
+        "fps": 60,
+        "duration": 7.8,
+        "tool": "Reel --preset x"
+      },
+      "w": 1792,
+      "h": 1200,
+      "bytes": 19551991,
+      "sha256": "421e026a8721f2af0beb9301a822f85c42e1d3b5179b3c423f34605178717cd8",
+      "rendered": "2026-10-23T13:36:33Z"
+    },
+    {
+      "file": "renders/story-4k.mp4",
+      "role": "master",
+      "format": "dashboard-motion",
+      "recipe": {
+        "route": "#/cprodbv",
+        "viewport": [
+          1392,
+          932
+        ],
+        "scale": 2.5,
+        "fps": 60,
+        "duration": 7.8,
+        "tool": "Reel --preset h264"
+      },
+      "w": 3480,
+      "h": 2330,
+      "bytes": 2197988,
+      "sha256": "3ec525b71853d915ace946c2eb668c180c8e1963842d36c2e3ff1799d278a1d2",
+      "rendered": "2026-10-23T13:36:33Z"
+    },
+    {
+      "file": "renders/poster.png",
+      "role": "poster",
+      "format": "dashboard-motion",
+      "recipe": {
+        "from": "last frame of story-4k.mp4"
+      },
+      "w": 3480,
+      "h": 2330,
+      "bytes": 1195939,
+      "sha256": "4c67d59258be6cc18553e4792c8337421196a4ffb655376b919e3af360e4d142",
+      "rendered": "2026-10-23T13:36:33Z"
+    }
+  ],
+  "checks": [
+    {
+      "label": "story",
+      "route": "#/cprodb",
+      "kind": "product-ui",
+      "w": 1392,
+      "h": 932,
+      "format": "dashboard-motion",
+      "renders": [
+        "renders/poster.png"
+      ],
+      "direction": "work/cadence-app/PRODB-DIRECTION.md"
+    }
+  ],
+  "series": [
+    {
+      "id": "tempra-product",
+      "stage": "motion"
+    }
+  ],
+  "related": [
+    "tempra-product-week",
+    "tempra-ask-closeup"
+  ],
+  "conceptName": "Tempra, Fernhill",
+  "sample": true,
+  "alt": "Screen recording of Tempra, a fictional team calendar: a request is typed into the Ask Tempra panel, five calendars are checked, Friday 11:00 is suggested and appears in the week, then it is booked and the meeting count goes from 18 to 19. Sample data, concept.",
+  "dates": {
+    "created": "2026-10-23",
+    "rendered": "2026-10-23"
+  },
+  "reservedFor": "augustasdesign"
+}

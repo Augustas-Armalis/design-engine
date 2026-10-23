@@ -452,6 +452,71 @@
       "crop": "the 1440 window at ~2.1x, 74% of the width; insets L=R 12.8%, T 6.1%, B 12.4%; window radius 15-18 CSS, no added shadow (canon post-component, KC-21)",
       "seriesStage": "full",
       "note": "Marcel's best product-screen format (43.2k median views, knowledge/web/kargul-corpus-2026-10.md KC-21); not rendered yet: no asset carries it until the frame route exists"
+    },
+    {
+      "id": "dashboard-motion",
+      "title": "product story, video (one workflow played end to end)",
+      "media": 1,
+      "canvas": [
+        3480,
+        2330
+      ],
+      "video": {
+        "fps": 60,
+        "seconds": [
+          6,
+          9
+        ],
+        "tool": "Reel: reel.js record <url#/...v> --width 1392 --height 932 --scale 2.5 --fps 60 --preset h264,x"
+      },
+      "kinds": [
+        "product-ui"
+      ],
+      "preflight": {
+        "kind": "product-ui",
+        "artboard": true
+      },
+      "xEngineFormat": "hero-reel",
+      "feed": "3:2 video, poster frame = the settled final state",
+      "crop": "the whole product window on its canvas (56px margins)",
+      "seriesStage": "motion",
+      "phase2": "the X engine needs object storage for MP4 before it can post this (knowledge/x/x-engine-audit.md 4.6)",
+      "ratioRange": [
+        1.33,
+        1.6
+      ],
+      "note": "one clock, one T table (TempraMotion.tsx): cause then effect, the payoff lands last; post it as a quote of the still that already landed (XS-15)",
+      "multiplierKey": "video-loop",
+      "multiplierKeyFollow": "video-followup-quote"
+    },
+    {
+      "id": "teaching-card",
+      "title": "teaching card: one measured craft finding (principle post)",
+      "media": 1,
+      "canvas": [
+        3240,
+        4050
+      ],
+      "kinds": [
+        "post-component"
+      ],
+      "render": {
+        "viewport": [
+          1080,
+          1350
+        ],
+        "scale": 3
+      },
+      "preflight": {
+        "kind": "post-component",
+        "artboard": true
+      },
+      "xEngineFormat": "single-still",
+      "feed": "4:5 portrait 514x642",
+      "crop": "the component at a size that reads at feed scale (subject 35-75% of the width); the rule in two short lines; the hook lives in the caption",
+      "seriesStage": "teaching",
+      "note": "every number on the card is probed from the render itself; never a claim the image does not show (KC teaching posts: most bookmarks)",
+      "multiplierKey": "single-portrait"
     }
   ]
 }

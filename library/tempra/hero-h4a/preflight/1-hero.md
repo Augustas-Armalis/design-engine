@@ -1,17 +1,17 @@
 # Preflight: lib-tempra-hero-h4a-1
 
-http://localhost:4396/#/h4a  
-kind `hero-light`, 1440x1035 artboard, 2026-10-22 17:58 UTC
+http://localhost:4395/#/h4a  
+kind `hero-light`, 1440x1035 artboard, 2026-10-23 13:31 UTC
 
-**PASS: 0 fail, 7 warn, 16 pass**
+**PASS: 0 fail, 7 warn, 19 pass**
 
 | step | status | fail | warn | seconds |
 |---|---|---|---|---|
-| gate | PASS | 0 | 4 | 7.1 |
-| design-view | PASS | 0 | 0 | 6.7 |
-| check | PASS | 0 | 3 | 9.4 |
-| clipscan | PASS | 0 | 0 | 1.9 |
-| probes | done | 0 | 0 | 6.3 |
+| gate | PASS | 0 | 4 | 8.1 |
+| design-view | PASS | 0 | 0 | 7.8 |
+| check | PASS | 0 | 3 | 10.2 |
+| clipscan | PASS | 0 | 0 | 2.4 |
+| probes | done | 0 | 0 | 6.7 |
 
 | status | check | value | want | detail |
 |---|---|---|---|---|
@@ -33,6 +33,9 @@ kind `hero-light`, 1440x1035 artboard, 2026-10-22 17:58 UTC
 | PASS | optical/optical.icon-centre | 0/3 | icon-only controls: painted glyph centre within 1.25px of the box centre |  |
 | PASS | grey/grey.fill-twins | 0 | no two neutral fills (each >= 0.2% of the frame) within OKLCH dL 0.008 of each other: one weak grey per role (DE-05) |  |
 | PASS | primary/primary.per-view | page:1 product1:1 | <= 1 heavy filled control (fill >= 3:1 off its surface) per view: the page, and each [data-product] (DE-06, "one ink primary") |  |
+| PASS | layout/icons.density | 8/34 | <= 25% of text controls (chips, tags, text buttons) carry an icon; icons belong on navigation, icon-only controls, one AI marker and the primary arrow (x-closeups r1) | NewBooking across time zones; Start free; Search⌘K; Week; Today; Design sync11:00 · all 5 fre; This week; Book Fri 11:00 |
+| PASS | layout/layout.squeezed | 0 | no box rendered shorter than its declared fixed height (a flex column that overflows squashes its fixed rows; Panelry r1 drawer header 56 -> 41) |  |
+| PASS | layout/clip.control-cut | 0 | no icon button or avatar partly cut by its own clipping container (DE-02 inside the frame) |  |
 | PASS | edge/edge.small-cut | 0 | no chip, avatar, button or icon (< 120px) cut by the left, right or top frame edge (the bottom is fold.end): bring it in, or bleed one big visual by >= 25% (DE-02) |  |
 | PASS | edge/fold.end | fade | the frame ends on purpose: a clear margin, a mask/blur fade, or one big bleed (>= 120px, cut >= 25%); no unfaded text line or small box cut by the bottom edge |  |
 | PASS | copy/copy.reference-names | 0 | no name from a studied reference in visible text (hard no-copy rule, system/canon/no-copy-names.json) |  |

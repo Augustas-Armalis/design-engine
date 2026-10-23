@@ -1,0 +1,76 @@
+{
+  "schema": "design-engine.library-asset/v1",
+  "id": "notes-optical-centring",
+  "project": "notes",
+  "title": "Teaching card: centre the ink, not the line box",
+  "kind": "post-component",
+  "status": "awaiting-verdict",
+  "postable": true,
+  "verdict": {
+    "latest": null,
+    "round": null,
+    "date": null,
+    "words": null,
+    "ledger": null,
+    "after": "made for the 24-25 Oct weekend, awaiting the founder's verdict"
+  },
+  "source": {
+    "app": "work/replicas/app",
+    "route": "#/xoptical",
+    "component": "work/replicas/app/src/TeachOptical.tsx",
+    "viewport": [
+      1080,
+      1350
+    ],
+    "direction": "work/tempra-x/DIRECTION.md"
+  },
+  "renders": [
+    {
+      "file": "renders/card.png",
+      "role": "single",
+      "format": "teaching-card",
+      "recipe": {
+        "route": "#/xoptical",
+        "viewport": [
+          1080,
+          1350
+        ],
+        "scale": 3
+      },
+      "w": 3240,
+      "h": 4050,
+      "bytes": 1246541,
+      "sha256": "79e8cc64a2c5796d4f1ccc8d8aae1e23488be4cca7ffbd2840dcebe6fbb4232c",
+      "rendered": "2026-10-23T13:36:33Z"
+    }
+  ],
+  "checks": [
+    {
+      "label": "card",
+      "route": "#/xoptical",
+      "kind": "post-component",
+      "w": 1080,
+      "h": 1350,
+      "format": "teaching-card",
+      "renders": [
+        "renders/card.png"
+      ],
+      "direction": "work/tempra-x/DIRECTION.md"
+    }
+  ],
+  "series": [
+    {
+      "id": "notes-craft",
+      "stage": "teaching"
+    }
+  ],
+  "related": [],
+  "conceptName": null,
+  "sample": true,
+  "alt": "Two dark Sign up buttons with measurement brackets: geometrically centred the label has 67.3 px above the capitals and 54.0 below the descenders; lifted 6 px it has 61.3 and 60.0. Below: a line box centres the font, not the letters; centre the ink, then nudge the label until the gaps match.",
+  "dates": {
+    "created": "2026-10-23",
+    "rendered": "2026-10-23"
+  },
+  "reservedFor": "augustasdesign"
+}

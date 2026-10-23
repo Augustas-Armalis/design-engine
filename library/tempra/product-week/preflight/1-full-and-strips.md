@@ -1,16 +1,16 @@
 # Preflight: lib-tempra-product-week-1
 
-http://localhost:4396/#/cprodb  
-kind `product-ui`, 1392x932 artboard, anchor all, 2026-10-22 17:59 UTC
+http://localhost:4395/#/cprodb  
+kind `product-ui`, 1392x932 artboard, anchor all, 2026-10-23 13:31 UTC
 
-**PASS: 0 fail, 7 warn, 20 pass**
+**PASS: 0 fail, 7 warn, 23 pass**
 
 | step | status | fail | warn | seconds |
 |---|---|---|---|---|
-| gate | PASS | 0 | 4 | 6.9 |
-| check | PASS | 0 | 3 | 9.4 |
-| clipscan | PASS | 0 | 0 | 1.9 |
-| probes | done | 0 | 0 | 6.0 |
+| gate | PASS | 0 | 4 | 7.7 |
+| check | PASS | 0 | 3 | 9.7 |
+| clipscan | PASS | 0 | 0 | 2.5 |
+| probes | done | 0 | 0 | 6.3 |
 
 | status | check | value | want | detail |
 |---|---|---|---|---|
@@ -32,6 +32,9 @@ kind `product-ui`, 1392x932 artboard, anchor all, 2026-10-22 17:59 UTC
 | PASS | grey/grey.fill-twins | 0 | no two neutral fills (each >= 0.2% of the frame) within OKLCH dL 0.008 of each other: one weak grey per role (DE-05) |  |
 | PASS | grey/grey.edge-twins | 0 | no two neutral 1px edges within dL 0.006 (composited on their surface) |  |
 | PASS | primary/primary.per-view | product1:1 | <= 1 heavy filled control (fill >= 3:1 off its surface) per view: the page, and each [data-product] (DE-06, "one ink primary") |  |
+| PASS | layout/icons.density | 8/40 | <= 25% of text controls (chips, tags, text buttons) carry an icon; icons belong on navigation, icon-only controls, one AI marker and the primary arrow (x-closeups r1) | Search⌘K; Week; Join; Today; Design sync11:00 · all 5 fre; This week; Book Fri 11:00; Design team |
+| PASS | layout/layout.squeezed | 0 | no box rendered shorter than its declared fixed height (a flex column that overflows squashes its fixed rows; Panelry r1 drawer header 56 -> 41) |  |
+| PASS | layout/clip.control-cut | 0 | no icon button or avatar partly cut by its own clipping container (DE-02 inside the frame) |  |
 | PASS | edge/edge.small-cut | 0 | no chip, avatar, button or icon (< 120px) cut by the left, right or top frame edge (the bottom is fold.end): bring it in, or bleed one big visual by >= 25% (DE-02) |  |
 | PASS | edge/fold.end | margin | the frame ends on purpose: a clear margin, a mask/blur fade, or one big bleed (>= 120px, cut >= 25%); no unfaded text line or small box cut by the bottom edge |  |
 | PASS | post/post.insets | l 56 t 56 r 56 b 56 | equal canvas inset on all four sides (+-2px) | div 1280x820 |

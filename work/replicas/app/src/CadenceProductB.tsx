@@ -7,9 +7,10 @@ import type { CSSProperties, ReactNode } from 'react'
 import {
   RiCalendarLine, RiInboxLine, RiLinksLine, RiFocus3Line, RiSearch2Line, RiExpandUpDownLine, RiLockLine, RiSparkling2Fill,
   RiArrowUpLine, RiMore2Line, RiSunLine, RiCheckboxCircleLine, RiArrowDownSLine, RiAddLine, RiMicLine, RiCalendarCheckLine,
-  RiArrowLeftSLine, RiArrowRightSLine, RiVideoOnLine, RiArrowGoForwardLine, RiShieldCheckLine,
+  RiArrowLeftSLine, RiArrowRightSLine, RiVideoOnLine, RiArrowGoForwardLine, RiShieldCheckLine, RiCheckLine,
 } from '@remixicon/react'
 import { Mark } from './TempraLogo'
+import { useAnim, rise, enter, prog, bump, H, S } from './TempraMotion'
 
 export const APP_W = 1280, APP_H = 820
 const T = {
@@ -42,8 +43,9 @@ function Item({ icon, label, active, count }: { icon: ReactNode; label: string; 
 }
 const Group = ({ children }: { children: ReactNode }) => <div style={{ height: 28, padding: '0 10px', display: 'flex', alignItems: 'flex-end', paddingBottom: 6, boxSizing: 'border-box', fontSize: 12, fontWeight: 500, color: T.mute }}>{children}</div>
 function Sidebar() {
+  const a = useAnim()
   return (
-    <aside style={{ width: 232, flex: 'none', background: T.side, boxShadow: `inset -1px 0 0 ${T.line}`, padding: '14px 12px', boxSizing: 'border-box', display: 'flex', flexDirection: 'column' }}>
+    <aside style={{ ...rise(a, 'hero', H.side, 10), width: 232, flex: 'none', background: T.side, boxShadow: `inset -1px 0 0 ${T.line}`, padding: '14px 12px', boxSizing: 'border-box', display: 'flex', flexDirection: 'column' }}>
       <div style={{ ...row, gap: 10, height: 40, padding: '0 6px' }}>
         <span style={{ display: 'grid', placeItems: 'center', width: 28, height: 28, borderRadius: 10, ...ink }}><Mark size={14} /></span>
         <span style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
@@ -106,6 +108,7 @@ const EVENTS: [number, number, number, string, Kind][] = [
 ]
 const fmt = (h: number) => `${String(Math.floor(h)).padStart(2, '0')}:${String(Math.round((h % 1) * 60)).padStart(2, '0')}`
 function Week({ w, h }: { w: number; h: number }) {
+  const a0 = useAnim()
   const G = 48, HEAD = 40, H0 = 9, HR = (h - HEAD) / 9, cw = (w - G) / 5
   const y = (t: number) => HEAD + (t - H0) * HR
   const days = ['Mon 19', 'Tue 20', 'Wed 21', 'Thu 22', 'Fri 23']
@@ -131,22 +134,38 @@ function Week({ w, h }: { w: number; h: number }) {
       ))}
       {[1, 2, 3, 4].map((i) => <div key={i} style={abs(G + i * cw, HEAD, 1, h - HEAD, { background: T.hair })} />)}
       {EVENTS.map(([d, a, b, title, k]) => {
+        const anim = a0
         const top = y(a) + 2, height = (b - a) * HR - 4, short = height < 40
         const look: CSSProperties = k === 'v' ? { background: T.vFill, boxShadow: `inset 0 0 0 1px ${T.vRing}`, color: T.vInk }
           : k === 'p' ? { background: T.pFill, boxShadow: `inset 0 0 0 1px ${T.pRing}`, color: T.pInk }
           : { background: `repeating-linear-gradient(135deg, #F6F7F9 0 6px, #EFF1F4 6px 7px)`, boxShadow: `inset 0 0 0 1px #E7E9EE`, color: T.sub }
         return (
-          <div key={`${d}${a}`} style={abs(G + d * cw + 4, top, cw - 8, height, { borderRadius: 12, boxSizing: 'border-box', padding: short ? '0 9px' : '7px 9px', display: 'flex', flexDirection: short ? 'row' : 'column', alignItems: short ? 'center' : 'stretch', gap: short ? 6 : 1, overflow: 'hidden', ...look })}>
+          <div key={`${d}${a}`} style={abs(G + d * cw + 4, top, cw - 8, height, { ...rise(anim, 'hero', H.ev + d * 0.05 + (a - 9) * 0.035, 8), borderRadius: 12, boxSizing: 'border-box', padding: short ? '0 9px' : '7px 9px', display: 'flex', flexDirection: short ? 'row' : 'column', alignItems: short ? 'center' : 'stretch', gap: short ? 6 : 1, overflow: 'hidden', ...look })}>
             <span style={{ ...row, gap: 4, fontSize: 12.5, fontWeight: 500, lineHeight: '16px', whiteSpace: 'nowrap' }}>{k === 'focus' && <RiLockLine size={12} />}{title}</span>
             <span style={{ fontSize: 11.5, lineHeight: '15px', opacity: 0.85, whiteSpace: 'nowrap', ...tnum }}>{fmt(a)}{short ? '' : ` – ${fmt(b)}`}</span>
           </div>
         )
       })}
-      {/* the slot Tempra found: Fri 11:00-11:45, free for all five */}
-      <div style={abs(G + 4 * cw + 4, y(11) + 2, cw - 8, 0.75 * HR - 4, { borderRadius: 12, boxSizing: 'border-box', padding: '6px 9px', background: '#fff', border: `1.5px dashed ${T.v}`, boxShadow: '0 4px 12px -4px rgba(125,82,244,0.28)', color: T.vInk, display: 'flex', flexDirection: 'column', gap: 1 })}>
-        <span style={{ ...row, gap: 4, fontSize: 12.5, fontWeight: 600, lineHeight: '16px', whiteSpace: 'nowrap' }}><RiSparkling2Fill size={12} />Design sync</span>
-        <span style={{ fontSize: 11.5, lineHeight: '15px', whiteSpace: 'nowrap', ...tnum }}>11:00 · all 5 free</span>
-      </div>
+      {/* the slot Tempra found: Fri 11:00-11:45, free for all five. Story: it lands at S.slot, then Book turns it into a real event */}
+      {(() => {
+        const story = a0?.mode === 'story', booked = story ? prog(a0!.t, S.booked, 0.5) : 0
+        const land = a0?.mode === 'hero' ? prog(a0.t, H.slot, 0.9) : story ? prog(a0!.t, S.slot, 0.9) : 1
+        const box = abs(G + 4 * cw + 4, y(11) + 2, cw - 8, 0.75 * HR - 4, { borderRadius: 12, boxSizing: 'border-box', padding: '6px 9px', display: 'flex', flexDirection: 'column', gap: 1 })
+        return (
+          <div style={{ position: 'absolute', inset: 0, opacity: Math.min(1, land * 1.2), transform: `translateY(${((1 - land) * 10).toFixed(2)}px) scale(${(0.97 + 0.03 * land).toFixed(4)})`, transformOrigin: `${G + 4.5 * cw}px ${y(11.4)}px`, pointerEvents: 'none' }}>
+            <div style={{ ...box, background: '#fff', border: `1.5px dashed ${T.v}`, boxShadow: '0 4px 12px -4px rgba(125,82,244,0.28)', color: T.vInk, opacity: 1 - booked }}>
+              <span style={{ ...row, gap: 4, fontSize: 12.5, fontWeight: 600, lineHeight: '16px', whiteSpace: 'nowrap' }}><RiSparkling2Fill size={12} />Design sync</span>
+              <span style={{ fontSize: 11.5, lineHeight: '15px', whiteSpace: 'nowrap', ...tnum }}>11:00 · all 5 free</span>
+            </div>
+            {story && (
+              <div style={{ ...box, background: T.vFill, boxShadow: `inset 0 0 0 1px ${T.vRing}`, color: T.vInk, opacity: booked }}>
+                <span style={{ ...row, gap: 4, fontSize: 12.5, fontWeight: 600, lineHeight: '16px', whiteSpace: 'nowrap' }}><RiCheckLine size={12} />Design sync</span>
+                <span style={{ fontSize: 11.5, lineHeight: '15px', whiteSpace: 'nowrap', ...tnum }}>11:00 – 11:45</span>
+              </div>
+            )}
+          </div>
+        )
+      })()}
       {/* now (10:07): Thursday column only, in the free gap before Design crit, so it crosses no event */}
       <div style={abs(G + 3 * cw, y(10.12), cw, 2, { background: T.red, borderRadius: 1 })} />
       <span className="round" style={abs(G + 3 * cw - 4, y(10.12) - 3, 8, 8, { borderRadius: 999, background: T.red })} />
@@ -156,33 +175,48 @@ function Week({ w, h }: { w: number; h: number }) {
 
 // ================= Ask Tempra (affectUI AI-answer grammar: thought row + sources, cited answer, date-tile options, tray composer) =================
 const Cite = ({ children }: { children: ReactNode }) => <span style={{ display: 'inline-flex', alignItems: 'center', height: 18, padding: '0 6px', margin: '0 2px', borderRadius: 8, background: T.weak, boxShadow: `inset 0 0 0 1px ${T.line}`, fontSize: 11.5, fontWeight: 500, color: T.sub, verticalAlign: 1 }}>{children}</span>
+const ASK = 'Find 45 min with the design team next week, not Monday.'
 function Rail({ compact }: { compact?: boolean }) {
   // compact (in the hero): no source chips and two options, so the answer and Book end above the fold's blur
+  const a = useAnim()
+  const story = a?.mode === 'story', t = a?.t ?? 1e9
   const opts: [string, string, string, string, string[], boolean][] = [
     ['FRI', '23', '11:00 – 11:45', 'All five free', ['L', 'A', 'M', 'J', 'T'], true],
     ['THU', '22', '15:30 – 16:15', 'Maya runs late', ['L', 'A', 'J', 'T'], false],
     ['TUE', '27', '16:00 – 16:45', "Moves Theo's focus", ['L', 'A', 'M', 'J'], false],
   ]
   const people: [string, string][] = [['A', 'Ana'], ['M', 'Maya'], ['J', 'Jon'], ['T', 'Theo']]
+  // story beats: the ask is typed into the composer, sent, read against five calendars, answered, then booked
+  const typed = story ? ASK.slice(0, Math.max(0, Math.floor((t - S.type0) * S.typeRate))) : ''
+  const typing = story && t >= S.type0 && t < S.send + 0.06
+  const checking = story ? 1 - prog(t, S.checked, 0.35) : 0
+  const booked = story ? prog(t, S.booked, 0.45) : 0
+  const sendPress = story ? bump(t, S.send - 0.06, 0.16) : 0, bookPress = story ? bump(t, S.press, 0.16) : 0
+  const spin = (t * 420) % 360
   return (
-    <aside aria-label="Ask Tempra, sample answer" style={{ width: 320, flex: 'none', boxShadow: `inset 1px 0 0 ${T.line}`, display: 'flex', flexDirection: 'column', padding: '0 16px 16px', boxSizing: 'border-box' }}>
+    <aside aria-label="Ask Tempra, sample answer" style={{ ...rise(a, 'hero', H.rail, 10), width: 320, flex: 'none', boxShadow: `inset 1px 0 0 ${T.line}`, display: 'flex', flexDirection: 'column', padding: '0 16px 16px', boxSizing: 'border-box' }}>
       <div style={{ ...row, gap: 9, height: 56 }}>
         <span style={{ display: 'grid', placeItems: 'center', width: 24, height: 24, borderRadius: 9, ...ink }}><Mark size={12} /></span>
         <span style={{ fontSize: 14, fontWeight: 600, letterSpacing: '-0.01em' }}>Ask Tempra</span>
         <span style={{ marginLeft: 'auto', ...row, gap: 2, height: 24, padding: '0 6px 0 8px', borderRadius: 10, fontSize: 12, fontWeight: 500, color: T.sub, boxShadow: `inset 0 0 0 1px ${T.line}` }}>This week<RiArrowDownSLine size={14} /></span>
       </div>
-      <div style={{ alignSelf: 'flex-end', maxWidth: 236, padding: '9px 12px', borderRadius: 16, borderBottomRightRadius: 8, background: T.weak, fontSize: 13.5, lineHeight: '20px' }}>Find 45 min with the design team next week, not Monday.</div>
-      {/* the thought, settled: what Tempra read, as source chips */}
-      <div style={{ marginTop: 14, ...row, gap: 6, fontSize: 12.5, color: T.mute }}><RiCheckboxCircleLine size={14} color={T.green} />Checked 5 calendars in 4s<RiArrowDownSLine size={14} /></div>
+      <div style={{ ...enter(a, H.bubble, S.bubble), alignSelf: 'flex-end', maxWidth: 236, padding: '9px 12px', borderRadius: 16, borderBottomRightRadius: 8, background: T.weak, fontSize: 13.5, lineHeight: '20px' }}>{ASK}</div>
+      {/* the thought: "Checking" with a spinner while the chips land, then settled with a check */}
+      <div style={{ ...enter(a, H.check, S.check), marginTop: 14, display: 'grid' }}>
+        <div style={{ gridArea: '1 / 1', ...row, gap: 6, fontSize: 12.5, color: T.mute, opacity: 1 - checking }}><RiCheckboxCircleLine size={14} color={T.green} />Checked 5 calendars in 4s<RiArrowDownSLine size={14} /></div>
+        {story && <div style={{ gridArea: '1 / 1', ...row, gap: 6, fontSize: 12.5, color: T.mute, opacity: checking }}>
+          <svg width={14} height={14} viewBox="0 0 14 14" style={{ transform: `rotate(${spin}deg)` }} aria-hidden><circle cx={7} cy={7} r={5.5} fill="none" stroke={T.line} strokeWidth={1.6} /><path d="M7 1.5a5.5 5.5 0 0 1 5.5 5.5" fill="none" stroke={T.v} strokeWidth={1.6} strokeLinecap="round" /></svg>
+          Checking 5 calendars…</div>}
+      </div>
       {!compact && <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6, marginTop: 8, paddingLeft: 20 }}>
-        {people.map(([i, n]) => (
-          <span key={i} style={{ ...row, gap: 5, height: 24, padding: '0 8px 0 3px', borderRadius: 10, background: '#fff', boxShadow: `inset 0 0 0 1px ${T.line}, 0 1px 1px rgba(14,18,27,0.03)`, fontSize: 12, color: T.sub }}><Av i={i} s={18} />{n}</span>
+        {people.map(([i, n], k) => (
+          <span key={i} style={{ ...enter(a, null, S.chips + k * 0.12, 6), ...row, gap: 5, height: 24, padding: '0 8px 0 3px', borderRadius: 10, background: '#fff', boxShadow: `inset 0 0 0 1px ${T.line}, 0 1px 1px rgba(14,18,27,0.03)`, fontSize: 12, color: T.sub }}><Av i={i} s={18} />{n}</span>
         ))}
       </div>}
-      <p style={{ margin: '14px 0 0', fontSize: 13.5, lineHeight: '22px', color: T.sub }}><b style={{ color: T.ink, fontWeight: 600 }}>Friday 11:00</b> works for all five<Cite>5 calendars</Cite>. No focus block moves<Cite>Focus · 4</Cite> and Sam is back by then<Cite>Sam · OOO</Cite>.</p>
-      <div style={{ marginTop: 12, borderRadius: 16, background: '#fff', boxShadow: `${RING}, 0 1px 2px rgba(14,18,27,0.04)` }}>
+      <p style={{ ...enter(a, H.ans, S.ans), margin: '14px 0 0', fontSize: 13.5, lineHeight: '22px', color: T.sub }}><b style={{ color: T.ink, fontWeight: 600 }}>Friday 11:00</b> works for all five<Cite>5 calendars</Cite>. No focus block moves<Cite>Focus · 4</Cite> and Sam is back by then<Cite>Sam · OOO</Cite>.</p>
+      <div style={{ marginTop: 12, borderRadius: 16, background: '#fff', boxShadow: `${RING}, 0 1px 2px rgba(14,18,27,0.04)`, ...enter(a, H.opt, S.opt) }}>
         {(compact ? opts.slice(0, 2) : opts).map(([dw, dn, when, why, ids, best], k) => (
-          <div key={dn} style={{ ...row, gap: 10, height: 58, padding: '0 12px', borderTop: k ? `1px solid ${T.hair}` : 'none' }}>
+          <div key={dn} style={{ ...enter(a, H.opt + k * 0.06, S.opt + k * 0.08, 6), ...row, gap: 10, height: 58, padding: '0 12px', borderTop: k ? `1px solid ${T.hair}` : 'none' }}>
             <span style={{ width: 36, height: 38, borderRadius: 11, flex: 'none', boxShadow: `inset 0 0 0 1px ${best ? T.vRing : T.line}`, background: best ? T.vFill : '#fff', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 0 }}>
               <span style={{ fontSize: 10, fontWeight: 600, letterSpacing: '0.04em', color: best ? T.vInk : T.mute, lineHeight: '12px' }}>{dw}</span>
               <span style={{ fontSize: 14, fontWeight: 600, lineHeight: '17px', color: best ? T.vInk : T.ink, ...tnum }}>{dn}</span>
@@ -195,31 +229,37 @@ function Rail({ compact }: { compact?: boolean }) {
           </div>
         ))}
       </div>
-      <div style={{ ...row, gap: 8, marginTop: 12 }}>
-        <span style={{ ...row, gap: 6, height: 34, padding: '0 14px 0 12px', borderRadius: 13, fontSize: 13.5, fontWeight: 500, ...ink }}><RiCalendarCheckLine size={15} />Book Fri 11:00</span>
-        <span style={{ ...row, height: 34, padding: '0 14px', borderRadius: 13, fontSize: 13.5, fontWeight: 500, ...stroke }}>Other times</span>
+      <div style={{ ...enter(a, H.btn, S.btn), ...row, gap: 8, marginTop: 12 }}>
+        {/* Book: pressed at S.press, then "Booked"; both labels share one grid cell so the button never changes width */}
+        <span style={{ display: 'grid', height: 34, padding: '0 14px 0 12px', borderRadius: 13, fontSize: 13.5, fontWeight: 500, ...ink, transform: `scale(${(1 - 0.03 * bookPress).toFixed(4)})` }}>
+          <span style={{ gridArea: '1 / 1', ...row, gap: 6, opacity: 1 - booked }}><RiCalendarCheckLine size={15} />Book Fri 11:00</span>
+          {story && <span style={{ gridArea: '1 / 1', ...row, gap: 6, justifyContent: 'center', opacity: booked }}><RiCheckLine size={15} />Booked</span>}
+        </span>
+        <span style={{ ...row, height: 34, padding: '0 14px', borderRadius: 13, fontSize: 13.5, fontWeight: 500, ...stroke, opacity: 1 - 0.4 * booked }}>Other times</span>
       </div>
-      <div style={{ marginTop: 20, paddingTop: 14, borderTop: `1px solid ${T.hair}` }}>
+      <div style={{ ...enter(a, H.handled, S.handled), marginTop: 20, paddingTop: 14, borderTop: `1px solid ${T.hair}` }}>
         <div style={{ fontSize: 12, fontWeight: 500, color: T.mute, marginBottom: 2 }}>Handled this week</div>
-        {([[<RiArrowGoForwardLine size={14} />, 'Moved Roadmap review to Wed', "Clashed with Ana's focus"], [<RiShieldCheckLine size={14} />, 'Protected 4 focus blocks', 'Mornings, Mon to Thu']] as const).map(([ic, t, d]) => (
-          <div key={t} style={{ ...row, gap: 10, height: 46 }}>
+        {([[<RiArrowGoForwardLine size={14} />, 'Moved Roadmap review to Wed', "Clashed with Ana's focus"], [<RiShieldCheckLine size={14} />, 'Protected 4 focus blocks', 'Mornings, Mon to Thu']] as const).map(([ic, tt, d]) => (
+          <div key={tt} style={{ ...row, gap: 10, height: 46 }}>
             <span style={{ display: 'grid', placeItems: 'center', width: 28, height: 28, borderRadius: 11, background: T.weak, boxShadow: `inset 0 0 0 1px ${T.line}`, color: T.sub, flex: 'none' }}>{ic}</span>
             <span style={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
-              <span style={{ fontSize: 13, fontWeight: 500 }}>{t}</span>
+              <span style={{ fontSize: 13, fontWeight: 500 }}>{tt}</span>
               <span style={{ fontSize: 12, color: T.mute }}>{d}</span>
             </span>
           </div>
         ))}
       </div>
       {/* composer in a tray: the card holds the input, the tray's strip says what is connected */}
-      <div style={{ marginTop: 'auto', borderRadius: 20, background: T.weak, boxShadow: `inset 0 0 0 1px ${T.line}`, padding: 4 }}>
-        <div style={{ borderRadius: 16, background: '#fff', boxShadow: `0 0 0 1px ${T.line}, 0 1px 2px rgba(14,18,27,0.04)`, padding: '11px 8px 8px 12px' }}>
-          <div style={{ fontSize: 13.5, color: T.mute }}>Ask about your week…</div>
-          <div style={{ ...row, gap: 6, marginTop: 12 }}>
+      <div style={{ ...rise(a, 'hero', H.comp, 8), marginTop: 'auto', borderRadius: 20, background: T.weak, boxShadow: `inset 0 0 0 1px ${T.line}`, padding: 4 }}>
+        <div style={{ borderRadius: 16, background: '#fff', boxShadow: `0 0 0 1px ${typing ? T.vRing : T.line}, 0 1px 2px rgba(14,18,27,0.04)${typing ? ', 0 0 0 4px rgba(125,82,244,0.10)' : ''}`, padding: '11px 8px 8px 12px' }}>
+          <div style={{ fontSize: 13.5, color: typing ? T.ink : T.mute, minHeight: 20, lineHeight: '20px' }}>
+            {typing ? <>{typed}<span style={{ display: 'inline-block', width: 1.5, height: 16, marginLeft: 1, verticalAlign: -3, background: T.v }} /></> : 'Ask about your week…'}
+          </div>
+          <div style={{ ...row, gap: 6, marginTop: typing && typed.length > 34 ? 12 : 12 }}>
             <span style={{ display: 'grid', placeItems: 'center', width: 26, height: 26, borderRadius: 10, boxShadow: `inset 0 0 0 1px ${T.line}`, color: T.sub }}><RiAddLine size={15} /></span>
             <span style={{ ...row, gap: 2, height: 26, padding: '0 6px 0 8px', borderRadius: 10, boxShadow: `inset 0 0 0 1px ${T.line}`, fontSize: 12, fontWeight: 500, color: T.sub }}>Design team<RiArrowDownSLine size={14} /></span>
             <span style={{ marginLeft: 'auto', display: 'flex', color: T.mute }}><RiMicLine size={16} /></span>
-            <span className="round" style={{ width: 28, height: 28, borderRadius: 999, display: 'grid', placeItems: 'center', ...ink }}><RiArrowUpLine size={15} /></span>
+            <span className="round" style={{ width: 28, height: 28, borderRadius: 999, display: 'grid', placeItems: 'center', ...ink, transform: `scale(${(1 - 0.08 * sendPress).toFixed(4)})` }}><RiArrowUpLine size={15} /></span>
           </div>
         </div>
         <div style={{ ...row, gap: 6, height: 28, padding: '0 10px', fontSize: 11.5, color: T.mute }}><span className="round" style={{ width: 6, height: 6, borderRadius: 999, background: '#1FC16B' }} />5 calendars synced · 2 time zones</div>
@@ -227,7 +267,6 @@ function Rail({ compact }: { compact?: boolean }) {
     </aside>
   )
 }
-
 
 // one small visual per number: meeting bars by day, a focus line, settled-conflict dots
 const SPARK: ReactNode[] = [
@@ -238,14 +277,16 @@ const SPARK: ReactNode[] = [
 
 // ================= the window =================
 export function TempraApp({ inHero, style }: { inHero?: boolean; style?: CSSProperties }) {
+  const a = useAnim()
+  const booked = a?.mode === 'story' ? prog(a.t, S.booked, 0.45) : 0
   const H1 = inHero ? 'p' : 'h1'
   const Main = inHero ? 'div' : 'main'
-  const kpis: [string, string, string][] = [['Meetings', '18', '−3'], ['Focus kept', '11h 30m', '+2h'], ['Conflicts settled', '7', 'all by Tempra']]
+  const kpis: [string, string, string][] = [['Meetings', booked > 0.5 ? '19' : '18', booked > 0.5 ? '−2' : '−3'], ['Focus kept', '11h 30m', '+2h'], ['Conflicts settled', '7', 'all by Tempra']]
   return (
-    <div data-product style={{ ...font, position: 'relative', width: APP_W, height: APP_H, borderRadius: 22, background: '#fff', overflow: 'hidden', display: 'flex', boxShadow: '0 0 0 1px rgba(14,18,27,0.08), 0 1px 2px rgba(14,18,27,0.04), 0 24px 60px -24px rgba(14,18,27,0.22)', ...style }}>
+    <div data-product style={{ ...font, ...rise(a, 'hero', H.win, 48, 1.2), position: 'relative', width: APP_W, height: APP_H, borderRadius: 22, background: '#fff', overflow: 'hidden', display: 'flex', boxShadow: '0 0 0 1px rgba(14,18,27,0.08), 0 1px 2px rgba(14,18,27,0.04), 0 24px 60px -24px rgba(14,18,27,0.22)', ...style }}>
       <Sidebar />
       <Main aria-label="Tempra week, sample data" style={{ flex: 1, padding: '0 24px 24px', boxSizing: 'border-box', display: 'flex', flexDirection: 'column' }}>
-        <div style={{ ...row, height: 68 }}>
+        <div style={{ ...rise(a, 'hero', H.head, 8), ...row, height: 68 }}>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
             <H1 style={{ margin: 0, fontSize: 17, lineHeight: '22px', fontWeight: 600, letterSpacing: '-0.015em' }}>This week</H1>
             <span style={{ fontSize: 12.5, color: T.mute, ...tnum }}>Oct 19 – 23 · Berlin</span>
@@ -266,7 +307,7 @@ export function TempraApp({ inHero, style }: { inHero?: boolean; style?: CSSProp
           </div>
           </div>
         </div>
-        <div style={{ display: 'flex', borderRadius: 16, boxShadow: RING, height: 72, flex: 'none' }}>
+        <div style={{ ...rise(a, 'hero', H.kpi, 8), display: 'flex', borderRadius: 16, boxShadow: RING, height: 72, flex: 'none' }}>
           {kpis.map(([l, v, d], k) => (
             <div key={l} style={{ position: 'relative', flex: 1, padding: '12px 16px', boxShadow: k ? `inset 1px 0 0 ${T.line}` : 'none', display: 'flex', flexDirection: 'column', gap: 4 }}>
               <span style={{ fontSize: 12.5, color: T.mute }}>{l}</span>
@@ -278,7 +319,7 @@ export function TempraApp({ inHero, style }: { inHero?: boolean; style?: CSSProp
             </div>
           ))}
         </div>
-        <div style={{ marginTop: 16 }}><Week w={APP_W - 232 - 320 - 48} h={APP_H - 68 - 72 - 16 - 24} /></div>
+        <div style={{ ...rise(a, 'hero', H.week, 10), marginTop: 16 }}><Week w={APP_W - 232 - 320 - 48} h={APP_H - 68 - 72 - 16 - 24} /></div>
       </Main>
       <Rail compact={inHero} />
     </div>

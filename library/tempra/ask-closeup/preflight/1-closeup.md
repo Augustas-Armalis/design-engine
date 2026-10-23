@@ -1,16 +1,16 @@
 # Preflight: lib-tempra-ask-closeup-1
 
-http://localhost:4396/#/xframe?src=cprodb&x=1017&y=16  
-kind `product-ui`, 359x427 artboard, anchor tr, 2026-10-22 17:48 UTC
+http://localhost:4395/#/xframe?src=cprodb&x=1017&y=16  
+kind `product-ui`, 359x427 artboard, anchor tr, 2026-10-23 13:32 UTC
 
-**PASS: 0 fail, 5 warn, 17 pass**
+**PASS: 0 fail, 5 warn, 20 pass**
 
 | step | status | fail | warn | seconds |
 |---|---|---|---|---|
-| gate | PASS | 0 | 3 | 6.2 |
-| check | PASS | 0 | 3 | 9.3 |
-| clipscan | PASS | 0 | 0 | 1.9 |
-| probes | done | 0 | 0 | 5.6 |
+| gate | PASS | 0 | 3 | 7.6 |
+| check | PASS | 0 | 3 | 9.7 |
+| clipscan | PASS | 0 | 0 | 2.6 |
+| probes | done | 0 | 0 | 5.7 |
 
 | status | check | value | want | detail |
 |---|---|---|---|---|
@@ -30,10 +30,13 @@ kind `product-ui`, 359x427 artboard, anchor tr, 2026-10-22 17:48 UTC
 | PASS | grey/grey.fill-twins | 0 | no two neutral fills (each >= 0.2% of the frame) within OKLCH dL 0.008 of each other: one weak grey per role (DE-05) |  |
 | PASS | grey/grey.edge-twins | 0 | no two neutral 1px edges within dL 0.006 (composited on their surface) |  |
 | PASS | primary/primary.per-view | 0 | <= 1 heavy filled control (fill >= 3:1 off its surface) per view: the page, and each [data-product] (DE-06, "one ink primary") |  |
+| PASS | layout/icons.density | 1/12 | <= 25% of text controls (chips, tags, text buttons) carry an icon; icons belong on navigation, icon-only controls, one AI marker and the primary arrow (x-closeups r1) | This week |
+| PASS | layout/layout.squeezed | 0 | no box rendered shorter than its declared fixed height (a flex column that overflows squashes its fixed rows; Panelry r1 drawer header 56 -> 41) |  |
+| PASS | layout/clip.control-cut | 0 | no icon button or avatar partly cut by its own clipping container (DE-02 inside the frame) |  |
 | PASS | edge/edge.small-cut | 0 | no chip, avatar, button or icon (< 120px) cut by the left, right or top frame edge (the bottom is fold.end): bring it in, or bleed one big visual by >= 25% (DE-02) |  |
 | PASS | edge/fold.end | deliberate cut | the frame ends on purpose: a clear margin, a mask/blur fade, or one big bleed (>= 120px, cut >= 25%); no unfaded text line or small box cut by the bottom edge |  |
 | PASS | post/post.insets | l -961 t 40 r 40 b -433 | equal insets on tr (+-2px), window bleeds off b and l by >= 5% (cadence-xpost r1) | div 1280x820 |
 | PASS | copy/copy.reference-names | 0 | no name from a studied reference in visible text (hard no-copy rule, system/canon/no-copy-names.json) |  |
 | PASS | copy/copy.placeholder | 0 | no stock brand or placeholder text (Acme, Lorem ipsum, TODO...) |  |
-| PASS | export/export.closeup.png | 2154x2562 0.44MB | long side >= 2000px (XP-11), ratio 0.8-1, <= 5 MB (X API image limit) | library/tempra/ask-closeup/renders/closeup.png |
+| PASS | export/export.closeup.png | 2154x2562 0.44MB | long side >= 2000px (XP-11), ratio 0.85-1.3, <= 5 MB (X API image limit) | library/tempra/ask-closeup/renders/closeup.png |
 | INFO | grey/grey.census | 2 fills, 4 edges | neutral greys in use | #ffffff L1 107%; #f4f5f7 L0.97 11.4% |

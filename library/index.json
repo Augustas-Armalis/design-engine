@@ -1,11 +1,15 @@
 {
   "schema": "design-engine.library-index/v1",
-  "generated": "2026-10-22T19:19:23.050Z",
+  "generated": "2026-10-23T13:36:57.248Z",
   "projects": [
     {
       "id": "kestrel",
       "name": "Kestrel",
       "fictional": true,
+      "series": []
+    },
+    {
+      "id": "notes",
       "series": []
     },
     {
@@ -150,6 +154,37 @@
           "format": "hero-still",
           "w": 2880,
           "h": 1800
+        }
+      ]
+    },
+    {
+      "id": "notes-optical-centring",
+      "project": "notes",
+      "title": "Teaching card: centre the ink, not the line box",
+      "kind": "post-component",
+      "status": "awaiting-verdict",
+      "postable": true,
+      "verdict": null,
+      "formats": [
+        "teaching-card"
+      ],
+      "series": [
+        {
+          "id": "notes-craft",
+          "stage": "teaching"
+        }
+      ],
+      "sampleDay": null,
+      "reservedFor": "augustasdesign",
+      "preflightFail": null,
+      "dir": "library/notes/optical-centring",
+      "renders": [
+        {
+          "file": "library/notes/optical-centring/renders/card.png",
+          "role": "single",
+          "format": "teaching-card",
+          "w": 3240,
+          "h": 4050
         }
       ]
     },
@@ -476,6 +511,96 @@
           "format": "hero-still",
           "w": 3840,
           "h": 2760
+        }
+      ]
+    },
+    {
+      "id": "tempra-hero-motion",
+      "project": "tempra",
+      "title": "Tempra hero load-in",
+      "kind": "hero-light",
+      "status": "awaiting-verdict",
+      "postable": true,
+      "verdict": null,
+      "formats": [
+        "hero-reel"
+      ],
+      "series": [
+        {
+          "id": "tempra-hero",
+          "stage": "motion"
+        }
+      ],
+      "sampleDay": null,
+      "reservedFor": "augustasdesign",
+      "preflightFail": null,
+      "dir": "library/tempra/hero-motion",
+      "renders": [
+        {
+          "file": "library/tempra/hero-motion/renders/hero-x.mp4",
+          "role": "single",
+          "format": "hero-reel",
+          "w": 1670,
+          "h": 1200
+        },
+        {
+          "file": "library/tempra/hero-motion/renders/hero-4k.mp4",
+          "role": "master",
+          "format": "hero-reel",
+          "w": 3840,
+          "h": 2760
+        },
+        {
+          "file": "library/tempra/hero-motion/renders/poster.png",
+          "role": "poster",
+          "format": "hero-reel",
+          "w": 3840,
+          "h": 2760
+        }
+      ]
+    },
+    {
+      "id": "tempra-product-story",
+      "project": "tempra",
+      "title": "Tempra product story: the ask, five calendars, the slot, booked",
+      "kind": "product-ui",
+      "status": "awaiting-verdict",
+      "postable": true,
+      "verdict": null,
+      "formats": [
+        "dashboard-motion"
+      ],
+      "series": [
+        {
+          "id": "tempra-product",
+          "stage": "motion"
+        }
+      ],
+      "sampleDay": null,
+      "reservedFor": "augustasdesign",
+      "preflightFail": null,
+      "dir": "library/tempra/product-story",
+      "renders": [
+        {
+          "file": "library/tempra/product-story/renders/story-x.mp4",
+          "role": "single",
+          "format": "dashboard-motion",
+          "w": 1792,
+          "h": 1200
+        },
+        {
+          "file": "library/tempra/product-story/renders/story-4k.mp4",
+          "role": "master",
+          "format": "dashboard-motion",
+          "w": 3480,
+          "h": 2330
+        },
+        {
+          "file": "library/tempra/product-story/renders/poster.png",
+          "role": "poster",
+          "format": "dashboard-motion",
+          "w": 3480,
+          "h": 2330
         }
       ]
     },

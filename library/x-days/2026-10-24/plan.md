@@ -4,32 +4,45 @@ Status: **planned, awaiting founder approval**. Slots in Europe/Vilnius (US East
 
 | # | time | account | format | asset | size | caption | checks |
 |---|---|---|---|---|---|---|---|
-| 1 | 09:30 (02:30 ET) | @rokasrem | dashboard-closeup · panelry-pipeline 2/4 | panelry-debrief-closeup | 2413x2501 | hiring tools should sum up the interview panel like this | caption ok; preflight 0 fail, 4 warn |
-| 2 | 15:30 (08:30 ET) | @rokasrem | dashboard-full · requa-app 2/4 | requa-product-approvals | 3840x2571 | zoomed out: the whole approvals inbox behind the review | caption ok; preflight 0 fail, 7 warn |
+| 1 | 09:30 (02:30 ET) | @rokasrem | dashboard-full · panelry-pipeline 1/4 | panelry-product-pipeline | 3840x2571 | the whole hiring pipeline on one screen | caption ok; preflight 0 fail, 7 warn |
+| 2 | 15:30 (08:30 ET) | @rokasrem | dashboard-closeup · requa-app 1/4 | requa-review-closeup | 2403x2493 | three checks before anyone clicks approve | caption ok; preflight 0 fail, 4 warn |
+| 3 | 21:30 (14:30 ET) | @rokasrem | hero-still · requa-site 1/2 | requa-hero | 3840x2400 | approval software should feel this calm | caption ok; preflight 0 fail, 5 warn |
 
-## 1. 09:30 @rokasrem: Panelry pipeline and panel debrief, close: the call next to the candidates
+## 1. 09:30 @rokasrem: Panelry job view: pipeline table and the candidate debrief, full and in thirds
 
-- **Format:** `dashboard-closeup` (X engine: `single-still`), 1 image: `library/panelry/debrief-closeup/renders/closeup.png` 2413x2501
-- **Crop:** tr corner of #/panelry at [610, 16, 766, 794] (x, y, w, h), insets top 40px, right 40px; a region, not a detail (60% of the window, ratio 1.09; founder x-closeups r1 'some are too close and cuts not nicely'): the left edge sits on the funnel's Onsite divider and in the gap after the score pips and before the search field; the bottom under the whole table and its footer and above the drawer's buttons, so only the window bleeds (a cut at the table's last row read as accidental: fold.end)
-- **In the feed:** single at native ratio, 514 wide
-- **Caption** (caption.md): "hiring tools should sum up the interview panel like this"
-- **First reply** (30-150 min later): "concept work for a hiring app. made at larpo.studio"
-- **Quotes:** rokasrem-2026-10-23-0930 (the previous step of the series, XS-16)
-- **Why this, why now:** awaiting-verdict 0.75 x single-portrait 0.92 x sqrt(crm-table 3.12) + 0.60 (series panelry-pipeline step 2/4), project in series (XS-17 focus)
-- **Verdict:** awaiting-verdict; approval `ready`, auto-approved (no Telegram confirm)
-- **Preflight:** 0 FAIL, 4 WARN (`library/panelry/debrief-closeup/preflight/1-closeup.md`)
-
-## 2. 15:30 @rokasrem: Requa approvals inbox and request review, full and in thirds
-
-- **Format:** `dashboard-full` (X engine: `single-still`), 1 image: `library/requa/product-approvals/renders/full.png` 3840x2571
+- **Format:** `dashboard-full` (X engine: `single-still`), 1 image: `library/panelry/product-pipeline/renders/full.png` 3840x2571
 - **Crop:** equal canvas margin on all four sides (56px at 1x on cprodb)
 - **In the feed:** single landscape at native 3:2, 514x343
-- **Caption** (caption.md): "zoomed out: the whole approvals inbox behind the review"
-- **First reply** (30-150 min later): "concept work for a spend app. made at larpo.studio"
-- **Quotes:** rokasrem-2026-10-23-1530 (the previous step of the series, XS-16)
-- **Why this, why now:** awaiting-verdict 0.75 x single-landscape 0.98 x sqrt(dashboard 2.05) + 0.60 (series requa-app step 2/4), project in series (XS-17 focus)
+- **Caption** (caption.md): "the whole hiring pipeline on one screen"
+- **First reply** (30-150 min later): "concept work for a hiring app. made at larpo.studio"
+- **Quotes:** none (series start)
+- **Why this, why now:** awaiting-verdict 0.75 x single-landscape 0.98 x sqrt(crm-table 3.12) + 0.15 (series panelry-pipeline step 1/4)
 - **Verdict:** awaiting-verdict; approval `ready`, auto-approved (no Telegram confirm)
-- **Preflight:** 0 FAIL, 7 WARN (`library/requa/product-approvals/preflight/1-full-and-strips.md`)
+- **Preflight:** 0 FAIL, 7 WARN (`library/panelry/product-pipeline/preflight/1-full-and-strips.md`)
+
+## 2. 15:30 @rokasrem: Requa request review, close: three checks, the budget, the chain
+
+- **Format:** `dashboard-closeup` (X engine: `single-still`), 1 image: `library/requa/review-closeup/renders/closeup.png` 2403x2493
+- **Crop:** tr corner of #/requa at [625, 16, 751, 779] (x, y, w, h), insets top 40px, right 40px; a region (59% of the window, ratio 0.96): the left edge just past the inbox divider, the bottom under the notes and above the buttons, so only the window bleeds
+- **In the feed:** single at native ratio, 514 wide
+- **Caption** (caption.md): "three checks before anyone clicks approve"
+- **First reply** (30-150 min later): "concept work for a spend app. made at larpo.studio"
+- **Quotes:** none (series start)
+- **Why this, why now:** awaiting-verdict 0.75 x single-portrait 0.92 x sqrt(dashboard 2.05) + 0.45 (series requa-app step 1/4), project in series (XS-17 focus)
+- **Verdict:** awaiting-verdict; approval `ready`, auto-approved (no Telegram confirm)
+- **Preflight:** 0 FAIL, 4 WARN (`library/requa/review-closeup/preflight/1-closeup.md`)
+
+## 3. 21:30 @rokasrem: Requa split hero: spend, approved before noon
+
+- **Format:** `hero-still` (X engine: `single-still`), 1 image: `library/requa/hero/renders/hero.png` 3840x2400
+- **Crop:** the whole 1440x900 fold; the fold already ends on a progressive blur or a deliberate cut (fold.end)
+- **In the feed:** single landscape at native 16:10, full width 514x321
+- **Caption** (caption.md): "approval software should feel this calm"
+- **First reply** (30-150 min later): "concept work for a spend app. made at larpo.studio"
+- **Quotes:** none (series start)
+- **Why this, why now:** awaiting-verdict 0.75 x single-landscape 0.98 x sqrt(hero 1.21) + 0.45 (series requa-site step 1/2), project in series (XS-17 focus)
+- **Verdict:** awaiting-verdict; approval `ready`, auto-approved (no Telegram confirm)
+- **Preflight:** 0 FAIL, 5 WARN (`library/requa/hero/preflight/1-hero.md`)
 
 ## Yours to post by hand: @augustasdesign (never scheduled)
 
@@ -49,15 +62,9 @@ In series order: post one a day, the close-up first, then the hero or full view,
    - `bento-still`: `library/tempra/bento-dark/renders/bento.png` 3840x3200; captions: "this dark bento turned out way too clean 🔥" / "probably my favorite bento i've made so far 🫠" / "feature sections deserve this much detail"
    - first reply: "concept, made at larpo.studio"
 
-## To make (the library could not fill these)
-
-- **requa-site** motion, due (1 d after hero): a load-in of #/requahero once motion is asked for
-- **1 more post(s) to reach 3:** nothing postable left in the hero, section, component, motion families without repeating one today; design one (a component post, a pricing or changelog section, a light/dark pair) and add it to the library
-
 ## Notes
 
 - daily volume from knowledge/x/cadence.json: 3-5 posts, <= 2 on @augustasdesign, <= 1 per co-founder, >= 6 h apart on one account (XS-01, XS-02)
 - scheduled accounts: @rokasrem (<= 3/day, never-posted designs only); by hand only: @augustasdesign (system/x/accounts.json)
 - captions also pass the X engine's own checkCaption (~/dev/larpo-x-engine/shared/gate.mjs), the check its Worker runs before Buffer
-- assumed going out (planned, not yet in posted.json): 2026-10-23 panelry-product-pipeline, 2026-10-23 requa-review-closeup, 2026-10-23 requa-hero
-- candidates: panelry-debrief-closeup dashboard-closeup 1.819 (picked); requa-product-approvals dashboard-full 1.652 (picked)
+- candidates: panelry-product-pipeline dashboard-full 1.448 (picked); requa-review-closeup dashboard-closeup 1.438 (picked); requa-hero hero-still 1.258 (picked)

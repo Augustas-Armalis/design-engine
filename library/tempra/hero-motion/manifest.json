@@ -1,0 +1,115 @@
+{
+  "schema": "design-engine.library-asset/v1",
+  "id": "tempra-hero-motion",
+  "project": "tempra",
+  "title": "Tempra hero load-in",
+  "kind": "hero-light",
+  "status": "awaiting-verdict",
+  "postable": true,
+  "verdict": {
+    "latest": null,
+    "round": null,
+    "date": null,
+    "words": null,
+    "ledger": null,
+    "after": "made for the 24-25 Oct weekend, awaiting the founder's verdict"
+  },
+  "source": {
+    "app": "work/replicas/app",
+    "route": "#/h4av",
+    "component": "work/replicas/app/src/CadenceHeroD.tsx",
+    "viewport": [
+      1440,
+      1035
+    ],
+    "direction": "work/tempra-x/DIRECTION.md"
+  },
+  "renders": [
+    {
+      "file": "renders/hero-x.mp4",
+      "role": "single",
+      "format": "hero-reel",
+      "recipe": {
+        "route": "#/h4av",
+        "viewport": [
+          1440,
+          1035
+        ],
+        "scale": 2.6667,
+        "fps": 60,
+        "duration": 5.0,
+        "tool": "Reel --preset x"
+      },
+      "w": 1670,
+      "h": 1200,
+      "bytes": 12489236,
+      "sha256": "f688f215d196eb2c77269036a754c250836b1ab852bfb582f7501e1211ca6216",
+      "rendered": "2026-10-23T13:36:33Z"
+    },
+    {
+      "file": "renders/hero-4k.mp4",
+      "role": "master",
+      "format": "hero-reel",
+      "recipe": {
+        "route": "#/h4av",
+        "viewport": [
+          1440,
+          1035
+        ],
+        "scale": 2.6667,
+        "fps": 60,
+        "duration": 5.0,
+        "tool": "Reel --preset h264"
+      },
+      "w": 3840,
+      "h": 2760,
+      "bytes": 3186391,
+      "sha256": "ed491aa84a5481667917dd62ddcc55bc800e573a5b2c234fa9b4e6f2342804df",
+      "rendered": "2026-10-23T13:36:33Z"
+    },
+    {
+      "file": "renders/poster.png",
+      "role": "poster",
+      "format": "hero-reel",
+      "recipe": {
+        "from": "last frame of hero-4k.mp4"
+      },
+      "w": 3840,
+      "h": 2760,
+      "bytes": 1179397,
+      "sha256": "33d8dcc1b6fd0f12a7a7959334b0a39b498ebe686e42455ffe08d8b225d006df",
+      "rendered": "2026-10-23T13:36:33Z"
+    }
+  ],
+  "checks": [
+    {
+      "label": "hero",
+      "route": "#/h4a",
+      "kind": "hero-light",
+      "w": 1440,
+      "h": 1035,
+      "format": "hero-reel",
+      "renders": [
+        "renders/poster.png"
+      ],
+      "direction": "work/cadence-app/H4A-DIRECTION.md"
+    }
+  ],
+  "series": [
+    {
+      "id": "tempra-hero",
+      "stage": "motion"
+    }
+  ],
+  "related": [
+    "tempra-hero-h4a"
+  ],
+  "conceptName": "Tempra, Fernhill",
+  "sample": true,
+  "alt": "Load-in animation of the Tempra hero: the copy rises first, then the product window, its contents fill top to bottom and the slot Tempra found lands last. Sample data, concept.",
+  "dates": {
+    "created": "2026-10-23",
+    "rendered": "2026-10-23"
+  },
+  "reservedFor": "augustasdesign"
+}

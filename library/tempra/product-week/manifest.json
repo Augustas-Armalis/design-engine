@@ -39,10 +39,10 @@
       },
       "w": 3840,
       "h": 2571,
-      "bytes": 867320,
-      "sha256": "53075ca3a1153b4ad24e0abcbbcc9bf42e7a807c250f05b823b58690bc83eb64",
-      "rendered": "2026-10-22T17:58:52.801Z",
-      "commit": "ca138c2"
+      "bytes": 865915,
+      "sha256": "229d4b55e4b471c5e5c6434e66b46daaf8cba4155d06282586c02f97d08e0616",
+      "rendered": "2026-10-23T13:31:07.322Z",
+      "commit": "1ee02fd+dirty"
     },
     {
       "file": "renders/strip-1.png",
@@ -68,8 +68,8 @@
       "h": 2571,
       "bytes": 272431,
       "sha256": "8a3ae9a6ef368e6f9332e25d57e0d169bbf513fc4bd885665b024d168a749bcc",
-      "rendered": "2026-10-22T17:58:57.448Z",
-      "commit": "ca138c2"
+      "rendered": "2026-10-23T13:31:12.108Z",
+      "commit": "1ee02fd+dirty"
     },
     {
       "file": "renders/strip-2.png",
@@ -95,8 +95,8 @@
       "h": 2571,
       "bytes": 209600,
       "sha256": "6a9d27413346c1e1dc1c9e05928a1f1a43b7ee85d84960096442b73b9fa72dab",
-      "rendered": "2026-10-22T17:59:02.375Z",
-      "commit": "ca138c2"
+      "rendered": "2026-10-23T13:31:16.881Z",
+      "commit": "1ee02fd+dirty"
     },
     {
       "file": "renders/strip-3.png",
@@ -120,10 +120,10 @@
       },
       "w": 1280,
       "h": 2571,
-      "bytes": 352312,
-      "sha256": "227d65994cd5e772197c337d8c781f2356d14d710c9ccb7dfaa58ae9abc81718",
-      "rendered": "2026-10-22T17:59:07.127Z",
-      "commit": "ca138c2"
+      "bytes": 352311,
+      "sha256": "2525035f986c85d2ffecd0f4ae5bf104e1ee728d20251eb5d72f6012dd90f962",
+      "rendered": "2026-10-23T13:31:21.607Z",
+      "commit": "1ee02fd+dirty"
     }
   ],
   "checks": [
@@ -168,7 +168,7 @@
   "dates": {
     "created": "2026-10-22",
     "migrated": "2026-10-22",
-    "rendered": "2026-10-22"
+    "rendered": "2026-10-23"
   },
   "tags": [
     "light",
@@ -177,7 +177,7 @@
     "ai-answer"
   ],
   "preflight": {
-    "ran": "2026-10-22T17:59:31.424Z",
+    "ran": "2026-10-23T13:31:48.005Z",
     "fail": 0,
     "warn": 7,
     "results": [
@@ -185,11 +185,11 @@
         "label": "full-and-strips",
         "route": "#/cprodb",
         "size": "1392x932",
-        "pass": 20,
+        "pass": 23,
         "warn": 7,
         "fail": 0,
         "report": "preflight/1-full-and-strips.md",
-        "ran": "2026-10-22T17:59:31.418Z"
+        "ran": "2026-10-23T13:31:47.996Z"
       }
     ]
   },

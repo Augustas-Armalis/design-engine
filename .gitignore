@@ -25,3 +25,6 @@ knowledge/benchmarks/kargul-corpus/**/*.jpeg
 knowledge/benchmarks/kargul-corpus/**/*.webp
 knowledge/benchmarks/kargul-corpus/**/*.gif
 knowledge/benchmarks/kargul-corpus/**/*.mp4
+
+# Reel recording folders (lossless FFV1 masters, 200+ MB; the exports live in library/)
+work/**/reel-*/
