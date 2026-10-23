@@ -134,9 +134,9 @@ These replace the numbers above wherever they conflict. Source: `knowledge/web/l
 
 ## Founder verdict 2026-10-22 (h4a r5-r6: "okay now it's wayy better... but now good")
 - **Above the h1: an announcement pill, never a gimmick.** The avatar-stack pill read "too AI and stupid", but the fold read "empty" without any element (r6). So use a plain announcement: 32px pill, a soft accent "New" tag inset 4px, one product-fact line, an arrow. No avatars, no metrics. The gap to the h1 equals h1 to subtitle (16).
-- **Optical centring (corrected 2026-10-23, measured):** centre the capitals, not the line box and not the whole ink.
-  - **Target:** the cap top to the button top equals the baseline to the button bottom. Descenders (g, p) hang below.
-  - **Not equal ink:** equal ink gaps (cap top vs descender bottom) was rejected ("the bottom button is bad cuz it has equal top and bottom gaps").
+- **Optical centring (founder 2026-10-23, tempra-x-weekend r4, measured):** pad what you see, not the font height.
+  - **The mistake:** equal padding on the font box (the line box, ascender to descender). The visible letters sit off-centre inside it, by a different amount per font. Measured on Geist 500 at 112px, "Sign up": 75.7px above the capitals, 59px below the descenders, so the word reads low.
+  - **The fix:** equal space from the button edges to the visible letters (67 / 67 on the same button), set once per font in the button token.
   - **Flex centring depends on the font.** Measured on a 132px button at 46px: Inter caps sit 0.35px high (fine as is); Geist 1.3px high; Manrope 0.7px low.
   - **Nudge once per font in the button token** (translateY of half the drift), then verify with `tools/capgap.cjs` (cap and baseline gaps of every `[data-btn]`).
   - **text-box trim:** CSS `text-box: trim-both cap alphabetic` fixed Manrope but not Geist, so it is not the default.

@@ -40,8 +40,12 @@ export const S = { type0: 0.5, typeRate: 38, send: 2.0, bubble: 2.12, check: 2.3
 export const L = { win: 0, ws: 0.12, search: 0.16, nav: 0.2, teams: 0.42, next: 0.62, user: 0.68, head: 0.16, kpi: 0.26, roll: 0.34,
   spark: 0.46, week: 0.34, days: 0.4, ev: 0.54, now: 1.15, rail: 0.24, bubble: 0.46, check: 0.58, chips: 0.64, ans: 0.76,
   opt: 0.92, btn: 1.14, handled: 1.24, comp: 0.4, slot: 1.55 }
-// the standalone Ask Tempra component (chat): the ask arrives, Tempra reads, the answer streams in words, the slot is booked
-export const C = { bubble: 0.35, check: 0.8, chips: 0.92, checked: 1.7, ans: 1.85, wordRate: 22, opt: 3.35, btn: 3.75, press: 4.55, booked: 4.7 }
+// the standalone Ask Tempra component (chat), r2: the component scales in -> the ask is typed and sent -> five calendars are read ->
+// the answer streams in words -> the options rise -> a cursor books Friday -> the other options fold away -> a second ask is typed ->
+// the reminder is set and its switch turns on (settles ~12.2s)
+export const C = { in: 0, type1: 1.1, typeRate: 32, send1: 3.05, think1: 3.3, chips: 3.45, checked1: 4.4, ans1: 4.5, wordRate: 18,
+  opt: 5.7, btn: 6.05, cur: 6.4, press: 7.3, booked: 7.42, fold: 7.85, type2: 8.6, send2: 9.7, think2: 9.95, checked2: 10.55,
+  ans2: 10.65, rem: 11.3, on: 11.85 }
 
 // an entrance: rise + fade on the shared curve, only in the given mode; {} otherwise (final state)
 export function rise(a: Anim, mode: Mode, d: number, y = 10, dur = 0.9): CSSProperties {

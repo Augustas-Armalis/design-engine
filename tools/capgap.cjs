@@ -14,7 +14,7 @@ const { chromium } = require('playwright')
       for (let y = 0; y < c.height; y++) { let n = 0; for (let i = Math.round(c.width * 0.12); i < c.width * 0.88; i++) { const k = (y * c.width + i) * 4; if (d[k] > 190 && d[k + 1] > 190 && d[k + 2] > 190) n++ } rows.push(n) }
       const top = rows.findIndex((n) => n > 2); const bot = rows.length - 1 - [...rows].reverse().findIndex((n) => n > 2)
       const body = Math.max(...rows); let base = bot; for (let y = bot; y > top; y--) { if (rows[y] > body * 0.35) { base = y; break } }
-      return [+(top / 3).toFixed(2), +((c.height - 1 - base) / 3).toFixed(2)]
+      return [+(top / 3).toFixed(2), +((c.height - 1 - base) / 3).toFixed(2), +((c.height - 1 - bot) / 3).toFixed(2)]
     }, buf.toString('base64'))
     out[key] = r
   }

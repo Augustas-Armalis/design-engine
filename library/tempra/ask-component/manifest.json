@@ -2,7 +2,7 @@
   "schema": "design-engine.library-asset/v1",
   "id": "tempra-ask-component",
   "project": "tempra",
-  "title": "Ask Tempra, standalone: the answer streams in",
+  "title": "Ask Tempra, standalone: a two-ask conversation",
   "kind": "post-component",
   "status": "awaiting-verdict",
   "postable": true,
@@ -12,7 +12,7 @@
     "date": null,
     "words": null,
     "ledger": "ledger/entries/tempra-x-weekend.json",
-    "after": "made after tempra-x-weekend r1 (2026-10-23), awaiting the founder's verdict"
+    "after": "r2 made after tempra-x-weekend r5 (2026-10-23): load-in, typed asks, streamed answer, cursor booking, reminder"
   },
   "source": {
     "app": "work/replicas/app",
@@ -37,14 +37,14 @@
         ],
         "scale": 3,
         "fps": 60,
-        "duration": 7.2,
+        "duration": 12.6,
         "tool": "Reel --preset x"
       },
       "w": 1200,
       "h": 1200,
-      "bytes": 17883253,
-      "sha256": "b91bbe2c392262d8144fa08373cf3c3c47ebe8354f14442afe5d480227fe1573",
-      "rendered": "2026-10-23T14:04:43Z"
+      "bytes": 35395573,
+      "sha256": "d7a8c42d368c60b94f4e9645a25b408e22441894185e5d42a0fd8532d98af86b",
+      "rendered": "2026-10-23T14:40:53Z"
     },
     {
       "file": "renders/ask-4k.mp4",
@@ -58,14 +58,14 @@
         ],
         "scale": 3,
         "fps": 60,
-        "duration": 7.2,
+        "duration": 12.6,
         "tool": "Reel --preset h264"
       },
       "w": 3600,
       "h": 3600,
-      "bytes": 2456408,
-      "sha256": "4b0b4c0709cd29d8c1bb4d11322a81a913562431c03dc5ae122e396d0a7fa436",
-      "rendered": "2026-10-23T14:04:43Z"
+      "bytes": 5581667,
+      "sha256": "f3332068340200cabe2429a0598508cb730dc35d27d1edc442e7825bb3b0030b",
+      "rendered": "2026-10-23T14:40:53Z"
     },
     {
       "file": "renders/still.png",
@@ -81,9 +81,9 @@
       },
       "w": 3600,
       "h": 3600,
-      "bytes": 1539658,
-      "sha256": "7c968ea6f32bd8a59fb8fa876df6f154a860f001dd826dc12c406251d53de5c2",
-      "rendered": "2026-10-23T14:04:43Z"
+      "bytes": 1681550,
+      "sha256": "0bf6bef5c3c89a59126d29239e773e44d92f9b8df6a11a89d6013867c3bae595",
+      "rendered": "2026-10-23T14:40:53Z"
     }
   ],
   "checks": [

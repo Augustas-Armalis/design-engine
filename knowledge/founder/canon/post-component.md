@@ -80,7 +80,8 @@ Decided defaults, 2026-10-21. Evidence: `founder-taste L<n>`, the accepted Tande
 - No founder-accepted post since Tandem (2026-10-09). The Flo-tray floor is a benchmark, not an accept of ours.
 - Dark component posts: only Marcel's reference; no verdict on ours.
 - **Framing conflict, for the founder** (KC-25, `knowledge/web/kargul-corpus-2026-10.md` §9). The founder's 2026-10-22 verdict asks for equal left/top insets with bleed right and bottom. Across 77 measured posts, Marcel insets his product formats symmetrically (L = R, T = B) with no bleed. He bleeds right and bottom only in 2-page scroll pairs and zoomed detail crops (6 of 77). The founder verdict stands until he decides.
-- **Teaching formats** (KC-23): annotated specs, font/tracking cards and Do/Don't pairs earn the most bookmarks (font cards 336 median). None has been built or judged by the founder yet.
+- **Teaching formats** (KC-23): annotated specs, font/tracking cards and Do/Don't pairs earn the most bookmarks (font cards 336 median).
+  - **Teaching card grammar (tempra-x-weekend r2-r3):** one font, one wrong and one right, no prose on the card (the caption carries the words). Paint the measured quantity (red wrong, green right) and print only the measured numbers. Show the effect where it is real: a product-size render magnified without smoothing beats a poster-size render that hides it. v2 (two fonts, brackets, footnote) was "too much stuff going on".
 
 ## Founder verdict 2026-10-22 (cadence-xpost r1, partial: "cool")
 - **Framing:** a post's crop insets are equal on the left and top, and the window bleeds off BOTH the right and bottom edges. No bottom margin.
